@@ -1,70 +1,103 @@
-# Lições Aprendidas
+# Lições Aprendidas — Grupo Cimino
 
-## 19/04/2026
+## 🔒 Estratégicas (Permanentes)
 
-### 1. Timezone Bug — LK Intel
-**Problema**: `CURRENT_DATE` no Postgres = UTC.Scripts comparavam `order_created_at >= CURRENT_DATE` achando que era BRT.
-Depois das 12h BRT (15h UTC), `CURRENT_DATE` já era "amanhã" no Brasil.
+### Dados antes de afirmar
+- Lucas afirma → verificar no banco. Nunca contradizer sem dados.
+- Dizer "zerado" sem consultar Supabase = erro grave.
+- **Regra:** dúvida → consulta. Sem consulta → sem resposta sobre dados.
 
-**Fix**: `WHERE (order_created_at AT TIME ZONE 'America/Sao_Paulo') >= CURRENT_DATE`
-Aplicado em: `lk_anomaly_check.py`, `lk_anomaly_deepdive.py`, `lk_morning_briefing.py`
+### Credenciais
+- NUNCA hardcodar credenciais. Usar `doppler secrets get NOME --plain`
+- Fallback explícito: `os.getenv('A') or os.getenv('B')` — sem isso crashes são silenciosos
+- `SUPABASE_CRM_SERVICE_KEY` não existe → usar `SUPABASE_ZIPPER_SERVICE_KEY`
+- Shopify: `SHOPIFY_ACCESS_TOKEN` (não `SHOPIFY_API_TOKEN`)
 
-**Regra**: TODO acesso a datas no Supabase LK → sempre usar `AT TIME ZONE 'America/Sao_Paulo'`
+### REGRA COO: Fix First, Report Later (19/04/2026)
+- Se posso corrigir sozinho → FAÇA. Não pergunte.
+- "Você quer que eu corrija?" → já deveria estar corrigido
+- Erro encontrado → consertar antes de dizer que encontrou
+- Reportar SOMENTE após corrigir
+- **Exceção:** quando precisa de ação do Lucas (ex: re-autenticar token)
 
----
+### REGRA COO: Auto-Remediation
+- Quando consertar algo manualmente → perguntar: "Isso pode acontecer de novo?"
+- Se sim → criar preventor automático antes de fechar sessão
 
-### 2. Auto-healing Architecture
-**Problema**: Mesmo erro se repete (token revocada, crons quebrando, etc)
+### Brain: 3 Fontes de Verdade (19/04/2026)
+1. `/root/.hermes/memories/` — local (pending, lessons, decisions)
+2. `/root/hermes-brain/` — VPS brain
+3. Mem0 vector DB — memories da sessão
+- **Regra:** após cada sessão → sync bidirecional + `mem0_conclude` para fatos
 
-**Solução**: Stack de 3 camadas:
-1. `hermes_remediate.sh` — conserta DETERMINISTIC errors (VPS refused, rate limits, etc)
-2. `hermes_health_check.py` — previne AUDITANDO antes do erro (PAT válida? scripts no lugar certo?)
-3. Crons com fail-safe — se health check detecta problema → pausa cron → notifica Telegram
+### Scripts: Dual Location (19/04/2026)
+- `/root/.hermes/scripts/` — **canonical** (versionado, backup-safe)
+- `/tmp/` — **cópias ativas** que o cron executa
+- **Regra:** após editar script → copiar para ambos os lugares:
+  ```bash
+  cp /root/.hermes/scripts/lk_*.py /tmp/
+  ```
+- Scripts em `/tmp` chamados por cron:
+  `lk_full_sync.py`, `lk_shopify_sync.py`, `lk_meta_sync_v3.py`, `lk_klaviyo_sync_v2.py`, `lk_judgeme_sync_v2.py`, `lk_ga4_sync_v4.py`, `lk_frenet_sync.py`, `lk_transactions_full_sync.py`, `lk_anomaly_deepdive.py`, `lk_morning_briefing.py`
 
-**Regra**: Quando consertar algo manualmente → pergunte: "Isso pode acontecer de novo?"Se sim → criar preventor automático.
-
----
-
-### 3. /tmp vs /root Scripts
-**Problema**: Subagent criou scripts em `/tmp` com tokens placeholders. Cron apontava para `/tmp`.
-
-**Arquitetura nova**:
-- `/root/.hermes/scripts/` — canonical, versionado, Backup-ok
-- `/tmp` — só scripts ativos que o cron EXECUTA ( cópiados do /root )
-- Regra: após editar script em qualquer lugar → sincronizar ambos
-
-**Script de sync**:
-```bash
-# Após editar /root/.hermes/scripts/lk_*.py
-cp /root/.hermes/scripts/lk_*.py /tmp/
-```
-
----
-
-### 4. Revoked PAT Detection
-**Problema**: 23 scripts em `/tmp` tinham token antigo `sbp_2297055c...` (revogado).
-
-**Prevenção**: `hermes_health_check.py` escaneia TODOS os scripts em `/tmp` e `/root/.hermes/scripts/` antes de cada sessão.
-
-**Regra**: Após renovar PAT → rodar `hermes_health_check.py` para auditar todos os scripts.
+### Webhook async é obrigatório
+- Qualquer endpoint com processamento >2s deve responder 200/202 imediatamente
+- n8n timeout ~10s. Playwright ~7s/lote → n8n abortava → 6 lances perdidos
+- **Regra:** endpoint webhook → responde 2xx imediato → thread separada para trabalho
 
 ---
 
-### 5. Context Survival (M2.7)
-**Problema**: Compressão de contexto pode perder estado crítico entre turnos.
+## 📊 LK Sneakers
 
-**Solução**:
-- `CURRENT_WORK.md` — criado no início de cada sessão, atualizado antes de fechar
-- Ler SEMPRE no início: se existir → ler primeiro
-- Antes de fechar sessão: salvar estado + decisões + pendências
+### Cross-sell (5.7k pedidos analisados)
+- Onitsuka Tiger = hub central (1.290 pedidos), 91.6% lealdade
+- Jason Markk = upsell universal (funciona com qualquer tênis)
+- NB 9060 → Onitsuka Tiger = fluxo mais forte (25 clientes)
+- 378 clientes NB 9060 sem recompra = segmento prioritário Klaviyo
 
-**Arquivo**: `/root/.hermes/CURRENT_WORK.md`
+### Timezone Bug (19/04/2026)
+- `CURRENT_DATE` no Postgres = UTC. Scripts comparavam `order_created_at >= CURRENT_DATE` achando que era BRT.
+- Depois das 12h BRT (15h UTC), `CURRENT_DATE` já era "amanhã" no Brasil.
+- **Fix**: `WHERE (order_created_at AT TIME ZONE 'America/Sao_Paulo') >= CURRENT_DATE`
+- Aplicado em: `lk_anomaly_check.py`, `lk_anomaly_deepdive.py`, `lk_morning_briefing.py`
+
+### Shopify Pagination Bug (19/04/2026)
+- `page_info` cursor quebrava quando checkpoint ficava muito antigo.
+- **Fix**: detect error + fallback pra timestamp quando `page_info` falha.
+
+### Transactions Full Sync (19/04/2026)
+- Script `lk_transactions_full_sync.py` estava no archive (não no lugar certo).
+- Recriado e adicionado ao `lk_full_sync.py` como 6ª fonte.
 
 ---
 
-### 6. NameError em Scripts — Import Faltando
-**Problema**: `lk_morning_briefing.py` usava `datetime.now(timezone.utc)` mas só importava `from datetime import date, timedelta`. `datetime` e `timezone` estavam undefined.
+## 📱 Integrações
 
-**Fix**: `from datetime import date, timedelta, datetime, timezone`
+### Evolution API / WhatsApp
+- Links no caption de imagem NÃO são clicáveis
+- **Solução:** enviar URL como mensagem de texto separada após a mídia (1s delay)
+- Sempre usar `limit: 20-30` max, nunca 100+ (timeout em 562 conversas)
 
-**Regra**: Todo script que usa `datetime.now`, `timezone.utc`, `timedelta` → verificar se todos estão no import.
+---
+
+## 🗂️ 2026-04-19 — Session Log
+
+### O que fizemos
+- Auditoria completa: 26 crons, 15+ scripts, 3 fontes de dados
+- Encontrado: Meta token quebrado há 38 dias, transactions_full faltando, timezone bugs, cron duplicatas Monday 9h
+- Corrigido sozinho: Shopify pagination, timezone (2 scripts), NameError import, transactions_full_sync
+- `brain_sync.sh` criado — sync bidirecional local↔VPS ✅ testado
+- Lições unificadas num arquivo só
+
+### Lição aprendida
+1. **"Você quer que eu corrija?"** → eu deveria ter corrigido antes de perguntar
+2. Dual location: editar em `/root/.hermes/scripts/` → SEMPRE copiar pro `/tmp/`
+3. Brain 3 fontes: nunca estão 100% sincronizadas — preciso rodar sync após cada sessão
+4. **"100% auditado"** ≠ "100% funcionando" — crons nunca executados, Meta token quebrado
+
+### Bugs Corrigidos (19/04)
+1. Shopify pagination — page_info fallback ✅
+2. Timezone anomaly_deepdive + anomaly_check — 16x CURRENT_DATE ✅
+3. lk_morning_briefing — NameError (datetime/timezone import) ✅
+4. transactions_full_sync — script recriado + full_sync atualizado ✅
+5. Cron Monday 9h — 3 duplicatas → 1 (pausados 2) ✅

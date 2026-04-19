@@ -1,71 +1,86 @@
 #!/bin/bash
-# Sync hermes-brain ↔ cerebro-cimino + auto-commit
-# Rodar diariamente via cron
+# Hermes Brain Sync — Bidirectional sync between VPS brain and local
+# Rodar diariamente via cron (6h BRT)
 #
 # Fluxo:
-#  1. Pull do cerebro-cimino (fonte original)
-#  2. Merge local (hermes edits)
-#  3. Auto-commit se mudou
-#  4. Push hermes-brain-git
+#   1. Pull from VPS (brain mais novo da VPS)
+#   2. Push local changes (pending.md, lessons.md, etc.)
+#   3. Auto-commit se mudou
+#
+# IMPORTANT: Cron MiniMax não tem SSH key — usa sshpass
 
 set -e
 
+SSH_HOST="root@72.60.150.124"
+SSH_PORT="22"
+SSH_PASS='+gryuk#TGk9JQF)q'
+
+ssh_cmd() {
+    sshpass -p "$SSH_PASS" ssh -o ConnectTimeout=15 -o StrictHostKeyChecking=no -p "$SSH_PORT" "$SSH_HOST" "$1"
+}
+
 CEREBRO="/root/cerebro-cimino"
 HERMES_BRAIN="/root/hermes-brain"
-GIT_DIR="/root/.hermes-brain-git"
+LOCAL_BRAIN="$HOME/.hermes"
+GIT_DIR="$LOCAL_BRAIN/hermes-brain-git"
 STATE_FILE="$HERMES_BRAIN/.sync-state.json"
 
-cd "$HERMES_BRAIN"
+# ── Bidirectional sync of key memory files ────────────────────────────────
 
-# --- Pull from cerebro-cimino ---
-if [ -d "$CEREBRO/.git" ]; then
-    echo "Pulling from cerebro-cimino..."
-    # Only copy memory-relevant files (not all cerebro)
-    rsync -av --files-from=- "$CEREBRO/" "$HERMES_BRAIN/" <<'RSYNC_FILES'
-empresa/contexto/decisoes.md
-empresa/contexto/metricas.md
-empresa/contexto/geral.md
-empresa/decisoes/
-agentes/lk/SOUL.md
-agentes/lk/AGENTS.md
-agentes/zipper/SOUL.md
-agentes/zipper/AGENTS.md
-agentes/spiti/SOUL.md
-agentes/spiti/AGENTS.md
-RSYNC_FILES
-fi
+SYNC_FILES=(
+    "memories/pending.md"
+    "memories/lessons.md"
+    "memories/decisions.md"
+    "memories/lk.md"
+    "memories/zipper.md"
+    "memories/spiti.md"
+    "HEARTBEAT.md"
+    "PROTOCOLS.md"
+)
 
-# --- Check if anything changed ---
-if [ -d "$GIT_DIR" ]; then
-    cd "$GIT_DIR"
-    git fetch origin main 2>/dev/null || true
-    LOCAL=$(git rev-parse HEAD 2>/dev/null)
-    REMOTE=$(git rev-parse origin/main 2>/dev/null)
-    
-    if [ "$LOCAL" != "$REMOTE" ]; then
-        echo "New commits in cerebro, pulling..."
-        git pull origin main --no-edit || true
+echo "[Brain Sync] Starting — $(date)"
+
+# ── Pull from VPS ───────────────────────────────────────────────────────
+echo "[Brain Sync] Pulling from VPS..."
+for file in "${SYNC_FILES[@]}"; do
+    remote_path="$CEREBRO/$file"
+    local_dest="$HERMES_BRAIN/$file"
+    mkdir -p "$(dirname "$local_dest")"
+    if ssh_cmd "test -f $remote_path"; then
+        sshpass -p "$SSH_PASS" scp -o ConnectTimeout=15 -o StrictHostKeyChecking=no -P "$SSH_PORT" "$SSH_HOST:$remote_path" "$local_dest" 2>/dev/null && echo "  ✓ $file" || echo "  ✗ $file"
     fi
-fi
+done
 
-# --- Auto-commit if local changes ---
-cd "$HERMES_BRAIN"
+# ── Push local pending.md and lessons.md to VPS ──────────────────────────
+echo "[Brain Sync] Pushing local updates to VPS..."
+LOCAL_FILES=(
+    "$LOCAL_BRAIN/memories/pending.md:memories/pending.md"
+    "$LOCAL_BRAIN/memories/lessons.md:memories/lessons.md"
+)
+
+for pair in "${LOCAL_FILES[@]}"; do
+    local_path="${pair%%:*}"
+    remote_rel="${pair##*:}"
+    remote_path="$CEREBRO/$remote_rel"
+    if [ -f "$local_path" ]; then
+        sshpass -p "$SSH_PASS" scp -o ConnectTimeout=15 -o StrictHostKeyChecking=no -P "$SSH_PORT" "$local_path" "$SSH_HOST:$remote_path" 2>/dev/null && echo "  ✓ $remote_rel" || echo "  ✗ $remote_rel"
+    fi
+done
+
+# ── Auto-commit local changes ─────────────────────────────────────────────
 if [ -d "$GIT_DIR" ]; then
     cd "$GIT_DIR"
-    # Stage all changes
     git add -A
-    
-    # Only commit if there are actual changes
-    if git diff --cached --quiet; then
-        echo "No changes to commit"
-    else
+    if ! git diff --cached --quiet; then
         TIMESTAMP=$(date '+%Y-%m-%d %H:%M')
-        git commit -m "hermes sync $TIMESTAMP" || true
-        git push origin main || true
-        echo "✅ Committed and pushed: $TIMESTAMP"
+        git commit -m "brain sync $TIMESTAMP" && git push origin main || echo "[Brain Sync] Push failed"
+        echo "  ✓ Committed: $TIMESTAMP"
+    else
+        echo "  — No changes"
     fi
 fi
 
-# --- Update sync state ---
+# ── Sync state ──────────────────────────────────────────────────────────
+mkdir -p "$HERMES_BRAIN"
 echo "{\"lastSync\": \"$(date -Iseconds)\", \"status\": \"ok\"}" > "$STATE_FILE"
-echo "Sync complete: $(date)"
+echo "[Brain Sync] Done — $(date)"

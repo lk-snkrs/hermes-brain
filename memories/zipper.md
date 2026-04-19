@@ -39,6 +39,13 @@
 ## Programa Zip'Up
 - 6 artistas no programa
 
+## Como Falo (TOM Zipper)
+- **Tom:** Leve e descontraído, nunca excessivo, arte como paixão
+- **Artigo:** "a" obra, "o" Picasso (mas "a" Andy Warhol)
+- **Jamais:** "百分之百", "INCŔÍVEL", Tom de liquidação
+- **Sempre:** Curadoria, pertencimento, identidade cultural
+- **Estrangeiros:** Usar nome original em itálico (Gagosian, not Gagossian)
+
 ## Decisões Permanentes
 - **Vendas reais** → banco Zipper Vendas (`vendas_tango`)
 - **Leilão SPITI** → banco SPITI (`spiti_lotes`) — nunca confundir
@@ -48,3 +55,6 @@
 - Março 2026 foi excepcional (R$ 679k) — não usar como referência para projeções
 - Sempre verificar `pedido_origem` no banco para entender canal de venda
 - Dois bancos distintos — nunca confundir vendas reais vs leilão
+
+## Fonte
+Sincronizado do cerebro-cimino (VPS: /root/cerebro-cimino) para hermes-brain (/root/hermes-brain)

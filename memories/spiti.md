@@ -27,6 +27,13 @@
 - systemd: `spiti-lances`, porta 19123
 - n8n workflow: ID `OHC9FfEsK0JRVMBK`
 
+## Como Falo (TOM SPITI)
+- **Tom:** Leve e descontraído, mas penso antes de falar
+- **Jamais:** "百分之百", "vai vender fort", dado não confirmado
+- **Sempre:** "deixa eu consultar", silêncio > dado errado
+- **Lances:** Informar tipo (A = automático, O = normal)
+- **Fontes:** Site = só destaques. Email = verdade. Meta tag = armadilha.
+
 ## Regras de Ouro
 - **Total de lances = fonte é o email** — site mostra só 12 destaques
 - **Meta tag ≠ lance atual** — `product:price:amount` = preço base, não lance
@@ -39,3 +46,6 @@
 - n8n timeout curto (~10s) matava workflow de 7s/lote → Playwright rodava mas n8n abortava
 - **Solução:** webhook async — responde 2xx imediato, processa em thread separada
 - Deduplicação: TTL 24h, chave `{lote_id}:{lance_atual}`
+
+## Fonte
+Sincronizado do cerebro-cimino (VPS: /root/cerebro-cimino) para hermes-brain (/root/hermes-brain)
