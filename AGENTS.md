@@ -148,17 +148,35 @@ hermes config set memory.provider <nome>
 - **Path:** `/root/hermes-brain/` (VPS)
 - **Fonte original:** `/root/cerebro-cimino/` (OpenClaw)
 - **Skills:** hermes-brain, lk-crosssell, lk-leads-esfriando
-- **Sync:** `/root/hermes-brain/sync_hermes.sh` (cron diário)
-- **Local sync:** `/root/.hermes/scripts/brain_sync.sh` (bidirecional, testado 19/04)
+- **Sync:** `/root/.hermes/scripts/brain_sync.sh` (bidirecional)
 
-### Arquitetura de Memórias — 3 Fontes
-1. `/root/.hermes/memories/` — local (pending, lessons, decisions)
-2. `/root/hermes-brain/` — VPS brain
-3. Mem0 vector DB — memories da sessão
+### Arquitetura de Memórias — Brain é Source of Truth
 
-**Regra:** após cada sessão, sync bidirecional com `brain_sync.sh`. Lições novas → `lessons.md` e `mem0_conclude`.
+**REGRA:** Hermes Brain = source of truth. Mem0 = índice de busca.
 
-### Arquitetura de Scripts — Dual Location
+```
+Hermes Brain (source of truth)
+├── decisions.md     → decisões
+├── lessons.md       → lições
+├── pending.md       → tarefas
+├── lk.md           → contexto LK
+├── zipper.md       → contexto Zipper
+└── spiti.md        → contexto Spiti
+         ↓
+    Mem0 (ÍNDICE DE BUSCA)
+    - Lê do Brain
+    - Cria embeddings
+    - NÃO tem dados próprios
+```
+
+**Fluxo de dados:**
+1. Eu gravo → Brain (.md)
+2. Consolidation Weekly → Brain → Mem0 (index)
+3. Busca semântica → Mem0 (encontra no Brain)
+
+**Nunca:** Mem0 como source of truth. Brain é sempre a fonte primária.
+
+### Scripts
 - `/root/.hermes/scripts/` — **canonical** (versionado, backup-safe)
 - `/tmp/` — **cópias ativas** que o cron executa
 
