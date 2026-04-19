@@ -1,0 +1,4 @@
+name: session-start-hook
+description: Executa o Session Start Protocol — brain, pending, crons, decisions, lessons — antes de qualquer ação
+events:
+  - session:start
