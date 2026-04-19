@@ -64,6 +64,20 @@ Antes de dizer "pronto" ou "funciona":
 
 ---
 
+## FIM DE SESSÃO — Checklist Obrigatório
+
+**Antes de fechar sessão (em trabalho real, 3+ tool calls):**
+
+1. `bash /root/.hermes/scripts/brain_sync.sh` + git push
+2. pending.md atualizado?
+3. **OBRIGATÓRIO:** Perguntar "Fizemos alguma decisão hoje?" → se sim, documentar em decisions.md
+4. **OBRIGATÓRIO:** Perguntar "Aprendemos algo novo?" → se sim, documentar em lessons.md
+5. CURRENT_WORK.md → COMPLETO ou EM ANDAMENTO
+
+**Sessão só fecha DEPOIS das perguntas obrigatórias.**
+
+---
+
 ## REGRA DE ATUALIZAÇÃO DE MEMÓRIA
 APÓS CADA SESSÃO, se mudou:
 
