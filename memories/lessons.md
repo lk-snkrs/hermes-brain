@@ -80,7 +80,7 @@
 
 ---
 
-## 🗂️ 2026-04-19 — Session Log
+## 🗂️ 2026-04-19 afternoon — Correção Sistêmica do Brain
 
 ### O que fizemos
 - Auditoria completa: 26 crons, 15+ scripts, 3 fontes de dados
@@ -101,3 +101,26 @@
 3. lk_morning_briefing — NameError (datetime/timezone import) ✅
 4. transactions_full_sync — script recriado + full_sync atualizado ✅
 5. Cron Monday 9h — 3 duplicatas → 1 (pausados 2) ✅
+
+---
+
+## 🗂️ 2026-04-19 evening — Brain Protocols Completos
+
+### O que fizemos
+- **Session End Protocol** criado como skill separado (`session-end-protocol`)
+- **Consolidation Weekly output** agora salva em `memories/consolidation_weekly/{date}.md`
+- **Decisions.md** atualizado com decisões da reorg 19/04 (7 novas decisões)
+- **Cron Brain Sync Night** criado — roda 22h BRT diário
+- **Pending.md** atualizado com todas as ações
+
+### Lição aprendida
+1. Session-start e session-end são dois lados — um não funciona sem o outro
+2. Consolidation output sem salvar = resultado se perde. Agora permanente.
+3. Decisions.md precisa de "decisões de sessão" além de "decisões estratégicas"
+
+### Brain atualizado
+- `/root/.hermes/CURRENT_WORK.md` — COMPLETO ✅
+- `/root/.hermes/pending.md` — atualizado
+- `/root/hermes-brain/memories/decisions.md` — decisões reorg 19/04
+- `/root/hermes/skills/protocol/session-end-protocol/SKILL.md` — criado
+- `/root/.hermes/scripts/hermes_consolidation_weekly.py` — output now saves to brain
