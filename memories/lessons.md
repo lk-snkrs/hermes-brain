@@ -1,108 +1,70 @@
-# Lições Aprendidas — Grupo Cimino
+# Lições Aprendidas
 
-## 🔒 Estratégicas (Permanentes)
+## 19/04/2026
 
-### Dados antes de afirmar
-- Lucas afirma → verificar no banco. Nunca contradizer sem dados.
-- Dizer "zerado" sem consultar Supabase = erro grave.
-- **Regra:** dúvida → consulta. Sem consulta → sem resposta sobre dados.
+### 1. Timezone Bug — LK Intel
+**Problema**: `CURRENT_DATE` no Postgres = UTC.Scripts comparavam `order_created_at >= CURRENT_DATE` achando que era BRT.
+Depois das 12h BRT (15h UTC), `CURRENT_DATE` já era "amanhã" no Brasil.
 
-### Credenciais
-- NUNCA hardcodar credenciais. Usar `doppler secrets get NOME --plain`
-- Fallback explícito: `os.getenv('A') or os.getenv('B')` — sem isso crashes são silenciosos
-- `SUPABASE_CRM_SERVICE_KEY` não existe → usar `SUPABASE_ZIPPER_SERVICE_KEY`
-- Shopify: `SHOPIFY_ACCESS_TOKEN` (não `SHOPIFY_API_TOKEN`)
+**Fix**: `WHERE (order_created_at AT TIME ZONE 'America/Sao_Paulo') >= CURRENT_DATE`
+Aplicado em: `lk_anomaly_check.py`, `lk_anomaly_deepdive.py`, `lk_morning_briefing.py`
 
-### Webhook async é obrigatório
-- Qualquer endpoint com processamento >2s deve responder 200/202 imediatamente
-- n8n timeout ~10s. Playwright ~7s/lote → n8n abortava → 6 lances perdidos
-- **Regra:** endpoint webhook → responde 2xx imediato → thread separada para trabalho
+**Regra**: TODO acesso a datas no Supabase LK → sempre usar `AT TIME ZONE 'America/Sao_Paulo'`
 
-### Deduplicação
-- Qualquer listener de webhook → dedup com TTL desde o início
-- TTL atual SPITI: 24h, chave: `{lote_id}:{lance_atual}`
+---
 
-### Grupos WhatsApp
-- Sessão de grupo não carrega decisions.md automaticamente
-- Skills precisam de queries pré-embutidas
+### 2. Auto-healing Architecture
+**Problema**: Mesmo erro se repete (token revocada, crons quebrando, etc)
 
-## 📊 LK Sneakers
+**Solução**: Stack de 3 camadas:
+1. `hermes_remediate.sh` — conserta DETERMINISTIC errors (VPS refused, rate limits, etc)
+2. `hermes_health_check.py` — previne AUDITANDO antes do erro (PAT válida? scripts no lugar certo?)
+3. Crons com fail-safe — se health check detecta problema → pausa cron → notifica Telegram
 
-### Cross-sell (5.7k pedidos analisados)
-- Onitsuka Tiger = hub central (1.290 pedidos), 91.6% lealdade
-- Jason Markk = upsell universal (funciona com qualquer tênis)
-- NB 9060 → Onitsuka Tiger = fluxo mais forte (25 clientes)
-- 378 clientes NB 9060 sem recompra = segmento prioritário Klaviyo
+**Regra**: Quando consertar algo manualmente → pergunte: "Isso pode acontecer de novo?"Se sim → criar preventor automático.
 
-### Tickets março 2026
-- Ticket médio: R$ 3.035 | 408 pedidos | R$ 1.238.292 total
-- Referência real — não usar para projeções futuras sem ajuste sazonal
+---
 
-### Technical
-- GraphQL metafieldsSet com JSON embutido → erro 500 → usar REST API
-- Heredoc Python dentro de exec trava output → escrever arquivo .py
-- Shopify REST API: 0.12s entre calls = seguro (não rate limit)
-- Googlebot ignora crawl-delay em robots.txt
-- GMC re-sincronização pode levar horas após correção
+### 3. /tmp vs /root Scripts
+**Problema**: Subagent criou scripts em `/tmp` com tokens placeholders. Cron apontava para `/tmp`.
 
-## 🎨 Zipper Galeria
+**Arquitetura nova**:
+- `/root/.hermes/scripts/` — canonical, versionado, Backup-ok
+- `/tmp` — só scripts ativos que o cron EXECUTA ( cópiados do /root )
+- Regra: após editar script em qualquer lugar → sincronizar ambos
 
-### Dois bancos distintos — nunca confundir
-- `vendas_tango` (banco `pcstqxpdzibheuopjkas`) → vendas reais de obras
-- `spiti_lotes` (banco `rmdugdkantdydivgnimb`) → leilão SPITI
+**Script de sync**:
+```bash
+# Após editar /root/.hermes/scripts/lk_*.py
+cp /root/.hermes/scripts/lk_*.py /tmp/
+```
 
-### Marzo 2026 excepcional
-- R$ 679.000 em 8 vendas. Ticket médio altíssimo.
-- Não usar como referência de mês normal para projeções
+---
 
-## 🏛️ SPITI
+### 4. Revoked PAT Detection
+**Problema**: 23 scripts em `/tmp` tinham token antigo `sbp_2297055c...` (revogado).
 
-### Total de lances = fonte é o email
-- Site mostra só 12 destaques. Fonte verdadeira = emails processados pelo n8n → Supabase
-- NUNCA buscar total via scrape da home page
+**Prevenção**: `hermes_health_check.py` escaneia TODOS os scripts em `/tmp` e `/root/.hermes/scripts/` antes de cada sessão.
 
-### Meta tag ≠ lance atual
-- `product:price:amount` na meta tag = preço base, não lance atual
+**Regra**: Após renovar PAT → rodar `hermes_health_check.py` para auditar todos os scripts.
 
-### Tipo de lance
-- A = automático, O = normal — informar nas notificações
+---
 
-### Tom no grupo SPITI.M
-- Leve e descontraído — mas não impulsivo
-- Silêncio é melhor que dado errado
+### 5. Context Survival (M2.7)
+**Problema**: Compressão de contexto pode perder estado crítico entre turnos.
 
-## 📱 Integrações
+**Solução**:
+- `CURRENT_WORK.md` — criado no início de cada sessão, atualizado antes de fechar
+- Ler SEMPRE no início: se existir → ler primeiro
+- Antes de fechar sessão: salvar estado + decisões + pendências
 
-### Evolution API / WhatsApp
-- Links no caption de imagem NÃO são clicáveis
-- **Solução:** enviar URL como mensagem de texto separada após a mídia (1s delay)
-- Sempre usar `limit: 20-30` max, nunca 100+ (timeout em 562 conversas)
+**Arquivo**: `/root/.hermes/CURRENT_WORK.md`
 
-### Processo após porta bloqueada
-- Após deploy fix, confirmar PID/porta do processo que está respondendo
+---
 
-### Mensagens WhatsApp
-- "Oi, Contato3!" + emojis = parecer amador
-- Sempre extrair `primeiro_nome` do `push_name`
+### 6. NameError em Scripts — Import Faltando
+**Problema**: `lk_morning_briefing.py` usava `datetime.now(timezone.utc)` mas só importava `from datetime import date, timedelta`. `datetime` e `timezone` estavam undefined.
 
-## 2026-04-18 — Session Log
+**Fix**: `from datetime import date, timedelta, datetime, timezone`
 
-### O que fizemos
-- Corrigido bug tuple em `refund_records` do lk_shopify_sync.py — tuple Python não é string, `.join()` falha
-- Descobberto que token MGMT `sbp_d37e` foi revogado — token correto é `sbp_2297055c60ee166d8e1aa8476660b13b465d23b4`
-- Corrigido 25 scripts na VPS com sed massivo
-- Token Shopify `shpat_1a35f...` salvo no Doppler
-- GA4 backfill feito via API direta (script standalone travava) — 7 dias inseridos em 18s
-- Corrigido timezone bug no lk_briefing_night.py: `CURRENT_DATE` UTC vs SP — diferença de 3h causava números errados
-- Corrigido "novos clientes" = newsletter Klaviyo → agora = clientes únicos que compraram
-- Briefing night testado: 17/04 = R$ 27.078,99 | 10 ped | 10 clientes
-
-### Lição aprendida
-1. Quando sync retorna 0 rows, verificar SE o token MGMT ainda é válido (não só se a query está certa)
-2. GA4 script standalone (/tmp/lk_ga4_sync_v4.py) pode travar em loop se muitas páginas — usar API direta quando precisar
-3. `CURRENT_DATE` no PostgreSQL é UTC. Para datas SP, usar `order_created_at::date` (date do campo timestamp) + string de data SP
-4. Tupla Python (.append((a, b))) vs string formatada f"({a}, {b})" — na mesma lista, `.join()` espera strings
-
-### Pendente
-- Gmail OAuth Spiti: aguardando Lucas autorizar
-- Meta Ads: aguardando Lucas reconectar Facebook
+**Regra**: Todo script que usa `datetime.now`, `timezone.utc`, `timedelta` → verificar se todos estão no import.

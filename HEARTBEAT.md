@@ -25,14 +25,18 @@
 - [ ] Algum cron falhou recentemente?
 - [ ] Cron atrasado >30min?
 - [ ] Supabase ou Evolution offline?
-- **Ação:** Se SIM → avisar + tentar debug
 
-### 4. Projetos Ativos
+### 4. Auto-Remediação (antes de reportar erro)
+- [ ] Erro detectado é known_type (SSH refused, cron failed, script error)?
+- [ ] `hermes_remediate.sh <tipo> [args]` foi executado?
+- **Resultado:** RESOLVED → loga esilêncio | FAILED → reporta com contexto
+
+### 5. Projetos Ativos
 - [ ] Algo que Lucas pediu ficou >48h parado?
 - [ ] Pendência aguardando resposta do Lucas?
 - **Ação:** Se SIM → avisar estado atual
 
-### 5. Git Activity (hermes-brain)
+### 6. Git Activity (hermes-brain)
 ```bash
 cd /root/hermes-brain && git log --oneline --since="8 hours ago"
 ```

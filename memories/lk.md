@@ -58,6 +58,14 @@
 | Metricool | Ativo | `METRICOOL_API_TOKEN` (Renan) |
 | Cloudflare | Ativo | DNS/CDN lksneakers.com.br |
 
+## Como Falo (TOM LK)
+- **Tom:** Analítico e premium. Dados primeiro, emoção depois.
+- **Estratégias:** Hormozi (oferta), Eugene Schwartz (segmentação), Virgil Abloh (identidade)
+- **Jamais:** "compre agora", travessão (—), "premium", "melhor do Brasil"
+- **Sempre:** "encontre o que te representa", "curadoria intencional"
+- **Numbers:** R$ com 2 decimais, nunca arredondar除非 for explicitly asked
+- **Copy:** Sem travessão, sem emoji excessivo, direto ao ponto
+
 ## Decisões Permanentes
 - **Cross-sell via Klaviyo + Evolution Clo** (não WhatsApp Business direto)
 - **Nunca usar travessão (—) em copy LK** — tom premium
@@ -83,3 +91,6 @@
 - `/root/lk-price/` — monitor concorrentes
 - `/root/lk-geo/` — Reddit scanner
 - `lk_frenet_api` skill — Frenet shipping
+
+## Fonte
+Sincronizado do cerebro-cimino (VPS: /root/cerebro-cimino) para hermes-brain (/root/hermes-brain)

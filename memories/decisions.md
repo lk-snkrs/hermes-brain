@@ -56,3 +56,6 @@
 - Nunca inventar informação sobre estoque, preço ou prazo
 - Credenciais: SEMPRE no Doppler, nunca hardcode
 - Após deploy: confirmar PID/porta do processo que está rodando
+
+## Fonte
+Sincronizado do cerebro-cimino (VPS: /root/cerebro-cimino) para hermes-brain (/root/hermes-brain)
