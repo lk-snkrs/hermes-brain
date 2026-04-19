@@ -24,6 +24,12 @@
 - Quando consertar algo manualmente → perguntar: "Isso pode acontecer de novo?"
 - Se sim → criar preventor automático antes de fechar sessão
 
+### Skill ≠ Hook Real (19/04/2026)
+- Criar um skill NÃO significa que ele executa automaticamente
+- Session-start-protocol existia mas não era carregado automaticamente
+- **Regra:** ao criar skill que deveria ser obrigatório → verificar se tem trigger/hook, não só criar e pronto
+- Se não tem como automatizar → documentar explicitamente como "executar manualmente" no skill
+
 ### Brain: 3 Fontes de Verdade (19/04/2026)
 1. `/root/.hermes/memories/` — local (pending, lessons, decisions)
 2. `/root/hermes-brain/` — VPS brain
