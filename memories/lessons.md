@@ -84,3 +84,25 @@
 ### Mensagens WhatsApp
 - "Oi, Contato3!" + emojis = parecer amador
 - Sempre extrair `primeiro_nome` do `push_name`
+
+## 2026-04-18 — Session Log
+
+### O que fizemos
+- Corrigido bug tuple em `refund_records` do lk_shopify_sync.py — tuple Python não é string, `.join()` falha
+- Descobberto que token MGMT `sbp_d37e` foi revogado — token correto é `sbp_2297055c60ee166d8e1aa8476660b13b465d23b4`
+- Corrigido 25 scripts na VPS com sed massivo
+- Token Shopify `shpat_1a35f...` salvo no Doppler
+- GA4 backfill feito via API direta (script standalone travava) — 7 dias inseridos em 18s
+- Corrigido timezone bug no lk_briefing_night.py: `CURRENT_DATE` UTC vs SP — diferença de 3h causava números errados
+- Corrigido "novos clientes" = newsletter Klaviyo → agora = clientes únicos que compraram
+- Briefing night testado: 17/04 = R$ 27.078,99 | 10 ped | 10 clientes
+
+### Lição aprendida
+1. Quando sync retorna 0 rows, verificar SE o token MGMT ainda é válido (não só se a query está certa)
+2. GA4 script standalone (/tmp/lk_ga4_sync_v4.py) pode travar em loop se muitas páginas — usar API direta quando precisar
+3. `CURRENT_DATE` no PostgreSQL é UTC. Para datas SP, usar `order_created_at::date` (date do campo timestamp) + string de data SP
+4. Tupla Python (.append((a, b))) vs string formatada f"({a}, {b})" — na mesma lista, `.join()` espera strings
+
+### Pendente
+- Gmail OAuth Spiti: aguardando Lucas autorizar
+- Meta Ads: aguardando Lucas reconectar Facebook
