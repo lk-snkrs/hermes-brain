@@ -57,5 +57,16 @@
 - Credenciais: SEMPRE no Doppler, nunca hardcode
 - Após deploy: confirmar PID/porta do processo que está rodando
 
+## Decisões Reorg 19/04/2026
+| Decisão | Detalhe | Data |
+|---------|---------|------|
+| Crons duplicados Monday 9h | 3 crons → 1 (hermes_consolidation_weekly.py) | 2026-04-19 |
+| Crons pausados | hermes_learning_loop.py + hermes_knowledge_freshness.py (redundantes) | 2026-04-19 |
+| 3 briefing crons pausados | lk_briefing_night_fixed + 2 others (Consolidation cobre) | 2026-04-19 |
+| Hermes Monthly Review | Nunca rodou — first run 28/04 | 2026-04-19 |
+| /tmp scripts com token old | 23 scripts token revogado → novo (sbp_5cd916...) | 2026-04-19 |
+| transactions_full sync | Script recriado + adicionado ao full_sync como 6ª fonte | 2026-04-19 |
+| Hero crons auditados | 26 crons: 11 ativos, 9 pausados, 3 nunca rodaram | 2026-04-19 |
+
 ## Fonte
 Sincronizado do cerebro-cimino (VPS: /root/cerebro-cimino) para hermes-brain (/root/hermes-brain)
