@@ -155,3 +155,23 @@
 - `/root/hermes-brain/memories/decisions.md` — decisões reorg 19/04
 - `/root/hermes/skills/protocol/session-end-protocol/SKILL.md` — criado
 - `/root/.hermes/scripts/hermes_consolidation_weekly.py` — output now saves to brain
+
+---
+
+## 🗂️ 2026-04-21 — Weekly Consolidation
+
+### Observations from the week (19-21/04)
+- **lk_morning_briefing.py** bugs fixed: pending de antifraude, produto/topics filters, JOIN duplicates
+- **Meta Ads token** still INVALID (38+ days) — Lucas action still pending
+- **622 session files** in ~/.hermes/sessions/ — many pre-09/04, old session cleanup blocked by system
+- **pending.md** items all from 2026-04-20 — nothing >30 days old to archive yet
+- **lk_cockpit** dashboard status: build succeeds, Railway deploy pending
+- **spiti_email_poller** remains LOW PRIORITY (no auction until Aug 2026)
+
+### Pending archive check
+- No items in pending.md created before 2026-03-22 (30-day cutoff)
+- Next consolidation: check again 2026-05-21
+
+### Git sync
+- Session cleanup via delete blocked — sessions managed externally
+- Weekly git commit executed successfully
