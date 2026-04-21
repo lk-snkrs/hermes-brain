@@ -67,6 +67,65 @@
 | /tmp scripts com token old | 23 scripts token revogado → novo (sbp_5cd916...) | 2026-04-19 |
 | transactions_full sync | Script recriado + adicionado ao full_sync como 6ª fonte | 2026-04-19 |
 | Hero crons auditados | 26 crons: 11 ativos, 9 pausados, 3 nunca rodaram | 2026-04-19 |
+| spiti_email_poller = LOW PRIORITY | Sem auction até ago 2026 — não priorizar | 2026-04-19 |
+| Telegram 401 = false positive | Bot token válido — daily_report precisa investigação | 2026-04-19 |
+
+## Meta Ads - Prioridade Máxima
+| Decisão | Detalhe | Data |
+|---------|---------|------|
+| Meta Ads token INVALID | OAuth session expired desde ~12/03/2026 | 2026-04-19 |
+| Ação necessária | Lucas precisa re-autenticar no Business Facebook | 2026-04-19 |
+| Scripts preparados | meta_token_test.sh + meta_auth_helper.sh prontos | 2026-04-19 |
+
+## Infraestrutura Sync LK (19/04/2026)
+| Decisão | Data |
+|---------|------|
+| lk_transactions_full_sync.py RECRIADO | 2026-04-19 |
+| Script original: token placeholder shpat_...f1ba quebrado | 2026-04-19 |
+| Script original: SHOP="lksneakers" (nome errado) | 2026-04-19 |
+| Script original: URL com domínio dobrado (lk-sneakerss.myshopify.com.myshopify.com) | 2026-04-19 |
+| Transactions sync parou em 12/04 — 7 dias sem sync | 2026-04-19 |
+| Token corrigido: lk_transactions_full_sync.py agora usa Doppler | 2026-04-19 |
+| Shop corrigido: SHOP="lk-sneakerss" (script concatena .myshopify.com) | 2026-04-19 |
+| lk_sort_batch.py token corrigido: shpat_8c163692 inválido → Doppler | 2026-04-19 |
+| Health check expandido: shop name + transactions freshness | 2026-04-19 |
+
+## Meta Ads
+| Decisão | Data |
+|---------|------|
+| Meta Ads token INVALID | OAuth session expired desde ~12/03/2026 | 2026-04-19 |
+| Ação necessária | Lucas precisa re-autenticar no Business Facebook | 2026-04-19 |
+| Scripts preparados | meta_token_test.sh + meta_auth_helper.sh prontos | 2026-04-19 |
+
+## Health Check (19/04/2026)
+| Decisão | Data |
+|---------|------|
+| hermes_health_check.py checava só PAT — NÃO tokens dentro dos scripts | 2026-04-19 |
+| Adicionado: check_shopify_shop_name() — detecta domínio dobrado .myshopify.com | 2026-04-19 |
+| Adicionado: check_transactions_stale() — alerta se >12h sem transaction nova | 2026-04-19 |
+| shop name de Shopify tem 2 padrões: f"https://{SHOP}/..." vs f"https://{SHOP}.myshopify.com/..." | 2026-04-19 |
+| Regex de validação precisa entender o padrão de cada script | 2026-04-19 |
+
+## VPS Brain Consolidation (19/04/2026)
+| Decisão | Detalhe | Data |
+|---------|---------|------|
+| Crons brain sync pausados | `227f3cc47955` (6am) + `364fb6bd4036` (10pm) — VPS não acessível | 2026-04-19 |
+| Brain sync via script nativo | `sync_hermes.sh` no VPS funciona — crons agent são redundantes | 2026-04-19 |
+| Proactive Insight Engine criado | `proactive_insight_engine.py` — análise automática de anomalias | 2026-04-19 |
+| Insight engine em /root/.hermes/scripts/ | Copiado para scripts dir + versionado | 2026-04-19 |
+
+### Proactive Insight Engine
+- **Script:** `/root/.hermes/scripts/proactive_insight_engine.py`
+- **Funcionalidades:** Detecta cost spikes, session drops, token anomalies, tool over-reliance, idle days, productivity trends
+- **Formato:** Suporta `--format gateway|terminal|json` e `--days N`
+- **Alertas:** Só envia se encontrar algo (regra: no news is good news)
+- **Rodar manualmente:** `python3 proactive_insight_engine.py --days 7 --format gateway`
+
+### Crons Brain Sync Pausados
+| Job ID | Nome | Motivo Pausa |
+|--------|------|-------------|
+| `227f3cc47955` | Hermes Brain Sync (6am) | SSH/script-based sync já existe via `sync_hermes.sh` na VPS |
+| `364fb6bd4036` | Hermes Brain Sync — Night (10pm) | Mesmo motivo — redundante com sync nativo |
 
 ## Fonte
 Sincronizado do cerebro-cimino (VPS: /root/cerebro-cimino) para hermes-brain (/root/hermes-brain)

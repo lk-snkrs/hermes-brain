@@ -104,9 +104,10 @@ cd /root/hermes-brain && git log --oneline --since="8 hours ago"
 
 - [x] HEARTBEAT.md criado
 - [x] Heartbeat-rotativo skill
-- [ ] Cron jobs 3x/dia ATIVADOS
-- [ ] Integrar com pending.md state
+- [x] Cron jobs 3x/dia ATIVADOS
+- [x] Integrar com pending.md state
 
 ---
 
-*Criado em: 2026-04-14 — baseado no HEARTBEAT.md do CWC*
+*Última execução: 2026-04-20 14:00 BRT*
+*Status: 🟡 AVISO — Disk 38%, Supabase connectivity FAIL (401 Unauthorized), Meta Ads 39d INVALID, n8n/Evo healthy, 3 top sellers out-of-stock*

@@ -13,7 +13,32 @@
 - `SUPABASE_CRM_SERVICE_KEY` não existe → usar `SUPABASE_ZIPPER_SERVICE_KEY`
 - Shopify: `SHOPIFY_ACCESS_TOKEN` (não `SHOPIFY_API_TOKEN`)
 
-### REGRA COO: Fix First, Report Later (19/04/2026)
+### REGRA COO: Health Check Proativo (19/04/2026)
+- \"Sistema 100%\" ≠ cron não reportou erro — é preciso verificar os DADOS, não só status
+- Health check antigo checava só PAT — NÃO checava tokens DENTRO dos scripts
+- Script pode rodar sem inserir dados (token fake, shop name errado) → cron diz OK, DB fica vazio
+- **Regra**: health check precisa checar (1) tokens nos scripts, (2) shop names, (3) freshness dos dados
+
+### Shopify Shop Name: 2 Padrões de Concatenação (19/04/2026)
+- `f"https://{SHOP}/admin/api/..."` → SHOP precisa ser `lk-sneakerss.myshopify.com`
+- `f"https://{SHOP}.myshopify.com/..."` → SHOP precisa ser só `lk-sneakerss`
+- Regex de validação PRECISA saber qual padrão cada script usa
+- Regra prática: cada novo script Shopify → testar API com curl antes de pushar
+
+### Transactions Full Sync: 3 Bugs Silenciosos (19/04/2026)
+1. Token placeholder → script roda sem inserir, ninguém percebe
+2. Shop name errado → API retorna 0 results, INSERT faz nothing
+3. URL dobrada (lk-sneakerss.myshopify.com.myshopify.com) → SSL error silencioso
+- **Prevenção**: health check com `check_transactions_stale()` + `check_shopify_shop_name()`
+
+### REGRA COO: Corrigir + Prevenir + Testar (19/04/2026)
+- Bug encontrado → (1) corrigir, (2) previnir auto-corrigido, (3) TESTAR
+- \"Funciona\" sem testar = não funciona em produção
+- Testar = rodar script + verificar resultado no banco, não só output do terminal
+
+---
+
+## 🗂️ 2026-04-19 evening — Correções Proativas
 - Se posso corrigir sozinho → FAÇA. Não pergunte.
 - "Você quer que eu corrija?" → já deveria estar corrigido
 - Erro encontrado → consertar antes de dizer que encontrou
