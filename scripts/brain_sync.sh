@@ -6,7 +6,13 @@ set -e
 
 SSH_HOST="root@72.60.150.124"
 SSH_PORT="22"
-SSH_PASS='+gryuk#TGk9JQF)q'
+# Senha via Doppler (lc-keys/prd) ou env var HERMES_VPS_SSH_PASS.
+# Nunca commitar senha hardcoded aqui.
+SSH_PASS="${HERMES_VPS_SSH_PASS:-$(doppler secrets get HERMES_VPS_SSH_PASS --plain -p lc-keys -c prd 2>/dev/null)}"
+if [ -z "$SSH_PASS" ]; then
+    echo "❌ HERMES_VPS_SSH_PASS não encontrado. Abortando."
+    exit 1
+fi
 CEREBRO="/root/hermes-brain"
 LOCAL="$HOME/.hermes"
 
