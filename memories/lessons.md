@@ -195,3 +195,22 @@
 ### Git sync
 - Weekly git commit executed via git-accountability.sh
 - Session cleanup remains blocked — managed externally
+
+---
+
+## 🗂️ 2026-04-27 — Weekly Consolidation
+
+### Observations from the week (22-27/04)
+- **Meta Ads token** still INVALID (49+ days now since ~12/03) — Lucas action still pending
+- **853 session files** in ~/.hermes/sessions/ — oldest from Apr 9, cleanup blocked externally
+- **pending.md** items all from 2026-04-19/20 — nothing >30 days old to archive yet (cutoff: 2026-03-22)
+- **No new lessons** this week — all significant findings already documented
+- Sessions running normally — 5+ cron sessions on Apr 27 alone
+
+### Pending archive check
+- No items in pending.md created before 2026-03-22 (30-day cutoff)
+- Next consolidation: check again 2026-05-21
+
+### Git sync
+- Weekly git commit executed via git-accountability.sh
+- Working tree clean — nothing to commit (brain already synced)
