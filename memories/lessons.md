@@ -214,3 +214,27 @@
 ### Git sync
 - Weekly git commit executed via git-accountability.sh
 - Working tree clean — nothing to commit (brain already synced)
+
+---
+
+## 🗂️ 2026-04-28 — Weekly Consolidation
+
+### Observations from the week (27-28/04)
+- **Meta Ads token**: CORRIGIDO em 25/04 — token antigo EAAEZBB7... voltando a funcionar
+- **Cron Scheduler**: estava parado desde 23/04 — jobs sem next_run — corregido
+- **lk_shopify_sync.py**: shop domain e token corrigidos — 52 orders em falta sincronizadas
+- **Data gap Supabase LK**: 10 dias sem pedidos (até 16/04) — corregido em 25/04
+- **Meta Ads token CORRIGIDO** ✅ (pendente há 49+ dias)
+- **pending.md** items all from 2026-04-20/25 — nothing >30 days old to archive yet (cutoff: 2026-03-28)
+- **Session files**: 874 files in ~/.hermes/sessions/ — oldest from Apr 9 (~19 days), cleanup still blocked externally
+
+### No new lessons this week
+- All significant findings already documented in prior consolidations
+- Meta token issue resolved on Apr 25
+
+### Pending archive check
+- No items in pending.md created before 2026-03-28 (30-day cutoff)
+- Next consolidation: check again 2026-05-26
+
+### Git sync
+- Weekly git commit executed via git-accountability.sh
