@@ -1,56 +1,31 @@
----
-name: lk-crosssell
-description: Monitor de cross-sell LK — detecta pedidos fulfilled e gera sugestões de produtos complementares para clientes recentes. Baseado nos padrões de cross-sell do cerebro-cimino (Onitsuka hub central, Jason Markk upsell universal).
-area: lk
-version: 1.0.0
----
+# Skill — LK Cross-sell
 
-# Skill: Cross-Sell Monitor LK
+Fonte canônica atual: `skills/lk-crosssell/SKILL.md`.
 
-## Fontes
-- Scripts: `/root/lk-price/` (monitor concorrentes)
-- Docs: `/root/hermes-brain/memories/lk.md`
-- Database: Supabase LK (`cnjimxglpktznenpbail`)
+Esta cópia de área existe para navegação no modelo Bruno/OpenClaw adaptado ao Hermes.
+Não duplicar lógica operacional aqui sem atualizar a skill canônica.
 
-## Input
-- Pedidos fulfilled nas últimas 24h (Supabase LK)
-- Histórico de compras por cliente
+## Quando usar
 
-## Processo
-1. Busca pedidos com status `fulfilled` nas últimas 24h
-2. Para cada cliente, analisa histórico de compras anteriores
-3. Identifica padrões: quem comprou X também comprou Y
-4. Aplica regras de cross-sell confirmadas:
-   - Jason Markk + qualquer tênis = upsell obrigatório
-   - NB 9060 → Onitsuka Tiger = fluxo mais forte (25 clientes)
-   - Onitsuka Tiger = hub central (91.6% lealdade)
-5. Gera sugestão de produto complementar por perfil
-6. Envia preview para Lucas aprovar antes de disparar
+- Pedido LK com status fulfilled.
+- Cliente elegível para recomendação complementar.
+- Lucas pede oportunidade de recompra, cross-sell ou cliente recente.
 
-## Regras de Cross-Sell Confirmadas
-- **Jason Markk** — funciona como upsell com qualquer tênis
-- **NB 9060** → Onitsuka Tiger = caminho mais forte de cross-sell
-- **Onitsuka Tiger** — maior lealdade (91.6%), funciona como hub
-- **Regra 90 dias:** 1 cross-sell por cliente (evitar spam)
-- **Só produtos em estoque**
+## Fluxo Hermes
 
-## Output
-Preview no Telegram com:
-- Lista de clientes para cross-sell
-- Produto sugerido por cliente
-- Contexto (última compra, perfil)
-- Botão de aprovação
+```text
+pedido fulfilled → histórico cliente → elegibilidade 90 dias → estoque → recomendação → preview Lucas → envio aprovado → registro resultado
+```
 
-## Credenciais (Doppler)
+## Credenciais
+
+Buscar via Doppler `lc-keys/prd`; nunca versionar valores.
+
 - `SUPABASE_LK_URL`
 - `SUPABASE_LK_SERVICE_KEY`
+- `KLAVIYO_API_KEY` quando houver campanha.
+- `EVOLUTION_API_KEY` / `EVOLUTION_INSTANCE` quando houver WhatsApp aprovado.
 
-## Cron
-`LK Cross-Sell Monitor` — 9h10, 15h10 e 21h10 diariamente
+## Aprovação
 
-
-## Adaptação Hermes Brain
-
-Esta é uma skill de negócio da área LK/CRM. Se virar procedimento recorrente do agente, criar/ligar skill nativa Hermes correspondente.
-
-Ações externas exigem preview e aprovação Lucas.
+Obrigatória antes de qualquer envio externo ao cliente.

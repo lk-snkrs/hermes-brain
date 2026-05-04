@@ -1,46 +1,35 @@
----
-name: lk-leads-esfriando
-description: Monitor de leads esfriando LK — detecta clientes que compraram há 30-60 dias e podem estar desinteressando. Identifica padrões de churn e gera alertas proativos.
-area: lk
-version: 1.0.0
----
+# Skill — LK Leads Esfriando
 
-# Skill: LK Leads Esfriando Monitor
+Fonte canônica atual: `skills/lk-leads-esfriando/SKILL.md`.
 
-## Contexto
-- 378 clientes NB 9060 sem recompra = segmento mais quente
-- Taxa segunda compra atual: 17% (meta: 25%)
-- Clientes em risco: compraram há 30-60 dias, sem interação
+Esta cópia de área organiza a skill dentro do CRM LK sem substituir a versão canônica.
 
-## Processo
-1. Busca clientes que compraram entre 30-60 dias atrás
-2. Verifica se tiveram interação desde então (Klaviyo opens, site visits)
-3. Classifica em:
-   - **Quente:** teve interação mas não comprou — kampagin candidate
-   - **Frio:** sem interação — reativação necessária
-   - **Risco:** comprou marca com baixa lealdade — cross-sell urgente
-4. Gera lista segmentada por estratégia:
-   - Reativação (campanha Klaviyo)
-   - Cross-sell (direto via Evolution Clo)
-   - VIP (mais de 2 compras, alto ticket)
+## Quando usar
 
-## Segmentação de Risco
-| Risco | Critério | Ação |
-|-------|---------|------|
-| Alto | >60 dias sem compra + marca baixa lealdade | Cross-sell urgente |
-| Médio | 45-60 dias sem interação | Reativação Klaviyo |
-| Baixo | 30-45 dias | Monitorar |
+- Clientes sem recompra em janela de 30–60 dias.
+- Queda de interação em Klaviyo/site.
+- Lucas pede oportunidades de reativação ou risco de churn.
 
-## Output
-- Lista segmentada no Telegram para Lucas
-- Recommendações de ação por segmento
-- Dados: nome, última compra, marca, dias desde última compra
+## Fluxo Hermes
 
-## Credenciais (Doppler)
+```text
+cliente sem recompra → interação recente → risco → estratégia → preview Lucas → campanha/contato aprovado → resultado → lesson
+```
+
+## Segmentos iniciais
+
+- Quente: interagiu, mas não comprou.
+- Frio: sem interação.
+- Risco: compra anterior em marca/cluster com baixa lealdade.
+
+## Credenciais
+
+Buscar via Doppler `lc-keys/prd`; nunca versionar valores.
+
 - `SUPABASE_LK_SERVICE_KEY`
 - `KLAVIYO_API_KEY`
+- `EVOLUTION_API_KEY` / `EVOLUTION_INSTANCE` se houver WhatsApp aprovado.
 
+## Aprovação
 
-## Adaptação Hermes Brain
-
-Skill de negócio da área LK/CRM. Deve consultar Supabase LK e, quando envolver envio externo, pedir aprovação Lucas.
+Obrigatória antes de disparo Klaviyo, WhatsApp, cupom ou mensagem direta.
