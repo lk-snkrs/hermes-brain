@@ -8,6 +8,8 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 |--------|---------|--------|
 | Brain Sync | `areas/operacoes/rotinas/brain-sync.md` | Sincronização do Brain e versionamento |
 | Heartbeat | `areas/operacoes/rotinas/heartbeat.md` | Checagens periódicas operacionais |
+| Brain Health Check | `areas/operacoes/rotinas/brain-health-check.md` | Validação de secrets, links, agentes, rotinas e skills |
+| Hermes Release Watch | `areas/operacoes/rotinas/hermes-release-watch.md` | Monitorar releases do Hermes Agent e avaliar melhorias aplicáveis |
 
 ## LK Sneakers
 

@@ -66,6 +66,7 @@ Use `memories/` para contexto compacto, decisões permanentes e lições. Não u
 - `empresa/decisoes/decisoes-permanentes.md`
 - `empresa/gestao/pendencias.md`
 - `empresa/gestao/licoes.md`
+- `empresa/gestao/memory-system.md`
 - `empresa/rotinas/_index.md`
 - `empresa/skills/_index.md`
 

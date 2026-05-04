@@ -220,4 +220,27 @@ Toda fase deve terminar com:
 5. Rodada D — Zipper playbooks.
 6. Rodada E — SPITI hardening.
 
+## Atualização contínua obrigatória
+
+A cada rodada de evolução do Hermes Brain:
+
+1. Verificar release atual do Hermes Agent.
+2. Avaliar novidades aplicáveis a skills, memória, gateway, crons, ferramentas e segurança.
+3. Atualizar skills internas quando o procedimento mudar.
+4. Atualizar o Brain, índices e roadmap.
+5. Rodar `scripts/brain_health_check.py` e scan de secrets.
+
+## Sistema de memória
+
+Documento canônico: `empresa/gestao/memory-system.md`.
+
+Resumo:
+
+- Memory tool: preferências duráveis do Lucas e regras globais compactas.
+- `session_search`: recuperar histórico de conversas e progresso anterior.
+- Hermes Brain GitHub: fonte de verdade para negócio, processos, decisões, rotinas, skills e agentes.
+- `memories/`: memória executiva compacta por negócio.
+- `empresa/` e `areas/`: detalhamento operacional estruturado.
+- Dados vivos: Supabase, Shopify, APIs, email e crons.
+
 Motivo: antes de aprofundar operação, vale criar health checks para proteger o Brain e evitar regressão de secrets, links quebrados e estrutura incompleta.
