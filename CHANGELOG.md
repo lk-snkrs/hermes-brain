@@ -2,6 +2,18 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-04 — Observabilidade Hermes runtime/gateway
+
+Commit: `docs: add Hermes runtime observability routine`
+
+Entregas:
+
+- Documentada rotina read-only para observar versão, containers, gateway, cron interno e logs do Hermes na VPS.
+- Registrado gap entre runtime Hostinger observado (`Hermes Agent v0.9.0`) e release upstream (`Hermes Agent v0.12.0`, `v2026.4.30`).
+- Registrada divergência operacional: processo `hermes gateway run` existe no container Telegram, mas `hermes cron status` reporta gateway não running.
+- Registrado warning de conflito de polling Telegram sem aplicar restart, update ou alteração em Docker/VPS/root.
+- Atualizados `areas/tecnologia/contexto/hermes-docker-footprint.md`, `areas/operacoes/rotinas/hermes-release-watch.md`, `empresa/rotinas/_index.md` e roadmap.
+
 ## 2026-05-04 — Integrações por ferramenta e rotinas seguras
 
 Commit: `docs: deepen integration operating routines`

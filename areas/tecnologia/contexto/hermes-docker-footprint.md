@@ -87,3 +87,19 @@ A chave SSH dedicada usada para inventário fica fora do repo:
 ```
 
 Nunca commitar chave privada nem valores de secrets. Doppler `lc-keys/prd` segue como fonte de verdade para credenciais.
+
+## Observabilidade runtime — 2026-05-04
+
+Consulta read-only complementar documentada em `../../operacoes/rotinas/hermes-runtime-observability.md`.
+
+Achados principais:
+
+- Containers Hermes estavam rodando.
+- Runtime Docker Hostinger reportou Hermes Agent v0.9.0 (2026.4.13).
+- Release upstream consultada no GitHub: Hermes Agent v0.12.0 (`v2026.4.30`).
+- `hermes cron list` mostrou job `Hermes release watch` ativo.
+- `hermes cron status` reportou `Gateway is not running`, apesar de existir processo `hermes gateway run` como processo principal do container Telegram.
+- Logs mostraram warning de conflito de polling Telegram.
+
+Interpretação: há warning operacional e gap de versão, mas nenhuma correção/restart/update deve ser feita sem aprovação explícita Lucas e plano de rollback.
+

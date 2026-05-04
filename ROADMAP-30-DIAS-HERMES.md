@@ -112,9 +112,10 @@ Tarefas restantes:
 
 1. Decidir se a chave SSH dedicada permanece ou será removida.
 2. Rotacionar senha root enviada em chat, se desejado.
-3. Investigar alerta de gateway parado no CLI vs container gateway rodando.
+3. Investigar alerta de gateway parado no CLI vs container gateway rodando. — auditoria read-only documentada em `areas/operacoes/rotinas/hermes-runtime-observability.md`; próximo passo é decidir investigação/correção sem reiniciar containers automaticamente.
 4. Fazer inventário específico de workflows n8n via API em rodada própria. — concluído em `areas/operacoes/rotinas/n8n-inventory.md`; workflow_count = 0 em `lc.vps`.
 5. Atualizar `empresa/rotinas/_index.md` com coluna de status real se Lucas quiser visual executivo por rotina.
+6. Decidir se update planejado do runtime Hermes Hostinger de v0.9.0 para v0.12.0 entra em janela de manutenção com backup/rollback.
 
 ### Rodada B — Integrações por ferramenta
 
@@ -229,10 +230,11 @@ Toda fase deve terminar com:
 
 ## Sequência recomendada agora
 
-1. Rodada C — LK playbooks.
-2. Rodada D — Zipper playbooks.
-3. Rodada E — SPITI hardening.
-4. Rodadas contínuas — Health checks, release watch Hermes, secret validation e inventário VPS/n8n conforme mudanças.
+1. Fechar decisão operacional sobre Hermes runtime/gateway: investigar conflito de polling e planejar update v0.9.0 → v0.12.0 somente com aprovação/rollback.
+2. Rodada C — LK playbooks.
+3. Rodada D — Zipper playbooks.
+4. Rodada E — SPITI hardening.
+5. Rodadas contínuas — Health checks, release watch Hermes, secret validation e inventário VPS/n8n conforme mudanças.
 
 ## Atualização contínua obrigatória
 

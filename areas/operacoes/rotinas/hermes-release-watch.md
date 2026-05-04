@@ -10,9 +10,12 @@ GitHub releases do repositório `NousResearch/hermes-agent`.
 
 ## Última release consultada nesta fase
 
-- Tag: `v2026.4.30`
-- Nome: Hermes Agent v0.12.0 (2026.4.30)
+- Data da consulta: 2026-05-04.
+- Tag upstream: `v2026.4.30`
+- Nome upstream: Hermes Agent v0.12.0 (2026.4.30)
 - Tema: “The Curator release”
+- Versão observada no runtime Docker Hostinger: Hermes Agent v0.9.0 (2026.4.13)
+- Interpretação: há gap entre produção e upstream; update de runtime é ação de produção e exige aprovação Lucas + backup/rollback.
 
 ## Novidades relevantes para Lucas/Hermes Brain
 
