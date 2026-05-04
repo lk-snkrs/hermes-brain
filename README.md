@@ -26,6 +26,8 @@ Depois use:
 - `STARTUP.md` — boot protocol.
 - `PROTOCOLS.md` — protocolos operacionais.
 - `TOOLS.md` — ferramentas e integrações.
+- `CHANGELOG.md` — histórico da adaptação Bruno/OpenClaw → Hermes.
+- `ROADMAP-30-DIAS-HERMES.md` — roadmap pós-adaptação e próximas rodadas.
 - `memories/` — memória executiva compacta e global.
 - `empresa/` — contexto cross-área, decisões, gestão, rotinas e skills.
 - `areas/` — mapas operacionais por negócio/área.
