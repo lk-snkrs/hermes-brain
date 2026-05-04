@@ -7,9 +7,11 @@ Usage: python3 session_end_summary.py "<session_summary>"
 import requests, os, sys, time
 from datetime import datetime
 
-MEM0_API_KEY = os.environ.get("MEM0_API_KEY", "m0-40cao7JUJzWboKj7zOebyA2spHR8xl26RhiVXMDn")
+MEM0_API_KEY = os.environ.get("MEM0_API_KEY", "")
 
 def mem0_conclude(content, user_id="hermes-user"):
+    if not MEM0_API_KEY:
+        raise RuntimeError("Missing MEM0_API_KEY; run via Doppler lc-keys/prd")
     url = "https://api.mem0.ai/v1/memories/"
     payload = {
         "messages": [

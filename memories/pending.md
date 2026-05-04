@@ -93,8 +93,8 @@ export META_ACCESS_TOKEN="***"
 
 | Token | Status | Notes |
 |-------|--------|-------|
-| PAT (sbp_5cd916) | ✅ Válido | Supabase Management API |
-| Shop (shpat_8c163) | ✅ Válido | Shopify Admin API |
+| PAT (sbp_[REDACTED]) | ✅ Válido | Supabase Management API |
+| Shop (shpat_[REDACTED]) | ✅ Válido | Shopify Admin API |
 | Meta Ads | ❌ INVÁLIDO | OAuth token expired — 38+ dias |
 | Telegram Bot | ✅ Válido | HermesLC_Bot — re-validado 19/04 |
 | Frenet | ✅ Em uso | 131 registros syncados |

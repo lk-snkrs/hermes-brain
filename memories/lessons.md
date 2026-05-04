@@ -182,7 +182,7 @@
 
 ### Observations from the week (19-22/04)
 - **lk_shopify_sync.py** still has timeout issue at CUSTOMERS (~8s) — 52 orders from 17-21/04 not synced
-- **lk_morning_briefing.py** — Management API token fix applied (sbp_v0_945f5093a614...)
+- **lk_morning_briefing.py** — Management API token fix applied (sbp_[REDACTED]...)
 - **lk_cockpit** dashboard — Railway deploy still pending (CLI not authenticated)
 - **Meta Ads token** still INVALID (43+ days now) — Lucas action still pending
 - **622 session files** in ~/.hermes/sessions/ — cleanup still blocked externally (pre-09/04 files remain)

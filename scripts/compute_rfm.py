@@ -5,14 +5,16 @@ Computes RFM scores from lk_intel.orders and populates customer_rfm table.
 Run: python3 compute_rfm.py
 Schedule: Weekly (Sunday 23:00)
 """
-import requests, sys
+import os, requests, sys
 from datetime import datetime, timedelta
 
-PAT = "sbp_5cd916280ef631f32155ee303c19f0f15d69223d"
+PAT = os.environ.get("SUPABASE_ACCESS_TOKEN") or os.environ.get("SUPABASE_MANAGEMENT_TOKEN")
 PROJECT = "cnjimxglpktznenpbail"
 URL = f"https://api.supabase.com/v1/projects/{PROJECT}/database/query"
 
 def sql(q, retry=3):
+    if not PAT:
+        raise RuntimeError("Missing SUPABASE_ACCESS_TOKEN/SUPABASE_MANAGEMENT_TOKEN; run via Doppler lc-keys/prd")
     for i in range(retry):
         try:
             r = requests.post(URL, headers={"Authorization": f"Bearer {PAT}", "Content-Type": "application/json"},

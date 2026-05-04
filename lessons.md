@@ -28,20 +28,20 @@
 
 ### Descoberta Crítica
 - **REST API** (`supabase.co/rest/v1/`): usa JWT `eyJ...` como `apikey` + `Authorization: Bearer`
-- **Management API** (`api.supabase.com/v1/projects/{id}/database/query`): usa `sbp_v0_...` service role key
+- **Management API** (`api.supabase.com/v1/projects/{id}/database/query`): usa `sbp_[REDACTED]...` service role key
 - `_hermes_config.py` expõe só `PAT` (JWT) → scripts que usam MGMT API quebram
 
 ### Bug: lk_morning_briefing.py
 - `KeyError: 'receita'` → script recebia `[]` da MGMT API (401 JWT inválido)
-- **Fix:** hardcoded `sbp_v0_945f5093a614064ba967fd4ac5e1d77dad212e75` no HEADER
+- **Fix:** hardcoded `sbp_[REDACTED]` no HEADER
 - Briefing executou com sucesso após fix
 
 ### Diagnóstico Correto
 ```python
 # Testar ambos formatos na MGMT API
-for token, label in [('eyJ...', 'JWT'), ('sbp_v0_...', 'sbp_v0')]:
+for token, label in [('eyJ...', 'JWT'), ('sbp_[REDACTED]...', 'sbp_[REDACTED]')]:
     r = requests.post(url, headers={'Authorization': f'Bearer {token}', ...})
-    print(f'{label}: {r.status_code}')  # sbp_v0 = 201, JWT = 401
+    print(f'{label}: {r.status_code}')  # sbp_[REDACTED] = 201, JWT = 401
 ```
 
 ### Lição: Sempre testar o formato exato que a API espera

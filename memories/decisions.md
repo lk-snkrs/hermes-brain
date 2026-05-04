@@ -64,7 +64,7 @@
 | Crons pausados | hermes_learning_loop.py + hermes_knowledge_freshness.py (redundantes) | 2026-04-19 |
 | 3 briefing crons pausados | lk_briefing_night_fixed + 2 others (Consolidation cobre) | 2026-04-19 |
 | Hermes Monthly Review | Nunca rodou — first run 28/04 | 2026-04-19 |
-| /tmp scripts com token old | 23 scripts token revogado → novo (sbp_5cd916...) | 2026-04-19 |
+| /tmp scripts com token old | 23 scripts token revogado → novo (sbp_[REDACTED]...) | 2026-04-19 |
 | transactions_full sync | Script recriado + adicionado ao full_sync como 6ª fonte | 2026-04-19 |
 | Hero crons auditados | 26 crons: 11 ativos, 9 pausados, 3 nunca rodaram | 2026-04-19 |
 | spiti_email_poller = LOW PRIORITY | Sem auction até ago 2026 — não priorizar | 2026-04-19 |
@@ -87,7 +87,7 @@
 | Transactions sync parou em 12/04 — 7 dias sem sync | 2026-04-19 |
 | Token corrigido: lk_transactions_full_sync.py agora usa Doppler | 2026-04-19 |
 | Shop corrigido: SHOP="lk-sneakerss" (script concatena .myshopify.com) | 2026-04-19 |
-| lk_sort_batch.py token corrigido: shpat_8c163692 inválido → Doppler | 2026-04-19 |
+| lk_sort_batch.py token corrigido: shpat_[REDACTED] inválido → Doppler | 2026-04-19 |
 | Health check expandido: shop name + transactions freshness | 2026-04-19 |
 
 ## Meta Ads

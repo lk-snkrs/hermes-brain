@@ -4,14 +4,16 @@ Sync Audit Log — inserts audit trail records into lk_intel.sync_log.
 Call at the START and END of every sync script.
 Usage: python3 sync_log.py start|end <script_name> [details]
 """
-import requests, sys, time
+import os, requests, sys, time
 from datetime import datetime
 
-PAT = "sbp_5cd916280ef631f32155ee303c19f0f15d69223d"
+PAT = os.environ.get("SUPABASE_ACCESS_TOKEN") or os.environ.get("SUPABASE_MANAGEMENT_TOKEN")
 PROJECT = "cnjimxglpktznenpbail"
 URL = f"https://api.supabase.com/v1/projects/{PROJECT}/database/query"
 
 def sql(q):
+    if not PAT:
+        raise RuntimeError("Missing SUPABASE_ACCESS_TOKEN/SUPABASE_MANAGEMENT_TOKEN; run via Doppler lc-keys/prd")
     for i in range(3):
         try:
             r = requests.post(URL, headers={"Authorization": f"Bearer {PAT}", "Content-Type": "application/json"},

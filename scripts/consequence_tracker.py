@@ -4,13 +4,15 @@ Consequence Tracker — logs second-order effects of playbook actions.
 Run after each action: consequence_tracker.py <action_id> <expected> <observed> [severity]
 Schedule: After each playbook action
 """
-import requests, sys, time
+import os, requests, sys, time
 
-PAT = "sbp_5cd916280ef631f32155ee303c19f0f15d69223d"
+PAT = os.environ.get("SUPABASE_ACCESS_TOKEN") or os.environ.get("SUPABASE_MANAGEMENT_TOKEN")
 PROJECT = "cnjimxglpktznenpbail"
 URL = f"https://api.supabase.com/v1/projects/{PROJECT}/database/query"
 
 def sql(q):
+    if not PAT:
+        raise RuntimeError("Missing SUPABASE_ACCESS_TOKEN/SUPABASE_MANAGEMENT_TOKEN; run via Doppler lc-keys/prd")
     for i in range(3):
         try:
             r = requests.post(URL, headers={"Authorization": f"Bearer {PAT}", "Content-Type": "application/json"},

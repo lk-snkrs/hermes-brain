@@ -5,16 +5,18 @@ Sends Telegram report with segment distribution and churn risk alerts.
 Run: python3 rfm_report.py
 Schedule: Weekly (Monday 09:00)
 """
-import requests, time
+import os, requests, time
 from datetime import datetime
 
-PAT = "sbp_5cd916280ef631f32155ee303c19f0f15d69223d"
+PAT = os.environ.get("SUPABASE_ACCESS_TOKEN") or os.environ.get("SUPABASE_MANAGEMENT_TOKEN")
 PROJECT = "cnjimxglpktznenpbail"
 URL = f"https://api.supabase.com/v1/projects/{PROJECT}/database/query"
-TG_TOKEN = "8704483790:AAGUfWgApYRWGgKvdnCoboUhjshJec1-974"
+TG_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TG_CHAT = "171397651"
 
 def sql(q, retry=3):
+    if not PAT:
+        raise RuntimeError("Missing SUPABASE_ACCESS_TOKEN/SUPABASE_MANAGEMENT_TOKEN; run via Doppler lc-keys/prd")
     for i in range(retry):
         try:
             r = requests.post(URL, headers={"Authorization": f"Bearer {PAT}", "Content-Type": "application/json"},
@@ -60,6 +62,8 @@ def get_top_customers():
     return sql(q)
 
 def send_telegram(msg):
+    if not TG_TOKEN:
+        raise RuntimeError("Missing TELEGRAM_BOT_TOKEN; run via Doppler lc-keys/prd")
     r = requests.post(f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage",
         json={"chat_id": TG_CHAT, "text": msg, "parse_mode": "HTML"},
         timeout=10)

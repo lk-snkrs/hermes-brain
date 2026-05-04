@@ -119,7 +119,7 @@ Após tarefas com 3+ tool calls, erros, ou padrões novos:
 ## MEMORY PROVIDER (Mem0)
 
 **Provider ativo:** Mem0 (desde 2026-04-15)
-- **API Key:** `m0-40cao7JUJzWboKj7zOebyA2spHR8xl26RhiVXMDn` (em `/root/.hermes/.env`)
+- **API Key:** não versionar valor; buscar sob demanda no ambiente/Doppler ou em `/root/.hermes/.env` na VPS autorizada.
 - **Config:** `/root/.hermes/mem0.json`
 - **Tools:** `mem0_profile`, `mem0_search`, `mem0_conclude`
 - **Free tier:** 10K memories

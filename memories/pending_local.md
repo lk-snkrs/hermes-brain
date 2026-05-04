@@ -4,8 +4,8 @@
 
 ### 2026-04-18 — Correções Críticas
 - [x] Bug tuple em `refund_records` — `lk_shopify_sync.py` linha 398. Corrigido (tupla → string formatada)
-- [x] Token MGMT `sbp_d37e...` revogado — 25 scripts corrigidos na VPS (token `sbp_2297055c...`)
-- [x] Token Shopify `shpat_1a35f...` salvo no Doppler
+- [x] Token MGMT `sbp_[REDACTED]...` revogado — 25 scripts corrigidos na VPS (token `sbp_[REDACTED]...`)
+- [x] Token Shopify `shpat_[REDACTED]...` salvo no Doppler
 - [x] `lk_briefing.py` e `lk_briefing_night.py` — token corrigido
 - [x] Faturamento 17/04: R$ 0 → R$ 27.078,99 (sync quebrado)
 - [x] GA4 backfill 12-18/Abr — 7 dias inseridos via API direta
@@ -48,7 +48,7 @@ Skills ativos em produção (não todos no brain):
 - decisoes-rastreadas ✅
 - sazonalidade-check ✅
 - feedback-track ✅
-- mem0-company-memories ✅
+- mem0-[REDACTED] ✅
 - superpowers-* (14 skills) ✅
 
 ---
