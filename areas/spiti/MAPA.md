@@ -16,6 +16,11 @@ Silêncio é melhor que dado errado.
 - n8n workflow documentado: `OHC9FfEsK0JRVMBK`.
 - Painel: leiloesbr.com.br / leilão documentado em `memories/spiti.md`.
 
+
+## Sistemas e projetos GitHub
+
+- `contexto/spiti-hub-github.md` — inventário inicial do repo privado `spiti-auction/spiti-hub`, sistema operacional unificado da Spiti.
+
 ## Rotinas
 
 - `rotinas/verificacao-lances.md` — checagem segura de lances/lotes.

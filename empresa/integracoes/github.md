@@ -8,6 +8,12 @@ GitHub hospeda o Hermes Brain (`lk-snkrs/hermes-brain`) como fonte de verdade ve
 
 - `GITHUB_TOKEN`
 
+
+## Repositórios privados relevantes observados
+
+- `lk-snkrs/hermes-brain` — fonte de verdade operacional/documental do Hermes Brain.
+- `spiti-auction/spiti-hub` — sistema operacional unificado da SPITI, privado; acesso confirmado em 2026-05-04 com token separado fornecido por Lucas. Não gravar token em remote/arquivo; mover segredo para Doppler antes de uso recorrente.
+
 ## Read-only
 
 - Ler arquivos, histórico, issues, PRs, releases e diffs.

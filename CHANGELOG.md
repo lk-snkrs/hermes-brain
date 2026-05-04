@@ -2,6 +2,15 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-04 — Rodada E: inventário GitHub do Spiti Hub
+
+- Confirmado acesso ao repo privado `spiti-auction/spiti-hub`, projeto operacional novo da SPITI.
+- Criado `areas/spiti/contexto/spiti-hub-github.md` com inventário inicial, relação com o Hermes Brain, regras de segurança e próximos passos.
+- Atualizados `areas/spiti/MAPA.md`, `empresa/integracoes/github.md` e roadmap.
+- Verificações locais do Spiti Hub: install OK, lint OK com warnings, build OK.
+- Nenhuma alteração foi feita em GitHub remoto, Supabase, Vercel, VPS, Docker, campanhas ou mensagens externas.
+- Token GitHub enviado por chat não foi documentado; recomendada migração para Doppler e rotação/revogação depois.
+
 ## 2026-05-04 — Rodada D: templates Zipper por subárea
 
 - Criados templates Zipper para consulta read-only de `vendas_tango`, registro pós-contato com colecionador, checklist de feira por fase e briefing de publicação obra/artista.

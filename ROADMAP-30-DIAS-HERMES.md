@@ -192,7 +192,27 @@ Pendências futuras:
 2. SPITI: criar template de relatório interno e matriz de evidência por lote.
 3. Validar consultas read-only reais apenas quando houver necessidade operacional concreta.
 
-### Rodada E — Hardening SPITI e observabilidade de monitor
+### Rodada E — Spiti Hub GitHub inventory
+
+Status: concluída como rodada read-only/local, sem alterar GitHub remoto, produção, Supabase, Vercel, VPS ou mensagens externas.
+
+Objetivo: confirmar acesso ao novo projeto `spiti-hub` citado por Lucas e registrar relação com o Hermes Brain.
+
+Entregas:
+
+1. Acesso confirmado ao repo privado `spiti-auction/spiti-hub` com permissões completas pelo token GitHub da Spiti fornecido por Lucas.
+2. Cópia local baixada por zipball em `/opt/data/hermes_bruno_ingest/spiti-hub` sem persistir token no remote.
+3. Inventário inicial documentado em `areas/spiti/contexto/spiti-hub-github.md`.
+4. Verificação local: `npm install` OK, `npm run lint` OK com warnings, `npm run build` OK.
+5. Recomendação registrada: mover token GitHub da Spiti para Doppler e rotacionar o token enviado por chat.
+
+Regras preservadas:
+
+- `spiti-hub` é sistema operacional vivo; Hermes Brain documenta regras, processos e guardrails.
+- Sem push/PR/settings/secrets/deploy sem tarefa explícita.
+- Alterações em migrações, auth, Supabase, CI/CD, Vercel e produção exigem revisão/aprovação.
+
+### Rodada F — Hardening SPITI e observabilidade de monitor
 
 Objetivo: fechar o ciclo operacional SPITI com saúde do monitor, falhas conhecidas e relatório interno verificável.
 
@@ -204,7 +224,7 @@ Tarefas:
 4. Definir procedimento de pós-leilão e registro de lessons.
 5. Validar qualquer estado vivo somente com fonte correta e sem alteração de produção.
 
-### Rodada F — Health checks do Brain
+### Rodada G — Health checks do Brain
 
 Objetivo: validar automaticamente qualidade do Brain.
 
