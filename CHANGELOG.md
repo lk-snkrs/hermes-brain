@@ -2,6 +2,15 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-04 — Spiti Hub: PR de hardening aberto
+
+- Clonado `spiti-auction/spiti-hub` via Git usando `GITHUB_SPITI_HUB_TOKEN` sem embutir token no remote.
+- Criada branch `hermes/spiti-hub-secrets-lint-hardening` a partir de `dev`.
+- Commit no Spiti Hub: `8c8549b chore: redact edge function secret examples`.
+- Aberto PR #89 para `dev`: `https://github.com/spiti-auction/spiti-hub/pull/89`.
+- Verificações locais: `git diff --check` OK, secret scan 0, lint 0 errors/39 warnings, build OK.
+- Nenhum merge ou alteração em produção foi executado.
+
 ## 2026-05-04 — Spiti Hub: token salvo no Doppler
 
 - Salvo no Doppler `lc-keys/prd` o secret `GITHUB_SPITI_HUB_TOKEN` para acesso ao repo privado `spiti-auction/spiti-hub`.

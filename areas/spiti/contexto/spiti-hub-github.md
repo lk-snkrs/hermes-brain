@@ -119,4 +119,36 @@ Próximo passo seguro para publicar mudanças no Spiti Hub:
 3. Criar branch a partir de `dev`.
 4. Aplicar as mudanças locais ou refazê-las, rodar lint/build/secret scan e abrir PR para `dev`.
 5. Após a sequência, considerar rotacionar/revogar o token enviado por chat e substituir no Doppler.
+## PR de hardening aberto — 2026-05-04
+
+Publicação segura feita via Git, sem token embutido no remote:
+
+- Clone Git completo: `/opt/data/hermes_bruno_ingest/spiti-hub-git`.
+- Branch criada a partir de `dev`: `hermes/spiti-hub-secrets-lint-hardening`.
+- Commit no Spiti Hub: `8c8549b chore: redact edge function secret examples`.
+- Pull Request aberto para `dev`: `https://github.com/spiti-auction/spiti-hub/pull/89`.
+
+Mudanças no PR:
+
+- `docs/deploy-edge-functions.md`: exemplos de `GOOGLE_OAUTH_CLIENT_ID`, `GOOGLE_OAUTH_CLIENT_SECRET` e `GOOGLE_REFRESH_TOKEN` trocados por placeholders seguros.
+- Aplicado resultado seguro do `eslint --fix` em comentários/disable directives de arquivos JSX/JS, reduzindo warnings sem alterar lógica funcional.
+
+Verificações locais antes do push/PR:
+
+- `git diff --check`: OK.
+- Secret scan local: 0 achados nos padrões verificados.
+- `npm run lint --if-present`: OK, 0 errors, 39 warnings restantes.
+- `npm run build`: OK; warning de bundle grande permanece.
+
+Estado do PR via API:
+
+- PR aberto.
+- `mergeable: true`.
+- `mergeable_state: unstable` no momento da coleta, provavelmente por checks/status ainda pendentes ou inacessíveis pela API/token.
+- Endpoints de status/check-runs retornaram `403 Resource not accessible by personal access token`; validar CI visualmente no GitHub ou com token com escopo apropriado se necessário.
+
+Não realizado:
+
+- Não houve merge.
+- Não houve alteração em `main`, Supabase, Vercel, produção, VPS, Docker, campaigns ou mensagens externas.
 

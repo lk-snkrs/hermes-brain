@@ -217,7 +217,14 @@ Hardening local posterior:
 - Cópia local teve `docs/deploy-edge-functions.md` redigido para placeholders em linhas secret-like.
 - `eslint --fix` reduziu warnings de 46 para 39, mantendo 0 errors.
 - Build segue OK; warning de bundle grande permanece.
-- PR/push bloqueado até existir token GitHub válido da Spiti no Doppler; tokens atuais `GITHUB_TOKEN`/`GITHUB_TOKEN_LUCASCIMINO` não dão acesso válido ao repo.
+- Token válido salvo no Doppler como `GITHUB_SPITI_HUB_TOKEN`; PR de hardening aberto para `dev`.
+
+PR aberto:
+
+- Spiti Hub PR #89: `https://github.com/spiti-auction/spiti-hub/pull/89`, branch `hermes/spiti-hub-secrets-lint-hardening` → `dev`.
+- Commit `8c8549b` redige exemplos secret-like e aplica lint-fix seguro.
+- Verificações locais OK: diff check, secret scan, lint sem erros e build.
+- Merge não executado; aguardar CI/review conforme regras do repo.
 
 ### Rodada F — Hardening SPITI e observabilidade de monitor
 
