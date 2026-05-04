@@ -2,6 +2,13 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-04 — Rodada D: templates Zipper por subárea
+
+- Criados templates Zipper para consulta read-only de `vendas_tango`, registro pós-contato com colecionador, checklist de feira por fase e briefing de publicação obra/artista.
+- Atualizados mapas das subáreas Zipper, mapa principal, índice de rotinas e roadmap.
+- Preservadas regras de separação Zipper Vendas vs SPITI, tom Zipper e aprovação Lucas/Osmar antes de contato, negociação, proposta ou publicação externa.
+- Fase documental segura: nenhuma consulta/alteração em produção, Docker, VPS, banco, campanhas ou mensagens externas.
+
 ## 2026-05-04 — Rodada C: playbooks operacionais LK/Zipper/SPITI
 
 - Criados playbooks LK para comando diário e campanha CRM aprovada.

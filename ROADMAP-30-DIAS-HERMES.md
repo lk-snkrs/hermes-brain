@@ -166,17 +166,31 @@ Regras preservadas:
 - Zipper: sem hard sell; sem inventar histórico; aprovação Lucas/Osmar antes de contato com colecionador.
 - SPITI: email é fonte de verdade; site pode ser parcial; meta tag não é lance; silêncio > dado errado.
 
-### Rodada D — Templates e consultas verificadas por negócio
+### Rodada D — Templates Zipper por subárea
 
-Objetivo: transformar playbooks em templates e consultas read-only reutilizáveis.
+Status: concluída como rodada documental segura, sem tocar produção.
 
-Tarefas:
+Objetivo: aprofundar Zipper com templates reutilizáveis para vendas reais, colecionadores, feiras e comunicação, preservando fonte verificável e aprovação Lucas/Osmar antes de qualquer ação externa.
+
+Entregas:
+
+1. Template consulta `vendas_tango`: `areas/zipper/sub-areas/vendas-obras/templates/consulta-vendas-tango.md`.
+2. Template registro pós-contato com colecionador: `areas/zipper/sub-areas/colecionadores/templates/registro-pos-contato.md`.
+3. Template checklist de feira por fase: `areas/zipper/sub-areas/feiras/templates/checklist-feira-por-fase.md`.
+4. Template briefing de publicação obra/artista: `areas/zipper/sub-areas/comunicacao/templates/briefing-publicacao-obra-artista.md`.
+
+Regras preservadas:
+
+- Zipper Vendas (`pcstqxpdzibheuopjkas`, `vendas_tango`) continua separado de SPITI/leilão.
+- Consultas são read-only e exigem período/ressalva antes de afirmação comercial.
+- Contato com colecionador, proposta, negociação ou publicação externa exige aprovação Lucas/Osmar/equipe responsável.
+- Tom Zipper: culto, leve, sofisticado, sem hard sell.
+
+Pendências futuras:
 
 1. LK: criar templates de preview de campanha, RFM e cross-sell.
-2. Zipper: criar template de consulta `vendas_tango` e registro pós-contato.
-3. Zipper: criar checklist de feira por fase com status `confirmado`/`a confirmar`.
-4. SPITI: criar template de relatório interno e matriz de evidência por lote.
-5. Validar consultas read-only reais apenas quando houver necessidade operacional concreta.
+2. SPITI: criar template de relatório interno e matriz de evidência por lote.
+3. Validar consultas read-only reais apenas quando houver necessidade operacional concreta.
 
 ### Rodada E — Hardening SPITI e observabilidade de monitor
 
@@ -223,7 +237,7 @@ Toda fase deve terminar com:
 
 1. Fechar decisão operacional sobre Hermes runtime/gateway: investigar conflito de polling e planejar update v0.9.0 → v0.12.0 somente com aprovação/rollback.
 2. Rodada C — LK playbooks.
-3. Rodada D — Zipper playbooks.
+3. Rodada D — Templates Zipper por subárea. — concluída documentalmente; próximos: LK templates ou SPITI hardening.
 4. Rodada E — SPITI hardening.
 5. Rodadas contínuas — Health checks, release watch Hermes, secret validation e inventário VPS/n8n conforme mudanças.
 

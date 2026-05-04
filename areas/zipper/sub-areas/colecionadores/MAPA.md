@@ -29,3 +29,7 @@ colecionador/obra → histórico de compras/interesses → narrativa → rascunh
 - Sem hard sell.
 - Não inventar preferência, poder de compra ou histórico.
 - Se faltar dado, registrar como `[a confirmar]`.
+
+## Templates
+
+- `templates/registro-pos-contato.md` — registro factual após contato aprovado com colecionador, sem inventar preferência, orçamento ou intenção de compra.

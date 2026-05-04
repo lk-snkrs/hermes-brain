@@ -31,3 +31,7 @@ feira → objetivo → artistas/obras → checklist equipe → comunicação →
 - Datas TBD permanecem TBD até fonte confiável.
 - Não afirmar participação, obra ou meta sem fonte.
 - Checklists podem ser criados livremente; ações externas exigem aprovação.
+
+## Templates
+
+- `templates/checklist-feira-por-fase.md` — checklist de feira por fase com status `confirmado`/`a confirmar`, responsáveis e aprovação antes de comunicação/contato externo.

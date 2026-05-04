@@ -35,3 +35,7 @@ Buscar via Doppler `lc-keys/prd`; nunca versionar valores.
 
 - `SUPABASE_ZIPPER_VENDAS_URL`
 - `SUPABASE_ZIPPER_VENDAS_SERVICE_KEY`
+
+## Templates
+
+- `templates/consulta-vendas-tango.md` — consulta read-only padronizada para `vendas_tango`, com período, ressalvas e separação fato/interpretação/recomendação.

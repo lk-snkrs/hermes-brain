@@ -38,3 +38,7 @@ obra/artista/contexto → checagem de fonte → rascunho → aprovação equipe/
 ## Aprovação
 
 Textos para redes e comunicação externa são rascunhos até aprovação da equipe responsável ou Lucas.
+
+## Templates
+
+- `templates/briefing-publicacao-obra-artista.md` — briefing de publicação por obra/artista/feira com fonte, ângulo narrativo, checklist de tom e aprovação.

@@ -21,6 +21,14 @@ Não confundir Zipper Vendas com SPITI.
 - `rotinas/playbook-abordagem-obra-colecionador.md` — rascunho comercial sofisticado por obra/artista/colecionador, com aprovação Lucas/Osmar.
 - `rotinas/playbook-feira-execucao.md` — preparação e execução de feira com checklist por responsável.
 
+
+## Templates operacionais
+
+- `sub-areas/vendas-obras/templates/consulta-vendas-tango.md` — consulta read-only de vendas reais com ressalvas e período explícito.
+- `sub-areas/colecionadores/templates/registro-pos-contato.md` — registro pós-contato aprovado com colecionador.
+- `sub-areas/feiras/templates/checklist-feira-por-fase.md` — checklist por fase para feira, com status `confirmado`/`a confirmar`.
+- `sub-areas/comunicacao/templates/briefing-publicacao-obra-artista.md` — briefing de publicação obra/artista com tom Zipper e aprovação.
+
 ## Equipe documentada
 
 - Osmar: diretor comercial + sócio.
