@@ -42,6 +42,28 @@ Tentativas realizadas sem persistir credenciais:
 
 Conclusão: as credenciais SSH disponíveis no Doppler parecem não autenticar nas VPS atuais, ou o SSH exige chave/usuário/porta diferente.
 
+### Tentativa de chave SSH via Hostinger
+
+Status: parcial.
+
+Com aprovação do Lucas, foi criada uma public key na conta Hostinger:
+
+| Campo | Valor |
+|---|---|
+| Nome | `hermes-cron-inventory-2026-05-04` |
+| Hostinger public key ID | `499839` |
+| Fingerprint | `SHA256:00cczrzMqMfOjR1yc8aFvBWfE8sZK0hDYVF7QhRh8T8` |
+
+A chave privada foi gerada localmente fora do repositório em `/opt/data/hermes_bruno_ingest/ssh_keys/` e não foi commitada.
+
+Limite encontrado:
+
+- Hostinger API `GET /api/vps/v1/public-keys` lista chaves da conta.
+- Hostinger API `GET /api/vps/v1/virtual-machines/1331756/public-keys` retorna `data: []`.
+- `OPTIONS /api/vps/v1/virtual-machines/1331756/public-keys` permite apenas `GET, HEAD`; não há `POST/PUT` para anexar chave à VPS em execução nesse endpoint.
+
+Conclusão: a API permitiu criar a chave na conta, mas não confirmou um caminho seguro para injetá-la na VPS em execução sem outra ação, como painel, recriação, recovery ou reset de senha.
+
 ## Rotinas documentadas ainda sem verificação real de cron na VPS
 
 Estas rotinas existem no Brain, mas não devem ser afirmadas como ativas até conferência na VPS:
@@ -83,8 +105,9 @@ Para completar a Rodada A, é necessário um dos itens abaixo:
 
 1. atualizar no Doppler uma credencial SSH válida para `lc.vps`;
 2. informar usuário/porta/chave SSH correta;
-3. autorizar criação/adicionar chave pública via Hostinger, se esse for o caminho escolhido;
-4. executar manualmente na VPS o script de inventário e colar o output redigido.
+3. anexar pelo painel Hostinger a public key `hermes-cron-inventory-2026-05-04` à VPS, se o painel permitir;
+4. autorizar explicitamente outro caminho de acesso, como reset temporário de root password via Hostinger API;
+5. executar manualmente na VPS o script de inventário e colar o output redigido.
 
 ## Script de inventário recomendado na VPS
 
