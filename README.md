@@ -1,7 +1,48 @@
-# Hermes Brain Reorg Draft
+# Hermes Brain
 
-Rascunho local da reorganização do Hermes Brain usando a lógica Bruno/OpenClaw com filtro Hermes.
+Hermes Brain é a fonte de verdade versionada para contexto, decisões, áreas, agentes, rotinas e skills de negócio de Lucas Cimino.
 
-Regra: não copiar OpenClaw cegamente. Adaptar somente o que melhora o Hermes.
+Este repositório não guarda secrets. Credenciais vivem no Doppler `lc-keys/prd` e devem ser buscadas sob demanda.
 
-Este diretório NÃO é produção. O repo real `lk-snkrs/hermes-brain` só deve ser alterado após aprovação do Lucas.
+## Princípio central
+
+Hermes não é OpenClaw. A estrutura Bruno/OpenClaw foi adaptada para o Hermes preservar seus diferenciais:
+
+- execução real com ferramentas;
+- memória persistente e `session_search`;
+- GitHub Brain como fonte durável;
+- Doppler como fonte de credenciais;
+- Telegram como interface operacional;
+- cronjobs e rotinas documentadas;
+- integração com LK Sneakers, Zipper Galeria e SPITI Auction.
+
+## Como navegar
+
+- `AGENTS.md` — regras operacionais globais.
+- `STARTUP.md` — boot protocol.
+- `PROTOCOLS.md` — protocolos operacionais.
+- `TOOLS.md` — ferramentas e integrações.
+- `memories/` — memória executiva compacta e global.
+- `empresa/` — contexto cross-área, decisões, gestão, rotinas e skills.
+- `areas/` — mapas operacionais por negócio/área.
+- `agentes/` — agentes especializados e suas regras.
+- `seguranca/` — permissões e ações sensíveis.
+- `skills/` — skills canônicas versionadas.
+- `scripts/` — scripts operacionais versionados.
+
+## Regra de segurança
+
+- Nunca versionar tokens, API keys, senhas ou refresh tokens.
+- Usar nomes de secrets, não valores.
+- Rodar scripts com Doppler quando precisarem de credenciais.
+- Ações externas com clientes, campanhas, WhatsApp, posts, propostas ou publicações exigem aprovação de Lucas.
+
+## Fonte de dados por negócio
+
+- LK Sneakers: Supabase LK `cnjimxglpktznenpbail`, Shopify, Klaviyo, GA4/GSC e integrações comerciais.
+- Zipper Galeria: Supabase Zipper Vendas `pcstqxpdzibheuopjkas`, tabela `vendas_tango` para vendas reais.
+- SPITI Auction / CRM: Supabase `rmdugdkantdydivgnimb`, tabela `spiti_lotes` e fontes de lance documentadas.
+
+## Regra de verdade
+
+Dados vivos vêm de bancos/APIs. O Brain organiza contexto, decisões e processos. Se houver divergência, consultar a fonte operacional antes de afirmar.
