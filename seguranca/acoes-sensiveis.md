@@ -38,6 +38,8 @@ Este arquivo classifica ações por risco e define quando o Hermes pode agir dir
 
 - Deploy.
 - Alteração de DNS, Railway, Vercel, Cloudflare, Hostinger/VPS ou Docker em produção.
+- Alteração/removal/recriação de containers, compose, volumes, Docker networks, Traefik, n8n, Paperclip ou Hermes na VPS.
+- Alteração de root password, SSH access, firewall, portas ou arquivos sob `/docker/*`.
 - Alteração de workflow n8n ativo.
 - Alteração de cron que impacte operação real.
 - Rotação, revogação ou criação de secrets.

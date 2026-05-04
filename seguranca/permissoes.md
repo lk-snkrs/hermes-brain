@@ -107,6 +107,7 @@ Podem ser feitas sem aprovação adicional quando dentro do escopo:
 - Publicar relatório externo.
 - Criar/alterar campanha Klaviyo, Meta Ads ou automação n8n que dispare mensagens.
 - Alterar produção, deploy, infraestrutura, DNS ou workflow externo.
+- Alterar/remover/recriar containers, compose, volumes, Docker networks, Traefik, n8n, Paperclip, Hermes, root password, SSH access, firewall, portas ou arquivos sob `/docker/*` sem aprovação explícita Lucas e plano de backup/rollback.
 - Fazer writes em banco de produção que alterem dados de negócio.
 - Rotacionar, revogar ou criar credenciais.
 - Mudar este modelo de permissões.

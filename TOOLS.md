@@ -85,8 +85,8 @@ curl -X GET "https://cnjimxglpktznenpbail.supabase.co/rest/v1/customers?select=*
 ```bash
 # Testar conexão
 curl -X GET "https://pcstqxpdzibheuopjkas.supabase.co/rest/v1/vendas_tango?select=*&limit=1" \
-  -H "apikey: $(doppler secrets get SUPABASE_ZIPPER_SERVICE_KEY --plain)" \
-  -H "Authorization: Bearer $(doppler secrets get SUPABASE_ZIPPER_SERVICE_KEY --plain)"
+  -H "apikey: $(doppler secrets get SUPABASE_ZIPPER_VENDAS_SERVICE_KEY --plain)" \
+  -H "Authorization: Bearer $(doppler secrets get SUPABASE_ZIPPER_VENDAS_SERVICE_KEY --plain)"
 ```
 
 ---
@@ -117,7 +117,7 @@ curl -X GET "https://rmdugdkantdydivgnimb.supabase.co/rest/v1/spiti_lotes?select
 **Status:** ✅ Ativo
 **Endpoint:** `https://evolution-api-production-fa87.up.railway.app`
 **API Key:** Doppler (`EVOLUTION_API_KEY`)
-**Key (plain):** `916280cbd1df907615823ea5020f3d91`
+**Key:** Doppler (`EVOLUTION_API_KEY`) — nunca commitar valor real
 **Header:** `apikey` (minúsculo)
 
 **Instâncias:**
@@ -135,7 +135,7 @@ curl -X GET "https://rmdugdkantdydivgnimb.supabase.co/rest/v1/spiti_lotes?select
 ```bash
 # Listar instâncias
 curl -X GET "https://evolution-api-production-fa87.up.railway.app/instance/list" \
-  -H "apikey: 916280cbd1df907615823ea5020f3d91"
+  -H "apikey: $(doppler secrets get EVOLUTION_API_KEY --plain)"
 ```
 
 **Regras:**
