@@ -200,6 +200,24 @@ Estas rotinas existem no Brain, mas não foram encontradas como cron/systemd/Her
 4. Se existirem crons de negócio em n8n, fazer inventário via API n8n em rodada própria.
 5. Atualizar `empresa/rotinas/_index.md` com coluna de status real em próxima rodada.
 
+## Inventário n8n
+
+Rodada executada em 2026-05-04.
+
+Documento: `areas/operacoes/rotinas/n8n-inventory.md`.
+
+Resultado:
+
+- container `n8n-vdgm-n8n-1` está rodando em `lc.vps`;
+- API interna e SQLite foram consultados em modo read-only;
+- `workflow_entity` existe, mas `workflow_count = 0`;
+- não há execuções recentes registradas;
+- nenhum workflow n8n de negócio foi encontrado nesse ambiente.
+
+Conclusão:
+
+> n8n em `lc.vps` está rodando, mas sem workflows encontrados no banco/API durante a coleta de 2026-05-04.
+
 ## Script de inventário recomendado na VPS
 
 Rodar como root ou usuário com permissões suficientes:

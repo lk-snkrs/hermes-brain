@@ -113,7 +113,7 @@ Tarefas restantes:
 1. Decidir se a chave SSH dedicada permanece ou será removida.
 2. Rotacionar senha root enviada em chat, se desejado.
 3. Investigar alerta de gateway parado no CLI vs container gateway rodando.
-4. Fazer inventário específico de workflows n8n via API em rodada própria.
+4. Fazer inventário específico de workflows n8n via API em rodada própria. — concluído em `areas/operacoes/rotinas/n8n-inventory.md`; workflow_count = 0 em `lc.vps`.
 5. Atualizar `empresa/rotinas/_index.md` com coluna de status real se Lucas quiser visual executivo por rotina.
 
 ### Rodada B — Integrações por ferramenta
