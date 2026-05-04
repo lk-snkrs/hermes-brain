@@ -2,6 +2,13 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-04 — Spiti Hub: token salvo no Doppler
+
+- Salvo no Doppler `lc-keys/prd` o secret `GITHUB_SPITI_HUB_TOKEN` para acesso ao repo privado `spiti-auction/spiti-hub`.
+- Verificação segura confirmou acesso ao repo com permissões administrativas/push sem imprimir o token.
+- Atualizados docs de integração GitHub e contexto SPITI Hub com o nome do secret, sem valor.
+- Como o token foi enviado por chat, segue recomendado rotacionar/revogar depois da sequência de PR e substituir no Doppler.
+
 ## 2026-05-04 — Spiti Hub: hardening local sem push
 
 - Redigida localmente a cópia de `docs/deploy-edge-functions.md` do Spiti Hub para substituir assignments secret-like de Google OAuth/refresh token por placeholders.

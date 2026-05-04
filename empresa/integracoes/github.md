@@ -7,12 +7,13 @@ GitHub hospeda o Hermes Brain (`lk-snkrs/hermes-brain`) como fonte de verdade ve
 ## Secrets Doppler
 
 - `GITHUB_TOKEN`
+- `GITHUB_SPITI_HUB_TOKEN` — acesso ao repo privado `spiti-auction/spiti-hub`; valor fica só no Doppler.
 
 
 ## Repositórios privados relevantes observados
 
 - `lk-snkrs/hermes-brain` — fonte de verdade operacional/documental do Hermes Brain.
-- `spiti-auction/spiti-hub` — sistema operacional unificado da SPITI, privado; acesso confirmado em 2026-05-04 com token separado fornecido por Lucas. Não gravar token em remote/arquivo; mover segredo para Doppler antes de uso recorrente.
+- `spiti-auction/spiti-hub` — sistema operacional unificado da SPITI, privado; acesso confirmado em 2026-05-04 com token separado fornecido por Lucas. Não gravar token em remote/arquivo; usar `GITHUB_SPITI_HUB_TOKEN` no Doppler para uso recorrente; não gravar token em remote/arquivo.
 
 ## Read-only
 

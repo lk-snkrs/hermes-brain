@@ -105,16 +105,18 @@ Arquivos alterados localmente pela rodada:
 - `src/pages/Pedidos.jsx`
 - `src/pages/Vendas.jsx`
 
-Bloqueio para PR/push:
+Credencial para PR/push:
 
-- Doppler atual tem `GITHUB_TOKEN`, mas esse token autenticado como `lk-snkrs` não acessa `spiti-auction/spiti-hub` (`404`).
-- `GITHUB_TOKEN_LUCASCIMINO` existe no Doppler, mas retornou `401` no teste de API; tratar como inválido/expirado até revisão.
-- Não há secret name específico de GitHub/Spiti/Auction/Hub disponível no Doppler nesta checagem.
-- O PAT colado em chat anteriormente deve ser considerado exposto; não foi persistido nem reutilizado nesta rodada.
+- Em 2026-05-04, Lucas forneceu novo token e pediu para salvar.
+- Secret salvo no Doppler `lc-keys/prd` como `GITHUB_SPITI_HUB_TOKEN`.
+- Verificação segura confirmou acesso ao repo `spiti-auction/spiti-hub` com permissões `admin`, `maintain`, `push`, `triage` e `pull`.
+- Como o token foi enviado por chat, ainda deve ser tratado como exposto até futura rotação/revogação; não repetir, imprimir, commitar ou embutir em remote.
 
 Próximo passo seguro para publicar mudanças no Spiti Hub:
 
-1. Criar/armazenar em Doppler um token GitHub válido para `spiti-auction/spiti-hub`, com nome separado, por exemplo `GITHUB_SPITI_HUB_TOKEN`.
-2. Rotacionar/revogar o PAT enviado no chat.
-3. Fazer clone Git completo do repo, criar branch a partir de `dev`, aplicar as mudanças locais ou refazê-las, rodar lint/build/secret scan e abrir PR para `dev`.
+1. Usar `GITHUB_SPITI_HUB_TOKEN` via Doppler/askpass, sem gravar token em remote.
+2. Fazer clone Git completo do repo.
+3. Criar branch a partir de `dev`.
+4. Aplicar as mudanças locais ou refazê-las, rodar lint/build/secret scan e abrir PR para `dev`.
+5. Após a sequência, considerar rotacionar/revogar o token enviado por chat e substituir no Doppler.
 
