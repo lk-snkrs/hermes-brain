@@ -227,6 +227,14 @@ PR aberto:
 - PR #89 squash-mergeado em `dev`; merge commit `ae625a2`.
 - `main`/produção não foi alterada.
 
+Lint cleanup pass 1:
+
+- PR #90 aberto e squash-mergeado em `dev`: `https://github.com/spiti-auction/spiti-hub/pull/90`.
+- Merge commit `49b5c84`.
+- Warnings de lint: 39 → 8, com 0 errors.
+- Restam apenas warnings de hooks/Fast Refresh e o warning de bundle grande.
+- `main`/produção não foi alterada.
+
 ### Rodada F — Hardening SPITI e observabilidade de monitor
 
 Objetivo: fechar o ciclo operacional SPITI com saúde do monitor, falhas conhecidas e relatório interno verificável.

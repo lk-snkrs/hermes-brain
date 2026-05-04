@@ -2,6 +2,15 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-04 — Spiti Hub: PR #90 mergeado em dev
+
+- Criado e mergeado em `dev` o PR #90: `https://github.com/spiti-auction/spiti-hub/pull/90`.
+- Merge commit: `49b5c84 chore: remove unused lint warnings (#90)`.
+- Warnings de lint reduziram de 39 para 8, mantendo 0 errors.
+- Verificações locais: `git diff --check` OK, secret scan 0, lint 0 errors/8 warnings, build OK.
+- Os 8 warnings restantes foram preservados para rodada própria porque envolvem hooks/Fast Refresh.
+- Produção/`main`, Supabase, Vercel configs, VPS, Docker, campanhas e mensagens externas não foram alterados.
+
 ## 2026-05-04 — Spiti Hub: PR #89 mergeado em dev
 
 - PR #89 (`chore: redact edge function secret examples`) foi squash-mergeado em `dev` do `spiti-auction/spiti-hub`.

@@ -166,4 +166,32 @@ Escopo do merge:
 - Apenas `dev`/staging do Spiti Hub.
 - `main`/produção não foi alterada.
 - Supabase, Vercel configs, VPS, Docker, campanhas e mensagens externas não foram alterados.
+## Lint cleanup pass 1 — 2026-05-04
+
+Primeira rodada de limpeza de warnings sem refatoração funcional arriscada.
+
+- Branch criada a partir de `dev`: `hermes/spiti-hub-unused-lint-pass-1`.
+- Commit no Spiti Hub: `60d94c8 chore: remove unused lint warnings`.
+- PR: `https://github.com/spiti-auction/spiti-hub/pull/90`.
+- PR #90 squash-mergeado em `dev`; merge commit `49b5c84 chore: remove unused lint warnings (#90)`.
+- Branch remota removida após merge.
+- Clone local sincronizado em `dev...origin/dev`.
+
+Escopo:
+
+- Removidos imports, variáveis, parâmetros e funções claramente não usados.
+- Removido código morto de adição de item em `DrawerPedido` que não era referenciado pela UI atual.
+- Mantidos intocados os warnings que exigem análise funcional: `react-hooks/exhaustive-deps` e `react-refresh/only-export-components`.
+
+Verificações locais:
+
+- `git diff --check`: OK.
+- Secret scan local: 0 achados nos padrões verificados.
+- `npm run lint --if-present`: OK, 0 errors, 8 warnings restantes.
+- `npm run build`: OK; warning de bundle grande permanece.
+
+Não realizado:
+
+- Não houve alteração em `main`/produção.
+- Não houve alteração em Supabase, Vercel configs, VPS, Docker, campanhas ou mensagens externas.
 
