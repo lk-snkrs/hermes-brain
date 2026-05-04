@@ -62,6 +62,17 @@ Detalhe: `../../areas/zipper/contexto/ferramentas.md`.
 
 Detalhe: `../../areas/spiti/MAPA.md`.
 
+
+## Rotinas operacionais por integração crítica
+
+- [Validação de secrets das integrações](../../areas/operacoes/rotinas/integration-secret-validation.md)
+- [Shopify LK read-only sync](../../areas/operacoes/rotinas/shopify-readonly-sync.md)
+- [Supabase audit read-only](../../areas/operacoes/rotinas/supabase-audit-readonly.md)
+- [Evolution / WhatsApp approval flow](../../areas/operacoes/rotinas/evolution-send-approval-flow.md)
+- [Klaviyo campaign approval flow](../../areas/operacoes/rotinas/klaviyo-campaign-approval-flow.md)
+- [Meta Ads reporting read-only](../../areas/operacoes/rotinas/meta-ads-reporting-readonly.md)
+- [Hostinger/VPS inventory read-only](../../areas/operacoes/rotinas/hostinger-vps-inventory-readonly.md)
+
 ## Próxima rodada recomendada
 
 - Criar subdocs adicionais para Judge.me, Frenet, Tiny ERP, Email/Google Workspace, LeiloesBR, Railway, Vercel, Notion/NocoDB e Metricool quando virarem fluxos recorrentes.

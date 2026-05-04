@@ -118,21 +118,31 @@ Tarefas restantes:
 
 ### Rodada B — Integrações por ferramenta
 
-Objetivo: criar mapa operacional por integração.
+Status: mapa base e aprofundamento operacional inicial concluídos.
 
-Tarefas:
+Objetivo: criar mapa operacional por integração e transformar integrações críticas em rotinas seguras.
 
-1. Mapear Doppler names por ferramenta sem valores.
-2. Documentar Supabase LK, Zipper e SPITI.
-3. Documentar Shopify, Klaviyo, Evolution, Meta, GA4/GSC, n8n e GitHub.
-4. Separar read-only, write, external-send e admin actions.
-5. Amarrar cada integração a áreas/agentes.
+Entregas:
 
-Resultado esperado:
+1. Doppler names por ferramenta mapeados sem valores.
+2. Supabase LK, Zipper e SPITI documentados.
+3. Shopify, Klaviyo, Evolution, Meta, GA4/GSC, n8n, GitHub, Hostinger e Telegram documentados.
+4. Ações separadas em read-only, write, external-send e admin/destructive.
+5. Integrações amarradas a áreas/agentes.
+6. Rotinas criadas para validação de secrets, Shopify read-only, Supabase audit, Evolution approval, Klaviyo approval, Meta Ads reporting e Hostinger/VPS inventory.
+
+Arquivos principais:
 
 - `empresa/integracoes/MAPA.md`.
 - Subdocs por ferramenta em `empresa/integracoes/`.
-- Atualização de `TOOLS.md` se necessário.
+- Rotinas em `areas/operacoes/rotinas/`.
+- `TOOLS.md` corrigido para evitar placeholders genéricos de Supabase.
+
+Pendências futuras:
+
+1. Criar subdocs para Judge.me, Frenet, Tiny ERP, Email/Google Workspace, LeiloesBR, Railway, Vercel, Notion/NocoDB e Metricool quando virarem fluxo recorrente.
+2. Transformar rotinas mais usadas em skills executáveis.
+3. Rodar testes reais read-only por ferramenta quando houver pergunta operacional concreta.
 
 ### Rodada C — Aprofundamento LK
 
@@ -219,12 +229,10 @@ Toda fase deve terminar com:
 
 ## Sequência recomendada agora
 
-1. Rodada F — Health checks do Brain.
-2. Rodada A — Crons reais da VPS.
-3. Rodada B — Integrações por ferramenta.
-4. Rodada C — LK playbooks.
-5. Rodada D — Zipper playbooks.
-6. Rodada E — SPITI hardening.
+1. Rodada C — LK playbooks.
+2. Rodada D — Zipper playbooks.
+3. Rodada E — SPITI hardening.
+4. Rodadas contínuas — Health checks, release watch Hermes, secret validation e inventário VPS/n8n conforme mudanças.
 
 ## Atualização contínua obrigatória
 

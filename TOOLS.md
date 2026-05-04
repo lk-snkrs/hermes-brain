@@ -337,7 +337,7 @@ doppler secrets list
 |----------|---------|
 | Credencial expirada | `doppler secrets set NOME='novo-valor'` |
 | API retorna 401 | Verificar Doppler → credencial errada/expirada |
-| Supabase não conecta | Verificar PROJECT_ID + SERVICE_KEY |
+| Supabase não conecta | Verificar URL + service key específicos da base (`SUPABASE_LK_*`, `SUPABASE_ZIPPER_VENDAS_*`, `SUPABASE_SPITI_*`) |
 | Evolution API offline | Checar Railway do serviço |
 | Cron não roda | Verificar `cronjob list` e logs |
 | Hermes fora do ar | `systemctl --user restart hermes-gateway` |

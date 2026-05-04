@@ -2,6 +2,17 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-04 — Integrações por ferramenta e rotinas seguras
+
+Commit: `docs: deepen integration operating routines`
+
+Entregas:
+
+- Corrigido troubleshooting genérico de Supabase em `TOOLS.md` para apontar nomes específicos por base.
+- Validado que os nomes reais de secrets das integrações críticas existem no Doppler, sem imprimir valores.
+- Criadas rotinas operacionais para validação de secrets, Shopify read-only, Supabase audit, Evolution/WhatsApp approval, Klaviyo approval, Meta Ads reporting e Hostinger/VPS inventory.
+- Atualizados `empresa/integracoes/MAPA.md`, `empresa/rotinas/_index.md` e roadmap com o estado da Rodada B.
+
 ## 2026-05-04 — Manual operacional do Brain
 
 Commit: `65a3cfa docs: add Hermes Brain operating manual`
