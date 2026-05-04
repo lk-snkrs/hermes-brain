@@ -82,3 +82,39 @@ Esses warnings não bloquearam build, mas devem entrar em uma rodada futura de h
 3. Criar rodada de hardening lint: remover warnings de hooks/unused/disable antes do Spiti 10.
 4. Criar mapa técnico do schema Supabase a partir das migrações, sem aplicar nada em produção.
 5. Criar plano de integração Hermes Brain ↔ Spiti Hub: o Brain documenta regras/processos; o Hub é sistema operacional vivo.
+## Rodada local de hardening — 2026-05-04
+
+Executado apenas na cópia local `/opt/data/hermes_bruno_ingest/spiti-hub`; sem push, PR, alteração de GitHub remoto, Vercel, Supabase ou produção.
+
+Resultado:
+
+- `docs/deploy-edge-functions.md` foi redigido localmente para substituir assignments secret-like por placeholders (`<google-oauth-client-secret>` e `<google-refresh-token>`).
+- `npm run lint -- --fix` aplicado localmente: warnings reduziram de 46 para 39.
+- `npm run lint --if-present`: OK, 0 errors, 39 warnings restantes.
+- `npm run build`: OK; bundle grande permanece como warning.
+- Secret scan local pós-redação: 0 achados nos padrões verificados.
+
+Arquivos alterados localmente pela rodada:
+
+- `docs/deploy-edge-functions.md`
+- `src/components/DrawerObra.jsx`
+- `src/lib/segmentos.js`
+- `src/pages/CatalogoPublico.jsx`
+- `src/pages/Documentos.jsx`
+- `src/pages/Leiloes.jsx`
+- `src/pages/Pedidos.jsx`
+- `src/pages/Vendas.jsx`
+
+Bloqueio para PR/push:
+
+- Doppler atual tem `GITHUB_TOKEN`, mas esse token autenticado como `lk-snkrs` não acessa `spiti-auction/spiti-hub` (`404`).
+- `GITHUB_TOKEN_LUCASCIMINO` existe no Doppler, mas retornou `401` no teste de API; tratar como inválido/expirado até revisão.
+- Não há secret name específico de GitHub/Spiti/Auction/Hub disponível no Doppler nesta checagem.
+- O PAT colado em chat anteriormente deve ser considerado exposto; não foi persistido nem reutilizado nesta rodada.
+
+Próximo passo seguro para publicar mudanças no Spiti Hub:
+
+1. Criar/armazenar em Doppler um token GitHub válido para `spiti-auction/spiti-hub`, com nome separado, por exemplo `GITHUB_SPITI_HUB_TOKEN`.
+2. Rotacionar/revogar o PAT enviado no chat.
+3. Fazer clone Git completo do repo, criar branch a partir de `dev`, aplicar as mudanças locais ou refazê-las, rodar lint/build/secret scan e abrir PR para `dev`.
+

@@ -212,6 +212,13 @@ Regras preservadas:
 - Sem push/PR/settings/secrets/deploy sem tarefa explícita.
 - Alterações em migrações, auth, Supabase, CI/CD, Vercel e produção exigem revisão/aprovação.
 
+Hardening local posterior:
+
+- Cópia local teve `docs/deploy-edge-functions.md` redigido para placeholders em linhas secret-like.
+- `eslint --fix` reduziu warnings de 46 para 39, mantendo 0 errors.
+- Build segue OK; warning de bundle grande permanece.
+- PR/push bloqueado até existir token GitHub válido da Spiti no Doppler; tokens atuais `GITHUB_TOKEN`/`GITHUB_TOKEN_LUCASCIMINO` não dão acesso válido ao repo.
+
 ### Rodada F — Hardening SPITI e observabilidade de monitor
 
 Objetivo: fechar o ciclo operacional SPITI com saúde do monitor, falhas conhecidas e relatório interno verificável.

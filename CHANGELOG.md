@@ -2,6 +2,14 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-04 — Spiti Hub: hardening local sem push
+
+- Redigida localmente a cópia de `docs/deploy-edge-functions.md` do Spiti Hub para substituir assignments secret-like de Google OAuth/refresh token por placeholders.
+- Rodado `eslint --fix` localmente, reduzindo warnings de lint de 46 para 39, com 0 errors.
+- Build local segue OK; warning de bundle grande permanece.
+- Secret scan local pós-redação retornou 0 achados nos padrões verificados.
+- Nenhum push/PR no Spiti Hub foi feito: token válido para `spiti-auction/spiti-hub` ainda precisa ser colocado em Doppler; PAT colado em chat deve ser rotacionado/revogado.
+
 ## 2026-05-04 — Rodada E: inventário GitHub do Spiti Hub
 
 - Confirmado acesso ao repo privado `spiti-auction/spiti-hub`, projeto operacional novo da SPITI.
