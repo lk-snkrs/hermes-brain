@@ -112,7 +112,7 @@ Tarefas restantes:
 
 1. Decidir se a chave SSH dedicada permanece ou será removida.
 2. Rotacionar senha root enviada em chat, se desejado.
-3. Investigar alerta de gateway parado no CLI vs container gateway rodando. — auditoria read-only documentada em `areas/operacoes/rotinas/hermes-runtime-observability.md`; plano de correção segura documentado em `areas/operacoes/rotinas/hermes-gateway-remediation-plan.md`; execução exige aprovação.
+3. Investigar alerta de gateway parado no CLI vs container gateway rodando. — auditoria read-only documentada em `areas/operacoes/rotinas/hermes-runtime-observability.md`; plano de correção segura documentado em `areas/operacoes/rotinas/hermes-gateway-remediation-plan.md`; diagnóstico read-only de Gateway em 2026-05-04 documentado em `areas/operacoes/rotinas/hermes-gateway-readonly-diagnostic-2026-05-04.md`; execução corretiva exige aprovação.
 4. Fazer inventário específico de workflows n8n via API em rodada própria. — concluído em `areas/operacoes/rotinas/n8n-inventory.md`; workflow_count = 0 em `lc.vps`.
 5. Atualizar `empresa/rotinas/_index.md` com coluna de status real se Lucas quiser visual executivo por rotina.
 6. Decidir se update planejado do runtime Hermes Hostinger de v0.9.0 para v0.12.0 entra em janela de manutenção; plano de update/rollback documentado em `areas/operacoes/rotinas/hermes-runtime-update-plan.md`.

@@ -2,6 +2,13 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-04 — Diagnóstico read-only do Hermes Gateway
+
+- Executado diagnóstico read-only do Gateway/Telegram na VPS sem restart, kill, update, alteração de env/compose ou mudança Docker/root.
+- Criado `areas/operacoes/rotinas/hermes-gateway-readonly-diagnostic-2026-05-04.md` com evidências e classificação H1/H2/H3/H4.
+- Atualizados observabilidade, plano de remediação, roadmap e índice de rotinas.
+- Conclusão operacional: detector de gateway em Docker foreground provavelmente diverge do processo real; conflito Telegram parece histórico/transitório no momento da coleta.
+
 ## 2026-05-04 — Planos seguros para Gateway e update Hermes
 
 Commit: `docs: add Hermes gateway and runtime update plans`

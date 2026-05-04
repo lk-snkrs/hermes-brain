@@ -139,3 +139,21 @@ Possível ação: seguir o plano `hermes-runtime-update-plan.md` em janela aprov
 - Cron automático tem evidência de execução ou limitação documentada.
 - Nenhum outro app Docker é afetado.
 - Nenhum secret é exposto.
+
+
+## Resultado do diagnóstico read-only — 2026-05-04 14:13 UTC
+
+A sequência segura foi executada sem alterações de produção. Evidências completas em `hermes-gateway-readonly-diagnostic-2026-05-04.md`.
+
+Resumo:
+
+- containers `hermes-agent` e `hermes-telegram` ativos;
+- `hermes-telegram` com `hermes gateway run` como PID 1;
+- `hermes cron status` ainda reporta gateway down;
+- `hermes cron list --all` mantém `Hermes release watch` ativo;
+- `getMe` e `getWebhookInfo` OK;
+- webhook ausente, como esperado para polling;
+- `pending_update_count` 0;
+- conflito Telegram aparece em logs históricos, mas não reapareceu nos últimos 30 minutos da coleta.
+
+Classificação atual: H1 provável, H3 plausível, H2 não confirmada, H4 possível mas dependente de update planejado. Próximo passo seguro é observar a próxima execução do cron ou coletar logs imediatamente após uma mensagem de teste se Lucas notar silêncio.

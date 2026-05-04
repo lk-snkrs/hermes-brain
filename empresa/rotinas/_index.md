@@ -58,3 +58,5 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 - Secrets via Doppler `lc-keys/prd`.
 - Rotina documentada ≠ cron confirmado.
 - Mensagens externas, campanhas, posts e contato com cliente/colecionador exigem aprovação Lucas.
+
+| Hermes Gateway Read-only Diagnostic 2026-05-04 | `areas/operacoes/rotinas/hermes-gateway-readonly-diagnostic-2026-05-04.md` | Diagnóstico read-only do warning gateway/cron e conflito Telegram, sem alteração de VPS/Docker. |

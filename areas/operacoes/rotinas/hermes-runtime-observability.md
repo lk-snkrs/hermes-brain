@@ -1,6 +1,6 @@
 # Rotina — Hermes Runtime Observability
 
-Última inspeção read-only: 2026-05-04 13:24 UTC.
+Última inspeção read-only: 2026-05-04 14:13 UTC. Ver também `hermes-gateway-readonly-diagnostic-2026-05-04.md`.
 
 ## Objetivo
 
@@ -117,3 +117,18 @@ Qualquer uma dessas ações exige preview, aprovação Lucas e plano de backup/r
 2. Decidir se o update de `v0.9.0` para `v0.12.0` entra em uma janela planejada.
 3. Verificar se o alerta `Gateway is not running` é bug/limitação do detector em container foreground ou configuração faltante.
 4. Manter monitoramento sem ação caso Telegram continue respondendo normalmente.
+
+## Atualização — diagnóstico read-only 2026-05-04 14:13 UTC
+
+Foi executada a sequência segura de diagnóstico descrita em `hermes-gateway-remediation-plan.md`, sem alterar produção. Resultado resumido:
+
+- containers Hermes seguem `Up`;
+- runtime segue em `Hermes Agent v0.9.0 (2026.4.13)`;
+- `hermes gateway run` segue ativo como PID 1 no container Telegram;
+- `hermes cron status` continua reportando gateway down;
+- Telegram API `getMe` e `getWebhookInfo` retornaram OK;
+- webhook não está configurado;
+- `pending_update_count` estava 0;
+- conflitos de polling aparecem em logs históricos, mas não reapareceram nos últimos 30 minutos da coleta.
+
+Conclusão: H1 provável (limitação/divergência do detector de gateway em Docker foreground) e H3 plausível (conflito Telegram histórico/transitório). H2 não confirmada. Nenhuma ação corretiva foi executada.
