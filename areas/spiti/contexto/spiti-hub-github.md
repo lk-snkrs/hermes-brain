@@ -194,4 +194,39 @@ Não realizado:
 
 - Não houve alteração em `main`/produção.
 - Não houve alteração em Supabase, Vercel configs, VPS, Docker, campanhas ou mensagens externas.
+## Lint cleanup pass 2 e Vercel preview — 2026-05-04
+
+Segunda rodada de lint focada nos 8 warnings restantes.
+
+- Branch criada a partir de `dev`: `hermes/spiti-hub-hooks-refresh-lint-pass-2`.
+- Commit no Spiti Hub: `0fb7f54 chore: resolve hook and fast refresh lint warnings`.
+- PR: `https://github.com/spiti-auction/spiti-hub/pull/91`.
+- PR #91 squash-mergeado em `dev`; merge commit `e8d4de4 chore: resolve hook and fast refresh lint warnings (#91)`.
+- Branch remota removida após merge.
+- Clone local sincronizado em `dev...origin/dev`.
+
+Escopo:
+
+- Ajustadas dependências seguras de hooks quando o lint apontava dependência faltante clara.
+- Mantidos suppressions explícitos, com comentário, apenas para efeitos intencionalmente one-shot e hooks co-localizados com provider/context.
+- Lint passou para `0 errors, 0 warnings`.
+
+Verificações locais:
+
+- `git diff --check`: OK.
+- Secret scan local: 0 achados nos padrões verificados.
+- `npm run lint --if-present`: OK, 0 errors, 0 warnings.
+- `npm run build`: OK; warning de bundle grande permanece.
+
+Aviso Vercel bot observado:
+
+- Em PR do Spiti Hub, o Vercel bot comentou que `@hermes-agent` tentou deployar no time/projeto da `spiti-auction`, mas não é membro do time Vercel.
+- Isso afeta preview/deploy Vercel iniciado por commits/PRs deste usuário/token, não a verificação local.
+- Nenhuma ação foi tomada em Vercel: não adicionar membro, não mudar billing, não tornar repo público, não alterar Vercel/team/settings sem aprovação explícita.
+- Enquanto essa permissão não for resolvida, usar `npm run build` local e CI GitHub como evidência; preview Vercel pode ficar bloqueado por permissão.
+
+Não realizado:
+
+- Não houve alteração em `main`/produção.
+- Não houve alteração em Supabase, Vercel configs, billing/team, VPS, Docker, campanhas ou mensagens externas.
 

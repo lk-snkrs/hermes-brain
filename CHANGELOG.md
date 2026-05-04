@@ -2,6 +2,15 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-04 — Spiti Hub: PR #91 mergeado em dev
+
+- Criado e mergeado em `dev` o PR #91: `https://github.com/spiti-auction/spiti-hub/pull/91`.
+- Merge commit: `e8d4de4 chore: resolve hook and fast refresh lint warnings (#91)`.
+- Warnings de lint reduziram de 8 para 0, mantendo 0 errors.
+- Verificações locais: `git diff --check` OK, secret scan 0, lint 0 errors/0 warnings, build OK.
+- Registrado aviso Vercel bot: preview/deploy pode falhar porque `@hermes-agent` não é membro do time Vercel da `spiti-auction`; nenhuma alteração em Vercel/team/billing/settings foi feita.
+- Produção/`main`, Supabase, Vercel configs, VPS, Docker, campanhas e mensagens externas não foram alterados.
+
 ## 2026-05-04 — Spiti Hub: PR #90 mergeado em dev
 
 - Criado e mergeado em `dev` o PR #90: `https://github.com/spiti-auction/spiti-hub/pull/90`.

@@ -232,7 +232,16 @@ Lint cleanup pass 1:
 - PR #90 aberto e squash-mergeado em `dev`: `https://github.com/spiti-auction/spiti-hub/pull/90`.
 - Merge commit `49b5c84`.
 - Warnings de lint: 39 → 8, com 0 errors.
-- Restam apenas warnings de hooks/Fast Refresh e o warning de bundle grande.
+- Warnings de lint zerados após pass 2; warning de bundle grande permanece.
+- `main`/produção não foi alterada.
+
+Lint cleanup pass 2 e preview Vercel:
+
+- PR #91 aberto e squash-mergeado em `dev`: `https://github.com/spiti-auction/spiti-hub/pull/91`.
+- Merge commit `e8d4de4`.
+- Warnings de lint: 8 → 0, com 0 errors.
+- Build local OK; warning de bundle grande permanece.
+- Vercel preview pode ficar bloqueado porque `@hermes-agent` não é membro do time Vercel da `spiti-auction`; resolver isso exigiria ação administrativa/Vercel/billing e não foi feito.
 - `main`/produção não foi alterada.
 
 ### Rodada F — Hardening SPITI e observabilidade de monitor
