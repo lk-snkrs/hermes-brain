@@ -2,6 +2,14 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-04 — Spiti Hub: PR #89 mergeado em dev
+
+- PR #89 (`chore: redact edge function secret examples`) foi squash-mergeado em `dev` do `spiti-auction/spiti-hub`.
+- Merge commit: `ae625a2 chore: redact edge function secret examples (#89)`.
+- Branch `hermes/spiti-hub-secrets-lint-hardening` removida após merge.
+- Clone local sincronizado em `dev...origin/dev`.
+- Produção/`main`, Supabase, Vercel configs, VPS, Docker, campanhas e mensagens externas não foram alterados.
+
 ## 2026-05-04 — Spiti Hub: PR de hardening aberto
 
 - Clonado `spiti-auction/spiti-hub` via Git usando `GITHUB_SPITI_HUB_TOKEN` sem embutir token no remote.

@@ -222,9 +222,10 @@ Hardening local posterior:
 PR aberto:
 
 - Spiti Hub PR #89: `https://github.com/spiti-auction/spiti-hub/pull/89`, branch `hermes/spiti-hub-secrets-lint-hardening` → `dev`.
-- Commit `8c8549b` redige exemplos secret-like e aplica lint-fix seguro.
+- Commit `8c8549b` redigiu exemplos secret-like e aplicou lint-fix seguro.
 - Verificações locais OK: diff check, secret scan, lint sem erros e build.
-- Merge não executado; aguardar CI/review conforme regras do repo.
+- PR #89 squash-mergeado em `dev`; merge commit `ae625a2`.
+- `main`/produção não foi alterada.
 
 ### Rodada F — Hardening SPITI e observabilidade de monitor
 

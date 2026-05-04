@@ -151,4 +151,19 @@ Não realizado:
 
 - Não houve merge.
 - Não houve alteração em `main`, Supabase, Vercel, produção, VPS, Docker, campaigns ou mensagens externas.
+## Merge em staging/dev — 2026-05-04
+
+PR #89 foi squash-mergeado em `dev` após verificação local.
+
+- PR: `https://github.com/spiti-auction/spiti-hub/pull/89`.
+- Merge commit em `dev`: `ae625a2 chore: redact edge function secret examples (#89)`.
+- `merged_at`: `2026-05-04T22:34:50Z`.
+- Branch remota `hermes/spiti-hub-secrets-lint-hardening` removida após merge.
+- Clone local `/opt/data/hermes_bruno_ingest/spiti-hub-git` sincronizado em `dev...origin/dev`.
+
+Escopo do merge:
+
+- Apenas `dev`/staging do Spiti Hub.
+- `main`/produção não foi alterada.
+- Supabase, Vercel configs, VPS, Docker, campanhas e mensagens externas não foram alterados.
 
