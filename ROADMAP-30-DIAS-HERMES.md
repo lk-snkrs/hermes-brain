@@ -94,31 +94,27 @@ Status: concluído no repo atual.
 
 ### Rodada A — Verificação de crons reais na VPS
 
-Status: iniciada; bloqueada em autenticação SSH.
+Status: inventário base concluído em `lc.vps`; n8n ainda merece rodada própria.
 
-Resultado parcial:
+Resultado:
 
 - Hostinger API confirmou VPS `lc.vps` (`72.60.150.124`) e `evo.lc` (`187.127.10.158`) rodando.
-- Cron local Hermes confirmado: `Hermes release watch` semanal.
-- SSH nas VPS retornou `Permission denied (publickey,password)` com os secrets SSH disponíveis no Doppler.
-- Documento criado: `areas/operacoes/rotinas/cron-inventory.md`.
+- Acesso a `lc.vps` resolvido com senha root fornecida pelo Lucas e chave dedicada instalada.
+- Root crontab vazio; `/etc/cron.d` contém apenas Docker prune, sysstat e jobs de sistema.
+- Systemd timers encontrados são padrão de sistema; nenhum timer de negócio/Hermes/LK/Zipper/SPITI.
+- Docker ativo com Hermes Telegram, Hermes web, n8n, Paperclip e Traefik.
+- Hermes cron confirmado: `Hermes release watch` semanal.
+- Documento atualizado: `areas/operacoes/rotinas/cron-inventory.md`.
 
 Objetivo final: transformar rotinas documentadas em estado operacional verificado.
 
 Tarefas restantes:
 
-1. Obter/atualizar credencial SSH válida no Doppler ou usuário/porta/chave correta.
-2. Acessar VPS autorizada.
-3. Listar crons/systemd/n8n relevantes.
-4. Mapear cada cron real para `empresa/rotinas/_index.md` e arquivos de rotina.
-5. Identificar rotinas documentadas que não têm execução real.
-6. Documentar status: ativo, pausado, legado, desconhecido.
-7. Não alterar crons sem aprovação Lucas.
-
-Resultado esperado:
-
-- `areas/operacoes/rotinas/cron-inventory.md` completo.
-- Atualização de `empresa/rotinas/_index.md` com status real.
+1. Decidir se a chave SSH dedicada permanece ou será removida.
+2. Rotacionar senha root enviada em chat, se desejado.
+3. Investigar alerta de gateway parado no CLI vs container gateway rodando.
+4. Fazer inventário específico de workflows n8n via API em rodada própria.
+5. Atualizar `empresa/rotinas/_index.md` com coluna de status real se Lucas quiser visual executivo por rotina.
 
 ### Rodada B — Integrações por ferramenta
 

@@ -31,20 +31,22 @@ VPS encontradas:
 
 ### SSH na VPS
 
-Status: bloqueado por autenticação.
+Status: resolvido para `lc.vps` após senha root fornecida pelo Lucas e instalação de chave pública dedicada.
 
-Tentativas realizadas sem persistir credenciais:
+Tentativas iniciais realizadas sem persistir credenciais:
 
 - hosts: `72.60.150.124`, `187.127.10.158`;
 - usuários testados: `root`, `hermes`, `ubuntu`, `admin`, `debian` conforme aplicável;
 - secrets testados sob demanda via Doppler: `HERMES_VPS_SSH_PASS`, `HERMES_SUDO_PASS`, `VPS_ROOT_PASSWORD`;
 - resultado: `Permission denied (publickey,password)`.
 
-Conclusão: as credenciais SSH disponíveis no Doppler parecem não autenticar nas VPS atuais, ou o SSH exige chave/usuário/porta diferente.
+Conclusão inicial: as credenciais SSH disponíveis no Doppler não autenticavam nas VPS atuais.
+
+Acesso atual: `root@72.60.150.124` via chave local dedicada `hermes-cron-inventory-2026-05-04`, instalada em `authorized_keys`. A senha root enviada em chat foi usada apenas para instalar a chave e não foi salva/commitada. Recomenda-se rotação da senha root após concluir esta sequência.
 
 ### Tentativa de chave SSH via Hostinger
 
-Status: parcial.
+Status: parcial pela API, concluído via SSH com senha root fornecida pelo Lucas.
 
 Com aprovação do Lucas, foi criada uma public key na conta Hostinger:
 
@@ -62,11 +64,102 @@ Limite encontrado:
 - Hostinger API `GET /api/vps/v1/virtual-machines/1331756/public-keys` retorna `data: []`.
 - `OPTIONS /api/vps/v1/virtual-machines/1331756/public-keys` permite apenas `GET, HEAD`; não há `POST/PUT` para anexar chave à VPS em execução nesse endpoint.
 
-Conclusão: a API permitiu criar a chave na conta, mas não confirmou um caminho seguro para injetá-la na VPS em execução sem outra ação, como painel, recriação, recovery ou reset de senha.
+Conclusão: a API permitiu criar a chave na conta, mas não confirmou um caminho seguro para injetá-la na VPS em execução. A chave foi efetivamente instalada via SSH usando a senha root fornecida pelo Lucas.
 
-## Rotinas documentadas ainda sem verificação real de cron na VPS
+## Inventário real coletado em `lc.vps`
 
-Estas rotinas existem no Brain, mas não devem ser afirmadas como ativas até conferência na VPS:
+Data de coleta: 2026-05-04 11:01 UTC.
+
+### Cron do sistema
+
+Root crontab: não há crontab para root.
+
+`/etc/crontab` contém apenas rotinas padrão:
+
+- hourly: `run-parts /etc/cron.hourly` no minuto 17;
+- daily: `run-parts /etc/cron.daily` às 06:25;
+- weekly: `run-parts /etc/cron.weekly` domingo às 06:47;
+- monthly: `run-parts /etc/cron.monthly` dia 1 às 06:52.
+
+`/etc/cron.d/` contém:
+
+| Arquivo | Schedule | Função | Status |
+|---|---|---|---|
+| `docker-image-prune` | diário meia-noite + jitter até 6h | `docker image prune -af --filter until=24h` | ativo |
+| `e2scrub_all` | domingo 03:30 e diário 03:10, fallback sem systemd | filesystem scrub | padrão sistema |
+| `sysstat` | a cada 10min e 23:59 | coleta/rotação sysstat | ativo |
+
+Diretórios `/etc/cron.hourly`, daily, weekly e monthly têm apenas jobs padrão do Ubuntu/sysstat/logrotate/man-db/apport.
+
+### Systemd timers
+
+Timers relevantes encontrados são padrão do sistema: sysstat, apt, logrotate, dpkg backup, fwupd, fstrim, tmpfiles, motd, e2scrub.
+
+Nenhum timer de negócio/Hermes/LK/Zipper/SPITI foi encontrado.
+
+### Serviços relevantes
+
+- `cron.service`: active/running.
+- `docker.service`: active/running.
+
+Nenhum service systemd específico `hermes`, `lk`, `spiti`, `zipper` ou `n8n` além de Docker/cron apareceu como unidade systemd.
+
+### Docker containers ativos
+
+| Container | Imagem | Status | Observação |
+|---|---|---|---|
+| `hermes-agent-5ajw-hermes-telegram-1` | `ghcr.io/hostinger/hvps-hermes-agent:latest` | Up | gateway Telegram/Hermes foreground |
+| `hermes-agent-5ajw-hermes-agent-1` | `ghcr.io/hostinger/hvps-hermes-agent:latest` | Up | serviço principal web/ttyd na porta 4860 |
+| `n8n-vdgm-n8n-1` | `docker.n8n.io/n8nio/n8n` | Up | n8n |
+| `paperclip-qrlt-paperclip-1` | `ghcr.io/hostinger/hvps-paperclip:latest` | Up | Paperclip |
+| `traefik-traefik-1` | `traefik:latest` | Up | reverse proxy |
+
+Compose files encontrados:
+
+- `/docker/hermes-agent-5ajw/docker-compose.yml`
+- `/docker/n8n-vdgm/docker-compose.yml`
+- `/docker/paperclip-qrlt/docker-compose.yml`
+- `/docker/traefik/docker-compose.yml`
+
+### Hermes cron na VPS
+
+`hermes cron list --all` na VPS/container mostra 1 job:
+
+| Job | Schedule | Entrega | Estado | Próxima execução |
+|---|---|---|---|---|
+| Hermes release watch | `0 9 * * 1` | origin | active | 2026-05-11 09:00 UTC |
+
+Observação: o CLI reporta “Gateway is not running — jobs won't fire automatically”, mas o container `hermes-telegram` está `Up` e logs mostram `Hermes Gateway Starting...`. Isso parece uma limitação/detecção incorreta do status por rodar em foreground Docker, ou possível conflito de múltiplos pollers visto em logs antigos. Não alterei containers.
+
+### Logs Hermes relevantes
+
+Logs recentes do container Telegram mostram:
+
+- `Hermes Gateway Starting...`
+- avisos antigos de conflito Telegram polling: `terminated by other getUpdates request`
+- cron `Hermes release watch` criado
+
+Como o Telegram está respondendo nesta conversa, não tratei isso como incidente ativo, apenas como ponto a monitorar.
+
+## Status das rotinas documentadas após verificação real
+
+### Verificadas ativas
+
+| Rotina | Evidência | Status |
+|---|---|---|
+| `areas/operacoes/rotinas/hermes-release-watch.md` | `hermes cron list --all` mostra job ativo | ativa no Hermes cron |
+
+### Rotinas de sistema/VPS não-Hermes
+
+| Rotina | Evidência | Status |
+|---|---|---|
+| Docker image prune | `/etc/cron.d/docker-image-prune` | ativa |
+| sysstat collect/summary | `/etc/cron.d/sysstat` + systemd timers | ativa |
+| apt/logrotate/dpkg/fstrim/etc | systemd timers padrão | ativas/padrão |
+
+## Rotinas documentadas sem execução real encontrada na VPS
+
+Estas rotinas existem no Brain, mas não foram encontradas como cron/systemd/Hermes cron ativo em `lc.vps` durante a coleta:
 
 ### Operações
 
@@ -99,15 +192,13 @@ Estas rotinas existem no Brain, mas não devem ser afirmadas como ativas até co
 - `areas/spiti/rotinas/alerta-lances.md`
 - `areas/spiti/rotinas/relatorio-leilao.md`
 
-## Próxima ação necessária
+## Próximas ações necessárias
 
-Para completar a Rodada A, é necessário um dos itens abaixo:
-
-1. atualizar no Doppler uma credencial SSH válida para `lc.vps`;
-2. informar usuário/porta/chave SSH correta;
-3. anexar pelo painel Hostinger a public key `hermes-cron-inventory-2026-05-04` à VPS, se o painel permitir;
-4. autorizar explicitamente outro caminho de acesso, como reset temporário de root password via Hostinger API;
-5. executar manualmente na VPS o script de inventário e colar o output redigido.
+1. Decidir se o acesso por chave dedicada deve permanecer ou ser removido após a sequência.
+2. Rotacionar a senha root enviada por chat, se Lucas quiser reduzir risco.
+3. Investigar, sem alterar produção, por que `hermes cron list` alerta gateway parado enquanto o container gateway está rodando.
+4. Se existirem crons de negócio em n8n, fazer inventário via API n8n em rodada própria.
+5. Atualizar `empresa/rotinas/_index.md` com coluna de status real em próxima rodada.
 
 ## Script de inventário recomendado na VPS
 
@@ -129,6 +220,6 @@ find /root/.hermes /root/hermes-brain -maxdepth 3 -type f \( -name '*cron*' -o -
 
 ## Regra de comunicação
 
-Até a verificação SSH/VPS ser concluída, dizer:
+Após a verificação atual, dizer:
 
-> Rotina documentada no Brain; execução real na VPS ainda não verificada.
+> Rotina documentada no Brain; execução real na VPS só foi confirmada quando listada como ativa neste inventário. Caso contrário, não encontrada como cron/systemd/Hermes cron em `lc.vps`.
