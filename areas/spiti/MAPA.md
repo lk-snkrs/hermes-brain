@@ -2,6 +2,29 @@
 
 Fonte resumida atual: `memories/spiti.md`.
 
-Regra crítica: email é fonte de verdade de lances; site mostra destaques; meta tag é preço base, não lance atual.
+## Regra crítica
+
+Email é fonte de verdade de lances. Site mostra destaques. Meta tag é preço base, não lance atual.
 
 Silêncio é melhor que dado errado.
+
+## Dados e ferramentas documentados
+
+- Supabase/SPITI CRM: `rmdugdkantdydivgnimb`.
+- Tabela principal: `spiti_lotes`.
+- Monitor de lances: systemd `spiti-lances`, porta `19123`.
+- n8n workflow documentado: `OHC9FfEsK0JRVMBK`.
+- Painel: leiloesbr.com.br / leilão documentado em `memories/spiti.md`.
+
+## Rotinas
+
+- `rotinas/verificacao-lances.md` — checagem segura de lances/lotes.
+- `rotinas/alerta-lances.md` — alertas e deduplicação.
+- `rotinas/relatorio-leilao.md` — relatório interno, com fonte e ressalvas.
+
+## Regras de comunicação
+
+- Informar tipo de lance quando disponível: A = automático, O = normal.
+- Não dizer “sem lance” sem fonte correta.
+- Não usar dado não confirmado.
+- Não enviar mensagem para grupo/cliente sem aprovação Lucas.
