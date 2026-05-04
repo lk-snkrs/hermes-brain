@@ -43,4 +43,5 @@ Para cada novidade:
 - Atualizar `empresa/gestao/memory-system.md` se envolver memória/skills.
 - Atualizar `ROADMAP-30-DIAS-HERMES.md` se virar próxima rodada.
 - Atualizar skills internas se o procedimento mudar.
-- Não rodar `hermes update` em produção sem plano e aprovação.
+- Para update do runtime Hostinger, usar `areas/operacoes/rotinas/hermes-runtime-update-plan.md`.
+- Não rodar `hermes update`, `docker compose pull`, restart ou recriação em produção sem plano e aprovação.

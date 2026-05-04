@@ -340,7 +340,7 @@ doppler secrets list
 | Supabase não conecta | Verificar URL + service key específicos da base (`SUPABASE_LK_*`, `SUPABASE_ZIPPER_VENDAS_*`, `SUPABASE_SPITI_*`) |
 | Evolution API offline | Checar Railway do serviço |
 | Cron não roda | Verificar `cronjob list` e logs |
-| Hermes fora do ar | `systemctl --user restart hermes-gateway` |
+| Hermes fora do ar | Não reiniciar direto. Usar `areas/operacoes/rotinas/hermes-runtime-observability.md` e `areas/operacoes/rotinas/hermes-gateway-remediation-plan.md`; restart/update em Docker exige aprovação + rollback. |
 
 ---
 
