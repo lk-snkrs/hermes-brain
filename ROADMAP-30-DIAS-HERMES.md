@@ -94,20 +94,30 @@ Status: concluído no repo atual.
 
 ### Rodada A — Verificação de crons reais na VPS
 
-Objetivo: transformar rotinas documentadas em estado operacional verificado.
+Status: iniciada; bloqueada em autenticação SSH.
 
-Tarefas:
+Resultado parcial:
 
-1. Acessar VPS autorizada.
-2. Listar crons/systemd/n8n relevantes.
-3. Mapear cada cron real para `empresa/rotinas/_index.md` e arquivos de rotina.
-4. Identificar rotinas documentadas que não têm execução real.
-5. Documentar status: ativo, pausado, legado, desconhecido.
-6. Não alterar crons sem aprovação Lucas.
+- Hostinger API confirmou VPS `lc.vps` (`72.60.150.124`) e `evo.lc` (`187.127.10.158`) rodando.
+- Cron local Hermes confirmado: `Hermes release watch` semanal.
+- SSH nas VPS retornou `Permission denied (publickey,password)` com os secrets SSH disponíveis no Doppler.
+- Documento criado: `areas/operacoes/rotinas/cron-inventory.md`.
+
+Objetivo final: transformar rotinas documentadas em estado operacional verificado.
+
+Tarefas restantes:
+
+1. Obter/atualizar credencial SSH válida no Doppler ou usuário/porta/chave correta.
+2. Acessar VPS autorizada.
+3. Listar crons/systemd/n8n relevantes.
+4. Mapear cada cron real para `empresa/rotinas/_index.md` e arquivos de rotina.
+5. Identificar rotinas documentadas que não têm execução real.
+6. Documentar status: ativo, pausado, legado, desconhecido.
+7. Não alterar crons sem aprovação Lucas.
 
 Resultado esperado:
 
-- `areas/operacoes/rotinas/cron-inventory.md`.
+- `areas/operacoes/rotinas/cron-inventory.md` completo.
 - Atualização de `empresa/rotinas/_index.md` com status real.
 
 ### Rodada B — Integrações por ferramenta
