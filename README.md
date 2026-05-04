@@ -18,6 +18,10 @@ Hermes não é OpenClaw. A estrutura Bruno/OpenClaw foi adaptada para o Hermes p
 
 ## Como navegar
 
+Comece por `START-HERE.md`.
+
+Depois use:
+
 - `AGENTS.md` — regras operacionais globais.
 - `STARTUP.md` — boot protocol.
 - `PROTOCOLS.md` — protocolos operacionais.
