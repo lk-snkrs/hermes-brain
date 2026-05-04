@@ -22,6 +22,11 @@ Silêncio é melhor que dado errado.
 - `rotinas/alerta-lances.md` — alertas e deduplicação.
 - `rotinas/relatorio-leilao.md` — relatório interno, com fonte e ressalvas.
 
+## Playbooks operacionais
+
+- `rotinas/playbook-pregao-ao-vivo.md` — resposta segura durante pregão, com hierarquia de fontes.
+- `rotinas/playbook-divergencia-lances.md` — investigação quando fontes de lance/lote divergem.
+
 ## Regras de comunicação
 
 - Informar tipo de lance quando disponível: A = automático, O = normal.

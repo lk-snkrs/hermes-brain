@@ -16,6 +16,11 @@ Não confundir Zipper Vendas com SPITI.
 - `sub-areas/feiras/` — SP-Arte, ArPa, ArtRio, Farol Santander e checklists de produção/comercial.
 - `sub-areas/comunicacao/` — Instagram, texto, vídeo, foto/design e tom institucional.
 
+## Playbooks operacionais
+
+- `rotinas/playbook-abordagem-obra-colecionador.md` — rascunho comercial sofisticado por obra/artista/colecionador, com aprovação Lucas/Osmar.
+- `rotinas/playbook-feira-execucao.md` — preparação e execução de feira com checklist por responsável.
+
 ## Equipe documentada
 
 - Osmar: diretor comercial + sócio.

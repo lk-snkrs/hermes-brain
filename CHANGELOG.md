@@ -2,6 +2,14 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-04 — Rodada C: playbooks operacionais LK/Zipper/SPITI
+
+- Criados playbooks LK para comando diário e campanha CRM aprovada.
+- Criados playbooks Zipper para abordagem obra/colecionador e execução de feira.
+- Criados playbooks SPITI para pregão ao vivo e divergência de lances.
+- Atualizados mapas de áreas, índice de rotinas e roadmap.
+- Fase documental segura: nenhuma consulta/alteração em produção, Docker, VPS, campanhas ou mensagens externas.
+
 ## 2026-05-04 — Diagnóstico read-only do Hermes Gateway
 
 - Executado diagnóstico read-only do Gateway/Telegram na VPS sem restart, kill, update, alteração de env/compose ou mudança Docker/root.

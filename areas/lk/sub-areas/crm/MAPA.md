@@ -20,6 +20,7 @@ pedido/cliente → segmentação → recomendação → preview Lucas → envio 
 - `rotinas/cross-sell-monitor.md` — oportunidades pós-pedido.
 - `rotinas/rfm-semanal.md` — cálculo e relatório RFM.
 - `rotinas/outcomes-tracker.md` — acompanhamento das sugestões do Hermes.
+- `rotinas/playbook-campanha-crm-aprovada.md` — campanha CRM com segmentação, preview e aprovação Lucas antes de envio.
 
 ## Dados principais
 

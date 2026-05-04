@@ -16,6 +16,11 @@ Fonte resumida atual: `memories/lk.md`.
 - `rotinas/sync-log.md` — auditoria de syncs.
 - `rotinas/consequence-tracker.md` — consequências e aprendizados de ações.
 
+## Playbooks operacionais
+
+- `rotinas/playbook-comando-diario.md` — roteiro executivo para briefing/prioridades LK sem inventar dados.
+- `sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md` — campanha CRM com segmentação, preview e aprovação Lucas antes de envio.
+
 ## Ferramentas principais
 
 Shopify, Supabase LK, Klaviyo, GA4/GSC, Meta Ads, Judge.me, Frenet, Tiny ERP, Evolution Clo e Telegram.

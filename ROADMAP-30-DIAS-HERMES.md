@@ -145,59 +145,50 @@ Pendências futuras:
 2. Transformar rotinas mais usadas em skills executáveis.
 3. Rodar testes reais read-only por ferramenta quando houver pergunta operacional concreta.
 
-### Rodada C — Aprofundamento LK
+### Rodada C — Playbooks operacionais LK/Zipper/SPITI
 
-Objetivo: sair do mapa base para operação mais útil de CRM/performance.
+Status: concluída como rodada documental segura, sem tocar produção.
 
-Tarefas:
+Objetivo: transformar mapas e rotinas base em playbooks business-readable para uso diário, campanhas aprovadas, abordagem de colecionadores, feiras e pregão SPITI.
 
-1. Expandir CRM LK com queries/padrões verificados.
-2. Documentar segmentos principais.
-3. Criar playbooks de cross-sell, reativação e RFM.
-4. Conectar tráfego pago a criativos/learnings.
-5. Criar templates de preview para aprovação Lucas.
+Entregas:
 
-Resultado esperado:
+1. LK Comando Diário: `areas/lk/rotinas/playbook-comando-diario.md`.
+2. LK Campanha CRM Aprovada: `areas/lk/sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md`.
+3. Zipper Abordagem Obra/Colecionador: `areas/zipper/rotinas/playbook-abordagem-obra-colecionador.md`.
+4. Zipper Execução de Feira: `areas/zipper/rotinas/playbook-feira-execucao.md`.
+5. SPITI Pregão ao Vivo: `areas/spiti/rotinas/playbook-pregao-ao-vivo.md`.
+6. SPITI Divergência de Lances: `areas/spiti/rotinas/playbook-divergencia-lances.md`.
 
-- Playbooks em `areas/lk/sub-areas/crm/playbooks/`.
-- Templates em `areas/lk/sub-areas/crm/templates/`.
-- Rotinas mais acionáveis.
+Regras preservadas:
 
-### Rodada D — Aprofundamento Zipper
+- LK: dados vivos antes de afirmação; preview Lucas antes de campanha/WhatsApp/email/post.
+- Zipper: sem hard sell; sem inventar histórico; aprovação Lucas/Osmar antes de contato com colecionador.
+- SPITI: email é fonte de verdade; site pode ser parcial; meta tag não é lance; silêncio > dado errado.
 
-Objetivo: transformar sub-áreas Zipper em playbooks reais.
+### Rodada D — Templates e consultas verificadas por negócio
 
-Tarefas:
-
-1. Criar playbook de consulta `vendas_tango`.
-2. Criar template de abordagem de colecionadores.
-3. Criar checklist de feira por fase.
-4. Criar guia de tom/comunicação por formato.
-5. Definir regra de registro de resultados pós-contato.
-
-Resultado esperado:
-
-- `areas/zipper/sub-areas/vendas-obras/playbooks/`.
-- `areas/zipper/sub-areas/colecionadores/templates/`.
-- `areas/zipper/sub-areas/feiras/checklists/`.
-
-### Rodada E — Aprofundamento SPITI
-
-Objetivo: tornar impossível repetir erros de fonte de lance.
+Objetivo: transformar playbooks em templates e consultas read-only reutilizáveis.
 
 Tarefas:
 
-1. Documentar árvore de decisão para resposta sobre lance.
-2. Criar checklist de verificação antes de relatório.
-3. Criar template de relatório interno.
-4. Documentar falhas conhecidas do monitor/n8n.
-5. Mapear quais ações são apenas internas e quais exigem aprovação.
+1. LK: criar templates de preview de campanha, RFM e cross-sell.
+2. Zipper: criar template de consulta `vendas_tango` e registro pós-contato.
+3. Zipper: criar checklist de feira por fase com status `confirmado`/`a confirmar`.
+4. SPITI: criar template de relatório interno e matriz de evidência por lote.
+5. Validar consultas read-only reais apenas quando houver necessidade operacional concreta.
 
-Resultado esperado:
+### Rodada E — Hardening SPITI e observabilidade de monitor
 
-- `areas/spiti/playbooks/verificacao-lance.md`.
-- `areas/spiti/templates/relatorio-leilao.md`.
-- `areas/spiti/rotinas/monitor-health.md`.
+Objetivo: fechar o ciclo operacional SPITI com saúde do monitor, falhas conhecidas e relatório interno verificável.
+
+Tarefas:
+
+1. Documentar rotina `monitor-health` para `spiti-lances` em modo read-only.
+2. Criar template de relatório interno com matriz de evidência por lote.
+3. Mapear falhas conhecidas de email/site/banco/n8n/monitor.
+4. Definir procedimento de pós-leilão e registro de lessons.
+5. Validar qualquer estado vivo somente com fonte correta e sem alteração de produção.
 
 ### Rodada F — Health checks do Brain
 
