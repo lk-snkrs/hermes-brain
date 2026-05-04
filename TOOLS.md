@@ -179,7 +179,7 @@ curl -X GET "https://graph.facebook.com/v18.0/me/accounts" \
 ### 8️⃣ Vercel
 
 **Status:** ✅ Ativo
-**Token:** Doppler (`VERCEL_TOKEN`)
+**Token:** Doppler (`VERCEL_API_TOKEN`)
 **Projetos:**
 - spiti-financial (spiti-financial.vercel.app)
 
@@ -187,7 +187,7 @@ curl -X GET "https://graph.facebook.com/v18.0/me/accounts" \
 ```bash
 # Listar projetos
 curl -X GET "https://api.vercel.com/v6/projects" \
-  -H "Authorization: Bearer $(doppler secrets get VERCEL_TOKEN --plain)"
+  -H "Authorization: Bearer $(doppler secrets get VERCEL_API_TOKEN --plain)"
 ```
 
 ---
