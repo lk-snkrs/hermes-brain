@@ -45,3 +45,7 @@ Para cada novidade:
 - Atualizar skills internas se o procedimento mudar.
 - Para update do runtime Hostinger, usar `areas/operacoes/rotinas/hermes-runtime-update-plan.md`.
 - Não rodar `hermes update`, `docker compose pull`, restart ou recriação em produção sem plano e aprovação.
+
+## Post-check operacional
+
+Após a primeira execução esperada em 2026-05-11 09:00 UTC, há um job one-shot `Hermes release watch post-check` (`1f60e374d0ba`) agendado para 09:15 UTC. Ele deve verificar somente em modo read-only se o release watch executou/entregou. Se não houver execução, registrar evidência e pedir aprovação antes de qualquer correção em gateway/cron/Docker.

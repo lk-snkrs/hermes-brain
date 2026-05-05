@@ -306,7 +306,7 @@ Toda fase deve terminar com:
 
 ## Sequência recomendada agora
 
-1. Fechar decisão operacional sobre Hermes runtime/gateway: investigar conflito de polling e planejar update v0.9.0 → v0.12.0 somente com aprovação/rollback.
+1. Fechar decisão operacional sobre Hermes runtime/gateway: matriz de opções criada em `areas/operacoes/rotinas/hermes-runtime-upgrade-options-2026-05-05.md`; próximo marco seguro é validar execução real do `Hermes release watch` em 2026-05-11 ou aprovar plano de imagem customizada.
 2. Rodada C — LK playbooks.
 3. Rodada D — Templates Zipper por subárea. — concluída documentalmente; próximos: LK templates ou SPITI hardening.
 4. Rodada E — SPITI hardening.

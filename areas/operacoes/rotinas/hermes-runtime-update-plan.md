@@ -139,3 +139,9 @@ Resumo:
 - Containers Hermes seguiram `Up`; Traefik, n8n, Paperclip, volumes, redes, firewall e produção externa não foram alterados.
 
 Conclusão: o fluxo seguro de pull/recreate limitado foi executado, mas a imagem `ghcr.io/hostinger/hvps-hermes-agent:latest` não continha a release upstream `v2026.4.30` / `v0.12.0`. Upgrade real para `v0.12.0` exige investigação/aprovação separada de tag oficial Hostinger ou imagem customizada.
+
+## Decisão preparada — 2026-05-05
+
+Documento de opções criado: `hermes-runtime-upgrade-options-2026-05-05.md`.
+
+Recomendação atual: não instalar gateway systemd nem trocar imagem/compose sem aprovação. Como Telegram responde e não houve conflito novo nas últimas 2h, a opção de menor risco é aguardar a primeira execução real do `Hermes release watch` em 2026-05-11 para validar se o cron dispara apesar do warning; se não disparar, priorizar correção mínima do gateway/cron. Upgrade customizado para v0.12.0 fica como caminho planejado, não ação automática.

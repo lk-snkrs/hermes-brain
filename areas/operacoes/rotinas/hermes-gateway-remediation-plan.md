@@ -157,3 +157,16 @@ Resumo:
 - conflito Telegram aparece em logs históricos, mas não reapareceu nos últimos 30 minutos da coleta.
 
 Classificação atual: H1 provável, H3 plausível, H2 não confirmada, H4 possível mas dependente de update planejado. Próximo passo seguro é observar a próxima execução do cron ou coletar logs imediatamente após uma mensagem de teste se Lucas notar silêncio.
+
+## Atualização read-only — 2026-05-05 10:08 UTC
+
+Nova coleta read-only confirmou:
+
+- containers Hermes continuam `Up`;
+- `hermes-telegram` mantém `hermes gateway run` como PID 1;
+- Telegram API `getMe` OK para `HermesLC_botbot`;
+- `getWebhookInfo.url` vazio e `pending_update_count = 0`;
+- logs das últimas 2h do container Telegram não mostraram novos conflitos;
+- `hermes cron list/status` continua reportando `Gateway is not running` no host e no container.
+
+Classificação mantida: H1 provável (detector/cron não reconhece gateway foreground no Docker), H3 plausível (conflito antigo não recorrente), H2 não confirmada. Não instalar gateway systemd no host sem aprovação, pois isso pode criar poller duplicado.
