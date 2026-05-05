@@ -62,8 +62,11 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Verificação de Lances | `areas/spiti/rotinas/verificacao-lances.md` | Checagem segura de lances/lotes |
 | Playbook Pregão ao Vivo | `areas/spiti/rotinas/playbook-pregao-ao-vivo.md` | Resposta segura durante pregão com hierarquia de fontes |
 | Alerta de Lances | `areas/spiti/rotinas/alerta-lances.md` | Alertas, deduplicação e falhas conhecidas |
+| Monitor Health | `areas/spiti/rotinas/monitor-health.md` | Health check read-only do monitor SPITI/lances antes de confiar em alertas |
 | Playbook Divergência de Lances | `areas/spiti/rotinas/playbook-divergencia-lances.md` | Investigação quando email/site/banco/monitor não fecham |
 | Relatório de Leilão | `areas/spiti/rotinas/relatorio-leilao.md` | Relatório interno com fonte e ressalvas |
+| Pós-leilão e Lessons | `areas/spiti/rotinas/pos-leilao-lessons.md` | Fechamento de leilão com decisions, lessons e memória executiva |
+| Template Relatório Interno SPITI | `areas/spiti/templates/relatorio-interno-matriz-evidencia.md` | Matriz de evidência por lote para relatório interno |
 
 ## Regras
 

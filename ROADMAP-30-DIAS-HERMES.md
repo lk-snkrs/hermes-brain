@@ -256,15 +256,24 @@ Bundle/code splitting:
 
 ### Rodada F — Hardening SPITI e observabilidade de monitor
 
+Status: concluída como rodada documental/read-only, sem alterar VPS, Docker, n8n, Supabase, GitHub, Vercel ou mensagens externas.
+
 Objetivo: fechar o ciclo operacional SPITI com saúde do monitor, falhas conhecidas e relatório interno verificável.
 
-Tarefas:
+Entregas:
 
-1. Documentar rotina `monitor-health` para `spiti-lances` em modo read-only.
-2. Criar template de relatório interno com matriz de evidência por lote.
-3. Mapear falhas conhecidas de email/site/banco/n8n/monitor.
-4. Definir procedimento de pós-leilão e registro de lessons.
-5. Validar qualquer estado vivo somente com fonte correta e sem alteração de produção.
+1. Rotina `areas/spiti/rotinas/monitor-health.md` criada para health check read-only de `spiti-lances`/porta `19123`/n8n/containers.
+2. Template `areas/spiti/templates/relatorio-interno-matriz-evidencia.md` criado para relatório interno com matriz de evidência por lote.
+3. Rotina `areas/spiti/rotinas/pos-leilao-lessons.md` criada para fechamento, decisions, lessons e memória executiva.
+4. `areas/spiti/rotinas/relatorio-leilao.md`, `areas/spiti/MAPA.md` e `empresa/rotinas/_index.md` atualizados.
+5. Validação read-only em `lc.vps` em 2026-05-05: não foram encontrados systemd unit, processo, listener `19123` ou container SPITI/lances ativo nesse host; tratar monitor como não confirmado até nova validação.
+
+Regras preservadas:
+
+- Email segue fonte de verdade para total de lances.
+- Site é auxiliar; meta tag nunca é lance atual.
+- Monitor histórico documentado não prova execução atual.
+- Correções em VPS/Docker/n8n/systemd/cron exigem aprovação explícita e rollback.
 
 ### Rodada G — Health checks do Brain
 

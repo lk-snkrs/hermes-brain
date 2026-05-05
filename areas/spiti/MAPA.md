@@ -26,6 +26,12 @@ Silêncio é melhor que dado errado.
 - `rotinas/verificacao-lances.md` — checagem segura de lances/lotes.
 - `rotinas/alerta-lances.md` — alertas e deduplicação.
 - `rotinas/relatorio-leilao.md` — relatório interno, com fonte e ressalvas.
+- `rotinas/monitor-health.md` — health check read-only do monitor SPITI/lances.
+- `rotinas/pos-leilao-lessons.md` — fechamento pós-leilão, decisions e lessons.
+
+## Templates
+
+- `templates/relatorio-interno-matriz-evidencia.md` — matriz de evidência por lote para relatório interno.
 
 ## Playbooks operacionais
 
