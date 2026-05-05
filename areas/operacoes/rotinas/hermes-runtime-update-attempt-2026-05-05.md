@@ -133,7 +133,25 @@ published_at: 2026-04-30T18:31:21Z
 url: https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.30
 ```
 
-Probe read-only da API pública de tags GHCR para `ghcr.io/hostinger/hvps-hermes-agent` retornou `401 authentication required`; portanto, a lista de tags Hostinger não foi confirmada por API pública.
+Probe read-only do GHCR para `ghcr.io/hostinger/hvps-hermes-agent` em 2026-05-05 confirmou que a registry aceita token bearer anônimo para pull e lista apenas 5 tags:
+
+```text
+8eb9eb9
+ba03513
+latest
+sha256-6eeb47c07ff4003d3a50386b4453778fa21b96f5a5c3bb6567514b595c83056a
+sha256-7fc18af3c7a124b00b8853218cf59296861101d65d6af1dc9d7851277829d6b7
+```
+
+Manifest/digest observado por tag:
+
+| Tag | Digest OCI index | Criado | Label `org.opencontainers.image.version` | Observação |
+|---|---|---:|---|---|
+| `latest` | `sha256:7fc18af3c7a124b00b8853218cf59296861101d65d6af1dc9d7851277829d6b7` | 2026-04-15 14:45 UTC | `8eb9eb9` | mesma imagem atualmente rodando |
+| `8eb9eb9` | `sha256:7fc18af3c7a124b00b8853218cf59296861101d65d6af1dc9d7851277829d6b7` | 2026-04-15 14:45 UTC | `8eb9eb9` | alias de `latest` |
+| `ba03513` | `sha256:6eeb47c07ff4003d3a50386b4453778fa21b96f5a5c3bb6567514b595c83056a` | 2026-04-15 13:44 UTC | `ba03513` | imagem anterior, não upgrade |
+
+Labels da imagem Hostinger apontam para `https://github.com/hostinger/docker-compose-catalog` e não para tags upstream `NousResearch/hermes-agent`. Portanto, nesta data não havia tag pública Hostinger mais nova que `latest` para avançar o runtime acima de `v0.9.0` sem trocar fonte/estratégia de imagem.
 
 ## Próxima decisão
 

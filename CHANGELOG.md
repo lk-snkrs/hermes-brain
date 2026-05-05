@@ -11,6 +11,7 @@ Registro das principais mudanças estruturais do Hermes Brain após a adaptaçã
 - Executado `docker compose pull` e `docker compose up -d --no-deps` apenas para `hermes-agent` e `hermes-telegram`.
 - Digest da imagem Hostinger `latest` permaneceu `sha256:7fc18af3c7a124b00b8853218cf59296861101d65d6af1dc9d7851277829d6b7`; versão segue `Hermes Agent v0.9.0 (2026.4.13)`.
 - Confirmado por GitHub API que upstream `NousResearch/hermes-agent` latest segue `v2026.4.30` / `Hermes Agent v0.12.0 (2026.4.30)`; imagem Hostinger não avançou para essa versão no pull.
+- Investigação GHCR read-only confirmou tags públicas Hostinger disponíveis (`latest`, `8eb9eb9`, `ba03513` e aliases sha256); `latest` é alias de `8eb9eb9`, digest atual, e `ba03513` é anterior — não há tag pública Hostinger mais nova nesta data.
 - Documentado registro completo em `areas/operacoes/rotinas/hermes-runtime-update-attempt-2026-05-05.md`.
 - Traefik, n8n, Paperclip, volumes, redes, firewall, Supabase, Vercel, campanhas e mensagens externas não foram alterados.
 

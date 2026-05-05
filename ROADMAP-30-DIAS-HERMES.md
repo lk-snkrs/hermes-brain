@@ -115,7 +115,7 @@ Tarefas restantes:
 3. Investigar alerta de gateway parado no CLI vs container gateway rodando. — auditoria read-only documentada em `areas/operacoes/rotinas/hermes-runtime-observability.md`; plano de correção segura documentado em `areas/operacoes/rotinas/hermes-gateway-remediation-plan.md`; diagnóstico read-only de Gateway em 2026-05-04 documentado em `areas/operacoes/rotinas/hermes-gateway-readonly-diagnostic-2026-05-04.md`; execução corretiva exige aprovação.
 4. Fazer inventário específico de workflows n8n via API em rodada própria. — concluído em `areas/operacoes/rotinas/n8n-inventory.md`; workflow_count = 0 em `lc.vps`.
 5. Atualizar `empresa/rotinas/_index.md` com coluna de status real se Lucas quiser visual executivo por rotina.
-6. Update seguro do runtime Hermes Hostinger executado com backup/rollback e escopo limitado; resultado documentado em `areas/operacoes/rotinas/hermes-runtime-update-attempt-2026-05-05.md`. A imagem `latest` permaneceu em v0.9.0; upgrade real para v0.12.0 exige investigar tag/fonte oficial Hostinger ou imagem customizada com nova aprovação.
+6. Update seguro do runtime Hermes Hostinger executado com backup/rollback e escopo limitado; resultado documentado em `areas/operacoes/rotinas/hermes-runtime-update-attempt-2026-05-05.md`. A imagem `latest` permaneceu em v0.9.0. Investigação GHCR read-only confirmou que `latest`/`8eb9eb9` são o digest atual e `ba03513` é anterior; não há tag pública Hostinger mais nova nesta data. Upgrade real para v0.12.0 exige fonte oficial Hostinger nova ou imagem customizada com nova aprovação.
 
 ### Rodada B — Integrações por ferramenta
 
