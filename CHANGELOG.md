@@ -2,6 +2,16 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-05 — Spiti Hub: PR #92 bundle/code splitting mergeado em dev
+
+- Criado e mergeado em `dev` o PR #92: `https://github.com/spiti-auction/spiti-hub/pull/92`.
+- Merge commit: `2943614 perf: split route and pdf bundles (#92)`.
+- Implementado code splitting de rotas com `React.lazy`/`Suspense` e `manualChunks` para dependências pesadas de PDF/Recharts.
+- Warning de chunks Vite acima de 500 kB eliminado sem elevar `chunkSizeWarningLimit`; maiores chunks pós-build ficaram abaixo de 500 kB.
+- Verificações locais: `git diff --check` OK, secret scan 0, lint 0 errors/0 warnings, build OK sem warning de chunk grande.
+- Revisão independente pré-commit aprovada; sugestões futuras não bloqueantes: ErrorBoundary para falhas de chunk e monitoramento de requests após split granular.
+- Produção/`main`, Supabase, Vercel configs, VPS, Docker, campanhas e mensagens externas não foram alterados.
+
 ## 2026-05-04 — Spiti Hub: PR #91 mergeado em dev
 
 - Criado e mergeado em `dev` o PR #91: `https://github.com/spiti-auction/spiti-hub/pull/91`.

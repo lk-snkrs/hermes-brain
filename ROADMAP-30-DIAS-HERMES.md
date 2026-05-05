@@ -244,6 +244,16 @@ Lint cleanup pass 2 e preview Vercel:
 - Vercel preview pode ficar bloqueado porque `@hermes-agent` não é membro do time Vercel da `spiti-auction`; resolver isso exigiria ação administrativa/Vercel/billing e não foi feito.
 - `main`/produção não foi alterada.
 
+Bundle/code splitting:
+
+- PR #92 aberto e squash-mergeado em `dev`: `https://github.com/spiti-auction/spiti-hub/pull/92`.
+- Merge commit `2943614`.
+- Implementado code splitting de rotas com `React.lazy`/`Suspense` e `manualChunks` para dependências pesadas de PDF/Recharts.
+- Warning de bundle grande do Vite eliminado sem elevar `chunkSizeWarningLimit`; maiores chunks pós-build ficaram abaixo de 500 kB.
+- Verificações locais: diff check OK, secret scan 0, lint 0 errors/0 warnings, build OK sem warning de chunk grande.
+- Revisão independente aprovada; próximos refinamentos opcionais: ErrorBoundary para falhas de chunk e monitoramento do número de requests.
+- `main`/produção não foi alterada.
+
 ### Rodada F — Hardening SPITI e observabilidade de monitor
 
 Objetivo: fechar o ciclo operacional SPITI com saúde do monitor, falhas conhecidas e relatório interno verificável.

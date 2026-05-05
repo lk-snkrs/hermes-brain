@@ -230,3 +230,39 @@ Não realizado:
 - Não houve alteração em `main`/produção.
 - Não houve alteração em Supabase, Vercel configs, billing/team, VPS, Docker, campanhas ou mensagens externas.
 
+## Code splitting de rotas e bundles — 2026-05-05
+
+Rodada de performance publicada em `dev` para eliminar o warning de bundle grande do Vite sem mascarar o alerta com aumento de limite.
+
+- Branch criada a partir de `dev`: `hermes/spiti-hub-route-code-splitting`.
+- Commit no Spiti Hub: `a85d492 perf: split route and pdf bundles`.
+- PR: `https://github.com/spiti-auction/spiti-hub/pull/92`.
+- PR #92 squash-mergeado em `dev`; merge commit `2943614 perf: split route and pdf bundles (#92)`.
+- Branch remota removida após merge; branch local removida após confirmação.
+- Clone local ficou em `dev...origin/dev` com remote limpo `https://github.com/spiti-auction/spiti-hub.git`.
+
+Escopo:
+
+- `src/App.jsx`: imports estáticos das páginas substituídos por `React.lazy` com `Suspense` e fallback simples de carregamento.
+- `vite.config.js`: `manualChunks` para dependências pesadas de PDF/Recharts (`@react-pdf/*`, `fontkit`, `pdfkit`, `yoga-layout`, `recharts`).
+- Não foi alterado `chunkSizeWarningLimit`; o objetivo foi dividir os chunks reais.
+
+Resultado de build local:
+
+- Antes da rodada, o build alertava chunks acima de 500 kB; após split por rotas/manualChunks, o warning desapareceu.
+- O chunk `documentos` caiu de aproximadamente 1,427 kB para 1,65 kB.
+- Maiores chunks pós-split: `pdfkit` ~450 kB, `index` ~444 kB, `recharts` ~367 kB e `pdf-fontkit` ~358 kB.
+
+Verificações locais:
+
+- `git diff --check`: OK.
+- Secret scan local: 0 secrets reais nos padrões verificados; placeholders documentais em `<...>` foram ignorados como placeholders.
+- `npm run lint --if-present`: OK, 0 errors, 0 warnings.
+- `npm run build`: OK, sem warning de chunk grande.
+- Revisão independente pré-commit: aprovada; sugestões não bloqueantes foram considerar ErrorBoundary para falhas de carregamento de chunks e monitorar quantidade de requests após split granular.
+
+Não realizado:
+
+- Não houve alteração em `main`/produção.
+- Não houve alteração em Supabase, Vercel configs, billing/team, VPS, Docker, campanhas ou mensagens externas.
+
