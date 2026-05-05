@@ -2,6 +2,18 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-05 — Hermes Docker: pull/update seguro executado, imagem sem versão nova
+
+- Lucas autorizou reset da senha root da `lc.vps` via Hostinger e backup/update do Hermes Docker.
+- Nova senha root foi gerada e salva no Doppler `VPS_ROOT_PASSWORD`, sem documentar valor.
+- Backup leve coletado fora do repo: `/opt/data/hermes_bruno_ingest/backups/lc-vps-hermes-20260505T011529Z`.
+- Criada rollback tag: `ghcr.io/hostinger/hvps-hermes-agent:preupdate-20260505T011613Z`.
+- Executado `docker compose pull` e `docker compose up -d --no-deps` apenas para `hermes-agent` e `hermes-telegram`.
+- Digest da imagem Hostinger `latest` permaneceu `sha256:7fc18af3c7a124b00b8853218cf59296861101d65d6af1dc9d7851277829d6b7`; versão segue `Hermes Agent v0.9.0 (2026.4.13)`.
+- Confirmado por GitHub API que upstream `NousResearch/hermes-agent` latest segue `v2026.4.30` / `Hermes Agent v0.12.0 (2026.4.30)`; imagem Hostinger não avançou para essa versão no pull.
+- Documentado registro completo em `areas/operacoes/rotinas/hermes-runtime-update-attempt-2026-05-05.md`.
+- Traefik, n8n, Paperclip, volumes, redes, firewall, Supabase, Vercel, campanhas e mensagens externas não foram alterados.
+
 ## 2026-05-05 — Spiti Hub: PR #92 bundle/code splitting mergeado em dev
 
 - Criado e mergeado em `dev` o PR #92: `https://github.com/spiti-auction/spiti-hub/pull/92`.

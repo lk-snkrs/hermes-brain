@@ -94,12 +94,12 @@ Status: concluído no repo atual.
 
 ### Rodada A — Verificação de crons reais na VPS
 
-Status: inventário base concluído em `lc.vps`; n8n ainda merece rodada própria.
+Status: inventário base concluído em `lc.vps`; n8n inventariado; tentativa segura de update Hermes Docker executada em 2026-05-05, mas imagem Hostinger `latest` não trouxe versão nova.
 
 Resultado:
 
 - Hostinger API confirmou VPS `lc.vps` (`72.60.150.124`) e `evo.lc` (`187.127.10.158`) rodando.
-- Acesso a `lc.vps` resolvido com senha root fornecida pelo Lucas e chave dedicada instalada.
+- Acesso a `lc.vps` restaurado via reset de senha root autorizado pelo Lucas; nova senha salva em Doppler `VPS_ROOT_PASSWORD` sem expor valor.
 - Root crontab vazio; `/etc/cron.d` contém apenas Docker prune, sysstat e jobs de sistema.
 - Systemd timers encontrados são padrão de sistema; nenhum timer de negócio/Hermes/LK/Zipper/SPITI.
 - Docker ativo com Hermes Telegram, Hermes web, n8n, Paperclip e Traefik.
@@ -115,7 +115,7 @@ Tarefas restantes:
 3. Investigar alerta de gateway parado no CLI vs container gateway rodando. — auditoria read-only documentada em `areas/operacoes/rotinas/hermes-runtime-observability.md`; plano de correção segura documentado em `areas/operacoes/rotinas/hermes-gateway-remediation-plan.md`; diagnóstico read-only de Gateway em 2026-05-04 documentado em `areas/operacoes/rotinas/hermes-gateway-readonly-diagnostic-2026-05-04.md`; execução corretiva exige aprovação.
 4. Fazer inventário específico de workflows n8n via API em rodada própria. — concluído em `areas/operacoes/rotinas/n8n-inventory.md`; workflow_count = 0 em `lc.vps`.
 5. Atualizar `empresa/rotinas/_index.md` com coluna de status real se Lucas quiser visual executivo por rotina.
-6. Decidir se update planejado do runtime Hermes Hostinger de v0.9.0 para v0.12.0 entra em janela de manutenção; plano de update/rollback documentado em `areas/operacoes/rotinas/hermes-runtime-update-plan.md`.
+6. Update seguro do runtime Hermes Hostinger executado com backup/rollback e escopo limitado; resultado documentado em `areas/operacoes/rotinas/hermes-runtime-update-attempt-2026-05-05.md`. A imagem `latest` permaneceu em v0.9.0; upgrade real para v0.12.0 exige investigar tag/fonte oficial Hostinger ou imagem customizada com nova aprovação.
 
 ### Rodada B — Integrações por ferramenta
 

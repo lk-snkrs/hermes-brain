@@ -1,6 +1,6 @@
 # Plano — Update seguro Hermes Runtime v0.9.0 para v0.12.0
 
-Status: plano preparado; update não executado.
+Status: tentativa segura executada em 2026-05-05; imagem Hostinger `latest` não trouxe versão nova.
 
 ## Contexto
 
@@ -121,3 +121,21 @@ Este plano deixa o update pronto para aprovação, mas não recomenda execução
 2. Aprovar correção mínima do gateway após diagnóstico.
 3. Aprovar janela de update v0.9.0 → v0.12.0 com backup/rollback.
 4. Adiar update e seguir com playbooks do Brain.
+
+
+## Execução registrada — 2026-05-05
+
+Ver registro completo em `hermes-runtime-update-attempt-2026-05-05.md`.
+
+Resumo:
+
+- Lucas autorizou reset de senha root da `lc.vps` via Hostinger e backup/update do Hermes Docker.
+- Nova senha root foi gerada e salva no Doppler como `VPS_ROOT_PASSWORD`, sem exposição de valor.
+- Backup leve foi salvo fora do repo em `/opt/data/hermes_bruno_ingest/backups/lc-vps-hermes-20260505T011529Z`.
+- Rollback tag criada: `ghcr.io/hostinger/hvps-hermes-agent:preupdate-20260505T011613Z`.
+- Foram executados apenas `docker compose pull` e `docker compose up -d --no-deps` para `hermes-agent` e `hermes-telegram`.
+- Digest antes/depois permaneceu `sha256:7fc18af3c7a124b00b8853218cf59296861101d65d6af1dc9d7851277829d6b7`.
+- Versão pós-update permaneceu `Hermes Agent v0.9.0 (2026.4.13)` nos dois containers.
+- Containers Hermes seguiram `Up`; Traefik, n8n, Paperclip, volumes, redes, firewall e produção externa não foram alterados.
+
+Conclusão: o fluxo seguro de pull/recreate limitado foi executado, mas a imagem `ghcr.io/hostinger/hvps-hermes-agent:latest` não continha a release upstream `v2026.4.30` / `v0.12.0`. Upgrade real para `v0.12.0` exige investigação/aprovação separada de tag oficial Hostinger ou imagem customizada.

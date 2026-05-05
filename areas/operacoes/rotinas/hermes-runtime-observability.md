@@ -132,3 +132,18 @@ Foi executada a sequência segura de diagnóstico descrita em `hermes-gateway-re
 - conflitos de polling aparecem em logs históricos, mas não reapareceram nos últimos 30 minutos da coleta.
 
 Conclusão: H1 provável (limitação/divergência do detector de gateway em Docker foreground) e H3 plausível (conflito Telegram histórico/transitório). H2 não confirmada. Nenhuma ação corretiva foi executada.
+
+
+## Atualização — tentativa de update Docker 2026-05-05 01:19 UTC
+
+Após autorização explícita de Lucas, foi feito reset da senha root da `lc.vps` via Hostinger API, com nova senha salva em Doppler `VPS_ROOT_PASSWORD`, e executado fluxo limitado de backup/pull/up dos serviços Hermes. Registro completo: `hermes-runtime-update-attempt-2026-05-05.md`.
+
+Resultado operacional:
+
+- Containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` permaneceram `Up`.
+- Digest da imagem `ghcr.io/hostinger/hvps-hermes-agent:latest` permaneceu `sha256:7fc18af3c7a124b00b8853218cf59296861101d65d6af1dc9d7851277829d6b7`.
+- Versão reportada nos dois containers permaneceu `Hermes Agent v0.9.0 (2026.4.13)`.
+- Processo `hermes gateway run` segue ativo no container Telegram.
+- `hermes cron status` ainda reporta gateway down, enquanto `hermes cron list --all` lista `Hermes release watch`; manter como divergência de detector/observabilidade.
+- Logs recentes ainda continham warning de `Telegram polling conflict`; não foi aplicada correção sem aprovação específica.
+- Traefik, n8n, Paperclip, volumes, redes, firewall e outros apps não foram alterados.
