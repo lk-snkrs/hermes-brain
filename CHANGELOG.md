@@ -2,6 +2,16 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-05 — Hermes Docker atualizado para v0.12.0 com imagem custom
+
+- Confirmado via GitHub API que a release upstream mais recente conhecida é `v2026.4.30` / `Hermes Agent v0.12.0 (2026.4.30)`.
+- VPS `lc.vps` agora roda os dois containers Hermes com `hermes-agent-custom:v0.12.0-20260505`.
+- Versão verificada nos dois containers via `/opt/hermes/.venv/bin/hermes --version`: `Hermes Agent v0.12.0 (2026.4.30)`, Python `3.13.5`, OpenAI SDK `2.32.0`.
+- Corrigido pós-deploy o travamento de tools causado por `terminal.cwd: telegram`; valor correto preservado em `terminal.cwd: /opt/data`.
+- Registrados backups/rollback: `docker-compose.yml.bak.20260503_191723`, `docker-compose.yml.pre-v012-20260505T102618Z` e `data/config.yaml.bak-20260505-cwd-telegram`.
+- Documentado checklist para próximos updates: preservar Compose/config, validar `terminal.cwd`, permissões de logs/sessions, versão real, gateway Telegram, cron ticker e tool call.
+- Segredos não foram documentados; senha root enviada em chat deve ser tratada como exposta e rotacionada depois.
+
 ## 2026-05-05 — Hermes Docker: pull/update seguro executado, imagem sem versão nova
 
 - Lucas autorizou reset da senha root da `lc.vps` via Hostinger e backup/update do Hermes Docker.

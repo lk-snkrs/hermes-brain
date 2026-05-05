@@ -164,3 +164,79 @@ Se o objetivo for de fato chegar em `v0.12.0`, a próxima fase deve ser investig
 3. avaliar imagem customizada baseada em `NousResearch/hermes-agent`, com plano explícito de build, teste, compose diff e rollback.
 
 Não trocar repositório/tag de imagem nem editar Compose sem aprovação explícita do Lucas.
+
+
+## Atualização posterior — imagem custom Hermes v0.12.0 aplicada em 2026-05-05
+
+Status: Hermes runtime atualizado para a release upstream mais recente conhecida nesta data.
+
+Após a tentativa anterior confirmar que a imagem Hostinger `latest` permanecia em `v0.9.0`, foi aplicado posteriormente um runtime customizado com a versão upstream `Hermes Agent v0.12.0 (2026.4.30)`.
+
+Evidência verificada em 2026-05-05 12:08 UTC:
+
+```text
+NousResearch/hermes-agent latest: v2026.4.30
+name: Hermes Agent v0.12.0 (2026.4.30)
+published_at: 2026-04-30T18:31:21Z
+```
+
+Containers Hermes ativos na `lc.vps`:
+
+```text
+hermes-agent-5ajw-hermes-agent-1      hermes-agent-custom:v0.12.0-20260505
+hermes-agent-5ajw-hermes-telegram-1   hermes-agent-custom:v0.12.0-20260505
+```
+
+Versão reportada nos dois containers via `/opt/hermes/.venv/bin/hermes --version`:
+
+```text
+Hermes Agent v0.12.0 (2026.4.30)
+Project: /opt/hermes
+Python: 3.13.5
+OpenAI SDK: 2.32.0
+```
+
+Compose atual:
+
+```text
+/docker/hermes-agent-5ajw/docker-compose.yml
+image: hermes-agent-custom:v0.12.0-20260505
+```
+
+Backups/rollback observados:
+
+```text
+/docker/hermes-agent-5ajw/docker-compose.yml.bak.20260503_191723
+/docker/hermes-agent-5ajw/docker-compose.yml.pre-v012-20260505T102618Z
+/docker/hermes-agent-5ajw/data/config.yaml.bak-20260505-cwd-telegram
+```
+
+Correção pós-deploy necessária e aplicada:
+
+```yaml
+terminal:
+  backend: local
+  cwd: /opt/data
+```
+
+Causa do travamento observado no Telegram: o `cwd` havia ficado como `telegram`, causando `FileNotFoundError: [Errno 2] No such file or directory: 'telegram'` em qualquer ferramenta de terminal/file. Após corrigir para `/opt/data`, as tools voltaram a funcionar.
+
+Também houve erro temporário de permissão em `/opt/data/logs/gateway.log` e `/opt/data/sessions/sessions.json`; o estado verificado depois mostrou ownership `hermes:hermes` e gateway funcional.
+
+Verificação de saúde observada:
+
+```text
+[Telegram] Connected to Telegram (polling mode)
+✓ telegram connected
+Gateway running with 1 platform(s)
+Cron ticker started
+```
+
+Checklist obrigatório para próximos updates:
+
+1. Preservar backup de `docker-compose.yml` e `data/config.yaml`.
+2. Confirmar antes/depois que `terminal.backend = local` e `terminal.cwd = /opt/data`.
+3. Confirmar ownership/permissões de `/opt/data`, `/opt/data/logs` e `/opt/data/sessions` para o usuário Hermes do container.
+4. Validar versão via `/opt/hermes/.venv/bin/hermes --version`, não apenas pelo nome da imagem.
+5. Validar Telegram gateway, cron ticker e uma chamada real de tool após deploy.
+6. Manter rollback para a imagem/Compose anterior antes de qualquer novo update.
