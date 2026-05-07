@@ -1,4 +1,14 @@
-# Pending Tasks — 2026-04-19 13:24
+# Pending Tasks — 2026-05-07
+
+## Pendente — Mission Control / Bruno
+
+- [ ] Extrair o que existe sobre “Mission Control” nos materiais Bruno/OpenClaw e separar em dois blocos:
+  - formato de criativo/performance citado na imersão;
+  - protocolo operacional estilo inventory + health check citado na análise CWC vs Hermes.
+- [ ] Adaptar para Hermes sem copiar OpenClaw cegamente: lógica Bruno → diferencial Hermes → versão Hermes-native → decisão.
+- [ ] Se aprovado depois, transformar em rotina/skill/documentação no Hermes Brain.
+
+---
 
 ## Sistema 100% Auditado ✅
 
