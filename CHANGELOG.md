@@ -2,6 +2,15 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-08 — Hermes Brain Improvement System
+
+- Adicionada rotina `areas/operacoes/rotinas/material-ingest-to-prd.md` para transformar material externo em extração segura, inventário, documentação, matriz de decisão e PRD.
+- Adicionados templates `areas/operacoes/templates/matriz-decisao-bruno-hermes.md` e `areas/operacoes/templates/prd-hermes-brain-improvement.md`.
+- Adicionadas rotinas `brain-improvement-score.md` e `retomada-planos-prds.md` para avaliação executiva do Brain e retomada de planos pausados.
+- Criado projeto `areas/operacoes/projetos/hermes-brain-improvement-system.md` com backlog P0/P1/P2.
+- Atualizados `areas/operacoes/MAPA.md`, `empresa/rotinas/_index.md` e `ROADMAP-30-DIAS-HERMES.md`.
+- Produção, Docker/VPS, bancos, campanhas, mensagens externas e merge em `main` não foram alterados.
+
 ## 2026-05-05 — Hermes Docker atualizado para v0.12.0 com imagem custom
 
 - Confirmado via GitHub API que a release upstream mais recente conhecida é `v2026.4.30` / `Hermes Agent v0.12.0 (2026.4.30)`.

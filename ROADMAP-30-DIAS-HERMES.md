@@ -292,6 +292,28 @@ Resultado esperado:
 - `scripts/brain_health_check.py`.
 - Rotina documentada em `areas/operacoes/rotinas/brain-health-check.md`.
 
+### Rodada H — Hermes Brain Improvement System
+
+Status: em implantação documental segura, sem tocar produção, VPS, Docker, bancos, campanhas ou mensagens externas.
+
+Objetivo: transformar o upload Bruno/OpenClaw atualizado e futuros materiais externos em um fluxo repetível de ingestão, documentação, decisão Hermes-native e PRD.
+
+Entregas desta rodada:
+
+1. Rotina `areas/operacoes/rotinas/material-ingest-to-prd.md` para extração segura, inventário, leitura por pasta, comparação com o Brain e geração de PRD.
+2. Template `areas/operacoes/templates/matriz-decisao-bruno-hermes.md` para classificar conceitos como aplicar, adaptar, deferir ou rejeitar.
+3. Template `areas/operacoes/templates/prd-hermes-brain-improvement.md` para PRDs de melhoria contínua.
+4. Rotina `areas/operacoes/rotinas/brain-improvement-score.md` para avaliação executiva de maturidade do Brain.
+5. Rotina `areas/operacoes/rotinas/retomada-planos-prds.md` para recuperar planos/PRDs/branches pausados antes de continuar.
+6. Projeto `areas/operacoes/projetos/hermes-brain-improvement-system.md` como mapa da iniciativa.
+
+Regras preservadas:
+
+- Hermes não vira OpenClaw; só adapta o que melhora o Brain.
+- Material bruto de terceiros fica fora do repo salvo decisão explícita.
+- Rotina documentada não prova cron ativo.
+- PR draft pode ser criado; merge em `main`, produção, credenciais, Docker/VPS, banco e ações externas exigem aprovação Lucas.
+
 ## Critérios de qualidade para próximas fases
 
 Toda fase deve terminar com:
@@ -306,11 +328,11 @@ Toda fase deve terminar com:
 
 ## Sequência recomendada agora
 
-1. Fechar decisão operacional sobre Hermes runtime/gateway: matriz de opções criada em `areas/operacoes/rotinas/hermes-runtime-upgrade-options-2026-05-05.md`; próximo marco seguro é validar execução real do `Hermes release watch` em 2026-05-11 ou aprovar plano de imagem customizada.
-2. Rodada C — LK playbooks.
-3. Rodada D — Templates Zipper por subárea. — concluída documentalmente; próximos: LK templates ou SPITI hardening.
-4. Rodada E — SPITI hardening.
-5. Rodadas contínuas — Health checks, release watch Hermes, secret validation e inventário VPS/n8n conforme mudanças.
+1. Fechar/abrir PR da Rodada H — Hermes Brain Improvement System, mantendo como documentação segura e sem merge automático.
+2. Testar `material-ingest-to-prd.md` em um segundo pacote pequeno ou em um PRD antigo.
+3. Avaliar criação de script executivo para `brain-improvement-score.md` ou extensão controlada de `scripts/brain_health_check.py`.
+4. Criar template de report executivo de health check, se Lucas quiser saída visual/Telegram recorrente.
+5. Rodadas contínuas — release watch Hermes, secret validation, inventário VPS/n8n e playbooks/templates por negócio conforme demanda real.
 
 ## Atualização contínua obrigatória
 
