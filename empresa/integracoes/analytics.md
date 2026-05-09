@@ -8,12 +8,20 @@ Analytics cobre GA4, Google Search Console e métricas de tráfego/performance u
 
 - `GA4_LK_PROPERTY_ID`
 - `GA4_ZIPPER_PROPERTY_ID`
+- `GA4_LK_N8N_ZIPPER_SERVICE_ACCOUNT` — service account Google/GA4 autorizada por Lucas em 2026-05-09 e salva no Doppler `lc-keys/prd`. Não versionar JSON, private key, client id ou private key id.
 - credenciais Google/Workspace quando documentadas no Doppler.
+
+## Propriedades LK conhecidas
+
+- `properties/348553567` — `Lk Sneakers`; propriedade principal usada no primeiro Daily Brief real v0.2 com GA4.
+- `properties/522061983` — `lk-sneakers-app`; propriedade acessível, mas não usada como fonte principal no briefing v0.2.
 
 ## Read-only
 
-- Consultar sessões, eventos, conversões, origem/mídia, landing pages, termos e tendências.
+- Consultar sessões, usuários, eventos, compras, receita GA4, origem/mídia, channel group, campanha, landing pages, termos e tendências.
 - Gerar relatórios comparativos e insights sem alterar propriedades.
+- Para LK, usar GA4 como fonte de tráfego/canais/campanhas/CRO e Shopify como fonte oficial de pedidos, clientes, source comercial e receita operacional.
+- Reconciliar compras/receita GA4 contra Shopify web; divergência de receita GA4 não deve substituir Shopify sem análise.
 
 ## Write
 
