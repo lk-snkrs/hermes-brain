@@ -2,6 +2,14 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-09 — Script Retomada de Planos/PRDs
+
+- Criado `scripts/retomada_planos_prds.py` para gerar relatório local/read-only de retomada de planos, PRDs e pendências.
+- Gerados `reports/retomada-planos-prds-2026-05-09.md` e `reports/retomada-planos-prds-2026-05-09.json`.
+- Atualizada a rotina `areas/operacoes/rotinas/retomada-planos-prds.md` com comando canônico, limites e critérios de uso.
+- Avaliação: sem cron semanal por enquanto; usar sob demanda quando Lucas disser “seguir”, “retomar” ou “onde paramos”.
+- Produção, VPS/Docker, bancos, secrets, campanhas, mensagens externas, UI, cron e runtime não foram alterados.
+
 ## 2026-05-09 — Script Brain Improvement Score
 
 - Criado `scripts/brain_improvement_score.py` como ferramenta local/read-only para gerar relatório executivo do Brain em Markdown e JSON.

@@ -411,6 +411,27 @@ Regras preservadas:
 - O score é leitura de saúde estrutural do repo, não prova produção saudável.
 - Qualquer cron recorrente, entrega automática por Telegram, UI ou Mission Control visual continua exigindo aprovação explícita.
 
+
+### Rodada M — Script Retomada de Planos e PRDs
+
+Status: concluída como rodada documental/tooling local segura, sem tocar produção, VPS, Docker, bancos, secrets, campanhas, mensagens externas, cron, UI ou runtime.
+
+Objetivo: transformar a rotina `retomada-planos-prds.md` em relatório manual repetível para quando Lucas disser “seguir”, “retomar” ou “onde paramos”.
+
+Entregas:
+
+1. Script `scripts/retomada_planos_prds.py` criado como ferramenta local/read-only.
+2. Relatório `reports/retomada-planos-prds-2026-05-09.md` gerado.
+3. JSON `reports/retomada-planos-prds-2026-05-09.json` gerado.
+4. Rotina `areas/operacoes/rotinas/retomada-planos-prds.md` atualizada com comando canônico, limites e critérios.
+5. Avaliação do cron semanal concluída: não criar cron recorrente agora; usar sob demanda, porque há apenas 1 item ativo e os itens sensíveis estão corretamente bloqueados.
+
+Regras preservadas:
+
+- O script não consulta runtime, VPS, Docker, APIs, bancos, cron real ou dados vivos.
+- O relatório ajuda retomada, mas não substitui aprovação para infra, produção, secrets, banco, external send, cron recorrente ou UI.
+- Nenhum cron, UI, Mission Control visual ou mensagem automática foi criado.
+
 ## Critérios de qualidade para próximas fases
 
 Toda fase deve terminar com:
@@ -427,8 +448,9 @@ Toda fase deve terminar com:
 
 1. Aplicar `security-checkup.md` no próximo caso de integração/canal/agente/cron antes de executar.
 2. Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
-3. Considerar template/skill canônica para relatórios de score se o script for usado em mais rodadas.
-4. Mission Control visual, cron recorrente ou entrega automática por Telegram só depois de aprovação de cadência/escopo.
+3. Usar `scripts/retomada_planos_prds.py` sob demanda antes de retomar planos longos; cron recorrente só se a fila voltar a crescer.
+4. Considerar template/skill canônica para relatórios de score se o script for usado em mais rodadas.
+5. Mission Control visual, cron recorrente ou entrega automática por Telegram só depois de aprovação de cadência/escopo.
 
 ## Atualização contínua obrigatória
 

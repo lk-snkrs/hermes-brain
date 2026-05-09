@@ -1,0 +1,101 @@
+{
+  "date": "2026-05-09",
+  "source_files": {
+    "pendencias": "empresa/gestao/pendencias.md",
+    "pending": "memories/pending.md",
+    "roadmap": "ROADMAP-30-DIAS-HERMES.md",
+    "changelog": "CHANGELOG.md"
+  },
+  "counts": {
+    "active": 1,
+    "blocked": 5,
+    "waiting": 3
+  },
+  "items": [
+    {
+      "item": "Completar subdocs de integrações não recorrentes quando virarem fluxo real",
+      "estado": "Ativo",
+      "ultimo_artefato": "`ROADMAP-30-DIAS-HERMES.md`, Rodada B.",
+      "bloqueio": "Sem bloqueio técnico; evitar burocracia antes de fluxo real.",
+      "proxima_acao_segura": "documentar Judge.me, Frenet, Tiny ERP, Email/Google Workspace, LeiloesBR, Railway, Vercel, Notion/NocoDB e Metricool somente quando houver necessidade operacional concreta",
+      "precisa_aprovacao_lucas": "não"
+    },
+    {
+      "item": "Rotação de senha root da `lc.vps`, se desejado",
+      "estado": "Bloqueado",
+      "ultimo_artefato": "`ROADMAP-30-DIAS-HERMES.md`, Rodada A.",
+      "bloqueio": "ação sensível em infra",
+      "proxima_acao_segura": "Preparar escopo, risco e rollback; executar só após aprovação explícita.",
+      "precisa_aprovacao_lucas": "sim"
+    },
+    {
+      "item": "Decidir se a chave SSH dedicada da VPS permanece ou será removida",
+      "estado": "Bloqueado",
+      "ultimo_artefato": "`ROADMAP-30-DIAS-HERMES.md`, Rodada A.",
+      "bloqueio": "decisão de acesso/infra",
+      "proxima_acao_segura": "Preparar escopo, risco e rollback; executar só após aprovação explícita.",
+      "precisa_aprovacao_lucas": "sim"
+    },
+    {
+      "item": "Correção ativa do alerta/divergência Gateway Hermes",
+      "estado": "Bloqueado",
+      "ultimo_artefato": "`areas/operacoes/rotinas/hermes-gateway-readonly-diagnostic-2026-05-04.md` e `areas/operacoes/rotinas/hermes-gateway-remediation-plan.md`.",
+      "bloqueio": "qualquer restart/update/mudança Docker/VPS exige aprovação explícita",
+      "proxima_acao_segura": "Preparar escopo, risco e rollback; executar só após aprovação explícita.",
+      "precisa_aprovacao_lucas": "sim"
+    },
+    {
+      "item": "Mission Control visual ou cron recorrente",
+      "estado": "Bloqueado",
+      "ultimo_artefato": "`areas/operacoes/projetos/mission-control-prd.md`.",
+      "bloqueio": "virar UI, cron, automação ou runtime exige aprovação de escopo/cadência",
+      "proxima_acao_segura": "Preparar escopo, risco e rollback; executar só após aprovação explícita.",
+      "precisa_aprovacao_lucas": "sim"
+    },
+    {
+      "item": "Qualquer contato externo/campanha/mensagem em massa",
+      "estado": "Bloqueado",
+      "ultimo_artefato": "`seguranca/acoes-sensiveis.md` e playbooks das áreas.",
+      "bloqueio": "segue exigindo preview e aprovação do Lucas/Osmar/equipe responsável conforme o caso",
+      "proxima_acao_segura": "Preparar escopo, risco e rollback; executar só após aprovação explícita.",
+      "precisa_aprovacao_lucas": "sim"
+    },
+    {
+      "item": "Hermes release watch",
+      "estado": "Aguardando data/evento",
+      "ultimo_artefato": "`cronjob list` em 2026-05-09.",
+      "bloqueio": "Sem ação imediata; depende de data/evento.",
+      "proxima_acao_segura": "Aguardar evento/data e revisar evidência antes de agir.",
+      "precisa_aprovacao_lucas": "sim"
+    },
+    {
+      "item": "Revisão mensal/arquivamento de pendências antigas",
+      "estado": "Aguardando data/evento",
+      "ultimo_artefato": "`memories/consolidation_weekly/2026-04-28.md`.",
+      "bloqueio": "Sem ação imediata; depende de data/evento.",
+      "proxima_acao_segura": "Aguardar evento/data e revisar evidência antes de agir.",
+      "precisa_aprovacao_lucas": "não"
+    },
+    {
+      "item": "SPITI email poller / monitor de leilão",
+      "estado": "Aguardando data/evento",
+      "ultimo_artefato": "`memories/decisions.md` e `ROADMAP-30-DIAS-HERMES.md`.",
+      "bloqueio": "Sem ação imediata; depende de data/evento.",
+      "proxima_acao_segura": "Aguardar evento/data e revisar evidência antes de agir.",
+      "precisa_aprovacao_lucas": "sim"
+    }
+  ],
+  "git_status": "M CHANGELOG.md\n M ROADMAP-30-DIAS-HERMES.md\n M areas/operacoes/projetos/hermes-brain-improvement-system.md\n M areas/operacoes/rotinas/retomada-planos-prds.md\n M empresa/gestao/pendencias.md\n M memories/pending.md\n?? reports/brain-health-check-2026-05-09-retomada-script.json\n?? reports/retomada-planos-prds-2026-05-09.json\n?? reports/retomada-planos-prds-2026-05-09.md\n?? scripts/retomada_planos_prds.py",
+  "latest_commits": [
+    "d523732 docs: add Brain improvement score script",
+    "37eb33a docs: validate material ingest workflow (#7)",
+    "12c1078 docs: expand Brain health checks (#6)",
+    "5395637 docs: apply memory hygiene to pending tasks (#5)",
+    "3ce75f3 docs: add Brain P1 guardrails (#4)"
+  ],
+  "limits": [
+    "read-only local repo files only",
+    "does not check production/runtime/VPS/APIs/databases/crons",
+    "does not create recurring jobs or send Telegram messages"
+  ]
+}

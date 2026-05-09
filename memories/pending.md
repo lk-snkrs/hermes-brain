@@ -23,6 +23,7 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Concluídos / retirados da fila ativa
 
+- [x] Script local/read-only de retomada de planos/PRDs — criado em 2026-05-09 com relatório `reports/retomada-planos-prds-2026-05-09.md`; cron recorrente não criado.
 - [x] Script executivo local/read-only para `brain-improvement-score.md` — criado em 2026-05-09 com relatório `reports/brain-improvement-score-2026-05-09-script.md`; sem cron/UI/runtime.
 - [x] Teste `material-ingest-to-prd.md` em PRD antigo — modo leve validado em 2026-05-09 com relatório `reports/material-ingest-to-prd-test-2026-05-09.md`.
 - [x] Rodada G — Health checks do Brain — script expandido, rotina atualizada e relatório JSON gerado em 2026-05-09.

@@ -87,7 +87,7 @@ material externo
 
 - Testar a rotina `material-ingest-to-prd.md` com um segundo pacote pequeno ou um PRD antigo. — concluído em 2026-05-09 com `reports/material-ingest-to-prd-test-2026-05-09.md`.
 - Script executivo local/read-only de `brain_improvement_score.py` — concluído em 2026-05-09 com `scripts/brain_improvement_score.py`, `reports/brain-improvement-score-2026-05-09-script.md` e JSON correspondente.
-- Avaliar cron semanal de retomada de planos pendentes.
+- Avaliar cron semanal de retomada de planos pendentes. — avaliado em 2026-05-09 via relatório local; não há justificativa para cron recorrente agora porque a fila ativa é pequena e os itens sensíveis estão bloqueados corretamente.
 - Transformar as partes mais repetidas em skill canônica, se o fluxo se repetir.
 
 ## Critérios de pronto da rodada
@@ -163,3 +163,16 @@ Entregas:
 - Pendências atualizadas para retirar a avaliação do script da fila ativa.
 
 Resultado: score geral scriptado 99/100. A principal penalização veio de rastreabilidade/pendências, não de falha estrutural. O script não consulta runtime, VPS, Docker, APIs, bancos ou crons reais; ele é relatório local de repo.
+
+## Entrega P2 aplicada — script de retomada de planos/PRDs
+
+Em 2026-05-09 a rotina `retomada-planos-prds.md` ganhou o script local/read-only `scripts/retomada_planos_prds.py`.
+
+Entregas:
+
+- Script `scripts/retomada_planos_prds.py` para resumir pendências ativas, bloqueadas e aguardando evento.
+- Relatório versionado: `reports/retomada-planos-prds-2026-05-09.md`.
+- JSON versionado: `reports/retomada-planos-prds-2026-05-09.json`.
+- Decisão operacional: não criar cron semanal de retomada agora; usar sob demanda quando Lucas disser “seguir”, “retomar” ou “onde paramos”.
+
+Resultado: 1 item ativo, 5 bloqueados por decisão/aprovação e 3 aguardando data/evento. Nenhuma produção, VPS, Docker, banco, API, cron, UI ou mensagem externa foi tocada.
