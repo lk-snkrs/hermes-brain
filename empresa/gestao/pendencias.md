@@ -11,7 +11,7 @@ Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a 
 
 ## Ativos
 
-- [ ] **Implementar LK Operating System após PRD aprovado** — LK/Operações — próxima ação: validar com Lucas os exemplos preenchidos fictícios dos templates read-only e, se aprovados, gerar a primeira execução com dados reais read-only e mascarados. Evidência/base: templates e exemplos v0.1 em `areas/lk/rotinas/templates/` e PRD aprovado por Lucas em 2026-05-09.
+- [ ] **Evoluir LK Daily Brief v0.2 para atribuição paga/influencers** — LK/Analytics/Tráfego Pago — próxima ação: cruzar GA4 source/medium/campaign, UTMs/cuponagem quando existir e produtos/marcas vendidos no Shopify; manter Shopify como fonte oficial de pedidos/receita e GA4 como tráfego/campanhas/CRO. Evidência/base: primeiro Daily Brief real agregado com GA4 em `reports/lk-daily-sales-brief-real-2026-05-08-ga4-v02.md`, aprovado por Lucas como “ficou bacana”.
 - [ ] **Mapear funcionários LK, funções e roteamento de relatórios** — LK/Governança — próxima ação: criar matriz de destinatários por relatório/módulo antes de crons ou envios. Dado inicial: Renan cuida de design e SEO; relatórios de design/SEO devem ir para ele. Evidência/base: feedback de Lucas em 2026-05-09.
 - [ ] **Aplicar Hermes Learning Loop global** — Operações/Governança — próxima ação: usar `empresa/gestao/hermes-learning-loop.md` para registrar aprovações/correções duráveis em Brain, skills, PRDs ou memória, evitando repetir erros corrigidos. Evidência/base: aprovação explícita de Lucas em 2026-05-09.
 

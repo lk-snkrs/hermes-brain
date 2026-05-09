@@ -27,6 +27,12 @@ Objetivo: padronizar os primeiros relatórios internos antes de criar crons, int
 
 Os exemplos existem para calibrar formato e raciocínio antes de dados reais. Não representam vendas reais da LK e não autorizam nenhuma ação externa.
 
+## Primeiro relatório real read-only
+
+- `../../../../reports/lk-daily-sales-brief-real-2026-05-08-ga4-v02.md` — primeira execução real agregada/read-only com Shopify, Tiny `LK | CONTROLE ESTOQUE` e GA4 Data API.
+- Lucas aprovou o formato geral em 2026-05-09 com o feedback “ficou bacana”.
+- O relatório não exporta dados pessoais nem valores de secrets e não executa ações externas.
+
 ## Próximo passo
 
-Validar o formato com Lucas. Depois, gerar a primeira execução com dados reais read-only e mascarados, antes de qualquer cron ou integração de escrita.
+Evoluir o Daily Brief v0.2 para atribuição de campanhas/influencers: cruzar GA4 source/medium/campaign, UTMs/cuponagem quando existir e produtos/marcas vendidos no Shopify. Antes de cron ou envio recorrente, ainda falta mapear destinatários/equipe e aprovar cadência.

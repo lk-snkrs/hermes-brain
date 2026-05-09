@@ -203,6 +203,17 @@ Regra aprendida: email é fonte principal para lances; site pode ser parcial; si
 Onde aplicar: SPITI relatórios, alertas e divergências.
 ```
 
+### LK — Daily Brief real com GA4
+
+```text
+Tipo: padrão aprovado / avanço operacional
+Artefato: Daily Sales Brief LK real read-only v0.2 com GA4.
+Feedback Lucas: “perfeito, seguir, ficou bacana”.
+Regra aprendida: o briefing diário deve combinar Shopify como fonte oficial de pedidos/receita/source, Tiny somente `LK | CONTROLE ESTOQUE` para estoque, e GA4 para sessões/canais/campanhas/CRO, sempre sem PII/secrets e sem ação externa automática.
+Onde aplicar: Daily Sales Brief 07h, Pulso Comercial, CRO, Paid Traffic & Influencer Intelligence, Brand Mix Intelligence e Stock Intelligence Center.
+Próximo refinamento: cruzar campanhas/influencers/UTMs/cupons com produtos e marcas vendidos no Shopify.
+```
+
 ## Approval UX recomendada
 
 Todo preview operacional deveria permitir, mesmo que manualmente no início:

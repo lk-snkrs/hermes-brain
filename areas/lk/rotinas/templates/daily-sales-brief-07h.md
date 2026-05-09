@@ -6,10 +6,13 @@ Não faz: envio WhatsApp, Klaviyo, Shopify, Notion, campanha, alteração de pre
 
 ## Regras de execução
 
-- Fonte oficial de vendas/clientes/source: Shopify.
-- Fonte oficial de estoque: Tiny / `LK controle de stock`.
-- Conversão online: Shopify Analytics como baseline principal; GA4 como apoio.
+- Fonte oficial de vendas/clientes/source/receita operacional: Shopify.
+- Fonte oficial de estoque: Tiny, somente depósito `LK | CONTROLE ESTOQUE`; outros depósitos ficam em standby.
+- Conversão online: Shopify Analytics como baseline estratégico; GA4 Data API como fonte read-only de sessões, canais, campanhas, compras e CRO.
+- GA4 deve ser reconciliado contra Shopify web: quantidade de compras e receita podem divergir; Shopify continua sendo a fonte oficial de pedidos/receita.
+- Credencial GA4 LK fica no Doppler `lc-keys/prd` como `GA4_LK_N8N_ZIPPER_SERVICE_ACCOUNT`; nunca versionar JSON, private key ou valores sensíveis.
 - Dados pessoais devem ser mascarados no Telegram por padrão.
+- Toda linha operacional de produto deve mostrar nome + SKU + tamanho.
 - Toda recomendação precisa separar fato, leitura e ação sugerida.
 - Se não houver sinal relevante, dizer isso; não inventar ação.
 - Ação externa exige preview e aprovação explícita.

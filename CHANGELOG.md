@@ -2,6 +2,14 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-09 — Daily Brief LK real v0.2 com GA4
+
+- Salvo no Brain o primeiro Daily Brief real agregado/read-only com GA4 em `reports/lk-daily-sales-brief-real-2026-05-08-ga4-v02.md`.
+- Atualizada integração Analytics/GA4/GSC com a service account LK em Doppler por nome de secret, sem valores sensíveis, e com propriedades LK acessíveis.
+- Atualizado template do Daily Sales Brief para combinar Shopify como fonte oficial de pedidos/receita/source, Tiny somente `LK | CONTROLE ESTOQUE`, e GA4 para tráfego/canais/campanhas/CRO.
+- Registrado no Learning Loop que Lucas aprovou o formato como “ficou bacana”; próxima evolução é atribuição paga/influencers por campanha/UTM/cupom cruzada com produto/marca vendido.
+- Produção, VPS/Docker, bancos, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-09 — Exemplos read-only LK Operating System
 
 - Criados exemplos fictícios/read-only para `Daily Sales Brief`, `Stock Intelligence Center` e `Weekly CEO Review` em `areas/lk/rotinas/templates/examples/`.
