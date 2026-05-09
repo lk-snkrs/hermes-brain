@@ -108,3 +108,16 @@ material externo
 - Template: `areas/operacoes/templates/delivery-summary.md`.
 
 Esses documentos fecham a lacuna entre análise/PRD e operação contínua: antes de criar integrações, canais, agentes, crons ou automações novas, o Brain agora tem uma checagem explícita de segurança, memória e escopo mínimo.
+
+## Entrega P1 aplicada — higiene real de pendências
+
+Em 2026-05-09 a rotina `memory-hygiene-pendencias.md` foi aplicada pela primeira vez sobre o Brain real.
+
+Entregas:
+
+- `empresa/gestao/pendencias.md` reescrito como fila executiva atual.
+- `memories/pending.md` compactado para boot mental.
+- `reports/memory-hygiene-2026-05-09.md` criado como evidência da revisão.
+- Decisão de autonomia documental de baixo risco registrada em decisões permanentes.
+
+Resultado: pendências antigas de 2026-04-19 foram arquivadas/reclassificadas; Meta Ads deixou de aparecer como urgência atual porque a consolidação de 2026-04-28 registra correção em 2026-04-25.

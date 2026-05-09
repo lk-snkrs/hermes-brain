@@ -130,3 +130,10 @@
 ## Fonte
 Sincronizado do cerebro-cimino (VPS: /root/cerebro-cimino) para hermes-brain (/root/hermes-brain)
 
+## Autonomia documental de baixo risco (2026-05-09)
+
+| Decisão | Regra | Data |
+|---------|-------|------|
+| Autonomia para PRs documentais/Brain de baixo risco | Lucas autoriza merges autônomos quando checks passarem e não houver produção, infra, secrets, banco, ações externas ou risco destrutivo | 2026-05-09 |
+| Limites preservados | Produção, Docker/VPS, secrets, banco, campanhas, WhatsApp/email/posts/contatos externos e ações destrutivas continuam exigindo aprovação explícita | 2026-05-09 |
+

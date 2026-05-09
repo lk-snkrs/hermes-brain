@@ -1,141 +1,56 @@
-# Pending Tasks — 2026-05-07
+# Pendências executivas — Hermes Brain
 
-## Pendente — Mission Control / Bruno
+Última revisão: 2026-05-09
+Rotina aplicada: `areas/operacoes/rotinas/memory-hygiene-pendencias.md`
 
-- [x] Extrair o que existe sobre “Mission Control” nos materiais Bruno/OpenClaw e separar em dois blocos:
-  - formato de criativo/performance citado na imersão;
-  - protocolo operacional estilo inventory + health check citado na análise CWC vs Hermes.
-- [x] Adaptar para Hermes sem copiar OpenClaw cegamente: lógica Bruno → diferencial Hermes → versão Hermes-native → decisão.
-- [x] Transformar em documentação no Hermes Brain: `areas/operacoes/projetos/mission-control-prd.md`. UI/cron ficam pendentes de aprovação futura.
+## Estado executivo
 
----
+Esta página substitui a lista antiga de 2026-04-19, que misturava bugs corrigidos, crons históricos, pendências vencidas e registros de auditoria. O histórico útil foi preservado nas seções de concluídos/arquivados e nas fontes citadas.
 
-## Sistema 100% Auditado ✅
+Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a operação. Detalhes longos pertencem a `areas/`, `empresa/integracoes/`, `reports/`, `CHANGELOG.md` ou `memories/lessons.md`.
 
-### Bugs Corrigidos Hoje (19/04)
-- [x] lk_morning_briefing.py — TOKEN="***" (placeholder) corrigido → usa env var com fallback
-- [x] lk_morning_briefing.py — imports adicionados (os, sys)
-- [x] lk_morning_briefing.py — RESUMIDO (estava pausado sem motivo)
-- [x] Telegram bot — token válido (false positive em 15/04, nunca quebrou de verdade)
-- [x] heartbeat-state.json — daily_report marcado como FAILED (não mais OK)
-- [x] spiti_email_poller — DOCUMENTADO como LOW PRIORITY (sem leilão até ago/2026)
-- [x] Meta Ads token — TESTADO e confirmado INVÁLIDO (OAuth session expired)
-- [x] lk_full_sync.py — adiciona transactions_full na sync
+## Ativos
 
-### Skills Criados
-- [x] `lk-data-debug` — padrões de debug
-- [x] `session-end-protocol` — checklist de fim de sessão
-- [x] `hermes-auto-remediation` — auto-remediação universal (17 tipos de erro)
+- [ ] **Rodada G — Health checks do Brain** — Operações/Tecnologia — próxima ação: criar checks versionados para secret scan, links internos, arquivos obrigatórios por agente, rotinas sem índice e skills canônicas vs navegação por área. Evidência/base: `ROADMAP-30-DIAS-HERMES.md`, seção Rodada G.
+- [ ] **Testar `material-ingest-to-prd.md` em segundo pacote pequeno ou PRD antigo** — Operações — próxima ação: escolher fonte pequena, rodar fluxo completo e registrar lacunas antes de automatizar. Evidência/base: `ROADMAP-30-DIAS-HERMES.md`, sequência recomendada.
+- [ ] **Avaliar script executivo para `brain-improvement-score.md`** — Operações — próxima ação: só criar script depois de validar mais um ciclo manual de score. Evidência/base: `reports/brain-improvement-score-2026-05-09.md` e `areas/operacoes/rotinas/brain-improvement-score.md`.
+- [ ] **Completar subdocs de integrações não recorrentes quando virarem fluxo real** — Operações/Integrações — próxima ação: documentar Judge.me, Frenet, Tiny ERP, Email/Google Workspace, LeiloesBR, Railway, Vercel, Notion/NocoDB e Metricool somente quando houver necessidade operacional concreta. Evidência/base: `ROADMAP-30-DIAS-HERMES.md`, Rodada B.
 
-### Decisões Documentadas
-- [x] LK Morning Briefing volta a rodar 8h BRT (crons duplicados segunda 9h)
-- [x] spiti_email_poller = LOW PRIORITY até agosto (sem auction)
-- [x] Meta Ads = prioridade máxima — 38 dias sem advertising
+## Bloqueados — exigem decisão/aprovação Lucas
 
----
+- [ ] **Rotação de senha root da `lc.vps`, se desejado** — Tecnologia/Segurança — bloqueio: ação sensível em infra; exige aprovação explícita e plano de rollback. Evidência/base: `ROADMAP-30-DIAS-HERMES.md`, Rodada A.
+- [ ] **Decidir se a chave SSH dedicada da VPS permanece ou será removida** — Tecnologia/Segurança — bloqueio: decisão de acesso/infra. Evidência/base: `ROADMAP-30-DIAS-HERMES.md`, Rodada A.
+- [ ] **Correção ativa do alerta/divergência Gateway Hermes** — Tecnologia — bloqueio: qualquer restart/update/mudança Docker/VPS exige aprovação explícita; diagnóstico read-only já documentado. Evidência/base: `areas/operacoes/rotinas/hermes-gateway-readonly-diagnostic-2026-05-04.md` e `areas/operacoes/rotinas/hermes-gateway-remediation-plan.md`.
+- [ ] **Mission Control visual ou cron recorrente** — Operações — bloqueio: virar UI, cron, automação ou runtime exige aprovação de escopo/cadência. Evidência/base: `areas/operacoes/projetos/mission-control-prd.md`.
+- [ ] **Qualquer contato externo/campanha/mensagem em massa** — LK/Zipper/SPITI — bloqueio: segue exigindo preview e aprovação do Lucas/Osmar/equipe responsável conforme o caso. Evidência/base: `seguranca/acoes-sensiveis.md` e playbooks das áreas.
 
-## URGENTE — Ação do Lucas necessária
+## Aguardando data/evento
 
-### Meta Ads Token ❌
-- **Desde**: ~12/03/2026 (38+ dias quebrado)
-- **Erro exato**: OAuth 190 - "The access token could not be decrypted"
-- **Token atual**: `doppler secrets get META_ACCESS_TOKEN -p lc-keys -c prd --plain`
-- **Impacto**: 38 dias sem dados de advertising no LK Intel
+- [ ] **Hermes release watch** — Operações — próximo evento: cron semanal `Hermes release watch` agendado para 2026-05-11 09:00 UTC; post-check one-shot às 09:15 UTC. Evidência: `cronjob list` em 2026-05-09.
+- [ ] **Revisão mensal/arquivamento de pendências antigas** — Governança — próximo check recomendado: 2026-05-26, conforme consolidação de 2026-04-28. Evidência: `memories/consolidation_weekly/2026-04-28.md`.
+- [ ] **SPITI email poller / monitor de leilão** — SPITI — aguardando novo leilão ou necessidade operacional; sem auction previsto até agosto/2026 nos registros antigos. Evidência: `memories/decisions.md` e `ROADMAP-30-DIAS-HERMES.md`.
 
-**📍 Infraestrutura Preparada (scripts criados):**
-- `/root/.hermes/scripts/meta_token_test.sh` — testa token atual
-- `/root/.hermes/scripts/meta_auth_helper.sh` — guia completo para Lucas
+## Concluídos nesta revisão
 
-**🎯 Para Lucas — Só 3 passos:**
-```bash
-# 1. Gere novo token em: https://business.facebook.com/settings/system-users
-#    (System User com permissões: ads_read, ads_management)
+- **Mission Control / Bruno** — concluído: extração, adaptação Hermes-native e PRD documental foram feitos; UI/cron continuam fora de escopo sem aprovação. Evidência: `areas/operacoes/projetos/mission-control-prd.md`, `CHANGELOG.md` 2026-05-09.
+- **Hermes Brain Improvement System P0** — concluído e mergeado no `main`. Evidência: PR #2, merge commit `bb7d16d`, arquivos em `areas/operacoes/rotinas/` e templates.
+- **Guardrails P1 de memória, segurança e entrega** — concluído e mergeado no `main`. Evidência: PR #4, merge commit `3ce75f3`, `areas/operacoes/rotinas/memory-hygiene-pendencias.md` e `security-checkup.md`.
+- **Meta Ads token** — pendência antiga resolvida em 2026-04-25 segundo consolidação semanal; não manter como urgente atual sem nova evidência de falha. Evidência: `memories/consolidation_weekly/2026-04-28.md`.
+- **Data gap Supabase LK e 52 pedidos Shopify em falta** — corrigidos em 2026-04-25 segundo consolidação semanal. Evidência: `memories/consolidation_weekly/2026-04-28.md`.
 
-# 2. Atualize o token:
-doppler secrets set META_ACCESS_TOKEN="***" -p lc-keys -c prd
+## Arquivados / históricos preservados
 
-# 3. Teste:
-/root/.hermes/scripts/meta_token_test.sh
-```
+- **Lista “Sistema 100% Auditado” de 2026-04-19** — arquivada como histórico; não é estado atual. Manter como contexto em `memories/lessons.md` e consolidações, não como fila ativa.
+- **Tabela antiga de 11 crons ativos e 2 falhas** — arquivada por estar desatualizada e misturar crons externos/antigos. Estado atual de crons Hermes verificado em 2026-05-09: `Hermes release watch` e `Hermes release watch post-check` agendados.
+- **`memories/pending_local.md` 2026-04-18** — arquivado como histórico local; duplicava pendências já resolvidas ou reclassificadas.
 
-**Alternativa direta (sem Doppler):**
-```bash
-export META_ACCESS_TOKEN="***"
-/root/.hermes/scripts/meta_token_test.sh "$META_ACCESS_TOKEN"
-```
+## Promovidos para decisão/lição
 
-**Links úteis:**
-- Debug Token: https://developers.facebook.com/tools/debug/accesstoken/
-- Business Settings: https://business.facebook.com/settings
-- Doppler Secrets: https://dashboard.doppler.com/workplace/lc-keys/secrets
+- **Autonomia documental de baixo risco** — decisão: Lucas autoriza merges autônomos em PRs documentais/Brain de baixo risco quando checks passarem; produção, infra, secrets, banco, ações externas ou risco destrutivo continuam exigindo aprovação explícita. Destino: `memories/decisions.md` e `empresa/decisoes/decisoes-permanentes.md`.
+- **Pendência não é log de sessão** — lição operacional já formalizada pela rotina `memory-hygiene-pendencias.md`: pendências precisam ter status, próxima ação, bloqueio e evidência.
 
----
+## Verificação da revisão
 
-## Cron Jobs — Estado Real
-
-### 11 Crons Ativos ✅
-| Cron | Status | Last Run |
-|------|--------|----------|
-| lk_intel_full_sync_6h | OK | 05:05 today |
-| lk_night_summary_20h | OK | 18/04 20:01 |
-| lk_anomaly_alert_9h | OK | 18/04 09:04 |
-| lk_briefing_weekly_mon | OK | 13/04 10:05 |
-| whatsapp_alerts | OK | 18/04 |
-| lk_email_draft | OK | 18/04 |
-| sync_shopify_lk | OK | hourly |
-| lk_content_generator | ACTIVE | since Apr 9 |
-| openclaw_gateway | ACTIVE | since Apr 15 |
-
-### 2 Crons Com Falhas ⚠️
-| Cron | Status | Last Failure | Motivo |
-|------|--------|--------------|--------|
-| daily_report | FAILED | Apr 15 08:00 | Telegram 401 Unauthorized |
-| spiti_email_poller | FAILED | Apr 15 00:00 | No access token |
-
-### Spiti Email Poller = LOW PRIORITY
-- Sem auction previsto até agosto 2026
-- Não impacta operações atuais
-- Aguardando re-autenticação quando necessário
-
----
-
-## Tokens — Status
-
-| Token | Status | Notes |
-|-------|--------|-------|
-| PAT (sbp_[REDACTED]) | ✅ Válido | Supabase Management API |
-| Shop (shpat_[REDACTED]) | ✅ Válido | Shopify Admin API |
-| Meta Ads | ❌ INVÁLIDO | OAuth token expired — 38+ dias |
-| Telegram Bot | ✅ Válido | HermesLC_Bot — re-validado 19/04 |
-| Frenet | ✅ Em uso | 131 registros syncados |
-| Gmail OAuth | ✅ Em uso | n8n integration |
-
----
-
-## Data Sources — LK Intel
-
-| Source | Status | Last Sync |
-|--------|--------|-----------|
-| Shopify orders | ✅ OK | 2026-04-19 01:25 |
-| Shopify customers | ✅ OK | 26.560 customers |
-| Frenet shipping | ✅ OK | 131 registros |
-| JudgeMe reviews | ✅ OK | 429 reviews |
-| GA4 traffic | ✅ OK | 444.977 registros |
-| Klaviyo | ✅ OK | |
-| transactions_full | ✅ FIXED | Script recriado + adicionado |
-| Meta Ads | ❌ TOKEN INVÁLIDO | Desde 12/03 |
-
----
-
-## Ações Futuras Programadas
-
-| Data | Ação | Status |
-|------|------|--------|
-| 20/04 09:00 | Hermes Consolidation Weekly (primeira vez) | ⏳ Aguardando |
-| 28/04 20:00 | Hermes Monthly Review | ⏳ Aguardando |
-| 01/05 09:00 | Decisões Mensais Review | ⏳ Aguardando |
-
----
-
-*Última atualização: 2026-04-19 13:24*
-
+- Fontes lidas: `empresa/gestao/pendencias.md`, `memories/pending.md`, `memories/pending_local.md`, `memories/decisions.md`, `memories/lessons.md`, `memories/consolidation_weekly/2026-04-28.md`, `ROADMAP-30-DIAS-HERMES.md`, `CHANGELOG.md`, `empresa/gestao/memory-system.md`.
+- Crons Hermes atuais: 2 jobs agendados via `cronjob list` em 2026-05-09.
+- Nenhum token/segredo foi escrito; nomes de secrets podem aparecer, valores não.
