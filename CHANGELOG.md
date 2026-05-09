@@ -2,6 +2,15 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+
+## 2026-05-09 — Guardrails P1 de memória, segurança e entrega
+
+- Criada rotina `areas/operacoes/rotinas/memory-hygiene-pendencias.md` para separar pendências ativas, bloqueadas, aguardando, concluídas, arquivadas, decisões e lições.
+- Criada rotina `areas/operacoes/rotinas/security-checkup.md` para revisão de secrets, scopes, prompt injection, integrações, canais, crons, produção e ações sensíveis.
+- Criados templates `areas/operacoes/templates/nova-integracao.md`, `areas/operacoes/templates/novo-canal-agente.md` e `areas/operacoes/templates/delivery-summary.md`.
+- Atualizados `areas/operacoes/MAPA.md`, `empresa/rotinas/_index.md`, projeto do Hermes Brain Improvement System e roadmap.
+- Produção, Docker/VPS, bancos, secrets, campanhas, mensagens externas e runtime não foram alterados.
+
 ## 2026-05-09 — Instrumentos executivos Bruno P0
 
 - Criada matriz `areas/operacoes/rotinas/area-skill-subagent-agent-decision.md` para decidir área, rotina, skill, subagent, cron ou agente/canal permanente.

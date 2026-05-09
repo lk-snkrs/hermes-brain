@@ -11,6 +11,8 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/material-ingest-to-prd.md` — ingestão segura de material externo até documentação, matriz de decisão e PRD.
 - `rotinas/brain-improvement-score.md` — score executivo de saúde/maturidade do Brain.
 - `rotinas/retomada-planos-prds.md` — retomada de planos, PRDs, branches e análises pausadas.
+- `rotinas/memory-hygiene-pendencias.md` — higiene de memória, pendências, decisões e lições.
+- `rotinas/security-checkup.md` — revisão de segurança para Brain, integrações, canais, secrets e execução.
 - `rotinas/area-skill-subagent-agent-decision.md` — matriz para decidir área, rotina, skill, subagent, cron ou agente/canal permanente.
 - `rotinas/hermes-release-watch.md` — monitoramento de releases Hermes Agent e avaliação de melhorias.
 - `rotinas/hermes-runtime-observability.md` — observabilidade read-only do runtime Hermes.
@@ -20,6 +22,9 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `templates/matriz-decisao-bruno-hermes.md` — aplicar/adaptar/deferir/rejeitar conceitos externos.
 - `templates/prd-hermes-brain-improvement.md` — PRD padrão para melhoria do Brain.
 - `templates/report-health-executivo.md` — template para transformar checks técnicos em relatório executivo.
+- `templates/nova-integracao.md` — checklist antes de conectar/documentar ferramenta nova.
+- `templates/novo-canal-agente.md` — decisão antes de criar canal, agente permanente, subagent ou cron.
+- `templates/delivery-summary.md` — resumo padrão de entrega com verificações, não alterações e próximos passos.
 
 ## Projetos
 
