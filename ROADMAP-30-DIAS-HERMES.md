@@ -318,6 +318,26 @@ Regras preservadas:
 - Rotina documentada não prova cron ativo.
 - PR draft pode ser criado; merge em `main`, produção, credenciais, Docker/VPS, banco e ações externas exigem aprovação Lucas.
 
+### Rodada I — Guardrails P1 de operação contínua
+
+Status: concluída como rodada documental segura, sem tocar produção, VPS, Docker, bancos, secrets, campanhas, mensagens externas ou runtime.
+
+Objetivo: fortalecer o Hermes Brain Improvement System com guardrails para memória, segurança, integrações novas, canais/agentes e fechamento de entregas.
+
+Entregas:
+
+1. Rotina `areas/operacoes/rotinas/memory-hygiene-pendencias.md` para classificar pendências como ativo, bloqueado, aguardando, concluído, arquivado, decisão ou lição.
+2. Rotina `areas/operacoes/rotinas/security-checkup.md` para revisar secrets, permissões, prompt injection, integrações, canais, crons e ações sensíveis.
+3. Template `areas/operacoes/templates/nova-integracao.md` para documentar ferramentas novas antes de conexão real.
+4. Template `areas/operacoes/templates/novo-canal-agente.md` para decidir menor estrutura suficiente antes de criar canal/agente permanente/subagent/cron.
+5. Template `areas/operacoes/templates/delivery-summary.md` para encerrar rodadas com entregas, verificações, não alterações, decisões, lições e pendências.
+
+Regras preservadas:
+
+- Documentação e PR podem seguir; produção, secrets, Docker/VPS, banco, campanhas e mensagens externas continuam exigindo aprovação Lucas.
+- Novas integrações começam por read-only e escopo mínimo.
+- Memória durável não vira log de sessão; Brain segue fonte de verdade.
+
 ## Critérios de qualidade para próximas fases
 
 Toda fase deve terminar com:
@@ -333,11 +353,10 @@ Toda fase deve terminar com:
 ## Sequência recomendada agora
 
 1. Testar `material-ingest-to-prd.md` em um segundo pacote pequeno ou em um PRD antigo.
-2. Criar rotina de higiene de memória e pendências para separar ativo, bloqueado, histórico e arquivado.
-3. Criar `security-checkup.md` para secrets, scopes, prompt injection e recovery.
-4. Criar template de nova integração e template de canal novo antes de conectar qualquer canal/ferramenta externa.
-5. Avaliar script executivo para `brain-improvement-score.md` somente depois de validar o formato manual.
-6. Mission Control visual ou cron recorrente só depois de aprovação de cadência/escopo.
+2. Executar uma primeira higiene real de `empresa/gestao/pendencias.md` e `memories/pending.md` usando a nova rotina.
+3. Aplicar `security-checkup.md` no próximo caso de integração/canal/agente/cron antes de executar.
+4. Avaliar script executivo para `brain-improvement-score.md` somente depois de validar o formato manual.
+5. Mission Control visual ou cron recorrente só depois de aprovação de cadência/escopo.
 
 ## Atualização contínua obrigatória
 

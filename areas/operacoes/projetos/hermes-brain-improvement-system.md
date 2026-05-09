@@ -75,15 +75,18 @@ material externo
 - Criar rotina de retomada de planos/PRDs.
 - Linkar nos índices.
 
-### P1 — Próxima rodada recomendada
+### P1 — Feito na rodada seguinte
 
-- Criar script opcional de `brain_improvement_score.py` ou expandir `brain_health_check.py` com saída executiva.
-- Criar template de relatório executivo de health check.
-- Testar a rotina com um segundo pacote pequeno ou com um PRD antigo.
+- Criar rotina de higiene de memória e pendências.
+- Criar rotina de security checkup antes de novas integrações, canais, agents, crons e ações sensíveis.
+- Criar template de nova integração.
+- Criar template de novo canal/agente/subagent/cron.
+- Criar template de resumo de entrega para fechar rodadas com evidência.
 
-### P2 — Depois
+### P2 — Próximas rodadas recomendadas
 
-- Avaliar Mission Control como PRD separado e read-only.
+- Testar a rotina `material-ingest-to-prd.md` com um segundo pacote pequeno ou um PRD antigo.
+- Avaliar script opcional de `brain_improvement_score.py` somente depois de validar melhor o formato manual.
 - Avaliar cron semanal de retomada de planos pendentes.
 - Transformar as partes mais repetidas em skill canônica, se o fluxo se repetir.
 
@@ -95,3 +98,13 @@ material externo
 - Diff revisado.
 - PR draft aberto, se GitHub/Doppler disponível.
 - Nenhuma alteração produtiva executada.
+
+## Entregas P1 adicionadas
+
+- Rotina: `areas/operacoes/rotinas/memory-hygiene-pendencias.md`.
+- Rotina: `areas/operacoes/rotinas/security-checkup.md`.
+- Template: `areas/operacoes/templates/nova-integracao.md`.
+- Template: `areas/operacoes/templates/novo-canal-agente.md`.
+- Template: `areas/operacoes/templates/delivery-summary.md`.
+
+Esses documentos fecham a lacuna entre análise/PRD e operação contínua: antes de criar integrações, canais, agentes, crons ou automações novas, o Brain agora tem uma checagem explícita de segurança, memória e escopo mínimo.
