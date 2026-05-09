@@ -2,11 +2,11 @@
 
 ## Pendente — Mission Control / Bruno
 
-- [ ] Extrair o que existe sobre “Mission Control” nos materiais Bruno/OpenClaw e separar em dois blocos:
+- [x] Extrair o que existe sobre “Mission Control” nos materiais Bruno/OpenClaw e separar em dois blocos:
   - formato de criativo/performance citado na imersão;
   - protocolo operacional estilo inventory + health check citado na análise CWC vs Hermes.
-- [ ] Adaptar para Hermes sem copiar OpenClaw cegamente: lógica Bruno → diferencial Hermes → versão Hermes-native → decisão.
-- [ ] Se aprovado depois, transformar em rotina/skill/documentação no Hermes Brain.
+- [x] Adaptar para Hermes sem copiar OpenClaw cegamente: lógica Bruno → diferencial Hermes → versão Hermes-native → decisão.
+- [x] Transformar em documentação no Hermes Brain: `areas/operacoes/projetos/mission-control-prd.md`. UI/cron ficam pendentes de aprovação futura.
 
 ---
 
