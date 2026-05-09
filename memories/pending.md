@@ -5,8 +5,7 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Ativos
 
-- [ ] Testar `material-ingest-to-prd.md` em um segundo pacote pequeno ou PRD antigo antes de automatizar.
-- [ ] Avaliar script executivo para `brain-improvement-score.md` após mais um ciclo manual.
+- [ ] Avaliar script executivo local/read-only para `brain-improvement-score.md` após validação do modo leve de `material-ingest-to-prd.md`.
 - [ ] Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
 
 ## Bloqueados — aprovação Lucas
@@ -25,6 +24,7 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Concluídos / retirados da fila ativa
 
+- [x] Teste `material-ingest-to-prd.md` em PRD antigo — modo leve validado em 2026-05-09 com relatório `reports/material-ingest-to-prd-test-2026-05-09.md`.
 - [x] Rodada G — Health checks do Brain — script expandido, rotina atualizada e relatório JSON gerado em 2026-05-09.
 - [x] Mission Control / Bruno — extração/adaptação/PRD documental concluídos; UI/cron seguem fora de escopo.
 - [x] Hermes Brain Improvement System P0 — PR #2 mergeado no `main`.

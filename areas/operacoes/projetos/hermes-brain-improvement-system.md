@@ -85,7 +85,7 @@ material externo
 
 ### P2 — Próximas rodadas recomendadas
 
-- Testar a rotina `material-ingest-to-prd.md` com um segundo pacote pequeno ou um PRD antigo.
+- Testar a rotina `material-ingest-to-prd.md` com um segundo pacote pequeno ou um PRD antigo. — concluído em 2026-05-09 com `reports/material-ingest-to-prd-test-2026-05-09.md`.
 - Avaliar script opcional de `brain_improvement_score.py` somente depois de validar melhor o formato manual.
 - Avaliar cron semanal de retomada de planos pendentes.
 - Transformar as partes mais repetidas em skill canônica, se o fluxo se repetir.
@@ -135,3 +135,17 @@ Entregas:
 - Pendências e roadmap atualizados para retirar Rodada G da fila ativa.
 
 Resultado: `FAIL=0 WARN=0` em todos os checks, sem alteração em produção/runtime.
+
+
+## Entrega P2 aplicada — teste Material Ingest to PRD
+
+Em 2026-05-09 a rotina `material-ingest-to-prd.md` foi testada em modo leve usando o PRD interno `areas/operacoes/projetos/mission-control-prd.md`.
+
+Entregas:
+
+- Artefatos locais fora do repo em `/opt/data/hermes_bruno_ingest/material_ingest_to_prd_test_20260509/`.
+- Relatório versionado: `reports/material-ingest-to-prd-test-2026-05-09.md`.
+- Rotina atualizada para separar modo completo de pacote/ZIP e modo leve para documento único/PRD antigo.
+- Pendência ativa removida da fila e próximo passo concentrado em avaliar script executivo para `brain_improvement_score`.
+
+Resultado: o fluxo é útil, mas não deve virar automação cega. O próximo ganho seguro é um script/relatório local read-only; cron, UI ou Telegram recorrente exigem aprovação explícita.

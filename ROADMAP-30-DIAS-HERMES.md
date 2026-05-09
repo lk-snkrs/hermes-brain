@@ -371,6 +371,26 @@ Regras preservadas:
 - Estado de cron documentado não prova runtime vivo; usar verificação atual antes de afirmar.
 - Produção, infra, secrets, banco e ações externas continuam exigindo aprovação explícita.
 
+### Rodada K — Teste Material Ingest to PRD
+
+Status: concluída como rodada documental segura, sem tocar produção, VPS, Docker, bancos, secrets, campanhas, mensagens externas ou runtime.
+
+Objetivo: validar a rotina `material-ingest-to-prd.md` em um segundo caso pequeno antes de qualquer automação.
+
+Entregas:
+
+1. Teste em modo leve usando `areas/operacoes/projetos/mission-control-prd.md` como PRD antigo/interno.
+2. Artefatos locais fora do repo em `/opt/data/hermes_bruno_ingest/material_ingest_to_prd_test_20260509/`.
+3. Relatório `reports/material-ingest-to-prd-test-2026-05-09.md`.
+4. Rotina `material-ingest-to-prd.md` atualizada com modo completo vs modo leve.
+5. Pendências atualizadas para marcar o teste como concluído e apontar o próximo passo: script executivo local/read-only para `brain_improvement_score`.
+
+Regras preservadas:
+
+- Material bruto externo continua fora do repo.
+- Mission Control segue read-only/manual; UI e cron continuam bloqueados por aprovação explícita.
+- Nenhuma ação produtiva, runtime ou externa foi executada.
+
 ## Critérios de qualidade para próximas fases
 
 Toda fase deve terminar com:
@@ -385,9 +405,9 @@ Toda fase deve terminar com:
 
 ## Sequência recomendada agora
 
-1. Testar `material-ingest-to-prd.md` em um segundo pacote pequeno ou em um PRD antigo.
+1. Avaliar script executivo local/read-only para `brain-improvement-score.md`, consumindo health check JSON, pendências e changelog.
 2. Aplicar `security-checkup.md` no próximo caso de integração/canal/agente/cron antes de executar.
-3. Avaliar script executivo para `brain-improvement-score.md` somente depois de mais um ciclo manual.
+3. Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
 4. Mission Control visual ou cron recorrente só depois de aprovação de cadência/escopo.
 
 ## Atualização contínua obrigatória

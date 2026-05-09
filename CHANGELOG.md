@@ -2,6 +2,14 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-09 — Teste Material Ingest to PRD
+
+- Testada a rotina `areas/operacoes/rotinas/material-ingest-to-prd.md` em modo leve usando o PRD antigo `areas/operacoes/projetos/mission-control-prd.md`.
+- Criado relatório `reports/material-ingest-to-prd-test-2026-05-09.md` com fluxo aplicado, matriz resumida, decisão Hermes-native e lacunas.
+- Atualizada a rotina para distinguir modo completo de ZIP/pacote e modo leve de documento único/PRD antigo.
+- Atualizados pendências, roadmap, projeto e mapa de Operações.
+- Produção, Docker/VPS, bancos, secrets, campanhas, mensagens externas, UI, cron e runtime não foram alterados.
+
 ## 2026-05-09 — Rodada G: Health checks versionados do Brain
 
 - Expandido `scripts/brain_health_check.py` com checks de secrets, links/anchors markdown, arquivos estruturais obrigatórios, arquivos por agente, `MAPA.md` por área/subárea, rotinas indexadas e skills canônicas.
