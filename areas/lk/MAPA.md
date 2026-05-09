@@ -28,6 +28,7 @@ Fonte resumida atual: `memories/lk.md`.
 - `rotinas/morning-briefing.md` — briefing matinal.
 - `rotinas/sync-log.md` — auditoria de syncs.
 - `rotinas/consequence-tracker.md` — consequências e aprendizados de ações.
+- `rotinas/templates/` — templates read-only v0.1 do LK Operating System: `Daily Sales Brief`, `Stock Intelligence Center` e `Weekly CEO Review`.
 
 ## Playbooks operacionais
 
