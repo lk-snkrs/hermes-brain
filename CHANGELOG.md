@@ -3,6 +3,15 @@
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
 
+## 2026-05-09 — Higiene real de memória e pendências
+
+- Aplicada a rotina `areas/operacoes/rotinas/memory-hygiene-pendencias.md` sobre `empresa/gestao/pendencias.md` e `memories/pending.md`.
+- Reclassificadas pendências em ativos, bloqueados, aguardando data/evento, concluídos e arquivados.
+- Removida contradição antiga que mantinha Meta Ads como urgente após a consolidação de 2026-04-28 registrar correção em 2026-04-25.
+- Criado relatório `reports/memory-hygiene-2026-05-09.md` com fontes, critérios e reclassificação.
+- Promovida para decisões permanentes a autorização de Lucas para merges autônomos em PRs documentais/Brain de baixo risco quando checks passarem, preservando aprovação explícita para produção, infra, secrets, banco, ações externas e risco destrutivo.
+- Produção, Docker/VPS, bancos, secrets, campanhas, mensagens externas e runtime não foram alterados.
+
 ## 2026-05-09 — Guardrails P1 de memória, segurança e entrega
 
 - Criada rotina `areas/operacoes/rotinas/memory-hygiene-pendencias.md` para separar pendências ativas, bloqueadas, aguardando, concluídas, arquivadas, decisões e lições.

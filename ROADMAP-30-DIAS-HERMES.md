@@ -338,6 +338,28 @@ Regras preservadas:
 - Novas integrações começam por read-only e escopo mínimo.
 - Memória durável não vira log de sessão; Brain segue fonte de verdade.
 
+
+### Rodada J — Higiene real de memória e pendências
+
+Status: concluída como rodada documental segura, sem tocar produção, VPS, Docker, bancos, secrets, campanhas, mensagens externas ou runtime.
+
+Objetivo: aplicar a rotina `memory-hygiene-pendencias.md` sobre as pendências reais do Brain e eliminar contradições antigas.
+
+Entregas:
+
+1. `empresa/gestao/pendencias.md` reescrito como fila executiva atual, com itens ativos, bloqueados, aguardando data/evento, concluídos e arquivados.
+2. `memories/pending.md` compactado para boot mental, sem log antigo de sessão.
+3. `reports/memory-hygiene-2026-05-09.md` criado com fontes, classificação e guardrails.
+4. Decisão de autonomia documental de baixo risco registrada em `memories/decisions.md` e `empresa/decisoes/decisoes-permanentes.md`.
+5. Meta Ads removido da fila urgente atual, pois `memories/consolidation_weekly/2026-04-28.md` registra correção em 2026-04-25.
+
+Regras preservadas:
+
+- Pendência não vira log de sessão.
+- Pendência bloqueada precisa dizer bloqueio e aprovação necessária.
+- Estado de cron documentado não prova runtime vivo; usar verificação atual antes de afirmar.
+- Produção, infra, secrets, banco e ações externas continuam exigindo aprovação explícita.
+
 ## Critérios de qualidade para próximas fases
 
 Toda fase deve terminar com:
@@ -352,10 +374,10 @@ Toda fase deve terminar com:
 
 ## Sequência recomendada agora
 
-1. Testar `material-ingest-to-prd.md` em um segundo pacote pequeno ou em um PRD antigo.
-2. Executar uma primeira higiene real de `empresa/gestao/pendencias.md` e `memories/pending.md` usando a nova rotina.
+1. Rodada G: criar health checks versionados do Brain.
+2. Testar `material-ingest-to-prd.md` em um segundo pacote pequeno ou em um PRD antigo.
 3. Aplicar `security-checkup.md` no próximo caso de integração/canal/agente/cron antes de executar.
-4. Avaliar script executivo para `brain-improvement-score.md` somente depois de validar o formato manual.
+4. Avaliar script executivo para `brain-improvement-score.md` somente depois de mais um ciclo manual.
 5. Mission Control visual ou cron recorrente só depois de aprovação de cadência/escopo.
 
 ## Atualização contínua obrigatória
