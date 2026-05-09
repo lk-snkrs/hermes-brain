@@ -11,6 +11,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/material-ingest-to-prd.md` — ingestão segura de material externo até documentação, matriz de decisão e PRD.
 - `rotinas/brain-improvement-score.md` — score executivo de saúde/maturidade do Brain.
 - `rotinas/retomada-planos-prds.md` — retomada de planos, PRDs, branches e análises pausadas.
+- `rotinas/revisao-operacional-multiempresa.md` — leitura executiva sob demanda de LK, Zipper, SPITI e Operações usando Brain versionado.
 - `rotinas/memory-hygiene-pendencias.md` — higiene de memória, pendências, decisões e lições.
 - `rotinas/security-checkup.md` — revisão de segurança para Brain, integrações, canais, secrets e execução.
 - `rotinas/area-skill-subagent-agent-decision.md` — matriz para decidir área, rotina, skill, subagent, cron ou agente/canal permanente.
@@ -36,6 +37,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `../../reports/brain-improvement-score-2026-05-09.md` — primeira execução manual do Brain Improvement Score.
 - `../../reports/brain-health-check-2026-05-09.json` — primeira saída JSON versionada da Rodada G, com `FAIL=0 WARN=0`.
 - `../../reports/material-ingest-to-prd-test-2026-05-09.md` — validação do modo leve da rotina Material Ingest to PRD usando PRD antigo.
+- `../../reports/revisao-operacional-multiempresa-2026-05-09.md` — primeira revisão operacional multiempresa sob demanda, sem dados vivos ou produção.
 
 ## Guardrails
 

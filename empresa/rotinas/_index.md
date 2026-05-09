@@ -14,6 +14,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Material Ingest to PRD | `areas/operacoes/rotinas/material-ingest-to-prd.md` | Ingestão segura de material externo até documentação, matriz de decisão e PRD |
 | Brain Improvement Score | `areas/operacoes/rotinas/brain-improvement-score.md` | Score executivo de saúde/maturidade do Hermes Brain após rodadas de melhoria |
 | Retomada de Planos e PRDs | `areas/operacoes/rotinas/retomada-planos-prds.md` | Recupera estado de planos, PRDs, branches e análises pausadas antes de seguir |
+| Revisão Operacional Multiempresa | `areas/operacoes/rotinas/revisao-operacional-multiempresa.md` | Leitura executiva sob demanda de LK, Zipper, SPITI e Operações usando Brain versionado |
 | Higiene de Memória e Pendências | `areas/operacoes/rotinas/memory-hygiene-pendencias.md` | Organiza pendências, decisões, lições e memória durável sem misturar log de sessão |
 | Security Checkup | `areas/operacoes/rotinas/security-checkup.md` | Revisão de secrets, permissões, prompt injection, integrações e ações sensíveis |
 | Decisão Área/Skill/Subagent/Agente | `areas/operacoes/rotinas/area-skill-subagent-agent-decision.md` | Decide a menor estrutura suficiente antes de criar agentes, canais, crons ou skills |

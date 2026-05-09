@@ -90,6 +90,15 @@ Status: concluído no repo atual.
 - Hardcoded secrets removidos dos scripts identificados.
 - Whole-repo scan retornou `possible_secrets 0` na última rodada.
 
+### 10. Revisão operacional multiempresa sob demanda
+
+Status: concluído como rotina/report documental segura.
+
+- Criada rotina `areas/operacoes/rotinas/revisao-operacional-multiempresa.md`.
+- Gerado primeiro relatório `reports/revisao-operacional-multiempresa-2026-05-09.md`.
+- Decisão: usar sob demanda para responder “algo mais?”, “vamos começar?” e priorização multiempresa; não criar cron nem consultar produção por padrão.
+- Produção, dados vivos, VPS/Docker, bancos, APIs, campanhas, mensagens externas, UI e cron não foram alterados.
+
 ## Próximas rodadas recomendadas
 
 ### Rodada A — Verificação de crons reais na VPS
