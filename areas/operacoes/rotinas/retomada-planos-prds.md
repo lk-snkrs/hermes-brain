@@ -29,6 +29,24 @@ Ler, nesta ordem:
 7. `git status`, branches e PRs dos repos envolvidos;
 8. `session_search` para trabalhos interrompidos.
 
+## Script local/read-only
+
+Comando canônico para relatório manual:
+
+```bash
+python3 scripts/retomada_planos_prds.py \
+  --date YYYY-MM-DD \
+  --output reports/retomada-planos-prds-YYYY-MM-DD.md \
+  --json-output reports/retomada-planos-prds-YYYY-MM-DD.json
+```
+
+Limites do script:
+
+- lê apenas arquivos versionados do Brain e `git status` local;
+- não consulta produção, VPS, Docker, bancos, APIs, Telegram ou crons reais;
+- não cria cron, UI, mensagem automática ou Mission Control visual;
+- serve para decidir a próxima ação segura antes de continuar.
+
 ## Saída
 
 Resumo curto:
@@ -65,6 +83,7 @@ Usar Doppler apenas se for necessário verificar PR privado ou push, sem imprimi
 - Pendência localizada em fonte real.
 - Próxima ação executada ou claramente bloqueada.
 - Se arquivo foi alterado: health check/secret scan conforme escopo.
+- Se script usado: relatório Markdown/JSON gerado em `reports/` e lido antes de agir.
 - Se PR/branch foi criado: URL/branch/commit registrados.
 
 ## Se falhar
@@ -75,6 +94,6 @@ Usar Doppler apenas se for necessário verificar PR privado ou push, sem imprimi
 
 ## Aprovação necessária
 
-Não precisa para retomada, leitura, documentação e PR draft.
+Não precisa para retomada, leitura, documentação, relatório local/read-only e PR draft.
 
 Precisa para merge, deploy, produção, Docker/VPS, banco, mensagens externas, credenciais ou qualquer contato com cliente/colecionador/parceiro.
