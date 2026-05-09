@@ -4,6 +4,8 @@
 2. Criar ou selecionar criativo.
 3. Rodar teste/campanha.
 4. Coletar dados reais.
+   - Google Ads: Metricool API, brand LK correta.
+   - Meta Ads: Meta Marketing API direta enquanto Metricool Meta estiver ligado à conta antiga.
 5. Cruzar com estoque, margem e vendas.
 6. Consolidar learning.
 7. Sugerir próxima ação.
