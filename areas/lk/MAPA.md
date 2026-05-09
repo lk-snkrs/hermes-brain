@@ -13,6 +13,11 @@ Fonte resumida atual: `memories/lk.md`.
 
 - `projetos/lk-operating-system-prd.md` — PRD v0.1 do LK Operating System no Hermes: CEO/Chief of Staff da LK com curadoria, estoque, Shopify, CRM, conteúdo, SEO, pricing, Google/Meta/influencers, approval flow e learning loop.
 
+## Design e comunicação visual
+
+- `design/DESIGN.md` — DesignMD v0.1 da LK, derivado dos últimos e-mails enviados no Klaviyo.
+- `design/previews/lk-designmd-pdp-preview.html` — HTML visual de PDP/produto para aprovação de layout.
+
 ## Rotinas LK globais
 
 - `rotinas/full-sync.md` — sincronizações LK.
