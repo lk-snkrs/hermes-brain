@@ -39,6 +39,14 @@ Modo: leitura via API Klaviyo, sem envio, sem alteração de campanha, sem publi
 - Bloco manifesto preto com frase editorial.
 - Footer preto com slogan `Less Noise, More Identity.`
 
+## Feedback Lucas — 2026-05-09
+
+- Direção geral aprovada como boa primeira opção, ainda não 100%.
+- Corrigir preview para usar o logo real da LK no topo/rodapé.
+- Produto/imagens precisam carregar no HTML de aprovação; usar imagens reais e, quando necessário, embutidas no HTML para evitar falha de carregamento.
+- Fonte ainda não está 100% igual à usada nas newsletters; manter como hipótese v0.1 e refinar depois contra Klaviyo/Shopify.
+- Seguir nesse caminho e refinar progressivamente.
+
 ## Tokens extraídos dos templates
 
 ### Cores recorrentes

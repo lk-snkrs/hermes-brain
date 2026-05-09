@@ -18,6 +18,10 @@ Fonte resumida atual: `memories/lk.md`.
 - `design/DESIGN.md` — DesignMD v0.1 da LK, derivado dos últimos e-mails enviados no Klaviyo.
 - `design/previews/lk-designmd-pdp-preview.html` — HTML visual de PDP/produto para aprovação de layout.
 
+## Equipe e roteamento
+
+- `equipe/README.md` — matriz inicial de funções e destinatários de relatórios; pendente de mapeamento completo. Dado inicial: Renan cuida de design/SEO.
+
 ## Rotinas LK globais
 
 - `rotinas/full-sync.md` — sincronizações LK.
