@@ -30,9 +30,10 @@ Os exemplos existem para calibrar formato e raciocínio antes de dados reais. N�
 ## Primeiro relatório real read-only
 
 - `../../../../reports/lk-daily-sales-brief-real-2026-05-08-ga4-v02.md` — primeira execução real agregada/read-only com Shopify, Tiny `LK | CONTROLE ESTOQUE` e GA4 Data API.
-- Lucas aprovou o formato geral em 2026-05-09 com o feedback “ficou bacana”.
-- O relatório não exporta dados pessoais nem valores de secrets e não executa ações externas.
+- `../../../../reports/lk-paid-attribution-brief-real-2026-05-08-v03.md` — primeira execução real agregada/read-only de atribuição paga/influencers com GA4, Shopify web sanitizado e Meta Ads Insights.
+- Lucas aprovou o formato geral do Daily Brief em 2026-05-09 com o feedback “ficou bacana”.
+- Os relatórios não exportam dados pessoais nem valores de secrets e não executam ações externas.
 
 ## Próximo passo
 
-Evoluir o Daily Brief v0.2 para atribuição de campanhas/influencers: cruzar GA4 source/medium/campaign, UTMs/cuponagem quando existir e produtos/marcas vendidos no Shopify. Antes de cron ou envio recorrente, ainda falta mapear destinatários/equipe e aprovar cadência.
+Padronizar UTM/cupom por influencer e reconciliar Meta Ads plataforma × GA4 × Shopify antes de qualquer recomendação de escala/pausa. Antes de cron ou envio recorrente, ainda falta mapear destinatários/equipe e aprovar cadência.

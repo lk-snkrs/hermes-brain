@@ -9,6 +9,7 @@ Não faz: envio WhatsApp, Klaviyo, Shopify, Notion, campanha, alteração de pre
 - Fonte oficial de vendas/clientes/source/receita operacional: Shopify.
 - Fonte oficial de estoque: Tiny, somente depósito `LK | CONTROLE ESTOQUE`; outros depósitos ficam em standby.
 - Conversão online: Shopify Analytics como baseline estratégico; GA4 Data API como fonte read-only de sessões, canais, campanhas, compras e CRO.
+- Atribuição paga/influencers: combinar GA4 `source/medium/campaign`, Meta Ads Insights read-only, landing/referrer/cupom do Shopify e produtos vendidos.
 - GA4 deve ser reconciliado contra Shopify web: quantidade de compras e receita podem divergir; Shopify continua sendo a fonte oficial de pedidos/receita.
 - Credencial GA4 LK fica no Doppler `lc-keys/prd` como `GA4_LK_N8N_ZIPPER_SERVICE_ACCOUNT`; nunca versionar JSON, private key ou valores sensíveis.
 - Dados pessoais devem ser mascarados no Telegram por padrão.
@@ -110,8 +111,14 @@ Confiança: alta/média/baixa
 - Risco de conversão:
 - Aprovação necessária:
 
-### 8. Conteúdo/campanha
+### 8. Pago, influencers e conteúdo
 
+- GA4 source/medium/campaign:
+- Meta Ads spend/clicks/purchases/value, se disponível:
+- Shopify evidence: landing/referrer/cupom por pedido:
+- Influencer/campanha detectado:
+- Produtos/marcas/tamanhos vendidos ligados ao sinal:
+- Confiança da atribuição: alta/média/baixa
 - Sinal que virou pauta:
 - Formato recomendado: blog / PDP / newsletter / Instagram / WhatsApp / Klaviyo:
 - Precisa seguir DesignMD LK:
