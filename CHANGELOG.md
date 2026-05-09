@@ -2,6 +2,15 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-09 — Instrumentos executivos Bruno P0
+
+- Criada matriz `areas/operacoes/rotinas/area-skill-subagent-agent-decision.md` para decidir área, rotina, skill, subagent, cron ou agente/canal permanente.
+- Criado PRD `areas/operacoes/projetos/mission-control-prd.md` para Mission Control Hermes read-only, separando o uso criativo/performance do protocolo operacional.
+- Criado template `areas/operacoes/templates/report-health-executivo.md` para relatórios executivos de health, riscos, evidências e aprovações.
+- Criado primeiro relatório manual `reports/brain-improvement-score-2026-05-09.md`, com score geral 88/100.
+- Atualizados índices, roadmap e pendências relacionadas a Mission Control.
+- Produção, Docker/VPS, bancos, secrets, campanhas, mensagens externas e runtime não foram alterados.
+
 ## 2026-05-08 — Hermes Brain Improvement System
 
 - Adicionada rotina `areas/operacoes/rotinas/material-ingest-to-prd.md` para transformar material externo em extração segura, inventário, documentação, matriz de decisão e PRD.

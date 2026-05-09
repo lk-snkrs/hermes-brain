@@ -294,7 +294,7 @@ Resultado esperado:
 
 ### Rodada H — Hermes Brain Improvement System
 
-Status: em implantação documental segura, sem tocar produção, VPS, Docker, bancos, campanhas ou mensagens externas.
+Status: concluída e expandida com instrumentos executivos P0, sem tocar produção, VPS, Docker, bancos, campanhas ou mensagens externas.
 
 Objetivo: transformar o upload Bruno/OpenClaw atualizado e futuros materiais externos em um fluxo repetível de ingestão, documentação, decisão Hermes-native e PRD.
 
@@ -306,6 +306,10 @@ Entregas desta rodada:
 4. Rotina `areas/operacoes/rotinas/brain-improvement-score.md` para avaliação executiva de maturidade do Brain.
 5. Rotina `areas/operacoes/rotinas/retomada-planos-prds.md` para recuperar planos/PRDs/branches pausados antes de continuar.
 6. Projeto `areas/operacoes/projetos/hermes-brain-improvement-system.md` como mapa da iniciativa.
+7. Matriz `areas/operacoes/rotinas/area-skill-subagent-agent-decision.md` para evitar agentes/canais permanentes sem volume real.
+8. PRD `areas/operacoes/projetos/mission-control-prd.md` para Mission Control read-only.
+9. Template `areas/operacoes/templates/report-health-executivo.md` para relatórios executivos.
+10. Primeiro score manual `reports/brain-improvement-score-2026-05-09.md` com score geral 88/100.
 
 Regras preservadas:
 
@@ -328,11 +332,12 @@ Toda fase deve terminar com:
 
 ## Sequência recomendada agora
 
-1. Fechar/abrir PR da Rodada H — Hermes Brain Improvement System, mantendo como documentação segura e sem merge automático.
-2. Testar `material-ingest-to-prd.md` em um segundo pacote pequeno ou em um PRD antigo.
-3. Avaliar criação de script executivo para `brain-improvement-score.md` ou extensão controlada de `scripts/brain_health_check.py`.
-4. Criar template de report executivo de health check, se Lucas quiser saída visual/Telegram recorrente.
-5. Rodadas contínuas — release watch Hermes, secret validation, inventário VPS/n8n e playbooks/templates por negócio conforme demanda real.
+1. Testar `material-ingest-to-prd.md` em um segundo pacote pequeno ou em um PRD antigo.
+2. Criar rotina de higiene de memória e pendências para separar ativo, bloqueado, histórico e arquivado.
+3. Criar `security-checkup.md` para secrets, scopes, prompt injection e recovery.
+4. Criar template de nova integração e template de canal novo antes de conectar qualquer canal/ferramenta externa.
+5. Avaliar script executivo para `brain-improvement-score.md` somente depois de validar o formato manual.
+6. Mission Control visual ou cron recorrente só depois de aprovação de cadência/escopo.
 
 ## Atualização contínua obrigatória
 
