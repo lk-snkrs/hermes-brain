@@ -101,6 +101,19 @@ Status: concluído como rotina/report documental segura.
 
 ## Próximas rodadas recomendadas
 
+### Rodada LK — LK Operating System PRD
+
+Status: PRD v0.1 aprovado conceitualmente por Lucas e documentado como base para implementação faseada.
+
+Entregas:
+
+1. PRD `areas/lk/projetos/lk-operating-system-prd.md` com razão de existir da LK, objetivos, fontes de verdade, módulos, cadência alvo, approval matrix e fases.
+2. Módulo global `empresa/gestao/hermes-learning-loop.md` para registrar aprovações/correções e atualizar Brain/skills/PRDs/memória quando um padrão se repetir.
+3. Próxima fase recomendada: criar templates/read-only do `Daily Sales Brief`, `Weekly CEO Review` e `Stock Intelligence Center` antes de qualquer cron, escrita em Notion, Shopify, Klaviyo, Evolution, Google/Meta ou automação n8n.
+
+Limites preservados: nenhum cron, campanha, mensagem externa, alteração Shopify/Tiny/Notion/GitHub/tema, banco, secret, VPS/Docker ou runtime foi criado/alterado nesta fase documental.
+
+
 ### Rodada A — Verificação de crons reais na VPS
 
 Status: inventário base concluído em `lc.vps`; n8n inventariado; tentativa segura de update Hermes Docker executada em 2026-05-05, mas imagem Hostinger `latest` não trouxe versão nova.
