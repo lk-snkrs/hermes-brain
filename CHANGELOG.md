@@ -2,6 +2,13 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-09 — Revisão operacional multiempresa
+
+- Criada rotina `areas/operacoes/rotinas/revisao-operacional-multiempresa.md` para priorização sob demanda de LK, Zipper, SPITI e Operações usando apenas Brain versionado por padrão.
+- Gerado `reports/revisao-operacional-multiempresa-2026-05-09.md` como primeira revisão executiva.
+- Atualizados índices, roadmap e pendências para registrar uso sob demanda, sem cron recorrente e sem dados vivos/produção por padrão.
+- Produção, VPS/Docker, bancos, secrets, campanhas, mensagens externas, UI, cron e runtime não foram alterados.
+
 ## 2026-05-09 — Script Retomada de Planos/PRDs
 
 - Criado `scripts/retomada_planos_prds.py` para gerar relatório local/read-only de retomada de planos, PRDs e pendências.

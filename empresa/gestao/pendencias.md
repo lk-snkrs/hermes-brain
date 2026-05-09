@@ -29,6 +29,7 @@ Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a 
 
 ## Concluídos nesta revisão
 
+- **Rotina de revisão operacional multiempresa** — concluído: `areas/operacoes/rotinas/revisao-operacional-multiempresa.md` criado; primeiro relatório gerado em `reports/revisao-operacional-multiempresa-2026-05-09.md`. Decisão operacional: usar sob demanda para priorização LK/Zipper/SPITI/Operações; não criar cron, não consultar produção e não acionar ações externas por padrão.
 - **Script local/read-only de retomada de planos/PRDs** — concluído: `scripts/retomada_planos_prds.py` criado; relatório gerado em `reports/retomada-planos-prds-2026-05-09.md` e JSON em `reports/retomada-planos-prds-2026-05-09.json`. Decisão operacional: não criar cron semanal agora; usar sob demanda quando Lucas disser “seguir”, “retomar” ou “onde paramos”.
 - **Script executivo para `brain-improvement-score.md`** — concluído: `scripts/brain_improvement_score.py` criado como ferramenta local/read-only; relatório gerado em `reports/brain-improvement-score-2026-05-09-script.md` e JSON em `reports/brain-improvement-score-2026-05-09-script.json`. Cron/UI/Telegram recorrente continuam bloqueados por aprovação explícita.
 - **Teste de `material-ingest-to-prd.md` em PRD antigo** — concluído: rotina validada em modo leve usando `areas/operacoes/projetos/mission-control-prd.md`; artefatos locais gerados fora do repo e relatório versionado em `reports/material-ingest-to-prd-test-2026-05-09.md`. Próxima decisão: script executivo de score antes de qualquer cron/UI.
