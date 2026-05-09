@@ -7,3 +7,7 @@ Hipótese → criativo/campanha → teste → dados Meta/Klaviyo/Shopify → con
 ```
 
 Pastas: angulos, formatos, criativos, testes, learnings, skills, rotinas.
+
+## Rotinas validadas
+
+- `rotinas/lk-ads-intelligence-metricool-meta-20260509.md` — Google Ads via Metricool + Meta Ads direto; base v0.1 para custo/campanha/influencer-product fit do LK OS.
