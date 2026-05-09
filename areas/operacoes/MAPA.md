@@ -34,9 +34,10 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 ## Reports
 
 - `../../reports/brain-improvement-score-2026-05-09.md` — primeira execução manual do Brain Improvement Score.
+- `../../reports/brain-health-check-2026-05-09.json` — primeira saída JSON versionada da Rodada G, com `FAIL=0 WARN=0`.
 
 ## Guardrails
 
 - Secrets sempre via Doppler, apenas nomes em docs.
 - Produção, VPS, Docker, Traefik, volumes, redes, deploys, banco, campanhas e mensagens externas exigem aprovação Lucas.
-- PR draft é aceitável para documentação; merge em `main` exige aprovação explícita.
+- PRs documentais/Brain de baixo risco podem seguir com merge autônomo se health check, secret scan e mergeability estiverem limpos; produção, infra, secrets, banco e ações externas seguem exigindo aprovação explícita.

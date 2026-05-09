@@ -277,20 +277,31 @@ Regras preservadas:
 
 ### Rodada G — Health checks do Brain
 
-Objetivo: validar automaticamente qualidade do Brain.
+Status: concluída como rodada documental/técnica segura, sem tocar produção, VPS, Docker, bancos, secrets, campanhas, mensagens externas ou runtime.
 
-Tarefas:
+Objetivo: validar automaticamente qualidade estrutural do Brain antes de commits, PRs e merges documentais.
 
-1. Criar script de scan de secrets versionado em `scripts/`.
-2. Criar check de links internos quebrados.
-3. Criar check de arquivos obrigatórios por agente.
-4. Criar check de rotinas sem índice.
-5. Criar check de skills canônicas vs navegação por área.
+Entregas:
 
-Resultado esperado:
+1. `scripts/brain_health_check.py` expandido e versionado.
+2. Secret scan ampliado para mais famílias de tokens, incluindo GitHub fine-grained e Google OAuth/refresh-token.
+3. Check de links relativos e anchors markdown internos.
+4. Check de arquivos estruturais obrigatórios do Brain.
+5. Check de arquivos obrigatórios por agente.
+6. Check de `MAPA.md` por área e subárea.
+7. Check de rotinas sem índice em `empresa/rotinas/_index.md`.
+8. Check de skills canônicas vs índice/navegação por área.
+9. Saída JSON opcional para relatórios em `reports/brain-health-check-*.json`.
+10. Rotina `areas/operacoes/rotinas/brain-health-check.md` atualizada com critério `FAIL=0` e alvo `WARN=0`.
 
-- `scripts/brain_health_check.py`.
-- Rotina documentada em `areas/operacoes/rotinas/brain-health-check.md`.
+Resultado verificado em 2026-05-09:
+
+- `python3 scripts/brain_health_check.py --json reports/brain-health-check-2026-05-09.json` retornou `FAIL=0 WARN=0` em todos os checks.
+
+Regras preservadas:
+
+- Health check estrutural não prova cron real, VPS/Docker/gateway saudáveis nem dados vivos corretos.
+- Checks de produção, runtime e dados vivos continuam em rotinas específicas e/ou exigem aprovação conforme risco.
 
 ### Rodada H — Hermes Brain Improvement System
 
@@ -374,11 +385,10 @@ Toda fase deve terminar com:
 
 ## Sequência recomendada agora
 
-1. Rodada G: criar health checks versionados do Brain.
-2. Testar `material-ingest-to-prd.md` em um segundo pacote pequeno ou em um PRD antigo.
-3. Aplicar `security-checkup.md` no próximo caso de integração/canal/agente/cron antes de executar.
-4. Avaliar script executivo para `brain-improvement-score.md` somente depois de mais um ciclo manual.
-5. Mission Control visual ou cron recorrente só depois de aprovação de cadência/escopo.
+1. Testar `material-ingest-to-prd.md` em um segundo pacote pequeno ou em um PRD antigo.
+2. Aplicar `security-checkup.md` no próximo caso de integração/canal/agente/cron antes de executar.
+3. Avaliar script executivo para `brain-improvement-score.md` somente depois de mais um ciclo manual.
+4. Mission Control visual ou cron recorrente só depois de aprovação de cadência/escopo.
 
 ## Atualização contínua obrigatória
 

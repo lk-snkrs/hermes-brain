@@ -121,3 +121,17 @@ Entregas:
 - Decisão de autonomia documental de baixo risco registrada em decisões permanentes.
 
 Resultado: pendências antigas de 2026-04-19 foram arquivadas/reclassificadas; Meta Ads deixou de aparecer como urgência atual porque a consolidação de 2026-04-28 registra correção em 2026-04-25.
+
+
+## Entrega P2 aplicada — Rodada G Health Checks
+
+Em 2026-05-09 a Rodada G foi concluída como melhoria estrutural segura do Brain.
+
+Entregas:
+
+- `scripts/brain_health_check.py` expandido para validar secrets, links/anchors, arquivos obrigatórios, agentes, MAPAs, rotinas indexadas e skills canônicas.
+- `areas/operacoes/rotinas/brain-health-check.md` atualizado com comando, critérios e limites.
+- `reports/brain-health-check-2026-05-09.json` criado como primeiro relatório JSON versionado.
+- Pendências e roadmap atualizados para retirar Rodada G da fila ativa.
+
+Resultado: `FAIL=0 WARN=0` em todos os checks, sem alteração em produção/runtime.
