@@ -5,7 +5,6 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Ativos
 
-- [ ] Rodada G — Health checks do Brain: criar checks versionados de secret scan, links internos, arquivos obrigatórios por agente, rotinas sem índice e skills vs áreas.
 - [ ] Testar `material-ingest-to-prd.md` em um segundo pacote pequeno ou PRD antigo antes de automatizar.
 - [ ] Avaliar script executivo para `brain-improvement-score.md` após mais um ciclo manual.
 - [ ] Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
@@ -26,6 +25,7 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Concluídos / retirados da fila ativa
 
+- [x] Rodada G — Health checks do Brain — script expandido, rotina atualizada e relatório JSON gerado em 2026-05-09.
 - [x] Mission Control / Bruno — extração/adaptação/PRD documental concluídos; UI/cron seguem fora de escopo.
 - [x] Hermes Brain Improvement System P0 — PR #2 mergeado no `main`.
 - [x] Guardrails P1 — PR #4 mergeado no `main`.

@@ -2,6 +2,15 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-09 — Rodada G: Health checks versionados do Brain
+
+- Expandido `scripts/brain_health_check.py` com checks de secrets, links/anchors markdown, arquivos estruturais obrigatórios, arquivos por agente, `MAPA.md` por área/subárea, rotinas indexadas e skills canônicas.
+- Adicionada saída JSON opcional para relatórios: `--json reports/brain-health-check-YYYY-MM-DD.json`.
+- Atualizada rotina `areas/operacoes/rotinas/brain-health-check.md` com critério `FAIL=0` e alvo `WARN=0` para PRs documentais autônomos.
+- Gerado `reports/brain-health-check-2026-05-09.json` com `FAIL=0 WARN=0` em todos os checks.
+- Rodada G removida da fila ativa de pendências e marcada como concluída no roadmap.
+- Produção, Docker/VPS, bancos, secrets, campanhas, mensagens externas e runtime não foram alterados.
+
 
 ## 2026-05-09 — Higiene real de memória e pendências
 
