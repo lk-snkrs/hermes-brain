@@ -9,6 +9,10 @@ Fonte resumida atual: `memories/lk.md`.
 - `sub-areas/ecommerce/` — Shopify, produtos, estoque, pedidos, UX e catálogo.
 - `sub-areas/atendimento/` — FAQ, dúvidas, suporte e consolidação para bot.
 
+## Projeto estratégico aprovado
+
+- `projetos/lk-operating-system-prd.md` — PRD v0.1 do LK Operating System no Hermes: CEO/Chief of Staff da LK com curadoria, estoque, Shopify, CRM, conteúdo, SEO, pricing, Google/Meta/influencers, approval flow e learning loop.
+
 ## Rotinas LK globais
 
 - `rotinas/full-sync.md` — sincronizações LK.

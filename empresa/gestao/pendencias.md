@@ -11,6 +11,9 @@ Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a 
 
 ## Ativos
 
+- [ ] **Implementar LK Operating System após PRD aprovado** — LK/Operações — próxima ação: transformar `areas/lk/projetos/lk-operating-system-prd.md` em templates/read-only reports iniciais (`Daily Sales Brief`, `Weekly CEO Review`, `Stock Intelligence Center`) antes de criar crons ou integrações de escrita. Evidência/base: PRD aprovado por Lucas em 2026-05-09.
+- [ ] **Aplicar Hermes Learning Loop global** — Operações/Governança — próxima ação: usar `empresa/gestao/hermes-learning-loop.md` para registrar aprovações/correções duráveis em Brain, skills, PRDs ou memória, evitando repetir erros corrigidos. Evidência/base: aprovação explícita de Lucas em 2026-05-09.
+
 - [ ] **Completar subdocs de integrações não recorrentes quando virarem fluxo real** — Operações/Integrações — próxima ação: documentar Judge.me, Frenet, Tiny ERP, Email/Google Workspace, LeiloesBR, Railway, Vercel, Notion/NocoDB e Metricool somente quando houver necessidade operacional concreta. Evidência/base: `ROADMAP-30-DIAS-HERMES.md`, Rodada B.
 
 ## Bloqueados — exigem decisão/aprovação Lucas

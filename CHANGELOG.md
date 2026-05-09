@@ -2,6 +2,13 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-09 — PRD LK Operating System
+
+- Criado `areas/lk/projetos/lk-operating-system-prd.md` com PRD v0.1 aprovado conceitualmente por Lucas para o LK Operating System / LK Chief of Staff.
+- Criado `empresa/gestao/hermes-learning-loop.md` como módulo global de aprovações, correções, padrões e anti-padrões para Hermes Brain, LK, Zipper, SPITI e Mission Control.
+- Atualizados mapa/projetos LK, roadmap e pendências para indicar implementação faseada por templates/read-only antes de crons ou integrações de escrita.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-09 — Revisão operacional multiempresa
 
 - Criada rotina `areas/operacoes/rotinas/revisao-operacional-multiempresa.md` para priorização sob demanda de LK, Zipper, SPITI e Operações usando apenas Brain versionado por padrão.

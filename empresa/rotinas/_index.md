@@ -77,6 +77,10 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Template Relatório Interno SPITI | `areas/spiti/templates/relatorio-interno-matriz-evidencia.md` | Matriz de evidência por lote para relatório interno |
 
 ## Regras
+## Documentos de gestão relacionados
+
+- `empresa/gestao/hermes-learning-loop.md` — regra global para registrar aprovações/correções e atualizar Brain/skills/PRDs/memória quando um padrão se repetir.
+
 
 - Secrets via Doppler `lc-keys/prd`.
 - Rotina documentada ≠ cron confirmado.
