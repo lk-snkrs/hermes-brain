@@ -214,6 +214,17 @@ Onde aplicar: Daily Sales Brief 07h, Pulso Comercial, CRO, Paid Traffic & Influe
 Próximo refinamento: cruzar campanhas/influencers/UTMs/cupons com produtos e marcas vendidos no Shopify.
 ```
 
+### LK — atribuição paga e influencers v0.3
+
+```text
+Tipo: avanço operacional / regra de execução
+Artefato: LK Paid Attribution Brief real read-only v0.3.
+Regra aprendida: performance de influencers/campanhas deve cruzar Meta Ads Insights, GA4 source/medium/campaign e Shopify landing/referrer/cupom/produtos vendidos antes de qualquer recomendação.
+Anti-padrão: tratar ROAS/compras do Meta como verdade operacional final ou escalar orçamento por ROAS extremo com gasto muito baixo.
+Onde aplicar: Daily Sales Brief 07h, Pulso Comercial, Paid Traffic & Influencer Intelligence, CRO e recomendações de criativo/campanha.
+Próximo refinamento: padronizar UTM/cupom por influencer e criar confiança da atribuição: alta/média/baixa.
+```
+
 ## Approval UX recomendada
 
 Todo preview operacional deveria permitir, mesmo que manualmente no início:

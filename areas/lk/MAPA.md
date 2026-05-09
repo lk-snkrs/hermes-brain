@@ -28,7 +28,7 @@ Fonte resumida atual: `memories/lk.md`.
 - `rotinas/morning-briefing.md` — briefing matinal.
 - `rotinas/sync-log.md` — auditoria de syncs.
 - `rotinas/consequence-tracker.md` — consequências e aprendizados de ações.
-- `rotinas/templates/` — templates read-only v0.1/v0.2 do LK Operating System: `Daily Sales Brief`, `Stock Intelligence Center` e `Weekly CEO Review`, com exemplos fictícios em `rotinas/templates/examples/` e primeiro relatório real agregado/read-only versionado em `reports/lk-daily-sales-brief-real-2026-05-08-ga4-v02.md`.
+- `rotinas/templates/` — templates read-only v0.1/v0.2/v0.3 do LK Operating System: `Daily Sales Brief`, `Stock Intelligence Center` e `Weekly CEO Review`, com exemplos fictícios em `rotinas/templates/examples/`, primeiro relatório real agregado/read-only com GA4 em `reports/lk-daily-sales-brief-real-2026-05-08-ga4-v02.md` e primeiro relatório real agregado/read-only de atribuição paga/influencers em `reports/lk-paid-attribution-brief-real-2026-05-08-v03.md`.
 
 ## Playbooks operacionais
 

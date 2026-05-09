@@ -12,7 +12,9 @@ Meta Ads e Instagram apoiam análise de mídia, públicos, criativos e campanhas
 ## Read-only
 
 - Consultar contas, páginas, campanhas, conjuntos, anúncios, insights e status.
-- Analisar criativos e hipóteses sem alterar entrega.
+- Consultar Meta Ads Insights por campanha/adset/ad para gasto, impressões, cliques, compras e valor atribuído pela plataforma.
+- Analisar criativos, influenciadores e hipóteses sem alterar entrega.
+- Cruzar Meta Ads com GA4 e Shopify antes de recomendar escala/pausa: Meta é atribuição de plataforma; Shopify continua fonte oficial de pedidos/receita.
 
 ## Write
 
@@ -30,6 +32,8 @@ Meta Ads e Instagram apoiam análise de mídia, públicos, criativos e campanhas
 ## Regra
 
 - Não prometer performance sem dados consultados. Separar hipótese, dado observado e recomendação.
+- ROAS/compras do Meta Ads não são verdade operacional final; tratar como atribuição da plataforma e reconciliar com Shopify, GA4, UTMs e cupons.
+- ROAS extremo com gasto muito baixo é sinal para investigar, não autorização para escalar orçamento.
 
 ## Escala de permissões
 

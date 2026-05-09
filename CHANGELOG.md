@@ -2,6 +2,14 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-09 — Paid Attribution LK real v0.3
+
+- Salvo no Brain o primeiro relatório real agregado/read-only de atribuição paga/influencers em `reports/lk-paid-attribution-brief-real-2026-05-08-v03.md`.
+- Cruzadas fontes read-only: GA4 source/medium/campaign, Shopify web sanitizado com landing/referrer/cupom/produtos e Meta Ads Insights por campanha/adset/ad.
+- Atualizado template do Daily Sales Brief para incluir bloco de Pago, Influencers e Conteúdo com confiança de atribuição e produtos/marcas/tamanhos vendidos.
+- Atualizada integração Meta Ads com regra de cautela: compras/ROAS da plataforma não são verdade operacional final; reconciliar com Shopify/GA4/UTM/cupom antes de recomendar escala ou pausa.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-09 — Daily Brief LK real v0.2 com GA4
 
 - Salvo no Brain o primeiro Daily Brief real agregado/read-only com GA4 em `reports/lk-daily-sales-brief-real-2026-05-08-ga4-v02.md`.
