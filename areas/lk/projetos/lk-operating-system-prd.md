@@ -503,6 +503,7 @@ Saídas possíveis:
 - Klaviyo;
 - blog post Shopify;
 - PDP copy;
+- HTML de produto / PDP Shopify;
 - SEO title/meta;
 - briefing visual;
 - CTA;
@@ -519,8 +520,27 @@ sinal/oportunidade
 → consultar DesignMD LK
 → escolher formato
 → gerar copy + estrutura + CTA + briefing visual
+→ quando for produto/PDP: gerar também HTML pronto para Shopify
 → enviar preview para aprovação
 ```
+
+### HTML de produto / PDP Shopify
+
+Quando a oportunidade envolve criação ou melhoria de produto, o `Content & Campaign Production Engine` deve gerar não só copy solta, mas também um bloco de HTML pronto para colar/adaptar no Shopify.
+
+O HTML deve seguir DesignMD LK e incluir, quando aplicável:
+
+- bloco de curadoria/por que o produto importa;
+- detalhes do produto;
+- disponibilidade por tamanho/variante;
+- indicação de pronta entrega aparente, encomenda BR, encomenda US ou status a confirmar;
+- bloco de atendimento/compra com curadoria LK;
+- CTA;
+- campos auxiliares: SEO title, meta description, handle, tags, coleções, alt text, FAQ e texto curto para card.
+
+Regra crítica:
+
+> Nenhum HTML de produto deve prometer pronta entrega sem validar Tiny e status comercial por tamanho. O HTML pode ser preparado como draft, mas publicação/alteração Shopify exige aprovação explícita.
 
 ### Memória de conteúdo
 
