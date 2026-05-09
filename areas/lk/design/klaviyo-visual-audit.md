@@ -46,6 +46,7 @@ Modo: leitura via API Klaviyo, sem envio, sem alteração de campanha, sem publi
 - Produto/imagens precisam carregar no HTML de aprovação; usar imagens reais e, quando necessário, embutidas no HTML para evitar falha de carregamento.
 - Fonte ainda não está 100% igual à usada nas newsletters; manter como hipótese v0.1 e refinar depois contra Klaviyo/Shopify.
 - Seguir nesse caminho e refinar progressivamente.
+- Lucas esclareceu que o preview serve para aprovar estética/global design direction; não está pronto para envio ao cliente nem publicação.
 
 ## Tokens extraídos dos templates
 
