@@ -2,6 +2,14 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-09 — Script Brain Improvement Score
+
+- Criado `scripts/brain_improvement_score.py` como ferramenta local/read-only para gerar relatório executivo do Brain em Markdown e JSON.
+- Gerados `reports/brain-improvement-score-2026-05-09-script.md` e `reports/brain-improvement-score-2026-05-09-script.json`, consumindo o health check JSON e arquivos versionados do repo.
+- Atualizada rotina `areas/operacoes/rotinas/brain-improvement-score.md` com comando canônico, limites e critérios de uso.
+- Atualizados projeto, roadmap e pendências para retirar a avaliação do script da fila ativa.
+- Produção, VPS/Docker, bancos, secrets, campanhas, mensagens externas, UI, cron e runtime não foram alterados.
+
 ## 2026-05-09 — Teste Material Ingest to PRD
 
 - Testada a rotina `areas/operacoes/rotinas/material-ingest-to-prd.md` em modo leve usando o PRD antigo `areas/operacoes/projetos/mission-control-prd.md`.

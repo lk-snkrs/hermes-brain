@@ -5,7 +5,6 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Ativos
 
-- [ ] Avaliar script executivo local/read-only para `brain-improvement-score.md` após validação do modo leve de `material-ingest-to-prd.md`.
 - [ ] Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
 
 ## Bloqueados — aprovação Lucas
@@ -24,6 +23,7 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Concluídos / retirados da fila ativa
 
+- [x] Script executivo local/read-only para `brain-improvement-score.md` — criado em 2026-05-09 com relatório `reports/brain-improvement-score-2026-05-09-script.md`; sem cron/UI/runtime.
 - [x] Teste `material-ingest-to-prd.md` em PRD antigo — modo leve validado em 2026-05-09 com relatório `reports/material-ingest-to-prd-test-2026-05-09.md`.
 - [x] Rodada G — Health checks do Brain — script expandido, rotina atualizada e relatório JSON gerado em 2026-05-09.
 - [x] Mission Control / Bruno — extração/adaptação/PRD documental concluídos; UI/cron seguem fora de escopo.
