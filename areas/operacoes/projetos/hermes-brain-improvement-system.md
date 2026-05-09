@@ -86,7 +86,7 @@ material externo
 ### P2 — Próximas rodadas recomendadas
 
 - Testar a rotina `material-ingest-to-prd.md` com um segundo pacote pequeno ou um PRD antigo. — concluído em 2026-05-09 com `reports/material-ingest-to-prd-test-2026-05-09.md`.
-- Avaliar script opcional de `brain_improvement_score.py` somente depois de validar melhor o formato manual.
+- Script executivo local/read-only de `brain_improvement_score.py` — concluído em 2026-05-09 com `scripts/brain_improvement_score.py`, `reports/brain-improvement-score-2026-05-09-script.md` e JSON correspondente.
 - Avaliar cron semanal de retomada de planos pendentes.
 - Transformar as partes mais repetidas em skill canônica, se o fluxo se repetir.
 
@@ -149,3 +149,17 @@ Entregas:
 - Pendência ativa removida da fila e próximo passo concentrado em avaliar script executivo para `brain_improvement_score`.
 
 Resultado: o fluxo é útil, mas não deve virar automação cega. O próximo ganho seguro é um script/relatório local read-only; cron, UI ou Telegram recorrente exigem aprovação explícita.
+
+## Entrega P2 aplicada — script executivo Brain Improvement Score
+
+Em 2026-05-09 a rotina `brain-improvement-score.md` ganhou o script local/read-only `scripts/brain_improvement_score.py`.
+
+Entregas:
+
+- Script `scripts/brain_improvement_score.py` para gerar relatório executivo em Markdown e JSON.
+- Relatório versionado: `reports/brain-improvement-score-2026-05-09-script.md`.
+- JSON versionado: `reports/brain-improvement-score-2026-05-09-script.json`.
+- Rotina atualizada com comando canônico, limites e critérios de uso.
+- Pendências atualizadas para retirar a avaliação do script da fila ativa.
+
+Resultado: score geral scriptado 99/100. A principal penalização veio de rastreabilidade/pendências, não de falha estrutural. O script não consulta runtime, VPS, Docker, APIs, bancos ou crons reais; ele é relatório local de repo.

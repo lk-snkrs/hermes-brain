@@ -19,11 +19,11 @@ Sob demanda após rodadas grandes de documentação/PRD/PR. Pode virar rotina me
 - `python3 scripts/brain_health_check.py` para validação técnica.
 - Secret scan whole-repo.
 - Leitura dos índices principais do Brain.
-- Futuro script opcional: `scripts/brain_improvement_score.py`.
+- Script local/read-only: `scripts/brain_improvement_score.py`.
 
 ## Dimensões do score
 
-Cada dimensão vai de 0 a 100. Enquanto não houver script, usar avaliação manual documentada.
+Cada dimensão vai de 0 a 100. O script gera uma primeira leitura executiva automaticamente; avaliação manual continua permitida quando houver contexto de negócio que o script não enxerga.
 
 ### 1. Identidade e agentes
 
@@ -100,6 +100,34 @@ Verifica se a história do Brain está rastreável:
 ### 8. Links, arquivos e consistência
 
 Verifica links relativos, arquivos obrigatórios e referências quebradas usando health check.
+
+
+## Execução local/read-only
+
+Comando canônico:
+
+```bash
+python3 scripts/brain_improvement_score.py \
+  --health-json reports/brain-health-check-YYYY-MM-DD.json \
+  --date YYYY-MM-DD \
+  --output reports/brain-improvement-score-YYYY-MM-DD-script.md \
+  --json-output reports/brain-improvement-score-YYYY-MM-DD-script.json
+```
+
+Limites do script:
+
+- lê somente arquivos versionados do Brain e um JSON opcional de `brain_health_check.py`;
+- não consulta APIs, bancos, VPS, Docker, cron, Telegram ou dados vivos;
+- não prova que produção/runtime está saudável;
+- não ativa automação recorrente;
+- cron, UI, Mission Control visual ou entrega automática continuam exigindo aprovação explícita do Lucas.
+
+Uso recomendado:
+
+1. Rodar `python3 scripts/brain_health_check.py --json reports/brain-health-check-YYYY-MM-DD.json`.
+2. Rodar este script consumindo o JSON do health check.
+3. Ler o Markdown gerado e decidir se há correções documentais seguras ou itens que exigem aprovação.
+4. Versionar o relatório quando ele fechar uma rodada de melhoria.
 
 ## Template de output
 

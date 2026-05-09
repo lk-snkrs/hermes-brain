@@ -391,6 +391,26 @@ Regras preservadas:
 - Mission Control segue read-only/manual; UI e cron continuam bloqueados por aprovação explícita.
 - Nenhuma ação produtiva, runtime ou externa foi executada.
 
+### Rodada L — Script Brain Improvement Score
+
+Status: concluída como rodada documental/tooling local segura, sem tocar produção, VPS, Docker, bancos, secrets, campanhas, mensagens externas, cron, UI ou runtime.
+
+Objetivo: transformar a rotina manual `brain-improvement-score.md` em um relatório executivo repetível, consumindo o JSON do health check e arquivos versionados do Brain.
+
+Entregas:
+
+1. Script `scripts/brain_improvement_score.py` criado como ferramenta local/read-only.
+2. Relatório `reports/brain-improvement-score-2026-05-09-script.md` gerado com score geral 99/100.
+3. JSON `reports/brain-improvement-score-2026-05-09-script.json` gerado para evidência estruturada.
+4. Rotina `areas/operacoes/rotinas/brain-improvement-score.md` atualizada com comando canônico e limites.
+5. Pendências atualizadas para retirar a avaliação do script da fila ativa.
+
+Regras preservadas:
+
+- O script não consulta runtime, VPS, Docker, APIs, bancos, cron real ou dados vivos.
+- O score é leitura de saúde estrutural do repo, não prova produção saudável.
+- Qualquer cron recorrente, entrega automática por Telegram, UI ou Mission Control visual continua exigindo aprovação explícita.
+
 ## Critérios de qualidade para próximas fases
 
 Toda fase deve terminar com:
@@ -405,10 +425,10 @@ Toda fase deve terminar com:
 
 ## Sequência recomendada agora
 
-1. Avaliar script executivo local/read-only para `brain-improvement-score.md`, consumindo health check JSON, pendências e changelog.
-2. Aplicar `security-checkup.md` no próximo caso de integração/canal/agente/cron antes de executar.
-3. Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
-4. Mission Control visual ou cron recorrente só depois de aprovação de cadência/escopo.
+1. Aplicar `security-checkup.md` no próximo caso de integração/canal/agente/cron antes de executar.
+2. Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
+3. Considerar template/skill canônica para relatórios de score se o script for usado em mais rodadas.
+4. Mission Control visual, cron recorrente ou entrega automática por Telegram só depois de aprovação de cadência/escopo.
 
 ## Atualização contínua obrigatória
 
