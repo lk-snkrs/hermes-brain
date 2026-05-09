@@ -19,6 +19,14 @@ Objetivo: padronizar os primeiros relatórios internos antes de criar crons, int
 - Dados pessoais devem ser mascarados por padrão no Telegram.
 - Equipe/destinatários ainda precisam ser mapeados antes de qualquer envio recorrente.
 
+## Exemplos preenchidos
+
+- `examples/daily-sales-brief-07h-exemplo.md` — exemplo fictício de briefing diário.
+- `examples/stock-intelligence-center-exemplo.md` — exemplo fictício de diagnóstico de estoque por tamanho/variante.
+- `examples/weekly-ceo-review-exemplo.md` — exemplo fictício de revisão semanal CEO.
+
+Os exemplos existem para calibrar formato e raciocínio antes de dados reais. Não representam vendas reais da LK e não autorizam nenhuma ação externa.
+
 ## Próximo passo
 
-Gerar exemplos preenchidos com dados fictícios ou dados reais read-only, conforme autorização e disponibilidade das integrações.
+Validar o formato com Lucas. Depois, gerar a primeira execução com dados reais read-only e mascarados, antes de qualquer cron ou integração de escrita.

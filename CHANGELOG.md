@@ -2,6 +2,13 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-09 — Exemplos read-only LK Operating System
+
+- Criados exemplos fictícios/read-only para `Daily Sales Brief`, `Stock Intelligence Center` e `Weekly CEO Review` em `areas/lk/rotinas/templates/examples/`.
+- Atualizados mapa LK e pendências para indicar que a próxima etapa é validar o formato com Lucas antes de primeira execução com dados reais mascarados.
+- Os exemplos separam fato, leitura, recomendação, risco, dados faltantes e aprovação, sem representar venda real nem autorizar ação externa.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-09 — PRD LK Operating System
 
 - Criado `areas/lk/projetos/lk-operating-system-prd.md` com PRD v0.1 aprovado conceitualmente por Lucas para o LK Operating System / LK Chief of Staff.
