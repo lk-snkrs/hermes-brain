@@ -11,8 +11,7 @@ Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a 
 
 ## Ativos
 
-- [ ] **Testar `material-ingest-to-prd.md` em segundo pacote pequeno ou PRD antigo** — Operações — próxima ação: escolher fonte pequena, rodar fluxo completo e registrar lacunas antes de automatizar. Evidência/base: `ROADMAP-30-DIAS-HERMES.md`, sequência recomendada.
-- [ ] **Avaliar script executivo para `brain-improvement-score.md`** — Operações — próxima ação: só criar script depois de validar mais um ciclo manual de score. Evidência/base: `reports/brain-improvement-score-2026-05-09.md` e `areas/operacoes/rotinas/brain-improvement-score.md`.
+- [ ] **Avaliar script executivo para `brain-improvement-score.md`** — Operações — próxima ação: desenhar script local/read-only que consuma health check JSON, pendências e changelog, sem cron/runtime ainda. Evidência/base: `reports/brain-improvement-score-2026-05-09.md`, `reports/material-ingest-to-prd-test-2026-05-09.md` e `areas/operacoes/rotinas/brain-improvement-score.md`.
 - [ ] **Completar subdocs de integrações não recorrentes quando virarem fluxo real** — Operações/Integrações — próxima ação: documentar Judge.me, Frenet, Tiny ERP, Email/Google Workspace, LeiloesBR, Railway, Vercel, Notion/NocoDB e Metricool somente quando houver necessidade operacional concreta. Evidência/base: `ROADMAP-30-DIAS-HERMES.md`, Rodada B.
 
 ## Bloqueados — exigem decisão/aprovação Lucas
@@ -31,6 +30,7 @@ Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a 
 
 ## Concluídos nesta revisão
 
+- **Teste de `material-ingest-to-prd.md` em PRD antigo** — concluído: rotina validada em modo leve usando `areas/operacoes/projetos/mission-control-prd.md`; artefatos locais gerados fora do repo e relatório versionado em `reports/material-ingest-to-prd-test-2026-05-09.md`. Próxima decisão: script executivo de score antes de qualquer cron/UI.
 - **Rodada G — Health checks do Brain** — concluído: `scripts/brain_health_check.py` agora cobre secrets, links/anchors markdown, arquivos estruturais obrigatórios, arquivos de agentes, MAPA por área/subárea, rotinas indexadas e skills canônicas; relatório JSON gerado em `reports/brain-health-check-2026-05-09.json`. Evidência: health check `FAIL=0 WARN=0`.
 - **Mission Control / Bruno** — concluído: extração, adaptação Hermes-native e PRD documental foram feitos; UI/cron continuam fora de escopo sem aprovação. Evidência: `areas/operacoes/projetos/mission-control-prd.md`, `CHANGELOG.md` 2026-05-09.
 - **Hermes Brain Improvement System P0** — concluído e mergeado no `main`. Evidência: PR #2, merge commit `bb7d16d`, arquivos em `areas/operacoes/rotinas/` e templates.

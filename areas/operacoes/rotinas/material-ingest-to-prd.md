@@ -45,6 +45,23 @@ Para o Hermes Brain, registrar apenas o que for decisão, rotina, template ou pl
 
 ## Fluxo operacional
 
+### 0. Escolher modo de execução
+
+Use o modo completo quando a fonte for ZIP, curso, pasta exportada, starter kit, transcrições ou pacote com vários arquivos.
+
+Use o **modo leve** quando a fonte for um único documento/PRD antigo já legível. Nesse caso, o mínimo suficiente é:
+
+1. área segura fora do repo principal;
+2. inventário simples;
+3. texto/corpus;
+4. documentação executiva;
+5. matriz aplicar/adaptar/deferir/rejeitar;
+6. revisão/PRD atualizado ou recomendação explícita;
+7. secret scan;
+8. registro no Brain apenas do que virar decisão, rotina, pendência ou relatório.
+
+O modo leve foi validado em 2026-05-09 com `areas/operacoes/projetos/mission-control-prd.md`; relatório: `../../reports/material-ingest-to-prd-test-2026-05-09.md`.
+
 ### 1. Preparar área segura
 
 1. Criar diretório de trabalho fora do repo principal, normalmente em `/opt/data/hermes_bruno_ingest/`.
