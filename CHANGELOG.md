@@ -1,11 +1,18 @@
+# Changelog — Hermes Brain
+
+## 2026-05-10 — LK Influencer Operational ROAS v0.2
+
+- Criado `reports/lk-influencer-operational-roas-v02-2026-05-10.md` para separar Meta attributed ROAS, Shopify evidence revenue e ROAS operacional provisório por influencer.
+- Atualizado `campaign-attribution-dictionary-seed-v0.md`: Silvia Heinz agora tem ROAS operacional provisório 12,93x; Helena Lunardelli 6,34x; Lala Noleto permanece `ambiguous_meta_signal_only` com zero evidência Shopify direta no recorte.
+- Próxima ação segura: gerar tabela `influencer → produto/SKU/tamanho → estoque` começando por Silvia/Helena; Lala segue investigação de cupom/UTM/landing/brief real.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-10 — LK team routing matrix v0.1
 
 - Atualizado `areas/lk/equipe/README.md` com matriz inicial de funções, destinatários, revisores e aprovações do LK Operating System.
 - Matriz inclui Lucas, Renan, Júlio e Danilo, com roteamento por Daily Sales Brief, Pulso Comercial, Stock Intelligence, Supply & Sourcing, Paid/Influencer, Brand Mix, CRO, SEO, DesignMD, CRM, financeiro/fiscal e loja física.
 - Regra preservada: enquanto Lucas não validar canais/cópias, todo output real segue primeiro para Lucas em preview; nenhum cron/envio recorrente deve assumir destinatários.
 - Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
-
-# Changelog — Hermes Brain
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 

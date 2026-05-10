@@ -468,11 +468,12 @@ Toda fase deve terminar com:
 
 ## Sequência recomendada agora
 
-1. Aplicar `security-checkup.md` no próximo caso de integração/canal/agente/cron antes de executar.
-2. Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
-3. Usar `scripts/retomada_planos_prds.py` sob demanda antes de retomar planos longos; cron recorrente só se a fila voltar a crescer.
-4. Considerar template/skill canônica para relatórios de score se o script for usado em mais rodadas.
-5. Mission Control visual, cron recorrente ou entrega automática por Telegram só depois de aprovação de cadência/escopo.
+1. Aprofundar dicionário canônico de influencers/campanhas LK e auditar match influencer → produto — v0.2 concluída em `reports/lk-influencer-operational-roas-v02-2026-05-10.md`; próxima ação: tabela influencer → produto/SKU/tamanho → estoque para Silvia/Helena e investigação de cupom/UTM/landing para Lala.
+2. Aplicar `security-checkup.md` no próximo caso de integração/canal/agente/cron antes de executar.
+3. Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
+4. Usar `scripts/retomada_planos_prds.py` sob demanda antes de retomar planos longos; cron recorrente só se a fila voltar a crescer.
+5. Considerar template/skill canônica para relatórios de score se o script for usado em mais rodadas.
+6. Mission Control visual, cron recorrente ou entrega automática por Telegram só depois de aprovação de cadência/escopo.
 
 ## Atualização contínua obrigatória
 

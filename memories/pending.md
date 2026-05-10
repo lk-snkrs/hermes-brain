@@ -9,7 +9,7 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 - [x] Criar mapa canônico SKU Shopify ↔ Tiny — preview read-only `reports/lk-sku-shopify-tiny-map-preview-2026-05-10.md`; 6/6 campeões antes sem match tiveram candidato Tiny com confiança alta; tabela de aprovação para alias/correção gerada em `reports/lk-sku-tiny-alias-approval-preview-2026-05-10.md`; sem write produtivo.
 - [x] Investigar/corrigir leitura dos ROAS Meta 50–70x de influencers — relatório `reports/lk-roas-influencer-correction-readonly-2026-05-10.md`; 50–70x é Meta attributed ROAS, não ROAS operacional LK.
 - [x] Calcular ROAS atribuído por título de campanha Meta — relatório `reports/lk-meta-campaign-title-roas-readonly-2026-05-10.md`; separa Meta attributed ROAS por `campaign_name` de Shopify UTM evidence com matching estrito.
-- [ ] Preencher dicionário canônico de influencers/campanhas LK e auditar match influencer → produto, começando por Lala Noleto, Silvia Heinz e Helena Lunardelli; calcular ROAS operacional só com Shopify evidence/cupom/UTM/landing/produto + custo relacionado, checando campaign/adset/ad/título de campanha e janela real.
+- [ ] Aprofundar dicionário canônico de influencers/campanhas LK e auditar match influencer → produto: v0.2 gerou `reports/lk-influencer-operational-roas-v02-2026-05-10.md`; Silvia 12,93x e Helena 6,34x como ROAS operacional provisório com evidência Shopify; Lala segue ambígua sem evidência Shopify direta. Próxima ação: confirmar handles/cupons/UTMs oficiais e gerar tabela influencer → produto/SKU/tamanho → estoque para Silvia/Helena.
 - [ ] Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
 
 ## Bloqueados — aprovação Lucas

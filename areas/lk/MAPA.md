@@ -28,7 +28,7 @@ Fonte resumida atual: `memories/lk.md`.
 - `rotinas/morning-briefing.md` — briefing matinal.
 - `rotinas/sync-log.md` — auditoria de syncs.
 - `rotinas/consequence-tracker.md` — consequências e aprendizados de ações.
-- `rotinas/templates/` — templates read-only v0.1/v0.2/v0.3 do LK Operating System: `Daily Sales Brief`, `Stock Intelligence Center` e `Weekly CEO Review`, com exemplos fictícios em `rotinas/templates/examples/`, primeiro relatório real agregado/read-only com GA4 em `reports/lk-daily-sales-brief-real-2026-05-08-ga4-v02.md` e primeiro relatório real agregado/read-only de atribuição paga/influencers em `reports/lk-paid-attribution-brief-real-2026-05-08-v03.md`, primeiro Stock Intelligence + Influencer/Product Audit em `reports/lk-stock-influencer-audit-readonly-2026-05-10.md` e rotina/template de dicionário canônico em `sub-areas/trafego-pago/rotinas/campaign-attribution-dictionary.md`.
+- `rotinas/templates/` — templates read-only v0.1/v0.2/v0.3 do LK Operating System: `Daily Sales Brief`, `Stock Intelligence Center` e `Weekly CEO Review`, com exemplos fictícios em `rotinas/templates/examples/`, primeiro relatório real agregado/read-only com GA4 em `reports/lk-daily-sales-brief-real-2026-05-08-ga4-v02.md` e primeiro relatório real agregado/read-only de atribuição paga/influencers em `reports/lk-paid-attribution-brief-real-2026-05-08-v03.md`, primeiro Stock Intelligence + Influencer/Product Audit em `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`, rotina/template de dicionário canônico em `sub-areas/trafego-pago/rotinas/campaign-attribution-dictionary.md` e ROAS operacional provisório por influencer em `reports/lk-influencer-operational-roas-v02-2026-05-10.md`.
 
 ## Playbooks operacionais
 
