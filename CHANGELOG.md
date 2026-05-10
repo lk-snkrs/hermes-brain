@@ -2,7 +2,8 @@
 
 ## 2026-05-10 — LK Influencer Audit corrigido: Meta canônico + criativos + produtos
 
-- Gerado relatório read-only corrigido em `reports/lk-influencer-audit-corrected-2026-05-10/audit.md` e `.json`, com imagens dos criativos em `creative_images/` e contact sheet `top_creatives_contact_sheet.png`.
+- Gerado relatório read-only corrigido em `reports/lk-influencer-audit-corrected-2026-05-10/audit.md` e `.json`, com imagens dos criativos em `creative_images/`, contact sheet `top_creatives_contact_sheet.png` e versão vertical `top_creatives_contact_sheet_vertical.png`/`.html`.
+- A versão vertical registra que criativos como Helena #4/#5/#8 podem compartilhar exatamente o mesmo asset visual, mas ter atribuições diferentes por estarem em anúncios/adsets/campanhas diferentes.
 - Correção crítica: compras Meta agora usam uma única action key canônica por anúncio (`offsite_conversion.fb_pixel_purchase` preferencial), evitando triplicar `purchase + omni_purchase + offsite_conversion`.
 - Influencers foram descobertos e normalizados por Meta direto (`campaign_name`, `adset_name`, `ad_name`), unificando campanhas repetidas como Silvia Henz/Silvia/variações.
 - Produtos vendidos são atribuídos apenas quando existe ponte Shopify textual verificável (cupom, UTM/landing/referrer, note attributes, note ou tags); sem ponte, o relatório mantém o criativo como sinal Meta sem produto vendido atribuído.
