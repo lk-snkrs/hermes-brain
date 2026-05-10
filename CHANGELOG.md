@@ -1,3 +1,11 @@
+## 2026-05-10 — LK Meta attribution label correction
+
+- Corrigida a interpretação da reconciliação Pareto: o campo Meta que o PDF chama de `Receita` agora é rotulado nos relatórios LK como `valor atribuído Meta no gerenciador`, não como venda/receita real da LK.
+- Abril/2026 mantém match de 100% com o campo Meta/Ads Manager da Pareto: R$ 38.954,76 spend, 229 compras atribuídas, R$ 797.654,65 valor atribuído, ROAS Meta 20,48.
+- Adicionado alerta explícito: a LK/Pareto e-commerce vendeu R$ 722.636,36; como o valor atribuído Meta excede esse total em R$ 75.018,29, não é correto dizer que “a Meta vendeu R$ 797 mil”.
+- Atualizados `scripts/lk_monthly_pareto_reconciliation.py`, `reports/lk-pareto-april-2026/reconciliation-audit.md`, `pareto-compatible-script-output.*` e a rotina `pareto-monthly-reconciliation.md`.
+- Produção, VPS/Docker, bancos, secrets, campanhas, Shopify/Tiny/Klaviyo/WhatsApp e envios externos não foram alterados.
+
 ## 2026-05-10 — LK Monthly Pareto reconciliation script
 
 - Adicionado `scripts/lk_monthly_pareto_reconciliation.py`, script read-only para gerar reconciliação mensal Meta em modo `Pareto-compatible` e `Lucas-operacional`.

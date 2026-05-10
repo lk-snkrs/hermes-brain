@@ -22,12 +22,24 @@ Não gastar energia tentando zerar centavos/reais pequenos se:
 - a métrica canônica está correta;
 - a diferença vem de rounding, naming, anúncios sem conversão ou recorte CSV/PDF.
 
+## Correção conceitual — Meta não é venda real
+
+O PDF Pareto chama o campo do Meta de `Receita`, mas a leitura correta para LK é:
+
+- `R$ 722.636,36` = venda/receita e-commerce do negócio no mês, segundo Pareto/Shopify/analytics.
+- `R$ 797.654,65` = valor de conversão **atribuído pelo Meta Ads Manager**, não venda real da LK.
+
+Como o valor atribuído pelo Meta ultrapassa a receita total do e-commerce em `R$ 75.018,29`, ele não pode ser descrito como “a Meta vendeu R$ 797 mil”. A frase correta é: **o Meta atribuiu R$ 797.654,65 no gerenciador**.
+
+Isso pode acontecer por janela de atribuição, sobreposição com outros canais, deduplicação imperfeita, diferença entre plataformas e GA4/Shopify e regras do pixel. O próprio PDF alerta que há diferenças de atribuição entre plataformas e GA4.
+
 ## Fonte Meta correta
 
 - Conta: `act_1242062509867163`.
 - Nível: `ad`.
 - Período: mês fechado do relatório.
 - Métrica de compra/valor: uma action canônica por anúncio, preferindo `offsite_conversion.fb_pixel_purchase`.
+- Nome do campo em relatórios LK: `valor atribuído Meta` ou `valor de conversão no gerenciador`, nunca `venda da Meta`.
 - Nunca somar `purchase`, `omni_purchase` e `offsite_conversion.fb_pixel_purchase` como se fossem compras distintas.
 
 ## Naming Pareto-compatible
@@ -81,13 +93,14 @@ reports/lk-pareto-april-2026/reconciliation-audit.md
 reports/lk-pareto-april-2026/pareto-compatible-script-output.md
 ```
 
-Meta global abril bateu exatamente:
+Meta global abril bateu exatamente com o campo Meta/Ads Manager da Pareto, mas agora com nomenclatura corrigida:
 
 - Investimento: `R$ 38.954,76`.
-- Compras: `229`.
-- Valor Meta: `R$ 797.654,65`.
-- ROAS: `20,48`.
-- CPA: `R$ 170,11`.
+- Compras atribuídas no gerenciador: `229`.
+- Valor atribuído Meta no gerenciador: `R$ 797.654,65`.
+- Receita/venda e-commerce Pareto: `R$ 722.636,36`.
+- ROAS Meta atribuído: `20,48`.
+- CPA Meta atribuído: `R$ 170,11`.
 
 ## Criativos
 

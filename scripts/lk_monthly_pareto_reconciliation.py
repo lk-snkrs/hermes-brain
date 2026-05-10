@@ -31,7 +31,10 @@ META_ACCOUNT_FALLBACK = 'act_1242062509867163'
 CANONICAL_ACTIONS = ['offsite_conversion.fb_pixel_purchase', 'omni_purchase', 'purchase']
 
 APRIL_2026_PARETO = {
+    # Important: Pareto/PDF calls this Meta field "Receita", but it is the
+    # Ads Manager conversion value / attributed value, not LK real net sales.
     'global': {'spend': 38954.76, 'purchases': 229.0, 'value': 797654.65, 'roas': 20.48, 'cpa': 170.11},
+    'ecommerce': {'orders': 233, 'revenue': 722636.36},
     'influencers': {
         'Ju Mesquita': {'ads': 9, 'spend': 2663.19, 'purchases': 20.0, 'value': 58595.44},
         'Arlindo': {'ads': 3, 'spend': 2071.87, 'purchases': 16.0, 'value': 75312.65},
@@ -231,24 +234,36 @@ def render_md(rep: Dict[str, Any]) -> str:
     lines.append('')
     lines.append('## Resumo')
     g = rep['global']
-    lines.append(f"- Meta global: {money(g['spend'])} spend, {g['purchases']:.0f} compras, {money(g['value'])} valor Meta, ROAS {g['roas']:.2f}, CPA {money(g['cpa'])}.")
+    lines.append(f"- Meta global: {money(g['spend'])} spend, {g['purchases']:.0f} compras atribuídas no gerenciador, {money(g['value'])} **valor atribuído Meta no gerenciador** (não venda/receita real LK), ROAS Meta {g['roas']:.2f}, CPA Meta {money(g['cpa'])}.")
+    ecommerce = rep.get('pareto_ecommerce') or {}
+    if ecommerce:
+        diff = g['value'] - ecommerce.get('revenue', 0)
+        lines.append(f"- Shopify/Pareto e-commerce: {ecommerce.get('orders', 0):.0f} pedidos, {money(ecommerce.get('revenue', 0))} venda/receita do negócio.")
+        lines.append(f"- Alerta de interpretação: Meta atribuiu {money(g['value'])}, {money(diff)} acima da receita e-commerce do mês; portanto esse número **não pode ser chamado de venda da Meta**. Ele deve ser lido como valor atribuído pelo pixel/Ads Manager.")
     if rep.get('expected_global'):
-        lines.append('- Comparação Pareto global:')
+        lines.append('- Comparação Pareto global — campo Meta/Ads Manager:')
         for key, c in rep['expected_global'].items():
-            lines.append(f"  - {key}: esperado `{c['expected']}`, atual `{c['actual']}`, delta `{c['delta']}`, match `{c['match_pct']}%`.")
+            label = 'attributed_value' if key == 'value' else key
+            lines.append(f"  - {label}: esperado `{c['expected']}`, atual `{c['actual']}`, delta `{c['delta']}`, match `{c['match_pct']}%`.")
     lines.append('- Regra Lucas: 99%+ é operacionalmente correto; diferenças pequenas de poucos reais não bloqueiam se a metodologia está alinhada.')
     lines.append('- Marias separadas no modo Pareto-compatible: Maria, Maria Fernanda e Mariah.')
     lines.append('')
     lines.append('## Influencers — Pareto-compatible')
     for r in rep['pareto_rows']:
-        lines.append(f"- {r['label']}: {r['ads']} anúncios; spend {money(r['spend'])}; compras {r['purchases']:.0f}; valor {money(r['value'])}; ROAS {r['roas']:.2f}; CPA {money(r['cpa'])}.")
+        lines.append(f"- {r['label']}: {r['ads']} anúncios; spend {money(r['spend'])}; compras atribuídas {r['purchases']:.0f}; valor atribuído Meta {money(r['value'])}; ROAS Meta {r['roas']:.2f}; CPA Meta {money(r['cpa'])}.")
     lines.append('')
     lines.append('## Influencers — Lucas-operacional')
     for r in rep['operational_rows'][:30]:
-        lines.append(f"- {r['label']}: {r['ads']} anúncios; spend {money(r['spend'])}; compras {r['purchases']:.0f}; valor {money(r['value'])}; ROAS {r['roas']:.2f}.")
+        lines.append(f"- {r['label']}: {r['ads']} anúncios; spend {money(r['spend'])}; compras atribuídas {r['purchases']:.0f}; valor atribuído Meta {money(r['value'])}; ROAS Meta {r['roas']:.2f}.")
+    lines.append('')
+    lines.append('## Correção conceitual')
+    lines.append('- Correto: LK vendeu no mês o valor de e-commerce/Shopify/Pareto.')
+    lines.append('- Correto: Meta reportou valor atribuído pelo gerenciador, que pode ultrapassar a receita real por janela de atribuição, deduplicação imperfeita, cross-channel e diferença de origem de mensuração.')
+    lines.append('- Errado: dizer que “a Meta vendeu” mais que a LK vendeu no mês.')
     lines.append('')
     lines.append('## Guardrails')
     lines.append('- Meta é atribuição de plataforma, não receita operacional final.')
+    lines.append('- Shopify/Pareto e-commerce é a referência de venda real mensal do negócio.')
     lines.append('- Shopify/produto/SKU/tamanho exigem ponte segura em outro relatório operacional.')
     lines.append('- Não usar thumbnail 64×64 como criativo visual em e-mails LK.')
     return '\n'.join(lines) + '\n'
@@ -274,10 +289,12 @@ def main() -> None:
         'global': g,
         'pareto_rows': pareto_rows,
         'operational_rows': operational_rows,
+        'pareto_ecommerce': {},
         'expected_global': {},
         'expected_influencers': {},
     }
     if args.month == '2026-04':
+        rep['pareto_ecommerce'] = APRIL_2026_PARETO['ecommerce']
         rep['expected_global'] = compare(APRIL_2026_PARETO['global'], g)
         by_label = {r['label']: r for r in pareto_rows}
         rep['expected_influencers'] = {k: compare(v, by_label.get(k, {})) for k, v in APRIL_2026_PARETO['influencers'].items()}
