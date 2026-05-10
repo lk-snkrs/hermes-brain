@@ -1,0 +1,1187 @@
+{
+  "generated_at": "2026-05-10T01:19:00",
+  "mode": "read-only",
+  "period": {
+    "from": "2025-12-01",
+    "to": "2026-05-10"
+  },
+  "secrets_present": {
+    "META_ACCESS_TOKEN": true,
+    "META_ADS_ACCOUNT_ID": true,
+    "SHOPIFY_STORE_URL": true,
+    "SHOPIFY_ACCESS_TOKEN": true,
+    "METRICOOL_API_TOKEN": true,
+    "METRICOOL_USER_ID": true,
+    "METRICOOL_BLOG_ID": true
+  },
+  "meta": {
+    "default": {
+      "status": 403,
+      "error": {
+        "error": {
+          "message": "Application request limit reached",
+          "type": "OAuthException",
+          "is_transient": true,
+          "code": 4,
+          "error_subcode": 1504022,
+          "error_user_title": "Solicitações excessivas à API",
+          "error_user_msg": "Esse app realizou uma quantidade excessiva de chamadas. Aguarde um pouco e tente novamente. Para obter mais informações, consulte https://developers.facebook.com/docs/marketing-api/insights/best-practices/#insightscallload.",
+          "fbtrace_id": "AGP5YlpdmJ04IvUOWiIqji9"
+        }
+      }
+    },
+    "1d_click": {
+      "status": 200,
+      "row_count": 225,
+      "account": {
+        "spend": 190458.59999999992,
+        "clicks": 875137,
+        "impressions": 12141278,
+        "purchase_count": 3909.0,
+        "purchase_value": 11457768.120000005,
+        "ads": 225,
+        "roas_platform": 60.15883829871694
+      },
+      "influencers": {
+        "Lala Noleto": {
+          "spend": 25750.260000000002,
+          "clicks": 29601,
+          "impressions": 332128,
+          "purchase_count": 519.0,
+          "purchase_value": 1686413.8499999999,
+          "ads": 19,
+          "top_ads": [
+            {
+              "spend": 19595.62,
+              "value": 1311795.96,
+              "purchases": 405.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Lala noleto] —Simples"
+            },
+            {
+              "spend": 4347.31,
+              "value": 275770.52999999997,
+              "purchases": 72.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Lala noleto] — RMKT"
+            },
+            {
+              "spend": 702.25,
+              "value": 46947.45,
+              "purchases": 21.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Pareto.Vendas-Adv [ Campanha Nova]",
+              "ad": "[influencer Lala noleto] — Adv geral"
+            },
+            {
+              "spend": 9.23,
+              "value": 16799.94,
+              "purchases": 6.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Lala-Nolleto- start 30-04-2026  Adv geral] — DIA DAS MÃES — Cópia"
+            },
+            {
+              "spend": 129.95,
+              "value": 13500.0,
+              "purchases": 6.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Lala-Nolleto- start 30-04-2026  Adv geral] — DIA DAS MÃES"
+            },
+            {
+              "spend": 13.51,
+              "value": 13500.0,
+              "purchases": 6.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Pareto.Vendas-Adv [ Campanha Nova]",
+              "ad": "[influencer Lala-Nolleto- start 30-04-2026  Adv geral] — DIA DAS MÃES — Story 02 — Cópia"
+            },
+            {
+              "spend": 359.89,
+              "value": 8099.969999999999,
+              "purchases": 3.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ Conjunto de anúncios",
+              "ad": "[influencer Lala noleto] —Simples"
+            },
+            {
+              "spend": 1.12,
+              "value": 0,
+              "purchases": 0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Lala Noleto- Stories]"
+            },
+            {
+              "spend": 0.24,
+              "value": 0,
+              "purchases": 0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Lala Noleto- Stories] RMKT"
+            },
+            {
+              "spend": 0.01,
+              "value": 0,
+              "purchases": 0,
+              "campaign": "[PD][MEIO] TRAF (antiga Simples | Tráfego)",
+              "adset": "Simples | [Regiona l Rio de Janeiro - Bairros Nobres]",
+              "ad": "[influencer Lala Noleto- Stories] REGIONAL"
+            }
+          ],
+          "roas_platform": 65.4911387302497
+        },
+        "Helena Lunardelli": {
+          "spend": 24364.509999999995,
+          "clicks": 39008,
+          "impressions": 477761,
+          "purchase_count": 627.0,
+          "purchase_value": 1720526.4899999998,
+          "ads": 28,
+          "top_ads": [
+            {
+              "spend": 4384.28,
+              "value": 312759.63,
+              "purchases": 111.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 3] — Cópia"
+            },
+            {
+              "spend": 5081.68,
+              "value": 287424.08999999997,
+              "purchases": 117.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 3]"
+            },
+            {
+              "spend": 3554.29,
+              "value": 235595.73,
+              "purchases": 81.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 3] — Cópia"
+            },
+            {
+              "spend": 1462.86,
+              "value": 162877.53,
+              "purchases": 48.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 1 ] —"
+            },
+            {
+              "spend": 1958.34,
+              "value": 162486.78,
+              "purchases": 66.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 5] — —"
+            },
+            {
+              "spend": 734.44,
+              "value": 104905.70999999999,
+              "purchases": 30.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 5] — — — Cópia"
+            },
+            {
+              "spend": 963.55,
+              "value": 101699.79000000001,
+              "purchases": 21.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Helena- start 22-04-2026  Adv geral] — Onitsuka Tiger x Versace.- Video 02 — Cópia"
+            },
+            {
+              "spend": 640.82,
+              "value": 81603.69,
+              "purchases": 27.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 1 ] — — Cópia"
+            },
+            {
+              "spend": 1088.06,
+              "value": 67753.29000000001,
+              "purchases": 27.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 4] — — Cópia"
+            },
+            {
+              "spend": 1531.4,
+              "value": 67094.97,
+              "purchases": 30.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 5] — — — Cópia"
+            }
+          ],
+          "roas_platform": 70.61609242295454
+        },
+        "Silvia Heinz": {
+          "spend": 50311.49000000002,
+          "clicks": 214922,
+          "impressions": 2533108,
+          "purchase_count": 822.0,
+          "purchase_value": 2560642.92,
+          "ads": 33,
+          "top_ads": [
+            {
+              "spend": 4266.92,
+              "value": 512990.43,
+              "purchases": 174.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Silvia start 11.12.25- RMKT]"
+            },
+            {
+              "spend": 3508.68,
+              "value": 228855.06,
+              "purchases": 48.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Silvia start 11.12.25- Adv geral] — — Cópia"
+            },
+            {
+              "spend": 3967.7,
+              "value": 223834.38,
+              "purchases": 99.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Pareto.Vendas-Adv [ Campanha Nova]",
+              "ad": "[influencer Silvia | start 20-12-25 | Camp Onitsuka] — Cópia"
+            },
+            {
+              "spend": 2096.23,
+              "value": 215022.77999999997,
+              "purchases": 75.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Silvia | start 20-12-25 | Onitsuka Sabot Stories 3]"
+            },
+            {
+              "spend": 2753.08,
+              "value": 160685.04,
+              "purchases": 45.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Silvia | start 15-12-25 | New Balance 204L Stories 1]"
+            },
+            {
+              "spend": 1534.75,
+              "value": 135198.06,
+              "purchases": 24.0,
+              "campaign": "Pareto.lancamento.Jacquemus",
+              "adset": "Lista Zipper",
+              "ad": "[influencer Silvia 24-03-26] - jacquemus]Lista Compradores —"
+            },
+            {
+              "spend": 1624.55,
+              "value": 127379.79000000001,
+              "purchases": 30.0,
+              "campaign": "Pareto.lancamento.Jacquemus",
+              "adset": "Lista Zipper",
+              "ad": "[influencer Silvia 24-03-26] - jacquemus video 02]Lista Compradores"
+            },
+            {
+              "spend": 3611.29,
+              "value": 121804.34999999999,
+              "purchases": 51.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Silvia | start 20-12-25 | Onitsuka Sabot Stories 2] —"
+            },
+            {
+              "spend": 953.46,
+              "value": 97758.39,
+              "purchases": 24.0,
+              "campaign": "Pareto.lancamento.Jacquemus",
+              "adset": "Lista VIP",
+              "ad": "[influencer Silvia 11-03-26] - jacquemus]Lista Compradores"
+            },
+            {
+              "spend": 1343.32,
+              "value": 97500.0,
+              "purchases": 21.0,
+              "campaign": "Pareto.lancamento.Jacquemus",
+              "adset": "Lista VIP",
+              "ad": "[influencer Silvia 24-03-26] - jacquemus]Lista Compradores —"
+            }
+          ],
+          "roas_platform": 50.89578782103251
+        }
+      }
+    },
+    "7d_click": {
+      "status": 200,
+      "row_count": 225,
+      "account": {
+        "spend": 190459.58999999994,
+        "clicks": 875150,
+        "impressions": 12141477,
+        "purchase_count": 3909.0,
+        "purchase_value": 11457768.120000005,
+        "ads": 225,
+        "roas_platform": 60.15852559590204
+      },
+      "influencers": {
+        "Lala Noleto": {
+          "spend": 25750.269999999997,
+          "clicks": 29601,
+          "impressions": 332129,
+          "purchase_count": 519.0,
+          "purchase_value": 1686413.8499999999,
+          "ads": 19,
+          "top_ads": [
+            {
+              "spend": 19595.62,
+              "value": 1311795.96,
+              "purchases": 405.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Lala noleto] —Simples"
+            },
+            {
+              "spend": 4347.32,
+              "value": 275770.52999999997,
+              "purchases": 72.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Lala noleto] — RMKT"
+            },
+            {
+              "spend": 702.25,
+              "value": 46947.45,
+              "purchases": 21.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Pareto.Vendas-Adv [ Campanha Nova]",
+              "ad": "[influencer Lala noleto] — Adv geral"
+            },
+            {
+              "spend": 9.23,
+              "value": 16799.94,
+              "purchases": 6.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Lala-Nolleto- start 30-04-2026  Adv geral] — DIA DAS MÃES — Cópia"
+            },
+            {
+              "spend": 129.95,
+              "value": 13500.0,
+              "purchases": 6.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Lala-Nolleto- start 30-04-2026  Adv geral] — DIA DAS MÃES"
+            },
+            {
+              "spend": 13.51,
+              "value": 13500.0,
+              "purchases": 6.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Pareto.Vendas-Adv [ Campanha Nova]",
+              "ad": "[influencer Lala-Nolleto- start 30-04-2026  Adv geral] — DIA DAS MÃES — Story 02 — Cópia"
+            },
+            {
+              "spend": 359.89,
+              "value": 8099.969999999999,
+              "purchases": 3.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ Conjunto de anúncios",
+              "ad": "[influencer Lala noleto] —Simples"
+            },
+            {
+              "spend": 1.12,
+              "value": 0,
+              "purchases": 0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Lala Noleto- Stories]"
+            },
+            {
+              "spend": 0.24,
+              "value": 0,
+              "purchases": 0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Lala Noleto- Stories] RMKT"
+            },
+            {
+              "spend": 0.01,
+              "value": 0,
+              "purchases": 0,
+              "campaign": "[PD][MEIO] TRAF (antiga Simples | Tráfego)",
+              "adset": "Simples | [Regiona l Rio de Janeiro - Bairros Nobres]",
+              "ad": "[influencer Lala Noleto- Stories] REGIONAL"
+            }
+          ],
+          "roas_platform": 65.49111329706446
+        },
+        "Helena Lunardelli": {
+          "spend": 24364.549999999996,
+          "clicks": 39009,
+          "impressions": 477762,
+          "purchase_count": 627.0,
+          "purchase_value": 1720526.4899999998,
+          "ads": 28,
+          "top_ads": [
+            {
+              "spend": 4384.28,
+              "value": 312759.63,
+              "purchases": 111.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 3] — Cópia"
+            },
+            {
+              "spend": 5081.68,
+              "value": 287424.08999999997,
+              "purchases": 117.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 3]"
+            },
+            {
+              "spend": 3554.33,
+              "value": 235595.73,
+              "purchases": 81.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 3] — Cópia"
+            },
+            {
+              "spend": 1462.86,
+              "value": 162877.53,
+              "purchases": 48.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 1 ] —"
+            },
+            {
+              "spend": 1958.34,
+              "value": 162486.78,
+              "purchases": 66.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 5] — —"
+            },
+            {
+              "spend": 734.44,
+              "value": 104905.70999999999,
+              "purchases": 30.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 5] — — — Cópia"
+            },
+            {
+              "spend": 963.55,
+              "value": 101699.79000000001,
+              "purchases": 21.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Helena- start 22-04-2026  Adv geral] — Onitsuka Tiger x Versace.- Video 02 — Cópia"
+            },
+            {
+              "spend": 640.82,
+              "value": 81603.69,
+              "purchases": 27.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 1 ] — — Cópia"
+            },
+            {
+              "spend": 1088.06,
+              "value": 67753.29000000001,
+              "purchases": 27.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 4] — — Cópia"
+            },
+            {
+              "spend": 1531.4,
+              "value": 67094.97,
+              "purchases": 30.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 5] — — — Cópia"
+            }
+          ],
+          "roas_platform": 70.61597649043385
+        },
+        "Silvia Heinz": {
+          "spend": 50311.680000000015,
+          "clicks": 214922,
+          "impressions": 2533112,
+          "purchase_count": 822.0,
+          "purchase_value": 2560642.92,
+          "ads": 33,
+          "top_ads": [
+            {
+              "spend": 4266.92,
+              "value": 512990.43,
+              "purchases": 174.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Silvia start 11.12.25- RMKT]"
+            },
+            {
+              "spend": 3508.68,
+              "value": 228855.06,
+              "purchases": 48.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Silvia start 11.12.25- Adv geral] — — Cópia"
+            },
+            {
+              "spend": 3967.7,
+              "value": 223834.38,
+              "purchases": 99.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Pareto.Vendas-Adv [ Campanha Nova]",
+              "ad": "[influencer Silvia | start 20-12-25 | Camp Onitsuka] — Cópia"
+            },
+            {
+              "spend": 2096.32,
+              "value": 215022.77999999997,
+              "purchases": 75.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Silvia | start 20-12-25 | Onitsuka Sabot Stories 3]"
+            },
+            {
+              "spend": 2753.08,
+              "value": 160685.04,
+              "purchases": 45.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Silvia | start 15-12-25 | New Balance 204L Stories 1]"
+            },
+            {
+              "spend": 1534.75,
+              "value": 135198.06,
+              "purchases": 24.0,
+              "campaign": "Pareto.lancamento.Jacquemus",
+              "adset": "Lista Zipper",
+              "ad": "[influencer Silvia 24-03-26] - jacquemus]Lista Compradores —"
+            },
+            {
+              "spend": 1624.55,
+              "value": 127379.79000000001,
+              "purchases": 30.0,
+              "campaign": "Pareto.lancamento.Jacquemus",
+              "adset": "Lista Zipper",
+              "ad": "[influencer Silvia 24-03-26] - jacquemus video 02]Lista Compradores"
+            },
+            {
+              "spend": 3611.29,
+              "value": 121804.34999999999,
+              "purchases": 51.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Silvia | start 20-12-25 | Onitsuka Sabot Stories 2] —"
+            },
+            {
+              "spend": 953.56,
+              "value": 97758.39,
+              "purchases": 24.0,
+              "campaign": "Pareto.lancamento.Jacquemus",
+              "adset": "Lista VIP",
+              "ad": "[influencer Silvia 11-03-26] - jacquemus]Lista Compradores"
+            },
+            {
+              "spend": 1343.32,
+              "value": 97500.0,
+              "purchases": 21.0,
+              "campaign": "Pareto.lancamento.Jacquemus",
+              "adset": "Lista VIP",
+              "ad": "[influencer Silvia 24-03-26] - jacquemus]Lista Compradores —"
+            }
+          ],
+          "roas_platform": 50.89559561517324
+        }
+      }
+    },
+    "1d_view": {
+      "status": 200,
+      "row_count": 225,
+      "account": {
+        "spend": 190460.18999999994,
+        "clicks": 875150,
+        "impressions": 12141484,
+        "purchase_count": 3909.0,
+        "purchase_value": 11457768.120000005,
+        "ads": 225,
+        "roas_platform": 60.158336080626654
+      },
+      "influencers": {
+        "Lala Noleto": {
+          "spend": 25750.29,
+          "clicks": 29601,
+          "impressions": 332131,
+          "purchase_count": 519.0,
+          "purchase_value": 1686413.8499999999,
+          "ads": 19,
+          "top_ads": [
+            {
+              "spend": 19595.64,
+              "value": 1311795.96,
+              "purchases": 405.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Lala noleto] —Simples"
+            },
+            {
+              "spend": 4347.32,
+              "value": 275770.52999999997,
+              "purchases": 72.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Lala noleto] — RMKT"
+            },
+            {
+              "spend": 702.25,
+              "value": 46947.45,
+              "purchases": 21.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Pareto.Vendas-Adv [ Campanha Nova]",
+              "ad": "[influencer Lala noleto] — Adv geral"
+            },
+            {
+              "spend": 9.23,
+              "value": 16799.94,
+              "purchases": 6.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Lala-Nolleto- start 30-04-2026  Adv geral] — DIA DAS MÃES — Cópia"
+            },
+            {
+              "spend": 129.95,
+              "value": 13500.0,
+              "purchases": 6.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Lala-Nolleto- start 30-04-2026  Adv geral] — DIA DAS MÃES"
+            },
+            {
+              "spend": 13.51,
+              "value": 13500.0,
+              "purchases": 6.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Pareto.Vendas-Adv [ Campanha Nova]",
+              "ad": "[influencer Lala-Nolleto- start 30-04-2026  Adv geral] — DIA DAS MÃES — Story 02 — Cópia"
+            },
+            {
+              "spend": 359.89,
+              "value": 8099.969999999999,
+              "purchases": 3.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ Conjunto de anúncios",
+              "ad": "[influencer Lala noleto] —Simples"
+            },
+            {
+              "spend": 1.12,
+              "value": 0,
+              "purchases": 0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Lala Noleto- Stories]"
+            },
+            {
+              "spend": 0.24,
+              "value": 0,
+              "purchases": 0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Lala Noleto- Stories] RMKT"
+            },
+            {
+              "spend": 0.01,
+              "value": 0,
+              "purchases": 0,
+              "campaign": "[PD][MEIO] TRAF (antiga Simples | Tráfego)",
+              "adset": "Simples | [Regiona l Rio de Janeiro - Bairros Nobres]",
+              "ad": "[influencer Lala Noleto- Stories] REGIONAL"
+            }
+          ],
+          "roas_platform": 65.4910624307532
+        },
+        "Helena Lunardelli": {
+          "spend": 24364.549999999996,
+          "clicks": 39009,
+          "impressions": 477762,
+          "purchase_count": 627.0,
+          "purchase_value": 1720526.4899999998,
+          "ads": 28,
+          "top_ads": [
+            {
+              "spend": 4384.28,
+              "value": 312759.63,
+              "purchases": 111.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 3] — Cópia"
+            },
+            {
+              "spend": 5081.68,
+              "value": 287424.08999999997,
+              "purchases": 117.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 3]"
+            },
+            {
+              "spend": 3554.33,
+              "value": 235595.73,
+              "purchases": 81.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 3] — Cópia"
+            },
+            {
+              "spend": 1462.86,
+              "value": 162877.53,
+              "purchases": 48.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 1 ] —"
+            },
+            {
+              "spend": 1958.34,
+              "value": 162486.78,
+              "purchases": 66.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 5] — —"
+            },
+            {
+              "spend": 734.44,
+              "value": 104905.70999999999,
+              "purchases": 30.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 5] — — — Cópia"
+            },
+            {
+              "spend": 963.55,
+              "value": 101699.79000000001,
+              "purchases": 21.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Helena- start 22-04-2026  Adv geral] — Onitsuka Tiger x Versace.- Video 02 — Cópia"
+            },
+            {
+              "spend": 640.82,
+              "value": 81603.69,
+              "purchases": 27.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 1 ] — — Cópia"
+            },
+            {
+              "spend": 1088.06,
+              "value": 67753.29000000001,
+              "purchases": 27.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 4] — — Cópia"
+            },
+            {
+              "spend": 1531.4,
+              "value": 67094.97,
+              "purchases": 30.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Helena | start 07-12-25 | Stories 5] — — — Cópia"
+            }
+          ],
+          "roas_platform": 70.61597649043385
+        },
+        "Silvia Heinz": {
+          "spend": 50311.680000000015,
+          "clicks": 214922,
+          "impressions": 2533112,
+          "purchase_count": 822.0,
+          "purchase_value": 2560642.92,
+          "ads": 33,
+          "top_ads": [
+            {
+              "spend": 4266.92,
+              "value": 512990.43,
+              "purchases": 174.0,
+              "campaign": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+              "adset": "RMKT (Site + Instagram + Vídeo)",
+              "ad": "[influencer Silvia start 11.12.25- RMKT]"
+            },
+            {
+              "spend": 3508.68,
+              "value": 228855.06,
+              "purchases": 48.0,
+              "campaign": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+              "adset": "Simples | Vendas Advantage+ [clube do sky]",
+              "ad": "[influencer Silvia start 11.12.25- Adv geral] — — Cópia"
+            },
+            {
+              "spend": 3967.7,
+              "value": 223834.38,
+              "purchases": 99.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Pareto.Vendas-Adv [ Campanha Nova]",
+              "ad": "[influencer Silvia | start 20-12-25 | Camp Onitsuka] — Cópia"
+            },
+            {
+              "spend": 2096.32,
+              "value": 215022.77999999997,
+              "purchases": 75.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Silvia | start 20-12-25 | Onitsuka Sabot Stories 3]"
+            },
+            {
+              "spend": 2753.08,
+              "value": 160685.04,
+              "purchases": 45.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Silvia | start 15-12-25 | New Balance 204L Stories 1]"
+            },
+            {
+              "spend": 1534.75,
+              "value": 135198.06,
+              "purchases": 24.0,
+              "campaign": "Pareto.lancamento.Jacquemus",
+              "adset": "Lista Zipper",
+              "ad": "[influencer Silvia 24-03-26] - jacquemus]Lista Compradores —"
+            },
+            {
+              "spend": 1624.55,
+              "value": 127379.79000000001,
+              "purchases": 30.0,
+              "campaign": "Pareto.lancamento.Jacquemus",
+              "adset": "Lista Zipper",
+              "ad": "[influencer Silvia 24-03-26] - jacquemus video 02]Lista Compradores"
+            },
+            {
+              "spend": 3611.29,
+              "value": 121804.34999999999,
+              "purchases": 51.0,
+              "campaign": "Pareto.Vendas-Adv [ Geral]",
+              "adset": "Stories",
+              "ad": "[influencer Silvia | start 20-12-25 | Onitsuka Sabot Stories 2] —"
+            },
+            {
+              "spend": 953.56,
+              "value": 97758.39,
+              "purchases": 24.0,
+              "campaign": "Pareto.lancamento.Jacquemus",
+              "adset": "Lista VIP",
+              "ad": "[influencer Silvia 11-03-26] - jacquemus]Lista Compradores"
+            },
+            {
+              "spend": 1343.32,
+              "value": 97500.0,
+              "purchases": 21.0,
+              "campaign": "Pareto.lancamento.Jacquemus",
+              "adset": "Lista VIP",
+              "ad": "[influencer Silvia 24-03-26] - jacquemus]Lista Compradores —"
+            }
+          ],
+          "roas_platform": 50.89559561517324
+        }
+      }
+    }
+  },
+  "shopify": {
+    "status": 200,
+    "orders_fetched": 2541,
+    "error": null,
+    "valid_orders": 2223,
+    "source_counts": {
+      "web": 1390,
+      "pos": 800,
+      "shopify_draft_order": 31,
+      "3128379": 1,
+      "2329312": 1
+    },
+    "web_orders": 1390,
+    "web_revenue": 4423457.58,
+    "all_revenue": 6924093.1899999995
+  },
+  "shopify_influencer_evidence": {
+    "Lala Noleto": {
+      "orders": 0,
+      "revenue": 0.0,
+      "line_qty": 0,
+      "line_revenue_est": 0.0,
+      "evidence_counts": {},
+      "top_products": [],
+      "examples": []
+    },
+    "Helena Lunardelli": {
+      "orders": 37,
+      "revenue": 154482.03999999998,
+      "line_qty": 68,
+      "line_revenue_est": 164219.31999999998,
+      "evidence_counts": {
+        "note_attributes": 27,
+        "discount_code": 4,
+        "landing_site": 15
+      },
+      "top_products": [
+        {
+          "product": "Jason Markk Repel Spray Impermeabilizante | JM3 | None",
+          "qty": 2
+        },
+        {
+          "product": "Slide Nike Mind 001 Black Chrome Preto | HQ4307-001-10 | 43",
+          "qty": 2
+        },
+        {
+          "product": "Tênis New Balance 204L Arid Timberwolf Bege | U204LMMC-5 | 38",
+          "qty": 2
+        },
+        {
+          "product": "Tênis adidas Samba Og Supplier Colour Off White Gum Prata | JI4219-4 | 37",
+          "qty": 1
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo | 1183C102751-2 | 35",
+          "qty": 1
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo | 1183C102751-3 | 36",
+          "qty": 1
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 SD Vin Clay Canyon Cream Marrom | 1183C015.205-3 | 36",
+          "qty": 1
+        },
+        {
+          "product": "Tênis New Balance 9060 Sea Salt Concrete Branco | U9060ECA-10 | 40",
+          "qty": 1
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege | 1183C015-202-2 | 35",
+          "qty": 1
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege | 1183A872.101-4 | 37",
+          "qty": 1
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 SD Birch Metropolis Bege | 1183C015200 | 36",
+          "qty": 1
+        },
+        {
+          "product": "Tênis Nike Moon Shoe SP Jacquemus Off White | None | 38",
+          "qty": 1
+        },
+        {
+          "product": "Onitsuka Tiger Mexico 66 Paraty Natural Navy Bege | 1183C233-250-3 | 36",
+          "qty": 1
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 Kids Birch/Indian INK Bege | 1184A049.200-7 | 31",
+          "qty": 1
+        },
+        {
+          "product": "Tênis New Balance 204L Arid Timberwolf Bege | U204LMMC-3 | 36",
+          "qty": 1
+        }
+      ],
+      "examples": [
+        {
+          "order": "#147356",
+          "created_at": "2026-05-09T19:05:27-03:00",
+          "source": "web",
+          "landing_site": "/?srsltid=AfmBOoqkfMJ7iCTLsKBOGPo95hq0v6sqojjNs1ZrBCuXYdxpQZKLk2O8",
+          "discount_codes": []
+        },
+        {
+          "order": "#147328",
+          "created_at": "2026-05-08T14:52:27-03:00",
+          "source": "web",
+          "landing_site": "/collections/sneakers?gad_source=1&gad_campaignid=22183756307&gbraid=0AAAAAqcRqryArGoOx002W4fmKMU9o1cLD&gclid=Cj0KCQjwk_bPBhDXARIsACiq8R2sizrMkFwW8nBk6awkH_J9Zs",
+          "discount_codes": [
+            "HELENA10"
+          ]
+        },
+        {
+          "order": "#147305",
+          "created_at": "2026-05-06T13:53:30-03:00",
+          "source": "web",
+          "landing_site": "/?utm_id=97760_v0_s00_e0_tv3",
+          "discount_codes": []
+        },
+        {
+          "order": "#147234",
+          "created_at": "2026-05-01T08:14:52-03:00",
+          "source": "web",
+          "landing_site": "/products/ben-jerrys-x-dunk-low-sb-chunky-dunky?utm_medium=paid&utm_id=120223728385150224_v2_s06_e7606&utm_content=120244215880630224&utm_term=12022372838515022",
+          "discount_codes": [
+            "SILVIA10"
+          ]
+        },
+        {
+          "order": "#147145",
+          "created_at": "2026-04-24T12:49:44-03:00",
+          "source": "web",
+          "landing_site": "/collections/onitsuka-tiger-x-versace?_pos=1&_psq=Versace&_ss=e&_v=1.0&utm_source=instagram&utm_medium=stories&utm_campaign=helena_lunardelli&fbclid=PAZXh0bgNhZ",
+          "discount_codes": []
+        }
+      ]
+    },
+    "Silvia Heinz": {
+      "orders": 209,
+      "revenue": 650658.1999999998,
+      "line_qty": 306,
+      "line_revenue_est": 724170.7499999978,
+      "evidence_counts": {
+        "discount_code": 208,
+        "landing_site": 2,
+        "note_attributes": 1
+      },
+      "top_products": [
+        {
+          "product": "Jason Markk Repel Spray Impermeabilizante | JM3 | None",
+          "qty": 11
+        },
+        {
+          "product": "Jason Markk Essential Kit de Limpeza | 300110 | None",
+          "qty": 9
+        },
+        {
+          "product": "Tênis New Balance 204L Arid Timberwolf Bege | U204LMMC-3 | 36",
+          "qty": 5
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege | 1183C123.252-4 | 37",
+          "qty": 5
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege | 1183C123.252-6 | 39",
+          "qty": 3
+        },
+        {
+          "product": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto | HV8547-001-8 | 41",
+          "qty": 3
+        },
+        {
+          "product": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown | HV8547-200-38 | 38",
+          "qty": 3
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege | 1183C123.252-7 | 40",
+          "qty": 3
+        },
+        {
+          "product": "Tênis New Balance 204L Mushroom Arid Stone Marrom | U204LMMA-4 | 37",
+          "qty": 3
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege | 1183C123.252-5 | 38",
+          "qty": 3
+        },
+        {
+          "product": "Camiseta Pace Cotton Code Branca | None | G/L",
+          "qty": 3
+        },
+        {
+          "product": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown | None | 37",
+          "qty": 3
+        },
+        {
+          "product": "Tênis New Balance 204L Arid Timberwolf Bege | U204LMMC-5 | 38",
+          "qty": 3
+        },
+        {
+          "product": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege | JR9446-3 | 36",
+          "qty": 3
+        },
+        {
+          "product": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom | HV8547-200-38 | 38",
+          "qty": 2
+        }
+      ],
+      "examples": [
+        {
+          "order": "#147357",
+          "created_at": "2026-05-09T21:24:33-03:00",
+          "source": "web",
+          "landing_site": "/products/tenis-onitsuka-tiger-mexico-66-sabot-beige-green-bege?utm_content=Facebook_UA&utm_source=facebook&variant=47634859491550&media_type=image&utm_medium=p",
+          "discount_codes": [
+            "SILVIA10"
+          ]
+        },
+        {
+          "order": "#147354",
+          "created_at": "2026-05-09T17:35:51-03:00",
+          "source": "web",
+          "landing_site": "/collections/nike-x-jacquemus-moon-shoe-sp?ad_id=120242099000710224&campaign_id=120241297336180224&fbclid=PAZXh0bgNhZW0BMABhZGlkAasvjVX8uXBzcnRjBmFwcF9pZA8xMjQw",
+          "discount_codes": [
+            "SILVIA10"
+          ]
+        },
+        {
+          "order": "#147335",
+          "created_at": "2026-05-09T07:18:26-03:00",
+          "source": "web",
+          "landing_site": "/collections/nike-x-jacquemus-moon-shoe-sp?utm_medium=paid&utm_id=120236212896630224_v2_s02_e450_i20260503&utm_content=120242989926990224&utm_term=1202362128966",
+          "discount_codes": [
+            "SILVIA10"
+          ]
+        },
+        {
+          "order": "#147312",
+          "created_at": "2026-05-07T07:01:42-03:00",
+          "source": "web",
+          "landing_site": "/collections/nike-x-jacquemus-moon-shoe-sp?ad_id=120242099000770224&campaign_id=120241297336180224&fbclid=PAZXh0bgNhZW0BMABhZGlkAasvjVX5D_BzcnRjBmFwcF9pZA8xMjQw",
+          "discount_codes": [
+            "SILVIA10"
+          ]
+        },
+        {
+          "order": "#147291",
+          "created_at": "2026-05-05T16:15:16-03:00",
+          "source": "web",
+          "landing_site": "/products/tenis-new-balance-9060-cortado-marrom?utm_content=Facebook_UA&utm_source=facebook&variant=47892215070942&utm_medium=paid&utm_id=120210461672770224_v2_",
+          "discount_codes": [
+            "SILVIA10"
+          ]
+        }
+      ]
+    }
+  },
+  "metricool_google_ads": {
+    "adwords_status": 200,
+    "adwords_total_guess": {
+      "rows": 0,
+      "cost": 0.0,
+      "clicks": 0.0,
+      "impressions": 0.0,
+      "conversions": 0.0,
+      "value": 0.0
+    }
+  },
+  "metricool_google_ads_corrected": {
+    "campaigns": 21,
+    "spend": 123816.29951699999,
+    "clicks": 140035.0,
+    "impressions": 7973944.0,
+    "conversions": 4308.056425,
+    "value": 1380556.009888975
+  },
+  "site_reconciliation_1d_click": {
+    "meta_spend": 190458.59999999992,
+    "google_spend": 123816.29951699999,
+    "paid_spend_total": 314274.8995169999,
+    "shopify_web_revenue": 4423457.58,
+    "site_roas": 14.075122088331858,
+    "meta_platform_value": 11457768.120000005,
+    "meta_value_vs_shopify_web_revenue_ratio": 2.5902290036202866
+  }
+}

@@ -6,8 +6,9 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 ## Ativos
 
 - [x] Primeiro Stock Intelligence real/read-only da LK com sourcing acionado por sinal — relatório `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`; sem WhatsApp, Notion, compra ou alteração produtiva.
-- [x] Criar mapa canônico SKU Shopify ↔ Tiny — preview read-only `reports/lk-sku-shopify-tiny-map-preview-2026-05-10.md`; 6/6 campeões antes sem match tiveram candidato Tiny com confiança alta; próximo passo é tabela de aprovação para alias/correção no Tiny, sem write produtivo.
-- [ ] Criar dicionário canônico de influencers LK e auditar match influencer → produto, começando por Lala Noleto, Silvia Heinz e Helena Lunardelli; reconciliar Shopify/GA4/UTM/cupom com Meta/Google em janela correta, checando campaign/adset/ad.
+- [x] Criar mapa canônico SKU Shopify ↔ Tiny — preview read-only `reports/lk-sku-shopify-tiny-map-preview-2026-05-10.md`; 6/6 campeões antes sem match tiveram candidato Tiny com confiança alta; tabela de aprovação para alias/correção gerada em `reports/lk-sku-tiny-alias-approval-preview-2026-05-10.md`; sem write produtivo.
+- [x] Investigar/corrigir leitura dos ROAS Meta 50–70x de influencers — relatório `reports/lk-roas-influencer-correction-readonly-2026-05-10.md`; 50–70x é Meta attributed ROAS, não ROAS operacional LK.
+- [ ] Criar dicionário canônico de influencers LK e auditar match influencer → produto, começando por Lala Noleto, Silvia Heinz e Helena Lunardelli; calcular ROAS operacional só com Shopify evidence/cupom/UTM/landing/produto + custo relacionado, checando campaign/adset/ad e janela real.
 - [ ] Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
 
 ## Bloqueados — aprovação Lucas
