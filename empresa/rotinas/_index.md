@@ -48,6 +48,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Outcomes Tracker | `areas/lk/sub-areas/crm/rotinas/outcomes-tracker.md` | Status de sugestões Hermes |
 | Creative Pipeline | `areas/lk/sub-areas/trafego-pago/rotinas/creative-pipeline.md` | Hipótese → criativo → teste → learning |
 | LK Ads Intelligence | `areas/lk/sub-areas/trafego-pago/rotinas/lk-ads-intelligence-metricool-meta-20260509.md` | Fonte validada para Google Ads via Metricool, Meta direto e leitura de influencer/product fit |
+| Campaign Attribution Dictionary LK | `areas/lk/sub-areas/trafego-pago/rotinas/campaign-attribution-dictionary.md` | Dicionário canônico campanha/influencer → UTM/cupom/produto/SKU/tamanho/estoque |
 | Consolidar FAQ | `areas/lk/sub-areas/atendimento/rotinas/consolidar-faq.md` | Loop FAQ/suporte/bot |
 
 ## Zipper Galeria

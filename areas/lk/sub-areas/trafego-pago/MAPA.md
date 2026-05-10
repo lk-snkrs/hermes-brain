@@ -17,3 +17,7 @@ Pastas: angulos, formatos, criativos, testes, learnings, skills, rotinas.
 - `../../../reports/lk-roas-influencer-correction-readonly-2026-05-10.md` — correção read-only dos ROAS Meta 50–70x de influencers; define `Meta attributed ROAS` como sinal de plataforma, não ROAS operacional da LK, e exige reconciliação Shopify/UTM/cupom/produto antes de decisão.
 
 - `../../../reports/lk-meta-campaign-title-roas-readonly-2026-05-10.md` — ROAS atribuído do Meta por título de campanha (`campaign_name`) comparado com evidência Shopify por `utm_campaign`; base para criar o dicionário canônico de campanhas/influencers.
+
+- `rotinas/campaign-attribution-dictionary.md` — rotina read-only para mapear `campaign_name`/`adset_name`/`ad_name`/Google/UTM/cupom/landing → influencer/criativo/produto/SKU/tamanho/estoque.
+
+- `templates/campaign-attribution-record.md` — template de registro canônico por campanha/influencer.
