@@ -22,16 +22,25 @@ Não gastar energia tentando zerar centavos/reais pequenos se:
 - a métrica canônica está correta;
 - a diferença vem de rounding, naming, anúncios sem conversão ou recorte CSV/PDF.
 
-## Correção conceitual — Meta não é venda real
+## Correção conceitual — dashboards de plataforma não são venda por canal
 
-O PDF Pareto chama o campo do Meta de `Receita`, mas a leitura correta para LK é:
+O PDF Pareto chama os campos de Meta/Google de `Receita`, mas a leitura correta para LK é:
 
-- `R$ 722.636,36` = venda/receita e-commerce do negócio no mês, segundo Pareto/Shopify/analytics.
-- `R$ 797.654,65` = valor de conversão **atribuído pelo Meta Ads Manager**, não venda real da LK.
+- `R$ 722.636,36` = venda/receita e-commerce real do negócio no mês.
+- `R$ 797.654,65` = valor de conversão **atribuído pelo Meta Ads Manager**, não venda real da LK e não “venda da Meta”.
+- `R$ 207.240,45` = valor atribuído pelo Google Ads, também diagnóstico de plataforma.
 
-Como o valor atribuído pelo Meta ultrapassa a receita total do e-commerce em `R$ 75.018,29`, ele não pode ser descrito como “a Meta vendeu R$ 797 mil”. A frase correta é: **o Meta atribuiu R$ 797.654,65 no gerenciador**.
+A crítica lógica é obrigatória: Meta é uma parte do tráfego, Google é outra, além de orgânico, direto e referral. Portanto, a venda real por canal não pode ser calculada pelos dashboards isolados de Meta/Google, porque eles se sobrepõem e podem somar mais que a receita total.
 
-Isso pode acontecer por janela de atribuição, sobreposição com outros canais, deduplicação imperfeita, diferença entre plataformas e GA4/Shopify e regras do pixel. O próprio PDF alerta que há diferenças de atribuição entre plataformas e GA4.
+Para venda/contribuição real por canal, usar Pareto/GA4:
+
+- `Paid Social`: `R$ 211.329`.
+- `facebook / paid`: `R$ 181.859,02`.
+- `google / cpc`: `R$ 130.069,50`.
+- `Paid Search`: `R$ 51.137`.
+- `Cross-network`: `R$ 58.924`.
+
+Frase correta: **Meta Ads Manager atribuiu R$ 797.654,65; a contribuição real de Paid Social/facebook paid deve ser lida no GA4/Pareto.**
 
 ## Fonte Meta correta
 

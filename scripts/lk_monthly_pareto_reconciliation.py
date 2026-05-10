@@ -34,7 +34,27 @@ APRIL_2026_PARETO = {
     # Important: Pareto/PDF calls this Meta field "Receita", but it is the
     # Ads Manager conversion value / attributed value, not LK real net sales.
     'global': {'spend': 38954.76, 'purchases': 229.0, 'value': 797654.65, 'roas': 20.48, 'cpa': 170.11},
-    'ecommerce': {'orders': 233, 'revenue': 722636.36},
+    'ecommerce': {'orders': 233, 'revenue': 722636.36, 'investment': 65436.52, 'roas': 11.04},
+    # Pareto page 7 platform dashboards. These are NOT deduped channel sales.
+    'platform_dashboards': {
+        'meta_ads_manager': {'spend': 38954.76, 'purchases': 229.0, 'attributed_value': 797654.65, 'roas': 20.48, 'cpa': 170.11},
+        'google_ads': {'spend': 26481.76, 'purchases': 795.58, 'attributed_value': 207240.45, 'roas': 7.83, 'cpa': 33.29},
+    },
+    # Pareto pages 12–13: use these for realistic traffic/channel revenue shares.
+    'ga4_channels': {
+        'Paid Social': {'revenue': 211329.00, 'conversion_rate': 0.07},
+        'Organic Social': {'revenue': 157968.00, 'conversion_rate': 0.38},
+        'Direct': {'revenue': 100760.00, 'conversion_rate': 0.27},
+        'Cross-network': {'revenue': 58924.00, 'conversion_rate': 0.16},
+        'Paid Search': {'revenue': 51137.00, 'conversion_rate': 0.46},
+    },
+    'ga4_source_medium': {
+        'facebook / paid': {'sessions': 43799, 'revenue': 181859.02, 'conversion_rate': 0.11},
+        'l.instagram.com / referral': {'sessions': 6198, 'revenue': 141618.15, 'conversion_rate': 0.63},
+        'google / cpc': {'sessions': 26002, 'revenue': 130069.50, 'conversion_rate': 0.19},
+        'direct / none': {'sessions': 12801, 'revenue': 100759.70, 'conversion_rate': 0.27},
+        'google / organic': {'sessions': 17090, 'revenue': 33442.81, 'conversion_rate': 0.10},
+    },
     'influencers': {
         'Ju Mesquita': {'ads': 9, 'spend': 2663.19, 'purchases': 20.0, 'value': 58595.44},
         'Arlindo': {'ads': 3, 'spend': 2071.87, 'purchases': 16.0, 'value': 75312.65},
@@ -238,8 +258,18 @@ def render_md(rep: Dict[str, Any]) -> str:
     ecommerce = rep.get('pareto_ecommerce') or {}
     if ecommerce:
         diff = g['value'] - ecommerce.get('revenue', 0)
-        lines.append(f"- Shopify/Pareto e-commerce: {ecommerce.get('orders', 0):.0f} pedidos, {money(ecommerce.get('revenue', 0))} venda/receita do negócio.")
-        lines.append(f"- Alerta de interpretação: Meta atribuiu {money(g['value'])}, {money(diff)} acima da receita e-commerce do mês; portanto esse número **não pode ser chamado de venda da Meta**. Ele deve ser lido como valor atribuído pelo pixel/Ads Manager.")
+        lines.append(f"- Venda real e-commerce Pareto: {ecommerce.get('orders', 0):.0f} pedidos, {money(ecommerce.get('revenue', 0))} receita total, {money(ecommerce.get('investment', 0))} investimento total, ROAS geral {ecommerce.get('roas', 0):.2f}.")
+        lines.append(f"- Correção de senso crítico: o Meta Ads Manager atribuiu {money(g['value'])}, {money(diff)} acima da receita total da LK; logo esse número **não é venda da Meta** nem pode entrar na divisão Meta vs Google de vendas reais.")
+    ga4_channels = rep.get('pareto_ga4_channels') or {}
+    if ga4_channels:
+        lines.append('- Receita real por canal deve usar Pareto/GA4/canais, não dashboards isolados de plataforma:')
+        for channel, data in ga4_channels.items():
+            lines.append(f"  - {channel}: {money(data['revenue'])}; conversão {data['conversion_rate']:.2f}%.")
+    ga4_sm = rep.get('pareto_ga4_source_medium') or {}
+    if ga4_sm:
+        lines.append('- Principais origens/mídias Pareto/GA4:')
+        for source, data in ga4_sm.items():
+            lines.append(f"  - {source}: {data['sessions']:,} sessões; {money(data['revenue'])}; conversão {data['conversion_rate']:.2f}%.")
     if rep.get('expected_global'):
         lines.append('- Comparação Pareto global — campo Meta/Ads Manager:')
         for key, c in rep['expected_global'].items():
@@ -257,8 +287,9 @@ def render_md(rep: Dict[str, Any]) -> str:
         lines.append(f"- {r['label']}: {r['ads']} anúncios; spend {money(r['spend'])}; compras atribuídas {r['purchases']:.0f}; valor atribuído Meta {money(r['value'])}; ROAS Meta {r['roas']:.2f}.")
     lines.append('')
     lines.append('## Correção conceitual')
-    lines.append('- Correto: LK vendeu no mês o valor de e-commerce/Shopify/Pareto.')
-    lines.append('- Correto: Meta reportou valor atribuído pelo gerenciador, que pode ultrapassar a receita real por janela de atribuição, deduplicação imperfeita, cross-channel e diferença de origem de mensuração.')
+    lines.append('- Correto: LK vendeu no mês o valor de e-commerce/Shopify/Pareto, e essa receita deve ser distribuída por canais usando GA4/Pareto channel grouping/source-medium.')
+    lines.append('- Correto: Meta Ads e Google Ads reportam valores atribuídos em dashboards próprios; esses valores servem para diagnóstico da plataforma, não para dizer quanto cada canal vendeu de verdade.')
+    lines.append('- Errado: dividir venda real entre Meta e Google usando `Receita` dos gerenciadores, porque os dashboards podem se sobrepor e a soma pode ultrapassar a venda total da LK.')
     lines.append('- Errado: dizer que “a Meta vendeu” mais que a LK vendeu no mês.')
     lines.append('')
     lines.append('## Guardrails')
@@ -290,11 +321,17 @@ def main() -> None:
         'pareto_rows': pareto_rows,
         'operational_rows': operational_rows,
         'pareto_ecommerce': {},
+        'pareto_platform_dashboards': {},
+        'pareto_ga4_channels': {},
+        'pareto_ga4_source_medium': {},
         'expected_global': {},
         'expected_influencers': {},
     }
     if args.month == '2026-04':
         rep['pareto_ecommerce'] = APRIL_2026_PARETO['ecommerce']
+        rep['pareto_platform_dashboards'] = APRIL_2026_PARETO['platform_dashboards']
+        rep['pareto_ga4_channels'] = APRIL_2026_PARETO['ga4_channels']
+        rep['pareto_ga4_source_medium'] = APRIL_2026_PARETO['ga4_source_medium']
         rep['expected_global'] = compare(APRIL_2026_PARETO['global'], g)
         by_label = {r['label']: r for r in pareto_rows}
         rep['expected_influencers'] = {k: compare(v, by_label.get(k, {})) for k, v in APRIL_2026_PARETO['influencers'].items()}
