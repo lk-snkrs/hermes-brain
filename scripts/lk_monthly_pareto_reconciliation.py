@@ -141,6 +141,27 @@ def row_text(row: Dict[str, Any]) -> str:
     return normalize_text(' | '.join(str(row.get(k) or '') for k in ['campaign_name', 'adset_name', 'ad_name']))
 
 
+def match_pareto_row(row: Dict[str, Any]) -> tuple[str | None, str | None]:
+    """Maicon/Pareto rule: influencer naming comes from `ad_name`; fall back only if absent.
+
+    We still inspect adset/campaign as a safety net for legacy naming, but the
+    primary compatible grouping is ad-level `ad_name` and sum of all matching ad_ids.
+    """
+    for field in ('ad_name', 'adset_name', 'campaign_name'):
+        label = pareto_label(normalize_text(row.get(field)))
+        if label:
+            return label, field
+    return None, None
+
+
+def match_operational_row(row: Dict[str, Any], weekly_mod, aliases: Dict[str, list[str]]) -> tuple[str | None, str | None]:
+    for field in ('ad_name', 'adset_name', 'campaign_name'):
+        label = weekly_mod.match_influencer(str(row.get(field) or ''), aliases)
+        if label:
+            return label, field
+    return None, None
+
+
 def ga4_credentials(secrets: Dict[str, str]):
     sa_raw = secrets.get('GA4_LK_SERVICE_ACCOUNT') or secrets.get('GOOGLE_SERVICE_ACCOUNT_JSON')
     prop = secrets.get('GOOGLE_ANALYTICS_PROPERTY_ID') or secrets.get('GA4_LK_PROPERTY_ID') or secrets.get('GA4_PROPERTY_ID')
@@ -338,23 +359,29 @@ def pareto_label(text: str) -> str | None:
     return None
 
 
-def group_pareto(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def group_pareto(rows: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, int]]:
     buckets: dict[str, Dict[str, Any]] = defaultdict(empty_bucket)
+    source_counts: dict[str, int] = defaultdict(int)
     for row in rows:
-        label = pareto_label(row_text(row))
+        label, source = match_pareto_row(row)
         if label:
+            source_counts[source or 'unknown'] += 1
             add_row(buckets[label], row)
-    return sorted([finalize_bucket(k, v) for k, v in buckets.items()], key=lambda x: (x['purchases'], x['value']), reverse=True)
+    grouped = sorted([finalize_bucket(k, v) for k, v in buckets.items()], key=lambda x: (x['purchases'], x['value']), reverse=True)
+    return grouped, dict(source_counts)
 
 
-def group_operational(rows: list[dict[str, Any]], weekly_mod) -> list[dict[str, Any]]:
+def group_operational(rows: list[dict[str, Any]], weekly_mod) -> tuple[list[dict[str, Any]], dict[str, int]]:
     aliases = weekly_mod.load_aliases()
     buckets: dict[str, Dict[str, Any]] = defaultdict(empty_bucket)
+    source_counts: dict[str, int] = defaultdict(int)
     for row in rows:
-        label = weekly_mod.match_influencer(row_text(row), aliases)
+        label, source = match_operational_row(row, weekly_mod, aliases)
         if label:
+            source_counts[source or 'unknown'] += 1
             add_row(buckets[label], row)
-    return sorted([finalize_bucket(k, v) for k, v in buckets.items()], key=lambda x: (x['purchases'], x['value']), reverse=True)
+    grouped = sorted([finalize_bucket(k, v) for k, v in buckets.items()], key=lambda x: (x['purchases'], x['value']), reverse=True)
+    return grouped, dict(source_counts)
 
 
 def global_totals(rows: list[dict[str, Any]]) -> Dict[str, Any]:
@@ -425,6 +452,9 @@ def render_md(rep: Dict[str, Any]) -> str:
             label = 'attributed_value' if key == 'value' else key
             lines.append(f"  - {label}: esperado `{c['expected']}`, atual `{c['actual']}`, delta `{c['delta']}`, match `{c['match_pct']}%`.")
     lines.append('- Regra Lucas: 99%+ é operacionalmente correto; diferenças pequenas de poucos reais não bloqueiam se a metodologia está alinhada.')
+    source_counts = (rep.get('meta_influencer_match_source_counts') or {}).get('pareto_compatible') or {}
+    if source_counts:
+        lines.append(f"- Regra Maicon aplicada: influencers agrupadas primeiro por `ad_name` e com soma de todos os `ad_id`; fontes dos matches Pareto-compatible: {source_counts}.")
     lines.append('- Marias separadas no modo Pareto-compatible: Maria, Maria Fernanda e Mariah.')
     lines.append('')
     lines.append('## Influencers — Pareto-compatible')
@@ -569,8 +599,8 @@ def main() -> None:
     ga4 = fetch_ga4_pareto_metrics(secrets, start, end)
     google_ads = fetch_metricool_google_ads(secrets, start, end)
     g = global_totals(rows)
-    pareto_rows = group_pareto(rows)
-    operational_rows = group_operational(rows, weekly)
+    pareto_rows, pareto_match_source_counts = group_pareto(rows)
+    operational_rows, operational_match_source_counts = group_operational(rows, weekly)
     rep = {
         'month': args.month,
         'period': {'start': start, 'end': end},
@@ -578,6 +608,10 @@ def main() -> None:
         'global': g,
         'pareto_rows': pareto_rows,
         'operational_rows': operational_rows,
+        'meta_influencer_match_source_counts': {
+            'pareto_compatible': pareto_match_source_counts,
+            'lucas_operational': operational_match_source_counts,
+        },
         'pareto_ecommerce': {},
         'pareto_platform_dashboards': {},
         'pareto_ga4_channels': {},

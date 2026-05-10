@@ -50,6 +50,7 @@ O script grava artefatos locais em:
 - Fonte: Meta Ads direto, conta `act_1242062509867163`.
 - Nível: `ad`.
 - Campos de identificação: `campaign_id`, `adset_id`, `ad_id`, `campaign_name`, `adset_name`, `ad_name`.
+- Regra Maicon/Pareto: o nome da influencer vem primeiro de `ad_name`; `adset_name`/`campaign_name` ficam só como fallback/discovery. Como pode haver múltiplos anúncios por influencer, o cálculo soma todas as linhas/ad_ids matched no nível `ad`.
 - Métrica de compra: uma action key canônica por anúncio, preferindo `offsite_conversion.fb_pixel_purchase`.
 - Nunca somar aliases Meta como compras diferentes:
   - `purchase`;

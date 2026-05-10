@@ -39,6 +39,7 @@
   - roas: esperado `20.48`, atual `20.48`, delta `0.0`, match `100.0%`.
   - cpa: esperado `170.11`, atual `170.11`, delta `0.0`, match `100.0%`.
 - Regra Lucas: 99%+ é operacionalmente correto; diferenças pequenas de poucos reais não bloqueiam se a metodologia está alinhada.
+- Regra Maicon aplicada: influencers agrupadas primeiro por `ad_name` e com soma de todos os `ad_id`; fontes dos matches Pareto-compatible: {'ad_name': 104}.
 - Marias separadas no modo Pareto-compatible: Maria, Maria Fernanda e Mariah.
 
 ## Influencers — Pareto-compatible

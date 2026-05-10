@@ -48,6 +48,7 @@ Frase correta: **Meta Ads Manager atribuiu R$ 797.654,65; a contribuição real 
 
 - Conta: `act_1242062509867163`.
 - Nível: `ad`.
+- Regra Maicon/Pareto: para influencers, priorizar `ad_name` como fonte do nome; `adset_name` e `campaign_name` são apenas fallback/discovery quando `ad_name` não tiver match. Somar todos os `ad_id`/linhas do mesmo influencer.
 - Período: mês fechado do relatório.
 - Métrica de compra/valor: uma action canônica por anúncio, preferindo `offsite_conversion.fb_pixel_purchase`.
 - Nome do campo em relatórios LK: `valor atribuído Meta` ou `valor de conversão no gerenciador`, nunca `venda da Meta`.

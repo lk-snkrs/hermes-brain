@@ -1,3 +1,11 @@
+## 2026-05-10 — LK Maicon ad_name influencer rule
+
+- Confirmada e operacionalizada a orientação do Maicon: no Meta, o nome da influencer deve ser lido primeiro em `ad_name` e múltiplos anúncios/ad_ids da mesma influencer precisam ser somados.
+- Scripts semanal e mensal agora fazem matching por prioridade `ad_name → adset_name → campaign_name`, mantendo adset/campaign apenas como fallback/discovery.
+- Validação abril/2026: `180` rows Meta, `104` anúncios/influencer Pareto-compatible matched, `104` via `ad_name`, `0` via adset/campaign; números globais Meta continuam batendo com Pareto.
+- Validação semanal `2026-05-03..2026-05-09`: `113` matches atuais via `ad_name`; relatório segue sem envio externo no teste.
+- Produção, VPS/Docker, bancos, campaigns, Shopify/Tiny/Klaviyo/WhatsApp, secrets, crons e envios externos não foram alterados.
+
 ## 2026-05-10 — LK Monthly Pareto HTML executive preview
 
 - O script mensal Pareto-compatible agora também gera `.html` executivo em DesignMD LK, além de `.md` e `.json`.
