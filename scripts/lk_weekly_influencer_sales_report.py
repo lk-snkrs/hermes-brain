@@ -21,10 +21,10 @@ import os
 import re
 import sys
 from collections import defaultdict
-from email.message import EmailMessage
+from email.mime.text import MIMEText
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Tuple
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
 
 import requests
 from zoneinfo import ZoneInfo
@@ -208,18 +208,69 @@ def order_evidence_text(o: Dict[str, Any]) -> str:
     return ' | '.join(str(c or '') for c in chunks)
 
 
-def summarize_shopify(orders: List[Dict[str, Any]], aliases: Dict[str, List[str]]) -> Dict[str, Any]:
-    by = defaultdict(lambda: {'orders':0, 'revenue':0.0, 'products':defaultdict(lambda:{'qty':0,'revenue':0.0})})
+def extract_meta_ad_ids_from_order(o: Dict[str, Any]) -> set[str]:
+    """Extract exact Meta ad ids from Shopify evidence.
+
+    We only use URL parameters that normally carry the ad/creative id (`utm_content`).
+    Campaign/adset ids are intentionally excluded because several influencers can share
+    generic campaigns/adsets, which would create false product attribution.
+    """
+    ids: set[str] = set()
+    candidates: List[str] = []
+    for field in ['landing_site', 'referring_site']:
+        val = str(o.get(field) or '')
+        if val:
+            candidates.append(val)
+    for na in o.get('note_attributes') or []:
+        for key in ['value', 'name']:
+            val = str(na.get(key) or '')
+            if val:
+                candidates.append(val)
+    for raw in candidates:
+        qs_text = raw
+        if raw.startswith('/'):
+            qs_text = 'https://lk.local' + raw
+        try:
+            parsed = urlparse(qs_text)
+            params = parse_qs(parsed.query)
+        except Exception:
+            params = {}
+        for key in ['utm_content', 'ad_id', 'fb_ad_id']:
+            for val in params.get(key, []):
+                for m in re.findall(r'\d{12,}', str(val)):
+                    ids.add(m)
+    return ids
+
+
+def summarize_shopify(orders: List[Dict[str, Any]], aliases: Dict[str, List[str]], meta_ad_bridge: Dict[str, str] | None = None) -> Dict[str, Any]:
+    meta_ad_bridge = meta_ad_bridge or {}
+    by = defaultdict(lambda: {'orders':0, 'revenue':0.0, 'bridge_text':0, 'bridge_meta_ad_id':0, 'products':defaultdict(lambda:{'qty':0,'revenue':0.0})})
     unattributed = {'orders':0, 'revenue':0.0}
+    ambiguous = {'orders':0, 'revenue':0.0}
     for o in orders:
         if o.get('cancelled_at'):
             continue
-        inf = match_influencer(order_evidence_text(o), aliases)
         total = parse_num(o.get('total_price'))
+        matched_ad_influencers = sorted({meta_ad_bridge[i] for i in extract_meta_ad_ids_from_order(o) if i in meta_ad_bridge}) if meta_ad_bridge else []
+        if len(matched_ad_influencers) == 1:
+            # Exact Meta ad_id in Shopify UTM is stronger than loose textual matches,
+            # which can be polluted by supplier names, internal tags or product copy.
+            inf = matched_ad_influencers[0]
+            bridge_type = 'meta_ad_id'
+        elif len(matched_ad_influencers) > 1:
+            ambiguous['orders'] += 1; ambiguous['revenue'] += total
+            continue
+        else:
+            inf = match_influencer(order_evidence_text(o), aliases)
+            bridge_type = 'text' if inf else None
         if not inf:
             unattributed['orders'] += 1; unattributed['revenue'] += total
             continue
         by[inf]['orders'] += 1; by[inf]['revenue'] += total
+        if bridge_type == 'meta_ad_id':
+            by[inf]['bridge_meta_ad_id'] += 1
+        else:
+            by[inf]['bridge_text'] += 1
         for li in o.get('line_items') or []:
             title = li.get('title') or li.get('name') or 'Produto sem nome'
             sku = li.get('sku') or 'SKU vazio'
@@ -232,8 +283,14 @@ def summarize_shopify(orders: List[Dict[str, Any]], aliases: Dict[str, List[str]
     ret = {}
     for inf, d in by.items():
         products = sorted(d['products'].items(), key=lambda kv: (kv[1]['qty'], kv[1]['revenue']), reverse=True)[:8]
-        ret[inf] = {'orders':d['orders'], 'revenue':d['revenue'], 'products':[{'product':k, **v} for k,v in products]}
-    return {'by_influencer':ret, 'unattributed':unattributed, 'total_orders':len(orders), 'total_revenue':sum(parse_num(o.get('total_price')) for o in orders if not o.get('cancelled_at'))}
+        ret[inf] = {
+            'orders': d['orders'],
+            'revenue': d['revenue'],
+            'bridge_text': d.get('bridge_text', 0),
+            'bridge_meta_ad_id': d.get('bridge_meta_ad_id', 0),
+            'products': [{'product':k, **v} for k,v in products],
+        }
+    return {'by_influencer':ret, 'unattributed':unattributed, 'ambiguous': ambiguous, 'total_orders':len(orders), 'total_revenue':sum(parse_num(o.get('total_price')) for o in orders if not o.get('cancelled_at'))}
 
 
 def fetch_meta(secrets: Dict[str, str], start: dt.datetime, end: dt.datetime, aliases: Dict[str, List[str]]) -> Dict[str, Any]:
@@ -244,7 +301,7 @@ def fetch_meta(secrets: Dict[str, str], start: dt.datetime, end: dt.datetime, al
     if not token:
         raise RuntimeError('missing META_ACCESS_TOKEN')
     url = f'https://graph.facebook.com/v20.0/{account}/insights'
-    fields = 'ad_id,campaign_name,adset_name,ad_name,spend,clicks,impressions,actions,action_values'
+    fields = 'campaign_id,adset_id,ad_id,campaign_name,adset_name,ad_name,spend,clicks,impressions,actions,action_values'
     params = {
         'access_token': token,
         'level': 'ad',
@@ -262,11 +319,15 @@ def fetch_meta(secrets: Dict[str, str], start: dt.datetime, end: dt.datetime, al
             break
         url = nxt; params = None
     by = defaultdict(lambda: {'spend':0.0,'clicks':0,'impressions':0,'purchases':0.0,'value':0.0,'ads':0})
+    ad_id_to_influencer: Dict[str, str] = {}
     for row in rows:
         text = ' | '.join([row.get('campaign_name',''), row.get('adset_name',''), row.get('ad_name','')])
         inf = match_influencer(text, aliases)
         if not inf:
             continue
+        ad_id = row.get('ad_id')
+        if ad_id:
+            ad_id_to_influencer[str(ad_id)] = inf
         purchases, _ = canonical_metric(row.get('actions') or [])
         value, _ = canonical_metric(row.get('action_values') or [])
         d = by[inf]
@@ -276,7 +337,7 @@ def fetch_meta(secrets: Dict[str, str], start: dt.datetime, end: dt.datetime, al
         d['purchases'] += purchases
         d['value'] += value
         d['ads'] += 1
-    return {'by_influencer':dict(by), 'rows':len(rows), 'account':account}
+    return {'by_influencer':dict(by), 'rows':len(rows), 'account':account, 'ad_id_to_influencer': ad_id_to_influencer}
 
 
 def merge_report(meta_cur, meta_prev, shop_cur, shop_prev, windows) -> Dict[str, Any]:
@@ -295,6 +356,7 @@ def merge_report(meta_cur, meta_prev, shop_cur, shop_prev, windows) -> Dict[str,
             'meta_clicks': mc.get('clicks',0), 'meta_clicks_prev': mp.get('clicks',0),
             'shopify_orders': sc.get('orders',0), 'shopify_orders_prev': sp.get('orders',0),
             'shopify_revenue': sc.get('revenue',0.0), 'shopify_revenue_prev': sp.get('revenue',0.0),
+            'bridge_text': sc.get('bridge_text',0), 'bridge_meta_ad_id': sc.get('bridge_meta_ad_id',0),
             'products': sc.get('products',[]),
         })
     rows.sort(key=lambda r: (r['shopify_revenue'], r['meta_purchases'], r['meta_spend']), reverse=True)
@@ -309,11 +371,11 @@ def render_md(rep: Dict[str, Any]) -> str:
     lines.append(f"Janela atual: {cur[0].date()} a {cur[1].date()} (BRT)")
     lines.append(f"Comparativo: {prev[0].date()} a {prev[1].date()} (BRT)")
     lines.append('')
-    lines.append('Metodologia: Meta Ads direto por `campaign_name`/`adset_name`/`ad_name`, compra canônica por anúncio; Shopify só atribuído quando há ponte textual (cupom, UTM/landing/referrer, note attributes, note ou tags).')
+    lines.append('Metodologia: Meta Ads direto por `campaign_name`/`adset_name`/`ad_name`, compra canônica por anúncio; Shopify/produtos atribuídos somente quando há ponte textual ou `ad_id` Meta exato em `utm_content`/`ad_id`. Campanha/adset genérico não é usado como ponte.')
     lines.append('')
     for r in rep['rows'][:20]:
         lines.append(f"## {r['influencer']}")
-        lines.append(f"- Shopify: {r['shopify_orders']} pedidos / {money(r['shopify_revenue'])} ({pct_change(r['shopify_revenue'], r['shopify_revenue_prev'])} vs semana anterior)")
+        lines.append(f"- Shopify com ponte: {r['shopify_orders']} pedidos / {money(r['shopify_revenue'])} ({pct_change(r['shopify_revenue'], r['shopify_revenue_prev'])} vs semana anterior; {r.get('bridge_text',0)} texto + {r.get('bridge_meta_ad_id',0)} ad_id Meta)")
         lines.append(f"- Meta: {r['meta_purchases']:.0f} compras canônicas / spend {money(r['meta_spend'])} / valor Meta {money(r['meta_value'])}")
         if r['products']:
             lines.append('- Produtos com ponte Shopify:')
@@ -333,13 +395,13 @@ def render_html(rep: Dict[str, Any]) -> str:
     parts = [f'<!doctype html><meta charset="utf-8"><style>{css}</style><div class="wrap">']
     parts.append('<h1>LK — Relatório semanal de vendas por influencer</h1>')
     parts.append(f'<p class="muted"><b>Atual:</b> {cur[0].date()} a {cur[1].date()} BRT<br><b>Comparativo:</b> {prev[0].date()} a {prev[1].date()} BRT</p>')
-    parts.append('<p class="muted">Meta Ads direto com compra canônica por anúncio. Shopify/produtos só entram quando há ponte textual verificável.</p>')
+    parts.append('<p class="muted">Meta Ads direto com compra canônica por anúncio. Shopify/produtos entram quando há ponte textual ou ad_id Meta exato em utm_content/ad_id. Campanha/adset genérico não é usado como ponte.</p>')
     for r in rep['rows'][:20]:
         cls = 'up' if r['shopify_revenue'] >= r['shopify_revenue_prev'] else 'down'
         parts.append('<div class="card">')
         parts.append(f'<div class="name">{html.escape(r["influencer"])}</div>')
         parts.append('<div class="grid">')
-        parts.append(f'<div class="kv"><div class="k">Shopify com ponte</div><div class="v">{r["shopify_orders"]} pedidos / {money(r["shopify_revenue"])}</div><div class="{cls}">{pct_change(r["shopify_revenue"], r["shopify_revenue_prev"])} vs semana ant.</div></div>')
+        parts.append(f'<div class="kv"><div class="k">Shopify com ponte</div><div class="v">{r["shopify_orders"]} pedidos / {money(r["shopify_revenue"])}</div><div class="{cls}">{pct_change(r["shopify_revenue"], r["shopify_revenue_prev"])} vs semana ant.</div><div class="muted">Ponte: {r.get("bridge_text",0)} texto + {r.get("bridge_meta_ad_id",0)} ad_id Meta</div></div>')
         parts.append(f'<div class="kv"><div class="k">Meta canônico</div><div class="v">{r["meta_purchases"]:.0f} compras / {money(r["meta_spend"])} spend</div><div class="muted">Valor Meta: {money(r["meta_value"])}</div></div>')
         parts.append('</div>')
         if r['products']:
@@ -387,12 +449,10 @@ def send_gmail(secrets: Dict[str,str], to_addr: str, subject: str, html_body: st
             last_error = f'http_{tok.status_code}'
     if not access:
         raise RuntimeError(f'no valid Gmail OAuth credential set; last_error={last_error}')
-    msg = EmailMessage()
+    msg = MIMEText(html_body, 'html', 'utf-8')
     msg['To'] = to_addr
     msg['From'] = from_addr
     msg['Subject'] = subject
-    msg.set_content(text_body)
-    msg.add_alternative(html_body, subtype='html')
     raw = base64.urlsafe_b64encode(msg.as_bytes()).decode().rstrip('=')
     r = requests.post('https://gmail.googleapis.com/gmail/v1/users/me/messages/send', headers={'Authorization': f'Bearer {access}'}, json={'raw': raw}, timeout=60)
     r.raise_for_status()
@@ -413,8 +473,8 @@ def main():
     meta_prev = fetch_meta(secrets, *windows['previous'], aliases)
     shop_orders_cur = fetch_shopify_orders(secrets, *windows['current'])
     shop_orders_prev = fetch_shopify_orders(secrets, *windows['previous'])
-    shop_cur = summarize_shopify(shop_orders_cur, aliases)
-    shop_prev = summarize_shopify(shop_orders_prev, aliases)
+    shop_cur = summarize_shopify(shop_orders_cur, aliases, meta_cur.get('ad_id_to_influencer'))
+    shop_prev = summarize_shopify(shop_orders_prev, aliases, meta_prev.get('ad_id_to_influencer'))
     rep = merge_report(meta_cur, meta_prev, shop_cur, shop_prev, windows)
     slug = windows['current'][1].date().isoformat()
     md = render_md(rep); html_body = render_html(rep)
