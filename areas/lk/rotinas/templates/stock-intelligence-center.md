@@ -24,6 +24,8 @@ O centro deve responder:
 - Granularidade obrigatória: marca → modelo → produto/cor → tamanho/variante.
 - Estoque oficial: Tiny / depósito `LK | CONTROLE ESTOQUE`.
 - Shopify informa venda/pedido/source, mas não manda no estoque.
+- SKU canônico para matching: Shopify. Tiny deve ser mapeado/normalizado para o SKU Shopify; não alterar SKU Shopify automaticamente.
+- Quando o SKU Shopify não bater no Tiny, classificar como `mapear SKU no Tiny`, sugerir alias/correção no Tiny e exigir preview humano antes de qualquer write.
 - Encomenda BR/US é classificação humana marcada no contexto do pedido Shopify; o sistema sugere, não decide sozinho.
 - Droper.app, StockX, KicksDev, GOAT, Flight Club, retailers e revendedores são fontes de sourcing, não concorrentes a monitorar continuamente.
 - Buscar fontes externas só quando houver sinal interno ou oportunidade de tendência. Exemplo: produto/tamanho vendeu bem, Tiny está zerado/baixo, e uma fonte relevante parece ter restock.
@@ -178,6 +180,7 @@ Não sugerir aumento quando:
 
 - [ ] A recomendação está por tamanho/variante.
 - [ ] Tiny foi usado como estoque oficial.
+- [ ] SKU Shopify foi usado como chave canônica; divergências com Tiny foram mapeadas como alias/pendência, não resolvidas por chute.
 - [ ] Status de encomenda foi tratado como humano/curatorial.
 - [ ] Lead time foi explicitado.
 - [ ] A sugestão pode ser “não comprar”.

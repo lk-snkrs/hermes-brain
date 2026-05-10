@@ -2,6 +2,13 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-10 — Correções LK SKU Shopify/Tiny e Meta influencer
+
+- Registrada correção de Lucas: SKU canônico operacional é Shopify; Tiny deve ser aprendido/mapeado/normalizado para Shopify, nunca o contrário por automação.
+- Corrigida a leitura Meta influencer do relatório `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`: o recorte anterior de 30 dias subcontava Lala/Helena/Silvia; nova leitura read-only usa janela desde 2025-12-01 e nomes no nível de ad, com aviso de que ROAS de plataforma ainda não é ROAS final da LK.
+- Atualizados PRD e template Stock Intelligence para exigir mapa SKU Shopify ↔ Tiny e preview humano antes de qualquer sugestão de correção no Tiny.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-10 — LK Stock Intelligence + Influencer/Product Audit real v0.1
 
 - Gerado o primeiro relatório real agregado/read-only combinando Shopify vendas, Tiny `LK | CONTROLE ESTOQUE`, Brand Mix e auditoria influencer vs produto em `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`.

@@ -38,6 +38,7 @@ O `LK Operating System` deve operar como um CEO/Chief of Staff da LK: transforma
 - Dados antes de afirmação.
 - Produto/modelo/tamanho antes de decisão genérica por produto.
 - Shopify é fonte de vendas/clientes/source/catálogo; Tiny é fonte oficial de estoque.
+- SKU canônico para matching operacional é o SKU da Shopify. O sistema pode sugerir padronizar/corrigir o SKU no Tiny para refletir Shopify, mas não deve alterar SKU Shopify sem aprovação explícita, porque isso pode quebrar histórico, catálogo, integrações e operação.
 - Estoque disponível não é igual a estoque físico: encomenda, reserva e produto já vendido precisam ser separados.
 - O sistema deve sugerir, preparar e criar previews; humano aprova envio, publicação, compra, alteração de preço, alteração de tema ou ação externa.
 - Conteúdo deve nascer de sinal real: venda, tendência, busca, estoque, campanha, influenciador, restock ou oportunidade de curadoria.
@@ -88,6 +89,7 @@ Entidades mínimas:
 - source/canal;
 - campanhas/UTMs;
 - influenciadores;
+- mapa de SKU Shopify ↔ Tiny, com Shopify como chave canônica e aliases Tiny quando existirem;
 - preço atual;
 - histórico de preço;
 - histórico de estoque;
@@ -114,6 +116,10 @@ Regra:
 Regra de encomenda:
 
 > `encomenda BR` e `encomenda US` são curadoria humana da LK e aparecem no contexto do pedido Shopify quando a equipe marca. O sistema pode sugerir candidatos, mas não deve deduzir automaticamente por tag de produto, nome do produto ou ausência de estoque. A mesma página/produto pode ter tamanho pronta entrega e outro tamanho sob encomenda.
+
+Regra de SKU:
+
+> Para relatórios e matching, Shopify é a chave canônica de SKU porque é onde venda, pedido, produto e variante acontecem. O Tiny continua sendo a fonte oficial de estoque, mas o ideal operacional é o Tiny espelhar o SKU Shopify. Quando houver divergência, o sistema deve primeiro aprender/mapear `SKU Shopify → produto Tiny/alias Tiny`, marcar confiança e só sugerir alteração no Tiny mediante preview; nunca mudar SKU Shopify automaticamente.
 
 ## 7. Estrutura de módulos
 

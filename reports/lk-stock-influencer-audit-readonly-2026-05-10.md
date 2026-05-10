@@ -132,17 +132,25 @@ Regra: Shopify é a evidência operacional de venda; Meta/Google mostram sinal d
 
 ## Meta/Google — sinal de mídia por influencer
 
-- **Silvia Heinz**: 31 linhas Meta; spend R$ 8.998,67; clicks 41727; compras plataforma 117; valor plataforma R$ 420.172,89; ROAS plataforma 46.69x.
-- **Lala Noleto**: 15 linhas Meta; spend R$ 7.174,20; clicks 7724; compras plataforma 198; valor plataforma R$ 554.614,77; ROAS plataforma 77.31x.
-- **Helena Lunardelli**: 22 linhas Meta; spend R$ 4.382,04; clicks 3998; compras plataforma 120; valor plataforma R$ 374.290,14; ROAS plataforma 85.41x.
+Correção pós-review Lucas: os números abaixo eram o recorte tático de 30 dias e só capturavam nomes de influencer no nível de **ad**. Isso subconta campanhas antigas/longas e pode parecer que uma influencer gastou muito menos do que o real. Para auditoria correta, o LK OS deve puxar Meta em janelas maiores e checar `campaign_name`, `adset_name` e `ad_name`, usando ad-level como unidade de soma para evitar double count.
+
+Recorte rechecado em Meta Ads direto, `2025-12-01` a `2026-05-10`, nomes contendo influencer no nível de ad:
+
+- **Silvia Heinz**: 33 ads; spend R$ 50.309,02; clicks 214.918; compras plataforma 822; valor plataforma R$ 2.560.642,92; ROAS plataforma 50.90x.
+- **Lala Noleto**: 19 ads; spend R$ 25.745,35; clicks 29.597; compras plataforma 519; valor plataforma R$ 1.686.413,85; ROAS plataforma 65.50x.
+- **Helena Lunardelli**: 28 ads; spend R$ 24.363,82; clicks 39.003; compras plataforma 627; valor plataforma R$ 1.720.526,49; ROAS plataforma 70.62x.
+
+Leitura: o gasto original de Lala em 30d estava incompleto para a pergunta comercial do Lucas. Mesmo o ROAS rechecado ainda é **ROAS de plataforma**, não ROAS final da LK; precisa reconciliar com Shopify web revenue, UTM/cupom/landing/referrer, período correto e produto/tamanho vendido.
+
 - Google/Metricool: nenhum nome de influencer encontrado nas campanhas do período testado.
 
 ## O que isto muda no próximo passo
 
 1. Criar **dicionário canônico de influencers**: nome oficial, variações de grafia, handle, cupom, UTM, campaign/adset/ad patterns e produtos esperados.
-2. Corrigir o vínculo SKU Shopify ↔ Tiny para os campeões marcados como `mapear SKU no Tiny`; sem isso, o Stock Intelligence fica incompleto justamente nos produtos mais importantes.
-3. Evoluir o relatório para responder em uma linha: `influencer → produto/marca/modelo/tamanho vendido → receita Shopify → estoque Tiny → risco de ruptura → sugestão de reposição`.
-4. Só depois de Lucas aprovar o preview, transformar candidatos em mensagem para grupo de compras/Monbam/Droper/Notion. Nesta execução isso não foi feito.
+2. Criar **mapa canônico SKU Shopify ↔ Tiny**: Shopify manda no SKU operacional; Tiny deve ser aprendido/normalizado para bater com Shopify, sem alterar Shopify automaticamente.
+3. Corrigir o vínculo SKU Shopify ↔ Tiny para os campeões marcados como `mapear SKU no Tiny`; sem isso, o Stock Intelligence fica incompleto justamente nos produtos mais importantes.
+4. Evoluir o relatório para responder em uma linha: `influencer → produto/marca/modelo/tamanho vendido → receita Shopify → estoque Tiny → risco de ruptura → sugestão de reposição`.
+5. Só depois de Lucas aprovar o preview, transformar candidatos em mensagem para grupo de compras/Monbam/Droper/Notion. Nesta execução isso não foi feito.
 
 ## Campos de aprovação
 
