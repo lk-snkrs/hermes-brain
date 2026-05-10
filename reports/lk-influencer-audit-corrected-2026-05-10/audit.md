@@ -1,0 +1,132 @@
+# LK Influencer Audit Corrigido — Meta + Shopify + Criativos
+
+Gerado: `2026-05-10T12:02:45`
+
+Período: `2025-12-01..2026-05-10`
+Conta Meta: `act_1242062509867163`
+
+## Método corrigido
+- Compra Meta canônica: usa **uma** action key por anúncio (`offsite_conversion.fb_pixel_purchase` preferencial). Não soma `purchase + omni_purchase + offsite_conversion`, porque isso triplica em vários casos.
+- Influencers são descobertos por naming Meta em `campaign_name`, `adset_name`, `ad_name` e depois normalizados.
+- Produtos vendidos são listados só quando há ponte textual Shopify: cupom, UTM/landing/referrer, note attributes, note ou tags. Sem ponte, não atribuo produto ao criativo.
+
+## Ranking corrigido por influencer
+- **Silvia Henz** — Meta: spend R$ 50,383.38; compras canônicas 274; valor Meta R$ 853,547.64; ads 33; Shopify texto: 257 pedidos / R$ 772,102.30
+  - produto: Jason Markk Repel Spray Impermeabilizante / SKU JM3 / tam.  — qty 13; receita linha R$ 2,209.87; evidência {'discount_code': 12, 'note_attributes': 1}
+  - produto: Jason Markk Essential Kit de Limpeza / SKU 300110 / tam.  — qty 10; receita linha R$ 1,999.90; evidência {'discount_code': 10}
+  - produto: Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege / SKU 1183C123.252-4 / tam. 37 — qty 7; receita linha R$ 15,399.93; evidência {'discount_code': 7}
+  - produto: Tênis New Balance 204L Arid Timberwolf Bege / SKU U204LMMC-3 / tam. 36 — qty 6; receita linha R$ 15,999.94; evidência {'discount_code': 6, 'note_attributes': 1}
+  - produto: Tênis Nike Air Jordan 4 Retro Metallic Gold Branco / SKU AQ9129-170-7 / tam. 40 — qty 4; receita linha R$ 13,399.96; evidência {'discount_code': 4}
+- **Lala Noleto** — Meta: spend R$ 25,845.25; compras canônicas 174; valor Meta R$ 564,117.95; ads 19; Shopify texto: 0 pedidos / R$ 0.00
+- **Helena Lunardelli** — Meta: spend R$ 24,396.22; compras canônicas 209; valor Meta R$ 573,508.83; ads 28; Shopify texto: 49 pedidos / R$ 178,594.00
+  - produto: Slide Nike Mind 001 Black Chrome Preto / SKU HQ4307-001-10 / tam. 43 — qty 3; receita linha R$ 8,699.97; evidência {'landing_site': 3, 'note_attributes': 3}
+  - produto: Jason Markk Repel Spray Impermeabilizante / SKU JM3 / tam.  — qty 3; receita linha R$ 509.97; evidência {'note_attributes': 3, 'landing_site': 1}
+  - produto: Tênis New Balance 204L Arid Timberwolf Bege / SKU U204LMMC-3 / tam. 36 — qty 2; receita linha R$ 5,599.98; evidência {'landing_site': 2, 'note_attributes': 2}
+  - produto: Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege / SKU 1183C015-202-4 / tam. 37 — qty 2; receita linha R$ 4,999.98; evidência {'discount_code': 1, 'note_attributes': 1}
+  - produto: Tênis New Balance 204L Arid Timberwolf Bege / SKU U204LMMC-5 / tam. 38 — qty 2; receita linha R$ 4,799.98; evidência {'note_attributes': 1, 'landing_site': 1}
+- **Maria** — Meta: spend R$ 9,018.59; compras canônicas 55; valor Meta R$ 146,920.34; ads 3; Shopify texto: 0 pedidos / R$ 0.00
+- **Ju Mesquita** — Meta: spend R$ 9,004.49; compras canônicas 54; valor Meta R$ 140,464.76; ads 10; Shopify texto: 0 pedidos / R$ 0.00
+- **Arlindo** — Meta: spend R$ 3,301.52; compras canônicas 27; valor Meta R$ 104,830.60; ads 3; Shopify texto: 1 pedidos / R$ 2,250.00
+  - produto: Tênis Onitsuka Tiger Mexico 66 SD Vin Clay Canyon Cream Marrom / SKU 1183C015.205-3 / tam. 36 — qty 1; receita linha R$ 2,499.99; evidência {'note_attributes': 1}
+- **Maria Fernanda** — Meta: spend R$ 2,803.40; compras canônicas 28; valor Meta R$ 57,607.85; ads 4; Shopify texto: 0 pedidos / R$ 0.00
+- **Mariah** — Meta: spend R$ 2,521.90; compras canônicas 7; valor Meta R$ 22,156.26; ads 5; Shopify texto: 4 pedidos / R$ 8,229.57
+  - produto: Tênis Onitsuka Tiger Mexico 66 SD Birch Metropolis Bege / SKU 1183C015200 / tam. 41 — qty 1; receita linha R$ 2,499.99; evidência {'discount_code': 1}
+  - produto: Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege / SKU 1183A872.101-9 / tam. 42 — qty 1; receita linha R$ 2,499.99; evidência {'discount_code': 1}
+  - produto: Tênis Onitsuka Tiger Mexico 66 Clay Canyon/Paper Bag Marrom / SKU 1183C102.203-3 / tam. 36 — qty 1; receita linha R$ 2,399.99; evidência {'discount_code': 1}
+  - produto: Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata / SKU 1183B566021 / tam. 36 — qty 1; receita linha R$ 2,399.99; evidência {'discount_code': 1}
+  - produto: Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom / SKU 1183C102250 / tam. 36 — qty 1; receita linha R$ 2,399.99; evidência {'discount_code': 1}
+- **Fiorela** — Meta: spend R$ 2,100.55; compras canônicas 18; valor Meta R$ 62,691.48; ads 9; Shopify texto: 0 pedidos / R$ 0.00
+- **Renata** — Meta: spend R$ 492.49; compras canônicas 21; valor Meta R$ 42,980.33; ads 10; Shopify texto: 1 pedidos / R$ 1,999.99
+  - produto: Tênis Nike Air Jordan 1 Low Midnight Navy Wolf Grey Azul Marinho / SKU 553560141 / tam. 39 — qty 1; receita linha R$ 1,999.99; evidência {'note': 1}
+- **Ma Zanetti** — Meta: spend R$ 380.62; compras canônicas 3; valor Meta R$ 4,093.06; ads 8; Shopify texto: 0 pedidos / R$ 0.00
+- **Taby** — Meta: spend R$ 125.45; compras canônicas 2; valor Meta R$ 2,669.98; ads 3; Shopify texto: 1 pedidos / R$ 0.00
+  - produto: Tênis Adidas Samba OG Earth Strata Wonder White Marrom / SKU JI3184 / tam. 35 — qty 1; receita linha R$ 2,299.99; evidência {'discount_code': 1}
+  - produto: Tênis Adidas Samba OG Earth Strata Wonder White Marrom / SKU JI3184 / tam. 34 — qty 1; receita linha R$ 2,299.99; evidência {'discount_code': 1}
+  - produto: Tênis Adidas Samba Jane 'White Black' Branco / SKU JR1402-2 / tam. 35 — qty 1; receita linha R$ 1,999.99; evidência {'discount_code': 1}
+  - produto: Tênis Adidas Samba Jane 'White Black' Branco / SKU JR1402-1 / tam. 34 — qty 1; receita linha R$ 1,999.99; evidência {'discount_code': 1}
+- **Hariana** — Meta: spend R$ 116.79; compras canônicas 1; valor Meta R$ 2,999.99; ads 4; Shopify texto: 0 pedidos / R$ 0.00
+- **Lela** — Meta: spend R$ 71.53; compras canônicas 1; valor Meta R$ 2,470.00; ads 2; Shopify texto: 0 pedidos / R$ 0.00
+- **Malu Borges** — Meta: spend R$ 14.99; compras canônicas 0; valor Meta R$ 0.00; ads 3; Shopify texto: 0 pedidos / R$ 0.00
+- **Gio Pagano** — Meta: spend R$ 2.55; compras canônicas 0; valor Meta R$ 0.00; ads 1; Shopify texto: 0 pedidos / R$ 0.00
+
+## Criativos com mais compras Meta canônicas
+- #1 **Lala Noleto** — compras 136; valor R$ 439,245.32; spend R$ 19,671.36
+  - ad: `[influencer Lala noleto] —Simples`
+  - campanha: `[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/01_Lala_Noleto_120236212896640224.jpg`
+- #2 **Silvia Henz** — compras 58; valor R$ 170,996.81; spend R$ 4,266.92
+  - ad: `[influencer Silvia start 11.12.25- RMKT]`
+  - campanha: `[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/02_Silvia_Henz_120237637374840224.jpg`
+- #3 **Maria** — compras 54; valor R$ 144,545.34; spend R$ 5,843.92
+  - ad: `[influencer Maria- Adv geral]`
+  - campanha: `Pareto.Vendas-Adv [ Geral]`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/03_Maria_120229142869820224.jpg`
+- #4 **Helena Lunardelli** — compras 39; valor R$ 95,808.03; spend R$ 5,084.38
+  - ad: `[influencer Helena | start 07-12-25 | Stories 3]`
+  - campanha: `Pareto.Vendas-Adv [ Geral]`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/04_Helena_Lunardelli_120237393056970224.jpg`
+- #5 **Helena Lunardelli** — compras 37; valor R$ 104,253.21; spend R$ 4,384.28
+  - ad: `[influencer Helena | start 07-12-25 | Stories 3] — Cópia`
+  - campanha: `[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/05_Helena_Lunardelli_120237393697790224.jpg`
+- #6 **Silvia Henz** — compras 33; valor R$ 74,611.46; spend R$ 3,967.70
+  - ad: `[influencer Silvia | start 20-12-25 | Camp Onitsuka] — Cópia`
+  - campanha: `Pareto.Vendas-Adv [ Geral]`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/06_Silvia_Henz_120238260359010224.jpg`
+- #7 **Arlindo** — compras 27; valor R$ 104,830.60; spend R$ 3,273.03
+  - ad: `[influencer Arlindo 02-04-26] - Varios Looks]Lista Compradores — — Cópia`
+  - campanha: `Pareto.Vendas [Masculino]`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/07_Arlindo_120242637576320224.jpg`
+- #8 **Helena Lunardelli** — compras 27; valor R$ 78,531.91; spend R$ 3,564.76
+  - ad: `[influencer Helena | start 07-12-25 | Stories 3] — Cópia`
+  - campanha: `[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/08_Helena_Lunardelli_120237637573420224.jpg`
+- #9 **Ju Mesquita** — compras 26; valor R$ 62,388.37; spend R$ 4,251.83
+  - ad: `[influencer Ju Mesquita | start 25-02-26 | New Balance 204 L] — Cópia`
+  - campanha: `[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/09_Ju_Mesquita_120240944479470224.jpg`
+- #10 **Silvia Henz** — compras 25; valor R$ 71,674.26; spend R$ 2,110.76
+  - ad: `[influencer Silvia | start 20-12-25 | Onitsuka Sabot Stories 3]`
+  - campanha: `Pareto.Vendas-Adv [ Geral]`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/10_Silvia_Henz_120238260543140224.jpg`
+- #11 **Lala Noleto** — compras 24; valor R$ 91,923.51; spend R$ 4,351.24
+  - ad: `[influencer Lala noleto] — RMKT`
+  - campanha: `[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/11_Lala_Noleto_120231767068900224.jpg`
+- #12 **Helena Lunardelli** — compras 22; valor R$ 54,162.26; spend R$ 1,958.54
+  - ad: `[influencer Helena | start 07-12-25 | Stories 5] — —`
+  - campanha: `Pareto.Vendas-Adv [ Geral]`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/12_Helena_Lunardelli_120237393656580224.jpg`
+- #13 **Renata** — compras 20; valor R$ 38,980.34; spend R$ 238.62
+  - ad: `[influencer Renata start 15.12.25- Adv geral] —`
+  - campanha: `Pareto.Vendas-Adv [ Geral]`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/13_Renata_120237938182780224.jpg`
+- #14 **Maria Fernanda** — compras 20; valor R$ 33,897.90; spend R$ 453.79
+  - ad: `[influencer Maria Fernanda - Video 2 - Nov 25] — ADV`
+  - campanha: `Pareto.Vendas-Adv [ Geral]`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/14_Maria_Fernanda_120235354422280224.jpg`
+- #15 **Ju Mesquita** — compras 18; valor R$ 54,144.95; spend R$ 3,068.69
+  - ad: `[influencer Ju Mesquita | start 25-02-26 | Onitsuka] — Cópia`
+  - campanha: `[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/15_Ju_Mesquita_120240944479490224.jpg`
+- #16 **Silvia Henz** — compras 17; valor R$ 40,601.45; spend R$ 3,611.29
+  - ad: `[influencer Silvia | start 20-12-25 | Onitsuka Sabot Stories 2] —`
+  - campanha: `Pareto.Vendas-Adv [ Geral]`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/16_Silvia_Henz_120238260522470224.jpg`
+- #17 **Silvia Henz** — compras 16; valor R$ 76,285.02; spend R$ 3,508.68
+  - ad: `[influencer Silvia start 11.12.25- Adv geral] — — Cópia`
+  - campanha: `[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/17_Silvia_Henz_120237637520810224.jpg`
+- #18 **Helena Lunardelli** — compras 16; valor R$ 54,292.51; spend R$ 1,462.86
+  - ad: `[influencer Helena | start 07-12-25 | Stories 1 ] —`
+  - campanha: `Pareto.Vendas-Adv [ Geral]`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/18_Helena_Lunardelli_120237392928140224.jpg`
+- #19 **Silvia Henz** — compras 15; valor R$ 53,561.68; spend R$ 2,753.25
+  - ad: `[influencer Silvia | start 15-12-25 | New Balance 204L Stories 1]`
+  - campanha: `Pareto.Vendas-Adv [ Geral]`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/19_Silvia_Henz_120237980506920224.jpg`
+- #20 **Helena Lunardelli** — compras 11; valor R$ 18,439.36; spend R$ 795.09
+  - ad: `[influencer Helena | start 07-12-25 | Stories 4] —`
+  - campanha: `Pareto.Vendas-Adv [ Geral]`
+  - imagem: `/opt/data/lk_influencer_audit_corrected_2026-05-10/creative_images/20_Helena_Lunardelli_120237393432560224.jpg`
