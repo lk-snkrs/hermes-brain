@@ -1,3 +1,11 @@
+## 2026-05-10 — LK Monthly Pareto reconciliation script
+
+- Adicionado `scripts/lk_monthly_pareto_reconciliation.py`, script read-only para gerar reconciliação mensal Meta em modo `Pareto-compatible` e `Lucas-operacional`.
+- Rodado para abril/2026 e versionado output em `reports/lk-pareto-april-2026/pareto-compatible-script-output.md` e `.json`.
+- O script confirmou Meta global 100% alinhado ao PDF Pareto: R$ 38.954,76 spend, 229 compras, R$ 797.654,65 valor Meta, ROAS 20,48 e CPA R$ 170,11.
+- Modo Pareto-compatible separa `Maria`, `Maria Fernanda` e `Mariah`; abril mostrou Maria com 2 compras/R$ 741,54 e Maria Fernanda/Mariah com zero compra Meta.
+- Produção, VPS/Docker, bancos, secrets, campanhas, Shopify/Tiny/Klaviyo/WhatsApp e envios externos não foram alterados.
+
 ## 2026-05-10 — LK Pareto April reconciliation + Maria split
 
 - Versionada auditoria `reports/lk-pareto-april-2026/reconciliation-audit.md` comparando o PDF do Maicon/Pareto de abril/2026 com Meta Ads direto e Shopify Admin.
