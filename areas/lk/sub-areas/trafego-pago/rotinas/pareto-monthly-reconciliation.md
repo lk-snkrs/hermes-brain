@@ -32,9 +32,11 @@ O PDF Pareto chama os campos de Meta/Google de `Receita`, mas a leitura correta 
 
 A crítica lógica é obrigatória: Meta é uma parte do tráfego, Google é outra, além de orgânico, direto e referral. Portanto, a venda real por canal não pode ser calculada pelos dashboards isolados de Meta/Google, porque eles se sobrepõem e podem somar mais que a receita total.
 
-Para venda/contribuição real por canal, usar Pareto/GA4:
+Para venda/contribuição real por canal, usar Pareto/GA4 e **não omitir tráfego direto**:
 
 - `Paid Social`: `R$ 211.329`.
+- `Organic Social`: `R$ 157.968,12`.
+- `Direct`: `R$ 100.759,70` (`12.801` sessões; `35` pedidos).
 - `facebook / paid`: `R$ 181.859,02`.
 - `google / cpc`: `R$ 130.069,50`.
 - `Paid Search`: `R$ 51.137`.
@@ -89,7 +91,8 @@ Cálculo Pareto-compatible aprendido:
    - Fonte: GA4 Data API.
    - Dimensão: `sessionDefaultChannelGroup`.
    - Métricas: `totalRevenue`, `sessions`, `transactions`, `sessionConversionRate`.
-   - Exemplos abril/2026 calculados: `Paid Social R$ 211.329,00`, `Paid Search R$ 51.136,61`, `Cross-network R$ 58.923,58`.
+   - Exemplos abril/2026 calculados: `Paid Social R$ 211.329,00`, `Organic Social R$ 157.968,12`, `Direct R$ 100.759,70`, `Paid Search R$ 51.136,61`, `Cross-network R$ 58.923,58`.
+   - Regra de apresentação: mostrar sempre o canal `Direct` no resumo executivo, porque ele é venda real GA4 e evita a leitura enviesada de que só tráfego pago explica o faturamento.
 
 3. **Receita real por origem/mídia**
    - Fonte: GA4 Data API.

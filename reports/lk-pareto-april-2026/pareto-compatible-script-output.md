@@ -5,7 +5,9 @@
 - Venda real e-commerce calculada via GA4: 233 pedidos, R$ 722.636,36 receita total, 166,003 sessões, ticket médio R$ 3.101,44.
 - Investimento pago calculado: Meta R$ 38.954,76 + Google/Metricool R$ 26.481,76 = R$ 65.436,52; ROAS geral calculado 11.04.
 - Correção de senso crítico: o Meta Ads Manager atribuiu R$ 797.654,65, R$ 75.018,29 acima da receita total da LK; logo esse número **não é venda da Meta** nem pode entrar na divisão Meta vs Google de vendas reais.
-- Receita real por canal calculada via GA4 `sessionDefaultChannelGroup`:
+- Tráfego direto incluído no GA4: Direct R$ 100.759,70; 12,801 sessões; 35 pedidos; conversão 3.40%. Não omitir Direct da leitura executiva.
+- Canais pagos no GA4: Paid Social R$ 211.329,00, Paid Search R$ 51.136,61. Separar isto dos dashboards Meta/Google, que são atribuição de plataforma.
+- Receita real por canal calculada via GA4 `sessionDefaultChannelGroup` — lista completa/top canais, incluindo pagos, orgânicos e Direct:
   - Paid Social: R$ 211.329,00; 87,757 sessões; 60 pedidos; conversão 0.81%.
   - Organic Social: R$ 157.968,12; 11,363 sessões; 43 pedidos; conversão 2.77%.
   - Direct: R$ 100.759,70; 12,801 sessões; 35 pedidos; conversão 3.40%.
@@ -16,6 +18,8 @@
   - Referral: R$ 24.009,85; 773 sessões; 7 pedidos; conversão 5.05%.
   - Paid Shopping: R$ 20.009,31; 6,722 sessões; 7 pedidos; conversão 1.55%.
   - Organic Shopping: R$ 14.321,27; 1,402 sessões; 5 pedidos; conversão 4.14%.
+  - Email: R$ 7.435,00; 410 sessões; 3 pedidos; conversão 10.98%.
+  - Paid Other: R$ 2.250,00; 132 sessões; 1 pedidos; conversão 3.03%.
 - Principais origens/mídias calculadas via GA4 `sessionSourceMedium`:
   - facebook / paid: 43,799 sessões; R$ 181.859,02; 48 pedidos; conversão 1.25%.
   - l.instagram.com / referral: 6,198 sessões; R$ 141.618,15; 39 pedidos; conversão 4.61%.

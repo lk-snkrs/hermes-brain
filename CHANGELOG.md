@@ -1,3 +1,10 @@
+## 2026-05-10 — LK Direct channel summary fix
+
+- Ajustado o relatório mensal Pareto-compatible para deixar `Direct` explícito no resumo executivo, não apenas canais pagos.
+- Abril/2026 agora destaca: Direct `R$ 100.759,70`, `12.801` sessões, `35` pedidos, conversão `3,40%`.
+- A listagem de canais GA4 passou a incluir top 12 canais, cobrindo pagos, orgânicos, Direct, referral, shopping, e-mail e paid other.
+- Documentada a regra: receita real por canal = GA4 completo; dashboards Meta/Google ficam separados como atribuição de plataforma.
+
 ## 2026-05-10 — LK Pareto source calculation fix
 
 - Corrigido ponto levantado por Lucas: o script agora aprende/reproduz **como** a Pareto calcula, sem copiar números do PDF como fonte.

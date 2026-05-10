@@ -387,8 +387,20 @@ def render_md(rep: Dict[str, Any]) -> str:
         lines.append(f"- Correção de senso crítico: o Meta Ads Manager atribuiu {money(g['value'])}, {money(diff)} acima da receita total da LK; logo esse número **não é venda da Meta** nem pode entrar na divisão Meta vs Google de vendas reais.")
     channels = ga4.get('channels') or []
     if channels:
-        lines.append('- Receita real por canal calculada via GA4 `sessionDefaultChannelGroup`:')
-        for row in channels[:10]:
+        direct = next((row for row in channels if row['label'] == 'Direct'), None)
+        paid_social = next((row for row in channels if row['label'] == 'Paid Social'), None)
+        paid_search = next((row for row in channels if row['label'] == 'Paid Search'), None)
+        if direct:
+            lines.append(f"- Tráfego direto incluído no GA4: Direct {money(direct['revenue'])}; {direct['sessions']:,} sessões; {direct['transactions']} pedidos; conversão {direct['conversion_rate_pct']:.2f}%. Não omitir Direct da leitura executiva.")
+        if paid_social or paid_search:
+            paid_bits = []
+            if paid_social:
+                paid_bits.append(f"Paid Social {money(paid_social['revenue'])}")
+            if paid_search:
+                paid_bits.append(f"Paid Search {money(paid_search['revenue'])}")
+            lines.append(f"- Canais pagos no GA4: {', '.join(paid_bits)}. Separar isto dos dashboards Meta/Google, que são atribuição de plataforma.")
+        lines.append('- Receita real por canal calculada via GA4 `sessionDefaultChannelGroup` — lista completa/top canais, incluindo pagos, orgânicos e Direct:')
+        for row in channels[:12]:
             lines.append(f"  - {row['label']}: {money(row['revenue'])}; {row['sessions']:,} sessões; {row['transactions']} pedidos; conversão {row['conversion_rate_pct']:.2f}%.")
     source_medium = ga4.get('source_medium') or []
     if source_medium:
