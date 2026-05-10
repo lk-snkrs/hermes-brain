@@ -1,3 +1,11 @@
+## 2026-05-10 — LK creative sales view correction
+
+- Corrigida a leitura dos criativos no relatório semanal: a seção opcional deixou de ser “vídeos depois do ranking” e passou a seguir `influencer → criativo → vendas → produtos`.
+- Cada card mostra influencer, imagem do criativo, compras/spend/valor atribuído Meta do anúncio, pedidos/receita Shopify por `ad_id` exato e produtos vendidos ligados ao criativo quando há ponte segura.
+- Produtos só são atribuídos ao criativo quando o Shopify traz `ad_id` Meta exato; vendas por texto/cupom permanecem no nível influencer para não inventar qual vídeo gerou o pedido.
+- Preview local `2026-05-03..2026-05-09`: Fiorela mostrou 1 pedido / R$ 8.729,97 e 4 produtos ligados ao criativo por `ad_id`; demais cards ficam explicitamente sem produto por falta de ponte exata.
+- Browser QA validou imagens reais carregadas, sem cards pretos/quebrados, e layout claro em DesignMD LK.
+
 ## 2026-05-10 — LK weekly report creative preview flag
 
 - O relatório semanal `scripts/lk_weekly_influencer_sales_report.py` agora aceita `--include-creative-assets` para montar uma prévia HTML local com seção “Criativos em veiculação” usando os assets reais colhidos pelo `lk_weekly_creative_audit.py`.

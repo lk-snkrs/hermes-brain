@@ -262,13 +262,16 @@ def extract_meta_ad_ids_from_order(o: Dict[str, Any]) -> set[str]:
 def summarize_shopify(orders: List[Dict[str, Any]], aliases: Dict[str, List[str]], meta_ad_bridge: Dict[str, str] | None = None) -> Dict[str, Any]:
     meta_ad_bridge = meta_ad_bridge or {}
     by = defaultdict(lambda: {'orders':0, 'revenue':0.0, 'bridge_text':0, 'bridge_meta_ad_id':0, 'products':defaultdict(lambda:{'qty':0,'revenue':0.0})})
+    by_ad_id = defaultdict(lambda: {'orders':0, 'revenue':0.0, 'influencer':'', 'products':defaultdict(lambda:{'qty':0,'revenue':0.0})})
     unattributed = {'orders':0, 'revenue':0.0}
     ambiguous = {'orders':0, 'revenue':0.0}
     for o in orders:
         if o.get('cancelled_at'):
             continue
         total = parse_num(o.get('total_price'))
-        matched_ad_influencers = sorted({meta_ad_bridge[i] for i in extract_meta_ad_ids_from_order(o) if i in meta_ad_bridge}) if meta_ad_bridge else []
+        matched_ad_ids = sorted({i for i in extract_meta_ad_ids_from_order(o) if i in meta_ad_bridge}) if meta_ad_bridge else []
+        matched_ad_influencers = sorted({meta_ad_bridge[i] for i in matched_ad_ids})
+        exact_ad_id = matched_ad_ids[0] if len(matched_ad_ids) == 1 else None
         if len(matched_ad_influencers) == 1:
             # Exact Meta ad_id in Shopify UTM is stronger than loose textual matches,
             # which can be polluted by supplier names, internal tags or product copy.
@@ -286,6 +289,10 @@ def summarize_shopify(orders: List[Dict[str, Any]], aliases: Dict[str, List[str]
         by[inf]['orders'] += 1; by[inf]['revenue'] += total
         if bridge_type == 'meta_ad_id':
             by[inf]['bridge_meta_ad_id'] += 1
+            if exact_ad_id:
+                by_ad_id[exact_ad_id]['orders'] += 1
+                by_ad_id[exact_ad_id]['revenue'] += total
+                by_ad_id[exact_ad_id]['influencer'] = inf
         else:
             by[inf]['bridge_text'] += 1
         for li in o.get('line_items') or []:
@@ -294,8 +301,12 @@ def summarize_shopify(orders: List[Dict[str, Any]], aliases: Dict[str, List[str]
             variant = li.get('variant_title') or ''
             key = f'{title} / SKU {sku}' + (f' / {variant}' if variant and variant not in title else '')
             qty = int(parse_num(li.get('quantity')))
+            revenue = parse_num(li.get('price')) * qty
             by[inf]['products'][key]['qty'] += qty
-            by[inf]['products'][key]['revenue'] += parse_num(li.get('price')) * qty
+            by[inf]['products'][key]['revenue'] += revenue
+            if bridge_type == 'meta_ad_id' and exact_ad_id:
+                by_ad_id[exact_ad_id]['products'][key]['qty'] += qty
+                by_ad_id[exact_ad_id]['products'][key]['revenue'] += revenue
     # convert products
     ret = {}
     for inf, d in by.items():
@@ -307,7 +318,16 @@ def summarize_shopify(orders: List[Dict[str, Any]], aliases: Dict[str, List[str]
             'bridge_meta_ad_id': d.get('bridge_meta_ad_id', 0),
             'products': [{'product':k, **v} for k,v in products],
         }
-    return {'by_influencer':ret, 'unattributed':unattributed, 'ambiguous': ambiguous, 'total_orders':len(orders), 'total_revenue':sum(parse_num(o.get('total_price')) for o in orders if not o.get('cancelled_at'))}
+    ret_by_ad_id = {}
+    for ad_id, d in by_ad_id.items():
+        products = sorted(d['products'].items(), key=lambda kv: (kv[1]['qty'], kv[1]['revenue']), reverse=True)[:8]
+        ret_by_ad_id[ad_id] = {
+            'influencer': d.get('influencer'),
+            'orders': d['orders'],
+            'revenue': d['revenue'],
+            'products': [{'product':k, **v} for k,v in products],
+        }
+    return {'by_influencer':ret, 'by_ad_id': ret_by_ad_id, 'unattributed':unattributed, 'ambiguous': ambiguous, 'total_orders':len(orders), 'total_revenue':sum(parse_num(o.get('total_price')) for o in orders if not o.get('cancelled_at'))}
 
 
 def safe_image_url(raw: Any) -> str | None:
@@ -566,6 +586,41 @@ def load_curated_creative_assets(path: Path | None, limit: int = 6) -> List[Dict
     return curated[:limit]
 
 
+def build_creative_performance(rep: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """Executive view Lucas asked for: influencer → creative → sales → products.
+
+    Product attribution at creative level is only safe when Shopify carries an
+    exact Meta ad_id. Text/coupon/UTM-name bridges remain influencer-level and
+    are not assigned to a specific creative.
+    """
+    shop_by_ad = ((rep.get('shopify') or {}).get('current') or {}).get('by_ad_id') or {}
+    meta_ads: Dict[str, Dict[str, Any]] = {}
+    for inf_data in (((rep.get('meta') or {}).get('current') or {}).get('by_influencer') or {}).values():
+        for ad in inf_data.get('top_ads') or []:
+            if ad.get('ad_id'):
+                meta_ads[str(ad['ad_id'])] = ad
+    rows: List[Dict[str, Any]] = []
+    for c in rep.get('creative_assets') or []:
+        ad_id = str(c.get('ad_id') or '')
+        ad = meta_ads.get(ad_id, {})
+        shop = shop_by_ad.get(ad_id, {})
+        products = []
+        for p in shop.get('products') or []:
+            parts = split_product_key(p.get('product'))
+            products.append({**p, **parts})
+        rows.append({
+            **c,
+            'meta_purchases': parse_num(c.get('purchases') if c.get('purchases') is not None else ad.get('purchases')),
+            'meta_value': parse_num(c.get('value') if c.get('value') is not None else ad.get('value')),
+            'meta_spend': parse_num(c.get('spend') if c.get('spend') is not None else ad.get('spend')),
+            'shopify_orders_exact_ad_id': int(parse_num(shop.get('orders'))),
+            'shopify_revenue_exact_ad_id': parse_num(shop.get('revenue')),
+            'products_exact_ad_id': products,
+        })
+    rows.sort(key=lambda x: (x['shopify_revenue_exact_ad_id'], x['shopify_orders_exact_ad_id'], x['meta_purchases'], x['meta_value']), reverse=True)
+    return rows
+
+
 def render_md(rep: Dict[str, Any]) -> str:
     cur = rep['windows']['current']; prev = rep['windows']['previous']
     product_rows = build_product_ranking(rep)
@@ -601,6 +656,7 @@ def render_html(rep: Dict[str, Any]) -> str:
     cur = rep['windows']['current']; prev = rep['windows']['previous']
     product_rows = build_product_ranking(rep)
     creative_assets = rep.get('creative_assets') or []
+    creative_rows = build_creative_performance(rep) if creative_assets else []
     signal_only = [r for r in rep.get('rows', []) if r.get('meta_purchases', 0) > 0 and not r.get('products')]
     total_products = len(product_rows)
     total_product_revenue = sum(r['revenue'] for r in product_rows)
@@ -640,21 +696,28 @@ def render_html(rep: Dict[str, Any]) -> str:
     else:
         parts.append('<p class="section-sub">Nenhum produto com ponte Shopify segura nesta janela.</p>')
     parts.append('</section>')
-    if creative_assets:
-        parts.append('<section class="section"><h2 class="section-title">Criativos em veiculação</h2>')
-        parts.append('<p class="section-sub">Curadoria opcional, local e read-only. As imagens abaixo vêm do harvesting real Meta creative/video/adimages, baixadas localmente e filtradas contra frames pretos/miniaturas 64×64. Entram aqui só quando a flag explícita é usada.</p>')
-        parts.append('<div class="creative-grid">')
-        for i, c in enumerate(creative_assets[:6], 1):
+    if creative_rows:
+        parts.append('<section class="section"><h2 class="section-title">Influencer × criativo × venda</h2>')
+        parts.append('<p class="section-sub">Esta é a leitura correta dos criativos: cada card mostra influencer, criativo, sinal Meta e produtos vendidos quando existe ponte Shopify por <b>ad_id exato</b>. Vendas por texto/cupom ficam no nível influencer, sem inventar qual criativo gerou.</p>')
+        for i, c in enumerate(creative_rows[:6], 1):
             src = Path(str(c.get('image_path') or '')).as_uri()
-            parts.append('<article class="creative-card">')
+            products = c.get('products_exact_ad_id') or []
+            parts.append('<article class="creative-card" style="margin-bottom:18px;display:grid;grid-template-columns:190px minmax(0,1fr);gap:16px">')
             parts.append(f'<div class="creative-img"><img src="{html.escape(src, quote=True)}" alt="Criativo {html.escape(str(c.get("ad_id") or ""))}"></div>')
             parts.append('<div class="creative-body">')
             parts.append(f'<div class="creative-name">#{i:02d} · {html.escape(str(c.get("influencer") or ""))}</div>')
             parts.append(f'<h3 class="creative-title">{html.escape(str(c.get("ad_name") or ""))}</h3>')
             sz = c.get('size') or ['', '']
-            parts.append(f'<div class="creative-meta">{float(c.get("purchases") or 0):.0f} compras Meta · valor atribuído {money(c.get("value"))} · spend {money(c.get("spend"))}<br>ad_id {html.escape(str(c.get("ad_id") or ""))} · {sz[0]}×{sz[1]}</div>')
+            parts.append(f'<div class="row-grid"><div class="pill"><div class="k">Meta do criativo</div><div class="v">{c["meta_purchases"]:.0f} compras · {money(c["meta_spend"])} spend</div></div><div class="pill"><div class="k">Shopify por ad_id exato</div><div class="v">{c["shopify_orders_exact_ad_id"]} pedidos · {money(c["shopify_revenue_exact_ad_id"])}</div></div></div>')
+            parts.append(f'<div class="creative-meta" style="margin-top:10px">ad_id {html.escape(str(c.get("ad_id") or ""))} · {sz[0]}×{sz[1]} · valor atribuído Meta {money(c["meta_value"])}</div>')
+            if products:
+                parts.append('<div class="bridge" style="margin-top:12px"><b>Produtos vendidos ligados a este criativo:</b></div>')
+                for p in products[:5]:
+                    parts.append(f'<div class="bridge">• {html.escape(str(p.get("name") or ""))}<br>SKU {html.escape(str(p.get("sku") or ""))}' + (f' · Tam. {html.escape(str(p.get("variant") or ""))}' if p.get('variant') else '') + f' · qty {int(parse_num(p.get("qty")))} · {money(p.get("revenue"))}</div>')
+            else:
+                parts.append('<div class="bridge" style="margin-top:12px"><b>Produtos:</b> sem ponte Shopify por ad_id exato para este criativo. Pode haver venda do influencer por texto/cupom, mas não dá para atribuir a este vídeo sem inventar.</div>')
             parts.append('</div></article>')
-        parts.append('</div><p class="section-sub" style="margin-top:18px">Observação: criativo é sinal para curadoria visual. Produto vendido continua sendo decidido pelo bloco Shopify acima.</p></section>')
+        parts.append('<p class="section-sub" style="margin-top:18px">Observação: o bloco acima responde “qual influencer + qual criativo + quanto vendeu + quais produtos”. Quando o Shopify só traz cupom/texto, o produto continua atribuído ao influencer, não ao criativo.</p></section>')
     if signal_only:
         parts.append('<section class="section"><h2 class="section-title">Sinal Meta sem produto</h2>')
         parts.append('<p class="section-sub">Aqui o Meta indica compra/valor, mas o Shopify não trouxe cupom, UTM textual ou ad_id exato suficiente para ligar pedido e produto ao influencer.</p>')
@@ -738,6 +801,7 @@ def main():
         creative_json = Path(args.creative_assets_json) if args.creative_assets_json else latest_creative_assets_json(outdir, slug)
         rep['creative_assets_source'] = str(creative_json) if creative_json else None
         rep['creative_assets'] = load_curated_creative_assets(creative_json, args.creative_assets_limit)
+        rep['creative_performance'] = build_creative_performance(rep)
     md = render_md(rep); html_body = render_html(rep)
     md_path = outdir / f'lk-weekly-influencer-sales-{slug}.md'
     html_path = outdir / f'lk-weekly-influencer-sales-{slug}.html'
