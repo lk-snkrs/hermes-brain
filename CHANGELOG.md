@@ -1,3 +1,10 @@
+## 2026-05-10 — LK Weekly Influencer Attribution Gap Audit
+
+- Adicionado `reports/lk-weekly-influencer-sales-2026-05-09/attribution-gap-audit.md` após rechecagem dos influencers ainda zerados no Shopify depois da correção de `ad_id`.
+- Confirmado que Fiorela foi o caso corrigido por ponte `ad_id` exata; Lala Noleto, Ju Mesquita, Arlindo e Mariah seguem como `meta_signal_only` nesta janela, sem ponte Shopify segura.
+- Identificado 1 pedido potencial por `campaign_id`/`adset_id` genérico, mas mantido como não atribuível porque a estrutura agrupa vários influencers e geraria falso positivo.
+- Produção, VPS/Docker, bancos, secrets, campanhas, Shopify/Tiny/Klaviyo/WhatsApp, cron e runtime não foram alterados.
+
 ## 2026-05-10 — LK Weekly Influencer Sales Email HTML + ad_id attribution fix
 
 - Corrigido o envio Gmail da newsletter semanal para `Content-Type: text/html`, evitando cliente exibir a peça como corpo em texto/Markdown.
