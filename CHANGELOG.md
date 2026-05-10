@@ -2,6 +2,13 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-10 — LK SKU Shopify ↔ Tiny map preview
+
+- Gerado preview read-only `reports/lk-sku-shopify-tiny-map-preview-2026-05-10.md`/`.json` para os campeões antes marcados como `mapear SKU no Tiny`.
+- Incorporada correção de Lucas: tudo que está na Shopify deve existir no Tiny; produtos novos tendem a já estar linkados; divergência relevante tende a estar em produtos antigos/SKU legado ou método de busca insuficiente.
+- Segunda busca no Tiny encontrou candidatos para 6/6 SKUs priorizados, todos com confiança alta, reforçando que a causa provável não era ausência no Tiny.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-10 — Correções LK SKU Shopify/Tiny e Meta influencer
 
 - Registrada correção de Lucas: SKU canônico operacional é Shopify; Tiny deve ser aprendido/mapeado/normalizado para Shopify, nunca o contrário por automação.
