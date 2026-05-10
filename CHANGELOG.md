@@ -1,3 +1,13 @@
+## 2026-05-10 — LK Pareto source calculation fix
+
+- Corrigido ponto levantado por Lucas: o script agora aprende/reproduz **como** a Pareto calcula, sem copiar números do PDF como fonte.
+- Implementadas consultas reais: GA4 Data API para resumo e-commerce/canais/source-medium; Meta Marketing API para dashboard Meta; Metricool Google Ads API para dashboard Google.
+- Abril/2026 agora é calculado diretamente das fontes: GA4 `R$ 722.636,36`, `233 pedidos`, `166.003 sessões`; ROAS geral = GA4 receita / (Meta spend + Google spend) = `11,04`.
+- Receita real por canal agora vem de GA4: `Paid Social R$ 211.329,00`, `facebook / paid R$ 181.859,02`, `google / cpc R$ 130.069,50`, etc.
+- Google Ads via Metricool bate spend 100% (`R$ 26.481,76`); valor atribuído atual da API fica `R$ 209.636,37` vs PDF `R$ 207.240,45` (~98,84%), tratado como variação de export/API dentro da tolerância operacional.
+- Atualizados `scripts/lk_monthly_pareto_reconciliation.py`, `reports/lk-pareto-april-2026/pareto-compatible-script-output.*`, `reconciliation-audit.md` e a rotina `pareto-monthly-reconciliation.md`.
+- Produção, VPS/Docker, bancos, campaigns, Shopify/Tiny/Klaviyo/WhatsApp, secrets e envios externos não foram alterados.
+
 ## 2026-05-10 — LK channel-sales logic correction
 
 - Corrigida a lógica da reconciliação Pareto: dashboards de Meta/Google são métricas atribuídas de plataforma, não venda real por canal.

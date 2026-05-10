@@ -12,17 +12,21 @@ No campaign, Shopify, database or production writes.
 from __future__ import annotations
 
 import argparse
+import base64
 import calendar
 import datetime as dt
-import html
 import importlib.util
 import json
 import re
+import urllib.parse
+import urllib.request
 from collections import defaultdict
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Tuple
+from typing import Any, Dict, Iterable, Tuple
 
 import requests
+from google.auth.transport.requests import Request as GoogleAuthRequest
+from google.oauth2 import service_account
 
 BASE = Path('/opt/data')
 OUT_DIR = BASE / 'lk_monthly_pareto_reconciliation_reports'
@@ -126,6 +130,123 @@ def normalize_text(s: Any) -> str:
 
 def row_text(row: Dict[str, Any]) -> str:
     return normalize_text(' | '.join(str(row.get(k) or '') for k in ['campaign_name', 'adset_name', 'ad_name']))
+
+
+def ga4_credentials(secrets: Dict[str, str]):
+    sa_raw = secrets.get('GA4_LK_SERVICE_ACCOUNT') or secrets.get('GOOGLE_SERVICE_ACCOUNT_JSON')
+    prop = secrets.get('GOOGLE_ANALYTICS_PROPERTY_ID') or secrets.get('GA4_LK_PROPERTY_ID') or secrets.get('GA4_PROPERTY_ID')
+    if not sa_raw or not prop:
+        raise RuntimeError('GA4 service account or property id missing')
+    creds = service_account.Credentials.from_service_account_info(
+        json.loads(sa_raw), scopes=['https://www.googleapis.com/auth/analytics.readonly']
+    )
+    creds.refresh(GoogleAuthRequest())
+    return str(prop), creds.token
+
+
+def ga4_report(secrets: Dict[str, str], start: str, end: str, dimensions: list[str], metrics: list[str], limit: int = 100) -> dict[str, Any]:
+    prop, token = ga4_credentials(secrets)
+    url = f'https://analyticsdata.googleapis.com/v1beta/properties/{prop}:runReport'
+    body = {
+        'dateRanges': [{'startDate': start, 'endDate': end}],
+        'metrics': [{'name': m} for m in metrics],
+        'limit': limit,
+    }
+    if dimensions:
+        body['dimensions'] = [{'name': d} for d in dimensions]
+        body['orderBys'] = [{'metric': {'metricName': metrics[0]}, 'desc': True}]
+    else:
+        body['metricAggregations'] = ['TOTAL']
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(body).encode(),
+        headers={'Authorization': f'Bearer {token}', 'Content-Type': 'application/json'},
+        method='POST',
+    )
+    return json.loads(urllib.request.urlopen(req, timeout=90).read().decode())
+
+
+def metric_values(row: dict[str, Any], metric_names: list[str]) -> dict[str, float]:
+    return {name: parse_num(v.get('value')) for name, v in zip(metric_names, row.get('metricValues') or [])}
+
+
+def fetch_ga4_pareto_metrics(secrets: Dict[str, str], start: str, end: str) -> dict[str, Any]:
+    # This reproduces the Pareto ecommerce/channel pages from GA4 directly:
+    # - totalRevenue / transactions / sessions for executive summary
+    # - sessionDefaultChannelGroup for "Canais que mais contribuíram para receita"
+    # - sessionSourceMedium for "Principais origens de tráfego e receita"
+    summary_metrics = ['totalRevenue', 'transactions', 'sessions', 'averagePurchaseRevenue']
+    summary_data = ga4_report(secrets, start, end, [], summary_metrics)
+    summary = metric_values((summary_data.get('rows') or [{}])[0], summary_metrics)
+    channel_metrics = ['totalRevenue', 'sessions', 'transactions', 'sessionConversionRate']
+    ch_data = ga4_report(secrets, start, end, ['sessionDefaultChannelGroup'], channel_metrics, limit=25)
+    sm_data = ga4_report(secrets, start, end, ['sessionSourceMedium'], channel_metrics, limit=25)
+    def rows(data):
+        out = []
+        for row in data.get('rows') or []:
+            label = row['dimensionValues'][0]['value']
+            vals = metric_values(row, channel_metrics)
+            out.append({
+                'label': label,
+                'revenue': round(vals['totalRevenue'], 2),
+                'sessions': int(vals['sessions']),
+                'transactions': int(round(vals['transactions'])),
+                'conversion_rate_pct': round(vals['sessionConversionRate'] * 100, 4),
+            })
+        return out
+    return {
+        'summary': {
+            'revenue': round(summary['totalRevenue'], 2),
+            'orders': int(round(summary['transactions'])),
+            'sessions': int(round(summary['sessions'])),
+            'average_order_value': round(summary['averagePurchaseRevenue'], 2),
+        },
+        'channels': rows(ch_data),
+        'source_medium': rows(sm_data),
+        'property_id_used': secrets.get('GOOGLE_ANALYTICS_PROPERTY_ID'),
+    }
+
+
+def fetch_metricool_google_ads(secrets: Dict[str, str], start: str, end: str) -> dict[str, Any]:
+    user_id, blog_id, token = secrets.get('METRICOOL_USER_ID'), secrets.get('METRICOOL_BLOG_ID'), secrets.get('METRICOOL_API_TOKEN')
+    if not (user_id and blog_id and token):
+        raise RuntimeError('Metricool credentials missing')
+    params = {
+        'userId': user_id,
+        'blogId': blog_id,
+        'userToken': token,
+        'from': f'{start}T00:00:00',
+        'to': f'{end}T23:59:59',
+        'timezone': 'America/Sao_Paulo',
+    }
+    url = 'https://app.metricool.com/api/v2/analytics/campaigns/googleads?' + urllib.parse.urlencode(params)
+    data = json.loads(urllib.request.urlopen(url, timeout=90).read().decode())
+    campaigns = data.get('data') or []
+    spend = sum(parse_num(c.get('spent')) for c in campaigns)
+    conversions = sum(parse_num(c.get('conversions')) for c in campaigns)
+    value = sum(parse_num(c.get('allConversionsValue')) for c in campaigns)
+    clicks = sum(parse_num(c.get('clicks')) for c in campaigns)
+    impressions = sum(parse_num(c.get('impressions')) for c in campaigns)
+    return {
+        'source': 'Metricool Google Ads API',
+        'campaigns': len(campaigns),
+        'spend': round(spend, 2),
+        'conversions': round(conversions, 2),
+        'attributed_value': round(value, 2),
+        'roas': round(value / spend, 2) if spend else 0,
+        'cpa': round(spend / conversions, 2) if conversions else 0,
+        'clicks': int(clicks),
+        'impressions': int(impressions),
+        'top_campaigns': sorted([
+            {
+                'name': c.get('name'),
+                'spend': round(parse_num(c.get('spent')), 2),
+                'conversions': round(parse_num(c.get('conversions')), 2),
+                'attributed_value': round(parse_num(c.get('allConversionsValue')), 2),
+                'roas': round(parse_num(c.get('purchaseROAS')), 2),
+            } for c in campaigns
+        ], key=lambda x: x['attributed_value'], reverse=True)[:10],
+    }
 
 
 def fetch_meta(secrets: Dict[str, str], start: str, end: str) -> list[dict[str, Any]]:
@@ -255,21 +376,28 @@ def render_md(rep: Dict[str, Any]) -> str:
     lines.append('## Resumo')
     g = rep['global']
     lines.append(f"- Meta global: {money(g['spend'])} spend, {g['purchases']:.0f} compras atribuídas no gerenciador, {money(g['value'])} **valor atribuído Meta no gerenciador** (não venda/receita real LK), ROAS Meta {g['roas']:.2f}, CPA Meta {money(g['cpa'])}.")
-    ecommerce = rep.get('pareto_ecommerce') or {}
+    ga4 = rep.get('ga4_calculated') or {}
+    ecommerce = ga4.get('summary') or {}
     if ecommerce:
         diff = g['value'] - ecommerce.get('revenue', 0)
-        lines.append(f"- Venda real e-commerce Pareto: {ecommerce.get('orders', 0):.0f} pedidos, {money(ecommerce.get('revenue', 0))} receita total, {money(ecommerce.get('investment', 0))} investimento total, ROAS geral {ecommerce.get('roas', 0):.2f}.")
+        total_spend = g['spend'] + (rep.get('google_ads_platform') or {}).get('spend', 0)
+        overall_roas = ecommerce.get('revenue', 0) / total_spend if total_spend else 0
+        lines.append(f"- Venda real e-commerce calculada via GA4: {ecommerce.get('orders', 0):.0f} pedidos, {money(ecommerce.get('revenue', 0))} receita total, {ecommerce.get('sessions', 0):,} sessões, ticket médio {money(ecommerce.get('average_order_value', 0))}.")
+        lines.append(f"- Investimento pago calculado: Meta {money(g['spend'])} + Google/Metricool {money((rep.get('google_ads_platform') or {}).get('spend', 0))} = {money(total_spend)}; ROAS geral calculado {overall_roas:.2f}.")
         lines.append(f"- Correção de senso crítico: o Meta Ads Manager atribuiu {money(g['value'])}, {money(diff)} acima da receita total da LK; logo esse número **não é venda da Meta** nem pode entrar na divisão Meta vs Google de vendas reais.")
-    ga4_channels = rep.get('pareto_ga4_channels') or {}
-    if ga4_channels:
-        lines.append('- Receita real por canal deve usar Pareto/GA4/canais, não dashboards isolados de plataforma:')
-        for channel, data in ga4_channels.items():
-            lines.append(f"  - {channel}: {money(data['revenue'])}; conversão {data['conversion_rate']:.2f}%.")
-    ga4_sm = rep.get('pareto_ga4_source_medium') or {}
-    if ga4_sm:
-        lines.append('- Principais origens/mídias Pareto/GA4:')
-        for source, data in ga4_sm.items():
-            lines.append(f"  - {source}: {data['sessions']:,} sessões; {money(data['revenue'])}; conversão {data['conversion_rate']:.2f}%.")
+    channels = ga4.get('channels') or []
+    if channels:
+        lines.append('- Receita real por canal calculada via GA4 `sessionDefaultChannelGroup`:')
+        for row in channels[:10]:
+            lines.append(f"  - {row['label']}: {money(row['revenue'])}; {row['sessions']:,} sessões; {row['transactions']} pedidos; conversão {row['conversion_rate_pct']:.2f}%.")
+    source_medium = ga4.get('source_medium') or []
+    if source_medium:
+        lines.append('- Principais origens/mídias calculadas via GA4 `sessionSourceMedium`:')
+        for row in source_medium[:10]:
+            lines.append(f"  - {row['label']}: {row['sessions']:,} sessões; {money(row['revenue'])}; {row['transactions']} pedidos; conversão {row['conversion_rate_pct']:.2f}%.")
+    google = rep.get('google_ads_platform') or {}
+    if google:
+        lines.append(f"- Google Ads calculado via Metricool: spend {money(google['spend'])}; conversões atribuídas {google['conversions']:.2f}; valor atribuído {money(google['attributed_value'])}; ROAS plataforma {google['roas']:.2f}.")
     if rep.get('expected_global'):
         lines.append('- Comparação Pareto global — campo Meta/Ads Manager:')
         for key, c in rep['expected_global'].items():
@@ -310,6 +438,8 @@ def main() -> None:
     weekly = load_weekly_module()
     secrets = weekly.load_secrets()
     rows = fetch_meta(secrets, start, end)
+    ga4 = fetch_ga4_pareto_metrics(secrets, start, end)
+    google_ads = fetch_metricool_google_ads(secrets, start, end)
     g = global_totals(rows)
     pareto_rows = group_pareto(rows)
     operational_rows = group_operational(rows, weekly)
@@ -323,15 +453,12 @@ def main() -> None:
         'pareto_ecommerce': {},
         'pareto_platform_dashboards': {},
         'pareto_ga4_channels': {},
-        'pareto_ga4_source_medium': {},
+        'google_ads_platform': google_ads,
+        'ga4_calculated': ga4,
         'expected_global': {},
         'expected_influencers': {},
     }
     if args.month == '2026-04':
-        rep['pareto_ecommerce'] = APRIL_2026_PARETO['ecommerce']
-        rep['pareto_platform_dashboards'] = APRIL_2026_PARETO['platform_dashboards']
-        rep['pareto_ga4_channels'] = APRIL_2026_PARETO['ga4_channels']
-        rep['pareto_ga4_source_medium'] = APRIL_2026_PARETO['ga4_source_medium']
         rep['expected_global'] = compare(APRIL_2026_PARETO['global'], g)
         by_label = {r['label']: r for r in pareto_rows}
         rep['expected_influencers'] = {k: compare(v, by_label.get(k, {})) for k, v in APRIL_2026_PARETO['influencers'].items()}
