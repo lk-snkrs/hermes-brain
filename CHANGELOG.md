@@ -1,3 +1,12 @@
+## 2026-05-10 — LK Weekly Influencer Email DesignMD + product ranking correction
+
+- Corrigido o e-mail semanal de influencers após feedback do Lucas: o template anterior ignorava o DesignMD LK e usava cards de criativos Meta borrados/errados.
+- `scripts/lk_weekly_influencer_sales_report.py` agora renderiza o e-mail no sistema visual LK (`areas/lk/design/DESIGN.md`): fundo paper, header preto, linguagem editorial/premium, títulos serifados e UI minimalista.
+- Estrutura do relatório corrigida para ranking produto-first: `influencer × produto vendido × SKU × tamanho`, agregado por influencer + SKU + variante/tamanho para evitar duplicidade por variações de título Shopify.
+- Thumbnails/criativos Meta foram removidos do e-mail semanal; Meta fica como sinal secundário e produtos/receita vêm do Shopify com ponte segura.
+- Preview visual validado em `reports/lk-weekly-influencer-sales-2026-05-09/designmd-product-ranking-preview.html` e screenshot `designmd-product-ranking-preview.png`: 17 linhas produto/SKU, 20 unidades, R$ 76.399,80 de receita com ponte, 0 imagens no HTML e 0 padrões de secret.
+- Produção, VPS/Docker, bancos, secrets, campanhas, Shopify/Tiny/Klaviyo/WhatsApp e cron runtime não foram alterados; apenas prompt do cron Hermes foi atualizado para evitar regressão.
+
 ## 2026-05-10 — LK Weekly Influencer Email top creatives
 
 - Atualizado `scripts/lk_weekly_influencer_sales_report.py` para buscar imagens públicas e seguras dos top anúncios Meta da semana e renderizar seção visual vertical/mobile no topo do e-mail HTML.

@@ -76,14 +76,13 @@ O script grava artefatos locais em:
 O e-mail deve conter:
 
 1. Período atual e período comparativo.
-2. Ranking por influencer.
-3. Shopify com ponte: pedidos, receita e variação WoW.
-4. Meta canônico: compras atribuídas, spend e valor Meta.
-5. Seção visual no topo com top criativos Meta da semana em formato vertical/mobile, quando o Meta retornar URLs públicas sem token.
-6. Produtos vendidos por influencer com nome + SKU + tamanho.
-7. Contagem do tipo de ponte (`texto` vs `ad_id Meta`).
-8. Indicação explícita quando o influencer tem sinal Meta, mas ponte Shopify ausente.
-9. Corpo do e-mail como `Content-Type: text/html`, não apenas multipart/texto.
+2. Visual fiel ao DesignMD da LK Sneakers: editorial, premium, fundo `paper`, header preto, títulos serifados e UI em sans minimalista.
+3. Ranking principal produto-first: cada linha é `influencer × produto vendido × SKU × tamanho`, agregado por influencer + SKU + variante/tamanho.
+4. Shopify com ponte: quantidade vendida, receita e tipo de ponte (`texto` vs `ad_id Meta`).
+5. Meta canônico como sinal secundário: compras atribuídas, spend e valor Meta por influencer.
+6. Seção separada para `meta_signal_only`: influencers com compra/valor Meta sem produto Shopify atribuível.
+7. Corpo do e-mail como `Content-Type: text/html`, não apenas multipart/texto.
+8. Não incluir thumbnails/criativos Meta borrados ou de baixa qualidade no e-mail semanal; criativos ficam em auditoria visual separada quando houver asset correto.
 
 ## Guardrails
 
@@ -91,7 +90,7 @@ O e-mail deve conter:
 - Não expõe tokens, e-mails sensíveis, refresh tokens ou secrets.
 - Gmail usa credenciais via Doppler no processo; valores não são gravados no repo.
 - Meta ROAS/valor é sinal de plataforma, não ROAS operacional final da LK.
-- URLs de criativos Meta só podem ser persistidas/renderizadas se não carregarem `access_token`, `appsecret_proof`, `client_secret` ou outro segredo em query string.
+- O e-mail semanal não deve usar layout genérico de dashboard nem thumbnails Meta de baixa qualidade; qualquer artefato visual deve seguir `areas/lk/design/DESIGN.md`.
 - Produto vendido sem ponte Shopify não deve ser inventado.
 
 ## Mission Control

@@ -428,73 +428,150 @@ def merge_report(meta_cur, meta_prev, shop_cur, shop_prev, windows) -> Dict[str,
     return {'windows': windows, 'rows': rows, 'meta': {'current': meta_cur, 'previous': meta_prev}, 'shopify': {'current': shop_cur, 'previous': shop_prev}}
 
 
+def split_product_key(product: Any) -> Dict[str, str]:
+    raw = str(product or '')
+    m = re.match(r'^(.*?)\s*/\s*SKU\s+(.+?)(?:\s*/\s*(.+))?$', raw)
+    if not m:
+        return {'name': raw, 'sku': 'SKU não identificado', 'variant': ''}
+    name = (m.group(1) or '').strip()
+    sku = (m.group(2) or '').strip()
+    variant = (m.group(3) or '').strip()
+    return {'name': name, 'sku': sku, 'variant': variant}
+
+
+def build_product_ranking(rep: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """Product-first ranking aggregated by influencer + SKU + size.
+
+    This is the operating view Lucas expects. We aggregate title variations for
+    the same influencer/SKU/variant so the ranking does not duplicate the same
+    sold item because Shopify titles differ by color suffix or legacy naming.
+    """
+    grouped: Dict[Tuple[str, str, str], Dict[str, Any]] = {}
+    for r in rep.get('rows', []):
+        products = r.get('products') or []
+        if not products:
+            continue
+        for p in products:
+            parts = split_product_key(p.get('product'))
+            influencer = str(r.get('influencer') or '')
+            key = (influencer, parts['sku'], parts['variant'])
+            qty = int(parse_num(p.get('qty')))
+            revenue = parse_num(p.get('revenue'))
+            if key not in grouped:
+                grouped[key] = {
+                    'influencer': influencer,
+                    'product_name': parts['name'],
+                    'sku': parts['sku'],
+                    'variant': parts['variant'],
+                    'qty': 0,
+                    'revenue': 0.0,
+                    'shopify_orders': r.get('shopify_orders', 0),
+                    'shopify_revenue': parse_num(r.get('shopify_revenue')),
+                    'bridge_text': r.get('bridge_text', 0),
+                    'bridge_meta_ad_id': r.get('bridge_meta_ad_id', 0),
+                    'meta_purchases': parse_num(r.get('meta_purchases')),
+                    'meta_spend': parse_num(r.get('meta_spend')),
+                    'meta_value': parse_num(r.get('meta_value')),
+                    'title_variants': set(),
+                }
+            row = grouped[key]
+            row['qty'] += qty
+            row['revenue'] += revenue
+            row['title_variants'].add(str(p.get('product') or ''))
+            # Prefer the more complete human title, but keep SKU/variant canonical.
+            if len(parts['name']) > len(row.get('product_name') or ''):
+                row['product_name'] = parts['name']
+    out: List[Dict[str, Any]] = []
+    for row in grouped.values():
+        row['title_variants'] = sorted(row['title_variants'])
+        row['product'] = f"{row['product_name']} / SKU {row['sku']}" + (f" / {row['variant']}" if row.get('variant') else '')
+        out.append(row)
+    out.sort(key=lambda x: (x['revenue'], x['qty'], x['meta_purchases']), reverse=True)
+    return out
+
 def render_md(rep: Dict[str, Any]) -> str:
     cur = rep['windows']['current']; prev = rep['windows']['previous']
+    product_rows = build_product_ranking(rep)
     lines = []
-    lines.append('# LK — Relatório semanal de vendas por influencer')
+    lines.append('# LK — Ranking semanal: influencer × produto vendido')
     lines.append('')
     lines.append(f"Janela atual: {cur[0].date()} a {cur[1].date()} (BRT)")
     lines.append(f"Comparativo: {prev[0].date()} a {prev[1].date()} (BRT)")
     lines.append('')
-    lines.append('Metodologia: Meta Ads direto por `campaign_name`/`adset_name`/`ad_name`, compra canônica por anúncio; Shopify/produtos atribuídos somente quando há ponte textual ou `ad_id` Meta exato em `utm_content`/`ad_id`. Campanha/adset genérico não é usado como ponte.')
+    lines.append('Leitura correta: Shopify é a fonte de venda/produto. Meta é sinal de mídia. Um produto só entra no ranking quando o pedido Shopify tem ponte verificável: cupom/UTM/texto ou `ad_id` Meta exato em `utm_content`/`ad_id`/`fb_ad_id`. `campaign_id`/`adset_id` genérico não é atribuição segura.')
     lines.append('')
-    for r in rep['rows'][:20]:
-        lines.append(f"## {r['influencer']}")
-        lines.append(f"- Shopify com ponte: {r['shopify_orders']} pedidos / {money(r['shopify_revenue'])} ({pct_change(r['shopify_revenue'], r['shopify_revenue_prev'])} vs semana anterior; {r.get('bridge_text',0)} texto + {r.get('bridge_meta_ad_id',0)} ad_id Meta)")
-        lines.append(f"- Meta: {r['meta_purchases']:.0f} compras canônicas / spend {money(r['meta_spend'])} / valor Meta {money(r['meta_value'])}")
-        if r['products']:
-            lines.append('- Produtos com ponte Shopify:')
-            for p in r['products'][:5]:
-                lines.append(f"  - {p['product']}: qty {p['qty']} / {money(p['revenue'])}")
-        else:
-            lines.append('- Produtos: sem ponte Shopify textual encontrada nesta semana.')
-        lines.append('')
+    lines.append('## Ranking de produtos vendidos com ponte Shopify')
+    lines.append('')
+    if product_rows:
+        for i, row in enumerate(product_rows[:40], 1):
+            lines.append(f"{i}. **{row['influencer']}** — {row['product_name']}")
+            lines.append(f"   - SKU/tamanho: {row['sku']}" + (f" / {row['variant']}" if row.get('variant') else ""))
+            lines.append(f"   - Vendido Shopify: qty {row['qty']} / {money(row['revenue'])}")
+            lines.append(f"   - Ponte: {row['bridge_text']} texto + {row['bridge_meta_ad_id']} ad_id Meta")
+            lines.append(f"   - Meta do influencer na semana: {row['meta_purchases']:.0f} compras canônicas / spend {money(row['meta_spend'])}")
+    else:
+        lines.append('Nenhum produto com ponte Shopify segura nesta janela.')
+    lines.append('')
+    lines.append('## Influencers com sinal Meta, mas sem produto Shopify atribuível')
+    lines.append('')
+    for r in rep['rows']:
+        if r.get('meta_purchases', 0) > 0 and not r.get('products'):
+            lines.append(f"- {r['influencer']}: {r['meta_purchases']:.0f} compras Meta / spend {money(r['meta_spend'])} / valor Meta {money(r['meta_value'])} — `meta_signal_only`, sem ponte Shopify segura.")
     return '\n'.join(lines)
 
 
 def render_html(rep: Dict[str, Any]) -> str:
     cur = rep['windows']['current']; prev = rep['windows']['previous']
+    product_rows = build_product_ranking(rep)
+    signal_only = [r for r in rep.get('rows', []) if r.get('meta_purchases', 0) > 0 and not r.get('products')]
+    total_products = len(product_rows)
+    total_product_revenue = sum(r['revenue'] for r in product_rows)
+    total_qty = sum(r['qty'] for r in product_rows)
     css = """
-    body{font-family:Inter,Arial,sans-serif;background:#f7f4ef;color:#161616;margin:0;padding:24px}.wrap{max-width:900px;margin:auto;background:#fff;border-radius:18px;padding:26px;border:1px solid #e7ded2}.muted{color:#71675d}.card{border:1px solid #eee0d3;border-radius:14px;padding:16px;margin:16px 0}.name{font-size:22px;font-weight:800}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.kv{background:#faf7f2;border-radius:10px;padding:10px}.k{font-size:11px;color:#7d7166;text-transform:uppercase;letter-spacing:.06em}.v{font-size:18px;font-weight:800}.up{color:#0f7a3b}.down{color:#b42318}.prod{font-size:14px;line-height:1.45}.creative-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}.creative{background:#111;color:#fff;border-radius:16px;overflow:hidden}.creative img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;background:#222}.creative .caption{padding:10px;font-size:13px;line-height:1.35}.creative .metric{color:#f2d6a2;font-weight:800}.creative .muted{color:#c8c1b8}@media(max-width:650px){.grid{grid-template-columns:1fr}.creative-grid{grid-template-columns:1fr 1fr}body{padding:10px}.wrap{padding:16px}}
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500;700&display=swap');
+    :root{--ink:#0A0A0A;--ink-soft:#1A1A1A;--paper:#F0ECE8;--paper-soft:#F5F4F2;--surface:#FFFFFF;--bone:#FDF9F5;--line:#E8E6E2;--line-warm:#DDD0C0;--muted:#8A8580;--muted-light:#B5B0A8;--accent:#C8A98A;--accent-soft:#E8D8C4;--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);padding:0}.page{max-width:640px;margin:0 auto;background:var(--surface)}.brand-header{background:var(--ink);color:white;text-align:center;padding:28px 28px 24px}.brand-word{font:400 30px/1 var(--serif);letter-spacing:-.04em}.context-bar{background:var(--ink-soft);color:var(--accent-soft);text-align:center;padding:12px 18px;font:700 10px/1.4 var(--sans);letter-spacing:.22em;text-transform:uppercase}.hero{background:var(--bone);padding:54px 28px 42px;text-align:center;border-bottom:1px solid var(--line)}.eyebrow{margin:0;color:var(--muted);font:700 10px/1.3 var(--sans);letter-spacing:.24em;text-transform:uppercase}.rule{width:42px;height:1px;background:var(--line-warm);margin:22px auto}.hero h1{font:400 48px/.95 var(--serif);letter-spacing:-.04em;margin:0}.hero h1 em{display:block;color:var(--accent);font-style:italic}.hero-copy{max-width:520px;margin:20px auto 0;color:var(--muted);font:400 14px/1.75 var(--sans)}.metrics{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line);background:var(--paper-soft)}.metric{padding:22px 14px;text-align:center;border-right:1px solid var(--line)}.metric:last-child{border-right:0}.metric .k{font:700 9px/1.2 var(--sans);letter-spacing:.18em;color:var(--muted);text-transform:uppercase}.metric .v{font:400 28px/1 var(--serif);letter-spacing:-.03em;margin-top:8px}.section{padding:42px 26px;border-bottom:1px solid var(--line)}.section-title{font:400 34px/1 var(--serif);letter-spacing:-.03em;margin:0 0 10px}.section-sub{font:400 13px/1.7 var(--sans);color:var(--muted);margin:0 0 24px}.rank-row{display:grid;grid-template-columns:46px minmax(0,1fr);gap:14px;padding:20px 0;border-top:1px solid var(--line)}.badge{background:var(--ink);color:white;height:34px;display:flex;align-items:center;justify-content:center;font:700 10px/1 var(--sans);letter-spacing:.12em}.inf{font:700 10px/1.2 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}.product{font:400 25px/1.08 var(--serif);letter-spacing:-.018em;margin:0 0 12px}.row-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.pill{background:var(--paper-soft);padding:11px 12px;border:1px solid var(--line)}.pill .k{font:700 9px/1.2 var(--sans);letter-spacing:.16em;color:var(--muted);text-transform:uppercase}.pill .v{font:700 13px/1.3 var(--sans);margin-top:4px}.bridge{margin-top:10px;color:var(--muted);font:400 12px/1.55 var(--sans)}.signal{padding:16px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px}.signal b{font:700 11px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase}.signal span{color:var(--muted);font:400 12px/1.55 var(--sans)}.footer{background:var(--ink);color:white;text-align:center;padding:34px 26px}.footer p{margin:10px auto 0;max-width:480px;color:var(--accent-soft);font:400 13px/1.7 var(--sans)}@media(max-width:520px){.page{max-width:none}.hero{padding:42px 22px 34px}.hero h1{font-size:40px}.metrics{grid-template-columns:1fr}.metric{border-right:0;border-bottom:1px solid var(--line)}.row-grid{grid-template-columns:1fr}.section{padding:34px 22px}.product{font-size:23px}}
     """
-    parts = [f'<!doctype html><meta charset="utf-8"><style>{css}</style><div class="wrap">']
-    parts.append('<h1>LK — Relatório semanal de vendas por influencer</h1>')
-    parts.append(f'<p class="muted"><b>Atual:</b> {cur[0].date()} a {cur[1].date()} BRT<br><b>Comparativo:</b> {prev[0].date()} a {prev[1].date()} BRT</p>')
-    parts.append('<p class="muted">Meta Ads direto com compra canônica por anúncio. Shopify/produtos entram quando há ponte textual ou ad_id Meta exato em utm_content/ad_id. Campanha/adset genérico não é usado como ponte.</p>')
-    creatives = [c for c in rep.get('meta', {}).get('current', {}).get('top_creatives', []) if c.get('image_url')]
-    if creatives:
-        parts.append('<h2>Top criativos Meta da semana</h2>')
-        parts.append('<p class="muted">Preview vertical/mobile dos anúncios com mais compras canônicas. Métrica Meta é sinal de plataforma; produtos só aparecem abaixo quando houver ponte Shopify segura.</p>')
-        parts.append('<div class="creative-grid">')
-        for c in creatives[:6]:
-            parts.append('<div class="creative">')
-            parts.append(f'<img src="{html.escape(c["image_url"], quote=True)}" alt="Criativo Meta {html.escape(c.get("influencer", ""), quote=True)}">')
-            parts.append('<div class="caption">')
-            parts.append(f'<div><b>{html.escape(c.get("influencer", ""))}</b></div>')
-            parts.append(f'<div class="metric">{parse_num(c.get("purchases")):.0f} compras / {money(parse_num(c.get("spend")))} spend</div>')
-            parts.append(f'<div class="muted">{html.escape((c.get("ad_name") or c.get("adset_name") or "")[:90])}</div>')
-            parts.append('</div></div>')
-        parts.append('</div>')
-    for r in rep['rows'][:20]:
-
-        cls = 'up' if r['shopify_revenue'] >= r['shopify_revenue_prev'] else 'down'
-        parts.append('<div class="card">')
-        parts.append(f'<div class="name">{html.escape(r["influencer"])}</div>')
-        parts.append('<div class="grid">')
-        parts.append(f'<div class="kv"><div class="k">Shopify com ponte</div><div class="v">{r["shopify_orders"]} pedidos / {money(r["shopify_revenue"])}</div><div class="{cls}">{pct_change(r["shopify_revenue"], r["shopify_revenue_prev"])} vs semana ant.</div><div class="muted">Ponte: {r.get("bridge_text",0)} texto + {r.get("bridge_meta_ad_id",0)} ad_id Meta</div></div>')
-        parts.append(f'<div class="kv"><div class="k">Meta canônico</div><div class="v">{r["meta_purchases"]:.0f} compras / {money(r["meta_spend"])} spend</div><div class="muted">Valor Meta: {money(r["meta_value"])}</div></div>')
-        parts.append('</div>')
-        if r['products']:
-            parts.append('<div class="prod"><b>Produtos com ponte Shopify:</b><ul>')
-            for p in r['products'][:6]:
-                parts.append(f'<li>{html.escape(p["product"])} — qty {p["qty"]} / {money(p["revenue"])}</li>')
-            parts.append('</ul></div>')
-        else:
-            parts.append('<p class="muted">Produtos: sem ponte Shopify textual encontrada nesta semana.</p>')
-        parts.append('</div>')
-    parts.append('</div>')
+    css += """@media(max-width:520px){.hero{padding:42px 22px 34px}.hero h1{font-size:40px}.metrics{grid-template-columns:1fr}.metric{border-right:0;border-bottom:1px solid var(--line)}.metric:last-child{border-bottom:0}.rank-row{grid-template-columns:38px minmax(0,1fr);gap:12px}.row-grid{grid-template-columns:1fr}.section{padding:34px 22px}.section-title{font-size:30px}.product{font-size:25px}.page{max-width:100%}}"""
+    parts = [f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>{css}</style></head><body><main class="page">']
+    parts.append('<header class="brand-header"><div class="brand-word">LK Sneakers</div></header>')
+    parts.append('<div class="context-bar">CURADORIA LK · INFLUENCERS · PRODUTO VENDIDO</div>')
+    parts.append('<section class="hero"><p class="eyebrow">RELATÓRIO SEMANAL</p><div class="rule"></div><h1>Influencer ×<em>Produto vendido.</em></h1>')
+    parts.append(f'<p class="hero-copy">{cur[0].date()} a {cur[1].date()} · Ranking operacional por produto vendido com ponte Shopify segura. Meta entra como sinal de mídia, não como verdade de produto.</p></section>')
+    parts.append('<section class="metrics">')
+    parts.append(f'<div class="metric"><div class="k">Produtos ranqueados</div><div class="v">{total_products}</div></div>')
+    parts.append(f'<div class="metric"><div class="k">Qtd. vendida</div><div class="v">{total_qty}</div></div>')
+    parts.append(f'<div class="metric"><div class="k">Receita com ponte</div><div class="v">{money(total_product_revenue)}</div></div>')
+    parts.append('</section>')
+    parts.append('<section class="section"><h2 class="section-title">Ranking de produtos vendidos</h2>')
+    parts.append('<p class="section-sub">Cada linha é uma combinação influencer + produto/SKU/tamanho. Este é o bloco para decisão de estoque, recompra e leitura de fit entre influencer e produto.</p>')
+    if product_rows:
+        for i, row in enumerate(product_rows[:30], 1):
+            parts.append('<article class="rank-row">')
+            parts.append(f'<div class="badge">#{i}</div><div>')
+            parts.append(f'<div class="inf">{html.escape(str(row["influencer"]))}</div>')
+            parts.append(f'<h3 class="product">{html.escape(str(row["product_name"]))}</h3>')
+            parts.append(f'<div class="bridge">SKU {html.escape(str(row["sku"]))}' + (f' · Tam. {html.escape(str(row["variant"]))}' if row.get('variant') else '') + '</div>')
+            parts.append('<div class="row-grid">')
+            parts.append(f'<div class="pill"><div class="k">Vendido Shopify</div><div class="v">qty {row["qty"]} · {money(row["revenue"])}</div></div>')
+            parts.append(f'<div class="pill"><div class="k">Meta do influencer</div><div class="v">{row["meta_purchases"]:.0f} compras · {money(row["meta_spend"])} spend</div></div>')
+            parts.append('</div>')
+            parts.append(f'<div class="bridge">Ponte usada no pedido: {row["bridge_text"]} texto + {row["bridge_meta_ad_id"]} ad_id Meta. Produto só entra aqui porque existe evidência Shopify.</div>')
+            parts.append('</div></article>')
+    else:
+        parts.append('<p class="section-sub">Nenhum produto com ponte Shopify segura nesta janela.</p>')
+    parts.append('</section>')
+    if signal_only:
+        parts.append('<section class="section"><h2 class="section-title">Sinal Meta sem produto</h2>')
+        parts.append('<p class="section-sub">Aqui o Meta indica compra/valor, mas o Shopify não trouxe cupom, UTM textual ou ad_id exato suficiente para ligar pedido e produto ao influencer.</p>')
+        for r in signal_only[:12]:
+            parts.append('<div class="signal">')
+            parts.append(f'<div><b>{html.escape(str(r["influencer"]))}</b><br><span>{r["meta_purchases"]:.0f} compras Meta · spend {money(r["meta_spend"])} · valor Meta {money(r["meta_value"])}</span></div>')
+            parts.append('<span>meta_signal_only</span></div>')
+        parts.append('</section>')
+    parts.append('<footer class="footer"><div class="brand-word">LK Sneakers</div><p>Less Noise, More Identity. Relatório read-only: não altera campanhas, Shopify, estoque ou CRM.</p></footer>')
+    parts.append('</main></body></html>')
     return '\n'.join(parts)
-
 
 def send_gmail(secrets: Dict[str,str], to_addr: str, subject: str, html_body: str, text_body: str) -> Dict[str, Any]:
     credential_sets = [
@@ -549,13 +626,14 @@ def main():
     aliases = load_aliases()
     windows = date_windows()
     outdir = Path(args.out_dir); outdir.mkdir(parents=True, exist_ok=True)
-    meta_cur = fetch_meta(secrets, *windows['current'], aliases, include_creatives=True)
+    meta_cur = fetch_meta(secrets, *windows['current'], aliases, include_creatives=False)
     meta_prev = fetch_meta(secrets, *windows['previous'], aliases)
     shop_orders_cur = fetch_shopify_orders(secrets, *windows['current'])
     shop_orders_prev = fetch_shopify_orders(secrets, *windows['previous'])
     shop_cur = summarize_shopify(shop_orders_cur, aliases, meta_cur.get('ad_id_to_influencer'))
     shop_prev = summarize_shopify(shop_orders_prev, aliases, meta_prev.get('ad_id_to_influencer'))
     rep = merge_report(meta_cur, meta_prev, shop_cur, shop_prev, windows)
+    rep['product_ranking'] = build_product_ranking(rep)
     slug = windows['current'][1].date().isoformat()
     md = render_md(rep); html_body = render_html(rep)
     md_path = outdir / f'lk-weekly-influencer-sales-{slug}.md'
