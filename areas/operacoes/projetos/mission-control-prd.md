@@ -142,7 +142,20 @@ Fontes com cuidado/aprovação:
 
 - VPS/Docker/Hostinger: read-only apenas.
 - Supabase/Shopify/APIs: read-only e só quando necessário.
-- Emails/WhatsApp/canais externos: somente leitura explícita e sem envio.
+- Emails/WhatsApp/canais externos: somente leitura explícita e sem envio, exceto rotinas recorrentes expressamente aprovadas por Lucas e documentadas no Brain.
+
+## 8.1 Módulos recorrentes aprovados
+
+### LK — Weekly Influencer Sales Email
+
+- Documento: `areas/lk/sub-areas/trafego-pago/rotinas/weekly-influencer-sales-email.md`.
+- Script: `scripts/lk_weekly_influencer_sales_report.py`.
+- Cadência: toda quarta-feira às 10h BRT (`0 13 * * 3` em UTC).
+- Entrega: e-mail para Lucas via Gmail/Doppler.
+- Conteúdo: relatório comparativo últimos 7 dias completos vs 7 dias anteriores, com vendas Shopify por influencer somente quando houver ponte textual verificável e Meta Ads canônico separado como sinal de plataforma.
+- Status: aprovado por Lucas em 2026-05-10; cron Hermes configurado.
+- Guardrail: envio externo aprovado apenas para este relatório recorrente; mudanças em campanha, orçamento, Shopify/Tiny/Klaviyo/WhatsApp/banco/produção continuam bloqueadas sem aprovação explícita.
+
 
 ## 9. Requisitos funcionais
 
