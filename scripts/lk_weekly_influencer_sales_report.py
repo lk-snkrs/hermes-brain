@@ -514,6 +514,58 @@ def build_product_ranking(rep: Dict[str, Any]) -> List[Dict[str, Any]]:
     out.sort(key=lambda x: (x['revenue'], x['qty'], x['meta_purchases']), reverse=True)
     return out
 
+def latest_creative_assets_json(out_dir: Path, slug: str) -> Path | None:
+    direct = BASE / 'lk_weekly_creative_audits' / f'lk-weekly-meta-creative-assets-{slug}.json'
+    if direct.exists():
+        return direct
+    candidates = sorted((BASE / 'lk_weekly_creative_audits').glob('lk-weekly-meta-creative-assets-*.json'), key=lambda x: x.stat().st_mtime, reverse=True)
+    return candidates[0] if candidates else None
+
+
+def load_curated_creative_assets(path: Path | None, limit: int = 6) -> List[Dict[str, Any]]:
+    """Load locally harvested creative assets for optional executive preview.
+
+    This intentionally consumes the PR #49 local JSON instead of fetching Meta
+    again from the weekly e-mail script. The cron remains product-first and the
+    creative section only appears when an explicit flag is passed.
+    """
+    if not path or not path.exists():
+        return []
+    data = json.loads(path.read_text(encoding='utf-8'))
+    curated: List[Dict[str, Any]] = []
+    seen: set[str] = set()
+    for ad in data.get('ads') or []:
+        chosen = ad.get('chosen_asset') or {}
+        size = chosen.get('size') or []
+        q = chosen.get('quality') or {}
+        img_path = Path(str(chosen.get('path') or ''))
+        if len(size) != 2 or int(size[0] or 0) < 480 or int(size[1] or 0) < 480:
+            continue
+        if q.get('black_frame') or not img_path.exists():
+            continue
+        # Hard dedupe by asset hash/path; same creative can appear in multiple ads,
+        # but the executive e-mail should not repeat identical cards visually.
+        key = str(chosen.get('sha16') or img_path.name)
+        if key in seen:
+            continue
+        seen.add(key)
+        item = {
+            'influencer': ad.get('influencer'),
+            'ad_id': ad.get('ad_id'),
+            'ad_name': ad.get('ad_name'),
+            'purchases': parse_num(ad.get('purchases')),
+            'value': parse_num(ad.get('value')),
+            'spend': parse_num(ad.get('spend')),
+            'image_path': str(img_path),
+            'size': size,
+            'source': chosen.get('source'),
+            'cropped': bool(q.get('cropped_sidebars')),
+        }
+        curated.append(item)
+    curated.sort(key=lambda x: (x['purchases'], x['value'], x['spend']), reverse=True)
+    return curated[:limit]
+
+
 def render_md(rep: Dict[str, Any]) -> str:
     cur = rep['windows']['current']; prev = rep['windows']['previous']
     product_rows = build_product_ranking(rep)
@@ -548,6 +600,7 @@ def render_md(rep: Dict[str, Any]) -> str:
 def render_html(rep: Dict[str, Any]) -> str:
     cur = rep['windows']['current']; prev = rep['windows']['previous']
     product_rows = build_product_ranking(rep)
+    creative_assets = rep.get('creative_assets') or []
     signal_only = [r for r in rep.get('rows', []) if r.get('meta_purchases', 0) > 0 and not r.get('products')]
     total_products = len(product_rows)
     total_product_revenue = sum(r['revenue'] for r in product_rows)
@@ -557,7 +610,8 @@ def render_html(rep: Dict[str, Any]) -> str:
     :root{--ink:#0A0A0A;--ink-soft:#1A1A1A;--paper:#F0ECE8;--paper-soft:#F5F4F2;--surface:#FFFFFF;--bone:#FDF9F5;--line:#E8E6E2;--line-warm:#DDD0C0;--muted:#8A8580;--muted-light:#B5B0A8;--accent:#C8A98A;--accent-soft:#E8D8C4;--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
     *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);padding:0}.page{max-width:640px;margin:0 auto;background:var(--surface)}.brand-header{background:var(--ink);color:white;text-align:center;padding:28px 28px 24px}.brand-word{font:400 30px/1 var(--serif);letter-spacing:-.04em}.context-bar{background:var(--ink-soft);color:var(--accent-soft);text-align:center;padding:12px 18px;font:700 10px/1.4 var(--sans);letter-spacing:.22em;text-transform:uppercase}.hero{background:var(--bone);padding:54px 28px 42px;text-align:center;border-bottom:1px solid var(--line)}.eyebrow{margin:0;color:var(--muted);font:700 10px/1.3 var(--sans);letter-spacing:.24em;text-transform:uppercase}.rule{width:42px;height:1px;background:var(--line-warm);margin:22px auto}.hero h1{font:400 48px/.95 var(--serif);letter-spacing:-.04em;margin:0}.hero h1 em{display:block;color:var(--accent);font-style:italic}.hero-copy{max-width:520px;margin:20px auto 0;color:var(--muted);font:400 14px/1.75 var(--sans)}.metrics{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line);background:var(--paper-soft)}.metric{padding:22px 14px;text-align:center;border-right:1px solid var(--line)}.metric:last-child{border-right:0}.metric .k{font:700 9px/1.2 var(--sans);letter-spacing:.18em;color:var(--muted);text-transform:uppercase}.metric .v{font:400 28px/1 var(--serif);letter-spacing:-.03em;margin-top:8px}.section{padding:42px 26px;border-bottom:1px solid var(--line)}.section-title{font:400 34px/1 var(--serif);letter-spacing:-.03em;margin:0 0 10px}.section-sub{font:400 13px/1.7 var(--sans);color:var(--muted);margin:0 0 24px}.rank-row{display:grid;grid-template-columns:46px minmax(0,1fr);gap:14px;padding:20px 0;border-top:1px solid var(--line)}.badge{background:var(--ink);color:white;height:34px;display:flex;align-items:center;justify-content:center;font:700 10px/1 var(--sans);letter-spacing:.12em}.inf{font:700 10px/1.2 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}.product{font:400 25px/1.08 var(--serif);letter-spacing:-.018em;margin:0 0 12px}.row-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.pill{background:var(--paper-soft);padding:11px 12px;border:1px solid var(--line)}.pill .k{font:700 9px/1.2 var(--sans);letter-spacing:.16em;color:var(--muted);text-transform:uppercase}.pill .v{font:700 13px/1.3 var(--sans);margin-top:4px}.bridge{margin-top:10px;color:var(--muted);font:400 12px/1.55 var(--sans)}.signal{padding:16px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px}.signal b{font:700 11px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase}.signal span{color:var(--muted);font:400 12px/1.55 var(--sans)}.footer{background:var(--ink);color:white;text-align:center;padding:34px 26px}.footer p{margin:10px auto 0;max-width:480px;color:var(--accent-soft);font:400 13px/1.7 var(--sans)}@media(max-width:520px){.page{max-width:none}.hero{padding:42px 22px 34px}.hero h1{font-size:40px}.metrics{grid-template-columns:1fr}.metric{border-right:0;border-bottom:1px solid var(--line)}.row-grid{grid-template-columns:1fr}.section{padding:34px 22px}.product{font-size:23px}}
     """
-    css += """@media(max-width:520px){.hero{padding:42px 22px 34px}.hero h1{font-size:40px}.metrics{grid-template-columns:1fr}.metric{border-right:0;border-bottom:1px solid var(--line)}.metric:last-child{border-bottom:0}.rank-row{grid-template-columns:38px minmax(0,1fr);gap:12px}.row-grid{grid-template-columns:1fr}.section{padding:34px 22px}.section-title{font-size:30px}.product{font-size:25px}.page{max-width:100%}}"""
+    css += """.creative-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.creative-card{border:1px solid var(--line);background:#fff}.creative-img{background:#0d0d0d;aspect-ratio:9/16;display:flex;align-items:center;justify-content:center;overflow:hidden}.creative-img img{width:100%;height:100%;object-fit:contain;display:block}.creative-body{padding:14px}.creative-name{font:700 9px/1.2 var(--sans);letter-spacing:.16em;color:var(--accent);text-transform:uppercase}.creative-title{font:400 22px/1 var(--serif);letter-spacing:-.025em;margin:8px 0}.creative-meta{font:400 11px/1.6 var(--sans);color:var(--muted)}"""
+    css += """@media(max-width:520px){.hero{padding:42px 22px 34px}.hero h1{font-size:40px}.metrics{grid-template-columns:1fr}.metric{border-right:0;border-bottom:1px solid var(--line)}.metric:last-child{border-bottom:0}.rank-row{grid-template-columns:38px minmax(0,1fr);gap:12px}.row-grid{grid-template-columns:1fr}.creative-grid{grid-template-columns:1fr}.section{padding:34px 22px}.section-title{font-size:30px}.product{font-size:25px}.page{max-width:100%}}"""
     parts = [f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>{css}</style></head><body><main class="page">']
     parts.append('<header class="brand-header"><div class="brand-word">LK Sneakers</div></header>')
     parts.append('<div class="context-bar">CURADORIA LK · INFLUENCERS · PRODUTO VENDIDO</div>')
@@ -586,6 +640,21 @@ def render_html(rep: Dict[str, Any]) -> str:
     else:
         parts.append('<p class="section-sub">Nenhum produto com ponte Shopify segura nesta janela.</p>')
     parts.append('</section>')
+    if creative_assets:
+        parts.append('<section class="section"><h2 class="section-title">Criativos em veiculação</h2>')
+        parts.append('<p class="section-sub">Curadoria opcional, local e read-only. As imagens abaixo vêm do harvesting real Meta creative/video/adimages, baixadas localmente e filtradas contra frames pretos/miniaturas 64×64. Entram aqui só quando a flag explícita é usada.</p>')
+        parts.append('<div class="creative-grid">')
+        for i, c in enumerate(creative_assets[:6], 1):
+            src = Path(str(c.get('image_path') or '')).as_uri()
+            parts.append('<article class="creative-card">')
+            parts.append(f'<div class="creative-img"><img src="{html.escape(src, quote=True)}" alt="Criativo {html.escape(str(c.get("ad_id") or ""))}"></div>')
+            parts.append('<div class="creative-body">')
+            parts.append(f'<div class="creative-name">#{i:02d} · {html.escape(str(c.get("influencer") or ""))}</div>')
+            parts.append(f'<h3 class="creative-title">{html.escape(str(c.get("ad_name") or ""))}</h3>')
+            sz = c.get('size') or ['', '']
+            parts.append(f'<div class="creative-meta">{float(c.get("purchases") or 0):.0f} compras Meta · valor atribuído {money(c.get("value"))} · spend {money(c.get("spend"))}<br>ad_id {html.escape(str(c.get("ad_id") or ""))} · {sz[0]}×{sz[1]}</div>')
+            parts.append('</div></article>')
+        parts.append('</div><p class="section-sub" style="margin-top:18px">Observação: criativo é sinal para curadoria visual. Produto vendido continua sendo decidido pelo bloco Shopify acima.</p></section>')
     if signal_only:
         parts.append('<section class="section"><h2 class="section-title">Sinal Meta sem produto</h2>')
         parts.append('<p class="section-sub">Aqui o Meta indica compra/valor, mas o Shopify não trouxe cupom, UTM textual ou ad_id exato suficiente para ligar pedido e produto ao influencer.</p>')
@@ -646,7 +715,12 @@ def main():
     ap.add_argument('--send', action='store_true')
     ap.add_argument('--to', default=None)
     ap.add_argument('--out-dir', default=str(OUT_DIR))
+    ap.add_argument('--include-creative-assets', action='store_true', help='Include locally harvested creative images in the local HTML preview. Disabled by default for cron/email.')
+    ap.add_argument('--creative-assets-json', default=None, help='Optional path to lk-weekly-meta-creative-assets-*.json generated by lk_weekly_creative_audit.py')
+    ap.add_argument('--creative-assets-limit', type=int, default=6)
     args = ap.parse_args()
+    if args.send and args.include_creative_assets:
+        raise RuntimeError('Creative assets are local-file previews only; do not send externally without attachment/inline-image workflow and fresh visual QA.')
     secrets = load_secrets()
     aliases = load_aliases()
     windows = date_windows()
@@ -660,6 +734,10 @@ def main():
     rep = merge_report(meta_cur, meta_prev, shop_cur, shop_prev, windows)
     rep['product_ranking'] = build_product_ranking(rep)
     slug = windows['current'][1].date().isoformat()
+    if args.include_creative_assets:
+        creative_json = Path(args.creative_assets_json) if args.creative_assets_json else latest_creative_assets_json(outdir, slug)
+        rep['creative_assets_source'] = str(creative_json) if creative_json else None
+        rep['creative_assets'] = load_curated_creative_assets(creative_json, args.creative_assets_limit)
     md = render_md(rep); html_body = render_html(rep)
     md_path = outdir / f'lk-weekly-influencer-sales-{slug}.md'
     html_path = outdir / f'lk-weekly-influencer-sales-{slug}.html'
@@ -685,6 +763,8 @@ def main():
         'current_window': [windows['current'][0].isoformat(), windows['current'][1].isoformat()],
         'previous_window': [windows['previous'][0].isoformat(), windows['previous'][1].isoformat()],
         'influencer_rows': len(rep['rows']),
+        'creative_assets_included': len(rep.get('creative_assets') or []),
+        'creative_assets_source': rep.get('creative_assets_source'),
     }, ensure_ascii=False))
 
 if __name__ == '__main__':
