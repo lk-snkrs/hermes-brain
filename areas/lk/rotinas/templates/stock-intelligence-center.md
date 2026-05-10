@@ -22,11 +22,12 @@ O centro deve responder:
 ## Regras
 
 - Granularidade obrigatória: marca → modelo → produto/cor → tamanho/variante.
-- Estoque oficial: Tiny / `LK controle de stock`.
+- Estoque oficial: Tiny / depósito `LK | CONTROLE ESTOQUE`.
 - Shopify informa venda/pedido/source, mas não manda no estoque.
-- Encomenda BR/US é classificação humana; o sistema sugere, não decide sozinho.
+- Encomenda BR/US é classificação humana marcada no contexto do pedido Shopify; o sistema sugere, não decide sozinho.
 - Droper.app, StockX, KicksDev, GOAT, Flight Club, retailers e revendedores são fontes de sourcing, não concorrentes a monitorar continuamente.
-- Buscar fontes externas só quando houver sinal interno ou oportunidade de tendência.
+- Buscar fontes externas só quando houver sinal interno ou oportunidade de tendência. Exemplo: produto/tamanho vendeu bem, Tiny está zerado/baixo, e uma fonte relevante parece ter restock.
+- Para Brasil, incluir Droper e Monbam/grupos de revendedores quando fizer sentido; preparar mensagem, mas não postar sem aprovação.
 
 ## Fórmulas v0.1
 
@@ -57,7 +58,7 @@ Vendas 30d:
 Vendas 90d:
 Estoque Tiny físico:
 Estoque livre estimado:
-Status pedido/tag: sem encomenda / encomenda BR / encomenda US / desconhecido
+Status pedido/tag: sem encomenda / encomenda BR / encomenda US / desconhecido, sempre como sinal humano do pedido
 Preço LK atual:
 Preço externo, se consultado:
 Fonte externa:
@@ -77,7 +78,7 @@ Fonte recomendada para checar:
 Preço reposição estimado:
 Preço LK atual:
 Preço LK sugerido, se aplicável:
-Recomendação: comprar agora / checar fonte / não comprar / subir preço / manter / preparar conteúdo / investigar divergência
+Recomendação: comprar para repor estoque / checar fonte / não comprar / subir preço / manter / preparar conteúdo / investigar divergência
 Confiança: alta/média/baixa
 Dados faltantes:
 Aprovação necessária:

@@ -2,6 +2,13 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-10 — LK OS: stock, sourcing e influencer intelligence
+
+- Refinado o PRD do LK Operating System com as correções de Lucas sobre busca externa acionada por sinal interno, Monbam, Droper, compra para repor estoque, encomenda BR/US como curadoria humana no pedido Shopify e pronta entrega por variante/tamanho.
+- Reforçado que o Stock Intelligence Center deve comparar velocidade de venda, estoque Tiny `LK | CONTROLE ESTOQUE` e lead time para decidir se a compra precisa acontecer antes da ruptura.
+- Reforçado o módulo Paid Traffic & Influencer Intelligence: Google Ads via Metricool, Meta Ads direto, Shopify/GA4 para reconciliação, e foco em qual influenciador/campanha move qual produto/marca/modelo/tamanho e consequência de estoque.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-09 — Paid Attribution LK real v0.3
 
 - Salvo no Brain o primeiro relatório real agregado/read-only de atribuição paga/influencers em `reports/lk-paid-attribution-brief-real-2026-05-08-v03.md`.
