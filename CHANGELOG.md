@@ -16,6 +16,13 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-10 — LK Influencer SKU Stock Matrix real v0.2
+
+- Gerada matriz read-only `influencer → produto/SKU/tamanho → estoque` em `reports/lk-influencer-sku-stock-matrix-readonly-2026-05-10.md` e JSON correspondente.
+- Silvia Heinz e Helena Lunardelli foram cruzadas com Shopify por cupom/UTM/landing/note e Tiny somente no depósito `LK | CONTROLE ESTOQUE`.
+- Lala Noleto ficou classificada como investigação: há sinal forte em Meta, mas nenhum match Shopify por `lala`/`noleto` em cupom/UTM/landing/note no período; precisa de dicionário canônico de cupom/UTM/brief antes de virar recomendação de estoque.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-10 — LK Campaign Attribution Dictionary seed v0.1
 
 - Criado `areas/lk/sub-areas/trafego-pago/contexto/campaign-attribution-dictionary-seed-v0.md` com a primeira versão preenchida/read-only do dicionário canônico.
