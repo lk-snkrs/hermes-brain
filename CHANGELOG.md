@@ -1,3 +1,9 @@
+## 2026-05-10 — LK Weekly Influencer Sales Email Gmail validation
+
+- Validado envio real do e-mail semanal de influencers: Gmail `message_id` `19e11e34e2b85b52`.
+- Corrigida a seleção de credenciais Gmail no script para testar conjuntos nomeados e usar o primeiro OAuth válido, sem imprimir secrets.
+- O envio teste gerou relatório `lk-weekly-influencer-sales-2026-05-09.*` e manteve Meta/Shopify read-only.
+
 ## 2026-05-10 — LK Weekly Influencer Sales Email + Mission Control
 
 - Documentada e versionada a rotina `areas/lk/sub-areas/trafego-pago/rotinas/weekly-influencer-sales-email.md`.
