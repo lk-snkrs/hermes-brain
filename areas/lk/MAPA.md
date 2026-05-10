@@ -20,7 +20,7 @@ Fonte resumida atual: `memories/lk.md`.
 
 ## Equipe e roteamento
 
-- `equipe/README.md` — matriz inicial de funções e destinatários de relatórios; pendente de mapeamento completo. Dado inicial: Renan cuida de design/SEO.
+- `equipe/README.md` — matriz inicial de funções, aprovações e roteamento de relatórios do LK OS. Inclui Lucas, Renan, Júlio e Danilo com limites de envio; ainda exige validação antes de crons ou envios recorrentes.
 
 ## Rotinas LK globais
 
