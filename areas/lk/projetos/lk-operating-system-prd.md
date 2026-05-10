@@ -50,7 +50,7 @@ O `LK Operating System` deve operar como um CEO/Chief of Staff da LK: transforma
 ### Fontes principais
 
 - Shopify: vendas, clientes, source/canal, pedidos, catálogo/vitrine, tags de pedido quando disponíveis.
-- Tiny / estoque `LK controle de stock`: fonte oficial de estoque.
+- Tiny / depósito `LK | CONTROLE ESTOQUE`: fonte oficial de estoque operacional.
 - Notion LK: `LK Compras`, `LK Encomendas` e estruturas relacionadas de compra/encomenda.
 - Klaviyo: comunicação online escalável.
 - Evolution API: WhatsApp da LK, loja física e mensagens 1:1/personalizadas.
@@ -111,6 +111,10 @@ Regra:
 
 > Nenhuma comunicação externa deve ser sugerida apenas porque o produto entrou no estoque. Primeiro é obrigatório confirmar status livre por variante/tamanho.
 
+Regra de encomenda:
+
+> `encomenda BR` e `encomenda US` são curadoria humana da LK e aparecem no contexto do pedido Shopify quando a equipe marca. O sistema pode sugerir candidatos, mas não deve deduzir automaticamente por tag de produto, nome do produto ou ausência de estoque. A mesma página/produto pode ter tamanho pronta entrega e outro tamanho sob encomenda.
+
 ## 7. Estrutura de módulos
 
 ```text
@@ -161,7 +165,7 @@ Escopo v0.1: especificação. Cron real só após aprovação de implementação
 Fontes:
 
 - Vendas/clientes/source: Shopify.
-- Estoque: Tiny / `LK controle de stock`.
+- Estoque: Tiny / depósito `LK | CONTROLE ESTOQUE`.
 - Tráfego/conversão: Google Analytics + Shopify Analytics.
 - Comunicação online: Klaviyo.
 - WhatsApp: Evolution API.
@@ -234,7 +238,7 @@ Lead times v0.1:
 - StockX/internacional: aproximadamente 30 dias.
 - Pessoa/revendedor Brasil: variável; confirmar manualmente.
 
-### Alerta de recompra
+### Alerta de recompra/reposição
 
 Fluxo:
 
@@ -242,14 +246,25 @@ Fluxo:
 Venda detectada no Shopify
 → consultar Tiny por produto/modelo/tamanho
 → avaliar estoque livre, velocidade de venda e lead time
-→ se houver sinal, enviar alerta no WhatsApp `LK.Sneakers | Compras`
+→ se houver sinal, preparar alerta no WhatsApp `LK.Sneakers | Compras`
 → humano aprova/rejeita
 → se aprovado, criar item no Notion LK (`LK Compras` ou `LK Encomendas` conforme caso)
 ```
 
 Canal: WhatsApp via Evolution API.
 
-Regra: compra automática é bloqueada. O sistema pode sugerir e preparar; humano decide.
+Regra: compra automática é bloqueada. O sistema pode sugerir e preparar; humano decide. Compra para estoque deve ser descrita como **repor estoque**, não como “replicar estoque”.
+
+Exemplo de uso correto de busca externa:
+
+```text
+Shopify mostra que um New Balance específico/tamanho vendeu bem.
+Tiny `LK | CONTROLE ESTOQUE` mostra estoque zerado ou baixo.
+O sistema checa apenas fontes plausíveis para aquele item e encontra restock em uma loja/fonte relevante.
+Saída: “teve restock deste produto que a LK vende bem e está zerado; vale avaliar compra?”.
+```
+
+Esse é o uso legítimo de varejistas e fontes externas na v0.1: busca acionada por sinal interno, não monitoramento amplo contínuo.
 
 ## 12. Supply & Sourcing
 
@@ -266,6 +281,7 @@ Fontes conhecidas:
 - Virus 41;
 - New School;
 - Adidas direto;
+- Monbam, rede/grupo de revendedores citada por Lucas;
 - pessoas/revendedores;
 - grupo WhatsApp `LK.Sneakers | Compras`.
 
@@ -278,6 +294,15 @@ Score de sourcing recomendado:
 - disponibilidade por tamanho;
 - histórico de compra;
 - compatibilidade com curadoria LK.
+
+Fluxo Brasil v0.1:
+
+```text
+produto/tamanho vendido ou em risco
+→ checar Droper e fontes Brasil relevantes
+→ se fizer sentido, preparar mensagem para o grupo de compras/revendedores
+→ humano aprova antes de postar, negociar ou comprar
+```
 
 ## 13. Pricing Intelligence
 
@@ -455,7 +480,7 @@ Regra:
 
 ## 18. Paid Traffic & Influencer Intelligence
 
-A LK usa Google Ads, Meta Ads e influenciadores. O sistema precisa medir produto/influenciador/campanha.
+A LK usa Google Ads, Meta Ads e influenciadores. O sistema precisa medir produto/influenciador/campanha e consequência de estoque.
 
 Fontes iniciais:
 
@@ -464,13 +489,22 @@ Fontes iniciais:
 - campanha Google;
 - talvez cupom.
 
+Fonte de custo v0.1 validada:
+
+- Google Ads: Metricool API, brand correta da LK.
+- Meta Ads: Meta Marketing API direta enquanto Metricool aponta para conta Meta antiga.
+- Shopify: confirmação operacional de pedido, produto, receita e source.
+- GA4: sessões, landing pages, source/medium/campaign e contexto de funil.
+
 Perguntas:
 
 - Qual influenciador gerou resultado?
 - Qual produto performou com qual influenciador?
+- Qual tipo de produto, marca, modelo, faixa de preço e tamanho cada influenciador tende a mover?
 - Qual canal trouxe tráfego sem conversão?
 - Qual marca/modelo combina com cada público?
 - Qual criativo/campanha justifica repetir?
+- A campanha vendeu estoque livre ou gerou ruptura/encomenda?
 
 Recomendação de governança:
 
@@ -485,6 +519,8 @@ produto_modelo/opcional
 ```
 
 Sem UTM/cupom consistente, o módulo começa como auditoria e não como julgamento definitivo.
+
+Regra: ROAS de plataforma é sinal, não verdade final. A leitura executiva deve reconciliar custo pago com receita Shopify web e, quando possível, produto/tamanho vendido. O objetivo não é premiar o maior ROAS isolado, mas descobrir qual influenciador/campanha combina com qual curadoria e qual impacto causa no estoque.
 
 ## 19. Content & Campaign Production Engine
 

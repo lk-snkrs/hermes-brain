@@ -5,6 +5,8 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Ativos
 
+- [ ] Primeiro Stock Intelligence real/read-only da LK com sourcing acionado por sinal — sem WhatsApp, Notion, compra ou alteração produtiva sem aprovação.
+- [ ] Evoluir LK Daily Brief v0.3 para atribuição paga/influencers reconciliada com Shopify/GA4/UTM/cupom.
 - [ ] Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
 
 ## Bloqueados — aprovação Lucas
