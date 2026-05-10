@@ -5,8 +5,8 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Ativos
 
-- [ ] Primeiro Stock Intelligence real/read-only da LK com sourcing acionado por sinal — sem WhatsApp, Notion, compra ou alteração produtiva sem aprovação.
-- [ ] Evoluir LK Daily Brief v0.3 para atribuição paga/influencers reconciliada com Shopify/GA4/UTM/cupom.
+- [x] Primeiro Stock Intelligence real/read-only da LK com sourcing acionado por sinal — relatório `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`; sem WhatsApp, Notion, compra ou alteração produtiva.
+- [ ] Criar dicionário canônico de influencers LK e auditar match influencer → produto, começando por Lala Noleto, Silvia Heinz e Helena Lunardelli; reconciliar Shopify/GA4/UTM/cupom com Meta/Google.
 - [ ] Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
 
 ## Bloqueados — aprovação Lucas

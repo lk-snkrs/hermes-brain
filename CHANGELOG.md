@@ -2,6 +2,13 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-10 — LK Stock Intelligence + Influencer/Product Audit real v0.1
+
+- Gerado o primeiro relatório real agregado/read-only combinando Shopify vendas, Tiny `LK | CONTROLE ESTOQUE`, Brand Mix e auditoria influencer vs produto em `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`.
+- A auditoria começou a mapear o match influencer → produto/marca/modelo/tamanho, com exemplos explícitos para Lala Noleto, Silvia Heinz e Helena Lunardelli quando há evidência em Shopify/Meta.
+- Registrada próxima ação: criar dicionário canônico de influencers, cupons, UTMs e patterns de campanhas/anúncios; corrigir vínculo SKU Shopify ↔ Tiny nos campeões sem saldo encontrado.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-10 — LK OS: stock, sourcing e influencer intelligence
 
 - Refinado o PRD do LK Operating System com as correções de Lucas sobre busca externa acionada por sinal interno, Monbam, Droper, compra para repor estoque, encomenda BR/US como curadoria humana no pedido Shopify e pronta entrega por variante/tamanho.
