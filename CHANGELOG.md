@@ -1,5 +1,13 @@
 # Changelog — Hermes Brain
 
+## 2026-05-10 — LK Influencer Audit corrigido: Meta canônico + criativos + produtos
+
+- Gerado relatório read-only corrigido em `reports/lk-influencer-audit-corrected-2026-05-10/audit.md` e `.json`, com imagens dos criativos em `creative_images/` e contact sheet `top_creatives_contact_sheet.png`.
+- Correção crítica: compras Meta agora usam uma única action key canônica por anúncio (`offsite_conversion.fb_pixel_purchase` preferencial), evitando triplicar `purchase + omni_purchase + offsite_conversion`.
+- Influencers foram descobertos e normalizados por Meta direto (`campaign_name`, `adset_name`, `ad_name`), unificando campanhas repetidas como Silvia Henz/Silvia/variações.
+- Produtos vendidos são atribuídos apenas quando existe ponte Shopify textual verificável (cupom, UTM/landing/referrer, note attributes, note ou tags); sem ponte, o relatório mantém o criativo como sinal Meta sem produto vendido atribuído.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-10 — LK Influencer Operational ROAS v0.2
 
 - Criado `reports/lk-influencer-operational-roas-v02-2026-05-10.md` para separar Meta attributed ROAS, Shopify evidence revenue e ROAS operacional provisório por influencer.
