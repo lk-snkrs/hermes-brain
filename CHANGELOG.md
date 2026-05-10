@@ -1,3 +1,12 @@
+## 2026-05-10 — LK Weekly Influencer Sales Email HTML + ad_id attribution fix
+
+- Corrigido o envio Gmail da newsletter semanal para `Content-Type: text/html`, evitando cliente exibir a peça como corpo em texto/Markdown.
+- Corrigida a ponte Shopify do relatório semanal para aceitar `ad_id` Meta exato vindo de `utm_content`/`ad_id`/`fb_ad_id`, além de ponte textual.
+- `campaign_id`/`adset_id` genéricos continuam bloqueados como ponte de produto, porque podem agrupar vários influencers; `ad_id` exato prevalece sobre matches textuais fracos poluídos por fornecedor/tag interna.
+- Reprocessamento teste de `2026-05-03..2026-05-09`: Fiorela deixou de aparecer zerada em Shopify e passou a mostrar 1 pedido / R$ 8.729,97 por `ad_id Meta`, com produtos nome + SKU + tamanho.
+- Envio teste HTML validado com Gmail `message_id` `19e11fe1a8112eca`; metadata Gmail confirmou `mimeType: text/html`.
+- Produção, VPS/Docker, bancos, secrets, campanhas, Shopify/Tiny/Klaviyo/WhatsApp e runtime não foram alterados.
+
 ## 2026-05-10 — LK Weekly Influencer Sales Email Gmail validation
 
 - Validado envio real do e-mail semanal de influencers: Gmail `message_id` `19e11e34e2b85b52`.

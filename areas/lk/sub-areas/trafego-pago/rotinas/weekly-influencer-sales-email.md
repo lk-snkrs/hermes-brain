@@ -15,7 +15,7 @@ Ativa a partir de 2026-05-10.
 
 Enviar por e-mail um relatório comparativo de vendas por influencer para entender:
 
-- quais influencers geraram venda Shopify com ponte textual verificável;
+- quais influencers geraram venda Shopify com ponte verificável;
 - quais influencers tiveram sinal Meta forte sem ponte Shopify;
 - variação semana contra semana;
 - produtos vendidos por influencer quando houver ponte Shopify;
@@ -49,7 +49,7 @@ O script grava artefatos locais em:
 
 - Fonte: Meta Ads direto, conta `act_1242062509867163`.
 - Nível: `ad`.
-- Campos de identificação: `campaign_name`, `adset_name`, `ad_name`.
+- Campos de identificação: `campaign_id`, `adset_id`, `ad_id`, `campaign_name`, `adset_name`, `ad_name`.
 - Métrica de compra: uma action key canônica por anúncio, preferindo `offsite_conversion.fb_pixel_purchase`.
 - Nunca somar aliases Meta como compras diferentes:
   - `purchase`;
@@ -59,14 +59,16 @@ O script grava artefatos locais em:
 ### Shopify
 
 - Fonte: Shopify Admin API, read-only.
-- Atribuição por influencer somente quando existe ponte textual verificável em:
+- Atribuição por influencer somente quando existe ponte verificável em:
   - discount code;
-  - UTM/landing site;
-  - referrer;
+  - UTM/landing site/referrer com nome/código textual do influencer;
   - note attributes;
   - note;
-  - tags.
-- Produtos vendidos só aparecem quando há essa ponte Shopify.
+  - tags;
+  - `ad_id` Meta exato em `utm_content`, `ad_id` ou `fb_ad_id`, quando esse `ad_id` pertence a anúncio identificado como influencer no Meta.
+- `campaign_id` e `adset_id` genéricos não são ponte suficiente para produto/influencer, porque vários influencers podem compartilhar a mesma campanha/adset.
+- Quando houver `ad_id` Meta exato, ele prevalece sobre matches textuais fracos que possam vir de fornecedor, tag interna ou texto de produto.
+- Produtos vendidos só aparecem quando há ponte Shopify verificável.
 - Sempre mostrar nome do produto + SKU + variante/tamanho quando disponível.
 
 ## Output do e-mail
@@ -78,7 +80,9 @@ O e-mail deve conter:
 3. Shopify com ponte: pedidos, receita e variação WoW.
 4. Meta canônico: compras atribuídas, spend e valor Meta.
 5. Produtos vendidos por influencer com nome + SKU + tamanho.
-6. Indicação explícita quando o influencer tem sinal Meta, mas ponte Shopify ausente.
+6. Contagem do tipo de ponte (`texto` vs `ad_id Meta`).
+7. Indicação explícita quando o influencer tem sinal Meta, mas ponte Shopify ausente.
+8. Corpo do e-mail como `Content-Type: text/html`, não apenas multipart/texto.
 
 ## Guardrails
 
