@@ -1,3 +1,10 @@
+## 2026-05-10 — LK inline creative email MIME preview
+
+- Adicionado suporte seguro a MIME `multipart/related` com imagens inline via CID para a seção opcional de criativos do relatório semanal.
+- O cron/e-mail padrão continua sem criativos; `--send --include-creative-assets` ainda bloqueia sem a flag explícita `--allow-send-creative-assets-inline`.
+- Novo `--email-mime-preview` escreve o `.eml` exato que seria enviado, sem envio externo, permitindo validar `cid:`, imagens anexadas e ausência de `file://`/tokens antes de liberar.
+- Validação local `2026-05-03..2026-05-09`: 6 imagens inline preparadas, MIME `multipart/related`, HTML com `src="cid:..."`, 0 `file://`, 0 termos sensíveis, browser QA do HTML aprovado.
+
 ## 2026-05-10 — LK creative sales view correction
 
 - Corrigida a leitura dos criativos no relatório semanal: a seção opcional deixou de ser “vídeos depois do ranking” e passou a seguir `influencer → criativo → vendas → produtos`.

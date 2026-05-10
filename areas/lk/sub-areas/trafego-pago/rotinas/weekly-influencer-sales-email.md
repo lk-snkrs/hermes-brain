@@ -107,7 +107,17 @@ Para prévia executiva local do relatório semanal com criativos reais já colhi
   --creative-assets-json /opt/data/lk_weekly_creative_audits/lk-weekly-meta-creative-assets-YYYY-MM-DD.json
 ```
 
-Guardrail: `--include-creative-assets` é bloqueado junto com `--send` até existir fluxo de anexo/inline-image e QA visual novo. A prévia local cruza o `ad_id` do criativo com Shopify: produtos entram no card do criativo somente quando existe `ad_id` Meta exato no pedido; pontes por texto/cupom continuam no nível influencer para não inventar qual vídeo gerou a venda. Só promover um criativo para e-mail/relatório executivo depois de QA visual; duplicados ou frames fracos devem ser removidos/substituídos.
+Guardrail: `--include-creative-assets` continua bloqueado junto com `--send` por padrão. Para preparar o caminho de e-mail com imagens reais, o script suporta MIME `multipart/related` com imagens inline por CID, mas exige flag explícita `--allow-send-creative-assets-inline` depois de QA/aprovação. Antes de qualquer envio externo com criativos, gerar o `.eml` sem enviar e auditar:
+
+```bash
+/opt/hermes/.venv/bin/python scripts/lk_weekly_influencer_sales_report.py \
+  --include-creative-assets \
+  --allow-send-creative-assets-inline \
+  --email-mime-preview /tmp/lk-weekly-inline-preview.eml \
+  --creative-assets-json /opt/data/lk_weekly_creative_audits/lk-weekly-meta-creative-assets-YYYY-MM-DD.json
+```
+
+O `.eml` deve ser `multipart/related`, conter `src="cid:..."`, anexar as imagens como `Content-ID`, ter zero `file://` no HTML e zero query params sensíveis. A prévia local cruza o `ad_id` do criativo com Shopify: produtos entram no card do criativo somente quando existe `ad_id` Meta exato no pedido; pontes por texto/cupom continuam no nível influencer para não inventar qual vídeo gerou a venda. Só promover um criativo para e-mail/relatório executivo depois de QA visual; duplicados ou frames fracos devem ser removidos/substituídos.
 
 ## Guardrails
 
