@@ -2,6 +2,14 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-10 — LK Campaign Attribution Dictionary seed v0.1
+
+- Criado `areas/lk/sub-areas/trafego-pago/contexto/campaign-attribution-dictionary-seed-v0.md` com a primeira versão preenchida/read-only do dicionário canônico.
+- Seed inclui Silvia Heinz, Helena Lunardelli, Lala Noleto, Ju Mesquita, Mariah, Arlindo, Maria Fernanda e campanhas `[PD][FUNDO] ADV+`, `[PD] [FUNDO] RMKT`, `[Pareto] [FUNDO] DABA`, `Pareto.Vendas-Adv [ Geral]` e Jacquemus.
+- O documento separa plataforma, evidência Shopify, produto/SKU/tamanho e consequência de estoque; mantém `operational_roas` como não calculável quando custo e receita ainda não estão amarrados por naming/UTM/cupom confiável.
+- Próxima ação: confirmar handles/cupons/UTMs oficiais e aprofundar Lala Noleto, que tem sinal Meta forte mas zero evidência Shopify direta encontrada no recorte.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-10 — LK Campaign Attribution Dictionary
 
 - Criada rotina read-only `areas/lk/sub-areas/trafego-pago/rotinas/campaign-attribution-dictionary.md` para mapear campanha/influencer → Meta/Google naming → UTM/cupom/landing → produto/SKU/tamanho → estoque.

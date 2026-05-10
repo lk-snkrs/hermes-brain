@@ -21,3 +21,5 @@ Pastas: angulos, formatos, criativos, testes, learnings, skills, rotinas.
 - `rotinas/campaign-attribution-dictionary.md` — rotina read-only para mapear `campaign_name`/`adset_name`/`ad_name`/Google/UTM/cupom/landing → influencer/criativo/produto/SKU/tamanho/estoque.
 
 - `templates/campaign-attribution-record.md` — template de registro canônico por campanha/influencer.
+
+- `contexto/campaign-attribution-dictionary-seed-v0.md` — primeira versão preenchida/read-only do dicionário com Silvia, Helena, Lala, Ju Mesquita, Mariah, Arlindo, Maria Fernanda e campanhas broad/Advantage+/RMKT/DABA/Jacquemus.
