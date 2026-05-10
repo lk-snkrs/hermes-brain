@@ -1,3 +1,11 @@
+## 2026-05-10 — LK weekly report creative preview flag
+
+- O relatório semanal `scripts/lk_weekly_influencer_sales_report.py` agora aceita `--include-creative-assets` para montar uma prévia HTML local com seção “Criativos em veiculação” usando os assets reais colhidos pelo `lk_weekly_creative_audit.py`.
+- A flag faz curadoria mínima: exige imagem local existente, bloqueia frames pretos, rejeita miniaturas pequenas, deduplica por asset e limita a quantidade exibida.
+- Guardrail: o cron/e-mail semanal continua sem criativos por padrão; `--include-creative-assets` é bloqueado com `--send` até existir fluxo de anexo/inline-image e QA visual novo.
+- Validação local `2026-05-03..2026-05-09`: 6 criativos reais incluídos na prévia, DesignMD LK validado no browser, sem cards pretos/quebrados e sem query params sensíveis.
+- Produção, VPS/Docker, bancos, campaigns, Shopify/Tiny/Klaviyo/WhatsApp, secrets, crons e envios externos não foram alterados.
+
 ## 2026-05-10 — LK creative asset harvesting
 
 - Corrigida a auditoria de criativos para realmente obter imagens úteis dos anúncios Meta, não apenas iframes de preview.
