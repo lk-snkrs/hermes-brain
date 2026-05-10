@@ -87,6 +87,16 @@ O e-mail deve conter:
 7. Corpo do e-mail como `Content-Type: text/html`, não apenas multipart/texto.
 8. Não incluir thumbnails/criativos Meta borrados ou de baixa qualidade no e-mail semanal; criativos ficam em auditoria visual separada quando houver asset correto.
 
+## Auditoria visual de criativos
+
+Criativos continuam fora do e-mail semanal por padrão. Para curadoria interna, usar:
+
+```bash
+/opt/hermes/.venv/bin/python scripts/lk_weekly_creative_audit.py
+```
+
+O script gera JSON + HTML DesignMD LK em `/opt/data/lk_weekly_creative_audits/`, usando previews Meta via iframe sem persistir `thumbnail_url` 64×64 e bloqueando URLs com parâmetros de token/secret. A saída é `local_only`: só promover um criativo para e-mail/relatório executivo se o preview estiver nítido, sem overlay problemático e validado visualmente. Se o iframe aparecer preto/blank, manter fora do e-mail e pedir asset nítido para Pareto/Maicon ou usar mídia real Page/Instagram com permissão adequada.
+
 ## Guardrails
 
 - Read-only: não muda campanha, orçamento, Shopify, Tiny, Klaviyo, WhatsApp, banco ou produção.

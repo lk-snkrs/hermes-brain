@@ -1,3 +1,11 @@
+## 2026-05-10 — LK local creative audit guardrail
+
+- Adicionado `scripts/lk_weekly_creative_audit.py`, auditoria local/read-only para criativos Meta em veiculação, separada do e-mail semanal.
+- O script ranqueia top ads por compras/valor/spend canônicos, usa a regra Maicon `ad_name` no script semanal e gera JSON + HTML DesignMD LK em `/opt/data/lk_weekly_creative_audits/`.
+- Guardrail mantido: não usa `thumbnail_url` 64×64 no e-mail; usa apenas iframes de preview Meta sem parâmetros de token/secret e exige QA visual manual antes de promover criativo para relatório executivo.
+- Validação `2026-05-03..2026-05-09`: 8 ads auditados, 32 iframe URLs sem token; browser QA aprovou o layout premium, mas mostrou vários previews pretos/sem frame útil, então criativos continuam fora do e-mail até asset nítido/validado.
+- Produção, VPS/Docker, bancos, campaigns, Shopify/Tiny/Klaviyo/WhatsApp, secrets, crons e envios externos não foram alterados.
+
 ## 2026-05-10 — LK Maicon ad_name influencer rule
 
 - Confirmada e operacionalizada a orientação do Maicon: no Meta, o nome da influencer deve ser lido primeiro em `ad_name` e múltiplos anúncios/ad_ids da mesma influencer precisam ser somados.
