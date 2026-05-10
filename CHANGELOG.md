@@ -1,4 +1,10 @@
-# Changelog — Hermes Brain
+## 2026-05-10 — LK Weekly Influencer Sales Email + Mission Control
+
+- Documentada e versionada a rotina `areas/lk/sub-areas/trafego-pago/rotinas/weekly-influencer-sales-email.md`.
+- Adicionado script read-only `scripts/lk_weekly_influencer_sales_report.py` para gerar relatório semanal comparativo de influencers: últimos 7 dias completos vs 7 dias anteriores.
+- O relatório separa Meta Ads canônico de Shopify com ponte textual verificável; produtos vendidos só são atribuídos com evidência Shopify, sempre com nome + SKU + variante/tamanho quando disponível.
+- Registrado no PRD do Mission Control como módulo recorrente aprovado por Lucas, com cadência quarta-feira 10h BRT e entrega por e-mail.
+- Produção, VPS/Docker, bancos, campanhas, Shopify/Tiny/Klaviyo/WhatsApp e runtime não foram alterados.
 
 ## 2026-05-10 — LK Influencer Audit corrigido: Meta canônico + criativos + produtos
 
