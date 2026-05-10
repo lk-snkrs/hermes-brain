@@ -2,20 +2,32 @@
 
 ## Resumo
 - Meta global: R$ 38.954,76 spend, 229 compras atribuídas no gerenciador, R$ 797.654,65 **valor atribuído Meta no gerenciador** (não venda/receita real LK), ROAS Meta 20.48, CPA Meta R$ 170,11.
-- Venda real e-commerce Pareto: 233 pedidos, R$ 722.636,36 receita total, R$ 65.436,52 investimento total, ROAS geral 11.04.
+- Venda real e-commerce calculada via GA4: 233 pedidos, R$ 722.636,36 receita total, 166,003 sessões, ticket médio R$ 3.101,44.
+- Investimento pago calculado: Meta R$ 38.954,76 + Google/Metricool R$ 26.481,76 = R$ 65.436,52; ROAS geral calculado 11.04.
 - Correção de senso crítico: o Meta Ads Manager atribuiu R$ 797.654,65, R$ 75.018,29 acima da receita total da LK; logo esse número **não é venda da Meta** nem pode entrar na divisão Meta vs Google de vendas reais.
-- Receita real por canal deve usar Pareto/GA4/canais, não dashboards isolados de plataforma:
-  - Paid Social: R$ 211.329,00; conversão 0.07%.
-  - Organic Social: R$ 157.968,00; conversão 0.38%.
-  - Direct: R$ 100.760,00; conversão 0.27%.
-  - Cross-network: R$ 58.924,00; conversão 0.16%.
-  - Paid Search: R$ 51.137,00; conversão 0.46%.
-- Principais origens/mídias Pareto/GA4:
-  - facebook / paid: 43,799 sessões; R$ 181.859,02; conversão 0.11%.
-  - l.instagram.com / referral: 6,198 sessões; R$ 141.618,15; conversão 0.63%.
-  - google / cpc: 26,002 sessões; R$ 130.069,50; conversão 0.19%.
-  - direct / none: 12,801 sessões; R$ 100.759,70; conversão 0.27%.
-  - google / organic: 17,090 sessões; R$ 33.442,81; conversão 0.10%.
+- Receita real por canal calculada via GA4 `sessionDefaultChannelGroup`:
+  - Paid Social: R$ 211.329,00; 87,757 sessões; 60 pedidos; conversão 0.81%.
+  - Organic Social: R$ 157.968,12; 11,363 sessões; 43 pedidos; conversão 2.77%.
+  - Direct: R$ 100.759,70; 12,801 sessões; 35 pedidos; conversão 3.40%.
+  - Cross-network: R$ 58.923,58; 16,372 sessões; 26 pedidos; conversão 1.42%.
+  - Paid Search: R$ 51.136,61; 3,507 sessões; 16 pedidos; conversão 5.70%.
+  - Organic Search: R$ 38.796,49; 16,423 sessões; 18 pedidos; conversão 1.63%.
+  - Unassigned: R$ 35.697,43; 5,506 sessões; 12 pedidos; conversão 1.78%.
+  - Referral: R$ 24.009,85; 773 sessões; 7 pedidos; conversão 5.05%.
+  - Paid Shopping: R$ 20.009,31; 6,722 sessões; 7 pedidos; conversão 1.55%.
+  - Organic Shopping: R$ 14.321,27; 1,402 sessões; 5 pedidos; conversão 4.14%.
+- Principais origens/mídias calculadas via GA4 `sessionSourceMedium`:
+  - facebook / paid: 43,799 sessões; R$ 181.859,02; 48 pedidos; conversão 1.25%.
+  - l.instagram.com / referral: 6,198 sessões; R$ 141.618,15; 39 pedidos; conversão 4.61%.
+  - google / cpc: 26,002 sessões; R$ 130.069,50; 49 pedidos; conversão 2.01%.
+  - (direct) / (none): 12,801 sessões; R$ 100.759,70; 35 pedidos; conversão 3.40%.
+  - google / organic: 17,090 sessões; R$ 33.442,81; 17 pedidos; conversão 1.66%.
+  - (not set): 4,870 sessões; R$ 23.307,46; 8 pedidos; conversão 1.33%.
+  - instagram.com / paid: 1,800 sessões; R$ 16.779,98; 6 pedidos; conversão 2.44%.
+  - instagram.com / referral: 208 sessões; R$ 13.549,98; 3 pedidos; conversão 5.77%.
+  - facebook / cpc: 14,763 sessões; R$ 12.690,00; 6 pedidos; conversão 0.66%.
+  - bitespeed / whatsapp: 335 sessões; R$ 12.389,97; 4 pedidos; conversão 5.97%.
+- Google Ads calculado via Metricool: spend R$ 26.481,76; conversões atribuídas 799.58; valor atribuído R$ 209.636,37; ROAS plataforma 7.92.
 - Comparação Pareto global — campo Meta/Ads Manager:
   - spend: esperado `38954.76`, atual `38954.76`, delta `0.0`, match `100.0%`.
   - purchases: esperado `229.0`, atual `229.0`, delta `0.0`, match `100.0%`.

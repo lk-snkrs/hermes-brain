@@ -74,6 +74,45 @@ Para bater receita total mensal do PDF Pareto, não assumir que Shopify Admin `t
 
 Conclusão: pedidos bateram; receita provavelmente usa Shopify Analytics, GA4 ou métrica líquida ajustada.
 
+## Como calcular sem usar o PDF como fonte
+
+A rotina não deve copiar os números do PDF. O PDF serve apenas como gabarito de validação/tolerância.
+
+Cálculo Pareto-compatible aprendido:
+
+1. **Resumo executivo/e-commerce**
+   - Fonte: GA4 Data API, property LK `348553567`.
+   - Métricas: `totalRevenue`, `transactions`, `sessions`, `averagePurchaseRevenue`.
+   - Abril/2026 reproduz Pareto: `R$ 722.636,36`, `233 pedidos`, `166.003 sessões`, ticket `R$ 3.101,44`.
+
+2. **Receita real por canal**
+   - Fonte: GA4 Data API.
+   - Dimensão: `sessionDefaultChannelGroup`.
+   - Métricas: `totalRevenue`, `sessions`, `transactions`, `sessionConversionRate`.
+   - Exemplos abril/2026 calculados: `Paid Social R$ 211.329,00`, `Paid Search R$ 51.136,61`, `Cross-network R$ 58.923,58`.
+
+3. **Receita real por origem/mídia**
+   - Fonte: GA4 Data API.
+   - Dimensão: `sessionSourceMedium`.
+   - Métricas: `totalRevenue`, `sessions`, `transactions`, `sessionConversionRate`.
+   - Exemplos abril/2026 calculados: `facebook / paid R$ 181.859,02`, `google / cpc R$ 130.069,50`, `l.instagram.com / referral R$ 141.618,15`.
+
+4. **Meta Ads dashboard**
+   - Fonte: Meta Marketing API direto, conta `act_1242062509867163`.
+   - Nível: `ad`.
+   - Métrica: compra/valor canônico, preferindo `offsite_conversion.fb_pixel_purchase`.
+   - Abril/2026 reproduz Pareto: spend `R$ 38.954,76`, compras atribuídas `229`, valor atribuído `R$ 797.654,65`, ROAS plataforma `20,48`.
+
+5. **Google Ads dashboard**
+   - Fonte: Metricool Google Ads API, porque Google Ads API direto pode estar bloqueado por developer-token.
+   - Endpoint: `/api/v2/analytics/campaigns/googleads`.
+   - Métricas: `spent`, `conversions`, `allConversionsValue`, `purchaseROAS`.
+   - Abril/2026 calcula spend `R$ 26.481,76`, valor atribuído `R$ 209.636,37`, ROAS plataforma `7,92`; diferença vs PDF `R$ 207.240,45` é ~1,16%, aceitável como diferença de atualização/export/API se o spend bate.
+
+6. **ROAS geral**
+   - Fórmula: `GA4 totalRevenue / (Meta spend + Google spend)`.
+   - Abril/2026: `R$ 722.636,36 / (R$ 38.954,76 + R$ 26.481,76) = 11,04`.
+
 ## Script operacional
 
 Use:

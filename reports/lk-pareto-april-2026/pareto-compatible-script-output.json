@@ -4,7 +4,7 @@
     "start": "2026-04-01",
     "end": "2026-04-30"
   },
-  "generated_at": "2026-05-10T15:09:43.954678+00:00",
+  "generated_at": "2026-05-10T15:35:17.963965+00:00",
   "global": {
     "label": "Meta global",
     "ads": 180,
@@ -1349,76 +1349,356 @@
       ]
     }
   ],
-  "pareto_ecommerce": {
-    "orders": 233,
-    "revenue": 722636.36,
-    "investment": 65436.52,
-    "roas": 11.04
+  "pareto_ecommerce": {},
+  "pareto_platform_dashboards": {},
+  "pareto_ga4_channels": {},
+  "google_ads_platform": {
+    "source": "Metricool Google Ads API",
+    "campaigns": 8,
+    "spend": 26481.76,
+    "conversions": 799.58,
+    "attributed_value": 209636.37,
+    "roas": 7.92,
+    "cpa": 33.12,
+    "clicks": 30998,
+    "impressions": 1794381,
+    "top_campaigns": [
+      {
+        "name": "[PD] Brasil | Search - Marca",
+        "spend": 7652.83,
+        "conversions": 24.25,
+        "attributed_value": 64229.26,
+        "roas": 8.39
+      },
+      {
+        "name": "[PD][FUNDO] Pmax | Search DSA",
+        "spend": 3950.02,
+        "conversions": 16.65,
+        "attributed_value": 45912.88,
+        "roas": 11.62
+      },
+      {
+        "name": "Pareto [Pmax - Marcas Luxo Moda]",
+        "spend": 4560.45,
+        "conversions": 12.49,
+        "attributed_value": 37030.03,
+        "roas": 8.12
+      },
+      {
+        "name": "Pareto.Shopping",
+        "spend": 3831.37,
+        "conversions": 8.1,
+        "attributed_value": 22928.53,
+        "roas": 5.98
+      },
+      {
+        "name": "[PD][FUNDO] | Performance Max | Todos os Tênis",
+        "spend": 1865.82,
+        "conversions": 6.33,
+        "attributed_value": 20589.96,
+        "roas": 11.04
+      },
+      {
+        "name": "[PD] [FUNDO] PMAX Streetwear",
+        "spend": 1822.23,
+        "conversions": 11.0,
+        "attributed_value": 18084.1,
+        "roas": 9.92
+      },
+      {
+        "name": "Pareto.pmax.loja-fisica",
+        "spend": 1429.28,
+        "conversions": 720.0,
+        "attributed_value": 720.0,
+        "roas": 0.5
+      },
+      {
+        "name": "[PD] [MEIO] | Demand Gen | Tráfego",
+        "spend": 1369.76,
+        "conversions": 0.75,
+        "attributed_value": 141.61,
+        "roas": 0.1
+      }
+    ]
   },
-  "pareto_platform_dashboards": {
-    "meta_ads_manager": {
-      "spend": 38954.76,
-      "purchases": 229.0,
-      "attributed_value": 797654.65,
-      "roas": 20.48,
-      "cpa": 170.11
+  "ga4_calculated": {
+    "summary": {
+      "revenue": 722636.36,
+      "orders": 233,
+      "sessions": 166003,
+      "average_order_value": 3101.44
     },
-    "google_ads": {
-      "spend": 26481.76,
-      "purchases": 795.58,
-      "attributed_value": 207240.45,
-      "roas": 7.83,
-      "cpa": 33.29
-    }
-  },
-  "pareto_ga4_channels": {
-    "Paid Social": {
-      "revenue": 211329.0,
-      "conversion_rate": 0.07
-    },
-    "Organic Social": {
-      "revenue": 157968.0,
-      "conversion_rate": 0.38
-    },
-    "Direct": {
-      "revenue": 100760.0,
-      "conversion_rate": 0.27
-    },
-    "Cross-network": {
-      "revenue": 58924.0,
-      "conversion_rate": 0.16
-    },
-    "Paid Search": {
-      "revenue": 51137.0,
-      "conversion_rate": 0.46
-    }
-  },
-  "pareto_ga4_source_medium": {
-    "facebook / paid": {
-      "sessions": 43799,
-      "revenue": 181859.02,
-      "conversion_rate": 0.11
-    },
-    "l.instagram.com / referral": {
-      "sessions": 6198,
-      "revenue": 141618.15,
-      "conversion_rate": 0.63
-    },
-    "google / cpc": {
-      "sessions": 26002,
-      "revenue": 130069.5,
-      "conversion_rate": 0.19
-    },
-    "direct / none": {
-      "sessions": 12801,
-      "revenue": 100759.7,
-      "conversion_rate": 0.27
-    },
-    "google / organic": {
-      "sessions": 17090,
-      "revenue": 33442.81,
-      "conversion_rate": 0.1
-    }
+    "channels": [
+      {
+        "label": "Paid Social",
+        "revenue": 211329.0,
+        "sessions": 87757,
+        "transactions": 60,
+        "conversion_rate_pct": 0.8136
+      },
+      {
+        "label": "Organic Social",
+        "revenue": 157968.12,
+        "sessions": 11363,
+        "transactions": 43,
+        "conversion_rate_pct": 2.7722
+      },
+      {
+        "label": "Direct",
+        "revenue": 100759.7,
+        "sessions": 12801,
+        "transactions": 35,
+        "conversion_rate_pct": 3.3982
+      },
+      {
+        "label": "Cross-network",
+        "revenue": 58923.58,
+        "sessions": 16372,
+        "transactions": 26,
+        "conversion_rate_pct": 1.4171
+      },
+      {
+        "label": "Paid Search",
+        "revenue": 51136.61,
+        "sessions": 3507,
+        "transactions": 16,
+        "conversion_rate_pct": 5.7029
+      },
+      {
+        "label": "Organic Search",
+        "revenue": 38796.49,
+        "sessions": 16423,
+        "transactions": 18,
+        "conversion_rate_pct": 1.6258
+      },
+      {
+        "label": "Unassigned",
+        "revenue": 35697.43,
+        "sessions": 5506,
+        "transactions": 12,
+        "conversion_rate_pct": 1.7799
+      },
+      {
+        "label": "Referral",
+        "revenue": 24009.85,
+        "sessions": 773,
+        "transactions": 7,
+        "conversion_rate_pct": 5.0453
+      },
+      {
+        "label": "Paid Shopping",
+        "revenue": 20009.31,
+        "sessions": 6722,
+        "transactions": 7,
+        "conversion_rate_pct": 1.5472
+      },
+      {
+        "label": "Organic Shopping",
+        "revenue": 14321.27,
+        "sessions": 1402,
+        "transactions": 5,
+        "conversion_rate_pct": 4.1369
+      },
+      {
+        "label": "Email",
+        "revenue": 7435.0,
+        "sessions": 410,
+        "transactions": 3,
+        "conversion_rate_pct": 10.9756
+      },
+      {
+        "label": "Paid Other",
+        "revenue": 2250.0,
+        "sessions": 132,
+        "transactions": 1,
+        "conversion_rate_pct": 3.0303
+      },
+      {
+        "label": "Organic Video",
+        "revenue": 0.0,
+        "sessions": 3,
+        "transactions": 0,
+        "conversion_rate_pct": 0.0
+      }
+    ],
+    "source_medium": [
+      {
+        "label": "facebook / paid",
+        "revenue": 181859.02,
+        "sessions": 43799,
+        "transactions": 48,
+        "conversion_rate_pct": 1.2535
+      },
+      {
+        "label": "l.instagram.com / referral",
+        "revenue": 141618.15,
+        "sessions": 6198,
+        "transactions": 39,
+        "conversion_rate_pct": 4.6144
+      },
+      {
+        "label": "google / cpc",
+        "revenue": 130069.5,
+        "sessions": 26002,
+        "transactions": 49,
+        "conversion_rate_pct": 2.0114
+      },
+      {
+        "label": "(direct) / (none)",
+        "revenue": 100759.7,
+        "sessions": 12801,
+        "transactions": 35,
+        "conversion_rate_pct": 3.3982
+      },
+      {
+        "label": "google / organic",
+        "revenue": 33442.81,
+        "sessions": 17090,
+        "transactions": 17,
+        "conversion_rate_pct": 1.6618
+      },
+      {
+        "label": "(not set)",
+        "revenue": 23307.46,
+        "sessions": 4870,
+        "transactions": 8,
+        "conversion_rate_pct": 1.3347
+      },
+      {
+        "label": "instagram.com / paid",
+        "revenue": 16779.98,
+        "sessions": 1800,
+        "transactions": 6,
+        "conversion_rate_pct": 2.4444
+      },
+      {
+        "label": "instagram.com / referral",
+        "revenue": 13549.98,
+        "sessions": 208,
+        "transactions": 3,
+        "conversion_rate_pct": 5.7692
+      },
+      {
+        "label": "facebook / cpc",
+        "revenue": 12690.0,
+        "sessions": 14763,
+        "transactions": 6,
+        "conversion_rate_pct": 0.6638
+      },
+      {
+        "label": "bitespeed / whatsapp",
+        "revenue": 12389.97,
+        "sessions": 335,
+        "transactions": 4,
+        "conversion_rate_pct": 5.9701
+      },
+      {
+        "label": "l.wl.co / referral",
+        "revenue": 12129.87,
+        "sessions": 48,
+        "transactions": 3,
+        "conversion_rate_pct": 12.5
+      },
+      {
+        "label": "IGShopping / Social",
+        "revenue": 9999.97,
+        "sessions": 185,
+        "transactions": 2,
+        "conversion_rate_pct": 8.1081
+      },
+      {
+        "label": "accounts.google.com / referral",
+        "revenue": 6030.0,
+        "sessions": 43,
+        "transactions": 2,
+        "conversion_rate_pct": 16.2791
+      },
+      {
+        "label": "pix-on-site.appmax.com.br / referral",
+        "revenue": 5849.98,
+        "sessions": 12,
+        "transactions": 2,
+        "conversion_rate_pct": 50.0
+      },
+      {
+        "label": "bing / organic",
+        "revenue": 5075.0,
+        "sessions": 279,
+        "transactions": 2,
+        "conversion_rate_pct": 2.509
+      },
+      {
+        "label": "Klaviyo / email",
+        "revenue": 3800.0,
+        "sessions": 235,
+        "transactions": 1,
+        "conversion_rate_pct": 6.8085
+      },
+      {
+        "label": "shop.app / referral",
+        "revenue": 2799.99,
+        "sessions": 41,
+        "transactions": 1,
+        "conversion_rate_pct": 34.1463
+      },
+      {
+        "label": "ig / social",
+        "revenue": 2799.99,
+        "sessions": 249,
+        "transactions": 1,
+        "conversion_rate_pct": 4.0161
+      },
+      {
+        "label": "rivo / email",
+        "revenue": 2375.0,
+        "sessions": 37,
+        "transactions": 1,
+        "conversion_rate_pct": 32.4324
+      },
+      {
+        "label": "(not set) / paid",
+        "revenue": 2250.0,
+        "sessions": 126,
+        "transactions": 1,
+        "conversion_rate_pct": 3.1746
+      },
+      {
+        "label": "br.search.yahoo.com / referral",
+        "revenue": 1799.99,
+        "sessions": 67,
+        "transactions": 1,
+        "conversion_rate_pct": 4.4776
+      },
+      {
+        "label": "klaviyo / email",
+        "revenue": 1260.0,
+        "sessions": 43,
+        "transactions": 1,
+        "conversion_rate_pct": 37.2093
+      },
+      {
+        "label": "(data not available)",
+        "revenue": 0.0,
+        "sessions": 479,
+        "transactions": 0,
+        "conversion_rate_pct": 1.6701
+      },
+      {
+        "label": "(direct) / paid",
+        "revenue": 0.0,
+        "sessions": 1,
+        "transactions": 0,
+        "conversion_rate_pct": 0.0
+      },
+      {
+        "label": "127.0.0.1:5500 / referral",
+        "revenue": 0.0,
+        "sessions": 1,
+        "transactions": 0,
+        "conversion_rate_pct": 0.0
+      }
+    ],
+    "property_id_used": "348553567"
   },
   "expected_global": {
     "spend": {
