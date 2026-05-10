@@ -1,3 +1,11 @@
+## 2026-05-10 — LK Weekly Influencer Email top creatives
+
+- Atualizado `scripts/lk_weekly_influencer_sales_report.py` para buscar imagens públicas e seguras dos top anúncios Meta da semana e renderizar seção visual vertical/mobile no topo do e-mail HTML.
+- O script bloqueia persistência/renderização de URLs de criativo com `access_token`, `appsecret_proof` ou `client_secret` em query string.
+- Preview gerado em `reports/lk-weekly-influencer-sales-2026-05-09/preview-with-top-creatives.html` e screenshot em `reports/lk-weekly-influencer-sales-2026-05-09/top-creatives-email-preview.png`.
+- Teste dry-run gerou 12 criativos com imagem e 0 padrões de token no HTML/JSON; browser preview validou cards verticais e contraste do rodapé.
+- Produção, VPS/Docker, bancos, secrets, campanhas, Shopify/Tiny/Klaviyo/WhatsApp, cron e runtime não foram alterados.
+
 ## 2026-05-10 — LK Weekly Influencer Attribution Gap Audit
 
 - Adicionado `reports/lk-weekly-influencer-sales-2026-05-09/attribution-gap-audit.md` após rechecagem dos influencers ainda zerados no Shopify depois da correção de `ad_id`.

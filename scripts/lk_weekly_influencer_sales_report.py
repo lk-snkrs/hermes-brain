@@ -293,7 +293,50 @@ def summarize_shopify(orders: List[Dict[str, Any]], aliases: Dict[str, List[str]
     return {'by_influencer':ret, 'unattributed':unattributed, 'ambiguous': ambiguous, 'total_orders':len(orders), 'total_revenue':sum(parse_num(o.get('total_price')) for o in orders if not o.get('cancelled_at'))}
 
 
-def fetch_meta(secrets: Dict[str, str], start: dt.datetime, end: dt.datetime, aliases: Dict[str, List[str]]) -> Dict[str, Any]:
+def safe_image_url(raw: Any) -> str | None:
+    url = str(raw or '').strip()
+    if not url.startswith('http'):
+        return None
+    try:
+        parsed = urlparse(url)
+        params = parse_qs(parsed.query)
+    except Exception:
+        return None
+    blocked = {'access_token', 'appsecret_proof', 'client_secret'}
+    if any(k.lower() in blocked for k in params):
+        return None
+    return url
+
+
+def fetch_meta_creatives(token: str, top_ads: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
+    """Fetch safe public creative thumbnails for top Meta ads.
+
+    Never persist URLs carrying access_token/appsecret_proof/client_secret.
+    Missing images are acceptable; the report must keep running.
+    """
+    out: Dict[str, Dict[str, Any]] = {}
+    for ad in top_ads[:16]:
+        ad_id = str(ad.get('ad_id') or '')
+        if not ad_id or ad_id in out:
+            continue
+        try:
+            r = requests.get(
+                f'https://graph.facebook.com/v20.0/{ad_id}',
+                params={'access_token': token, 'fields': 'creative{thumbnail_url,image_url}'},
+                timeout=45,
+            )
+            if r.status_code != 200:
+                continue
+            creative = (r.json().get('creative') or {})
+            image_url = safe_image_url(creative.get('image_url')) or safe_image_url(creative.get('thumbnail_url'))
+            if image_url:
+                out[ad_id] = {'image_url': image_url}
+        except Exception:
+            continue
+    return out
+
+
+def fetch_meta(secrets: Dict[str, str], start: dt.datetime, end: dt.datetime, aliases: Dict[str, List[str]], include_creatives: bool = False) -> Dict[str, Any]:
     token = secrets.get('META_ACCESS_TOKEN')
     account = secrets.get('META_ADS_ACCOUNT_ID') or META_ACCOUNT_FALLBACK
     if not account.startswith('act_'):
@@ -318,8 +361,9 @@ def fetch_meta(secrets: Dict[str, str], start: dt.datetime, end: dt.datetime, al
         if not nxt:
             break
         url = nxt; params = None
-    by = defaultdict(lambda: {'spend':0.0,'clicks':0,'impressions':0,'purchases':0.0,'value':0.0,'ads':0})
+    by = defaultdict(lambda: {'spend':0.0,'clicks':0,'impressions':0,'purchases':0.0,'value':0.0,'ads':0,'top_ads':[]})
     ad_id_to_influencer: Dict[str, str] = {}
+    creative_candidates: List[Dict[str, Any]] = []
     for row in rows:
         text = ' | '.join([row.get('campaign_name',''), row.get('adset_name',''), row.get('ad_name','')])
         inf = match_influencer(text, aliases)
@@ -330,14 +374,35 @@ def fetch_meta(secrets: Dict[str, str], start: dt.datetime, end: dt.datetime, al
             ad_id_to_influencer[str(ad_id)] = inf
         purchases, _ = canonical_metric(row.get('actions') or [])
         value, _ = canonical_metric(row.get('action_values') or [])
+        ad_summary = {
+            'influencer': inf,
+            'ad_id': str(ad_id or ''),
+            'campaign_name': row.get('campaign_name') or '',
+            'adset_name': row.get('adset_name') or '',
+            'ad_name': row.get('ad_name') or '',
+            'spend': parse_num(row.get('spend')),
+            'clicks': int(parse_num(row.get('clicks'))),
+            'impressions': int(parse_num(row.get('impressions'))),
+            'purchases': purchases,
+            'value': value,
+        }
         d = by[inf]
-        d['spend'] += parse_num(row.get('spend'))
-        d['clicks'] += int(parse_num(row.get('clicks')))
-        d['impressions'] += int(parse_num(row.get('impressions')))
+        d['spend'] += ad_summary['spend']
+        d['clicks'] += ad_summary['clicks']
+        d['impressions'] += ad_summary['impressions']
         d['purchases'] += purchases
         d['value'] += value
         d['ads'] += 1
-    return {'by_influencer':dict(by), 'rows':len(rows), 'account':account, 'ad_id_to_influencer': ad_id_to_influencer}
+        d['top_ads'].append(ad_summary)
+        if ad_summary['ad_id']:
+            creative_candidates.append(ad_summary)
+    for d in by.values():
+        d['top_ads'] = sorted(d['top_ads'], key=lambda a: (a['purchases'], a['value'], a['spend']), reverse=True)[:3]
+    top_ads = sorted(creative_candidates, key=lambda a: (a['purchases'], a['value'], a['spend']), reverse=True)[:12]
+    creative_map = fetch_meta_creatives(token, top_ads) if include_creatives else {}
+    for ad in top_ads:
+        ad.update(creative_map.get(ad.get('ad_id') or '', {}))
+    return {'by_influencer':dict(by), 'rows':len(rows), 'account':account, 'ad_id_to_influencer': ad_id_to_influencer, 'top_creatives': top_ads}
 
 
 def merge_report(meta_cur, meta_prev, shop_cur, shop_prev, windows) -> Dict[str, Any]:
@@ -390,13 +455,28 @@ def render_md(rep: Dict[str, Any]) -> str:
 def render_html(rep: Dict[str, Any]) -> str:
     cur = rep['windows']['current']; prev = rep['windows']['previous']
     css = """
-    body{font-family:Inter,Arial,sans-serif;background:#f7f4ef;color:#161616;margin:0;padding:24px}.wrap{max-width:900px;margin:auto;background:#fff;border-radius:18px;padding:26px;border:1px solid #e7ded2}.muted{color:#71675d}.card{border:1px solid #eee0d3;border-radius:14px;padding:16px;margin:16px 0}.name{font-size:22px;font-weight:800}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.kv{background:#faf7f2;border-radius:10px;padding:10px}.k{font-size:11px;color:#7d7166;text-transform:uppercase;letter-spacing:.06em}.v{font-size:18px;font-weight:800}.up{color:#0f7a3b}.down{color:#b42318}.prod{font-size:14px;line-height:1.45}@media(max-width:650px){.grid{grid-template-columns:1fr}body{padding:10px}.wrap{padding:16px}}
+    body{font-family:Inter,Arial,sans-serif;background:#f7f4ef;color:#161616;margin:0;padding:24px}.wrap{max-width:900px;margin:auto;background:#fff;border-radius:18px;padding:26px;border:1px solid #e7ded2}.muted{color:#71675d}.card{border:1px solid #eee0d3;border-radius:14px;padding:16px;margin:16px 0}.name{font-size:22px;font-weight:800}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.kv{background:#faf7f2;border-radius:10px;padding:10px}.k{font-size:11px;color:#7d7166;text-transform:uppercase;letter-spacing:.06em}.v{font-size:18px;font-weight:800}.up{color:#0f7a3b}.down{color:#b42318}.prod{font-size:14px;line-height:1.45}.creative-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}.creative{background:#111;color:#fff;border-radius:16px;overflow:hidden}.creative img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;background:#222}.creative .caption{padding:10px;font-size:13px;line-height:1.35}.creative .metric{color:#f2d6a2;font-weight:800}.creative .muted{color:#c8c1b8}@media(max-width:650px){.grid{grid-template-columns:1fr}.creative-grid{grid-template-columns:1fr 1fr}body{padding:10px}.wrap{padding:16px}}
     """
     parts = [f'<!doctype html><meta charset="utf-8"><style>{css}</style><div class="wrap">']
     parts.append('<h1>LK — Relatório semanal de vendas por influencer</h1>')
     parts.append(f'<p class="muted"><b>Atual:</b> {cur[0].date()} a {cur[1].date()} BRT<br><b>Comparativo:</b> {prev[0].date()} a {prev[1].date()} BRT</p>')
     parts.append('<p class="muted">Meta Ads direto com compra canônica por anúncio. Shopify/produtos entram quando há ponte textual ou ad_id Meta exato em utm_content/ad_id. Campanha/adset genérico não é usado como ponte.</p>')
+    creatives = [c for c in rep.get('meta', {}).get('current', {}).get('top_creatives', []) if c.get('image_url')]
+    if creatives:
+        parts.append('<h2>Top criativos Meta da semana</h2>')
+        parts.append('<p class="muted">Preview vertical/mobile dos anúncios com mais compras canônicas. Métrica Meta é sinal de plataforma; produtos só aparecem abaixo quando houver ponte Shopify segura.</p>')
+        parts.append('<div class="creative-grid">')
+        for c in creatives[:6]:
+            parts.append('<div class="creative">')
+            parts.append(f'<img src="{html.escape(c["image_url"], quote=True)}" alt="Criativo Meta {html.escape(c.get("influencer", ""), quote=True)}">')
+            parts.append('<div class="caption">')
+            parts.append(f'<div><b>{html.escape(c.get("influencer", ""))}</b></div>')
+            parts.append(f'<div class="metric">{parse_num(c.get("purchases")):.0f} compras / {money(parse_num(c.get("spend")))} spend</div>')
+            parts.append(f'<div class="muted">{html.escape((c.get("ad_name") or c.get("adset_name") or "")[:90])}</div>')
+            parts.append('</div></div>')
+        parts.append('</div>')
     for r in rep['rows'][:20]:
+
         cls = 'up' if r['shopify_revenue'] >= r['shopify_revenue_prev'] else 'down'
         parts.append('<div class="card">')
         parts.append(f'<div class="name">{html.escape(r["influencer"])}</div>')
@@ -469,7 +549,7 @@ def main():
     aliases = load_aliases()
     windows = date_windows()
     outdir = Path(args.out_dir); outdir.mkdir(parents=True, exist_ok=True)
-    meta_cur = fetch_meta(secrets, *windows['current'], aliases)
+    meta_cur = fetch_meta(secrets, *windows['current'], aliases, include_creatives=True)
     meta_prev = fetch_meta(secrets, *windows['previous'], aliases)
     shop_orders_cur = fetch_shopify_orders(secrets, *windows['current'])
     shop_orders_prev = fetch_shopify_orders(secrets, *windows['previous'])
