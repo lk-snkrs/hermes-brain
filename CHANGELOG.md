@@ -2,6 +2,14 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-10 — LK Meta campaign-title ROAS read-only
+
+- Gerado relatório read-only `reports/lk-meta-campaign-title-roas-readonly-2026-05-10.md`/`.json` calculando ROAS atribuído do Meta por `campaign_name`/título da campanha.
+- O relatório separa `Meta attributed ROAS` por título de campanha de evidência operacional Shopify por `utm_campaign`; matching frouxo foi removido porque confundia campanhas genéricas com UTMs de campanha/influencer.
+- Resultado reforça a correção anterior: campanhas broad/Advantage+/RMKT podem mostrar 60–90x no Meta, mas o match estrito Shopify por UTM aparece muito menor ou zerado quando o UTM/naming não bate.
+- Próxima ação: criar dicionário `campaign_name Meta → utm_campaign Shopify/GA4 → criativo/influencer/produto esperado` antes de usar ROAS por título como decisão operacional.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-10 — LK ROAS influencer correction + Tiny alias approval preview
 
 - Gerado relatório read-only `reports/lk-roas-influencer-correction-readonly-2026-05-10.md`/`.json` para investigar os ROAS Meta 50–70x de Lala Noleto, Helena Lunardelli e Silvia Heinz.
