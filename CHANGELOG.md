@@ -1,3 +1,12 @@
+## 2026-05-10 — LK Pareto April reconciliation + Maria split
+
+- Versionada auditoria `reports/lk-pareto-april-2026/reconciliation-audit.md` comparando o PDF do Maicon/Pareto de abril/2026 com Meta Ads direto e Shopify Admin.
+- Confirmado que Meta global de abril bate exatamente com Pareto: R$ 38.954,76 spend, 229 compras, R$ 797.654,65 valor Meta, ROAS 20,48 e CPA R$ 170,11.
+- Registrada regra Lucas: aderência 99%+ é operacionalmente correta; diferenças pequenas de poucos reais não devem travar a análise quando a metodologia está alinhada.
+- Criada rotina `areas/lk/sub-areas/trafego-pago/rotinas/pareto-monthly-reconciliation.md` com dois modos: `Pareto-compatible` e `Lucas-operacional`.
+- Corrigido `scripts/lk_weekly_influencer_sales_report.py` para separar `Maria`, `Maria Fernanda` e `Mariah` no matching, seguindo a lógica Pareto-compatible.
+- Produção, VPS/Docker, bancos, secrets, campanhas, Shopify/Tiny/Klaviyo/WhatsApp e envios externos não foram alterados.
+
 ## 2026-05-10 — LK Weekly Influencer Email DesignMD + product ranking correction
 
 - Corrigido o e-mail semanal de influencers após feedback do Lucas: o template anterior ignorava o DesignMD LK e usava cards de criativos Meta borrados/errados.

@@ -55,6 +55,8 @@ O script grava artefatos locais em:
   - `purchase`;
   - `omni_purchase`;
   - `offsite_conversion.fb_pixel_purchase`.
+- Quando houver comparação mensal com Maicon/Pareto, usar modo `Pareto-compatible`: seguir naming/agrupamento Pareto, aceitar 99%+ como correto e não consolidar nomes que a Pareto separou.
+- Regra conhecida do modo Pareto-compatible: separar `Maria`, `Maria Fernanda` e `Mariah`; a regra ampla `maria` não pode capturar `maria fernanda` nem `mariah`.
 
 ### Shopify
 
