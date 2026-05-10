@@ -84,7 +84,7 @@ O e-mail deve conter:
 4. Shopify com ponte: quantidade vendida, receita e tipo de ponte (`texto` vs `ad_id Meta`).
 5. Meta canônico como sinal secundário: compras atribuídas, spend e valor Meta por influencer.
 6. Seção separada para `meta_signal_only`: influencers com compra/valor Meta sem produto Shopify atribuível.
-7. Corpo do e-mail como `Content-Type: text/html`, não apenas multipart/texto.
+7. Corpo do e-mail como `Content-Type: text/html`, não apenas multipart/texto. Para Gmail/mobile, o HTML enviado precisa usar estilos inline compatíveis com e-mail; não depender apenas de `<style>`, `@import`, CSS variables ou grid, porque se renderizar como texto/plain ou sem DesignMD é falha.
 8. Não incluir thumbnails/criativos Meta borrados ou de baixa qualidade no e-mail semanal.
 9. Criativos reais podem aparecer em preview HTML local somente com flag explícita `--include-creative-assets`; o cron semanal permanece sem criativos por padrão.
 10. Quando criativos forem exibidos, a estrutura correta é `influencer → criativo → vendas → produtos`: cada card deve mostrar imagem do criativo, compras/spend/valor Meta, pedidos/receita Shopify por `ad_id` exato e produtos vendidos ligados ao criativo quando houver ponte segura.
@@ -117,7 +117,7 @@ Guardrail: `--include-creative-assets` continua bloqueado junto com `--send` por
   --creative-assets-json /opt/data/lk_weekly_creative_audits/lk-weekly-meta-creative-assets-YYYY-MM-DD.json
 ```
 
-O `.eml` deve ser `multipart/related`, conter `src="cid:..."`, anexar as imagens como `Content-ID`, ter zero `file://` no HTML e zero query params sensíveis. A prévia local cruza o `ad_id` do criativo com Shopify: produtos entram no card do criativo somente quando existe `ad_id` Meta exato no pedido; pontes por texto/cupom continuam no nível influencer para não inventar qual vídeo gerou a venda. Só promover um criativo para e-mail/relatório executivo depois de QA visual; duplicados ou frames fracos devem ser removidos/substituídos.
+O `.eml` deve ser `multipart/related` com `multipart/alternative`, conter `src="cid:..."`, anexar as imagens como `Content-ID`, ter HTML com estilos inline compatíveis com Gmail, ter zero `<style>`/CSS variables no corpo final enviado, zero `file://` no HTML e zero query params sensíveis. A prévia local cruza o `ad_id` do criativo com Shopify: produtos entram no card do criativo somente quando existe `ad_id` Meta exato no pedido; pontes por texto/cupom continuam no nível influencer para não inventar qual vídeo gerou a venda. Só promover um criativo para e-mail/relatório executivo depois de QA visual; duplicados ou frames fracos devem ser removidos antes de envio recorrente. O cron permanece sem criativos até aprovação final explícita.
 
 ## Guardrails
 
