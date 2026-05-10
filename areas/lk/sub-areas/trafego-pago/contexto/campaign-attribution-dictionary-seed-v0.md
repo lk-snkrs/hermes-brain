@@ -20,7 +20,7 @@ Fontes usadas:
 
 ### influencer_silvia_heinz_2025_12_2026_05
 
-- status: `mapped`
+- status: `mapped_operational_roas_provisional`
 - influencer_name: Silvia Heinz
 - influencer_handle: `[a confirmar]`
 - platform: Meta Ads + Shopify evidence
@@ -56,13 +56,14 @@ Fontes usadas:
   - Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege
 - product_theme: Jacquemus/Nike, Onitsuka, feminino premium/curadoria
 - confidence_level: média
-- operational_roas: `[não calcular ainda]`
+- operational_roas_provisional: **12,93x** = Shopify evidence revenue R$ 650.658,20 / Meta related spend R$ 50.311,49. Usar como métrica provisória, não como autorização de verba.
+- operational_roas: `[substituído por operational_roas_provisional]`
 - estoque consequence: checar SKUs Jacquemus/Nike e Onitsuka associados no Tiny `LK | CONTROLE ESTOQUE`; vários SKUs Jacquemus aparecem em ruptura ou exigem mapa SKU Tiny.
 - próxima ação: confirmar handle/cupom oficial e separar campanhas Jacquemus vs Onitsuka para evitar misturar produto e público.
 
 ### influencer_helena_lunardelli_2025_12_2026_05
 
-- status: `mapped`
+- status: `mapped_operational_roas_provisional`
 - influencer_name: Helena Lunardelli
 - influencer_handle: `[a confirmar]`
 - platform: Meta Ads + Shopify evidence + GA4/Shopify cupom
@@ -98,13 +99,14 @@ Fontes usadas:
   - Onitsuka Tiger Mexico 66 Paraty Natural Navy Bege
 - product_theme: Dia das Mães, feminino premium, Onitsuka/New Balance/Adidas
 - confidence_level: média
-- operational_roas: `[não calcular ainda]`
+- operational_roas_provisional: **6,34x** = Shopify evidence revenue R$ 154.482,04 / Meta related spend R$ 24.364,51. Usar como métrica provisória; separar Dia das Mães/ADV+ antes de escalar.
+- operational_roas: `[substituído por operational_roas_provisional]`
 - estoque consequence: checar Onitsuka Kill Bill e New Balance 9060 por tamanho; há sinais de ruptura em Kill Bill e baixa cobertura em NB/Onitsuka no relatório de estoque.
 - próxima ação: confirmar padrões oficiais de UTM/cupom e separar tráfego Helena de tráfego genérico ADV+.
 
 ### influencer_lala_noleto_2025_12_2026_05
 
-- status: `ambiguous`
+- status: `ambiguous_meta_signal_only`
 - influencer_name: Lala Noleto
 - influencer_handle: `[a confirmar]`
 - platform: Meta Ads; Shopify evidence ainda não encontrada
@@ -127,7 +129,8 @@ Fontes usadas:
 - Produtos associados: `[a confirmar]`
 - product_theme: `[a confirmar]`
 - confidence_level: baixa para venda operacional; média para exposição/spend Meta
-- operational_roas: `[não calcular]`
+- operational_roas_provisional: **0,00x / não conclusivo** = Shopify evidence revenue R$ 0,00 / Meta related spend R$ 25.750,26. Não usar como campanha perdedora sem descobrir cupom/UTM/landing/brief real.
+- operational_roas: `[não calcular como verdade operacional]`
 - estoque consequence: nenhuma decisão de estoque até encontrar cupom/UTM/landing/produto Shopify compatível.
 - próxima ação: descobrir cupom/UTM/landing/brief real de Lala ou marcar como campanha sem evidência Shopify direta no recorte.
 
