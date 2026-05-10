@@ -144,6 +144,20 @@ def match_influencer(text: str, aliases: Dict[str, List[str]]) -> str | None:
     return best
 
 
+def match_meta_influencer(row: Dict[str, Any], aliases: Dict[str, List[str]]) -> Tuple[str | None, str | None]:
+    """Match influencer using Maicon/Pareto rule: ad_name first, adset/campaign only fallback.
+
+    Maicon clarified that LK influencer names live in Meta `ad_name` and multiple
+    ad_ids must be summed. We still keep adset/campaign as discovery fallback so
+    older naming gaps do not disappear silently, but any ad_name hit wins.
+    """
+    for field in ('ad_name', 'adset_name', 'campaign_name'):
+        label = match_influencer(str(row.get(field) or ''), aliases)
+        if label:
+            return label, field
+    return None, None
+
+
 def date_windows(now: dt.datetime | None = None) -> Dict[str, Tuple[dt.datetime, dt.datetime]]:
     now = now or dt.datetime.now(TZ)
     today = now.date()
@@ -365,13 +379,14 @@ def fetch_meta(secrets: Dict[str, str], start: dt.datetime, end: dt.datetime, al
             break
         url = nxt; params = None
     by = defaultdict(lambda: {'spend':0.0,'clicks':0,'impressions':0,'purchases':0.0,'value':0.0,'ads':0,'top_ads':[]})
+    match_source_counts = defaultdict(int)
     ad_id_to_influencer: Dict[str, str] = {}
     creative_candidates: List[Dict[str, Any]] = []
     for row in rows:
-        text = ' | '.join([row.get('campaign_name',''), row.get('adset_name',''), row.get('ad_name','')])
-        inf = match_influencer(text, aliases)
+        inf, match_source = match_meta_influencer(row, aliases)
         if not inf:
             continue
+        match_source_counts[match_source or 'unknown'] += 1
         ad_id = row.get('ad_id')
         if ad_id:
             ad_id_to_influencer[str(ad_id)] = inf
@@ -405,7 +420,14 @@ def fetch_meta(secrets: Dict[str, str], start: dt.datetime, end: dt.datetime, al
     creative_map = fetch_meta_creatives(token, top_ads) if include_creatives else {}
     for ad in top_ads:
         ad.update(creative_map.get(ad.get('ad_id') or '', {}))
-    return {'by_influencer':dict(by), 'rows':len(rows), 'account':account, 'ad_id_to_influencer': ad_id_to_influencer, 'top_creatives': top_ads}
+    return {
+        'by_influencer':dict(by),
+        'rows':len(rows),
+        'account':account,
+        'ad_id_to_influencer': ad_id_to_influencer,
+        'top_creatives': top_ads,
+        'match_source_counts': dict(match_source_counts),
+    }
 
 
 def merge_report(meta_cur, meta_prev, shop_cur, shop_prev, windows) -> Dict[str, Any]:
