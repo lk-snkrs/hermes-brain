@@ -1,3 +1,11 @@
+## 2026-05-10 — LK creative asset harvesting
+
+- Corrigida a auditoria de criativos para realmente obter imagens úteis dos anúncios Meta, não apenas iframes de preview.
+- `scripts/lk_weekly_creative_audit.py` agora consulta creative/video/adimages, baixa assets locais, evita fallback 64×64 quando há alternativa, detecta frames pretos/sidebars com `ffmpeg` e renderiza contact sheet DesignMD LK com imagens locais.
+- Validação `2026-05-03..2026-05-09`: 12 ads auditados, 12 assets escolhidos, todos `1080×1920`; browser QA aprovou 12 cards com imagens reais carregadas, sem blocos pretos/quebrados e sem thumbnail 64×64 borrada.
+- Guardrails: local/read-only, sem envio externo, sem alteração de campanhas/cron/Shopify/Tiny/banco/VPS; JSON/HTML versionados não persistem URLs-fonte nem tokens/secrets.
+- Ressalva de curadoria: #02/#07 Lala são visualmente redundantes; #11 Lala é lifestyle menos produto-first, então remover/substituir antes de eventual envio executivo.
+
 ## 2026-05-10 — LK local creative audit guardrail
 
 - Adicionado `scripts/lk_weekly_creative_audit.py`, auditoria local/read-only para criativos Meta em veiculação, separada do e-mail semanal.

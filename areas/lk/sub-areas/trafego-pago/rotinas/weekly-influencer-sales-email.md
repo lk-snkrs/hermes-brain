@@ -95,7 +95,7 @@ Criativos continuam fora do e-mail semanal por padrão. Para curadoria interna, 
 /opt/hermes/.venv/bin/python scripts/lk_weekly_creative_audit.py
 ```
 
-O script gera JSON + HTML DesignMD LK em `/opt/data/lk_weekly_creative_audits/`, usando previews Meta via iframe sem persistir `thumbnail_url` 64×64 e bloqueando URLs com parâmetros de token/secret. A saída é `local_only`: só promover um criativo para e-mail/relatório executivo se o preview estiver nítido, sem overlay problemático e validado visualmente. Se o iframe aparecer preto/blank, manter fora do e-mail e pedir asset nítido para Pareto/Maicon ou usar mídia real Page/Instagram com permissão adequada.
+O script gera JSON + HTML DesignMD LK em `/opt/data/lk_weekly_creative_audits/`. A rotina agora tenta imagens reais antes de iframe: campos de `creative`, `video.thumbnails` e `asset_feed_spec.images[].hash` via `/{ad_account}/adimages`; baixa os assets localmente, escolhe a melhor imagem por resolução, evita fallback 64×64 quando houver alternativa, detecta frames pretos/sidebars com `ffmpeg` e renderiza imagem local no HTML. A saída é `local_only`: não envia e-mail, não muda campanhas e não persiste URLs-fonte com tokens/secrets no JSON/HTML versionado. Só promover um criativo para e-mail/relatório executivo depois de QA visual; duplicados ou frames fracos devem ser removidos/substituídos.
 
 ## Guardrails
 
