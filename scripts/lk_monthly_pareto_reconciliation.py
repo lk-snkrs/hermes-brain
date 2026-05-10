@@ -15,6 +15,7 @@ import argparse
 import base64
 import calendar
 import datetime as dt
+import html
 import importlib.util
 import json
 import re
@@ -109,8 +110,16 @@ def money(v: float) -> str:
     return ('R$ {:,.2f}'.format(float(v or 0))).replace(',', 'X').replace('.', ',').replace('X', '.')
 
 
+def int_br(v: Any) -> str:
+    return f'{int(v or 0):,}'.replace(',', '.')
+
+
 def pct(v: float) -> str:
     return f'{v:.2f}%'.replace('.', ',')
+
+
+def roas_br(v: Any) -> str:
+    return f'{float(v or 0):.2f}x'.replace('.', ',')
 
 
 def canonical_metric(items: Iterable[Dict[str, Any]]) -> Tuple[float, str | None]:
@@ -440,6 +449,113 @@ def render_md(rep: Dict[str, Any]) -> str:
     return '\n'.join(lines) + '\n'
 
 
+def render_html(rep: Dict[str, Any]) -> str:
+    def esc(x: Any) -> str:
+        return html.escape(str(x))
+    g = rep['global']
+    ga4 = rep.get('ga4_calculated') or {}
+    summary = ga4.get('summary') or {}
+    channels = ga4.get('channels') or []
+    source_medium = ga4.get('source_medium') or []
+    google = rep.get('google_ads_platform') or {}
+    paid_spend_total = float(g.get('spend', 0)) + float(google.get('spend', 0))
+    paid_roas_total = (float(summary.get('revenue', 0)) / paid_spend_total) if paid_spend_total else 0
+    direct = next((r for r in channels if r.get('label') == 'Direct'), {})
+    paid_social = next((r for r in channels if r.get('label') == 'Paid Social'), {})
+    paid_search = next((r for r in channels if r.get('label') == 'Paid Search'), {})
+    influencers = rep.get('pareto_rows') or []
+
+    def metric_card(label: str, value: str, sub: str = '') -> str:
+        return f'<div class="card"><div class="eyebrow">{esc(label)}</div><div class="metric">{esc(value)}</div><div class="sub">{esc(sub)}</div></div>'
+
+    def rows(items: list[dict[str, Any]], limit: int = 12) -> str:
+        out = []
+        for r in items[:limit]:
+            label = str(r.get('label', ''))
+            klass = ' class="direct-row"' if label in {'Direct', '(direct) / (none)'} else ''
+            out.append(
+                f'<tr{klass}>'
+                f'<td>{esc(label)}</td>'
+                f'<td>{money(float(r.get("revenue", 0)))}</td>'
+                f'<td>{int_br(r.get("sessions", 0))}</td>'
+                f'<td>{int_br(r.get("transactions", 0))}</td>'
+                f'<td>{pct(float(r.get("conversion_rate_pct", 0)))}</td>'
+                '</tr>'
+            )
+        return ''.join(out)
+
+    influencer_rows = []
+    for r in influencers[:12]:
+        influencer_rows.append(
+            '<tr>'
+            f'<td>{esc(r.get("label", ""))}</td>'
+            f'<td>{money(float(r.get("spend", 0)))}</td>'
+            f'<td>{int_br(r.get("purchases", 0))}</td>'
+            f'<td>{money(float(r.get("value", 0)))}</td>'
+            f'<td>{roas_br(r.get("roas", 0))}</td>'
+            '</tr>'
+        )
+
+    html_doc = f'''<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LK — Reconciliação mensal Pareto-compatible — {esc(rep['month'])}</title>
+<style>
+:root {{ --ink:#111111; --paper:#f6f1e8; --muted:#756f66; --line:#ded5c8; --white:#fffaf2; --gold:#b89a5e; --green:#123b2a; --red:#7a1f1f; }}
+* {{ box-sizing:border-box; }}
+body {{ margin:0; background:var(--paper); color:var(--ink); font-family:Inter, Arial, sans-serif; line-height:1.45; }}
+.header {{ background:#050505; color:var(--white); padding:34px 42px; border-bottom:6px solid var(--gold); }}
+.brand {{ letter-spacing:.18em; text-transform:uppercase; font-size:12px; color:#d8c8a7; }}
+h1 {{ margin:10px 0 0; font-family:Georgia, 'Times New Roman', serif; font-size:34px; font-weight:500; }}
+.wrap {{ max-width:1180px; margin:0 auto; padding:32px 22px 54px; }}
+.notice {{ background:#fff7df; border:1px solid #e5c56e; padding:16px 18px; margin-bottom:22px; font-size:15px; }}
+.grid {{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin:18px 0 26px; }}
+.card {{ background:var(--white); border:1px solid var(--line); padding:18px; min-height:116px; }}
+.eyebrow {{ text-transform:uppercase; letter-spacing:.12em; color:var(--muted); font-size:11px; font-weight:700; }}
+.metric {{ font-family:Georgia, 'Times New Roman', serif; font-size:28px; margin-top:8px; }}
+.sub {{ color:var(--muted); font-size:13px; margin-top:6px; }}
+section {{ background:var(--white); border:1px solid var(--line); margin:18px 0; padding:22px; }}
+h2 {{ font-family:Georgia, 'Times New Roman', serif; font-size:24px; font-weight:500; margin:0 0 12px; }}
+p {{ margin:8px 0; }}
+table {{ width:100%; border-collapse:collapse; font-size:14px; }}
+th {{ text-align:left; color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:.09em; padding:10px 8px; border-bottom:1px solid var(--line); }}
+td {{ padding:11px 8px; border-bottom:1px solid #eee5d8; vertical-align:top; }}
+.direct-row td {{ background:#f4ead4; font-weight:700; }}
+.badge {{ display:inline-block; padding:4px 8px; border:1px solid var(--line); background:#fbf5e8; font-size:12px; color:var(--muted); }}
+.good {{ color:var(--green); }} .warn {{ color:var(--red); }}
+.footer {{ color:var(--muted); font-size:12px; margin-top:22px; }}
+@media (max-width:860px) {{ .grid {{ grid-template-columns:1fr 1fr; }} .header {{ padding:28px 22px; }} }}
+@media (max-width:560px) {{ .grid {{ grid-template-columns:1fr; }} table {{ font-size:12px; }} h1 {{ font-size:28px; }} }}
+</style>
+</head>
+<body>
+<header class="header"><div class="brand">LK Sneakers · DesignMD</div><h1>Reconciliação mensal Pareto-compatible — {esc(rep['month'])}</h1></header>
+<main class="wrap">
+<div class="notice"><strong>Leitura correta:</strong> faturamento e canais reais vêm do GA4 completo. Meta/Google abaixo são dashboards de atribuição de plataforma, não venda real por canal.</div>
+<section><h2>Leitura executiva</h2><p>O mês fecha com faturamento real GA4 de {money(float(summary.get('revenue', 0)))}. Direct representa {money(float(direct.get('revenue', 0)))} e precisa aparecer junto dos canais pagos e orgânicos. Meta/Google continuam úteis para otimização dentro das plataformas, mas não explicam sozinhos a venda real.</p></section>
+<div class="grid">
+{metric_card('Faturamento real GA4', money(float(summary.get('revenue', 0))), f"{int_br(summary.get('orders', 0))} pedidos · {int_br(summary.get('sessions', 0))} sessões")}
+{metric_card('Direct explícito', money(float(direct.get('revenue', 0))), f"{int_br(direct.get('transactions', 0))} pedidos · {int_br(direct.get('sessions', 0))} sessões")}
+{metric_card('Paid Social GA4', money(float(paid_social.get('revenue', 0))), 'canal real GA4, não dashboard Meta')}
+{metric_card('ROAS pago geral', roas_br(paid_roas_total), f"Meta+Google investimento {money(paid_spend_total)}")}
+</div>
+<section><h2>Canais reais — agrupamento padrão GA4</h2><p><span class="badge">Inclui pagos, orgânicos e Direct</span></p><table><thead><tr><th>Canal</th><th>Receita</th><th>Sessões</th><th>Pedidos</th><th>Conv.</th></tr></thead><tbody>{rows(channels, 12)}</tbody></table></section>
+<section><h2>Origens e mídias — GA4</h2><table><thead><tr><th>Origem/mídia</th><th>Receita</th><th>Sessões</th><th>Pedidos</th><th>Conv.</th></tr></thead><tbody>{rows(source_medium, 10)}</tbody></table></section>
+<section><h2>Dashboards de plataforma — diagnóstico, não venda real</h2>
+<p><strong>Meta Ads Manager:</strong> investimento {money(float(g.get('spend', 0)))}, compras atribuídas {int_br(g.get('purchases', 0))}, valor atribuído {money(float(g.get('value', 0)))}, ROAS plataforma {roas_br(g.get('roas', 0))}.</p>
+<p><strong>Google Ads via Metricool:</strong> investimento {money(float(google.get('spend', 0)))}, valor atribuído {money(float(google.get('attributed_value', 0)))}, ROAS plataforma {roas_br(google.get('roas', 0))}.</p>
+<p class="warn">Não somar estes valores atribuídos com a venda real. Eles podem se sobrepor e ultrapassar o faturamento total.</p>
+</section>
+<section><h2>Influencers — Pareto-compatible / Meta dashboard</h2><table><thead><tr><th>Influencer</th><th>Investimento</th><th>Compras atrib.</th><th>Valor atrib.</th><th>ROAS</th></tr></thead><tbody>{''.join(influencer_rows)}</tbody></table></section>
+<div class="footer">Gerado localmente pelo Hermes. Sem envio externo. Sem imagens/URLs de criativos. Sem secrets.</div>
+</main>
+</body>
+</html>'''
+    return html_doc
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument('--month', default='2026-04', help='YYYY-MM')
@@ -480,9 +596,11 @@ def main() -> None:
     base = out_dir / f'lk-pareto-compatible-reconciliation-{args.month}'
     json_path = base.with_suffix('.json')
     md_path = base.with_suffix('.md')
+    html_path = base.with_suffix('.html')
     json_path.write_text(json.dumps(rep, ensure_ascii=False, indent=2), encoding='utf-8')
     md_path.write_text(render_md(rep), encoding='utf-8')
-    print(json.dumps({'month': args.month, 'rows': len(rows), 'json': str(json_path), 'md': str(md_path), 'global': g}, ensure_ascii=False))
+    html_path.write_text(render_html(rep), encoding='utf-8')
+    print(json.dumps({'month': args.month, 'rows': len(rows), 'json': str(json_path), 'md': str(md_path), 'html': str(html_path), 'global': g}, ensure_ascii=False))
 
 
 if __name__ == '__main__':
