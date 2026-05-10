@@ -46,7 +46,10 @@ EXTRA_ALIASES = {
     'Helena Lunardelli': ['helena', 'lunardelli'],
     'Lala Noleto': ['lala', 'noleto'],
     'Ju Mesquita': ['ju mesquita', 'juliana mesquita'],
+    # Pareto-compatible: keep Maria, Maria Fernanda and Mariah separated.
     'Maria Fernanda': ['maria fernanda'],
+    'Mariah': ['mariah'],
+    'Maria': ['maria'],
     'Malu Borges': ['malu borges'],
     'Gio Pagano': ['gio pagano', 'giovanna pagano'],
     'Ma Zanetti': ['ma zanetti', 'má zanetti'],
