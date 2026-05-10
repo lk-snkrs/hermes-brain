@@ -355,17 +355,38 @@ def render_html(rep: Dict[str, Any]) -> str:
 
 
 def send_gmail(secrets: Dict[str,str], to_addr: str, subject: str, html_body: str, text_body: str) -> Dict[str, Any]:
-    client_id = secrets.get('GMAIL_LUCAS_CLIENT_ID') or secrets.get('GMAIL_LUCAS_OAUTH_CLIENT_ID') or secrets.get('GMAIL_CLIENT_ID')
-    client_secret = secrets.get('GMAIL_LUCAS_CLIENT_SECRET') or secrets.get('GMAIL_LUCAS_OAUTH_CLIENT_SECRET') or secrets.get('GMAIL_CLIENT_SECRET')
-    refresh = secrets.get('GMAIL_LUCAS_REFRESH_TOKEN') or secrets.get('GMAIL_REFRESH_TOKEN_PERSONAL') or secrets.get('GMAIL_REFRESH_TOKEN')
+    credential_sets = [
+        ('personal', 'GMAIL_CLIENT_ID', 'GMAIL_CLIENT_SECRET', 'GMAIL_REFRESH_TOKEN_PERSONAL'),
+        ('default', 'GMAIL_CLIENT_ID', 'GMAIL_CLIENT_SECRET', 'GMAIL_REFRESH_TOKEN'),
+        ('lucas', 'GMAIL_LUCAS_CLIENT_ID', 'GMAIL_LUCAS_CLIENT_SECRET', 'GMAIL_LUCAS_REFRESH_TOKEN'),
+        ('lucas_oauth', 'GMAIL_LUCAS_OAUTH_CLIENT_ID', 'GMAIL_LUCAS_OAUTH_CLIENT_SECRET', 'GMAIL_LUCAS_REFRESH_TOKEN'),
+        ('producao', 'GMAIL_CLIENT_ID_PRODUCAO', 'GMAIL_CLIENT_SECRET_PRODUCAO', 'GMAIL_REFRESH_TOKEN_PRODUCAO'),
+    ]
     from_addr = secrets.get('GMAIL_USER') or to_addr
-    if not (client_id and client_secret and refresh and from_addr):
-        raise RuntimeError('missing Gmail OAuth credential set')
-    tok = requests.post('https://oauth2.googleapis.com/token', data={
-        'client_id': client_id, 'client_secret': client_secret, 'refresh_token': refresh, 'grant_type': 'refresh_token'
-    }, timeout=60)
-    tok.raise_for_status()
-    access = tok.json()['access_token']
+    if not from_addr:
+        raise RuntimeError('missing Gmail sender')
+    access = None
+    used_label = None
+    last_error = None
+    for label, ci_key, cs_key, rf_key in credential_sets:
+        client_id = secrets.get(ci_key)
+        client_secret = secrets.get(cs_key)
+        refresh = secrets.get(rf_key)
+        if not (client_id and client_secret and refresh):
+            continue
+        tok = requests.post('https://oauth2.googleapis.com/token', data={
+            'client_id': client_id, 'client_secret': client_secret, 'refresh_token': refresh, 'grant_type': 'refresh_token'
+        }, timeout=60)
+        if tok.status_code == 200:
+            access = tok.json()['access_token']
+            used_label = label
+            break
+        try:
+            last_error = tok.json().get('error')
+        except Exception:
+            last_error = f'http_{tok.status_code}'
+    if not access:
+        raise RuntimeError(f'no valid Gmail OAuth credential set; last_error={last_error}')
     msg = EmailMessage()
     msg['To'] = to_addr
     msg['From'] = from_addr
@@ -375,7 +396,7 @@ def send_gmail(secrets: Dict[str,str], to_addr: str, subject: str, html_body: st
     raw = base64.urlsafe_b64encode(msg.as_bytes()).decode().rstrip('=')
     r = requests.post('https://gmail.googleapis.com/gmail/v1/users/me/messages/send', headers={'Authorization': f'Bearer {access}'}, json={'raw': raw}, timeout=60)
     r.raise_for_status()
-    return r.json()
+    return {**r.json(), 'credential_label': used_label}
 
 
 def main():
