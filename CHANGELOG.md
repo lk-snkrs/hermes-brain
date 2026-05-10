@@ -1,3 +1,11 @@
+## 2026-05-10 — LK channel-sales logic correction
+
+- Corrigida a lógica da reconciliação Pareto: dashboards de Meta/Google são métricas atribuídas de plataforma, não venda real por canal.
+- O relatório mensal agora mostra a venda e-commerce real (`R$ 722.636,36`) separada dos valores de plataforma: Meta Ads Manager `R$ 797.654,65` e Google Ads `R$ 207.240,45`.
+- Adicionadas as referências Pareto/GA4 para contribuição real de canais/origens: `Paid Social R$ 211.329`, `facebook / paid R$ 181.859,02`, `google / cpc R$ 130.069,50`, `Paid Search R$ 51.137`, `Cross-network R$ 58.924`.
+- Atualizados `scripts/lk_monthly_pareto_reconciliation.py`, `reports/lk-pareto-april-2026/reconciliation-audit.md`, `pareto-compatible-script-output.*` e `areas/lk/sub-areas/trafego-pago/rotinas/pareto-monthly-reconciliation.md`.
+- Produção, VPS/Docker, bancos, campaigns, Shopify/Tiny/Klaviyo/WhatsApp, secrets e envios externos não foram alterados.
+
 ## 2026-05-10 — LK Meta attribution label correction
 
 - Corrigida a interpretação da reconciliação Pareto: o campo Meta que o PDF chama de `Receita` agora é rotulado nos relatórios LK como `valor atribuído Meta no gerenciador`, não como venda/receita real da LK.

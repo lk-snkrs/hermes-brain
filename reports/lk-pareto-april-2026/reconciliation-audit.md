@@ -11,27 +11,33 @@
 
 Os números de **Meta Ads do relatório Pareto batem exatamente** com a consulta direta no Meta Ads quando a conta `act_1242062509867163` é consultada em nível de anúncio para abril/2026 e usando compra/valor canônicos. Para Lucas, uma aderência de **99%+** já é operacionalmente correta; diferenças pequenas de poucos reais não devem travar a análise se a lógica/metodologia estiver igual à Pareto.
 
-A divergência principal está em **Shopify/receita total vs valor atribuído Meta**: o PDF mostra `233 pedidos` e `R$ 722.636,36` de receita e-commerce; a página Meta do próprio PDF mostra `R$ 797.654,65` como “Receita” do Meta. Como esse valor ultrapassa a receita total do e-commerce, a leitura correta é tratar os `R$ 797.654,65` como **valor atribuído Meta no gerenciador**, não como venda/receita real da LK. A Shopify Admin API retorna os mesmos `233 pedidos web pagos/parcialmente reembolsados`, mas `R$ 772.659,42` em `total_price`, indicando que Maicon/Pareto provavelmente usou uma métrica de receita líquida/Shopify Analytics/GA4 ajustada, não o `total_price` bruto do Admin API.
+A divergência principal está em **receita e-commerce real vs dashboards de plataforma**: o PDF mostra `233 pedidos` e `R$ 722.636,36` de receita e-commerce; a página Meta mostra `R$ 797.654,65` como “Receita” do Meta e a página Google mostra `R$ 207.240,45` como “Receita” do Google. Esses valores de plataforma não são uma divisão real da venda entre Meta e Google; eles são diagnósticos atribuídos por cada gerenciador. A leitura correta para contribuição real de canais é usar as páginas Pareto/GA4: `Paid Social R$ 211.329`, `facebook / paid R$ 181.859,02`, `google / cpc R$ 130.069,50`, `Paid Search R$ 51.137` e `Cross-network R$ 58.924`. Portanto, Meta Ads bate exatamente como plataforma, mas não deve ser usado para dizer quanto Meta “vendeu” da receita total.
 
 ## Números globais — PDF vs auditoria Hermes
 
-### Meta Ads
+### Meta Ads / Google Ads / canais reais
 
-- PDF Pareto:
+- PDF/Pareto dashboard Meta:
   - Investimento: `R$ 38.954,76`
   - Compras atribuídas no gerenciador: `229`
   - Valor atribuído Meta no gerenciador: `R$ 797.654,65`
   - ROAS Meta atribuído: `20,48`
   - CPA Meta atribuído: `R$ 170,11`
 
-- Hermes via Meta Marketing API:
-  - Investimento: `R$ 38.954,76`
-  - Compras canônicas atribuídas: `229`
-  - Valor Meta canônico atribuído: `R$ 797.654,65`
-  - ROAS Meta atribuído: `20,48`
-  - CPA Meta atribuído: `R$ 170,11`
+- PDF/Pareto dashboard Google:
+  - Investimento: `R$ 26.481,76`
+  - Compras atribuídas no gerenciador: `795,58`
+  - Valor atribuído Google no gerenciador: `R$ 207.240,45`
+  - ROAS Google atribuído: `7,83`
 
-Status: **bate exatamente com o campo Meta/Ads Manager da Pareto**, mas não deve ser lido como venda real do negócio. Venda real mensal continua sendo a receita e-commerce/Shopify/Pareto.
+- Pareto/GA4 — contribuição real por canal/origem:
+  - `Paid Social`: `R$ 211.329`
+  - `facebook / paid`: `R$ 181.859,02`
+  - `google / cpc`: `R$ 130.069,50`
+  - `Paid Search`: `R$ 51.137`
+  - `Cross-network`: `R$ 58.924`
+
+Status: **Meta Ads API bate exatamente com o campo Meta/Ads Manager da Pareto**, mas esse campo não representa a parte real da venda atribuída ao canal. Para dividir vendas reais entre Meta, Google, orgânico, direto etc., usar GA4/Pareto channel/source-medium.
 
 ### Shopify / e-commerce
 

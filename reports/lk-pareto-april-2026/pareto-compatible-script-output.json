@@ -4,7 +4,7 @@
     "start": "2026-04-01",
     "end": "2026-04-30"
   },
-  "generated_at": "2026-05-10T14:58:33.884744+00:00",
+  "generated_at": "2026-05-10T15:09:43.954678+00:00",
   "global": {
     "label": "Meta global",
     "ads": 180,
@@ -1351,7 +1351,74 @@
   ],
   "pareto_ecommerce": {
     "orders": 233,
-    "revenue": 722636.36
+    "revenue": 722636.36,
+    "investment": 65436.52,
+    "roas": 11.04
+  },
+  "pareto_platform_dashboards": {
+    "meta_ads_manager": {
+      "spend": 38954.76,
+      "purchases": 229.0,
+      "attributed_value": 797654.65,
+      "roas": 20.48,
+      "cpa": 170.11
+    },
+    "google_ads": {
+      "spend": 26481.76,
+      "purchases": 795.58,
+      "attributed_value": 207240.45,
+      "roas": 7.83,
+      "cpa": 33.29
+    }
+  },
+  "pareto_ga4_channels": {
+    "Paid Social": {
+      "revenue": 211329.0,
+      "conversion_rate": 0.07
+    },
+    "Organic Social": {
+      "revenue": 157968.0,
+      "conversion_rate": 0.38
+    },
+    "Direct": {
+      "revenue": 100760.0,
+      "conversion_rate": 0.27
+    },
+    "Cross-network": {
+      "revenue": 58924.0,
+      "conversion_rate": 0.16
+    },
+    "Paid Search": {
+      "revenue": 51137.0,
+      "conversion_rate": 0.46
+    }
+  },
+  "pareto_ga4_source_medium": {
+    "facebook / paid": {
+      "sessions": 43799,
+      "revenue": 181859.02,
+      "conversion_rate": 0.11
+    },
+    "l.instagram.com / referral": {
+      "sessions": 6198,
+      "revenue": 141618.15,
+      "conversion_rate": 0.63
+    },
+    "google / cpc": {
+      "sessions": 26002,
+      "revenue": 130069.5,
+      "conversion_rate": 0.19
+    },
+    "direct / none": {
+      "sessions": 12801,
+      "revenue": 100759.7,
+      "conversion_rate": 0.27
+    },
+    "google / organic": {
+      "sessions": 17090,
+      "revenue": 33442.81,
+      "conversion_rate": 0.1
+    }
   },
   "expected_global": {
     "spend": {

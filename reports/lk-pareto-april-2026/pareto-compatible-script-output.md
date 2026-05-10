@@ -2,8 +2,20 @@
 
 ## Resumo
 - Meta global: R$ 38.954,76 spend, 229 compras atribuídas no gerenciador, R$ 797.654,65 **valor atribuído Meta no gerenciador** (não venda/receita real LK), ROAS Meta 20.48, CPA Meta R$ 170,11.
-- Shopify/Pareto e-commerce: 233 pedidos, R$ 722.636,36 venda/receita do negócio.
-- Alerta de interpretação: Meta atribuiu R$ 797.654,65, R$ 75.018,29 acima da receita e-commerce do mês; portanto esse número **não pode ser chamado de venda da Meta**. Ele deve ser lido como valor atribuído pelo pixel/Ads Manager.
+- Venda real e-commerce Pareto: 233 pedidos, R$ 722.636,36 receita total, R$ 65.436,52 investimento total, ROAS geral 11.04.
+- Correção de senso crítico: o Meta Ads Manager atribuiu R$ 797.654,65, R$ 75.018,29 acima da receita total da LK; logo esse número **não é venda da Meta** nem pode entrar na divisão Meta vs Google de vendas reais.
+- Receita real por canal deve usar Pareto/GA4/canais, não dashboards isolados de plataforma:
+  - Paid Social: R$ 211.329,00; conversão 0.07%.
+  - Organic Social: R$ 157.968,00; conversão 0.38%.
+  - Direct: R$ 100.760,00; conversão 0.27%.
+  - Cross-network: R$ 58.924,00; conversão 0.16%.
+  - Paid Search: R$ 51.137,00; conversão 0.46%.
+- Principais origens/mídias Pareto/GA4:
+  - facebook / paid: 43,799 sessões; R$ 181.859,02; conversão 0.11%.
+  - l.instagram.com / referral: 6,198 sessões; R$ 141.618,15; conversão 0.63%.
+  - google / cpc: 26,002 sessões; R$ 130.069,50; conversão 0.19%.
+  - direct / none: 12,801 sessões; R$ 100.759,70; conversão 0.27%.
+  - google / organic: 17,090 sessões; R$ 33.442,81; conversão 0.10%.
 - Comparação Pareto global — campo Meta/Ads Manager:
   - spend: esperado `38954.76`, atual `38954.76`, delta `0.0`, match `100.0%`.
   - purchases: esperado `229.0`, atual `229.0`, delta `0.0`, match `100.0%`.
@@ -43,8 +55,9 @@
 - Malu Borges: 3 anúncios; spend R$ 13,65; compras atribuídas 0; valor atribuído Meta R$ 0,00; ROAS Meta 0.00.
 
 ## Correção conceitual
-- Correto: LK vendeu no mês o valor de e-commerce/Shopify/Pareto.
-- Correto: Meta reportou valor atribuído pelo gerenciador, que pode ultrapassar a receita real por janela de atribuição, deduplicação imperfeita, cross-channel e diferença de origem de mensuração.
+- Correto: LK vendeu no mês o valor de e-commerce/Shopify/Pareto, e essa receita deve ser distribuída por canais usando GA4/Pareto channel grouping/source-medium.
+- Correto: Meta Ads e Google Ads reportam valores atribuídos em dashboards próprios; esses valores servem para diagnóstico da plataforma, não para dizer quanto cada canal vendeu de verdade.
+- Errado: dividir venda real entre Meta e Google usando `Receita` dos gerenciadores, porque os dashboards podem se sobrepor e a soma pode ultrapassar a venda total da LK.
 - Errado: dizer que “a Meta vendeu” mais que a LK vendeu no mês.
 
 ## Guardrails
