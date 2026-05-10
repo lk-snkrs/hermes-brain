@@ -87,6 +87,7 @@ O e-mail deve conter:
 7. Corpo do e-mail como `Content-Type: text/html`, não apenas multipart/texto.
 8. Não incluir thumbnails/criativos Meta borrados ou de baixa qualidade no e-mail semanal.
 9. Criativos reais podem aparecer em preview HTML local somente com flag explícita `--include-creative-assets`; o cron semanal permanece sem criativos por padrão.
+10. Quando criativos forem exibidos, a estrutura correta é `influencer → criativo → vendas → produtos`: cada card deve mostrar imagem do criativo, compras/spend/valor Meta, pedidos/receita Shopify por `ad_id` exato e produtos vendidos ligados ao criativo quando houver ponte segura.
 
 ## Auditoria visual de criativos
 
@@ -106,7 +107,7 @@ Para prévia executiva local do relatório semanal com criativos reais já colhi
   --creative-assets-json /opt/data/lk_weekly_creative_audits/lk-weekly-meta-creative-assets-YYYY-MM-DD.json
 ```
 
-Guardrail: `--include-creative-assets` é bloqueado junto com `--send` até existir fluxo de anexo/inline-image e QA visual novo. Só promover um criativo para e-mail/relatório executivo depois de QA visual; duplicados ou frames fracos devem ser removidos/substituídos.
+Guardrail: `--include-creative-assets` é bloqueado junto com `--send` até existir fluxo de anexo/inline-image e QA visual novo. A prévia local cruza o `ad_id` do criativo com Shopify: produtos entram no card do criativo somente quando existe `ad_id` Meta exato no pedido; pontes por texto/cupom continuam no nível influencer para não inventar qual vídeo gerou a venda. Só promover um criativo para e-mail/relatório executivo depois de QA visual; duplicados ou frames fracos devem ser removidos/substituídos.
 
 ## Guardrails
 
