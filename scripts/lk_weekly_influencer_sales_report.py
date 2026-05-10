@@ -732,6 +732,75 @@ def render_html(rep: Dict[str, Any]) -> str:
     parts.append('</main></body></html>')
     return '\n'.join(parts)
 
+def make_gmail_safe_html(html_doc: str) -> str:
+    """Inline the LK DesignMD look for Gmail clients.
+
+    Gmail/mobile clients can ignore <style>, @import, CSS variables and grid.
+    Email sends must therefore carry a visual HTML surface through inline CSS,
+    not rely on the browser-preview stylesheet.
+    """
+    html_doc = re.sub(r'<style>.*?</style>', '', html_doc, flags=re.S | re.I)
+    class_styles = {
+        'page': 'max-width:640px;margin:0 auto;background:#FFFFFF;color:#0A0A0A;font-family:Arial,sans-serif;',
+        'brand-header': 'background:#0A0A0A;color:#FFFFFF;text-align:center;padding:28px 28px 24px;',
+        'brand-word': 'font-family:Georgia,serif;font-size:30px;line-height:1;letter-spacing:-0.04em;',
+        'context-bar': 'background:#1A1A1A;color:#E8D8C4;text-align:center;padding:12px 18px;font-family:Arial,sans-serif;font-size:10px;font-weight:700;line-height:1.4;letter-spacing:0.22em;text-transform:uppercase;',
+        'hero': 'background:#FDF9F5;padding:42px 22px 34px;text-align:center;border-bottom:1px solid #E8E6E2;',
+        'eyebrow': 'margin:0;color:#8A8580;font-family:Arial,sans-serif;font-size:10px;font-weight:700;line-height:1.3;letter-spacing:0.24em;text-transform:uppercase;',
+        'rule': 'width:42px;height:1px;background:#DDD0C0;margin:22px auto;',
+        'hero-copy': 'max-width:520px;margin:20px auto 0;color:#8A8580;font-family:Arial,sans-serif;font-size:14px;line-height:1.75;',
+        'metrics': 'background:#F5F4F2;border-bottom:1px solid #E8E6E2;padding:0;',
+        'metric': 'padding:18px 14px;text-align:center;border-bottom:1px solid #E8E6E2;',
+        'k': 'font-family:Arial,sans-serif;font-size:9px;font-weight:700;line-height:1.2;letter-spacing:0.18em;color:#8A8580;text-transform:uppercase;',
+        'v': 'font-family:Georgia,serif;font-size:26px;line-height:1;letter-spacing:-0.03em;margin-top:8px;color:#0A0A0A;',
+        'section': 'padding:34px 22px;border-bottom:1px solid #E8E6E2;background:#FFFFFF;',
+        'section-title': 'font-family:Georgia,serif;font-size:30px;font-weight:400;line-height:1;letter-spacing:-0.03em;margin:0 0 10px;color:#0A0A0A;',
+        'section-sub': 'font-family:Arial,sans-serif;font-size:13px;line-height:1.7;color:#8A8580;margin:0 0 24px;',
+        'rank-row': 'display:block;padding:20px 0;border-top:1px solid #E8E6E2;',
+        'badge': 'display:inline-block;background:#0A0A0A;color:#FFFFFF;padding:10px 12px;margin-bottom:10px;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.12em;',
+        'inf': 'font-family:Arial,sans-serif;font-size:10px;font-weight:700;line-height:1.2;letter-spacing:0.16em;color:#C8A98A;text-transform:uppercase;margin-bottom:6px;',
+        'product': 'font-family:Georgia,serif;font-size:25px;font-weight:400;line-height:1.05;letter-spacing:-0.025em;margin:6px 0 8px;color:#0A0A0A;',
+        'bridge': 'font-family:Arial,sans-serif;font-size:12px;line-height:1.55;color:#8A8580;margin-top:8px;',
+        'row-grid': 'display:block;margin-top:12px;',
+        'pill': 'display:block;border:1px solid #E8E6E2;background:#FDF9F5;padding:12px;margin:0 0 8px;',
+        'signal': 'border-top:1px solid #E8E6E2;padding:14px 0;font-family:Arial,sans-serif;font-size:12px;line-height:1.5;color:#8A8580;',
+        'footer': 'background:#0A0A0A;color:#E8D8C4;text-align:center;padding:28px 22px;font-family:Arial,sans-serif;font-size:12px;line-height:1.6;',
+        'creative-card': 'display:block;margin-bottom:18px;border:1px solid #E8E6E2;background:#FFFFFF;',
+        'creative-img': 'background:#0D0D0D;text-align:center;padding:0;overflow:hidden;',
+        'creative-body': 'padding:14px;',
+        'creative-name': 'font-family:Arial,sans-serif;font-size:9px;font-weight:700;line-height:1.2;letter-spacing:0.16em;color:#C8A98A;text-transform:uppercase;',
+        'creative-title': 'font-family:Georgia,serif;font-size:22px;font-weight:400;line-height:1;letter-spacing:-0.025em;margin:8px 0;color:#0A0A0A;',
+        'creative-meta': 'font-family:Arial,sans-serif;font-size:11px;line-height:1.6;color:#8A8580;',
+    }
+    tag_styles = {
+        'body': 'margin:0;background:#F0ECE8;color:#0A0A0A;font-family:Arial,sans-serif;padding:0;',
+        'h1': 'font-family:Georgia,serif;font-size:40px;font-weight:400;line-height:0.98;letter-spacing:-0.04em;margin:0;color:#0A0A0A;',
+        'em': 'display:block;color:#C8A98A;font-style:italic;',
+        'img': 'max-width:100%;height:auto;display:block;margin:0 auto;border:0;',
+    }
+
+    def merge_style(tag: str, style: str) -> str:
+        if not style:
+            return tag
+        if re.search(r'\sstyle="', tag, flags=re.I):
+            return re.sub(r'\sstyle="([^"]*)"', lambda m: f' style="{style}{m.group(1)}"', tag, count=1, flags=re.I)
+        return tag[:-1] + f' style="{style}">' if tag.endswith('>') else tag
+
+    def repl(match: re.Match[str]) -> str:
+        tag = match.group(0)
+        name_match = re.match(r'<\s*([a-zA-Z0-9]+)', tag)
+        styles: List[str] = []
+        if name_match:
+            styles.append(tag_styles.get(name_match.group(1).lower(), ''))
+        class_match = re.search(r'class="([^"]+)"', tag)
+        if class_match:
+            for cls in class_match.group(1).split():
+                styles.append(class_styles.get(cls, ''))
+        return merge_style(tag, ''.join(s for s in styles if s))
+
+    return re.sub(r'<(?!/|!)[^>]+>', repl, html_doc)
+
+
 def collect_inline_image_paths(rep: Dict[str, Any]) -> List[Path]:
     paths: List[Path] = []
     for row in rep.get('creative_performance') or []:
@@ -754,8 +823,9 @@ def collect_inline_image_paths(rep: Dict[str, Any]) -> List[Path]:
 
 def build_email_mime(from_addr: str, to_addr: str, subject: str, html_body: str, text_body: str, inline_images: List[Path] | None = None) -> MIMEMultipart | MIMEText:
     inline_images = inline_images or []
+    email_html_body = make_gmail_safe_html(html_body)
     if not inline_images:
-        msg = MIMEText(html_body, 'html', 'utf-8')
+        msg = MIMEText(email_html_body, 'html', 'utf-8')
         msg['To'] = to_addr
         msg['From'] = from_addr
         msg['Subject'] = subject
@@ -773,7 +843,7 @@ def build_email_mime(from_addr: str, to_addr: str, subject: str, html_body: str,
         cid = f'lk-creative-{idx}@lk-sneakers'
         cid_map[path.as_uri()] = f'cid:{cid}'
         cid_map[str(path)] = f'cid:{cid}'
-    html_inline = html_body
+    html_inline = email_html_body
     for src, cid_src in cid_map.items():
         html_inline = html_inline.replace(src, cid_src)
     alt.attach(MIMEText(html_inline, 'html', 'utf-8'))

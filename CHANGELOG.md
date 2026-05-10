@@ -1,3 +1,11 @@
+## 2026-05-10 — LK Gmail-safe HTML email rendering
+
+- Corrigido o e-mail semanal LK para não depender de `<style>`, `@import`, CSS variables ou grid que o Gmail/mobile pode ignorar, causando aparência de texto puro.
+- O envio por Gmail agora transforma o HTML DesignMD LK em HTML compatível com e-mail usando estilos inline antes de montar o MIME.
+- Validação local e envio real corrigido: MIME `multipart/related` + `multipart/alternative`, 6 imagens CID, HTML com estilos inline, 0 `<style>`, 0 `var(--...)`, 0 `file://` e 0 termos sensíveis.
+- Gmail message id do reenvio corrigido: `19e133a240640a9b`.
+- Regra operacional reforçada: e-mails/relatórios LK por e-mail devem renderizar como HTML visual real; se aparecerem como texto/plain ou sem DesignMD, é falha.
+
 ## 2026-05-10 — LK inline creative email MIME preview
 
 - Adicionado suporte seguro a MIME `multipart/related` com imagens inline via CID para a seção opcional de criativos do relatório semanal.
