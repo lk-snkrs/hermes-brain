@@ -11,7 +11,7 @@
 
 Os números de **Meta Ads do relatório Pareto batem exatamente** com a consulta direta no Meta Ads quando a conta `act_1242062509867163` é consultada em nível de anúncio para abril/2026 e usando compra/valor canônicos. Para Lucas, uma aderência de **99%+** já é operacionalmente correta; diferenças pequenas de poucos reais não devem travar a análise se a lógica/metodologia estiver igual à Pareto.
 
-A divergência principal está em **Shopify/receita total**: o PDF mostra `233 pedidos` e `R$ 722.636,36`; a Shopify Admin API retorna os mesmos `233 pedidos web pagos/parcialmente reembolsados`, mas `R$ 772.659,42` em `total_price`. Isso indica que Maicon/Pareto provavelmente usou uma métrica de receita líquida/Shopify Analytics/GA4 ajustada, não o `total_price` bruto do Admin API.
+A divergência principal está em **Shopify/receita total vs valor atribuído Meta**: o PDF mostra `233 pedidos` e `R$ 722.636,36` de receita e-commerce; a página Meta do próprio PDF mostra `R$ 797.654,65` como “Receita” do Meta. Como esse valor ultrapassa a receita total do e-commerce, a leitura correta é tratar os `R$ 797.654,65` como **valor atribuído Meta no gerenciador**, não como venda/receita real da LK. A Shopify Admin API retorna os mesmos `233 pedidos web pagos/parcialmente reembolsados`, mas `R$ 772.659,42` em `total_price`, indicando que Maicon/Pareto provavelmente usou uma métrica de receita líquida/Shopify Analytics/GA4 ajustada, não o `total_price` bruto do Admin API.
 
 ## Números globais — PDF vs auditoria Hermes
 
@@ -19,19 +19,19 @@ A divergência principal está em **Shopify/receita total**: o PDF mostra `233 p
 
 - PDF Pareto:
   - Investimento: `R$ 38.954,76`
-  - Compras: `229`
-  - Receita Meta: `R$ 797.654,65`
-  - ROAS: `20,48`
-  - CPA: `R$ 170,11`
+  - Compras atribuídas no gerenciador: `229`
+  - Valor atribuído Meta no gerenciador: `R$ 797.654,65`
+  - ROAS Meta atribuído: `20,48`
+  - CPA Meta atribuído: `R$ 170,11`
 
 - Hermes via Meta Marketing API:
   - Investimento: `R$ 38.954,76`
-  - Compras canônicas: `229`
-  - Valor Meta canônico: `R$ 797.654,65`
-  - ROAS: `20,48`
-  - CPA: `R$ 170,11`
+  - Compras canônicas atribuídas: `229`
+  - Valor Meta canônico atribuído: `R$ 797.654,65`
+  - ROAS Meta atribuído: `20,48`
+  - CPA Meta atribuído: `R$ 170,11`
 
-Status: **bate exatamente**.
+Status: **bate exatamente com o campo Meta/Ads Manager da Pareto**, mas não deve ser lido como venda real do negócio. Venda real mensal continua sendo a receita e-commerce/Shopify/Pareto.
 
 ### Shopify / e-commerce
 
