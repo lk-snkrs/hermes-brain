@@ -124,11 +124,22 @@ Use:
 /opt/hermes/.venv/bin/python scripts/lk_monthly_pareto_reconciliation.py --month 2026-04
 ```
 
-O script gera `.md` e `.json` em:
+O script gera `.md`, `.json` e `.html` em:
 
 ```text
 /opt/data/lk_monthly_pareto_reconciliation_reports/
 ```
+
+O `.html` é uma prévia executiva DesignMD LK, sem envio externo por padrão. A prévia precisa mostrar:
+
+- faturamento real GA4;
+- Direct destacado em card e tabelas;
+- canais reais GA4 completos;
+- dashboards Meta/Google separados como diagnóstico;
+- influencers Pareto-compatible com investimento, compras atribuídas, valor atribuído e ROAS;
+- números em formato brasileiro.
+
+Não criar cron/envio mensal automático sem autorização explícita do Lucas.
 
 Ele consulta Meta Ads direto, nível `ad`, usa compra/valor canônicos e gera duas leituras:
 
@@ -142,6 +153,7 @@ Ver relatórios versionados:
 ```text
 reports/lk-pareto-april-2026/reconciliation-audit.md
 reports/lk-pareto-april-2026/pareto-compatible-script-output.md
+reports/lk-pareto-april-2026/pareto-compatible-script-output.html
 ```
 
 Meta global abril bateu exatamente com o campo Meta/Ads Manager da Pareto, mas agora com nomenclatura corrigida:

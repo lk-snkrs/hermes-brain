@@ -1,3 +1,11 @@
+## 2026-05-10 — LK Monthly Pareto HTML executive preview
+
+- O script mensal Pareto-compatible agora também gera `.html` executivo em DesignMD LK, além de `.md` e `.json`.
+- Preview abril/2026 validado visualmente: header premium LK, Direct destacado em card e linhas de tabela, canais GA4 completos, dashboards Meta/Google separados e influencers preenchidos.
+- Corrigida padronização visual/numérica: moeda, sessões, percentuais e ROAS em formato brasileiro (`11,04x`, `20,48x`).
+- Registrado que a prévia mensal é local/dry-run e sem envio externo ou cron automático até autorização explícita do Lucas.
+- Produção, VPS/Docker, bancos, campaigns, Shopify/Tiny/Klaviyo/WhatsApp, secrets, crons e envios externos não foram alterados.
+
 ## 2026-05-10 — LK Direct channel summary fix
 
 - Ajustado o relatório mensal Pareto-compatible para deixar `Direct` explícito no resumo executivo, não apenas canais pagos.
