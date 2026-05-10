@@ -53,12 +53,32 @@ Para bater receita total mensal do PDF Pareto, não assumir que Shopify Admin `t
 
 Conclusão: pedidos bateram; receita provavelmente usa Shopify Analytics, GA4 ou métrica líquida ajustada.
 
+## Script operacional
+
+Use:
+
+```bash
+/opt/hermes/.venv/bin/python scripts/lk_monthly_pareto_reconciliation.py --month 2026-04
+```
+
+O script gera `.md` e `.json` em:
+
+```text
+/opt/data/lk_monthly_pareto_reconciliation_reports/
+```
+
+Ele consulta Meta Ads direto, nível `ad`, usa compra/valor canônicos e gera duas leituras:
+
+- `Pareto-compatible`: naming/lógica Pareto, incluindo Marias separadas.
+- `Lucas-operacional`: aliases consolidados para decisão interna.
+
 ## Abril/2026 — auditoria base
 
-Ver relatório versionado:
+Ver relatórios versionados:
 
 ```text
 reports/lk-pareto-april-2026/reconciliation-audit.md
+reports/lk-pareto-april-2026/pareto-compatible-script-output.md
 ```
 
 Meta global abril bateu exatamente:
