@@ -2,6 +2,14 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-10 — LK ROAS influencer correction + Tiny alias approval preview
+
+- Gerado relatório read-only `reports/lk-roas-influencer-correction-readonly-2026-05-10.md`/`.json` para investigar os ROAS Meta 50–70x de Lala Noleto, Helena Lunardelli e Silvia Heinz.
+- Correção central: os 50–70x são `Meta attributed ROAS`, não ROAS operacional da LK; no período 2025-12-01 a 2026-05-10, o valor atribuído pelo Meta para a conta inteira excede a receita web Shopify do período, então não pode ser usado como verdade de receita.
+- Site ROAS simples do período foi reconciliado como Shopify web / (Meta + Google via Metricool), separando receita Shopify de valor atribuído por plataforma.
+- Gerado preview read-only `reports/lk-sku-tiny-alias-approval-preview-2026-05-10.md` com a tabela de aprovação para alias/correção Tiny dos SKUs priorizados; nenhum write em Tiny/Shopify foi executado.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-10 — LK SKU Shopify ↔ Tiny map preview
 
 - Gerado preview read-only `reports/lk-sku-shopify-tiny-map-preview-2026-05-10.md`/`.json` para os campeões antes marcados como `mapear SKU no Tiny`.

@@ -13,3 +13,5 @@ Pastas: angulos, formatos, criativos, testes, learnings, skills, rotinas.
 - `rotinas/lk-ads-intelligence-metricool-meta-20260509.md` — Google Ads via Metricool + Meta Ads direto; base v0.1 para custo/campanha/influencer-product fit do LK OS.
 
 - `../../../reports/lk-stock-influencer-audit-readonly-2026-05-10.md` — primeira auditoria real/read-only de influencer vs produto combinada com sinais de stock por SKU/tamanho.
+
+- `../../../reports/lk-roas-influencer-correction-readonly-2026-05-10.md` — correção read-only dos ROAS Meta 50–70x de influencers; define `Meta attributed ROAS` como sinal de plataforma, não ROAS operacional da LK, e exige reconciliação Shopify/UTM/cupom/produto antes de decisão.
