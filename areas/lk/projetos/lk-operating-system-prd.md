@@ -528,6 +528,31 @@ Sem UTM/cupom consistente, o módulo começa como auditoria e não como julgamen
 
 Regra: ROAS de plataforma é sinal, não verdade final. A leitura executiva deve reconciliar custo pago com receita Shopify web e, quando possível, produto/tamanho vendido. O objetivo não é premiar o maior ROAS isolado, mas descobrir qual influenciador/campanha combina com qual curadoria e qual impacto causa no estoque.
 
+### Campaign Attribution Dictionary
+
+O módulo precisa manter um dicionário canônico entre mídia paga, Shopify/GA4 e curadoria:
+
+```text
+campaign_name Meta / adset_name / ad_name
+→ campaign/ad group Google quando houver
+→ utm_campaign Shopify/GA4
+→ cupom/landing/referrer quando houver
+→ influencer/criativo
+→ produto/marca/modelo/SKU/tamanho esperado
+→ custo compatível
+→ receita Shopify compatível
+→ consequência de estoque
+```
+
+Sem esse dicionário, `Meta attributed ROAS by campaign title` deve ser tratado apenas como sinal de plataforma. Matching frouxo por texto não deve ser usado para decisão operacional, porque campanhas genéricas podem capturar UTMs de campanhas/influencers diferentes.
+
+O dicionário deve começar por Lala Noleto, Silvia Heinz, Helena Lunardelli e as campanhas broad/Advantage+/RMKT com maior gasto, sempre separando:
+
+- ROAS atribuído pela plataforma;
+- receita Shopify com evidência de UTM/cupom/landing/produto;
+- ROAS operacional quando custo e receita forem compatíveis;
+- impacto em estoque Tiny `LK | CONTROLE ESTOQUE` por SKU/tamanho.
+
 ## 19. Content & Campaign Production Engine
 
 Função:

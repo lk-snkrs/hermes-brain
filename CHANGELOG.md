@@ -2,6 +2,14 @@
 
 Registro das principais mudanças estruturais do Hermes Brain após a adaptação Bruno/OpenClaw para o universo Hermes.
 
+## 2026-05-10 — LK Campaign Attribution Dictionary
+
+- Criada rotina read-only `areas/lk/sub-areas/trafego-pago/rotinas/campaign-attribution-dictionary.md` para mapear campanha/influencer → Meta/Google naming → UTM/cupom/landing → produto/SKU/tamanho → estoque.
+- Criado template `areas/lk/sub-areas/trafego-pago/templates/campaign-attribution-record.md` para preencher o dicionário canônico por campanha/influencer.
+- Atualizado PRD do LK Operating System para tratar `Meta attributed ROAS by campaign title` como sinal de plataforma até existir dicionário canônico e match Shopify/GA4 confiável.
+- Próxima ação: preencher Lala Noleto, Silvia Heinz, Helena Lunardelli e campanhas broad/Advantage+/RMKT com evidência Shopify, GA4, cupom/UTM/landing e consequência de estoque.
+- Produção, VPS/Docker, bancos, secrets, campanhas, WhatsApp/Klaviyo, Shopify/Tiny/Notion, Google/Meta, n8n, UI, cron e runtime não foram alterados.
+
 ## 2026-05-10 — LK Meta campaign-title ROAS read-only
 
 - Gerado relatório read-only `reports/lk-meta-campaign-title-roas-readonly-2026-05-10.md`/`.json` calculando ROAS atribuído do Meta por `campaign_name`/título da campanha.
