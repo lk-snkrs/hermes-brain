@@ -253,7 +253,7 @@ Entregáveis:
 
 - [x] Rotina Search Console: queries, páginas, CTR, oportunidades, operacionalizada via `search-console-readonly-router`: 25.000 linhas query/página, 15.709 páginas agregadas e 40 oportunidades P1/P2 roteadas como preview sem writes.
 - [x] Módulo semanal SEO/CRO com nota Claude SEO, meta próxima e fila priorizada de melhorias de PDP/páginas.
-- [ ] Diagnóstico Merchant Center/feed.
+- [x] Diagnóstico Merchant Center/feed, operacionalizado via `merchant-center-feed-readonly-router`: 5.000 status de produto lidos, 959 itens P1, 18 grupos de problema e 0 writes liberados.
 - [ ] Priorização de PDPs com tráfego alto e conversão baixa.
 - [x] Checklist SEO/PDP para produtos importantes via `lk-seo-weekly-improvement` e rotina `seo-cro-weekly-improvement-loop`.
 

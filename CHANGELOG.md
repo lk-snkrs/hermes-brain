@@ -1,3 +1,11 @@
+## 2026-05-11 — LK Merchant Center Feed Read-only Router
+
+- Criado e executado `scripts/lk_merchant_center_feed_readonly_router_20260511.py`, usando Merchant Center API em modo leitura com credenciais Google via Doppler em processo efêmero.
+- Resultado: 5.000 status de produto lidos, 959 itens P1, 18 grupos de problema, 708 produtos com destino reprovado e 0 writes liberados.
+- Principais issue codes: `item_missing_required_attribute` (9.655 ocorrências), `missing_item_attribute_for_product_type` (2.454), `price_updated` (180), `strikethrough_price_updated` (81) e `checkout_url_invalid` (36).
+- Artefatos: `areas/lk/rotinas/merchant-center-feed-readonly-router-2026-05-11.md`, `reports/lk-merchant-center-feed-readonly-router-2026-05-11.md` e `.json`.
+- Nenhum Merchant Center/feed/Shopify/theme/GSC admin/Indexing API/content publish/campanha/envio/cron foi executado.
+
 ## 2026-05-11 — LK Search Console Read-only Router
 
 - Criado e executado `scripts/lk_search_console_readonly_router_20260511.py`, usando credenciais Google via Doppler em processo efêmero e Search Console em modo read-only.
