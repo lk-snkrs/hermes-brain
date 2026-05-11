@@ -1,8 +1,8 @@
 # LK OS Daily Sales Brief — 2026-05-10
 
-Gerado em: `2026-05-11T21:50:59.905388+00:00`.
+Gerado em: `2026-05-11T22:15:36.269438+00:00`.
 Janela: `2026-05-10T00:00:00-03:00` a `2026-05-10T23:59:59-03:00`.
-Arquivo privado auditável, fora do Git: `/opt/data/hermes_bruno_ingest/local_sql/lk_data_spine_snapshots/lk_os_daily_sales_brief_20260510_215059Z.json`.
+Arquivo privado auditável, fora do Git: `/opt/data/hermes_bruno_ingest/local_sql/lk_data_spine_snapshots/lk_os_daily_sales_brief_20260510_221536Z.json`.
 
 ## 1. Resumo executivo
 
@@ -10,7 +10,7 @@ Ontem a LK vendeu **R$ 34.809,92** em **9 pedidos**. Fonte: `fact_shopify`.
 Online/indefinido: **R$ 34.809,92 / 9 pedidos**. Loja física/POS detectado: **R$ 0,00 / 0 pedidos**.
 GA4: **4301 sessões**, **8 transações GA4**, receita GA4 **R$ 33.009,93**. Fonte: `fact_ga4`, não receita oficial.
 Conversão aproximada pedidos Shopify / sessões GA4: **0.21%**.
-Tiny: **{'ruptura': 3, 'ok_amostra': 1, 'baixo_estoque_vs_venda_do_dia': 1, 'unknown': 5}** nos SKUs vendidos checados. Fonte: `fact_tiny_stock`.
+Tiny: **{'ruptura': 5, 'ok_amostra': 1, 'baixo_estoque_vs_venda_do_dia': 3, 'unknown': 1}** nos SKUs vendidos checados. Fonte: `fact_tiny_stock`.
 
 ## 2. Vendas Shopify
 
@@ -53,11 +53,11 @@ Tiny: **{'ruptura': 3, 'ok_amostra': 1, 'baixo_estoque_vs_venda_do_dia': 1, 'unk
 - **Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto**, SKU `HV8547-001-7`, tamanho `40`: vendido 1 un.; saldo Tiny `0.0`; risco `ruptura`; match `exact_norm_sku`.
 - **Tênis Nike Vomero Premium Barely Volt Verde**, SKU `HQ2050-300-6`, tamanho `39`: vendido 1 un.; saldo Tiny `1.0`; risco `baixo_estoque_vs_venda_do_dia`; match `exact_norm_sku`.
 - **Chinelo Slide Nike Mind 001 Light Smoke Grey Cinza**, SKU `HQ4307-003-10`, tamanho `43`: vendido 1 un.; saldo Tiny `0.0`; risco `ruptura`; match `exact_norm_sku`.
-- **Tênis New Balance 9060 Triple White Branco**, SKU `U9060NRJ-38`, tamanho `38`: vendido 1 un.; saldo Tiny `n/d`; risco `unknown`; match `exact_norm_sku`.
-- **Tênis New Balance 9060 Sea Salt Moonbeam Branco**, SKU `U9060WHT-4`, tamanho `37`: vendido 1 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
-- **Tênis Onitsuka Tiger Tsunahiki Slip-On White/Black Branco**, SKU `1183C529.101-8`, tamanho `41`: vendido 1 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
+- **Tênis New Balance 9060 Triple White Branco**, SKU `U9060NRJ-38`, tamanho `38`: vendido 1 un.; saldo Tiny `1.0`; risco `baixo_estoque_vs_venda_do_dia`; match `exact_norm_sku`.
+- **Tênis New Balance 9060 Sea Salt Moonbeam Branco**, SKU `U9060WHT-4`, tamanho `37`: vendido 1 un.; saldo Tiny `-1.0`; risco `ruptura`; match `exact_norm_sku`.
+- **Tênis Onitsuka Tiger Tsunahiki Slip-On White/Black Branco**, SKU `1183C529.101-8`, tamanho `41`: vendido 1 un.; saldo Tiny `0.0`; risco `ruptura`; match `exact_norm_sku`.
 - **Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo**, SKU `1183C102751-4`, tamanho `37`: vendido 1 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
-- **Tênis New Balance 9060 Cortado Marrom**, SKU `U9060496`, tamanho `37`: vendido 1 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
+- **Tênis New Balance 9060 Cortado Marrom**, SKU `U9060496`, tamanho `37`: vendido 1 un.; saldo Tiny `1.0`; risco `baixo_estoque_vs_venda_do_dia`; match `exact_norm_sku`.
 
 ## 6. Pago, influencers e conteúdo
 
@@ -73,9 +73,9 @@ Tiny: **{'ruptura': 3, 'ok_amostra': 1, 'baixo_estoque_vs_venda_do_dia': 1, 'unk
 
 ## 7. Recomendações e aprovações pendentes
 
-- [P0] Preparar preview de reposição/sourcing para SKUs vendidos com saldo zero no Tiny. Motivo: 3 SKU(s) vendidos aparecem em ruptura no depósito oficial. Aprovação: Sim, antes de fornecedor/compra/Notion.. Fonte: `derived_reconciliation`.
-- [P1] Revisar cobertura dos SKUs com saldo menor ou igual à venda do dia. Motivo: 1 SKU(s) com venda do dia encostando no saldo oficial. Aprovação: Sim, se virar compra, preço ou contato.. Fonte: `derived_reconciliation`.
-- [P1] Resolver mapeamento Shopify SKU ↔ Tiny antes de campanha ou reposição automática. Motivo: 5 SKU(s) vendido(s) sem candidato Tiny seguro ou sem saldo legível. Aprovação: Sim, se exigir correção de cadastro.. Fonte: `derived_reconciliation`.
+- [P0] Preparar preview de reposição/sourcing para SKUs vendidos com saldo zero no Tiny. Motivo: 5 SKU(s) vendidos aparecem em ruptura no depósito oficial. Aprovação: Sim, antes de fornecedor/compra/Notion.. Fonte: `derived_reconciliation`.
+- [P1] Revisar cobertura dos SKUs com saldo menor ou igual à venda do dia. Motivo: 3 SKU(s) com venda do dia encostando no saldo oficial. Aprovação: Sim, se virar compra, preço ou contato.. Fonte: `derived_reconciliation`.
+- [P1] Resolver mapeamento Shopify SKU ↔ Tiny antes de campanha ou reposição automática. Motivo: 1 SKU(s) vendido(s) sem candidato Tiny seguro ou sem saldo legível. Aprovação: Sim, se exigir correção de cadastro.. Fonte: `derived_reconciliation`.
 
 ## 8. Limites da leitura
 

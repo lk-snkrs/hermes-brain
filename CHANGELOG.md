@@ -1,3 +1,11 @@
+## 2026-05-11 — LK Daily + Weekly Silent Cron Activation
+
+- Após Lucas dizer `Seguir` no gate de cadência/destino, ativados os dois primeiros cronjobs read-only da Fase 8 com contrato silent-OK.
+- Criados `LK-AUTO-001` Daily Sales Brief às 08:00 BRT (`0 11 * * *`, job `7c688553e293`) e `LK-AUTO-002` Weekly CEO Review segunda 09:00 BRT (`0 12 * * 1`, job `953b9055458e`).
+- Ambos usam `no_agent=true` e scripts em `/opt/data/scripts/`; stdout vazio = silêncio, stdout com conteúdo = alerta, rc não-zero = falha de watchdog.
+- Resultado: 2 cronjobs criados, 0 n8n flows, 0 envios imediatos, 0 writes produtivos e 0 writes em sistemas de negócio.
+- Artefatos: `areas/lk/rotinas/daily-weekly-silent-cron-activation-2026-05-11.md`, `reports/lk-daily-weekly-silent-cron-activation-2026-05-11.md` e `.json`.
+
 ## 2026-05-11 — LK Daily + Weekly Dry-run Validation
 
 - Executados manualmente os dois primeiros candidatos da Fase 8: `LK-AUTO-001 Daily Sales Brief read-only` e `LK-AUTO-002 Weekly CEO Review read-only`.

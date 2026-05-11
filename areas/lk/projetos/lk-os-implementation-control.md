@@ -291,11 +291,12 @@ Entregáveis:
 - [x] Risco por automação: 4 low e 2 medium documentados.
 - [x] Plano rollback por automação: pause/remove cron, supersede report, revert PR ou cancelar execução antes de envio conforme caso.
 - [x] Teste em modo dry-run: contrato definido por automação; nenhuma ativação feita. `LK-AUTO-001` Daily Sales Brief e `LK-AUTO-002` Weekly CEO Review passaram no primeiro dry-run manual, com 0 cron/n8n/envio/write.
-- [ ] Aprovação Lucas antes de ativar produção.
+- [x] Aprovação Lucas antes de ativar produção: Lucas disse `Seguir` após o gate de cadência/destino; ativados apenas os dois cronjobs low-risk/read-only `LK-AUTO-001` e `LK-AUTO-002`, ambos `no_agent`, silent-OK, com 0 n8n/envio imediato/write produtivo.
 
 Critério de saída:
 
 - Automação roda silenciosa quando OK e alerta só quando precisa.
+- Primeira ativação recorrente: `LK-AUTO-001` Daily 08:00 BRT e `LK-AUTO-002` Weekly segunda 09:00 BRT, ambos `no_agent`/silent-OK; stdout vazio = silêncio, stdout com conteúdo = alerta, rc não-zero = falha de watchdog.
 
 ## Próxima sequência recomendada
 

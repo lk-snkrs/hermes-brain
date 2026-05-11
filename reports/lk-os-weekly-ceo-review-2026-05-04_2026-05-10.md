@@ -1,15 +1,15 @@
 # LK OS Weekly CEO Review — 2026-05-04 a 2026-05-10
 
-Gerado em: `2026-05-11T21:51:50.356893+00:00`.
+Gerado em: `2026-05-11T22:16:11.759571+00:00`.
 Política de janela: `last_7_closed_days_brt`.
-Arquivo privado auditável, fora do Git: `/opt/data/hermes_bruno_ingest/local_sql/lk_data_spine_snapshots/lk_os_weekly_ceo_review_20260504_20260510_215150Z.json`.
+Arquivo privado auditável, fora do Git: `/opt/data/hermes_bruno_ingest/local_sql/lk_data_spine_snapshots/lk_os_weekly_ceo_review_20260504_20260510_221611Z.json`.
 
 ## 1. Resumo CEO
 
 - Shopify: **R$ 312.261,74** em **97 pedidos**, ticket médio **R$ 3.219,19**. Fonte: `fact_shopify`.
 - GA4: **29605 sessões**, **55 transações GA4**, receita GA4 **R$ 164.657,24**. Fonte: `fact_ga4`, não receita oficial.
 - Conversão aproximada Shopify pedidos / GA4 sessões: **0.33%**.
-- Tiny nos SKUs vendidos: **{'ruptura': 7, 'baixo_estoque_vs_venda_da_semana': 3, 'unknown': 4, 'ok_amostra': 1}**. Fonte: `fact_tiny_stock`.
+- Tiny nos SKUs vendidos: **{'ruptura': 3, 'baixo_estoque_vs_venda_da_semana': 1, 'unknown': 11}**. Fonte: `fact_tiny_stock`.
 - Meta Ads: gasto **R$ 9.374,43**, compras plataforma `62.0`, valor plataforma **R$ 140.697,30**, ROAS plataforma `15.01`. Fonte: `platform_signal`.
 - Metricool/Google Ads: linhas `21`, status `200`. Fonte: `platform_signal`.
 
@@ -41,15 +41,15 @@ Arquivo privado auditável, fora do Git: `/opt/data/hermes_bruno_ingest/local_sq
 - **Tênis New Balance 9060 Rich Oak Marrom**, SKU `U9060CCC-4`, tamanho `37`: vendido 3 un.; saldo Tiny `0.0`; risco `ruptura`; match `exact_norm_sku`.
 - **Tênis New Balance 530 Silver White Branco**, SKU `MR530EMA-5`, tamanho `38`: vendido 3 un.; saldo Tiny `1.0`; risco `baixo_estoque_vs_venda_da_semana`; match `exact_norm_sku`.
 - **MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)**, SKU `MED-3410398-OS`, tamanho `sem tamanho informado`: vendido 3 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
-- **Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom**, SKU `HV8547-200-38`, tamanho `38`: vendido 2 un.; saldo Tiny `0.0`; risco `ruptura`; match `exact_norm_sku`.
-- **Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa**, SKU `HV8547-601-37`, tamanho `37`: vendido 2 un.; saldo Tiny `2.0`; risco `baixo_estoque_vs_venda_da_semana`; match `exact_norm_sku`.
-- **Tênis Nike Moon Shoe SP Jacquemus Off White**, SKU `HV8547-002-36`, tamanho `36`: vendido 2 un.; saldo Tiny `0.0`; risco `ruptura`; match `exact_norm_sku`.
-- **Tênis Nike Mind 002 Light Smoke Grey Cinza**, SKU `HQ4308-003-5`, tamanho `36`: vendido 2 un.; saldo Tiny `0.0`; risco `ruptura`; match `exact_norm_sku`.
-- **Tênis New Balance 9060 Sea Salt Moonbeam Branco**, SKU `U9060WHT-4`, tamanho `37`: vendido 2 un.; saldo Tiny `-1.0`; risco `ruptura`; match `exact_norm_sku`.
-- **Tênis New Balance 9060 Angora Sea Salt Bege**, SKU `U9060ERB-3`, tamanho `36`: vendido 2 un.; saldo Tiny `1.0`; risco `baixo_estoque_vs_venda_da_semana`; match `exact_norm_sku`.
+- **Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom**, SKU `HV8547-200-38`, tamanho `38`: vendido 2 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
+- **Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa**, SKU `HV8547-601-37`, tamanho `37`: vendido 2 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
+- **Tênis Nike Moon Shoe SP Jacquemus Off White**, SKU `HV8547-002-36`, tamanho `36`: vendido 2 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
+- **Tênis Nike Mind 002 Light Smoke Grey Cinza**, SKU `HQ4308-003-5`, tamanho `36`: vendido 2 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
+- **Tênis New Balance 9060 Sea Salt Moonbeam Branco**, SKU `U9060WHT-4`, tamanho `37`: vendido 2 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
+- **Tênis New Balance 9060 Angora Sea Salt Bege**, SKU `U9060ERB-3`, tamanho `36`: vendido 2 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
 - **Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo**, SKU `1183C102751-3`, tamanho `36`: vendido 2 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
-- **Polo Comme des Garçons PLAY Red Emblem White Branco**, SKU `CDGP2`, tamanho `G/L`: vendido 2 un.; saldo Tiny `0.0`; risco `ruptura`; match `exact_norm_sku`.
-- **Camiseta Saint Studio Boxy Supima Breuer Preto**, SKU `SST-6502622-M`, tamanho `M/M`: vendido 2 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
+- **Tênis Adidas Samba OG Crochet Pack Sand Strata Bege**, SKU `JR9446-5`, tamanho `38`: vendido 2 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
+- **Polo Comme des Garçons PLAY Red Emblem White Branco**, SKU `CDGP2`, tamanho `G/L`: vendido 2 un.; saldo Tiny `n/d`; risco `unknown`; match `no_safe_candidate`.
 
 ## 5. Mídia e atribuição, ainda como sinal
 
@@ -73,9 +73,9 @@ Arquivo privado auditável, fora do Git: `/opt/data/hermes_bruno_ingest/local_sq
 
 ## 6. Prioridades e aprovações
 
-- [P0] Preparar fila de sourcing/reposição para SKUs vendidos na semana com saldo zero no Tiny. Motivo: 7 SKU(s) vendidos aparecem em ruptura no depósito oficial. Aprovação: Sim, antes de compra/fornecedor/Notion.. Fonte: `derived_reconciliation`.
-- [P1] Revisar cobertura dos SKUs com venda semanal encostando no saldo oficial. Motivo: 3 SKU(s) têm saldo menor ou igual à venda da semana. Aprovação: Sim, se virar compra, preço ou contato.. Fonte: `derived_reconciliation`.
-- [P1] Priorizar saneamento SKU Shopify ↔ Tiny antes de escalar mídia dos produtos vendidos. Motivo: 4 SKU(s) vendidos sem candidato Tiny seguro ou sem saldo legível. Aprovação: Sim, se exigir write em cadastro.. Fonte: `derived_reconciliation`.
+- [P0] Preparar fila de sourcing/reposição para SKUs vendidos na semana com saldo zero no Tiny. Motivo: 3 SKU(s) vendidos aparecem em ruptura no depósito oficial. Aprovação: Sim, antes de compra/fornecedor/Notion.. Fonte: `derived_reconciliation`.
+- [P1] Revisar cobertura dos SKUs com venda semanal encostando no saldo oficial. Motivo: 1 SKU(s) têm saldo menor ou igual à venda da semana. Aprovação: Sim, se virar compra, preço ou contato.. Fonte: `derived_reconciliation`.
+- [P1] Priorizar saneamento SKU Shopify ↔ Tiny antes de escalar mídia dos produtos vendidos. Motivo: 11 SKU(s) vendidos sem candidato Tiny seguro ou sem saldo legível. Aprovação: Sim, se exigir write em cadastro.. Fonte: `derived_reconciliation`.
 - [P2] Usar Meta como sinal de mídia e reconciliar campanhas com landing/referrer/cupom antes de falar em ROAS real. Motivo: Gasto Meta sinalizado equivale a 3.0% da receita Shopify semanal, sem prova SKU por campanha ainda. Aprovação: Não para análise; sim para campanha.. Fonte: `derived_reconciliation`.
 
 ## 7. O que este script não fez

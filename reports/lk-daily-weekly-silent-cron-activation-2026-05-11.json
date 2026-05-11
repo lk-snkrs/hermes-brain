@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-05-11T22:17:37.043836+00:00",
+  "scope": "LK Phase 8 activation for Daily + Weekly read-only silent watchdog cronjobs",
+  "approval_interpretation": "Lucas said “Seguir” after the exact proposed cadence/delivery gate for Daily 08:00 BRT and Weekly Monday 09:00 BRT.",
+  "validation_source": "reports/lk-daily-weekly-dry-run-validation-2026-05-11.json",
+  "validation_summary": {
+    "automations_validated": 2,
+    "dry_runs_passed": 2,
+    "dry_runs_review_needed": 0,
+    "crons_created": 0,
+    "n8n_flows_created": 0,
+    "telegram_sends": 0,
+    "external_sends": 0,
+    "production_writes": 0,
+    "eligible_for_lucas_cadence_approval": 2,
+    "activated_now": 0
+  },
+  "summary": {
+    "cronjobs_created": 2,
+    "no_agent_jobs": 2,
+    "n8n_flows_created": 0,
+    "telegram_immediate_sends": 0,
+    "external_sends_now": 0,
+    "production_writes_now": 0,
+    "business_system_writes_allowed": 0,
+    "silent_ok_enabled": 2
+  },
+  "jobs": [
+    {
+      "automation_id": "LK-AUTO-001",
+      "job_id": "7c688553e293",
+      "name": "LK Daily Sales Brief read-only silent watchdog",
+      "schedule_utc": "0 11 * * *",
+      "schedule_brt": "daily 08:00 BRT",
+      "script": "/opt/data/scripts/lk_daily_sales_brief_watchdog.py",
+      "no_agent": true,
+      "deliver": "origin",
+      "next_run_at_utc": "2026-05-12T11:00:00+00:00",
+      "silent_ok_contract": "rc=0 + empty stdout stays silent; rc=0 + stdout alerts; nonzero rc sends watchdog failure.",
+      "alert_only_when": [
+        "P0/P1 anomaly",
+        "API/source failure",
+        "explicit script failure"
+      ],
+      "blocked_actions": [
+        "n8n_flow",
+        "campaign",
+        "Shopify write",
+        "Tiny write",
+        "Klaviyo send",
+        "WhatsApp send",
+        "supplier contact"
+      ]
+    },
+    {
+      "automation_id": "LK-AUTO-002",
+      "job_id": "953b9055458e",
+      "name": "LK Weekly CEO Review read-only silent watchdog",
+      "schedule_utc": "0 12 * * 1",
+      "schedule_brt": "weekly Monday 09:00 BRT",
+      "script": "/opt/data/scripts/lk_weekly_ceo_review_watchdog.py",
+      "no_agent": true,
+      "deliver": "origin",
+      "next_run_at_utc": "2026-05-18T12:00:00+00:00",
+      "silent_ok_contract": "rc=0 + empty stdout stays silent; rc=0 + stdout alerts; nonzero rc sends watchdog failure.",
+      "alert_only_when": [
+        "P0/P1 anomaly",
+        "API/source failure",
+        "explicit script failure"
+      ],
+      "blocked_actions": [
+        "n8n_flow",
+        "campaign",
+        "Shopify write",
+        "Tiny write",
+        "Klaviyo send",
+        "WhatsApp send",
+        "supplier contact"
+      ]
+    }
+  ],
+  "rollback": [
+    "Pause/remove job_id 7c688553e293 for Daily.",
+    "Pause/remove job_id 953b9055458e for Weekly.",
+    "Cron scripts are local at /opt/data/scripts and can be edited/disabled without touching Shopify/Tiny/GA4."
+  ]
+}
