@@ -1,0 +1,1485 @@
+{
+  "generated_at": "2026-05-11T13:34:53",
+  "scope": "LK OS próxima etapa após saneamento B: Fila A sourcing/reposição read-only, com 6 P0 de baixa venda mantidos pending por decisão Lucas",
+  "source": "reports/lk-stock-sku-saneamento-b-e-preview-a-2026-05-11.json",
+  "guardrails": [
+    "preview interno/read-only",
+    "sem compra/PO",
+    "sem contato fornecedor",
+    "sem Shopify/Tiny write",
+    "sem preço/estoque/campanha"
+  ],
+  "pending_excluded": {
+    "decision": "stand_by_pending_low_sales_manual_fix_later",
+    "count": 6,
+    "source": "reports/lk-p0-blocked-six-correction-queue-2026-05-11.json"
+  },
+  "summary": {
+    "fila_a_rows_considered": 40,
+    "aggregated_sku_variants": 39,
+    "executive_top_count": 15,
+    "p0_count": 11
+  },
+  "top_preview": [
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "HV8547-200-38",
+      "variant": "38",
+      "qty": 5,
+      "revenue": 26999.949999999997,
+      "orders": 5,
+      "evidence": {
+        "discount_code": 3
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.99,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 2,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 5
+      },
+      "score": 222.0,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+      "sku": "AQ9129-170-7",
+      "variant": "40",
+      "qty": 4,
+      "revenue": 13399.96,
+      "orders": 4,
+      "evidence": {
+        "discount_code": 4
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 1.32,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 4
+      },
+      "score": 195.4,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "sku": "1183A201-126-3",
+      "variant": "36",
+      "qty": 3,
+      "revenue": 7199.97,
+      "orders": 3,
+      "evidence": {
+        "discount_code": 3
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.99,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 3
+      },
+      "score": 176.2,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-8",
+      "variant": "41",
+      "qty": 2,
+      "revenue": 11999.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 168.0,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-39",
+      "variant": "39",
+      "qty": 2,
+      "revenue": 9999.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 166.0,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-38",
+      "variant": "38",
+      "qty": 2,
+      "revenue": 9999.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 166.0,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Paraty Birch Cream Bege",
+      "sku": "1183B601.200-6",
+      "variant": "39",
+      "qty": 2,
+      "revenue": 4599.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 160.6,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "sku": "1183C123.252-7",
+      "variant": "40",
+      "qty": 2,
+      "revenue": 4399.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 160.4,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "sku": "1183C123.252-5",
+      "variant": "38",
+      "qty": 2,
+      "revenue": 4399.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 160.4,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "sku": "1183C123.252-4",
+      "variant": "37",
+      "qty": 2,
+      "revenue": 4399.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 160.4,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Jason Markk Essential Kit de Limpeza",
+      "sku": "300110",
+      "variant": "[sem variant]",
+      "qty": 2,
+      "revenue": 399.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": -2.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 156.4,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-5",
+      "variant": "38",
+      "qty": 1,
+      "revenue": 5999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 99.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-7",
+      "variant": "40",
+      "qty": 1,
+      "revenue": 5999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 99.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "sku": "HV8547-700-7",
+      "variant": "40",
+      "qty": 1,
+      "revenue": 5999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 99.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-36",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 98.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    }
+  ],
+  "all_aggregated": [
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "HV8547-200-38",
+      "variant": "38",
+      "qty": 5,
+      "revenue": 26999.949999999997,
+      "orders": 5,
+      "evidence": {
+        "discount_code": 3
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.99,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 2,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 5
+      },
+      "score": 222.0,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+      "sku": "AQ9129-170-7",
+      "variant": "40",
+      "qty": 4,
+      "revenue": 13399.96,
+      "orders": 4,
+      "evidence": {
+        "discount_code": 4
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 1.32,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 4
+      },
+      "score": 195.4,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "sku": "1183A201-126-3",
+      "variant": "36",
+      "qty": 3,
+      "revenue": 7199.97,
+      "orders": 3,
+      "evidence": {
+        "discount_code": 3
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.99,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 3
+      },
+      "score": 176.2,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-8",
+      "variant": "41",
+      "qty": 2,
+      "revenue": 11999.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 168.0,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-39",
+      "variant": "39",
+      "qty": 2,
+      "revenue": 9999.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 166.0,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-38",
+      "variant": "38",
+      "qty": 2,
+      "revenue": 9999.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 166.0,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Paraty Birch Cream Bege",
+      "sku": "1183B601.200-6",
+      "variant": "39",
+      "qty": 2,
+      "revenue": 4599.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 160.6,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "sku": "1183C123.252-7",
+      "variant": "40",
+      "qty": 2,
+      "revenue": 4399.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 160.4,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "sku": "1183C123.252-5",
+      "variant": "38",
+      "qty": 2,
+      "revenue": 4399.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 160.4,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "sku": "1183C123.252-4",
+      "variant": "37",
+      "qty": 2,
+      "revenue": 4399.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 160.4,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Jason Markk Essential Kit de Limpeza",
+      "sku": "300110",
+      "variant": "[sem variant]",
+      "qty": 2,
+      "revenue": 399.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": -2.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 156.4,
+      "next_stage_action": "cotação/sourcing interno prioritário; validar margem, lead time e fornecedor antes de compra"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-5",
+      "variant": "38",
+      "qty": 1,
+      "revenue": 5999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 99.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-7",
+      "variant": "40",
+      "qty": 1,
+      "revenue": 5999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 99.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "sku": "HV8547-700-7",
+      "variant": "40",
+      "qty": 1,
+      "revenue": 5999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 99.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-36",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 98.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "HV8547-200-39",
+      "variant": "39",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": -1.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 98.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-34",
+      "variant": "34",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 98.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "HV8547-200-37",
+      "variant": "37",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 98.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa",
+      "sku": "HV8547-601-34",
+      "variant": "34",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 98.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-37",
+      "variant": "37",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 98.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "HV8547-200-36",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 98.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Vomero Premium SP Black Mini Chrome Swoosh Preto",
+      "sku": "IQ0627-001",
+      "variant": "43",
+      "qty": 1,
+      "revenue": 4499.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 97.5,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Moage White/White Branco",
+      "sku": "1183B555.102-6",
+      "variant": "39",
+      "qty": 1,
+      "revenue": 3999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 97.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Vomero Premium Flat Stout Marrom",
+      "sku": "IQ0028-200",
+      "variant": "42",
+      "qty": 1,
+      "revenue": 3999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 97.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Vomero Premium Flat Stout Marrom",
+      "sku": "IQ0028-209",
+      "variant": "43",
+      "qty": 1,
+      "revenue": 3999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 97.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Air Jordan 1 Low Inside Out Black Preto",
+      "sku": "DN1635001-38-8",
+      "variant": "44",
+      "qty": 1,
+      "revenue": 3499.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 96.5,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Tiger Corsair A55 Midnight Cream Azul",
+      "sku": "1183C317-401-10",
+      "variant": "43",
+      "qty": 1,
+      "revenue": 2999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 96.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Tiger Corsair A55 Black Cream Preto",
+      "sku": "1183C317.001-1",
+      "variant": "34",
+      "qty": 1,
+      "revenue": 2999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 96.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Air Force 1 Low x Supreme Wheat Marrom",
+      "sku": "DN1555-200",
+      "variant": "40",
+      "qty": 1,
+      "revenue": 2999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 96.0,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Boné Sparrow Marrom",
+      "sku": "U9060ZGA-1",
+      "variant": "34",
+      "qty": 1,
+      "revenue": 2799.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 95.8,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 204L Pastel Pink Rosa",
+      "sku": "U204LMMD-3",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 2799.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 95.8,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Bone Sparrow Marrom",
+      "sku": "U9060ZGA-2",
+      "variant": "35",
+      "qty": 1,
+      "revenue": 2799.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 95.8,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Mushroom Arid Stone Bege",
+      "sku": "43774078389050",
+      "variant": "34",
+      "qty": 1,
+      "revenue": 2699.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 95.7,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Mushroom Arid Stone Bege",
+      "sku": "U9060ERC-4",
+      "variant": "37",
+      "qty": 1,
+      "revenue": 2699.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 95.7,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+      "sku": "U9060WHT-6",
+      "variant": "39",
+      "qty": 1,
+      "revenue": 2599.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 95.6,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "sku": "U204LMMC-3",
+      "variant": "36",
+      "qty": 2,
+      "revenue": 5599.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 2.0,
+      "risk": "baixo estoque",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 91.0,
+      "priority": "P2 — monitorar / validar lead time",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 81.6,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Cortado Marrom",
+      "sku": "U9060496",
+      "variant": "37",
+      "qty": 2,
+      "revenue": 4799.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 1.0,
+      "risk": "baixo estoque",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 45.5,
+      "priority": "P2 — monitorar / validar lead time",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 2
+      },
+      "score": 80.8,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Sneakers Brown Bege",
+      "sku": "1025116-1A17741_2NM5J-3",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 8499.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 1.0,
+      "risk": "baixo estoque",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 91.0,
+      "priority": "P2 — monitorar / validar lead time",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 71.5,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+      "sku": "U9060WHT-3",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 2599.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 1.0,
+      "risk": "baixo estoque",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 91.0,
+      "priority": "P2 — monitorar / validar lead time",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação",
+      "source_rows": 1,
+      "influencers": [
+        "Silvia Heinz"
+      ],
+      "evidence_total": {
+        "discount_code": 1
+      },
+      "score": 65.6,
+      "next_stage_action": "monitorar e validar estoque/lead time antes de reposição"
+    }
+  ]
+}

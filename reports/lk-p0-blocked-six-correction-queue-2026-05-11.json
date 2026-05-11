@@ -26,8 +26,9 @@
       "tiny_candidate_ids": "1065543106 | 1069541599",
       "tiny_parent_ids": "1065543095 | 1065543095",
       "tiny_candidate_codes": "[sem codigo] | [sem codigo]",
-      "recommended_next_step": "Definir código canônico/SKU do item e escolher Tiny ID correto; depois criar preview de preenchimento Tiny codigo e Shopify SKU.",
-      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico."
+      "recommended_next_step": "Stand by por decisão Lucas; não puxar para Fila A agora. Corrigir código canônico/Tiny ID depois, quando priorizado.",
+      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico.",
+      "operational_status": "pending_low_sales_manual_fix_later"
     },
     {
       "priority": "P0",
@@ -42,8 +43,9 @@
       "tiny_candidate_ids": "1066011682 | 1069541741 | 1066011725 | 1069541726",
       "tiny_parent_ids": "1066011677 | 1066011677 | 1066011720 | 1066011720",
       "tiny_candidate_codes": "[sem codigo] | [sem codigo] | [sem codigo] | [sem codigo]",
-      "recommended_next_step": "Definir código canônico/SKU do item e escolher Tiny ID correto; depois criar preview de preenchimento Tiny codigo e Shopify SKU.",
-      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico."
+      "recommended_next_step": "Stand by por decisão Lucas; não puxar para Fila A agora. Corrigir código canônico/Tiny ID depois, quando priorizado.",
+      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico.",
+      "operational_status": "pending_low_sales_manual_fix_later"
     },
     {
       "priority": "P0",
@@ -58,8 +60,9 @@
       "tiny_candidate_ids": "1070288342",
       "tiny_parent_ids": "1070288304",
       "tiny_candidate_codes": "[sem codigo]",
-      "recommended_next_step": "Definir código canônico/SKU do item e escolher Tiny ID correto; depois criar preview de preenchimento Tiny codigo e Shopify SKU.",
-      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico."
+      "recommended_next_step": "Stand by por decisão Lucas; não puxar para Fila A agora. Corrigir código canônico/Tiny ID depois, quando priorizado.",
+      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico.",
+      "operational_status": "pending_low_sales_manual_fix_later"
     },
     {
       "priority": "P0",
@@ -74,8 +77,9 @@
       "tiny_candidate_ids": "1065543087 | 1069541614",
       "tiny_parent_ids": "1065543076 | 1065543076",
       "tiny_candidate_codes": "[sem codigo] | [sem codigo]",
-      "recommended_next_step": "Definir código canônico/SKU do item e escolher Tiny ID correto; depois criar preview de preenchimento Tiny codigo e Shopify SKU.",
-      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico."
+      "recommended_next_step": "Stand by por decisão Lucas; não puxar para Fila A agora. Corrigir código canônico/Tiny ID depois, quando priorizado.",
+      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico.",
+      "operational_status": "pending_low_sales_manual_fix_later"
     },
     {
       "priority": "P0",
@@ -90,8 +94,9 @@
       "tiny_candidate_ids": "1063954611 | 1069539379",
       "tiny_parent_ids": "1063954607 | 1063954607",
       "tiny_candidate_codes": "[sem codigo] | [sem codigo]",
-      "recommended_next_step": "Definir código canônico/SKU do item e escolher Tiny ID correto; depois criar preview de preenchimento Tiny codigo e Shopify SKU.",
-      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico."
+      "recommended_next_step": "Stand by por decisão Lucas; não puxar para Fila A agora. Corrigir código canônico/Tiny ID depois, quando priorizado.",
+      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico.",
+      "operational_status": "pending_low_sales_manual_fix_later"
     },
     {
       "priority": "P0",
@@ -106,8 +111,11 @@
       "tiny_candidate_ids": "1063951385 | 1069539349",
       "tiny_parent_ids": "1063951381 | 1063951381",
       "tiny_candidate_codes": "[sem codigo] | [sem codigo]",
-      "recommended_next_step": "Lucas/Júlio escolher qual Tiny ID duplicado é o item real; depois aprovar preencher Tiny codigo com SKU Shopify live e revalidar Shopify.",
-      "approval_boundary": "Tiny codigo write só após escolha do Tiny ID; Shopify write separado se necessário."
+      "recommended_next_step": "Stand by por decisão Lucas; não puxar para Fila A agora. Corrigir código canônico/Tiny ID depois, quando priorizado.",
+      "approval_boundary": "Tiny codigo write só após escolha do Tiny ID; Shopify write separado se necessário.",
+      "operational_status": "pending_low_sales_manual_fix_later"
     }
-  ]
+  ],
+  "lucas_decision": "stand_by_pending_low_sales_fix_later",
+  "operational_status": "pending_low_sales_manual_fix_later"
 }

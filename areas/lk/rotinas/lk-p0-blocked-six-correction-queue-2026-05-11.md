@@ -76,6 +76,19 @@ Após os 2 primeiros writes Tiny e os 7 writes aprovados seguintes, restaram 6 P
 - Próximo passo: Lucas/Júlio escolher qual Tiny ID duplicado é o item real; depois aprovar preencher Tiny codigo com SKU Shopify live e revalidar Shopify.
 - Limite de aprovação: Tiny codigo write só após escolha do Tiny ID; Shopify write separado se necessário.
 
+
+## Decisão Lucas — stand by / pending
+
+Lucas decidiu em 2026-05-11 deixar estes 6 itens em **stand by / pending**, porque são produtos de baixa venda e podem ser arrumados depois.
+
+Estado operacional:
+
+- não mover para Fila A agora;
+- não fazer sourcing/reposição agora;
+- não executar writes Shopify/Tiny agora;
+- manter como `pending_low_sales_manual_fix_later`;
+- retomar somente quando Lucas/Júlio quiserem corrigir código canônico/Tiny ID.
+
 ## Próxima decisão necessária
 
 Para os 5 sem SKU Shopify/Tiny codigo, Lucas/Júlio precisa definir o código canônico e qual Tiny ID fica como registro real quando houver duplicidade. Para Patavision, já existe SKU Shopify (`PAC-5857246-S`), mas há dois matches Tiny P/S sem código; precisa escolher o Tiny ID correto antes de preencher.
