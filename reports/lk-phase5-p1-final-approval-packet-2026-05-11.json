@@ -1,0 +1,133 @@
+{
+  "generated_at": "2026-05-11T14:42:04.619325+00:00",
+  "scope": "Final approval packet for LK Phase 5 P1 ready-only campaign structure; no PII/no send/no list creation.",
+  "private_ids_source": "/opt/data/hermes_bruno_ingest/private_exports/lk_crm/lk_phase5_p1_recipient_ids_2026-05-11.json",
+  "totals": {
+    "ready_recipients_same_size_stock": 78,
+    "blocked_by_stock_or_mapping": 30,
+    "ready_groups": 9,
+    "hold_groups": 1
+  },
+  "approval_options": {
+    "recommended_low_risk": "Approve only READY groups, cap Champions/VIP at concierge/manual, keep HOLD groups out.",
+    "not_approved_without_explicit_ok": [
+      "Klaviyo list/campaign creation",
+      "WhatsApp sends",
+      "customer tags/notes",
+      "discounts",
+      "external exports with PII"
+    ]
+  },
+  "groups": [
+    {
+      "group": "Champions/VIP | Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "ready_recipients": 22,
+      "blocked_recipients": 0,
+      "status": "READY_FOR_APPROVAL_MANUAL_CONCIERGE",
+      "recommended_channel_action": "WhatsApp concierge 1:1 ou Klaviyo VIP limitado; sem desconto.",
+      "copy_guardrail": "Usar somente recipient_refs do arquivo privado e somente tamanhos com estoque Tiny confirmado; não criar campanha/lista sem aprovação explícita.",
+      "copy_angle": "Curadoria reservada/VIP; sem desconto agressivo."
+    },
+    {
+      "group": "Novo alto potencial | Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "ready_recipients": 13,
+      "blocked_recipients": 0,
+      "status": "READY_FOR_APPROVAL_KLAVIYO",
+      "recommended_channel_action": "Klaviyo pós-compra/segunda compra; WhatsApp só para alto ticket/intenção clara.",
+      "copy_guardrail": "Usar somente recipient_refs do arquivo privado e somente tamanhos com estoque Tiny confirmado; não criar campanha/lista sem aprovação explícita.",
+      "copy_angle": "Segunda compra D+21/D+34 baseada em best-seller real e tamanho disponível."
+    },
+    {
+      "group": "Champions/VIP | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "ready_recipients": 9,
+      "blocked_recipients": 2,
+      "status": "READY_FOR_APPROVAL_MANUAL_CONCIERGE",
+      "recommended_channel_action": "WhatsApp concierge 1:1 ou Klaviyo VIP limitado; sem desconto.",
+      "copy_guardrail": "Usar somente recipient_refs do arquivo privado e somente tamanhos com estoque Tiny confirmado; não criar campanha/lista sem aprovação explícita.",
+      "copy_angle": "Curadoria reservada/VIP; sem desconto agressivo."
+    },
+    {
+      "group": "Novo alto potencial | Tênis New Balance 204L Arid Timberwolf Bege",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "ready_recipients": 8,
+      "blocked_recipients": 3,
+      "status": "READY_FOR_APPROVAL_KLAVIYO",
+      "recommended_channel_action": "Klaviyo pós-compra/segunda compra; WhatsApp só para alto ticket/intenção clara.",
+      "copy_guardrail": "Usar somente recipient_refs do arquivo privado e somente tamanhos com estoque Tiny confirmado; não criar campanha/lista sem aprovação explícita.",
+      "copy_angle": "Segunda compra D+21/D+34 baseada em best-seller real e tamanho disponível."
+    },
+    {
+      "group": "Champions/VIP | Tênis New Balance 204L Arid Timberwolf Bege",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "ready_recipients": 7,
+      "blocked_recipients": 6,
+      "status": "READY_FOR_APPROVAL_MANUAL_CONCIERGE",
+      "recommended_channel_action": "WhatsApp concierge 1:1 ou Klaviyo VIP limitado; sem desconto.",
+      "copy_guardrail": "Usar somente recipient_refs do arquivo privado e somente tamanhos com estoque Tiny confirmado; não criar campanha/lista sem aprovação explícita.",
+      "copy_angle": "Curadoria reservada/VIP; sem desconto agressivo."
+    },
+    {
+      "group": "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "ready_recipients": 6,
+      "blocked_recipients": 4,
+      "status": "READY_FOR_APPROVAL_KLAVIYO",
+      "recommended_channel_action": "Klaviyo pós-compra/segunda compra; WhatsApp só para alto ticket/intenção clara.",
+      "copy_guardrail": "Usar somente recipient_refs do arquivo privado e somente tamanhos com estoque Tiny confirmado; não criar campanha/lista sem aprovação explícita.",
+      "copy_angle": "Segunda compra D+21/D+34 baseada em best-seller real e tamanho disponível."
+    },
+    {
+      "group": "Champions/VIP | Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "ready_recipients": 5,
+      "blocked_recipients": 6,
+      "status": "READY_FOR_APPROVAL_MANUAL_CONCIERGE",
+      "recommended_channel_action": "WhatsApp concierge 1:1 ou Klaviyo VIP limitado; sem desconto.",
+      "copy_guardrail": "Usar somente recipient_refs do arquivo privado e somente tamanhos com estoque Tiny confirmado; não criar campanha/lista sem aprovação explícita.",
+      "copy_angle": "Curadoria reservada/VIP; sem desconto agressivo."
+    },
+    {
+      "group": "Champions/VIP | Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "ready_recipients": 5,
+      "blocked_recipients": 6,
+      "status": "READY_FOR_APPROVAL_MANUAL_CONCIERGE",
+      "recommended_channel_action": "WhatsApp concierge 1:1 ou Klaviyo VIP limitado; sem desconto.",
+      "copy_guardrail": "Usar somente recipient_refs do arquivo privado e somente tamanhos com estoque Tiny confirmado; não criar campanha/lista sem aprovação explícita.",
+      "copy_angle": "Curadoria reservada/VIP; sem desconto agressivo."
+    },
+    {
+      "group": "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "ready_recipients": 3,
+      "blocked_recipients": 1,
+      "status": "READY_FOR_APPROVAL_KLAVIYO",
+      "recommended_channel_action": "Klaviyo pós-compra/segunda compra; WhatsApp só para alto ticket/intenção clara.",
+      "copy_guardrail": "Usar somente recipient_refs do arquivo privado e somente tamanhos com estoque Tiny confirmado; não criar campanha/lista sem aprovação explícita.",
+      "copy_angle": "Segunda compra D+21/D+34 baseada em best-seller real e tamanho disponível."
+    },
+    {
+      "group": "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "ready_recipients": 0,
+      "blocked_recipients": 2,
+      "status": "HOLD",
+      "recommended_channel_action": "Segurar; sem estoque/mapeamento suficiente no mesmo tamanho.",
+      "copy_guardrail": "Usar somente recipient_refs do arquivo privado e somente tamanhos com estoque Tiny confirmado; não criar campanha/lista sem aprovação explícita.",
+      "copy_angle": "Segunda compra D+21/D+34 baseada em best-seller real e tamanho disponível."
+    }
+  ]
+}
