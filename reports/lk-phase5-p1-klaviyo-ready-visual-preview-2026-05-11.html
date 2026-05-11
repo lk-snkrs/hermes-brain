@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LK Phase 5 P1, Klaviyo ready visual preview</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+    * { box-sizing:border-box; }
+    body { margin:0; background:#FFFFFF; color:#111111; font-family:Inter, Arial, Helvetica, sans-serif; }
+    .frame { max-width:600px; margin:0 auto; background:#FFFFFF; }
+    .header { background:#050505; height:150px; display:flex; align-items:center; justify-content:center; text-align:center; }
+    .header img { display:block; width:78px; height:auto; }
+    .topline { background:#FFFFFF; padding:27px 20px 20px; text-align:center; border-bottom:1px solid #EEEEEE; }
+    .topline span { font-size:11px; letter-spacing:6px; text-transform:uppercase; color:#8F8F8F; font-weight:300; }
+    .hero { background:#FFFFFF; padding:58px 46px 46px; text-align:center; border-bottom:1px solid #EEEEEE; }
+    .hero .kicker { font-size:10px; letter-spacing:8px; text-transform:uppercase; color:#AAA4A0; margin-bottom:24px; font-weight:300; }
+    .rule { width:38px; height:1px; background:#EEEEEE; margin:25px auto 28px; }
+    h1 { margin:0; font-family:'Playfair Display', Georgia, 'Times New Roman', serif; font-weight:400; font-size:50px; line-height:.95; letter-spacing:-1.2px; }
+    h1 em { color:#8A8A8A; font-style:italic; font-weight:400; }
+    .hero p { color:#777777; font-size:16px; line-height:1.85; margin:0 auto; max-width:425px; }
+    .grid { background:#FFFFFF; display:block; }
+    .card { border-bottom:1px solid #EEEEEE; background:#FFFFFF; }
+    .media { background:#FFFFFF; min-height:285px; display:flex; align-items:center; justify-content:center; overflow:hidden; line-height:0; padding:28px 48px 10px; }
+    .product-img { width:100%; max-width:490px; max-height:245px; object-fit:contain; object-position:center center; display:block; }
+    .image-fallback { color:#777777; font-size:13px; line-height:1.6; text-align:center; padding:34px; }
+    .image-fallback span { font-size:10px; letter-spacing:5px; text-transform:uppercase; color:#C3C3C3; }
+    .info { background:#EEE8E0; padding:40px 58px 46px; text-align:center; display:flex; flex-direction:column; align-items:center; }
+    .eyebrow { color:#9F9891; font-size:9px; letter-spacing:5px; text-transform:uppercase; margin-bottom:16px; font-weight:300; }
+    h3 { font-family:'Playfair Display', Georgia, 'Times New Roman', serif; font-size:31px; line-height:1.1; font-weight:400; margin:0 0 16px; color:#111111; max-width:430px; }
+    .copy { color:#777777; font-size:14px; line-height:1.9; margin:0 0 18px; max-width:410px; }
+    .meta { color:#8A8A8A; font-size:10px; line-height:1.6; margin:0 0 24px; letter-spacing:.5px; }
+    .button { align-self:center; background:#050505; color:#FFFFFF; text-decoration:none; padding:16px 24px; font-size:9px; letter-spacing:3px; text-transform:uppercase; }
+    .manifesto { background:#050505; color:#FFFFFF; margin:0; padding:58px 44px 50px; text-align:center; }
+    .manifesto p { font-family:'Playfair Display', Georgia, 'Times New Roman', serif; font-weight:400; font-style:italic; font-size:25px; line-height:1.45; margin:0 0 20px; color:#F8F8F8; }
+    .manifesto .sig { font-size:9px; letter-spacing:4px; text-transform:uppercase; color:#8A8A8A; }
+    .footer { background:#050505; padding:48px 44px 44px; text-align:center; color:#8A8A8A; }
+    .footer-logo { display:inline-block; margin-bottom:22px; width:66px; height:auto; }
+    .footer-slogan { font-family:'Playfair Display', Georgia, 'Times New Roman', serif; font-weight:400; font-style:italic; font-size:15px; color:#B5B0A8; letter-spacing:.8px; line-height:1.45; margin-bottom:26px; }
+    .footer-rule { width:32px; height:1px; background:rgba(255,255,255,.14); margin:0 auto 22px; }
+    .address { font-size:11px; font-weight:300; line-height:1.9; color:#8A8A8A; }
+    .links { margin-top:18px; }
+    .links a { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:#B5B0A8; text-decoration:none; margin:0 9px; }
+    .unsubscribe { margin-top:24px; padding-top:20px; border-top:1px solid rgba(255,255,255,.08); }
+    .unsubscribe a { font-size:9px; letter-spacing:2.5px; text-transform:uppercase; color:#8A8A8A; text-decoration:none; }
+    @media (max-width:620px) {
+      .frame { max-width:100%; }
+      .hero { padding:54px 34px 44px; }
+      h1 { font-size:44px; }
+      .hero p { font-size:15px; }
+      .media { min-height:270px; padding:26px 32px 8px; }
+      .product-img { max-height:220px; }
+      .info { padding:38px 32px 44px; }
+      h3 { font-size:29px; }
+      .copy { font-size:13.5px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="frame">
+    <header class="header"><img alt="LK Sneakers" src="https://lksneakers.com.br/cdn/shop/files/LOGO-LK-BRANCO_885e01ed-68da-4988-b5a2-4ff4a10e238b.png?v=1763660281"></header>
+    <section class="topline"><span>CURADORIA LK · FILA KLAVIYO P1</span></section>
+    <section class="hero">
+      <div class="kicker">PREVIEW DE APROVAÇÃO</div>
+      <h1>Pronto para<br><em>revisão.</em></h1>
+      <div class="rule"></div>
+      <p>Seleção visual dos grupos Klaviyo P1 da loja física. Tudo permanece interno: sem campanha, sem lista e sem envio.</p>
+    </section>
+    <section class="grid">
+      
+          <article class="card">
+            <div class="media"><img class="product-img" src="https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-204l-arid-timberwolf-bege-lk-u204lmmc-1-7963095.png?v=1759378570" alt="New Balance New Balance 204L Arid Timberwolf tênis em bege original na LK Sneakers"></div>
+            <div class="info">
+              <div class="eyebrow">VIP LK · TAMANHOS 35 E 34 · 3 CLIENTE(S)</div>
+              <h3>New Balance 204L Arid Timberwolf Bege</h3>
+              <p class="copy">Uma curadoria curta para 3 clientes que escolheram New Balance 204L Arid Timberwolf Bege na LK Flagship, reunindo caminhos próximos de estilo com disponibilidade conferida nos tamanhos certos.</p>
+              <p class="meta">Preview visual interno, sem campanha criada e sem envio.</p>
+              <a class="button" href="https://lksneakers.com.br/products/tenis-new-balance-204l-timberwolf-bege">Falar com consultor</a>
+            </div>
+          </article>
+        
+          <article class="card">
+            <div class="media"><img class="product-img" src="https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-204l-mushroom-arid-stone-marrom-lk-u204lmma-1-3317789.png?v=1759378573" alt="New Balance New Balance 204L Mushroom Arid Stone tênis em marrom original na LK Sneakers"></div>
+            <div class="info">
+              <div class="eyebrow">VIP LK · TAMANHOS 37, 42, 34 E 36 · 4 CLIENTE(S)</div>
+              <h3>New Balance 204L Mushroom Arid Stone Marrom</h3>
+              <p class="copy">Uma curadoria curta para 4 clientes que escolheram New Balance 204L Mushroom Arid Stone Marrom na LK Flagship, reunindo caminhos próximos de estilo com disponibilidade conferida nos tamanhos certos.</p>
+              <p class="meta">Preview visual interno, sem campanha criada e sem envio.</p>
+              <a class="button" href="https://lksneakers.com.br/products/tenis-new-balance-204l-mushroom-arid-stone-marrom">Falar com consultor</a>
+            </div>
+          </article>
+        
+          <article class="card">
+            <div class="media"><img class="product-img" src="https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-sd-cream-birch-bege-lk-1183c015101-174264.jpg?v=1737402896" alt="Onitsuka Tiger Onitsuka Tiger Mexico 66 SD Cream Birch tênis em bege original na LK Sneakers"></div>
+            <div class="info">
+              <div class="eyebrow">SEGUNDA COMPRA · TAMANHOS 37 E 36 · 2 CLIENTE(S)</div>
+              <h3>Onitsuka Tiger Mexico 66 SD Cream Birch Bege</h3>
+              <p class="copy">Uma curadoria curta para 2 clientes que escolheram Onitsuka Tiger Mexico 66 SD Cream Birch Bege na LK Flagship, reunindo caminhos próximos de estilo com disponibilidade conferida nos tamanhos certos.</p>
+              <p class="meta">Preview visual interno, sem campanha criada e sem envio.</p>
+              <a class="button" href="https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-sd-cream-birch-bege">Falar com consultor</a>
+            </div>
+          </article>
+        
+    </section>
+    <section class="manifesto"><p>"Curadoria com contexto, disponibilidade conferida e atendimento individual."</p><div class="sig">LK Sneakers</div></section>
+    <footer class="footer">
+      <img class="footer-logo" alt="LK Sneakers" src="https://lksneakers.com.br/cdn/shop/files/LOGO-LK-BRANCO_885e01ed-68da-4988-b5a2-4ff4a10e238b.png?v=1763660281">
+      <div class="footer-slogan">O que é raro,<br>merece ser encontrado</div>
+      <div class="footer-rule"></div>
+      <div class="address">LK Sneakers · Rua Melo Alves, 344 · Jardins, São Paulo</div>
+      <div class="links">
+        <a href="https://instagram.com/lk.sneakers">Instagram</a>
+        <a href="https://tiktok.com/@lk.sneakers_">TikTok</a>
+        <a href="https://wa.me/5511999661409">WhatsApp</a>
+      </div>
+      <div class="unsubscribe"><a href="#">Cancelar inscrição</a></div>
+    </footer>
+  </main>
+</body>
+</html>
