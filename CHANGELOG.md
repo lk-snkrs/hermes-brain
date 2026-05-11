@@ -1,3 +1,11 @@
+## 2026-05-11 — LK OS Daily Sales Brief Telegram preview e silêncio
+
+- Adicionado ao `scripts/lk_os_daily_sales_brief_20260511.py` o preview Telegram-ready do briefing diário, sem envio externo.
+- Contrato de silêncio: `would_notify=true` apenas para P0/P1, falha de API ou pedido explícito do Lucas; caso contrário, manter canal em silêncio.
+- Para 2026-05-10, o preview marcou `trigger=p0_p1_anomaly`, com Shopify `R$ 34.809,92` em 9 pedidos, GA4 4.301 sessões e Tiny com 4 ruptura, 3 baixo estoque e 3 unknown nos SKUs vendidos checados.
+- Artefatos: `reports/lk-os-daily-sales-brief-telegram-preview-2026-05-10.md` e `.json`.
+- Nenhum Telegram automático, cron, campanha, fornecedor, compra, alteração em Shopify/Tiny, banco de produção ou envio externo foi executado.
+
 ## 2026-05-11 — LK OS Daily Sales Brief real read-only
 
 - Criado e executado `scripts/lk_os_daily_sales_brief_20260511.py`, primeiro briefing diário real do LK OS usando Shopify + GA4 + Tiny.

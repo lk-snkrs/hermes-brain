@@ -30,6 +30,8 @@ DOPPLER_TOKEN_FILE = pathlib.Path('/opt/data/hermes_bruno_ingest/.secrets/dopple
 PRIVATE_DIR = pathlib.Path('/opt/data/hermes_bruno_ingest/local_sql/lk_data_spine_snapshots')
 PUBLIC_JSON = ROOT / 'reports/lk-os-daily-sales-brief-2026-05-10.json'
 PUBLIC_MD = ROOT / 'reports/lk-os-daily-sales-brief-2026-05-10.md'
+TELEGRAM_PREVIEW_MD = ROOT / 'reports/lk-os-daily-sales-brief-telegram-preview-2026-05-10.md'
+TELEGRAM_PREVIEW_JSON = ROOT / 'reports/lk-os-daily-sales-brief-telegram-preview-2026-05-10.json'
 OFFICIAL_DEPOSIT = 'LK | CONTROLE ESTOQUE'
 SP_TZ = ZoneInfo('America/Sao_Paulo')
 
@@ -376,6 +378,81 @@ def build_recommendations(shopify: dict[str, Any], tiny: dict[str, Any], ga4: di
     return recs[:6]
 
 
+def build_telegram_preview(public: dict[str, Any], *, explicit_request: bool = False) -> dict[str, Any]:
+    """Build a concise Telegram-ready preview plus a no-send silence decision."""
+    shop = public['sources']['shopify']
+    tiny = public['sources']['tiny_stock']
+    ga4 = public['sources']['ga4']
+    recommendations = public.get('recommendations') or []
+    priorities = {r.get('priority') for r in recommendations}
+    p0_count = sum(1 for r in recommendations if r.get('priority') == 'P0')
+    p1_count = sum(1 for r in recommendations if r.get('priority') == 'P1')
+    has_p0_p1 = bool({'P0', 'P1'} & priorities)
+    api_failure = not (shop.get('ok') and tiny.get('ok') and ga4.get('ok'))
+    orders = int(shop.get('orders_count') or 0)
+    revenue = shop.get('revenue_total') or 0
+    ga4_totals = ga4.get('totals') or {}
+    sessions = int(ga4_totals.get('sessions') or 0)
+    approx_conv = orders / sessions if sessions else None
+    risk_counts = tiny.get('risk_counts') or {}
+    would_notify = bool(explicit_request or has_p0_p1 or api_failure)
+    if explicit_request:
+        trigger = 'explicit_request'
+    elif api_failure:
+        trigger = 'api_failure'
+    elif has_p0_p1:
+        trigger = 'p0_p1_anomaly'
+    else:
+        trigger = 'silent_no_anomaly'
+
+    headline = f"LK OS Daily Brief, {public['business_date']}"
+    if would_notify:
+        subhead = f"Preview interno, não enviado automaticamente. Gatilho: {trigger}."
+    else:
+        subhead = 'Silêncio recomendado: sem P0/P1 e sem pedido explícito.'
+
+    lines = [
+        f"**{headline}**",
+        subhead,
+        '',
+        f"• Vendas: **{brl(revenue)}** em **{orders} pedidos**. Fonte: `fact_shopify`.",
+        f"• GA4: **{sessions} sessões**, **{int(ga4_totals.get('transactions') or 0)} transações GA4**. Fonte: `fact_ga4`, não receita oficial.",
+        f"• Conversão aproximada: **{approx_conv:.2%}** pedidos Shopify / sessões GA4." if approx_conv is not None else '• Conversão aproximada: `n/d`, GA4 sem sessões ou indisponível.',
+        f"• Tiny: ruptura `{risk_counts.get('ruptura', 0)}`, baixo estoque `{risk_counts.get('baixo_estoque_vs_venda_do_dia', 0)}`, unknown `{risk_counts.get('unknown', 0)}`. Fonte: `fact_tiny_stock`.",
+        '',
+        '**Alertas acionáveis**' if would_notify else '**Sem alerta acionável**',
+    ]
+    actionable = [r for r in recommendations if r.get('priority') in {'P0', 'P1'}]
+    if actionable:
+        for rec in actionable[:3]:
+            lines.append(f"• [{rec.get('priority')}] {rec.get('action')} Motivo: {rec.get('why')} Fonte: `{rec.get('source_label')}`.")
+    else:
+        lines.append('• Nenhum P0/P1 detectado. Manter canal em silêncio salvo pedido do Lucas.')
+    lines += [
+        '',
+        '**Guardrail**',
+        '• Isto é preview interno. Não enviou Telegram automático, Klaviyo, WhatsApp, campanha, fornecedor, compra ou alteração em Shopify/Tiny/banco.',
+    ]
+    message = '\n'.join(lines)
+    return {
+        'generated_at': now_utc(),
+        'business_date': public['business_date'],
+        'channel': 'telegram_preview_only',
+        'would_notify': would_notify,
+        'silence_policy': {
+            'mode': 'silent_unless_p0_p1_api_failure_or_explicit_request',
+            'trigger': trigger,
+            'p0_count': p0_count,
+            'p1_count': p1_count,
+            'api_failure': api_failure,
+            'explicit_request': explicit_request,
+        },
+        'source_labels': ['fact_shopify', 'fact_ga4', 'fact_tiny_stock', 'derived_reconciliation'],
+        'message_markdown': message,
+        'not_performed': ['telegram_send', 'cron', 'external_send', 'campaign', 'shopify_write', 'tiny_write', 'supplier_contact', 'production_db_write'],
+    }
+
+
 def sanitize_for_public(report: dict[str, Any]) -> dict[str, Any]:
     blocked = {'email', 'phone', 'customer', 'address', 'token', 'api_key', 'authorization', 'first_name', 'last_name', 'cpf', 'cnpj'}
 
@@ -400,6 +477,10 @@ def write_outputs(report: dict[str, Any]) -> None:
 
     public = sanitize_for_public(report)
     PUBLIC_JSON.write_text(json.dumps(public, ensure_ascii=False, indent=2))
+
+    telegram_preview = build_telegram_preview(public)
+    TELEGRAM_PREVIEW_JSON.write_text(json.dumps(telegram_preview, ensure_ascii=False, indent=2))
+    TELEGRAM_PREVIEW_MD.write_text(telegram_preview['message_markdown'] + '\n')
 
     shop = public['sources']['shopify']
     tiny = public['sources']['tiny_stock']
@@ -497,7 +578,7 @@ def main() -> None:
         'private_notes': 'Raw response intentionally minimized; order customer fields were not requested from Shopify.',
     }
     write_outputs(report)
-    print(json.dumps({'business_date': date, 'shopify_orders': shop.get('orders_count'), 'shopify_revenue': shop.get('revenue_total'), 'tiny_risks': tiny.get('risk_counts'), 'ga4_sessions': ((ga4.get('totals') or {}).get('sessions') if ga4.get('ok') else None), 'public_json': str(PUBLIC_JSON), 'public_md': str(PUBLIC_MD)}, ensure_ascii=False))
+    print(json.dumps({'business_date': date, 'shopify_orders': shop.get('orders_count'), 'shopify_revenue': shop.get('revenue_total'), 'tiny_risks': tiny.get('risk_counts'), 'ga4_sessions': ((ga4.get('totals') or {}).get('sessions') if ga4.get('ok') else None), 'public_json': str(PUBLIC_JSON), 'public_md': str(PUBLIC_MD), 'telegram_preview_json': str(TELEGRAM_PREVIEW_JSON), 'telegram_preview_md': str(TELEGRAM_PREVIEW_MD)}, ensure_ascii=False))
 
 
 if __name__ == '__main__':
