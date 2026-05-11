@@ -180,11 +180,13 @@ Entregáveis:
 
 - [x] Dicionário campaign/influencer seed.
 - [x] Dicionário v0.2 com produto/SKU/tamanho/estoque.
-- [ ] Handles/cupons oficiais por influencer.
-- [ ] Ponte segura ad_id/utm_content/cupom/landing/referrer/note/tag.
+- [x] Handles/cupons oficiais por influencer, primeira fila de identidade criada para Silvia, Helena e Lala; valores oficiais seguem pendentes de Lucas/Pareto/LK, sem criar cupom/campanha.
+- [x] Ponte segura ad_id/utm_content/cupom/landing/referrer/note/tag iniciada como Identity Bridge read-only: Silvia alta confiança, Helena média, Lala investigação; Meta permanece `platform_signal`.
 - [ ] Separação `Pareto-compatible` vs `Lucas-operational`.
 - [ ] Rotina semanal de e-mail interno LK/Klaviyo-real, sem dashboard/tool jargon.
 - [ ] Regra de criativos: só incluir imagem se visual claro e aprovado.
+
+Artefato atual: `areas/lk/sub-areas/trafego-pago/contexto/campaign-attribution-dictionary-v0.2.md` + `areas/lk/sub-areas/trafego-pago/rotinas/influencer-identity-bridge-readonly-2026-05-11.md` + `reports/lk-os-influencer-identity-bridge-2026-05-11.md`.
 
 Critério de saída:
 

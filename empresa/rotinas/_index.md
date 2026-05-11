@@ -79,7 +79,9 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Outcomes Tracker | `areas/lk/sub-areas/crm/rotinas/outcomes-tracker.md` | Status de sugestões Hermes |
 | Creative Pipeline | `areas/lk/sub-areas/trafego-pago/rotinas/creative-pipeline.md` | Hipótese → criativo → teste → learning |
 | LK Ads Intelligence | `areas/lk/sub-areas/trafego-pago/rotinas/lk-ads-intelligence-metricool-meta-20260509.md` | Fonte validada para Google Ads via Metricool, Meta direto e leitura de influencer/product fit |
-| Campaign Attribution Dictionary LK | `areas/lk/sub-areas/trafego-pago/rotinas/campaign-attribution-dictionary.md` | Dicionário canônico campanha/influencer → UTM/cupom/produto/SKU/tamanho/estoque |
+| Campaign Attribution Dictionary | `areas/lk/sub-areas/trafego-pago/rotinas/campaign-attribution-dictionary.md` | Dicionário de campanha/influencer/produto |
+| LK Influencer Identity Bridge Read-only 2026-05-11 | `areas/lk/sub-areas/trafego-pago/rotinas/influencer-identity-bridge-readonly-2026-05-11.md` | Fila de handles/cupons/ad_id/UTM oficiais por influencer, com ponte Shopify/Tiny e Meta como platform_signal |
+| Product Dashboard | `areas/lk/sub-areas/ecommerce/rotinas/product-dashboard.md` | Saúde de PDPs |
 | Weekly Influencer Sales Email | `areas/lk/sub-areas/trafego-pago/rotinas/weekly-influencer-sales-email.md` | E-mail semanal aprovado com vendas por influencer, Meta canônico e comparação WoW |
 | Pareto-Compatible Monthly Reconciliation | `areas/lk/sub-areas/trafego-pago/rotinas/pareto-monthly-reconciliation.md` | Conferência mensal com lógica Maicon/Pareto, tolerância 99%+ e leitura Lucas-operacional separada |
 | Consolidar FAQ | `areas/lk/sub-areas/atendimento/rotinas/consolidar-faq.md` | Loop FAQ/suporte/bot |

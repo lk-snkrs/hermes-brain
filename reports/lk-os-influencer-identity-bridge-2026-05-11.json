@@ -1,0 +1,562 @@
+{
+  "generated_at": "2026-05-11T20:18:19.657678+00:00",
+  "scope": "LK OS Phase 3 influencer identity bridge, read-only",
+  "read_only": true,
+  "sources": {
+    "dictionary_v02": "areas/lk/sub-areas/trafego-pago/contexto/campaign-attribution-dictionary-v0.2.md",
+    "influencer_sku_stock_matrix": "reports/lk-influencer-sku-stock-matrix-readonly-2026-05-10.json",
+    "meta_campaign_title_roas": "reports/lk-meta-campaign-title-roas-readonly-2026-05-10.json"
+  },
+  "summary": {
+    "influencer_rows": 3,
+    "confidence_counts": {
+      "high": 1,
+      "medium": 1,
+      "low": 1
+    },
+    "matched_orders_fact_shopify_total": 131,
+    "revenue_fact_shopify_total": 463078.29,
+    "source_labels": [
+      "fact_shopify",
+      "fact_tiny_stock",
+      "platform_signal",
+      "derived_reconciliation"
+    ]
+  },
+  "platform_campaign_context": {
+    "period": {
+      "from": "2025-12-01",
+      "to": "2026-05-10"
+    },
+    "meta_campaign_count": 8,
+    "meta_spend_total_campaigns_platform_signal": 190469.81,
+    "meta_value_total_campaigns_platform_signal": 11457768.120000001,
+    "shopify_web_orders_fact_shopify": 1390,
+    "shopify_web_revenue_fact_shopify": 4423457.58,
+    "campaigns_with_shopify_utm_orders": 3,
+    "campaigns": [
+      {
+        "campaign_id": "120223728385160224",
+        "campaign_name": "Pareto.Vendas-Adv [ Geral]",
+        "family": "advantage/broad",
+        "spend_platform_signal": 62523.72,
+        "value_meta_platform_signal": 3863919.3000000003,
+        "roas_meta_attributed_platform_signal": 61.799254746838486,
+        "shopify_utm_orders_fact_shopify": 0,
+        "shopify_utm_revenue_fact_shopify": 0.0
+      },
+      {
+        "campaign_id": "120210118442410224",
+        "campaign_name": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+        "family": "advantage/broad",
+        "spend_platform_signal": 36296.67,
+        "value_meta_platform_signal": 2542659.81,
+        "roas_meta_attributed_platform_signal": 70.05215106509772,
+        "shopify_utm_orders_fact_shopify": 3,
+        "shopify_utm_revenue_fact_shopify": 10799.98
+      },
+      {
+        "campaign_id": "120206303993560224",
+        "campaign_name": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+        "family": "remarketing",
+        "spend_platform_signal": 32274.1,
+        "value_meta_platform_signal": 2320329.06,
+        "roas_meta_attributed_platform_signal": 71.89446212287872,
+        "shopify_utm_orders_fact_shopify": 6,
+        "shopify_utm_revenue_fact_shopify": 18489.97
+      },
+      {
+        "campaign_id": "120241297336180224",
+        "campaign_name": "Pareto.lancamento.Jacquemus",
+        "family": "other",
+        "spend_platform_signal": 17853.12,
+        "value_meta_platform_signal": 1218679.74,
+        "roas_meta_attributed_platform_signal": 68.26144337796418,
+        "shopify_utm_orders_fact_shopify": 0,
+        "shopify_utm_revenue_fact_shopify": 0.0
+      },
+      {
+        "campaign_id": "120210400473720224",
+        "campaign_name": "[PD][MEIO] TRAF (antiga Simples | Tráfego)",
+        "family": "other",
+        "spend_platform_signal": 17397.13,
+        "value_meta_platform_signal": 7125.0,
+        "roas_meta_attributed_platform_signal": 0.4095503108846114,
+        "shopify_utm_orders_fact_shopify": 0,
+        "shopify_utm_revenue_fact_shopify": 0.0
+      },
+      {
+        "campaign_id": "120215662888410224",
+        "campaign_name": "[Pareto] [FUNDO] DABA",
+        "family": "other",
+        "spend_platform_signal": 16526.39,
+        "value_meta_platform_signal": 1037493.36,
+        "roas_meta_attributed_platform_signal": 62.77797873582797,
+        "shopify_utm_orders_fact_shopify": 15,
+        "shopify_utm_revenue_fact_shopify": 41027.24
+      },
+      {
+        "campaign_id": "120242040260550224",
+        "campaign_name": "Pareto.Vendas [Masculino]",
+        "family": "other",
+        "spend_platform_signal": 5203.6,
+        "value_meta_platform_signal": 467561.85000000003,
+        "roas_meta_attributed_platform_signal": 89.8535340917826,
+        "shopify_utm_orders_fact_shopify": 0,
+        "shopify_utm_revenue_fact_shopify": 0.0
+      },
+      {
+        "campaign_id": "120207942153600224",
+        "campaign_name": "[PD] [TOPO] Alcance Loja Física (antiga Simples | Alcance - Loja e Bairros)",
+        "family": "other",
+        "spend_platform_signal": 2395.08,
+        "value_meta_platform_signal": 0,
+        "roas_meta_attributed_platform_signal": 0.0,
+        "shopify_utm_orders_fact_shopify": 0,
+        "shopify_utm_revenue_fact_shopify": 0.0
+      }
+    ]
+  },
+  "identity_bridge": [
+    {
+      "identity_bridge_id": "LK-INFLUENCER-SILVIA_HEINZ-20260511",
+      "influencer_name": "Silvia Heinz",
+      "current_status": "validated_needs_official_handle_coupon_registry",
+      "confidence": "high",
+      "dictionary_status_v02": "validated_stock_actionable",
+      "official_handle_status": "missing_pending_lucas_or_agency_confirmation",
+      "official_coupon_status": "missing_pending_lucas_or_agency_confirmation",
+      "current_handle_value": "`[a confirmar]`",
+      "shopify_bridge_strength": "strong",
+      "matched_orders_fact_shopify": 117,
+      "revenue_fact_shopify": 429291.45,
+      "qty_fact_shopify": 147,
+      "risk_counts_fact_tiny_stock": {
+        "ruptura agora": 86,
+        "sem SKU no Shopify": 23,
+        "baixo estoque": 6,
+        "ok/monitorar": 1,
+        "mapear SKU no Tiny": 6
+      },
+      "evidence_counts_fact_shopify": {
+        "discount_code": 146,
+        "landing_site": 2
+      },
+      "known_ad_patterns_platform_signal": [
+        {
+          "campaign_name_pattern": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+          "adset_name_pattern": "RMKT (Site + Instagram + Vídeo)",
+          "ad_name_pattern": "[influencer Silvia start 11.12.25- RMKT]"
+        },
+        {
+          "campaign_name_pattern": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+          "adset_name_pattern": "Simples | Vendas Advantage+ [clube do sky]",
+          "ad_name_pattern": "[influencer Silvia start 11.12.25- Adv geral] — — Cópia"
+        },
+        {
+          "campaign_name_pattern": "Pareto.Vendas-Adv [ Geral]",
+          "adset_name_pattern": "Pareto.Vendas-Adv [ Campanha Nova]",
+          "ad_name_pattern": "[influencer Silvia | start 20-12-25 | Camp Onitsuka] — Cópia"
+        },
+        {
+          "campaign_name_pattern": "Pareto.Vendas-Adv [ Geral]",
+          "adset_name_pattern": "Stories",
+          "ad_name_pattern": "[influencer Silvia | start 20-12-25 | Onitsuka Sabot Stories 3]"
+        },
+        {
+          "campaign_name_pattern": "Pareto.Vendas-Adv [ Geral]",
+          "adset_name_pattern": "Stories",
+          "ad_name_pattern": "[influencer Silvia | start 15-12-25 | New Balance 204L Stories 1]"
+        }
+      ],
+      "missing_fields_to_operationalize": [
+        "official_coupon_codes_or_confirmed_no_coupon",
+        "ad_id_or_utm_content_per_creative"
+      ],
+      "safe_next_step": "collect_official_handle_coupon_ad_id_registry_preview_only",
+      "blocked_until_confirmed": [
+        "coupon_creation_or_edit",
+        "campaign_naming_change",
+        "budget_or_creative_change",
+        "customer_send",
+        "stock_or_purchase_action"
+      ],
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "platform_signal",
+        "derived_reconciliation"
+      ],
+      "top_product_sku_size_examples_sanitized": [
+        {
+          "product": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+          "sku": "HV8547-200-38",
+          "size_or_variant": "38",
+          "qty": 3,
+          "revenue_fact_shopify": 14999.97,
+          "stock_risk_fact_tiny_stock": "ruptura agora",
+          "evidence_types": [
+            "discount_code"
+          ]
+        },
+        {
+          "product": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+          "sku": "[sem SKU no Shopify]",
+          "size_or_variant": "37",
+          "qty": 3,
+          "revenue_fact_shopify": 14999.97,
+          "stock_risk_fact_tiny_stock": "sem SKU no Shopify",
+          "evidence_types": [
+            "discount_code",
+            "landing_site"
+          ]
+        },
+        {
+          "product": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+          "sku": "AQ9129-170-7",
+          "size_or_variant": "40",
+          "qty": 4,
+          "revenue_fact_shopify": 13399.96,
+          "stock_risk_fact_tiny_stock": "ruptura agora",
+          "evidence_types": [
+            "discount_code"
+          ]
+        },
+        {
+          "product": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom",
+          "sku": "HV8547-200-38",
+          "size_or_variant": "38",
+          "qty": 2,
+          "revenue_fact_shopify": 11999.98,
+          "stock_risk_fact_tiny_stock": "ruptura agora",
+          "evidence_types": [
+            "discount_code"
+          ]
+        },
+        {
+          "product": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+          "sku": "HV8547-001-8",
+          "size_or_variant": "41",
+          "qty": 2,
+          "revenue_fact_shopify": 11999.98,
+          "stock_risk_fact_tiny_stock": "ruptura agora",
+          "evidence_types": [
+            "discount_code"
+          ]
+        },
+        {
+          "product": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+          "sku": "HV8547-002-39",
+          "size_or_variant": "39",
+          "qty": 2,
+          "revenue_fact_shopify": 9999.98,
+          "stock_risk_fact_tiny_stock": "ruptura agora",
+          "evidence_types": [
+            "discount_code"
+          ]
+        },
+        {
+          "product": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+          "sku": "HV8547-002-38",
+          "size_or_variant": "38",
+          "qty": 2,
+          "revenue_fact_shopify": 9999.98,
+          "stock_risk_fact_tiny_stock": "ruptura agora",
+          "evidence_types": [
+            "discount_code"
+          ]
+        },
+        {
+          "product": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+          "sku": "[sem SKU no Shopify]",
+          "size_or_variant": "36",
+          "qty": 2,
+          "revenue_fact_shopify": 9999.98,
+          "stock_risk_fact_tiny_stock": "sem SKU no Shopify",
+          "evidence_types": [
+            "discount_code"
+          ]
+        }
+      ]
+    },
+    {
+      "identity_bridge_id": "LK-INFLUENCER-HELENA_LUNARDELLI-20260511",
+      "influencer_name": "Helena Lunardelli",
+      "current_status": "mapped_needs_official_registry_and_ad_id_bridge",
+      "confidence": "medium",
+      "dictionary_status_v02": "validated_stock_actionable",
+      "official_handle_status": "missing_pending_lucas_or_agency_confirmation",
+      "official_coupon_status": "missing_pending_lucas_or_agency_confirmation",
+      "current_handle_value": "`[a confirmar]`",
+      "shopify_bridge_strength": "partial",
+      "matched_orders_fact_shopify": 14,
+      "revenue_fact_shopify": 33786.84,
+      "qty_fact_shopify": 16,
+      "risk_counts_fact_tiny_stock": {
+        "sem SKU no Shopify": 2,
+        "ok/monitorar": 1,
+        "ruptura agora": 11,
+        "mapear SKU no Tiny": 2
+      },
+      "evidence_counts_fact_shopify": {
+        "note_attributes": 10,
+        "landing_site": 6,
+        "discount_code": 2
+      },
+      "known_ad_patterns_platform_signal": [
+        {
+          "campaign_name_pattern": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+          "adset_name_pattern": "RMKT (Site + Instagram + Vídeo)",
+          "ad_name_pattern": "[influencer Helena | start 07-12-25 | Stories 3] — Cópia"
+        },
+        {
+          "campaign_name_pattern": "Pareto.Vendas-Adv [ Geral]",
+          "adset_name_pattern": "Stories",
+          "ad_name_pattern": "[influencer Helena | start 07-12-25 | Stories 3]"
+        },
+        {
+          "campaign_name_pattern": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+          "adset_name_pattern": "Simples | Vendas Advantage+ [clube do sky]",
+          "ad_name_pattern": "[influencer Helena | start 07-12-25 | Stories 3] — Cópia"
+        },
+        {
+          "campaign_name_pattern": "Pareto.Vendas-Adv [ Geral]",
+          "adset_name_pattern": "Stories",
+          "ad_name_pattern": "[influencer Helena | start 07-12-25 | Stories 1 ] —"
+        },
+        {
+          "campaign_name_pattern": "Pareto.Vendas-Adv [ Geral]",
+          "adset_name_pattern": "Stories",
+          "ad_name_pattern": "[influencer Helena | start 07-12-25 | Stories 5] — —"
+        }
+      ],
+      "missing_fields_to_operationalize": [
+        "official_coupon_codes_or_confirmed_no_coupon",
+        "ad_id_or_utm_content_per_creative"
+      ],
+      "safe_next_step": "collect_official_handle_coupon_ad_id_registry_preview_only",
+      "blocked_until_confirmed": [
+        "coupon_creation_or_edit",
+        "campaign_naming_change",
+        "budget_or_creative_change",
+        "customer_send",
+        "stock_or_purchase_action"
+      ],
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "platform_signal",
+        "derived_reconciliation"
+      ],
+      "top_product_sku_size_examples_sanitized": [
+        {
+          "product": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+          "sku": "[sem SKU no Shopify]",
+          "size_or_variant": "38",
+          "qty": 1,
+          "revenue_fact_shopify": 4999.99,
+          "stock_risk_fact_tiny_stock": "sem SKU no Shopify",
+          "evidence_types": [
+            "note_attributes"
+          ]
+        },
+        {
+          "product": "Tênis New Balance 204L Arid Timberwolf Bege",
+          "sku": "U204LMMC-3",
+          "size_or_variant": "36",
+          "qty": 1,
+          "revenue_fact_shopify": 2799.99,
+          "stock_risk_fact_tiny_stock": "ok/monitorar",
+          "evidence_types": [
+            "landing_site",
+            "note_attributes"
+          ]
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 SD Vin Clay Canyon Cream Marrom",
+          "sku": "1183C015.205-3",
+          "size_or_variant": "36",
+          "qty": 1,
+          "revenue_fact_shopify": 2499.99,
+          "stock_risk_fact_tiny_stock": "ruptura agora",
+          "evidence_types": [
+            "note_attributes"
+          ]
+        },
+        {
+          "product": "Tênis New Balance 9060 Sea Salt Concrete Branco",
+          "sku": "U9060ECA-10",
+          "size_or_variant": "40",
+          "qty": 1,
+          "revenue_fact_shopify": 2499.99,
+          "stock_risk_fact_tiny_stock": "ruptura agora",
+          "evidence_types": [
+            "landing_site"
+          ]
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege",
+          "sku": "1183C015-202-2",
+          "size_or_variant": "35",
+          "qty": 1,
+          "revenue_fact_shopify": 2499.99,
+          "stock_risk_fact_tiny_stock": "ruptura agora",
+          "evidence_types": [
+            "landing_site"
+          ]
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege",
+          "sku": "1183A872.101-4",
+          "size_or_variant": "37",
+          "qty": 1,
+          "revenue_fact_shopify": 2499.99,
+          "stock_risk_fact_tiny_stock": "ruptura agora",
+          "evidence_types": [
+            "landing_site"
+          ]
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 SD Birch Metropolis Bege",
+          "sku": "1183C015200",
+          "size_or_variant": "36",
+          "qty": 1,
+          "revenue_fact_shopify": 2499.99,
+          "stock_risk_fact_tiny_stock": "ruptura agora",
+          "evidence_types": [
+            "discount_code"
+          ]
+        },
+        {
+          "product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+          "sku": "1183C015101",
+          "size_or_variant": "38",
+          "qty": 1,
+          "revenue_fact_shopify": 2499.99,
+          "stock_risk_fact_tiny_stock": "ruptura agora",
+          "evidence_types": [
+            "note_attributes"
+          ]
+        }
+      ]
+    },
+    {
+      "identity_bridge_id": "LK-INFLUENCER-LALA_NOLETO-20260511",
+      "influencer_name": "Lala Noleto",
+      "current_status": "investigation_required_before_operational_use",
+      "confidence": "low",
+      "dictionary_status_v02": "ambiguous_meta_signal_only",
+      "official_handle_status": "missing_pending_lucas_or_agency_confirmation",
+      "official_coupon_status": "missing_pending_lucas_or_agency_confirmation",
+      "current_handle_value": "`[a confirmar]`",
+      "shopify_bridge_strength": "none_found_in_recorte",
+      "matched_orders_fact_shopify": 0,
+      "revenue_fact_shopify": 0.0,
+      "qty_fact_shopify": 0,
+      "risk_counts_fact_tiny_stock": {},
+      "evidence_counts_fact_shopify": {},
+      "known_ad_patterns_platform_signal": [
+        {
+          "campaign_name_pattern": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+          "adset_name_pattern": "Simples | Vendas Advantage+ [clube do sky]",
+          "ad_name_pattern": "[influencer Lala noleto] —Simples"
+        },
+        {
+          "campaign_name_pattern": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+          "adset_name_pattern": "RMKT (Site + Instagram + Vídeo)",
+          "ad_name_pattern": "[influencer Lala noleto] — RMKT"
+        },
+        {
+          "campaign_name_pattern": "Pareto.Vendas-Adv [ Geral]",
+          "adset_name_pattern": "Pareto.Vendas-Adv [ Campanha Nova]",
+          "ad_name_pattern": "[influencer Lala noleto] — Adv geral"
+        },
+        {
+          "campaign_name_pattern": "[PD] [FUNDO] RMKT (antiga Campanha Simples | Vendas )",
+          "adset_name_pattern": "RMKT (Site + Instagram + Vídeo)",
+          "ad_name_pattern": "[influencer Lala-Nolleto- start 30-04-2026  Adv geral] — DIA DAS MÃES — Cópia"
+        },
+        {
+          "campaign_name_pattern": "[PD][FUNDO] ADV+ (antiga Simples | Vendas Advantage+)",
+          "adset_name_pattern": "Simples | Vendas Advantage+ [clube do sky]",
+          "ad_name_pattern": "[influencer Lala-Nolleto- start 30-04-2026  Adv geral] — DIA DAS MÃES"
+        }
+      ],
+      "missing_fields_to_operationalize": [
+        "official_coupon_codes_or_confirmed_no_coupon",
+        "ad_id_or_utm_content_per_creative",
+        "shopify_bridge_evidence"
+      ],
+      "safe_next_step": "investigate_real_bridge_before_stock_campaign_decision",
+      "blocked_until_confirmed": [
+        "coupon_creation_or_edit",
+        "campaign_naming_change",
+        "budget_or_creative_change",
+        "customer_send",
+        "stock_or_purchase_action"
+      ],
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "platform_signal",
+        "derived_reconciliation"
+      ],
+      "top_product_sku_size_examples_sanitized": []
+    }
+  ],
+  "official_registry_template_preview": [
+    {
+      "influencer_name": "Silvia Heinz",
+      "official_handle": null,
+      "official_coupon_codes": [],
+      "official_utm_content_patterns": [],
+      "official_ad_ids": [],
+      "approved_product_themes": [],
+      "commercial_window_start": null,
+      "commercial_window_end": null,
+      "owner_to_confirm": "Lucas/Pareto/LK",
+      "status": "pending_confirmation",
+      "notes": "Do not create coupons/campaigns from this template; fill only after human confirmation."
+    },
+    {
+      "influencer_name": "Helena Lunardelli",
+      "official_handle": null,
+      "official_coupon_codes": [],
+      "official_utm_content_patterns": [],
+      "official_ad_ids": [],
+      "approved_product_themes": [],
+      "commercial_window_start": null,
+      "commercial_window_end": null,
+      "owner_to_confirm": "Lucas/Pareto/LK",
+      "status": "pending_confirmation",
+      "notes": "Do not create coupons/campaigns from this template; fill only after human confirmation."
+    },
+    {
+      "influencer_name": "Lala Noleto",
+      "official_handle": null,
+      "official_coupon_codes": [],
+      "official_utm_content_patterns": [],
+      "official_ad_ids": [],
+      "approved_product_themes": [],
+      "commercial_window_start": null,
+      "commercial_window_end": null,
+      "owner_to_confirm": "Lucas/Pareto/LK",
+      "status": "pending_confirmation",
+      "notes": "Do not create coupons/campaigns from this template; fill only after human confirmation."
+    }
+  ],
+  "not_performed": [
+    "live_meta_call",
+    "live_shopify_call",
+    "live_tiny_call",
+    "coupon_create_or_update",
+    "campaign_or_budget_or_creative_change",
+    "utm_change",
+    "shopify_write",
+    "tiny_write",
+    "klaviyo_or_whatsapp_or_email_send",
+    "stock_or_price_change",
+    "production_db_write",
+    "cron_creation"
+  ]
+}
