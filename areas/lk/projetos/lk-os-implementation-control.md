@@ -117,18 +117,20 @@ Critério de saída:
 
 ### Fase 1 — Data spine read-only
 
-Status: próximo bloco recomendado.
+Status: iniciado em 2026-05-11 com Data Spine v0.1 documental/read-only.
 
 Objetivo: consolidar um esqueleto de dados confiável, sem writes, que permita relatórios consistentes.
 
 Entregáveis:
 
-- [ ] Inventário de fontes: Shopify, Tiny, GA4, Search Console, Meta, Google Ads/Metricool, Klaviyo, Judge.me, Frenet, Notion.
-- [ ] Matriz de credenciais esperadas no Doppler, sem valores.
+- [x] Inventário de fontes v0.1: Shopify, Tiny, GA4, Search Console, Meta, Google Ads/Metricool, Klaviyo, Judge.me, Frenet, Notion.
+- [x] Matriz de credenciais esperadas no Doppler, sem valores, com status OK/MISSING por nome.
 - [ ] Scripts read-only com outputs auditáveis e contagem/freshness.
-- [ ] Dicionário de entidades canônicas: pedido, cliente, produto, variante, SKU, tamanho, campanha, influencer, cupom, UTM.
-- [ ] Regras de reconciliação Shopify vs GA4 vs Meta/Google.
-- [ ] Relatório de lacunas: dados ausentes, APIs instáveis, riscos de PII.
+- [x] Dicionário de entidades canônicas v0.1: pedido, cliente, produto, variante, SKU, tamanho, campanha, influencer, cupom, UTM, aprovação/ação.
+- [x] Regras de reconciliação Shopify vs GA4 vs Meta/Google v0.1.
+- [x] Relatório de lacunas v0.1: Tiny freshness, Merchant Center, Judge.me/Frenet, Notion writes, Klaviyo UI link, PII e rótulos de fonte.
+
+Artefato atual: `areas/lk/rotinas/data-spine-readonly-2026-05-11.md` + `areas/lk/contexto/data-spine-v0.1.md`.
 
 Critério de saída:
 

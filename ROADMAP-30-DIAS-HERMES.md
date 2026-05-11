@@ -109,9 +109,11 @@ Entregas:
 
 1. PRD `areas/lk/projetos/lk-operating-system-prd.md` com razão de existir da LK, objetivos, fontes de verdade, módulos, cadência alvo, approval matrix e fases.
 2. Módulo global `empresa/gestao/hermes-learning-loop.md` para registrar aprovações/correções e atualizar Brain/skills/PRDs/memória quando um padrão se repetir.
-3. Próxima fase recomendada: criar templates/read-only do `Daily Sales Brief`, `Weekly CEO Review` e `Stock Intelligence Center` antes de qualquer cron, escrita em Notion, Shopify, Klaviyo, Evolution, Google/Meta ou automação n8n.
+3. Templates/read-only do `Daily Sales Brief`, `Weekly CEO Review` e `Stock Intelligence Center` criados em rodada anterior; próxima fase em execução: Fase 1 Data Spine read-only para padronizar fontes, entidades, reconciliação e lacunas antes de novos briefings/crons.
 
 Limites preservados: nenhum cron, campanha, mensagem externa, alteração Shopify/Tiny/Notion/GitHub/tema, banco, secret, VPS/Docker ou runtime foi criado/alterado nesta fase documental.
+
+Atualização 2026-05-11: Data Spine read-only da LK iniciado com `areas/lk/rotinas/data-spine-readonly-2026-05-11.md` e `areas/lk/contexto/data-spine-v0.1.md`.
 
 
 ### Rodada A — Verificação de crons reais na VPS

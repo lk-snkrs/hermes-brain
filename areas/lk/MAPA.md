@@ -1,6 +1,6 @@
 # LK Sneakers — Mapa
 
-Fonte resumida atual: `memories/lk.md`.
+Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spine-v0.1.md`.
 
 ## Sub-áreas
 
@@ -25,6 +25,7 @@ Fonte resumida atual: `memories/lk.md`.
 
 ## Rotinas LK globais
 
+- `rotinas/data-spine-readonly-2026-05-11.md` — Fase 1 do LK OS: inventário de fontes, matriz Doppler sem valores, entidades canônicas, reconciliação e lacunas para relatórios consistentes.
 - `rotinas/full-sync.md` — sincronizações LK.
 - `rotinas/morning-briefing.md` — briefing matinal.
 - `rotinas/sync-log.md` — auditoria de syncs.

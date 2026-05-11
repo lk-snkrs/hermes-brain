@@ -121,6 +121,29 @@ Regra de SKU:
 
 > Para relatórios e matching, Shopify é a chave canônica de SKU porque é onde venda, pedido, produto e variante acontecem. O Tiny continua sendo a fonte oficial de estoque, mas o ideal operacional é o Tiny espelhar o SKU Shopify. Quando houver divergência, o sistema deve primeiro aprender/mapear `SKU Shopify → produto Tiny/alias Tiny`, marcar confiança e só sugerir alteração no Tiny mediante preview; nunca mudar SKU Shopify automaticamente.
 
+### Data Spine v0.1 — 2026-05-11
+
+A Fase 1 do Data Spine foi iniciada em modo documental/read-only para padronizar fonte da verdade antes de criar mais briefings recorrentes.
+
+Decisões registradas:
+
+- Shopify confirma vendas, pedidos, clientes, catálogo, produto, variant e SKU canônico.
+- Tiny confirma estoque livre/reservado por produto/variação/tamanho.
+- GA4 confirma tráfego, canal, sessão, página e comportamento.
+- Meta/Google/Metricool confirmam gasto e atribuição de plataforma, não receita operacional final.
+- Klaviyo confirma objetos de e-mail, listas, templates, campaigns e status de envio.
+- Notion LK é destino operacional aprovado para compras/encomendas, mas writes exigem aprovação.
+- Judge.me e Frenet entram como fontes auxiliares de CRO/confiança/frete, ainda sem rotina recorrente.
+
+Todo número executivo do LK OS deve ser classificado como `fact_shopify`, `fact_tiny_stock`, `fact_ga4`, `platform_signal`, `derived_reconciliation`, `manual_approval` ou `unknown`.
+
+Artefatos:
+
+- `areas/lk/rotinas/data-spine-readonly-2026-05-11.md`.
+- `areas/lk/contexto/data-spine-v0.1.md`.
+
+Próxima etapa técnica: criar scripts read-only pequenos por fonte, com contagem/freshness e outputs auditáveis antes de automatizar Daily/Weekly briefings.
+
 ## 7. Estrutura de módulos
 
 ```text

@@ -1,3 +1,10 @@
+## 2026-05-11 — LK OS Fase 1 Data Spine read-only iniciado
+
+- Criada rotina `areas/lk/rotinas/data-spine-readonly-2026-05-11.md` para consolidar fonte da verdade, matriz Doppler sem valores, entidades canônicas, regras de reconciliação e lacunas.
+- Criado contrato `areas/lk/contexto/data-spine-v0.1.md` com classes de fonte: `fact_shopify`, `fact_tiny_stock`, `fact_ga4`, `platform_signal`, `derived_reconciliation`, `manual_approval` e `unknown`.
+- Atualizado o PRD e plano mestre do LK OS: Fase 1 agora está iniciada; scripts read-only por fonte seguem como próximo passo técnico.
+- Nenhum write, cron, campanha, envio, banco de produção, Shopify/Tiny/Klaviyo/Notion/Meta/Google/n8n ou infra foi alterado.
+
 ## 2026-05-11 — Correção de link Klaviyo
 
 - Lucas testou o link direto sugerido para a campanha Klaviyo e ele retornou página inexistente.
