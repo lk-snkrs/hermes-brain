@@ -1,0 +1,796 @@
+{
+  "generated_at": "2026-05-11T19:28:02.542351+00:00",
+  "scope": "LK OS Weekly Quote Validation Preview read-only from Weekly Stock/SKU Action Plan",
+  "read_only": true,
+  "summary": {
+    "source_action_plan": "reports/lk-os-weekly-stock-sku-action-plan-2026-05-04_2026-05-10.json",
+    "week": {
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-10",
+      "start_iso": "2026-05-04T00:00:00-03:00",
+      "end_iso": "2026-05-10T23:59:59-03:00",
+      "label": "last_7_closed_days_brt"
+    },
+    "rows": 14,
+    "p0_count": 6,
+    "p1_count": 8,
+    "sku_resolution_first_count": 3,
+    "quote_groups_count": 8,
+    "reference_quote_qty_not_purchase_qty": 26,
+    "revenue_signal_fact_shopify": 89669.71,
+    "source_labels": [
+      "fact_shopify",
+      "fact_tiny_stock",
+      "derived_reconciliation"
+    ]
+  },
+  "quote_groups": [
+    {
+      "family": "Nike Moon Shoe SP Jacquemus",
+      "items_count": 5,
+      "p0_count": 2,
+      "p1_count": 3,
+      "reference_quote_qty_not_purchase_qty": 10,
+      "revenue_signal_fact_shopify": 48999.92,
+      "quote_brief_preview": "Validar disponibilidade e custo para Nike Moon Shoe SP Jacquemus. Quantidade é referência de cotação, não compra aprovada. HV8547-200-38 tamanho 38: ref 3 un, teto custo 50% margem R$ 2.999,99, prioridade P0. HV8547-002-36 tamanho 36: ref 3 un, teto custo 50% margem R$ 2.749,99, prioridade P0. HV8547-001-1 tamanho 34: ref 1 un, teto custo 50% margem R$ 3.499,99, prioridade P1. HV8547-001-7 tamanho 40: ref 1 un, teto custo 50% margem R$ 3.499,99, prioridade P1. HV8547-601-37 tamanho 37: ref 2 un, teto custo 50% margem R$ 2.999,99, prioridade P1. Responder custo unitário, disponibilidade imediata, lead time e condições; não enviar pedido sem aprovação Lucas/Júlio.",
+      "items": [
+        {
+          "sku": "HV8547-200-38",
+          "size_or_variant": "38",
+          "priority": "P0",
+          "reference_quote_qty_not_purchase_qty": 3
+        },
+        {
+          "sku": "HV8547-002-36",
+          "size_or_variant": "36",
+          "priority": "P0",
+          "reference_quote_qty_not_purchase_qty": 3
+        },
+        {
+          "sku": "HV8547-001-1",
+          "size_or_variant": "34",
+          "priority": "P1",
+          "reference_quote_qty_not_purchase_qty": 1
+        },
+        {
+          "sku": "HV8547-001-7",
+          "size_or_variant": "40",
+          "priority": "P1",
+          "reference_quote_qty_not_purchase_qty": 1
+        },
+        {
+          "sku": "HV8547-601-37",
+          "size_or_variant": "37",
+          "priority": "P1",
+          "reference_quote_qty_not_purchase_qty": 2
+        }
+      ]
+    },
+    {
+      "family": "New Balance 9060",
+      "items_count": 3,
+      "p0_count": 2,
+      "p1_count": 1,
+      "reference_quote_qty_not_purchase_qty": 8,
+      "revenue_signal_fact_shopify": 18799.93,
+      "quote_brief_preview": "Validar disponibilidade e custo para New Balance 9060. Quantidade é referência de cotação, não compra aprovada. U9060CCC-4 tamanho 37: ref 3 un, teto custo 50% margem R$ 1.399,99, prioridade P0. U9060WHT-4 tamanho 37: ref 3 un, teto custo 50% margem R$ 1.299,99, prioridade P0. U9060ERB-3 tamanho 36: ref 2 un, teto custo 50% margem R$ 1.299,99, prioridade P1. Responder custo unitário, disponibilidade imediata, lead time e condições; não enviar pedido sem aprovação Lucas/Júlio.",
+      "items": [
+        {
+          "sku": "U9060CCC-4",
+          "size_or_variant": "37",
+          "priority": "P0",
+          "reference_quote_qty_not_purchase_qty": 3
+        },
+        {
+          "sku": "U9060WHT-4",
+          "size_or_variant": "37",
+          "priority": "P0",
+          "reference_quote_qty_not_purchase_qty": 3
+        },
+        {
+          "sku": "U9060ERB-3",
+          "size_or_variant": "36",
+          "priority": "P1",
+          "reference_quote_qty_not_purchase_qty": 2
+        }
+      ]
+    },
+    {
+      "family": "Nike Mind 002",
+      "items_count": 1,
+      "p0_count": 1,
+      "p1_count": 0,
+      "reference_quote_qty_not_purchase_qty": 3,
+      "revenue_signal_fact_shopify": 6399.98,
+      "quote_brief_preview": "Validar disponibilidade e custo para Nike Mind 002. Quantidade é referência de cotação, não compra aprovada. HQ4308-003-5 tamanho 36: ref 3 un, teto custo 50% margem R$ 1.599,99, prioridade P0. Responder custo unitário, disponibilidade imediata, lead time e condições; não enviar pedido sem aprovação Lucas/Júlio.",
+      "items": [
+        {
+          "sku": "HQ4308-003-5",
+          "size_or_variant": "36",
+          "priority": "P0",
+          "reference_quote_qty_not_purchase_qty": 3
+        }
+      ]
+    },
+    {
+      "family": "Comme des Garçons PLAY Polo",
+      "items_count": 1,
+      "p0_count": 1,
+      "p1_count": 0,
+      "reference_quote_qty_not_purchase_qty": 3,
+      "revenue_signal_fact_shopify": 3599.98,
+      "quote_brief_preview": "Validar disponibilidade e custo para Comme des Garçons PLAY Polo. Quantidade é referência de cotação, não compra aprovada. CDGP2 tamanho G/L: ref 3 un, teto custo 50% margem R$ 900,00, prioridade P0. Responder custo unitário, disponibilidade imediata, lead time e condições; não enviar pedido sem aprovação Lucas/Júlio.",
+      "items": [
+        {
+          "sku": "CDGP2",
+          "size_or_variant": "G/L",
+          "priority": "P0",
+          "reference_quote_qty_not_purchase_qty": 3
+        }
+      ]
+    },
+    {
+      "family": "New Balance 530",
+      "items_count": 1,
+      "p0_count": 0,
+      "p1_count": 1,
+      "reference_quote_qty_not_purchase_qty": 2,
+      "revenue_signal_fact_shopify": 5999.97,
+      "quote_brief_preview": "Validar disponibilidade e custo para New Balance 530. Quantidade é referência de cotação, não compra aprovada. MR530EMA-5 tamanho 38: ref 2 un, teto custo 50% margem R$ 1.000,00, prioridade P1. Responder custo unitário, disponibilidade imediata, lead time e condições; não enviar pedido sem aprovação Lucas/Júlio.",
+      "items": [
+        {
+          "sku": "MR530EMA-5",
+          "size_or_variant": "38",
+          "priority": "P1",
+          "reference_quote_qty_not_purchase_qty": 2
+        }
+      ]
+    },
+    {
+      "family": "Onitsuka Tiger Mexico 66",
+      "items_count": 1,
+      "p0_count": 0,
+      "p1_count": 1,
+      "reference_quote_qty_not_purchase_qty": 0,
+      "revenue_signal_fact_shopify": 4799.98,
+      "quote_brief_preview": "Validar disponibilidade e custo para Onitsuka Tiger Mexico 66. Quantidade é referência de cotação, não compra aprovada. 1183C102751-3 tamanho 36: ref 0 un, teto custo 50% margem R$ 1.199,99, prioridade P1. Responder custo unitário, disponibilidade imediata, lead time e condições; não enviar pedido sem aprovação Lucas/Júlio.",
+      "items": [
+        {
+          "sku": "1183C102751-3",
+          "size_or_variant": "36",
+          "priority": "P1",
+          "reference_quote_qty_not_purchase_qty": 0
+        }
+      ]
+    },
+    {
+      "family": "Camiseta Saint Studio Boxy",
+      "items_count": 1,
+      "p0_count": 0,
+      "p1_count": 1,
+      "reference_quote_qty_not_purchase_qty": 0,
+      "revenue_signal_fact_shopify": 619.98,
+      "quote_brief_preview": "Validar disponibilidade e custo para Camiseta Saint Studio Boxy. Quantidade é referência de cotação, não compra aprovada. SST-6502622-M tamanho M/M: ref 0 un, teto custo 50% margem R$ 155,00, prioridade P1. Responder custo unitário, disponibilidade imediata, lead time e condições; não enviar pedido sem aprovação Lucas/Júlio.",
+      "items": [
+        {
+          "sku": "SST-6502622-M",
+          "size_or_variant": "M/M",
+          "priority": "P1",
+          "reference_quote_qty_not_purchase_qty": 0
+        }
+      ]
+    },
+    {
+      "family": "Bearbrick Series 48",
+      "items_count": 1,
+      "p0_count": 0,
+      "p1_count": 1,
+      "reference_quote_qty_not_purchase_qty": 0,
+      "revenue_signal_fact_shopify": 449.97,
+      "quote_brief_preview": "Validar disponibilidade e custo para Bearbrick Series 48. Quantidade é referência de cotação, não compra aprovada. MED-3410398-OS tamanho sem tamanho informado: ref 0 un, teto custo 50% margem R$ 75,00, prioridade P1. Responder custo unitário, disponibilidade imediata, lead time e condições; não enviar pedido sem aprovação Lucas/Júlio.",
+      "items": [
+        {
+          "sku": "MED-3410398-OS",
+          "size_or_variant": "sem tamanho informado",
+          "priority": "P1",
+          "reference_quote_qty_not_purchase_qty": 0
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "priority": "P0",
+      "action_status": "quote_preview_candidate",
+      "family": "New Balance 9060",
+      "product_title": "Tênis New Balance 9060 Rich Oak Marrom",
+      "sku": "U9060CCC-4",
+      "size_or_variant": "37",
+      "sold_qty_fact_shopify": 3,
+      "revenue_fact_shopify": 8399.97,
+      "avg_sale_price_fact_shopify": 2799.99,
+      "tiny_saldo_fact_tiny_stock": 0.0,
+      "stock_risk": "ruptura",
+      "confidence": "high",
+      "reference_quote_qty_not_purchase_qty": 3,
+      "cost_ceiling_45_margin": 1539.99,
+      "cost_ceiling_50_margin": 1399.99,
+      "cost_ceiling_55_margin": 1260.0,
+      "lead_time_gate": {
+        "gate": "p0_lead_time_sensitive",
+        "ready_stock_or_0_7_days": "eligible_for_internal_quote_review",
+        "8_15_days": "requires_lucas_or_julio_decision",
+        "over_15_days": "not_recommended_without_presale_or_explicit_decision",
+        "note": "P0 só deve avançar se houver pronta entrega ou lead time curto, com margem validada."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Montar cotação interna por família; avançar só com pronta entrega ou até 7 dias, custo dentro do teto e aprovação Lucas/Júlio.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "priority": "P0",
+      "action_status": "quote_preview_candidate",
+      "family": "Nike Moon Shoe SP Jacquemus",
+      "product_title": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom",
+      "sku": "HV8547-200-38",
+      "size_or_variant": "38",
+      "sold_qty_fact_shopify": 2,
+      "revenue_fact_shopify": 11999.98,
+      "avg_sale_price_fact_shopify": 5999.99,
+      "tiny_saldo_fact_tiny_stock": 0.0,
+      "stock_risk": "ruptura",
+      "confidence": "high",
+      "reference_quote_qty_not_purchase_qty": 3,
+      "cost_ceiling_45_margin": 3299.99,
+      "cost_ceiling_50_margin": 2999.99,
+      "cost_ceiling_55_margin": 2700.0,
+      "lead_time_gate": {
+        "gate": "p0_lead_time_sensitive",
+        "ready_stock_or_0_7_days": "eligible_for_internal_quote_review",
+        "8_15_days": "requires_lucas_or_julio_decision",
+        "over_15_days": "not_recommended_without_presale_or_explicit_decision",
+        "note": "P0 só deve avançar se houver pronta entrega ou lead time curto, com margem validada."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Montar cotação interna por família; avançar só com pronta entrega ou até 7 dias, custo dentro do teto e aprovação Lucas/Júlio.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "priority": "P0",
+      "action_status": "quote_preview_candidate",
+      "family": "Nike Moon Shoe SP Jacquemus",
+      "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-36",
+      "size_or_variant": "36",
+      "sold_qty_fact_shopify": 2,
+      "revenue_fact_shopify": 10999.98,
+      "avg_sale_price_fact_shopify": 5499.99,
+      "tiny_saldo_fact_tiny_stock": 0.0,
+      "stock_risk": "ruptura",
+      "confidence": "high",
+      "reference_quote_qty_not_purchase_qty": 3,
+      "cost_ceiling_45_margin": 3024.99,
+      "cost_ceiling_50_margin": 2749.99,
+      "cost_ceiling_55_margin": 2475.0,
+      "lead_time_gate": {
+        "gate": "p0_lead_time_sensitive",
+        "ready_stock_or_0_7_days": "eligible_for_internal_quote_review",
+        "8_15_days": "requires_lucas_or_julio_decision",
+        "over_15_days": "not_recommended_without_presale_or_explicit_decision",
+        "note": "P0 só deve avançar se houver pronta entrega ou lead time curto, com margem validada."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Montar cotação interna por família; avançar só com pronta entrega ou até 7 dias, custo dentro do teto e aprovação Lucas/Júlio.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "priority": "P0",
+      "action_status": "quote_preview_candidate",
+      "family": "Nike Mind 002",
+      "product_title": "Tênis Nike Mind 002 Light Smoke Grey Cinza",
+      "sku": "HQ4308-003-5",
+      "size_or_variant": "36",
+      "sold_qty_fact_shopify": 2,
+      "revenue_fact_shopify": 6399.98,
+      "avg_sale_price_fact_shopify": 3199.99,
+      "tiny_saldo_fact_tiny_stock": 0.0,
+      "stock_risk": "ruptura",
+      "confidence": "high",
+      "reference_quote_qty_not_purchase_qty": 3,
+      "cost_ceiling_45_margin": 1759.99,
+      "cost_ceiling_50_margin": 1599.99,
+      "cost_ceiling_55_margin": 1440.0,
+      "lead_time_gate": {
+        "gate": "p0_lead_time_sensitive",
+        "ready_stock_or_0_7_days": "eligible_for_internal_quote_review",
+        "8_15_days": "requires_lucas_or_julio_decision",
+        "over_15_days": "not_recommended_without_presale_or_explicit_decision",
+        "note": "P0 só deve avançar se houver pronta entrega ou lead time curto, com margem validada."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Montar cotação interna por família; avançar só com pronta entrega ou até 7 dias, custo dentro do teto e aprovação Lucas/Júlio.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "priority": "P0",
+      "action_status": "quote_preview_candidate",
+      "family": "New Balance 9060",
+      "product_title": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+      "sku": "U9060WHT-4",
+      "size_or_variant": "37",
+      "sold_qty_fact_shopify": 2,
+      "revenue_fact_shopify": 5199.98,
+      "avg_sale_price_fact_shopify": 2599.99,
+      "tiny_saldo_fact_tiny_stock": -1.0,
+      "stock_risk": "ruptura",
+      "confidence": "high",
+      "reference_quote_qty_not_purchase_qty": 3,
+      "cost_ceiling_45_margin": 1429.99,
+      "cost_ceiling_50_margin": 1299.99,
+      "cost_ceiling_55_margin": 1170.0,
+      "lead_time_gate": {
+        "gate": "p0_lead_time_sensitive",
+        "ready_stock_or_0_7_days": "eligible_for_internal_quote_review",
+        "8_15_days": "requires_lucas_or_julio_decision",
+        "over_15_days": "not_recommended_without_presale_or_explicit_decision",
+        "note": "P0 só deve avançar se houver pronta entrega ou lead time curto, com margem validada."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Montar cotação interna por família; avançar só com pronta entrega ou até 7 dias, custo dentro do teto e aprovação Lucas/Júlio.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "priority": "P0",
+      "action_status": "quote_preview_candidate",
+      "family": "Comme des Garçons PLAY Polo",
+      "product_title": "Polo Comme des Garçons PLAY Red Emblem White Branco",
+      "sku": "CDGP2",
+      "size_or_variant": "G/L",
+      "sold_qty_fact_shopify": 2,
+      "revenue_fact_shopify": 3599.98,
+      "avg_sale_price_fact_shopify": 1799.99,
+      "tiny_saldo_fact_tiny_stock": 0.0,
+      "stock_risk": "ruptura",
+      "confidence": "high",
+      "reference_quote_qty_not_purchase_qty": 3,
+      "cost_ceiling_45_margin": 989.99,
+      "cost_ceiling_50_margin": 900.0,
+      "cost_ceiling_55_margin": 810.0,
+      "lead_time_gate": {
+        "gate": "p0_lead_time_sensitive",
+        "ready_stock_or_0_7_days": "eligible_for_internal_quote_review",
+        "8_15_days": "requires_lucas_or_julio_decision",
+        "over_15_days": "not_recommended_without_presale_or_explicit_decision",
+        "note": "P0 só deve avançar se houver pronta entrega ou lead time curto, com margem validada."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Montar cotação interna por família; avançar só com pronta entrega ou até 7 dias, custo dentro do teto e aprovação Lucas/Júlio.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "priority": "P1",
+      "action_status": "validate_before_quote",
+      "family": "Nike Moon Shoe SP Jacquemus",
+      "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-1",
+      "size_or_variant": "34",
+      "sold_qty_fact_shopify": 1,
+      "revenue_fact_shopify": 6999.99,
+      "avg_sale_price_fact_shopify": 6999.99,
+      "tiny_saldo_fact_tiny_stock": 0.0,
+      "stock_risk": "ruptura",
+      "confidence": "high",
+      "reference_quote_qty_not_purchase_qty": 1,
+      "cost_ceiling_45_margin": 3849.99,
+      "cost_ceiling_50_margin": 3499.99,
+      "cost_ceiling_55_margin": 3150.0,
+      "lead_time_gate": {
+        "gate": "p1_optional_or_bundle",
+        "ready_stock_or_0_7_days": "optional_quote_if_margin_strong",
+        "8_15_days": "monitor_or_bundle_only",
+        "over_15_days": "not_recommended_now",
+        "note": "P1 não é autorização de compra; cotar só se fizer sentido comercial."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Validar estoque atual e custo apenas se fornecedor já tiver disponibilidade forte; caso contrário monitorar.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "priority": "P1",
+      "action_status": "validate_before_quote",
+      "family": "Nike Moon Shoe SP Jacquemus",
+      "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-7",
+      "size_or_variant": "40",
+      "sold_qty_fact_shopify": 1,
+      "revenue_fact_shopify": 6999.99,
+      "avg_sale_price_fact_shopify": 6999.99,
+      "tiny_saldo_fact_tiny_stock": 0.0,
+      "stock_risk": "ruptura",
+      "confidence": "high",
+      "reference_quote_qty_not_purchase_qty": 1,
+      "cost_ceiling_45_margin": 3849.99,
+      "cost_ceiling_50_margin": 3499.99,
+      "cost_ceiling_55_margin": 3150.0,
+      "lead_time_gate": {
+        "gate": "p1_optional_or_bundle",
+        "ready_stock_or_0_7_days": "optional_quote_if_margin_strong",
+        "8_15_days": "monitor_or_bundle_only",
+        "over_15_days": "not_recommended_now",
+        "note": "P1 não é autorização de compra; cotar só se fizer sentido comercial."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Validar estoque atual e custo apenas se fornecedor já tiver disponibilidade forte; caso contrário monitorar.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "priority": "P1",
+      "action_status": "validate_before_quote",
+      "family": "New Balance 530",
+      "product_title": "Tênis New Balance 530 Silver White Branco",
+      "sku": "MR530EMA-5",
+      "size_or_variant": "38",
+      "sold_qty_fact_shopify": 3,
+      "revenue_fact_shopify": 5999.97,
+      "avg_sale_price_fact_shopify": 1999.99,
+      "tiny_saldo_fact_tiny_stock": 1.0,
+      "stock_risk": "baixo_estoque_vs_venda_da_semana",
+      "confidence": "high",
+      "reference_quote_qty_not_purchase_qty": 2,
+      "cost_ceiling_45_margin": 1099.99,
+      "cost_ceiling_50_margin": 1000.0,
+      "cost_ceiling_55_margin": 900.0,
+      "lead_time_gate": {
+        "gate": "p1_optional_or_bundle",
+        "ready_stock_or_0_7_days": "optional_quote_if_margin_strong",
+        "8_15_days": "monitor_or_bundle_only",
+        "over_15_days": "not_recommended_now",
+        "note": "P1 não é autorização de compra; cotar só se fizer sentido comercial."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Validar estoque atual e custo apenas se fornecedor já tiver disponibilidade forte; caso contrário monitorar.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "priority": "P1",
+      "action_status": "validate_before_quote",
+      "family": "Nike Moon Shoe SP Jacquemus",
+      "product_title": "Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa",
+      "sku": "HV8547-601-37",
+      "size_or_variant": "37",
+      "sold_qty_fact_shopify": 2,
+      "revenue_fact_shopify": 11999.98,
+      "avg_sale_price_fact_shopify": 5999.99,
+      "tiny_saldo_fact_tiny_stock": 2.0,
+      "stock_risk": "baixo_estoque_vs_venda_da_semana",
+      "confidence": "high",
+      "reference_quote_qty_not_purchase_qty": 2,
+      "cost_ceiling_45_margin": 3299.99,
+      "cost_ceiling_50_margin": 2999.99,
+      "cost_ceiling_55_margin": 2700.0,
+      "lead_time_gate": {
+        "gate": "p1_optional_or_bundle",
+        "ready_stock_or_0_7_days": "optional_quote_if_margin_strong",
+        "8_15_days": "monitor_or_bundle_only",
+        "over_15_days": "not_recommended_now",
+        "note": "P1 não é autorização de compra; cotar só se fizer sentido comercial."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Validar estoque atual e custo apenas se fornecedor já tiver disponibilidade forte; caso contrário monitorar.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "priority": "P1",
+      "action_status": "validate_before_quote",
+      "family": "New Balance 9060",
+      "product_title": "Tênis New Balance 9060 Angora Sea Salt Bege",
+      "sku": "U9060ERB-3",
+      "size_or_variant": "36",
+      "sold_qty_fact_shopify": 2,
+      "revenue_fact_shopify": 5199.98,
+      "avg_sale_price_fact_shopify": 2599.99,
+      "tiny_saldo_fact_tiny_stock": 1.0,
+      "stock_risk": "baixo_estoque_vs_venda_da_semana",
+      "confidence": "high",
+      "reference_quote_qty_not_purchase_qty": 2,
+      "cost_ceiling_45_margin": 1429.99,
+      "cost_ceiling_50_margin": 1299.99,
+      "cost_ceiling_55_margin": 1170.0,
+      "lead_time_gate": {
+        "gate": "p1_optional_or_bundle",
+        "ready_stock_or_0_7_days": "optional_quote_if_margin_strong",
+        "8_15_days": "monitor_or_bundle_only",
+        "over_15_days": "not_recommended_now",
+        "note": "P1 não é autorização de compra; cotar só se fizer sentido comercial."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Validar estoque atual e custo apenas se fornecedor já tiver disponibilidade forte; caso contrário monitorar.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "priority": "P1",
+      "action_status": "sku_resolution_first",
+      "family": "Bearbrick Series 48",
+      "product_title": "MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)",
+      "sku": "MED-3410398-OS",
+      "size_or_variant": "sem tamanho informado",
+      "sold_qty_fact_shopify": 3,
+      "revenue_fact_shopify": 449.97,
+      "avg_sale_price_fact_shopify": 149.99,
+      "tiny_saldo_fact_tiny_stock": null,
+      "stock_risk": "unknown",
+      "confidence": "needs_sku_or_stock_validation",
+      "reference_quote_qty_not_purchase_qty": 0,
+      "cost_ceiling_45_margin": 82.49,
+      "cost_ceiling_50_margin": 75.0,
+      "cost_ceiling_55_margin": 67.5,
+      "lead_time_gate": {
+        "gate": "blocked_until_sku_tiny_resolution",
+        "ready_stock_or_0_7_days": "not_applicable",
+        "8_15_days": "not_applicable",
+        "over_15_days": "not_applicable",
+        "note": "Resolver SKU/Tiny antes de cotar ou comprar."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Resolver SKU/Tiny antes de qualquer cotação externa.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "priority": "P1",
+      "action_status": "sku_resolution_first",
+      "family": "Onitsuka Tiger Mexico 66",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "sku": "1183C102751-3",
+      "size_or_variant": "36",
+      "sold_qty_fact_shopify": 2,
+      "revenue_fact_shopify": 4799.98,
+      "avg_sale_price_fact_shopify": 2399.99,
+      "tiny_saldo_fact_tiny_stock": null,
+      "stock_risk": "unknown",
+      "confidence": "needs_sku_or_stock_validation",
+      "reference_quote_qty_not_purchase_qty": 0,
+      "cost_ceiling_45_margin": 1319.99,
+      "cost_ceiling_50_margin": 1199.99,
+      "cost_ceiling_55_margin": 1080.0,
+      "lead_time_gate": {
+        "gate": "blocked_until_sku_tiny_resolution",
+        "ready_stock_or_0_7_days": "not_applicable",
+        "8_15_days": "not_applicable",
+        "over_15_days": "not_applicable",
+        "note": "Resolver SKU/Tiny antes de cotar ou comprar."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Resolver SKU/Tiny antes de qualquer cotação externa.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "priority": "P1",
+      "action_status": "sku_resolution_first",
+      "family": "Camiseta Saint Studio Boxy",
+      "product_title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+      "sku": "SST-6502622-M",
+      "size_or_variant": "M/M",
+      "sold_qty_fact_shopify": 2,
+      "revenue_fact_shopify": 619.98,
+      "avg_sale_price_fact_shopify": 309.99,
+      "tiny_saldo_fact_tiny_stock": null,
+      "stock_risk": "unknown",
+      "confidence": "needs_sku_or_stock_validation",
+      "reference_quote_qty_not_purchase_qty": 0,
+      "cost_ceiling_45_margin": 170.49,
+      "cost_ceiling_50_margin": 155.0,
+      "cost_ceiling_55_margin": 139.5,
+      "lead_time_gate": {
+        "gate": "blocked_until_sku_tiny_resolution",
+        "ready_stock_or_0_7_days": "not_applicable",
+        "8_15_days": "not_applicable",
+        "over_15_days": "not_applicable",
+        "note": "Resolver SKU/Tiny antes de cotar ou comprar."
+      },
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock"
+      ],
+      "supplier_cost_status": "pending_supplier_quote",
+      "supplier_availability_status": "not_checked_no_supplier_contact",
+      "recommended_internal_next_step": "Resolver SKU/Tiny antes de qualquer cotação externa.",
+      "not_authorized_actions": [
+        "supplier_contact",
+        "purchase_order",
+        "purchase",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    }
+  ],
+  "margin_targets": [
+    0.45,
+    0.5,
+    0.55
+  ],
+  "not_performed": [
+    "supplier_contact",
+    "purchase_order",
+    "purchase",
+    "shopify_write",
+    "tiny_write",
+    "price_or_stock_change",
+    "campaign_send",
+    "cron_creation"
+  ],
+  "limitations": [
+    "No supplier availability, real cost or real lead time was fetched or inferred.",
+    "Quote quantity is only a reference for availability/cost validation, not a purchase quantity."
+  ]
+}

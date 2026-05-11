@@ -1,3 +1,11 @@
+## 2026-05-11 — LK OS Weekly Quote Validation Preview read-only
+
+- Criado e executado `scripts/lk_os_weekly_quote_validation_preview_20260511.py`, convertendo a fila semanal Stock/SKU em preview interno de validação/cotação.
+- Resultado: 14 linhas avaliadas, 8 grupos de cotação por família, quantidade referência de cotação `26` unidades, sendo referência de disponibilidade/preço e não compra aprovada.
+- Foram calculados preço médio vendido Shopify, tetos de custo para margens alvo 45/50/55%, gate de lead time e status de bloqueio SKU/Tiny para 3 linhas.
+- Artefatos: `areas/lk/rotinas/weekly-quote-validation-preview-readonly-2026-05-11.md`, `reports/lk-os-weekly-quote-validation-preview-2026-05-04_2026-05-10.md`, `.json` e `.csv`.
+- Nenhum fornecedor foi contatado; nenhuma compra, PO, write Shopify/Tiny, preço, estoque, campanha, cron ou envio externo foi executado.
+
 ## 2026-05-11 — LK OS Weekly Stock/SKU Action Plan read-only
 
 - Criado e executado `scripts/lk_os_weekly_stock_sku_action_plan_20260511.py`, fila operacional P0/P1 derivada do Weekly CEO Review.

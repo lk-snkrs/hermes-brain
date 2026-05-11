@@ -201,6 +201,7 @@ Entregáveis:
 - [x] Daily Sales Brief real com Shopify + GA4 + estoque crítico, v0.1 local/read-only para 2026-05-10.
 - [x] Weekly CEO Review v0.1 com vendas, canais, estoque e mídia como `platform_signal`, em `reports/lk-os-weekly-ceo-review-2026-05-04_2026-05-10.md`; recompra/SEO seguem como módulos de profundidade separados.
 - [x] Weekly Stock/SKU Action Plan read-only derivado do Weekly CEO Review, com 14 P0/P1 e separação entre cotação preview, validar antes de cotar e resolver SKU/Tiny primeiro.
+- [x] Weekly Quote Validation Preview read-only derivado da fila Stock/SKU, com 8 grupos de cotação, tetos de custo 45/50/55%, gate de lead time e quantidade referência não-compra.
 - [x] Versão Telegram curta, preview-only, em `reports/lk-os-daily-sales-brief-telegram-preview-2026-05-10.md`.
 - [x] Versão Brain/report detalhada em `reports/lk-os-daily-sales-brief-2026-05-10.md` e `.json`.
 - [x] Critério de silêncio: `would_notify=true` só para P0/P1, falha de API ou pedido explícito; sem envio/criação de cron.
