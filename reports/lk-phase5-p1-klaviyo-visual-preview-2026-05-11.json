@@ -1,9 +1,12 @@
 {
-  "generated_at": "2026-05-11T16:34:30.567698+00:00",
+  "generated_at": "2026-05-11T16:47:35.602486+00:00",
   "scope": "Internal LK/Klaviyo visual preview only. No external write, no Klaviyo object, no customer send.",
   "input_report": "reports/lk-phase5-p1-broad-tiny-copy-preview-2026-05-11.json",
   "html_preview": "reports/lk-phase5-p1-klaviyo-visual-preview-2026-05-11.html",
-  "rows": 3,
+  "source_rows": 3,
+  "visual_cards": 2,
+  "deduped_visual_products": true,
+  "shopify_images_loaded": 3,
   "shopify_enrichment": {
     "U204LMMC-2": {
       "sku": "U204LMMC-2",
@@ -33,6 +36,12 @@
       "image_alt": "Onitsuka Tiger Mexico 66 Paraty Natural Navy Bege em bege original na LK Sneakers"
     }
   },
+  "klaviyo_reference": {
+    "campaign": "Adidas Ballerina Bad Bunny Flamboyan, LK Sneakers",
+    "campaign_id": "01KRBW5EKCSPE8MHTVQYF88QAT",
+    "template_id": "V2UsSq",
+    "observed_read_only": true
+  },
   "guardrails": [
     "Preview interno apenas",
     "Nenhum envio WhatsApp, Klaviyo ou e-mail",
@@ -41,6 +50,7 @@
     "Relatório Brain sem PII",
     "HTML local gerado em reports/",
     "Shopify usado apenas em GraphQL query read-only para imagem/URL quando disponível",
+    "Klaviyo usado apenas em leitura para referência visual da última campanha enviada",
     "Nenhum objeto Klaviyo criado"
   ]
 }

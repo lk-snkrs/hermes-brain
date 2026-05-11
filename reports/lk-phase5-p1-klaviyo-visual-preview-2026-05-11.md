@@ -2,7 +2,16 @@
 
 ## Veredito
 
-Gerei um HTML local no padrão visual LK/Klaviyo para os 3 previews resgatados. É apenas aprovação visual interna, sem Klaviyo, sem lista e sem envio.
+Corrigi o HTML local no padrão real da última news enviada no Klaviyo. É apenas aprovação visual interna, sem Klaviyo, sem lista e sem envio.
+
+## Ajustes aplicados
+
+- Logo branco real da LK no header.
+- Linha de chamada abaixo do header, no padrão da última campanha enviada.
+- Imagem em bloco branco e texto em bloco off-white.
+- Produtos duplicados visualmente agrupados: 3 linhas operacionais viraram 2 cards visuais.
+- Footer aproximado ao Klaviyo real, com logo, endereço, links e unsubscribe.
+- Slogan atualizado só no footer: `O que é raro, merece ser encontrado`.
 
 ## Arquivos
 
@@ -12,15 +21,15 @@ Gerei um HTML local no padrão visual LK/Klaviyo para os 3 previews resgatados. 
 
 ## Controles
 
-- Linhas no preview: 3
+- Linhas operacionais no preview: 3
+- Cards visuais: 2
 - Imagens Shopify encontradas por SKU: 3/3
-- Estoque Tiny preservado no layout: sim
 - PII no Brain: não
 - Klaviyo criado: não
 - Lista criada: não
 - Envio externo: não
 - Writes Shopify/Tiny/Supabase: não
 
-## Observação
+## Referência consultada
 
-O HTML usa a direção visual observada nos e-mails reais da LK: header preto, fundo off-white, tipografia editorial, produto protagonista, CTA preto e manifesto final `Less Noise, More Identity.`.
+Última campanha enviada no Klaviyo, lida em modo read-only: `Adidas Ballerina Bad Bunny Flamboyan, LK Sneakers`, template `V2UsSq`.

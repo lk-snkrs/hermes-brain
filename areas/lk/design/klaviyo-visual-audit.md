@@ -37,12 +37,13 @@ Modo: leitura via API Klaviyo, sem envio, sem alteração de campanha, sem publi
 - Grid 2 colunas para ranking/top produtos.
 - Badge de ranking preto com texto branco.
 - Bloco manifesto preto com frase editorial.
-- Footer preto com slogan `Less Noise, More Identity.`
+- Footer preto com slogan `O que é raro, merece ser encontrado`.
+- O slogan deve aparecer apenas no footer, não no header.
 
 ## Feedback Lucas — 2026-05-09
 
 - Direção geral aprovada como boa primeira opção, ainda não 100%.
-- Corrigir preview para usar o logo real da LK no topo/rodapé.
+- Corrigir preview para usar o logo real branco da LK no topo e no rodapé.
 - Produto/imagens precisam carregar no HTML de aprovação; usar imagens reais e, quando necessário, embutidas no HTML para evitar falha de carregamento.
 - Fonte ainda não está 100% igual à usada nas newsletters; manter como hipótese v0.1 e refinar depois contra Klaviyo/Shopify.
 - Seguir nesse caminho e refinar progressivamente.
