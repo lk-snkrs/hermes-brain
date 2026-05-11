@@ -281,16 +281,16 @@ Critério de saída:
 
 ### Fase 8 — Automação segura / n8n / crons
 
-Status: só depois das rotinas read-only ficarem estáveis.
+Status: aberto em modo planejamento/dry-run; catálogo de automações candidatas criado, sem cron/n8n/envio/write ativado.
 
 Objetivo: automatizar o que já foi validado manualmente.
 
 Entregáveis:
 
-- [ ] Lista de automações candidatas.
-- [ ] Risco por automação.
-- [ ] Plano rollback.
-- [ ] Teste em modo dry-run.
+- [x] Lista de automações candidatas: 6 automações em `safe-automation-readiness-registry`.
+- [x] Risco por automação: 4 low e 2 medium documentados.
+- [x] Plano rollback por automação: pause/remove cron, supersede report, revert PR ou cancelar execução antes de envio conforme caso.
+- [x] Teste em modo dry-run: contrato definido por automação; nenhuma ativação feita.
 - [ ] Aprovação Lucas antes de ativar produção.
 
 Critério de saída:

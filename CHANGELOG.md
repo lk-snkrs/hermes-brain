@@ -1,3 +1,10 @@
+## 2026-05-11 — LK Safe Automation Readiness Registry
+
+- Criado e executado `scripts/lk_safe_automation_readiness_registry_20260511.py`, abrindo a Fase 8 em modo planejamento/dry-run sem ativar automações.
+- Resultado: 6 automações candidatas, todas `dry_run_only`; risco: 4 low e 2 medium; 0 crons criados, 0 n8n flows, 0 envios externos, 0 writes produtivos.
+- Candidatas: Daily Sales Brief, Weekly CEO Review, SEO/CRO weekly monitor, Approval Learning Ledger refresh, Klaviyo CRM draft watcher e On-demand sourcing router.
+- Artefatos: `areas/lk/rotinas/safe-automation-readiness-registry-2026-05-11.md`, `reports/lk-safe-automation-readiness-registry-2026-05-11.md`, `.json` e `.csv`.
+
 ## 2026-05-11 — LK OS Approval Learning Ledger
 
 - Criado e executado `scripts/lk_os_approval_learning_ledger_20260511.py`, consolidando decisões de Fase 7 em um ledger operacional read-only.
