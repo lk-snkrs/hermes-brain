@@ -1,3 +1,11 @@
+## 2026-05-11 — LK OS On-demand Sourcing Router read-only
+
+- Criado e executado `scripts/lk_os_on_demand_sourcing_router_20260511.py`, router de sourcing sob demanda a partir do Approval Decision Log.
+- Resultado: 8 linhas roteadas, sendo 4 prontas apenas depois de aprovação manual, 1 opcional para agrupar com P0 e 3 bloqueadas por dados.
+- Definido que GOAT, Droper, StockX e KicksDev são ferramentas on-demand por decisão específica, não full-sync permanente de preços externos no SQL local.
+- Artefatos: `areas/lk/rotinas/on-demand-sourcing-router-readonly-2026-05-11.md`, `reports/lk-os-on-demand-sourcing-router-2026-05-04_2026-05-10.md`, `.json` e `.csv`.
+- Nenhuma chamada externa a marketplaces, fornecedor, envio, compra, PO, reserva, Shopify/Tiny write, preço, estoque, campanha, banco de produção ou cron foi executada.
+
 ## 2026-05-11 — LK Shopify Read-only Skill Operationalization Audit
 
 - Auditada a skill `lk-shopify-readonly` contra o padrão de “100% operacionalizada”: runtime carregável, Brain copy, índices/MAPAs, guardrails, health check, secret scan e PR/sync.

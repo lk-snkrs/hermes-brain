@@ -160,9 +160,10 @@ Entregáveis:
 - [x] Template de preview para Lucas aprovar reposição/sourcing.
 - [x] Correção de arquitetura: SQL local deve priorizar LK operacional — pessoas/clientes, produtos/catálogo/SKU/tamanho, pedidos/RFM, estoque Tiny, aprovações e histórico de ação.
 - [x] SQL local operacional materializado em modo read-only: clientes, pedidos, itens, produtos, variantes e RFM vindos do Supabase LK, com PII apenas no SQLite privado chmod 600.
-- [ ] Automação on-demand de sourcing/subida: consultar GOAT/Droper/StockX/KicksDev somente quando houver compra, reposição ou produto novo; não manter full sync permanente de preços externos voláteis.
+- [x] Automação on-demand de sourcing/subida: consultar GOAT/Droper/StockX/KicksDev somente quando houver compra, reposição ou produto novo; não manter full sync permanente de preços externos voláteis.
+- [x] Router read-only de sourcing on-demand materializado a partir do Approval Decision Log: 4 P0 prontos apenas depois de aprovação manual, 1 opcional e 3 bloqueados por dados; sem chamadas externas.
 
-Artefato atual: `areas/lk/rotinas/shopify-sku-padronizacao-tiny-catalogo-2026-05-11.md` + `areas/lk/rotinas/shopify-tiny-fila-b-residual-pos-saneamento-2026-05-11.md` + `areas/lk/rotinas/shopify-tiny-fila-b-residual-priorizada-2026-05-11.md` + `areas/lk/rotinas/stock-sku-saneamento-b-e-preview-a-2026-05-11.md` + `reports/lk-os-sourcing-sql-architecture-correction-2026-05-11.md` + `reports/lk-os-local-sql-operational-spine-2026-05-11.md`.
+Artefato atual: `areas/lk/rotinas/shopify-sku-padronizacao-tiny-catalogo-2026-05-11.md` + `areas/lk/rotinas/shopify-tiny-fila-b-residual-pos-saneamento-2026-05-11.md` + `areas/lk/rotinas/shopify-tiny-fila-b-residual-priorizada-2026-05-11.md` + `areas/lk/rotinas/stock-sku-saneamento-b-e-preview-a-2026-05-11.md` + `areas/lk/rotinas/on-demand-sourcing-router-readonly-2026-05-11.md` + `reports/lk-os-sourcing-sql-architecture-correction-2026-05-11.md` + `reports/lk-os-local-sql-operational-spine-2026-05-11.md` + `reports/lk-os-on-demand-sourcing-router-2026-05-04_2026-05-10.md`.
 
 Critério de saída:
 
