@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-05-11T13:29:38",
+  "scope": "Fila acionável dos 6 P0 restantes após 9 códigos Tiny corrigidos/verificados",
+  "source_report": "reports/lk-p0-blocked-six-live-recheck-2026-05-11.json",
+  "guardrails": [
+    "no Shopify write",
+    "no Tiny write",
+    "no price/stock/product/sourcing",
+    "requires Lucas/Júlio canonical decision before writes"
+  ],
+  "summary": {
+    "needs_canonical_code_decision_shopify_and_tiny_blank": 5,
+    "ambiguous_tiny_duplicate_with_shopify_sku": 1
+  },
+  "queue": [
+    {
+      "priority": "P0",
+      "classification": "needs_canonical_code_decision_shopify_and_tiny_blank",
+      "product_title": "Camiseta Pace Cotton Code Branca",
+      "shopify_product_id": "9003115741406",
+      "shopify_handle": "camiseta-pace-cotton-code-branca",
+      "shopify_variant_id": "47512247599326",
+      "size": "G/L",
+      "shopify_sku_live": "[sem SKU]",
+      "tiny_match_count": 2,
+      "tiny_candidate_ids": "1065543106 | 1069541599",
+      "tiny_parent_ids": "1065543095 | 1065543095",
+      "tiny_candidate_codes": "[sem codigo] | [sem codigo]",
+      "recommended_next_step": "Definir código canônico/SKU do item e escolher Tiny ID correto; depois criar preview de preenchimento Tiny codigo e Shopify SKU.",
+      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico."
+    },
+    {
+      "priority": "P0",
+      "classification": "needs_canonical_code_decision_shopify_and_tiny_blank",
+      "product_title": "Camiseta Aimé Leon Dore Musician Graphic Off White",
+      "shopify_product_id": "9024982712542",
+      "shopify_handle": "camiseta-aime-leon-dore-musician-graphic-off-white",
+      "shopify_variant_id": "47579297939678",
+      "size": "S/P",
+      "shopify_sku_live": "[sem SKU]",
+      "tiny_match_count": 4,
+      "tiny_candidate_ids": "1066011682 | 1069541741 | 1066011725 | 1069541726",
+      "tiny_parent_ids": "1066011677 | 1066011677 | 1066011720 | 1066011720",
+      "tiny_candidate_codes": "[sem codigo] | [sem codigo] | [sem codigo] | [sem codigo]",
+      "recommended_next_step": "Definir código canônico/SKU do item e escolher Tiny ID correto; depois criar preview de preenchimento Tiny codigo e Shopify SKU.",
+      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico."
+    },
+    {
+      "priority": "P0",
+      "classification": "needs_canonical_code_decision_shopify_and_tiny_blank",
+      "product_title": "Rhode Pocket Blush",
+      "shopify_product_id": "8926618321118",
+      "shopify_handle": "rhode-pocket-blush",
+      "shopify_variant_id": "46838740648158",
+      "size": "Sleepy Girl - Soft Mauve",
+      "shopify_sku_live": "[sem SKU]",
+      "tiny_match_count": 1,
+      "tiny_candidate_ids": "1070288342",
+      "tiny_parent_ids": "1070288304",
+      "tiny_candidate_codes": "[sem codigo]",
+      "recommended_next_step": "Definir código canônico/SKU do item e escolher Tiny ID correto; depois criar preview de preenchimento Tiny codigo e Shopify SKU.",
+      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico."
+    },
+    {
+      "priority": "P0",
+      "classification": "needs_canonical_code_decision_shopify_and_tiny_blank",
+      "product_title": "Camiseta Pace Cotton Code Preta",
+      "shopify_product_id": "9003115774174",
+      "shopify_handle": "camiseta-pace-cotton-code-preta",
+      "shopify_variant_id": "47512247730398",
+      "size": "G/L",
+      "shopify_sku_live": "[sem SKU]",
+      "tiny_match_count": 2,
+      "tiny_candidate_ids": "1065543087 | 1069541614",
+      "tiny_parent_ids": "1065543076 | 1065543076",
+      "tiny_candidate_codes": "[sem codigo] | [sem codigo]",
+      "recommended_next_step": "Definir código canônico/SKU do item e escolher Tiny ID correto; depois criar preview de preenchimento Tiny codigo e Shopify SKU.",
+      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico."
+    },
+    {
+      "priority": "P0",
+      "classification": "needs_canonical_code_decision_shopify_and_tiny_blank",
+      "product_title": "Camiseta Pace Sketch Yourself Off White",
+      "shopify_product_id": "8946043093214",
+      "shopify_handle": "camiseta-pace-sketch-yourself-off-white",
+      "shopify_variant_id": "47019131568350",
+      "size": "P/S",
+      "shopify_sku_live": "[sem SKU]",
+      "tiny_match_count": 2,
+      "tiny_candidate_ids": "1063954611 | 1069539379",
+      "tiny_parent_ids": "1063954607 | 1063954607",
+      "tiny_candidate_codes": "[sem codigo] | [sem codigo]",
+      "recommended_next_step": "Definir código canônico/SKU do item e escolher Tiny ID correto; depois criar preview de preenchimento Tiny codigo e Shopify SKU.",
+      "approval_boundary": "Sem write automático: falta SKU Shopify e/ou Tiny codigo canônico."
+    },
+    {
+      "priority": "P0",
+      "classification": "ambiguous_tiny_duplicate_with_shopify_sku",
+      "product_title": "Camiseta Pace Patavision Off White",
+      "shopify_product_id": "8946025857246",
+      "shopify_handle": "camiseta-pace-patavision-off-white",
+      "shopify_variant_id": "47019093295326",
+      "size": "P/S",
+      "shopify_sku_live": "PAC-5857246-S",
+      "tiny_match_count": 2,
+      "tiny_candidate_ids": "1063951385 | 1069539349",
+      "tiny_parent_ids": "1063951381 | 1063951381",
+      "tiny_candidate_codes": "[sem codigo] | [sem codigo]",
+      "recommended_next_step": "Lucas/Júlio escolher qual Tiny ID duplicado é o item real; depois aprovar preencher Tiny codigo com SKU Shopify live e revalidar Shopify.",
+      "approval_boundary": "Tiny codigo write só após escolha do Tiny ID; Shopify write separado se necessário."
+    }
+  ]
+}
