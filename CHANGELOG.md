@@ -1,3 +1,12 @@
+## 2026-05-11 — LK OS Daily Sales Brief real read-only
+
+- Criado e executado `scripts/lk_os_daily_sales_brief_20260511.py`, primeiro briefing diário real do LK OS usando Shopify + GA4 + Tiny.
+- Janela: dia fechado 2026-05-10 BRT.
+- Resultado: Shopify `R$ 34.809,92` em 9 pedidos; GA4 4.301 sessões e 8 transações GA4; conversão aproximada pedidos Shopify / sessões GA4 `0,21%`.
+- Estoque Tiny nos SKUs vendidos: 4 ruptura, 1 baixo estoque vs venda do dia, 5 desconhecidos/mapeamento sem candidato seguro ou saldo legível.
+- Artefatos: `areas/lk/rotinas/daily-sales-brief-readonly-2026-05-11.md`, `reports/lk-os-daily-sales-brief-2026-05-10.md`, `reports/lk-os-daily-sales-brief-2026-05-10.json`.
+- Nenhum write, cron, campanha, envio, alteração de estoque/preço, banco de produção, Shopify/Tiny/Klaviyo/Notion/Meta/Google/Metricool/n8n ou infra foi executado.
+
 ## 2026-05-11 — LK OS Tiny freshness report read-only
 
 - PR #90 do Data Spine snapshot foi squash-merged e o clone local do Brain foi sincronizado em `origin/main` no commit `02b8223`.

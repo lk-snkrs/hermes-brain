@@ -192,16 +192,16 @@ Critério de saída:
 
 ### Fase 4 — Daily/Weekly CEO Briefings
 
-Status: templates existem; precisa rotina real estável.
+Status: iniciado em 2026-05-11 com primeiro Daily Sales Brief real read-only, usando Shopify + GA4 + Tiny.
 
 Objetivo: transformar dados em gestão diária/semanal.
 
 Entregáveis:
 
-- [ ] Daily Sales Brief real com Shopify + GA4 + estoque crítico.
+- [x] Daily Sales Brief real com Shopify + GA4 + estoque crítico, v0.1 local/read-only para 2026-05-10.
 - [ ] Weekly CEO Review com vendas, canais, recompra, estoque, SEO, mídia e prioridades.
 - [ ] Versão Telegram curta.
-- [ ] Versão Brain/report detalhada.
+- [x] Versão Brain/report detalhada em `reports/lk-os-daily-sales-brief-2026-05-10.md` e `.json`.
 - [ ] Critério de silêncio: quando não há alerta, não gerar ruído.
 
 Critério de saída:

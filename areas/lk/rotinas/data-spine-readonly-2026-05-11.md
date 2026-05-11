@@ -257,7 +257,7 @@ Depois do snapshot consolidado v0.1 e do freshness report Tiny, separar os próx
 3. `lk_data_spine_paid_snapshot.py`.
 4. `lk_data_spine_klaviyo_snapshot.py`.
 5. `lk_data_spine_freshness_report.py` consolidando status de todas as fontes.
-6. `daily_sales_brief` consumindo os JSONs já gerados, sem cron/envio automático inicialmente.
+6. Daily Sales Brief v0.1 local/read-only executado em `scripts/lk_os_daily_sales_brief_20260511.py`; próximo passo é transformar em versão Telegram curta e contrato de silêncio antes de qualquer cron.
 
 Nenhum desses scripts deve escrever em sistemas externos. A primeira versão pode escrever apenas JSON/MD local em `reports/` e, se houver PII, em `private_exports/` com permissão restrita.
 
