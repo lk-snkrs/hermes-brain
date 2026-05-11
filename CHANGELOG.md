@@ -1,3 +1,11 @@
+## 2026-05-11 — LK OS Creative Visual Approval Gate read-only
+
+- Criado e executado `scripts/lk_os_creative_visual_approval_gate_20260511.py`, gate final da Fase 3 para criativos em e-mail/relatório.
+- Resultado: 12 criativos avaliados a partir de artefato versionado; 12 passaram nos checks automáticos mínimos, mas 0 ficaram elegíveis para e-mail agora porque falta aprovação humana explícita.
+- Regra fixada: checks automáticos não equivalem aprovação; imagem só entra em e-mail/relatório executivo depois de qualidade visual clara + aprovação Lucas/equipe.
+- Artefatos: `areas/lk/sub-areas/trafego-pago/rotinas/creative-visual-approval-gate-readonly-2026-05-11.md`, `reports/lk-os-creative-visual-approval-gate-2026-05-11.md` e `.json`.
+- Nenhuma chamada live a Meta, nenhum download de asset, nenhum Gmail/Klaviyo/WhatsApp enviado, nenhum cron criado e nenhuma campanha, budget, criativo, UTM, cupom, Shopify/Tiny write, cliente, estoque, preço ou banco de produção foi alterado.
+
 ## 2026-05-11 — LK OS Weekly Internal Influencer Email Preview read-only
 
 - Criado e executado `scripts/lk_os_weekly_internal_influencer_email_preview_20260511.py`, preview interno de e-mail semanal da Fase 3, sem envio e sem cron.

@@ -1,0 +1,537 @@
+{
+  "generated_at": "2026-05-11T20:43:31.212344+00:00",
+  "scope": "LK OS Phase 3 creative visual approval gate, read-only",
+  "read_only": true,
+  "source": "reports/lk-weekly-creative-assets-2026-05-09/creative-assets-output.json",
+  "period": {
+    "start": "2026-05-03",
+    "end": "2026-05-09"
+  },
+  "rules": {
+    "email_images_default": "blocked_until_visual_clear_and_human_approved",
+    "minimum_resolution": [
+      600,
+      600
+    ],
+    "minimum_bytes": 50000,
+    "blocked_sources": [
+      "thumbnail_url"
+    ],
+    "automatic_checks_are_not_approval": true,
+    "creative_to_product_attribution": "requires exact Shopify ad_id bridge; text/coupon stays influencer-level"
+  },
+  "summary": {
+    "ads_evaluated": 12,
+    "status_counts": {
+      "candidate_needs_human_approval": 12
+    },
+    "eligible_for_email_image_now": 0,
+    "human_approved": 0
+  },
+  "creative_gate": [
+    {
+      "ad_id": "120242637576320224",
+      "influencer": "Arlindo",
+      "ad_name": "[influencer Arlindo 02-04-26] - Varios Looks]Lista Compradores — — Cópia",
+      "creative_id": "2117150525766304",
+      "platform_signal": {
+        "spend": 919.12,
+        "purchases": 7.0,
+        "value": 15659.97,
+        "clicks": 489,
+        "impressions": 12996
+      },
+      "chosen_asset_sanitized": {
+        "source": "video.thumbnails",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 528965,
+        "sha16": "07e87018409cea8b",
+        "path": "images/120242637576320224_03_video.thumbnails_07e87018409cea8b.jpg",
+        "quality": {
+          "decoded": true,
+          "mean_luma": 94.35,
+          "stdev_luma": 50.84,
+          "black_frame": false,
+          "side_black_bars": false
+        }
+      },
+      "visual_gate_status": "candidate_needs_human_approval",
+      "blockers_or_requirements": [
+        "automated_quality_passed_but_human_approval_missing"
+      ],
+      "eligible_for_email_image_now": false,
+      "human_approval_status": "not_requested_not_granted",
+      "safe_next_step": "manual_visual_review_and_lucas_approval_before_any_email_or_campaign_use",
+      "source_labels": [
+        "platform_signal"
+      ]
+    },
+    {
+      "ad_id": "120236212896640224",
+      "influencer": "Lala Noleto",
+      "ad_name": "[influencer Lala noleto] —Simples",
+      "creative_id": "1173341508038084",
+      "platform_signal": {
+        "spend": 1349.02,
+        "purchases": 7.0,
+        "value": 8539.98,
+        "clicks": 904,
+        "impressions": 12454
+      },
+      "chosen_asset_sanitized": {
+        "source": "object_story_spec.video_data.image_url",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 164044,
+        "sha16": "8b7d499c0e4b5335",
+        "path": "images/120236212896640224_02_object_story_spec.video_data.image_url_8b7d499c0e4b5335.jpg",
+        "quality": {
+          "decoded": true,
+          "mean_luma": 140.47,
+          "stdev_luma": 49.36,
+          "black_frame": false,
+          "side_black_bars": false
+        }
+      },
+      "visual_gate_status": "candidate_needs_human_approval",
+      "blockers_or_requirements": [
+        "automated_quality_passed_but_human_approval_missing"
+      ],
+      "eligible_for_email_image_now": false,
+      "human_approval_status": "not_requested_not_granted",
+      "safe_next_step": "manual_visual_review_and_lucas_approval_before_any_email_or_campaign_use",
+      "source_labels": [
+        "platform_signal"
+      ]
+    },
+    {
+      "ad_id": "120242989926990224",
+      "influencer": "Fiorela",
+      "ad_name": "[influencer Fiorela- start 09-04-2026  Adv geral] — Jacquemus — Cópia — Cópia",
+      "creative_id": "3457974131025294",
+      "platform_signal": {
+        "spend": 195.11,
+        "purchases": 6.0,
+        "value": 19999.98,
+        "clicks": 84,
+        "impressions": 2108
+      },
+      "chosen_asset_sanitized": {
+        "source": "video.thumbnails",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 348135,
+        "sha16": "fb613445ebbfcf9c",
+        "path": "images/120242989926990224_07_video.thumbnails_fb613445ebbfcf9c.jpg",
+        "quality": {
+          "decoded": true,
+          "mean_luma": 153.14,
+          "stdev_luma": 51.62,
+          "black_frame": false,
+          "side_black_bars": false
+        }
+      },
+      "visual_gate_status": "candidate_needs_human_approval",
+      "blockers_or_requirements": [
+        "automated_quality_passed_but_human_approval_missing"
+      ],
+      "eligible_for_email_image_now": false,
+      "human_approval_status": "not_requested_not_granted",
+      "safe_next_step": "manual_visual_review_and_lucas_approval_before_any_email_or_campaign_use",
+      "source_labels": [
+        "platform_signal"
+      ]
+    },
+    {
+      "ad_id": "120240944479470224",
+      "influencer": "Ju Mesquita",
+      "ad_name": "[influencer Ju Mesquita | start 25-02-26 | New Balance 204 L] — Cópia",
+      "creative_id": "1737204950995750",
+      "platform_signal": {
+        "spend": 682.9,
+        "purchases": 5.0,
+        "value": 7709.98,
+        "clicks": 988,
+        "impressions": 13138
+      },
+      "chosen_asset_sanitized": {
+        "source": "video.thumbnails",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 346194,
+        "sha16": "d97b7ed2b0093b41",
+        "path": "images/120240944479470224_06_video.thumbnails_d97b7ed2b0093b41.jpg",
+        "quality": {
+          "decoded": true,
+          "mean_luma": 86.06,
+          "stdev_luma": 39.89,
+          "black_frame": false,
+          "side_black_bars": false
+        }
+      },
+      "visual_gate_status": "candidate_needs_human_approval",
+      "blockers_or_requirements": [
+        "automated_quality_passed_but_human_approval_missing"
+      ],
+      "eligible_for_email_image_now": false,
+      "human_approval_status": "not_requested_not_granted",
+      "safe_next_step": "manual_visual_review_and_lucas_approval_before_any_email_or_campaign_use",
+      "source_labels": [
+        "platform_signal"
+      ]
+    },
+    {
+      "ad_id": "120229142869820224",
+      "influencer": "Maria",
+      "ad_name": "[influencer Maria- Adv geral]",
+      "creative_id": "1076418740702376",
+      "platform_signal": {
+        "spend": 208.59,
+        "purchases": 5.0,
+        "value": 6480.0,
+        "clicks": 361,
+        "impressions": 3797
+      },
+      "chosen_asset_sanitized": {
+        "source": "object_story_spec.video_data.image_url",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 176378,
+        "sha16": "33e8a609a7b2445d",
+        "path": "images/120229142869820224_02_object_story_spec.video_data.image_url_33e8a609a7b2445d.jpg",
+        "quality": {
+          "decoded": true,
+          "mean_luma": 166.38,
+          "stdev_luma": 76.84,
+          "black_frame": false,
+          "side_black_bars": false
+        }
+      },
+      "visual_gate_status": "candidate_needs_human_approval",
+      "blockers_or_requirements": [
+        "automated_quality_passed_but_human_approval_missing"
+      ],
+      "eligible_for_email_image_now": false,
+      "human_approval_status": "not_requested_not_granted",
+      "safe_next_step": "manual_visual_review_and_lucas_approval_before_any_email_or_campaign_use",
+      "source_labels": [
+        "platform_signal"
+      ]
+    },
+    {
+      "ad_id": "120237637573400224",
+      "influencer": "Helena Lunardelli",
+      "ad_name": "[influencer Helena | start 07-12-25 | Stories 5] — — — Cópia",
+      "creative_id": "1312619110908913",
+      "platform_signal": {
+        "spend": 181.54,
+        "purchases": 3.0,
+        "value": 13348.62,
+        "clicks": 109,
+        "impressions": 1168
+      },
+      "chosen_asset_sanitized": {
+        "source": "object_story_spec.video_data.image_url",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 280411,
+        "sha16": "8cc866a6eb7bb37c",
+        "path": "images/120237637573400224_02_object_story_spec.video_data.image_url_8cc866a6eb7bb37c.jpg",
+        "quality": {
+          "decoded": true,
+          "mean_luma": 134.91,
+          "stdev_luma": 50.07,
+          "black_frame": false,
+          "side_black_bars": false
+        }
+      },
+      "visual_gate_status": "candidate_needs_human_approval",
+      "blockers_or_requirements": [
+        "automated_quality_passed_but_human_approval_missing"
+      ],
+      "eligible_for_email_image_now": false,
+      "human_approval_status": "not_requested_not_granted",
+      "safe_next_step": "manual_visual_review_and_lucas_approval_before_any_email_or_campaign_use",
+      "source_labels": [
+        "platform_signal"
+      ]
+    },
+    {
+      "ad_id": "120231766207010224",
+      "influencer": "Lala Noleto",
+      "ad_name": "[influencer Lala noleto] — Adv geral",
+      "creative_id": "1173341508038084",
+      "platform_signal": {
+        "spend": 8.68,
+        "purchases": 3.0,
+        "value": 4320.0,
+        "clicks": 10,
+        "impressions": 172
+      },
+      "chosen_asset_sanitized": {
+        "source": "object_story_spec.video_data.image_url",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 164044,
+        "sha16": "8b7d499c0e4b5335",
+        "path": "images/120231766207010224_02_object_story_spec.video_data.image_url_8b7d499c0e4b5335.jpg",
+        "quality": {
+          "decoded": true,
+          "mean_luma": 140.47,
+          "stdev_luma": 49.36,
+          "black_frame": false,
+          "side_black_bars": false
+        }
+      },
+      "visual_gate_status": "candidate_needs_human_approval",
+      "blockers_or_requirements": [
+        "automated_quality_passed_but_human_approval_missing"
+      ],
+      "eligible_for_email_image_now": false,
+      "human_approval_status": "not_requested_not_granted",
+      "safe_next_step": "manual_visual_review_and_lucas_approval_before_any_email_or_campaign_use",
+      "source_labels": [
+        "platform_signal"
+      ]
+    },
+    {
+      "ad_id": "120242099000680224",
+      "influencer": "Silvia Henz",
+      "ad_name": "[influencer Silvia 24-03-26] - jacquemus video 02]Lista Compradores",
+      "creative_id": "1574130150316674",
+      "platform_signal": {
+        "spend": 225.79,
+        "purchases": 2.0,
+        "value": 11999.98,
+        "clicks": 60,
+        "impressions": 919
+      },
+      "chosen_asset_sanitized": {
+        "source": "video.thumbnails",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 305972,
+        "sha16": "dd061fd78a93b705",
+        "path": "images/120242099000680224_06_video.thumbnails_dd061fd78a93b705.jpg",
+        "quality": {
+          "decoded": true,
+          "mean_luma": 117.94,
+          "stdev_luma": 65.75,
+          "black_frame": false,
+          "side_black_bars": false
+        }
+      },
+      "visual_gate_status": "candidate_needs_human_approval",
+      "blockers_or_requirements": [
+        "automated_quality_passed_but_human_approval_missing"
+      ],
+      "eligible_for_email_image_now": false,
+      "human_approval_status": "not_requested_not_granted",
+      "safe_next_step": "manual_visual_review_and_lucas_approval_before_any_email_or_campaign_use",
+      "source_labels": [
+        "platform_signal"
+      ]
+    },
+    {
+      "ad_id": "120214612429180224",
+      "influencer": "Silvia Henz",
+      "ad_name": "AD02 [EST] Onitsuka México",
+      "creative_id": "1161480235697482",
+      "platform_signal": {
+        "spend": 63.68,
+        "purchases": 2.0,
+        "value": 9899.98,
+        "clicks": 73,
+        "impressions": 1520
+      },
+      "chosen_asset_sanitized": {
+        "source": "adimages.hash:f244e2029a9e75a20dd0cb6e828ee5a6",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 728308,
+        "sha16": "f81e6607a9b8f4ac",
+        "path": "images/120214612429180224_04_adimages.hash_f244e2029a9e75a20dd0cb6e828e_f81e6607a9b8f4ac.jpg",
+        "quality": {
+          "decoded": true,
+          "mean_luma": 229.12,
+          "stdev_luma": 44.68,
+          "black_frame": false,
+          "side_black_bars": false
+        }
+      },
+      "visual_gate_status": "candidate_needs_human_approval",
+      "blockers_or_requirements": [
+        "automated_quality_passed_but_human_approval_missing"
+      ],
+      "eligible_for_email_image_now": false,
+      "human_approval_status": "not_requested_not_granted",
+      "safe_next_step": "manual_visual_review_and_lucas_approval_before_any_email_or_campaign_use",
+      "source_labels": [
+        "platform_signal"
+      ]
+    },
+    {
+      "ad_id": "120241549835490224",
+      "influencer": "Silvia Henz",
+      "ad_name": "[influencer Silvia 11-03-26] - jacquemus]Lista Compradores",
+      "creative_id": "1486499903130910",
+      "platform_signal": {
+        "spend": 97.14,
+        "purchases": 2.0,
+        "value": 9000.0,
+        "clicks": 38,
+        "impressions": 763
+      },
+      "chosen_asset_sanitized": {
+        "source": "video.thumbnails",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 306247,
+        "sha16": "ddd4b86f89052cd9",
+        "path": "images/120241549835490224_06_video.thumbnails_ddd4b86f89052cd9.jpg",
+        "quality": {
+          "decoded": true,
+          "mean_luma": 85.38,
+          "stdev_luma": 51.32,
+          "black_frame": false,
+          "side_black_bars": false
+        }
+      },
+      "visual_gate_status": "candidate_needs_human_approval",
+      "blockers_or_requirements": [
+        "automated_quality_passed_but_human_approval_missing"
+      ],
+      "eligible_for_email_image_now": false,
+      "human_approval_status": "not_requested_not_granted",
+      "safe_next_step": "manual_visual_review_and_lucas_approval_before_any_email_or_campaign_use",
+      "source_labels": [
+        "platform_signal"
+      ]
+    },
+    {
+      "ad_id": "120244215857700224",
+      "influencer": "Lala Noleto",
+      "ad_name": "[influencer Lala-Nolleto- start 30-04-2026  Adv geral] — DIA DAS MÃES — Cópia",
+      "creative_id": "1658548535294733",
+      "platform_signal": {
+        "spend": 1.35,
+        "purchases": 2.0,
+        "value": 5599.98,
+        "clicks": 2,
+        "impressions": 28
+      },
+      "chosen_asset_sanitized": {
+        "source": "video.thumbnails",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 176103,
+        "sha16": "dd3ca5b31385dac0",
+        "path": "images/120244215857700224_03_video.thumbnails_dd3ca5b31385dac0.jpg",
+        "quality": {
+          "decoded": true,
+          "mean_luma": 150.26,
+          "stdev_luma": 56.92,
+          "black_frame": false,
+          "side_black_bars": false
+        }
+      },
+      "visual_gate_status": "candidate_needs_human_approval",
+      "blockers_or_requirements": [
+        "automated_quality_passed_but_human_approval_missing"
+      ],
+      "eligible_for_email_image_now": false,
+      "human_approval_status": "not_requested_not_granted",
+      "safe_next_step": "manual_visual_review_and_lucas_approval_before_any_email_or_campaign_use",
+      "source_labels": [
+        "platform_signal"
+      ]
+    },
+    {
+      "ad_id": "120240944479490224",
+      "influencer": "Ju Mesquita",
+      "ad_name": "[influencer Ju Mesquita | start 25-02-26 | Onitsuka] — Cópia",
+      "creative_id": "1496586948553583",
+      "platform_signal": {
+        "spend": 203.62,
+        "purchases": 2.0,
+        "value": 4560.0,
+        "clicks": 352,
+        "impressions": 3654
+      },
+      "chosen_asset_sanitized": {
+        "source": "video.thumbnails",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 426505,
+        "sha16": "d8fe6949f3749158",
+        "path": "images/120240944479490224_10_video.thumbnails_d8fe6949f3749158.jpg",
+        "quality": {
+          "decoded": true,
+          "mean_luma": 85.13,
+          "stdev_luma": 41.24,
+          "black_frame": false,
+          "side_black_bars": false
+        }
+      },
+      "visual_gate_status": "candidate_needs_human_approval",
+      "blockers_or_requirements": [
+        "automated_quality_passed_but_human_approval_missing"
+      ],
+      "eligible_for_email_image_now": false,
+      "human_approval_status": "not_requested_not_granted",
+      "safe_next_step": "manual_visual_review_and_lucas_approval_before_any_email_or_campaign_use",
+      "source_labels": [
+        "platform_signal"
+      ]
+    }
+  ],
+  "approval_required_for": [
+    "include_image_in_email_or_executive_report",
+    "send_email_with_inline_creatives",
+    "campaign_budget_creative_or_utm_change",
+    "shopify_or_tiny_write",
+    "customer_send_or_supplier_action",
+    "cron_creation"
+  ],
+  "not_performed": [
+    "live_meta_call",
+    "asset_download",
+    "gmail_send",
+    "klaviyo_send",
+    "whatsapp_send",
+    "cron_creation",
+    "campaign_change",
+    "budget_change",
+    "creative_change",
+    "utm_change",
+    "coupon_change",
+    "shopify_write",
+    "tiny_write",
+    "production_db_write"
+  ]
+}
