@@ -1,3 +1,10 @@
+## 2026-05-11 — LK OS Approval Learning Ledger
+
+- Criado e executado `scripts/lk_os_approval_learning_ledger_20260511.py`, consolidando decisões de Fase 7 em um ledger operacional read-only.
+- Resultado: 24 registros roteáveis, com 8 `executed_verified`, 8 `pending_future`, 5 `needs_approval` e 3 `needs_data`; 0 writes externos/visíveis feitos pelo ledger e 0 writes liberados agora.
+- Fontes consolidadas: decisões de cotação/sourcing, execução aprovada de SEO title/meta e decisão Lucas de deixar CRO visível para futuro.
+- Artefatos: `areas/lk/rotinas/approval-learning-ledger-2026-05-11.md`, `reports/lk-os-approval-learning-ledger-2026-05-11.md`, `.json` e `.csv`.
+
 ## 2026-05-11 — LK Visible CRO Pending Future
 
 - Registrada a decisão de Lucas: `Deixe em pending o cro visível ok? Faremos no futuro`.
