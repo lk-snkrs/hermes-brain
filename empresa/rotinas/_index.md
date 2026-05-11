@@ -83,6 +83,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | LK Influencer Identity Bridge Read-only 2026-05-11 | `areas/lk/sub-areas/trafego-pago/rotinas/influencer-identity-bridge-readonly-2026-05-11.md` | Fila de handles/cupons/ad_id/UTM oficiais por influencer, com ponte Shopify/Tiny e Meta como platform_signal |
 | Product Dashboard | `areas/lk/sub-areas/ecommerce/rotinas/product-dashboard.md` | Saúde de PDPs |
 | Weekly Influencer Sales Email | `areas/lk/sub-areas/trafego-pago/rotinas/weekly-influencer-sales-email.md` | E-mail semanal aprovado com vendas por influencer, Meta canônico e comparação WoW |
+| LK Weekly Internal Influencer Email Preview 2026-05-11 | `areas/lk/sub-areas/trafego-pago/rotinas/weekly-internal-influencer-email-preview-2026-05-11.md` | Preview interno de e-mail semanal, sem envio/cron, separando mídia, Shopify/Tiny e decisões bloqueadas |
 | Pareto-Compatible Monthly Reconciliation | `areas/lk/sub-areas/trafego-pago/rotinas/pareto-monthly-reconciliation.md` | Conferência mensal com lógica Maicon/Pareto, tolerância 99%+ e leitura Lucas-operacional separada |
 | LK Pareto vs Lucas Operational Split Read-only 2026-05-11 | `areas/lk/sub-areas/trafego-pago/rotinas/pareto-operational-split-readonly-2026-05-11.md` | Fronteira de uso entre relatório Pareto-compatible e decisão operacional Lucas por Shopify/Tiny bridge |
 | Consolidar FAQ | `areas/lk/sub-areas/atendimento/rotinas/consolidar-faq.md` | Loop FAQ/suporte/bot |
