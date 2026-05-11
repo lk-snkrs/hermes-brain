@@ -263,7 +263,7 @@ Critério de saída:
 
 ### Fase 7 — Approval Manager e Learning Loop
 
-Status: fundação existe; precisa fluxo operacional.
+Status: operacionalizado como ledger de decisões/aprendizados; aprovações, pendências futuras, needs_data e execução verificada agora ficam roteáveis por artefato canônico.
 
 Objetivo: cada aprovação/correção do Lucas muda o sistema.
 
@@ -273,6 +273,7 @@ Entregáveis:
 - [x] Log de decisões do Projeto LK OS iniciado via pacote `supplier-quote-approval-packet`: status `approve_quote_only`, `reject`, `needs_data`, `hold_or_bundle_with_p0`; execução externa bloqueada até aprovação.
 - [x] Rotina de patch em skills quando Lucas corrige regra.
 - [x] Regra de status: approved, rejected, needs_data, needs_preview, executed.
+- [x] Ledger operacional `approval-learning-ledger`: 24 registros consolidados de SEO executado, CRO `pending_future`, cotações `needs_approval`/`needs_data`, regras de roteamento e 0 writes liberados.
 
 Critério de saída:
 
