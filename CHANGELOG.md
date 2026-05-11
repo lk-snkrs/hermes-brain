@@ -1,3 +1,12 @@
+## 2026-05-11 — LK Daily + Weekly Dry-run Validation
+
+- Executados manualmente os dois primeiros candidatos da Fase 8: `LK-AUTO-001 Daily Sales Brief read-only` e `LK-AUTO-002 Weekly CEO Review read-only`.
+- Resultado: 2 dry-runs passed, 0 review needed; ambos elegíveis para decisão futura de cadência/destino, mas `activated_now=0`.
+- Daily 2026-05-10: 9 pedidos Shopify, R$ 34.809,92, 4.301 sessões GA4, riscos Tiny: 3 ruptura, 1 baixo estoque vs venda do dia, 1 ok, 5 unknown.
+- Weekly 2026-05-04 a 2026-05-10: 97 pedidos Shopify, R$ 312.261,74, 29.605 sessões GA4, Meta spend R$ 9.374,43, 21 linhas Google Ads/Metricool, riscos Tiny: 7 ruptura, 3 baixo estoque vs venda da semana, 1 ok, 4 unknown.
+- Artefatos: `areas/lk/rotinas/daily-weekly-dry-run-validation-2026-05-11.md`, `reports/lk-daily-weekly-dry-run-validation-2026-05-11.md` e `.json`.
+- Nenhum cron, n8n, Telegram send, envio externo ou write produtivo foi executado.
+
 ## 2026-05-11 — LK Safe Automation Readiness Registry
 
 - Criado e executado `scripts/lk_safe_automation_readiness_registry_20260511.py`, abrindo a Fase 8 em modo planejamento/dry-run sem ativar automações.

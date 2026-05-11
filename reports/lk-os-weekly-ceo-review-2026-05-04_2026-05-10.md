@@ -1,16 +1,16 @@
 # LK OS Weekly CEO Review — 2026-05-04 a 2026-05-10
 
-Gerado em: `2026-05-11T19:14:06.217897+00:00`.
+Gerado em: `2026-05-11T21:51:50.356893+00:00`.
 Política de janela: `last_7_closed_days_brt`.
-Arquivo privado auditável, fora do Git: `/opt/data/hermes_bruno_ingest/local_sql/lk_data_spine_snapshots/lk_os_weekly_ceo_review_20260504_20260510_191406Z.json`.
+Arquivo privado auditável, fora do Git: `/opt/data/hermes_bruno_ingest/local_sql/lk_data_spine_snapshots/lk_os_weekly_ceo_review_20260504_20260510_215150Z.json`.
 
 ## 1. Resumo CEO
 
 - Shopify: **R$ 312.261,74** em **97 pedidos**, ticket médio **R$ 3.219,19**. Fonte: `fact_shopify`.
 - GA4: **29605 sessões**, **55 transações GA4**, receita GA4 **R$ 164.657,24**. Fonte: `fact_ga4`, não receita oficial.
 - Conversão aproximada Shopify pedidos / GA4 sessões: **0.33%**.
-- Tiny nos SKUs vendidos: **{'ruptura': 8, 'baixo_estoque_vs_venda_da_semana': 3, 'unknown': 3, 'ok_amostra': 1}**. Fonte: `fact_tiny_stock`.
-- Meta Ads: gasto **R$ 9.374,42**, compras plataforma `62.0`, valor plataforma **R$ 140.697,30**, ROAS plataforma `15.01`. Fonte: `platform_signal`.
+- Tiny nos SKUs vendidos: **{'ruptura': 7, 'baixo_estoque_vs_venda_da_semana': 3, 'unknown': 4, 'ok_amostra': 1}**. Fonte: `fact_tiny_stock`.
+- Meta Ads: gasto **R$ 9.374,43**, compras plataforma `62.0`, valor plataforma **R$ 140.697,30**, ROAS plataforma `15.01`. Fonte: `platform_signal`.
 - Metricool/Google Ads: linhas `21`, status `200`. Fonte: `platform_signal`.
 
 ## 2. Vendas por dia
@@ -73,9 +73,9 @@ Arquivo privado auditável, fora do Git: `/opt/data/hermes_bruno_ingest/local_sq
 
 ## 6. Prioridades e aprovações
 
-- [P0] Preparar fila de sourcing/reposição para SKUs vendidos na semana com saldo zero no Tiny. Motivo: 8 SKU(s) vendidos aparecem em ruptura no depósito oficial. Aprovação: Sim, antes de compra/fornecedor/Notion.. Fonte: `derived_reconciliation`.
+- [P0] Preparar fila de sourcing/reposição para SKUs vendidos na semana com saldo zero no Tiny. Motivo: 7 SKU(s) vendidos aparecem em ruptura no depósito oficial. Aprovação: Sim, antes de compra/fornecedor/Notion.. Fonte: `derived_reconciliation`.
 - [P1] Revisar cobertura dos SKUs com venda semanal encostando no saldo oficial. Motivo: 3 SKU(s) têm saldo menor ou igual à venda da semana. Aprovação: Sim, se virar compra, preço ou contato.. Fonte: `derived_reconciliation`.
-- [P1] Priorizar saneamento SKU Shopify ↔ Tiny antes de escalar mídia dos produtos vendidos. Motivo: 3 SKU(s) vendidos sem candidato Tiny seguro ou sem saldo legível. Aprovação: Sim, se exigir write em cadastro.. Fonte: `derived_reconciliation`.
+- [P1] Priorizar saneamento SKU Shopify ↔ Tiny antes de escalar mídia dos produtos vendidos. Motivo: 4 SKU(s) vendidos sem candidato Tiny seguro ou sem saldo legível. Aprovação: Sim, se exigir write em cadastro.. Fonte: `derived_reconciliation`.
 - [P2] Usar Meta como sinal de mídia e reconciliar campanhas com landing/referrer/cupom antes de falar em ROAS real. Motivo: Gasto Meta sinalizado equivale a 3.0% da receita Shopify semanal, sem prova SKU por campanha ainda. Aprovação: Não para análise; sim para campanha.. Fonte: `derived_reconciliation`.
 
 ## 7. O que este script não fez

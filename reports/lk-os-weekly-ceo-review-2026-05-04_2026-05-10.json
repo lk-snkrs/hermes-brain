@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T19:14:06.217897+00:00",
+  "generated_at": "2026-05-11T21:51:50.356893+00:00",
   "week": {
     "start_date": "2026-05-04",
     "end_date": "2026-05-10",
@@ -391,7 +391,7 @@
           "sessions": 15390.0,
           "totalUsers": 13403.0,
           "transactions": 14.0,
-          "totalRevenue": 58747.479988999985,
+          "totalRevenue": 58747.47998900001,
           "sessionConversionRate": 0.008187134502923977
         },
         {
@@ -476,9 +476,9 @@
       "deposit": "LK | CONTROLE ESTOQUE",
       "checks_count": 15,
       "risk_counts": {
-        "ruptura": 8,
+        "ruptura": 7,
         "baixo_estoque_vs_venda_da_semana": 3,
-        "unknown": 3,
+        "unknown": 4,
         "ok_amostra": 1
       },
       "critical_or_unknown": [
@@ -882,15 +882,11 @@
           "sku": "HV8547-001-7",
           "size_or_variant": "40",
           "sold_qty_fact_shopify": 1,
-          "candidate_count": 1,
-          "chosen_tiny_id": "1066218771",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 0.0,
-            "saldo_raw_present": true
-          },
-          "stock_risk": "ruptura"
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_risk": "unknown"
         }
       ],
       "scope_note": "Read-only. Estoque consultado só para SKUs vendidos na semana, não auditoria completa de catálogo."
@@ -906,8 +902,8 @@
         "end": "2026-05-10"
       },
       "rows": 1,
-      "spend": 9374.42,
-      "impressions": 490901,
+      "spend": 9374.43,
+      "impressions": 490903,
       "clicks": 27352,
       "purchase_actions": 62.0,
       "purchase_action_key": "offsite_conversion.fb_pixel_purchase",
@@ -943,7 +939,7 @@
       "priority": "P0",
       "source_label": "derived_reconciliation",
       "action": "Preparar fila de sourcing/reposição para SKUs vendidos na semana com saldo zero no Tiny.",
-      "why": "8 SKU(s) vendidos aparecem em ruptura no depósito oficial.",
+      "why": "7 SKU(s) vendidos aparecem em ruptura no depósito oficial.",
       "approval_required": "Sim, antes de compra/fornecedor/Notion."
     },
     {
@@ -957,7 +953,7 @@
       "priority": "P1",
       "source_label": "derived_reconciliation",
       "action": "Priorizar saneamento SKU Shopify ↔ Tiny antes de escalar mídia dos produtos vendidos.",
-      "why": "3 SKU(s) vendidos sem candidato Tiny seguro ou sem saldo legível.",
+      "why": "4 SKU(s) vendidos sem candidato Tiny seguro ou sem saldo legível.",
       "approval_required": "Sim, se exigir write em cadastro."
     },
     {
