@@ -206,7 +206,7 @@ Verificação de nomes executada em 2026-05-11 via Doppler HTTP API, sem imprimi
 
 ## Lacunas e riscos atuais
 
-- Tiny precisa de rotina estável de freshness/estoque por variação antes de automação recorrente.
+- Tiny agora tem freshness report específico executado: status `green`, 6/6 buscas OK, 8/8 checks de estoque com depósito oficial visto, mediana 379 ms, p95 1442 ms.
 - Merchant Center ainda precisa diagnóstico próprio.
 - Judge.me e Frenet têm credenciais, mas ainda não têm rotina LK recorrente documentada.
 - Notion LK está mapeado como destino operacional aprovado, mas writes seguem bloqueados.
@@ -250,13 +250,34 @@ Regra: os números de Meta, Google/Metricool e Klaviyo continuam sendo sinal de 
 
 ## Próximo passo técnico
 
-Depois do snapshot consolidado v0.1, separar em módulos menores ou evoluir para freshness report recorrível:
+Depois do snapshot consolidado v0.1 e do freshness report Tiny, separar os próximos módulos menores para evoluir briefing recorrível:
 
 1. `lk_data_spine_shopify_snapshot.py`.
-2. `lk_data_spine_tiny_stock_snapshot.py`.
-3. `lk_data_spine_ga4_channels_snapshot.py`.
-4. `lk_data_spine_paid_snapshot.py`.
-5. `lk_data_spine_klaviyo_snapshot.py`.
-6. `lk_data_spine_freshness_report.py`.
+2. `lk_data_spine_ga4_channels_snapshot.py`.
+3. `lk_data_spine_paid_snapshot.py`.
+4. `lk_data_spine_klaviyo_snapshot.py`.
+5. `lk_data_spine_freshness_report.py` consolidando status de todas as fontes.
+6. `daily_sales_brief` consumindo os JSONs já gerados, sem cron/envio automático inicialmente.
 
 Nenhum desses scripts deve escrever em sistemas externos. A primeira versão pode escrever apenas JSON/MD local em `reports/` e, se houver PII, em `private_exports/` com permissão restrita.
+
+## Freshness report Tiny executado
+
+Script: `scripts/lk_os_tiny_freshness_report_20260511.py`.
+
+Relatório público sanitizado: `reports/lk-os-tiny-freshness-report-2026-05-11.md` e `.json`.
+
+Resultado em 2026-05-11:
+
+- Fonte: `Tiny`.
+- Rótulo: `fact_tiny_stock`.
+- Status: `green`.
+- Buscas OK: `6/6`.
+- Checks de estoque OK: `8/8`.
+- Depósito oficial `LK | CONTROLE ESTOQUE` visto: `8/8`.
+- Depósito oficial retornando saldo: `8/8`.
+- Latência mediana: `379 ms`.
+- Latência p95: `1442 ms`.
+- Erros: `0`.
+
+Limite: o relatório mede saúde/latência/cobertura da API Tiny na amostra, não auditoria completa de estoque por SKU.

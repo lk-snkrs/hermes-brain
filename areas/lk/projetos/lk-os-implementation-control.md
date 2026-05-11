@@ -126,11 +126,12 @@ Entregáveis:
 - [x] Inventário de fontes v0.1: Shopify, Tiny, GA4, Search Console, Meta, Google Ads/Metricool, Klaviyo, Judge.me, Frenet, Notion.
 - [x] Matriz de credenciais esperadas no Doppler, sem valores, com status OK/MISSING por nome.
 - [x] Scripts read-only com outputs auditáveis e contagem/freshness: v0.1 consolidado para Shopify, Tiny, GA4, Meta, Metricool/Google Ads e Klaviyo.
+- [x] Freshness report específico do Tiny ERP: latência, saúde da API e visibilidade do depósito `LK | CONTROLE ESTOQUE`, sem write.
 - [x] Dicionário de entidades canônicas v0.1: pedido, cliente, produto, variante, SKU, tamanho, campanha, influencer, cupom, UTM, aprovação/ação.
 - [x] Regras de reconciliação Shopify vs GA4 vs Meta/Google v0.1.
 - [x] Relatório de lacunas v0.1: Tiny freshness, Merchant Center, Judge.me/Frenet, Notion writes, Klaviyo UI link, PII e rótulos de fonte.
 
-Artefato atual: `areas/lk/rotinas/data-spine-readonly-2026-05-11.md` + `areas/lk/contexto/data-spine-v0.1.md` + `reports/lk-os-data-spine-snapshot-2026-05-11.md` + `scripts/lk_os_data_spine_snapshots_20260511.py`.
+Artefato atual: `areas/lk/rotinas/data-spine-readonly-2026-05-11.md` + `areas/lk/contexto/data-spine-v0.1.md` + `reports/lk-os-data-spine-snapshot-2026-05-11.md` + `reports/lk-os-tiny-freshness-report-2026-05-11.md` + `scripts/lk_os_data_spine_snapshots_20260511.py` + `scripts/lk_os_tiny_freshness_report_20260511.py`.
 
 Critério de saída:
 
