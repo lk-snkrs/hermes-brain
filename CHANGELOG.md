@@ -1,3 +1,10 @@
+## 2026-05-11 — LK SEO/CRO Weekly Improvement operacionalizado
+
+- Criada skill canônica `lk-seo-weekly-improvement` para o módulo semanal de SEO/CRO com nota Claude SEO, meta de evolução e fila de melhoria de PDP/páginas.
+- Documentada rotina `areas/lk/rotinas/seo-cro-weekly-improvement-loop.md` e indexada em `empresa/skills/_index.md` / `empresa/rotinas/_index.md`.
+- Atualizada Fase 6 do LK OS para refletir que SEO deve virar fila de melhoria, não relatório solto.
+- Guardrail mantido: auditoria e preview são read-only; alterações em Shopify/tema/feed/conteúdo público exigem aprovação explícita.
+
 ## 2026-05-11 — LK Fila B residual priorizada para revisão manual
 
 - Cruzada a Fila B residual pós-saneamento com o relatório de estoque/venda já existente para decidir a sequência antes de nova Fila A.

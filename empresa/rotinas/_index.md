@@ -101,4 +101,4 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 - Secrets via Doppler `lc-keys/prd`.
 - Rotina documentada ≠ cron confirmado.
 - Mensagens externas, campanhas, posts e contato com cliente/colecionador exigem aprovação Lucas.
-
+| LK SEO/CRO Weekly Improvement Loop | `areas/lk/rotinas/seo-cro-weekly-improvement-loop.md` | Rotina semanal read-only com Claude SEO: nota, meta e fila priorizada de melhorias de PDP/páginas |

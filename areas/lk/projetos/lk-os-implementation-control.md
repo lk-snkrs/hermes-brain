@@ -222,16 +222,17 @@ Critério de saída:
 
 ### Fase 6 — SEO, Search Console e Merchant Center
 
-Status: planejado no PRD; falta operacionalizar.
+Status: operacionalizado como módulo semanal read-only inicial; cron semanal criado para nota Claude SEO e fila de melhoria, writes seguem bloqueados até aprovação.
 
 Objetivo: trazer Google/Search para dentro do LK OS como fonte de demanda e problemas de feed/PDP.
 
 Entregáveis:
 
 - [ ] Rotina Search Console: queries, páginas, CTR, oportunidades.
+- [x] Módulo semanal SEO/CRO com nota Claude SEO, meta próxima e fila priorizada de melhorias de PDP/páginas.
 - [ ] Diagnóstico Merchant Center/feed.
 - [ ] Priorização de PDPs com tráfego alto e conversão baixa.
-- [ ] Checklist SEO/PDP para produtos importantes.
+- [x] Checklist SEO/PDP para produtos importantes via `lk-seo-weekly-improvement` e rotina `seo-cro-weekly-improvement-loop`.
 
 Critério de saída:
 
