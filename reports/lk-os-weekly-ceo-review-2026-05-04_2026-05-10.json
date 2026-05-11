@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T22:16:11.759571+00:00",
+  "generated_at": "2026-05-11T22:27:43.981224+00:00",
   "week": {
     "start_date": "2026-05-04",
     "end_date": "2026-05-10",
@@ -391,7 +391,7 @@
           "sessions": 15390.0,
           "totalUsers": 13403.0,
           "transactions": 14.0,
-          "totalRevenue": 58747.479988999985,
+          "totalRevenue": 58747.47998899999,
           "sessionConversionRate": 0.008187134502923977
         },
         {
@@ -476,9 +476,10 @@
       "deposit": "LK | CONTROLE ESTOQUE",
       "checks_count": 15,
       "risk_counts": {
-        "ruptura": 3,
-        "baixo_estoque_vs_venda_da_semana": 1,
-        "unknown": 11
+        "unknown": 4,
+        "baixo_estoque_vs_venda_da_semana": 3,
+        "ruptura": 7,
+        "ok_amostra": 1
       },
       "critical_or_unknown": [
         {
@@ -487,15 +488,11 @@
           "sku": "U9060CCC-4",
           "size_or_variant": "37",
           "sold_qty_fact_shopify": 3,
-          "candidate_count": 1,
-          "chosen_tiny_id": "1066011409",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 0.0,
-            "saldo_raw_present": true
-          },
-          "stock_risk": "ruptura"
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_risk": "unknown"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -531,11 +528,15 @@
           "sku": "HV8547-200-38",
           "size_or_variant": "38",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069546133",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -543,11 +544,15 @@
           "sku": "HV8547-601-37",
           "size_or_variant": "37",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069545977",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 2.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "baixo_estoque_vs_venda_da_semana"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -555,11 +560,15 @@
           "sku": "HV8547-002-36",
           "size_or_variant": "36",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069546050",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -567,11 +576,15 @@
           "sku": "HQ4308-003-5",
           "size_or_variant": "36",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069545282",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -579,11 +592,15 @@
           "sku": "U9060WHT-4",
           "size_or_variant": "37",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1059847080",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": -1.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -591,11 +608,15 @@
           "sku": "U9060ERB-3",
           "size_or_variant": "36",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1066064082",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 1.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "baixo_estoque_vs_venda_da_semana"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -611,21 +632,25 @@
         },
         {
           "source_label": "fact_tiny_stock",
-          "product_title": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
-          "sku": "JR9446-5",
-          "size_or_variant": "38",
-          "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
-        },
-        {
-          "source_label": "fact_tiny_stock",
           "product_title": "Polo Comme des Garçons PLAY Red Emblem White Branco",
           "sku": "CDGP2",
           "size_or_variant": "G/L",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1070118877",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+          "sku": "SST-6502622-M",
+          "size_or_variant": "M/M",
           "sold_qty_fact_shopify": 2,
           "candidate_count": 0,
           "chosen_tiny_id": null,
@@ -641,15 +666,11 @@
           "sku": "U9060CCC-4",
           "size_or_variant": "37",
           "sold_qty_fact_shopify": 3,
-          "candidate_count": 1,
-          "chosen_tiny_id": "1066011409",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 0.0,
-            "saldo_raw_present": true
-          },
-          "stock_risk": "ruptura"
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_risk": "unknown"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -685,11 +706,15 @@
           "sku": "HV8547-200-38",
           "size_or_variant": "38",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069546133",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -697,11 +722,15 @@
           "sku": "HV8547-601-37",
           "size_or_variant": "37",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069545977",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 2.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "baixo_estoque_vs_venda_da_semana"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -709,11 +738,15 @@
           "sku": "HV8547-002-36",
           "size_or_variant": "36",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069546050",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -721,11 +754,15 @@
           "sku": "HQ4308-003-5",
           "size_or_variant": "36",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069545282",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -733,11 +770,15 @@
           "sku": "U9060WHT-4",
           "size_or_variant": "37",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1059847080",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": -1.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -745,11 +786,15 @@
           "sku": "U9060ERB-3",
           "size_or_variant": "36",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1066064082",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 1.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "baixo_estoque_vs_venda_da_semana"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -769,11 +814,15 @@
           "sku": "JR9446-5",
           "size_or_variant": "38",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1064539666",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 6.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ok_amostra"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -781,11 +830,15 @@
           "sku": "CDGP2",
           "size_or_variant": "G/L",
           "sold_qty_fact_shopify": 2,
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_risk": "unknown"
+          "candidate_count": 1,
+          "chosen_tiny_id": "1070118877",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -882,21 +935,21 @@
       "priority": "P0",
       "source_label": "derived_reconciliation",
       "action": "Preparar fila de sourcing/reposição para SKUs vendidos na semana com saldo zero no Tiny.",
-      "why": "3 SKU(s) vendidos aparecem em ruptura no depósito oficial.",
+      "why": "7 SKU(s) vendidos aparecem em ruptura no depósito oficial.",
       "approval_required": "Sim, antes de compra/fornecedor/Notion."
     },
     {
       "priority": "P1",
       "source_label": "derived_reconciliation",
       "action": "Revisar cobertura dos SKUs com venda semanal encostando no saldo oficial.",
-      "why": "1 SKU(s) têm saldo menor ou igual à venda da semana.",
+      "why": "3 SKU(s) têm saldo menor ou igual à venda da semana.",
       "approval_required": "Sim, se virar compra, preço ou contato."
     },
     {
       "priority": "P1",
       "source_label": "derived_reconciliation",
       "action": "Priorizar saneamento SKU Shopify ↔ Tiny antes de escalar mídia dos produtos vendidos.",
-      "why": "11 SKU(s) vendidos sem candidato Tiny seguro ou sem saldo legível.",
+      "why": "4 SKU(s) vendidos sem candidato Tiny seguro ou sem saldo legível.",
       "approval_required": "Sim, se exigir write em cadastro."
     },
     {

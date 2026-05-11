@@ -296,7 +296,7 @@ Entregáveis:
 Critério de saída:
 
 - Automação roda silenciosa quando OK e alerta só quando precisa.
-- Primeira ativação recorrente: `LK-AUTO-001` Daily 08:00 BRT e `LK-AUTO-002` Weekly segunda 09:00 BRT, ambos `no_agent`/silent-OK; stdout vazio = silêncio, stdout com conteúdo = alerta, rc não-zero = falha de watchdog.
+- Primeira ativação recorrente: `LK-AUTO-001` Daily 08:00 BRT e `LK-AUTO-002` Weekly segunda 09:00 BRT, ambos `no_agent`/entrega obrigatória; stdout com report = entrega ao Telegram/origin, rc não-zero = falha de watchdog. Correção Lucas: P0/P1 são rótulos de prioridade dentro do report, não condição para envio.
 
 ## Próxima sequência recomendada
 
