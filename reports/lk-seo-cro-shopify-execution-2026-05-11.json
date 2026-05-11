@@ -1,0 +1,267 @@
+{
+  "generated_at": "2026-05-11T13:59:45",
+  "approval": "Lucas approved all SEO/CRO preview changes in Telegram: \"aprovo fazer tudo\"",
+  "source": "reports/lk-seo-cro-title-meta-preview-2026-05-11.json",
+  "note": "First attempt updated PDP SEO fields before failing on an unsupported Collection.onlineStoreUrl query field; this rerun is idempotent and verified live. Rollback backups for SEO fields use the approved preview current values when live was already at target.",
+  "guardrails": [
+    "no price/stock/product variants changed",
+    "no theme/app write attempted",
+    "no Merchant/GSC write",
+    "no campaign/send"
+  ],
+  "attempted": [
+    {
+      "url": "https://lksneakers.com.br/products/nike-dunk-low-rose-whisper",
+      "scope": "PDP SEO title/meta",
+      "resource": "product",
+      "id": "gid://shopify/Product/8083996672222",
+      "handle": "nike-dunk-low-rose-whisper",
+      "status": "success",
+      "backup": {
+        "title": "Tênis Nike Dunk Low Rose Whisper Rosa",
+        "seo": {
+          "title": "Tênis Nike Dunk Low Rose Whisper Rosa por R$ 1.499,99 em até 10x | LK Sneakers",
+          "description": "Tênis Nike Dunk Low Rose Whisper Rosa oferece conforto e estilo únicos. Conheça esse modelo exclusivo e garanta o seu par na LK Sneakers!"
+        }
+      },
+      "target": {
+        "seo": {
+          "title": "Nike Dunk Low Rose Whisper Rosa | LK Sneakers",
+          "description": "Nike Dunk Low Rose Whisper original em rosa, com curadoria LK Sneakers, autenticidade garantida e compra em até 10x sem juros."
+        }
+      },
+      "verified_live": true,
+      "after": {
+        "title": "Tênis Nike Dunk Low Rose Whisper Rosa",
+        "seo": {
+          "title": "Nike Dunk Low Rose Whisper Rosa | LK Sneakers",
+          "description": "Nike Dunk Low Rose Whisper original em rosa, com curadoria LK Sneakers, autenticidade garantida e compra em até 10x sem juros."
+        }
+      }
+    },
+    {
+      "url": "https://lksneakers.com.br/products/nike-dunk-low-ocean-bliss",
+      "scope": "PDP SEO title/meta",
+      "resource": "product",
+      "id": "gid://shopify/Product/8083996737758",
+      "handle": "nike-dunk-low-ocean-bliss",
+      "status": "success",
+      "backup": {
+        "title": "Tênis Nike Dunk Low Ocean Bliss Azul",
+        "seo": {
+          "title": "Tênis Nike Dunk Low Ocean Bliss Azul por R$ 1.549,90 em até 10x | LK Sneakers",
+          "description": "Tênis Nike Dunk Low Ocean Bliss Azul combina estilo e conforto. Conheça nosso modelo exclusivo e garanta o seu par hoje mesmo na LK Sneakers."
+        }
+      },
+      "target": {
+        "seo": {
+          "title": "Nike Dunk Low Ocean Bliss Azul | LK Sneakers",
+          "description": "Nike Dunk Low Ocean Bliss original em azul claro, com curadoria LK Sneakers, autenticidade garantida e até 10x sem juros."
+        }
+      },
+      "verified_live": true,
+      "after": {
+        "title": "Tênis Nike Dunk Low Ocean Bliss Azul",
+        "seo": {
+          "title": "Nike Dunk Low Ocean Bliss Azul | LK Sneakers",
+          "description": "Nike Dunk Low Ocean Bliss original em azul claro, com curadoria LK Sneakers, autenticidade garantida e até 10x sem juros."
+        }
+      }
+    },
+    {
+      "url": "https://lksneakers.com.br/products/nike-dunk-low-teddy-bear-pink",
+      "scope": "PDP SEO title/meta",
+      "resource": "product",
+      "id": "gid://shopify/Product/8083996803294",
+      "handle": "nike-dunk-low-teddy-bear-pink",
+      "status": "success",
+      "backup": {
+        "title": "Tênis Nike Dunk Low Teddy Bear Pink Rosa",
+        "seo": {
+          "title": "Tênis Nike Dunk Low Teddy Bear Pink Rosa por R$ 2.499,99 em até 10x | LK Sneakers",
+          "description": "Tênis Nike Dunk Low Teddy Bear Pink Rosa combina estilo e conforto. Compre online e destaque-se com este modelo exclusivo que é perfeito para qualquer ocasião."
+        }
+      },
+      "target": {
+        "seo": {
+          "title": "Nike Dunk Low Teddy Bear Pink | LK Sneakers",
+          "description": "Nike Dunk Low Teddy Bear Pink original, textura premium e curadoria LK Sneakers, com autenticidade garantida e até 10x sem juros."
+        }
+      },
+      "verified_live": true,
+      "after": {
+        "title": "Tênis Nike Dunk Low Teddy Bear Pink Rosa",
+        "seo": {
+          "title": "Nike Dunk Low Teddy Bear Pink | LK Sneakers",
+          "description": "Nike Dunk Low Teddy Bear Pink original, textura premium e curadoria LK Sneakers, com autenticidade garantida e até 10x sem juros."
+        }
+      }
+    },
+    {
+      "url": "https://lksneakers.com.br/products/air-jordan-1-mid-wolf-grey",
+      "scope": "PDP SEO title/meta",
+      "resource": "product",
+      "id": "gid://shopify/Product/8083996836062",
+      "handle": "air-jordan-1-mid-wolf-grey",
+      "status": "success",
+      "backup": {
+        "title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza",
+        "seo": {
+          "title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza por R$ 1.999,90 em até 10x | LK Sneakers",
+          "description": "Experimente o Tênis Air Jordan 1 Mid Wolf Grey Cinza, um modelo exclusivo que combina estilo e conforto. Conheça nossa coleção e compre online!"
+        }
+      },
+      "target": {
+        "seo": {
+          "title": "Air Jordan 1 Mid Wolf Grey Cinza | LK Sneakers",
+          "description": "Air Jordan 1 Mid Wolf Grey original, curadoria premium LK Sneakers, autenticidade garantida e compra em até 10x sem juros."
+        }
+      },
+      "verified_live": true,
+      "after": {
+        "title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza",
+        "seo": {
+          "title": "Air Jordan 1 Mid Wolf Grey Cinza | LK Sneakers",
+          "description": "Air Jordan 1 Mid Wolf Grey original, curadoria premium LK Sneakers, autenticidade garantida e compra em até 10x sem juros."
+        }
+      }
+    },
+    {
+      "url": "https://lksneakers.com.br/products/air-jordan-1-low-sunset-haze",
+      "scope": "PDP SEO title/meta",
+      "resource": "product",
+      "id": "gid://shopify/Product/8083996868830",
+      "handle": "air-jordan-1-low-sunset-haze",
+      "status": "success",
+      "backup": {
+        "title": "Tênis Nike Air Jordan 1 Low Sunset Haze Laranja",
+        "seo": {
+          "title": "Tênis Nike Air Jordan 1 Low Sunset Haze Laranja por R$ 1.599,99 em até 10x | LK Sneakers",
+          "description": "Tênis Air Jordan 1 Low Sunset Haze Laranja oferece estilo e conforto inigualáveis. Conheça este modelo exclusivo e compre online para elevar seu visual."
+        }
+      },
+      "target": {
+        "seo": {
+          "title": "Air Jordan 1 Low Sunset Haze | LK Sneakers",
+          "description": "Air Jordan 1 Low Sunset Haze original, tons suaves e curadoria LK Sneakers, com autenticidade garantida e até 10x sem juros."
+        }
+      },
+      "verified_live": true,
+      "after": {
+        "title": "Tênis Nike Air Jordan 1 Low Sunset Haze Laranja",
+        "seo": {
+          "title": "Air Jordan 1 Low Sunset Haze | LK Sneakers",
+          "description": "Air Jordan 1 Low Sunset Haze original, tons suaves e curadoria LK Sneakers, com autenticidade garantida e até 10x sem juros."
+        }
+      }
+    },
+    {
+      "url": "https://lksneakers.com.br/products/supreme-x-nike-air-force-1-low-box-logo-white",
+      "scope": "PDP SEO title/meta",
+      "resource": "product",
+      "id": "gid://shopify/Product/8083996901598",
+      "handle": "supreme-x-nike-air-force-1-low-box-logo-white",
+      "status": "success",
+      "backup": {
+        "title": "Tênis Nike Air Force 1 Low x Supreme White Branco",
+        "seo": {
+          "title": "Tênis Nike Air Force 1 Low x Supreme White Branco por R$ 2.999,99 em até 10x | LK Sneakers",
+          "description": "Tênis Nike Air Force 1 Low x Supreme White Branco combina estilo e conforto. Conheça esse modelo exclusivo e eleve seu visual com autenticidade. Compre online!"
+        }
+      },
+      "target": {
+        "seo": {
+          "title": "Supreme x Nike Air Force 1 Low White | LK Sneakers",
+          "description": "Supreme x Nike Air Force 1 Low White original, box logo e curadoria LK Sneakers, com autenticidade garantida e até 10x sem juros."
+        }
+      },
+      "verified_live": true,
+      "after": {
+        "title": "Tênis Nike Air Force 1 Low x Supreme White Branco",
+        "seo": {
+          "title": "Supreme x Nike Air Force 1 Low White | LK Sneakers",
+          "description": "Supreme x Nike Air Force 1 Low White original, box logo e curadoria LK Sneakers, com autenticidade garantida e até 10x sem juros."
+        }
+      }
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/nike-dunk",
+      "scope": "collection SEO title/meta",
+      "resource": "collection",
+      "id": "gid://shopify/Collection/399278407902",
+      "handle": "nike-dunk",
+      "status": "success",
+      "backup": {
+        "title": "Nike Dunk",
+        "descriptionHtml": "<p><strong>A coleção Nike Dunk na LK Sneakers reúne mais de 180 modelos originais — do clássico Low ao High — com curadoria focada em colorways relevantes e acesso imediato, para quem leva sneaker culture a sério.</strong> Encontre aqui opções que vão de silhuetas retrô em couro premium a collabs limitadas, cobrindo desde o uso diário até peças de colecionador. Comprar Nike Dunk original com autenticidade garantida e variedade real: é isso que a LK Sneakers entrega.</p>\n\n<h2>Sobre Nike Dunk</h2>\n<p>Lançado em 1985 pelo designer Peter Moore — o mesmo de Air Jordan 1 —, o Nike Dunk nasceu como tênis de basquete universitário nos EUA, com o programa \"Be True to Your School\". Nos anos 2000, foi adotado pelo skate e pela cena streetwear global, consolidando-se como uma das silhuetas mais influentes da história do sneaker. O Dunk Low SB e collabs com Supreme, Travis Scott e Stüssy elevaram seu status cultural. Hoje é referência em streetwear, hype e moda. Encontre Nike Dunk na LK Sneakers, boutique premium nos Jardins, São Paulo.</p>\n\n<h2>Como Escolher o Melhor Nike Dunk</h2>\n<p>Escolha entre Low, Mid ou High conforme o estilo e a ocasião: o Low é mais versátil para o dia a dia; o High oferece cano alto com visual mais robusto. Para streetwear urbano, prefira colorways two-tone em couro — clássicos como Panda (preto e branco) e University Red são opções certeiras. Collabs e edições especiais atendem colecionadores. Se prioridade é conforto no uso intenso, avalie o palmilho e opte por numeração fiel — o Dunk tende a rodar no tamanho padrão Nike.</p>\n\n<h2>Na LK Sneakers</h2>\n<p>Todos os produtos da LK Sneakers são 100% autênticos, com verificação de autenticidade em cada peça. Parcelamento em até 10x sem juros no cartão. Desconto no Pix. Frete grátis para compras acima de R$ 499. Envio em até 2 dias úteis para produtos em estoque. Troca em até 30 dias.</p>\n\n<h3>Perguntas Frequentes</h3>\n<dl>\n  <dt>Qual o melhor Nike Dunk para comprar em 2026?</dt>\n  <dd>O Nike Dunk Low Panda (preto e branco) segue como o modelo mais procurado por sua versatilidade com qualquer look. Para quem busca algo mais expressivo, o Dunk Low University Red e versões two-tone em couro são escolhas clássicas com alto valor de revenda e uso duradouro.</dd>\n  <dt>O Nike Dunk da LK Sneakers é original?</dt>\n  <dd>Sim, 100% autêntico. A LK Sneakers faz verificação de autenticidade em cada produto antes do envio. Acompanha caixa original e etiquetas.</dd>\n  <dt>Nike Dunk roda grande ou pequeno?</dt>\n  <dd>O Nike Dunk tende a rodar no tamanho, seguindo o padrão Nike. Diferente do Air Force 1, que pode apertar um pouco, o Dunk oferece boa largura já no número habitual — peça o mesmo tamanho que você usa em outros modelos Nike.</dd>\n  <dt>Qual o prazo de entrega da LK Sneakers?</dt>\n  <dd>Produtos em estoque: envio em até 2 dias úteis. Produtos sob encomenda: 4 a 6 semanas. Frete gr</dd>\n</dl>",
+        "seo": {
+          "title": "Nike Dunk Low, High &amp; SB Original | 179 Colorways | LK Sneakers",
+          "description": "Nike Dunk Low, High e SB originais: 179 colorways (Panda, Chunky Dunky, Grateful Dead) a partir de R$ 650 em 10x. Pronta entrega SP."
+        }
+      },
+      "target": {
+        "seo": {
+          "title": "Nike Dunk Original: Low, High e Edições | LK Sneakers",
+          "description": "Nike Dunk original na LK Sneakers: curadoria premium, modelos femininos e masculinos, autenticidade garantida e até 10x sem juros."
+        }
+      },
+      "verified_live": true,
+      "after": {
+        "title": "Nike Dunk",
+        "descriptionHtml": "<p><strong>A coleção Nike Dunk na LK Sneakers reúne mais de 180 modelos originais — do clássico Low ao High — com curadoria focada em colorways relevantes e acesso imediato, para quem leva sneaker culture a sério.</strong> Encontre aqui opções que vão de silhuetas retrô em couro premium a collabs limitadas, cobrindo desde o uso diário até peças de colecionador. Comprar Nike Dunk original com autenticidade garantida e variedade real: é isso que a LK Sneakers entrega.</p>\n\n<h2>Sobre Nike Dunk</h2>\n<p>Lançado em 1985 pelo designer Peter Moore — o mesmo de Air Jordan 1 —, o Nike Dunk nasceu como tênis de basquete universitário nos EUA, com o programa \"Be True to Your School\". Nos anos 2000, foi adotado pelo skate e pela cena streetwear global, consolidando-se como uma das silhuetas mais influentes da história do sneaker. O Dunk Low SB e collabs com Supreme, Travis Scott e Stüssy elevaram seu status cultural. Hoje é referência em streetwear, hype e moda. Encontre Nike Dunk na LK Sneakers, boutique premium nos Jardins, São Paulo.</p>\n\n<h2>Como Escolher o Melhor Nike Dunk</h2>\n<p>Escolha entre Low, Mid ou High conforme o estilo e a ocasião: o Low é mais versátil para o dia a dia; o High oferece cano alto com visual mais robusto. Para streetwear urbano, prefira colorways two-tone em couro — clássicos como Panda (preto e branco) e University Red são opções certeiras. Collabs e edições especiais atendem colecionadores. Se prioridade é conforto no uso intenso, avalie o palmilho e opte por numeração fiel — o Dunk tende a rodar no tamanho padrão Nike.</p>\n\n<h2>Na LK Sneakers</h2>\n<p>Todos os produtos da LK Sneakers são 100% autênticos, com verificação de autenticidade em cada peça. Parcelamento em até 10x sem juros no cartão. Desconto no Pix. Frete grátis para compras acima de R$ 499. Envio em até 2 dias úteis para produtos em estoque. Troca em até 30 dias.</p>\n\n<h3>Perguntas Frequentes</h3>\n<dl>\n  <dt>Qual o melhor Nike Dunk para comprar em 2026?</dt>\n  <dd>O Nike Dunk Low Panda (preto e branco) segue como o modelo mais procurado por sua versatilidade com qualquer look. Para quem busca algo mais expressivo, o Dunk Low University Red e versões two-tone em couro são escolhas clássicas com alto valor de revenda e uso duradouro.</dd>\n  <dt>O Nike Dunk da LK Sneakers é original?</dt>\n  <dd>Sim, 100% autêntico. A LK Sneakers faz verificação de autenticidade em cada produto antes do envio. Acompanha caixa original e etiquetas.</dd>\n  <dt>Nike Dunk roda grande ou pequeno?</dt>\n  <dd>O Nike Dunk tende a rodar no tamanho, seguindo o padrão Nike. Diferente do Air Force 1, que pode apertar um pouco, o Dunk oferece boa largura já no número habitual — peça o mesmo tamanho que você usa em outros modelos Nike.</dd>\n  <dt>Qual o prazo de entrega da LK Sneakers?</dt>\n  <dd>Produtos em estoque: envio em até 2 dias úteis. Produtos sob encomenda: 4 a 6 semanas. Frete gr</dd>\n</dl>",
+        "seo": {
+          "title": "Nike Dunk Original: Low, High e Edições | LK Sneakers",
+          "description": "Nike Dunk original na LK Sneakers: curadoria premium, modelos femininos e masculinos, autenticidade garantida e até 10x sem juros."
+        }
+      }
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/sneakers",
+      "scope": "collection visible H1 + optional intro",
+      "resource": "collection",
+      "id": "gid://shopify/Collection/439612080350",
+      "handle": "sneakers",
+      "status": "success",
+      "backup": {
+        "title": "Sneakers for You",
+        "descriptionHtml": "<p><strong>A coleção Sneakers for You na LK Sneakers reúne uma curadoria ampla de modelos para todos os perfis de estilo, com mais de 1.100 opções de marcas premium e streetwear, para quem busca o tênis certo — do casual ao colecionável.</strong> Aqui você encontra desde clássicos atemporais até lançamentos recentes, com modelos masculinos, femininos e unissex. Comprar Sneakers for You original na LK Sneakers significa acesso a um acervo constantemente atualizado, com autenticidade garantida e entrega rápida para todo o Brasil.</p>\n\n<h2>Sobre Sneakers for You</h2>\n<p>Sneakers for You é o conceito que organiza na LK Sneakers o maior conjunto de modelos disponíveis na boutique: uma seleção que atravessa décadas de cultura sneaker, do esporte de alto rendimento ao streetwear de São Paulo. A coleção reflete o posicionamento da LK Sneakers como referência nos Jardins desde sua fundação — um espaço onde o cliente encontra tanto o ícone consagrado quanto o modelo do momento, sempre com procedência verificada. Encontre Sneakers for You na LK Sneakers e descubra o modelo que combina com você.</p>\n\n<h2>Como Escolher o Melhor Sneakers for You</h2>\n<p>Para escolher o modelo ideal, considere primeiro a ocasião: tênis de lifestyle como Nike Air Force 1, Adidas Stan Smith ou New Balance 574 funcionam para o dia a dia; para streetwear mais assertivo, modelos Jordan e Yeezy se destacam. Avalie também o material — couro é mais durável e fácil de limpar, enquanto mesh oferece leveza. Se a dúvida for entre marcas ou silhuetas, use os filtros de estilo e gênero disponíveis na coleção para afunilar as opções.</p>\n\n<h2>Na LK Sneakers</h2>\n<p>Todos os produtos da LK Sneakers são 100% autênticos, com verificação de autenticidade em cada peça. Parcelamento em até 10x sem juros no cartão. Desconto no Pix. Frete grátis para compras acima de R$ 499. Envio em até 2 dias úteis para produtos em estoque. Troca em até 30 dias.</p>\n\n<h3>Perguntas Frequentes</h3>\n<dl>\n  <dt>Qual o melhor Sneakers for You para comprar em 2026?</dt>\n  <dd>Entre os modelos mais procurados na LK Sneakers estão o Nike Air Force 1, pelo equilíbrio entre versatilidade e status; o New Balance 1906R, pelo design retro e conforto superior; e o Adidas Samba OG, consolidado como o tênis de lifestyle mais relevante dos últimos anos. A escolha depende do estilo pessoal e da ocasião de uso.</dd>\n  <dt>O Sneakers for You da LK Sneakers é original?</dt>\n  <dd>Sim, 100% autêntico. A LK Sneakers faz verificação de autenticidade em cada produto antes do envio. Acompanha caixa original e etiquetas.</dd>\n  <dt>Sneakers for You roda grande ou pequeno?</dt>\n  <dd>O fit varia conforme a marca e o modelo: Nike tende a rodar fiel ao número, New Balance corre levemente grande — especialmente linhas largas como 990 e 1906 —, e Adidas Samba é recomendado meio número acima para pés mais largos. Consulte a tabela de medidas disponível em cada página de produto.</dd>\n  <dt>Qual o prazo de entrega da LK Sneakers?</dt>\n  <dd>Produtos em estoque: envio em até 2 dias úteis. Produtos</dd>\n</dl>",
+        "seo": {
+          "title": "Sneakers: tênis adidas, nike e mais | LK Sneakers",
+          "description": "Confira sneakers na LK Sneakers! Produtos originais e exclusivos em até 10x sem juros para elevar seu estilo streetwear com conforto e design inovador."
+        }
+      },
+      "target": {
+        "title": "Tênis e Sneakers Originais",
+        "descriptionHtml": "not changed; optional intro not written to avoid overwriting existing content"
+      },
+      "verified_live": true,
+      "after": {
+        "title": "Tênis e Sneakers Originais",
+        "descriptionHtml": "<p><strong>A coleção Sneakers for You na LK Sneakers reúne uma curadoria ampla de modelos para todos os perfis de estilo, com mais de 1.100 opções de marcas premium e streetwear, para quem busca o tênis certo — do casual ao colecionável.</strong> Aqui você encontra desde clássicos atemporais até lançamentos recentes, com modelos masculinos, femininos e unissex. Comprar Sneakers for You original na LK Sneakers significa acesso a um acervo constantemente atualizado, com autenticidade garantida e entrega rápida para todo o Brasil.</p>\n\n<h2>Sobre Sneakers for You</h2>\n<p>Sneakers for You é o conceito que organiza na LK Sneakers o maior conjunto de modelos disponíveis na boutique: uma seleção que atravessa décadas de cultura sneaker, do esporte de alto rendimento ao streetwear de São Paulo. A coleção reflete o posicionamento da LK Sneakers como referência nos Jardins desde sua fundação — um espaço onde o cliente encontra tanto o ícone consagrado quanto o modelo do momento, sempre com procedência verificada. Encontre Sneakers for You na LK Sneakers e descubra o modelo que combina com você.</p>\n\n<h2>Como Escolher o Melhor Sneakers for You</h2>\n<p>Para escolher o modelo ideal, considere primeiro a ocasião: tênis de lifestyle como Nike Air Force 1, Adidas Stan Smith ou New Balance 574 funcionam para o dia a dia; para streetwear mais assertivo, modelos Jordan e Yeezy se destacam. Avalie também o material — couro é mais durável e fácil de limpar, enquanto mesh oferece leveza. Se a dúvida for entre marcas ou silhuetas, use os filtros de estilo e gênero disponíveis na coleção para afunilar as opções.</p>\n\n<h2>Na LK Sneakers</h2>\n<p>Todos os produtos da LK Sneakers são 100% autênticos, com verificação de autenticidade em cada peça. Parcelamento em até 10x sem juros no cartão. Desconto no Pix. Frete grátis para compras acima de R$ 499. Envio em até 2 dias úteis para produtos em estoque. Troca em até 30 dias.</p>\n\n<h3>Perguntas Frequentes</h3>\n<dl>\n  <dt>Qual o melhor Sneakers for You para comprar em 2026?</dt>\n  <dd>Entre os modelos mais procurados na LK Sneakers estão o Nike Air Force 1, pelo equilíbrio entre versatilidade e status; o New Balance 1906R, pelo design retro e conforto superior; e o Adidas Samba OG, consolidado como o tênis de lifestyle mais relevante dos últimos anos. A escolha depende do estilo pessoal e da ocasião de uso.</dd>\n  <dt>O Sneakers for You da LK Sneakers é original?</dt>\n  <dd>Sim, 100% autêntico. A LK Sneakers faz verificação de autenticidade em cada produto antes do envio. Acompanha caixa original e etiquetas.</dd>\n  <dt>Sneakers for You roda grande ou pequeno?</dt>\n  <dd>O fit varia conforme a marca e o modelo: Nike tende a rodar fiel ao número, New Balance corre levemente grande — especialmente linhas largas como 990 e 1906 —, e Adidas Samba é recomendado meio número acima para pés mais largos. Consulte a tabela de medidas disponível em cada página de produto.</dd>\n  <dt>Qual o prazo de entrega da LK Sneakers?</dt>\n  <dd>Produtos em estoque: envio em até 2 dias úteis. Produtos</dd>\n</dl>",
+        "seo": {
+          "title": "Sneakers: tênis adidas, nike e mais | LK Sneakers",
+          "description": "Confira sneakers na LK Sneakers! Produtos originais e exclusivos em até 10x sem juros para elevar seu estilo streetwear com conforto e design inovador."
+        }
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://lksneakers.com.br/",
+      "scope": "homepage SEO title/meta",
+      "reason": "homepage Online Store SEO preferences not exposed as safe product/collection GraphQL mutation; no theme/admin hack attempted",
+      "target": {
+        "seo": {
+          "title": "Tênis Originais em São Paulo | LK Sneakers",
+          "description": "Sneaker boutique premium no Jardins, SP. Nike, Adidas, New Balance e Onitsuka originais, loja física e até 10x sem juros."
+        }
+      }
+    }
+  ],
+  "summary": {
+    "success_count": 8,
+    "verify_failed_count": 0,
+    "skipped_count": 1,
+    "attempted_count": 8
+  }
+}
