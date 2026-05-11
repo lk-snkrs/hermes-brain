@@ -175,7 +175,11 @@ Preview table fields:
 - Confidence;
 - Notes/risks.
 
-### 6. Description workflow
+## Description workflow
+
+Reference: `references/claude-seo-upstream-for-lk-products.md` records how Lucas's linked `AgriciDaniel/claude-seo` repo maps to Hermes's installed SEO skills for LK product uploads.
+
+For Lucas, the “Claude SEO” step means using the SEO skill family derived from `AgriciDaniel/claude-seo` (especially `seo-content` and `seo-ecommerce`) as the refinement layer for product copy. Do not treat this as a vague writing polish step: it must check entity clarity, product-page SEO, E-E-A-T/helpfulness signals, AI readability/GEO, title/meta quality, and avoidance of generic marketplace/manufacturer copy.
 
 The description should not be generic. It should combine:
 
@@ -189,7 +193,7 @@ Process:
 
 1. Research the model history on Google/web.
 2. Draft a factual base description.
-3. Run a **Claude SEO / SEO-content refinement pass** using the available specialist skill (`seo-content`, `seo-ecommerce`, `seo-page`, or equivalent). In Lucas's shorthand, this is the “Claude SEO” step:
+3. Run a **Claude SEO / SEO-content refinement pass** using the available specialist skill (`seo-content`, `seo-ecommerce`, `seo-page`, or equivalent). In Lucas's shorthand, this is the “Claude SEO” step; if the user links `https://github.com/AgriciDaniel/claude-seo`, map it to these installed SEO skills rather than treating it as a separate unknown tool:
    - entity clarity;
    - title/meta description;
    - product schema considerations;
@@ -276,16 +280,32 @@ Recommended preview format:
 - O que não será feito.
 - Pedido de aprovação.
 
+## Operationalization / “100% installed” standard
+
+Lucas may ask whether this skill is “100%”. Do not answer from memory. Verify both runtime and versioned Brain state before saying yes:
+
+1. Runtime skill exists and loads via `skill_view('lk-shopify-product-upload')`.
+2. Canonical Hermes Brain copy exists at `skills/lk-shopify-product-upload/SKILL.md`.
+3. `empresa/skills/_index.md` references the skill in the canonical list and area navigation.
+4. Related skills, especially `lk-shopify-readonly`, route product-upload/GOAT/`!subir` work here and keep read-only work separate.
+5. Brain checks pass: `python3 scripts/brain_health_check.py` and `git diff --check`.
+6. Secret scan/changed-file scan has no real secrets; header examples with env var placeholders are acceptable but should be called out clearly.
+7. The Brain change is committed, PR-merged, and local `main` is synced to `origin/main`.
+8. Report what was not done: no Shopify/Tiny write, no product publication, no campaign/customer send unless separately approved.
+
+Session reference: see `references/shopify-product-upload-operationalization-20260511.md`.
+
 ## Common Pitfalls
 
-1. **Confundir `!subir` com autorização.** `!subir` inicia triagem/preview; não autoriza publicação.
-2. **Usar foto fora de ordem.** Para produtos da GOAT, respeitar a lógica de imagem principal + ângulos corretos.
-3. **Inventar história do modelo.** Pesquisar e citar fonte/contexto; se não houver fonte confiável, manter texto neutro.
-4. **Criar SKU sem checar Tiny/Shopify.** Sempre buscar duplicidade e padrão existente antes.
-5. **Publicar ativo por padrão.** Criar como draft salvo aprovação explícita para active.
-6. **Tratar Shopify como estoque.** Estoque continua Tiny.
-7. **Descrição genérica.** LK precisa texto premium, produto-first, com contexto real e SEO limpo.
-8. **Misturar produto com campanha.** Subir produto não autoriza anúncio, Klaviyo, WhatsApp ou fornecedor.
+1. **Calling a newly created skill “100%” before indexing/versioning it.** For Lucas, “100%” means runtime skill + Brain copy + index + checks + PR merge/sync, not just a local skill file.
+2. **Confundir `!subir` com autorização.** `!subir` inicia triagem/preview; não autoriza publicação.
+3. **Usar foto fora de ordem.** Para produtos da GOAT, respeitar a lógica de imagem principal + ângulos corretos.
+4. **Inventar história do modelo.** Pesquisar e citar fonte/contexto; se não houver fonte confiável, manter texto neutro.
+5. **Criar SKU sem checar Tiny/Shopify.** Sempre buscar duplicidade e padrão existente antes.
+6. **Publicar ativo por padrão.** Criar como draft salvo aprovação explícita para active.
+7. **Tratar Shopify como estoque.** Estoque continua Tiny.
+8. **Descrição genérica.** LK precisa texto premium, produto-first, com contexto real e SEO limpo.
+9. **Misturar produto com campanha.** Subir produto não autoriza anúncio, Klaviyo, WhatsApp ou fornecedor.
 
 ## Verification Checklist
 
