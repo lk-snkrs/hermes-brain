@@ -61,11 +61,17 @@ Regra para o próximo operador: antes de qualquer envio, abrir o rascunho no Kla
 
 Lucas decidiu manter a campanha em `Draft`. Não enviar, não agendar e não ativar flow nesta etapa.
 
-Link operacional provável para revisão no Klaviyo:
+Correção de navegação Klaviyo: não usar link direto não verificado. O link `https://www.klaviyo.com/campaigns/01KRC1DPTY615GF5FNBPXMPKY6` retornou “Essa página não existe” no teste do Lucas.
 
-- `https://www.klaviyo.com/campaigns/01KRC1DPTY615GF5FNBPXMPKY6`
+Como localizar no painel Klaviyo:
 
-Se o link direto não abrir por mudança de rota do Klaviyo, buscar no painel por Campaign ID `01KRC1DPTY615GF5FNBPXMPKY6` ou pelo nome `LK Phase 5 P1 Curadoria Loja Física 2026-05-11, DRAFT`.
+1. Entrar no Klaviyo pelo painel normal da conta LK.
+2. Ir em Campaigns.
+3. Filtrar por Drafts ou buscar pelo nome `LK Phase 5 P1 Curadoria Loja Física 2026-05-11, DRAFT`.
+4. Se houver campo de busca por ID, usar `01KRC1DPTY615GF5FNBPXMPKY6`.
+5. Abrir a campanha e confirmar se o template `XUSEtu` está selecionado no message antes de qualquer envio.
+
+Regra: só registrar link de Klaviyo no Brain quando ele for testado no painel logado. Link de API `https://a.klaviyo.com/api/campaigns/01KRC1DPTY615GF5FNBPXMPKY6/` serve apenas como evidência técnica via API, não como link clicável para Lucas.
 
 ## Próximos passos possíveis
 

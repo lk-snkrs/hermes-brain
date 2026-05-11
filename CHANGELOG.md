@@ -1,3 +1,9 @@
+## 2026-05-11 — Correção de link Klaviyo
+
+- Lucas testou o link direto sugerido para a campanha Klaviyo e ele retornou página inexistente.
+- Removida a orientação de usar deep link não verificado; a rotina agora manda localizar a campanha pelo painel Klaviyo usando nome ou Campaign ID.
+- Regra registrada: link de Klaviyo só deve ser salvo como link clicável quando for verificado no painel logado; link de API serve apenas como evidência técnica.
+
 ## 2026-05-11 — LK Klaviyo P1 mantida em Draft
 
 - Registrada a decisão do Lucas de manter a campanha P1 de CRM/Klaviyo em `Draft`, sem envio, sem agendamento e sem flow.
