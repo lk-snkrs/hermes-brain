@@ -1,0 +1,311 @@
+# LK OS — Plano Mestre de Implementação
+
+Status: plano de execução vivo. Este documento existe para não deixar a implementação da LK parar no meio.
+Última atualização: 2026-05-11.
+Escopo: LK Sneakers / Hermes Brain / LK Operating System.
+
+## Como Lucas deve pedir continuidade
+
+Use uma destas frases, sem precisar explicar tudo de novo:
+
+```text
+Seguir Projeto LK OS
+```
+
+ou, quando quiser ser mais específico:
+
+```text
+Seguir LK OS — próximo bloco seguro
+```
+
+```text
+Status Projeto LK OS
+```
+
+```text
+Priorizar Projeto LK OS até fechar
+```
+
+```text
+Executar fase [nome da fase] do Projeto LK OS
+```
+
+Regra para Hermes: quando Lucas disser `Projeto LK OS`, carregar este plano, o PRD `lk-operating-system-prd.md`, os mapas LK, as skills `lucas-chief-of-staff`, `multiempresa-routing-lucas`, `lk-shopify-readonly` e as rotinas/relatórios relevantes. Não depender da memória solta do chat.
+
+## Definição de pronto
+
+O Projeto LK OS só é considerado implementado quando estes blocos estiverem operacionais, documentados, verificados e com rotina de continuidade:
+
+1. Dados e fontes de verdade mapeados e acessíveis em modo seguro.
+2. Shopify read-only funcionando como fonte de pedidos, clientes, catálogo, source e receita.
+3. Tiny `LK | CONTROLE ESTOQUE` funcionando como verdade de estoque por SKU/tamanho.
+4. GA4/Search Console/Google/Meta/Metricool reconciliados com Shopify sem inventar ROAS.
+5. Centro de Inteligência de Stock gerando lista de ruptura, baixo estoque, mapear SKU e repor estoque.
+6. Paid/Influencer Intelligence ligando campanha/influencer/criativo a produto + SKU + tamanho + consequência de estoque.
+7. CRM/RFM/Recompra com oportunidades reais e preview antes de Klaviyo/WhatsApp.
+8. SEO/Google/Merchant Center com rotina de diagnóstico e tarefas acionáveis.
+9. Approval Manager: toda ação externa/destrutiva passa por preview e aprovação Lucas.
+10. Learning Loop: correções/aprovações do Lucas viram regra em Brain/skill/rotina.
+11. Mission Control/Kanban com próximos passos visíveis, mas cards executáveis só quando guardrails estiverem claros.
+12. Crons/briefings necessários rodando com contrato de silêncio quando OK.
+
+## Modelo de gestão
+
+### Camada 1 — PRD estratégico
+
+Arquivo principal: `areas/lk/projetos/lk-operating-system-prd.md`.
+
+Função: dizer o que o LK OS é, por que existe, quais módulos compõem o sistema e quais limites não podem ser quebrados.
+
+### Camada 2 — Plano mestre de implementação
+
+Arquivo atual: `areas/lk/projetos/lk-os-implementation-control.md`.
+
+Função: manter fases, todo-list, status, riscos e próximos passos. Este é o arquivo que Hermes deve abrir quando Lucas disser `seguir Projeto LK OS`.
+
+### Camada 3 — Rotinas e skills
+
+Função: transformar cada pedaço recorrente em procedimento reutilizável.
+
+Exemplos já existentes:
+
+- `skills/lk-shopify-readonly/SKILL.md`
+- `areas/lk/sub-areas/trafego-pago/rotinas/campaign-attribution-dictionary.md`
+- `areas/lk/sub-areas/trafego-pago/contexto/campaign-attribution-dictionary-v0.2.md`
+- `areas/lk/rotinas/templates/daily-sales-brief-07h.md`
+- `areas/lk/rotinas/templates/stock-intelligence-center.md`
+
+### Camada 4 — Kanban/Mission Control
+
+Função: tarefas persistentes, responsáveis, dependências e execução por worker quando seguro.
+
+Regra: criar cards unassigned por padrão. Atribuir/rodar worker só depois de escopo, fontes, permissões e guardrails estarem claros.
+
+### Camada 5 — Aprovações
+
+Função: separar análise e preview de execução real.
+
+Livre sem aprovação: documentação, análise read-only, relatório, plano, preview, skill, rotina, secret scan, health check.
+
+Exige aprovação Lucas: campanha, envio, compra, reposição real, alteração Shopify/Tiny/Klaviyo/Meta/Google/Notion/n8n/banco, contato com cliente/fornecedor/time externo, deploy ou infraestrutura.
+
+## Fases de implementação
+
+### Fase 0 — Fundação e guardrails
+
+Status: em andamento, quase fechada.
+
+Objetivo: deixar Hermes capaz de continuar sem se perder, sem expor segredo e sem confundir fonte de verdade.
+
+Entregáveis:
+
+- [x] PRD conceitual LK OS.
+- [x] Skill Shopify read-only.
+- [x] Regra Shopify vendas/catálogo; Tiny estoque.
+- [x] Regra nome + SKU + tamanho.
+- [x] Guardrails de aprovação.
+- [x] Watchdogs básicos Hermes/v0.13.
+- [x] Dicionário influencer/campanha v0.2.
+- [ ] Este plano mestre versionado e indexado.
+- [ ] Card/linha de Mission Control para o Projeto LK OS.
+
+Critério de saída:
+
+- Brain health check limpo.
+- Plano mestre indexado.
+- Lucas sabe qual frase usar para retomar.
+
+### Fase 1 — Data spine read-only
+
+Status: próximo bloco recomendado.
+
+Objetivo: consolidar um esqueleto de dados confiável, sem writes, que permita relatórios consistentes.
+
+Entregáveis:
+
+- [ ] Inventário de fontes: Shopify, Tiny, GA4, Search Console, Meta, Google Ads/Metricool, Klaviyo, Judge.me, Frenet, Notion.
+- [ ] Matriz de credenciais esperadas no Doppler, sem valores.
+- [ ] Scripts read-only com outputs auditáveis e contagem/freshness.
+- [ ] Dicionário de entidades canônicas: pedido, cliente, produto, variante, SKU, tamanho, campanha, influencer, cupom, UTM.
+- [ ] Regras de reconciliação Shopify vs GA4 vs Meta/Google.
+- [ ] Relatório de lacunas: dados ausentes, APIs instáveis, riscos de PII.
+
+Critério de saída:
+
+- Hermes consegue dizer de onde vem cada número.
+- Nenhum relatório chama ROAS de plataforma de venda real.
+- Todo dado sensível é minimizado/mascarado.
+
+### Fase 2 — Stock Intelligence Center
+
+Status: parcialmente iniciado.
+
+Objetivo: transformar venda + estoque + lead time em ação de estoque, sem compra automática.
+
+Entregáveis:
+
+- [ ] Lista `ruptura agora` por produto + SKU + tamanho.
+- [ ] Lista `baixo estoque` por produto + SKU + tamanho.
+- [ ] Lista `mapear SKU Tiny`.
+- [ ] Lista `sem SKU no Shopify`.
+- [ ] Leitura de velocidade de venda vs lead time.
+- [ ] Sugestão `repor estoque`, `checar sourcing`, `não agir`.
+- [ ] Template de preview para Lucas aprovar reposição/sourcing.
+
+Critério de saída:
+
+- Toda recomendação de estoque mostra produto + SKU + tamanho + fonte + confiança.
+- Nenhuma compra/contato fornecedor é feita sem aprovação.
+
+### Fase 3 — Paid & Influencer Intelligence
+
+Status: iniciado com dicionário v0.2.
+
+Objetivo: saber qual influencer/campanha/criativo move quais produtos e quais consequências gera.
+
+Entregáveis:
+
+- [x] Dicionário campaign/influencer seed.
+- [x] Dicionário v0.2 com produto/SKU/tamanho/estoque.
+- [ ] Handles/cupons oficiais por influencer.
+- [ ] Ponte segura ad_id/utm_content/cupom/landing/referrer/note/tag.
+- [ ] Separação `Pareto-compatible` vs `Lucas-operational`.
+- [ ] Rotina semanal de e-mail interno LK/Klaviyo-real, sem dashboard/tool jargon.
+- [ ] Regra de criativos: só incluir imagem se visual claro e aprovado.
+
+Critério de saída:
+
+- Silvia/Helena/Lala/Maicon e demais nomes têm status claro: validated, mapped, ambiguous ou investigation.
+- Produto vendido por criativo nunca é inferido por campaign/adset genérico.
+
+### Fase 4 — Daily/Weekly CEO Briefings
+
+Status: templates existem; precisa rotina real estável.
+
+Objetivo: transformar dados em gestão diária/semanal.
+
+Entregáveis:
+
+- [ ] Daily Sales Brief real com Shopify + GA4 + estoque crítico.
+- [ ] Weekly CEO Review com vendas, canais, recompra, estoque, SEO, mídia e prioridades.
+- [ ] Versão Telegram curta.
+- [ ] Versão Brain/report detalhada.
+- [ ] Critério de silêncio: quando não há alerta, não gerar ruído.
+
+Critério de saída:
+
+- Lucas recebe ou pede status e Hermes responde com prioridades, não dump de dados.
+
+### Fase 5 — CRM/RFM/Recompra
+
+Status: não fechado.
+
+Objetivo: aumentar recompra com oportunidades aprováveis, sem disparo automático.
+
+Entregáveis:
+
+- [ ] Segmentos RFM reais.
+- [ ] Clientes em risco de esfriar.
+- [ ] Oportunidades de cross-sell por compra anterior.
+- [ ] Preview de Klaviyo/WhatsApp por segmento.
+- [ ] Bloqueio de envio sem aprovação.
+
+Critério de saída:
+
+- Cada sugestão de campanha mostra público, motivo, produto, copy, risco e aprovação necessária.
+
+### Fase 6 — SEO, Search Console e Merchant Center
+
+Status: planejado no PRD; falta operacionalizar.
+
+Objetivo: trazer Google/Search para dentro do LK OS como fonte de demanda e problemas de feed/PDP.
+
+Entregáveis:
+
+- [ ] Rotina Search Console: queries, páginas, CTR, oportunidades.
+- [ ] Diagnóstico Merchant Center/feed.
+- [ ] Priorização de PDPs com tráfego alto e conversão baixa.
+- [ ] Checklist SEO/PDP para produtos importantes.
+
+Critério de saída:
+
+- SEO vira fila de melhoria de PDP/conteúdo/produto, não relatório solto.
+
+### Fase 7 — Approval Manager e Learning Loop
+
+Status: fundação existe; precisa fluxo operacional.
+
+Objetivo: cada aprovação/correção do Lucas muda o sistema.
+
+Entregáveis:
+
+- [ ] Template de approval preview por tipo de ação.
+- [ ] Log de decisões do Projeto LK OS.
+- [ ] Rotina de patch em skills quando Lucas corrige regra.
+- [ ] Regra de status: approved, rejected, needs_data, needs_preview, executed.
+
+Critério de saída:
+
+- Hermes não repete erro já corrigido por Lucas.
+
+### Fase 8 — Automação segura / n8n / crons
+
+Status: só depois das rotinas read-only ficarem estáveis.
+
+Objetivo: automatizar o que já foi validado manualmente.
+
+Entregáveis:
+
+- [ ] Lista de automações candidatas.
+- [ ] Risco por automação.
+- [ ] Plano rollback.
+- [ ] Teste em modo dry-run.
+- [ ] Aprovação Lucas antes de ativar produção.
+
+Critério de saída:
+
+- Automação roda silenciosa quando OK e alerta só quando precisa.
+
+## Próxima sequência recomendada
+
+1. Fechar Fase 0 com este plano mestre indexado.
+2. Criar uma visão curta de Mission Control do Projeto LK OS.
+3. Executar Fase 2 primeiro: `repor estoque / checar sourcing / mapear SKU`, começando por Silvia e Helena.
+4. Em paralelo documental, preparar Fase 1 data spine para evitar relatório quebrado no futuro.
+5. Depois transformar os outputs em briefing semanal real.
+
+## Todo-list imediata
+
+- [ ] Criar artefato `stock-action-queue` a partir do dicionário v0.2.
+- [ ] Separar filas: `ruptura`, `baixo estoque`, `mapear SKU Tiny`, `sem SKU Shopify`.
+- [ ] Marcar cada item com ação recomendada: `repor estoque`, `checar sourcing`, `corrigir mapa`, `não agir`.
+- [ ] Criar preview para Lucas aprovar apenas as ações de reposição/sourcing.
+- [ ] Não contatar Monbam, fornecedores, time ou cliente sem aprovação.
+- [ ] Criar/atualizar cards unassigned no Mission Control.
+
+## Como Hermes deve responder quando Lucas disser “seguir Projeto LK OS”
+
+1. Abrir este arquivo.
+2. Identificar a fase em andamento e o próximo checkbox não concluído.
+3. Se for read-only/documentação/análise, executar.
+4. Se envolver write, envio, campanha, compra, fornecedor, cliente, banco, infra ou produção, preparar preview e pedir aprovação.
+5. Atualizar este plano quando um bloco for fechado.
+6. Rodar health check/secret scan quando houver mudança no Brain.
+7. Reportar: o que mudou, evidência, próximo passo.
+
+## Frase canônica
+
+A frase oficial do projeto é:
+
+```text
+Projeto LK OS
+```
+
+Sinônimos aceitos:
+
+- `LK Operating System`
+- `implementação LK OS`
+- `sistema operacional da LK`
+- `COO da LK no Hermes`
+
+Se Lucas falar qualquer uma dessas frases, Hermes deve tratar como o mesmo projeto.
