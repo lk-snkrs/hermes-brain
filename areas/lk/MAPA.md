@@ -33,6 +33,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `rotinas/approved-p1-seo-fields-execution-2026-05-11.md` — execução aprovada por Lucas: 8 SEO title/meta aplicados no Shopify e verificados live, com backup/rollback e sem mudanças visíveis.
 - `rotinas/visible-cro-pending-future-2026-05-11.md` — decisão Lucas: CRO visível dos 8 P1 fica `pending_future`; nenhuma mudança de H1/body/layout/tema foi aplicada.
 - `rotinas/approval-learning-ledger-2026-05-11.md` — Fase 7 do LK OS: ledger operacional de aprovações/aprendizados com 24 registros roteáveis (`executed_verified`, `pending_future`, `needs_approval`, `needs_data`) e 0 writes liberados.
+- `rotinas/safe-automation-readiness-registry-2026-05-11.md` — Fase 8 do LK OS: catálogo safe-by-default de 6 automações candidatas em `dry_run_only`, com risco, rollback, contrato silent-OK e aprovação antes de ativação.
 - `rotinas/full-sync.md` — sincronizações LK.
 - `rotinas/morning-briefing.md` — briefing matinal.
 - `rotinas/sync-log.md` — auditoria de syncs.

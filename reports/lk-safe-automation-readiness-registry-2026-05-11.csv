@@ -1,0 +1,7 @@
+automation_id,name,risk_level,mode_now,cadence_candidate,approval_required_before_activation,recommended_next_step
+LK-AUTO-001,Daily Sales Brief read-only,low,dry_run_only,daily 08:00 BRT,True,Run 3 manual dry-runs on separate days before cron approval.
+LK-AUTO-002,Weekly CEO Review read-only,low,dry_run_only,weekly Monday 09:00 BRT,True,Candidate for first read-only cron after one more clean manual run.
+LK-AUTO-003,SEO/CRO weekly monitor read-only,low,dry_run_only,weekly Monday 10:00 BRT,True,Safe as read-only monitor only after Lucas approves cadence/delivery.
+LK-AUTO-004,Approval Learning Ledger refresh,low,dry_run_only,"on-demand or post-PR hook, not time-based initially",True,Keep as manual post-action step until ledger pattern stabilizes.
+LK-AUTO-005,Klaviyo CRM draft watcher,medium,dry_run_only,manual only for now,True,Do not automate yet; keep on-demand readiness preview.
+LK-AUTO-006,On-demand sourcing router,medium,dry_run_only,event/manual only,True,Wait for one specific sourcing approval; do not create cron.
