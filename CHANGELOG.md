@@ -1,3 +1,11 @@
+## 2026-05-11 — LK OS Weekly Stock/SKU Action Plan read-only
+
+- Criado e executado `scripts/lk_os_weekly_stock_sku_action_plan_20260511.py`, fila operacional P0/P1 derivada do Weekly CEO Review.
+- Resultado: 14 linhas, sendo 6 P0 e 8 P1; status de ação: 6 candidatos a cotação preview, 5 para validar antes de cotar e 3 que exigem resolução SKU/Tiny antes de sourcing.
+- Sinal de receita Shopify nas linhas: `R$ 89.669,71`; Tiny continua como `fact_tiny_stock` no depósito `LK | CONTROLE ESTOQUE`.
+- Artefatos: `areas/lk/rotinas/weekly-stock-sku-action-plan-readonly-2026-05-11.md`, `reports/lk-os-weekly-stock-sku-action-plan-2026-05-04_2026-05-10.md`, `.json` e `.csv`.
+- Nenhuma compra, PO, contato fornecedor, alteração Shopify/Tiny, preço, estoque, campanha, cron ou envio externo foi executado.
+
 ## 2026-05-11 — LK OS Weekly CEO Review read-only
 
 - Criado e executado `scripts/lk_os_weekly_ceo_review_20260511.py`, revisão semanal executiva read-only do LK OS para 2026-05-04 a 2026-05-10.

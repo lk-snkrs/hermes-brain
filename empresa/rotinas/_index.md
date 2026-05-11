@@ -67,6 +67,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | LK Data Spine Read-only | `areas/lk/rotinas/data-spine-readonly-2026-05-11.md` | Fase 1 do LK OS: fonte da verdade, entidades canônicas, reconciliação, credenciais por nome e lacunas sem writes |
 | LK Daily Sales Brief Read-only 2026-05-11 | `areas/lk/rotinas/daily-sales-brief-readonly-2026-05-11.md` | Primeiro briefing diário real do LK OS com Shopify + GA4 + Tiny, local/read-only, sem cron/envio |
 | LK Weekly CEO Review Read-only 2026-05-11 | `areas/lk/rotinas/weekly-ceo-review-readonly-2026-05-11.md` | Revisão semanal executiva com Shopify + GA4 + Tiny + Meta/Metricool como sinais, preview Telegram e contrato de silêncio, sem cron/envio |
+| LK Weekly Stock/SKU Action Plan Read-only 2026-05-11 | `areas/lk/rotinas/weekly-stock-sku-action-plan-readonly-2026-05-11.md` | Fila operacional P0/P1 derivada do Weekly CEO Review: ruptura, baixo estoque e SKU/Tiny desconhecido, sem compra/contato/write |
 | Cross-sell Monitor | `areas/lk/sub-areas/crm/rotinas/cross-sell-monitor.md` | Oportunidades pós-pedido |
 | Playbook Campanha CRM Aprovada | `areas/lk/sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md` | Segmentação, preview e aprovação Lucas antes de campanha externa |
 | LK Klaviyo P1 Draft Campaign | `areas/lk/sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` | Primeira execução P1 CRM/Klaviyo em Draft, sem envio/agendamento, com template/lista/campanha documentados |
