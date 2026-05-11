@@ -1,3 +1,11 @@
+## 2026-05-11 — LK Shopify SKUs padronizados para Tiny
+
+- Com aprovação explícita do Lucas no Telegram, executei a padronização de SKUs da Shopify para ficarem idênticos ao `codigo` do Tiny em variants com alta confiança e código Tiny não-vazio.
+- Resultado: 8 variants Shopify alteradas e verificadas live com sucesso via REST `PUT /variants/{id}.json`; 0 falhas; backup/rollback por `variant_id` registrado.
+- Alterações: Onitsuka Tiger Mexico 66 Kill Bill Amarelo tamanhos 35, 36, 37, 39, 40 e 42.5; Onitsuka Tiger Mexico 66 Chrome Silver Prata tamanhos 35.5 e 37.
+- Itens com código Tiny vazio, já idênticos, ou sem variant Shopify encontrada com confiança suficiente foram pulados sem write.
+- Não alterei preço, estoque, título, handle, imagens, coleções, campanhas, Klaviyo/WhatsApp, fornecedores, Tiny, banco, VPS/Docker ou secrets.
+
 ## 2026-05-11 — LK Stock Fila B saneada + Fila A preview
 
 - Executado o pedido “B depois A”: gerado `areas/lk/rotinas/stock-sku-saneamento-b-e-preview-a-2026-05-11.md` e o JSON auditável `reports/lk-stock-sku-saneamento-b-e-preview-a-2026-05-11.json`.

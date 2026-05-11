@@ -50,6 +50,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Consequence Tracker | `areas/lk/rotinas/consequence-tracker.md` | Registro de efeitos de ações |
 | LK Stock Action Queue 2026-05-11 | `areas/lk/rotinas/stock-action-queue-2026-05-11.md` | Fila read-only de ruptura, baixo estoque, mapear SKU Tiny e sem SKU Shopify por influencer/produto/SKU/tamanho |
 | LK Stock Saneamento B + Preview A 2026-05-11 | `areas/lk/rotinas/stock-sku-saneamento-b-e-preview-a-2026-05-11.md` | Execução read-only: primeiro saneia Fila B SKU Shopify↔Tiny, depois prepara preview P0/P1 de sourcing/reposição e cards Mission Control |
+| LK Shopify SKU Padronizado para Tiny 2026-05-11 | `areas/lk/rotinas/shopify-sku-padronizacao-tiny-execution-2026-05-11.md` | Execução aprovada: 8 SKUs de variants Shopify alinhados exatamente ao `codigo` Tiny, com backup/rollback e verificação live |
 | Cross-sell Monitor | `areas/lk/sub-areas/crm/rotinas/cross-sell-monitor.md` | Oportunidades pós-pedido |
 | Playbook Campanha CRM Aprovada | `areas/lk/sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md` | Segmentação, preview e aprovação Lucas antes de campanha externa |
 | RFM Semanal | `areas/lk/sub-areas/crm/rotinas/rfm-semanal.md` | Segmentação RFM e relatório |

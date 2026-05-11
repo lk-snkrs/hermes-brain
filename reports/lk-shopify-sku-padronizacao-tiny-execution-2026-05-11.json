@@ -1,0 +1,740 @@
+{
+  "generated_at": "2026-05-11 10:41:35",
+  "scope": "Fila B LK OS — padronizar Shopify SKU para o codigo Tiny quando Tiny codigo é não-vazio e variant Shopify foi encontrada com alta confiança",
+  "approval": "Lucas Telegram: “quero que você padronize o sku da Shopify idêntico ao do Tiny, pode alterar ok?”",
+  "planned_count": 8,
+  "executed_count": 8,
+  "success_count": 8,
+  "verify_ok_count": 8,
+  "skipped_count": 25,
+  "plan_backup": [
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "variant": "37",
+      "variant_id": "gid://shopify/ProductVariant/45747573457118",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "variant_title": "37",
+      "old_shopify_sku": "1183C102751-4",
+      "new_tiny_sku": "1183C102 751-4",
+      "tiny_product": {
+        "id": "1058668616",
+        "codigo": "1183C102 751-4",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 37",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183C102751-4"
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "variant": "42.5",
+      "variant_id": "gid://shopify/ProductVariant/47437805519070",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "variant_title": "42.5",
+      "old_shopify_sku": "1183C102751-8",
+      "new_tiny_sku": "1183C102 751-8",
+      "tiny_product": {
+        "id": "1061068024",
+        "codigo": "1183C102 751-8",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 42.5",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183C102751-8"
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "variant": "40",
+      "variant_id": "gid://shopify/ProductVariant/45836220924126",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "variant_title": "40",
+      "old_shopify_sku": "1183C102751-9",
+      "new_tiny_sku": "1183C102 751-9",
+      "tiny_product": {
+        "id": "1061068027",
+        "codigo": "1183C102 751-9",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 40",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183C102751-9"
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+      "variant": "37",
+      "variant_id": "gid://shopify/ProductVariant/45765446303966",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+      "handle": "tenis-onitsuka-tiger-mexico-66-chrome-silver-prata",
+      "variant_title": "37",
+      "old_shopify_sku": "1183B566021-4",
+      "new_tiny_sku": "1183B566 021-4",
+      "tiny_product": {
+        "id": "1058754351",
+        "codigo": "1183B566 021-4",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata - 37",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183B566021-4"
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+      "variant": "35.5",
+      "variant_id": "gid://shopify/ProductVariant/48221074948318",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+      "handle": "tenis-onitsuka-tiger-mexico-66-chrome-silver-prata",
+      "variant_title": "35.5",
+      "old_shopify_sku": "",
+      "new_tiny_sku": "1183B566 021-9",
+      "tiny_product": {
+        "id": "1064412101",
+        "codigo": "1183B566 021-9",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata - 35.5",
+        "situacao": "A"
+      },
+      "tiny_source": "tiny_title_size_fallback",
+      "rollback_sku": ""
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "variant": "39",
+      "variant_id": "gid://shopify/ProductVariant/45747573522654",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "variant_title": "39",
+      "old_shopify_sku": "1183C102751-6",
+      "new_tiny_sku": "1183C102 751-6",
+      "tiny_product": {
+        "id": "1058668622",
+        "codigo": "1183C102 751-6",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 39",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183C102751-6"
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "variant": "35",
+      "variant_id": "gid://shopify/ProductVariant/45747573391582",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "variant_title": "35",
+      "old_shopify_sku": "1183C102751-2",
+      "new_tiny_sku": "1183C102 751-2",
+      "tiny_product": {
+        "id": "1058668610",
+        "codigo": "1183C102 751-2",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 35",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183C102751-2"
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "variant": "36",
+      "variant_id": "gid://shopify/ProductVariant/45747573424350",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "variant_title": "36",
+      "old_shopify_sku": "1183C102751-3",
+      "new_tiny_sku": "1183C102 751-3",
+      "tiny_product": {
+        "id": "1058668613",
+        "codigo": "1183C102 751-3",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 36",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183C102751-3"
+    }
+  ],
+  "executed": [
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "variant": "37",
+      "variant_id": "gid://shopify/ProductVariant/45747573457118",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "variant_title": "37",
+      "old_shopify_sku": "1183C102751-4",
+      "new_tiny_sku": "1183C102 751-4",
+      "tiny_product": {
+        "id": "1058668616",
+        "codigo": "1183C102 751-4",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 37",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183C102751-4",
+      "user_errors": [],
+      "updated_sku": null,
+      "success": false
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "variant": "42.5",
+      "variant_id": "gid://shopify/ProductVariant/47437805519070",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "variant_title": "42.5",
+      "old_shopify_sku": "1183C102751-8",
+      "new_tiny_sku": "1183C102 751-8",
+      "tiny_product": {
+        "id": "1061068024",
+        "codigo": "1183C102 751-8",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 42.5",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183C102751-8",
+      "user_errors": [],
+      "updated_sku": null,
+      "success": false
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "variant": "40",
+      "variant_id": "gid://shopify/ProductVariant/45836220924126",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "variant_title": "40",
+      "old_shopify_sku": "1183C102751-9",
+      "new_tiny_sku": "1183C102 751-9",
+      "tiny_product": {
+        "id": "1061068027",
+        "codigo": "1183C102 751-9",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 40",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183C102751-9",
+      "user_errors": [],
+      "updated_sku": null,
+      "success": false
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+      "variant": "37",
+      "variant_id": "gid://shopify/ProductVariant/45765446303966",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+      "handle": "tenis-onitsuka-tiger-mexico-66-chrome-silver-prata",
+      "variant_title": "37",
+      "old_shopify_sku": "1183B566021-4",
+      "new_tiny_sku": "1183B566 021-4",
+      "tiny_product": {
+        "id": "1058754351",
+        "codigo": "1183B566 021-4",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata - 37",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183B566021-4",
+      "user_errors": [],
+      "updated_sku": null,
+      "success": false
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+      "variant": "35.5",
+      "variant_id": "gid://shopify/ProductVariant/48221074948318",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+      "handle": "tenis-onitsuka-tiger-mexico-66-chrome-silver-prata",
+      "variant_title": "35.5",
+      "old_shopify_sku": "",
+      "new_tiny_sku": "1183B566 021-9",
+      "tiny_product": {
+        "id": "1064412101",
+        "codigo": "1183B566 021-9",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata - 35.5",
+        "situacao": "A"
+      },
+      "tiny_source": "tiny_title_size_fallback",
+      "rollback_sku": "",
+      "user_errors": [],
+      "updated_sku": null,
+      "success": false
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "variant": "39",
+      "variant_id": "gid://shopify/ProductVariant/45747573522654",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "variant_title": "39",
+      "old_shopify_sku": "1183C102751-6",
+      "new_tiny_sku": "1183C102 751-6",
+      "tiny_product": {
+        "id": "1058668622",
+        "codigo": "1183C102 751-6",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 39",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183C102751-6",
+      "user_errors": [],
+      "updated_sku": null,
+      "success": false
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "variant": "35",
+      "variant_id": "gid://shopify/ProductVariant/45747573391582",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "variant_title": "35",
+      "old_shopify_sku": "1183C102751-2",
+      "new_tiny_sku": "1183C102 751-2",
+      "tiny_product": {
+        "id": "1058668610",
+        "codigo": "1183C102 751-2",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 35",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183C102751-2",
+      "user_errors": [],
+      "updated_sku": null,
+      "success": false
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "variant": "36",
+      "variant_id": "gid://shopify/ProductVariant/45747573424350",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "variant_title": "36",
+      "old_shopify_sku": "1183C102751-3",
+      "new_tiny_sku": "1183C102 751-3",
+      "tiny_product": {
+        "id": "1058668613",
+        "codigo": "1183C102 751-3",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 36",
+        "situacao": "A"
+      },
+      "tiny_source": "existing_report_candidate",
+      "rollback_sku": "1183C102751-3",
+      "user_errors": [],
+      "updated_sku": null,
+      "success": false
+    }
+  ],
+  "verify": [
+    {
+      "variant_id": "gid://shopify/ProductVariant/45747573457118",
+      "expected_sku": "1183C102 751-4",
+      "live_sku": "1183C102 751-4",
+      "ok": true,
+      "title": "37",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/47437805519070",
+      "expected_sku": "1183C102 751-8",
+      "live_sku": "1183C102 751-8",
+      "ok": true,
+      "title": "42.5",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/45836220924126",
+      "expected_sku": "1183C102 751-9",
+      "live_sku": "1183C102 751-9",
+      "ok": true,
+      "title": "40",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/45765446303966",
+      "expected_sku": "1183B566 021-4",
+      "live_sku": "1183B566 021-4",
+      "ok": true,
+      "title": "37",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/48221074948318",
+      "expected_sku": "1183B566 021-9",
+      "live_sku": "1183B566 021-9",
+      "ok": true,
+      "title": "35.5",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/45747573522654",
+      "expected_sku": "1183C102 751-6",
+      "live_sku": "1183C102 751-6",
+      "ok": true,
+      "title": "39",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/45747573391582",
+      "expected_sku": "1183C102 751-2",
+      "live_sku": "1183C102 751-2",
+      "ok": true,
+      "title": "35",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/45747573424350",
+      "expected_sku": "1183C102 751-3",
+      "live_sku": "1183C102 751-3",
+      "ok": true,
+      "title": "36",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo"
+    }
+  ],
+  "skipped": [
+    {
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "variant": "37",
+      "tiny_code": "HV8547-200-37",
+      "reason": "shopify_variant_not_found"
+    },
+    {
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "variant": "36",
+      "tiny_code": "HV8547-200-36",
+      "reason": "shopify_variant_not_found"
+    },
+    {
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "variant": "36",
+      "current_sku": "HV8547-002-36",
+      "tiny_code": "HV8547-002-36",
+      "reason": "already_identical"
+    },
+    {
+      "name": "Tênis New Balance 204L Cortado Marrom",
+      "variant": "39",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "variant": "44",
+      "current_sku": "HV8547-002-44",
+      "tiny_code": "HV8547-002-44",
+      "reason": "already_identical"
+    },
+    {
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "variant": "38",
+      "tiny_code": "HV8547-200-38",
+      "reason": "shopify_variant_not_found"
+    },
+    {
+      "name": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom",
+      "variant": "36",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Tênis Nike Mind 002 Light Khaki Bege",
+      "variant": "41",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Tênis Nike Mind 002 Light Smoke Grey Cinza",
+      "variant": "41",
+      "current_sku": "HQ4308-003-1",
+      "tiny_code": "HQ4308-003-1",
+      "reason": "already_identical"
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom",
+      "variant": "42.5",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Tênis New Balance 204L Cortado Marrom",
+      "variant": "37",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "variant": "39",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza",
+      "variant": "38",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto",
+      "variant": "S/P",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Tênis Nike Air Jordan 1 Low White University Red Branco",
+      "variant": "36",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Camiseta Aimé Leon Dore Musician Graphic Off White",
+      "variant": "S/P",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+      "variant": "L/G",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Rhode Pocket Blush",
+      "variant": "Sleepy Girl - Soft Mauve",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Camiseta Pace Buero Washed Black Preto",
+      "variant": "S/P",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Camiseta Pace Cotton Code Preta",
+      "variant": "G/L",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Camiseta Pace Cotton Code Branca",
+      "variant": "G/L",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Camiseta Pace Patavision Off White",
+      "variant": "P/S",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Camiseta Pace Sketch Yourself Off White",
+      "variant": "P/S",
+      "reason": "tiny_code_blank_or_not_found"
+    },
+    {
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "variant": "38",
+      "current_sku": "HV8547-002-38",
+      "tiny_code": "HV8547-002-38",
+      "reason": "already_identical"
+    },
+    {
+      "name": "Camiseta Pace Cotton Code Branca",
+      "variant": "G/L",
+      "reason": "tiny_code_blank_or_not_found"
+    }
+  ],
+  "rollback_note": "Para reverter, executar productVariantUpdate por variant_id usando rollback_sku de plan_backup.",
+  "rest_retry": {
+    "generated_at": "2026-05-11 10:42:38",
+    "method": "REST PUT /variants/{id}.json",
+    "attempted": 8,
+    "success": 8,
+    "failed": 0,
+    "results": [
+      {
+        "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+        "variant": "37",
+        "variant_id": "gid://shopify/ProductVariant/45747573457118",
+        "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+        "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+        "variant_title": "37",
+        "old_shopify_sku": "1183C102751-4",
+        "new_tiny_sku": "1183C102 751-4",
+        "tiny_product": {
+          "id": "1058668616",
+          "codigo": "1183C102 751-4",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 37",
+          "situacao": "A"
+        },
+        "tiny_source": "existing_report_candidate",
+        "rollback_sku": "1183C102751-4",
+        "rest_status": 200,
+        "rest_error": null,
+        "response_sku": "1183C102 751-4",
+        "verify_status": 200,
+        "live_sku": "1183C102 751-4",
+        "success": true,
+        "api_error_summary": null
+      },
+      {
+        "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+        "variant": "42.5",
+        "variant_id": "gid://shopify/ProductVariant/47437805519070",
+        "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+        "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+        "variant_title": "42.5",
+        "old_shopify_sku": "1183C102751-8",
+        "new_tiny_sku": "1183C102 751-8",
+        "tiny_product": {
+          "id": "1061068024",
+          "codigo": "1183C102 751-8",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 42.5",
+          "situacao": "A"
+        },
+        "tiny_source": "existing_report_candidate",
+        "rollback_sku": "1183C102751-8",
+        "rest_status": 200,
+        "rest_error": null,
+        "response_sku": "1183C102 751-8",
+        "verify_status": 200,
+        "live_sku": "1183C102 751-8",
+        "success": true,
+        "api_error_summary": null
+      },
+      {
+        "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+        "variant": "40",
+        "variant_id": "gid://shopify/ProductVariant/45836220924126",
+        "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+        "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+        "variant_title": "40",
+        "old_shopify_sku": "1183C102751-9",
+        "new_tiny_sku": "1183C102 751-9",
+        "tiny_product": {
+          "id": "1061068027",
+          "codigo": "1183C102 751-9",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 40",
+          "situacao": "A"
+        },
+        "tiny_source": "existing_report_candidate",
+        "rollback_sku": "1183C102751-9",
+        "rest_status": 200,
+        "rest_error": null,
+        "response_sku": "1183C102 751-9",
+        "verify_status": 200,
+        "live_sku": "1183C102 751-9",
+        "success": true,
+        "api_error_summary": null
+      },
+      {
+        "name": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+        "variant": "37",
+        "variant_id": "gid://shopify/ProductVariant/45765446303966",
+        "product_title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+        "handle": "tenis-onitsuka-tiger-mexico-66-chrome-silver-prata",
+        "variant_title": "37",
+        "old_shopify_sku": "1183B566021-4",
+        "new_tiny_sku": "1183B566 021-4",
+        "tiny_product": {
+          "id": "1058754351",
+          "codigo": "1183B566 021-4",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata - 37",
+          "situacao": "A"
+        },
+        "tiny_source": "existing_report_candidate",
+        "rollback_sku": "1183B566021-4",
+        "rest_status": 200,
+        "rest_error": null,
+        "response_sku": "1183B566 021-4",
+        "verify_status": 200,
+        "live_sku": "1183B566 021-4",
+        "success": true,
+        "api_error_summary": null
+      },
+      {
+        "name": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+        "variant": "35.5",
+        "variant_id": "gid://shopify/ProductVariant/48221074948318",
+        "product_title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+        "handle": "tenis-onitsuka-tiger-mexico-66-chrome-silver-prata",
+        "variant_title": "35.5",
+        "old_shopify_sku": "",
+        "new_tiny_sku": "1183B566 021-9",
+        "tiny_product": {
+          "id": "1064412101",
+          "codigo": "1183B566 021-9",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata - 35.5",
+          "situacao": "A"
+        },
+        "tiny_source": "tiny_title_size_fallback",
+        "rollback_sku": "",
+        "rest_status": 200,
+        "rest_error": null,
+        "response_sku": "1183B566 021-9",
+        "verify_status": 200,
+        "live_sku": "1183B566 021-9",
+        "success": true,
+        "api_error_summary": null
+      },
+      {
+        "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+        "variant": "39",
+        "variant_id": "gid://shopify/ProductVariant/45747573522654",
+        "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+        "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+        "variant_title": "39",
+        "old_shopify_sku": "1183C102751-6",
+        "new_tiny_sku": "1183C102 751-6",
+        "tiny_product": {
+          "id": "1058668622",
+          "codigo": "1183C102 751-6",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 39",
+          "situacao": "A"
+        },
+        "tiny_source": "existing_report_candidate",
+        "rollback_sku": "1183C102751-6",
+        "rest_status": 200,
+        "rest_error": null,
+        "response_sku": "1183C102 751-6",
+        "verify_status": 200,
+        "live_sku": "1183C102 751-6",
+        "success": true,
+        "api_error_summary": null
+      },
+      {
+        "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+        "variant": "35",
+        "variant_id": "gid://shopify/ProductVariant/45747573391582",
+        "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+        "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+        "variant_title": "35",
+        "old_shopify_sku": "1183C102751-2",
+        "new_tiny_sku": "1183C102 751-2",
+        "tiny_product": {
+          "id": "1058668610",
+          "codigo": "1183C102 751-2",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 35",
+          "situacao": "A"
+        },
+        "tiny_source": "existing_report_candidate",
+        "rollback_sku": "1183C102751-2",
+        "rest_status": 200,
+        "rest_error": null,
+        "response_sku": "1183C102 751-2",
+        "verify_status": 200,
+        "live_sku": "1183C102 751-2",
+        "success": true,
+        "api_error_summary": null
+      },
+      {
+        "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+        "variant": "36",
+        "variant_id": "gid://shopify/ProductVariant/45747573424350",
+        "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+        "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+        "variant_title": "36",
+        "old_shopify_sku": "1183C102751-3",
+        "new_tiny_sku": "1183C102 751-3",
+        "tiny_product": {
+          "id": "1058668613",
+          "codigo": "1183C102 751-3",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 36",
+          "situacao": "A"
+        },
+        "tiny_source": "existing_report_candidate",
+        "rollback_sku": "1183C102751-3",
+        "rest_status": 200,
+        "rest_error": null,
+        "response_sku": "1183C102 751-3",
+        "verify_status": 200,
+        "live_sku": "1183C102 751-3",
+        "success": true,
+        "api_error_summary": null
+      }
+    ]
+  }
+}
