@@ -1,0 +1,983 @@
+{
+  "generated_at": "2026-05-11T19:14:06.217897+00:00",
+  "week": {
+    "start_date": "2026-05-04",
+    "end_date": "2026-05-10",
+    "start_iso": "2026-05-04T00:00:00-03:00",
+    "end_iso": "2026-05-10T23:59:59-03:00",
+    "label": "last_7_closed_days_brt"
+  },
+  "scope": "LK OS Weekly CEO Review read-only: Shopify + GA4 + Tiny + Meta/Metricool platform signals",
+  "sources": {
+    "shopify": {
+      "source": "Shopify",
+      "fact_label": "fact_shopify",
+      "ok": true,
+      "api_status": 200,
+      "date_range": {
+        "start": "2026-05-04T00:00:00-03:00",
+        "end": "2026-05-10T23:59:59-03:00"
+      },
+      "orders_count": 97,
+      "revenue_total": 312261.74,
+      "average_order_value": 3219.19,
+      "daily": {
+        "2026-05-04": {
+          "orders": 10,
+          "revenue": 52189.93
+        },
+        "2026-05-05": {
+          "orders": 21,
+          "revenue": 50819.97
+        },
+        "2026-05-06": {
+          "orders": 10,
+          "revenue": 21692.44
+        },
+        "2026-05-07": {
+          "orders": 8,
+          "revenue": 31199.91
+        },
+        "2026-05-08": {
+          "orders": 15,
+          "revenue": 50626.93
+        },
+        "2026-05-09": {
+          "orders": 24,
+          "revenue": 70922.64
+        },
+        "2026-05-10": {
+          "orders": 9,
+          "revenue": 34809.92
+        }
+      },
+      "channels": {
+        "online_or_unknown": {
+          "orders": 60,
+          "revenue": 187787.17
+        },
+        "loja_fisica_or_pos": {
+          "orders": 37,
+          "revenue": 124474.57
+        }
+      },
+      "source_names": {
+        "web": {
+          "orders": 59,
+          "revenue": 184287.18
+        },
+        "pos": {
+          "orders": 37,
+          "revenue": 124474.57
+        },
+        "shopify_draft_order": {
+          "orders": 1,
+          "revenue": 3499.99
+        }
+      },
+      "top_products": [
+        {
+          "product_title": "Tênis New Balance 9060 Rich Oak Marrom",
+          "sku": "U9060CCC-4",
+          "size_or_variant": "37",
+          "quantity": 3,
+          "line_revenue_estimate": 8399.97,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis New Balance 530 Silver White Branco",
+          "sku": "MR530EMA-5",
+          "size_or_variant": "38",
+          "quantity": 3,
+          "line_revenue_estimate": 5999.97,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)",
+          "sku": "MED-3410398-OS",
+          "size_or_variant": "sem tamanho informado",
+          "quantity": 3,
+          "line_revenue_estimate": 449.97,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom",
+          "sku": "HV8547-200-38",
+          "size_or_variant": "38",
+          "quantity": 2,
+          "line_revenue_estimate": 11999.98,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa",
+          "sku": "HV8547-601-37",
+          "size_or_variant": "37",
+          "quantity": 2,
+          "line_revenue_estimate": 11999.98,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+          "sku": "HV8547-002-36",
+          "size_or_variant": "36",
+          "quantity": 2,
+          "line_revenue_estimate": 10999.98,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis Nike Mind 002 Light Smoke Grey Cinza",
+          "sku": "HQ4308-003-5",
+          "size_or_variant": "36",
+          "quantity": 2,
+          "line_revenue_estimate": 6399.98,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+          "sku": "U9060WHT-4",
+          "size_or_variant": "37",
+          "quantity": 2,
+          "line_revenue_estimate": 5199.98,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis New Balance 9060 Angora Sea Salt Bege",
+          "sku": "U9060ERB-3",
+          "size_or_variant": "36",
+          "quantity": 2,
+          "line_revenue_estimate": 5199.98,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+          "sku": "1183C102751-3",
+          "size_or_variant": "36",
+          "quantity": 2,
+          "line_revenue_estimate": 4799.98,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+          "sku": "JR9446-5",
+          "size_or_variant": "38",
+          "quantity": 2,
+          "line_revenue_estimate": 4399.98,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Polo Comme des Garçons PLAY Red Emblem White Branco",
+          "sku": "CDGP2",
+          "size_or_variant": "G/L",
+          "quantity": 2,
+          "line_revenue_estimate": 3599.98,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+          "sku": "SST-6502622-M",
+          "size_or_variant": "M/M",
+          "quantity": 2,
+          "line_revenue_estimate": 619.98,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+          "sku": "HV8547-001-1",
+          "size_or_variant": "34",
+          "quantity": 1,
+          "line_revenue_estimate": 6999.99,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+          "sku": "HV8547-001-7",
+          "size_or_variant": "40",
+          "quantity": 1,
+          "line_revenue_estimate": 6999.99,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+          "sku": "HV8547-700-11",
+          "size_or_variant": "37.5",
+          "quantity": 1,
+          "line_revenue_estimate": 5999.99,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+          "sku": "HV8547-700-4",
+          "size_or_variant": "37",
+          "quantity": 1,
+          "line_revenue_estimate": 5999.99,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+          "sku": "HV8547-700-6",
+          "size_or_variant": "39",
+          "quantity": 1,
+          "line_revenue_estimate": 5999.99,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+          "sku": "HV8547-001-8",
+          "size_or_variant": "41",
+          "quantity": 1,
+          "line_revenue_estimate": 5999.99,
+          "source_label": "fact_shopify"
+        },
+        {
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+          "sku": "HV8547-200-41",
+          "size_or_variant": "41",
+          "quantity": 1,
+          "line_revenue_estimate": 5999.99,
+          "source_label": "fact_shopify"
+        }
+      ],
+      "top_skus": [
+        [
+          "MR530EMA-5",
+          3
+        ],
+        [
+          "U9060CCC-4",
+          3
+        ],
+        [
+          "MED-3410398-OS",
+          3
+        ],
+        [
+          "HV8547-002-36",
+          2
+        ],
+        [
+          "1183C102751-3",
+          2
+        ],
+        [
+          "HV8547-200-38",
+          2
+        ],
+        [
+          "U9060WHT-4",
+          2
+        ],
+        [
+          "HQ4308-003-5",
+          2
+        ],
+        [
+          "U9060ERB-3",
+          2
+        ],
+        [
+          "JR9446-5",
+          2
+        ],
+        [
+          "HV8547-601-37",
+          2
+        ],
+        [
+          "SST-6502622-M",
+          2
+        ],
+        [
+          "CDGP2",
+          2
+        ],
+        [
+          "IM3906-100-4",
+          1
+        ],
+        [
+          "HV8547-700-11",
+          1
+        ]
+      ],
+      "discount_codes_count": 32,
+      "landing_site_sample": [
+        [
+          "/?utm_id=97760_v0_s00_e0_tv3",
+          6
+        ],
+        [
+          "/",
+          3
+        ],
+        [
+          "/collections/roupas?utm_medium=paid&utm_id=120242040260570224_v2_s09_e7608&utm_content=120242040260560224&utm_term=12024",
+          2
+        ],
+        [
+          "/products/tenis-nike-air-max-1-87-stranger-things-steve-harrington-branco?utm_id=97760_v0_s00_e0_tv3&fbclid=PAT01DUARkqW",
+          1
+        ],
+        [
+          "/products/nike-moon-shoe-sp-jacquemus-alabaster-amarelo?variant=47598961393886",
+          1
+        ],
+        [
+          "/collections/onitsuka-tiger-mexico-66?utm_source=facebook&utm_medium=cpc&utm_campaign=[PD] [FUNDO] RMKT (antiga Campanha",
+          1
+        ],
+        [
+          "/collections/nike-x-jacquemus-moon-shoe-sp?ad_id=120241352220370224&campaign_id=120241297336180224&fbclid=PAZXh0bgNhZW0B",
+          1
+        ],
+        [
+          "/?utm_medium=paid&utm_id=120236212896630224_v2_s10_e7644&utm_content=120237637573420224&utm_term=120236212896630224&utm_",
+          1
+        ],
+        [
+          "/products/calca-pace-pf-sweatpants-preto?srsltid=AfmBOopXo5oiIL55vBo3bA5GvDMcHJ6IELO-sB0JRXjkSxoY0izvL1ZW",
+          1
+        ],
+        [
+          "/products/oculos-de-sol-balenciaga-bb0041s-014-azul?currency=BRL&country=BR&variant=46163270795486&utm_source=google&utm",
+          1
+        ]
+      ],
+      "referring_site_sample": [
+        [
+          "https://www.google.com/",
+          19
+        ],
+        [
+          "https://instagram.com/",
+          17
+        ],
+        [
+          "https://l.instagram.com/",
+          6
+        ],
+        [
+          "https://lksneakers.com.br/cart",
+          2
+        ],
+        [
+          "http://instagram.com/",
+          1
+        ],
+        [
+          "https://lksneakers.com.br/?utm_id=97760_v0_s00_e0_tv3",
+          1
+        ]
+      ],
+      "no_sku_line_items": 8,
+      "pii_minimization": "Order customer fields not requested from Shopify."
+    },
+    "ga4": {
+      "source": "GA4",
+      "fact_label": "fact_ga4",
+      "ok": true,
+      "api_status": 200,
+      "date_range": {
+        "start": "2026-05-04",
+        "end": "2026-05-10"
+      },
+      "totals": {
+        "sessions": 29605.0,
+        "transactions": 55.0,
+        "totalRevenue": 164657.24
+      },
+      "top_channels": [
+        {
+          "channel": "Paid Social",
+          "sessions": 15390.0,
+          "totalUsers": 13403.0,
+          "transactions": 14.0,
+          "totalRevenue": 58747.479988999985,
+          "sessionConversionRate": 0.008187134502923977
+        },
+        {
+          "channel": "Cross-network",
+          "sessions": 3719.0,
+          "totalUsers": 3260.0,
+          "transactions": 10.0,
+          "totalRevenue": 23254.959992,
+          "sessionConversionRate": 0.01936004302231783
+        },
+        {
+          "channel": "Organic Search",
+          "sessions": 3225.0,
+          "totalUsers": 2881.0,
+          "transactions": 4.0,
+          "totalRevenue": 10455.010001,
+          "sessionConversionRate": 0.012713178294573644
+        },
+        {
+          "channel": "Direct",
+          "sessions": 2072.0,
+          "totalUsers": 1826.0,
+          "transactions": 10.0,
+          "totalRevenue": 24649.909998,
+          "sessionConversionRate": 0.032818532818532815
+        },
+        {
+          "channel": "Paid Shopping",
+          "sessions": 1608.0,
+          "totalUsers": 1424.0,
+          "transactions": 3.0,
+          "totalRevenue": 4493.899996,
+          "sessionConversionRate": 0.016791044776119403
+        },
+        {
+          "channel": "Organic Social",
+          "sessions": 1363.0,
+          "totalUsers": 1247.0,
+          "transactions": 10.0,
+          "totalRevenue": 25806.020001,
+          "sessionConversionRate": 0.04842259721203228
+        },
+        {
+          "channel": "Paid Search",
+          "sessions": 898.0,
+          "totalUsers": 775.0,
+          "transactions": 1.0,
+          "totalRevenue": 5299.979999,
+          "sessionConversionRate": 0.0400890868596882
+        },
+        {
+          "channel": "Unassigned",
+          "sessions": 686.0,
+          "totalUsers": 552.0,
+          "transactions": 3.0,
+          "totalRevenue": 11949.98,
+          "sessionConversionRate": 0.04518950437317784
+        },
+        {
+          "channel": "Organic Shopping",
+          "sessions": 352.0,
+          "totalUsers": 305.0,
+          "transactions": 0.0,
+          "totalRevenue": 0.0,
+          "sessionConversionRate": 0.022727272727272728
+        },
+        {
+          "channel": "Referral",
+          "sessions": 233.0,
+          "totalUsers": 138.0,
+          "transactions": 0.0,
+          "totalRevenue": 0.0,
+          "sessionConversionRate": 0.004291845493562232
+        }
+      ],
+      "note": "GA4 mede tráfego/canal/funil; Shopify é receita oficial."
+    },
+    "tiny_stock": {
+      "source": "Tiny",
+      "fact_label": "fact_tiny_stock",
+      "ok": true,
+      "deposit": "LK | CONTROLE ESTOQUE",
+      "checks_count": 15,
+      "risk_counts": {
+        "ruptura": 8,
+        "baixo_estoque_vs_venda_da_semana": 3,
+        "unknown": 3,
+        "ok_amostra": 1
+      },
+      "critical_or_unknown": [
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis New Balance 9060 Rich Oak Marrom",
+          "sku": "U9060CCC-4",
+          "size_or_variant": "37",
+          "sold_qty_fact_shopify": 3,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1066011409",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis New Balance 530 Silver White Branco",
+          "sku": "MR530EMA-5",
+          "size_or_variant": "38",
+          "sold_qty_fact_shopify": 3,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1061435629",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 1.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "baixo_estoque_vs_venda_da_semana"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)",
+          "sku": "MED-3410398-OS",
+          "size_or_variant": "sem tamanho informado",
+          "sold_qty_fact_shopify": 3,
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_risk": "unknown"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom",
+          "sku": "HV8547-200-38",
+          "size_or_variant": "38",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069546133",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa",
+          "sku": "HV8547-601-37",
+          "size_or_variant": "37",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069545977",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 2.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "baixo_estoque_vs_venda_da_semana"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+          "sku": "HV8547-002-36",
+          "size_or_variant": "36",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069546050",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Nike Mind 002 Light Smoke Grey Cinza",
+          "sku": "HQ4308-003-5",
+          "size_or_variant": "36",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069545282",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+          "sku": "U9060WHT-4",
+          "size_or_variant": "37",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1059847080",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": -1.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis New Balance 9060 Angora Sea Salt Bege",
+          "sku": "U9060ERB-3",
+          "size_or_variant": "36",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1066064082",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 1.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "baixo_estoque_vs_venda_da_semana"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+          "sku": "1183C102751-3",
+          "size_or_variant": "36",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_risk": "unknown"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Polo Comme des Garçons PLAY Red Emblem White Branco",
+          "sku": "CDGP2",
+          "size_or_variant": "G/L",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1070118877",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+          "sku": "SST-6502622-M",
+          "size_or_variant": "M/M",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_risk": "unknown"
+        }
+      ],
+      "checks": [
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis New Balance 9060 Rich Oak Marrom",
+          "sku": "U9060CCC-4",
+          "size_or_variant": "37",
+          "sold_qty_fact_shopify": 3,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1066011409",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis New Balance 530 Silver White Branco",
+          "sku": "MR530EMA-5",
+          "size_or_variant": "38",
+          "sold_qty_fact_shopify": 3,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1061435629",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 1.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "baixo_estoque_vs_venda_da_semana"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)",
+          "sku": "MED-3410398-OS",
+          "size_or_variant": "sem tamanho informado",
+          "sold_qty_fact_shopify": 3,
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_risk": "unknown"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom",
+          "sku": "HV8547-200-38",
+          "size_or_variant": "38",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069546133",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa",
+          "sku": "HV8547-601-37",
+          "size_or_variant": "37",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069545977",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 2.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "baixo_estoque_vs_venda_da_semana"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+          "sku": "HV8547-002-36",
+          "size_or_variant": "36",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069546050",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Nike Mind 002 Light Smoke Grey Cinza",
+          "sku": "HQ4308-003-5",
+          "size_or_variant": "36",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069545282",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+          "sku": "U9060WHT-4",
+          "size_or_variant": "37",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1059847080",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": -1.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis New Balance 9060 Angora Sea Salt Bege",
+          "sku": "U9060ERB-3",
+          "size_or_variant": "36",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1066064082",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 1.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "baixo_estoque_vs_venda_da_semana"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+          "sku": "1183C102751-3",
+          "size_or_variant": "36",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_risk": "unknown"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+          "sku": "JR9446-5",
+          "size_or_variant": "38",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1064539666",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 6.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ok_amostra"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Polo Comme des Garçons PLAY Red Emblem White Branco",
+          "sku": "CDGP2",
+          "size_or_variant": "G/L",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1070118877",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+          "sku": "SST-6502622-M",
+          "size_or_variant": "M/M",
+          "sold_qty_fact_shopify": 2,
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_risk": "unknown"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+          "sku": "HV8547-001-1",
+          "size_or_variant": "34",
+          "sold_qty_fact_shopify": 1,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1066218750",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+          "sku": "HV8547-001-7",
+          "size_or_variant": "40",
+          "sold_qty_fact_shopify": 1,
+          "candidate_count": 1,
+          "chosen_tiny_id": "1066218771",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true
+          },
+          "stock_risk": "ruptura"
+        }
+      ],
+      "scope_note": "Read-only. Estoque consultado só para SKUs vendidos na semana, não auditoria completa de catálogo."
+    },
+    "meta_ads": {
+      "source": "Meta Ads",
+      "fact_label": "platform_signal",
+      "ok": true,
+      "api_status": 200,
+      "account_checked": "act_1242062509867163",
+      "date_range": {
+        "start": "2026-05-04",
+        "end": "2026-05-10"
+      },
+      "rows": 1,
+      "spend": 9374.42,
+      "impressions": 490901,
+      "clicks": 27352,
+      "purchase_actions": 62.0,
+      "purchase_action_key": "offsite_conversion.fb_pixel_purchase",
+      "purchase_value": 140697.3,
+      "purchase_value_key": "offsite_conversion.fb_pixel_purchase",
+      "platform_roas": 15.01,
+      "note": "Meta é platform_signal, não receita final."
+    },
+    "metricool_google_ads": {
+      "source": "Metricool Google Ads",
+      "fact_label": "platform_signal",
+      "ok": true,
+      "profile_status": 200,
+      "ads_status": 200,
+      "blog_id": "6217010",
+      "brand_facts": [
+        {
+          "label": "LK Sneakers",
+          "id": 6217010,
+          "timezone": "America/Sao_Paulo"
+        }
+      ],
+      "date_range": {
+        "start": "2026-05-04",
+        "end": "2026-05-10"
+      },
+      "google_ads_rows": 21,
+      "note": "Metricool/Google Ads é platform_signal, não receita final."
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "P0",
+      "source_label": "derived_reconciliation",
+      "action": "Preparar fila de sourcing/reposição para SKUs vendidos na semana com saldo zero no Tiny.",
+      "why": "8 SKU(s) vendidos aparecem em ruptura no depósito oficial.",
+      "approval_required": "Sim, antes de compra/fornecedor/Notion."
+    },
+    {
+      "priority": "P1",
+      "source_label": "derived_reconciliation",
+      "action": "Revisar cobertura dos SKUs com venda semanal encostando no saldo oficial.",
+      "why": "3 SKU(s) têm saldo menor ou igual à venda da semana.",
+      "approval_required": "Sim, se virar compra, preço ou contato."
+    },
+    {
+      "priority": "P1",
+      "source_label": "derived_reconciliation",
+      "action": "Priorizar saneamento SKU Shopify ↔ Tiny antes de escalar mídia dos produtos vendidos.",
+      "why": "3 SKU(s) vendidos sem candidato Tiny seguro ou sem saldo legível.",
+      "approval_required": "Sim, se exigir write em cadastro."
+    },
+    {
+      "priority": "P2",
+      "source_label": "derived_reconciliation",
+      "action": "Usar Meta como sinal de mídia e reconciliar campanhas com landing/referrer/cupom antes de falar em ROAS real.",
+      "why": "Gasto Meta sinalizado equivale a 3.0% da receita Shopify semanal, sem prova SKU por campanha ainda.",
+      "approval_required": "Não para análise; sim para campanha."
+    }
+  ],
+  "not_performed": [
+    "telegram_send",
+    "cron",
+    "external_send",
+    "campaign",
+    "shopify_write",
+    "tiny_write",
+    "stock_or_price_change",
+    "customer_contact",
+    "supplier_contact",
+    "production_db_write"
+  ]
+}
