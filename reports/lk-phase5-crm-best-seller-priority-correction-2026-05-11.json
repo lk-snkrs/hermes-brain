@@ -1,0 +1,4248 @@
+{
+  "generated_at": "2026-05-11T14:11:27",
+  "correction_reason": "Lucas correctly flagged the previous priority list as generic family logic, not strictly best-seller based. This report recalculates priorities from actual order_items units sold.",
+  "source": "Supabase LK read-only REST: paid/valid orders + order_items; no writes/no sends",
+  "data_scope": {
+    "valid_orders": 4369,
+    "line_items": 5886,
+    "unique_products": 1295,
+    "first_order": "2023-02-02T08:01:01+00:00",
+    "last_order": "2026-04-16T20:13:58+00:00"
+  },
+  "top_products_by_units": [
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "units": 137,
+      "revenue": 319798.63,
+      "orders": 134,
+      "customers": 134,
+      "top_sku": "1183C102 751",
+      "top_variants": [
+        "37 (28)",
+        "39 (18)",
+        "38 (15)",
+        "35 (14)",
+        "40 (11)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-14T13:33:38+00:00"
+    },
+    {
+      "title": "Jason Markk Repel Spray Impermeabilizante",
+      "units": 128,
+      "revenue": 21758.72,
+      "orders": 128,
+      "customers": 126,
+      "top_sku": "JM3",
+      "top_variants": [],
+      "vendor": "Jason Markk",
+      "last_sold": "2026-03-31T16:50:26+00:00"
+    },
+    {
+      "title": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+      "units": 102,
+      "revenue": 257688.98,
+      "orders": 99,
+      "customers": 98,
+      "top_sku": "U9060WHT",
+      "top_variants": [
+        "37 (27)",
+        "36 (24)",
+        "35 (15)",
+        "38 (12)",
+        "34 (9)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-14T23:35:51+00:00"
+    },
+    {
+      "title": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "units": 93,
+      "revenue": 258599.07,
+      "orders": 90,
+      "customers": 89,
+      "top_sku": "U204LMMA-5",
+      "top_variants": [
+        "38 (20)",
+        "37 (19)",
+        "36 (17)",
+        "39 (10)",
+        "35 (10)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-16T01:29:58+00:00"
+    },
+    {
+      "title": "Jason Markk Essential Kit de Limpeza",
+      "units": 88,
+      "revenue": 17599.12,
+      "orders": 88,
+      "customers": 88,
+      "top_sku": "300110",
+      "top_variants": [],
+      "vendor": "Jason Markk",
+      "last_sold": "2026-04-11T20:04:23+00:00"
+    },
+    {
+      "title": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "units": 79,
+      "revenue": 169599.21,
+      "orders": 74,
+      "customers": 73,
+      "top_sku": "JR9446-4",
+      "top_variants": [
+        "37 (17)",
+        "35 (16)",
+        "36 (15)",
+        "38 (11)",
+        "39 (8)"
+      ],
+      "vendor": "Adidas",
+      "last_sold": "2026-03-02T15:22:19+00:00"
+    },
+    {
+      "title": "Tênis adidas Samba OG White Black Gum Branco",
+      "units": 67,
+      "revenue": 88799.03,
+      "orders": 67,
+      "customers": 67,
+      "top_sku": "B75806-3",
+      "top_variants": [
+        "36 (23)",
+        "37 (16)",
+        "34 (11)",
+        "35 (9)",
+        "38 (7)"
+      ],
+      "vendor": "LK.Sneakers",
+      "last_sold": "2024-10-16T19:35:31+00:00"
+    },
+    {
+      "title": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "units": 65,
+      "revenue": 177199.35,
+      "orders": 62,
+      "customers": 62,
+      "top_sku": "U204LMMC-3",
+      "top_variants": [
+        "36 (18)",
+        "37 (12)",
+        "38 (11)",
+        "35 (9)",
+        "39 (7)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-12T10:30:32+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege",
+      "units": 63,
+      "revenue": 156199.37,
+      "orders": 59,
+      "customers": 59,
+      "top_sku": "1183C015-202-3",
+      "top_variants": [
+        "36 (17)",
+        "37 (12)",
+        "35 (11)",
+        "38 (7)",
+        "39 (7)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-13T18:57:26+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "units": 61,
+      "revenue": 150799.39,
+      "orders": 59,
+      "customers": 57,
+      "top_sku": "1183C015101",
+      "top_variants": [
+        "36 (14)",
+        "37 (11)",
+        "38 (10)",
+        "35 (8)",
+        "40 (6)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-10T15:25:30+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger México 66 Birch Peacoat Bege",
+      "units": 60,
+      "revenue": 142699.4,
+      "orders": 56,
+      "customers": 56,
+      "top_sku": "1183C102-5",
+      "top_variants": [
+        "38 (14)",
+        "37 (10)",
+        "36 (9)",
+        "40 (5)",
+        "41 (5)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-03-27T14:39:47+00:00"
+    },
+    {
+      "title": "Tênis Nike Dunk Low Cacao Wow Marrom",
+      "units": 54,
+      "revenue": 87599.49,
+      "orders": 54,
+      "customers": 52,
+      "top_sku": "DD15031241",
+      "top_variants": [
+        "36 (12)",
+        "37 (10)",
+        "38 (9)",
+        "35 (5)",
+        "37.5 (4)"
+      ],
+      "vendor": "Nike",
+      "last_sold": "2026-01-26T20:06:02+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Black Orange Bege",
+      "units": 47,
+      "revenue": 115399.53,
+      "orders": 47,
+      "customers": 46,
+      "top_sku": "1183C015105",
+      "top_variants": [
+        "37 (9)",
+        "35 (5)",
+        "34 (4)",
+        "38 (4)",
+        "36 (4)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-01T17:57:20+00:00"
+    },
+    {
+      "title": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "units": 46,
+      "revenue": 228899.55,
+      "orders": 46,
+      "customers": 46,
+      "top_sku": "HV8547-700-6",
+      "top_variants": [
+        "39 (9)",
+        "38 (8)",
+        "37 (7)",
+        "36 (6)",
+        "40 (6)"
+      ],
+      "vendor": "Jacquemus x Nike",
+      "last_sold": "2026-04-11T13:36:45+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "units": 46,
+      "revenue": 109599.54,
+      "orders": 46,
+      "customers": 45,
+      "top_sku": "1183A201-126-4",
+      "top_variants": [
+        "37 (10)",
+        "36 (9)",
+        "38 (6)",
+        "35 (6)",
+        "40 (4)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-11T13:19:12+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "units": 45,
+      "revenue": 98999.55,
+      "orders": 44,
+      "customers": 44,
+      "top_sku": "1183C123.252-4",
+      "top_variants": [
+        "37 (16)",
+        "38 (7)",
+        "39 (7)",
+        "35 (5)",
+        "40 (4)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-16T20:07:30+00:00"
+    },
+    {
+      "title": "The Peptide Lip Tints Rhode Multicolor",
+      "units": 43,
+      "revenue": 12899.57,
+      "orders": 34,
+      "customers": 34,
+      "top_sku": "LIP",
+      "top_variants": [
+        "Espresso Rich Brown (8)",
+        "Toast (7)",
+        "Raspberry Jelly (7)",
+        "Vanilla (5)",
+        "Sheer Pink (5)"
+      ],
+      "vendor": "Rhode",
+      "last_sold": "2026-02-19T22:05:22+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo",
+      "units": 42,
+      "revenue": 101249.58,
+      "orders": 41,
+      "customers": 41,
+      "top_sku": "183A872",
+      "top_variants": [
+        "38 (9)",
+        "39 (7)",
+        "35 (4)",
+        "41 (4)",
+        "36 (4)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-13T00:12:28+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+      "units": 42,
+      "revenue": 98399.58,
+      "orders": 40,
+      "customers": 40,
+      "top_sku": "1183C102250",
+      "top_variants": [
+        "36 (8)",
+        "37 (7)",
+        "36.5 (5)",
+        "39 (5)",
+        "41 (5)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-09T16:43:55+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege",
+      "units": 40,
+      "revenue": 99499.6,
+      "orders": 38,
+      "customers": 38,
+      "top_sku": "1183A872.101-5",
+      "top_variants": [
+        "38 (7)",
+        "36 (7)",
+        "35 (4)",
+        "37 (4)",
+        "41 (3)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-16T19:58:34+00:00"
+    },
+    {
+      "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "units": 39,
+      "revenue": 194999.61,
+      "orders": 39,
+      "customers": 39,
+      "top_sku": "HV8547-002-38",
+      "top_variants": [
+        "37 (9)",
+        "38 (8)",
+        "36 (5)",
+        "37.5 (4)",
+        "35 (4)"
+      ],
+      "vendor": "Jacquemus x Nike",
+      "last_sold": "2026-04-14T20:24:55+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Birch Metropolis Bege",
+      "units": 37,
+      "revenue": 91699.63,
+      "orders": 37,
+      "customers": 36,
+      "top_sku": "1183C015200",
+      "top_variants": [
+        "36 (6)",
+        "37 (6)",
+        "38 (5)",
+        "36.5 (4)",
+        "35 (3)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-04T18:44:35+00:00"
+    },
+    {
+      "title": "Tênis adidas SL 72 Og Maroon Almost Yellow Marrom",
+      "units": 33,
+      "revenue": 53649.68,
+      "orders": 33,
+      "customers": 33,
+      "top_sku": "IE3425",
+      "top_variants": [
+        "36 (12)",
+        "37 (8)",
+        "35 (6)",
+        "39 (4)",
+        "38 (3)"
+      ],
+      "vendor": "Adidas",
+      "last_sold": "2026-04-14T13:33:38+00:00"
+    },
+    {
+      "title": "Tênis New Balance 9060 Mushroom Arid Stone Bege",
+      "units": 32,
+      "revenue": 86399.68,
+      "orders": 30,
+      "customers": 29,
+      "top_sku": "U9060ERC-4",
+      "top_variants": [
+        "37 (9)",
+        "38 (9)",
+        "36 (7)",
+        "35 (4)",
+        "39 (2)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-05T18:20:01+00:00"
+    },
+    {
+      "title": "Tênis adidas Samba OG Cream White Core Black Bege",
+      "units": 32,
+      "revenue": 51748.06,
+      "orders": 32,
+      "customers": 32,
+      "top_sku": "ID0478-2",
+      "top_variants": [
+        "37 (7)",
+        "35 (7)",
+        "36 (5)",
+        "38 (5)",
+        "39 (5)"
+      ],
+      "vendor": "LK Sneakers",
+      "last_sold": "2025-09-05T21:46:40+00:00"
+    },
+    {
+      "title": "Slide Nike Mind 001 Light Smoke Grey Cinza",
+      "units": 31,
+      "revenue": 93799.69,
+      "orders": 25,
+      "customers": 25,
+      "top_sku": "HQ4307-003-4",
+      "top_variants": [
+        "37 (5)",
+        "43 (5)",
+        "44 (3)",
+        "36 (3)",
+        "39 (2)"
+      ],
+      "vendor": "Nike",
+      "last_sold": "2026-04-09T21:03:50+00:00"
+    },
+    {
+      "title": "Tênis New Balance 9060 Sea Salt Concrete Branco",
+      "units": 31,
+      "revenue": 79799.69,
+      "orders": 31,
+      "customers": 31,
+      "top_sku": "U9060ECA",
+      "top_variants": [
+        "36 (12)",
+        "38 (8)",
+        "37 (7)",
+        "35 (3)",
+        "34 (1)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-03-05T19:30:33+00:00"
+    },
+    {
+      "title": "Tenis New Balance 9060 Sea Salt Raincloud Cinza",
+      "units": 31,
+      "revenue": 76499.69,
+      "orders": 31,
+      "customers": 31,
+      "top_sku": "U9060ZGF",
+      "top_variants": [
+        "36 (8)",
+        "37 (5)",
+        "35 (5)",
+        "39 (4)",
+        "42 (2)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-15T02:15:07+00:00"
+    },
+    {
+      "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+      "units": 30,
+      "revenue": 71999.7,
+      "orders": 27,
+      "customers": 27,
+      "top_sku": "U9060CCB-3",
+      "top_variants": [
+        "36 (10)",
+        "37 (8)",
+        "38 (4)",
+        "34 (3)",
+        "35 (3)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-13T18:30:37+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+      "units": 30,
+      "revenue": 70099.71,
+      "orders": 30,
+      "customers": 30,
+      "top_sku": "1183B566021",
+      "top_variants": [
+        "38 (6)",
+        "35 (6)",
+        "36 (6)",
+        "37 (4)",
+        "39 (3)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-11T16:44:45+00:00"
+    },
+    {
+      "title": "Rhode Pocket Blush",
+      "units": 30,
+      "revenue": 11849.7,
+      "orders": 24,
+      "customers": 23,
+      "top_sku": "850055527140-1",
+      "top_variants": [
+        "Toasted Teddy - Bronze Terracota (11)",
+        "Freckle - Neutral Peach (7)",
+        "Sleepy Girl - Soft Mauve (6)",
+        "Sun Soak - Spiced Orange (2)",
+        "Spyce Marg - Bright Coral (1)"
+      ],
+      "vendor": "Rhode",
+      "last_sold": "2026-02-05T21:02:32+00:00"
+    },
+    {
+      "title": "Tênis New Balance 530 White Natural Indigo Branco",
+      "units": 29,
+      "revenue": 49899.71,
+      "orders": 29,
+      "customers": 29,
+      "top_sku": "MR530SG",
+      "top_variants": [
+        "36 (8)",
+        "37 (7)",
+        "38 (4)",
+        "35 (3)",
+        "34 (3)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-09T01:06:05+00:00"
+    },
+    {
+      "title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "units": 28,
+      "revenue": 140999.73,
+      "orders": 27,
+      "customers": 27,
+      "top_sku": "HV8547-001-6",
+      "top_variants": [
+        "39 (5)",
+        "35 (4)",
+        "41 (4)",
+        "40 (4)",
+        "36 (3)"
+      ],
+      "vendor": "Jacquemus x Nike",
+      "last_sold": "2026-04-09T00:48:58+00:00"
+    },
+    {
+      "title": "Tênis New Balance 9060 Bone Sparrow Marrom",
+      "units": 27,
+      "revenue": 66499.73,
+      "orders": 27,
+      "customers": 27,
+      "top_sku": "U9060ZGC",
+      "top_variants": [
+        "36 (7)",
+        "37 (6)",
+        "35 (4)",
+        "39 (3)",
+        "34 (3)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-11T12:39:39+00:00"
+    },
+    {
+      "title": "Jaqueta Lululemon Define Nulu",
+      "units": 27,
+      "revenue": 37799.73,
+      "orders": 24,
+      "customers": 22,
+      "top_sku": "11020158-12",
+      "top_variants": [
+        "Light Ivory/Gold / M (8)",
+        "Light Ivory/Gold / S/P (5)",
+        "Washed Denim / M (2)",
+        "Light Ivory/Gold / L/G (2)",
+        "Sheer Oak / S/P (2)"
+      ],
+      "vendor": "Lululemon",
+      "last_sold": "2026-03-09T22:21:32+00:00"
+    },
+    {
+      "title": "Camiseta Saint Studio Classy Suedine Supima Chairs Branco",
+      "units": 27,
+      "revenue": 9201.73,
+      "orders": 25,
+      "customers": 24,
+      "top_sku": "ST32",
+      "top_variants": [
+        "M (9)",
+        "G/L (8)",
+        "GG/XL (6)",
+        "P/S (4)"
+      ],
+      "vendor": "Saint Studio",
+      "last_sold": "2026-04-14T21:13:20+00:00"
+    },
+    {
+      "title": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "units": 26,
+      "revenue": 129999.74,
+      "orders": 26,
+      "customers": 26,
+      "top_sku": "HV8547-200-38",
+      "top_variants": [
+        "36 (7)",
+        "38 (6)",
+        "37 (5)",
+        "35 (4)",
+        "39 (2)"
+      ],
+      "vendor": "Jacquemus x Nike",
+      "last_sold": "2026-04-13T10:58:23+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "units": 26,
+      "revenue": 57199.74,
+      "orders": 25,
+      "customers": 25,
+      "top_sku": null,
+      "top_variants": [
+        "38 (7)",
+        "36 (5)",
+        "37 (3)",
+        "39 (3)",
+        "34 (2)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-04T18:34:15+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Black and White Preto",
+      "units": 25,
+      "revenue": 58999.75,
+      "orders": 24,
+      "customers": 24,
+      "top_sku": "1183C10200",
+      "top_variants": [
+        "37 (6)",
+        "36 (4)",
+        "38 (4)",
+        "39 (3)",
+        "35 (2)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-05T17:33:21+00:00"
+    },
+    {
+      "title": "Tênis adidas Samba Og Maroon Cream White Vinho",
+      "units": 25,
+      "revenue": 52049.48,
+      "orders": 24,
+      "customers": 24,
+      "top_sku": "ID0477",
+      "top_variants": [
+        "37 (6)",
+        "35 (6)",
+        "38 (5)",
+        "36 (4)",
+        "39 (2)"
+      ],
+      "vendor": "Adidas",
+      "last_sold": "2026-03-13T17:36:08+00:00"
+    },
+    {
+      "title": "Tênis adidas Samba OG \"Core Black Wonder\" White Preto",
+      "units": 24,
+      "revenue": 39399.22,
+      "orders": 24,
+      "customers": 24,
+      "top_sku": "IE5836-3",
+      "top_variants": [
+        "36 (11)",
+        "37 (5)",
+        "38 (4)",
+        "35 (2)",
+        "34 (1)"
+      ],
+      "vendor": "LK Sneakers",
+      "last_sold": "2025-02-07T02:07:00+00:00"
+    },
+    {
+      "title": "Tênis Nike Moon Shoe SP Jacquemus University Red Vermelho",
+      "units": 22,
+      "revenue": 120799.8,
+      "orders": 20,
+      "customers": 20,
+      "top_sku": "HV8547-600-4",
+      "top_variants": [
+        "37 (4)",
+        "38 (4)",
+        "35 (3)",
+        "36 (3)",
+        "40 (2)"
+      ],
+      "vendor": "Jacquemus x Nike",
+      "last_sold": "2026-04-15T15:48:52+00:00"
+    },
+    {
+      "title": "Slide Nike Mind 001 Black Chrome Preto",
+      "units": 22,
+      "revenue": 67699.78,
+      "orders": 21,
+      "customers": 19,
+      "top_sku": "HQ4307-001-10",
+      "top_variants": [
+        "43 (5)",
+        "44 (3)",
+        "38 (3)",
+        "45 (3)",
+        "46 (2)"
+      ],
+      "vendor": "Nike",
+      "last_sold": "2026-04-02T17:45:00+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger México 66 SD Birch Peacoat Bege",
+      "units": 22,
+      "revenue": 54599.78,
+      "orders": 21,
+      "customers": 21,
+      "top_sku": "1183A872200-4",
+      "top_variants": [
+        "37 (4)",
+        "36 (4)",
+        "38 (4)",
+        "39 (3)",
+        "35 (2)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-02-03T12:28:58+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 White Blue Branco",
+      "units": 22,
+      "revenue": 51899.78,
+      "orders": 21,
+      "customers": 21,
+      "top_sku": "1183C102100",
+      "top_variants": [
+        "36 (6)",
+        "35 (4)",
+        "38 (3)",
+        "39 (2)",
+        "37 (2)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-11T16:44:45+00:00"
+    },
+    {
+      "title": "Tênis Nike Vomero Premium Black Volt Preto",
+      "units": 21,
+      "revenue": 87999.79,
+      "orders": 21,
+      "customers": 21,
+      "top_sku": "HQ2050-001-10",
+      "top_variants": [
+        "43 (6)",
+        "42 (6)",
+        "41 (3)",
+        "40 (2)",
+        "40.5 (1)"
+      ],
+      "vendor": "Nike",
+      "last_sold": "2026-04-06T14:22:03+00:00"
+    },
+    {
+      "title": "Tênis Nike Vomero Premium Sail Coconut Milk Branco",
+      "units": 21,
+      "revenue": 85499.79,
+      "orders": 21,
+      "customers": 21,
+      "top_sku": "IQ4035-100-10",
+      "top_variants": [
+        "43 (6)",
+        "41 (6)",
+        "42 (4)",
+        "40 (2)",
+        "44 (1)"
+      ],
+      "vendor": "Nike",
+      "last_sold": "2026-03-31T20:16:56+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Birch Green Branco",
+      "units": 21,
+      "revenue": 50099.79,
+      "orders": 21,
+      "customers": 21,
+      "top_sku": "DL4081684",
+      "top_variants": [
+        "35 (6)",
+        "38 (3)",
+        "36 (3)",
+        "43 (2)",
+        "37 (2)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-02T15:13:54+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger México 66 Brich Peacoat Bege",
+      "units": 21,
+      "revenue": 45099.79,
+      "orders": 21,
+      "customers": 21,
+      "top_sku": "1183C102",
+      "top_variants": [
+        "37 (5)",
+        "36 (5)",
+        "40 (4)",
+        "38 (3)",
+        "39 (1)"
+      ],
+      "vendor": "Asics",
+      "last_sold": "2025-06-02T14:33:26+00:00"
+    },
+    {
+      "title": "Tênis adidas Samba Og Off White Cyber Metallic Branco",
+      "units": 21,
+      "revenue": 32149.79,
+      "orders": 21,
+      "customers": 21,
+      "top_sku": "IG1964",
+      "top_variants": [
+        "37 (8)",
+        "36 (5)",
+        "38 (4)",
+        "35 (2)",
+        "34 (1)"
+      ],
+      "vendor": "Adidas",
+      "last_sold": "2025-10-10T20:16:54+00:00"
+    }
+  ],
+  "top_products_by_revenue": [
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "units": 137,
+      "revenue": 319798.63,
+      "orders": 134,
+      "customers": 134,
+      "top_sku": "1183C102 751",
+      "top_variants": [
+        "37 (28)",
+        "39 (18)",
+        "38 (15)",
+        "35 (14)",
+        "40 (11)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-14T13:33:38+00:00"
+    },
+    {
+      "title": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "units": 93,
+      "revenue": 258599.07,
+      "orders": 90,
+      "customers": 89,
+      "top_sku": "U204LMMA-5",
+      "top_variants": [
+        "38 (20)",
+        "37 (19)",
+        "36 (17)",
+        "39 (10)",
+        "35 (10)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-16T01:29:58+00:00"
+    },
+    {
+      "title": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+      "units": 102,
+      "revenue": 257688.98,
+      "orders": 99,
+      "customers": 98,
+      "top_sku": "U9060WHT",
+      "top_variants": [
+        "37 (27)",
+        "36 (24)",
+        "35 (15)",
+        "38 (12)",
+        "34 (9)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-14T23:35:51+00:00"
+    },
+    {
+      "title": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "units": 46,
+      "revenue": 228899.55,
+      "orders": 46,
+      "customers": 46,
+      "top_sku": "HV8547-700-6",
+      "top_variants": [
+        "39 (9)",
+        "38 (8)",
+        "37 (7)",
+        "36 (6)",
+        "40 (6)"
+      ],
+      "vendor": "Jacquemus x Nike",
+      "last_sold": "2026-04-11T13:36:45+00:00"
+    },
+    {
+      "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "units": 39,
+      "revenue": 194999.61,
+      "orders": 39,
+      "customers": 39,
+      "top_sku": "HV8547-002-38",
+      "top_variants": [
+        "37 (9)",
+        "38 (8)",
+        "36 (5)",
+        "37.5 (4)",
+        "35 (4)"
+      ],
+      "vendor": "Jacquemus x Nike",
+      "last_sold": "2026-04-14T20:24:55+00:00"
+    },
+    {
+      "title": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "units": 65,
+      "revenue": 177199.35,
+      "orders": 62,
+      "customers": 62,
+      "top_sku": "U204LMMC-3",
+      "top_variants": [
+        "36 (18)",
+        "37 (12)",
+        "38 (11)",
+        "35 (9)",
+        "39 (7)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-12T10:30:32+00:00"
+    },
+    {
+      "title": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "units": 79,
+      "revenue": 169599.21,
+      "orders": 74,
+      "customers": 73,
+      "top_sku": "JR9446-4",
+      "top_variants": [
+        "37 (17)",
+        "35 (16)",
+        "36 (15)",
+        "38 (11)",
+        "39 (8)"
+      ],
+      "vendor": "Adidas",
+      "last_sold": "2026-03-02T15:22:19+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege",
+      "units": 63,
+      "revenue": 156199.37,
+      "orders": 59,
+      "customers": 59,
+      "top_sku": "1183C015-202-3",
+      "top_variants": [
+        "36 (17)",
+        "37 (12)",
+        "35 (11)",
+        "38 (7)",
+        "39 (7)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-13T18:57:26+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "units": 61,
+      "revenue": 150799.39,
+      "orders": 59,
+      "customers": 57,
+      "top_sku": "1183C015101",
+      "top_variants": [
+        "36 (14)",
+        "37 (11)",
+        "38 (10)",
+        "35 (8)",
+        "40 (6)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-10T15:25:30+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger México 66 Birch Peacoat Bege",
+      "units": 60,
+      "revenue": 142699.4,
+      "orders": 56,
+      "customers": 56,
+      "top_sku": "1183C102-5",
+      "top_variants": [
+        "38 (14)",
+        "37 (10)",
+        "36 (9)",
+        "40 (5)",
+        "41 (5)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-03-27T14:39:47+00:00"
+    },
+    {
+      "title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "units": 28,
+      "revenue": 140999.73,
+      "orders": 27,
+      "customers": 27,
+      "top_sku": "HV8547-001-6",
+      "top_variants": [
+        "39 (5)",
+        "35 (4)",
+        "41 (4)",
+        "40 (4)",
+        "36 (3)"
+      ],
+      "vendor": "Jacquemus x Nike",
+      "last_sold": "2026-04-09T00:48:58+00:00"
+    },
+    {
+      "title": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "units": 26,
+      "revenue": 129999.74,
+      "orders": 26,
+      "customers": 26,
+      "top_sku": "HV8547-200-38",
+      "top_variants": [
+        "36 (7)",
+        "38 (6)",
+        "37 (5)",
+        "35 (4)",
+        "39 (2)"
+      ],
+      "vendor": "Jacquemus x Nike",
+      "last_sold": "2026-04-13T10:58:23+00:00"
+    },
+    {
+      "title": "Tênis Nike Moon Shoe SP Jacquemus University Red Vermelho",
+      "units": 22,
+      "revenue": 120799.8,
+      "orders": 20,
+      "customers": 20,
+      "top_sku": "HV8547-600-4",
+      "top_variants": [
+        "37 (4)",
+        "38 (4)",
+        "35 (3)",
+        "36 (3)",
+        "40 (2)"
+      ],
+      "vendor": "Jacquemus x Nike",
+      "last_sold": "2026-04-15T15:48:52+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Black Orange Bege",
+      "units": 47,
+      "revenue": 115399.53,
+      "orders": 47,
+      "customers": 46,
+      "top_sku": "1183C015105",
+      "top_variants": [
+        "37 (9)",
+        "35 (5)",
+        "34 (4)",
+        "38 (4)",
+        "36 (4)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-01T17:57:20+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "units": 46,
+      "revenue": 109599.54,
+      "orders": 46,
+      "customers": 45,
+      "top_sku": "1183A201-126-4",
+      "top_variants": [
+        "37 (10)",
+        "36 (9)",
+        "38 (6)",
+        "35 (6)",
+        "40 (4)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-11T13:19:12+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo",
+      "units": 42,
+      "revenue": 101249.58,
+      "orders": 41,
+      "customers": 41,
+      "top_sku": "183A872",
+      "top_variants": [
+        "38 (9)",
+        "39 (7)",
+        "35 (4)",
+        "41 (4)",
+        "36 (4)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-13T00:12:28+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege",
+      "units": 40,
+      "revenue": 99499.6,
+      "orders": 38,
+      "customers": 38,
+      "top_sku": "1183A872.101-5",
+      "top_variants": [
+        "38 (7)",
+        "36 (7)",
+        "35 (4)",
+        "37 (4)",
+        "41 (3)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-16T19:58:34+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "units": 45,
+      "revenue": 98999.55,
+      "orders": 44,
+      "customers": 44,
+      "top_sku": "1183C123.252-4",
+      "top_variants": [
+        "37 (16)",
+        "38 (7)",
+        "39 (7)",
+        "35 (5)",
+        "40 (4)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-16T20:07:30+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+      "units": 42,
+      "revenue": 98399.58,
+      "orders": 40,
+      "customers": 40,
+      "top_sku": "1183C102250",
+      "top_variants": [
+        "36 (8)",
+        "37 (7)",
+        "36.5 (5)",
+        "39 (5)",
+        "41 (5)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-09T16:43:55+00:00"
+    },
+    {
+      "title": "Slide Nike Mind 001 Light Smoke Grey Cinza",
+      "units": 31,
+      "revenue": 93799.69,
+      "orders": 25,
+      "customers": 25,
+      "top_sku": "HQ4307-003-4",
+      "top_variants": [
+        "37 (5)",
+        "43 (5)",
+        "44 (3)",
+        "36 (3)",
+        "39 (2)"
+      ],
+      "vendor": "Nike",
+      "last_sold": "2026-04-09T21:03:50+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Birch Metropolis Bege",
+      "units": 37,
+      "revenue": 91699.63,
+      "orders": 37,
+      "customers": 36,
+      "top_sku": "1183C015200",
+      "top_variants": [
+        "36 (6)",
+        "37 (6)",
+        "38 (5)",
+        "36.5 (4)",
+        "35 (3)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-04T18:44:35+00:00"
+    },
+    {
+      "title": "Tênis adidas Samba OG White Black Gum Branco",
+      "units": 67,
+      "revenue": 88799.03,
+      "orders": 67,
+      "customers": 67,
+      "top_sku": "B75806-3",
+      "top_variants": [
+        "36 (23)",
+        "37 (16)",
+        "34 (11)",
+        "35 (9)",
+        "38 (7)"
+      ],
+      "vendor": "LK.Sneakers",
+      "last_sold": "2024-10-16T19:35:31+00:00"
+    },
+    {
+      "title": "Tênis Nike Vomero Premium Black Volt Preto",
+      "units": 21,
+      "revenue": 87999.79,
+      "orders": 21,
+      "customers": 21,
+      "top_sku": "HQ2050-001-10",
+      "top_variants": [
+        "43 (6)",
+        "42 (6)",
+        "41 (3)",
+        "40 (2)",
+        "40.5 (1)"
+      ],
+      "vendor": "Nike",
+      "last_sold": "2026-04-06T14:22:03+00:00"
+    },
+    {
+      "title": "Tênis Nike Dunk Low Cacao Wow Marrom",
+      "units": 54,
+      "revenue": 87599.49,
+      "orders": 54,
+      "customers": 52,
+      "top_sku": "DD15031241",
+      "top_variants": [
+        "36 (12)",
+        "37 (10)",
+        "38 (9)",
+        "35 (5)",
+        "37.5 (4)"
+      ],
+      "vendor": "Nike",
+      "last_sold": "2026-01-26T20:06:02+00:00"
+    },
+    {
+      "title": "Tênis New Balance 9060 Mushroom Arid Stone Bege",
+      "units": 32,
+      "revenue": 86399.68,
+      "orders": 30,
+      "customers": 29,
+      "top_sku": "U9060ERC-4",
+      "top_variants": [
+        "37 (9)",
+        "38 (9)",
+        "36 (7)",
+        "35 (4)",
+        "39 (2)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-05T18:20:01+00:00"
+    },
+    {
+      "title": "Tênis Nike Vomero Premium Sail Coconut Milk Branco",
+      "units": 21,
+      "revenue": 85499.79,
+      "orders": 21,
+      "customers": 21,
+      "top_sku": "IQ4035-100-10",
+      "top_variants": [
+        "43 (6)",
+        "41 (6)",
+        "42 (4)",
+        "40 (2)",
+        "44 (1)"
+      ],
+      "vendor": "Nike",
+      "last_sold": "2026-03-31T20:16:56+00:00"
+    },
+    {
+      "title": "Tênis New Balance 9060 Sea Salt Concrete Branco",
+      "units": 31,
+      "revenue": 79799.69,
+      "orders": 31,
+      "customers": 31,
+      "top_sku": "U9060ECA",
+      "top_variants": [
+        "36 (12)",
+        "38 (8)",
+        "37 (7)",
+        "35 (3)",
+        "34 (1)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-03-05T19:30:33+00:00"
+    },
+    {
+      "title": "Tenis New Balance 9060 Sea Salt Raincloud Cinza",
+      "units": 31,
+      "revenue": 76499.69,
+      "orders": 31,
+      "customers": 31,
+      "top_sku": "U9060ZGF",
+      "top_variants": [
+        "36 (8)",
+        "37 (5)",
+        "35 (5)",
+        "39 (4)",
+        "42 (2)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-15T02:15:07+00:00"
+    },
+    {
+      "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+      "units": 30,
+      "revenue": 71999.7,
+      "orders": 27,
+      "customers": 27,
+      "top_sku": "U9060CCB-3",
+      "top_variants": [
+        "36 (10)",
+        "37 (8)",
+        "38 (4)",
+        "34 (3)",
+        "35 (3)"
+      ],
+      "vendor": "New Balance",
+      "last_sold": "2026-04-13T18:30:37+00:00"
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+      "units": 30,
+      "revenue": 70099.71,
+      "orders": 30,
+      "customers": 30,
+      "top_sku": "1183B566021",
+      "top_variants": [
+        "38 (6)",
+        "35 (6)",
+        "36 (6)",
+        "37 (4)",
+        "39 (3)"
+      ],
+      "vendor": "Onitsuka Tiger",
+      "last_sold": "2026-04-11T16:44:45+00:00"
+    }
+  ],
+  "crm_priorities_by_best_seller": [
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "product_rank_units": 4,
+      "anchor_units_total": 93,
+      "anchor_revenue_total": 258599.07,
+      "customers_in_queue": 11,
+      "top_variants": [
+        "38 (20)",
+        "37 (19)",
+        "36 (17)",
+        "39 (10)",
+        "35 (10)"
+      ],
+      "last_sold": "2026-04-16T01:29:58+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "product_rank_units": 1,
+      "anchor_units_total": 137,
+      "anchor_revenue_total": 319798.63,
+      "customers_in_queue": 9,
+      "top_variants": [
+        "37 (28)",
+        "39 (18)",
+        "38 (15)",
+        "35 (14)",
+        "40 (11)"
+      ],
+      "last_sold": "2026-04-14T13:33:38+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Jason Markk Repel Spray Impermeabilizante",
+      "product_rank_units": 2,
+      "anchor_units_total": 128,
+      "anchor_revenue_total": 21758.72,
+      "customers_in_queue": 9,
+      "top_variants": [],
+      "last_sold": "2026-03-31T16:50:26+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "product_rank_units": 8,
+      "anchor_units_total": 65,
+      "anchor_revenue_total": 177199.35,
+      "customers_in_queue": 8,
+      "top_variants": [
+        "36 (18)",
+        "37 (12)",
+        "38 (11)",
+        "35 (9)",
+        "39 (7)"
+      ],
+      "last_sold": "2026-04-12T10:30:32+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "product_rank_units": 8,
+      "anchor_units_total": 65,
+      "anchor_revenue_total": 177199.35,
+      "customers_in_queue": 7,
+      "top_variants": [
+        "36 (18)",
+        "37 (12)",
+        "38 (11)",
+        "35 (9)",
+        "39 (7)"
+      ],
+      "last_sold": "2026-04-12T10:30:32+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "product_rank_units": 14,
+      "anchor_units_total": 46,
+      "anchor_revenue_total": 228899.55,
+      "customers_in_queue": 7,
+      "top_variants": [
+        "39 (9)",
+        "38 (8)",
+        "37 (7)",
+        "36 (6)",
+        "40 (6)"
+      ],
+      "last_sold": "2026-04-11T13:36:45+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "product_rank_units": 1,
+      "anchor_units_total": 137,
+      "anchor_revenue_total": 319798.63,
+      "customers_in_queue": 6,
+      "top_variants": [
+        "37 (28)",
+        "39 (18)",
+        "38 (15)",
+        "35 (14)",
+        "40 (11)"
+      ],
+      "last_sold": "2026-04-14T13:33:38+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "product_rank_units": 4,
+      "anchor_units_total": 93,
+      "anchor_revenue_total": 258599.07,
+      "customers_in_queue": 5,
+      "top_variants": [
+        "38 (20)",
+        "37 (19)",
+        "36 (17)",
+        "39 (10)",
+        "35 (10)"
+      ],
+      "last_sold": "2026-04-16T01:29:58+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "product_rank_units": 6,
+      "anchor_units_total": 79,
+      "anchor_revenue_total": 169599.21,
+      "customers_in_queue": 4,
+      "top_variants": [
+        "37 (17)",
+        "35 (16)",
+        "36 (15)",
+        "38 (11)",
+        "39 (8)"
+      ],
+      "last_sold": "2026-03-02T15:22:19+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "product_rank_units": 15,
+      "anchor_units_total": 46,
+      "anchor_revenue_total": 109599.54,
+      "customers_in_queue": 4,
+      "top_variants": [
+        "37 (10)",
+        "36 (9)",
+        "38 (6)",
+        "35 (6)",
+        "40 (4)"
+      ],
+      "last_sold": "2026-04-11T13:19:12+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "product_rank_units": 10,
+      "anchor_units_total": 61,
+      "anchor_revenue_total": 150799.39,
+      "customers_in_queue": 3,
+      "top_variants": [
+        "36 (14)",
+        "37 (11)",
+        "38 (10)",
+        "35 (8)",
+        "40 (6)"
+      ],
+      "last_sold": "2026-04-10T15:25:30+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "product_rank_units": 14,
+      "anchor_units_total": 46,
+      "anchor_revenue_total": 228899.55,
+      "customers_in_queue": 3,
+      "top_variants": [
+        "39 (9)",
+        "38 (8)",
+        "37 (7)",
+        "36 (6)",
+        "40 (6)"
+      ],
+      "last_sold": "2026-04-11T13:36:45+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege",
+      "product_rank_units": 20,
+      "anchor_units_total": 40,
+      "anchor_revenue_total": 99499.6,
+      "customers_in_queue": 3,
+      "top_variants": [
+        "38 (7)",
+        "36 (7)",
+        "35 (4)",
+        "37 (4)",
+        "41 (3)"
+      ],
+      "last_sold": "2026-04-16T19:58:34+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Jason Markk Repel Spray Impermeabilizante",
+      "product_rank_units": 2,
+      "anchor_units_total": 128,
+      "anchor_revenue_total": 21758.72,
+      "customers_in_queue": 2,
+      "top_variants": [],
+      "last_sold": "2026-03-31T16:50:26+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+      "product_rank_units": 3,
+      "anchor_units_total": 102,
+      "anchor_revenue_total": 257688.98,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "37 (27)",
+        "36 (24)",
+        "35 (15)",
+        "38 (12)",
+        "34 (9)"
+      ],
+      "last_sold": "2026-04-14T23:35:51+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+      "product_rank_units": 3,
+      "anchor_units_total": 102,
+      "anchor_revenue_total": 257688.98,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "37 (27)",
+        "36 (24)",
+        "35 (15)",
+        "38 (12)",
+        "34 (9)"
+      ],
+      "last_sold": "2026-04-14T23:35:51+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege",
+      "product_rank_units": 9,
+      "anchor_units_total": 63,
+      "anchor_revenue_total": 156199.37,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "36 (17)",
+        "37 (12)",
+        "35 (11)",
+        "38 (7)",
+        "39 (7)"
+      ],
+      "last_sold": "2026-04-13T18:57:26+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "product_rank_units": 10,
+      "anchor_units_total": 61,
+      "anchor_revenue_total": 150799.39,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "36 (14)",
+        "37 (11)",
+        "38 (10)",
+        "35 (8)",
+        "40 (6)"
+      ],
+      "last_sold": "2026-04-10T15:25:30+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger México 66 Birch Peacoat Bege",
+      "product_rank_units": 11,
+      "anchor_units_total": 60,
+      "anchor_revenue_total": 142699.4,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "38 (14)",
+        "37 (10)",
+        "36 (9)",
+        "40 (5)",
+        "41 (5)"
+      ],
+      "last_sold": "2026-03-27T14:39:47+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "product_rank_units": 16,
+      "anchor_units_total": 45,
+      "anchor_revenue_total": 98999.55,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "37 (16)",
+        "38 (7)",
+        "39 (7)",
+        "35 (5)",
+        "40 (4)"
+      ],
+      "last_sold": "2026-04-16T20:07:30+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo",
+      "product_rank_units": 18,
+      "anchor_units_total": 42,
+      "anchor_revenue_total": 101249.58,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "38 (9)",
+        "39 (7)",
+        "35 (4)",
+        "41 (4)",
+        "36 (4)"
+      ],
+      "last_sold": "2026-04-13T00:12:28+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+      "product_rank_units": 19,
+      "anchor_units_total": 42,
+      "anchor_revenue_total": 98399.58,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "36 (8)",
+        "37 (7)",
+        "36.5 (5)",
+        "39 (5)",
+        "41 (5)"
+      ],
+      "last_sold": "2026-04-09T16:43:55+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege",
+      "product_rank_units": 20,
+      "anchor_units_total": 40,
+      "anchor_revenue_total": 99499.6,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "38 (7)",
+        "36 (7)",
+        "35 (4)",
+        "37 (4)",
+        "41 (3)"
+      ],
+      "last_sold": "2026-04-16T19:58:34+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Jason Markk Essential Kit de Limpeza",
+      "product_rank_units": 5,
+      "anchor_units_total": 88,
+      "anchor_revenue_total": 17599.12,
+      "customers_in_queue": 1,
+      "top_variants": [],
+      "last_sold": "2026-04-11T20:04:23+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Jason Markk Essential Kit de Limpeza",
+      "product_rank_units": 5,
+      "anchor_units_total": 88,
+      "anchor_revenue_total": 17599.12,
+      "customers_in_queue": 1,
+      "top_variants": [],
+      "last_sold": "2026-04-11T20:04:23+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege",
+      "product_rank_units": 9,
+      "anchor_units_total": 63,
+      "anchor_revenue_total": 156199.37,
+      "customers_in_queue": 1,
+      "top_variants": [
+        "36 (17)",
+        "37 (12)",
+        "35 (11)",
+        "38 (7)",
+        "39 (7)"
+      ],
+      "last_sold": "2026-04-13T18:57:26+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Onitsuka Tiger México 66 Birch Peacoat Bege",
+      "product_rank_units": 11,
+      "anchor_units_total": 60,
+      "anchor_revenue_total": 142699.4,
+      "customers_in_queue": 1,
+      "top_variants": [
+        "38 (14)",
+        "37 (10)",
+        "36 (9)",
+        "40 (5)",
+        "41 (5)"
+      ],
+      "last_sold": "2026-03-27T14:39:47+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Nike Dunk Low Cacao Wow Marrom",
+      "product_rank_units": 12,
+      "anchor_units_total": 54,
+      "anchor_revenue_total": 87599.49,
+      "customers_in_queue": 1,
+      "top_variants": [
+        "36 (12)",
+        "37 (10)",
+        "38 (9)",
+        "35 (5)",
+        "37.5 (4)"
+      ],
+      "last_sold": "2026-01-26T20:06:02+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "product_rank_units": 15,
+      "anchor_units_total": 46,
+      "anchor_revenue_total": 109599.54,
+      "customers_in_queue": 1,
+      "top_variants": [
+        "37 (10)",
+        "36 (9)",
+        "38 (6)",
+        "35 (6)",
+        "40 (4)"
+      ],
+      "last_sold": "2026-04-11T13:19:12+00:00",
+      "recommended_action": "concierge/VIP com variações do mesmo best-seller ou entrada antecipada; sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo",
+      "product_rank_units": 18,
+      "anchor_units_total": 42,
+      "anchor_revenue_total": 101249.58,
+      "customers_in_queue": 1,
+      "top_variants": [
+        "38 (9)",
+        "39 (7)",
+        "35 (4)",
+        "41 (4)",
+        "36 (4)"
+      ],
+      "last_sold": "2026-04-13T00:12:28+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "product_rank_units": 1,
+      "anchor_units_total": 137,
+      "anchor_revenue_total": 319798.63,
+      "customers_in_queue": 94,
+      "top_variants": [
+        "37 (28)",
+        "39 (18)",
+        "38 (15)",
+        "35 (14)",
+        "40 (11)"
+      ],
+      "last_sold": "2026-04-14T13:33:38+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Jason Markk Repel Spray Impermeabilizante",
+      "product_rank_units": 2,
+      "anchor_units_total": 128,
+      "anchor_revenue_total": 21758.72,
+      "customers_in_queue": 86,
+      "top_variants": [],
+      "last_sold": "2026-03-31T16:50:26+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+      "product_rank_units": 3,
+      "anchor_units_total": 102,
+      "anchor_revenue_total": 257688.98,
+      "customers_in_queue": 85,
+      "top_variants": [
+        "37 (27)",
+        "36 (24)",
+        "35 (15)",
+        "38 (12)",
+        "34 (9)"
+      ],
+      "last_sold": "2026-04-14T23:35:51+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "product_rank_units": 4,
+      "anchor_units_total": 93,
+      "anchor_revenue_total": 258599.07,
+      "customers_in_queue": 51,
+      "top_variants": [
+        "38 (20)",
+        "37 (19)",
+        "36 (17)",
+        "39 (10)",
+        "35 (10)"
+      ],
+      "last_sold": "2026-04-16T01:29:58+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege",
+      "product_rank_units": 9,
+      "anchor_units_total": 63,
+      "anchor_revenue_total": 156199.37,
+      "customers_in_queue": 42,
+      "top_variants": [
+        "36 (17)",
+        "37 (12)",
+        "35 (11)",
+        "38 (7)",
+        "39 (7)"
+      ],
+      "last_sold": "2026-04-13T18:57:26+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Onitsuka Tiger México 66 Birch Peacoat Bege",
+      "product_rank_units": 11,
+      "anchor_units_total": 60,
+      "anchor_revenue_total": 142699.4,
+      "customers_in_queue": 41,
+      "top_variants": [
+        "38 (14)",
+        "37 (10)",
+        "36 (9)",
+        "40 (5)",
+        "41 (5)"
+      ],
+      "last_sold": "2026-03-27T14:39:47+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "product_rank_units": 10,
+      "anchor_units_total": 61,
+      "anchor_revenue_total": 150799.39,
+      "customers_in_queue": 37,
+      "top_variants": [
+        "36 (14)",
+        "37 (11)",
+        "38 (10)",
+        "35 (8)",
+        "40 (6)"
+      ],
+      "last_sold": "2026-04-10T15:25:30+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Black Orange Bege",
+      "product_rank_units": 13,
+      "anchor_units_total": 47,
+      "anchor_revenue_total": 115399.53,
+      "customers_in_queue": 37,
+      "top_variants": [
+        "37 (9)",
+        "35 (5)",
+        "34 (4)",
+        "38 (4)",
+        "36 (4)"
+      ],
+      "last_sold": "2026-04-01T17:57:20+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "product_rank_units": 6,
+      "anchor_units_total": 79,
+      "anchor_revenue_total": 169599.21,
+      "customers_in_queue": 31,
+      "top_variants": [
+        "37 (17)",
+        "35 (16)",
+        "36 (15)",
+        "38 (11)",
+        "39 (8)"
+      ],
+      "last_sold": "2026-03-02T15:22:19+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo",
+      "product_rank_units": 18,
+      "anchor_units_total": 42,
+      "anchor_revenue_total": 101249.58,
+      "customers_in_queue": 27,
+      "top_variants": [
+        "38 (9)",
+        "39 (7)",
+        "35 (4)",
+        "41 (4)",
+        "36 (4)"
+      ],
+      "last_sold": "2026-04-13T00:12:28+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+      "product_rank_units": 19,
+      "anchor_units_total": 42,
+      "anchor_revenue_total": 98399.58,
+      "customers_in_queue": 26,
+      "top_variants": [
+        "36 (8)",
+        "37 (7)",
+        "36.5 (5)",
+        "39 (5)",
+        "41 (5)"
+      ],
+      "last_sold": "2026-04-09T16:43:55+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "product_rank_units": 15,
+      "anchor_units_total": 46,
+      "anchor_revenue_total": 109599.54,
+      "customers_in_queue": 25,
+      "top_variants": [
+        "37 (10)",
+        "36 (9)",
+        "38 (6)",
+        "35 (6)",
+        "40 (4)"
+      ],
+      "last_sold": "2026-04-11T13:19:12+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "product_rank_units": 14,
+      "anchor_units_total": 46,
+      "anchor_revenue_total": 228899.55,
+      "customers_in_queue": 22,
+      "top_variants": [
+        "39 (9)",
+        "38 (8)",
+        "37 (7)",
+        "36 (6)",
+        "40 (6)"
+      ],
+      "last_sold": "2026-04-11T13:36:45+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "product_rank_units": 8,
+      "anchor_units_total": 65,
+      "anchor_revenue_total": 177199.35,
+      "customers_in_queue": 20,
+      "top_variants": [
+        "36 (18)",
+        "37 (12)",
+        "38 (11)",
+        "35 (9)",
+        "39 (7)"
+      ],
+      "last_sold": "2026-04-12T10:30:32+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "product_rank_units": 16,
+      "anchor_units_total": 45,
+      "anchor_revenue_total": 98999.55,
+      "customers_in_queue": 20,
+      "top_variants": [
+        "37 (16)",
+        "38 (7)",
+        "39 (7)",
+        "35 (5)",
+        "40 (4)"
+      ],
+      "last_sold": "2026-04-16T20:07:30+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Jason Markk Essential Kit de Limpeza",
+      "product_rank_units": 5,
+      "anchor_units_total": 88,
+      "anchor_revenue_total": 17599.12,
+      "customers_in_queue": 19,
+      "top_variants": [],
+      "last_sold": "2026-04-11T20:04:23+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege",
+      "product_rank_units": 20,
+      "anchor_units_total": 40,
+      "anchor_revenue_total": 99499.6,
+      "customers_in_queue": 16,
+      "top_variants": [
+        "38 (7)",
+        "36 (7)",
+        "35 (4)",
+        "37 (4)",
+        "41 (3)"
+      ],
+      "last_sold": "2026-04-16T19:58:34+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Birch Metropolis Bege",
+      "product_rank_units": 22,
+      "anchor_units_total": 37,
+      "anchor_revenue_total": 91699.63,
+      "customers_in_queue": 13,
+      "top_variants": [
+        "36 (6)",
+        "37 (6)",
+        "38 (5)",
+        "36.5 (4)",
+        "35 (3)"
+      ],
+      "last_sold": "2026-04-04T18:44:35+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "product_rank_units": 4,
+      "anchor_units_total": 93,
+      "anchor_revenue_total": 258599.07,
+      "customers_in_queue": 11,
+      "top_variants": [
+        "38 (20)",
+        "37 (19)",
+        "36 (17)",
+        "39 (10)",
+        "35 (10)"
+      ],
+      "last_sold": "2026-04-16T01:29:58+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis adidas Samba OG White Black Gum Branco",
+      "product_rank_units": 7,
+      "anchor_units_total": 67,
+      "anchor_revenue_total": 88799.03,
+      "customers_in_queue": 11,
+      "top_variants": [
+        "36 (23)",
+        "37 (16)",
+        "34 (11)",
+        "35 (9)",
+        "38 (7)"
+      ],
+      "last_sold": "2024-10-16T19:35:31+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Nike Dunk Low Cacao Wow Marrom",
+      "product_rank_units": 12,
+      "anchor_units_total": 54,
+      "anchor_revenue_total": 87599.49,
+      "customers_in_queue": 11,
+      "top_variants": [
+        "36 (12)",
+        "37 (10)",
+        "38 (9)",
+        "35 (5)",
+        "37.5 (4)"
+      ],
+      "last_sold": "2026-01-26T20:06:02+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "The Peptide Lip Tints Rhode Multicolor",
+      "product_rank_units": 17,
+      "anchor_units_total": 43,
+      "anchor_revenue_total": 12899.57,
+      "customers_in_queue": 10,
+      "top_variants": [
+        "Espresso Rich Brown (8)",
+        "Toast (7)",
+        "Raspberry Jelly (7)",
+        "Vanilla (5)",
+        "Sheer Pink (5)"
+      ],
+      "last_sold": "2026-02-19T22:05:22+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis New Balance 9060 Mushroom Arid Stone Bege",
+      "product_rank_units": 24,
+      "anchor_units_total": 32,
+      "anchor_revenue_total": 86399.68,
+      "customers_in_queue": 10,
+      "top_variants": [
+        "37 (9)",
+        "38 (9)",
+        "36 (7)",
+        "35 (4)",
+        "39 (2)"
+      ],
+      "last_sold": "2026-04-05T18:20:01+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "product_rank_units": 1,
+      "anchor_units_total": 137,
+      "anchor_revenue_total": 319798.63,
+      "customers_in_queue": 8,
+      "top_variants": [
+        "37 (28)",
+        "39 (18)",
+        "38 (15)",
+        "35 (14)",
+        "40 (11)"
+      ],
+      "last_sold": "2026-04-14T13:33:38+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Jason Markk Repel Spray Impermeabilizante",
+      "product_rank_units": 2,
+      "anchor_units_total": 128,
+      "anchor_revenue_total": 21758.72,
+      "customers_in_queue": 7,
+      "top_variants": [],
+      "last_sold": "2026-03-31T16:50:26+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis adidas Samba OG Cream White Core Black Bege",
+      "product_rank_units": 25,
+      "anchor_units_total": 32,
+      "anchor_revenue_total": 51748.06,
+      "customers_in_queue": 7,
+      "top_variants": [
+        "37 (7)",
+        "35 (7)",
+        "36 (5)",
+        "38 (5)",
+        "39 (5)"
+      ],
+      "last_sold": "2025-09-05T21:46:40+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis adidas SL 72 Og Maroon Almost Yellow Marrom",
+      "product_rank_units": 23,
+      "anchor_units_total": 33,
+      "anchor_revenue_total": 53649.68,
+      "customers_in_queue": 6,
+      "top_variants": [
+        "36 (12)",
+        "37 (8)",
+        "35 (6)",
+        "39 (4)",
+        "38 (3)"
+      ],
+      "last_sold": "2026-04-14T13:33:38+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "product_rank_units": 8,
+      "anchor_units_total": 65,
+      "anchor_revenue_total": 177199.35,
+      "customers_in_queue": 3,
+      "top_variants": [
+        "36 (18)",
+        "37 (12)",
+        "38 (11)",
+        "35 (9)",
+        "39 (7)"
+      ],
+      "last_sold": "2026-04-12T10:30:32+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "product_rank_units": 10,
+      "anchor_units_total": 61,
+      "anchor_revenue_total": 150799.39,
+      "customers_in_queue": 3,
+      "top_variants": [
+        "36 (14)",
+        "37 (11)",
+        "38 (10)",
+        "35 (8)",
+        "40 (6)"
+      ],
+      "last_sold": "2026-04-10T15:25:30+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege",
+      "product_rank_units": 20,
+      "anchor_units_total": 40,
+      "anchor_revenue_total": 99499.6,
+      "customers_in_queue": 3,
+      "top_variants": [
+        "38 (7)",
+        "36 (7)",
+        "35 (4)",
+        "37 (4)",
+        "41 (3)"
+      ],
+      "last_sold": "2026-04-16T19:58:34+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Birch Metropolis Bege",
+      "product_rank_units": 22,
+      "anchor_units_total": 37,
+      "anchor_revenue_total": 91699.63,
+      "customers_in_queue": 3,
+      "top_variants": [
+        "36 (6)",
+        "37 (6)",
+        "38 (5)",
+        "36.5 (4)",
+        "35 (3)"
+      ],
+      "last_sold": "2026-04-04T18:44:35+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+      "product_rank_units": 3,
+      "anchor_units_total": 102,
+      "anchor_revenue_total": 257688.98,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "37 (27)",
+        "36 (24)",
+        "35 (15)",
+        "38 (12)",
+        "34 (9)"
+      ],
+      "last_sold": "2026-04-14T23:35:51+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege",
+      "product_rank_units": 9,
+      "anchor_units_total": 63,
+      "anchor_revenue_total": 156199.37,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "36 (17)",
+        "37 (12)",
+        "35 (11)",
+        "38 (7)",
+        "39 (7)"
+      ],
+      "last_sold": "2026-04-13T18:57:26+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Black Orange Bege",
+      "product_rank_units": 13,
+      "anchor_units_total": 47,
+      "anchor_revenue_total": 115399.53,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "37 (9)",
+        "35 (5)",
+        "34 (4)",
+        "38 (4)",
+        "36 (4)"
+      ],
+      "last_sold": "2026-04-01T17:57:20+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "The Peptide Lip Tints Rhode Multicolor",
+      "product_rank_units": 17,
+      "anchor_units_total": 43,
+      "anchor_revenue_total": 12899.57,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "Espresso Rich Brown (8)",
+        "Toast (7)",
+        "Raspberry Jelly (7)",
+        "Vanilla (5)",
+        "Sheer Pink (5)"
+      ],
+      "last_sold": "2026-02-19T22:05:22+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+      "product_rank_units": 19,
+      "anchor_units_total": 42,
+      "anchor_revenue_total": 98399.58,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "36 (8)",
+        "37 (7)",
+        "36.5 (5)",
+        "39 (5)",
+        "41 (5)"
+      ],
+      "last_sold": "2026-04-09T16:43:55+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "product_rank_units": 21,
+      "anchor_units_total": 39,
+      "anchor_revenue_total": 194999.61,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "37 (9)",
+        "38 (8)",
+        "36 (5)",
+        "37.5 (4)",
+        "35 (4)"
+      ],
+      "last_sold": "2026-04-14T20:24:55+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis adidas SL 72 Og Maroon Almost Yellow Marrom",
+      "product_rank_units": 23,
+      "anchor_units_total": 33,
+      "anchor_revenue_total": 53649.68,
+      "customers_in_queue": 2,
+      "top_variants": [
+        "36 (12)",
+        "37 (8)",
+        "35 (6)",
+        "39 (4)",
+        "38 (3)"
+      ],
+      "last_sold": "2026-04-14T13:33:38+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Jason Markk Essential Kit de Limpeza",
+      "product_rank_units": 5,
+      "anchor_units_total": 88,
+      "anchor_revenue_total": 17599.12,
+      "customers_in_queue": 1,
+      "top_variants": [],
+      "last_sold": "2026-04-11T20:04:23+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "product_rank_units": 6,
+      "anchor_units_total": 79,
+      "anchor_revenue_total": 169599.21,
+      "customers_in_queue": 1,
+      "top_variants": [
+        "37 (17)",
+        "35 (16)",
+        "36 (15)",
+        "38 (11)",
+        "39 (8)"
+      ],
+      "last_sold": "2026-03-02T15:22:19+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "product_rank_units": 15,
+      "anchor_units_total": 46,
+      "anchor_revenue_total": 109599.54,
+      "customers_in_queue": 1,
+      "top_variants": [
+        "37 (10)",
+        "36 (9)",
+        "38 (6)",
+        "35 (6)",
+        "40 (4)"
+      ],
+      "last_sold": "2026-04-11T13:19:12+00:00",
+      "recommended_action": "reposição/novidade em torno do best-seller + cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "product_rank_units": 21,
+      "anchor_units_total": 39,
+      "anchor_revenue_total": 194999.61,
+      "customers_in_queue": 1,
+      "top_variants": [
+        "37 (9)",
+        "38 (8)",
+        "36 (5)",
+        "37.5 (4)",
+        "35 (4)"
+      ],
+      "last_sold": "2026-04-14T20:24:55+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "anchor_product": "Tênis adidas Samba OG White Black Gum Branco",
+      "product_rank_units": 7,
+      "anchor_units_total": 67,
+      "anchor_revenue_total": 88799.03,
+      "customers_in_queue": 56,
+      "top_variants": [
+        "36 (23)",
+        "37 (16)",
+        "34 (11)",
+        "35 (9)",
+        "38 (7)"
+      ],
+      "last_sold": "2024-10-16T19:35:31+00:00",
+      "recommended_action": "nurturing/winback leve baseado no best-seller já validado"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "anchor_product": "Tênis Nike Dunk Low Cacao Wow Marrom",
+      "product_rank_units": 12,
+      "anchor_units_total": 54,
+      "anchor_revenue_total": 87599.49,
+      "customers_in_queue": 39,
+      "top_variants": [
+        "36 (12)",
+        "37 (10)",
+        "38 (9)",
+        "35 (5)",
+        "37.5 (4)"
+      ],
+      "last_sold": "2026-01-26T20:06:02+00:00",
+      "recommended_action": "nurturing/winback leve baseado no best-seller já validado"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "anchor_product": "Tênis adidas Samba OG Cream White Core Black Bege",
+      "product_rank_units": 25,
+      "anchor_units_total": 32,
+      "anchor_revenue_total": 51748.06,
+      "customers_in_queue": 24,
+      "top_variants": [
+        "37 (7)",
+        "35 (7)",
+        "36 (5)",
+        "38 (5)",
+        "39 (5)"
+      ],
+      "last_sold": "2025-09-05T21:46:40+00:00",
+      "recommended_action": "nurturing/winback leve baseado no best-seller já validado"
+    },
+    {
+      "priority": "P3",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis New Balance 9060 Sea Salt Concrete Branco",
+      "product_rank_units": 27,
+      "anchor_units_total": 31,
+      "anchor_revenue_total": 79799.69,
+      "customers_in_queue": 24,
+      "top_variants": [
+        "36 (12)",
+        "38 (8)",
+        "37 (7)",
+        "35 (3)",
+        "34 (1)"
+      ],
+      "last_sold": "2026-03-05T19:30:33+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "anchor_product": "The Peptide Lip Tints Rhode Multicolor",
+      "product_rank_units": 17,
+      "anchor_units_total": 43,
+      "anchor_revenue_total": 12899.57,
+      "customers_in_queue": 20,
+      "top_variants": [
+        "Espresso Rich Brown (8)",
+        "Toast (7)",
+        "Raspberry Jelly (7)",
+        "Vanilla (5)",
+        "Sheer Pink (5)"
+      ],
+      "last_sold": "2026-02-19T22:05:22+00:00",
+      "recommended_action": "nurturing/winback leve baseado no best-seller já validado"
+    },
+    {
+      "priority": "P3",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "product_rank_units": 21,
+      "anchor_units_total": 39,
+      "anchor_revenue_total": 194999.61,
+      "customers_in_queue": 18,
+      "top_variants": [
+        "37 (9)",
+        "38 (8)",
+        "36 (5)",
+        "37.5 (4)",
+        "35 (4)"
+      ],
+      "last_sold": "2026-04-14T20:24:55+00:00",
+      "recommended_action": "segunda compra D+21/D+34 usando o best-seller comprado como âncora"
+    },
+    {
+      "priority": "P3",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tenis New Balance 9060 Sea Salt Raincloud Cinza",
+      "product_rank_units": 28,
+      "anchor_units_total": 31,
+      "anchor_revenue_total": 76499.69,
+      "customers_in_queue": 18,
+      "top_variants": [
+        "36 (8)",
+        "37 (5)",
+        "35 (5)",
+        "39 (4)",
+        "42 (2)"
+      ],
+      "last_sold": "2026-04-15T02:15:07+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    },
+    {
+      "priority": "P3",
+      "segment": "Alto valor esfriando",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+      "product_rank_units": 30,
+      "anchor_units_total": 30,
+      "anchor_revenue_total": 70099.71,
+      "customers_in_queue": 18,
+      "top_variants": [
+        "38 (6)",
+        "35 (6)",
+        "36 (6)",
+        "37 (4)",
+        "39 (3)"
+      ],
+      "last_sold": "2026-04-11T16:44:45+00:00",
+      "recommended_action": "reativação por novidade/variação do mesmo best-seller; evitar copy genérica"
+    }
+  ],
+  "anonymized_examples": {
+    "Base nurturing | Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege": [
+      {
+        "customer_ref": "50ad155648d4",
+        "rfm": "513",
+        "recency_days": 24,
+        "frequency": 1,
+        "monetary": 1980.0
+      },
+      {
+        "customer_ref": "c09a04c93a5b",
+        "rfm": "513",
+        "recency_days": 24,
+        "frequency": 1,
+        "monetary": 1980.0
+      },
+      {
+        "customer_ref": "43c1077e38fe",
+        "rfm": "413",
+        "recency_days": 38,
+        "frequency": 1,
+        "monetary": 2199.99
+      }
+    ],
+    "Base nurturing | Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege": [
+      {
+        "customer_ref": "e61c2ae15281",
+        "rfm": "513",
+        "recency_days": 24,
+        "frequency": 1,
+        "monetary": 2250.0
+      }
+    ],
+    "Champions/VIP | Tênis New Balance 204L Arid Timberwolf Bege": [
+      {
+        "customer_ref": "a53288e77ee2",
+        "rfm": "525",
+        "recency_days": 25,
+        "frequency": 2,
+        "monetary": 5599.98
+      },
+      {
+        "customer_ref": "05695c34693b",
+        "rfm": "545",
+        "recency_days": 29,
+        "frequency": 4,
+        "monetary": 11954.95
+      },
+      {
+        "customer_ref": "aa089e09997e",
+        "rfm": "525",
+        "recency_days": 30,
+        "frequency": 2,
+        "monetary": 6650.0
+      }
+    ],
+    "Novo alto potencial | Tênis New Balance 204L Mushroom Arid Stone Marrom": [
+      {
+        "customer_ref": "8cdd2ed03bd1",
+        "rfm": "515",
+        "recency_days": 25,
+        "frequency": 1,
+        "monetary": 5599.98
+      },
+      {
+        "customer_ref": "4b22a2955e42",
+        "rfm": "514",
+        "recency_days": 25,
+        "frequency": 1,
+        "monetary": 2799.99
+      },
+      {
+        "customer_ref": "e1bc6d6c32c5",
+        "rfm": "514",
+        "recency_days": 28,
+        "frequency": 1,
+        "monetary": 2799.99
+      }
+    ],
+    "Champions/VIP | Slide Nike Mind 001 Light Smoke Grey Cinza": [
+      {
+        "customer_ref": "8095fe21112e",
+        "rfm": "535",
+        "recency_days": 26,
+        "frequency": 3,
+        "monetary": 25113.74
+      },
+      {
+        "customer_ref": "de41d0e7954b",
+        "rfm": "425",
+        "recency_days": 45,
+        "frequency": 2,
+        "monetary": 5265.08
+      }
+    ],
+    "Base nurturing | Tenis New Balance 9060 Sea Salt Raincloud Cinza": [
+      {
+        "customer_ref": "9e96416ea05e",
+        "rfm": "513",
+        "recency_days": 26,
+        "frequency": 1,
+        "monetary": 2250.0
+      }
+    ],
+    "Base nurturing | Tênis New Balance 9060 Sea Salt Moonbeam Branco": [
+      {
+        "customer_ref": "83c4635da188",
+        "rfm": "513",
+        "recency_days": 26,
+        "frequency": 1,
+        "monetary": 2340.0
+      },
+      {
+        "customer_ref": "fe9aa4f7896e",
+        "rfm": "413",
+        "recency_days": 37,
+        "frequency": 1,
+        "monetary": 2340.0
+      }
+    ],
+    "Champions/VIP | Jason Markk Repel Spray Impermeabilizante": [
+      {
+        "customer_ref": "994600f0cda4",
+        "rfm": "524",
+        "recency_days": 26,
+        "frequency": 2,
+        "monetary": 3269.97
+      },
+      {
+        "customer_ref": "5bf80ca9329c",
+        "rfm": "425",
+        "recency_days": 40,
+        "frequency": 2,
+        "monetary": 4706.37
+      },
+      {
+        "customer_ref": "72e579e83fa6",
+        "rfm": "425",
+        "recency_days": 45,
+        "frequency": 2,
+        "monetary": 6702.98
+      }
+    ],
+    "Champions/VIP | Tênis Onitsuka Tiger Mexico 66 White Black Branco": [
+      {
+        "customer_ref": "cae9bfa784b6",
+        "rfm": "535",
+        "recency_days": 26,
+        "frequency": 3,
+        "monetary": 6929.99
+      }
+    ],
+    "Champions/VIP | Tênis Nike Moon Shoe SP Jacquemus Off White": [
+      {
+        "customer_ref": "46dddf5222b5",
+        "rfm": "525",
+        "recency_days": 26,
+        "frequency": 2,
+        "monetary": 9250.0
+      },
+      {
+        "customer_ref": "ea13ab325e7a",
+        "rfm": "425",
+        "recency_days": 35,
+        "frequency": 2,
+        "monetary": 10749.98
+      },
+      {
+        "customer_ref": "b294f089bef8",
+        "rfm": "425",
+        "recency_days": 42,
+        "frequency": 2,
+        "monetary": 11065.08
+      }
+    ],
+    "Champions/VIP | Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege": [
+      {
+        "customer_ref": "e18fd666066b",
+        "rfm": "555",
+        "recency_days": 26,
+        "frequency": 5,
+        "monetary": 23399.9
+      },
+      {
+        "customer_ref": "bc53e6e39882",
+        "rfm": "525",
+        "recency_days": 26,
+        "frequency": 2,
+        "monetary": 4479.99
+      }
+    ],
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo": [
+      {
+        "customer_ref": "b2b48b804b87",
+        "rfm": "515",
+        "recency_days": 27,
+        "frequency": 1,
+        "monetary": 4899.98
+      },
+      {
+        "customer_ref": "6fcb5103f030",
+        "rfm": "415",
+        "recency_days": 44,
+        "frequency": 1,
+        "monetary": 7559.99
+      },
+      {
+        "customer_ref": "991b9501c18b",
+        "rfm": "415",
+        "recency_days": 46,
+        "frequency": 1,
+        "monetary": 6437.99
+      }
+    ],
+    "Champions/VIP | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo": [
+      {
+        "customer_ref": "b55b9493bd52",
+        "rfm": "525",
+        "recency_days": 27,
+        "frequency": 2,
+        "monetary": 6204.98
+      },
+      {
+        "customer_ref": "338f6d4e112c",
+        "rfm": "525",
+        "recency_days": 27,
+        "frequency": 2,
+        "monetary": 10779.99
+      },
+      {
+        "customer_ref": "38c2a6356970",
+        "rfm": "525",
+        "recency_days": 28,
+        "frequency": 2,
+        "monetary": 7374.97
+      }
+    ],
+    "Base nurturing | Tênis New Balance 9060 Bisque Sea Salt Bege": [
+      {
+        "customer_ref": "bda8de31f977",
+        "rfm": "513",
+        "recency_days": 27,
+        "frequency": 1,
+        "monetary": 2160.0
+      },
+      {
+        "customer_ref": "f454a58188ea",
+        "rfm": "413",
+        "recency_days": 38,
+        "frequency": 1,
+        "monetary": 2160.0
+      },
+      {
+        "customer_ref": "b308ed90a61f",
+        "rfm": "413",
+        "recency_days": 36,
+        "frequency": 1,
+        "monetary": 2280.0
+      }
+    ],
+    "Novo alto potencial | Tênis Nike Moon Shoe SP Jacquemus Off White": [
+      {
+        "customer_ref": "85d491451a41",
+        "rfm": "515",
+        "recency_days": 27,
+        "frequency": 1,
+        "monetary": 4999.99
+      },
+      {
+        "customer_ref": "14bd9296b6c6",
+        "rfm": "415",
+        "recency_days": 31,
+        "frequency": 1,
+        "monetary": 4750.0
+      },
+      {
+        "customer_ref": "ab4955da6da2",
+        "rfm": "515",
+        "recency_days": 30,
+        "frequency": 1,
+        "monetary": 4999.99
+      }
+    ],
+    "Base nurturing | Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo": [
+      {
+        "customer_ref": "622df64a4c64",
+        "rfm": "513",
+        "recency_days": 28,
+        "frequency": 1,
+        "monetary": 2250.0
+      },
+      {
+        "customer_ref": "2ab49a62430f",
+        "rfm": "513",
+        "recency_days": 29,
+        "frequency": 1,
+        "monetary": 2375.0
+      },
+      {
+        "customer_ref": "d3c48bbb7e07",
+        "rfm": "413",
+        "recency_days": 52,
+        "frequency": 1,
+        "monetary": 2375.0
+      }
+    ],
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege": [
+      {
+        "customer_ref": "e46b5c878c4b",
+        "rfm": "514",
+        "recency_days": 28,
+        "frequency": 1,
+        "monetary": 2499.99
+      },
+      {
+        "customer_ref": "7c77c2dec8b9",
+        "rfm": "414",
+        "recency_days": 39,
+        "frequency": 1,
+        "monetary": 2499.99
+      }
+    ],
+    "Champions/VIP | Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege": [
+      {
+        "customer_ref": "718fdbef0d75",
+        "rfm": "525",
+        "recency_days": 29,
+        "frequency": 2,
+        "monetary": 6299.99
+      },
+      {
+        "customer_ref": "aec207eb9ff5",
+        "rfm": "425",
+        "recency_days": 32,
+        "frequency": 2,
+        "monetary": 7089.99
+      }
+    ],
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata": [
+      {
+        "customer_ref": "7e9c54ce7b5f",
+        "rfm": "515",
+        "recency_days": 29,
+        "frequency": 1,
+        "monetary": 4799.98
+      }
+    ],
+    "Base nurturing | Jason Markk Essential Kit de Limpeza": [
+      {
+        "customer_ref": "21d29a68544d",
+        "rfm": "511",
+        "recency_days": 29,
+        "frequency": 1,
+        "monetary": 204.37
+      },
+      {
+        "customer_ref": "575a9d1b0829",
+        "rfm": "311",
+        "recency_days": 76,
+        "frequency": 1,
+        "monetary": 492.09
+      },
+      {
+        "customer_ref": "59b001876683",
+        "rfm": "311",
+        "recency_days": 108,
+        "frequency": 1,
+        "monetary": 212.92
+      }
+    ],
+    "Base nurturing | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo": [
+      {
+        "customer_ref": "9dd026247cbd",
+        "rfm": "513",
+        "recency_days": 29,
+        "frequency": 1,
+        "monetary": 2280.0
+      },
+      {
+        "customer_ref": "58691e6a3f33",
+        "rfm": "413",
+        "recency_days": 35,
+        "frequency": 1,
+        "monetary": 2280.0
+      },
+      {
+        "customer_ref": "bda33862bd43",
+        "rfm": "413",
+        "recency_days": 39,
+        "frequency": 1,
+        "monetary": 2280.0
+      }
+    ],
+    "Novo alto potencial | Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo": [
+      {
+        "customer_ref": "7cba39db424c",
+        "rfm": "515",
+        "recency_days": 30,
+        "frequency": 1,
+        "monetary": 5400.0
+      },
+      {
+        "customer_ref": "c53c75047128",
+        "rfm": "515",
+        "recency_days": 30,
+        "frequency": 1,
+        "monetary": 5999.99
+      },
+      {
+        "customer_ref": "74aada2b99b3",
+        "rfm": "415",
+        "recency_days": 47,
+        "frequency": 1,
+        "monetary": 10399.99
+      }
+    ],
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 White Black Branco": [
+      {
+        "customer_ref": "5f4e5e488a5b",
+        "rfm": "514",
+        "recency_days": 30,
+        "frequency": 1,
+        "monetary": 2399.99
+      },
+      {
+        "customer_ref": "612b30590b78",
+        "rfm": "414",
+        "recency_days": 50,
+        "frequency": 1,
+        "monetary": 2399.99
+      },
+      {
+        "customer_ref": "5f89c549b93a",
+        "rfm": "415",
+        "recency_days": 41,
+        "frequency": 1,
+        "monetary": 4410.0
+      }
+    ],
+    "Champions/VIP | Tênis Adidas Samba OG Crochet Pack Sand Strata Bege": [
+      {
+        "customer_ref": "a49121e598f8",
+        "rfm": "525",
+        "recency_days": 30,
+        "frequency": 2,
+        "monetary": 4500.0
+      },
+      {
+        "customer_ref": "e27521aaa47a",
+        "rfm": "425",
+        "recency_days": 43,
+        "frequency": 2,
+        "monetary": 11229.98
+      },
+      {
+        "customer_ref": "385736e4c387",
+        "rfm": "425",
+        "recency_days": 46,
+        "frequency": 2,
+        "monetary": 4699.99
+      }
+    ],
+    "Novo alto potencial | Slide Nike Mind 001 Light Smoke Grey Cinza": [
+      {
+        "customer_ref": "562904100eb2",
+        "rfm": "415",
+        "recency_days": 31,
+        "frequency": 1,
+        "monetary": 12799.96
+      },
+      {
+        "customer_ref": "a3a2533bf18b",
+        "rfm": "415",
+        "recency_days": 32,
+        "frequency": 1,
+        "monetary": 5599.98
+      },
+      {
+        "customer_ref": "d5489f08cde5",
+        "rfm": "414",
+        "recency_days": 43,
+        "frequency": 1,
+        "monetary": 3199.99
+      }
+    ],
+    "Base nurturing | Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege": [
+      {
+        "customer_ref": "df2a0315d539",
+        "rfm": "513",
+        "recency_days": 30,
+        "frequency": 1,
+        "monetary": 2250.0
+      },
+      {
+        "customer_ref": "2f935d22b6db",
+        "rfm": "413",
+        "recency_days": 39,
+        "frequency": 1,
+        "monetary": 2375.0
+      }
+    ],
+    "Champions/VIP | Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege": [
+      {
+        "customer_ref": "9b3451850b0c",
+        "rfm": "425",
+        "recency_days": 31,
+        "frequency": 2,
+        "monetary": 5479.98
+      }
+    ],
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom": [
+      {
+        "customer_ref": "e9b40bde869d",
+        "rfm": "415",
+        "recency_days": 31,
+        "frequency": 1,
+        "monetary": 4799.98
+      },
+      {
+        "customer_ref": "f84af54f0eec",
+        "rfm": "414",
+        "recency_days": 33,
+        "frequency": 1,
+        "monetary": 2399.99
+      }
+    ],
+    "Champions/VIP | Tênis Onitsuka Tiger Mexico 66 SD Birch Metropolis Bege": [
+      {
+        "customer_ref": "c427f623a4a8",
+        "rfm": "425",
+        "recency_days": 34,
+        "frequency": 2,
+        "monetary": 7799.96
+      },
+      {
+        "customer_ref": "fb518153fcf6",
+        "rfm": "445",
+        "recency_days": 36,
+        "frequency": 4,
+        "monetary": 14837.44
+      }
+    ],
+    "Novo alto potencial | Tênis New Balance 204L Arid Timberwolf Bege": [
+      {
+        "customer_ref": "d4cf612230ca",
+        "rfm": "414",
+        "recency_days": 34,
+        "frequency": 1,
+        "monetary": 2799.99
+      },
+      {
+        "customer_ref": "b078f12038b6",
+        "rfm": "415",
+        "recency_days": 39,
+        "frequency": 1,
+        "monetary": 7409.99
+      },
+      {
+        "customer_ref": "962c7f747689",
+        "rfm": "414",
+        "recency_days": 48,
+        "frequency": 1,
+        "monetary": 2660.0
+      }
+    ],
+    "Champions/VIP | Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege": [
+      {
+        "customer_ref": "68de62d977e3",
+        "rfm": "435",
+        "recency_days": 34,
+        "frequency": 3,
+        "monetary": 7299.97
+      },
+      {
+        "customer_ref": "070e3b29c5e3",
+        "rfm": "425",
+        "recency_days": 47,
+        "frequency": 2,
+        "monetary": 4799.98
+      },
+      {
+        "customer_ref": "30e57b53024a",
+        "rfm": "445",
+        "recency_days": 39,
+        "frequency": 4,
+        "monetary": 14724.96
+      }
+    ],
+    "Base nurturing | Tênis Onitsuka Tiger Mexico 66 White Black Branco": [
+      {
+        "customer_ref": "dc245f476aa7",
+        "rfm": "413",
+        "recency_days": 34,
+        "frequency": 1,
+        "monetary": 2280.0
+      }
+    ],
+    "Champions/VIP | Tênis Nike Dunk Low Cacao Wow Marrom": [
+      {
+        "customer_ref": "2bfd4c41d668",
+        "rfm": "425",
+        "recency_days": 37,
+        "frequency": 2,
+        "monetary": 6449.99
+      }
+    ],
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege": [
+      {
+        "customer_ref": "a0907c4611ef",
+        "rfm": "414",
+        "recency_days": 38,
+        "frequency": 1,
+        "monetary": 2499.99
+      },
+      {
+        "customer_ref": "8c92c9fbfae5",
+        "rfm": "415",
+        "recency_days": 49,
+        "frequency": 1,
+        "monetary": 4500.0
+      }
+    ],
+    "Novo alto potencial | Tênis New Balance 9060 Bisque Sea Salt Bege": [
+      {
+        "customer_ref": "42f756d8360a",
+        "rfm": "415",
+        "recency_days": 33,
+        "frequency": 1,
+        "monetary": 4799.98
+      },
+      {
+        "customer_ref": "e9fae514d79b",
+        "rfm": "415",
+        "recency_days": 42,
+        "frequency": 1,
+        "monetary": 5120.9
+      },
+      {
+        "customer_ref": "c584594525d3",
+        "rfm": "414",
+        "recency_days": 40,
+        "frequency": 1,
+        "monetary": 2399.99
+      }
+    ],
+    "Champions/VIP | Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata": [
+      {
+        "customer_ref": "8d0764670a72",
+        "rfm": "425",
+        "recency_days": 33,
+        "frequency": 2,
+        "monetary": 9674.89
+      },
+      {
+        "customer_ref": "0cee2411c97d",
+        "rfm": "435",
+        "recency_days": 39,
+        "frequency": 3,
+        "monetary": 5818.98
+      }
+    ],
+    "Novo alto potencial | Tênis New Balance 9060 Sea Salt Moonbeam Branco": [
+      {
+        "customer_ref": "07f23b137c06",
+        "rfm": "415",
+        "recency_days": 40,
+        "frequency": 1,
+        "monetary": 9899.97
+      },
+      {
+        "customer_ref": "92ceecc36098",
+        "rfm": "414",
+        "recency_days": 59,
+        "frequency": 1,
+        "monetary": 2599.99
+      }
+    ],
+    "Base nurturing | Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom": [
+      {
+        "customer_ref": "5afe7b2711ff",
+        "rfm": "413",
+        "recency_days": 37,
+        "frequency": 1,
+        "monetary": 2160.0
+      },
+      {
+        "customer_ref": "774323cf1a4b",
+        "rfm": "413",
+        "recency_days": 57,
+        "frequency": 1,
+        "monetary": 2160.0
+      }
+    ],
+    "Champions/VIP | Tênis New Balance 9060 Mushroom Arid Stone Bege": [
+      {
+        "customer_ref": "9bc4cc48f4d8",
+        "rfm": "425",
+        "recency_days": 35,
+        "frequency": 2,
+        "monetary": 5095.75
+      },
+      {
+        "customer_ref": "69a648506d6a",
+        "rfm": "425",
+        "recency_days": 41,
+        "frequency": 2,
+        "monetary": 5225.0
+      }
+    ],
+    "Champions/VIP | Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo": [
+      {
+        "customer_ref": "cd7f2c3aab38",
+        "rfm": "425",
+        "recency_days": 32,
+        "frequency": 2,
+        "monetary": 10800.0
+      },
+      {
+        "customer_ref": "5895ef10808e",
+        "rfm": "435",
+        "recency_days": 40,
+        "frequency": 3,
+        "monetary": 13499.98
+      },
+      {
+        "customer_ref": "f94046c5c6d8",
+        "rfm": "425",
+        "recency_days": 46,
+        "frequency": 2,
+        "monetary": 9749.99
+      }
+    ],
+    "Base nurturing | Tênis adidas SL 72 Og Maroon Almost Yellow Marrom": [
+      {
+        "customer_ref": "19fd4408a113",
+        "rfm": "412",
+        "recency_days": 41,
+        "frequency": 1,
+        "monetary": 1499.99
+      },
+      {
+        "customer_ref": "fa589a93dab6",
+        "rfm": "312",
+        "recency_days": 61,
+        "frequency": 1,
+        "monetary": 1350.0
+      }
+    ],
+    "Novo alto potencial | Jason Markk Essential Kit de Limpeza": [
+      {
+        "customer_ref": "94897102f468",
+        "rfm": "414",
+        "recency_days": 40,
+        "frequency": 1,
+        "monetary": 2659.99
+      }
+    ],
+    "Novo alto potencial | Tênis New Balance 9060 Mushroom Arid Stone Bege": [
+      {
+        "customer_ref": "90bc0aeaea6a",
+        "rfm": "414",
+        "recency_days": 43,
+        "frequency": 1,
+        "monetary": 2430.0
+      },
+      {
+        "customer_ref": "b359f91676bc",
+        "rfm": "414",
+        "recency_days": 41,
+        "frequency": 1,
+        "monetary": 2430.0
+      },
+      {
+        "customer_ref": "e5cbf3e825f6",
+        "rfm": "414",
+        "recency_days": 56,
+        "frequency": 1,
+        "monetary": 2565.0
+      }
+    ],
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege": [
+      {
+        "customer_ref": "bd72aa8db841",
+        "rfm": "415",
+        "recency_days": 38,
+        "frequency": 1,
+        "monetary": 4899.98
+      },
+      {
+        "customer_ref": "512f999d08fe",
+        "rfm": "414",
+        "recency_days": 55,
+        "frequency": 1,
+        "monetary": 2499.99
+      },
+      {
+        "customer_ref": "6c9c74c0e1c6",
+        "rfm": "414",
+        "recency_days": 60,
+        "frequency": 1,
+        "monetary": 2425.0
+      }
+    ],
+    "Base nurturing | Tênis Onitsuka Tiger Mexico 66 SD Birch Metropolis Bege": [
+      {
+        "customer_ref": "eb92e21d081e",
+        "rfm": "413",
+        "recency_days": 40,
+        "frequency": 1,
+        "monetary": 2250.0
+      },
+      {
+        "customer_ref": "c763ba9aeb85",
+        "rfm": "413",
+        "recency_days": 36,
+        "frequency": 1,
+        "monetary": 2250.0
+      }
+    ],
+    "Champions/VIP | Tênis New Balance 204L Mushroom Arid Stone Marrom": [
+      {
+        "customer_ref": "aac088d0c1a1",
+        "rfm": "425",
+        "recency_days": 48,
+        "frequency": 2,
+        "monetary": 11375.9
+      },
+      {
+        "customer_ref": "713074496de0",
+        "rfm": "425",
+        "recency_days": 40,
+        "frequency": 2,
+        "monetary": 7499.97
+      },
+      {
+        "customer_ref": "2be14f707695",
+        "rfm": "425",
+        "recency_days": 52,
+        "frequency": 2,
+        "monetary": 7979.99
+      }
+    ],
+    "Champions/VIP | Jason Markk Essential Kit de Limpeza": [
+      {
+        "customer_ref": "275a9cee3310",
+        "rfm": "425",
+        "recency_days": 38,
+        "frequency": 2,
+        "monetary": 16929.95
+      }
+    ],
+    "Champions/VIP | Tênis New Balance 9060 Sea Salt Moonbeam Branco": [
+      {
+        "customer_ref": "8e061c465d9e",
+        "rfm": "425",
+        "recency_days": 44,
+        "frequency": 2,
+        "monetary": 4720.0
+      },
+      {
+        "customer_ref": "daa056da5518",
+        "rfm": "425",
+        "recency_days": 32,
+        "frequency": 2,
+        "monetary": 15424.96
+      }
+    ],
+    "Champions/VIP | Tênis Onitsuka Tiger México 66 Birch Peacoat Bege": [
+      {
+        "customer_ref": "95ef48194603",
+        "rfm": "424",
+        "recency_days": 51,
+        "frequency": 2,
+        "monetary": 3099.98
+      }
+    ],
+    "Novo alto potencial | Tênis Onitsuka Tiger México 66 Birch Peacoat Bege": [
+      {
+        "customer_ref": "415674a0e732",
+        "rfm": "414",
+        "recency_days": 52,
+        "frequency": 1,
+        "monetary": 2399.99
+      },
+      {
+        "customer_ref": "1ad47334f84a",
+        "rfm": "415",
+        "recency_days": 44,
+        "frequency": 1,
+        "monetary": 9359.98
+      }
+    ],
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo": [
+      {
+        "customer_ref": "3022dd6136b5",
+        "rfm": "414",
+        "recency_days": 54,
+        "frequency": 1,
+        "monetary": 2499.99
+      }
+    ],
+    "Alto valor esfriando | Tênis Onitsuka Tiger Mexico 66 White Black Branco": [
+      {
+        "customer_ref": "ef3ff4153cad",
+        "rfm": "413",
+        "recency_days": 60,
+        "frequency": 1,
+        "monetary": 2280.0
+      },
+      {
+        "customer_ref": "33c33cd3c34d",
+        "rfm": "315",
+        "recency_days": 96,
+        "frequency": 1,
+        "monetary": 14399.97
+      },
+      {
+        "customer_ref": "e48124f5030a",
+        "rfm": "314",
+        "recency_days": 111,
+        "frequency": 1,
+        "monetary": 2399.99
+      }
+    ],
+    "Leal/recorrente | Jason Markk Repel Spray Impermeabilizante": [
+      {
+        "customer_ref": "51e90485012b",
+        "rfm": "325",
+        "recency_days": 62,
+        "frequency": 2,
+        "monetary": 5521.48
+      },
+      {
+        "customer_ref": "26db495eb6a8",
+        "rfm": "355",
+        "recency_days": 78,
+        "frequency": 5,
+        "monetary": 8472.97
+      },
+      {
+        "customer_ref": "8c695f502f7d",
+        "rfm": "335",
+        "recency_days": 102,
+        "frequency": 3,
+        "monetary": 9120.98
+      }
+    ],
+    "Alto valor esfriando | Tênis New Balance 9060 Bisque Sea Salt Bege": [
+      {
+        "customer_ref": "79d2bd003548",
+        "rfm": "313",
+        "recency_days": 62,
+        "frequency": 1,
+        "monetary": 2160.0
+      },
+      {
+        "customer_ref": "cd7628e80a94",
+        "rfm": "313",
+        "recency_days": 63,
+        "frequency": 1,
+        "monetary": 2280.0
+      },
+      {
+        "customer_ref": "72dff3367957",
+        "rfm": "214",
+        "recency_days": 150,
+        "frequency": 1,
+        "monetary": 2399.99
+      }
+    ],
+    "Alto valor esfriando | Tênis Onitsuka Tiger Mexico 66 SD Birch Metropolis Bege": [
+      {
+        "customer_ref": "9b8387d214e1",
+        "rfm": "314",
+        "recency_days": 62,
+        "frequency": 1,
+        "monetary": 2499.99
+      },
+      {
+        "customer_ref": "bc8d9f48b793",
+        "rfm": "314",
+        "recency_days": 76,
+        "frequency": 1,
+        "monetary": 2499.99
+      },
+      {
+        "customer_ref": "801e319337bb",
+        "rfm": "213",
+        "recency_days": 199,
+        "frequency": 1,
+        "monetary": 2250.0
+      }
+    ],
+    "Leal/recorrente | Tênis New Balance 9060 Sea Salt Moonbeam Branco": [
+      {
+        "customer_ref": "6d4bd412bf88",
+        "rfm": "335",
+        "recency_days": 62,
+        "frequency": 3,
+        "monetary": 12774.97
+      },
+      {
+        "customer_ref": "6cbaf4a4ed5d",
+        "rfm": "325",
+        "recency_days": 115,
+        "frequency": 2,
+        "monetary": 5449.98
+      }
+    ],
+    "Alto valor esfriando | Tênis New Balance 204L Mushroom Arid Stone Marrom": [
+      {
+        "customer_ref": "16d7f261a722",
+        "rfm": "315",
+        "recency_days": 63,
+        "frequency": 1,
+        "monetary": 5034.99
+      },
+      {
+        "customer_ref": "863405e9f95d",
+        "rfm": "314",
+        "recency_days": 94,
+        "frequency": 1,
+        "monetary": 2660.0
+      },
+      {
+        "customer_ref": "be3402f228ab",
+        "rfm": "225",
+        "recency_days": 124,
+        "frequency": 2,
+        "monetary": 4999.98
+      }
+    ],
+    "Alto valor esfriando | Tênis Onitsuka Tiger México 66 Birch Peacoat Bege": [
+      {
+        "customer_ref": "c85bb1299f68",
+        "rfm": "314",
+        "recency_days": 66,
+        "frequency": 1,
+        "monetary": 2399.99
+      },
+      {
+        "customer_ref": "0626931d75f1",
+        "rfm": "314",
+        "recency_days": 85,
+        "frequency": 1,
+        "monetary": 2399.99
+      },
+      {
+        "customer_ref": "9977c11ad0d0",
+        "rfm": "314",
+        "recency_days": 95,
+        "frequency": 1,
+        "monetary": 2399.99
+      }
+    ],
+    "Leal/recorrente | Tênis adidas SL 72 Og Maroon Almost Yellow Marrom": [
+      {
+        "customer_ref": "9aa3fe581b8d",
+        "rfm": "325",
+        "recency_days": 68,
+        "frequency": 2,
+        "monetary": 5599.97
+      },
+      {
+        "customer_ref": "6a6bf8003209",
+        "rfm": "325",
+        "recency_days": 90,
+        "frequency": 2,
+        "monetary": 4499.98
+      }
+    ],
+    "Alto valor esfriando | Slide Nike Mind 001 Light Smoke Grey Cinza": [
+      {
+        "customer_ref": "c93e485cc925",
+        "rfm": "315",
+        "recency_days": 69,
+        "frequency": 1,
+        "monetary": 6048.37
+      },
+      {
+        "customer_ref": "ae624f2be93f",
+        "rfm": "314",
+        "recency_days": 79,
+        "frequency": 1,
+        "monetary": 2999.99
+      },
+      {
+        "customer_ref": "e3125383d049",
+        "rfm": "314",
+        "recency_days": 105,
+        "frequency": 1,
+        "monetary": 2699.99
+      }
+    ],
+    "Base nurturing | Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege": [
+      {
+        "customer_ref": "2578fafce83d",
+        "rfm": "513",
+        "recency_days": 28,
+        "frequency": 1,
+        "monetary": 2250.0
+      }
+    ],
+    "Alto valor esfriando | Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo": [
+      {
+        "customer_ref": "8e466e814d89",
+        "rfm": "315",
+        "recency_days": 69,
+        "frequency": 1,
+        "monetary": 4750.0
+      },
+      {
+        "customer_ref": "9f2f635ed942",
+        "rfm": "315",
+        "recency_days": 79,
+        "frequency": 1,
+        "monetary": 4750.0
+      },
+      {
+        "customer_ref": "84c7268fb84e",
+        "rfm": "315",
+        "recency_days": 111,
+        "frequency": 1,
+        "monetary": 4999.99
+      }
+    ],
+    "Alto valor esfriando | Jason Markk Repel Spray Impermeabilizante": [
+      {
+        "customer_ref": "6a42cb59b88f",
+        "rfm": "314",
+        "recency_days": 73,
+        "frequency": 1,
+        "monetary": 2564.98
+      },
+      {
+        "customer_ref": "24a96f1f2e40",
+        "rfm": "314",
+        "recency_days": 73,
+        "frequency": 1,
+        "monetary": 2659.98
+      },
+      {
+        "customer_ref": "9936af1f941e",
+        "rfm": "314",
+        "recency_days": 89,
+        "frequency": 1,
+        "monetary": 2802.99
+      }
+    ],
+    "Base nurturing | Jason Markk Repel Spray Impermeabilizante": [
+      {
+        "customer_ref": "eea2271ae17c",
+        "rfm": "311",
+        "recency_days": 74,
+        "frequency": 1,
+        "monetary": 1232.99
+      },
+      {
+        "customer_ref": "529296f79520",
+        "rfm": "311",
+        "recency_days": 82,
+        "frequency": 1,
+        "monetary": 184.36
+      },
+      {
+        "customer_ref": "9d3ccd656b3d",
+        "rfm": "311",
+        "recency_days": 65,
+        "frequency": 1,
+        "monetary": 184.36
+      }
+    ],
+    "Alto valor esfriando | The Peptide Lip Tints Rhode Multicolor": [
+      {
+        "customer_ref": "9a5e2931a882",
+        "rfm": "314",
+        "recency_days": 80,
+        "frequency": 1,
+        "monetary": 4039.95
+      },
+      {
+        "customer_ref": "f0b3ece66e80",
+        "rfm": "114",
+        "recency_days": 291,
+        "frequency": 1,
+        "monetary": 2599.97
+      },
+      {
+        "customer_ref": "5eeb3dc7715a",
+        "rfm": "114",
+        "recency_days": 266,
+        "frequency": 1,
+        "monetary": 2564.98
+      }
+    ],
+    "Alto valor esfriando | Tênis New Balance 204L Arid Timberwolf Bege": [
+      {
+        "customer_ref": "577e79562d74",
+        "rfm": "314",
+        "recency_days": 81,
+        "frequency": 1,
+        "monetary": 2660.0
+      },
+      {
+        "customer_ref": "e60d3c158c7d",
+        "rfm": "314",
+        "recency_days": 99,
+        "frequency": 1,
+        "monetary": 2799.99
+      },
+      {
+        "customer_ref": "bea7f6aece55",
+        "rfm": "314",
+        "recency_days": 111,
+        "frequency": 1,
+        "monetary": 2799.99
+      }
+    ],
+    "Alto valor esfriando | Tênis Nike Moon Shoe SP Jacquemus Off White": [
+      {
+        "customer_ref": "216f1ca04b7d",
+        "rfm": "315",
+        "recency_days": 62,
+        "frequency": 1,
+        "monetary": 4750.0
+      }
+    ],
+    "Leal/recorrente | Tênis Adidas Samba OG Crochet Pack Sand Strata Bege": [
+      {
+        "customer_ref": "fb20ef1856ca",
+        "rfm": "325",
+        "recency_days": 93,
+        "frequency": 2,
+        "monetary": 5689.98
+      }
+    ],
+    "Leal/recorrente | Tênis New Balance 204L Mushroom Arid Stone Marrom": [
+      {
+        "customer_ref": "854956f6c85d",
+        "rfm": "335",
+        "recency_days": 62,
+        "frequency": 3,
+        "monetary": 21249.94
+      },
+      {
+        "customer_ref": "a26e5fac5f2d",
+        "rfm": "325",
+        "recency_days": 74,
+        "frequency": 2,
+        "monetary": 4829.99
+      },
+      {
+        "customer_ref": "bc94b52721c8",
+        "rfm": "335",
+        "recency_days": 95,
+        "frequency": 3,
+        "monetary": 9099.98
+      }
+    ],
+    "Alto valor esfriando | Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege": [
+      {
+        "customer_ref": "0b1ef57a9297",
+        "rfm": "314",
+        "recency_days": 78,
+        "frequency": 1,
+        "monetary": 2499.99
+      },
+      {
+        "customer_ref": "3aeb450e385d",
+        "rfm": "314",
+        "recency_days": 96,
+        "frequency": 1,
+        "monetary": 2499.99
+      },
+      {
+        "customer_ref": "74858553c40a",
+        "rfm": "314",
+        "recency_days": 96,
+        "frequency": 1,
+        "monetary": 2499.99
+      }
+    ],
+    "Champions/VIP | Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo": [
+      {
+        "customer_ref": "210397ccf432",
+        "rfm": "425",
+        "recency_days": 50,
+        "frequency": 2,
+        "monetary": 9939.98
+      },
+      {
+        "customer_ref": "875765ee325b",
+        "rfm": "425",
+        "recency_days": 55,
+        "frequency": 2,
+        "monetary": 6791.12
+      }
+    ],
+    "Leal/recorrente | Slide Nike Mind 001 Light Smoke Grey Cinza": [
+      {
+        "customer_ref": "72bd94d32782",
+        "rfm": "335",
+        "recency_days": 66,
+        "frequency": 3,
+        "monetary": 8189.97
+      },
+      {
+        "customer_ref": "9b415f392b54",
+        "rfm": "335",
+        "recency_days": 104,
+        "frequency": 3,
+        "monetary": 8799.94
+      },
+      {
+        "customer_ref": "ad2c10c7a0ba",
+        "rfm": "325",
+        "recency_days": 89,
+        "frequency": 2,
+        "monetary": 9099.97
+      }
+    ],
+    "Base nurturing | Tênis Onitsuka Tiger México 66 Birch Peacoat Bege": [
+      {
+        "customer_ref": "8b69a3eff44f",
+        "rfm": "413",
+        "recency_days": 47,
+        "frequency": 1,
+        "monetary": 2160.0
+      }
+    ],
+    "Alto valor esfriando | Tênis New Balance 9060 Sea Salt Moonbeam Branco": [
+      {
+        "customer_ref": "07b9276cac54",
+        "rfm": "315",
+        "recency_days": 75,
+        "frequency": 1,
+        "monetary": 10099.97
+      },
+      {
+        "customer_ref": "0e76d16042c3",
+        "rfm": "215",
+        "recency_days": 164,
+        "frequency": 1,
+        "monetary": 5299.98
+      },
+      {
+        "customer_ref": "418808a79a47",
+        "rfm": "225",
+        "recency_days": 139,
+        "frequency": 2,
+        "monetary": 15776.45
+      }
+    ],
+    "Leal/recorrente | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo": [
+      {
+        "customer_ref": "8df626dfce27",
+        "rfm": "325",
+        "recency_days": 93,
+        "frequency": 2,
+        "monetary": 4799.98
+      },
+      {
+        "customer_ref": "46d27fb72f8d",
+        "rfm": "325",
+        "recency_days": 96,
+        "frequency": 2,
+        "monetary": 5248.57
+      },
+      {
+        "customer_ref": "6b34f8cd5c8f",
+        "rfm": "325",
+        "recency_days": 90,
+        "frequency": 2,
+        "monetary": 7179.98
+      }
+    ],
+    "Leal/recorrente | Tênis New Balance 204L Arid Timberwolf Bege": [
+      {
+        "customer_ref": "338c716aa6fd",
+        "rfm": "325",
+        "recency_days": 95,
+        "frequency": 2,
+        "monetary": 4937.49
+      },
+      {
+        "customer_ref": "5c22ad48a541",
+        "rfm": "335",
+        "recency_days": 64,
+        "frequency": 3,
+        "monetary": 7522.49
+      },
+      {
+        "customer_ref": "ced01bfe3a1c",
+        "rfm": "325",
+        "recency_days": 106,
+        "frequency": 2,
+        "monetary": 10559.96
+      }
+    ],
+    "Alto valor esfriando | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo": [
+      {
+        "customer_ref": "902af51d82a5",
+        "rfm": "315",
+        "recency_days": 70,
+        "frequency": 1,
+        "monetary": 5669.98
+      },
+      {
+        "customer_ref": "4dd832d3b98c",
+        "rfm": "213",
+        "recency_days": 123,
+        "frequency": 1,
+        "monetary": 2160.0
+      },
+      {
+        "customer_ref": "30e83570aed0",
+        "rfm": "214",
+        "recency_days": 125,
+        "frequency": 1,
+        "monetary": 2399.99
+      }
+    ],
+    "Leal/recorrente | The Peptide Lip Tints Rhode Multicolor": [
+      {
+        "customer_ref": "6cb3a5f2d632",
+        "rfm": "324",
+        "recency_days": 94,
+        "frequency": 2,
+        "monetary": 3699.94
+      },
+      {
+        "customer_ref": "807b8b510bd2",
+        "rfm": "325",
+        "recency_days": 71,
+        "frequency": 2,
+        "monetary": 7570.96
+      }
+    ],
+    "Alto valor esfriando | Tênis Nike Dunk Low Cacao Wow Marrom": [
+      {
+        "customer_ref": "80d1eaf68be4",
+        "rfm": "314",
+        "recency_days": 104,
+        "frequency": 1,
+        "monetary": 3299.98
+      },
+      {
+        "customer_ref": "49092281c39a",
+        "rfm": "135",
+        "recency_days": 296,
+        "frequency": 3,
+        "monetary": 9599.96
+      },
+      {
+        "customer_ref": "f91ba79c965d",
+        "rfm": "124",
+        "recency_days": 297,
+        "frequency": 2,
+        "monetary": 3993.12
+      }
+    ],
+    "Leal/recorrente | Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege": [
+      {
+        "customer_ref": "a963333d9461",
+        "rfm": "355",
+        "recency_days": 99,
+        "frequency": 5,
+        "monetary": 11979.95
+      },
+      {
+        "customer_ref": "f22323fbc77b",
+        "rfm": "325",
+        "recency_days": 82,
+        "frequency": 2,
+        "monetary": 4599.98
+      },
+      {
+        "customer_ref": "e1751841776e",
+        "rfm": "325",
+        "recency_days": 85,
+        "frequency": 2,
+        "monetary": 4999.98
+      }
+    ]
+  },
+  "guardrails": [
+    "No PII in Markdown",
+    "No Shopify/Tiny/Klaviyo/WhatsApp/Supabase writes",
+    "No campaign/list/send created",
+    "Before real send: Tiny stock by SKU/size and opt-out rules required"
+  ]
+}
