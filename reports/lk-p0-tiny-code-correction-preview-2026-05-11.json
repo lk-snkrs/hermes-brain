@@ -1,0 +1,137 @@
+{
+  "generated_at": "2026-05-11",
+  "scope": "Preview de correção Tiny codigo para 6 P0 com match Tiny sem codigo/ambíguo",
+  "guardrails": [
+    "preview only",
+    "sem Tiny write",
+    "sem Shopify write",
+    "sem Fila A/sourcing até codigo canônico"
+  ],
+  "summary": {
+    "total_A_rows": 6,
+    "tiny_write_candidates_with_target_codigo": 2,
+    "needs_target_codigo_decision": 4
+  },
+  "items": [
+    {
+      "product_title": "Camiseta Pace Cotton Code Branca",
+      "shopify_variant_id": 47512247599326,
+      "shopify_handle": "camiseta-pace-cotton-code-branca",
+      "size": "G/L",
+      "shopify_sku_live": "[sem SKU]",
+      "orders_30d_signal": 2,
+      "revenue_signal": 433.98,
+      "eligibility": "needs_target_codigo_decision",
+      "confidence": "baixa",
+      "tiny_target_item_id": "1065543106",
+      "tiny_current_codigo": "",
+      "tiny_target_codigo": null,
+      "tiny_match_label": {
+        "Tamanho": "G/L"
+      },
+      "proposed_action": "decidir codigo Tiny canônico antes de qualquer write",
+      "rollback": "sem write proposto ainda; preencher codigo alvo primeiro",
+      "requires_approval": "Sim — write Tiny codigo exige aprovação explícita Lucas/Júlio/escopo Tiny."
+    },
+    {
+      "product_title": "Rhode Pocket Blush",
+      "shopify_variant_id": 46838740648158,
+      "shopify_handle": "rhode-pocket-blush",
+      "size": "Sleepy Girl - Soft Mauve",
+      "shopify_sku_live": "[sem SKU]",
+      "orders_30d_signal": 1,
+      "revenue_signal": 399.99,
+      "eligibility": "needs_target_codigo_decision",
+      "confidence": "baixa",
+      "tiny_target_item_id": "1070288342",
+      "tiny_current_codigo": "",
+      "tiny_target_codigo": null,
+      "tiny_match_label": {
+        "Cor": "Sleepy Girl - Soft Mauve"
+      },
+      "proposed_action": "decidir codigo Tiny canônico antes de qualquer write",
+      "rollback": "sem write proposto ainda; preencher codigo alvo primeiro",
+      "requires_approval": "Sim — write Tiny codigo exige aprovação explícita Lucas/Júlio/escopo Tiny."
+    },
+    {
+      "product_title": "Camiseta Pace Cotton Code Preta",
+      "shopify_variant_id": 47512247730398,
+      "shopify_handle": "camiseta-pace-cotton-code-preta",
+      "size": "G/L",
+      "shopify_sku_live": "[sem SKU]",
+      "orders_30d_signal": 1,
+      "revenue_signal": 216.99,
+      "eligibility": "needs_target_codigo_decision",
+      "confidence": "baixa",
+      "tiny_target_item_id": "1065543087",
+      "tiny_current_codigo": "",
+      "tiny_target_codigo": null,
+      "tiny_match_label": {
+        "Tamanho": "G/L"
+      },
+      "proposed_action": "decidir codigo Tiny canônico antes de qualquer write",
+      "rollback": "sem write proposto ainda; preencher codigo alvo primeiro",
+      "requires_approval": "Sim — write Tiny codigo exige aprovação explícita Lucas/Júlio/escopo Tiny."
+    },
+    {
+      "product_title": "Camiseta Pace Sketch Yourself Off White",
+      "shopify_variant_id": 47019131568350,
+      "shopify_handle": "camiseta-pace-sketch-yourself-off-white",
+      "size": "P/S",
+      "shopify_sku_live": "[sem SKU]",
+      "orders_30d_signal": 1,
+      "revenue_signal": 209.99,
+      "eligibility": "needs_target_codigo_decision",
+      "confidence": "baixa",
+      "tiny_target_item_id": "1063954611",
+      "tiny_current_codigo": "",
+      "tiny_target_codigo": null,
+      "tiny_match_label": {
+        "Tamanho": "P/S"
+      },
+      "proposed_action": "decidir codigo Tiny canônico antes de qualquer write",
+      "rollback": "sem write proposto ainda; preencher codigo alvo primeiro",
+      "requires_approval": "Sim — write Tiny codigo exige aprovação explícita Lucas/Júlio/escopo Tiny."
+    },
+    {
+      "product_title": "Tênis New Balance 204L Cortado Marrom",
+      "shopify_variant_id": 47856402596062,
+      "shopify_handle": "tenis-new-balance-204l-cortado-marrom",
+      "size": "39",
+      "shopify_sku_live": "NB-0254942-39",
+      "orders_30d_signal": 2,
+      "revenue_signal": 5599.98,
+      "eligibility": "preview_tiny_codigo_write_candidate",
+      "confidence": "media_alta",
+      "tiny_target_item_id": "1069544054",
+      "tiny_current_codigo": "",
+      "tiny_target_codigo": "NB-0254942-39",
+      "tiny_match_label": {
+        "Tamanho do calçado": "39"
+      },
+      "proposed_action": "preencher codigo Tiny vazio da variação/tamanho com o SKU Shopify atual, depois revalidar Shopify/Tiny",
+      "rollback": "restaurar codigo Tiny para vazio/anterior e revalidar; não mexer Shopify sem autorização separada",
+      "requires_approval": "Sim — write Tiny codigo exige aprovação explícita Lucas/Júlio/escopo Tiny."
+    },
+    {
+      "product_title": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom",
+      "shopify_variant_id": 47868839035102,
+      "shopify_handle": "tenis-nike-x-skims-rift-mesh-archaeo-brown-marrom",
+      "size": "36",
+      "shopify_sku_live": "NKS-1065310-36",
+      "orders_30d_signal": 1,
+      "revenue_signal": 3499.99,
+      "eligibility": "preview_tiny_codigo_write_candidate",
+      "confidence": "media_alta",
+      "tiny_target_item_id": "1069544710",
+      "tiny_current_codigo": "",
+      "tiny_target_codigo": "NKS-1065310-36",
+      "tiny_match_label": {
+        "Tamanho do calçado": "36"
+      },
+      "proposed_action": "preencher codigo Tiny vazio da variação/tamanho com o SKU Shopify atual, depois revalidar Shopify/Tiny",
+      "rollback": "restaurar codigo Tiny para vazio/anterior e revalidar; não mexer Shopify sem autorização separada",
+      "requires_approval": "Sim — write Tiny codigo exige aprovação explícita Lucas/Júlio/escopo Tiny."
+    }
+  ]
+}
