@@ -153,7 +153,7 @@ def main() -> None:
     }
     OUT_JSON.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + '\n')
     lines = [
-        '# LK Phase 5 P1 — WhatsApp Evolution send log — 2026-05-11', '',
+        '# LK Phase 5 P1, WhatsApp Evolution send log, 2026-05-11', '',
         '## Veredito', '',
         ('Mensagens enviadas via Evolution.' if args.execute else 'Dry-run concluído; nenhuma mensagem enviada.'), '',
         '## Modo', '', f'- {mode}', '', '## Contagens', '',

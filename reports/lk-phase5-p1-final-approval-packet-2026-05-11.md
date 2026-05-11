@@ -1,4 +1,4 @@
-# LK OS Fase 5 — P1 approval packet final — 2026-05-11
+# LK OS Fase 5, P1 approval packet final, 2026-05-11
 
 ## Veredito
 

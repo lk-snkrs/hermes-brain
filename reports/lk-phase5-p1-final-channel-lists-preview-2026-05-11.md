@@ -1,4 +1,4 @@
-# LK Phase 5 P1 — listas finais por canal (preview, sem envio) — 2026-05-11
+# LK Phase 5 P1, listas finais por canal (preview, sem envio), 2026-05-11
 
 ## Veredito
 
@@ -45,11 +45,11 @@ Listas P1 revisadas para a regra aprovada por Lucas: somente clientes cuja compr
 
 ### Champions/VIP | Tênis New Balance 204L Mushroom Arid Stone Marrom | whatsapp_concierge (4)
 - Ângulo: Loja física / concierge direto / mesmo perfil
-- Preview interno: Oi {first_name}, tudo bem? Vi que você comprou na LK Flagship o New Balance 204L Mushroom Arid Stone Marrom. Separei uma curadoria pequena no mesmo caminho — peças que conversam com esse estilo, mais pela leitura de moda do que por “mais um sneaker”. Posso te mandar 2 ou 3 opções bem pontuais?
+- Preview interno: Oi {first_name}, tudo bem? Vi que você comprou na LK Flagship o New Balance 204L Mushroom Arid Stone Marrom. Separei uma curadoria pequena no mesmo caminho, peças que conversam com esse estilo, mais pela leitura de moda do que por “mais um sneaker”. Posso te mandar 2 ou 3 opções bem pontuais?
 
 ### Champions/VIP | Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo | whatsapp_concierge (3)
 - Ângulo: Loja física / concierge direto / mesmo perfil
-- Preview interno: Oi {first_name}, tudo bem? Vi que você comprou na LK Flagship o Nike Moon Shoe SP Jacquemus Alabaster Amarelo. Separei uma curadoria pequena no mesmo caminho — peças que conversam com esse estilo, mais pela leitura de moda do que por “mais um sneaker”. Posso te mandar 2 ou 3 opções bem pontuais?
+- Preview interno: Oi {first_name}, tudo bem? Vi que você comprou na LK Flagship o Nike Moon Shoe SP Jacquemus Alabaster Amarelo. Separei uma curadoria pequena no mesmo caminho, peças que conversam com esse estilo, mais pela leitura de moda do que por “mais um sneaker”. Posso te mandar 2 ou 3 opções bem pontuais?
 
 ### Novo alto potencial | Tênis New Balance 204L Mushroom Arid Stone Marrom | klaviyo_preview (3)
 - Ângulo: Loja física / recompra por perfil / sem massificar
@@ -57,7 +57,7 @@ Listas P1 revisadas para a regra aprovada por Lucas: somente clientes cuja compr
 
 ### Champions/VIP | Tênis Adidas Samba OG Crochet Pack Sand Strata Bege | whatsapp_concierge (2)
 - Ângulo: Loja física / concierge direto / mesmo perfil
-- Preview interno: Oi {first_name}, tudo bem? Vi que você comprou na LK Flagship o Adidas Samba OG Crochet Pack Sand Strata Bege. Separei uma curadoria pequena no mesmo caminho — peças que conversam com esse estilo, mais pela leitura de moda do que por “mais um sneaker”. Posso te mandar 2 ou 3 opções bem pontuais?
+- Preview interno: Oi {first_name}, tudo bem? Vi que você comprou na LK Flagship o Adidas Samba OG Crochet Pack Sand Strata Bege. Separei uma curadoria pequena no mesmo caminho, peças que conversam com esse estilo, mais pela leitura de moda do que por “mais um sneaker”. Posso te mandar 2 ou 3 opções bem pontuais?
 
 ### Novo alto potencial | Tênis New Balance 204L Arid Timberwolf Bege | klaviyo_preview (2)
 - Ângulo: Loja física / recompra por perfil / sem massificar
@@ -69,7 +69,7 @@ Listas P1 revisadas para a regra aprovada por Lucas: somente clientes cuja compr
 
 ### Champions/VIP | Tênis New Balance 204L Arid Timberwolf Bege | whatsapp_concierge (1)
 - Ângulo: Loja física / concierge direto / mesmo perfil
-- Preview interno: Oi {first_name}, tudo bem? Vi que você comprou na LK Flagship o New Balance 204L Arid Timberwolf Bege. Separei uma curadoria pequena no mesmo caminho — peças que conversam com esse estilo, mais pela leitura de moda do que por “mais um sneaker”. Posso te mandar 2 ou 3 opções bem pontuais?
+- Preview interno: Oi {first_name}, tudo bem? Vi que você comprou na LK Flagship o New Balance 204L Arid Timberwolf Bege. Separei uma curadoria pequena no mesmo caminho, peças que conversam com esse estilo, mais pela leitura de moda do que por “mais um sneaker”. Posso te mandar 2 ou 3 opções bem pontuais?
 
 ### Champions/VIP | Tênis New Balance 204L Arid Timberwolf Bege | klaviyo_preview (1)
 - Ângulo: Loja física / recompra por perfil / sem massificar

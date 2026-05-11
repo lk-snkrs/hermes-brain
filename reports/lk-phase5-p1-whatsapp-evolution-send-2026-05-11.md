@@ -1,4 +1,4 @@
-# LK Phase 5 P1 — WhatsApp Evolution send log — 2026-05-11
+# LK Phase 5 P1, WhatsApp Evolution send log, 2026-05-11
 
 ## Veredito
 

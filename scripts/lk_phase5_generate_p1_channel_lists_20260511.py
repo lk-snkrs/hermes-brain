@@ -40,7 +40,7 @@ def copy_for(segment: str, recommended_product: str, channel: str, purchase_prod
         if same_product:
             return (
                 'Loja física / concierge direto / mesmo perfil',
-                f'Oi {{first_name}}, tudo bem? Vi que você comprou na LK Flagship o {purchase_short}. Separei uma curadoria pequena no mesmo caminho — peças que conversam com esse estilo, mais pela leitura de moda do que por “mais um sneaker”. Posso te mandar 2 ou 3 opções bem pontuais?',
+                f'Oi {{first_name}}, tudo bem? Vi que você comprou na LK Flagship o {purchase_short}. Separei uma curadoria pequena no mesmo caminho, peças que conversam com esse estilo, mais pela leitura de moda do que por “mais um sneaker”. Posso te mandar 2 ou 3 opções bem pontuais?',
             )
         return (
             'Loja física / concierge direto / curadoria por compra',
@@ -54,12 +54,12 @@ def copy_for(segment: str, recommended_product: str, channel: str, purchase_prod
     if segment == 'Champions/VIP':
         return (
             'Loja física / VIP limitado / sem desconto',
-            f'Você comprou na LK Flagship o {purchase_short}. Pela mesma leitura de estilo, separamos {product_short} em tamanho compatível — uma indicação mais consultiva, pensada para continuar o guarda-roupa e não só repetir categoria.',
+            f'Você comprou na LK Flagship o {purchase_short}. Pela mesma leitura de estilo, separamos {product_short} em tamanho compatível, uma indicação mais consultiva, pensada para continuar o guarda-roupa e não só repetir categoria.',
         )
     if segment == 'Novo alto potencial':
         return (
             'Loja física / segunda compra / curadoria direta',
-            f'Depois da sua escolha na LK Flagship — {purchase_short} — separamos {product_short} como continuidade natural desse estilo: uma recomendação de moda, com estoque real no seu tamanho, sem cara de disparo genérico.',
+            f'Depois da sua escolha na LK Flagship, {purchase_short}, separamos {product_short} como continuidade natural desse estilo: uma recomendação de moda, com estoque real no seu tamanho, sem cara de disparo genérico.',
         )
     return (
         'Loja física / recompra por afinidade',
@@ -261,7 +261,7 @@ def main() -> None:
     OUT_JSON.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + '\n')
 
     lines = [
-        '# LK Phase 5 P1 — listas finais por canal (preview, sem envio) — 2026-05-11', '',
+        '# LK Phase 5 P1, listas finais por canal (preview, sem envio), 2026-05-11', '',
         '## Veredito', '',
         'Listas P1 revisadas para a regra aprovada por Lucas: somente clientes cuja compra-âncora foi na loja física/LK Flagship. Nenhum envio, lista externa, tag, campanha ou automação foi executado.', '',
         '## Regra comercial aplicada', '',

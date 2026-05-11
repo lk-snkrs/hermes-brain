@@ -1,4 +1,4 @@
-# LK OS Fase 5 — P1 recipients + Tiny stock guard — 2026-05-11
+# LK OS Fase 5, P1 recipients + Tiny stock guard, 2026-05-11
 
 ## Escopo
 
@@ -95,7 +95,7 @@ Estruturei a passagem do preview P1 para uma lista operacional segura. Não houv
 - Top tamanhos demandados: 42.5 (1), 40 (1), 36 (1), 37 (1)
 - Gate: can_preview_recipients_for_approval
 
-## Estoque Tiny — resumo por anchor
+## Estoque Tiny, resumo por anchor
 
 ### Tênis Adidas Samba OG Crochet Pack Sand Strata Bege
 - Tamanhos checados: 6

@@ -131,7 +131,7 @@ def main() -> None:
     OUT_JSON.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + '\n')
 
     lines = [
-        '# LK Phase 5 P1 — arquivos aprovados para ação (sem envio) — 2026-05-11', '',
+        '# LK Phase 5 P1, arquivos aprovados para ação (sem envio), 2026-05-11', '',
         '## Veredito', '',
         'Arquivos finais foram preparados com status aprovado, mantendo a regra de loja física/POS e copy direta por produto comprado. Nenhum envio externo foi executado.', '',
         '## Base de aprovação', '',
@@ -148,7 +148,7 @@ def main() -> None:
     lines += ['', '## Distribuição por segmento', '']
     for k, v in by_segment.items():
         lines.append(f'- {k}: {v}')
-    lines += ['', '## Top produtos — todos', '']
+    lines += ['', '## Top produtos, todos', '']
     for k, v in by_product.most_common(10):
         lines.append(f'- {k}: {v}')
     lines += ['', '## Arquivos privados gerados', '']

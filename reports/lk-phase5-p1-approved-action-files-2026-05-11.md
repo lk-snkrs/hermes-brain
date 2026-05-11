@@ -1,4 +1,4 @@
-# LK Phase 5 P1 — arquivos aprovados para ação (sem envio) — 2026-05-11
+# LK Phase 5 P1, arquivos aprovados para ação (sem envio), 2026-05-11
 
 ## Veredito
 
@@ -28,7 +28,7 @@ Arquivos finais foram preparados com status aprovado, mantendo a regra de loja f
 - Champions/VIP: 12
 - Novo alto potencial: 7
 
-## Top produtos — todos
+## Top produtos, todos
 
 - Tênis New Balance 204L Mushroom Arid Stone Marrom: 8
 - Tênis New Balance 204L Arid Timberwolf Bege: 4

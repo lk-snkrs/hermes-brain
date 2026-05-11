@@ -394,7 +394,7 @@ def main() -> None:
     OUT_JSON.write_text(json.dumps(public_report, ensure_ascii=False, indent=2) + "\n")
 
     lines = [
-        "# LK OS Fase 5 — P1 recipients + Tiny stock guard — 2026-05-11",
+        "# LK OS Fase 5, P1 recipients + Tiny stock guard, 2026-05-11",
         "",
         "## Escopo",
         "",
@@ -425,7 +425,7 @@ def main() -> None:
             "",
         ]
     lines += [
-        "## Estoque Tiny — resumo por anchor",
+        "## Estoque Tiny, resumo por anchor",
         "",
     ]
     for title, block in stock_by_anchor.items():
