@@ -62,6 +62,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | LK P0 Remaining Tiny Code Execution 2026-05-11 | `areas/lk/rotinas/lk-p0-remaining-tiny-code-execution-2026-05-11.md` | Execução aprovada: 7/7 códigos Tiny preenchidos e verificados ao vivo, sem Shopify/preço/estoque/produto |
 | LK P0 Blocked Six Correction Queue 2026-05-11 | `areas/lk/rotinas/lk-p0-blocked-six-correction-queue-2026-05-11.md` | Recheck read-only dos 6 P0 restantes; por decisão Lucas ficam stand by/pending de baixa venda |
 | LK OS Next Stage Fila A Sourcing Preview 2026-05-11 | `areas/lk/rotinas/lk-os-next-stage-fila-a-sourcing-preview-2026-05-11.md` | Próxima etapa LK OS: preview read-only de sourcing/reposição, 39 SKU/tamanho agregados e top 15 executivos, sem compra/contato/write |
+| LK Fila A Sourcing Validation + Quote Preview 2026-05-11 | `areas/lk/rotinas/lk-fila-a-sourcing-validation-and-quote-preview-2026-05-11.md` | Continuação da Fila A: tetos de margem, gate de lead time e fila de cotação agrupada, sem envio/compra/write |
 | LK SEO/CRO Weekly Improvement Loop | `areas/lk/rotinas/seo-cro-weekly-improvement-loop.md` | Rotina semanal read-only com Claude SEO: nota, meta e fila priorizada de melhorias de PDP/páginas |
 | Cross-sell Monitor | `areas/lk/sub-areas/crm/rotinas/cross-sell-monitor.md` | Oportunidades pós-pedido |
 | Playbook Campanha CRM Aprovada | `areas/lk/sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md` | Segmentação, preview e aprovação Lucas antes de campanha externa |
