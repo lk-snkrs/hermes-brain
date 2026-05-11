@@ -40,30 +40,30 @@ def copy_for(segment: str, recommended_product: str, channel: str, purchase_prod
         if same_product:
             return (
                 'Loja física / concierge direto / mesmo perfil',
-                f'Oi {{first_name}}, tudo bem? Vi que você comprou na LK Flagship o {purchase_short}. Entrou disponibilidade no mesmo perfil e tamanho; também consigo te mandar mais 2 ou 3 opções que combinam com essa escolha. Quer que eu te mande?',
+                f'Oi {{first_name}}, tudo bem? Vi que você comprou na LK Flagship o {purchase_short}. Separei uma curadoria pequena no mesmo caminho — peças que conversam com esse estilo, mais pela leitura de moda do que por “mais um sneaker”. Posso te mandar 2 ou 3 opções bem pontuais?',
             )
         return (
             'Loja física / concierge direto / curadoria por compra',
-            f'Oi {{first_name}}, tudo bem? Vi que você comprou na LK Flagship o {purchase_short}. Normalmente quem curte essa linha também gosta de ver opções como {product_short}, no mesmo tamanho/perfil. Se quiser, te mando mais 2 ou 3 opções bem curadas antes de abrir para todo mundo.',
+            f'Oi {{first_name}}, tudo bem? Vi que você comprou na LK Flagship o {purchase_short}. Pela leitura da sua escolha, separei {product_short} como uma opção que conversa com esse estilo sem ficar óbvia. Posso te mandar essa e mais algumas alternativas no mesmo clima?',
         )
     if same_product:
         return (
             'Loja física / recompra por perfil / sem massificar',
-            f'Você comprou na LK Flagship o {purchase_short}. Entrou disponibilidade no mesmo perfil e tamanho; também separamos algumas alternativas que conversam com essa escolha, sempre com curadoria LK e estoque real.',
+            f'Você comprou na LK Flagship o {purchase_short}. Fizemos uma leitura de estilo a partir dessa escolha e separamos uma curadoria curta, com peças que mantêm a mesma intenção de moda e disponibilidade real no seu tamanho.',
         )
     if segment == 'Champions/VIP':
         return (
             'Loja física / VIP limitado / sem desconto',
-            f'Você comprou na LK Flagship o {purchase_short}. Pela mesma linha de curadoria, separamos {product_short} em tamanho compatível, com atendimento próximo e sem comunicação massiva.',
+            f'Você comprou na LK Flagship o {purchase_short}. Pela mesma leitura de estilo, separamos {product_short} em tamanho compatível — uma indicação mais consultiva, pensada para continuar o guarda-roupa e não só repetir categoria.',
         )
     if segment == 'Novo alto potencial':
         return (
             'Loja física / segunda compra / curadoria direta',
-            f'Depois da sua escolha na LK Flagship — {purchase_short} — separamos uma recomendação que combina com esse perfil: {product_short}, com disponibilidade real no seu tamanho.',
+            f'Depois da sua escolha na LK Flagship — {purchase_short} — separamos {product_short} como continuidade natural desse estilo: uma recomendação de moda, com estoque real no seu tamanho, sem cara de disparo genérico.',
         )
     return (
         'Loja física / recompra por afinidade',
-        f'Seleção LK baseada na sua compra presencial de {purchase_short}: {product_short}, com disponibilidade real no seu tamanho.',
+        f'Seleção LK baseada na sua compra presencial de {purchase_short}: {product_short}, com curadoria de moda e disponibilidade real no seu tamanho.',
     )
 
 
