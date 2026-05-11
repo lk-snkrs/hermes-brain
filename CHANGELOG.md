@@ -1,3 +1,11 @@
+## 2026-05-11 — LK Approved P1 SEO Fields Execution
+
+- Após aprovação de Lucas (`Aprovada as melhorias, seguir`), criado e executado `scripts/lk_apply_approved_p1_seo_fields_20260511.py`, aplicando somente SEO title/meta dos 8 pacotes P1 no Shopify via Admin GraphQL.
+- Resultado: 8 tentativas, 8 executadas e verificadas live, 0 falhas, 0 pulos, 0 mudanças visíveis e 0 writes não-SEO.
+- Escopo aplicado: collections `air-jordan-travis-scott`, `new-balance-204l`, `onitsuka-tiger-todos-os-modelos`, `onitsuka-tiger-mexico-66`, `adidas-samba-jane`; PDPs `crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho`, `slide-nike-mind-001-black-chrome-preto` e `bone-5-panel-aime-leon-dore-unisphere-branco`.
+- Artefatos com backup/rollback: `areas/lk/rotinas/approved-p1-seo-fields-execution-2026-05-11.md`, `reports/lk-approved-p1-seo-fields-execution-2026-05-11.md` e `.json`.
+- Não foram alterados H1/body/layout/tema/preço/estoque/SKU/imagem/Merchant/feed/GSC/campanhas/envios/crons.
+
 ## 2026-05-11 — LK P1 SEO/CRO Approval Packets
 
 - Criado e executado `scripts/lk_p1_seo_cro_approval_packets_20260511.py`, convertendo os top P1 da fila de baixa conversão em pacotes de aprovação com HTML público lido em modo read-only.
