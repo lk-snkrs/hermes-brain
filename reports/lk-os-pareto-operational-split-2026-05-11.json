@@ -1,0 +1,534 @@
+{
+  "generated_at": "2026-05-11T20:24:13.686800+00:00",
+  "scope": "LK OS Phase 3 Pareto-compatible vs Lucas-operational split, read-only",
+  "read_only": true,
+  "sources": {
+    "pareto_monthly_reconciliation": "reports/lk-pareto-april-2026/pareto-compatible-script-output.json",
+    "identity_bridge": "reports/lk-os-influencer-identity-bridge-2026-05-11.json"
+  },
+  "periods": {
+    "pareto_month": "2026-04",
+    "pareto_period": {
+      "start": "2026-04-01",
+      "end": "2026-04-30"
+    },
+    "identity_bridge_generated_at": "2026-05-11T20:18:19.657678+00:00"
+  },
+  "rules": {
+    "pareto_compatible": [
+      "Match influencer primarily by Meta ad_name using Maicon rule.",
+      "Sum all ad_id rows under the same normalized influencer.",
+      "Keep Maria, Maria Fernanda and Mariah separated.",
+      "Numbers remain platform_signal and are compatible with Pareto/Meta dashboard language."
+    ],
+    "lucas_operational": [
+      "Do not decide product, stock, budget, coupon or creative from campaign/adset generic names.",
+      "Require Shopify/Tiny bridge for product/SKU/size consequences.",
+      "Silvia/Helena have usable bridge for internal analysis; Lala remains investigation in this recorte.",
+      "Even when usable, execution still requires explicit approval for campaign/coupon/send/write."
+    ]
+  },
+  "summary": {
+    "operational_decision_allowed_now": 2,
+    "platform_signal_or_investigation_only": 13,
+    "pareto_rows": 11,
+    "lucas_operational_rows": 14
+  },
+  "global_platform_signal": {
+    "label": "Meta global",
+    "ads": 180,
+    "spend_platform_signal": 38954.76,
+    "purchases_platform_signal": 229.0,
+    "value_platform_signal": 797654.65,
+    "roas_platform_signal": 20.48,
+    "cpa_platform_signal": 170.11,
+    "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+    "example_ad_ids_count": 5
+  },
+  "match_source_counts": {
+    "pareto_compatible": {
+      "ad_name": 104
+    },
+    "lucas_operational": {
+      "ad_name": 118
+    }
+  },
+  "split_rows": [
+    {
+      "label": "Silvia",
+      "pareto_compatible": {
+        "label": "Silvia",
+        "ads": 31,
+        "spend_platform_signal": 10829.11,
+        "purchases_platform_signal": 38.0,
+        "value_platform_signal": 144971.35,
+        "roas_platform_signal": 13.39,
+        "cpa_platform_signal": 284.98,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 5
+      },
+      "lucas_operational": null,
+      "bridge_strength": "strong",
+      "identity_status": "validated_needs_official_handle_coupon_registry",
+      "source_labels": [
+        "platform_signal",
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_name_as_reported",
+      "grouping_rule_lucas_operational": "lucas_operational_requires_shopify_tiny_bridge_before_stock_or_campaign_decision",
+      "operational_decision_allowed_now": true,
+      "operational_decision_limit": "may_prepare internal product/stock analysis only, still no campaign/coupon/send/write without approval"
+    },
+    {
+      "label": "Helena",
+      "pareto_compatible": {
+        "label": "Helena",
+        "ads": 23,
+        "spend_platform_signal": 3952.76,
+        "purchases_platform_signal": 32.0,
+        "value_platform_signal": 107414.76,
+        "roas_platform_signal": 27.17,
+        "cpa_platform_signal": 123.52,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 5
+      },
+      "lucas_operational": null,
+      "bridge_strength": "partial",
+      "identity_status": "mapped_needs_official_registry_and_ad_id_bridge",
+      "source_labels": [
+        "platform_signal",
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_name_as_reported",
+      "grouping_rule_lucas_operational": "lucas_operational_requires_shopify_tiny_bridge_before_stock_or_campaign_decision",
+      "operational_decision_allowed_now": true,
+      "operational_decision_limit": "may_prepare internal product/stock analysis only, still no campaign/coupon/send/write without approval"
+    },
+    {
+      "label": "Lala Noleto",
+      "pareto_compatible": {
+        "label": "Lala Noleto",
+        "ads": 15,
+        "spend_platform_signal": 7155.62,
+        "purchases_platform_signal": 55.0,
+        "value_platform_signal": 166660.76,
+        "roas_platform_signal": 23.29,
+        "cpa_platform_signal": 130.1,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 4
+      },
+      "lucas_operational": {
+        "label": "Lala Noleto",
+        "ads": 15,
+        "spend_platform_signal": 7155.62,
+        "purchases_platform_signal": 55.0,
+        "value_platform_signal": 166660.76,
+        "roas_platform_signal": 23.29,
+        "cpa_platform_signal": 130.1,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 4
+      },
+      "bridge_strength": "none_found_in_recorte",
+      "identity_status": "investigation_required_before_operational_use",
+      "source_labels": [
+        "platform_signal",
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_name_as_reported",
+      "grouping_rule_lucas_operational": "lucas_operational_requires_shopify_tiny_bridge_before_stock_or_campaign_decision",
+      "operational_decision_allowed_now": false,
+      "operational_decision_limit": "do not use for stock/campaign/budget decision until Shopify/Tiny bridge or official registry is confirmed"
+    },
+    {
+      "label": "Maria",
+      "pareto_compatible": {
+        "label": "Maria",
+        "ads": 2,
+        "spend_platform_signal": 907.85,
+        "purchases_platform_signal": 2.0,
+        "value_platform_signal": 741.54,
+        "roas_platform_signal": 0.82,
+        "cpa_platform_signal": 453.93,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 2
+      },
+      "lucas_operational": {
+        "label": "Maria",
+        "ads": 2,
+        "spend_platform_signal": 907.85,
+        "purchases_platform_signal": 2.0,
+        "value_platform_signal": 741.54,
+        "roas_platform_signal": 0.82,
+        "cpa_platform_signal": 453.93,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 2
+      },
+      "bridge_strength": "not_evaluated_in_current_identity_bridge_keep_separate",
+      "identity_status": "not_in_identity_bridge",
+      "source_labels": [
+        "platform_signal"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_keep_separate_marias",
+      "grouping_rule_lucas_operational": "also_keep_separate_unless_lucas_explicitly_requests_family_rollup",
+      "operational_decision_allowed_now": false,
+      "operational_decision_limit": "do not use for stock/campaign/budget decision until Shopify/Tiny bridge or official registry is confirmed"
+    },
+    {
+      "label": "Maria Fernanda",
+      "pareto_compatible": {
+        "label": "Maria Fernanda",
+        "ads": 4,
+        "spend_platform_signal": 224.07,
+        "purchases_platform_signal": 0.0,
+        "value_platform_signal": 0.0,
+        "roas_platform_signal": 0.0,
+        "cpa_platform_signal": 0.0,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 3
+      },
+      "lucas_operational": {
+        "label": "Maria Fernanda",
+        "ads": 4,
+        "spend_platform_signal": 224.07,
+        "purchases_platform_signal": 0.0,
+        "value_platform_signal": 0.0,
+        "roas_platform_signal": 0.0,
+        "cpa_platform_signal": 0.0,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 3
+      },
+      "bridge_strength": "not_evaluated_in_current_identity_bridge_keep_separate",
+      "identity_status": "not_in_identity_bridge",
+      "source_labels": [
+        "platform_signal"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_keep_separate_marias",
+      "grouping_rule_lucas_operational": "also_keep_separate_unless_lucas_explicitly_requests_family_rollup",
+      "operational_decision_allowed_now": false,
+      "operational_decision_limit": "do not use for stock/campaign/budget decision until Shopify/Tiny bridge or official registry is confirmed"
+    },
+    {
+      "label": "Mariah",
+      "pareto_compatible": {
+        "label": "Mariah",
+        "ads": 4,
+        "spend_platform_signal": 193.18,
+        "purchases_platform_signal": 0.0,
+        "value_platform_signal": 0.0,
+        "roas_platform_signal": 0.0,
+        "cpa_platform_signal": 0.0,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 3
+      },
+      "lucas_operational": {
+        "label": "Mariah",
+        "ads": 4,
+        "spend_platform_signal": 193.18,
+        "purchases_platform_signal": 0.0,
+        "value_platform_signal": 0.0,
+        "roas_platform_signal": 0.0,
+        "cpa_platform_signal": 0.0,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 3
+      },
+      "bridge_strength": "not_evaluated_in_current_identity_bridge_keep_separate",
+      "identity_status": "not_in_identity_bridge",
+      "source_labels": [
+        "platform_signal"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_keep_separate_marias",
+      "grouping_rule_lucas_operational": "also_keep_separate_unless_lucas_explicitly_requests_family_rollup",
+      "operational_decision_allowed_now": false,
+      "operational_decision_limit": "do not use for stock/campaign/budget decision until Shopify/Tiny bridge or official registry is confirmed"
+    },
+    {
+      "label": "Arlindo",
+      "pareto_compatible": {
+        "label": "Arlindo",
+        "ads": 3,
+        "spend_platform_signal": 2071.87,
+        "purchases_platform_signal": 16.0,
+        "value_platform_signal": 75312.65,
+        "roas_platform_signal": 36.35,
+        "cpa_platform_signal": 129.49,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 3
+      },
+      "lucas_operational": {
+        "label": "Arlindo",
+        "ads": 3,
+        "spend_platform_signal": 2071.87,
+        "purchases_platform_signal": 16.0,
+        "value_platform_signal": 75312.65,
+        "roas_platform_signal": 36.35,
+        "cpa_platform_signal": 129.49,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 3
+      },
+      "bridge_strength": "unknown_or_platform_signal_only",
+      "identity_status": "not_in_identity_bridge",
+      "source_labels": [
+        "platform_signal"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_platform_row",
+      "grouping_rule_lucas_operational": "lucas_operational_platform_signal_only_until_bridge_exists",
+      "operational_decision_allowed_now": false,
+      "operational_decision_limit": "do not use for stock/campaign/budget decision until Shopify/Tiny bridge or official registry is confirmed"
+    },
+    {
+      "label": "Fiorela",
+      "pareto_compatible": {
+        "label": "Fiorela",
+        "ads": 9,
+        "spend_platform_signal": 1833.69,
+        "purchases_platform_signal": 12.0,
+        "value_platform_signal": 42691.5,
+        "roas_platform_signal": 23.28,
+        "cpa_platform_signal": 152.81,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 5
+      },
+      "lucas_operational": {
+        "label": "Fiorela",
+        "ads": 9,
+        "spend_platform_signal": 1833.69,
+        "purchases_platform_signal": 12.0,
+        "value_platform_signal": 42691.5,
+        "roas_platform_signal": 23.28,
+        "cpa_platform_signal": 152.81,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 5
+      },
+      "bridge_strength": "unknown_or_platform_signal_only",
+      "identity_status": "not_in_identity_bridge",
+      "source_labels": [
+        "platform_signal"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_platform_row",
+      "grouping_rule_lucas_operational": "lucas_operational_platform_signal_only_until_bridge_exists",
+      "operational_decision_allowed_now": false,
+      "operational_decision_limit": "do not use for stock/campaign/budget decision until Shopify/Tiny bridge or official registry is confirmed"
+    },
+    {
+      "label": "Gio Pagano",
+      "pareto_compatible": {
+        "label": "Gio Pagano",
+        "ads": 1,
+        "spend_platform_signal": 0.71,
+        "purchases_platform_signal": 0.0,
+        "value_platform_signal": 0.0,
+        "roas_platform_signal": 0.0,
+        "cpa_platform_signal": 0.0,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 1
+      },
+      "lucas_operational": {
+        "label": "Gio Pagano",
+        "ads": 1,
+        "spend_platform_signal": 0.71,
+        "purchases_platform_signal": 0.0,
+        "value_platform_signal": 0.0,
+        "roas_platform_signal": 0.0,
+        "cpa_platform_signal": 0.0,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 1
+      },
+      "bridge_strength": "unknown_or_platform_signal_only",
+      "identity_status": "not_in_identity_bridge",
+      "source_labels": [
+        "platform_signal"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_platform_row",
+      "grouping_rule_lucas_operational": "lucas_operational_platform_signal_only_until_bridge_exists",
+      "operational_decision_allowed_now": false,
+      "operational_decision_limit": "do not use for stock/campaign/budget decision until Shopify/Tiny bridge or official registry is confirmed"
+    },
+    {
+      "label": "Hariana",
+      "pareto_compatible": null,
+      "lucas_operational": {
+        "label": "Hariana",
+        "ads": 2,
+        "spend_platform_signal": 7.15,
+        "purchases_platform_signal": 0.0,
+        "value_platform_signal": 0.0,
+        "roas_platform_signal": 0.0,
+        "cpa_platform_signal": 0.0,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 2
+      },
+      "bridge_strength": "unknown_or_platform_signal_only",
+      "identity_status": "not_in_identity_bridge",
+      "source_labels": [
+        "platform_signal"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_platform_row",
+      "grouping_rule_lucas_operational": "lucas_operational_platform_signal_only_until_bridge_exists",
+      "operational_decision_allowed_now": false,
+      "operational_decision_limit": "do not use for stock/campaign/budget decision until Shopify/Tiny bridge or official registry is confirmed"
+    },
+    {
+      "label": "Ju Mesquita",
+      "pareto_compatible": {
+        "label": "Ju Mesquita",
+        "ads": 9,
+        "spend_platform_signal": 2663.19,
+        "purchases_platform_signal": 20.0,
+        "value_platform_signal": 58595.44,
+        "roas_platform_signal": 22.0,
+        "cpa_platform_signal": 133.16,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 5
+      },
+      "lucas_operational": {
+        "label": "Ju Mesquita",
+        "ads": 9,
+        "spend_platform_signal": 2663.19,
+        "purchases_platform_signal": 20.0,
+        "value_platform_signal": 58595.44,
+        "roas_platform_signal": 22.0,
+        "cpa_platform_signal": 133.16,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 5
+      },
+      "bridge_strength": "unknown_or_platform_signal_only",
+      "identity_status": "not_in_identity_bridge",
+      "source_labels": [
+        "platform_signal"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_platform_row",
+      "grouping_rule_lucas_operational": "lucas_operational_platform_signal_only_until_bridge_exists",
+      "operational_decision_allowed_now": false,
+      "operational_decision_limit": "do not use for stock/campaign/budget decision until Shopify/Tiny bridge or official registry is confirmed"
+    },
+    {
+      "label": "Malu Borges",
+      "pareto_compatible": {
+        "label": "Malu Borges",
+        "ads": 3,
+        "spend_platform_signal": 13.65,
+        "purchases_platform_signal": 0.0,
+        "value_platform_signal": 0.0,
+        "roas_platform_signal": 0.0,
+        "cpa_platform_signal": 0.0,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 3
+      },
+      "lucas_operational": {
+        "label": "Malu Borges",
+        "ads": 3,
+        "spend_platform_signal": 13.65,
+        "purchases_platform_signal": 0.0,
+        "value_platform_signal": 0.0,
+        "roas_platform_signal": 0.0,
+        "cpa_platform_signal": 0.0,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 3
+      },
+      "bridge_strength": "unknown_or_platform_signal_only",
+      "identity_status": "not_in_identity_bridge",
+      "source_labels": [
+        "platform_signal"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_platform_row",
+      "grouping_rule_lucas_operational": "lucas_operational_platform_signal_only_until_bridge_exists",
+      "operational_decision_allowed_now": false,
+      "operational_decision_limit": "do not use for stock/campaign/budget decision until Shopify/Tiny bridge or official registry is confirmed"
+    },
+    {
+      "label": "Renata",
+      "pareto_compatible": null,
+      "lucas_operational": {
+        "label": "Renata",
+        "ads": 5,
+        "spend_platform_signal": 12.09,
+        "purchases_platform_signal": 0.0,
+        "value_platform_signal": 0.0,
+        "roas_platform_signal": 0.0,
+        "cpa_platform_signal": 0.0,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 3
+      },
+      "bridge_strength": "unknown_or_platform_signal_only",
+      "identity_status": "not_in_identity_bridge",
+      "source_labels": [
+        "platform_signal"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_platform_row",
+      "grouping_rule_lucas_operational": "lucas_operational_platform_signal_only_until_bridge_exists",
+      "operational_decision_allowed_now": false,
+      "operational_decision_limit": "do not use for stock/campaign/budget decision until Shopify/Tiny bridge or official registry is confirmed"
+    },
+    {
+      "label": "Silvia Henz",
+      "pareto_compatible": null,
+      "lucas_operational": {
+        "label": "Silvia Henz",
+        "ads": 35,
+        "spend_platform_signal": 11181.85,
+        "purchases_platform_signal": 39.0,
+        "value_platform_signal": 147131.35,
+        "roas_platform_signal": 13.16,
+        "cpa_platform_signal": 286.71,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 5
+      },
+      "bridge_strength": "unknown_or_platform_signal_only",
+      "identity_status": "not_in_identity_bridge",
+      "source_labels": [
+        "platform_signal"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_platform_row",
+      "grouping_rule_lucas_operational": "lucas_operational_platform_signal_only_until_bridge_exists",
+      "operational_decision_allowed_now": false,
+      "operational_decision_limit": "do not use for stock/campaign/budget decision until Shopify/Tiny bridge or official registry is confirmed"
+    },
+    {
+      "label": "Taby",
+      "pareto_compatible": null,
+      "lucas_operational": {
+        "label": "Taby",
+        "ads": 3,
+        "spend_platform_signal": 6.85,
+        "purchases_platform_signal": 0.0,
+        "value_platform_signal": 0.0,
+        "roas_platform_signal": 0.0,
+        "cpa_platform_signal": 0.0,
+        "match_basis": "Meta ad_name primary, adset/campaign fallback only if ad_name absent",
+        "example_ad_ids_count": 3
+      },
+      "bridge_strength": "unknown_or_platform_signal_only",
+      "identity_status": "not_in_identity_bridge",
+      "source_labels": [
+        "platform_signal"
+      ],
+      "grouping_rule_pareto_compatible": "pareto_compatible_platform_row",
+      "grouping_rule_lucas_operational": "lucas_operational_platform_signal_only_until_bridge_exists",
+      "operational_decision_allowed_now": false,
+      "operational_decision_limit": "do not use for stock/campaign/budget decision until Shopify/Tiny bridge or official registry is confirmed"
+    }
+  ],
+  "not_performed": [
+    "live_meta_call",
+    "live_shopify_call",
+    "live_ga4_call",
+    "live_metricool_call",
+    "live_klaviyo_call",
+    "campaign_change",
+    "budget_change",
+    "creative_change",
+    "coupon_create_or_update",
+    "utm_change",
+    "shopify_write",
+    "tiny_write",
+    "customer_send",
+    "production_db_write",
+    "cron_creation"
+  ]
+}
