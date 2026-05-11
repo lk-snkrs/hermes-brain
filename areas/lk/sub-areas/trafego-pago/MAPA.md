@@ -23,3 +23,5 @@ Pastas: angulos, formatos, criativos, testes, learnings, skills, rotinas.
 - `templates/campaign-attribution-record.md` — template de registro canônico por campanha/influencer.
 
 - `contexto/campaign-attribution-dictionary-seed-v0.md` — primeira versão preenchida/read-only do dicionário com Silvia, Helena, Lala, Ju Mesquita, Mariah, Arlindo, Maria Fernanda e campanhas broad/Advantage+/RMKT/DABA/Jacquemus.
+
+- `contexto/campaign-attribution-dictionary-v0.2.md` — dicionário operacional read-only que amarra influencer/campanha → produto + SKU + tamanho → consequência de estoque Tiny `LK | CONTROLE ESTOQUE`; torna Silvia/Helena acionáveis para análise de reposição/sourcing e mantém Lala como investigação até existir ponte Shopify direta.
