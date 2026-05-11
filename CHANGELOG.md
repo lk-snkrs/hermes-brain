@@ -1,3 +1,11 @@
+## 2026-05-11 — LK OS Supplier Quote Approval Packet read-only
+
+- Criado e executado `scripts/lk_os_supplier_quote_approval_packet_20260511.py`, pacote de aprovação para decidir se a LK autoriza apenas envio de cotação a fornecedores.
+- Resultado: 8 decisões por família, sendo 4 prontas para `approve_quote_only`, 1 opcional/segurar e 3 `needs_data` por pendência SKU/Tiny.
+- Quantidade referência de cotação: `26` unidades, explicitamente não-compra; sinal de receita Shopify: `R$ 89.669,71`.
+- Artefatos: `areas/lk/rotinas/supplier-quote-approval-packet-readonly-2026-05-11.md`, `reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.md`, `.json` e `.csv`.
+- Nenhum fornecedor foi contatado; nenhuma mensagem externa, compra, PO, reserva, write Shopify/Tiny, preço, estoque, campanha, cron ou envio externo foi executado.
+
 ## 2026-05-11 — LK OS Weekly Quote Validation Preview read-only
 
 - Criado e executado `scripts/lk_os_weekly_quote_validation_preview_20260511.py`, convertendo a fila semanal Stock/SKU em preview interno de validação/cotação.

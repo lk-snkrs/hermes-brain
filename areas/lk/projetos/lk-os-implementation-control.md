@@ -202,6 +202,7 @@ Entregáveis:
 - [x] Weekly CEO Review v0.1 com vendas, canais, estoque e mídia como `platform_signal`, em `reports/lk-os-weekly-ceo-review-2026-05-04_2026-05-10.md`; recompra/SEO seguem como módulos de profundidade separados.
 - [x] Weekly Stock/SKU Action Plan read-only derivado do Weekly CEO Review, com 14 P0/P1 e separação entre cotação preview, validar antes de cotar e resolver SKU/Tiny primeiro.
 - [x] Weekly Quote Validation Preview read-only derivado da fila Stock/SKU, com 8 grupos de cotação, tetos de custo 45/50/55%, gate de lead time e quantidade referência não-compra.
+- [x] Supplier Quote Approval Packet read-only com 8 decisões por família, status `approve_quote_only`/`needs_data`/`hold_or_bundle_with_p0`, e briefs preview não enviados.
 - [x] Versão Telegram curta, preview-only, em `reports/lk-os-daily-sales-brief-telegram-preview-2026-05-10.md`.
 - [x] Versão Brain/report detalhada em `reports/lk-os-daily-sales-brief-2026-05-10.md` e `.json`.
 - [x] Critério de silêncio: `would_notify=true` só para P0/P1, falha de API ou pedido explícito; sem envio/criação de cron.
@@ -264,10 +265,10 @@ Objetivo: cada aprovação/correção do Lucas muda o sistema.
 
 Entregáveis:
 
-- [ ] Template de approval preview por tipo de ação.
-- [ ] Log de decisões do Projeto LK OS.
+- [x] Template de approval preview por tipo de ação.
+- [x] Log de decisões do Projeto LK OS iniciado via pacote `supplier-quote-approval-packet`: status `approve_quote_only`, `reject`, `needs_data`, `hold_or_bundle_with_p0`; execução externa bloqueada até aprovação.
 - [ ] Rotina de patch em skills quando Lucas corrige regra.
-- [ ] Regra de status: approved, rejected, needs_data, needs_preview, executed.
+- [x] Regra de status: approved, rejected, needs_data, needs_preview, executed.
 
 Critério de saída:
 

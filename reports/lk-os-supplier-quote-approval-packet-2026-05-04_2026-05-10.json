@@ -1,0 +1,368 @@
+{
+  "generated_at": "2026-05-11T19:57:37.379306+00:00",
+  "scope": "LK OS approval packet for supplier quote sending, preview-only/read-only",
+  "read_only": true,
+  "summary": {
+    "source_quote_validation_preview": "reports/lk-os-weekly-quote-validation-preview-2026-05-04_2026-05-10.json",
+    "week": {
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-10",
+      "start_iso": "2026-05-04T00:00:00-03:00",
+      "end_iso": "2026-05-10T23:59:59-03:00",
+      "label": "last_7_closed_days_brt"
+    },
+    "decision_rows": 8,
+    "approval_status_counts": {
+      "ready_for_approval_quote_only": 4,
+      "optional_quote_or_hold": 1,
+      "needs_data": 3
+    },
+    "reference_quote_qty_not_purchase_qty": 26,
+    "revenue_signal_fact_shopify": 89669.71,
+    "ready_for_quote_only_count": 4,
+    "needs_data_count": 3,
+    "optional_quote_or_hold_count": 1
+  },
+  "decisions": [
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-01",
+      "family": "Nike Moon Shoe SP Jacquemus",
+      "approval_status": "ready_for_approval_quote_only",
+      "recommended_decision": "Aprovar envio de cotação apenas para disponibilidade, custo e lead time; compra separada depois.",
+      "default_safe_choice": "approve_quote_only",
+      "allowed_approval_values": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "items_count": 5,
+      "p0_count": 2,
+      "p1_count": 3,
+      "reference_quote_qty_not_purchase_qty": 10,
+      "revenue_signal_fact_shopify": 48999.92,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "supplier_brief_preview_not_sent": "Olá, preciso validar disponibilidade e custo para Nike Moon Shoe SP Jacquemus.\nIsto é consulta de disponibilidade/preço, ainda não é pedido de compra.\nItens para cotação:\n- SKU HV8547-200-38 | tamanho 38 | referência cotação 3 un | prioridade P0\n- SKU HV8547-002-36 | tamanho 36 | referência cotação 3 un | prioridade P0\n- SKU HV8547-001-1 | tamanho 34 | referência cotação 1 un | prioridade P1\n- SKU HV8547-001-7 | tamanho 40 | referência cotação 1 un | prioridade P1\n- SKU HV8547-601-37 | tamanho 37 | referência cotação 2 un | prioridade P1\nResponder por favor: custo unitário, disponibilidade imediata, lead time, condição de pagamento e validade da cotação.\nNão separar, reservar ou faturar sem confirmação posterior.",
+      "approval_required_before": [
+        "supplier_contact",
+        "sending_quote_brief"
+      ],
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-02",
+      "family": "New Balance 9060",
+      "approval_status": "ready_for_approval_quote_only",
+      "recommended_decision": "Aprovar envio de cotação apenas para disponibilidade, custo e lead time; compra separada depois.",
+      "default_safe_choice": "approve_quote_only",
+      "allowed_approval_values": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "items_count": 3,
+      "p0_count": 2,
+      "p1_count": 1,
+      "reference_quote_qty_not_purchase_qty": 8,
+      "revenue_signal_fact_shopify": 18799.93,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "supplier_brief_preview_not_sent": "Olá, preciso validar disponibilidade e custo para New Balance 9060.\nIsto é consulta de disponibilidade/preço, ainda não é pedido de compra.\nItens para cotação:\n- SKU U9060CCC-4 | tamanho 37 | referência cotação 3 un | prioridade P0\n- SKU U9060WHT-4 | tamanho 37 | referência cotação 3 un | prioridade P0\n- SKU U9060ERB-3 | tamanho 36 | referência cotação 2 un | prioridade P1\nResponder por favor: custo unitário, disponibilidade imediata, lead time, condição de pagamento e validade da cotação.\nNão separar, reservar ou faturar sem confirmação posterior.",
+      "approval_required_before": [
+        "supplier_contact",
+        "sending_quote_brief"
+      ],
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-03",
+      "family": "Nike Mind 002",
+      "approval_status": "ready_for_approval_quote_only",
+      "recommended_decision": "Aprovar envio de cotação apenas para disponibilidade, custo e lead time; compra separada depois.",
+      "default_safe_choice": "approve_quote_only",
+      "allowed_approval_values": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "items_count": 1,
+      "p0_count": 1,
+      "p1_count": 0,
+      "reference_quote_qty_not_purchase_qty": 3,
+      "revenue_signal_fact_shopify": 6399.98,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "supplier_brief_preview_not_sent": "Olá, preciso validar disponibilidade e custo para Nike Mind 002.\nIsto é consulta de disponibilidade/preço, ainda não é pedido de compra.\nItens para cotação:\n- SKU HQ4308-003-5 | tamanho 36 | referência cotação 3 un | prioridade P0\nResponder por favor: custo unitário, disponibilidade imediata, lead time, condição de pagamento e validade da cotação.\nNão separar, reservar ou faturar sem confirmação posterior.",
+      "approval_required_before": [
+        "supplier_contact",
+        "sending_quote_brief"
+      ],
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-04",
+      "family": "Comme des Garçons PLAY Polo",
+      "approval_status": "ready_for_approval_quote_only",
+      "recommended_decision": "Aprovar envio de cotação apenas para disponibilidade, custo e lead time; compra separada depois.",
+      "default_safe_choice": "approve_quote_only",
+      "allowed_approval_values": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "items_count": 1,
+      "p0_count": 1,
+      "p1_count": 0,
+      "reference_quote_qty_not_purchase_qty": 3,
+      "revenue_signal_fact_shopify": 3599.98,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "supplier_brief_preview_not_sent": "Olá, preciso validar disponibilidade e custo para Comme des Garçons PLAY Polo.\nIsto é consulta de disponibilidade/preço, ainda não é pedido de compra.\nItens para cotação:\n- SKU CDGP2 | tamanho G/L | referência cotação 3 un | prioridade P0\nResponder por favor: custo unitário, disponibilidade imediata, lead time, condição de pagamento e validade da cotação.\nNão separar, reservar ou faturar sem confirmação posterior.",
+      "approval_required_before": [
+        "supplier_contact",
+        "sending_quote_brief"
+      ],
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-05",
+      "family": "New Balance 530",
+      "approval_status": "optional_quote_or_hold",
+      "recommended_decision": "Opcional: cotar junto se fornecedor já responder P0; caso contrário manter em observação.",
+      "default_safe_choice": "hold_or_bundle_with_p0",
+      "allowed_approval_values": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "items_count": 1,
+      "p0_count": 0,
+      "p1_count": 1,
+      "reference_quote_qty_not_purchase_qty": 2,
+      "revenue_signal_fact_shopify": 5999.97,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "supplier_brief_preview_not_sent": "Olá, preciso validar disponibilidade e custo para New Balance 530.\nIsto é consulta de disponibilidade/preço, ainda não é pedido de compra.\nItens para cotação:\n- SKU MR530EMA-5 | tamanho 38 | referência cotação 2 un | prioridade P1\nResponder por favor: custo unitário, disponibilidade imediata, lead time, condição de pagamento e validade da cotação.\nNão separar, reservar ou faturar sem confirmação posterior.",
+      "approval_required_before": [
+        "supplier_contact",
+        "sending_quote_brief"
+      ],
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-06",
+      "family": "Onitsuka Tiger Mexico 66",
+      "approval_status": "needs_data",
+      "recommended_decision": "Não enviar a fornecedor agora; resolver SKU/Tiny ou dados internos primeiro.",
+      "default_safe_choice": "needs_data",
+      "allowed_approval_values": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "items_count": 1,
+      "p0_count": 0,
+      "p1_count": 1,
+      "reference_quote_qty_not_purchase_qty": 0,
+      "revenue_signal_fact_shopify": 4799.98,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "supplier_brief_preview_not_sent": "Bloqueado para envio externo: resolver SKU/Tiny antes de cotar.",
+      "approval_required_before": [
+        "supplier_contact",
+        "sending_quote_brief"
+      ],
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-07",
+      "family": "Camiseta Saint Studio Boxy",
+      "approval_status": "needs_data",
+      "recommended_decision": "Não enviar a fornecedor agora; resolver SKU/Tiny ou dados internos primeiro.",
+      "default_safe_choice": "needs_data",
+      "allowed_approval_values": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "items_count": 1,
+      "p0_count": 0,
+      "p1_count": 1,
+      "reference_quote_qty_not_purchase_qty": 0,
+      "revenue_signal_fact_shopify": 619.98,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "supplier_brief_preview_not_sent": "Bloqueado para envio externo: resolver SKU/Tiny antes de cotar.",
+      "approval_required_before": [
+        "supplier_contact",
+        "sending_quote_brief"
+      ],
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-08",
+      "family": "Bearbrick Series 48",
+      "approval_status": "needs_data",
+      "recommended_decision": "Não enviar a fornecedor agora; resolver SKU/Tiny ou dados internos primeiro.",
+      "default_safe_choice": "needs_data",
+      "allowed_approval_values": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "items_count": 1,
+      "p0_count": 0,
+      "p1_count": 1,
+      "reference_quote_qty_not_purchase_qty": 0,
+      "revenue_signal_fact_shopify": 449.97,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "supplier_brief_preview_not_sent": "Bloqueado para envio externo: resolver SKU/Tiny antes de cotar.",
+      "approval_required_before": [
+        "supplier_contact",
+        "sending_quote_brief"
+      ],
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ]
+    }
+  ],
+  "approval_schema": {
+    "status_values": [
+      "approved",
+      "rejected",
+      "needs_data",
+      "needs_preview",
+      "executed"
+    ],
+    "decision_values_for_this_packet": [
+      "approve_quote_only",
+      "reject",
+      "needs_data",
+      "hold_or_bundle_with_p0"
+    ],
+    "execution_blocked_until_manual_approval": true
+  },
+  "not_performed": [
+    "supplier_contact",
+    "external_send",
+    "purchase_order",
+    "purchase",
+    "reservation",
+    "shopify_write",
+    "tiny_write",
+    "price_or_stock_change",
+    "campaign_send",
+    "cron_creation"
+  ]
+}
