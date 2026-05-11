@@ -106,7 +106,7 @@ Entregáveis:
 - [x] Guardrails de aprovação.
 - [x] Watchdogs básicos Hermes/v0.13.
 - [x] Dicionário influencer/campanha v0.2.
-- [ ] Este plano mestre versionado e indexado.
+- [x] Este plano mestre versionado e indexado.
 - [ ] Card/linha de Mission Control para o Projeto LK OS.
 
 Critério de saída:
@@ -138,19 +138,21 @@ Critério de saída:
 
 ### Fase 2 — Stock Intelligence Center
 
-Status: parcialmente iniciado.
+Status: em andamento; primeira fila operacional read-only criada.
 
 Objetivo: transformar venda + estoque + lead time em ação de estoque, sem compra automática.
 
 Entregáveis:
 
-- [ ] Lista `ruptura agora` por produto + SKU + tamanho.
-- [ ] Lista `baixo estoque` por produto + SKU + tamanho.
-- [ ] Lista `mapear SKU Tiny`.
-- [ ] Lista `sem SKU no Shopify`.
+- [x] Lista `ruptura agora` por produto + SKU + tamanho.
+- [x] Lista `baixo estoque` por produto + SKU + tamanho.
+- [x] Lista `mapear SKU Tiny`.
+- [x] Lista `sem SKU no Shopify`.
 - [ ] Leitura de velocidade de venda vs lead time.
-- [ ] Sugestão `repor estoque`, `checar sourcing`, `não agir`.
-- [ ] Template de preview para Lucas aprovar reposição/sourcing.
+- [x] Sugestão `repor estoque`, `checar sourcing`, `não agir`.
+- [x] Template de preview para Lucas aprovar reposição/sourcing.
+
+Artefato atual: `areas/lk/rotinas/stock-action-queue-2026-05-11.md`.
 
 Critério de saída:
 
@@ -276,10 +278,10 @@ Critério de saída:
 
 ## Todo-list imediata
 
-- [ ] Criar artefato `stock-action-queue` a partir do dicionário v0.2.
-- [ ] Separar filas: `ruptura`, `baixo estoque`, `mapear SKU Tiny`, `sem SKU Shopify`.
-- [ ] Marcar cada item com ação recomendada: `repor estoque`, `checar sourcing`, `corrigir mapa`, `não agir`.
-- [ ] Criar preview para Lucas aprovar apenas as ações de reposição/sourcing.
+- [x] Criar artefato `stock-action-queue` a partir do dicionário v0.2.
+- [x] Separar filas: `ruptura`, `baixo estoque`, `mapear SKU Tiny`, `sem SKU Shopify`.
+- [x] Marcar cada item com ação recomendada: `repor estoque`, `checar sourcing`, `corrigir mapa`, `não agir`.
+- [x] Criar preview para Lucas aprovar apenas as ações de reposição/sourcing.
 - [ ] Não contatar Monbam, fornecedores, time ou cliente sem aprovação.
 - [ ] Criar/atualizar cards unassigned no Mission Control.
 
