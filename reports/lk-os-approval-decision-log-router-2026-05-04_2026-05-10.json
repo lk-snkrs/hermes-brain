@@ -1,0 +1,426 @@
+{
+  "generated_at": "2026-05-11T20:02:57.717793+00:00",
+  "scope": "LK OS approval decision log/router for supplier quote approvals, read-only",
+  "read_only": true,
+  "summary": {
+    "source_packet": "reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.json",
+    "week": {
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-10",
+      "start_iso": "2026-05-04T00:00:00-03:00",
+      "end_iso": "2026-05-10T23:59:59-03:00",
+      "label": "last_7_closed_days_brt"
+    },
+    "decision_log_rows": 8,
+    "status_counts": {
+      "needs_approval": 5,
+      "needs_data": 3
+    },
+    "route_counts": {
+      "awaiting_lucas_or_julio_approval": 4,
+      "hold_or_bundle_with_p0_decision": 1,
+      "needs_data_before_approval": 3
+    },
+    "quote_reference_qty_not_purchase_qty": 26,
+    "revenue_signal_fact_shopify": 89669.71
+  },
+  "decision_log": [
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-01",
+      "created_at": "2026-05-11T20:02:57.717529+00:00",
+      "business_area": "LK Sneakers",
+      "decision_type": "supplier_quote_contact_only",
+      "family": "Nike Moon Shoe SP Jacquemus",
+      "current_status": "needs_approval",
+      "approval_status_from_packet": "ready_for_approval_quote_only",
+      "default_safe_choice": "approve_quote_only",
+      "allowed_decisions": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "recommended_decision": "Aprovar envio de cotação apenas para disponibilidade, custo e lead time; compra separada depois.",
+      "route": "awaiting_lucas_or_julio_approval",
+      "next_actor": "Lucas/Júlio",
+      "blocked_action": "supplier_contact",
+      "if_approved_next_step": "prepare_supplier_send_preview_with_named_destination",
+      "if_rejected_next_step": "mark_rejected_keep_no_action",
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "reference_quote_qty_not_purchase_qty": 10,
+      "revenue_signal_fact_shopify": 48999.92,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "manual_decision_value": null,
+      "manual_decision_by": null,
+      "manual_decision_at": null,
+      "execution_status": "not_executed",
+      "external_send_status": "not_sent",
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ],
+      "source_packet": "reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.json"
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-02",
+      "created_at": "2026-05-11T20:02:57.717646+00:00",
+      "business_area": "LK Sneakers",
+      "decision_type": "supplier_quote_contact_only",
+      "family": "New Balance 9060",
+      "current_status": "needs_approval",
+      "approval_status_from_packet": "ready_for_approval_quote_only",
+      "default_safe_choice": "approve_quote_only",
+      "allowed_decisions": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "recommended_decision": "Aprovar envio de cotação apenas para disponibilidade, custo e lead time; compra separada depois.",
+      "route": "awaiting_lucas_or_julio_approval",
+      "next_actor": "Lucas/Júlio",
+      "blocked_action": "supplier_contact",
+      "if_approved_next_step": "prepare_supplier_send_preview_with_named_destination",
+      "if_rejected_next_step": "mark_rejected_keep_no_action",
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "reference_quote_qty_not_purchase_qty": 8,
+      "revenue_signal_fact_shopify": 18799.93,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "manual_decision_value": null,
+      "manual_decision_by": null,
+      "manual_decision_at": null,
+      "execution_status": "not_executed",
+      "external_send_status": "not_sent",
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ],
+      "source_packet": "reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.json"
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-03",
+      "created_at": "2026-05-11T20:02:57.717677+00:00",
+      "business_area": "LK Sneakers",
+      "decision_type": "supplier_quote_contact_only",
+      "family": "Nike Mind 002",
+      "current_status": "needs_approval",
+      "approval_status_from_packet": "ready_for_approval_quote_only",
+      "default_safe_choice": "approve_quote_only",
+      "allowed_decisions": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "recommended_decision": "Aprovar envio de cotação apenas para disponibilidade, custo e lead time; compra separada depois.",
+      "route": "awaiting_lucas_or_julio_approval",
+      "next_actor": "Lucas/Júlio",
+      "blocked_action": "supplier_contact",
+      "if_approved_next_step": "prepare_supplier_send_preview_with_named_destination",
+      "if_rejected_next_step": "mark_rejected_keep_no_action",
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "reference_quote_qty_not_purchase_qty": 3,
+      "revenue_signal_fact_shopify": 6399.98,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "manual_decision_value": null,
+      "manual_decision_by": null,
+      "manual_decision_at": null,
+      "execution_status": "not_executed",
+      "external_send_status": "not_sent",
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ],
+      "source_packet": "reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.json"
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-04",
+      "created_at": "2026-05-11T20:02:57.717695+00:00",
+      "business_area": "LK Sneakers",
+      "decision_type": "supplier_quote_contact_only",
+      "family": "Comme des Garçons PLAY Polo",
+      "current_status": "needs_approval",
+      "approval_status_from_packet": "ready_for_approval_quote_only",
+      "default_safe_choice": "approve_quote_only",
+      "allowed_decisions": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "recommended_decision": "Aprovar envio de cotação apenas para disponibilidade, custo e lead time; compra separada depois.",
+      "route": "awaiting_lucas_or_julio_approval",
+      "next_actor": "Lucas/Júlio",
+      "blocked_action": "supplier_contact",
+      "if_approved_next_step": "prepare_supplier_send_preview_with_named_destination",
+      "if_rejected_next_step": "mark_rejected_keep_no_action",
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "reference_quote_qty_not_purchase_qty": 3,
+      "revenue_signal_fact_shopify": 3599.98,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "manual_decision_value": null,
+      "manual_decision_by": null,
+      "manual_decision_at": null,
+      "execution_status": "not_executed",
+      "external_send_status": "not_sent",
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ],
+      "source_packet": "reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.json"
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-05",
+      "created_at": "2026-05-11T20:02:57.717710+00:00",
+      "business_area": "LK Sneakers",
+      "decision_type": "supplier_quote_contact_only",
+      "family": "New Balance 530",
+      "current_status": "needs_approval",
+      "approval_status_from_packet": "optional_quote_or_hold",
+      "default_safe_choice": "hold_or_bundle_with_p0",
+      "allowed_decisions": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "recommended_decision": "Opcional: cotar junto se fornecedor já responder P0; caso contrário manter em observação.",
+      "route": "hold_or_bundle_with_p0_decision",
+      "next_actor": "Lucas/Júlio",
+      "blocked_action": "supplier_contact",
+      "if_approved_next_step": "bundle_in_existing_p0_quote_preview_only",
+      "if_rejected_next_step": "hold_monitor_weekly",
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "reference_quote_qty_not_purchase_qty": 2,
+      "revenue_signal_fact_shopify": 5999.97,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "manual_decision_value": null,
+      "manual_decision_by": null,
+      "manual_decision_at": null,
+      "execution_status": "not_executed",
+      "external_send_status": "not_sent",
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ],
+      "source_packet": "reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.json"
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-06",
+      "created_at": "2026-05-11T20:02:57.717724+00:00",
+      "business_area": "LK Sneakers",
+      "decision_type": "supplier_quote_contact_only",
+      "family": "Onitsuka Tiger Mexico 66",
+      "current_status": "needs_data",
+      "approval_status_from_packet": "needs_data",
+      "default_safe_choice": "needs_data",
+      "allowed_decisions": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "recommended_decision": "Não enviar a fornecedor agora; resolver SKU/Tiny ou dados internos primeiro.",
+      "route": "needs_data_before_approval",
+      "next_actor": "Hermes/LK ops data cleanup",
+      "blocked_action": "supplier_contact_and_purchase",
+      "if_approved_next_step": "not_applicable_until_data_resolved",
+      "if_rejected_next_step": "keep_needs_data",
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "reference_quote_qty_not_purchase_qty": 0,
+      "revenue_signal_fact_shopify": 4799.98,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "manual_decision_value": null,
+      "manual_decision_by": null,
+      "manual_decision_at": null,
+      "execution_status": "not_executed",
+      "external_send_status": "not_sent",
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ],
+      "source_packet": "reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.json"
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-07",
+      "created_at": "2026-05-11T20:02:57.717738+00:00",
+      "business_area": "LK Sneakers",
+      "decision_type": "supplier_quote_contact_only",
+      "family": "Camiseta Saint Studio Boxy",
+      "current_status": "needs_data",
+      "approval_status_from_packet": "needs_data",
+      "default_safe_choice": "needs_data",
+      "allowed_decisions": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "recommended_decision": "Não enviar a fornecedor agora; resolver SKU/Tiny ou dados internos primeiro.",
+      "route": "needs_data_before_approval",
+      "next_actor": "Hermes/LK ops data cleanup",
+      "blocked_action": "supplier_contact_and_purchase",
+      "if_approved_next_step": "not_applicable_until_data_resolved",
+      "if_rejected_next_step": "keep_needs_data",
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "reference_quote_qty_not_purchase_qty": 0,
+      "revenue_signal_fact_shopify": 619.98,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "manual_decision_value": null,
+      "manual_decision_by": null,
+      "manual_decision_at": null,
+      "execution_status": "not_executed",
+      "external_send_status": "not_sent",
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ],
+      "source_packet": "reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.json"
+    },
+    {
+      "decision_id": "LK-QUOTE-20260504-20260510-08",
+      "created_at": "2026-05-11T20:02:57.717771+00:00",
+      "business_area": "LK Sneakers",
+      "decision_type": "supplier_quote_contact_only",
+      "family": "Bearbrick Series 48",
+      "current_status": "needs_data",
+      "approval_status_from_packet": "needs_data",
+      "default_safe_choice": "needs_data",
+      "allowed_decisions": [
+        "approve_quote_only",
+        "reject",
+        "needs_data",
+        "hold_or_bundle_with_p0"
+      ],
+      "recommended_decision": "Não enviar a fornecedor agora; resolver SKU/Tiny ou dados internos primeiro.",
+      "route": "needs_data_before_approval",
+      "next_actor": "Hermes/LK ops data cleanup",
+      "blocked_action": "supplier_contact_and_purchase",
+      "if_approved_next_step": "not_applicable_until_data_resolved",
+      "if_rejected_next_step": "keep_needs_data",
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "reference_quote_qty_not_purchase_qty": 0,
+      "revenue_signal_fact_shopify": 449.97,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "manual_decision_value": null,
+      "manual_decision_by": null,
+      "manual_decision_at": null,
+      "execution_status": "not_executed",
+      "external_send_status": "not_sent",
+      "separate_approval_required_after_quote": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ],
+      "source_packet": "reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.json"
+    }
+  ],
+  "status_schema": {
+    "current_status_values": [
+      "needs_approval",
+      "needs_data",
+      "approved",
+      "rejected",
+      "executed"
+    ],
+    "manual_decision_values": [
+      "approve_quote_only",
+      "reject",
+      "needs_data",
+      "hold_or_bundle_with_p0"
+    ],
+    "execution_requires_explicit_followup": true
+  },
+  "not_performed": [
+    "approval_marking",
+    "supplier_contact",
+    "external_send",
+    "purchase_order",
+    "purchase",
+    "reservation",
+    "shopify_write",
+    "tiny_write",
+    "price_or_stock_change",
+    "campaign_send",
+    "cron_creation"
+  ]
+}
