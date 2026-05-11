@@ -1,3 +1,10 @@
+## 2026-05-11 — LK Fila B residual priorizada para revisão manual
+
+- Cruzada a Fila B residual pós-saneamento com o relatório de estoque/venda já existente para decidir a sequência antes de nova Fila A.
+- Resultado: 15 variants residuais também aparecem na fila de venda/ruptura existente; 51 ambíguos seguem como P1; 374 sem SKU Shopify como P2; 857 com SKU Shopify sem Tiny seguro como P3.
+- Artefatos: `areas/lk/rotinas/shopify-tiny-fila-b-residual-priorizada-2026-05-11.md` e `reports/lk-shopify-tiny-residual-fila-b-prioritized-review-2026-05-11.json`.
+- Etapa read-only: sem Shopify/Tiny write, sem sourcing, compra, contato fornecedor, estoque, preço, campanhas, clientes, banco, VPS/Docker ou secrets.
+
 ## 2026-05-11 — LK Fila B residual classificada pós-saneamento Shopify/Tiny
 
 - Classificados os 1.282 variants pulados por segurança na normalização catálogo completo Shopify SKU→Tiny, sem novos writes externos.
