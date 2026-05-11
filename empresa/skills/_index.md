@@ -11,6 +11,7 @@ Skills são processos repetíveis com entrada, passos, saída e verificação. E
 | Brain Sync | `skills/brain-sync/SKILL.md` | Operações | Sincronização do Brain |
 | LK Cross-sell | `skills/lk-crosssell/SKILL.md` | LK CRM | Oportunidades de cross-sell pós-pedido |
 | LK Leads Esfriando | `skills/lk-leads-esfriando/SKILL.md` | LK CRM | Reativação/risco de churn |
+| LK Shopify Read-only | `skills/lk-shopify-readonly/SKILL.md` | LK Ecommerce | Consultas seguras no Shopify LK sem writes, envios ou alterações de produção |
 
 ## Navegação por área
 
@@ -19,6 +20,7 @@ Skills são processos repetíveis com entrada, passos, saída e verificação. E
 | Cross-sell LK | `areas/lk/sub-areas/crm/skills/cross-sell/SKILL.md` | `skills/lk-crosssell/SKILL.md` |
 | Leads Esfriando LK | `areas/lk/sub-areas/crm/skills/leads-esfriando/SKILL.md` | `skills/lk-leads-esfriando/SKILL.md` |
 | Brain Sync Operações | `areas/operacoes/skills/brain-sync/SKILL.md` | `skills/brain-sync/SKILL.md` |
+| Shopify Read-only LK | `skills/lk-shopify-readonly/SKILL.md` | `skills/lk-shopify-readonly/SKILL.md` |
 
 ## Templates
 

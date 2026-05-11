@@ -38,6 +38,14 @@
 | L2 (Executor) | Executa rotinas, analisa, consulta dados | External actions (emails, posts, WA em massa) |
 | External actions | — | SEMPRE aprovação do Lucas |
 
+## Decisões Hermes v0.13 — 2026-05-10
+| Decisão | Regra operacional | Data |
+|---------|-------------------|------|
+| `approvals.mode: off` global aprovado por Lucas | Autonomia de execução local aumenta, mas não remove guardrails: produção, Docker/gateway/restart/compose/volumes/redes/Traefik, secrets, banco, campanhas, envios externos e Shopify/Tiny/Meta/Google writes continuam exigindo plano, preview quando aplicável, backup/rollback e aprovação explícita. | 2026-05-10 |
+| Docker-awareness obrigatório | Antes de mexer em runtime Hermes/Hostinger, tratar Docker como fonte operacional real; não alterar containers, compose, imagens, volumes, redes, root/SSH ou Traefik sem plano aprovado. | 2026-05-10 |
+| Kanban workers só por perfis restritos | Perfis `lk-analyst-readonly`, `lk-content-reviewer`, `hermes-ops-readonly` e `brain-process` existem para rodar cards com escopo limitado; ativação ampla deve ser 1 card por vez, com logs/diff/secret scan. | 2026-05-10 |
+| Wrapper de PATH para dispatcher | Em layout Docker/custom, dispatch manual deve usar wrapper que exporta `/opt/hermes/.venv/bin` antes de chamar `hermes`, evitando `spawn_failed` por binário fora do PATH. | 2026-05-10 |
+
 ## Processo de Projetos
 | Fase | Regra |
 |------|-------|

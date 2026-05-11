@@ -39,6 +39,12 @@ Fonte resumida atual: `memories/lk.md`.
 
 Shopify, Supabase LK, Klaviyo, GA4/GSC, Meta Ads, Judge.me, Frenet, Tiny ERP, Evolution Clo e Telegram.
 
+## Skills canônicas LK
+
+- `skills/lk-shopify-readonly/SKILL.md` — Shopify LK em modo leitura, com Doppler e bloqueio de writes/envios sem aprovação.
+- `skills/lk-crosssell/SKILL.md` — oportunidades de cross-sell pós-pedido.
+- `skills/lk-leads-esfriando/SKILL.md` — leads/clientes em risco de esfriar.
+
 ## Regras permanentes
 
 - Dados antes de afirmação.
