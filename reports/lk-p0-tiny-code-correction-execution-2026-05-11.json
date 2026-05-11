@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-05-11T12:22:20.525428+00:00",
+  "approval": "Lucas aprovou: Pode preencher",
+  "scope": "Execução Tiny codigo para 2 variações P0 aprovadas; sem Shopify; verificação contra alteração de preço/grade/produto.",
+  "guardrails": [
+    "Tiny codigo only",
+    "no Shopify write",
+    "before/after non-code fields checked",
+    "rollback previous codigo blank captured"
+  ],
+  "counts": {
+    "candidates": 2,
+    "write_attempted": 2,
+    "success": 2,
+    "failed": 0
+  },
+  "results": [
+    {
+      "tiny_child_id": "1069544054",
+      "product_title": "Tênis New Balance 204L Cortado Marrom",
+      "size": "39",
+      "before_snapshot": {
+        "nome": "Tênis New Balance 204L Cortado Marrom - 39",
+        "codigo": "",
+        "preco": 2799.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "39"
+        },
+        "idProdutoPai": "1069544017"
+      },
+      "target_codigo": "NB-0254942-39",
+      "precheck_status": "OK",
+      "write_attempted": true,
+      "write_status": "OK",
+      "success": true,
+      "rollback_codigo": "",
+      "method": "produto.alterar root produtos[].produto child variation record with required fields + codigo",
+      "write_status_processamento": "3",
+      "write_codigo_erro": null,
+      "verify_status": "OK",
+      "after_snapshot": {
+        "nome": "Tênis New Balance 204L Cortado Marrom - 39",
+        "codigo": "NB-0254942-39",
+        "preco": 2799.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "39"
+        },
+        "idProdutoPai": "1069544017"
+      },
+      "non_code_changes_detected": []
+    },
+    {
+      "tiny_child_id": "1069544710",
+      "product_title": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom",
+      "size": "36",
+      "before_snapshot": {
+        "nome": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom - 36",
+        "codigo": "",
+        "preco": 3499.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "36"
+        },
+        "idProdutoPai": "1069544679"
+      },
+      "target_codigo": "NKS-1065310-36",
+      "precheck_status": "OK",
+      "write_attempted": true,
+      "write_status": "OK",
+      "success": true,
+      "rollback_codigo": "",
+      "method": "produto.alterar root produtos[].produto child variation record with required fields + codigo",
+      "write_status_processamento": "3",
+      "write_codigo_erro": null,
+      "verify_status": "OK",
+      "after_snapshot": {
+        "nome": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom - 36",
+        "codigo": "NKS-1065310-36",
+        "preco": 3499.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "36"
+        },
+        "idProdutoPai": "1069544679"
+      },
+      "non_code_changes_detected": []
+    }
+  ]
+}
