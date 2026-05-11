@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-05-11T20:29:10.038818+00:00",
+  "scope": "LK OS Phase 3 weekly internal influencer email preview, read-only",
+  "channel": "email_preview_only",
+  "would_send": false,
+  "read_only": true,
+  "sources": {
+    "pareto_operational_split": "reports/lk-os-pareto-operational-split-2026-05-11.json",
+    "identity_bridge": "reports/lk-os-influencer-identity-bridge-2026-05-11.json"
+  },
+  "summary": {
+    "actionable_internal_analysis": 2,
+    "investigation": 1,
+    "watch_separate_names": 3,
+    "blocked_jargon_findings": []
+  },
+  "email_preview": {
+    "subject": "LK, leitura semanal de influencers, mídia e estoque, preview interno",
+    "preview": "Silvia e Helena podem virar análise interna; Lala segue investigação; Marias continuam separadas.",
+    "body_markdown": "Oi, time.\n\nFechei uma leitura interna do período 2026-04-01 a 2026-04-30 para separar o que é sinal de mídia do que já pode orientar decisão operacional.\n\nResumo rápido:\n- Silvia e Helena têm ponte suficiente para análise interna de produto e estoque, mas não autorizam campanha, cupom, compra ou envio.\n- Lala tem sinal de mídia, mas ainda precisa de confirmação de cupom, UTM, landing ou ad_id antes de qualquer decisão.\n- Maria, Maria Fernanda e Mariah continuam separadas para evitar leitura misturada.\n\nPrioridades da semana:\n- Silvia: 117 pedidos com ponte Shopify, R$ 429.291,45 em receita com evidência, próximo passo: validar handle/cupom/ad_id oficiais e só depois transformar em ação de mídia/estoque com aprovação.\n- Helena: 14 pedidos com ponte Shopify, R$ 33.786,84 em receita com evidência, próximo passo: validar handle/cupom/ad_id oficiais e só depois transformar em ação de mídia/estoque com aprovação.\n- Lala Noleto: há sinal de mídia, mas não há ponte direta Shopify no recorte; próximo passo: confirmar cupom, UTM, landing ou ad_id antes de qualquer leitura de produto, verba ou estoque.\n\nProdutos que merecem atenção interna:\n- Silvia:\n  - Tênis Nike Moon Shoe SP Jacquemus Medium Brown | SKU HV8547-200-38 | tam. 38 | 3 un. | R$ 14.999,97 | estoque: ruptura agora\n  - Tênis Nike Moon Shoe SP Jacquemus Medium Brown | SKU [sem SKU no Shopify] | tam. 37 | 3 un. | R$ 14.999,97 | estoque: sem SKU no Shopify\n  - Tênis Nike Air Jordan 4 Retro Metallic Gold Branco | SKU AQ9129-170-7 | tam. 40 | 4 un. | R$ 13.399,96 | estoque: ruptura agora\n  - Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom | SKU HV8547-200-38 | tam. 38 | 2 un. | R$ 11.999,98 | estoque: ruptura agora\n- Helena:\n  - Tênis Nike Moon Shoe SP Jacquemus Off White | SKU [sem SKU no Shopify] | tam. 38 | 1 un. | R$ 4.999,99 | estoque: sem SKU no Shopify\n  - Tênis New Balance 204L Arid Timberwolf Bege | SKU U204LMMC-3 | tam. 36 | 1 un. | R$ 2.799,99 | estoque: ok/monitorar\n  - Tênis Onitsuka Tiger Mexico 66 SD Vin Clay Canyon Cream Marrom | SKU 1183C015.205-3 | tam. 36 | 1 un. | R$ 2.499,99 | estoque: ruptura agora\n  - Tênis New Balance 9060 Sea Salt Concrete Branco | SKU U9060ECA-10 | tam. 40 | 1 un. | R$ 2.499,99 | estoque: ruptura agora\n\nDecisões bloqueadas até aprovação:\n- criar ou alterar cupom;\n- mudar campanha, verba, criativo ou UTM;\n- alterar Shopify, Tiny, preço ou estoque;\n- enviar e-mail, WhatsApp ou qualquer comunicação externa;\n- comprar, reservar produto ou acionar fornecedor.\n\nPróximo passo sugerido: preencher a lista oficial de handle, cupom, UTM e ad_id por influencer. Com isso, a próxima leitura semanal deixa de misturar sinal de mídia com decisão de estoque."
+  },
+  "html_preview_path": "reports/lk-os-weekly-internal-influencer-email-preview-2026-05-11.html",
+  "routing": {
+    "actionable": [
+      {
+        "name": "Silvia",
+        "status": "pronto para análise interna, sem execução automática",
+        "why": "há ponte com Shopify e consequência de estoque para priorizar leitura de produto",
+        "shopify_orders": 117,
+        "shopify_revenue": 429291.45,
+        "platform_spend": 10829.11,
+        "platform_purchases": 38.0,
+        "products": [
+          "Tênis Nike Moon Shoe SP Jacquemus Medium Brown | SKU HV8547-200-38 | tam. 38 | 3 un. | R$ 14.999,97 | estoque: ruptura agora",
+          "Tênis Nike Moon Shoe SP Jacquemus Medium Brown | SKU [sem SKU no Shopify] | tam. 37 | 3 un. | R$ 14.999,97 | estoque: sem SKU no Shopify",
+          "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco | SKU AQ9129-170-7 | tam. 40 | 4 un. | R$ 13.399,96 | estoque: ruptura agora",
+          "Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom | SKU HV8547-200-38 | tam. 38 | 2 un. | R$ 11.999,98 | estoque: ruptura agora"
+        ],
+        "next_step": "validar handle/cupom/ad_id oficiais e só depois transformar em ação de mídia/estoque com aprovação"
+      },
+      {
+        "name": "Helena",
+        "status": "pronto para análise interna, sem execução automática",
+        "why": "há ponte com Shopify e consequência de estoque para priorizar leitura de produto",
+        "shopify_orders": 14,
+        "shopify_revenue": 33786.84,
+        "platform_spend": 3952.76,
+        "platform_purchases": 32.0,
+        "products": [
+          "Tênis Nike Moon Shoe SP Jacquemus Off White | SKU [sem SKU no Shopify] | tam. 38 | 1 un. | R$ 4.999,99 | estoque: sem SKU no Shopify",
+          "Tênis New Balance 204L Arid Timberwolf Bege | SKU U204LMMC-3 | tam. 36 | 1 un. | R$ 2.799,99 | estoque: ok/monitorar",
+          "Tênis Onitsuka Tiger Mexico 66 SD Vin Clay Canyon Cream Marrom | SKU 1183C015.205-3 | tam. 36 | 1 un. | R$ 2.499,99 | estoque: ruptura agora",
+          "Tênis New Balance 9060 Sea Salt Concrete Branco | SKU U9060ECA-10 | tam. 40 | 1 un. | R$ 2.499,99 | estoque: ruptura agora"
+        ],
+        "next_step": "validar handle/cupom/ad_id oficiais e só depois transformar em ação de mídia/estoque com aprovação"
+      }
+    ],
+    "investigate": [
+      {
+        "name": "Lala Noleto",
+        "status": "investigação",
+        "why": "há sinal de mídia, mas não há ponte direta Shopify no recorte",
+        "platform_spend": 7155.62,
+        "platform_purchases": 55.0,
+        "shopify_orders": 0,
+        "shopify_revenue": 0,
+        "next_step": "confirmar cupom, UTM, landing ou ad_id antes de qualquer leitura de produto, verba ou estoque"
+      }
+    ],
+    "watch": [
+      {
+        "name": "Maria",
+        "status": "manter separado na leitura Pareto-compatible",
+        "why": "nomes parecidos não devem ser consolidados automaticamente",
+        "platform_spend": 907.85,
+        "platform_purchases": 2.0,
+        "next_step": "seguir separado até existir ponte operacional própria"
+      },
+      {
+        "name": "Maria Fernanda",
+        "status": "manter separado na leitura Pareto-compatible",
+        "why": "nomes parecidos não devem ser consolidados automaticamente",
+        "platform_spend": 224.07,
+        "platform_purchases": 0.0,
+        "next_step": "seguir separado até existir ponte operacional própria"
+      },
+      {
+        "name": "Mariah",
+        "status": "manter separado na leitura Pareto-compatible",
+        "why": "nomes parecidos não devem ser consolidados automaticamente",
+        "platform_spend": 193.18,
+        "platform_purchases": 0.0,
+        "next_step": "seguir separado até existir ponte operacional própria"
+      }
+    ]
+  },
+  "approval_required_for": [
+    "real_email_send",
+    "klaviyo_or_whatsapp_send",
+    "coupon_create_or_update",
+    "campaign_budget_creative_or_utm_change",
+    "shopify_or_tiny_write",
+    "stock_price_purchase_supplier_action",
+    "cron_creation"
+  ],
+  "not_performed": [
+    "gmail_send",
+    "klaviyo_send",
+    "whatsapp_send",
+    "cron_creation",
+    "live_meta_call",
+    "live_shopify_call",
+    "live_tiny_call",
+    "campaign_change",
+    "coupon_change",
+    "shopify_write",
+    "tiny_write",
+    "production_db_write"
+  ]
+}
