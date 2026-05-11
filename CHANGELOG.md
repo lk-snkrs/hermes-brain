@@ -1,3 +1,11 @@
+## 2026-05-11 — LK Search Console Read-only Router
+
+- Criado e executado `scripts/lk_search_console_readonly_router_20260511.py`, usando credenciais Google via Doppler em processo efêmero e Search Console em modo read-only.
+- Resultado: property `sc-domain:lksneakers.com.br`, janela final de 28 dias, 25.000 linhas query/página, 15.709 páginas agregadas e 40 oportunidades roteadas.
+- Exemplos de oportunidades P1 por `fact_gsc`: `onitsuka tiger`, `new balance 204l`, `lululemon`, `lk` e `tenis new balance 530`, com CTR/posição para preview de title/meta/conteúdo.
+- Artefatos: `areas/lk/rotinas/search-console-readonly-router-2026-05-11.md`, `reports/lk-search-console-readonly-router-2026-05-11.md` e `.json`.
+- Nenhum Shopify/theme/Merchant Center/GSC admin/Indexing API/content publish/campanha/envio/cron foi executado.
+
 ## 2026-05-11 — LK CRM Phase 5 Next Decision Router read-only
 
 - Criado e executado `scripts/lk_crm_phase5_next_decision_router_20260511.py`, consolidador de estado e próxima decisão para Fase 5 CRM/RFM/Recompra.
