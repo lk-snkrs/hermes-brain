@@ -1,0 +1,822 @@
+{
+  "generated_at": "2026-05-11",
+  "scope": "Fila acionável P0 residual para decisão humana/correção SKU Tiny antes de sourcing",
+  "guardrails": [
+    "read-only derivado de relatórios live lookup",
+    "sem writes",
+    "sem sourcing automático"
+  ],
+  "summary": {
+    "total": 15,
+    "with_tiny_match_no_code_or_ambiguous": 6,
+    "without_tiny_detail_match": 9
+  },
+  "items": [
+    {
+      "priority": "P0",
+      "classification": "A_match_tiny_sem_codigo_ou_ambiguo",
+      "product_title": "Camiseta Pace Cotton Code Branca",
+      "shopify_product_id": 9003115741406,
+      "shopify_handle": "camiseta-pace-cotton-code-branca",
+      "shopify_variant_id": 47512247599326,
+      "size": "G/L",
+      "shopify_sku_live": "[sem SKU]",
+      "orders_30d_signal": 2,
+      "revenue_signal": 433.98,
+      "tiny_size_match_count": 6,
+      "tiny_size_matches": [
+        {
+          "id": "1065543106",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "G/L"
+          },
+          "tipo": "variacoes"
+        },
+        {
+          "id": "1065543109",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "GG/XL"
+          },
+          "tipo": "variacoes"
+        },
+        {
+          "id": "1069541599",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "G/L"
+          },
+          "tipo": "variacoes"
+        },
+        {
+          "id": "1069541599",
+          "codigo": "",
+          "nome": "Camiseta Pace Cotton Code Branca - G-L",
+          "tipo": "produto"
+        },
+        {
+          "id": "1065543106",
+          "codigo": "",
+          "nome": "Camiseta Pace Cotton Code Branca - G/L",
+          "tipo": "produto"
+        }
+      ],
+      "tiny_candidate_details": [
+        {
+          "tiny_id": "1065543095",
+          "nome": "Camiseta Pace Cotton Code Branca",
+          "codigo": "",
+          "size_match_count": 3
+        },
+        {
+          "tiny_id": "1069541599",
+          "nome": "Camiseta Pace Cotton Code Branca - G-L",
+          "codigo": "",
+          "size_match_count": 1
+        },
+        {
+          "tiny_id": "1065543106",
+          "nome": "Camiseta Pace Cotton Code Branca - G/L",
+          "codigo": "",
+          "size_match_count": 1
+        },
+        {
+          "tiny_id": "1065543109",
+          "nome": "Camiseta Pace Cotton Code Branca - GG/XL",
+          "codigo": "",
+          "size_match_count": 1
+        },
+        {
+          "tiny_id": "1069541594",
+          "nome": "Camiseta Pace Cotton Code Branca - M-M",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1065543103",
+          "nome": "Camiseta Pace Cotton Code Branca - M/M",
+          "codigo": "",
+          "size_match_count": 0
+        }
+      ],
+      "recommended_next_step": "Definir codigo canônico no Tiny para a variação correta; depois preview SKU-only no Shopify se necessário.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "B_sem_match_tiny_detalhado",
+      "product_title": "Camiseta Aimé Leon Dore Musician Graphic Off White",
+      "shopify_product_id": 9024982712542,
+      "shopify_handle": "camiseta-aime-leon-dore-musician-graphic-off-white",
+      "shopify_variant_id": 47579297939678,
+      "size": "S/P",
+      "shopify_sku_live": "[sem SKU]",
+      "orders_30d_signal": 1,
+      "revenue_signal": 1299.99,
+      "tiny_size_match_count": 0,
+      "tiny_size_matches": [],
+      "tiny_candidate_details": [],
+      "recommended_next_step": "Resolver cadastro/codigo canônico no Tiny manualmente antes de qualquer ação comercial.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "A_match_tiny_sem_codigo_ou_ambiguo",
+      "product_title": "Rhode Pocket Blush",
+      "shopify_product_id": 8926618321118,
+      "shopify_handle": "rhode-pocket-blush",
+      "shopify_variant_id": 46838740648158,
+      "size": "Sleepy Girl - Soft Mauve",
+      "shopify_sku_live": "[sem SKU]",
+      "orders_30d_signal": 1,
+      "revenue_signal": 399.99,
+      "tiny_size_match_count": 1,
+      "tiny_size_matches": [
+        {
+          "id": "1070288342",
+          "codigo": "",
+          "nome": {
+            "Cor": "Sleepy Girl - Soft Mauve"
+          },
+          "tipo": "variacoes"
+        }
+      ],
+      "tiny_candidate_details": [
+        {
+          "tiny_id": "1070288304",
+          "nome": "Rhode Pocket Blush",
+          "codigo": "",
+          "size_match_count": 1
+        },
+        {
+          "tiny_id": "1070288352",
+          "nome": "Rhode Pocket Blush - Date Cake - Warm Red Berry",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1070288337",
+          "nome": "Rhode Pocket Blush - Freckle - Neutral Peach",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1063622277",
+          "nome": "Rhode Pocket Blush - Juice Box - Hot Pink",
+          "codigo": "850055527140-2",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1070288327",
+          "nome": "Rhode Pocket Blush - Piggy - Baby Pink",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1070288347",
+          "nome": "Rhode Pocket Blush - Plum - Cool Purple Berry",
+          "codigo": "",
+          "size_match_count": 0
+        }
+      ],
+      "recommended_next_step": "Definir codigo canônico no Tiny para a variação correta; depois preview SKU-only no Shopify se necessário.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "A_match_tiny_sem_codigo_ou_ambiguo",
+      "product_title": "Camiseta Pace Cotton Code Preta",
+      "shopify_product_id": 9003115774174,
+      "shopify_handle": "camiseta-pace-cotton-code-preta",
+      "shopify_variant_id": 47512247730398,
+      "size": "G/L",
+      "shopify_sku_live": "[sem SKU]",
+      "orders_30d_signal": 1,
+      "revenue_signal": 216.99,
+      "tiny_size_match_count": 6,
+      "tiny_size_matches": [
+        {
+          "id": "1065543087",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "G/L"
+          },
+          "tipo": "variacoes"
+        },
+        {
+          "id": "1065543090",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "GG/XL"
+          },
+          "tipo": "variacoes"
+        },
+        {
+          "id": "1069541614",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "G/L"
+          },
+          "tipo": "variacoes"
+        },
+        {
+          "id": "1069541614",
+          "codigo": "",
+          "nome": "Camiseta Pace Cotton Code Preta - G-L",
+          "tipo": "produto"
+        },
+        {
+          "id": "1065543087",
+          "codigo": "",
+          "nome": "Camiseta Pace Cotton Code Preta - G/L",
+          "tipo": "produto"
+        }
+      ],
+      "tiny_candidate_details": [
+        {
+          "tiny_id": "1065543076",
+          "nome": "Camiseta Pace Cotton Code Preta",
+          "codigo": "",
+          "size_match_count": 3
+        },
+        {
+          "tiny_id": "1069541614",
+          "nome": "Camiseta Pace Cotton Code Preta - G-L",
+          "codigo": "",
+          "size_match_count": 1
+        },
+        {
+          "tiny_id": "1065543087",
+          "nome": "Camiseta Pace Cotton Code Preta - G/L",
+          "codigo": "",
+          "size_match_count": 1
+        },
+        {
+          "tiny_id": "1065543090",
+          "nome": "Camiseta Pace Cotton Code Preta - GG/XL",
+          "codigo": "",
+          "size_match_count": 1
+        },
+        {
+          "tiny_id": "1069541609",
+          "nome": "Camiseta Pace Cotton Code Preta - M-M",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1065543084",
+          "nome": "Camiseta Pace Cotton Code Preta - M/M",
+          "codigo": "",
+          "size_match_count": 0
+        }
+      ],
+      "recommended_next_step": "Definir codigo canônico no Tiny para a variação correta; depois preview SKU-only no Shopify se necessário.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "A_match_tiny_sem_codigo_ou_ambiguo",
+      "product_title": "Camiseta Pace Sketch Yourself Off White",
+      "shopify_product_id": 8946043093214,
+      "shopify_handle": "camiseta-pace-sketch-yourself-off-white",
+      "shopify_variant_id": 47019131568350,
+      "size": "P/S",
+      "shopify_sku_live": "[sem SKU]",
+      "orders_30d_signal": 1,
+      "revenue_signal": 209.99,
+      "tiny_size_match_count": 6,
+      "tiny_size_matches": [
+        {
+          "id": "1063954611",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "P/S"
+          },
+          "tipo": "variacoes"
+        },
+        {
+          "id": "1069539379",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "P/S"
+          },
+          "tipo": "variacoes"
+        },
+        {
+          "id": "1069539379",
+          "codigo": "",
+          "nome": "Camiseta Pace Sketch Yourself Off White - P-S",
+          "tipo": "produto"
+        },
+        {
+          "id": "1063954611",
+          "codigo": "",
+          "nome": "Camiseta Pace Sketch Yourself Off White - P/S",
+          "tipo": "produto"
+        },
+        {
+          "id": "1063955235",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "P/S"
+          },
+          "tipo": "variacoes"
+        }
+      ],
+      "tiny_candidate_details": [
+        {
+          "tiny_id": "1063954607",
+          "nome": "Camiseta Pace Sketch Yourself Off White",
+          "codigo": "",
+          "size_match_count": 2
+        },
+        {
+          "tiny_id": "1063954617",
+          "nome": "Camiseta Pace Sketch Yourself Off White - G/L",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1063954614",
+          "nome": "Camiseta Pace Sketch Yourself Off White - M",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069539379",
+          "nome": "Camiseta Pace Sketch Yourself Off White - P-S",
+          "codigo": "",
+          "size_match_count": 1
+        },
+        {
+          "tiny_id": "1063954611",
+          "nome": "Camiseta Pace Sketch Yourself Off White - P/S",
+          "codigo": "",
+          "size_match_count": 1
+        },
+        {
+          "tiny_id": "1063955231",
+          "nome": "Camiseta Pace Sketch Yourself Navy Blue Azul",
+          "codigo": "",
+          "size_match_count": 2
+        }
+      ],
+      "recommended_next_step": "Definir codigo canônico no Tiny para a variação correta; depois preview SKU-only no Shopify se necessário.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "A_match_tiny_sem_codigo_ou_ambiguo",
+      "product_title": "Tênis New Balance 204L Cortado Marrom",
+      "shopify_product_id": 9106900254942,
+      "shopify_handle": "tenis-new-balance-204l-cortado-marrom",
+      "shopify_variant_id": 47856402596062,
+      "size": "39",
+      "shopify_sku_live": "NB-0254942-39",
+      "orders_30d_signal": 2,
+      "revenue_signal": 5599.98,
+      "tiny_size_match_count": 1,
+      "tiny_size_matches": [
+        {
+          "id": "1069544054",
+          "codigo": "",
+          "nome": {
+            "Tamanho do calçado": "39"
+          },
+          "tipo": "variacoes"
+        }
+      ],
+      "tiny_candidate_details": [
+        {
+          "tiny_id": "1069544017",
+          "nome": "Tênis New Balance 204L Cortado Marrom",
+          "codigo": "",
+          "size_match_count": 1
+        },
+        {
+          "tiny_id": "1069544032",
+          "nome": "Tênis New Balance 204L Cortado Marrom - 34",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069544037",
+          "nome": "Tênis New Balance 204L Cortado Marrom - 35",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069544042",
+          "nome": "Tênis New Balance 204L Cortado Marrom - 36",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069544047",
+          "nome": "Tênis New Balance 204L Cortado Marrom - 37",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1068941875",
+          "nome": "Tênis New Balance 204L Cortado Marrom - 38",
+          "codigo": "",
+          "size_match_count": 0
+        }
+      ],
+      "recommended_next_step": "Validar se o SKU Shopify deve virar codigo Tiny; se aprovado, primeiro corrigir Tiny/codigo, depois revalidar Shopify.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "A_match_tiny_sem_codigo_ou_ambiguo",
+      "product_title": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom",
+      "shopify_product_id": 9110671065310,
+      "shopify_handle": "tenis-nike-x-skims-rift-mesh-archaeo-brown-marrom",
+      "shopify_variant_id": 47868839035102,
+      "size": "36",
+      "shopify_sku_live": "NKS-1065310-36",
+      "orders_30d_signal": 1,
+      "revenue_signal": 3499.99,
+      "tiny_size_match_count": 2,
+      "tiny_size_matches": [
+        {
+          "id": "1069544710",
+          "codigo": "",
+          "nome": {
+            "Tamanho do calçado": "36"
+          },
+          "tipo": "variacoes"
+        },
+        {
+          "id": "1069544710",
+          "codigo": "",
+          "nome": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom - 36",
+          "tipo": "produto"
+        }
+      ],
+      "tiny_candidate_details": [
+        {
+          "tiny_id": "1069544679",
+          "nome": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom",
+          "codigo": "",
+          "size_match_count": 1
+        },
+        {
+          "tiny_id": "1069544694",
+          "nome": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom - 33",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069544700",
+          "nome": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom - 34",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069544705",
+          "nome": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom - 35",
+          "codigo": "",
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069544710",
+          "nome": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom - 36",
+          "codigo": "",
+          "size_match_count": 1
+        },
+        {
+          "tiny_id": "1069106473",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        }
+      ],
+      "recommended_next_step": "Validar se o SKU Shopify deve virar codigo Tiny; se aprovado, primeiro corrigir Tiny/codigo, depois revalidar Shopify.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "B_sem_match_tiny_detalhado",
+      "product_title": "Tênis Nike Mind 002 Light Khaki Bege",
+      "shopify_product_id": 9118029054174,
+      "shopify_handle": "tenis-nike-mind-002-light-khaki-bege",
+      "shopify_variant_id": 47893735932126,
+      "size": "41",
+      "shopify_sku_live": "NKE-9054174-41",
+      "orders_30d_signal": 1,
+      "revenue_signal": 3199.99,
+      "tiny_size_match_count": 0,
+      "tiny_size_matches": [],
+      "tiny_candidate_details": [
+        {
+          "tiny_id": "1069545331",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069545348",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069545353",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069545358",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069545365",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069545370",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        }
+      ],
+      "recommended_next_step": "Buscar alias/cadastro no Tiny usando SKU Shopify como pista; se não existir, decidir cadastro/codigo Tiny antes de sourcing.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "B_sem_match_tiny_detalhado",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom",
+      "shopify_product_id": 9168590995678,
+      "shopify_handle": "tenis-onitsuka-tiger-mexico-66-fringe-mocha-brown-dark-brown-marrom",
+      "shopify_variant_id": 48066691465438,
+      "size": "42.5",
+      "shopify_sku_live": "ONI-0995678-425",
+      "orders_30d_signal": 1,
+      "revenue_signal": 2999.99,
+      "tiny_size_match_count": 0,
+      "tiny_size_matches": [],
+      "tiny_candidate_details": [
+        {
+          "tiny_id": "1070120668",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1070120685",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1070120690",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1070120695",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1070120701",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1070120706",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        }
+      ],
+      "recommended_next_step": "Buscar alias/cadastro no Tiny usando SKU Shopify como pista; se não existir, decidir cadastro/codigo Tiny antes de sourcing.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "B_sem_match_tiny_detalhado",
+      "product_title": "Tênis New Balance 204L Cortado Marrom",
+      "shopify_product_id": 9106900254942,
+      "shopify_handle": "tenis-new-balance-204l-cortado-marrom",
+      "shopify_variant_id": 47856402530526,
+      "size": "37",
+      "shopify_sku_live": "NB-0254942-37",
+      "orders_30d_signal": 1,
+      "revenue_signal": 2799.99,
+      "tiny_size_match_count": 0,
+      "tiny_size_matches": [],
+      "tiny_candidate_details": [
+        {
+          "tiny_id": "1069544017",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069544032",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069544037",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069544042",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069544047",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1068941875",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        }
+      ],
+      "recommended_next_step": "Buscar alias/cadastro no Tiny usando SKU Shopify como pista; se não existir, decidir cadastro/codigo Tiny antes de sourcing.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "B_sem_match_tiny_detalhado",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza",
+      "shopify_product_id": 9165336772830,
+      "shopify_handle": "tenis-onitsuka-tiger-mexico-66-sabot-pure-silver-cream-cinza",
+      "shopify_variant_id": 48054217933022,
+      "size": "38",
+      "shopify_sku_live": "ONI-6772830-38",
+      "orders_30d_signal": 1,
+      "revenue_signal": 2199.99,
+      "tiny_size_match_count": 0,
+      "tiny_size_matches": [],
+      "tiny_candidate_details": [
+        {
+          "tiny_id": "1070119514",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1070119529",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1070119534",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1070119539",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1070119544",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1070119554",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        }
+      ],
+      "recommended_next_step": "Buscar alias/cadastro no Tiny usando SKU Shopify como pista; se não existir, decidir cadastro/codigo Tiny antes de sourcing.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "B_sem_match_tiny_detalhado",
+      "product_title": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto",
+      "shopify_product_id": 9064138506462,
+      "shopify_handle": "moletom-alo-yoga-cropped-serenity-coverup-black-preto",
+      "shopify_variant_id": 47706484539614,
+      "size": "S/P",
+      "shopify_sku_live": "ALO-8506462-S",
+      "orders_30d_signal": 1,
+      "revenue_signal": 1799.99,
+      "tiny_size_match_count": 0,
+      "tiny_size_matches": [],
+      "tiny_candidate_details": [
+        {
+          "tiny_id": "1069542754",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069542777",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069542772",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069542767",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1069542762",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        },
+        {
+          "tiny_id": "1064962941",
+          "nome": null,
+          "codigo": null,
+          "size_match_count": 0
+        }
+      ],
+      "recommended_next_step": "Buscar alias/cadastro no Tiny usando SKU Shopify como pista; se não existir, decidir cadastro/codigo Tiny antes de sourcing.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "B_sem_match_tiny_detalhado",
+      "product_title": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+      "shopify_product_id": 9107994542302,
+      "shopify_handle": "calca-saint-studio-alfaiataria-leve-prega-dupla-cinza",
+      "shopify_variant_id": 47860151976158,
+      "size": "L/G",
+      "shopify_sku_live": "SST-4542302-L",
+      "orders_30d_signal": 1,
+      "revenue_signal": 619.99,
+      "tiny_size_match_count": 0,
+      "tiny_size_matches": [],
+      "tiny_candidate_details": [],
+      "recommended_next_step": "Buscar alias/cadastro no Tiny usando SKU Shopify como pista; se não existir, decidir cadastro/codigo Tiny antes de sourcing.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "B_sem_match_tiny_detalhado",
+      "product_title": "Camiseta Pace Buero Washed Black Preto",
+      "shopify_product_id": 9145201197278,
+      "shopify_handle": "camiseta-pace-buero-washed-black-preto",
+      "shopify_variant_id": 47967340331230,
+      "size": "S/P",
+      "shopify_sku_live": "PAC-1197278-S",
+      "orders_30d_signal": 1,
+      "revenue_signal": 319.99,
+      "tiny_size_match_count": 0,
+      "tiny_size_matches": [],
+      "tiny_candidate_details": [],
+      "recommended_next_step": "Buscar alias/cadastro no Tiny usando SKU Shopify como pista; se não existir, decidir cadastro/codigo Tiny antes de sourcing.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    },
+    {
+      "priority": "P0",
+      "classification": "B_sem_match_tiny_detalhado",
+      "product_title": "Camiseta Pace Patavision Off White",
+      "shopify_product_id": 8946025857246,
+      "shopify_handle": "camiseta-pace-patavision-off-white",
+      "shopify_variant_id": 47019093295326,
+      "size": "P/S",
+      "shopify_sku_live": "PAC-5857246-S",
+      "orders_30d_signal": 1,
+      "revenue_signal": 209.99,
+      "tiny_size_match_count": 0,
+      "tiny_size_matches": [],
+      "tiny_candidate_details": [],
+      "recommended_next_step": "Buscar alias/cadastro no Tiny usando SKU Shopify como pista; se não existir, decidir cadastro/codigo Tiny antes de sourcing.",
+      "approval_needed_for_write": "Sim — qualquer Tiny/Shopify write exige preview + aprovação explícita Lucas/Júlio conforme escopo."
+    }
+  ]
+}

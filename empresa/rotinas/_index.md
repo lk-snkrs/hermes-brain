@@ -55,6 +55,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | LK Fila B Residual Pós-Saneamento 2026-05-11 | `areas/lk/rotinas/shopify-tiny-fila-b-residual-pos-saneamento-2026-05-11.md` | Classificação read-only dos 1.282 variants pulados por segurança: 857 com SKU sem match Tiny, 374 sem SKU, 51 ambíguos por título+tamanho |
 | LK Fila B Residual Priorizada 2026-05-11 | `areas/lk/rotinas/shopify-tiny-fila-b-residual-priorizada-2026-05-11.md` | Fila curta de revisão manual antes da nova Fila A: 15 residuais cruzam com venda/ruptura; P1 ambíguos, P2 sem SKU, P3 com SKU sem Tiny seguro |
 | LK P0 Residual Live Lookup 2026-05-11 | `areas/lk/rotinas/lk-p0-residual-live-lookup-enriched-2026-05-11.md` | Lookup read-only dos 15 P0 contra Shopify atual + Tiny; nenhuma linha segura para SKU-only automático sem confirmação/código canônico |
+| LK P0 Residual Correction Queue 2026-05-11 | `areas/lk/rotinas/lk-p0-residual-correction-queue-2026-05-11.md` | Fila acionável para decisão humana/correção SKU/Tiny dos 15 P0 antes de qualquer Fila A/sourcing |
 | LK SEO/CRO Weekly Improvement Loop | `areas/lk/rotinas/seo-cro-weekly-improvement-loop.md` | Rotina semanal read-only com Claude SEO: nota, meta e fila priorizada de melhorias de PDP/páginas |
 | Cross-sell Monitor | `areas/lk/sub-areas/crm/rotinas/cross-sell-monitor.md` | Oportunidades pós-pedido |
 | Playbook Campanha CRM Aprovada | `areas/lk/sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md` | Segmentação, preview e aprovação Lucas antes de campanha externa |
