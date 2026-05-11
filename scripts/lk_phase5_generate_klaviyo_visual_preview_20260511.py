@@ -137,30 +137,13 @@ def sizes_label(rows: list[dict[str, Any]]) -> str:
 
 def customer_copy_for_group(product_name: str, rows: list[dict[str, Any]]) -> str:
     if len(rows) > 1:
-        origins = []
-        for row in rows:
-            origin = clean_product_name(row.get("purchase_product", ""))
-            if origin and origin not in origins:
-                origins.append(origin)
-        if len(origins) == 1:
-            return (
-                f"A partir da sua escolha por {origins[0]}, reunimos {product_name}: "
-                f"uma continuidade de estilo com disponibilidade conferida nos {sizes_label(rows)}."
-            )
         return (
-            f"A partir das últimas escolhas feitas na LK, reunimos {product_name}: "
-            f"uma continuidade de estilo com disponibilidade conferida nos {sizes_label(rows)}."
-        )
-    row = rows[0]
-    origin = clean_product_name(row.get("purchase_product", ""))
-    if origin:
-        return (
-            f"A partir da sua compra presencial do {origin}, selecionamos {product_name}: "
-            "uma continuidade de estilo com disponibilidade conferida para o seu tamanho."
+            "Um modelo de leitura neutra e rara, selecionado para continuar suas últimas escolhas na LK, "
+            f"com disponibilidade conferida nos {sizes_label(rows)}."
         )
     return (
-        f"Selecionamos {product_name}: "
-        "uma continuidade de estilo com disponibilidade conferida para o seu tamanho."
+        "Selecionado a partir da sua compra presencial, mantém a mesma intenção de estilo "
+        "com disponibilidade conferida para o seu tamanho."
     )
 
 
@@ -215,26 +198,26 @@ def build_html(data: dict[str, Any], enrichment: dict[str, Any]) -> str:
     .header {{ background:#050505; height:150px; display:flex; align-items:center; justify-content:center; text-align:center; }}
     .header img {{ display:block; width:78px; height:auto; }}
     .topline {{ background:#FFFFFF; padding:27px 20px 20px; text-align:center; border-bottom:1px solid #EEEEEE; }}
-    .topline span {{ font-size:11px; letter-spacing:6px; text-transform:uppercase; color:#9A9A9A; font-weight:300; }}
-    .hero {{ background:#FFFFFF; padding:68px 45px 55px; text-align:center; border-bottom:1px solid #EEEEEE; }}
-    .hero .kicker {{ font-size:10px; letter-spacing:8px; text-transform:uppercase; color:#C6C6C6; margin-bottom:30px; font-weight:300; }}
+    .topline span {{ font-size:11px; letter-spacing:6px; text-transform:uppercase; color:#8F8F8F; font-weight:300; }}
+    .hero {{ background:#FFFFFF; padding:58px 46px 46px; text-align:center; border-bottom:1px solid #EEEEEE; }}
+    .hero .kicker {{ font-size:10px; letter-spacing:8px; text-transform:uppercase; color:#AAA4A0; margin-bottom:24px; font-weight:300; }}
     .rule {{ width:38px; height:1px; background:#EEEEEE; margin:24px auto 28px; }}
-    h1 {{ margin:0; font-family:'Playfair Display', Georgia, 'Times New Roman', serif; font-weight:400; font-size:48px; line-height:.95; letter-spacing:-1.2px; }}
+    h1 {{ margin:0; font-family:'Playfair Display', Georgia, 'Times New Roman', serif; font-weight:400; font-size:50px; line-height:.95; letter-spacing:-1.2px; }}
     h1 em {{ color:#8A8A8A; font-style:italic; font-weight:400; }}
-    .hero .rule.after {{ margin:24px auto 28px; }}
-    .hero p {{ color:#777777; font-size:16px; line-height:1.8; margin:0 auto; max-width:440px; letter-spacing:0; }}
-    .grid {{ background:#FFFFFF; display:grid; gap:0; }}
-    .card {{ display:grid; grid-template-columns:50% 50%; border-bottom:1px solid #EEEEEE; min-height:430px; }}
-    .media {{ background:#FFFFFF; min-height:430px; display:flex; align-items:center; justify-content:center; overflow:hidden; line-height:0; }}
-    .product-img {{ width:100%; height:100%; object-fit:contain; object-position:center center; display:block; padding:38px 30px 54px; transform:translateY(-7%); }}
+    .hero .rule.after {{ margin:25px auto 28px; }}
+    .hero p {{ color:#777777; font-size:16px; line-height:1.85; margin:0 auto; max-width:425px; letter-spacing:0; }}
+    .grid {{ background:#FFFFFF; display:block; }}
+    .card {{ border-bottom:1px solid #EEEEEE; background:#FFFFFF; }}
+    .media {{ background:#FFFFFF; min-height:285px; display:flex; align-items:center; justify-content:center; overflow:hidden; line-height:0; padding:28px 48px 10px; }}
+    .product-img {{ width:100%; max-width:490px; max-height:245px; object-fit:contain; object-position:center center; display:block; }}
     .image-fallback {{ color:#777777; font-size:13px; line-height:1.6; text-align:center; padding:34px; }}
     .image-fallback span {{ font-size:10px; letter-spacing:5px; text-transform:uppercase; color:#C3C3C3; }}
-    .info {{ background:#E9E2D8; padding:48px 38px; display:flex; flex-direction:column; justify-content:center; border-left:1px solid #EEEEEE; }}
-    .eyebrow {{ color:#B9B3AD; font-size:9px; letter-spacing:5px; text-transform:uppercase; margin-bottom:18px; font-weight:300; }}
-    h3 {{ font-family:'Playfair Display', Georgia, 'Times New Roman', serif; font-size:28px; line-height:1.12; font-weight:400; margin:0 0 18px; color:#111111; }}
-    .copy {{ color:#777777; font-size:13px; line-height:1.85; margin:0 0 16px; }}
-    .meta {{ color:#8A8A8A; font-size:10px; line-height:1.6; margin:0 0 22px; }}
-    .button {{ align-self:flex-start; background:#050505; color:#FFFFFF; text-decoration:none; padding:15px 21px; font-size:9px; letter-spacing:3px; text-transform:uppercase; }}
+    .info {{ background:#EEE8E0; padding:40px 58px 46px; text-align:center; display:flex; flex-direction:column; align-items:center; }}
+    .eyebrow {{ color:#9F9891; font-size:9px; letter-spacing:5px; text-transform:uppercase; margin-bottom:16px; font-weight:300; }}
+    h3 {{ font-family:'Playfair Display', Georgia, 'Times New Roman', serif; font-size:31px; line-height:1.1; font-weight:400; margin:0 0 16px; color:#111111; max-width:430px; }}
+    .copy {{ color:#777777; font-size:14px; line-height:1.9; margin:0 0 18px; max-width:410px; }}
+    .meta {{ color:#8A8A8A; font-size:10px; line-height:1.6; margin:0 0 24px; letter-spacing:.5px; }}
+    .button {{ align-self:center; background:#050505; color:#FFFFFF; text-decoration:none; padding:16px 24px; font-size:9px; letter-spacing:3px; text-transform:uppercase; }}
     .manifesto {{ background:#050505; color:#FFFFFF; margin:0; padding:58px 44px 50px; text-align:center; }}
     .manifesto p {{ font-family:'Playfair Display', Georgia, 'Times New Roman', serif; font-weight:400; font-style:italic; font-size:25px; line-height:1.45; margin:0 0 20px; color:#F8F8F8; }}
     .manifesto .sig {{ font-size:9px; letter-spacing:4px; text-transform:uppercase; color:#8A8A8A; }}
@@ -249,25 +232,26 @@ def build_html(data: dict[str, Any], enrichment: dict[str, Any]) -> str:
     .unsubscribe a {{ font-size:9px; letter-spacing:2.5px; text-transform:uppercase; color:#8A8A8A; text-decoration:none; }}
     @media (max-width:620px) {{
       .frame {{ max-width:100%; }}
-      .hero {{ padding:64px 34px 52px; }}
-      h1 {{ font-size:46px; }}
+      .hero {{ padding:54px 34px 44px; }}
+      h1 {{ font-size:44px; }}
       .hero p {{ font-size:15px; }}
-      .card {{ grid-template-columns:1fr; min-height:0; }}
-      .media {{ min-height:360px; }}
-      .product-img {{ padding:42px 38px 54px; transform:translateY(-6%); }}
-      .info {{ border-left:0; border-top:1px solid #EEEEEE; min-height:330px; padding:46px 36px; }}
+      .media {{ min-height:270px; padding:26px 32px 8px; }}
+      .product-img {{ max-height:220px; }}
+      .info {{ padding:38px 32px 44px; }}
+      h3 {{ font-size:29px; }}
+      .copy {{ font-size:13.5px; }}
     }}
   </style>
 </head>
 <body>
   <main class="frame">
     <header class="header"><img alt="LK Sneakers" src="{esc(LOGO_WHITE)}"></header>
-    <section class="topline"><span>SELEÇÃO PERSONALIZADA · LK SNEAKERS</span></section>
+    <section class="topline"><span>CURADORIA LK · DISPONIBILIDADE CONFERIDA</span></section>
     <section class="hero">
-      <div class="kicker">CURADORIA EXCLUSIVA</div>
-      <h1>Ainda<br><em>Especial.</em></h1>
+      <div class="kicker">SELEÇÃO EXCLUSIVA</div>
+      <h1>Sua curadoria<br><em>está pronta.</em></h1>
       <div class="rule after"></div>
-      <p>LK, selecionamos peças que conversam com a sua última escolha presencial e mantêm a mesma leitura de estilo.</p>
+      <p>Peças escolhidas para continuar a sua última compra na LK, com estética próxima e disponibilidade conferida no seu tamanho.</p>
     </section>
     <section class="grid">
       {''.join(cards)}

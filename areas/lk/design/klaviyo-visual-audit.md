@@ -34,6 +34,7 @@ Modo: leitura via API Klaviyo, sem envio, sem alteração de campanha, sem publi
 - Microcopy uppercase com letter-spacing alto.
 - CTAs pretos, retangulares, pequenos e firmes.
 - Produto como protagonista cromático; interface neutra.
+- Para CRM/curadoria, o layout empilhado mobile-first ficou melhor que o card split: imagem em bloco branco amplo, texto em bloco bege abaixo e CTA centralizado. Usar split só quando a composição realmente ficar equilibrada.
 - Grid 2 colunas para ranking/top produtos.
 - Badge de ranking preto com texto branco.
 - Bloco manifesto preto com frase editorial.
