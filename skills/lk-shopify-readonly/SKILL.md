@@ -168,6 +168,12 @@ For catalog-wide SKU normalization, load `references/catalog-wide-shopify-sku-no
 
 For the post-normalization residual queue, load `references/residual-fila-b-prioritization-20260511.md`. It captures how to classify skipped variants into residual buckets, prioritize P0/P1/P2/P3 manual review, and avoid jumping to sourcing before ambiguous/no-match SKU rows are resolved.
 
+For the P0 follow-up after live Shopify/Tiny lookup, load `references/p0-residual-correction-queue-20260511.md`. It captures the rule that Tiny size/color matches without populated `codigo` are still not safe for automatic SKU-only writes; convert the findings into a human correction queue (MD/JSON/CSV) before any Fila A/sourcing.
+
+For the P0 Tiny code correction preview, load `references/p0-tiny-code-correction-preview-20260511.md`. It captures how to separate candidate Tiny `codigo` writes with target codes from rows that still need Lucas/Júlio to define the canonical code.
+
+For live P0 residual follow-up, load `references/lk-p0-residual-live-lookup-20260511.md`. It captures the Shopify GET + Tiny search/detail workflow, the requirement for a unique Tiny candidate with populated canonical `codigo`, and the rule that Tiny matches without code or ambiguous size/color matches cannot move to automatic SKU-only write or sourcing.
+
 ## Verification checklist
 
 Before saying “100%” or “funciona”:
@@ -199,3 +205,6 @@ Before saying “100%” or “funciona”:
 7. **Silent success.** A script can return OK while inserting zero rows. Verify data freshness/counts when the task is about sync health.
 8. **Jumping to Fila A before B.** For LK Stock Intelligence, Lucas wants B first: resolve `sem SKU no Shopify` and `mapear SKU no Tiny` before commercial sourcing/reposition previews.
 9. **Tiny search false negatives.** Tiny SKU lookup may miss variants because Tiny stores spaces/punctuation differently (e.g. Shopify `1183C102751-3` vs Tiny `1183C102 751-3`) or variants have blank `codigo`. Retry with normalized/spaced SKU and product-title+size searches before declaring “not in Tiny”.
+10. **Treating Tiny match as enough.** A Tiny size/color match with blank `codigo` or duplicate candidate IDs is not a safe write target. Produce a correction queue and require human/Tiny `codigo` confirmation before Shopify SKU-only preview or sourcing.
+10. **Tiny candidate without `codigo` is not actionable.** In residual/P0 cleanup, a Tiny search or detail match that returns the right product/size but no canonical `codigo` still blocks automatic Shopify SKU writes and sourcing. Require a unique candidate with populated Tiny `codigo`, otherwise route to manual/Tiny canonical-code resolution first.
+11. **P0 residual ≠ Fila A.** Even when a residual row overlaps sales/rupture, do a live read-only Shopify + Tiny detail lookup before commercial recommendations; no sourcing/reposition until SKU truth is confirmed.
