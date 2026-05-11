@@ -1,3 +1,11 @@
+## 2026-05-11 — LK OS Tiny freshness report read-only
+
+- PR #90 do Data Spine snapshot foi squash-merged e o clone local do Brain foi sincronizado em `origin/main` no commit `02b8223`.
+- Criado e executado `scripts/lk_os_tiny_freshness_report_20260511.py`, relatório read-only específico para saúde/latência do Tiny ERP e visibilidade do depósito `LK | CONTROLE ESTOQUE`.
+- Resultado: status `green`, 6/6 buscas OK, 8/8 checks de estoque OK, depósito oficial visto em 8/8, mediana 379 ms, p95 1442 ms, 0 erros.
+- Relatórios públicos: `reports/lk-os-tiny-freshness-report-2026-05-11.md` e `.json`; saída privada auditável em `/opt/data/hermes_bruno_ingest/local_sql/lk_data_spine_snapshots/` com permissão restrita.
+- Nenhum write, cron, campanha, envio, alteração de estoque/preço, banco de produção, Shopify/Tiny/Klaviyo/Notion/Meta/Google/Metricool/n8n ou infra foi executado.
+
 ## 2026-05-11 — LK OS Data Spine snapshot read-only executado
 
 - Criado e executado `scripts/lk_os_data_spine_snapshots_20260511.py`, com snapshot read-only de Shopify, Tiny, GA4, Meta Ads, Metricool/Google Ads e Klaviyo.

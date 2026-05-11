@@ -1,0 +1,307 @@
+{
+  "source": "Tiny",
+  "fact_label": "fact_tiny_stock",
+  "generated_at": "2026-05-11T18:43:35.728034+00:00",
+  "ok": true,
+  "freshness_status": "green",
+  "status_reasons": [
+    "API Tiny respondeu com depósito oficial visível na amostra"
+  ],
+  "scope_note": "Relatório read-only de saúde/latência da API Tiny v2; não prova estoque completo por catálogo.",
+  "thresholds": {
+    "green": "todas as buscas OK, >=80% checks de estoque com depósito oficial, p95 <= 10s, mediana <= 5s",
+    "yellow": "API responde, mas latência elevada ou cobertura parcial não crítica",
+    "red": "falha de busca ou cobertura crítica do depósito oficial"
+  },
+  "latency": {
+    "sample_count": 14,
+    "median_ms": 379,
+    "p95_ms": 1442,
+    "max_ms": 1480
+  },
+  "coverage": {
+    "searches_ok": 6,
+    "searches_total": 6,
+    "stock_checks_ok": 8,
+    "stock_checks_total": 8,
+    "official_deposit_seen": 8,
+    "official_deposit_with_saldo": 8,
+    "error_count": 0
+  },
+  "searches": [
+    {
+      "query": "Nike",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 1422,
+      "sample_count": 100,
+      "ok": true
+    },
+    {
+      "query": "Adidas",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 807,
+      "sample_count": 100,
+      "ok": true
+    },
+    {
+      "query": "New Balance",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 700,
+      "sample_count": 100,
+      "ok": true
+    },
+    {
+      "query": "Asics",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 1480,
+      "sample_count": 100,
+      "ok": true
+    },
+    {
+      "query": "Onitsuka",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 537,
+      "sample_count": 100,
+      "ok": true
+    },
+    {
+      "query": "Jordan",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 853,
+      "sample_count": 100,
+      "ok": true
+    }
+  ],
+  "stock_checks": [
+    {
+      "tiny_id": "1055417789",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 266,
+      "codigo_present": true,
+      "official_deposit_seen": true,
+      "official_deposit_has_saldo": true,
+      "deposit_count": 3,
+      "depositos": [
+        {
+          "nome": "LK FISCAL",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | CONTROLE ESTOQUE",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | ENCOMENDAS",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "tiny_id": "1055417817",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 306,
+      "codigo_present": true,
+      "official_deposit_seen": true,
+      "official_deposit_has_saldo": true,
+      "deposit_count": 3,
+      "depositos": [
+        {
+          "nome": "LK FISCAL",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | CONTROLE ESTOQUE",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | ENCOMENDAS",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "tiny_id": "1065257838",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 256,
+      "codigo_present": true,
+      "official_deposit_seen": true,
+      "official_deposit_has_saldo": true,
+      "deposit_count": 3,
+      "depositos": [
+        {
+          "nome": "LK FISCAL",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | CONTROLE ESTOQUE",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | ENCOMENDAS",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "tiny_id": "1065257860",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 333,
+      "codigo_present": true,
+      "official_deposit_seen": true,
+      "official_deposit_has_saldo": true,
+      "deposit_count": 3,
+      "depositos": [
+        {
+          "nome": "LK FISCAL",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | CONTROLE ESTOQUE",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | ENCOMENDAS",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "tiny_id": "1062176137",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 275,
+      "codigo_present": true,
+      "official_deposit_seen": true,
+      "official_deposit_has_saldo": true,
+      "deposit_count": 3,
+      "depositos": [
+        {
+          "nome": "LK FISCAL",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | CONTROLE ESTOQUE",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | ENCOMENDAS",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "tiny_id": "1062176148",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 425,
+      "codigo_present": true,
+      "official_deposit_seen": true,
+      "official_deposit_has_saldo": true,
+      "deposit_count": 3,
+      "depositos": [
+        {
+          "nome": "LK FISCAL",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | CONTROLE ESTOQUE",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | ENCOMENDAS",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "tiny_id": "1070660452",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 326,
+      "codigo_present": false,
+      "official_deposit_seen": true,
+      "official_deposit_has_saldo": true,
+      "deposit_count": 3,
+      "depositos": [
+        {
+          "nome": "LK FISCAL",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | CONTROLE ESTOQUE",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | ENCOMENDAS",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "tiny_id": "1070660510",
+      "http_status": 200,
+      "tiny_status": "OK",
+      "latency_ms": 289,
+      "codigo_present": true,
+      "official_deposit_seen": true,
+      "official_deposit_has_saldo": true,
+      "deposit_count": 3,
+      "depositos": [
+        {
+          "nome": "LK FISCAL",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | CONTROLE ESTOQUE",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        },
+        {
+          "nome": "LK | ENCOMENDAS",
+          "has_saldo": true,
+          "desconsiderar": "N"
+        }
+      ],
+      "ok": true
+    }
+  ]
+}
