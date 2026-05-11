@@ -27,28 +27,49 @@ PRIVATE_KL = PRIVATE_DIR / 'lk_phase5_p1_klaviyo_ready_2026-05-11.csv'
 PRIVATE_ALL = PRIVATE_DIR / 'lk_phase5_p1_all_ready_channel_queue_2026-05-11.csv'
 
 
-def copy_for(segment: str, product: str, channel: str) -> tuple[str, str]:
+def _short_product(product: str) -> str:
+    return (product or '').replace('Tênis ', '').strip()
+
+
+def copy_for(segment: str, recommended_product: str, channel: str, purchase_product: str) -> tuple[str, str]:
     # Internal preview only. Final copy should be reviewed before any send.
-    product_short = product.replace('Tênis ', '').strip()
-    if segment == 'Champions/VIP' and channel == 'whatsapp_concierge':
+    product_short = _short_product(recommended_product)
+    purchase_short = _short_product(purchase_product)
+    same_product = purchase_short and purchase_short == product_short
+    if channel == 'whatsapp_concierge':
+        if same_product:
+            return (
+                'Loja física / concierge direto / mesmo perfil',
+                f'Oi {{first_name}}, tudo bem? Vi que você comprou na LK Flagship o {purchase_short}. Entrou disponibilidade no mesmo perfil e tamanho; também consigo te mandar mais 2 ou 3 opções que combinam com essa escolha. Quer que eu te mande?',
+            )
         return (
-            'VIP concierge / curadoria reservada',
-            f'Oi {{first_name}}, tudo bem? Vi aqui que você já comprou peças bem especiais com a LK. Entrou disponibilidade em tamanho próximo ao seu perfil de {product_short}. Se fizer sentido, te mando as opções antes de abrir para a base.',
+            'Loja física / concierge direto / curadoria por compra',
+            f'Oi {{first_name}}, tudo bem? Vi que você comprou na LK Flagship o {purchase_short}. Normalmente quem curte essa linha também gosta de ver opções como {product_short}, no mesmo tamanho/perfil. Se quiser, te mando mais 2 ou 3 opções bem curadas antes de abrir para todo mundo.',
+        )
+    if same_product:
+        return (
+            'Loja física / recompra por perfil / sem massificar',
+            f'Você comprou na LK Flagship o {purchase_short}. Entrou disponibilidade no mesmo perfil e tamanho; também separamos algumas alternativas que conversam com essa escolha, sempre com curadoria LK e estoque real.',
         )
     if segment == 'Champions/VIP':
         return (
-            'VIP limitado / sem desconto',
-            f'Uma curadoria reservada da LK para clientes recorrentes: {product_short} em tamanhos selecionados, com atendimento próximo e sem comunicação massiva.',
+            'Loja física / VIP limitado / sem desconto',
+            f'Você comprou na LK Flagship o {purchase_short}. Pela mesma linha de curadoria, separamos {product_short} em tamanho compatível, com atendimento próximo e sem comunicação massiva.',
         )
     if segment == 'Novo alto potencial':
         return (
-            'Segunda compra / best-seller real',
-            f'Depois da sua primeira escolha na LK, separamos uma recomendação com base em um modelo que vem performando bem e com disponibilidade real no seu tamanho: {product_short}.',
+            'Loja física / segunda compra / curadoria direta',
+            f'Depois da sua escolha na LK Flagship — {purchase_short} — separamos uma recomendação que combina com esse perfil: {product_short}, com disponibilidade real no seu tamanho.',
         )
     return (
-        'Recompra por afinidade',
-        f'Seleção LK baseada no seu histórico de compra e em disponibilidade real: {product_short}.',
+        'Loja física / recompra por afinidade',
+        f'Seleção LK baseada na sua compra presencial de {purchase_short}: {product_short}, com disponibilidade real no seu tamanho.',
     )
+
+
+def is_physical_store_order(order: dict) -> bool:
+    tags = order.get('tags') or ''
+    return order.get('source_name') == 'pos' or 'Point of Sale' in tags or 'LKFLAGSHIP' in tags
 
 
 def main() -> None:
@@ -65,10 +86,35 @@ def main() -> None:
     groups = {r['group_key']: dict(r) for r in conn.execute('SELECT * FROM final_approval_groups')}
     stock = {(r['anchor_product'], r['size'], r['sku']): dict(r) for r in conn.execute('SELECT * FROM tiny_anchor_stock')}
     customers = {str(r['customer_id']): dict(r) for r in conn.execute('SELECT customer_id,email,phone,first_name,last_name,full_name,accepts_marketing FROM lk_customers')}
+
+    store_context_by_key = {}
+    for r in p1:
+        private = id_by_ref.get(r['customer_ref'], {})
+        customer_id = str(private.get('customer_id') or '')
+        if not customer_id:
+            continue
+        matches = [dict(x) for x in conn.execute(
+            """
+            SELECT o.order_number,o.order_created_at,o.source_name,o.tags,oi.title,oi.variant_title,oi.sku
+            FROM lk_orders o
+            JOIN lk_order_items oi ON oi.order_id=o.order_id
+            WHERE o.customer_id=?
+              AND oi.title=?
+              AND COALESCE(oi.variant_title,'')=COALESCE(?,'')
+              AND COALESCE(oi.sku,'')=COALESCE(?,'')
+            ORDER BY o.order_created_at DESC
+            """,
+            (customer_id, r['anchor_product'], str(r.get('anchor_size') or ''), r.get('anchor_sku') or ''),
+        )]
+        store_matches = [m for m in matches if is_physical_store_order(m)]
+        if store_matches:
+            key = (r['customer_ref'], r['segment'], r['anchor_product'])
+            store_context_by_key[key] = store_matches[0]
     conn.close()
 
     ready_rows = []
     blocked_rows = []
+    store_excluded_rows = []
     for r in p1:
         st = stock.get((r['anchor_product'], r['anchor_size'], r['anchor_sku']))
         private = id_by_ref.get(r['customer_ref'], {})
@@ -87,7 +133,20 @@ def main() -> None:
             'available_estimated_total': (st or {}).get('available_estimated_total'),
         }
         if st and st.get('status') == 'available' and (st.get('available_estimated_total') or 0) > 0:
-            ready_rows.append(base)
+            store_context = store_context_by_key.get((r['customer_ref'], r['segment'], r['anchor_product']))
+            if store_context:
+                base.update({
+                    'store_purchase_order_number': store_context.get('order_number') or '',
+                    'store_purchase_at': store_context.get('order_created_at') or '',
+                    'store_purchase_product': store_context.get('title') or r['anchor_product'],
+                    'store_purchase_size': store_context.get('variant_title') or r['anchor_size'],
+                    'store_purchase_sku': store_context.get('sku') or r['anchor_sku'],
+                    'store_purchase_source_name': store_context.get('source_name') or '',
+                })
+                ready_rows.append(base)
+            else:
+                base['stock_status'] = 'available_but_not_physical_store_anchor_purchase'
+                store_excluded_rows.append(base)
         else:
             blocked_rows.append(base)
 
@@ -110,7 +169,7 @@ def main() -> None:
             channel = 'whatsapp_concierge'
         else:
             channel = 'hold_no_contact'
-        angle, preview = copy_for(r['segment'], r['anchor_product'], channel)
+        angle, preview = copy_for(r['segment'], r['anchor_product'], channel, r.get('store_purchase_product') or r['anchor_product'])
         enriched = {
             'channel': channel,
             'customer_id': r['customer_id'],
@@ -121,6 +180,11 @@ def main() -> None:
             'first_name': r.get('first_name') or '',
             'full_name': r.get('full_name') or '',
             'segment': r['segment'],
+            'store_purchase_product': r.get('store_purchase_product') or '',
+            'store_purchase_size': r.get('store_purchase_size') or '',
+            'store_purchase_sku': r.get('store_purchase_sku') or '',
+            'store_purchase_at': r.get('store_purchase_at') or '',
+            'store_purchase_source_name': r.get('store_purchase_source_name') or '',
             'anchor_product': r['anchor_product'],
             'anchor_size': r['anchor_size'],
             'anchor_sku': r['anchor_sku'],
@@ -140,7 +204,7 @@ def main() -> None:
         if channel == 'whatsapp_concierge' and enriched['phone'] and enriched['phone'] not in seen_wa:
             whatsapp.append(enriched); seen_wa.add(enriched['phone'])
 
-    fieldnames = ['channel','customer_id','source_customer_id','customer_ref','email','phone','first_name','full_name','segment','anchor_product','anchor_size','anchor_sku','stock_status','available_estimated_total','monetary_value','frequency_orders','recency_days','recommended_channel_action','copy_angle','copy_preview_internal','approval_status']
+    fieldnames = ['channel','customer_id','source_customer_id','customer_ref','email','phone','first_name','full_name','segment','store_purchase_product','store_purchase_size','store_purchase_sku','store_purchase_at','store_purchase_source_name','anchor_product','anchor_size','anchor_sku','stock_status','available_estimated_total','monetary_value','frequency_orders','recency_days','recommended_channel_action','copy_angle','copy_preview_internal','approval_status']
     for path, rows in [(PRIVATE_ALL, all_queue), (PRIVATE_KL, klaviyo), (PRIVATE_WA, whatsapp)]:
         with path.open('w', newline='') as f:
             w = csv.DictWriter(f, fieldnames=fieldnames)
@@ -164,7 +228,7 @@ def main() -> None:
 
     summary = {
         'generated_at': now,
-        'scope': 'Preview-only final P1 channel queues. No send, no external list creation.',
+        'scope': 'Preview-only final P1 channel queues. Physical-store anchor purchases only. No send, no external list creation.',
         'private_exports': {
             'all_ready_channel_queue': str(PRIVATE_ALL),
             'klaviyo_ready': str(PRIVATE_KL),
@@ -172,7 +236,9 @@ def main() -> None:
         },
         'counts': {
             'p1_candidates_total': len(p1),
-            'ready_same_size_stock': len(ready_rows),
+            'ready_same_size_stock_before_store_filter': len(ready_rows) + len(store_excluded_rows),
+            'ready_physical_store_anchor_purchase': len(ready_rows),
+            'excluded_online_or_non_store_anchor_purchase': len(store_excluded_rows),
             'blocked_stock_or_mapping': len(blocked_rows),
             'all_queue_rows': len(all_queue),
             'klaviyo_unique_emails': len(klaviyo),
@@ -184,6 +250,7 @@ def main() -> None:
         'top_products': dict(by_product.most_common(20)),
         'copy_previews': copy_previews,
         'guardrails': [
+            'No online/web anchor purchases included in this physical-store action',
             'No Klaviyo list created',
             'No WhatsApp/Evolution send',
             'No customer-facing action',
@@ -196,7 +263,11 @@ def main() -> None:
     lines = [
         '# LK Phase 5 P1 — listas finais por canal (preview, sem envio) — 2026-05-11', '',
         '## Veredito', '',
-        'Listas finais P1 foram geradas em arquivos privados para operação/preview. Nenhum envio, lista externa, tag, campanha ou automação foi executado.', '',
+        'Listas P1 revisadas para a regra aprovada por Lucas: somente clientes cuja compra-âncora foi na loja física/LK Flagship. Nenhum envio, lista externa, tag, campanha ou automação foi executado.', '',
+        '## Regra comercial aplicada', '',
+        '- Entram: compras-âncora com `source_name=pos`, tag `Point of Sale` ou `LKFLAGSHIP`.',
+        '- Saem: compras online/web/draft mesmo quando havia estoque no tamanho.',
+        '- Copy revisada: mais direta, citando a compra presencial e oferecendo curadoria/opções relacionadas.', '',
         '## Contagens', '',
     ]
     for k, v in summary['counts'].items():

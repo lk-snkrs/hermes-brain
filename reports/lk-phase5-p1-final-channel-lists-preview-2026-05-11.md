@@ -2,87 +2,82 @@
 
 ## Veredito
 
-Listas finais P1 foram geradas em arquivos privados para operação/preview. Nenhum envio, lista externa, tag, campanha ou automação foi executado.
+Listas P1 revisadas para a regra aprovada por Lucas: somente clientes cuja compra-âncora foi na loja física/LK Flagship. Nenhum envio, lista externa, tag, campanha ou automação foi executado.
+
+## Regra comercial aplicada
+
+- Entram: compras-âncora com `source_name=pos`, tag `Point of Sale` ou `LKFLAGSHIP`.
+- Saem: compras online/web/draft mesmo quando havia estoque no tamanho.
+- Copy revisada: mais direta, citando a compra presencial e oferecendo curadoria/opções relacionadas.
 
 ## Contagens
 
 - p1_candidates_total: 108
-- ready_same_size_stock: 65
+- ready_same_size_stock_before_store_filter: 65
+- ready_physical_store_anchor_purchase: 19
+- excluded_online_or_non_store_anchor_purchase: 46
 - blocked_stock_or_mapping: 43
-- all_queue_rows: 65
-- klaviyo_unique_emails: 47
-- whatsapp_unique_phones: 13
+- all_queue_rows: 19
+- klaviyo_unique_emails: 9
+- whatsapp_unique_phones: 7
 
 ## Distribuição por canal
 
-- whatsapp_concierge: 16
-- klaviyo_preview: 49
+- whatsapp_concierge: 10
+- klaviyo_preview: 9
 
 ## Distribuição por segmento
 
-- Champions/VIP: 41
-- Novo alto potencial: 24
+- Champions/VIP: 12
+- Novo alto potencial: 7
 
 ## Top grupos prontos
 
-- Champions/VIP | Tênis New Balance 204L Mushroom Arid Stone Marrom: 22
-- Novo alto potencial | Tênis New Balance 204L Mushroom Arid Stone Marrom: 13
-- Novo alto potencial | Tênis New Balance 204L Arid Timberwolf Bege: 8
-- Champions/VIP | Tênis New Balance 204L Arid Timberwolf Bege: 7
-- Champions/VIP | Tênis Adidas Samba OG Crochet Pack Sand Strata Bege: 5
-- Champions/VIP | Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo: 5
-- Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege: 3
-- Champions/VIP | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo: 2
+- Champions/VIP | Tênis New Balance 204L Mushroom Arid Stone Marrom: 5
+- Champions/VIP | Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo: 3
+- Novo alto potencial | Tênis New Balance 204L Mushroom Arid Stone Marrom: 3
+- Champions/VIP | Tênis Adidas Samba OG Crochet Pack Sand Strata Bege: 2
+- Champions/VIP | Tênis New Balance 204L Arid Timberwolf Bege: 2
+- Novo alto potencial | Tênis New Balance 204L Arid Timberwolf Bege: 2
+- Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege: 2
 
 ## Previews de copy por grupo/canal
 
-### Champions/VIP | Tênis New Balance 204L Mushroom Arid Stone Marrom | klaviyo_preview (14)
-- Ângulo: VIP limitado / sem desconto
-- Preview interno: Uma curadoria reservada da LK para clientes recorrentes: New Balance 204L Mushroom Arid Stone Marrom em tamanhos selecionados, com atendimento próximo e sem comunicação massiva.
+### Champions/VIP | Tênis New Balance 204L Mushroom Arid Stone Marrom | whatsapp_concierge (4)
+- Ângulo: Loja física / concierge direto / mesmo perfil
+- Preview interno: Oi {first_name}, tudo bem? Vi que você comprou na LK Flagship o New Balance 204L Mushroom Arid Stone Marrom. Entrou disponibilidade no mesmo perfil e tamanho; também consigo te mandar mais 2 ou 3 opções que combinam com essa escolha. Quer que eu te mande?
 
-### Novo alto potencial | Tênis New Balance 204L Mushroom Arid Stone Marrom | klaviyo_preview (13)
-- Ângulo: Segunda compra / best-seller real
-- Preview interno: Depois da sua primeira escolha na LK, separamos uma recomendação com base em um modelo que vem performando bem e com disponibilidade real no seu tamanho: New Balance 204L Mushroom Arid Stone Marrom.
+### Champions/VIP | Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo | whatsapp_concierge (3)
+- Ângulo: Loja física / concierge direto / mesmo perfil
+- Preview interno: Oi {first_name}, tudo bem? Vi que você comprou na LK Flagship o Nike Moon Shoe SP Jacquemus Alabaster Amarelo. Entrou disponibilidade no mesmo perfil e tamanho; também consigo te mandar mais 2 ou 3 opções que combinam com essa escolha. Quer que eu te mande?
 
-### Champions/VIP | Tênis New Balance 204L Mushroom Arid Stone Marrom | whatsapp_concierge (8)
-- Ângulo: VIP concierge / curadoria reservada
-- Preview interno: Oi {first_name}, tudo bem? Vi aqui que você já comprou peças bem especiais com a LK. Entrou disponibilidade em tamanho próximo ao seu perfil de New Balance 204L Mushroom Arid Stone Marrom. Se fizer sentido, te mando as opções antes de abrir para a base.
-
-### Novo alto potencial | Tênis New Balance 204L Arid Timberwolf Bege | klaviyo_preview (8)
-- Ângulo: Segunda compra / best-seller real
-- Preview interno: Depois da sua primeira escolha na LK, separamos uma recomendação com base em um modelo que vem performando bem e com disponibilidade real no seu tamanho: New Balance 204L Arid Timberwolf Bege.
-
-### Champions/VIP | Tênis New Balance 204L Arid Timberwolf Bege | klaviyo_preview (5)
-- Ângulo: VIP limitado / sem desconto
-- Preview interno: Uma curadoria reservada da LK para clientes recorrentes: New Balance 204L Arid Timberwolf Bege em tamanhos selecionados, com atendimento próximo e sem comunicação massiva.
-
-### Champions/VIP | Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo | whatsapp_concierge (4)
-- Ângulo: VIP concierge / curadoria reservada
-- Preview interno: Oi {first_name}, tudo bem? Vi aqui que você já comprou peças bem especiais com a LK. Entrou disponibilidade em tamanho próximo ao seu perfil de Nike Moon Shoe SP Jacquemus Alabaster Amarelo. Se fizer sentido, te mando as opções antes de abrir para a base.
-
-### Champions/VIP | Tênis Adidas Samba OG Crochet Pack Sand Strata Bege | klaviyo_preview (3)
-- Ângulo: VIP limitado / sem desconto
-- Preview interno: Uma curadoria reservada da LK para clientes recorrentes: Adidas Samba OG Crochet Pack Sand Strata Bege em tamanhos selecionados, com atendimento próximo e sem comunicação massiva.
-
-### Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege | klaviyo_preview (3)
-- Ângulo: Segunda compra / best-seller real
-- Preview interno: Depois da sua primeira escolha na LK, separamos uma recomendação com base em um modelo que vem performando bem e com disponibilidade real no seu tamanho: Onitsuka Tiger Mexico 66 SD Cream Birch Bege.
+### Novo alto potencial | Tênis New Balance 204L Mushroom Arid Stone Marrom | klaviyo_preview (3)
+- Ângulo: Loja física / recompra por perfil / sem massificar
+- Preview interno: Você comprou na LK Flagship o New Balance 204L Mushroom Arid Stone Marrom. Entrou disponibilidade no mesmo perfil e tamanho; também separamos algumas alternativas que conversam com essa escolha, sempre com curadoria LK e estoque real.
 
 ### Champions/VIP | Tênis Adidas Samba OG Crochet Pack Sand Strata Bege | whatsapp_concierge (2)
-- Ângulo: VIP concierge / curadoria reservada
-- Preview interno: Oi {first_name}, tudo bem? Vi aqui que você já comprou peças bem especiais com a LK. Entrou disponibilidade em tamanho próximo ao seu perfil de Adidas Samba OG Crochet Pack Sand Strata Bege. Se fizer sentido, te mando as opções antes de abrir para a base.
+- Ângulo: Loja física / concierge direto / mesmo perfil
+- Preview interno: Oi {first_name}, tudo bem? Vi que você comprou na LK Flagship o Adidas Samba OG Crochet Pack Sand Strata Bege. Entrou disponibilidade no mesmo perfil e tamanho; também consigo te mandar mais 2 ou 3 opções que combinam com essa escolha. Quer que eu te mande?
 
-### Champions/VIP | Tênis New Balance 204L Arid Timberwolf Bege | whatsapp_concierge (2)
-- Ângulo: VIP concierge / curadoria reservada
-- Preview interno: Oi {first_name}, tudo bem? Vi aqui que você já comprou peças bem especiais com a LK. Entrou disponibilidade em tamanho próximo ao seu perfil de New Balance 204L Arid Timberwolf Bege. Se fizer sentido, te mando as opções antes de abrir para a base.
+### Novo alto potencial | Tênis New Balance 204L Arid Timberwolf Bege | klaviyo_preview (2)
+- Ângulo: Loja física / recompra por perfil / sem massificar
+- Preview interno: Você comprou na LK Flagship o New Balance 204L Arid Timberwolf Bege. Entrou disponibilidade no mesmo perfil e tamanho; também separamos algumas alternativas que conversam com essa escolha, sempre com curadoria LK e estoque real.
 
-### Champions/VIP | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo | klaviyo_preview (2)
-- Ângulo: VIP limitado / sem desconto
-- Preview interno: Uma curadoria reservada da LK para clientes recorrentes: Onitsuka Tiger Mexico 66 Kill Bill Amarelo em tamanhos selecionados, com atendimento próximo e sem comunicação massiva.
+### Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege | klaviyo_preview (2)
+- Ângulo: Loja física / recompra por perfil / sem massificar
+- Preview interno: Você comprou na LK Flagship o Onitsuka Tiger Mexico 66 SD Cream Birch Bege. Entrou disponibilidade no mesmo perfil e tamanho; também separamos algumas alternativas que conversam com essa escolha, sempre com curadoria LK e estoque real.
 
-### Champions/VIP | Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo | klaviyo_preview (1)
-- Ângulo: VIP limitado / sem desconto
-- Preview interno: Uma curadoria reservada da LK para clientes recorrentes: Nike Moon Shoe SP Jacquemus Alabaster Amarelo em tamanhos selecionados, com atendimento próximo e sem comunicação massiva.
+### Champions/VIP | Tênis New Balance 204L Arid Timberwolf Bege | whatsapp_concierge (1)
+- Ângulo: Loja física / concierge direto / mesmo perfil
+- Preview interno: Oi {first_name}, tudo bem? Vi que você comprou na LK Flagship o New Balance 204L Arid Timberwolf Bege. Entrou disponibilidade no mesmo perfil e tamanho; também consigo te mandar mais 2 ou 3 opções que combinam com essa escolha. Quer que eu te mande?
+
+### Champions/VIP | Tênis New Balance 204L Arid Timberwolf Bege | klaviyo_preview (1)
+- Ângulo: Loja física / recompra por perfil / sem massificar
+- Preview interno: Você comprou na LK Flagship o New Balance 204L Arid Timberwolf Bege. Entrou disponibilidade no mesmo perfil e tamanho; também separamos algumas alternativas que conversam com essa escolha, sempre com curadoria LK e estoque real.
+
+### Champions/VIP | Tênis New Balance 204L Mushroom Arid Stone Marrom | klaviyo_preview (1)
+- Ângulo: Loja física / recompra por perfil / sem massificar
+- Preview interno: Você comprou na LK Flagship o New Balance 204L Mushroom Arid Stone Marrom. Entrou disponibilidade no mesmo perfil e tamanho; também separamos algumas alternativas que conversam com essa escolha, sempre com curadoria LK e estoque real.
 
 ## Arquivos privados gerados
 
@@ -92,6 +87,7 @@ Listas finais P1 foram geradas em arquivos privados para operação/preview. Nen
 
 ## Guardrails
 
+- No online/web anchor purchases included in this physical-store action
 - No Klaviyo list created
 - No WhatsApp/Evolution send
 - No customer-facing action
