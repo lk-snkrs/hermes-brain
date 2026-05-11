@@ -21,7 +21,7 @@ This skill captures Lucas's product upload logic:
 1. Use **GOAT** as the product reference whenever applicable because GOAT tends to have the correct product photos and the correct image order.
 2. Create the LK product structure carefully: title, vendor/brand, model, colorway, category, SKU/variant sizing, tags, SEO fields, and source references.
 3. Research the model history/context on Google/web before writing copy.
-4. Draft the description with LK's premium editorial tone and then run a stronger SEO/content pass, using the available Claude/SEO-style skills (`seo-content`, `seo-ecommerce`, `seo-page`, or blog/SEO tools as appropriate).
+4. Draft the description with LK's premium editorial tone and then run a stronger **Claude SEO / SEO-content** pass, using the available specialist skills (`seo-content`, `seo-ecommerce`, `seo-page`, or blog/SEO tools as appropriate). Treat “Claude SEO” as the refinement layer for entity clarity, E-E-A-T, product-page SEO, AI readability and non-generic LK copy.
 5. Produce a complete preview for Lucas.
 6. Only write to Shopify after explicit approval. Product creation/update is not covered by the read-only Shopify skill.
 
@@ -189,7 +189,7 @@ Process:
 
 1. Research the model history on Google/web.
 2. Draft a factual base description.
-3. Run a SEO/content refinement pass using the available Claude/SEO-style specialist skill (`seo-content`, `seo-ecommerce`, `seo-page`, or equivalent), especially for:
+3. Run a **Claude SEO / SEO-content refinement pass** using the available specialist skill (`seo-content`, `seo-ecommerce`, `seo-page`, or equivalent). In Lucas's shorthand, this is the “Claude SEO” step:
    - entity clarity;
    - title/meta description;
    - product schema considerations;
