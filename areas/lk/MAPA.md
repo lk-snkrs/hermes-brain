@@ -12,6 +12,7 @@ Fonte resumida atual: `memories/lk.md`.
 ## Projeto estratégico aprovado
 
 - `projetos/lk-operating-system-prd.md` — PRD v0.1 do LK Operating System no Hermes: CEO/Chief of Staff da LK com curadoria, estoque, Shopify, CRM, conteúdo, SEO, pricing, sourcing acionado por sinal, Google/Meta/influencers, approval flow e learning loop.
+- `projetos/lk-os-implementation-control.md` — plano mestre vivo de implementação do Projeto LK OS, com fases, definição de pronto, todo-list, próximos passos e frase canônica de retomada: `Seguir Projeto LK OS`.
 
 ## Design e comunicação visual
 
