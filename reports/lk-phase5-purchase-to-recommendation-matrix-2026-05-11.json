@@ -1,0 +1,665 @@
+{
+  "generated_at": "2026-05-11T15:49:38.264031+00:00",
+  "scope": "Internal product-purchase to product-recommendation matrix for LK Phase 5 P1. No PII, no send, no external write.",
+  "input_queue": "/opt/data/hermes_bruno_ingest/private_exports/lk_crm/lk_phase5_p1_all_ready_channel_queue_2026-05-11.csv",
+  "counts": {
+    "ready_queue_rows_without_pii": 19,
+    "unique_purchase_product_size_groups": 14,
+    "groups_with_candidates": 10,
+    "groups_without_candidates": 4,
+    "recipient_rows_covered": 19
+  },
+  "top_candidate_products_by_covered_recipients": {
+    "Tênis New Balance 204L Silver Metallic Flat Taupe Prateado": 12,
+    "Tênis New Balance 204L Silver Metallic Sage Green Prateado": 12,
+    "Tênis adidas Taekwondo Cloud White Branco": 10,
+    "Tênis New Balance 204L Black Timberwolf Preto": 10,
+    "Tênis adidas Taekwondo Core Black Preto": 8,
+    "Tênis Alo Yoga ALO Runner Espresso Marrom": 6,
+    "Tênis Adidas Samba OG Off White Earth Strata Gum Bege": 2,
+    "Tênis Adidas Samba LT Cream White Black Gum Bege": 2,
+    "adidas Taekwondo Mei Ballet Branco e Preto": 2,
+    "Tênis Adidas Taekwondo Mei Ballet Branco e Prata": 2,
+    "Tenis Adidas Taekwondo Mei Ballet Black Gum Preto": 1
+  },
+  "groups": [
+    {
+      "purchase_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "purchase_size": "35",
+      "recipient_count": 2,
+      "style_family": "low-profile neutro, suede e tons terrosos",
+      "recommendation_basis": "mantém a leitura minimalista e premium, mas muda textura ou acabamento para não parecer repetição literal",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Flat Taupe Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-flat-taupe-prateado",
+          "variant_title": "35",
+          "sku": "U204LSWA-2",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Sage Green Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-sage-green-prateado",
+          "variant_title": "35",
+          "sku": "U204LSWB-2",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis adidas Taekwondo Cloud White Branco",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-cloud-white-branco",
+          "variant_title": "35",
+          "sku": "JQ4774-2",
+          "price": 1499.99,
+          "inventory_quantity": 3
+        },
+        {
+          "title": "Tênis adidas Taekwondo Core Black Preto",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-core-black-preto",
+          "variant_title": "35",
+          "sku": "JQ4775-2",
+          "price": 1499.99,
+          "inventory_quantity": 2
+        },
+        {
+          "title": "Tênis Alo Yoga ALO Runner Espresso Marrom",
+          "vendor": "Alo Yoga",
+          "product_type": "Tênis",
+          "handle": "tenis-alo-yoga-alo-runner-espresso-marrom",
+          "variant_title": "35",
+          "sku": "a0590u_04-2",
+          "price": 2399.99,
+          "inventory_quantity": 5
+        }
+      ],
+      "validation_status": "SHOPIFY_SNAPSHOT_ONLY_REQUIRES_TINY_BEFORE_SEND"
+    },
+    {
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "36",
+      "recipient_count": 2,
+      "style_family": "low-profile neutro, suede e tons terrosos",
+      "recommendation_basis": "mantém a leitura minimalista e premium, mas muda textura ou acabamento para não parecer repetição literal",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Flat Taupe Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-flat-taupe-prateado",
+          "variant_title": "36",
+          "sku": "U204LSWA-3",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Sage Green Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-sage-green-prateado",
+          "variant_title": "36",
+          "sku": "U204LSWB-3",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Black Timberwolf Preto",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-black-timberwolf-preto",
+          "variant_title": "36",
+          "sku": "U204LMRA-3",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis adidas Taekwondo Cloud White Branco",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-cloud-white-branco",
+          "variant_title": "36",
+          "sku": "JQ4774-3",
+          "price": 1499.99,
+          "inventory_quantity": 3
+        },
+        {
+          "title": "Tênis adidas Taekwondo Core Black Preto",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-core-black-preto",
+          "variant_title": "36",
+          "sku": "JQ4775-3",
+          "price": 1499.99,
+          "inventory_quantity": 3
+        }
+      ],
+      "validation_status": "SHOPIFY_SNAPSHOT_ONLY_REQUIRES_TINY_BEFORE_SEND"
+    },
+    {
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "37",
+      "recipient_count": 2,
+      "style_family": "low-profile neutro, suede e tons terrosos",
+      "recommendation_basis": "mantém a leitura minimalista e premium, mas muda textura ou acabamento para não parecer repetição literal",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Flat Taupe Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-flat-taupe-prateado",
+          "variant_title": "37",
+          "sku": "U204LSWA-4",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Sage Green Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-sage-green-prateado",
+          "variant_title": "37",
+          "sku": "U204LSWB-4",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Black Timberwolf Preto",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-black-timberwolf-preto",
+          "variant_title": "37",
+          "sku": "U204LMRA-4",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis adidas Taekwondo Cloud White Branco",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-cloud-white-branco",
+          "variant_title": "37",
+          "sku": "JQ4774-4",
+          "price": 1499.99,
+          "inventory_quantity": 3
+        },
+        {
+          "title": "Tênis Alo Yoga ALO Runner Espresso Marrom",
+          "vendor": "Alo Yoga",
+          "product_type": "Tênis",
+          "handle": "tenis-alo-yoga-alo-runner-espresso-marrom",
+          "variant_title": "37",
+          "sku": "a0590u_04-4",
+          "price": 2399.99,
+          "inventory_quantity": 1
+        }
+      ],
+      "validation_status": "SHOPIFY_SNAPSHOT_ONLY_REQUIRES_TINY_BEFORE_SEND"
+    },
+    {
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "42",
+      "recipient_count": 2,
+      "style_family": "low-profile neutro, suede e tons terrosos",
+      "recommendation_basis": "mantém a leitura minimalista e premium, mas muda textura ou acabamento para não parecer repetição literal",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Flat Taupe Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-flat-taupe-prateado",
+          "variant_title": "42",
+          "sku": "U204LSWA-9",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Sage Green Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-sage-green-prateado",
+          "variant_title": "42",
+          "sku": "U204LSWB-9",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Black Timberwolf Preto",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-black-timberwolf-preto",
+          "variant_title": "42",
+          "sku": "U204LMRA-9",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis Alo Yoga ALO Runner Espresso Marrom",
+          "vendor": "Alo Yoga",
+          "product_type": "Tênis",
+          "handle": "tenis-alo-yoga-alo-runner-espresso-marrom",
+          "variant_title": "42",
+          "sku": "a0590u_04-9",
+          "price": 2399.99,
+          "inventory_quantity": 1
+        }
+      ],
+      "validation_status": "SHOPIFY_SNAPSHOT_ONLY_REQUIRES_TINY_BEFORE_SEND"
+    },
+    {
+      "purchase_product": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "purchase_size": "39",
+      "recipient_count": 2,
+      "style_family": "designer sneaker, Jacquemus e Nike com leitura de moda",
+      "recommendation_basis": "mantém o território Jacquemus e transforma a próxima abordagem em curadoria de styling, não só outro tênis",
+      "candidate_count": 0,
+      "candidates": [],
+      "validation_status": "NO_SIZE_MATCH_REQUIRES_MANUAL_CURATOR"
+    },
+    {
+      "purchase_product": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "purchase_size": "37",
+      "recipient_count": 1,
+      "style_family": "Samba artesanal, textura e verão urbano",
+      "recommendation_basis": "preserva a linguagem baixa e casual, abrindo caminho para Taekwondo ou apparel leve em tons claros",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "title": "Tênis Adidas Samba OG Off White Earth Strata Gum Bege",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-samba-og-off-white-earth-strata-gum-bege",
+          "variant_title": "37",
+          "sku": "JR8842-4",
+          "price": 1999.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis Adidas Samba LT Cream White Black Gum Bege",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-samba-lt-cream-white-black-gum-bege",
+          "variant_title": "37",
+          "sku": "JP6143-4",
+          "price": 2199.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "adidas Taekwondo Mei Ballet Branco e Preto",
+          "vendor": "Adidas",
+          "product_type": "Tenis",
+          "handle": "adidas-taekwondo-mei-ballet-branco-e-preto",
+          "variant_title": "37",
+          "sku": "43774078389200",
+          "price": 1999.99,
+          "inventory_quantity": 1
+        },
+        {
+          "title": "Tênis Adidas Taekwondo Mei Ballet Branco e Prata",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-mei-ballet-branco-e-prata",
+          "variant_title": "37",
+          "sku": "JQ6438-4",
+          "price": 1999.99,
+          "inventory_quantity": 1
+        },
+        {
+          "title": "Tenis Adidas Taekwondo Mei Ballet Black Gum Preto",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-mei-ballet-preto",
+          "variant_title": "37",
+          "sku": "JQ0669-4",
+          "price": 1999.99,
+          "inventory_quantity": 7
+        }
+      ],
+      "validation_status": "SHOPIFY_SNAPSHOT_ONLY_REQUIRES_TINY_BEFORE_SEND"
+    },
+    {
+      "purchase_product": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "purchase_size": "39",
+      "recipient_count": 1,
+      "style_family": "Samba artesanal, textura e verão urbano",
+      "recommendation_basis": "preserva a linguagem baixa e casual, abrindo caminho para Taekwondo ou apparel leve em tons claros",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "title": "Tênis Adidas Samba OG Off White Earth Strata Gum Bege",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-samba-og-off-white-earth-strata-gum-bege",
+          "variant_title": "39",
+          "sku": "JR8842-6",
+          "price": 1999.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis Adidas Samba LT Cream White Black Gum Bege",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-samba-lt-cream-white-black-gum-bege",
+          "variant_title": "39",
+          "sku": "JP6143-6",
+          "price": 2199.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis Adidas Taekwondo Mei Ballet Branco e Prata",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-mei-ballet-branco-e-prata",
+          "variant_title": "39",
+          "sku": "JQ6438-6",
+          "price": 1999.99,
+          "inventory_quantity": 2
+        },
+        {
+          "title": "adidas Taekwondo Mei Ballet Branco e Preto",
+          "vendor": "Adidas",
+          "product_type": "Tenis",
+          "handle": "adidas-taekwondo-mei-ballet-branco-e-preto",
+          "variant_title": "39",
+          "sku": "43774078389220",
+          "price": 1999.99,
+          "inventory_quantity": 1
+        }
+      ],
+      "validation_status": "SHOPIFY_SNAPSHOT_ONLY_REQUIRES_TINY_BEFORE_SEND"
+    },
+    {
+      "purchase_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "purchase_size": "34",
+      "recipient_count": 1,
+      "style_family": "low-profile neutro, suede e tons terrosos",
+      "recommendation_basis": "mantém a leitura minimalista e premium, mas muda textura ou acabamento para não parecer repetição literal",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Flat Taupe Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-flat-taupe-prateado",
+          "variant_title": "34",
+          "sku": "U204LSWA-1",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Sage Green Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-sage-green-prateado",
+          "variant_title": "34",
+          "sku": "U204LSWB-1",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Black Timberwolf Preto",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-black-timberwolf-preto",
+          "variant_title": "34",
+          "sku": "U204LMRA-1",
+          "price": 2799.99,
+          "inventory_quantity": 1
+        },
+        {
+          "title": "Tênis adidas Taekwondo Cloud White Branco",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-cloud-white-branco",
+          "variant_title": "34",
+          "sku": "JQ4774-1",
+          "price": 1499.99,
+          "inventory_quantity": 3
+        },
+        {
+          "title": "Tênis adidas Taekwondo Core Black Preto",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-core-black-preto",
+          "variant_title": "34",
+          "sku": "JQ4775-1",
+          "price": 1499.99,
+          "inventory_quantity": 3
+        }
+      ],
+      "validation_status": "SHOPIFY_SNAPSHOT_ONLY_REQUIRES_TINY_BEFORE_SEND"
+    },
+    {
+      "purchase_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "purchase_size": "36",
+      "recipient_count": 1,
+      "style_family": "low-profile neutro, suede e tons terrosos",
+      "recommendation_basis": "mantém a leitura minimalista e premium, mas muda textura ou acabamento para não parecer repetição literal",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Flat Taupe Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-flat-taupe-prateado",
+          "variant_title": "36",
+          "sku": "U204LSWA-3",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Sage Green Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-sage-green-prateado",
+          "variant_title": "36",
+          "sku": "U204LSWB-3",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Black Timberwolf Preto",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-black-timberwolf-preto",
+          "variant_title": "36",
+          "sku": "U204LMRA-3",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis adidas Taekwondo Cloud White Branco",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-cloud-white-branco",
+          "variant_title": "36",
+          "sku": "JQ4774-3",
+          "price": 1499.99,
+          "inventory_quantity": 3
+        },
+        {
+          "title": "Tênis adidas Taekwondo Core Black Preto",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-core-black-preto",
+          "variant_title": "36",
+          "sku": "JQ4775-3",
+          "price": 1499.99,
+          "inventory_quantity": 3
+        }
+      ],
+      "validation_status": "SHOPIFY_SNAPSHOT_ONLY_REQUIRES_TINY_BEFORE_SEND"
+    },
+    {
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "34",
+      "recipient_count": 1,
+      "style_family": "low-profile neutro, suede e tons terrosos",
+      "recommendation_basis": "mantém a leitura minimalista e premium, mas muda textura ou acabamento para não parecer repetição literal",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Flat Taupe Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-flat-taupe-prateado",
+          "variant_title": "34",
+          "sku": "U204LSWA-1",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Sage Green Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-sage-green-prateado",
+          "variant_title": "34",
+          "sku": "U204LSWB-1",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Black Timberwolf Preto",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-black-timberwolf-preto",
+          "variant_title": "34",
+          "sku": "U204LMRA-1",
+          "price": 2799.99,
+          "inventory_quantity": 1
+        },
+        {
+          "title": "Tênis adidas Taekwondo Cloud White Branco",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-cloud-white-branco",
+          "variant_title": "34",
+          "sku": "JQ4774-1",
+          "price": 1499.99,
+          "inventory_quantity": 3
+        },
+        {
+          "title": "Tênis adidas Taekwondo Core Black Preto",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-core-black-preto",
+          "variant_title": "34",
+          "sku": "JQ4775-1",
+          "price": 1499.99,
+          "inventory_quantity": 3
+        }
+      ],
+      "validation_status": "SHOPIFY_SNAPSHOT_ONLY_REQUIRES_TINY_BEFORE_SEND"
+    },
+    {
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "39",
+      "recipient_count": 1,
+      "style_family": "low-profile neutro, suede e tons terrosos",
+      "recommendation_basis": "mantém a leitura minimalista e premium, mas muda textura ou acabamento para não parecer repetição literal",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Flat Taupe Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-flat-taupe-prateado",
+          "variant_title": "39",
+          "sku": "U204LSWA-6",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Silver Metallic Sage Green Prateado",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-silver-metallic-sage-green-prateado",
+          "variant_title": "39",
+          "sku": "U204LSWB-6",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis New Balance 204L Black Timberwolf Preto",
+          "vendor": "New Balance",
+          "product_type": "Tênis",
+          "handle": "tenis-new-balance-204l-black-timberwolf-preto",
+          "variant_title": "39",
+          "sku": "U204LMRA-6",
+          "price": 2799.99,
+          "inventory_quantity": 5
+        },
+        {
+          "title": "Tênis adidas Taekwondo Cloud White Branco",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-cloud-white-branco",
+          "variant_title": "39",
+          "sku": "JQ4774-6",
+          "price": 1499.99,
+          "inventory_quantity": 3
+        },
+        {
+          "title": "Tênis adidas Taekwondo Core Black Preto",
+          "vendor": "Adidas",
+          "product_type": "Tênis",
+          "handle": "tenis-adidas-taekwondo-core-black-preto",
+          "variant_title": "39",
+          "sku": "JQ4775-6",
+          "price": 1499.99,
+          "inventory_quantity": 3
+        }
+      ],
+      "validation_status": "SHOPIFY_SNAPSHOT_ONLY_REQUIRES_TINY_BEFORE_SEND"
+    },
+    {
+      "purchase_product": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "purchase_size": "40",
+      "recipient_count": 1,
+      "style_family": "designer sneaker, Jacquemus e Nike com leitura de moda",
+      "recommendation_basis": "mantém o território Jacquemus e transforma a próxima abordagem em curadoria de styling, não só outro tênis",
+      "candidate_count": 0,
+      "candidates": [],
+      "validation_status": "NO_SIZE_MATCH_REQUIRES_MANUAL_CURATOR"
+    },
+    {
+      "purchase_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "purchase_size": "36",
+      "recipient_count": 1,
+      "style_family": "afinidade de marca, cor e silhueta",
+      "recommendation_basis": "sem regra específica ainda, manter em revisão manual antes de qualquer ação",
+      "candidate_count": 0,
+      "candidates": [],
+      "validation_status": "NO_SIZE_MATCH_REQUIRES_MANUAL_CURATOR"
+    },
+    {
+      "purchase_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "purchase_size": "37",
+      "recipient_count": 1,
+      "style_family": "afinidade de marca, cor e silhueta",
+      "recommendation_basis": "sem regra específica ainda, manter em revisão manual antes de qualquer ação",
+      "candidate_count": 0,
+      "candidates": [],
+      "validation_status": "NO_SIZE_MATCH_REQUIRES_MANUAL_CURATOR"
+    }
+  ],
+  "guardrails": [
+    "No Klaviyo list created",
+    "No WhatsApp or Evolution send",
+    "No Shopify, Tiny or Supabase write",
+    "Candidate stock is from local Shopify snapshot only",
+    "Tiny stock validation remains mandatory before any customer-facing action",
+    "Brain outputs contain no names, emails or phones"
+  ]
+}
