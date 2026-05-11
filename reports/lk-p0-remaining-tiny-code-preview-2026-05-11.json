@@ -1,0 +1,146 @@
+{
+  "generated_at": "2026-05-11T12:48:28",
+  "scope": "Preview de próxima correção Tiny codigo para P0 restantes após 2 writes executados",
+  "guardrails": [
+    "preview only",
+    "sem Tiny write nesta etapa",
+    "sem Shopify write",
+    "sem preço/estoque/produto",
+    "sem sourcing"
+  ],
+  "summary": {
+    "remaining_checked": 13,
+    "tiny_write_candidates_with_target_codigo": 7,
+    "blocked_needs_human_or_manual_mapping": 6
+  },
+  "candidates": [
+    {
+      "product_title": "Tênis Nike Mind 002 Light Khaki Bege",
+      "size": "41",
+      "shopify_variant_id": "47893735932126",
+      "shopify_sku_live": "NKE-9054174-41",
+      "tiny_target_item_id": "1069545385",
+      "tiny_current_codigo": "",
+      "tiny_target_codigo": "NKE-9054174-41",
+      "confidence": "media_alta",
+      "reason": "Shopify SKU preenchido + match Tiny único de tamanho/grade com codigo vazio; siblings Shopify seguem padrão."
+    },
+    {
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom",
+      "size": "42.5",
+      "shopify_variant_id": "48066691465438",
+      "shopify_sku_live": "ONI-0995678-425",
+      "tiny_target_item_id": "1070120736",
+      "tiny_current_codigo": "",
+      "tiny_target_codigo": "ONI-0995678-425",
+      "confidence": "media_alta",
+      "reason": "Shopify SKU preenchido + match Tiny único de tamanho/grade com codigo vazio; siblings Shopify seguem padrão."
+    },
+    {
+      "product_title": "Tênis New Balance 204L Cortado Marrom",
+      "size": "37",
+      "shopify_variant_id": "47856402530526",
+      "shopify_sku_live": "NB-0254942-37",
+      "tiny_target_item_id": "1069544047",
+      "tiny_current_codigo": "",
+      "tiny_target_codigo": "NB-0254942-37",
+      "confidence": "media_alta",
+      "reason": "Shopify SKU preenchido + match Tiny único de tamanho/grade com codigo vazio; siblings Shopify seguem padrão."
+    },
+    {
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza",
+      "size": "38",
+      "shopify_variant_id": "48054217933022",
+      "shopify_sku_live": "ONI-6772830-38",
+      "tiny_target_item_id": "1070119554",
+      "tiny_current_codigo": "",
+      "tiny_target_codigo": "ONI-6772830-38",
+      "confidence": "media_alta",
+      "reason": "Shopify SKU preenchido + match Tiny único de tamanho/grade com codigo vazio; siblings Shopify seguem padrão."
+    },
+    {
+      "product_title": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto",
+      "size": "S/P",
+      "shopify_variant_id": "47706484539614",
+      "shopify_sku_live": "ALO-8506462-S",
+      "tiny_target_item_id": "1069542767",
+      "tiny_current_codigo": "",
+      "tiny_target_codigo": "ALO-8506462-S",
+      "confidence": "media",
+      "reason": "Busca Tiny pelo título exato/cor do produto tem match de grade único; ambiguidade surgiu apenas na busca ampla por família/cor irmã."
+    },
+    {
+      "product_title": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+      "size": "L/G",
+      "shopify_variant_id": "47860151976158",
+      "shopify_sku_live": "SST-4542302-L",
+      "tiny_target_item_id": "1069544315",
+      "tiny_current_codigo": "",
+      "tiny_target_codigo": "SST-4542302-L",
+      "confidence": "media",
+      "reason": "Busca Tiny pelo título exato/cor do produto tem match de grade único; ambiguidade surgiu apenas na busca ampla por família/cor irmã."
+    },
+    {
+      "product_title": "Camiseta Pace Buero Washed Black Preto",
+      "size": "S/P",
+      "shopify_variant_id": "47967340331230",
+      "shopify_sku_live": "PAC-1197278-S",
+      "tiny_target_item_id": "1069930823",
+      "tiny_current_codigo": "",
+      "tiny_target_codigo": "PAC-1197278-S",
+      "confidence": "media_alta",
+      "reason": "Shopify SKU preenchido + match Tiny único de tamanho/grade com codigo vazio; siblings Shopify seguem padrão."
+    }
+  ],
+  "blocked": [
+    {
+      "product_title": "Camiseta Pace Cotton Code Branca",
+      "size": "G/L",
+      "shopify_variant_id": "47512247599326",
+      "shopify_sku_live": "",
+      "eligibility": "needs_manual_tiny_mapping_or_cadastro",
+      "reason": "Sem SKU Shopify, match Tiny duplicado/ambíguo, ou ausência de match canônico seguro."
+    },
+    {
+      "product_title": "Camiseta Aimé Leon Dore Musician Graphic Off White",
+      "size": "S/P",
+      "shopify_variant_id": "47579297939678",
+      "shopify_sku_live": "",
+      "eligibility": "needs_manual_tiny_mapping_or_cadastro",
+      "reason": "Sem SKU Shopify, match Tiny duplicado/ambíguo, ou ausência de match canônico seguro."
+    },
+    {
+      "product_title": "Rhode Pocket Blush",
+      "size": "Sleepy Girl - Soft Mauve",
+      "shopify_variant_id": "46838740648158",
+      "shopify_sku_live": "",
+      "eligibility": "needs_manual_tiny_mapping_or_cadastro",
+      "reason": "Sem SKU Shopify, match Tiny duplicado/ambíguo, ou ausência de match canônico seguro."
+    },
+    {
+      "product_title": "Camiseta Pace Cotton Code Preta",
+      "size": "G/L",
+      "shopify_variant_id": "47512247730398",
+      "shopify_sku_live": "",
+      "eligibility": "needs_manual_tiny_mapping_or_cadastro",
+      "reason": "Sem SKU Shopify, match Tiny duplicado/ambíguo, ou ausência de match canônico seguro."
+    },
+    {
+      "product_title": "Camiseta Pace Sketch Yourself Off White",
+      "size": "P/S",
+      "shopify_variant_id": "47019131568350",
+      "shopify_sku_live": "",
+      "eligibility": "needs_manual_tiny_mapping_or_cadastro",
+      "reason": "Sem SKU Shopify, match Tiny duplicado/ambíguo, ou ausência de match canônico seguro."
+    },
+    {
+      "product_title": "Camiseta Pace Patavision Off White",
+      "size": "P/S",
+      "shopify_variant_id": "47019093295326",
+      "shopify_sku_live": "PAC-5857246-S",
+      "eligibility": "ambiguous_tiny_matches_with_shopify_sku",
+      "reason": "Sem SKU Shopify, match Tiny duplicado/ambíguo, ou ausência de match canônico seguro."
+    }
+  ],
+  "approval_wording": "aprovo preencher codigo Tiny dos 7 itens candidatos com os SKUs Shopify propostos, sem alterar Shopify, preço, estoque ou produto"
+}
