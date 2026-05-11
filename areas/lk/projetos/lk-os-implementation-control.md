@@ -293,6 +293,7 @@ Entregáveis:
 - [x] Teste em modo dry-run: contrato definido por automação; nenhuma ativação feita. `LK-AUTO-001` Daily Sales Brief e `LK-AUTO-002` Weekly CEO Review passaram no primeiro dry-run manual, com 0 cron/n8n/envio/write.
 - [x] Aprovação Lucas antes de ativar produção: Lucas disse `Seguir` após o gate de cadência/destino; ativados apenas os dois cronjobs low-risk/read-only `LK-AUTO-001` e `LK-AUTO-002`, ambos `no_agent`, com entrega obrigatória do report e 0 n8n/write produtivo.
 - [x] Registry operacional reconciliado: `LK-AUTO-001/002/003` ativos como crons read-only/preview; `LK-AUTO-004` manual pós-ação; `LK-AUTO-005/006` medium risk manual-only/bloqueados.
+- [x] `LK-AUTO-004` guard manual pós-ação: `scripts/lk_approval_ledger_refresh_guard_20260511.py` regenera ledger, valida duplicidade/contradições e confirma 24 registros com 0 fails/warnings, sem criar cron/n8n/write.
 
 Critério de saída:
 

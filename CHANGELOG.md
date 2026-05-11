@@ -1,3 +1,10 @@
+## 2026-05-11 — LK Approval Ledger Refresh Guard
+
+- Avançado `LK-AUTO-004` de manual simples para guard manual pós-ação: regenera o Approval Learning Ledger, valida contradições e gera readiness report.
+- Resultado do guard: `passed`, 24 registros, 8 `executed_verified`, 8 `pending_future`, 5 `needs_approval`, 3 `needs_data`, 0 fails, 0 warnings.
+- Mantido sem cron, sem n8n, sem envio externo, sem aprovação automática e sem write produtivo; uso recomendado após aprovação/correção/execução antes de PR final.
+- Artefatos: `scripts/lk_approval_ledger_refresh_guard_20260511.py`, `areas/lk/rotinas/approval-ledger-refresh-guard-2026-05-11.md`, `reports/lk-approval-ledger-refresh-guard-2026-05-11.md` e `.json`.
+
 ## 2026-05-11 — LK Phase 8 Operational Automation Registry
 
 - Reconciliada a Fase 8 após a correção de entrega obrigatória Daily/Weekly e a constatação do cron SEO/CRO weekly já ativo.
