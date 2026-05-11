@@ -48,6 +48,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Playbook LK Comando Diário | `areas/lk/rotinas/playbook-comando-diario.md` | Roteiro executivo para diagnóstico/prioridades LK com dados vivos |
 | Sync Log | `areas/lk/rotinas/sync-log.md` | Auditoria de início/fim de sync |
 | Consequence Tracker | `areas/lk/rotinas/consequence-tracker.md` | Registro de efeitos de ações |
+| LK Stock Action Queue 2026-05-11 | `areas/lk/rotinas/stock-action-queue-2026-05-11.md` | Fila read-only de ruptura, baixo estoque, mapear SKU Tiny e sem SKU Shopify por influencer/produto/SKU/tamanho |
 | Cross-sell Monitor | `areas/lk/sub-areas/crm/rotinas/cross-sell-monitor.md` | Oportunidades pós-pedido |
 | Playbook Campanha CRM Aprovada | `areas/lk/sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md` | Segmentação, preview e aprovação Lucas antes de campanha externa |
 | RFM Semanal | `areas/lk/sub-areas/crm/rotinas/rfm-semanal.md` | Segmentação RFM e relatório |
