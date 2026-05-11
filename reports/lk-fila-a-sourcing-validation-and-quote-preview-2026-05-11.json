@@ -1,0 +1,757 @@
+{
+  "generated_at": "2026-05-11T13:39:32",
+  "scope": "LK Fila A — validação interna de fornecedor/lead time/margem + fila de cotação em preview, sem envio externo",
+  "source": "reports/lk-os-next-stage-fila-a-sourcing-preview-2026-05-11.json",
+  "guardrails": [
+    "read-only/local docs",
+    "sem contato com fornecedor",
+    "sem compra/PO",
+    "sem Shopify/Tiny write",
+    "sem alteração preço/estoque/campanha"
+  ],
+  "method": {
+    "margin": "como custo real não está disponível no Brain, margem foi validada por teto máximo de custo por SKU: custo <= preço médio sinalizado × (1 - margem alvo).",
+    "lead_time": "gate operacional por prioridade: P0 aceita <=7 dias; 8–15 dias só com decisão; >15 dias não recomendado sem pré-venda.",
+    "supplier": "fornecedor real permanece campo obrigatório da cotação; nenhuma consulta/envio externo foi feita."
+  },
+  "summary": {
+    "top_items_validated": 15,
+    "quote_groups": 9,
+    "p0_items": 11,
+    "p1_items": 4,
+    "preview_quote_qty_total": 39
+  },
+  "records": [
+    {
+      "rank": 1,
+      "family": "Nike x Jacquemus Moon Shoe SP — Medium Brown",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "HV8547-200-38",
+      "variant": "38",
+      "category": "sneaker premium/importado",
+      "priority": "P0 — ruptura com venda repetida",
+      "orders": 5,
+      "qty_sold_signal": 5,
+      "revenue_signal": 26999.95,
+      "avg_sale_price_signal": 5399.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 3,
+      "quote_logic": "ruptura + venda repetida; cotar 2–3 pares, compra final só após margem/lead time",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 2969.99,
+        "max_cost_50pct_gm": 2699.99,
+        "max_cost_55pct_gm": 2430.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar agora em modo interno; não comprar sem preço final e fornecedor aprovado",
+      "risk_notes": [
+        "ticket alto: evitar compra múltipla sem confirmação de demanda atual e margem",
+        "ruptura/estoque Tiny zerado ou negativo"
+      ]
+    },
+    {
+      "rank": 2,
+      "family": "Nike Air Jordan 4 Retro — Metallic Gold",
+      "name": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+      "sku": "AQ9129-170-7",
+      "variant": "40",
+      "category": "sneaker premium/importado",
+      "priority": "P0 — ruptura com venda repetida",
+      "orders": 4,
+      "qty_sold_signal": 4,
+      "revenue_signal": 13399.96,
+      "avg_sale_price_signal": 3349.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 3,
+      "quote_logic": "ruptura + venda repetida; cotar 2–3 pares, compra final só após margem/lead time",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 1842.49,
+        "max_cost_50pct_gm": 1674.99,
+        "max_cost_55pct_gm": 1507.5
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar agora em modo interno; não comprar sem preço final e fornecedor aprovado",
+      "risk_notes": [
+        "ruptura/estoque Tiny zerado ou negativo"
+      ]
+    },
+    {
+      "rank": 3,
+      "family": "Onitsuka Tiger Mexico 66 — White/Black",
+      "name": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "sku": "1183A201-126-3",
+      "variant": "36",
+      "category": "sneaker fashion/importado",
+      "priority": "P0 — ruptura com venda repetida",
+      "orders": 3,
+      "qty_sold_signal": 3,
+      "revenue_signal": 7199.97,
+      "avg_sale_price_signal": 2399.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 3,
+      "quote_logic": "ruptura + venda repetida; cotar 2–3 pares, compra final só após margem/lead time",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 1319.99,
+        "max_cost_50pct_gm": 1200.0,
+        "max_cost_55pct_gm": 1080.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar agora em modo interno; não comprar sem preço final e fornecedor aprovado",
+      "risk_notes": [
+        "ruptura/estoque Tiny zerado ou negativo"
+      ]
+    },
+    {
+      "rank": 4,
+      "family": "Nike x Jacquemus Moon Shoe SP — Off Noir",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-8",
+      "variant": "41",
+      "category": "sneaker premium/importado",
+      "priority": "P0 — ruptura com venda repetida",
+      "orders": 2,
+      "qty_sold_signal": 2,
+      "revenue_signal": 11999.98,
+      "avg_sale_price_signal": 5999.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 2,
+      "quote_logic": "ruptura + venda repetida; cotar 2–3 pares, compra final só após margem/lead time",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 3299.99,
+        "max_cost_50pct_gm": 2999.99,
+        "max_cost_55pct_gm": 2700.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar agora em modo interno; não comprar sem preço final e fornecedor aprovado",
+      "risk_notes": [
+        "ticket alto: evitar compra múltipla sem confirmação de demanda atual e margem",
+        "ruptura/estoque Tiny zerado ou negativo"
+      ]
+    },
+    {
+      "rank": 5,
+      "family": "Nike x Jacquemus Moon Shoe SP — Off White",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-39",
+      "variant": "39",
+      "category": "sneaker premium/importado",
+      "priority": "P0 — ruptura com venda repetida",
+      "orders": 2,
+      "qty_sold_signal": 2,
+      "revenue_signal": 9999.98,
+      "avg_sale_price_signal": 4999.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 2,
+      "quote_logic": "ruptura + venda repetida; cotar 2–3 pares, compra final só após margem/lead time",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 2749.99,
+        "max_cost_50pct_gm": 2499.99,
+        "max_cost_55pct_gm": 2250.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar agora em modo interno; não comprar sem preço final e fornecedor aprovado",
+      "risk_notes": [
+        "ticket alto: evitar compra múltipla sem confirmação de demanda atual e margem",
+        "ruptura/estoque Tiny zerado ou negativo"
+      ]
+    },
+    {
+      "rank": 6,
+      "family": "Nike x Jacquemus Moon Shoe SP — Off White",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-38",
+      "variant": "38",
+      "category": "sneaker premium/importado",
+      "priority": "P0 — ruptura com venda repetida",
+      "orders": 2,
+      "qty_sold_signal": 2,
+      "revenue_signal": 9999.98,
+      "avg_sale_price_signal": 4999.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 2,
+      "quote_logic": "ruptura + venda repetida; cotar 2–3 pares, compra final só após margem/lead time",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 2749.99,
+        "max_cost_50pct_gm": 2499.99,
+        "max_cost_55pct_gm": 2250.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar agora em modo interno; não comprar sem preço final e fornecedor aprovado",
+      "risk_notes": [
+        "ticket alto: evitar compra múltipla sem confirmação de demanda atual e margem",
+        "ruptura/estoque Tiny zerado ou negativo"
+      ]
+    },
+    {
+      "rank": 7,
+      "family": "Onitsuka Tiger Mexico 66 Paraty — Birch Cream",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Paraty Birch Cream Bege",
+      "sku": "1183B601.200-6",
+      "variant": "39",
+      "category": "sneaker fashion/importado",
+      "priority": "P0 — ruptura com venda repetida",
+      "orders": 2,
+      "qty_sold_signal": 2,
+      "revenue_signal": 4599.98,
+      "avg_sale_price_signal": 2299.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 2,
+      "quote_logic": "ruptura + venda repetida; cotar 2–3 pares, compra final só após margem/lead time",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 1264.99,
+        "max_cost_50pct_gm": 1149.99,
+        "max_cost_55pct_gm": 1035.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar agora em modo interno; não comprar sem preço final e fornecedor aprovado",
+      "risk_notes": [
+        "ruptura/estoque Tiny zerado ou negativo"
+      ]
+    },
+    {
+      "rank": 8,
+      "family": "Onitsuka Tiger Mexico 66 Sabot — Beige Green",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "sku": "1183C123.252-7",
+      "variant": "40",
+      "category": "sneaker fashion/importado",
+      "priority": "P0 — ruptura com venda repetida",
+      "orders": 2,
+      "qty_sold_signal": 2,
+      "revenue_signal": 4399.98,
+      "avg_sale_price_signal": 2199.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 2,
+      "quote_logic": "ruptura + venda repetida; cotar 2–3 pares, compra final só após margem/lead time",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 1209.99,
+        "max_cost_50pct_gm": 1099.99,
+        "max_cost_55pct_gm": 990.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar agora em modo interno; não comprar sem preço final e fornecedor aprovado",
+      "risk_notes": [
+        "ruptura/estoque Tiny zerado ou negativo"
+      ]
+    },
+    {
+      "rank": 9,
+      "family": "Onitsuka Tiger Mexico 66 Sabot — Beige Green",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "sku": "1183C123.252-5",
+      "variant": "38",
+      "category": "sneaker fashion/importado",
+      "priority": "P0 — ruptura com venda repetida",
+      "orders": 2,
+      "qty_sold_signal": 2,
+      "revenue_signal": 4399.98,
+      "avg_sale_price_signal": 2199.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 2,
+      "quote_logic": "ruptura + venda repetida; cotar 2–3 pares, compra final só após margem/lead time",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 1209.99,
+        "max_cost_50pct_gm": 1099.99,
+        "max_cost_55pct_gm": 990.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar agora em modo interno; não comprar sem preço final e fornecedor aprovado",
+      "risk_notes": [
+        "ruptura/estoque Tiny zerado ou negativo"
+      ]
+    },
+    {
+      "rank": 10,
+      "family": "Onitsuka Tiger Mexico 66 Sabot — Beige Green",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "sku": "1183C123.252-4",
+      "variant": "37",
+      "category": "sneaker fashion/importado",
+      "priority": "P0 — ruptura com venda repetida",
+      "orders": 2,
+      "qty_sold_signal": 2,
+      "revenue_signal": 4399.98,
+      "avg_sale_price_signal": 2199.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 2,
+      "quote_logic": "ruptura + venda repetida; cotar 2–3 pares, compra final só após margem/lead time",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 1209.99,
+        "max_cost_50pct_gm": 1099.99,
+        "max_cost_55pct_gm": 990.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar agora em modo interno; não comprar sem preço final e fornecedor aprovado",
+      "risk_notes": [
+        "ruptura/estoque Tiny zerado ou negativo"
+      ]
+    },
+    {
+      "rank": 11,
+      "family": "Jason Markk Essential Kit",
+      "name": "Jason Markk Essential Kit de Limpeza",
+      "sku": "300110",
+      "variant": "[sem variant]",
+      "category": "acessório/limpeza",
+      "priority": "P0 — ruptura com venda repetida",
+      "orders": 2,
+      "qty_sold_signal": 2,
+      "revenue_signal": 399.98,
+      "avg_sale_price_signal": 199.99,
+      "tiny_stock": -2.0,
+      "quote_qty_preview": 12,
+      "quote_logic": "acessório com estoque negativo; cotar caixa/lote mínimo antes de comprar",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 109.99,
+        "max_cost_50pct_gm": 100.0,
+        "max_cost_55pct_gm": 90.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar agora em modo interno; não comprar sem preço final e fornecedor aprovado",
+      "risk_notes": [
+        "ruptura/estoque Tiny zerado ou negativo"
+      ]
+    },
+    {
+      "rank": 12,
+      "family": "Nike x Jacquemus Moon Shoe SP — Off Noir",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-5",
+      "variant": "38",
+      "category": "sneaker premium/importado",
+      "priority": "P1 — ruptura com venda unitária",
+      "orders": 1,
+      "qty_sold_signal": 1,
+      "revenue_signal": 5999.99,
+      "avg_sale_price_signal": 5999.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 1,
+      "quote_logic": "venda unitária; cotar somente se fornecedor tiver pronta-entrega ou bundle com P0",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 3299.99,
+        "max_cost_50pct_gm": 2999.99,
+        "max_cost_55pct_gm": 2700.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Cotar como opcional; aprovar só se pronta-entrega ou aproveitando remessa de P0.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar opcional/bundle; monitorar antes de reposição",
+      "risk_notes": [
+        "ticket alto: evitar compra múltipla sem confirmação de demanda atual e margem",
+        "ruptura/estoque Tiny zerado ou negativo",
+        "P1: sinal unitário, menor convicção que P0"
+      ]
+    },
+    {
+      "rank": 13,
+      "family": "Nike x Jacquemus Moon Shoe SP — Off Noir",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-7",
+      "variant": "40",
+      "category": "sneaker premium/importado",
+      "priority": "P1 — ruptura com venda unitária",
+      "orders": 1,
+      "qty_sold_signal": 1,
+      "revenue_signal": 5999.99,
+      "avg_sale_price_signal": 5999.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 1,
+      "quote_logic": "venda unitária; cotar somente se fornecedor tiver pronta-entrega ou bundle com P0",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 3299.99,
+        "max_cost_50pct_gm": 2999.99,
+        "max_cost_55pct_gm": 2700.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Cotar como opcional; aprovar só se pronta-entrega ou aproveitando remessa de P0.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar opcional/bundle; monitorar antes de reposição",
+      "risk_notes": [
+        "ticket alto: evitar compra múltipla sem confirmação de demanda atual e margem",
+        "ruptura/estoque Tiny zerado ou negativo",
+        "P1: sinal unitário, menor convicção que P0"
+      ]
+    },
+    {
+      "rank": 14,
+      "family": "Nike x Jacquemus Moon Shoe SP — Alabaster",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "sku": "HV8547-700-7",
+      "variant": "40",
+      "category": "sneaker premium/importado",
+      "priority": "P1 — ruptura com venda unitária",
+      "orders": 1,
+      "qty_sold_signal": 1,
+      "revenue_signal": 5999.99,
+      "avg_sale_price_signal": 5999.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 1,
+      "quote_logic": "venda unitária; cotar somente se fornecedor tiver pronta-entrega ou bundle com P0",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 3299.99,
+        "max_cost_50pct_gm": 2999.99,
+        "max_cost_55pct_gm": 2700.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Cotar como opcional; aprovar só se pronta-entrega ou aproveitando remessa de P0.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar opcional/bundle; monitorar antes de reposição",
+      "risk_notes": [
+        "ticket alto: evitar compra múltipla sem confirmação de demanda atual e margem",
+        "ruptura/estoque Tiny zerado ou negativo",
+        "P1: sinal unitário, menor convicção que P0"
+      ]
+    },
+    {
+      "rank": 15,
+      "family": "Nike x Jacquemus Moon Shoe SP — Off White",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-36",
+      "variant": "36",
+      "category": "sneaker premium/importado",
+      "priority": "P1 — ruptura com venda unitária",
+      "orders": 1,
+      "qty_sold_signal": 1,
+      "revenue_signal": 4999.99,
+      "avg_sale_price_signal": 4999.99,
+      "tiny_stock": 0.0,
+      "quote_qty_preview": 1,
+      "quote_logic": "venda unitária; cotar somente se fornecedor tiver pronta-entrega ou bundle com P0",
+      "gross_margin_cost_caps": {
+        "max_cost_45pct_gm": 2749.99,
+        "max_cost_50pct_gm": 2499.99,
+        "max_cost_55pct_gm": 2250.0
+      },
+      "supplier_fields_required": [
+        "fornecedor",
+        "custo unitário",
+        "disponibilidade por tamanho",
+        "lead time",
+        "condição de pagamento",
+        "frete/imposto incluso?",
+        "garantia/autenticidade"
+      ],
+      "lead_time_gate": "Cotar como opcional; aprovar só se pronta-entrega ou aproveitando remessa de P0.",
+      "internal_validation_status": "pendente de preço/fornecedor real; margem validada como teto máximo de custo, não como margem real",
+      "recommended_action_preview": "cotar opcional/bundle; monitorar antes de reposição",
+      "risk_notes": [
+        "ticket alto: evitar compra múltipla sem confirmação de demanda atual e margem",
+        "ruptura/estoque Tiny zerado ou negativo",
+        "P1: sinal unitário, menor convicção que P0"
+      ]
+    }
+  ],
+  "quote_groups": [
+    {
+      "family": "Jason Markk Essential Kit",
+      "priority": "P0",
+      "items": [
+        {
+          "sku": "300110",
+          "size": "[sem variant]",
+          "quote_qty_preview": 12,
+          "avg_sale_price_signal": 199.99,
+          "target_max_cost_50pct_gm": 100.0
+        }
+      ],
+      "total_quote_qty_preview": 12,
+      "supplier_question": "Consegue cotar Jason Markk Essential Kit nos tamanhos [sem variant] (SKU 300110, qtd ref. 12)? Informar custo unitário, pronta-entrega/lead time, frete/impostos e condição."
+    },
+    {
+      "family": "Onitsuka Tiger Mexico 66 Sabot — Beige Green",
+      "priority": "P0",
+      "items": [
+        {
+          "sku": "1183C123.252-7",
+          "size": "40",
+          "quote_qty_preview": 2,
+          "avg_sale_price_signal": 2199.99,
+          "target_max_cost_50pct_gm": 1099.99
+        },
+        {
+          "sku": "1183C123.252-5",
+          "size": "38",
+          "quote_qty_preview": 2,
+          "avg_sale_price_signal": 2199.99,
+          "target_max_cost_50pct_gm": 1099.99
+        },
+        {
+          "sku": "1183C123.252-4",
+          "size": "37",
+          "quote_qty_preview": 2,
+          "avg_sale_price_signal": 2199.99,
+          "target_max_cost_50pct_gm": 1099.99
+        }
+      ],
+      "total_quote_qty_preview": 6,
+      "supplier_question": "Consegue cotar Onitsuka Tiger Mexico 66 Sabot — Beige Green nos tamanhos 40 (SKU 1183C123.252-7, qtd ref. 2), 38 (SKU 1183C123.252-5, qtd ref. 2), 37 (SKU 1183C123.252-4, qtd ref. 2)? Informar custo unitário, pronta-entrega/lead time, frete/impostos e condição."
+    },
+    {
+      "family": "Nike x Jacquemus Moon Shoe SP — Off White",
+      "priority": "P0",
+      "items": [
+        {
+          "sku": "HV8547-002-39",
+          "size": "39",
+          "quote_qty_preview": 2,
+          "avg_sale_price_signal": 4999.99,
+          "target_max_cost_50pct_gm": 2499.99
+        },
+        {
+          "sku": "HV8547-002-38",
+          "size": "38",
+          "quote_qty_preview": 2,
+          "avg_sale_price_signal": 4999.99,
+          "target_max_cost_50pct_gm": 2499.99
+        },
+        {
+          "sku": "HV8547-002-36",
+          "size": "36",
+          "quote_qty_preview": 1,
+          "avg_sale_price_signal": 4999.99,
+          "target_max_cost_50pct_gm": 2499.99
+        }
+      ],
+      "total_quote_qty_preview": 5,
+      "supplier_question": "Consegue cotar Nike x Jacquemus Moon Shoe SP — Off White nos tamanhos 39 (SKU HV8547-002-39, qtd ref. 2), 38 (SKU HV8547-002-38, qtd ref. 2), 36 (SKU HV8547-002-36, qtd ref. 1)? Informar custo unitário, pronta-entrega/lead time, frete/impostos e condição."
+    },
+    {
+      "family": "Nike x Jacquemus Moon Shoe SP — Off Noir",
+      "priority": "P0",
+      "items": [
+        {
+          "sku": "HV8547-001-8",
+          "size": "41",
+          "quote_qty_preview": 2,
+          "avg_sale_price_signal": 5999.99,
+          "target_max_cost_50pct_gm": 2999.99
+        },
+        {
+          "sku": "HV8547-001-5",
+          "size": "38",
+          "quote_qty_preview": 1,
+          "avg_sale_price_signal": 5999.99,
+          "target_max_cost_50pct_gm": 2999.99
+        },
+        {
+          "sku": "HV8547-001-7",
+          "size": "40",
+          "quote_qty_preview": 1,
+          "avg_sale_price_signal": 5999.99,
+          "target_max_cost_50pct_gm": 2999.99
+        }
+      ],
+      "total_quote_qty_preview": 4,
+      "supplier_question": "Consegue cotar Nike x Jacquemus Moon Shoe SP — Off Noir nos tamanhos 41 (SKU HV8547-001-8, qtd ref. 2), 38 (SKU HV8547-001-5, qtd ref. 1), 40 (SKU HV8547-001-7, qtd ref. 1)? Informar custo unitário, pronta-entrega/lead time, frete/impostos e condição."
+    },
+    {
+      "family": "Nike x Jacquemus Moon Shoe SP — Medium Brown",
+      "priority": "P0",
+      "items": [
+        {
+          "sku": "HV8547-200-38",
+          "size": "38",
+          "quote_qty_preview": 3,
+          "avg_sale_price_signal": 5399.99,
+          "target_max_cost_50pct_gm": 2699.99
+        }
+      ],
+      "total_quote_qty_preview": 3,
+      "supplier_question": "Consegue cotar Nike x Jacquemus Moon Shoe SP — Medium Brown nos tamanhos 38 (SKU HV8547-200-38, qtd ref. 3)? Informar custo unitário, pronta-entrega/lead time, frete/impostos e condição."
+    },
+    {
+      "family": "Nike Air Jordan 4 Retro — Metallic Gold",
+      "priority": "P0",
+      "items": [
+        {
+          "sku": "AQ9129-170-7",
+          "size": "40",
+          "quote_qty_preview": 3,
+          "avg_sale_price_signal": 3349.99,
+          "target_max_cost_50pct_gm": 1674.99
+        }
+      ],
+      "total_quote_qty_preview": 3,
+      "supplier_question": "Consegue cotar Nike Air Jordan 4 Retro — Metallic Gold nos tamanhos 40 (SKU AQ9129-170-7, qtd ref. 3)? Informar custo unitário, pronta-entrega/lead time, frete/impostos e condição."
+    },
+    {
+      "family": "Onitsuka Tiger Mexico 66 — White/Black",
+      "priority": "P0",
+      "items": [
+        {
+          "sku": "1183A201-126-3",
+          "size": "36",
+          "quote_qty_preview": 3,
+          "avg_sale_price_signal": 2399.99,
+          "target_max_cost_50pct_gm": 1200.0
+        }
+      ],
+      "total_quote_qty_preview": 3,
+      "supplier_question": "Consegue cotar Onitsuka Tiger Mexico 66 — White/Black nos tamanhos 36 (SKU 1183A201-126-3, qtd ref. 3)? Informar custo unitário, pronta-entrega/lead time, frete/impostos e condição."
+    },
+    {
+      "family": "Onitsuka Tiger Mexico 66 Paraty — Birch Cream",
+      "priority": "P0",
+      "items": [
+        {
+          "sku": "1183B601.200-6",
+          "size": "39",
+          "quote_qty_preview": 2,
+          "avg_sale_price_signal": 2299.99,
+          "target_max_cost_50pct_gm": 1149.99
+        }
+      ],
+      "total_quote_qty_preview": 2,
+      "supplier_question": "Consegue cotar Onitsuka Tiger Mexico 66 Paraty — Birch Cream nos tamanhos 39 (SKU 1183B601.200-6, qtd ref. 2)? Informar custo unitário, pronta-entrega/lead time, frete/impostos e condição."
+    },
+    {
+      "family": "Nike x Jacquemus Moon Shoe SP — Alabaster",
+      "priority": "P1/opcional",
+      "items": [
+        {
+          "sku": "HV8547-700-7",
+          "size": "40",
+          "quote_qty_preview": 1,
+          "avg_sale_price_signal": 5999.99,
+          "target_max_cost_50pct_gm": 2999.99
+        }
+      ],
+      "total_quote_qty_preview": 1,
+      "supplier_question": "Consegue cotar Nike x Jacquemus Moon Shoe SP — Alabaster nos tamanhos 40 (SKU HV8547-700-7, qtd ref. 1)? Informar custo unitário, pronta-entrega/lead time, frete/impostos e condição."
+    }
+  ]
+}
