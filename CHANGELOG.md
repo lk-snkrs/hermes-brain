@@ -1,3 +1,11 @@
+## 2026-05-11 — LK OS Approval Decision Log + Router read-only
+
+- Criado e executado `scripts/lk_os_approval_decision_log_router_20260511.py`, registro roteável das decisões de cotação pendentes no LK OS.
+- Resultado: 8 decisões registradas, sendo 5 `needs_approval` e 3 `needs_data`; rotas: 4 aguardando Lucas/Júlio, 1 segurar ou agrupar com P0 e 3 resolver dados antes.
+- Quantidade referência de cotação: `26` unidades, não-compra; sinal de receita Shopify: `R$ 89.669,71`.
+- Artefatos: `areas/lk/rotinas/approval-decision-log-router-readonly-2026-05-11.md`, `reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.md`, `.json` e `.csv`.
+- Nenhuma decisão foi marcada como aprovada; nenhum fornecedor, envio externo, compra, PO, reserva, write Shopify/Tiny, preço, estoque, campanha, banco de produção ou cron foi executado.
+
 ## 2026-05-11 — LK OS Supplier Quote Approval Packet read-only
 
 - Criado e executado `scripts/lk_os_supplier_quote_approval_packet_20260511.py`, pacote de aprovação para decidir se a LK autoriza apenas envio de cotação a fornecedores.
