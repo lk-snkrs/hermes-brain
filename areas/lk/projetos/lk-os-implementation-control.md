@@ -117,7 +117,7 @@ Critério de saída:
 
 ### Fase 1 — Data spine read-only
 
-Status: iniciado em 2026-05-11 com Data Spine v0.1 documental/read-only.
+Status: iniciado em 2026-05-11 com Data Spine v0.1 documental/read-only; primeiro snapshot read-only multi-fonte executado e auditado.
 
 Objetivo: consolidar um esqueleto de dados confiável, sem writes, que permita relatórios consistentes.
 
@@ -125,12 +125,12 @@ Entregáveis:
 
 - [x] Inventário de fontes v0.1: Shopify, Tiny, GA4, Search Console, Meta, Google Ads/Metricool, Klaviyo, Judge.me, Frenet, Notion.
 - [x] Matriz de credenciais esperadas no Doppler, sem valores, com status OK/MISSING por nome.
-- [ ] Scripts read-only com outputs auditáveis e contagem/freshness.
+- [x] Scripts read-only com outputs auditáveis e contagem/freshness: v0.1 consolidado para Shopify, Tiny, GA4, Meta, Metricool/Google Ads e Klaviyo.
 - [x] Dicionário de entidades canônicas v0.1: pedido, cliente, produto, variante, SKU, tamanho, campanha, influencer, cupom, UTM, aprovação/ação.
 - [x] Regras de reconciliação Shopify vs GA4 vs Meta/Google v0.1.
 - [x] Relatório de lacunas v0.1: Tiny freshness, Merchant Center, Judge.me/Frenet, Notion writes, Klaviyo UI link, PII e rótulos de fonte.
 
-Artefato atual: `areas/lk/rotinas/data-spine-readonly-2026-05-11.md` + `areas/lk/contexto/data-spine-v0.1.md`.
+Artefato atual: `areas/lk/rotinas/data-spine-readonly-2026-05-11.md` + `areas/lk/contexto/data-spine-v0.1.md` + `reports/lk-os-data-spine-snapshot-2026-05-11.md` + `scripts/lk_os_data_spine_snapshots_20260511.py`.
 
 Critério de saída:
 

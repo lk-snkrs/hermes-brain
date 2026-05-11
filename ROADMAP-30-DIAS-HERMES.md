@@ -113,7 +113,7 @@ Entregas:
 
 Limites preservados: nenhum cron, campanha, mensagem externa, alteração Shopify/Tiny/Notion/GitHub/tema, banco, secret, VPS/Docker ou runtime foi criado/alterado nesta fase documental.
 
-Atualização 2026-05-11: Data Spine read-only da LK iniciado com `areas/lk/rotinas/data-spine-readonly-2026-05-11.md` e `areas/lk/contexto/data-spine-v0.1.md`.
+Atualização 2026-05-11: Data Spine read-only da LK iniciado com `areas/lk/rotinas/data-spine-readonly-2026-05-11.md` e `areas/lk/contexto/data-spine-v0.1.md`. Primeiro snapshot multi-fonte executado em `reports/lk-os-data-spine-snapshot-2026-05-11.md`, com 6/6 fontes OK e sem writes externos.
 
 
 ### Rodada A — Verificação de crons reais na VPS

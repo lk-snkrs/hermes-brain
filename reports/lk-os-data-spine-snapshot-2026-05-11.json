@@ -1,0 +1,433 @@
+{
+  "generated_at": "2026-05-11T18:32:19.040318+00:00",
+  "finished_at": "2026-05-11T18:32:45.323061+00:00",
+  "scope": "LK OS Data Spine read-only source freshness/count/status snapshots",
+  "sources": [
+    {
+      "source": "Shopify",
+      "fact_label": "fact_shopify",
+      "ok": true,
+      "api_statuses": {
+        "products_count": 200,
+        "orders_7d_count": 200,
+        "products_sample": 200,
+        "orders_sample": 200
+      },
+      "product_count": 2279,
+      "orders_7d_count": 89,
+      "products_sample_count": 10,
+      "variants_in_product_sample": 62,
+      "orders_sample_count": 10,
+      "freshness": {
+        "max_product_updated_at_sample": "2026-05-08T12:13:14-03:00",
+        "max_order_updated_at_sample": "2026-05-11T14:49:17-03:00"
+      },
+      "sample_orders_no_customer_pii": "[REDACTED]"
+    },
+    {
+      "source": "Tiny",
+      "fact_label": "fact_tiny_stock",
+      "ok": true,
+      "scope_note": "Amostra read-only por buscas de marcas; estoque oficial deve usar depósito LK | CONTROLE ESTOQUE.",
+      "searches": [
+        {
+          "query": "Nike",
+          "http_status": 200,
+          "tiny_status": "OK",
+          "count_sample": 100
+        },
+        {
+          "query": "Adidas",
+          "http_status": 200,
+          "tiny_status": "OK",
+          "count_sample": 100
+        },
+        {
+          "query": "New Balance",
+          "http_status": 200,
+          "tiny_status": "OK",
+          "count_sample": 100
+        },
+        {
+          "query": "Asics",
+          "http_status": 200,
+          "tiny_status": "OK",
+          "count_sample": 100
+        },
+        {
+          "query": "Onitsuka",
+          "http_status": 200,
+          "tiny_status": "OK",
+          "count_sample": 100
+        }
+      ],
+      "stock_checks_sample_count": 6,
+      "official_deposit_seen_in_sample": 6,
+      "stock_checks": [
+        {
+          "http_status": 200,
+          "tiny_status": "OK",
+          "tiny_id": "1055417789",
+          "codigo_present": true,
+          "depositos": [
+            {
+              "nome": "LK FISCAL",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            },
+            {
+              "nome": "LK | CONTROLE ESTOQUE",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            },
+            {
+              "nome": "LK | ENCOMENDAS",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            }
+          ]
+        },
+        {
+          "http_status": 200,
+          "tiny_status": "OK",
+          "tiny_id": "1055417817",
+          "codigo_present": true,
+          "depositos": [
+            {
+              "nome": "LK FISCAL",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            },
+            {
+              "nome": "LK | CONTROLE ESTOQUE",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            },
+            {
+              "nome": "LK | ENCOMENDAS",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            }
+          ]
+        },
+        {
+          "http_status": 200,
+          "tiny_status": "OK",
+          "tiny_id": "1065257838",
+          "codigo_present": true,
+          "depositos": [
+            {
+              "nome": "LK FISCAL",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            },
+            {
+              "nome": "LK | CONTROLE ESTOQUE",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            },
+            {
+              "nome": "LK | ENCOMENDAS",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            }
+          ]
+        },
+        {
+          "http_status": 200,
+          "tiny_status": "OK",
+          "tiny_id": "1065257860",
+          "codigo_present": true,
+          "depositos": [
+            {
+              "nome": "LK FISCAL",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            },
+            {
+              "nome": "LK | CONTROLE ESTOQUE",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            },
+            {
+              "nome": "LK | ENCOMENDAS",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            }
+          ]
+        },
+        {
+          "http_status": 200,
+          "tiny_status": "OK",
+          "tiny_id": "1062176137",
+          "codigo_present": true,
+          "depositos": [
+            {
+              "nome": "LK FISCAL",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            },
+            {
+              "nome": "LK | CONTROLE ESTOQUE",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            },
+            {
+              "nome": "LK | ENCOMENDAS",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            }
+          ]
+        },
+        {
+          "http_status": 200,
+          "tiny_status": "OK",
+          "tiny_id": "1062176148",
+          "codigo_present": true,
+          "depositos": [
+            {
+              "nome": "LK FISCAL",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            },
+            {
+              "nome": "LK | CONTROLE ESTOQUE",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            },
+            {
+              "nome": "LK | ENCOMENDAS",
+              "has_saldo": true,
+              "desconsiderar": "N"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "GA4",
+      "fact_label": "fact_ga4",
+      "ok": true,
+      "api_status": 200,
+      "date_range": {
+        "start": "2026-05-04",
+        "end": "2026-05-10"
+      },
+      "row_count": 12,
+      "top_channels": [
+        {
+          "channel": "Paid Social",
+          "sessions": 15390.0,
+          "totalUsers": 13403.0,
+          "transactions": 14.0,
+          "totalRevenue": 58747.47998899999,
+          "sessionConversionRate": 0.008187134502923977
+        },
+        {
+          "channel": "Cross-network",
+          "sessions": 3719.0,
+          "totalUsers": 3260.0,
+          "transactions": 10.0,
+          "totalRevenue": 23254.959992,
+          "sessionConversionRate": 0.01936004302231783
+        },
+        {
+          "channel": "Organic Search",
+          "sessions": 3225.0,
+          "totalUsers": 2881.0,
+          "transactions": 4.0,
+          "totalRevenue": 10455.010001,
+          "sessionConversionRate": 0.012713178294573644
+        },
+        {
+          "channel": "Direct",
+          "sessions": 2072.0,
+          "totalUsers": 1826.0,
+          "transactions": 10.0,
+          "totalRevenue": 24649.909998,
+          "sessionConversionRate": 0.032818532818532815
+        },
+        {
+          "channel": "Paid Shopping",
+          "sessions": 1608.0,
+          "totalUsers": 1424.0,
+          "transactions": 3.0,
+          "totalRevenue": 4493.899996,
+          "sessionConversionRate": 0.016791044776119403
+        },
+        {
+          "channel": "Organic Social",
+          "sessions": 1363.0,
+          "totalUsers": 1247.0,
+          "transactions": 10.0,
+          "totalRevenue": 25806.020001,
+          "sessionConversionRate": 0.04842259721203228
+        },
+        {
+          "channel": "Paid Search",
+          "sessions": 898.0,
+          "totalUsers": 775.0,
+          "transactions": 1.0,
+          "totalRevenue": 5299.979999,
+          "sessionConversionRate": 0.0400890868596882
+        },
+        {
+          "channel": "Unassigned",
+          "sessions": 686.0,
+          "totalUsers": 552.0,
+          "transactions": 3.0,
+          "totalRevenue": 11949.98,
+          "sessionConversionRate": 0.04518950437317784
+        },
+        {
+          "channel": "Organic Shopping",
+          "sessions": 352.0,
+          "totalUsers": 305.0,
+          "transactions": 0.0,
+          "totalRevenue": 0.0,
+          "sessionConversionRate": 0.022727272727272728
+        },
+        {
+          "channel": "Referral",
+          "sessions": 233.0,
+          "totalUsers": 138.0,
+          "transactions": 0.0,
+          "totalRevenue": 0.0,
+          "sessionConversionRate": 0.004291845493562232
+        }
+      ]
+    },
+    {
+      "source": "Meta Ads",
+      "fact_label": "platform_signal",
+      "ok": true,
+      "api_status": 200,
+      "account_checked": "act_1242062509867163",
+      "date_preset": "last_7d",
+      "rows": 1,
+      "spend": 9374.42,
+      "impressions": 490901,
+      "clicks": 27352,
+      "purchase_actions": 62.0,
+      "purchase_action_key": "offsite_conversion.fb_pixel_purchase",
+      "purchase_value": 140697.3,
+      "purchase_value_key": "offsite_conversion.fb_pixel_purchase",
+      "note": "Meta é diagnóstico de plataforma, não receita operacional final."
+    },
+    {
+      "source": "Metricool Google Ads",
+      "fact_label": "platform_signal",
+      "ok": true,
+      "profile_status": 200,
+      "ads_status": 200,
+      "blog_id": "6217010",
+      "brand_facts": [
+        {
+          "label": "LK Sneakers",
+          "id": 6217010,
+          "timezone": "America/Sao_Paulo"
+        }
+      ],
+      "date_range": {
+        "start": "2026-05-04",
+        "end": "2026-05-10"
+      },
+      "google_ads_rows": 21,
+      "note": "Metricool/Google Ads é custo e diagnóstico de plataforma, não receita final."
+    },
+    {
+      "source": "Klaviyo",
+      "fact_label": "platform_signal",
+      "ok": true,
+      "api_statuses": {
+        "lists": 200,
+        "campaigns": 200
+      },
+      "lists_sample_count": 10,
+      "campaigns_sample_count": 10,
+      "campaigns_sample": [
+        {
+          "id": "01KRC1DPTY615GF5FNBPXMPKY6",
+          "name": "LK Phase 5 P1 Curadoria Loja Física 2026-05-11, DRAFT",
+          "status": "Draft",
+          "created_at": "2026-05-11T17:30:11.683164+00:00",
+          "updated_at": "2026-05-11T17:30:12.325815+00:00",
+          "send_time": null
+        },
+        {
+          "id": "01KRBW5EKCSPE8MHTVQYF88QAT",
+          "name": "Adidas Ballerina Bad Bunny Flamboyan — LK Sneakers",
+          "status": "Sent",
+          "created_at": "2026-05-11T15:58:18.223883+00:00",
+          "updated_at": "2026-05-11T16:02:38.171753+00:00",
+          "send_time": "2026-05-11T16:01:01.752745+00:00"
+        },
+        {
+          "id": "01KR3X74N42HWY0EWX3FGRZZFX",
+          "name": "Dia das Mães — NB 204L — LK Sneakers",
+          "status": "Sent",
+          "created_at": "2026-05-08T13:42:46.696094+00:00",
+          "updated_at": "2026-05-08T18:00:42.570336+00:00",
+          "send_time": "2026-05-08T17:59:13.597041+00:00"
+        },
+        {
+          "id": "01KR1B6HXNA5VNSFGHW6ZBVER2",
+          "name": "teste-auth",
+          "status": "Draft",
+          "created_at": "2026-05-07T13:49:24.280517+00:00",
+          "updated_at": "2026-05-07T13:49:24.962986+00:00",
+          "send_time": null
+        },
+        {
+          "id": "01KQZZQBH5ZQ535F1EBYWG70J1",
+          "name": "LK · Maison — Edição #5 Indicação de Companhia",
+          "status": "Draft",
+          "created_at": "2026-05-07T01:09:37.449804+00:00",
+          "updated_at": "2026-05-07T01:09:38.108773+00:00",
+          "send_time": null
+        },
+        {
+          "id": "01KQZZQA07MMHS3VA9SRPKKFKJ",
+          "name": "LK · Maison — Edição #4 Convite Maison",
+          "status": "Draft",
+          "created_at": "2026-05-07T01:09:35.882783+00:00",
+          "updated_at": "2026-05-07T01:09:36.549740+00:00",
+          "send_time": null
+        },
+        {
+          "id": "01KQZZQ8EV8PB5MAXZBJX6A8XH",
+          "name": "LK · Maison — Edição #3 Carta do Curador",
+          "status": "Draft",
+          "created_at": "2026-05-07T01:09:34.303462+00:00",
+          "updated_at": "2026-05-07T01:09:34.960068+00:00",
+          "send_time": null
+        },
+        {
+          "id": "01KQZZQ6YKV3HD5PQYHSTDJZK1",
+          "name": "LK · Maison — Edição #2 Par Único da Semana",
+          "status": "Draft",
+          "created_at": "2026-05-07T01:09:32.758279+00:00",
+          "updated_at": "2026-05-07T01:09:33.392550+00:00",
+          "send_time": null
+        },
+        {
+          "id": "01KQZZQ5BSN6DPPV8Z3N0AYWCV",
+          "name": "LK · Maison — Edição #1 Pré-Drop Maison",
+          "status": "Draft",
+          "created_at": "2026-05-07T01:09:31.132865+00:00",
+          "updated_at": "2026-05-07T01:09:31.809594+00:00",
+          "send_time": null
+        },
+        {
+          "id": "01KQZ6T5QCJT2X9WQA1G3JWQPA",
+          "name": "LK Trending Test v3 - LKSA-88 - 2026-05-06",
+          "status": "Cancelled: No Recipients",
+          "created_at": "2026-05-06T17:54:15.408390+00:00",
+          "updated_at": "2026-05-06T17:54:45.911139+00:00",
+          "send_time": "2026-05-06T19:00:00+00:00"
+        }
+      ],
+      "note": "Read-only; não cria, agenda nem envia campanha."
+    }
+  ]
+}

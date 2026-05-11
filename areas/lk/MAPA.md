@@ -25,7 +25,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 
 ## Rotinas LK globais
 
-- `rotinas/data-spine-readonly-2026-05-11.md` — Fase 1 do LK OS: inventário de fontes, matriz Doppler sem valores, entidades canônicas, reconciliação e lacunas para relatórios consistentes.
+- `rotinas/data-spine-readonly-2026-05-11.md` — Fase 1 do LK OS: inventário de fontes, matriz Doppler sem valores, entidades canônicas, reconciliação, lacunas e primeiro snapshot read-only multi-fonte em `reports/lk-os-data-spine-snapshot-2026-05-11.md`.
 - `rotinas/full-sync.md` — sincronizações LK.
 - `rotinas/morning-briefing.md` — briefing matinal.
 - `rotinas/sync-log.md` — auditoria de syncs.
