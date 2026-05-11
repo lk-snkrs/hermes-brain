@@ -57,6 +57,16 @@ A API do Klaviyo permitiu criar o template HTML e o rascunho da campanha, mas a 
 
 Regra para o próximo operador: antes de qualquer envio, abrir o rascunho no Klaviyo, confirmar que o HTML aprovado está aplicado ao message, conferir assunto/remetente/lista, revisar destinatários e pedir aprovação explícita de Lucas para enviar ou agendar.
 
+## Decisão Lucas — 2026-05-11
+
+Lucas decidiu manter a campanha em `Draft`. Não enviar, não agendar e não ativar flow nesta etapa.
+
+Link operacional provável para revisão no Klaviyo:
+
+- `https://www.klaviyo.com/campaigns/01KRC1DPTY615GF5FNBPXMPKY6`
+
+Se o link direto não abrir por mudança de rota do Klaviyo, buscar no painel por Campaign ID `01KRC1DPTY615GF5FNBPXMPKY6` ou pelo nome `LK Phase 5 P1 Curadoria Loja Física 2026-05-11, DRAFT`.
+
 ## Próximos passos possíveis
 
 1. Manter a campanha em Draft até Lucas revisar no painel.

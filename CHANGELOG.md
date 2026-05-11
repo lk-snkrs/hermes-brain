@@ -1,3 +1,9 @@
+## 2026-05-11 — LK Klaviyo P1 mantida em Draft
+
+- Registrada a decisão do Lucas de manter a campanha P1 de CRM/Klaviyo em `Draft`, sem envio, sem agendamento e sem flow.
+- Rotina `areas/lk/sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` atualizada com o Campaign ID e link operacional provável para revisão no Klaviyo.
+- Próximo bloco recomendado: seguir o PRD por fases, priorizando a base que desbloqueia execução recorrente sem criar campanhas automáticas.
+
 ## 2026-05-11 — LK CRM/Klaviyo P1 draft documentado no PRD
 
 - Consolidada a Fase 5 do LK OS no PRD e no plano mestre: a campanha P1 de recompra/curadoria chegou até rascunho Klaviyo, sem envio ou agendamento.
