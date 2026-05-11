@@ -1,3 +1,11 @@
+## 2026-05-11 — LK P1 SEO/CRO Approval Packets
+
+- Criado e executado `scripts/lk_p1_seo_cro_approval_packets_20260511.py`, convertendo os top P1 da fila de baixa conversão em pacotes de aprovação com HTML público lido em modo read-only.
+- Resultado: 8 pacotes, 8 previews de SEO title/meta e 8 recomendações CRO visíveis separadas; 0 writes liberados.
+- Top pacotes: `air-jordan-travis-scott`, `new-balance-204l`, PDP `crocs-classic-clog-x-the-cars-lightning-mcqueen`, `onitsuka-tiger-todos-os-modelos`, `onitsuka-tiger-mexico-66`, PDP `slide-nike-mind-001-black-chrome-preto`, PDP `bone-5-panel-aime-leon-dore-unisphere-branco` e `adidas-samba-jane`.
+- Artefatos: `areas/lk/rotinas/p1-seo-cro-approval-packets-2026-05-11.md`, `reports/lk-p1-seo-cro-approval-packets-2026-05-11.md` e `.json`.
+- Nenhum Shopify/theme/PDP/H1/SEO field/Merchant/feed/GSC admin/Indexing API/content publish/campanha/envio/cron foi executado.
+
 ## 2026-05-11 — LK PDP Low-conversion Priority Router
 
 - Criado e executado `scripts/lk_pdp_low_conversion_priority_router_20260511.py`, cruzando GA4 landing pages, GSC e Merchant Center em modo read-only para priorizar PDPs/collections com tráfego alto e baixa conversão.
