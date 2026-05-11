@@ -1,0 +1,148 @@
+{
+  "generated_at": "2026-05-11T15:17:26.940223+00:00",
+  "scope": "Preview-only final P1 channel queues. No send, no external list creation.",
+  "private_exports": {
+    "all_ready_channel_queue": "/opt/data/hermes_bruno_ingest/private_exports/lk_crm/lk_phase5_p1_all_ready_channel_queue_2026-05-11.csv",
+    "klaviyo_ready": "/opt/data/hermes_bruno_ingest/private_exports/lk_crm/lk_phase5_p1_klaviyo_ready_2026-05-11.csv",
+    "whatsapp_concierge_ready": "/opt/data/hermes_bruno_ingest/private_exports/lk_crm/lk_phase5_p1_whatsapp_concierge_ready_2026-05-11.csv"
+  },
+  "counts": {
+    "p1_candidates_total": 108,
+    "ready_same_size_stock": 65,
+    "blocked_stock_or_mapping": 43,
+    "all_queue_rows": 65,
+    "klaviyo_unique_emails": 47,
+    "whatsapp_unique_phones": 13
+  },
+  "by_channel": {
+    "whatsapp_concierge": 16,
+    "klaviyo_preview": 49
+  },
+  "by_segment": {
+    "Champions/VIP": 41,
+    "Novo alto potencial": 24
+  },
+  "top_groups": {
+    "Champions/VIP | Tênis New Balance 204L Mushroom Arid Stone Marrom": 22,
+    "Novo alto potencial | Tênis New Balance 204L Mushroom Arid Stone Marrom": 13,
+    "Novo alto potencial | Tênis New Balance 204L Arid Timberwolf Bege": 8,
+    "Champions/VIP | Tênis New Balance 204L Arid Timberwolf Bege": 7,
+    "Champions/VIP | Tênis Adidas Samba OG Crochet Pack Sand Strata Bege": 5,
+    "Champions/VIP | Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo": 5,
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege": 3,
+    "Champions/VIP | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo": 2
+  },
+  "top_products": {
+    "Tênis New Balance 204L Mushroom Arid Stone Marrom": 35,
+    "Tênis New Balance 204L Arid Timberwolf Bege": 15,
+    "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege": 5,
+    "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo": 5,
+    "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege": 3,
+    "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo": 2
+  },
+  "copy_previews": [
+    {
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "channel": "klaviyo_preview",
+      "count": 14,
+      "copy_angle": "VIP limitado / sem desconto",
+      "copy_preview_internal": "Uma curadoria reservada da LK para clientes recorrentes: New Balance 204L Mushroom Arid Stone Marrom em tamanhos selecionados, com atendimento próximo e sem comunicação massiva."
+    },
+    {
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "channel": "klaviyo_preview",
+      "count": 13,
+      "copy_angle": "Segunda compra / best-seller real",
+      "copy_preview_internal": "Depois da sua primeira escolha na LK, separamos uma recomendação com base em um modelo que vem performando bem e com disponibilidade real no seu tamanho: New Balance 204L Mushroom Arid Stone Marrom."
+    },
+    {
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "channel": "whatsapp_concierge",
+      "count": 8,
+      "copy_angle": "VIP concierge / curadoria reservada",
+      "copy_preview_internal": "Oi {first_name}, tudo bem? Vi aqui que você já comprou peças bem especiais com a LK. Entrou disponibilidade em tamanho próximo ao seu perfil de New Balance 204L Mushroom Arid Stone Marrom. Se fizer sentido, te mando as opções antes de abrir para a base."
+    },
+    {
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "channel": "klaviyo_preview",
+      "count": 8,
+      "copy_angle": "Segunda compra / best-seller real",
+      "copy_preview_internal": "Depois da sua primeira escolha na LK, separamos uma recomendação com base em um modelo que vem performando bem e com disponibilidade real no seu tamanho: New Balance 204L Arid Timberwolf Bege."
+    },
+    {
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "channel": "klaviyo_preview",
+      "count": 5,
+      "copy_angle": "VIP limitado / sem desconto",
+      "copy_preview_internal": "Uma curadoria reservada da LK para clientes recorrentes: New Balance 204L Arid Timberwolf Bege em tamanhos selecionados, com atendimento próximo e sem comunicação massiva."
+    },
+    {
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "channel": "whatsapp_concierge",
+      "count": 4,
+      "copy_angle": "VIP concierge / curadoria reservada",
+      "copy_preview_internal": "Oi {first_name}, tudo bem? Vi aqui que você já comprou peças bem especiais com a LK. Entrou disponibilidade em tamanho próximo ao seu perfil de Nike Moon Shoe SP Jacquemus Alabaster Amarelo. Se fizer sentido, te mando as opções antes de abrir para a base."
+    },
+    {
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "channel": "klaviyo_preview",
+      "count": 3,
+      "copy_angle": "VIP limitado / sem desconto",
+      "copy_preview_internal": "Uma curadoria reservada da LK para clientes recorrentes: Adidas Samba OG Crochet Pack Sand Strata Bege em tamanhos selecionados, com atendimento próximo e sem comunicação massiva."
+    },
+    {
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "channel": "klaviyo_preview",
+      "count": 3,
+      "copy_angle": "Segunda compra / best-seller real",
+      "copy_preview_internal": "Depois da sua primeira escolha na LK, separamos uma recomendação com base em um modelo que vem performando bem e com disponibilidade real no seu tamanho: Onitsuka Tiger Mexico 66 SD Cream Birch Bege."
+    },
+    {
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "channel": "whatsapp_concierge",
+      "count": 2,
+      "copy_angle": "VIP concierge / curadoria reservada",
+      "copy_preview_internal": "Oi {first_name}, tudo bem? Vi aqui que você já comprou peças bem especiais com a LK. Entrou disponibilidade em tamanho próximo ao seu perfil de Adidas Samba OG Crochet Pack Sand Strata Bege. Se fizer sentido, te mando as opções antes de abrir para a base."
+    },
+    {
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "channel": "whatsapp_concierge",
+      "count": 2,
+      "copy_angle": "VIP concierge / curadoria reservada",
+      "copy_preview_internal": "Oi {first_name}, tudo bem? Vi aqui que você já comprou peças bem especiais com a LK. Entrou disponibilidade em tamanho próximo ao seu perfil de New Balance 204L Arid Timberwolf Bege. Se fizer sentido, te mando as opções antes de abrir para a base."
+    },
+    {
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "channel": "klaviyo_preview",
+      "count": 2,
+      "copy_angle": "VIP limitado / sem desconto",
+      "copy_preview_internal": "Uma curadoria reservada da LK para clientes recorrentes: Onitsuka Tiger Mexico 66 Kill Bill Amarelo em tamanhos selecionados, com atendimento próximo e sem comunicação massiva."
+    },
+    {
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "channel": "klaviyo_preview",
+      "count": 1,
+      "copy_angle": "VIP limitado / sem desconto",
+      "copy_preview_internal": "Uma curadoria reservada da LK para clientes recorrentes: Nike Moon Shoe SP Jacquemus Alabaster Amarelo em tamanhos selecionados, com atendimento próximo e sem comunicação massiva."
+    }
+  ],
+  "guardrails": [
+    "No Klaviyo list created",
+    "No WhatsApp/Evolution send",
+    "No customer-facing action",
+    "Private files chmod 600 under private_exports only",
+    "Brain report contains no raw emails/phones/names"
+  ]
+}
