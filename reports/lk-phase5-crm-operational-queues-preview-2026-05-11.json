@@ -1,0 +1,1962 @@
+{
+  "generated_at": "2026-05-11T14:07:40",
+  "scope": "Phase 5 operational CRM/RFM queues, no sends/no writes",
+  "source": "Supabase LK read-only orders + order_items",
+  "guardrails": [
+    "no PII in markdown",
+    "no campaign/list/send created",
+    "no database writes",
+    "stock availability must be checked in Tiny before any product recommendation send"
+  ],
+  "queue_summary": [
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "cohort": "Lançamento High-End",
+      "family": "Onitsuka / Mexico 66",
+      "count": 704,
+      "cadence": "D+60 wishlist/novidade; D+75 alternativa; D+105 winback editorial",
+      "recommendation_logic": "novas colorways Mexico 66 / SD; Jason Markk como cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "cohort": "Lançamento High-End",
+      "family": "New Balance",
+      "count": 379,
+      "cadence": "D+60 wishlist/novidade; D+75 alternativa; D+105 winback editorial",
+      "recommendation_logic": "Onitsuka como cross-sell principal + modelos 9060/204L próximos"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "cohort": "Core Sneaker",
+      "family": "Outros sneakers",
+      "count": 289,
+      "cadence": "winback leve; separar de VIP; max 1/90d",
+      "recommendation_logic": "curadoria por tamanho e faixa de ticket"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "cohort": "Essential/Entrada",
+      "family": "Outros sneakers",
+      "count": 257,
+      "cadence": "winback leve; separar de VIP; max 1/90d",
+      "recommendation_logic": "curadoria por tamanho e faixa de ticket"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "cohort": "Lançamento High-End",
+      "family": "High-End / collab",
+      "count": 239,
+      "cadence": "winback leve; separar de VIP; max 1/90d",
+      "recommendation_logic": "drops high-end/collab, concierge e escassez real sem desconto"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "cohort": "Lançamento High-End",
+      "family": "High-End / collab",
+      "count": 191,
+      "cadence": "D+60 wishlist/novidade; D+75 alternativa; D+105 winback editorial",
+      "recommendation_logic": "drops high-end/collab, concierge e escassez real sem desconto"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "cohort": "Lançamento High-End",
+      "family": "Outros sneakers",
+      "count": 172,
+      "cadence": "D+60 wishlist/novidade; D+75 alternativa; D+105 winback editorial",
+      "recommendation_logic": "curadoria por tamanho e faixa de ticket"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "cohort": "Core Sneaker",
+      "family": "Adidas Samba",
+      "count": 171,
+      "cadence": "winback leve; separar de VIP; max 1/90d",
+      "recommendation_logic": "Samba/Gazelle próximos + Onitsuka se perfil casual premium"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "cohort": "Core Sneaker",
+      "family": "Nike Dunk",
+      "count": 126,
+      "cadence": "winback leve; separar de VIP; max 1/90d",
+      "recommendation_logic": "Dunk por cor/tamanho + Jordan 1 como upgrade seletivo"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "cohort": "Lançamento High-End",
+      "family": "Adidas Samba",
+      "count": 112,
+      "cadence": "D+60 wishlist/novidade; D+75 alternativa; D+105 winback editorial",
+      "recommendation_logic": "Samba/Gazelle próximos + Onitsuka se perfil casual premium"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "cohort": "Lançamento High-End",
+      "family": "Outros sneakers",
+      "count": 70,
+      "cadence": "winback leve; separar de VIP; max 1/90d",
+      "recommendation_logic": "curadoria por tamanho e faixa de ticket"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "cohort": "Lançamento High-End",
+      "family": "Adidas Samba",
+      "count": 70,
+      "cadence": "winback leve; separar de VIP; max 1/90d",
+      "recommendation_logic": "Samba/Gazelle próximos + Onitsuka se perfil casual premium"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "cohort": "Core Sneaker",
+      "family": "New Balance",
+      "count": 63,
+      "cadence": "winback leve; separar de VIP; max 1/90d",
+      "recommendation_logic": "Onitsuka como cross-sell principal + modelos 9060/204L próximos"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "cohort": "Lançamento High-End",
+      "family": "Nike Dunk",
+      "count": 57,
+      "cadence": "D+60 wishlist/novidade; D+75 alternativa; D+105 winback editorial",
+      "recommendation_logic": "Dunk por cor/tamanho + Jordan 1 como upgrade seletivo"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "family": "Onitsuka / Mexico 66",
+      "count": 44,
+      "cadence": "concierge/drop preview; no discount; max 1 contato/30d",
+      "recommendation_logic": "novas colorways Mexico 66 / SD; Jason Markk como cuidado complementar"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "family": "High-End / collab",
+      "count": 44,
+      "cadence": "D+21 educação/curadoria; D+34 recomendação; D+45 urgência leve",
+      "recommendation_logic": "drops high-end/collab, concierge e escassez real sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "family": "Onitsuka / Mexico 66",
+      "count": 44,
+      "cadence": "D+21 educação/curadoria; D+34 recomendação; D+45 urgência leve",
+      "recommendation_logic": "novas colorways Mexico 66 / SD; Jason Markk como cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "cohort": "Lançamento High-End",
+      "family": "Onitsuka / Mexico 66",
+      "count": 44,
+      "cadence": "novidade da família + cuidado; max 1/45d",
+      "recommendation_logic": "novas colorways Mexico 66 / SD; Jason Markk como cuidado complementar"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "family": "New Balance",
+      "count": 42,
+      "cadence": "D+21 educação/curadoria; D+34 recomendação; D+45 urgência leve",
+      "recommendation_logic": "Onitsuka como cross-sell principal + modelos 9060/204L próximos"
+    },
+    {
+      "priority": "P3",
+      "segment": "Base nurturing",
+      "cohort": "Core Sneaker",
+      "family": "Outros sneakers",
+      "count": 37,
+      "cadence": "newsletter/editorial; sem pressão",
+      "recommendation_logic": "curadoria por tamanho e faixa de ticket"
+    },
+    {
+      "priority": "P3",
+      "segment": "Base nurturing",
+      "cohort": "Lançamento High-End",
+      "family": "Onitsuka / Mexico 66",
+      "count": 34,
+      "cadence": "newsletter/editorial; sem pressão",
+      "recommendation_logic": "novas colorways Mexico 66 / SD; Jason Markk como cuidado complementar"
+    },
+    {
+      "priority": "P3",
+      "segment": "Base nurturing",
+      "cohort": "Essential/Entrada",
+      "family": "Outros sneakers",
+      "count": 32,
+      "cadence": "newsletter/editorial; sem pressão",
+      "recommendation_logic": "curadoria por tamanho e faixa de ticket"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "cohort": "Lançamento High-End",
+      "family": "Onitsuka / Mexico 66",
+      "count": 32,
+      "cadence": "winback leve; separar de VIP; max 1/90d",
+      "recommendation_logic": "novas colorways Mexico 66 / SD; Jason Markk como cuidado complementar"
+    },
+    {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "family": "Outros sneakers",
+      "count": 28,
+      "cadence": "D+21 educação/curadoria; D+34 recomendação; D+45 urgência leve",
+      "recommendation_logic": "curadoria por tamanho e faixa de ticket"
+    },
+    {
+      "priority": "P3",
+      "segment": "Base nurturing",
+      "cohort": "Lançamento High-End",
+      "family": "High-End / collab",
+      "count": 27,
+      "cadence": "newsletter/editorial; sem pressão",
+      "recommendation_logic": "drops high-end/collab, concierge e escassez real sem desconto"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "cohort": "Lançamento High-End",
+      "family": "New Balance",
+      "count": 22,
+      "cadence": "novidade da família + cuidado; max 1/45d",
+      "recommendation_logic": "Onitsuka como cross-sell principal + modelos 9060/204L próximos"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "family": "New Balance",
+      "count": 21,
+      "cadence": "concierge/drop preview; no discount; max 1 contato/30d",
+      "recommendation_logic": "Onitsuka como cross-sell principal + modelos 9060/204L próximos"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "cohort": "Core Sneaker",
+      "family": "Outros sneakers",
+      "count": 21,
+      "cadence": "D+60 wishlist/novidade; D+75 alternativa; D+105 winback editorial",
+      "recommendation_logic": "curadoria por tamanho e faixa de ticket"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "cohort": "Lançamento High-End",
+      "family": "New Balance",
+      "count": 21,
+      "cadence": "winback leve; separar de VIP; max 1/90d",
+      "recommendation_logic": "Onitsuka como cross-sell principal + modelos 9060/204L próximos"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "cohort": "Essential/Entrada",
+      "family": "Essential / cuidado",
+      "count": 18,
+      "cadence": "winback leve; separar de VIP; max 1/90d",
+      "recommendation_logic": "produto-first: tênis de entrada ou reposição de kit Jason Markk"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "cohort": "Core Sneaker",
+      "family": "Adidas Samba",
+      "count": 16,
+      "cadence": "D+60 wishlist/novidade; D+75 alternativa; D+105 winback editorial",
+      "recommendation_logic": "Samba/Gazelle próximos + Onitsuka se perfil casual premium"
+    },
+    {
+      "priority": "P3",
+      "segment": "Base nurturing",
+      "cohort": "Essential/Entrada",
+      "family": "Essential / cuidado",
+      "count": 15,
+      "cadence": "newsletter/editorial; sem pressão",
+      "recommendation_logic": "produto-first: tênis de entrada ou reposição de kit Jason Markk"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "cohort": "Lançamento High-End",
+      "family": "Nike Dunk",
+      "count": 13,
+      "cadence": "winback leve; separar de VIP; max 1/90d",
+      "recommendation_logic": "Dunk por cor/tamanho + Jordan 1 como upgrade seletivo"
+    },
+    {
+      "priority": "P3",
+      "segment": "Reativação fria",
+      "cohort": "Core Sneaker",
+      "family": "Onitsuka / Mexico 66",
+      "count": 13,
+      "cadence": "winback leve; separar de VIP; max 1/90d",
+      "recommendation_logic": "novas colorways Mexico 66 / SD; Jason Markk como cuidado complementar"
+    },
+    {
+      "priority": "P2",
+      "segment": "Leal/recorrente",
+      "cohort": "Lançamento High-End",
+      "family": "High-End / collab",
+      "count": 12,
+      "cadence": "novidade da família + cuidado; max 1/45d",
+      "recommendation_logic": "drops high-end/collab, concierge e escassez real sem desconto"
+    },
+    {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "family": "High-End / collab",
+      "count": 10,
+      "cadence": "concierge/drop preview; no discount; max 1 contato/30d",
+      "recommendation_logic": "drops high-end/collab, concierge e escassez real sem desconto"
+    },
+    {
+      "priority": "P2",
+      "segment": "Alto valor esfriando",
+      "cohort": "Lançamento High-End",
+      "family": "Essential / cuidado",
+      "count": 10,
+      "cadence": "D+60 wishlist/novidade; D+75 alternativa; D+105 winback editorial",
+      "recommendation_logic": "produto-first: tênis de entrada ou reposição de kit Jason Markk"
+    },
+    {
+      "priority": "P3",
+      "segment": "Base nurturing",
+      "cohort": "Lançamento High-End",
+      "family": "Adidas Samba",
+      "count": 9,
+      "cadence": "newsletter/editorial; sem pressão",
+      "recommendation_logic": "Samba/Gazelle próximos + Onitsuka se perfil casual premium"
+    },
+    {
+      "priority": "P3",
+      "segment": "Base nurturing",
+      "cohort": "Core Sneaker",
+      "family": "New Balance",
+      "count": 9,
+      "cadence": "newsletter/editorial; sem pressão",
+      "recommendation_logic": "Onitsuka como cross-sell principal + modelos 9060/204L próximos"
+    },
+    {
+      "priority": "P3",
+      "segment": "Base nurturing",
+      "cohort": "Lançamento High-End",
+      "family": "Outros sneakers",
+      "count": 9,
+      "cadence": "newsletter/editorial; sem pressão",
+      "recommendation_logic": "curadoria por tamanho e faixa de ticket"
+    }
+  ],
+  "copy_previews": {
+    "Champions/VIP": {
+      "canal_sugerido": "WhatsApp concierge ou Klaviyo VIP — somente após aprovação",
+      "tom": "pessoal, curto, sem desconto agressivo",
+      "preview": "Oi, [nome]. Separei alguns pares que combinam com seu histórico na LK — principalmente [família/modelo]. Antes de abrir para a base, quer que eu te mande 2–3 opções no seu tamanho?"
+    },
+    "Novo alto potencial": {
+      "canal_sugerido": "Klaviyo pós-compra + eventual WhatsApp se houver intenção clara",
+      "tom": "editorial premium, prova social, convite para segunda compra",
+      "preview": "Seu primeiro par na LK já diz bastante sobre seu gosto. Montei uma curadoria com modelos na mesma linha de [última família], com autenticidade garantida e até 10x sem juros."
+    },
+    "Alto valor esfriando": {
+      "canal_sugerido": "Klaviyo segmentado; WhatsApp apenas para alto ticket/estoque raro",
+      "tom": "reativação personalizada, novidade da mesma família",
+      "preview": "Faz um tempo desde sua última escolha na LK. Chegaram opções próximas de [modelo/família] que mantêm a mesma proposta — selecionei uma curadoria objetiva para você ver primeiro."
+    },
+    "Leal/recorrente": {
+      "canal_sugerido": "Klaviyo ou concierge leve",
+      "tom": "benefício de recorrência e curadoria",
+      "preview": "Pelo seu histórico na LK, vale acompanhar as novas entradas de [família]. Se quiser, filtramos por tamanho e deixamos só o que realmente faz sentido para você."
+    },
+    "Reativação fria": {
+      "canal_sugerido": "Klaviyo winback leve, sem insistência",
+      "tom": "editorial, sem pressão, sem prometer estoque",
+      "preview": "Atualizamos a curadoria da LK com novos pares originais e seleção por estilo. Se algum modelo fizer sentido, você consegue revisar tudo com calma — sem pressão."
+    },
+    "Base nurturing": {
+      "canal_sugerido": "newsletter/editorial",
+      "tom": "conteúdo e marca, não venda direta",
+      "preview": "Uma seleção da semana LK: modelos originais, combinações por estilo e cuidados para manter seus pares por mais tempo."
+    }
+  },
+  "anonymized_examples": {
+    "Alto valor esfriando | Lançamento High-End | High-End / collab": [
+      {
+        "ref": "63a9e8c49bd3",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "High-End / collab",
+        "recency_days": 257,
+        "frequency": 1,
+        "monetary": 99539.95,
+        "rfm": "115",
+        "last_titles": [
+          "Óculos Oakley Plantaris TI Raw Titanium Cinza",
+          "Camiseta Aphase Blur - Used Black Preto",
+          "Camiseta Aphase Not So Basic - Off White"
+        ]
+      },
+      {
+        "ref": "b4645f226ec1",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "High-End / collab",
+        "recency_days": 162,
+        "frequency": 1,
+        "monetary": 16199.97,
+        "rfm": "215",
+        "last_titles": [
+          "Tênis Nike Air Jordan 1 Low Og Sp x Travis Scott Medium Olive Verde",
+          "Tênis Nike Vomero Premium Barely Volt Cinza",
+          "Tênis adidas Yeezy Boost 350 V2 \"Steel Grey\" Cinza"
+        ]
+      },
+      {
+        "ref": "0296a3f37354",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "High-End / collab",
+        "recency_days": 167,
+        "frequency": 1,
+        "monetary": 15300.0,
+        "rfm": "215",
+        "last_titles": [
+          "Tênis Nike Travis Scott x Air Jordan 1 Low OG Reverse Mocha Bege"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Lançamento High-End | Onitsuka / Mexico 66": [
+      {
+        "ref": "8509b0e6acd9",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 148,
+        "frequency": 4,
+        "monetary": 59569.74,
+        "rfm": "245",
+        "last_titles": [
+          "Jason Markk Repel Spray Impermeabilizante",
+          "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+          "Tênis Onitsuka Tiger Mexico 66 White Black Branco"
+        ]
+      },
+      {
+        "ref": "39d454c2b201",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 197,
+        "frequency": 4,
+        "monetary": 32589.9,
+        "rfm": "245",
+        "last_titles": [
+          "Tênis On Running Cloudtilt Loewe All Black Preto",
+          "Tênis Onitsuka Tiger Tokuten Cinza",
+          "Tênis Onitsuka Tiger Moage Co Oyster Grey/Feather Grey Cinza"
+        ]
+      },
+      {
+        "ref": "4077d260b2c8",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 177,
+        "frequency": 4,
+        "monetary": 22529.89,
+        "rfm": "245",
+        "last_titles": [
+          "Tênis Adidas Samba OG Crochet Pack Orbit Green Verde",
+          "Chinelo Havaianas x Dolce & Gabbana Leopard Marrom",
+          "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Lançamento High-End | Nike Dunk": [
+      {
+        "ref": "65bfcdcdf0fd",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Nike Dunk",
+        "recency_days": 327,
+        "frequency": 5,
+        "monetary": 41929.69,
+        "rfm": "155",
+        "last_titles": [
+          "Tênis Nike SB Dunk Low Pro x Hayley Wilson Black and Court Purple Roxo",
+          "Tênis Nike Air Force 1 Low x Supreme Wheat Marrom",
+          "Tênis Nike Air Force 1 Low x Supreme White Branco"
+        ]
+      },
+      {
+        "ref": "78ae8a47e1f9",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Nike Dunk",
+        "recency_days": 242,
+        "frequency": 2,
+        "monetary": 19959.96,
+        "rfm": "125",
+        "last_titles": [
+          "Tênis Nike Sb Dunk Low x Rayssa Leal Bege",
+          "Tênis Air Jordan 4 Retro OG SP Undefeated (2025) Verde",
+          "Jason Markk Essential Kit de Limpeza"
+        ]
+      },
+      {
+        "ref": "53348f4dd09a",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Nike Dunk",
+        "recency_days": 302,
+        "frequency": 3,
+        "monetary": 11379.97,
+        "rfm": "135",
+        "last_titles": [
+          "Tênis adidas Yeezy Boost 350 V2 Zyon Marrom",
+          "Tênis Adidas Yeezy Boost 350 Pirate Black 2023",
+          "Tênis adidas Yeezy Boost 350 V2 Zyon Marrom"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Lançamento High-End | New Balance": [
+      {
+        "ref": "9965bf14270d",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "New Balance",
+        "recency_days": 377,
+        "frequency": 3,
+        "monetary": 33167.86,
+        "rfm": "135",
+        "last_titles": [
+          "Boné Alo Yoga Washed Off-Duty",
+          "Saia Alo Yoga Match Point Tennis",
+          "Saia Alo Yoga Match Point Tennis"
+        ]
+      },
+      {
+        "ref": "6e7cfb26e339",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "New Balance",
+        "recency_days": 74,
+        "frequency": 1,
+        "monetary": 31513.85,
+        "rfm": "315",
+        "last_titles": [
+          "Tenis Adidas Taekwondo Mei Ballet Black Gum Preto",
+          "Jason Markk Essential Kit de Limpeza",
+          "Tênis adidas Sambae Linen Gum Bege"
+        ]
+      },
+      {
+        "ref": "1f41d48405ce",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "New Balance",
+        "recency_days": 124,
+        "frequency": 1,
+        "monetary": 25132.94,
+        "rfm": "215",
+        "last_titles": [
+          "Tênis New Balance 9060 Slate Grey Raincloud Cinza",
+          "Tênis New Balance 9060 Quartz Grey Cinza",
+          "Tênis New Balance 9060 Triple White Branco"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Lançamento High-End | Outros sneakers": [
+      {
+        "ref": "571b83a3afcf",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Outros sneakers",
+        "recency_days": 408,
+        "frequency": 3,
+        "monetary": 14208.58,
+        "rfm": "135",
+        "last_titles": [
+          "Tênis Adidas Campus 00s Crystal White Branco",
+          "Tênis Bad Bunny x adidas Campus 'The Last Campus' Marrom",
+          "Tênis Bad Bunny x adidas Campus Light Cloud White Bege"
+        ]
+      },
+      {
+        "ref": "12257a8be612",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Outros sneakers",
+        "recency_days": 245,
+        "frequency": 2,
+        "monetary": 13249.96,
+        "rfm": "125",
+        "last_titles": [
+          "Camiseta Aimé Leon Dore Unisphere Preto",
+          "Camiseta Aimé Leon Dore Unisphere Verde",
+          "Tênis On Cloudtilt 2 x Loewe Sand White Branco"
+        ]
+      },
+      {
+        "ref": "8e8beaf9043a",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Outros sneakers",
+        "recency_days": 150,
+        "frequency": 2,
+        "monetary": 11775.0,
+        "rfm": "225",
+        "last_titles": [
+          "MEDICOM TOY - Bearbrick Jean-Michel Basquiat #7 1000% Toy Art Multi-Color",
+          "MEDICOM TOY - Bearbrick Jean-Michel Basquiat #10 1000% Toy Art Multi-Color",
+          "MEDICOM TOY - Bearbrick Keith Haring #8 1000% Toy Art Multi-Color"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Lançamento High-End | Adidas Samba": [
+      {
+        "ref": "e83a3a72b965",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Adidas Samba",
+        "recency_days": 294,
+        "frequency": 1,
+        "monetary": 13399.94,
+        "rfm": "115",
+        "last_titles": [
+          "Tênis adidas Samba Og Preloved Red Leopard Pack Marrom",
+          "Tênis Adidas Samba OG Cow Print Bege",
+          "Tênis Adidas Samba Jane 'Scarlet Gum' Vermelho"
+        ]
+      },
+      {
+        "ref": "f3345c6489da",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Adidas Samba",
+        "recency_days": 101,
+        "frequency": 1,
+        "monetary": 10449.95,
+        "rfm": "315",
+        "last_titles": [
+          "Tênis Adidas Samba OG Liberty London Better Scarlet Branco",
+          "Tênis adidas Samba Og Supplier Colour Off White Gum Prata",
+          "Tênis adidas Sambae x Hello Kitty Cloud White Clear Pink Branco"
+        ]
+      },
+      {
+        "ref": "5b4f19ab227f",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Adidas Samba",
+        "recency_days": 70,
+        "frequency": 1,
+        "monetary": 9749.86,
+        "rfm": "315",
+        "last_titles": [
+          "Tênis adidas Handball Spezial Sporty & Rich Pink Rosa",
+          "Tênis adidas Samba Og Linen Green Metallic Verde",
+          "Tênis adidas Samba Og Cloud White Silver Metallic Branco"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Essential/Entrada | Onitsuka / Mexico 66": [
+      {
+        "ref": "bad0fa5cea6d",
+        "segment": "Alto valor esfriando",
+        "cohort": "Essential/Entrada",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 336,
+        "frequency": 5,
+        "monetary": 8359.9,
+        "rfm": "155",
+        "last_titles": [
+          "Tênis Onitsuka Tiger Mexico 66 Brich Green Branco",
+          "Tênis New Balance 9060 Rose Sugar Ice Wine Rosa",
+          "Tênis New Balance 530 Silver White Branco"
+        ]
+      },
+      {
+        "ref": "c806793618d9",
+        "segment": "Alto valor esfriando",
+        "cohort": "Essential/Entrada",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 167,
+        "frequency": 2,
+        "monetary": 2684.72,
+        "rfm": "224",
+        "last_titles": [
+          "Tênis Onitsuka Tiger Tsunahiki Slip-On White/Black Branco",
+          "Jason Markk Repel Spray Impermeabilizante"
+        ]
+      },
+      {
+        "ref": "d71fe7d26b7f",
+        "segment": "Alto valor esfriando",
+        "cohort": "Essential/Entrada",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 121,
+        "frequency": 2,
+        "monetary": 2669.98,
+        "rfm": "224",
+        "last_titles": [
+          "Tênis Onitsuka Tiger Mexico 66 SD Birch Silver Bege",
+          "Jason Markk Repel Spray Impermeabilizante"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Core Sneaker | Outros sneakers": [
+      {
+        "ref": "84c94108df51",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "Outros sneakers",
+        "recency_days": 327,
+        "frequency": 5,
+        "monetary": 6857.44,
+        "rfm": "155",
+        "last_titles": [
+          "Pop Mart Labubu The Monsters Coca Cola Series Happy Factor Vinyl Plush Pingente",
+          "Pop Mart Labubu The Monsters Coca Cola Series Happy Factor Vinyl Plush Pingente",
+          "Pop Mart Labubu The Monsters Tasty Macarons Vinyl Plush Pingente [Blind Box Lacrada]"
+        ]
+      },
+      {
+        "ref": "14d9a88a3baf",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "Outros sneakers",
+        "recency_days": 126,
+        "frequency": 3,
+        "monetary": 4909.88,
+        "rfm": "235",
+        "last_titles": [
+          "Pullover Alo Yoga Accolade 1/4 Zip Winter Ivy Verde",
+          "Calça Alo Yoga Suit Up Trouser (Regular) Azul Marinho",
+          "Boné Lululemon Classic Ball Wordmark"
+        ]
+      },
+      {
+        "ref": "aea9ea309a80",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "Outros sneakers",
+        "recency_days": 337,
+        "frequency": 2,
+        "monetary": 3484.51,
+        "rfm": "124",
+        "last_titles": [
+          "Pop Mart Labubu The Monsters Tasty Macarons Toffee Vinyl Plush  Pingente",
+          "Moletom Alo Yoga Accolade",
+          "Pop Mart Labubu The Monsters Tasty Macarons Vinyl Plush Pingente [Blind Box Lacrada]"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Core Sneaker | New Balance": [
+      {
+        "ref": "2035a64669d3",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "New Balance",
+        "recency_days": 167,
+        "frequency": 4,
+        "monetary": 6619.9,
+        "rfm": "245",
+        "last_titles": [
+          "Tênis Nike Dunk Low Dusty Olive Verde",
+          "Tênis New Balance 9060 Nori Verde",
+          "Tênis Nike Cortez Forrest Gump 2024 Branco"
+        ]
+      },
+      {
+        "ref": "230f056e0987",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "New Balance",
+        "recency_days": 158,
+        "frequency": 3,
+        "monetary": 4500.79,
+        "rfm": "235",
+        "last_titles": [
+          "Tênis Adidas Samba Wonder Clay Branco",
+          "Tênis Nike Dunk Low PRM Lilac Bloom Colorido",
+          "Tênis New Balance 530 White Natural Indigo Branco"
+        ]
+      },
+      {
+        "ref": "351063df3087",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "New Balance",
+        "recency_days": 123,
+        "frequency": 2,
+        "monetary": 3595.93,
+        "rfm": "224",
+        "last_titles": [
+          "Tênis New Balance 530 White Natural Indigo Branco",
+          "Tênis New Balance 530 Silver White Branco"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Core Sneaker | Onitsuka / Mexico 66": [
+      {
+        "ref": "c2235160a2bb",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 162,
+        "frequency": 3,
+        "monetary": 5269.99,
+        "rfm": "235",
+        "last_titles": [
+          "Tênis Nike Cortez SL White Gym Red Branco",
+          "Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege",
+          "Tênis Onitsuka Tiger Mexico 66 Kill Bill Slip-On Amarelo"
+        ]
+      },
+      {
+        "ref": "635c18992203",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 173,
+        "frequency": 3,
+        "monetary": 4667.48,
+        "rfm": "235",
+        "last_titles": [
+          "Tênis adidas Gazelle Indoor Royal Blue Azul",
+          "Tênis Adidas Samba Jane 'Black White Gum' Preto",
+          "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege"
+        ]
+      },
+      {
+        "ref": "d3c505df4e7b",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 270,
+        "frequency": 4,
+        "monetary": 4632.39,
+        "rfm": "145",
+        "last_titles": [
+          "Camiseta Painel Dane-se x Athos Bulcão Torre de TV Branco",
+          "Camiseta Sufgang Stunt Master Preto",
+          "Moletom Fear of God Essentials Fleece Black Preto"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Lançamento High-End | Essential / cuidado": [
+      {
+        "ref": "0896ab88d23f",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Essential / cuidado",
+        "recency_days": 171,
+        "frequency": 1,
+        "monetary": 5169.96,
+        "rfm": "215",
+        "last_titles": [
+          "Jason Markk Repel Spray Impermeabilizante",
+          "Jason Markk Essential Kit de Limpeza",
+          "Tênis Alo Yoga ALO Runner Preto"
+        ]
+      },
+      {
+        "ref": "182d7f8ac4ca",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Essential / cuidado",
+        "recency_days": 119,
+        "frequency": 1,
+        "monetary": 4196.54,
+        "rfm": "315",
+        "last_titles": [
+          "Tênis Nike Vomero Premium Sail Coconut Milk Branco",
+          "Jason Markk Repel Spray Impermeabilizante"
+        ]
+      },
+      {
+        "ref": "29329710973e",
+        "segment": "Alto valor esfriando",
+        "cohort": "Lançamento High-End",
+        "family": "Essential / cuidado",
+        "recency_days": 357,
+        "frequency": 1,
+        "monetary": 3799.96,
+        "rfm": "114",
+        "last_titles": [
+          "Moletom Alo Yoga Accolade Pullover",
+          "Meia Alo Yoga Unisex Half-Crew Throwback",
+          "Top Alo Yoga Aspire"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Core Sneaker | Adidas Samba": [
+      {
+        "ref": "94a282eaeeca",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "Adidas Samba",
+        "recency_days": 230,
+        "frequency": 3,
+        "monetary": 4972.28,
+        "rfm": "235",
+        "last_titles": [
+          "Tênis Nike Cortez Picante Red Vermelho",
+          "Tênis Samba OG White Scarlet Branco",
+          "Tênis Adidas Samba OG Silver Metallic Cracked Leather Prateado"
+        ]
+      },
+      {
+        "ref": "c30a9f312a41",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "Adidas Samba",
+        "recency_days": 318,
+        "frequency": 2,
+        "monetary": 3481.97,
+        "rfm": "124",
+        "last_titles": [
+          "Tênis adidas Samba OG JJJJound Mesa Marrom",
+          "Pop Mart Labubu The Monsters Have a Seat Vinyl Plush Pingente [Blind Box Lacrada]"
+        ]
+      },
+      {
+        "ref": "c2e19edd6a87",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "Adidas Samba",
+        "recency_days": 187,
+        "frequency": 2,
+        "monetary": 3439.98,
+        "rfm": "224",
+        "last_titles": [
+          "Tênis Adidas SL 72 OG Leopard Print Laranja",
+          "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Core Sneaker | Nike Dunk": [
+      {
+        "ref": "f9a442f85860",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "Nike Dunk",
+        "recency_days": 719,
+        "frequency": 3,
+        "monetary": 4630.39,
+        "rfm": "135",
+        "last_titles": [
+          "Tênis Nike Dunk Low Cacao Wow Marrom",
+          "Tênis Bad Bunny x adidas Campus 'The Last Campus' Marrom",
+          "Tênis Nike Dunk Low Cacao Wow Marrom"
+        ]
+      },
+      {
+        "ref": "f8ae122499aa",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "Nike Dunk",
+        "recency_days": 720,
+        "frequency": 3,
+        "monetary": 4514.98,
+        "rfm": "135",
+        "last_titles": [
+          "Nike Dunk Low Next Nature Lilac",
+          "Nike Dunk Low Teddy Bear",
+          "Tênis Nike Dunk Low Cacao Wow Marrom"
+        ]
+      },
+      {
+        "ref": "e40ffb43fe6b",
+        "segment": "Alto valor esfriando",
+        "cohort": "Core Sneaker",
+        "family": "Nike Dunk",
+        "recency_days": 543,
+        "frequency": 2,
+        "monetary": 2849.98,
+        "rfm": "124",
+        "last_titles": [
+          "Tênis Nike Dunk Low Cacao Wow Marrom",
+          "Tênis Nike Dunk Low Cacao Wow Marrom"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Essential/Entrada | Adidas Samba": [
+      {
+        "ref": "27a18132e524",
+        "segment": "Alto valor esfriando",
+        "cohort": "Essential/Entrada",
+        "family": "Adidas Samba",
+        "recency_days": 240,
+        "frequency": 2,
+        "monetary": 2842.49,
+        "rfm": "224",
+        "last_titles": [
+          "Tênis adidas Samba Og White Floral Embroidery Branco",
+          "Tênis adidas Samba OG Black Ribbon Laces Preto"
+        ]
+      },
+      {
+        "ref": "2d2f9a1d7d09",
+        "segment": "Alto valor esfriando",
+        "cohort": "Essential/Entrada",
+        "family": "Adidas Samba",
+        "recency_days": 228,
+        "frequency": 2,
+        "monetary": 2169.15,
+        "rfm": "223",
+        "last_titles": [
+          "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+          "Jason Markk Repel Spray Impermeabilizante"
+        ]
+      }
+    ],
+    "Alto valor esfriando | Essential/Entrada | Outros sneakers": [
+      {
+        "ref": "4e8dfe29e5b5",
+        "segment": "Alto valor esfriando",
+        "cohort": "Essential/Entrada",
+        "family": "Outros sneakers",
+        "recency_days": 329,
+        "frequency": 3,
+        "monetary": 2549.97,
+        "rfm": "134",
+        "last_titles": [
+          "Pop Mart Labubu The Monsters Tasty Macarons Lychee Berry Vinyl Plush Pingente",
+          "Pop Mart Labubu The Monsters Have a Seat BABA Vinyl Plush Pingente",
+          "Pop Mart Labubu The Monsters Tasty Macarons Green Grape Vinyl Plush Pingente"
+        ]
+      }
+    ],
+    "Base nurturing | Lançamento High-End | Onitsuka / Mexico 66": [
+      {
+        "ref": "2ab49a62430f",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 29,
+        "frequency": 1,
+        "monetary": 2375.0,
+        "rfm": "513",
+        "last_titles": [
+          "Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo"
+        ]
+      },
+      {
+        "ref": "5d2316d3c844",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 38,
+        "frequency": 1,
+        "monetary": 2375.0,
+        "rfm": "413",
+        "last_titles": [
+          "Tênis Onitsuka Tiger Moage CO Cream Black Bege"
+        ]
+      },
+      {
+        "ref": "2f935d22b6db",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 39,
+        "frequency": 1,
+        "monetary": 2375.0,
+        "rfm": "413",
+        "last_titles": [
+          "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege"
+        ]
+      }
+    ],
+    "Base nurturing | Lançamento High-End | New Balance": [
+      {
+        "ref": "83c4635da188",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "New Balance",
+        "recency_days": 26,
+        "frequency": 1,
+        "monetary": 2340.0,
+        "rfm": "513",
+        "last_titles": [
+          "Tênis New Balance 9060 Sea Salt Moonbeam Branco"
+        ]
+      },
+      {
+        "ref": "fe9aa4f7896e",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "New Balance",
+        "recency_days": 37,
+        "frequency": 1,
+        "monetary": 2340.0,
+        "rfm": "413",
+        "last_titles": [
+          "Tênis New Balance 9060 Sea Salt Moonbeam Branco"
+        ]
+      },
+      {
+        "ref": "b308ed90a61f",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "New Balance",
+        "recency_days": 36,
+        "frequency": 1,
+        "monetary": 2280.0,
+        "rfm": "413",
+        "last_titles": [
+          "Tênis New Balance 9060 Bisque Sea Salt Bege"
+        ]
+      }
+    ],
+    "Base nurturing | Lançamento High-End | Outros sneakers": [
+      {
+        "ref": "2cfda85eff27",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "Outros sneakers",
+        "recency_days": 50,
+        "frequency": 1,
+        "monetary": 2330.0,
+        "rfm": "413",
+        "last_titles": [
+          "Tênis Alo Yoga ALO Runner Preto"
+        ]
+      },
+      {
+        "ref": "0a5d9c5d69fb",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "Outros sneakers",
+        "recency_days": 36,
+        "frequency": 1,
+        "monetary": 1999.99,
+        "rfm": "413",
+        "last_titles": [
+          "Tênis Nike Zoom Vomero 5 Metallic Silver Platinum Violet Prateado/Violeta"
+        ]
+      },
+      {
+        "ref": "ea3de930f56d",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "Outros sneakers",
+        "recency_days": 51,
+        "frequency": 1,
+        "monetary": 1999.99,
+        "rfm": "413",
+        "last_titles": [
+          "Tênis Nike Air Rift 'Triple Black' Preto"
+        ]
+      }
+    ],
+    "Base nurturing | Lançamento High-End | High-End / collab": [
+      {
+        "ref": "024778c2f7da",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "High-End / collab",
+        "recency_days": 57,
+        "frequency": 1,
+        "monetary": 2299.98,
+        "rfm": "413",
+        "last_titles": [
+          "Boné 5 Panel Aimé Leon Dore Unisphere Azul",
+          "Camiseta Aimé Leon Dore Unisphere Pristine Off White"
+        ]
+      },
+      {
+        "ref": "a3ba76026bb5",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "High-End / collab",
+        "recency_days": 42,
+        "frequency": 1,
+        "monetary": 2199.99,
+        "rfm": "413",
+        "last_titles": [
+          "Tênis Nike Air Jordan 1 Mid SE Craft Inside Out Black Preto"
+        ]
+      },
+      {
+        "ref": "708aadad3a87",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "High-End / collab",
+        "recency_days": 38,
+        "frequency": 1,
+        "monetary": 1999.99,
+        "rfm": "413",
+        "last_titles": [
+          "Tênis Nike Air Jordan 1 Low Vintage Grey Cinza"
+        ]
+      }
+    ],
+    "Base nurturing | Lançamento High-End | Adidas Samba": [
+      {
+        "ref": "3b30bb4cfaf8",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "Adidas Samba",
+        "recency_days": 40,
+        "frequency": 1,
+        "monetary": 2199.99,
+        "rfm": "413",
+        "last_titles": [
+          "Tênis Adidas Samba OG Cream White Cardboard Creme"
+        ]
+      },
+      {
+        "ref": "c3ab22aae6df",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "Adidas Samba",
+        "recency_days": 26,
+        "frequency": 1,
+        "monetary": 2070.0,
+        "rfm": "513",
+        "last_titles": [
+          "Tênis Adidas Samba OG Earth Strata Wonder White Marrom"
+        ]
+      },
+      {
+        "ref": "f5f30fcd63b6",
+        "segment": "Base nurturing",
+        "cohort": "Lançamento High-End",
+        "family": "Adidas Samba",
+        "recency_days": 24,
+        "frequency": 1,
+        "monetary": 1999.99,
+        "rfm": "513",
+        "last_titles": [
+          "Tênis Adidas Samba Disney 101 Dalmatians Penny Branco"
+        ]
+      }
+    ],
+    "Base nurturing | Core Sneaker | Outros sneakers": [
+      {
+        "ref": "d08d188f13df",
+        "segment": "Base nurturing",
+        "cohort": "Core Sneaker",
+        "family": "Outros sneakers",
+        "recency_days": 29,
+        "frequency": 1,
+        "monetary": 1799.99,
+        "rfm": "512",
+        "last_titles": [
+          "Boné Kith Script Logo Classic Cap Nocturnal Branco/Azul",
+          "Camiseta Fear Of God Essentials Classic Short Sleeve Jet Black Preto"
+        ]
+      },
+      {
+        "ref": "23d7a34c3e20",
+        "segment": "Base nurturing",
+        "cohort": "Core Sneaker",
+        "family": "Outros sneakers",
+        "recency_days": 40,
+        "frequency": 1,
+        "monetary": 1799.99,
+        "rfm": "412",
+        "last_titles": [
+          "Tênis Nike Cortez Baroque Brown Marrom"
+        ]
+      },
+      {
+        "ref": "b296e52df99e",
+        "segment": "Base nurturing",
+        "cohort": "Core Sneaker",
+        "family": "Outros sneakers",
+        "recency_days": 59,
+        "frequency": 1,
+        "monetary": 1799.99,
+        "rfm": "412",
+        "last_titles": [
+          "Moletom Fear of God Essentials Heather Oatmeal Embossed Classic"
+        ]
+      }
+    ],
+    "Base nurturing | Core Sneaker | Onitsuka / Mexico 66": [
+      {
+        "ref": "9d2bd1fb3635",
+        "segment": "Base nurturing",
+        "cohort": "Core Sneaker",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 29,
+        "frequency": 1,
+        "monetary": 1799.99,
+        "rfm": "512",
+        "last_titles": [
+          "Tênis Onitsuka Tiger GSM Glacier Grey White Branco"
+        ]
+      }
+    ],
+    "Base nurturing | Core Sneaker | New Balance": [
+      {
+        "ref": "087c0292a220",
+        "segment": "Base nurturing",
+        "cohort": "Core Sneaker",
+        "family": "New Balance",
+        "recency_days": 44,
+        "frequency": 1,
+        "monetary": 1799.99,
+        "rfm": "412",
+        "last_titles": [
+          "Tenis New Balance 530 Beige Angora Creme"
+        ]
+      },
+      {
+        "ref": "395e8464a2c2",
+        "segment": "Base nurturing",
+        "cohort": "Core Sneaker",
+        "family": "New Balance",
+        "recency_days": 49,
+        "frequency": 1,
+        "monetary": 1799.99,
+        "rfm": "412",
+        "last_titles": [
+          "Tênis New Balance 530 Grey Matter Silver Metallic Cinza"
+        ]
+      },
+      {
+        "ref": "d7c61089c888",
+        "segment": "Base nurturing",
+        "cohort": "Core Sneaker",
+        "family": "New Balance",
+        "recency_days": 73,
+        "frequency": 1,
+        "monetary": 1799.99,
+        "rfm": "312",
+        "last_titles": [
+          "Tênis New Balance 530 Brown Tan Marrom"
+        ]
+      }
+    ],
+    "Base nurturing | Core Sneaker | Nike Dunk": [
+      {
+        "ref": "0207f8eacee6",
+        "segment": "Base nurturing",
+        "cohort": "Core Sneaker",
+        "family": "Nike Dunk",
+        "recency_days": 92,
+        "frequency": 1,
+        "monetary": 1799.99,
+        "rfm": "312",
+        "last_titles": [
+          "Tênis Nike Dunk Low Baroque Brown Marrom"
+        ]
+      },
+      {
+        "ref": "16f106c93693",
+        "segment": "Base nurturing",
+        "cohort": "Core Sneaker",
+        "family": "Nike Dunk",
+        "recency_days": 91,
+        "frequency": 1,
+        "monetary": 1599.99,
+        "rfm": "312",
+        "last_titles": [
+          "Tênis Nike Sb Dunk Low Pro Triple White Branco"
+        ]
+      },
+      {
+        "ref": "2558305b77f8",
+        "segment": "Base nurturing",
+        "cohort": "Core Sneaker",
+        "family": "Nike Dunk",
+        "recency_days": 71,
+        "frequency": 1,
+        "monetary": 1520.0,
+        "rfm": "312",
+        "last_titles": [
+          "Tênis Nike Dunk Low Lx Brown Ostrich Marrom"
+        ]
+      }
+    ],
+    "Base nurturing | Essential/Entrada | Adidas Samba": [
+      {
+        "ref": "db31b7e044b3",
+        "segment": "Base nurturing",
+        "cohort": "Essential/Entrada",
+        "family": "Adidas Samba",
+        "recency_days": 59,
+        "frequency": 1,
+        "monetary": 1275.0,
+        "rfm": "411",
+        "last_titles": [
+          "Tênis adidas Samba OG Black Ribbon Laces Preto"
+        ]
+      }
+    ],
+    "Base nurturing | Essential/Entrada | Onitsuka / Mexico 66": [
+      {
+        "ref": "eea2271ae17c",
+        "segment": "Base nurturing",
+        "cohort": "Essential/Entrada",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 74,
+        "frequency": 1,
+        "monetary": 1232.99,
+        "rfm": "311",
+        "last_titles": [
+          "Tênis Onitsuka Tiger Mexico 66 Kids Birch/Indian INK Bege",
+          "Jason Markk Repel Spray Impermeabilizante"
+        ]
+      }
+    ],
+    "Base nurturing | Essential/Entrada | Outros sneakers": [
+      {
+        "ref": "38d02fa03944",
+        "segment": "Base nurturing",
+        "cohort": "Essential/Entrada",
+        "family": "Outros sneakers",
+        "recency_days": 25,
+        "frequency": 1,
+        "monetary": 899.99,
+        "rfm": "511",
+        "last_titles": [
+          "Camiseta Lululemon Swiftly Tech  2.0 Hip Length"
+        ]
+      },
+      {
+        "ref": "85c538b3f423",
+        "segment": "Base nurturing",
+        "cohort": "Essential/Entrada",
+        "family": "Outros sneakers",
+        "recency_days": 29,
+        "frequency": 1,
+        "monetary": 849.99,
+        "rfm": "511",
+        "last_titles": [
+          "Regata Alo Yoga Ribbed Prosper Branco"
+        ]
+      },
+      {
+        "ref": "616cde6274f1",
+        "segment": "Base nurturing",
+        "cohort": "Essential/Entrada",
+        "family": "Outros sneakers",
+        "recency_days": 62,
+        "frequency": 1,
+        "monetary": 699.99,
+        "rfm": "311",
+        "last_titles": [
+          "Jaqueta Aphase Heavy - Used Black Preto"
+        ]
+      }
+    ],
+    "Base nurturing | Essential/Entrada | Essential / cuidado": [
+      {
+        "ref": "575a9d1b0829",
+        "segment": "Base nurturing",
+        "cohort": "Essential/Entrada",
+        "family": "Essential / cuidado",
+        "recency_days": 76,
+        "frequency": 1,
+        "monetary": 492.09,
+        "rfm": "311",
+        "last_titles": [
+          "Jason Markk Ready to Use Foam Cleaner",
+          "Jason Markk Durables Cleaning Brush",
+          "Jason Markk Essential Kit de Limpeza"
+        ]
+      },
+      {
+        "ref": "f3fc680c675b",
+        "segment": "Base nurturing",
+        "cohort": "Essential/Entrada",
+        "family": "Essential / cuidado",
+        "recency_days": 78,
+        "frequency": 1,
+        "monetary": 337.31,
+        "rfm": "311",
+        "last_titles": [
+          "Jason Markk Ready to Use Foam Cleaner",
+          "Jason Markk Repel Spray Impermeabilizante"
+        ]
+      },
+      {
+        "ref": "1d99143e8854",
+        "segment": "Base nurturing",
+        "cohort": "Essential/Entrada",
+        "family": "Essential / cuidado",
+        "recency_days": 70,
+        "frequency": 1,
+        "monetary": 287.99,
+        "rfm": "311",
+        "last_titles": [
+          "Jason Markk Essential Kit de Limpeza",
+          "Jason Markk Delicates Cleaning Brush"
+        ]
+      }
+    ],
+    "Champions/VIP | Lançamento High-End | Onitsuka / Mexico 66": [
+      {
+        "ref": "5e1d46a973e3",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 46,
+        "frequency": 4,
+        "monetary": 51321.34,
+        "rfm": "445",
+        "last_titles": [
+          "Tênis Nike Mind 002 Light Smoke Grey Cinza",
+          "Slide Nike Mind 001 Light Smoke Grey Cinza",
+          "Slide Nike Mind 001 Black Chrome Preto"
+        ]
+      },
+      {
+        "ref": "f5bc8ef7d334",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 33,
+        "frequency": 5,
+        "monetary": 25154.95,
+        "rfm": "455",
+        "last_titles": [
+          "Tênis Onitsuka Tiger Mexico 66 Cream Light Sage Bege",
+          "Onitsuka Tiger Tokuten Charcoal Birch",
+          "Tênis Nike Moon Shoe SP Jacquemus Off White"
+        ]
+      },
+      {
+        "ref": "3aedba919921",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 51,
+        "frequency": 2,
+        "monetary": 24599.9,
+        "rfm": "425",
+        "last_titles": [
+          "Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo",
+          "Tênis New Balance 9060 Rose Sugar Angora Rosa",
+          "Tênis Onitsuka Tiger Mexico 66 White Blue Branco"
+        ]
+      }
+    ],
+    "Champions/VIP | Lançamento High-End | Essential / cuidado": [
+      {
+        "ref": "3e09c987933f",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "Essential / cuidado",
+        "recency_days": 55,
+        "frequency": 2,
+        "monetary": 32332.96,
+        "rfm": "425",
+        "last_titles": [
+          "Tênis On Running Cloudsolo Loewe Sand Turquoise Bege",
+          "Tênis On Running Cloudsolo Loewe Dark Brown Black Marrom",
+          "Tênis On Running Cloudsolo Loewe Dark Brown Black Marrom"
+        ]
+      },
+      {
+        "ref": "d68634a02123",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "Essential / cuidado",
+        "recency_days": 52,
+        "frequency": 3,
+        "monetary": 30399.66,
+        "rfm": "435",
+        "last_titles": [
+          "Tênis On Running Cloudsolo Loewe Sand Turquoise Bege",
+          "Tênis On Running Cloudsolo Loewe Dark Brown Black Marrom",
+          "Tênis On Running Cloudsolo Loewe Khaki Green Sand Verde"
+        ]
+      },
+      {
+        "ref": "7ef6e138c92e",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "Essential / cuidado",
+        "recency_days": 59,
+        "frequency": 2,
+        "monetary": 9532.97,
+        "rfm": "425",
+        "last_titles": [
+          "Jason Markk Repel Spray Impermeabilizante",
+          "Jason Markk Essential Kit de Limpeza",
+          "Tênis Adidas Gazelle Indoor Maroon Almost Yellow Marrom"
+        ]
+      }
+    ],
+    "Champions/VIP | Lançamento High-End | Outros sneakers": [
+      {
+        "ref": "8095fe21112e",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "Outros sneakers",
+        "recency_days": 26,
+        "frequency": 3,
+        "monetary": 25113.74,
+        "rfm": "535",
+        "last_titles": [
+          "Tênis Nike Vomero Premium Alabaster Amarelo",
+          "Tênis Nike Vomero Premium Black Volt Preto",
+          "Tênis Nike Vomero Premium Flat Stout Marrom"
+        ]
+      },
+      {
+        "ref": "7c11b00b1268",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "Outros sneakers",
+        "recency_days": 57,
+        "frequency": 2,
+        "monetary": 7499.97,
+        "rfm": "425",
+        "last_titles": [
+          "KITH SS QUINN TEE BLACK - TAMANHO G",
+          "S LAX TEE BLACK TAMANHO G",
+          "KITH BRUSH VINTAGE BOXY ALEX TEE - TAMANHO G"
+        ]
+      },
+      {
+        "ref": "b887cfba52e7",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "Outros sneakers",
+        "recency_days": 54,
+        "frequency": 2,
+        "monetary": 7200.0,
+        "rfm": "425",
+        "last_titles": [
+          "Tênis Nike Vomero Premium Black Volt Preto",
+          "Tênis Nike Vomero Premium Barely Volt Verde"
+        ]
+      }
+    ],
+    "Champions/VIP | Lançamento High-End | New Balance": [
+      {
+        "ref": "1d3c5751083d",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "New Balance",
+        "recency_days": 53,
+        "frequency": 6,
+        "monetary": 20399.88,
+        "rfm": "455",
+        "last_titles": [
+          "Pop Mart Secret Huguinho, Zezinho, Luizinho - Mickey Family Cute Together Keychain Series Figures (Aberto)",
+          "Pop Mart Teco - Mickey Family Cute Together Keychain Series Figures (Aberto)",
+          "Tênis Nike Moon Shoe SP Jacquemus Medium Brown"
+        ]
+      },
+      {
+        "ref": "0aa4ec0ea734",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "New Balance",
+        "recency_days": 30,
+        "frequency": 3,
+        "monetary": 18609.96,
+        "rfm": "535",
+        "last_titles": [
+          "The Rhode Kit Cinza",
+          "CAMISETA SQUEAK CHUMBO TAMANHO M DEUS EX",
+          "CAMISETA HEART CHUMBO DEUS E X MAC"
+        ]
+      },
+      {
+        "ref": "daa056da5518",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "New Balance",
+        "recency_days": 32,
+        "frequency": 2,
+        "monetary": 15424.96,
+        "rfm": "425",
+        "last_titles": [
+          "Slide Nike Mind 001 Solar Red Vermelho",
+          "Tênis Adidas Samba OG x Disney Pixar Toy Story",
+          "Tênis Nike Moon Shoe SP Jacquemus Off White"
+        ]
+      }
+    ],
+    "Champions/VIP | Lançamento High-End | Nike Dunk": [
+      {
+        "ref": "896a767661e8",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "Nike Dunk",
+        "recency_days": 49,
+        "frequency": 7,
+        "monetary": 15987.42,
+        "rfm": "455",
+        "last_titles": [
+          "Moletom Alo Yoga Sweet Escape Zip Up Gravel Marrom",
+          "Moletom Alo Yoga Cropped Serenity Coverup Bluestone Azul",
+          "Moletom Alo Yoga Sweet Escape Zip Up Ivory Creme"
+        ]
+      },
+      {
+        "ref": "2bfd4c41d668",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "Nike Dunk",
+        "recency_days": 37,
+        "frequency": 2,
+        "monetary": 6449.99,
+        "rfm": "425",
+        "last_titles": [
+          "Tênis Nike Dunk Low Cacao Wow Marrom",
+          "Tênis Nike Moon Shoe SP Jacquemus Off White"
+        ]
+      }
+    ],
+    "Champions/VIP | Lançamento High-End | High-End / collab": [
+      {
+        "ref": "13fac4c60258",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "High-End / collab",
+        "recency_days": 34,
+        "frequency": 3,
+        "monetary": 13719.87,
+        "rfm": "435",
+        "last_titles": [
+          "Tênis Air Jordan 1 Mid SE Red Stardust White Rosa",
+          "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+          "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco"
+        ]
+      },
+      {
+        "ref": "b294f089bef8",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "High-End / collab",
+        "recency_days": 42,
+        "frequency": 2,
+        "monetary": 11065.08,
+        "rfm": "425",
+        "last_titles": [
+          "Tênis Nike Moon Shoe SP Jacquemus University Red Vermelho",
+          "Tênis Nike Moon Shoe SP Jacquemus Off White"
+        ]
+      },
+      {
+        "ref": "cd7f2c3aab38",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "High-End / collab",
+        "recency_days": 32,
+        "frequency": 2,
+        "monetary": 10800.0,
+        "rfm": "425",
+        "last_titles": [
+          "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+          "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto"
+        ]
+      }
+    ],
+    "Champions/VIP | Lançamento High-End | Adidas Samba": [
+      {
+        "ref": "1711d5bae213",
+        "segment": "Champions/VIP",
+        "cohort": "Lançamento High-End",
+        "family": "Adidas Samba",
+        "recency_days": 53,
+        "frequency": 3,
+        "monetary": 7649.98,
+        "rfm": "435",
+        "last_titles": [
+          "Lip Tint Rhode Scented Peptide Toast",
+          "Rhode Pocket Blush",
+          "Tênis Nike Moon Shoe SP Jacquemus Off White"
+        ]
+      }
+    ],
+    "Champions/VIP | Core Sneaker | Onitsuka / Mexico 66": [
+      {
+        "ref": "8c75ca7a97c0",
+        "segment": "Champions/VIP",
+        "cohort": "Core Sneaker",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 60,
+        "frequency": 3,
+        "monetary": 5336.13,
+        "rfm": "435",
+        "last_titles": [
+          "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+          "Calça Alo Yoga Suit Up Trouser (Regular) Preto",
+          "Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege"
+        ]
+      },
+      {
+        "ref": "95ef48194603",
+        "segment": "Champions/VIP",
+        "cohort": "Core Sneaker",
+        "family": "Onitsuka / Mexico 66",
+        "recency_days": 51,
+        "frequency": 2,
+        "monetary": 3099.98,
+        "rfm": "424",
+        "last_titles": [
+          "Camiseta Baby Look Nude Project Juicy Cherry Preto",
+          "Tênis Onitsuka Tiger México 66 Birch Peacoat Bege"
+        ]
+      }
+    ],
+    "Champions/VIP | Essential/Entrada | Outros sneakers": [
+      {
+        "ref": "8e1ca2d4afde",
+        "segment": "Champions/VIP",
+        "cohort": "Essential/Entrada",
+        "family": "Outros sneakers",
+        "recency_days": 31,
+        "frequency": 9,
+        "monetary": 4715.91,
+        "rfm": "455",
+        "last_titles": [
+          "Lip Case Rhode By Hailey Bieber Grey Cinza",
+          "Lip Case Rhode By Hailey Bieber Grey Cinza",
+          "Lip Case Rhode By Hailey Bieber Grey Cinza"
+        ]
+      }
+    ],
+    "Champions/VIP | Core Sneaker | Outros sneakers": [
+      {
+        "ref": "a6ce461f212c",
+        "segment": "Champions/VIP",
+        "cohort": "Core Sneaker",
+        "family": "Outros sneakers",
+        "recency_days": 53,
+        "frequency": 2,
+        "monetary": 3599.97,
+        "rfm": "424",
+        "last_titles": [
+          "Camiseta Aimé Leon Dore Form Logo Branco",
+          "Camiseta Aimé Leon Dore Unisphere Preto",
+          "Boné 5 Panel Aimé Leon Dore Unisphere Branco"
+        ]
+      },
+      {
+        "ref": "f87716f01521",
+        "segment": "Champions/VIP",
+        "cohort": "Core Sneaker",
+        "family": "Outros sneakers",
+        "recency_days": 42,
+        "frequency": 3,
+        "monetary": 3549.96,
+        "rfm": "434",
+        "last_titles": [
+          "Pop Mart Labubu The Monsters Coca Cola Series Happy Factor Vinyl Plush Pingente",
+          "Snap-On Rhode Lip Case Black Preto",
+          "Snap-On Rhode Lip Case Grey Cinza"
+        ]
+      },
+      {
+        "ref": "05fa4f0aae61",
+        "segment": "Champions/VIP",
+        "cohort": "Core Sneaker",
+        "family": "Outros sneakers",
+        "recency_days": 34,
+        "frequency": 2,
+        "monetary": 2699.99,
+        "rfm": "424",
+        "last_titles": [
+          "Camiseta Aimé Leon Dore Unisphere Black White Preto",
+          "Kith Retreat Vintage Tee - P",
+          "Camiseta Nude Project Global Soon"
+        ]
+      }
+    ],
+    "Champions/VIP | Essential/Entrada | New Balance": [
+      {
+        "ref": "994600f0cda4",
+        "segment": "Champions/VIP",
+        "cohort": "Essential/Entrada",
+        "family": "New Balance",
+        "recency_days": 26,
+        "frequency": 2,
+        "monetary": 3269.97,
+        "rfm": "524",
+        "last_titles": [
+          "Tênis New Balance 204L Arid Timberwolf Bege",
+          "Jason Markk Repel Spray Impermeabilizante",
+          "Camiseta Saint Studio Classy Suedine Supima Chairs Branco"
+        ]
+      }
+    ],
+    "Leal/recorrente | Lançamento High-End | Nike Dunk": [
+      {
+        "ref": "6c6a87eb3479",
+        "segment": "Leal/recorrente",
+        "cohort": "Lançamento High-End",
+        "family": "Nike Dunk",
+        "recency_days": 113,
+        "frequency": 3,
+        "monetary": 26089.63,
+        "rfm": "335",
+        "last_titles": [
+          "Tênis Nike SB Dunk Low What The P-Rod Colorido",
+          "Tênis Albino & Preto x Nike SB Dunk Low Pearl White Bege",
+          "Tênis Nike Air Jordan 1 Low Black Brown Marrom"
+        ]
+      },
+      {
+        "ref": "a7e84ec253ba",
+        "segment": "Leal/recorrente",
+        "cohort": "Lançamento High-End",
+        "family": "Nike Dunk",
+        "recency_days": 68,
+        "frequency": 2,
+        "monetary": 6669.89,
+        "rfm": "325",
+        "last_titles": [
+          "Tênis Nike Air Jordan 4 Craft Medium Olive Verde",
+          "Tênis Nike Air Dunk Jumbo Medium Olive Verde",
+          "Tênis Nike Air Jordan 4 RM x Nigel Sylvester Driveway Grey Cinza"
+        ]
+      },
+      {
+        "ref": "5e6c5830cb76",
+        "segment": "Leal/recorrente",
+        "cohort": "Lançamento High-End",
+        "family": "Nike Dunk",
+        "recency_days": 96,
+        "frequency": 2,
+        "monetary": 3774.97,
+        "rfm": "324",
+        "last_titles": [
+          "Tênis Nike Dunk Low Smokey Mauve Marrom",
+          "Camiseta Manga Curta Alo Yoga All Day",
+          "Calça Alo Yoga Suit Up Trouser (Long) Preto"
+        ]
+      }
+    ]
+  },
+  "approval_needed_next": [
+    "choose which P1 queue to turn into real campaign preview",
+    "approve whether channel should be Klaviyo, WhatsApp concierge, or both",
+    "before any send: generate recipient list privately, stock-check Tiny by size, preview copy, opt-out/rollback"
+  ]
+}
