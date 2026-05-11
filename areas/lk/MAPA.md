@@ -31,6 +31,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `rotinas/pdp-low-conversion-priority-router-2026-05-11.md` — Fase 6 do LK OS: GA4 + GSC + Merchant em fila de PDP/collection com tráfego alto e baixa conversão, sem writes.
 - `rotinas/p1-seo-cro-approval-packets-2026-05-11.md` — Fase 6 do LK OS: pacotes de aprovação para top P1 com title/meta exatos e recomendações CRO visíveis separadas, sem writes.
 - `rotinas/approved-p1-seo-fields-execution-2026-05-11.md` — execução aprovada por Lucas: 8 SEO title/meta aplicados no Shopify e verificados live, com backup/rollback e sem mudanças visíveis.
+- `rotinas/visible-cro-pending-future-2026-05-11.md` — decisão Lucas: CRO visível dos 8 P1 fica `pending_future`; nenhuma mudança de H1/body/layout/tema foi aplicada.
 - `rotinas/full-sync.md` — sincronizações LK.
 - `rotinas/morning-briefing.md` — briefing matinal.
 - `rotinas/sync-log.md` — auditoria de syncs.

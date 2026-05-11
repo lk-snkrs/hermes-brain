@@ -1,3 +1,10 @@
+## 2026-05-11 — LK Visible CRO Pending Future
+
+- Registrada a decisão de Lucas: `Deixe em pending o cro visível ok? Faremos no futuro`.
+- Criado e executado `scripts/lk_mark_visible_cro_pending_20260511.py`, marcando 8 recomendações de CRO visível como `pending_future` sem aplicar writes.
+- Resultado: 8 itens CRO visível pendentes para futuro, 8 SEO fields já executados/verificados preservados, 0 mudanças visíveis e 0 writes liberados.
+- Artefatos: `areas/lk/rotinas/visible-cro-pending-future-2026-05-11.md`, `reports/lk-visible-cro-pending-future-2026-05-11.md` e `.json`.
+
 ## 2026-05-11 — LK Approved P1 SEO Fields Execution
 
 - Após aprovação de Lucas (`Aprovada as melhorias, seguir`), criado e executado `scripts/lk_apply_approved_p1_seo_fields_20260511.py`, aplicando somente SEO title/meta dos 8 pacotes P1 no Shopify via Admin GraphQL.
