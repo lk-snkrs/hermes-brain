@@ -1,3 +1,12 @@
+## 2026-05-11 — LK Shopify SKUs padronizados para Tiny no catálogo completo
+
+- Após Lucas pedir “seguir” para todos os produtos com SKUs diferentes, comparei o catálogo completo Shopify com o Tiny e executei apenas updates SKU-only com match seguro.
+- Escopo lido: 2.271 produtos Shopify / 15.041 variants; 18.001 produtos Tiny; 15.746 produtos Tiny com `codigo` não-vazio.
+- Resultado: 505 variants Shopify divergentes alinhadas exatamente ao `codigo` Tiny e verificadas live; 0 falhas; 13.254 variants já estavam idênticas antes da execução.
+- Critério de segurança: 238 updates por SKU normalizado único, 11 por SKU normalizado + título/tamanho, 256 por produto+tamanho único; 1.282 variants foram puladas por ambiguidade, ausência de match seguro ou Tiny sem `codigo`.
+- Backup/rollback por `variant_id` registrado em `reports/lk-shopify-tiny-all-sku-diff-plan-2026-05-11.json` e verificação em `reports/lk-shopify-tiny-all-sku-normalization-execution-2026-05-11.json`.
+- Não alterei preço, estoque, título, handle, imagens, coleções, campanhas, clientes, Klaviyo/WhatsApp, fornecedores, Tiny, banco, VPS/Docker ou secrets.
+
 ## 2026-05-11 — LK Shopify SKUs padronizados para Tiny
 
 - Com aprovação explícita do Lucas no Telegram, executei a padronização de SKUs da Shopify para ficarem idênticos ao `codigo` do Tiny em variants com alta confiança e código Tiny não-vazio.

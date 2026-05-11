@@ -138,7 +138,7 @@ Critério de saída:
 
 ### Fase 2 — Stock Intelligence Center
 
-Status: em andamento; primeira fila operacional criada, bloco B saneado e 8 SKUs Shopify padronizados para o `codigo` Tiny após aprovação explícita do Lucas.
+Status: em andamento; primeira fila operacional criada, bloco B saneado e catálogo Shopify padronizado em SKU-only para o `codigo` Tiny quando houve match seguro após aprovação explícita do Lucas.
 
 Objetivo: transformar venda + estoque + lead time em ação de estoque, sem compra automática.
 
@@ -149,11 +149,12 @@ Entregáveis:
 - [x] Lista `mapear SKU Tiny`.
 - [x] Lista `sem SKU no Shopify`.
 - [x] Execução aprovada de padronização SKU Shopify→Tiny para 8 variants com código Tiny não-vazio, backup/rollback e verificação live.
+- [x] Execução aprovada no catálogo completo: 505 variants Shopify divergentes seguras alinhadas ao `codigo` Tiny, 505/505 verificadas live, 1.282 puladas por segurança.
 - [x] Leitura de velocidade de venda vs lead time.
 - [x] Sugestão `repor estoque`, `checar sourcing`, `não agir`.
 - [x] Template de preview para Lucas aprovar reposição/sourcing.
 
-Artefato atual: `areas/lk/rotinas/shopify-sku-padronizacao-tiny-execution-2026-05-11.md` + `areas/lk/rotinas/stock-sku-saneamento-b-e-preview-a-2026-05-11.md`.
+Artefato atual: `areas/lk/rotinas/shopify-sku-padronizacao-tiny-catalogo-2026-05-11.md` + `areas/lk/rotinas/stock-sku-saneamento-b-e-preview-a-2026-05-11.md`.
 
 Critério de saída:
 

@@ -1,0 +1,535 @@
+# LK Shopify SKU padronizado para Tiny — catálogo completo — 2026-05-11
+
+Status: execução aprovada por Lucas e concluída para divergências seguras do catálogo completo.
+
+## Resultado
+- Produtos Shopify lidos: 2271
+- Variants Shopify lidas: 15041
+- Produtos Tiny lidos: 18001
+- Tiny com `codigo` não-vazio: 15746
+- Já idênticos antes da execução: 13254
+- Planejados/alterados ou já aplicados na retomada: 505
+- Sucesso verificado live: 505
+- Falhas: 0
+- Retomados já aplicados pelo run anterior: 272
+- Pulados por segurança: 1282
+
+## Alterações aplicadas / verificadas
+- **Boné 5 Panel Aimé Leon Dore Unisphere Azul — tam. Default Title**: `ALD-8631262-OS` → `AIME11` — match `title_size_unique` — verificado `AIME11`
+- **Calça Alo Yoga Airlift High-Waist 7/8 Line Up Legging Black Preto — tam. XS/PP**: `[vazio]` → `w51154r-2` — match `title_size_unique` — verificado `w51154r-2`
+- **Calça Alo Yoga Airlift High-Waist 7/8 Line Up Legging Black Preto — tam. S/P**: `[vazio]` → `w51154r-3` — match `title_size_unique` — verificado `w51154r-3`
+- **Calça Alo Yoga Airlift High-Waist 7/8 Line Up Legging Black Preto — tam. L/G**: `[vazio]` → `w51154r-5` — match `title_size_unique` — verificado `w51154r-5`
+- **Calça Chino Saint Studio Supima Preto — tam. 36**: `[vazio]` → `ST21` — match `title_size_unique` — verificado `ST21`
+- **Calça Chino Saint Studio Supima Preto — tam. 44**: `[vazio]` → `ST21` — match `title_size_unique` — verificado `ST21`
+- **Calça Saint Studio Chino Supima Caqui — tam. 36**: `[vazio]` → `ST9` — match `title_size_unique` — verificado `ST9`
+- **Calça Saint Studio Chino Supima Caqui — tam. 44**: `[vazio]` → `ST9` — match `title_size_unique` — verificado `ST9`
+- **Calça Saint Studio Wide Alfaiataria Caqui — tam. 36**: `[vazio]` → `ST11` — match `title_size_unique` — verificado `ST11`
+- **Calça Saint Studio Wide Alfaiataria Caqui — tam. 44**: `[vazio]` → `ST11` — match `title_size_unique` — verificado `ST11`
+- **Camisa Manga Curta Boxy Saint Studio Egípcio Listrada Marinho — tam. P/S**: `SST-2772190-S` → `ST34` — match `title_size_unique` — verificado `ST34`
+- **Camisa Manga Curta Boxy Saint Studio Egípcio Listrada Marinho — tam. M**: `SST-2772190-M` → `ST34` — match `title_size_unique` — verificado `ST34`
+- **Camisa Manga Curta Boxy Saint Studio Egípcio Listrada Marinho — tam. G/L**: `SST-2772190-L` → `ST34` — match `title_size_unique` — verificado `ST34`
+- **Camisa Manga Curta Boxy Saint Studio Egípcio Listrada Marinho — tam. GG/XL**: `SST-2772190-XL` → `ST34` — match `title_size_unique` — verificado `ST34`
+- **Camisa Manga Longa Oversized Saint Studio Egípcio Listrada Azul — tam. P/S**: `[vazio]` → `ST35` — match `title_size_unique` — verificado `ST35`
+- **Camisa Manga Longa Oversized Saint Studio Egípcio Listrada Azul — tam. M**: `[vazio]` → `ST35` — match `title_size_unique` — verificado `ST35`
+- **Camisa Manga Longa Oversized Saint Studio Egípcio Listrada Azul — tam. G/L**: `[vazio]` → `ST35` — match `title_size_unique` — verificado `ST35`
+- **Camisa Manga Longa Oversized Saint Studio Egípcio Listrada Azul — tam. GG/XL**: `[vazio]` → `ST35` — match `title_size_unique` — verificado `ST35`
+- **Camisa Represent Clo Crest Antique White Branco — tam. S/P**: `[vazio]` → `Rep16` — match `title_size_unique` — verificado `Rep16`
+- **Camisa Represent Clo Crest Antique White Branco — tam. M/M**: `[vazio]` → `Rep16` — match `title_size_unique` — verificado `Rep16`
+- **Camisa Represent Clo Crest Antique White Branco — tam. L/G**: `[vazio]` → `Rep16` — match `title_size_unique` — verificado `Rep16`
+- **Camisa Represent Clo Crest Antique White Branco — tam. XL/GG**: `[vazio]` → `Rep16` — match `title_size_unique` — verificado `Rep16`
+- **Camiseta Boxy Saint Studio Supima Preto — tam. P/S**: `SST-2837726-S` → `ST33` — match `title_size_unique` — verificado `ST33`
+- **Camiseta Boxy Saint Studio Supima Preto — tam. M**: `SST-2837726-M` → `ST33` — match `title_size_unique` — verificado `ST33`
+- **Camiseta Boxy Saint Studio Supima Preto — tam. G/L**: `SST-2837726-L` → `ST33` — match `title_size_unique` — verificado `ST33`
+- **Camiseta Boxy Saint Studio Supima Preto — tam. GG/XL**: `SST-2837726-XL` → `ST33` — match `title_size_unique` — verificado `ST33`
+- **Camiseta Pace Waffle Knit Off White — tam. P/S**: `PAC-5280094-S` → `PACEWAFFLE` — match `title_size_unique` — verificado `PACEWAFFLE`
+- **Camiseta Pace Waffle Knit Off White — tam. M**: `PAC-5280094-M` → `PACEWAFFLE` — match `title_size_unique` — verificado `PACEWAFFLE`
+- **Camiseta Pace Waffle Knit Off White — tam. GG/XL**: `PAC-5280094-XL` → `PACEWAFFLE` — match `title_size_unique` — verificado `PACEWAFFLE`
+- **Camiseta Represent Clo Grand Vintage Hand Drawn Aged White Branco — tam. S/P**: `[vazio]` → `Rep18` — match `title_size_unique` — verificado `Rep18`
+- **Camiseta Represent Clo Grand Vintage Hand Drawn Aged White Branco — tam. M/M**: `[vazio]` → `Rep18` — match `title_size_unique` — verificado `Rep18`
+- **Camiseta Represent Clo Grand Vintage Hand Drawn Aged White Branco — tam. L/G**: `[vazio]` → `Rep18` — match `title_size_unique` — verificado `Rep18`
+- **Camiseta Represent Clo Grand Vintage Hand Drawn Aged White Branco — tam. XL/GG**: `[vazio]` → `Rep18` — match `title_size_unique` — verificado `Rep18`
+- **Camiseta Represent Clo Owners Club Black Matte Preto — tam. S/P**: `[vazio]` → `Rep14` — match `title_size_unique` — verificado `Rep14`
+- **Camiseta Represent Clo Owners Club Black Matte Preto — tam. M/M**: `[vazio]` → `Rep14` — match `title_size_unique` — verificado `Rep14`
+- **Camiseta Represent Clo Owners Club Black Matte Preto — tam. L/G**: `[vazio]` → `Rep14` — match `title_size_unique` — verificado `Rep14`
+- **Camiseta Represent Clo Owners Club Black Matte Preto — tam. XL/GG**: `[vazio]` → `Rep14` — match `title_size_unique` — verificado `Rep14`
+- **Camiseta Represent Clo Patron Of The Club Washed Grey Cinza — tam. S/P**: `REP-4711006-S` → `Rep13` — match `title_size_unique` — verificado `Rep13`
+- **Camiseta Represent Clo Patron Of The Club Washed Grey Cinza — tam. M/M**: `REP-4711006-M` → `Rep13` — match `title_size_unique` — verificado `Rep13`
+- **Camiseta Represent Clo Patron Of The Club Washed Grey Cinza — tam. L/G**: `REP-4711006-L` → `Rep13` — match `title_size_unique` — verificado `Rep13`
+- **Camiseta Represent Clo Patron Of The Club Washed Grey Cinza — tam. XL/GG**: `REP-4711006-XL` → `Rep13` — match `title_size_unique` — verificado `Rep13`
+- **Camiseta Represent Clo Revere Manor Aged White Branco — tam. S/P**: `REP-4481630-S` → `Rep19` — match `title_size_unique` — verificado `Rep19`
+- **Camiseta Represent Clo Revere Manor Aged White Branco — tam. M/M**: `REP-4481630-M` → `Rep19` — match `title_size_unique` — verificado `Rep19`
+- **Camiseta Represent Clo Revere Manor Aged White Branco — tam. L/G**: `REP-4481630-L` → `Rep19` — match `title_size_unique` — verificado `Rep19`
+- **Camiseta Represent Clo Revere Manor Aged White Branco — tam. XL/GG**: `REP-4481630-XL` → `Rep19` — match `title_size_unique` — verificado `Rep19`
+- **Camiseta Represent Clo Revere Manor Stained Black Preto — tam. S/P**: `REP-4448862-S` → `Rep20` — match `title_size_unique` — verificado `Rep20`
+- **Camiseta Represent Clo Revere Manor Stained Black Preto — tam. M/M**: `REP-4448862-M` → `Rep20` — match `title_size_unique` — verificado `Rep20`
+- **Camiseta Represent Clo Revere Manor Stained Black Preto — tam. L/G**: `REP-4448862-L` → `Rep20` — match `title_size_unique` — verificado `Rep20`
+- **Camiseta Represent Clo Revere Manor Stained Black Preto — tam. XL/GG**: `REP-4448862-XL` → `Rep20` — match `title_size_unique` — verificado `Rep20`
+- **Camiseta Represent Clo Shark Jaws Off Black Preto — tam. S/P**: `REP-4547166-S` → `Rep17` — match `title_size_unique` — verificado `Rep17`
+- **Camiseta Represent Clo Shark Jaws Off Black Preto — tam. M/M**: `REP-4547166-M` → `Rep17` — match `title_size_unique` — verificado `Rep17`
+- **Camiseta Represent Clo Shark Jaws Off Black Preto — tam. L/G**: `REP-4547166-L` → `Rep17` — match `title_size_unique` — verificado `Rep17`
+- **Camiseta Represent Clo Shark Jaws Off Black Preto — tam. XL/GG**: `REP-4547166-XL` → `Rep17` — match `title_size_unique` — verificado `Rep17`
+- **Camiseta Represent Clo Storms In Heaven Black Preto — tam. S/P**: `REP-4645470-S` → `Rep15` — match `title_size_unique` — verificado `Rep15`
+- **Camiseta Represent Clo Storms In Heaven Black Preto — tam. M/M**: `REP-4645470-M` → `Rep15` — match `title_size_unique` — verificado `Rep15`
+- **Camiseta Represent Clo Storms In Heaven Black Preto — tam. L/G**: `REP-4645470-L` → `Rep15` — match `title_size_unique` — verificado `Rep15`
+- **Camiseta Represent Clo Storms In Heaven Black Preto — tam. XL/GG**: `REP-4645470-XL` → `Rep15` — match `title_size_unique` — verificado `Rep15`
+- **Camiseta Saint Studio Classy Suedine Supima Chairs Branco — tam. XS/PP**: `[vazio]` → `ST32` — match `title_size_unique` — verificado `ST32`
+- **Camiseta Supreme "Maradona" Preto — tam. P**: `[vazio]` → `maradonass24blk` — match `title_size_unique` — verificado `maradonass24blk`
+- **Camiseta Supreme "University S/S Top" Branco — tam. P**: `[vazio]` → `universityss24wht` — match `title_size_unique` — verificado `universityss24wht`
+- **Camiseta Supreme x The North Face Branco — tam. GG/XL**: `[vazio]` → `Supthenorthface1` — match `title_size_unique` — verificado `Supthenorthface1`
+- **Camiseta Supreme x The North Face Preto — tam. M**: `[vazio]` → `Supremethenorthface2` — match `title_size_unique` — verificado `Supremethenorthface2`
+- **Camiseta Supreme x The North Face Preto — tam. GG/XL**: `[vazio]` → `Supremethenorthface2` — match `title_size_unique` — verificado `Supremethenorthface2`
+- **Crocs Classic Clog x The Cars Lightning McQueen Vermelho — tam. 35**: `205759610-2` → `205759 610-2` — match `normalized_sku_unique` — verificado `205759 610-2`
+- **Crocs Classic Clog x The Cars Lightning McQueen Vermelho — tam. 36**: `205759610-3` → `205759 610-3` — match `normalized_sku_unique` — verificado `205759 610-3`
+- **Crocs Classic Clog x The Cars Lightning McQueen Vermelho — tam. 37**: `205759610-4` → `205759 610-4` — match `normalized_sku_unique` — verificado `205759 610-4`
+- **Crocs Classic Clog x The Cars Lightning McQueen Vermelho — tam. 38**: `205759610-5` → `205759 610-5` — match `normalized_sku_unique` — verificado `205759 610-5`
+- **Crocs Classic Clog x The Cars Lightning McQueen Vermelho — tam. 39**: `205759610-6` → `205759 610-6` — match `normalized_sku_unique` — verificado `205759 610-6`
+- **Crocs Classic Clog x The Cars Lightning McQueen Vermelho — tam. 40**: `205759610-7` → `205759 610-7` — match `normalized_sku_unique` — verificado `205759 610-7`
+- **Crocs Classic Clog x The Cars Lightning McQueen Vermelho — tam. 41**: `205759610-8` → `205759 610-8` — match `normalized_sku_unique` — verificado `205759 610-8`
+- **Crocs Classic Clog x The Cars Lightning McQueen Vermelho — tam. 42**: `205759610-9` → `205759 610-9` — match `normalized_sku_unique` — verificado `205759 610-9`
+- **Jaqueta Lululemon Define Nulu — tam. True Navy/Gold/Gold / XXS/PPP**: `[vazio]` → `11020158` — match `title_size_unique` — verificado `11020158`
+- **Jaqueta Lululemon Define Nulu — tam. True Navy/Gold/Gold / XS/PP**: `[vazio]` → `11020158` — match `title_size_unique` — verificado `11020158`
+- **Jaqueta Lululemon Define Nulu — tam. True Navy/Gold/Gold / S/P**: `[vazio]` → `11020158` — match `title_size_unique` — verificado `11020158`
+- **Jaqueta Lululemon Define Nulu — tam. True Navy/Gold/Gold / M/M**: `[vazio]` → `11020158` — match `title_size_unique` — verificado `11020158`
+- **Jaqueta Lululemon Define Nulu — tam. True Navy/Gold/Gold / L/G**: `[vazio]` → `11020158` — match `title_size_unique` — verificado `11020158`
+- **Jaqueta Lululemon Define Nulu — tam. Sequoia / XXS/PPP**: `[vazio]` → `11020158` — match `title_size_unique` — verificado `11020158`
+- **Jaqueta Lululemon Define Nulu — tam. Sequoia / XS/PP**: `[vazio]` → `11020158` — match `title_size_unique` — verificado `11020158`
+- **Jaqueta Lululemon Define Nulu — tam. Sequoia / S/P**: `[vazio]` → `11020158` — match `title_size_unique` — verificado `11020158`
+- **Jaqueta Lululemon Define Nulu — tam. Sequoia / M/M**: `[vazio]` → `11020158` — match `title_size_unique` — verificado `11020158`
+- **Jaqueta Lululemon Define Nulu — tam. Sequoia / L/G**: `[vazio]` → `11020158` — match `title_size_unique` — verificado `11020158`
+- **Jersey Off White x Nike "Allover Print Kelly Green" Verde — tam. G**: `[vazio]` → `FQ0997-389` — match `title_size_unique` — verificado `FQ0997-389`
+- **Jersey Off White x Nike "Allover Print Kelly Green" Verde — tam. XG**: `[vazio]` → `FQ0997-389` — match `title_size_unique` — verificado `FQ0997-389`
+- **Jersey Off White x Nike "Allover Print Kelly Green" Verde — tam. XXG**: `[vazio]` → `FQ0997-389` — match `title_size_unique` — verificado `FQ0997-389`
+- **Moletom Essentials Fear of God Jet black SS24 Preto — tam. L/G**: `[vazio]` → `192SP242054F` — match `title_size_unique` — verificado `192SP242054F`
+- **Moletom Nude Project Cult Hoodie Black/Beige Preto — tam. XS/PP**: `NUD-4430814-XS` → `NP20` — match `title_size_unique` — verificado `NP20`
+- **Moletom Nude Project Cult Hoodie Black/Beige Preto — tam. S/P**: `NUD-4430814-S` → `NP20` — match `title_size_unique` — verificado `NP20`
+- **Moletom Nude Project Cult Hoodie Black/Beige Preto — tam. M/M**: `NUD-4430814-M` → `NP20` — match `title_size_unique` — verificado `NP20`
+- **Moletom Nude Project Cult Hoodie Black/Beige Preto — tam. L/G**: `NUD-4430814-L` → `NP20` — match `title_size_unique` — verificado `NP20`
+- **Moletom Nude Project Cult Hoodie Black/Beige Preto — tam. XL/GG**: `NUD-4430814-XL` → `NP20` — match `title_size_unique` — verificado `NP20`
+- **Moletom Nude Project Nude Tour Marshmallow — tam. XS/PP**: `[vazio]` → `NP21-7` — match `title_size_unique` — verificado `NP21-7`
+- **Moletom Nude Project Nude Tour Marshmallow — tam. S/P**: `[vazio]` → `NP21-8` — match `title_size_unique` — verificado `NP21-8`
+- **Moletom Nude Project Nude Tour Marshmallow — tam. M**: `[vazio]` → `NP21-9` — match `title_size_unique` — verificado `NP21-9`
+- **Moletom Nude Project Nude Tour Marshmallow — tam. L/G**: `[vazio]` → `NP21-10` — match `title_size_unique` — verificado `NP21-10`
+- **Moletom Nude Project Nude Tour Marshmallow — tam. XL/GG**: `[vazio]` → `NP21-11` — match `title_size_unique` — verificado `NP21-11`
+- **Moletom Represent Clo Masking Tape Initial Cedar Marrom — tam. S/P**: `REP-7451998-S` → `Rep01` — match `title_size_unique` — verificado `Rep01`
+- **Moletom Represent Clo Masking Tape Initial Cedar Marrom — tam. M/M**: `REP-7451998-M` → `Rep01` — match `title_size_unique` — verificado `Rep01`
+- **Moletom Represent Clo Masking Tape Initial Cedar Marrom — tam. L/G**: `REP-7451998-L` → `Rep01` — match `title_size_unique` — verificado `Rep01`
+- **Moletom Represent Clo Masking Tape Initial Cedar Marrom — tam. XL/GG**: `REP-7451998-XL` → `Rep01` — match `title_size_unique` — verificado `Rep01`
+- **Nike Dunk SB Dunk Low QS BHM Rodeo Verde — tam. 42.5**: `[vazio]` → `HF3058-300` — match `title_size_unique` — verificado `HF3058-300`
+- **Pop Mart Disney Mickey Family Together Series Plush Keychain Single Blind Box Lacrada — tam. Default Title**: `POP-5842654-OS` → `43774078389670` — match `title_size_unique` — verificado `43774078389670`
+- **Pop Mart Labubu The Monsters Coca Cola Series Happy Factor Vinyl Plush Pingente — tam. Default Title**: `LAB-0132830-OS` → `43774078386840` — match `title_size_unique` — verificado `43774078386840`
+- **Regata Saint Studio Canelada Egipcio Off White — tam. PP**: `[vazio]` → `ST27` — match `title_size_unique` — verificado `ST27`
+- **Regata Saint Studio Canelada Egipcio Off White — tam. P**: `[vazio]` → `ST27` — match `title_size_unique` — verificado `ST27`
+- **Regata Saint Studio Canelada Egipcio Off White — tam. G**: `[vazio]` → `ST27` — match `title_size_unique` — verificado `ST27`
+- **Regata Saint Studio Canelada Egipcio Off White — tam. GG**: `[vazio]` → `ST27` — match `title_size_unique` — verificado `ST27`
+- **Shorts Represent Clo Owners Club Flat White Branco — tam. S/P**: `REP-7288158-S` → `Rep06` — match `title_size_unique` — verificado `Rep06`
+- **Shorts Represent Clo Owners Club Flat White Branco — tam. M/M**: `REP-7288158-M` → `Rep06` — match `title_size_unique` — verificado `Rep06`
+- **Shorts Represent Clo Owners Club Flat White Branco — tam. L/G**: `REP-7288158-L` → `Rep06` — match `title_size_unique` — verificado `Rep06`
+- **Shorts Represent Clo Owners Club Flat White Branco — tam. XL/GG**: `REP-7288158-XL` → `Rep06` — match `title_size_unique` — verificado `Rep06`
+- **Tênis A Ma Maniére x Air Force 1 Low 'Triple White' Branco — tam. 30**: `HF4084100-1` → `HF4084 100-1` — match `normalized_sku_unique` — verificado `HF4084 100-1`
+- **Tênis A Ma Maniére x Air Force 1 Low 'Triple White' Branco — tam. 35**: `HF4084100-2` → `HF4084 100-2` — match `normalized_sku_unique` — verificado `HF4084 100-2`
+- **Tênis A Ma Maniére x Air Force 1 Low 'Triple White' Branco — tam. 36**: `HF4084100-3` → `HF4084 100-3` — match `normalized_sku_unique` — verificado `HF4084 100-3`
+- **Tênis A Ma Maniére x Air Force 1 Low 'Triple White' Branco — tam. 37**: `HF4084100-4` → `HF4084 100-4` — match `normalized_sku_unique` — verificado `HF4084 100-4`
+- **Tênis A Ma Maniére x Air Force 1 Low 'Triple White' Branco — tam. 38**: `HF4084100-5` → `HF4084 100-5` — match `normalized_sku_unique` — verificado `HF4084 100-5`
+- **Tênis A Ma Maniére x Air Force 1 Low 'Triple White' Branco — tam. 39**: `HF4084100-6` → `HF4084 100-6` — match `normalized_sku_unique` — verificado `HF4084 100-6`
+- **Tênis A Ma Maniére x Air Force 1 Low 'Triple White' Branco — tam. 40**: `HF4084100-7` → `HF4084 100-7` — match `normalized_sku_unique` — verificado `HF4084 100-7`
+- **Tênis A Ma Maniére x Air Force 1 Low 'Triple White' Branco — tam. 41**: `HF4084100-8` → `HF4084 100-8` — match `normalized_sku_unique` — verificado `HF4084 100-8`
+- **Tênis A Ma Maniére x Air Force 1 Low 'Triple White' Branco — tam. 42**: `HF4084100-9` → `HF4084 100-9` — match `normalized_sku_unique` — verificado `HF4084 100-9`
+- **Tênis A Ma Maniére x Air Force 1 Low 'Triple White' Branco — tam. 43**: `HF4084100-10` → `HF4084 100-10` — match `normalized_sku_unique` — verificado `HF4084 100-10`
+- **Tênis Adidas Campus 00s Crystal White Branco — tam. 34**: `[vazio]` → `GY0042` — match `title_size_unique` — verificado `GY0042`
+- **Tênis Adidas Campus 00s Crystal White Branco — tam. 36**: `[vazio]` → `GY0042` — match `title_size_unique` — verificado `GY0042`
+- **Tênis adidas Gazelle Indoor Alumina Black Bege — tam. 39**: `[vazio]` → `IH4769` — match `title_size_unique` — verificado `IH4769`
+- **Tênis adidas Gazelle Indoor x Clot by Edison Chen Off White Branco — tam. 34**: `[vazio]` → `IH3719` — match `title_size_unique` — verificado `IH3719`
+- **Tênis adidas Gazelle Indor "Beam Pink Solar Red" Rosa — tam. 39**: `[vazio]` → `IE1058-3` — match `title_size_unique` — verificado `IE1058-3`
+- **Tênis adidas Gazelle Indor "Beam Pink Solar Red" Rosa — tam. 33**: `[vazio]` → `IE1058-4` — match `title_size_unique` — verificado `IE1058-4`
+- **Tênis adidas Gazelle x Clot By Edison Chen Halo Ivory Bege — tam. 34**: `[vazio]` → `IH3144` — match `title_size_unique` — verificado `IH3144`
+- **Tênis adidas Gazelle x Clot By Edison Chen Halo Ivory Bege — tam. 35**: `[vazio]` → `IH3144` — match `title_size_unique` — verificado `IH3144`
+- **Tênis adidas Gazelle x Clot By Edison Chen Halo Ivory Bege — tam. 36**: `[vazio]` → `IH3144` — match `title_size_unique` — verificado `IH3144`
+- **Tênis adidas Gazelle x Clot By Edison Chen Halo Ivory Bege — tam. 38**: `[vazio]` → `IH3144` — match `title_size_unique` — verificado `IH3144`
+- **Tênis adidas Handball Spezial Sporty & Rich Pink Rosa — tam. 34**: `[vazio]` → `IH2610` — match `title_size_unique` — verificado `IH2610`
+- **Tênis adidas Handball Spezial Sporty & Rich Pink Rosa — tam. 39**: `[vazio]` → `IH2610` — match `title_size_unique` — verificado `IH2610`
+- **Tênis adidas Samba OG "Core Black Wonder" White Preto — tam. 40**: `[vazio]` → `IE5836-6` — match `title_size_unique` — verificado `IE5836-6`
+- **Tênis adidas Samba OG "Core Black Wonder" White Preto — tam. 41**: `[vazio]` → `IE5836-7` — match `title_size_unique` — verificado `IE5836-7`
+- **Tênis adidas Samba Og Night Navy Gum Azul Marinho — tam. 40**: `[vazio]` → `ID2056-2` — match `title_size_unique` — verificado `ID2056-2`
+- **Tênis adidas Samba x Humanrace Core Black Cinza — tam. 35**: `[vazio]` → `ID9065` — match `title_size_unique` — verificado `ID9065`
+- **Tênis adidas Samba x Humanrace Navy Aluminum Cinza — tam. 39**: `[vazio]` → `IG2088-2` — match `title_size_unique` — verificado `IG2088-2`
+- **Tênis adidas Sambae x KSENIASCHNAIDER Black Multicolor Colorido — tam. 34**: `[vazio]` → `ID0444` — match `title_size_unique` — verificado `ID0444`
+- **Tênis adidas Sambae x KSENIASCHNAIDER Black Multicolor Colorido — tam. 36**: `[vazio]` → `ID0444` — match `title_size_unique` — verificado `ID0444`
+- **Tênis adidas Sambae x KSENIASCHNAIDER Black Multicolor Colorido — tam. 37**: `[vazio]` → `ID0444` — match `title_size_unique` — verificado `ID0444`
+- **Tênis adidas SL 72 RS Cloud White Core Black Spark Branco — tam. 43**: `[vazio]` → `IH4823` — match `title_size_unique` — verificado `IH4823`
+- **Tênis adidas SL 72 RS Cloud White Core Black Spark Branco — tam. 44**: `[vazio]` → `IH4823` — match `title_size_unique` — verificado `IH4823`
+- **Tênis Adidas Tokyo Crew White Floral Embroidery Branco — tam. 34**: `ADI-3400542-34` → `JQ1687` — match `title_size_unique` — verificado `JQ1687`
+- **Tênis Adidas Tokyo Crew White Floral Embroidery Branco — tam. 35**: `ADI-3400542-35` → `JQ1687` — match `title_size_unique` — verificado `JQ1687`
+- **Tênis Adidas Tokyo Crew White Floral Embroidery Branco — tam. 36**: `ADI-3400542-36` → `JQ1687` — match `title_size_unique` — verificado `JQ1687`
+- **Tênis Adidas Tokyo Crew White Floral Embroidery Branco — tam. 37**: `ADI-3400542-37` → `JQ1687` — match `title_size_unique` — verificado `JQ1687`
+- **Tênis Adidas Tokyo Crew White Floral Embroidery Branco — tam. 38**: `ADI-3400542-38` → `JQ1687` — match `title_size_unique` — verificado `JQ1687`
+- **Tênis Adidas Tokyo Crew White Floral Embroidery Branco — tam. 39**: `ADI-3400542-39` → `JQ1687` — match `title_size_unique` — verificado `JQ1687`
+- **Tênis Adidas Tokyo Crew White Floral Embroidery Branco — tam. 40**: `ADI-3400542-40` → `JQ1687` — match `title_size_unique` — verificado `JQ1687`
+- **Tênis Air Jordan 1 Low GS Light Arctic Pink Rosa — tam. 34**: `[vazio]` → `553560800` — match `title_size_unique` — verificado `553560800`
+- **Tênis Air Jordan 1 Low GS Light Arctic Pink Rosa — tam. 36**: `[vazio]` → `553560800` — match `title_size_unique` — verificado `553560800`
+- **Tênis Air Jordan 1 Low GS Light Arctic Pink Rosa — tam. 37**: `[vazio]` → `553560800` — match `title_size_unique` — verificado `553560800`
+- **Tênis Air Jordan 1 Low GS Light Arctic Pink Rosa — tam. 38**: `[vazio]` → `553560800` — match `title_size_unique` — verificado `553560800`
+- **Tênis Air Jordan 1 Low SE "Legend Coffee" Marrom — tam. 42**: `[vazio]` → `FJ3453-200` — match `title_size_unique` — verificado `FJ3453-200`
+- **Tênis Air Jordan 1 Low SE "Legend Coffee" Marrom — tam. 41**: `[vazio]` → `FJ3453-200` — match `title_size_unique` — verificado `FJ3453-200`
+- **Tênis Alo Yoga ALO Runner Espresso Marrom — tam. 39.5**: `[vazio]` → `a0590u_04` — match `title_size_unique` — verificado `a0590u_04`
+- **Tênis Bad Bunny x adidas Campus Light Cloud White Bege — tam. 36**: `[vazio]` → `FZ5823-2` — match `title_size_unique` — verificado `FZ5823-2`
+- **Tênis Crocs Classic Clog x Batman Batmobile Preto — tam. 34**: `210219001-1` → `210219 001-1` — match `normalized_sku_unique` — verificado `210219 001-1`
+- **Tênis Crocs Classic Clog x Batman Batmobile Preto — tam. 35**: `210219001-2` → `210219 001-2` — match `normalized_sku_unique` — verificado `210219 001-2`
+- **Tênis Crocs Classic Clog x Batman Batmobile Preto — tam. 36**: `210219001-3` → `210219 001-3` — match `normalized_sku_unique` — verificado `210219 001-3`
+- **Tênis Crocs Classic Clog x Batman Batmobile Preto — tam. 37**: `210219001-4` → `210219 001-4` — match `normalized_sku_unique` — verificado `210219 001-4`
+- **Tênis Crocs Classic Clog x Batman Batmobile Preto — tam. 38**: `210219001-5` → `210219 001-5` — match `normalized_sku_unique` — verificado `210219 001-5`
+- **Tênis Crocs Classic Clog x Batman Batmobile Preto — tam. 39**: `210219001-6` → `210219 001-6` — match `normalized_sku_unique` — verificado `210219 001-6`
+- **Tênis Crocs Classic Clog x Batman Batmobile Preto — tam. 40**: `210219001-7` → `210219 001-7` — match `normalized_sku_unique` — verificado `210219 001-7`
+- **Tênis Crocs Classic Clog x Batman Batmobile Preto — tam. 41**: `210219001-8` → `210219 001-8` — match `normalized_sku_unique` — verificado `210219 001-8`
+- **Tênis Crocs Classic Clog x Batman Batmobile Preto — tam. 42**: `210219001-9` → `210219 001-9` — match `normalized_sku_unique` — verificado `210219 001-9`
+- **Tênis Crocs Classic Clog x Batman Batmobile Preto — tam. 43**: `210219001-10` → `210219 001-10` — match `normalized_sku_unique` — verificado `210219 001-10`
+- **Tênis Crocs Classic Clog x Batman Batmobile Preto — tam. 44**: `210219001-11` → `210219 001-11` — match `normalized_sku_unique` — verificado `210219 001-11`
+- **Tênis Crocs Classic Clog x DreamWorks Sherek Verde — tam. 35**: `2093733TX-1` → `209373 3TX-1` — match `normalized_sku_unique` — verificado `209373 3TX-1`
+- **Tênis Levi's x Nike Air Max 95 OG Black Anthracite Denim Preto — tam. 34**: `HM4743001` → `HM4743 001` — match `normalized_sku_unique` — verificado `HM4743 001`
+- **Tênis Levi's x Nike Air Max 95 OG Black Anthracite Denim Preto — tam. 35**: `HM4743002` → `HM4743 002` — match `normalized_sku_unique` — verificado `HM4743 002`
+- **Tênis Levi's x Nike Air Max 95 OG Black Anthracite Denim Preto — tam. 36**: `HM4743003` → `HM4743 003` — match `normalized_sku_unique` — verificado `HM4743 003`
+- **Tênis Levi's x Nike Air Max 95 OG Black Anthracite Denim Preto — tam. 37**: `HM4743004` → `HM4743 004` — match `normalized_sku_unique` — verificado `HM4743 004`
+- **Tênis Levi's x Nike Air Max 95 OG Black Anthracite Denim Preto — tam. 38**: `HM4743005` → `HM4743 005` — match `normalized_sku_unique` — verificado `HM4743 005`
+- **Tênis Levi's x Nike Air Max 95 OG Black Anthracite Denim Preto — tam. 39**: `HM4743006` → `HM4743 006` — match `normalized_sku_unique` — verificado `HM4743 006`
+- **Tênis Levi's x Nike Air Max 95 OG Black Anthracite Denim Preto — tam. 40**: `HM4743007` → `HM4743 007` — match `normalized_sku_unique` — verificado `HM4743 007`
+- **Tênis Levi's x Nike Air Max 95 OG Black Anthracite Denim Preto — tam. 41**: `HM4743008` → `HM4743 008` — match `normalized_sku_unique` — verificado `HM4743 008`
+- **Tênis Levi's x Nike Air Max 95 OG Black Anthracite Denim Preto — tam. 42**: `HM4743009` → `HM4743 009` — match `normalized_sku_unique` — verificado `HM4743 009`
+- **Tênis Levi's x Nike Air Max 95 OG Black Anthracite Denim Preto — tam. 43**: `HM47430010` → `HM4743 0010` — match `normalized_sku_unique` — verificado `HM4743 0010`
+- **Tênis Levi's x Nike Air Max 95 OG Black Anthracite Denim Preto — tam. 44**: `HM47430011` → `HM4743 0011` — match `normalized_sku_unique` — verificado `HM4743 0011`
+- **Tênis Levi's x Nike Air Max 95 OG Light Orewood Brown Denim Branco — tam. 34**: `HM4743100` → `HM4743 100` — match `normalized_sku_unique` — verificado `HM4743 100`
+- **Tênis Levi's x Nike Air Max 95 OG Light Orewood Brown Denim Branco — tam. 35**: `HM4743101` → `HM4743 101` — match `normalized_sku_unique` — verificado `HM4743 101`
+- **Tênis Levi's x Nike Air Max 95 OG Light Orewood Brown Denim Branco — tam. 36**: `HM4743102` → `HM4743 102` — match `normalized_sku_unique` — verificado `HM4743 102`
+- **Tênis Levi's x Nike Air Max 95 OG Light Orewood Brown Denim Branco — tam. 37**: `HM4743103` → `HM4743 103` — match `normalized_sku_unique` — verificado `HM4743 103`
+- **Tênis Levi's x Nike Air Max 95 OG Light Orewood Brown Denim Branco — tam. 38**: `HM4743104` → `HM4743 104` — match `normalized_sku_unique` — verificado `HM4743 104`
+- **Tênis Levi's x Nike Air Max 95 OG Light Orewood Brown Denim Branco — tam. 39**: `HM4743105` → `HM4743 105` — match `normalized_sku_unique` — verificado `HM4743 105`
+- **Tênis Levi's x Nike Air Max 95 OG Light Orewood Brown Denim Branco — tam. 40**: `HM4743106` → `HM4743 106` — match `normalized_sku_unique` — verificado `HM4743 106`
+- **Tênis Levi's x Nike Air Max 95 OG Light Orewood Brown Denim Branco — tam. 41**: `HM4743107` → `HM4743 107` — match `normalized_sku_unique` — verificado `HM4743 107`
+- **Tênis Levi's x Nike Air Max 95 OG Light Orewood Brown Denim Branco — tam. 42**: `HM4743108` → `HM4743 108` — match `normalized_sku_unique` — verificado `HM4743 108`
+- **Tênis Levi's x Nike Air Max 95 OG Light Orewood Brown Denim Branco — tam. 43**: `HM4743109` → `HM4743 109` — match `normalized_sku_unique` — verificado `HM4743 109`
+- **Tênis Levi's x Nike Air Max 95 OG Light Orewood Brown Denim Branco — tam. 44**: `HM4743110` → `HM4743 110` — match `normalized_sku_unique` — verificado `HM4743 110`
+- **Tênis Levi's x Nike Air Max 95 OG Obsidian Denim Azul — tam. 34**: `HM4743400` → `HM4743 400` — match `normalized_sku_unique` — verificado `HM4743 400`
+- **Tênis Levi's x Nike Air Max 95 OG Obsidian Denim Azul — tam. 35**: `HM4743401` → `HM4743 401` — match `normalized_sku_unique` — verificado `HM4743 401`
+- **Tênis Levi's x Nike Air Max 95 OG Obsidian Denim Azul — tam. 36**: `HM4743402` → `HM4743 402` — match `normalized_sku_unique` — verificado `HM4743 402`
+- **Tênis Levi's x Nike Air Max 95 OG Obsidian Denim Azul — tam. 37**: `HM4743403` → `HM4743 403` — match `normalized_sku_unique` — verificado `HM4743 403`
+- **Tênis Levi's x Nike Air Max 95 OG Obsidian Denim Azul — tam. 38**: `HM4743404` → `HM4743 404` — match `normalized_sku_unique` — verificado `HM4743 404`
+- **Tênis Levi's x Nike Air Max 95 OG Obsidian Denim Azul — tam. 39**: `HM4743405` → `HM4743 405` — match `normalized_sku_unique` — verificado `HM4743 405`
+- **Tênis Levi's x Nike Air Max 95 OG Obsidian Denim Azul — tam. 40**: `HM4743406` → `HM4743 406` — match `normalized_sku_unique` — verificado `HM4743 406`
+- **Tênis Levi's x Nike Air Max 95 OG Obsidian Denim Azul — tam. 41**: `HM4743407` → `HM4743 407` — match `normalized_sku_unique` — verificado `HM4743 407`
+- **Tênis Levi's x Nike Air Max 95 OG Obsidian Denim Azul — tam. 42**: `HM4743408` → `HM4743 408` — match `normalized_sku_unique` — verificado `HM4743 408`
+- **Tênis Levi's x Nike Air Max 95 OG Obsidian Denim Azul — tam. 43**: `HM4743409` → `HM4743 409` — match `normalized_sku_unique` — verificado `HM4743 409`
+- **Tênis Levi's x Nike Air Max 95 OG Obsidian Denim Azul — tam. 44**: `HM4743410` → `HM4743 410` — match `normalized_sku_unique` — verificado `HM4743 410`
+- **Tênis New Balance 1906L Khaki Bege — tam. 40.5**: `[vazio]` → `U1906LNU` — match `title_size_unique` — verificado `U1906LNU`
+- **Tênis New Balance 1906L Khaki Bege — tam. 37.5**: `[vazio]` → `U1906LNU` — match `title_size_unique` — verificado `U1906LNU`
+- **Tênis New Balance 1906L Preto Couro Mesh Preto — tam. 36**: `[vazio]` → `u1906lbn3` — match `title_size_unique` — verificado `u1906lbn3`
+- **Tênis New Balance 1906L Preto Couro Mesh Preto — tam. 37**: `[vazio]` → `u1906lbn4` — match `title_size_unique` — verificado `u1906lbn4`
+- **Tênis New Balance 1906L Preto Couro Mesh Preto — tam. 38**: `[vazio]` → `u1906lbn5` — match `title_size_unique` — verificado `u1906lbn5`
+- **Tênis New Balance 1906L Preto Couro Mesh Preto — tam. 39**: `[vazio]` → `u1906lbn6` — match `title_size_unique` — verificado `u1906lbn6`
+- **Tênis New Balance 1906L Preto Couro Mesh Preto — tam. 40**: `[vazio]` → `u1906lbn7` — match `title_size_unique` — verificado `u1906lbn7`
+- **Tênis New Balance 1906L Preto Couro Mesh Preto — tam. 41**: `[vazio]` → `u1906lbn8` — match `title_size_unique` — verificado `u1906lbn8`
+- **Tênis New Balance 1906L Preto Couro Mesh Preto — tam. 42**: `[vazio]` → `u1906lbn9` — match `title_size_unique` — verificado `u1906lbn9`
+- **Tênis New Balance 1906L Preto Couro Mesh Preto — tam. 43**: `[vazio]` → `u1906lbn10` — match `title_size_unique` — verificado `u1906lbn10`
+- **Tênis New Balance 1906L Preto Couro Mesh Preto — tam. 44**: `[vazio]` → `u1906lbn11` — match `title_size_unique` — verificado `u1906lbn11`
+- **Tênis New Balance 9060 Kids Raincloud Cinza (Infantil) — tam. 22**: `[vazio]` → `PC9060GY` — match `title_size_unique` — verificado `PC9060GY`
+- **Tênis New Balance 9060 Kids Raincloud Cinza (Infantil) — tam. 23**: `[vazio]` → `PC9060GY` — match `title_size_unique` — verificado `PC9060GY`
+- **Tênis New Balance 9060 Kids Raincloud Cinza (Infantil) — tam. 24**: `[vazio]` → `PC9060GY` — match `title_size_unique` — verificado `PC9060GY`
+- **Tênis New Balance 9060 Kids Raincloud Cinza (Infantil) — tam. 25**: `[vazio]` → `PC9060GY` — match `title_size_unique` — verificado `PC9060GY`
+- **Tênis New Balance 9060 Kids Raincloud Cinza (Infantil) — tam. 26**: `[vazio]` → `PC9060GY` — match `title_size_unique` — verificado `PC9060GY`
+- **Tênis New Balance 9060 Kids Raincloud Cinza (Infantil) — tam. 27**: `[vazio]` → `PC9060GY` — match `title_size_unique` — verificado `PC9060GY`
+- **Tênis New Balance 9060 Kids Raincloud Cinza (Infantil) — tam. 29**: `[vazio]` → `PC9060GY` — match `title_size_unique` — verificado `PC9060GY`
+- **Tênis New Balance 9060 Kids Raincloud Cinza (Infantil) — tam. 30**: `[vazio]` → `PC9060GY` — match `title_size_unique` — verificado `PC9060GY`
+- **Tênis Nike Air Dunk Jumbo Medium Olive Verde — tam. 38**: `[vazio]` → `DV0821200-5` — match `title_size_unique` — verificado `DV0821200-5`
+- **Tênis Nike Air Dunk Jumbo Medium Olive Verde — tam. 39**: `[vazio]` → `DV0821200-6` — match `title_size_unique` — verificado `DV0821200-6`
+- **Tênis Nike Air Dunk Jumbo Medium Olive Verde — tam. 42**: `[vazio]` → `DV0821200-7` — match `title_size_unique` — verificado `DV0821200-7`
+- **Tênis Nike Air Dunk Jumbo Medium Olive Verde — tam. 43**: `[vazio]` → `DV0821200-8` — match `title_size_unique` — verificado `DV0821200-8`
+- **Tênis Nike Air Dunk Jumbo Medium Olive Verde — tam. 44**: `[vazio]` → `DV0821200-4` — match `title_size_unique` — verificado `DV0821200-4`
+- **Tênis Nike Air Force 1 Low LXX "Vachetta Tan Flax" Marrom — tam. 37**: `[vazio]` → `DX1193200` — match `title_size_unique` — verificado `DX1193200`
+- **Tênis Nike Air Force 1 Low x Nocta 'Certified Lover Boy' Branco — tam. 34**: `CZ8065100-1` → `CZ8065 100-1` — match `normalized_sku_unique` — verificado `CZ8065 100-1`
+- **Tênis Nike Air Force 1 Low x Nocta 'Certified Lover Boy' Branco — tam. 35**: `CZ8065100-2` → `CZ8065 100-2` — match `normalized_sku_unique` — verificado `CZ8065 100-2`
+- **Tênis Nike Air Force 1 Low x Nocta 'Certified Lover Boy' Branco — tam. 36**: `CZ8065100-3` → `CZ8065 100-3` — match `normalized_sku_unique` — verificado `CZ8065 100-3`
+- **Tênis Nike Air Force 1 Low x Nocta 'Certified Lover Boy' Branco — tam. 37**: `CZ8065100-4` → `CZ8065 100-4` — match `normalized_sku_unique` — verificado `CZ8065 100-4`
+- **Tênis Nike Air Force 1 Low x Nocta 'Certified Lover Boy' Branco — tam. 38**: `CZ8065100-5` → `CZ8065 100-5` — match `normalized_sku_unique` — verificado `CZ8065 100-5`
+- **Tênis Nike Air Force 1 Low x Nocta 'Certified Lover Boy' Branco — tam. 39**: `CZ8065100-6` → `CZ8065 100-6` — match `normalized_sku_unique` — verificado `CZ8065 100-6`
+- **Tênis Nike Air Force 1 Low x Nocta 'Certified Lover Boy' Branco — tam. 40**: `CZ8065100-7` → `CZ8065 100-7` — match `normalized_sku_unique` — verificado `CZ8065 100-7`
+- **Tênis Nike Air Force 1 Low x Nocta 'Certified Lover Boy' Branco — tam. 41**: `CZ8065100-8` → `CZ8065 100-8` — match `normalized_sku_unique` — verificado `CZ8065 100-8`
+- **Tênis Nike Air Force 1 Low x Nocta 'Certified Lover Boy' Branco — tam. 42**: `CZ8065100-9` → `CZ8065 100-9` — match `normalized_sku_unique` — verificado `CZ8065 100-9`
+- **Tênis Nike Air Force 1 Low x Nocta 'Certified Lover Boy' Branco — tam. 43**: `CZ8065100-10` → `CZ8065 100-10` — match `normalized_sku_unique` — verificado `CZ8065 100-10`
+- **Tênis Nike Air Force 1 Low x Nocta 'Certified Lover Boy' Branco — tam. 44**: `CZ8065100-11` → `CZ8065 100-11` — match `normalized_sku_unique` — verificado `CZ8065 100-11`
+- **Tênis Nike Air Force 1 Low x Supreme Wheat Marrom — tam. 38**: `[vazio]` → `DN1555-200` — match `title_size_unique` — verificado `DN1555-200`
+- **Tênis Nike Air Force 1 Low x Supreme Wheat Marrom — tam. 39**: `[vazio]` → `DN1555-200` — match `title_size_unique` — verificado `DN1555-200`
+- **Tênis Nike Air Jordan 1 High Next Chapter Vermelho — tam. 35**: `DV1748601-1` → `DV1748601]-1` — match `normalized_sku_unique` — verificado `DV1748601]-1`
+- **Tênis Nike Air Jordan 1 High Next Chapter Vermelho — tam. 36**: `DV1748601-2` → `DV1748601]-2` — match `normalized_sku_unique` — verificado `DV1748601]-2`
+- **Tênis Nike Air Jordan 1 High Next Chapter Vermelho — tam. 37**: `DV1748601-3` → `DV1748601]-3` — match `normalized_sku_unique` — verificado `DV1748601]-3`
+- **Tênis Nike Air Jordan 1 High Next Chapter Vermelho — tam. 38**: `DV1748601-4` → `DV1748601]-4` — match `normalized_sku_unique` — verificado `DV1748601]-4`
+- **Tênis Nike Air Jordan 1 High Next Chapter Vermelho — tam. 39**: `DV1748601-5` → `DV1748601]-5` — match `normalized_sku_unique` — verificado `DV1748601]-5`
+- **Tênis Nike Air Jordan 1 High Next Chapter Vermelho — tam. 40**: `DV1748601-6` → `DV1748601]-6` — match `normalized_sku_unique` — verificado `DV1748601]-6`
+- **Tênis Nike Air Jordan 1 High Next Chapter Vermelho — tam. 41**: `DV1748601-7` → `DV1748601]-7` — match `normalized_sku_unique` — verificado `DV1748601]-7`
+- **Tênis Nike Air Jordan 1 High Next Chapter Vermelho — tam. 42**: `DV1748601-8` → `DV1748601]-8` — match `normalized_sku_unique` — verificado `DV1748601]-8`
+- **Tênis Nike Air Jordan 1 High Next Chapter Vermelho — tam. 43**: `DV1748601-9` → `DV1748601]-9` — match `normalized_sku_unique` — verificado `DV1748601]-9`
+- **Tênis Nike Air Jordan 1 High OG "Black White" Preto — tam. 42**: `[vazio]` → `DZ5485-010` — match `title_size_unique` — verificado `DZ5485-010`
+- **Tênis Nike Air Jordan 1 Low Bordeaux Roxo — tam. 41**: `[vazio]` → `DC0774-161` — match `title_size_unique` — verificado `DC0774-161`
+- **Tênis Nike Air Jordan 1 Low Canyon Rust Colorido — tam. 36**: `[vazio]` → `DC07740421` — match `title_size_unique` — verificado `DC07740421`
+- **Tênis Nike Air Jordan 1 Low Coral Bege — tam. 34**: `IB8859101-1` → `IB8859 101-1` — match `normalized_sku_unique` — verificado `IB8859 101-1`
+- **Tênis Nike Air Jordan 1 Low Coral Bege — tam. 35**: `IB8859101-2` → `IB8859 101-2` — match `normalized_sku_unique` — verificado `IB8859 101-2`
+- **Tênis Nike Air Jordan 1 Low Coral Bege — tam. 36**: `IB8859101-3` → `IB8859 101-3` — match `normalized_sku_unique` — verificado `IB8859 101-3`
+- **Tênis Nike Air Jordan 1 Low Coral Bege — tam. 37**: `IB8859101-4` → `IB8859 101-4` — match `normalized_sku_unique` — verificado `IB8859 101-4`
+- **Tênis Nike Air Jordan 1 Low Coral Bege — tam. 38**: `IB8859101-5` → `IB8859 101-5` — match `normalized_sku_unique` — verificado `IB8859 101-5`
+- **Tênis Nike Air Jordan 1 Low Coral Bege — tam. 39**: `IB8859101-6` → `IB8859 101-6` — match `normalized_sku_unique` — verificado `IB8859 101-6`
+- **Tênis Nike Air Jordan 1 Low Coral Bege — tam. 40**: `IB8859101-7` → `IB8859 101-7` — match `normalized_sku_unique` — verificado `IB8859 101-7`
+- **Tênis Nike Air Jordan 1 Low Coral Bege — tam. 41**: `IB8859101-8` → `IB8859 101-8` — match `normalized_sku_unique` — verificado `IB8859 101-8`
+- **Tênis Nike Air Jordan 1 Low Coral Bege — tam. 42**: `IB8859101-9` → `IB8859 101-9` — match `normalized_sku_unique` — verificado `IB8859 101-9`
+- **Tênis Nike Air Jordan 1 Low Crater Grey University Blue Preto — tam. Default Title**: `DM4657004` → `DM4657004-41` — match `title_size_unique` — verificado `DM4657004-41`
+- **Tênis Nike Air Jordan 1 Low Light Madder Root Rosa — tam. 38**: `[vazio]` → `dc0774-800` — match `title_size_unique` — verificado `dc0774-800`
+- **Tênis Nike Air Jordan 1 Low Light Smoke Grey Cinza — tam. 44**: `[vazio]` → `553558030` — match `title_size_unique` — verificado `553558030`
+- **Tênis Nike Air Jordan 1 Low Og Year of Snake 2025 Cinza — tam. 34**: `HF3144100-1` → `HF3144 100-1` — match `normalized_sku_plus_title_size` — verificado `HF3144 100-1`
+- **Tênis Nike Air Jordan 1 Low Og Year of Snake 2025 Cinza — tam. 35**: `HF3144100-2` → `HF3144 100-2` — match `normalized_sku_plus_title_size` — verificado `HF3144 100-2`
+- **Tênis Nike Air Jordan 1 Low Og Year of Snake 2025 Cinza — tam. 36**: `HF3144100-3` → `HF3144 100-3` — match `normalized_sku_plus_title_size` — verificado `HF3144 100-3`
+- **Tênis Nike Air Jordan 1 Low Og Year of Snake 2025 Cinza — tam. 37**: `HF3144100-4` → `HF3144 100-4` — match `normalized_sku_plus_title_size` — verificado `HF3144 100-4`
+- **Tênis Nike Air Jordan 1 Low Og Year of Snake 2025 Cinza — tam. 38**: `HF3144100-5` → `HF3144 100-5` — match `normalized_sku_plus_title_size` — verificado `HF3144 100-5`
+- **Tênis Nike Air Jordan 1 Low Og Year of Snake 2025 Cinza — tam. 39**: `HF3144100-6` → `HF3144 100-6` — match `normalized_sku_plus_title_size` — verificado `HF3144 100-6`
+- **Tênis Nike Air Jordan 1 Low Og Year of Snake 2025 Cinza — tam. 40**: `HF3144100-7` → `HF3144 100-7` — match `normalized_sku_plus_title_size` — verificado `HF3144 100-7`
+- **Tênis Nike Air Jordan 1 Low Og Year of Snake 2025 Cinza — tam. 41**: `HF3144100-8` → `HF3144 100-8` — match `normalized_sku_plus_title_size` — verificado `HF3144 100-8`
+- **Tênis Nike Air Jordan 1 Low Og Year of Snake 2025 Cinza — tam. 42**: `HF3144100-9` → `HF3144 100-9` — match `normalized_sku_plus_title_size` — verificado `HF3144 100-9`
+- **Tênis Nike Air Jordan 1 Low Og Year of Snake 2025 Cinza — tam. 43**: `HF3144100-10` → `HF3144 100-10` — match `normalized_sku_plus_title_size` — verificado `HF3144 100-10`
+- **Tênis Nike Air Jordan 1 Low Og Year of Snake 2025 Cinza — tam. 44**: `HF3144100-11` → `HF3144 100-11` — match `normalized_sku_plus_title_size` — verificado `HF3144 100-11`
+- **Tênis Nike Air Jordan 1 Low Sail Soft Pearl Sequins Bege — tam. 34**: `IH7323100` → `IH7323 100` — match `normalized_sku_unique` — verificado `IH7323 100`
+- **Tênis Nike Air Jordan 1 Low Sail Soft Pearl Sequins Bege — tam. 35**: `IH7323101` → `IH7323 101` — match `normalized_sku_unique` — verificado `IH7323 101`
+- **Tênis Nike Air Jordan 1 Low Sail Soft Pearl Sequins Bege — tam. 36**: `IH7323102` → `IH7323 102` — match `normalized_sku_unique` — verificado `IH7323 102`
+- **Tênis Nike Air Jordan 1 Low Sail Soft Pearl Sequins Bege — tam. 37**: `IH7323103` → `IH7323 103` — match `normalized_sku_unique` — verificado `IH7323 103`
+- **Tênis Nike Air Jordan 1 Low Sail Soft Pearl Sequins Bege — tam. 38**: `IH7323104` → `IH7323 104` — match `normalized_sku_unique` — verificado `IH7323 104`
+- **Tênis Nike Air Jordan 1 Low Sail Soft Pearl Sequins Bege — tam. 39**: `IH7323105` → `IH7323 105` — match `normalized_sku_unique` — verificado `IH7323 105`
+- **Tênis Nike Air Jordan 1 Low Sail Soft Pearl Sequins Bege — tam. 40**: `IH7323106` → `IH7323 106` — match `normalized_sku_unique` — verificado `IH7323 106`
+- **Tênis Nike Air Jordan 1 Low SE Craft Inside Out Obsidian Azul — tam. 38**: `[vazio]` → `DR8867400-5` — match `title_size_unique` — verificado `DR8867400-5`
+- **Tênis Nike Air Jordan 1 Low SE Craft Inside Out Obsidian Azul — tam. 39**: `[vazio]` → `DR8867400-4` — match `title_size_unique` — verificado `DR8867400-4`
+- **Tênis Nike Air Jordan 1 Low White University Red Branco — tam. 34**: `[vazio]` → `553560118` — match `title_size_unique` — verificado `553560118`
+- **Tênis Nike Air Jordan 1 Low White University Red Branco — tam. 36**: `[vazio]` → `553560118` — match `title_size_unique` — verificado `553560118`
+- **Tênis Nike Air Jordan 1 Low White University Red Branco — tam. 37**: `[vazio]` → `553560118` — match `title_size_unique` — verificado `553560118`
+- **Tênis Nike Air Jordan 1 Low White University Red Branco — tam. 38**: `[vazio]` → `553560118` — match `title_size_unique` — verificado `553560118`
+- **Tênis Nike Air Jordan 1 Low x Paris Saint Germain Sail and Off Noir Preto — tam. 37**: `[vazio]` → `HF8828100` — match `title_size_unique` — verificado `HF8828100`
+- **Tênis Nike Air Jordan 1 Low x Paris Saint Germain Sail and Off Noir Preto — tam. 38**: `[vazio]` → `HF8828100` — match `title_size_unique` — verificado `HF8828100`
+- **Tênis Nike Air Jordan 1 Mid Lakers Roxo/Amarelo — tam. Default Title**: `DQ8426517` → `DQ8426517-36` — match `title_size_unique` — verificado `DQ8426517-36`
+- **Tênis Nike Air Jordan 1 Mid Rookie Season Branco/Vermelho — tam. 38**: `[vazio]` → `DR6496116` — match `title_size_unique` — verificado `DR6496116`
+- **Tênis Nike Air Jordan 1 Mid Rookie Season Branco/Vermelho — tam. 39**: `[vazio]` → `DR6496116` — match `title_size_unique` — verificado `DR6496116`
+- **Tênis Nike Air Jordan 1 Mid Rookie Season Branco/Vermelho — tam. 40**: `[vazio]` → `DR6496116` — match `title_size_unique` — verificado `DR6496116`
+- **Tênis Nike Air Jordan 1 Mid SE Berry Pink Rosa — tam. 35**: `[vazio]` → `DC7267500` — match `title_size_unique` — verificado `DC7267500`
+- **Tênis Nike Air Jordan 1 Mid SE Berry Pink Rosa — tam. 36**: `[vazio]` → `DC7267500` — match `title_size_unique` — verificado `DC7267500`
+- **Tênis Nike Air Jordan 1 Mid SE Berry Pink Rosa — tam. 37**: `[vazio]` → `DC7267500` — match `title_size_unique` — verificado `DC7267500`
+- **Tênis Nike Air Jordan 1 Mid SE Berry Pink Rosa — tam. 39**: `[vazio]` → `DC7267500` — match `title_size_unique` — verificado `DC7267500`
+- **Tênis Nike Air Jordan 1 Mid SE Light Iron Ore Cinza — tam. Default Title**: `DN4045001` → `DN4045001-41` — match `title_size_unique` — verificado `DN4045001-41`
+- **Tênis Nike Air Jordan 1 Retro High Fragment Design x Travis Scott Couro Branco Azul — tam. 34**: `DH3227105` → `DH3227 105` — match `normalized_sku_unique` — verificado `DH3227 105`
+- **Tênis Nike Air Jordan 1 Retro High Fragment Design x Travis Scott Couro Branco Azul — tam. 35**: `DH3227106` → `DH3227 106` — match `normalized_sku_unique` — verificado `DH3227 106`
+- **Tênis Nike Air Jordan 1 Retro High Fragment Design x Travis Scott Couro Branco Azul — tam. 36**: `DH3227107` → `DH3227 107` — match `normalized_sku_unique` — verificado `DH3227 107`
+- **Tênis Nike Air Jordan 1 Retro High Fragment Design x Travis Scott Couro Branco Azul — tam. 37**: `DH3227108` → `DH3227 108` — match `normalized_sku_unique` — verificado `DH3227 108`
+- **Tênis Nike Air Jordan 1 Retro High Fragment Design x Travis Scott Couro Branco Azul — tam. 38**: `DH3227109` → `DH3227 109` — match `normalized_sku_unique` — verificado `DH3227 109`
+- **Tênis Nike Air Jordan 1 Retro High Fragment Design x Travis Scott Couro Branco Azul — tam. 39**: `DH3227110` → `DH3227 110` — match `normalized_sku_unique` — verificado `DH3227 110`
+- **Tênis Nike Air Jordan 1 Retro High Fragment Design x Travis Scott Couro Branco Azul — tam. 40**: `DH3227111` → `DH3227 111` — match `normalized_sku_unique` — verificado `DH3227 111`
+- **Tênis Nike Air Jordan 1 Retro High Fragment Design x Travis Scott Couro Branco Azul — tam. 41**: `DH3227112` → `DH3227 112` — match `normalized_sku_unique` — verificado `DH3227 112`
+- **Tênis Nike Air Jordan 1 Retro High Fragment Design x Travis Scott Couro Branco Azul — tam. 42**: `DH3227113` → `DH3227 113` — match `normalized_sku_unique` — verificado `DH3227 113`
+- **Tênis Nike Air Jordan 1 Retro High Fragment Design x Travis Scott Couro Branco Azul — tam. 43**: `DH3227114` → `DH3227 114` — match `normalized_sku_unique` — verificado `DH3227 114`
+- **Tênis Nike Air Jordan 1 Retro High Fragment Design x Travis Scott Couro Branco Azul — tam. 44**: `DH3227115` → `DH3227 115` — match `normalized_sku_unique` — verificado `DH3227 115`
+- **Tênis Nike Air Jordan 1 Retro High Fragment Design x Travis Scott Couro Branco Azul — tam. 45**: `DH3227116` → `DH3227 116` — match `normalized_sku_unique` — verificado `DH3227 116`
+- **Tênis Nike Air Jordan 1 Retro High OG 'Satin Shadow' Prateado — tam. 34**: `FD4810010-1` → `FD4810 010-1` — match `normalized_sku_unique` — verificado `FD4810 010-1`
+- **Tênis Nike Air Jordan 1 Retro High OG 'Satin Shadow' Prateado — tam. 35**: `FD4810010-2` → `FD4810 010-2` — match `normalized_sku_unique` — verificado `FD4810 010-2`
+- **Tênis Nike Air Jordan 1 Retro High OG 'Satin Shadow' Prateado — tam. 36**: `FD4810010-3` → `FD4810 010-3` — match `normalized_sku_unique` — verificado `FD4810 010-3`
+- **Tênis Nike Air Jordan 1 Retro High OG 'Satin Shadow' Prateado — tam. 37**: `FD4810010-4` → `FD4810 010-4` — match `normalized_sku_unique` — verificado `FD4810 010-4`
+- **Tênis Nike Air Jordan 1 Retro High OG 'Satin Shadow' Prateado — tam. 38**: `FD4810010-5` → `FD4810 010-5` — match `normalized_sku_unique` — verificado `FD4810 010-5`
+- **Tênis Nike Air Jordan 1 Retro High OG 'Satin Shadow' Prateado — tam. 39**: `FD4810010-6` → `FD4810 010-6` — match `normalized_sku_unique` — verificado `FD4810 010-6`
+- **Tênis Nike Air Jordan 1 Retro High OG 'Satin Shadow' Prateado — tam. 40**: `FD4810010-7` → `FD4810 010-7` — match `normalized_sku_unique` — verificado `FD4810 010-7`
+- **Tênis Nike Air Jordan 1 Retro High OG 'Satin Shadow' Prateado — tam. 41**: `FD4810010-8` → `FD4810 010-8` — match `normalized_sku_unique` — verificado `FD4810 010-8`
+- **Tênis Nike Air Jordan 1 Retro High OG 'Satin Shadow' Prateado — tam. 42**: `FD4810010-9` → `FD4810 010-9` — match `normalized_sku_unique` — verificado `FD4810 010-9`
+- **Tênis Nike Air Jordan 1 Retro High OG 'Satin Shadow' Prateado — tam. 43**: `FD4810010-10` → `FD4810 010-10` — match `normalized_sku_unique` — verificado `FD4810 010-10`
+- **Tênis Nike Air Jordan 1 Retro High OG 'Satin Shadow' Prateado — tam. 44**: `FD4810010-11` → `FD4810 010-11` — match `normalized_sku_unique` — verificado `FD4810 010-11`
+- **Tênis Nike Air Jordan 1 Retro High OG 'UNC Reimagined' Azul — tam. 45**: `[vazio]` → `dz5485-4021` — match `title_size_unique` — verificado `dz5485-4021`
+- **Tênis Nike Air Jordan 1 Retro Low OG 'Black Cement' Preto — tam. 44**: `[vazio]` → `CZ0790001` — match `title_size_unique` — verificado `CZ0790001`
+- **Tênis Nike Air Jordan 1 x Travis Scott Retro Low OG SP Nike Sail Military Blue Couro — tam. 38**: `DM7866104` → `DM7866 104` — match `normalized_sku_unique` — verificado `DM7866 104`
+- **Tênis Nike Air Jordan 1 x Travis Scott Retro Low OG SP Nike Sail Military Blue Couro — tam. 39**: `DM7866105` → `DM7866 105` — match `normalized_sku_unique` — verificado `DM7866 105`
+- **Tênis Nike Air Jordan 1 x Travis Scott Retro Low OG SP Nike Sail Military Blue Couro — tam. 40**: `DM7866106` → `DM7866 106` — match `normalized_sku_unique` — verificado `DM7866 106`
+- **Tênis Nike Air Jordan 1 x Travis Scott Retro Low OG SP Nike Sail Military Blue Couro — tam. 41**: `DM7866107` → `DM7866 107` — match `normalized_sku_unique` — verificado `DM7866 107`
+- **Tênis Nike Air Jordan 1 x Travis Scott Retro Low OG SP Nike Sail Military Blue Couro — tam. 42**: `DM7866108` → `DM7866 108` — match `normalized_sku_unique` — verificado `DM7866 108`
+- **Tênis Nike Air Jordan 1 x Travis Scott Retro Low OG SP Nike Sail Military Blue Couro — tam. 43**: `DM7866109` → `DM7866 109` — match `normalized_sku_unique` — verificado `DM7866 109`
+- **Tênis Nike Air Jordan 1 x Travis Scott Retro Low OG SP Nike Sail Military Blue Couro — tam. 44**: `DM7866110` → `DM7866 110` — match `normalized_sku_unique` — verificado `DM7866 110`
+- **Tênis Nike Air Rift 'Triple Black' Preto — tam. 33.5/34**: `HM8288001-1` → `HM8288 001-1` — match `normalized_sku_unique` — verificado `HM8288 001-1`
+- **Tênis Nike Air Rift 'Triple Black' Preto — tam. 35/35.5**: `HM8288001-2` → `HM8288 001-2` — match `normalized_sku_unique` — verificado `HM8288 001-2`
+- **Tênis Nike Air Rift 'Triple Black' Preto — tam. 36/37**: `HM8288001-3` → `HM8288 001-3` — match `normalized_sku_unique` — verificado `HM8288 001-3`
+- **Tênis Nike Air Rift 'Triple Black' Preto — tam. 37.5/38**: `HM8288001-4` → `HM8288 001-4` — match `normalized_sku_unique` — verificado `HM8288 001-4`
+- **Tênis Nike Air Rift 'Triple Black' Preto — tam. 39/39.5**: `HM8288001-5` → `HM8288 001-5` — match `normalized_sku_unique` — verificado `HM8288 001-5`
+- **Tênis Nike Air Rift 'Triple Black' Preto — tam. 40/40.5**: `HM8288001-6` → `HM8288 001-6` — match `normalized_sku_unique` — verificado `HM8288 001-6`
+- **Tênis Nike Air Rift Triple White Branco — tam. 33.5/34**: `HM8288100-1` → `HM8288 100-1` — match `normalized_sku_unique` — verificado `HM8288 100-1`
+- **Tênis Nike Air Rift Triple White Branco — tam. 35/35.5**: `HM8288100-2` → `HM8288 100-2` — match `normalized_sku_unique` — verificado `HM8288 100-2`
+- **Tênis Nike Air Rift Triple White Branco — tam. 36/37**: `HM8288100-3` → `HM8288 100-3` — match `normalized_sku_unique` — verificado `HM8288 100-3`
+- **Tênis Nike Air Rift Triple White Branco — tam. 37.5/38**: `HM8288100-4` → `HM8288 100-4` — match `normalized_sku_unique` — verificado `HM8288 100-4`
+- **Tênis Nike Air Rift Triple White Branco — tam. 39/39.5**: `HM8288100-5` → `HM8288 100-5` — match `normalized_sku_unique` — verificado `HM8288 100-5`
+- **Tênis Nike Air Rift Triple White Branco — tam. 40/40.5**: `HM8288100-6` → `HM8288 100-6` — match `normalized_sku_unique` — verificado `HM8288 100-6`
+- **Tênis Nike Cortez White Black Branco — tam. 39**: `[vazio]` → `DM4044-105` — match `title_size_unique` — verificado `DM4044-105`
+- **Tênis Nike Cortez White Laser Fuchsia Branco — tam. 34**: `[vazio]` → `DM0950-104` — match `title_size_unique` — verificado `DM0950-104`
+- **Tênis Nike Cortez White Laser Fuchsia Branco — tam. 37**: `[vazio]` → `DM0950-104` — match `title_size_unique` — verificado `DM0950-104`
+- **Tênis Nike Dunk Low "University Blue" Azul — tam. 34**: `[vazio]` → `CW1590-103` — match `title_size_unique` — verificado `CW1590-103`
+- **Tênis Nike Dunk Low "University Blue" Azul — tam. 39**: `[vazio]` → `CW1590-103` — match `title_size_unique` — verificado `CW1590-103`
+- **Tênis Nike Dunk Low "University Blue" Azul — tam. 40**: `[vazio]` → `CW1590-103` — match `title_size_unique` — verificado `CW1590-103`
+- **Tênis Nike Dunk Low "University Blue" Azul — tam. 41**: `[vazio]` → `CW1590-103` — match `title_size_unique` — verificado `CW1590-103`
+- **Tênis Nike Dunk Low "University Blue" Azul — tam. 42**: `[vazio]` → `CW1590-103` — match `title_size_unique` — verificado `CW1590-103`
+- **Tênis Nike Dunk Low "University Blue" Azul — tam. 43**: `[vazio]` → `CW1590-103` — match `title_size_unique` — verificado `CW1590-103`
+- **Tênis Nike Dunk Low Give Her Flowers Branco — tam. 35.5**: `[vazio]` → `FZ3775-133` — match `title_size_unique` — verificado `FZ3775-133`
+- **Tênis Nike Dunk Low Gym Red Vermelho — tam. 37**: `[vazio]` → `DD13916021` — match `title_size_unique` — verificado `DD13916021`
+- **Tênis Nike Dunk Low Kentucky Azul — tam. 44**: `[vazio]` → `CU1726100CU17261001` — match `title_size_unique` — verificado `CU1726100CU17261001`
+- **Tênis Nike Dunk Low Kentucky Azul — tam. 45**: `[vazio]` → `CU17261002` — match `title_size_unique` — verificado `CU17261002`
+- **Tênis Nike Dunk Low Kentucky Azul — tam. 46**: `[vazio]` → `CU17261003` — match `title_size_unique` — verificado `CU17261003`
+- **Tênis Nike Dunk Low Next Nature Lilac Roxo — tam. 35**: `DN1431103-34-2` → `DN1431103-34 -2` — match `normalized_sku_unique` — verificado `DN1431103-34 -2`
+- **Tênis Nike Dunk Low Next Nature Lilac Roxo — tam. 36**: `DN1431103-34-3` → `DN1431103-34 -3` — match `normalized_sku_unique` — verificado `DN1431103-34 -3`
+- **Tênis Nike Dunk Low Next Nature Lilac Roxo — tam. 37**: `DN1431103-34-4` → `DN1431103-34 -4` — match `normalized_sku_unique` — verificado `DN1431103-34 -4`
+- **Tênis Nike Dunk Low Next Nature Lilac Roxo — tam. 38**: `DN1431103-34-5` → `DN1431103-34 -5` — match `normalized_sku_unique` — verificado `DN1431103-34 -5`
+- **Tênis Nike Dunk Low Next Nature Lilac Roxo — tam. 39**: `DN1431103-34-6` → `DN1431103-34 -6` — match `normalized_sku_unique` — verificado `DN1431103-34 -6`
+- **Tênis Nike Dunk Low Next Nature White Gym Red Vermelho — tam. 34**: `[vazio]` → `DN1431101-3` — match `title_size_unique` — verificado `DN1431101-3`
+- **Tênis Nike Dunk Low Next Nature White Gym Red Vermelho — tam. 39**: `[vazio]` → `DN1431101-4` — match `title_size_unique` — verificado `DN1431101-4`
+- **Tênis Nike Dunk Low Year of The Snake 2025 Verde — tam. 37**: `HV5980231-1` → `HV5980 231-1` — match `normalized_sku_unique` — verificado `HV5980 231-1`
+- **Tênis Nike Dunk Low Year of The Snake 2025 Verde — tam. 38**: `HV5980231-2` → `HV5980 231-2` — match `normalized_sku_unique` — verificado `HV5980 231-2`
+- **Tênis Nike Dunk Low Year of The Snake 2025 Verde — tam. 39**: `HV5980231-3` → `HV5980 231-3` — match `normalized_sku_unique` — verificado `HV5980 231-3`
+- **Tênis Nike Dunk Low Year of The Snake 2025 Verde — tam. 40**: `HV5980231-4` → `HV5980 231-4` — match `normalized_sku_unique` — verificado `HV5980 231-4`
+- **Tênis Nike Dunk Low Year of The Snake 2025 Verde — tam. 41**: `HV5980231-5` → `HV5980 231-5` — match `normalized_sku_unique` — verificado `HV5980 231-5`
+- **Tênis Nike Dunk Low Year of The Snake 2025 Verde — tam. 42**: `HV5980231-6` → `HV5980 231-6` — match `normalized_sku_unique` — verificado `HV5980 231-6`
+- **Tênis Nike Dunk Low Year of The Snake 2025 Verde — tam. 43**: `HV5980231-7` → `HV5980 231-7` — match `normalized_sku_unique` — verificado `HV5980 231-7`
+- **Tênis Nike Dunk Low Year of The Snake 2025 Verde — tam. 44**: `HV5980231-8` → `HV5980 231-8` — match `normalized_sku_unique` — verificado `HV5980 231-8`
+- **Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto — tam. 43**: `[vazio]` → `HV8547-001` — match `title_size_unique` — verificado `HV8547-001`
+- **Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto — tam. 44**: `[vazio]` → `HV8547-001` — match `title_size_unique` — verificado `HV8547-001`
+- **Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto — tam. 45**: `[vazio]` → `HV8547-001` — match `title_size_unique` — verificado `HV8547-001`
+- **Tênis Nike Moon Shoe SP Jacquemus University Red Vermelho — tam. 43**: `[vazio]` → `HV8547-600` — match `title_size_unique` — verificado `HV8547-600`
+- **Tênis Nike Moon Shoe SP Jacquemus University Red Vermelho — tam. 44**: `[vazio]` → `HV8547-600` — match `title_size_unique` — verificado `HV8547-600`
+- **Tênis Nike Moon Shoe SP Jacquemus University Red Vermelho — tam. 45**: `[vazio]` → `HV8547-600` — match `title_size_unique` — verificado `HV8547-600`
+- **Tênis Nike SB Dunk Low Pro Chicago Vermelho — tam. 44**: `[vazio]` → `BQ6817600` — match `title_size_unique` — verificado `BQ6817600`
+- **Tênis Nike Sb Dunk Low x Rayssa Leal Bege — tam. 38**: `FZ5251001-1` → `FZ5251 001-1` — match `normalized_sku_unique` — verificado `FZ5251 001-1`
+- **Tênis Nike Sb Dunk Low x Rayssa Leal Bege — tam. 39**: `FZ5251001-2` → `FZ5251 001-2` — match `normalized_sku_unique` — verificado `FZ5251 001-2`
+- **Tênis Nike Sb Dunk Low x Rayssa Leal Bege — tam. 40**: `FZ5251001-3` → `FZ5251 001-3` — match `normalized_sku_unique` — verificado `FZ5251 001-3`
+- **Tênis Nike Sb Dunk Low x Rayssa Leal Bege — tam. 40.5**: `FZ5251001-8` → `FZ5251 001-8` — match `normalized_sku_unique` — verificado `FZ5251 001-8`
+- **Tênis Nike Sb Dunk Low x Rayssa Leal Bege — tam. 41**: `FZ5251001-4` → `FZ5251 001-4` — match `normalized_sku_unique` — verificado `FZ5251 001-4`
+- **Tênis Nike Sb Dunk Low x Rayssa Leal Bege — tam. 42**: `FZ5251001-5` → `FZ5251 001-5` — match `normalized_sku_unique` — verificado `FZ5251 001-5`
+- **Tênis Nike Sb Dunk Low x Rayssa Leal Bege — tam. 42.5**: `FZ5251001-9` → `FZ5251 001-9` — match `normalized_sku_unique` — verificado `FZ5251 001-9`
+- **Tênis Nike Sb Dunk Low x Rayssa Leal Bege — tam. 43**: `FZ5251001-6` → `FZ5251 001-6` — match `normalized_sku_unique` — verificado `FZ5251 001-6`
+- **Tênis Nike Sb Dunk Low x Rayssa Leal Bege — tam. 44**: `FZ5251001-7` → `FZ5251 001-7` — match `normalized_sku_unique` — verificado `FZ5251 001-7`
+- **Tênis Nike SB x Air Jordan 4 Retro 'Pine Green' Verde — tam. 38**: `DR5415103-38` → `DR5415103 - 38` — match `normalized_sku_unique` — verificado `DR5415103 - 38`
+- **Tênis Nike SB x Air Jordan 4 Retro 'Pine Green' Verde — tam. 39**: `DR5415103-39` → `DR5415103 - 39` — match `normalized_sku_unique` — verificado `DR5415103 - 39`
+- **Tênis Nike SB x Air Jordan 4 Retro 'Pine Green' Verde — tam. 40**: `DR5415103-40` → `DR5415103 - 40` — match `normalized_sku_unique` — verificado `DR5415103 - 40`
+- **Tênis Nike SB x Air Jordan 4 Retro 'Pine Green' Verde — tam. 41**: `DR5415103-41` → `DR5415103 - 41` — match `normalized_sku_unique` — verificado `DR5415103 - 41`
+- **Tênis Nike SB x Air Jordan 4 Retro 'Pine Green' Verde — tam. 42**: `DR5415103-42` → `DR5415103 - 42` — match `normalized_sku_unique` — verificado `DR5415103 - 42`
+- **Tênis Nike SB x Air Jordan 4 Retro 'Pine Green' Verde — tam. 43**: `DR5415103-43` → `DR5415103 - 43` — match `normalized_sku_unique` — verificado `DR5415103 - 43`
+- **Tênis Nike SB x Air Jordan 4 Retro 'Pine Green' Verde — tam. 44**: `DR5415103-44` → `DR5415103 - 44` — match `normalized_sku_unique` — verificado `DR5415103 - 44`
+- **Tênis Nike SB x Air Jordan 4 Retro 'Pine Green' Verde — tam. 45**: `DR5415103-45` → `DR5415103 - 45` — match `normalized_sku_unique` — verificado `DR5415103 - 45`
+- **Tênis Nike SB x Air Jordan 4 Retro 'Pine Green' Verde — tam. 46**: `DR5415103-46` → `DR5415103 - 46` — match `normalized_sku_unique` — verificado `DR5415103 - 46`
+- **Tênis Nike Travis Scott Air Jordan 4 Retro Cactus Jack Azul — tam. 38**: `308497406` → `308497 406` — match `normalized_sku_unique` — verificado `308497 406`
+- **Tênis Nike Travis Scott Air Jordan 4 Retro Cactus Jack Azul — tam. 39**: `308497407` → `308497 407` — match `normalized_sku_unique` — verificado `308497 407`
+- **Tênis Nike Travis Scott Air Jordan 4 Retro Cactus Jack Azul — tam. 40**: `308497408` → `308497 408` — match `normalized_sku_unique` — verificado `308497 408`
+- **Tênis Nike Travis Scott Air Jordan 4 Retro Cactus Jack Azul — tam. 41**: `308497409` → `308497 409` — match `normalized_sku_unique` — verificado `308497 409`
+- **Tênis Nike Travis Scott Air Jordan 4 Retro Cactus Jack Azul — tam. 42**: `308497410` → `308497 410` — match `normalized_sku_unique` — verificado `308497 410`
+- **Tênis Nike Travis Scott Air Jordan 4 Retro Cactus Jack Azul — tam. 43**: `308497411` → `308497 411` — match `normalized_sku_unique` — verificado `308497 411`
+- **Tênis Nike Travis Scott Air Jordan 4 Retro Cactus Jack Azul — tam. 44**: `308497412` → `308497 412` — match `normalized_sku_unique` — verificado `308497 412`
+- **Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde — tam. 34**: `FZ3124200` → `FZ3124 200` — match `normalized_sku_unique` — verificado `FZ3124 200`
+- **Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde — tam. 35**: `FZ3124201` → `FZ3124 201` — match `normalized_sku_unique` — verificado `FZ3124 201`
+- **Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde — tam. 36**: `FZ3124202` → `FZ3124 202` — match `normalized_sku_unique` — verificado `FZ3124 202`
+- **Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde — tam. 37**: `FZ3124203` → `FZ3124 203` — match `normalized_sku_unique` — verificado `FZ3124 203`
+- **Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde — tam. 38**: `FZ3124204` → `FZ3124 204` — match `normalized_sku_unique` — verificado `FZ3124 204`
+- **Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde — tam. 39**: `FZ3124205` → `FZ3124 205` — match `normalized_sku_unique` — verificado `FZ3124 205`
+- **Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde — tam. 40**: `FZ3124206` → `FZ3124 206` — match `normalized_sku_unique` — verificado `FZ3124 206`
+- **Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde — tam. 41**: `FZ3124207` → `FZ3124 207` — match `normalized_sku_unique` — verificado `FZ3124 207`
+- **Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde — tam. 42**: `FZ3124208` → `FZ3124 208` — match `normalized_sku_unique` — verificado `FZ3124 208`
+- **Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde — tam. 43**: `FZ3124209` → `FZ3124 209` — match `normalized_sku_unique` — verificado `FZ3124 209`
+- **Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde — tam. 44**: `FZ3124210` → `FZ3124 210` — match `normalized_sku_unique` — verificado `FZ3124 210`
+- **Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde — tam. 45**: `FZ3124211` → `FZ3124 211` — match `normalized_sku_unique` — verificado `FZ3124 211`
+- **Tênis Nike Travis Scott x Jordan Jumpman Jack TR 'University Red' — tam. 36**: `FZ8117101-1` → `FZ8117 101-1` — match `normalized_sku_unique` — verificado `FZ8117 101-1`
+- **Tênis Nike Travis Scott x Jordan Jumpman Jack TR 'University Red' — tam. 37**: `FZ8117101-2` → `FZ8117 101-2` — match `normalized_sku_unique` — verificado `FZ8117 101-2`
+- **Tênis Nike Travis Scott x Jordan Jumpman Jack TR 'University Red' — tam. 38**: `FZ8117101-3` → `FZ8117 101-3` — match `normalized_sku_unique` — verificado `FZ8117 101-3`
+- **Tênis Nike Travis Scott x Jordan Jumpman Jack TR 'University Red' — tam. 39**: `FZ8117101-4` → `FZ8117 101-4` — match `normalized_sku_unique` — verificado `FZ8117 101-4`
+- **Tênis Nike Travis Scott x Jordan Jumpman Jack TR 'University Red' — tam. 40**: `FZ8117101-5` → `FZ8117 101-5` — match `normalized_sku_unique` — verificado `FZ8117 101-5`
+- **Tênis Nike Travis Scott x Jordan Jumpman Jack TR 'University Red' — tam. 41**: `FZ8117101-6` → `FZ8117 101-6` — match `normalized_sku_unique` — verificado `FZ8117 101-6`
+- **Tênis Nike Travis Scott x Jordan Jumpman Jack TR 'University Red' — tam. 42**: `FZ8117101-7` → `FZ8117 101-7` — match `normalized_sku_unique` — verificado `FZ8117 101-7`
+- **Tênis Nike Travis Scott x Jordan Jumpman Jack TR 'University Red' — tam. 43**: `FZ8117101-8` → `FZ8117 101-8` — match `normalized_sku_unique` — verificado `FZ8117 101-8`
+- **Tênis Nike Travis Scott x Jordan Jumpman Jack TR 'University Red' — tam. 44**: `FZ8117101-9` → `FZ8117 101-9` — match `normalized_sku_unique` — verificado `FZ8117 101-9`
+- **Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco — tam. 34**: `DZ4137106` → `DZ4137 106` — match `normalized_sku_unique` — verificado `DZ4137 106`
+- **Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco — tam. 35**: `DZ4137107` → `DZ4137 107` — match `normalized_sku_unique` — verificado `DZ4137 107`
+- **Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco — tam. 36**: `DZ4137108` → `DZ4137 108` — match `normalized_sku_unique` — verificado `DZ4137 108`
+- **Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco — tam. 37**: `DZ4137109` → `DZ4137 109` — match `normalized_sku_unique` — verificado `DZ4137 109`
+- **Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco — tam. 38**: `DZ4137110` → `DZ4137 110` — match `normalized_sku_unique` — verificado `DZ4137 110`
+- **Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco — tam. 39**: `DZ4137111` → `DZ4137 111` — match `normalized_sku_unique` — verificado `DZ4137 111`
+- **Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco — tam. 40**: `DZ4137112` → `DZ4137 112` — match `normalized_sku_unique` — verificado `DZ4137 112`
+- **Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco — tam. 41**: `DZ4137113` → `DZ4137 113` — match `normalized_sku_unique` — verificado `DZ4137 113`
+- **Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco — tam. 42**: `DZ4137114` → `DZ4137 114` — match `normalized_sku_unique` — verificado `DZ4137 114`
+- **Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco — tam. 43**: `DZ4137115` → `DZ4137 115` — match `normalized_sku_unique` — verificado `DZ4137 115`
+- **Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco — tam. 44**: `DZ4137116` → `DZ4137 116` — match `normalized_sku_unique` — verificado `DZ4137 116`
+- **Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco — tam. 45**: `DZ4137117` → `DZ4137 117` — match `normalized_sku_unique` — verificado `DZ4137 117`
+- **Tênis On Cloudtilt x Loewe White Branco — tam. 38**: `[vazio]` → `3ME106929791` — match `title_size_unique` — verificado `3ME106929791`
+- **Tênis On Running Cloudsolo Loewe Dark Sand Cream Bege — tam. 36**: `[vazio]` → `3MF30664615` — match `title_size_unique` — verificado `3MF30664615`
+- **Tênis Onitsuka Tiger Mexico 66 Black and White Preto — tam. 43**: `[vazio]` → `1183C10200` — match `title_size_unique` — verificado `1183C10200`
+- **Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata — tam. 34**: `1183B566021-1` → `1183B566 021-1` — match `normalized_sku_unique` — verificado `1183B566 021-1`
+- **Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata — tam. 35**: `1183B566021-2` → `1183B566 021-2` — match `normalized_sku_unique` — verificado `1183B566 021-2`
+- **Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata — tam. 36**: `1183B566021-3` → `1183B566 021-3` — match `normalized_sku_unique` — verificado `1183B566 021-3`
+- **Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata — tam. 38**: `1183B566021-5` → `1183B566 021-5` — match `normalized_sku_unique` — verificado `1183B566 021-5`
+- **Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata — tam. 39**: `1183B566021-6` → `1183B566 021-6` — match `normalized_sku_unique` — verificado `1183B566 021-6`
+- **Tênis Onitsuka Tiger Mexico 66 Gold White Dourado — tam. 39.5**: `[vazio]` → `1183B566.201` — match `title_size_unique` — verificado `1183B566.201`
+- **Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo — tam. 34**: `1183C102751-1` → `1183C102 751-1` — match `normalized_sku_unique` — verificado `1183C102 751-1`
+- **Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo — tam. 35.5**: `1183C102751-11` → `1183C102 751-11` — match `normalized_sku_unique` — verificado `1183C102 751-11`
+- **Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo — tam. 38**: `1183C102751-5` → `1183C102 751-5` — match `normalized_sku_unique` — verificado `1183C102 751-5`
+- **Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo — tam. 41**: `1183C102751-10` → `1183C102 751-10` — match `normalized_sku_unique` — verificado `1183C102 751-10`
+- **Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo — tam. 41.5**: `1183C102751-13` → `1183C102 751-13` — match `normalized_sku_unique` — verificado `1183C102 751-13`
+- **Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo — tam. 43**: `1183C102751-7` → `1183C102 751-7` — match `normalized_sku_unique` — verificado `1183C102 751-7`
+- **Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege — tam. 34**: `ONI-3740254-34` → `1183C123.200` — match `title_size_unique` — verificado `1183C123.200`
+- **Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege — tam. 35**: `ONI-3740254-35` → `1183C123.200` — match `title_size_unique` — verificado `1183C123.200`
+- **Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege — tam. 36**: `ONI-3740254-36` → `1183C123.200` — match `title_size_unique` — verificado `1183C123.200`
+- **Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege — tam. 37**: `ONI-3740254-37` → `1183C123.200` — match `title_size_unique` — verificado `1183C123.200`
+- **Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege — tam. 38**: `ONI-3740254-38` → `1183C123.200` — match `title_size_unique` — verificado `1183C123.200`
+- **Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege — tam. 39**: `ONI-3740254-39` → `1183C123.200` — match `title_size_unique` — verificado `1183C123.200`
+- **Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege — tam. 40**: `ONI-3740254-40` → `1183C123.200` — match `title_size_unique` — verificado `1183C123.200`
+- **Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege — tam. 41**: `ONI-3740254-41` → `1183C123.200` — match `title_size_unique` — verificado `1183C123.200`
+- **Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege — tam. 42**: `ONI-3740254-42` → `1183C123.200` — match `title_size_unique` — verificado `1183C123.200`
+- **Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege — tam. 43**: `ONI-3740254-43` → `1183C123.200` — match `title_size_unique` — verificado `1183C123.200`
+- **Tênis Onitsuka Tiger Mexico 66 SD Birch Silver Bege — tam. 42**: `[vazio]` → `1183A592200` — match `title_size_unique` — verificado `1183A592200`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 34**: `[vazio]` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 35**: `[vazio]` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 36**: `[vazio]` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 37**: `[vazio]` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 38**: `[vazio]` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 39**: `[vazio]` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 40**: `[vazio]` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 41**: `[vazio]` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 42**: `[vazio]` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 34**: `ONI-5436510-34` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 35**: `ONI-5436510-35` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 36**: `ONI-5436510-36` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 37**: `ONI-5436510-37` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 38**: `ONI-5436510-38` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 39**: `ONI-5436510-39` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 40**: `ONI-5436510-40` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 41**: `ONI-5436510-41` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul — tam. 42**: `ONI-5436510-42` → `1183C468.300` — match `title_size_unique` — verificado `1183C468.300`
+- **Tênis Onitsuka Tiger Mexico 66 TGRS Triple Black Preto — tam. 34**: `1182A660001` → `1182A660 001` — match `normalized_sku_unique` — verificado `1182A660 001`
+- **Tênis Onitsuka Tiger Mexico 66 TGRS Triple Black Preto — tam. 35**: `1182A660002` → `1182A660 002` — match `normalized_sku_unique` — verificado `1182A660 002`
+- **Tênis Onitsuka Tiger Mexico 66 TGRS Triple Black Preto — tam. 36**: `1182A660003` → `1182A660 003` — match `normalized_sku_unique` — verificado `1182A660 003`
+- **Tênis Onitsuka Tiger Mexico 66 TGRS Triple Black Preto — tam. 37**: `1182A660004` → `1182A660 004` — match `normalized_sku_unique` — verificado `1182A660 004`
+- **Tênis Onitsuka Tiger Mexico 66 TGRS Triple Black Preto — tam. 38**: `1182A660005` → `1182A660 005` — match `normalized_sku_unique` — verificado `1182A660 005`
+- **Tênis Onitsuka Tiger Mexico 66 TGRS Triple Black Preto — tam. 39**: `1182A660006` → `1182A660 006` — match `normalized_sku_unique` — verificado `1182A660 006`
+- **Tênis Onitsuka Tiger Mexico 66 White Blue Branco — tam. 42**: `[vazio]` → `1183C102100` — match `title_size_unique` — verificado `1183C102100`
+- **Tênis Onitsuka Tiger Mexico 66 White Blue Branco — tam. 43**: `[vazio]` → `1183C102100` — match `title_size_unique` — verificado `1183C102100`
+- **Tênis Onitsuka Tiger Tokuten Cinza — tam. 41**: `[vazio]` → `1183C431020` — match `title_size_unique` — verificado `1183C431020`
+- **Tênis Puma Speedcat Archive Haute Coffee Frosted Ivory Marrom — tam. 40**: `[vazio]` → `39884702` — match `title_size_unique` — verificado `39884702`
+- **Tênis Puma Speedcat Archive Haute Coffee Frosted Ivory Marrom — tam. 41**: `[vazio]` → `39884702` — match `title_size_unique` — verificado `39884702`
+- **Tênis Puma Speedcat TTF 'Dark Chocolate Frosted Ivory' Marrom — tam. 34**: `40390301-1` → `403903 01-1` — match `normalized_sku_unique` — verificado `403903 01-1`
+- **Tênis Puma Speedcat TTF 'Dark Chocolate Frosted Ivory' Marrom — tam. 35**: `40390301-2` → `403903 01-2` — match `normalized_sku_unique` — verificado `403903 01-2`
+- **Tênis Puma Speedcat TTF 'Dark Chocolate Frosted Ivory' Marrom — tam. 36**: `40390301-3` → `403903 01-3` — match `normalized_sku_unique` — verificado `403903 01-3`
+- **Tênis Puma Speedcat TTF 'Dark Chocolate Frosted Ivory' Marrom — tam. 37**: `40390301-4` → `403903 01-4` — match `normalized_sku_unique` — verificado `403903 01-4`
+- **Tênis Puma Speedcat TTF 'Dark Chocolate Frosted Ivory' Marrom — tam. 38**: `40390301-5` → `403903 01-5` — match `normalized_sku_unique` — verificado `403903 01-5`
+- **Tênis Puma Speedcat TTF 'Dark Chocolate Frosted Ivory' Marrom — tam. 39**: `40390301-6` → `403903 01-6` — match `normalized_sku_unique` — verificado `403903 01-6`
+- **Tênis Puma Speedcat TTF 'Dark Chocolate Frosted Ivory' Marrom — tam. 40**: `40390301-7` → `403903 01-7` — match `normalized_sku_unique` — verificado `403903 01-7`
+- **Tênis Puma Speedcat TTF 'Dark Chocolate Frosted Ivory' Marrom — tam. 41**: `40390301-8` → `403903 01-8` — match `normalized_sku_unique` — verificado `403903 01-8`
+- **Tênis Puma Speedcat TTF 'Dark Chocolate Frosted Ivory' Marrom — tam. 42**: `40390301-9` → `403903 01-9` — match `normalized_sku_unique` — verificado `403903 01-9`
+- **Tênis Yeezy Boost 350 V2 Onyx Preto — tam. 35**: `[vazio]` → `HP4540` — match `title_size_unique` — verificado `HP4540`
+- **Tênis Yeezy Boost 350 V2 Slate Bege — tam. 45**: `[vazio]` → `HP7870-7` — match `title_size_unique` — verificado `HP7870-7`
+- **The Peptide Lip Tints Rhode Multicolor — tam. Vanilla**: `[vazio]` → `LIP` — match `title_size_unique` — verificado `LIP`
+- **Touca Supreme Overdyed Ribbed Red — tam. Default Title**: `[vazio]` → `SXVA7DQ35W` — match `title_size_unique` — verificado `SXVA7DQ35W`
+
+## Regras de segurança usadas
+- Só alterei variants com Tiny `codigo` não-vazio e match único de alta confiança.
+- Prioridade de match: SKU normalizado único; depois produto+tamanho único.
+- Itens ambíguos, sem match seguro ou com Tiny `codigo` vazio foram pulados.
+
+## Backup e rollback
+- Plano/backup: `reports/lk-shopify-tiny-all-sku-diff-plan-2026-05-11.json`
+- Execução/verificação: `reports/lk-shopify-tiny-all-sku-normalization-execution-2026-05-11.json`
+- Rollback possível por `variant_id`, reaplicando `rollback_sku`.
+
+## Não alterado
+- Preço, estoque, título, handle, imagens, coleções, campanhas, clientes, Klaviyo/WhatsApp, fornecedores, Tiny, banco, VPS/Docker e secrets.
