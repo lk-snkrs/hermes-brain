@@ -41,6 +41,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `rotinas/playbook-comando-diario.md` — roteiro executivo para briefing/prioridades LK sem inventar dados.
 - `sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md` — campanha CRM com segmentação, preview e aprovação Lucas antes de envio.
 - `sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` — primeira campanha P1 CRM/Klaviyo colocada em Draft com lista/template/campanha, pendente de revisão final.
+- `sub-areas/crm/rotinas/phase5-next-decision-router-readonly-2026-05-11.md` — próxima decisão Fase 5: P1 Klaviyo Draft, WhatsApp sem repetição automática, P2 preview ou refresh Data Spine.
 
 ## Ferramentas principais
 
