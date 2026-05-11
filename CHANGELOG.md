@@ -1,3 +1,11 @@
+## 2026-05-11 — LK Shopify Read-only Skill Operationalization Audit
+
+- Auditada a skill `lk-shopify-readonly` contra o padrão de “100% operacionalizada”: runtime carregável, Brain copy, índices/MAPAs, guardrails, health check, secret scan e PR/sync.
+- Corrigida lacuna: a runtime skill estava mais atualizada que a cópia versionada no Hermes Brain. A cópia em `skills/lk-shopify-readonly/SKILL.md` foi sincronizada com `/opt/data/skills/productivity/lk-shopify-readonly/SKILL.md`.
+- Sincronizadas 13 referências operacionais em `skills/lk-shopify-readonly/references/`.
+- Criado relatório: `reports/lk-shopify-readonly-skill-operationalization-audit-2026-05-11.md`.
+- Nenhum Shopify live write, campanha, envio externo, preço, estoque, produto, cliente, tema, webhook, app, admin, banco de produção ou cron foi executado.
+
 ## 2026-05-11 — LK OS Approval Decision Log + Router read-only
 
 - Criado e executado `scripts/lk_os_approval_decision_log_router_20260511.py`, registro roteável das decisões de cotação pendentes no LK OS.
