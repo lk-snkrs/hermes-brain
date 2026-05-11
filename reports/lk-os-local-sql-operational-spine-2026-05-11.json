@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-05-11T15:11:57.390712+00:00",
+  "db": "/opt/data/hermes_bruno_ingest/local_sql/lk_os_phase5.sqlite",
+  "mode": "0o600",
+  "source": "Supabase LK REST read-only",
+  "counts": {
+    "lk_customers": 26413,
+    "lk_orders": 6059,
+    "lk_order_items": 8166,
+    "lk_products": 2241,
+    "lk_product_variants": 14466,
+    "lk_customer_rfm": 3679,
+    "lk_os_entity_dictionary": 8
+  },
+  "qa": {
+    "customers_with_email": 25801,
+    "customers_with_phone": 3759,
+    "variants_with_sku": 13078,
+    "orders_paid_like": 4644
+  },
+  "guardrails": [
+    "No external writes",
+    "No customer send",
+    "No secrets printed",
+    "PII only in private chmod 600 SQLite, not in report"
+  ]
+}
