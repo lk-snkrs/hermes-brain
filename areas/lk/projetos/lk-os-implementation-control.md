@@ -251,7 +251,7 @@ Objetivo: trazer Google/Search para dentro do LK OS como fonte de demanda e prob
 
 Entregáveis:
 
-- [ ] Rotina Search Console: queries, páginas, CTR, oportunidades.
+- [x] Rotina Search Console: queries, páginas, CTR, oportunidades, operacionalizada via `search-console-readonly-router`: 25.000 linhas query/página, 15.709 páginas agregadas e 40 oportunidades P1/P2 roteadas como preview sem writes.
 - [x] Módulo semanal SEO/CRO com nota Claude SEO, meta próxima e fila priorizada de melhorias de PDP/páginas.
 - [ ] Diagnóstico Merchant Center/feed.
 - [ ] Priorização de PDPs com tráfego alto e conversão baixa.
