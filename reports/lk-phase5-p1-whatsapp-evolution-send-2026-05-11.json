@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-05-11T15:34:50.244404+00:00",
+  "mode": "EXECUTE_SEND",
+  "secrets_loaded": true,
+  "counts": {
+    "input_rows": 7,
+    "deduped_phone_recipients": 7,
+    "sent": 6,
+    "failed": 1,
+    "dry_run_not_sent": 0
+  },
+  "private_audit": "/opt/data/hermes_bruno_ingest/private_exports/lk_crm/lk_phase5_p1_whatsapp_evolution_audit_2026-05-11.csv",
+  "guardrails": [
+    "Uses approved physical-store-only WhatsApp file",
+    "Dedupes by normalized phone before sending",
+    "No phone numbers, names, or message bodies in Brain report",
+    "Does not touch Klaviyo/Shopify/Tiny/Supabase"
+  ],
+  "failure_diagnosis": {
+    "failed_count": 1,
+    "reason": "One recipient number returned exists=false on Evolution WhatsApp number validation; not retried to avoid bad-send loops. No phone/name included in Brain report."
+  }
+}
