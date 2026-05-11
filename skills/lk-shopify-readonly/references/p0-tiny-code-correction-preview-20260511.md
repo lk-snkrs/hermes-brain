@@ -52,3 +52,13 @@ Safe approval wording should be scoped, e.g.:
 `aprovo preencher codigo Tiny dos 2 itens candidatos com os SKUs Shopify propostos, sem alterar Shopify, preço, estoque ou produto`
 
 After approval, execute only those exact fields, then read back Tiny and document rollback.
+
+## Tiny write execution note — variation child records
+
+Observed during approved execution (`reports/lk-p0-tiny-code-correction-execution-2026-05-11.json`):
+
+- `produto.alterar` with a bare `{ "id": ..., "codigo": ... }` object can return `OK` but leave `codigo` unchanged. Do not trust status alone; read back the product/variation.
+- The effective API layout was the official root wrapper: `{ "produtos": [{ "produto": { ... } }] }`.
+- For a variation child record, update the child Tiny ID directly with required existing fields (`sequencia`, `id`, `codigo`, `nome`, `unidade`, `preco`, `preco_promocional`, `origem`, `situacao`, `tipo`, and `grade` when present). Then verify before/after non-code fields.
+- Updating the parent via `variacoes` failed when sibling variations had blank codes: Tiny returned `É necessário informar o código para um produto variação.` Do not fill sibling codes unless separately approved.
+- Success criteria: Tiny write status `OK` plus live `produto.obter` shows target `codigo` exactly and non-code fields unchanged.
