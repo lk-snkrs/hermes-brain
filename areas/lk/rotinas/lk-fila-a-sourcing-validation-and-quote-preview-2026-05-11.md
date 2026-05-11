@@ -4,12 +4,17 @@
 
 Continuação aprovada por Lucas: (1) validar fornecedor/lead time/margem dos Top 15 e (2) montar fila de cotação. Este documento é **preview interno/read-only**.
 
+## Status após decisão Lucas
+
+**Pending / later.** Lucas gostou da feature, mas decidiu não avançar agora para contato/cotação externa. A próxima versão deve ser inteligência de preço por fonte externa antes de qualquer abordagem: Droper, StockX e GOAT, retornando a opção mais barata viável.
+
 ## Guardrails
 
 - Não houve contato com fornecedor.
 - Não houve compra/PO.
 - Não houve write Shopify/Tiny.
 - Não houve alteração de preço, estoque, campanha ou envio externo.
+- Fila de cotação permanece pendente; não enviar para fornecedor/Júlio/grupo até nova aprovação.
 
 ## Método de validação
 
@@ -349,9 +354,22 @@ Use este bloco como **brief interno**. Não enviar sem aprovação explícita do
 - Pergunta para fornecedor, em preview:
   > Consegue cotar Nike x Jacquemus Moon Shoe SP — Alabaster nos tamanhos 40 (SKU HV8547-700-7, qtd ref. 1)? Informar custo unitário, pronta-entrega/lead time, frete/impostos e condição.
 
+## Pending/later — inteligência de preço externa antes da cotação real
+
+Quando Lucas reabrir esta frente, a próxima etapa correta não é mandar mensagem para fornecedor primeiro. É pesquisar fonte/preço por produto+tamanho e devolver a melhor opção:
+
+- Droper: preço/disponibilidade Brasil.
+- StockX: preço internacional por tamanho.
+- GOAT: preço internacional por tamanho e referência do produto.
+- Retornar sempre a opção **mais barata viável**, considerando custo final estimado, prazo e confiabilidade.
+- StockX/GOAT usam sizing americano; é obrigatório identificar se o listing está em US Men ou US Women e normalizar para o tamanho LK/BR/EU antes de comparar.
+- Para StockX/GOAT, aplicar fórmula LK de importação quando o preço estiver em USD: `(preco_usd + custo_trazer_usd) × (dolar_atual × 1,05) × 2`, depois comparar com Droper/local.
+
 ## Checklist antes de aprovar envio de cotação
 
-- Lucas/Júlio confirma quais fornecedores podem receber o brief.
+- Lucas reabre a frente pending/later.
+- Hermes valida preço Droper/StockX/GOAT por produto+tamanho, com conversão correta US Men/Women → BR/EU.
+- Lucas/Júlio confirma quais fornecedores podem receber o brief, se ainda fizer sentido após comparação de preços.
 - Definir se a cotação pode citar SKUs internos ou apenas nome/modelo/tamanho.
 - Confirmar margem mínima aceitável por categoria: sneaker premium, Onitsuka fashion, acessório.
 - Confirmar se P1 entra no mesmo pedido apenas como bundle/oportunidade.
