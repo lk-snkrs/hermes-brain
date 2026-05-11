@@ -1,0 +1,994 @@
+{
+  "generated_at": "2026-05-11T13:28:57.120784+00:00",
+  "scope": "Read-only live recheck of six remaining blocked LK P0 residual variants after 7 Tiny codigo writes",
+  "guardrails": [
+    "Shopify GET only",
+    "Tiny pesquisa/obter only",
+    "no Shopify write",
+    "no Tiny write",
+    "no price/stock/product/sourcing"
+  ],
+  "summary": {
+    "needs_canonical_code_decision_shopify_and_tiny_blank": 5,
+    "ambiguous_tiny_duplicate_with_shopify_sku": 1
+  },
+  "results": [
+    {
+      "product_title": "Camiseta Pace Cotton Code Branca",
+      "shopify_product_id": "9003115741406",
+      "shopify_handle": "camiseta-pace-cotton-code-branca",
+      "shopify_variant_id": "47512247599326",
+      "size": "G/L",
+      "shopify_sku_live": "",
+      "shopify_variants": [
+        {
+          "id": "47512247533790",
+          "title": "P/S",
+          "sku": "",
+          "option1": "P/S",
+          "option2": null,
+          "price": "216.99"
+        },
+        {
+          "id": "47512247566558",
+          "title": "M/M",
+          "sku": "",
+          "option1": "M/M",
+          "option2": null,
+          "price": "216.99"
+        },
+        {
+          "id": "47512247599326",
+          "title": "G/L",
+          "sku": "",
+          "option1": "G/L",
+          "option2": null,
+          "price": "216.99"
+        },
+        {
+          "id": "47512247632094",
+          "title": "GG/XL",
+          "sku": "",
+          "option1": "GG/XL",
+          "option2": null,
+          "price": "309.99"
+        }
+      ],
+      "orders_30d_signal": null,
+      "revenue_signal": null,
+      "tiny_searches": [
+        {
+          "query": "Camiseta Pace Cotton Code Branca",
+          "status": "OK",
+          "count": 8,
+          "candidates": [
+            {
+              "id": "1065543095",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541599",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - G-L",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543106",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - G/L",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543109",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - GG/XL",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541594",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - M-M",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543103",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - M/M",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541589",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - P-S",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543100",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - P/S",
+              "preco": 309.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_size_matches": [
+        {
+          "source": "variacao",
+          "parent_id": "1065543095",
+          "id": "1065543106",
+          "codigo": "",
+          "preco": 309.99,
+          "preco_promocional": 0,
+          "grade": {
+            "Tamanho": "G/L"
+          },
+          "matched_size_text": "G/L"
+        },
+        {
+          "source": "variacao",
+          "parent_id": "1065543095",
+          "id": "1069541599",
+          "codigo": "",
+          "preco": 309.99,
+          "preco_promocional": 216.99,
+          "grade": {
+            "Tamanho": "G/L"
+          },
+          "matched_size_text": "G/L"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "classification": "needs_canonical_code_decision_shopify_and_tiny_blank",
+      "next_action": "Definir código canônico e escolher Tiny ID correto; depois preparar preview Tiny/Shopify SKU."
+    },
+    {
+      "product_title": "Camiseta Aimé Leon Dore Musician Graphic Off White",
+      "shopify_product_id": "9024982712542",
+      "shopify_handle": "camiseta-aime-leon-dore-musician-graphic-off-white",
+      "shopify_variant_id": "47579297939678",
+      "size": "S/P",
+      "shopify_sku_live": "",
+      "shopify_variants": [
+        {
+          "id": "47579297939678",
+          "title": "S/P",
+          "sku": "",
+          "option1": "S/P",
+          "option2": null,
+          "price": "1299.99"
+        },
+        {
+          "id": "47579297972446",
+          "title": "M/M",
+          "sku": "",
+          "option1": "M/M",
+          "option2": null,
+          "price": "1299.99"
+        },
+        {
+          "id": "47579298005214",
+          "title": "L/G",
+          "sku": "",
+          "option1": "L/G",
+          "option2": null,
+          "price": "1299.99"
+        },
+        {
+          "id": "47579298037982",
+          "title": "XL/GG",
+          "sku": "",
+          "option1": "XL/GG",
+          "option2": null,
+          "price": "1299.99"
+        }
+      ],
+      "orders_30d_signal": null,
+      "revenue_signal": null,
+      "tiny_searches": [
+        {
+          "query": "Camiseta Aimé Leon Dore Musician Graphic Off White",
+          "status": "OK",
+          "count": 8,
+          "candidates": [
+            {
+              "id": "1066011677",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White ",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011689",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - L/G",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011686",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - M/M",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011682",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - S/P",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011692",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - XL/GG",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541751",
+              "codigo": "",
+              "nome": "Camiseta Aimé Leon Dore Musician Graphic Off White - L-G",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541746",
+              "codigo": "",
+              "nome": "Camiseta Aimé Leon Dore Musician Graphic Off White - M-M",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541741",
+              "codigo": "",
+              "nome": "Camiseta Aimé Leon Dore Musician Graphic Off White - S-P",
+              "preco": 1299.99,
+              "situacao": "A"
+            }
+          ]
+        },
+        {
+          "query": "Camiseta Aimé Leon Dore Musician",
+          "status": "OK",
+          "count": 16,
+          "candidates": [
+            {
+              "id": "1066011677",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White ",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011689",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - L/G",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011686",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - M/M",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011682",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - S/P",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011692",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - XL/GG",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541751",
+              "codigo": "",
+              "nome": "Camiseta Aimé Leon Dore Musician Graphic Off White - L-G",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541746",
+              "codigo": "",
+              "nome": "Camiseta Aimé Leon Dore Musician Graphic Off White - M-M",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541741",
+              "codigo": "",
+              "nome": "Camiseta Aimé Leon Dore Musician Graphic Off White - S-P",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011720",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Preta ",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011731",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Preta  - L/G",
+              "preco": 1299.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_size_matches": [
+        {
+          "source": "variacao",
+          "parent_id": "1066011677",
+          "id": "1066011682",
+          "codigo": "",
+          "preco": 1299.99,
+          "preco_promocional": 0,
+          "grade": {
+            "Tamanho": "S/P"
+          },
+          "matched_size_text": "S/P"
+        },
+        {
+          "source": "variacao",
+          "parent_id": "1066011677",
+          "id": "1069541741",
+          "codigo": "",
+          "preco": 1299.99,
+          "preco_promocional": 1299.99,
+          "grade": {
+            "Tamanho": "S/P"
+          },
+          "matched_size_text": "S/P"
+        },
+        {
+          "source": "variacao",
+          "parent_id": "1066011720",
+          "id": "1066011725",
+          "codigo": "",
+          "preco": 1299.99,
+          "preco_promocional": 0,
+          "grade": {
+            "Tamanho": "S/P"
+          },
+          "matched_size_text": "S/P"
+        },
+        {
+          "source": "variacao",
+          "parent_id": "1066011720",
+          "id": "1069541726",
+          "codigo": "",
+          "preco": 1299.99,
+          "preco_promocional": 1299.99,
+          "grade": {
+            "Tamanho": "S/P"
+          },
+          "matched_size_text": "S/P"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "classification": "needs_canonical_code_decision_shopify_and_tiny_blank",
+      "next_action": "Definir código canônico e escolher Tiny ID correto; depois preparar preview Tiny/Shopify SKU."
+    },
+    {
+      "product_title": "Rhode Pocket Blush",
+      "shopify_product_id": "8926618321118",
+      "shopify_handle": "rhode-pocket-blush",
+      "shopify_variant_id": "46838740648158",
+      "size": "Sleepy Girl - Soft Mauve",
+      "shopify_sku_live": "",
+      "shopify_variants": [
+        {
+          "id": "46838670262494",
+          "title": "Spyce Marg - Bright Coral",
+          "sku": "850055527140-1",
+          "option1": "Spyce Marg - Bright Coral",
+          "option2": null,
+          "price": "399.99"
+        },
+        {
+          "id": "46838670295262",
+          "title": "Juice Box - Hot Pink",
+          "sku": "850055527140-2",
+          "option1": "Juice Box - Hot Pink",
+          "option2": null,
+          "price": "399.99"
+        },
+        {
+          "id": "46838740549854",
+          "title": "Piggy - Baby Pink",
+          "sku": "",
+          "option1": "Piggy - Baby Pink",
+          "option2": null,
+          "price": "399.99"
+        },
+        {
+          "id": "46838740582622",
+          "title": "Sprinkle - Warm Pearly Pink",
+          "sku": "",
+          "option1": "Sprinkle - Warm Pearly Pink",
+          "option2": null,
+          "price": "399.99"
+        },
+        {
+          "id": "46838740615390",
+          "title": "Freckle - Neutral Peach",
+          "sku": "",
+          "option1": "Freckle - Neutral Peach",
+          "option2": null,
+          "price": "399.99"
+        },
+        {
+          "id": "46838740648158",
+          "title": "Sleepy Girl - Soft Mauve",
+          "sku": "",
+          "option1": "Sleepy Girl - Soft Mauve",
+          "option2": null,
+          "price": "399.99"
+        },
+        {
+          "id": "46838740680926",
+          "title": "Plum - Cool Purple Berry",
+          "sku": "",
+          "option1": "Plum - Cool Purple Berry",
+          "option2": null,
+          "price": "399.99"
+        },
+        {
+          "id": "46838740713694",
+          "title": "Date Cake - Warm Red Berry",
+          "sku": "",
+          "option1": "Date Cake - Warm Red Berry",
+          "option2": null,
+          "price": "399.99"
+        },
+        {
+          "id": "46838740746462",
+          "title": "Toasted Teddy - Bronze Terracota",
+          "sku": "",
+          "option1": "Toasted Teddy - Bronze Terracota",
+          "option2": null,
+          "price": "399.99"
+        },
+        {
+          "id": "47069450371294",
+          "title": "Tan Line - Pinky Tan",
+          "sku": "",
+          "option1": "Tan Line - Pinky Tan",
+          "option2": null,
+          "price": "399.99"
+        },
+        {
+          "id": "47069450404062",
+          "title": "Sun Soak - Spiced Orange",
+          "sku": "",
+          "option1": "Sun Soak - Spiced Orange",
+          "option2": null,
+          "price": "399.99"
+        }
+      ],
+      "orders_30d_signal": null,
+      "revenue_signal": null,
+      "tiny_searches": [
+        {
+          "query": "Rhode Pocket Blush",
+          "status": "OK",
+          "count": 12,
+          "candidates": [
+            {
+              "id": "1070288304",
+              "codigo": "",
+              "nome": "Rhode Pocket Blush",
+              "preco": 399.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070288352",
+              "codigo": "",
+              "nome": "Rhode Pocket Blush - Date Cake - Warm Red Berry",
+              "preco": 399.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070288337",
+              "codigo": "",
+              "nome": "Rhode Pocket Blush - Freckle - Neutral Peach",
+              "preco": 399.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063622277",
+              "codigo": "850055527140-2",
+              "nome": "Rhode Pocket Blush - Juice Box - Hot Pink",
+              "preco": 399.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070288327",
+              "codigo": "",
+              "nome": "Rhode Pocket Blush - Piggy - Baby Pink",
+              "preco": 399.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070288347",
+              "codigo": "",
+              "nome": "Rhode Pocket Blush - Plum - Cool Purple Berry",
+              "preco": 399.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070288342",
+              "codigo": "",
+              "nome": "Rhode Pocket Blush - Sleepy Girl - Soft Mauve",
+              "preco": 399.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070288332",
+              "codigo": "",
+              "nome": "Rhode Pocket Blush - Sprinkle - Warm Pearly Pink",
+              "preco": 399.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063622274",
+              "codigo": "850055527140-1",
+              "nome": "Rhode Pocket Blush - Spyce Marg - Bright Coral",
+              "preco": 399.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070288367",
+              "codigo": "",
+              "nome": "Rhode Pocket Blush - Sun Soak - Spiced Orange",
+              "preco": 399.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_size_matches": [
+        {
+          "source": "variacao",
+          "parent_id": "1070288304",
+          "id": "1070288342",
+          "codigo": "",
+          "preco": 399.99,
+          "preco_promocional": 399.99,
+          "grade": {
+            "Cor": "Sleepy Girl - Soft Mauve"
+          },
+          "matched_size_text": "Sleepy Girl - Soft Mauve"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "classification": "needs_canonical_code_decision_shopify_and_tiny_blank",
+      "next_action": "Definir código canônico e escolher Tiny ID correto; depois preparar preview Tiny/Shopify SKU."
+    },
+    {
+      "product_title": "Camiseta Pace Cotton Code Preta",
+      "shopify_product_id": "9003115774174",
+      "shopify_handle": "camiseta-pace-cotton-code-preta",
+      "shopify_variant_id": "47512247730398",
+      "size": "G/L",
+      "shopify_sku_live": "",
+      "shopify_variants": [
+        {
+          "id": "47512247664862",
+          "title": "P/S",
+          "sku": "",
+          "option1": "P/S",
+          "option2": null,
+          "price": "216.99"
+        },
+        {
+          "id": "47512247697630",
+          "title": "M/M",
+          "sku": "",
+          "option1": "M/M",
+          "option2": null,
+          "price": "216.99"
+        },
+        {
+          "id": "47512247730398",
+          "title": "G/L",
+          "sku": "",
+          "option1": "G/L",
+          "option2": null,
+          "price": "216.99"
+        },
+        {
+          "id": "47512247763166",
+          "title": "GG/XL",
+          "sku": "",
+          "option1": "GG/XL",
+          "option2": null,
+          "price": "309.99"
+        }
+      ],
+      "orders_30d_signal": null,
+      "revenue_signal": null,
+      "tiny_searches": [
+        {
+          "query": "Camiseta Pace Cotton Code Preta",
+          "status": "OK",
+          "count": 8,
+          "candidates": [
+            {
+              "id": "1065543076",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541614",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - G-L",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543087",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - G/L",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543090",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - GG/XL",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541609",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - M-M",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543084",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - M/M",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541604",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - P-S",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543081",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - P/S",
+              "preco": 309.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_size_matches": [
+        {
+          "source": "variacao",
+          "parent_id": "1065543076",
+          "id": "1065543087",
+          "codigo": "",
+          "preco": 309.99,
+          "preco_promocional": 0,
+          "grade": {
+            "Tamanho": "G/L"
+          },
+          "matched_size_text": "G/L"
+        },
+        {
+          "source": "variacao",
+          "parent_id": "1065543076",
+          "id": "1069541614",
+          "codigo": "",
+          "preco": 309.99,
+          "preco_promocional": 216.99,
+          "grade": {
+            "Tamanho": "G/L"
+          },
+          "matched_size_text": "G/L"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "classification": "needs_canonical_code_decision_shopify_and_tiny_blank",
+      "next_action": "Definir código canônico e escolher Tiny ID correto; depois preparar preview Tiny/Shopify SKU."
+    },
+    {
+      "product_title": "Camiseta Pace Sketch Yourself Off White",
+      "shopify_product_id": "8946043093214",
+      "shopify_handle": "camiseta-pace-sketch-yourself-off-white",
+      "shopify_variant_id": "47019131568350",
+      "size": "P/S",
+      "shopify_sku_live": "",
+      "shopify_variants": [
+        {
+          "id": "47019131568350",
+          "title": "P/S",
+          "sku": "",
+          "option1": "P/S",
+          "option2": null,
+          "price": "209.99"
+        },
+        {
+          "id": "47019131601118",
+          "title": "M",
+          "sku": "",
+          "option1": "M",
+          "option2": null,
+          "price": "209.99"
+        },
+        {
+          "id": "47019131633886",
+          "title": "G/L",
+          "sku": "",
+          "option1": "G/L",
+          "option2": null,
+          "price": "299.99"
+        }
+      ],
+      "orders_30d_signal": null,
+      "revenue_signal": null,
+      "tiny_searches": [
+        {
+          "query": "Camiseta Pace Sketch Yourself Off White",
+          "status": "OK",
+          "count": 5,
+          "candidates": [
+            {
+              "id": "1063954607",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063954617",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - G/L",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063954614",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - M",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069539379",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - P-S",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063954611",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - P/S",
+              "preco": 299.99,
+              "situacao": "A"
+            }
+          ]
+        },
+        {
+          "query": "Camiseta Pace Sketch Yourself Off",
+          "status": "OK",
+          "count": 5,
+          "candidates": [
+            {
+              "id": "1063954607",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063954617",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - G/L",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063954614",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - M",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069539379",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - P-S",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063954611",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - P/S",
+              "preco": 299.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_size_matches": [
+        {
+          "source": "variacao",
+          "parent_id": "1063954607",
+          "id": "1063954611",
+          "codigo": "",
+          "preco": 299.99,
+          "preco_promocional": 0,
+          "grade": {
+            "Tamanho": "P/S"
+          },
+          "matched_size_text": "P/S"
+        },
+        {
+          "source": "variacao",
+          "parent_id": "1063954607",
+          "id": "1069539379",
+          "codigo": "",
+          "preco": 299.99,
+          "preco_promocional": 209.99,
+          "grade": {
+            "Tamanho": "P/S"
+          },
+          "matched_size_text": "P/S"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "classification": "needs_canonical_code_decision_shopify_and_tiny_blank",
+      "next_action": "Definir código canônico e escolher Tiny ID correto; depois preparar preview Tiny/Shopify SKU."
+    },
+    {
+      "product_title": "Camiseta Pace Patavision Off White",
+      "shopify_product_id": "8946025857246",
+      "shopify_handle": "camiseta-pace-patavision-off-white",
+      "shopify_variant_id": "47019093295326",
+      "size": "P/S",
+      "shopify_sku_live": "PAC-5857246-S",
+      "shopify_variants": [
+        {
+          "id": "47019093295326",
+          "title": "P/S",
+          "sku": "PAC-5857246-S",
+          "option1": "P/S",
+          "option2": null,
+          "price": "209.99"
+        },
+        {
+          "id": "47019093328094",
+          "title": "M",
+          "sku": "PAC-5857246-M",
+          "option1": "M",
+          "option2": null,
+          "price": "209.99"
+        },
+        {
+          "id": "47019093360862",
+          "title": "G/L",
+          "sku": "PAC-5857246-L",
+          "option1": "G/L",
+          "option2": null,
+          "price": "299.99"
+        }
+      ],
+      "orders_30d_signal": null,
+      "revenue_signal": null,
+      "tiny_searches": [
+        {
+          "query": "PAC-5857246-S",
+          "status": "Erro",
+          "count": 0,
+          "candidates": []
+        },
+        {
+          "query": "Camiseta Pace Patavision Off White",
+          "status": "OK",
+          "count": 5,
+          "candidates": [
+            {
+              "id": "1063951381",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063951391",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White - G/L",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063951388",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White - M",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069539349",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White - P-S",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063951385",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White - P/S",
+              "preco": 299.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_size_matches": [
+        {
+          "source": "variacao",
+          "parent_id": "1063951381",
+          "id": "1063951385",
+          "codigo": "",
+          "preco": 299.99,
+          "preco_promocional": 0,
+          "grade": {
+            "Tamanho": "P/S"
+          },
+          "matched_size_text": "P/S"
+        },
+        {
+          "source": "variacao",
+          "parent_id": "1063951381",
+          "id": "1069539349",
+          "codigo": "",
+          "preco": 299.99,
+          "preco_promocional": 209.99,
+          "grade": {
+            "Tamanho": "P/S"
+          },
+          "matched_size_text": "P/S"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "classification": "ambiguous_tiny_duplicate_with_shopify_sku",
+      "next_action": "Decidir qual Tiny ID duplicado representa a variação real antes de preencher codigo; não escrever automático."
+    }
+  ]
+}

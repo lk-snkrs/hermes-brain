@@ -60,6 +60,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | LK P0 Tiny Code Correction Execution 2026-05-11 | `areas/lk/rotinas/lk-p0-tiny-code-correction-execution-2026-05-11.md` | Execução aprovada: 2/2 códigos Tiny preenchidos e verificados ao vivo, sem Shopify/preço/estoque/produto |
 | LK P0 Remaining Tiny Code Preview 2026-05-11 | `areas/lk/rotinas/lk-p0-remaining-tiny-code-preview-2026-05-11.md` | Lookup read-only dos 13 P0 restantes: 7 candidatos a preencher `codigo` Tiny via SKU Shopify, 6 bloqueados por decisão/cadastro |
 | LK P0 Remaining Tiny Code Execution 2026-05-11 | `areas/lk/rotinas/lk-p0-remaining-tiny-code-execution-2026-05-11.md` | Execução aprovada: 7/7 códigos Tiny preenchidos e verificados ao vivo, sem Shopify/preço/estoque/produto |
+| LK P0 Blocked Six Correction Queue 2026-05-11 | `areas/lk/rotinas/lk-p0-blocked-six-correction-queue-2026-05-11.md` | Recheck read-only dos 6 P0 restantes após 9 códigos Tiny corrigidos: 5 precisam código canônico Shopify/Tiny, 1 tem SKU Shopify mas Tiny duplicado |
 | LK SEO/CRO Weekly Improvement Loop | `areas/lk/rotinas/seo-cro-weekly-improvement-loop.md` | Rotina semanal read-only com Claude SEO: nota, meta e fila priorizada de melhorias de PDP/páginas |
 | Cross-sell Monitor | `areas/lk/sub-areas/crm/rotinas/cross-sell-monitor.md` | Oportunidades pós-pedido |
 | Playbook Campanha CRM Aprovada | `areas/lk/sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md` | Segmentação, preview e aprovação Lucas antes de campanha externa |
