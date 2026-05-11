@@ -1,0 +1,427 @@
+{
+  "generated_at": "2026-05-11T14:04:28",
+  "source": "Supabase LK read-only REST: orders/order_items; no DB writes, no campaigns, no customer messages",
+  "data_window": {
+    "orders": 4369,
+    "customers": 3633,
+    "first_order": "2023-02-02T08:01:01+00:00",
+    "last_order": "2026-04-16T20:13:58+00:00",
+    "gross_paid_estimate": 10998128.92
+  },
+  "segments": {
+    "Champions/VIP": 96,
+    "Base nurturing": 188,
+    "Novo alto potencial": 163,
+    "Leal/recorrente": 103,
+    "Alto valor esfriando": 1689,
+    "Reativação fria": 1394
+  },
+  "cohorts": {
+    "Lançamento High-End": 2500,
+    "Essential/Entrada": 351,
+    "Core Sneaker": 782
+  },
+  "action_queue": {
+    "VIP drop preview / concierge, sem desconto agressivo": 96,
+    "Nurturing editorial segmentado por marca/tamanho": 291,
+    "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias": 163,
+    "Reativação personalizada / wishlist / novidade da mesma família": 1689,
+    "Winback leve com curadoria, separar de VIP": 1394
+  },
+  "repeat_windows": {
+    "repeat_gap_count": 736,
+    "median_days_between_orders": 34.0,
+    "p25": 6.0,
+    "p75": 105.0
+  },
+  "top_products_units": [
+    [
+      "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      137
+    ],
+    [
+      "Jason Markk Repel Spray Impermeabilizante",
+      128
+    ],
+    [
+      "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+      102
+    ],
+    [
+      "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      93
+    ],
+    [
+      "Jason Markk Essential Kit de Limpeza",
+      88
+    ],
+    [
+      "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      79
+    ],
+    [
+      "Tênis adidas Samba OG White Black Gum Branco",
+      67
+    ],
+    [
+      "Tênis New Balance 204L Arid Timberwolf Bege",
+      64
+    ],
+    [
+      "Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege",
+      63
+    ],
+    [
+      "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      61
+    ],
+    [
+      "Tênis Onitsuka Tiger México 66 Birch Peacoat Bege",
+      60
+    ],
+    [
+      "Tênis Nike Dunk Low Cacao Wow Marrom",
+      54
+    ],
+    [
+      "Tênis Onitsuka Tiger Mexico 66 SD Cream Black Orange Bege",
+      47
+    ],
+    [
+      "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      46
+    ],
+    [
+      "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      46
+    ],
+    [
+      "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      45
+    ],
+    [
+      "Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo",
+      42
+    ],
+    [
+      "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+      42
+    ],
+    [
+      "The Peptide Lip Tints Rhode Multicolor",
+      42
+    ],
+    [
+      "Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege",
+      40
+    ]
+  ],
+  "preview_samples_anonymized": [
+    {
+      "customer_ref": "a4d09aa408",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "recency_days": 24,
+      "frequency": 2,
+      "monetary": 4199.98,
+      "rfm": "525",
+      "suggested_action": "VIP drop preview / concierge, sem desconto agressivo"
+    },
+    {
+      "customer_ref": "40b6095477",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "recency_days": 25,
+      "frequency": 2,
+      "monetary": 5599.98,
+      "rfm": "525",
+      "suggested_action": "VIP drop preview / concierge, sem desconto agressivo"
+    },
+    {
+      "customer_ref": "b44fd40506",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 25,
+      "frequency": 1,
+      "monetary": 6299.99,
+      "rfm": "515",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "8cdd2ed03b",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 25,
+      "frequency": 1,
+      "monetary": 5599.98,
+      "rfm": "515",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "f5f7b35b10",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 25,
+      "frequency": 1,
+      "monetary": 5999.99,
+      "rfm": "515",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "4b22a2955e",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 25,
+      "frequency": 1,
+      "monetary": 2799.99,
+      "rfm": "514",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "8095fe2111",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "recency_days": 26,
+      "frequency": 3,
+      "monetary": 25113.74,
+      "rfm": "535",
+      "suggested_action": "VIP drop preview / concierge, sem desconto agressivo"
+    },
+    {
+      "customer_ref": "994600f0cd",
+      "segment": "Champions/VIP",
+      "cohort": "Essential/Entrada",
+      "recency_days": 26,
+      "frequency": 2,
+      "monetary": 3269.97,
+      "rfm": "524",
+      "suggested_action": "VIP drop preview / concierge, sem desconto agressivo"
+    },
+    {
+      "customer_ref": "62398c69a3",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 26,
+      "frequency": 1,
+      "monetary": 3199.99,
+      "rfm": "514",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "972f47d744",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 26,
+      "frequency": 1,
+      "monetary": 3199.99,
+      "rfm": "514",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "cae9bfa784",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "recency_days": 26,
+      "frequency": 3,
+      "monetary": 6929.99,
+      "rfm": "535",
+      "suggested_action": "VIP drop preview / concierge, sem desconto agressivo"
+    },
+    {
+      "customer_ref": "46dddf5222",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "recency_days": 26,
+      "frequency": 2,
+      "monetary": 9250.0,
+      "rfm": "525",
+      "suggested_action": "VIP drop preview / concierge, sem desconto agressivo"
+    },
+    {
+      "customer_ref": "fc5f2a9500",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "recency_days": 26,
+      "frequency": 2,
+      "monetary": 4399.98,
+      "rfm": "525",
+      "suggested_action": "VIP drop preview / concierge, sem desconto agressivo"
+    },
+    {
+      "customer_ref": "e18fd66606",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "recency_days": 26,
+      "frequency": 5,
+      "monetary": 23399.9,
+      "rfm": "555",
+      "suggested_action": "VIP drop preview / concierge, sem desconto agressivo"
+    },
+    {
+      "customer_ref": "ab84457154",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "recency_days": 27,
+      "frequency": 2,
+      "monetary": 3749.99,
+      "rfm": "524",
+      "suggested_action": "VIP drop preview / concierge, sem desconto agressivo"
+    },
+    {
+      "customer_ref": "059a3e9f30",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 26,
+      "frequency": 1,
+      "monetary": 4320.0,
+      "rfm": "515",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "bc53e6e398",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "recency_days": 26,
+      "frequency": 2,
+      "monetary": 4479.99,
+      "rfm": "525",
+      "suggested_action": "VIP drop preview / concierge, sem desconto agressivo"
+    },
+    {
+      "customer_ref": "e80595814c",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 27,
+      "frequency": 1,
+      "monetary": 4899.98,
+      "rfm": "515",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "b55b9493bd",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "recency_days": 27,
+      "frequency": 2,
+      "monetary": 6204.98,
+      "rfm": "525",
+      "suggested_action": "VIP drop preview / concierge, sem desconto agressivo"
+    },
+    {
+      "customer_ref": "d5341aadb6",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "recency_days": 27,
+      "frequency": 3,
+      "monetary": 9879.94,
+      "rfm": "535",
+      "suggested_action": "VIP drop preview / concierge, sem desconto agressivo"
+    },
+    {
+      "customer_ref": "cb3bac1e97",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 28,
+      "frequency": 1,
+      "monetary": 4500.0,
+      "rfm": "515",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "e1bc6d6c32",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 28,
+      "frequency": 1,
+      "monetary": 2799.99,
+      "rfm": "514",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "338f6d4e11",
+      "segment": "Champions/VIP",
+      "cohort": "Lançamento High-End",
+      "recency_days": 27,
+      "frequency": 2,
+      "monetary": 10779.99,
+      "rfm": "525",
+      "suggested_action": "VIP drop preview / concierge, sem desconto agressivo"
+    },
+    {
+      "customer_ref": "85d491451a",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 27,
+      "frequency": 1,
+      "monetary": 4999.99,
+      "rfm": "515",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "ad19e60099",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 27,
+      "frequency": 1,
+      "monetary": 3150.0,
+      "rfm": "514",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "fa687f4753",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 27,
+      "frequency": 1,
+      "monetary": 5699.88,
+      "rfm": "515",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "e33bf4815c",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 27,
+      "frequency": 1,
+      "monetary": 3679.17,
+      "rfm": "514",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "6ed92ccaee",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 28,
+      "frequency": 1,
+      "monetary": 2700.0,
+      "rfm": "514",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "8d9a1db9b4",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 28,
+      "frequency": 1,
+      "monetary": 2799.99,
+      "rfm": "514",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    },
+    {
+      "customer_ref": "81af983296",
+      "segment": "Novo alto potencial",
+      "cohort": "Lançamento High-End",
+      "recency_days": 28,
+      "frequency": 1,
+      "monetary": 5599.98,
+      "rfm": "515",
+      "suggested_action": "Pós-compra editorial + prova social + convite para segunda compra em 21-45 dias"
+    }
+  ],
+  "next_steps": [
+    "validar nomenclatura dos segmentos",
+    "definir janela de cadência 21/45/75 dias",
+    "mapear produtos sugeridos por família usando estoque Tiny antes de qualquer envio",
+    "se aprovado depois: criar listas no Klaviyo/WhatsApp, sempre com preview"
+  ]
+}
