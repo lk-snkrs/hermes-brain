@@ -238,3 +238,24 @@
 
 ### Git sync
 - Weekly git commit executed via git-accountability.sh
+
+
+---
+
+## 🗂️ 2026-05-10 — Learning loop Hermes v0.13 / Kanban
+
+### Aprovação ≠ ausência de guardrail
+- Lucas aprovou `approvals.mode: off` para reduzir fricção de comandos, mas a regra operacional permanece: autonomia local/read-only/documental pode seguir; produção, Docker, gateway, secrets, banco, campanhas, envios externos e writes em plataformas exigem plano + rollback + aprovação explícita.
+- Regra prática: quando a configuração remove prompts mecânicos, compensar com guardrails escritos em SOUL/config/rotinas e handoff Kanban.
+
+### Docker-awareness antes de runtime
+- O Hermes ativo de Lucas é Docker-first no Hostinger; não assumir ambiente local puro quando o tema envolve gateway/runtime/dispatcher.
+- Qualquer mudança em container, compose, imagem, volume, rede, Traefik, root/SSH ou restart é mudança de produção e fica fora de workers low-risk.
+
+### Kanban real precisa de perfis pequenos
+- O primeiro piloto seguro criou/validou perfis restritos (`lk-analyst-readonly`, `lk-content-reviewer`, `hermes-ops-readonly`, `brain-process`) antes de atribuir cards reais.
+- Worker `brain-process` deve terminar com arquivo alterado, evidência, diff/readback e secret scan limpo; se surgir follow-up, criar card para o perfil certo em vez de scope creep.
+
+### PATH do dispatcher é dependência operacional
+- Em layout Docker/custom PATH, o dispatcher pode falhar com `spawn_failed` quando `hermes` não está no PATH do processo que spawna workers.
+- Mitigação de baixo risco: usar wrapper de dispatch manual que exporta `/opt/hermes/.venv/bin` e roda um pass controlado; não resolver com restart/alteração Docker sem aprovação.

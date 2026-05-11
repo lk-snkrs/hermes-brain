@@ -28,6 +28,7 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Concluídos / retirados da fila ativa
 
+- [x] Hermes v0.13 pós-deploy operacionalizado — release watch atualizado, `/goal`/Kanban/`no_agent` documentados, board LK Growth Ops criado em modo seguro, watchdogs `edd06fe19397` e `e7a61e275c37` ativos, e learning loop de aprovações documentado; workers amplos/dashboard público continuam bloqueados por aprovação.
 - [x] Script local/read-only de retomada de planos/PRDs — criado em 2026-05-09 com relatório `reports/retomada-planos-prds-2026-05-09.md`; cron recorrente não criado.
 - [x] Script executivo local/read-only para `brain-improvement-score.md` — criado em 2026-05-09 com relatório `reports/brain-improvement-score-2026-05-09-script.md`; sem cron/UI/runtime.
 - [x] Teste `material-ingest-to-prd.md` em PRD antigo — modo leve validado em 2026-05-09 com relatório `reports/material-ingest-to-prd-test-2026-05-09.md`.
