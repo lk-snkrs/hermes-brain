@@ -1,0 +1,5009 @@
+{
+  "generated_at": "2026-05-11T14:39:15.178411+00:00",
+  "scope": "LK Phase 5 P1 recipient structure + Tiny stock guard; read-only; public/anonymized.",
+  "guardrails": [
+    "No customer-facing send",
+    "No Klaviyo/WhatsApp/list creation",
+    "No Supabase/Shopify/Tiny writes",
+    "No raw customer email/name/phone in repo report or Telegram",
+    "Private ID-only file written outside repo: /opt/data/hermes_bruno_ingest/private_exports/lk_crm/lk_phase5_p1_recipient_ids_2026-05-11.json"
+  ],
+  "source_counts": {
+    "valid_orders_with_email": 4369,
+    "order_items": 8166,
+    "customers_table_rows": 26413,
+    "rfm_rows": 3679,
+    "p1_candidate_customer_anchor_rows": 108,
+    "p1_unique_customer_refs": 89
+  },
+  "queue_counts": {
+    "Novo alto potencial | Tênis New Balance 204L Mushroom Arid Stone Marrom": {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "previous_preview_count": 11,
+      "live_candidate_count": 13,
+      "dedup_customer_refs_sample": [
+        "0d3c52a37e06",
+        "16d7f261a722",
+        "4fda0f0642fd",
+        "5974ba76b6f0",
+        "6e7cfb26e339"
+      ],
+      "size_demand_top": [
+        [
+          "34",
+          2
+        ],
+        [
+          "37",
+          2
+        ],
+        [
+          "40",
+          2
+        ],
+        [
+          "36",
+          2
+        ],
+        [
+          "38",
+          2
+        ],
+        [
+          "35",
+          1
+        ],
+        [
+          "39",
+          1
+        ],
+        [
+          "42",
+          1
+        ]
+      ],
+      "contact_flags": {
+        "has_email": 13,
+        "has_phone": 3,
+        "accepts_marketing_unknown": 13
+      }
+    },
+    "Champions/VIP | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo": {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "previous_preview_count": 9,
+      "live_candidate_count": 11,
+      "dedup_customer_refs_sample": [
+        "1c75972d466a",
+        "46d27fb72f8d",
+        "6b34f8cd5c8f",
+        "6c2dbabd4c56",
+        "8df626dfce27"
+      ],
+      "size_demand_top": [
+        [
+          "37",
+          4
+        ],
+        [
+          "38",
+          2
+        ],
+        [
+          "35",
+          2
+        ],
+        [
+          "40",
+          1
+        ],
+        [
+          "44",
+          1
+        ],
+        [
+          "41.5",
+          1
+        ]
+      ],
+      "contact_flags": {
+        "has_email": 11,
+        "has_phone": 4,
+        "accepts_marketing_unknown": 11
+      }
+    },
+    "Champions/VIP | Tênis New Balance 204L Arid Timberwolf Bege": {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "previous_preview_count": 8,
+      "live_candidate_count": 13,
+      "dedup_customer_refs_sample": [
+        "0aa4ec0ea734",
+        "2be14f707695",
+        "338c716aa6fd",
+        "385736e4c387",
+        "3f9017e9735f"
+      ],
+      "size_demand_top": [
+        [
+          "36",
+          5
+        ],
+        [
+          "35",
+          2
+        ],
+        [
+          "37",
+          2
+        ],
+        [
+          "40",
+          2
+        ],
+        [
+          "38",
+          2
+        ]
+      ],
+      "contact_flags": {
+        "has_email": 13,
+        "accepts_marketing_unknown": 13,
+        "has_phone": 4
+      }
+    },
+    "Novo alto potencial | Tênis New Balance 204L Arid Timberwolf Bege": {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "previous_preview_count": 7,
+      "live_candidate_count": 11,
+      "dedup_customer_refs_sample": [
+        "0fe67572ceac",
+        "5974ba76b6f0",
+        "665b66a53298",
+        "66edf2396c84",
+        "6e7cfb26e339"
+      ],
+      "size_demand_top": [
+        [
+          "35",
+          4
+        ],
+        [
+          "36",
+          3
+        ],
+        [
+          "34",
+          1
+        ],
+        [
+          "39",
+          1
+        ],
+        [
+          "38",
+          1
+        ],
+        [
+          "40",
+          1
+        ]
+      ],
+      "contact_flags": {
+        "has_email": 11,
+        "accepts_marketing_unknown": 11,
+        "has_phone": 2
+      }
+    },
+    "Champions/VIP | Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo": {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "previous_preview_count": 7,
+      "live_candidate_count": 11,
+      "dedup_customer_refs_sample": [
+        "089e94a7b0ce",
+        "0aa4ec0ea734",
+        "3f9017e9735f",
+        "42aa128e3ef7",
+        "5e1d46a973e3"
+      ],
+      "size_demand_top": [
+        [
+          "39",
+          3
+        ],
+        [
+          "38",
+          2
+        ],
+        [
+          "40",
+          2
+        ],
+        [
+          "36",
+          2
+        ],
+        [
+          "37",
+          1
+        ],
+        [
+          "37.5",
+          1
+        ]
+      ],
+      "contact_flags": {
+        "has_email": 11,
+        "accepts_marketing_unknown": 11,
+        "has_phone": 6
+      }
+    },
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo": {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "previous_preview_count": 6,
+      "live_candidate_count": 10,
+      "dedup_customer_refs_sample": [
+        "6fcb5103f030",
+        "8a28c02c247f",
+        "902af51d82a5",
+        "991b9501c18b",
+        "a86ad42c2d22"
+      ],
+      "size_demand_top": [
+        [
+          "39",
+          3
+        ],
+        [
+          "36",
+          2
+        ],
+        [
+          "38",
+          1
+        ],
+        [
+          "41",
+          1
+        ],
+        [
+          "36.5",
+          1
+        ],
+        [
+          "40",
+          1
+        ],
+        [
+          "35.5",
+          1
+        ]
+      ],
+      "contact_flags": {
+        "has_email": 10,
+        "has_phone": 8,
+        "accepts_marketing_unknown": 10
+      }
+    },
+    "Champions/VIP | Tênis New Balance 204L Mushroom Arid Stone Marrom": {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "previous_preview_count": 5,
+      "live_candidate_count": 22,
+      "dedup_customer_refs_sample": [
+        "05593bc4c7e5",
+        "1b6820205bce",
+        "222e4257cb98",
+        "2be14f707695",
+        "3e02713d5a7b"
+      ],
+      "size_demand_top": [
+        [
+          "37",
+          6
+        ],
+        [
+          "38",
+          5
+        ],
+        [
+          "36",
+          4
+        ],
+        [
+          "39",
+          3
+        ],
+        [
+          "35",
+          3
+        ],
+        [
+          "42",
+          1
+        ]
+      ],
+      "contact_flags": {
+        "has_email": 22,
+        "has_phone": 8,
+        "accepts_marketing_unknown": 22
+      }
+    },
+    "Champions/VIP | Tênis Adidas Samba OG Crochet Pack Sand Strata Bege": {
+      "priority": "P1",
+      "segment": "Champions/VIP",
+      "anchor_product": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "previous_preview_count": 4,
+      "live_candidate_count": 11,
+      "dedup_customer_refs_sample": [
+        "05593bc4c7e5",
+        "1711d5bae213",
+        "1d64ccfc6c39",
+        "385736e4c387",
+        "42e02636704c"
+      ],
+      "size_demand_top": [
+        [
+          "35",
+          3
+        ],
+        [
+          "36",
+          2
+        ],
+        [
+          "37",
+          2
+        ],
+        [
+          "39",
+          2
+        ],
+        [
+          "40",
+          1
+        ],
+        [
+          "38",
+          1
+        ]
+      ],
+      "contact_flags": {
+        "has_email": 11,
+        "accepts_marketing_unknown": 11,
+        "has_phone": 3
+      }
+    },
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 White Black Branco": {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "previous_preview_count": 4,
+      "live_candidate_count": 2,
+      "dedup_customer_refs_sample": [
+        "33c33cd3c34d",
+        "cc5860991807"
+      ],
+      "size_demand_top": [
+        [
+          "37",
+          2
+        ]
+      ],
+      "contact_flags": {
+        "has_email": 2,
+        "accepts_marketing_unknown": 2
+      }
+    },
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege": {
+      "priority": "P1",
+      "segment": "Novo alto potencial",
+      "anchor_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "previous_preview_count": 3,
+      "live_candidate_count": 4,
+      "dedup_customer_refs_sample": [
+        "01b9ebd53da2",
+        "1c6bda80da3b",
+        "a65464285dfd",
+        "ab64aa24e71e"
+      ],
+      "size_demand_top": [
+        [
+          "42.5",
+          1
+        ],
+        [
+          "40",
+          1
+        ],
+        [
+          "36",
+          1
+        ],
+        [
+          "37",
+          1
+        ]
+      ],
+      "contact_flags": {
+        "has_email": 4,
+        "accepts_marketing_unknown": 4,
+        "has_phone": 1
+      }
+    }
+  },
+  "tiny_stock_by_anchor": {
+    "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege": {
+      "checked_sizes": 6,
+      "available_sizes": [
+        {
+          "sku": "JR9446-4",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 1.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "JR9446-4",
+              "requested_size": "37",
+              "tiny_size": "37",
+              "status": "OK",
+              "tiny_id": "1064539663",
+              "nome": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege - 37",
+              "codigo": "JR9446-4",
+              "situacao": null,
+              "saldo": 3.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 1.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "JR9446-6",
+          "size": "39",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 14
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 25
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 4.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "JR9446-6",
+              "requested_size": "39",
+              "tiny_size": "39",
+              "status": "OK",
+              "tiny_id": "1064539669",
+              "nome": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege - 39",
+              "codigo": "JR9446-6",
+              "situacao": null,
+              "saldo": 6.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 4.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 6
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "JR9446-7",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 2.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "JR9446-7",
+              "requested_size": "40",
+              "tiny_size": "40",
+              "status": "OK",
+              "tiny_id": "1064539672",
+              "nome": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege - 40",
+              "codigo": "JR9446-7",
+              "situacao": null,
+              "saldo": 2.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 2.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "zero_or_unmapped_sizes": [
+        {
+          "sku": "JR9446-2",
+          "size": "35",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "JR9446-2",
+              "requested_size": "35",
+              "tiny_size": "35",
+              "status": "OK",
+              "tiny_id": "1064539657",
+              "nome": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege - 35",
+              "codigo": "JR9446-2",
+              "situacao": null,
+              "saldo": 2.0,
+              "saldo_reservado": 5.0,
+              "saldo_disponivel_estimado": 0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "JR9446-3",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "JR9446-3",
+              "requested_size": "36",
+              "tiny_size": "36",
+              "status": "OK",
+              "tiny_id": "1064539660",
+              "nome": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege - 36",
+              "codigo": "JR9446-3",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 3.0,
+              "saldo_disponivel_estimado": 0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "JR9446-5",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        }
+      ],
+      "variant_checks": [
+        {
+          "sku": "JR9446-2",
+          "size": "35",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "JR9446-2",
+              "requested_size": "35",
+              "tiny_size": "35",
+              "status": "OK",
+              "tiny_id": "1064539657",
+              "nome": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege - 35",
+              "codigo": "JR9446-2",
+              "situacao": null,
+              "saldo": 2.0,
+              "saldo_reservado": 5.0,
+              "saldo_disponivel_estimado": 0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "JR9446-3",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "JR9446-3",
+              "requested_size": "36",
+              "tiny_size": "36",
+              "status": "OK",
+              "tiny_id": "1064539660",
+              "nome": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege - 36",
+              "codigo": "JR9446-3",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 3.0,
+              "saldo_disponivel_estimado": 0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "JR9446-4",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 1.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "JR9446-4",
+              "requested_size": "37",
+              "tiny_size": "37",
+              "status": "OK",
+              "tiny_id": "1064539663",
+              "nome": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege - 37",
+              "codigo": "JR9446-4",
+              "situacao": null,
+              "saldo": 3.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 1.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "JR9446-5",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "JR9446-6",
+          "size": "39",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 14
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 25
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 4.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "JR9446-6",
+              "requested_size": "39",
+              "tiny_size": "39",
+              "status": "OK",
+              "tiny_id": "1064539669",
+              "nome": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege - 39",
+              "codigo": "JR9446-6",
+              "situacao": null,
+              "saldo": 6.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 4.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 6
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "JR9446-7",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 2.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "JR9446-7",
+              "requested_size": "40",
+              "tiny_size": "40",
+              "status": "OK",
+              "tiny_id": "1064539672",
+              "nome": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege - 40",
+              "codigo": "JR9446-7",
+              "situacao": null,
+              "saldo": 2.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 2.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Tênis New Balance 204L Arid Timberwolf Bege": {
+      "checked_sizes": 7,
+      "available_sizes": [
+        {
+          "sku": "U204LMMC-1",
+          "size": "34",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 1.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMC-1",
+              "requested_size": "34",
+              "tiny_size": "34",
+              "status": "OK",
+              "tiny_id": "1065903206",
+              "nome": "Tênis New Balance 204L Arid Timberwolf Bege - 34",
+              "codigo": "U204LMMC-1",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 1.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMC-2",
+          "size": "35",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 1.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMC-2",
+              "requested_size": "35",
+              "tiny_size": "35",
+              "status": "OK",
+              "tiny_id": "1065903209",
+              "nome": "Tênis New Balance 204L Arid Timberwolf Bege - 35",
+              "codigo": "U204LMMC-2",
+              "situacao": null,
+              "saldo": 3.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 1.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMC-3",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 10.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMC-3",
+              "requested_size": "36",
+              "tiny_size": "36",
+              "status": "OK",
+              "tiny_id": "1065903212",
+              "nome": "Tênis New Balance 204L Arid Timberwolf Bege - 36",
+              "codigo": "U204LMMC-3",
+              "situacao": null,
+              "saldo": 11.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 10.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 8
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "zero_or_unmapped_sizes": [
+        {
+          "sku": "U204LMMC-4",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMC-4",
+              "requested_size": "37",
+              "tiny_size": "37",
+              "status": "Erro",
+              "tiny_id": "1065903215",
+              "nome": null,
+              "codigo": null,
+              "situacao": null,
+              "saldo": 0.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 0.0,
+              "depositos": []
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMC-5",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "U204LMMC-6",
+          "size": "39",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "U204LMMC-7",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        }
+      ],
+      "variant_checks": [
+        {
+          "sku": "U204LMMC-1",
+          "size": "34",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 1.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMC-1",
+              "requested_size": "34",
+              "tiny_size": "34",
+              "status": "OK",
+              "tiny_id": "1065903206",
+              "nome": "Tênis New Balance 204L Arid Timberwolf Bege - 34",
+              "codigo": "U204LMMC-1",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 1.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMC-2",
+          "size": "35",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 1.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMC-2",
+              "requested_size": "35",
+              "tiny_size": "35",
+              "status": "OK",
+              "tiny_id": "1065903209",
+              "nome": "Tênis New Balance 204L Arid Timberwolf Bege - 35",
+              "codigo": "U204LMMC-2",
+              "situacao": null,
+              "saldo": 3.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 1.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMC-3",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 10.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMC-3",
+              "requested_size": "36",
+              "tiny_size": "36",
+              "status": "OK",
+              "tiny_id": "1065903212",
+              "nome": "Tênis New Balance 204L Arid Timberwolf Bege - 36",
+              "codigo": "U204LMMC-3",
+              "situacao": null,
+              "saldo": 11.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 10.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 8
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMC-4",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMC-4",
+              "requested_size": "37",
+              "tiny_size": "37",
+              "status": "Erro",
+              "tiny_id": "1065903215",
+              "nome": null,
+              "codigo": null,
+              "situacao": null,
+              "saldo": 0.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 0.0,
+              "depositos": []
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMC-5",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "U204LMMC-6",
+          "size": "39",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "U204LMMC-7",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        }
+      ]
+    },
+    "Tênis New Balance 204L Mushroom Arid Stone Marrom": {
+      "checked_sizes": 8,
+      "available_sizes": [
+        {
+          "sku": "U204LMMA-1",
+          "size": "34",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 1.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-1",
+              "requested_size": "34",
+              "tiny_size": "34",
+              "status": "OK",
+              "tiny_id": "1065897955",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 34",
+              "codigo": "U204LMMA-1",
+              "situacao": null,
+              "saldo": 2.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 1.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-2",
+          "size": "35",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 6.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-2",
+              "requested_size": "35",
+              "tiny_size": "35",
+              "status": "OK",
+              "tiny_id": "1065897958",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 35",
+              "codigo": "U204LMMA-2",
+              "situacao": null,
+              "saldo": 7.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 6.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 7
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-3",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 5.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-3",
+              "requested_size": "36",
+              "tiny_size": "36",
+              "status": "OK",
+              "tiny_id": "1065897961",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 36",
+              "codigo": "U204LMMA-3",
+              "situacao": null,
+              "saldo": 7.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 5.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 4
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-4",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 9.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-4",
+              "requested_size": "37",
+              "tiny_size": "37",
+              "status": "OK",
+              "tiny_id": "1065897966",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 37",
+              "codigo": "U204LMMA-4",
+              "situacao": null,
+              "saldo": 10.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 9.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 5
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 4
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-5",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 4.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-5",
+              "requested_size": "38",
+              "tiny_size": "38",
+              "status": "OK",
+              "tiny_id": "1065897969",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 38",
+              "codigo": "U204LMMA-5",
+              "situacao": null,
+              "saldo": 7.0,
+              "saldo_reservado": 3.0,
+              "saldo_disponivel_estimado": 4.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 5
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-6",
+          "size": "39",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 5.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-6",
+              "requested_size": "39",
+              "tiny_size": "39",
+              "status": "OK",
+              "tiny_id": "1065897972",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 39",
+              "codigo": "U204LMMA-6",
+              "situacao": null,
+              "saldo": 5.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 5.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 3
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-7",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 6.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-7",
+              "requested_size": "40",
+              "tiny_size": "40",
+              "status": "OK",
+              "tiny_id": "1065897975",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 40",
+              "codigo": "U204LMMA-7",
+              "situacao": null,
+              "saldo": 6.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 6.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 4
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-9",
+          "size": "42",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 1.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-9",
+              "requested_size": "42",
+              "tiny_size": "42",
+              "status": "OK",
+              "tiny_id": "1065897981",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 42",
+              "codigo": "U204LMMA-9",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 1.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "zero_or_unmapped_sizes": [],
+      "variant_checks": [
+        {
+          "sku": "U204LMMA-1",
+          "size": "34",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 1.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-1",
+              "requested_size": "34",
+              "tiny_size": "34",
+              "status": "OK",
+              "tiny_id": "1065897955",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 34",
+              "codigo": "U204LMMA-1",
+              "situacao": null,
+              "saldo": 2.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 1.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-2",
+          "size": "35",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 6.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-2",
+              "requested_size": "35",
+              "tiny_size": "35",
+              "status": "OK",
+              "tiny_id": "1065897958",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 35",
+              "codigo": "U204LMMA-2",
+              "situacao": null,
+              "saldo": 7.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 6.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 7
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-3",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 5.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-3",
+              "requested_size": "36",
+              "tiny_size": "36",
+              "status": "OK",
+              "tiny_id": "1065897961",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 36",
+              "codigo": "U204LMMA-3",
+              "situacao": null,
+              "saldo": 7.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 5.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 4
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-4",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 9.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-4",
+              "requested_size": "37",
+              "tiny_size": "37",
+              "status": "OK",
+              "tiny_id": "1065897966",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 37",
+              "codigo": "U204LMMA-4",
+              "situacao": null,
+              "saldo": 10.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 9.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 5
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 4
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-5",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 4.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-5",
+              "requested_size": "38",
+              "tiny_size": "38",
+              "status": "OK",
+              "tiny_id": "1065897969",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 38",
+              "codigo": "U204LMMA-5",
+              "situacao": null,
+              "saldo": 7.0,
+              "saldo_reservado": 3.0,
+              "saldo_disponivel_estimado": 4.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 5
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-6",
+          "size": "39",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 5.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-6",
+              "requested_size": "39",
+              "tiny_size": "39",
+              "status": "OK",
+              "tiny_id": "1065897972",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 39",
+              "codigo": "U204LMMA-6",
+              "situacao": null,
+              "saldo": 5.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 5.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 3
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-7",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 6.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-7",
+              "requested_size": "40",
+              "tiny_size": "40",
+              "status": "OK",
+              "tiny_id": "1065897975",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 40",
+              "codigo": "U204LMMA-7",
+              "situacao": null,
+              "saldo": 6.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 6.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 4
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "U204LMMA-9",
+          "size": "42",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 1.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "U204LMMA-9",
+              "requested_size": "42",
+              "tiny_size": "42",
+              "status": "OK",
+              "tiny_id": "1065897981",
+              "nome": "Tênis New Balance 204L Mushroom Arid Stone Marrom - 42",
+              "codigo": "U204LMMA-9",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 1.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo": {
+      "checked_sizes": 6,
+      "available_sizes": [
+        {
+          "sku": "HV8547-700-6",
+          "size": "39",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 16
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 100
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 5.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "HV8547-700-6",
+              "requested_size": "39",
+              "tiny_size": "39",
+              "status": "OK",
+              "tiny_id": "1066218824",
+              "nome": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo - 39",
+              "codigo": "HV8547-700-6",
+              "situacao": null,
+              "saldo": 5.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 5.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 4
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "HV8547-700-7",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 2.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "HV8547-700-7",
+              "requested_size": "40",
+              "tiny_size": "40",
+              "status": "OK",
+              "tiny_id": "1066218827",
+              "nome": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo - 40",
+              "codigo": "HV8547-700-7",
+              "situacao": null,
+              "saldo": 2.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 2.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "zero_or_unmapped_sizes": [
+        {
+          "sku": "HV8547-700-3",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "HV8547-700-4",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "HV8547-700-10",
+          "size": "37.5",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "HV8547-700-5",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        }
+      ],
+      "variant_checks": [
+        {
+          "sku": "HV8547-700-3",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "HV8547-700-4",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "HV8547-700-10",
+          "size": "37.5",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "HV8547-700-5",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "HV8547-700-6",
+          "size": "39",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 16
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 100
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 5.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "HV8547-700-6",
+              "requested_size": "39",
+              "tiny_size": "39",
+              "status": "OK",
+              "tiny_id": "1066218824",
+              "nome": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo - 39",
+              "codigo": "HV8547-700-6",
+              "situacao": null,
+              "saldo": 5.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 5.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 4
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "HV8547-700-7",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 2.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "HV8547-700-7",
+              "requested_size": "40",
+              "tiny_size": "40",
+              "status": "OK",
+              "tiny_id": "1066218827",
+              "nome": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo - 40",
+              "codigo": "HV8547-700-7",
+              "situacao": null,
+              "saldo": 2.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 2.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo": {
+      "checked_sizes": 11,
+      "available_sizes": [
+        {
+          "sku": "1183C102 751",
+          "size": "35",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 5.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C102 751",
+              "requested_size": "35",
+              "tiny_size": "35",
+              "status": "OK",
+              "tiny_id": "1058668610",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 35",
+              "codigo": "1183C102 751-2",
+              "situacao": null,
+              "saldo": 9.0,
+              "saldo_reservado": 4.0,
+              "saldo_disponivel_estimado": 5.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 6
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C102 751",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 18
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 100
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 8.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "1183C102 751",
+              "requested_size": "37",
+              "tiny_size": "37",
+              "status": "OK",
+              "tiny_id": "1058668616",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 37",
+              "codigo": "1183C102 751-4",
+              "situacao": null,
+              "saldo": 14.0,
+              "saldo_reservado": 6.0,
+              "saldo_disponivel_estimado": 8.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 13
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C102 751",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 3.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C102 751",
+              "requested_size": "38",
+              "tiny_size": "38",
+              "status": "OK",
+              "tiny_id": "1058668619",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 38",
+              "codigo": "1183C102 751-5",
+              "situacao": null,
+              "saldo": 5.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 3.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 5
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C102 751",
+          "size": "39",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 8.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C102 751",
+              "requested_size": "39",
+              "tiny_size": "39",
+              "status": "OK",
+              "tiny_id": "1058668622",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 39",
+              "codigo": "1183C102 751-6",
+              "situacao": null,
+              "saldo": 11.0,
+              "saldo_reservado": 3.0,
+              "saldo_disponivel_estimado": 8.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 11
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C102 751",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 7.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C102 751",
+              "requested_size": "40",
+              "tiny_size": "40",
+              "status": "OK",
+              "tiny_id": "1061068027",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 40",
+              "codigo": "1183C102 751-9",
+              "situacao": null,
+              "saldo": 7.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 7.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 7
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "8EDRCO062V",
+          "size": "41",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 18
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 100
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 2.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "8EDRCO062V",
+              "requested_size": "41",
+              "tiny_size": "41",
+              "status": "OK",
+              "tiny_id": "1061068030",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 41",
+              "codigo": "1183C102 751-10",
+              "situacao": null,
+              "saldo": 2.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 2.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "zero_or_unmapped_sizes": [
+        {
+          "sku": "",
+          "size": "35.5",
+          "searches": [
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 18
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 100
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "",
+              "requested_size": "35.5",
+              "tiny_size": "35.5",
+              "status": "OK",
+              "tiny_id": "1061777459",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 35.5",
+              "codigo": "1183C102 751-11",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 0.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C102 751",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "1183C102 751",
+          "size": "36.5",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "1183C102.751",
+          "size": "41.5",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "",
+          "size": "44",
+          "searches": [
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 18
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 100
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "",
+              "requested_size": "44",
+              "tiny_size": "44",
+              "status": "OK",
+              "tiny_id": "1063991971",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 44",
+              "codigo": "1183C102.751",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 7.0,
+              "saldo_disponivel_estimado": 0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "variant_checks": [
+        {
+          "sku": "1183C102 751",
+          "size": "35",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 5.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C102 751",
+              "requested_size": "35",
+              "tiny_size": "35",
+              "status": "OK",
+              "tiny_id": "1058668610",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 35",
+              "codigo": "1183C102 751-2",
+              "situacao": null,
+              "saldo": 9.0,
+              "saldo_reservado": 4.0,
+              "saldo_disponivel_estimado": 5.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 6
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "",
+          "size": "35.5",
+          "searches": [
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 18
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 100
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "",
+              "requested_size": "35.5",
+              "tiny_size": "35.5",
+              "status": "OK",
+              "tiny_id": "1061777459",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 35.5",
+              "codigo": "1183C102 751-11",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 0.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C102 751",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "1183C102 751",
+          "size": "36.5",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "1183C102 751",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 18
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 100
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 8.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "1183C102 751",
+              "requested_size": "37",
+              "tiny_size": "37",
+              "status": "OK",
+              "tiny_id": "1058668616",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 37",
+              "codigo": "1183C102 751-4",
+              "situacao": null,
+              "saldo": 14.0,
+              "saldo_reservado": 6.0,
+              "saldo_disponivel_estimado": 8.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 13
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C102 751",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 3.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C102 751",
+              "requested_size": "38",
+              "tiny_size": "38",
+              "status": "OK",
+              "tiny_id": "1058668619",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 38",
+              "codigo": "1183C102 751-5",
+              "situacao": null,
+              "saldo": 5.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 3.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 5
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C102 751",
+          "size": "39",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 8.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C102 751",
+              "requested_size": "39",
+              "tiny_size": "39",
+              "status": "OK",
+              "tiny_id": "1058668622",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 39",
+              "codigo": "1183C102 751-6",
+              "situacao": null,
+              "saldo": 11.0,
+              "saldo_reservado": 3.0,
+              "saldo_disponivel_estimado": 8.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 11
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C102 751",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 7.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C102 751",
+              "requested_size": "40",
+              "tiny_size": "40",
+              "status": "OK",
+              "tiny_id": "1061068027",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 40",
+              "codigo": "1183C102 751-9",
+              "situacao": null,
+              "saldo": 7.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 7.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 7
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "8EDRCO062V",
+          "size": "41",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 18
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 100
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 2.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "8EDRCO062V",
+              "requested_size": "41",
+              "tiny_size": "41",
+              "status": "OK",
+              "tiny_id": "1061068030",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 41",
+              "codigo": "1183C102 751-10",
+              "situacao": null,
+              "saldo": 2.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 2.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C102.751",
+          "size": "41.5",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "",
+          "size": "44",
+          "searches": [
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 18
+            },
+            {
+              "query_kind": "title",
+              "status": "OK",
+              "count": 100
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "",
+              "requested_size": "44",
+              "tiny_size": "44",
+              "status": "OK",
+              "tiny_id": "1063991971",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 44",
+              "codigo": "1183C102.751",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 7.0,
+              "saldo_disponivel_estimado": 0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege": {
+      "checked_sizes": 6,
+      "available_sizes": [
+        {
+          "sku": "1183C015101",
+          "size": "35",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 4.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C015101",
+              "requested_size": "35",
+              "tiny_size": "35",
+              "status": "OK",
+              "tiny_id": "1061569697",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege - 35",
+              "codigo": "1183C015101-2",
+              "situacao": null,
+              "saldo": 5.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 4.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 5
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C015101",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 3.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C015101",
+              "requested_size": "36",
+              "tiny_size": "36",
+              "status": "OK",
+              "tiny_id": "1061569700",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege - 36",
+              "codigo": "1183C015101-3",
+              "situacao": null,
+              "saldo": 4.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 3.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 3
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C015101",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 5.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C015101",
+              "requested_size": "37",
+              "tiny_size": "37",
+              "status": "OK",
+              "tiny_id": "1061569703",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege - 37",
+              "codigo": "1183C015101-4",
+              "situacao": null,
+              "saldo": 6.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 5.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 4
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C015101",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 2.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C015101",
+              "requested_size": "38",
+              "tiny_size": "38",
+              "status": "OK",
+              "tiny_id": "1061569706",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege - 38",
+              "codigo": "1183C015101-5",
+              "situacao": null,
+              "saldo": 4.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 2.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C015101",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 1.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C015101",
+              "requested_size": "40",
+              "tiny_size": "40",
+              "status": "OK",
+              "tiny_id": "1061569712",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege - 40",
+              "codigo": "1183C015101-7",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 1.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "zero_or_unmapped_sizes": [
+        {
+          "sku": "1183C015101",
+          "size": "42.5",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C015101",
+              "requested_size": "42.5",
+              "tiny_size": "42.5",
+              "status": "Erro",
+              "tiny_id": "1061569733",
+              "nome": null,
+              "codigo": null,
+              "situacao": null,
+              "saldo": 0.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 0.0,
+              "depositos": []
+            }
+          ]
+        }
+      ],
+      "variant_checks": [
+        {
+          "sku": "1183C015101",
+          "size": "35",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 4.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C015101",
+              "requested_size": "35",
+              "tiny_size": "35",
+              "status": "OK",
+              "tiny_id": "1061569697",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege - 35",
+              "codigo": "1183C015101-2",
+              "situacao": null,
+              "saldo": 5.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 4.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 5
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C015101",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 3.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C015101",
+              "requested_size": "36",
+              "tiny_size": "36",
+              "status": "OK",
+              "tiny_id": "1061569700",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege - 36",
+              "codigo": "1183C015101-3",
+              "situacao": null,
+              "saldo": 4.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 3.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 3
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C015101",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 5.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C015101",
+              "requested_size": "37",
+              "tiny_size": "37",
+              "status": "OK",
+              "tiny_id": "1061569703",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege - 37",
+              "codigo": "1183C015101-4",
+              "situacao": null,
+              "saldo": 6.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 5.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 4
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C015101",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 2.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C015101",
+              "requested_size": "38",
+              "tiny_size": "38",
+              "status": "OK",
+              "tiny_id": "1061569706",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege - 38",
+              "codigo": "1183C015101-5",
+              "situacao": null,
+              "saldo": 4.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 2.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C015101",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 1.0,
+          "status": "available",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C015101",
+              "requested_size": "40",
+              "tiny_size": "40",
+              "status": "OK",
+              "tiny_id": "1061569712",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege - 40",
+              "codigo": "1183C015101-7",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 1.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183C015101",
+          "size": "42.5",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "parent_variation",
+              "requested_sku": "1183C015101",
+              "requested_size": "42.5",
+              "tiny_size": "42.5",
+              "status": "Erro",
+              "tiny_id": "1061569733",
+              "nome": null,
+              "codigo": null,
+              "situacao": null,
+              "saldo": 0.0,
+              "saldo_reservado": 0.0,
+              "saldo_disponivel_estimado": 0.0,
+              "depositos": []
+            }
+          ]
+        }
+      ]
+    },
+    "Tênis Onitsuka Tiger Mexico 66 White Black Branco": {
+      "checked_sizes": 5,
+      "available_sizes": [],
+      "zero_or_unmapped_sizes": [
+        {
+          "sku": "1183A201-126-2",
+          "size": "35",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "1183A201-126-3",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "1183A201-126-4",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "1183A201-126-4",
+              "requested_size": "37",
+              "tiny_size": "37",
+              "status": "OK",
+              "tiny_id": "1062980810",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 White Black Branco - 37",
+              "codigo": "1183A201-126-4",
+              "situacao": null,
+              "saldo": 2.0,
+              "saldo_reservado": 4.0,
+              "saldo_disponivel_estimado": 0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": -1
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183A201-126-5",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "1183A201-126-5",
+              "requested_size": "38",
+              "tiny_size": "38",
+              "status": "OK",
+              "tiny_id": "1062980815",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 White Black Branco - 38",
+              "codigo": "1183A201-126-5",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 0.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183A201-126-7",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "1183A201-126-7",
+              "requested_size": "40",
+              "tiny_size": "40",
+              "status": "OK",
+              "tiny_id": "1062980823",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 White Black Branco - 40",
+              "codigo": "1183A201-126-7",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "variant_checks": [
+        {
+          "sku": "1183A201-126-2",
+          "size": "35",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "1183A201-126-3",
+          "size": "36",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            },
+            {
+              "query_kind": "title",
+              "status": "Erro",
+              "count": 0
+            }
+          ],
+          "match_count": 0,
+          "available_estimated_total": 0,
+          "status": "not_mapped",
+          "matches": []
+        },
+        {
+          "sku": "1183A201-126-4",
+          "size": "37",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "1183A201-126-4",
+              "requested_size": "37",
+              "tiny_size": "37",
+              "status": "OK",
+              "tiny_id": "1062980810",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 White Black Branco - 37",
+              "codigo": "1183A201-126-4",
+              "situacao": null,
+              "saldo": 2.0,
+              "saldo_reservado": 4.0,
+              "saldo_disponivel_estimado": 0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 2
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": -1
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183A201-126-5",
+          "size": "38",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "1183A201-126-5",
+              "requested_size": "38",
+              "tiny_size": "38",
+              "status": "OK",
+              "tiny_id": "1062980815",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 White Black Branco - 38",
+              "codigo": "1183A201-126-5",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 1.0,
+              "saldo_disponivel_estimado": 0.0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sku": "1183A201-126-7",
+          "size": "40",
+          "searches": [
+            {
+              "query_kind": "sku",
+              "status": "OK",
+              "count": 1
+            }
+          ],
+          "match_count": 1,
+          "available_estimated_total": 0.0,
+          "status": "zero_stock",
+          "matches": [
+            {
+              "match_source": "direct_product",
+              "requested_sku": "1183A201-126-7",
+              "requested_size": "40",
+              "tiny_size": "40",
+              "status": "OK",
+              "tiny_id": "1062980823",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 White Black Branco - 40",
+              "codigo": "1183A201-126-7",
+              "situacao": null,
+              "saldo": 1.0,
+              "saldo_reservado": 2.0,
+              "saldo_disponivel_estimado": 0,
+              "depositos": [
+                {
+                  "nome": "LK FISCAL",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | CONTROLE ESTOQUE",
+                  "desconsiderar": "N",
+                  "saldo": 0
+                },
+                {
+                  "nome": "LK | ENCOMENDAS",
+                  "desconsiderar": "N",
+                  "saldo": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "readiness_by_group": {
+    "Novo alto potencial | Tênis New Balance 204L Mushroom Arid Stone Marrom": {
+      "live_candidate_count": 13,
+      "ready_with_same_size_stock": 13,
+      "blocked_by_stock_or_mapping": 0,
+      "ready_refs_sample": [
+        {
+          "customer_ref": "b5de204b5bce",
+          "size": "34",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "16d7f261a722",
+          "size": "34",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "8a46d73d9202",
+          "size": "37",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "6e7cfb26e339",
+          "size": "35",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "d7b838db4504",
+          "size": "40",
+          "stock_status": "available"
+        }
+      ],
+      "blocked_refs_sample": [],
+      "campaign_gate": "can_preview_recipients_for_approval"
+    },
+    "Champions/VIP | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo": {
+      "live_candidate_count": 11,
+      "ready_with_same_size_stock": 9,
+      "blocked_by_stock_or_mapping": 2,
+      "ready_refs_sample": [
+        {
+          "customer_ref": "e2a13032450e",
+          "size": "38",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "ea92d23d6d81",
+          "size": "37",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "8df626dfce27",
+          "size": "35",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "f99801ece728",
+          "size": "37",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "6c2dbabd4c56",
+          "size": "40",
+          "stock_status": "available"
+        }
+      ],
+      "blocked_refs_sample": [
+        {
+          "customer_ref": "ef9f8e21ff94",
+          "size": "44",
+          "stock_status": "zero_stock"
+        },
+        {
+          "customer_ref": "b5caa3890adc",
+          "size": "41.5",
+          "stock_status": "not_mapped"
+        }
+      ],
+      "campaign_gate": "can_preview_recipients_for_approval"
+    },
+    "Champions/VIP | Tênis New Balance 204L Arid Timberwolf Bege": {
+      "live_candidate_count": 13,
+      "ready_with_same_size_stock": 7,
+      "blocked_by_stock_or_mapping": 6,
+      "ready_refs_sample": [
+        {
+          "customer_ref": "e27521aaa47a",
+          "size": "35",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "e0fc56fa271b",
+          "size": "35",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "51e90485012b",
+          "size": "36",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "ced01bfe3a1c",
+          "size": "36",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "6cbaf4a4ed5d",
+          "size": "36",
+          "stock_status": "available"
+        }
+      ],
+      "blocked_refs_sample": [
+        {
+          "customer_ref": "385736e4c387",
+          "size": "37",
+          "stock_status": "zero_stock"
+        },
+        {
+          "customer_ref": "3f9017e9735f",
+          "size": "40",
+          "stock_status": "not_mapped"
+        },
+        {
+          "customer_ref": "2be14f707695",
+          "size": "38",
+          "stock_status": "not_mapped"
+        },
+        {
+          "customer_ref": "338c716aa6fd",
+          "size": "37",
+          "stock_status": "zero_stock"
+        },
+        {
+          "customer_ref": "0aa4ec0ea734",
+          "size": "40",
+          "stock_status": "not_mapped"
+        }
+      ],
+      "campaign_gate": "can_preview_recipients_for_approval"
+    },
+    "Novo alto potencial | Tênis New Balance 204L Arid Timberwolf Bege": {
+      "live_candidate_count": 11,
+      "ready_with_same_size_stock": 8,
+      "blocked_by_stock_or_mapping": 3,
+      "ready_refs_sample": [
+        {
+          "customer_ref": "e130b8f7146d",
+          "size": "36",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "8bae4aea22c6",
+          "size": "34",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "6e7cfb26e339",
+          "size": "35",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "90513ac3b972",
+          "size": "36",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "86ceb22ae95f",
+          "size": "35",
+          "stock_status": "available"
+        }
+      ],
+      "blocked_refs_sample": [
+        {
+          "customer_ref": "e0a297a31db4",
+          "size": "39",
+          "stock_status": "not_mapped"
+        },
+        {
+          "customer_ref": "5974ba76b6f0",
+          "size": "38",
+          "stock_status": "not_mapped"
+        },
+        {
+          "customer_ref": "b6c00aafe792",
+          "size": "40",
+          "stock_status": "not_mapped"
+        }
+      ],
+      "campaign_gate": "can_preview_recipients_for_approval"
+    },
+    "Champions/VIP | Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo": {
+      "live_candidate_count": 11,
+      "ready_with_same_size_stock": 5,
+      "blocked_by_stock_or_mapping": 6,
+      "ready_refs_sample": [
+        {
+          "customer_ref": "ee27334c43e0",
+          "size": "39",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "0aa4ec0ea734",
+          "size": "40",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "f94046c5c6d8",
+          "size": "39",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "3f9017e9735f",
+          "size": "39",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "f5bc8ef7d334",
+          "size": "40",
+          "stock_status": "available"
+        }
+      ],
+      "blocked_refs_sample": [
+        {
+          "customer_ref": "089e94a7b0ce",
+          "size": "38",
+          "stock_status": "not_mapped"
+        },
+        {
+          "customer_ref": "f0643dd344a0",
+          "size": "37",
+          "stock_status": "not_mapped"
+        },
+        {
+          "customer_ref": "42aa128e3ef7",
+          "size": "36",
+          "stock_status": "not_mapped"
+        },
+        {
+          "customer_ref": "5e1d46a973e3",
+          "size": "38",
+          "stock_status": "not_mapped"
+        },
+        {
+          "customer_ref": "b5caa3890adc",
+          "size": "36",
+          "stock_status": "not_mapped"
+        }
+      ],
+      "campaign_gate": "can_preview_recipients_for_approval"
+    },
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo": {
+      "live_candidate_count": 10,
+      "ready_with_same_size_stock": 6,
+      "blocked_by_stock_or_mapping": 4,
+      "ready_refs_sample": [
+        {
+          "customer_ref": "6fcb5103f030",
+          "size": "39",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "991b9501c18b",
+          "size": "38",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "a86ad42c2d22",
+          "size": "39",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "af89a1ed64cf",
+          "size": "41",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "e1ffec284784",
+          "size": "39",
+          "stock_status": "available"
+        }
+      ],
+      "blocked_refs_sample": [
+        {
+          "customer_ref": "902af51d82a5",
+          "size": "36",
+          "stock_status": "not_mapped"
+        },
+        {
+          "customer_ref": "f5efaef8f206",
+          "size": "36.5",
+          "stock_status": "not_mapped"
+        },
+        {
+          "customer_ref": "e38f28ca3fe7",
+          "size": "36",
+          "stock_status": "not_mapped"
+        },
+        {
+          "customer_ref": "c38f00ca83b4",
+          "size": "35.5",
+          "stock_status": "zero_stock"
+        }
+      ],
+      "campaign_gate": "can_preview_recipients_for_approval"
+    },
+    "Champions/VIP | Tênis New Balance 204L Mushroom Arid Stone Marrom": {
+      "live_candidate_count": 22,
+      "ready_with_same_size_stock": 22,
+      "blocked_by_stock_or_mapping": 0,
+      "ready_refs_sample": [
+        {
+          "customer_ref": "6d4bd412bf88",
+          "size": "38",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "854956f6c85d",
+          "size": "36",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "be3402f228ab",
+          "size": "39",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "d283982d80cb",
+          "size": "37",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "acf048b04fb3",
+          "size": "35",
+          "stock_status": "available"
+        }
+      ],
+      "blocked_refs_sample": [],
+      "campaign_gate": "can_preview_recipients_for_approval"
+    },
+    "Champions/VIP | Tênis Adidas Samba OG Crochet Pack Sand Strata Bege": {
+      "live_candidate_count": 11,
+      "ready_with_same_size_stock": 5,
+      "blocked_by_stock_or_mapping": 6,
+      "ready_refs_sample": [
+        {
+          "customer_ref": "385736e4c387",
+          "size": "37",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "1d64ccfc6c39",
+          "size": "40",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "1711d5bae213",
+          "size": "37",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "cbf78cbe2c76",
+          "size": "39",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "ee27334c43e0",
+          "size": "39",
+          "stock_status": "available"
+        }
+      ],
+      "blocked_refs_sample": [
+        {
+          "customer_ref": "e27521aaa47a",
+          "size": "35",
+          "stock_status": "zero_stock"
+        },
+        {
+          "customer_ref": "fb20ef1856ca",
+          "size": "36",
+          "stock_status": "zero_stock"
+        },
+        {
+          "customer_ref": "69b0f99ccb2c",
+          "size": "36",
+          "stock_status": "zero_stock"
+        },
+        {
+          "customer_ref": "05593bc4c7e5",
+          "size": "35",
+          "stock_status": "zero_stock"
+        },
+        {
+          "customer_ref": "42e02636704c",
+          "size": "35",
+          "stock_status": "zero_stock"
+        }
+      ],
+      "campaign_gate": "can_preview_recipients_for_approval"
+    },
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 White Black Branco": {
+      "live_candidate_count": 2,
+      "ready_with_same_size_stock": 0,
+      "blocked_by_stock_or_mapping": 2,
+      "ready_refs_sample": [],
+      "blocked_refs_sample": [
+        {
+          "customer_ref": "33c33cd3c34d",
+          "size": "37",
+          "stock_status": "zero_stock"
+        },
+        {
+          "customer_ref": "cc5860991807",
+          "size": "37",
+          "stock_status": "zero_stock"
+        }
+      ],
+      "campaign_gate": "hold_until_stock_or_alternative_anchor"
+    },
+    "Novo alto potencial | Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege": {
+      "live_candidate_count": 4,
+      "ready_with_same_size_stock": 3,
+      "blocked_by_stock_or_mapping": 1,
+      "ready_refs_sample": [
+        {
+          "customer_ref": "01b9ebd53da2",
+          "size": "40",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "a65464285dfd",
+          "size": "36",
+          "stock_status": "available"
+        },
+        {
+          "customer_ref": "1c6bda80da3b",
+          "size": "37",
+          "stock_status": "available"
+        }
+      ],
+      "blocked_refs_sample": [
+        {
+          "customer_ref": "ab64aa24e71e",
+          "size": "42.5",
+          "stock_status": "zero_stock"
+        }
+      ],
+      "campaign_gate": "can_preview_recipients_for_approval"
+    }
+  },
+  "next_step_requires_approval": "Use only ready_with_same_size_stock recipients to build final Klaviyo/WhatsApp preview; do not create/send until Lucas approves the exact list/copy/channel."
+}
