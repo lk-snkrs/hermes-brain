@@ -1,3 +1,11 @@
+## 2026-05-11 — LK OS Data Spine snapshot read-only executado
+
+- Criado e executado `scripts/lk_os_data_spine_snapshots_20260511.py`, com snapshot read-only de Shopify, Tiny, GA4, Meta Ads, Metricool/Google Ads e Klaviyo.
+- Resultado: 6/6 fontes OK; relatório público em `reports/lk-os-data-spine-snapshot-2026-05-11.md` e JSON sanitizado em `reports/lk-os-data-spine-snapshot-2026-05-11.json`.
+- Saída privada auditável salva fora do Git em `/opt/data/hermes_bruno_ingest/local_sql/lk_data_spine_snapshots/` com permissão restrita.
+- Atualizado o plano mestre do LK OS para marcar o primeiro bloco de scripts read-only com contagem/freshness como concluído em v0.1.
+- Nenhum write, cron, campanha, envio, alteração de estoque/preço, banco de produção, Shopify/Tiny/Klaviyo/Notion/Meta/Google/Metricool/n8n ou infra foi executado.
+
 ## 2026-05-11 — LK OS Fase 1 Data Spine read-only iniciado
 
 - Criada rotina `areas/lk/rotinas/data-spine-readonly-2026-05-11.md` para consolidar fonte da verdade, matriz Doppler sem valores, entidades canônicas, regras de reconciliação e lacunas.

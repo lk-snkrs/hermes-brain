@@ -1,6 +1,6 @@
 # LK OS — Data Spine Read-only, 2026-05-11
 
-Status: v0.1 documental operacional. Nenhum write, cron, campanha, banco de produção, Shopify/Tiny/Klaviyo/Notion/Meta/Google/n8n ou envio externo foi executado nesta etapa.
+Status: v0.1 documental operacional + primeiro snapshot read-only multi-fonte executado. Nenhum write, cron, campanha, banco de produção, Shopify/Tiny/Klaviyo/Notion/Meta/Google/n8n ou envio externo foi executado nesta etapa.
 
 ## Objetivo
 
@@ -229,9 +229,28 @@ Todo script do Data Spine deve gerar JSON/MD com:
 - lista explícita de writes/envios que não foram feitos.
 - lacunas e próximos passos.
 
+## Snapshot read-only v0.1 executado
+
+Script: `scripts/lk_os_data_spine_snapshots_20260511.py`.
+
+Relatório público sanitizado: `reports/lk-os-data-spine-snapshot-2026-05-11.md` e `.json`.
+
+Arquivo privado auditável, fora do Git: `/opt/data/hermes_bruno_ingest/local_sql/lk_data_spine_snapshots/` com permissão restrita.
+
+Fontes lidas com sucesso em 2026-05-11:
+
+- Shopify: `fact_shopify`, 2.279 produtos, 89 pedidos na janela de 7 dias, freshness de pedido até 2026-05-11.
+- Tiny: `fact_tiny_stock`, amostra de estoque validou o depósito `LK | CONTROLE ESTOQUE` em 6/6 checks.
+- GA4: `fact_ga4`, 12 canais retornados na janela 2026-05-04 a 2026-05-10.
+- Meta Ads: `platform_signal`, conta ativa `act_1242062509867163`, último 7 dias lido.
+- Metricool/Google Ads: `platform_signal`, brand `LK Sneakers`, blog `6217010`, 21 linhas de Google Ads na janela.
+- Klaviyo: `platform_signal`, listas e campaigns lidas via API; campanha P1 segue `Draft`, sem send_time.
+
+Regra: os números de Meta, Google/Metricool e Klaviyo continuam sendo sinal de plataforma até reconciliação explícita com Shopify/GA4.
+
 ## Próximo passo técnico
 
-Criar scripts read-only pequenos, um por fonte, antes de juntar tudo em um briefing:
+Depois do snapshot consolidado v0.1, separar em módulos menores ou evoluir para freshness report recorrível:
 
 1. `lk_data_spine_shopify_snapshot.py`.
 2. `lk_data_spine_tiny_stock_snapshot.py`.
