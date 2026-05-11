@@ -25,10 +25,10 @@ Modo: leitura via API Klaviyo, sem envio, sem alteração de campanha, sem publi
 
 ## Padrões observados
 
-- Header preto com logo branco centralizado.
-- Barra de contexto/microcopy logo abaixo do header.
-- Fundo geral off-white quente.
-- Conteúdo central em largura de e-mail aproximada de 640px.
+- Fundo geral branco/off-white muito claro, com divisórias `#EEEEEE` sutis. Evitar fundo cinza forte no corpo do e-mail.
+- Header preto alto com logo branco centralizado, referência mobile/Klaviyo: cerca de 150px de altura e logo 70–80px.
+- Barra de contexto/microcopy logo abaixo do header em fundo branco, uppercase, cinza claro, letter-spacing alto.
+- Conteúdo central em largura de e-mail aproximada de 600px.
 - Títulos serifados, com itálico bege para emoção/sofisticação.
 - Corpo em sans-serif pequeno, cinza quente, com bastante entrelinha.
 - Microcopy uppercase com letter-spacing alto.
