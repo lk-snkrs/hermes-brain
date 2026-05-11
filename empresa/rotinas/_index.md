@@ -53,6 +53,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | LK Shopify SKU Padronizado para Tiny 2026-05-11 | `areas/lk/rotinas/shopify-sku-padronizacao-tiny-execution-2026-05-11.md` | Execução aprovada: 8 SKUs de variants Shopify alinhados exatamente ao `codigo` Tiny, com backup/rollback e verificação live |
 | LK Shopify SKU Padronizado para Tiny — Catálogo 2026-05-11 | `areas/lk/rotinas/shopify-sku-padronizacao-tiny-catalogo-2026-05-11.md` | Execução aprovada no catálogo completo: 505 variants divergentes seguras alinhadas ao `codigo` Tiny, 505/505 verificadas live |
 | LK Fila B Residual Pós-Saneamento 2026-05-11 | `areas/lk/rotinas/shopify-tiny-fila-b-residual-pos-saneamento-2026-05-11.md` | Classificação read-only dos 1.282 variants pulados por segurança: 857 com SKU sem match Tiny, 374 sem SKU, 51 ambíguos por título+tamanho |
+| LK Fila B Residual Priorizada 2026-05-11 | `areas/lk/rotinas/shopify-tiny-fila-b-residual-priorizada-2026-05-11.md` | Fila curta de revisão manual antes da nova Fila A: 15 residuais cruzam com venda/ruptura; P1 ambíguos, P2 sem SKU, P3 com SKU sem Tiny seguro |
 | Cross-sell Monitor | `areas/lk/sub-areas/crm/rotinas/cross-sell-monitor.md` | Oportunidades pós-pedido |
 | Playbook Campanha CRM Aprovada | `areas/lk/sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md` | Segmentação, preview e aprovação Lucas antes de campanha externa |
 | RFM Semanal | `areas/lk/sub-areas/crm/rotinas/rfm-semanal.md` | Segmentação RFM e relatório |
