@@ -1,3 +1,11 @@
+## 2026-05-11 — LK Stock Fila B saneada + Fila A preview
+
+- Executado o pedido “B depois A”: gerado `areas/lk/rotinas/stock-sku-saneamento-b-e-preview-a-2026-05-11.md` e o JSON auditável `reports/lk-stock-sku-saneamento-b-e-preview-a-2026-05-11.json`.
+- Fila B read-only: 33 linhas analisadas; 14 tiveram SKU candidato atual encontrado na Shopify, 8 tiveram candidato Tiny para mapeamento/alias, 11 seguem para revisão manual de cadastro Shopify antes de qualquer decisão comercial.
+- Fila A read-only: 103 linhas elegíveis para preview de sourcing/reposição; top P0/P1 ranqueados por ruptura, venda e velocidade estimada vs lead time padrão.
+- Criados cards Mission Control unassigned para saneamento SKU, preview sourcing, lead time real e Data Spine.
+- Produção, Shopify, Tiny, fornecedores, compras, campanhas, WhatsApp/Klaviyo, banco, VPS/Docker e secrets não foram alterados.
+
 ## 2026-05-10 — LK Gmail-safe HTML email rendering
 
 - Corrigido o e-mail semanal LK para não depender de `<style>`, `@import`, CSS variables ou grid que o Gmail/mobile pode ignorar, causando aparência de texto puro.

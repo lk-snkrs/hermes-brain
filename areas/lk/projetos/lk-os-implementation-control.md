@@ -107,7 +107,7 @@ Entregáveis:
 - [x] Watchdogs básicos Hermes/v0.13.
 - [x] Dicionário influencer/campanha v0.2.
 - [x] Este plano mestre versionado e indexado.
-- [ ] Card/linha de Mission Control para o Projeto LK OS.
+- [x] Card/linha de Mission Control para o Projeto LK OS.
 
 Critério de saída:
 
@@ -148,7 +148,7 @@ Entregáveis:
 - [x] Lista `baixo estoque` por produto + SKU + tamanho.
 - [x] Lista `mapear SKU Tiny`.
 - [x] Lista `sem SKU no Shopify`.
-- [ ] Leitura de velocidade de venda vs lead time.
+- [x] Leitura de velocidade de venda vs lead time.
 - [x] Sugestão `repor estoque`, `checar sourcing`, `não agir`.
 - [x] Template de preview para Lucas aprovar reposição/sourcing.
 
@@ -282,8 +282,11 @@ Critério de saída:
 - [x] Separar filas: `ruptura`, `baixo estoque`, `mapear SKU Tiny`, `sem SKU Shopify`.
 - [x] Marcar cada item com ação recomendada: `repor estoque`, `checar sourcing`, `corrigir mapa`, `não agir`.
 - [x] Criar preview para Lucas aprovar apenas as ações de reposição/sourcing.
-- [ ] Não contatar Monbam, fornecedores, time ou cliente sem aprovação.
-- [ ] Criar/atualizar cards unassigned no Mission Control.
+- [x] Não contatar Monbam, fornecedores, time ou cliente sem aprovação.
+- [x] Criar/atualizar cards unassigned no Mission Control.
+- [x] Executar Fila B antes da Fila A: saneamento SKU Shopify↔Tiny read-only.
+- [x] Preparar Fila A P0/P1 com velocidade estimada e lead time padrão, ainda sem compra/contato externo.
+- [ ] Substituir lead time padrão por lead time real por fonte/canal quando Lucas confirmar parâmetros Monbam/Droper/interno.
 
 ## Como Hermes deve responder quando Lucas disser “seguir Projeto LK OS”
 
