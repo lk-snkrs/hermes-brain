@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-05-11T17:32:46.556011+00:00",
+  "scope": "Klaviyo list + template + campaign draft created/reused after Lucas approval. No campaign send, no schedule, no flow activation.",
+  "klaviyo": {
+    "list_name": "LK Phase 5 P1 Loja Física Recompra 2026-05-11",
+    "list_id": "U8YCCE",
+    "list_created": false,
+    "profile_import_job_id": "V25zUmN1X21haW50ZW5hbmNlLnIzajExSy4xNzc4NTIwNzQ3LkFSM3A5YQ",
+    "profile_import_http_status": 202,
+    "template_name": "LK Phase 5 P1 Curadoria Loja Física 2026-05-11",
+    "template_id": "XUSEtu",
+    "template_created": false,
+    "campaign_name": "LK Phase 5 P1 Curadoria Loja Física 2026-05-11, DRAFT",
+    "campaign_id": "01KRC1DPTY615GF5FNBPXMPKY6",
+    "campaign_message_id": "01KRC1DPVAMF0M9SRSR7RDQX1G",
+    "campaign_created": false,
+    "campaign_status": "Draft",
+    "campaign_scheduled_at": null,
+    "campaign_send_time": null,
+    "campaign_template_note": "Template HTML was created in Klaviyo. API draft campaign was created with audience/subject/from fields; template HTML may need to be selected in Klaviyo UI before final send approval.",
+    "profile_import_job_status": "complete",
+    "profile_import_completed_at": "2026-05-11T17:32:27.820256+00:00",
+    "profile_import_failed_count": 0
+  },
+  "counts": {
+    "approved_profiles_submitted": 9,
+    "unique_emails_submitted": 9
+  },
+  "source_files": {
+    "approved_private_import": "/opt/data/hermes_bruno_ingest/private_exports/lk_crm/lk_phase5_p1_klaviyo_approved_import_2026-05-11.csv",
+    "approved_html": "reports/lk-phase5-p1-klaviyo-approved-email-2026-05-11.html"
+  },
+  "guardrails": [
+    "No campaign send executed",
+    "No campaign schedule executed",
+    "No flow activation executed",
+    "No SMS/WhatsApp action executed",
+    "No raw PII in Brain report"
+  ]
+}
