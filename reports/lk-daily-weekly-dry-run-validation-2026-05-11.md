@@ -1,6 +1,6 @@
 # LK Daily + Weekly Dry-run Validation, 2026-05-11
 
-Generated at: `2026-05-11T21:53:28.540838+00:00`
+Generated at: `2026-05-11T22:16:18.914510+00:00`
 
 ## Veredito
 
@@ -27,7 +27,7 @@ Daily Sales Brief e Weekly CEO Review passaram no dry-run manual read-only. Eles
 - Would notify: `True`
 - Recomendação: `eligible_for_lucas_cadence_approval_not_active`
 - Ações bloqueadas confirmadas: campaign, cron, external_send, production_db_write, shopify_write, supplier_contact, telegram_send, tiny_write
-- Snapshot: `{"business_date": "2026-05-10", "shopify_orders": 9, "shopify_revenue": 34809.92, "ga4_sessions": 4301.0, "tiny_risk_counts": {"ruptura": 3, "ok_amostra": 1, "baixo_estoque_vs_venda_do_dia": 1, "unknown": 5}}`
+- Snapshot: `{"business_date": "2026-05-10", "shopify_orders": 9, "shopify_revenue": 34809.92, "ga4_sessions": 4301.0, "tiny_risk_counts": {"ruptura": 5, "ok_amostra": 1, "baixo_estoque_vs_venda_do_dia": 3, "unknown": 1}}`
 
 ### LK-AUTO-002 · Weekly CEO Review read-only
 
@@ -37,7 +37,7 @@ Daily Sales Brief e Weekly CEO Review passaram no dry-run manual read-only. Eles
 - Would notify: `True`
 - Recomendação: `eligible_for_lucas_cadence_approval_not_active`
 - Ações bloqueadas confirmadas: campaign, cron, external_send, production_db_write, shopify_write, supplier_contact, telegram_send, tiny_write
-- Snapshot: `{"start_date": "2026-05-04", "end_date": "2026-05-10", "shopify_orders": 97, "shopify_revenue": 312261.74, "ga4_sessions": 29605.0, "meta_spend": 9374.43, "metricool_google_ads_rows": 21, "tiny_risk_counts": {"ruptura": 7, "baixo_estoque_vs_venda_da_semana": 3, "unknown": 4, "ok_amostra": 1}}`
+- Snapshot: `{"start_date": "2026-05-04", "end_date": "2026-05-10", "shopify_orders": 97, "shopify_revenue": 312261.74, "ga4_sessions": 29605.0, "meta_spend": 9374.43, "metricool_google_ads_rows": 21, "tiny_risk_counts": {"ruptura": 3, "baixo_estoque_vs_venda_da_semana": 1, "unknown": 11}}`
 
 ## Próximo gate
 
