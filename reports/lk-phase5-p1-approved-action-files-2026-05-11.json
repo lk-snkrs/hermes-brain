@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-05-11T15:29:41.336105+00:00",
+  "scope": "Approved action files only; no external send/list/write executed.",
+  "approval_basis": "Lucas said “Seguir aprovado” after physical-store-only correction and copy refinement.",
+  "private_exports": {
+    "all_approved_not_sent": "/opt/data/hermes_bruno_ingest/private_exports/lk_crm/lk_phase5_p1_all_approved_not_sent_2026-05-11.csv",
+    "klaviyo_approved_import": "/opt/data/hermes_bruno_ingest/private_exports/lk_crm/lk_phase5_p1_klaviyo_approved_import_2026-05-11.csv",
+    "whatsapp_approved_manual_send": "/opt/data/hermes_bruno_ingest/private_exports/lk_crm/lk_phase5_p1_whatsapp_approved_manual_send_2026-05-11.csv"
+  },
+  "counts": {
+    "all_approved_rows": 19,
+    "klaviyo_import_rows": 9,
+    "whatsapp_manual_rows": 7,
+    "klaviyo_unique_emails": 9,
+    "whatsapp_unique_phones": 7
+  },
+  "by_channel": {
+    "whatsapp_concierge": 10,
+    "klaviyo_preview": 9
+  },
+  "by_segment": {
+    "Champions/VIP": 12,
+    "Novo alto potencial": 7
+  },
+  "top_products_all": {
+    "Tênis New Balance 204L Mushroom Arid Stone Marrom": 8,
+    "Tênis New Balance 204L Arid Timberwolf Bege": 4,
+    "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo": 3,
+    "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege": 2,
+    "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege": 2
+  },
+  "top_products_whatsapp": {
+    "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege": 2,
+    "Tênis New Balance 204L Mushroom Arid Stone Marrom": 2,
+    "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo": 2,
+    "Tênis New Balance 204L Arid Timberwolf Bege": 1
+  },
+  "top_products_klaviyo": {
+    "Tênis New Balance 204L Mushroom Arid Stone Marrom": 4,
+    "Tênis New Balance 204L Arid Timberwolf Bege": 3,
+    "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege": 2
+  },
+  "guardrails": [
+    "No WhatsApp/Evolution send executed",
+    "No Klaviyo list or campaign created",
+    "No Shopify/Tiny/Supabase write",
+    "PII kept only in private_exports with chmod 600",
+    "Brain report contains counts/products only, no raw email/phone/name"
+  ]
+}
