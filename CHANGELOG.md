@@ -1,3 +1,11 @@
+## 2026-05-11 — LK Fila B residual classificada pós-saneamento Shopify/Tiny
+
+- Classificados os 1.282 variants pulados por segurança na normalização catálogo completo Shopify SKU→Tiny, sem novos writes externos.
+- Quebra operacional: 857 com SKU Shopify mas sem match Tiny seguro; 374 sem SKU Shopify e sem match Tiny seguro; 40 sem SKU com ambiguidade título+tamanho; 11 com SKU e ambiguidade título+tamanho.
+- Próxima sequência segura: resolver primeiro 51 ambíguos, depois 374 variants sem SKU, depois 857 com SKU sem match Tiny seguro; só então gerar nova Fila A de sourcing/reposição.
+- Artefatos: `areas/lk/rotinas/shopify-tiny-fila-b-residual-pos-saneamento-2026-05-11.md` e `reports/lk-shopify-tiny-residual-fila-b-2026-05-11.json`.
+- Produção, Shopify, Tiny, preço, estoque, campanha, cliente, fornecedor, banco, VPS/Docker e secrets não foram alterados nesta etapa.
+
 ## 2026-05-11 — LK Shopify SKUs padronizados para Tiny no catálogo completo
 
 - Após Lucas pedir “seguir” para todos os produtos com SKUs diferentes, comparei o catálogo completo Shopify com o Tiny e executei apenas updates SKU-only com match seguro.
