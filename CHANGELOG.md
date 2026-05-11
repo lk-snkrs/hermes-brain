@@ -1,3 +1,11 @@
+## 2026-05-11 — LK OS Influencer Identity Bridge read-only
+
+- Criado e executado `scripts/lk_os_influencer_identity_bridge_20260511.py`, fila de identidade oficial de influencers para a Fase 3 Paid/Influencer.
+- Resultado: 3 influencers roteados, Silvia Heinz com confiança alta, Helena Lunardelli com confiança média e Lala Noleto como investigação; 131 pedidos Shopify casados e R$ 463.078,29 de receita Shopify nas matrizes existentes.
+- Separados handles/cupons/ad_id/UTM oficiais pendentes de evidência Shopify/Tiny e Meta como `platform_signal`, sem transformar ROAS de plataforma em venda operacional.
+- Artefatos: `areas/lk/sub-areas/trafego-pago/rotinas/influencer-identity-bridge-readonly-2026-05-11.md`, `reports/lk-os-influencer-identity-bridge-2026-05-11.md` e `.json`.
+- Nenhuma chamada live a Meta/Shopify/Tiny/GA4/Metricool/Klaviyo; nenhum cupom, campanha, budget, criativo, UTM, Shopify/Tiny write, cliente, estoque, preço, banco de produção ou cron foi alterado.
+
 ## 2026-05-11 — LK OS On-demand Sourcing Router read-only
 
 - Criado e executado `scripts/lk_os_on_demand_sourcing_router_20260511.py`, router de sourcing sob demanda a partir do Approval Decision Log.
