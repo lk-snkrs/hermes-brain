@@ -12,6 +12,7 @@ Skills são processos repetíveis com entrada, passos, saída e verificação. E
 | LK Cross-sell | `skills/lk-crosssell/SKILL.md` | LK CRM | Oportunidades de cross-sell pós-pedido |
 | LK Leads Esfriando | `skills/lk-leads-esfriando/SKILL.md` | LK CRM | Reativação/risco de churn |
 | LK Shopify Read-only | `skills/lk-shopify-readonly/SKILL.md` | LK Ecommerce | Consultas seguras no Shopify LK sem writes, envios ou alterações de produção |
+| LK Shopify Product Upload | `skills/lk-shopify-product-upload/SKILL.md` | LK Ecommerce | Cadastro seguro de produtos Shopify com GOAT, pesquisa histórica, SEO, preview e aprovação |
 
 ## Navegação por área
 
@@ -21,6 +22,7 @@ Skills são processos repetíveis com entrada, passos, saída e verificação. E
 | Leads Esfriando LK | `areas/lk/sub-areas/crm/skills/leads-esfriando/SKILL.md` | `skills/lk-leads-esfriando/SKILL.md` |
 | Brain Sync Operações | `areas/operacoes/skills/brain-sync/SKILL.md` | `skills/brain-sync/SKILL.md` |
 | Shopify Read-only LK | `skills/lk-shopify-readonly/SKILL.md` | `skills/lk-shopify-readonly/SKILL.md` |
+| Shopify Product Upload LK | `skills/lk-shopify-product-upload/SKILL.md` | `skills/lk-shopify-product-upload/SKILL.md` |
 
 ## Templates
 
