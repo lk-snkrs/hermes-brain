@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-05-11T16:17:05.558402+00:00",
+  "scope": "Internal copy preview queue from broad Tiny discovery. No sends, no external writes, no PII in Brain report.",
+  "private_preview_queue": "/opt/data/hermes_bruno_ingest/private_exports/lk_crm/lk_phase5_p1_broad_tiny_copy_preview_queue_2026-05-11.csv",
+  "counts": {
+    "internal_preview_rows": 3,
+    "held_over_capacity": 1,
+    "channels": {
+      "klaviyo_preview": 3
+    },
+    "segments": {
+      "Champions/VIP": 1,
+      "Novo alto potencial": 2
+    }
+  },
+  "inventory_allocation_by_sku": {
+    "U204LMMC-2": 1,
+    "U204LMMC-3": 1,
+    "1183C233-250-3": 1
+  },
+  "held_over_capacity": [
+    {
+      "customer_ref": "665b66a53298",
+      "channel": "klaviyo_preview",
+      "segment": "Novo alto potencial",
+      "purchase_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "purchase_size": "35",
+      "recommended_product": "Tênis New Balance 204L Arid Timberwolf Bege - 35",
+      "recommended_size": "35",
+      "recommended_sku": "U204LMMC-2",
+      "tiny_available_estimated_total": 1.0,
+      "hold_reason": "TINY_CAPACITY_ALREADY_ALLOCATED_IN_PREVIEW"
+    }
+  ],
+  "recommendation_pairs": {
+    "Tênis New Balance 204L Arid Timberwolf Bege | 35 -> Tênis New Balance 204L Arid Timberwolf Bege - 35 | 35": 1,
+    "Tênis New Balance 204L Mushroom Arid Stone Marrom | 36 -> Tênis New Balance 204L Arid Timberwolf Bege - 36 | 36": 1,
+    "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege | 36 -> Onitsuka Tiger Mexico 66 Paraty Natural Navy Bege - 36 | 36": 1
+  },
+  "copy_previews": [
+    {
+      "channel": "klaviyo_preview",
+      "segment": "Champions/VIP",
+      "purchase_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "purchase_size": "35",
+      "recommended_product": "Tênis New Balance 204L Arid Timberwolf Bege - 35",
+      "recommended_size": "35",
+      "recommended_sku": "U204LMMC-2",
+      "tiny_available_estimated_total": 1.0,
+      "copy_angle": "loja física / continuidade do mesmo perfil / e-mail preview",
+      "copy_preview_internal": "Depois da sua compra presencial do New Balance 204L Arid Timberwolf Bege, selecionamos uma opção validada no Tiny que mantém a mesma intenção de estilo e disponibilidade no seu tamanho."
+    },
+    {
+      "channel": "klaviyo_preview",
+      "segment": "Novo alto potencial",
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "36",
+      "recommended_product": "Tênis New Balance 204L Arid Timberwolf Bege - 36",
+      "recommended_size": "36",
+      "recommended_sku": "U204LMMC-3",
+      "tiny_available_estimated_total": 10.0,
+      "copy_angle": "loja física / recomendação por afinidade / e-mail preview",
+      "copy_preview_internal": "Com base na sua compra presencial do New Balance 204L Mushroom Arid Stone Marrom, selecionamos New Balance 204L Arid Timberwolf Bege - 36: uma continuidade de estilo com disponibilidade validada no Tiny para o seu tamanho."
+    },
+    {
+      "channel": "klaviyo_preview",
+      "segment": "Novo alto potencial",
+      "purchase_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "purchase_size": "36",
+      "recommended_product": "Onitsuka Tiger Mexico 66 Paraty Natural Navy Bege - 36",
+      "recommended_size": "36",
+      "recommended_sku": "1183C233-250-3",
+      "tiny_available_estimated_total": 1.0,
+      "copy_angle": "loja física / recomendação por afinidade / e-mail preview",
+      "copy_preview_internal": "Com base na sua compra presencial do Onitsuka Tiger Mexico 66 SD Cream Birch Bege, selecionamos Onitsuka Tiger Mexico 66 Paraty Natural Navy Bege - 36: uma continuidade de estilo com disponibilidade validada no Tiny para o seu tamanho."
+    }
+  ],
+  "guardrails": [
+    "Preview interno apenas",
+    "Nenhum envio WhatsApp, Klaviyo ou e-mail",
+    "Nenhuma lista externa criada",
+    "Nenhum write em Shopify, Tiny ou Supabase",
+    "Relatório Brain sem PII"
+  ]
+}

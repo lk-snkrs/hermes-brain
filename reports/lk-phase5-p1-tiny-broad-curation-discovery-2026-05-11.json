@@ -1,0 +1,210 @@
+{
+  "generated_at": "2026-05-11T16:14:42.029423+00:00",
+  "scope": "Read-only broad Tiny discovery for P1 held rows. No PII, no sends, no writes.",
+  "counts": {
+    "held_rows_considered": 9,
+    "unique_product_size_groups_considered": 8,
+    "groups_with_broad_tiny_candidates": 3,
+    "groups_without_broad_tiny_candidates": 5,
+    "available_candidate_rows_found": 3
+  },
+  "discoveries": [
+    {
+      "purchase_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "purchase_size": "35",
+      "search_terms": [
+        "New Balance 204L",
+        "Adidas Taekwondo",
+        "Alo Yoga ALO Runner"
+      ],
+      "query_counts": {
+        "New Balance 204L": 100,
+        "Adidas Taekwondo": 100,
+        "Alo Yoga ALO Runner": 85
+      },
+      "checked_products": 54,
+      "checked_variants": 94,
+      "available_candidate_count": 1,
+      "available_candidates": [
+        {
+          "tiny_id": "1065903209",
+          "title": "Tênis New Balance 204L Arid Timberwolf Bege - 35",
+          "size": "35",
+          "sku": "U204LMMC-2",
+          "available_estimated_total": 1.0,
+          "situacao": null,
+          "match_source": "tiny_broad_search:New Balance 204L"
+        }
+      ],
+      "status": "TINY_BROAD_CANDIDATES_FOUND",
+      "held_row_count": 2
+    },
+    {
+      "purchase_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "purchase_size": "34",
+      "search_terms": [
+        "New Balance 204L",
+        "Adidas Taekwondo",
+        "Alo Yoga ALO Runner"
+      ],
+      "query_counts": {
+        "New Balance 204L": 100,
+        "Adidas Taekwondo": 100,
+        "Alo Yoga ALO Runner": 85
+      },
+      "checked_products": 54,
+      "checked_variants": 94,
+      "available_candidate_count": 0,
+      "available_candidates": [],
+      "status": "NO_BROAD_TINY_CANDIDATE_FOUND",
+      "held_row_count": 1
+    },
+    {
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "34",
+      "search_terms": [
+        "New Balance 204L",
+        "Adidas Taekwondo",
+        "Alo Yoga ALO Runner"
+      ],
+      "query_counts": {
+        "New Balance 204L": 100,
+        "Adidas Taekwondo": 100,
+        "Alo Yoga ALO Runner": 85
+      },
+      "checked_products": 54,
+      "checked_variants": 94,
+      "available_candidate_count": 0,
+      "available_candidates": [],
+      "status": "NO_BROAD_TINY_CANDIDATE_FOUND",
+      "held_row_count": 1
+    },
+    {
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "36",
+      "search_terms": [
+        "New Balance 204L",
+        "Adidas Taekwondo",
+        "Alo Yoga ALO Runner"
+      ],
+      "query_counts": {
+        "New Balance 204L": 100,
+        "Adidas Taekwondo": 100,
+        "Alo Yoga ALO Runner": 85
+      },
+      "checked_products": 54,
+      "checked_variants": 96,
+      "available_candidate_count": 1,
+      "available_candidates": [
+        {
+          "tiny_id": "1065903212",
+          "title": "Tênis New Balance 204L Arid Timberwolf Bege - 36",
+          "size": "36",
+          "sku": "U204LMMC-3",
+          "available_estimated_total": 10.0,
+          "situacao": null,
+          "match_source": "tiny_broad_search:New Balance 204L"
+        }
+      ],
+      "status": "TINY_BROAD_CANDIDATES_FOUND",
+      "held_row_count": 1
+    },
+    {
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "37",
+      "search_terms": [
+        "New Balance 204L",
+        "Adidas Taekwondo",
+        "Alo Yoga ALO Runner"
+      ],
+      "query_counts": {
+        "New Balance 204L": 100,
+        "Adidas Taekwondo": 100,
+        "Alo Yoga ALO Runner": 85
+      },
+      "checked_products": 54,
+      "checked_variants": 96,
+      "available_candidate_count": 0,
+      "available_candidates": [],
+      "status": "NO_BROAD_TINY_CANDIDATE_FOUND",
+      "held_row_count": 1
+    },
+    {
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "42",
+      "search_terms": [
+        "New Balance 204L",
+        "Adidas Taekwondo",
+        "Alo Yoga ALO Runner"
+      ],
+      "query_counts": {
+        "New Balance 204L": 100,
+        "Adidas Taekwondo": 100,
+        "Alo Yoga ALO Runner": 85
+      },
+      "checked_products": 54,
+      "checked_variants": 96,
+      "available_candidate_count": 0,
+      "available_candidates": [],
+      "status": "NO_BROAD_TINY_CANDIDATE_FOUND",
+      "held_row_count": 1
+    },
+    {
+      "purchase_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "purchase_size": "36",
+      "search_terms": [
+        "Onitsuka Tiger Mexico 66",
+        "Onitsuka Tiger Mexico",
+        "Adidas Taekwondo"
+      ],
+      "query_counts": {
+        "Onitsuka Tiger Mexico 66": 100,
+        "Onitsuka Tiger Mexico": 100,
+        "Adidas Taekwondo": 100
+      },
+      "checked_products": 36,
+      "checked_variants": 61,
+      "available_candidate_count": 1,
+      "available_candidates": [
+        {
+          "tiny_id": "1063587364",
+          "title": "Onitsuka Tiger Mexico 66 Paraty Natural Navy Bege - 36",
+          "size": "36",
+          "sku": "1183C233-250-3",
+          "available_estimated_total": 1.0,
+          "situacao": null,
+          "match_source": "tiny_broad_search:Onitsuka Tiger Mexico 66"
+        }
+      ],
+      "status": "TINY_BROAD_CANDIDATES_FOUND",
+      "held_row_count": 1
+    },
+    {
+      "purchase_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "purchase_size": "37",
+      "search_terms": [
+        "Onitsuka Tiger Mexico 66",
+        "Onitsuka Tiger Mexico",
+        "Adidas Taekwondo"
+      ],
+      "query_counts": {
+        "Onitsuka Tiger Mexico 66": 100,
+        "Onitsuka Tiger Mexico": 100,
+        "Adidas Taekwondo": 100
+      },
+      "checked_products": 36,
+      "checked_variants": 61,
+      "available_candidate_count": 0,
+      "available_candidates": [],
+      "status": "NO_BROAD_TINY_CANDIDATE_FOUND",
+      "held_row_count": 1
+    }
+  ],
+  "recommendation": "Usar estes achados só como nova camada de curadoria interna. Antes de qualquer campanha, revisar manualmente se o produto conversa com a compra original e gerar copy final sem envio automático.",
+  "guardrails": [
+    "Busca e checagem de estoque Tiny apenas read-only",
+    "Nenhum envio WhatsApp, Klaviyo ou e-mail",
+    "Nenhum write em Shopify, Tiny ou Supabase",
+    "Nenhum PII nos outputs"
+  ]
+}
