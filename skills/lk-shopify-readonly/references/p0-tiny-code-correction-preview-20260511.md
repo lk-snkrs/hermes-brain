@@ -62,3 +62,4 @@ Observed during approved execution (`reports/lk-p0-tiny-code-correction-executio
 - For a variation child record, update the child Tiny ID directly with required existing fields (`sequencia`, `id`, `codigo`, `nome`, `unidade`, `preco`, `preco_promocional`, `origem`, `situacao`, `tipo`, and `grade` when present). Then verify before/after non-code fields.
 - Updating the parent via `variacoes` failed when sibling variations had blank codes: Tiny returned `É necessário informar o código para um produto variação.` Do not fill sibling codes unless separately approved.
 - Success criteria: Tiny write status `OK` plus live `produto.obter` shows target `codigo` exactly and non-code fields unchanged.
+- For apparel sizes, match normalized grade/size exactly; do not use substring matching because `S/P` can falsely match `XS/PP`, and `L/G` can falsely match `XL/GG`.

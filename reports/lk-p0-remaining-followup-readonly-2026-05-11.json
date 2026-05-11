@@ -1,0 +1,2597 @@
+{
+  "generated_at": "2026-05-11T12:48:28",
+  "scope": "Read-only follow-up for 13 remaining P0 after 2 Tiny codigo writes",
+  "guardrails": [
+    "read-only Shopify GET",
+    "read-only Tiny produtos.pesquisa/produto.obter",
+    "no Shopify write",
+    "no Tiny write",
+    "no sourcing"
+  ],
+  "count": 13,
+  "summary": {
+    "needs_manual_tiny_mapping_or_cadastro": 5,
+    "tiny_codigo_write_preview_candidate_from_shopify_sku": 5,
+    "ambiguous_tiny_matches_with_shopify_sku": 3
+  },
+  "results": [
+    {
+      "product_title": "Camiseta Pace Cotton Code Branca",
+      "shopify_product_id": "9003115741406",
+      "shopify_variant_id": "47512247599326",
+      "size": "G/L",
+      "shopify_sku_live": "",
+      "shopify_live_variant": {
+        "id": "47512247599326",
+        "title": "G/L",
+        "sku": "",
+        "option1": "G/L",
+        "option2": null
+      },
+      "shopify_sibling_skus": [],
+      "orders_30d_signal": 2,
+      "revenue_signal": 433.98,
+      "tiny_searches": [
+        {
+          "query": "Camiseta Pace Cotton Code Branca",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1065543095",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541599",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - G-L",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543106",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - G/L",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543109",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - GG/XL",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541594",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - M-M",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543103",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - M/M",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541589",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - P-S",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543100",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - P/S",
+              "preco": 309.99,
+              "situacao": "A"
+            }
+          ]
+        },
+        {
+          "query": "Camiseta Pace Cotton Code Branca",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1065543095",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541599",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - G-L",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543106",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - G/L",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543109",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - GG/XL",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541594",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - M-M",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543103",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - M/M",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541589",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - P-S",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543100",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Branca - P/S",
+              "preco": 309.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_detailed_matches": [
+        {
+          "id": "1065543106",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "G/L"
+          },
+          "grade": {
+            "Tamanho": "G/L"
+          },
+          "source": "variacao",
+          "parent_id": "1065543095",
+          "matched_size_text": "G/L"
+        },
+        {
+          "id": "1069541599",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "G/L"
+          },
+          "grade": {
+            "Tamanho": "G/L"
+          },
+          "source": "variacao",
+          "parent_id": "1065543095",
+          "matched_size_text": "G/L"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "eligibility": "needs_manual_tiny_mapping_or_cadastro",
+      "target_tiny_id": null,
+      "target_codigo": null,
+      "confidence": "baixa"
+    },
+    {
+      "product_title": "Camiseta Aimé Leon Dore Musician Graphic Off White",
+      "shopify_product_id": "9024982712542",
+      "shopify_variant_id": "47579297939678",
+      "size": "S/P",
+      "shopify_sku_live": "",
+      "shopify_live_variant": {
+        "id": "47579297939678",
+        "title": "S/P",
+        "sku": "",
+        "option1": "S/P",
+        "option2": null
+      },
+      "shopify_sibling_skus": [],
+      "orders_30d_signal": 1,
+      "revenue_signal": 1299.99,
+      "tiny_searches": [
+        {
+          "query": "Camiseta Aimé Leon Dore Musician Graphic Off White",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1066011677",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White ",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011689",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - L/G",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011686",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - M/M",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011682",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - S/P",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011692",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - XL/GG",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541751",
+              "codigo": "",
+              "nome": "Camiseta Aimé Leon Dore Musician Graphic Off White - L-G",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541746",
+              "codigo": "",
+              "nome": "Camiseta Aimé Leon Dore Musician Graphic Off White - M-M",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541741",
+              "codigo": "",
+              "nome": "Camiseta Aimé Leon Dore Musician Graphic Off White - S-P",
+              "preco": 1299.99,
+              "situacao": "A"
+            }
+          ]
+        },
+        {
+          "query": "Camiseta Aimé Leon Dore Musician",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1066011677",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White ",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011689",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - L/G",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011686",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - M/M",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011682",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - S/P",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011692",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Off White  - XL/GG",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541751",
+              "codigo": "",
+              "nome": "Camiseta Aimé Leon Dore Musician Graphic Off White - L-G",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541746",
+              "codigo": "",
+              "nome": "Camiseta Aimé Leon Dore Musician Graphic Off White - M-M",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541741",
+              "codigo": "",
+              "nome": "Camiseta Aimé Leon Dore Musician Graphic Off White - S-P",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011720",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Preta ",
+              "preco": 1299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1066011731",
+              "codigo": "",
+              "nome": "Camiseta Aime Leon Dore Musician Graphic Preta  - L/G",
+              "preco": 1299.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_detailed_matches": [
+        {
+          "id": "1066011682",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "S/P"
+          },
+          "grade": {
+            "Tamanho": "S/P"
+          },
+          "source": "variacao",
+          "parent_id": "1066011677",
+          "matched_size_text": "S/P"
+        },
+        {
+          "id": "1069541741",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "S/P"
+          },
+          "grade": {
+            "Tamanho": "S/P"
+          },
+          "source": "variacao",
+          "parent_id": "1066011677",
+          "matched_size_text": "S/P"
+        },
+        {
+          "id": "1066011725",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "S/P"
+          },
+          "grade": {
+            "Tamanho": "S/P"
+          },
+          "source": "variacao",
+          "parent_id": "1066011720",
+          "matched_size_text": "S/P"
+        },
+        {
+          "id": "1069541726",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "S/P"
+          },
+          "grade": {
+            "Tamanho": "S/P"
+          },
+          "source": "variacao",
+          "parent_id": "1066011720",
+          "matched_size_text": "S/P"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "eligibility": "needs_manual_tiny_mapping_or_cadastro",
+      "target_tiny_id": null,
+      "target_codigo": null,
+      "confidence": "baixa"
+    },
+    {
+      "product_title": "Rhode Pocket Blush",
+      "shopify_product_id": "8926618321118",
+      "shopify_variant_id": "46838740648158",
+      "size": "Sleepy Girl - Soft Mauve",
+      "shopify_sku_live": "",
+      "shopify_live_variant": {
+        "id": "46838740648158",
+        "title": "Sleepy Girl - Soft Mauve",
+        "sku": "",
+        "option1": "Sleepy Girl - Soft Mauve",
+        "option2": null
+      },
+      "shopify_sibling_skus": [
+        {
+          "id": "46838670262494",
+          "title": "Spyce Marg - Bright Coral",
+          "sku": "850055527140-1",
+          "option1": "Spyce Marg - Bright Coral",
+          "option2": null
+        },
+        {
+          "id": "46838670295262",
+          "title": "Juice Box - Hot Pink",
+          "sku": "850055527140-2",
+          "option1": "Juice Box - Hot Pink",
+          "option2": null
+        }
+      ],
+      "orders_30d_signal": 1,
+      "revenue_signal": 399.99,
+      "tiny_searches": [
+        {
+          "query": "Rhode Pocket Blush",
+          "status": "Erro",
+          "error": [
+            {
+              "erro": "API Bloqueada - Excedido o número de acessos a API, aguarde alguns minutos e tente novamente"
+            }
+          ],
+          "candidates": []
+        }
+      ],
+      "tiny_detailed_matches": [],
+      "tiny_coded_matches": [],
+      "eligibility": "needs_manual_tiny_mapping_or_cadastro",
+      "target_tiny_id": null,
+      "target_codigo": null,
+      "confidence": "baixa"
+    },
+    {
+      "product_title": "Camiseta Pace Cotton Code Preta",
+      "shopify_product_id": "9003115774174",
+      "shopify_variant_id": "47512247730398",
+      "size": "G/L",
+      "shopify_sku_live": "",
+      "shopify_live_variant": {
+        "id": "47512247730398",
+        "title": "G/L",
+        "sku": "",
+        "option1": "G/L",
+        "option2": null
+      },
+      "shopify_sibling_skus": [],
+      "orders_30d_signal": 1,
+      "revenue_signal": 216.99,
+      "tiny_searches": [
+        {
+          "query": "Camiseta Pace Cotton Code Preta",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1065543076",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541614",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - G-L",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543087",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - G/L",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543090",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - GG/XL",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541609",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - M-M",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543084",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - M/M",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541604",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - P-S",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543081",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - P/S",
+              "preco": 309.99,
+              "situacao": "A"
+            }
+          ]
+        },
+        {
+          "query": "Camiseta Pace Cotton Code Preta",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1065543076",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541614",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - G-L",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543087",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - G/L",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543090",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - GG/XL",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541609",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - M-M",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543084",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - M/M",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069541604",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - P-S",
+              "preco": 309.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1065543081",
+              "codigo": "",
+              "nome": "Camiseta Pace Cotton Code Preta - P/S",
+              "preco": 309.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_detailed_matches": [
+        {
+          "id": "1065543087",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "G/L"
+          },
+          "grade": {
+            "Tamanho": "G/L"
+          },
+          "source": "variacao",
+          "parent_id": "1065543076",
+          "matched_size_text": "G/L"
+        },
+        {
+          "id": "1069541614",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "G/L"
+          },
+          "grade": {
+            "Tamanho": "G/L"
+          },
+          "source": "variacao",
+          "parent_id": "1065543076",
+          "matched_size_text": "G/L"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "eligibility": "needs_manual_tiny_mapping_or_cadastro",
+      "target_tiny_id": null,
+      "target_codigo": null,
+      "confidence": "baixa"
+    },
+    {
+      "product_title": "Camiseta Pace Sketch Yourself Off White",
+      "shopify_product_id": "8946043093214",
+      "shopify_variant_id": "47019131568350",
+      "size": "P/S",
+      "shopify_sku_live": "",
+      "shopify_live_variant": {
+        "id": "47019131568350",
+        "title": "P/S",
+        "sku": "",
+        "option1": "P/S",
+        "option2": null
+      },
+      "shopify_sibling_skus": [],
+      "orders_30d_signal": 1,
+      "revenue_signal": 209.99,
+      "tiny_searches": [
+        {
+          "query": "Camiseta Pace Sketch Yourself Off White",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1063954607",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063954617",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - G/L",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063954614",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - M",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069539379",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - P-S",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063954611",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - P/S",
+              "preco": 299.99,
+              "situacao": "A"
+            }
+          ]
+        },
+        {
+          "query": "Camiseta Pace Sketch Yourself Off",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1063954607",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063954617",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - G/L",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063954614",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - M",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069539379",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - P-S",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063954611",
+              "codigo": "",
+              "nome": "Camiseta Pace Sketch Yourself Off White - P/S",
+              "preco": 299.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_detailed_matches": [
+        {
+          "id": "1063954611",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "P/S"
+          },
+          "grade": {
+            "Tamanho": "P/S"
+          },
+          "source": "variacao",
+          "parent_id": "1063954607",
+          "matched_size_text": "P/S"
+        },
+        {
+          "id": "1069539379",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "P/S"
+          },
+          "grade": {
+            "Tamanho": "P/S"
+          },
+          "source": "variacao",
+          "parent_id": "1063954607",
+          "matched_size_text": "P/S"
+        },
+        {
+          "id": "1063955235",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "P/S"
+          },
+          "grade": {
+            "Tamanho": "P/S"
+          },
+          "source": "variacao",
+          "parent_id": "1063955231",
+          "matched_size_text": "P/S"
+        },
+        {
+          "id": "1069539424",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "P/S"
+          },
+          "grade": {
+            "Tamanho": "P/S"
+          },
+          "source": "variacao",
+          "parent_id": "1063955231",
+          "matched_size_text": "P/S"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "eligibility": "needs_manual_tiny_mapping_or_cadastro",
+      "target_tiny_id": null,
+      "target_codigo": null,
+      "confidence": "baixa"
+    },
+    {
+      "product_title": "Tênis Nike Mind 002 Light Khaki Bege",
+      "shopify_product_id": "9118029054174",
+      "shopify_variant_id": "47893735932126",
+      "size": "41",
+      "shopify_sku_live": "NKE-9054174-41",
+      "shopify_live_variant": {
+        "id": "47893735932126",
+        "title": "41",
+        "sku": "NKE-9054174-41",
+        "option1": "41",
+        "option2": null
+      },
+      "shopify_sibling_skus": [
+        {
+          "id": "47893735702750",
+          "title": "34",
+          "sku": "NKE-9054174-34",
+          "option1": "34",
+          "option2": null
+        },
+        {
+          "id": "47893735735518",
+          "title": "35",
+          "sku": "NKE-9054174-35",
+          "option1": "35",
+          "option2": null
+        },
+        {
+          "id": "47893735768286",
+          "title": "36",
+          "sku": "NKE-9054174-36",
+          "option1": "36",
+          "option2": null
+        },
+        {
+          "id": "47893735801054",
+          "title": "37",
+          "sku": "NKE-9054174-37",
+          "option1": "37",
+          "option2": null
+        },
+        {
+          "id": "47893735833822",
+          "title": "38",
+          "sku": "NKE-9054174-38",
+          "option1": "38",
+          "option2": null
+        },
+        {
+          "id": "47893735866590",
+          "title": "39",
+          "sku": "NKE-9054174-39",
+          "option1": "39",
+          "option2": null
+        },
+        {
+          "id": "47893735899358",
+          "title": "40",
+          "sku": "NKE-9054174-40",
+          "option1": "40",
+          "option2": null
+        },
+        {
+          "id": "47893735932126",
+          "title": "41",
+          "sku": "NKE-9054174-41",
+          "option1": "41",
+          "option2": null
+        },
+        {
+          "id": "47893735964894",
+          "title": "42",
+          "sku": "NKE-9054174-42",
+          "option1": "42",
+          "option2": null
+        },
+        {
+          "id": "47893735997662",
+          "title": "43",
+          "sku": "NKE-9054174-43",
+          "option1": "43",
+          "option2": null
+        },
+        {
+          "id": "47893736030430",
+          "title": "44",
+          "sku": "NKE-9054174-44",
+          "option1": "44",
+          "option2": null
+        },
+        {
+          "id": "47893736063198",
+          "title": "45",
+          "sku": "NKE-9054174-45",
+          "option1": "45",
+          "option2": null
+        },
+        {
+          "id": "47893736095966",
+          "title": "46",
+          "sku": "NKE-9054174-46",
+          "option1": "46",
+          "option2": null
+        }
+      ],
+      "orders_30d_signal": 1,
+      "revenue_signal": 3199.99,
+      "tiny_searches": [
+        {
+          "query": "NKE-9054174-41",
+          "status": "Erro",
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "candidates": []
+        },
+        {
+          "query": "Tênis Nike Mind 002 Light Khaki Bege",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1069545331",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545348",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 34",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545353",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 35",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545358",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 36",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545365",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 37",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545370",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 38",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545375",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 39",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545380",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 40",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545385",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 41",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545390",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 42",
+              "preco": 2999.99,
+              "situacao": "A"
+            }
+          ]
+        },
+        {
+          "query": "Tênis Nike Mind 002 Light",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1069545331",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545348",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 34",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545353",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 35",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545358",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 36",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545365",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 37",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545370",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 38",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545375",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 39",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545380",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 40",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545385",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 41",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069545390",
+              "codigo": "",
+              "nome": "Tênis Nike Mind 002 Light Khaki Bege - 42",
+              "preco": 2999.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_detailed_matches": [
+        {
+          "id": "1069545385",
+          "codigo": "",
+          "nome": {
+            "Tamanho do calçado": "41"
+          },
+          "grade": {
+            "Tamanho do calçado": "41"
+          },
+          "source": "variacao",
+          "parent_id": "1069545331",
+          "matched_size_text": "41"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "eligibility": "tiny_codigo_write_preview_candidate_from_shopify_sku",
+      "target_tiny_id": "1069545385",
+      "target_codigo": "NKE-9054174-41",
+      "confidence": "media_alta"
+    },
+    {
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom",
+      "shopify_product_id": "9168590995678",
+      "shopify_variant_id": "48066691465438",
+      "size": "42.5",
+      "shopify_sku_live": "ONI-0995678-425",
+      "shopify_live_variant": {
+        "id": "48066691465438",
+        "title": "42.5",
+        "sku": "ONI-0995678-425",
+        "option1": "42.5",
+        "option2": null
+      },
+      "shopify_sibling_skus": [
+        {
+          "id": "48066691137758",
+          "title": "34",
+          "sku": "ONI-0995678-34",
+          "option1": "34",
+          "option2": null
+        },
+        {
+          "id": "48066691170526",
+          "title": "35",
+          "sku": "ONI-0995678-35",
+          "option1": "35",
+          "option2": null
+        },
+        {
+          "id": "48066691203294",
+          "title": "36",
+          "sku": "ONI-0995678-36",
+          "option1": "36",
+          "option2": null
+        },
+        {
+          "id": "48066691236062",
+          "title": "37",
+          "sku": "ONI-0995678-37",
+          "option1": "37",
+          "option2": null
+        },
+        {
+          "id": "48066691268830",
+          "title": "38",
+          "sku": "ONI-0995678-38",
+          "option1": "38",
+          "option2": null
+        },
+        {
+          "id": "48066691301598",
+          "title": "39",
+          "sku": "ONI-0995678-39",
+          "option1": "39",
+          "option2": null
+        },
+        {
+          "id": "48066691334366",
+          "title": "40",
+          "sku": "ONI-0995678-40",
+          "option1": "40",
+          "option2": null
+        },
+        {
+          "id": "48066691367134",
+          "title": "40.5",
+          "sku": "ONI-0995678-405",
+          "option1": "40.5",
+          "option2": null
+        },
+        {
+          "id": "48066691399902",
+          "title": "41.5",
+          "sku": "ONI-0995678-415",
+          "option1": "41.5",
+          "option2": null
+        },
+        {
+          "id": "48066691432670",
+          "title": "42",
+          "sku": "ONI-0995678-42",
+          "option1": "42",
+          "option2": null
+        },
+        {
+          "id": "48066691465438",
+          "title": "42.5",
+          "sku": "ONI-0995678-425",
+          "option1": "42.5",
+          "option2": null
+        },
+        {
+          "id": "48066691498206",
+          "title": "43",
+          "sku": "ONI-0995678-43",
+          "option1": "43",
+          "option2": null
+        },
+        {
+          "id": "48066691530974",
+          "title": "44",
+          "sku": "ONI-0995678-44",
+          "option1": "44",
+          "option2": null
+        }
+      ],
+      "orders_30d_signal": 1,
+      "revenue_signal": 2999.99,
+      "tiny_searches": [
+        {
+          "query": "ONI-0995678-425",
+          "status": "Erro",
+          "error": [
+            {
+              "erro": "API Bloqueada - Excedido o número de acessos a API, aguarde alguns minutos e tente novamente"
+            }
+          ],
+          "candidates": []
+        },
+        {
+          "query": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1070120668",
+              "codigo": "",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070120685",
+              "codigo": "",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - 34",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070120690",
+              "codigo": "",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - 35",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070120695",
+              "codigo": "",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - 36",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070120701",
+              "codigo": "",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - 37",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070120706",
+              "codigo": "",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - 38",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070120711",
+              "codigo": "",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - 39",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070120716",
+              "codigo": "",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - 40",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070120721",
+              "codigo": "",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - 40.5",
+              "preco": 2999.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1070120726",
+              "codigo": "",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - 41.5",
+              "preco": 2999.99,
+              "situacao": "A"
+            }
+          ]
+        },
+        {
+          "query": "Tênis Onitsuka Tiger Mexico 66",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1060293659",
+              "codigo": "1183C102250",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+              "preco": 2299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1060293671",
+              "codigo": "1183C102250-1",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom - 34",
+              "preco": 2299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1060293674",
+              "codigo": "1183C102250-2",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom - 35",
+              "preco": 2299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1060293698",
+              "codigo": "1183C102250-10",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom - 35.5",
+              "preco": 2299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1060293677",
+              "codigo": "1183C102250-3",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom - 36",
+              "preco": 2299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1060293701",
+              "codigo": "1183C102250-11",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom - 36.5",
+              "preco": 2299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1060293680",
+              "codigo": "1183C102250-4",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom - 37",
+              "preco": 2299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1060293683",
+              "codigo": "1183C102250-5",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom - 38",
+              "preco": 2299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1060293686",
+              "codigo": "1183C102250-6",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom - 39",
+              "preco": 2299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1068404683",
+              "codigo": "1183C102250-12",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom - 39.5",
+              "preco": 2299.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_detailed_matches": [
+        {
+          "id": "1070120736",
+          "codigo": "",
+          "nome": {
+            "Tamanho do calçado": "42.5"
+          },
+          "grade": {
+            "Tamanho do calçado": "42.5"
+          },
+          "source": "variacao",
+          "parent_id": "1070120668",
+          "matched_size_text": "42.5"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "eligibility": "tiny_codigo_write_preview_candidate_from_shopify_sku",
+      "target_tiny_id": "1070120736",
+      "target_codigo": "ONI-0995678-425",
+      "confidence": "media_alta"
+    },
+    {
+      "product_title": "Tênis New Balance 204L Cortado Marrom",
+      "shopify_product_id": "9106900254942",
+      "shopify_variant_id": "47856402530526",
+      "size": "37",
+      "shopify_sku_live": "NB-0254942-37",
+      "shopify_live_variant": {
+        "id": "47856402530526",
+        "title": "37",
+        "sku": "NB-0254942-37",
+        "option1": "37",
+        "option2": null
+      },
+      "shopify_sibling_skus": [
+        {
+          "id": "47856402432222",
+          "title": "34",
+          "sku": "NB-0254942-34",
+          "option1": "34",
+          "option2": null
+        },
+        {
+          "id": "47856402464990",
+          "title": "35",
+          "sku": "NB-0254942-35",
+          "option1": "35",
+          "option2": null
+        },
+        {
+          "id": "47856402497758",
+          "title": "36",
+          "sku": "NB-0254942-36",
+          "option1": "36",
+          "option2": null
+        },
+        {
+          "id": "47856402530526",
+          "title": "37",
+          "sku": "NB-0254942-37",
+          "option1": "37",
+          "option2": null
+        },
+        {
+          "id": "47856402563294",
+          "title": "38",
+          "sku": "NB-0254942-38",
+          "option1": "38",
+          "option2": null
+        },
+        {
+          "id": "47856402596062",
+          "title": "39",
+          "sku": "NB-0254942-39",
+          "option1": "39",
+          "option2": null
+        },
+        {
+          "id": "47856402628830",
+          "title": "40",
+          "sku": "NB-0254942-40",
+          "option1": "40",
+          "option2": null
+        },
+        {
+          "id": "47856402661598",
+          "title": "41",
+          "sku": "NB-0254942-41",
+          "option1": "41",
+          "option2": null
+        },
+        {
+          "id": "47856402694366",
+          "title": "42",
+          "sku": "NB-0254942-42",
+          "option1": "42",
+          "option2": null
+        },
+        {
+          "id": "47856402727134",
+          "title": "43",
+          "sku": "NB-0254942-43",
+          "option1": "43",
+          "option2": null
+        },
+        {
+          "id": "47856402759902",
+          "title": "44",
+          "sku": "NB-0254942-44",
+          "option1": "44",
+          "option2": null
+        }
+      ],
+      "orders_30d_signal": 1,
+      "revenue_signal": 2799.99,
+      "tiny_searches": [
+        {
+          "query": "NB-0254942-37",
+          "status": "Erro",
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "candidates": []
+        },
+        {
+          "query": "Tênis New Balance 204L Cortado Marrom",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1069544017",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544032",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 34",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544037",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 35",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544042",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 36",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544047",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 37",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1068941875",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 38",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544054",
+              "codigo": "NB-0254942-39",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 39",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544059",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 40",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544064",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 41",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544069",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 42",
+              "preco": 2799.99,
+              "situacao": "A"
+            }
+          ]
+        },
+        {
+          "query": "Tênis New Balance 204L Cortado",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1069544017",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544032",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 34",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544037",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 35",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544042",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 36",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544047",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 37",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1068941875",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 38",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544054",
+              "codigo": "NB-0254942-39",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 39",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544059",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 40",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544064",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 41",
+              "preco": 2799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544069",
+              "codigo": "",
+              "nome": "Tênis New Balance 204L Cortado Marrom - 42",
+              "preco": 2799.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_detailed_matches": [
+        {
+          "id": "1069544047",
+          "codigo": "",
+          "nome": {
+            "Tamanho do calçado": "37"
+          },
+          "grade": {
+            "Tamanho do calçado": "37"
+          },
+          "source": "variacao",
+          "parent_id": "1069544017",
+          "matched_size_text": "37"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "eligibility": "tiny_codigo_write_preview_candidate_from_shopify_sku",
+      "target_tiny_id": "1069544047",
+      "target_codigo": "NB-0254942-37",
+      "confidence": "media_alta"
+    },
+    {
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza",
+      "shopify_product_id": "9165336772830",
+      "shopify_variant_id": "48054217933022",
+      "size": "38",
+      "shopify_sku_live": "ONI-6772830-38",
+      "shopify_live_variant": {
+        "id": "48054217933022",
+        "title": "38",
+        "sku": "ONI-6772830-38",
+        "option1": "38",
+        "option2": null
+      },
+      "shopify_sibling_skus": [
+        {
+          "id": "48054217769182",
+          "title": "34",
+          "sku": "ONI-6772830-34",
+          "option1": "34",
+          "option2": null
+        },
+        {
+          "id": "48054217801950",
+          "title": "35",
+          "sku": "ONI-6772830-35",
+          "option1": "35",
+          "option2": null
+        },
+        {
+          "id": "48054217834718",
+          "title": "36",
+          "sku": "ONI-6772830-36",
+          "option1": "36",
+          "option2": null
+        },
+        {
+          "id": "48054217867486",
+          "title": "37",
+          "sku": "ONI-6772830-37",
+          "option1": "37",
+          "option2": null
+        },
+        {
+          "id": "48054217900254",
+          "title": "39",
+          "sku": "ONI-6772830-39",
+          "option1": "39",
+          "option2": null
+        },
+        {
+          "id": "48054217933022",
+          "title": "38",
+          "sku": "ONI-6772830-38",
+          "option1": "38",
+          "option2": null
+        },
+        {
+          "id": "48054217965790",
+          "title": "40",
+          "sku": "ONI-6772830-40",
+          "option1": "40",
+          "option2": null
+        },
+        {
+          "id": "48054217998558",
+          "title": "41",
+          "sku": "ONI-6772830-41",
+          "option1": "41",
+          "option2": null
+        },
+        {
+          "id": "48054218031326",
+          "title": "42",
+          "sku": "ONI-6772830-42",
+          "option1": "42",
+          "option2": null
+        },
+        {
+          "id": "48054218064094",
+          "title": "43",
+          "sku": "ONI-6772830-43",
+          "option1": "43",
+          "option2": null
+        },
+        {
+          "id": "48054218096862",
+          "title": "44",
+          "sku": "ONI-6772830-44",
+          "option1": "44",
+          "option2": null
+        }
+      ],
+      "orders_30d_signal": 1,
+      "revenue_signal": 2199.99,
+      "tiny_searches": [
+        {
+          "query": "ONI-6772830-38",
+          "status": "Erro",
+          "error": [
+            {
+              "erro": "API Bloqueada - Excedido o número de acessos a API, aguarde alguns minutos e tente novamente"
+            }
+          ],
+          "candidates": []
+        },
+        {
+          "query": "Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza",
+          "status": "Erro",
+          "error": [
+            {
+              "erro": "API Bloqueada - Excedido o número de acessos a API, aguarde alguns minutos e tente novamente"
+            }
+          ],
+          "candidates": []
+        },
+        {
+          "query": "Tênis Onitsuka Tiger Mexico 66",
+          "status": "Erro",
+          "error": [
+            {
+              "erro": "API Bloqueada - Excedido o número de acessos a API, aguarde alguns minutos e tente novamente"
+            }
+          ],
+          "candidates": []
+        }
+      ],
+      "tiny_detailed_matches": [
+        {
+          "id": "1070119554",
+          "codigo": "",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza - 38",
+          "grade": {
+            "Tamanho do calçado": "38"
+          },
+          "source": "produto",
+          "matched_size_text": "38"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "eligibility": "tiny_codigo_write_preview_candidate_from_shopify_sku",
+      "target_tiny_id": "1070119554",
+      "target_codigo": "ONI-6772830-38",
+      "confidence": "media_alta"
+    },
+    {
+      "product_title": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto",
+      "shopify_product_id": "9064138506462",
+      "shopify_variant_id": "47706484539614",
+      "size": "S/P",
+      "shopify_sku_live": "ALO-8506462-S",
+      "shopify_live_variant": {
+        "id": "47706484539614",
+        "title": "S/P",
+        "sku": "ALO-8506462-S",
+        "option1": "S/P",
+        "option2": null
+      },
+      "shopify_sibling_skus": [
+        {
+          "id": "47706484506846",
+          "title": "XS/PP",
+          "sku": "ALO-8506462-XS",
+          "option1": "XS/PP",
+          "option2": null
+        },
+        {
+          "id": "47706484539614",
+          "title": "S/P",
+          "sku": "ALO-8506462-S",
+          "option1": "S/P",
+          "option2": null
+        },
+        {
+          "id": "47706484572382",
+          "title": "M/M",
+          "sku": "ALO-8506462-M",
+          "option1": "M/M",
+          "option2": null
+        },
+        {
+          "id": "47706484605150",
+          "title": "L/G",
+          "sku": "ALO-8506462-L",
+          "option1": "L/G",
+          "option2": null
+        }
+      ],
+      "orders_30d_signal": 1,
+      "revenue_signal": 1799.99,
+      "tiny_searches": [
+        {
+          "query": "ALO-8506462-S",
+          "status": "Erro",
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "candidates": []
+        },
+        {
+          "query": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1069542754",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto",
+              "preco": 1799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069542777",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - L-G",
+              "preco": 1799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069542772",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - M-M",
+              "preco": 1799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069542767",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - S-P",
+              "preco": 1799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069542762",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - XS-PP",
+              "preco": 1799.99,
+              "situacao": "A"
+            }
+          ]
+        },
+        {
+          "query": "Moletom Alo Yoga Cropped Serenity",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1069542726",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Athletic Heather Grey Cinza",
+              "preco": 1799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069542749",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Athletic Heather Grey Cinza - L-G",
+              "preco": 1799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069542744",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Athletic Heather Grey Cinza - M-M",
+              "preco": 1799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069542739",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Athletic Heather Grey Cinza - S-P",
+              "preco": 1799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069542734",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Athletic Heather Grey Cinza - XS-PP",
+              "preco": 1799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069542754",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto",
+              "preco": 1799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069542777",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - L-G",
+              "preco": 1799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069542772",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - M-M",
+              "preco": 1799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069542767",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - S-P",
+              "preco": 1799.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069542762",
+              "codigo": "",
+              "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - XS-PP",
+              "preco": 1799.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_detailed_matches": [
+        {
+          "id": "1069542767",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "S/P"
+          },
+          "grade": {
+            "Tamanho": "S/P"
+          },
+          "source": "variacao",
+          "parent_id": "1069542754",
+          "matched_size_text": "S/P"
+        },
+        {
+          "id": "1069542739",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "S/P"
+          },
+          "grade": {
+            "Tamanho": "S/P"
+          },
+          "source": "variacao",
+          "parent_id": "1069542726",
+          "matched_size_text": "S/P"
+        },
+        {
+          "id": "1069542907",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "S/P"
+          },
+          "grade": {
+            "Tamanho": "S/P"
+          },
+          "source": "variacao",
+          "parent_id": "1069542894",
+          "matched_size_text": "S/P"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "eligibility": "ambiguous_tiny_matches_with_shopify_sku",
+      "target_tiny_id": null,
+      "target_codigo": "ALO-8506462-S",
+      "confidence": "baixa"
+    },
+    {
+      "product_title": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+      "shopify_product_id": "9107994542302",
+      "shopify_variant_id": "47860151976158",
+      "size": "L/G",
+      "shopify_sku_live": "SST-4542302-L",
+      "shopify_live_variant": {
+        "id": "47860151976158",
+        "title": "L/G",
+        "sku": "SST-4542302-L",
+        "option1": "L/G",
+        "option2": null
+      },
+      "shopify_sibling_skus": [
+        {
+          "id": "47860151877854",
+          "title": "XS/PP",
+          "sku": "SST-4542302-XS",
+          "option1": "XS/PP",
+          "option2": null
+        },
+        {
+          "id": "47860151910622",
+          "title": "S/P",
+          "sku": "SST-4542302-S",
+          "option1": "S/P",
+          "option2": null
+        },
+        {
+          "id": "47860151943390",
+          "title": "M/M",
+          "sku": "SST-4542302-M",
+          "option1": "M/M",
+          "option2": null
+        },
+        {
+          "id": "47860151976158",
+          "title": "L/G",
+          "sku": "SST-4542302-L",
+          "option1": "L/G",
+          "option2": null
+        },
+        {
+          "id": "47860152008926",
+          "title": "XL/GG",
+          "sku": "SST-4542302-XL",
+          "option1": "XL/GG",
+          "option2": null
+        }
+      ],
+      "orders_30d_signal": 1,
+      "revenue_signal": 619.99,
+      "tiny_searches": [
+        {
+          "query": "SST-4542302-L",
+          "status": "Erro",
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "candidates": []
+        },
+        {
+          "query": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1069544291",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544315",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - L-G",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544310",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - M-M",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544305",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - S-P",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544320",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - XL-GG",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544300",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - XS-PP",
+              "preco": 619.99,
+              "situacao": "A"
+            }
+          ]
+        },
+        {
+          "query": "Calça Saint Studio Alfaiataria Leve",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1069544291",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544315",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - L-G",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544310",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - M-M",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544305",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - S-P",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544320",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - XL-GG",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544300",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - XS-PP",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544359",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Marrom",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544383",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Marrom - L/G",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544378",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Marrom - M/M",
+              "preco": 619.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069544373",
+              "codigo": "",
+              "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Marrom - S/P",
+              "preco": 619.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_detailed_matches": [
+        {
+          "id": "1069544315",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "L/G"
+          },
+          "grade": {
+            "Tamanho": "L/G"
+          },
+          "source": "variacao",
+          "parent_id": "1069544291",
+          "matched_size_text": "L/G"
+        },
+        {
+          "id": "1069544349",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "L/G"
+          },
+          "grade": {
+            "Tamanho": "L/G"
+          },
+          "source": "variacao",
+          "parent_id": "1069544325",
+          "matched_size_text": "L/G"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "eligibility": "ambiguous_tiny_matches_with_shopify_sku",
+      "target_tiny_id": null,
+      "target_codigo": "SST-4542302-L",
+      "confidence": "baixa"
+    },
+    {
+      "product_title": "Camiseta Pace Buero Washed Black Preto",
+      "shopify_product_id": "9145201197278",
+      "shopify_variant_id": "47967340331230",
+      "size": "S/P",
+      "shopify_sku_live": "PAC-1197278-S",
+      "shopify_live_variant": {
+        "id": "47967340331230",
+        "title": "S/P",
+        "sku": "PAC-1197278-S",
+        "option1": "S/P",
+        "option2": null
+      },
+      "shopify_sibling_skus": [
+        {
+          "id": "47967340331230",
+          "title": "S/P",
+          "sku": "PAC-1197278-S",
+          "option1": "S/P",
+          "option2": null
+        },
+        {
+          "id": "47967340363998",
+          "title": "M/M",
+          "sku": "PAC-1197278-M",
+          "option1": "M/M",
+          "option2": null
+        },
+        {
+          "id": "47967340396766",
+          "title": "L/G",
+          "sku": "PAC-1197278-L",
+          "option1": "L/G",
+          "option2": null
+        },
+        {
+          "id": "47967340429534",
+          "title": "XL/GG",
+          "sku": "PAC-1197278-XL",
+          "option1": "XL/GG",
+          "option2": null
+        }
+      ],
+      "orders_30d_signal": 1,
+      "revenue_signal": 319.99,
+      "tiny_searches": [
+        {
+          "query": "PAC-1197278-S",
+          "status": "Erro",
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "candidates": []
+        },
+        {
+          "query": "Camiseta Pace Buero Washed Black Preto",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1069930811",
+              "codigo": "",
+              "nome": "Camiseta Pace Buero Washed Black Preto",
+              "preco": 319.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069930833",
+              "codigo": "",
+              "nome": "Camiseta Pace Buero Washed Black Preto - L-G",
+              "preco": 319.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069930828",
+              "codigo": "",
+              "nome": "Camiseta Pace Buero Washed Black Preto - M-M",
+              "preco": 319.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069930823",
+              "codigo": "",
+              "nome": "Camiseta Pace Buero Washed Black Preto - S-P",
+              "preco": 319.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069930838",
+              "codigo": "",
+              "nome": "Camiseta Pace Buero Washed Black Preto - XL-GG",
+              "preco": 319.99,
+              "situacao": "A"
+            }
+          ]
+        },
+        {
+          "query": "Camiseta Pace Buero Washed Black",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1069930811",
+              "codigo": "",
+              "nome": "Camiseta Pace Buero Washed Black Preto",
+              "preco": 319.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069930833",
+              "codigo": "",
+              "nome": "Camiseta Pace Buero Washed Black Preto - L-G",
+              "preco": 319.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069930828",
+              "codigo": "",
+              "nome": "Camiseta Pace Buero Washed Black Preto - M-M",
+              "preco": 319.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069930823",
+              "codigo": "",
+              "nome": "Camiseta Pace Buero Washed Black Preto - S-P",
+              "preco": 319.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069930838",
+              "codigo": "",
+              "nome": "Camiseta Pace Buero Washed Black Preto - XL-GG",
+              "preco": 319.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_detailed_matches": [
+        {
+          "id": "1069930823",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "S/P"
+          },
+          "grade": {
+            "Tamanho": "S/P"
+          },
+          "source": "variacao",
+          "parent_id": "1069930811",
+          "matched_size_text": "S/P"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "eligibility": "tiny_codigo_write_preview_candidate_from_shopify_sku",
+      "target_tiny_id": "1069930823",
+      "target_codigo": "PAC-1197278-S",
+      "confidence": "media_alta"
+    },
+    {
+      "product_title": "Camiseta Pace Patavision Off White",
+      "shopify_product_id": "8946025857246",
+      "shopify_variant_id": "47019093295326",
+      "size": "P/S",
+      "shopify_sku_live": "PAC-5857246-S",
+      "shopify_live_variant": {
+        "id": "47019093295326",
+        "title": "P/S",
+        "sku": "PAC-5857246-S",
+        "option1": "P/S",
+        "option2": null
+      },
+      "shopify_sibling_skus": [
+        {
+          "id": "47019093295326",
+          "title": "P/S",
+          "sku": "PAC-5857246-S",
+          "option1": "P/S",
+          "option2": null
+        },
+        {
+          "id": "47019093328094",
+          "title": "M",
+          "sku": "PAC-5857246-M",
+          "option1": "M",
+          "option2": null
+        },
+        {
+          "id": "47019093360862",
+          "title": "G/L",
+          "sku": "PAC-5857246-L",
+          "option1": "G/L",
+          "option2": null
+        }
+      ],
+      "orders_30d_signal": 1,
+      "revenue_signal": 209.99,
+      "tiny_searches": [
+        {
+          "query": "PAC-5857246-S",
+          "status": "Erro",
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "candidates": []
+        },
+        {
+          "query": "Camiseta Pace Patavision Off White",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1063951381",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063951391",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White - G/L",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063951388",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White - M",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069539349",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White - P-S",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063951385",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White - P/S",
+              "preco": 299.99,
+              "situacao": "A"
+            }
+          ]
+        },
+        {
+          "query": "Camiseta Pace Patavision Off White",
+          "status": "OK",
+          "error": null,
+          "candidates": [
+            {
+              "id": "1063951381",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063951391",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White - G/L",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063951388",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White - M",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1069539349",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White - P-S",
+              "preco": 299.99,
+              "situacao": "A"
+            },
+            {
+              "id": "1063951385",
+              "codigo": "",
+              "nome": "Camiseta Pace Patavision Off White - P/S",
+              "preco": 299.99,
+              "situacao": "A"
+            }
+          ]
+        }
+      ],
+      "tiny_detailed_matches": [
+        {
+          "id": "1063951385",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "P/S"
+          },
+          "grade": {
+            "Tamanho": "P/S"
+          },
+          "source": "variacao",
+          "parent_id": "1063951381",
+          "matched_size_text": "P/S"
+        },
+        {
+          "id": "1069539349",
+          "codigo": "",
+          "nome": {
+            "Tamanho": "P/S"
+          },
+          "grade": {
+            "Tamanho": "P/S"
+          },
+          "source": "variacao",
+          "parent_id": "1063951381",
+          "matched_size_text": "P/S"
+        }
+      ],
+      "tiny_coded_matches": [],
+      "eligibility": "ambiguous_tiny_matches_with_shopify_sku",
+      "target_tiny_id": null,
+      "target_codigo": "PAC-5857246-S",
+      "confidence": "baixa"
+    }
+  ]
+}
