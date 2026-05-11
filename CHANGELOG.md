@@ -1,3 +1,11 @@
+## 2026-05-11 — LK Phase 8 Operational Automation Registry
+
+- Reconciliada a Fase 8 após a correção de entrega obrigatória Daily/Weekly e a constatação do cron SEO/CRO weekly já ativo.
+- Resultado: 6 automações rastreadas, 3 cronjobs ativos (`LK-AUTO-001`, `LK-AUTO-002`, `LK-AUTO-003`), 2 entregas obrigatórias, 1 cron read-only de preview e 3 automações manual-only/bloqueadas.
+- Status: `LK-AUTO-004` Approval Ledger fica manual pós-ação; `LK-AUTO-005` Klaviyo e `LK-AUTO-006` sourcing continuam medium risk, sem cron/n8n/envio/write.
+- P0/P1 mantido em linguagem simples: P0 = urgente hoje; P1 = importante acompanhar/decidir; Daily/Weekly são enviados sempre na cadência.
+- Artefatos: `areas/lk/rotinas/phase8-operational-automation-registry-2026-05-11.md`, `reports/lk-phase8-operational-automation-registry-2026-05-11.md`, `.json` e `.csv`.
+
 ## 2026-05-11 — LK Daily + Weekly Mandatory Report Delivery
 
 - Correção Lucas: Daily Sales Brief e Weekly CEO Review devem ser enviados obrigatoriamente nas cadências aprovadas, não somente quando houver P0/P1.

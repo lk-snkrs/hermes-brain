@@ -37,6 +37,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `rotinas/daily-weekly-dry-run-validation-2026-05-11.md` — Fase 8: dry-run manual aprovado para `LK-AUTO-001` Daily Sales Brief e `LK-AUTO-002` Weekly CEO Review, elegíveis para decisão futura de cadência/destino, sem cron/n8n/envio/write.
 - `rotinas/daily-weekly-silent-cron-activation-2026-05-11.md` — Fase 8: ativação dos cronjobs `no_agent` Daily 08:00 BRT e Weekly segunda 09:00 BRT, silent-OK, sem n8n/envio imediato/write produtivo.
 - `rotinas/daily-weekly-mandatory-report-delivery-2026-05-11.md` — correção Lucas: Daily e Weekly devem ser enviados obrigatoriamente na cadência aprovada; P0/P1 são rótulos de prioridade, não gatilhos de entrega.
+- `rotinas/phase8-operational-automation-registry-2026-05-11.md` — Fase 8 reconciliada: 6 automações rastreadas, 3 cronjobs ativos (`LK-AUTO-001/002/003`), 3 manual-only/bloqueadas e 0 n8n/writes produtivos.
 - `rotinas/full-sync.md` — sincronizações LK.
 - `rotinas/morning-briefing.md` — briefing matinal.
 - `rotinas/sync-log.md` — auditoria de syncs.
