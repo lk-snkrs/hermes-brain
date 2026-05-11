@@ -1,0 +1,1785 @@
+{
+  "summary": {
+    "generated_at": "2026-05-11 10:34:09",
+    "source": "reports/lk-influencer-sku-stock-matrix-readonly-2026-05-10.json",
+    "b_total": 33,
+    "b_by_status": {
+      "needs_manual_shopify_sku": 11,
+      "sku_candidate_found": 14,
+      "tiny_candidate_found": 8
+    },
+    "a_total": 103,
+    "shopify_readonly": true,
+    "tiny_readonly_attempted": true
+  },
+  "fila_b_saneamento": [
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "37",
+      "qty": 3,
+      "revenue": 14999.97,
+      "orders": 3,
+      "evidence": {
+        "discount_code": 2,
+        "landing_site": 2
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 0,
+        "candidate_count": 0,
+        "best": null,
+        "error": null
+      },
+      "recommended_b_action": "Sem SKU atual encontrado via busca Shopify read-only; revisar cadastro Shopify manualmente antes de decisão.",
+      "resolution_status": "needs_manual_shopify_sku"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "36",
+      "qty": 2,
+      "revenue": 9999.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 0,
+        "candidate_count": 0,
+        "best": null,
+        "error": null
+      },
+      "recommended_b_action": "Sem SKU atual encontrado via busca Shopify read-only; revisar cadastro Shopify manualmente antes de decisão.",
+      "resolution_status": "needs_manual_shopify_sku"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "36",
+      "qty": 2,
+      "revenue": 9999.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+          "handle": "tenis-nike-moon-shoe-sp-jacquemus-off-white",
+          "variant_title": "36",
+          "sku": "HV8547-002-36",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 1,
+        "best": {
+          "id": "1069546050",
+          "codigo": "HV8547-002-36",
+          "nome": "Tênis Nike Moon Shoe SP Jacquemus Off White - 36",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 1
+      }
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 204L Cortado Marrom",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "39",
+      "qty": 2,
+      "revenue": 5599.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Tênis New Balance 204L Cortado Marrom",
+          "handle": "tenis-new-balance-204l-cortado-marrom",
+          "variant_title": "39",
+          "sku": "NB-0254942-39",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 12,
+        "best": {
+          "id": "1069544054",
+          "codigo": "",
+          "nome": "Tênis New Balance 204L Cortado Marrom - 39",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 0
+      }
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "sku": "1183C102751-4",
+      "variant": "37",
+      "qty": 2,
+      "revenue": 4799.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "risk": "mapear SKU no Tiny",
+      "tiny_lookup": {
+        "candidate_count": 18,
+        "exact_code_matches": 1,
+        "best": {
+          "id": "1058668616",
+          "codigo": "1183C102 751-4",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 37",
+          "situacao": "A"
+        },
+        "error": null
+      },
+      "resolution_status": "tiny_candidate_found",
+      "recommended_b_action": "Candidato Tiny encontrado; validar/normalizar alias no Tiny/mapeamento, sem mexer na Shopify."
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "44",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+          "handle": "tenis-nike-moon-shoe-sp-jacquemus-off-white",
+          "variant_title": "44",
+          "sku": "HV8547-002-44",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 1,
+        "best": {
+          "id": "1069546087",
+          "codigo": "HV8547-002-44",
+          "nome": "Tênis Nike Moon Shoe SP Jacquemus Off White - 44",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 1
+      }
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "38",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 0,
+        "candidate_count": 0,
+        "best": null,
+        "error": null
+      },
+      "recommended_b_action": "Sem SKU atual encontrado via busca Shopify read-only; revisar cadastro Shopify manualmente antes de decisão.",
+      "resolution_status": "needs_manual_shopify_sku"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 3499.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom",
+          "handle": "tenis-nike-x-skims-rift-mesh-archaeo-brown-marrom",
+          "variant_title": "36",
+          "sku": "NKS-1065310-36",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 12,
+        "best": {
+          "id": "1069544710",
+          "codigo": "",
+          "nome": "Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom - 36",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 0
+      }
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Mind 002 Light Khaki Bege",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "41",
+      "qty": 1,
+      "revenue": 3199.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Tênis Nike Mind 002 Light Khaki Bege",
+          "handle": "tenis-nike-mind-002-light-khaki-bege",
+          "variant_title": "41",
+          "sku": "NKE-9054174-41",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 14,
+        "best": {
+          "id": "1069545385",
+          "codigo": "",
+          "nome": "Tênis Nike Mind 002 Light Khaki Bege - 41",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 0
+      }
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Mind 002 Light Smoke Grey Cinza",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "41",
+      "qty": 1,
+      "revenue": 3199.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Tênis Nike Mind 002 Light Smoke Grey Cinza",
+          "handle": "tenis-nike-mind-002-light-smoke-grey-cinza",
+          "variant_title": "41",
+          "sku": "HQ4308-003-1",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 1,
+        "best": {
+          "id": "1069397780",
+          "codigo": "HQ4308-003-1",
+          "nome": "Tênis Nike Mind 002 Light Smoke Grey Cinza - 41",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 1
+      }
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "42.5",
+      "qty": 1,
+      "revenue": 2999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom",
+          "handle": "tenis-onitsuka-tiger-mexico-66-fringe-mocha-brown-dark-brown-marrom",
+          "variant_title": "42.5",
+          "sku": "ONI-0995678-425",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 14,
+        "best": {
+          "id": "1070120736",
+          "codigo": "",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - 42.5",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 0
+      }
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 204L Cortado Marrom",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "37",
+      "qty": 1,
+      "revenue": 2799.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Tênis New Balance 204L Cortado Marrom",
+          "handle": "tenis-new-balance-204l-cortado-marrom",
+          "variant_title": "37",
+          "sku": "NB-0254942-37",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 12,
+        "best": {
+          "id": "1069544047",
+          "codigo": "",
+          "nome": "Tênis New Balance 204L Cortado Marrom - 37",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 0
+      }
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "sku": "1183C102751-8",
+      "variant": "42.5",
+      "qty": 1,
+      "revenue": 2399.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "mapear SKU no Tiny",
+      "tiny_lookup": {
+        "candidate_count": 18,
+        "exact_code_matches": 1,
+        "best": {
+          "id": "1061068024",
+          "codigo": "1183C102 751-8",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 42.5",
+          "situacao": "A"
+        },
+        "error": null
+      },
+      "resolution_status": "tiny_candidate_found",
+      "recommended_b_action": "Candidato Tiny encontrado; validar/normalizar alias no Tiny/mapeamento, sem mexer na Shopify."
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "sku": "1183C102751-9",
+      "variant": "40",
+      "qty": 1,
+      "revenue": 2399.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "mapear SKU no Tiny",
+      "tiny_lookup": {
+        "candidate_count": 18,
+        "exact_code_matches": 1,
+        "best": {
+          "id": "1061068027",
+          "codigo": "1183C102 751-9",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 40",
+          "situacao": "A"
+        },
+        "error": null
+      },
+      "resolution_status": "tiny_candidate_found",
+      "recommended_b_action": "Candidato Tiny encontrado; validar/normalizar alias no Tiny/mapeamento, sem mexer na Shopify."
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+      "sku": "1183B566021-4",
+      "variant": "37",
+      "qty": 1,
+      "revenue": 2399.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "mapear SKU no Tiny",
+      "tiny_lookup": {
+        "candidate_count": 14,
+        "exact_code_matches": 1,
+        "best": {
+          "id": "1058754351",
+          "codigo": "1183B566 021-4",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata - 37",
+          "situacao": "A"
+        },
+        "error": null
+      },
+      "resolution_status": "tiny_candidate_found",
+      "recommended_b_action": "Candidato Tiny encontrado; validar/normalizar alias no Tiny/mapeamento, sem mexer na Shopify."
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "35.5",
+      "qty": 1,
+      "revenue": 2399.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+          "handle": "tenis-onitsuka-tiger-mexico-66-chrome-silver-prata",
+          "variant_title": "35.5",
+          "sku": "",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "Sem SKU atual encontrado via busca Shopify read-only; revisar cadastro Shopify manualmente antes de decisão.",
+      "resolution_status": "needs_manual_shopify_sku"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "sku": "1183C102751-6",
+      "variant": "39",
+      "qty": 1,
+      "revenue": 2399.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "mapear SKU no Tiny",
+      "tiny_lookup": {
+        "candidate_count": 18,
+        "exact_code_matches": 1,
+        "best": {
+          "id": "1058668622",
+          "codigo": "1183C102 751-6",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 39",
+          "situacao": "A"
+        },
+        "error": null
+      },
+      "resolution_status": "tiny_candidate_found",
+      "recommended_b_action": "Candidato Tiny encontrado; validar/normalizar alias no Tiny/mapeamento, sem mexer na Shopify."
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "sku": "ONI-3740254-39",
+      "variant": "39",
+      "qty": 1,
+      "revenue": 2199.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "mapear SKU no Tiny",
+      "tiny_lookup": {
+        "candidate_count": 11,
+        "exact_code_matches": 0,
+        "best": {
+          "id": "1066502458",
+          "codigo": "",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege - 39",
+          "situacao": "A"
+        },
+        "error": null
+      },
+      "resolution_status": "tiny_candidate_found",
+      "recommended_b_action": "Candidato Tiny encontrado; validar/normalizar alias no Tiny/mapeamento, sem mexer na Shopify."
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "38",
+      "qty": 1,
+      "revenue": 2199.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza",
+          "handle": "tenis-onitsuka-tiger-mexico-66-sabot-pure-silver-cream-cinza",
+          "variant_title": "38",
+          "sku": "ONI-6772830-38",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 12,
+        "best": {
+          "id": "1070119554",
+          "codigo": "",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza - 38",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 0
+      }
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "S/P",
+      "qty": 1,
+      "revenue": 1799.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 2,
+        "best": {
+          "product_title": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto",
+          "handle": "moletom-alo-yoga-cropped-serenity-coverup-black-preto",
+          "variant_title": "XS/PP",
+          "sku": "ALO-8506462-XS",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 5,
+        "best": {
+          "id": "1069542754",
+          "codigo": "",
+          "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 0
+      }
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Air Jordan 1 Low White University Red Branco",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 1499.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Tênis Nike Air Jordan 1 Low White University Red Branco",
+          "handle": "air-jordan-1-low-white-university-red",
+          "variant_title": "36",
+          "sku": "",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "Sem SKU atual encontrado via busca Shopify read-only; revisar cadastro Shopify manualmente antes de decisão.",
+      "resolution_status": "needs_manual_shopify_sku"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Camiseta Aimé Leon Dore Musician Graphic Off White",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "S/P",
+      "qty": 1,
+      "revenue": 1299.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Camiseta Aimé Leon Dore Musician Graphic Off White",
+          "handle": "camiseta-aime-leon-dore-musician-graphic-off-white",
+          "variant_title": "S/P",
+          "sku": "",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "Sem SKU atual encontrado via busca Shopify read-only; revisar cadastro Shopify manualmente antes de decisão.",
+      "resolution_status": "needs_manual_shopify_sku"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "L/G",
+      "qty": 1,
+      "revenue": 619.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 2,
+        "best": {
+          "product_title": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+          "handle": "calca-saint-studio-alfaiataria-leve-prega-dupla-cinza",
+          "variant_title": "L/G",
+          "sku": "SST-4542302-L",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 6,
+        "best": {
+          "id": "1069544291",
+          "codigo": "",
+          "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 0
+      }
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Rhode Pocket Blush",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "Sleepy Girl - Soft Mauve",
+      "qty": 1,
+      "revenue": 399.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Rhode Pocket Blush",
+          "handle": "rhode-pocket-blush",
+          "variant_title": "Sleepy Girl - Soft Mauve",
+          "sku": "",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "Sem SKU atual encontrado via busca Shopify read-only; revisar cadastro Shopify manualmente antes de decisão.",
+      "resolution_status": "needs_manual_shopify_sku"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Camiseta Pace Buero Washed Black Preto",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "S/P",
+      "qty": 1,
+      "revenue": 319.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Camiseta Pace Buero Washed Black Preto",
+          "handle": "camiseta-pace-buero-washed-black-preto",
+          "variant_title": "S/P",
+          "sku": "PAC-1197278-S",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 5,
+        "best": {
+          "id": "1069930811",
+          "codigo": "",
+          "nome": "Camiseta Pace Buero Washed Black Preto",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 0
+      }
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Camiseta Pace Cotton Code Preta",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "G/L",
+      "qty": 1,
+      "revenue": 216.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Camiseta Pace Cotton Code Preta",
+          "handle": "camiseta-pace-cotton-code-preta",
+          "variant_title": "G/L",
+          "sku": "",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "Sem SKU atual encontrado via busca Shopify read-only; revisar cadastro Shopify manualmente antes de decisão.",
+      "resolution_status": "needs_manual_shopify_sku"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Camiseta Pace Cotton Code Branca",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "G/L",
+      "qty": 1,
+      "revenue": 216.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Camiseta Pace Cotton Code Branca",
+          "handle": "camiseta-pace-cotton-code-branca",
+          "variant_title": "G/L",
+          "sku": "",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "Sem SKU atual encontrado via busca Shopify read-only; revisar cadastro Shopify manualmente antes de decisão.",
+      "resolution_status": "needs_manual_shopify_sku"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Camiseta Pace Patavision Off White",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "P/S",
+      "qty": 1,
+      "revenue": 209.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Camiseta Pace Patavision Off White",
+          "handle": "camiseta-pace-patavision-off-white",
+          "variant_title": "P/S",
+          "sku": "PAC-5857246-S",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 5,
+        "best": {
+          "id": "1063951385",
+          "codigo": "",
+          "nome": "Camiseta Pace Patavision Off White - P/S",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 0
+      }
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Camiseta Pace Sketch Yourself Off White",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "P/S",
+      "qty": 1,
+      "revenue": 209.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Camiseta Pace Sketch Yourself Off White",
+          "handle": "camiseta-pace-sketch-yourself-off-white",
+          "variant_title": "P/S",
+          "sku": "",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "Sem SKU atual encontrado via busca Shopify read-only; revisar cadastro Shopify manualmente antes de decisão.",
+      "resolution_status": "needs_manual_shopify_sku"
+    },
+    {
+      "influencer": "Helena Lunardelli",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "38",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "note_attributes": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+          "handle": "tenis-nike-moon-shoe-sp-jacquemus-off-white",
+          "variant_title": "38",
+          "sku": "HV8547-002-38",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "SKU atual encontrado na Shopify por produto+tamanho; usar como candidato para reclassificar e consultar Tiny antes de compra.",
+      "resolution_status": "sku_candidate_found",
+      "tiny_lookup_for_candidate": {
+        "candidate_count": 1,
+        "best": {
+          "id": "1069546060",
+          "codigo": "HV8547-002-38",
+          "nome": "Tênis Nike Moon Shoe SP Jacquemus Off White - 38",
+          "situacao": "A"
+        },
+        "error": null,
+        "exact_code_matches": 1
+      }
+    },
+    {
+      "influencer": "Helena Lunardelli",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "sku": "1183C102751-2",
+      "variant": "35",
+      "qty": 1,
+      "revenue": 2399.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "risk": "mapear SKU no Tiny",
+      "tiny_lookup": {
+        "candidate_count": 18,
+        "exact_code_matches": 1,
+        "best": {
+          "id": "1058668610",
+          "codigo": "1183C102 751-2",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 35",
+          "situacao": "A"
+        },
+        "error": null
+      },
+      "resolution_status": "tiny_candidate_found",
+      "recommended_b_action": "Candidato Tiny encontrado; validar/normalizar alias no Tiny/mapeamento, sem mexer na Shopify."
+    },
+    {
+      "influencer": "Helena Lunardelli",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "sku": "1183C102751-3",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 2399.99,
+      "orders": 1,
+      "evidence": {
+        "note_attributes": 1
+      },
+      "risk": "mapear SKU no Tiny",
+      "tiny_lookup": {
+        "candidate_count": 18,
+        "exact_code_matches": 1,
+        "best": {
+          "id": "1058668613",
+          "codigo": "1183C102 751-3",
+          "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 36",
+          "situacao": "A"
+        },
+        "error": null
+      },
+      "resolution_status": "tiny_candidate_found",
+      "recommended_b_action": "Candidato Tiny encontrado; validar/normalizar alias no Tiny/mapeamento, sem mexer na Shopify."
+    },
+    {
+      "influencer": "Helena Lunardelli",
+      "name": "Camiseta Pace Cotton Code Branca",
+      "sku": "[sem SKU no Shopify]",
+      "variant": "G/L",
+      "qty": 1,
+      "revenue": 216.99,
+      "orders": 1,
+      "evidence": {
+        "landing_site": 1
+      },
+      "risk": "sem SKU no Shopify",
+      "shopify_current_lookup": {
+        "product_count": 1,
+        "candidate_count": 1,
+        "best": {
+          "product_title": "Camiseta Pace Cotton Code Branca",
+          "handle": "camiseta-pace-cotton-code-branca",
+          "variant_title": "G/L",
+          "sku": "",
+          "match": "tamanho_compativel"
+        },
+        "error": null
+      },
+      "recommended_b_action": "Sem SKU atual encontrado via busca Shopify read-only; revisar cadastro Shopify manualmente antes de decisão.",
+      "resolution_status": "needs_manual_shopify_sku"
+    }
+  ],
+  "fila_a_preview": [
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+      "sku": "AQ9129-170-7",
+      "variant": "40",
+      "qty": 4,
+      "revenue": 13399.96,
+      "orders": 4,
+      "evidence": {
+        "discount_code": 4
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 1.32,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "HV8547-200-38",
+      "variant": "38",
+      "qty": 3,
+      "revenue": 14999.97,
+      "orders": 3,
+      "evidence": {
+        "discount_code": 3
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.99,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "sku": "1183A201-126-3",
+      "variant": "36",
+      "qty": 3,
+      "revenue": 7199.97,
+      "orders": 3,
+      "evidence": {
+        "discount_code": 3
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.99,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom",
+      "sku": "HV8547-200-38",
+      "variant": "38",
+      "qty": 2,
+      "revenue": 11999.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-8",
+      "variant": "41",
+      "qty": 2,
+      "revenue": 11999.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-39",
+      "variant": "39",
+      "qty": 2,
+      "revenue": 9999.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-38",
+      "variant": "38",
+      "qty": 2,
+      "revenue": 9999.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "sku": "U204LMMC-3",
+      "variant": "36",
+      "qty": 2,
+      "revenue": 5599.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 2.0,
+      "risk": "baixo estoque",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 91.0,
+      "priority": "P2 — monitorar / validar lead time",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Cortado Marrom",
+      "sku": "U9060496",
+      "variant": "37",
+      "qty": 2,
+      "revenue": 4799.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 1.0,
+      "risk": "baixo estoque",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 45.5,
+      "priority": "P2 — monitorar / validar lead time",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Paraty Birch Cream Bege",
+      "sku": "1183B601.200-6",
+      "variant": "39",
+      "qty": 2,
+      "revenue": 4599.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "sku": "1183C123.252-7",
+      "variant": "40",
+      "qty": 2,
+      "revenue": 4399.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "sku": "1183C123.252-5",
+      "variant": "38",
+      "qty": 2,
+      "revenue": 4399.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "sku": "1183C123.252-4",
+      "variant": "37",
+      "qty": 2,
+      "revenue": 4399.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Jason Markk Essential Kit de Limpeza",
+      "sku": "300110",
+      "variant": "[sem variant]",
+      "qty": 2,
+      "revenue": 399.98,
+      "orders": 2,
+      "evidence": {
+        "discount_code": 2
+      },
+      "tiny_lk_controle_estoque": -2.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.66,
+      "stock_cover_days_est": 0,
+      "priority": "P0 — ruptura com venda repetida",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Sneakers Brown Bege",
+      "sku": "1025116-1A17741_2NM5J-3",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 8499.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 1.0,
+      "risk": "baixo estoque",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 91.0,
+      "priority": "P2 — monitorar / validar lead time",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-5",
+      "variant": "38",
+      "qty": 1,
+      "revenue": 5999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-7",
+      "variant": "40",
+      "qty": 1,
+      "revenue": 5999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "sku": "HV8547-700-7",
+      "variant": "40",
+      "qty": 1,
+      "revenue": 5999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-36",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "HV8547-200-39",
+      "variant": "39",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": -1.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-34",
+      "variant": "34",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "HV8547-200-37",
+      "variant": "37",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa",
+      "sku": "HV8547-601-34",
+      "variant": "34",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-37",
+      "variant": "37",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "HV8547-200-36",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 4999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Vomero Premium SP Black Mini Chrome Swoosh Preto",
+      "sku": "IQ0627-001",
+      "variant": "43",
+      "qty": 1,
+      "revenue": 4499.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Moage White/White Branco",
+      "sku": "1183B555.102-6",
+      "variant": "39",
+      "qty": 1,
+      "revenue": 3999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Vomero Premium Flat Stout Marrom",
+      "sku": "IQ0028-200",
+      "variant": "42",
+      "qty": 1,
+      "revenue": 3999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Vomero Premium Flat Stout Marrom",
+      "sku": "IQ0028-209",
+      "variant": "43",
+      "qty": 1,
+      "revenue": 3999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Air Jordan 1 Low Inside Out Black Preto",
+      "sku": "DN1635001-38-8",
+      "variant": "44",
+      "qty": 1,
+      "revenue": 3499.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Tiger Corsair A55 Midnight Cream Azul",
+      "sku": "1183C317-401-10",
+      "variant": "43",
+      "qty": 1,
+      "revenue": 2999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Onitsuka Tiger Tiger Corsair A55 Black Cream Preto",
+      "sku": "1183C317.001-1",
+      "variant": "34",
+      "qty": 1,
+      "revenue": 2999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis Nike Air Force 1 Low x Supreme Wheat Marrom",
+      "sku": "DN1555-200",
+      "variant": "40",
+      "qty": 1,
+      "revenue": 2999.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Boné Sparrow Marrom",
+      "sku": "U9060ZGA-1",
+      "variant": "34",
+      "qty": 1,
+      "revenue": 2799.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 204L Pastel Pink Rosa",
+      "sku": "U204LMMD-3",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 2799.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Bone Sparrow Marrom",
+      "sku": "U9060ZGA-2",
+      "variant": "35",
+      "qty": 1,
+      "revenue": 2799.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Mushroom Arid Stone Bege",
+      "sku": "43774078389050",
+      "variant": "34",
+      "qty": 1,
+      "revenue": 2699.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Mushroom Arid Stone Bege",
+      "sku": "U9060ERC-4",
+      "variant": "37",
+      "qty": 1,
+      "revenue": 2699.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+      "sku": "U9060WHT-3",
+      "variant": "36",
+      "qty": 1,
+      "revenue": 2599.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 1.0,
+      "risk": "baixo estoque",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 91.0,
+      "priority": "P2 — monitorar / validar lead time",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    },
+    {
+      "influencer": "Silvia Heinz",
+      "name": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+      "sku": "U9060WHT-6",
+      "variant": "39",
+      "qty": 1,
+      "revenue": 2599.99,
+      "orders": 1,
+      "evidence": {
+        "discount_code": 1
+      },
+      "tiny_lk_controle_estoque": 0.0,
+      "risk": "ruptura agora",
+      "sell_through_rate_30d_equiv": 0.33,
+      "stock_cover_days_est": 0,
+      "priority": "P1 — ruptura com venda unitária",
+      "preview_action": "checar sourcing/reposição; sem compra/contato externo sem aprovação"
+    }
+  ],
+  "mission_control_cards": [
+    {
+      "card": "LK-STOCK-B-SKU-SANEAR",
+      "status": "ready_for_review",
+      "owner": "unassigned",
+      "scope": "validar candidatos SKU Shopify/Tiny e aprovar ajustes de mapeamento/alias; sem write automático"
+    },
+    {
+      "card": "LK-STOCK-A-SOURCING-PREVIEW",
+      "status": "needs_lucas_approval",
+      "owner": "unassigned",
+      "scope": "aprovar checagem de sourcing/reposição dos P0/P1; sem compra/contato externo"
+    },
+    {
+      "card": "LK-STOCK-VELOCITY-LEADTIME",
+      "status": "draft_ready",
+      "owner": "unassigned",
+      "scope": "substituir lead time padrão por lead time real Monbam/Droper/interno quando disponível"
+    },
+    {
+      "card": "LK-DATA-SPINE-V0",
+      "status": "next",
+      "owner": "unassigned",
+      "scope": "inventário de fontes e matriz de credenciais sem valores"
+    }
+  ]
+}
