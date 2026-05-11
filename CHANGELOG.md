@@ -1,3 +1,12 @@
+## 2026-05-11 — LK OS Weekly CEO Review read-only
+
+- Criado e executado `scripts/lk_os_weekly_ceo_review_20260511.py`, revisão semanal executiva read-only do LK OS para 2026-05-04 a 2026-05-10.
+- Resultado: Shopify `R$ 312.261,74` em 97 pedidos; GA4 29.605 sessões e 55 transações GA4; conversão aproximada pedidos Shopify / sessões GA4 `0,33%`.
+- Estoque Tiny nos SKUs vendidos: 8 ruptura, 3 baixo estoque vs venda da semana, 3 desconhecidos/mapeamento sem candidato seguro ou saldo legível, 1 OK na amostra.
+- Meta Ads e Metricool/Google Ads entram como `platform_signal`: Meta gasto `R$ 9.374,42`, Metricool/Google Ads 21 linhas/status 200; nenhum ROAS operacional declarado sem reconciliação.
+- Artefatos: `areas/lk/rotinas/weekly-ceo-review-readonly-2026-05-11.md`, `reports/lk-os-weekly-ceo-review-2026-05-04_2026-05-10.md`, `.json`, e previews Telegram `.md`/`.json`.
+- Nenhum Telegram automático, cron, campanha, fornecedor, compra, alteração em Shopify/Tiny, banco de produção ou envio externo foi executado.
+
 ## 2026-05-11 — LK OS Daily Sales Brief Telegram preview e silêncio
 
 - Adicionado ao `scripts/lk_os_daily_sales_brief_20260511.py` o preview Telegram-ready do briefing diário, sem envio externo.
