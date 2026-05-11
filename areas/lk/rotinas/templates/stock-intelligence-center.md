@@ -106,8 +106,10 @@ Recomendação:
 
 Produtos vendidos recentemente e zerados no Tiny.
 
-- Checar Droper.app se for Brasil.
-- Checar StockX/KicksDev se for fora.
+- Checar Droper.app para preço/disponibilidade Brasil.
+- Checar StockX/KicksDev/GOAT para preço internacional quando fizer sentido.
+- Normalizar tamanho StockX/GOAT: US Men ou US Women → tamanho LK/BR/EU antes de comparar.
+- Retornar a opção mais barata viável considerando custo final estimado, prazo e confiabilidade.
 - Sugerir mensagem para `LK.Sneakers | Compras`, mas não enviar sem aprovação.
 
 ### 3. Compra antes de acabar

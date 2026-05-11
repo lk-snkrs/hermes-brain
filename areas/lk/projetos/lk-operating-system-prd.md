@@ -293,13 +293,20 @@ Fontes conhecidas:
 
 Score de sourcing recomendado:
 
-- preço;
+- preço final viável, não apenas preço de vitrine;
 - prazo;
 - confiabilidade;
 - risco;
 - disponibilidade por tamanho;
 - histórico de compra;
 - compatibilidade com curadoria LK.
+
+Regra Lucas 2026-05-11 para sourcing futuro/pending:
+
+- Antes de cotação real/contato externo, comparar Droper, StockX e GOAT por produto+tamanho.
+- Retornar sempre a fonte mais barata viável.
+- StockX/GOAT geralmente usam tamanho americano; identificar se é US Men ou US Women e converter corretamente para o tamanho LK/BR/EU antes de comparar.
+- Para StockX/GOAT, custo final estimado deve usar a fórmula LK de importação da seção Pricing Intelligence.
 
 Fluxo Brasil v0.1:
 
