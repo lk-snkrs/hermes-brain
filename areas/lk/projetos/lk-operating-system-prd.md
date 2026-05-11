@@ -134,7 +134,7 @@ LK Operating System
 ├── Pricing Intelligence
 ├── Supply & Sourcing
 ├── Shopify Operations
-├── SEO & Google
+├── SEO & Google / SEO-CRO Weekly Improvement
 ├── Google Merchant Center
 ├── Paid Traffic & Influencer Intelligence
 ├── CRM & RFM
