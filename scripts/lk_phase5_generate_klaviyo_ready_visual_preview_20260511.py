@@ -189,10 +189,10 @@ def build_html(rows: list[dict[str, str]], enrichment: dict[str, Any]) -> str:
     .header img {{ display:block; width:78px; height:auto; }}
     .topline {{ background:#FFFFFF; padding:27px 20px 20px; text-align:center; border-bottom:1px solid #EEEEEE; }}
     .topline span {{ font-size:11px; letter-spacing:6px; text-transform:uppercase; color:#8F8F8F; font-weight:300; }}
-    .hero {{ background:#FFFFFF; padding:58px 46px 46px; text-align:center; border-bottom:1px solid #EEEEEE; position:relative; overflow:hidden; }}
+    .hero {{ background:#F2ECE4; padding:58px 46px 46px; text-align:center; border-bottom:1px solid #E5D7C9; position:relative; overflow:hidden; }}
     .hero:before {{ content:""; position:absolute; top:0; left:50%; transform:translateX(-50%); width:118px; height:5px; background:#B08A67; border-radius:0 0 999px 999px; }}
-    .hero .kicker {{ display:inline-block; font-size:10px; letter-spacing:6px; text-transform:uppercase; color:#8A6F5B; margin-bottom:24px; font-weight:400; background:#F2ECE4; border:1px solid #E5D7C9; border-radius:999px; padding:11px 16px 10px 22px; }}
-    .rule {{ width:38px; height:1px; background:#D8C2AE; margin:25px auto 28px; }}
+    .hero .kicker {{ display:inline-block; font-size:10px; letter-spacing:6px; text-transform:uppercase; color:#8A6F5B; margin-bottom:24px; font-weight:400; background:#FFFFFF; border:1px solid #E5D7C9; border-radius:999px; padding:11px 16px 10px 22px; }}
+    .rule {{ width:38px; height:1px; background:#CDB49C; margin:25px auto 28px; }}
     h1 {{ margin:0; font-family:'Playfair Display', Georgia, 'Times New Roman', serif; font-weight:400; font-size:50px; line-height:.95; letter-spacing:-1.2px; }}
     h1 .warm {{ color:#B08A67; }}
     h1 em {{ color:#8A8A8A; font-style:italic; font-weight:400; }}
