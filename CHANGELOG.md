@@ -1,3 +1,10 @@
+## 2026-05-11 — LK CRM/Klaviyo P1 draft documentado no PRD
+
+- Consolidada a Fase 5 do LK OS no PRD e no plano mestre: a campanha P1 de recompra/curadoria chegou até rascunho Klaviyo, sem envio ou agendamento.
+- Documentada a rotina `areas/lk/sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` com List ID `U8YCCE`, Template ID `XUSEtu` e Campaign ID `01KRC1DPTY615GF5FNBPXMPKY6` em `Draft`.
+- Reforçado o padrão CRM premium: HTML customer-facing sem jargão interno, PII fora do Brain, e aprovação final obrigatória antes de qualquer envio.
+- Próximo passo: manter Draft, confirmar template no campaign message e decidir com Lucas entre envio aprovado, P2 ou WhatsApp concierge.
+
 ## 2026-05-11 — LK SEO/CRO Weekly Improvement operacionalizado
 
 - Criada skill canônica `lk-seo-weekly-improvement` para o módulo semanal de SEO/CRO com nota Claude SEO, meta de evolução e fila de melhoria de PDP/páginas.

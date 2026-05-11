@@ -21,6 +21,7 @@ pedido/cliente → segmentação → recomendação → preview Lucas → envio 
 - `rotinas/rfm-semanal.md` — cálculo e relatório RFM.
 - `rotinas/outcomes-tracker.md` — acompanhamento das sugestões do Hermes.
 - `rotinas/playbook-campanha-crm-aprovada.md` — campanha CRM com segmentação, preview e aprovação Lucas antes de envio.
+- `rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` — primeira execução P1 em Klaviyo: lista, import, template e campanha em Draft, sem envio/agendamento.
 
 ## Dados principais
 
@@ -35,3 +36,4 @@ pedido/cliente → segmentação → recomendação → preview Lucas → envio 
 - Respeitar regra de 90 dias para cross-sell por cliente.
 - Não disparar campanha ou WhatsApp sem aprovação explícita.
 - Registrar resultado para fechar o ciclo de aprendizado.
+- HTML customer-facing de CRM não deve conter jargões internos como P1, Brain, preview, Klaviyo, sem envio, SKU/Tiny ou mecânica de estoque.

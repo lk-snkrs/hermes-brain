@@ -459,6 +459,29 @@ RFM
 + influencer/campanha de origem
 ```
 
+### Estado operacional Fase 5 — 2026-05-11
+
+A primeira execução real da Fase 5 validou o fluxo `segmentação → fila privada → preview visual → artefato customer-facing → rascunho Klaviyo`, ainda sem envio.
+
+Padrão aprovado para CRM premium:
+
+- começar por compra âncora real, especialmente loja física/POS quando a ação for concierge/curadoria;
+- gerar recomendação por produto comprado + opções relacionadas, sem copy genérica de desconto;
+- validar disponibilidade antes de tratar uma peça como campanha acionável;
+- manter PII bruta apenas em export privado com permissão restrita;
+- separar HTML customer-facing dos relatórios internos, removendo termos como P1, Klaviyo, preview, fila, Brain, sem envio e SKU/Tiny/stock mechanics;
+- usar Klaviyo como rascunho seguro: lista, import, template e campanha em Draft, sem `send_time`, sem schedule e sem flow.
+
+Evidência da primeira ação P1:
+
+- lista Klaviyo `U8YCCE` com 9 perfis importados e 0 falhas;
+- template `XUSEtu` criado/reutilizado como `CODE`;
+- campanha `01KRC1DPTY615GF5FNBPXMPKY6` mantida em `Draft`;
+- relatório operacional em `reports/lk-phase5-p1-klaviyo-klaviyo-objects-2026-05-11.md`;
+- rotina documentada em `areas/lk/sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md`.
+
+A Fase 5 só é considerada pronta para repetição quando cada campanha futura gerar: público, motivo, produto, copy, risco, estoque/eligibilidade, artefato visual, objeto Klaviyo/WhatsApp em modo seguro e aprovação final antes de envio.
+
 ## 17. Online vs loja física
 
 ### Online

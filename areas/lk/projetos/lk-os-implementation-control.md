@@ -207,7 +207,7 @@ Critério de saída:
 
 ### Fase 5 — CRM/RFM/Recompra
 
-Status: não fechado.
+Status: operacionalizado até rascunho Klaviyo P1 pendente; envio final bloqueado até aprovação explícita.
 
 Objetivo: aumentar recompra com oportunidades aprováveis, sem disparo automático.
 
@@ -219,6 +219,13 @@ Entregáveis:
 - [x] Preview de Klaviyo/WhatsApp por segmento.
 - [x] Bloqueio de envio sem aprovação.
 - [x] Listas finais P1 por canal geradas em privado: Klaviyo preview e WhatsApp concierge, sem envio externo.
+- [x] E-mail customer-facing aprovado visualmente para Klaviyo, sem jargão interno e em padrão premium LK.
+- [x] Objetos Klaviyo seguros criados/reutilizados: lista `U8YCCE`, template `XUSEtu` e campanha `01KRC1DPTY615GF5FNBPXMPKY6` em `Draft`, sem envio ou agendamento.
+- [x] Rotina documental da execução P1 criada em `areas/lk/sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md`.
+- [ ] Confirmar no painel Klaviyo se o template HTML aprovado está selecionado no campaign message antes de qualquer envio.
+- [ ] Decidir com Lucas: manter Draft, enviar após checklist final, avançar P2 ou WhatsApp concierge.
+
+Artefato atual: `areas/lk/sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` + `reports/lk-phase5-p1-klaviyo-klaviyo-objects-2026-05-11.md`.
 
 Critério de saída:
 
@@ -281,8 +288,8 @@ Critério de saída:
 
 1. Fechar Fase 0 com este plano mestre indexado.
 2. Criar uma visão curta de Mission Control do Projeto LK OS.
-3. Executar Fase 2 primeiro: `repor estoque / checar sourcing / mapear SKU`, começando por Silvia e Helena.
-4. Em paralelo documental, preparar Fase 1 data spine para evitar relatório quebrado no futuro.
+3. Manter a campanha Klaviyo P1 em Draft até Lucas aprovar envio, ajuste ou pausa.
+4. Avançar o próximo bloco seguro: consolidar Fase 5 no PRD e preparar decisão P2/WhatsApp concierge ou Fase 1 data spine.
 5. Depois transformar os outputs em briefing semanal real.
 
 ## Todo-list imediata

@@ -66,6 +66,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | LK SEO/CRO Weekly Improvement Loop | `areas/lk/rotinas/seo-cro-weekly-improvement-loop.md` | Rotina semanal read-only com Claude SEO: nota, meta e fila priorizada de melhorias de PDP/páginas |
 | Cross-sell Monitor | `areas/lk/sub-areas/crm/rotinas/cross-sell-monitor.md` | Oportunidades pós-pedido |
 | Playbook Campanha CRM Aprovada | `areas/lk/sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md` | Segmentação, preview e aprovação Lucas antes de campanha externa |
+| LK Klaviyo P1 Draft Campaign | `areas/lk/sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` | Primeira execução P1 CRM/Klaviyo em Draft, sem envio/agendamento, com template/lista/campanha documentados |
 | RFM Semanal | `areas/lk/sub-areas/crm/rotinas/rfm-semanal.md` | Segmentação RFM e relatório |
 | Outcomes Tracker | `areas/lk/sub-areas/crm/rotinas/outcomes-tracker.md` | Status de sugestões Hermes |
 | Creative Pipeline | `areas/lk/sub-areas/trafego-pago/rotinas/creative-pipeline.md` | Hipótese → criativo → teste → learning |

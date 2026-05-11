@@ -39,6 +39,7 @@ Fonte resumida atual: `memories/lk.md`.
 
 - `rotinas/playbook-comando-diario.md` — roteiro executivo para briefing/prioridades LK sem inventar dados.
 - `sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md` — campanha CRM com segmentação, preview e aprovação Lucas antes de envio.
+- `sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` — primeira campanha P1 CRM/Klaviyo colocada em Draft com lista/template/campanha, pendente de revisão final.
 
 ## Ferramentas principais
 
