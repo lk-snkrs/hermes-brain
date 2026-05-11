@@ -22,6 +22,7 @@ pedido/cliente → segmentação → recomendação → preview Lucas → envio 
 - `rotinas/outcomes-tracker.md` — acompanhamento das sugestões do Hermes.
 - `rotinas/playbook-campanha-crm-aprovada.md` — campanha CRM com segmentação, preview e aprovação Lucas antes de envio.
 - `rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` — primeira execução P1 em Klaviyo: lista, import, template e campanha em Draft, sem envio/agendamento.
+- `rotinas/phase5-next-decision-router-readonly-2026-05-11.md` — router de próxima decisão da Fase 5: manter P1 Klaviyo em Draft, bloquear repetição WhatsApp, preparar P2 preview ou refresh Data Spine.
 
 ## Dados principais
 

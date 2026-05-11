@@ -235,9 +235,9 @@ Entregáveis:
 - [ ] Confirmar no painel Klaviyo se o template HTML aprovado está selecionado no campaign message antes de qualquer envio.
 - [x] Decisão Lucas 2026-05-11: manter Draft, sem envio/agendamento/flow.
 - [x] Correção Lucas 2026-05-11: não usar deep link Klaviyo não verificado; localizar campanha pelo painel, nome ou ID.
-- [ ] Decidir próximo bloco: P2, WhatsApp concierge ou Fase 1 data spine.
+- [x] Decidir próximo bloco: P2, WhatsApp concierge ou Fase 1 data spine, router criado com P1 Klaviyo Draft pendente, WhatsApp sem repetição automática, P2 preview bloqueado até nova fila read-only e Data Spine/RFM como única opção imediata segura.
 
-Artefato atual: `areas/lk/sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` + `reports/lk-phase5-p1-klaviyo-klaviyo-objects-2026-05-11.md`.
+Artefato atual: `areas/lk/sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` + `areas/lk/sub-areas/crm/rotinas/phase5-next-decision-router-readonly-2026-05-11.md` + `reports/lk-crm-phase5-next-decision-router-2026-05-11.md` + `reports/lk-phase5-p1-klaviyo-klaviyo-objects-2026-05-11.md`.
 
 Critério de saída:
 

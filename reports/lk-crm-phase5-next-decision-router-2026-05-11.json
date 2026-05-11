@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-05-11T20:48:21.031156+00:00",
+  "scope": "LK CRM Phase 5 next decision router, read-only",
+  "read_only": true,
+  "sources": {
+    "p1_approval_packet": "reports/lk-phase5-p1-final-approval-packet-2026-05-11.json",
+    "klaviyo_objects": "reports/lk-phase5-p1-klaviyo-klaviyo-objects-2026-05-11.json",
+    "whatsapp_audit_public": "reports/lk-phase5-p1-whatsapp-evolution-send-2026-05-11.json"
+  },
+  "summary": {
+    "decision_options": 4,
+    "execution_allowed_now": 1,
+    "external_actions_allowed_now": 0,
+    "recommended_safe_default": "keep_p1_klaviyo_draft_and_prepare_p2_preview_only_or_refresh_data_spine_readonly"
+  },
+  "decision_router": [
+    {
+      "decision_id": "crm_phase5_p1_klaviyo_draft",
+      "title": "P1 Klaviyo loja física, manter draft até revisão final",
+      "current_status": "needs_manual_ui_verification_before_send",
+      "recommended_next_step": "Confirmar no painel Klaviyo que o template aprovado está selecionado no campaign message; depois pedir aprovação explícita para enviar/agendar ou manter pausado.",
+      "allowed_decision_values": [
+        "keep_draft",
+        "verify_ui_only",
+        "approve_send_later_with_final_checklist",
+        "pause_or_archive"
+      ],
+      "blocked_until": [
+        "ui_template_selection_unverified",
+        "lucas_final_send_approval_missing"
+      ],
+      "objects_sanitized": {
+        "list_id": "U8YCCE",
+        "template_id": "XUSEtu",
+        "campaign_id": "01KRC1DPTY615GF5FNBPXMPKY6",
+        "campaign_message_id": "01KRC1DPVAMF0M9SRSR7RDQX1G",
+        "campaign_status": "Draft",
+        "scheduled_at": null,
+        "send_time": null,
+        "profiles_submitted": 9,
+        "profile_import_failed_count": 0
+      },
+      "execution_allowed_now": false,
+      "source_labels": [
+        "manual_approval",
+        "platform_signal"
+      ]
+    },
+    {
+      "decision_id": "crm_phase5_p1_whatsapp_concierge_status",
+      "title": "P1 WhatsApp concierge, pós-execução e bloqueio de repetição",
+      "current_status": "executed_partial_prior_approval_context",
+      "recommended_next_step": "Não reenviar automaticamente. Usar auditoria privada para evitar duplicidade; se avançar, preparar somente follow-up preview com dedupe e validação de número.",
+      "allowed_decision_values": [
+        "hold_no_followup",
+        "prepare_followup_preview_only",
+        "prepare_failure_resolution_preview"
+      ],
+      "public_counts": {
+        "sent": 6,
+        "failed": 1,
+        "deduped_phone_recipients": 7
+      },
+      "blocked_until": [
+        "new_lucas_approval_for_any_followup",
+        "dedupe_against_private_audit",
+        "validate_failed_number_before_retry"
+      ],
+      "execution_allowed_now": false,
+      "source_labels": [
+        "manual_approval"
+      ]
+    },
+    {
+      "decision_id": "crm_phase5_p2_or_reactivation_preview",
+      "title": "Preparar P2 ou reativação fria como preview, não campanha",
+      "current_status": "needs_preview_from_rfm_queue",
+      "recommended_next_step": "Gerar P2 read-only a partir do RFM/local SQL, com Tiny stock gate e copy preview. Não reutilizar automaticamente a fila P1.",
+      "allowed_decision_values": [
+        "prepare_p2_preview_only",
+        "prepare_reactivation_preview_only",
+        "defer_p2"
+      ],
+      "p1_packet_context": {
+        "ready_recipients_same_size_stock": 78,
+        "blocked_by_stock_or_mapping": 30,
+        "ready_groups": 9,
+        "hold_groups": 1,
+        "held_groups_from_p1_packet": 1
+      },
+      "blocked_until": [
+        "fresh_p2_segment_preview",
+        "tiny_stock_gate",
+        "lucas_approval_before_any_list_campaign_or_send"
+      ],
+      "execution_allowed_now": false,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation"
+      ]
+    },
+    {
+      "decision_id": "crm_phase5_return_to_data_spine_option",
+      "title": "Voltar para Fase 1 Data Spine, auditoria de base antes de CRM P2",
+      "current_status": "safe_readonly_option",
+      "recommended_next_step": "Se Lucas preferir reduzir risco antes de P2, atualizar snapshot read-only de Data Spine/RFM e freshness sem campanha ou envio.",
+      "allowed_decision_values": [
+        "refresh_data_spine_readonly",
+        "defer_data_spine"
+      ],
+      "blocked_until": [],
+      "execution_allowed_now": true,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "fact_ga4",
+        "platform_signal"
+      ]
+    }
+  ],
+  "global_blockers": [
+    "No Klaviyo send/schedule without final Lucas approval and UI template verification.",
+    "No WhatsApp follow-up without fresh approval, dedupe and number validation.",
+    "No P2 campaign/list creation before read-only preview and Tiny stock gate.",
+    "No deep Klaviyo UI link unless verified in logged-in panel."
+  ],
+  "not_performed": [
+    "klaviyo_send",
+    "klaviyo_schedule",
+    "klaviyo_list_or_campaign_create",
+    "whatsapp_send",
+    "email_send",
+    "sms_send",
+    "customer_tag_or_note",
+    "shopify_write",
+    "tiny_write",
+    "supabase_write",
+    "production_db_write",
+    "cron_creation",
+    "live_api_call"
+  ]
+}

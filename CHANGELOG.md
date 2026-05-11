@@ -1,3 +1,11 @@
+## 2026-05-11 — LK CRM Phase 5 Next Decision Router read-only
+
+- Criado e executado `scripts/lk_crm_phase5_next_decision_router_20260511.py`, consolidador de estado e próxima decisão para Fase 5 CRM/RFM/Recompra.
+- Resultado: 4 opções roteadas: manter/verificar P1 Klaviyo Draft, bloquear repetição automática do WhatsApp P1, preparar P2/reactivation preview, ou atualizar Data Spine/RFM read-only.
+- Execução externa liberada agora: 0; única opção executável imediatamente é análise read-only de Data Spine/RFM.
+- Artefatos: `areas/lk/sub-areas/crm/rotinas/phase5-next-decision-router-readonly-2026-05-11.md`, `reports/lk-crm-phase5-next-decision-router-2026-05-11.md` e `.json`.
+- Nenhum Klaviyo/Gmail/WhatsApp/SMS enviado; nenhum Klaviyo list/campaign/template criado; nenhuma chamada live a APIs; nenhum Shopify/Tiny/Supabase write, cliente, estoque, preço, banco de produção ou cron foi alterado.
+
 ## 2026-05-11 — LK OS Creative Visual Approval Gate read-only
 
 - Criado e executado `scripts/lk_os_creative_visual_approval_gate_20260511.py`, gate final da Fase 3 para criativos em e-mail/relatório.

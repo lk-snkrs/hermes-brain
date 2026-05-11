@@ -75,6 +75,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Cross-sell Monitor | `areas/lk/sub-areas/crm/rotinas/cross-sell-monitor.md` | Oportunidades pós-pedido |
 | Playbook Campanha CRM Aprovada | `areas/lk/sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md` | Segmentação, preview e aprovação Lucas antes de campanha externa |
 | LK Klaviyo P1 Draft Campaign | `areas/lk/sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` | Primeira execução P1 CRM/Klaviyo em Draft, sem envio/agendamento, com template/lista/campanha documentados |
+| LK CRM Phase 5 Next Decision Router 2026-05-11 | `areas/lk/sub-areas/crm/rotinas/phase5-next-decision-router-readonly-2026-05-11.md` | Router de próxima decisão CRM: manter P1 Draft, bloquear repetição WhatsApp e preparar P2 preview ou refresh Data Spine |
 | RFM Semanal | `areas/lk/sub-areas/crm/rotinas/rfm-semanal.md` | Segmentação RFM e relatório |
 | Outcomes Tracker | `areas/lk/sub-areas/crm/rotinas/outcomes-tracker.md` | Status de sugestões Hermes |
 | Creative Pipeline | `areas/lk/sub-areas/trafego-pago/rotinas/creative-pipeline.md` | Hipótese → criativo → teste → learning |
