@@ -155,8 +155,10 @@ Entregáveis:
 - [x] Leitura de velocidade de venda vs lead time.
 - [x] Sugestão `repor estoque`, `checar sourcing`, `não agir`.
 - [x] Template de preview para Lucas aprovar reposição/sourcing.
+- [x] SQL local estendido com scaffold de StockX/KicksDev/GOAT/Droper full sync: fontes externas, identidade de produto, snapshots StockX, ofertas por tamanho, comparação de preço e lacunas.
+- [ ] FULL SYNC externo real StockX/KicksDev populando snapshots/ofertas por tamanho — bloqueado até validar conector oficial/rate limit e matriz US Men/Women → LK/BR/EU, sem scraping proibido.
 
-Artefato atual: `areas/lk/rotinas/shopify-sku-padronizacao-tiny-catalogo-2026-05-11.md` + `areas/lk/rotinas/shopify-tiny-fila-b-residual-pos-saneamento-2026-05-11.md` + `areas/lk/rotinas/shopify-tiny-fila-b-residual-priorizada-2026-05-11.md` + `areas/lk/rotinas/stock-sku-saneamento-b-e-preview-a-2026-05-11.md`.
+Artefato atual: `areas/lk/rotinas/shopify-sku-padronizacao-tiny-catalogo-2026-05-11.md` + `areas/lk/rotinas/shopify-tiny-fila-b-residual-pos-saneamento-2026-05-11.md` + `areas/lk/rotinas/shopify-tiny-fila-b-residual-priorizada-2026-05-11.md` + `areas/lk/rotinas/stock-sku-saneamento-b-e-preview-a-2026-05-11.md` + `reports/lk-phase5-stockx-full-sync-local-sql-scaffold-2026-05-11.md`.
 
 Critério de saída:
 

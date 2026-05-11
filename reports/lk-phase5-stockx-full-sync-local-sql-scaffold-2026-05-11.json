@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-05-11T14:54:52.911798+00:00",
+  "verdict": "Local SQL was not complete for LK OS StockX full sync; scaffold has now been added, but live full sync is not executed yet.",
+  "local_db": "/opt/data/hermes_bruno_ingest/local_sql/lk_os_phase5.sqlite",
+  "db_mode": "0o600",
+  "secret_names_found": [
+    "KICKSDB_API_KEY",
+    "KICKS_API_KEY",
+    "KICKS_DEV_API_KEY"
+  ],
+  "counts": {
+    "external_market_sources": 3,
+    "market_product_identity": 87,
+    "market_full_sync_runs": 1,
+    "stockx_product_snapshots": 0,
+    "stockx_size_offers": 0,
+    "sourcing_price_comparisons": 0,
+    "size_conversion_rules": 2,
+    "market_sync_gaps": 4
+  },
+  "guardrails": [
+    "No StockX/GOAT scraping",
+    "No external writes",
+    "No secret values stored or printed",
+    "No sourcing/contact/purchase",
+    "Tables are schema/candidate scaffold until connector is validated"
+  ],
+  "next_steps": [
+    "Validate official KicksDev/StockX connector endpoint and rate limits.",
+    "Build explicit US Men/US Women → LK/BR/EU size conversion matrix.",
+    "Populate stockx_product_snapshots and stockx_size_offers for signal-triggered candidate products.",
+    "Compare Droper/StockX/GOAT landed cost before any sourcing recommendation."
+  ]
+}
