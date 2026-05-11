@@ -184,9 +184,9 @@ Entregáveis:
 - [x] Ponte segura ad_id/utm_content/cupom/landing/referrer/note/tag iniciada como Identity Bridge read-only: Silvia alta confiança, Helena média, Lala investigação; Meta permanece `platform_signal`.
 - [x] Separação `Pareto-compatible` vs `Lucas-operational`, fronteira materializada: Pareto usa linguagem Meta/ad_name/ad_id e Marias separadas; Lucas-operational só vira decisão com ponte Shopify/Tiny ou identidade confirmada.
 - [x] Rotina semanal de e-mail interno LK/Klaviyo-real, sem dashboard/tool jargon, preview interno criado e validado sem envio/cron.
-- [ ] Regra de criativos: só incluir imagem se visual claro e aprovado.
+- [x] Regra de criativos: só incluir imagem se visual claro e aprovado; gate criado com 12 criativos em `candidate_needs_human_approval`, 0 elegíveis para e-mail sem aprovação humana.
 
-Artefato atual: `areas/lk/sub-areas/trafego-pago/contexto/campaign-attribution-dictionary-v0.2.md` + `areas/lk/sub-areas/trafego-pago/rotinas/influencer-identity-bridge-readonly-2026-05-11.md` + `areas/lk/sub-areas/trafego-pago/rotinas/pareto-operational-split-readonly-2026-05-11.md` + `areas/lk/sub-areas/trafego-pago/rotinas/weekly-internal-influencer-email-preview-2026-05-11.md` + `reports/lk-os-weekly-internal-influencer-email-preview-2026-05-11.md`.
+Artefato atual: `areas/lk/sub-areas/trafego-pago/contexto/campaign-attribution-dictionary-v0.2.md` + `areas/lk/sub-areas/trafego-pago/rotinas/influencer-identity-bridge-readonly-2026-05-11.md` + `areas/lk/sub-areas/trafego-pago/rotinas/pareto-operational-split-readonly-2026-05-11.md` + `areas/lk/sub-areas/trafego-pago/rotinas/weekly-internal-influencer-email-preview-2026-05-11.md` + `areas/lk/sub-areas/trafego-pago/rotinas/creative-visual-approval-gate-readonly-2026-05-11.md` + `reports/lk-os-creative-visual-approval-gate-2026-05-11.md`.
 
 Critério de saída:
 
