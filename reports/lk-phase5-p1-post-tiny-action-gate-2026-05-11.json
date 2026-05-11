@@ -1,0 +1,197 @@
+{
+  "generated_at": "2026-05-11T15:59:29.366743+00:00",
+  "scope": "Internal gate after Tiny validation and Evolution audit. No PII, no sends, no writes.",
+  "counts": {
+    "p1_ready_queue_rows": 19,
+    "already_sent_whatsapp": 8,
+    "failed_whatsapp_number_review": 2,
+    "ready_for_internal_copy_preview_only": 0,
+    "hold_no_tiny_validated_recommendation": 9
+  },
+  "by_channel": {
+    "whatsapp_concierge": 10,
+    "klaviyo_preview": 9
+  },
+  "by_segment": {
+    "Champions/VIP": 12,
+    "Novo alto potencial": 7
+  },
+  "ready_product_size_groups": {
+    "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege | 39": {
+      "recipient_count": 1,
+      "ready_candidates": [
+        {
+          "title": "Tênis Adidas Samba OG Off White Earth Strata Gum Bege",
+          "size": "39",
+          "sku": "JR8842-6",
+          "shopify_snapshot_inventory": 5,
+          "shopify_snapshot_price": 1999.99,
+          "tiny_status": "available",
+          "tiny_match_count": 2,
+          "tiny_available_estimated_total": 3.0
+        }
+      ]
+    }
+  },
+  "decisions": [
+    {
+      "customer_ref": "1711d5bae213",
+      "channel": "whatsapp_concierge",
+      "segment": "Champions/VIP",
+      "purchase_product": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "purchase_size": "37",
+      "decision": "HOLD_ALREADY_SENT_WHATSAPP"
+    },
+    {
+      "customer_ref": "ee27334c43e0",
+      "channel": "whatsapp_concierge",
+      "segment": "Champions/VIP",
+      "purchase_product": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "purchase_size": "39",
+      "decision": "HOLD_ALREADY_SENT_WHATSAPP"
+    },
+    {
+      "customer_ref": "854956f6c85d",
+      "channel": "whatsapp_concierge",
+      "segment": "Champions/VIP",
+      "purchase_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "purchase_size": "36",
+      "decision": "HOLD_WHATSAPP_FAILED_NUMBER_REVIEW"
+    },
+    {
+      "customer_ref": "e0fc56fa271b",
+      "channel": "klaviyo_preview",
+      "segment": "Champions/VIP",
+      "purchase_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "purchase_size": "35",
+      "decision": "HOLD_NO_TINY_VALIDATED_RECOMMENDATION"
+    },
+    {
+      "customer_ref": "222e4257cb98",
+      "channel": "whatsapp_concierge",
+      "segment": "Champions/VIP",
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "42",
+      "decision": "HOLD_ALREADY_SENT_WHATSAPP"
+    },
+    {
+      "customer_ref": "3e02713d5a7b",
+      "channel": "klaviyo_preview",
+      "segment": "Champions/VIP",
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "37",
+      "decision": "HOLD_NO_TINY_VALIDATED_RECOMMENDATION"
+    },
+    {
+      "customer_ref": "42e02636704c",
+      "channel": "whatsapp_concierge",
+      "segment": "Champions/VIP",
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "37",
+      "decision": "HOLD_ALREADY_SENT_WHATSAPP"
+    },
+    {
+      "customer_ref": "854956f6c85d",
+      "channel": "whatsapp_concierge",
+      "segment": "Champions/VIP",
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "36",
+      "decision": "HOLD_WHATSAPP_FAILED_NUMBER_REVIEW"
+    },
+    {
+      "customer_ref": "ee27334c43e0",
+      "channel": "whatsapp_concierge",
+      "segment": "Champions/VIP",
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "39",
+      "decision": "HOLD_ALREADY_SENT_WHATSAPP"
+    },
+    {
+      "customer_ref": "3f9017e9735f",
+      "channel": "whatsapp_concierge",
+      "segment": "Champions/VIP",
+      "purchase_product": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "purchase_size": "39",
+      "decision": "HOLD_ALREADY_SENT_WHATSAPP"
+    },
+    {
+      "customer_ref": "ee27334c43e0",
+      "channel": "whatsapp_concierge",
+      "segment": "Champions/VIP",
+      "purchase_product": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "purchase_size": "39",
+      "decision": "HOLD_ALREADY_SENT_WHATSAPP"
+    },
+    {
+      "customer_ref": "f5bc8ef7d334",
+      "channel": "whatsapp_concierge",
+      "segment": "Champions/VIP",
+      "purchase_product": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "purchase_size": "40",
+      "decision": "HOLD_ALREADY_SENT_WHATSAPP"
+    },
+    {
+      "customer_ref": "665b66a53298",
+      "channel": "klaviyo_preview",
+      "segment": "Novo alto potencial",
+      "purchase_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "purchase_size": "35",
+      "decision": "HOLD_NO_TINY_VALIDATED_RECOMMENDATION"
+    },
+    {
+      "customer_ref": "8bae4aea22c6",
+      "channel": "klaviyo_preview",
+      "segment": "Novo alto potencial",
+      "purchase_product": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "purchase_size": "34",
+      "decision": "HOLD_NO_TINY_VALIDATED_RECOMMENDATION"
+    },
+    {
+      "customer_ref": "0d3c52a37e06",
+      "channel": "klaviyo_preview",
+      "segment": "Novo alto potencial",
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "42",
+      "decision": "HOLD_NO_TINY_VALIDATED_RECOMMENDATION"
+    },
+    {
+      "customer_ref": "b5de204b5bce",
+      "channel": "klaviyo_preview",
+      "segment": "Novo alto potencial",
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "34",
+      "decision": "HOLD_NO_TINY_VALIDATED_RECOMMENDATION"
+    },
+    {
+      "customer_ref": "fa7e48c9e067",
+      "channel": "klaviyo_preview",
+      "segment": "Novo alto potencial",
+      "purchase_product": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "purchase_size": "36",
+      "decision": "HOLD_NO_TINY_VALIDATED_RECOMMENDATION"
+    },
+    {
+      "customer_ref": "1c6bda80da3b",
+      "channel": "klaviyo_preview",
+      "segment": "Novo alto potencial",
+      "purchase_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "purchase_size": "37",
+      "decision": "HOLD_NO_TINY_VALIDATED_RECOMMENDATION"
+    },
+    {
+      "customer_ref": "a65464285dfd",
+      "channel": "klaviyo_preview",
+      "segment": "Novo alto potencial",
+      "purchase_product": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "purchase_size": "36",
+      "decision": "HOLD_NO_TINY_VALIDATED_RECOMMENDATION"
+    }
+  ],
+  "recommendation": "Não retomar envios. O único grupo produto+tamanho validado no Tiny pertence a cliente que já recebeu WhatsApp no primeiro lote. As linhas restantes precisam de curadoria manual, remapeamento Tiny ou sourcing sob demanda antes de qualquer nova mensagem ou preview de campanha.",
+  "guardrails": [
+    "Nenhum envio externo executado",
+    "Nenhuma lista ou campanha Klaviyo criada",
+    "Nenhum write em Shopify, Tiny ou Supabase",
+    "Nenhum PII no relatório Brain"
+  ]
+}
