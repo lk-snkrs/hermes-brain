@@ -290,7 +290,7 @@ Entregáveis:
 - [x] Lista de automações candidatas: 6 automações em `safe-automation-readiness-registry`.
 - [x] Risco por automação: 4 low e 2 medium documentados.
 - [x] Plano rollback por automação: pause/remove cron, supersede report, revert PR ou cancelar execução antes de envio conforme caso.
-- [x] Teste em modo dry-run: contrato definido por automação; nenhuma ativação feita.
+- [x] Teste em modo dry-run: contrato definido por automação; nenhuma ativação feita. `LK-AUTO-001` Daily Sales Brief e `LK-AUTO-002` Weekly CEO Review passaram no primeiro dry-run manual, com 0 cron/n8n/envio/write.
 - [ ] Aprovação Lucas antes de ativar produção.
 
 Critério de saída:

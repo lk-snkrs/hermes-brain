@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T19:01:21.825107+00:00",
+  "generated_at": "2026-05-11T21:50:59.905388+00:00",
   "business_date": "2026-05-10",
   "window_policy": "last_closed_day_brt",
   "date_range": {
@@ -236,9 +236,10 @@
       "deposit": "LK | CONTROLE ESTOQUE",
       "checks_count": 10,
       "risk_counts": {
-        "ruptura": 4,
-        "unknown": 3,
-        "baixo_estoque_vs_venda_do_dia": 3
+        "ruptura": 3,
+        "ok_amostra": 1,
+        "baixo_estoque_vs_venda_do_dia": 1,
+        "unknown": 5
       },
       "critical_or_unknown": [
         {
@@ -260,7 +261,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 296
+            "latency_ms": 294
           },
           "stock_risk": "ruptura"
         },
@@ -270,27 +271,22 @@
           "sku": "HV8547-001-7",
           "size_or_variant": "40",
           "sold_qty_fact_shopify": 1,
-          "search_status": "Erro",
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_call": null,
-          "stock_risk": "unknown"
-        },
-        {
-          "source_label": "fact_tiny_stock",
-          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa",
-          "sku": "HV8547-601-37",
-          "size_or_variant": "37",
-          "sold_qty_fact_shopify": 1,
-          "search_status": "Erro",
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_call": null,
-          "stock_risk": "unknown"
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1066218771",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 289
+          },
+          "stock_risk": "ruptura"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -311,7 +307,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 283
+            "latency_ms": 308
           },
           "stock_risk": "baixo_estoque_vs_venda_do_dia"
         },
@@ -334,7 +330,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 288
+            "latency_ms": 304
           },
           "stock_risk": "ruptura"
         },
@@ -348,18 +344,13 @@
           "candidate_count": 1,
           "chosen_tiny_id": "1065411445",
           "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 1.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
+          "official_deposit": null,
           "stock_call": {
             "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 292
+            "tiny_status": "Erro",
+            "latency_ms": 169
           },
-          "stock_risk": "baixo_estoque_vs_venda_do_dia"
+          "stock_risk": "unknown"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -367,22 +358,13 @@
           "sku": "U9060WHT-4",
           "size_or_variant": "37",
           "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1059847080",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": -1.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 374
-          },
-          "stock_risk": "ruptura"
+          "search_status": "Erro",
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_call": null,
+          "stock_risk": "unknown"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -390,22 +372,13 @@
           "sku": "1183C529.101-8",
           "size_or_variant": "41",
           "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1066538249",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 0.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 318
-          },
-          "stock_risk": "ruptura"
+          "search_status": "Erro",
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_call": null,
+          "stock_risk": "unknown"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -427,22 +400,13 @@
           "sku": "U9060496",
           "size_or_variant": "37",
           "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1069034035",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 1.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 286
-          },
-          "stock_risk": "baixo_estoque_vs_venda_do_dia"
+          "search_status": "Erro",
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_call": null,
+          "stock_risk": "unknown"
         }
       ],
       "checks": [
@@ -465,7 +429,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 296
+            "latency_ms": 294
           },
           "stock_risk": "ruptura"
         },
@@ -475,13 +439,22 @@
           "sku": "HV8547-001-7",
           "size_or_variant": "40",
           "sold_qty_fact_shopify": 1,
-          "search_status": "Erro",
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_call": null,
-          "stock_risk": "unknown"
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1066218771",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 289
+          },
+          "stock_risk": "ruptura"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -489,13 +462,22 @@
           "sku": "HV8547-601-37",
           "size_or_variant": "37",
           "sold_qty_fact_shopify": 1,
-          "search_status": "Erro",
-          "candidate_count": 0,
-          "chosen_tiny_id": null,
-          "chosen_match_quality": "no_safe_candidate",
-          "official_deposit": null,
-          "stock_call": null,
-          "stock_risk": "unknown"
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1069545977",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 2.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 265
+          },
+          "stock_risk": "ok_amostra"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -516,7 +498,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 283
+            "latency_ms": 308
           },
           "stock_risk": "baixo_estoque_vs_venda_do_dia"
         },
@@ -539,7 +521,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 288
+            "latency_ms": 304
           },
           "stock_risk": "ruptura"
         },
@@ -553,18 +535,13 @@
           "candidate_count": 1,
           "chosen_tiny_id": "1065411445",
           "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 1.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
+          "official_deposit": null,
           "stock_call": {
             "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 292
+            "tiny_status": "Erro",
+            "latency_ms": 169
           },
-          "stock_risk": "baixo_estoque_vs_venda_do_dia"
+          "stock_risk": "unknown"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -572,22 +549,13 @@
           "sku": "U9060WHT-4",
           "size_or_variant": "37",
           "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1059847080",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": -1.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 374
-          },
-          "stock_risk": "ruptura"
+          "search_status": "Erro",
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_call": null,
+          "stock_risk": "unknown"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -595,22 +563,13 @@
           "sku": "1183C529.101-8",
           "size_or_variant": "41",
           "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1066538249",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 0.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 318
-          },
-          "stock_risk": "ruptura"
+          "search_status": "Erro",
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_call": null,
+          "stock_risk": "unknown"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -632,22 +591,13 @@
           "sku": "U9060496",
           "size_or_variant": "37",
           "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1069034035",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 1.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 286
-          },
-          "stock_risk": "baixo_estoque_vs_venda_do_dia"
+          "search_status": "Erro",
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_call": null,
+          "stock_risk": "unknown"
         }
       ],
       "scope_note": "Read-only. Estoque consultado só para SKUs vendidos no dia, não auditoria completa de catálogo."
@@ -756,21 +706,21 @@
       "priority": "P0",
       "source_label": "derived_reconciliation",
       "action": "Preparar preview de reposição/sourcing para SKUs vendidos com saldo zero no Tiny.",
-      "why": "4 SKU(s) vendidos aparecem em ruptura no depósito oficial.",
+      "why": "3 SKU(s) vendidos aparecem em ruptura no depósito oficial.",
       "approval_required": "Sim, antes de fornecedor/compra/Notion."
     },
     {
       "priority": "P1",
       "source_label": "derived_reconciliation",
       "action": "Revisar cobertura dos SKUs com saldo menor ou igual à venda do dia.",
-      "why": "3 SKU(s) com venda do dia encostando no saldo oficial.",
+      "why": "1 SKU(s) com venda do dia encostando no saldo oficial.",
       "approval_required": "Sim, se virar compra, preço ou contato."
     },
     {
       "priority": "P1",
       "source_label": "derived_reconciliation",
       "action": "Resolver mapeamento Shopify SKU ↔ Tiny antes de campanha ou reposição automática.",
-      "why": "3 SKU(s) vendido(s) sem candidato Tiny seguro ou sem saldo legível.",
+      "why": "5 SKU(s) vendido(s) sem candidato Tiny seguro ou sem saldo legível.",
       "approval_required": "Sim, se exigir correção de cadastro."
     }
   ],

@@ -1,0 +1,134 @@
+{
+  "generated_at": "2026-05-11T21:53:28.540838+00:00",
+  "scope": "LK Phase 8 manual dry-run validation for Daily + Weekly read-only automations",
+  "registry_source": "reports/lk-safe-automation-readiness-registry-2026-05-11.json",
+  "summary": {
+    "automations_validated": 2,
+    "dry_runs_passed": 2,
+    "dry_runs_review_needed": 0,
+    "crons_created": 0,
+    "n8n_flows_created": 0,
+    "telegram_sends": 0,
+    "external_sends": 0,
+    "production_writes": 0,
+    "eligible_for_lucas_cadence_approval": 2,
+    "activated_now": 0
+  },
+  "validations": [
+    {
+      "automation_id": "LK-AUTO-001",
+      "name": "Daily Sales Brief read-only",
+      "dry_run_status": "passed",
+      "artifact_json": "reports/lk-os-daily-sales-brief-2026-05-10.json",
+      "telegram_preview_json": "reports/lk-os-daily-sales-brief-telegram-preview-2026-05-10.json",
+      "window": {
+        "start": "2026-05-10T00:00:00-03:00",
+        "end": "2026-05-10T23:59:59-03:00"
+      },
+      "source_checks": {
+        "shopify": true,
+        "ga4": true,
+        "tiny_stock": true
+      },
+      "telegram_preview": {
+        "channel": "telegram_preview_only",
+        "would_notify": true,
+        "silence_policy": {
+          "mode": "silent_unless_p0_p1_api_failure_or_explicit_request",
+          "trigger": "p0_p1_anomaly",
+          "p0_count": 1,
+          "p1_count": 2,
+          "api_failure": false,
+          "explicit_request": false
+        }
+      },
+      "metrics_snapshot": {
+        "business_date": "2026-05-10",
+        "shopify_orders": 9,
+        "shopify_revenue": 34809.92,
+        "ga4_sessions": 4301.0,
+        "tiny_risk_counts": {
+          "ruptura": 3,
+          "ok_amostra": 1,
+          "baixo_estoque_vs_venda_do_dia": 1,
+          "unknown": 5
+        }
+      },
+      "blocked_actions_confirmed": [
+        "campaign",
+        "cron",
+        "external_send",
+        "production_db_write",
+        "shopify_write",
+        "supplier_contact",
+        "telegram_send",
+        "tiny_write"
+      ],
+      "activation_recommendation": "eligible_for_lucas_cadence_approval_not_active"
+    },
+    {
+      "automation_id": "LK-AUTO-002",
+      "name": "Weekly CEO Review read-only",
+      "dry_run_status": "passed",
+      "artifact_json": "reports/lk-os-weekly-ceo-review-2026-05-04_2026-05-10.json",
+      "telegram_preview_json": "reports/lk-os-weekly-ceo-review-telegram-preview-2026-05-04_2026-05-10.json",
+      "window": {
+        "start_date": "2026-05-04",
+        "end_date": "2026-05-10",
+        "start_iso": "2026-05-04T00:00:00-03:00",
+        "end_iso": "2026-05-10T23:59:59-03:00",
+        "label": "last_7_closed_days_brt"
+      },
+      "source_checks": {
+        "shopify": true,
+        "ga4": true,
+        "tiny_stock": true,
+        "meta_ads": true,
+        "metricool_google_ads": true
+      },
+      "telegram_preview": {
+        "channel": "telegram_preview_only",
+        "would_notify": true,
+        "silence_policy": {
+          "mode": "silent_unless_p0_p1_api_failure_or_explicit_request",
+          "trigger": "p0_p1_anomaly",
+          "p0_count": 1,
+          "p1_count": 2,
+          "api_failure": false,
+          "explicit_request": false
+        }
+      },
+      "metrics_snapshot": {
+        "start_date": "2026-05-04",
+        "end_date": "2026-05-10",
+        "shopify_orders": 97,
+        "shopify_revenue": 312261.74,
+        "ga4_sessions": 29605.0,
+        "meta_spend": 9374.43,
+        "metricool_google_ads_rows": 21,
+        "tiny_risk_counts": {
+          "ruptura": 7,
+          "baixo_estoque_vs_venda_da_semana": 3,
+          "unknown": 4,
+          "ok_amostra": 1
+        }
+      },
+      "blocked_actions_confirmed": [
+        "campaign",
+        "cron",
+        "external_send",
+        "production_db_write",
+        "shopify_write",
+        "supplier_contact",
+        "telegram_send",
+        "tiny_write"
+      ],
+      "activation_recommendation": "eligible_for_lucas_cadence_approval_not_active"
+    }
+  ],
+  "registry_context": {
+    "candidate_automations": 6,
+    "activation_requires_lucas_approval": 6
+  },
+  "next_gate": "Lucas can approve cadence/delivery for LK-AUTO-001 and/or LK-AUTO-002 if he wants recurring activation; otherwise keep manual/on-demand."
+}
