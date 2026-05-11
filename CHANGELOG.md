@@ -1,3 +1,11 @@
+## 2026-05-11 — LK OS Pareto-compatible vs Lucas-operational Split read-only
+
+- Criado e executado `scripts/lk_os_pareto_operational_split_20260511.py`, fronteira formal entre relatório Pareto-compatible e decisão Lucas-operational na Fase 3 Paid/Influencer.
+- Resultado: 15 linhas roteadas; 11 linhas Pareto-compatible, 14 linhas Lucas-operational históricas, 2 linhas aptas a análise operacional interna agora (`Silvia`, `Helena`) e 13 mantidas como `platform_signal`/investigação.
+- Regras fixadas: Maicon `ad_name` primeiro, soma todos os `ad_id`, Marias separadas no modo Pareto-compatible, produto/estoque/campanha só com ponte Shopify/Tiny ou identidade confirmada.
+- Artefatos: `areas/lk/sub-areas/trafego-pago/rotinas/pareto-operational-split-readonly-2026-05-11.md`, `reports/lk-os-pareto-operational-split-2026-05-11.md` e `.json`.
+- Nenhuma chamada live a Meta/Shopify/GA4/Metricool/Klaviyo/Tiny; nenhum cupom, campanha, budget, criativo, UTM, Shopify/Tiny write, cliente, estoque, preço, banco de produção ou cron foi alterado.
+
 ## 2026-05-11 — LK OS Influencer Identity Bridge read-only
 
 - Criado e executado `scripts/lk_os_influencer_identity_bridge_20260511.py`, fila de identidade oficial de influencers para a Fase 3 Paid/Influencer.

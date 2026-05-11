@@ -84,6 +84,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Product Dashboard | `areas/lk/sub-areas/ecommerce/rotinas/product-dashboard.md` | Saúde de PDPs |
 | Weekly Influencer Sales Email | `areas/lk/sub-areas/trafego-pago/rotinas/weekly-influencer-sales-email.md` | E-mail semanal aprovado com vendas por influencer, Meta canônico e comparação WoW |
 | Pareto-Compatible Monthly Reconciliation | `areas/lk/sub-areas/trafego-pago/rotinas/pareto-monthly-reconciliation.md` | Conferência mensal com lógica Maicon/Pareto, tolerância 99%+ e leitura Lucas-operacional separada |
+| LK Pareto vs Lucas Operational Split Read-only 2026-05-11 | `areas/lk/sub-areas/trafego-pago/rotinas/pareto-operational-split-readonly-2026-05-11.md` | Fronteira de uso entre relatório Pareto-compatible e decisão operacional Lucas por Shopify/Tiny bridge |
 | Consolidar FAQ | `areas/lk/sub-areas/atendimento/rotinas/consolidar-faq.md` | Loop FAQ/suporte/bot |
 
 ## Zipper Galeria
