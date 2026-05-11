@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-05-11T13:12:05.662511+00:00",
+  "scope": "Final live Tiny read-back verification for 7 approved P0 codigo writes",
+  "counts": {
+    "checked": 7,
+    "ok": 7,
+    "failed": 0
+  },
+  "results": [
+    {
+      "tiny_child_id": "1069545385",
+      "expected_codigo": "NKE-9054174-41",
+      "status": "OK",
+      "snapshot": {
+        "id": "1069545385",
+        "nome": "Tênis Nike Mind 002 Light Khaki Bege - 41",
+        "codigo": "NKE-9054174-41",
+        "preco": 2999.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "41"
+        },
+        "idProdutoPai": "1069545331"
+      },
+      "ok": true
+    },
+    {
+      "tiny_child_id": "1070120736",
+      "expected_codigo": "ONI-0995678-425",
+      "status": "OK",
+      "snapshot": {
+        "id": "1070120736",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - 42.5",
+        "codigo": "ONI-0995678-425",
+        "preco": 2999.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "42.5"
+        },
+        "idProdutoPai": "1070120668"
+      },
+      "ok": true
+    },
+    {
+      "tiny_child_id": "1069544047",
+      "expected_codigo": "NB-0254942-37",
+      "status": "OK",
+      "snapshot": {
+        "id": "1069544047",
+        "nome": "Tênis New Balance 204L Cortado Marrom - 37",
+        "codigo": "NB-0254942-37",
+        "preco": 2799.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "37"
+        },
+        "idProdutoPai": "1069544017"
+      },
+      "ok": true
+    },
+    {
+      "tiny_child_id": "1070119554",
+      "expected_codigo": "ONI-6772830-38",
+      "status": "OK",
+      "snapshot": {
+        "id": "1070119554",
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza - 38",
+        "codigo": "ONI-6772830-38",
+        "preco": 2199.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "38"
+        },
+        "idProdutoPai": "1070119514"
+      },
+      "ok": true
+    },
+    {
+      "tiny_child_id": "1069542767",
+      "expected_codigo": "ALO-8506462-S",
+      "status": "OK",
+      "snapshot": {
+        "id": "1069542767",
+        "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - S/P",
+        "codigo": "ALO-8506462-S",
+        "preco": 1799.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "S/P"
+        },
+        "idProdutoPai": "1069542754"
+      },
+      "ok": true
+    },
+    {
+      "tiny_child_id": "1069544315",
+      "expected_codigo": "SST-4542302-L",
+      "status": "OK",
+      "snapshot": {
+        "id": "1069544315",
+        "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - L/G",
+        "codigo": "SST-4542302-L",
+        "preco": 619.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "L/G"
+        },
+        "idProdutoPai": "1069544291"
+      },
+      "ok": true
+    },
+    {
+      "tiny_child_id": "1069930823",
+      "expected_codigo": "PAC-1197278-S",
+      "status": "OK",
+      "snapshot": {
+        "id": "1069930823",
+        "nome": "Camiseta Pace Buero Washed Black Preto - S/P",
+        "codigo": "PAC-1197278-S",
+        "preco": 319.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "S/P"
+        },
+        "idProdutoPai": "1069930811"
+      },
+      "ok": true
+    }
+  ]
+}

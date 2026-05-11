@@ -1,0 +1,423 @@
+{
+  "generated_at": "2026-05-11T13:04:20.824794+00:00",
+  "approval": "Lucas aprovou em Telegram: Aprovado — preencher codigo Tiny dos 7 itens candidatos com os SKUs Shopify propostos, sem alterar Shopify, preço, estoque ou produto.",
+  "scope": "Execução Tiny codigo para 7 variações P0 aprovadas; sem Shopify; verificação contra alteração de preço/grade/produto.",
+  "guardrails": [
+    "Tiny codigo only",
+    "no Shopify write",
+    "before/after non-code fields checked",
+    "rollback previous codigo captured and attempted on verification failure"
+  ],
+  "counts": {
+    "candidates": 7,
+    "write_attempted": 7,
+    "success": 4,
+    "failed": 3
+  },
+  "results": [
+    {
+      "tiny_child_id": "1069545385",
+      "product_title": "Tênis Nike Mind 002 Light Khaki Bege",
+      "size": "41",
+      "shopify_variant_id": "47893735932126",
+      "shopify_sku_live": "NKE-9054174-41",
+      "target_codigo": "NKE-9054174-41",
+      "write_attempted": true,
+      "success": true,
+      "rollback_codigo": "",
+      "precheck_status": "OK",
+      "before_snapshot": {
+        "nome": "Tênis Nike Mind 002 Light Khaki Bege - 41",
+        "codigo": "",
+        "preco": 2999.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "41"
+        },
+        "idProdutoPai": "1069545331"
+      },
+      "method": "produto.alterar root produtos[].produto child variation record with required fields + codigo",
+      "write_status": "OK",
+      "write_status_processamento": "3",
+      "write_codigo_erro": null,
+      "write_errors": null,
+      "verify_status": "OK",
+      "after_snapshot": {
+        "nome": "Tênis Nike Mind 002 Light Khaki Bege - 41",
+        "codigo": "NKE-9054174-41",
+        "preco": 2999.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "41"
+        },
+        "idProdutoPai": "1069545331"
+      },
+      "non_code_changes_detected": []
+    },
+    {
+      "tiny_child_id": "1070120736",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom",
+      "size": "42.5",
+      "shopify_variant_id": "48066691465438",
+      "shopify_sku_live": "ONI-0995678-425",
+      "target_codigo": "ONI-0995678-425",
+      "write_attempted": true,
+      "success": true,
+      "rollback_codigo": "",
+      "precheck_status": "OK",
+      "before_snapshot": {
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - 42.5",
+        "codigo": "",
+        "preco": 2999.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "42.5"
+        },
+        "idProdutoPai": "1070120668"
+      },
+      "method": "produto.alterar root produtos[].produto child variation record with required fields + codigo",
+      "write_status": "OK",
+      "write_status_processamento": "3",
+      "write_codigo_erro": null,
+      "write_errors": null,
+      "verify_status": "OK",
+      "after_snapshot": {
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - 42.5",
+        "codigo": "ONI-0995678-425",
+        "preco": 2999.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "42.5"
+        },
+        "idProdutoPai": "1070120668"
+      },
+      "non_code_changes_detected": []
+    },
+    {
+      "tiny_child_id": "1069544047",
+      "product_title": "Tênis New Balance 204L Cortado Marrom",
+      "size": "37",
+      "shopify_variant_id": "47856402530526",
+      "shopify_sku_live": "NB-0254942-37",
+      "target_codigo": "NB-0254942-37",
+      "write_attempted": true,
+      "success": true,
+      "rollback_codigo": "",
+      "precheck_status": "OK",
+      "before_snapshot": {
+        "nome": "Tênis New Balance 204L Cortado Marrom - 37",
+        "codigo": "",
+        "preco": 2799.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "37"
+        },
+        "idProdutoPai": "1069544017"
+      },
+      "method": "produto.alterar root produtos[].produto child variation record with required fields + codigo",
+      "write_status": "OK",
+      "write_status_processamento": "3",
+      "write_codigo_erro": null,
+      "write_errors": null,
+      "verify_status": "OK",
+      "after_snapshot": {
+        "nome": "Tênis New Balance 204L Cortado Marrom - 37",
+        "codigo": "NB-0254942-37",
+        "preco": 2799.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "37"
+        },
+        "idProdutoPai": "1069544017"
+      },
+      "non_code_changes_detected": []
+    },
+    {
+      "tiny_child_id": "1070119554",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza",
+      "size": "38",
+      "shopify_variant_id": "48054217933022",
+      "shopify_sku_live": "ONI-6772830-38",
+      "target_codigo": "ONI-6772830-38",
+      "write_attempted": true,
+      "success": true,
+      "rollback_codigo": "",
+      "precheck_status": "OK",
+      "before_snapshot": {
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza - 38",
+        "codigo": "",
+        "preco": 2199.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "38"
+        },
+        "idProdutoPai": "1070119514"
+      },
+      "method": "produto.alterar root produtos[].produto child variation record with required fields + codigo",
+      "write_status": "OK",
+      "write_status_processamento": "3",
+      "write_codigo_erro": null,
+      "write_errors": null,
+      "verify_status": "OK",
+      "after_snapshot": {
+        "nome": "Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza - 38",
+        "codigo": "ONI-6772830-38",
+        "preco": 2199.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho do calçado": "38"
+        },
+        "idProdutoPai": "1070119514"
+      },
+      "non_code_changes_detected": []
+    },
+    {
+      "tiny_child_id": "1069542767",
+      "product_title": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto",
+      "size": "S/P",
+      "shopify_variant_id": "47706484539614",
+      "shopify_sku_live": "ALO-8506462-S",
+      "target_codigo": "ALO-8506462-S",
+      "write_attempted": true,
+      "success": false,
+      "rollback_codigo": "",
+      "precheck_status": "OK",
+      "before_snapshot": {
+        "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - S-P",
+        "codigo": "",
+        "preco": 1799.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "S/P"
+        },
+        "idProdutoPai": "1069542754"
+      },
+      "method": "produto.alterar root produtos[].produto child variation record with required fields + codigo",
+      "write_status": "OK",
+      "write_status_processamento": "3",
+      "write_codigo_erro": null,
+      "write_errors": null,
+      "verify_status": "OK",
+      "after_snapshot": {
+        "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - S/P",
+        "codigo": "ALO-8506462-S",
+        "preco": 1799.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "S/P"
+        },
+        "idProdutoPai": "1069542754"
+      },
+      "non_code_changes_detected": [
+        {
+          "field": "nome",
+          "before": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - S-P",
+          "after": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - S/P"
+        }
+      ],
+      "rollback": {
+        "rollback_api_return": {
+          "status_processamento": "3",
+          "status": "OK",
+          "registros": [
+            {
+              "registro": {
+                "sequencia": "1",
+                "status": "OK",
+                "id": 1069542767
+              }
+            }
+          ]
+        },
+        "rollback_verify_status": "OK",
+        "rollback_after_codigo": "",
+        "rollback_success": true,
+        "rollback_raw_status": "OK"
+      }
+    },
+    {
+      "tiny_child_id": "1069544315",
+      "product_title": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+      "size": "L/G",
+      "shopify_variant_id": "47860151976158",
+      "shopify_sku_live": "SST-4542302-L",
+      "target_codigo": "SST-4542302-L",
+      "write_attempted": true,
+      "success": false,
+      "rollback_codigo": "",
+      "precheck_status": "OK",
+      "before_snapshot": {
+        "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - L-G",
+        "codigo": "",
+        "preco": 619.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "L/G"
+        },
+        "idProdutoPai": "1069544291"
+      },
+      "method": "produto.alterar root produtos[].produto child variation record with required fields + codigo",
+      "write_status": "OK",
+      "write_status_processamento": "3",
+      "write_codigo_erro": null,
+      "write_errors": null,
+      "verify_status": "OK",
+      "after_snapshot": {
+        "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - L/G",
+        "codigo": "SST-4542302-L",
+        "preco": 619.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "L/G"
+        },
+        "idProdutoPai": "1069544291"
+      },
+      "non_code_changes_detected": [
+        {
+          "field": "nome",
+          "before": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - L-G",
+          "after": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - L/G"
+        }
+      ],
+      "rollback": {
+        "rollback_api_return": {
+          "status_processamento": "3",
+          "status": "OK",
+          "registros": [
+            {
+              "registro": {
+                "sequencia": "1",
+                "status": "OK",
+                "id": 1069544315
+              }
+            }
+          ]
+        },
+        "rollback_verify_status": "Erro",
+        "rollback_after_codigo": "",
+        "rollback_success": true,
+        "rollback_raw_status": "Erro"
+      }
+    },
+    {
+      "tiny_child_id": "1069930823",
+      "product_title": "Camiseta Pace Buero Washed Black Preto",
+      "size": "S/P",
+      "shopify_variant_id": "47967340331230",
+      "shopify_sku_live": "PAC-1197278-S",
+      "target_codigo": "PAC-1197278-S",
+      "write_attempted": true,
+      "success": false,
+      "rollback_codigo": "",
+      "precheck_status": "OK",
+      "before_snapshot": {
+        "nome": "Camiseta Pace Buero Washed Black Preto - S-P",
+        "codigo": "",
+        "preco": 319.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "S/P"
+        },
+        "idProdutoPai": "1069930811"
+      },
+      "method": "produto.alterar root produtos[].produto child variation record with required fields + codigo",
+      "write_status": "OK",
+      "write_status_processamento": "3",
+      "write_codigo_erro": null,
+      "write_errors": null,
+      "verify_status": "OK",
+      "after_snapshot": {
+        "nome": "Camiseta Pace Buero Washed Black Preto - S/P",
+        "codigo": "PAC-1197278-S",
+        "preco": 319.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "S/P"
+        },
+        "idProdutoPai": "1069930811"
+      },
+      "non_code_changes_detected": [
+        {
+          "field": "nome",
+          "before": "Camiseta Pace Buero Washed Black Preto - S-P",
+          "after": "Camiseta Pace Buero Washed Black Preto - S/P"
+        }
+      ],
+      "rollback": {
+        "rollback_api_return": {
+          "status_processamento": "3",
+          "status": "OK",
+          "registros": [
+            {
+              "registro": {
+                "sequencia": "1",
+                "status": "OK",
+                "id": 1069930823
+              }
+            }
+          ]
+        },
+        "rollback_verify_status": "OK",
+        "rollback_after_codigo": "",
+        "rollback_success": true,
+        "rollback_raw_status": "OK"
+      }
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "generated_at": "2026-05-11T13:08:55.301523+00:00",
+  "scope": "Retry 3 apparel Tiny codigo writes without grade in payload to avoid name punctuation mutation",
+  "guardrails": [
+    "Tiny codigo only",
+    "no Shopify write",
+    "before/after non-code fields checked",
+    "rollback on any non-code mutation"
+  ],
+  "counts": {
+    "candidates": 3,
+    "write_attempted": 3,
+    "success": 3,
+    "failed": 0
+  },
+  "results": [
+    {
+      "tiny_child_id": "1069542767",
+      "product_title": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto",
+      "size": "S/P",
+      "target_codigo": "ALO-8506462-S",
+      "success": true,
+      "precheck_status": "OK",
+      "before_snapshot": {
+        "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - S/P",
+        "codigo": "",
+        "preco": 1799.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "S/P"
+        },
+        "idProdutoPai": "1069542754"
+      },
+      "rollback_codigo": "",
+      "write_attempted": true,
+      "write_status": "OK",
+      "write_status_processamento": "3",
+      "write_errors": null,
+      "verify_status": "OK",
+      "after_snapshot": {
+        "nome": "Moletom Alo Yoga Cropped Serenity Coverup Black Preto - S/P",
+        "codigo": "ALO-8506462-S",
+        "preco": 1799.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "S/P"
+        },
+        "idProdutoPai": "1069542754"
+      },
+      "non_code_changes_detected": []
+    },
+    {
+      "tiny_child_id": "1069544315",
+      "product_title": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+      "size": "L/G",
+      "target_codigo": "SST-4542302-L",
+      "success": true,
+      "precheck_status": "OK",
+      "before_snapshot": {
+        "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - L/G",
+        "codigo": "",
+        "preco": 619.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "L/G"
+        },
+        "idProdutoPai": "1069544291"
+      },
+      "rollback_codigo": "",
+      "write_attempted": true,
+      "write_status": "OK",
+      "write_status_processamento": "3",
+      "write_errors": null,
+      "verify_status": "OK",
+      "after_snapshot": {
+        "nome": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - L/G",
+        "codigo": "SST-4542302-L",
+        "preco": 619.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "L/G"
+        },
+        "idProdutoPai": "1069544291"
+      },
+      "non_code_changes_detected": []
+    },
+    {
+      "tiny_child_id": "1069930823",
+      "product_title": "Camiseta Pace Buero Washed Black Preto",
+      "size": "S/P",
+      "target_codigo": "PAC-1197278-S",
+      "success": true,
+      "precheck_status": "OK",
+      "before_snapshot": {
+        "nome": "Camiseta Pace Buero Washed Black Preto - S/P",
+        "codigo": "",
+        "preco": 319.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "S/P"
+        },
+        "idProdutoPai": "1069930811"
+      },
+      "rollback_codigo": "",
+      "write_attempted": true,
+      "write_status": "OK",
+      "write_status_processamento": "3",
+      "write_errors": null,
+      "verify_status": "OK",
+      "after_snapshot": {
+        "nome": "Camiseta Pace Buero Washed Black Preto - S/P",
+        "codigo": "PAC-1197278-S",
+        "preco": 319.99,
+        "preco_promocional": 0,
+        "unidade": "UN",
+        "origem": "0",
+        "situacao": "A",
+        "tipo": "P",
+        "grade": {
+          "Tamanho": "S/P"
+        },
+        "idProdutoPai": "1069930811"
+      },
+      "non_code_changes_detected": []
+    }
+  ]
+}
