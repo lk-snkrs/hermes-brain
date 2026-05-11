@@ -1,3 +1,11 @@
+## 2026-05-11 — LK Daily + Weekly Mandatory Report Delivery
+
+- Correção Lucas: Daily Sales Brief e Weekly CEO Review devem ser enviados obrigatoriamente nas cadências aprovadas, não somente quando houver P0/P1.
+- Ajustados `/opt/data/scripts/lk_daily_sales_brief_watchdog.py` e `/opt/data/scripts/lk_weekly_ceo_review_watchdog.py` para sempre imprimir o report gerado no stdout; o cron `no_agent` entregará ao Telegram/origin em toda execução agendada.
+- P0/P1 documentado em linguagem simples: P0 = urgente hoje; P1 = importante acompanhar/decidir. Esses rótulos priorizam o conteúdo, mas não controlam a entrega.
+- Jobs mantidos/renomeados: Daily `7c688553e293` às 08:00 BRT (`LK Daily Sales Brief read-only mandatory delivery`) e Weekly `953b9055458e` segunda 09:00 BRT (`LK Weekly CEO Review read-only mandatory delivery`); 0 n8n, 0 campanhas, 0 writes produtivos.
+- Artefatos: `areas/lk/rotinas/daily-weekly-mandatory-report-delivery-2026-05-11.md` e `reports/lk-daily-weekly-mandatory-report-delivery-2026-05-11.md`.
+
 ## 2026-05-11 — LK Daily + Weekly Silent Cron Activation
 
 - Após Lucas dizer `Seguir` no gate de cadência/destino, ativados os dois primeiros cronjobs read-only da Fase 8 com contrato silent-OK.

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T22:15:36.269438+00:00",
+  "generated_at": "2026-05-11T22:26:56.604904+00:00",
   "business_date": "2026-05-10",
   "window_policy": "last_closed_day_brt",
   "date_range": {
@@ -236,10 +236,10 @@
       "deposit": "LK | CONTROLE ESTOQUE",
       "checks_count": 10,
       "risk_counts": {
-        "ruptura": 5,
+        "ruptura": 4,
         "ok_amostra": 1,
-        "baixo_estoque_vs_venda_do_dia": 3,
-        "unknown": 1
+        "baixo_estoque_vs_venda_do_dia": 2,
+        "unknown": 3
       },
       "critical_or_unknown": [
         {
@@ -261,7 +261,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 295
+            "latency_ms": 277
           },
           "stock_risk": "ruptura"
         },
@@ -284,7 +284,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 359
+            "latency_ms": 306
           },
           "stock_risk": "ruptura"
         },
@@ -307,7 +307,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 335
+            "latency_ms": 312
           },
           "stock_risk": "baixo_estoque_vs_venda_do_dia"
         },
@@ -330,7 +330,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 280
+            "latency_ms": 259
           },
           "stock_risk": "ruptura"
         },
@@ -353,7 +353,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 305
+            "latency_ms": 311
           },
           "stock_risk": "baixo_estoque_vs_venda_do_dia"
         },
@@ -376,7 +376,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 306
+            "latency_ms": 320
           },
           "stock_risk": "ruptura"
         },
@@ -390,18 +390,13 @@
           "candidate_count": 1,
           "chosen_tiny_id": "1066538249",
           "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 0.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
+          "official_deposit": null,
           "stock_call": {
             "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 259
+            "tiny_status": "Erro",
+            "latency_ms": 201
           },
-          "stock_risk": "ruptura"
+          "stock_risk": "unknown"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -423,22 +418,13 @@
           "sku": "U9060496",
           "size_or_variant": "37",
           "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1069034035",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 1.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 259
-          },
-          "stock_risk": "baixo_estoque_vs_venda_do_dia"
+          "search_status": "Erro",
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_call": null,
+          "stock_risk": "unknown"
         }
       ],
       "checks": [
@@ -461,7 +447,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 295
+            "latency_ms": 277
           },
           "stock_risk": "ruptura"
         },
@@ -484,7 +470,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 359
+            "latency_ms": 306
           },
           "stock_risk": "ruptura"
         },
@@ -507,7 +493,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 293
+            "latency_ms": 300
           },
           "stock_risk": "ok_amostra"
         },
@@ -530,7 +516,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 335
+            "latency_ms": 312
           },
           "stock_risk": "baixo_estoque_vs_venda_do_dia"
         },
@@ -553,7 +539,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 280
+            "latency_ms": 259
           },
           "stock_risk": "ruptura"
         },
@@ -576,7 +562,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 305
+            "latency_ms": 311
           },
           "stock_risk": "baixo_estoque_vs_venda_do_dia"
         },
@@ -599,7 +585,7 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 306
+            "latency_ms": 320
           },
           "stock_risk": "ruptura"
         },
@@ -613,18 +599,13 @@
           "candidate_count": 1,
           "chosen_tiny_id": "1066538249",
           "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 0.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
+          "official_deposit": null,
           "stock_call": {
             "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 259
+            "tiny_status": "Erro",
+            "latency_ms": 201
           },
-          "stock_risk": "ruptura"
+          "stock_risk": "unknown"
         },
         {
           "source_label": "fact_tiny_stock",
@@ -646,22 +627,13 @@
           "sku": "U9060496",
           "size_or_variant": "37",
           "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1069034035",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 1.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 259
-          },
-          "stock_risk": "baixo_estoque_vs_venda_do_dia"
+          "search_status": "Erro",
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_call": null,
+          "stock_risk": "unknown"
         }
       ],
       "scope_note": "Read-only. Estoque consultado só para SKUs vendidos no dia, não auditoria completa de catálogo."
@@ -770,21 +742,21 @@
       "priority": "P0",
       "source_label": "derived_reconciliation",
       "action": "Preparar preview de reposição/sourcing para SKUs vendidos com saldo zero no Tiny.",
-      "why": "5 SKU(s) vendidos aparecem em ruptura no depósito oficial.",
+      "why": "4 SKU(s) vendidos aparecem em ruptura no depósito oficial.",
       "approval_required": "Sim, antes de fornecedor/compra/Notion."
     },
     {
       "priority": "P1",
       "source_label": "derived_reconciliation",
       "action": "Revisar cobertura dos SKUs com saldo menor ou igual à venda do dia.",
-      "why": "3 SKU(s) com venda do dia encostando no saldo oficial.",
+      "why": "2 SKU(s) com venda do dia encostando no saldo oficial.",
       "approval_required": "Sim, se virar compra, preço ou contato."
     },
     {
       "priority": "P1",
       "source_label": "derived_reconciliation",
       "action": "Resolver mapeamento Shopify SKU ↔ Tiny antes de campanha ou reposição automática.",
-      "why": "1 SKU(s) vendido(s) sem candidato Tiny seguro ou sem saldo legível.",
+      "why": "3 SKU(s) vendido(s) sem candidato Tiny seguro ou sem saldo legível.",
       "approval_required": "Sim, se exigir correção de cadastro."
     }
   ],
