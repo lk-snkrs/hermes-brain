@@ -1,3 +1,11 @@
+## 2026-05-11 — LK PDP Low-conversion Priority Router
+
+- Criado e executado `scripts/lk_pdp_low_conversion_priority_router_20260511.py`, cruzando GA4 landing pages, GSC e Merchant Center em modo read-only para priorizar PDPs/collections com tráfego alto e baixa conversão.
+- Resultado: 4.999 linhas GA4 lidas, 62 páginas candidatas, 40 itens priorizados, 12 P1, 28 P2, 22 PDPs, 17 collections, 1 homepage, 33 itens com zero compra atribuída e 0 writes liberados.
+- Top P1: `air-jordan-travis-scott`, `new-balance-204l`, PDP `crocs-classic-clog-x-the-cars-lightning-mcqueen`, `onitsuka-tiger-todos-os-modelos` e `onitsuka-tiger-mexico-66`.
+- Artefatos: `areas/lk/rotinas/pdp-low-conversion-priority-router-2026-05-11.md`, `reports/lk-pdp-low-conversion-priority-router-2026-05-11.md` e `.json`.
+- Nenhum Shopify/theme/PDP/SEO field/Merchant/feed/GSC admin/Indexing API/content publish/campanha/envio/cron foi executado.
+
 ## 2026-05-11 — LK Merchant Center Feed Read-only Router
 
 - Criado e executado `scripts/lk_merchant_center_feed_readonly_router_20260511.py`, usando Merchant Center API em modo leitura com credenciais Google via Doppler em processo efêmero.

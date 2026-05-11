@@ -28,6 +28,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `rotinas/data-spine-readonly-2026-05-11.md` — Fase 1 do LK OS: inventário de fontes, matriz Doppler sem valores, entidades canônicas, reconciliação, lacunas e primeiro snapshot read-only multi-fonte em `reports/lk-os-data-spine-snapshot-2026-05-11.md`.
 - `rotinas/search-console-readonly-router-2026-05-11.md` — Fase 6 do LK OS: Search Console real como `fact_gsc`, queries/páginas/CTR/posição e oportunidades SEO/CRO sem writes.
 - `rotinas/merchant-center-feed-readonly-router-2026-05-11.md` — Fase 6 do LK OS: Merchant Center real como `fact_merchant_center`, diagnóstico de feed/issues/destinos e fila de correção sem writes.
+- `rotinas/pdp-low-conversion-priority-router-2026-05-11.md` — Fase 6 do LK OS: GA4 + GSC + Merchant em fila de PDP/collection com tráfego alto e baixa conversão, sem writes.
 - `rotinas/full-sync.md` — sincronizações LK.
 - `rotinas/morning-briefing.md` — briefing matinal.
 - `rotinas/sync-log.md` — auditoria de syncs.

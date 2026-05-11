@@ -1,0 +1,1382 @@
+{
+  "generated_at": "2026-05-11T21:19:19.311650+00:00",
+  "scope": "LK PDP/collection low-conversion priority router",
+  "window": {
+    "start_date": "2026-04-11",
+    "end_date": "2026-05-08"
+  },
+  "summary": {
+    "ga4_rows_read": 4999,
+    "candidate_pages": 62,
+    "queue_items": 40,
+    "p1_items": 12,
+    "p2_items": 28,
+    "pdp_items": 22,
+    "collection_items": 17,
+    "homepage_items": 1,
+    "zero_purchase_items": 33,
+    "gsc_joined_items": 19,
+    "merchant_joined_items": 0,
+    "writes_allowed_now": 0
+  },
+  "queue": [
+    {
+      "path": "/collections/air-jordan-travis-scott",
+      "url": "https://lksneakers.com.br/collections/air-jordan-travis-scott",
+      "sessions": 254,
+      "total_users": 239,
+      "screen_page_views": 467,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 90,
+      "reason": "alto tráfego GA4; zero compras atribuídas à landing page; muita impressão GSC com CTR baixo; collection comercial relevante",
+      "recommended_actions": [
+        "title_meta_ctr_preview",
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/collections/air-jordan-travis-scott",
+        "clicks": 226,
+        "impressions": 28235,
+        "ctr_percent": 0.8,
+        "position": 6.5,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "nike travis scott",
+            "impressions": 4429,
+            "ctr_percent": 0.79,
+            "position": 6.8,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/collections/new-balance-204l",
+      "url": "https://lksneakers.com.br/collections/new-balance-204l",
+      "sessions": 545,
+      "total_users": 515,
+      "screen_page_views": 1068,
+      "ecommerce_purchases": 1,
+      "purchase_revenue": 2644.96,
+      "landing_purchase_rate_percent": 0.18,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 82,
+      "reason": "alto tráfego GA4; conversão de landing baixa; muita impressão GSC com CTR baixo; collection comercial relevante",
+      "recommended_actions": [
+        "title_meta_ctr_preview",
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/collections/new-balance-204l",
+        "clicks": 431,
+        "impressions": 50536,
+        "ctr_percent": 0.85,
+        "position": 7.4,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "new balance 204l",
+            "impressions": 21539,
+            "ctr_percent": 0.53,
+            "position": 7.8,
+            "priority": "P1"
+          },
+          {
+            "query": "new balance 204",
+            "impressions": 2471,
+            "ctr_percent": 0.2,
+            "position": 9.5,
+            "priority": "P1"
+          },
+          {
+            "query": "nb 204l",
+            "impressions": 2422,
+            "ctr_percent": 0.7,
+            "position": 6.2,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho",
+      "url": "https://lksneakers.com.br/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho",
+      "sessions": 188,
+      "total_users": 177,
+      "screen_page_views": 217,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P1",
+      "score": 81,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; muita impressão GSC com CTR baixo; PDP diretamente acionável",
+      "recommended_actions": [
+        "title_meta_ctr_preview",
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho",
+        "clicks": 110,
+        "impressions": 35931,
+        "ctr_percent": 0.31,
+        "position": 7.5,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "crocs relampago mcqueen",
+            "impressions": 7327,
+            "ctr_percent": 0.29,
+            "position": 8.2,
+            "priority": "P1"
+          },
+          {
+            "query": "crocs do relâmpago mcqueen",
+            "impressions": 6599,
+            "ctr_percent": 0.14,
+            "position": 8.3,
+            "priority": "P1"
+          },
+          {
+            "query": "crocs mcqueen",
+            "impressions": 2750,
+            "ctr_percent": 0.29,
+            "position": 8.6,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/collections/onitsuka-tiger-todos-os-modelos",
+      "url": "https://lksneakers.com.br/collections/onitsuka-tiger-todos-os-modelos",
+      "sessions": 1067,
+      "total_users": 994,
+      "screen_page_views": 2583,
+      "ecommerce_purchases": 1,
+      "purchase_revenue": 2499.99,
+      "landing_purchase_rate_percent": 0.09,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 72,
+      "reason": "alto tráfego GA4; conversão de landing baixa; oportunidade orgânica GSC; collection comercial relevante",
+      "recommended_actions": [
+        "title_meta_ctr_preview",
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/collections/onitsuka-tiger-todos-os-modelos",
+        "clicks": 627,
+        "impressions": 54015,
+        "ctr_percent": 1.16,
+        "position": 6.5,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "onitsuka tiger",
+            "impressions": 24327,
+            "ctr_percent": 0.31,
+            "position": 8.0,
+            "priority": "P1"
+          },
+          {
+            "query": "tenis onitsuka tiger",
+            "impressions": 3197,
+            "ctr_percent": 1.41,
+            "position": 2.9,
+            "priority": "P1"
+          },
+          {
+            "query": "onitsuka",
+            "impressions": 2732,
+            "ctr_percent": 0.81,
+            "position": 6.1,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/collections/onitsuka-tiger-mexico-66",
+      "url": "https://lksneakers.com.br/collections/onitsuka-tiger-mexico-66",
+      "sessions": 698,
+      "total_users": 654,
+      "screen_page_views": 1398,
+      "ecommerce_purchases": 2,
+      "purchase_revenue": 4899.98,
+      "landing_purchase_rate_percent": 0.29,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 72,
+      "reason": "alto tráfego GA4; conversão de landing baixa; oportunidade orgânica GSC; collection comercial relevante",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/collections/onitsuka-tiger-mexico-66",
+        "clicks": 571,
+        "impressions": 29581,
+        "ctr_percent": 1.93,
+        "position": 4.1,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "onitsuka tiger mexico 66",
+            "impressions": 7648,
+            "ctr_percent": 2.28,
+            "position": 3.1,
+            "priority": "P1"
+          },
+          {
+            "query": "tenis mexico 66",
+            "impressions": 2405,
+            "ctr_percent": 1.0,
+            "position": 3.7,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/products/slide-nike-mind-001-black-chrome-preto",
+      "url": "https://lksneakers.com.br/products/slide-nike-mind-001-black-chrome-preto",
+      "sessions": 108,
+      "total_users": 102,
+      "screen_page_views": 149,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P1",
+      "score": 71,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; oportunidade orgânica GSC; PDP diretamente acionável",
+      "recommended_actions": [
+        "title_meta_ctr_preview",
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/products/slide-nike-mind-001-black-chrome-preto",
+        "clicks": 48,
+        "impressions": 7664,
+        "ctr_percent": 0.63,
+        "position": 7.7,
+        "source_label": "fact_gsc"
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/products/bone-5-panel-aime-leon-dore-unisphere-branco",
+      "url": "https://lksneakers.com.br/products/bone-5-panel-aime-leon-dore-unisphere-branco",
+      "sessions": 476,
+      "total_users": 458,
+      "screen_page_views": 798,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P1",
+      "score": 68,
+      "reason": "alto tráfego GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/collections/adidas-samba-jane",
+      "url": "https://lksneakers.com.br/collections/adidas-samba-jane",
+      "sessions": 199,
+      "total_users": 192,
+      "screen_page_views": 254,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 68,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; oportunidade orgânica GSC; collection comercial relevante",
+      "recommended_actions": [
+        "title_meta_ctr_preview",
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/collections/adidas-samba-jane",
+        "clicks": 218,
+        "impressions": 19402,
+        "ctr_percent": 1.12,
+        "position": 6.9,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "adidas samba jane",
+            "impressions": 4746,
+            "ctr_percent": 0.93,
+            "position": 6.2,
+            "priority": "P1"
+          },
+          {
+            "query": "samba jane",
+            "impressions": 2824,
+            "ctr_percent": 1.49,
+            "position": 5.8,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/collections/nude-project",
+      "url": "https://lksneakers.com.br/collections/nude-project",
+      "sessions": 148,
+      "total_users": 138,
+      "screen_page_views": 246,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 68,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; oportunidade orgânica GSC; collection comercial relevante",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/collections/nude-project",
+        "clicks": 112,
+        "impressions": 5911,
+        "ctr_percent": 1.89,
+        "position": 3.9,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "nude project",
+            "impressions": 3370,
+            "ctr_percent": 1.75,
+            "position": 2.9,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/collections/nike-mind-001",
+      "url": "https://lksneakers.com.br/collections/nike-mind-001",
+      "sessions": 133,
+      "total_users": 128,
+      "screen_page_views": 305,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 68,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; oportunidade orgânica GSC; collection comercial relevante",
+      "recommended_actions": [
+        "title_meta_ctr_preview",
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/collections/nike-mind-001",
+        "clicks": 89,
+        "impressions": 6975,
+        "ctr_percent": 1.28,
+        "position": 7.6,
+        "source_label": "fact_gsc"
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/collections/lululemon",
+      "url": "https://lksneakers.com.br/collections/lululemon",
+      "sessions": 860,
+      "total_users": 783,
+      "screen_page_views": 1796,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 65,
+      "reason": "alto tráfego GA4; zero compras atribuídas à landing page; collection comercial relevante",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/collections/lululemon",
+        "clicks": 737,
+        "impressions": 24492,
+        "ctr_percent": 3.01,
+        "position": 5.3,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "lululemon",
+            "impressions": 15754,
+            "ctr_percent": 0.67,
+            "position": 6.0,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/collections/nike-x-jacquemus-moon-shoe-sp",
+      "url": "https://lksneakers.com.br/collections/nike-x-jacquemus-moon-shoe-sp",
+      "sessions": 394,
+      "total_users": 354,
+      "screen_page_views": 873,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 65,
+      "reason": "alto tráfego GA4; zero compras atribuídas à landing page; collection comercial relevante",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/collections/nike-x-jacquemus-moon-shoe-sp",
+        "clicks": 205,
+        "impressions": 6815,
+        "ctr_percent": 3.01,
+        "position": 2.9,
+        "source_label": "fact_gsc"
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/",
+      "url": "https://lksneakers.com.br/",
+      "sessions": 12006,
+      "total_users": 10837,
+      "screen_page_views": 43329,
+      "ecommerce_purchases": 53,
+      "purchase_revenue": 168875.67,
+      "landing_purchase_rate_percent": 0.44,
+      "source_label": "fact_ga4",
+      "page_type": "homepage",
+      "priority": "P2",
+      "score": 57,
+      "reason": "alto tráfego GA4; conversão abaixo do esperado; oportunidade orgânica GSC",
+      "recommended_actions": [
+        "title_meta_ctr_preview",
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/",
+        "clicks": 480,
+        "impressions": 36716,
+        "ctr_percent": 1.31,
+        "position": 7.0,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "lk",
+            "impressions": 13559,
+            "ctr_percent": 0.2,
+            "position": 4.8,
+            "priority": "P1"
+          },
+          {
+            "query": "sneakers",
+            "impressions": 3713,
+            "ctr_percent": 0.54,
+            "position": 12.2,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/collections/aime-leon-dore",
+      "url": "https://lksneakers.com.br/collections/aime-leon-dore",
+      "sessions": 536,
+      "total_users": 492,
+      "screen_page_views": 1407,
+      "ecommerce_purchases": 1,
+      "purchase_revenue": 2799.99,
+      "landing_purchase_rate_percent": 0.19,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P2",
+      "score": 57,
+      "reason": "alto tráfego GA4; conversão de landing baixa; collection comercial relevante",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/products/slide-nike-mind-001-light-smoke-grey-cinza",
+      "url": "https://lksneakers.com.br/products/slide-nike-mind-001-light-smoke-grey-cinza",
+      "sessions": 234,
+      "total_users": 223,
+      "screen_page_views": 370,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/products/slide-nike-mind-001-light-smoke-grey-cinza",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr_percent": 0,
+        "position": null,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "nike mind 001",
+            "impressions": 2238,
+            "ctr_percent": 0.04,
+            "position": 10.1,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/products/travis-scott-x-air-jordan-1-low-og-reverse-mocha",
+      "url": "https://lksneakers.com.br/products/travis-scott-x-air-jordan-1-low-og-reverse-mocha",
+      "sessions": 181,
+      "total_users": 172,
+      "screen_page_views": 232,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/products/travis-scott-x-air-jordan-1-low-og-reverse-mocha",
+      "url": "https://lksneakers.com.br/products/travis-scott-x-air-jordan-1-low-og-reverse-mocha",
+      "sessions": 179,
+      "total_users": 162,
+      "screen_page_views": 251,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/products/tenis-new-balance-204l-mushroom-arid-stone-marrom",
+      "url": "https://lksneakers.com.br/products/tenis-new-balance-204l-mushroom-arid-stone-marrom",
+      "sessions": 172,
+      "total_users": 161,
+      "screen_page_views": 270,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/products/tenis-nike-vomero-premium-x-melitta-baumeister-total-orange-laranja",
+      "url": "https://lksneakers.com.br/products/tenis-nike-vomero-premium-x-melitta-baumeister-total-orange-laranja",
+      "sessions": 171,
+      "total_users": 163,
+      "screen_page_views": 246,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/products/tenis-nike-vomero-premium-x-melitta-baumeister-total-orange-laranja",
+        "clicks": 45,
+        "impressions": 1559,
+        "ctr_percent": 2.89,
+        "position": 3.7,
+        "source_label": "fact_gsc"
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/products/jaqueta-lululemon-define-nulu",
+      "url": "https://lksneakers.com.br/products/jaqueta-lululemon-define-nulu",
+      "sessions": 162,
+      "total_users": 141,
+      "screen_page_views": 220,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/products/jaqueta-lululemon-define-nulu",
+        "clicks": 95,
+        "impressions": 2986,
+        "ctr_percent": 3.18,
+        "position": 3.8,
+        "source_label": "fact_gsc"
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/products/bone-5-panel-aime-leon-dore-unisphere-branco",
+      "url": "https://lksneakers.com.br/products/bone-5-panel-aime-leon-dore-unisphere-branco",
+      "sessions": 144,
+      "total_users": 136,
+      "screen_page_views": 292,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/products/the-peptide-lip-tints-rhode-multicolor",
+      "url": "https://lksneakers.com.br/products/the-peptide-lip-tints-rhode-multicolor",
+      "sessions": 144,
+      "total_users": 135,
+      "screen_page_views": 192,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/products/tenis-new-balance-997-made-in-usa-x-aime-leon-dore-dark-moss-angora-marrom",
+      "url": "https://lksneakers.com.br/products/tenis-new-balance-997-made-in-usa-x-aime-leon-dore-dark-moss-angora-marrom",
+      "sessions": 130,
+      "total_users": 114,
+      "screen_page_views": 168,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/products/slide-nike-mind-001-mineral-slate-verde",
+      "url": "https://lksneakers.com.br/products/slide-nike-mind-001-mineral-slate-verde",
+      "sessions": 127,
+      "total_users": 124,
+      "screen_page_views": 250,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/products/tenis-nike-vomero-premium-sail-coconut-milk-branco",
+      "url": "https://lksneakers.com.br/products/tenis-nike-vomero-premium-sail-coconut-milk-branco",
+      "sessions": 127,
+      "total_users": 121,
+      "screen_page_views": 213,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/products/tenis-adidas-samba-og-crochet-pack-sand-strata-bege",
+      "url": "https://lksneakers.com.br/products/tenis-adidas-samba-og-crochet-pack-sand-strata-bege",
+      "sessions": 124,
+      "total_users": 122,
+      "screen_page_views": 158,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "title_meta_ctr_preview",
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/products/tenis-adidas-samba-og-crochet-pack-sand-strata-bege",
+        "clicks": 41,
+        "impressions": 2754,
+        "ctr_percent": 1.49,
+        "position": 4.8,
+        "source_label": "fact_gsc"
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/products/travis-scott-x-air-jordan-1-low-og-reverse-mocha",
+      "url": "https://lksneakers.com.br/products/travis-scott-x-air-jordan-1-low-og-reverse-mocha",
+      "sessions": 118,
+      "total_users": 105,
+      "screen_page_views": 149,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/products/slide-nike-mind-001-light-smoke-grey-cinza",
+      "url": "https://lksneakers.com.br/products/slide-nike-mind-001-light-smoke-grey-cinza",
+      "sessions": 112,
+      "total_users": 100,
+      "screen_page_views": 167,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/products/slide-nike-mind-001-light-smoke-grey-cinza",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr_percent": 0,
+        "position": null,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "nike mind 001",
+            "impressions": 2238,
+            "ctr_percent": 0.04,
+            "position": 10.1,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/products/tenis-adidas-handball-spezial-sporty-rich-brown-marrom",
+      "url": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-sporty-rich-brown-marrom",
+      "sessions": 111,
+      "total_users": 106,
+      "screen_page_views": 143,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-sporty-rich-brown-marrom",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr_percent": 0,
+        "position": null,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "adidas marrom",
+            "impressions": 6956,
+            "ctr_percent": 0.06,
+            "position": 4.2,
+            "priority": "P1"
+          },
+          {
+            "query": "adidas spezial marrom",
+            "impressions": 4072,
+            "ctr_percent": 0.02,
+            "position": 3.3,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/products/travis-scott-x-air-jordan-1-low-og-reverse-mocha",
+      "url": "https://lksneakers.com.br/products/travis-scott-x-air-jordan-1-low-og-reverse-mocha",
+      "sessions": 107,
+      "total_users": 98,
+      "screen_page_views": 130,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/products/tenis-new-balance-204l-timberwolf-bege",
+      "url": "https://lksneakers.com.br/products/tenis-new-balance-204l-timberwolf-bege",
+      "sessions": 105,
+      "total_users": 103,
+      "screen_page_views": 151,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/products/tenis-new-balance-9060-sea-salt-moonbeam-branco",
+      "url": "https://lksneakers.com.br/products/tenis-new-balance-9060-sea-salt-moonbeam-branco",
+      "sessions": 101,
+      "total_users": 86,
+      "screen_page_views": 175,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 56,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; PDP diretamente acionável",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/collections/all",
+      "url": "https://lksneakers.com.br/collections/all",
+      "sessions": 179,
+      "total_users": 166,
+      "screen_page_views": 361,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P2",
+      "score": 53,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; collection comercial relevante",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/collections/adidas-todos-os-modelos",
+      "url": "https://lksneakers.com.br/collections/adidas-todos-os-modelos",
+      "sessions": 150,
+      "total_users": 141,
+      "screen_page_views": 328,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P2",
+      "score": 53,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; collection comercial relevante",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/collections/new-balance-9060",
+      "url": "https://lksneakers.com.br/collections/new-balance-9060",
+      "sessions": 143,
+      "total_users": 138,
+      "screen_page_views": 328,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P2",
+      "score": 53,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; collection comercial relevante",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/collections/loewe-x-on-running",
+      "url": "https://lksneakers.com.br/collections/loewe-x-on-running",
+      "sessions": 138,
+      "total_users": 123,
+      "screen_page_views": 199,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P2",
+      "score": 53,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; collection comercial relevante",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/collections/onitsuka-tiger-x-versace",
+      "url": "https://lksneakers.com.br/collections/onitsuka-tiger-x-versace",
+      "sessions": 138,
+      "total_users": 136,
+      "screen_page_views": 489,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P2",
+      "score": 53,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; collection comercial relevante",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/collections/new-balance-todos-os-modelos",
+      "url": "https://lksneakers.com.br/collections/new-balance-todos-os-modelos",
+      "sessions": 137,
+      "total_users": 127,
+      "screen_page_views": 419,
+      "ecommerce_purchases": 0,
+      "purchase_revenue": 0.0,
+      "landing_purchase_rate_percent": 0.0,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P2",
+      "score": 53,
+      "reason": "tráfego médio GA4; zero compras atribuídas à landing page; collection comercial relevante",
+      "recommended_actions": [
+        "pdp_cro_above_fold_preview"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    },
+    {
+      "path": "/products/tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "url": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "sessions": 163,
+      "total_users": 153,
+      "screen_page_views": 319,
+      "ecommerce_purchases": 2,
+      "purchase_revenue": 4405.0,
+      "landing_purchase_rate_percent": 1.23,
+      "source_label": "fact_ga4",
+      "page_type": "pdp",
+      "priority": "P2",
+      "score": 51,
+      "reason": "tráfego médio GA4; muita impressão GSC com CTR baixo; PDP diretamente acionável",
+      "recommended_actions": [
+        "title_meta_ctr_preview"
+      ],
+      "gsc_context": {
+        "page": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+        "clicks": 61,
+        "impressions": 11827,
+        "ctr_percent": 0.52,
+        "position": 4.8,
+        "source_label": "fact_gsc"
+      },
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc"
+      ]
+    },
+    {
+      "path": "/collections/sneakers",
+      "url": "https://lksneakers.com.br/collections/sneakers",
+      "sessions": 851,
+      "total_users": 804,
+      "screen_page_views": 2952,
+      "ecommerce_purchases": 6,
+      "purchase_revenue": 14149.94,
+      "landing_purchase_rate_percent": 0.71,
+      "source_label": "fact_ga4",
+      "page_type": "collection",
+      "priority": "P2",
+      "score": 47,
+      "reason": "alto tráfego GA4; conversão abaixo do esperado; collection comercial relevante",
+      "recommended_actions": [
+        "monitor"
+      ],
+      "gsc_context": null,
+      "merchant_context": null,
+      "approval_status": "read_only_preview",
+      "write_allowed_now": false,
+      "source_labels": [
+        "fact_ga4"
+      ]
+    }
+  ],
+  "guardrails": [
+    "GA4 landing-page metrics are fact_ga4; GSC metrics are fact_gsc; Merchant feed statuses are fact_merchant_center.",
+    "Landing-page purchase rate is directional CRO triage, not a full attribution model.",
+    "Any Shopify SEO field, PDP content, image, theme, feed, Merchant or Google change requires preview and Lucas approval.",
+    "No customer PII is used or exported."
+  ],
+  "not_performed": [
+    "shopify_write",
+    "theme_write",
+    "pdp_content_update",
+    "seo_field_update",
+    "merchant_center_write",
+    "feed_update",
+    "gsc_admin_change",
+    "indexing_api_submit",
+    "content_publish",
+    "campaign_or_customer_send",
+    "cron_creation"
+  ]
+}
