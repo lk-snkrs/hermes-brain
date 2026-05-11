@@ -254,7 +254,7 @@ Entregáveis:
 - [x] Rotina Search Console: queries, páginas, CTR, oportunidades, operacionalizada via `search-console-readonly-router`: 25.000 linhas query/página, 15.709 páginas agregadas e 40 oportunidades P1/P2 roteadas como preview sem writes.
 - [x] Módulo semanal SEO/CRO com nota Claude SEO, meta próxima e fila priorizada de melhorias de PDP/páginas.
 - [x] Diagnóstico Merchant Center/feed, operacionalizado via `merchant-center-feed-readonly-router`: 5.000 status de produto lidos, 959 itens P1, 18 grupos de problema e 0 writes liberados.
-- [x] Priorização de PDPs com tráfego alto e conversão baixa, operacionalizada via `pdp-low-conversion-priority-router`: 4.999 linhas GA4, 62 páginas candidatas, 40 itens priorizados, 12 P1, 22 PDPs e 0 writes liberados; follow-up `p1-seo-cro-approval-packets` criado com 8 pacotes top P1, title/meta exatos e CRO visível separado.
+- [x] Priorização de PDPs com tráfego alto e conversão baixa, operacionalizada via `pdp-low-conversion-priority-router`: 4.999 linhas GA4, 62 páginas candidatas, 40 itens priorizados, 12 P1, 22 PDPs e 0 writes liberados; follow-up `p1-seo-cro-approval-packets` criado com 8 pacotes top P1, title/meta exatos e CRO visível separado; após aprovação, 8 SEO title/meta aplicados e verificados live com rollback.
 - [x] Checklist SEO/PDP para produtos importantes via `lk-seo-weekly-improvement` e rotina `seo-cro-weekly-improvement-loop`.
 
 Critério de saída:
