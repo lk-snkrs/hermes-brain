@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-05-11T16:34:30.567698+00:00",
+  "scope": "Internal LK/Klaviyo visual preview only. No external write, no Klaviyo object, no customer send.",
+  "input_report": "reports/lk-phase5-p1-broad-tiny-copy-preview-2026-05-11.json",
+  "html_preview": "reports/lk-phase5-p1-klaviyo-visual-preview-2026-05-11.html",
+  "rows": 3,
+  "shopify_enrichment": {
+    "U204LMMC-2": {
+      "sku": "U204LMMC-2",
+      "variant_title": "35",
+      "product_title": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "handle": "tenis-new-balance-204l-timberwolf-bege",
+      "url": "https://lksneakers.com.br/products/tenis-new-balance-204l-timberwolf-bege",
+      "image_url": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-204l-arid-timberwolf-bege-lk-u204lmmc-1-7963095.png?v=1759378570",
+      "image_alt": "New Balance New Balance 204L Arid Timberwolf tênis em bege original na LK Sneakers"
+    },
+    "U204LMMC-3": {
+      "sku": "U204LMMC-3",
+      "variant_title": "36",
+      "product_title": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "handle": "tenis-new-balance-204l-timberwolf-bege",
+      "url": "https://lksneakers.com.br/products/tenis-new-balance-204l-timberwolf-bege",
+      "image_url": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-204l-arid-timberwolf-bege-lk-u204lmmc-1-7963095.png?v=1759378570",
+      "image_alt": "New Balance New Balance 204L Arid Timberwolf tênis em bege original na LK Sneakers"
+    },
+    "1183C233-250-3": {
+      "sku": "1183C233-250-3",
+      "variant_title": "36",
+      "product_title": "Onitsuka Tiger Mexico 66 Paraty Natural Navy Bege",
+      "handle": "onitsuka-tiger-mexico-66-paraty-natural-navy-bege",
+      "url": "https://lksneakers.com.br/products/onitsuka-tiger-mexico-66-paraty-natural-navy-bege",
+      "image_url": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/onitsuka-tiger-mexico-66-paraty-natural-navy-bege-lk-1183c233-250-1-700301.png?v=1748137901",
+      "image_alt": "Onitsuka Tiger Mexico 66 Paraty Natural Navy Bege em bege original na LK Sneakers"
+    }
+  },
+  "guardrails": [
+    "Preview interno apenas",
+    "Nenhum envio WhatsApp, Klaviyo ou e-mail",
+    "Nenhuma lista externa criada",
+    "Nenhum write em Shopify, Tiny ou Supabase",
+    "Relatório Brain sem PII",
+    "HTML local gerado em reports/",
+    "Shopify usado apenas em GraphQL query read-only para imagem/URL quando disponível",
+    "Nenhum objeto Klaviyo criado"
+  ]
+}
