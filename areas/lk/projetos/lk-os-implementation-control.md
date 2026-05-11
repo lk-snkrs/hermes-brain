@@ -213,11 +213,12 @@ Objetivo: aumentar recompra com oportunidades aprováveis, sem disparo automáti
 
 Entregáveis:
 
-- [ ] Segmentos RFM reais.
-- [ ] Clientes em risco de esfriar.
-- [ ] Oportunidades de cross-sell por compra anterior.
-- [ ] Preview de Klaviyo/WhatsApp por segmento.
-- [ ] Bloqueio de envio sem aprovação.
+- [x] Segmentos RFM reais.
+- [x] Clientes em risco de esfriar.
+- [x] Oportunidades de cross-sell por compra anterior.
+- [x] Preview de Klaviyo/WhatsApp por segmento.
+- [x] Bloqueio de envio sem aprovação.
+- [x] Listas finais P1 por canal geradas em privado: Klaviyo preview e WhatsApp concierge, sem envio externo.
 
 Critério de saída:
 
