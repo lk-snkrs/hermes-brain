@@ -1,3 +1,10 @@
+## 2026-05-12 — LK GMC P0 URL/Checkout Review Read-only
+
+- Aberto o pacote P0 `P0_admin_url_checkout_landing_review` em evidências por SKU/offer_id com `scripts/lk_gmc_p0_url_checkout_review_20260512.py`.
+- Resultado: 32 offer_ids únicos revisados dentro dos 40 itens P0 agrupados; 32/32 tiveram match Shopify por SKU e 32/32 PDPs públicos responderam HTTP 200.
+- Classificação: `checkout_url_invalid` não parece ser PDP morto nas amostras verificadas; próximo seguro é diagnóstico Merchant automatic checkout/account + atributos obrigatórios, não Shopify URL write imediato.
+- Mission Control atualizado para 9 checks verdes, P0 aberto 32 linhas/32 HTTP 200; 0 Merchant/feed/Shopify/GSC/checkout/theme writes, 0 envios/contatos/compras/marketplace/n8n.
+
 ## 2026-05-12 — LK GMC Correction Preview Read-only
 
 - Criado próximo bloco seguro do GMC: `scripts/lk_gmc_correction_preview_20260512.py`, convertendo a fila Merchant em pacotes de correção preview-only.

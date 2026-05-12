@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T01:47:41.466156+00:00",
+  "generated_at": "2026-05-12T01:57:32.289457+00:00",
   "scope": "LK OS Mission Control snapshot v1",
   "status": "mission_control_ready_readonly",
   "summary": {
@@ -19,12 +19,14 @@
     "gmc_p1_items": 963,
     "gmc_correction_packages": 6,
     "gmc_correction_p0_packages": 1,
+    "gmc_p0_rows_reviewed": 32,
+    "gmc_p0_pdp_http_200_rows": 32,
     "production_writes": 0,
     "external_sends_or_contacts": 0,
     "purchases_or_pos": 0,
     "external_marketplace_calls": 0,
     "n8n_flows_created": 0,
-    "checks": 8,
+    "checks": 9,
     "fail_count": 0,
     "warn_count": 0
   },
@@ -146,18 +148,20 @@
     "priority": "P1",
     "title": "GMC feed diagnostics",
     "status": "read_only_queue_ready",
-    "next_safe_action": "review correction packages: P0 URL/checkout/landing, P1 required attributes, GTIN and local inventory; prepare exact write previews only after prioritization.",
+    "next_safe_action": "P0 URL/checkout opened: PDPs sampled are reachable; next safe step is Merchant automatic checkout/account diagnostics plus required-attribute mapping preview, not a Shopify URL write.",
     "blocked": "Merchant/feed/Shopify/GSC writes",
     "queue_items": 963,
     "p1_items": 963,
     "correction_packages": 6,
-    "p0_packages": 1
+    "p0_packages": 1,
+    "p0_rows_reviewed": 32,
+    "p0_pdp_http_200_rows": 32
   },
   "safe_next_actions": [
     "Acompanhar primeira entrega Daily Sales Brief em 2026-05-12 08:00 BRT.",
     "Manter Klaviyo P1 em Draft; só preparar pacote de envio se Lucas pedir explicitamente.",
     "Preparar uma fila de decisão curta para sourcing: 4 famílias aprováveis; os 3 antigos needs_data foram reconciliados em modo read-only/local.",
-    "Transformar GMC P0/P1 em pacotes exatos por superfície: admin URL/checkout, atributos obrigatórios, GTIN e inventário local; preview-only antes de qualquer write."
+    "GMC P0 URL/checkout: PDPs verificados retornaram HTTP 200; preparar preview de Merchant checkout/account diagnostics + required attributes, sem Shopify URL write."
   ],
   "status_counts": {
     "needs_approval": 5,
@@ -357,6 +361,31 @@
         "p1_packages": 3,
         "p2_packages": 2,
         "preview_only_items_covered": 963,
+        "write_allowed_now": 0,
+        "production_writes": 0,
+        "external_sends_or_contacts": 0,
+        "purchases_or_pos": 0,
+        "external_marketplace_calls": 0,
+        "n8n_flows_created": 0
+      }
+    },
+    {
+      "name": "gmc_p0_url_review_safe",
+      "ok": true,
+      "severity": "warn",
+      "detail": "GMC P0 URL/checkout review must provide SKU/URL evidence without writes.",
+      "evidence": {
+        "source_p0_package_items": 40,
+        "p0_rows_reviewed": 32,
+        "shopify_matched_rows": 32,
+        "public_url_http_200_rows": 32,
+        "public_url_error_rows": 0,
+        "classification_counts": {
+          "pdp_ok_checkout_url_issue_likely_attribute_or_merchant_checkout": 32
+        },
+        "http_counts": {
+          "200": 32
+        },
         "write_allowed_now": 0,
         "production_writes": 0,
         "external_sends_or_contacts": 0,
