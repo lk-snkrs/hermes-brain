@@ -1,10 +1,14 @@
+## 2026-05-12 — LK GMC Review Cron Reconciliation
+
+- Lucas apontou corretamente que o PRD tinha cadência separada `Quinta 09h — GMC Review`; a Fase 8 anterior cobria SEO/CRO, mas não ativava o cron GMC dedicado.
+- Criado `LK-AUTO-007` como cron `no_agent` read-only obrigatório: `LK GMC Review read-only mandatory delivery`, job `d4c26da4cd48`, schedule `0 12 * * 4` (quinta 09h BRT), entrega `origin`.
+- Teste manual do watchdog: 5.000 product statuses lidos, 963 itens P1/P2, 708 produtos com destino reprovado, 0 writes liberados.
+- Completion audit atualizado: 7 `LK-AUTO`, 4 crons ativos, 3 entregas obrigatórias, 3 guards manuais, 0 n8n/writes/envios externos/compra/marketplace.
+- Artefatos: `/opt/data/scripts/lk_gmc_review_watchdog.py`, `areas/lk/rotinas/gmc-review-cron-reconciliation-2026-05-12.md`, `scripts/lk_phase8_completion_audit_20260511.py`, `reports/lk-phase8-completion-audit-2026-05-11.*`.
+
 ## 2026-05-11 — LK Phase 8 Completion Audit
 
-- Fase 8 consolidada com estado final dos 6 `LK-AUTO`, incluindo rollback, próximos gates e validação de que medium risk permanece manual.
-- Resultado: `phase8_complete_with_guardrails`, 8 checks, 0 fails, 0 warnings.
-- Estado final: 3 crons ativos (`LK-AUTO-001/002/003`), 2 entregas obrigatórias Daily/Weekly, 1 cron read-only de SEO/CRO preview, 3 guards manuais prontos (`LK-AUTO-004/005/006`).
-- Guardrails consolidados: 0 n8n, 0 production writes, 0 external sends/contacts, 0 purchases/POs, 0 external marketplace calls.
-- Artefatos: `scripts/lk_phase8_completion_audit_20260511.py`, `areas/lk/rotinas/phase8-completion-audit-2026-05-11.md`, `reports/lk-phase8-completion-audit-2026-05-11.md`, `.json` e `.csv`.
+- Fase 8 consolidada inicialmente com estado dos 6 `LK-AUTO`; supersedida em 2026-05-12 pela reconciliação do GMC Review (`LK-AUTO-007`).
 
 ## 2026-05-11 — LK On-demand Sourcing Router Readiness Guard
 

@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-05-11T21:12:47.550611+00:00",
+  "generated_at": "2026-05-12T00:37:09.752806+00:00",
   "scope": "LK Merchant Center feed read-only router",
   "summary": {
     "merchant_center_id_present": true,
     "product_statuses_read": 5000,
-    "queue_items": 959,
-    "p1_items": 959,
+    "queue_items": 963,
+    "p1_items": 963,
     "p2_items": 0,
-    "products_with_item_issues": 959,
+    "products_with_item_issues": 963,
     "products_with_disapproved_destination": 708,
     "products_crossing_gsc_priority": 1,
-    "issue_groups": 18,
+    "issue_groups": 17,
     "writes_allowed_now": 0
   },
   "issue_groups": [
@@ -60,7 +60,7 @@
       "priority": "P1",
       "issue_codes": "missing_item_attribute_for_product_type",
       "disapproved_destinations": "no_disapproved_destination",
-      "count": 166,
+      "count": 167,
       "sample_product_ids": [
         "online:pt:BR:17132474926828267951",
         "online:pt:BR:12020378807434295587",
@@ -85,21 +85,21 @@
       "priority": "P1",
       "issue_codes": "price_updated",
       "disapproved_destinations": "no_disapproved_destination",
-      "count": 40,
+      "count": 42,
       "sample_product_ids": [
-        "online:pt:BR:TB010061-713-5",
+        "online:pt:BR:TB010061-713-3",
         "online:pt:BR:TB010061-713-1",
+        "online:pt:BR:TB010061-713-4",
         "online:pt:BR:w6334r-8",
+        "online:pt:BR:w6334r-10",
         "online:pt:BR:ID2529-3",
         "online:pt:BR:01424-002-2",
-        "online:pt:BR:CJ5378700-36",
-        "online:pt:BR:FD8775100-41",
-        "online:pt:BR:FD8775100-2"
+        "online:pt:BR:CJ5378700-36"
       ],
       "sample_links": [
-        "https://lksneakers.com.br/products/bota-timberland-6-premium-waterproof-boot-wheat-bege?currency=BRL&country=BR&variant=47670408511710&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "https://lksneakers.com.br/products/bota-timberland-6-premium-waterproof-boot-wheat-bege?currency=BRL&country=BR&variant=47670408446174&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
         "https://lksneakers.com.br/products/bota-timberland-6-premium-waterproof-boot-wheat-bege?currency=BRL&country=BR&variant=47670408380638&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
-        "https://lksneakers.com.br/products/short-alo-yoga-match-point?currency=BRL&country=BR&variant=46492434530526&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e"
+        "https://lksneakers.com.br/products/bota-timberland-6-premium-waterproof-boot-wheat-bege?currency=BRL&country=BR&variant=47670408478942&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e"
       ],
       "recommended_action": "feed_issue_fix_preview",
       "approval_status": "read_only_preview",
@@ -131,16 +131,16 @@
       "priority": "P1",
       "issue_codes": "price_updated, strikethrough_price_updated",
       "disapproved_destinations": "no_disapproved_destination",
-      "count": 20,
+      "count": 22,
       "sample_product_ids": [
         "online:pt:BR:20048-2",
         "online:pt:BR:ST52-5",
         "online:pt:BR:JR7435-2",
         "online:pt:BR:JQ6445-1",
         "online:pt:BR:JQ6446-2",
+        "online:pt:BR:JR1402-4",
         "online:pt:BR:43774078387610",
-        "online:pt:BR:43774078387640",
-        "online:pt:BR:ID2534-1"
+        "online:pt:BR:43774078387640"
       ],
       "sample_links": [
         "https://lksneakers.com.br/products/jaqueta-aphase-dusty-stoned-beige-bege?currency=BRL&country=BR&variant=47007430475998&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
@@ -295,22 +295,6 @@
       "sample_links": [
         "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-preloved-green-verde?variant=44879483273438&country=BR",
         "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-preloved-green-verde?variant=44879483240670&country=BR"
-      ],
-      "recommended_action": "feed_issue_fix_preview",
-      "approval_status": "read_only_preview",
-      "write_allowed_now": false,
-      "source_label": "fact_merchant_center"
-    },
-    {
-      "priority": "P1",
-      "issue_codes": "image_link_internal_error, missing_item_attribute_for_product_type",
-      "disapproved_destinations": "no_disapproved_destination",
-      "count": 1,
-      "sample_product_ids": [
-        "online:pt:BR:16599698222138562820"
-      ],
-      "sample_links": [
-        "https://lksneakers.com.br/products/tenis-jordan-4-retro-toro-bravo-2026-vermelho-1"
       ],
       "recommended_action": "feed_issue_fix_preview",
       "approval_status": "read_only_preview",
@@ -7145,11 +7129,11 @@
     },
     {
       "issue": "price_updated",
-      "count": 180
+      "count": 192
     },
     {
       "issue": "strikethrough_price_updated",
-      "count": 81
+      "count": 87
     },
     {
       "issue": "checkout_url_invalid",
@@ -7181,10 +7165,6 @@
     },
     {
       "issue": "reserved_gtin",
-      "count": 1
-    },
-    {
-      "issue": "image_link_internal_error",
       "count": 1
     }
   ],

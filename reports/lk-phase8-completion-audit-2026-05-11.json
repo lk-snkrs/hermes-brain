@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-12T00:25:02.437682+00:00",
+  "generated_at": "2026-05-12T00:37:24.786325+00:00",
   "scope": "LK OS Phase 8 completion audit: safe-by-default automations final state",
   "completion_status": "phase8_complete_with_guardrails",
   "summary": {
-    "automations_tracked": 6,
-    "active_crons": 3,
-    "mandatory_deliveries": 2,
+    "automations_tracked": 7,
+    "active_crons": 4,
+    "mandatory_deliveries": 3,
     "readonly_preview_crons": 1,
     "manual_guards_ready": 3,
     "medium_risk_manual_only": 2,
-    "checks": 8,
+    "checks": 9,
     "fail_count": 0,
     "warn_count": 0,
     "n8n_flows_created": 0,
@@ -72,16 +72,26 @@
       "risk": "medium",
       "allowed_now": "decision queue/readiness only",
       "blocked": "marketplace calls/supplier contact/purchase/PO/write/full-sync"
+    },
+    {
+      "automation_id": "LK-AUTO-007",
+      "name": "GMC Review",
+      "final_status": "active mandatory weekly read-only report",
+      "job_id": "d4c26da4cd48",
+      "risk": "low",
+      "allowed_now": "read Merchant Center statuses and deliver internal/origin report",
+      "blocked": "Merchant/feed/Shopify/GSC writes, content publish, campaigns/sends"
     }
   ],
   "checks": [
     {
-      "name": "six_automations_tracked",
+      "name": "base_registry_six_plus_gmc_reconciled",
       "ok": true,
       "severity": "fail",
-      "detail": "Exactly 6 LK-AUTO entries must be tracked.",
+      "detail": "Historical Phase 8 registry had 6 entries before Lucas identified missing GMC Review; completion audit extends final state to 7.",
       "evidence": {
-        "count": 6
+        "historical_registry_count": 6,
+        "final_state_count": 7
       }
     },
     {
@@ -168,6 +178,24 @@
       }
     },
     {
+      "name": "gmc_review_readonly_report_ready",
+      "ok": true,
+      "severity": "fail",
+      "detail": "LK-AUTO-007 GMC Review must be read-only with no Merchant/feed/Shopify writes.",
+      "evidence": {
+        "merchant_center_id_present": true,
+        "product_statuses_read": 5000,
+        "queue_items": 963,
+        "p1_items": 963,
+        "p2_items": 0,
+        "products_with_item_issues": 963,
+        "products_with_disapproved_destination": 708,
+        "products_crossing_gsc_priority": 1,
+        "issue_groups": 17,
+        "writes_allowed_now": 0
+      }
+    },
+    {
       "name": "no_new_external_or_write_actions",
       "ok": true,
       "severity": "fail",
@@ -196,12 +224,14 @@
     "LK-AUTO-001": "pause/remove cron 7c688553e293",
     "LK-AUTO-002": "pause/remove cron 953b9055458e",
     "LK-AUTO-003": "pause/remove cron 15777e3416dc",
+    "LK-AUTO-007": "pause/remove cron d4c26da4cd48",
     "manual_artifacts": "revert PR or supersede report; no recurring job exists for LK-AUTO-004/005/006"
   },
   "next_gates": [
     "Monitor first Daily mandatory report delivery at 2026-05-12 08:00 BRT.",
     "Monitor first Weekly mandatory report delivery at 2026-05-18 09:00 BRT.",
     "Keep SEO/CRO as preview; write actions require explicit preview approval.",
+    "Monitor first GMC Review mandatory report delivery at 2026-05-14 09:00 BRT.",
     "Klaviyo remains no-send until Lucas explicitly approves a send/schedule packet.",
     "Sourcing remains per-item only; no marketplace lookup/contact/purchase without named approval."
   ]

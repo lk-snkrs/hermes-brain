@@ -1,6 +1,6 @@
 # LK Merchant Center Feed Read-only Router, 2026-05-11
 
-Generated at: `2026-05-11T21:12:47.550611+00:00`
+Generated at: `2026-05-12T00:37:09.752806+00:00`
 
 ## Veredito
 
@@ -10,10 +10,10 @@ Merchant Center entrou na Fase 6 como fonte `fact_merchant_center`: status de fe
 
 - Merchant Center ID presente no Doppler: True
 - Produtos/status lidos: 5000
-- Itens roteados na fila: 959
-- P1: 959
+- Itens roteados na fila: 963
+- P1: 963
 - P2: 0
-- Produtos com issue de item: 959
+- Produtos com issue de item: 963
 - Produtos com destino reprovado: 708
 - Produtos cruzando oportunidade GSC: 1
 - Writes liberados agora: 0
@@ -32,16 +32,16 @@ Merchant Center entrou na Fase 6 como fonte `fact_merchant_center`: status de fe
 - Amostras de produto: online:pt:BR:HV0823-100-5, online:pt:BR:BQ6472104-1, online:pt:BR:1201A789-020-41, online:pt:BR:1183C468200-2, online:pt:BR:DD0587-002-43
 - Status: `read_only_preview`
 
-### 3. P1 · feed_issue_fix_preview · 166 itens
+### 3. P1 · feed_issue_fix_preview · 167 itens
 - Issue codes: missing_item_attribute_for_product_type
 - Destinos reprovados: no_disapproved_destination
 - Amostras de produto: online:pt:BR:17132474926828267951, online:pt:BR:12020378807434295587, online:pt:BR:2635861299432826332, online:pt:BR:12136334699203773021, online:pt:BR:17912240090608697983
 - Status: `read_only_preview`
 
-### 4. P1 · feed_issue_fix_preview · 40 itens
+### 4. P1 · feed_issue_fix_preview · 42 itens
 - Issue codes: price_updated
 - Destinos reprovados: no_disapproved_destination
-- Amostras de produto: online:pt:BR:TB010061-713-5, online:pt:BR:TB010061-713-1, online:pt:BR:w6334r-8, online:pt:BR:ID2529-3, online:pt:BR:01424-002-2
+- Amostras de produto: online:pt:BR:TB010061-713-3, online:pt:BR:TB010061-713-1, online:pt:BR:TB010061-713-4, online:pt:BR:w6334r-8, online:pt:BR:w6334r-10
 - Status: `read_only_preview`
 
 ### 5. P1 · feed_issue_fix_preview · 33 itens
@@ -50,7 +50,7 @@ Merchant Center entrou na Fase 6 como fonte `fact_merchant_center`: status de fe
 - Amostras de produto: online:pt:BR:JI3185-7, online:pt:BR:HQ4309-610-40, online:pt:BR:U204L2SZ-36, online:pt:BR:U1906LNT-10, online:pt:BR:JH5439-8
 - Status: `read_only_preview`
 
-### 6. P1 · feed_issue_fix_preview · 20 itens
+### 6. P1 · feed_issue_fix_preview · 22 itens
 - Issue codes: price_updated, strikethrough_price_updated
 - Destinos reprovados: no_disapproved_destination
 - Amostras de produto: online:pt:BR:20048-2, online:pt:BR:ST52-5, online:pt:BR:JR7435-2, online:pt:BR:JQ6445-1, online:pt:BR:JQ6446-2
@@ -170,8 +170,8 @@ Merchant Center entrou na Fase 6 como fonte `fact_merchant_center`: status de fe
 
 - item_missing_required_attribute: 9655
 - missing_item_attribute_for_product_type: 2454
-- price_updated: 180
-- strikethrough_price_updated: 81
+- price_updated: 192
+- strikethrough_price_updated: 87
 - checkout_url_invalid: 36
 - restricted_gtin: 22
 - local_stores_lack_inventory: 10
@@ -180,7 +180,6 @@ Merchant Center entrou na Fase 6 como fonte `fact_merchant_center`: status de fe
 - condition_updated_from_detected: 2
 - sexual_interests_policy_violation: 1
 - reserved_gtin: 1
-- image_link_internal_error: 1
 
 ## Guardrails
 

@@ -5,3 +5,4 @@ LK-AUTO-003,SEO/CRO weekly loop,active read-only preview cron,15777e3416dc,low,g
 LK-AUTO-004,Approval Learning Ledger refresh,manual guard passed,,low,manual ledger refresh/validation,auto-approve/auto-execute/cron
 LK-AUTO-005,Klaviyo CRM draft watcher,"manual read-only readiness ready, no send",,medium,verify draft IDs/status via GET,send/schedule/flow/customer contact/deep link guessing
 LK-AUTO-006,On-demand sourcing router,"manual per-item readiness ready, no external action",,medium,decision queue/readiness only,marketplace calls/supplier contact/purchase/PO/write/full-sync
+LK-AUTO-007,GMC Review,active mandatory weekly read-only report,d4c26da4cd48,low,read Merchant Center statuses and deliver internal/origin report,"Merchant/feed/Shopify/GSC writes, content publish, campaigns/sends"
