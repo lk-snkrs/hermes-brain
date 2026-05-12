@@ -295,6 +295,7 @@ Entregáveis:
 - [x] Registry operacional reconciliado: `LK-AUTO-001/002/003` ativos como crons read-only/preview; `LK-AUTO-004` manual pós-ação; `LK-AUTO-005/006` medium risk manual-only/bloqueados.
 - [x] `LK-AUTO-004` guard manual pós-ação: `scripts/lk_approval_ledger_refresh_guard_20260511.py` regenera ledger, valida duplicidade/contradições e confirma 24 registros com 0 fails/warnings, sem criar cron/n8n/write.
 - [x] `LK-AUTO-005` Klaviyo CRM draft watcher manual/read-only: `scripts/lk_klaviyo_crm_draft_readiness_watcher_20260511.py` confirma draft por ID/nome, 10 checks, 0 fails/warnings, sem send/schedule/customer contact/PII/deep link chutado.
+- [x] `LK-AUTO-006` on-demand sourcing router guard manual/read-only: `scripts/lk_on_demand_sourcing_router_readiness_guard_20260511.py` valida 15 checks, 4 famílias prontas só após aprovação manual e 0 marketplace/fornecedor/compra/write/cron.
 
 Critério de saída:
 

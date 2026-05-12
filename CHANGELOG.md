@@ -1,3 +1,11 @@
+## 2026-05-11 — LK On-demand Sourcing Router Readiness Guard
+
+- Avançado `LK-AUTO-006` para guard manual/read-only por item: valida se a fila de sourcing está pronta para decisão Lucas/Júlio sem executar pesquisa externa, contato com fornecedor ou compra.
+- Resultado: `ready_for_per_item_lucas_julio_decision_no_external_action`, 15 checks, 0 fails, 0 warnings.
+- Snapshot: 8 linhas no router, 4 famílias prontas somente após aprovação manual, 1 opcional para bundle, 3 bloqueadas por dados; Fila A considera 40 linhas, quote preview tem 15 itens e qty referência 39, explicitamente não compra.
+- Guardrails: 0 Droper/StockX/GOAT/KicksDev calls, 0 fornecedor, 0 compra/PO/reserva, 0 Shopify/Tiny write, 0 alteração de preço/estoque, 0 cron/n8n.
+- Artefatos: `scripts/lk_on_demand_sourcing_router_readiness_guard_20260511.py`, `areas/lk/rotinas/on-demand-sourcing-router-readiness-guard-2026-05-11.md`, `reports/lk-on-demand-sourcing-router-readiness-guard-2026-05-11.md`, `.json` e `.csv`.
+
 ## 2026-05-11 — LK Klaviyo CRM Draft Readiness Watcher
 
 - Avançado `LK-AUTO-005` para watcher manual/read-only de readiness do rascunho Klaviyo Phase 5 P1, usando apenas GET por IDs verificados.
