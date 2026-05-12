@@ -313,7 +313,8 @@ Objetivo: consolidar crons, reports obrigatórios, aprovações, bloqueios e pr�
 Entregáveis:
 
 - [x] Snapshot v1 read-only com 4 crons ativos, 3 reports obrigatórios e 7 checks verdes.
-- [x] Ledger resumido: 24 registros, 8 executados verificados, 5 aguardando aprovação, 3 bloqueados por dados, 8 futuros.
+- [x] Ledger resumido: 24 registros, 8 executados verificados, 5 aguardando aprovação, 3 bloqueados por dados originalmente, 0 bloqueados restantes após autofix read-only, 8 futuros.
+- [x] `needs_data` autofix autônomo: `scripts/lk_needs_data_autofix_readonly_20260512.py` reconciliou os 3 bloqueios com Shopify/Tiny read-only; Onitsuka e Saint Studio foram movidos para monitor/estoque OK, Bearbrick para higiene interna de código; 0 writes/envios/contatos/compras/marketplace.
 - [x] Gates especiais visíveis: Klaviyo Draft sem envio, sourcing por aprovação manual e GMC queue P1.
 - [x] Guardrails consolidados: 0 write, 0 envio/contato externo, 0 compra/PO, 0 marketplace, 0 n8n.
 
@@ -328,7 +329,7 @@ Critério de saída:
 
 1. Manter campanha Klaviyo P1 em Draft até Lucas aprovar envio, ajuste ou pausa.
 2. Transformar GMC P1 em pacotes de correção feed/PDP preview-only.
-3. Preparar fila curta de decisão sourcing: 4 famílias aprováveis + 3 bloqueios de dados, sem pesquisa externa.
+3. Preparar fila curta de decisão sourcing: 4 famílias aprováveis; antigos `needs_data` já foram reconciliados read-only/local, sem pesquisa externa/fornecedor/compra.
 4. Evoluir Mission Control só com aprovação de escopo/cadência se virar UI, cron próprio ou worker Kanban.
 5. Substituir lead time padrão por lead time real por fonte/canal quando Lucas confirmar parâmetros Monbam/Droper/interno.
 

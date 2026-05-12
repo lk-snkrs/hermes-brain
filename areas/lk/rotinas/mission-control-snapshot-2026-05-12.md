@@ -1,6 +1,6 @@
 # LK Mission Control Snapshot, 2026-05-12
 
-Generated at: `2026-05-12T00:47:47.142082+00:00`
+Generated at: `2026-05-12T01:32:53.664147+00:00`
 
 ## Veredito
 
@@ -12,7 +12,8 @@ Mission Control v1 consolida crons ativos, relatórios obrigatórios, aprovaçõ
 
 - Crons ativos LK: 4
 - Reports obrigatórios: 3
-- Ledger: 24 registros, 8 executados verificados, 5 aguardando aprovação, 3 bloqueados por dados, 8 futuros
+- Ledger: 24 registros, 8 executados verificados, 5 aguardando aprovação, 0 bloqueados por dados após autofix, 8 futuros
+- Needs_data resolvidos: 2 para monitor/estoque OK, 1 para higiene interna de código
 - Klaviyo P1: Draft / sem envio
 - Sourcing: 4 famílias prontas só após aprovação manual
 - GMC: 963 itens P1/P2, 963 P1
@@ -57,23 +58,23 @@ Mission Control v1 consolida crons ativos, relatórios obrigatórios, aprovaçõ
 - Bloqueado: supplier_contact, purchase, purchase_order, reservation
 - Fonte: `reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json`
 
-### P1 · data_blocker · Onitsuka Tiger Mexico 66
-- Dono: Hermes/LK ops data cleanup
-- Próximo passo seguro: resolve_data_gap_readonly_before_approval
-- Bloqueado: supplier_contact_and_purchase, purchase, purchase_order, reservation
-- Fonte: `reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json`
+### P1 · internal_code_hygiene · Bearbrick Series 48
+- Dono: Hermes/LK data spine
+- Próximo passo seguro: Exact product was found with zero stock but Tiny codigo is blank; prepare internal code hygiene before external sourcing.
+- Bloqueado: external sourcing/contact/purchase still blocked; local/read-only hygiene allowed
+- Fonte: `reports/lk-needs-data-autofix-readonly-2026-05-12.json`
 
-### P1 · data_blocker · Camiseta Saint Studio Boxy
-- Dono: Hermes/LK ops data cleanup
-- Próximo passo seguro: resolve_data_gap_readonly_before_approval
-- Bloqueado: supplier_contact_and_purchase, purchase, purchase_order, reservation
-- Fonte: `reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json`
+### P1 · data_resolved_monitor · Onitsuka Tiger Mexico 66
+- Dono: Hermes/LK data spine
+- Próximo passo seguro: Shopify/Tiny SKU mapping is resolved and stock exists; no quote/sourcing needed now.
+- Bloqueado: external sourcing/contact/purchase still blocked; local/read-only hygiene allowed
+- Fonte: `reports/lk-needs-data-autofix-readonly-2026-05-12.json`
 
-### P1 · data_blocker · Bearbrick Series 48
-- Dono: Hermes/LK ops data cleanup
-- Próximo passo seguro: resolve_data_gap_readonly_before_approval
-- Bloqueado: supplier_contact_and_purchase, purchase, purchase_order, reservation
-- Fonte: `reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json`
+### P1 · data_resolved_monitor · Camiseta Saint Studio Boxy
+- Dono: Hermes/LK data spine
+- Próximo passo seguro: Exact product/size was found in Tiny and stock exists; Tiny codigo remains a hygiene issue but not a sourcing blocker.
+- Bloqueado: external sourcing/contact/purchase still blocked; local/read-only hygiene allowed
+- Fonte: `reports/lk-needs-data-autofix-readonly-2026-05-12.json`
 
 ## Gates especiais
 
@@ -84,14 +85,14 @@ Mission Control v1 consolida crons ativos, relatórios obrigatórios, aprovaçõ
 
 - Acompanhar primeira entrega Daily Sales Brief em 2026-05-12 08:00 BRT.
 - Manter Klaviyo P1 em Draft; só preparar pacote de envio se Lucas pedir explicitamente.
-- Preparar uma fila de decisão curta para sourcing: 4 famílias aprováveis + 3 bloqueios de dados, sem pesquisa externa.
+- Preparar uma fila de decisão curta para sourcing: 4 famílias aprováveis; os 3 antigos needs_data foram reconciliados em modo read-only/local.
 - Transformar GMC P1 em pacotes de correção de feed/PDP, preview-only.
 
 ## Checks
 
 - OK: `phase8_guardrails_green` — Fase 8 must be green before Mission Control v1.
 - OK: `mandatory_crons_count` — Expected 4 active LK crons and 3 mandatory deliveries after GMC reconciliation.
-- OK: `ledger_has_open_decisions` — Mission Control must expose 5 approvals and 3 data blockers.
+- OK: `ledger_has_open_decisions` — Mission Control must expose 5 approvals and zero remaining data blockers after autonomous needs_data autofix.
 - OK: `no_writes_or_external_actions` — Mission Control snapshot must remain read-only/no-external-action.
 - OK: `klaviyo_draft_safe` — Klaviyo must remain Draft/no-send.
 - OK: `sourcing_safe` — Sourcing must remain decision-only/no marketplace calls.

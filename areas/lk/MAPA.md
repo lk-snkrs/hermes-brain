@@ -43,7 +43,8 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `rotinas/on-demand-sourcing-router-readiness-guard-2026-05-11.md` — `LK-AUTO-006` guard manual/read-only por item: 15 checks, 0 fails/warnings, 4 famílias prontas só após aprovação manual, sem marketplace/fornecedor/compra/write/cron.
 - `rotinas/phase8-completion-audit-2026-05-11.md` — fechamento Fase 8 atualizado após reconciliação PRD: 7 `LK-AUTO` consolidados, 4 crons ativos, 3 reports obrigatórios, 3 guards manuais, 0 n8n/writes/envios externos/compra/marketplace.
 - `rotinas/gmc-review-cron-reconciliation-2026-05-12.md` — correção Lucas/PRD: ativado `LK-AUTO-007` GMC Review read-only quinta 09h BRT, cron `d4c26da4cd48`, sem Merchant/feed/Shopify/GSC writes.
-- `rotinas/mission-control-snapshot-2026-05-12.md` — Fase 9 Mission Control v1: visão executiva read-only com 4 crons, 3 reports obrigatórios, 24 ledger records, 5 aprovações, 3 bloqueios de dados, Klaviyo Draft, sourcing readiness e GMC queue.
+- `rotinas/mission-control-snapshot-2026-05-12.md` — Fase 9 Mission Control v1: visão executiva read-only com 4 crons, 3 reports obrigatórios, 24 ledger records, 5 aprovações, 0 bloqueios de dados após autofix, Klaviyo Draft, sourcing readiness e GMC queue.
+- `rotinas/needs-data-autofix-readonly-2026-05-12.md` — regra Lucas aplicada: lookup/reconciliação/correção local de `needs_data` pode ser autônoma em read-only; 3 itens checados, 0 bloqueios restantes, Onitsuka/Saint monitor, Bearbrick higiene interna, 0 writes/contatos/compras/marketplace.
 - `rotinas/full-sync.md` — sincronizações LK.
 - `rotinas/morning-briefing.md` — briefing matinal.
 - `rotinas/sync-log.md` — auditoria de syncs.

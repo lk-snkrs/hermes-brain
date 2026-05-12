@@ -20,6 +20,7 @@ LEDGER = ROOT / 'reports/lk-os-approval-learning-ledger-2026-05-11.json'
 KLAVIYO = ROOT / 'reports/lk-klaviyo-crm-draft-readiness-watcher-2026-05-11.json'
 SOURCING = ROOT / 'reports/lk-on-demand-sourcing-router-readiness-guard-2026-05-11.json'
 MERCHANT = ROOT / 'reports/lk-merchant-center-feed-readonly-router-2026-05-11.json'
+NEEDS_DATA_AUTOFIX = ROOT / 'reports/lk-needs-data-autofix-readonly-2026-05-12.json'
 OUT_JSON = ROOT / 'reports/lk-mission-control-snapshot-2026-05-12.json'
 OUT_MD = ROOT / 'reports/lk-mission-control-snapshot-2026-05-12.md'
 OUT_CSV = ROOT / 'reports/lk-mission-control-snapshot-2026-05-12.csv'
@@ -50,6 +51,7 @@ def build() -> dict[str, Any]:
     klaviyo = load(KLAVIYO)
     sourcing = load(SOURCING)
     merchant = load(MERCHANT)
+    needs_data_autofix = load(NEEDS_DATA_AUTOFIX) if NEEDS_DATA_AUTOFIX.exists() else {'summary': {}, 'results': []}
 
     records = ledger.get('records') or []
     status_counts = Counter(r.get('status') for r in records)
@@ -65,6 +67,12 @@ def build() -> dict[str, Any]:
     klaviyo_summary = klaviyo.get('summary') or {}
     phase8_summary = phase8.get('summary') or {}
 
+    needs_data_autofix_summary = needs_data_autofix.get('summary') or {}
+    needs_data_autofix_results = needs_data_autofix.get('results') or []
+    remaining_data_followup = needs_data_autofix_summary.get('keep_internal_data_followup', len(needs_data))
+    resolved_to_monitor = needs_data_autofix_summary.get('move_from_needs_data_to_monitor_or_stock_ok', 0)
+    internal_code_hygiene = needs_data_autofix_summary.get('internal_code_hygiene_then_decision', 0)
+
     checks: list[dict[str, Any]] = []
 
     def check(name: str, ok: bool, detail: str, evidence: dict[str, Any] | None = None, severity: str = 'fail') -> None:
@@ -72,7 +80,7 @@ def build() -> dict[str, Any]:
 
     check('phase8_guardrails_green', phase8.get('completion_status') == 'phase8_complete_with_guardrails' and phase8_summary.get('fail_count') == 0, 'Fase 8 must be green before Mission Control v1.', phase8_summary)
     check('mandatory_crons_count', phase8_summary.get('active_crons') == 4 and phase8_summary.get('mandatory_deliveries') == 3, 'Expected 4 active LK crons and 3 mandatory deliveries after GMC reconciliation.', phase8_summary)
-    check('ledger_has_open_decisions', status_counts.get('needs_approval', 0) == 5 and status_counts.get('needs_data', 0) == 3, 'Mission Control must expose 5 approvals and 3 data blockers.', dict(status_counts))
+    check('ledger_has_open_decisions', status_counts.get('needs_approval', 0) == 5 and len(needs_data) == 3 and remaining_data_followup == 0, 'Mission Control must expose 5 approvals and zero remaining data blockers after autonomous needs_data autofix.', {'ledger_counts': dict(status_counts), 'needs_data_autofix': needs_data_autofix_summary})
     check('no_writes_or_external_actions', all(phase8_summary.get(k, 0) == 0 for k in ['production_writes','external_sends_or_contacts','purchases_or_pos','external_marketplace_calls','n8n_flows_created']), 'Mission Control snapshot must remain read-only/no-external-action.', phase8_summary)
     check('klaviyo_draft_safe', klaviyo.get('readiness_status') == 'ready_for_lucas_review_no_send' and klaviyo_summary.get('campaign_sends') == 0 and klaviyo_summary.get('campaign_schedules') == 0, 'Klaviyo must remain Draft/no-send.', klaviyo_summary)
     check('sourcing_safe', sourcing.get('readiness_status') == 'ready_for_per_item_lucas_julio_decision_no_external_action' and sourcing_summary.get('external_marketplace_calls') == 0, 'Sourcing must remain decision-only/no marketplace calls.', sourcing_summary)
@@ -89,15 +97,16 @@ def build() -> dict[str, Any]:
             'blocked': ', '.join((r.get('blocked_actions') or [])[:4]),
             'source': r.get('source_artifact'),
         })
-    for r in needs_data[:3]:
+    for r in needs_data_autofix_results:
+        lane = 'data_resolved_monitor' if r.get('recommended_route') == 'move_from_needs_data_to_monitor_or_stock_ok' else 'internal_code_hygiene'
         open_items.append({
-            'lane': 'data_blocker',
-            'priority': 'P1',
-            'title': r.get('item_label'),
-            'owner': r.get('owner'),
-            'next_safe_action': r.get('allowed_next_action'),
-            'blocked': ', '.join((r.get('blocked_actions') or [])[:4]),
-            'source': r.get('source_artifact'),
+            'lane': lane,
+            'priority': r.get('priority') or 'P1',
+            'title': r.get('family') or r.get('product_title'),
+            'owner': 'Hermes/LK data spine',
+            'next_safe_action': r.get('reason'),
+            'blocked': 'external sourcing/contact/purchase still blocked; local/read-only hygiene allowed',
+            'source': 'reports/lk-needs-data-autofix-readonly-2026-05-12.json',
         })
 
     crm_gate = {
@@ -123,7 +132,7 @@ def build() -> dict[str, Any]:
     immediate_safe_next = [
         'Acompanhar primeira entrega Daily Sales Brief em 2026-05-12 08:00 BRT.',
         'Manter Klaviyo P1 em Draft; só preparar pacote de envio se Lucas pedir explicitamente.',
-        'Preparar uma fila de decisão curta para sourcing: 4 famílias aprováveis + 3 bloqueios de dados, sem pesquisa externa.',
+        'Preparar uma fila de decisão curta para sourcing: 4 famílias aprováveis; os 3 antigos needs_data foram reconciliados em modo read-only/local.',
         'Transformar GMC P1 em pacotes de correção de feed/PDP, preview-only.',
     ]
 
@@ -137,7 +146,10 @@ def build() -> dict[str, Any]:
             'ledger_records': len(records),
             'executed_verified': len(executed),
             'needs_approval': len(approvals),
-            'needs_data': len(needs_data),
+            'needs_data_original_ledger': len(needs_data),
+            'needs_data_remaining_after_autofix': remaining_data_followup,
+            'needs_data_resolved_to_monitor': resolved_to_monitor,
+            'needs_data_internal_code_hygiene': internal_code_hygiene,
             'pending_future': len(pending_future),
             'klaviyo_campaign_status': klaviyo_summary.get('campaign_status'),
             'sourcing_ready_after_manual_approval': sourcing_summary.get('ready_after_manual_approval_count'),
@@ -186,7 +198,8 @@ def write_outputs(payload: dict[str, Any]) -> None:
         '## Painel curto', '',
         f"- Crons ativos LK: {s['active_crons']}",
         f"- Reports obrigatórios: {s['mandatory_deliveries']}",
-        f"- Ledger: {s['ledger_records']} registros, {s['executed_verified']} executados verificados, {s['needs_approval']} aguardando aprovação, {s['needs_data']} bloqueados por dados, {s['pending_future']} futuros",
+        f"- Ledger: {s['ledger_records']} registros, {s['executed_verified']} executados verificados, {s['needs_approval']} aguardando aprovação, {s['needs_data_remaining_after_autofix']} bloqueados por dados após autofix, {s['pending_future']} futuros",
+        f"- Needs_data resolvidos: {s['needs_data_resolved_to_monitor']} para monitor/estoque OK, {s['needs_data_internal_code_hygiene']} para higiene interna de código",
         f"- Klaviyo P1: {s['klaviyo_campaign_status']} / sem envio",
         f"- Sourcing: {s['sourcing_ready_after_manual_approval']} famílias prontas só após aprovação manual",
         f"- GMC: {s['gmc_queue_items']} itens P1/P2, {s['gmc_p1_items']} P1",

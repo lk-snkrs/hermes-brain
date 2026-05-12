@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T00:47:47.142082+00:00",
+  "generated_at": "2026-05-12T01:32:53.664147+00:00",
   "scope": "LK OS Mission Control snapshot v1",
   "status": "mission_control_ready_readonly",
   "summary": {
@@ -8,7 +8,10 @@
     "ledger_records": 24,
     "executed_verified": 8,
     "needs_approval": 5,
-    "needs_data": 3,
+    "needs_data_original_ledger": 3,
+    "needs_data_remaining_after_autofix": 0,
+    "needs_data_resolved_to_monitor": 2,
+    "needs_data_internal_code_hygiene": 1,
     "pending_future": 8,
     "klaviyo_campaign_status": "Draft",
     "sourcing_ready_after_manual_approval": 4,
@@ -100,31 +103,31 @@
       "source": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
     },
     {
-      "lane": "data_blocker",
-      "priority": "P1",
-      "title": "Onitsuka Tiger Mexico 66",
-      "owner": "Hermes/LK ops data cleanup",
-      "next_safe_action": "resolve_data_gap_readonly_before_approval",
-      "blocked": "supplier_contact_and_purchase, purchase, purchase_order, reservation",
-      "source": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
-    },
-    {
-      "lane": "data_blocker",
-      "priority": "P1",
-      "title": "Camiseta Saint Studio Boxy",
-      "owner": "Hermes/LK ops data cleanup",
-      "next_safe_action": "resolve_data_gap_readonly_before_approval",
-      "blocked": "supplier_contact_and_purchase, purchase, purchase_order, reservation",
-      "source": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
-    },
-    {
-      "lane": "data_blocker",
+      "lane": "internal_code_hygiene",
       "priority": "P1",
       "title": "Bearbrick Series 48",
-      "owner": "Hermes/LK ops data cleanup",
-      "next_safe_action": "resolve_data_gap_readonly_before_approval",
-      "blocked": "supplier_contact_and_purchase, purchase, purchase_order, reservation",
-      "source": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
+      "owner": "Hermes/LK data spine",
+      "next_safe_action": "Exact product was found with zero stock but Tiny codigo is blank; prepare internal code hygiene before external sourcing.",
+      "blocked": "external sourcing/contact/purchase still blocked; local/read-only hygiene allowed",
+      "source": "reports/lk-needs-data-autofix-readonly-2026-05-12.json"
+    },
+    {
+      "lane": "data_resolved_monitor",
+      "priority": "P1",
+      "title": "Onitsuka Tiger Mexico 66",
+      "owner": "Hermes/LK data spine",
+      "next_safe_action": "Shopify/Tiny SKU mapping is resolved and stock exists; no quote/sourcing needed now.",
+      "blocked": "external sourcing/contact/purchase still blocked; local/read-only hygiene allowed",
+      "source": "reports/lk-needs-data-autofix-readonly-2026-05-12.json"
+    },
+    {
+      "lane": "data_resolved_monitor",
+      "priority": "P1",
+      "title": "Camiseta Saint Studio Boxy",
+      "owner": "Hermes/LK data spine",
+      "next_safe_action": "Exact product/size was found in Tiny and stock exists; Tiny codigo remains a hygiene issue but not a sourcing blocker.",
+      "blocked": "external sourcing/contact/purchase still blocked; local/read-only hygiene allowed",
+      "source": "reports/lk-needs-data-autofix-readonly-2026-05-12.json"
     }
   ],
   "crm_gate": {
@@ -149,7 +152,7 @@
   "safe_next_actions": [
     "Acompanhar primeira entrega Daily Sales Brief em 2026-05-12 08:00 BRT.",
     "Manter Klaviyo P1 em Draft; só preparar pacote de envio se Lucas pedir explicitamente.",
-    "Preparar uma fila de decisão curta para sourcing: 4 famílias aprováveis + 3 bloqueios de dados, sem pesquisa externa.",
+    "Preparar uma fila de decisão curta para sourcing: 4 famílias aprováveis; os 3 antigos needs_data foram reconciliados em modo read-only/local.",
     "Transformar GMC P1 em pacotes de correção de feed/PDP, preview-only."
   ],
   "status_counts": {
@@ -212,12 +215,37 @@
       "name": "ledger_has_open_decisions",
       "ok": true,
       "severity": "fail",
-      "detail": "Mission Control must expose 5 approvals and 3 data blockers.",
+      "detail": "Mission Control must expose 5 approvals and zero remaining data blockers after autonomous needs_data autofix.",
       "evidence": {
-        "needs_approval": 5,
-        "needs_data": 3,
-        "executed_verified": 8,
-        "pending_future": 8
+        "ledger_counts": {
+          "needs_approval": 5,
+          "needs_data": 3,
+          "executed_verified": 8,
+          "pending_future": 8
+        },
+        "needs_data_autofix": {
+          "items_checked": 3,
+          "resolution_counts": {
+            "resolved_out_of_stock_code_hygiene_needed": 1,
+            "resolved_in_stock_no_sourcing_needed": 1,
+            "resolved_product_stock_ok_tiny_code_missing": 1
+          },
+          "route_counts": {
+            "internal_code_hygiene_then_decision": 1,
+            "move_from_needs_data_to_monitor_or_stock_ok": 2
+          },
+          "can_leave_needs_data_after_refresh": 0,
+          "move_from_needs_data_to_monitor_or_stock_ok": 2,
+          "internal_code_hygiene_then_decision": 1,
+          "keep_internal_data_followup": 0,
+          "shopify_reads": 3,
+          "tiny_searches_and_detail_reads": 20,
+          "production_writes": 0,
+          "external_sends_or_contacts": 0,
+          "purchases_or_pos": 0,
+          "external_marketplace_calls": 0,
+          "n8n_flows_created": 0
+        }
       }
     },
     {
