@@ -1,3 +1,10 @@
+## 2026-05-12 — LK GMC Required Attributes Preview Read-only
+
+- Preparado `scripts/lk_gmc_required_attrs_preview_20260512.py` para converter issues P1 de atributos obrigatórios do Merchant em CSV local de correção, sem upload/write.
+- Resultado: 80 offer_ids únicos revisados, 80/80 matches Shopify, 80/80 prontos para preview de supplemental feed/feed rule; atributos faltantes: `age group`, `gender`, `size`.
+- Sugestões: `age_group` 79 adult / 1 kids; `gender` 70 unisex / 7 male / 3 female; `size` derivado de selected option/variant/SKU; confiança média por depender de regra merchandising.
+- Próximo passo exige aprovação antes de write: aplicar supplemental feed/feed rule mínimo e pedir recheck Merchant; 0 Merchant/feed/Shopify/GSC/checkout/theme writes, 0 envios/contatos/compras/marketplace/n8n.
+
 ## 2026-05-12 — LK GMC P0 URL/Checkout Review Read-only
 
 - Aberto o pacote P0 `P0_admin_url_checkout_landing_review` em evidências por SKU/offer_id com `scripts/lk_gmc_p0_url_checkout_review_20260512.py`.

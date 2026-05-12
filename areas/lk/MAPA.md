@@ -47,6 +47,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `rotinas/needs-data-autofix-readonly-2026-05-12.md` — regra Lucas aplicada: lookup/reconciliação/correção local de `needs_data` pode ser autônoma em read-only; 3 itens checados, 0 bloqueios restantes, Onitsuka/Saint monitor, Bearbrick higiene interna, 0 writes/contatos/compras/marketplace.
 - `rotinas/gmc-correction-preview-2026-05-12.md` — próximo bloco seguro GMC: 963 itens P1/P2 convertidos em 6 pacotes preview-only, 1 P0 URL/checkout/landing, 3 P1 atributos/GTIN/local inventory, 2 P2 monitor/outros, 0 Merchant/feed/Shopify/GSC writes.
 - `rotinas/gmc-p0-url-checkout-review-2026-05-12.md` — pacote P0 aberto em evidências SKU/URL: 32 offer_ids únicos, 32 matches Shopify, 32 PDPs HTTP 200; indício é Merchant checkout/account/atributos, não PDP morto, sem writes.
+- `rotinas/gmc-required-attrs-preview-2026-05-12.md` — preview local de correção P1 required attributes: 80 offer_ids, 80 matches Shopify, age_group/gender/size sugeridos, 80 linhas prontas para supplemental feed/feed rule mediante aprovação, sem writes.
 - `rotinas/full-sync.md` — sincronizações LK.
 - `rotinas/morning-briefing.md` — briefing matinal.
 - `rotinas/sync-log.md` — auditoria de syncs.

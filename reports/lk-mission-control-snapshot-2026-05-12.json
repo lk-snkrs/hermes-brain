@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T01:57:32.289457+00:00",
+  "generated_at": "2026-05-12T02:08:41.025746+00:00",
   "scope": "LK OS Mission Control snapshot v1",
   "status": "mission_control_ready_readonly",
   "summary": {
@@ -21,12 +21,14 @@
     "gmc_correction_p0_packages": 1,
     "gmc_p0_rows_reviewed": 32,
     "gmc_p0_pdp_http_200_rows": 32,
+    "gmc_required_attr_rows_reviewed": 80,
+    "gmc_required_attr_preview_rows": 80,
     "production_writes": 0,
     "external_sends_or_contacts": 0,
     "purchases_or_pos": 0,
     "external_marketplace_calls": 0,
     "n8n_flows_created": 0,
-    "checks": 9,
+    "checks": 10,
     "fail_count": 0,
     "warn_count": 0
   },
@@ -148,20 +150,22 @@
     "priority": "P1",
     "title": "GMC feed diagnostics",
     "status": "read_only_queue_ready",
-    "next_safe_action": "P0 URL/checkout opened: PDPs sampled are reachable; next safe step is Merchant automatic checkout/account diagnostics plus required-attribute mapping preview, not a Shopify URL write.",
+    "next_safe_action": "Required attributes preview ready locally: 80 offer_ids mapped with age_group/gender/size suggestions. Next safe step is Lucas-approved supplemental-feed/feed-rule write, not Shopify product mutation.",
     "blocked": "Merchant/feed/Shopify/GSC writes",
     "queue_items": 963,
     "p1_items": 963,
     "correction_packages": 6,
     "p0_packages": 1,
     "p0_rows_reviewed": 32,
-    "p0_pdp_http_200_rows": 32
+    "p0_pdp_http_200_rows": 32,
+    "required_attr_rows_reviewed": 80,
+    "required_attr_preview_rows": 80
   },
   "safe_next_actions": [
     "Acompanhar primeira entrega Daily Sales Brief em 2026-05-12 08:00 BRT.",
     "Manter Klaviyo P1 em Draft; só preparar pacote de envio se Lucas pedir explicitamente.",
     "Preparar uma fila de decisão curta para sourcing: 4 famílias aprováveis; os 3 antigos needs_data foram reconciliados em modo read-only/local.",
-    "GMC P0 URL/checkout: PDPs verificados retornaram HTTP 200; preparar preview de Merchant checkout/account diagnostics + required attributes, sem Shopify URL write."
+    "GMC required attributes: preview local pronto para 80 offer_ids; próximo passo com aprovação é aplicar supplemental feed/feed rule mínimo e pedir recheck Merchant."
   ],
   "status_counts": {
     "needs_approval": 5,
@@ -385,6 +389,41 @@
         },
         "http_counts": {
           "200": 32
+        },
+        "write_allowed_now": 0,
+        "production_writes": 0,
+        "external_sends_or_contacts": 0,
+        "purchases_or_pos": 0,
+        "external_marketplace_calls": 0,
+        "n8n_flows_created": 0
+      }
+    },
+    {
+      "name": "gmc_required_attrs_preview_safe",
+      "ok": true,
+      "severity": "warn",
+      "detail": "GMC required-attributes preview must propose local corrections without writes.",
+      "evidence": {
+        "required_attr_rows_reviewed": 80,
+        "shopify_matched_rows": 80,
+        "supplemental_feed_preview_rows": 80,
+        "manual_review_rows": 0,
+        "confidence_counts": {
+          "medium": 80
+        },
+        "missing_attribute_counts": {
+          "age group": 80,
+          "gender": 80,
+          "size": 80
+        },
+        "suggested_age_group_counts": {
+          "adult": 79,
+          "kids": 1
+        },
+        "suggested_gender_counts": {
+          "male": 7,
+          "unisex": 70,
+          "female": 3
         },
         "write_allowed_now": 0,
         "production_writes": 0,
