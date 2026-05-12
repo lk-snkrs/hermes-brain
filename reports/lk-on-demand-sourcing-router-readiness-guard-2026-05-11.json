@@ -1,0 +1,310 @@
+{
+  "generated_at": "2026-05-12T00:14:49.618296+00:00",
+  "automation_id": "LK-AUTO-006",
+  "name": "On-demand sourcing router",
+  "mode": "manual_readonly_per_item_readiness_guard",
+  "readiness_status": "ready_for_per_item_lucas_julio_decision_no_external_action",
+  "summary": {
+    "checks": 15,
+    "fail_count": 0,
+    "warn_count": 0,
+    "router_rows": 8,
+    "ready_after_manual_approval_count": 4,
+    "optional_bundle_count": 1,
+    "blocked_needs_data_count": 3,
+    "fila_a_rows_considered": 40,
+    "executive_top_count": 15,
+    "quote_records": 15,
+    "preview_quote_qty_total_not_purchase_qty": 39,
+    "external_marketplace_calls": 0,
+    "supplier_contacts": 0,
+    "purchases": 0,
+    "purchase_orders": 0,
+    "shopify_writes": 0,
+    "tiny_writes": 0,
+    "price_or_stock_changes": 0,
+    "crons_created": 0,
+    "n8n_flows_created": 0
+  },
+  "ready_families_after_manual_approval_only": [
+    {
+      "sourcing_request_id": "LK-SOURCING-20260504-20260510-01",
+      "family": "Nike Moon Shoe SP Jacquemus",
+      "approval_gate": "Lucas/Júlio approval required before external lookup/contact",
+      "future_sources_if_approved": [
+        "GOAT",
+        "Droper",
+        "StockX",
+        "KicksDev"
+      ],
+      "revenue_signal_fact_shopify": 48999.92
+    },
+    {
+      "sourcing_request_id": "LK-SOURCING-20260504-20260510-02",
+      "family": "New Balance 9060",
+      "approval_gate": "Lucas/Júlio approval required before external lookup/contact",
+      "future_sources_if_approved": [
+        "GOAT",
+        "Droper",
+        "StockX",
+        "KicksDev"
+      ],
+      "revenue_signal_fact_shopify": 18799.93
+    },
+    {
+      "sourcing_request_id": "LK-SOURCING-20260504-20260510-03",
+      "family": "Nike Mind 002",
+      "approval_gate": "Lucas/Júlio approval required before external lookup/contact",
+      "future_sources_if_approved": [
+        "GOAT",
+        "Droper",
+        "StockX",
+        "KicksDev"
+      ],
+      "revenue_signal_fact_shopify": 6399.98
+    },
+    {
+      "sourcing_request_id": "LK-SOURCING-20260504-20260510-04",
+      "family": "Comme des Garçons PLAY Polo",
+      "approval_gate": "Lucas/Júlio approval required before external lookup/contact",
+      "future_sources_if_approved": [
+        "GOAT",
+        "Droper",
+        "StockX",
+        "KicksDev"
+      ],
+      "revenue_signal_fact_shopify": 3599.98
+    }
+  ],
+  "top_quote_preview_not_purchase": [
+    {
+      "rank": 1,
+      "family": "Nike x Jacquemus Moon Shoe SP — Medium Brown",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+      "sku": "HV8547-200-38",
+      "variant": "38",
+      "priority": "P0 — ruptura com venda repetida",
+      "revenue_signal": 26999.95,
+      "quote_qty_preview_not_purchase_qty": 3,
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda."
+    },
+    {
+      "rank": 2,
+      "family": "Nike Air Jordan 4 Retro — Metallic Gold",
+      "name": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+      "sku": "AQ9129-170-7",
+      "variant": "40",
+      "priority": "P0 — ruptura com venda repetida",
+      "revenue_signal": 13399.96,
+      "quote_qty_preview_not_purchase_qty": 3,
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda."
+    },
+    {
+      "rank": 3,
+      "family": "Onitsuka Tiger Mexico 66 — White/Black",
+      "name": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "sku": "1183A201-126-3",
+      "variant": "36",
+      "priority": "P0 — ruptura com venda repetida",
+      "revenue_signal": 7199.97,
+      "quote_qty_preview_not_purchase_qty": 3,
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda."
+    },
+    {
+      "rank": 4,
+      "family": "Nike x Jacquemus Moon Shoe SP — Off Noir",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+      "sku": "HV8547-001-8",
+      "variant": "41",
+      "priority": "P0 — ruptura com venda repetida",
+      "revenue_signal": 11999.98,
+      "quote_qty_preview_not_purchase_qty": 2,
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda."
+    },
+    {
+      "rank": 5,
+      "family": "Nike x Jacquemus Moon Shoe SP — Off White",
+      "name": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "sku": "HV8547-002-39",
+      "variant": "39",
+      "priority": "P0 — ruptura com venda repetida",
+      "revenue_signal": 9999.98,
+      "quote_qty_preview_not_purchase_qty": 2,
+      "lead_time_gate": "Aprovar só se pronta-entrega/lead time <=7 dias; 8–15 dias exige decisão; >15 dias não recomendado sem pré-venda."
+    }
+  ],
+  "checks": [
+    {
+      "name": "router_read_only_flag",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Router payload must be explicitly read-only.",
+      "evidence": {
+        "read_only": true
+      }
+    },
+    {
+      "name": "router_rows_present",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Router must contain decision-scoped rows.",
+      "evidence": {
+        "rows": 8
+      }
+    },
+    {
+      "name": "external_sources_on_demand_only",
+      "ok": true,
+      "severity": "fail",
+      "detail": "External sources must be defined only as on-demand tools.",
+      "evidence": {
+        "sources": [
+          "GOAT",
+          "Droper",
+          "StockX",
+          "KicksDev"
+        ]
+      }
+    },
+    {
+      "name": "no_rows_eligible_for_external_lookup_now",
+      "ok": true,
+      "severity": "fail",
+      "detail": "No row may authorize immediate external marketplace lookup.",
+      "evidence": {
+        "eligible_true_count": 0
+      }
+    },
+    {
+      "name": "all_rows_block_forbidden_actions",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Every row must explicitly block contact/purchase/write/full-sync actions.",
+      "evidence": {
+        "forbidden": [
+          "external_marketplace_call",
+          "supplier_contact",
+          "purchase",
+          "purchase_order",
+          "reservation",
+          "shopify_write",
+          "tiny_write",
+          "price_or_stock_change",
+          "campaign_or_customer_send",
+          "cron_or_full_sync"
+        ]
+      }
+    },
+    {
+      "name": "source_labels_include_truth_sources",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Rows must label Shopify/Tiny source boundaries.",
+      "evidence": {
+        "required": [
+          "fact_shopify",
+          "fact_tiny_stock"
+        ]
+      }
+    },
+    {
+      "name": "size_normalization_required_for_external",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Rows with StockX/GOAT future sources must require US Men vs US Women size normalization.",
+      "evidence": {}
+    },
+    {
+      "name": "decision_scoped_no_full_sync",
+      "ok": true,
+      "severity": "fail",
+      "detail": "External price results, if approved later, must persist only decision-scoped summaries, not full-sync tables.",
+      "evidence": {}
+    },
+    {
+      "name": "fila_a_pending_excluded",
+      "ok": true,
+      "severity": "warn",
+      "detail": "Fila A should explicitly exclude stand-by residuals from sourcing.",
+      "evidence": {
+        "decision": "stand_by_pending_low_sales_manual_fix_later",
+        "count": 6,
+        "source": "reports/lk-p0-blocked-six-correction-queue-2026-05-11.json"
+      }
+    },
+    {
+      "name": "quote_preview_has_records",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Quote preview records must match summary top_items_validated.",
+      "evidence": {
+        "records": 15,
+        "top_items_validated": 15
+      }
+    },
+    {
+      "name": "quote_qty_not_purchase_qty",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Quote records must not imply purchase approval; optional rows may say cotar/monitorar only.",
+      "evidence": {}
+    },
+    {
+      "name": "supplier_fields_required_not_filled_as_truth",
+      "ok": true,
+      "severity": "warn",
+      "detail": "Supplier data must remain required/pending rather than invented.",
+      "evidence": {}
+    },
+    {
+      "name": "lead_time_gate_present",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Each quote preview record must carry a lead-time or pronta-entrega/remessa gate.",
+      "evidence": {}
+    },
+    {
+      "name": "cost_caps_not_real_margin",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Margins must be represented as cost ceilings, not actual margin claims.",
+      "evidence": {}
+    },
+    {
+      "name": "quote_guardrails_no_external_actions",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Source guardrails must explicitly prohibit supplier contact, purchases, and Shopify/Tiny writes.",
+      "evidence": {
+        "guardrails": [
+          "read-only/local docs",
+          "sem contato com fornecedor",
+          "sem compra/po",
+          "sem shopify/tiny write",
+          "sem alteração preço/estoque/campanha",
+          "preview interno/read-only",
+          "sem compra/po",
+          "sem contato fornecedor",
+          "sem shopify/tiny write",
+          "sem preço/estoque/campanha"
+        ]
+      }
+    }
+  ],
+  "guardrails": [
+    "No Droper/StockX/GOAT/KicksDev call executed by this guard.",
+    "No supplier contact executed.",
+    "No purchase, PO, reservation, or payment executed.",
+    "No Shopify/Tiny write executed.",
+    "No price, stock, product, campaign, or customer change executed.",
+    "No full-sync external price table created.",
+    "Quote quantity remains reference quantity, not purchase quantity.",
+    "Actual per-item external search requires explicit Lucas/Júlio approval naming the family/SKU/scope."
+  ],
+  "source_files": {
+    "router": "reports/lk-os-on-demand-sourcing-router-2026-05-04_2026-05-10.json",
+    "fila_a": "reports/lk-os-next-stage-fila-a-sourcing-preview-2026-05-11.json",
+    "quote_preview": "reports/lk-fila-a-sourcing-validation-and-quote-preview-2026-05-11.json"
+  },
+  "next_gate": "Choose one family/SKU for a separate on-demand external price search, or keep as internal decision queue. Any supplier contact/purchase remains separate approval."
+}
