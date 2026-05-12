@@ -1,3 +1,11 @@
+## 2026-05-12 — LK Mission Control Snapshot v1
+
+- Iniciada Fase 9 com uma visão executiva read-only do Projeto LK OS, sem UI nova, sem cron novo, sem n8n e sem ação externa.
+- Status: `mission_control_ready_readonly`, 7 checks, 0 fails, 0 warnings.
+- Painel curto: 4 crons ativos, 3 reports obrigatórios, 24 registros no ledger, 5 `needs_approval`, 3 `needs_data`, 8 `pending_future`, Klaviyo em Draft, 4 famílias de sourcing prontas só após aprovação manual e 963 itens GMC P1/P2.
+- Guardrails: 0 production writes, 0 envios/contatos externos, 0 compras/POs, 0 marketplace calls, 0 n8n.
+- Artefatos: `scripts/lk_mission_control_snapshot_20260512.py`, `areas/lk/rotinas/mission-control-snapshot-2026-05-12.md`, `reports/lk-mission-control-snapshot-2026-05-12.md`, `.json` e `.csv`.
+
 ## 2026-05-12 — LK GMC Review Cron Reconciliation
 
 - Lucas apontou corretamente que o PRD tinha cadência separada `Quinta 09h — GMC Review`; a Fase 8 anterior cobria SEO/CRO, mas não ativava o cron GMC dedicado.
