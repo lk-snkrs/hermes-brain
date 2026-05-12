@@ -1,6 +1,6 @@
 # LK Mission Control Snapshot, 2026-05-12
 
-Generated at: `2026-05-12T01:32:53.664147+00:00`
+Generated at: `2026-05-12T01:47:41.466156+00:00`
 
 ## Veredito
 
@@ -16,7 +16,7 @@ Mission Control v1 consolida crons ativos, relatórios obrigatórios, aprovaçõ
 - Needs_data resolvidos: 2 para monitor/estoque OK, 1 para higiene interna de código
 - Klaviyo P1: Draft / sem envio
 - Sourcing: 4 famílias prontas só após aprovação manual
-- GMC: 963 itens P1/P2, 963 P1
+- GMC: 963 itens P1/P2, 963 P1, 6 pacotes de correção preview-only (1 P0)
 - Writes/envios/contatos/compras/marketplace/n8n: 0/0/0/0/0
 
 ## Crons operacionais
@@ -79,14 +79,14 @@ Mission Control v1 consolida crons ativos, relatórios obrigatórios, aprovaçõ
 ## Gates especiais
 
 - CRM/Klaviyo: `ready_for_lucas_review_no_send`, campaign `01KRC1DPTY615GF5FNBPXMPKY6`, próximo seguro: Lucas review by verified list/template/campaign IDs; prepare send packet only if explicitly requested.
-- GMC/feed: 963 itens na fila, 963 P1, próximo seguro: review top feed issue groups; prepare Merchant/feed fix preview only after prioritization.
+- GMC/feed: 963 itens na fila, 963 P1, 6 pacotes preview-only, próximo seguro: review correction packages: P0 URL/checkout/landing, P1 required attributes, GTIN and local inventory; prepare exact write previews only after prioritization.
 
 ## Próximas ações seguras
 
 - Acompanhar primeira entrega Daily Sales Brief em 2026-05-12 08:00 BRT.
 - Manter Klaviyo P1 em Draft; só preparar pacote de envio se Lucas pedir explicitamente.
 - Preparar uma fila de decisão curta para sourcing: 4 famílias aprováveis; os 3 antigos needs_data foram reconciliados em modo read-only/local.
-- Transformar GMC P1 em pacotes de correção de feed/PDP, preview-only.
+- Transformar GMC P0/P1 em pacotes exatos por superfície: admin URL/checkout, atributos obrigatórios, GTIN e inventário local; preview-only antes de qualquer write.
 
 ## Checks
 
@@ -97,6 +97,7 @@ Mission Control v1 consolida crons ativos, relatórios obrigatórios, aprovaçõ
 - OK: `klaviyo_draft_safe` — Klaviyo must remain Draft/no-send.
 - OK: `sourcing_safe` — Sourcing must remain decision-only/no marketplace calls.
 - OK: `merchant_safe` — GMC must be read-only with product statuses available.
+- OK: `gmc_correction_preview_safe` — GMC correction preview must package issues without permitting writes.
 
 ## Não executado
 
