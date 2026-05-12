@@ -1,0 +1,7 @@
+automation_id,name,final_status,job_id,risk,allowed_now,blocked
+LK-AUTO-001,Daily Sales Brief,active mandatory daily report,7c688553e293,low,send mandatory internal/origin report only,writes/campaigns/customer sends/n8n
+LK-AUTO-002,Weekly CEO Review,active mandatory weekly report,953b9055458e,low,send mandatory internal/origin report only,writes/campaigns/customer sends/n8n
+LK-AUTO-003,SEO/CRO weekly loop,active read-only preview cron,15777e3416dc,low,generate preview/queue,Shopify/Merchant/GSC/theme writes without approval
+LK-AUTO-004,Approval Learning Ledger refresh,manual guard passed,,low,manual ledger refresh/validation,auto-approve/auto-execute/cron
+LK-AUTO-005,Klaviyo CRM draft watcher,"manual read-only readiness ready, no send",,medium,verify draft IDs/status via GET,send/schedule/flow/customer contact/deep link guessing
+LK-AUTO-006,On-demand sourcing router,"manual per-item readiness ready, no external action",,medium,decision queue/readiness only,marketplace calls/supplier contact/purchase/PO/write/full-sync
