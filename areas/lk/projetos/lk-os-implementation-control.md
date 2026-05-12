@@ -316,6 +316,7 @@ Entregáveis:
 - [x] Ledger resumido: 24 registros, 8 executados verificados, 5 aguardando aprovação, 3 bloqueados por dados originalmente, 0 bloqueados restantes após autofix read-only, 8 futuros.
 - [x] `needs_data` autofix autônomo: `scripts/lk_needs_data_autofix_readonly_20260512.py` reconciliou os 3 bloqueios com Shopify/Tiny read-only; Onitsuka e Saint Studio foram movidos para monitor/estoque OK, Bearbrick para higiene interna de código; 0 writes/envios/contatos/compras/marketplace.
 - [x] Gates especiais visíveis: Klaviyo Draft sem envio, sourcing por aprovação manual e GMC queue P1.
+- [x] GMC correction preview: `scripts/lk_gmc_correction_preview_20260512.py` converteu 963 itens P1/P2 em 6 pacotes preview-only, incluindo 1 P0 URL/checkout/landing e 3 P1 atributos/GTIN/inventory local; 0 Merchant/feed/Shopify/GSC writes.
 - [x] Guardrails consolidados: 0 write, 0 envio/contato externo, 0 compra/PO, 0 marketplace, 0 n8n.
 
 Artefato atual: `areas/lk/rotinas/mission-control-snapshot-2026-05-12.md` + `reports/lk-mission-control-snapshot-2026-05-12.md` + `scripts/lk_mission_control_snapshot_20260512.py`.
@@ -327,8 +328,8 @@ Critério de saída:
 
 ## Próxima sequência recomendada
 
-1. Manter campanha Klaviyo P1 em Draft até Lucas aprovar envio, ajuste ou pausa.
-2. Transformar GMC P1 em pacotes de correção feed/PDP preview-only.
+1. Abrir o pacote P0 do GMC: URL/checkout/landing review, ainda preview-only, antes de qualquer Merchant/feed/Shopify write.
+2. Manter campanha Klaviyo P1 em Draft até Lucas aprovar envio, ajuste ou pausa.
 3. Preparar fila curta de decisão sourcing: 4 famílias aprováveis; antigos `needs_data` já foram reconciliados read-only/local, sem pesquisa externa/fornecedor/compra.
 4. Evoluir Mission Control só com aprovação de escopo/cadência se virar UI, cron próprio ou worker Kanban.
 5. Substituir lead time padrão por lead time real por fonte/canal quando Lucas confirmar parâmetros Monbam/Droper/interno.

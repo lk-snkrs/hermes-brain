@@ -1,3 +1,10 @@
+## 2026-05-12 — LK GMC Correction Preview Read-only
+
+- Criado próximo bloco seguro do GMC: `scripts/lk_gmc_correction_preview_20260512.py`, convertendo a fila Merchant em pacotes de correção preview-only.
+- Resultado: 963 itens P1/P2 cobertos por 6 pacotes, com 1 pacote P0, 3 P1 e 2 P2; 708 itens com destino reprovado continuam sem write automático.
+- Pacotes: P0 URL/checkout/landing review; P1 atributos obrigatórios/feed mapping; P1 GTIN/identifier compliance; P1 local inventory review; P2 price sync monitor; P2 outros.
+- Mission Control atualizado para mostrar 6 pacotes GMC e 8 checks verdes; 0 Merchant/feed/Shopify/GSC writes, 0 envios/contatos/compras/marketplace/n8n.
+
 ## 2026-05-12 — LK needs_data Autofix Read-only
 
 - Lucas esclareceu que bloqueios `needs_data` podem ser buscados/corrigidos autonomamente quando forem lookup/reconciliação/correção local read-only; não exigem aprovação humana desde que não haja fornecedor, cliente, compra, marketplace ou write produtivo.
