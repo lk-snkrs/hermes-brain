@@ -48,6 +48,8 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `rotinas/gmc-correction-preview-2026-05-12.md` — próximo bloco seguro GMC: 963 itens P1/P2 convertidos em 6 pacotes preview-only, 1 P0 URL/checkout/landing, 3 P1 atributos/GTIN/local inventory, 2 P2 monitor/outros, 0 Merchant/feed/Shopify/GSC writes.
 - `rotinas/gmc-p0-url-checkout-review-2026-05-12.md` — pacote P0 aberto em evidências SKU/URL: 32 offer_ids únicos, 32 matches Shopify, 32 PDPs HTTP 200; indício é Merchant checkout/account/atributos, não PDP morto, sem writes.
 - `rotinas/gmc-required-attrs-preview-2026-05-12.md` — preview local de correção P1 required attributes: 80 offer_ids, 80 matches Shopify, age_group/gender/size sugeridos, 80 linhas prontas para supplemental feed/feed rule mediante aprovação, sem writes.
+- `rotinas/gmc-required-attrs-apply-2026-05-12.md` + `gmc-required-attrs-verify-2026-05-12.md` — correção aprovada aplicada no supplemental feed existente: 80 offer_ids atualizados com age_group/gender/size, fetchNow acionado, 80/80 produtos verificados no Content API, rollback salvo.
+- `rotinas/gmc-required-attrs-datafeed-refresh-2026-05-12.md` — datafeed apontado para raw URL revisionado por cache do raw revisionless; fetchNow acionado, rollback JSON salvo.
 - `rotinas/full-sync.md` — sincronizações LK.
 - `rotinas/morning-briefing.md` — briefing matinal.
 - `rotinas/sync-log.md` — auditoria de syncs.

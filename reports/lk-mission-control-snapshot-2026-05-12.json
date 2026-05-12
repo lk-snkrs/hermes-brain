@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-12T02:08:41.025746+00:00",
+  "generated_at": "2026-05-12T02:28:18.652021+00:00",
   "scope": "LK OS Mission Control snapshot v1",
-  "status": "mission_control_ready_readonly",
+  "status": "mission_control_active_approved_gmc_write",
   "summary": {
     "active_crons": 4,
     "mandatory_deliveries": 3,
@@ -15,20 +15,23 @@
     "pending_future": 8,
     "klaviyo_campaign_status": "Draft",
     "sourcing_ready_after_manual_approval": 4,
-    "gmc_queue_items": 963,
-    "gmc_p1_items": 963,
+    "gmc_queue_items": 977,
+    "gmc_p1_items": 977,
     "gmc_correction_packages": 6,
     "gmc_correction_p0_packages": 1,
     "gmc_p0_rows_reviewed": 32,
     "gmc_p0_pdp_http_200_rows": 32,
     "gmc_required_attr_rows_reviewed": 80,
     "gmc_required_attr_preview_rows": 80,
-    "production_writes": 0,
+    "gmc_required_attr_rows_applied": 80,
+    "gmc_required_attr_rows_verified": 80,
+    "gmc_required_attr_rows_not_matching": 0,
+    "production_writes": 2,
     "external_sends_or_contacts": 0,
     "purchases_or_pos": 0,
     "external_marketplace_calls": 0,
     "n8n_flows_created": 0,
-    "checks": 10,
+    "checks": 12,
     "fail_count": 0,
     "warn_count": 0
   },
@@ -149,23 +152,25 @@
     "lane": "google_feed",
     "priority": "P1",
     "title": "GMC feed diagnostics",
-    "status": "read_only_queue_ready",
-    "next_safe_action": "Required attributes preview ready locally: 80 offer_ids mapped with age_group/gender/size suggestions. Next safe step is Lucas-approved supplemental-feed/feed-rule write, not Shopify product mutation.",
-    "blocked": "Merchant/feed/Shopify/GSC writes",
-    "queue_items": 963,
-    "p1_items": 963,
+    "status": "required_attrs_applied_verified_processing_status_lag",
+    "next_safe_action": "80 required-attribute rows applied and verified in Content API product resources; monitor Merchant item diagnostics until status issues clear after reprocessing.",
+    "blocked": "Further Merchant/feed/Shopify/GSC writes without new preview/approval",
+    "queue_items": 977,
+    "p1_items": 977,
     "correction_packages": 6,
     "p0_packages": 1,
     "p0_rows_reviewed": 32,
     "p0_pdp_http_200_rows": 32,
     "required_attr_rows_reviewed": 80,
-    "required_attr_preview_rows": 80
+    "required_attr_preview_rows": 80,
+    "required_attr_rows_applied": 80,
+    "required_attr_rows_verified": 80
   },
   "safe_next_actions": [
     "Acompanhar primeira entrega Daily Sales Brief em 2026-05-12 08:00 BRT.",
     "Manter Klaviyo P1 em Draft; só preparar pacote de envio se Lucas pedir explicitamente.",
     "Preparar uma fila de decisão curta para sourcing: 4 famílias aprováveis; os 3 antigos needs_data foram reconciliados em modo read-only/local.",
-    "GMC required attributes: preview local pronto para 80 offer_ids; próximo passo com aprovação é aplicar supplemental feed/feed rule mínimo e pedir recheck Merchant."
+    "GMC required attributes: 80 offer_ids aplicados no supplemental feed e verificados no Content API; monitorar reprocessamento de diagnostics do Merchant até limpar item issues."
   ],
   "status_counts": {
     "needs_approval": 5,
@@ -261,25 +266,65 @@
       }
     },
     {
-      "name": "no_writes_or_external_actions",
+      "name": "no_unapproved_external_actions",
       "ok": true,
       "severity": "fail",
-      "detail": "Mission Control snapshot must remain read-only/no-external-action.",
+      "detail": "Mission Control may include the explicitly approved GMC supplemental feed write, but no unapproved sends/contacts/purchases/marketplace/n8n.",
       "evidence": {
-        "automations_tracked": 7,
-        "active_crons": 4,
-        "mandatory_deliveries": 3,
-        "readonly_preview_crons": 1,
-        "manual_guards_ready": 3,
-        "medium_risk_manual_only": 2,
-        "checks": 9,
-        "fail_count": 0,
-        "warn_count": 0,
-        "n8n_flows_created": 0,
-        "production_writes": 0,
-        "external_sends_or_contacts": 0,
-        "purchases_or_pos": 0,
-        "external_marketplace_calls": 0
+        "phase8": {
+          "automations_tracked": 7,
+          "active_crons": 4,
+          "mandatory_deliveries": 3,
+          "readonly_preview_crons": 1,
+          "manual_guards_ready": 3,
+          "medium_risk_manual_only": 2,
+          "checks": 9,
+          "fail_count": 0,
+          "warn_count": 0,
+          "n8n_flows_created": 0,
+          "production_writes": 0,
+          "external_sends_or_contacts": 0,
+          "purchases_or_pos": 0,
+          "external_marketplace_calls": 0
+        },
+        "gmc_apply": {
+          "existing_rows_before": 3613,
+          "rows_after": 3613,
+          "approved_required_attr_rows": 80,
+          "rows_created": 0,
+          "rows_updated_or_completed": 80,
+          "rows_already_matching": 0,
+          "columns_after": [
+            "id",
+            "color",
+            "age_group",
+            "gender",
+            "size"
+          ],
+          "age_group_counts_applied": {
+            "adult": 79,
+            "kids": 1
+          },
+          "gender_counts_applied": {
+            "male": 7,
+            "unisex": 70,
+            "female": 3
+          },
+          "gist_patch_verified_by_api_content": true,
+          "merchant_fetch_now_called": true,
+          "merchant_fetch_now_response_keys": [
+            "kind"
+          ],
+          "production_writes": 1,
+          "merchant_feed_write": 1,
+          "shopify_writes": 0,
+          "gsc_writes": 0,
+          "campaign_sends": 0,
+          "external_contacts": 0,
+          "purchases_or_pos": 0,
+          "marketplace_calls": 0,
+          "n8n_flows_created": 0
+        }
       }
     },
     {
@@ -340,11 +385,11 @@
       "evidence": {
         "merchant_center_id_present": true,
         "product_statuses_read": 5000,
-        "queue_items": 963,
-        "p1_items": 963,
+        "queue_items": 977,
+        "p1_items": 977,
         "p2_items": 0,
-        "products_with_item_issues": 963,
-        "products_with_disapproved_destination": 708,
+        "products_with_item_issues": 977,
+        "products_with_disapproved_destination": 726,
         "products_crossing_gsc_priority": 1,
         "issue_groups": 17,
         "writes_allowed_now": 0
@@ -432,13 +477,70 @@
         "external_marketplace_calls": 0,
         "n8n_flows_created": 0
       }
+    },
+    {
+      "name": "gmc_required_attrs_applied",
+      "ok": true,
+      "severity": "warn",
+      "detail": "Approved required-attributes correction must be applied through supplemental feed, not Shopify mutation.",
+      "evidence": {
+        "existing_rows_before": 3613,
+        "rows_after": 3613,
+        "approved_required_attr_rows": 80,
+        "rows_created": 0,
+        "rows_updated_or_completed": 80,
+        "rows_already_matching": 0,
+        "columns_after": [
+          "id",
+          "color",
+          "age_group",
+          "gender",
+          "size"
+        ],
+        "age_group_counts_applied": {
+          "adult": 79,
+          "kids": 1
+        },
+        "gender_counts_applied": {
+          "male": 7,
+          "unisex": 70,
+          "female": 3
+        },
+        "gist_patch_verified_by_api_content": true,
+        "merchant_fetch_now_called": true,
+        "merchant_fetch_now_response_keys": [
+          "kind"
+        ],
+        "production_writes": 1,
+        "merchant_feed_write": 1,
+        "shopify_writes": 0,
+        "gsc_writes": 0,
+        "campaign_sends": 0,
+        "external_contacts": 0,
+        "purchases_or_pos": 0,
+        "marketplace_calls": 0,
+        "n8n_flows_created": 0
+      }
+    },
+    {
+      "name": "gmc_required_attrs_verified",
+      "ok": true,
+      "severity": "warn",
+      "detail": "Content API products must show the 80 applied ageGroup/gender/size attributes.",
+      "evidence": {
+        "rows_verified": 80,
+        "rows_matching_applied_attrs": 80,
+        "rows_not_matching": 0,
+        "content_api_product_writes": 0,
+        "merchant_status_recheck_note": "Product resources show applied attributes; item issue/status clearance may lag until Merchant reprocesses diagnostics."
+      }
     }
   ],
   "not_performed": [
     "shopify_write",
     "tiny_write",
     "klaviyo_send_or_schedule",
-    "merchant_feed_write",
+    "additional_merchant_feed_write_without_new_preview",
     "gsc_admin_or_indexing_submit",
     "supplier_contact",
     "marketplace_lookup",

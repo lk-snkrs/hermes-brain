@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-05-12T02:20:41.792087+00:00",
+  "scope": "LK GMC required attrs datafeed fetch URL refresh",
+  "status": "gmc_required_attrs_revision_fetch_triggered",
+  "summary": {
+    "gist_revision_raw_url_detected": true,
+    "gist_content_has_required_headers": true,
+    "previous_fetch_url": "https://gist.githubusercontent.com/lk-snkrs/8eb7f7fb61a46fa8d5a4d64fa7f21b2f/raw/lk_sneakers_gmc_color_feed.csv",
+    "new_fetch_url": "https://gist.githubusercontent.com/lk-snkrs/8eb7f7fb61a46fa8d5a4d64fa7f21b2f/raw/372ff956de43b5567cf8e614e126a7ac9b3dea55/lk_sneakers_gmc_color_feed.csv",
+    "datafeed_fetch_url_updated": true,
+    "merchant_fetch_now_called": true,
+    "merchant_fetch_now_response_keys": [
+      "kind"
+    ],
+    "production_writes": 1,
+    "merchant_datafeed_config_write": 1,
+    "shopify_writes": 0,
+    "gsc_writes": 0,
+    "campaign_sends": 0,
+    "external_contacts": 0,
+    "purchases_or_pos": 0,
+    "marketplace_calls": 0,
+    "n8n_flows_created": 0
+  },
+  "rollback": {
+    "datafeed_backup_json": "reports/lk-gmc-datafeed-before-required-attrs-refresh-2026-05-12.json",
+    "rollback_instruction": "PUT the saved datafeed JSON back to Content API datafeeds/{id}, then trigger fetchNow."
+  },
+  "datafeed_after": {
+    "id": "407508563",
+    "name": "LK Sneakers - Color Supplemental Feed",
+    "fileName": "lk_sneakers_gmc_color_feed.csv",
+    "fetchSchedule": {
+      "paused": false,
+      "weekday": "monday",
+      "hour": 3,
+      "timeZone": "America/Sao_Paulo",
+      "fetchUrl": "https://gist.githubusercontent.com/lk-snkrs/8eb7f7fb61a46fa8d5a4d64fa7f21b2f/raw/372ff956de43b5567cf8e614e126a7ac9b3dea55/lk_sneakers_gmc_color_feed.csv"
+    },
+    "targets": [
+      {
+        "country": "BR",
+        "feedLabel": "BR",
+        "targetCountries": [
+          "BR"
+        ],
+        "language": "pt",
+        "includedDestinations": [
+          "DisplayAds",
+          "SurfacesAcrossGoogle",
+          "Shopping"
+        ],
+        "excludedDestinations": [
+          "Shopping",
+          "LocalSurfacesAcrossGoogle"
+        ]
+      }
+    ],
+    "format": {
+      "quotingMode": "value quoting"
+    }
+  },
+  "fetch_now_response": {
+    "kind": "content#datafeedsFetchNowResponse"
+  },
+  "not_performed": [
+    "shopify_write",
+    "gsc_write",
+    "checkout_or_theme_write",
+    "campaign_send",
+    "supplier_or_customer_contact",
+    "purchase_or_po",
+    "external_marketplace_call",
+    "n8n_flow_creation"
+  ]
+}

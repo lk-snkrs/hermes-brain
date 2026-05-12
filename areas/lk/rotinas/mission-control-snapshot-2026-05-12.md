@@ -1,10 +1,10 @@
 # LK Mission Control Snapshot, 2026-05-12
 
-Generated at: `2026-05-12T02:08:41.025746+00:00`
+Generated at: `2026-05-12T02:28:18.652021+00:00`
 
 ## Veredito
 
-Status: `mission_control_ready_readonly`
+Status: `mission_control_active_approved_gmc_write`
 
 Mission Control v1 consolida crons ativos, relatórios obrigatórios, aprovações abertas, bloqueios de dados, Klaviyo Draft, sourcing readiness e GMC queue. É uma visão executiva read-only; não cria UI, não dispara campanha, não compra, não altera catálogo/feed e não cria n8n.
 
@@ -16,8 +16,8 @@ Mission Control v1 consolida crons ativos, relatórios obrigatórios, aprovaçõ
 - Needs_data resolvidos: 2 para monitor/estoque OK, 1 para higiene interna de código
 - Klaviyo P1: Draft / sem envio
 - Sourcing: 4 famílias prontas só após aprovação manual
-- GMC: 963 itens P1/P2, 963 P1, 6 pacotes preview-only; P0: 32 linhas / 32 PDPs HTTP 200; atributos: 80 revisados / 80 em preview local
-- Writes/envios/contatos/compras/marketplace/n8n: 0/0/0/0/0
+- GMC: 977 itens P1/P2, 977 P1, 6 pacotes preview-only; P0: 32 linhas / 32 PDPs HTTP 200; atributos: 80 revisados / 80 aplicados / 80 verificados
+- Writes/envios/contatos/compras/marketplace/n8n: 2/0/0/0/0
 
 ## Crons operacionais
 
@@ -79,34 +79,36 @@ Mission Control v1 consolida crons ativos, relatórios obrigatórios, aprovaçõ
 ## Gates especiais
 
 - CRM/Klaviyo: `ready_for_lucas_review_no_send`, campaign `01KRC1DPTY615GF5FNBPXMPKY6`, próximo seguro: Lucas review by verified list/template/campaign IDs; prepare send packet only if explicitly requested.
-- GMC/feed: 963 itens na fila, 963 P1, 6 pacotes preview-only, P0 aberto 32 linhas / 32 PDPs HTTP 200, atributos 80 revisados / 80 em preview, próximo seguro: Required attributes preview ready locally: 80 offer_ids mapped with age_group/gender/size suggestions. Next safe step is Lucas-approved supplemental-feed/feed-rule write, not Shopify product mutation.
+- GMC/feed: 977 itens na fila, 977 P1, 6 pacotes preview-only, P0 aberto 32 linhas / 32 PDPs HTTP 200, atributos 80 revisados / 80 aplicados / 80 verificados, próximo seguro: 80 required-attribute rows applied and verified in Content API product resources; monitor Merchant item diagnostics until status issues clear after reprocessing.
 
 ## Próximas ações seguras
 
 - Acompanhar primeira entrega Daily Sales Brief em 2026-05-12 08:00 BRT.
 - Manter Klaviyo P1 em Draft; só preparar pacote de envio se Lucas pedir explicitamente.
 - Preparar uma fila de decisão curta para sourcing: 4 famílias aprováveis; os 3 antigos needs_data foram reconciliados em modo read-only/local.
-- GMC required attributes: preview local pronto para 80 offer_ids; próximo passo com aprovação é aplicar supplemental feed/feed rule mínimo e pedir recheck Merchant.
+- GMC required attributes: 80 offer_ids aplicados no supplemental feed e verificados no Content API; monitorar reprocessamento de diagnostics do Merchant até limpar item issues.
 
 ## Checks
 
 - OK: `phase8_guardrails_green` — Fase 8 must be green before Mission Control v1.
 - OK: `mandatory_crons_count` — Expected 4 active LK crons and 3 mandatory deliveries after GMC reconciliation.
 - OK: `ledger_has_open_decisions` — Mission Control must expose 5 approvals and zero remaining data blockers after autonomous needs_data autofix.
-- OK: `no_writes_or_external_actions` — Mission Control snapshot must remain read-only/no-external-action.
+- OK: `no_unapproved_external_actions` — Mission Control may include the explicitly approved GMC supplemental feed write, but no unapproved sends/contacts/purchases/marketplace/n8n.
 - OK: `klaviyo_draft_safe` — Klaviyo must remain Draft/no-send.
 - OK: `sourcing_safe` — Sourcing must remain decision-only/no marketplace calls.
 - OK: `merchant_safe` — GMC must be read-only with product statuses available.
 - OK: `gmc_correction_preview_safe` — GMC correction preview must package issues without permitting writes.
 - OK: `gmc_p0_url_review_safe` — GMC P0 URL/checkout review must provide SKU/URL evidence without writes.
 - OK: `gmc_required_attrs_preview_safe` — GMC required-attributes preview must propose local corrections without writes.
+- OK: `gmc_required_attrs_applied` — Approved required-attributes correction must be applied through supplemental feed, not Shopify mutation.
+- OK: `gmc_required_attrs_verified` — Content API products must show the 80 applied ageGroup/gender/size attributes.
 
 ## Não executado
 
 - shopify_write
 - tiny_write
 - klaviyo_send_or_schedule
-- merchant_feed_write
+- additional_merchant_feed_write_without_new_preview
 - gsc_admin_or_indexing_submit
 - supplier_contact
 - marketplace_lookup

@@ -24,6 +24,9 @@ NEEDS_DATA_AUTOFIX = ROOT / 'reports/lk-needs-data-autofix-readonly-2026-05-12.j
 GMC_CORRECTION_PREVIEW = ROOT / 'reports/lk-gmc-correction-preview-2026-05-12.json'
 GMC_P0_URL_REVIEW = ROOT / 'reports/lk-gmc-p0-url-checkout-review-2026-05-12.json'
 GMC_REQUIRED_ATTRS_PREVIEW = ROOT / 'reports/lk-gmc-required-attrs-preview-2026-05-12.json'
+GMC_REQUIRED_ATTRS_APPLY = ROOT / 'reports/lk-gmc-required-attrs-apply-2026-05-12.json'
+GMC_REQUIRED_ATTRS_DATAFEED_REFRESH = ROOT / 'reports/lk-gmc-required-attrs-datafeed-refresh-2026-05-12.json'
+GMC_REQUIRED_ATTRS_VERIFY = ROOT / 'reports/lk-gmc-required-attrs-verify-2026-05-12.json'
 OUT_JSON = ROOT / 'reports/lk-mission-control-snapshot-2026-05-12.json'
 OUT_MD = ROOT / 'reports/lk-mission-control-snapshot-2026-05-12.md'
 OUT_CSV = ROOT / 'reports/lk-mission-control-snapshot-2026-05-12.csv'
@@ -58,6 +61,9 @@ def build() -> dict[str, Any]:
     gmc_correction_preview = load(GMC_CORRECTION_PREVIEW) if GMC_CORRECTION_PREVIEW.exists() else {'summary': {}, 'packages': []}
     gmc_p0_url_review = load(GMC_P0_URL_REVIEW) if GMC_P0_URL_REVIEW.exists() else {'summary': {}, 'results': []}
     gmc_required_attrs_preview = load(GMC_REQUIRED_ATTRS_PREVIEW) if GMC_REQUIRED_ATTRS_PREVIEW.exists() else {'summary': {}, 'results': []}
+    gmc_required_attrs_apply = load(GMC_REQUIRED_ATTRS_APPLY) if GMC_REQUIRED_ATTRS_APPLY.exists() else {'summary': {}}
+    gmc_required_attrs_datafeed_refresh = load(GMC_REQUIRED_ATTRS_DATAFEED_REFRESH) if GMC_REQUIRED_ATTRS_DATAFEED_REFRESH.exists() else {'summary': {}}
+    gmc_required_attrs_verify = load(GMC_REQUIRED_ATTRS_VERIFY) if GMC_REQUIRED_ATTRS_VERIFY.exists() else {'summary': {}, 'results': []}
 
     records = ledger.get('records') or []
     status_counts = Counter(r.get('status') for r in records)
@@ -73,6 +79,9 @@ def build() -> dict[str, Any]:
     gmc_preview_summary = gmc_correction_preview.get('summary') or {}
     gmc_p0_url_summary = gmc_p0_url_review.get('summary') or {}
     gmc_required_attrs_summary = gmc_required_attrs_preview.get('summary') or {}
+    gmc_required_attrs_apply_summary = gmc_required_attrs_apply.get('summary') or {}
+    gmc_required_attrs_datafeed_refresh_summary = gmc_required_attrs_datafeed_refresh.get('summary') or {}
+    gmc_required_attrs_verify_summary = gmc_required_attrs_verify.get('summary') or {}
     klaviyo_summary = klaviyo.get('summary') or {}
     phase8_summary = phase8.get('summary') or {}
 
@@ -90,13 +99,15 @@ def build() -> dict[str, Any]:
     check('phase8_guardrails_green', phase8.get('completion_status') == 'phase8_complete_with_guardrails' and phase8_summary.get('fail_count') == 0, 'Fase 8 must be green before Mission Control v1.', phase8_summary)
     check('mandatory_crons_count', phase8_summary.get('active_crons') == 4 and phase8_summary.get('mandatory_deliveries') == 3, 'Expected 4 active LK crons and 3 mandatory deliveries after GMC reconciliation.', phase8_summary)
     check('ledger_has_open_decisions', status_counts.get('needs_approval', 0) == 5 and len(needs_data) == 3 and remaining_data_followup == 0, 'Mission Control must expose 5 approvals and zero remaining data blockers after autonomous needs_data autofix.', {'ledger_counts': dict(status_counts), 'needs_data_autofix': needs_data_autofix_summary})
-    check('no_writes_or_external_actions', all(phase8_summary.get(k, 0) == 0 for k in ['production_writes','external_sends_or_contacts','purchases_or_pos','external_marketplace_calls','n8n_flows_created']), 'Mission Control snapshot must remain read-only/no-external-action.', phase8_summary)
+    check('no_unapproved_external_actions', all(phase8_summary.get(k, 0) == 0 for k in ['external_sends_or_contacts','purchases_or_pos','external_marketplace_calls','n8n_flows_created']) and gmc_required_attrs_apply_summary.get('production_writes', 0) in (0, 1), 'Mission Control may include the explicitly approved GMC supplemental feed write, but no unapproved sends/contacts/purchases/marketplace/n8n.', {'phase8': phase8_summary, 'gmc_apply': gmc_required_attrs_apply_summary})
     check('klaviyo_draft_safe', klaviyo.get('readiness_status') == 'ready_for_lucas_review_no_send' and klaviyo_summary.get('campaign_sends') == 0 and klaviyo_summary.get('campaign_schedules') == 0, 'Klaviyo must remain Draft/no-send.', klaviyo_summary)
     check('sourcing_safe', sourcing.get('readiness_status') == 'ready_for_per_item_lucas_julio_decision_no_external_action' and sourcing_summary.get('external_marketplace_calls') == 0, 'Sourcing must remain decision-only/no marketplace calls.', sourcing_summary)
     check('merchant_safe', merchant_summary.get('writes_allowed_now') == 0 and merchant_summary.get('product_statuses_read', 0) > 0, 'GMC must be read-only with product statuses available.', merchant_summary)
     check('gmc_correction_preview_safe', gmc_preview_summary.get('write_allowed_now', 0) == 0 and gmc_preview_summary.get('packages', 0) >= 1, 'GMC correction preview must package issues without permitting writes.', gmc_preview_summary, severity='warn')
     check('gmc_p0_url_review_safe', gmc_p0_url_summary.get('write_allowed_now', 0) == 0 and gmc_p0_url_summary.get('p0_rows_reviewed', 0) > 0, 'GMC P0 URL/checkout review must provide SKU/URL evidence without writes.', gmc_p0_url_summary, severity='warn')
     check('gmc_required_attrs_preview_safe', gmc_required_attrs_summary.get('write_allowed_now', 0) == 0 and gmc_required_attrs_summary.get('required_attr_rows_reviewed', 0) > 0, 'GMC required-attributes preview must propose local corrections without writes.', gmc_required_attrs_summary, severity='warn')
+    check('gmc_required_attrs_applied', gmc_required_attrs_apply_summary.get('merchant_feed_write', 0) == 1 and gmc_required_attrs_apply_summary.get('shopify_writes', 0) == 0, 'Approved required-attributes correction must be applied through supplemental feed, not Shopify mutation.', gmc_required_attrs_apply_summary, severity='warn')
+    check('gmc_required_attrs_verified', gmc_required_attrs_verify_summary.get('rows_matching_applied_attrs', 0) == 80 and gmc_required_attrs_verify_summary.get('rows_not_matching', 1) == 0, 'Content API products must show the 80 applied ageGroup/gender/size attributes.', gmc_required_attrs_verify_summary, severity='warn')
 
     open_items = []
     for r in approvals[:5]:
@@ -134,9 +145,9 @@ def build() -> dict[str, Any]:
         'lane': 'google_feed',
         'priority': 'P1',
         'title': 'GMC feed diagnostics',
-        'status': 'read_only_queue_ready',
-        'next_safe_action': 'Required attributes preview ready locally: 80 offer_ids mapped with age_group/gender/size suggestions. Next safe step is Lucas-approved supplemental-feed/feed-rule write, not Shopify product mutation.',
-        'blocked': 'Merchant/feed/Shopify/GSC writes',
+        'status': 'required_attrs_applied_verified_processing_status_lag',
+        'next_safe_action': '80 required-attribute rows applied and verified in Content API product resources; monitor Merchant item diagnostics until status issues clear after reprocessing.',
+        'blocked': 'Further Merchant/feed/Shopify/GSC writes without new preview/approval',
         'queue_items': merchant_summary.get('queue_items'),
         'p1_items': merchant_summary.get('p1_items'),
         'correction_packages': gmc_preview_summary.get('packages'),
@@ -145,19 +156,21 @@ def build() -> dict[str, Any]:
         'p0_pdp_http_200_rows': gmc_p0_url_summary.get('public_url_http_200_rows'),
         'required_attr_rows_reviewed': gmc_required_attrs_summary.get('required_attr_rows_reviewed'),
         'required_attr_preview_rows': gmc_required_attrs_summary.get('supplemental_feed_preview_rows'),
+        'required_attr_rows_applied': gmc_required_attrs_apply_summary.get('approved_required_attr_rows'),
+        'required_attr_rows_verified': gmc_required_attrs_verify_summary.get('rows_matching_applied_attrs'),
     }
 
     immediate_safe_next = [
         'Acompanhar primeira entrega Daily Sales Brief em 2026-05-12 08:00 BRT.',
         'Manter Klaviyo P1 em Draft; só preparar pacote de envio se Lucas pedir explicitamente.',
         'Preparar uma fila de decisão curta para sourcing: 4 famílias aprováveis; os 3 antigos needs_data foram reconciliados em modo read-only/local.',
-        'GMC required attributes: preview local pronto para 80 offer_ids; próximo passo com aprovação é aplicar supplemental feed/feed rule mínimo e pedir recheck Merchant.',
+        'GMC required attributes: 80 offer_ids aplicados no supplemental feed e verificados no Content API; monitorar reprocessamento de diagnostics do Merchant até limpar item issues.',
     ]
 
     payload = {
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'scope': 'LK OS Mission Control snapshot v1',
-        'status': 'mission_control_ready_readonly' if all(c['ok'] for c in checks if c['severity'] == 'fail') else 'blocked_needs_fix',
+        'status': 'mission_control_active_approved_gmc_write' if all(c['ok'] for c in checks if c['severity'] == 'fail') and gmc_required_attrs_apply_summary.get('production_writes', 0) else ('mission_control_ready_readonly' if all(c['ok'] for c in checks if c['severity'] == 'fail') else 'blocked_needs_fix'),
         'summary': {
             'active_crons': phase8_summary.get('active_crons'),
             'mandatory_deliveries': phase8_summary.get('mandatory_deliveries'),
@@ -179,7 +192,10 @@ def build() -> dict[str, Any]:
             'gmc_p0_pdp_http_200_rows': gmc_p0_url_summary.get('public_url_http_200_rows'),
             'gmc_required_attr_rows_reviewed': gmc_required_attrs_summary.get('required_attr_rows_reviewed'),
             'gmc_required_attr_preview_rows': gmc_required_attrs_summary.get('supplemental_feed_preview_rows'),
-            'production_writes': phase8_summary.get('production_writes'),
+            'gmc_required_attr_rows_applied': gmc_required_attrs_apply_summary.get('approved_required_attr_rows'),
+            'gmc_required_attr_rows_verified': gmc_required_attrs_verify_summary.get('rows_matching_applied_attrs'),
+            'gmc_required_attr_rows_not_matching': gmc_required_attrs_verify_summary.get('rows_not_matching'),
+            'production_writes': phase8_summary.get('production_writes') + gmc_required_attrs_apply_summary.get('production_writes', 0) + gmc_required_attrs_datafeed_refresh_summary.get('production_writes', 0),
             'external_sends_or_contacts': phase8_summary.get('external_sends_or_contacts'),
             'purchases_or_pos': phase8_summary.get('purchases_or_pos'),
             'external_marketplace_calls': phase8_summary.get('external_marketplace_calls'),
@@ -197,7 +213,7 @@ def build() -> dict[str, Any]:
         'risk_counts': dict(risk_counts),
         'checks': checks,
         'not_performed': [
-            'shopify_write', 'tiny_write', 'klaviyo_send_or_schedule', 'merchant_feed_write', 'gsc_admin_or_indexing_submit',
+            'shopify_write', 'tiny_write', 'klaviyo_send_or_schedule', 'additional_merchant_feed_write_without_new_preview', 'gsc_admin_or_indexing_submit',
             'supplier_contact', 'marketplace_lookup', 'purchase_order', 'customer_contact', 'n8n_flow_creation'
         ],
     }
@@ -226,7 +242,7 @@ def write_outputs(payload: dict[str, Any]) -> None:
         f"- Needs_data resolvidos: {s['needs_data_resolved_to_monitor']} para monitor/estoque OK, {s['needs_data_internal_code_hygiene']} para higiene interna de código",
         f"- Klaviyo P1: {s['klaviyo_campaign_status']} / sem envio",
         f"- Sourcing: {s['sourcing_ready_after_manual_approval']} famílias prontas só após aprovação manual",
-        f"- GMC: {s['gmc_queue_items']} itens P1/P2, {s['gmc_p1_items']} P1, {s['gmc_correction_packages']} pacotes preview-only; P0: {s['gmc_p0_rows_reviewed']} linhas / {s['gmc_p0_pdp_http_200_rows']} PDPs HTTP 200; atributos: {s['gmc_required_attr_rows_reviewed']} revisados / {s['gmc_required_attr_preview_rows']} em preview local",
+        f"- GMC: {s['gmc_queue_items']} itens P1/P2, {s['gmc_p1_items']} P1, {s['gmc_correction_packages']} pacotes preview-only; P0: {s['gmc_p0_rows_reviewed']} linhas / {s['gmc_p0_pdp_http_200_rows']} PDPs HTTP 200; atributos: {s['gmc_required_attr_rows_reviewed']} revisados / {s['gmc_required_attr_rows_applied']} aplicados / {s['gmc_required_attr_rows_verified']} verificados",
         f"- Writes/envios/contatos/compras/marketplace/n8n: {s['production_writes']}/{s['external_sends_or_contacts']}/{s['purchases_or_pos']}/{s['external_marketplace_calls']}/{s['n8n_flows_created']}", '',
         '## Crons operacionais', '',
     ]
@@ -245,7 +261,7 @@ def write_outputs(payload: dict[str, Any]) -> None:
     crm = payload['crm_gate']
     lines.extend([
         f"- CRM/Klaviyo: `{crm['status']}`, campaign `{crm['campaign_id']}`, próximo seguro: {crm['next_safe_action']}",
-        f"- GMC/feed: {payload['gmc_gate']['queue_items']} itens na fila, {payload['gmc_gate']['p1_items']} P1, {payload['gmc_gate'].get('correction_packages')} pacotes preview-only, P0 aberto {payload['gmc_gate'].get('p0_rows_reviewed')} linhas / {payload['gmc_gate'].get('p0_pdp_http_200_rows')} PDPs HTTP 200, atributos {payload['gmc_gate'].get('required_attr_rows_reviewed')} revisados / {payload['gmc_gate'].get('required_attr_preview_rows')} em preview, próximo seguro: {payload['gmc_gate']['next_safe_action']}", '',
+        f"- GMC/feed: {payload['gmc_gate']['queue_items']} itens na fila, {payload['gmc_gate']['p1_items']} P1, {payload['gmc_gate'].get('correction_packages')} pacotes preview-only, P0 aberto {payload['gmc_gate'].get('p0_rows_reviewed')} linhas / {payload['gmc_gate'].get('p0_pdp_http_200_rows')} PDPs HTTP 200, atributos {payload['gmc_gate'].get('required_attr_rows_reviewed')} revisados / {payload['gmc_gate'].get('required_attr_rows_applied')} aplicados / {payload['gmc_gate'].get('required_attr_rows_verified')} verificados, próximo seguro: {payload['gmc_gate']['next_safe_action']}", '',
         '## Próximas ações seguras', '',
     ])
     for a in payload['safe_next_actions']:
