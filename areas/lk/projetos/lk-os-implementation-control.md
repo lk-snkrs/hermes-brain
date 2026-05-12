@@ -304,13 +304,33 @@ Critério de saída:
 - Automação roda silenciosa quando OK e alerta só quando precisa.
 - Primeira ativação recorrente: `LK-AUTO-001` Daily 08:00 BRT e `LK-AUTO-002` Weekly segunda 09:00 BRT, ambos `no_agent`/entrega obrigatória; stdout com report = entrega ao Telegram/origin, rc não-zero = falha de watchdog. Correção Lucas: P0/P1 são rótulos de prioridade dentro do report, não condição para envio.
 
+### Fase 9 — Mission Control operacional
+
+Status: iniciado em 2026-05-12 como snapshot executivo read-only v1.
+
+Objetivo: consolidar crons, reports obrigatórios, aprovações, bloqueios e próximos passos em uma visão curta sem caçar reports.
+
+Entregáveis:
+
+- [x] Snapshot v1 read-only com 4 crons ativos, 3 reports obrigatórios e 7 checks verdes.
+- [x] Ledger resumido: 24 registros, 8 executados verificados, 5 aguardando aprovação, 3 bloqueados por dados, 8 futuros.
+- [x] Gates especiais visíveis: Klaviyo Draft sem envio, sourcing por aprovação manual e GMC queue P1.
+- [x] Guardrails consolidados: 0 write, 0 envio/contato externo, 0 compra/PO, 0 marketplace, 0 n8n.
+
+Artefato atual: `areas/lk/rotinas/mission-control-snapshot-2026-05-12.md` + `reports/lk-mission-control-snapshot-2026-05-12.md` + `scripts/lk_mission_control_snapshot_20260512.py`.
+
+Critério de saída:
+
+- Lucas consegue pedir `status Projeto LK OS` e receber uma visão curta com crons, decisões e bloqueios, sem depender de leitura manual de múltiplos reports.
+- Qualquer evolução para UI, cron recorrente próprio do Mission Control ou worker Kanban exige escopo/cadência aprovados.
+
 ## Próxima sequência recomendada
 
-1. Fechar Fase 0 com este plano mestre indexado.
-2. Criar uma visão curta de Mission Control do Projeto LK OS.
-3. Manter a campanha Klaviyo P1 em Draft até Lucas aprovar envio, ajuste ou pausa.
-4. Avançar o próximo bloco seguro: consolidar Fase 5 no PRD e preparar decisão P2/WhatsApp concierge ou Fase 1 data spine.
-5. Depois transformar os outputs em briefing semanal real.
+1. Manter campanha Klaviyo P1 em Draft até Lucas aprovar envio, ajuste ou pausa.
+2. Transformar GMC P1 em pacotes de correção feed/PDP preview-only.
+3. Preparar fila curta de decisão sourcing: 4 famílias aprováveis + 3 bloqueios de dados, sem pesquisa externa.
+4. Evoluir Mission Control só com aprovação de escopo/cadência se virar UI, cron próprio ou worker Kanban.
+5. Substituir lead time padrão por lead time real por fonte/canal quando Lucas confirmar parâmetros Monbam/Droper/interno.
 
 ## Todo-list imediata
 

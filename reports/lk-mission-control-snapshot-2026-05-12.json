@@ -1,0 +1,326 @@
+{
+  "generated_at": "2026-05-12T00:47:47.142082+00:00",
+  "scope": "LK OS Mission Control snapshot v1",
+  "status": "mission_control_ready_readonly",
+  "summary": {
+    "active_crons": 4,
+    "mandatory_deliveries": 3,
+    "ledger_records": 24,
+    "executed_verified": 8,
+    "needs_approval": 5,
+    "needs_data": 3,
+    "pending_future": 8,
+    "klaviyo_campaign_status": "Draft",
+    "sourcing_ready_after_manual_approval": 4,
+    "gmc_queue_items": 963,
+    "gmc_p1_items": 963,
+    "production_writes": 0,
+    "external_sends_or_contacts": 0,
+    "purchases_or_pos": 0,
+    "external_marketplace_calls": 0,
+    "n8n_flows_created": 0,
+    "checks": 7,
+    "fail_count": 0,
+    "warn_count": 0
+  },
+  "crons": [
+    {
+      "id": "7c688553e293",
+      "name": "Daily Sales Brief",
+      "cadence": "diário 08:00 BRT",
+      "mode": "mandatory_report",
+      "status": "active"
+    },
+    {
+      "id": "953b9055458e",
+      "name": "Weekly CEO Review",
+      "cadence": "segunda 09:00 BRT",
+      "mode": "mandatory_report",
+      "status": "active"
+    },
+    {
+      "id": "15777e3416dc",
+      "name": "SEO/CRO Weekly",
+      "cadence": "segunda 10:00 BRT",
+      "mode": "read_only_preview",
+      "status": "active"
+    },
+    {
+      "id": "d4c26da4cd48",
+      "name": "GMC Review",
+      "cadence": "quinta 09:00 BRT",
+      "mode": "mandatory_report",
+      "status": "active"
+    }
+  ],
+  "open_items": [
+    {
+      "lane": "approval_needed",
+      "priority": "P1",
+      "title": "Nike Moon Shoe SP Jacquemus",
+      "owner": "Lucas/Júlio",
+      "next_safe_action": "prepare_supplier_send_preview_with_named_destination",
+      "blocked": "supplier_contact, purchase, purchase_order, reservation",
+      "source": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
+    },
+    {
+      "lane": "approval_needed",
+      "priority": "P1",
+      "title": "New Balance 9060",
+      "owner": "Lucas/Júlio",
+      "next_safe_action": "prepare_supplier_send_preview_with_named_destination",
+      "blocked": "supplier_contact, purchase, purchase_order, reservation",
+      "source": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
+    },
+    {
+      "lane": "approval_needed",
+      "priority": "P1",
+      "title": "Nike Mind 002",
+      "owner": "Lucas/Júlio",
+      "next_safe_action": "prepare_supplier_send_preview_with_named_destination",
+      "blocked": "supplier_contact, purchase, purchase_order, reservation",
+      "source": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
+    },
+    {
+      "lane": "approval_needed",
+      "priority": "P1",
+      "title": "Comme des Garçons PLAY Polo",
+      "owner": "Lucas/Júlio",
+      "next_safe_action": "prepare_supplier_send_preview_with_named_destination",
+      "blocked": "supplier_contact, purchase, purchase_order, reservation",
+      "source": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
+    },
+    {
+      "lane": "approval_needed",
+      "priority": "P1",
+      "title": "New Balance 530",
+      "owner": "Lucas/Júlio",
+      "next_safe_action": "bundle_in_existing_p0_quote_preview_only",
+      "blocked": "supplier_contact, purchase, purchase_order, reservation",
+      "source": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
+    },
+    {
+      "lane": "data_blocker",
+      "priority": "P1",
+      "title": "Onitsuka Tiger Mexico 66",
+      "owner": "Hermes/LK ops data cleanup",
+      "next_safe_action": "resolve_data_gap_readonly_before_approval",
+      "blocked": "supplier_contact_and_purchase, purchase, purchase_order, reservation",
+      "source": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
+    },
+    {
+      "lane": "data_blocker",
+      "priority": "P1",
+      "title": "Camiseta Saint Studio Boxy",
+      "owner": "Hermes/LK ops data cleanup",
+      "next_safe_action": "resolve_data_gap_readonly_before_approval",
+      "blocked": "supplier_contact_and_purchase, purchase, purchase_order, reservation",
+      "source": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
+    },
+    {
+      "lane": "data_blocker",
+      "priority": "P1",
+      "title": "Bearbrick Series 48",
+      "owner": "Hermes/LK ops data cleanup",
+      "next_safe_action": "resolve_data_gap_readonly_before_approval",
+      "blocked": "supplier_contact_and_purchase, purchase, purchase_order, reservation",
+      "source": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
+    }
+  ],
+  "crm_gate": {
+    "lane": "crm_gate",
+    "priority": "P1",
+    "title": "Klaviyo P1 draft, loja física recompra",
+    "status": "ready_for_lucas_review_no_send",
+    "next_safe_action": "Lucas review by verified list/template/campaign IDs; prepare send packet only if explicitly requested.",
+    "blocked": "send, schedule, flow, customer contact",
+    "campaign_id": "01KRC1DPTY615GF5FNBPXMPKY6"
+  },
+  "gmc_gate": {
+    "lane": "google_feed",
+    "priority": "P1",
+    "title": "GMC feed diagnostics",
+    "status": "read_only_queue_ready",
+    "next_safe_action": "review top feed issue groups; prepare Merchant/feed fix preview only after prioritization.",
+    "blocked": "Merchant/feed/Shopify/GSC writes",
+    "queue_items": 963,
+    "p1_items": 963
+  },
+  "safe_next_actions": [
+    "Acompanhar primeira entrega Daily Sales Brief em 2026-05-12 08:00 BRT.",
+    "Manter Klaviyo P1 em Draft; só preparar pacote de envio se Lucas pedir explicitamente.",
+    "Preparar uma fila de decisão curta para sourcing: 4 famílias aprováveis + 3 bloqueios de dados, sem pesquisa externa.",
+    "Transformar GMC P1 em pacotes de correção de feed/PDP, preview-only."
+  ],
+  "status_counts": {
+    "needs_approval": 5,
+    "needs_data": 3,
+    "executed_verified": 8,
+    "pending_future": 8
+  },
+  "risk_counts": {
+    "external_supplier_lookup_or_contact": 8,
+    "shopify_seo_field_write_low_visible_risk": 8,
+    "visible_site_content_or_theme_change": 8
+  },
+  "checks": [
+    {
+      "name": "phase8_guardrails_green",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Fase 8 must be green before Mission Control v1.",
+      "evidence": {
+        "automations_tracked": 7,
+        "active_crons": 4,
+        "mandatory_deliveries": 3,
+        "readonly_preview_crons": 1,
+        "manual_guards_ready": 3,
+        "medium_risk_manual_only": 2,
+        "checks": 9,
+        "fail_count": 0,
+        "warn_count": 0,
+        "n8n_flows_created": 0,
+        "production_writes": 0,
+        "external_sends_or_contacts": 0,
+        "purchases_or_pos": 0,
+        "external_marketplace_calls": 0
+      }
+    },
+    {
+      "name": "mandatory_crons_count",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Expected 4 active LK crons and 3 mandatory deliveries after GMC reconciliation.",
+      "evidence": {
+        "automations_tracked": 7,
+        "active_crons": 4,
+        "mandatory_deliveries": 3,
+        "readonly_preview_crons": 1,
+        "manual_guards_ready": 3,
+        "medium_risk_manual_only": 2,
+        "checks": 9,
+        "fail_count": 0,
+        "warn_count": 0,
+        "n8n_flows_created": 0,
+        "production_writes": 0,
+        "external_sends_or_contacts": 0,
+        "purchases_or_pos": 0,
+        "external_marketplace_calls": 0
+      }
+    },
+    {
+      "name": "ledger_has_open_decisions",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Mission Control must expose 5 approvals and 3 data blockers.",
+      "evidence": {
+        "needs_approval": 5,
+        "needs_data": 3,
+        "executed_verified": 8,
+        "pending_future": 8
+      }
+    },
+    {
+      "name": "no_writes_or_external_actions",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Mission Control snapshot must remain read-only/no-external-action.",
+      "evidence": {
+        "automations_tracked": 7,
+        "active_crons": 4,
+        "mandatory_deliveries": 3,
+        "readonly_preview_crons": 1,
+        "manual_guards_ready": 3,
+        "medium_risk_manual_only": 2,
+        "checks": 9,
+        "fail_count": 0,
+        "warn_count": 0,
+        "n8n_flows_created": 0,
+        "production_writes": 0,
+        "external_sends_or_contacts": 0,
+        "purchases_or_pos": 0,
+        "external_marketplace_calls": 0
+      }
+    },
+    {
+      "name": "klaviyo_draft_safe",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Klaviyo must remain Draft/no-send.",
+      "evidence": {
+        "checks": 10,
+        "fail_count": 0,
+        "warn_count": 0,
+        "campaign_status": "Draft",
+        "campaign_scheduled_at": null,
+        "campaign_send_time": null,
+        "approved_profiles_submitted": 9,
+        "unique_emails_submitted": 9,
+        "crons_created": 0,
+        "n8n_flows_created": 0,
+        "campaign_sends": 0,
+        "campaign_schedules": 0,
+        "customer_contacts": 0,
+        "production_writes": 0
+      }
+    },
+    {
+      "name": "sourcing_safe",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Sourcing must remain decision-only/no marketplace calls.",
+      "evidence": {
+        "checks": 15,
+        "fail_count": 0,
+        "warn_count": 0,
+        "router_rows": 8,
+        "ready_after_manual_approval_count": 4,
+        "optional_bundle_count": 1,
+        "blocked_needs_data_count": 3,
+        "fila_a_rows_considered": 40,
+        "executive_top_count": 15,
+        "quote_records": 15,
+        "preview_quote_qty_total_not_purchase_qty": 39,
+        "external_marketplace_calls": 0,
+        "supplier_contacts": 0,
+        "purchases": 0,
+        "purchase_orders": 0,
+        "shopify_writes": 0,
+        "tiny_writes": 0,
+        "price_or_stock_changes": 0,
+        "crons_created": 0,
+        "n8n_flows_created": 0
+      }
+    },
+    {
+      "name": "merchant_safe",
+      "ok": true,
+      "severity": "fail",
+      "detail": "GMC must be read-only with product statuses available.",
+      "evidence": {
+        "merchant_center_id_present": true,
+        "product_statuses_read": 5000,
+        "queue_items": 963,
+        "p1_items": 963,
+        "p2_items": 0,
+        "products_with_item_issues": 963,
+        "products_with_disapproved_destination": 708,
+        "products_crossing_gsc_priority": 1,
+        "issue_groups": 17,
+        "writes_allowed_now": 0
+      }
+    }
+  ],
+  "not_performed": [
+    "shopify_write",
+    "tiny_write",
+    "klaviyo_send_or_schedule",
+    "merchant_feed_write",
+    "gsc_admin_or_indexing_submit",
+    "supplier_contact",
+    "marketplace_lookup",
+    "purchase_order",
+    "customer_contact",
+    "n8n_flow_creation"
+  ]
+}
