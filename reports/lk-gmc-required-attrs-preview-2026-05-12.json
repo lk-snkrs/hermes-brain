@@ -1,0 +1,4027 @@
+{
+  "generated_at": "2026-05-12T02:08:40.964250+00:00",
+  "scope": "LK GMC required attributes preview read-only",
+  "status": "gmc_required_attrs_preview_ready_readonly",
+  "summary": {
+    "required_attr_rows_reviewed": 80,
+    "shopify_matched_rows": 80,
+    "supplemental_feed_preview_rows": 80,
+    "manual_review_rows": 0,
+    "confidence_counts": {
+      "medium": 80
+    },
+    "missing_attribute_counts": {
+      "age group": 80,
+      "gender": 80,
+      "size": 80
+    },
+    "suggested_age_group_counts": {
+      "adult": 79,
+      "kids": 1
+    },
+    "suggested_gender_counts": {
+      "male": 7,
+      "unisex": 70,
+      "female": 3
+    },
+    "write_allowed_now": 0,
+    "production_writes": 0,
+    "external_sends_or_contacts": 0,
+    "purchases_or_pos": 0,
+    "external_marketplace_calls": 0,
+    "n8n_flows_created": 0
+  },
+  "results": [
+    {
+      "offer_id": "JI3185-7",
+      "product_id": "online:pt:BR:JI3185-7",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas Samba OG Cream White Cardboard Creme",
+      "product_handle": "tenis-adidas-samba-og-cream-white-cardboard-creme",
+      "product_status": "ACTIVE",
+      "vendor": "Adidas",
+      "product_type": "Tênis",
+      "variant_sku": "JI3185-7",
+      "variant_title": "40",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "40"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "male",
+        "size": "40"
+      },
+      "evidence_signals": {
+        "age_group": "high_keyword_adult",
+        "gender": "medium_keyword_male",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "HQ4309-610-40",
+      "product_id": "online:pt:BR:HQ4309-610-40",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Chinelo Slide Nike Mind 001 Pearl Pink Rosa",
+      "product_handle": "slide-nike-mind-001-pearl-pink-rosa",
+      "product_status": "ACTIVE",
+      "vendor": "Nike",
+      "product_type": "Chinelo Slide",
+      "variant_sku": "HQ4309-610-40",
+      "variant_title": "40",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "40"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "U204L2SZ-36",
+      "product_id": "online:pt:BR:U204L2SZ-36",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis New Balance 204L Sea Salt Linen Bege",
+      "product_handle": "tenis-new-balance-204l-sea-salt-linen-bege",
+      "product_status": "ACTIVE",
+      "vendor": "New Balance",
+      "product_type": "Tênis",
+      "variant_sku": "U204L2SZ-36",
+      "variant_title": "36",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "36"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "36"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "U1906LNT-10",
+      "product_id": "online:pt:BR:U1906LNT-10",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis New Balance 1906L Black Suede Preto",
+      "product_handle": "tenis-new-balance-1906l-black-suede-preto",
+      "product_status": "ACTIVE",
+      "vendor": "New Balance",
+      "product_type": "Tênis",
+      "variant_sku": "U1906LNT-10",
+      "variant_title": "42",
+      "selected_options": [
+        {
+          "name": "Tamanho do calçado",
+          "value": "42"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "42"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "medium_variant_title_suffix",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "JH5439-8",
+      "product_id": "online:pt:BR:JH5439-8",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas Handball Spezial Bordô",
+      "product_handle": "tenis-adidas-handball-spezial-bordo",
+      "product_status": "ACTIVE",
+      "vendor": "Adidas",
+      "product_type": "Tênis",
+      "variant_sku": "JH5439-8",
+      "variant_title": "41",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "41"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "41"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "JH5439-6",
+      "product_id": "online:pt:BR:JH5439-6",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas Handball Spezial Bordô",
+      "product_handle": "tenis-adidas-handball-spezial-bordo",
+      "product_status": "ACTIVE",
+      "vendor": "Adidas",
+      "product_type": "Tênis",
+      "variant_sku": "JH5439-6",
+      "variant_title": "39",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "39"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "39"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "HQ4307-101-38",
+      "product_id": "online:pt:BR:HQ4307-101-38",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Chinelo Slide Nike Mind 001 White Speed Red Branco",
+      "product_handle": "slide-nike-mind-001-white-speed-red-branco",
+      "product_status": "ACTIVE",
+      "vendor": "Nike",
+      "product_type": "Chinelo Slide",
+      "variant_sku": "HQ4307-101-38",
+      "variant_title": "38",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "38"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "38"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "HQ4307-300-43",
+      "product_id": "online:pt:BR:HQ4307-300-43",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Chinelo Slide Nike Mind 001 Mineral Slate Verde",
+      "product_handle": "slide-nike-mind-001-mineral-slate-verde",
+      "product_status": "ACTIVE",
+      "vendor": "Nike",
+      "product_type": "Chinelo Slide",
+      "variant_sku": "HQ4307-300-43",
+      "variant_title": "43",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "43"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "43"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "4150234_3581_412-2",
+      "product_id": "online:pt:BR:4150234_3581_412-2",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Chinelo Havaianas Top Dolce & Gabbana Faux Fur Leopardo Marrom",
+      "product_handle": "chinelo-havaianas-top-dolce-gabbana-faux-fur-leopardo-marrom",
+      "product_status": "ACTIVE",
+      "vendor": "Havaianas",
+      "product_type": "Chinelo Slide",
+      "variant_sku": "4150234_3581_412-2",
+      "variant_title": "37/38",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "37/38"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "37/38"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "U204L2SZ-44",
+      "product_id": "online:pt:BR:U204L2SZ-44",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis New Balance 204L Sea Salt Linen Bege",
+      "product_handle": "tenis-new-balance-204l-sea-salt-linen-bege",
+      "product_status": "ACTIVE",
+      "vendor": "New Balance",
+      "product_type": "Tênis",
+      "variant_sku": "U204L2SZ-44",
+      "variant_title": "44",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "44"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "ST64",
+      "product_id": "online:pt:BR:ST64",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Calça Saint Studio Jeans Baggy Risca de Giz Azul",
+      "product_handle": "calca-saint-studio-jeans-baggy-risca-de-giz-azul",
+      "product_status": "ACTIVE",
+      "vendor": "Saint Studio",
+      "product_type": "Calça",
+      "variant_sku": "ST64",
+      "variant_title": "38",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "38"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "38"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "YR0067",
+      "product_id": "online:pt:BR:YR0067",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Calça Pace Nomo Tailoring Trousers Preto",
+      "product_handle": "calca-pace-nomo-tailoring-trousers-preto",
+      "product_status": "ACTIVE",
+      "vendor": "Pace",
+      "product_type": "Calça",
+      "variant_sku": "YR0067",
+      "variant_title": "L/G",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "L/G"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "L/G"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "CUNISPHEREBLK-1",
+      "product_id": "online:pt:BR:CUNISPHEREBLK-1",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Camiseta Aimé Leon Dore Unisphere Preto",
+      "product_handle": "camiseta-aime-leon-dore-unisphere-preto",
+      "product_status": "ACTIVE",
+      "vendor": "Aimé Leon Dore",
+      "product_type": "Camiseta",
+      "variant_sku": "CUNISPHEREBLK-1",
+      "variant_title": "G/L",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "G/L"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "G/L"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "JI3185-8",
+      "product_id": "online:pt:BR:JI3185-8",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas Samba OG Cream White Cardboard Creme",
+      "product_handle": "tenis-adidas-samba-og-cream-white-cardboard-creme",
+      "product_status": "ACTIVE",
+      "vendor": "Adidas",
+      "product_type": "Tênis",
+      "variant_sku": "JI3185-8",
+      "variant_title": "41",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "41"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "male",
+        "size": "41"
+      },
+      "evidence_signals": {
+        "age_group": "high_keyword_adult",
+        "gender": "medium_keyword_male",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "JI3185-3",
+      "product_id": "online:pt:BR:JI3185-3",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas Samba OG Cream White Cardboard Creme",
+      "product_handle": "tenis-adidas-samba-og-cream-white-cardboard-creme",
+      "product_status": "ACTIVE",
+      "vendor": "Adidas",
+      "product_type": "Tênis",
+      "variant_sku": "JI3185-3",
+      "variant_title": "36",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "36"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "male",
+        "size": "36"
+      },
+      "evidence_signals": {
+        "age_group": "high_keyword_adult",
+        "gender": "medium_keyword_male",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "125AS254481F-5",
+      "product_id": "online:pt:BR:125AS254481F-5",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Camiseta Fear Of God Essentials Varsity 90s Short Sleeve Tee Cinza",
+      "product_handle": "camiseta-fear-of-god-essentials-varsity-90s-short-sleeve-tee-cinza",
+      "product_status": "ACTIVE",
+      "vendor": "Essentials",
+      "product_type": "Camiseta",
+      "variant_sku": "125AS254481F-5",
+      "variant_title": "XL/GG",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "XL/GG"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "XL/GG"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "HQ4309-610-38",
+      "product_id": "online:pt:BR:HQ4309-610-38",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Chinelo Slide Nike Mind 001 Pearl Pink Rosa",
+      "product_handle": "slide-nike-mind-001-pearl-pink-rosa",
+      "product_status": "ACTIVE",
+      "vendor": "Nike",
+      "product_type": "Chinelo Slide",
+      "variant_sku": "HQ4309-610-38",
+      "variant_title": "38",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "38"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "38"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "JQ9231-6",
+      "product_id": "online:pt:BR:JQ9231-6",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas Ballerina Bad Bunny Black Chalk Preto",
+      "product_handle": "tenis-adidas-ballerina-bad-bunny-off-white-black-gum-branco",
+      "product_status": "ACTIVE",
+      "vendor": "Adidas",
+      "product_type": "Tênis",
+      "variant_sku": "JQ9231-6",
+      "variant_title": "39",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "39"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "39"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "U1906LAE-36",
+      "product_id": "online:pt:BR:U1906LAE-36",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis New Balance 1906L Silver Shadow Grey Slip-on Prata",
+      "product_handle": "tenis-new-balance-1906l-silver-shadow-grey-mesh-sintetico-slip-on",
+      "product_status": "ACTIVE",
+      "vendor": "New Balance",
+      "product_type": "Tênis",
+      "variant_sku": "U1906LAE-36",
+      "variant_title": "36",
+      "selected_options": [
+        {
+          "name": "Tamanho do calçado",
+          "value": "36"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "male",
+        "size": "36"
+      },
+      "evidence_signals": {
+        "age_group": "high_keyword_adult",
+        "gender": "medium_keyword_male",
+        "size": "medium_variant_title_suffix",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "U1906LNT-11",
+      "product_id": "online:pt:BR:U1906LNT-11",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis New Balance 1906L Black Suede Preto",
+      "product_handle": "tenis-new-balance-1906l-black-suede-preto",
+      "product_status": "ACTIVE",
+      "vendor": "New Balance",
+      "product_type": "Tênis",
+      "variant_sku": "U1906LNT-11",
+      "variant_title": "44",
+      "selected_options": [
+        {
+          "name": "Tamanho do calçado",
+          "value": "44"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "medium_variant_title_suffix",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "ST70",
+      "product_id": "online:pt:BR:ST70",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Bermuda Saint Studio Alfaiataria Algodão Orgânico Risca de Giz Preto",
+      "product_handle": "bermuda-saint-studio-alfaiataria-algodao-organico-risca-de-giz-preto",
+      "product_status": "ACTIVE",
+      "vendor": "Saint Studio",
+      "product_type": "Shorts",
+      "variant_sku": "ST70",
+      "variant_title": "40",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "40"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1025116-1A17741_2NM5J-4",
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-4",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+      "product_handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-suede-sneakers-brown-bege",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger x Versace",
+      "product_type": "Tênis",
+      "variant_sku": "1025116-1A17741_2NM5J-4",
+      "variant_title": "37",
+      "selected_options": [
+        {
+          "name": "Tamanho do calçado",
+          "value": "37"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "medium_variant_title_suffix",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "5362-1",
+      "product_id": "online:pt:BR:5362-1",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Camiseta Oversized Dane-se Pare, Respire Off White",
+      "product_handle": "camiseta-oversized-dane-se-pare-respire-off-white",
+      "product_status": "ACTIVE",
+      "vendor": "Dane-se",
+      "product_type": "Camiseta",
+      "variant_sku": "5362-1",
+      "variant_title": "P/S",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "P/S"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "P/S"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "JH5439-7",
+      "product_id": "online:pt:BR:JH5439-7",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas Handball Spezial Bordô",
+      "product_handle": "tenis-adidas-handball-spezial-bordo",
+      "product_status": "ACTIVE",
+      "vendor": "Adidas",
+      "product_type": "Tênis",
+      "variant_sku": "JH5439-7",
+      "variant_title": "40",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "40"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "U204L2SZ-42",
+      "product_id": "online:pt:BR:U204L2SZ-42",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis New Balance 204L Sea Salt Linen Bege",
+      "product_handle": "tenis-new-balance-204l-sea-salt-linen-bege",
+      "product_status": "ACTIVE",
+      "vendor": "New Balance",
+      "product_type": "Tênis",
+      "variant_sku": "U204L2SZ-42",
+      "variant_title": "42",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "42"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "42"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "YR0066",
+      "product_id": "online:pt:BR:YR0066",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Calça Pace Nomo Tailoring Trousers Preto",
+      "product_handle": "calca-pace-nomo-tailoring-trousers-preto",
+      "product_status": "ACTIVE",
+      "vendor": "Pace",
+      "product_type": "Calça",
+      "variant_sku": "YR0066",
+      "variant_title": "M/M",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "M/M"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "M/M"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1025116-1A17741_2NM5J-9",
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-9",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+      "product_handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-suede-sneakers-brown-bege",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger x Versace",
+      "product_type": "Tênis",
+      "variant_sku": "1025116-1A17741_2NM5J-9",
+      "variant_title": "40",
+      "selected_options": [
+        {
+          "name": "Tamanho do calçado",
+          "value": "40"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "medium_variant_title_suffix",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "HQ4307-101-44",
+      "product_id": "online:pt:BR:HQ4307-101-44",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Chinelo Slide Nike Mind 001 White Speed Red Branco",
+      "product_handle": "slide-nike-mind-001-white-speed-red-branco",
+      "product_status": "ACTIVE",
+      "vendor": "Nike",
+      "product_type": "Chinelo Slide",
+      "variant_sku": "HQ4307-101-44",
+      "variant_title": "44",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "44"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1023851-1A17746_2NM8J-6",
+      "product_id": "online:pt:BR:1023851-1A17746_2NM8J-6",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom",
+      "product_handle": "tenis-onitsuka-tiger-x-versace-sakura-leather-loafers-brown-white-marrom",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger x Versace",
+      "product_type": "Tênis",
+      "variant_sku": "1023851-1A17746_2NM8J-6",
+      "variant_title": "41.5",
+      "selected_options": [
+        {
+          "name": "Tamanho do calçado",
+          "value": "41.5"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "41.5"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "medium_variant_title_suffix",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "HQ4307-100-40",
+      "product_id": "online:pt:BR:HQ4307-100-40",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Chinelo Slide Nike Mind 001 Sail Bege",
+      "product_handle": "slide-nike-mind-001-sail-bege",
+      "product_status": "ACTIVE",
+      "vendor": "Nike",
+      "product_type": "Chinelo Slide",
+      "variant_sku": "HQ4307-100-40",
+      "variant_title": "40",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "40"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "HQ4307-300-42",
+      "product_id": "online:pt:BR:HQ4307-300-42",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Chinelo Slide Nike Mind 001 Mineral Slate Verde",
+      "product_handle": "slide-nike-mind-001-mineral-slate-verde",
+      "product_status": "ACTIVE",
+      "vendor": "Nike",
+      "product_type": "Chinelo Slide",
+      "variant_sku": "HQ4307-300-42",
+      "variant_title": "42",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "42"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "42"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "JQ9231-3",
+      "product_id": "online:pt:BR:JQ9231-3",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "checkout_url_invalid",
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 21,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas Ballerina Bad Bunny Black Chalk Preto",
+      "product_handle": "tenis-adidas-ballerina-bad-bunny-off-white-black-gum-branco",
+      "product_status": "ACTIVE",
+      "vendor": "Adidas",
+      "product_type": "Tênis",
+      "variant_sku": "JQ9231-3",
+      "variant_title": "36",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "36"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "36"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "HV0823-100-5",
+      "product_id": "online:pt:BR:HV0823-100-5",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul",
+      "product_handle": "tenis-air-jordan-4-retro-forget-me-not-azul",
+      "product_status": "ACTIVE",
+      "vendor": "Jordan",
+      "product_type": "Tênis",
+      "variant_sku": "HV0823-100-5",
+      "variant_title": "38",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "38"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "male",
+        "size": "38"
+      },
+      "evidence_signals": {
+        "age_group": "high_keyword_adult",
+        "gender": "medium_keyword_male",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "BQ6472104-1",
+      "product_id": "online:pt:BR:BQ6472104-1",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike Air Jordan 1 Mid Kentucky Blue Azul",
+      "product_handle": "air-jordan-1-mid-kentucky-blue",
+      "product_status": "ACTIVE",
+      "vendor": "Jordan",
+      "product_type": "Tênis",
+      "variant_sku": "BQ6472104-1",
+      "variant_title": "38",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "38"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "38"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1201A789-020-41",
+      "product_id": "online:pt:BR:1201A789-020-41",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis ASICS Gel-NYC Graphite Grey Black Preto",
+      "product_handle": "tenis-asics-gel-nyc-graphite-grey-black-preto",
+      "product_status": "ACTIVE",
+      "vendor": "ASICS",
+      "product_type": "Tênis",
+      "variant_sku": "1201A789-020-41",
+      "variant_title": "41",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "41"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "41"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1183C468200-2",
+      "product_id": "online:pt:BR:1183C468200-2",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Onitsuka Tiger Mexico 66 SD Metallic Series Desert Camp Cream Dourado",
+      "product_handle": "onitsuka-tiger-mexico-66-sd-metallic-series-desert-camp-cream-dourado",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger",
+      "product_type": "Tênis",
+      "variant_sku": "1183C468200-2",
+      "variant_title": "35",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "35"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "35"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "DD0587-002-43",
+      "product_id": "online:pt:BR:DD0587-002-43",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Jordan 5 Retro Wolf Grey (2026) Cinza",
+      "product_handle": "tenis-jordan-5-retro-wolf-grey-2026-cinza",
+      "product_status": "ACTIVE",
+      "vendor": "Jordan",
+      "product_type": "Tênis",
+      "variant_sku": "DD0587-002-43",
+      "variant_title": "43",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "43"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "43"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "HV0823-100-6",
+      "product_id": "online:pt:BR:HV0823-100-6",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul",
+      "product_handle": "tenis-air-jordan-4-retro-forget-me-not-azul",
+      "product_status": "ACTIVE",
+      "vendor": "Jordan",
+      "product_type": "Tênis",
+      "variant_sku": "HV0823-100-6",
+      "variant_title": "39",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "39"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "male",
+        "size": "39"
+      },
+      "evidence_signals": {
+        "age_group": "high_keyword_adult",
+        "gender": "medium_keyword_male",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1201A789-020-39",
+      "product_id": "online:pt:BR:1201A789-020-39",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis ASICS Gel-NYC Graphite Grey Black Preto",
+      "product_handle": "tenis-asics-gel-nyc-graphite-grey-black-preto",
+      "product_status": "ACTIVE",
+      "vendor": "ASICS",
+      "product_type": "Tênis",
+      "variant_sku": "1201A789-020-39",
+      "variant_title": "39",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "39"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "39"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1183C428.200-10",
+      "product_id": "online:pt:BR:1183C428.200-10",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Onitsuka Tiger California 78 EX Putty/Green Bege",
+      "product_handle": "tenis-onitsuka-tiger-california-78-ex-putty-green-bege",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger",
+      "product_type": "Tênis",
+      "variant_sku": "1183C428.200-10",
+      "variant_title": "43",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "43"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "43"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "UGTR83J-42",
+      "product_id": "online:pt:BR:UGTR83J-42",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis New Balance Gator Run Star Burst Bege",
+      "product_handle": "tenis-new-balance-gator-run-star-burst-bege",
+      "product_status": "ACTIVE",
+      "vendor": "New Balance",
+      "product_type": "Tênis",
+      "variant_sku": "UGTR83J-42",
+      "variant_title": "42",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "42"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "42"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1183C233-250-4",
+      "product_id": "online:pt:BR:1183C233-250-4",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Onitsuka Tiger Mexico 66 Paraty Natural Navy Bege",
+      "product_handle": "onitsuka-tiger-mexico-66-paraty-natural-navy-bege",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger",
+      "product_type": "Tênis",
+      "variant_sku": "1183C233-250-4",
+      "variant_title": "37",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "37"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "u9060aga-8",
+      "product_id": "online:pt:BR:u9060aga-8",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis New Balance 9060 Grey Day 2025 Cinza",
+      "product_handle": "tenis-new-balance-9060-grey-day-2025-esportivo-casual",
+      "product_status": "ACTIVE",
+      "vendor": "New Balance",
+      "product_type": "Tênis",
+      "variant_sku": "u9060aga-8",
+      "variant_title": "41",
+      "selected_options": [
+        {
+          "name": "Tamanho do calçado",
+          "value": "41"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "41"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "medium_variant_title_suffix",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "A15FW740-1",
+      "product_id": "online:pt:BR:A15FW740-1",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Maison Mihara Yasuhiro \"Keith\" OG Sole Canvas Low-top Black Preto",
+      "product_handle": "tenis-maison-mihara-yasuhiro-keith-og-sole-canvas-low-top-black-preto",
+      "product_status": "ACTIVE",
+      "vendor": "Maison Mihara",
+      "product_type": "Tênis",
+      "variant_sku": "A15FW740-1",
+      "variant_title": "34",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "34"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "34"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "3MG10844970-40",
+      "product_id": "online:pt:BR:3MG10844970-40",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis On Running x Kith ON K-Tech 2 Spirulina Barley Verde",
+      "product_handle": "tenis-on-running-x-kith-on-k-tech-2-spirulina-barley-verde",
+      "product_status": "ACTIVE",
+      "vendor": "ON",
+      "product_type": "Tênis",
+      "variant_sku": "3MG10844970-40",
+      "variant_title": "40",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "40"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1183C141-100-4",
+      "product_id": "online:pt:BR:1183C141-100-4",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Slip-On White Branco",
+      "product_handle": "tenis-onitsuka-tiger-mexico-66-slip-on-white-branco",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger",
+      "product_type": "Tênis",
+      "variant_sku": "1183C141-100-4",
+      "variant_title": "37",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "37"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "U204L6A6-34",
+      "product_id": "online:pt:BR:U204L6A6-34",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis New Balance 204L Reflection Bege",
+      "product_handle": "tenis-new-balance-204l-reflection-bege",
+      "product_status": "ACTIVE",
+      "vendor": "New Balance",
+      "product_type": "Tênis",
+      "variant_sku": "U204L6A6-34",
+      "variant_title": "34",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "34"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "34"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "JI0073-3",
+      "product_id": "online:pt:BR:JI0073-3",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas Gazelle R Disney Pixar Toy Story Laranja",
+      "product_handle": "tenis-adidas-gazelle-r-disney-pixar-toy-story-laranja",
+      "product_status": "ACTIVE",
+      "vendor": "Adidas",
+      "product_type": "Tênis",
+      "variant_sku": "JI0073-3",
+      "variant_title": "35",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "35"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "female",
+        "size": "35"
+      },
+      "evidence_signals": {
+        "age_group": "high_keyword_adult",
+        "gender": "medium_keyword_female",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "HM5973-603-11",
+      "product_id": "online:pt:BR:HM5973-603-11",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike Vomero Premium Hyper Pink Rosa",
+      "product_handle": "tenis-nike-vomero-premium-hyper-pink-rosa",
+      "product_status": "ACTIVE",
+      "vendor": "Nike",
+      "product_type": "Tênis",
+      "variant_sku": "HM5973-603-11",
+      "variant_title": "44",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "44"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "JR5763",
+      "product_id": "online:pt:BR:JR5763",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas Taekwondo Mei Ballet Clear Sky Gum Azul",
+      "product_handle": "tenis-wmns-taekwondo-mei-ballet-adidas-camurca-slip-on-azul",
+      "product_status": "ACTIVE",
+      "vendor": "Adidas",
+      "product_type": "Tênis",
+      "variant_sku": "JR5763",
+      "variant_title": "39",
+      "selected_options": [
+        {
+          "name": "Tamanho do calçado",
+          "value": "39"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "female",
+        "size": "39"
+      },
+      "evidence_signals": {
+        "age_group": "high_keyword_adult",
+        "gender": "medium_keyword_female",
+        "size": "medium_variant_title_suffix",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "FZ5042-041-44",
+      "product_id": "online:pt:BR:FZ5042-041-44",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike Air Jordan 1 Low SE Repaired Denim Swoosh Azul",
+      "product_handle": "tenis-nike-air-jordan-1-low-se-repaired-denim-swoosh-azul",
+      "product_status": "ACTIVE",
+      "vendor": "Air Jordan",
+      "product_type": "Tênis",
+      "variant_sku": "FZ5042-041-44",
+      "variant_title": "44",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "44"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1183C480-001-10",
+      "product_id": "online:pt:BR:1183C480-001-10",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Glitter Pack Black Gunmetal Preto",
+      "product_handle": "tenis-onitsuka-tiger-mexico-66-glitter-pack-black-gunmetal-preto",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger",
+      "product_type": "Tênis",
+      "variant_sku": "1183C480-001-10",
+      "variant_title": "44",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "44"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "JR1639-4",
+      "product_id": "online:pt:BR:JR1639-4",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas SL 72 Og Court Green Cow Print Bege",
+      "product_handle": "tenis-adidas-sl-72-og-court-green-cow-print-bege",
+      "product_status": "ACTIVE",
+      "vendor": "Adidas",
+      "product_type": "Tênis",
+      "variant_sku": "JR1639-4",
+      "variant_title": "37",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "37"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1183C480-001-6",
+      "product_id": "online:pt:BR:1183C480-001-6",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Glitter Pack Black Gunmetal Preto",
+      "product_handle": "tenis-onitsuka-tiger-mexico-66-glitter-pack-black-gunmetal-preto",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger",
+      "product_type": "Tênis",
+      "variant_sku": "1183C480-001-6",
+      "variant_title": "39",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "39"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "39"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "HV0823-100-2",
+      "product_id": "online:pt:BR:HV0823-100-2",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul",
+      "product_handle": "tenis-air-jordan-4-retro-forget-me-not-azul",
+      "product_status": "ACTIVE",
+      "vendor": "Jordan",
+      "product_type": "Tênis",
+      "variant_sku": "HV0823-100-2",
+      "variant_title": "35",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "35"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "male",
+        "size": "35"
+      },
+      "evidence_signals": {
+        "age_group": "high_keyword_adult",
+        "gender": "medium_keyword_male",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "U204L4HH-42",
+      "product_id": "online:pt:BR:U204L4HH-42",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis New Balance 204L Raincloud Ash Wood Cinza",
+      "product_handle": "tenis-new-balance-204l-raincloud-ash-wood-cinza",
+      "product_status": "ACTIVE",
+      "vendor": "New Balance",
+      "product_type": "Tênis",
+      "variant_sku": "U204L4HH-42",
+      "variant_title": "42",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "42"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "42"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "DH1348-001-34",
+      "product_id": "online:pt:BR:DH1348-001-34",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike Air Max 1 x Patta Monarch Laranja",
+      "product_handle": "tenis-nike-air-max-1-x-patta-monarch-laranja",
+      "product_status": "ACTIVE",
+      "vendor": "Nike",
+      "product_type": "Tênis",
+      "variant_sku": "DH1348-001-34",
+      "variant_title": "34",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "34"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "34"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "FQ8138-600-46",
+      "product_id": "online:pt:BR:FQ8138-600-46",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Jordan 4 Retro Toro Bravo 2026 Vermelho",
+      "product_handle": "tenis-jordan-4-retro-toro-bravo-2026-vermelho",
+      "product_status": "ACTIVE",
+      "vendor": "Jordan",
+      "product_type": "Tênis",
+      "variant_sku": "FQ8138-600-46",
+      "variant_title": "46",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "46"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "46"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "HQ3490-099-6",
+      "product_id": "online:pt:BR:HQ3490-099-6",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike Cortez SE Tiempo Pack Metallic Cool Grey Cinza",
+      "product_handle": "tenis-nike-cortez-se-tiempo-pack-metallic-cool-grey-cinza",
+      "product_status": "ACTIVE",
+      "vendor": "Nike",
+      "product_type": "Tênis",
+      "variant_sku": "HQ3490-099-6",
+      "variant_title": "43",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "43"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "43"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "AA3834-100-45",
+      "product_id": "online:pt:BR:AA3834-100-45",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike Air Jordan 1 High Virgil Abloh Archive x Alaska Branco",
+      "product_handle": "tenis-nike-air-jordan-1-high-virgil-abloh-archive-x-alaska-branco",
+      "product_status": "ACTIVE",
+      "vendor": "Air Jordan",
+      "product_type": "Tênis",
+      "variant_sku": "AA3834-100-45",
+      "variant_title": "45",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "45"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "45"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "CN0151-002-38",
+      "product_id": "online:pt:BR:CN0151-002-38",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike Shox TL Black Dynamic Yellow Preto",
+      "product_handle": "tenis-nike-shox-tl-black-dynamic-yellow-preto",
+      "product_status": "ACTIVE",
+      "vendor": "Nike",
+      "product_type": "Tênis",
+      "variant_sku": "CN0151-002-38",
+      "variant_title": "38",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "38"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "38"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1183A360.205-2",
+      "product_id": "online:pt:BR:1183A360.205-2",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Slip-On Birch Midnight Bege",
+      "product_handle": "tenis-onitsuka-tiger-mexico-66-slip-on-birch-midnight-bege",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger",
+      "product_type": "Tênis",
+      "variant_sku": "1183A360.205-2",
+      "variant_title": "35",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "35"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "35"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "IO7847-001-35",
+      "product_id": "online:pt:BR:IO7847-001-35",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Jordan 1 Retro High OG SP Fragment x Union LA Sport Royal",
+      "product_handle": "tenis-jordan-1-retro-high-og-sp-fragment-x-union-la-sport-royal",
+      "product_status": "ACTIVE",
+      "vendor": "Jordan",
+      "product_type": "Tênis",
+      "variant_sku": "IO7847-001-35",
+      "variant_title": "35",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "35"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "35"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "JQ6440",
+      "product_id": "online:pt:BR:JQ6440",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas Taekwondo Mei Ballet Clear Pink Gum Rosa",
+      "product_handle": "sapatilha-onitsuka-tiger-wmns-taekwondo-mei-ballet-clear-pink-gum-camurca",
+      "product_status": "ACTIVE",
+      "vendor": "Adidas",
+      "product_type": "Tênis",
+      "variant_sku": "JQ6440",
+      "variant_title": "40",
+      "selected_options": [
+        {
+          "name": "Tamanho do calçado",
+          "value": "40"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "female",
+        "size": "40"
+      },
+      "evidence_signals": {
+        "age_group": "high_keyword_adult",
+        "gender": "medium_keyword_female",
+        "size": "medium_variant_title_suffix",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "43774078390070",
+      "product_id": "online:pt:BR:43774078390070",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike Air Jordan 1 Retro Low Fragment Design x Travis Scott Couro Branco Preto Azul",
+      "product_handle": "tenis-air-jordan-1-retro-low-fragment-design-x-travis-scott-couro-branco-preto-azul",
+      "product_status": "ACTIVE",
+      "vendor": "Jordan",
+      "product_type": "Tênis",
+      "variant_sku": "43774078390070",
+      "variant_title": "41",
+      "selected_options": [
+        {
+          "name": "Tamanho do calçado",
+          "value": "41"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "41"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "medium_variant_title_suffix",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1182A708.700-4",
+      "product_id": "online:pt:BR:1182A708.700-4",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Classic Red/Cream Vermelho",
+      "product_handle": "tenis-onitsuka-tiger-mexico-66-tgrs-classic-red-cream-vermelho",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger",
+      "product_type": "Tênis",
+      "variant_sku": "1182A708.700-4",
+      "variant_title": "37",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "37"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "AV3594-104-34",
+      "product_id": "online:pt:BR:AV3594-104-34",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike Shox TL Orewood Brown Cave Stone Bege",
+      "product_handle": "tenis-nike-shox-tl-orewood-brown-cave-stone-bege",
+      "product_status": "ACTIVE",
+      "vendor": "Nike",
+      "product_type": "Tênis",
+      "variant_sku": "AV3594-104-34",
+      "variant_title": "34",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "34"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "34"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "HQ7978-103-44",
+      "product_id": "online:pt:BR:HQ7978-103-44",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Jordan 5 Retro White Metallic (2026) Metalizado",
+      "product_handle": "tenis-jordan-5-retro-white-metallic-2026-metalizado",
+      "product_status": "ACTIVE",
+      "vendor": "Jordan",
+      "product_type": "Tênis",
+      "variant_sku": "HQ7978-103-44",
+      "variant_title": "44",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "44"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "U204L5AV-41",
+      "product_id": "online:pt:BR:U204L5AV-41",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis New Balance 204L Lone Star Grey Cinza",
+      "product_handle": "tenis-new-balance-204l-lone-star-grey-cinza",
+      "product_status": "ACTIVE",
+      "vendor": "New Balance",
+      "product_type": "Tênis",
+      "variant_sku": "U204L5AV-41",
+      "variant_title": "41",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "41"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "41"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "43774078391660",
+      "product_id": "online:pt:BR:43774078391660",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Polo Skims Baby Tee Worn in Jersey Light Heather Grey Cinza",
+      "product_handle": "polo-skims-baby-tee-worn-in-jersey-light-heather-grey-cinza",
+      "product_status": "ACTIVE",
+      "vendor": "Skims",
+      "product_type": "Polo",
+      "variant_sku": "43774078391660",
+      "variant_title": "XXS/PPP",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "XXS/PPP"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "kids",
+        "gender": "unisex",
+        "size": "XXS/PPP"
+      },
+      "evidence_signals": {
+        "age_group": "medium_keyword_kids",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "DR5415-100-40",
+      "product_id": "online:pt:BR:DR5415-100-40",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike SB Air Jordan 4 x Retro SP Navy Branco",
+      "product_handle": "tenis-nike-sb-air-jordan-4-x-retro-sp-navy-branco",
+      "product_status": "ACTIVE",
+      "vendor": "Air Jordan",
+      "product_type": "Tênis",
+      "variant_sku": "DR5415-100-40",
+      "variant_title": "40",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "40"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "bb5351",
+      "product_id": "online:pt:BR:bb5351",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas Yeezy Boost 350 Pirate Black 2023",
+      "product_handle": "tenis-yeezy-boost-350-adidas-pirate-black-2023",
+      "product_status": "ACTIVE",
+      "vendor": "Yeezy",
+      "product_type": "Tênis",
+      "variant_sku": "bb5351",
+      "variant_title": "35",
+      "selected_options": [
+        {
+          "name": "Tamanho do calçado",
+          "value": "35"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "35"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "medium_variant_title_suffix",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "U204L1KP-37",
+      "product_id": "online:pt:BR:U204L1KP-37",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis New Balance 204L Dark Silver Metallic Cinza",
+      "product_handle": "tenis-new-balance-204l-dark-silver-metallic-cinza",
+      "product_status": "ACTIVE",
+      "vendor": "New Balance",
+      "product_type": "Tênis",
+      "variant_sku": "U204L1KP-37",
+      "variant_title": "37",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "37"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1182A678.700-7",
+      "product_id": "online:pt:BR:1182A678.700-7",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Crystal Pink/Graphite Grey Rosa",
+      "product_handle": "tenis-onitsuka-tiger-mexico-66-tgrs-crystal-pink-graphite-grey-rosa",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger",
+      "product_type": "Tênis",
+      "variant_sku": "1182A678.700-7",
+      "variant_title": "40",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "40"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "KI3582-40",
+      "product_id": "online:pt:BR:KI3582-40",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Adidas Taekwondo Mei Ballet Cream White Branco",
+      "product_handle": "tenis-adidas-taekwondo-mei-ballet-cream-white-branco",
+      "product_status": "ACTIVE",
+      "vendor": "Adidas",
+      "product_type": "Tênis",
+      "variant_sku": "KI3582-40",
+      "variant_title": "40",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "40"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "IQ7166-800-34",
+      "product_id": "online:pt:BR:IQ7166-800-34",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Nike Vomero Premium x Melitta Baumeister Total Orange Laranja",
+      "product_handle": "tenis-nike-vomero-premium-x-melitta-baumeister-total-orange-laranja",
+      "product_status": "ACTIVE",
+      "vendor": "Nike",
+      "product_type": "Tênis",
+      "variant_sku": "IQ7166-800-34",
+      "variant_title": "34",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "34"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "34"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1183A360-002-4",
+      "product_id": "online:pt:BR:1183A360-002-4",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Slip-On Black Preto",
+      "product_handle": "tenis-onitsuka-tiger-mexico-66-slip-on-black-preto",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger",
+      "product_type": "Tênis",
+      "variant_sku": "1183A360-002-4",
+      "variant_title": "37",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "37"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1201A906-001-35",
+      "product_id": "online:pt:BR:1201A906-001-35",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 2,
+      "lookup_error": null,
+      "product_title": "Tênis ASICS Gel-1130 Black Pure Silver Prata",
+      "product_handle": "tenis-asics-gel-1130-black-pure-silver-prata",
+      "product_status": "ACTIVE",
+      "vendor": "ASICS",
+      "product_type": "Tênis",
+      "variant_sku": "1201A906-001-35",
+      "variant_title": "35",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "35"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "35"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "w6525r_01-2",
+      "product_id": "online:pt:BR:w6525r_01-2",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Short Alo Yoga 5\" Airbrush Double Up Azul Marinho",
+      "product_handle": "short-alo-yoga-5-airbrush-double-up-azul-marinho",
+      "product_status": "ACTIVE",
+      "vendor": "Alo Yoga",
+      "product_type": "Shorts",
+      "variant_sku": "w6525r_01-2",
+      "variant_title": "XS/PP",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "XS/PP"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "XS/PP"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    },
+    {
+      "offer_id": "1182A708.020-4",
+      "product_id": "online:pt:BR:1182A708.020-4",
+      "missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "issue_codes": [
+        "item_missing_required_attribute",
+        "missing_item_attribute_for_product_type"
+      ],
+      "disapproved_destinations": [
+        "Shopping",
+        "DisplayAds",
+        "SurfacesAcrossGoogle"
+      ],
+      "item_issue_count": 20,
+      "shopify_variant_match_count": 1,
+      "lookup_error": null,
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Gunmetal/Metropolis Preto",
+      "product_handle": "tenis-onitsuka-tiger-mexico-66-tgrs-gunmetal-metropolis-preto",
+      "product_status": "ACTIVE",
+      "vendor": "Onitsuka Tiger",
+      "product_type": "Tênis",
+      "variant_sku": "1182A708.020-4",
+      "variant_title": "37",
+      "selected_options": [
+        {
+          "name": "Tamanho",
+          "value": "37"
+        }
+      ],
+      "suggested_attributes": {
+        "age_group": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "evidence_signals": {
+        "age_group": "medium_lk_default_adult_assortment",
+        "gender": "medium_lk_default_unisex_needs_review",
+        "size": "high_shopify_selected_option",
+        "color": "not_requested"
+      },
+      "confidence": "medium",
+      "recommended_surface": "supplemental_feed_preview_preferred",
+      "write_allowed_now": false,
+      "approval_required_for_write": "Lucas approval required before Merchant supplemental feed, Shopify metafield/product, feed rule, or account setting changes."
+    }
+  ],
+  "recommended_correction_plan": [
+    "Use this CSV as a local preview, not as an uploaded supplemental feed.",
+    "Prefer a Merchant supplemental feed/feed-rule preview for age_group/gender/size before touching Shopify product/metafields.",
+    "For medium-confidence defaults (adult/unisex), Lucas should approve the rule because it applies merchandising assumptions.",
+    "Rows without a reliable size or Shopify match must remain manual review before any write.",
+    "After approval and write, request Merchant recheck and compare issue counts before/after."
+  ],
+  "not_performed": [
+    "merchant_center_write",
+    "supplemental_feed_upload",
+    "shopify_product_or_variant_write",
+    "shopify_metafield_write",
+    "feed_file_replacement",
+    "gsc_admin_or_indexing_submit",
+    "checkout_setting_change",
+    "theme_or_pdp_write",
+    "campaign_or_customer_send",
+    "supplier_contact",
+    "purchase_or_po",
+    "external_marketplace_call",
+    "n8n_flow_creation"
+  ],
+  "checks": [
+    {
+      "name": "required_attr_rows_loaded",
+      "ok": true,
+      "detail": "Merchant required-attribute rows loaded from read-only router."
+    },
+    {
+      "name": "shopify_lookup_coverage",
+      "ok": true,
+      "detail": "Most required-attribute offer IDs mapped to Shopify variants."
+    },
+    {
+      "name": "read_only_guardrails",
+      "ok": true,
+      "detail": "No production writes/sends/contacts/purchases/marketplace/n8n."
+    }
+  ]
+}
