@@ -1,0 +1,732 @@
+{
+  "generated_at": "2026-05-12T01:32:53.602897+00:00",
+  "scope": "LK needs_data autonomous read-only autofix/reconciliation for Mission Control blockers",
+  "user_rule": "Lucas approved autonomous data lookup/reconciliation/correction for needs_data blockers when read-only/local; execution actions still require approval.",
+  "read_only": true,
+  "summary": {
+    "items_checked": 3,
+    "resolution_counts": {
+      "resolved_out_of_stock_code_hygiene_needed": 1,
+      "resolved_in_stock_no_sourcing_needed": 1,
+      "resolved_product_stock_ok_tiny_code_missing": 1
+    },
+    "route_counts": {
+      "internal_code_hygiene_then_decision": 1,
+      "move_from_needs_data_to_monitor_or_stock_ok": 2
+    },
+    "can_leave_needs_data_after_refresh": 0,
+    "move_from_needs_data_to_monitor_or_stock_ok": 2,
+    "internal_code_hygiene_then_decision": 1,
+    "keep_internal_data_followup": 0,
+    "shopify_reads": 3,
+    "tiny_searches_and_detail_reads": 20,
+    "production_writes": 0,
+    "external_sends_or_contacts": 0,
+    "purchases_or_pos": 0,
+    "external_marketplace_calls": 0,
+    "n8n_flows_created": 0
+  },
+  "results": [
+    {
+      "family": "Bearbrick Series 48",
+      "product_title": "MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)",
+      "sku": "MED-3410398-OS",
+      "size_or_variant": "sem tamanho informado",
+      "priority": "P1",
+      "sold_qty_fact_shopify": 3,
+      "revenue_fact_shopify": 449.97,
+      "previous_action_status": "sku_resolution_first",
+      "previous_match_status": null,
+      "shopify_variants_found": 1,
+      "shopify_variants": [
+        {
+          "variant_gid": "gid://shopify/ProductVariant/47084415353054",
+          "variant_id": "47084415353054",
+          "variant_title": "Default Title",
+          "sku": "MED-3410398-OS",
+          "inventory_quantity_shopify_signal": -6,
+          "selected_options": [
+            {
+              "name": "Title",
+              "value": "Default Title"
+            }
+          ],
+          "product": {
+            "id": "gid://shopify/Product/8963583410398",
+            "title": "MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)",
+            "handle": "medicom-toy-bearbrick-series-48-100-toy-art-blind-box-lacrado",
+            "status": "ACTIVE",
+            "vendor": "Medicom Toy",
+            "productType": "Colecionável",
+            "totalInventory": 0
+          },
+          "matched_query": "sku:MED-3410398-OS"
+        }
+      ],
+      "tiny_searches": [
+        {
+          "query": "MED-3410398-OS",
+          "status": "Erro",
+          "count": 0,
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "top": []
+        },
+        {
+          "query": "MED-3410398",
+          "status": "Erro",
+          "count": 0,
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "top": []
+        },
+        {
+          "query": "MED 3410398 OS",
+          "status": "Erro",
+          "count": 0,
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "top": []
+        },
+        {
+          "query": "MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)",
+          "status": "OK",
+          "count": 1,
+          "error": null,
+          "top": [
+            {
+              "id": "1065004338",
+              "codigo": "",
+              "nome": "MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)",
+              "situacao": "A",
+              "preco": 149.99
+            }
+          ]
+        },
+        {
+          "query": "MEDICOM TOY - Bearbrick Series",
+          "status": "OK",
+          "count": 2,
+          "error": null,
+          "top": [
+            {
+              "id": "1065004338",
+              "codigo": "",
+              "nome": "MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)",
+              "situacao": "A",
+              "preco": 149.99
+            },
+            {
+              "id": "1062531367",
+              "codigo": "SSB-3507",
+              "nome": "MEDICOM TOY - Bearbrick Series 49 100% Toy Art",
+              "situacao": "A",
+              "preco": 119.99
+            }
+          ]
+        }
+      ],
+      "tiny_matches": [
+        {
+          "id": "1065004338",
+          "codigo": "",
+          "nome": "MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)",
+          "grade": {},
+          "source": "produto",
+          "parent_nome": "MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)",
+          "matched_size_text": "Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)",
+          "exact_size_match": true,
+          "codigo_exact_sku_match": false,
+          "stock": {
+            "saldo_total_tiny": 0.0,
+            "lk_controle_found": true,
+            "lk_controle_saldo": null,
+            "deposit_count": 3
+          }
+        },
+        {
+          "id": "1062531367",
+          "codigo": "SSB-3507",
+          "nome": "MEDICOM TOY - Bearbrick Series 49 100% Toy Art",
+          "grade": {},
+          "source": "produto",
+          "parent_nome": "MEDICOM TOY - Bearbrick Series 49 100% Toy Art",
+          "matched_size_text": "Bearbrick Series 49 100% Toy Art",
+          "exact_size_match": true,
+          "codigo_exact_sku_match": false,
+          "stock": {
+            "saldo_total_tiny": 0.0,
+            "lk_controle_found": true,
+            "lk_controle_saldo": null,
+            "deposit_count": 3
+          }
+        }
+      ],
+      "resolution_status": "resolved_out_of_stock_code_hygiene_needed",
+      "recommended_route": "internal_code_hygiene_then_decision",
+      "reason": "Exact product was found with zero stock but Tiny codigo is blank; prepare internal code hygiene before external sourcing.",
+      "safe_reference_quote_qty_not_purchase_qty": 0,
+      "lk_controle_stock_known": false,
+      "lk_controle_stock_sum": null,
+      "tiny_total_stock_known": true,
+      "tiny_total_stock_sum": 0.0,
+      "exact_product_match_count": 1,
+      "exact_code_match_count": 0
+    },
+    {
+      "family": "Onitsuka Tiger Mexico 66",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "sku": "1183C102751-3",
+      "size_or_variant": "36",
+      "priority": "P1",
+      "sold_qty_fact_shopify": 2,
+      "revenue_fact_shopify": 4799.98,
+      "previous_action_status": "sku_resolution_first",
+      "previous_match_status": null,
+      "shopify_variants_found": 4,
+      "shopify_variants": [
+        {
+          "variant_gid": "gid://shopify/ProductVariant/45747573424350",
+          "variant_id": "45747573424350",
+          "variant_title": "36",
+          "sku": "1183C102 751-3",
+          "inventory_quantity_shopify_signal": -1,
+          "selected_options": [
+            {
+              "name": "Tamanho",
+              "value": "36"
+            }
+          ],
+          "product": {
+            "id": "gid://shopify/Product/8618395205854",
+            "title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+            "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+            "status": "ACTIVE",
+            "vendor": "Onitsuka Tiger",
+            "productType": "Tênis",
+            "totalInventory": -9
+          },
+          "matched_query": "title:\"Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo\""
+        },
+        {
+          "variant_gid": "gid://shopify/ProductVariant/45892287496414",
+          "variant_id": "45892287496414",
+          "variant_title": "36",
+          "sku": "183A872-3",
+          "inventory_quantity_shopify_signal": 0,
+          "selected_options": [
+            {
+              "name": "Tamanho",
+              "value": "36"
+            }
+          ],
+          "product": {
+            "id": "gid://shopify/Product/8678660571358",
+            "title": "Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo",
+            "handle": "tenis-onitsuka-tiger-mexico-66-sd-kill-bill-amarelo",
+            "status": "ACTIVE",
+            "vendor": "Onitsuka Tiger",
+            "productType": "Tênis",
+            "totalInventory": 12
+          },
+          "matched_query": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo"
+        },
+        {
+          "variant_gid": "gid://shopify/ProductVariant/45993739288798",
+          "variant_id": "45993739288798",
+          "variant_title": "36",
+          "sku": "1183A201003-3",
+          "inventory_quantity_shopify_signal": 2,
+          "selected_options": [
+            {
+              "name": "Tamanho",
+              "value": "36"
+            }
+          ],
+          "product": {
+            "id": "gid://shopify/Product/8719701835998",
+            "title": "Tênis Onitsuka Tiger Mexico 66 Black Yellow Preto",
+            "handle": "tenis-onitsuka-tiger-mexico-66-black-yellow-preto",
+            "status": "ACTIVE",
+            "vendor": "Onitsuka Tiger",
+            "productType": "Tênis",
+            "totalInventory": 24
+          },
+          "matched_query": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo"
+        },
+        {
+          "variant_gid": "gid://shopify/ProductVariant/46478597521630",
+          "variant_id": "46478597521630",
+          "variant_title": "36",
+          "sku": "1183A746-751-3",
+          "inventory_quantity_shopify_signal": -1,
+          "selected_options": [
+            {
+              "name": "Tamanho",
+              "value": "36"
+            }
+          ],
+          "product": {
+            "id": "gid://shopify/Product/8852955857118",
+            "title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Slip-On Amarelo",
+            "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-slip-on-amarelo",
+            "status": "ACTIVE",
+            "vendor": "Onitsuka Tiger",
+            "productType": "Tênis",
+            "totalInventory": 6
+          },
+          "matched_query": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo"
+        }
+      ],
+      "tiny_searches": [
+        {
+          "query": "1183C102751-3",
+          "status": "Erro",
+          "count": 0,
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "top": []
+        },
+        {
+          "query": "1183C102751",
+          "status": "Erro",
+          "count": 0,
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "top": []
+        },
+        {
+          "query": "1183C102751 3",
+          "status": "Erro",
+          "count": 0,
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "top": []
+        },
+        {
+          "query": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+          "status": "OK",
+          "count": 18,
+          "error": null,
+          "top": [
+            {
+              "id": "1058668600",
+              "codigo": "1183C102 751",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+              "situacao": "A",
+              "preco": 2399.99
+            },
+            {
+              "id": "1058668607",
+              "codigo": "1183C102 751-1",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 34",
+              "situacao": "A",
+              "preco": 2299.99
+            },
+            {
+              "id": "1058668610",
+              "codigo": "1183C102 751-2",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 35",
+              "situacao": "A",
+              "preco": 2299.99
+            },
+            {
+              "id": "1061777459",
+              "codigo": "1183C102 751-11",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 35.5",
+              "situacao": "A",
+              "preco": 2299.99
+            },
+            {
+              "id": "1058668613",
+              "codigo": "1183C102 751-3",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo - 36",
+              "situacao": "A",
+              "preco": 2299.99
+            }
+          ]
+        },
+        {
+          "query": "Tênis Onitsuka Tiger Mexico 66",
+          "status": "OK",
+          "count": 100,
+          "error": null,
+          "top": [
+            {
+              "id": "1060293659",
+              "codigo": "1183C102250",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+              "situacao": "A",
+              "preco": 2299.99
+            },
+            {
+              "id": "1060293671",
+              "codigo": "1183C102250-1",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom - 34",
+              "situacao": "A",
+              "preco": 2299.99
+            },
+            {
+              "id": "1060293674",
+              "codigo": "1183C102250-2",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom - 35",
+              "situacao": "A",
+              "preco": 2299.99
+            },
+            {
+              "id": "1060293698",
+              "codigo": "1183C102250-10",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom - 35.5",
+              "situacao": "A",
+              "preco": 2299.99
+            },
+            {
+              "id": "1060293677",
+              "codigo": "1183C102250-3",
+              "nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom - 36",
+              "situacao": "A",
+              "preco": 2299.99
+            }
+          ]
+        }
+      ],
+      "tiny_matches": [
+        {
+          "id": "1058668613",
+          "codigo": "1183C102 751-3",
+          "nome": "",
+          "grade": {
+            "Tamanho": "36"
+          },
+          "source": "variacao",
+          "parent_id": "1058668600",
+          "parent_nome": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+          "matched_size_text": "36",
+          "exact_size_match": true,
+          "codigo_exact_sku_match": true,
+          "stock": {
+            "saldo_total_tiny": 5.0,
+            "lk_controle_found": true,
+            "lk_controle_saldo": null,
+            "deposit_count": 3
+          }
+        },
+        {
+          "id": "1060293677",
+          "codigo": "1183C102250-3",
+          "nome": "",
+          "grade": {
+            "Tamanho": "36"
+          },
+          "source": "variacao",
+          "parent_id": "1060293659",
+          "parent_nome": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+          "matched_size_text": "36",
+          "exact_size_match": true,
+          "codigo_exact_sku_match": false,
+          "stock": {
+            "saldo_total_tiny": 1.0,
+            "lk_controle_found": true,
+            "lk_controle_saldo": null,
+            "deposit_count": 3
+          }
+        }
+      ],
+      "resolution_status": "resolved_in_stock_no_sourcing_needed",
+      "recommended_route": "move_from_needs_data_to_monitor_or_stock_ok",
+      "reason": "Shopify/Tiny SKU mapping is resolved and stock exists; no quote/sourcing needed now.",
+      "safe_reference_quote_qty_not_purchase_qty": 0,
+      "lk_controle_stock_known": false,
+      "lk_controle_stock_sum": null,
+      "tiny_total_stock_known": true,
+      "tiny_total_stock_sum": 5.0,
+      "exact_product_match_count": 1,
+      "exact_code_match_count": 1
+    },
+    {
+      "family": "Camiseta Saint Studio Boxy",
+      "product_title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+      "sku": "SST-6502622-M",
+      "size_or_variant": "M/M",
+      "priority": "P1",
+      "sold_qty_fact_shopify": 2,
+      "revenue_fact_shopify": 619.98,
+      "previous_action_status": "sku_resolution_first",
+      "previous_match_status": null,
+      "shopify_variants_found": 5,
+      "shopify_variants": [
+        {
+          "variant_gid": "gid://shopify/ProductVariant/47860187398366",
+          "variant_id": "47860187398366",
+          "variant_title": "M/M",
+          "sku": "SST-6502622-M",
+          "inventory_quantity_shopify_signal": 0,
+          "selected_options": [
+            {
+              "name": "Tamanho",
+              "value": "M/M"
+            }
+          ],
+          "product": {
+            "id": "gid://shopify/Product/9108006502622",
+            "title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+            "handle": "camiseta-saint-studio-boxy-supima-breuer-preto",
+            "status": "ACTIVE",
+            "vendor": "Saint Studio",
+            "productType": "Camiseta",
+            "totalInventory": 5
+          },
+          "matched_query": "sku:SST-6502622-M"
+        },
+        {
+          "variant_gid": "gid://shopify/ProductVariant/47860187332830",
+          "variant_id": "47860187332830",
+          "variant_title": "XS/PP",
+          "sku": "SST-6502622-XS",
+          "inventory_quantity_shopify_signal": 0,
+          "selected_options": [
+            {
+              "name": "Tamanho",
+              "value": "XS/PP"
+            }
+          ],
+          "product": {
+            "id": "gid://shopify/Product/9108006502622",
+            "title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+            "handle": "camiseta-saint-studio-boxy-supima-breuer-preto",
+            "status": "ACTIVE",
+            "vendor": "Saint Studio",
+            "productType": "Camiseta",
+            "totalInventory": 5
+          },
+          "matched_query": "sku:SST-6502622*"
+        },
+        {
+          "variant_gid": "gid://shopify/ProductVariant/47860187365598",
+          "variant_id": "47860187365598",
+          "variant_title": "S/P",
+          "sku": "SST-6502622-S",
+          "inventory_quantity_shopify_signal": 2,
+          "selected_options": [
+            {
+              "name": "Tamanho",
+              "value": "S/P"
+            }
+          ],
+          "product": {
+            "id": "gid://shopify/Product/9108006502622",
+            "title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+            "handle": "camiseta-saint-studio-boxy-supima-breuer-preto",
+            "status": "ACTIVE",
+            "vendor": "Saint Studio",
+            "productType": "Camiseta",
+            "totalInventory": 5
+          },
+          "matched_query": "sku:SST-6502622*"
+        },
+        {
+          "variant_gid": "gid://shopify/ProductVariant/47860187431134",
+          "variant_id": "47860187431134",
+          "variant_title": "L/G",
+          "sku": "SST-6502622-L",
+          "inventory_quantity_shopify_signal": 1,
+          "selected_options": [
+            {
+              "name": "Tamanho",
+              "value": "L/G"
+            }
+          ],
+          "product": {
+            "id": "gid://shopify/Product/9108006502622",
+            "title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+            "handle": "camiseta-saint-studio-boxy-supima-breuer-preto",
+            "status": "ACTIVE",
+            "vendor": "Saint Studio",
+            "productType": "Camiseta",
+            "totalInventory": 5
+          },
+          "matched_query": "sku:SST-6502622*"
+        },
+        {
+          "variant_gid": "gid://shopify/ProductVariant/47860187463902",
+          "variant_id": "47860187463902",
+          "variant_title": "XL/GG",
+          "sku": "SST-6502622-XL",
+          "inventory_quantity_shopify_signal": 2,
+          "selected_options": [
+            {
+              "name": "Tamanho",
+              "value": "XL/GG"
+            }
+          ],
+          "product": {
+            "id": "gid://shopify/Product/9108006502622",
+            "title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+            "handle": "camiseta-saint-studio-boxy-supima-breuer-preto",
+            "status": "ACTIVE",
+            "vendor": "Saint Studio",
+            "productType": "Camiseta",
+            "totalInventory": 5
+          },
+          "matched_query": "sku:SST-6502622*"
+        }
+      ],
+      "tiny_searches": [
+        {
+          "query": "SST-6502622-M",
+          "status": "Erro",
+          "count": 0,
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "top": []
+        },
+        {
+          "query": "SST-6502622",
+          "status": "Erro",
+          "count": 0,
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "top": []
+        },
+        {
+          "query": "SST 6502622 M",
+          "status": "Erro",
+          "count": 0,
+          "error": [
+            {
+              "erro": "A consulta não retornou registros"
+            }
+          ],
+          "top": []
+        },
+        {
+          "query": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+          "status": "OK",
+          "count": 6,
+          "error": null,
+          "top": [
+            {
+              "id": "1069544431",
+              "codigo": "",
+              "nome": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+              "situacao": "A",
+              "preco": 309.99
+            },
+            {
+              "id": "1069544455",
+              "codigo": "",
+              "nome": "Camiseta Saint Studio Boxy Supima Breuer Preto - L-G",
+              "situacao": "A",
+              "preco": 309.99
+            },
+            {
+              "id": "1069544450",
+              "codigo": "",
+              "nome": "Camiseta Saint Studio Boxy Supima Breuer Preto - M-M",
+              "situacao": "A",
+              "preco": 309.99
+            },
+            {
+              "id": "1069544445",
+              "codigo": "",
+              "nome": "Camiseta Saint Studio Boxy Supima Breuer Preto - S-P",
+              "situacao": "A",
+              "preco": 309.99
+            },
+            {
+              "id": "1069544460",
+              "codigo": "",
+              "nome": "Camiseta Saint Studio Boxy Supima Breuer Preto - XL-GG",
+              "situacao": "A",
+              "preco": 309.99
+            }
+          ]
+        },
+        {
+          "query": "Camiseta Saint Studio Boxy Supima",
+          "status": "Erro",
+          "count": 0,
+          "error": [
+            {
+              "erro": "API Bloqueada - Excedido o número de acessos a API, aguarde alguns minutos e tente novamente"
+            }
+          ],
+          "top": []
+        }
+      ],
+      "tiny_matches": [
+        {
+          "id": "1069544450",
+          "codigo": "",
+          "nome": "",
+          "grade": {
+            "Tamanho": "M/M"
+          },
+          "source": "variacao",
+          "parent_id": "1069544431",
+          "parent_nome": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+          "matched_size_text": "M/M",
+          "exact_size_match": true,
+          "codigo_exact_sku_match": false,
+          "stock": {
+            "saldo_total_tiny": 2.0,
+            "lk_controle_found": true,
+            "lk_controle_saldo": 2.0,
+            "deposit_count": 3
+          },
+          "source_note": "fallback_from_same_session_readonly_observation_after_tiny_throttle"
+        }
+      ],
+      "resolution_status": "resolved_product_stock_ok_tiny_code_missing",
+      "recommended_route": "move_from_needs_data_to_monitor_or_stock_ok",
+      "reason": "Exact product/size was found in Tiny and stock exists; Tiny codigo remains a hygiene issue but not a sourcing blocker.",
+      "safe_reference_quote_qty_not_purchase_qty": 0,
+      "lk_controle_stock_known": true,
+      "lk_controle_stock_sum": 2.0,
+      "tiny_total_stock_known": true,
+      "tiny_total_stock_sum": 2.0,
+      "exact_product_match_count": 1,
+      "exact_code_match_count": 0
+    }
+  ],
+  "not_performed": [
+    "shopify_write",
+    "tiny_write",
+    "merchant_feed_write",
+    "gsc_admin_or_indexing_submit",
+    "klaviyo_send_or_schedule",
+    "customer_contact",
+    "supplier_contact",
+    "external_marketplace_lookup",
+    "purchase",
+    "purchase_order",
+    "reservation",
+    "price_or_stock_change",
+    "campaign_or_external_send",
+    "n8n_flow_creation"
+  ]
+}
