@@ -1,0 +1,1544 @@
+{
+  "generated_at": "2026-05-12T02:28:18.584411+00:00",
+  "scope": "LK GMC required attrs post-apply product verification",
+  "status": "gmc_required_attrs_product_attrs_verified",
+  "summary": {
+    "rows_verified": 80,
+    "rows_matching_applied_attrs": 80,
+    "rows_not_matching": 0,
+    "content_api_product_writes": 0,
+    "merchant_status_recheck_note": "Product resources show applied attributes; item issue/status clearance may lag until Merchant reprocesses diagnostics."
+  },
+  "results": [
+    {
+      "offer_id": "JI3185-7",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "size": "40"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "sizes": [
+          "40"
+        ],
+        "color": "Cream/White"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "HQ4309-610-40",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "40"
+        ],
+        "color": "Pearl/Pink"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "U204L2SZ-36",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "36"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "36"
+        ],
+        "color": "Linen/Bege"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "U1906LNT-10",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "42"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "42"
+        ],
+        "color": "Black/Preto"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "JH5439-8",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "41"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "41"
+        ],
+        "color": "Bordô"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "JH5439-6",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "39"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "39"
+        ],
+        "color": "Bordô"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "HQ4307-101-38",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "38"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "38"
+        ],
+        "color": "White/Red"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "HQ4307-300-43",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "43"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "43"
+        ],
+        "color": "Mineral/Verde"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "4150234_3581_412-2",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "37/38"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "37/38"
+        ],
+        "color": "Marrom"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "U204L2SZ-44",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "44"
+        ],
+        "color": "Linen/Bege"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "ST64",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "38"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "38"
+        ],
+        "color": "Azul"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "YR0067",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "L/G"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "L/G"
+        ],
+        "color": "Preto"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "CUNISPHEREBLK-1",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "G/L"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "G/L"
+        ],
+        "color": "Preto"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "JI3185-8",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "size": "41"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "sizes": [
+          "41"
+        ],
+        "color": "Cream/White"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "JI3185-3",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "size": "36"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "sizes": [
+          "36"
+        ],
+        "color": "Cream/White"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "125AS254481F-5",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "XL/GG"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "XL/GG"
+        ],
+        "color": "Cinza"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "HQ4309-610-38",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "38"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "38"
+        ],
+        "color": "Pearl/Pink"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "JQ9231-6",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "39"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "39"
+        ],
+        "color": "Black/Chalk"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "U1906LAE-36",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "size": "36"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "sizes": [
+          "36"
+        ],
+        "color": "Silver/Grey"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "U1906LNT-11",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "44"
+        ],
+        "color": "Black/Preto"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "ST70",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "40"
+        ],
+        "color": "Preto"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1025116-1A17741_2NM5J-4",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "37"
+        ],
+        "color": "Brown/Bege"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "5362-1",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "P/S"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "P/S"
+        ],
+        "color": "Off white/White"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "JH5439-7",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "40"
+        ],
+        "color": "Bordô"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "U204L2SZ-42",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "42"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "42"
+        ],
+        "color": "Linen/Bege"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "YR0066",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "M/M"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "M/M"
+        ],
+        "color": "Preto"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1025116-1A17741_2NM5J-9",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "40"
+        ],
+        "color": "Brown/Bege"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "HQ4307-101-44",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "44"
+        ],
+        "color": "White/Red"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1023851-1A17746_2NM8J-6",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "41.5"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "41.5"
+        ],
+        "color": "Brown/White"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "HQ4307-100-40",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "40"
+        ],
+        "color": "Bege"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "HQ4307-300-42",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "42"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "42"
+        ],
+        "color": "Mineral/Verde"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "JQ9231-3",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "36"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "36"
+        ],
+        "color": "Black/Chalk"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "HV0823-100-5",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "size": "38"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "sizes": [
+          "38"
+        ],
+        "color": "Azul"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "BQ6472104-1",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "38"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "38"
+        ],
+        "color": "Blue/Azul"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1201A789-020-41",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "41"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "41"
+        ],
+        "color": "Graphite/Grey"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1183C468200-2",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "35"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "35"
+        ],
+        "color": "Desert/Cream"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "DD0587-002-43",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "43"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "43"
+        ],
+        "color": "Grey/Cinza"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "HV0823-100-6",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "size": "39"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "sizes": [
+          "39"
+        ],
+        "color": "Azul"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1201A789-020-39",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "39"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "39"
+        ],
+        "color": "Graphite/Grey"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1183C428.200-10",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "43"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "43"
+        ],
+        "color": "Green/Bege"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "UGTR83J-42",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "42"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "42"
+        ],
+        "color": "Bege"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1183C233-250-4",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "37"
+        ],
+        "color": "Natural/Navy"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "u9060aga-8",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "41"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "41"
+        ],
+        "color": "Grey/Cinza"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "A15FW740-1",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "34"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "34"
+        ],
+        "color": "Black/Preto"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "3MG10844970-40",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "40"
+        ],
+        "color": "Verde"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1183C141-100-4",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "37"
+        ],
+        "color": "White/Branco"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "U204L6A6-34",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "34"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "34"
+        ],
+        "color": "Bege"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "JI0073-3",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "female",
+        "size": "35"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "female",
+        "sizes": [
+          "35"
+        ],
+        "color": "Laranja"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "HM5973-603-11",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "44"
+        ],
+        "color": "Pink/Rosa"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "JR5763",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "female",
+        "size": "39"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "female",
+        "sizes": [
+          "39"
+        ],
+        "color": "Sky/Azul"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "FZ5042-041-44",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "44"
+        ],
+        "color": "Denim/Azul"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1183C480-001-10",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "44"
+        ],
+        "color": "Black/Preto"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "JR1639-4",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "37"
+        ],
+        "color": "Green/Bege"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1183C480-001-6",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "39"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "39"
+        ],
+        "color": "Black/Preto"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "HV0823-100-2",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "size": "35"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "sizes": [
+          "35"
+        ],
+        "color": "Azul"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "U204L4HH-42",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "42"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "42"
+        ],
+        "color": "Ash/Cinza"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "DH1348-001-34",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "34"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "34"
+        ],
+        "color": "Laranja"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "FQ8138-600-46",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "46"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "46"
+        ],
+        "color": "Vermelho"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "HQ3490-099-6",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "43"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "43"
+        ],
+        "color": "Grey/Cinza"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "AA3834-100-45",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "45"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "45"
+        ],
+        "color": "Branco"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "CN0151-002-38",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "38"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "38"
+        ],
+        "color": "Black/Yellow"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1183A360.205-2",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "35"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "35"
+        ],
+        "color": "Midnight/Bege"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "IO7847-001-35",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "35"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "35"
+        ],
+        "color": "Royal"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "JQ6440",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "female",
+        "size": "40"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "female",
+        "sizes": [
+          "40"
+        ],
+        "color": "Pink/Rosa"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "43774078390070",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "41"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "41"
+        ],
+        "color": "Branco/Preto"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1182A708.700-4",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "37"
+        ],
+        "color": "Red/Cream"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "AV3594-104-34",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "34"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "34"
+        ],
+        "color": "Brown/Stone"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "HQ7978-103-44",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "44"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "44"
+        ],
+        "color": "White"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "U204L5AV-41",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "41"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "41"
+        ],
+        "color": "Grey/Cinza"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "43774078391660",
+      "ok": true,
+      "expected": {
+        "ageGroup": "kids",
+        "gender": "unisex",
+        "size": "XXS/PPP"
+      },
+      "actual": {
+        "ageGroup": "kids",
+        "gender": "unisex",
+        "sizes": [
+          "XXS/PPP"
+        ],
+        "color": "Light/Heather"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "DR5415-100-40",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "40"
+        ],
+        "color": "Navy/Branco"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "bb5351",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "35"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "35"
+        ],
+        "color": "Black"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "U204L1KP-37",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "37"
+        ],
+        "color": "Dark/Silver"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1182A678.700-7",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "40"
+        ],
+        "color": "Pink/Graphite"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "KI3582-40",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "40"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "40"
+        ],
+        "color": "Cream/White"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "IQ7166-800-34",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "34"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "34"
+        ],
+        "color": "Orange/Laranja"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1183A360-002-4",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "37"
+        ],
+        "color": "Black/Preto"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1201A906-001-35",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "35"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "35"
+        ],
+        "color": "Black/Silver"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "w6525r_01-2",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "XS/PP"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "XS/PP"
+        ],
+        "color": "Azul/Marinho"
+      },
+      "source": "feed",
+      "error": null
+    },
+    {
+      "offer_id": "1182A708.020-4",
+      "ok": true,
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "size": "37"
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "37"
+        ],
+        "color": "Preto"
+      },
+      "source": "feed",
+      "error": null
+    }
+  ],
+  "not_performed": [
+    "merchant_write",
+    "shopify_write",
+    "gsc_write",
+    "campaign_send",
+    "supplier_contact",
+    "purchase_or_po",
+    "marketplace_call",
+    "n8n_flow_creation"
+  ]
+}

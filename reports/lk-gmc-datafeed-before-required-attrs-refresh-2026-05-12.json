@@ -1,0 +1,36 @@
+{
+  "kind": "content#datafeed",
+  "id": "407508563",
+  "name": "LK Sneakers - Color Supplemental Feed",
+  "contentType": "products",
+  "targets": [
+    {
+      "country": "BR",
+      "feedLabel": "BR",
+      "targetCountries": [
+        "BR"
+      ],
+      "language": "pt",
+      "includedDestinations": [
+        "DisplayAds",
+        "SurfacesAcrossGoogle",
+        "Shopping"
+      ],
+      "excludedDestinations": [
+        "Shopping",
+        "LocalSurfacesAcrossGoogle"
+      ]
+    }
+  ],
+  "fileName": "lk_sneakers_gmc_color_feed.csv",
+  "fetchSchedule": {
+    "paused": false,
+    "weekday": "monday",
+    "hour": 3,
+    "timeZone": "America/Sao_Paulo",
+    "fetchUrl": "https://gist.githubusercontent.com/lk-snkrs/8eb7f7fb61a46fa8d5a4d64fa7f21b2f/raw/lk_sneakers_gmc_color_feed.csv"
+  },
+  "format": {
+    "quotingMode": "value quoting"
+  }
+}

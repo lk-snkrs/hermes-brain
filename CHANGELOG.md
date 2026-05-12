@@ -1,3 +1,10 @@
+## 2026-05-12 — LK GMC Required Attributes Applied
+
+- Lucas aprovou: “Corrigir e aplicar e seguir”. Aplicado o menor caminho: supplemental feed existente do Merchant (`LK Sneakers - Color Supplemental Feed`) via Gist, preservando 3.613 linhas e adicionando `age_group`, `gender`, `size` aos 80 offer_ids aprovados.
+- Como o raw revisionless do Gist estava cacheado, o datafeed do Merchant foi atualizado para o raw URL revisionado e `fetchNow` foi acionado; backup CSV e backup JSON do datafeed foram salvos para rollback.
+- Verificação pós-write: 80/80 produtos no Content API agora retornam `ageGroup`/`gender`/`sizes` aplicados; 0 mismatch. Diagnostics de item no Merchant podem demorar para limpar até reprocessamento.
+- Writes executados e aprovados: 1 patch de Gist/supplemental feed + 1 update de fetch URL do datafeed. Não houve Shopify/GSC/checkout/theme/Klaviyo/fornecedor/cliente/compra/marketplace/n8n.
+
 ## 2026-05-12 — LK GMC Required Attributes Preview Read-only
 
 - Preparado `scripts/lk_gmc_required_attrs_preview_20260512.py` para converter issues P1 de atributos obrigatórios do Merchant em CSV local de correção, sem upload/write.
