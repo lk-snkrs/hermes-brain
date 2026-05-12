@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-05-12T00:07:41.249010+00:00",
+  "automation_id": "LK-AUTO-005",
+  "name": "Klaviyo CRM draft watcher",
+  "mode": "manual_readonly_readiness_preview",
+  "readiness_status": "ready_for_lucas_review_no_send",
+  "summary": {
+    "checks": 10,
+    "fail_count": 0,
+    "warn_count": 0,
+    "campaign_status": "Draft",
+    "campaign_scheduled_at": null,
+    "campaign_send_time": null,
+    "approved_profiles_submitted": 9,
+    "unique_emails_submitted": 9,
+    "crons_created": 0,
+    "n8n_flows_created": 0,
+    "campaign_sends": 0,
+    "campaign_schedules": 0,
+    "customer_contacts": 0,
+    "production_writes": 0
+  },
+  "klaviyo_objects": {
+    "list_name": "LK Phase 5 P1 Loja Física Recompra 2026-05-11",
+    "list_id": "U8YCCE",
+    "template_name": "LK Phase 5 P1 Curadoria Loja Física 2026-05-11",
+    "template_id": "XUSEtu",
+    "campaign_name": "LK Phase 5 P1 Curadoria Loja Física 2026-05-11, DRAFT",
+    "campaign_id": "01KRC1DPTY615GF5FNBPXMPKY6",
+    "campaign_message_id": "01KRC1DPVAMF0M9SRSR7RDQX1G"
+  },
+  "checks": [
+    {
+      "name": "list_get_readonly",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Klaviyo list can be read by ID.",
+      "evidence": {
+        "http_status": 200,
+        "list_id": "U8YCCE",
+        "list_name": "LK Phase 5 P1 Loja Física Recompra 2026-05-11"
+      }
+    },
+    {
+      "name": "template_get_readonly",
+      "ok": true,
+      "severity": "warn",
+      "detail": "Klaviyo template can be read by ID; warn only because the campaign can still exist without template linked via API.",
+      "evidence": {
+        "http_status": 200,
+        "template_id": "XUSEtu",
+        "template_name": "LK Phase 5 P1 Curadoria Loja Física 2026-05-11"
+      }
+    },
+    {
+      "name": "campaign_get_readonly",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Klaviyo campaign can be read by ID.",
+      "evidence": {
+        "http_status": 200,
+        "campaign_id": "01KRC1DPTY615GF5FNBPXMPKY6",
+        "campaign_name": "LK Phase 5 P1 Curadoria Loja Física 2026-05-11, DRAFT"
+      }
+    },
+    {
+      "name": "campaign_is_draft",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Campaign must remain Draft.",
+      "evidence": {
+        "live_or_source_status": "Draft"
+      }
+    },
+    {
+      "name": "campaign_not_scheduled",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Campaign must not be scheduled.",
+      "evidence": {
+        "scheduled_at": null
+      }
+    },
+    {
+      "name": "campaign_send_time_empty",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Campaign send_time must be empty.",
+      "evidence": {
+        "send_time": null
+      }
+    },
+    {
+      "name": "campaign_not_archived",
+      "ok": true,
+      "severity": "warn",
+      "detail": "Campaign should not be archived if Lucas needs to inspect the draft.",
+      "evidence": {
+        "archived": false
+      }
+    },
+    {
+      "name": "no_raw_pii_output",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Report uses only counts and Klaviyo object IDs; no customer emails/names are emitted.",
+      "evidence": {
+        "approved_profiles_submitted": 9,
+        "unique_emails_submitted": 9
+      }
+    },
+    {
+      "name": "no_deep_link_guessed",
+      "ok": true,
+      "severity": "fail",
+      "detail": "No Klaviyo UI deep link is generated; use verified IDs/names only.",
+      "evidence": {
+        "campaign_id": "01KRC1DPTY615GF5FNBPXMPKY6",
+        "campaign_message_id": "01KRC1DPVAMF0M9SRSR7RDQX1G"
+      }
+    },
+    {
+      "name": "send_schedule_mutations_blocked",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Script only uses GET endpoints and does not call campaign send/schedule/update/create endpoints.",
+      "evidence": {
+        "methods_used": [
+          "GET"
+        ]
+      }
+    }
+  ],
+  "guardrails": [
+    "No campaign send executed.",
+    "No campaign schedule executed.",
+    "No campaign/list/template mutation executed by this watcher.",
+    "No flow activation executed.",
+    "No SMS/WhatsApp/customer contact executed.",
+    "No raw PII emitted into Brain or Telegram.",
+    "No unverified Klaviyo deep link generated."
+  ],
+  "next_gate": "Lucas can review verified IDs/names and decide adjust, pause, or explicitly approve a separate send packet. This watcher itself must not send."
+}

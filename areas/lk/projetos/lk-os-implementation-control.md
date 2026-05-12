@@ -294,6 +294,7 @@ Entregáveis:
 - [x] Aprovação Lucas antes de ativar produção: Lucas disse `Seguir` após o gate de cadência/destino; ativados apenas os dois cronjobs low-risk/read-only `LK-AUTO-001` e `LK-AUTO-002`, ambos `no_agent`, com entrega obrigatória do report e 0 n8n/write produtivo.
 - [x] Registry operacional reconciliado: `LK-AUTO-001/002/003` ativos como crons read-only/preview; `LK-AUTO-004` manual pós-ação; `LK-AUTO-005/006` medium risk manual-only/bloqueados.
 - [x] `LK-AUTO-004` guard manual pós-ação: `scripts/lk_approval_ledger_refresh_guard_20260511.py` regenera ledger, valida duplicidade/contradições e confirma 24 registros com 0 fails/warnings, sem criar cron/n8n/write.
+- [x] `LK-AUTO-005` Klaviyo CRM draft watcher manual/read-only: `scripts/lk_klaviyo_crm_draft_readiness_watcher_20260511.py` confirma draft por ID/nome, 10 checks, 0 fails/warnings, sem send/schedule/customer contact/PII/deep link chutado.
 
 Critério de saída:
 

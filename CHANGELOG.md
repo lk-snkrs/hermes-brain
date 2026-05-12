@@ -1,3 +1,11 @@
+## 2026-05-11 — LK Klaviyo CRM Draft Readiness Watcher
+
+- Avançado `LK-AUTO-005` para watcher manual/read-only de readiness do rascunho Klaviyo Phase 5 P1, usando apenas GET por IDs verificados.
+- Resultado: `ready_for_lucas_review_no_send`, 10 checks, 0 fails, 0 warnings; campaign permanece `Draft`, `scheduled_at=null`, `send_time=null`.
+- Objetos verificados: list `U8YCCE`, template `XUSEtu`, campaign `01KRC1DPTY615GF5FNBPXMPKY6`, campaign_message `01KRC1DPVAMF0M9SRSR7RDQX1G`; sem deep link chutado e sem PII no Brain.
+- Guardrails: 0 sends, 0 schedules, 0 flow activation, 0 customer contacts, 0 production writes, 0 cron/n8n.
+- Artefatos: `scripts/lk_klaviyo_crm_draft_readiness_watcher_20260511.py`, `areas/lk/rotinas/klaviyo-crm-draft-readiness-watcher-2026-05-11.md`, `reports/lk-klaviyo-crm-draft-readiness-watcher-2026-05-11.md` e `.json`.
+
 ## 2026-05-11 — LK Approval Ledger Refresh Guard
 
 - Avançado `LK-AUTO-004` de manual simples para guard manual pós-ação: regenera o Approval Learning Ledger, valida contradições e gera readiness report.
