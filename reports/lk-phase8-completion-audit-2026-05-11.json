@@ -1,0 +1,208 @@
+{
+  "generated_at": "2026-05-12T00:25:02.437682+00:00",
+  "scope": "LK OS Phase 8 completion audit: safe-by-default automations final state",
+  "completion_status": "phase8_complete_with_guardrails",
+  "summary": {
+    "automations_tracked": 6,
+    "active_crons": 3,
+    "mandatory_deliveries": 2,
+    "readonly_preview_crons": 1,
+    "manual_guards_ready": 3,
+    "medium_risk_manual_only": 2,
+    "checks": 8,
+    "fail_count": 0,
+    "warn_count": 0,
+    "n8n_flows_created": 0,
+    "production_writes": 0,
+    "external_sends_or_contacts": 0,
+    "purchases_or_pos": 0,
+    "external_marketplace_calls": 0
+  },
+  "final_state": [
+    {
+      "automation_id": "LK-AUTO-001",
+      "name": "Daily Sales Brief",
+      "final_status": "active mandatory daily report",
+      "job_id": "7c688553e293",
+      "risk": "low",
+      "allowed_now": "send mandatory internal/origin report only",
+      "blocked": "writes/campaigns/customer sends/n8n"
+    },
+    {
+      "automation_id": "LK-AUTO-002",
+      "name": "Weekly CEO Review",
+      "final_status": "active mandatory weekly report",
+      "job_id": "953b9055458e",
+      "risk": "low",
+      "allowed_now": "send mandatory internal/origin report only",
+      "blocked": "writes/campaigns/customer sends/n8n"
+    },
+    {
+      "automation_id": "LK-AUTO-003",
+      "name": "SEO/CRO weekly loop",
+      "final_status": "active read-only preview cron",
+      "job_id": "15777e3416dc",
+      "risk": "low",
+      "allowed_now": "generate preview/queue",
+      "blocked": "Shopify/Merchant/GSC/theme writes without approval"
+    },
+    {
+      "automation_id": "LK-AUTO-004",
+      "name": "Approval Learning Ledger refresh",
+      "final_status": "manual guard passed",
+      "job_id": "",
+      "risk": "low",
+      "allowed_now": "manual ledger refresh/validation",
+      "blocked": "auto-approve/auto-execute/cron"
+    },
+    {
+      "automation_id": "LK-AUTO-005",
+      "name": "Klaviyo CRM draft watcher",
+      "final_status": "manual read-only readiness ready, no send",
+      "job_id": "",
+      "risk": "medium",
+      "allowed_now": "verify draft IDs/status via GET",
+      "blocked": "send/schedule/flow/customer contact/deep link guessing"
+    },
+    {
+      "automation_id": "LK-AUTO-006",
+      "name": "On-demand sourcing router",
+      "final_status": "manual per-item readiness ready, no external action",
+      "job_id": "",
+      "risk": "medium",
+      "allowed_now": "decision queue/readiness only",
+      "blocked": "marketplace calls/supplier contact/purchase/PO/write/full-sync"
+    }
+  ],
+  "checks": [
+    {
+      "name": "six_automations_tracked",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Exactly 6 LK-AUTO entries must be tracked.",
+      "evidence": {
+        "count": 6
+      }
+    },
+    {
+      "name": "daily_weekly_mandatory",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Daily/Weekly must remain mandatory delivery crons.",
+      "evidence": {}
+    },
+    {
+      "name": "seo_cro_readonly_preview_cron",
+      "ok": true,
+      "severity": "fail",
+      "detail": "SEO/CRO cron must remain read-only preview.",
+      "evidence": {}
+    },
+    {
+      "name": "ledger_guard_passed",
+      "ok": true,
+      "severity": "fail",
+      "detail": "LK-AUTO-004 ledger guard must pass.",
+      "evidence": {
+        "ledger_records": 24,
+        "executed_verified": 8,
+        "pending_future": 8,
+        "needs_approval": 5,
+        "needs_data": 3,
+        "fail_count": 0,
+        "warn_count": 0,
+        "crons_created": 0,
+        "n8n_flows_created": 0,
+        "external_sends": 0,
+        "production_writes": 0
+      }
+    },
+    {
+      "name": "klaviyo_ready_no_send",
+      "ok": true,
+      "severity": "fail",
+      "detail": "LK-AUTO-005 must be review-ready with no send/schedule.",
+      "evidence": {
+        "checks": 10,
+        "fail_count": 0,
+        "warn_count": 0,
+        "campaign_status": "Draft",
+        "campaign_scheduled_at": null,
+        "campaign_send_time": null,
+        "approved_profiles_submitted": 9,
+        "unique_emails_submitted": 9,
+        "crons_created": 0,
+        "n8n_flows_created": 0,
+        "campaign_sends": 0,
+        "campaign_schedules": 0,
+        "customer_contacts": 0,
+        "production_writes": 0
+      }
+    },
+    {
+      "name": "sourcing_ready_no_external_action",
+      "ok": true,
+      "severity": "fail",
+      "detail": "LK-AUTO-006 must be decision-ready with no marketplace/supplier/purchase action.",
+      "evidence": {
+        "checks": 15,
+        "fail_count": 0,
+        "warn_count": 0,
+        "router_rows": 8,
+        "ready_after_manual_approval_count": 4,
+        "optional_bundle_count": 1,
+        "blocked_needs_data_count": 3,
+        "fila_a_rows_considered": 40,
+        "executive_top_count": 15,
+        "quote_records": 15,
+        "preview_quote_qty_total_not_purchase_qty": 39,
+        "external_marketplace_calls": 0,
+        "supplier_contacts": 0,
+        "purchases": 0,
+        "purchase_orders": 0,
+        "shopify_writes": 0,
+        "tiny_writes": 0,
+        "price_or_stock_changes": 0,
+        "crons_created": 0,
+        "n8n_flows_created": 0
+      }
+    },
+    {
+      "name": "no_new_external_or_write_actions",
+      "ok": true,
+      "severity": "fail",
+      "detail": "Completion audit must show zero n8n, writes, sends/contacts, purchases and marketplace calls.",
+      "evidence": {
+        "n8n_flows_created": 0,
+        "production_writes": 0,
+        "external_sends_or_contacts": 0,
+        "purchases_or_pos": 0,
+        "external_marketplace_calls": 0
+      }
+    },
+    {
+      "name": "p0_p1_delivery_semantics",
+      "ok": true,
+      "severity": "fail",
+      "detail": "P0/P1 must remain priority labels, not delivery triggers.",
+      "evidence": {
+        "p0": "Urgente hoje; pode exigir ação no mesmo dia.",
+        "p1": "Importante acompanhar/decidir; não é necessariamente incêndio.",
+        "delivery_rule": "Daily e Weekly são enviados sempre na cadência aprovada; P0/P1 só priorizam a leitura."
+      }
+    }
+  ],
+  "rollback": {
+    "LK-AUTO-001": "pause/remove cron 7c688553e293",
+    "LK-AUTO-002": "pause/remove cron 953b9055458e",
+    "LK-AUTO-003": "pause/remove cron 15777e3416dc",
+    "manual_artifacts": "revert PR or supersede report; no recurring job exists for LK-AUTO-004/005/006"
+  },
+  "next_gates": [
+    "Monitor first Daily mandatory report delivery at 2026-05-12 08:00 BRT.",
+    "Monitor first Weekly mandatory report delivery at 2026-05-18 09:00 BRT.",
+    "Keep SEO/CRO as preview; write actions require explicit preview approval.",
+    "Klaviyo remains no-send until Lucas explicitly approves a send/schedule packet.",
+    "Sourcing remains per-item only; no marketplace lookup/contact/purchase without named approval."
+  ]
+}

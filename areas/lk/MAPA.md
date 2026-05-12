@@ -41,6 +41,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `rotinas/approval-ledger-refresh-guard-2026-05-11.md` — `LK-AUTO-004` guard manual pós-ação: regenera ledger, valida contradições e gera readiness; 24 registros, 0 fails/warnings, 0 cron/n8n/write.
 - `rotinas/klaviyo-crm-draft-readiness-watcher-2026-05-11.md` — `LK-AUTO-005` watcher manual/read-only do rascunho Klaviyo: 10 checks, Draft confirmado, sem schedule/send/PII/deep link chutado.
 - `rotinas/on-demand-sourcing-router-readiness-guard-2026-05-11.md` — `LK-AUTO-006` guard manual/read-only por item: 15 checks, 0 fails/warnings, 4 famílias prontas só após aprovação manual, sem marketplace/fornecedor/compra/write/cron.
+- `rotinas/phase8-completion-audit-2026-05-11.md` — fechamento Fase 8: 6 `LK-AUTO` consolidados, 3 crons ativos, 2 reports obrigatórios, 3 guards manuais, 0 n8n/writes/envios externos/compra/marketplace.
 - `rotinas/full-sync.md` — sincronizações LK.
 - `rotinas/morning-briefing.md` — briefing matinal.
 - `rotinas/sync-log.md` — auditoria de syncs.
