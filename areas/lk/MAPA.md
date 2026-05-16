@@ -16,6 +16,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `projetos/lk-os-program-to-finish-2026-05-14.md` — mapa de execução para fechar o que foi programado: GMC final, Mission Control refresh, pacote Droper approval-gated, sourcing queue e Loyalty em pending_future.
 - `projetos/lk-os-prd-pending-backlog-2026-05-15.md` — backlog canônico das pendências do PRD após decisão do Lucas: inclui sourcing/Júlio, GMC preço/UI checklist, residual GMC, lead time real, Klaviyo draft, Mission Control escopo/cadência, Loyalty pending_future e correção posterior com lacunas do PRD completo.
 - `projetos/lk-os-prd-full-gap-audit-2026-05-15.md` — auditoria de lacunas contra o PRD inicial/v0.2: Data Quality, Daily/Weekly, Pulso Comercial, CRO, Brand Mix, Paid/Influencer, Content Engine, Trend-to-Blog, Shopify Ops, SEO orgânico, WhatsApp/loja física, Notion schema, Pricing, integrações e Approval/Learning Loop.
+- `rotinas/lk-os-sales-reports-whatsapp-email-designmd-2026-05-16.md` — desenho operacional dos três relatórios recorrentes de vendas solicitados por Lucas: manhã/dia anterior, pulso 16h e fechamento loja 19h30, com WhatsApp + e-mail DesignMD/Klaviyo-like em modo preview/approval-gated antes de qualquer envio externo.
 - `projetos/lk-os-implementation-control.md` — plano mestre vivo de implementação do Projeto LK OS, com fases, definição de pronto, todo-list, próximos passos e frase canônica de retomada: `Seguir Projeto LK OS`.
 
 ## Design e comunicação visual
