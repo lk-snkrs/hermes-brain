@@ -1,0 +1,458 @@
+{
+  "generated_at": "2026-05-14T18:35:18.184730+00:00",
+  "status": "completed_verified",
+  "summary": {
+    "repair_count": 4,
+    "execution_counts": {
+      "patched": 4
+    },
+    "verify_counts": {
+      "match": 2,
+      "mismatch": 2
+    },
+    "final_rows_with_target_issue": 0,
+    "final_target_issue_counts": {},
+    "delayed_reverify_counts": {
+      "match": 4
+    },
+    "final_rows_with_target_issue_delayed": 0,
+    "final_target_issue_counts_delayed": {}
+  },
+  "rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-lia-gtin-point-repair-rollback-20260514T183147Z.json",
+  "progress_jsonl_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-lia-gtin-point-repair-progress-20260514T183147Z.jsonl",
+  "execution_results": [
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-1",
+      "status": "patched",
+      "old_gtin": "1804202401028",
+      "new_gtin": "196977897832",
+      "response_id": "local:pt:BR:LIA_FN5880-001-1"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-3",
+      "status": "patched",
+      "old_gtin": "1804202401028",
+      "new_gtin": "196977897832",
+      "response_id": "local:pt:BR:LIA_FN5880-001-3"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-6",
+      "status": "patched",
+      "old_gtin": "1804202401028",
+      "new_gtin": "196977897832",
+      "response_id": "local:pt:BR:LIA_FN5880-001-6"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HJ3386-300-8",
+      "status": "patched",
+      "old_gtin": "1608202402036",
+      "new_gtin": "197601227759",
+      "response_id": "local:pt:BR:LIA_HJ3386-300-8"
+    }
+  ],
+  "verified_results": [
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-1",
+      "expected_gtin": "196977897832",
+      "actual_gtin": "196977897832",
+      "match": true
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-3",
+      "expected_gtin": "196977897832",
+      "actual_gtin": "196977897832",
+      "match": true
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-6",
+      "expected_gtin": "196977897832",
+      "actual_gtin": "1804202401028",
+      "match": false
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HJ3386-300-8",
+      "expected_gtin": "197601227759",
+      "actual_gtin": "1608202402036",
+      "match": false
+    }
+  ],
+  "final_productstatus_results": [
+    {
+      "product_id": "local:pt:BR:LIA_1203A655-100-7",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_43774078386380",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_553558612-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_553558612-7",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_555088108-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_AQ3692-004-3",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_AQ3692-004-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_CU9225100-4",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_CZ0790-102-4",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DD1503601-39",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DM7866200-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DM7866200-7",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FB9927200-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN0344-001-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN4193100-2",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-1",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-3",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-4",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FQ8138-001-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FV5926-200-2",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FZ3129-200-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF4334004-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF4334004-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF7743-001-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF7743-001-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HJ3386-300-8",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_IE0875-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_IH5459-3",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U574LGIL-8",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060NRI-7",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060ZGE-4",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060ZGE-9",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_cz0790-101-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    }
+  ],
+  "not_performed": [
+    "Shopify write",
+    "Tiny write",
+    "POS/local inventory config",
+    "price/title/category/image/availability update",
+    "feed upload/fetch",
+    "campaign/message/send"
+  ],
+  "delayed_reverify_generated_at": "2026-05-14T18:36:52.613867+00:00",
+  "delayed_reverify_results": [
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-1",
+      "expected_gtin": "196977897832",
+      "actual_gtin": "196977897832",
+      "match": true
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-3",
+      "expected_gtin": "196977897832",
+      "actual_gtin": "196977897832",
+      "match": true
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-6",
+      "expected_gtin": "196977897832",
+      "actual_gtin": "196977897832",
+      "match": true
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HJ3386-300-8",
+      "expected_gtin": "197601227759",
+      "actual_gtin": "197601227759",
+      "match": true
+    }
+  ],
+  "final_productstatus_results_delayed": [
+    {
+      "product_id": "local:pt:BR:LIA_1203A655-100-7",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_43774078386380",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_553558612-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_553558612-7",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_555088108-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_AQ3692-004-3",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_AQ3692-004-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_CU9225100-4",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_CZ0790-102-4",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DD1503601-39",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DM7866200-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DM7866200-7",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FB9927200-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN0344-001-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN4193100-2",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-1",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-3",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-4",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FQ8138-001-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FV5926-200-2",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FZ3129-200-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF4334004-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF4334004-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF7743-001-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF7743-001-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HJ3386-300-8",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_IE0875-5",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_IH5459-3",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U574LGIL-8",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060NRI-7",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060ZGE-4",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060ZGE-9",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_cz0790-101-6",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    }
+  ]
+}

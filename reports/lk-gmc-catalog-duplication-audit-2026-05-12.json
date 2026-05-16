@@ -1,0 +1,628 @@
+{
+  "generated_at": "2026-05-12T10:45:05.798932+00:00",
+  "scope": "LK GMC catalog duplication audit read-only",
+  "status": "gmc_catalog_duplication_audit_ready_readonly",
+  "source_labels": [
+    "fact_merchant_center",
+    "fact_shopify_local_snapshot"
+  ],
+  "merchant_center": {
+    "productstatuses": {
+      "total_rows": 25578,
+      "unique_product_ids": 25578,
+      "unique_offer_ids": 23926,
+      "duplicate_offer_id_count": 1652,
+      "duplicate_offer_id_rows": 3304,
+      "dimension_counts": [
+        {
+          "channel": "online",
+          "content_language": "pt",
+          "target_country": "BR",
+          "count": 13940
+        },
+        {
+          "channel": "local",
+          "content_language": "pt",
+          "target_country": "BR",
+          "count": 11638
+        }
+      ],
+      "duplicate_samples": [
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-1",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-1",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-1"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-10",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-10",
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-10"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-2",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-2",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-2"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-3",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-3",
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-3"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-4",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-4",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-4"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-5",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-5",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-5"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-6",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-6",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-6"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-7",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-7",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-7"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-8",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-8",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-8"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-9",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-9",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-9"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-1",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-1",
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-1"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-10",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-10",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-10"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-2",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-2",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-2"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-3",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-3",
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-3"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-4",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-4",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-4"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-5",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-5",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-5"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-6",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-6",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-6"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-7",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-7",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-7"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-8",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-8",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-8"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-9",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-9",
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-9"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1182A677.001-1",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1182A677.001-1",
+            "local:pt:BR:LIA_1182A677.001-1"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger Mexico 66 TGRS Black/Gunmetal Glitter Pack Preto"
+          ]
+        },
+        {
+          "offer_id": "LIA_1182A677.001-10",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1182A677.001-10",
+            "local:pt:BR:LIA_1182A677.001-10"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger Mexico 66 TGRS Black/Gunmetal Glitter Pack Preto"
+          ]
+        },
+        {
+          "offer_id": "LIA_1182A677.001-11",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1182A677.001-11",
+            "online:pt:BR:LIA_1182A677.001-11"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger Mexico 66 TGRS Black/Gunmetal Glitter Pack Preto"
+          ]
+        },
+        {
+          "offer_id": "LIA_1182A677.001-12",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1182A677.001-12",
+            "local:pt:BR:LIA_1182A677.001-12"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger Mexico 66 TGRS Black/Gunmetal Glitter Pack Preto"
+          ]
+        },
+        {
+          "offer_id": "LIA_1182A677.001-2",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1182A677.001-2",
+            "local:pt:BR:LIA_1182A677.001-2"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger Mexico 66 TGRS Black/Gunmetal Glitter Pack Preto"
+          ]
+        }
+      ]
+    },
+    "products": {
+      "total_rows": 25578,
+      "unique_product_ids": 25578,
+      "unique_offer_ids": 23926,
+      "duplicate_offer_id_count": 1652,
+      "duplicate_offer_id_rows": 3304,
+      "dimension_counts": [
+        {
+          "channel": "online",
+          "content_language": "pt",
+          "target_country": "BR",
+          "count": 13940
+        },
+        {
+          "channel": "local",
+          "content_language": "pt",
+          "target_country": "BR",
+          "count": 11638
+        }
+      ],
+      "duplicate_samples": [
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-1",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-1",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-1"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-10",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-10",
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-10"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-2",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-2",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-2"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-3",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-3",
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-3"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-4",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-4",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-4"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-5",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-5",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-5"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-6",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-6",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-6"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-7",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-7",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-7"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-8",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-8",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-8"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1023851-1A17746_2NM8J-9",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1023851-1A17746_2NM8J-9",
+            "online:pt:BR:LIA_1023851-1A17746_2NM8J-9"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-1",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-1",
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-1"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-10",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-10",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-10"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-2",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-2",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-2"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-3",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-3",
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-3"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-4",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-4",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-4"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-5",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-5",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-5"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-6",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-6",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-6"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-7",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-7",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-7"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-8",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-8",
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-8"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1025116-1A17741_2NM5J-9",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1025116-1A17741_2NM5J-9",
+            "local:pt:BR:LIA_1025116-1A17741_2NM5J-9"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege"
+          ]
+        },
+        {
+          "offer_id": "LIA_1182A677.001-1",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1182A677.001-1",
+            "local:pt:BR:LIA_1182A677.001-1"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger Mexico 66 TGRS Black/Gunmetal Glitter Pack Preto"
+          ]
+        },
+        {
+          "offer_id": "LIA_1182A677.001-10",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1182A677.001-10",
+            "local:pt:BR:LIA_1182A677.001-10"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger Mexico 66 TGRS Black/Gunmetal Glitter Pack Preto"
+          ]
+        },
+        {
+          "offer_id": "LIA_1182A677.001-11",
+          "count": 2,
+          "product_ids_sample": [
+            "local:pt:BR:LIA_1182A677.001-11",
+            "online:pt:BR:LIA_1182A677.001-11"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger Mexico 66 TGRS Black/Gunmetal Glitter Pack Preto"
+          ]
+        },
+        {
+          "offer_id": "LIA_1182A677.001-12",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1182A677.001-12",
+            "local:pt:BR:LIA_1182A677.001-12"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger Mexico 66 TGRS Black/Gunmetal Glitter Pack Preto"
+          ]
+        },
+        {
+          "offer_id": "LIA_1182A677.001-2",
+          "count": 2,
+          "product_ids_sample": [
+            "online:pt:BR:LIA_1182A677.001-2",
+            "local:pt:BR:LIA_1182A677.001-2"
+          ],
+          "titles_sample": [
+            "Tênis Onitsuka Tiger Mexico 66 TGRS Black/Gunmetal Glitter Pack Preto"
+          ]
+        }
+      ]
+    }
+  },
+  "local_shopify_snapshot": {
+    "db_present": true,
+    "shopify_products_total_local": 2241,
+    "shopify_products_active_local": 1819,
+    "shopify_variants_total_local": 14466,
+    "shopify_variants_with_sku_local": 13078,
+    "shopify_distinct_skus_local": 12204
+  },
+  "interpretation": {
+    "is_25_6k_plausible_as_unique_lk_catalog": false,
+    "reason": "Merchant Center product count is materially higher than local Shopify product and variant counts. Product IDs are counted at offer/item level and can include historical/stale/feed-duplicated entries; duplicates must be cleaned only after feed/source audit.",
+    "safe_next_step": "List data sources/feeds and isolate source(s) creating duplicate/stale offers before deleting/excluding anything."
+  },
+  "not_performed": [
+    "merchant_product_delete",
+    "feed_delete_or_exclusion",
+    "shopify_write",
+    "database_write",
+    "campaign_or_external_send",
+    "checkout_or_theme_change"
+  ]
+}

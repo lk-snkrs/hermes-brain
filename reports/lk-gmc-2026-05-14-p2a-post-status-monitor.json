@@ -1,0 +1,595 @@
+{
+  "generated_at": "2026-05-14T14:10:35.742966+00:00",
+  "status": "readonly_completed",
+  "scope": "post_gmc_p2a_productstatuses_monitor_readonly",
+  "summary": {
+    "catalog_productstatuses_read": 23279,
+    "p2a_progress_ids": 9826,
+    "p2a_ids_found_in_productstatuses": 9826,
+    "p2a_ids_missing_from_productstatuses": 0,
+    "p2a_products_with_any_item_issue_or_disapproved_destination": 494,
+    "p2a_issue_instances": 1735,
+    "p2a_missing_item_attribute_for_product_type_instances": 136,
+    "p2a_disapproved_destinations_total": 39,
+    "writes_allowed_now": 0
+  },
+  "top_issue_codes": [
+    {
+      "issue": "price_updated",
+      "count": 987
+    },
+    {
+      "issue": "strikethrough_price_updated",
+      "count": 468
+    },
+    {
+      "issue": "missing_item_attribute_for_product_type",
+      "count": 136
+    },
+    {
+      "issue": "restricted_gtin",
+      "count": 68
+    },
+    {
+      "issue": "landing_page_error",
+      "count": 36
+    },
+    {
+      "issue": "availability_updated",
+      "count": 18
+    },
+    {
+      "issue": "image_single_color",
+      "count": 6
+    },
+    {
+      "issue": "image_link_broken",
+      "count": 6
+    },
+    {
+      "issue": "reserved_gtin",
+      "count": 4
+    },
+    {
+      "issue": "coupon_gtin",
+      "count": 2
+    },
+    {
+      "issue": "image_too_small_for_high_resolution",
+      "count": 2
+    },
+    {
+      "issue": "pause_expired",
+      "count": 2
+    }
+  ],
+  "disapproved_destinations": [
+    {
+      "destination": "Shopping",
+      "count": 13
+    },
+    {
+      "destination": "DisplayAds",
+      "count": 13
+    },
+    {
+      "destination": "SurfacesAcrossGoogle",
+      "count": 13
+    }
+  ],
+  "missing_item_attribute_names": [
+    {
+      "attribute": "color",
+      "count": 128
+    },
+    {
+      "attribute": "age group",
+      "count": 4
+    },
+    {
+      "attribute": "gender",
+      "count": 4
+    }
+  ],
+  "missing_item_attribute_details": [
+    {
+      "detail": "Add the color of your product so customers can easily find a specific product",
+      "count": 128
+    },
+    {
+      "detail": "Add the age group of your product so customers can easily find a specific product",
+      "count": 4
+    },
+    {
+      "detail": "Add the gender of your product so customers can easily find a specific product",
+      "count": 4
+    }
+  ],
+  "issue_samples": {
+    "missing_item_attribute_for_product_type": [
+      {
+        "productId": "online:pt:BR:fv5029-100",
+        "title": "Tênis Nike Air Jordan 4 Retro OG Nike White Cement Couro Branco",
+        "attribute": "color",
+        "description": "Missing color",
+        "detail": "Add the color of your product so customers can easily find a specific product",
+        "servability": "demoted",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:fv5029-100",
+        "title": "Tênis Nike Air Jordan 4 Retro OG Nike White Cement Couro Branco",
+        "attribute": "color",
+        "description": "Missing color",
+        "detail": "Add the color of your product so customers can easily find a specific product",
+        "servability": "demoted",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:dc0774-0211",
+        "title": "Tênis Nike Air Jordan 1 Low Black Brown Marrom",
+        "attribute": "color",
+        "description": "Missing color",
+        "detail": "Add the color of your product so customers can easily find a specific product",
+        "servability": "demoted",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:dc0774-0211",
+        "title": "Tênis Nike Air Jordan 1 Low Black Brown Marrom",
+        "attribute": "color",
+        "description": "Missing color",
+        "detail": "Add the color of your product so customers can easily find a specific product",
+        "servability": "demoted",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:JH5439-11",
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "attribute": "color",
+        "description": "Missing color",
+        "detail": "Add the color of your product so customers can easily find a specific product",
+        "servability": "demoted",
+        "resolution": "merchant_action"
+      }
+    ],
+    "price_updated": [
+      {
+        "productId": "online:pt:BR:BQ6472105-2",
+        "title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza",
+        "attribute": "price",
+        "description": "Automatic updates: Mismatched price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:BQ6472105-2",
+        "title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza",
+        "attribute": "price",
+        "description": "Automatic updates: Mismatched price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:BQ6472105-2",
+        "title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza",
+        "attribute": "price",
+        "description": "Automatic updates: Mismatched price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:HJ3481-491-6",
+        "title": "Tênis Nike Air Jordan 1 Low SE Glacier Blue Azul",
+        "attribute": "price",
+        "description": "Automatic updates: Mismatched price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:HJ3481-491-6",
+        "title": "Tênis Nike Air Jordan 1 Low SE Glacier Blue Azul",
+        "attribute": "price",
+        "description": "Automatic updates: Mismatched price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      }
+    ],
+    "strikethrough_price_updated": [
+      {
+        "productId": "online:pt:BR:BQ6472105-2",
+        "title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza",
+        "attribute": "price",
+        "description": "Automatic updates: Strikethrough price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:BQ6472105-2",
+        "title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza",
+        "attribute": "price",
+        "description": "Automatic updates: Strikethrough price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:BQ6472105-2",
+        "title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza",
+        "attribute": "price",
+        "description": "Automatic updates: Strikethrough price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:BQ6472105-7",
+        "title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza",
+        "attribute": "price",
+        "description": "Automatic updates: Strikethrough price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:BQ6472105-7",
+        "title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza",
+        "attribute": "price",
+        "description": "Automatic updates: Strikethrough price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      }
+    ],
+    "restricted_gtin": [
+      {
+        "productId": "online:pt:BR:cz0790-101-6",
+        "title": "Tênis Nike Air Jordan 1 Retro Low OG 'Atmosphere Grey' Roxo",
+        "attribute": "gtin",
+        "description": "Restricted GTIN",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:cz0790-101-6",
+        "title": "Tênis Nike Air Jordan 1 Retro Low OG 'Atmosphere Grey' Roxo",
+        "attribute": "gtin",
+        "description": "Restricted GTIN",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:FN5880-001-3",
+        "title": "Tênis Nike Sb Dunk Low Premium City Of Style Colorido",
+        "attribute": "gtin",
+        "description": "Restricted GTIN",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:FN5880-001-3",
+        "title": "Tênis Nike Sb Dunk Low Premium City Of Style Colorido",
+        "attribute": "gtin",
+        "description": "Restricted GTIN",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:FN5880-001-6",
+        "title": "Tênis Nike Sb Dunk Low Premium City Of Style Colorido",
+        "attribute": "gtin",
+        "description": "Restricted GTIN",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      }
+    ],
+    "availability_updated": [
+      {
+        "productId": "online:pt:BR:MR530AA-44",
+        "title": "Tenis New Balance 530 Beige Angora Creme",
+        "attribute": "availability",
+        "description": "Automatic updates: Mismatched availability",
+        "detail": "Your product's availability status was automatically updated to match the data on your landing page",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:MR530AA-44",
+        "title": "Tenis New Balance 530 Beige Angora Creme",
+        "attribute": "availability",
+        "description": "Automatic updates: Mismatched availability",
+        "detail": "Your product's availability status was automatically updated to match the data on your landing page",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:MR530AA-44",
+        "title": "Tenis New Balance 530 Beige Angora Creme",
+        "attribute": "availability",
+        "description": "Automatic updates: Mismatched availability",
+        "detail": "Your product's availability status was automatically updated to match the data on your landing page",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:10017",
+        "title": "Boné Aphase Basic Project - Used Black Preto",
+        "attribute": "availability",
+        "description": "Automatic updates: Mismatched availability",
+        "detail": "Your product's availability status was automatically updated to match the data on your landing page",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:10017",
+        "title": "Boné Aphase Basic Project - Used Black Preto",
+        "attribute": "availability",
+        "description": "Automatic updates: Mismatched availability",
+        "detail": "Your product's availability status was automatically updated to match the data on your landing page",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      }
+    ],
+    "landing_page_error": [
+      {
+        "productId": "online:pt:BR:10002025469927148791",
+        "title": "Calça Nude Project Jeans Soft Velvet Azul Marinho",
+        "attribute": "link",
+        "description": "Product page unavailable",
+        "detail": "Ensure your product page can be accessed from desktop and mobile devices and is not restricted from Google crawling",
+        "servability": "disapproved",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:10002025469927148791",
+        "title": "Calça Nude Project Jeans Soft Velvet Azul Marinho",
+        "attribute": "link",
+        "description": "Product page unavailable",
+        "detail": "Ensure your product page can be accessed from desktop and mobile devices and is not restricted from Google crawling",
+        "servability": "disapproved",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:10002025469927148791",
+        "title": "Calça Nude Project Jeans Soft Velvet Azul Marinho",
+        "attribute": "link",
+        "description": "Product page unavailable",
+        "detail": "Ensure your product page can be accessed from desktop and mobile devices and is not restricted from Google crawling",
+        "servability": "disapproved",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:1624428988081867066",
+        "title": "Boné Aimé Leon Dore Porsche Nylon Logo Aspen Gold Amarelo | LK Sneaker",
+        "attribute": "link",
+        "description": "Product page unavailable",
+        "detail": "Ensure your product page can be accessed from desktop and mobile devices and is not restricted from Google crawling",
+        "servability": "disapproved",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:1624428988081867066",
+        "title": "Boné Aimé Leon Dore Porsche Nylon Logo Aspen Gold Amarelo | LK Sneaker",
+        "attribute": "link",
+        "description": "Product page unavailable",
+        "detail": "Ensure your product page can be accessed from desktop and mobile devices and is not restricted from Google crawling",
+        "servability": "disapproved",
+        "resolution": "merchant_action"
+      }
+    ],
+    "coupon_gtin": [
+      {
+        "productId": "online:pt:BR:FZ4167-200-6",
+        "title": "Tênis Nike Air Force 1 Low Paris Marrom",
+        "attribute": "gtin",
+        "description": "Unsupported GTIN",
+        "detail": "You've entered a global coupon number instead of a GTIN. Enter the correct GTIN so customers can find your product easily",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:FZ4167-200-6",
+        "title": "Tênis Nike Air Force 1 Low Paris Marrom",
+        "attribute": "gtin",
+        "description": "Unsupported GTIN",
+        "detail": "You've entered a global coupon number instead of a GTIN. Enter the correct GTIN so customers can find your product easily",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      }
+    ],
+    "image_single_color": [
+      {
+        "productId": "online:pt:BR:U9060PSD-1",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "attribute": "additional image link",
+        "description": "Image uses a single color",
+        "detail": "Single-color images are not allowed except for a few specific product categories",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:U9060PSD-1",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "attribute": "additional image link",
+        "description": "Image uses a single color",
+        "detail": "Single-color images are not allowed except for a few specific product categories",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:U9060PSD-1",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "attribute": "additional image link",
+        "description": "Image uses a single color",
+        "detail": "Single-color images are not allowed except for a few specific product categories",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:U9060PSD-5",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "attribute": "additional image link",
+        "description": "Image uses a single color",
+        "detail": "Single-color images are not allowed except for a few specific product categories",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:U9060PSD-5",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "attribute": "additional image link",
+        "description": "Image uses a single color",
+        "detail": "Single-color images are not allowed except for a few specific product categories",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      }
+    ],
+    "image_link_broken": [
+      {
+        "productId": "online:pt:BR:9914706510510919523",
+        "title": "Tenis Nike SB Dunk Low Pro Muni Lightning Denim Turquoise Turquesa - Tamanho 37",
+        "attribute": "additional image link",
+        "description": "Unsupported image type [additional_image_link]",
+        "detail": "Use an image in the accepted format (JPEG, PNG, GIF)",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:9914706510510919523",
+        "title": "Tenis Nike SB Dunk Low Pro Muni Lightning Denim Turquoise Turquesa - Tamanho 37",
+        "attribute": "additional image link",
+        "description": "Unsupported image type [additional_image_link]",
+        "detail": "Use an image in the accepted format (JPEG, PNG, GIF)",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:9914706510510919523",
+        "title": "Tenis Nike SB Dunk Low Pro Muni Lightning Denim Turquoise Turquesa - Tamanho 37",
+        "attribute": "additional image link",
+        "description": "Unsupported image type [additional_image_link]",
+        "detail": "Use an image in the accepted format (JPEG, PNG, GIF)",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:9914706510510919523",
+        "title": "Tenis Nike SB Dunk Low Pro Muni Lightning Denim Turquoise Turquesa - Tamanho 37",
+        "attribute": "image link",
+        "description": "Unsupported image type [image_link]",
+        "detail": "Use an image in the accepted format (JPEG, PNG, GIF)",
+        "servability": "disapproved",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:9914706510510919523",
+        "title": "Tenis Nike SB Dunk Low Pro Muni Lightning Denim Turquoise Turquesa - Tamanho 37",
+        "attribute": "image link",
+        "description": "Unsupported image type [image_link]",
+        "detail": "Use an image in the accepted format (JPEG, PNG, GIF)",
+        "servability": "disapproved",
+        "resolution": "merchant_action"
+      }
+    ],
+    "reserved_gtin": [
+      {
+        "productId": "online:pt:BR:CZ0790-102-4",
+        "title": "Tênis Nike Air Jordan 1 Low Og Mocha Marrom",
+        "attribute": "gtin",
+        "description": "Reserved GTIN",
+        "detail": "Use a GTIN that doesn't start with \"2\", \"02\" or \"04\"",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:CZ0790-102-4",
+        "title": "Tênis Nike Air Jordan 1 Low Og Mocha Marrom",
+        "attribute": "gtin",
+        "description": "Reserved GTIN",
+        "detail": "Use a GTIN that doesn't start with \"2\", \"02\" or \"04\"",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:FN5880-001-4",
+        "title": "Tênis Nike Sb Dunk Low Premium City Of Style Colorido",
+        "attribute": "gtin",
+        "description": "Reserved GTIN",
+        "detail": "Use a GTIN that doesn't start with \"2\", \"02\" or \"04\"",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:FN5880-001-4",
+        "title": "Tênis Nike Sb Dunk Low Premium City Of Style Colorido",
+        "attribute": "gtin",
+        "description": "Reserved GTIN",
+        "detail": "Use a GTIN that doesn't start with \"2\", \"02\" or \"04\"",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      }
+    ],
+    "image_too_small_for_high_resolution": [
+      {
+        "productId": "online:pt:BR:JR8179-1",
+        "title": "Tenis Adidas Gazelle Stack Collegiate Green Cream White Verde",
+        "attribute": "image link",
+        "description": "Image too small for upcoming enforcement",
+        "detail": "Use an image that's at least 500x500 pixels to serve",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:11314792792398542744",
+        "title": "Moletom Oversized Nylon Fear of God Essentials Jet Black Preto",
+        "attribute": "image link",
+        "description": "Image too small for upcoming enforcement",
+        "detail": "Use an image that's at least 500x500 pixels to serve",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      }
+    ],
+    "pause_expired": [
+      {
+        "productId": "online:pt:BR:DZ1382001",
+        "title": "Tênis Tiffany & Co. x Nike Air Force 1 Low 1837 Preto",
+        "attribute": "pause",
+        "description": "Product pause expired",
+        "detail": "Your product was paused for more than 2 weeks. Unpausing will now take longer. Remove [pause] to unpause the product",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      },
+      {
+        "productId": "online:pt:BR:DZ1382001",
+        "title": "Tênis Tiffany & Co. x Nike Air Force 1 Low 1837 Preto",
+        "attribute": "pause",
+        "description": "Product pause expired",
+        "detail": "Your product was paused for more than 2 weeks. Unpausing will now take longer. Remove [pause] to unpause the product",
+        "servability": "unaffected",
+        "resolution": "merchant_action"
+      }
+    ]
+  },
+  "missing_product_ids_sample": [],
+  "not_performed": [
+    "merchant_center_write",
+    "product_patch",
+    "product_delete",
+    "feed_update",
+    "shopify_write",
+    "tiny_write",
+    "campaign_or_customer_send",
+    "marketplace_lookup"
+  ]
+}

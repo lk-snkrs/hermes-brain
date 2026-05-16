@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-05-15T18:25:11.339388+00:00",
+  "scope": "local SQLite lk_sku_alias_map only; no external writes",
+  "snapshot_before": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sku-alias-map-before-safe-upsert-2026-05-15.json",
+  "upserted_count": 2,
+  "upserted_rows": [
+    {
+      "alias_id": "manual_safe_30e4fba0c74b696c",
+      "shopify_variant_id": "47860151976158",
+      "shopify_product_id": "9107994542302",
+      "source_variant_id": "47860151976158",
+      "shopify_sku": "SST-4542302-L",
+      "product_title": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+      "variant_title": "L/G",
+      "normalized_size": "L/G",
+      "tiny_anchor_sku": "SST-4542302-L",
+      "tiny_anchor_status": "A",
+      "tiny_anchor_available_estimated_total": null,
+      "tiny_anchor_match_count": 1,
+      "match_confidence": "high_exact_title_size_code_local_safe_20260515",
+      "review_status": "auto_approved_local_alias_only_no_external_write",
+      "notes": "Safe local alias from residual SKU/Tiny preview. Tiny id=1069544315; Tiny name=Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - L/G. No Shopify/Tiny external write.",
+      "last_verified_at": "2026-05-15T18:25:11.339388+00:00"
+    },
+    {
+      "alias_id": "manual_safe_0164762ecaa5280f",
+      "shopify_variant_id": "47967340331230",
+      "shopify_product_id": "9145201197278",
+      "source_variant_id": "47967340331230",
+      "shopify_sku": "PAC-1197278-S",
+      "product_title": "Camiseta Pace Buero Washed Black Preto",
+      "variant_title": "S/P",
+      "normalized_size": "S/P",
+      "tiny_anchor_sku": "PAC-1197278-S",
+      "tiny_anchor_status": "A",
+      "tiny_anchor_available_estimated_total": null,
+      "tiny_anchor_match_count": 1,
+      "match_confidence": "high_exact_title_size_code_local_safe_20260515",
+      "review_status": "auto_approved_local_alias_only_no_external_write",
+      "notes": "Safe local alias from residual SKU/Tiny preview. Tiny id=1069930823; Tiny name=Camiseta Pace Buero Washed Black Preto - S/P. No Shopify/Tiny external write.",
+      "last_verified_at": "2026-05-15T18:25:11.339388+00:00"
+    }
+  ],
+  "after_rows": [
+    {
+      "alias_id": "manual_safe_30e4fba0c74b696c",
+      "shopify_variant_id": "47860151976158",
+      "shopify_product_id": "9107994542302",
+      "source_variant_id": "47860151976158",
+      "shopify_sku": "SST-4542302-L",
+      "product_title": "Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza",
+      "variant_title": "L/G",
+      "normalized_size": "L/G",
+      "tiny_anchor_sku": "SST-4542302-L",
+      "tiny_anchor_status": "A",
+      "tiny_anchor_available_estimated_total": null,
+      "tiny_anchor_match_count": 1,
+      "match_confidence": "high_exact_title_size_code_local_safe_20260515",
+      "review_status": "auto_approved_local_alias_only_no_external_write",
+      "notes": "Safe local alias from residual SKU/Tiny preview. Tiny id=1069544315; Tiny name=Calça Saint Studio Alfaiataria Leve Prega Dupla Cinza - L/G. No Shopify/Tiny external write.",
+      "last_verified_at": "2026-05-15T18:25:11.339388+00:00"
+    },
+    {
+      "alias_id": "manual_safe_0164762ecaa5280f",
+      "shopify_variant_id": "47967340331230",
+      "shopify_product_id": "9145201197278",
+      "source_variant_id": "47967340331230",
+      "shopify_sku": "PAC-1197278-S",
+      "product_title": "Camiseta Pace Buero Washed Black Preto",
+      "variant_title": "S/P",
+      "normalized_size": "S/P",
+      "tiny_anchor_sku": "PAC-1197278-S",
+      "tiny_anchor_status": "A",
+      "tiny_anchor_available_estimated_total": null,
+      "tiny_anchor_match_count": 1,
+      "match_confidence": "high_exact_title_size_code_local_safe_20260515",
+      "review_status": "auto_approved_local_alias_only_no_external_write",
+      "notes": "Safe local alias from residual SKU/Tiny preview. Tiny id=1069930823; Tiny name=Camiseta Pace Buero Washed Black Preto - S/P. No Shopify/Tiny external write.",
+      "last_verified_at": "2026-05-15T18:25:11.339388+00:00"
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "generated_at": "2026-05-12T11:23:02.604284+00:00",
+  "scope": "LK GMC local inventory source probe read-only",
+  "status": "gmc_local_inventory_source_probe_ready_readonly",
+  "source_labels": [
+    "fact_merchant_center",
+    "fact_shopify_local_snapshot",
+    "derived_reconciliation"
+  ],
+  "merchant_center": {
+    "liasettings_sanitized": {
+      "account_id_present": true,
+      "country_settings": [
+        {
+          "country": "BR",
+          "inventory_status": "active",
+          "hosted_local_storefront_active": true,
+          "store_pickup_active": false,
+          "pos_data_provider_id_present": true,
+          "pos_external_account_id": "shopify.com",
+          "omnichannel_lsf_type": "mhlsfFull"
+        }
+      ]
+    },
+    "datafeeds_sanitized": [
+      {
+        "id": "407508563",
+        "name": "LK Sneakers - Color Supplemental Feed",
+        "fileName": "lk_sneakers_gmc_color_feed.csv",
+        "targets": [
+          {
+            "country": "BR",
+            "feedLabel": "BR",
+            "targetCountries": [
+              "BR"
+            ],
+            "language": "pt",
+            "includedDestinations": [
+              "DisplayAds",
+              "SurfacesAcrossGoogle",
+              "Shopping"
+            ],
+            "excludedDestinations": [
+              "Shopping",
+              "LocalSurfacesAcrossGoogle"
+            ]
+          }
+        ],
+        "fetch_url_present": true,
+        "fetch_url_kind": "gist"
+      }
+    ],
+    "product_summary": {
+      "total_products": 25578,
+      "by_channel": {
+        "local": 11638,
+        "online": 13940
+      },
+      "by_source": {
+        "api": 21663,
+        "feed": 3613,
+        "crawl": 302
+      },
+      "source_by_channel": {
+        "local|api": 11638,
+        "online|api": 10025,
+        "online|feed": 3613,
+        "online|crawl": 302
+      },
+      "local_offer_prefix": {
+        "LIA_": 11638
+      },
+      "shopify_match_stats": {
+        "local_lia_prefix": 11638,
+        "local_normalized_shopify_match": 10336,
+        "local_no_sku_match_after_lia_strip": 1302
+      },
+      "samples": {
+        "local_lia_prefix": [
+          {
+            "merchant_offer_id": "LIA_JI0324-6",
+            "normalized_offer_id": "JI0324-6",
+            "title": "Tênis Adidas Gazelle Indoor Maroon Almost Yellow Marrom"
+          },
+          {
+            "merchant_offer_id": "LIA_OXV-2785246-39",
+            "normalized_offer_id": "OXV-2785246-39",
+            "title": "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown Blue Marrom"
+          },
+          {
+            "merchant_offer_id": "LIA_SLCRCVOW-1",
+            "normalized_offer_id": "SLCRCVOW-1",
+            "title": "Camiseta Slyce Racquet Club Off White"
+          },
+          {
+            "merchant_offer_id": "LIA_f99715",
+            "normalized_offer_id": "f99715",
+            "title": "Tênis Adidas Yeezy Boost 350 V2 Sesame Cinza"
+          },
+          {
+            "merchant_offer_id": "LIA_CD2563006-9",
+            "normalized_offer_id": "CD2563006-9",
+            "title": "Tênis Nike SB Dunk Low Pro ISO Black Gum Preto"
+          },
+          {
+            "merchant_offer_id": "LIA_ALD-2515934-L",
+            "normalized_offer_id": "ALD-2515934-L",
+            "title": "Camiseta Aimé Leon Dore Musician Graphic Preta"
+          },
+          {
+            "merchant_offer_id": "LIA_w6289r_02-4",
+            "normalized_offer_id": "w6289r_02-4",
+            "title": "Saia Alo Yoga Grand Slam Tennis Azul Marinho"
+          },
+          {
+            "merchant_offer_id": "LIA_ST19-2",
+            "normalized_offer_id": "ST19-2",
+            "title": "Calça Saint Studio Plissada Tech Preto"
+          }
+        ],
+        "local_raw_shopify_match": [],
+        "local_normalized_shopify_match": [
+          {
+            "merchant_offer_id": "LIA_JI0324-6",
+            "normalized_offer_id": "JI0324-6",
+            "title": "Tênis Adidas Gazelle Indoor Maroon Almost Yellow Marrom"
+          },
+          {
+            "merchant_offer_id": "LIA_SLCRCVOW-1",
+            "normalized_offer_id": "SLCRCVOW-1",
+            "title": "Camiseta Slyce Racquet Club Off White"
+          },
+          {
+            "merchant_offer_id": "LIA_f99715",
+            "normalized_offer_id": "f99715",
+            "title": "Tênis Adidas Yeezy Boost 350 V2 Sesame Cinza"
+          },
+          {
+            "merchant_offer_id": "LIA_CD2563006-9",
+            "normalized_offer_id": "CD2563006-9",
+            "title": "Tênis Nike SB Dunk Low Pro ISO Black Gum Preto"
+          },
+          {
+            "merchant_offer_id": "LIA_w6289r_02-4",
+            "normalized_offer_id": "w6289r_02-4",
+            "title": "Saia Alo Yoga Grand Slam Tennis Azul Marinho"
+          },
+          {
+            "merchant_offer_id": "LIA_ST19-2",
+            "normalized_offer_id": "ST19-2",
+            "title": "Calça Saint Studio Plissada Tech Preto"
+          },
+          {
+            "merchant_offer_id": "LIA_1183C529.200-1",
+            "normalized_offer_id": "1183C529.200-1",
+            "title": "Tênis Onitsuka Tiger Tsunahiki Slip-On Birch/Indigo Navy Bege"
+          },
+          {
+            "merchant_offer_id": "LIA_FZ3552-612-6",
+            "normalized_offer_id": "FZ3552-612-6",
+            "title": "Tênis Nike Air Force 1 Low Fire Red White Vermelho"
+          }
+        ],
+        "local_no_sku_match_after_lia_strip": [
+          {
+            "merchant_offer_id": "LIA_OXV-2785246-39",
+            "normalized_offer_id": "OXV-2785246-39",
+            "title": "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown Blue Marrom"
+          },
+          {
+            "merchant_offer_id": "LIA_ALD-2515934-L",
+            "normalized_offer_id": "ALD-2515934-L",
+            "title": "Camiseta Aimé Leon Dore Musician Graphic Preta"
+          },
+          {
+            "merchant_offer_id": "LIA_ONI-7270110-37",
+            "normalized_offer_id": "ONI-7270110-37",
+            "title": "Tênis Onitsuka Tiger Mexico 66 Sabot Dark Brown Marrom"
+          },
+          {
+            "merchant_offer_id": "LIA_ONI-3740254-43",
+            "normalized_offer_id": "ONI-3740254-43",
+            "title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege"
+          },
+          {
+            "merchant_offer_id": "LIA_YZY-2566238-45",
+            "normalized_offer_id": "YZY-2566238-45",
+            "title": "Tênis Adidas Yeezy Boost 350 V2 Earth Marrom"
+          },
+          {
+            "merchant_offer_id": "LIA_ONI-1225054-35",
+            "normalized_offer_id": "ONI-1225054-35",
+            "title": "Tênis Onitsuka Tiger Mexico 66 Fringe Yellow/Black Amarelo"
+          },
+          {
+            "merchant_offer_id": "LIA_IB4340-200-40",
+            "normalized_offer_id": "IB4340-200-40",
+            "title": "Tênis Nike Shox TL Velvet Brown Denim Turquoise Marrom"
+          },
+          {
+            "merchant_offer_id": "LIA_JRD-7404126-36",
+            "normalized_offer_id": "JRD-7404126-36",
+            "title": "Tênis Nike Air Jordan 4 Retro OG SP Brick By Brick Camurça Firewood Vermelho"
+          }
+        ]
+      }
+    },
+    "productstatus_summary": {
+      "creation_date_top": {
+        "local|2026-04-17": 9991,
+        "online|2026-04-07": 4567,
+        "online|2026-05-01": 1653,
+        "online|2026-05-02": 749,
+        "local|2026-05-02": 731,
+        "online|2025-04-24": 425,
+        "online|2025-06-03": 389,
+        "local|2026-04-18": 339,
+        "online|2025-08-08": 265,
+        "online|2025-03-21": 258,
+        "online|2025-06-04": 221,
+        "online|2026-04-18": 211,
+        "local|2026-05-11": 206,
+        "online|2026-05-11": 204,
+        "online|2024-07-17": 188,
+        "online|2025-05-23": 178,
+        "online|2025-08-20": 167,
+        "online|2025-08-06": 164,
+        "local|2026-04-27": 161,
+        "online|2026-04-27": 160
+      },
+      "last_update_date_top": {
+        "online|2026-05-12": 6012,
+        "local|2026-04-17": 4366,
+        "online|2026-04-17": 2620,
+        "local|2026-05-12": 2116,
+        "online|2026-05-11": 1678,
+        "local|2026-04-21": 1273,
+        "local|2026-05-02": 1124,
+        "online|2026-04-21": 1106,
+        "local|2026-05-08": 693,
+        "local|2026-05-11": 690,
+        "online|2026-05-02": 652,
+        "online|2026-05-08": 630,
+        "local|2026-05-06": 241,
+        "online|2026-05-04": 241,
+        "local|2026-05-03": 121,
+        "online|2026-05-10": 118,
+        "local|2026-04-19": 117,
+        "online|2026-05-03": 116,
+        "online|2026-04-19": 114,
+        "online|2026-05-06": 92
+      },
+      "destination_counts": {
+        "online|SurfacesAcrossGoogle": 13940,
+        "online|Shopping": 13638,
+        "online|DisplayAds": 13638,
+        "local|LocalSurfacesAcrossGoogle": 11638
+      },
+      "status_by_destination": {
+        "local|LocalSurfacesAcrossGoogle|approved": 11637,
+        "online|SurfacesAcrossGoogle|approved": 10274,
+        "online|Shopping|approved": 10025,
+        "online|DisplayAds|approved": 10024,
+        "online|SurfacesAcrossGoogle|disapproved": 3654,
+        "online|DisplayAds|disapproved": 3614,
+        "online|Shopping|disapproved": 3613,
+        "online|SurfacesAcrossGoogle|pending": 12,
+        "local|LocalSurfacesAcrossGoogle|disapproved": 1
+      }
+    }
+  },
+  "shopify_snapshot": {
+    "db_present": true,
+    "sku_count": 12204,
+    "source_variant_id_count": 14466,
+    "variant_id_count": 14466
+  },
+  "source_conclusion": {
+    "likely_local_inventory_source": "Shopify POS / Shopify app via Google Content API",
+    "evidence": [
+      "Merchant LIA settings has inventory status active for BR.",
+      "Merchant LIA settings reports posExternalAccountId=shopify.com.",
+      "Merchant local products have source=api, not file/feed.",
+      "Only listed datafeed is the supplemental color feed, not the primary local inventory source.",
+      "Most local offer IDs use LIA_ prefix, which is characteristic of Local Inventory Ads/local channel IDs and can break naive SKU matching."
+    ],
+    "confidence": "high"
+  },
+  "interpretation": {
+    "orphan_label_update": "Previous local orphan counts are too conservative because raw matching did not normalize the LIA_ prefix. After stripping LIA_, many local items may match Shopify SKUs/variants.",
+    "risk": "Do not delete local items based on the first orphan preview. Local listings are active and backed by Shopify POS/local inventory integration.",
+    "next_safe_step": "Regenerate cleanup preview with LIA_ normalization and split true stale local items from valid Shopify POS local items."
+  },
+  "not_performed": [
+    "merchant_product_delete",
+    "merchant_product_update",
+    "datafeed_update",
+    "feed_delete_or_exclusion",
+    "shopify_write",
+    "database_write",
+    "campaign_or_external_send",
+    "local_inventory_disable",
+    "gmb_update"
+  ]
+}

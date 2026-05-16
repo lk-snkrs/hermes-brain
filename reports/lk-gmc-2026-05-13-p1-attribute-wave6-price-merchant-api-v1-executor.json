@@ -1,0 +1,1914 @@
+{
+  "generated_at": "2026-05-13T16:10:21.924578+00:00",
+  "status": "merchant_api_v1_price_apply_verified",
+  "mode": "apply",
+  "scope": "Patch only productAttributes.price via Merchant API ProductInputs v1; Shopify/Data Spine price source from Wave6 report.",
+  "data_source": "accounts/*/dataSources/10636492695",
+  "approval_required_for_apply": "Lucas approved Merchant API v1 registration and GMC P1 Wave6 price apply",
+  "summary": {
+    "source_ready_rows": 35,
+    "execution_results_summary": {
+      "patched_price_v1": 35
+    },
+    "verify_results_summary": {
+      "verified_gets": 35
+    },
+    "verified_content_price_match_expected": 32,
+    "verified_merchant_price_match_expected": 32,
+    "fresh_productstatuses_after": 23245,
+    "required_attr_rows_after": 2,
+    "required_attr_counts_after": {
+      "price": 2
+    }
+  },
+  "private_rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p1-attribute-wave6-price-merchant-api-v1-executor-rollback-20260513T160309Z.json",
+  "public_rows": [
+    {
+      "product_id": "online:pt:BR:6531799355487598672",
+      "offer_id": "6531799355487598672",
+      "merchant_title": "Camiseta Fear of God Essentials Jersey Crewneck Black Preto",
+      "merchant_link": "https://lksneakers.com.br/products/camiseta-fear-of-god-essentials-jersey-crewneck-black-preto",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1199.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1199.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "camiseta-fear-of-god-essentials-jersey-crewneck-black-preto",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:11810372920072143991",
+      "offer_id": "11810372920072143991",
+      "merchant_title": "40",
+      "merchant_link": "https://lksneakers.com.br/collections/roupas/products/calca-saint-studio-wide-alfaiataria-preto",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "499.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        499.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "calca-saint-studio-wide-alfaiataria-preto",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:3876299146406606317",
+      "offer_id": "3876299146406606317",
+      "merchant_title": "Calça Saint Studio Jeans Baggy Preta",
+      "merchant_link": "https://lksneakers.com.br/products/calca-saint-studio-jeans-baggy-preta",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "429.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        429.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "calca-saint-studio-jeans-baggy-preta",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:6562590402534581177",
+      "offer_id": "6562590402534581177",
+      "merchant_title": "Calça Nude Project Illegal Jeans Ash Cinza - LK",
+      "merchant_link": "https://lksneakers.com.br/products/calca-nude-project-illegal-jeans-ash-cinza",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1299.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1299.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "calca-nude-project-illegal-jeans-ash-cinza",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:17533377349709354893",
+      "offer_id": "17533377349709354893",
+      "merchant_title": "Pop Mart Labubu The Monsters Big into Energy Series Happiness Vinyl Plush Pingente",
+      "merchant_link": "https://lksneakers.com.br/products/pop-mart-labubu-the-monsters-big-into-energy-series-luck-vinyl-plush-pingente-copia",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "999.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        999.99
+      ],
+      "evidence": {
+        "price": "exact_normalized_title",
+        "match_key": "pop mart labubu the monsters big into energy series happiness vinyl plush pingente",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:2258634078163248862",
+      "offer_id": "2258634078163248862",
+      "merchant_title": "Calça Chino Saint Studio Supima Preto",
+      "merchant_link": "https://lksneakers.com.br/products/calca-chino-saint-studio-supima-preto",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "300.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        300.99,
+        429.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "calca-chino-saint-studio-supima-preto",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:14088693984092512857",
+      "offer_id": "14088693984092512857",
+      "merchant_title": "Boné 6 Panel Aimé Leon Dore Embroidered Logo Branco",
+      "merchant_link": "https://lksneakers.com.br/products/bone-6-panel-aime-leon-dore-embroidered-logo-branco",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "999.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        999.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "bone-6-panel-aime-leon-dore-embroidered-logo-branco",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:15334125053592144145",
+      "offer_id": "15334125053592144145",
+      "merchant_title": "Camiseta Oversized Fear of God Essentials Heavy Healther Wood Marrom",
+      "merchant_link": "https://lksneakers.com.br/products/camiseta-oversized-fear-of-god-essentials-heavy-healther-wood-marrom",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1199.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1199.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "camiseta-oversized-fear-of-god-essentials-heavy-healther-wood-marrom",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:17378616365015099957",
+      "offer_id": "17378616365015099957",
+      "merchant_title": "Moletom Fear Of God Essentials Brushed Hooded Bomber Brown Marrom",
+      "merchant_link": "https://lksneakers.com.br/products/moletom-fear-of-god-essentials-brushed-hooded-bomber-brown-marrom",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "2799.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        2799.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "moletom-fear-of-god-essentials-brushed-hooded-bomber-brown-marrom",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:13498809788548851139",
+      "offer_id": "13498809788548851139",
+      "merchant_title": "Moletom Essentials Fear of God Jet black SS24 Preto | LK Sneakers",
+      "merchant_link": "https://lksneakers.com.br/products/moletom-essentials-fear-of-god-jet-black-ss24-preto",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1499.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1499.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "moletom-essentials-fear-of-god-jet-black-ss24-preto",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:10002025469927148791",
+      "offer_id": "10002025469927148791",
+      "merchant_title": "Calça Nude Project Jeans Soft Velvet Azul Marinho",
+      "merchant_link": "https://lksneakers.com.br/products/calca-nude-project-jeans-soft-velvet-azul-marinho",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1749.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1749.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "calca-nude-project-jeans-soft-velvet-azul-marinho",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:4041641007094962608",
+      "offer_id": "4041641007094962608",
+      "merchant_title": "Camisa Saint Studio Trico Palha | LK Sneakers",
+      "merchant_link": "https://lksneakers.com.br/products/camisa-saint-studio-trico-palha",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "459.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        459.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "camisa-saint-studio-trico-palha",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:10591784840915585992",
+      "offer_id": "10591784840915585992",
+      "merchant_title": "Boné Saint Studio Art Department Azul - LK",
+      "merchant_link": "https://lksneakers.com.br/products/bone-saint-studio-art-department-azul",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "229.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        229.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "bone-saint-studio-art-department-azul",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:8376229716754602501",
+      "offer_id": "8376229716754602501",
+      "merchant_title": "Short Fear Of God Essentials Classic Sweatshort Homestead Heather Bege",
+      "merchant_link": "https://lksneakers.com.br/products/short-fear-of-god-essentials-classic-sweatshort-homestead-heather-bege",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1199.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1199.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "short-fear-of-god-essentials-classic-sweatshort-homestead-heather-bege",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:9992569968476017768",
+      "offer_id": "9992569968476017768",
+      "merchant_title": "Moletom Fear of God Essentials Fleece Light Heather Grey Cinza",
+      "merchant_link": "https://lksneakers.com.br/products/moletom-fear-of-god-essentials-fleece-light-heather-gray-cinza",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1599.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1599.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "moletom-fear-of-god-essentials-fleece-light-heather-gray-cinza",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:13622509763707629816",
+      "offer_id": "13622509763707629816",
+      "merchant_title": "Calça Saint Studio Wide Alfaiataria Risca de Giz Cinza",
+      "merchant_link": "https://lksneakers.com.br/products/calca-saint-studio-wide-alfaiataria-risca-de-giz-cinza",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "599.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        599.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "calca-saint-studio-wide-alfaiataria-risca-de-giz-cinza",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:9250025623243509812",
+      "offer_id": "9250025623243509812",
+      "merchant_title": "Calça Saint Studio Wide Alfaiataria Risca de Giz Preta",
+      "merchant_link": "https://lksneakers.com.br/products/calca-saint-studio-wide-alfaiataria-risca-de-giz-preta",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "599.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        599.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "calca-saint-studio-wide-alfaiataria-risca-de-giz-preta",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:2669418431140851356",
+      "offer_id": "2669418431140851356",
+      "merchant_title": "Natural",
+      "merchant_link": "https://lksneakers.com.br/products/bolsa-aime-leon-dore-porsche-canvas-tote-bag",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "2299.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        2299.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "bolsa-aime-leon-dore-porsche-canvas-tote-bag",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:13294493627572294660",
+      "offer_id": "13294493627572294660",
+      "merchant_title": "Camiseta Oversized Fear of God Essentials Heavy Jet Black Preto",
+      "merchant_link": "https://lksneakers.com.br/products/camiseta-fear-of-god-essentials-heavy-jet-black-preto",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1199.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1199.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "camiseta-fear-of-god-essentials-heavy-jet-black-preto",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1475186660255881483",
+      "offer_id": "1475186660255881483",
+      "merchant_title": "Camiseta Oversized Fear of God Essentials Ink Cinza",
+      "merchant_link": "https://lksneakers.com.br/products/camiseta-oversized-fear-of-god-essentials-ink-cinza",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1199.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1199.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "camiseta-oversized-fear-of-god-essentials-ink-cinza",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:8532426969879844901",
+      "offer_id": "8532426969879844901",
+      "merchant_title": "Boné Aimé Leon Dore Micro Logo Pristine Off White",
+      "merchant_link": "https://lksneakers.com.br/products/bone-aime-leon-dore-micro-logo-branco",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "999.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        999.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "bone-aime-leon-dore-micro-logo-branco",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:11806875313375187771",
+      "offer_id": "11806875313375187771",
+      "merchant_title": "Camiseta Fear Of God Essentials Classic Short Sleeve Homestead Heather Bege",
+      "merchant_link": "https://lksneakers.com.br/products/camiseta-fear-of-god-essentials-classic-short-sleeve-homestead-heather-bege",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1199.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1199.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "camiseta-fear-of-god-essentials-classic-short-sleeve-homestead-heather-bege",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:13315860803624221806",
+      "offer_id": "13315860803624221806",
+      "merchant_title": "Short Fear Of God Essentials Sporty Nylon Classic Jet Black Preto",
+      "merchant_link": "https://lksneakers.com.br/products/short-fear-of-god-essentials-sporty-nylon-classic-jet-black-preto",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1199.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1199.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "short-fear-of-god-essentials-sporty-nylon-classic-jet-black-preto",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:16359969147856982838",
+      "offer_id": "16359969147856982838",
+      "merchant_title": "M/m",
+      "merchant_link": "https://lksneakers.com.br/products/top-nude-project-bassa-white-branco",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "699.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        699.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "top-nude-project-bassa-white-branco",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1624428988081867066",
+      "offer_id": "1624428988081867066",
+      "merchant_title": "Boné Aimé Leon Dore Porsche Nylon Logo Aspen Gold Amarelo | LK Sneaker",
+      "merchant_link": "https://lksneakers.com.br/products/bone-aime-leon-dore-porsche-nylon-logo-aspen-gold-amarelo",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1599.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1599.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "bone-aime-leon-dore-porsche-nylon-logo-aspen-gold-amarelo",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:7958216211561773980",
+      "offer_id": "7958216211561773980",
+      "merchant_title": "Bolsa Aimé Leon Dore x Porsche Commuter Preto | LK Sneakers",
+      "merchant_link": "https://lksneakers.com.br/products/bolsa-aime-leon-dore-x-porsche-commuter-preto",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "7999.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        7999.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "bolsa-aime-leon-dore-x-porsche-commuter-preto",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:15507753369156717392",
+      "offer_id": "15507753369156717392",
+      "merchant_title": "Camisa Manga Longa Oversized Saint Studio Egípcio Listrada Azul",
+      "merchant_link": "https://lksneakers.com.br/products/camisa-manga-longa-oversized-saint-studio-egipcio-listrada-azul",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "321.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        321.99,
+        459.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "camisa-manga-longa-oversized-saint-studio-egipcio-listrada-azul",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:15702667075807199895",
+      "offer_id": "15702667075807199895",
+      "merchant_title": "Moletom Fear Of God Essentials Classic Full Zip-Up Jet Black Preto",
+      "merchant_link": "https://lksneakers.com.br/products/moletom-fear-of-god-essentials-classic-full-zip-up-jet-black-preto",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1599.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1599.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "moletom-fear-of-god-essentials-classic-full-zip-up-jet-black-preto",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:11314792792398542744",
+      "offer_id": "11314792792398542744",
+      "merchant_title": "Moletom Oversized Nylon Fear of God Essentials Jet Black Preto",
+      "merchant_link": "https://lksneakers.com.br/products/moletom-oversized-nylon-fear-of-god-essentials-jet-black-preto",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1799.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1799.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "moletom-oversized-nylon-fear-of-god-essentials-jet-black-preto",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:8751205371375268276",
+      "offer_id": "8751205371375268276",
+      "merchant_title": "Moletom Fear Of God Essentials Classic Jet Black Preto",
+      "merchant_link": "https://lksneakers.com.br/products/moletom-fear-of-god-essentials-classic-jet-black-preto",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1599.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1599.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "moletom-fear-of-god-essentials-classic-jet-black-preto",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:8888219390173948734",
+      "offer_id": "8888219390173948734",
+      "merchant_title": "Boné Aimé Leon Dore x Porsche Nylon Logo Pine Grove Verde",
+      "merchant_link": "https://lksneakers.com.br/products/bone-aime-leon-dore-porsche-nylon-logo-pine-grove-verde",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1599.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1599.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "bone-aime-leon-dore-porsche-nylon-logo-pine-grove-verde",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:12820359859699264559",
+      "offer_id": "12820359859699264559",
+      "merchant_title": "Camiseta Fear Of God Essentials Jersey Crewneck Heather Bege",
+      "merchant_link": "https://lksneakers.com.br/products/camiseta-fear-of-god-essentials-jersey-crewneck-heather-gray-bege",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "1199.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        1199.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "camiseta-fear-of-god-essentials-jersey-crewneck-heather-gray-bege",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:17623149180616410488",
+      "offer_id": "17623149180616410488",
+      "merchant_title": "Jaqueta Aimé Leon Dore x Porsche Nylon Track",
+      "merchant_link": "https://lksneakers.com.br/products/jaqueta-aime-leon-dore-x-porsche-nylon-track",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "4999.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        4999.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "jaqueta-aime-leon-dore-x-porsche-nylon-track",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:6666401935644385163",
+      "offer_id": "6666401935644385163",
+      "merchant_title": "Pop Mart Labubu The Monsters Coca-Cola Series Figure Single Blind Box [Lacrado]",
+      "merchant_link": "https://lksneakers.com.br/products/pop-mart-labubu-the-monsters-coca-cola-series-figure-single-blind-box-lacrado",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "279.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        279.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "pop-mart-labubu-the-monsters-coca-cola-series-figure-single-blind-box-lacrado",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:16354631407067711955",
+      "offer_id": "16354631407067711955",
+      "merchant_title": "Bolsa Aimé Leon Dore x Porsche Nylon Briefcase Preto | LK Sneakers",
+      "merchant_link": "https://lksneakers.com.br/products/bolsa-aime-leon-dore-x-porsche-nylon-briefcase-preto",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {
+        "price": {
+          "value": "8999.99",
+          "currency": "BRL"
+        }
+      },
+      "source_prices": [
+        8999.99
+      ],
+      "evidence": {
+        "price": "shopify_handle_from_merchant_link",
+        "match_key": "bolsa-aime-leon-dore-x-porsche-nylon-briefcase-preto",
+        "policy": "lowest_positive_shopify_variant_price_for_product"
+      },
+      "decision_state": "ready_for_wave6_price_apply",
+      "selected_for_apply": true
+    }
+  ],
+  "execution_results": [
+    {
+      "product_id": "online:pt:BR:6531799355487598672",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~6531799355487598672"
+    },
+    {
+      "product_id": "online:pt:BR:11810372920072143991",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "499.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11810372920072143991"
+    },
+    {
+      "product_id": "online:pt:BR:3876299146406606317",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "429.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~3876299146406606317"
+    },
+    {
+      "product_id": "online:pt:BR:6562590402534581177",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1299.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~6562590402534581177"
+    },
+    {
+      "product_id": "online:pt:BR:17533377349709354893",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "999.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~17533377349709354893"
+    },
+    {
+      "product_id": "online:pt:BR:2258634078163248862",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "300.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2258634078163248862"
+    },
+    {
+      "product_id": "online:pt:BR:14088693984092512857",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "999.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~14088693984092512857"
+    },
+    {
+      "product_id": "online:pt:BR:15334125053592144145",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15334125053592144145"
+    },
+    {
+      "product_id": "online:pt:BR:17378616365015099957",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "2799.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~17378616365015099957"
+    },
+    {
+      "product_id": "online:pt:BR:13498809788548851139",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1499.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~13498809788548851139"
+    },
+    {
+      "product_id": "online:pt:BR:10002025469927148791",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1749.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~10002025469927148791"
+    },
+    {
+      "product_id": "online:pt:BR:4041641007094962608",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "459.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~4041641007094962608"
+    },
+    {
+      "product_id": "online:pt:BR:10591784840915585992",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "229.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~10591784840915585992"
+    },
+    {
+      "product_id": "online:pt:BR:8376229716754602501",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~8376229716754602501"
+    },
+    {
+      "product_id": "online:pt:BR:9992569968476017768",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~9992569968476017768"
+    },
+    {
+      "product_id": "online:pt:BR:13622509763707629816",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~13622509763707629816"
+    },
+    {
+      "product_id": "online:pt:BR:9250025623243509812",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~9250025623243509812"
+    },
+    {
+      "product_id": "online:pt:BR:2669418431140851356",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "2299.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2669418431140851356"
+    },
+    {
+      "product_id": "online:pt:BR:13294493627572294660",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~13294493627572294660"
+    },
+    {
+      "product_id": "online:pt:BR:1475186660255881483",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1475186660255881483"
+    },
+    {
+      "product_id": "online:pt:BR:8532426969879844901",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "999.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~8532426969879844901"
+    },
+    {
+      "product_id": "online:pt:BR:11806875313375187771",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11806875313375187771"
+    },
+    {
+      "product_id": "online:pt:BR:13315860803624221806",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~13315860803624221806"
+    },
+    {
+      "product_id": "online:pt:BR:16359969147856982838",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "699.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~16359969147856982838"
+    },
+    {
+      "product_id": "online:pt:BR:1624428988081867066",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1624428988081867066"
+    },
+    {
+      "product_id": "online:pt:BR:7958216211561773980",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "7999.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~7958216211561773980"
+    },
+    {
+      "product_id": "online:pt:BR:15507753369156717392",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "321.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15507753369156717392"
+    },
+    {
+      "product_id": "online:pt:BR:15702667075807199895",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15702667075807199895"
+    },
+    {
+      "product_id": "online:pt:BR:11314792792398542744",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1799.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11314792792398542744"
+    },
+    {
+      "product_id": "online:pt:BR:8751205371375268276",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~8751205371375268276"
+    },
+    {
+      "product_id": "online:pt:BR:8888219390173948734",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~8888219390173948734"
+    },
+    {
+      "product_id": "online:pt:BR:12820359859699264559",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~12820359859699264559"
+    },
+    {
+      "product_id": "online:pt:BR:17623149180616410488",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "4999.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~17623149180616410488"
+    },
+    {
+      "product_id": "online:pt:BR:6666401935644385163",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "279.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~6666401935644385163"
+    },
+    {
+      "product_id": "online:pt:BR:16354631407067711955",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "8999.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~16354631407067711955"
+    }
+  ],
+  "verify_results": [
+    {
+      "product_id": "online:pt:BR:6531799355487598672",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~6531799355487598672",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1199990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11810372920072143991",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "499.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11810372920072143991",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "499990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "499.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:3876299146406606317",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "429.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~3876299146406606317",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "429990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "429.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6562590402534581177",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1299.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~6562590402534581177",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1299990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1299.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:17533377349709354893",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "999.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~17533377349709354893",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "999990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "999.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2258634078163248862",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "300.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2258634078163248862",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "300990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "300.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:14088693984092512857",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "999.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~14088693984092512857",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "999990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "999.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15334125053592144145",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15334125053592144145",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1199990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:17378616365015099957",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "2799.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~17378616365015099957",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "2799990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "2799.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:13498809788548851139",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1499.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~13498809788548851139",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1499990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1499.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:10002025469927148791",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1749.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~10002025469927148791",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1749990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1749.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:4041641007094962608",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "459.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~4041641007094962608",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "459990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "459.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:10591784840915585992",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "229.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~10591784840915585992",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "229990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "229.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8376229716754602501",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~8376229716754602501",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1199990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9992569968476017768",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~9992569968476017768",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1599990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:13622509763707629816",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~13622509763707629816",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "599990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "599.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9250025623243509812",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~9250025623243509812",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "599990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "599.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2669418431140851356",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "2299.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2669418431140851356",
+      "verify_status": "verified_gets",
+      "merchant_price": {},
+      "content_price": {},
+      "merchant_price_match_expected": false,
+      "content_price_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:13294493627572294660",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~13294493627572294660",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1199990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1475186660255881483",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1475186660255881483",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1199990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8532426969879844901",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "999.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~8532426969879844901",
+      "verify_status": "verified_gets",
+      "merchant_price": {},
+      "content_price": {},
+      "merchant_price_match_expected": false,
+      "content_price_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:11806875313375187771",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11806875313375187771",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1199990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:13315860803624221806",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~13315860803624221806",
+      "verify_status": "verified_gets",
+      "merchant_price": {},
+      "content_price": {},
+      "merchant_price_match_expected": false,
+      "content_price_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:16359969147856982838",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "699.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~16359969147856982838",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "699990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "699.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1624428988081867066",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1624428988081867066",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1599990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:7958216211561773980",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "7999.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~7958216211561773980",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "7999990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "7999.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15507753369156717392",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "321.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15507753369156717392",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "321990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "321.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15702667075807199895",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15702667075807199895",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1599990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11314792792398542744",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1799.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11314792792398542744",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1799990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1799.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8751205371375268276",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~8751205371375268276",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1599990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8888219390173948734",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~8888219390173948734",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1599990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1599.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:12820359859699264559",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~12820359859699264559",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "1199990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "1199.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:17623149180616410488",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "4999.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~17623149180616410488",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "4999990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "4999.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6666401935644385163",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "279.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~6666401935644385163",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "279990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "279.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:16354631407067711955",
+      "execution_status": "patched_price_v1",
+      "expected_price": {
+        "value": "8999.99",
+        "currency": "BRL"
+      },
+      "product_input": "accounts/5297679409/productInputs/pt~BR~16354631407067711955",
+      "verify_status": "verified_gets",
+      "merchant_price": {
+        "amountMicros": "8999990000",
+        "currencyCode": "BRL"
+      },
+      "content_price": {
+        "value": "8999.99",
+        "currency": "BRL"
+      },
+      "merchant_price_match_expected": true,
+      "content_price_match_expected": true
+    }
+  ],
+  "not_performed": [
+    "merchant_delete",
+    "non_price_update",
+    "shopify_write",
+    "tiny_call_or_write",
+    "database_write",
+    "feed_fetch",
+    "campaign_or_message_send"
+  ]
+}

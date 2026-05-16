@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-05-12T01:47:41.404184+00:00",
+  "generated_at": "2026-05-12T10:33:00.594421+00:00",
   "scope": "LK GMC correction preview read-only",
   "status": "gmc_correction_preview_ready_readonly",
   "summary": {
     "source_product_statuses_read": 5000,
-    "source_queue_items": 963,
-    "source_p1_items": 963,
-    "source_products_with_disapproved_destination": 708,
+    "source_queue_items": 957,
+    "source_p1_items": 957,
+    "source_products_with_disapproved_destination": 586,
     "packages": 6,
     "p0_packages": 1,
     "p1_packages": 3,
     "p2_packages": 2,
-    "preview_only_items_covered": 963,
+    "preview_only_items_covered": 957,
     "write_allowed_now": 0,
     "production_writes": 0,
     "external_sends_or_contacts": 0,
@@ -28,20 +28,20 @@
       "approval_required_for_write": "Merchant/Shopify admin change or feed URL rule change",
       "priority": "P0",
       "issue_group_count": 3,
-      "affected_item_count": 40,
-      "disapproved_item_count_estimate": 40,
+      "affected_item_count": 37,
+      "disapproved_item_count_estimate": 37,
       "issue_codes": [
         {
           "issue_code": "item_missing_required_attribute",
-          "count": 40
-        },
-        {
-          "issue_code": "missing_item_attribute_for_product_type",
           "count": 37
         },
         {
           "issue_code": "checkout_url_invalid",
-          "count": 36
+          "count": 33
+        },
+        {
+          "issue_code": "missing_item_attribute_for_product_type",
+          "count": 8
         },
         {
           "issue_code": "landing_page_error",
@@ -51,16 +51,16 @@
       "sample_product_ids": [
         "online:pt:BR:JI3185-7",
         "online:pt:BR:HQ4309-610-40",
-        "online:pt:BR:U204L2SZ-36",
         "online:pt:BR:U1906LNT-10",
         "online:pt:BR:JH5439-8",
         "online:pt:BR:JH5439-6",
         "online:pt:BR:HQ4307-101-38",
         "online:pt:BR:HQ4307-300-43",
-        "online:pt:BR:2258634078163248862",
-        "online:pt:BR:6562590402534581177",
-        "online:pt:BR:3876299146406606317",
-        "online:pt:BR:11810372920072143991"
+        "online:pt:BR:4150234_3581_412-2",
+        "online:pt:BR:1183A201-126-5",
+        "online:pt:BR:1183A201-126-6",
+        "online:pt:BR:3561",
+        "online:pt:BR:SUPSS2504"
       ],
       "sample_links": [
         "https://lksneakers.com.br/products/calca-chino-saint-studio-supima-preto",
@@ -73,21 +73,21 @@
       "top_attributes_from_queue_sample": [
         {
           "attribute": "age group",
-          "sample_count": 64
+          "sample_count": 4
         },
         {
           "attribute": "gender",
-          "sample_count": 64
+          "sample_count": 4
         },
         {
           "attribute": "size",
-          "sample_count": 32
+          "sample_count": 2
         }
       ],
       "sample_rows": [
         {
-          "product_id": "online:pt:BR:JI3185-7",
-          "sku_or_offer_id": "JI3185-7",
+          "product_id": "online:pt:BR:1183A201-126-5",
+          "sku_or_offer_id": "1183A201-126-5",
           "title": null,
           "link": "",
           "issue_codes": [
@@ -107,176 +107,8 @@
           ]
         },
         {
-          "product_id": "online:pt:BR:HQ4309-610-40",
-          "sku_or_offer_id": "HQ4309-610-40",
-          "title": null,
-          "link": "",
-          "issue_codes": [
-            "checkout_url_invalid",
-            "item_missing_required_attribute",
-            "missing_item_attribute_for_product_type"
-          ],
-          "attributes_seen_in_issue_details": [
-            "age group",
-            "gender",
-            "size"
-          ],
-          "disapproved_destinations": [
-            "Shopping",
-            "DisplayAds",
-            "SurfacesAcrossGoogle"
-          ]
-        },
-        {
-          "product_id": "online:pt:BR:U204L2SZ-36",
-          "sku_or_offer_id": "U204L2SZ-36",
-          "title": null,
-          "link": "",
-          "issue_codes": [
-            "checkout_url_invalid",
-            "item_missing_required_attribute",
-            "missing_item_attribute_for_product_type"
-          ],
-          "attributes_seen_in_issue_details": [
-            "age group",
-            "gender",
-            "size"
-          ],
-          "disapproved_destinations": [
-            "Shopping",
-            "DisplayAds",
-            "SurfacesAcrossGoogle"
-          ]
-        },
-        {
-          "product_id": "online:pt:BR:U1906LNT-10",
-          "sku_or_offer_id": "U1906LNT-10",
-          "title": null,
-          "link": "",
-          "issue_codes": [
-            "checkout_url_invalid",
-            "item_missing_required_attribute",
-            "missing_item_attribute_for_product_type"
-          ],
-          "attributes_seen_in_issue_details": [
-            "age group",
-            "gender",
-            "size"
-          ],
-          "disapproved_destinations": [
-            "Shopping",
-            "DisplayAds",
-            "SurfacesAcrossGoogle"
-          ]
-        },
-        {
-          "product_id": "online:pt:BR:JH5439-8",
-          "sku_or_offer_id": "JH5439-8",
-          "title": null,
-          "link": "",
-          "issue_codes": [
-            "checkout_url_invalid",
-            "item_missing_required_attribute",
-            "missing_item_attribute_for_product_type"
-          ],
-          "attributes_seen_in_issue_details": [
-            "age group",
-            "gender",
-            "size"
-          ],
-          "disapproved_destinations": [
-            "Shopping",
-            "DisplayAds",
-            "SurfacesAcrossGoogle"
-          ]
-        },
-        {
-          "product_id": "online:pt:BR:JH5439-6",
-          "sku_or_offer_id": "JH5439-6",
-          "title": null,
-          "link": "",
-          "issue_codes": [
-            "checkout_url_invalid",
-            "item_missing_required_attribute",
-            "missing_item_attribute_for_product_type"
-          ],
-          "attributes_seen_in_issue_details": [
-            "age group",
-            "gender",
-            "size"
-          ],
-          "disapproved_destinations": [
-            "Shopping",
-            "DisplayAds",
-            "SurfacesAcrossGoogle"
-          ]
-        },
-        {
-          "product_id": "online:pt:BR:HQ4307-101-38",
-          "sku_or_offer_id": "HQ4307-101-38",
-          "title": null,
-          "link": "",
-          "issue_codes": [
-            "checkout_url_invalid",
-            "item_missing_required_attribute",
-            "missing_item_attribute_for_product_type"
-          ],
-          "attributes_seen_in_issue_details": [
-            "age group",
-            "gender",
-            "size"
-          ],
-          "disapproved_destinations": [
-            "Shopping",
-            "DisplayAds",
-            "SurfacesAcrossGoogle"
-          ]
-        },
-        {
-          "product_id": "online:pt:BR:HQ4307-300-43",
-          "sku_or_offer_id": "HQ4307-300-43",
-          "title": null,
-          "link": "",
-          "issue_codes": [
-            "checkout_url_invalid",
-            "item_missing_required_attribute",
-            "missing_item_attribute_for_product_type"
-          ],
-          "attributes_seen_in_issue_details": [
-            "age group",
-            "gender",
-            "size"
-          ],
-          "disapproved_destinations": [
-            "Shopping",
-            "DisplayAds",
-            "SurfacesAcrossGoogle"
-          ]
-        },
-        {
-          "product_id": "online:pt:BR:4150234_3581_412-2",
-          "sku_or_offer_id": "4150234_3581_412-2",
-          "title": null,
-          "link": "",
-          "issue_codes": [
-            "checkout_url_invalid",
-            "item_missing_required_attribute",
-            "missing_item_attribute_for_product_type"
-          ],
-          "attributes_seen_in_issue_details": [
-            "age group",
-            "gender",
-            "size"
-          ],
-          "disapproved_destinations": [
-            "Shopping",
-            "DisplayAds",
-            "SurfacesAcrossGoogle"
-          ]
-        },
-        {
-          "product_id": "online:pt:BR:U204L2SZ-44",
-          "sku_or_offer_id": "U204L2SZ-44",
+          "product_id": "online:pt:BR:1183A201-126-6",
+          "sku_or_offer_id": "1183A201-126-6",
           "title": null,
           "link": "",
           "issue_codes": [
@@ -304,17 +136,17 @@
       "safe_next_action": "create attribute template by product type: age_group, gender, color, size, material/pattern where applicable; preview exact mapping only",
       "approval_required_for_write": "Shopify product/metafield update or Merchant feed rule/supplemental feed update",
       "priority": "P1",
-      "issue_group_count": 7,
-      "affected_item_count": 826,
-      "disapproved_item_count_estimate": 658,
+      "issue_group_count": 8,
+      "affected_item_count": 827,
+      "disapproved_item_count_estimate": 548,
       "issue_codes": [
         {
           "issue_code": "item_missing_required_attribute",
-          "count": 658
+          "count": 548
         },
         {
           "issue_code": "missing_item_attribute_for_product_type",
-          "count": 479
+          "count": 457
         },
         {
           "issue_code": "sexual_interests_policy_violation",
@@ -325,6 +157,10 @@
           "count": 1
         },
         {
+          "issue_code": "landing_page_pending_crawl",
+          "count": 1
+        },
+        {
           "issue_code": "strikethrough_price_updated",
           "count": 1
         }
@@ -332,21 +168,21 @@
       "sample_product_ids": [
         "online:pt:BR:LIA_1182A708.020-5",
         "online:pt:BR:LIA_IH3999-38",
+        "online:pt:BR:BQ6472104-1",
         "online:pt:BR:FV5029-010-43",
+        "online:pt:BR:1201A789-020-41",
+        "online:pt:BR:1183C468200-2",
         "online:pt:BR:LIA_1201A789-020-38",
         "online:pt:BR:LIA_IQ8601-001-44",
-        "online:pt:BR:LIA_DB4612-100-7",
-        "online:pt:BR:KAWS005",
-        "online:pt:BR:LIA_398846_18-2",
-        "online:pt:BR:HV0823-100-5",
-        "online:pt:BR:BQ6472104-1",
-        "online:pt:BR:1201A789-020-41",
-        "online:pt:BR:1183C468200-2"
+        "online:pt:BR:17132474926828267951",
+        "online:pt:BR:12020378807434295587",
+        "online:pt:BR:12136334699203773021",
+        "online:pt:BR:17912240090608697983"
       ],
       "sample_links": [
         "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo",
         "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-slip-on-white-pure-silver-prateado",
-        "https://lksneakers.com.br/products/tenis-new-balance-530-silver-cream-prateado",
+        "https://lksneakers.com.br/products/shorts-slyce-frenchterry-off-white",
         "https://lksneakers.com.br/products/tenis-air-jordan-1-low-archaeo-brown-nike-casual-couro",
         "https://lksneakers.com.br/products/bone-6-panel-aime-leon-dore-embroidered-logo-branco",
         "https://lksneakers.com.br/products/camiseta-nude-project-hearts-white-branco"
@@ -357,21 +193,21 @@
       "top_attributes_from_queue_sample": [
         {
           "attribute": "age group",
-          "sample_count": 96
+          "sample_count": 156
         },
         {
           "attribute": "gender",
-          "sample_count": 96
+          "sample_count": 156
         },
         {
           "attribute": "size",
-          "sample_count": 48
+          "sample_count": 78
         }
       ],
       "sample_rows": [
         {
-          "product_id": "online:pt:BR:HV0823-100-5",
-          "sku_or_offer_id": "HV0823-100-5",
+          "product_id": "online:pt:BR:DZ4137116",
+          "sku_or_offer_id": "DZ4137116",
           "title": null,
           "link": "",
           "issue_codes": [
@@ -390,8 +226,8 @@
           ]
         },
         {
-          "product_id": "online:pt:BR:BQ6472104-1",
-          "sku_or_offer_id": "BQ6472104-1",
+          "product_id": "online:pt:BR:FZ3124200",
+          "sku_or_offer_id": "FZ3124200",
           "title": null,
           "link": "",
           "issue_codes": [
@@ -410,8 +246,8 @@
           ]
         },
         {
-          "product_id": "online:pt:BR:1201A789-020-41",
-          "sku_or_offer_id": "1201A789-020-41",
+          "product_id": "online:pt:BR:43774078387710",
+          "sku_or_offer_id": "43774078387710",
           "title": null,
           "link": "",
           "issue_codes": [
@@ -430,8 +266,8 @@
           ]
         },
         {
-          "product_id": "online:pt:BR:1183C468200-2",
-          "sku_or_offer_id": "1183C468200-2",
+          "product_id": "online:pt:BR:IH7323102",
+          "sku_or_offer_id": "IH7323102",
           "title": null,
           "link": "",
           "issue_codes": [
@@ -450,8 +286,8 @@
           ]
         },
         {
-          "product_id": "online:pt:BR:DD0587-002-43",
-          "sku_or_offer_id": "DD0587-002-43",
+          "product_id": "online:pt:BR:1183C468020-6",
+          "sku_or_offer_id": "1183C468020-6",
           "title": null,
           "link": "",
           "issue_codes": [
@@ -470,8 +306,8 @@
           ]
         },
         {
-          "product_id": "online:pt:BR:HV0823-100-6",
-          "sku_or_offer_id": "HV0823-100-6",
+          "product_id": "online:pt:BR:DB4612-100-2",
+          "sku_or_offer_id": "DB4612-100-2",
           "title": null,
           "link": "",
           "issue_codes": [
@@ -490,8 +326,8 @@
           ]
         },
         {
-          "product_id": "online:pt:BR:1201A789-020-39",
-          "sku_or_offer_id": "1201A789-020-39",
+          "product_id": "online:pt:BR:43774078389090",
+          "sku_or_offer_id": "43774078389090",
           "title": null,
           "link": "",
           "issue_codes": [
@@ -510,8 +346,8 @@
           ]
         },
         {
-          "product_id": "online:pt:BR:1183C428.200-10",
-          "sku_or_offer_id": "1183C428.200-10",
+          "product_id": "online:pt:BR:HQ7978-103-37",
+          "sku_or_offer_id": "HQ7978-103-37",
           "title": null,
           "link": "",
           "issue_codes": [
@@ -530,8 +366,8 @@
           ]
         },
         {
-          "product_id": "online:pt:BR:UGTR83J-42",
-          "sku_or_offer_id": "UGTR83J-42",
+          "product_id": "online:pt:BR:KI6669-39",
+          "sku_or_offer_id": "KI6669-39",
           "title": null,
           "link": "",
           "issue_codes": [
@@ -550,8 +386,8 @@
           ]
         },
         {
-          "product_id": "online:pt:BR:1183C233-250-4",
-          "sku_or_offer_id": "1183C233-250-4",
+          "product_id": "online:pt:BR:IO7847-001-43",
+          "sku_or_offer_id": "IO7847-001-43",
           "title": null,
           "link": "",
           "issue_codes": [
@@ -616,27 +452,18 @@
       "approval_required_for_write": "Merchant local inventory feed/config update",
       "priority": "P1",
       "issue_group_count": 1,
-      "affected_item_count": 10,
-      "disapproved_item_count_estimate": 10,
+      "affected_item_count": 1,
+      "disapproved_item_count_estimate": 1,
       "issue_codes": [
         {
           "issue_code": "local_stores_lack_inventory",
-          "count": 10
+          "count": 1
         }
       ],
       "sample_product_ids": [
-        "local:pt:BR:LIA_205759 610-2",
-        "local:pt:BR:LIA_205759 610-3",
-        "local:pt:BR:LIA_CZ8065 100-7",
-        "local:pt:BR:LIA_HF3144 100-8",
-        "local:pt:BR:LIA_HF3144 100-3",
-        "local:pt:BR:LIA_HV5980 231-3",
-        "local:pt:BR:LIA_HV5980 231-2",
-        "local:pt:BR:LIA_HV5980 231-5"
+        "local:pt:BR:LIA_CZ8065 100-7"
       ],
       "sample_links": [
-        "https://lksneakers.com.br/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho?variant=44834189508830&country=BR",
-        "https://lksneakers.com.br/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho?variant=44834189541598&country=BR",
         "https://lksneakers.com.br/products/tenis-nike-air-force-1-low-x-nocta-certified-lover-boy-branco?variant=47734054846686&country=BR"
       ],
       "approval_status": "preview_only_requires_approval_before_write",
@@ -653,16 +480,16 @@
       "approval_required_for_write": "price/feed change only if persistent mismatch is verified",
       "priority": "P2",
       "issue_group_count": 3,
-      "affected_item_count": 70,
+      "affected_item_count": 75,
       "disapproved_item_count_estimate": 0,
       "issue_codes": [
         {
           "issue_code": "price_updated",
-          "count": 64
+          "count": 69
         },
         {
           "issue_code": "strikethrough_price_updated",
-          "count": 28
+          "count": 30
         }
       ],
       "sample_product_ids": [
@@ -733,31 +560,27 @@
   "top_issue_codes": [
     {
       "issue": "item_missing_required_attribute",
-      "count": 9655
+      "count": 8073
     },
     {
       "issue": "missing_item_attribute_for_product_type",
-      "count": 2454
+      "count": 1702
     },
     {
       "issue": "price_updated",
-      "count": 192
+      "count": 207
     },
     {
       "issue": "strikethrough_price_updated",
-      "count": 87
+      "count": 93
     },
     {
       "issue": "checkout_url_invalid",
-      "count": 36
+      "count": 33
     },
     {
       "issue": "restricted_gtin",
       "count": 22
-    },
-    {
-      "issue": "local_stores_lack_inventory",
-      "count": 10
     },
     {
       "issue": "landing_page_error",
@@ -778,24 +601,36 @@
     {
       "issue": "reserved_gtin",
       "count": 1
+    },
+    {
+      "issue": "local_stores_lack_inventory",
+      "count": 1
+    },
+    {
+      "issue": "landing_page_pending_crawl",
+      "count": 1
     }
   ],
   "destination_status_counts": [
     {
       "status": "disapproved:SurfacesAcrossGoogle",
-      "count": 698
+      "count": 585
     },
     {
       "status": "disapproved:Shopping",
-      "count": 689
+      "count": 576
     },
     {
       "status": "disapproved:DisplayAds",
-      "count": 689
+      "count": 576
     },
     {
       "status": "disapproved:LocalSurfacesAcrossGoogle",
-      "count": 10
+      "count": 1
+    },
+    {
+      "status": "pending:SurfacesAcrossGoogle:pending",
+      "count": 1
     }
   ],
   "checks": [

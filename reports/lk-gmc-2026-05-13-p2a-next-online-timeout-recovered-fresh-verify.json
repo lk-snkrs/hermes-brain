@@ -1,0 +1,3781 @@
+{
+  "summary": {
+    "generated_at": "2026-05-13T20:03:14.867108+00:00",
+    "mode": "read_only_timeout_recovery_verify_no_write",
+    "progress_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p2a-next-online-executor-progress-20260513T195311Z.jsonl",
+    "progress_rows": 250,
+    "execution_summary": {
+      "patched_p2a_next_v1": 250
+    },
+    "verify_summary": {
+      "verified_merchant_product_get": 250
+    },
+    "match_expected": 250,
+    "mismatch_count": 0,
+    "failed_count": 0
+  },
+  "verify_results": [
+    {
+      "product_id": "online:pt:BR:43774078390880",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390880",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390890",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390890",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390900",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390900",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390740",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390740",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390750",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390750",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390760",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390760",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390770",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390770",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390780",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390780",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390790",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390790",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390800",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390800",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390810",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390810",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391180",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391180",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391190",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391190",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391200",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391200",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391210",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391210",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391220",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391220",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391230",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391230",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391240",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391240",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391250",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391250",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391010",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391010",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391020",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391020",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391030",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391030",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391040",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391040",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391050",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391050",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391060",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391060",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391070",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391070",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391080",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391080",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390920",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390920",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390930",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390930",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390940",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390940",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390950",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390950",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390960",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390960",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390970",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390970",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390980",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390980",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390990",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390990",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391100",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391100",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391110",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391110",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391120",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391120",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391130",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391130",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391140",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391140",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391150",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391150",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078391160",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078391160",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCOFOW-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCOFOW-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCOFOW-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCOFOW-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCOFOW-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCOFOW-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCOFMR-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCOFMR-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCOFMR-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCOFMR-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCOFMR-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCOFMR-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCGVW-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCGVW-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCGVW-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCGVW-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCGVW-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCGVW-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCGVW-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCGVW-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLY-5148126-L",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLY-5148126-L",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCV2S-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCV2S-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCV2S-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCV2S-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRCVNV-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCRCVNV-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRCVNV-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCRCVNV-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRCVNV-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCRCVNV-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVNV-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCRBVNV-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVNV-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCRBVNV-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVNV-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCRBVNV-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVNV-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCRBVNV-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVOW-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCRBVOW-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVOW-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCRBVOW-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVOW-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCRBVOW-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRCVOW-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCRCVOW-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRCVOW-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCRCVOW-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRCVOW-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SLCRCVOW-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP7-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP7-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP7-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP7-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP7-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP7-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP7-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP7-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP7-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP7-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP4-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP4-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP4-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP4-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP4-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP4-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP4-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP4-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP4-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP4-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP5-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP5-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP5-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP5-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP5-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP5-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP5-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP5-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SF2BSP5-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SF2BSP5-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:PEACKTALK1-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~PEACKTALK1-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:PEACKTALK1-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~PEACKTALK1-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:PEACKTALK1-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~PEACKTALK1-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:PEACETALK2-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~PEACETALK2-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:PEACETALK2-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~PEACETALK2-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:PEACETALK2-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~PEACETALK2-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:STUNT3-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~STUNT3-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:STUNT3-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~STUNT3-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:STUNT3-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~STUNT3-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:STUNT2-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~STUNT2-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:STUNT2-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~STUNT2-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:STUNT2-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~STUNT2-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:STUNT1-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~STUNT1-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:STUNT1-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~STUNT1-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:STUNT1-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~STUNT1-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ss23kn22-black",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ss23kn22-black",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "expected_productTypes": [
+        "Camiseta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "actual_productTypes": [
+        "Camiseta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-10",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-10",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-11",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-11",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-12",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-12",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-13",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-13",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-14",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-14",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-15",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-15",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-6",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-6",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-7",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-7",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-8",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-8",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u5012rg-9",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u5012rg-9",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w5784r-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w5784r-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w5784r-10",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w5784r-10",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w5784r-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w5784r-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w5784r-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w5784r-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w5784r-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w5784r-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w5784r-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w5784r-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w5784r-6",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w5784r-6",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w5784r-7",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w5784r-7",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w5784r-8",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w5784r-8",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w5784r-9",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w5784r-9",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:LK-3733854-L",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~LK-3733854-L",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:LK-3733854-M",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~LK-3733854-M",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:LK-3733854-S",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~LK-3733854-S",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:LK-3733854-XL",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~LK-3733854-XL",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:LK-3733854-XS",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~LK-3733854-XS",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:17623149180616410488",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~17623149180616410488",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4530r-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4530r-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4530r-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4530r-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4530r-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4530r-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4530r-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4530r-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4530r-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4530r-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4528r-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4528r-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4528r-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4528r-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4528r-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4528r-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4528r-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4528r-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4528r-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4528r-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4529r-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4529r-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4529r-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4529r-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4529r-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4529r-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4529r-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4529r-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4529r-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4529r-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4527r-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4527r-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4527r-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4527r-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4527r-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4527r-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4527r-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4527r-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4527r-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4527r-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4496r-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4496r-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4496r-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4496r-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4496r-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4496r-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4496r-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4496r-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4496r-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4496r-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4609r-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4609r-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4609r-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4609r-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4609r-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4609r-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4609r-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4609r-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4609r-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4609r-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4608r-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4608r-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4608r-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4608r-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4608r-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4608r-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4608r-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4608r-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4608r-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4608r-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4607r-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4607r-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4607r-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4607r-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4607r-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4607r-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4607r-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4607r-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w4607r-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w4607r-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:20048-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~20048-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:20048-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~20048-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:20046-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~20046-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:20046-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~20046-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:20046-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~20046-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:20046-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~20046-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:20045-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~20045-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:LLM-2319326-L",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~LLM-2319326-L",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:LLM-2319326-M",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~LLM-2319326-M",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:LLM-2319326-S",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~LLM-2319326-S",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:LLM-2319326-XS",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~LLM-2319326-XS",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-11",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-11",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-12",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-12",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-13",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-13",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-14",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-14",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-15",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-15",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-17",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-17",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-18",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-18",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-6",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-6",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-7",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-7",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-8",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-8",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11020158-9",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11020158-9",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-9483230-L",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SST-9483230-L",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-9483230-M",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SST-9483230-M",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-9483230-XL",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~SST-9483230-XL",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST52-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ST52-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST52-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ST52-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST52-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ST52-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST52-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ST52-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST52-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ST52-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:16606924615096196772",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~16606924615096196772",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALD-3138526-L",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ALD-3138526-L",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALD-3138526-M",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ALD-3138526-M",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALD-3138526-S",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ALD-3138526-S",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALD-3138526-XL",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ALD-3138526-XL",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-10",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-10",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-11",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-11",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-12",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-12",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-13",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-13",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-14",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-14",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-15",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-15",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-6",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-6",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-7",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-7",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-8",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-8",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3550rg-9",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3550rg-9",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-10",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-10",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-11",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-11",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-12",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-12",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-13",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-13",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-14",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-14",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-15",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-15",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-16",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-16",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-17",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-17",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-18",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-18",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-19",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-19",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-20",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-20",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-6",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-6",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-7",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-7",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-8",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-8",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u3031rg-9",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u3031rg-9",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3924rg_01-1",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3924rg_01-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3924rg_01-2",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3924rg_01-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3924rg_01-3",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3924rg_01-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3924rg_01-4",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3924rg_01-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:w3924rg_01-5",
+      "execution_status": "patched_p2a_next_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~w3924rg_01-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "expected_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "actual_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "match_expected": true
+    }
+  ],
+  "not_performed": [
+    "merchant_write",
+    "shopify_write",
+    "tiny_write",
+    "price_update",
+    "availability_update",
+    "title_update",
+    "image_or_link_update",
+    "local_inventory_write",
+    "feed_fetch_or_upload",
+    "campaign_or_message_send"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-05-13T00:54:23.395396+00:00",
+  "status": "complete_verified",
+  "approval_context": "Lucas option 1: scale in controlled batches after successful pilot.",
+  "summary": {
+    "packet_rows": 1616,
+    "processed_unique": 1616,
+    "success_or_already_in_stock": 1616,
+    "updated_verified_in_stock": 1354,
+    "already_in_stock": 262,
+    "failed": 0,
+    "remaining_unprocessed": 0,
+    "counts": {
+      "already_in_stock": 262,
+      "updated_verified_in_stock": 1354
+    }
+  },
+  "batches": [
+    {
+      "batch_no": 1,
+      "selected": 250,
+      "updated_verified_in_stock": 213,
+      "already_in_stock": 37,
+      "failed": 0,
+      "rollback_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-p1-availability-in-stock-policy-fast-scale-batch-01-rollback-20260512T235629Z.jsonl"
+    },
+    {
+      "batch_no": 2,
+      "selected": 250,
+      "updated_verified_in_stock": 250,
+      "already_in_stock": 0,
+      "failed": 0,
+      "rollback_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-p1-availability-in-stock-policy-fast-scale-batch-02-rollback-20260513T000552Z.jsonl"
+    },
+    {
+      "batch_no": 3,
+      "selected": 250,
+      "updated_verified_in_stock": 250,
+      "already_in_stock": 0,
+      "failed": 0,
+      "rollback_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-p1-availability-in-stock-policy-fast-scale-batch-03-rollback-20260513T001711Z.jsonl"
+    },
+    {
+      "batch_no": 4,
+      "selected": 250,
+      "updated_verified_in_stock": 250,
+      "already_in_stock": 0,
+      "failed": 0,
+      "rollback_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-p1-availability-in-stock-policy-fast-scale-batch-04-rollback-20260513T002652Z.jsonl"
+    },
+    {
+      "batch_no": 5,
+      "selected": 250,
+      "updated_verified_in_stock": 250,
+      "already_in_stock": 0,
+      "failed": 0,
+      "rollback_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-p1-availability-in-stock-policy-fast-scale-batch-05-rollback-20260513T003729Z.jsonl"
+    },
+    {
+      "batch_no": 6,
+      "selected": 141,
+      "updated_verified_in_stock": 141,
+      "already_in_stock": 0,
+      "failed": 0,
+      "rollback_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-p1-availability-in-stock-policy-fast-scale-batch-06-rollback-20260513T004840Z.jsonl"
+    }
+  ],
+  "not_performed": [
+    "merchant_delete",
+    "merchant_price_title_link_image_update",
+    "tiny_call",
+    "tiny_write",
+    "shopify_write",
+    "feed_update_or_fetch",
+    "database_write",
+    "pos_write",
+    "campaign_or_external_send",
+    "sourcing_or_supplier_contact"
+  ],
+  "progress_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_progress/lk-gmc-2026-05-12-p1-availability-in-stock-policy-fast-scale-progress.jsonl"
+}

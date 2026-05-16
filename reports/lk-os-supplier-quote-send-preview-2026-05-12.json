@@ -1,0 +1,200 @@
+{
+  "generated_at": "2026-05-12T21:01:35.409926+00:00",
+  "status": "superseded_do_not_send_lucas_sourcing_correction_2026_05_12",
+  "scope": "Copy-ready supplier quote previews for P1 sourcing families; local/preview only, no external send.",
+  "source_packet": "reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.json",
+  "summary": {
+    "preview_messages": 4,
+    "ready_families": 4,
+    "optional_families_not_included": 1,
+    "reference_quote_qty_not_purchase_qty": 24,
+    "revenue_signal_fact_shopify": 77799.81,
+    "supplier_contacts": 0,
+    "external_sends": 0,
+    "purchases_or_pos": 0,
+    "shopify_writes": 0,
+    "tiny_writes": 0,
+    "database_writes": 0,
+    "marketplace_calls": 0,
+    "n8n_flows": 0
+  },
+  "previews": [
+    {
+      "preview_id": "LK-QUOTE-20260504-20260510-01",
+      "family": "Nike Moon Shoe SP Jacquemus",
+      "status": "superseded_do_not_send",
+      "priority": "P1",
+      "recommended_decision": "Aprovar envio de cotação apenas para disponibilidade, custo e lead time; compra separada depois.",
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "items_count": 5,
+      "p0_count": 2,
+      "p1_count": 3,
+      "reference_quote_qty_not_purchase_qty": 10,
+      "revenue_signal_fact_shopify": 48999.92,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "copy_ready_message_not_sent": "[DESTINO: fornecedor a confirmar por Lucas/Júlio]\n[ASSUNTO/CONTEXTO: Cotação LK — Nike Moon Shoe SP Jacquemus]\n\nOlá, preciso validar disponibilidade e custo para Nike Moon Shoe SP Jacquemus.\nIsto é consulta de disponibilidade/preço, ainda não é pedido de compra.\nItens para cotação:\n- SKU HV8547-200-38 | tamanho 38 | referência cotação 3 un | prioridade P0\n- SKU HV8547-002-36 | tamanho 36 | referência cotação 3 un | prioridade P0\n- SKU HV8547-001-1 | tamanho 34 | referência cotação 1 un | prioridade P1\n- SKU HV8547-001-7 | tamanho 40 | referência cotação 1 un | prioridade P1\n- SKU HV8547-601-37 | tamanho 37 | referência cotação 2 un | prioridade P1\nResponder por favor: custo unitário, disponibilidade imediata, lead time, condição de pagamento e validade da cotação.\nNão separar, reservar ou faturar sem confirmação posterior.\n\nObservação interna: enviar somente após Lucas/Júlio aprovar destino e envio. Esta mensagem não autoriza compra, reserva, faturamento ou separação.",
+      "approval_required_before_send": [
+        "supplier_destination_selection",
+        "external_send_approval"
+      ],
+      "still_blocked_after_send_approval": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ],
+      "external_send_status": "blocked_by_corrected_sourcing_logic",
+      "write_allowed_now": false
+    },
+    {
+      "preview_id": "LK-QUOTE-20260504-20260510-02",
+      "family": "New Balance 9060",
+      "status": "superseded_do_not_send",
+      "priority": "P1",
+      "recommended_decision": "Aprovar envio de cotação apenas para disponibilidade, custo e lead time; compra separada depois.",
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "items_count": 3,
+      "p0_count": 2,
+      "p1_count": 1,
+      "reference_quote_qty_not_purchase_qty": 8,
+      "revenue_signal_fact_shopify": 18799.93,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "copy_ready_message_not_sent": "[DESTINO: fornecedor a confirmar por Lucas/Júlio]\n[ASSUNTO/CONTEXTO: Cotação LK — New Balance 9060]\n\nOlá, preciso validar disponibilidade e custo para New Balance 9060.\nIsto é consulta de disponibilidade/preço, ainda não é pedido de compra.\nItens para cotação:\n- SKU U9060CCC-4 | tamanho 37 | referência cotação 3 un | prioridade P0\n- SKU U9060WHT-4 | tamanho 37 | referência cotação 3 un | prioridade P0\n- SKU U9060ERB-3 | tamanho 36 | referência cotação 2 un | prioridade P1\nResponder por favor: custo unitário, disponibilidade imediata, lead time, condição de pagamento e validade da cotação.\nNão separar, reservar ou faturar sem confirmação posterior.\n\nObservação interna: enviar somente após Lucas/Júlio aprovar destino e envio. Esta mensagem não autoriza compra, reserva, faturamento ou separação.",
+      "approval_required_before_send": [
+        "supplier_destination_selection",
+        "external_send_approval"
+      ],
+      "still_blocked_after_send_approval": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ],
+      "external_send_status": "blocked_by_corrected_sourcing_logic",
+      "write_allowed_now": false
+    },
+    {
+      "preview_id": "LK-QUOTE-20260504-20260510-03",
+      "family": "Nike Mind 002",
+      "status": "superseded_do_not_send",
+      "priority": "P1",
+      "recommended_decision": "Aprovar envio de cotação apenas para disponibilidade, custo e lead time; compra separada depois.",
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "items_count": 1,
+      "p0_count": 1,
+      "p1_count": 0,
+      "reference_quote_qty_not_purchase_qty": 3,
+      "revenue_signal_fact_shopify": 6399.98,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "copy_ready_message_not_sent": "[DESTINO: fornecedor a confirmar por Lucas/Júlio]\n[ASSUNTO/CONTEXTO: Cotação LK — Nike Mind 002]\n\nOlá, preciso validar disponibilidade e custo para Nike Mind 002.\nIsto é consulta de disponibilidade/preço, ainda não é pedido de compra.\nItens para cotação:\n- SKU HQ4308-003-5 | tamanho 36 | referência cotação 3 un | prioridade P0\nResponder por favor: custo unitário, disponibilidade imediata, lead time, condição de pagamento e validade da cotação.\nNão separar, reservar ou faturar sem confirmação posterior.\n\nObservação interna: enviar somente após Lucas/Júlio aprovar destino e envio. Esta mensagem não autoriza compra, reserva, faturamento ou separação.",
+      "approval_required_before_send": [
+        "supplier_destination_selection",
+        "external_send_approval"
+      ],
+      "still_blocked_after_send_approval": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ],
+      "external_send_status": "blocked_by_corrected_sourcing_logic",
+      "write_allowed_now": false
+    },
+    {
+      "preview_id": "LK-QUOTE-20260504-20260510-04",
+      "family": "Comme des Garçons PLAY Polo",
+      "status": "superseded_do_not_send",
+      "priority": "P1",
+      "recommended_decision": "Aprovar envio de cotação apenas para disponibilidade, custo e lead time; compra separada depois.",
+      "supplier_destination": "pending_lucas_or_julio_selection",
+      "items_count": 1,
+      "p0_count": 1,
+      "p1_count": 0,
+      "reference_quote_qty_not_purchase_qty": 3,
+      "revenue_signal_fact_shopify": 3599.98,
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "copy_ready_message_not_sent": "[DESTINO: fornecedor a confirmar por Lucas/Júlio]\n[ASSUNTO/CONTEXTO: Cotação LK — Comme des Garçons PLAY Polo]\n\nOlá, preciso validar disponibilidade e custo para Comme des Garçons PLAY Polo.\nIsto é consulta de disponibilidade/preço, ainda não é pedido de compra.\nItens para cotação:\n- SKU CDGP2 | tamanho G/L | referência cotação 3 un | prioridade P0\nResponder por favor: custo unitário, disponibilidade imediata, lead time, condição de pagamento e validade da cotação.\nNão separar, reservar ou faturar sem confirmação posterior.\n\nObservação interna: enviar somente após Lucas/Júlio aprovar destino e envio. Esta mensagem não autoriza compra, reserva, faturamento ou separação.",
+      "approval_required_before_send": [
+        "supplier_destination_selection",
+        "external_send_approval"
+      ],
+      "still_blocked_after_send_approval": [
+        "purchase",
+        "purchase_order",
+        "reservation",
+        "shopify_write",
+        "tiny_write",
+        "price_or_stock_change",
+        "campaign_or_external_send"
+      ],
+      "external_send_status": "blocked_by_corrected_sourcing_logic",
+      "write_allowed_now": false
+    }
+  ],
+  "optional_not_included": [
+    "New Balance 530"
+  ],
+  "approval_wording": "Aprovo enviar as 4 mensagens de cotação P1 exatamente como preview, para os fornecedores/destinos que eu indicar, apenas para disponibilidade/custo/lead time; não autorizo compra, reserva, PO, Shopify/Tiny/preço/estoque/campanha.",
+  "not_performed": [
+    "supplier_contact",
+    "external_send",
+    "purchase",
+    "purchase_order",
+    "reservation",
+    "shopify_write",
+    "tiny_write",
+    "price_or_stock_change",
+    "campaign_send",
+    "database_write",
+    "marketplace_lookup",
+    "n8n_flow_creation"
+  ],
+  "files": {
+    "json": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-os-supplier-quote-send-preview-2026-05-12.json",
+    "csv": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-os-supplier-quote-send-preview-2026-05-12.csv",
+    "md": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-os-supplier-quote-send-preview-2026-05-12.md",
+    "brain_doc": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/rotinas/lk-os-supplier-quote-send-preview-2026-05-12.md"
+  },
+  "superseded_by_correction": {
+    "corrected_at": "2026-05-12",
+    "reason": "Lucas corrected LK sourcing logic: generic supplier quote previews are wrong for replenishment.",
+    "correct_flow": [
+      "confirm sold/requested product with exact SKU/size",
+      "confirm stockout/zero availability",
+      "check Droper first for availability/cost",
+      "if unavailable on Droper, compare StockX vs GOAT cheapest viable source",
+      "prepare Notion/Júlio task with link/cost/context",
+      "no Hermes purchase/reservation/address/importer/supplier-contact automation"
+    ],
+    "external_send_allowed_from_this_preview": false
+  }
+}

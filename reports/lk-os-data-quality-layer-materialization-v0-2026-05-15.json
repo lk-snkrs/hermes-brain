@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-05-15T09:13:05.069711+00:00",
+  "mode": "local_sql_materialization_only",
+  "db_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_os_phase5.sqlite",
+  "backup_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_os_backups/lk_os_phase5_before_data_quality_layer_v0_20260515.sqlite",
+  "backup_permissions_octal": "0o600",
+  "tables_created_or_replaced": [
+    "lk_variant_quality_status",
+    "lk_sku_alias_map"
+  ],
+  "row_counts": {
+    "lk_variant_quality_status": 14466,
+    "lk_sku_alias_map": 14466
+  },
+  "dq_status_counts": {
+    "needs_tiny_stock_truth": 11934,
+    "blocked_missing_sku": 1388,
+    "needs_sku_alias_review": 1113,
+    "ready_basic_variant_layer": 31
+  },
+  "sku_alias_review_status_counts": {
+    "needs_full_tiny_lookup": 11934,
+    "needs_shopify_sku_or_manual_mapping": 1388,
+    "needs_duplicate_sku_review": 1113,
+    "anchor_mapped_partial_stock_only": 31
+  },
+  "source_label_counts": {
+    "fact_shopify,derived_reconciliation": 14435,
+    "fact_shopify,derived_reconciliation,fact_tiny_stock_partial": 31
+  },
+  "non_actions": [
+    "No external API call",
+    "No Shopify/Tiny/Merchant/Klaviyo/Notion/WhatsApp write",
+    "No cron/UI/worker created",
+    "No PII exported",
+    "No purchase/contact/message/campaign"
+  ],
+  "rollback": "Restore the copied SQLite backup over the working DB if the derived-table write needs to be reverted."
+}

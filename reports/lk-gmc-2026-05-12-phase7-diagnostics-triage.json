@@ -1,0 +1,2455 @@
+{
+  "generated_at": "2026-05-13T06:26:49.626296+00:00",
+  "status": "gmc_phase7_diagnostics_triage_readonly_ready",
+  "scope": "Read-only action-bucket triage of current Merchant item diagnostics after GMC cleanup",
+  "source_labels": [
+    "fact_merchant_center",
+    "derived_reconciliation"
+  ],
+  "summary": {
+    "merchant_products_current": 23194,
+    "merchant_productstatuses_current": 23194,
+    "rows_with_item_issues": 2563,
+    "item_issue_instances": 11791,
+    "baseline_item_issue_instances": 11791,
+    "delta_vs_phase7_baseline_instances": 0,
+    "action_bucket_count": 6
+  },
+  "action_buckets": [
+    {
+      "priority": "P1",
+      "bucket": "attribute_completion_preview",
+      "issue_instances": 10162,
+      "affected_product_ids": 2100,
+      "channels": {
+        "online": 10162
+      },
+      "top_issue_codes": [
+        {
+          "issue_code": "missing_item_attribute_for_product_type",
+          "count": 10152
+        },
+        {
+          "issue_code": "item_missing_required_attribute",
+          "count": 10
+        }
+      ],
+      "recommendation": "Build no-write exact-ID attribute completion packet from current diagnostics."
+    },
+    {
+      "priority": "P3",
+      "bucket": "merchant_auto_update_monitor",
+      "issue_instances": 1492,
+      "affected_product_ids": 380,
+      "channels": {
+        "online": 1488,
+        "local": 4
+      },
+      "top_issue_codes": [
+        {
+          "issue_code": "price_updated",
+          "count": 1002
+        },
+        {
+          "issue_code": "strikethrough_price_updated",
+          "count": 486
+        },
+        {
+          "issue_code": "condition_updated_from_detected",
+          "count": 4
+        }
+      ],
+      "recommendation": "Monitor; usually not a direct remediation target."
+    },
+    {
+      "priority": "P2",
+      "bucket": "gtin_policy_review",
+      "issue_instances": 112,
+      "affected_product_ids": 75,
+      "channels": {
+        "online": 74,
+        "local": 38
+      },
+      "top_issue_codes": [
+        {
+          "issue_code": "restricted_gtin",
+          "count": 103
+        },
+        {
+          "issue_code": "reserved_gtin",
+          "count": 6
+        },
+        {
+          "issue_code": "coupon_gtin",
+          "count": 3
+        }
+      ],
+      "recommendation": "Manual catalog/policy review before edit; GTIN changes can be risky."
+    },
+    {
+      "priority": "P2",
+      "bucket": "image_asset_review",
+      "issue_instances": 13,
+      "affected_product_ids": 7,
+      "channels": {
+        "local": 2,
+        "online": 11
+      },
+      "top_issue_codes": [
+        {
+          "issue_code": "image_single_color",
+          "count": 8
+        },
+        {
+          "issue_code": "image_link_broken",
+          "count": 4
+        },
+        {
+          "issue_code": "image_too_small_for_high_resolution",
+          "count": 1
+        }
+      ],
+      "recommendation": "Read-only image probe first."
+    },
+    {
+      "priority": "P3",
+      "bucket": "misc_manual_review",
+      "issue_instances": 7,
+      "affected_product_ids": 6,
+      "channels": {
+        "online": 7
+      },
+      "top_issue_codes": [
+        {
+          "issue_code": "landing_page_error",
+          "count": 5
+        },
+        {
+          "issue_code": "pause_expired",
+          "count": 2
+        }
+      ],
+      "recommendation": "Sample first."
+    },
+    {
+      "priority": "P2",
+      "bucket": "policy_manual_review",
+      "issue_instances": 5,
+      "affected_product_ids": 2,
+      "channels": {
+        "local": 1,
+        "online": 4
+      },
+      "top_issue_codes": [
+        {
+          "issue_code": "restricted_nfs_policy_violation",
+          "count": 4
+        },
+        {
+          "issue_code": "sexual_interests_policy_violation",
+          "count": 1
+        }
+      ],
+      "recommendation": "Manual review; avoid automated content edits."
+    }
+  ],
+  "issue_counts_top": [
+    {
+      "issue_code": "missing_item_attribute_for_product_type",
+      "count": 10152
+    },
+    {
+      "issue_code": "price_updated",
+      "count": 1002
+    },
+    {
+      "issue_code": "strikethrough_price_updated",
+      "count": 486
+    },
+    {
+      "issue_code": "restricted_gtin",
+      "count": 103
+    },
+    {
+      "issue_code": "item_missing_required_attribute",
+      "count": 10
+    },
+    {
+      "issue_code": "image_single_color",
+      "count": 8
+    },
+    {
+      "issue_code": "reserved_gtin",
+      "count": 6
+    },
+    {
+      "issue_code": "landing_page_error",
+      "count": 5
+    },
+    {
+      "issue_code": "condition_updated_from_detected",
+      "count": 4
+    },
+    {
+      "issue_code": "restricted_nfs_policy_violation",
+      "count": 4
+    },
+    {
+      "issue_code": "image_link_broken",
+      "count": 4
+    },
+    {
+      "issue_code": "coupon_gtin",
+      "count": 3
+    },
+    {
+      "issue_code": "pause_expired",
+      "count": 2
+    },
+    {
+      "issue_code": "sexual_interests_policy_violation",
+      "count": 1
+    },
+    {
+      "issue_code": "image_too_small_for_high_resolution",
+      "count": 1
+    }
+  ],
+  "samples_by_bucket": {
+    "merchant_auto_update_monitor": [
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+        "issue_code": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "classification": {
+          "action_bucket": "merchant_auto_update_monitor",
+          "risk": "A0_no_action_default",
+          "safe_next": "Monitor only unless persistent disapproval appears; these are often Merchant normalization/update notices.",
+          "owner_surface": "Merchant automatic update/diagnostics"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:DV0426-012-2",
+          "offerId": "DV0426-012-2",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": true,
+          "brand": "Jordan",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "36"
+          ],
+          "color": "Cinza"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+        "issue_code": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "DisplayAds",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "classification": {
+          "action_bucket": "merchant_auto_update_monitor",
+          "risk": "A0_no_action_default",
+          "safe_next": "Monitor only unless persistent disapproval appears; these are often Merchant normalization/update notices.",
+          "owner_surface": "Merchant automatic update/diagnostics"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:DV0426-012-2",
+          "offerId": "DV0426-012-2",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": true,
+          "brand": "Jordan",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "36"
+          ],
+          "color": "Cinza"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+        "issue_code": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "classification": {
+          "action_bucket": "merchant_auto_update_monitor",
+          "risk": "A0_no_action_default",
+          "safe_next": "Monitor only unless persistent disapproval appears; these are often Merchant normalization/update notices.",
+          "owner_surface": "Merchant automatic update/diagnostics"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:DV0426-012-2",
+          "offerId": "DV0426-012-2",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": true,
+          "brand": "Jordan",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "36"
+          ],
+          "color": "Cinza"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+        "issue_code": "strikethrough_price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page",
+        "classification": {
+          "action_bucket": "merchant_auto_update_monitor",
+          "risk": "A0_no_action_default",
+          "safe_next": "Monitor only unless persistent disapproval appears; these are often Merchant normalization/update notices.",
+          "owner_surface": "Merchant automatic update/diagnostics"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:DV0426-012-2",
+          "offerId": "DV0426-012-2",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": true,
+          "brand": "Jordan",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "36"
+          ],
+          "color": "Cinza"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+        "issue_code": "strikethrough_price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "DisplayAds",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page",
+        "classification": {
+          "action_bucket": "merchant_auto_update_monitor",
+          "risk": "A0_no_action_default",
+          "safe_next": "Monitor only unless persistent disapproval appears; these are often Merchant normalization/update notices.",
+          "owner_surface": "Merchant automatic update/diagnostics"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:DV0426-012-2",
+          "offerId": "DV0426-012-2",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": true,
+          "brand": "Jordan",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "36"
+          ],
+          "color": "Cinza"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+        "issue_code": "strikethrough_price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page",
+        "classification": {
+          "action_bucket": "merchant_auto_update_monitor",
+          "risk": "A0_no_action_default",
+          "safe_next": "Monitor only unless persistent disapproval appears; these are often Merchant normalization/update notices.",
+          "owner_surface": "Merchant automatic update/diagnostics"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:DV0426-012-2",
+          "offerId": "DV0426-012-2",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": true,
+          "brand": "Jordan",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "36"
+          ],
+          "color": "Cinza"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:HV8547-002-36",
+        "channel": "online",
+        "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+        "issue_code": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "classification": {
+          "action_bucket": "merchant_auto_update_monitor",
+          "risk": "A0_no_action_default",
+          "safe_next": "Monitor only unless persistent disapproval appears; these are often Merchant normalization/update notices.",
+          "owner_surface": "Merchant automatic update/diagnostics"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:HV8547-002-36",
+          "offerId": "HV8547-002-36",
+          "channel": "online",
+          "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "Jacquemus x Nike",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "36"
+          ],
+          "color": "Bege"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:HV8547-002-36",
+        "channel": "online",
+        "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+        "issue_code": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "DisplayAds",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "classification": {
+          "action_bucket": "merchant_auto_update_monitor",
+          "risk": "A0_no_action_default",
+          "safe_next": "Monitor only unless persistent disapproval appears; these are often Merchant normalization/update notices.",
+          "owner_surface": "Merchant automatic update/diagnostics"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:HV8547-002-36",
+          "offerId": "HV8547-002-36",
+          "channel": "online",
+          "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "Jacquemus x Nike",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "36"
+          ],
+          "color": "Bege"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:HV8547-002-36",
+        "channel": "online",
+        "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+        "issue_code": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "classification": {
+          "action_bucket": "merchant_auto_update_monitor",
+          "risk": "A0_no_action_default",
+          "safe_next": "Monitor only unless persistent disapproval appears; these are often Merchant normalization/update notices.",
+          "owner_surface": "Merchant automatic update/diagnostics"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:HV8547-002-36",
+          "offerId": "HV8547-002-36",
+          "channel": "online",
+          "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "Jacquemus x Nike",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "36"
+          ],
+          "color": "Bege"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:U9060CCB-10",
+        "channel": "online",
+        "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+        "issue_code": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "classification": {
+          "action_bucket": "merchant_auto_update_monitor",
+          "risk": "A0_no_action_default",
+          "safe_next": "Monitor only unless persistent disapproval appears; these are often Merchant normalization/update notices.",
+          "owner_surface": "Merchant automatic update/diagnostics"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:U9060CCB-10",
+          "offerId": "U9060CCB-10",
+          "channel": "online",
+          "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "43"
+          ],
+          "color": "Bege"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:U9060CCB-10",
+        "channel": "online",
+        "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+        "issue_code": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "DisplayAds",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "classification": {
+          "action_bucket": "merchant_auto_update_monitor",
+          "risk": "A0_no_action_default",
+          "safe_next": "Monitor only unless persistent disapproval appears; these are often Merchant normalization/update notices.",
+          "owner_surface": "Merchant automatic update/diagnostics"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:U9060CCB-10",
+          "offerId": "U9060CCB-10",
+          "channel": "online",
+          "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "43"
+          ],
+          "color": "Bege"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:U9060CCB-10",
+        "channel": "online",
+        "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+        "issue_code": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Your product's price value was automatically updated to match the data on your online store",
+        "classification": {
+          "action_bucket": "merchant_auto_update_monitor",
+          "risk": "A0_no_action_default",
+          "safe_next": "Monitor only unless persistent disapproval appears; these are often Merchant normalization/update notices.",
+          "owner_surface": "Merchant automatic update/diagnostics"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:U9060CCB-10",
+          "offerId": "U9060CCB-10",
+          "channel": "online",
+          "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "43"
+          ],
+          "color": "Bege"
+        }
+      }
+    ],
+    "attribute_completion_preview": [
+      {
+        "product_id": "online:pt:BR:u1906lbn3",
+        "channel": "online",
+        "title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+        "issue_code": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the color of your product so customers can easily find a specific product",
+        "classification": {
+          "action_bucket": "attribute_completion_preview",
+          "risk": "A2_write_required_if_applied",
+          "safe_next": "Build exact-ID supplemental/product attribute preview; no write until approval.",
+          "owner_surface": "Merchant feed/product attributes"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:u1906lbn3",
+          "offerId": "u1906lbn3",
+          "channel": "online",
+          "title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "36"
+          ],
+          "color": null
+        }
+      },
+      {
+        "product_id": "online:pt:BR:u1906lbn3",
+        "channel": "online",
+        "title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+        "issue_code": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the color of your product so customers can easily find a specific product",
+        "classification": {
+          "action_bucket": "attribute_completion_preview",
+          "risk": "A2_write_required_if_applied",
+          "safe_next": "Build exact-ID supplemental/product attribute preview; no write until approval.",
+          "owner_surface": "Merchant feed/product attributes"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:u1906lbn3",
+          "offerId": "u1906lbn3",
+          "channel": "online",
+          "title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "36"
+          ],
+          "color": null
+        }
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "issue_code": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the age group of your product so customers can easily find a specific product",
+        "classification": {
+          "action_bucket": "attribute_completion_preview",
+          "risk": "A2_write_required_if_applied",
+          "safe_next": "Build exact-ID supplemental/product attribute preview; no write until approval.",
+          "owner_surface": "Merchant feed/product attributes"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:FV5029-010-43",
+          "offerId": "FV5029-010-43",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": null,
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": "Black/Preto"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "issue_code": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the age group of your product so customers can easily find a specific product",
+        "classification": {
+          "action_bucket": "attribute_completion_preview",
+          "risk": "A2_write_required_if_applied",
+          "safe_next": "Build exact-ID supplemental/product attribute preview; no write until approval.",
+          "owner_surface": "Merchant feed/product attributes"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:FV5029-010-43",
+          "offerId": "FV5029-010-43",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": null,
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": "Black/Preto"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "issue_code": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the gender of your product so customers can easily find a specific product",
+        "classification": {
+          "action_bucket": "attribute_completion_preview",
+          "risk": "A2_write_required_if_applied",
+          "safe_next": "Build exact-ID supplemental/product attribute preview; no write until approval.",
+          "owner_surface": "Merchant feed/product attributes"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:FV5029-010-43",
+          "offerId": "FV5029-010-43",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": null,
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": "Black/Preto"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "issue_code": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the gender of your product so customers can easily find a specific product",
+        "classification": {
+          "action_bucket": "attribute_completion_preview",
+          "risk": "A2_write_required_if_applied",
+          "safe_next": "Build exact-ID supplemental/product attribute preview; no write until approval.",
+          "owner_surface": "Merchant feed/product attributes"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:FV5029-010-43",
+          "offerId": "FV5029-010-43",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": null,
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": "Black/Preto"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "issue_code": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the size of your product so customers can easily find a specific product",
+        "classification": {
+          "action_bucket": "attribute_completion_preview",
+          "risk": "A2_write_required_if_applied",
+          "safe_next": "Build exact-ID supplemental/product attribute preview; no write until approval.",
+          "owner_surface": "Merchant feed/product attributes"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:FV5029-010-43",
+          "offerId": "FV5029-010-43",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": null,
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": "Black/Preto"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "issue_code": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the size of your product so customers can easily find a specific product",
+        "classification": {
+          "action_bucket": "attribute_completion_preview",
+          "risk": "A2_write_required_if_applied",
+          "safe_next": "Build exact-ID supplemental/product attribute preview; no write until approval.",
+          "owner_surface": "Merchant feed/product attributes"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:FV5029-010-43",
+          "offerId": "FV5029-010-43",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": null,
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": "Black/Preto"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:PERI049-1007",
+        "channel": "online",
+        "title": "Óculos de Sol Palm Angels PERI049-1007 Preto",
+        "issue_code": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the size of your product so customers can easily find a specific product",
+        "classification": {
+          "action_bucket": "attribute_completion_preview",
+          "risk": "A2_write_required_if_applied",
+          "safe_next": "Build exact-ID supplemental/product attribute preview; no write until approval.",
+          "owner_surface": "Merchant feed/product attributes"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:PERI049-1007",
+          "offerId": "PERI049-1007",
+          "channel": "online",
+          "title": "Óculos de Sol Palm Angels PERI049-1007 Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": false,
+          "brand": "Palm Angels",
+          "productTypes": [
+            "Óculos"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": null,
+          "color": "Preto"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:PERI049-1007",
+        "channel": "online",
+        "title": "Óculos de Sol Palm Angels PERI049-1007 Preto",
+        "issue_code": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the size of your product so customers can easily find a specific product",
+        "classification": {
+          "action_bucket": "attribute_completion_preview",
+          "risk": "A2_write_required_if_applied",
+          "safe_next": "Build exact-ID supplemental/product attribute preview; no write until approval.",
+          "owner_surface": "Merchant feed/product attributes"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:PERI049-1007",
+          "offerId": "PERI049-1007",
+          "channel": "online",
+          "title": "Óculos de Sol Palm Angels PERI049-1007 Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": false,
+          "brand": "Palm Angels",
+          "productTypes": [
+            "Óculos"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": null,
+          "color": "Preto"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:u1906lbn6",
+        "channel": "online",
+        "title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+        "issue_code": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the color of your product so customers can easily find a specific product",
+        "classification": {
+          "action_bucket": "attribute_completion_preview",
+          "risk": "A2_write_required_if_applied",
+          "safe_next": "Build exact-ID supplemental/product attribute preview; no write until approval.",
+          "owner_surface": "Merchant feed/product attributes"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:u1906lbn6",
+          "offerId": "u1906lbn6",
+          "channel": "online",
+          "title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "39"
+          ],
+          "color": null
+        }
+      },
+      {
+        "product_id": "online:pt:BR:u1906lbn6",
+        "channel": "online",
+        "title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+        "issue_code": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the color of your product so customers can easily find a specific product",
+        "classification": {
+          "action_bucket": "attribute_completion_preview",
+          "risk": "A2_write_required_if_applied",
+          "safe_next": "Build exact-ID supplemental/product attribute preview; no write until approval.",
+          "owner_surface": "Merchant feed/product attributes"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:u1906lbn6",
+          "offerId": "u1906lbn6",
+          "channel": "online",
+          "title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "39"
+          ],
+          "color": null
+        }
+      }
+    ],
+    "gtin_policy_review": [
+      {
+        "product_id": "online:pt:BR:DD1503601-39",
+        "channel": "online",
+        "title": "Tênis Nike Dunk Low Pink Oxford Rosa",
+        "issue_code": "restricted_gtin",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "classification": {
+          "action_bucket": "gtin_policy_review",
+          "risk": "A1_readonly_then_manual_catalog_decision",
+          "safe_next": "Group by GTIN/product and inspect whether GTIN should be removed/replaced; no automatic GTIN edits.",
+          "owner_surface": "GTIN/catalog data quality"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:DD1503601-39",
+          "offerId": "DD1503601-39",
+          "channel": "online",
+          "title": "Tênis Nike Dunk Low Pink Oxford Rosa",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": true,
+          "brand": "Nike",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "39"
+          ],
+          "color": "Rosa"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:DD1503601-39",
+        "channel": "online",
+        "title": "Tênis Nike Dunk Low Pink Oxford Rosa",
+        "issue_code": "restricted_gtin",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "classification": {
+          "action_bucket": "gtin_policy_review",
+          "risk": "A1_readonly_then_manual_catalog_decision",
+          "safe_next": "Group by GTIN/product and inspect whether GTIN should be removed/replaced; no automatic GTIN edits.",
+          "owner_surface": "GTIN/catalog data quality"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:DD1503601-39",
+          "offerId": "DD1503601-39",
+          "channel": "online",
+          "title": "Tênis Nike Dunk Low Pink Oxford Rosa",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": true,
+          "brand": "Nike",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "39"
+          ],
+          "color": "Rosa"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:HF7743-001-6",
+        "channel": "online",
+        "title": "Tênis Nike Sb Dunk Low x THERE Skateboarding Ultra Humanized Preto",
+        "issue_code": "restricted_gtin",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "classification": {
+          "action_bucket": "gtin_policy_review",
+          "risk": "A1_readonly_then_manual_catalog_decision",
+          "safe_next": "Group by GTIN/product and inspect whether GTIN should be removed/replaced; no automatic GTIN edits.",
+          "owner_surface": "GTIN/catalog data quality"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:HF7743-001-6",
+          "offerId": "HF7743-001-6",
+          "channel": "online",
+          "title": "Tênis Nike Sb Dunk Low x THERE Skateboarding Ultra Humanized Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": true,
+          "brand": "Nike",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "42"
+          ],
+          "color": "Preto"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:HF7743-001-6",
+        "channel": "online",
+        "title": "Tênis Nike Sb Dunk Low x THERE Skateboarding Ultra Humanized Preto",
+        "issue_code": "restricted_gtin",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "classification": {
+          "action_bucket": "gtin_policy_review",
+          "risk": "A1_readonly_then_manual_catalog_decision",
+          "safe_next": "Group by GTIN/product and inspect whether GTIN should be removed/replaced; no automatic GTIN edits.",
+          "owner_surface": "GTIN/catalog data quality"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:HF7743-001-6",
+          "offerId": "HF7743-001-6",
+          "channel": "online",
+          "title": "Tênis Nike Sb Dunk Low x THERE Skateboarding Ultra Humanized Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": true,
+          "brand": "Nike",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "42"
+          ],
+          "color": "Preto"
+        }
+      },
+      {
+        "product_id": "local:pt:BR:LIA_CZ0790-102-4",
+        "channel": "local",
+        "title": "Tênis Nike Air Jordan 1 Low Og Mocha Marrom",
+        "issue_code": "reserved_gtin",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "LocalSurfacesAcrossGoogle",
+        "detail": "Use a GTIN that doesn't start with \"2\", \"02\" or \"04\"",
+        "classification": {
+          "action_bucket": "gtin_policy_review",
+          "risk": "A1_readonly_then_manual_catalog_decision",
+          "safe_next": "Group by GTIN/product and inspect whether GTIN should be removed/replaced; no automatic GTIN edits.",
+          "owner_surface": "GTIN/catalog data quality"
+        },
+        "product_snapshot": {
+          "id": "local:pt:BR:LIA_CZ0790-102-4",
+          "offerId": "LIA_CZ0790-102-4",
+          "channel": "local",
+          "title": "Tênis Nike Air Jordan 1 Low Og Mocha Marrom",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "Jordan",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "37"
+          ],
+          "color": "Marrom"
+        }
+      },
+      {
+        "product_id": "local:pt:BR:LIA_43774078386380",
+        "channel": "local",
+        "title": "Tênis Nike SB Dunk Low VX 1000 Camcorder Cinza",
+        "issue_code": "restricted_gtin",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "LocalSurfacesAcrossGoogle",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "classification": {
+          "action_bucket": "gtin_policy_review",
+          "risk": "A1_readonly_then_manual_catalog_decision",
+          "safe_next": "Group by GTIN/product and inspect whether GTIN should be removed/replaced; no automatic GTIN edits.",
+          "owner_surface": "GTIN/catalog data quality"
+        },
+        "product_snapshot": {
+          "id": "local:pt:BR:LIA_43774078386380",
+          "offerId": "LIA_43774078386380",
+          "channel": "local",
+          "title": "Tênis Nike SB Dunk Low VX 1000 Camcorder Cinza",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "Nike",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "39"
+          ],
+          "color": "Preto"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:FN5880-001-3",
+        "channel": "online",
+        "title": "Tênis Nike Sb Dunk Low Premium City Of Style Colorido",
+        "issue_code": "restricted_gtin",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "classification": {
+          "action_bucket": "gtin_policy_review",
+          "risk": "A1_readonly_then_manual_catalog_decision",
+          "safe_next": "Group by GTIN/product and inspect whether GTIN should be removed/replaced; no automatic GTIN edits.",
+          "owner_surface": "GTIN/catalog data quality"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:FN5880-001-3",
+          "offerId": "FN5880-001-3",
+          "channel": "online",
+          "title": "Tênis Nike Sb Dunk Low Premium City Of Style Colorido",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "Nike",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "40"
+          ],
+          "color": "Colorido"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:FN5880-001-3",
+        "channel": "online",
+        "title": "Tênis Nike Sb Dunk Low Premium City Of Style Colorido",
+        "issue_code": "restricted_gtin",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "classification": {
+          "action_bucket": "gtin_policy_review",
+          "risk": "A1_readonly_then_manual_catalog_decision",
+          "safe_next": "Group by GTIN/product and inspect whether GTIN should be removed/replaced; no automatic GTIN edits.",
+          "owner_surface": "GTIN/catalog data quality"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:FN5880-001-3",
+          "offerId": "FN5880-001-3",
+          "channel": "online",
+          "title": "Tênis Nike Sb Dunk Low Premium City Of Style Colorido",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "Nike",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "40"
+          ],
+          "color": "Colorido"
+        }
+      },
+      {
+        "product_id": "local:pt:BR:LIA_553558612-6",
+        "channel": "local",
+        "title": "Tênis Nike Air Jordan 1 Low Bred Toe Vermelho",
+        "issue_code": "restricted_gtin",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "LocalSurfacesAcrossGoogle",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "classification": {
+          "action_bucket": "gtin_policy_review",
+          "risk": "A1_readonly_then_manual_catalog_decision",
+          "safe_next": "Group by GTIN/product and inspect whether GTIN should be removed/replaced; no automatic GTIN edits.",
+          "owner_surface": "GTIN/catalog data quality"
+        },
+        "product_snapshot": {
+          "id": "local:pt:BR:LIA_553558612-6",
+          "offerId": "LIA_553558612-6",
+          "channel": "local",
+          "title": "Tênis Nike Air Jordan 1 Low Bred Toe Vermelho",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": true,
+          "brand": "Jordan",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "40"
+          ],
+          "color": "Vermelho"
+        }
+      },
+      {
+        "product_id": "local:pt:BR:LIA_DM7866200-7",
+        "channel": "local",
+        "title": "Tênis Nike Air Jordan 1 Low Og Sp x Travis Scott Medium Olive Verde",
+        "issue_code": "restricted_gtin",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "LocalSurfacesAcrossGoogle",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "classification": {
+          "action_bucket": "gtin_policy_review",
+          "risk": "A1_readonly_then_manual_catalog_decision",
+          "safe_next": "Group by GTIN/product and inspect whether GTIN should be removed/replaced; no automatic GTIN edits.",
+          "owner_surface": "GTIN/catalog data quality"
+        },
+        "product_snapshot": {
+          "id": "local:pt:BR:LIA_DM7866200-7",
+          "offerId": "LIA_DM7866200-7",
+          "channel": "local",
+          "title": "Tênis Nike Air Jordan 1 Low Og Sp x Travis Scott Medium Olive Verde",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "Jordan",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "41"
+          ],
+          "color": "Verde"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:553558612-6",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low Bred Toe Vermelho",
+        "issue_code": "restricted_gtin",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "classification": {
+          "action_bucket": "gtin_policy_review",
+          "risk": "A1_readonly_then_manual_catalog_decision",
+          "safe_next": "Group by GTIN/product and inspect whether GTIN should be removed/replaced; no automatic GTIN edits.",
+          "owner_surface": "GTIN/catalog data quality"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:553558612-6",
+          "offerId": "553558612-6",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 1 Low Bred Toe Vermelho",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": true,
+          "brand": "Jordan",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "40"
+          ],
+          "color": "Vermelho"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:553558612-6",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low Bred Toe Vermelho",
+        "issue_code": "restricted_gtin",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Values that you submit for the GTIN [gtin] attribute are within a restricted range that cannot be used by any business",
+        "classification": {
+          "action_bucket": "gtin_policy_review",
+          "risk": "A1_readonly_then_manual_catalog_decision",
+          "safe_next": "Group by GTIN/product and inspect whether GTIN should be removed/replaced; no automatic GTIN edits.",
+          "owner_surface": "GTIN/catalog data quality"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:553558612-6",
+          "offerId": "553558612-6",
+          "channel": "online",
+          "title": "Tênis Nike Air Jordan 1 Low Bred Toe Vermelho",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": true,
+          "gtin_present": true,
+          "brand": "Jordan",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "40"
+          ],
+          "color": "Vermelho"
+        }
+      }
+    ],
+    "policy_manual_review": [
+      {
+        "product_id": "local:pt:BR:LIA_43774078388550",
+        "channel": "local",
+        "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+        "issue_code": "restricted_nfs_policy_violation",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "LocalSurfacesAcrossGoogle",
+        "detail": "Adult content that includes graphic nudity or sexual acts is not allowed",
+        "classification": {
+          "action_bucket": "policy_manual_review",
+          "risk": "A3_sensitive_policy_review",
+          "safe_next": "Manual review samples before any product/feed/content change.",
+          "owner_surface": "Merchant policy/catalog content"
+        },
+        "product_snapshot": {
+          "id": "local:pt:BR:LIA_43774078388550",
+          "offerId": "LIA_43774078388550",
+          "channel": "local",
+          "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "Skims",
+          "productTypes": null,
+          "googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "XXS/PPP"
+          ],
+          "color": "Azul"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:43774078388550",
+        "channel": "online",
+        "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+        "issue_code": "sexual_interests_policy_violation",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "DisplayAds",
+        "detail": "Ads cannot be targeted based on sexual interests",
+        "classification": {
+          "action_bucket": "policy_manual_review",
+          "risk": "A3_sensitive_policy_review",
+          "safe_next": "Manual review samples before any product/feed/content change.",
+          "owner_surface": "Merchant policy/catalog content"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:43774078388550",
+          "offerId": "43774078388550",
+          "channel": "online",
+          "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "Skims",
+          "productTypes": null,
+          "googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "XXS/PPP"
+          ],
+          "color": "Azul"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:43774078388550",
+        "channel": "online",
+        "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+        "issue_code": "restricted_nfs_policy_violation",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Adult content that includes graphic nudity or sexual acts is not allowed",
+        "classification": {
+          "action_bucket": "policy_manual_review",
+          "risk": "A3_sensitive_policy_review",
+          "safe_next": "Manual review samples before any product/feed/content change.",
+          "owner_surface": "Merchant policy/catalog content"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:43774078388550",
+          "offerId": "43774078388550",
+          "channel": "online",
+          "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "Skims",
+          "productTypes": null,
+          "googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "XXS/PPP"
+          ],
+          "color": "Azul"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:43774078388550",
+        "channel": "online",
+        "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+        "issue_code": "restricted_nfs_policy_violation",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "DisplayAds",
+        "detail": "Adult content that includes graphic nudity or sexual acts is not allowed",
+        "classification": {
+          "action_bucket": "policy_manual_review",
+          "risk": "A3_sensitive_policy_review",
+          "safe_next": "Manual review samples before any product/feed/content change.",
+          "owner_surface": "Merchant policy/catalog content"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:43774078388550",
+          "offerId": "43774078388550",
+          "channel": "online",
+          "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "Skims",
+          "productTypes": null,
+          "googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "XXS/PPP"
+          ],
+          "color": "Azul"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:43774078388550",
+        "channel": "online",
+        "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+        "issue_code": "restricted_nfs_policy_violation",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Adult content that includes graphic nudity or sexual acts is not allowed",
+        "classification": {
+          "action_bucket": "policy_manual_review",
+          "risk": "A3_sensitive_policy_review",
+          "safe_next": "Manual review samples before any product/feed/content change.",
+          "owner_surface": "Merchant policy/catalog content"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:43774078388550",
+          "offerId": "43774078388550",
+          "channel": "online",
+          "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "Skims",
+          "productTypes": null,
+          "googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "XXS/PPP"
+          ],
+          "color": "Azul"
+        }
+      }
+    ],
+    "image_asset_review": [
+      {
+        "product_id": "local:pt:BR:LIA_U9060PSD-5",
+        "channel": "local",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "issue_code": "image_single_color",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "LocalSurfacesAcrossGoogle",
+        "detail": "Single-color images are not allowed except for a few specific product categories",
+        "classification": {
+          "action_bucket": "image_asset_review",
+          "risk": "A1_readonly_then_A2_asset_fix_if_needed",
+          "safe_next": "Read-only image URL probe and image dimension/background classification.",
+          "owner_surface": "Shopify/product image assets"
+        },
+        "product_snapshot": {
+          "id": "local:pt:BR:LIA_U9060PSD-5",
+          "offerId": "LIA_U9060PSD-5",
+          "channel": "local",
+          "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "38"
+          ],
+          "color": "Bege"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:4467332493483768941",
+        "channel": "online",
+        "title": "36",
+        "issue_code": "image_link_broken",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Use an image in the accepted format (JPEG, PNG, GIF)",
+        "classification": {
+          "action_bucket": "image_asset_review",
+          "risk": "A1_readonly_then_A2_asset_fix_if_needed",
+          "safe_next": "Read-only image URL probe and image dimension/background classification.",
+          "owner_surface": "Shopify/product image assets"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:4467332493483768941",
+          "offerId": "4467332493483768941",
+          "channel": "online",
+          "title": "36",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "Nike",
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": "azul"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:4467332493483768941",
+        "channel": "online",
+        "title": "36",
+        "issue_code": "image_link_broken",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Use an image in the accepted format (JPEG, PNG, GIF)",
+        "classification": {
+          "action_bucket": "image_asset_review",
+          "risk": "A1_readonly_then_A2_asset_fix_if_needed",
+          "safe_next": "Read-only image URL probe and image dimension/background classification.",
+          "owner_surface": "Shopify/product image assets"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:4467332493483768941",
+          "offerId": "4467332493483768941",
+          "channel": "online",
+          "title": "36",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "Nike",
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": "azul"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:U9060PSD-1",
+        "channel": "online",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "issue_code": "image_single_color",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Single-color images are not allowed except for a few specific product categories",
+        "classification": {
+          "action_bucket": "image_asset_review",
+          "risk": "A1_readonly_then_A2_asset_fix_if_needed",
+          "safe_next": "Read-only image URL probe and image dimension/background classification.",
+          "owner_surface": "Shopify/product image assets"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:U9060PSD-1",
+          "offerId": "U9060PSD-1",
+          "channel": "online",
+          "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "34"
+          ],
+          "color": "Bege"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:U9060PSD-1",
+        "channel": "online",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "issue_code": "image_single_color",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "DisplayAds",
+        "detail": "Single-color images are not allowed except for a few specific product categories",
+        "classification": {
+          "action_bucket": "image_asset_review",
+          "risk": "A1_readonly_then_A2_asset_fix_if_needed",
+          "safe_next": "Read-only image URL probe and image dimension/background classification.",
+          "owner_surface": "Shopify/product image assets"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:U9060PSD-1",
+          "offerId": "U9060PSD-1",
+          "channel": "online",
+          "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "34"
+          ],
+          "color": "Bege"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:U9060PSD-1",
+        "channel": "online",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "issue_code": "image_single_color",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Single-color images are not allowed except for a few specific product categories",
+        "classification": {
+          "action_bucket": "image_asset_review",
+          "risk": "A1_readonly_then_A2_asset_fix_if_needed",
+          "safe_next": "Read-only image URL probe and image dimension/background classification.",
+          "owner_surface": "Shopify/product image assets"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:U9060PSD-1",
+          "offerId": "U9060PSD-1",
+          "channel": "online",
+          "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "34"
+          ],
+          "color": "Bege"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:JR8179-1",
+        "channel": "online",
+        "title": "Tenis Adidas Gazelle Stack Collegiate Green Cream White Verde",
+        "issue_code": "image_too_small_for_high_resolution",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Use an image that's at least 500x500 pixels to serve",
+        "classification": {
+          "action_bucket": "image_asset_review",
+          "risk": "A1_readonly_then_A2_asset_fix_if_needed",
+          "safe_next": "Read-only image URL probe and image dimension/background classification.",
+          "owner_surface": "Shopify/product image assets"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:JR8179-1",
+          "offerId": "JR8179-1",
+          "channel": "online",
+          "title": "Tenis Adidas Gazelle Stack Collegiate Green Cream White Verde",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": null,
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": "Green/Cream"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:U9060PSD-5",
+        "channel": "online",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "issue_code": "image_single_color",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Single-color images are not allowed except for a few specific product categories",
+        "classification": {
+          "action_bucket": "image_asset_review",
+          "risk": "A1_readonly_then_A2_asset_fix_if_needed",
+          "safe_next": "Read-only image URL probe and image dimension/background classification.",
+          "owner_surface": "Shopify/product image assets"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:U9060PSD-5",
+          "offerId": "U9060PSD-5",
+          "channel": "online",
+          "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "38"
+          ],
+          "color": "Bege"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:U9060PSD-5",
+        "channel": "online",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "issue_code": "image_single_color",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "DisplayAds",
+        "detail": "Single-color images are not allowed except for a few specific product categories",
+        "classification": {
+          "action_bucket": "image_asset_review",
+          "risk": "A1_readonly_then_A2_asset_fix_if_needed",
+          "safe_next": "Read-only image URL probe and image dimension/background classification.",
+          "owner_surface": "Shopify/product image assets"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:U9060PSD-5",
+          "offerId": "U9060PSD-5",
+          "channel": "online",
+          "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "38"
+          ],
+          "color": "Bege"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:U9060PSD-5",
+        "channel": "online",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "issue_code": "image_single_color",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Single-color images are not allowed except for a few specific product categories",
+        "classification": {
+          "action_bucket": "image_asset_review",
+          "risk": "A1_readonly_then_A2_asset_fix_if_needed",
+          "safe_next": "Read-only image URL probe and image dimension/background classification.",
+          "owner_surface": "Shopify/product image assets"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:U9060PSD-5",
+          "offerId": "U9060PSD-5",
+          "channel": "online",
+          "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "38"
+          ],
+          "color": "Bege"
+        }
+      },
+      {
+        "product_id": "local:pt:BR:LIA_U9060PSD-1",
+        "channel": "local",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "issue_code": "image_single_color",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "LocalSurfacesAcrossGoogle",
+        "detail": "Single-color images are not allowed except for a few specific product categories",
+        "classification": {
+          "action_bucket": "image_asset_review",
+          "risk": "A1_readonly_then_A2_asset_fix_if_needed",
+          "safe_next": "Read-only image URL probe and image dimension/background classification.",
+          "owner_surface": "Shopify/product image assets"
+        },
+        "product_snapshot": {
+          "id": "local:pt:BR:LIA_U9060PSD-1",
+          "offerId": "LIA_U9060PSD-1",
+          "channel": "local",
+          "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "New Balance",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "34"
+          ],
+          "color": "Bege"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:9914706510510919523",
+        "channel": "online",
+        "title": "37",
+        "issue_code": "image_link_broken",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Use an image in the accepted format (JPEG, PNG, GIF)",
+        "classification": {
+          "action_bucket": "image_asset_review",
+          "risk": "A1_readonly_then_A2_asset_fix_if_needed",
+          "safe_next": "Read-only image URL probe and image dimension/background classification.",
+          "owner_surface": "Shopify/product image assets"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:9914706510510919523",
+          "offerId": "9914706510510919523",
+          "channel": "online",
+          "title": "37",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "Nike",
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": null
+        }
+      }
+    ],
+    "misc_manual_review": [
+      {
+        "product_id": "online:pt:BR:14252480804615463970",
+        "channel": "online",
+        "title": "41",
+        "issue_code": "landing_page_error",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Ensure your product page can be accessed from desktop and mobile devices and is not restricted from Google crawling",
+        "classification": {
+          "action_bucket": "misc_manual_review",
+          "risk": "A1_readonly",
+          "safe_next": "Sample and classify before proposing writes.",
+          "owner_surface": "unknown"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:14252480804615463970",
+          "offerId": "14252480804615463970",
+          "channel": "online",
+          "title": "41",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "Timberland",
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": "bege"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:15031239196158973196",
+        "channel": "online",
+        "title": "45",
+        "issue_code": "landing_page_error",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Ensure your product page can be accessed from desktop and mobile devices and is not restricted from Google crawling",
+        "classification": {
+          "action_bucket": "misc_manual_review",
+          "risk": "A1_readonly",
+          "safe_next": "Sample and classify before proposing writes.",
+          "owner_surface": "unknown"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:15031239196158973196",
+          "offerId": "15031239196158973196",
+          "channel": "online",
+          "title": "45",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "Nike",
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": "branco"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:DZ1382001",
+        "channel": "online",
+        "title": "Tênis Tiffany & Co. x Nike Air Force 1 Low 1837 Preto",
+        "issue_code": "pause_expired",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Your product was paused for more than 2 weeks. Unpausing will now take longer. Remove [pause] to unpause the product",
+        "classification": {
+          "action_bucket": "misc_manual_review",
+          "risk": "A1_readonly",
+          "safe_next": "Sample and classify before proposing writes.",
+          "owner_surface": "unknown"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:DZ1382001",
+          "offerId": "DZ1382001",
+          "channel": "online",
+          "title": "Tênis Tiffany & Co. x Nike Air Force 1 Low 1837 Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "Nike",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "42"
+          ],
+          "color": "Preto"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:DZ1382001",
+        "channel": "online",
+        "title": "Tênis Tiffany & Co. x Nike Air Force 1 Low 1837 Preto",
+        "issue_code": "pause_expired",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "DisplayAds",
+        "detail": "Your product was paused for more than 2 weeks. Unpausing will now take longer. Remove [pause] to unpause the product",
+        "classification": {
+          "action_bucket": "misc_manual_review",
+          "risk": "A1_readonly",
+          "safe_next": "Sample and classify before proposing writes.",
+          "owner_surface": "unknown"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:DZ1382001",
+          "offerId": "DZ1382001",
+          "channel": "online",
+          "title": "Tênis Tiffany & Co. x Nike Air Force 1 Low 1837 Preto",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "Nike",
+          "productTypes": [
+            "Tênis"
+          ],
+          "googleProductCategory": "Vestuário e acessórios > Sapatos",
+          "ageGroup": "adult",
+          "gender": "unisex",
+          "size": [
+            "42"
+          ],
+          "color": "Preto"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:12475328072847087695",
+        "channel": "online",
+        "title": "42",
+        "issue_code": "landing_page_error",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Ensure your product page can be accessed from desktop and mobile devices and is not restricted from Google crawling",
+        "classification": {
+          "action_bucket": "misc_manual_review",
+          "risk": "A1_readonly",
+          "safe_next": "Sample and classify before proposing writes.",
+          "owner_surface": "unknown"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:12475328072847087695",
+          "offerId": "12475328072847087695",
+          "channel": "online",
+          "title": "42",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "Timberland",
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": "preto"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:15507753369156717392",
+        "channel": "online",
+        "title": "Camisa Manga Longa Oversized Saint Studio Egípcio Listrada Azul",
+        "issue_code": "landing_page_error",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Ensure your product page can be accessed from desktop and mobile devices and is not restricted from Google crawling",
+        "classification": {
+          "action_bucket": "misc_manual_review",
+          "risk": "A1_readonly",
+          "safe_next": "Sample and classify before proposing writes.",
+          "owner_surface": "unknown"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:15507753369156717392",
+          "offerId": "15507753369156717392",
+          "channel": "online",
+          "title": "Camisa Manga Longa Oversized Saint Studio Egípcio Listrada Azul",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": false,
+          "salePrice_present": false,
+          "gtin_present": false,
+          "brand": "Saint Studio",
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": "azul"
+        }
+      },
+      {
+        "product_id": "online:pt:BR:10695397335246538087",
+        "channel": "online",
+        "title": "42",
+        "issue_code": "landing_page_error",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Ensure your product page can be accessed from desktop and mobile devices and is not restricted from Google crawling",
+        "classification": {
+          "action_bucket": "misc_manual_review",
+          "risk": "A1_readonly",
+          "safe_next": "Sample and classify before proposing writes.",
+          "owner_surface": "unknown"
+        },
+        "product_snapshot": {
+          "id": "online:pt:BR:10695397335246538087",
+          "offerId": "10695397335246538087",
+          "channel": "online",
+          "title": "42",
+          "link_present": true,
+          "imageLink_present": true,
+          "price_present": true,
+          "salePrice_present": false,
+          "gtin_present": true,
+          "brand": "Timberland",
+          "productTypes": null,
+          "googleProductCategory": null,
+          "ageGroup": null,
+          "gender": null,
+          "size": null,
+          "color": null
+        }
+      }
+    ]
+  },
+  "interpretation": {
+    "verdict": "O próximo bloco com maior alavanca é P1 attribute_completion_preview, seguido por checkout_url_readonly_probe. Nenhum write foi executado; qualquer aplicação exigirá pacote exato e aprovação.",
+    "recommended_next_safe_block": "Build P1 attribute completion preview from exact current product IDs and issue attributes; output no-write approval packet only."
+  },
+  "not_performed": [
+    "merchant_product_delete",
+    "merchant_product_insert",
+    "merchant_product_update",
+    "content_api_custombatch",
+    "datafeed_fetchNow",
+    "feed_update",
+    "shopify_write",
+    "tiny_write",
+    "database_write",
+    "pos_or_local_inventory_setting_change",
+    "campaign_or_external_send"
+  ]
+}

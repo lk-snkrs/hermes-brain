@@ -1,0 +1,474 @@
+{
+  "generated_at": "2026-05-15T11:31:40.005187+00:00",
+  "source_report": "/opt/data/hermes_bruno_ingest/local_sql/lk_data_spine_snapshots/lk_os_daily_sales_brief_20260514_110130Z.json",
+  "business_date": "2026-05-14",
+  "scope": "Daily Brief alert follow-up: P0 rupture, P1 low coverage, P1 Shopify↔Tiny mapping; read-only/local preview only.",
+  "source_labels": [
+    "fact_shopify",
+    "fact_tiny_stock",
+    "derived_reconciliation",
+    "local_sql_readonly"
+  ],
+  "summary": {
+    "rupture_p0": 5,
+    "low_stock_p1": 2,
+    "mapping_unknown_p1": 3
+  },
+  "p0_replenishment_preview": [
+    {
+      "bucket": "P0_ruptura_sold_tiny_zero",
+      "product_title": "Tênis New Balance 9060 Triple White Branco",
+      "sku": "U9060NRJ-43",
+      "size": "43",
+      "sold_qty_shopify": 1,
+      "tiny_id": "1066638968",
+      "tiny_official_deposit_saldo": 0.0,
+      "match_quality": "exact_norm_sku",
+      "shopify_current_price_local": 2799.99,
+      "local_db_evidence": {
+        "shopify_variant_rows": [
+          {
+            "title": "43",
+            "sku": "U9060NRJ-43",
+            "price": 2799.99,
+            "inventory_quantity": 0,
+            "source_variant_id": "47037971497182"
+          }
+        ],
+        "quality_rows": [
+          {
+            "dq_status": "needs_tiny_stock_truth",
+            "blocking_reason": "No Tiny anchor stock row in current partial local stock table; full Tiny stock snapshot needed."
+          }
+        ],
+        "alias_rows": [
+          {
+            "tiny_anchor_sku": null,
+            "match_confidence": "unknown_no_tiny_anchor_in_partial_table",
+            "review_status": "needs_full_tiny_lookup",
+            "last_verified_at": "2026-05-15T09:13:05.069711+00:00"
+          }
+        ],
+        "tiny_product_rows": [
+          {
+            "tiny_id": "1066638968",
+            "codigo": "U9060NRJ-43",
+            "nome": "Tênis New Balance 9060 Triple White Branco - 43",
+            "preco": 2799.99,
+            "situacao": "A"
+          }
+        ],
+        "tiny_deposit_rows": []
+      },
+      "action_status": "preview_only_not_executed"
+    },
+    {
+      "bucket": "P0_ruptura_sold_tiny_zero",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 Black and White Preto",
+      "sku": "1183C10200-4",
+      "size": "37",
+      "sold_qty_shopify": 1,
+      "tiny_id": "1060293859",
+      "tiny_official_deposit_saldo": 0.0,
+      "match_quality": "exact_norm_sku",
+      "shopify_current_price_local": 2399.99,
+      "local_db_evidence": {
+        "shopify_variant_rows": [
+          {
+            "title": "37",
+            "sku": "1183C10200-4",
+            "price": 2399.99,
+            "inventory_quantity": 0,
+            "source_variant_id": "45977711411422"
+          }
+        ],
+        "quality_rows": [
+          {
+            "dq_status": "needs_tiny_stock_truth",
+            "blocking_reason": "No Tiny anchor stock row in current partial local stock table; full Tiny stock snapshot needed."
+          }
+        ],
+        "alias_rows": [
+          {
+            "tiny_anchor_sku": null,
+            "match_confidence": "unknown_no_tiny_anchor_in_partial_table",
+            "review_status": "needs_full_tiny_lookup",
+            "last_verified_at": "2026-05-15T09:13:05.069711+00:00"
+          }
+        ],
+        "tiny_product_rows": [
+          {
+            "tiny_id": "1060293859",
+            "codigo": "1183C10200-4",
+            "nome": "Tênis Onitsuka Tiger Mexico 66 Black and White Preto - 37",
+            "preco": 2299.99,
+            "situacao": "A"
+          }
+        ],
+        "tiny_deposit_rows": []
+      },
+      "action_status": "preview_only_not_executed"
+    },
+    {
+      "bucket": "P0_ruptura_sold_tiny_zero",
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "sku": "1183A201-126-2",
+      "size": "35",
+      "sold_qty_shopify": 1,
+      "tiny_id": "1062980804",
+      "tiny_official_deposit_saldo": 0.0,
+      "match_quality": "exact_norm_sku",
+      "shopify_current_price_local": 2399.99,
+      "local_db_evidence": {
+        "shopify_variant_rows": [
+          {
+            "title": "35",
+            "sku": "1183A201-126-2",
+            "price": 2399.99,
+            "inventory_quantity": 0,
+            "source_variant_id": "46619126530270"
+          }
+        ],
+        "quality_rows": [
+          {
+            "dq_status": "ready_basic_variant_layer",
+            "blocking_reason": "Basic local layer ready; still needs full Tiny/free-reserved state before commercial action."
+          }
+        ],
+        "alias_rows": [
+          {
+            "tiny_anchor_sku": "1183A201-126-2",
+            "match_confidence": "medium_tiny_anchor_exact_sku",
+            "review_status": "anchor_mapped_partial_stock_only",
+            "last_verified_at": "2026-05-15T09:13:05.069711+00:00"
+          }
+        ],
+        "tiny_product_rows": [
+          {
+            "tiny_id": "1062980804",
+            "codigo": "1183A201-126-2",
+            "nome": "Tênis Onitsuka Tiger Mexico 66 White Black Branco - 35",
+            "preco": 2299.99,
+            "situacao": "A"
+          }
+        ],
+        "tiny_deposit_rows": []
+      },
+      "action_status": "preview_only_not_executed"
+    },
+    {
+      "bucket": "P0_ruptura_sold_tiny_zero",
+      "product_title": "Crocs Classic Clog x The Cars Lightning McQueen Vermelho",
+      "sku": "205759 610-4",
+      "size": "37",
+      "sold_qty_shopify": 1,
+      "tiny_id": "1056614644",
+      "tiny_official_deposit_saldo": 0.0,
+      "match_quality": "exact_norm_sku",
+      "shopify_current_price_local": null,
+      "local_db_evidence": {
+        "shopify_variant_rows": [],
+        "quality_rows": [],
+        "alias_rows": [],
+        "tiny_product_rows": [
+          {
+            "tiny_id": "1056614644",
+            "codigo": "205759 610-4",
+            "nome": "Crocs Classic Clog x The Cars Lightning McQueen Vermelho - 37",
+            "preco": 749.9,
+            "situacao": "A"
+          }
+        ],
+        "tiny_deposit_rows": []
+      },
+      "action_status": "preview_only_not_executed"
+    },
+    {
+      "bucket": "P0_ruptura_sold_tiny_zero",
+      "product_title": "Livro Taschen The Ultimate Tênis Book 15 x 21",
+      "sku": "9783836597982",
+      "size": "sem tamanho informado",
+      "sold_qty_shopify": 1,
+      "tiny_id": "1067021253",
+      "tiny_official_deposit_saldo": 0.0,
+      "match_quality": "exact_norm_sku",
+      "shopify_current_price_local": 329.99,
+      "local_db_evidence": {
+        "shopify_variant_rows": [
+          {
+            "title": "Default Title",
+            "sku": "9783836597982",
+            "price": 329.99,
+            "inventory_quantity": 1,
+            "source_variant_id": "47699427459294"
+          }
+        ],
+        "quality_rows": [
+          {
+            "dq_status": "needs_tiny_stock_truth",
+            "blocking_reason": "No Tiny anchor stock row in current partial local stock table; full Tiny stock snapshot needed."
+          }
+        ],
+        "alias_rows": [
+          {
+            "tiny_anchor_sku": null,
+            "match_confidence": "unknown_no_tiny_anchor_in_partial_table",
+            "review_status": "needs_full_tiny_lookup",
+            "last_verified_at": "2026-05-15T09:13:05.069711+00:00"
+          }
+        ],
+        "tiny_product_rows": [
+          {
+            "tiny_id": "1067021253",
+            "codigo": "9783836597982",
+            "nome": "Livro Taschen The Ultimate Sneaker Book 15 x 21",
+            "preco": 329.99,
+            "situacao": "A"
+          }
+        ],
+        "tiny_deposit_rows": []
+      },
+      "action_status": "preview_only_not_executed"
+    }
+  ],
+  "p1_low_coverage_review": [
+    {
+      "bucket": "P1_low_coverage_saldo_lte_sold_qty",
+      "product_title": "Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa",
+      "sku": "HV8547-601-37.5",
+      "size": "37.5",
+      "sold_qty_shopify": 1,
+      "tiny_id": "1069930774",
+      "tiny_official_deposit_saldo": 1.0,
+      "match_quality": "exact_norm_sku",
+      "shopify_current_price_local": 4999.99,
+      "local_db_evidence": {
+        "shopify_variant_rows": [
+          {
+            "title": "37.5",
+            "sku": "HV8547-601-37.5",
+            "price": 4999.99,
+            "inventory_quantity": 0,
+            "source_variant_id": "48011031904478"
+          }
+        ],
+        "quality_rows": [
+          {
+            "dq_status": "needs_tiny_stock_truth",
+            "blocking_reason": "No Tiny anchor stock row in current partial local stock table; full Tiny stock snapshot needed."
+          }
+        ],
+        "alias_rows": [
+          {
+            "tiny_anchor_sku": null,
+            "match_confidence": "unknown_no_tiny_anchor_in_partial_table",
+            "review_status": "needs_full_tiny_lookup",
+            "last_verified_at": "2026-05-15T09:13:05.069711+00:00"
+          }
+        ],
+        "tiny_product_rows": [
+          {
+            "tiny_id": "1069930774",
+            "codigo": "HV8547-601-37.5",
+            "nome": "Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa - 37.5",
+            "preco": 5999.99,
+            "situacao": "A"
+          }
+        ],
+        "tiny_deposit_rows": []
+      },
+      "action_status": "preview_only_not_executed"
+    },
+    {
+      "bucket": "P1_low_coverage_saldo_lte_sold_qty",
+      "product_title": "Calça Alo Yoga Suit Up Trouser (Regular) Preto",
+      "sku": "w51432r_01-2",
+      "size": "XS/PP",
+      "sold_qty_shopify": 1,
+      "tiny_id": "1064962837",
+      "tiny_official_deposit_saldo": 1.0,
+      "match_quality": "exact_norm_sku",
+      "shopify_current_price_local": 1549.99,
+      "local_db_evidence": {
+        "shopify_variant_rows": [
+          {
+            "title": "XS/PP",
+            "sku": "w51432r_01-2",
+            "price": 1549.99,
+            "inventory_quantity": 0,
+            "source_variant_id": "47433500459230"
+          }
+        ],
+        "quality_rows": [
+          {
+            "dq_status": "needs_tiny_stock_truth",
+            "blocking_reason": "No Tiny anchor stock row in current partial local stock table; full Tiny stock snapshot needed."
+          }
+        ],
+        "alias_rows": [
+          {
+            "tiny_anchor_sku": null,
+            "match_confidence": "unknown_no_tiny_anchor_in_partial_table",
+            "review_status": "needs_full_tiny_lookup",
+            "last_verified_at": "2026-05-15T09:13:05.069711+00:00"
+          }
+        ],
+        "tiny_product_rows": [
+          {
+            "tiny_id": "1064962837",
+            "codigo": "w51432r_01-2",
+            "nome": "Calça Alo Yoga Suit Up Trouser (Regular) Preto - XS/PP",
+            "preco": 1549.99,
+            "situacao": "A"
+          }
+        ],
+        "tiny_deposit_rows": []
+      },
+      "action_status": "preview_only_not_executed"
+    }
+  ],
+  "p1_mapping_resolution_queue": [
+    {
+      "bucket": "P1_mapping_unknown_no_safe_tiny_candidate",
+      "product_title": "Camiseta Manga Longa Pace Relaxed Waffle Knit Preto",
+      "sku": "PAC-5181790-L",
+      "size": "G/L",
+      "sold_qty_shopify": 1,
+      "tiny_id": "n/d",
+      "tiny_official_deposit_saldo": null,
+      "match_quality": "no_safe_candidate",
+      "shopify_current_price_local": null,
+      "local_db_evidence": {
+        "shopify_variant_rows": [],
+        "quality_rows": [],
+        "alias_rows": [],
+        "tiny_product_rows": [],
+        "tiny_deposit_rows": []
+      },
+      "action_status": "preview_only_not_executed"
+    },
+    {
+      "bucket": "P1_mapping_unknown_no_safe_tiny_candidate",
+      "product_title": "The Peptide Lip Tints Rhode Multicolor",
+      "sku": "LIP",
+      "size": "Vanilla",
+      "sold_qty_shopify": 1,
+      "tiny_id": "n/d",
+      "tiny_official_deposit_saldo": null,
+      "match_quality": "no_safe_candidate",
+      "shopify_current_price_local": 299.99,
+      "local_db_evidence": {
+        "shopify_variant_rows": [
+          {
+            "title": "Ribbon",
+            "sku": "LIP",
+            "price": 299.99,
+            "inventory_quantity": 0,
+            "source_variant_id": "46257433379038"
+          },
+          {
+            "title": "Raspberry Jelly",
+            "sku": "LIP",
+            "price": 299.99,
+            "inventory_quantity": 0,
+            "source_variant_id": "46257441636574"
+          },
+          {
+            "title": "Toast",
+            "sku": "LIP",
+            "price": 299.99,
+            "inventory_quantity": -2,
+            "source_variant_id": "46257441669342"
+          },
+          {
+            "title": "Espresso Rich Brown",
+            "sku": "LIP",
+            "price": 299.99,
+            "inventory_quantity": -1,
+            "source_variant_id": "46257441702110"
+          }
+        ],
+        "quality_rows": [
+          {
+            "dq_status": "needs_sku_alias_review",
+            "blocking_reason": "SKU appears on multiple Shopify variants; needs alias/disambiguation."
+          },
+          {
+            "dq_status": "needs_sku_alias_review",
+            "blocking_reason": "SKU appears on multiple Shopify variants; needs alias/disambiguation."
+          },
+          {
+            "dq_status": "needs_sku_alias_review",
+            "blocking_reason": "SKU appears on multiple Shopify variants; needs alias/disambiguation."
+          },
+          {
+            "dq_status": "needs_sku_alias_review",
+            "blocking_reason": "SKU appears on multiple Shopify variants; needs alias/disambiguation."
+          }
+        ],
+        "alias_rows": [
+          {
+            "tiny_anchor_sku": null,
+            "match_confidence": "low_duplicate_shopify_sku",
+            "review_status": "needs_duplicate_sku_review",
+            "last_verified_at": "2026-05-15T09:13:05.069711+00:00"
+          },
+          {
+            "tiny_anchor_sku": null,
+            "match_confidence": "low_duplicate_shopify_sku",
+            "review_status": "needs_duplicate_sku_review",
+            "last_verified_at": "2026-05-15T09:13:05.069711+00:00"
+          },
+          {
+            "tiny_anchor_sku": null,
+            "match_confidence": "low_duplicate_shopify_sku",
+            "review_status": "needs_duplicate_sku_review",
+            "last_verified_at": "2026-05-15T09:13:05.069711+00:00"
+          },
+          {
+            "tiny_anchor_sku": null,
+            "match_confidence": "low_duplicate_shopify_sku",
+            "review_status": "needs_duplicate_sku_review",
+            "last_verified_at": "2026-05-15T09:13:05.069711+00:00"
+          }
+        ],
+        "tiny_product_rows": [
+          {
+            "tiny_id": "1061754172",
+            "codigo": "LIP",
+            "nome": "The Peptide Lip Tints Rhode Multicolor",
+            "preco": 299.99,
+            "situacao": "A"
+          }
+        ],
+        "tiny_deposit_rows": []
+      },
+      "action_status": "preview_only_not_executed"
+    },
+    {
+      "bucket": "P1_mapping_unknown_no_safe_tiny_candidate",
+      "product_title": "Camiseta Saint Studio Boxy SUPIMA Vermeer Off White",
+      "sku": "SST-9563614-L",
+      "size": "G/L",
+      "sold_qty_shopify": 1,
+      "tiny_id": "n/d",
+      "tiny_official_deposit_saldo": null,
+      "match_quality": "no_safe_candidate",
+      "shopify_current_price_local": null,
+      "local_db_evidence": {
+        "shopify_variant_rows": [],
+        "quality_rows": [],
+        "alias_rows": [],
+        "tiny_product_rows": [],
+        "tiny_deposit_rows": []
+      },
+      "action_status": "preview_only_not_executed"
+    }
+  ],
+  "guardrails": [
+    "No Shopify/Tiny/Notion/GMC/Klaviyo/WhatsApp/supplier write.",
+    "No purchase, reservation, supplier contact or campaign.",
+    "Sourcing cards remain preview-only; exact Droper/StockX/GOAT prices need a separately verified source step before purchase decisions.",
+    "Tiny full stock snapshot remains the catalog-level blocker for final commercial state."
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "generated_at": "2026-05-12T19:34:36.594339+00:00",
+  "status": "gmc_p1_availability_tiny_packet_ready_no_write",
+  "scope": "P1-B read-only/no-write approval packet for Merchant availability using Tiny exact codigo + official deposit stock truth",
+  "source_labels": [
+    "fact_merchant_center",
+    "fact_tiny_stock",
+    "fact_shopify_local_snapshot",
+    "derived_reconciliation",
+    "manual_approval_required"
+  ],
+  "summary": {
+    "merchant_products_current": 23147,
+    "merchant_productstatuses_current": 23147,
+    "online_missing_availability_candidates": 5,
+    "decision_state_counts": {
+      "blocked_review_no_official_deposit": 5
+    },
+    "proposed_availability_counts": {
+      "out of stock": 5
+    },
+    "stock_confidence_counts": {
+      "medium_tiny_total_stock_no_official_deposit": 5
+    },
+    "ready_for_availability_apply_if_lucas_approves": 0,
+    "ready_in_stock": 0,
+    "ready_out_of_stock": 0,
+    "blocked_or_review": 5,
+    "tiny_index_codes_loaded": 8014,
+    "merchant_writes": 0,
+    "tiny_writes": 0,
+    "shopify_writes": 0,
+    "feed_writes": 0,
+    "database_writes": 0,
+    "external_sends": 0
+  },
+  "samples": {
+    "ready_in_stock": [],
+    "ready_out_of_stock": [],
+    "blocked_or_review": [
+      {
+        "product_id": "online:pt:BR:1023851-1A17746_2NM8J-1",
+        "offer_id": "1023851-1A17746_2NM8J-1",
+        "diagnostic_required_attrs": [
+          "age group",
+          "availability",
+          "gender",
+          "size"
+        ],
+        "current_product_present": true,
+        "current_availability": "",
+        "merchant_title": "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom",
+        "shopify_exact_sku_seen": true,
+        "shopify_product_status": "active",
+        "shopify_inventory_quantity_snapshot": 0,
+        "tiny_exact_codigo_seen": true,
+        "tiny_id": "1070120319",
+        "tiny_situacao": "A",
+        "tiny_tipo_variacao": "V",
+        "tiny_official_deposit_seen": false,
+        "tiny_official_deposit_saldo": null,
+        "tiny_total_saldo": 0.0,
+        "proposed_availability": "out of stock",
+        "stock_confidence": "medium_tiny_total_stock_no_official_deposit",
+        "decision_state": "blocked_review_no_official_deposit",
+        "write_scope_if_approved": "update exact Merchant online product availability only, preserving current resource and using products.insert upsert",
+        "rollback_required_before_write": true,
+        "write_allowed_now": false
+      },
+      {
+        "product_id": "online:pt:BR:1023851-1A17746_2NM8J-10",
+        "offer_id": "1023851-1A17746_2NM8J-10",
+        "diagnostic_required_attrs": [
+          "age group",
+          "availability",
+          "gender",
+          "size"
+        ],
+        "current_product_present": true,
+        "current_availability": "",
+        "merchant_title": "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom",
+        "shopify_exact_sku_seen": true,
+        "shopify_product_status": "active",
+        "shopify_inventory_quantity_snapshot": 0,
+        "tiny_exact_codigo_seen": true,
+        "tiny_id": "1070120329",
+        "tiny_situacao": "A",
+        "tiny_tipo_variacao": "V",
+        "tiny_official_deposit_seen": false,
+        "tiny_official_deposit_saldo": null,
+        "tiny_total_saldo": 0.0,
+        "proposed_availability": "out of stock",
+        "stock_confidence": "medium_tiny_total_stock_no_official_deposit",
+        "decision_state": "blocked_review_no_official_deposit",
+        "write_scope_if_approved": "update exact Merchant online product availability only, preserving current resource and using products.insert upsert",
+        "rollback_required_before_write": true,
+        "write_allowed_now": false
+      },
+      {
+        "product_id": "online:pt:BR:1023851-1A17746_2NM8J-2",
+        "offer_id": "1023851-1A17746_2NM8J-2",
+        "diagnostic_required_attrs": [
+          "age group",
+          "availability",
+          "gender",
+          "size"
+        ],
+        "current_product_present": true,
+        "current_availability": "",
+        "merchant_title": "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom",
+        "shopify_exact_sku_seen": true,
+        "shopify_product_status": "active",
+        "shopify_inventory_quantity_snapshot": 0,
+        "tiny_exact_codigo_seen": true,
+        "tiny_id": "1070120284",
+        "tiny_situacao": "A",
+        "tiny_tipo_variacao": "V",
+        "tiny_official_deposit_seen": false,
+        "tiny_official_deposit_saldo": null,
+        "tiny_total_saldo": 0.0,
+        "proposed_availability": "out of stock",
+        "stock_confidence": "medium_tiny_total_stock_no_official_deposit",
+        "decision_state": "blocked_review_no_official_deposit",
+        "write_scope_if_approved": "update exact Merchant online product availability only, preserving current resource and using products.insert upsert",
+        "rollback_required_before_write": true,
+        "write_allowed_now": false
+      },
+      {
+        "product_id": "online:pt:BR:1023851-1A17746_2NM8J-3",
+        "offer_id": "1023851-1A17746_2NM8J-3",
+        "diagnostic_required_attrs": [
+          "age group",
+          "availability",
+          "gender",
+          "size"
+        ],
+        "current_product_present": true,
+        "current_availability": "",
+        "merchant_title": "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom",
+        "shopify_exact_sku_seen": true,
+        "shopify_product_status": "active",
+        "shopify_inventory_quantity_snapshot": 0,
+        "tiny_exact_codigo_seen": true,
+        "tiny_id": "1070120289",
+        "tiny_situacao": "A",
+        "tiny_tipo_variacao": "V",
+        "tiny_official_deposit_seen": false,
+        "tiny_official_deposit_saldo": null,
+        "tiny_total_saldo": 0.0,
+        "proposed_availability": "out of stock",
+        "stock_confidence": "medium_tiny_total_stock_no_official_deposit",
+        "decision_state": "blocked_review_no_official_deposit",
+        "write_scope_if_approved": "update exact Merchant online product availability only, preserving current resource and using products.insert upsert",
+        "rollback_required_before_write": true,
+        "write_allowed_now": false
+      },
+      {
+        "product_id": "online:pt:BR:1023851-1A17746_2NM8J-4",
+        "offer_id": "1023851-1A17746_2NM8J-4",
+        "diagnostic_required_attrs": [
+          "age group",
+          "availability",
+          "gender",
+          "size"
+        ],
+        "current_product_present": true,
+        "current_availability": "",
+        "merchant_title": "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom",
+        "shopify_exact_sku_seen": true,
+        "shopify_product_status": "active",
+        "shopify_inventory_quantity_snapshot": 0,
+        "tiny_exact_codigo_seen": true,
+        "tiny_id": "1070120294",
+        "tiny_situacao": "A",
+        "tiny_tipo_variacao": "V",
+        "tiny_official_deposit_seen": false,
+        "tiny_official_deposit_saldo": null,
+        "tiny_total_saldo": 0.0,
+        "proposed_availability": "out of stock",
+        "stock_confidence": "medium_tiny_total_stock_no_official_deposit",
+        "decision_state": "blocked_review_no_official_deposit",
+        "write_scope_if_approved": "update exact Merchant online product availability only, preserving current resource and using products.insert upsert",
+        "rollback_required_before_write": true,
+        "write_allowed_now": false
+      }
+    ]
+  },
+  "files": {
+    "public_json": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-gmc-2026-05-12-p1-availability-tiny-packet.json",
+    "public_csv": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-gmc-2026-05-12-p1-availability-tiny-packet.csv",
+    "public_md": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-gmc-2026-05-12-p1-availability-tiny-packet.md",
+    "private_csv_chmod_600": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_reconciliation/lk-gmc-2026-05-12-p1-availability-tiny-packet-full-private.csv",
+    "private_tiny_stock_cache_jsonl_chmod_600": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_reconciliation/lk-gmc-2026-05-12-p1-availability-tiny-packet-tiny-stock-cache.jsonl"
+  },
+  "not_performed": [
+    "merchant_product_update",
+    "merchant_product_insert_upsert",
+    "tiny_write",
+    "shopify_write",
+    "feed_update_or_fetch",
+    "database_write",
+    "pos_write",
+    "campaign_or_external_send"
+  ],
+  "approval_wording": "Aprovo aplicar availability no Merchant para os 0 itens ready do packet P1-B usando Tiny oficial: 0 in stock e 0 out of stock; sem alterar Tiny/Shopify/feed/DB/POS/campanhas, com rollback snapshot privado antes do write."
+}

@@ -1,0 +1,921 @@
+{
+  "generatedAt": "2026-05-16T17:45:40Z",
+  "mode": "vNext operating-loops active + approval-gated",
+  "freshnessSlaHours": 24,
+  "summary": "Mission Control agora opera com Operating Loops: fonte Git/PR preparada, auth hardening, LK cards read-only, inbox central, lifecycle ledger, Daily COO Brief, noise budget, worker profiles e execution bridge A1/A2 sem writes externos.",
+  "health": [
+    {
+      "label": "Mission Control generated feed",
+      "status": "missing",
+      "detail": "/opt/data/hermes_bruno_ingest/mission-control-cimino-hermes/src/data/ops-state.generated.ts ausente"
+    },
+    {
+      "label": "Brain JSON mirror",
+      "status": "verified",
+      "detail": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/mission-control-ops-state-latest.json existe (32715 bytes)"
+    },
+    {
+      "label": "Event Ledger Brain mirror",
+      "status": "verified",
+      "detail": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/mission-control-event-ledger.jsonl existe (1057 bytes)"
+    },
+    {
+      "label": "Local PR/rollback package",
+      "status": "verified",
+      "detail": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/mission-control-pr-package/mission-control-p2-10-11-12-20260516.patch existe (50024 bytes)"
+    },
+    {
+      "label": "Mission Control watchdog",
+      "status": "verified",
+      "detail": "/opt/data/scripts/mission_control_ops_watchdog.py existe (9294 bytes)"
+    },
+    {
+      "label": "Compression self-heal watchdog",
+      "status": "verified",
+      "detail": "/opt/data/scripts/hermes_compression_failure_self_heal.py existe (7964 bytes)"
+    },
+    {
+      "label": "lk-shopify-readonly runtime skill",
+      "status": "verified",
+      "detail": "/opt/data/skills/productivity/lk-shopify-readonly/SKILL.md existe (32321 bytes)"
+    },
+    {
+      "label": "lk-shopify-product-upload runtime skill",
+      "status": "verified",
+      "detail": "/opt/data/skills/productivity/lk-shopify-product-upload/SKILL.md existe (13768 bytes)"
+    },
+    {
+      "label": "Kanban lk-growth-ops",
+      "status": "verified",
+      "detail": "ready=6; done=9; dispatch policy restricts executable cards"
+    }
+  ],
+  "healthCenter": [
+    {
+      "system": "Mission Control",
+      "status": "green",
+      "signal": "Deploy/API/UI/watchdog passaram; API no-store/noindex; console limpo."
+    },
+    {
+      "system": "Crons Hermes/LK",
+      "status": "green",
+      "signal": "18 jobs inventariados; críticos com last_status ok; alerts only em no_agent watchers."
+    },
+    {
+      "system": "Kanban",
+      "status": "green",
+      "signal": "Board lk-growth-ops ativo; cards executáveis só por política read-only/local."
+    },
+    {
+      "system": "Approval API",
+      "status": "green",
+      "signal": "Allowlist + redaction + receipt + rate-limit in-memory; token hash suportado via env."
+    },
+    {
+      "system": "Secrets",
+      "status": "green",
+      "signal": "Nenhum secret no bundle; tokens via Doppler/Vercel env, não impressos."
+    },
+    {
+      "system": "Git/PR",
+      "status": "yellow",
+      "signal": "local-package-ready; remote push/PR requires explicit source-of-truth approval · branch unknown · 1 arquivos modificados"
+    },
+    {
+      "system": "Noise Budget",
+      "status": "green",
+      "signal": "Crons classificados por orçamento de ruído; repetição vira digest, crítico rompe silêncio."
+    },
+    {
+      "system": "Feed Quality",
+      "status": "green",
+      "signal": "6 packets únicos; 4/4 decisões Waiting Lucas cobertas; duplicatas removidas: 0."
+    }
+  ],
+  "commandSystem": [
+    {
+      "name": "Approval Buttons Telegram",
+      "status": "active",
+      "gate": "A2",
+      "detail": "Pacotes A3/A4 são apresentados com payload, risco, rollback e opções Aprovar escopo / Ajustar / Preview only / Bloquear."
+    },
+    {
+      "name": "Mission Control backend actions",
+      "status": "active",
+      "gate": "A3",
+      "detail": "/api/mission/approvals valida allowlist, action packet, expiração, rate limit, redaction e recibo."
+    },
+    {
+      "name": "Public API/proxy",
+      "status": "active-hardened",
+      "gate": "A3",
+      "detail": "/api/mission/state, /approvals, /kanban e /packets expõem somente estado sanitizado/no-store/noindex."
+    },
+    {
+      "name": "Kanban workers",
+      "status": "active-restricted",
+      "gate": "A3",
+      "detail": "Board lk-growth-ops com lanes e perfis restritos; browser/API nunca executa comando arbitrário."
+    },
+    {
+      "name": "Reliability Layer",
+      "status": "active",
+      "gate": "A3",
+      "detail": "Event Ledger, Action Packets, Waiting Lucas dinâmico, Rollback Registry, expiration e Health Center no cockpit."
+    }
+  ],
+  "improvements12": [
+    {
+      "id": "p0-01",
+      "priority": "P0",
+      "title": "Pacote Git/PR local",
+      "state": "done",
+      "gate": "A3",
+      "outcome": "Patch e resumo gerados no Brain; push/PR real segue separado por fonte Git formal."
+    },
+    {
+      "id": "p0-02",
+      "priority": "P0",
+      "title": "Live ops-state data feed",
+      "state": "done",
+      "gate": "A1",
+      "outcome": "Gerador escreve JSON no Brain e módulo TypeScript no Mission Control."
+    },
+    {
+      "id": "p0-03",
+      "priority": "P0",
+      "title": "Cron context_from",
+      "state": "done",
+      "gate": "A1",
+      "outcome": "Daily intelligence loop recebe saídas dos watchdogs relevantes."
+    },
+    {
+      "id": "p0-04",
+      "priority": "P0",
+      "title": "Approval buttons padrão",
+      "state": "done",
+      "gate": "A2",
+      "outcome": "Botões e gramática A1-A4 viraram ledger visível e payload inline esperado."
+    },
+    {
+      "id": "p1-05",
+      "priority": "P1",
+      "title": "Approval Ledger operacional",
+      "state": "done",
+      "gate": "A2",
+      "outcome": "Ledger gerado mostra escopo, risco e rollback por gate."
+    },
+    {
+      "id": "p1-06",
+      "priority": "P1",
+      "title": "Waiting Lucas real",
+      "state": "done",
+      "gate": "A2",
+      "outcome": "Fila de decisões mostra empresa, recomendação, packetId, idade e expiração."
+    },
+    {
+      "id": "p1-07",
+      "priority": "P1",
+      "title": "Skill drift watchdog",
+      "state": "done",
+      "gate": "A1",
+      "outcome": "Watchdog compara runtime/Brain para Shopify skills e alerta só se divergir."
+    },
+    {
+      "id": "p1-08",
+      "priority": "P1",
+      "title": "Mordomo signal pruning",
+      "state": "done",
+      "gate": "A1",
+      "outcome": "Mordomo aparece como actionable-only; Mission Control trata ruído como silent OK."
+    },
+    {
+      "id": "p1-09",
+      "priority": "P1",
+      "title": "Shopify read-only intelligence",
+      "state": "done",
+      "gate": "A2",
+      "outcome": "Skill existente verificada; inteligência recorrente fica read-only e achados viram approval packet."
+    },
+    {
+      "id": "p2-10",
+      "priority": "P2",
+      "title": "Clickable approval backend",
+      "state": "done",
+      "gate": "A3",
+      "outcome": "Botões reais chamam /api/mission/approvals, validam allowlist/expiração, redigem payload e devolvem recibo auditável."
+    },
+    {
+      "id": "p2-11",
+      "priority": "P2",
+      "title": "Public API/proxy",
+      "state": "done",
+      "gate": "A3",
+      "outcome": "APIs Mission expõem apenas estado/capacidades sanitizados, no-store, noindex, rate-limited e sem execução arbitrária."
+    },
+    {
+      "id": "p2-12",
+      "priority": "P2",
+      "title": "Kanban workers",
+      "state": "done-restricted",
+      "gate": "A3",
+      "outcome": "Workers ficam armados por pacote restrito: board lk-growth-ops, perfis read-only/local, dispatch real só no Hermes/gateway com rollback claro."
+    }
+  ],
+  "actionPackets": [
+    {
+      "packetId": "mission-control-reliability-layer",
+      "company": "Mission Control",
+      "decision": "Ativar Reliability Layer completo",
+      "gate": "A3",
+      "status": "approved-executing",
+      "confidence": "alta",
+      "source": "Telegram Lucas + local QA",
+      "expiresAt": "2026-05-17T17:45:40Z",
+      "payloadHash": "c71b32836e081788",
+      "recommendedAction": "approve_scope",
+      "safeAction": "Deploy Vercel Mission Control + Brain/local ledgers + read-only health checks",
+      "blockedAction": "Git push/DB externo/Docker/gateway/cliente sem pacote específico",
+      "rollback": "promover deploy anterior e aplicar patch reverso"
+    },
+    {
+      "packetId": "lk-operating-intelligence-readonly",
+      "company": "LK Sneakers",
+      "decision": "Unificar sinais comerciais read-only em intelligence cards",
+      "gate": "A2",
+      "status": "ready",
+      "confidence": "média",
+      "source": "Shopify skills, GA4, Metricool, GMC, Brain",
+      "expiresAt": "2026-05-17T17:45:40Z",
+      "payloadHash": "58003b0b9fc5fe88",
+      "recommendedAction": "preview_only",
+      "safeAction": "Gerar ranking de oportunidades e anomalias sem writes",
+      "blockedAction": "Compra, preço, campanha, Shopify/Tiny/Merchant write ou fornecedor",
+      "rollback": "desligar seção e cron read-only, sem impacto em fontes"
+    },
+    {
+      "packetId": "kanban-restricted-dispatch-policy",
+      "company": "Hermes Runtime",
+      "decision": "Permitir somente dispatch read-only/local por lane",
+      "gate": "A3",
+      "status": "active-restricted",
+      "confidence": "alta",
+      "source": "lk-growth-ops stats + smoke card",
+      "expiresAt": "2026-05-17T17:45:40Z",
+      "payloadHash": "88bcd4cf397e34f7",
+      "recommendedAction": "kanban_dispatch_packet",
+      "safeAction": "Atribuir apenas cards explicitamente read-only/local aos perfis restritos",
+      "blockedAction": "Cards com email/Klaviyo/Shopify/externo/dinheiro ficam Waiting Lucas",
+      "rollback": "unassign cards e pausar dispatch"
+    },
+    {
+      "packetId": "mission-control-vnext-operating-loops",
+      "company": "Mission Control",
+      "decision": "Ativar Operating Loops vNext",
+      "gate": "A3",
+      "status": "approved-executing",
+      "confidence": "alta",
+      "source": "Telegram Lucas + Reliability Layer QA",
+      "expiresAt": "2026-05-17T17:45:40Z",
+      "payloadHash": "f33bb3cf4d2c7567",
+      "recommendedAction": "approve_scope",
+      "safeAction": "PR package, auth hardening, inbox central, lifecycle, Daily COO Brief, noise budget e execution bridge A1/A2 sem writes externos",
+      "blockedAction": "GitHub push/merge, DB externo, Docker/gateway, Shopify/Tiny/Merchant/campanha/cliente sem pacote específico",
+      "rollback": "promover deploy anterior + patch reverso + desabilitar /api/mission/execute"
+    },
+    {
+      "packetId": "mission-control-safe-execution-bridge",
+      "company": "Mission Control",
+      "decision": "Permitir bridge de execução apenas A1/A2 local",
+      "gate": "A3",
+      "status": "active-restricted",
+      "confidence": "média",
+      "source": "Operating Loops guardrails",
+      "expiresAt": "2026-05-17T17:45:40Z",
+      "payloadHash": "0cfce9331be3519d",
+      "recommendedAction": "execute_safe",
+      "safeAction": "Marcar packet local, gerar relatório, criar draft local/Brain ou card Kanban read-only; sem externo",
+      "blockedAction": "qualquer shell arbitrário, segredo, fonte verdade, externo, dinheiro, cliente, Docker ou write LK",
+      "rollback": "remover rota execute e ocultar botão Execution Bridge"
+    },
+    {
+      "packetId": "zipper-followup-draft-only",
+      "company": "Zipper Galeria",
+      "decision": "Transformar follow-ups de feira em drafts aprováveis",
+      "gate": "A4",
+      "status": "draft-only",
+      "confidence": "média",
+      "source": "Zipper OS cockpit local + política de envio A4",
+      "expiresAt": "2026-05-17T17:45:40Z",
+      "payloadHash": "518fa8126d7e89d2",
+      "recommendedAction": "preview_only",
+      "safeAction": "Gerar rascunho local com payload completo para Lucas revisar",
+      "blockedAction": "WhatsApp/email/cliente/galerista externo sem aprovação atual do texto e destinatário",
+      "rollback": "arquivar rascunho local; nenhum envio externo executado"
+    }
+  ],
+  "eventLedger": [
+    {
+      "eventId": "mc-reliability-layer-approved-20260516",
+      "ts": "2026-05-16T13:42:54Z",
+      "source": "telegram-lucas",
+      "packetId": "mission-control-reliability-layer",
+      "action": "approve_scope",
+      "gate": "A3",
+      "status": "in-progress",
+      "scopeHash": "eb194a379b053f51",
+      "summary": "Lucas aprovou executar backlog completo: ledger, action packets, health center, rollback registry, auth/rate-limit, expiration, LK intelligence e Kanban policy.",
+      "rollback": "aplicar patch reverso; promover deploy anterior; remover env MISSION_CONTROL_APPROVAL_TOKEN_HASH se configurado."
+    },
+    {
+      "eventId": "mc-p2-approval-20260516",
+      "ts": "2026-05-16T13:42:54Z",
+      "source": "telegram-lucas",
+      "packetId": "mission-control-p2-backend-api-kanban",
+      "action": "approve_scope",
+      "gate": "A3",
+      "status": "executed",
+      "scopeHash": "100457d3c511f5f2",
+      "summary": "Lucas aprovou desbloquear itens 10/11/12; backend/API/Kanban restrito ativados e publicados.",
+      "rollback": "promover deploy anterior Vercel; remover rotas /api/mission/* e CommandActionPanel; unassign/disable dispatch se necessário."
+    }
+  ],
+  "approvalLedger": [
+    {
+      "gate": "A1",
+      "title": "Autonomia segura",
+      "scope": "Ler, resumir, comparar, gerar docs, QA, previews locais, watchdogs read-only/silent OK e autocorreções locais de baixo risco.",
+      "buttons": "executa sem pedir quando reversível"
+    },
+    {
+      "gate": "A2",
+      "title": "Preview / escopo aprovado",
+      "scope": "Mission Control, Brain, skills, relatórios, Vercel Mission Control com validação e rollback; outputs com payload inline.",
+      "buttons": "Aprovar escopo · Ajustar · Preview only"
+    },
+    {
+      "gate": "A3",
+      "title": "Fonte de verdade / infra",
+      "scope": "GitHub push/PR, Vercel config, banco, Docker, host, API/proxy, integrações críticas e gateway restart.",
+      "buttons": "pacote com rollback obrigatório"
+    },
+    {
+      "gate": "A4",
+      "title": "Externo / dinheiro / cliente",
+      "scope": "WhatsApp/email cliente, campanhas, compras, Shopify/Tiny/Merchant writes, secrets, destrutivo.",
+      "buttons": "aprovação atual e payload inline"
+    }
+  ],
+  "waitingLucas": [
+    {
+      "company": "Mission Control",
+      "decision": "PR/fonte Git formal + Operating Loops vNext",
+      "recommendation": "Pacote local pronto; push/PR continua separado para evitar misturar branch suja.",
+      "gate": "A3",
+      "packetId": "mission-control-reliability-layer",
+      "ageHours": 0,
+      "expiresAt": "2026-05-17T17:45:40Z"
+    },
+    {
+      "company": "LK Sneakers",
+      "decision": "Ativar inteligência comercial read-only recorrente",
+      "recommendation": "Começar com cards de oportunidade/anomalia; writes viram approval packet.",
+      "gate": "A2",
+      "packetId": "lk-operating-intelligence-readonly",
+      "ageHours": 0,
+      "expiresAt": "2026-05-17T17:45:40Z"
+    },
+    {
+      "company": "Hermes Runtime",
+      "decision": "Dispatch automático por lane",
+      "recommendation": "Manter só read-only/local; cards sensíveis ficam Waiting Lucas.",
+      "gate": "A3",
+      "packetId": "kanban-restricted-dispatch-policy",
+      "ageHours": 0,
+      "expiresAt": "2026-05-17T17:45:40Z"
+    },
+    {
+      "company": "Zipper Galeria",
+      "decision": "Transformar follow-ups de feira em approval packets com texto inteiro no Telegram.",
+      "recommendation": "Draft-only; envio continua A4.",
+      "gate": "A4",
+      "packetId": "zipper-followup-draft-only",
+      "ageHours": 0,
+      "expiresAt": "2026-05-17T17:45:40Z"
+    }
+  ],
+  "kanbanPolicy": [
+    {
+      "lane": "Backlog",
+      "autoDispatch": "never",
+      "allowedProfiles": "none",
+      "rule": "idéias e tarefas não especificadas não executam"
+    },
+    {
+      "lane": "Ready Read-only",
+      "autoDispatch": "allowed",
+      "allowedProfiles": "hermes-ops-readonly, lk-analyst-readonly, brain-process",
+      "rule": "somente leitura/local/Brain; bloqueia se detectar A3/A4"
+    },
+    {
+      "lane": "Doing",
+      "autoDispatch": "claimed-only",
+      "allowedProfiles": "assigned restricted profile",
+      "rule": "sem escalada de permissão durante execução"
+    },
+    {
+      "lane": "Waiting Lucas",
+      "autoDispatch": "never",
+      "allowedProfiles": "none",
+      "rule": "depende de decisão/approval packet atual"
+    },
+    {
+      "lane": "Waiting External",
+      "autoDispatch": "never",
+      "allowedProfiles": "none",
+      "rule": "não contata cliente/fornecedor externo"
+    },
+    {
+      "lane": "QA",
+      "autoDispatch": "review-only",
+      "allowedProfiles": "lk-content-reviewer, hermes-ops-readonly",
+      "rule": "verifica artefatos, não executa writes"
+    },
+    {
+      "lane": "Done",
+      "autoDispatch": "never",
+      "allowedProfiles": "none",
+      "rule": "somente auditoria/recall"
+    }
+  ],
+  "rollbackRegistry": [
+    {
+      "component": "Mission Control Vercel deploy",
+      "risk": "A3",
+      "lastGood": "deploy anterior no Vercel",
+      "rollback": "Promover deployment anterior ou redeploy do patch reverso; validar / e /api/mission/state 200."
+    },
+    {
+      "component": "Approval API",
+      "risk": "A3",
+      "lastGood": "rotas removidas/sem POST",
+      "rollback": "Remover src/app/api/mission/* e CommandActionPanel; redeploy; verificar watchdog silent OK."
+    },
+    {
+      "component": "Kanban dispatch policy",
+      "risk": "A3",
+      "lastGood": "cards unassigned",
+      "rollback": "Unassign/reclaim cards; pausar dispatch; manter board como ledger manual."
+    },
+    {
+      "component": "Event Ledger Brain mirror",
+      "risk": "A2",
+      "lastGood": "arquivo jsonl anterior",
+      "rollback": "Restaurar backup/commit; ledger é append-only e sanitizado."
+    },
+    {
+      "component": "LK Operating Intelligence",
+      "risk": "A2",
+      "lastGood": "read-only skills sem rotina recorrente",
+      "rollback": "Desligar seção/cron read-only; nenhum write em Shopify/Tiny/Merchant."
+    }
+  ],
+  "lkOperatingIntelligence": [
+    {
+      "signal": "Stockout/margem",
+      "status": "read-only-ready",
+      "source": "Shopify/Tiny/GMC/Droper skills",
+      "next": "Gerar cards de oportunidade, sem compra/preço/campanha automática."
+    },
+    {
+      "signal": "Influencer performance",
+      "status": "read-only-ready",
+      "source": "Meta/Metricool/GA4/Pareto-compatible APIs",
+      "next": "Somar ad_ids por influencer; email/WhatsApp continua draft/approval."
+    },
+    {
+      "signal": "GMC anomalies",
+      "status": "read-only-ready",
+      "source": "Content API products/statuses read-only",
+      "next": "Snapshot antes de qualquer write; proposals viram packet."
+    },
+    {
+      "signal": "Sourcing",
+      "status": "read-only-ready",
+      "source": "Droper, StockX/GOAT exato, custos LK",
+      "next": "Ranking de compra sugerida; compra/fornecedor é A4."
+    }
+  ],
+  "gitSourceControl": {
+    "branch": "unknown",
+    "remote": "unknown",
+    "changedFiles": 1,
+    "formalPrStatus": "local-package-ready; remote push/PR requires explicit source-of-truth approval",
+    "rollback": "git checkout previous commit/branch + promote previous Vercel deploy"
+  },
+  "approvalHardening": [
+    {
+      "control": "POST private path",
+      "status": "supported",
+      "detail": "Token hash opcional, rate-limit e allowlist; próximo passo é configurar token se quiser bloquear POST público."
+    },
+    {
+      "control": "Replay/expiry",
+      "status": "active",
+      "detail": "Packets expiram e payloadHash congela escopo."
+    },
+    {
+      "control": "Read vs action split",
+      "status": "active",
+      "detail": "GET público sanitizado; POST gera recibo/bridge restrito sem comando arbitrário."
+    }
+  ],
+  "centralInbox": [
+    {
+      "company": "Mission Control",
+      "decision": "PR/fonte Git formal + Operating Loops vNext",
+      "recommendation": "Pacote local pronto; push/PR continua separado para evitar misturar branch suja.",
+      "gate": "A3",
+      "packetId": "mission-control-reliability-layer",
+      "ageHours": 0,
+      "expiresAt": "2026-05-17T17:45:40Z"
+    },
+    {
+      "company": "LK Sneakers",
+      "decision": "Ativar inteligência comercial read-only recorrente",
+      "recommendation": "Começar com cards de oportunidade/anomalia; writes viram approval packet.",
+      "gate": "A2",
+      "packetId": "lk-operating-intelligence-readonly",
+      "ageHours": 0,
+      "expiresAt": "2026-05-17T17:45:40Z"
+    },
+    {
+      "company": "Hermes Runtime",
+      "decision": "Dispatch automático por lane",
+      "recommendation": "Manter só read-only/local; cards sensíveis ficam Waiting Lucas.",
+      "gate": "A3",
+      "packetId": "kanban-restricted-dispatch-policy",
+      "ageHours": 0,
+      "expiresAt": "2026-05-17T17:45:40Z"
+    },
+    {
+      "company": "Zipper Galeria",
+      "decision": "Transformar follow-ups de feira em approval packets com texto inteiro no Telegram.",
+      "recommendation": "Draft-only; envio continua A4.",
+      "gate": "A4",
+      "packetId": "zipper-followup-draft-only",
+      "ageHours": 0,
+      "expiresAt": "2026-05-17T17:45:40Z"
+    },
+    {
+      "company": "LK Sneakers",
+      "decision": "Revisar cards read-only P0/P1 gerados pelo Operating Intelligence",
+      "recommendation": "Promover oportunidades para action packets; writes continuam A4.",
+      "gate": "A2",
+      "packetId": "lk-operating-intelligence-readonly",
+      "ageHours": 0,
+      "expiresAt": "2026-05-17T17:45:40Z"
+    },
+    {
+      "company": "Mission Control",
+      "decision": "Configurar token de aprovação se Lucas quiser POST privado mais forte",
+      "recommendation": "Criar secret server-side MISSION_CONTROL_APPROVAL_TOKEN_HASH; sem expor token no browser.",
+      "gate": "A3",
+      "packetId": "mission-control-vnext-operating-loops",
+      "ageHours": 0,
+      "expiresAt": "2026-05-17T17:45:40Z"
+    }
+  ],
+  "eventLifecycle": [
+    {
+      "state": "created",
+      "meaning": "packet/sinal gerado por cron, worker ou Lucas",
+      "next": "presented"
+    },
+    {
+      "state": "presented",
+      "meaning": "aparece no Mission Control/Telegram com payload e rollback",
+      "next": "approved, blocked ou expired"
+    },
+    {
+      "state": "approved",
+      "meaning": "Lucas aprovou escopo inline",
+      "next": "executing"
+    },
+    {
+      "state": "executing",
+      "meaning": "somente trilhos permitidos pelo gate",
+      "next": "done ou blocked"
+    },
+    {
+      "state": "done",
+      "meaning": "QA e evidência anexados",
+      "next": "archive"
+    },
+    {
+      "state": "expired",
+      "meaning": "payload/tempo ficou velho",
+      "next": "regenerar packet"
+    },
+    {
+      "state": "superseded",
+      "meaning": "packet novo substituiu anterior",
+      "next": "archive"
+    },
+    {
+      "state": "rolled_back",
+      "meaning": "rollback executado e verificado",
+      "next": "postmortem"
+    }
+  ],
+  "dailyCooBrief": [
+    {
+      "section": "LK",
+      "source": "sales/GMC/Tiny/Metricool/GA4 read-only",
+      "output": "top oportunidades, anomalias e decisões A4 separadas"
+    },
+    {
+      "section": "Zipper",
+      "source": "Gmail/WhatsApp/Supabase draft-only",
+      "output": "follow-ups e agenda sem envio automático"
+    },
+    {
+      "section": "SPITI",
+      "source": "SPITI Hub/Paperclip/email read-only",
+      "output": "pendências por fonte e riscos de afirmação"
+    },
+    {
+      "section": "Hermes",
+      "source": "crons/watchdogs/kanban/approvals",
+      "output": "saúde, ruído, packets expirando e regressões"
+    },
+    {
+      "section": "Waiting Lucas",
+      "source": "centralInbox",
+      "output": "top 5 decisões por urgência/gate"
+    }
+  ],
+  "noiseBudget": [
+    {
+      "class": "silent watchdog",
+      "budget": "0 mensagens quando saudável",
+      "current": "Mission/Runtime/Compression/Zipper watchdogs seguem silent OK",
+      "action": "alertar só stdout/rc!=0"
+    },
+    {
+      "class": "daily brief",
+      "budget": "1-3 entregas/dia",
+      "current": "LK daily, Zipper cockpit, Mordomo 09h/17h",
+      "action": "consolidar no Daily COO Brief quando sobrepuser"
+    },
+    {
+      "class": "actionable alert",
+      "budget": "máx. 5/dia salvo incidente",
+      "current": "18 crons inventariados; sem drift crítico",
+      "action": "deduplicar por packetId + expiração"
+    },
+    {
+      "class": "local-only",
+      "budget": "sem Telegram",
+      "current": "Zipper drafts/style learning e relatórios locais",
+      "action": "subir apenas decisão/erro"
+    },
+    {
+      "class": "deprecated/no-value",
+      "budget": "0",
+      "current": "revisar jobs sem valor em 7 dias",
+      "action": "propor pausa com rollback, não remover sozinho"
+    }
+  ],
+  "workerProfiles": [
+    {
+      "profile": "lk-catalog-readonly",
+      "gateMax": "A2",
+      "tools": "Shopify/Tiny/Merchant GET/query only",
+      "denied": "writes, price, stock, supplier"
+    },
+    {
+      "profile": "lk-marketing-readonly",
+      "gateMax": "A2",
+      "tools": "Meta/GA4/Metricool aggregation",
+      "denied": "campaign edits, external sends"
+    },
+    {
+      "profile": "lk-sourcing-analyst",
+      "gateMax": "A2",
+      "tools": "Droper/StockX/GOAT exact-match analysis",
+      "denied": "purchase/supplier contact"
+    },
+    {
+      "profile": "zipper-draft-assistant",
+      "gateMax": "A2",
+      "tools": "draft/local text only",
+      "denied": "WhatsApp/email send"
+    },
+    {
+      "profile": "spiti-source-checker",
+      "gateMax": "A2",
+      "tools": "read SPITI sources and flag unknowns",
+      "denied": "client claims/contact"
+    },
+    {
+      "profile": "mission-control-qa",
+      "gateMax": "A2",
+      "tools": "lint/build/API/browser/watchdog",
+      "denied": "infra mutations"
+    },
+    {
+      "profile": "rollback-auditor",
+      "gateMax": "A2",
+      "tools": "verify rollback docs/artifacts",
+      "denied": "execute rollback without approval"
+    }
+  ],
+  "executionBridge": [
+    {
+      "action": "mark_packet_resolved",
+      "gate": "A1",
+      "status": "enabled-contract",
+      "effect": "ledger/local state only"
+    },
+    {
+      "action": "generate_report",
+      "gate": "A1",
+      "status": "enabled-contract",
+      "effect": "Brain/local artifact only"
+    },
+    {
+      "action": "create_readonly_kanban_card",
+      "gate": "A2",
+      "status": "enabled-contract",
+      "effect": "restricted profile/unassigned unless safe"
+    },
+    {
+      "action": "create_local_draft",
+      "gate": "A2",
+      "status": "enabled-contract",
+      "effect": "draft artifact, no external send"
+    },
+    {
+      "action": "run_readonly_script",
+      "gate": "A2",
+      "status": "preview-only",
+      "effect": "only allowlisted scripts, no arbitrary shell from browser"
+    }
+  ],
+  "lkIntelligenceCards": [
+    {
+      "id": "gmc-price-source",
+      "title": "GMC preço/source",
+      "priority": "P0",
+      "gate": "A2",
+      "status": "read-only-card",
+      "source": "GMC / Merchant read-only",
+      "evidence": "lk-gmc-2026-05-15-a42-post-fallback-readonly-recheck.json",
+      "ageHours": 19,
+      "recommendedNext": "Revisar divergências de fonte/preço antes de qualquer Content API write.",
+      "blocked": "Shopify/Tiny/Merchant write, compra, fornecedor, preço, campanha ou contato externo sem A4."
+    },
+    {
+      "id": "tiny-stock-snapshot",
+      "title": "Tiny stock freshness",
+      "priority": "P0",
+      "gate": "A2",
+      "status": "read-only-card",
+      "source": "Tiny snapshot read-only",
+      "evidence": "lk-os-tiny-stock-snapshot-full-readonly-2026-05-15.json",
+      "ageHours": 21,
+      "recommendedNext": "Usar Tiny como estoque verdade; Shopify stock não decide disponibilidade sozinho.",
+      "blocked": "Shopify/Tiny/Merchant write, compra, fornecedor, preço, campanha ou contato externo sem A4."
+    },
+    {
+      "id": "sku-cadastro-needed",
+      "title": "SKU/Tiny cadastro needed",
+      "priority": "P0",
+      "gate": "A2",
+      "status": "read-only-card",
+      "source": "SKU saneamento read-only",
+      "evidence": "lk-sku-tiny-manual-cadastro-needed-pace-rhode-saintstudio-2026-05-15.md",
+      "ageHours": 23,
+      "recommendedNext": "Manter fila Júlio/Lucas; não pular para compra/sourcing até SKU verdade.",
+      "blocked": "Shopify/Tiny/Merchant write, compra, fornecedor, preço, campanha ou contato externo sem A4."
+    },
+    {
+      "id": "daily-sales-brief",
+      "title": "Daily sales brief",
+      "priority": "P0",
+      "gate": "A2",
+      "status": "read-only-card",
+      "source": "LK daily sales watchdog",
+      "evidence": "lk-os-daily-sales-brief-2026-05-10.json",
+      "ageHours": 6,
+      "recommendedNext": "Converter achados em cards de oportunidade, sem preço/campanha/compra automática.",
+      "blocked": "Shopify/Tiny/Merchant write, compra, fornecedor, preço, campanha ou contato externo sem A4."
+    },
+    {
+      "id": "influencer-performance",
+      "title": "Influencer performance",
+      "priority": "P1",
+      "gate": "A2",
+      "status": "read-only-card",
+      "source": "Meta/Metricool/GA4/Pareto-compatible",
+      "evidence": "skill/source configured; aguardando próximo collector read-only",
+      "ageHours": null,
+      "recommendedNext": "Somar ad_ids por influencer; qualquer mensagem/campanha fica A4.",
+      "blocked": "Shopify/Tiny/Merchant write, compra, fornecedor, preço, campanha ou contato externo sem A4."
+    },
+    {
+      "id": "sourcing-opportunity",
+      "title": "Sourcing opportunity",
+      "priority": "P1",
+      "gate": "A2",
+      "status": "read-only-card",
+      "source": "Droper + StockX/GOAT exact-match",
+      "evidence": "skill/source configured; aguardando próximo collector read-only",
+      "ageHours": null,
+      "recommendedNext": "Gerar ranking; fornecedor/compra é A4 com payload inline.",
+      "blocked": "Shopify/Tiny/Merchant write, compra, fornecedor, preço, campanha ou contato externo sem A4."
+    }
+  ],
+  "watchers": [
+    {
+      "id": "edd06fe19397",
+      "name": "Hermes runtime + cron",
+      "cadence": "*/30",
+      "contract": "silent OK"
+    },
+    {
+      "id": "feec299b99e5",
+      "name": "Mission Control ops",
+      "cadence": "*/15",
+      "contract": "silent OK · feed/freshness/skill drift/site/reliability markers"
+    },
+    {
+      "id": "4bb4e2223fd3",
+      "name": "Compression failure self-heal",
+      "cadence": "*/10",
+      "contract": "silent OK · autocorrige classificador/teste; sem restart"
+    },
+    {
+      "id": "051f05ce17c1",
+      "name": "Mordomo realtime",
+      "cadence": "*/15",
+      "contract": "actionable only"
+    },
+    {
+      "id": "f00c68f5967a",
+      "name": "Zipper daily cockpit",
+      "cadence": "08:15 BRT",
+      "contract": "mandatory summary"
+    },
+    {
+      "id": "af07bbc077b8",
+      "name": "Zipper inbox/followups",
+      "cadence": "*/30",
+      "contract": "silent OK"
+    },
+    {
+      "id": "7c688553e293",
+      "name": "LK daily sales brief",
+      "cadence": "08:00 BRT",
+      "contract": "mandatory summary"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "src/data/ops-state.generated.ts",
+      "kind": "Mission Control generated feed"
+    },
+    {
+      "path": "reports/mission-control-ops-state-latest.json",
+      "kind": "Brain JSON mirror"
+    },
+    {
+      "path": "reports/mission-control-event-ledger.jsonl",
+      "kind": "append-only event ledger"
+    },
+    {
+      "path": "scripts/mission_control_ops_state.py",
+      "kind": "repo generator source"
+    },
+    {
+      "path": "/opt/data/scripts/mission_control_ops_state.py",
+      "kind": "runtime generator"
+    },
+    {
+      "path": "/opt/data/scripts/mission_control_ops_watchdog.py",
+      "kind": "runtime silent watchdog"
+    }
+  ],
+  "feedQuality": {
+    "status": "green",
+    "packetCount": 6,
+    "waitingLucasCount": 4,
+    "waitingPacketCoverage": 4,
+    "duplicatePacketIdsRemoved": [],
+    "missingWaitingPackets": [],
+    "expiredPackets": [],
+    "staleEvidence": [],
+    "contract": "packetId único; waitingLucas sempre referencia actionPacket existente; fontes antigas aparecem como atenção, não como fato fresco."
+  }
+}

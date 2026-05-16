@@ -1,0 +1,685 @@
+{
+  "status": "completed",
+  "generated_at": "2026-05-14T23:58:25.159248+00:00",
+  "cards": 14,
+  "unique_styles_queried": 5,
+  "notion_covers_updated": 14,
+  "notion_blocks_appended": 14,
+  "skipped_no_page": 0,
+  "formula": {
+    "custo_final_estimado_brl": "(preco_usd + custo_trazer_usd) × (dolar_atual × 1.05) × 2",
+    "usd_brl": 4.911381,
+    "custo_trazer_usd": 100.0,
+    "factor_brl_per_usd": 10.313900100000001
+  },
+  "guardrails": [
+    "no_purchase",
+    "no_reservation",
+    "no_supplier_contact",
+    "no_whatsapp_send",
+    "no_payment_schedule",
+    "no_shopify_write",
+    "no_tiny_write",
+    "no_merchant_write"
+  ],
+  "rows": [
+    {
+      "title": "Sourcing — Tênis New Balance 204L Arid Timberwolf Bege — Tam 37 — U204LMMC-4",
+      "page_id": "36027dc9-e033-81c9-8ea4-c56e8009b997",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-New-Balance-204L-Arid-Timberwolf-Bege-Tam-37-U204LMMC-4-36027dc9e03381c98ea4c56e8009b997",
+      "priority": "P1",
+      "model": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "size_lk": "37",
+      "sku_lk": "U204LMMC-4",
+      "style_sku": "U204LMMC",
+      "kicks_stockx": {
+        "id": "7315ad9b-ae0c-44cd-a6ba-57fa50a12336",
+        "title": "New Balance 204L Timberwolf",
+        "sku": "U204LMMC",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fnew-balance-204l-timberwolf",
+        "image": "https://images.stockx.com/images/New-Balance-204L-Timberwolf-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1755810545",
+        "min_price": 73,
+        "avg_price": 114.94736842105263,
+        "max_price": 220,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1636781,
+        "name": "New Balance 204L 'Timberwolf Linen'",
+        "sku": "U204LMMC",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2F204l-timberwolf-linen-u204lmmc",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/111/485/005/original/U204LMMC.png",
+        "weekly_orders": 0
+      },
+      "image_url": "https://images.stockx.com/images/New-Balance-204L-Timberwolf-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1755810545",
+      "recommendation": {
+        "sale_price_brl": 2799.99,
+        "national_cost_brl": 1999.9,
+        "national_margin_pct": 0.2857474490980324,
+        "stockx_min_usd_product_level": 73,
+        "stockx_avg_usd_product_level": 114.94736842105263,
+        "stockx_landed_min_brl": 1784.3047173000002,
+        "stockx_landed_avg_brl": 2216.945684652632,
+        "import_margin_pct_min_signal": 0.36274603934299754,
+        "verdict": "import_signal_good_but_verify_exact_size",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    },
+    {
+      "title": "Sourcing — Tênis New Balance 204L Arid Timberwolf Bege — Tam 39 — U204LMMC-6",
+      "page_id": "36027dc9-e033-810e-92bc-c95b198f12bb",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-New-Balance-204L-Arid-Timberwolf-Bege-Tam-39-U204LMMC-6-36027dc9e033810e92bcc95b198f12bb",
+      "priority": "P1",
+      "model": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "size_lk": "39",
+      "sku_lk": "U204LMMC-6",
+      "style_sku": "U204LMMC",
+      "kicks_stockx": {
+        "id": "7315ad9b-ae0c-44cd-a6ba-57fa50a12336",
+        "title": "New Balance 204L Timberwolf",
+        "sku": "U204LMMC",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fnew-balance-204l-timberwolf",
+        "image": "https://images.stockx.com/images/New-Balance-204L-Timberwolf-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1755810545",
+        "min_price": 73,
+        "avg_price": 114.94736842105263,
+        "max_price": 220,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1636781,
+        "name": "New Balance 204L 'Timberwolf Linen'",
+        "sku": "U204LMMC",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2F204l-timberwolf-linen-u204lmmc",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/111/485/005/original/U204LMMC.png",
+        "weekly_orders": 0
+      },
+      "image_url": "https://images.stockx.com/images/New-Balance-204L-Timberwolf-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1755810545",
+      "recommendation": {
+        "sale_price_brl": 2799.99,
+        "national_cost_brl": 2380.0,
+        "national_margin_pct": 0.14999696427487236,
+        "stockx_min_usd_product_level": 73,
+        "stockx_avg_usd_product_level": 114.94736842105263,
+        "stockx_landed_min_brl": 1784.3047173000002,
+        "stockx_landed_avg_brl": 2216.945684652632,
+        "import_margin_pct_min_signal": 0.36274603934299754,
+        "verdict": "import_signal_good_but_verify_exact_size",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    },
+    {
+      "title": "Sourcing — Tênis Onitsuka Tiger Mexico 66 White Black Branco — Tam 38 — 1183A201-126-5",
+      "page_id": "36027dc9-e033-8191-8781-ec911b85568a",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-Onitsuka-Tiger-Mexico-66-White-Black-Branco-Tam-38-1183A201-126-5-36027dc9e03381918781ec911b85568a",
+      "priority": "P1",
+      "model": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "size_lk": "38",
+      "sku_lk": "1183A201-126-5",
+      "style_sku": "1183A201-126",
+      "kicks_stockx": {
+        "id": "816dff0d-23ae-4f98-9812-669f420d46a4",
+        "title": "Onitsuka Tiger Mexico 66 White Black",
+        "sku": "1183A201-126",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fonitsuka-tiger-mexico-66-sd-white-black",
+        "image": "https://images.stockx.com/images/Onitsuka-Tiger-Mexico-66-SD-White-Black-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1762290768",
+        "min_price": 127,
+        "avg_price": 183.68421052631578,
+        "max_price": 220,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1502503,
+        "name": "Onitsuka Tiger Mexico 66 'White Black Suede Toe'",
+        "sku": "1183A201 126",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2Fmexico-66-white-black-suede-toe-1183a201-126",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/108/854/828/original/1502503_00.png.png",
+        "weekly_orders": 11
+      },
+      "image_url": "https://images.stockx.com/images/Onitsuka-Tiger-Mexico-66-SD-White-Black-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1762290768",
+      "recommendation": {
+        "sale_price_brl": 2399.99,
+        "national_cost_brl": 1890.0,
+        "national_margin_pct": 0.212496718736328,
+        "stockx_min_usd_product_level": 127,
+        "stockx_avg_usd_product_level": 183.68421052631578,
+        "stockx_landed_min_brl": 2341.2553227000003,
+        "stockx_landed_avg_brl": 2925.89060731579,
+        "import_margin_pct_min_signal": 0.024472884178683863,
+        "verdict": "national_borderline_human_compare_logistics",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    },
+    {
+      "title": "Sourcing — Tênis Onitsuka Tiger Mexico 66 White Black Branco — Tam 37 — 1183A201-126-4",
+      "page_id": "36027dc9-e033-8164-8fdb-fb85da79665f",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-Onitsuka-Tiger-Mexico-66-White-Black-Branco-Tam-37-1183A201-126-4-36027dc9e03381648fdbfb85da79665f",
+      "priority": "P1",
+      "model": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "size_lk": "37",
+      "sku_lk": "1183A201-126-4",
+      "style_sku": "1183A201-126",
+      "kicks_stockx": {
+        "id": "816dff0d-23ae-4f98-9812-669f420d46a4",
+        "title": "Onitsuka Tiger Mexico 66 White Black",
+        "sku": "1183A201-126",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fonitsuka-tiger-mexico-66-sd-white-black",
+        "image": "https://images.stockx.com/images/Onitsuka-Tiger-Mexico-66-SD-White-Black-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1762290768",
+        "min_price": 127,
+        "avg_price": 183.68421052631578,
+        "max_price": 220,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1502503,
+        "name": "Onitsuka Tiger Mexico 66 'White Black Suede Toe'",
+        "sku": "1183A201 126",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2Fmexico-66-white-black-suede-toe-1183a201-126",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/108/854/828/original/1502503_00.png.png",
+        "weekly_orders": 11
+      },
+      "image_url": "https://images.stockx.com/images/Onitsuka-Tiger-Mexico-66-SD-White-Black-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1762290768",
+      "recommendation": {
+        "sale_price_brl": 2399.99,
+        "national_cost_brl": 1890.0,
+        "national_margin_pct": 0.212496718736328,
+        "stockx_min_usd_product_level": 127,
+        "stockx_avg_usd_product_level": 183.68421052631578,
+        "stockx_landed_min_brl": 2341.2553227000003,
+        "stockx_landed_avg_brl": 2925.89060731579,
+        "import_margin_pct_min_signal": 0.024472884178683863,
+        "verdict": "national_borderline_human_compare_logistics",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    },
+    {
+      "title": "Sourcing — Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo — Tam 38 — HV8547-700-5",
+      "page_id": "36027dc9-e033-81c4-aee2-ece6179732eb",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-Nike-Moon-Shoe-SP-Jacquemus-Alabaster-Amarelo-Tam-38-HV8547-700-5-36027dc9e03381c4aee2ece6179732eb",
+      "priority": "P2",
+      "model": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "size_lk": "38",
+      "sku_lk": "HV8547-700-5",
+      "style_sku": "HV8547-700",
+      "kicks_stockx": {
+        "id": "5466799d-8f64-4db5-9881-9f6fea4df0a2",
+        "title": "Nike Moon Shoe SP Jacquemus Alabaster (Women's)",
+        "sku": "HV8547-700",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fnike-moon-shoe-sp-jacquemus-alabaster",
+        "image": "https://images.stockx.com/images/Nike-Moon-Shoe-SP-Jacquemus-Alabaster-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1759525738",
+        "min_price": 410,
+        "avg_price": 699.3888888888889,
+        "max_price": 1200,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1569715,
+        "name": "Jacquemus x Nike Wmns Moon Shoe SP 'Alabaster'",
+        "sku": "HV8547 700",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2Fjacquemus-x-wmns-jacumoon-alabaster-hv8547-700",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/113/470/301/original/1569715_00.png.png",
+        "weekly_orders": 9
+      },
+      "image_url": "https://images.stockx.com/images/Nike-Moon-Shoe-SP-Jacquemus-Alabaster-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1759525738",
+      "recommendation": {
+        "sale_price_brl": 5999.99,
+        "national_cost_brl": 6500.0,
+        "national_margin_pct": -0.0833351388918982,
+        "stockx_min_usd_product_level": 410,
+        "stockx_avg_usd_product_level": 699.3888888888889,
+        "stockx_landed_min_brl": 5260.089051000001,
+        "stockx_landed_avg_brl": 8244.817141050002,
+        "import_margin_pct_min_signal": 0.1233170303617171,
+        "verdict": "likely_skip_or_watchlist_unless_exact_size_price_better",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    },
+    {
+      "title": "Sourcing — Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo — Tam 37 — HV8547-700-4",
+      "page_id": "36027dc9-e033-81d7-ac1d-cf165f293ae7",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-Nike-Moon-Shoe-SP-Jacquemus-Alabaster-Amarelo-Tam-37-HV8547-700-4-36027dc9e03381d7ac1dcf165f293ae7",
+      "priority": "P2",
+      "model": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "size_lk": "37",
+      "sku_lk": "HV8547-700-4",
+      "style_sku": "HV8547-700",
+      "kicks_stockx": {
+        "id": "5466799d-8f64-4db5-9881-9f6fea4df0a2",
+        "title": "Nike Moon Shoe SP Jacquemus Alabaster (Women's)",
+        "sku": "HV8547-700",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fnike-moon-shoe-sp-jacquemus-alabaster",
+        "image": "https://images.stockx.com/images/Nike-Moon-Shoe-SP-Jacquemus-Alabaster-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1759525738",
+        "min_price": 410,
+        "avg_price": 699.3888888888889,
+        "max_price": 1200,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1569715,
+        "name": "Jacquemus x Nike Wmns Moon Shoe SP 'Alabaster'",
+        "sku": "HV8547 700",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2Fjacquemus-x-wmns-jacumoon-alabaster-hv8547-700",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/113/470/301/original/1569715_00.png.png",
+        "weekly_orders": 9
+      },
+      "image_url": "https://images.stockx.com/images/Nike-Moon-Shoe-SP-Jacquemus-Alabaster-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1759525738",
+      "recommendation": {
+        "sale_price_brl": 4999.99,
+        "national_cost_brl": 6500.0,
+        "national_margin_pct": -0.30000260000520007,
+        "stockx_min_usd_product_level": 410,
+        "stockx_avg_usd_product_level": 699.3888888888889,
+        "stockx_landed_min_brl": 5260.089051000001,
+        "stockx_landed_avg_brl": 8244.817141050002,
+        "import_margin_pct_min_signal": -0.05201991423982869,
+        "verdict": "likely_skip_or_watchlist_unless_exact_size_price_better",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    },
+    {
+      "title": "Sourcing — Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo — Tam 41.5 — 1183C102.751",
+      "page_id": "36027dc9-e033-815a-9d91-d43d26514ecb",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-Onitsuka-Tiger-Mexico-66-Kill-Bill-Amarelo-Tam-41-5-1183C102-751-36027dc9e033815a9d91d43d26514ecb",
+      "priority": "P2",
+      "model": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+      "size_lk": "41.5",
+      "sku_lk": "1183C102.751",
+      "style_sku": "1183C102.751",
+      "kicks_stockx": {
+        "id": "4a4f645a-5b17-498e-9bbc-187a146f6be7",
+        "title": "Onitsuka Tiger Mexico 66 Kill Bill",
+        "sku": "DL408-0490/1183C102-751",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fonitsuka-tiger-mexico-66-kill-bill-2022",
+        "image": "https://images.stockx.com/images/Onitsuka-Tiger-Mexico-66-Kill-Bill-2022-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1738193358",
+        "min_price": 142,
+        "avg_price": 183.45,
+        "max_price": 304,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1167933,
+        "name": "Onitsuka Tiger Mexico 66 'Kill Bill' 2023",
+        "sku": "1183C102 751",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2Fmexico-66-kill-bill-2023-1183c102-751",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/097/810/771/original/1167933_00.png.png",
+        "weekly_orders": 228
+      },
+      "image_url": "https://images.stockx.com/images/Onitsuka-Tiger-Mexico-66-Kill-Bill-2022-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1738193358",
+      "recommendation": {
+        "sale_price_brl": 2399.99,
+        "national_cost_brl": 1890.0,
+        "national_margin_pct": 0.212496718736328,
+        "stockx_min_usd_product_level": 142,
+        "stockx_avg_usd_product_level": 183.45,
+        "stockx_landed_min_brl": 2495.9638242000005,
+        "stockx_landed_avg_brl": 2923.4749833450005,
+        "import_margin_pct_min_signal": -0.039989260038583815,
+        "verdict": "national_borderline_human_compare_logistics",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    },
+    {
+      "title": "Sourcing — Tênis Adidas Samba OG Crochet Pack Sand Strata Bege — Tam 35 — JR9446-2",
+      "page_id": "36027dc9-e033-81c2-8bf4-c5fc04218d6a",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-Adidas-Samba-OG-Crochet-Pack-Sand-Strata-Bege-Tam-35-JR9446-2-36027dc9e03381c28bf4c5fc04218d6a",
+      "priority": "P2",
+      "model": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "size_lk": "35",
+      "sku_lk": "JR9446-2",
+      "style_sku": "JR9446",
+      "kicks_stockx": {
+        "id": "cf8e2246-f1ae-477d-a966-d4a7af20a8ca",
+        "title": "adidas Samba OG Crochet Pack Sand Strata (Women's)",
+        "sku": "JR9446",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fadidas-samba-og-crochet-pack-sand-strata-womens",
+        "image": "https://images.stockx.com/images/adidas-Samba-OG-Crochet-Pack-Sand-Strata-Womens-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1751922766",
+        "min_price": 83,
+        "avg_price": 118.27777777777777,
+        "max_price": 168,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1636237,
+        "name": "adidas Wmns Samba OG 'Knit Pack - Sand Strata'",
+        "sku": "JR9446",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2Fwmns-samba-og-knit-pack-sand-strata-jr9446",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/111/422/611/original/1636237_00.png.png",
+        "weekly_orders": 11
+      },
+      "image_url": "https://images.stockx.com/images/adidas-Samba-OG-Crochet-Pack-Sand-Strata-Womens-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1751922766",
+      "recommendation": {
+        "sale_price_brl": 2199.99,
+        "national_cost_brl": 1299.99,
+        "national_margin_pct": 0.4090927686034936,
+        "stockx_min_usd_product_level": 83,
+        "stockx_avg_usd_product_level": 118.27777777777777,
+        "stockx_landed_min_brl": 1887.4437183000002,
+        "stockx_landed_avg_brl": 2251.29519405,
+        "import_margin_pct_min_signal": 0.14206713744153363,
+        "verdict": "national_route_preferred_if_available",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    },
+    {
+      "title": "Sourcing — Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo — Tam 36 — HV8547-700-3",
+      "page_id": "36027dc9-e033-81fc-b001-f6fdd137a1af",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-Nike-Moon-Shoe-SP-Jacquemus-Alabaster-Amarelo-Tam-36-HV8547-700-3-36027dc9e03381fcb001f6fdd137a1af",
+      "priority": "P2",
+      "model": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "size_lk": "36",
+      "sku_lk": "HV8547-700-3",
+      "style_sku": "HV8547-700",
+      "kicks_stockx": {
+        "id": "5466799d-8f64-4db5-9881-9f6fea4df0a2",
+        "title": "Nike Moon Shoe SP Jacquemus Alabaster (Women's)",
+        "sku": "HV8547-700",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fnike-moon-shoe-sp-jacquemus-alabaster",
+        "image": "https://images.stockx.com/images/Nike-Moon-Shoe-SP-Jacquemus-Alabaster-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1759525738",
+        "min_price": 410,
+        "avg_price": 699.3888888888889,
+        "max_price": 1200,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1569715,
+        "name": "Jacquemus x Nike Wmns Moon Shoe SP 'Alabaster'",
+        "sku": "HV8547 700",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2Fjacquemus-x-wmns-jacumoon-alabaster-hv8547-700",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/113/470/301/original/1569715_00.png.png",
+        "weekly_orders": 9
+      },
+      "image_url": "https://images.stockx.com/images/Nike-Moon-Shoe-SP-Jacquemus-Alabaster-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1759525738",
+      "recommendation": {
+        "sale_price_brl": 5333.32,
+        "national_cost_brl": null,
+        "national_margin_pct": null,
+        "stockx_min_usd_product_level": 410,
+        "stockx_avg_usd_product_level": 699.3888888888889,
+        "stockx_landed_min_brl": 5260.089051000001,
+        "stockx_landed_avg_brl": 8244.817141050002,
+        "import_margin_pct_min_signal": 0.013730837264592951,
+        "verdict": "likely_skip_or_watchlist_unless_exact_size_price_better",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    },
+    {
+      "title": "Sourcing — Tênis New Balance 204L Arid Timberwolf Bege — Tam 38 — U204LMMC-5",
+      "page_id": "36027dc9-e033-81fd-bdda-e164276c8065",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-New-Balance-204L-Arid-Timberwolf-Bege-Tam-38-U204LMMC-5-36027dc9e03381fdbddae164276c8065",
+      "priority": "P2",
+      "model": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "size_lk": "38",
+      "sku_lk": "U204LMMC-5",
+      "style_sku": "U204LMMC",
+      "kicks_stockx": {
+        "id": "7315ad9b-ae0c-44cd-a6ba-57fa50a12336",
+        "title": "New Balance 204L Timberwolf",
+        "sku": "U204LMMC",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fnew-balance-204l-timberwolf",
+        "image": "https://images.stockx.com/images/New-Balance-204L-Timberwolf-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1755810545",
+        "min_price": 73,
+        "avg_price": 114.94736842105263,
+        "max_price": 220,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1636781,
+        "name": "New Balance 204L 'Timberwolf Linen'",
+        "sku": "U204LMMC",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2F204l-timberwolf-linen-u204lmmc",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/111/485/005/original/U204LMMC.png",
+        "weekly_orders": 0
+      },
+      "image_url": "https://images.stockx.com/images/New-Balance-204L-Timberwolf-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1755810545",
+      "recommendation": {
+        "sale_price_brl": 2799.99,
+        "national_cost_brl": 1999.9,
+        "national_margin_pct": 0.2857474490980324,
+        "stockx_min_usd_product_level": 73,
+        "stockx_avg_usd_product_level": 114.94736842105263,
+        "stockx_landed_min_brl": 1784.3047173000002,
+        "stockx_landed_avg_brl": 2216.945684652632,
+        "import_margin_pct_min_signal": 0.36274603934299754,
+        "verdict": "import_signal_good_but_verify_exact_size",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    },
+    {
+      "title": "Sourcing — Tênis New Balance 204L Arid Timberwolf Bege — Tam 40 — U204LMMC-7",
+      "page_id": "36027dc9-e033-81c6-8b73-e983dae0d7ea",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-New-Balance-204L-Arid-Timberwolf-Bege-Tam-40-U204LMMC-7-36027dc9e03381c68b73e983dae0d7ea",
+      "priority": "P2",
+      "model": "Tênis New Balance 204L Arid Timberwolf Bege",
+      "size_lk": "40",
+      "sku_lk": "U204LMMC-7",
+      "style_sku": "U204LMMC",
+      "kicks_stockx": {
+        "id": "7315ad9b-ae0c-44cd-a6ba-57fa50a12336",
+        "title": "New Balance 204L Timberwolf",
+        "sku": "U204LMMC",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fnew-balance-204l-timberwolf",
+        "image": "https://images.stockx.com/images/New-Balance-204L-Timberwolf-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1755810545",
+        "min_price": 73,
+        "avg_price": 114.94736842105263,
+        "max_price": 220,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1636781,
+        "name": "New Balance 204L 'Timberwolf Linen'",
+        "sku": "U204LMMC",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2F204l-timberwolf-linen-u204lmmc",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/111/485/005/original/U204LMMC.png",
+        "weekly_orders": 0
+      },
+      "image_url": "https://images.stockx.com/images/New-Balance-204L-Timberwolf-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1755810545",
+      "recommendation": {
+        "sale_price_brl": 2799.99,
+        "national_cost_brl": 2380.0,
+        "national_margin_pct": 0.14999696427487236,
+        "stockx_min_usd_product_level": 73,
+        "stockx_avg_usd_product_level": 114.94736842105263,
+        "stockx_landed_min_brl": 1784.3047173000002,
+        "stockx_landed_avg_brl": 2216.945684652632,
+        "import_margin_pct_min_signal": 0.36274603934299754,
+        "verdict": "import_signal_good_but_verify_exact_size",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    },
+    {
+      "title": "Sourcing — Tênis Onitsuka Tiger Mexico 66 White Black Branco — Tam 36 — 1183A201-126-3",
+      "page_id": "36027dc9-e033-8171-9a11-c33a182b4a48",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-Onitsuka-Tiger-Mexico-66-White-Black-Branco-Tam-36-1183A201-126-3-36027dc9e03381719a11c33a182b4a48",
+      "priority": "P2",
+      "model": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "size_lk": "36",
+      "sku_lk": "1183A201-126-3",
+      "style_sku": "1183A201-126",
+      "kicks_stockx": {
+        "id": "816dff0d-23ae-4f98-9812-669f420d46a4",
+        "title": "Onitsuka Tiger Mexico 66 White Black",
+        "sku": "1183A201-126",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fonitsuka-tiger-mexico-66-sd-white-black",
+        "image": "https://images.stockx.com/images/Onitsuka-Tiger-Mexico-66-SD-White-Black-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1762290768",
+        "min_price": 127,
+        "avg_price": 183.68421052631578,
+        "max_price": 220,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1502503,
+        "name": "Onitsuka Tiger Mexico 66 'White Black Suede Toe'",
+        "sku": "1183A201 126",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2Fmexico-66-white-black-suede-toe-1183a201-126",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/108/854/828/original/1502503_00.png.png",
+        "weekly_orders": 11
+      },
+      "image_url": "https://images.stockx.com/images/Onitsuka-Tiger-Mexico-66-SD-White-Black-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1762290768",
+      "recommendation": {
+        "sale_price_brl": 2399.99,
+        "national_cost_brl": 1999.99,
+        "national_margin_pct": 0.16666736111400457,
+        "stockx_min_usd_product_level": 127,
+        "stockx_avg_usd_product_level": 183.68421052631578,
+        "stockx_landed_min_brl": 2341.2553227000003,
+        "stockx_landed_avg_brl": 2925.89060731579,
+        "import_margin_pct_min_signal": 0.024472884178683863,
+        "verdict": "likely_skip_or_watchlist_unless_exact_size_price_better",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    },
+    {
+      "title": "Sourcing — Tênis Onitsuka Tiger Mexico 66 White Black Branco — Tam 40 — 1183A201-126-7",
+      "page_id": "36027dc9-e033-81fc-bd2c-fe91afe856e7",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-Onitsuka-Tiger-Mexico-66-White-Black-Branco-Tam-40-1183A201-126-7-36027dc9e03381fcbd2cfe91afe856e7",
+      "priority": "P2",
+      "model": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "size_lk": "40",
+      "sku_lk": "1183A201-126-7",
+      "style_sku": "1183A201-126",
+      "kicks_stockx": {
+        "id": "816dff0d-23ae-4f98-9812-669f420d46a4",
+        "title": "Onitsuka Tiger Mexico 66 White Black",
+        "sku": "1183A201-126",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fonitsuka-tiger-mexico-66-sd-white-black",
+        "image": "https://images.stockx.com/images/Onitsuka-Tiger-Mexico-66-SD-White-Black-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1762290768",
+        "min_price": 127,
+        "avg_price": 183.68421052631578,
+        "max_price": 220,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1502503,
+        "name": "Onitsuka Tiger Mexico 66 'White Black Suede Toe'",
+        "sku": "1183A201 126",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2Fmexico-66-white-black-suede-toe-1183a201-126",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/108/854/828/original/1502503_00.png.png",
+        "weekly_orders": 11
+      },
+      "image_url": "https://images.stockx.com/images/Onitsuka-Tiger-Mexico-66-SD-White-Black-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1762290768",
+      "recommendation": {
+        "sale_price_brl": 2399.99,
+        "national_cost_brl": 2389.7,
+        "national_margin_pct": 0.0042875178646577545,
+        "stockx_min_usd_product_level": 127,
+        "stockx_avg_usd_product_level": 183.68421052631578,
+        "stockx_landed_min_brl": 2341.2553227000003,
+        "stockx_landed_avg_brl": 2925.89060731579,
+        "import_margin_pct_min_signal": 0.024472884178683863,
+        "verdict": "likely_skip_or_watchlist_unless_exact_size_price_better",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    },
+    {
+      "title": "Sourcing — Tênis Adidas Samba OG Crochet Pack Sand Strata Bege — Tam 36 — JR9446-3",
+      "page_id": "36027dc9-e033-817f-8c4d-e25549ed69f7",
+      "page_url": "https://www.notion.so/Sourcing-T-nis-Adidas-Samba-OG-Crochet-Pack-Sand-Strata-Bege-Tam-36-JR9446-3-36027dc9e033817f8c4de25549ed69f7",
+      "priority": "P2",
+      "model": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+      "size_lk": "36",
+      "sku_lk": "JR9446-3",
+      "style_sku": "JR9446",
+      "kicks_stockx": {
+        "id": "cf8e2246-f1ae-477d-a966-d4a7af20a8ca",
+        "title": "adidas Samba OG Crochet Pack Sand Strata (Women's)",
+        "sku": "JR9446",
+        "link": "https://stockx.pvxt.net/c/4722526/1023711/9060?u=https%3A%2F%2Fstockx.com%2Fadidas-samba-og-crochet-pack-sand-strata-womens",
+        "image": "https://images.stockx.com/images/adidas-Samba-OG-Crochet-Pack-Sand-Strata-Womens-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1751922766",
+        "min_price": 83,
+        "avg_price": 118.27777777777777,
+        "max_price": 168,
+        "weekly_orders": 0
+      },
+      "kicks_goat": {
+        "id": 1636237,
+        "name": "adidas Wmns Samba OG 'Knit Pack - Sand Strata'",
+        "sku": "JR9446",
+        "link": "https://goat.sjv.io/c/4722526/1615486/12522?u=https%3A%2F%2Fgoat.com%2Fsneakers%2Fwmns-samba-og-knit-pack-sand-strata-jr9446",
+        "image_url": "https://image.goat.com/1000/attachments/product_template_pictures/images/111/422/611/original/1636237_00.png.png",
+        "weekly_orders": 11
+      },
+      "image_url": "https://images.stockx.com/images/adidas-Samba-OG-Crochet-Pack-Sand-Strata-Womens-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1751922766",
+      "recommendation": {
+        "sale_price_brl": 2199.99,
+        "national_cost_brl": 899.0,
+        "national_margin_pct": 0.5913617789171769,
+        "stockx_min_usd_product_level": 83,
+        "stockx_avg_usd_product_level": 118.27777777777777,
+        "stockx_landed_min_brl": 1887.4437183000002,
+        "stockx_landed_avg_brl": 2251.29519405,
+        "import_margin_pct_min_signal": 0.14206713744153363,
+        "verdict": "national_route_preferred_if_available",
+        "limitation": "KicksDev StockX price is product-level market signal; exact size ask still requires authenticated/manual lookup before purchase."
+      },
+      "notion_update": {
+        "cover_error": null,
+        "append_error": null,
+        "marker_preexisted": false
+      }
+    }
+  ]
+}

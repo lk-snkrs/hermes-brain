@@ -1,0 +1,182 @@
+{
+  "generated_at": "2026-05-15T09:43:30.432123+00:00",
+  "artifact_status": "template_and_dry_run_only",
+  "source_labels": [
+    "fact_shopify_local_snapshot",
+    "fact_tiny_stock_partial",
+    "derived_reconciliation"
+  ],
+  "local_db": "/opt/data/hermes_bruno_ingest/local_sql/lk_os_phase5.sqlite",
+  "latest_shopify_order_timestamp_in_local_snapshot": "2026-04-16T20:13:58+00:00",
+  "latest_brt_day_in_local_snapshot": "2026-04-16",
+  "daily_rows": [
+    {
+      "brt_date": "2026-04-16",
+      "orders": 6,
+      "revenue": 11209.97,
+      "pos_orders": 1,
+      "online_orders": 5
+    },
+    {
+      "brt_date": "2026-04-15",
+      "orders": 11,
+      "revenue": 34985.84,
+      "pos_orders": 4,
+      "online_orders": 7
+    },
+    {
+      "brt_date": "2026-04-14",
+      "orders": 17,
+      "revenue": 59664.87,
+      "pos_orders": 6,
+      "online_orders": 11
+    },
+    {
+      "brt_date": "2026-04-13",
+      "orders": 17,
+      "revenue": 58641.91,
+      "pos_orders": 5,
+      "online_orders": 12
+    },
+    {
+      "brt_date": "2026-04-12",
+      "orders": 9,
+      "revenue": 24542.46,
+      "pos_orders": 0,
+      "online_orders": 9
+    },
+    {
+      "brt_date": "2026-04-11",
+      "orders": 18,
+      "revenue": 41955.28,
+      "pos_orders": 4,
+      "online_orders": 14
+    },
+    {
+      "brt_date": "2026-04-10",
+      "orders": 15,
+      "revenue": 56589.91,
+      "pos_orders": 8,
+      "online_orders": 7
+    },
+    {
+      "brt_date": "2026-04-09",
+      "orders": 18,
+      "revenue": 67699.78,
+      "pos_orders": 10,
+      "online_orders": 8
+    },
+    {
+      "brt_date": "2026-04-08",
+      "orders": 14,
+      "revenue": 68441.92,
+      "pos_orders": 5,
+      "online_orders": 9
+    },
+    {
+      "brt_date": "2026-04-07",
+      "orders": 11,
+      "revenue": 40899.92,
+      "pos_orders": 4,
+      "online_orders": 7
+    },
+    {
+      "brt_date": "2026-04-06",
+      "orders": 14,
+      "revenue": 50161.85,
+      "pos_orders": 10,
+      "online_orders": 4
+    },
+    {
+      "brt_date": "2026-04-05",
+      "orders": 5,
+      "revenue": 13814.61,
+      "pos_orders": 0,
+      "online_orders": 5
+    },
+    {
+      "brt_date": "2026-04-04",
+      "orders": 7,
+      "revenue": 17729.95,
+      "pos_orders": 0,
+      "online_orders": 7
+    },
+    {
+      "brt_date": "2026-04-03",
+      "orders": 11,
+      "revenue": 28736.12,
+      "pos_orders": 0,
+      "online_orders": 11
+    }
+  ],
+  "top_items_latest_day": [
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Peacoat Navy Red Bege",
+      "variant_title": "34",
+      "sku": "1183A872.101-1",
+      "qty": 1,
+      "revenue": 2499.99
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Gold White Dourado",
+      "variant_title": "38",
+      "sku": "1183B566.201-5",
+      "qty": 1,
+      "revenue": 2399.99
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "variant_title": "38",
+      "sku": "1183C123.252-5",
+      "qty": 1,
+      "revenue": 2199.99
+    },
+    {
+      "title": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+      "variant_title": "40",
+      "sku": "1183C123.252-7",
+      "qty": 1,
+      "revenue": 2199.99
+    },
+    {
+      "title": "Tênis Adidas Samba Disney 101 Dalmatians Penny Branco",
+      "variant_title": "35",
+      "sku": "KJ5990-2",
+      "qty": 1,
+      "revenue": 1999.99
+    },
+    {
+      "title": "Structured Classic Ball Cap Script Lululemon Verde Musgo",
+      "variant_title": "",
+      "sku": "",
+      "qty": 1,
+      "revenue": 599.99
+    }
+  ],
+  "tiny_snapshot": {
+    "run_id": "tiny_stock_20260515T092206Z",
+    "status": "partial_api_rate_limited",
+    "stock_checked_count": 314,
+    "products_listed_count": 17605
+  },
+  "commercial_state_counts": {
+    "blocked_tiny_not_mapped": 10453,
+    "monitor_non_active_shopify_product": 1431,
+    "blocked_missing_shopify_sku": 1388,
+    "blocked_data_quality": 1032,
+    "ready_zero_stock_sourcing_candidate": 152,
+    "ready_available_tiny": 10
+  },
+  "not_performed": [
+    "cron_creation",
+    "telegram_scheduled_send",
+    "shopify_write",
+    "tiny_write",
+    "merchant_write",
+    "klaviyo_send",
+    "whatsapp_send",
+    "supplier_contact",
+    "purchase"
+  ],
+  "recommended_use": "Pulso Comercial 16h should run from live/fresh Shopify + GA4 + Tiny partial state when available; this artifact only defines format and dry-runs from local snapshot."
+}

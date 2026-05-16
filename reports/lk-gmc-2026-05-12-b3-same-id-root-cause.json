@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-05-12T15:29:54.536080+00:00",
+  "status": "gmc_b3_same_id_root_cause_completed_readonly",
+  "source_labels": [
+    "fact_shopify",
+    "fact_merchant_center",
+    "fact_shopify_local_snapshot",
+    "derived_reconciliation"
+  ],
+  "local_data_spine": {
+    "db_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_os_phase5.sqlite",
+    "products_count": 2241,
+    "products_max_updated": "2026-04-17T00:00:33.618+00:00",
+    "variants_count": 14466,
+    "variants_max_updated": null,
+    "exact_live_shopify_sku_presence_for_854": {
+      "local_sku_hit=False|local_active_hit=False": 854
+    }
+  },
+  "shopify_live_probe": {
+    "rows": 854,
+    "state_counts": {
+      "shopify_live_active_variant_with_sku_review_candidate": 854
+    }
+  },
+  "b2_preview": {
+    "rows": 854,
+    "same_old_new_product_id": 854,
+    "different_old_new_product_id": 0,
+    "preview_status_counts": {
+      "skipped_target_already_exists": 854
+    }
+  },
+  "root_cause": [
+    "Original ranker classified online rows as B when weak evidence existed (item_group/product or GTIN) but exact SKU was absent from the local Data Spine snapshot.",
+    "For these 854 rows, Shopify live proved the link variant exists, is active, and has the same SKU/offerId as the Merchant product ID.",
+    "The B2 preview interpreted target_already_exists without first asserting old_product_id != target_product_id.",
+    "Because old_product_id == target_product_id for all 854, B3 delete-old-only was an invalid operation and was correctly rolled back."
+  ],
+  "corrective_guards": [
+    "Block any delete-old-only row where old_product_id == correct_existing_product_id.",
+    "Block any B/B2/B3 executable preview where proposed old/new IDs are equal; classify as valid_or_same_id_noop instead.",
+    "Treat weak product/GTIN match plus live Shopify same-SKU as no-op/valid, not as identifier mismatch.",
+    "Only execute identifier fix when exact old ID and exact new ID are different and both rollback + presence checks are satisfied."
+  ],
+  "not_touched": [
+    "merchant_product_write_or_delete",
+    "shopify_write",
+    "feed",
+    "database_write",
+    "campaign_or_external_send",
+    "local_channel",
+    "pos_inventory"
+  ]
+}

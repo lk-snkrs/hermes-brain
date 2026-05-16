@@ -1,0 +1,10 @@
+secrets: FAIL=0 WARN=0
+links: FAIL=0 WARN=0
+required_files: FAIL=0 WARN=0
+agent_files: FAIL=0 WARN=0
+area_maps: FAIL=0 WARN=0
+routines_index: FAIL=0 WARN=1
+skill_references: FAIL=0 WARN=0
+
+Issues:
+WARN	routine_not_indexed	areas/lk/sub-areas/trafego-pago/rotinas/fhits-lk-maio-pdf-audio-intake-2026-05-15.md	missing from empresa/rotinas/_index.md

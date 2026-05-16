@@ -1,0 +1,92 @@
+# LK GMC residual triage current — 2026-05-14
+
+Gerado em: `2026-05-14T20:34:11.733212+00:00`
+
+## Summary
+- `price_updated`: 924
+- `strikethrough_price_updated`: 234
+- `landing_page_error`: 3
+
+Produtos com alvo: 311
+
+## Samples
+- `online:pt:BR:01424-002-2` — price_updated, price_updated, price_updated — Tênis Born Raised x Nike SB Dunk Low One Block At A Time Azul
+- `online:pt:BR:205759 610-9` — price_updated, price_updated, price_updated — Crocs Classic Clog x The Cars Lightning McQueen Vermelho
+- `online:pt:BR:205759610-9` — price_updated, price_updated, price_updated — Crocs Classic Clog x The Cars Lightning McQueen Vermelho
+- `online:pt:BR:553558030` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low Light Smoke Grey Cinza
+- `online:pt:BR:553558030-4` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 1 Low Light Smoke Grey Cinza
+- `online:pt:BR:553558030-6` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 1 Low Light Smoke Grey Cinza
+- `online:pt:BR:553558053-1` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low Vintage Grey Cinza
+- `online:pt:BR:553558053-40` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 1 Low Vintage Grey Cinza
+- `online:pt:BR:553558053-42` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low Vintage Grey Cinza
+- `online:pt:BR:553558140-7` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low Alternate Royal Toe Azul
+- `online:pt:BR:553558144-34-2` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 1 Low UNC 2021 Cinza
+- `online:pt:BR:555088108` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 High Stage Haze Cinza
+- `online:pt:BR:555088108-1` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 High Stage Haze Cinza
+- `online:pt:BR:555088108-12` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 High Stage Haze Cinza
+- `online:pt:BR:555088134-40` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 High University Blue (UNC) Azul
+- `online:pt:BR:555088134-44` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 High University Blue (UNC) Azul
+- `online:pt:BR:AQ9129-170-5` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 4 Retro Metallic Gold Branco
+- `online:pt:BR:AQ9129-170-6` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 4 Retro Metallic Gold Branco
+- `online:pt:BR:AQ9129-170-7` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 4 Retro Metallic Gold Branco
+- `online:pt:BR:AQ9129-170-8` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 4 Retro Metallic Gold Branco
+- `online:pt:BR:AQ9129-170-9` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 4 Retro Metallic Gold Branco
+- `online:pt:BR:B75571-10` — price_updated, price_updated, price_updated — Tênis Yeezy 700 V1 Wave Runner Cinza
+- `online:pt:BR:B75571-3` — price_updated, price_updated, price_updated — Tênis Yeezy 700 V1 Wave Runner Cinza
+- `online:pt:BR:B75571-4` — price_updated, price_updated, price_updated — Tênis Yeezy 700 V1 Wave Runner Cinza
+- `online:pt:BR:B75571-5` — price_updated, price_updated, price_updated — Tênis Yeezy 700 V1 Wave Runner Cinza
+- `online:pt:BR:B75571-7` — price_updated, price_updated, price_updated — Tênis Yeezy 700 V1 Wave Runner Cinza
+- `online:pt:BR:B75571-8` — price_updated, price_updated, price_updated — Tênis Yeezy 700 V1 Wave Runner Cinza
+- `online:pt:BR:B75571-9` — price_updated, price_updated, price_updated — Tênis Yeezy 700 V1 Wave Runner Cinza
+- `online:pt:BR:BQ6472105-1` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza
+- `online:pt:BR:BQ6472105-2` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza
+- `online:pt:BR:BQ6472105-6` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 1 Mid Wolf Grey Cinza
+- `online:pt:BR:CDGP1-1` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Polo Comme des Garçons PLAY Black Emblem Black Preto
+- `online:pt:BR:CDGP1-2` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Polo Comme des Garçons PLAY Black Emblem Black Preto
+- `online:pt:BR:CJ5378700-36` — price_updated, price_updated, price_updated — Tênis Grateful Dead x Nike SB Dunk Low Yellow Bear Amarelo
+- `online:pt:BR:CJ5378700-37` — price_updated, price_updated, price_updated — Tênis Grateful Dead x Nike SB Dunk Low Yellow Bear Amarelo
+- `online:pt:BR:CJ5378700-40` — price_updated, price_updated, price_updated — Tênis Grateful Dead x Nike SB Dunk Low Yellow Bear Amarelo
+- `online:pt:BR:CP9652-1` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Yeezy Boost 350 v2 Black Red (Bred) Preto
+- `online:pt:BR:CP9652-10` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Yeezy Boost 350 v2 Black Red (Bred) Preto
+- `online:pt:BR:CP9652-6` — price_updated, price_updated, price_updated — Tênis Yeezy Boost 350 v2 Black Red (Bred) Preto
+- `online:pt:BR:CP9652-7` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Yeezy Boost 350 v2 Black Red (Bred) Preto
+- `online:pt:BR:CP9652-8` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Yeezy Boost 350 v2 Black Red (Bred) Preto
+- `online:pt:BR:CP9652-9` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Yeezy Boost 350 v2 Black Red (Bred) Preto
+- `online:pt:BR:CT8532001-2` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 3 Retro Black Cat Preto
+- `online:pt:BR:CT8532001-3` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 3 Retro Black Cat Preto
+- `online:pt:BR:CT8532001-4` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 3 Retro Black Cat Preto
+- `online:pt:BR:CT8532001-5` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 3 Retro Black Cat Preto
+- `online:pt:BR:CU1726100` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Dunk Low Kentucky Azul
+- `online:pt:BR:CU1726100-36` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Dunk Low Kentucky Azul
+- `online:pt:BR:CU1726100-42` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Dunk Low Kentucky Azul
+- `online:pt:BR:CU1726100-43` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Dunk Low Kentucky Azul
+- `online:pt:BR:CU3244100-41` — price_updated, price_updated, price_updated — Tênis Ben & Jerry's x Dunk Low SB Chunky Dunky Colorido
+- `online:pt:BR:CZ0775801-5` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 1 Low Starfish Laranja
+- `online:pt:BR:CZ0775801-8` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 1 Low Starfish Laranja
+- `online:pt:BR:CZ0775801-9` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 1 Low Starfish Laranja
+- `online:pt:BR:CZ2239600-3` — price_updated, price_updated, price_updated — Tênis Nike SB Dunk Low What The P-Rod Colorido
+- `online:pt:BR:CZ5127001` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Medicom Toy x Nike SB Dunk Be@rbrick Preto
+- `online:pt:BR:CZ5127001-1` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Medicom Toy x Nike SB Dunk Be@rbrick Preto
+- `online:pt:BR:DC0774-161-2` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low Bordeaux Roxo
+- `online:pt:BR:DC0774-161-4` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low Bordeaux Roxo
+- `online:pt:BR:DC0774-161-5` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low Bordeaux Roxo
+- `online:pt:BR:DC0774-161-6` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low Bordeaux Roxo
+- `online:pt:BR:DC0774042` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low Canyon Rust Colorido
+- `online:pt:BR:DC0774141-3` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low Aluminium Azul
+- `online:pt:BR:DC0774141-37` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low Aluminium Azul
+- `online:pt:BR:DC0774141-8` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Air Jordan 1 Low Aluminium Azul
+- `online:pt:BR:DC6991200-3` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low SE Mocha Marrom
+- `online:pt:BR:DC6991200-4` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low SE Mocha Marrom
+- `online:pt:BR:DC6991200-43` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low SE Mocha Marrom
+- `online:pt:BR:DC6991200-44` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 Low SE Mocha Marrom
+- `online:pt:BR:DC9936100-34.5` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Sean Cliver x Dunk Low SB Holiday Special Azul
+- `online:pt:BR:DD9335641-1` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 High Atmosphere Rosa
+- `online:pt:BR:DD9335641-3` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 High Atmosphere Rosa
+- `online:pt:BR:DD9335641-35` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 High Atmosphere Rosa
+- `online:pt:BR:DD9335641-39` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 High Atmosphere Rosa
+- `online:pt:BR:DD9335641-4` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 High Atmosphere Rosa
+- `online:pt:BR:DD9335641-7` — price_updated, price_updated, price_updated — Tênis Nike Air Jordan 1 High Atmosphere Rosa
+- `online:pt:BR:DH4401101` — price_updated, price_updated, price_updated, strikethrough_price_updated, strikethrough_price_updated, strikethrough_price_updated — Tênis Nike Dunk Low Blue Paisley Azul
+- `online:pt:BR:DN1803300-37` — price_updated, price_updated, price_updated — Tênis Concepts x Air Max 1 SP Mellow Colorido
+- `online:pt:BR:DN1803300-44` — price_updated, price_updated, price_updated — Tênis Concepts x Air Max 1 SP Mellow Colorido
+- `online:pt:BR:DN1803300-45` — price_updated, price_updated, price_updated — Tênis Concepts x Air Max 1 SP Mellow Colorido

@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-05-14T21:31:25.019670+00:00",
+  "productstatuses_read": 23277,
+  "target_issue_instances": {
+    "price_updated": 921,
+    "strikethrough_price_updated": 228,
+    "landing_page_error": 3
+  },
+  "target_product_counts": {
+    "price_updated": 307,
+    "strikethrough_price_updated": 76,
+    "landing_page_error": 1
+  },
+  "last_resume_status": "completed_with_verify_mismatches",
+  "last_resume_summary": {
+    "source_progress_lines": 182,
+    "source_execution_counts": {
+      "patched": 180,
+      "error": 2
+    },
+    "source_kind_counts": {
+      "price_saleprice_shopify_variant": 160,
+      "missing_attribute_completion": 17,
+      "image_link_repair": 5
+    },
+    "local_repairs": {
+      "local_content_upsert_patched": 2
+    },
+    "verify_counts": {
+      "read": 182
+    },
+    "verify_matches": 30,
+    "verify_mismatches": 152,
+    "productstatuses_read": 23277,
+    "target_issue_instances_after": {
+      "price_updated": 915,
+      "strikethrough_price_updated": 228,
+      "missing_item_attribute_for_product_type": 44,
+      "image_single_color": 8,
+      "image_link_broken": 3,
+      "landing_page_error": 3
+    },
+    "target_issue_instances_after_on_acted_ids": {
+      "price_updated": 450,
+      "strikethrough_price_updated": 48,
+      "image_single_color": 8,
+      "image_link_broken": 3
+    },
+    "acted_ids_with_target_issue_after": 157
+  },
+  "price_repair_status": "completed_with_review",
+  "price_repair_summary": {
+    "input_targets": 152,
+    "triage_counts": {
+      "needs_content_upsert_price": 62,
+      "no_action_current_matches_shopify": 43,
+      "needs_content_upsert_sale": 42,
+      "needs_content_upsert_clear_sale": 5
+    },
+    "actions_count": 109,
+    "execution_counts": {
+      "content_upserted": 109
+    },
+    "verify_matches": 0,
+    "verify_mismatches": 109
+  },
+  "not_performed": [
+    "Shopify write",
+    "Tiny write",
+    "feed fetch/upload",
+    "campaign/message/send",
+    "bulk reapply after non-persisting price writes"
+  ]
+}

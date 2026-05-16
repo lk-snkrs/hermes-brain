@@ -1,0 +1,1961 @@
+{
+  "generated_at": "2026-05-14T18:30:24.440607+00:00",
+  "approval": "Lucas: segue o 2 (all 34 local/LIA GTINs; pilot 5 then scale 29)",
+  "status": "completed_with_readback_mismatch",
+  "source_labels": [
+    "manual_approval",
+    "fact_merchant_center",
+    "market_signal_kicks_dev"
+  ],
+  "summary": {
+    "approved_records": 34,
+    "pilot_records": 5,
+    "scaled_records": 29,
+    "execution_counts": {
+      "skipped_already_matching": 5,
+      "patched": 29
+    },
+    "pilot_verify_counts": {
+      "match": 5
+    },
+    "scale_verify_counts": {
+      "match": 27,
+      "mismatch": 2
+    },
+    "final_target_issue_counts": {
+      "reserved_gtin": 4
+    },
+    "final_rows_with_target_issue": 4
+  },
+  "rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-lia-gtin-rollback-20260514T182410Z.json",
+  "progress_jsonl_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-lia-gtin-progress-20260514T182410Z.jsonl",
+  "execution_results": [
+    {
+      "batch": "pilot_5",
+      "product_id": "local:pt:BR:LIA_1203A655-100-7",
+      "execution_status": "skipped_already_matching",
+      "old_gtin": "197298534666",
+      "new_gtin": "197298534666"
+    },
+    {
+      "batch": "pilot_5",
+      "product_id": "local:pt:BR:LIA_43774078386380",
+      "execution_status": "skipped_already_matching",
+      "old_gtin": "0194500868076",
+      "new_gtin": "0194500868076"
+    },
+    {
+      "batch": "pilot_5",
+      "product_id": "local:pt:BR:LIA_553558612-6",
+      "execution_status": "skipped_already_matching",
+      "old_gtin": "0195243825982",
+      "new_gtin": "0195243825982"
+    },
+    {
+      "batch": "pilot_5",
+      "product_id": "local:pt:BR:LIA_553558612-7",
+      "execution_status": "skipped_already_matching",
+      "old_gtin": "0195243825982",
+      "new_gtin": "0195243825982"
+    },
+    {
+      "batch": "pilot_5",
+      "product_id": "local:pt:BR:LIA_555088108-5",
+      "execution_status": "skipped_already_matching",
+      "old_gtin": "0195869260877",
+      "new_gtin": "0195869260877"
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_AQ3692-004-3",
+      "execution_status": "patched",
+      "old_gtin": "2409110001651",
+      "new_gtin": "1000005263508",
+      "response_id": "local:pt:BR:LIA_AQ3692-004-3",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_AQ3692-004-5",
+      "execution_status": "patched",
+      "old_gtin": "2409110001910",
+      "new_gtin": "1000005263508",
+      "response_id": "local:pt:BR:LIA_AQ3692-004-5",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_CU9225100-4",
+      "execution_status": "patched",
+      "old_gtin": "2100000084050",
+      "new_gtin": "0194274091199",
+      "response_id": "local:pt:BR:LIA_CU9225100-4",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_CZ0790-102-4",
+      "execution_status": "patched",
+      "old_gtin": "3812919100071",
+      "new_gtin": "0197597025834",
+      "response_id": "local:pt:BR:LIA_CZ0790-102-4",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_DD1503601-39",
+      "execution_status": "patched",
+      "old_gtin": "2019990858933",
+      "new_gtin": "0196149208343",
+      "response_id": "local:pt:BR:LIA_DD1503601-39",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_DM7866200-6",
+      "execution_status": "patched",
+      "old_gtin": "2460004274872",
+      "new_gtin": "0197599883388",
+      "response_id": "local:pt:BR:LIA_DM7866200-6",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_DM7866200-7",
+      "execution_status": "patched",
+      "old_gtin": "2000281022133",
+      "new_gtin": "0197599883388",
+      "response_id": "local:pt:BR:LIA_DM7866200-7",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_FB9927200-5",
+      "execution_status": "patched",
+      "old_gtin": "2000261979150",
+      "new_gtin": "0196969273491",
+      "response_id": "local:pt:BR:LIA_FB9927200-5",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_FN0344-001-5",
+      "execution_status": "patched",
+      "old_gtin": "2105202499992",
+      "new_gtin": "197594654549",
+      "response_id": "local:pt:BR:LIA_FN0344-001-5",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_FN4193100-2",
+      "execution_status": "patched",
+      "old_gtin": "2100000461134",
+      "new_gtin": "0196969797140",
+      "response_id": "local:pt:BR:LIA_FN4193100-2",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_FN5880-001-1",
+      "execution_status": "patched",
+      "old_gtin": "2406050007552",
+      "new_gtin": "1804202401028",
+      "response_id": "local:pt:BR:LIA_FN5880-001-1",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_FN5880-001-3",
+      "execution_status": "patched",
+      "old_gtin": "2406130001807",
+      "new_gtin": "1804202401028",
+      "response_id": "local:pt:BR:LIA_FN5880-001-3",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_FN5880-001-4",
+      "execution_status": "patched",
+      "old_gtin": "1804202401028",
+      "new_gtin": "196977847226",
+      "response_id": "local:pt:BR:LIA_FN5880-001-4",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_FN5880-001-6",
+      "execution_status": "patched",
+      "old_gtin": "2406050010514",
+      "new_gtin": "1804202401028",
+      "response_id": "local:pt:BR:LIA_FN5880-001-6",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_FQ8138-001-6",
+      "execution_status": "patched",
+      "old_gtin": "2000282025171",
+      "new_gtin": "0197599875604",
+      "response_id": "local:pt:BR:LIA_FQ8138-001-6",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_FV5926-200-2",
+      "execution_status": "patched",
+      "old_gtin": "2100000529599",
+      "new_gtin": "0197597477664",
+      "response_id": "local:pt:BR:LIA_FV5926-200-2",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_FZ3129-200-6",
+      "execution_status": "patched",
+      "old_gtin": "2100000987184",
+      "new_gtin": "197593804945",
+      "response_id": "local:pt:BR:LIA_FZ3129-200-6",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_HF4334004-5",
+      "execution_status": "patched",
+      "old_gtin": "2000282033138",
+      "new_gtin": "197601364713",
+      "response_id": "local:pt:BR:LIA_HF4334004-5",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_HF4334004-6",
+      "execution_status": "patched",
+      "old_gtin": "2100000046799",
+      "new_gtin": "197601364713",
+      "response_id": "local:pt:BR:LIA_HF4334004-6",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_HF7743-001-5",
+      "execution_status": "patched",
+      "old_gtin": "2100000540198",
+      "new_gtin": "197599967118",
+      "response_id": "local:pt:BR:LIA_HF7743-001-5",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_HF7743-001-6",
+      "execution_status": "patched",
+      "old_gtin": "2408070001244",
+      "new_gtin": "197599967118",
+      "response_id": "local:pt:BR:LIA_HF7743-001-6",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_HJ3386-300-8",
+      "execution_status": "patched",
+      "old_gtin": "2100000545216",
+      "new_gtin": "1608202402036",
+      "response_id": "local:pt:BR:LIA_HJ3386-300-8",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_IE0875-5",
+      "execution_status": "patched",
+      "old_gtin": "2275637272504",
+      "new_gtin": "4067886856523",
+      "response_id": "local:pt:BR:LIA_IE0875-5",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_IH5459-3",
+      "execution_status": "patched",
+      "old_gtin": "2274015062409",
+      "new_gtin": "4067888905977",
+      "response_id": "local:pt:BR:LIA_IH5459-3",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_U574LGIL-8",
+      "execution_status": "patched",
+      "old_gtin": "2000275061162",
+      "new_gtin": "197966842949",
+      "response_id": "local:pt:BR:LIA_U574LGIL-8",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_U9060NRI-7",
+      "execution_status": "patched",
+      "old_gtin": "2000271351106",
+      "new_gtin": "197375727417",
+      "response_id": "local:pt:BR:LIA_U9060NRI-7",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_U9060ZGE-4",
+      "execution_status": "patched",
+      "old_gtin": "2114560032505",
+      "new_gtin": "197967973048",
+      "response_id": "local:pt:BR:LIA_U9060ZGE-4",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_U9060ZGE-9",
+      "execution_status": "patched",
+      "old_gtin": "2119228443006",
+      "new_gtin": "197967973048",
+      "response_id": "local:pt:BR:LIA_U9060ZGE-9",
+      "response_gtin": null
+    },
+    {
+      "batch": "scale_remaining_29",
+      "product_id": "local:pt:BR:LIA_cz0790-101-6",
+      "execution_status": "patched",
+      "old_gtin": "2460003259665",
+      "new_gtin": "0196608220794",
+      "response_id": "local:pt:BR:LIA_cz0790-101-6",
+      "response_gtin": null
+    }
+  ],
+  "pilot_verified_results": [
+    {
+      "product_id": "local:pt:BR:LIA_1203A655-100-7",
+      "verify_status": "read",
+      "expected_gtin": "197298534666",
+      "actual_gtin": "197298534666",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_1203A655-100-7",
+        "offerId": "LIA_1203A655-100-7",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Asics GT-2160 x Above the Clouds White Pure Silver Branco",
+        "link": "https://lksneakers.com.br/products/tenis-asics-gt-2160-x-above-the-clouds-white-pure-silver-branco?variant=45956932108510&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-asics-gt-2160-x-above-the-clouds-white-pure-silver-branco-lk-sneakers-1203a655100-183602.jpg?v=1728929749",
+        "gtin": "197298534666",
+        "mpn": "1203A655-100-7",
+        "itemGroupId": "8704793510110",
+        "brand": "Asics",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Branco",
+        "sizes": [
+          "41"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_43774078386380",
+      "verify_status": "read",
+      "expected_gtin": "0194500868076",
+      "actual_gtin": "0194500868076",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_43774078386380",
+        "offerId": "LIA_43774078386380",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike SB Dunk Low VX 1000 Camcorder Cinza",
+        "link": "https://lksneakers.com.br/products/nike-sb-dunk-low-vx-1000-camcorder?variant=45341347184862&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/products/tenis-nike-sb-dunk-low-vx-1000-camcorder-cinza-489532.jpg?v=1710449797",
+        "gtin": "0194500868076",
+        "mpn": "43774078386380",
+        "itemGroupId": "8250260881630",
+        "brand": "Nike",
+        "price": {
+          "value": "3999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Preto",
+        "sizes": [
+          "39"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_553558612-6",
+      "verify_status": "read",
+      "expected_gtin": "0195243825982",
+      "actual_gtin": "0195243825982",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_553558612-6",
+        "offerId": "LIA_553558612-6",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Jordan 1 Low Bred Toe Vermelho",
+        "link": "https://lksneakers.com.br/products/air-jordan-1-low-bred-toe-1?variant=44515718037726&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/products/tenis-air-jordan-1-low-bred-toe-vermelho-651088.jpg?v=1710449606",
+        "gtin": "0195243825982",
+        "mpn": "553558612-6",
+        "itemGroupId": "8202768810206",
+        "brand": "Jordan",
+        "price": {
+          "value": "1899.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Vermelho",
+        "sizes": [
+          "40"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_553558612-7",
+      "verify_status": "read",
+      "expected_gtin": "0195243825982",
+      "actual_gtin": "0195243825982",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_553558612-7",
+        "offerId": "LIA_553558612-7",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Jordan 1 Low Bred Toe Vermelho",
+        "link": "https://lksneakers.com.br/products/air-jordan-1-low-bred-toe-1?variant=44515718070494&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/products/tenis-air-jordan-1-low-bred-toe-vermelho-651088.jpg?v=1710449606",
+        "gtin": "0195243825982",
+        "mpn": "553558612-7",
+        "itemGroupId": "8202768810206",
+        "brand": "Jordan",
+        "price": {
+          "value": "1899.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Vermelho",
+        "sizes": [
+          "41"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_555088108-5",
+      "verify_status": "read",
+      "expected_gtin": "0195869260877",
+      "actual_gtin": "0195869260877",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_555088108-5",
+        "offerId": "LIA_555088108-5",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Jordan 1 High Stage Haze Cinza",
+        "link": "https://lksneakers.com.br/products/air-jordan-1-high-stage-haze?variant=44513881784542&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/products/tenis-air-jordan-1-high-stage-haze-cinza-237403.jpg?v=1710449504",
+        "gtin": "0195869260877",
+        "mpn": "555088108-5",
+        "itemGroupId": "8201597649118",
+        "brand": "Jordan",
+        "price": {
+          "value": "2999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Cinza",
+        "sizes": [
+          "42"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    }
+  ],
+  "scale_verified_results": [
+    {
+      "product_id": "local:pt:BR:LIA_AQ3692-004-3",
+      "verify_status": "read",
+      "expected_gtin": "1000005263508",
+      "actual_gtin": "1000005263508",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_AQ3692-004-3",
+        "offerId": "LIA_AQ3692-004-3",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Force 1 Low x G-Dragon Peaceminusone Para-Noise 3.0 Preto",
+        "link": "https://lksneakers.com.br/products/tenis-nike-air-force-1-low-x-g-dragon-peaceminusone-para-noise-3-0-preto?variant=45861986566366&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-air-force-1-low-x-g-dragon-peaceminusone-para-noise-30-preto-lk-sneakers-aq3692004-435763.jpg?v=1725697989",
+        "gtin": "1000005263508",
+        "mpn": "AQ3692-004-3",
+        "itemGroupId": "8667468103902",
+        "brand": "Nike",
+        "price": {
+          "value": "5999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Preto",
+        "sizes": [
+          "40"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_AQ3692-004-5",
+      "verify_status": "read",
+      "expected_gtin": "1000005263508",
+      "actual_gtin": "1000005263508",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_AQ3692-004-5",
+        "offerId": "LIA_AQ3692-004-5",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Force 1 Low x G-Dragon Peaceminusone Para-Noise 3.0 Preto",
+        "link": "https://lksneakers.com.br/products/tenis-nike-air-force-1-low-x-g-dragon-peaceminusone-para-noise-3-0-preto?variant=45861986631902&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-air-force-1-low-x-g-dragon-peaceminusone-para-noise-30-preto-lk-sneakers-aq3692004-435763.jpg?v=1725697989",
+        "gtin": "1000005263508",
+        "mpn": "AQ3692-004-5",
+        "itemGroupId": "8667468103902",
+        "brand": "Nike",
+        "price": {
+          "value": "5999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Preto",
+        "sizes": [
+          "42"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_CU9225100-4",
+      "verify_status": "read",
+      "expected_gtin": "0194274091199",
+      "actual_gtin": "0194274091199",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_CU9225100-4",
+        "offerId": "LIA_CU9225100-4",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Force 1 Low x Supreme White Branco",
+        "link": "https://lksneakers.com.br/products/supreme-x-nike-air-force-1-low-box-logo-white?variant=44265009742046&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-air-force-1-low-x-supreme-white-branco-lk-cu9225100-194274091274-699353.png?v=1741489954",
+        "gtin": "0194274091199",
+        "mpn": "CU9225100-4",
+        "itemGroupId": "8083996901598",
+        "brand": "Nike",
+        "price": {
+          "value": "2999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Branco",
+        "sizes": [
+          "39"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_CZ0790-102-4",
+      "verify_status": "read",
+      "expected_gtin": "0197597025834",
+      "actual_gtin": "0197597025834",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_CZ0790-102-4",
+        "offerId": "LIA_CZ0790-102-4",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Jordan 1 Low Og Mocha Marrom",
+        "link": "https://lksneakers.com.br/products/tenis-air-jordan-1-low-og-mocha-marrom?variant=45763786178782&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-air-jordan-1-low-og-mocha-marrom-lk-cz0790102-4166250.png?v=1754165065",
+        "gtin": "0197597025834",
+        "mpn": "CZ0790-102-4",
+        "itemGroupId": "8625386488030",
+        "brand": "Jordan",
+        "price": {
+          "value": "2499.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Marrom",
+        "sizes": [
+          "37"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DD1503601-39",
+      "verify_status": "read",
+      "expected_gtin": "0196149208343",
+      "actual_gtin": "0196149208343",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_DD1503601-39",
+        "offerId": "LIA_DD1503601-39",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Dunk Low Pink Oxford Rosa",
+        "link": "https://lksneakers.com.br/products/nike-dunk-low-pink-oxford?variant=44265079668958&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/products/tenis-nike-dunk-low-pink-oxford-rosa-412137.webp?v=1710449738",
+        "gtin": "0196149208343",
+        "mpn": "DD1503601-39",
+        "itemGroupId": "8084017873118",
+        "brand": "Nike",
+        "price": {
+          "value": "1499.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Rosa",
+        "sizes": [
+          "39"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DM7866200-6",
+      "verify_status": "read",
+      "expected_gtin": "0197599883388",
+      "actual_gtin": "0197599883388",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_DM7866200-6",
+        "offerId": "LIA_DM7866200-6",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Jordan 1 Low Og Sp x Travis Scott Medium Olive Verde",
+        "link": "https://lksneakers.com.br/products/tenis-air-jordan-1-low-og-sp-x-travis-scott-medium-olive-verde?variant=45920364462302&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-air-jordan-1-low-og-sp-x-travis-scott-medium-olive-verde-lk-sneakers-dm7866200-514053.jpg?v=1727520984",
+        "gtin": "0197599883388",
+        "mpn": "DM7866200-6",
+        "itemGroupId": "8689616879838",
+        "brand": "Jordan",
+        "price": {
+          "value": "10999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Verde",
+        "sizes": [
+          "40"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DM7866200-7",
+      "verify_status": "read",
+      "expected_gtin": "0197599883388",
+      "actual_gtin": "0197599883388",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_DM7866200-7",
+        "offerId": "LIA_DM7866200-7",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Jordan 1 Low Og Sp x Travis Scott Medium Olive Verde",
+        "link": "https://lksneakers.com.br/products/tenis-air-jordan-1-low-og-sp-x-travis-scott-medium-olive-verde?variant=45920364495070&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-air-jordan-1-low-og-sp-x-travis-scott-medium-olive-verde-lk-sneakers-dm7866200-514053.jpg?v=1727520984",
+        "gtin": "0197599883388",
+        "mpn": "DM7866200-7",
+        "itemGroupId": "8689616879838",
+        "brand": "Jordan",
+        "price": {
+          "value": "10999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Verde",
+        "sizes": [
+          "41"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FB9927200-5",
+      "verify_status": "read",
+      "expected_gtin": "0196969273491",
+      "actual_gtin": "0196969273491",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_FB9927200-5",
+        "offerId": "LIA_FB9927200-5",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Jordan 4 Craft Medium Olive Verde",
+        "link": "https://lksneakers.com.br/products/air-jordan-4-craft-medium-olive?variant=44656966861022&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/products/tenis-air-jordan-4-craft-medium-olive-verde-920139.jpg?v=1710449667",
+        "gtin": "0196969273491",
+        "mpn": "FB9927200-5",
+        "itemGroupId": "8250263797982",
+        "brand": "Jordan",
+        "price": {
+          "value": "2499.90",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Verde",
+        "sizes": [
+          "42"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN0344-001-5",
+      "verify_status": "read",
+      "expected_gtin": "197594654549",
+      "actual_gtin": "197594654549",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_FN0344-001-5",
+        "offerId": "LIA_FN0344-001-5",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Jordan 3 Retro x J Balvin \"Rio\" Preto",
+        "link": "https://lksneakers.com.br/products/tenis-air-jordan-3-retro-x-j-balvin-rio-preto?variant=45410515157214&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-air-jordan-3-retro-x-j-balvin-rio-preto-lk-sneakers-684842.jpg?v=1716422964",
+        "gtin": "197594654549",
+        "mpn": "FN0344-001-5",
+        "itemGroupId": "8500996702430",
+        "brand": "Jordan",
+        "price": {
+          "value": "5999.90",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Preto",
+        "sizes": [
+          "42"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN4193100-2",
+      "verify_status": "read",
+      "expected_gtin": "0196969797140",
+      "actual_gtin": "0196969797140",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_FN4193100-2",
+        "offerId": "LIA_FN4193100-2",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Crenshaw Skate Club x Nike SB Dunk Low Multicolor",
+        "link": "https://lksneakers.com.br/products/crenshaw-skate-club-x-nike-sb-dunk-low?variant=44340861501662&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/products/tenis-crenshaw-skate-club-x-nike-sb-dunk-low-multicolor-786137.jpg?v=1710449675",
+        "gtin": "0196969797140",
+        "mpn": "FN4193100-2",
+        "itemGroupId": "8125203611870",
+        "brand": "Nike",
+        "price": {
+          "value": "2499.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Colorido",
+        "sizes": [
+          "37"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-1",
+      "verify_status": "read",
+      "expected_gtin": "1804202401028",
+      "actual_gtin": "1804202401028",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_FN5880-001-1",
+        "offerId": "LIA_FN5880-001-1",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Sb Dunk Low Premium City Of Style Colorido",
+        "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-premium-city-of-style-colorido?variant=45521254514910&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-sb-dunk-low-premium-city-of-style-colorido-lk-sneakers-136760.jpg?v=1718163125",
+        "gtin": "1804202401028",
+        "mpn": "FN5880-001-1",
+        "itemGroupId": "8546910044382",
+        "brand": "Nike",
+        "price": {
+          "value": "1649.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Colorido",
+        "sizes": [
+          "38"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-3",
+      "verify_status": "read",
+      "expected_gtin": "1804202401028",
+      "actual_gtin": "1804202401028",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_FN5880-001-3",
+        "offerId": "LIA_FN5880-001-3",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Sb Dunk Low Premium City Of Style Colorido",
+        "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-premium-city-of-style-colorido?variant=45521254580446&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-sb-dunk-low-premium-city-of-style-colorido-lk-sneakers-136760.jpg?v=1718163125",
+        "gtin": "1804202401028",
+        "mpn": "FN5880-001-3",
+        "itemGroupId": "8546910044382",
+        "brand": "Nike",
+        "price": {
+          "value": "1649.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Colorido",
+        "sizes": [
+          "40"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-4",
+      "verify_status": "read",
+      "expected_gtin": "196977847226",
+      "actual_gtin": "196977847226",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_FN5880-001-4",
+        "offerId": "LIA_FN5880-001-4",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Sb Dunk Low Premium City Of Style Colorido",
+        "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-premium-city-of-style-colorido?variant=45521254613214&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-sb-dunk-low-premium-city-of-style-colorido-lk-sneakers-136760.jpg?v=1718163125",
+        "gtin": "196977847226",
+        "mpn": "FN5880-001-4",
+        "itemGroupId": "8546910044382",
+        "brand": "Nike",
+        "price": {
+          "value": "1649.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Colorido",
+        "sizes": [
+          "41"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-6",
+      "verify_status": "read",
+      "expected_gtin": "1804202401028",
+      "actual_gtin": "1804202401028",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_FN5880-001-6",
+        "offerId": "LIA_FN5880-001-6",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Sb Dunk Low Premium City Of Style Colorido",
+        "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-premium-city-of-style-colorido?variant=45521254678750&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-sb-dunk-low-premium-city-of-style-colorido-lk-sneakers-136760.jpg?v=1718163125",
+        "gtin": "1804202401028",
+        "mpn": "FN5880-001-6",
+        "itemGroupId": "8546910044382",
+        "brand": "Nike",
+        "price": {
+          "value": "1649.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Colorido",
+        "sizes": [
+          "43"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FQ8138-001-6",
+      "verify_status": "read",
+      "expected_gtin": "0197599875604",
+      "actual_gtin": "0197599875604",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_FQ8138-001-6",
+        "offerId": "LIA_FQ8138-001-6",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Jordan 4 Retro White Thunder Preto",
+        "link": "https://lksneakers.com.br/products/tenis-air-jordan-4-retro-white-thunder-preto?variant=45832380383454&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-air-jordan-4-retro-white-thunder-preto-lk-sneakers-fq8138001-739867.jpg?v=1724537781",
+        "gtin": "0197599875604",
+        "mpn": "FQ8138-001-6",
+        "itemGroupId": "8655052898526",
+        "brand": "Jordan",
+        "price": {
+          "value": "2999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Preto",
+        "sizes": [
+          "43"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FV5926-200-2",
+      "verify_status": "read",
+      "expected_gtin": "0197597477664",
+      "actual_gtin": "0197597477664",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_FV5926-200-2",
+        "offerId": "LIA_FV5926-200-2",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Sb Dunk Low Trocadéro Gardens Marrom",
+        "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-trocadero-gardens-marrom?variant=45749455519966&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-sb-dunk-low-trocadero-gardens-marrom-lk-sneakers-fv5926200-634575.jpg?v=1721646735",
+        "gtin": "0197597477664",
+        "mpn": "FV5926-200-2",
+        "itemGroupId": "8619277189342",
+        "brand": "Nike",
+        "price": {
+          "value": "1749.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Marrom",
+        "sizes": [
+          "40"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FZ3129-200-6",
+      "verify_status": "read",
+      "expected_gtin": "197593804945",
+      "actual_gtin": "197593804945",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_FZ3129-200-6",
+        "offerId": "LIA_FZ3129-200-6",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Sb Dunk Low Big Money Savings Marrom",
+        "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-big-money-savings-marrom?variant=45468922511582&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-sb-dunk-low-big-money-savings-marrom-lk-sneakers-570243.jpg?v=1717251603",
+        "gtin": "197593804945",
+        "mpn": "FZ3129-200-6",
+        "itemGroupId": "8525180764382",
+        "brand": "Nike",
+        "price": {
+          "value": "2499.90",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Marrom",
+        "sizes": [
+          "42"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF4334004-5",
+      "verify_status": "read",
+      "expected_gtin": "197601364713",
+      "actual_gtin": "197601364713",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_HF4334004-5",
+        "offerId": "LIA_HF4334004-5",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Jordan 4 RM x Nigel Sylvester Driveway Grey Cinza",
+        "link": "https://lksneakers.com.br/products/tenis-air-jordan-4-rm-x-nygel-sylvester-driveway-grey-cinza?variant=45973641134302&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-air-jordan-4-rm-x-nygel-sylvester-driveway-grey-cinza-lk-sneakers-hf4334004-553213.jpg?v=1729613572",
+        "gtin": "197601364713",
+        "mpn": "HF4334004-5",
+        "itemGroupId": "8711732920542",
+        "brand": "Jordan",
+        "price": {
+          "value": "2599.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Cinza",
+        "sizes": [
+          "41"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF4334004-6",
+      "verify_status": "read",
+      "expected_gtin": "197601364713",
+      "actual_gtin": "197601364713",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_HF4334004-6",
+        "offerId": "LIA_HF4334004-6",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Jordan 4 RM x Nigel Sylvester Driveway Grey Cinza",
+        "link": "https://lksneakers.com.br/products/tenis-air-jordan-4-rm-x-nygel-sylvester-driveway-grey-cinza?variant=45973641167070&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-air-jordan-4-rm-x-nygel-sylvester-driveway-grey-cinza-lk-sneakers-hf4334004-553213.jpg?v=1729613572",
+        "gtin": "197601364713",
+        "mpn": "HF4334004-6",
+        "itemGroupId": "8711732920542",
+        "brand": "Jordan",
+        "price": {
+          "value": "2599.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Cinza",
+        "sizes": [
+          "42"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF7743-001-5",
+      "verify_status": "read",
+      "expected_gtin": "197599967118",
+      "actual_gtin": "197599967118",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_HF7743-001-5",
+        "offerId": "LIA_HF7743-001-5",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Sb Dunk Low x THERE Skateboarding Ultra Humanized Preto",
+        "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-x-there-skateboarding-ultra-humanized-preto?variant=45809061101790&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-sb-dunk-low-x-there-skateboarding-ultra-humanized-preto-lk-sneakers-hf7743001-559758.jpg?v=1723709508",
+        "gtin": "197599967118",
+        "mpn": "HF7743-001-5",
+        "itemGroupId": "8645411012830",
+        "brand": "Nike",
+        "price": {
+          "value": "2449.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Preto",
+        "sizes": [
+          "40"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF7743-001-6",
+      "verify_status": "read",
+      "expected_gtin": "197599967118",
+      "actual_gtin": "197599967118",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_HF7743-001-6",
+        "offerId": "LIA_HF7743-001-6",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Sb Dunk Low x THERE Skateboarding Ultra Humanized Preto",
+        "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-x-there-skateboarding-ultra-humanized-preto?variant=45809061134558&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-sb-dunk-low-x-there-skateboarding-ultra-humanized-preto-lk-sneakers-hf7743001-559758.jpg?v=1723709508",
+        "gtin": "197599967118",
+        "mpn": "HF7743-001-6",
+        "itemGroupId": "8645411012830",
+        "brand": "Nike",
+        "price": {
+          "value": "2449.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Preto",
+        "sizes": [
+          "42"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HJ3386-300-8",
+      "verify_status": "read",
+      "expected_gtin": "1608202402036",
+      "actual_gtin": "1608202402036",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_HJ3386-300-8",
+        "offerId": "LIA_HJ3386-300-8",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Dunk Sb x Alexis Sablone Chameleon Verde",
+        "link": "https://lksneakers.com.br/products/tenis-nike-dunk-sb-x-alexis-sablone-chameleon-verde?variant=45851412725982&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-dunk-sb-x-alexis-sablone-chameleon-verde-lk-sneakers-hj3386300-820226.jpg?v=1725117995",
+        "gtin": "1608202402036",
+        "mpn": "HJ3386-300-8",
+        "itemGroupId": "8663588176094",
+        "brand": "Nike",
+        "price": {
+          "value": "1799.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Verde",
+        "sizes": [
+          "43"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_IE0875-5",
+      "verify_status": "read",
+      "expected_gtin": "4067886856523",
+      "actual_gtin": "4067886856523",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_IE0875-5",
+        "offerId": "LIA_IE0875-5",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis adidas Samba Og Off White Oat Violet Tone Branco",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-samba-og-off-white-oat-violet-tone-branco?variant=45239093559518&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-samba-og-off-white-oat-violet-tone-branco-lk-sneakers-645360.jpg?v=1713831599",
+        "gtin": "4067886856523",
+        "mpn": "IE0875-5",
+        "itemGroupId": "8430354497758",
+        "brand": "Adidas",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Off White",
+        "sizes": [
+          "38"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_IH5459-3",
+      "verify_status": "read",
+      "expected_gtin": "4067888905977",
+      "actual_gtin": "4067888905977",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_IH5459-3",
+        "offerId": "LIA_IH5459-3",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis adidas Hamburg Bliss Pink Semi Flash Aqua Rosa",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-hamburg-bliss-pink-semi-flash-aqua-rosa?variant=45813485076702&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-hamburg-bliss-pink-semi-flash-aqua-rosa-lk-sneakers-ih5459-647541.jpg?v=1723874852",
+        "gtin": "4067888905977",
+        "mpn": "IH5459-3",
+        "itemGroupId": "8646945210590",
+        "brand": "Adidas",
+        "price": {
+          "value": "1199.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Rosa",
+        "sizes": [
+          "37"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U574LGIL-8",
+      "verify_status": "read",
+      "expected_gtin": "197966842949",
+      "actual_gtin": "197966842949",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_U574LGIL-8",
+        "offerId": "LIA_U574LGIL-8",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis New Balance 574 x Stone Island Legacy Dark Green Verde",
+        "link": "https://lksneakers.com.br/products/tenis-new-balance-574-x-stone-island-legacy-dark-green-verde?variant=45960397652190&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-574-x-stone-island-legacy-dark-green-verde-lk-sneakers-u574lgil-201172.jpg?v=1729033615",
+        "gtin": "197966842949",
+        "mpn": "U574LGIL-8",
+        "itemGroupId": "8705659830494",
+        "brand": "New Balance",
+        "price": {
+          "value": "4999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Verde",
+        "sizes": [
+          "43"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060NRI-7",
+      "verify_status": "read",
+      "expected_gtin": "197375727417",
+      "actual_gtin": "197375727417",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_U9060NRI-7",
+        "offerId": "LIA_U9060NRI-7",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis New Balance 9060 Triple Black Preto",
+        "link": "https://lksneakers.com.br/products/tenis-new-balance-9060-triple-black-preto?variant=45736543912158&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-triple-black-preto-lk-sneakers-648275.jpg?v=1721171308",
+        "gtin": "197375727417",
+        "mpn": "U9060NRI-7",
+        "itemGroupId": "8614039781598",
+        "brand": "New Balance",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Preto",
+        "sizes": [
+          "40"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060ZGE-4",
+      "verify_status": "read",
+      "expected_gtin": "197967973048",
+      "actual_gtin": "197967973048",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_U9060ZGE-4",
+        "offerId": "LIA_U9060ZGE-4",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "New Balance 9060 Black Cement \"Black Cat\" Preto",
+        "link": "https://lksneakers.com.br/products/new-balance-9060-black-cement-black-cat-preto?variant=46319943155934&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/new-balance-9060-black-cement-black-cat-preto-lk-u9060zge-726354.jpg?v=1740492697",
+        "gtin": "197967973048",
+        "mpn": "U9060ZGE-4",
+        "itemGroupId": "8826898120926",
+        "brand": "New Balance",
+        "price": {
+          "value": "2499.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Preto",
+        "sizes": [
+          "37"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060ZGE-9",
+      "verify_status": "read",
+      "expected_gtin": "197967973048",
+      "actual_gtin": "2119228443006",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": false,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_U9060ZGE-9",
+        "offerId": "LIA_U9060ZGE-9",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "New Balance 9060 Black Cement \"Black Cat\" Preto",
+        "link": "https://lksneakers.com.br/products/new-balance-9060-black-cement-black-cat-preto?variant=46319943319774&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/new-balance-9060-black-cement-black-cat-preto-lk-u9060zge-726354.jpg?v=1740492697",
+        "gtin": "2119228443006",
+        "mpn": "U9060ZGE-9",
+        "itemGroupId": "8826898120926",
+        "brand": "New Balance",
+        "price": {
+          "value": "2499.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Preto",
+        "sizes": [
+          "42"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_cz0790-101-6",
+      "verify_status": "read",
+      "expected_gtin": "0196608220794",
+      "actual_gtin": "2460003259665",
+      "same_id": true,
+      "channel": "local",
+      "source": "api",
+      "match_expected": false,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_cz0790-101-6",
+        "offerId": "LIA_cz0790-101-6",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Nike Air Jordan 1 Retro Low OG 'Atmosphere Grey' Roxo",
+        "link": "https://lksneakers.com.br/products/air-jordan-1-retro-low-og-atmosphere-grey?variant=44417555759326&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/products/tenis-air-jordan-1-retro-low-og-atmosphere-grey-roxo-399335.jpg?v=1710449666",
+        "gtin": "2460003259665",
+        "mpn": "cz0790-101-6",
+        "itemGroupId": "8157052469470",
+        "brand": "Jordan",
+        "price": {
+          "value": "2499.90",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Off White",
+        "sizes": [
+          "43"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    }
+  ],
+  "final_productstatus_results": [
+    {
+      "product_id": "local:pt:BR:LIA_1203A655-100-7",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_43774078386380",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_553558612-6",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_553558612-7",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_555088108-5",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_AQ3692-004-3",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_AQ3692-004-5",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_CU9225100-4",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_CZ0790-102-4",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DD1503601-39",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DM7866200-6",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DM7866200-7",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FB9927200-5",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN0344-001-5",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN4193100-2",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-1",
+      "status_read": "ok",
+      "target_issue_codes": [
+        "reserved_gtin"
+      ],
+      "all_issue_codes": [
+        "reserved_gtin"
+      ],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-3",
+      "status_read": "ok",
+      "target_issue_codes": [
+        "reserved_gtin"
+      ],
+      "all_issue_codes": [
+        "reserved_gtin"
+      ],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-4",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-6",
+      "status_read": "ok",
+      "target_issue_codes": [
+        "reserved_gtin"
+      ],
+      "all_issue_codes": [
+        "reserved_gtin"
+      ],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FQ8138-001-6",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FV5926-200-2",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FZ3129-200-6",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF4334004-5",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF4334004-6",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF7743-001-5",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF7743-001-6",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HJ3386-300-8",
+      "status_read": "ok",
+      "target_issue_codes": [
+        "reserved_gtin"
+      ],
+      "all_issue_codes": [
+        "reserved_gtin"
+      ],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_IE0875-5",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_IH5459-3",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U574LGIL-8",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060NRI-7",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060ZGE-4",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060ZGE-9",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    },
+    {
+      "product_id": "local:pt:BR:LIA_cz0790-101-6",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": [],
+      "destination_status_count": 1
+    }
+  ],
+  "not_performed": [
+    "Shopify write",
+    "Tiny write",
+    "POS/local inventory config change",
+    "feed fetch/upload",
+    "price update",
+    "availability update",
+    "title/category/image update",
+    "campaign/message/send",
+    "supplier/contact/purchase"
+  ]
+}

@@ -1,0 +1,974 @@
+{
+  "generated_at": "2026-05-15T20:51:39.954369+00:00",
+  "status": "applied_needs_review_or_delayed_propagation",
+  "approval": "Lucas approved all GMC packets A42 price-only and B20 DRAFT/404 suppress/delete in Telegram: aprovo todos",
+  "merchant_id": "5297679409",
+  "data_source": "accounts/*/dataSources/10636492695",
+  "summary": {
+    "packet_a_targets": 42,
+    "packet_b_targets": 20,
+    "packet_a_execution_counts": {
+      "patched_price_only_v1": 42
+    },
+    "packet_b_execution_counts": {
+      "deleted": 20
+    },
+    "packet_a_content_api_matches": 0,
+    "packet_a_merchant_v1_matches": 0,
+    "packet_b_absent_products_list": 20,
+    "packet_b_absent_productstatuses_list": 20,
+    "rollback_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-15-approved-packets-a42-b20-rollback-20260515T204322Z.json",
+    "progress_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-15-approved-packets-a42-b20-progress-20260515T204322Z.jsonl"
+  },
+  "execution_a": [
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:01424-002-2",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "8999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~01424-002-2"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:CU3244100-41",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "22999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~CU3244100-41"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:CZ2239600-3",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "6999.90",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~CZ2239600-3"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:DQ4040400-39",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "2999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DQ4040400-39"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:HQ6998-211",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3499.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~HQ6998-211"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:HQ6998-212",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3499.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~HQ6998-212"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:HQ6998-213",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3499.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~HQ6998-213"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:HV0823-119",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "4499.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~HV0823-119"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:ID0440-1",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "1749.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~ID0440-1"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:ID0440-3",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "1749.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~ID0440-3"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IG5932",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "1799.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IG5932"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IG5932-4",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "1799.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IG5932-4"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IG5932-5",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "1799.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IG5932-5"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IG5932-6",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "1799.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IG5932-6"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IQ0028-200",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IQ0028-200"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IQ0028-201",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IQ0028-201"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IQ0028-202",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IQ0028-202"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IQ0028-203",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IQ0028-203"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IQ0028-204",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IQ0028-204"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IQ0028-205",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IQ0028-205"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IQ0028-206",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IQ0028-206"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IQ0028-207",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IQ0028-207"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IQ0028-208",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IQ0028-208"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IQ0028-209",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IQ0028-209"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IQ0028-210",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IQ0028-210"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IQ0028-211",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "4499.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IQ0028-211"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:IQ0028-212",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "4499.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IQ0028-212"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060504",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3499.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060504"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060505",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3499.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060505"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060506",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3499.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060506"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060507",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "3499.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060507"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060CCC-1",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "2399.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060CCC-1"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060CCC-10",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "2399.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060CCC-10"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060CCC-11",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "2399.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060CCC-11"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060CCC-2",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "2399.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060CCC-2"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060CCC-3",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "2399.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060CCC-3"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060CCC-4",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "2399.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060CCC-4"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060CCC-5",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "2399.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060CCC-5"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060CCC-6",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "2399.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060CCC-6"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060CCC-7",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "2399.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060CCC-7"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060CCC-8",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "2399.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060CCC-8"
+    },
+    {
+      "packet": "A",
+      "product_id": "online:pt:BR:U9060CCC-9",
+      "execution_status": "patched_price_only_v1",
+      "expected_price_brl": "2399.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060CCC-9"
+    }
+  ],
+  "execution_b": [
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:11810372920072143991",
+      "execution_status": "deleted",
+      "title": "40"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:3876299146406606317",
+      "execution_status": "deleted",
+      "title": "Calça Saint Studio Jeans Baggy Preta"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:6562590402534581177",
+      "execution_status": "deleted",
+      "title": "Calça Nude Project Illegal Jeans Ash Cinza - LK"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:2258634078163248862",
+      "execution_status": "deleted",
+      "title": "Calça Chino Saint Studio Supima Preto"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:15334125053592144145",
+      "execution_status": "deleted",
+      "title": "Camiseta Oversized Fear of God Essentials Heavy Healther Wood Marrom"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:13498809788548851139",
+      "execution_status": "deleted",
+      "title": "Moletom Essentials Fear of God Jet black SS24 Preto | LK Sneakers"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:10002025469927148791",
+      "execution_status": "deleted",
+      "title": "Calça Nude Project Jeans Soft Velvet Azul Marinho"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:14252480804615463970",
+      "execution_status": "deleted",
+      "title": "41"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:4041641007094962608",
+      "execution_status": "deleted",
+      "title": "Camisa Saint Studio Trico Palha | LK Sneakers"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:10591784840915585992",
+      "execution_status": "deleted",
+      "title": "Boné Saint Studio Art Department Azul - LK"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:15031239196158973196",
+      "execution_status": "deleted",
+      "title": "45"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:13622509763707629816",
+      "execution_status": "deleted",
+      "title": "Calça Saint Studio Wide Alfaiataria Risca de Giz Cinza"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:9250025623243509812",
+      "execution_status": "deleted",
+      "title": "Calça Saint Studio Wide Alfaiataria Risca de Giz Preta"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:13294493627572294660",
+      "execution_status": "deleted",
+      "title": "Camiseta Oversized Fear of God Essentials Heavy Jet Black Preto"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:1475186660255881483",
+      "execution_status": "deleted",
+      "title": "Camiseta Oversized Fear of God Essentials Ink Cinza"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:13315860803624221806",
+      "execution_status": "deleted",
+      "title": "Short Fear Of God Essentials Sporty Nylon Classic Jet Black Preto"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:1624428988081867066",
+      "execution_status": "deleted",
+      "title": "Boné Aimé Leon Dore Porsche Nylon Logo Aspen Gold Amarelo | LK Sneaker"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:15507753369156717392",
+      "execution_status": "deleted",
+      "title": "Camisa Manga Longa Oversized Saint Studio Egípcio Listrada Azul"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:11314792792398542744",
+      "execution_status": "deleted",
+      "title": "Moletom Oversized Nylon Fear of God Essentials Jet Black Preto"
+    },
+    {
+      "packet": "B",
+      "product_id": "online:pt:BR:10695397335246538087",
+      "execution_status": "deleted",
+      "title": "42"
+    }
+  ],
+  "verify_a": [
+    {
+      "product_id": "online:pt:BR:01424-002-2",
+      "expected_price_brl": "8999.99",
+      "content_api_price_brl": "5999.90",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.90",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:CU3244100-41",
+      "expected_price_brl": "22999.99",
+      "content_api_price_brl": "14999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "14999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:CZ2239600-3",
+      "expected_price_brl": "6999.90",
+      "content_api_price_brl": "4699.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "4699.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:DQ4040400-39",
+      "expected_price_brl": "2999.99",
+      "content_api_price_brl": "2999.90",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2999.90",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-211",
+      "expected_price_brl": "3499.99",
+      "content_api_price_brl": "2499.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2499.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-212",
+      "expected_price_brl": "3499.99",
+      "content_api_price_brl": "2499.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2499.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-213",
+      "expected_price_brl": "3499.99",
+      "content_api_price_brl": "2499.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2499.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-119",
+      "expected_price_brl": "4499.99",
+      "content_api_price_brl": "3499.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "3499.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:ID0440-1",
+      "expected_price_brl": "1749.99",
+      "content_api_price_brl": "1449.90",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "1449.90",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:ID0440-3",
+      "expected_price_brl": "1749.99",
+      "content_api_price_brl": "1449.90",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "1449.90",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IG5932",
+      "expected_price_brl": "1799.99",
+      "content_api_price_brl": "1599.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "1599.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-4",
+      "expected_price_brl": "1799.99",
+      "content_api_price_brl": "1599.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "1599.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-5",
+      "expected_price_brl": "1799.99",
+      "content_api_price_brl": "1599.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "1599.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-6",
+      "expected_price_brl": "1799.99",
+      "content_api_price_brl": "1599.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "1599.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ0028-200",
+      "expected_price_brl": "3999.99",
+      "content_api_price_brl": "5999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ0028-201",
+      "expected_price_brl": "3999.99",
+      "content_api_price_brl": "5999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ0028-202",
+      "expected_price_brl": "3999.99",
+      "content_api_price_brl": "5999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ0028-203",
+      "expected_price_brl": "3999.99",
+      "content_api_price_brl": "5999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ0028-204",
+      "expected_price_brl": "3999.99",
+      "content_api_price_brl": "5999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ0028-205",
+      "expected_price_brl": "3999.99",
+      "content_api_price_brl": "5999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ0028-206",
+      "expected_price_brl": "3999.99",
+      "content_api_price_brl": "5999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ0028-207",
+      "expected_price_brl": "3999.99",
+      "content_api_price_brl": "5999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ0028-208",
+      "expected_price_brl": "3999.99",
+      "content_api_price_brl": "5999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ0028-209",
+      "expected_price_brl": "3999.99",
+      "content_api_price_brl": "5999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ0028-210",
+      "expected_price_brl": "3999.99",
+      "content_api_price_brl": "5999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ0028-211",
+      "expected_price_brl": "4499.99",
+      "content_api_price_brl": "5999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ0028-212",
+      "expected_price_brl": "4499.99",
+      "content_api_price_brl": "5999.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "5999.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060504",
+      "expected_price_brl": "3499.99",
+      "content_api_price_brl": "2399.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2399.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060505",
+      "expected_price_brl": "3499.99",
+      "content_api_price_brl": "2399.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2399.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060506",
+      "expected_price_brl": "3499.99",
+      "content_api_price_brl": "2399.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2399.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060507",
+      "expected_price_brl": "3499.99",
+      "content_api_price_brl": "2399.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2399.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCC-1",
+      "expected_price_brl": "2399.99",
+      "content_api_price_brl": "2799.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2799.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCC-10",
+      "expected_price_brl": "2399.99",
+      "content_api_price_brl": "2799.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2799.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCC-11",
+      "expected_price_brl": "2399.99",
+      "content_api_price_brl": "2799.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2799.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCC-2",
+      "expected_price_brl": "2399.99",
+      "content_api_price_brl": "2799.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2799.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCC-3",
+      "expected_price_brl": "2399.99",
+      "content_api_price_brl": "2799.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2799.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCC-4",
+      "expected_price_brl": "2399.99",
+      "content_api_price_brl": "2799.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2799.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCC-5",
+      "expected_price_brl": "2399.99",
+      "content_api_price_brl": "2799.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2799.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCC-6",
+      "expected_price_brl": "2399.99",
+      "content_api_price_brl": "2799.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2799.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCC-7",
+      "expected_price_brl": "2399.99",
+      "content_api_price_brl": "2799.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2799.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCC-8",
+      "expected_price_brl": "2399.99",
+      "content_api_price_brl": "2799.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2799.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCC-9",
+      "expected_price_brl": "2399.99",
+      "content_api_price_brl": "2799.99",
+      "content_api_sale_price_brl": null,
+      "content_api_match_expected": false,
+      "merchant_v1_price_brl": "2799.99",
+      "merchant_v1_sale_price_brl": null,
+      "merchant_v1_match_expected": false
+    }
+  ],
+  "verify_b": [
+    {
+      "product_id": "online:pt:BR:11810372920072143991",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:3876299146406606317",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:6562590402534581177",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:2258634078163248862",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:15334125053592144145",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:13498809788548851139",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:10002025469927148791",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:14252480804615463970",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:4041641007094962608",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:10591784840915585992",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:15031239196158973196",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:13622509763707629816",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:9250025623243509812",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:13294493627572294660",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:1475186660255881483",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:13315860803624221806",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:1624428988081867066",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:15507753369156717392",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:11314792792398542744",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:10695397335246538087",
+      "absent_from_products_list": true,
+      "absent_from_productstatuses_list": true
+    }
+  ],
+  "private_rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-15-approved-packets-a42-b20-rollback-20260515T204322Z.json",
+  "private_progress_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-15-approved-packets-a42-b20-progress-20260515T204322Z.jsonl",
+  "not_performed": [
+    "salePrice/strikethrough update",
+    "Shopify write/publish",
+    "Tiny write",
+    "feed fetch/upload/fetchNow",
+    "campaign/message/WhatsApp/supplier/customer contact"
+  ]
+}

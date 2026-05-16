@@ -1,0 +1,94 @@
+{
+  "status": "stockx_goat_approval_packet_ready_not_executed",
+  "generated_at": "2026-05-14T23:26:27.275943+00:00",
+  "source": "backlog_no_droper_match from lk-compras-julio-notion-preview-droper-15-2026-05-14.json",
+  "candidates_count": 3,
+  "scope_if_approved": [
+    "stockx_goat_readonly_lookup_only",
+    "normalize US Men/Women to LK/BR/EU sizes",
+    "capture price/fees/link/availability when visible",
+    "prepare comparison against Droper/no-match and Julio/Notion preview"
+  ],
+  "not_authorized": [
+    "purchase",
+    "reservation",
+    "supplier_contact",
+    "whatsapp_send",
+    "notion_write",
+    "shopify_write",
+    "tiny_write",
+    "merchant_write",
+    "campaign_send"
+  ],
+  "candidates": [
+    {
+      "idx": 6,
+      "title": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "query": "Nike Moon Shoe SP Jacquemus Alabaster",
+      "sku": "HV8547-700-3",
+      "size": "36",
+      "demand_120d": "3 un · R$ 15.999,97",
+      "status": "not_found_exact_size",
+      "best": null,
+      "exact_size_matches": [],
+      "related": [
+        {
+          "id": 1045237,
+          "nome": "Jacquemus x Nike Moon Shoe SP Alabaster Feminino",
+          "preco": "6.500,00",
+          "sizes": [
+            "43",
+            "42",
+            "40.5",
+            "40",
+            "39",
+            "38",
+            "37"
+          ],
+          "product_url": "https://droper.app/produto/1045237"
+        }
+      ]
+    },
+    {
+      "idx": 15,
+      "title": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+      "query": "Nike Moon Shoe SP Jacquemus Alabaster",
+      "sku": "HV8547-700-10",
+      "size": "37.5",
+      "demand_120d": "1 un · R$ 4.999,99",
+      "status": "not_found_exact_size",
+      "best": null,
+      "exact_size_matches": [],
+      "related": [
+        {
+          "id": 1045237,
+          "nome": "Jacquemus x Nike Moon Shoe SP Alabaster Feminino",
+          "preco": "6.500,00",
+          "sizes": [
+            "43",
+            "42",
+            "40.5",
+            "40",
+            "39",
+            "38",
+            "37"
+          ],
+          "product_url": "https://droper.app/produto/1045237"
+        }
+      ]
+    },
+    {
+      "idx": 18,
+      "title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "query": "Mexico 66 SD Cream Birch",
+      "sku": "1183C015101",
+      "size": "42.5",
+      "demand_120d": "1 un · R$ 2.499,99",
+      "status": "not_found_exact_size",
+      "best": null,
+      "exact_size_matches": [],
+      "related": []
+    }
+  ],
+  "approval_text": "Aprovo consultar StockX/GOAT read-only para os 3 candidatos LK Compras sem match Droper forte, com normalização de tamanho, sem compra, sem reserva, sem contato, sem WhatsApp, sem Notion write e sem alterações em Shopify/Tiny/Merchant."
+}

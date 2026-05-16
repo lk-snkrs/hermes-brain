@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-05-12T15:36:25.693908+00:00",
+  "status": "gmc_package_b2_shopify_live_preview_ready_no_writes",
+  "scope": "B2_online_identifier_fix_shopify_live_preview",
+  "source_labels": [
+    "fact_merchant_center",
+    "fact_shopify",
+    "derived_reconciliation"
+  ],
+  "merchant_products_current_read": 23147,
+  "input_rows": 854,
+  "preview_status_counts": {
+    "skipped_same_product_id_noop_valid_after_shopify_live": 854
+  },
+  "ready_needs_approval": 0,
+  "private_rollback_preview_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-package-b2-shopify-live-preview-rollback-preview.json",
+  "not_touched": [
+    "merchant_product_write_or_delete",
+    "shopify_write",
+    "feed",
+    "database",
+    "campaign_or_external_send",
+    "local_channel",
+    "pos_inventory"
+  ]
+}

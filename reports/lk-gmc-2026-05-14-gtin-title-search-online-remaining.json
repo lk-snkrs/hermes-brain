@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-05-14T17:38:46.327078+00:00",
+  "rollback": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-gtin-title-search-online-remaining-rollback-20260514T173556Z.json",
+  "results": [
+    {
+      "product_id": "online:pt:BR:43774078386380",
+      "status": "patched",
+      "gtin": "194500868106",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~43774078386380"
+    },
+    {
+      "product_id": "online:pt:BR:553558612-6",
+      "status": "patched",
+      "gtin": "195243826125",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~553558612-6"
+    },
+    {
+      "product_id": "online:pt:BR:553558612-7",
+      "status": "patched",
+      "gtin": "195243826125",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~553558612-7"
+    },
+    {
+      "product_id": "online:pt:BR:555088108-5",
+      "status": "patched",
+      "gtin": "195869260969",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~555088108-5"
+    }
+  ],
+  "verify": [
+    {
+      "product_id": "online:pt:BR:43774078386380",
+      "expected": "194500868106",
+      "content_gtin": "194500868106",
+      "merchant_gtins": [
+        "194500868106"
+      ],
+      "match": true
+    },
+    {
+      "product_id": "online:pt:BR:553558612-6",
+      "expected": "195243826125",
+      "content_gtin": "195243826125",
+      "merchant_gtins": [
+        "195243826125"
+      ],
+      "match": true
+    },
+    {
+      "product_id": "online:pt:BR:553558612-7",
+      "expected": "195243826125",
+      "content_gtin": "195243826125",
+      "merchant_gtins": [
+        "195243826125"
+      ],
+      "match": true
+    },
+    {
+      "product_id": "online:pt:BR:555088108-5",
+      "expected": "195869260969",
+      "content_gtin": "195869260969",
+      "merchant_gtins": [
+        "195869260969"
+      ],
+      "match": true
+    }
+  ]
+}

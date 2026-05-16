@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-05-12T14:22:45.026410+00:00",
+  "status": "gmc_b_remaining_shopify_live_probe_readonly",
+  "scope": "Read-only Shopify live variant probe for package B remaining rows",
+  "source_labels": [
+    "fact_shopify",
+    "fact_merchant_center",
+    "derived_reconciliation"
+  ],
+  "input_rows_with_link_variant": 854,
+  "unique_variant_ids_queried": 854,
+  "state_counts": {
+    "shopify_live_active_variant_with_sku_review_candidate": 854
+  },
+  "review_candidate_count": 854,
+  "private_csv": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_reconciliation/lk-gmc-2026-05-12-b-remaining-shopify-live-probe.csv",
+  "not_touched": [
+    "merchant_product_write_or_delete",
+    "shopify_write",
+    "feed",
+    "database",
+    "campaign_or_external_send",
+    "local_channel",
+    "pos_inventory"
+  ],
+  "interpretation": "Shopify live active variant with SKU is stronger evidence, but still needs a write-preview package with exact old/new product IDs and rollback before any Merchant identifier change."
+}

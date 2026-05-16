@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-05-14T21:48:29.196758+00:00",
+  "mode": "read_only_local_documentation",
+  "status": "decision_packet_ready_no_external_writes",
+  "merchant_api_discovery": {
+    "products_v1_productInputs_methods": [
+      "delete",
+      "insert",
+      "patch"
+    ],
+    "productInputs_has_get_method": false,
+    "products_methods": [
+      "get",
+      "list"
+    ],
+    "products_has_get_method": true,
+    "conclusion": "ProductInputs v1 exposes insert/patch/delete but not get in the discovery document; GET attempts against productInputs/{id} are therefore not a reliable readback/ownership signal. Use accounts.products.get for final product output and productstatuses/account settings for diagnostics."
+  },
+  "price_current_state": {
+    "pilot_status": "pilot_completed_needs_review",
+    "selected_count": 5,
+    "execution_counts": {
+      "patched_price_only": 5
+    },
+    "verify_content_matches": 0,
+    "verify_merchant_v1_matches": 0,
+    "status_issue_counts_after": {
+      "price_updated": 15
+    },
+    "classification": "blocked_yellow_do_not_bulk_retry"
+  },
+  "source_architecture_current": [
+    {
+      "id": "10525577766",
+      "display": "lksneakers.com.br",
+      "input": "AUTOFEED",
+      "role": "primary crawl/autofeed",
+      "destinations": "FREE_LISTINGS enabled; Shopping Ads disabled",
+      "price_risk": "can surface crawl-derived offer state, but no API write target"
+    },
+    {
+      "id": "10636492695",
+      "display": "Content API",
+      "input": "API",
+      "role": "primary API product input",
+      "destinations": "SHOPPING_ADS, FREE_LISTINGS, DISPLAY_ADS enabled",
+      "price_risk": "intended write target; price PATCH/upsert returned success but final Content readback did not persist for 109"
+    },
+    {
+      "id": "10636384718",
+      "display": "Content API",
+      "input": "API",
+      "role": "legacyLocal/local inventory",
+      "destinations": "FREE_LOCAL_LISTINGS enabled",
+      "price_risk": "local/LIA; not primary online price target"
+    },
+    {
+      "id": "10646853947",
+      "display": "LK Sneakers - Color Supplemental Feed",
+      "input": "FILE weekly fetch Mon 03:00 BRT",
+      "role": "supplemental-looking file",
+      "destinations": "Display/Free/Shopping enabled in resource; Content API feed target also excludes Shopping in legacy view",
+      "price_risk": "feed header has id,color,age_group,gender,size only; not direct price source"
+    }
+  ],
+  "ownership_evidence": {
+    "automatic_improvements": {
+      "itemUpdates": {
+        "accountItemUpdatesSettings": {
+          "allowPriceUpdates": true,
+          "allowAvailabilityUpdates": true,
+          "allowStrictAvailabilityUpdates": true,
+          "allowConditionUpdates": true
+        },
+        "effectiveAllowPriceUpdates": true,
+        "effectiveAllowAvailabilityUpdates": true,
+        "effectiveAllowStrictAvailabilityUpdates": true,
+        "effectiveAllowConditionUpdates": true
+      },
+      "imageImprovements": {
+        "accountImageImprovementsSettings": {
+          "allowAutomaticImageImprovements": true
+        },
+        "effectiveAllowAutomaticImageImprovements": true
+      },
+      "shippingImprovements": {
+        "allowShippingImprovements": true
+      }
+    },
+    "source_presence_counts_in_sample": {},
+    "fresh_productstatus_price_issue_counts_in_sample": {
+      "price_updated": 33
+    },
+    "interpretation": [
+      "Automatic item price updates are enabled/effective at account level; productstatuses confirm Google is auto-updating mismatched prices from the online store with servability unaffected.",
+      "ProductInputs GET returned 404 for all sampled source/dataSource combinations even though final products are readable; source ownership could not be proven at ProductInput-read level, so use final product + account auto-update + productstatus evidence.",
+      "Some fresh Merchant/Content reads now match Shopify target while productstatuses still show auto-update notices; status clearance can lag final product readback.",
+      "Some fresh final outputs remain stale vs Shopify target; those need source/feed regeneration or a tightly verified price/salePrice pilot after the ownership path is fixed."
+    ]
+  },
+  "landing_page_residual": {
+    "classification_counts": {
+      "public_ok_status_lag_or_googlebot_specific": 1
+    },
+    "not_performed": [
+      "Merchant delete",
+      "Merchant link patch",
+      "Shopify publish/unpublish",
+      "redirect creation",
+      "feed fetch/upload",
+      "campaign/message/send"
+    ]
+  },
+  "target_architecture_recommendation": [
+    {
+      "source": "Content API / ProductInputs DS 10636492695",
+      "target_role": "online primary owner",
+      "critical_attrs": "price/title/link/image/category/GTIN/non-local attributes",
+      "action_needed": "identify upstream generator/channel that rewrites stale price before any new write"
+    },
+    {
+      "source": "AUTOFEED / crawl DS 10525577766",
+      "target_role": "safety/discovery only or tightly constrained fallback",
+      "critical_attrs": "should not be treated as operational price owner",
+      "action_needed": "do not disable yet; prepare UI/settings review packet before changing destinations/auto-update"
+    },
+    {
+      "source": "Supplemental file DS 10646853947",
+      "target_role": "non-critical enrichment only",
+      "critical_attrs": "color/age_group/gender/size; no price columns observed",
+      "action_needed": "keep but review destinations/primary-vs-supplemental behavior in Merchant UI"
+    },
+    {
+      "source": "Local/LIA DS 10636384718",
+      "target_role": "local inventory/POS separate lane",
+      "critical_attrs": "local offers; keep separate from online price remediation",
+      "action_needed": "no action now"
+    }
+  ],
+  "recommended_next_step": "Open a no-write source-governance packet: inspect Merchant UI/source settings and Shopify/Google channel/API generator ownership, then choose one of three approval gates: (A) leave auto-update safety and fix upstream API generator, (B) limit crawl/autofeed after rollback/screenshot packet, (C) temporary monitored settings experiment on a tiny exact cohort only.",
+  "not_performed": [
+    "Merchant write",
+    "ProductInputs PATCH",
+    "Content API write",
+    "feed upload/fetch",
+    "data source update/delete",
+    "automatic item updates setting change",
+    "Shopify/Tiny write",
+    "campaign/message/send"
+  ]
+}

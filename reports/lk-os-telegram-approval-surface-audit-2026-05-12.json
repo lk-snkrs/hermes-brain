@@ -1,0 +1,649 @@
+{
+  "generated_at": "2026-05-12T22:47:23.150744+00:00",
+  "status": "lk_os_telegram_approval_surface_audit_ready_no_write",
+  "scope": "Local audit of LK OS approval artifacts for Telegram inline approval readiness; no external calls/writes.",
+  "summary": {
+    "scanned_markdown_artifacts": 178,
+    "telegram_inline_ok": 8,
+    "needs_inline_telegram_surface": 50,
+    "review_inline_clarity": 54,
+    "superseded_do_not_use": 9,
+    "no_approval_surface_detected": 57
+  },
+  "p1_needs_inline": [
+    {
+      "path": "reports/lk-daily-weekly-dry-run-validation-2026-05-11.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 8,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-daily-weekly-mandatory-report-delivery-2026-05-11.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 2,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-2026-05-12-local-cd-63-old-lia-cleanup-execution.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 8,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-2026-05-12-local-cd-final-approval-packet.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 10,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-2026-05-12-local-cd-pos-source-validation.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 10,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-2026-05-12-local-cd-residual-tiny-probe.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 8,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-2026-05-12-p1-attribute-completion-preview.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 6,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-2026-05-12-p1-availability-tiny-packet-resume-status.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 2,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-2026-05-12-p1-core-attributes-approval-packet-preview.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 6,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-2026-05-12-p1-core-attributes-root-cause-probe.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 6,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-2026-05-12-p1-core-attrs-4field-apply-final.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 10,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-2026-05-12-package-b2-shopify-live-preview.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 8,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-2026-05-12-package-b3-delete-old-duplicates-preview.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 8,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-2026-05-12-phase7-diagnostics-triage.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 6,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-2026-05-12-phase7-post-cleanup-monitor.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 6,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-executable-previews-2026-05-12.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 2,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-mission-control-snapshot-2026-05-12.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 16,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-os-daily-sales-brief-2026-05-10.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 2,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-os-tiny-freshness-report-2026-05-11.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 2,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-os-weekly-ceo-review-2026-05-04_2026-05-10.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 2,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-os-weekly-internal-influencer-email-preview-2026-05-11.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 1,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-phase5-local-sql-cache-2026-05-11.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 1,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-phase5-p1-approved-action-files-2026-05-11.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 6,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-phase5-p1-final-channel-lists-preview-2026-05-11.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 6,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-phase5-p1-klaviyo-approved-email-2026-05-11.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 5,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-phase5-p1-klaviyo-visual-preview-2026-05-11.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 5,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-seo-cro-shopify-execution-2026-05-11.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 4,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-seo-cro-title-meta-preview-2026-05-11.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 6,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-seo-cro-weekly-2026-05-11.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 8,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-shopify-readonly-skill-operationalization-audit-2026-05-11.md",
+      "state": "needs_inline_telegram_surface",
+      "priority": "P1",
+      "approval_language_detected": true,
+      "local_path_references": 8,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    }
+  ],
+  "p2_review_inline_clarity": [
+    {
+      "path": "reports/lk-approval-ledger-refresh-guard-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-approved-p1-seo-fields-execution-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-crm-phase5-next-decision-router-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-daily-sales-brief-real-2026-05-08-ga4-v02.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-action-package-preview-2026-05-12.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-catalog-cleanup-preview-2026-05-12.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-correction-preview-2026-05-12.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-orphan-ranking-2026-05-12.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-p0-url-checkout-review-2026-05-12.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-gmc-required-attrs-preview-2026-05-12.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-klaviyo-crm-draft-readiness-watcher-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-merchant-center-feed-readonly-router-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-on-demand-sourcing-router-readiness-guard-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-os-approval-learning-ledger-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-os-creative-visual-approval-gate-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-os-on-demand-sourcing-router-2026-05-04_2026-05-10.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-os-pareto-operational-split-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-os-weekly-quote-validation-preview-2026-05-04_2026-05-10.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-os-weekly-stock-sku-action-plan-2026-05-04_2026-05-10.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-p1-seo-cro-approval-packets-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-paid-attribution-brief-real-2026-05-08-v03.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-pdp-low-conversion-priority-router-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-phase5-crm-best-seller-priority-correction-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-phase5-crm-operational-queues-preview-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-phase5-crm-rfm-preview-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-phase5-p1-best-seller-campaign-preview-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-phase5-p1-klaviyo-klaviyo-objects-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-phase5-p1-recipients-stock-guard-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    },
+    {
+      "path": "reports/lk-phase8-completion-audit-2026-05-11.md",
+      "state": "review_inline_clarity",
+      "priority": "P2",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": false
+    }
+  ],
+  "superseded": [
+    {
+      "path": "reports/lk-gmc-2026-05-12-package-b3-delete-old-duplicates-execution.md",
+      "state": "superseded_do_not_use",
+      "priority": "none",
+      "approval_language_detected": true,
+      "local_path_references": 10,
+      "inline_surface_detected": false,
+      "superseded_detected": true
+    },
+    {
+      "path": "reports/lk-influencer-operational-roas-v02-2026-05-10.md",
+      "state": "superseded_do_not_use",
+      "priority": "none",
+      "approval_language_detected": true,
+      "local_path_references": 8,
+      "inline_surface_detected": false,
+      "superseded_detected": true
+    },
+    {
+      "path": "reports/lk-os-next-decision-queue-2026-05-12.md",
+      "state": "superseded_do_not_use",
+      "priority": "none",
+      "approval_language_detected": true,
+      "local_path_references": 20,
+      "inline_surface_detected": true,
+      "superseded_detected": true
+    },
+    {
+      "path": "reports/lk-os-sourcing-sql-architecture-correction-2026-05-11.md",
+      "state": "superseded_do_not_use",
+      "priority": "none",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": true
+    },
+    {
+      "path": "reports/lk-os-supplier-quote-send-preview-2026-05-12.md",
+      "state": "superseded_do_not_use",
+      "priority": "none",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": true,
+      "superseded_detected": true
+    },
+    {
+      "path": "reports/lk-phase5-p1-final-approval-packet-2026-05-11.md",
+      "state": "superseded_do_not_use",
+      "priority": "none",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": false,
+      "superseded_detected": true
+    },
+    {
+      "path": "areas/lk/rotinas/gmc-2026-05-12-package-b3-delete-old-duplicates-execution.md",
+      "state": "superseded_do_not_use",
+      "priority": "none",
+      "approval_language_detected": true,
+      "local_path_references": 10,
+      "inline_surface_detected": false,
+      "superseded_detected": true
+    },
+    {
+      "path": "areas/lk/rotinas/lk-os-next-decision-queue-2026-05-12.md",
+      "state": "superseded_do_not_use",
+      "priority": "none",
+      "approval_language_detected": true,
+      "local_path_references": 20,
+      "inline_surface_detected": true,
+      "superseded_detected": true
+    },
+    {
+      "path": "areas/lk/rotinas/lk-os-supplier-quote-send-preview-2026-05-12.md",
+      "state": "superseded_do_not_use",
+      "priority": "none",
+      "approval_language_detected": true,
+      "local_path_references": 0,
+      "inline_surface_detected": true,
+      "superseded_detected": true
+    }
+  ],
+  "not_performed": [
+    "external_send",
+    "business_system_write",
+    "tiny_call",
+    "shopify_call",
+    "merchant_call",
+    "notion_or_n8n_change",
+    "supplier_contact"
+  ]
+}

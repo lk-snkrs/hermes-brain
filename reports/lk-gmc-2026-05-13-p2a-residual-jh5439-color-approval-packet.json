@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-05-13T18:31:27Z",
+  "status": "approval_packet_no_write",
+  "scope": {
+    "api": "Merchant API v1 ProductInputs PATCH",
+    "dataSource": "10636492695",
+    "updateMask": "productAttributes.color",
+    "field": "productAttributes.color",
+    "target_value": "Bordô",
+    "count": 11
+  },
+  "products": [
+    {"product_id":"online:pt:BR:JH5439-1","title":"Tênis Adidas Handball Spezial Bordô","current_color":null,"target_color":"Bordô","evidence":"title_contains_Bordô"},
+    {"product_id":"online:pt:BR:JH5439-2","title":"Tênis Adidas Handball Spezial Bordô","current_color":null,"target_color":"Bordô","evidence":"title_contains_Bordô"},
+    {"product_id":"online:pt:BR:JH5439-3","title":"Tênis Adidas Handball Spezial Bordô","current_color":null,"target_color":"Bordô","evidence":"title_contains_Bordô"},
+    {"product_id":"online:pt:BR:JH5439-4","title":"Tênis Adidas Handball Spezial Bordô","current_color":null,"target_color":"Bordô","evidence":"title_contains_Bordô"},
+    {"product_id":"online:pt:BR:JH5439-5","title":"Tênis Adidas Handball Spezial Bordô","current_color":null,"target_color":"Bordô","evidence":"title_contains_Bordô"},
+    {"product_id":"online:pt:BR:JH5439-6","title":"Tênis Adidas Handball Spezial Bordô","current_color":null,"target_color":"Bordô","evidence":"title_contains_Bordô"},
+    {"product_id":"online:pt:BR:JH5439-7","title":"Tênis Adidas Handball Spezial Bordô","current_color":null,"target_color":"Bordô","evidence":"title_contains_Bordô"},
+    {"product_id":"online:pt:BR:JH5439-8","title":"Tênis Adidas Handball Spezial Bordô","current_color":null,"target_color":"Bordô","evidence":"title_contains_Bordô"},
+    {"product_id":"online:pt:BR:JH5439-9","title":"Tênis Adidas Handball Spezial Bordô","current_color":null,"target_color":"Bordô","evidence":"title_contains_Bordô"},
+    {"product_id":"online:pt:BR:JH5439-10","title":"Tênis Adidas Handball Spezial Bordô","current_color":null,"target_color":"Bordô","evidence":"title_contains_Bordô"},
+    {"product_id":"online:pt:BR:JH5439-11","title":"Tênis Adidas Handball Spezial Bordô","current_color":null,"target_color":"Bordô","evidence":"title_contains_Bordô"}
+  ],
+  "blocked_until_approval": true,
+  "approval_text_required": "Aprovo corrigir color Bordô nas 11 variantes JH5439 no GMC via Merchant API v1, com rollback e verificação.",
+  "not_performed": ["merchant_write", "shopify_write", "tiny_write", "database_write", "feed_fetch_or_upload", "campaign_or_message_send", "sourcing_or_purchase"]
+}

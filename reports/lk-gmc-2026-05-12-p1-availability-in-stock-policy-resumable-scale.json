@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-05-12T23:53:11.465419+00:00",
+  "status": "partial_running",
+  "approval_context": "Lucas chose option 1: scale in controlled batches after successful pilot 25.",
+  "summary": {
+    "packet_rows": 1616,
+    "processed_unique": 200,
+    "counts": {
+      "already_in_stock": 200
+    },
+    "success_or_already_in_stock": 200,
+    "updated_verified_in_stock": 0,
+    "already_in_stock": 200,
+    "failed": 0,
+    "remaining_unprocessed": 1416,
+    "productstatus_missing_availability_after_count": 0
+  },
+  "batches": [
+    {
+      "batch_no": 1,
+      "selected": 100,
+      "updated_verified_in_stock": 0,
+      "already_in_stock": 100,
+      "failed": 0,
+      "rollback_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-p1-availability-in-stock-policy-resumable-scale-batch-01-rollback-20260512T234939Z.jsonl"
+    },
+    {
+      "batch_no": 2,
+      "selected": 100,
+      "updated_verified_in_stock": 0,
+      "already_in_stock": 100,
+      "failed": 0,
+      "rollback_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-p1-availability-in-stock-policy-resumable-scale-batch-02-rollback-20260512T235127Z.jsonl"
+    }
+  ],
+  "not_performed": [
+    "merchant_delete",
+    "merchant_price_title_link_image_update",
+    "tiny_call",
+    "tiny_write",
+    "shopify_write",
+    "feed_update_or_fetch",
+    "database_write",
+    "pos_write",
+    "campaign_or_external_send",
+    "sourcing_or_supplier_contact"
+  ],
+  "progress_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_progress/lk-gmc-2026-05-12-p1-availability-in-stock-policy-resumable-scale-progress.jsonl",
+  "rollback_dir": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots"
+}

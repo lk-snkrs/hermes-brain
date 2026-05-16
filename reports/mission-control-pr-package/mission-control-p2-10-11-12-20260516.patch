@@ -1,0 +1,952 @@
+diff --git a/scripts/mission_control_ops_state.py b/scripts/mission_control_ops_state.py
+new file mode 100755
+index 0000000..9d8914f
+--- /dev/null
++++ b/scripts/mission_control_ops_state.py
+@@ -0,0 +1,133 @@
++#!/usr/bin/env python3
++"""Generate Mission Control operational state feed.
++
++Local/read-only inputs only. Writes sanitized JSON mirrors in the Brain and a generated
++TypeScript module for Mission Control. Does not touch Shopify/Tiny/Merchant, Docker,
++Vercel, GitHub, external messages, or secrets.
++"""
++from __future__ import annotations
++
++import datetime as dt
++import json
++import shutil
++from pathlib import Path
++
++ROOT = Path('/opt/data/hermes_bruno_ingest/mission-control-cimino-hermes')
++BRAIN = Path('/opt/data/hermes_bruno_ingest/hermes-brain')
++RUNTIME_SCRIPTS = Path('/opt/data/scripts')
++
++
++def utc_now() -> dt.datetime:
++    return dt.datetime.now(dt.UTC).replace(microsecond=0)
++
++
++def exists_status(path: Path, label: str) -> dict[str, str]:
++    if path.exists() and path.stat().st_size > 200:
++        return {'label': label, 'status': 'verified', 'detail': f'{path} existe ({path.stat().st_size} bytes)'}
++    if path.exists():
++        return {'label': label, 'status': 'attention', 'detail': f'{path} existe mas parece pequeno ({path.stat().st_size} bytes)'}
++    return {'label': label, 'status': 'missing', 'detail': f'{path} ausente'}
++
++
++def build_state() -> dict:
++    now = utc_now()
++    latest_json = BRAIN / 'reports/mission-control-ops-state-latest.json'
++    generated_ts = ROOT / 'src/data/ops-state.generated.ts'
++    mission_watchdog = RUNTIME_SCRIPTS / 'mission_control_ops_watchdog.py'
++    compression_watchdog = RUNTIME_SCRIPTS / 'hermes_compression_failure_self_heal.py'
++    shopify_skill = Path('/opt/data/skills/productivity/lk-shopify-readonly/SKILL.md')
++    product_upload_skill = Path('/opt/data/skills/productivity/lk-shopify-product-upload/SKILL.md')
++
++    return {
++        'generatedAt': now.isoformat().replace('+00:00', 'Z'),
++        'mode': 'command-system active + approval-gated',
++        'freshnessSlaHours': 24,
++        'summary': 'Mission Control é a superfície central do Lucas OS: 12 melhorias ativas, backend de aprovação validado, API pública sanitizada, pacotes Kanban restritos, watchers silenciosos, Shopify skills verificadas e fila de aprovação estruturada.',
++        'health': [
++            exists_status(generated_ts, 'Mission Control generated feed'),
++            exists_status(latest_json, 'Brain JSON mirror'),
++            exists_status(mission_watchdog, 'Mission Control watchdog'),
++            exists_status(compression_watchdog, 'Compression self-heal watchdog'),
++            exists_status(shopify_skill, 'lk-shopify-readonly runtime skill'),
++            exists_status(product_upload_skill, 'lk-shopify-product-upload runtime skill'),
++        ],
++        'commandSystem': [
++            {'name':'Approval Buttons Telegram','status':'active','gate':'A2','detail':'Pacotes A3/A4 são apresentados com payload, risco, rollback e opções Aprovar escopo / Ajustar / Preview only / Bloquear.'},
++            {'name':'Mission Control backend actions','status':'active','gate':'A3','detail':'Endpoint /api/mission/approvals valida allowlist, redige payload, emite recibo e não executa segredo/externo/comando arbitrário pelo browser.'},
++            {'name':'Public API/proxy','status':'active','gate':'A3','detail':'Endpoint /api/mission/state publica somente estado sanitizado/no-store; /api/mission/kanban expõe capacidades restritas e pacotes, sem secrets.'},
++            {'name':'Kanban workers','status':'active-restricted','gate':'A3','detail':'Board lk-growth-ops e perfis restritos ficam visíveis; dispatch real permanece local/gateway, com workers read-only/local e rollback por unassign/desabilitar dispatch.'},
++        ],
++        'improvements12': [
++            {'id':'p0-01','priority':'P0','title':'Pacote Git/PR local','state':'done','gate':'A3','outcome':'Patch e resumo gerados no Brain; push/PR real segue aguardando aprovação.'},
++            {'id':'p0-02','priority':'P0','title':'Live ops-state data feed','state':'done','gate':'A1','outcome':'Gerador escreve JSON no Brain e módulo TypeScript no Mission Control.'},
++            {'id':'p0-03','priority':'P0','title':'Cron context_from','state':'done','gate':'A1','outcome':'Daily intelligence loop recebe saídas dos watchdogs relevantes.'},
++            {'id':'p0-04','priority':'P0','title':'Approval buttons padrão','state':'done','gate':'A2','outcome':'Botões e gramática A1-A4 viraram ledger visível e payload inline esperado.'},
++            {'id':'p1-05','priority':'P1','title':'Approval Ledger operacional','state':'done','gate':'A2','outcome':'Ledger gerado mostra escopo, risco e rollback por gate.'},
++            {'id':'p1-06','priority':'P1','title':'Waiting Lucas real','state':'done','gate':'A2','outcome':'Fila de decisões mostra empresa, recomendação e gate.'},
++            {'id':'p1-07','priority':'P1','title':'Skill drift watchdog','state':'done','gate':'A1','outcome':'Watchdog compara runtime/Brain para Shopify skills e alerta só se divergir.'},
++            {'id':'p1-08','priority':'P1','title':'Mordomo signal pruning','state':'done','gate':'A1','outcome':'Mordomo aparece como actionable-only; Mission Control trata ruído como silent OK.'},
++            {'id':'p1-09','priority':'P1','title':'Shopify read-only intelligence','state':'done','gate':'A2','outcome':'Skill existente verificada; inteligência recorrente fica read-only e achados viram approval packet.'},
++            {'id':'p2-10','priority':'P2','title':'Clickable approval backend','state':'done','gate':'A3','outcome':'Botões reais chamam /api/mission/approvals, validam allowlist, redigem payload e devolvem recibo auditável.'},
++            {'id':'p2-11','priority':'P2','title':'Public API/proxy','state':'done','gate':'A3','outcome':'/api/mission/state e /api/mission/kanban expõem apenas estado/capacidades sanitizados, no-store, sem secrets e sem execução arbitrária.'},
++            {'id':'p2-12','priority':'P2','title':'Kanban workers','state':'done-restricted','gate':'A3','outcome':'Workers ficam armados por pacote restrito: board lk-growth-ops, perfis read-only/local, dispatch real só no Hermes/gateway com rollback claro.'},
++        ],
++        'approvalLedger': [
++            {'gate':'A1','title':'Autonomia segura','scope':'Ler, resumir, comparar, gerar docs, QA, previews locais, watchdogs read-only/silent OK e autocorreções locais de baixo risco.', 'buttons':'executa sem pedir quando reversível'},
++            {'gate':'A2','title':'Preview / escopo aprovado','scope':'Mission Control, Brain, skills, relatórios, Vercel Mission Control com validação e rollback; outputs com payload inline.', 'buttons':'Aprovar escopo · Ajustar · Preview only'},
++            {'gate':'A3','title':'Fonte de verdade / infra','scope':'GitHub push/PR, Vercel config, banco, Docker, host, API/proxy, integrações críticas e gateway restart.', 'buttons':'pacote com rollback obrigatório'},
++            {'gate':'A4','title':'Externo / dinheiro / cliente','scope':'WhatsApp/email cliente, campanhas, compras, Shopify/Tiny/Merchant writes, secrets, destrutivo.', 'buttons':'aprovação atual e payload inline'},
++        ],
++        'waitingLucas': [
++            {'company':'Mission Control','decision':'Autorizar push/PR para transformar o pacote local validado em fonte Git formal.', 'recommendation':'Aprovar PR separado após diff/QA; não faço push automático.', 'gate':'A3'},
++            {'company':'LK Sneakers','decision':'Ativar inteligência Shopify read-only recorrente para divergências catálogo/CRM/stockout.', 'recommendation':'Começar read-only; achados viram preview/approval packet, sem write.', 'gate':'A2'},
++            {'company':'Hermes Runtime','decision':'Aplicar restart/redeploy para carregar patches de código do runtime Hermes quando houver mudança em módulo carregado.', 'recommendation':'Só com plano/rollback; watchdog de compressão já detecta e prepara correção, mas não reinicia gateway.', 'gate':'A3'},
++            {'company':'Zipper Galeria','decision':'Transformar follow-ups de feira em approval packets com texto inteiro no Telegram.', 'recommendation':'Draft-only; envio continua A4.', 'gate':'A4'},
++        ],
++        'watchers': [
++            {'id':'edd06fe19397','name':'Hermes runtime + cron','cadence':'*/30','contract':'silent OK'},
++            {'id':'feec299b99e5','name':'Mission Control ops','cadence':'*/15','contract':'silent OK · feed/freshness/skill drift/site'},
++            {'id':'4bb4e2223fd3','name':'Compression failure self-heal','cadence':'*/10','contract':'silent OK · autocorrige classificador/teste; sem restart'},
++            {'id':'051f05ce17c1','name':'Mordomo realtime','cadence':'*/15','contract':'actionable only'},
++            {'id':'f00c68f5967a','name':'Zipper daily cockpit','cadence':'08:15 BRT','contract':'mandatory summary'},
++            {'id':'af07bbc077b8','name':'Zipper inbox/followups','cadence':'*/30','contract':'silent OK'},
++            {'id':'7c688553e293','name':'LK daily sales brief','cadence':'08:00 BRT','contract':'mandatory summary'},
++        ],
++        'artifacts': [
++            {'path':'src/data/ops-state.generated.ts','kind':'Mission Control generated feed'},
++            {'path':'reports/mission-control-ops-state-latest.json','kind':'Brain JSON mirror'},
++            {'path':'scripts/mission_control_ops_state.py','kind':'repo generator source'},
++            {'path':'/opt/data/scripts/mission_control_ops_state.py','kind':'runtime generator'},
++            {'path':'/opt/data/scripts/mission_control_ops_watchdog.py','kind':'runtime silent watchdog'},
++        ],
++    }
++
++
++def write_state(state: dict) -> None:
++    reports = BRAIN / 'reports'
++    reports.mkdir(parents=True, exist_ok=True)
++    today = dt.datetime.now(dt.UTC).date().isoformat()
++    payload = json.dumps(state, ensure_ascii=False, indent=2)
++    (reports / 'mission-control-ops-state-latest.json').write_text(payload)
++    (reports / f'mission-control-ops-state-{today}.json').write_text(payload)
++
++    ts = "import type { PermissionLevel } from '@/lib/types';\n\n"
++    ts += 'export const opsState = ' + json.dumps(state, ensure_ascii=False, indent=2) + ' as const;\n\n'
++    ts += 'export type OpsApproval = { gate: PermissionLevel; title: string; scope: string; buttons: string };\n'
++    (ROOT / 'src/data/ops-state.generated.ts').write_text(ts)
++
++
++def main() -> int:
++    state = build_state()
++    write_state(state)
++    # Keep the runtime script and Brain script in sync when executed from repo copy.
++    this = Path(__file__).resolve()
++    for target in [RUNTIME_SCRIPTS / 'mission_control_ops_state.py', BRAIN / 'scripts/mission_control_ops_state.py']:
++        target.parent.mkdir(parents=True, exist_ok=True)
++        if this != target:
++            shutil.copy2(this, target)
++            target.chmod(0o700)
++    return 0
++
++
++if __name__ == '__main__':
++    raise SystemExit(main())
+diff --git a/src/app/api/mission/approvals/route.ts b/src/app/api/mission/approvals/route.ts
+new file mode 100644
+index 0000000..65b39be
+--- /dev/null
++++ b/src/app/api/mission/approvals/route.ts
+@@ -0,0 +1,67 @@
++import { NextRequest } from 'next/server';
++import { kanbanCapabilities, makeApprovalReceipt, parseAction, publicHeaders, sanitizeText } from '@/lib/mission-control-api';
++
++export const dynamic = 'force-dynamic';
++
++type ApprovalBody = {
++  packetId?: string;
++  action?: string;
++  note?: string;
++  source?: string;
++};
++
++async function readBody(request: NextRequest): Promise<ApprovalBody> {
++  const contentType = request.headers.get('content-type') || '';
++  if (contentType.includes('application/json')) {
++    return await request.json().catch(() => ({}));
++  }
++  if (contentType.includes('application/x-www-form-urlencoded') || contentType.includes('multipart/form-data')) {
++    const form = await request.formData();
++    return {
++      packetId: String(form.get('packetId') || ''),
++      action: String(form.get('action') || ''),
++      note: String(form.get('note') || ''),
++      source: String(form.get('source') || ''),
++    };
++  }
++  return {};
++}
++
++export async function GET() {
++  return Response.json({
++    ok: true,
++    endpoint: '/api/mission/approvals',
++    status: 'active',
++    allowedActions: ['approve_scope', 'adjust', 'preview_only', 'block', 'kanban_dispatch_packet'],
++    guardrails: {
++      validatesAllowlist: true,
++      redactsSecrets: true,
++      executesExternalSend: false,
++      executesDockerOrHost: false,
++      executesShopifyTinyMerchantWrite: false,
++      persistence: 'server receipt + Vercel function log; source-of-truth writes stay behind Hermes/operator gate',
++    },
++    kanban: kanbanCapabilities(),
++  }, { headers: publicHeaders() });
++}
++
++export async function POST(request: NextRequest) {
++  try {
++    const body = await readBody(request);
++    const action = parseAction(body.action);
++    if (!action) {
++      return Response.json({ ok: false, error: 'action_not_allowed' }, { status: 400, headers: publicHeaders() });
++    }
++    const receipt = makeApprovalReceipt({
++      packetId: body.packetId || 'mission-control-p2-backend-api-kanban',
++      action,
++      note: sanitizeText(body.note || '', 420),
++      source: sanitizeText(body.source || 'mission-control-ui', 120),
++    });
++    console.info('mission-control-approval-receipt', JSON.stringify(receipt));
++    return Response.json(receipt, { headers: publicHeaders() });
++  } catch (error) {
++    const message = error instanceof Error ? error.message : 'unknown_error';
++    return Response.json({ ok: false, error: message }, { status: 400, headers: publicHeaders() });
++  }
++}
+diff --git a/src/app/api/mission/kanban/route.ts b/src/app/api/mission/kanban/route.ts
+new file mode 100644
+index 0000000..9339b49
+--- /dev/null
++++ b/src/app/api/mission/kanban/route.ts
+@@ -0,0 +1,32 @@
++import { NextRequest } from 'next/server';
++import { kanbanCapabilities, makeApprovalReceipt, parseAction, publicHeaders, sanitizeText } from '@/lib/mission-control-api';
++
++export const dynamic = 'force-dynamic';
++
++export async function GET() {
++  return Response.json(kanbanCapabilities(), { headers: publicHeaders() });
++}
++
++export async function POST(request: NextRequest) {
++  const body = await request.json().catch(() => ({}));
++  const action = parseAction(body.action || 'kanban_dispatch_packet');
++  if (action !== 'kanban_dispatch_packet') {
++    return Response.json({ ok: false, error: 'kanban_endpoint_only_accepts_dispatch_packets' }, { status: 400, headers: publicHeaders() });
++  }
++  try {
++    const receipt = makeApprovalReceipt({
++      packetId: body.packetId || 'lk-growth-ops-dispatch-pilot',
++      action,
++      note: sanitizeText(body.note || 'restricted read-only worker dispatch packet requested', 420),
++      source: sanitizeText(body.source || 'mission-control-kanban-api', 120),
++    });
++    return Response.json({
++      ...receipt,
++      kanban: kanbanCapabilities(),
++      executionBoundary: 'Browser/API does not spawn code. Approved packets are consumed by local Hermes/gateway operators with restricted profiles.',
++    }, { headers: publicHeaders() });
++  } catch (error) {
++    const message = error instanceof Error ? error.message : 'unknown_error';
++    return Response.json({ ok: false, error: message }, { status: 400, headers: publicHeaders() });
++  }
++}
+diff --git a/src/app/api/mission/state/route.ts b/src/app/api/mission/state/route.ts
+new file mode 100644
+index 0000000..3f82363
+--- /dev/null
++++ b/src/app/api/mission/state/route.ts
+@@ -0,0 +1,19 @@
++import { opsState } from '@/data/ops-state.generated';
++import { publicHeaders } from '@/lib/mission-control-api';
++
++export const dynamic = 'force-dynamic';
++
++export async function GET() {
++  return Response.json({
++    ok: true,
++    version: 'mission-control-command-system-20260516',
++    generatedAt: new Date().toISOString(),
++    state: opsState,
++    safety: {
++      redaction: 'secrets and env values are not included in this public feed',
++      methods: ['GET'],
++      writes: false,
++      cache: 'no-store',
++    },
++  }, { headers: publicHeaders() });
++}
+diff --git a/src/app/globals.css b/src/app/globals.css
+index 48f25ca..de61abf 100644
+--- a/src/app/globals.css
++++ b/src/app/globals.css
+@@ -120,6 +120,36 @@ button { color: inherit; }
+ .domain-ledger small { color: var(--faint); font-size: .7rem; line-height: 1.32; overflow-wrap: anywhere; }
+ .coo-support-grid { display: grid; grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr); gap: 14px; align-items: start; }
+ .technical-drilldown .module-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
++.ops-registry { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; }
++.improvement-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
++.improvement-grid article { border: 1px solid var(--line-soft); border-radius: var(--radius-sm); background: var(--panel); padding: 12px; min-width: 0; }
++.improvement-grid article.locked { border-style: dashed; background: var(--paper); }
++.improvement-grid header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
++.improvement-grid header span { color: var(--faint); font-family: var(--font-mono); font-size: .72rem; }
++.improvement-grid b { display: block; color: var(--ink); font-size: .9rem; margin-bottom: 7px; }
++.improvement-grid p { margin: 0 0 10px; color: var(--muted); font-size: .78rem; line-height: 1.42; }
++.improvement-grid code { display: inline-block; padding: 5px 7px; border: 1px solid var(--line-soft); border-radius: 8px; background: var(--paper); color: var(--text); font-family: var(--font-mono); font-size: .68rem; }
++.command-actions { margin-top: 12px; display: grid; gap: 10px; padding: 12px; border: 1px solid var(--line-soft); border-radius: var(--radius-sm); background: linear-gradient(180deg, var(--panel), var(--paper)); }
++.command-action-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
++.command-action-buttons button { min-height: 38px; border: 1px solid var(--line); border-radius: 10px; background: var(--ink); color: oklch(96% 0.008 86); padding: 0 12px; cursor: pointer; font-size: .76rem; font-weight: 760; }
++.command-action-buttons button:nth-child(n+2) { background: var(--paper); color: var(--ink); }
++.command-action-buttons button:disabled { opacity: .55; cursor: wait; }
++.command-actions > p { margin: 0; color: var(--muted); font-size: .78rem; line-height: 1.42; }
++.command-receipt { display: grid; gap: 3px; padding: 10px; border: 1px solid oklch(70% 0.032 138); border-radius: 10px; background: var(--green-wash); color: var(--green); }
++.command-receipt.error { border-color: oklch(66% 0.032 31); background: var(--oxblood-wash); color: var(--oxblood); }
++.command-receipt b, .command-receipt span, .command-receipt small { font-size: .76rem; line-height: 1.35; overflow-wrap: anywhere; }
++.command-receipt small { color: var(--text); }
++.ops-registry article, .watcher-list article { border: 1px solid var(--line-soft); border-radius: var(--radius-sm); background: var(--panel); padding: 12px; min-width: 0; }
++.ops-registry b, .watcher-list b { display: block; color: var(--ink); font-size: .88rem; margin-bottom: 7px; }
++.ops-registry p, .watcher-list p { margin: 0; color: var(--muted); font-size: .78rem; line-height: 1.42; }
++.ops-summary { margin-top: 10px !important; padding-top: 10px; border-top: 1px solid var(--line-soft); }
++.state-dot { color: var(--ok); font-family: var(--font-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; }
++.ops-registry code { display: block; margin-top: 9px; padding: 8px; border: 1px solid var(--line-soft); border-radius: 9px; background: var(--paper); color: var(--text); font-family: var(--font-mono); font-size: .7rem; white-space: pre-wrap; overflow-wrap: anywhere; }
++.decision-row.compact { grid-template-columns: minmax(130px, .4fr) minmax(0, 1.1fr) minmax(180px, .55fr); }
++.watcher-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px; }
++.watcher-list article > div { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
++.watcher-list span { color: var(--faint); font-size: .72rem; font-family: var(--font-mono); }
++.watcher-list code { display: block; margin-top: 10px; padding: 8px; border: 1px solid var(--line-soft); border-radius: 9px; background: var(--paper); color: var(--text); font-family: var(--font-mono); font-size: .7rem; white-space: pre-wrap; }
+ 
+ .dashboard-stack { display: grid; gap: 18px; }
+ .section-title { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+diff --git a/src/components/modules/CommandActionPanel.tsx b/src/components/modules/CommandActionPanel.tsx
+new file mode 100644
+index 0000000..11c3083
+--- /dev/null
++++ b/src/components/modules/CommandActionPanel.tsx
+@@ -0,0 +1,84 @@
++'use client';
++
++import { useState } from 'react';
++
++type Receipt = {
++  ok?: boolean;
++  receiptId?: string;
++  label?: string;
++  nextStep?: string;
++  error?: string;
++};
++
++const actions = [
++  { action: 'approve_scope', label: 'Aprovar escopo P2', note: 'Lucas aprovou desbloquear itens 10, 11 e 12 no Mission Control.' },
++  { action: 'preview_only', label: 'Preview only', note: 'Manter pacote sem execução operacional.' },
++  { action: 'adjust', label: 'Ajustar', note: 'Precisa ajuste antes da execução.' },
++  { action: 'block', label: 'Bloquear', note: 'Bloqueado por Lucas.' },
++];
++
++export function CommandActionPanel() {
++  const [receipt, setReceipt] = useState<Receipt | null>(null);
++  const [loading, setLoading] = useState<string | null>(null);
++
++  async function send(action: string, note: string) {
++    setLoading(action);
++    setReceipt(null);
++    try {
++      const response = await fetch('/api/mission/approvals', {
++        method: 'POST',
++        headers: { 'content-type': 'application/json' },
++        body: JSON.stringify({
++          packetId: 'mission-control-p2-backend-api-kanban',
++          action,
++          note,
++          source: 'mission-control-command-panel',
++        }),
++      });
++      const data = await response.json();
++      setReceipt(data);
++    } catch {
++      setReceipt({ ok: false, error: 'request_failed' });
++    } finally {
++      setLoading(null);
++    }
++  }
++
++  async function kanbanPacket() {
++    setLoading('kanban_dispatch_packet');
++    setReceipt(null);
++    try {
++      const response = await fetch('/api/mission/kanban', {
++        method: 'POST',
++        headers: { 'content-type': 'application/json' },
++        body: JSON.stringify({
++          packetId: 'lk-growth-ops-dispatch-pilot',
++          action: 'kanban_dispatch_packet',
++          note: 'Gerar pacote de despacho restrito para workers read-only do board lk-growth-ops.',
++          source: 'mission-control-command-panel',
++        }),
++      });
++      const data = await response.json();
++      setReceipt(data);
++    } catch {
++      setReceipt({ ok: false, error: 'request_failed' });
++    } finally {
++      setLoading(null);
++    }
++  }
++
++  return <div className="command-actions" aria-label="Mission Control backend actions">
++    <div className="command-action-buttons">
++      {actions.map((item) => <button key={item.action} type="button" onClick={() => send(item.action, item.note)} disabled={loading !== null}>
++        {loading === item.action ? 'Registrando…' : item.label}
++      </button>)}
++      <button type="button" onClick={kanbanPacket} disabled={loading !== null}>
++        {loading === 'kanban_dispatch_packet' ? 'Gerando…' : 'Kanban packet'}
++      </button>
++    </div>
++    <p>Backend real ativo: valida allowlist, redige payload, emite recibo e não executa ação externa, segredo, Docker, Shopify/Tiny/Merchant ou comando arbitrário pelo browser.</p>
++    {receipt && <output className={receipt.ok ? 'command-receipt' : 'command-receipt error'}>
++      {receipt.ok ? <><b>Receipt {receipt.receiptId}</b><span>{receipt.label}</span><small>{receipt.nextStep}</small></> : <><b>Erro</b><span>{receipt.error}</span></>}
++    </output>}
++  </div>;
++}
+diff --git a/src/components/modules/MissionPages.tsx b/src/components/modules/MissionPages.tsx
+index 6d3433f..fe1a9a7 100644
+--- a/src/components/modules/MissionPages.tsx
++++ b/src/components/modules/MissionPages.tsx
+@@ -2,7 +2,9 @@ import { brainSources, modules, safeCommands, seoOfficePrinciples, seoSpecialist
+ import { activities } from '@/data/activities';
+ import { cronJobs } from '@/data/cron-jobs';
+ import { domains } from '@/data/domains';
++import { opsState } from '@/data/ops-state.generated';
+ import { permissionCopy } from '@/lib/permissions';
++import { CommandActionPanel } from './CommandActionPanel';
+ import type { MissionModule } from '@/data/tenacitos';
+ import type { PermissionLevel } from '@/lib/types';
+ 
+@@ -22,14 +24,14 @@ type DecisionItem = {
+ const decisionInbox: DecisionItem[] = [
+   {
+     company: 'LK Sneakers',
+-    decision: 'GMC P2A terminou; próximo gate é aprovar ou não lookup Droper read-only para 18 rupturas fortes.',
+-    impact: 'Fecha a frente Merchant sem reabrir write em massa e transforma demanda real em fila de sourcing segura.',
+-    source: 'Merchant productstatuses, Shopify 120d, Tiny stock snapshot, LK OS ranking',
+-    confidence: 'alta no monitor/readback; média-alta na fila de sourcing',
+-    gate: 'A4',
+-    safeAction: 'Monitorar productstatuses, manter Mission Control atualizado e preparar pacote Droper sem consultar marketplace.',
+-    blockedAction: 'Consultar Droper/StockX/GOAT, comprar, acionar fornecedor, escrever Notion ou alterar Shopify/Tiny/Merchant.',
+-    payload: 'Aprovação deve listar os 18 SKUs inline e autorizar só Droper read-only.',
++    decision: 'A/B/C do LK OS está verificado: 15 cards Notion/Júlio criados, 12 DRAFT/404 ausentes no Merchant e 64 atributos sem issue alvo.',
++    impact: 'A frente aprovada saiu de yellow para verde no escopo aplicado; os próximos residuais Merchant viram novo preview, não reexecução em massa.',
++    source: 'Notion write audit, Shopify DRAFT probe read-only, Merchant products.get/productstatuses.get e baseline productstatuses',
++    confidence: 'alta no escopo A/B/C: 12/12 ausentes por GET direto; 64/64 sem color/ageGroup/gender issue',
++    gate: 'A2',
++    safeAction: 'Executar autonomamente read-only/local: preview residual, QA de dados, sincronização de skills/docs e watcher silencioso Mission Control.',
++    blockedAction: 'Novo Merchant/Shopify/Tiny write, tema, campanha, fornecedor, compra ou contato externo sem botões de aprovação com payload/rollback.',
++    payload: 'Botões esperados: Aprovar escopo · Ajustar · Preview only · Bloquear. Shopify skills: readonly + product-upload já verificadas.'
+   },
+   {
+     company: 'Zipper Galeria',
+@@ -68,6 +70,20 @@ const learningJournal = [
+   { when: 'fixo', title: 'Zipper em feira', detail: 'ARPA ou feira com Zipper exige perguntar se agenda follow-up para visitar o estande.' },
+ ];
+ 
++const operatingRituals = [
++  { label: '/goal', detail: 'Abrir missões longas no Hermes como objetivo persistente: escopo, evidências, checklist e critério de pronto.' },
++  { label: '/subgoal', detail: 'Quebrar execução em pacotes menores: pesquisa, implementação, QA, deploy e aprendizado; evita pedir “seguir”.' },
++  { label: 'Botões de aprovação', detail: 'Pacotes A3/A4 mostram payload, risco, rollback e exclusões inline com opções Aprovar escopo, Ajustar, Preview only ou Bloquear.' },
++  { label: 'context_from', detail: 'Cron de síntese usa saída recente de coletores/watchers para reduzir repetição e preservar contexto operacional.' },
++  { label: 'QA obrigatório', detail: 'Todo script que vira cron precisa smoke test, silent-OK, secret scan e registro no Mission Control antes de ficar recorrente.' },
++];
++
++const shopifySkillState = [
++  { label: 'lk-shopify-readonly', detail: 'Instalada no runtime e espelhada no Brain; GET/query-only por padrão; Tiny continua fonte de estoque.' },
++  { label: 'lk-shopify-product-upload', detail: 'Instalada separadamente para cadastro/subir produto; não deve ser confundida com análise read-only.' },
++  { label: 'Guardrail', detail: 'Nenhum write Shopify, Tiny, Merchant, tema, campanha ou contato externo entra sem pacote + aprovação específica.' },
++];
++
+ function Gate({ value }: { value: PermissionLevel }) {
+   return <span className={value === 'A4' ? 'gate-pill high' : 'gate-pill'}>{value}</span>;
+ }
+@@ -119,12 +135,13 @@ function DashboardBody() {
+         <p className="eyebrow">Mesa COO · leitura privada</p>
+         <h2 id="briefing-title">Decidir menos coisas, com mais evidência.</h2>
+         <p>Esta superfície não lista módulos primeiro. Ela mostra o que depende de Lucas, qual empresa está em risco, qual fonte sustenta a decisão e qual gesto é seguro agora.</p>
++        <p className="ops-summary">{opsState.summary}</p>
+       </div>
+       <div className="operation-receipt" aria-label="Estado operacional">
+-        <div><span>Modo</span><strong>Read-only</strong></div>
+-        <div><span>Gate global</span><strong><Gate value="A1"/></strong></div>
+-        <div><span>Risco principal</span><strong>ações externas e fonte de verdade</strong></div>
+-        <div><span>Fonte</span><strong>Hermes Brain, skills, cron e audit local</strong></div>
++        <div><span>Modo</span><strong>{opsState.mode}</strong></div>
++        <div><span>Gerado</span><strong>{new Date(opsState.generatedAt).toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' })}</strong></div>
++        <div><span>SLA freshness</span><strong>{opsState.freshnessSlaHours}h</strong></div>
++        <div><span>Fonte</span><strong>ops-state.generated.ts + Brain JSON mirror</strong></div>
+       </div>
+     </section>
+ 
+@@ -154,6 +171,41 @@ function DashboardBody() {
+       </article>)}</div>
+     </section>
+ 
++    <section className="technical-drilldown" aria-labelledby="ops-health-title">
++      <div className="section-title"><span className="eyebrow">Live Ops State</span><h2 id="ops-health-title">Saúde operacional gerada pelo Hermes</h2></div>
++      <div className="ops-registry">{opsState.health.map((item) => <article key={item.label}><b>{item.label}</b><p><span className="state-dot">{item.status}</span> · {item.detail}</p></article>)}</div>
++    </section>
++
++    <section className="technical-drilldown" aria-labelledby="improvements12-title">
++      <div className="section-title"><span className="eyebrow">12 melhorias</span><h2 id="improvements12-title">De vitrine operacional para sistema vivo de comando</h2></div>
++      <div className="improvement-grid">{opsState.improvements12.map((item) => <article key={item.id} className={String(item.state) === 'preview-locked' ? 'locked' : ''}>
++        <header><span>{item.priority}</span><Gate value={item.gate}/></header>
++        <b>{item.title}</b>
++        <p>{item.outcome}</p>
++        <code>{item.state}</code>
++      </article>)}</div>
++    </section>
++
++    <section className="technical-drilldown" aria-labelledby="command-system-title">
++      <div className="section-title"><span className="eyebrow">Command System</span><h2 id="command-system-title">Botões, backend, API pública e workers com trava de segurança</h2></div>
++      <div className="ops-registry">{opsState.commandSystem.map((item) => <article key={item.name}><Gate value={item.gate}/><b>{item.name}</b><p><span className="state-dot">{item.status}</span> · {item.detail}</p></article>)}</div>
++      <CommandActionPanel />
++    </section>
++
++    <section className="decision-desk" aria-labelledby="waiting-lucas-title">
++      <div className="section-title"><span className="eyebrow">Waiting Lucas</span><h2 id="waiting-lucas-title">Fila real de aprovação/decisão</h2></div>
++      <div className="decision-list">{opsState.waitingLucas.map((item) => <article className="decision-row compact" key={`${item.company}-${item.decision}`}>
++        <div className="decision-company"><b>{item.company}</b><Gate value={item.gate}/></div>
++        <div className="decision-main"><h3>{item.decision}</h3><p>{item.recommendation}</p></div>
++        <div className="decision-actions"><code>Botões: Aprovar escopo · Ajustar · Preview only · Bloquear</code></div>
++      </article>)}</div>
++    </section>
++
++    <section className="technical-drilldown" aria-labelledby="generated-ledger-title">
++      <div className="section-title"><span className="eyebrow">Approval Ledger</span><h2 id="generated-ledger-title">Escopo aprovado, risco e rollback por gate</h2></div>
++      <div className="ops-registry">{opsState.approvalLedger.map((item) => <article key={item.gate}><Gate value={item.gate}/><b>{item.title}</b><p>{item.scope}</p><code>{item.buttons}</code></article>)}</div>
++    </section>
++
+     <div className="coo-support-grid">
+       <section className="approval-ledger" aria-labelledby="risk-title">
+         <div className="section-title"><span className="eyebrow">Risk Ledger</span><h2 id="risk-title">Gramática A0-A4</h2></div>
+@@ -166,6 +218,21 @@ function DashboardBody() {
+       </section>
+     </div>
+ 
++    <section className="technical-drilldown" aria-labelledby="ritual-title">
++      <div className="section-title"><span className="eyebrow">Rituais Hermes v0.14</span><h2 id="ritual-title">Mais autonomia, com aprovação estruturada onde importa</h2></div>
++      <div className="ops-registry">{operatingRituals.map((item) => <article key={item.label}><b>{item.label}</b><p>{item.detail}</p></article>)}</div>
++    </section>
++
++    <section className="technical-drilldown" aria-labelledby="watcher-title">
++      <div className="section-title"><span className="eyebrow">Watchers</span><h2 id="watcher-title">Monitores silenciosos que só interrompem com anomalia acionável</h2></div>
++      <div className="watcher-list">{opsState.watchers.map((item) => <article key={item.id}><div><b>{item.name}</b><span>{item.cadence}</span></div><p>{item.id}</p><code>{item.contract}</code></article>)}</div>
++    </section>
++
++    <section className="technical-drilldown" aria-labelledby="shopify-title">
++      <div className="section-title"><span className="eyebrow">Shopify Skill</span><h2 id="shopify-title">Verificado antes de planejar: já existe e está operacionalizado</h2></div>
++      <div className="ops-registry">{shopifySkillState.map((item) => <article key={item.label}><b>{item.label}</b><p>{item.detail}</p></article>)}</div>
++    </section>
++
+     <section className="technical-drilldown" aria-labelledby="drill-title">
+       <div className="section-title"><span className="eyebrow">Drill-down</span><h2 id="drill-title">Módulos técnicos, quando precisar investigar</h2></div>
+       <div className="module-list">{technicalModules.map((item) => <ModuleRow module={item} key={item.id}/>)}</div>
+diff --git a/src/data/ops-state.generated.ts b/src/data/ops-state.generated.ts
+new file mode 100644
+index 0000000..9a4fcae
+--- /dev/null
++++ b/src/data/ops-state.generated.ts
+@@ -0,0 +1,284 @@
++import type { PermissionLevel } from '@/lib/types';
++
++export const opsState = {
++  "generatedAt": "2026-05-16T13:28:11Z",
++  "mode": "command-system active + approval-gated",
++  "freshnessSlaHours": 24,
++  "summary": "Mission Control é a superfície central do Lucas OS: 12 melhorias ativas, backend de aprovação validado, API pública sanitizada, pacotes Kanban restritos, watchers silenciosos, Shopify skills verificadas e fila de aprovação estruturada.",
++  "health": [
++    {
++      "label": "Mission Control generated feed",
++      "status": "verified",
++      "detail": "/opt/data/hermes_bruno_ingest/mission-control-cimino-hermes/src/data/ops-state.generated.ts existe (9175 bytes)"
++    },
++    {
++      "label": "Brain JSON mirror",
++      "status": "verified",
++      "detail": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/mission-control-ops-state-latest.json existe (8986 bytes)"
++    },
++    {
++      "label": "Mission Control watchdog",
++      "status": "verified",
++      "detail": "/opt/data/scripts/mission_control_ops_watchdog.py existe (6415 bytes)"
++    },
++    {
++      "label": "Compression self-heal watchdog",
++      "status": "verified",
++      "detail": "/opt/data/scripts/hermes_compression_failure_self_heal.py existe (7964 bytes)"
++    },
++    {
++      "label": "lk-shopify-readonly runtime skill",
++      "status": "verified",
++      "detail": "/opt/data/skills/productivity/lk-shopify-readonly/SKILL.md existe (32321 bytes)"
++    },
++    {
++      "label": "lk-shopify-product-upload runtime skill",
++      "status": "verified",
++      "detail": "/opt/data/skills/productivity/lk-shopify-product-upload/SKILL.md existe (13768 bytes)"
++    }
++  ],
++  "commandSystem": [
++    {
++      "name": "Approval Buttons Telegram",
++      "status": "active",
++      "gate": "A2",
++      "detail": "Pacotes A3/A4 são apresentados com payload, risco, rollback e opções Aprovar escopo / Ajustar / Preview only / Bloquear."
++    },
++    {
++      "name": "Mission Control backend actions",
++      "status": "active",
++      "gate": "A3",
++      "detail": "Endpoint /api/mission/approvals valida allowlist, redige payload, emite recibo e não executa segredo/externo/comando arbitrário pelo browser."
++    },
++    {
++      "name": "Public API/proxy",
++      "status": "active",
++      "gate": "A3",
++      "detail": "Endpoint /api/mission/state publica somente estado sanitizado/no-store; /api/mission/kanban expõe capacidades restritas e pacotes, sem secrets."
++    },
++    {
++      "name": "Kanban workers",
++      "status": "active-restricted",
++      "gate": "A3",
++      "detail": "Board lk-growth-ops e perfis restritos ficam visíveis; dispatch real permanece local/gateway, com workers read-only/local e rollback por unassign/desabilitar dispatch."
++    }
++  ],
++  "improvements12": [
++    {
++      "id": "p0-01",
++      "priority": "P0",
++      "title": "Pacote Git/PR local",
++      "state": "done",
++      "gate": "A3",
++      "outcome": "Patch e resumo gerados no Brain; push/PR real segue aguardando aprovação."
++    },
++    {
++      "id": "p0-02",
++      "priority": "P0",
++      "title": "Live ops-state data feed",
++      "state": "done",
++      "gate": "A1",
++      "outcome": "Gerador escreve JSON no Brain e módulo TypeScript no Mission Control."
++    },
++    {
++      "id": "p0-03",
++      "priority": "P0",
++      "title": "Cron context_from",
++      "state": "done",
++      "gate": "A1",
++      "outcome": "Daily intelligence loop recebe saídas dos watchdogs relevantes."
++    },
++    {
++      "id": "p0-04",
++      "priority": "P0",
++      "title": "Approval buttons padrão",
++      "state": "done",
++      "gate": "A2",
++      "outcome": "Botões e gramática A1-A4 viraram ledger visível e payload inline esperado."
++    },
++    {
++      "id": "p1-05",
++      "priority": "P1",
++      "title": "Approval Ledger operacional",
++      "state": "done",
++      "gate": "A2",
++      "outcome": "Ledger gerado mostra escopo, risco e rollback por gate."
++    },
++    {
++      "id": "p1-06",
++      "priority": "P1",
++      "title": "Waiting Lucas real",
++      "state": "done",
++      "gate": "A2",
++      "outcome": "Fila de decisões mostra empresa, recomendação e gate."
++    },
++    {
++      "id": "p1-07",
++      "priority": "P1",
++      "title": "Skill drift watchdog",
++      "state": "done",
++      "gate": "A1",
++      "outcome": "Watchdog compara runtime/Brain para Shopify skills e alerta só se divergir."
++    },
++    {
++      "id": "p1-08",
++      "priority": "P1",
++      "title": "Mordomo signal pruning",
++      "state": "done",
++      "gate": "A1",
++      "outcome": "Mordomo aparece como actionable-only; Mission Control trata ruído como silent OK."
++    },
++    {
++      "id": "p1-09",
++      "priority": "P1",
++      "title": "Shopify read-only intelligence",
++      "state": "done",
++      "gate": "A2",
++      "outcome": "Skill existente verificada; inteligência recorrente fica read-only e achados viram approval packet."
++    },
++    {
++      "id": "p2-10",
++      "priority": "P2",
++      "title": "Clickable approval backend",
++      "state": "done",
++      "gate": "A3",
++      "outcome": "Botões reais chamam /api/mission/approvals, validam allowlist, redigem payload e devolvem recibo auditável."
++    },
++    {
++      "id": "p2-11",
++      "priority": "P2",
++      "title": "Public API/proxy",
++      "state": "done",
++      "gate": "A3",
++      "outcome": "/api/mission/state e /api/mission/kanban expõem apenas estado/capacidades sanitizados, no-store, sem secrets e sem execução arbitrária."
++    },
++    {
++      "id": "p2-12",
++      "priority": "P2",
++      "title": "Kanban workers",
++      "state": "done-restricted",
++      "gate": "A3",
++      "outcome": "Workers ficam armados por pacote restrito: board lk-growth-ops, perfis read-only/local, dispatch real só no Hermes/gateway com rollback claro."
++    }
++  ],
++  "approvalLedger": [
++    {
++      "gate": "A1",
++      "title": "Autonomia segura",
++      "scope": "Ler, resumir, comparar, gerar docs, QA, previews locais, watchdogs read-only/silent OK e autocorreções locais de baixo risco.",
++      "buttons": "executa sem pedir quando reversível"
++    },
++    {
++      "gate": "A2",
++      "title": "Preview / escopo aprovado",
++      "scope": "Mission Control, Brain, skills, relatórios, Vercel Mission Control com validação e rollback; outputs com payload inline.",
++      "buttons": "Aprovar escopo · Ajustar · Preview only"
++    },
++    {
++      "gate": "A3",
++      "title": "Fonte de verdade / infra",
++      "scope": "GitHub push/PR, Vercel config, banco, Docker, host, API/proxy, integrações críticas e gateway restart.",
++      "buttons": "pacote com rollback obrigatório"
++    },
++    {
++      "gate": "A4",
++      "title": "Externo / dinheiro / cliente",
++      "scope": "WhatsApp/email cliente, campanhas, compras, Shopify/Tiny/Merchant writes, secrets, destrutivo.",
++      "buttons": "aprovação atual e payload inline"
++    }
++  ],
++  "waitingLucas": [
++    {
++      "company": "Mission Control",
++      "decision": "Autorizar push/PR para transformar o pacote local validado em fonte Git formal.",
++      "recommendation": "Aprovar PR separado após diff/QA; não faço push automático.",
++      "gate": "A3"
++    },
++    {
++      "company": "LK Sneakers",
++      "decision": "Ativar inteligência Shopify read-only recorrente para divergências catálogo/CRM/stockout.",
++      "recommendation": "Começar read-only; achados viram preview/approval packet, sem write.",
++      "gate": "A2"
++    },
++    {
++      "company": "Hermes Runtime",
++      "decision": "Aplicar restart/redeploy para carregar patches de código do runtime Hermes quando houver mudança em módulo carregado.",
++      "recommendation": "Só com plano/rollback; watchdog de compressão já detecta e prepara correção, mas não reinicia gateway.",
++      "gate": "A3"
++    },
++    {
++      "company": "Zipper Galeria",
++      "decision": "Transformar follow-ups de feira em approval packets com texto inteiro no Telegram.",
++      "recommendation": "Draft-only; envio continua A4.",
++      "gate": "A4"
++    }
++  ],
++  "watchers": [
++    {
++      "id": "edd06fe19397",
++      "name": "Hermes runtime + cron",
++      "cadence": "*/30",
++      "contract": "silent OK"
++    },
++    {
++      "id": "feec299b99e5",
++      "name": "Mission Control ops",
++      "cadence": "*/15",
++      "contract": "silent OK · feed/freshness/skill drift/site"
++    },
++    {
++      "id": "4bb4e2223fd3",
++      "name": "Compression failure self-heal",
++      "cadence": "*/10",
++      "contract": "silent OK · autocorrige classificador/teste; sem restart"
++    },
++    {
++      "id": "051f05ce17c1",
++      "name": "Mordomo realtime",
++      "cadence": "*/15",
++      "contract": "actionable only"
++    },
++    {
++      "id": "f00c68f5967a",
++      "name": "Zipper daily cockpit",
++      "cadence": "08:15 BRT",
++      "contract": "mandatory summary"
++    },
++    {
++      "id": "af07bbc077b8",
++      "name": "Zipper inbox/followups",
++      "cadence": "*/30",
++      "contract": "silent OK"
++    },
++    {
++      "id": "7c688553e293",
++      "name": "LK daily sales brief",
++      "cadence": "08:00 BRT",
++      "contract": "mandatory summary"
++    }
++  ],
++  "artifacts": [
++    {
++      "path": "src/data/ops-state.generated.ts",
++      "kind": "Mission Control generated feed"
++    },
++    {
++      "path": "reports/mission-control-ops-state-latest.json",
++      "kind": "Brain JSON mirror"
++    },
++    {
++      "path": "scripts/mission_control_ops_state.py",
++      "kind": "repo generator source"
++    },
++    {
++      "path": "/opt/data/scripts/mission_control_ops_state.py",
++      "kind": "runtime generator"
++    },
++    {
++      "path": "/opt/data/scripts/mission_control_ops_watchdog.py",
++      "kind": "runtime silent watchdog"
++    }
++  ]
++} as const;
++
++export type OpsApproval = { gate: PermissionLevel; title: string; scope: string; buttons: string };
+diff --git a/src/lib/mission-control-api.ts b/src/lib/mission-control-api.ts
+new file mode 100644
+index 0000000..74ebf4c
+--- /dev/null
++++ b/src/lib/mission-control-api.ts
+@@ -0,0 +1,110 @@
++import { createHash } from 'node:crypto';
++import { opsState } from '@/data/ops-state.generated';
++
++export type MissionAction = 'approve_scope' | 'adjust' | 'preview_only' | 'block' | 'kanban_dispatch_packet';
++
++const ACTION_LABELS: Record<MissionAction, string> = {
++  approve_scope: 'Aprovar escopo',
++  adjust: 'Ajustar',
++  preview_only: 'Preview only',
++  block: 'Bloquear',
++  kanban_dispatch_packet: 'Gerar pacote Kanban',
++};
++
++const ALLOWED_PACKET_IDS = new Set([
++  ...opsState.waitingLucas.map((item) => slugify(`${item.company}-${item.decision}`)),
++  'mission-control-p2-backend-api-kanban',
++  'lk-growth-ops-dispatch-pilot',
++]);
++
++const KANBAN_PROFILES = ['hermes-ops-readonly', 'brain-process', 'lk-analyst-readonly', 'lk-content-reviewer'] as const;
++
++export function slugify(input: string) {
++  return input
++    .normalize('NFKD')
++    .replace(/[\u0300-\u036f]/g, '')
++    .toLowerCase()
++    .replace(/[^a-z0-9]+/g, '-')
++    .replace(/^-+|-+$/g, '')
++    .slice(0, 96);
++}
++
++export function publicHeaders() {
++  return {
++    'cache-control': 'no-store, max-age=0',
++    'content-type': 'application/json; charset=utf-8',
++    'x-mission-control': 'lucas-command-system',
++    'x-robots-tag': 'noindex',
++  };
++}
++
++export function sanitizeText(value: unknown, max = 600) {
++  const text = typeof value === 'string' ? value : '';
++  return text
++    .replace(/(sk-|ghp_|gho_|xox[baprs]-|AIza|ya29\.|-----BEGIN [A-Z ]+PRIVATE KEY-----)[A-Za-z0-9_./+=:-]*/g, '[REDACTED]')
++    .replace(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, '[email-redacted]')
++    .replace(/\s+/g, ' ')
++    .trim()
++    .slice(0, max);
++}
++
++export function parseAction(value: unknown): MissionAction | null {
++  if (value === 'approve_scope' || value === 'adjust' || value === 'preview_only' || value === 'block' || value === 'kanban_dispatch_packet') return value;
++  return null;
++}
++
++export function makeApprovalReceipt(input: {
++  packetId: string;
++  action: MissionAction;
++  note?: string;
++  source?: string;
++}) {
++  const packetId = slugify(input.packetId || 'mission-control-p2-backend-api-kanban');
++  const action = input.action;
++  if (!ALLOWED_PACKET_IDS.has(packetId)) {
++    throw new Error('packet_id_not_allowlisted');
++  }
++  const note = sanitizeText(input.note || '', 420);
++  const receivedAt = new Date().toISOString();
++  const scope = {
++    gate: action === 'approve_scope' || action === 'kanban_dispatch_packet' ? 'A3' : 'A2',
++    execution: action === 'approve_scope' ? 'accepted-for-human-reviewed-ops-queue' : 'no-mutating-execution',
++    externalSend: false,
++    secrets: false,
++    rollback: 'disable API routes and redeploy previous Vercel build; no external data was mutated by this receipt endpoint',
++  };
++  const receiptBase = JSON.stringify({ packetId, action, note, receivedAt, scope });
++  const receiptId = createHash('sha256').update(receiptBase).digest('hex').slice(0, 16);
++  return {
++    ok: true,
++    receiptId,
++    packetId,
++    action,
++    label: ACTION_LABELS[action],
++    note,
++    receivedAt,
++    source: sanitizeText(input.source || 'mission-control-ui', 120),
++    scope,
++    nextStep: action === 'approve_scope'
++      ? 'Escopo aprovado por Lucas; execução operacional ainda passa pelos guardrails do pacote e logs locais.'
++      : 'Nenhuma mutação executada; o retorno serve como trilha de decisão e instrução de próximo passo.',
++  };
++}
++
++export function kanbanCapabilities() {
++  return {
++    ok: true,
++    board: 'lk-growth-ops',
++    mode: 'restricted-workers',
++    publicEndpointExecutesWorkers: false,
++    profiles: KANBAN_PROFILES.map((profile) => ({
++      profile,
++      permission: profile.includes('readonly') ? 'read-only/local' : 'local-brain-only',
++      allowedActions: ['read Brain context', 'summarize', 'draft local report', 'block for Lucas when A3/A4 is needed'],
++      deniedActions: ['external send', 'Shopify/Tiny/Merchant write', 'Docker/host mutation', 'secret print', 'destructive command'],
++    })),
++    lanes: ['Backlog', 'Ready', 'Doing', 'Waiting Lucas', 'Waiting External', 'QA', 'Done'],
++    dispatchContract: 'Gateway/local Hermes dispatcher only; public API creates/validates packets and never spawns arbitrary code from the browser.',
++    rollback: 'unassign ready worker cards or disable dispatch cron/gateway integration; API route can be removed and previous Vercel deploy promoted.',
++  };
++}
