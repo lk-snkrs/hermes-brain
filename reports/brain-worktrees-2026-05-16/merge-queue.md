@@ -104,3 +104,18 @@ O grupo **LK / email e reporting** foi exportado e teve 4 worktrees removidos co
 - relatório de preservação em `lk-email-reporting-export/`.
 
 Restam 16 worktrees além do Brain canônico.
+
+
+## Execução final — worktrees estruturais restantes
+
+Atualização: 2026-05-16.
+
+Os 16 worktrees restantes foram exportados e removidos como diretórios de worktree, preservando branches/commits.
+
+- todos estavam limpos;
+- nenhum branch foi deletado;
+- nenhum push/PR foi executado;
+- nenhum sistema externo/produção foi alterado;
+- relatório de preservação em `global-structural-export/`.
+
+Resultado final: resta apenas o Brain canônico como worktree registrado.
