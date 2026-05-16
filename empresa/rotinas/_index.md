@@ -25,6 +25,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Hermes Autonomy Ladder Lucas | `areas/operacoes/rotinas/hermes-autonomy-ladder.md` | Matriz A0-A4 de autonomia operacional: executar seguro/read-only, preparar riscos, bloquear externos/destrutivos |
 | Hermes v0.13 Próximas Melhorias | `areas/operacoes/rotinas/hermes-v013-next-improvements-plan-2026-05-10.md` | Plano de melhorias v0.13 classificadas por risco e aprovação necessária |
 | Revisão Semanal Multiempresa | `areas/operacoes/rotinas/revisao-semanal-multiempresa.md` | Revisão executiva LK/Zipper/SPITI/Hermes pelo Hermes Chief of Staff, sem ações externas |
+| Amora Templates → Hermes Geral 2026-05-16 | `areas/operacoes/rotinas/amora-templates-hermes-geral-adaptacao-2026-05-16.md` | Ingestão dos DOCX Amora, comparação com estado atual e adaptação Hermes-native de IDENTITY/SOUL/AGENTS/MAPA/HEARTBEAT |
 | Hermes Gateway Remediation Plan | `areas/operacoes/rotinas/hermes-gateway-remediation-plan.md` | Plano seguro para diagnóstico/correção do gateway Telegram sem mudança não aprovada |
 | Hermes Gateway Read-only Diagnostic 2026-05-04 | `areas/operacoes/rotinas/hermes-gateway-readonly-diagnostic-2026-05-04.md` | Diagnóstico read-only do warning gateway/cron e conflito Telegram, sem alteração de VPS/Docker |
 | Hermes Runtime Update Plan | `areas/operacoes/rotinas/hermes-runtime-update-plan.md` | Plano de update v0.9.0 → v0.12.0 com backup/rollback e aprovação |

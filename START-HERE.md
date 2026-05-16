@@ -44,6 +44,7 @@ Antes de aplicar qualquer ideia OpenClaw, responder mentalmente:
 ### 1. Comece por regras globais
 
 - `AGENTS.md` — regras operacionais globais.
+- `MAPA.md` — navegação rápida da Grande Mente.
 - `STARTUP.md` — protocolo de início de sessão.
 - `PROTOCOLS.md` — protocolos e lições estruturais.
 - `TOOLS.md` — ferramentas e integrações.

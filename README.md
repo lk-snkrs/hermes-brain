@@ -18,13 +18,14 @@ Hermes não é OpenClaw. A estrutura Bruno/OpenClaw foi adaptada para o Hermes p
 
 ## Como navegar
 
-Comece por `START-HERE.md`.
+Comece por `START-HERE.md`. Para navegação rápida, use também `MAPA.md`.
 
 Modelo mental canônico: uma **grande mente** (`Hermes Brain / Hermes COO`) cuida de tudo; abaixo dela ficam Lucas pessoal, as empresas (`LK`, `Zipper`, `SPITI`) e as camadas de Operações, Tecnologia e Governança. A referência viva é `empresa/contexto/organograma-operacional-hermes-brain.md`.
 
 Depois use:
 
 - `AGENTS.md` — regras operacionais globais.
+- `MAPA.md` — navegação rápida da Grande Mente.
 - `STARTUP.md` — boot protocol.
 - `PROTOCOLS.md` — protocolos operacionais.
 - `TOOLS.md` — ferramentas e integrações.
