@@ -89,3 +89,18 @@ O grupo **LK / marketing, attribution e creative** foi exportado e teve 23 workt
 - relatório de preservação em `lk-marketing-attribution-export/`.
 
 Restam 20 worktrees além do Brain canônico.
+
+
+## Execução parcial — LK email/reporting
+
+Atualização: 2026-05-16.
+
+O grupo **LK / email e reporting** foi exportado e teve 4 worktrees removidos com segurança operacional:
+
+- worktrees estavam limpos;
+- branches/commits foram preservados;
+- nenhum e-mail/Gmail draft/envio externo foi criado;
+- nenhum push, PR, produção, Docker ou sistema externo foi alterado;
+- relatório de preservação em `lk-email-reporting-export/`.
+
+Restam 16 worktrees além do Brain canônico.
