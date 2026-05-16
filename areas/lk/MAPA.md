@@ -11,7 +11,11 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 
 ## Projeto estratégico aprovado
 
-- `projetos/lk-operating-system-prd.md` — PRD v0.1 do LK Operating System no Hermes: CEO/Chief of Staff da LK com curadoria, estoque, Shopify, CRM, conteúdo, SEO, pricing, sourcing acionado por sinal, Google/Meta/influencers, approval flow e learning loop.
+- `projetos/lk-operating-system-prd.md` — PRD v0.1/v0.2 do LK Operating System no Hermes: CEO/Chief of Staff da LK com curadoria, estoque, Shopify, CRM, conteúdo, SEO, pricing, sourcing acionado por sinal, Google/Meta/influencers, approval flow, Mission Control e learning loop.
+- `projetos/lk-os-prd-continuation-2026-05-14.md` — continuação v0.2 do PRD: Mission Control como cockpit, ranking stockout/recompra de 120 dias, padrão LK Compras → Júlio/Notion, gate serial GMC → sourcing.
+- `projetos/lk-os-program-to-finish-2026-05-14.md` — mapa de execução para fechar o que foi programado: GMC final, Mission Control refresh, pacote Droper approval-gated, sourcing queue e Loyalty em pending_future.
+- `projetos/lk-os-prd-pending-backlog-2026-05-15.md` — backlog canônico das pendências do PRD após decisão do Lucas: inclui sourcing/Júlio, GMC preço/UI checklist, residual GMC, lead time real, Klaviyo draft, Mission Control escopo/cadência, Loyalty pending_future e correção posterior com lacunas do PRD completo.
+- `projetos/lk-os-prd-full-gap-audit-2026-05-15.md` — auditoria de lacunas contra o PRD inicial/v0.2: Data Quality, Daily/Weekly, Pulso Comercial, CRO, Brand Mix, Paid/Influencer, Content Engine, Trend-to-Blog, Shopify Ops, SEO orgânico, WhatsApp/loja física, Notion schema, Pricing, integrações e Approval/Learning Loop.
 - `projetos/lk-os-implementation-control.md` — plano mestre vivo de implementação do Projeto LK OS, com fases, definição de pronto, todo-list, próximos passos e frase canônica de retomada: `Seguir Projeto LK OS`.
 
 ## Design e comunicação visual
@@ -26,6 +30,8 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 ## Rotinas LK globais
 
 - `rotinas/data-spine-readonly-2026-05-11.md` — Fase 1 do LK OS: inventário de fontes, matriz Doppler sem valores, entidades canônicas, reconciliação, lacunas e primeiro snapshot read-only multi-fonte em `reports/lk-os-data-spine-snapshot-2026-05-11.md`.
+- `rotinas/lk-os-data-quality-layer-audit-2026-05-15.md` — auditoria P1 do Data Quality Layer contra o PRD inicial: modelo por produto/variante/tamanho, gaps de Tiny, estado comercial, histórico de preço e ledger de ações, sem PII/write externo.
+- `rotinas/lk-os-data-quality-layer-materialization-v0-2026-05-15.md` — primeira materialização local/reversível do Data Quality Layer: `lk_variant_quality_status` e `lk_sku_alias_map` com 14.466 variants cada, backup privado e sem API/write produtivo.
 - `rotinas/search-console-readonly-router-2026-05-11.md` — Fase 6 do LK OS: Search Console real como `fact_gsc`, queries/páginas/CTR/posição e oportunidades SEO/CRO sem writes.
 - `rotinas/merchant-center-feed-readonly-router-2026-05-11.md` — Fase 6 do LK OS: Merchant Center real como `fact_merchant_center`, diagnóstico de feed/issues/destinos e fila de correção sem writes.
 - `rotinas/pdp-low-conversion-priority-router-2026-05-11.md` — Fase 6 do LK OS: GA4 + GSC + Merchant em fila de PDP/collection com tráfego alto e baixa conversão, sem writes.
@@ -44,6 +50,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `rotinas/phase8-completion-audit-2026-05-11.md` — fechamento Fase 8 atualizado após reconciliação PRD: 7 `LK-AUTO` consolidados, 4 crons ativos, 3 reports obrigatórios, 3 guards manuais, 0 n8n/writes/envios externos/compra/marketplace.
 - `rotinas/gmc-review-cron-reconciliation-2026-05-12.md` — correção Lucas/PRD: ativado `LK-AUTO-007` GMC Review read-only quinta 09h BRT, cron `d4c26da4cd48`, sem Merchant/feed/Shopify/GSC writes.
 - `rotinas/mission-control-snapshot-2026-05-12.md` — Fase 9 Mission Control v1: visão executiva read-only com 4 crons, 3 reports obrigatórios, 24 ledger records, 5 aprovações, 0 bloqueios de dados após autofix, Klaviyo Draft, sourcing readiness e GMC queue.
+- `rotinas/lk-os-status-surface-2026-05-14.md` — superfície padrão de resposta para `Status Projeto LK OS`/`Seguir`: estado atual, paralelo seguro, bloqueios, próximo passo e templates Telegram antes/depois do GMC final.
 - `rotinas/needs-data-autofix-readonly-2026-05-12.md` — regra Lucas aplicada: lookup/reconciliação/correção local de `needs_data` pode ser autônoma em read-only; 3 itens checados, 0 bloqueios restantes, Onitsuka/Saint monitor, Bearbrick higiene interna, 0 writes/contatos/compras/marketplace.
 - `rotinas/gmc-correction-preview-2026-05-12.md` — próximo bloco seguro GMC: 963 itens P1/P2 convertidos em 6 pacotes preview-only, 1 P0 URL/checkout/landing, 3 P1 atributos/GTIN/local inventory, 2 P2 monitor/outros, 0 Merchant/feed/Shopify/GSC writes.
 - `rotinas/gmc-p0-url-checkout-review-2026-05-12.md` — pacote P0 aberto em evidências SKU/URL: 32 offer_ids únicos, 32 matches Shopify, 32 PDPs HTTP 200; indício é Merchant checkout/account/atributos, não PDP morto, sem writes.

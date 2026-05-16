@@ -25,3 +25,5 @@ Pastas: angulos, formatos, criativos, testes, learnings, skills, rotinas.
 - `contexto/campaign-attribution-dictionary-seed-v0.md` — primeira versão preenchida/read-only do dicionário com Silvia, Helena, Lala, Ju Mesquita, Mariah, Arlindo, Maria Fernanda e campanhas broad/Advantage+/RMKT/DABA/Jacquemus.
 
 - `contexto/campaign-attribution-dictionary-v0.2.md` — dicionário operacional read-only que amarra influencer/campanha → produto + SKU + tamanho → consequência de estoque Tiny `LK | CONTROLE ESTOQUE`; torna Silvia/Helena acionáveis para análise de reposição/sourcing e mantém Lala como investigação até existir ponte Shopify direta.
+
+- `rotinas/fhits-lk-maio-pdf-audio-intake-2026-05-15.md` — intake FHITS/LK Maio com PDF + áudio tl;dv transcrito: estratégia, influenciadoras, escopos, questionamentos de Lucas sobre cachê/perfil pequeno, plano B e aprendizados para futuras campanhas.

@@ -278,7 +278,7 @@ Recommended preview format:
 - Riscos/incertezas.
 - O que será escrito no Shopify se aprovado.
 - O que não será feito.
-- Pedido de aprovação.
+- Pedido de aprovação. Because Lucas is usually reviewing from Telegram, include every field that would be written and the exact approval wording inline in the Telegram reply; local JSON/CSV/MD/Brain paths are audit trail only, not the approval surface.
 
 ## Operationalization / “100% installed” standard
 
@@ -290,7 +290,7 @@ Lucas may ask whether this skill is “100%”. Do not answer from memory. Verif
 4. Related skills, especially `lk-shopify-readonly`, route product-upload/GOAT/`!subir` work here and keep read-only work separate.
 5. Brain checks pass: `python3 scripts/brain_health_check.py` and `git diff --check`.
 6. Secret scan/changed-file scan has no real secrets; header examples with env var placeholders are acceptable but should be called out clearly.
-7. The Brain change is committed, PR-merged, and local `main` is synced to `origin/main`.
+7. The Brain change is committed, PR-merged, and local `main` is synced to `origin/main`. If local git is ahead of `origin/main` or push fails due missing GitHub auth, report “operational locally, not fully synced remotely” rather than calling remote versioning 100%.
 8. Report what was not done: no Shopify/Tiny write, no product publication, no campaign/customer send unless separately approved.
 
 Session reference: see `references/shopify-product-upload-operationalization-20260511.md`.
@@ -299,13 +299,13 @@ Session reference: see `references/shopify-product-upload-operationalization-202
 
 1. **Calling a newly created skill “100%” before indexing/versioning it.** For Lucas, “100%” means runtime skill + Brain copy + index + checks + PR merge/sync, not just a local skill file.
 2. **Confundir `!subir` com autorização.** `!subir` inicia triagem/preview; não autoriza publicação.
-3. **Usar foto fora de ordem.** Para produtos da GOAT, respeitar a lógica de imagem principal + ângulos corretos.
-4. **Inventar história do modelo.** Pesquisar e citar fonte/contexto; se não houver fonte confiável, manter texto neutro.
-5. **Criar SKU sem checar Tiny/Shopify.** Sempre buscar duplicidade e padrão existente antes.
-6. **Publicar ativo por padrão.** Criar como draft salvo aprovação explícita para active.
-7. **Tratar Shopify como estoque.** Estoque continua Tiny.
-8. **Descrição genérica.** LK precisa texto premium, produto-first, com contexto real e SEO limpo.
-9. **Misturar produto com campanha.** Subir produto não autoriza anúncio, Klaviyo, WhatsApp ou fornecedor.
+2. **Usar foto fora de ordem.** Para produtos da GOAT, respeitar a lógica de imagem principal + ângulos corretos.
+3. **Inventar história do modelo.** Pesquisar e citar fonte/contexto; se não houver fonte confiável, manter texto neutro.
+4. **Criar SKU sem checar Tiny/Shopify.** Sempre buscar duplicidade e padrão existente antes.
+5. **Publicar ativo por padrão.** Criar como draft salvo aprovação explícita para active.
+6. **Tratar Shopify como estoque.** Estoque continua Tiny.
+7. **Descrição genérica.** LK precisa texto premium, produto-first, com contexto real e SEO limpo.
+8. **Misturar produto com campanha.** Subir produto não autoriza anúncio, Klaviyo, WhatsApp ou fornecedor.
 
 ## Verification Checklist
 
