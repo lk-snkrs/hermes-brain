@@ -251,3 +251,29 @@ Ao final de uma tarefa complexa, checar:
 - Não transformar log de sessão inteiro em memória permanente.
 - Não registrar feedback trivial que não melhora execução futura.
 - Não sobrescrever regra de negócio sem evidência ou aprovação explícita.
+
+### Global/Zipper — `/background` não autoriza envio externo
+
+```text
+Feedback ID: GLOBAL-EXTERNAL-SEND-20260515-01
+Data: 2026-05-15
+Área: Global / Zipper / LK OS Approval Manager
+Tipo: correção / anti-padrão / regra de execução
+Resumo: Lucas corrigiu que uma execução em `/background` enviou e-mail automaticamente para Paulo/Zipper; o correto era gerar um draft.
+Antes: Hermes interpretou execução/background como autorização suficiente para enviar a resposta.
+Depois: background, seguir ou aprovação ampla de trabalho geram apenas draft/preview para contatos externos.
+Regra aprendida: e-mail/WhatsApp/cliente/coletor/fornecedor/campanha só sai com aprovação atual explícita do payload e destinatário nomeado. Se houver erro, preparar mitigação como draft e pedir aprovação antes de novo envio.
+Onde aplicar: Google Workspace/Gmail, Mordomo WhatsApp, Zipper atendimento, LK CRM/Klaviyo/WhatsApp, SPITI contatos, Mission Control Approval Manager.
+Precisa atualizar skill? sim — google-workspace, multiempresa-routing-lucas, lucas-chief-of-staff.
+Precisa atualizar PRD? sim — LK OS Approval Manager + Learning Loop.
+Precisa atualizar memória? sim.
+Status: registrado_e_skills_patchadas
+```
+
+## 2026-05-15 — LK OS Approval Manager v1
+
+Tipo: padrão aprovado + regra de execução.
+
+Lucas aprovou finalizar o Approval Manager como parte do LK OS. O padrão correto é: regras-mestre + ledger auditável + router de aprovação + testes de regressão + superfície no Mission Control. Políticas soltas em Markdown não bastam quando a regra precisa governar ações futuras.
+
+Artefato: `areas/lk/rotinas/lk-os-approval-manager-v1-2026-05-15.md`.

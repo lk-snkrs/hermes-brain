@@ -1,3 +1,40 @@
+## 2026-05-16 — Lucas Brain Daily Intelligence Loop + Hermes v0.14 operacional
+
+- Executado protocolo diário/ampliado em modo read-only: helper Hostinger/Docker aprovado rodou com sucesso e salvou `reports/hermes-host-docker-observability-2026-05-16.json`.
+- Estado vivo pós-upgrade aprovado: containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)` nos dois containers.
+- Confirmados 14 crons ativos, API `/health` OK, curator habilitado sem intervenção necessária, `hermes skills check` sem updates disponíveis e watchdogs `no_agent` silenciosos OK.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 é a release pública mais recente; nenhum runtime swap/restart executado nesta rotina.
+- Decision brief v0.14 marcado como histórico/superseded pelo estado atual; criada/registrada reconciliação pós-upgrade e guia rápido de uso v0.14 para Lucas.
+- Prioridade ativa registrada: Zipper OS; LK OS permanece em standby/manutenção com rotinas obrigatórias e alertas críticos.
+- Artefatos: `reports/hermes-continuous-improvement/2026-05-16.md`; `areas/operacoes/rotinas/hermes-v014-post-upgrade-monitoring-reconciliation-2026-05-16.md`; `areas/operacoes/rotinas/hermes-v014-lucas-usage-guide-2026-05-16.md`; `areas/operacoes/rotinas/hermes-v014-decision-brief-2026-05-16.md`.
+- Correção Lucas: não basta declarar “voltou”; pós-update precisa fechar ciclo de adoção. Criado guia de uso `areas/operacoes/rotinas/hermes-v014-lucas-usage-guide-2026-05-16.md`, skill `lucas-hermes-continuous-improvement` corrigida e `Lucas Brain daily intelligence loop` reacionado para implementar novidades no ciclo operacional.
+- Aprovação Lucas “fazer 1/2 e 3”: executados os itens aprovados do relatório diário — cockpit inicial `reports/zipper-os-executive-inbox-followups-2026-05-16.md`/`.json`, design `areas/operacoes/rotinas/hermes-v014-watchers-and-approvals-design-2026-05-16.md`, e skill `lucas-hermes-continuous-improvement` atualizada com contrato de watchers + clarify buttons.
+- Aprovação Lucas “Está tudo aprovado implementar”: Zipper OS operacionalizado com script `/opt/data/scripts/zipper_os_cockpit.py`, wrappers `zipper_os_cockpit_daily.sh`/`zipper_os_cockpit_watchdog.sh`, cron diário `f00c68f5967a` às 08:15 BRT e watchdog silencioso `af07bbc077b8` a cada 30 min; ambos validados com `last_status=ok`, sem envio externo, sem DB write, sem Docker/host/secret mutation. `mordomo_whatsapp_scan.sh` também foi refatorado para declarar contrato v0.14, forçar read-only e ter timeout; cron `051f05ce17c1` revalidado OK/silencioso.
+
+## 2026-05-15 — Hermes/LK Continuous Improvement Daily Run
+
+- Executado protocolo diário 02:00 BRT em modo read-only: helper Hostinger/Docker aprovado rodou com sucesso e salvou `reports/hermes-host-docker-observability-2026-05-15.json`.
+- Confirmados no host os containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` `running`, imagem `hermes-agent-custom:v0.13.0-20260510`, versão `Hermes Agent v0.13.0 (2026.5.7)` nos dois containers.
+- Confirmados 13 crons ativos, API `/health` OK, curator habilitado sem intervenção necessária, `hermes skills check` sem updates disponíveis e watchdogs `no_agent` silenciosos OK.
+- GitHub releases segue sem versão pública posterior a `v2026.5.7`; nenhum update/runtime change recomendado hoje.
+- Artefatos: `reports/hermes-continuous-improvement/2026-05-15.md`; rotina `areas/operacoes/rotinas/hermes-v013-operacionalizacao.md` atualizada.
+
+## 2026-05-14 — Hermes/LK Continuous Improvement Daily Run
+
+- Executado protocolo diário 02:00 BRT em modo read-only: helper Hostinger/Docker aprovado rodou com sucesso e salvou `reports/hermes-host-docker-observability-2026-05-14.json`.
+- Confirmados no host os containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` `running`, imagem `hermes-agent-custom:v0.13.0-20260510`, versão `Hermes Agent v0.13.0 (2026.5.7)` nos dois containers.
+- Confirmados 8 crons ativos, API `/health` OK, curator habilitado sem intervenção necessária e `hermes skills check` sem updates disponíveis.
+- GitHub releases segue sem versão pública posterior a `v2026.5.7`; nenhum update/runtime change recomendado hoje.
+- Artefatos: `reports/hermes-continuous-improvement/2026-05-14.md`; rotina `areas/operacoes/rotinas/hermes-v013-operacionalizacao.md` atualizada.
+
+## 2026-05-12 — Hermes/LK Continuous Improvement Daily Run
+
+- Executado protocolo diário 02:00 BRT em modo read-only: runtime local `Hermes Agent v0.13.0 (2026.5.7)`, config `/opt/data/config.yaml`, release GitHub sem versão posterior a `v2026.5.7`.
+- Watchdogs `no_agent` `edd06fe19397` e `e7a61e275c37` revalidados com contrato silencioso OK (`rc=0`, stdout/stderr vazios).
+- Registrados gaps de observabilidade: contexto do cron sem `/var/run/docker.sock`; detector `hermes cron status`/`status --all` pode dizer gateway parado apesar de cron/logs Telegram ativos; correção read-only aprovada por Lucas e aplicada no mesmo dia via helper SSH/Doppler sanitizado.
+- Correção aplicada: criado `/opt/data/scripts/hermes_host_docker_observability.py`, copiado para `areas/operacoes/scripts/`, validado com alerts `0` e integrado ao prompt do cron diário `f5a23dd6a1bd`. Evidência: containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` `running`, imagem `hermes-agent-custom:v0.13.0-20260510`, versão `Hermes Agent v0.13.0 (2026.5.7)`, gateway/cron running. Relatório: `reports/hermes-host-docker-observability-2026-05-12.json`.
+- Artefatos: `reports/hermes-continuous-improvement/2026-05-12.md`; rotina `areas/operacoes/rotinas/hermes-v013-operacionalizacao.md` atualizada. Skill `lucas-hermes-continuous-improvement` recebeu pitfall de sanitização de `hermes status --all`.
+
 ## 2026-05-12 — LK GMC Required Attributes Applied
 
 - Lucas aprovou: “Corrigir e aplicar e seguir”. Aplicado o menor caminho: supplemental feed existente do Merchant (`LK Sneakers - Color Supplemental Feed`) via Gist, preservando 3.613 linhas e adicionando `age_group`, `gender`, `size` aos 80 offer_ids aprovados.
