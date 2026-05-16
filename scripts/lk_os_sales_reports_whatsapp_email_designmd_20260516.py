@@ -107,9 +107,16 @@ def extract_brand(title: str) -> str:
 
 
 def order_seller_hint(order: dict[str, Any]) -> str:
-    # Shopify REST POS can vary by app/version. Do not expose raw staff/user IDs
-    # as "vendedor" in a sales group; report seller only when an explicit human
-    # label exists in note attributes. Internal IDs require a mapping step.
+    # LK POS writes the human seller into order tags as "Vendedor: Nome".
+    # Prefer this explicit tag over internal Shopify staff/user IDs.
+    tags = str(order.get('tags') or '')
+    for tag in [t.strip() for t in tags.split(',') if t.strip()]:
+        m = re.match(r'(?i)^vendedor\s*:\s*(.+)$', tag)
+        if m:
+            seller = re.sub(r'\s+', ' ', m.group(1)).strip()
+            if seller and not seller.isdigit():
+                return seller[:80]
+
     note_attrs = order.get('note_attributes') or []
     for item in note_attrs:
         name = str(item.get('name') or '').lower()
