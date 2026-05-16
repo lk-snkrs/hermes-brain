@@ -9,10 +9,10 @@ Lucas corrigiu a hierarquia: o Hermes não deve organizar o Brain como várias e
 ```text
 Grande Mente — Hermes Brain / Hermes COO
 ├── Lucas pessoal
-├── Empresas
-│   ├── LK Sneakers
-│   ├── Zipper Galeria
-│   └── SPITI Auction
+├── Sistemas operacionais por empresa
+│   ├── LK OS — LK Sneakers
+│   ├── Zipper OS — Zipper Galeria
+│   └── SPITI OS — SPITI Auction
 ├── Operações Hermes
 ├── Tecnologia / Infraestrutura
 └── Governança / Segurança / Aprovações
@@ -57,25 +57,25 @@ Camada para agenda, lembretes, intake pessoal e Mordomo. Pode receber sinais de 
 
 Regra: eventos claros podem virar calendário conforme guardrails; contato externo continua exigindo aprovação explícita de Lucas com destinatário e texto.
 
-### Empresas
+### Sistemas operacionais por empresa
 
-Cada empresa tem operação, tom, fontes de verdade e riscos próprios.
+Cada empresa deve ser tratada como um **OS** próprio, com operação, tom, fontes de verdade e riscos próprios. Nomenclatura canônica: **LK OS**, **Zipper OS** e **SPITI OS**.
 
-#### LK Sneakers
+#### LK OS — LK Sneakers
 
 - Caminho: `areas/lk/`
 - Fonte viva: Shopify, Tiny, GA4/GSC, Klaviyo, Meta/Google, Supabase LK quando aplicável.
 - Tom: premium, comercial, analítico.
 - Risco: campanhas, preço, estoque, Shopify/Tiny/GMC e contato com cliente exigem controle forte.
 
-#### Zipper Galeria
+#### Zipper OS — Zipper Galeria
 
 - Caminho: `areas/zipper/`
 - Fonte viva: Supabase Zipper Vendas, Gmail/WhatsApp aprovados, calendário `lucas@zippergaleria.com.br`.
 - Tom: cultural, sofisticado, sem hard-sell.
 - Risco: colecionadores, artistas, propostas, obras, logística e comunicação externa.
 
-#### SPITI Auction
+#### SPITI OS — SPITI Auction
 
 - Caminho: `areas/spiti/`
 - Fonte viva: repo Spiti Hub, Supabase/CRM, fontes verificadas de leilão/lances.
@@ -112,4 +112,4 @@ A limpeza do Brain deve seguir esta ordem:
 
 ## Regra curta
 
-**Uma mente em cima. Empresas e Lucas pessoal embaixo. Operações, tecnologia e governança sustentam a mente.**
+**Uma mente em cima. Lucas pessoal e LK OS/Zipper OS/SPITI OS embaixo. Operações, tecnologia e governança sustentam a mente.**

@@ -20,9 +20,9 @@ Referência de organograma: `empresa/contexto/organograma-operacional-hermes-bra
 
 | Área | Caminho | Função | Fonte principal |
 |------|---------|--------|-----------------|
-| LK Sneakers | `areas/lk/` | ecommerce, CRM, tráfego, atendimento e syncs LK | Supabase LK `cnjimxglpktznenpbail`, Shopify |
-| Zipper Galeria | `areas/zipper/` | vendas de obras, colecionadores, feiras e comunicação | Supabase Zipper Vendas `pcstqxpdzibheuopjkas` |
-| SPITI Auction | `areas/spiti/` | leilão, lances, lotes, alertas e relatórios | Supabase/SPITI CRM `rmdugdkantdydivgnimb`, email |
+| LK OS — LK Sneakers | `areas/lk/` | ecommerce, CRM, tráfego, atendimento e syncs LK | Supabase LK `cnjimxglpktznenpbail`, Shopify |
+| Zipper OS — Zipper Galeria | `areas/zipper/` | vendas de obras, colecionadores, feiras e comunicação | Supabase Zipper Vendas `pcstqxpdzibheuopjkas` |
+| SPITI OS — SPITI Auction | `areas/spiti/` | leilão, lances, lotes, alertas e relatórios | Supabase/SPITI CRM `rmdugdkantdydivgnimb`, email |
 | Operações | `areas/operacoes/` | brain sync, heartbeat e rotinas operacionais | GitHub, scripts, cronjobs |
 | Governança | `areas/governanca/` | regras, compliance operacional e aprovações | `seguranca/`, decisões |
 | Tecnologia | `areas/tecnologia/` | arquitetura, scripts, integrações e infra | Doppler, GitHub, VPS, APIs |

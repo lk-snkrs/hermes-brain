@@ -11,9 +11,9 @@ A nova identidade Hermes Geral já está consolidada o suficiente para operar co
 Prioridade desta rodada:
 
 1. Manter o Hermes/Brain saudável e sem automação nova não aprovada.
-2. Continuar LK OS pelos blocos que já têm dados e guardrails: Daily/Weekly, GMC, sourcing manual, influencer dictionary, Loyalty/aniversário em planejamento.
-3. Usar Zipper OS como cockpit de inbox/follow-ups/comercial, com rascunho interno e aprovação humana.
-4. Manter SPITI conservador: repo/PRD/Paperclip e dados de leilão só com fonte verificada; nenhum lance ou deploy inferido.
+2. Continuar **LK OS** pelos blocos que já têm dados e guardrails: Daily/Weekly, GMC, sourcing manual, influencer dictionary, Loyalty/aniversário em planejamento.
+3. Usar **Zipper OS** como cockpit de inbox/follow-ups/comercial, com rascunho interno e aprovação humana.
+4. Manter **SPITI OS** conservador: repo/PRD/Paperclip e dados de leilão só com fonte verificada; nenhum lance ou deploy inferido.
 
 ## Fontes verificadas nesta revisão
 
@@ -68,7 +68,7 @@ Prioridade desta rodada:
 2. Usar este formato por mais 1 a 2 execuções manuais antes de propor cron.
 3. Se virar recorrente, começar semanal ou diário útil em janela 08:00–19:00 BRT, com silêncio quando não houver decisão.
 
-## LK Sneakers / LK OS
+## LK OS — LK Sneakers
 
 ### Status verificado
 
@@ -113,7 +113,7 @@ Prioridade desta rodada:
 - Alternativa segura: plano UX/técnico de aniversário + LK Rewards, sem implementação.
 - Para operação diária: acompanhar Daily/Weekly/GMC existentes; não criar novo cron ainda.
 
-## Zipper Galeria
+## Zipper OS — Zipper Galeria
 
 ### Status verificado
 
@@ -148,7 +148,7 @@ Prioridade desta rodada:
 - Preparar briefing interno do candidato Gmail pendente e dos rascunhos recentes, mantendo PII minimizada.
 - Se Lucas quiser, gerar lista curta de follow-ups culturais por artista/obra baseada em venda recente e feira, como preview interno.
 
-## SPITI Auction
+## SPITI OS — SPITI Auction
 
 ### Status verificado
 
