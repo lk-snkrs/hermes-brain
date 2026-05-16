@@ -28,7 +28,7 @@ Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a 
 
 ## Ativos
 
-- [ ] **Rodar primeira revisão sob demanda com a nova identidade Hermes Geral** — Operações/Multiempresa — escopo: Hermes/Infra, LK OS, Zipper e SPITI; usar `agentes/hermes-geral/IDENTITY.md`, `SOUL.md`, `AGENTS.md`, `HEARTBEAT.md`, `MAPA.md` e `areas/operacoes/rotinas/revisao-semanal-multiempresa.md`; sem cron, sem contato externo, sem deploy/write produtivo. Próxima ação segura: gerar relatório interno em `reports/`.
+- [x] **Rodar primeira revisão sob demanda com a nova identidade Hermes Geral** — Operações/Multiempresa — concluído em 2026-05-16 em modo read-only/local; escopo Hermes/Infra, LK OS, Zipper e SPITI; sem cron novo, contato externo, deploy ou write produtivo. Evidência: `reports/revisao-operacional-multiempresa-hermes-geral-2026-05-16.md`.
 - [x] **Concluir higiene pós-Amora da memória executiva compacta** — Operações/Governança — `memories/pending.md` atualizado em 2026-05-16 com resumo atual e separação entre ativos, bloqueados, aguardando e concluídos; sem apagar histórico útil.
 
 - [x] **Gerar primeiro Stock Intelligence real/read-only da LK com sourcing acionado por sinal** — LK/Stock/Sourcing — concluído em 2026-05-10 com `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`. Correção posterior: SKU Shopify é canônico para matching e Tiny deve ser mapeado/normalizado para Shopify; leitura Meta influencer precisa usar janela/período corretos e nomes em campaign/adset/ad antes de claim comercial.
@@ -59,6 +59,7 @@ Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a 
 
 ## Concluídos nesta revisão
 
+- **Primeira revisão sob demanda com a nova identidade Hermes Geral** — concluído: relatório local `reports/revisao-operacional-multiempresa-hermes-geral-2026-05-16.md` gerado após leitura do Brain, cronjob list e git status. Decisão operacional: manter sob demanda até medir utilidade; qualquer cron/agenda recorrente ainda exige decisão de cadência/canal/kill criteria.
 - **Rotina de revisão operacional multiempresa** — concluído: `areas/operacoes/rotinas/revisao-operacional-multiempresa.md` criado; primeiro relatório gerado em `reports/revisao-operacional-multiempresa-2026-05-09.md`. Decisão operacional: usar sob demanda para priorização LK/Zipper/SPITI/Operações; não criar cron, não consultar produção e não acionar ações externas por padrão.
 - **Script local/read-only de retomada de planos/PRDs** — concluído: `scripts/retomada_planos_prds.py` criado; relatório gerado em `reports/retomada-planos-prds-2026-05-09.md` e JSON em `reports/retomada-planos-prds-2026-05-09.json`. Decisão operacional: não criar cron semanal agora; usar sob demanda quando Lucas disser “seguir”, “retomar” ou “onde paramos”.
 - **Script executivo para `brain-improvement-score.md`** — concluído: `scripts/brain_improvement_score.py` criado como ferramenta local/read-only; relatório gerado em `reports/brain-improvement-score-2026-05-09-script.md` e JSON em `reports/brain-improvement-score-2026-05-09-script.json`. Cron/UI/Telegram recorrente continuam bloqueados por aprovação explícita.

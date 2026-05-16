@@ -1,6 +1,6 @@
 # Zipper OS — Cockpit Executivo Inbox e Follow-ups
 
-Atualizado: 2026-05-16T19:30:52.143592+00:00
+Atualizado: 2026-05-16T20:00:59.764648+00:00
 
 ## Escopo e segurança
 
@@ -15,7 +15,7 @@ Atualizado: 2026-05-16T19:30:52.143592+00:00
 - IMAP rascunhos disponível: `True`
 - Rascunhos Hermes já registrados: 9
 - Itens marcados como não exigindo resposta direta/atenção: 34
-- Candidatos ainda não tratados nesta checagem: 0
+- Candidatos ainda não tratados nesta checagem: 1
 
 ## Follow-ups / Secretaria
 

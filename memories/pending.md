@@ -5,7 +5,6 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Ativos agora
 
-- [ ] Rodar primeira revisão sob demanda com a nova identidade Hermes Geral — escopo: Hermes/Infra, LK OS, Zipper e SPITI; gerar relatório interno em `reports/`; sem cron, contato externo, deploy ou write produtivo.
 - [ ] Aprofundar dicionário canônico de influencers/campanhas LK e auditar match influencer → produto — usar evidências Shopify/Meta/UTM/cupom; Silvia/Helena têm ROAS operacional provisório, Lala segue ambígua.
 - [ ] Completar subdocs de integrações adicionais somente quando virarem fluxo recorrente real.
 - [ ] Adicionar Customer Trust & Loyalty ao LK OS — Rivo/LK Rewards/Judge.me primeiro em read-only/modelagem; sem cupons, review changes, campanhas ou writes.
@@ -26,6 +25,7 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Concluídos / retirados da fila ativa
 
+- [x] Primeira revisão sob demanda com a nova identidade Hermes Geral — relatório gerado em `reports/revisao-operacional-multiempresa-hermes-geral-2026-05-16.md`; escopo Hermes/Infra, LK OS, Zipper e SPITI; sem cron novo, contato externo, deploy ou write produtivo.
 - [x] Adaptação Amora → Hermes Geral — DOCX convertidos, `IDENTITY.md` criado, `SOUL/AGENTS/HEARTBEAT` consolidados, `MAPA.md` raiz criado, raiz `AGENTS.md`/`HEARTBEAT.md` higienizada para Hermes-native; sem cron novo. Evidência: `areas/operacoes/rotinas/amora-templates-hermes-geral-adaptacao-2026-05-16.md` e `reports/amora-reference-ingest-2026-05-16/`.
 - [x] Preservação do `spiti-hub` antigo não-git — evidências copiadas para `reports/spiti-hub-diff-2026-05-16/old-nongit-preservation/`; secret scan limpo; não mergear fontes antigas no `spiti-hub-git`.
 - [x] Limpeza de 43 worktrees do Brain — pacotes exportados em `reports/brain-worktrees-2026-05-16/`; worktrees removidos; branches internas preservadas.
