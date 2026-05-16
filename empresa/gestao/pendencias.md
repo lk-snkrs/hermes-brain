@@ -1,7 +1,24 @@
 # Pendências executivas — Hermes Brain
 
-Última revisão: 2026-05-09
+Última revisão: 2026-05-16
 Rotina aplicada: `areas/operacoes/rotinas/memory-hygiene-pendencias.md`
+
+## Revisão 2026-05-16 — Amora/Hermes identidade
+
+Lucas aprovou aplicar a adaptação dos templates Amora para Hermes, com verificação prévia do que já existia.
+
+Concluído nesta rodada:
+
+- DOCX Amora convertidos para markdown limpo e preservados em `reports/amora-reference-ingest-2026-05-16/`.
+- `agentes/hermes-geral/IDENTITY.md` criado.
+- `agentes/hermes-geral/SOUL.md`, `AGENTS.md` e `HEARTBEAT.md` consolidados em versão Hermes-native.
+- `MAPA.md` raiz criado para navegação rápida da Grande Mente.
+- `README.md`, `START-HERE.md` e `empresa/rotinas/_index.md` atualizados para apontar a nova estrutura.
+- `AGENTS.md` e `HEARTBEAT.md` da raiz higienizados para remover dependência de comandos/paths OpenClaw e centralizar regras Hermes-native.
+- Regra “repetição → skill” formalizada no Brain e na skill `lucas-chief-of-staff`.
+- Cron automático de heartbeat/revisão não foi criado; segue como rotina sob demanda até provar valor.
+
+Evidência: commit local `10978fc docs: adapt amora identity model for hermes` e alterações posteriores nesta branch.
 
 ## Estado executivo
 
@@ -10,6 +27,9 @@ Esta página substitui a lista antiga de 2026-04-19, que misturava bugs corrigid
 Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a operação. Detalhes longos pertencem a `areas/`, `empresa/integracoes/`, `reports/`, `CHANGELOG.md` ou `memories/lessons.md`.
 
 ## Ativos
+
+- [ ] **Rodar primeira revisão sob demanda com a nova identidade Hermes Geral** — Operações/Multiempresa — escopo: Hermes/Infra, LK OS, Zipper e SPITI; usar `agentes/hermes-geral/IDENTITY.md`, `SOUL.md`, `AGENTS.md`, `HEARTBEAT.md`, `MAPA.md` e `areas/operacoes/rotinas/revisao-semanal-multiempresa.md`; sem cron, sem contato externo, sem deploy/write produtivo. Próxima ação segura: gerar relatório interno em `reports/`.
+- [x] **Concluir higiene pós-Amora da memória executiva compacta** — Operações/Governança — `memories/pending.md` atualizado em 2026-05-16 com resumo atual e separação entre ativos, bloqueados, aguardando e concluídos; sem apagar histórico útil.
 
 - [x] **Gerar primeiro Stock Intelligence real/read-only da LK com sourcing acionado por sinal** — LK/Stock/Sourcing — concluído em 2026-05-10 com `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`. Correção posterior: SKU Shopify é canônico para matching e Tiny deve ser mapeado/normalizado para Shopify; leitura Meta influencer precisa usar janela/período corretos e nomes em campaign/adset/ad antes de claim comercial.
 - [x] **Criar mapa canônico SKU Shopify ↔ Tiny** — LK/Stock/Data Quality — preview read-only gerado em 2026-05-10: `reports/lk-sku-shopify-tiny-map-preview-2026-05-10.md`. Resultado: 6/6 campeões antes marcados como `mapear SKU no Tiny` tiveram candidato Tiny encontrado com confiança alta; tabela de aprovação gerada em `reports/lk-sku-tiny-alias-approval-preview-2026-05-10.md`; nenhum write produtivo executado.

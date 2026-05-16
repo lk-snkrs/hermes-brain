@@ -26,6 +26,13 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Hermes v0.13 Próximas Melhorias | `areas/operacoes/rotinas/hermes-v013-next-improvements-plan-2026-05-10.md` | Plano de melhorias v0.13 classificadas por risco e aprovação necessária |
 | Revisão Semanal Multiempresa | `areas/operacoes/rotinas/revisao-semanal-multiempresa.md` | Revisão executiva LK/Zipper/SPITI/Hermes pelo Hermes Chief of Staff, sem ações externas |
 | Amora Templates → Hermes Geral 2026-05-16 | `areas/operacoes/rotinas/amora-templates-hermes-geral-adaptacao-2026-05-16.md` | Ingestão dos DOCX Amora, comparação com estado atual e adaptação Hermes-native de IDENTITY/SOUL/AGENTS/MAPA/HEARTBEAT |
+| Hermes v0.12→v0.14 Opportunity Review 2026-05-16 | `areas/operacoes/rotinas/hermes-v012-v014-opportunity-review-2026-05-16.md` | Revisão de oportunidades de melhoria entre Hermes v0.12 e v0.14, sem mudança de runtime |
+| Hermes v0.14 Decision Brief 2026-05-16 | `areas/operacoes/rotinas/hermes-v014-decision-brief-2026-05-16.md` | Brief executivo de decisões v0.14 e próximos passos approval-gated |
+| Hermes v0.14 Lucas Usage Guide 2026-05-16 | `areas/operacoes/rotinas/hermes-v014-lucas-usage-guide-2026-05-16.md` | Guia prático para Lucas usar recursos v0.14 com segurança |
+| Hermes v0.14 Post-upgrade Monitoring Reconciliation 2026-05-16 | `areas/operacoes/rotinas/hermes-v014-post-upgrade-monitoring-reconciliation-2026-05-16.md` | Reconciliação read-only de monitoramento pós-upgrade |
+| Hermes v0.14 Watchers and Approvals Design 2026-05-16 | `areas/operacoes/rotinas/hermes-v014-watchers-and-approvals-design-2026-05-16.md` | Desenho de watchers e aprovações sem ativar automação prematura |
+| Lucas Brain Daily Intelligence Loop v0.14 Proposal 2026-05-16 | `areas/operacoes/rotinas/lucas-brain-daily-intelligence-loop-v014-proposal-2026-05-16.md` | Proposta de loop diário de inteligência do Brain, pendente de validação/cadência |
+| Mission Control v0.14 Operationalization 2026-05-16 | `areas/operacoes/rotinas/mission-control-v014-operationalization-2026-05-16.md` | Operacionalização documental do Mission Control v0.14 |
 | Hermes Gateway Remediation Plan | `areas/operacoes/rotinas/hermes-gateway-remediation-plan.md` | Plano seguro para diagnóstico/correção do gateway Telegram sem mudança não aprovada |
 | Hermes Gateway Read-only Diagnostic 2026-05-04 | `areas/operacoes/rotinas/hermes-gateway-readonly-diagnostic-2026-05-04.md` | Diagnóstico read-only do warning gateway/cron e conflito Telegram, sem alteração de VPS/Docker |
 | Hermes Runtime Update Plan | `areas/operacoes/rotinas/hermes-runtime-update-plan.md` | Plano de update v0.9.0 → v0.12.0 com backup/rollback e aprovação |
@@ -236,6 +243,23 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | LK GMC P1 Attribute Completion Onda 2 Pilot Executor 2026-05-13 | `areas/lk/rotinas/gmc-2026-05-13-p1-attribute-completion-wave2-pilot-executor.md` | Dry-run/executor piloto Onda 2: sizes + ageGroup + gender, apply bloqueado por aprovação inline |
 | LK GMC P1 Attribute Wave2 Post-Status Recheck 2026-05-13 | `areas/lk/rotinas/gmc-2026-05-13-p1-attribute-wave2-post-status-recheck.md` | Reconsulta read-only fresh após apply da Onda 2; consolidou diagnósticos remanescentes |
 | LK GMC P1 Remaining Attribute Wave3 Preview 2026-05-13 | `areas/lk/rotinas/gmc-2026-05-13-p1-attribute-remaining-wave3-preview.md` | Preview read-only dos required attrs remanescentes pós-Onda 2, com buckets Onda 3 |
+
+| LK Alinhamento Semanal LK + Check 2026-05-15 | `areas/lk/rotinas/alinhamento-semanal-lk-check-2026-05-15.md` | Intake de alinhamento LK + Check e pendências operacionais read-only/preview |
+| LK GMC A42/B20 Recheck Content Fallback Preview 2026-05-15 | `areas/lk/rotinas/gmc-2026-05-15-a42-b20-recheck-content-fallback-preview.md` | Preview de fallback/recheck GMC A42/B20 sem writes |
+| LK GMC A42 Live Shopify Public Price Diagnostic 2026-05-15 | `areas/lk/rotinas/gmc-2026-05-15-a42-live-shopify-public-price-diagnostic.md` | Diagnóstico read-only de preço público Shopify para A42 |
+| LK GMC A42 Post-fallback Read-only Recheck 2026-05-15 | `areas/lk/rotinas/gmc-2026-05-15-a42-post-fallback-readonly-recheck.md` | Recheck read-only pós-fallback A42 |
+| LK GMC Approved Packets A42/B20 2026-05-15 | `areas/lk/rotinas/gmc-2026-05-15-approved-packets-a42-b20.md` | Registro de pacotes aprovados GMC A42/B20 e guardrails |
+| LK GMC Content API Price-only Fallback A42 2026-05-15 | `areas/lk/rotinas/gmc-2026-05-15-content-api-price-only-fallback-a42.md` | Fallback price-only via Content API para A42 com governança de fonte |
+| LK GMC Approval Packets AB Preview 2026-05-15 | `areas/lk/rotinas/gmc-approval-packets-ab-preview-2026-05-15.md` | Preview de pacotes de aprovação GMC A/B, sem writes |
+| LK GMC Governance Next Decision 2026-05-15 | `areas/lk/rotinas/gmc-governance-next-decision-2026-05-15.md` | Fila de próxima decisão de governança GMC |
+| LK GMC Residual Dedup Preview 2026-05-15 | `areas/lk/rotinas/gmc-residual-dedup-preview-2026-05-15.md` | Preview de deduplicação residual GMC sem execução |
+| LK Dia dos Namorados Operational Checklist Preview 2026-05-15 | `areas/lk/rotinas/lk-dia-dos-namorados-operational-checklist-preview-2026-05-15.md` | Checklist preview-only da frente Dia dos Namorados/CRO/gift card |
+| LK OS Approval Manager Learning Loop v0 2026-05-15 | `areas/lk/rotinas/lk-os-approval-manager-learning-loop-v0-2026-05-15.md` | Learning loop do Approval Manager v0 |
+| LK OS Approval Manager Rules v0 2026-05-15 | `areas/lk/rotinas/lk-os-approval-manager-rules-v0-2026-05-15.md` | Regras v0 do Approval Manager separando draft, approval e read-only |
+| LK OS Approval Manager v1 2026-05-15 | `areas/lk/rotinas/lk-os-approval-manager-v1-2026-05-15.md` | Superfície v1 do Approval Manager com ledger/regressões/guardrails |
+| LK OS Mission Control v2 Commercial State 2026-05-15 | `areas/lk/rotinas/lk-os-mission-control-v2-commercial-state-2026-05-15.md` | Mission Control v2 com estado comercial local/read-only |
+| LK OS Tiny Stock Micro-batch 2026-05-15 | `areas/lk/rotinas/lk-os-tiny-stock-micro-batch-2026-05-15.md` | Micro-batch Tiny stock read-only para Data Quality |
+| LK Theme Trustbar Collections Passive Validation 2026-05-15 | `areas/lk/rotinas/lk-theme-trustbar-collections-passive-validation-2026-05-15.md` | Validação passiva de trustbar/collections sem theme write |
 
 ## Zipper Galeria
 
