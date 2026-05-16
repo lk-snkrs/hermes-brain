@@ -74,3 +74,18 @@ Nenhuma dessas condições foi satisfeita agora.
 ## Próximo passo recomendado
 
 Começar pelo grupo **LK / marketing, attribution e creative**, porque é o maior, mais próximo do uso real da LK e menos arriscado que mexer em infra/runtime.
+
+
+## Execução parcial — LK marketing/attribution
+
+Atualização: 2026-05-16.
+
+O grupo **LK / marketing, attribution e creative** foi exportado e teve 23 worktrees removidos com segurança operacional:
+
+- worktrees estavam limpos;
+- branches/commits foram preservados;
+- o worktree detached recebeu branch de arquivo antes da remoção;
+- nenhum push, PR, produção, Docker ou sistema externo foi alterado;
+- relatório de preservação em `lk-marketing-attribution-export/`.
+
+Restam 20 worktrees além do Brain canônico.
