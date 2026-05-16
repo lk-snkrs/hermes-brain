@@ -20,6 +20,8 @@ Hermes não é OpenClaw. A estrutura Bruno/OpenClaw foi adaptada para o Hermes p
 
 Comece por `START-HERE.md`.
 
+Modelo mental canônico: uma **grande mente** (`Hermes Brain / Hermes COO`) cuida de tudo; abaixo dela ficam Lucas pessoal, as empresas (`LK`, `Zipper`, `SPITI`) e as camadas de Operações, Tecnologia e Governança. A referência viva é `empresa/contexto/organograma-operacional-hermes-brain.md`.
+
 Depois use:
 
 - `AGENTS.md` — regras operacionais globais.

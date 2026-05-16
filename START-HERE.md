@@ -6,15 +6,24 @@ Este é o ponto de entrada para Lucas e para o Hermes entenderem como navegar e 
 
 Hermes Brain é a fonte de verdade versionada para contexto, decisões, áreas, agentes, rotinas e skills de negócio.
 
+O organograma correto é uma **grande mente central** que cuida de tudo e roteia para as camadas abaixo:
+
 ```text
 Lucas / Telegram
   ↓
 Hermes Agent
   ↓
-Hermes Brain GitHub — contexto, decisões, processos, áreas, rotinas e skills
+Grande Mente — Hermes Brain / Hermes COO
+  ├── Lucas pessoal
+  ├── Empresas: LK Sneakers, Zipper Galeria, SPITI Auction
+  ├── Operações Hermes
+  ├── Tecnologia / Infraestrutura
+  └── Governança / Segurança / Aprovações
   ↓
 Dados vivos — Supabase, Shopify, APIs, email, crons e integrações
 ```
+
+Referência: `empresa/contexto/organograma-operacional-hermes-brain.md`.
 
 O agente não é o cérebro. O agente lê e escreve no cérebro.
 

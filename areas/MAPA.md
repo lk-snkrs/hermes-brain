@@ -14,6 +14,10 @@ area/
 
 ## Áreas principais
 
+As áreas ficam **abaixo da Grande Mente**. Elas são unidades operacionais com fontes e regras próprias; a camada global decide roteamento, segurança e aprendizado antes de descer para uma área específica.
+
+Referência de organograma: `empresa/contexto/organograma-operacional-hermes-brain.md`.
+
 | Área | Caminho | Função | Fonte principal |
 |------|---------|--------|-----------------|
 | LK Sneakers | `areas/lk/` | ecommerce, CRM, tráfego, atendimento e syncs LK | Supabase LK `cnjimxglpktznenpbail`, Shopify |
