@@ -36,7 +36,7 @@ SECRET_PATTERNS = [
 BRANDS = [
     'Onitsuka Tiger', 'New Balance', 'Nike', 'Jordan', 'Air Jordan', 'Adidas', 'adidas',
     'Represent', 'Asics', 'Mizuno', 'Puma', 'Salomon', 'UGG', 'Birkenstock', 'Crocs',
-    'Fear of God', 'Essentials', 'Vans', 'Converse', 'Oakley', 'Hoka', 'Corteiz'
+    'Fear of God', 'Essentials', 'Polo Ralph Lauren', 'Ralph Lauren', 'Vans', 'Converse', 'Oakley', 'Hoka', 'Corteiz'
 ]
 
 
@@ -227,52 +227,117 @@ def window_defs(now: datetime) -> dict[str, dict[str, Any]]:
     }
 
 
-def section_lines(key: str, data: dict[str, Any]) -> list[str]:
-    s = data['summary']
-    ch = s.get('channels') or {}
+def pct(part: float | int, total: float | int) -> str:
+    total_f = float(total or 0)
+    if total_f <= 0:
+        return '0%'
+    return f'{(float(part or 0) / total_f) * 100:.0f}%'.replace('.', ',')
+
+
+def top_product_text(summary: dict[str, Any], *, limit: int = 2, numbered: bool = True) -> list[str]:
+    products = summary.get('top_products') or []
+    lines = []
+    for idx, product in enumerate(products[:limit], 1):
+        title = product.get('product_title', 'Produto n/d')
+        variant = product.get('size_or_variant') or 'sem tamanho'
+        qty = product.get('quantity', 0)
+        prefix = f'{idx}. ' if numbered else ''
+        lines.append(f'{prefix}{title} · {variant} · qtd {qty}')
+    return lines or ['n/d']
+
+
+def top_brand_text(summary: dict[str, Any], *, limit: int = 3) -> str:
+    brands = summary.get('top_brands_by_qty') or []
+    return ' · '.join(f'{name} ({qty})' for name, qty in brands[:limit]) if brands else 'n/d'
+
+
+def channel_summary(summary: dict[str, Any]) -> str:
+    ch = summary.get('channels') or {}
     online = ch.get('online', {'orders': 0, 'revenue': 0})
     loja = ch.get('loja', {'orders': 0, 'revenue': 0})
-    top = (s.get('top_products') or [{}])[0]
-    brand_qty = (s.get('top_brands_by_qty') or [('n/d', 0)])[0]
+    total = summary.get('revenue_total') or 0
+    return (
+        f"Online {brl(online.get('revenue'))} ({online.get('orders', 0)} vendas · {pct(online.get('revenue'), total)})\n"
+        f"Loja {brl(loja.get('revenue'))} ({loja.get('orders', 0)} vendas · {pct(loja.get('revenue'), total)})"
+    )
+
+
+def seller_summary(summary: dict[str, Any]) -> str:
+    sellers = summary.get('seller_revenue') or []
+    if sellers and not (len(sellers) == 1 and sellers[0][0] in {'needs_data', 'needs_mapping_pos_staff_id'}):
+        return '; '.join([f'{name}: {brl(val)}' for name, val in sellers[:3]])
+    if sellers and sellers[0][0] == 'needs_mapping_pos_staff_id':
+        return 'aguardando mapeamento dos vendedores do POS'
+    return 'dado ainda não disponível com segurança no Shopify/POS'
+
+
+def section_lines(key: str, data: dict[str, Any]) -> list[str]:
+    s = data['summary']
     lines = [
         f"*{data['label']}*",
-        f"Total: {brl(s['revenue_total'])} em {s['orders_count']} vendas · TM {brl(s['average_order_value'])}",
+        f"💰 {brl(s['revenue_total'])} · {s['orders_count']} vendas · TM {brl(s['average_order_value'])}",
     ]
     if key == 'store_1930':
-        lines.append(f"Loja: {brl(loja.get('revenue'))} em {loja.get('orders', 0)} vendas")
-        sellers = s.get('seller_revenue') or []
-        if sellers and not (len(sellers) == 1 and sellers[0][0] in {'needs_data', 'needs_mapping_pos_staff_id'}):
-            seller_text = '; '.join([f"{name}: {brl(val)}" for name, val in sellers[:3]])
-        elif sellers and sellers[0][0] == 'needs_mapping_pos_staff_id':
-            seller_text = 'needs_mapping: Shopify POS retornou ID interno, ainda sem nome do vendedor'
-        else:
-            seller_text = 'needs_data: campo vendedor ainda não confirmado no POS/Shopify'
-        lines.append(f"Vendedores: {seller_text}")
+        lines.append(f"🏬 Loja física: {brl(s['revenue_total'])} em {s['orders_count']} vendas")
+        lines.append(f"👟 Mix: {top_brand_text(s)}")
+        lines.append(f"👤 Vendedores: {seller_summary(s)}")
+        lines.append('🔥 Produto líder: ' + top_product_text(s, limit=1, numbered=False)[0])
     else:
-        lines.append(f"Online: {brl(online.get('revenue'))} ({online.get('orders', 0)}) · Loja: {brl(loja.get('revenue'))} ({loja.get('orders', 0)})")
-    if top:
-        lines.append(f"Produto destaque: {top.get('product_title', 'n/d')} · {top.get('size_or_variant', 'n/d')} · qtd {top.get('quantity', 0)}")
-    lines.append(f"Marca destaque: {brand_qty[0]} · qtd {brand_qty[1]}")
+        lines.append('📍 Canais:\n' + channel_summary(s))
+        lines.append(f"👟 Marcas fortes: {top_brand_text(s)}")
+        lines.append('🔥 Produtos líderes:\n' + '\n'.join(top_product_text(s, limit=2)))
     if s.get('no_sku_line_items'):
-        lines.append(f"Atenção: {s['no_sku_line_items']} item(ns) sem SKU")
+        lines.append(f"⚠️ Cadastro: {s['no_sku_line_items']} item(ns) vendido(s) sem SKU")
     return lines
 
 
+def conclusion_lines(payload: dict[str, Any]) -> list[str]:
+    yesterday = payload['reports']['morning_yesterday']['summary']
+    pulse = payload['reports']['pulse_16h']['summary']
+    store = payload['reports']['store_1930']['summary']
+    yesterday_total = yesterday.get('revenue_total') or 0
+    pulse_total = pulse.get('revenue_total') or 0
+    gap = pulse_total - yesterday_total
+    if gap >= 0:
+        pace = f'hoje já está {brl(gap)} acima de ontem'
+    else:
+        pace = f'hoje ainda está {brl(abs(gap))} abaixo de ontem'
+    actions = []
+    if yesterday.get('no_sku_line_items') or pulse.get('no_sku_line_items') or store.get('no_sku_line_items'):
+        actions.append('corrigir SKUs sem cadastro para não perder leitura de mix')
+    if 'aguardando mapeamento' in seller_summary(store):
+        actions.append('mapear vendedores POS para ranking diário de loja')
+    if not actions:
+        actions.append('manter acompanhamento de mix e canal até o fechamento')
+    return [
+        '*Conclusão*',
+        f'• {pace}; loja física já representa {pct(store.get("revenue_total"), pulse_total)} do vendido hoje.',
+        '• Prioridade: ' + '; '.join(actions) + '.',
+    ]
+
+
 def make_whatsapp(payload: dict[str, Any]) -> str:
+    reports = payload['reports']
+    yesterday = reports['morning_yesterday']['summary']
+    pulse = reports['pulse_16h']['summary']
     lines = [
-        '🟡 *LK OS · Reports de venda*',
-        f"Gerado em {payload['generated_at_brt']} · fonte: Shopify read-only",
+        '🟡 *LK OS · Vendas*',
+        f"_{payload['generated_at_brt']} · Shopify read-only_",
         '',
+        '*Resumo executivo*',
+        f"• Ontem: {brl(yesterday['revenue_total'])} · {yesterday['orders_count']} vendas · TM {brl(yesterday['average_order_value'])}",
+        f"• Hoje até agora: {brl(pulse['revenue_total'])} · {pulse['orders_count']} vendas · TM {brl(pulse['average_order_value'])}",
+        '• Mix em destaque: ' + top_brand_text(pulse),
+        '',
+        '━━━━━━━━━━━━━━',
     ]
     for key in ['morning_yesterday', 'pulse_16h', 'store_1930']:
-        lines += section_lines(key, payload['reports'][key])
-        lines.append('')
+        lines += section_lines(key, reports[key])
+        lines += ['', '━━━━━━━━━━━━━━']
+    lines += conclusion_lines(payload)
     lines += [
-        '*Notas*',
-        '• E-commerce e loja/POS separados quando a fonte identifica POS.',
-        '• Report 19h30 foi gerado como parcial se ainda antes de 19h30.',
-        '• Campo vendedor: só será mostrado quando a fonte POS expuser dado confiável.',
-        '• Sem dados de cliente, sem alteração em Shopify/Tiny/campanhas.',
+        '',
+        '_Sem dados de cliente. Sem alteração em Shopify/Tiny/campanhas._',
     ]
     return scrub('\n'.join(lines).strip())
 
