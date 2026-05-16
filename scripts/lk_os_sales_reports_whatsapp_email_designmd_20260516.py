@@ -129,15 +129,25 @@ def order_seller_hint(order: dict[str, Any]) -> str:
     return 'needs_data'
 
 
+def next_link(headers: dict[str, Any]) -> str | None:
+    link = headers.get('Link') or headers.get('link') or ''
+    for part in str(link).split(','):
+        if 'rel="next"' in part:
+            m = re.search(r'<([^>]+)>', part)
+            if m:
+                return m.group(1)
+    return None
+
+
 def fetch_orders(secrets: dict[str, str], start_iso: str, end_iso: str) -> dict[str, Any]:
     store = (secrets.get('SHOPIFY_STORE_URL') or '').strip().replace('https://', '').replace('http://', '').strip('/')
     token = secrets.get('SHOPIFY_ACCESS_TOKEN') or ''
     if not store or not token:
-        return {'ok': False, 'status': 'missing_shopify_credentials', 'orders': []}
+        return {'ok': False, 'status': 'missing_shopify_credentials', 'orders': [], 'pagination_complete': False}
     headers = {'X-Shopify-Access-Token': token, 'Accept': 'application/json'}
     base = f'https://{store}/admin/api/2024-01'
     fields = ','.join([
-        'id','name','created_at','processed_at','total_price','currency','financial_status','fulfillment_status',
+        'id','name','created_at','processed_at','cancelled_at','closed_at','total_price','currency','financial_status','fulfillment_status',
         'source_name','landing_site','referring_site','tags','line_items','discount_codes','note_attributes','location_id','user_id','staff_member_id'
     ])
     params = {
@@ -148,8 +158,29 @@ def fetch_orders(secrets: dict[str, str], start_iso: str, end_iso: str) -> dict[
         'fields': fields,
         'order': 'created_at asc',
     }
-    res = http_json(f'{base}/orders.json?' + urllib.parse.urlencode(params), headers=headers)
-    return {'ok': bool(res.get('ok')), 'status': res.get('status'), 'orders': (res.get('body') or {}).get('orders') or []}
+    url = f'{base}/orders.json?' + urllib.parse.urlencode(params)
+    orders: list[dict[str, Any]] = []
+    statuses: list[Any] = []
+    pagination_complete = False
+    for _ in range(20):
+        res = http_json(url, headers=headers)
+        statuses.append(res.get('status'))
+        if not res.get('ok'):
+            return {'ok': False, 'status': res.get('status'), 'orders': orders, 'pagination_complete': pagination_complete}
+        orders.extend((res.get('body') or {}).get('orders') or [])
+        nxt = next_link(res.get('headers') or {})
+        if not nxt:
+            pagination_complete = True
+            break
+        url = nxt
+    return {'ok': True, 'status': statuses[-1] if statuses else None, 'orders': orders, 'orders_fetched': len(orders), 'pagination_complete': pagination_complete}
+
+
+def is_reportable_order(order: dict[str, Any]) -> bool:
+    if order.get('cancelled_at'):
+        return False
+    status = str(order.get('financial_status') or '').lower()
+    return status not in {'voided', 'refunded'}
 
 
 def summarize_orders(orders: list[dict[str, Any]]) -> dict[str, Any]:
@@ -161,13 +192,19 @@ def summarize_orders(orders: list[dict[str, Any]]) -> dict[str, Any]:
     seller_counter: Counter[str] = Counter()
     seller_revenue: Counter[str] = Counter()
     source_counter: Counter[str] = Counter()
+    financial_counter: Counter[str] = Counter()
+    cancelled_count = 0
     no_sku = 0
+    suspicious_sku = 0
     for order in orders:
         ch = classify_order_channel(order)
         rv = as_float(order.get('total_price'))
         channels[ch]['orders'] += 1
         channels[ch]['revenue'] += rv
         source_counter[order.get('source_name') or 'unknown'] += 1
+        financial_counter[order.get('financial_status') or 'unknown'] += 1
+        if order.get('cancelled_at'):
+            cancelled_count += 1
         if ch == 'loja':
             seller = order_seller_hint(order)
             seller_counter[seller] += 1
@@ -177,6 +214,8 @@ def summarize_orders(orders: list[dict[str, Any]]) -> dict[str, Any]:
             sku = (item.get('sku') or '').strip() or 'sem_sku'
             if sku == 'sem_sku':
                 no_sku += 1
+            elif sku.isdigit() and len(sku) >= 10:
+                suspicious_sku += 1
             variant = item.get('variant_title') or 'sem tamanho informado'
             qty = int(as_float(item.get('quantity')))
             line = as_float(item.get('price')) * qty
@@ -203,7 +242,10 @@ def summarize_orders(orders: list[dict[str, Any]]) -> dict[str, Any]:
         'seller_orders': seller_counter.most_common(10),
         'seller_revenue': [(k, round(v, 2)) for k, v in seller_revenue.most_common(10)],
         'source_names': source_counter.most_common(8),
+        'financial_statuses': financial_counter.most_common(8),
+        'cancelled_orders': cancelled_count,
         'no_sku_line_items': no_sku,
+        'suspicious_sku_line_items': suspicious_sku,
     }
 
 
@@ -212,21 +254,28 @@ def window_defs(now: datetime) -> dict[str, dict[str, Any]]:
     yesterday = today - timedelta(days=1)
     def dt(day, h, m, s):
         return datetime(day.year, day.month, day.day, h, m, s, tzinfo=SP_TZ)
+    same_time_end = dt(yesterday, now.hour, now.minute, now.second)
     return {
         'morning_yesterday': {
-            'label': f'Vendas de ontem — {yesterday.strftime("%d/%m")}',
+            'label': f'Ontem fechado — {yesterday.strftime("%d/%m")}',
             'start': dt(yesterday, 0, 0, 0),
             'end': dt(yesterday, 23, 59, 59),
             'kind': 'morning',
         },
+        'yesterday_same_time': {
+            'label': f'Ontem até {now.strftime("%H:%M")} — {yesterday.strftime("%d/%m")}',
+            'start': dt(yesterday, 0, 0, 0),
+            'end': same_time_end,
+            'kind': 'baseline_same_time',
+        },
         'pulse_16h': {
-            'label': f'Pulso comercial — {today.strftime("%d/%m")} até {now.strftime("%H:%M")}',
+            'label': f'Hoje parcial — {today.strftime("%d/%m")} até {now.strftime("%H:%M")}',
             'start': dt(today, 0, 0, 0),
             'end': now,
             'kind': 'pulse',
         },
         'store_1930': {
-            'label': f'Loja física — {today.strftime("%d/%m")} até {now.strftime("%H:%M")} (parcial antes de 19h30)' if now.hour < 19 or (now.hour == 19 and now.minute < 30) else f'Fechamento loja — {today.strftime("%d/%m")} até 19:30',
+            'label': f'Loja física — {today.strftime("%d/%m")} até {now.strftime("%H:%M")} (parcial)' if now.hour < 19 or (now.hour == 19 and now.minute < 30) else f'Fechamento loja — {today.strftime("%d/%m")} até 19:30',
             'start': dt(today, 0, 0, 0),
             'end': min(now, dt(today, 19, 30, 0)),
             'kind': 'store',
@@ -278,73 +327,106 @@ def seller_summary(summary: dict[str, Any]) -> str:
     return 'dado ainda não disponível com segurança no Shopify/POS'
 
 
+def delta_text(current: float | int, baseline: float | int) -> str:
+    delta = float(current or 0) - float(baseline or 0)
+    sign = '+' if delta >= 0 else '-'
+    return f'{sign}{brl(abs(delta))}'
+
+
+def quality_notes(payload: dict[str, Any]) -> list[str]:
+    notes = []
+    for key, report in payload.get('reports', {}).items():
+        if not report.get('shopify_ok'):
+            notes.append('dados Shopify incompletos; não usar como fechamento')
+        if not report.get('pagination_complete', True):
+            notes.append('paginação Shopify incompleta; leitura pode estar truncada')
+    pulse = payload['reports']['pulse_16h']['summary']
+    sku_empty = pulse.get('no_sku_line_items') or 0
+    sku_suspicious = pulse.get('suspicious_sku_line_items') or 0
+    if sku_empty:
+        notes.append(f'{sku_empty} produto(s) vendidos com SKU vazio')
+    if sku_suspicious:
+        notes.append(f'{sku_suspicious} SKU(s) suspeito(s) para revisar')
+    excluded = payload['reports']['pulse_16h'].get('orders_excluded') or 0
+    if excluded:
+        notes.append(f'{excluded} pedido(s) cancelado(s)/estornado(s) excluído(s) do cálculo')
+    # de-duplicate while preserving order
+    return list(dict.fromkeys(notes))
+
+
 def section_lines(key: str, data: dict[str, Any]) -> list[str]:
     s = data['summary']
     lines = [
         f"*{data['label']}*",
-        f"💰 {brl(s['revenue_total'])} · {s['orders_count']} vendas · TM {brl(s['average_order_value'])}",
+        f"Receita: {brl(s['revenue_total'])}",
+        f"Vendas: {s['orders_count']} · ticket médio {brl(s['average_order_value'])}",
     ]
     if key == 'store_1930':
-        lines.append(f"🏬 Loja física: {brl(s['revenue_total'])} em {s['orders_count']} vendas")
-        lines.append(f"👟 Mix: {top_brand_text(s)}")
-        lines.append(f"👤 Vendedores: {seller_summary(s)}")
-        lines.append('🔥 Produto líder: ' + top_product_text(s, limit=1, numbered=False)[0])
+        lines.append(f"Mix: {top_brand_text(s)}")
+        lines.append(f"Vendedores: {seller_summary(s)}")
+        lines.append('Produto destaque: ' + top_product_text(s, limit=1, numbered=False)[0])
     else:
-        lines.append('📍 Canais:\n' + channel_summary(s))
-        lines.append(f"👟 Marcas fortes: {top_brand_text(s)}")
-        lines.append('🔥 Produtos líderes:\n' + '\n'.join(top_product_text(s, limit=2)))
+        lines.append('Canais:\n' + channel_summary(s))
+        lines.append(f"Mix por unidades: {top_brand_text(s)}")
+        lines.append('Produtos destaque:\n' + '\n'.join(top_product_text(s, limit=2)))
     if s.get('no_sku_line_items'):
-        lines.append(f"⚠️ Cadastro: {s['no_sku_line_items']} item(ns) vendido(s) sem SKU")
+        lines.append(f"Atenção de cadastro: {s['no_sku_line_items']} produto(s) vendidos com SKU vazio")
     return lines
 
 
 def conclusion_lines(payload: dict[str, Any]) -> list[str]:
     yesterday = payload['reports']['morning_yesterday']['summary']
+    same_time = payload['reports']['yesterday_same_time']['summary']
     pulse = payload['reports']['pulse_16h']['summary']
     store = payload['reports']['store_1930']['summary']
-    yesterday_total = yesterday.get('revenue_total') or 0
-    pulse_total = pulse.get('revenue_total') or 0
-    gap = pulse_total - yesterday_total
-    if gap >= 0:
-        pace = f'hoje já está {brl(gap)} acima de ontem'
-    else:
-        pace = f'hoje ainda está {brl(abs(gap))} abaixo de ontem'
-    actions = []
-    if yesterday.get('no_sku_line_items') or pulse.get('no_sku_line_items') or store.get('no_sku_line_items'):
-        actions.append('corrigir SKUs sem cadastro para não perder leitura de mix')
-    if 'aguardando mapeamento' in seller_summary(store):
-        actions.append('mapear vendedores POS para ranking diário de loja')
-    if not actions:
-        actions.append('manter acompanhamento de mix e canal até o fechamento')
+    same_hour_delta = delta_text(pulse.get('revenue_total'), same_time.get('revenue_total'))
+    full_day_gap = delta_text(pulse.get('revenue_total'), yesterday.get('revenue_total'))
     return [
-        '*Conclusão*',
-        f'• {pace}; loja física já representa {pct(store.get("revenue_total"), pulse_total)} do vendido hoje.',
-        '• Prioridade: ' + '; '.join(actions) + '.',
+        '*Leitura COO*',
+        f'• Hoje parcial vs ontem no mesmo horário: {same_hour_delta}.',
+        f'• Hoje parcial vs ontem fechado: {full_day_gap} — referência, não fechamento.',
+        f'• Loja está puxando o dia: {pct(store.get("revenue_total"), pulse.get("revenue_total"))} do vendido até agora.',
     ]
+
+
+def action_lines(payload: dict[str, Any]) -> list[str]:
+    pulse = payload['reports']['pulse_16h']['summary']
+    actions = ['Time de loja: reforçar abordagem nos modelos/marcas do mix forte.']
+    if pulse.get('no_sku_line_items') or pulse.get('suspicious_sku_line_items'):
+        actions.append('Retaguarda: ajustar SKUs pendentes para preservar leitura de mix.')
+    actions.append('Próximo check: fechamento loja 19h30.')
+    return ['*Ações até o fechamento*'] + [f'• {a}' for a in actions]
 
 
 def make_whatsapp(payload: dict[str, Any]) -> str:
     reports = payload['reports']
     yesterday = reports['morning_yesterday']['summary']
+    same_time = reports['yesterday_same_time']['summary']
     pulse = reports['pulse_16h']['summary']
+    notes = quality_notes(payload)
     lines = [
         '🟡 *LK OS · Vendas*',
-        f"_{payload['generated_at_brt']} · Shopify read-only_",
+        f"_{payload['generated_at_brt']}_",
+        '_Fonte: vendas registradas · sem dados de cliente_',
         '',
-        '*Resumo executivo*',
-        f"• Ontem: {brl(yesterday['revenue_total'])} · {yesterday['orders_count']} vendas · TM {brl(yesterday['average_order_value'])}",
-        f"• Hoje até agora: {brl(pulse['revenue_total'])} · {pulse['orders_count']} vendas · TM {brl(pulse['average_order_value'])}",
+        '*Resumo do dia*',
+        f"• Hoje parcial: {brl(pulse['revenue_total'])} · {pulse['orders_count']} vendas · ticket médio {brl(pulse['average_order_value'])}",
+        f"• Ontem mesmo horário: {brl(same_time['revenue_total'])} · {same_time['orders_count']} vendas · {delta_text(pulse['revenue_total'], same_time['revenue_total'])}",
+        f"• Ontem fechado: {brl(yesterday['revenue_total'])} · {yesterday['orders_count']} vendas",
         '• Mix em destaque: ' + top_brand_text(pulse),
         '',
-        '━━━━━━━━━━━━━━',
     ]
-    for key in ['morning_yesterday', 'pulse_16h', 'store_1930']:
+    lines += conclusion_lines(payload)
+    lines += ['', *action_lines(payload), '', '━━━━━━━━━━━━━━']
+    for key in ['pulse_16h', 'store_1930', 'morning_yesterday']:
         lines += section_lines(key, reports[key])
         lines += ['', '━━━━━━━━━━━━━━']
-    lines += conclusion_lines(payload)
+    if notes:
+        lines += ['', '*Qualidade dos dados*']
+        lines += [f'• {note}' for note in notes[:4]]
     lines += [
         '',
-        '_Sem dados de cliente. Sem alteração em Shopify/Tiny/campanhas._',
+        '_Vendedor por tag POS. Estoque/margem exigem validação Tiny._',
     ]
     return scrub('\n'.join(lines).strip())
 
@@ -382,7 +464,9 @@ def main() -> int:
     reports = {}
     for key, win in window_defs(now).items():
         result = fetch_orders(secrets, win['start'].isoformat(), win['end'].isoformat())
-        orders = result.get('orders') or []
+        raw_orders = result.get('orders') or []
+        excluded_orders = [o for o in raw_orders if not is_reportable_order(o)]
+        orders = [o for o in raw_orders if is_reportable_order(o)]
         if key == 'store_1930':
             orders = [o for o in orders if classify_order_channel(o) == 'loja']
         reports[key] = {
@@ -391,12 +475,16 @@ def main() -> int:
             'window': {'start': win['start'].isoformat(), 'end': win['end'].isoformat()},
             'shopify_ok': result.get('ok'),
             'shopify_status': result.get('status'),
+            'orders_fetched': result.get('orders_fetched', len(raw_orders)),
+            'orders_excluded': len(excluded_orders),
+            'excluded_financial_statuses': Counter([str(o.get('financial_status') or 'unknown') for o in excluded_orders]).most_common(8),
+            'pagination_complete': result.get('pagination_complete'),
             'summary': summarize_orders(orders),
         }
     payload = {
         'generated_at_utc': datetime.now(timezone.utc).isoformat(),
         'generated_at_brt': now.strftime('%d/%m/%Y %H:%M BRT'),
-        'scope': 'LK OS sales reports: morning_yesterday, pulse_16h/current, store_1930/current_or_partial',
+        'scope': 'LK OS sales reports: today_partial, yesterday_same_time_baseline, store_current_or_1930, yesterday_closed',
         'reports': reports,
         'guardrails': ['read_only_shopify', 'no_customer_pii', 'no_shopify_tiny_write', 'whatsapp_send_requires_current_approval'],
     }
