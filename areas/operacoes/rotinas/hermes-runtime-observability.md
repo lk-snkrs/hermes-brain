@@ -111,6 +111,25 @@ Interpretação: pode existir outro poller/webhook usando o mesmo bot token ou h
 
 Qualquer uma dessas ações exige preview, aprovação Lucas e plano de backup/rollback.
 
+## Atualização — observabilidade Docker read-only aprovada 2026-05-12
+
+Lucas aprovou “corrigir o que deve ser corrigido” em resposta ao gap do run diário. Foi aplicada a correção mínima, sem alterar Docker, compose, containers, gateway, volumes, redes ou Traefik:
+
+- script ativo: `/opt/data/scripts/hermes_host_docker_observability.py`;
+- cópia fonte no Brain: `areas/operacoes/scripts/hermes_host_docker_observability.py`;
+- relatório verificado: `reports/hermes-host-docker-observability-2026-05-12.json`;
+- integração operacional: prompt do cron diário `f5a23dd6a1bd` atualizado para executar o helper antes dos fallbacks locais.
+
+O helper roda do container Hermes, busca `VPS_IP` e `VPS_ROOT_PASSWORD` no Doppler em runtime, usa SSH com askpass temporário, executa apenas comandos read-only no host e grava somente JSON sanitizado. Ele não imprime secrets, não altera permissões, não mexe no socket Docker, não instala nada na VPS e não reinicia serviços.
+
+Verificação de 2026-05-12 10:16 UTC:
+
+- `hermes-agent-5ajw-hermes-agent-1`: `running`, imagem `hermes-agent-custom:v0.13.0-20260510`;
+- `hermes-agent-5ajw-hermes-telegram-1`: `running`, imagem `hermes-agent-custom:v0.13.0-20260510`;
+- ambos reportaram `Hermes Agent v0.13.0 (2026.5.7)`;
+- `hermes cron status` no container Telegram reportou `Gateway is running — cron jobs will fire automatically`;
+- alerts do helper: `0`.
+
 ## Próximas decisões possíveis
 
 1. Investigar origem do `Telegram polling conflict` por vias read-only adicionais.

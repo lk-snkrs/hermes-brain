@@ -16,6 +16,10 @@ Não confundir Zipper Vendas com SPITI.
 - `sub-areas/feiras/` — SP-Arte, ArPa, ArtRio, Farol Santander e checklists de produção/comercial.
 - `sub-areas/comunicacao/` — Instagram, texto, vídeo, foto/design e tom institucional.
 
+## Produto / PRDs
+
+- `projetos/zipper-os-prd.md` — PRD do Zipper OS / Mordomo Zipper, com LK OS em standby e foco em inbox assistida, estilo de escrita, feiras, logística e comercial com fonte de verdade.
+
 ## Playbooks operacionais
 
 - `rotinas/playbook-abordagem-obra-colecionador.md` — rascunho comercial sofisticado por obra/artista/colecionador, com aprovação Lucas/Osmar.

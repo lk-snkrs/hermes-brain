@@ -1,0 +1,42 @@
+{
+  "startedAt": "2026-05-16T12:49:10Z",
+  "trigger": {
+    "path": "/opt/data/logs/agent.log",
+    "line": "2026-05-16 12:44:46,962 WARNING [20260516_123254_1ab835] root: Failed to generate context summary: Codex auxiliary Responses stream interrupted. Further summary attempts paused for 60 seconds.",
+    "digest": "79312390966d1bb3db05d2b43c32098f8f72c6f7b832abd79fa782c9b4389be0",
+    "tail_index": 1080
+  },
+  "actions": [
+    "classifier already includes known transient compression markers",
+    "classifier regression test already present"
+  ],
+  "checks": [
+    {
+      "cmd": [
+        "/opt/hermes/.venv/bin/python",
+        "-m",
+        "py_compile",
+        "/opt/hermes/agent/auxiliary_client.py"
+      ],
+      "rc": 0,
+      "output_tail": ""
+    },
+    {
+      "cmd": [
+        "/opt/hermes/.venv/bin/python",
+        "-m",
+        "pytest",
+        "tests/agent/test_auxiliary_client.py::TestIsConnectionError",
+        "tests/agent/test_context_compressor.py::TestStreamingClosedFallback",
+        "-q",
+        "-o",
+        "addopts="
+      ],
+      "rc": 0,
+      "output_tail": "..........                                                               [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/_pytest/cacheprovider.py:475\n  /opt/hermes/.venv/lib/python3.13/site-packages/_pytest/cacheprovider.py:475: PytestCacheWarning: could not create cache path /opt/hermes/.pytest_cache/v/cache/nodeids: [Errno 13] Permission denied: '/opt/hermes/pytest-cache-files-hhpkn69f'\n    config.cache.set(\"cache/nodeids\", sorted(self.cached_nodeids))\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n10 passed, 1 warning in 1.52s\n"
+    }
+  ],
+  "restart": "not performed; gateway/container restart remains approval-gated unless Lucas explicitly approves that exact action",
+  "secretHandling": "log line sanitized/tail only; no env/config/secrets printed",
+  "status": "verified-existing-guardrail"
+}
