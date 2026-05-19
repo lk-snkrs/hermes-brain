@@ -12,6 +12,8 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Hermes Release Watch | `areas/operacoes/rotinas/hermes-release-watch.md` | Monitorar releases do Hermes Agent e avaliar melhorias aplicáveis |
 | Hermes Runtime Observability | `areas/operacoes/rotinas/hermes-runtime-observability.md` | Inventário read-only de versão, containers, gateway, cron e logs Hermes |
 | Runtime/Profile/Channel Inventory 2026-05-19 | `areas/operacoes/rotinas/runtime-profile-channel-inventory-2026-05-19.md` | Matriz única de profiles, bots, canais, destino, cadência, status documental, silent contract e kill criteria |
+| Mesa COO diária Telegram 2026-05-19 | `areas/operacoes/rotinas/mesa-coo-diaria-telegram-2026-05-19.md` | Rotina diária/on-demand da Mesa COO no Telegram, com Brain como source of truth e zero writes externos |
+| Second Brain Excellence Backlog 2026-05-19 | `areas/operacoes/rotinas/second-brain-excellence-backlog-2026-05-19.md` | Backlog P0 de runtime vivo, limpeza OpenClaw/cerebro, skill audit, Mordomo e Mission alinhado à Mesa COO |
 | Material Ingest to PRD | `areas/operacoes/rotinas/material-ingest-to-prd.md` | Ingestão segura de material externo até documentação, matriz de decisão e PRD |
 | Brain Improvement Score | `areas/operacoes/rotinas/brain-improvement-score.md` | Score executivo de saúde/maturidade do Hermes Brain após rodadas de melhoria |
 | Retomada de Planos e PRDs | `areas/operacoes/rotinas/retomada-planos-prds.md` | Recupera estado de planos, PRDs, branches e análises pausadas antes de seguir |

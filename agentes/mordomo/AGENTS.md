@@ -1,7 +1,15 @@
 # Mordomo — Regras do agente/profile
 
-Status: documentação inicial P0, 2026-05-19.  
-Tipo: agente/profile documental. Não cria bot, canal, cron, runtime ou automação.
+Status: documentação P0 com runtime parcial verificado, 2026-05-19.
+Tipo: agente/profile documental com rotinas vivas associadas; não autoriza envio externo nem criação de bot novo.
+
+## Runtime verificado em 2026-05-19
+
+- `051f05ce17c1` — Mordomo WhatsApp pessoal realtime scan — ativo, entrega local.
+- `4ced266825f0` — Mordomo WhatsApp pessoal resumo 17h BRT — ativo, entrega origin.
+- `ac0b440e2643` — Mordomo Telegram gateway watchdog — ativo, entrega origin apenas quando há evento relevante.
+
+Esses crons operacionalizam parte do Mordomo, mas não mudam o guardrail: rascunho/triagem/alerta interno apenas, sem envio externo autônomo.
 
 ## Missão
 

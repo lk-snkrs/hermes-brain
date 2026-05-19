@@ -20,6 +20,7 @@ Skill resolve workflow repetível. Para ser considerada canônica no Hermes Brai
 
 | Skill | Caminho | Owner | Status documental | Risco | Gatilho | Última revisão documental | Última execução runtime | Decisão |
 |---|---|---|---|---|---|---|---|---|
+| Mesa COO | runtime skill `/opt/data/skills/productivity/mesa/SKILL.md`; Brain doc `areas/operacoes/rotinas/mesa-coo-diaria-telegram-2026-05-19.md` | Hermes Geral | canônica runtime + documentada | baixo/médio | `/mesa`, `Mesa COO`, cron diário Telegram | 2026-05-19 criada | cron `749ee30b51eb` ativo; primeira execução agendada 2026-05-20 08h30 BRT | manter; depende de `/reload-skills`/gateway para slash imediato |
 | Hermes Brain | `skills/hermes-brain/SKILL.md` | Operações Hermes | canônica | baixo | uso do Brain como fonte de verdade | 2026-05-19 auditada | não verificada nesta rodada | manter |
 | Session Start Protocol | `skills/session-start-protocol/SKILL.md` | Operações Hermes | canônica, mas deve ser reconciliada com o novo `memories/current.md` | médio | boot/checklist de sessão | 2026-05-19 auditada | não verificada nesta rodada | manter e atualizar em rodada futura se necessário |
 | Brain Sync | `skills/brain-sync/SKILL.md` | Operações Hermes | canônica | médio | sync/versionamento do Brain | 2026-05-19 auditada | não verificada nesta rodada | manter; sempre checar diff/segredos |
