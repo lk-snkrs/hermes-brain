@@ -1,4 +1,9 @@
-## 2026-05-12 — LK GMC Required Attributes Applied
+## 2026-05-19 — LK Growth decision router and audit template
+
+- Added `growth-decision-router.md` to route Growth symptoms to GA4/GSC/GMC/Shopify/CRO/GEO/Ads/Blog/DataForSEO layers.
+- Added `growth-audit-output-template.md` to standardize facts, interpretation, recommendation, approval packet, rollback and impact review.
+- Added `growth-360-smoke-test-2026-05-19.md` as the documented 360º validation path and controlled next live smoke test criteria.
+- Preserved read-only/default approval boundaries; no production, external, Shopify, GMC, campaign, Klaviyo, price, stock or theme writes.
 
 ## 2026-05-19 — LK Growth Claude Blog / Ads / DataForSEO documentation
 
@@ -7,6 +12,7 @@
 - Added Claude Ads/AgriciDaniel note and connector readiness reports for read-only Growth diagnostics.
 - Preserved LK approval boundaries: no Shopify/CMS/Klaviyo/social/campaign/feed/customer-facing writes without explicit current-turn Lucas approval.
 
+## 2026-05-12 — LK GMC Required Attributes Applied
 
 - Lucas aprovou: “Corrigir e aplicar e seguir”. Aplicado o menor caminho: supplemental feed existente do Merchant (`LK Sneakers - Color Supplemental Feed`) via Gist, preservando 3.613 linhas e adicionando `age_group`, `gender`, `size` aos 80 offer_ids aprovados.
 - Como o raw revisionless do Gist estava cacheado, o datafeed do Merchant foi atualizado para o raw URL revisionado e `fetchNow` foi acionado; backup CSV e backup JSON do datafeed foram salvos para rollback.
