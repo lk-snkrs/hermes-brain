@@ -17,6 +17,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/area-skill-subagent-agent-decision.md` — matriz para decidir área, rotina, skill, subagent, cron ou agente/canal permanente.
 - `rotinas/hermes-release-watch.md` — monitoramento de releases Hermes Agent e avaliação de melhorias.
 - `rotinas/hermes-runtime-observability.md` — observabilidade read-only do runtime Hermes.
+- `rotinas/runtime-profile-channel-inventory-2026-05-19.md` — inventário canônico de profiles, bots, canais, cadência, status documental, silent contract e kill criteria.
 
 ## Templates operacionais
 
@@ -31,6 +32,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 
 - `projetos/hermes-brain-improvement-system.md` — sistema contínuo para transformar material externo em melhorias seguras do Brain.
 - `projetos/mission-control-prd.md` — PRD do Mission Control Hermes read-only, começando como relatório/protocolo seguro.
+- `projetos/mission-control-reconciliation-pointer-2026-05-19.md` — ponte documental para a reconciliação futura do Mission Control, sem mexer em repo/UI/runtime.
 
 ## Reports
 

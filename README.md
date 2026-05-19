@@ -29,9 +29,11 @@ Depois use:
 - `CHANGELOG.md` — histórico da adaptação Bruno/OpenClaw → Hermes.
 - `ROADMAP-30-DIAS-HERMES.md` — roadmap pós-adaptação e próximas rodadas.
 - `memories/` — memória executiva compacta e global.
+- `memories/current.md` — camada quente/current para boot rápido, prioridades, bloqueios e riscos.
 - `empresa/` — contexto cross-área, decisões, gestão, rotinas e skills.
 - `areas/` — mapas operacionais por negócio/área.
 - `agentes/` — agentes especializados e suas regras.
+- `agentes/mordomo/` — documentação inicial do profile Mordomo/concierge; não cria runtime.
 - `seguranca/` — permissões e ações sensíveis.
 - `skills/` — skills canônicas versionadas.
 - `scripts/` — scripts operacionais versionados.
