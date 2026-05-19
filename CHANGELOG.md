@@ -1,5 +1,13 @@
 ## 2026-05-12 — LK GMC Required Attributes Applied
 
+## 2026-05-19 — LK Growth Claude Blog / Ads / DataForSEO documentation
+
+- Documented LK Growth specialist operating layer under `areas/lk/sub-areas/growth/`.
+- Added Claude Blog/AgriciDaniel note for content engine, FAQ, clusters, GEO/AEO and editorial workflows.
+- Added Claude Ads/AgriciDaniel note and connector readiness reports for read-only Growth diagnostics.
+- Preserved LK approval boundaries: no Shopify/CMS/Klaviyo/social/campaign/feed/customer-facing writes without explicit current-turn Lucas approval.
+
+
 - Lucas aprovou: “Corrigir e aplicar e seguir”. Aplicado o menor caminho: supplemental feed existente do Merchant (`LK Sneakers - Color Supplemental Feed`) via Gist, preservando 3.613 linhas e adicionando `age_group`, `gender`, `size` aos 80 offer_ids aprovados.
 - Como o raw revisionless do Gist estava cacheado, o datafeed do Merchant foi atualizado para o raw URL revisionado e `fetchNow` foi acionado; backup CSV e backup JSON do datafeed foram salvos para rollback.
 - Verificação pós-write: 80/80 produtos no Content API agora retornam `ageGroup`/`gender`/`sizes` aplicados; 0 mismatch. Diagnostics de item no Merchant podem demorar para limpar até reprocessamento.
