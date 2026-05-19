@@ -1,11 +1,11 @@
 # Pending Tasks — Hermes Brain
 
-Última revisão: 2026-05-09
+Última revisão: 2026-05-19
 Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Ativos
 
-- [ ] Implementar gaps P0 da auditoria BRUNO-ATUAL → Hermes Brain — relatório `reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md`; próximos: `hot/current`, inventário de crons/bots/profiles, auditoria de skills, reconciliação Mission Control e documentação Mordomo.
+- [ ] Reconciliar Mission Control em rodada dedicada — ponte documental criada em `areas/operacoes/projetos/mission-control-reconciliation-pointer-2026-05-19.md`; detalhar ativo/legado/benchmark/próximos módulos sem repo/UI/runtime nesta rodada.
 - [x] Primeiro Stock Intelligence real/read-only da LK com sourcing acionado por sinal — relatório `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`; sem WhatsApp, Notion, compra ou alteração produtiva.
 - [x] Criar mapa canônico SKU Shopify ↔ Tiny — preview read-only `reports/lk-sku-shopify-tiny-map-preview-2026-05-10.md`; 6/6 campeões antes sem match tiveram candidato Tiny com confiança alta; tabela de aprovação para alias/correção gerada em `reports/lk-sku-tiny-alias-approval-preview-2026-05-10.md`; sem write produtivo.
 - [x] Investigar/corrigir leitura dos ROAS Meta 50–70x de influencers — relatório `reports/lk-roas-influencer-correction-readonly-2026-05-10.md`; 50–70x é Meta attributed ROAS, não ROAS operacional LK.
@@ -28,6 +28,8 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 - [ ] SPITI email poller/monitor — reavaliar quando houver novo leilão ou necessidade operacional.
 
 ## Concluídos / retirados da fila ativa
+
+- [x] Gaps P0 documentais BRUNO-ATUAL — criados `memories/current.md`, `areas/operacoes/rotinas/runtime-profile-channel-inventory-2026-05-19.md`, `empresa/skills/skill-audit-2026-05-19.md` e `agentes/mordomo/`; sem Docker/VPS/runtime/API/envio externo/credenciais. Mission Control detalhado ficou como pendência dedicada.
 
 - [x] Hermes v0.13 pós-deploy operacionalizado — release watch atualizado, `/goal`/Kanban/`no_agent` documentados, board LK Growth Ops criado em modo seguro, watchdogs `edd06fe19397` e `e7a61e275c37` ativos, e learning loop de aprovações documentado; workers amplos/dashboard público continuam bloqueados por aprovação.
 - [x] Script local/read-only de retomada de planos/PRDs — criado em 2026-05-09 com relatório `reports/retomada-planos-prds-2026-05-09.md`; cron recorrente não criado.

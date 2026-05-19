@@ -1,3 +1,12 @@
+## 2026-05-19 — BRUNO-ATUAL P0 documentais
+
+- Criada camada quente/current em `memories/current.md` para boot rápido, prioridades, bloqueios, decisões recentes e riscos por área.
+- Criado inventário documental `areas/operacoes/rotinas/runtime-profile-channel-inventory-2026-05-19.md` para profiles, bots, canais, cadência, status, silent contract e kill criteria.
+- Criada auditoria de skills em `empresa/skills/skill-audit-2026-05-19.md` com owner, status, risco, gatilho, revisão e decisão por skill canônica.
+- Documentado o profile/agente Mordomo em `agentes/mordomo/` sem criar bot, cron, canal, runtime ou automação.
+- Criada ponte `areas/operacoes/projetos/mission-control-reconciliation-pointer-2026-05-19.md`; reconciliação detalhada de Mission Control permanece fora desta rodada.
+- Preservados guardrails: sem material bruto de terceiro no Brain, sem Docker/VPS/runtime/API write/envio externo/credenciais.
+
 ## 2026-05-19 — BRUNO-ATUAL Hermes Brain adaptation audit
 
 - Added `reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md` after processing the updated Bruno/OpenClaw course package sent by Lucas.
