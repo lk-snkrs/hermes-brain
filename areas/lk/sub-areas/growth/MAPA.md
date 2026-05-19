@@ -62,6 +62,7 @@ Antes de declarar um diagnóstico de Growth completo, verificar os 18 tópicos e
 - `CLAUDE-BLOG-HERMES-NOTE.md` — nota operacional da instalação Claude Blog/AgriciDaniel no universo LK Growth e uso diário para conteúdo/GEO/FAQ/clusters.
 - `IMPACT-REVIEWS.md` — política e estado dos follow-ups/impact reviews no profile `lk-growth`.
 - `rotinas/growth-decision-router.md` — matriz de decisão para escolher GA4/GSC/GMC/Shopify/CRO/GEO/Ads/Blog/DataForSEO por sintoma.
+- `rotinas/dataforseo-mcp-reload-approval-2026-05-19.md` — approval packet para expor DataForSEO MCP no runtime ativo sem violar guardrails de VPS/Hermes.
 - `templates/growth-audit-output-template.md` — template padrão de auditoria Growth com fatos, interpretação, recomendação, approval packet, rollback e review de impacto.
 - `reports/growth-360-smoke-test-2026-05-19.md` — validação documental do fluxo 360º e próximos critérios de smoke test live controlado.
 - `contexto/` — mapas por fonte e domínio.
