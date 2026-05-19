@@ -65,6 +65,7 @@ Antes de declarar um diagnóstico de Growth completo, verificar os 18 tópicos e
 - `rotinas/dataforseo-mcp-reload-approval-2026-05-19.md` — approval packet para expor DataForSEO MCP no runtime ativo sem violar guardrails de VPS/Hermes.
 - `templates/growth-audit-output-template.md` — template padrão de auditoria Growth com fatos, interpretação, recomendação, approval packet, rollback e review de impacto.
 - `reports/growth-360-smoke-test-2026-05-19.md` — validação documental do fluxo 360º e próximos critérios de smoke test live controlado.
+- `projetos/growth-action-prd-2026-05-19.md` — PRD de ação para cadência semanal orientada a receita, conversão e reviews D+7.
 - `contexto/` — mapas por fonte e domínio.
 - `rotinas/` — rotinas operacionais.
 - `templates/` — formatos padronizados de auditoria/approval packet.
