@@ -1,3 +1,9 @@
+## 2026-05-19 — LK Growth Action PRD
+
+- Added `growth-action-prd-2026-05-19.md` to turn the documented LK Growth OS into a practical weekly execution system.
+- Defined revenue/conversion as the north-star, daily cadence by weekday, P0/P1/P2 scoring, D+7 impact reviews, 90-day roadmap and first recommended execution week.
+- Preserved approval boundaries: the PRD authorizes read-only analysis, previews and approval packets, not production/theme/Shopify/GMC/Ads/Klaviyo/WhatsApp/runtime writes.
+
 ## 2026-05-19 — LK Growth DataForSEO MCP reload approval packet
 
 - Added `dataforseo-mcp-reload-approval-2026-05-19.md` to document the remaining runtime decision before exposing DataForSEO MCP in the active agent toolset.
