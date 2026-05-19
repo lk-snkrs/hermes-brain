@@ -1,0 +1,4493 @@
+{
+  "ok": true,
+  "generated_at": "2026-05-19T11:51:37.076428+00:00",
+  "scope": "LK SEO/CRO Bloco 2 — Shopify live recent sales + exact membership refresh",
+  "contract": "read_only; no_external_writes; shopify_GET_and_GraphQL_query_only",
+  "source_summary": {
+    "shopify_orders_window_start": "2026-04-17T00:00:00-03:00",
+    "shopify_orders_min_created_at": "2026-04-17T01:28:58-03:00",
+    "shopify_orders_max_created_at": "2026-05-18T18:57:10-03:00",
+    "shopify_orders_total_read": 403,
+    "shopify_orders_included_paid_like": 343,
+    "shopify_order_api_calls": 2,
+    "shopify_lookup_count": 19,
+    "shopify_lookup_ok": 19,
+    "base_router": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-seo-cro-commercial-opportunity-router-2026-05-18.json"
+  },
+  "summary": {
+    "refined_urls": 20,
+    "p1_after_refresh": 13,
+    "p2_after_refresh": 6,
+    "p3_after_refresh": 1,
+    "data_gap_after_refresh": 0,
+    "writes_allowed_now": 0
+  },
+  "lookup_results": [
+    {
+      "url": "https://lksneakers.com.br/collections/onitsuka-tiger-todos-os-modelos",
+      "handle": "onitsuka-tiger-todos-os-modelos",
+      "page_type": "collection",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/new-balance-204l",
+      "handle": "new-balance-204l",
+      "page_type": "collection",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/air-jordan-travis-scott",
+      "handle": "air-jordan-travis-scott",
+      "page_type": "collection",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/lululemon",
+      "handle": "lululemon",
+      "page_type": "collection",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/yeezy",
+      "handle": "yeezy",
+      "page_type": "collection",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/adidas-samba-jane",
+      "handle": "adidas-samba-jane",
+      "page_type": "collection",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "page_type": "pdp",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/products/slide-nike-mind-001-black-chrome-preto",
+      "handle": "slide-nike-mind-001-black-chrome-preto",
+      "page_type": "pdp",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/onitsuka-tiger-mexico-66",
+      "handle": "onitsuka-tiger-mexico-66",
+      "page_type": "collection",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/nike-mind-001",
+      "handle": "nike-mind-001",
+      "page_type": "collection",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/nike-x-jacquemus-moon-shoe-sp",
+      "handle": "nike-x-jacquemus-moon-shoe-sp",
+      "page_type": "collection",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho",
+      "handle": "crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho",
+      "page_type": "pdp",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/nude-project",
+      "handle": "nude-project",
+      "page_type": "collection",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/products/tenis-adidas-samba-og-crochet-pack-sand-strata-bege",
+      "handle": "tenis-adidas-samba-og-crochet-pack-sand-strata-bege",
+      "page_type": "pdp",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/air-jordan-4",
+      "handle": "air-jordan-4",
+      "page_type": "collection",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/products/jaqueta-lululemon-define-nulu",
+      "handle": "jaqueta-lululemon-define-nulu",
+      "page_type": "pdp",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/products/tenis-alo-yoga-alo-runner-preto",
+      "handle": "tenis-alo-yoga-alo-runner-preto",
+      "page_type": "pdp",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/aime-leon-dore",
+      "handle": "aime-leon-dore",
+      "page_type": "collection",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/onitsuka-tiger-x-versace",
+      "handle": "onitsuka-tiger-x-versace",
+      "page_type": "collection",
+      "ok": true,
+      "api_status": 200,
+      "error": null
+    }
+  ],
+  "refined_top_opportunities": [
+    {
+      "url": "https://lksneakers.com.br/collections/onitsuka-tiger-todos-os-modelos",
+      "path": "/collections/onitsuka-tiger-todos-os-modelos",
+      "page_type": "collection",
+      "handle": "onitsuka-tiger-todos-os-modelos",
+      "commercial_priority": "P1",
+      "commercial_score": 97,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "1132 sessões GA4",
+        "55903 impressões GSC",
+        "conversão landing baixa (0.09%)",
+        "642 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 1132,
+        "users": 1042,
+        "views": 2612,
+        "purchases": 1,
+        "landing_cvr_percent": 0.09,
+        "revenue": 2499.99
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/collections/onitsuka-tiger-todos-os-modelos",
+        "clicks": 635,
+        "impressions": 55903,
+        "ctr_percent": 1.14,
+        "position": 6.9,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "onitsuka tiger",
+            "impressions": 25975,
+            "ctr_percent": 0.23,
+            "position": 8.4,
+            "priority": "P1"
+          },
+          {
+            "query": "tenis onitsuka tiger",
+            "impressions": 3603,
+            "ctr_percent": 1.03,
+            "position": 3.7,
+            "priority": "P1"
+          },
+          {
+            "query": "onitsuka",
+            "impressions": 2652,
+            "ctr_percent": 0.75,
+            "position": 6.6,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "collection_token_match",
+        "products_matched": 80,
+        "sample_products": [
+          {
+            "title": "Tênis Onitsuka Tiger California 78 EX Monument Blue Cream Azul",
+            "handle": "tenis-onitsuka-tiger-california-78-ex-monument-blue-cream-azul",
+            "vendor": "Onitsuka Tiger",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Onitsuka Tiger California 78 EX Monument Cream/Directoire Blue Off White",
+            "handle": "tenis-onitsuka-tiger-california-78-ex-monument-cream-directoire-blue-off-white",
+            "vendor": "Onitsuka Tiger",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Onitsuka Tiger California 78 EX Putty/Green Bege",
+            "handle": "tenis-onitsuka-tiger-california-78-ex-putty-green-bege",
+            "vendor": "Onitsuka Tiger",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Onitsuka Tiger California 78 EX White/Classic Red",
+            "handle": "tenis-onitsuka-tiger-california-78-ex-white-classic-red",
+            "vendor": "Onitsuka Tiger",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Onitsuka Tiger Delegation Chunk Black/Black Preto",
+            "handle": "tenis-onitsuka-tiger-delegation-chunk-black-black-preto",
+            "vendor": "Onitsuka Tiger",
+            "status": "active"
+          }
+        ],
+        "variant_count": 825,
+        "sales": {
+          "orders_or_lines": 642,
+          "units": 642,
+          "revenue": 1524633.62,
+          "channels": {
+            "site": {
+              "units": 427,
+              "revenue": 1015995.74
+            },
+            "loja": {
+              "units": 215,
+              "revenue": 508637.88
+            }
+          },
+          "top_skus": [
+            [
+              "1183C102.751",
+              45
+            ],
+            [
+              "1183C015101",
+              42
+            ],
+            [
+              "1183C102 751",
+              26
+            ],
+            [
+              "1183C015200",
+              24
+            ],
+            [
+              "183A872",
+              22
+            ],
+            [
+              "1183C102250",
+              21
+            ],
+            [
+              "1183C123.252-4",
+              17
+            ],
+            [
+              "1183B566021",
+              17
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 1619,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 825,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 797,
+          "blocked_missing_shopify_sku": 23,
+          "blocked_data_quality": 5
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 802,
+          "no_shopify_sku": 23
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_collection_membership_first_120",
+        "products_checked": 120,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 100,
+          "revenue": 248799.0,
+          "channels": {
+            "loja": {
+              "units": 33,
+              "revenue": 85799.67
+            },
+            "site": {
+              "units": 67,
+              "revenue": 162999.33
+            }
+          },
+          "matched_products": 40,
+          "matched_variants": 78,
+          "top_skus": [
+            [
+              "1183C102 751-3",
+              6
+            ],
+            [
+              "1183C102250-5",
+              6
+            ],
+            [
+              "1183C102751-3",
+              4
+            ],
+            [
+              "1183C015-202-2",
+              4
+            ],
+            [
+              "1183C015-202-4",
+              4
+            ],
+            [
+              "1183C123.252-6",
+              4
+            ],
+            [
+              "1183C015101-2",
+              4
+            ],
+            [
+              "1183A201-126-3",
+              4
+            ],
+            [
+              "1183A872.101-4",
+              4
+            ],
+            [
+              "1183C102250-2",
+              4
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 742,
+        "combined_shopify_revenue_local_plus_recent": 1773432.62,
+        "sample_live_products": [
+          {
+            "handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-suede-sneakers-green",
+            "title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Green",
+            "status": "ACTIVE",
+            "variants": 16
+          },
+          {
+            "handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-suede-sneakers-brown-bege",
+            "title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+            "status": "ACTIVE",
+            "variants": 16
+          },
+          {
+            "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+            "title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+            "status": "ACTIVE",
+            "variants": 15
+          },
+          {
+            "handle": "tenis-onitsuka-tiger-mexico-66-sd-beige-beet-juice-bege",
+            "title": "Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege",
+            "status": "ACTIVE",
+            "variants": 12
+          },
+          {
+            "handle": "tenis-onitsuka-tiger-mexico-66-sabot-beige-green-bege",
+            "title": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+            "status": "ACTIVE",
+            "variants": 10
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 100,
+      "commercial_priority_after_refresh": "P1",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/new-balance-204l",
+      "path": "/collections/new-balance-204l",
+      "page_type": "collection",
+      "handle": "new-balance-204l",
+      "commercial_priority": "P1",
+      "commercial_score": 95,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "454 sessões GA4",
+        "43484 impressões GSC",
+        "CTR baixo (0.77%)",
+        "conversão landing baixa (0.22%)",
+        "337 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 454,
+        "users": 423,
+        "views": 893,
+        "purchases": 1,
+        "landing_cvr_percent": 0.22,
+        "revenue": 2644.96
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/collections/new-balance-204l",
+        "clicks": 334,
+        "impressions": 43484,
+        "ctr_percent": 0.77,
+        "position": 7.5,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "new balance 204l",
+            "impressions": 18422,
+            "ctr_percent": 0.41,
+            "position": 8.2,
+            "priority": "P1"
+          },
+          {
+            "query": "nb 204l",
+            "impressions": 2474,
+            "ctr_percent": 1.01,
+            "position": 5.9,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "collection_token_match",
+        "products_matched": 80,
+        "sample_products": [
+          {
+            "title": "Tênis New Balance 204L Arid Timberwolf Bege",
+            "handle": "tenis-new-balance-204l-timberwolf-bege",
+            "vendor": "New Balance",
+            "status": "active"
+          },
+          {
+            "title": "Tênis New Balance 204L Basketcase Beef & Broccoli Marrom",
+            "handle": "tenis-new-balance-204l-basketcase-beef-broccoli-marrom",
+            "vendor": "New Balance",
+            "status": "active"
+          },
+          {
+            "title": "Tênis New Balance 204L Black Magnet Preto",
+            "handle": "tenis-new-balance-204l-black-magnet-preto",
+            "vendor": "New Balance",
+            "status": "active"
+          },
+          {
+            "title": "Tênis New Balance 204L Black Timberwolf Preto",
+            "handle": "tenis-new-balance-204l-black-timberwolf-preto",
+            "vendor": "New Balance",
+            "status": "active"
+          },
+          {
+            "title": "Tênis New Balance 204L Cortado Marrom",
+            "handle": "tenis-new-balance-204l-cortado-marrom",
+            "vendor": "New Balance",
+            "status": "active"
+          }
+        ],
+        "variant_count": 763,
+        "sales": {
+          "orders_or_lines": 336,
+          "units": 337,
+          "revenue": 857371.67,
+          "channels": {
+            "site": {
+              "units": 239,
+              "revenue": 618427.61
+            },
+            "loja": {
+              "units": 98,
+              "revenue": 238944.06
+            }
+          },
+          "top_skus": [
+            [
+              "U204LMMA-5",
+              19
+            ],
+            [
+              "U204LMMC-3",
+              18
+            ],
+            [
+              "U204LMMA-4",
+              17
+            ],
+            [
+              "U204LMMA-3",
+              16
+            ],
+            [
+              "U9060CCB-3",
+              15
+            ],
+            [
+              "U204LMMC-4",
+              13
+            ],
+            [
+              "U204LMMA-6",
+              12
+            ],
+            [
+              "U204LMMC-5",
+              11
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 1215,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 763,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 605,
+          "blocked_missing_shopify_sku": 85,
+          "blocked_data_quality": 73
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 678,
+          "no_shopify_sku": 85
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_collection_membership_first_120",
+        "products_checked": 32,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 30,
+          "revenue": 83999.7,
+          "channels": {
+            "loja": {
+              "units": 13,
+              "revenue": 36399.87
+            },
+            "site": {
+              "units": 17,
+              "revenue": 47599.83
+            }
+          },
+          "matched_products": 6,
+          "matched_variants": 18,
+          "top_skus": [
+            [
+              "U204LMMA-4",
+              8
+            ],
+            [
+              "U204LMMC-2",
+              6
+            ],
+            [
+              "U204LMMA-3",
+              6
+            ],
+            [
+              "U204LMMA-2",
+              6
+            ],
+            [
+              "U204LMMC-5",
+              4
+            ],
+            [
+              "U204LMMC-6",
+              4
+            ],
+            [
+              "U204L2SZ-36",
+              4
+            ],
+            [
+              "U204LMMC-7",
+              2
+            ],
+            [
+              "U204LMMC-3",
+              2
+            ],
+            [
+              "U204LMMA-6",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 367,
+        "combined_shopify_revenue_local_plus_recent": 941371.37,
+        "sample_live_products": [
+          {
+            "handle": "tenis-new-balance-204l-timberwolf-bege",
+            "title": "Tênis New Balance 204L Arid Timberwolf Bege",
+            "status": "ACTIVE",
+            "variants": 12
+          },
+          {
+            "handle": "tenis-new-balance-204l-mushroom-arid-stone-marrom",
+            "title": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+            "status": "ACTIVE",
+            "variants": 12
+          },
+          {
+            "handle": "tenis-new-balance-204l-silver-metallic-black-prateado",
+            "title": "Tênis New Balance 204L Silver Metallic Black Prateado",
+            "status": "ACTIVE",
+            "variants": 11
+          },
+          {
+            "handle": "tenis-new-balance-204l-pastel-pink-rosa",
+            "title": "Tênis New Balance 204L Pastel Pink Rosa",
+            "status": "ACTIVE",
+            "variants": 11
+          },
+          {
+            "handle": "tenis-new-balance-204l-black-magnet-preto",
+            "title": "Tênis New Balance 204L Black Magnet Preto",
+            "status": "ACTIVE",
+            "variants": 11
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 100,
+      "commercial_priority_after_refresh": "P1",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/air-jordan-travis-scott",
+      "path": "/collections/air-jordan-travis-scott",
+      "page_type": "collection",
+      "handle": "air-jordan-travis-scott",
+      "commercial_priority": "P1",
+      "commercial_score": 92,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "207 sessões GA4",
+        "27818 impressões GSC",
+        "CTR baixo (0.66%)",
+        "conversão landing baixa (0.00%)",
+        "33 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 207,
+        "users": 201,
+        "views": 406,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/collections/air-jordan-travis-scott",
+        "clicks": 184,
+        "impressions": 27818,
+        "ctr_percent": 0.66,
+        "position": 6.9,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "nike travis scott",
+            "impressions": 4348,
+            "ctr_percent": 0.64,
+            "position": 7.5,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "collection_token_match",
+        "products_matched": 80,
+        "sample_products": [
+          {
+            "title": "Tênis Nike Travis Scott Air Jordan 4 Retro Cactus Jack Azul",
+            "handle": "tenis-travis-scott-air-jordan-4-retro-cactus-jack-nubuck-azul-6",
+            "vendor": "Jordan",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde",
+            "handle": "tenis-travis-scott-x-air-jordan-1-low-golf-neutral-olive-verde-nubuck",
+            "vendor": "Jordan",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Nike Travis Scott x Air Jordan 1 Low Og Canary Amarelo",
+            "handle": "tenis-travis-scott-x-air-jordan-1-low-og-canary-amarelo",
+            "vendor": "Jordan",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Nike Travis Scott x Air Jordan 1 Low OG Reverse Mocha Bege",
+            "handle": "travis-scott-x-air-jordan-1-low-og-reverse-mocha",
+            "vendor": "Jordan",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Nike Travis Scott x Air Jordan 1 Low OG SP 'Black Phantom' Preto",
+            "handle": "travis-scott-x-air-jordan-1-low-og-sp-black-phantom",
+            "vendor": "Jordan",
+            "status": "active"
+          }
+        ],
+        "variant_count": 710,
+        "sales": {
+          "orders_or_lines": 33,
+          "units": 33,
+          "revenue": 139949.69,
+          "channels": {
+            "site": {
+              "units": 21,
+              "revenue": 92049.79
+            },
+            "loja": {
+              "units": 12,
+              "revenue": 47899.9
+            }
+          },
+          "top_skus": [
+            [
+              "CZ0790102",
+              3
+            ],
+            [
+              "553560141",
+              3
+            ],
+            [
+              "DM7866200",
+              3
+            ],
+            [
+              "CZ0790-400-9",
+              2
+            ],
+            [
+              "CZ0790-400-7",
+              2
+            ],
+            [
+              "DC0774001",
+              2
+            ],
+            [
+              "553558040",
+              2
+            ],
+            [
+              "CZ0790-400-10",
+              2
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 617,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 710,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 527,
+          "blocked_data_quality": 170,
+          "blocked_missing_shopify_sku": 13
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 697,
+          "no_shopify_sku": 13
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_collection_membership_first_120",
+        "products_checked": 23,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 2,
+          "revenue": 14498.99,
+          "channels": {
+            "loja": {
+              "units": 2,
+              "revenue": 14498.99
+            }
+          },
+          "matched_products": 2,
+          "matched_variants": 2,
+          "top_skus": [
+            [
+              "DM7866200-7",
+              2
+            ],
+            [
+              "IH7971-001-40",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 35,
+        "combined_shopify_revenue_local_plus_recent": 154448.68,
+        "sample_live_products": [
+          {
+            "handle": "tenis-air-jordan-1-retro-high-fragment-design-x-travis-scott-couro-branco-e-azul",
+            "title": "Tênis Nike Air Jordan 1 Retro High Fragment Design x Travis Scott Couro Branco Azul",
+            "status": "ACTIVE",
+            "variants": 12
+          },
+          {
+            "handle": "tenis-air-jordan-1-retro-low-fragment-design-x-travis-scott-couro-branco-preto-azul",
+            "title": "Tênis Nike Air Jordan 1 Retro Low Fragment Design x Travis Scott Couro Branco Preto Azul",
+            "status": "ACTIVE",
+            "variants": 12
+          },
+          {
+            "handle": "tenis-travis-scott-x-air-jordan-1-low-golf-neutral-olive-verde-nubuck",
+            "title": "Tênis Nike Travis Scott x Air Jordan 1 Low Golf Neutral Olive Verde",
+            "status": "ACTIVE",
+            "variants": 12
+          },
+          {
+            "handle": "tenis-travis-scott-x-nike-air-jordan-1-retro-low-og-sp-olive-suede",
+            "title": "Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco",
+            "status": "ACTIVE",
+            "variants": 12
+          },
+          {
+            "handle": "tenis-travis-scott-air-jordan-4-retro-cactus-jack-nubuck-azul-6",
+            "title": "Tênis Nike Travis Scott Air Jordan 4 Retro Cactus Jack Azul",
+            "status": "ACTIVE",
+            "variants": 7
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 100,
+      "commercial_priority_after_refresh": "P1",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/lululemon",
+      "path": "/collections/lululemon",
+      "page_type": "collection",
+      "handle": "lululemon",
+      "commercial_priority": "P1",
+      "commercial_score": 90,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "859 sessões GA4",
+        "25178 impressões GSC",
+        "conversão landing baixa (0.00%)",
+        "41 un. vendidas no Shopify/local spine",
+        "estoque Tiny disponível em ao menos parte da família/PDP"
+      ],
+      "recommended_next_step": "SEO/CRO preview: title/meta CTR + melhoria acima da dobra; elegível a pacote de aprovação, sem write automático.",
+      "ga4": {
+        "sessions": 859,
+        "users": 793,
+        "views": 1768,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/collections/lululemon",
+        "clicks": 764,
+        "impressions": 25178,
+        "ctr_percent": 3.03,
+        "position": 5.4,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "lululemon",
+            "impressions": 16092,
+            "ctr_percent": 0.76,
+            "position": 6.0,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "collection_token_match",
+        "products_matched": 36,
+        "sample_products": [
+          {
+            "title": "Top Lululemon Energy Longline Medium Support, B–D Cups",
+            "handle": "top-lululemon-energy-longline-medium-support-b-d-cups",
+            "vendor": "Lululemon",
+            "status": "active"
+          },
+          {
+            "title": "Top Lululemon Like a Cloud Longline Light Support, B/C Cup",
+            "handle": "top-lululemon-like-a-cloud-longline-light-support-b-c-cup",
+            "vendor": "Lululemon",
+            "status": "active"
+          },
+          {
+            "title": "Mule Lululemon SwayDay Black Preto",
+            "handle": "mule-lululemon-swayday-black-preto",
+            "vendor": "Lululemon",
+            "status": "active"
+          },
+          {
+            "title": "Mule Lululemon SwayDay Blissful Pink Rosa",
+            "handle": "mule-lululemon-swayday-blissful-pink-rosa",
+            "vendor": "Lululemon",
+            "status": "active"
+          },
+          {
+            "title": "Mule Lululemon SwayDay Misty Grey Cinza",
+            "handle": "mule-lululemon-swayday-misty-grey-cinza",
+            "vendor": "Lululemon",
+            "status": "active"
+          }
+        ],
+        "variant_count": 902,
+        "sales": {
+          "orders_or_lines": 41,
+          "units": 41,
+          "revenue": 49449.59,
+          "channels": {
+            "site": {
+              "units": 27,
+              "revenue": 33199.73
+            },
+            "loja": {
+              "units": 14,
+              "revenue": 16249.86
+            }
+          },
+          "top_skus": [
+            [
+              "11020158-9",
+              5
+            ],
+            [
+              "11020158-12",
+              4
+            ],
+            [
+              "9750519-23",
+              1
+            ],
+            [
+              "9960807-7",
+              1
+            ],
+            [
+              "2020012-23",
+              1
+            ],
+            [
+              "9820425-2",
+              1
+            ],
+            [
+              "11020158-21",
+              1
+            ],
+            [
+              "11750327-22",
+              1
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 1.0,
+        "tiny_total_available_sum": 1.0,
+        "shopify_inventory_hint_sum_not_stock_truth": 1812,
+        "ready_available_variants": 1,
+        "zero_stock_sourcing_candidate_variants": 240,
+        "blocked_or_unmapped_variants": 661,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 641,
+          "ready_zero_stock_sourcing_candidate": 240,
+          "blocked_missing_shopify_sku": 20,
+          "ready_available_tiny": 1
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 641,
+          "zero_official_deposit": 240,
+          "no_shopify_sku": 20,
+          "available_official_deposit": 1
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_collection_membership_first_120",
+        "products_checked": 37,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 5,
+          "revenue": 7199.95,
+          "channels": {
+            "site": {
+              "units": 4,
+              "revenue": 5799.96
+            },
+            "loja": {
+              "units": 1,
+              "revenue": 1399.99
+            }
+          },
+          "matched_products": 3,
+          "matched_variants": 5,
+          "top_skus": [
+            [
+              "11020158-12",
+              2
+            ],
+            [
+              "11020158-9",
+              2
+            ],
+            [
+              "9820425-2",
+              2
+            ],
+            [
+              "11860288-5",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 46,
+        "combined_shopify_revenue_local_plus_recent": 56649.54,
+        "sample_live_products": [
+          {
+            "handle": "lululemon-align™-high-rise-short-6-rose-gold",
+            "title": "Lululemon Align™ High-Rise Short 6\" Rose/Gold",
+            "status": "DRAFT",
+            "variants": 4
+          },
+          {
+            "handle": "short-lululemon-shake-it-out-high-rise-running-2-5",
+            "title": "Short Lululemon Shake It Out High-Rise Running 2.5\"",
+            "status": "ACTIVE",
+            "variants": 50
+          },
+          {
+            "handle": "jaqueta-lululemon-define-nulu",
+            "title": "Jaqueta Lululemon Define Nulu",
+            "status": "ACTIVE",
+            "variants": 25
+          },
+          {
+            "handle": "define-cropped-jacket-nulu",
+            "title": "Jaqueta Lululemon Define Cropped Nulu Light Ivory/Gold/Gold Off White",
+            "status": "ACTIVE",
+            "variants": 4
+          },
+          {
+            "handle": "camiseta-lululemon-swiftly-tech-2-0-hip-length",
+            "title": "Camiseta Lululemon Swiftly Tech  2.0 Hip Length",
+            "status": "ACTIVE",
+            "variants": 60
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 100,
+      "commercial_priority_after_refresh": "P1",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/adidas-samba-jane",
+      "path": "/collections/adidas-samba-jane",
+      "page_type": "collection",
+      "handle": "adidas-samba-jane",
+      "commercial_priority": "P1",
+      "commercial_score": 89,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "210 sessões GA4",
+        "17701 impressões GSC",
+        "conversão landing baixa (0.00%)",
+        "149 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 210,
+        "users": 199,
+        "views": 265,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/collections/adidas-samba-jane",
+        "clicks": 214,
+        "impressions": 17701,
+        "ctr_percent": 1.21,
+        "position": 7.0,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "adidas samba jane",
+            "impressions": 4120,
+            "ctr_percent": 1.04,
+            "position": 6.3,
+            "priority": "P1"
+          },
+          {
+            "query": "samba jane",
+            "impressions": 2731,
+            "ctr_percent": 1.5,
+            "position": 5.6,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "collection_token_match",
+        "products_matched": 80,
+        "sample_products": [
+          {
+            "title": "Tênis Adidas Samba Jane 'Black White Gum' Preto",
+            "handle": "tenis-adidas-samba-jane-black-white-gum-preto",
+            "vendor": "Adidas",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Adidas Samba Jane 'Scarlet Gum' Vermelho",
+            "handle": "tenis-adidas-samba-jane-scarlet-gum-vermelho",
+            "vendor": "Adidas",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Adidas Samba Jane 'White Black' Branco",
+            "handle": "tenis-adidas-samba-jane-white-black-branco",
+            "vendor": "Adidas",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Adidas Samba Jane Chalk White Wonder Quartz Branco",
+            "handle": "tenis-adidas-samba-jane-chalk-white-wonder-quartz-branco",
+            "vendor": "Adidas",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Adidas Samba Jane Cream Black Gum Bege",
+            "handle": "tenis-adidas-samba-jane-cream-black-gum-bege",
+            "vendor": "Adidas",
+            "status": "active"
+          }
+        ],
+        "variant_count": 565,
+        "sales": {
+          "orders_or_lines": 149,
+          "units": 149,
+          "revenue": 310148.55,
+          "channels": {
+            "loja": {
+              "units": 50,
+              "revenue": 106049.54
+            },
+            "site": {
+              "units": 99,
+              "revenue": 204099.01
+            }
+          },
+          "top_skus": [
+            [
+              "JR9446-2",
+              12
+            ],
+            [
+              "JR9446-3",
+              11
+            ],
+            [
+              "JI3184",
+              11
+            ],
+            [
+              "JR9446-4",
+              11
+            ],
+            [
+              "JR9446-5",
+              9
+            ],
+            [
+              "JR9446-6",
+              6
+            ],
+            [
+              "JR9447-2",
+              5
+            ],
+            [
+              "JR9446-7",
+              5
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 1014,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 565,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 532,
+          "blocked_data_quality": 26,
+          "blocked_missing_shopify_sku": 7
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 558,
+          "no_shopify_sku": 7
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_collection_membership_first_120",
+        "products_checked": 12,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 5,
+          "revenue": 9198.96,
+          "channels": {
+            "loja": {
+              "units": 1,
+              "revenue": 1999.99
+            },
+            "site": {
+              "units": 4,
+              "revenue": 7198.97
+            }
+          },
+          "matched_products": 5,
+          "matched_variants": 5,
+          "top_skus": [
+            [
+              "JR1402-1",
+              2
+            ],
+            [
+              "JQ6446-3",
+              2
+            ],
+            [
+              "43774078387710",
+              2
+            ],
+            [
+              "IH4000-36",
+              2
+            ],
+            [
+              "JR4482-38",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 154,
+        "combined_shopify_revenue_local_plus_recent": 319347.51,
+        "sample_live_products": [
+          {
+            "handle": "tenis-adidas-samba-jane-black-white-gum-preto",
+            "title": "Tênis Adidas Samba Jane 'Black White Gum' Preto",
+            "status": "ACTIVE",
+            "variants": 7
+          },
+          {
+            "handle": "tenis-adidas-samba-jane-white-black-branco",
+            "title": "Tênis Adidas Samba Jane 'White Black' Branco",
+            "status": "ACTIVE",
+            "variants": 7
+          },
+          {
+            "handle": "tenis-adidas-samba-jane-scarlet-gum-vermelho",
+            "title": "Tênis Adidas Samba Jane 'Scarlet Gum' Vermelho",
+            "status": "ACTIVE",
+            "variants": 7
+          },
+          {
+            "handle": "tenis-adidas-samba-jane-cream-black-gum-bege",
+            "title": "Tênis Adidas Samba Jane Cream Black Gum Bege",
+            "status": "ACTIVE",
+            "variants": 7
+          },
+          {
+            "handle": "tenis-adidas-samba-jane-white-blue-gum-branco",
+            "title": "Tênis Adidas Samba Jane White Blue Gum Branco",
+            "status": "ACTIVE",
+            "variants": 7
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 100,
+      "commercial_priority_after_refresh": "P1",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "path": "/products/tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "page_type": "pdp",
+      "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "commercial_priority": "P1",
+      "commercial_score": 87,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "146 sessões GA4",
+        "11070 impressões GSC",
+        "CTR baixo (0.42%)",
+        "87 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 146,
+        "users": 132,
+        "views": 252,
+        "purchases": 1,
+        "landing_cvr_percent": 0.68,
+        "revenue": 2125.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+        "clicks": 46,
+        "impressions": 11070,
+        "ctr_percent": 0.42,
+        "position": 5.0,
+        "source_label": "fact_gsc"
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "exact_product_handle",
+        "products_matched": 1,
+        "sample_products": [
+          {
+            "title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+            "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+            "vendor": "Onitsuka Tiger",
+            "status": "active"
+          }
+        ],
+        "variant_count": 12,
+        "sales": {
+          "orders_or_lines": 87,
+          "units": 87,
+          "revenue": 208799.13,
+          "channels": {
+            "loja": {
+              "units": 38,
+              "revenue": 91199.62
+            },
+            "site": {
+              "units": 49,
+              "revenue": 117599.51
+            }
+          },
+          "top_skus": [
+            [
+              "1183C102.751",
+              45
+            ],
+            [
+              "1183C102 751",
+              26
+            ],
+            [
+              "1183C102751-7",
+              1
+            ],
+            [
+              "1183C102751-6",
+              1
+            ],
+            [
+              "1183C102751-4",
+              1
+            ],
+            [
+              "1183C102751-13",
+              1
+            ],
+            [
+              "1183C102751-9",
+              1
+            ],
+            [
+              "1183C102751-3",
+              1
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": -8,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 12,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 12
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 12
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_product_handle",
+        "products_checked": 1,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 19,
+          "revenue": 45599.81,
+          "channels": {
+            "site": {
+              "units": 11,
+              "revenue": 26399.89
+            },
+            "loja": {
+              "units": 8,
+              "revenue": 19199.92
+            }
+          },
+          "matched_products": 1,
+          "matched_variants": 9,
+          "top_skus": [
+            [
+              "1183C102 751-3",
+              6
+            ],
+            [
+              "1183C102751-3",
+              4
+            ],
+            [
+              "1183C102751-4",
+              3
+            ],
+            [
+              "1183C102 751-4",
+              3
+            ],
+            [
+              "1183C102751-2",
+              2
+            ],
+            [
+              "1183C102751-6",
+              2
+            ],
+            [
+              "1183C102751-9",
+              2
+            ],
+            [
+              "1183C102 751-2",
+              2
+            ],
+            [
+              "1183C102 751-6",
+              2
+            ],
+            [
+              "1183C102 751-9",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 106,
+        "combined_shopify_revenue_local_plus_recent": 254398.94,
+        "sample_live_products": [
+          {
+            "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+            "title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+            "status": "ACTIVE",
+            "variants": 15
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 100,
+      "commercial_priority_after_refresh": "P1",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/onitsuka-tiger-mexico-66",
+      "path": "/collections/onitsuka-tiger-mexico-66",
+      "page_type": "collection",
+      "handle": "onitsuka-tiger-mexico-66",
+      "commercial_priority": "P1",
+      "commercial_score": 85,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "748 sessões GA4",
+        "31659 impressões GSC",
+        "conversão landing baixa (0.00%)",
+        "630 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 748,
+        "users": 698,
+        "views": 1482,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/collections/onitsuka-tiger-mexico-66",
+        "clicks": 622,
+        "impressions": 31659,
+        "ctr_percent": 1.96,
+        "position": 4.2,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "onitsuka tiger mexico 66",
+            "impressions": 8411,
+            "ctr_percent": 2.38,
+            "position": 3.0,
+            "priority": "P1"
+          },
+          {
+            "query": "tenis mexico 66",
+            "impressions": 2776,
+            "ctr_percent": 0.86,
+            "position": 3.7,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "collection_token_match",
+        "products_matched": 80,
+        "sample_products": [
+          {
+            "title": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+            "handle": "tenis-onitsuka-tiger-mexico-66-beige-grass-green-marrom",
+            "vendor": "Onitsuka Tiger",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Onitsuka Tiger Mexico 66 Birch Green Branco",
+            "handle": "tenis-onitsuka-tiger-mexico-66-brich-green-branco",
+            "vendor": "Onitsuka Tiger",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Onitsuka Tiger México 66 Birch Peacoat Bege",
+            "handle": "tenis-onitsuka-tiger-mexico-66-brich-peacoat-bege",
+            "vendor": "Onitsuka Tiger",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Onitsuka Tiger Mexico 66 Birch/Rust Orange Bege",
+            "handle": "tenis-onitsuka-tiger-mexico-66-birch-rust-orange-bege",
+            "vendor": "Onitsuka Tiger",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Onitsuka Tiger Mexico 66 Black and White Preto",
+            "handle": "tenis-onitsuka-tiger-mexico-66-black-and-white-preto",
+            "vendor": "Onitsuka Tiger",
+            "status": "active"
+          }
+        ],
+        "variant_count": 828,
+        "sales": {
+          "orders_or_lines": 630,
+          "units": 630,
+          "revenue": 1502133.74,
+          "channels": {
+            "site": {
+              "units": 418,
+              "revenue": 999395.83
+            },
+            "loja": {
+              "units": 212,
+              "revenue": 502737.91
+            }
+          },
+          "top_skus": [
+            [
+              "1183C102.751",
+              45
+            ],
+            [
+              "1183C015101",
+              42
+            ],
+            [
+              "1183C102 751",
+              26
+            ],
+            [
+              "1183C015200",
+              24
+            ],
+            [
+              "183A872",
+              22
+            ],
+            [
+              "1183C102250",
+              21
+            ],
+            [
+              "1183C123.252-4",
+              17
+            ],
+            [
+              "1183B566021",
+              17
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 1485,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 828,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 800,
+          "blocked_missing_shopify_sku": 23,
+          "blocked_data_quality": 5
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 805,
+          "no_shopify_sku": 23
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_collection_membership_first_120",
+        "products_checked": 101,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 94,
+          "revenue": 225599.06,
+          "channels": {
+            "site": {
+              "units": 60,
+              "revenue": 144599.4
+            },
+            "loja": {
+              "units": 34,
+              "revenue": 80999.66
+            }
+          },
+          "matched_products": 36,
+          "matched_variants": 72,
+          "top_skus": [
+            [
+              "1183C102 751-3",
+              6
+            ],
+            [
+              "1183C102250-5",
+              6
+            ],
+            [
+              "1183C102751-3",
+              4
+            ],
+            [
+              "1183C015-202-2",
+              4
+            ],
+            [
+              "1183C015-202-4",
+              4
+            ],
+            [
+              "1183C123.252-6",
+              4
+            ],
+            [
+              "1183C015101-2",
+              4
+            ],
+            [
+              "1183A201-126-3",
+              4
+            ],
+            [
+              "1183A872.101-4",
+              4
+            ],
+            [
+              "1183C102250-2",
+              4
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 724,
+        "combined_shopify_revenue_local_plus_recent": 1727732.8,
+        "sample_live_products": [
+          {
+            "handle": "tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+            "title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+            "status": "ACTIVE",
+            "variants": 15
+          },
+          {
+            "handle": "tenis-onitsuka-tiger-mexico-66-sd-beige-beet-juice-bege",
+            "title": "Tênis Onitsuka Tiger Mexico 66 SD Beige Beet Juice Bege",
+            "status": "ACTIVE",
+            "variants": 12
+          },
+          {
+            "handle": "tenis-onitsuka-tiger-mexico-66-sabot-beige-green-bege",
+            "title": "Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege",
+            "status": "ACTIVE",
+            "variants": 10
+          },
+          {
+            "handle": "tenis-onitsuka-tiger-mexico-66-sd-cream-birch-bege",
+            "title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+            "status": "ACTIVE",
+            "variants": 14
+          },
+          {
+            "handle": "tenis-onitsuka-tiger-mexico-66-white-black-branco",
+            "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+            "status": "ACTIVE",
+            "variants": 11
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 98,
+      "commercial_priority_after_refresh": "P1",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/nike-mind-001",
+      "path": "/collections/nike-mind-001",
+      "page_type": "collection",
+      "handle": "nike-mind-001",
+      "commercial_priority": "P1",
+      "commercial_score": 85,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "133 sessões GA4",
+        "6532 impressões GSC",
+        "conversão landing baixa (0.00%)",
+        "115 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 133,
+        "users": 126,
+        "views": 258,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/collections/nike-mind-001",
+        "clicks": 79,
+        "impressions": 6532,
+        "ctr_percent": 1.21,
+        "position": 7.9,
+        "source_label": "fact_gsc"
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "collection_token_match",
+        "products_matched": 80,
+        "sample_products": [
+          {
+            "title": "Slide Nike Mind 001 Black Chrome Preto",
+            "handle": "slide-nike-mind-001-black-chrome-preto",
+            "vendor": "Nike",
+            "status": "active"
+          },
+          {
+            "title": "Slide Nike Mind 001 Light Bone Bege",
+            "handle": "slide-nike-mind-001-light-bone-bege",
+            "vendor": "Nike",
+            "status": "active"
+          },
+          {
+            "title": "Slide Nike Mind 001 Light Smoke Grey Cinza",
+            "handle": "slide-nike-mind-001-light-smoke-grey-cinza",
+            "vendor": "Nike",
+            "status": "active"
+          },
+          {
+            "title": "Slide Nike Mind 001 Solar Red Vermelho",
+            "handle": "slide-nike-mind-001-solar-red-vermelho",
+            "vendor": "Nike",
+            "status": "active"
+          },
+          {
+            "title": "Slide Nike Mind 001 Geode Teal Verde",
+            "handle": "slide-nike-mind-001-geode-teal-verde",
+            "vendor": "Nike",
+            "status": "active"
+          }
+        ],
+        "variant_count": 623,
+        "sales": {
+          "orders_or_lines": 115,
+          "units": 115,
+          "revenue": 354558.87,
+          "channels": {
+            "loja": {
+              "units": 39,
+              "revenue": 122309.63
+            },
+            "site": {
+              "units": 76,
+              "revenue": 232249.24
+            }
+          },
+          "top_skus": [
+            [
+              "HQ4307-003-10",
+              6
+            ],
+            [
+              "HQ4307-001-10",
+              5
+            ],
+            [
+              "HQ4307-003-4",
+              5
+            ],
+            [
+              "HQ4307-003-9",
+              4
+            ],
+            [
+              "HQ4307-002-9",
+              3
+            ],
+            [
+              "HQ4307-001-11",
+              3
+            ],
+            [
+              "HQ4307-003-11",
+              3
+            ],
+            [
+              "HQ4307-001-5",
+              3
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 369,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 623,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 553,
+          "blocked_data_quality": 50,
+          "blocked_missing_shopify_sku": 20
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 603,
+          "no_shopify_sku": 20
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_collection_membership_first_120",
+        "products_checked": 18,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 12,
+          "revenue": 40799.88,
+          "channels": {
+            "site": {
+              "units": 5,
+              "revenue": 17599.95
+            },
+            "loja": {
+              "units": 7,
+              "revenue": 23199.93
+            }
+          },
+          "matched_products": 6,
+          "matched_variants": 12,
+          "top_skus": [
+            [
+              "HQ4308-001-11",
+              2
+            ],
+            [
+              "HQ4307-001-12",
+              2
+            ],
+            [
+              "HQ4307-001-5",
+              2
+            ],
+            [
+              "HQ4307-001-6",
+              2
+            ],
+            [
+              "HQ4308-003-9",
+              2
+            ],
+            [
+              "HQ4308-003-5",
+              2
+            ],
+            [
+              "HQ4307-003-10",
+              2
+            ],
+            [
+              "HQ4307-100-36",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 127,
+        "combined_shopify_revenue_local_plus_recent": 395358.75,
+        "sample_live_products": [
+          {
+            "handle": "tenis-nike-mind-002-black-hyper-crimson-preto",
+            "title": "Tênis Nike Mind 002 Black Hyper Crimson Preto",
+            "status": "ACTIVE",
+            "variants": 13
+          },
+          {
+            "handle": "slide-nike-mind-001-black-chrome-preto",
+            "title": "Chinelo Slide Nike Mind 001 Black Chrome Preto",
+            "status": "ACTIVE",
+            "variants": 14
+          },
+          {
+            "handle": "tenis-nike-mind-002-light-smoke-grey-cinza",
+            "title": "Tênis Nike Mind 002 Light Smoke Grey Cinza",
+            "status": "ACTIVE",
+            "variants": 15
+          },
+          {
+            "handle": "slide-nike-mind-001-light-smoke-grey-cinza",
+            "title": "Chinelo Slide Nike Mind 001 Light Smoke Grey Cinza",
+            "status": "ACTIVE",
+            "variants": 15
+          },
+          {
+            "handle": "slide-nike-mind-001-light-bone-bege",
+            "title": "Chinelo Slide Nike Mind 001 Light Bone Bege",
+            "status": "ACTIVE",
+            "variants": 12
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 98,
+      "commercial_priority_after_refresh": "P1",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/yeezy",
+      "path": "/collections/yeezy",
+      "page_type": "collection",
+      "handle": "yeezy",
+      "commercial_priority": "P1",
+      "commercial_score": 89,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "107 sessões GA4",
+        "29194 impressões GSC",
+        "CTR baixo (0.34%)",
+        "conversão landing baixa (0.00%)",
+        "28 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 107,
+        "users": 98,
+        "views": 223,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/collections/yeezy",
+        "clicks": 100,
+        "impressions": 29194,
+        "ctr_percent": 0.34,
+        "position": 8.7,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "yeezy",
+            "impressions": 12007,
+            "ctr_percent": 0.27,
+            "position": 8.4,
+            "priority": "P1"
+          },
+          {
+            "query": "adidas yeezy",
+            "impressions": 2616,
+            "ctr_percent": 0.38,
+            "position": 10.5,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "collection_token_match",
+        "products_matched": 40,
+        "sample_products": [
+          {
+            "title": "Tênis Yeezy 350 V2 Carbon Beluga Cinza",
+            "handle": "yeezy-350-v2-carbon-beluga",
+            "vendor": "Yeezy",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Yeezy 350 V2 Static Non-Reflective (2023) Branco",
+            "handle": "yeezy-350-v2-static-non-reflective-2023",
+            "vendor": "Yeezy",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Yeezy 500 Blush Bege",
+            "handle": "yeezy-500-blush",
+            "vendor": "Yeezy",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Yeezy 700 V1 Wave Runner Cinza",
+            "handle": "yeezy-700-v1-wave-runner",
+            "vendor": "Yeezy",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Yeezy 700 V3 Mono Safflower Amarelo",
+            "handle": "yeezy-700-v3-mono-safflower",
+            "vendor": "Yeezy",
+            "status": "active"
+          }
+        ],
+        "variant_count": 370,
+        "sales": {
+          "orders_or_lines": 28,
+          "units": 28,
+          "revenue": 84899.73,
+          "channels": {
+            "loja": {
+              "units": 16,
+              "revenue": 51199.85
+            },
+            "site": {
+              "units": 12,
+              "revenue": 33699.88
+            }
+          },
+          "top_skus": [
+            [
+              "HQ4540",
+              9
+            ],
+            [
+              "FZ1267",
+              4
+            ],
+            [
+              "IF3219-7",
+              2
+            ],
+            [
+              "HQ6316",
+              2
+            ],
+            [
+              "IF3219-10",
+              2
+            ],
+            [
+              "EF290523",
+              2
+            ],
+            [
+              "IF3219-8",
+              1
+            ],
+            [
+              "HQ6448",
+              1
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 357,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 370,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 257,
+          "blocked_data_quality": 92,
+          "blocked_missing_shopify_sku": 21
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 349,
+          "no_shopify_sku": 21
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": {
+        "status": 200,
+        "title_len": 56,
+        "description_len": 130,
+        "h1_count": 1,
+        "images_missing_alt": 0,
+        "score": null,
+        "issues": [],
+        "role": "diagnostic_after_commercial_priority"
+      },
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock",
+        "public_html_diagnostic"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_collection_membership_first_120",
+        "products_checked": 40,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 2,
+          "revenue": 8499.98,
+          "channels": {
+            "loja": {
+              "units": 2,
+              "revenue": 8499.98
+            }
+          },
+          "matched_products": 2,
+          "matched_variants": 2,
+          "top_skus": [
+            [
+              "f99717",
+              2
+            ],
+            [
+              "CP9654-2",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 30,
+        "combined_shopify_revenue_local_plus_recent": 93399.71,
+        "sample_live_products": [
+          {
+            "handle": "yeezy-boost-350-v2-onyx",
+            "title": "Tênis Yeezy Boost 350 V2 Onyx Preto",
+            "status": "ACTIVE",
+            "variants": 13
+          },
+          {
+            "handle": "tenis-adidas-yeezy-boost-350-v2-steel-grey-cinza",
+            "title": "Tênis adidas Yeezy Boost 350 V2 \"Steel Grey\" Cinza",
+            "status": "ACTIVE",
+            "variants": 12
+          },
+          {
+            "handle": "yeezy-boost-350-v2-earth-bege",
+            "title": "Tênis Adidas Yeezy Boost 350 V2 Earth Marrom",
+            "status": "ACTIVE",
+            "variants": 12
+          },
+          {
+            "handle": "tenis-adidas-yeezy-boost-350-v2-ash-stone-cinza",
+            "title": "Tênis Adidas Yeezy Boost 350 V2 Ash Stone Cinza",
+            "status": "ACTIVE",
+            "variants": 13
+          },
+          {
+            "handle": "tenis-yeezy-boost-350-adidas-pirate-black-2023",
+            "title": "Tênis Adidas Yeezy Boost 350 Pirate Black 2023",
+            "status": "ACTIVE",
+            "variants": 13
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 97,
+      "commercial_priority_after_refresh": "P1",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/nike-x-jacquemus-moon-shoe-sp",
+      "path": "/collections/nike-x-jacquemus-moon-shoe-sp",
+      "page_type": "collection",
+      "handle": "nike-x-jacquemus-moon-shoe-sp",
+      "commercial_priority": "P1",
+      "commercial_score": 84,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "350 sessões GA4",
+        "6463 impressões GSC",
+        "conversão landing baixa (0.00%)",
+        "217 un. vendidas no Shopify/local spine",
+        "demanda existe, mas estoque Tiny sugere reposição/sourcing"
+      ],
+      "recommended_next_step": "Reposição/sourcing preview + SEO/CRO somente se oferta ativa for confirmada; não melhorar página sem produto vendável.",
+      "ga4": {
+        "sessions": 350,
+        "users": 320,
+        "views": 780,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/collections/nike-x-jacquemus-moon-shoe-sp",
+        "clicks": 184,
+        "impressions": 6463,
+        "ctr_percent": 2.85,
+        "position": 3.0,
+        "source_label": "fact_gsc"
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "collection_token_match",
+        "products_matched": 80,
+        "sample_products": [
+          {
+            "title": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+            "handle": "nike-moon-shoe-sp-jacquemus-alabaster-amarelo",
+            "vendor": "Jacquemus x Nike",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Nike Moon Shoe SP Jacquemus Medium Brown",
+            "handle": "tenis-nike-moon-shoe-sp-jacquemus-medium-brown",
+            "vendor": "Jacquemus x Nike",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+            "handle": "tenis-nike-moon-shoe-sp-jacquemus-off-noir-preto",
+            "vendor": "Jacquemus x Nike",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+            "handle": "tenis-nike-moon-shoe-sp-jacquemus-off-white",
+            "vendor": "Jacquemus x Nike",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa",
+            "handle": "tenis-nike-moon-shoe-sp-jacquemus-pale-pink-rosa",
+            "vendor": "Jacquemus x Nike",
+            "status": "active"
+          }
+        ],
+        "variant_count": 682,
+        "sales": {
+          "orders_or_lines": 217,
+          "units": 217,
+          "revenue": 1038247.87,
+          "channels": {
+            "loja": {
+              "units": 80,
+              "revenue": 391499.24
+            },
+            "site": {
+              "units": 137,
+              "revenue": 646748.63
+            }
+          },
+          "top_skus": [
+            [
+              "HV8547-700-6",
+              10
+            ],
+            [
+              "HV8547-700-5",
+              10
+            ],
+            [
+              "HV8547-700-4",
+              8
+            ],
+            [
+              "HV8547-700-3",
+              7
+            ],
+            [
+              "HV8547-001-6",
+              6
+            ],
+            [
+              "HV8547-001-7",
+              5
+            ],
+            [
+              "HV8547-700-10",
+              5
+            ],
+            [
+              "HV8547-700-7",
+              5
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0.0,
+        "tiny_total_available_sum": 0.0,
+        "shopify_inventory_hint_sum_not_stock_truth": 661,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 2,
+        "blocked_or_unmapped_variants": 680,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 570,
+          "blocked_data_quality": 78,
+          "blocked_missing_shopify_sku": 32,
+          "ready_zero_stock_sourcing_candidate": 2
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 648,
+          "no_shopify_sku": 32,
+          "zero_official_deposit": 2
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_collection_membership_first_120",
+        "products_checked": 6,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 49,
+          "revenue": 270999.51,
+          "channels": {
+            "site": {
+              "units": 34,
+              "revenue": 187999.66
+            },
+            "loja": {
+              "units": 15,
+              "revenue": 82999.85
+            }
+          },
+          "matched_products": 5,
+          "matched_variants": 32,
+          "top_skus": [
+            [
+              "HV8547-002-38",
+              8
+            ],
+            [
+              "HV8547-200-41",
+              8
+            ],
+            [
+              "HV8547-002-39",
+              6
+            ],
+            [
+              "HV8547-200-39",
+              6
+            ],
+            [
+              "HV8547-200-38",
+              6
+            ],
+            [
+              "HV8547-601-37",
+              4
+            ],
+            [
+              "HV8547-002-37",
+              4
+            ],
+            [
+              "HV8547-002-34",
+              4
+            ],
+            [
+              "HV8547-002-36",
+              4
+            ],
+            [
+              "HV8547-200-37",
+              4
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 266,
+        "combined_shopify_revenue_local_plus_recent": 1309247.38,
+        "sample_live_products": [
+          {
+            "handle": "tenis-nike-moon-shoe-sp-jacquemus-off-noir-preto",
+            "title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
+            "status": "ACTIVE",
+            "variants": 13
+          },
+          {
+            "handle": "tenis-nike-moon-shoe-sp-jacquemus-university-red-vermelho",
+            "title": "Tênis Nike Moon Shoe SP Jacquemus University Red Vermelho",
+            "status": "ACTIVE",
+            "variants": 12
+          },
+          {
+            "handle": "nike-moon-shoe-sp-jacquemus-alabaster-amarelo",
+            "title": "Tênis Nike Moon Shoe SP Jacquemus Alabaster Amarelo",
+            "status": "ACTIVE",
+            "variants": 14
+          },
+          {
+            "handle": "tenis-nike-moon-shoe-sp-jacquemus-pale-pink-rosa",
+            "title": "Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa",
+            "status": "ACTIVE",
+            "variants": 13
+          },
+          {
+            "handle": "tenis-nike-moon-shoe-sp-jacquemus-off-white",
+            "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+            "status": "ACTIVE",
+            "variants": 13
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 97,
+      "commercial_priority_after_refresh": "P1",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/products/slide-nike-mind-001-black-chrome-preto",
+      "path": "/products/slide-nike-mind-001-black-chrome-preto",
+      "page_type": "pdp",
+      "handle": "slide-nike-mind-001-black-chrome-preto",
+      "commercial_priority": "P1",
+      "commercial_score": 86,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "110 sessões GA4",
+        "9249 impressões GSC",
+        "CTR baixo (0.49%)",
+        "conversão landing baixa (0.00%)",
+        "24 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 110,
+        "users": 106,
+        "views": 145,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/products/slide-nike-mind-001-black-chrome-preto",
+        "clicks": 45,
+        "impressions": 9249,
+        "ctr_percent": 0.49,
+        "position": 7.7,
+        "source_label": "fact_gsc"
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "exact_product_handle",
+        "products_matched": 1,
+        "sample_products": [
+          {
+            "title": "Slide Nike Mind 001 Black Chrome Preto",
+            "handle": "slide-nike-mind-001-black-chrome-preto",
+            "vendor": "Nike",
+            "status": "active"
+          }
+        ],
+        "variant_count": 13,
+        "sales": {
+          "orders_or_lines": 24,
+          "units": 24,
+          "revenue": 74899.76,
+          "channels": {
+            "loja": {
+              "units": 3,
+              "revenue": 10399.97
+            },
+            "site": {
+              "units": 21,
+              "revenue": 64499.79
+            }
+          },
+          "top_skus": [
+            [
+              "HQ4307-001-10",
+              5
+            ],
+            [
+              "HQ4307-001-11",
+              3
+            ],
+            [
+              "HQ4307-001-5",
+              3
+            ],
+            [
+              "HQ4307-001-12",
+              3
+            ],
+            [
+              "HQ4307-001-4",
+              3
+            ],
+            [
+              "HQ4307-001-2",
+              2
+            ],
+            [
+              "HQ4307-001-9",
+              1
+            ],
+            [
+              "HQ4307-001-1",
+              1
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 2,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 13,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 12,
+          "blocked_missing_shopify_sku": 1
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 12,
+          "no_shopify_sku": 1
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_product_handle",
+        "products_checked": 1,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 3,
+          "revenue": 11999.97,
+          "channels": {
+            "loja": {
+              "units": 1,
+              "revenue": 3999.99
+            },
+            "site": {
+              "units": 2,
+              "revenue": 7999.98
+            }
+          },
+          "matched_products": 1,
+          "matched_variants": 3,
+          "top_skus": [
+            [
+              "HQ4307-001-12",
+              2
+            ],
+            [
+              "HQ4307-001-5",
+              2
+            ],
+            [
+              "HQ4307-001-6",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 27,
+        "combined_shopify_revenue_local_plus_recent": 86899.73,
+        "sample_live_products": [
+          {
+            "handle": "slide-nike-mind-001-black-chrome-preto",
+            "title": "Chinelo Slide Nike Mind 001 Black Chrome Preto",
+            "status": "ACTIVE",
+            "variants": 14
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 95,
+      "commercial_priority_after_refresh": "P1",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho",
+      "path": "/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho",
+      "page_type": "pdp",
+      "handle": "crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho",
+      "commercial_priority": "P1",
+      "commercial_score": 82,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "202 sessões GA4",
+        "35742 impressões GSC",
+        "CTR baixo (0.34%)",
+        "conversão landing baixa (0.00%)",
+        "2 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 202,
+        "users": 192,
+        "views": 249,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho",
+        "clicks": 123,
+        "impressions": 35742,
+        "ctr_percent": 0.34,
+        "position": 7.1,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "crocs relampago mcqueen",
+            "impressions": 5517,
+            "ctr_percent": 0.45,
+            "position": 8.3,
+            "priority": "P1"
+          },
+          {
+            "query": "crocs do relâmpago mcqueen",
+            "impressions": 5246,
+            "ctr_percent": 0.13,
+            "position": 7.0,
+            "priority": "P1"
+          },
+          {
+            "query": "crocs mcqueen",
+            "impressions": 5097,
+            "ctr_percent": 0.31,
+            "position": 8.4,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "exact_product_handle",
+        "products_matched": 1,
+        "sample_products": [
+          {
+            "title": "Crocs Classic Clog x The Cars Lightning McQueen Vermelho",
+            "handle": "crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho",
+            "vendor": "Crocs",
+            "status": "active"
+          }
+        ],
+        "variant_count": 8,
+        "sales": {
+          "orders_or_lines": 2,
+          "units": 2,
+          "revenue": 2399.98,
+          "channels": {
+            "loja": {
+              "units": 1,
+              "revenue": 999.99
+            },
+            "site": {
+              "units": 1,
+              "revenue": 1399.99
+            }
+          },
+          "top_skus": [
+            [
+              "205759610",
+              2
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 4,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 8,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 8
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 8
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_product_handle",
+        "products_checked": 1,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 3,
+          "revenue": 3999.97,
+          "channels": {
+            "site": {
+              "units": 3,
+              "revenue": 3999.97
+            }
+          },
+          "matched_products": 1,
+          "matched_variants": 3,
+          "top_skus": [
+            [
+              "205759 610-2",
+              2
+            ],
+            [
+              "205759 610-8",
+              2
+            ],
+            [
+              "205759 610-4",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 5,
+        "combined_shopify_revenue_local_plus_recent": 6399.95,
+        "sample_live_products": [
+          {
+            "handle": "crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho",
+            "title": "Crocs Classic Clog x The Cars Lightning McQueen Vermelho",
+            "status": "ACTIVE",
+            "variants": 8
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 91,
+      "commercial_priority_after_refresh": "P1",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/nude-project",
+      "path": "/collections/nude-project",
+      "page_type": "collection",
+      "handle": "nude-project",
+      "commercial_priority": "P1",
+      "commercial_score": 79,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "151 sessões GA4",
+        "6081 impressões GSC",
+        "conversão landing baixa (0.00%)",
+        "18 un. vendidas no Shopify/local spine",
+        "estoque Tiny disponível em ao menos parte da família/PDP"
+      ],
+      "recommended_next_step": "SEO/CRO preview: title/meta CTR + melhoria acima da dobra; elegível a pacote de aprovação, sem write automático.",
+      "ga4": {
+        "sessions": 151,
+        "users": 141,
+        "views": 275,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/collections/nude-project",
+        "clicks": 118,
+        "impressions": 6081,
+        "ctr_percent": 1.94,
+        "position": 4.1,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "nude project",
+            "impressions": 3439,
+            "ctr_percent": 1.63,
+            "position": 2.9,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "collection_token_match",
+        "products_matched": 16,
+        "sample_products": [
+          {
+            "title": "Camiseta Nude Project Global Soon",
+            "handle": "camiseta-nude-project-global-soon",
+            "vendor": "Nude Project",
+            "status": "active"
+          },
+          {
+            "title": "Camiseta Nude Project Global Soon Black Preto",
+            "handle": "camiseta-nude-project-global-soon-black-preto",
+            "vendor": "Nude Project",
+            "status": "active"
+          },
+          {
+            "title": "Camiseta Nude Project Xoxo Cinza",
+            "handle": "camiseta-nude-projet-xoxo-cinza",
+            "vendor": "Nude Project",
+            "status": "active"
+          },
+          {
+            "title": "Moletom Nude Project Kill Bill Zip-Up Ash Cinza",
+            "handle": "moletom-nude-project-kill-bill-zip-up-ash-cinza",
+            "vendor": "Nude Project",
+            "status": "active"
+          },
+          {
+            "title": "Moletom Nude Project Nude Tour Preto",
+            "handle": "moletom-nude-project-nude-tour-preto",
+            "vendor": "Nude Project",
+            "status": "active"
+          }
+        ],
+        "variant_count": 67,
+        "sales": {
+          "orders_or_lines": 18,
+          "units": 18,
+          "revenue": 20199.82,
+          "channels": {
+            "loja": {
+              "units": 13,
+              "revenue": 15199.87
+            },
+            "site": {
+              "units": 5,
+              "revenue": 4999.95
+            }
+          },
+          "top_skus": [
+            [
+              "NP22-3",
+              5
+            ],
+            [
+              "NDP006-3",
+              2
+            ],
+            [
+              "NP22-2",
+              2
+            ],
+            [
+              "NP22-10",
+              1
+            ],
+            [
+              "NDP006-4",
+              1
+            ],
+            [
+              "NDP015-2",
+              1
+            ],
+            [
+              "NDP015-4",
+              1
+            ],
+            [
+              "NDP006-2",
+              1
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 2.0,
+        "tiny_total_available_sum": 2.0,
+        "shopify_inventory_hint_sum_not_stock_truth": 168,
+        "ready_available_variants": 2,
+        "zero_stock_sourcing_candidate_variants": 9,
+        "blocked_or_unmapped_variants": 56,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 35,
+          "blocked_missing_shopify_sku": 16,
+          "ready_zero_stock_sourcing_candidate": 9,
+          "blocked_data_quality": 5,
+          "ready_available_tiny": 2
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 40,
+          "no_shopify_sku": 16,
+          "zero_official_deposit": 9,
+          "available_official_deposit": 2
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_collection_membership_first_120",
+        "products_checked": 90,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 2,
+          "revenue": 1699.98,
+          "channels": {
+            "loja": {
+              "units": 2,
+              "revenue": 1699.98
+            }
+          },
+          "matched_products": 2,
+          "matched_variants": 2,
+          "top_skus": [
+            [
+              "NUD-6551006-XL",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 20,
+        "combined_shopify_revenue_local_plus_recent": 21899.8,
+        "sample_live_products": [
+          {
+            "handle": "moletom-nude-project-cult-hoodie-black-beige-preto",
+            "title": "Moletom Nude Project Cult Hoodie Black/Beige Preto",
+            "status": "ACTIVE",
+            "variants": 5
+          },
+          {
+            "handle": "moletom-nude-project-side-eye-zip-up-black-preto",
+            "title": "Moletom Nude Project Side-Eye Zip-Up Black Preto",
+            "status": "ACTIVE",
+            "variants": 5
+          },
+          {
+            "handle": "camiseta-nude-project-kora-black-preto",
+            "title": "Camiseta Nude Project Kora Black Preto",
+            "status": "ACTIVE",
+            "variants": 5
+          },
+          {
+            "handle": "camiseta-nude-project-honor-tee-marshmallow-off-white",
+            "title": "Camiseta Nude Project Honor Tee Marshmallow Off White",
+            "status": "ACTIVE",
+            "variants": 5
+          },
+          {
+            "handle": "camiseta-nude-project-honor-tee-black-preto",
+            "title": "Camiseta Nude Project Honor Tee Black Preto",
+            "status": "ACTIVE",
+            "variants": 5
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 87,
+      "commercial_priority_after_refresh": "P1",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/products/tenis-adidas-samba-og-crochet-pack-sand-strata-bege",
+      "path": "/products/tenis-adidas-samba-og-crochet-pack-sand-strata-bege",
+      "page_type": "pdp",
+      "handle": "tenis-adidas-samba-og-crochet-pack-sand-strata-bege",
+      "commercial_priority": "P2",
+      "commercial_score": 72,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "113 sessões GA4",
+        "conversão landing baixa (0.00%)",
+        "58 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 113,
+        "users": 110,
+        "views": 131,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/products/tenis-adidas-samba-og-crochet-pack-sand-strata-bege",
+        "clicks": 39,
+        "impressions": 3039,
+        "ctr_percent": 1.28,
+        "position": 4.9,
+        "source_label": "fact_gsc"
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "exact_product_handle",
+        "products_matched": 1,
+        "sample_products": [
+          {
+            "title": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+            "handle": "tenis-adidas-samba-og-crochet-pack-sand-strata-bege",
+            "vendor": "Adidas",
+            "status": "active"
+          }
+        ],
+        "variant_count": 10,
+        "sales": {
+          "orders_or_lines": 58,
+          "units": 58,
+          "revenue": 125599.42,
+          "channels": {
+            "loja": {
+              "units": 19,
+              "revenue": 41799.81
+            },
+            "site": {
+              "units": 39,
+              "revenue": 83799.61
+            }
+          },
+          "top_skus": [
+            [
+              "JR9446-2",
+              12
+            ],
+            [
+              "JR9446-3",
+              11
+            ],
+            [
+              "JR9446-4",
+              11
+            ],
+            [
+              "JR9446-5",
+              9
+            ],
+            [
+              "JR9446-6",
+              6
+            ],
+            [
+              "JR9446-7",
+              5
+            ],
+            [
+              "JR9446-1",
+              2
+            ],
+            [
+              "JR9446-8",
+              2
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 10,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 10,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 10
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 10
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_product_handle",
+        "products_checked": 1,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 3,
+          "revenue": 6599.97,
+          "channels": {
+            "loja": {
+              "units": 3,
+              "revenue": 6599.97
+            }
+          },
+          "matched_products": 1,
+          "matched_variants": 2,
+          "top_skus": [
+            [
+              "JR9446-5",
+              4
+            ],
+            [
+              "JR9446-4",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 61,
+        "combined_shopify_revenue_local_plus_recent": 132199.39,
+        "sample_live_products": [
+          {
+            "handle": "tenis-adidas-samba-og-crochet-pack-sand-strata-bege",
+            "title": "Tênis Adidas Samba OG Crochet Pack Sand Strata Bege",
+            "status": "ACTIVE",
+            "variants": 10
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 81,
+      "commercial_priority_after_refresh": "P2",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/products/jaqueta-lululemon-define-nulu",
+      "path": "/products/jaqueta-lululemon-define-nulu",
+      "page_type": "pdp",
+      "handle": "jaqueta-lululemon-define-nulu",
+      "commercial_priority": "P2",
+      "commercial_score": 68,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "116 sessões GA4",
+        "conversão landing baixa (0.00%)",
+        "15 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 116,
+        "users": 107,
+        "views": 179,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/products/jaqueta-lululemon-define-nulu",
+        "clicks": 92,
+        "impressions": 3075,
+        "ctr_percent": 2.99,
+        "position": 4.0,
+        "source_label": "fact_gsc"
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "exact_product_handle",
+        "products_matched": 1,
+        "sample_products": [
+          {
+            "title": "Jaqueta Lululemon Define Nulu",
+            "handle": "jaqueta-lululemon-define-nulu",
+            "vendor": "Lululemon",
+            "status": "active"
+          }
+        ],
+        "variant_count": 25,
+        "sales": {
+          "orders_or_lines": 15,
+          "units": 15,
+          "revenue": 20999.85,
+          "channels": {
+            "site": {
+              "units": 7,
+              "revenue": 9799.93
+            },
+            "loja": {
+              "units": 8,
+              "revenue": 11199.92
+            }
+          },
+          "top_skus": [
+            [
+              "11020158-9",
+              5
+            ],
+            [
+              "11020158-12",
+              4
+            ],
+            [
+              "11020158-21",
+              1
+            ],
+            [
+              "11020158-18",
+              1
+            ],
+            [
+              "11020158-23",
+              1
+            ],
+            [
+              "11020158-10",
+              1
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 57,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 25,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 15,
+          "blocked_missing_shopify_sku": 10
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 15,
+          "no_shopify_sku": 10
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_product_handle",
+        "products_checked": 1,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 3,
+          "revenue": 4199.97,
+          "channels": {
+            "site": {
+              "units": 2,
+              "revenue": 2799.98
+            },
+            "loja": {
+              "units": 1,
+              "revenue": 1399.99
+            }
+          },
+          "matched_products": 1,
+          "matched_variants": 3,
+          "top_skus": [
+            [
+              "11020158-12",
+              2
+            ],
+            [
+              "11020158-9",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 18,
+        "combined_shopify_revenue_local_plus_recent": 25199.82,
+        "sample_live_products": [
+          {
+            "handle": "jaqueta-lululemon-define-nulu",
+            "title": "Jaqueta Lululemon Define Nulu",
+            "status": "ACTIVE",
+            "variants": 25
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 77,
+      "commercial_priority_after_refresh": "P2",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/air-jordan-4",
+      "path": "/collections/air-jordan-4",
+      "page_type": "collection",
+      "handle": "air-jordan-4",
+      "commercial_priority": "P2",
+      "commercial_score": 72,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "7864 impressões GSC",
+        "CTR baixo (0.09%)",
+        "37 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 0,
+        "users": 0,
+        "views": 0,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/collections/air-jordan-4",
+        "clicks": 7,
+        "impressions": 7864,
+        "ctr_percent": 0.09,
+        "position": 9.4,
+        "queries": [
+          {
+            "query": "jordan 4",
+            "impressions": 7864,
+            "ctr_percent": 0.09,
+            "position": 9.4,
+            "priority": "P1"
+          }
+        ],
+        "source_label": "fact_gsc"
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "collection_token_match",
+        "products_matched": 80,
+        "sample_products": [
+          {
+            "title": "Tênis Nike Air Jordan 1 Low SE Tie Dye Colorido",
+            "handle": "air-jordan-1-low-se-tie-dye",
+            "vendor": "Jordan",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Nike Off-White x Air Jordan 4 Sail Bege",
+            "handle": "off-white-x-air-jordan-4-sail",
+            "vendor": "Jordan",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Nike SB Air Jordan 4 x Retro SP Navy Branco",
+            "handle": "tenis-nike-sb-air-jordan-4-x-retro-sp-navy-branco",
+            "vendor": "Air Jordan",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Nike SB x Air Jordan 4 Navy Branco",
+            "handle": "tenis-nike-sb-x-air-jordan-4-navy-branco",
+            "vendor": "Jordan",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Nike SB x Air Jordan 4 Retro 'Pine Green' Verde",
+            "handle": "nike-sb-x-air-jordan-4-retro-pine-green",
+            "vendor": "Jordan",
+            "status": "active"
+          }
+        ],
+        "variant_count": 667,
+        "sales": {
+          "orders_or_lines": 37,
+          "units": 37,
+          "revenue": 135999.46,
+          "channels": {
+            "site": {
+              "units": 26,
+              "revenue": 101899.56
+            },
+            "loja": {
+              "units": 11,
+              "revenue": 34099.9
+            }
+          },
+          "top_skus": [
+            [
+              "CZ0790102",
+              3
+            ],
+            [
+              "553560141",
+              3
+            ],
+            [
+              "DM7866200",
+              3
+            ],
+            [
+              "CZ0790-400-9",
+              2
+            ],
+            [
+              "CZ0790-400-7",
+              2
+            ],
+            [
+              "DC0774001",
+              2
+            ],
+            [
+              "553558040",
+              2
+            ],
+            [
+              "CZ0790-400-10",
+              2
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 634,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 667,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 530,
+          "blocked_data_quality": 121,
+          "blocked_missing_shopify_sku": 16
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 651,
+          "no_shopify_sku": 16
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_collection_membership_first_120",
+        "products_checked": 28,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 0,
+          "revenue": 0.0,
+          "channels": {},
+          "matched_products": 0,
+          "matched_variants": 0,
+          "top_skus": []
+        },
+        "combined_shopify_units_local_plus_recent": 37,
+        "combined_shopify_revenue_local_plus_recent": 135999.46,
+        "sample_live_products": [
+          {
+            "handle": "tenis-air-jordan-4-rm-x-nygel-sylvester-driveway-grey-cinza",
+            "title": "Tênis Nike Air Jordan 4 RM x Nigel Sylvester Driveway Grey Cinza",
+            "status": "ACTIVE",
+            "variants": 8
+          },
+          {
+            "handle": "tenis-air-jordan-4-retro-metallic-gold-branco",
+            "title": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+            "status": "ACTIVE",
+            "variants": 9
+          },
+          {
+            "handle": "air-jordan-4-frozen-moments",
+            "title": "Tênis Nike Air Jordan 4 Frozen Moments Cinza",
+            "status": "ACTIVE",
+            "variants": 9
+          },
+          {
+            "handle": "tenis-nike-air-jordan-4-retro-valentines-day-sierra-red-vermelho",
+            "title": "Tênis Nike Air Jordan 4 Retro Valentine's Day Sierra Red Vermelho",
+            "status": "ACTIVE",
+            "variants": 12
+          },
+          {
+            "handle": "tenis-nike-air-jordan-4-cave-stone-and-black-marrom",
+            "title": "Tênis Nike Air Jordan 4 Cave Stone and Black Marrom",
+            "status": "ACTIVE",
+            "variants": 7
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 75,
+      "commercial_priority_after_refresh": "P2",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/aime-leon-dore",
+      "path": "/collections/aime-leon-dore",
+      "page_type": "collection",
+      "handle": "aime-leon-dore",
+      "commercial_priority": "P2",
+      "commercial_score": 63,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "473 sessões GA4",
+        "conversão landing baixa (0.00%)",
+        "31 un. vendidas no Shopify/local spine",
+        "estoque Tiny disponível em ao menos parte da família/PDP"
+      ],
+      "recommended_next_step": "SEO/CRO preview: title/meta CTR + melhoria acima da dobra; elegível a pacote de aprovação, sem write automático.",
+      "ga4": {
+        "sessions": 473,
+        "users": 431,
+        "views": 1199,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": null,
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "collection_token_match",
+        "products_matched": 26,
+        "sample_products": [
+          {
+            "title": "Tênis New Balance 1000 x Aimé Leon Dore Sea Salt Concrete Branco",
+            "handle": "tenis-new-balance-1000-x-aime-leon-dore-sea-salt-concrete-branco",
+            "vendor": "New Balance",
+            "status": "active"
+          },
+          {
+            "title": "Tênis New Balance 550 x Aimé Leon Dore Brown Marrom",
+            "handle": "tenis-new-balance-550-x-aime-leon-dore-brown-marrom",
+            "vendor": "New Balance",
+            "status": "active"
+          },
+          {
+            "title": "Tênis New Balance 860v2 x Aimé Leon Dore Green Verde",
+            "handle": "tenis-new-balance-860v2-x-aime-leon-dore-green-verde",
+            "vendor": "New Balance",
+            "status": "active"
+          },
+          {
+            "title": "Tênis New Balance 997 Made in USA x Aimé Leon Dore Dark Moss Angora Marrom",
+            "handle": "tenis-new-balance-997-made-in-usa-x-aime-leon-dore-dark-moss-angora-marrom",
+            "vendor": "New Balance",
+            "status": "active"
+          },
+          {
+            "title": "Moletom Aimé Leon Dore Market Hoodie Pine Groove Verde",
+            "handle": "moletom-aime-leon-dore-market-hoodie-pine-groove-verde",
+            "vendor": "Aimé Leon Dore",
+            "status": "active"
+          }
+        ],
+        "variant_count": 79,
+        "sales": {
+          "orders_or_lines": 31,
+          "units": 31,
+          "revenue": 42249.7,
+          "channels": {
+            "site": {
+              "units": 6,
+              "revenue": 6599.94
+            },
+            "loja": {
+              "units": 25,
+              "revenue": 35649.76
+            }
+          },
+          "top_skus": [
+            [
+              "UNISPHERE",
+              5
+            ],
+            [
+              "CUNISPHEREBLK",
+              4
+            ],
+            [
+              "AIME11",
+              1
+            ],
+            [
+              "AIME109",
+              1
+            ],
+            [
+              "U997AIM",
+              1
+            ],
+            [
+              "M1000AC1",
+              1
+            ],
+            [
+              "Aime3-2",
+              1
+            ],
+            [
+              "AIME123",
+              1
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 3.0,
+        "tiny_total_available_sum": 12.0,
+        "shopify_inventory_hint_sum_not_stock_truth": 91,
+        "ready_available_variants": 3,
+        "zero_stock_sourcing_candidate_variants": 6,
+        "blocked_or_unmapped_variants": 70,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 34,
+          "blocked_missing_shopify_sku": 30,
+          "ready_zero_stock_sourcing_candidate": 6,
+          "blocked_data_quality": 4,
+          "ready_available_tiny": 3,
+          "blocked_tiny_duplicate_code": 2
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 38,
+          "no_shopify_sku": 30,
+          "zero_official_deposit": 6,
+          "available_official_deposit": 3,
+          "ambiguous_duplicate_tiny_code": 2
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_collection_membership_first_120",
+        "products_checked": 84,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 5,
+          "revenue": 8299.95,
+          "channels": {
+            "site": {
+              "units": 1,
+              "revenue": 2199.99
+            },
+            "loja": {
+              "units": 4,
+              "revenue": 6099.96
+            }
+          },
+          "matched_products": 5,
+          "matched_variants": 5,
+          "top_skus": [
+            [
+              "ALD-2352094-L",
+              2
+            ],
+            [
+              "SS26AH029",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 36,
+        "combined_shopify_revenue_local_plus_recent": 50549.65,
+        "sample_live_products": [
+          {
+            "handle": "camiseta-aime-leon-dore-pappous-logo-navy-blazer-azul",
+            "title": "Camiseta Aimé Leon Dore Pappoús Logo Navy Blazer Azul",
+            "status": "ACTIVE",
+            "variants": 3
+          },
+          {
+            "handle": "camiseta-aime-leon-dore-pappous-logo-pristine-off-white",
+            "title": "Camiseta Aimé Leon Dore Pappoús Logo Pristine Off White",
+            "status": "ACTIVE",
+            "variants": 3
+          },
+          {
+            "handle": "camiseta-aime-leon-dore-embroidered-logo-marrom",
+            "title": "Camiseta Aimé Leon Dore Embroidered Logo Marrom",
+            "status": "DRAFT",
+            "variants": 2
+          },
+          {
+            "handle": "camiseta-aime-leon-dore-unisphere-verde",
+            "title": "Camiseta Aimé Leon Dore Unisphere Verde",
+            "status": "ACTIVE",
+            "variants": 4
+          },
+          {
+            "handle": "camiseta-aime-leon-dore-musician-graphic-off-white",
+            "title": "Camiseta Aimé Leon Dore Musician Graphic Off White",
+            "status": "DRAFT",
+            "variants": 4
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 74,
+      "commercial_priority_after_refresh": "P2",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/products/tenis-alo-yoga-alo-runner-preto",
+      "path": "/products/tenis-alo-yoga-alo-runner-preto",
+      "page_type": "pdp",
+      "handle": "tenis-alo-yoga-alo-runner-preto",
+      "commercial_priority": "P2",
+      "commercial_score": 66,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "5169 impressões GSC",
+        "CTR baixo (0.02%)",
+        "8 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 0,
+        "users": 0,
+        "views": 0,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/products/tenis-alo-yoga-alo-runner-preto",
+        "clicks": 1,
+        "impressions": 5169,
+        "ctr_percent": 0.02,
+        "position": 7.2,
+        "queries": [
+          {
+            "query": "tenis alo",
+            "impressions": 5169,
+            "ctr_percent": 0.02,
+            "position": 7.2,
+            "priority": "P1"
+          }
+        ],
+        "source_label": "fact_gsc"
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "exact_product_handle",
+        "products_matched": 1,
+        "sample_products": [
+          {
+            "title": "Tênis Alo Yoga ALO Runner Preto",
+            "handle": "tenis-alo-yoga-alo-runner-preto",
+            "vendor": "Alo Yoga",
+            "status": "active"
+          }
+        ],
+        "variant_count": 13,
+        "sales": {
+          "orders_or_lines": 8,
+          "units": 8,
+          "revenue": 19199.92,
+          "channels": {
+            "site": {
+              "units": 7,
+              "revenue": 16799.93
+            },
+            "loja": {
+              "units": 1,
+              "revenue": 2399.99
+            }
+          },
+          "top_skus": [
+            [
+              "a0590u_01-4",
+              2
+            ],
+            [
+              "a0590u_01-2",
+              2
+            ],
+            [
+              "a0590u_01-7",
+              1
+            ],
+            [
+              "a0590u_01-8",
+              1
+            ],
+            [
+              "a0590u_01-6",
+              1
+            ],
+            [
+              "a0590u_01-5",
+              1
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 27,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 13,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 13
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 13
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_gsc",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_product_handle",
+        "products_checked": 1,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 1,
+          "revenue": 2399.99,
+          "channels": {
+            "site": {
+              "units": 1,
+              "revenue": 2399.99
+            }
+          },
+          "matched_products": 1,
+          "matched_variants": 1,
+          "top_skus": [
+            [
+              "a0590u_01-4",
+              2
+            ]
+          ]
+        },
+        "combined_shopify_units_local_plus_recent": 9,
+        "combined_shopify_revenue_local_plus_recent": 21599.91,
+        "sample_live_products": [
+          {
+            "handle": "tenis-alo-yoga-alo-runner-preto",
+            "title": "Tênis Alo Yoga ALO Runner Preto",
+            "status": "ACTIVE",
+            "variants": 13
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 73,
+      "commercial_priority_after_refresh": "P2",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/onitsuka-tiger-x-versace",
+      "path": "/collections/onitsuka-tiger-x-versace",
+      "page_type": "collection",
+      "handle": "onitsuka-tiger-x-versace",
+      "commercial_priority": "P3",
+      "commercial_score": 56,
+      "decision_grade": "partial_decision_grade",
+      "reasons": [
+        "137 sessões GA4",
+        "conversão landing baixa (0.00%)",
+        "638 un. vendidas no Shopify/local spine",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 137,
+        "users": 135,
+        "views": 484,
+        "purchases": 0,
+        "landing_cvr_percent": 0.0,
+        "revenue": 0.0
+      },
+      "gsc": null,
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "collection_token_match",
+        "products_matched": 80,
+        "sample_products": [
+          {
+            "title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Nappa Sneakers Black Brown Preto",
+            "handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-nappa-sneakers-black-brown-preto",
+            "vendor": "Onitsuka Tiger x Versace",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Nappa Sneakers Pink Rosa",
+            "handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-nappa-sneakers-pink-rosa",
+            "vendor": "Onitsuka Tiger x Versace",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Sneakers Brown Bege",
+            "handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-suede-sneakers-brown-bege",
+            "vendor": "Onitsuka Tiger x Versace",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Metallic Sneakers Silver Gold Prateado",
+            "handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-metallic-sneakers-silver-gold-prateado",
+            "vendor": "Onitsuka Tiger x Versace",
+            "status": "active"
+          },
+          {
+            "title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Nappa Sneakers Brown Yellow Amarelo",
+            "handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-nappa-sneakers-brown-yellow-amarelo",
+            "vendor": "Onitsuka Tiger x Versace",
+            "status": "active"
+          }
+        ],
+        "variant_count": 864,
+        "sales": {
+          "orders_or_lines": 638,
+          "units": 638,
+          "revenue": 1520533.66,
+          "channels": {
+            "site": {
+              "units": 425,
+              "revenue": 1016895.76
+            },
+            "loja": {
+              "units": 213,
+              "revenue": 503637.9
+            }
+          },
+          "top_skus": [
+            [
+              "1183C102.751",
+              45
+            ],
+            [
+              "1183C015101",
+              42
+            ],
+            [
+              "1183C102 751",
+              26
+            ],
+            [
+              "1183C015200",
+              24
+            ],
+            [
+              "183A872",
+              22
+            ],
+            [
+              "1183C102250",
+              21
+            ],
+            [
+              "1183C123.252-4",
+              17
+            ],
+            [
+              "1183B566021",
+              17
+            ]
+          ],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 1515,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 864,
+        "commercial_state_counts": {
+          "blocked_tiny_not_mapped": 730,
+          "blocked_missing_shopify_sku": 129,
+          "blocked_data_quality": 5
+        },
+        "tiny_status_counts": {
+          "not_mapped_in_tiny_snapshot": 735,
+          "no_shopify_sku": 129
+        },
+        "confidence": "partial_tiny_snapshot"
+      },
+      "public_html_diagnostic": null,
+      "source_labels": [
+        "derived_reconciliation",
+        "fact_ga4",
+        "fact_shopify_local_spine",
+        "fact_tiny_stock"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "exact_collection_membership_first_120",
+        "products_checked": 9,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 2,
+          "revenue": 19999.98,
+          "channels": {
+            "loja": {
+              "units": 1,
+              "revenue": 9999.99
+            },
+            "site": {
+              "units": 1,
+              "revenue": 9999.99
+            }
+          },
+          "matched_products": 2,
+          "matched_variants": 2,
+          "top_skus": []
+        },
+        "combined_shopify_units_local_plus_recent": 640,
+        "combined_shopify_revenue_local_plus_recent": 1540533.64,
+        "sample_live_products": [
+          {
+            "handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-suede-sneakers-green",
+            "title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Green",
+            "status": "ACTIVE",
+            "variants": 16
+          },
+          {
+            "handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-suede-sneakers-brown-bege",
+            "title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+            "status": "ACTIVE",
+            "variants": 16
+          },
+          {
+            "handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-suede-sneakers-blue-azul",
+            "title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Blue Azul",
+            "status": "ACTIVE",
+            "variants": 16
+          },
+          {
+            "handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-nappa-sneakers-brown-yellow-amarelo",
+            "title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Nappa Têniss Brown Yellow Amarelo",
+            "status": "ACTIVE",
+            "variants": 16
+          },
+          {
+            "handle": "tenis-onitsuka-tiger-x-versace-tai-chi-sakura-nappa-sneakers-pink-rosa",
+            "title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Nappa Têniss Pink Rosa",
+            "status": "ACTIVE",
+            "variants": 10
+          }
+        ]
+      },
+      "commercial_score_after_refresh": 64,
+      "commercial_priority_after_refresh": "P2",
+      "decision_grade_after_refresh": "decision_grade_refresh_ready_for_preview"
+    },
+    {
+      "url": "https://lksneakers.com.br/",
+      "path": "/",
+      "page_type": "homepage",
+      "handle": "",
+      "commercial_priority": "P2",
+      "commercial_score": 59,
+      "decision_grade": "demand_only_needs_shopify_join",
+      "reasons": [
+        "12322 sessões GA4",
+        "34910 impressões GSC",
+        "estoque/mapeamento Tiny incompleto; não aplicar sem checagem"
+      ],
+      "recommended_next_step": "Resolver estoque/mapeamento SKU antes de qualquer alteração; manter apenas diagnóstico HTML.",
+      "ga4": {
+        "sessions": 12322,
+        "users": 11108,
+        "views": 43913,
+        "purchases": 51,
+        "landing_cvr_percent": 0.41,
+        "revenue": 157459.24
+      },
+      "gsc": {
+        "page": "https://lksneakers.com.br/",
+        "clicks": 453,
+        "impressions": 34910,
+        "ctr_percent": 1.3,
+        "position": 7.3,
+        "source_label": "fact_gsc",
+        "queries": [
+          {
+            "query": "lk",
+            "impressions": 13691,
+            "ctr_percent": 0.16,
+            "position": 5.8,
+            "priority": "P1"
+          },
+          {
+            "query": "sneakers",
+            "impressions": 3063,
+            "ctr_percent": 0.49,
+            "position": 12.3,
+            "priority": "P1"
+          }
+        ]
+      },
+      "merchant": null,
+      "shopify_context": {
+        "match_quality": "none",
+        "products_matched": 0,
+        "sample_products": [],
+        "variant_count": 0,
+        "sales": {
+          "orders_or_lines": 0,
+          "units": 0,
+          "revenue": 0.0,
+          "channels": {
+            "site": {
+              "units": 0,
+              "revenue": 0.0
+            },
+            "loja": {
+              "units": 0,
+              "revenue": 0.0
+            }
+          },
+          "top_skus": [],
+          "source_label": "fact_shopify_local_spine",
+          "window": "2025-11-01..latest_local"
+        }
+      },
+      "stock_context": {
+        "tiny_official_available_sum": 0,
+        "tiny_total_available_sum": 0,
+        "shopify_inventory_hint_sum_not_stock_truth": 0,
+        "ready_available_variants": 0,
+        "zero_stock_sourcing_candidate_variants": 0,
+        "blocked_or_unmapped_variants": 0,
+        "commercial_state_counts": {},
+        "tiny_status_counts": {},
+        "confidence": "no_tiny_join"
+      },
+      "public_html_diagnostic": {
+        "status": 200,
+        "title_len": 78,
+        "description_len": 187,
+        "h1_count": 1,
+        "images_missing_alt": 1,
+        "score": null,
+        "issues": [
+          "title_longo",
+          "meta_description_longa",
+          "imagens_sem_alt"
+        ],
+        "role": "diagnostic_after_commercial_priority"
+      },
+      "source_labels": [
+        "fact_ga4",
+        "fact_gsc",
+        "public_html_diagnostic"
+      ],
+      "write_allowed_now": false,
+      "approval_status": "read_only_preview",
+      "live_shopify_refresh": {
+        "membership_status": "not_checked",
+        "products_checked": 0,
+        "recent_sales_window": {
+          "start": "2026-04-17T00:00:00-03:00",
+          "end": "2026-05-18T18:57:10-03:00"
+        },
+        "recent_sales": {
+          "units": 0,
+          "revenue": 0.0,
+          "channels": {},
+          "matched_products": 0,
+          "matched_variants": 0,
+          "top_skus": []
+        },
+        "combined_shopify_units_local_plus_recent": 0,
+        "combined_shopify_revenue_local_plus_recent": 0.0,
+        "sample_live_products": []
+      },
+      "commercial_score_after_refresh": 59,
+      "commercial_priority_after_refresh": "P3",
+      "decision_grade_after_refresh": "needs_data"
+    }
+  ],
+  "not_performed": [
+    "shopify_mutation",
+    "theme_or_content_change",
+    "tiny_api_call",
+    "tiny_write",
+    "merchant_or_feed_write",
+    "ga4_gsc_write",
+    "campaign_or_external_send",
+    "email_whatsapp_send",
+    "supplier_contact",
+    "price_or_stock_change",
+    "cron_creation"
+  ],
+  "limitations": [
+    "Shopify inventory fields are reported only as hints, not stock truth; Tiny remains stock truth.",
+    "Tiny was not called live in this block to avoid API pressure; partial local snapshot remains the stock limitation.",
+    "Collections were capped to first 120 products from Admin GraphQL for safety; pagination can be added if needed.",
+    "Margin/cost is still not reliable enough for scoring."
+  ]
+}

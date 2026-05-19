@@ -1,0 +1,520 @@
+{
+  "ok": true,
+  "generated_at": "2026-05-19T11:51:59.573596+00:00",
+  "source": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-seo-cro-decision-grade-refresh-2026-05-18.json",
+  "scope": "LK SEO/CRO P1 approval packets from decision-grade refresh",
+  "contract": "read_only_preview; no_external_writes; no_shopify_admin_mutation",
+  "summary": {
+    "packets": 8,
+    "needs_approval": 8,
+    "write_allowed_now": 0,
+    "public_fetch_ok": 8
+  },
+  "packets": [
+    {
+      "packet_id": "lk-seo-cro-p1-2026-05-18-01",
+      "status": "needs_approval",
+      "write_allowed_now": false,
+      "url": "https://lksneakers.com.br/collections/onitsuka-tiger-todos-os-modelos",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 100,
+      "decision_grade": "decision_grade_refresh_ready_for_preview",
+      "commercial_evidence": {
+        "membership_status": "exact_collection_membership_first_120",
+        "ga4_sessions": 1132,
+        "ga4_cvr_percent": 0.09,
+        "gsc_impressions": 55903,
+        "gsc_ctr_percent": 1.14,
+        "recent_shopify_units": 100,
+        "recent_shopify_revenue": 248799.0,
+        "combined_shopify_units": 742,
+        "combined_shopify_revenue": 1773432.62
+      },
+      "current_public_fields": {
+        "document_title": "Onitsuka Tiger Original na LK Sneakers",
+        "document_title_chars": 38,
+        "meta_description": "Compre Onitsuka Tiger original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x.",
+        "meta_description_chars": 124,
+        "h1": "",
+        "h1_chars": 0
+      },
+      "proposed_shopify_seo_fields": {
+        "seo_title": "Onitsuka Tiger Original na LK Sneakers",
+        "seo_title_chars": 38,
+        "seo_description": "Compre Onitsuka Tiger original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x.",
+        "seo_description_chars": 124,
+        "scope_note": "SEO fields only; does not approve H1, body, product title, price, stock, theme, Merchant, campaigns or sends."
+      },
+      "rollback_plan": {
+        "before_any_approved_write": "Re-query Shopify Admin product/collection seo { title description } and save exact rollback snapshot.",
+        "rollback_action_if_approved_later": "Restore previous Shopify seo.title and seo.description for the exact product/collection only.",
+        "current_public_fallback_snapshot": {
+          "title": "Onitsuka Tiger Original na LK Sneakers",
+          "meta": "Compre Onitsuka Tiger original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x."
+        }
+      },
+      "visible_cro_previews": [
+        {
+          "type": "serp_ctr_hypothesis",
+          "preview": "SEO title/meta com marca/modelo + autenticidade + LK para melhorar CTR antes de qualquer mudança visual.",
+          "requires_write_surface": "Shopify SEO fields only after approval",
+          "approval_required": true
+        }
+      ],
+      "approval_text_required": "Aprovo aplicar somente os campos SEO title/meta dos packets listados, sem alterar H1/body/tema/preço/estoque/campanhas, com rollback salvo antes."
+    },
+    {
+      "packet_id": "lk-seo-cro-p1-2026-05-18-02",
+      "status": "needs_approval",
+      "write_allowed_now": false,
+      "url": "https://lksneakers.com.br/collections/new-balance-204l",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 100,
+      "decision_grade": "decision_grade_refresh_ready_for_preview",
+      "commercial_evidence": {
+        "membership_status": "exact_collection_membership_first_120",
+        "ga4_sessions": 454,
+        "ga4_cvr_percent": 0.22,
+        "gsc_impressions": 43484,
+        "gsc_ctr_percent": 0.77,
+        "recent_shopify_units": 30,
+        "recent_shopify_revenue": 83999.7,
+        "combined_shopify_units": 367,
+        "combined_shopify_revenue": 941371.37
+      },
+      "current_public_fields": {
+        "document_title": "New Balance 204L Original na LK Sneakers",
+        "document_title_chars": 40,
+        "meta_description": "Compre New Balance 204l original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x.",
+        "meta_description_chars": 126,
+        "h1": "",
+        "h1_chars": 0
+      },
+      "proposed_shopify_seo_fields": {
+        "seo_title": "New Balance 204L Original na LK Sneakers",
+        "seo_title_chars": 40,
+        "seo_description": "Compre New Balance 204l original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x.",
+        "seo_description_chars": 126,
+        "scope_note": "SEO fields only; does not approve H1, body, product title, price, stock, theme, Merchant, campaigns or sends."
+      },
+      "rollback_plan": {
+        "before_any_approved_write": "Re-query Shopify Admin product/collection seo { title description } and save exact rollback snapshot.",
+        "rollback_action_if_approved_later": "Restore previous Shopify seo.title and seo.description for the exact product/collection only.",
+        "current_public_fallback_snapshot": {
+          "title": "New Balance 204L Original na LK Sneakers",
+          "meta": "Compre New Balance 204l original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x."
+        }
+      },
+      "visible_cro_previews": [
+        {
+          "type": "serp_ctr_hypothesis",
+          "preview": "SEO title/meta com marca/modelo + autenticidade + LK para melhorar CTR antes de qualquer mudança visual.",
+          "requires_write_surface": "Shopify SEO fields only after approval",
+          "approval_required": true
+        }
+      ],
+      "approval_text_required": "Aprovo aplicar somente os campos SEO title/meta dos packets listados, sem alterar H1/body/tema/preço/estoque/campanhas, com rollback salvo antes."
+    },
+    {
+      "packet_id": "lk-seo-cro-p1-2026-05-18-03",
+      "status": "needs_approval",
+      "write_allowed_now": false,
+      "url": "https://lksneakers.com.br/collections/air-jordan-travis-scott",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 100,
+      "decision_grade": "decision_grade_refresh_ready_for_preview",
+      "commercial_evidence": {
+        "membership_status": "exact_collection_membership_first_120",
+        "ga4_sessions": 207,
+        "ga4_cvr_percent": 0.0,
+        "gsc_impressions": 27818,
+        "gsc_ctr_percent": 0.66,
+        "recent_shopify_units": 2,
+        "recent_shopify_revenue": 14498.99,
+        "combined_shopify_units": 35,
+        "combined_shopify_revenue": 154448.68
+      },
+      "current_public_fields": {
+        "document_title": "Air Jordan Travis Scott Original na LK Sneakers",
+        "document_title_chars": 47,
+        "meta_description": "Compre Air Jordan Travis Scott original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x.",
+        "meta_description_chars": 133,
+        "h1": "",
+        "h1_chars": 0
+      },
+      "proposed_shopify_seo_fields": {
+        "seo_title": "Air Jordan Travis Scott Original na LK Sneakers",
+        "seo_title_chars": 47,
+        "seo_description": "Compre Air Jordan Travis Scott original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x.",
+        "seo_description_chars": 133,
+        "scope_note": "SEO fields only; does not approve H1, body, product title, price, stock, theme, Merchant, campaigns or sends."
+      },
+      "rollback_plan": {
+        "before_any_approved_write": "Re-query Shopify Admin product/collection seo { title description } and save exact rollback snapshot.",
+        "rollback_action_if_approved_later": "Restore previous Shopify seo.title and seo.description for the exact product/collection only.",
+        "current_public_fallback_snapshot": {
+          "title": "Air Jordan Travis Scott Original na LK Sneakers",
+          "meta": "Compre Air Jordan Travis Scott original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x."
+        }
+      },
+      "visible_cro_previews": [
+        {
+          "type": "serp_ctr_hypothesis",
+          "preview": "SEO title/meta com marca/modelo + autenticidade + LK para melhorar CTR antes de qualquer mudança visual.",
+          "requires_write_surface": "Shopify SEO fields only after approval",
+          "approval_required": true
+        },
+        {
+          "type": "visible_cro_dev_theme_hypothesis",
+          "preview": "Preparar teste em dev theme: reforçar seleção de tamanho/estoque real Tiny, prova de autenticidade e CTA acima da dobra sem mexer em produção.",
+          "requires_write_surface": "Shopify dev theme preview only after separate approval",
+          "approval_required": true
+        }
+      ],
+      "approval_text_required": "Aprovo aplicar somente os campos SEO title/meta dos packets listados, sem alterar H1/body/tema/preço/estoque/campanhas, com rollback salvo antes."
+    },
+    {
+      "packet_id": "lk-seo-cro-p1-2026-05-18-04",
+      "status": "needs_approval",
+      "write_allowed_now": false,
+      "url": "https://lksneakers.com.br/collections/lululemon",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 100,
+      "decision_grade": "decision_grade_refresh_ready_for_preview",
+      "commercial_evidence": {
+        "membership_status": "exact_collection_membership_first_120",
+        "ga4_sessions": 859,
+        "ga4_cvr_percent": 0.0,
+        "gsc_impressions": 25178,
+        "gsc_ctr_percent": 3.03,
+        "recent_shopify_units": 5,
+        "recent_shopify_revenue": 7199.95,
+        "combined_shopify_units": 46,
+        "combined_shopify_revenue": 56649.54
+      },
+      "current_public_fields": {
+        "document_title": "Lululemon Original na LK Sneakers",
+        "document_title_chars": 33,
+        "meta_description": "Compre Lululemon original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x.",
+        "meta_description_chars": 119,
+        "h1": "",
+        "h1_chars": 0
+      },
+      "proposed_shopify_seo_fields": {
+        "seo_title": "Lululemon Original na LK Sneakers",
+        "seo_title_chars": 33,
+        "seo_description": "Compre Lululemon original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x.",
+        "seo_description_chars": 119,
+        "scope_note": "SEO fields only; does not approve H1, body, product title, price, stock, theme, Merchant, campaigns or sends."
+      },
+      "rollback_plan": {
+        "before_any_approved_write": "Re-query Shopify Admin product/collection seo { title description } and save exact rollback snapshot.",
+        "rollback_action_if_approved_later": "Restore previous Shopify seo.title and seo.description for the exact product/collection only.",
+        "current_public_fallback_snapshot": {
+          "title": "Lululemon Original na LK Sneakers",
+          "meta": "Compre Lululemon original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x."
+        }
+      },
+      "visible_cro_previews": [
+        {
+          "type": "visible_cro_dev_theme_hypothesis",
+          "preview": "Preparar teste em dev theme: reforçar seleção de tamanho/estoque real Tiny, prova de autenticidade e CTA acima da dobra sem mexer em produção.",
+          "requires_write_surface": "Shopify dev theme preview only after separate approval",
+          "approval_required": true
+        }
+      ],
+      "approval_text_required": "Aprovo aplicar somente os campos SEO title/meta dos packets listados, sem alterar H1/body/tema/preço/estoque/campanhas, com rollback salvo antes."
+    },
+    {
+      "packet_id": "lk-seo-cro-p1-2026-05-18-05",
+      "status": "needs_approval",
+      "write_allowed_now": false,
+      "url": "https://lksneakers.com.br/collections/adidas-samba-jane",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 100,
+      "decision_grade": "decision_grade_refresh_ready_for_preview",
+      "commercial_evidence": {
+        "membership_status": "exact_collection_membership_first_120",
+        "ga4_sessions": 210,
+        "ga4_cvr_percent": 0.0,
+        "gsc_impressions": 17701,
+        "gsc_ctr_percent": 1.21,
+        "recent_shopify_units": 5,
+        "recent_shopify_revenue": 9198.96,
+        "combined_shopify_units": 154,
+        "combined_shopify_revenue": 319347.51
+      },
+      "current_public_fields": {
+        "document_title": "Adidas Samba Jane Original na LK Sneakers",
+        "document_title_chars": 41,
+        "meta_description": "Compre Adidas Samba Jane original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x.",
+        "meta_description_chars": 127,
+        "h1": "Adidas Samba Jane",
+        "h1_chars": 17
+      },
+      "proposed_shopify_seo_fields": {
+        "seo_title": "Adidas Samba Jane Original na LK Sneakers",
+        "seo_title_chars": 41,
+        "seo_description": "Compre Adidas Samba Jane original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x.",
+        "seo_description_chars": 127,
+        "scope_note": "SEO fields only; does not approve H1, body, product title, price, stock, theme, Merchant, campaigns or sends."
+      },
+      "rollback_plan": {
+        "before_any_approved_write": "Re-query Shopify Admin product/collection seo { title description } and save exact rollback snapshot.",
+        "rollback_action_if_approved_later": "Restore previous Shopify seo.title and seo.description for the exact product/collection only.",
+        "current_public_fallback_snapshot": {
+          "title": "Adidas Samba Jane Original na LK Sneakers",
+          "meta": "Compre Adidas Samba Jane original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x."
+        }
+      },
+      "visible_cro_previews": [
+        {
+          "type": "serp_ctr_hypothesis",
+          "preview": "SEO title/meta com marca/modelo + autenticidade + LK para melhorar CTR antes de qualquer mudança visual.",
+          "requires_write_surface": "Shopify SEO fields only after approval",
+          "approval_required": true
+        },
+        {
+          "type": "visible_cro_dev_theme_hypothesis",
+          "preview": "Preparar teste em dev theme: reforçar seleção de tamanho/estoque real Tiny, prova de autenticidade e CTA acima da dobra sem mexer em produção.",
+          "requires_write_surface": "Shopify dev theme preview only after separate approval",
+          "approval_required": true
+        }
+      ],
+      "approval_text_required": "Aprovo aplicar somente os campos SEO title/meta dos packets listados, sem alterar H1/body/tema/preço/estoque/campanhas, com rollback salvo antes."
+    },
+    {
+      "packet_id": "lk-seo-cro-p1-2026-05-18-06",
+      "status": "needs_approval",
+      "write_allowed_now": false,
+      "url": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "page_type": "pdp",
+      "priority": "P1",
+      "score": 100,
+      "decision_grade": "decision_grade_refresh_ready_for_preview",
+      "commercial_evidence": {
+        "membership_status": "exact_product_handle",
+        "ga4_sessions": 146,
+        "ga4_cvr_percent": 0.68,
+        "gsc_impressions": 11070,
+        "gsc_ctr_percent": 0.42,
+        "recent_shopify_units": 19,
+        "recent_shopify_revenue": 45599.81,
+        "combined_shopify_units": 106,
+        "combined_shopify_revenue": 254398.94
+      },
+      "current_public_fields": {
+        "document_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo por R$ 2.399,99 em até 10x | LK Sneakers",
+        "document_title_chars": 89,
+        "meta_description": "Onitsuka Tiger Mexico 66 Kill Bill Amarelo original na LK Sneakers, com alta procura, curadoria premium, autenticidade garantida e compra segura em até…",
+        "meta_description_chars": 152,
+        "h1": "",
+        "h1_chars": 0
+      },
+      "proposed_shopify_seo_fields": {
+        "seo_title": "Onitsuka Tiger Mexico 66 Kill Bill Amarelo | LK Sneakers",
+        "seo_title_chars": 56,
+        "seo_description": "Onitsuka Tiger Mexico 66 Kill Bill Amarelo original na LK Sneakers, com alta procura, curadoria premium, autenticidade garantida e compra segura em até…",
+        "seo_description_chars": 152,
+        "scope_note": "SEO fields only; does not approve H1, body, product title, price, stock, theme, Merchant, campaigns or sends."
+      },
+      "rollback_plan": {
+        "before_any_approved_write": "Re-query Shopify Admin product/collection seo { title description } and save exact rollback snapshot.",
+        "rollback_action_if_approved_later": "Restore previous Shopify seo.title and seo.description for the exact product/collection only.",
+        "current_public_fallback_snapshot": {
+          "title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo por R$ 2.399,99 em até 10x | LK Sneakers",
+          "meta": "Onitsuka Tiger Mexico 66 Kill Bill Amarelo original na LK Sneakers, com alta procura, curadoria premium, autenticidade garantida e compra segura em até…"
+        }
+      },
+      "visible_cro_previews": [
+        {
+          "type": "serp_ctr_hypothesis",
+          "preview": "SEO title/meta com marca/modelo + autenticidade + LK para melhorar CTR antes de qualquer mudança visual.",
+          "requires_write_surface": "Shopify SEO fields only after approval",
+          "approval_required": true
+        }
+      ],
+      "approval_text_required": "Aprovo aplicar somente os campos SEO title/meta dos packets listados, sem alterar H1/body/tema/preço/estoque/campanhas, com rollback salvo antes."
+    },
+    {
+      "packet_id": "lk-seo-cro-p1-2026-05-18-07",
+      "status": "needs_approval",
+      "write_allowed_now": false,
+      "url": "https://lksneakers.com.br/collections/onitsuka-tiger-mexico-66",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 98,
+      "decision_grade": "decision_grade_refresh_ready_for_preview",
+      "commercial_evidence": {
+        "membership_status": "exact_collection_membership_first_120",
+        "ga4_sessions": 748,
+        "ga4_cvr_percent": 0.0,
+        "gsc_impressions": 31659,
+        "gsc_ctr_percent": 1.96,
+        "recent_shopify_units": 94,
+        "recent_shopify_revenue": 225599.06,
+        "combined_shopify_units": 724,
+        "combined_shopify_revenue": 1727732.8
+      },
+      "current_public_fields": {
+        "document_title": "Onitsuka Tiger Mexico 66 Original na LK Sneakers",
+        "document_title_chars": 48,
+        "meta_description": "Compre Onitsuka Tiger Mexico 66 original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x.",
+        "meta_description_chars": 134,
+        "h1": "",
+        "h1_chars": 0
+      },
+      "proposed_shopify_seo_fields": {
+        "seo_title": "Onitsuka Tiger Mexico 66 Original na LK Sneakers",
+        "seo_title_chars": 48,
+        "seo_description": "Compre Onitsuka Tiger Mexico 66 original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x.",
+        "seo_description_chars": 134,
+        "scope_note": "SEO fields only; does not approve H1, body, product title, price, stock, theme, Merchant, campaigns or sends."
+      },
+      "rollback_plan": {
+        "before_any_approved_write": "Re-query Shopify Admin product/collection seo { title description } and save exact rollback snapshot.",
+        "rollback_action_if_approved_later": "Restore previous Shopify seo.title and seo.description for the exact product/collection only.",
+        "current_public_fallback_snapshot": {
+          "title": "Onitsuka Tiger Mexico 66 Original na LK Sneakers",
+          "meta": "Compre Onitsuka Tiger Mexico 66 original na LK Sneakers. Alta procura, curadoria premium, autenticidade garantida e opções em até 10x."
+        }
+      },
+      "visible_cro_previews": [
+        {
+          "type": "visible_cro_dev_theme_hypothesis",
+          "preview": "Preparar teste em dev theme: reforçar seleção de tamanho/estoque real Tiny, prova de autenticidade e CTA acima da dobra sem mexer em produção.",
+          "requires_write_surface": "Shopify dev theme preview only after separate approval",
+          "approval_required": true
+        }
+      ],
+      "approval_text_required": "Aprovo aplicar somente os campos SEO title/meta dos packets listados, sem alterar H1/body/tema/preço/estoque/campanhas, com rollback salvo antes."
+    },
+    {
+      "packet_id": "lk-seo-cro-p1-2026-05-18-08",
+      "status": "needs_approval",
+      "write_allowed_now": false,
+      "url": "https://lksneakers.com.br/collections/nike-mind-001",
+      "page_type": "collection",
+      "priority": "P1",
+      "score": 98,
+      "decision_grade": "decision_grade_refresh_ready_for_preview",
+      "commercial_evidence": {
+        "membership_status": "exact_collection_membership_first_120",
+        "ga4_sessions": 133,
+        "ga4_cvr_percent": 0.0,
+        "gsc_impressions": 6532,
+        "gsc_ctr_percent": 1.21,
+        "recent_shopify_units": 12,
+        "recent_shopify_revenue": 40799.88,
+        "combined_shopify_units": 127,
+        "combined_shopify_revenue": 395358.75
+      },
+      "current_public_fields": {
+        "document_title": "Nike Mind 001 Original na LK Sneakers",
+        "document_title_chars": 37,
+        "meta_description": "Compre Nike Mind original na LK Sneakers. Curadoria premium, autenticidade garantida e opções em até 10x.",
+        "meta_description_chars": 105,
+        "h1": "Nike Mind",
+        "h1_chars": 9
+      },
+      "proposed_shopify_seo_fields": {
+        "seo_title": "Nike Mind 001 Original na LK Sneakers",
+        "seo_title_chars": 37,
+        "seo_description": "Compre Nike Mind original na LK Sneakers. Curadoria premium, autenticidade garantida e opções em até 10x.",
+        "seo_description_chars": 105,
+        "scope_note": "SEO fields only; does not approve H1, body, product title, price, stock, theme, Merchant, campaigns or sends."
+      },
+      "rollback_plan": {
+        "before_any_approved_write": "Re-query Shopify Admin product/collection seo { title description } and save exact rollback snapshot.",
+        "rollback_action_if_approved_later": "Restore previous Shopify seo.title and seo.description for the exact product/collection only.",
+        "current_public_fallback_snapshot": {
+          "title": "Nike Mind 001 Original na LK Sneakers",
+          "meta": "Compre Nike Mind original na LK Sneakers. Curadoria premium, autenticidade garantida e opções em até 10x."
+        }
+      },
+      "visible_cro_previews": [
+        {
+          "type": "visible_cro_dev_theme_hypothesis",
+          "preview": "Preparar teste em dev theme: reforçar seleção de tamanho/estoque real Tiny, prova de autenticidade e CTA acima da dobra sem mexer em produção.",
+          "requires_write_surface": "Shopify dev theme preview only after separate approval",
+          "approval_required": true
+        }
+      ],
+      "approval_text_required": "Aprovo aplicar somente os campos SEO title/meta dos packets listados, sem alterar H1/body/tema/preço/estoque/campanhas, com rollback salvo antes."
+    }
+  ],
+  "public_fetches": [
+    {
+      "url": "https://lksneakers.com.br/collections/onitsuka-tiger-todos-os-modelos",
+      "ok": true,
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/new-balance-204l",
+      "ok": true,
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/air-jordan-travis-scott",
+      "ok": true,
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/lululemon",
+      "ok": true,
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/adidas-samba-jane",
+      "ok": true,
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo",
+      "ok": true,
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/onitsuka-tiger-mexico-66",
+      "ok": true,
+      "status": 200,
+      "error": null
+    },
+    {
+      "url": "https://lksneakers.com.br/collections/nike-mind-001",
+      "ok": true,
+      "status": 200,
+      "error": null
+    }
+  ],
+  "not_performed": [
+    "shopify_admin_mutation",
+    "shopify_admin_write",
+    "theme_or_content_change",
+    "tiny_api_call",
+    "tiny_write",
+    "merchant_or_feed_write",
+    "gsc_ga4_write",
+    "campaign_or_external_send",
+    "whatsapp_or_email_send",
+    "supplier_contact",
+    "price_or_stock_change",
+    "cron_creation"
+  ],
+  "limitations": [
+    "Public title/meta/H1 are preview evidence. Before any approved Shopify SEO mutation, Admin SEO fields must be re-read and saved as rollback.",
+    "Visible CRO items are hypotheses only; LK theme changes require dev theme preview and separate approval.",
+    "Tiny stock and margin remain gaps for sourcing/stock action packets."
+  ]
+}
