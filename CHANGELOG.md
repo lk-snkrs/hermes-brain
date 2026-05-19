@@ -1,3 +1,9 @@
+## 2026-05-19 — BRUNO-ATUAL Hermes Brain adaptation audit
+
+- Added `reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md` after processing the updated Bruno/OpenClaw course package sent by Lucas.
+- Documented lesson-by-lesson adaptation decisions, Amora/case takeaways, Hermes Brain scores by dimension, and the next safe gaps: hot/current context, skill audit, runtime/channel inventory, Mission Control reconciliation, and Mordomo documentation.
+- Preserved the rule that raw third-party course material stays outside the Brain; no runtime, Docker/VPS, external send, customer contact, database/API write, campaign, production or credential action was executed.
+
 ## 2026-05-19 — LK Growth Action PRD
 
 - Added `growth-action-prd-2026-05-19.md` to turn the documented LK Growth OS into a practical weekly execution system.
