@@ -33,8 +33,9 @@ Ler este arquivo no boot quando a pergunta depender de estado atual, antes de ab
 
 - A auditoria BRUNO-ATUAL concluiu que o segundo cérebro do Hermes está **direcionalmente correto**, mas não 100% pronto: nota geral inicial 8,0/10 na arquitetura e cerca de 6,8/10 na correção operacional antes dos P0 desta rodada.
 - Gaps P0 documentais seguros tratados nesta rodada: camada `current/hot`, inventário runtime/profile/canal, auditoria de skills e documentação do Mordomo.
-- Ainda não chamar de 10/10: há herança OpenClaw/`cerebro-cimino`, runtime/crons a reconciliar com fonte viva e Mission Control a simplificar como Mesa COO.
-- Mission Control exige reconciliação própria; este contexto só aponta o trabalho, sem mexer em repo/UI/runtime.
+- Ainda não chamar de 10/10: há herança OpenClaw/`cerebro-cimino`, runtime/crons a reconciliar continuamente com fonte viva e Mission Control a simplificar como Mesa COO.
+- Mesa COO diária foi operacionalizada no Telegram: skill `/mesa` criada e cron `749ee30b51eb` agendado para 08h30 BRT, entrega `origin`, sem writes externos.
+- Mission Control exige reconciliação própria; este contexto aponta o trabalho de UI/produto sem autorizar deploy/runtime.
 
 ## Por área
 
