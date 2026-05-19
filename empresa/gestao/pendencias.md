@@ -11,6 +11,8 @@ Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a 
 
 ## Ativos
 
+- [ ] **Implementar gaps P0 da auditoria BRUNO-ATUAL → Hermes Brain** — Operações/Brain — relatório concluído em 2026-05-19 (`reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md`) com nota geral 8,0/10. Próximas ações recomendadas: criar camada `hot/current`, inventário vivo de crons/bots/profiles, auditoria de skills, reconciliação Mission Control e documentação completa do Mordomo. Sem runtime/externo/prod alterado nesta auditoria.
+
 - [x] **Gerar primeiro Stock Intelligence real/read-only da LK com sourcing acionado por sinal** — LK/Stock/Sourcing — concluído em 2026-05-10 com `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`. Correção posterior: SKU Shopify é canônico para matching e Tiny deve ser mapeado/normalizado para Shopify; leitura Meta influencer precisa usar janela/período corretos e nomes em campaign/adset/ad antes de claim comercial.
 - [x] **Criar mapa canônico SKU Shopify ↔ Tiny** — LK/Stock/Data Quality — preview read-only gerado em 2026-05-10: `reports/lk-sku-shopify-tiny-map-preview-2026-05-10.md`. Resultado: 6/6 campeões antes marcados como `mapear SKU no Tiny` tiveram candidato Tiny encontrado com confiança alta; tabela de aprovação gerada em `reports/lk-sku-tiny-alias-approval-preview-2026-05-10.md`; nenhum write produtivo executado.
 - [x] **Investigar/corrigir leitura dos ROAS Meta 50–70x de influencers** — LK/Analytics/Tráfego Pago — relatório read-only gerado em `reports/lk-roas-influencer-correction-readonly-2026-05-10.md`. Correção: 50–70x é `Meta attributed ROAS`, não ROAS operacional; Meta platform value excede receita web Shopify no período, então deve ser tratado como sinal de plataforma/investigação.

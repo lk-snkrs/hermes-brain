@@ -34,6 +34,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 
 ## Reports
 
+- `../../reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md` — auditoria completa do pacote BRUNO-ATUAL, com adaptação Hermes-native e notas por dimensão.
 - `../../reports/brain-improvement-score-2026-05-09.md` — primeira execução manual do Brain Improvement Score.
 - `../../reports/brain-health-check-2026-05-09.json` — primeira saída JSON versionada da Rodada G, com `FAIL=0 WARN=0`.
 - `../../reports/material-ingest-to-prd-test-2026-05-09.md` — validação do modo leve da rotina Material Ingest to PRD usando PRD antigo.
