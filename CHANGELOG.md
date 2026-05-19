@@ -1,3 +1,9 @@
+## 2026-05-19 — LK Growth DataForSEO MCP reload approval packet
+
+- Added `dataforseo-mcp-reload-approval-2026-05-19.md` to document the remaining runtime decision before exposing DataForSEO MCP in the active agent toolset.
+- Captured options A/B/C, pre-checks, rollback, smoke test and guardrails.
+- No runtime restart, Docker/VPS action, external send, production write or paid DataForSEO batch was executed.
+
 ## 2026-05-19 — LK Growth decision router and audit template
 
 - Added `growth-decision-router.md` to route Growth symptoms to GA4/GSC/GMC/Shopify/CRO/GEO/Ads/Blog/DataForSEO layers.
