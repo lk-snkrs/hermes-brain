@@ -15,6 +15,7 @@ Não confundir Zipper Vendas com SPITI.
 - `sub-areas/colecionadores/` — relacionamento, abordagem aprovada, histórico e narrativas por perfil.
 - `sub-areas/feiras/` — SP-Arte, ArPa, ArtRio, Farol Santander e checklists de produção/comercial.
 - `sub-areas/comunicacao/` — Instagram, texto, vídeo, foto/design e tom institucional.
+- `sub-areas/programacao/` — calendário de exposições, agenda institucional e contexto programático read-only.
   - `sub-areas/comunicacao/artistas/` — textos institucionais de artistas aprovados/atualizados pela comunicação (ex.: João Castilho/Biz), para Hermes e Mordomo usarem como contexto cultural.
 
 ## Produto / PRDs

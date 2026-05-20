@@ -28,6 +28,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/hermes-runtime-observability.md` — observabilidade read-only do runtime Hermes.
 - `rotinas/company-decision-memory.md` — protocolo para salvar toda decisão empresarial na memória viva da empresa correspondente.
 - `rotinas/fechamento-agil-23h.md` — rotina ativa do Fechamento Ágil 23h: consolidação diária Brain-first, saída local em `reports/daily-consolidation/YYYY-MM-DD.md`, sem Telegram de sucesso normal.
+- `rotinas/painel-semanal-brain.md` — painel semanal do que entrou no Brain, bloqueios corretos do Brain Sync e rotinas/MAPAs a promover ou limpar.
 
 ## Templates operacionais
 
@@ -57,6 +58,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `../../reports/material-ingest-to-prd-test-2026-05-09.md` — validação do modo leve da rotina Material Ingest to PRD usando PRD antigo.
 - `../../reports/revisao-operacional-multiempresa-2026-05-09.md` — primeira revisão operacional multiempresa sob demanda, sem dados vivos ou produção.
 - `../../reports/daily-consolidation/2026-05-19.md` — teste manual Fase 1A do Fechamento Ágil 23h, sem cron recorrente e sem writes externos.
+- `../../reports/brain-weekly-panel/brain-weekly-panel-2026-05-19.md` — primeiro painel semanal do Brain após ativação do Brain Sync seguro.
 
 ## Guardrails
 

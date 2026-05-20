@@ -41,6 +41,7 @@ O script só pode stagear arquivos em allowlist:
 - `memories/**/*.md`;
 - `reports/daily-consolidation/**/*.md` e JSONs de fechamento, se existirem;
 - `reports/hermes-continuous-improvement/**/*.md`;
+- `reports/brain-weekly-panel/**/*.md`;
 - `reports/brain-health-check-*.json`.
 
 ## 4. Escopo proibido
@@ -54,6 +55,25 @@ O push automático não deve stagear:
 - HTML (`.html`, `.htm`), PDFs, imagens, zips, DBs ou SQLite;
 - relatórios brutos/pesados de operação quando não estiverem no escopo do fechamento;
 - artefatos de infra, Docker, Traefik, volumes, redes ou VPS.
+
+## 4.1 Política para relatórios
+
+Relatórios só entram no Brain Sync automático quando viram documentação executiva ou evidência de governança. Regra prática:
+
+**Podem virar documentação oficial:**
+
+- `reports/daily-consolidation/*.md` — fechamento diário, curado e sem dados brutos sensíveis;
+- `reports/brain-health-check-*.json` — evidência de saúde do Brain;
+- `reports/hermes-continuous-improvement/*.md` — melhorias do Hermes já resumidas;
+- relatórios `.md` promovidos para `areas/**/rotinas/`, `areas/**/reports/` ou `areas/**/contexto/` com síntese, fontes, guardrails e não-ações.
+
+**Devem ficar bloqueados no push automático:**
+
+- HTML de e-mail/preview, CSVs, JSONs brutos, dumps, snapshots privados, receipts operacionais, logs, anexos e arquivos com PII;
+- relatórios gerados por crons que ainda não foram curados para narrativa executiva;
+- qualquer artefato com credenciais, IDs sensíveis, payloads de API, mensagens completas de cliente ou dados de infraestrutura.
+
+Quando um relatório bruto for importante, criar uma síntese `.md` sob a área correspondente e deixar o bruto local/privado.
 
 ## 5. Gates obrigatórios
 

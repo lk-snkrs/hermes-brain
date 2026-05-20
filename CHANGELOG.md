@@ -1,3 +1,10 @@
+## 2026-05-19 — Brain Sync guardrails + painel semanal
+
+- Resolvidos WARNs do health check: criado MAPA de Zipper Programação e indexadas rotinas LK/Mordomo/Operações que estavam fora de `empresa/rotinas/_index.md`.
+- Refinada a política do Brain Sync para relatórios: sínteses `.md` curadas entram; HTML/CSV/JSON bruto/dumps/receipts/logs/PII ficam bloqueados por padrão.
+- Criada rotina `areas/operacoes/rotinas/painel-semanal-brain.md` e primeiro relatório `reports/brain-weekly-panel/brain-weekly-panel-2026-05-19.md`.
+- Validação: `reports/brain-health-check-2026-05-19-three-fixes.json` com FAIL=0/WARN=0. Nenhum write externo além de documentação/GitHub via Brain Sync seguro.
+
 ## 2026-05-19 — Lucas Brain Daily Intelligence Loop
 
 - Executado protocolo diário 02:00 BRT com helper Hostinger/Docker aprovado; salvo `reports/hermes-host-docker-observability-2026-05-19.json`.
