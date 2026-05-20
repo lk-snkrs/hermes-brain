@@ -16,7 +16,10 @@ area/
 
 As áreas ficam **abaixo da Grande Mente**. Elas são unidades operacionais com fontes e regras próprias; a camada global decide roteamento, segurança e aprendizado antes de descer para uma área específica.
 
-Referência de organograma: `empresa/contexto/organograma-operacional-hermes-brain.md`.
+Referências de organograma:
+
+- `empresa/contexto/organograma-operacional-hermes-brain.md` — hierarquia da Grande Mente.
+- `empresa/contexto/organograma-agentes-hermes.md` — agentes documentais, profiles e bots ativos.
 
 | Área | Caminho | Função | Fonte principal |
 |------|---------|--------|-----------------|
@@ -31,6 +34,7 @@ Referência de organograma: `empresa/contexto/organograma-operacional-hermes-bra
 
 ### LK
 
+- `areas/lk/sub-areas/growth/` — LK Growth OS: SEO/CRO/GEO, GA4/GSC/GMC, PageSpeed, SERP, reviews e paid/influencer signals; runtime profile `/opt/data/profiles/lk-growth`, bot `@LKGrowth_HermesBot`.
 - `areas/lk/sub-areas/crm/` — cross-sell, leads esfriando, RFM, outcomes e relacionamento.
 - `areas/lk/sub-areas/trafego-pago/` — hipótese, criativo, teste, dado e learning.
 - `areas/lk/sub-areas/ecommerce/` — Shopify, catálogo, pedidos e estoque.

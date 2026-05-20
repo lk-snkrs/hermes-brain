@@ -188,3 +188,62 @@ Somente após aprovação explícita:
 - Documento criado: 2026-05-16.
 - Estado: `design_aprovado_por_intenção`, `execução_externa_bloqueada`, `protótipo_local_próximo`.
 - Ação externa executada: nenhuma.
+
+## Decisão — ajustes validados no formato dos relatórios LK
+
+Data: 2026-05-17  
+Empresa/área: LK OS / relatórios comerciais  
+Fonte: conversa Lucas + validação local dos previews 09h, 16h e 19h30.
+
+### Fato
+
+Durante a revisão dos relatórios, Lucas corrigiu e consolidou regras de formato e conteúdo que devem persistir para próximas versões.
+
+### Decisão
+
+- A leitura principal deve começar pelo dia/período do relatório e só depois trazer o contexto mensal.
+- Vendedores devem aparecer tanto no contexto do dia/período quanto no mensal quando houver atribuição POS confiável.
+- O relatório 19h30 é exclusivo da loja física/POS; não deve misturar e-commerce.
+- Share mensal de marcas deve aparecer em % de receita e valor BRL.
+- Categorias/marcas estranhas devem ser agrupadas como `Outras marcas` para não poluir a leitura executiva.
+- E-mail/newsletter deve gerar subject, preheader e preheader oculto no HTML.
+- Decisões estratégicas/next steps continuam indo para Lucas no Telegram para aprovação, não para grupo/externo.
+
+### Aplicação operacional
+
+O gerador e as skills LK devem seguir essas regras como padrão. Se uma nova versão dos relatórios for criada, estes pontos são requisitos, não sugestões.
+
+### Guardrails
+
+- Preview/local/documentação permitido.
+- Envio real por WhatsApp/e-mail ou ativação de cron externo continua bloqueado até Lucas aprovar canal, destinatário, payload e cadência no turno atual.
+
+### Artefatos atualizados
+
+- `areas/operacoes/prds/company-decision-memory-prd-2026-05-17.md`
+- `areas/operacoes/rotinas/company-decision-memory.md`
+- `skills/lk-operational-intelligence/SKILL.md`
+- `skills/lk-report-delivery/SKILL.md`
+
+## Decisão — separar performance loja vs site com variação
+
+Data: 2026-05-18  
+Empresa/área: LK OS / relatórios comerciais  
+Fonte: correção direta de Lucas no Telegram.
+
+### Fato
+
+Lucas explicou que uma queda geral mês contra mês, por exemplo `-20%`, pode mascarar realidades opostas: a loja física pode ter se mantido estável enquanto o site/e-commerce caiu. Sem essa separação, o relatório pode orientar foco errado.
+
+### Decisão
+
+Os relatórios LK devem sempre quebrar performance por canal quando houver comparativo:
+
+- **Loja física/POS:** receita, vendas e variação absoluta + percentual contra a janela comparável.
+- **Site/e-commerce:** receita, vendas e variação absoluta + percentual contra a janela comparável.
+- **Diagnóstico canal:** indicar se a pressão está concentrada no site/e-commerce, na loja física ou equilibrada.
+- No bloco GA4, separar **performance do site** de interesse: sessões/views/usuários com variação contra período comparável.
+
+### Aplicação operacional
+
+No gerador `lk_os_sales_reports_whatsapp_email_designmd_20260516.py`, `month_performance_lines` e o HTML DesignMD devem mostrar loja vs site no mês contra mês. O 16h deve mostrar loja/site vs ontem no mesmo horário. O 09h deve mostrar loja/site vs anteontem e também GA4 com variação.

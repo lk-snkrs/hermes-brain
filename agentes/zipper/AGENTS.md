@@ -1,5 +1,7 @@
 # AGENTS.md — Agente Zipper Galeria
 
+> Aviso de manutenção: este arquivo é um agente documental legado importado/adaptado. A fonte canônica do Brain atual é `/opt/data/hermes_bruno_ingest/hermes-brain`, não `/root/cerebro-cimino`; não executar comandos antigos de commit/push sem revalidar o repositório e os guardrails atuais.
+
 > Regras operacionais do agente especialista em Zipper Galeria.
 > Workspace: desacoplado — acessa só areas/zipper/ + empresa/contexto/
 

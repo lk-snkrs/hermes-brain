@@ -21,9 +21,12 @@ Regra central:
 
 ### Renan
 
-- Funções confirmadas: comunicação, design e SEO.
+- Funções confirmadas: comunicação, conteúdo, newsletter, design e SEO.
+- Dono operacional: produção de conteúdo LK, incluindo newsletter, blog, pauta orgânica, copy/visual de campanhas, criativos e materiais de SEO/GEO.
 - Recebe/revisa: relatórios de design, conteúdo visual, DesignMD, SEO, blog, organic search, PDP visual, peças Klaviyo/WhatsApp/Instagram quando o assunto for layout/copy/visual.
-- Não assumir sem confirmação: vendas, estoque, compras, financeiro, campanha paga, WhatsApp operacional ou aprovação final de publicação/envio.
+- Autonomia aprovada por Lucas: Renan pode aprovar e enviar conteúdos/newsletters via Klaviyo no escopo de conteúdo da LK, usando preview, Brain e documentação do que foi feito.
+- Fluxo recomendado: trabalhar dentro do `lk-growth`/Growth OS para usar Brain, dados e docs da LK; Renan pode falar direto com o bot LK Growth no Telegram DM, sem necessidade de grupo; registrar pauta, fontes, briefing, versão final, data, canal, aprovação/envio e resultado esperado no Brain antes/depois da publicação.
+- Não assumir sem confirmação: vendas, estoque, compras, financeiro, campanha paga, WhatsApp operacional, preço, Shopify/theme/produto ou publicações fora de Klaviyo/conteúdo.
 - Contato registrado no Brain: ver `memories/lk.md`; não duplicar dados de contato nesta matriz.
 
 ### Júlio

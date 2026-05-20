@@ -1,6 +1,6 @@
 # Zipper Supabase — Auditoria Read-only para PRD
 
-Atualizado: 2026-05-15T22:21:09.888619+00:00
+Atualizado: 2026-05-18T15:18:38.741362+00:00
 
 ## Escopo e segurança
 
@@ -20,7 +20,7 @@ Atualizado: 2026-05-15T22:21:09.888619+00:00
 
 #### `vendas_tango`
 
-- Linhas estimadas: `2100` (status 206, sample 206)
+- Linhas estimadas: `2102` (status 206, sample 206)
 - Colunas detectadas (18): `id, created_at, pedido_id, pedido_data, pedido_origem, pedido_evento, cliente_id, cliente_nome, cliente_bairro, cliente_cidade, cliente_uf, cliente_pais, artista_nome, valor_obra_final, acervo_id, deal_name, email, whatsapp`
 
 - money: `valor_obra_final`
@@ -125,15 +125,15 @@ Atualizado: 2026-05-15T22:21:09.888619+00:00
 
 - other: `id, platform, external_id, content_type, url, thumbnail_url, caption, published_at, raw_payload, pulled_at`
 - Exemplos não sensíveis de formato:
-  - `id`: `6beeb8f6-41f2-45e1-992d-a307d42887a2`
+  - `id`: `98457dff-2600-48ef-9b09-caa81367fe98`
   - `platform`: `mailerlite`
-  - `external_id`: `172233469544367218`
+  - `external_id`: `168270261154481670`
   - `content_type`: `newsletter_campaign`
-  - `caption`: `News kachani e julia v2
-Sábado | Conversa com Julia Pereira e Bianca Dias`
-  - `published_at`: `2025-12-01T21:11:08+00:00`
-  - `raw_payload`: `{'id': '172233469544367218', 'can': {'copy': True, 'send': True, 'delete': Tr...`
-  - `pulled_at`: `2026-05-15T03:06:11.664+00:00`
+  - `caption`: `Aberturas amanhã: Kachani e Julia
+Amanhã: aberturas na Zipper 💥`
+  - `published_at`: `2025-10-15T14:19:31+00:00`
+  - `raw_payload`: `{'id': '168270261154481670', 'can': {'copy': True, 'send': True, 'delete': Tr...`
+  - `pulled_at`: `2026-05-18T03:06:08.876+00:00`
 
 #### `spiti_recebimentos`
 
@@ -180,7 +180,7 @@ Sábado | Conversa com Julia Pereira e Bianca Dias`
 
 #### `content_metrics`
 
-- Linhas estimadas: `705` (status 200, sample 206)
+- Linhas estimadas: `798` (status 200, sample 206)
 - Colunas detectadas (14): `id, content_id, snapshot_date, impressions, reach, views, likes, comments, shares, saves, opens, clicks, unsubscribes, raw`
 
 - dates: `snapshot_date`
@@ -484,7 +484,7 @@ Sábado | Conversa com Julia Pereira e Bianca Dias`
 
 #### `sync_runs`
 
-- Linhas estimadas: `42` (status 200, sample 206)
+- Linhas estimadas: `48` (status 200, sample 206)
 - Colunas detectadas (10): `id, source, started_at, finished_at, items_seen, items_new, items_tagged, status, error_message, notes`
 
 - sensitive_or_identity: `error_message, notes`
@@ -499,7 +499,7 @@ Sábado | Conversa com Julia Pereira e Bianca Dias`
   - `items_tagged`: `9`
   - `status`: `success`
 - Distribuições categóricas amostradas:
-  - `status`: success=42
+  - `status`: success=48
 
 #### `artists`
 
@@ -698,15 +698,15 @@ Sábado | Conversa com Julia Pereira e Bianca Dias`
 
 - other: `id, platform, external_id, content_type, url, thumbnail_url, caption, published_at, raw_payload, pulled_at`
 - Exemplos não sensíveis de formato:
-  - `id`: `6beeb8f6-41f2-45e1-992d-a307d42887a2`
+  - `id`: `98457dff-2600-48ef-9b09-caa81367fe98`
   - `platform`: `mailerlite`
-  - `external_id`: `172233469544367218`
+  - `external_id`: `168270261154481670`
   - `content_type`: `newsletter_campaign`
-  - `caption`: `News kachani e julia v2
-Sábado | Conversa com Julia Pereira e Bianca Dias`
-  - `published_at`: `2025-12-01T21:11:08+00:00`
-  - `raw_payload`: `{'id': '172233469544367218', 'can': {'copy': True, 'send': True, 'delete': Tr...`
-  - `pulled_at`: `2026-05-15T03:06:11.664+00:00`
+  - `caption`: `Aberturas amanhã: Kachani e Julia
+Amanhã: aberturas na Zipper 💥`
+  - `published_at`: `2025-10-15T14:19:31+00:00`
+  - `raw_payload`: `{'id': '168270261154481670', 'can': {'copy': True, 'send': True, 'delete': Tr...`
+  - `pulled_at`: `2026-05-18T03:06:08.876+00:00`
 
 #### `spiti_recebimentos`
 
@@ -753,7 +753,7 @@ Sábado | Conversa com Julia Pereira e Bianca Dias`
 
 #### `content_metrics`
 
-- Linhas estimadas: `705` (status 200, sample 206)
+- Linhas estimadas: `798` (status 200, sample 206)
 - Colunas detectadas (14): `id, content_id, snapshot_date, impressions, reach, views, likes, comments, shares, saves, opens, clicks, unsubscribes, raw`
 
 - dates: `snapshot_date`
@@ -1057,7 +1057,7 @@ Sábado | Conversa com Julia Pereira e Bianca Dias`
 
 #### `sync_runs`
 
-- Linhas estimadas: `42` (status 200, sample 206)
+- Linhas estimadas: `48` (status 200, sample 206)
 - Colunas detectadas (10): `id, source, started_at, finished_at, items_seen, items_new, items_tagged, status, error_message, notes`
 
 - sensitive_or_identity: `error_message, notes`
@@ -1072,7 +1072,7 @@ Sábado | Conversa com Julia Pereira e Bianca Dias`
   - `items_tagged`: `9`
   - `status`: `success`
 - Distribuições categóricas amostradas:
-  - `status`: success=42
+  - `status`: success=48
 
 #### `artists`
 

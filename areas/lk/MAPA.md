@@ -16,6 +16,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `projetos/lk-os-program-to-finish-2026-05-14.md` — mapa de execução para fechar o que foi programado: GMC final, Mission Control refresh, pacote Droper approval-gated, sourcing queue e Loyalty em pending_future.
 - `projetos/lk-os-prd-pending-backlog-2026-05-15.md` — backlog canônico das pendências do PRD após decisão do Lucas: inclui sourcing/Júlio, GMC preço/UI checklist, residual GMC, lead time real, Klaviyo draft, Mission Control escopo/cadência, Loyalty pending_future e correção posterior com lacunas do PRD completo.
 - `projetos/lk-os-prd-full-gap-audit-2026-05-15.md` — auditoria de lacunas contra o PRD inicial/v0.2: Data Quality, Daily/Weekly, Pulso Comercial, CRO, Brand Mix, Paid/Influencer, Content Engine, Trend-to-Blog, Shopify Ops, SEO orgânico, WhatsApp/loja física, Notion schema, Pricing, integrações e Approval/Learning Loop.
+- `projetos/lk-whatsapp-hermes-team-atendimento-prd-2026-05-17.md` — PRD draft para conectar Hermes via wacli aos grupos WhatsApp `LK Team` e `LK Atendimento`, respondendo perguntas LK quando mencionado, com fontes read-only e guardrails contra PII/envio externo/ações produtivas.
 - `rotinas/lk-os-sales-reports-whatsapp-email-designmd-2026-05-16.md` — desenho operacional dos três relatórios recorrentes de vendas solicitados por Lucas: manhã/dia anterior, pulso 16h e fechamento loja 19h30, com WhatsApp + e-mail DesignMD/Klaviyo-like em modo preview/approval-gated antes de qualquer envio externo.
 - `projetos/lk-os-implementation-control.md` — plano mestre vivo de implementação do Projeto LK OS, com fases, definição de pronto, todo-list, próximos passos e frase canônica de retomada: `Seguir Projeto LK OS`.
 
@@ -73,6 +74,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `rotinas/playbook-comando-diario.md` — roteiro executivo para briefing/prioridades LK sem inventar dados.
 - `sub-areas/crm/rotinas/playbook-campanha-crm-aprovada.md` — campanha CRM com segmentação, preview e aprovação Lucas antes de envio.
 - `sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` — primeira campanha P1 CRM/Klaviyo colocada em Draft com lista/template/campanha, pendente de revisão final.
+- `sub-areas/crm/rotinas/playbook-whatsapp-meta-templates-carrinho-checkout-abandonado-2026-05-19.md` — playbook Meta WhatsApp para Crisp/n8n em carrinho/checkout abandonado: templates Marketing, aprovação Meta obrigatória, QA interno e rollout seguro.
 - `sub-areas/crm/rotinas/phase5-next-decision-router-readonly-2026-05-11.md` — próxima decisão Fase 5: P1 Klaviyo Draft, WhatsApp sem repetição automática, P2 preview ou refresh Data Spine.
 
 ## Ferramentas principais

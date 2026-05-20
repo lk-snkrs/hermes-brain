@@ -25,7 +25,10 @@ Grande Mente — Hermes Brain / Hermes COO
   └── Governança / Segurança / Aprovações
 ```
 
-Referência: `empresa/contexto/organograma-operacional-hermes-brain.md`.
+Referências:
+
+- `empresa/contexto/organograma-operacional-hermes-brain.md` — hierarquia da Grande Mente.
+- `empresa/contexto/organograma-agentes-hermes.md` — relação entre camadas de negócio, agentes documentais, runtime profiles e bots.
 
 ## Boot mínimo
 
@@ -60,6 +63,16 @@ Precisa aprovação explícita atual de Lucas:
 - criação de cron automático novo sem cadência/kill criteria aprovados;
 - apagar dados sem backup/rollback;
 - expor ou mover secrets.
+
+## Handoff de agentes especialistas
+
+Regra estrutural aprovada por Lucas em 2026-05-19:
+
+- Profiles/bots especialistas executam no próprio contexto, mas continuam subordinados ao Hermes Central / Grande Mente.
+- Nenhum especialista deve virar uma mente separada com histórico isolado.
+- Trabalho relevante feito em `lk-growth`, Mordomo, SPITI, Zipper ou outro especialista deve gerar handoff para o Hermes Central e/ou registro no Brain.
+- O registro não precisa ser instantâneo em toda tarefa, mas deve existir até o fechamento do dia quando houver decisão, output, envio, approval, receipt, write externo, risco ou aprendizado.
+- Protocolo canônico: `areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md`.
 
 ## Repetição → sistema
 

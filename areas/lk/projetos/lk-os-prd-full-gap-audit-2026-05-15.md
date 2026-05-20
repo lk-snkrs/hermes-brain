@@ -53,7 +53,7 @@ Próximo bloco seguro:
 
 Fonte no PRD: seção 10.
 
-Falta implementar como rotina real.
+Correção Lucas 2026-05-17: o Pulso Comercial já foi feito como artefato/template/dry-run. Não deve mais aparecer como gap de criação. O gap remanescente é decidir se ele vira rotina real/cron com fonte viva, critérios de silêncio e aprovação de envio.
 
 Escopo pendente:
 
@@ -67,7 +67,7 @@ Escopo pendente:
 
 Próximo bloco seguro:
 
-- criar template + dry-run local do Pulso Comercial, sem cron/envio.
+- reconciliar Pulso Comercial existente contra crons/cadência do PRD e preparar proposta de operacionalização, sem criar cron nem enviar mensagem automaticamente.
 
 ### P1 — CRO / conversão 0,13% → 0,20%
 
@@ -113,7 +113,8 @@ Feito parcialmente:
 
 - dicionário influencer/campaign v0.2;
 - ponte Meta/Metricool/GA4/Shopify inicial;
-- regras de Pareto-compatible e Maicon/Marias.
+- regras de Pareto-compatible e Maicon/Marias;
+- correção de governança Lucas 2026-05-17: Pareto cuida de tráfego pago; FHITS cuida de influencers. A camada LK OS deve cruzar sinais, mas preservar essa fronteira operacional.
 
 Ainda falta:
 
@@ -121,7 +122,8 @@ Ainda falta:
 - reconciliação regular de custo pago com receita Shopify compatível;
 - consequência de estoque por campanha/influencer;
 - leitura por criativo aprovado;
-- rotina semanal acionável além do preview inicial.
+- rotina semanal acionável além do preview inicial;
+- visão de Mission Control que mostre Pareto/paid e FHITS/influencers lado a lado, com status, owner e próxima ação segura.
 
 Próximo bloco seguro:
 

@@ -61,6 +61,10 @@ hermes-brain/
 | Perfil de Lucas para o Hermes Geral | `agentes/hermes-geral/USER.md` |
 | Proatividade do Hermes Geral | `agentes/hermes-geral/HEARTBEAT.md` |
 | Organograma da Grande Mente | `empresa/contexto/organograma-operacional-hermes-brain.md` |
+| Organograma de agentes/profiles | `empresa/contexto/organograma-agentes-hermes.md` |
+| Bruno/OpenClaw: segundo cérebro + crons | `areas/operacoes/base-conhecimento/bruno-openclaw-segundo-cerebro-crons-consolidacao-diaria-2026-05-19.md` |
+| BRD: Fechamento Ágil 23h | `areas/operacoes/brds/hermes-brain-fechamento-agil-23h-brd-2026-05-19.md` |
+| Bruno/OpenClaw: agentes → Brain | `areas/operacoes/base-conhecimento/bruno-openclaw-organograma-agentes-e-brain-2026-05-19.md` |
 | Rotinas documentadas | `empresa/rotinas/_index.md` |
 | Skills do Brain | `empresa/skills/_index.md` |
 | Pendências gerais | `empresa/gestao/pendencias.md` |

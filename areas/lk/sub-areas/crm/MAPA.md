@@ -21,6 +21,8 @@ pedido/cliente → segmentação → recomendação → preview Lucas → envio 
 - `rotinas/rfm-semanal.md` — cálculo e relatório RFM.
 - `rotinas/outcomes-tracker.md` — acompanhamento das sugestões do Hermes.
 - `rotinas/playbook-campanha-crm-aprovada.md` — campanha CRM com segmentação, preview e aprovação Lucas antes de envio.
+- `rotinas/playbook-newsletter-klaviyo-lk.md` — produção de newsletter LK no Klaviyo: design, copy, preview, rascunho, aprovação e pós-envio.
+- `rotinas/playbook-whatsapp-meta-templates-carrinho-checkout-abandonado-2026-05-19.md` — playbook para templates WhatsApp Meta via Crisp/n8n: carrinho/checkout abandonado, categorias Marketing, aprovação Meta, QA interno e rollout seguro.
 - `rotinas/klaviyo-p1-draft-campaign-2026-05-11.md` — primeira execução P1 em Klaviyo: lista, import, template e campanha em Draft, sem envio/agendamento.
 - `rotinas/phase5-next-decision-router-readonly-2026-05-11.md` — router de próxima decisão da Fase 5: manter P1 Klaviyo em Draft, bloquear repetição WhatsApp, preparar P2 preview ou refresh Data Spine.
 
