@@ -65,7 +65,7 @@ Antes de commit/push, o script deve:
 4. rodar secret scan nos arquivos permitidos;
 5. stagear somente arquivos permitidos;
 6. rodar secret scan novamente no staged set;
-7. rodar `git diff --cached --check`;
+7. bloquear marcadores de conflito Git (`<<<<<<<`, `=======`, `>>>>>>>`);
 8. criar commit convencional `docs: sync Hermes Brain daily consolidation YYYY-MM-DD`;
 9. executar `git push origin HEAD:<branch-atual>` apenas se `--push` foi passado.
 
