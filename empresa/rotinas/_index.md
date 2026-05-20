@@ -29,6 +29,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Hermes v0.13 Watchdogs no_agent | `areas/operacoes/rotinas/hermes-v013-watchdogs-no-agent.md` | Propostas de watchdogs script-only silenciosos/read-only para Hermes/LK |
 | Kanban LK Growth Ops v0.13 | `areas/operacoes/rotinas/hermes-v013-kanban-lk-growth-ops.md` | Desenho inicial de Mission Control LK em Kanban, sem ativar workers de produção |
 | Hermes Approval Learning Loop | `areas/operacoes/rotinas/hermes-approval-learning-loop.md` | Registro de aprovações/correções de Lucas para virar guardrails, skills e rotinas |
+| Brain Learning Loop Weekly + Priority Routing 2026-05-20 | `areas/operacoes/rotinas/brain-learning-loop-weekly-report-priority-routing-2026-05-20.md` | Relatório semanal executivo do Learning Loop e rubrica para escolher foco principal entre LK, Mission Control, Zipper, SPITI e Mordomo |
 | Hermes Autonomy Ladder Lucas | `areas/operacoes/rotinas/hermes-autonomy-ladder.md` | Matriz A0-A4 de autonomia operacional: executar seguro/read-only, preparar riscos, bloquear externos/destrutivos |
 | Hermes v0.13 Próximas Melhorias | `areas/operacoes/rotinas/hermes-v013-next-improvements-plan-2026-05-10.md` | Plano de melhorias v0.13 classificadas por risco e aprovação necessária |
 | Revisão Semanal Multiempresa | `areas/operacoes/rotinas/revisao-semanal-multiempresa.md` | Revisão executiva LK/Zipper/SPITI/Hermes pelo Hermes Chief of Staff, sem ações externas |

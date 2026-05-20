@@ -1,3 +1,10 @@
+## 2026-05-20 — Learning Loop semanal + roteamento de prioridade
+
+- Ativado cron semanal `f4c499e85eac` / `Lucas Brain weekly Learning Loop report`, segunda-feira 09:15 BRT, para consolidar aprendizados dos relatórios diários das 02h e enviar resumo executivo no Telegram com decisões inline.
+- Refinado cron diário `f5a23dd6a1bd` para usar rubrica explícita de prioridade: foco principal único, evidências, modo por área (LK/Mission Control/Zipper/SPITI/Mordomo), risco de dispersão e próxima ação segura.
+- Documentada rotina `areas/operacoes/rotinas/brain-learning-loop-weekly-report-priority-routing-2026-05-20.md` e indexada em `empresa/rotinas/_index.md`.
+- Guardrails preservados: weekly/daily Learning Loop só escreve Brain/local docs; sem Docker/runtime/gateway/host, source-of-truth, externo, dinheiro, cliente, segredo ou destrutivo.
+
 ## 2026-05-19 — Brain Sync guardrails + painel semanal
 
 - Resolvidos WARNs do health check: criado MAPA de Zipper Programação e indexadas rotinas LK/Mordomo/Operações que estavam fora de `empresa/rotinas/_index.md`.
