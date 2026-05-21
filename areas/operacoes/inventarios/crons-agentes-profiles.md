@@ -1,7 +1,7 @@
 # Inventário vivo — crons, agentes, profiles e projetos
 
-Data-base: 2026-05-19
-Status: **Fase 1A aprovada por Lucas — inventário inicial + teste manual do Fechamento 23h**
+Data-base: 2026-05-20 18:00 UTC
+Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via `cronjob list`/fallback Hermes CLI nesta data**
 Escopo: Hermes Brain / Grande Mente / profiles especialistas / crons Hermes.
 
 ## 1. Princípio
@@ -104,7 +104,7 @@ O fechamento **não** deve virar transcrição de chat.
   - `LK Weekly CEO Review read-only mandatory delivery` — ativo, `origin`.
   - `LK GMC Review read-only mandatory delivery` — pausado.
   - `LK Pulso Comercial 16h read-only delivery` — ativo, `local`.
-  - `LK 09h previous-day sales report external delivery` — ativo, `origin`.
+  - `LK 09h previous-day sales report external delivery` — ativo, `local` após correção de delivery/ruído; entrega externa é feita pelo script, Telegram recebe só exceções quando aplicável.
   - `LK 19h30 physical store close external delivery` — ativo, `local` após correção de Lucas para não enviar recibo/HTML de sucesso no Telegram.
   - `LK weekly influencer sales email` — pausado.
   - `LK SEO/CRO weekly Claude SEO improvement loop` — pausado.
@@ -204,13 +204,45 @@ O fechamento **não** deve virar transcrição de chat.
 
 ## 4. Resumo dos crons atuais por cobertura
 
-Snapshot inicial do `cronjob list`: 22 jobs.
+Snapshot vivo do `/opt/hermes/.venv/bin/hermes cron list --all` em 2026-05-20 18:00 UTC: 26 jobs.
 
-- Ativos/scheduled: 15.
+- Ativos/scheduled: 19.
 - Pausados: 7.
+- Evidência runtime mais recente: tentativa de `cronjob list` seguida de fallback `/opt/hermes/.venv/bin/hermes cron list --all` em 2026-05-20 18:00 UTC.
 - `no_agent`/script-only: maioria dos watchdogs e relatórios operacionais.
 - Entrega `local`: usada para alguns jobs que devem ser silenciosos/Brain-first.
 - Entrega `origin`: ainda usada por vários jobs; deve ser revisada caso o sucesso normal gere ruído para Lucas.
+
+### Atualização Brain Operating Layer — 2026-05-20 17:52 UTC
+
+Evidência runtime: `cronjob list` executado após ativação do Brain Operating Layer.
+
+- Total de jobs: 26.
+- Novos jobs ativos:
+  - `Hermes Brain Operating Layer structural watchdog` — job `d03fa04e1188`, schedule `10 11 * * *`, `no_agent=true`, script `brain_operating_layer_audit.py`, delivery `origin`, silent-OK: stdout vazio não envia mensagem.
+  - `Hermes Brain Runtime Truth Reconciler` — job `2404c0766d33`, schedule `20 11 * * *`, delivery `local`, skills `bruno-openclaw-hermes-brain-adaptation` + `hermes-agent`, workdir `/opt/data/hermes_bruno_ingest/hermes-brain`.
+- Objetivo: reforçar o padrão Bruno/OpenClaw com evidência runtime, receipts, approvals, hot memory, handoffs, skill candidates e reconciliação diária.
+- Guardrail: nenhum dos novos jobs altera Docker/VPS/Traefik, envia campanha, muda Shopify/GMC/Notion/WhatsApp ou acessa secrets; são read-only/local/Brain-first.
+
+### Reconciliação Runtime Truth — 2026-05-20 18:00 UTC
+
+Evidência runtime: tentativa de `cronjob list` neste container retornou `command not found`; fallback canônico disponível usado: `/opt/hermes/.venv/bin/hermes cron list --all`.
+
+Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-20.md`.
+
+- Total de jobs: 26.
+- Ativos: 19.
+- Pausados: 7.
+- `last_status` não-ok: 0 na listagem atual.
+- Erros explícitos de delivery: 0 na listagem atual.
+- Jobs ativos sem `Last run` ainda:
+  - `Lucas Brain weekly Learning Loop report` (`f4c499e85eac`) — ativo, `origin`, semanal; acompanhar após primeira execução.
+  - `Hermes Brain Operating Layer structural watchdog` (`d03fa04e1188`) — ativo, `origin`, novo, sem primeira execução registrada.
+  - `Hermes Brain Runtime Truth Reconciler` (`2404c0766d33`) — ativo, `local`, novo, sem primeira execução registrada.
+- Job pausado sem `Last run`:
+  - `Mordomo: confirmar entrega com Seda Embalagens` (`527ee57b3a6b`) — one-shot pausado/antigo; candidato a limpeza/arquivamento documental futuro.
+- Drift reconciliado neste arquivo: seção 4 ainda dizia `24 jobs / 17 ativos / 7 pausados`; snapshot vivo agora é `26 jobs / 19 ativos / 7 pausados`.
+- Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, sistema externo ou secret foi alterado.
 
 ## 5. Regras de delivery para Fechamento 23h
 

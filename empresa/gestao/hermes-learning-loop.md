@@ -225,6 +225,36 @@ Onde aplicar: Daily Sales Brief 07h, Pulso Comercial, Paid Traffic & Influencer 
 Próximo refinamento: padronizar UTM/cupom por influencer e criar confiança da atribuição: alta/média/baixa.
 ```
 
+## Regra anti-perda em contexto compactado
+
+Feedback crítico de Lucas em 2026-05-20: decisões aprovadas em chat, especialmente copy/tom/fluxo de contato com cliente, não podem depender da memória temporária da conversa. Compressão/compaction pode preservar o resumo geral e ainda perder o texto exato aprovado ou a razão da aprovação.
+
+Regra operacional:
+
+- Se Lucas aprovar uma mensagem, sequência, tom, oferta, condição, cadência ou fluxo que possa ser enviado para cliente/lead/fornecedor/coletor, registrar imediatamente em artefato durável antes de continuar.
+- O registro precisa guardar: texto aprovado ou path do artefato, contexto, canal, destinatário/segmento, status de aprovação, limites de uso, tom aprovado, data e próxima ação permitida.
+- Para CRM/carrinho abandonado/Klaviyo/WhatsApp/e-mail, usar um ledger ou arquivo de campanha/fluxo no Brain; não confiar em “foi aprovado acima no chat”.
+- Se a conversa for compactada ou retomada depois, consultar o ledger/Brain antes de continuar o fluxo.
+- Se não houver registro durável, tratar como aprovação não comprovada: reconstruir preview e pedir confirmação antes de envio externo.
+
+Template mínimo:
+
+```text
+Decision ID:
+Data:
+Área/empresa:
+Fluxo/campanha:
+Canal:
+Segmento/destinatário:
+Copy aprovada:
+Tom aprovado:
+O que Lucas aprovou exatamente:
+Limites/guardrails:
+Pode enviar agora? sim/não — aprovação atual necessária se externo
+Artefato/path:
+Status:
+```
+
 ## Approval UX recomendada
 
 Todo preview operacional deveria permitir, mesmo que manualmente no início:

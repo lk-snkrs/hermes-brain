@@ -1,5 +1,10 @@
-## 2026-05-20 — Learning Loop semanal + roteamento de prioridade
+## 2026-05-20 — Daily Intelligence Loop saudável + Learning Loop semanal
 
+- Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-20.md`.
+- Host observability salvo em `reports/hermes-host-docker-observability-2026-05-20.json`: containers esperados `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)`, helper com `alerts: []`.
+- Confirmado estado vivo: 24 jobs totais, 17 ativos, 7 pausados; watchdogs runtime/compressão/Mordomo/LK Growth/SPITI testados em silent-OK; Brain Health `reports/brain-health-check-2026-05-20-daily-loop.json` com FAIL=0/WARN=0.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 segue como release pública mais recente; nenhum runtime swap/restart executado.
+- Atualizado inventário `areas/operacoes/inventarios/crons-agentes-profiles.md` para snapshot 2026-05-20.
 - Ativado cron semanal `f4c499e85eac` / `Lucas Brain weekly Learning Loop report`, segunda-feira 09:15 BRT, para consolidar aprendizados dos relatórios diários das 02h e enviar resumo executivo no Telegram com decisões inline.
 - Refinado cron diário `f5a23dd6a1bd` para usar rubrica explícita de prioridade: foco principal único, evidências, modo por área (LK/Mission Control/Zipper/SPITI/Mordomo), risco de dispersão e próxima ação segura.
 - Documentada rotina `areas/operacoes/rotinas/brain-learning-loop-weekly-report-priority-routing-2026-05-20.md` e indexada em `empresa/rotinas/_index.md`.

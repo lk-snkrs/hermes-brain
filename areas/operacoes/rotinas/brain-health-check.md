@@ -21,9 +21,10 @@ python3 scripts/brain_health_check.py --json reports/brain-health-check-YYYY-MM-
 - Token-shaped secrets versionados, incluindo Doppler, Shopify, Supabase PAT, GitHub classic/fine-grained, OpenAI, Mem0, Telegram, FAL, W&B, Tinker e Google OAuth/refresh-token.
 - Links markdown relativos quebrados.
 - Anchors markdown internos quebrados quando o link aponta para `#secao` em arquivo `.md`.
-- Arquivos estruturais obrigatórios do Brain: README, START-HERE, STARTUP, PROTOCOLS, TOOLS, ARCHITECTURE, changelog, roadmap, índices, memória e segurança.
+- Arquivos estruturais obrigatórios do Brain: README, START-HERE, STARTUP, PROTOCOLS, TOOLS, ARCHITECTURE, changelog, roadmap, índices, memória, `memories/MAPA.md`, `memories/hot.md` e segurança.
 - Arquivos obrigatórios por agente: `SOUL.md`, `AGENTS.md`, `TOOLS.md`, `USER.md`, `MEMORY.md`, `HEARTBEAT.md`.
 - `MAPA.md` obrigatório em cada área e subárea.
+- Pastas `areas/**/decisions/*.md` precisam estar navegáveis a partir do `MAPA.md` local da área/subárea.
 - Rotinas em `areas/**/rotinas/*.md` ausentes de `empresa/rotinas/_index.md`.
 - Skills canônicas ausentes de `empresa/skills/_index.md`.
 - Skills de navegação por área que apontam para skill canônica inexistente.

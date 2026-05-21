@@ -27,8 +27,27 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/hermes-release-watch.md` — monitoramento de releases Hermes Agent e avaliação de melhorias.
 - `rotinas/hermes-runtime-observability.md` — observabilidade read-only do runtime Hermes.
 - `rotinas/company-decision-memory.md` — protocolo para salvar toda decisão empresarial na memória viva da empresa correspondente.
+- `rotinas/protocolo-registro-decisoes-aprovadas-contexto-compactado.md` — regra anti-perda para registrar aprovações de copy/tom/fluxo antes que contexto de chat seja compactado.
+- `rotinas/protocolo-handoff-agentes-especialistas.md` — mecanismo de handoff para impedir que especialistas virem ilhas de dados e garantir subida de decisões/receipts ao Hermes Central.
+- `rotinas/auditoria-handoff-especialistas.md` — auditoria diária/semanal para confirmar que profiles/bots/especialistas deixaram receipt/handoff no Brain.
+- `rotinas/memoria-hot-daily-bruno.md` — rotina da camada `memories/hot.md` + `memories/daily/YYYY-MM-DD.md` no padrão Bruno/OpenClaw.
+- `rotinas/auditoria-skills-status-risco.md` — auditoria de skills com owner/status/risco/última revisão.
 - `rotinas/fechamento-agil-23h.md` — rotina ativa do Fechamento Ágil 23h: consolidação diária Brain-first, saída local em `reports/daily-consolidation/YYYY-MM-DD.md`, sem Telegram de sucesso normal.
 - `rotinas/painel-semanal-brain.md` — painel semanal do que entrou no Brain, bloqueios corretos do Brain Sync e rotinas/MAPAs a promover ou limpar.
+
+- `rotinas/brain-operating-layer.md` — camada Hermes-native que transforma o padrão Bruno/OpenClaw em operação viva com receipts, approvals, runtime truth e watchdogs.
+- `rotinas/brain-steward-daily.md` — steward diário silent-OK para daily/hot/receipts/decisões/handoffs/skills.
+- `rotinas/runtime-truth-reconciler.md` — reconciliação entre documentação e runtime real de crons/profiles/bots.
+- `rotinas/customer-facing-decision-guard.md` — guard para copy/tom/fluxo/canal/promessa/oferta/customer-facing.
+- `rotinas/hot-memory-compiler.md` — compilação segura do `memories/hot.md` a partir de artefatos recentes.
+- `rotinas/skill-promotion-engine.md` — promoção de aprendizados recorrentes para drafts/skills verificados.
+- `rotinas/approval-ledger.md` — livro-razão de aprovações/correções/autonomia.
+- `rotinas/webhooks-to-brain.md` — padrão receipt-first para eventos e webhooks.
+- `rotinas/voice-to-brain.md` — áudio Telegram para Brain com confirmação em casos críticos.
+- `rotinas/brain-diff-digest.md` — digest pré-sync de alterações, riscos e bloqueios.
+- `rotinas/source-confidence.md` — classificação de confiabilidade de fonte.
+- `rotinas/mission-control-brain-cockpit.md` — Mission Control como cockpit/decision inbox, não fonte de verdade paralela.
+- `rotinas/semantic-recovery-session-search.md` — recuperar sessões antigas e promover achados duráveis ao Brain.
 
 ## Templates operacionais
 
@@ -38,6 +57,14 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `templates/nova-integracao.md` — checklist antes de conectar/documentar ferramenta nova.
 - `templates/novo-canal-agente.md` — decisão antes de criar canal, agente permanente, subagent ou cron.
 - `templates/delivery-summary.md` — resumo padrão de entrega com verificações, não alterações e próximos passos.
+- `templates/decisao-customer-facing.md` — registro obrigatório de copy, tom, fluxo, canal, segmento ou oferta aprovada para comunicação externa/customer-facing.
+
+- `templates/receipt-operacional.md` — receipt universal para execução relevante, handoff, cron, webhook e especialista.
+- `templates/approval-ledger-entry.md` — registro de aprovação/correção/autonomia concedida por Lucas.
+- `templates/source-confidence.md` — bloco de confiabilidade de fonte: runtime-verificado, primária, secundária, inferido ou não-verificado.
+- `templates/webhook-to-brain-event.md` — receipt para evento/webhook/API/email/WhatsApp antes de qualquer write externo.
+- `templates/voice-to-brain-capture.md` — captura de áudio Telegram para daily/hot/decisão/pendência com confirmação em casos críticos.
+- `templates/skill-promotion-candidate.md` — rascunho de procedimento candidato a skill.
 
 ## Projetos
 
@@ -47,6 +74,8 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `projetos/hermes-brain-improvement-system.md` — sistema contínuo para transformar material externo em melhorias seguras do Brain.
 - `projetos/mission-control-prd.md` — PRD do Mission Control Hermes read-only, começando como relatório/protocolo seguro.
 - `projetos/mission-control-hermes-native-prd-2026-05-17.md` — PRD completo do novo Mission Control Hermes-native / COO Cockpit construído do zero, abandonando Tenacity OS como base e aproveitando aprendizados do Hermes Workspace com guardrails multiempresa.
+
+- `brds/hermes-brain-operating-layer-brd-2026-05-20.md` — BRD da camada Hermes-native sobre o ecossistema Bruno: receipts, approvals, runtime truth, steward, webhooks e voice-to-brain.
 
 ## Reports
 
@@ -59,6 +88,12 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `../../reports/revisao-operacional-multiempresa-2026-05-09.md` — primeira revisão operacional multiempresa sob demanda, sem dados vivos ou produção.
 - `../../reports/daily-consolidation/2026-05-19.md` — teste manual Fase 1A do Fechamento Ágil 23h, sem cron recorrente e sem writes externos.
 - `../../reports/brain-weekly-panel/brain-weekly-panel-2026-05-19.md` — primeiro painel semanal do Brain após ativação do Brain Sync seguro.
+- `../../reports/governance/approval-memory-audit-2026-05-20.md` — auditoria Bruno/OpenClaw de registro de aprovações, copy e memória operacional.
+- `../../reports/governance/customer-facing-decision-template-healthcheck-2026-05-20.md` — evidência da criação do template obrigatório de decisão customer-facing e do guard de health check.
+- `../../reports/governance/bruno-openclaw-gap-closure-2026-05-20.md` — fechamento das lacunas Bruno/OpenClaw restantes: hot/current, daily, handoff, runtime e skills.
+
+- `../../reports/governance/hermes-brain-operating-layer-feature-audit-2026-05-20.md` — auditoria das 15 features Hermes aplicáveis ao ecossistema Bruno e status já faz/não faz/fortalecido.
+- `../../reports/governance/hermes-brain-operating-layer-implementation-2026-05-20.md` — registro da implementação documental + automação read-only do Brain Operating Layer.
 
 ## Guardrails
 

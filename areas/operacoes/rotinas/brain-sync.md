@@ -42,6 +42,7 @@ O script só pode stagear arquivos em allowlist:
 - `reports/daily-consolidation/**/*.md` e JSONs de fechamento, se existirem;
 - `reports/hermes-continuous-improvement/**/*.md`;
 - `reports/brain-weekly-panel/**/*.md`;
+- `reports/governance/**/*.md` — relatórios curados de governança/auditoria que precisam sobreviver à compactação;
 - `reports/brain-health-check-*.json`.
 
 ## 4. Escopo proibido
@@ -65,6 +66,7 @@ Relatórios só entram no Brain Sync automático quando viram documentação exe
 - `reports/daily-consolidation/*.md` — fechamento diário, curado e sem dados brutos sensíveis;
 - `reports/brain-health-check-*.json` — evidência de saúde do Brain;
 - `reports/hermes-continuous-improvement/*.md` — melhorias do Hermes já resumidas;
+- `reports/governance/*.md` — auditorias/relatórios curados de governança, memória, decisões e guardrails;
 - relatórios `.md` promovidos para `areas/**/rotinas/`, `areas/**/reports/` ou `areas/**/contexto/` com síntese, fontes, guardrails e não-ações.
 
 **Devem ficar bloqueados no push automático:**

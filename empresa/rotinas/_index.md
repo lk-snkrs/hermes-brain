@@ -17,9 +17,26 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Revisão Operacional Multiempresa | `areas/operacoes/rotinas/revisao-operacional-multiempresa.md` | Leitura executiva sob demanda de LK, Zipper, SPITI e Operações usando Brain versionado |
 | Higiene de Memória e Pendências | `areas/operacoes/rotinas/memory-hygiene-pendencias.md` | Organiza pendências, decisões, lições e memória durável sem misturar log de sessão |
 | Memória de Decisões por Empresa | `areas/operacoes/rotinas/company-decision-memory.md` | Protocolo para salvar decisões empresariais na memória viva da empresa/área correta e atualizar skills quando muda comportamento |
+| Protocolo Registro Decisões Aprovadas Pós-Compactação | `areas/operacoes/rotinas/protocolo-registro-decisoes-aprovadas-contexto-compactado.md` | Regra anti-perda para registrar aprovações de copy/tom/fluxo antes que contexto de chat seja compactado |
 | Fechamento Ágil 23h | `areas/operacoes/rotinas/fechamento-agil-23h.md` | Consolidação diária Brain-first às 23h BRT, saída local em `reports/daily-consolidation/YYYY-MM-DD.md`, sem Telegram de sucesso normal |
 | Painel Semanal do Brain | `areas/operacoes/rotinas/painel-semanal-brain.md` | Relatório semanal do que entrou no Brain, o que ficou bloqueado pelo Brain Sync e quais rotinas precisam promoção/limpeza |
 | Protocolo Handoff Agentes Especialistas | `areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md` | Regra para especialistas reportarem decisões, receipts e handoffs ao Hermes Central/Brain |
+| Auditoria Handoff Especialistas | `areas/operacoes/rotinas/auditoria-handoff-especialistas.md` | Checklist diário/semanal para verificar se profiles/bots/especialistas deixaram receipt/handoff no Brain e não viraram ilhas de dados |
+| Memória Hot/Daily Bruno | `areas/operacoes/rotinas/memoria-hot-daily-bruno.md` | Camada `memories/hot.md` e `memories/daily/YYYY-MM-DD.md` para sobreviver a compactação e reinício de sessão |
+| Auditoria Skills Status Risco | `areas/operacoes/rotinas/auditoria-skills-status-risco.md` | Rotina para revisar skills com owner lógico, status, risco, última revisão e falhas conhecidas |
+| Brain Operating Layer | `areas/operacoes/rotinas/brain-operating-layer.md` | Camada Hermes-native para receipts, approvals, runtime truth, hot memory e watchdogs sobre o padrão Bruno/OpenClaw |
+| Brain Steward Diário | `areas/operacoes/rotinas/brain-steward-daily.md` | Auditoria silent-OK de daily/hot/receipts/decisões/handoffs/skills |
+| Runtime Truth Reconciler | `areas/operacoes/rotinas/runtime-truth-reconciler.md` | Reconcilia inventário/documentação com cron/profile/bot runtime real |
+| Customer-Facing Decision Guard | `areas/operacoes/rotinas/customer-facing-decision-guard.md` | Garante registro durável de copy, tom, canal, promessa, oferta e fluxo customer-facing |
+| Hot Memory Compiler | `areas/operacoes/rotinas/hot-memory-compiler.md` | Mantém `memories/hot.md` como snapshot operacional curado |
+| Skill Promotion Engine | `areas/operacoes/rotinas/skill-promotion-engine.md` | Detecta procedimentos repetíveis e cria candidatos a skill |
+| Approval Ledger | `areas/operacoes/rotinas/approval-ledger.md` | Livro-razão de aprovações, correções e autonomia concedida por Lucas |
+| Webhooks/Eventos → Brain | `areas/operacoes/rotinas/webhooks-to-brain.md` | Eventos externos viram receipts/read-only antes de qualquer write |
+| Voice-to-Brain | `areas/operacoes/rotinas/voice-to-brain.md` | Áudio Telegram vira daily/hot/decisão/pendência com confirmação quando crítico |
+| Brain Diff Digest | `areas/operacoes/rotinas/brain-diff-digest.md` | Digest pré-sync de mudanças, riscos, secrets e escopo versionável |
+| Source Confidence | `areas/operacoes/rotinas/source-confidence.md` | Classificação de confiabilidade em decisões, receipts e reports |
+| Mission Control Brain Cockpit | `areas/operacoes/rotinas/mission-control-brain-cockpit.md` | Mission Control como cockpit sobre o Brain, não cérebro paralelo |
+| Session Search + Semantic Recovery | `areas/operacoes/rotinas/semantic-recovery-session-search.md` | Recupera conversas antigas e promove achados duráveis ao Brain |
 | Mordomo Email/WhatsApp Intake Correction 2026-05-18 | `areas/operacoes/rotinas/mordomo-email-whatsapp-intake-correction-2026-05-18.md` | Correção do intake global do Mordomo com classificação multiempresa e guardrails de resposta |
 | Mordomo Global Follow-up Engine | `areas/operacoes/rotinas/mordomo-global-followup-engine-2026-05-18.md` | Motor de follow-up do Mordomo com auto-envio restrito a casos simples/verificados e kill switch |
 | Mordomo PRD Implementation 1/3/5/6 | `areas/operacoes/rotinas/mordomo-prd-implementation-1-3-5-6-2026-05-18.md` | Registro de implementação do Mordomo: calendar watcher, intake, Tidio e entregas sem externalização indevida |

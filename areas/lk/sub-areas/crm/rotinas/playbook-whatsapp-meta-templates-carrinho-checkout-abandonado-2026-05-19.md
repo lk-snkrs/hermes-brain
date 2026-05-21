@@ -99,9 +99,11 @@ Tom deve ser de último toque consultivo e sem pressão, mas continua sendo recu
 - Não enviar se o checkout já foi pago/concluído.
 - Não enviar sem telefone válido/opt-in.
 
-## Copy aprovada para avaliação Meta
+## Copy canônica para avaliação Meta
 
-Prioridade máxima: o texto deve parecer atendimento humano da LK, não automação agressiva. A sequência deve recuperar intenção de compra sem prometer estoque/prazo e sem pressionar.
+Prioridade máxima: usar a decisão viva em `../decisions/2026-05-20-checkout-abandonado-copy-canonica.md` como fonte de verdade antes de editar template Meta/Crisp/n8n. Se houver conflito entre este playbook e a decisão viva, a decisão viva prevalece.
+
+A sequência deve parecer atendimento humano da LK, não automação agressiva. Deve recuperar intenção de compra sem prometer estoque/prazo e sem pressionar.
 
 ### Template 30min — principal, sem desconto
 
@@ -115,9 +117,9 @@ Componentes:
 - Body:
 
 ```text
-Oi {{1}}, aqui é da LK. Vi que você estava olhando {{2}} e seu checkout ficou salvo por aqui.
+Oi {{1}}, aqui é da LK. Vi que você estava olhando {{2}} e deixamos seu checkout salvo por aqui.
 
-Se quiser, posso te ajudar com numeração, autenticidade ou finalizar com segurança pelo atendimento.
+Na LK, todos os produtos têm garantia de originalidade. Se quiser, nosso atendimento pode te ajudar com a numeração e finalizar tudo com segurança.
 ```
 
 Variáveis:
@@ -128,7 +130,7 @@ Variáveis:
 Botão:
 
 - Tipo: URL.
-- Texto: `Voltar ao checkout`.
+- Texto: `Finalizar compra`
 - URL dinâmica: link de recuperação do checkout.
 
 Observação: se a Meta exigir variável no botão como sufixo, o n8n deve enviar apenas o token/sufixo esperado pelo template aprovado.
@@ -137,19 +139,20 @@ Observação: se a Meta exigir variável no botão como sufixo, o n8n deve envia
 
 Nome sugerido: `lk_checkout_abandonado_24h`
 Categoria: Marketing
-Objetivo: segundo toque, ainda sem desconto, reforçando atendimento humano.
+Objetivo: segundo toque, ainda sem desconto, reforçando atendimento humano e sem repetir o território “finalizar com segurança” do T1.
 
 Body:
 
 ```text
-Oi {{1}}, passando para avisar que seu checkout da LK ainda está salvo.
+Oi {{1}}, tudo bem?
 
-Se ainda fizer sentido seguir com {{2}}, posso te ajudar pelo atendimento e confirmar os detalhes antes da compra.
+Passando só para saber se ficou alguma dúvida sobre {{2}}. Se quiser, nosso atendimento pode te ajudar com numeração, detalhes do produto ou retomar seu checkout salvo.
 ```
 
 Botão:
 
-- Texto preferencial: `Continuar checkout`.
+- Texto preferencial: `Finalizar compra`
+- Header: imagem do produto quando o template/canal suportar `HEADER IMAGE`.
 
 ### Template 24h — alternativa com cupom, usar só com aprovação comercial
 
