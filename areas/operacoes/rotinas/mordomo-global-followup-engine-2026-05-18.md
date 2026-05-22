@@ -1,7 +1,7 @@
 # Rotina — Mordomo Global Follow-up Engine
 
-Atualizado: 2026-05-19
-Status: v0.2 — follow-up automático de cliente aprovado e ativado com guardrails
+Atualizado: 2026-05-21
+Status: v0.3 — follow-up automático de cliente aprovado com Autonomy Registry, Decision Inbox, Contact Profiles e Learning Loop
 
 ## Decisão operacional
 
@@ -101,3 +101,74 @@ Bloqueios continuam automáticos para preço, disponibilidade, reserva, negocia�
 ## Próxima melhoria
 
 Expandir a camada de `known answers` para consultar PDFs/propostas/artistas/obras por fonte estruturada antes de responder automaticamente. Até essa camada estar completa, respostas automáticas ficam restritas ao que o runtime consegue verificar com segurança no histórico/política; casos materiais viram bloqueio com rascunho.
+
+## Known answers v1
+
+A camada de known answers é fonte-grounded e não é uma autorização de envio.
+
+### Escopo atual
+
+- Contexto suportado: Zipper.
+- Fonte local estruturada: `/opt/data/zipper_artist_pdfs/manifest.json`.
+- Unidade de conhecimento: artista/PDF/seleção comercial validada; não indexar nem depender de nomes/títulos de obras.
+- Pode confirmar internamente que existe PDF comercial/seleção validada de um artista.
+- Pode anexar ao Decision Packet o status, risco, filename e hash prefix do PDF.
+
+### Limites obrigatórios
+
+- Manifest/PDF de artista **não** é fonte oficial para preço, disponibilidade específica, reserva, pagamento, desconto, dimensão, frete ou condição.
+- Perguntas materiais viram `blocked_material_question`, risco A3, `allow_external_send=false`.
+- Artista/PDF desconhecido vira `insufficient_source`; não inventar.
+- Mesmo quando `answerable_draft`, o resolver retorna draft/preview e `allow_external_send=false`; envio externo continua nas regras de autonomia e aprovação.
+
+### Integração runtime
+
+- Função: `resolve_known_answer(...)` em `/opt/data/profiles/mordomo/scripts/mordomo_whatsapp_global_watch.py`.
+- Ingest automático local-only: `/opt/data/profiles/mordomo/scripts/zpr_artist_pdf_local_ingest.py` roda a cada 30 minutos via cron `Zipper artist PDFs local-only known-answer ingest`.
+- O ingest automático lê apenas `/opt/data/profiles/mordomo/cache/documents`, copia PDFs comerciais para `/opt/data/zipper_artist_pdfs/` e atualiza o manifest local; não lê Doppler, não chama Supabase e não faz envio externo.
+- Casos de obra esgotada/alternativas anexam `known_answer` no metadata do Strategy quando o cliente responde ou traz pergunta material.
+- `due_followup_alert(...)` exibe o known answer no alerta para Lucas, sem enviar WhatsApp/e-mail.
+- Regressão: `/opt/data/profiles/mordomo/scripts/test_mordomo_whatsapp_filters.py` cobre PDF disponível, pergunta de preço/disponibilidade bloqueada e artista sem fonte.
+- Regressão do ingest: `/opt/data/profiles/mordomo/scripts/test_zpr_artist_pdf_local_ingest.py` cobre local-only, dedupe por hash, inferência de artista e zero escrita externa.
+
+## Checkpoint de aprendizado operacional
+
+Toda correção de Lucas sobre o Mordomo deve ser classificada no mesmo ciclo, para não ficar apenas no chat.
+
+### Destinos por tipo de correção
+
+1. **Regra durável de comportamento**
+   - Atualizar memória compacta quando for uma preferência ou regra transversal que reduz repetição futura.
+   - Atualizar esta rotina ou PRD/KB no Brain quando for regra operacional.
+   - Atualizar skill relevante quando a regra precisa orientar execuções futuras.
+
+2. **Regra de empresa ou contexto comercial**
+   - Salvar no Brain da empresa correta: Zipper, SPITI, LK ou Operações.
+   - Não misturar dados de uma empresa em outra.
+   - Se envolver CRM/follow-up, refletir no estado local ou banco correto.
+
+3. **Regra de autonomia**
+   - Atualizar `mordomo_autonomy_registry.json` para classe/risco/envio permitido.
+   - Atualizar `mordomo_autonomy_policy.json` apenas se o escopo global mudar.
+   - Rodar `mordomo_autonomy_policy_audit.py` e exigir `contradictions_count = 0`.
+
+4. **Correção de contato/tom/preferência**
+   - Atualizar Contact Profile por hash do contato, nunca dump bruto de JID/conversa.
+   - Botões `ignore`/`silence` bloqueiam a classe para aquele contato e removem allowance equivalente.
+   - Botão `draft` vira preferência `preview_only`; não autoriza envio.
+   - Botão `remind9` vira preferência de pendência humana; não autoriza envio.
+   - Uma resposta manual de Lucas é exemplo de tom, não autorização ampla.
+
+5. **Correção de fila/CRM**
+   - Atualizar `mordomo_followup_queue.json` e sincronizar SQLite local.
+   - Se for Zipper/SPITI/LK com fonte oficial, espelhar no CRM/source-of-truth correto quando a integração estiver aprovada.
+   - Sempre preservar status aberto quando a correção indicar que ainda há oportunidade, como obra esgotada que deve oferecer alternativas.
+
+### Checklist obrigatório antes de encerrar uma correção
+
+- [ ] A regra foi classificada: memória, Brain, skill, registry, Contact Profile, CRM/fila ou backlog.
+- [ ] Nenhum envio externo foi feito sem aprovação atual, salvo subfluxo estreito já autorizado.
+- [ ] Se houve mudança de autonomia, `mordomo_autonomy_policy_audit.py` passou.
+- [ ] Se houve mudança em fila/snapshot, `mordomo_mission_control_snapshot.py` foi regenerado.
+- [ ] Regressão local cobre o erro, quando aplicável.
+- [ ] O plano/backlog registra o que mudou e o que ainda falta.

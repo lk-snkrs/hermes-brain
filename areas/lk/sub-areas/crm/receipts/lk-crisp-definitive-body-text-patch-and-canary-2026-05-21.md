@@ -2,83 +2,119 @@
 
 ## Contexto
 
-Lucas autorizou seguir após diagnóstico de que mensagens via Crisp devem aparecer na Inbox. Objetivo: alinhar o payload do checkout abandonado LK com a documentação Crisp para `crisp_options.type = "text"`, mantendo o shape híbrido LK que já havia funcionado.
+Lucas autorizou seguir após diagnóstico de que mensagens via Crisp devem aparecer na Inbox. Objetivo: alinhar o payload do workflow ativo com o padrão documentado pela Crisp, preservando o shape híbrido LK que já havia funcionado em teste texto.
 
-## Ações executadas
+## Patch aplicado
 
-### 1. Snapshot antes de write
+Workflow n8n:
 
-- Workflow: `kWQbmEMuvdipcGjd`
+- ID: `kWQbmEMuvdipcGjd`
 - Nome: `LK - Checkout Abandonado 30min/24h/72h Polling GraphQL - Crisp (ATIVO)`
-- Snapshot raw local, fora do Brain público: `/opt/data/hermes_bruno_ingest/n8n_snapshots/kWQbmEMuvdipcGjd_pre_crisp_body_component_text_20260521T015921Z.json`
 
-### 2. Patch no n8n
+Snapshot rollback criado antes do patch:
 
-Node alterado: `Preparar payload Crisp`.
+- `/opt/data/hermes_bruno_ingest/n8n_snapshots/kWQbmEMuvdipcGjd_pre_crisp_body_component_text_20260521T015921Z.json`
 
-Antes:
+Alteração no node `Preparar payload Crisp`:
 
-```js
-{ type: 'BODY', parameters: bodyParams }
-```
+- Antes, componente `BODY` do template era montado assim:
+  - `{ type: 'BODY', parameters: bodyParams }`
+- Depois:
+  - `{ type: 'BODY', parameters: bodyParams, text: fallbackText }`
 
-Depois:
+Mantido:
 
-```js
-{ type: 'BODY', parameters: bodyParams, text: fallbackText }
-```
+- `crisp_options.as = text`
+- `crisp_options.type = text`
+- `crisp_options.new_session = false`
+- fallback legado `BODY.text`
 
-Mantido o shape híbrido que já era o melhor baseline LK:
+Motivo:
 
-```js
-crisp_options: { as: 'text', type: 'text', new_session: false }
-BODY: { text: fallbackText }
-```
+- Documentação Crisp para Inbox/text mode pede `text` no componente do template.
+- LK já tinha baseline melhor com shape híbrido `as:text + type:text + new_session:false`.
 
-### 3. Readback/validação
+## Verificação readback
 
-- Workflow ativo: `true`
-- `versionId`: `05b65439-470f-47ac-92b0-d75dd57665e1`
-- `activeVersionId`: `05b65439-470f-47ac-92b0-d75dd57665e1`
-- `BODY.text` dentro do componente verificado: `true`
-- `crisp_options` híbrido verificado: `true`
+Readback do n8n após update:
 
-### 4. Canary interno Lucas
+- `active: true`
+- `versionId == activeVersionId`
+- Code node contém `BODY` com `text: fallbackText`
+- Code node contém shape híbrido `as:'text'`, `type:'text'`, `new_session:false`
 
-- Destino: Lucas interno, final `3361`
-- Sem clientes/terceiros
+## Canary interno enviado
+
+Destino interno de Lucas:
+
+- final: `3361`
+
+Payload:
+
 - Template: `lk_checkout_abandonado_30min_v4`
+- Header image: sim
 - Marker: `FIX020030`
-- Payload: `HEADER IMAGE` + `BODY.parameters` + `BODY.text` no componente + `crisp_options { as:text, type:text, new_session:false }`
-- Imagem pública usada para header:
-  - HTTP HEAD: `200`
-  - Content-Type: `image/png`
-  - Content-Length: `46674`
-- Crisp HTTP: `200`
+- Body text: `Oi Lucas, teste LK FIX020030 com imagem.`
+
+Resposta síncrona Crisp:
+
+- HTTP: `200`
+- Crisp error: `false`
 - Crisp reason: `request_accepted`
 - Request ID: `acc30152-c26b-4c83-88fc-1c1d597349c5`
 
-## Callback/readback pós-canary
+## Confirmação humana
 
-- Supabase `lk_crisp_whatsapp_receipts`: `0` registros para o request id após primeira janela curta de espera.
-- n8n callback executions pesquisadas nos workflows conhecidos (`HTTOStvvzcz0sELN`, `8heG4ZyRp85p0MQj`): nenhum hit para `acc30152-c26b-4c83-88fc-1c1d597349c5` ou `FIX020030` entre execuções recentes.
+Lucas informou em seguida:
 
-## Interpretação
+- não recebeu no WhatsApp;
+- não viu no Inbox.
 
-- O patch de produção foi aplicado e lido de volta com sucesso.
-- O canary foi aceito pela Crisp, mas `request_accepted` ainda não comprova entrega no aparelho nem visibilidade na Inbox.
-- A confirmação final depende de Lucas verificar se recebeu `FIX020030` no WhatsApp e se a mensagem apareceu no Crisp Inbox.
+## Auditoria pós-non-receipt
 
-## Rollback
+### Callback / Supabase
 
-Restaurar o snapshot:
+- Supabase `lk_crisp_whatsapp_receipts`: nenhum registro para `acc30152-c26b-4c83-88fc-1c1d597349c5`.
+- n8n callbacks conhecidos (`HTTOStvvzcz0sELN`, `8heG4ZyRp85p0MQj`): nenhum hit com `acc30152...` ou `FIX020030` nas execuções recentes.
 
-`/opt/data/hermes_bruno_ingest/n8n_snapshots/kWQbmEMuvdipcGjd_pre_crisp_body_component_text_20260521T015921Z.json`
+### Crisp REST / conversa do telefone final 3361
 
-ou remover `text: fallbackText` do componente `BODY` mantendo o restante do payload anterior.
+Consulta read-only via Crisp REST Website Token encontrou a conversa WhatsApp do número final `3361`:
 
-## Não executado
+- `session_a706e297-863a-452b-9b73-c845f7c42467`
+- origin: `urn:crisp.im:whatsapp:0`
 
-- Nenhum envio a clientes.
-- Nenhum replay/backfill.
-- Nenhuma alteração de Meta template, campanha, preço, cupom ou Shopify.
+Mensagens recentes na conversa mostram que as tentativas de teste foram registradas como notas/picker internos e seguidas de erro de WhatsApp.
+
+Erro recorrente encontrado, inclusive no horário do canary final:
+
+```text
+The message was not delivered because WhatsApp limited the number of marketing messages sent to this user, especially if they are less likely to engage with them. Please try again at a later time to send this message.
+```
+
+A própria nota aponta para a documentação Meta:
+
+- Per-User Marketing Template Message Limits
+
+Interpretação técnica:
+
+- Isso é bloqueio Meta/WhatsApp por limite per-user de templates de Marketing, equivalente ao erro de ecossistema/engajamento observado antes (`131049`).
+- Não é prova de que a imagem, o template `v4`, ou o `BODY.text` estejam errados.
+- Como o destino de teste recebeu várias tentativas de Marketing em sequência, o número de Lucas ficou inadequado para validar entrega nesse momento.
+
+## Conclusão atualizada
+
+O canary `FIX020030` não chegou porque a entrega foi bloqueada pelo WhatsApp/Meta para esse usuário/recipient, por limite de templates Marketing. A Crisp registrou um erro interno na conversa, mas isso não equivale a mensagem enviada nem a visibilidade normal como mensagem de atendimento no Inbox.
+
+## Decisão operacional
+
+- Não reenviar mais templates Marketing para o número final `3361` agora.
+- Próximo teste decision-grade deve usar:
+  1. outro número interno/controlado com opt-in, ou
+  2. aguardar cooldown da Meta para o número de Lucas, ou
+  3. testar apenas recebimento/Inbox com mensagem não-template dentro de janela de atendimento, se houver janela aberta e aprovação explícita.
+
+## Risco produção
+
+- Clientes reais não devem ser avaliados pelo comportamento do número de Lucas após vários canaries.
+- Porém, em produção, cada falha por limite per-user deve ser tratada como `failed/blocked`, não como `sent`, e deve entrar em monitoramento.

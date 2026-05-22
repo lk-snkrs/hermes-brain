@@ -1,3 +1,13 @@
+## 2026-05-21 — Daily Intelligence Loop saudável + higiene LK/Crisp
+
+- Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-21.md`.
+- Host observability salvo em `reports/hermes-host-docker-observability-2026-05-21.json`: containers esperados `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)`, helper com `alerts: []`.
+- Confirmado estado vivo: 20 jobs ativos no cron status, watchdogs runtime/compressão/LK/Mordomo/LK Growth/SPITI em silent-OK, `hermes skills check` com 0 updates disponíveis.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 segue como release pública mais recente; nenhum runtime swap/restart executado.
+- Corrigido WARN do Brain Health: indexada `areas/lk/sub-areas/crm/rotinas/aprendizado-diario-larissa-crisp-hugo.md` em `empresa/rotinas/_index.md` como rotina planejada, sem ativar cron nem autorização externa.
+- Brain Health pós-run salvo em `reports/brain-health-check-2026-05-21-post.json` com FAIL=0/WARN=0.
+- Prioridade ativa roteada para LK OS / CRM Crisp + Mordomo/autonomia guardrail, com Zipper/SPITI em manutenção/watchdog e Hermes/Infra saudável.
+
 ## 2026-05-20 — Daily Intelligence Loop saudável + Learning Loop semanal
 
 - Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-20.md`.

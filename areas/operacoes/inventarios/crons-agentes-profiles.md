@@ -244,6 +244,28 @@ Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-
 - Drift reconciliado neste arquivo: seção 4 ainda dizia `24 jobs / 17 ativos / 7 pausados`; snapshot vivo agora é `26 jobs / 19 ativos / 7 pausados`.
 - Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, sistema externo ou secret foi alterado.
 
+### Reconciliação Runtime Truth — 2026-05-21 11:20 UTC
+
+Evidência runtime: tentativa de `cronjob list` neste container retornou `command not found`; fallback canônico usado com sucesso: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all`.
+
+Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-21.md`.
+
+- Total de jobs: 28.
+- Ativos: 21.
+- Pausados: 7.
+- `last_status` não-ok: 1 na listagem atual.
+- Erros explícitos de delivery: 0 na listagem atual.
+- Job ativo com `last_status` não-ok:
+  - `Hermes Brain Operating Layer structural watchdog` (`d03fa04e1188`) — último run `error: Script exited with code 1`; saída indicou falta de `memories/daily/2026-05-21.md`.
+- Job ativo sem `Last run` ainda:
+  - `Lucas Brain weekly Learning Loop report` (`f4c499e85eac`) — ativo, `origin`, semanal; acompanhar após primeira execução registrada.
+- Jobs pausados sem `Last run`:
+  - `Mordomo: confirmar entrega com Seda Embalagens` (`527ee57b3a6b`) — one-shot pausado/antigo; candidato a limpeza/arquivamento documental futuro.
+  - `LK SEO/CRO impact review — SEO title/meta P1 packets` (`a7e883edd200`) — one-shot pausado sem execução registrada; candidato a reconciliação documental futura.
+- Drift de contagem em relação ao snapshot anterior: `26 jobs / 19 ativos / 7 pausados` → `28 jobs / 21 ativos / 7 pausados`.
+- Novos jobs observados na listagem atual que não apareciam no snapshot anterior deste inventário: `LK WhatsApp Hermes responder regression watchdog` (`a5d7a392eed9`) e `Relatório Hermes diário 23h + 02h para Lucas` (`98478b820720`).
+- Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, sistema externo ou secret foi alterado.
+
 ## 5. Regras de delivery para Fechamento 23h
 
 - Fechamento 23h: `local` por padrão.
