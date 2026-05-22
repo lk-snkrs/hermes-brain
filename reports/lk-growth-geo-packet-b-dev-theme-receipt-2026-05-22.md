@@ -111,9 +111,19 @@ Screenshot/vision do preview confirmou:
 - Aparência premium/minimalista compatível: respiro, tipografia, linhas discretas, cores neutras.
 - Barra do Shopify preview aparece como overlay normal de preview; não é regressão do tema.
 
-Screenshot local:
+Screenshot desktop/geral:
 
 `/opt/data/profiles/lk-growth/cache/screenshots/browser_screenshot_2f8bdc3439db4981ae47f013112f6163.png`
+
+Validação mobile básica via Playwright `390x844`:
+
+- Screenshot gerado com `preview_theme_id=155065450718`.
+- Sem regressão óbvia no topo mobile: sem overflow horizontal aparente, sem texto sobreposto, sem layout quebrado na dobra inicial.
+- CTA/chat não cobre conteúdo crítico na dobra inicial; aparece apenas a barra padrão do Shopify preview no rodapé.
+
+Screenshot mobile:
+
+`/opt/data/profiles/lk-growth/cache/screenshots/lk-geo-packet-b-new-balance-204l-mobile-20260522.png`
 
 ## Preview URLs para revisão
 
