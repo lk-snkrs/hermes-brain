@@ -31,6 +31,10 @@ Skills são processos repetíveis com entrada, passos, saída e verificação. E
 
 - Template de skill de negócio: `empresa/skills/_templates/HERMES-BUSINESS-SKILL-TEMPLATE.md`.
 
+## Auditoria
+
+- Auditoria P0 de skills pós-BRUNO-ATUAL: `empresa/skills/skill-audit-2026-05-19.md`.
+
 ## Regras
 
 - Não duplicar lógica operacional sem atualizar a skill canônica.

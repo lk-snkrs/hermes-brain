@@ -64,5 +64,13 @@ Antes de declarar um diagnóstico de Growth completo, verificar os 18 tópicos e
 - Handoff obrigatório para Hermes Central: `../../../operacoes/rotinas/protocolo-handoff-agentes-especialistas.md`.
 - `contexto/` — mapas por fonte e domínio.
 - `rotinas/` — rotinas operacionais.
+- `rotinas/growth-decision-router.md` — matriz de decisão para escolher GA4/GSC/GMC/Shopify/CRO/GEO/Ads/Blog/DataForSEO por sintoma.
+- `rotinas/dataforseo-mcp-reload-approval-2026-05-19.md` — approval packet para expor DataForSEO MCP no runtime ativo sem violar guardrails de VPS/Hermes.
+- `templates/growth-audit-output-template.md` — template padrão de auditoria Growth com fatos, interpretação, recomendação, approval packet, rollback e review de impacto.
+- `reports/growth-360-smoke-test-2026-05-19.md` — validação documental do fluxo 360º e próximos critérios de smoke test live controlado.
+- `projetos/growth-action-prd-2026-05-19.md` — PRD de ação para cadência semanal orientada a receita, conversão e reviews D+7.
+- `contexto/` — mapas por fonte e domínio.
+- `rotinas/` — rotinas operacionais.
+- `templates/` — formatos padronizados de auditoria/approval packet.
 - `skills/` — processos repetíveis.
 - `projetos/` — PRDs, backlog e approval log.

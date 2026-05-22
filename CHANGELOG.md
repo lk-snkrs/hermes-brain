@@ -90,6 +90,46 @@
 - Registrados gaps de observabilidade: contexto do cron sem `/var/run/docker.sock`; detector `hermes cron status`/`status --all` pode dizer gateway parado apesar de cron/logs Telegram ativos; correção read-only aprovada por Lucas e aplicada no mesmo dia via helper SSH/Doppler sanitizado.
 - Correção aplicada: criado `/opt/data/scripts/hermes_host_docker_observability.py`, copiado para `areas/operacoes/scripts/`, validado com alerts `0` e integrado ao prompt do cron diário `f5a23dd6a1bd`. Evidência: containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` `running`, imagem `hermes-agent-custom:v0.13.0-20260510`, versão `Hermes Agent v0.13.0 (2026.5.7)`, gateway/cron running. Relatório: `reports/hermes-host-docker-observability-2026-05-12.json`.
 - Artefatos: `reports/hermes-continuous-improvement/2026-05-12.md`; rotina `areas/operacoes/rotinas/hermes-v013-operacionalizacao.md` atualizada. Skill `lucas-hermes-continuous-improvement` recebeu pitfall de sanitização de `hermes status --all`.
+## 2026-05-19 — BRUNO-ATUAL P0 documentais
+
+- Criada camada quente/current em `memories/current.md` para boot rápido, prioridades, bloqueios, decisões recentes e riscos por área.
+- Criado inventário documental `areas/operacoes/rotinas/runtime-profile-channel-inventory-2026-05-19.md` para profiles, bots, canais, cadência, status, silent contract e kill criteria.
+- Criada auditoria de skills em `empresa/skills/skill-audit-2026-05-19.md` com owner, status, risco, gatilho, revisão e decisão por skill canônica.
+- Documentado o profile/agente Mordomo em `agentes/mordomo/` sem criar bot, cron, canal, runtime ou automação.
+- Criada ponte `areas/operacoes/projetos/mission-control-reconciliation-pointer-2026-05-19.md`; reconciliação detalhada de Mission Control permanece fora desta rodada.
+- Preservados guardrails: sem material bruto de terceiro no Brain, sem Docker/VPS/runtime/API write/envio externo/credenciais.
+
+## 2026-05-19 — BRUNO-ATUAL Hermes Brain adaptation audit
+
+- Added `reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md` after processing the updated Bruno/OpenClaw course package sent by Lucas.
+- Documented lesson-by-lesson adaptation decisions, Amora/case takeaways, Hermes Brain scores by dimension, and the next safe gaps: hot/current context, skill audit, runtime/channel inventory, Mission Control reconciliation, and Mordomo documentation.
+- Preserved the rule that raw third-party course material stays outside the Brain; no runtime, Docker/VPS, external send, customer contact, database/API write, campaign, production or credential action was executed.
+
+## 2026-05-19 — LK Growth Action PRD
+
+- Added `growth-action-prd-2026-05-19.md` to turn the documented LK Growth OS into a practical weekly execution system.
+- Defined revenue/conversion as the north-star, daily cadence by weekday, P0/P1/P2 scoring, D+7 impact reviews, 90-day roadmap and first recommended execution week.
+- Preserved approval boundaries: the PRD authorizes read-only analysis, previews and approval packets, not production/theme/Shopify/GMC/Ads/Klaviyo/WhatsApp/runtime writes.
+
+## 2026-05-19 — LK Growth DataForSEO MCP reload approval packet
+
+- Added `dataforseo-mcp-reload-approval-2026-05-19.md` to document the remaining runtime decision before exposing DataForSEO MCP in the active agent toolset.
+- Captured options A/B/C, pre-checks, rollback, smoke test and guardrails.
+- No runtime restart, Docker/VPS action, external send, production write or paid DataForSEO batch was executed.
+
+## 2026-05-19 — LK Growth decision router and audit template
+
+- Added `growth-decision-router.md` to route Growth symptoms to GA4/GSC/GMC/Shopify/CRO/GEO/Ads/Blog/DataForSEO layers.
+- Added `growth-audit-output-template.md` to standardize facts, interpretation, recommendation, approval packet, rollback and impact review.
+- Added `growth-360-smoke-test-2026-05-19.md` as the documented 360º validation path and controlled next live smoke test criteria.
+- Preserved read-only/default approval boundaries; no production, external, Shopify, GMC, campaign, Klaviyo, price, stock or theme writes.
+
+## 2026-05-19 — LK Growth Claude Blog / Ads / DataForSEO documentation
+
+- Documented LK Growth specialist operating layer under `areas/lk/sub-areas/growth/`.
+- Added Claude Blog/AgriciDaniel note for content engine, FAQ, clusters, GEO/AEO and editorial workflows.
+- Added Claude Ads/AgriciDaniel note and connector readiness reports for read-only Growth diagnostics.
+- Preserved LK approval boundaries: no Shopify/CMS/Klaviyo/social/campaign/feed/customer-facing writes without explicit current-turn Lucas approval.
 
 ## 2026-05-12 — LK GMC Required Attributes Applied
 

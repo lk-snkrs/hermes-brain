@@ -11,6 +11,9 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Brain Health Check | `areas/operacoes/rotinas/brain-health-check.md` | Validação de secrets, links, agentes, rotinas e skills |
 | Hermes Release Watch | `areas/operacoes/rotinas/hermes-release-watch.md` | Monitorar releases do Hermes Agent e avaliar melhorias aplicáveis |
 | Hermes Runtime Observability | `areas/operacoes/rotinas/hermes-runtime-observability.md` | Inventário read-only de versão, containers, gateway, cron e logs Hermes |
+| Runtime/Profile/Channel Inventory 2026-05-19 | `areas/operacoes/rotinas/runtime-profile-channel-inventory-2026-05-19.md` | Matriz única de profiles, bots, canais, destino, cadência, status documental, silent contract e kill criteria |
+| Mesa COO diária Telegram 2026-05-19 | `areas/operacoes/rotinas/mesa-coo-diaria-telegram-2026-05-19.md` | Rotina diária/on-demand da Mesa COO no Telegram, com Brain como source of truth e zero writes externos |
+| Second Brain Excellence Backlog 2026-05-19 | `areas/operacoes/rotinas/second-brain-excellence-backlog-2026-05-19.md` | Backlog P0 de runtime vivo, limpeza OpenClaw/cerebro, skill audit, Mordomo e Mission alinhado à Mesa COO |
 | Material Ingest to PRD | `areas/operacoes/rotinas/material-ingest-to-prd.md` | Ingestão segura de material externo até documentação, matriz de decisão e PRD |
 | Brain Improvement Score | `areas/operacoes/rotinas/brain-improvement-score.md` | Score executivo de saúde/maturidade do Hermes Brain após rodadas de melhoria |
 | Retomada de Planos e PRDs | `areas/operacoes/rotinas/retomada-planos-prds.md` | Recupera estado de planos, PRDs, branches e análises pausadas antes de seguir |
@@ -104,6 +107,10 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | LK OS Next Stage Fila A Sourcing Preview 2026-05-11 | `areas/lk/rotinas/lk-os-next-stage-fila-a-sourcing-preview-2026-05-11.md` | Próxima etapa LK OS: preview read-only de sourcing/reposição, 39 SKU/tamanho agregados e top 15 executivos, sem compra/contato/write |
 | LK Fila A Sourcing Validation + Quote Preview 2026-05-11 | `areas/lk/rotinas/lk-fila-a-sourcing-validation-and-quote-preview-2026-05-11.md` | Continuação da Fila A: tetos de margem, gate de lead time e fila de cotação agrupada, sem envio/compra/write |
 | LK SEO/CRO Weekly Improvement Loop | `areas/lk/rotinas/seo-cro-weekly-improvement-loop.md` | Rotina semanal read-only com Claude SEO: nota, meta e fila priorizada de melhorias de PDP/páginas |
+| LK Growth Weekly Review | `areas/lk/sub-areas/growth/rotinas/weekly-growth-review.md` | Revisão semanal Growth com GA4/GSC/GMC/Shopify, Claude SEO, Claude Ads e Claude Blog como camadas read-only |
+| LK Growth Decision Router | `areas/lk/sub-areas/growth/rotinas/growth-decision-router.md` | Roteia sintomas Growth para GA4/GSC/GMC/Shopify/CRO/GEO/Ads/Blog/DataForSEO e define critérios decision-grade |
+| LK Growth DataForSEO MCP Reload Approval | `areas/lk/sub-areas/growth/rotinas/dataforseo-mcp-reload-approval-2026-05-19.md` | Packet de aprovação para reload/restart controlado do runtime antes de expor DataForSEO no agente ativo |
+| LK CRO Weekly Preview Top Priorities 2026-05-19 | `areas/lk/rotinas/lk-cro-weekly-preview-top-priorities-2026-05-19.md` | Pacote read-only de hipóteses CRO/dev-theme para Onitsuka/Mexico 66, New Balance 204L e Kill Bill, sem writes |
 | LK Search Console Read-only Router 2026-05-11 | `areas/lk/rotinas/search-console-readonly-router-2026-05-11.md` | Fase 6: GSC real como `fact_gsc`, queries/páginas/CTR/posição virando fila SEO/CRO sem writes |
 | LK Merchant Center Feed Read-only Router 2026-05-11 | `areas/lk/rotinas/merchant-center-feed-readonly-router-2026-05-11.md` | Fase 6: Merchant real como `fact_merchant_center`, issues/destinos/feed virando fila de correção sem writes |
 | LK PDP Low-conversion Priority Router 2026-05-11 | `areas/lk/rotinas/pdp-low-conversion-priority-router-2026-05-11.md` | Fase 6: GA4 + GSC + Merchant priorizando PDP/collection com tráfego alto e baixa conversão, sem writes |

@@ -77,6 +77,10 @@ Pendente operacional:
 - Converter próximos 7-day impact reviews para nascerem no `lk-growth`.
 - Criar automações adicionais apenas após cadência aprovada e com rollback documentado.
 
+## PRD de ação comercial
+
+A execução prática do Growth OS passa a ser detalhada em `growth-action-prd-2026-05-19.md`, com prioridade explícita para vender mais, converter mais e gerar mais receita. Esse PRD define cadência por dia da semana, scoring P0/P1/P2, backlog inicial, roadmap de 90 dias e impact review D+7.
+
 ## Guardrails
 
 Sem writes externos automáticos. Qualquer Shopify/GMC/theme/campanha/email/WhatsApp/produção exige aprovação explícita atual de Lucas.

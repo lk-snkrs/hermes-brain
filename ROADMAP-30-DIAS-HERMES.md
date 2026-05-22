@@ -101,6 +101,18 @@ Status: concluído como rotina/report documental segura.
 
 ## Próximas rodadas recomendadas
 
+### Rodada BRUNO-ATUAL — adaptação e auditoria 2026-05-19
+
+Status: auditoria/documentação concluída; implementação dos gaps ainda pendente.
+
+Entregas:
+
+1. Relatório `reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md` com leitura do pacote atualizado, decisões aula por aula, takeaways dos cases e matriz de notas.
+2. Nota geral do Hermes Brain contra o material: **8,0/10**.
+3. Próximos gaps P0 identificados: contexto quente `hot/current`, inventário vivo de crons/bots/profiles, auditoria de skills, reconciliação Mission Control e documentação completa do Mordomo.
+
+Limites preservados: material bruto de terceiro permaneceu fora do Brain; nenhum runtime, Docker/VPS, produção, banco/API, campanha, mensagem externa, cliente, credencial ou cron foi alterado.
+
 ### Rodada LK — LK Operating System PRD
 
 Status: PRD v0.1 aprovado conceitualmente por Lucas e documentado como base para implementação faseada.

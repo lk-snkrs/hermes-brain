@@ -65,6 +65,7 @@ Use isso quando:
 - `memories/decisions.md`
 - `memories/lessons.md`
 - `memories/pending.md`
+- `memories/current.md` — camada quente/current para prioridades, bloqueios e riscos atuais documentais.
 
 Use `memories/` para contexto compacto, decisões permanentes e lições. Não use `memories/` como substituto para dados vivos de banco/API.
 
@@ -100,6 +101,7 @@ Use `areas/` para operação real por negócio.
 - `agentes/lk/`
 - `agentes/zipper/`
 - `agentes/spiti/`
+- `agentes/mordomo/` — profile concierge/intake documental; não implica bot/runtime ativo.
 
 Cada agente deve ter, quando possível:
 

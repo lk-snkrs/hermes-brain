@@ -48,6 +48,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/source-confidence.md` — classificação de confiabilidade de fonte.
 - `rotinas/mission-control-brain-cockpit.md` — Mission Control como cockpit/decision inbox, não fonte de verdade paralela.
 - `rotinas/semantic-recovery-session-search.md` — recuperar sessões antigas e promover achados duráveis ao Brain.
+- `rotinas/runtime-profile-channel-inventory-2026-05-19.md` — inventário canônico de profiles, bots, canais, cadência, status documental, silent contract e kill criteria.
 
 ## Templates operacionais
 
@@ -82,6 +83,11 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `reports/mission-control-hermes-native-v3-work-kernel-2026-05-17.md` — entrega v3 do Mission Control com kernel local interativo: Goals, Kanban, Decision Packets e Approval States, marker `hermes-native-v3-work-kernel-2026-05-17` em produção.
 - `reports/mission-control-hermes-native-v2-interactive-2026-05-17.md` — correção action-first do Mission Control: Decision Inbox com botões, matriz de features Hermes, chat/terminal/goals/kanban e marker `hermes-native-v2-interactive-2026-05-17` em produção.
 - `reports/mission-control-hermes-native-v1-deploy-2026-05-17.md` — entrega verificada do Mission Control Hermes-native v1 em `mission.lucascimino.com`, com marker `hermes-native-v1-2026-05-17`.
+- `projetos/mission-control-reconciliation-pointer-2026-05-19.md` — ponte documental para a reconciliação futura do Mission Control, sem mexer em repo/UI/runtime.
+
+## Reports
+
+- `../../reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md` — auditoria completa do pacote BRUNO-ATUAL, com adaptação Hermes-native e notas por dimensão.
 - `../../reports/brain-improvement-score-2026-05-09.md` — primeira execução manual do Brain Improvement Score.
 - `../../reports/brain-health-check-2026-05-09.json` — primeira saída JSON versionada da Rodada G, com `FAIL=0 WARN=0`.
 - `../../reports/material-ingest-to-prd-test-2026-05-09.md` — validação do modo leve da rotina Material Ingest to PRD usando PRD antigo.
