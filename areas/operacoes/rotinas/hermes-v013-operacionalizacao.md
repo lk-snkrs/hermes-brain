@@ -1,5 +1,7 @@
 # Rotina — Operacionalização Hermes v0.13
 
+> LEGACY / SUPERSEDED — rotina histórica da fase v0.13. Não usar como estado atual do runtime. Para governança viva, usar `areas/operacoes/intelligence-map.md`, `areas/operacoes/rotinas/cron-control-plane.md`, `areas/operacoes/rotinas/runtime-truth-reconciler.md` e o registro real de crons. Comandos, IDs de jobs e paths citados abaixo podem estar obsoletos.
+
 Data: 2026-05-10
 Escopo: Hermes/LK/Hermes Brain em produção Docker v0.13.0.
 

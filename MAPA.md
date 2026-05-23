@@ -36,6 +36,8 @@ Grande Mente — Hermes Brain / Hermes COO
 
 Referência canônica: `empresa/contexto/organograma-operacional-hermes-brain.md`.
 
+**Nomenclatura canônica:** “Cérebro Cimino” = “Hermes Brain” = Grande Mente / Hermes COO. Não são sistemas separados. Ver `empresa/contexto/nomenclatura-cerebro-cimino-hermes-brain.md`.
+
 ## Pastas principais
 
 ```text
@@ -61,6 +63,7 @@ hermes-brain/
 | Perfil de Lucas para o Hermes Geral | `agentes/hermes-geral/USER.md` |
 | Proatividade do Hermes Geral | `agentes/hermes-geral/HEARTBEAT.md` |
 | Organograma da Grande Mente | `empresa/contexto/organograma-operacional-hermes-brain.md` |
+| Nomenclatura Cérebro Cimino vs Hermes Brain | `empresa/contexto/nomenclatura-cerebro-cimino-hermes-brain.md` |
 | Organograma de agentes/profiles | `empresa/contexto/organograma-agentes-hermes.md` |
 | Bruno/OpenClaw: segundo cérebro + crons | `areas/operacoes/base-conhecimento/bruno-openclaw-segundo-cerebro-crons-consolidacao-diaria-2026-05-19.md` |
 | BRD: Fechamento Ágil 23h | `areas/operacoes/brds/hermes-brain-fechamento-agil-23h-brd-2026-05-19.md` |
@@ -72,6 +75,7 @@ hermes-brain/
 | LK Sneakers | `areas/lk/MAPA.md` |
 | Zipper Galeria | `areas/zipper/MAPA.md` |
 | SPITI Auction | `areas/spiti/MAPA.md` |
+| Mordomo / Lucas pessoal | `areas/operacoes/mordomo/MAPA.md` |
 | Operações Hermes | `areas/operacoes/MAPA.md` |
 | Segurança/governança | `seguranca/` e `areas/governanca/MAPA.md` |
 | Evidências da ingestão Amora | `reports/amora-reference-ingest-2026-05-16/` |

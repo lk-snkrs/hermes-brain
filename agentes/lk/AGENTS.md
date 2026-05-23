@@ -23,8 +23,8 @@ Se alguém fora dessa lista interagir → responder que não tenho autorização
 ## Loop de Consulta (antes de responder)
 
 1. Ler `MEMORY.md` no agentDir — escopo e dados-chave da área
-2. Ler `cerebro-cimino/areas/lk/MAPA.md` — estrutura e contexto atual
-3. Ler `cerebro-cimino/empresa/contexto/metricas.md` — metas e KPIs
+2. Ler `areas/lk/MAPA.md` — estrutura e contexto atual
+3. Ler `empresa/contexto/metricas.md` — metas e KPIs
 4. Se tarefa envolve dados (clientes, vendas, produtos) → consultar Supabase LK **antes** de responder
 5. Nunca responder com dados inventados — "não sei, mas vou buscar" > dado errado
 
@@ -33,13 +33,13 @@ Se alguém fora dessa lista interagir → responder que não tenho autorização
 ## Escopo de Acesso
 
 **Leitura + escrita:**
-- `cerebro-cimino/areas/lk/`
+- `areas/lk/`
 
 **Apenas leitura:**
-- `cerebro-cimino/empresa/contexto/geral.md`
-- `cerebro-cimino/empresa/contexto/people.md`
-- `cerebro-cimino/empresa/contexto/metricas.md`
-- `cerebro-cimino/empresa/contexto/decisions.md`
+- `empresa/contexto/geral.md`
+- `empresa/contexto/people.md`
+- `empresa/contexto/metricas.md`
+- `empresa/contexto/decisions.md`
 
 **APIs disponíveis (Doppler):**
 - Supabase LK (`SUPABASE_LK_SERVICE_KEY`, `SUPABASE_LK_URL`) — leitura, sem DELETE/DROP
@@ -49,10 +49,10 @@ Se alguém fora dessa lista interagir → responder que não tenho autorização
 
 **Bloqueado:**
 ```
-cerebro-cimino/areas/zipper/    ← BLOQUEADO
-cerebro-cimino/areas/spiti/     ← BLOQUEADO
-cerebro-cimino/empresa/gestao/  ← BLOQUEADO (só Claw)
-cerebro-cimino/seguranca/       ← BLOQUEADO (só Claw)
+areas/zipper/    ← BLOQUEADO
+areas/spiti/     ← BLOQUEADO
+empresa/gestao/  ← BLOQUEADO sem escopo Hermes Geral aprovado
+seguranca/       ← BLOQUEADO sem escopo de governança aprovado
 Supabase Zipper ou SPITI        ← BLOQUEADO
 ```
 
@@ -71,8 +71,8 @@ Supabase Zipper ou SPITI        ← BLOQUEADO
 
 1. Verificar data/hora atual
 2. Ler `MEMORY.md` (agentDir) — escopo e regras da área
-3. Ler `cerebro-cimino/areas/lk/MAPA.md`
-4. Ler `cerebro-cimino/empresa/contexto/metricas.md`
+3. Ler `areas/lk/MAPA.md`
+4. Ler `empresa/contexto/metricas.md`
 5. Se tarefa envolve dados → Supabase LK antes de qualquer resposta
 
 ---
@@ -102,9 +102,10 @@ Supabase Zipper ou SPITI        ← BLOQUEADO
 Ao fim de qualquer sessão com decisão ou execução relevante:
 
 1. Registrar em `areas/lk/projetos/README.md` o que foi feito (1-3 linhas, data + ação)
-2. `cd /root/cerebro-cimino && git add -A && git commit -m "chore(lk): [resumo da sessão]" && git push`
+2. Registrar handoff/receipt no Brain Central ou no relatório diário quando houver decisão, aprovação, risco, write externo ou aprendizado durável.
+3. Commit/push só deve acontecer no repositório Hermes Brain atual e apenas quando o fluxo da sessão pedir checkpoint versionado, com secret scan e sem expandir para writes externos.
 
-**Por quê:** O Claw é o COO e monitora o git log do cerebro-cimino. Sem commit = invisível. Com commit = Claw sabe, Lucas sabe.
+**Por quê:** O Hermes Central / Grande Mente consolida os especialistas; documentação local não prova execução ativa sem evidência runtime ou fonte real.
 
 ---
 

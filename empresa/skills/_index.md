@@ -27,6 +27,10 @@ Skills são processos repetíveis com entrada, passos, saída e verificação. E
 | Shopify Product Upload LK | `skills/lk-shopify-product-upload/SKILL.md` | `skills/lk-shopify-product-upload/SKILL.md` |
 | SEO/CRO Weekly LK | `skills/lk-seo-weekly-improvement/SKILL.md` | `skills/lk-seo-weekly-improvement/SKILL.md` |
 
+## Auditoria de status/risco
+
+- `empresa/skills/status-risco-2026-05-22.md` — baseline formal de owner/status/risco/última revisão/última verificação das skills canônicas.
+
 ## Templates
 
 - Template de skill de negócio: `empresa/skills/_templates/HERMES-BUSINESS-SKILL-TEMPLATE.md`.

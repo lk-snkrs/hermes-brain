@@ -6,6 +6,8 @@ Este é o ponto de entrada para Lucas e para o Hermes entenderem como navegar e 
 
 Hermes Brain é a fonte de verdade versionada para contexto, decisões, áreas, agentes, rotinas e skills de negócio.
 
+**Nomenclatura:** “Cérebro Cimino” e “Hermes Brain” são o mesmo sistema lógico — a Grande Mente / Hermes COO de Lucas Cimino. O nome técnico do repositório é Hermes Brain; o nome executivo pode ser Cérebro Cimino. Não criar cérebro, profile, repositório ou rotina duplicada por diferença de nome. Referência canônica: `empresa/contexto/nomenclatura-cerebro-cimino-hermes-brain.md`.
+
 O organograma correto é uma **grande mente central** que cuida de tudo e roteia para as camadas abaixo:
 
 ```text
@@ -23,7 +25,7 @@ Grande Mente — Hermes Brain / Hermes COO
 Dados vivos — Supabase, Shopify, APIs, email, crons e integrações
 ```
 
-Referência: `empresa/contexto/organograma-operacional-hermes-brain.md`.
+Referências: `empresa/contexto/organograma-operacional-hermes-brain.md` e `empresa/contexto/nomenclatura-cerebro-cimino-hermes-brain.md`.
 
 O agente não é o cérebro. O agente lê e escreve no cérebro.
 

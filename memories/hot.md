@@ -1,6 +1,6 @@
 # Memória quente — contexto current
 
-Atualizado: 2026-05-20 17:25 UTC  
+Atualizado: 2026-05-22 12:05 UTC
 Status: camada Bruno/OpenClaw criada para evitar perda por compactação.
 
 ## Prioridades current
@@ -9,6 +9,7 @@ Status: camada Bruno/OpenClaw criada para evitar perda por compactação.
 2. Garantir que decisões customer-facing aprovadas por Lucas virem arquivo vivo, MAPA/índice e evidência de verificação.
 3. Manter o Fechamento Ágil 23h + Brain Sync seguro como rotina de consolidação silenciosa/local.
 4. Evitar ruído no Telegram: sucesso normal fica local/Brain; Lucas recebe decisão, exceção, falha ou pedido de aprovação.
+5. Prioridade operacional atual: LK/GMC continua em modo read-only até confirmação visual das Data Sources e aprovação explícita para qualquer write externo.
 
 ## Decisões recentes que não podem sumir
 

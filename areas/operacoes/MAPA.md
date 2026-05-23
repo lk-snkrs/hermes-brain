@@ -12,6 +12,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 ## Inventários
 
 - `inventarios/crons-agentes-profiles.md` — inventário vivo de agentes, profiles, bots, crons, conversas/projetos e cobertura do Fechamento Ágil 23h.
+- `mordomo/MAPA.md` — ponte canônica mínima para Mordomo/Lucas pessoal, sem criar runtime ou agente novo.
 
 ## Rotinas principais
 
@@ -38,6 +39,10 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/brain-operating-layer.md` — camada Hermes-native que transforma o padrão Bruno/OpenClaw em operação viva com receipts, approvals, runtime truth e watchdogs.
 - `rotinas/brain-steward-daily.md` — steward diário silent-OK para daily/hot/receipts/decisões/handoffs/skills.
 - `rotinas/runtime-truth-reconciler.md` — reconciliação entre documentação e runtime real de crons/profiles/bots.
+- `intelligence-map.md` — mapa central de loops 23h/02h/02h30/Mesa COO, fontes, outputs, guardrails e anti-duplicidade.
+- `rotinas/cron-control-plane.md` — snapshot governamental dos crons vivos/pausados, owners, delivery, side effects e kill criteria.
+- `rotinas/decision-inbox-taxonomy.md` — taxonomy canônica da COO Queue/Decision Inbox para reduzir falsos positivos e ruído.
+- `../../scripts/operational_docs_guard.py` — scanner de docs operacionais para impedir `/root`, `sshpass`, Mem0 legado e comandos perigosos como instrução viva sem marcador LEGACY/DRY-RUN/DO NOT RUN.
 - `rotinas/customer-facing-decision-guard.md` — guard para copy/tom/fluxo/canal/promessa/oferta/customer-facing.
 - `rotinas/hot-memory-compiler.md` — compilação segura do `memories/hot.md` a partir de artefatos recentes.
 - `rotinas/skill-promotion-engine.md` — promoção de aprendizados recorrentes para drafts/skills verificados.

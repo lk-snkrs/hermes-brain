@@ -18,6 +18,14 @@ Executor aprovado:
 /opt/data/scripts/brain_sync_safe.py
 ```
 
+Executor legado bloqueado:
+
+```text
+scripts/brain_sync.sh
+```
+
+`./scripts/brain_sync.sh` é histórico/OpenClaw-era e deve sair com `DEPRECATED` sem tocar SSH/VPS/arquivos. Não usar helper de senha SSH, paths legados de root ou sync bidirecional manual como fonte de verdade.
+
 Uso pelo fechamento:
 
 ```bash

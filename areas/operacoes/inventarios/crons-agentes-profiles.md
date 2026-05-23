@@ -102,7 +102,7 @@ O fechamento **não** deve virar transcrição de chat.
 - Crons relacionados:
   - `LK Daily Sales Brief read-only mandatory delivery` — ativo, `origin`.
   - `LK Weekly CEO Review read-only mandatory delivery` — ativo, `origin`.
-  - `LK GMC Review read-only mandatory delivery` — pausado.
+  - `LK GMC Review read-only mandatory delivery` — ativo na evidência viva de 2026-05-22; read-only obrigatório.
   - `LK Pulso Comercial 16h read-only delivery` — ativo, `local`.
   - `LK 09h previous-day sales report external delivery` — ativo, `local` após correção de delivery/ruído; entrega externa é feita pelo script, Telegram recebe só exceções quando aplicável.
   - `LK 19h30 physical store close external delivery` — ativo, `local` após correção de Lucas para não enviar recibo/HTML de sucesso no Telegram.
@@ -152,7 +152,7 @@ O fechamento **não** deve virar transcrição de chat.
   - logística de obras;
   - style learning.
 - Crons relacionados:
-  - `Zipper OS vendas 09h WhatsApp/email` — ativo, `origin`.
+  - `Zipper OS vendas 09h WhatsApp/email` — ativo, `local` na evidência viva; entrega externa/script e Telegram apenas exceções quando aplicável.
   - `Zipper Gmail style learning refresh` — ativo, `local`.
 - Entra no Fechamento 23h: **sim**.
 - Destino de handoff: `areas/zipper/`, relatório diário, pendências globais se houver risco/decisão.
@@ -265,6 +265,29 @@ Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-
 - Drift de contagem em relação ao snapshot anterior: `26 jobs / 19 ativos / 7 pausados` → `28 jobs / 21 ativos / 7 pausados`.
 - Novos jobs observados na listagem atual que não apareciam no snapshot anterior deste inventário: `LK WhatsApp Hermes responder regression watchdog` (`a5d7a392eed9`) e `Relatório Hermes diário 23h + 02h para Lucas` (`98478b820720`).
 - Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, sistema externo ou secret foi alterado.
+
+### Reconciliação Runtime Truth — 2026-05-22 11:20 UTC
+
+Evidência runtime: tentativa de `cronjob list` neste container retornou `command not found`; fallback canônico usado com sucesso: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all`.
+
+Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-22.md`.
+
+- Total de jobs: 29.
+- Ativos: 23.
+- Pausados: 6.
+- `last_status` não-ok: 0 na listagem atual.
+- Erros explícitos de delivery: 0 na listagem atual.
+- Jobs ativos sem `Last run` ainda:
+  - `Lucas Brain weekly Learning Loop report` (`f4c499e85eac`) — ativo, `origin`, semanal; acompanhar após primeira execução registrada.
+  - `Lembrete GMC Data Sources 10h` (`1d3a188b24f2`) — ativo, one-shot, `origin`, sem execução registrada na listagem.
+- Jobs pausados sem `Last run`:
+  - `Mordomo: confirmar entrega com Seda Embalagens` (`527ee57b3a6b`) — one-shot pausado/antigo; candidato a limpeza/arquivamento documental futuro.
+  - `LK SEO/CRO impact review — SEO title/meta P1 packets` (`a7e883edd200`) — one-shot pausado sem execução registrada; candidato a reconciliação documental futura.
+- Drift de contagem em relação ao snapshot anterior: `28 jobs / 21 ativos / 7 pausados` → `29 jobs / 23 ativos / 6 pausados`.
+- Drift de status/documentação observado: `LK GMC Review read-only mandatory delivery` (`d4c26da4cd48`) aparece ativo e `ok` na evidência viva; trechos anteriores do inventário ainda o tratavam como pausado.
+- Erro anterior resolvido na evidência viva: `Hermes Brain Operating Layer structural watchdog` (`d03fa04e1188`) aparece com último run `ok`.
+- Delivery `origin` em watchdogs silent-OK continua como pendência de revisão de ruído: runtime/cron, compressão self-heal, gateways Mordomo/LK Growth/SPITI, Operating Layer e responder regression.
+- Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo ou secret foi alterado.
 
 ## 5. Regras de delivery para Fechamento 23h
 

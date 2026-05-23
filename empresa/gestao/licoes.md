@@ -1,5 +1,7 @@
 # Lições Aprendidas — Grupo Cimino
 
+> LEGACY / SUPERSEDED — contém lições históricas migradas de fases OpenClaw/Cérebro Cimino antigas. Não usar paths `/root`, Mem0 ou scripts citados aqui como instrução operacional viva. A fonte atual é `/opt/data/hermes_bruno_ingest/hermes-brain`, `areas/operacoes/intelligence-map.md`, `areas/operacoes/rotinas/cron-control-plane.md` e `scripts/brain_sync_safe.py`.
+
 ## 🔒 Estratégicas (Permanentes)
 
 ### Dados antes de afirmar
@@ -56,9 +58,9 @@
 - Se não tem como automatizar → documentar explicitamente como "executar manualmente" no skill
 
 ### Brain: 3 Fontes de Verdade (19/04/2026)
-1. `/root/.hermes/memories/` — local (pending, lessons, decisions)
-2. `/root/hermes-brain/` — VPS brain
-3. Mem0 vector DB — memories da sessão
+1. Hermes live memory/session_search — recall de sessões;
+2. `/opt/data/hermes_bruno_ingest/hermes-brain/` — Brain canônico versionado;
+3. relatórios/decisões curadas no Brain — não Mem0 write-through legado.
 - **Regra:** após cada sessão → sync bidirecional + `mem0_conclude` para fatos
 
 ### Scripts: Dual Location (19/04/2026)
@@ -151,9 +153,9 @@
 
 ### Brain atualizado
 - `/root/.hermes/CURRENT_WORK.md` — COMPLETO ✅
-- `/root/.hermes/pending.md` — atualizado
-- `/root/hermes-brain/memories/decisions.md` — decisões reorg 19/04
-- `/root/hermes/skills/protocol/session-end-protocol/SKILL.md` — criado
+- `memories/pending.md` — atualizado no Brain canônico;
+- `memories/decisions.md` — decisões reorg históricas migradas;
+- skills/protocolos antigos devem ser revalidados antes de uso no Hermes atual.
 - `/root/.hermes/scripts/hermes_consolidation_weekly.py` — output now saves to brain
 
 ---
