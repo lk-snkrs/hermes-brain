@@ -1,10 +1,10 @@
 # Mordomo CRM local — status
 
-Atualizado: 2026-05-23T02:02:22.569981+00:00
+Atualizado: 2026-05-24T02:03:25.733185+00:00
 
-- contacts: 102
-- followups: 100
-- signals: 1347
+- contacts: 106
+- followups: 105
+- signals: 1484
 - actions: 0
 
 Fonte: JSON local/SQLite. Sem write em Supabase nesta fase.

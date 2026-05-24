@@ -45,6 +45,19 @@ Este loop vale para:
 - campanhas/conteúdo;
 - aprovações operacionais.
 
+## Regra global de decisão por etapas
+
+Quando um cron, rotina, agente, Mission Control, Mesa COO ou qualquer sistema do Hermes precisar perguntar a Lucas o que fazer, o padrão aprovado é:
+
+- dividir em etapas sequenciais (`1/N`), sem blocão;
+- pedir uma decisão por vez;
+- usar botões no Telegram quando possível;
+- opções padrão: **Fazer**, **Não fazer**, **Agendar para depois**, **Outro / comentar**;
+- quando Lucas escolher **Outro**, capturar o comentário escrito como instrução específica do que deve ser feito;
+- só avançar para a próxima etapa depois da aprovação/rejeição/agendamento/comentário da etapa atual.
+
+Esta regra vale para decisões de cron e governança em geral, não apenas para a Mesa COO.
+
 ## Tipos de feedback
 
 ### Aprovação

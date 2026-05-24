@@ -1,7 +1,7 @@
 # Inventário vivo — crons, agentes, profiles e projetos
 
-Data-base: 2026-05-20 18:00 UTC
-Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via `cronjob list`/fallback Hermes CLI nesta data**
+Data-base: 2026-05-23 11:21 UTC
+Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via `cronjob list`/fallback Hermes CLI em 2026-05-23**
 Escopo: Hermes Brain / Grande Mente / profiles especialistas / crons Hermes.
 
 ## 1. Princípio
@@ -287,6 +287,26 @@ Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-
 - Drift de status/documentação observado: `LK GMC Review read-only mandatory delivery` (`d4c26da4cd48`) aparece ativo e `ok` na evidência viva; trechos anteriores do inventário ainda o tratavam como pausado.
 - Erro anterior resolvido na evidência viva: `Hermes Brain Operating Layer structural watchdog` (`d03fa04e1188`) aparece com último run `ok`.
 - Delivery `origin` em watchdogs silent-OK continua como pendência de revisão de ruído: runtime/cron, compressão self-heal, gateways Mordomo/LK Growth/SPITI, Operating Layer e responder regression.
+- Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo ou secret foi alterado.
+
+### Reconciliação Runtime Truth — 2026-05-23 11:21 UTC
+
+Evidência runtime: tentativa de `cronjob list` neste container retornou `command not found`; fallback canônico usado com sucesso: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all`.
+
+Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-23.md`.
+
+- Total de jobs listados: 23.
+- Ativos: 23.
+- Pausados/disabled listados: 0.
+- `last_status` não-ok: 0 na listagem atual.
+- Erros explícitos de delivery: 0 na listagem atual.
+- Jobs ativos sem `Last run` ainda:
+  - `Lucas Brain weekly Learning Loop report` (`f4c499e85eac`) — ativo, `origin`, semanal; acompanhar após primeira execução registrada.
+- Drift de contagem em relação ao snapshot anterior: `29 jobs / 23 ativos / 6 pausados` → `23 jobs / 23 ativos / 0 pausados listados`.
+- Jobs pausados antigos citados no inventário anterior não aparecem mais na evidência viva com `--all`; tratar como histórico/arquivado até nova evidência viva.
+- `Lembrete GMC Data Sources 10h` (`1d3a188b24f2`), observado como ativo/one-shot sem execução no snapshot de 2026-05-22, não aparece mais na listagem viva atual.
+- Delivery `origin` observado sem erro explícito: `LK Daily Sales Brief`, `LK Weekly CEO Review`, `LK GMC Review`, `Mesa COO diária Telegram` e `Lucas Brain weekly Learning Loop report`; manter revisão futura apenas com aprovação de Lucas.
+- Drift documental em seções antigas: alguns watchdogs ainda aparecem descritos como `origin`, mas a evidência viva atual mostra `local` para runtime/cron, compressão self-heal, Mordomo, LK Growth e SPITI; esta seção datada é a fonte viva mais recente sem reescrever histórico.
 - Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo ou secret foi alterado.
 
 ## 5. Regras de delivery para Fechamento 23h
