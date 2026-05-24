@@ -4,7 +4,9 @@
 
 Criar uma avaliação executiva e repetível da saúde do Hermes Brain depois de cada rodada de melhoria, pacote externo ou reorganização relevante.
 
-O score não substitui o `scripts/brain_health_check.py`. Ele traduz checks técnicos e operacionais em um diagnóstico legível para Lucas: o que está bom, o que está frágil, o que deve virar próxima rodada e o que exige aprovação.
+O score não substitui o `scripts/brain_health_check.py` nem o `brain-structure-governance-preflight.md`. Ele traduz checks técnicos e operacionais em um diagnóstico legível para Lucas: o que está bom, o que está frágil, o que deve virar próxima rodada e o que exige aprovação.
+
+Regra central: score é triagem executiva, não métrica decorativa. Qualquer relatório deve priorizar ação nesta ordem: segurança/secrets/aprovação → backup/rollback → integridade estrutural/links/MAPAs → evidência → próxima ação segura → o que não será tocado.
 
 ## Área dona
 
@@ -126,7 +128,7 @@ Uso recomendado:
 
 1. Rodar `python3 scripts/brain_health_check.py --json reports/brain-health-check-YYYY-MM-DD.json`.
 2. Rodar este script consumindo o JSON do health check.
-3. Ler o Markdown gerado e decidir se há correções documentais seguras ou itens que exigem aprovação.
+3. Ler o Markdown gerado pela ordem de risco: primeiro críticos de segurança/aprovação, depois rollback/evidência, depois navegação/skills/rotinas.
 4. Versionar o relatório quando ele fechar uma rodada de melhoria.
 
 ## Template de output
@@ -149,6 +151,15 @@ Score geral: __/100
 
 ## Correções seguras recomendadas
 
+## Plano priorizado por risco
+
+- Segurança/secrets/aprovação:
+- Backup/rollback:
+- Integridade estrutural:
+- Evidência:
+- Próxima ação segura:
+- O que não será tocado:
+
 ## Itens que exigem aprovação Lucas
 
 ## Evidências
@@ -166,7 +177,7 @@ Nenhuma por padrão. Se uma checagem exigir integração privada, consultar apen
 
 - Health check executado.
 - Secret scan executado.
-- Score e recomendações salvos em Markdown quando a avaliação for formal.
+- Score e recomendações salvos em Markdown quando a avaliação for formal, com plano priorizado por risco.
 - Nenhuma ação externa/produtiva executada.
 
 ## Se falhar

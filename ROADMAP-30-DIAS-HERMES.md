@@ -90,6 +90,14 @@ Status: concluído no repo atual.
 - Hardcoded secrets removidos dos scripts identificados.
 - Whole-repo scan retornou `possible_secrets 0` na última rodada.
 
+### 9. Governança de estrutura e score por risco
+
+Status: concluído como guardrail documental seguro.
+
+- Criada rotina `areas/operacoes/rotinas/brain-structure-governance-preflight.md`.
+- `Brain Improvement Score` passou a priorizar risco executivo em vez de nota decorativa: segurança, rollback, integridade, evidência, próxima ação segura e não alterações.
+- Regra operacional: antes de mexer em skills, agentes, heartbeats, USER/AGENTS, rotinas ou reorganização, validar estrutura, dono, riscos, índices/MAPAs e aprovação necessária.
+
 ### 10. Revisão operacional multiempresa sob demanda
 
 Status: concluído como rotina/report documental segura.

@@ -30,6 +30,7 @@ python3 scripts/brain_health_check.py --json reports/brain-health-check-YYYY-MM-
 
 ## Quando rodar
 
+- Depois do `brain-structure-governance-preflight.md`, quando a mudança tocar skills, agentes, rotinas, heartbeats, índices ou reorganização.
 - Antes de cada commit relevante.
 - Após mudanças em docs/scripts.
 - Antes de abrir PR no `hermes-brain`.
@@ -52,6 +53,7 @@ python3 scripts/brain_health_check.py --json reports/brain-health-check-$(date -
 
 ## O que não prova
 
+- Não prova sozinho que a estrutura escolhida era a correta; para isso usar primeiro `brain-structure-governance-preflight.md`.
 - Não prova que cron real está ativo.
 - Não prova que VPS/Docker/gateway estão saudáveis.
 - Não prova que dados vivos em Supabase/Shopify/APIs estão corretos.
