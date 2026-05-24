@@ -38,6 +38,7 @@ material externo
 ## Entregas desta rodada
 
 - Rotina: `areas/operacoes/rotinas/material-ingest-to-prd.md`.
+- Rotina: `areas/operacoes/rotinas/brain-structure-governance-preflight.md`.
 - Rotina: `areas/operacoes/rotinas/brain-improvement-score.md`.
 - Rotina: `areas/operacoes/rotinas/retomada-planos-prds.md`.
 - Template: `areas/operacoes/templates/matriz-decisao-bruno-hermes.md`.
@@ -63,6 +64,7 @@ material externo
 4. Toda decisão relevante precisa explicar por que aplicar, adaptar, deferir ou rejeitar.
 5. Rotina documentada não significa cron ativo.
 6. Produção e ações externas exigem aprovação explícita.
+7. Antes de alterar skills, agentes, heartbeats, USER/AGENTS ou rotinas, validar estrutura, dono, riscos, índice/MAPA e aprovação necessária.
 
 ## Backlog
 
@@ -176,3 +178,15 @@ Entregas:
 - Decisão operacional: não criar cron semanal de retomada agora; usar sob demanda quando Lucas disser “seguir”, “retomar” ou “onde paramos”.
 
 Resultado: 1 item ativo, 5 bloqueados por decisão/aprovação e 3 aguardando data/evento. Nenhuma produção, VPS, Docker, banco, API, cron, UI ou mensagem externa foi tocada.
+
+## Entrega aplicada — governança de estrutura e score por risco
+
+Em 2026-05-24, aprendizados do Pixel AI Hub/Brainzinho foram adaptados ao Hermes Brain como guardrails documentais seguros.
+
+Entregas:
+
+- Rotina `areas/operacoes/rotinas/brain-structure-governance-preflight.md` para validar estrutura antes de mexer em skills, agentes, heartbeats, rotinas ou reorganizações.
+- `brain-improvement-score.md` e `scripts/brain_improvement_score.py` ajustados para tratar score como triagem por risco, não vaidade de nota.
+- Índices/MAPA atualizados para tornar o gate encontrável.
+
+Resultado: a próxima reorganização/melhoria do Brain deve passar por árvore atual, dono, riscos, preview, índices/MAPAs e aprovação quando houver produção/externo/credencial/runtime.

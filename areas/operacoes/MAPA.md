@@ -7,6 +7,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 ## Rotinas principais
 
 - `rotinas/brain-sync.md` — sincronização/versionamento do Brain.
+- `rotinas/brain-structure-governance-preflight.md` — validação de estrutura antes de mexer em skills, agentes, heartbeats, rotinas ou reorganizações.
 - `rotinas/brain-health-check.md` — validação técnica de secrets, links, agentes, rotinas e skills.
 - `rotinas/material-ingest-to-prd.md` — ingestão segura de material externo até documentação, matriz de decisão e PRD.
 - `rotinas/brain-improvement-score.md` — score executivo de saúde/maturidade do Brain.
@@ -45,5 +46,6 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 ## Guardrails
 
 - Secrets sempre via Doppler, apenas nomes em docs.
+- Antes de mexer em skills/agentes/rotinas/heartbeats/reorganização, validar estrutura, dono, riscos, índice/MAPA e aprovação necessária.
 - Produção, VPS, Docker, Traefik, volumes, redes, deploys, banco, campanhas e mensagens externas exigem aprovação Lucas.
 - PRs documentais/Brain de baixo risco podem seguir com merge autônomo se health check, secret scan e mergeability estiverem limpos; produção, infra, secrets, banco e ações externas seguem exigindo aprovação explícita.

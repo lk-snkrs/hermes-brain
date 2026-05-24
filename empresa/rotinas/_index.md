@@ -7,6 +7,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Rotina | Caminho | Função |
 |--------|---------|--------|
 | Brain Sync | `areas/operacoes/rotinas/brain-sync.md` | Sincronização do Brain e versionamento |
+| Brain Structure Governance Preflight | `areas/operacoes/rotinas/brain-structure-governance-preflight.md` | Valida estrutura, dono, riscos e índices antes de mexer em skills, agentes, heartbeats, rotinas ou reorganizações |
 | Heartbeat | `areas/operacoes/rotinas/heartbeat.md` | Checagens periódicas operacionais |
 | Brain Health Check | `areas/operacoes/rotinas/brain-health-check.md` | Validação de secrets, links, agentes, rotinas e skills |
 | Hermes Release Watch | `areas/operacoes/rotinas/hermes-release-watch.md` | Monitorar releases do Hermes Agent e avaliar melhorias aplicáveis |

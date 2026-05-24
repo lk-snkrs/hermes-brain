@@ -1,3 +1,10 @@
+## 2026-05-24 — Brain governance preflight e score por risco
+
+- Adicionada rotina `areas/operacoes/rotinas/brain-structure-governance-preflight.md` para validar estrutura antes de mexer em skills, agentes, heartbeats, rotinas ou reorganizações do Brain.
+- Atualizado `brain-improvement-score.md` e `scripts/brain_improvement_score.py` para tratar score como triagem executiva priorizada por risco: segurança, rollback, integridade, evidência, próxima ação segura e não alterações.
+- Atualizados `areas/operacoes/MAPA.md`, `empresa/rotinas/_index.md`, `brain-health-check.md` e o projeto Hermes Brain Improvement System.
+- Preservados limites: documentação/tooling local apenas; sem produção, VPS/Docker, banco/API, cron runtime, secret, campanha, WhatsApp, email ou contato externo.
+
 ## 2026-05-19 — BRUNO-ATUAL P0 documentais
 
 - Criada camada quente/current em `memories/current.md` para boot rápido, prioridades, bloqueios, decisões recentes e riscos por área.

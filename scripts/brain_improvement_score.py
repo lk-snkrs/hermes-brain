@@ -247,12 +247,37 @@ def build_report(dimensions: list[Dimension], health: dict[str, Any], report_dat
     # Preserve order but dedupe.
     seen = set()
     safe_recommendations = [x for x in safe_recommendations if not (x in seen or seen.add(x))]
+    risk_plan = {
+        "seguranca_secrets_aprovacao": [],
+        "backup_rollback": [],
+        "integridade_estrutural": [],
+        "evidencia": [],
+        "proxima_acao_segura": [],
+        "nao_tocar": [
+            "produção/runtime, VPS/Docker/Traefik/volumes/redes",
+            "bancos, APIs, secrets e credenciais reais",
+            "campanhas, WhatsApp, email, posts e contato externo",
+        ],
+    }
+    if health.get("fail_count"):
+        risk_plan["seguranca_secrets_aprovacao"].append("Resolver FAILs do health check antes de PR/merge ou qualquer automação.")
+    if health_check_value(health, "secrets", "FAIL") or health_check_value(health, "secrets", "WARN"):
+        risk_plan["seguranca_secrets_aprovacao"].append("Tratar achados de secrets primeiro; documentar apenas tipo/local, nunca valores.")
+    low_dimensions = [d for d in dimensions if d.score < 90]
+    if low_dimensions:
+        risk_plan["integridade_estrutural"].extend([f"Revisar {d.label} ({d.score}/100): {d.reason}" for d in low_dimensions])
+    else:
+        risk_plan["integridade_estrutural"].append("Sem dimensão abaixo de 90; manter rotina de preflight antes de mexer em skills/agentes/rotinas.")
+    risk_plan["backup_rollback"].append("Para mudanças documentais: branch/worktree e diff revisável bastam como rollback. Para produção/runtime: preparar backup/rollback explícito e pedir aprovação.")
+    risk_plan["evidencia"].append(f"Health check usado: {health.get('path')} — disponível={health.get('available')} FAIL={health.get('fail_count')} WARN={health.get('warn_count')}.")
+    risk_plan["proxima_acao_segura"].append("Executar somente correções documentais locais/PR quando health check, secret scan e diff estiverem limpos; bloquear produção/externo/credencial/runtime para aprovação Lucas.")
     return {
         "date": report_date,
         "overall_score": overall,
         "dimensions": [asdict(d) for d in dimensions],
         "health_check": {"path": health.get("path"), "available": health.get("available"), "fail_count": health.get("fail_count"), "warn_count": health.get("warn_count")},
         "safe_recommendations": safe_recommendations,
+        "risk_prioritized_plan": risk_plan,
         "requires_lucas_approval": approvals,
         "non_changes": [
             "Produção",
@@ -289,6 +314,23 @@ def markdown(report: dict[str, Any]) -> str:
             lines.append(f"- {rec}\n")
     else:
         lines.append("- Nenhuma correção documental imediata detectada.\n")
+    lines.append("\n## Plano priorizado por risco\n")
+    labels = [
+        ("seguranca_secrets_aprovacao", "Segurança/secrets/aprovação"),
+        ("backup_rollback", "Backup/rollback"),
+        ("integridade_estrutural", "Integridade estrutural"),
+        ("evidencia", "Evidência"),
+        ("proxima_acao_segura", "Próxima ação segura"),
+        ("nao_tocar", "O que não será tocado"),
+    ]
+    for key, label in labels:
+        lines.append(f"### {label}\n")
+        items = report.get("risk_prioritized_plan", {}).get(key, [])
+        if items:
+            for item in items:
+                lines.append(f"- {item}\n")
+        else:
+            lines.append("- Nenhum item crítico identificado nesta categoria.\n")
     lines.append("\n## Itens que exigem aprovação Lucas\n")
     for item in report["requires_lucas_approval"]:
         lines.append(f"- {item}\n")
