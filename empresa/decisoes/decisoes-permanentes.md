@@ -1,5 +1,8 @@
 # Decisões Permanentes — Grupo Cimino
 
+> LEGACY / SUPERSEDED — este arquivo contém referências históricas migradas de fases anteriores. Não usar paths `/root`, Mem0, OpenClaw/cerebro-cimino ou scripts citados aqui como instrução operacional viva. Fonte atual: `/opt/data/hermes_bruno_ingest/hermes-brain` e rotinas governadas em `areas/operacoes/`.
+
+
 ## Infraestrutura
 | Decisão | Motivo | Data |
 |---------|--------|------|
@@ -128,7 +131,7 @@
 | `364fb6bd4036` | Hermes Brain Sync — Night (10pm) | Mesmo motivo — redundante com sync nativo |
 
 ## Fonte
-Sincronizado do cerebro-cimino (VPS: /root/cerebro-cimino) para hermes-brain (/root/hermes-brain)
+Fonte histórica migrada do material Cérebro Cimino. Nomenclatura atual: Cérebro Cimino = Hermes Brain; fonte operacional canônica fica em `/opt/data/hermes_bruno_ingest/hermes-brain` e dados vivos devem ser revalidados nas APIs/sistemas.
 
 ## Autonomia documental de baixo risco (2026-05-09)
 

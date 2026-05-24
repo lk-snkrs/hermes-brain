@@ -1,0 +1,3369 @@
+{
+  "generated_at": "2026-05-13T10:41:29.019502+00:00",
+  "status": "gmc_p1_attribute_post_apply_onda1_verified_wave2_review_ready_no_write",
+  "scope": "Read-only post-apply status refresh for Onda 1 + review sample for Onda 2. No Merchant writes.",
+  "source_labels": [
+    "fact_merchant_center",
+    "fact_shopify_local_snapshot",
+    "derived_reconciliation"
+  ],
+  "summary": {
+    "fresh_merchant_products_current": 23241,
+    "fresh_merchant_productstatuses_current": 23241,
+    "onda1_selected_applied": 60,
+    "onda1_product_present": 60,
+    "onda1_sizes_match_expected": 60,
+    "onda1_size_issue_still_present": 0,
+    "onda1_any_required_issue_still_present": 0,
+    "wave2_packet_rows": 1523,
+    "wave2_review_state_counts": {
+      "candidate_wave2_review_default_adult_unisex_size": 1285,
+      "blocked_missing_suggested_size": 51,
+      "review_non_default_age_gender": 187
+    },
+    "wave2_fresh_missing_attr_counts": {
+      "age group": 1469,
+      "gender": 1469,
+      "size": 1463,
+      "color": 54
+    },
+    "wave2_sample_rows": 80,
+    "write_allowed_now": 0
+  },
+  "onda1_verify_rows": [
+    {
+      "product_id": "online:pt:BR:105247",
+      "merchant_title": "Boné Carhartt Canvas Script Graphic Preto",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:11700328-1",
+      "merchant_title": "Boné Lululemon Classic Ball Wordmark",
+      "expected_sizes": [
+        "Bone/White"
+      ],
+      "current_sizes": [
+        "Bone/White"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:11700328-2",
+      "merchant_title": "Boné Lululemon Classic Ball Wordmark",
+      "expected_sizes": [
+        "Butter Cream/Light Ivory"
+      ],
+      "current_sizes": [
+        "Butter Cream/Light Ivory"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:11700328-3",
+      "merchant_title": "Boné Lululemon Classic Ball Wordmark",
+      "expected_sizes": [
+        "Lavender Lux/Goodnight Plum"
+      ],
+      "current_sizes": [
+        "Lavender Lux/Goodnight Plum"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:11700328-4",
+      "merchant_title": "Boné Lululemon Classic Ball Wordmark",
+      "expected_sizes": [
+        "Passionate"
+      ],
+      "current_sizes": [
+        "Passionate"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:11700328-5",
+      "merchant_title": "Boné Lululemon Classic Ball Wordmark",
+      "expected_sizes": [
+        "Black/White"
+      ],
+      "current_sizes": [
+        "Black/White"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:11700328-6",
+      "merchant_title": "Boné Lululemon Classic Ball Wordmark",
+      "expected_sizes": [
+        "White/Black"
+      ],
+      "current_sizes": [
+        "White/Black"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:11750230-1",
+      "merchant_title": "Bolsa Lululemon Slouchy Sling 6L",
+      "expected_sizes": [
+        "Lava Cake"
+      ],
+      "current_sizes": [
+        "Lava Cake"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:11750230-2",
+      "merchant_title": "Bolsa Lululemon Slouchy Sling 6L",
+      "expected_sizes": [
+        "Light Ivory"
+      ],
+      "current_sizes": [
+        "Light Ivory"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:11750230-3",
+      "merchant_title": "Bolsa Lululemon Slouchy Sling 6L",
+      "expected_sizes": [
+        "Black"
+      ],
+      "current_sizes": [
+        "Black"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:11870629-1",
+      "merchant_title": "Bolsa Lululemon City Essentials",
+      "expected_sizes": [
+        "Black/Gold"
+      ],
+      "current_sizes": [
+        "Black/Gold"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836572231",
+      "merchant_title": "Livro Taschen The Ultimate Sneaker Book",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836596244",
+      "merchant_title": "Livro Taschen Shoes A–Z: The Collection of The Museum at FIT",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836596299",
+      "merchant_title": "Livro Taschen World’s Greatest Sneaker Collectors",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:9783848002399",
+      "merchant_title": "Livro H. F. Ullmann Sapatos",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:AIME109",
+      "merchant_title": "Boné Aimé Leon Dore Porsche Nylon Logo Jet Black Preto",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:AIME123",
+      "merchant_title": "Boné Aimé Leon Dore x Porsche Colorblock Logo Pristine Off White",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:Aime5",
+      "merchant_title": "Boné 6 Panel Aimé Leon Dore Cycling Logo Azul",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:DM4657004",
+      "merchant_title": "Tênis Nike Air Jordan 1 Low Crater Grey University Blue Preto",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:DN4045001",
+      "merchant_title": "Tênis Nike Air Jordan 1 Mid SE Light Iron Ore Cinza",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:JAC2C1SUN",
+      "merchant_title": "Óculos de Sol Jacquemus JAC2C1SUN Preto",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:JAC2C2SUN",
+      "merchant_title": "Óculos de Sol Jacquemus JAC2C2SUN Bege",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:JAC4C1SUN",
+      "merchant_title": "Óculos de Sol Jacquemus JAC4C1SUN Preto",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:JAC4C2SUN",
+      "merchant_title": "Óculos de Sol Jacquemus JAC4C2SUN Animal Print",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:JAC5C2SUN",
+      "merchant_title": "Óculos de Sol Jacquemus JAC5C2SUN Branco",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:JM2",
+      "merchant_title": "Jason Markk Ready to Use Foam Cleaner",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:JM4",
+      "merchant_title": "Jason Markk Refresh Spray",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:JM5",
+      "merchant_title": "Jason Markk Delicates Cleaning Brush",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:JM6",
+      "merchant_title": "Jason Markk Durables Cleaning Brush",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:JM8",
+      "merchant_title": "Kit Jason Markk Espuma Quick Clean",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB1",
+      "merchant_title": "MEDICOM TOY - Bearbrick Jean-Michel Basquiat \"Special\" 100% & 400% Set Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB10",
+      "merchant_title": "MEDICOM TOY - Bearbrick Death Stranding 1000% Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB11",
+      "merchant_title": "MEDICOM TOY - Bearbrick Keith Haring #8 1000% Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB12",
+      "merchant_title": "MEDICOM TOY - Bearbrick Breaking Bad Pink Bear 1000% Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB13",
+      "merchant_title": "MEDICOM TOY - Bearbrick Jean-Michel Basquiat #7 1000% Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB14",
+      "merchant_title": "MEDICOM TOY - Bearbrick Jackson Pollock Studio (Splash) 1000% Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB15",
+      "merchant_title": "MEDICOM TOY - Bearbrick Leonardo De Vinci Mona Lisa 1000% Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB2",
+      "merchant_title": "MEDICOM TOY - Bearbrick Jean-Michel Basquiat \"Special\" 1000% Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB3",
+      "merchant_title": "MEDICOM TOY - Bearbrick x S'YTE x Junji Ito Uzumaki 1000% Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB4",
+      "merchant_title": "MEDICOM TOY - Bearbrick x S'YTE x Junji Ito Tomie 1000% Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB5",
+      "merchant_title": "MEDICOM TOY - Bearbrick Jean-Michel Basquiat #10 1000% Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB6",
+      "merchant_title": "MEDICOM TOY - Bearbrick ROBERT INDIANA x fragmentdesign 100% & 400% Set Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB7",
+      "merchant_title": "MEDICOM TOY - Bearbrick ROBERT INDIANA x fragmentdesign 100% & 400% Set Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB8",
+      "merchant_title": "MEDICOM TOY - Bearbrick Katsushika Hokusai (Thirty-six Views of Tomitake, Fine Wind, Clear Morning) 1000% Toy Art Multi-",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB9",
+      "merchant_title": "MEDICOM TOY - BEARBRICK The Batman 100% e 400% Toy Art Multi-Color",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:PERI034-1007",
+      "merchant_title": "Óculos de Sol Palm Angels PERI034-1007 Preto",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:PERI037-0107",
+      "merchant_title": "Óculos de Sol Palm Angels PERI037-0107 Branco",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:PERI049-1007",
+      "merchant_title": "Óculos de Sol Palm Angels PERI049-1007 Preto",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:PERI056-1764",
+      "merchant_title": "Óculos de Sol Palm Angels PERI056-1764 Bege",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:RH11",
+      "merchant_title": "Kit Rhode The Oversized Black Preto",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:RH13",
+      "merchant_title": "Bolsa Rhode Oversized Bubble Bag Black Preto",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:RH19",
+      "merchant_title": "Lip Tint Rhode Scented Peptide Ribbon",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:RH21",
+      "merchant_title": "Lip Tint Rhode Scented Peptide Raspberry Jelly",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:RH25-1",
+      "merchant_title": "Rhode Peptide Eye Prep",
+      "expected_sizes": [
+        "Rhode Logo"
+      ],
+      "current_sizes": [
+        "Rhode Logo"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:RH25-2",
+      "merchant_title": "Rhode Peptide Eye Prep",
+      "expected_sizes": [
+        "R Icon"
+      ],
+      "current_sizes": [
+        "R Icon"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep22",
+      "merchant_title": "Boné Represent Clo Micro Owners Club Jet Black Preto",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep23",
+      "merchant_title": "Boné Represent Clo Owners Club Script Cap Black Preto",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:SSB-3507",
+      "merchant_title": "MEDICOM TOY - Bearbrick Series 49 100% Toy Art",
+      "expected_sizes": [
+        "Default Title"
+      ],
+      "current_sizes": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:ST42-1",
+      "merchant_title": "Bolsa Saint Studio Tote Museo",
+      "expected_sizes": [
+        "Preto"
+      ],
+      "current_sizes": [
+        "Preto"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    },
+    {
+      "product_id": "online:pt:BR:ST42-2",
+      "merchant_title": "Bolsa Saint Studio Tote Museo",
+      "expected_sizes": [
+        "Marrom"
+      ],
+      "current_sizes": [
+        "Marrom"
+      ],
+      "sizes_match_expected": true,
+      "fresh_missing_required_attrs": [],
+      "size_issue_still_present": false,
+      "product_present": true
+    }
+  ],
+  "wave2_sample_rows": [
+    {
+      "product_id": "online:pt:BR:ST68",
+      "offer_id": "ST68",
+      "merchant_title": "Bermuda Saint Studio Alfaiataria Algodão Orgânico Risca de Giz Preto",
+      "shopify_product_title": "Bermuda Saint Studio Alfaiataria Algodão Orgânico Risca de Giz Preto",
+      "shopify_variant_title": "36",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "36"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:YR0065",
+      "offer_id": "YR0065",
+      "merchant_title": "Calça Pace Nomo Tailoring Trousers Preto",
+      "shopify_product_title": "Calça Pace Nomo Tailoring Trousers Preto",
+      "shopify_variant_title": "S/P",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "S/P"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:ST63",
+      "offer_id": "ST63",
+      "merchant_title": "Calça Saint Studio Jeans Baggy Risca de Giz Azul",
+      "shopify_product_title": "Calça Saint Studio Jeans Baggy Risca de Giz Azul",
+      "shopify_variant_title": "36",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "36"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:ST85",
+      "offer_id": "ST85",
+      "merchant_title": "Camisa Saint Studio Pima Listrada Azul",
+      "shopify_product_title": "Camisa Saint Studio Pima Listrada Azul",
+      "shopify_variant_title": "L/G",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "L/G"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:5209-1",
+      "offer_id": "5209-1",
+      "merchant_title": "Camiseta Dane-se x Rubem Valentim Emblema 78 Bordo",
+      "shopify_product_title": "Camiseta Dane-se x Rubem Valentim Emblema 78 Bordo",
+      "shopify_variant_title": "G/L",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "G/L"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:5362-2",
+      "offer_id": "5362-2",
+      "merchant_title": "Camiseta Oversized Dane-se Pare, Respire Off White",
+      "shopify_product_title": "Camiseta Oversized Dane-se Pare, Respire Off White",
+      "shopify_variant_title": "M",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "M"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:YR0044",
+      "offer_id": "YR0044",
+      "merchant_title": "Camiseta Pace Buero Off White",
+      "shopify_product_title": "Camiseta Pace Buero Off White",
+      "shopify_variant_title": "L/G",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "L/G"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:ST51",
+      "offer_id": "ST51",
+      "merchant_title": "Camiseta Saint Studio Boxy Supima Mid Century Branco",
+      "shopify_product_title": "Camiseta Saint Studio Boxy Supima Mid Century Branco",
+      "shopify_variant_title": "L/G",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "L/G"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:SLCRCVNV-1",
+      "offer_id": "SLCRCVNV-1",
+      "merchant_title": "Camiseta Slyce Racquet Club Azul Marinho",
+      "shopify_product_title": "Camiseta Slyce Racquet Club Azul Marinho",
+      "shopify_variant_title": "P/S",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "P/S"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVOW-1",
+      "offer_id": "SLCRBVOW-1",
+      "merchant_title": "Camiseta Slyce Racquet Club Bordada Off White",
+      "shopify_product_title": "Camiseta Slyce Racquet Club Bordada Off White",
+      "shopify_variant_title": "P/S",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "P/S"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:4150233_0090_356-1",
+      "offer_id": "4150233_0090_356-1",
+      "merchant_title": "Chinelo Havaianas Top Dolce & Gabbana Banano Verde",
+      "shopify_product_title": "Chinelo Havaianas Top Dolce & Gabbana Banano Verde",
+      "shopify_variant_title": "35/36",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "35/36"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:2000415173436-1",
+      "offer_id": "2000415173436-1",
+      "merchant_title": "Mule Lululemon SwayDay Blissful Pink Rosa",
+      "shopify_product_title": "Mule Lululemon SwayDay Blissful Pink Rosa",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:1183C233-250-1",
+      "offer_id": "1183C233-250-1",
+      "merchant_title": "Onitsuka Tiger Mexico 66 Paraty Natural Navy Bege",
+      "shopify_product_title": "Onitsuka Tiger Mexico 66 Paraty Natural Navy Bege",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:1183C468020-1",
+      "offer_id": "1183C468020-1",
+      "merchant_title": "Onitsuka Tiger Mexico 66 SD Metallic Series Metropolis Cream Cinza",
+      "shopify_product_title": "Onitsuka Tiger Mexico 66 SD Metallic Series Metropolis Cream Cinza",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:SLPTMCS-1",
+      "offer_id": "SLPTMCS-1",
+      "merchant_title": "Polo Slyce On Season TM Verde",
+      "shopify_product_title": "Polo Slyce On Season TM Verde",
+      "shopify_variant_title": "M",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "M"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:SLFTPVNV-1",
+      "offer_id": "SLFTPVNV-1",
+      "merchant_title": "Pulôver Slyce Frenchterry Zipper Azul Marinho",
+      "shopify_product_title": "Pulôver Slyce Frenchterry Zipper Azul Marinho",
+      "shopify_variant_title": "M",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "M"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:SLFTPVOW-1",
+      "offer_id": "SLFTPVOW-1",
+      "merchant_title": "Pulôver Slyce Frenchterry Zipper Off White",
+      "shopify_product_title": "Pulôver Slyce Frenchterry Zipper Off White",
+      "shopify_variant_title": "M",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "M"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:w6525r_01-3",
+      "offer_id": "w6525r_01-3",
+      "merchant_title": "Short Alo Yoga 5\" Airbrush Double Up Azul Marinho",
+      "shopify_product_title": "Short Alo Yoga 5\" Airbrush Double Up Azul Marinho",
+      "shopify_variant_title": "S/P",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "S/P"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:ST73",
+      "offer_id": "ST73",
+      "merchant_title": "Shorts Saint Studio Everywear Caqui Bege",
+      "shopify_product_title": "Shorts Saint Studio Everywear Caqui Bege",
+      "shopify_variant_title": "36",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "36"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:ST78",
+      "offer_id": "ST78",
+      "merchant_title": "Shorts Saint Studio Everywear Preto",
+      "shopify_product_title": "Shorts Saint Studio Everywear Preto",
+      "shopify_variant_title": "36",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "36"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:SLFTSVOW-1",
+      "offer_id": "SLFTSVOW-1",
+      "merchant_title": "Shorts Slyce Frenchterry Off White",
+      "shopify_product_title": "Shorts Slyce Frenchterry Off White",
+      "shopify_variant_title": "P/S",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "P/S"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:SLSTMCS-1",
+      "offer_id": "SLSTMCS-1",
+      "merchant_title": "Shorts Slyce On Season TM Verde",
+      "shopify_product_title": "Shorts Slyce On Season TM Verde",
+      "shopify_variant_title": "M",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "M"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-601",
+      "offer_id": "HQ4307-601",
+      "merchant_title": "Slide Nike Mind 001 'Team Red' Vermelho",
+      "shopify_product_title": "Slide Nike Mind 001 'Team Red' Vermelho",
+      "shopify_variant_title": "38",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "38"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-301-37",
+      "offer_id": "HQ4307-301-37",
+      "merchant_title": "Slide Nike Mind 001 Geode Teal Verde",
+      "shopify_product_title": "Slide Nike Mind 001 Geode Teal Verde",
+      "shopify_variant_title": "37",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "37"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-100-34",
+      "offer_id": "HQ4307-100-34",
+      "merchant_title": "Slide Nike Mind 001 Sail Bege",
+      "shopify_product_title": "Slide Nike Mind 001 Sail Bege",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-101-34",
+      "offer_id": "HQ4307-101-34",
+      "merchant_title": "Slide Nike Mind 001 White Speed Red Branco",
+      "shopify_product_title": "Slide Nike Mind 001 White Speed Red Branco",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:JR8179-1",
+      "offer_id": "JR8179-1",
+      "merchant_title": "Tenis Adidas Gazelle Stack Collegiate Green Cream White Verde",
+      "shopify_product_title": "Tenis Adidas Gazelle Stack Collegiate Green Cream White Verde",
+      "shopify_variant_title": "35",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "35"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:KI6669-34",
+      "offer_id": "KI6669-34",
+      "merchant_title": "Tenis adidas Samba OG Crystal Linen Ivory Gum Branco",
+      "shopify_product_title": "Tenis adidas Samba OG Crystal Linen Ivory Gum Branco",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:MR530AA-37",
+      "offer_id": "MR530AA-37",
+      "merchant_title": "Tenis New Balance 530 Beige Angora Creme",
+      "shopify_product_title": "Tenis New Balance 530 Beige Angora Creme",
+      "shopify_variant_title": "37",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "37"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:DN1635-100-1",
+      "offer_id": "DN1635-100-1",
+      "merchant_title": "Tenis Nike Air Jordan 1 Low SE Craft Inside Out White Phantom Bege",
+      "shopify_product_title": "Tenis Nike Air Jordan 1 Low SE Craft Inside Out White Phantom Bege",
+      "shopify_variant_title": "41",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "41"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:FD9711-602-37",
+      "offer_id": "FD9711-602-37",
+      "merchant_title": "Tenis Nike Air Zoom Vomero 5 Doernbecher 2023 Laranja",
+      "shopify_product_title": "Tenis Nike Air Zoom Vomero 5 Doernbecher 2023 Laranja",
+      "shopify_variant_title": "37",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "37"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:VN000E3QBX9",
+      "offer_id": "VN000E3QBX9",
+      "merchant_title": "Tenis Vans Knu Skool MTE-1 LX Imran Potato Azul",
+      "shopify_product_title": "Tenis Vans Knu Skool MTE-1 LX Imran Potato Azul",
+      "shopify_variant_title": "36",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "36"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:JQ9230-1",
+      "offer_id": "JQ9230-1",
+      "merchant_title": "Tênis Adidas Ballerina Bad Bunny Bold Gold Amarelo",
+      "shopify_product_title": "Tênis Adidas Ballerina Bad Bunny Bold Gold Amarelo",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-1",
+      "offer_id": "JH5439-1",
+      "merchant_title": "Tênis Adidas Handball Spezial Bordô",
+      "shopify_product_title": "Tênis Adidas Handball Spezial Bordô",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:IF6490-1",
+      "offer_id": "IF6490-1",
+      "merchant_title": "Tênis Adidas Handball Spezial Earth Strata Gum Marrom",
+      "shopify_product_title": "Tênis Adidas Handball Spezial Earth Strata Gum Marrom",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:43774078387110",
+      "offer_id": "43774078387110",
+      "merchant_title": "Tênis Adidas Handball Spezial Preloved Brown Orange Tint Gum Marrom",
+      "shopify_product_title": "Tênis Adidas Handball Spezial Preloved Brown Orange Tint Gum Marrom",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:JR4482-34",
+      "offer_id": "JR4482-34",
+      "merchant_title": "Tênis Adidas Samba Jane Chalk White Wonder Quartz Branco",
+      "shopify_product_title": "Tênis Adidas Samba Jane Chalk White Wonder Quartz Branco",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:43774078387680",
+      "offer_id": "43774078387680",
+      "merchant_title": "Tênis Adidas Samba Jane White Blue Gum Branco",
+      "shopify_product_title": "Tênis Adidas Samba Jane White Blue Gum Branco",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:JS3931-1",
+      "offer_id": "JS3931-1",
+      "merchant_title": "Tênis Adidas Samba LT Cow Print Brown White Marrom",
+      "shopify_product_title": "Tênis Adidas Samba LT Cow Print Brown White Marrom",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:JR0881-1",
+      "offer_id": "JR0881-1",
+      "merchant_title": "Tênis Adidas Samba OG Better Scarlet White Vermelho",
+      "shopify_product_title": "Tênis Adidas Samba OG Better Scarlet White Vermelho",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:JR0888-34",
+      "offer_id": "JR0888-34",
+      "merchant_title": "Tênis Adidas Samba OG Giraffe Print Grey Crystal White Gold Bege",
+      "shopify_product_title": "Tênis Adidas Samba OG Giraffe Print Grey Crystal White Gold Bege",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:JR8167-1",
+      "offer_id": "JR8167-1",
+      "merchant_title": "Tênis Adidas Samba OG Shadow Brown Powder Yellow Marrom",
+      "shopify_product_title": "Tênis Adidas Samba OG Shadow Brown Powder Yellow Marrom",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:JR0035-1",
+      "offer_id": "JR0035-1",
+      "merchant_title": "Tênis Adidas Samba OG Silver Metallic Cracked Leather Prateado",
+      "shopify_product_title": "Tênis Adidas Samba OG Silver Metallic Cracked Leather Prateado",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:JI0189-1",
+      "offer_id": "JI0189-1",
+      "merchant_title": "Tênis Adidas SL 72 OG Leopard Print Laranja",
+      "shopify_product_title": "Tênis Adidas SL 72 OG Leopard Print Laranja",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:KI3582-34",
+      "offer_id": "KI3582-34",
+      "merchant_title": "Tênis Adidas Taekwondo Mei Ballet Cream White Branco",
+      "shopify_product_title": "Tênis Adidas Taekwondo Mei Ballet Cream White Branco",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:IH3999-34",
+      "offer_id": "IH3999-34",
+      "merchant_title": "Tênis Adidas Tokyo Mary Jane Cream White Red Gold Metallic Creme",
+      "shopify_product_title": "Tênis Adidas Tokyo Mary Jane Cream White Red Gold Metallic Creme",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:JQ0567-1",
+      "offer_id": "JQ0567-1",
+      "merchant_title": "Tênis Adidas Tokyo Off White Core Black Branco",
+      "shopify_product_title": "Tênis Adidas Tokyo Off White Core Black Branco",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:B37572",
+      "offer_id": "B37572",
+      "merchant_title": "Tênis Adidas Yeezy Boost 350 V2 Semi Frozen Yellow",
+      "shopify_product_title": "Tênis Adidas Yeezy Boost 350 V2 Semi Frozen Yellow",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:1203B011-100-37",
+      "offer_id": "1203B011-100-37",
+      "merchant_title": "Tênis ASICS Marvel vs. Capcom x Kith x ASICS Gel Kayano 14 Ryu Branco",
+      "shopify_product_title": "Tênis ASICS Marvel vs. Capcom x Kith x ASICS Gel Kayano 14 Ryu Branco",
+      "shopify_variant_title": "37",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "37"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:JS3886-34",
+      "offer_id": "JS3886-34",
+      "merchant_title": "Tênis Bad Bunny x Adidas BADBO 1.0 Rise Branco",
+      "shopify_product_title": "Tênis Bad Bunny x Adidas BADBO 1.0 Rise Branco",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:HM4743001",
+      "offer_id": "HM4743001",
+      "merchant_title": "Tênis Levi's x Nike Air Max 95 OG Black Anthracite Denim Preto",
+      "shopify_product_title": "Tênis Levi's x Nike Air Max 95 OG Black Anthracite Denim Preto",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:A15FW740-10",
+      "offer_id": "A15FW740-10",
+      "merchant_title": "Tênis Maison Mihara Yasuhiro \"Keith\" OG Sole Canvas Low-top Black Preto",
+      "shopify_product_title": "Tênis Maison Mihara Yasuhiro \"Keith\" OG Sole Canvas Low-top Black Preto",
+      "shopify_variant_title": "43",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "43"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:U1906LNT-1",
+      "offer_id": "U1906LNT-1",
+      "merchant_title": "Tênis New Balance 1906L Black Suede Preto",
+      "shopify_product_title": "Tênis New Balance 1906L Black Suede Preto",
+      "shopify_variant_title": "43",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "43"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:U1906LNU-1",
+      "offer_id": "U1906LNU-1",
+      "merchant_title": "Tênis New Balance 1906L Khaki Bege",
+      "shopify_product_title": "Tênis New Balance 1906L Khaki Bege",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:u1906lbn",
+      "offer_id": "u1906lbn",
+      "merchant_title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+      "shopify_product_title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:U1906LNS-34",
+      "offer_id": "U1906LNS-34",
+      "merchant_title": "Tênis New Balance 1906L Rich Oak Suede Camurça Slip-on Marrom",
+      "shopify_product_title": "Tênis New Balance 1906L Rich Oak Suede Camurça Slip-on Marrom",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:U1906LOC-34",
+      "offer_id": "U1906LOC-34",
+      "merchant_title": "Tênis New Balance 1906L Silver Metallic Black Prateado",
+      "shopify_product_title": "Tênis New Balance 1906L Silver Metallic Black Prateado",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:m2002rda",
+      "offer_id": "m2002rda",
+      "merchant_title": "Tênis New Balance 2002R Protection Pack Rain Cloud Suede Mesh Cinza",
+      "shopify_product_title": "Tênis New Balance 2002R Protection Pack Rain Cloud Suede Mesh Cinza",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:U204L1KP-34",
+      "offer_id": "U204L1KP-34",
+      "merchant_title": "Tênis New Balance 204L Dark Silver Metallic Cinza",
+      "shopify_product_title": "Tênis New Balance 204L Dark Silver Metallic Cinza",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:U204L7A8-34",
+      "offer_id": "U204L7A8-34",
+      "merchant_title": "Tênis New Balance 204L Light Silver Metallic Prata",
+      "shopify_product_title": "Tênis New Balance 204L Light Silver Metallic Prata",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:U204L5AV-34",
+      "offer_id": "U204L5AV-34",
+      "merchant_title": "Tênis New Balance 204L Lone Star Grey Cinza",
+      "shopify_product_title": "Tênis New Balance 204L Lone Star Grey Cinza",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:U204L4HH-34",
+      "offer_id": "U204L4HH-34",
+      "merchant_title": "Tênis New Balance 204L Raincloud Ash Wood Cinza",
+      "shopify_product_title": "Tênis New Balance 204L Raincloud Ash Wood Cinza",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:U204L6A6-35",
+      "offer_id": "U204L6A6-35",
+      "merchant_title": "Tênis New Balance 204L Reflection Bege",
+      "shopify_product_title": "Tênis New Balance 204L Reflection Bege",
+      "shopify_variant_title": "35",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "35"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:U204L2SZ-34",
+      "offer_id": "U204L2SZ-34",
+      "merchant_title": "Tênis New Balance 204L Sea Salt Linen Bege",
+      "shopify_product_title": "Tênis New Balance 204L Sea Salt Linen Bege",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:MR530KA-1",
+      "offer_id": "MR530KA-1",
+      "merchant_title": "Tênis New Balance 530 Steel Grey Cinza",
+      "shopify_product_title": "Tênis New Balance 530 Steel Grey Cinza",
+      "shopify_variant_title": "35",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "35"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060CTA-1",
+      "offer_id": "U9060CTA-1",
+      "merchant_title": "Tênis New Balance 9060 Fall Suedes Pack Arid Stone Marrom",
+      "shopify_product_title": "Tênis New Balance 9060 Fall Suedes Pack Arid Stone Marrom",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:u9060aga-1",
+      "offer_id": "u9060aga-1",
+      "merchant_title": "Tênis New Balance 9060 Grey Day 2025 Cinza",
+      "shopify_product_title": "Tênis New Balance 9060 Grey Day 2025 Cinza",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:43774078389050",
+      "offer_id": "43774078389050",
+      "merchant_title": "Tênis New Balance 9060 Mushroom Arid Stone Bege",
+      "shopify_product_title": "Tênis New Balance 9060 Mushroom Arid Stone Bege",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:U9060EEL-1",
+      "offer_id": "U9060EEL-1",
+      "merchant_title": "Tênis New Balance 9060 Pearl Grey Linen Azul",
+      "shopify_product_title": "Tênis New Balance 9060 Pearl Grey Linen Azul",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:UGTR17G-34",
+      "offer_id": "UGTR17G-34",
+      "merchant_title": "Tênis New Balance Gator Run Shadow Red Vermelho",
+      "shopify_product_title": "Tênis New Balance Gator Run Shadow Red Vermelho",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:43774078390000",
+      "offer_id": "43774078390000",
+      "merchant_title": "Tênis Nike Air Jordan 1 Retro Low Fragment Design x Travis Scott Couro Branco Preto Azul",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Retro Low Fragment Design x Travis Scott Couro Branco Preto Azul",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-010-37",
+      "offer_id": "FV5029-010-37",
+      "merchant_title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+      "shopify_product_title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+      "shopify_variant_title": "37",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "37"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:IH7971-001-34",
+      "offer_id": "IH7971-001-34",
+      "merchant_title": "Tênis Nike Air Jordan Chase B x Travis Scott x Jumpman Jack TR Black Night Silver Preto",
+      "shopify_product_title": "Tênis Nike Air Jordan Chase B x Travis Scott x Jumpman Jack TR Black Night Silver Preto",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:IQ8601-001-34",
+      "offer_id": "IQ8601-001-34",
+      "merchant_title": "Tênis Nike Air Liquid Max x Fragment Design Black Anthracite Preto",
+      "shopify_product_title": "Tênis Nike Air Liquid Max x Fragment Design Black Anthracite Preto",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:DH1348-001-35",
+      "offer_id": "DH1348-001-35",
+      "merchant_title": "Tênis Nike Air Max 1 x Patta Monarch Laranja",
+      "shopify_product_title": "Tênis Nike Air Max 1 x Patta Monarch Laranja",
+      "shopify_variant_title": "35",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "35"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:HF8814-001-34",
+      "offer_id": "HF8814-001-34",
+      "merchant_title": "Tênis Nike Air Max 90 x Patta SP Cyber Branco",
+      "shopify_product_title": "Tênis Nike Air Max 90 x Patta SP Cyber Branco",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:HQ3490-099-1",
+      "offer_id": "HQ3490-099-1",
+      "merchant_title": "Tênis Nike Cortez SE Tiempo Pack Metallic Cool Grey Cinza",
+      "shopify_product_title": "Tênis Nike Cortez SE Tiempo Pack Metallic Cool Grey Cinza",
+      "shopify_variant_title": "38",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "38"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:fz8117-102",
+      "offer_id": "fz8117-102",
+      "merchant_title": "Tênis Nike Jordan Jumpman Jack TR Travis Scott Bright Cactus Amarelo",
+      "shopify_product_title": "Tênis Nike Jordan Jumpman Jack TR Travis Scott Bright Cactus Amarelo",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:HQ4310-200-34",
+      "offer_id": "HQ4310-200-34",
+      "merchant_title": "Tênis Nike Mind 002 Light Violet Ore Roxo",
+      "shopify_product_title": "Tênis Nike Mind 002 Light Violet Ore Roxo",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    },
+    {
+      "product_id": "online:pt:BR:HQ4310-100-34",
+      "offer_id": "HQ4310-100-34",
+      "merchant_title": "Tênis Nike Mind 002 Sail Bege",
+      "shopify_product_title": "Tênis Nike Mind 002 Sail Bege",
+      "shopify_variant_title": "34",
+      "packet_missing_attributes": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "fresh_missing_required_attrs": [
+        "age group",
+        "gender",
+        "size"
+      ],
+      "current_sizes": [],
+      "current_age_group": null,
+      "current_gender": null,
+      "suggested_sizes": [
+        "34"
+      ],
+      "suggested_age_group": "adult",
+      "suggested_gender": "unisex",
+      "review_decision_state": "candidate_wave2_review_default_adult_unisex_size",
+      "review_reasons": [
+        "fresh productstatus still reports required metadata missing",
+        "default adult/unisex + Shopify size evidence but needs human approval"
+      ],
+      "apply_allowed_now": false
+    }
+  ],
+  "not_performed": [
+    "merchant_write",
+    "merchant_delete",
+    "feed_update_or_fetch",
+    "shopify_write",
+    "tiny_call_or_write",
+    "database_write",
+    "pos_write",
+    "klaviyo_or_whatsapp_send",
+    "notion_or_n8n_write",
+    "loyalty_or_judgeme_action"
+  ]
+}

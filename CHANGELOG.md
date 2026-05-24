@@ -1,3 +1,115 @@
+## 2026-05-23 — Daily Intelligence Loop saudável + foco LK 404/GEO
+
+- Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-23.md`.
+- Host observability salvo em `reports/hermes-host-docker-observability-2026-05-23.json`: containers esperados `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)`, helper com `alerts: []`.
+- Confirmado estado vivo: 23 jobs ativos no cron status, watchdogs runtime/compressão e gateways especialistas em silent-OK; `hermes skills check` com 0 updates disponíveis.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 segue como release pública mais recente; nenhum runtime swap/restart executado.
+- Brain Health pré/pós-run salvo com FAIL=0/WARN=0; nenhuma correção estrutural necessária hoje.
+- Prioridade ativa roteada para LK OS/LK Growth: tema Shopify 404/autenticidade + GEO/GMC em governança, com Zipper/Mordomo em Decision Inbox/manutenção, SPITI em monitoramento e Hermes/Infra saudável.
+- Achado de higiene: inventário documental de crons ainda tem data-base 2026-05-20 e alguns destinos antigos (`origin`) que hoje aparecem `local` no cron real; classificado como drift documental não crítico para próxima rodada de Brain hygiene.
+
+## 2026-05-22 — Daily Intelligence Loop saudável + índice LK/GMC
+
+- Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-22.md`.
+- Host observability salvo em `reports/hermes-host-docker-observability-2026-05-22.json`: containers esperados `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)`, helper com `alerts: []`.
+- Confirmado estado vivo: 23 jobs ativos no cron status, watchdogs runtime/compressão em silent-OK, `hermes skills check` com 0 updates disponíveis.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 segue como release pública mais recente; nenhum runtime swap/restart executado.
+- Corrigidos 10 WARNs do Brain Health: rotinas LK/GMC de 2026-05-21 foram indexadas em `empresa/rotinas/_index.md` com guardrails de escopo, dev theme unpublished, sem produção e sem bulk price retry.
+- Brain Health pós-run salvo em `reports/brain-health-check-2026-05-22-post.json` com FAIL=0/WARN=0.
+- Prioridade ativa roteada para LK OS / GMC + CRM Recovery/Crisp, com Zipper/Mordomo em Decision Inbox/manutenção, SPITI em monitoramento e Hermes/Infra saudável.
+
+## 2026-05-21 — Daily Intelligence Loop saudável + higiene LK/Crisp
+
+- Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-21.md`.
+- Host observability salvo em `reports/hermes-host-docker-observability-2026-05-21.json`: containers esperados `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)`, helper com `alerts: []`.
+- Confirmado estado vivo: 20 jobs ativos no cron status, watchdogs runtime/compressão/LK/Mordomo/LK Growth/SPITI em silent-OK, `hermes skills check` com 0 updates disponíveis.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 segue como release pública mais recente; nenhum runtime swap/restart executado.
+- Corrigido WARN do Brain Health: indexada `areas/lk/sub-areas/crm/rotinas/aprendizado-diario-larissa-crisp-hugo.md` em `empresa/rotinas/_index.md` como rotina planejada, sem ativar cron nem autorização externa.
+- Brain Health pós-run salvo em `reports/brain-health-check-2026-05-21-post.json` com FAIL=0/WARN=0.
+- Prioridade ativa roteada para LK OS / CRM Crisp + Mordomo/autonomia guardrail, com Zipper/SPITI em manutenção/watchdog e Hermes/Infra saudável.
+
+## 2026-05-20 — Daily Intelligence Loop saudável + Learning Loop semanal
+
+- Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-20.md`.
+- Host observability salvo em `reports/hermes-host-docker-observability-2026-05-20.json`: containers esperados `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)`, helper com `alerts: []`.
+- Confirmado estado vivo: 24 jobs totais, 17 ativos, 7 pausados; watchdogs runtime/compressão/Mordomo/LK Growth/SPITI testados em silent-OK; Brain Health `reports/brain-health-check-2026-05-20-daily-loop.json` com FAIL=0/WARN=0.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 segue como release pública mais recente; nenhum runtime swap/restart executado.
+- Atualizado inventário `areas/operacoes/inventarios/crons-agentes-profiles.md` para snapshot 2026-05-20.
+- Ativado cron semanal `f4c499e85eac` / `Lucas Brain weekly Learning Loop report`, segunda-feira 09:15 BRT, para consolidar aprendizados dos relatórios diários das 02h e enviar resumo executivo no Telegram com decisões inline.
+- Refinado cron diário `f5a23dd6a1bd` para usar rubrica explícita de prioridade: foco principal único, evidências, modo por área (LK/Mission Control/Zipper/SPITI/Mordomo), risco de dispersão e próxima ação segura.
+- Documentada rotina `areas/operacoes/rotinas/brain-learning-loop-weekly-report-priority-routing-2026-05-20.md` e indexada em `empresa/rotinas/_index.md`.
+- Guardrails preservados: weekly/daily Learning Loop só escreve Brain/local docs; sem Docker/runtime/gateway/host, source-of-truth, externo, dinheiro, cliente, segredo ou destrutivo.
+
+## 2026-05-19 — Brain Sync guardrails + painel semanal
+
+- Resolvidos WARNs do health check: criado MAPA de Zipper Programação e indexadas rotinas LK/Mordomo/Operações que estavam fora de `empresa/rotinas/_index.md`.
+- Refinada a política do Brain Sync para relatórios: sínteses `.md` curadas entram; HTML/CSV/JSON bruto/dumps/receipts/logs/PII ficam bloqueados por padrão.
+- Criada rotina `areas/operacoes/rotinas/painel-semanal-brain.md` e primeiro relatório `reports/brain-weekly-panel/brain-weekly-panel-2026-05-19.md`.
+- Validação: `reports/brain-health-check-2026-05-19-three-fixes.json` com FAIL=0/WARN=0. Nenhum write externo além de documentação/GitHub via Brain Sync seguro.
+
+## 2026-05-19 — Lucas Brain Daily Intelligence Loop
+
+- Executado protocolo diário 02:00 BRT com helper Hostinger/Docker aprovado; salvo `reports/hermes-host-docker-observability-2026-05-19.json`.
+- Estado vivo confirmado: containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)` nos dois containers; API `/health` OK; 16 jobs ativos.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 segue como release pública mais recente; nenhum runtime swap/restart executado.
+- Detectado alerta Zipper OS: Supabase CRM/Main retornou `522` para fonte read-only (`followups`/`secretary_log`). Corrigido `/opt/data/scripts/zipper_os_cockpit.py` para transformar erro transitório em alerta sanitizado `rc=0 + stdout`, sem traceback; skill `lucas-hermes-continuous-improvement` atualizada com o padrão.
+- Prioridade ativa: Zipper OS segue no centro, com LK OS em manutenção/execução comercial ativa via rotinas SEO/CRO/GEO e alertas P0/P1 de ruptura/SKU/CRO.
+- Artefato: `reports/hermes-continuous-improvement/2026-05-19.md`.
+
+## 2026-05-18 — Lucas Brain Daily Intelligence Loop
+
+- Executado protocolo diário 02:00 BRT em modo read-only: helper Hostinger/Docker aprovado rodou com sucesso e salvou `reports/hermes-host-docker-observability-2026-05-18.json`.
+- Estado vivo confirmado: containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)` nos dois containers.
+- Confirmados 14 crons ativos, API `/health` OK, curator habilitado sem intervenção necessária, `hermes skills check` sem updates disponíveis e watchdogs `no_agent` silenciosos OK.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 segue como release pública mais recente; nenhum runtime swap/restart executado nesta rotina.
+- Prioridade ativa ajustada pelo contexto recente: LK OS/Mission Control voltou ao foco após sessões sobre PRD, reports 09h/16h/19h30 e UX; Zipper OS permanece saudável, com cockpit 2026-05-18 e 1 candidato Gmail pendente para brief local.
+- Artefato: `reports/hermes-continuous-improvement/2026-05-18.md`.
+
+## 2026-05-17 — Lucas Brain Daily Intelligence Loop
+
+- Executado protocolo diário 02:00 BRT em modo read-only: helper Hostinger/Docker aprovado rodou com sucesso e salvou `reports/hermes-host-docker-observability-2026-05-17.json`.
+- Estado vivo confirmado: containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)` nos dois containers.
+- Confirmados 14 crons ativos, API `/health` OK, curator habilitado sem intervenção necessária, `hermes skills check` sem updates disponíveis e watchdogs `no_agent` silenciosos OK.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 segue como release pública mais recente; nenhum runtime swap/restart executado nesta rotina.
+- Prioridade ativa mantida: Zipper OS; cockpit 2026-05-17 gerado/lido com 2 candidatos Gmail ainda não tratados, 0 follow-ups abertos/vencidos, e LK OS em manutenção por rotinas obrigatórias.
+- Artefato: `reports/hermes-continuous-improvement/2026-05-17.md`.
+
+## 2026-05-16 — Lucas Brain Daily Intelligence Loop + Hermes v0.14 operacional
+
+- Executado protocolo diário/ampliado em modo read-only: helper Hostinger/Docker aprovado rodou com sucesso e salvou `reports/hermes-host-docker-observability-2026-05-16.json`.
+- Estado vivo pós-upgrade aprovado: containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)` nos dois containers.
+- Confirmados 14 crons ativos, API `/health` OK, curator habilitado sem intervenção necessária, `hermes skills check` sem updates disponíveis e watchdogs `no_agent` silenciosos OK.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 é a release pública mais recente; nenhum runtime swap/restart executado nesta rotina.
+- Decision brief v0.14 marcado como histórico/superseded pelo estado atual; criada/registrada reconciliação pós-upgrade e guia rápido de uso v0.14 para Lucas.
+- Prioridade ativa registrada: Zipper OS; LK OS permanece em standby/manutenção com rotinas obrigatórias e alertas críticos.
+- Artefatos: `reports/hermes-continuous-improvement/2026-05-16.md`; `areas/operacoes/rotinas/hermes-v014-post-upgrade-monitoring-reconciliation-2026-05-16.md`; `areas/operacoes/rotinas/hermes-v014-lucas-usage-guide-2026-05-16.md`; `areas/operacoes/rotinas/hermes-v014-decision-brief-2026-05-16.md`.
+- Correção Lucas: não basta declarar “voltou”; pós-update precisa fechar ciclo de adoção. Criado guia de uso `areas/operacoes/rotinas/hermes-v014-lucas-usage-guide-2026-05-16.md`, skill `lucas-hermes-continuous-improvement` corrigida e `Lucas Brain daily intelligence loop` reacionado para implementar novidades no ciclo operacional.
+- Aprovação Lucas “fazer 1/2 e 3”: executados os itens aprovados do relatório diário — cockpit inicial `reports/zipper-os-executive-inbox-followups-2026-05-16.md`/`.json`, design `areas/operacoes/rotinas/hermes-v014-watchers-and-approvals-design-2026-05-16.md`, e skill `lucas-hermes-continuous-improvement` atualizada com contrato de watchers + clarify buttons.
+- Aprovação Lucas “Está tudo aprovado implementar”: Zipper OS operacionalizado com script `/opt/data/scripts/zipper_os_cockpit.py`, wrappers `zipper_os_cockpit_daily.sh`/`zipper_os_cockpit_watchdog.sh`, cron diário `f00c68f5967a` às 08:15 BRT e watchdog silencioso `af07bbc077b8` a cada 30 min; ambos validados com `last_status=ok`, sem envio externo, sem DB write, sem Docker/host/secret mutation. `mordomo_whatsapp_scan.sh` também foi refatorado para declarar contrato v0.14, forçar read-only e ter timeout; cron `051f05ce17c1` revalidado OK/silencioso.
+
+## 2026-05-15 — Hermes/LK Continuous Improvement Daily Run
+
+- Executado protocolo diário 02:00 BRT em modo read-only: helper Hostinger/Docker aprovado rodou com sucesso e salvou `reports/hermes-host-docker-observability-2026-05-15.json`.
+- Confirmados no host os containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` `running`, imagem `hermes-agent-custom:v0.13.0-20260510`, versão `Hermes Agent v0.13.0 (2026.5.7)` nos dois containers.
+- Confirmados 13 crons ativos, API `/health` OK, curator habilitado sem intervenção necessária, `hermes skills check` sem updates disponíveis e watchdogs `no_agent` silenciosos OK.
+- GitHub releases segue sem versão pública posterior a `v2026.5.7`; nenhum update/runtime change recomendado hoje.
+- Artefatos: `reports/hermes-continuous-improvement/2026-05-15.md`; rotina `areas/operacoes/rotinas/hermes-v013-operacionalizacao.md` atualizada.
+
+## 2026-05-14 — Hermes/LK Continuous Improvement Daily Run
+
+- Executado protocolo diário 02:00 BRT em modo read-only: helper Hostinger/Docker aprovado rodou com sucesso e salvou `reports/hermes-host-docker-observability-2026-05-14.json`.
+- Confirmados no host os containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` `running`, imagem `hermes-agent-custom:v0.13.0-20260510`, versão `Hermes Agent v0.13.0 (2026.5.7)` nos dois containers.
+- Confirmados 8 crons ativos, API `/health` OK, curator habilitado sem intervenção necessária e `hermes skills check` sem updates disponíveis.
+- GitHub releases segue sem versão pública posterior a `v2026.5.7`; nenhum update/runtime change recomendado hoje.
+- Artefatos: `reports/hermes-continuous-improvement/2026-05-14.md`; rotina `areas/operacoes/rotinas/hermes-v013-operacionalizacao.md` atualizada.
+
+## 2026-05-12 — Hermes/LK Continuous Improvement Daily Run
+
+- Executado protocolo diário 02:00 BRT em modo read-only: runtime local `Hermes Agent v0.13.0 (2026.5.7)`, config `/opt/data/config.yaml`, release GitHub sem versão posterior a `v2026.5.7`.
+- Watchdogs `no_agent` `edd06fe19397` e `e7a61e275c37` revalidados com contrato silencioso OK (`rc=0`, stdout/stderr vazios).
+- Registrados gaps de observabilidade: contexto do cron sem `/var/run/docker.sock`; detector `hermes cron status`/`status --all` pode dizer gateway parado apesar de cron/logs Telegram ativos; correção read-only aprovada por Lucas e aplicada no mesmo dia via helper SSH/Doppler sanitizado.
+- Correção aplicada: criado `/opt/data/scripts/hermes_host_docker_observability.py`, copiado para `areas/operacoes/scripts/`, validado com alerts `0` e integrado ao prompt do cron diário `f5a23dd6a1bd`. Evidência: containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` `running`, imagem `hermes-agent-custom:v0.13.0-20260510`, versão `Hermes Agent v0.13.0 (2026.5.7)`, gateway/cron running. Relatório: `reports/hermes-host-docker-observability-2026-05-12.json`.
+- Artefatos: `reports/hermes-continuous-improvement/2026-05-12.md`; rotina `areas/operacoes/rotinas/hermes-v013-operacionalizacao.md` atualizada. Skill `lucas-hermes-continuous-improvement` recebeu pitfall de sanitização de `hermes status --all`.
 ## 2026-05-19 — BRUNO-ATUAL P0 documentais
 
 - Criada camada quente/current em `memories/current.md` para boot rápido, prioridades, bloqueios, decisões recentes e riscos por área.

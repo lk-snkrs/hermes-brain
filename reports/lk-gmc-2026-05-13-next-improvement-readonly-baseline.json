@@ -1,0 +1,708 @@
+{
+  "generated_at": "2026-05-13T18:49:16.769726+00:00",
+  "mode": "read_only_baseline",
+  "products_total": 23253,
+  "productstatuses_total": 23253,
+  "required_attr_rows": 0,
+  "required_attr_counts": {},
+  "top_item_level_issue_counts": {
+    "price_updated": 1035,
+    "strikethrough_price_updated": 504,
+    "restricted_gtin": 102,
+    "landing_page_error": 63,
+    "availability_updated": 9,
+    "image_single_color": 8,
+    "image_link_broken": 8,
+    "reserved_gtin": 6,
+    "condition_updated_from_detected": 4,
+    "restricted_nfs_policy_violation": 4,
+    "coupon_gtin": 3,
+    "multiple_sizes": 2,
+    "pause_expired": 2,
+    "image_too_small_for_high_resolution": 2,
+    "sexual_interests_policy_violation": 1
+  },
+  "title_issue_counts": {
+    "very_short_title": 6,
+    "numeric_only_title": 1
+  },
+  "p2a_missing_category_or_product_type_candidates": 20185,
+  "p2c_size_title_candidates": 0,
+  "title_issue_sample": [
+    {
+      "product_id": "online:pt:BR:2162246425358063315",
+      "offer_id": "2162246425358063315",
+      "title": "40/40.5",
+      "flags": [
+        "very_short_title"
+      ],
+      "gpc": null,
+      "productTypes": []
+    },
+    {
+      "product_id": "online:pt:BR:3036040229053224603",
+      "offer_id": "3036040229053224603",
+      "title": "XL/Gg",
+      "flags": [
+        "very_short_title"
+      ],
+      "gpc": null,
+      "productTypes": []
+    },
+    {
+      "product_id": "online:pt:BR:4467332493483768941",
+      "offer_id": "4467332493483768941",
+      "title": "36",
+      "flags": [
+        "numeric_only_title",
+        "very_short_title"
+      ],
+      "gpc": null,
+      "productTypes": []
+    },
+    {
+      "product_id": "online:pt:BR:12196644472973744396",
+      "offer_id": "12196644472973744396",
+      "title": "36/37",
+      "flags": [
+        "very_short_title"
+      ],
+      "gpc": null,
+      "productTypes": []
+    },
+    {
+      "product_id": "online:pt:BR:6271425026146428361",
+      "offer_id": "6271425026146428361",
+      "title": "XL/Gg",
+      "flags": [
+        "very_short_title"
+      ],
+      "gpc": null,
+      "productTypes": []
+    },
+    {
+      "product_id": "online:pt:BR:6620553011844522059",
+      "offer_id": "6620553011844522059",
+      "title": "XL/Gg",
+      "flags": [
+        "very_short_title"
+      ],
+      "gpc": null,
+      "productTypes": []
+    }
+  ],
+  "p2a_candidates_sample": [
+    {
+      "product_id": "local:pt:BR:LIA_JI0324-6",
+      "offer_id": "LIA_JI0324-6",
+      "title": "Tênis Adidas Gazelle Indoor Maroon Almost Yellow Marrom",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_OXV-2785246-39",
+      "offer_id": "LIA_OXV-2785246-39",
+      "title": "Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown Blue Marrom",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:FD0860001-5",
+      "offer_id": "FD0860001-5",
+      "title": "Tênis Jarritos x Nike SB Dunk Low Branco/Verde - Tamanho 43",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:JI3185-7",
+      "offer_id": "JI3185-7",
+      "title": "Tênis Adidas Samba OG Cream White Cardboard Creme - Tamanho 40",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:CLC-1470558-S",
+      "offer_id": "CLC-1470558-S",
+      "title": "Moletom Cold Culture Curved Pink Rosa",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "suggested_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "evidence": "outerwear_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_SLCRCVOW-1",
+      "offer_id": "LIA_SLCRCVOW-1",
+      "title": "Camiseta Slyce Racquet Club Off White",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_f99715",
+      "offer_id": "LIA_f99715",
+      "title": "Tênis Adidas Yeezy Boost 350 V2 Sesame Cinza",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_CD2563006-9",
+      "offer_id": "LIA_CD2563006-9",
+      "title": "Tênis Nike SB Dunk Low Pro ISO Black Gum Preto",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_ALD-2515934-L",
+      "offer_id": "LIA_ALD-2515934-L",
+      "title": "Camiseta Aimé Leon Dore Musician Graphic Preta",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token"
+    },
+    {
+      "product_id": "online:pt:BR:FOG19-1",
+      "offer_id": "FOG19-1",
+      "title": "Camiseta Fear Of God Essentials Classic Short Sleeve Bright White Branco",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token"
+    },
+    {
+      "product_id": "online:pt:BR:JR8772-4",
+      "offer_id": "JR8772-4",
+      "title": "Tênis Adidas SL 72 RS Aurora Ivy Off White Verde - Tamanho 37",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_1183C529.200-1",
+      "offer_id": "LIA_1183C529.200-1",
+      "title": "Tênis Onitsuka Tiger Tsunahiki Slip-On Birch/Indigo Navy Bege",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FZ3552-612-6",
+      "offer_id": "LIA_FZ3552-612-6",
+      "title": "Tênis Nike Air Force 1 Low Fire Red White Vermelho",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:BQ6817303-46",
+      "offer_id": "BQ6817303-46",
+      "title": "Tênis Nike SB Dunk Low Pro St. Patrick's Day Verde - Tamanho 46",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:DV0426-012-2",
+      "offer_id": "DV0426-012-2",
+      "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza - Tamanho 36",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_1183A360.205-7",
+      "offer_id": "LIA_1183A360.205-7",
+      "title": "Tênis Onitsuka Tiger Mexico 66 Slip-On Birch Midnight Bege",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_CT08561000-5",
+      "offer_id": "LIA_CT08561000-5",
+      "title": "Tênis Nike Dunk Low x Off-White Pine Green Verde",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:JI2714-5",
+      "offer_id": "JI2714-5",
+      "title": "Tênis adidas Gazelle Indoor Dark Brown Glow Pink Court Green Marrom - Tamanho 38",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:ALO-7326814-XS",
+      "offer_id": "ALO-7326814-XS",
+      "title": "Moletom Alo Yoga Cropped Serenity Coverup Athletic Heather Grey Cinza",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+      "suggested_productTypes": [
+        "Moletom/Jaqueta"
+      ],
+      "evidence": "outerwear_token"
+    },
+    {
+      "product_id": "online:pt:BR:1183B566020-4",
+      "offer_id": "1183B566020-4",
+      "title": "Tênis Onitsuka Tiger Mexico 66 Pure Silver Black Cinza - Tamanho 37",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:MASP5-5",
+      "offer_id": "MASP5-5",
+      "title": "Camiseta MASP x Leonilson \"O Grande Rio\" Branco",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DM4044108-1",
+      "offer_id": "LIA_DM4044108-1",
+      "title": "Tênis Nike Cortez Forrest Gump 2024 Branco",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DX5930001-35",
+      "offer_id": "LIA_DX5930001-35",
+      "title": "Tênis Nike Dunk Low Phantom Metallic Gold Dourado",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DM0032005-43",
+      "offer_id": "LIA_DM0032005-43",
+      "title": "Tênis Air Max Plus Black University Blue Preto",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:FD9923111-4",
+      "offer_id": "FD9923111-4",
+      "title": "Tênis Nike Dunk Low Multi-Color Colorido - Tamanho 37",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:u1906lbn3",
+      "offer_id": "u1906lbn3",
+      "title": "Tênis New Balance 1906L Preto Couro Mesh Preto - Tamanho 36",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-100-5",
+      "offer_id": "HV0823-100-5",
+      "title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul - Tamanho 38",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:BQ6472104-1",
+      "offer_id": "BQ6472104-1",
+      "title": "Tênis Nike Air Jordan 1 Mid Kentucky Blue Azul - Tamanho 38",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:DH4401101-40",
+      "offer_id": "DH4401101-40",
+      "title": "Tênis Nike Dunk Low Blue Paisley Azul - Tamanho 34",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:DO9395400-10",
+      "offer_id": "DO9395400-10",
+      "title": "Tênis Nike SB Dunk Low LA Dodgers Azul - Tamanho 46",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_1183C428.100-10",
+      "offer_id": "LIA_1183C428.100-10",
+      "title": "Tênis Onitsuka Tiger California 78 EX White/Classic Red",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_ONI-7270110-37",
+      "offer_id": "LIA_ONI-7270110-37",
+      "title": "Tênis Onitsuka Tiger Mexico 66 Sabot Dark Brown Marrom",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-010-43",
+      "offer_id": "FV5029-010-43",
+      "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto - Tamanho 43",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:1182A678.750-7",
+      "offer_id": "1182A678.750-7",
+      "title": "Tênis Onitsuka Tiger Mexico 66 TGRS Yellow/Black Amarelo - Tamanho 40",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:HF6061-400-4",
+      "offer_id": "HF6061-400-4",
+      "title": "Tênis Nike Sb Dunk Low x Futura Skateboard Bleached Aqua Azul - Tamanho 39",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_43774078387490",
+      "offer_id": "LIA_43774078387490",
+      "title": "Tênis Nike Air Jordan 4 Retro TEX 'Worn Blue Denim' Azul",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:BB550VTC-40",
+      "offer_id": "BB550VTC-40",
+      "title": "Tênis New Balance 550 White Pine Green Branco/Verde - Tamanho 40",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:43774078386610",
+      "offer_id": "43774078386610",
+      "title": "Tênis Onitsuka Tiger Mexico 66 TGRS Silver Cream Prateado - Tamanho 38",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_ID2054-5",
+      "offer_id": "LIA_ID2054-5",
+      "title": "Tênis Adidas Samba Collegiate Green Verde",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HV5979130-3",
+      "offer_id": "LIA_HV5979130-3",
+      "title": "Tênis Nike Air Force 1 07 LE Year of Snake 2025 Branco",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_IB1519-200-11",
+      "offer_id": "LIA_IB1519-200-11",
+      "title": "Tênis Nike Air Jordan 4 Retro OG SP Undefeated (2025) Verde",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_43774078390980",
+      "offer_id": "LIA_43774078390980",
+      "title": "Camiseta Skims Manga Longa Cotton Jersey Marble Branco",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token"
+    },
+    {
+      "product_id": "online:pt:BR:IQ0627-004",
+      "offer_id": "IQ0627-004",
+      "title": "Tênis Nike Vomero Premium SP Black Mini Chrome Swoosh Preto - Tamanho 39",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_CZ8065100-5",
+      "offer_id": "LIA_CZ8065100-5",
+      "title": "Tênis Nike Air Force 1 Low x Nocta 'Certified Lover Boy' Branco",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_YZY-2566238-45",
+      "offer_id": "LIA_YZY-2566238-45",
+      "title": "Tênis Adidas Yeezy Boost 350 V2 Earth Marrom",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:u1906lbn6",
+      "offer_id": "u1906lbn6",
+      "title": "Tênis New Balance 1906L Preto Couro Mesh Preto - Tamanho 39",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:43774078391040",
+      "offer_id": "43774078391040",
+      "title": "Camiseta Skims Manga Longa Cotton Jersey Light Heather Grey Cinza",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token"
+    },
+    {
+      "product_id": "online:pt:BR:ONI-0995678-35",
+      "offer_id": "ONI-0995678-35",
+      "title": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - Tamanho 35",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_IO7325-006",
+      "offer_id": "LIA_IO7325-006",
+      "title": "Tênis Nike Vomero Premium Realtree Camo Black Preto",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+      "suggested_productTypes": [
+        "Tênis"
+      ],
+      "evidence": "shoe_token"
+    },
+    {
+      "product_id": "online:pt:BR:43774078391770",
+      "offer_id": "43774078391770",
+      "title": "Polo Skims Baby Tee Worn in Jersey Snow Branco",
+      "current_googleProductCategory": null,
+      "current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token"
+    }
+  ],
+  "p2c_size_candidates_sample": [],
+  "not_performed": [
+    "merchant_write",
+    "shopify_write",
+    "tiny_write",
+    "price_update",
+    "availability_update",
+    "title_update",
+    "category_update",
+    "feed_fetch_or_upload",
+    "campaign_or_message_send"
+  ]
+}

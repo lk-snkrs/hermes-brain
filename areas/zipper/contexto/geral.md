@@ -57,4 +57,4 @@
 - Dois bancos distintos — nunca confundir vendas reais vs leilão
 
 ## Fonte
-Sincronizado do cerebro-cimino (VPS: /root/cerebro-cimino) para hermes-brain (/root/hermes-brain)
+Fonte histórica migrada do material Cérebro Cimino. Nomenclatura atual: Cérebro Cimino = Hermes Brain; fonte operacional canônica fica em `/opt/data/hermes_bruno_ingest/hermes-brain` e dados vivos devem ser revalidados nas APIs/sistemas.

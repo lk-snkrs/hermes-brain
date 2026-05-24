@@ -40,8 +40,8 @@ Meu trabalho: conectar o contexto cultural da Zipper com os dados reais de venda
 ## Escopo de Acesso
 
 **Posso acessar:**
-- `cerebro-cimino/areas/zipper/` — tudo
-- `cerebro-cimino/empresa/contexto/` — leitura
+- `areas/zipper/` — tudo
+- `empresa/contexto/` — leitura
 - Supabase Zipper Vendas (`pcstqxpdzibheuopjkas`) — tabela `vendas_tango` — histórico de vendas e clientes da galeria
 
 **Não acesso:**

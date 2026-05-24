@@ -1,7 +1,7 @@
 # LK OS — Plano Mestre de Implementação
 
-Status: plano de execução vivo. Este documento existe para não deixar a implementação da LK parar no meio.
-Última atualização: 2026-05-11.
+Status: atualizado em 2026-05-15 com Data Quality Layer v0 local/reversível materializado. Este documento existe para não deixar a implementação da LK parar no meio.
+Última atualização: 2026-05-15.
 Escopo: LK Sneakers / Hermes Brain / LK Operating System.
 
 ## Como Lucas deve pedir continuidade
@@ -48,6 +48,7 @@ O Projeto LK OS só é considerado implementado quando estes blocos estiverem op
 10. Learning Loop: correções/aprovações do Lucas viram regra em Brain/skill/rotina.
 11. Mission Control/Kanban com próximos passos visíveis, mas cards executáveis só quando guardrails estiverem claros.
 12. Crons/briefings necessários rodando com contrato de silêncio quando OK.
+13. wacli/OpenClaw WhatsApp incorporado como camada multi-conta com sync/leitura/preview seguros, guardrails de PII e envio externo sempre approval-gated.
 
 ## Modelo de gestão
 
@@ -87,7 +88,7 @@ Função: separar análise e preview de execução real.
 
 Livre sem aprovação: documentação, análise read-only, relatório, plano, preview, skill, rotina, secret scan, health check.
 
-Exige aprovação Lucas: campanha, envio, compra, reposição real, alteração Shopify/Tiny/Klaviyo/Meta/Google/Notion/n8n/banco, contato com cliente/fornecedor/time externo, deploy ou infraestrutura.
+Exige aprovação Lucas: campanha, envio, compra, reposição real, alteração Shopify/Tiny/Klaviyo/Meta/Google/Notion/n8n/banco, contato com cliente/fornecedor/time externo, deploy ou infraestrutura. WhatsApp via wacli/OpenClaw: conexão/sync e desenho de preview são permitidos quando no escopo; leitura recorrente, extração operacional sensível, envio, resposta, contato em grupo, mensagem a cliente/fornecedor ou automação externa exigem aprovação explícita atual.
 
 ## Fases de implementação
 
@@ -115,9 +116,9 @@ Critério de saída:
 - Plano mestre indexado.
 - Lucas sabe qual frase usar para retomar.
 
-### Fase 1 — Data spine read-only
+### Fase 1 — Data spine read-only + Data Quality Layer
 
-Status: iniciado em 2026-05-11 com Data Spine v0.1 documental/read-only; primeiro snapshot read-only multi-fonte executado e auditado.
+Status: Data Spine v0.1 iniciado em 2026-05-11; em 2026-05-15 o Data Quality Layer v0 foi auditado e materializado localmente em SQLite com backup/rollback, sem API externa/write produtivo.
 
 Objetivo: consolidar um esqueleto de dados confiável, sem writes, que permita relatórios consistentes.
 
@@ -130,8 +131,11 @@ Entregáveis:
 - [x] Dicionário de entidades canônicas v0.1: pedido, cliente, produto, variante, SKU, tamanho, campanha, influencer, cupom, UTM, aprovação/ação.
 - [x] Regras de reconciliação Shopify vs GA4 vs Meta/Google v0.1.
 - [x] Relatório de lacunas v0.1: Tiny freshness, Merchant Center, Judge.me/Frenet, Notion writes, Klaviyo UI link, PII e rótulos de fonte.
+- [x] Auditoria P1 do Data Quality Layer contra o PRD inicial: modelo canônico por produto/variante/tamanho, lacunas de Tiny, estado comercial, preço/histórico e Approval/Learning Ledger.
+- [x] Materialização local/reversível v0 em SQLite: `lk_variant_quality_status` e `lk_sku_alias_map`, 14.466 variants por tabela, com backup privado antes do write local.
+- [>] Snapshot Tiny completo read-only por SKU/tamanho/depósito iniciado e retomado em 2026-05-15: catálogo Tiny listado completo (17.605 produtos; 15.372 com código), 842 leituras de estoque/deposito consolidadas, 14.530 checagens restantes; Tiny voltou a bloquear por excesso de acessos após +28 leituras na retomada, então Hermes pausou sem insistir. Camada `lk_variant_commercial_state` recalculada em baseline parcial e Mission Control v2 gerado; estado comercial final só deve ser declarado após cooldown/lotes menores.
 
-Artefato atual: `areas/lk/rotinas/data-spine-readonly-2026-05-11.md` + `areas/lk/contexto/data-spine-v0.1.md` + `reports/lk-os-data-spine-snapshot-2026-05-11.md` + `reports/lk-os-tiny-freshness-report-2026-05-11.md` + `scripts/lk_os_data_spine_snapshots_20260511.py` + `scripts/lk_os_tiny_freshness_report_20260511.py`.
+Artefato atual: `areas/lk/rotinas/data-spine-readonly-2026-05-11.md` + `areas/lk/contexto/data-spine-v0.1.md` + `areas/lk/rotinas/lk-os-data-quality-layer-audit-2026-05-15.md` + `areas/lk/rotinas/lk-os-data-quality-layer-materialization-v0-2026-05-15.md` + `areas/lk/rotinas/lk-os-tiny-stock-snapshot-full-readonly-2026-05-15.md` + `reports/lk-os-data-spine-snapshot-2026-05-11.md` + `reports/lk-os-data-quality-layer-audit-2026-05-15.json` + `reports/lk-os-data-quality-layer-materialization-v0-2026-05-15.json` + `reports/lk-os-tiny-stock-snapshot-full-readonly-2026-05-15.json` + `scripts/lk_os_data_spine_snapshots_20260511.py` + `scripts/lk_os_data_quality_layer_audit_20260515.py` + `scripts/lk_os_data_quality_layer_materialize_v0_20260515.py` + `scripts/lk_os_tiny_stock_snapshot_full_readonly_20260515.py`.
 
 Critério de saída:
 
@@ -172,7 +176,7 @@ Critério de saída:
 
 ### Fase 3 — Paid & Influencer Intelligence
 
-Status: iniciado com dicionário v0.2.
+Status: iniciado com dicionário v0.2. Correção Lucas 2026-05-17: a frente deve separar explicitamente **Pareto = tráfego pago** e **FHITS = influencers**; decisões internas podem cruzar as duas, mas a governança/origem operacional não deve misturar os responsáveis.
 
 Objetivo: saber qual influencer/campanha/criativo move quais produtos e quais consequências gera.
 
@@ -183,6 +187,7 @@ Entregáveis:
 - [x] Handles/cupons oficiais por influencer, primeira fila de identidade criada para Silvia, Helena e Lala; valores oficiais seguem pendentes de Lucas/Pareto/LK, sem criar cupom/campanha.
 - [x] Ponte segura ad_id/utm_content/cupom/landing/referrer/note/tag iniciada como Identity Bridge read-only: Silvia alta confiança, Helena média, Lala investigação; Meta permanece `platform_signal`.
 - [x] Separação `Pareto-compatible` vs `Lucas-operational`, fronteira materializada: Pareto usa linguagem Meta/ad_name/ad_id e Marias separadas; Lucas-operational só vira decisão com ponte Shopify/Tiny ou identidade confirmada.
+- [x] Correção de governança registrada: Pareto cuida de tráfego pago; FHITS cuida de influencers. A leitura Paid/Influencer do LK OS deve mostrar as duas fontes lado a lado e transformar o cruzamento em fila de decisão, sem tratar FHITS como fonte de mídia paga nem Pareto como fonte oficial de contratação/influencer.
 - [x] Rotina semanal de e-mail interno LK/Klaviyo-real, sem dashboard/tool jargon, preview interno criado e validado sem envio/cron.
 - [x] Regra de criativos: só incluir imagem se visual claro e aprovado; gate criado com 12 criativos em `candidate_needs_human_approval`, 0 elegíveis para e-mail sem aprovação humana.
 
@@ -210,6 +215,8 @@ Entregáveis:
 - [x] Versão Telegram curta, preview-only, em `reports/lk-os-daily-sales-brief-telegram-preview-2026-05-10.md`.
 - [x] Versão Brain/report detalhada em `reports/lk-os-daily-sales-brief-2026-05-10.md` e `.json`.
 - [x] Critério de silêncio: `would_notify=true` só para P0/P1, falha de API ou pedido explícito; sem envio/criação de cron.
+- [x] Correção 2026-05-15: contrato Daily/Weekly real é entrega obrigatória, não silent-OK; crons reais verificados (`7c688553e293` Daily ativo OK; `953b9055458e` Weekly ativo aguardando primeira execução programada em 2026-05-18).
+- [x] Pulso Comercial 16h feito como template/dry-run em 2026-05-15 e confirmado por Lucas em 2026-05-17 como artefato existente: contrato Telegram curto, fontes esperadas, gatilhos verde/amarelo/vermelho e dry-run local; sem cron/envio/write. Observação: snapshot Shopify local usado no dry-run estava defasado (último pedido 2026-04-16), então o próximo gap não é “criar Pulso”, é decidir se vira cron/rotina real com fonte viva e aprovação.
 
 Critério de saída:
 
@@ -245,7 +252,7 @@ Critério de saída:
 
 ### Fase 6 — SEO, Search Console e Merchant Center
 
-Status: operacionalizado como módulo semanal read-only inicial; cron semanal criado para nota Claude SEO e fila de melhoria, writes seguem bloqueados até aprovação.
+Status: operacionalizado como módulo semanal read-only inicial; correções Lucas 2026-05-18 incorporadas: SEO/CRO da LK deve priorizar por vendas, visitas/sessões, conversão, receita e GSC/Merchant antes de qualquer auditoria HTML; quantidade em estoque não deve ser critério decisivo para SEO/CRO porque LK vende sob encomenda. Cron semanal atualizado para exigir roteador comercial; writes seguem bloqueados até aprovação explícita com payload, alvo e rollback.
 
 Objetivo: trazer Google/Search para dentro do LK OS como fonte de demanda e problemas de feed/PDP.
 
@@ -256,6 +263,17 @@ Entregáveis:
 - [x] Diagnóstico Merchant Center/feed, operacionalizado via `merchant-center-feed-readonly-router`: 5.000 status de produto lidos, 959 itens P1, 18 grupos de problema e 0 writes liberados.
 - [x] Priorização de PDPs com tráfego alto e conversão baixa, operacionalizada via `pdp-low-conversion-priority-router`: 4.999 linhas GA4, 62 páginas candidatas, 40 itens priorizados, 12 P1, 22 PDPs e 0 writes liberados; follow-up `p1-seo-cro-approval-packets` criado com 8 pacotes top P1, title/meta exatos e CRO visível separado; após aprovação, 8 SEO title/meta aplicados e verificados live com rollback; CRO visível marcado como `pending_future` por decisão Lucas.
 - [x] Checklist SEO/PDP para produtos importantes via `lk-seo-weekly-improvement` e rotina `seo-cro-weekly-improvement-loop`.
+- [x] Correção comercial Lucas 2026-05-18 registrada: relatório de HTML público não é decision-grade; ranking SEO/CRO deve começar por vendas, visitas/sessões, conversão, receita, GSC e Merchant. Correção adicional Lucas: não se preocupar com quantidade em estoque para SEO/CRO, pois LK vende sob encomenda; estoque fica fora da priorização SEO/CRO, salvo contexto operacional separado. Artefatos: `areas/lk/rotinas/lk-seo-cro-commercial-router-approval-2026-05-18.md`, `reports/lk-seo-cro-weekly-2026-05-18-correction-commercial.md`, `scripts/lk_seo_cro_commercial_router_20260518.py`; cron `15777e3416dc` atualizado para usar o roteador comercial antes de auditar HTML.
+- [x] Bloco 1 materializado: `SEO/CRO Commercial Opportunity Router` com join único por URL/handle/SKU cruzando Shopify/local spine vendas, GA4, GSC, GMC disponível e diagnóstico HTML apenas das páginas vencedoras; outputs `reports/lk-seo-cro-commercial-opportunity-router-2026-05-18.{json,md,csv}`; 52 URLs avaliadas, 13 P1, 0 writes externos. Correção posterior: Tiny/estoque não deve pesar na priorização SEO/CRO da LK por conta do modelo sob encomenda; manter estoque apenas para operações/sourcing, não para decidir páginas SEO/CRO.
+- [x] Bloco 2 materializado: `SEO/CRO Decision-grade Refresh` com Shopify live read-only desde 2026-04-17 e membership exato Shopify para as top URLs; outputs `reports/lk-seo-cro-decision-grade-refresh-2026-05-18.{json,md,csv}` e script `scripts/lk_seo_cro_decision_grade_refresh_20260518.py`. Foram lidos 397 pedidos Shopify, 340 pagos/considerados, janela 2026-04-17 → 2026-05-18, 19/19 lookups produto/collection OK, 20 URLs refinadas, 13 P1, 6 P2, 1 P3, 0 data-gap e 0 writes externos. Top validado: Onitsuka, NB 204L, Travis Scott, Lululemon, Samba Jane e Kill Bill continuam P1 com vendas recentes + membership exato.
+- [x] Bloco 3 materializado: `P1 Approval Packets` gerado a partir da fila decision-grade; outputs `reports/lk-seo-cro-p1-approval-packets-2026-05-18.{json,md,csv}`, registro `areas/lk/rotinas/lk-seo-cro-p1-approval-packets-2026-05-18.md` e script `scripts/lk_seo_cro_approval_packets_from_decision_refresh_20260518.py`. Foram criados 8 packets `needs_approval` com alvo, evidência comercial, title/meta atuais públicos, proposta exata de SEO title/meta, rollback e CRO visível separado; `write_allowed_now=0`, public fetch 8/8 OK, titles <=60 chars, metas <=155 chars.
+- [x] Bloco 3B materializado por correção Lucas: camada explícita `Claude SEO Scorecard` aplicada aos 8 packets com as skills `seo-page`, `seo-content` e `seo-ecommerce`; outputs `reports/lk-seo-cro-claude-seo-scorecard-2026-05-18.{json,md}`, registro `areas/lk/rotinas/lk-seo-cro-claude-seo-scorecard-2026-05-18.md` e script `scripts/lk_seo_cro_claude_seo_scorecard_20260518.py`. Resultado: 8/8 public fetch OK, média Claude SEO 95,2/100, writes externos 0. Regra corrigida: Claude SEO é camada diagnóstica obrigatória após a priorização comercial, nunca substitui vendas/GA4/GSC/Shopify por base de ranking; estoque/Tiny não entra como critério SEO/CRO decisivo.
+- [x] Bloco 4 preparado: `SEO Fields Runner Gate` local/preflight para os 8 packets P1; outputs `reports/lk-seo-cro-seo-fields-runner-gate-2026-05-18.{json,md,csv}`, registro `areas/lk/rotinas/lk-seo-cro-seo-fields-runner-gate-2026-05-18.md`, script `scripts/lk_seo_cro_seo_fields_runner_gate_20260518.py` e teste `tests/test_lk_seo_cro_seo_fields_runner_gate_20260518.py`. O gate cria manifesto auditável, exige frase de aprovação exata, mantém `write_allowed_now=0` e `mutation_operations=0`, contém apenas queries read-only para futuro readback Shopify e não executa mutation/write externo. Rodada atual: 8 registros bloqueados até aprovação exata; readback live Shopify ficou indisponível por runtime Doppler CLI ausente, sem imprimir segredos.
+- [x] Bloco 4A executado após aprovação explícita do Lucas em 2026-05-18: aplicação SEO-field-only dos 8 packets P1 em Shopify product/collection `seo.title` e `seo.description`, com rollback privado salvo antes dos writes e verificação live pós-mutation. Outputs `reports/lk-seo-cro-approved-seo-fields-execution-2026-05-18.{json,md}`, rollback `reports/lk-seo-cro-approved-seo-fields-rollback-2026-05-18.json`, registro `areas/lk/rotinas/lk-seo-cro-approved-seo-fields-execution-2026-05-18.md` e script `scripts/lk_seo_cro_apply_approved_seo_fields_20260518.py`. Resultado: 8 aplicados/verificados, 0 falhas, sem H1/body/theme/preço/estoque/Tiny/Merchant/GSC/GA4/campanhas.
+- [x] Lembrete/revisão de impacto criada para 1 semana: cron `a7e883edd200`, execução `2026-05-25T14:34:23.537380+00:00`, objetivo comparar visitas/sessões, conversão, pedidos/receita e GSC CTR das mesmas URLs/handles, read-only.
+- [x] Bloco 5 materializado: `CRO/Conversion Preview v0` com fila read-only orientada por conversão, visitas/sessões, GSC CTR e receita; outputs `reports/lk-cro-conversion-preview-v0-2026-05-18.{json,md,csv}`, rotina `areas/lk/rotinas/lk-cro-conversion-preview-v0-2026-05-18.md`, script `scripts/lk_cro_conversion_preview_v0_20260518.py` e teste `tests/test_lk_cro_conversion_preview_v0_20260518.py`. Resultado: 8 URLs avaliadas, 3 P1-CRO, 2 P2-CRO, 2 CTR-monitor, meta 0,13% → 0,20% (+53,8%, +70 pedidos/100k sessões), `writes_allowed_now=0`, `external_writes_enabled=false`, estoque/Tiny não usado na priorização.
+- [x] Bloco 5B materializado: `CRO Visual Preview Pack v0` local/read-only para os 3 P1-CRO (`onitsuka-tiger-mexico-66`, `onitsuka-tiger-todos-os-modelos`, `lululemon`); outputs `reports/lk-cro-visual-preview-pack-v0-2026-05-18.{html,md,json}`, rotina `areas/lk/rotinas/lk-cro-visual-preview-pack-v0-2026-05-18.md`, script `scripts/lk_cro_visual_preview_pack_v0_20260518.py` e teste `tests/test_lk_cro_visual_preview_pack_v0_20260518.py`. Resultado: mock premium/local com intro editorial, trust strip, atalhos de intenção/tamanho, ordenação comercial explícita e linha de atendimento humano; browser visual OK, `npx impeccable detect` retornou `[]`, 0 upload Shopify/theme, 0 publish, 0 writes externos.
+- [x] Bloco 5C preparado após aprovação literal de Lucas: `CRO Visual Preview Pack v0` implementado em branch/dev theme Shopify unpublished para os 3 P1-CRO. Repo `lk-snkrs/lk-new-theme`, branch `cro/visual-preview-pack-v0-20260518`, PR https://github.com/lk-snkrs/lk-new-theme/pull/14, commit `92d6227`, dev theme `lk-new-theme/dev` ID `155065450718`, asset `sections/lk-collection.liquid`, rollback `/opt/data/hermes_bruno_ingest/shopify-theme-backups/lk-new-theme-dev-cro-visual-v0-20260518-152957/`. Validações: `git diff --check`, diff secret scan, `npx impeccable detect` `[]`, Shopify Admin readback SHA local=remoto, browser preview nas 3 collections. Sem produção/publish, sem produto/preço/estoque/SEO/campanha/envio. Próximo gate: Lucas revisar preview URLs antes de qualquer merge/publish.
 
 Critério de saída:
 
@@ -306,7 +324,7 @@ Critério de saída:
 
 ### Fase 9 — Mission Control operacional
 
-Status: iniciado em 2026-05-12 como snapshot executivo read-only v1.
+Status: ativo; iniciado em 2026-05-12 como snapshot executivo read-only v1 e evoluído em 2026-05-14 para cockpit com ranking stockout/recompra de 4 meses e gate serial GMC → sourcing.
 
 Objetivo: consolidar crons, reports obrigatórios, aprovações, bloqueios e próximos passos em uma visão curta sem caçar reports.
 
@@ -320,22 +338,73 @@ Entregáveis:
 - [x] GMC P0 URL/checkout review: `scripts/lk_gmc_p0_url_checkout_review_20260512.py` abriu o P0 em 32 offer_ids únicos; 32 matches Shopify e 32 PDPs HTTP 200 indicam que a próxima frente é Merchant checkout/account diagnostics + required attributes, não Shopify URL write imediato.
 - [x] GMC required attributes preview: `scripts/lk_gmc_required_attrs_preview_20260512.py` preparou CSV local para 80 offer_ids P1; 80/80 matches Shopify, `age_group`/`gender`/`size` sugeridos, 80 linhas prontas para supplemental feed/feed rule mediante aprovação; 0 writes.
 - [x] GMC required attributes apply: após aprovação explícita de Lucas, `scripts/lk_gmc_required_attrs_apply_supplemental_feed_20260512.py` atualizou o supplemental feed existente no Gist com 80 linhas; `scripts/lk_gmc_required_attrs_refresh_datafeed_url_20260512.py` apontou o datafeed para raw revisionado e acionou fetchNow; `scripts/lk_gmc_required_attrs_verify_20260512.py` confirmou 80/80 produtos com `ageGroup`/`gender`/`sizes` aplicados no Content API.
-- [x] Guardrails consolidados: 2 writes aprovados e reversíveis no GMC/feed; 0 Shopify, 0 GSC, 0 checkout/theme, 0 envio/contato externo, 0 compra/PO, 0 marketplace, 0 n8n.
+- [x] GMC pós-apply read-only: reprocessamento parcial observado; fila caiu de 963 para 957 itens P1/P2 e destinos reprovados de 708 para 586. Novo preview required attributes preparado com 80 offer_ids: 72 prontos para supplemental feed mediante aprovação e 8 em revisão manual; 0 writes.
+- [x] GMC required attributes segundo lote: após aprovação explícita de Lucas (`Corrigir e aprovar`), `scripts/lk_gmc_required_attrs_apply_second_batch_20260512.py` atualizou 72 linhas no supplemental feed, apontou o datafeed para raw revisionado, acionou fetchNow e `scripts/lk_gmc_required_attrs_verify_second_batch_20260512.py` confirmou 72/72 produtos com `ageGroup`/`gender`/`sizes` aplicados no Content API; 0 Shopify/GSC/checkout/theme/envio/compra/marketplace/n8n.
+- [x] GMC catalog duplication audit: `scripts/lk_gmc_catalog_duplication_audit_20260512.py` confirmou que o total de 25.578 produtos no Merchant não representa catálogo único real da LK; são 13.940 `online:pt:BR` + 11.638 `local:pt:BR`, contra snapshot local Shopify de 2.241 produtos e 14.466 variantes. Há 1.652 offer_ids presentes em mais de uma dimensão (`online` e `local`), e a limpeza/exclusão deve ser tratada como próxima ação separada com rollback.
+- [x] GMC router full-catalog fix: `scripts/lk_merchant_center_feed_readonly_router_20260511.py` deixou de usar teto de 5.000 produtos e passou a ler até 30.000 status, evitando análises incompletas; nova leitura retornou 25.578 status, 4.968 itens P1/P2 e 3.656 com destino reprovado.
+- [x] GMC cleanup preview: `scripts/lk_gmc_catalog_cleanup_preview_20260512.py` gerou pacote read-only de limpeza potencial: 11.638 linhas `local` P1 (9.986 órfãs locais + 1.652 duplicadas local/online) e 3.369 `online` P2 órfãs contra SKU/variant Shopify; 0 delete/supressão/write.
+- [x] Guardrails consolidados: writes aprovados e reversíveis no GMC; nenhum Shopify, GSC, checkout/theme, envio/contato externo, compra/PO, marketplace ou n8n executado.
+- [x] Snapshot 2026-05-14 com ranking stockout/recompra de 4 meses integrado ao Mission Control: 872 grupos com SKU, 647 candidatos, 18 Tiny zero no tamanho exato, 20 ambíguos e 609 exigindo confirmação Tiny.
+- [x] Padrão LK Compras/Júlio/Notion incorporado: demanda concreta + stockout → Droper primeiro → StockX/GOAT fallback → decisão humana preço/logística → compra humana → Notion como log.
+- [x] PRD v0.2 continuado em paralelo: `areas/lk/projetos/lk-os-prd-continuation-2026-05-14.md`, sem marketplace/WhatsApp/Notion/write.
+- [x] Consolidar relatório final do GMC P2A quando o executor autorizado terminar.
+- [x] Após GMC final, gerar e executar sequência A/B/C aprovada: Droper/Notion-Júlio, diagnóstico Shopify DRAFT/404, Merchant atributos não críticos, e supressão exata dos 12 IDs DRAFT/404 no Merchant conforme opção 2 escolhida por Lucas.
+- [x] Monitor pós-A/B/C read-only: `scripts/lk_gmc_post_abc_monitor_20260514.py` confirmou 12/12 deletes ausentes por GET direto e 64/64 atributos sem diagnóstico alvo; baseline geral atual tem 23.267 productstatuses e 524 linhas com issues residuais gerais.
+- [x] Superfície padrão de status criada/atualizada para `Status Projeto LK OS`: `areas/lk/rotinas/lk-os-status-surface-2026-05-14.md`, com resposta Telegram pós-A/B/C.
+- [x] Sourcing v8/v9/v10/v11 concluído em 2026-05-15: 14 cards com campos decisivos corretos (`Preço Droper`, menor `StockX/GOAT`, `Custo produto`, `Preço site LK`), ranking Júlio, fila pendente e pacote P1 de compra manual. P1: 4 itens, custo estimado R$ 4.465,92, valor site R$ 11.199,96, margem combinada 60,1%; sem compra/contato/pagamento automático.
 
-Artefato atual: `areas/lk/rotinas/mission-control-snapshot-2026-05-12.md` + `reports/lk-mission-control-snapshot-2026-05-12.md` + `scripts/lk_mission_control_snapshot_20260512.py`.
+Artefato atual: `areas/lk/rotinas/mission-control-snapshot-2026-05-14.md` + `reports/lk-mission-control-snapshot-2026-05-14.md` + `reports/lk-os-stockout-recompra-ranking-notion-preflight-2026-05-14.md` + `areas/lk/projetos/lk-os-prd-continuation-2026-05-14.md` + `areas/lk/projetos/lk-os-program-to-finish-2026-05-14.md` + `areas/lk/projetos/lk-os-prd-pending-backlog-2026-05-15.md` + `scripts/lk_mission_control_snapshot_20260512.py` + `scripts/lk_os_stockout_recompra_rank_and_notion_preflight_20260514.py`.
 
 Critério de saída:
 
 - Lucas consegue pedir `status Projeto LK OS` e receber uma visão curta com crons, decisões e bloqueios, sem depender de leitura manual de múltiplos reports.
 - Qualquer evolução para UI, cron recorrente próprio do Mission Control ou worker Kanban exige escopo/cadência aprovados.
 
+### Fase 10 — Customer Trust & Loyalty Spine
+
+Status: `pending_future`; Lucas pediu em 2026-05-13 para deixar Loyalty para depois e voltar aos próximos passos do PRD LK OS. O que já foi documentado fica como base, mas não é a frente ativa agora. Nenhum acesso/API/write/envio executado.
+
+Objetivo: integrar LK Rewards/Rivo e Judge.me ao LK OS como camada de fidelidade premium, prova social e relacionamento.
+
+Entregáveis:
+
+- [x] Subdocs de integração criados: `empresa/integracoes/rivo.md` e `empresa/integracoes/judgeme.md`.
+- [x] PRD atualizado com módulo `Customer Trust & Loyalty / LK Rewards & Reviews`.
+- [x] Fonte e rótulos adicionados: `fact_rivo_loyalty`, `fact_judgeme_review`, `derived_loyalty_crm`, `derived_review_cro`.
+- [x] Regra Lucas registrada: LK Rewards = 1pt/R$1, tiers por gasto acumulado, benefícios automáticos/status, não troca manual clássica por desconto.
+- [x] Regra Judge.me registrada: reviews auto-publicadas; Lucas deleta ruins e responde negativas pessoalmente; review request via Klaviyo precisa auditoria.
+- [x] Wireframe/copy v0 da página LK Rewards criado localmente, sem Shopify/theme write.
+- [ ] Verificar capacidade Rivo/API/admin para tiers/marcos automáticos por gasto acumulado.
+- [ ] Auditar review request Klaviyo/Judge.me sem disparo.
+- [ ] Mapear captura de aniversário no Shopify/customer profile/Klaviyo/Rivo, sem implementação antes de aprovação.
+- [ ] Definir tabela final de tiers/marcos/benefícios, expiração e regra de devolução/cancelamento.
+
+Artefatos atuais:
+
+- `areas/lk/rotinas/lk-customer-trust-loyalty-spine-v0-2026-05-13.md`.
+- `areas/lk/rotinas/lk-rewards-automatic-spend-milestone-model-2026-05-13.md`.
+- `areas/lk/rotinas/lk-rewards-page-wireframe-copy-v0-2026-05-13.md`.
+- `empresa/integracoes/rivo.md`.
+- `empresa/integracoes/judgeme.md`.
+
+Critério de saída:
+
+- O LK OS consegue listar clientes elegíveis/próximos de benefícios e produtos com oportunidades de reviews, sempre com fonte clara e sem PII no Telegram.
+- Nenhum benefício, cupom, review response, campanha, página Shopify ou write em plataforma é executado sem preview e aprovação explícita.
+
 ## Próxima sequência recomendada
 
-1. Monitorar reprocessamento do Merchant até os diagnostics de `age group`/`gender`/`size` limparem; produto já mostra atributos aplicados no Content API, mas item issues podem atrasar.
-2. Manter campanha Klaviyo P1 em Draft até Lucas aprovar envio, ajuste ou pausa.
-3. Preparar fila curta de decisão sourcing: 4 famílias aprováveis; antigos `needs_data` já foram reconciliados read-only/local, sem pesquisa externa/fornecedor/compra.
-4. Evoluir Mission Control só com aprovação de escopo/cadência se virar UI, cron próprio ou worker Kanban.
-5. Substituir lead time padrão por lead time real por fonte/canal quando Lucas confirmar parâmetros Monbam/Droper/interno.
+1. Reabrir o PRD completo a partir da auditoria `lk-os-prd-full-gap-audit-2026-05-15.md`, porque Lucas corrigiu que o backlog anterior estava estreito demais.
+2. Atualizar/publicar Mission Control com status A/B/C verificado, baseline residual atual e lacunas do PRD completo.
+3. Se Lucas aprovar o próximo gate, transformar o `CRO Visual Preview Pack v0` local em branch/dev theme para os 3 P1-CRO (`onitsuka-tiger-mexico-66`, `onitsuka-tiger-todos-os-modelos`, `lululemon`), com snapshot/rollback, preview URLs e screenshots, sem produção.
+4. Finalizar a camada operacional de sourcing pós-correções Lucas: instrução curta Júlio permanece pendente; pacote P1 já pronto para decisão manual, sem compra automática.
+5. Gerar preview residual deduplicado do baseline Merchant atual (`price_updated`, `strikethrough_price_updated`, landing/crawl), sem write.
+6. Retomar Pulso Comercial, CRO, Brand Mix, Paid/Influencer, Content Engine e Trend-to-Product-to-Blog como frentes P1/P2 do PRD, em modo read-only/preview primeiro. Pulso Comercial 16h e CRO baseline 0,13%→0,20% já têm artefatos P1 read-only em 2026-05-15; próximo CRO seguro é preview visual v0 antes de qualquer Shopify/theme write.
+7. Tratar a frente LK + Check / Dia dos Namorados + gift card + CRO/protótipo + Rarity como pendência P1 de melhoria operacional do LK OS, usando `areas/lk/rotinas/alinhamento-semanal-lk-check-2026-05-15.md` como fonte; próximos passos só em checklist/preview/read-only até aprovação de campanha/envio/write.
+8. Manter campanha Klaviyo P1 em Draft até Lucas aprovar envio, ajuste ou pausa.
+9. Evoluir Mission Control só com aprovação de escopo/cadência se virar UI, cron próprio ou worker Kanban.
+10. Substituir lead time padrão por lead time real por fonte/canal quando Lucas confirmar parâmetros Monbam/Droper/interno.
+11. Manter Customer Trust & Loyalty como `pending_future` até Lucas retomar Loyalty/Rivo/Judge.me.
 
 ## Todo-list imediata
 
@@ -375,3 +444,275 @@ Sinônimos aceitos:
 - `COO da LK no Hermes`
 
 Se Lucas falar qualquer uma dessas frases, Hermes deve tratar como o mesmo projeto.
+### 2026-05-12 — GMC local inventory source probe
+
+- Status: read-only concluído.
+- Fonte provável do inventário local: Shopify POS / Shopify app via Content API.
+- Evidência: LIA settings ativo no BR com posExternalAccountId=shopify.com; produtos locais `source=api`; feed listado é apenas supplemental.
+- Decisão operacional: não limpar `local` como ruído; regenerar preview com normalização `LIA_` antes de qualquer ação.
+### 2026-05-12 — GMC orphan ranking
+
+- Status: read-only concluído.
+- Fila P0/P1 total: 4671; P0=2383; P1=2288.
+- Preservados como válidos/monitorados: 10336 locais e 10571 online.
+- Próximo passo seguro: pacote por bucket para correção/limpeza com rollback; nenhuma execução externa/write realizada.
+### 2026-05-12 — GMC action package preview
+
+- Status: preview-only concluído.
+- Pacote completo gerado para 4671 itens P0/P1: {'A_online_stale_triage': 2415, 'C_local_identifier_fix': 847, 'D_local_stale_triage': 455, 'B_online_identifier_fix': 954}.
+- Ordem recomendada: online stale, online identifier fix, local stale, local identifier fix.
+- Nenhum Merchant/feed/Shopify/local inventory write executado; execução exige aprovação atual por pacote.
+### 2026-05-12 — GMC executable previews A/B/C/D
+
+- Status: preview-only concluído.
+- Previews executáveis A/B/C/D gerados para 4671 itens P0/P1, com CSV de product IDs e snapshot privado de rollback (4671 registros).
+- Nenhum Merchant/feed/Shopify/local inventory write executado; execução exige aprovação atual por pacote.
+### 2026-05-12 — GMC Package B identifier fix execution
+
+- Status: gmc_package_b_identifier_fix_dry_run_ready.
+- Escopo aprovado por Lucas: `B_online_identifier_fix` online.
+- Aplicados: insert_ok=0, delete_ok=0, falhas=0; candidatos unambíguos=93.
+- Snapshot privado de rollback: `/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-package-b-identifier-fix-rollback.json`.
+- Não tocado: local, Shopify, feed, banco, campanhas, GMB/POS.
+### 2026-05-12 — GMC Package A online stale triage execution
+
+- Status: gmc_package_a_online_stale_triage_applied_with_anomalies.
+- Escopo aprovado por Lucas: `A_online_stale_triage` online.
+- Product IDs processados=2415, deletes OK nesta rodada=1511, já ausentes=898, verificados ausentes=2291, falhas=6.
+- Snapshot privado de rollback: `/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-package-a-online-stale-triage-rollback.json`.
+- Não tocado: local, Shopify, feed, banco, campanhas, GMB/POS.
+### 2026-05-12 — GMC A then B execution final verification
+
+- Status: A+B executados em ordem final aprovada por Lucas.
+- A: 2415/2415 product IDs online stale verificados ausentes.
+- B: 93 correções verificadas; segunda passada após A não encontrou novos B seguros; 854 preservados sem alvo unambíguo.
+- Não tocado: local, Shopify, feed, banco, campanhas, GMB/POS.
+### 2026-05-12 — GMC Package B3 delete-old duplicates execution
+
+- Status: superseded_rolled_back.
+- Escopo aprovado por Lucas: B3 delete-old-only dos IDs antigos duplicados.
+- Resultado: preview B3 estava inseguro porque `old_product_id` e `correct_existing_product_id` eram iguais nos 854 casos; a execução foi revertida.
+- Snapshot privado de rollback usado: `/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-package-b3-delete-old-duplicates-execution-rollback.json`.
+- Estado final pós-rollback: 854/854 IDs presentes novamente; Merchant products voltou a 23147; falhas finais=0.
+- Lição registrada: previews/executores B/B3 devem bloquear hard `old_product_id == target_product_id`; `target already exists` só é delete-old se os IDs forem diferentes.
+- Não tocado: Shopify, feed, banco, local/POS, campanhas, Google Business Profile.
+### 2026-05-12 — GMC Package B3 emergency rollback restore
+
+- Status: gmc_package_b3_emergency_rollback_restored_verified.
+- Restore: reinserção dos recursos originais ausentes via rollback privado; linhas já presentes não foram alteradas.
+- Verificação final: 854/854 presentes, still_missing=0, Merchant products=23147.
+- Relatório: `reports/lk-gmc-2026-05-12-package-b3-emergency-rollback-restore.md`.
+### 2026-05-12 — GMC local C/D Shopify live preview
+
+- Status: preview read-only/local concluído.
+- Local C/D avaliados: 1302; pacotes {'C_local_identifier_fix': 847, 'D_local_stale_triage': 455}.
+- Shopify live validou como no-op/valid: 1239.
+- Candidatos residuais após POS/Tiny: 63; nenhum write executado.
+- Próximo: atualizar classificador/approval packet residual, mantendo local inventory preservado por padrão.
+### 2026-05-12 — GMC local C/D residual Tiny probe
+
+- Status: Tiny probe read-only concluído para 63 residuais locais C/D.
+- Estados: {'tiny_no_exact_code_match_residual_cleanup_candidate_needs_pos_source_validation': 63}.
+- Candidatos finais ainda dependentes de POS/source validation: 63.
+- Nenhum Tiny/Merchant/Shopify/POS/feed/DB write executado.
+### 2026-05-12 — GMC local C/D POS/source validation
+
+- Status: POS/source validation read-only concluída para 63 residuais locais.
+- Estados: {'old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present': 63}.
+- Approval candidates residuais: 63; bloqueados revisão: 0.
+- Snapshot privado rollback/source salvo; nenhum write executado.
+### 2026-05-12 — GMC local C/D final approval packet
+
+- Status: approval packet final gerado sem execução.
+- Escopo: 63 old local LIA IDs; guard_failures=0.
+- Snapshot privado rollback: `/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-local-cd-pos-source-validation-rollback-snapshot.json`.
+- Execução continua bloqueada até aprovação explícita Lucas para estes 63 IDs.
+### 2026-05-12 — GMC local C/D 63 old LIA cleanup execution
+
+- Status: gmc_local_cd_63_old_lia_cleanup_applied_verified.
+- Escopo aprovado por Lucas: delete exato de 63 IDs locais antigos `LIA_`, mantendo replacement rows locais.
+- Deletes OK/idempotentes: 63; falhas=0; old_absent=63; old_still_present=0; replacements_present=14/14.
+- Snapshot privado rollback+execução: `/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-local-cd-63-old-lia-cleanup-execution-rollback-and-execution.json`.
+- Não tocado: online products, replacement local rows, Shopify, Tiny, feed, banco, POS/local channel, campanhas/clientes.
+### 2026-05-12 — GMC Phase 7 post-cleanup monitor
+
+- Status: gmc_phase7_post_cleanup_monitor_readonly_ready.
+- Merchant products/statuses atuais: 23147 / 23147.
+- Local C/D verificado: old_absent=63/63; replacements_present=14/14.
+- Item issues atuais: rows=2628; instances=34271; destination_problem_rows=1628.
+- Nenhum write executado; próximo bloco recomendado: diagnostics delta/read-only e novo pacote apenas se houver candidato exato.
+### 2026-05-12 — GMC Phase 7 diagnostics triage
+
+- Status: gmc_phase7_diagnostics_triage_readonly_ready.
+- Item issues atuais: rows=2628; instances=34270; delta_vs_phase7=-1.
+- Buckets P1: attribute_completion_preview e checkout_url_readonly_probe.
+- Nenhum write executado; próximo seguro: approval packet no-write de atributos obrigatórios por exact IDs.
+### 2026-05-12 — GMC P1 attribute completion preview
+
+- Status: gmc_p1_attribute_completion_preview_ready_no_execution.
+- Produtos/instâncias required-attribute revisados: 2188 / 32574.
+- Candidatos approval packet futuro: 1704; bloqueados=436.
+- Nenhum write executado; aplicação exige aprovação separada por exact IDs.
+### 2026-05-12 — GMC P1 core attributes root-cause probe
+
+- Status: gmc_p1_core_attributes_root_cause_probe_readonly_ready.
+- Linhas core-attr rechecadas: 1627; approval candidates futuros=1627; recheck/no-write=0; fonte incompleta/manual=0.
+- Nenhum write executado; qualquer aplicação exige pacote exato, snapshot privado de rollback e aprovação Lucas.
+### 2026-05-12 — GMC P1 core attributes approval packet preview
+
+- Status: gmc_p1_core_attributes_approval_packet_preview_ready_no_execution.
+- Packet preview: candidatos=1627; bloqueados=0; writes=0.
+- Caveat: availability exige política explícita por Tiny/Shopify antes de execução.
+- Execução futura exige aprovação Lucas, snapshot privado rollback e verificação pós-delay.
+### 2026-05-12 — GMC P1 core attrs 4-field executor dry-run
+
+- Status: gmc_p1_core_attrs_4field_executor_dry_run_ready.
+- Scope: exact online IDs; campos title/link/imageLink/price; availability excluída.
+- Dry-run prontos para apply futuro: 1627; bloqueados/skipped=0.
+- Nenhum write executado no dry-run; apply exige aprovação explícita e snapshot privado chmod 600.
+### 2026-05-12 — GMC P1 core attrs 4-field apply final
+
+- Status: gmc_p1_core_attrs_4field_apply_verified.
+- Lucas aprovou opção 2; aplicados 1.627 exact online product IDs para `title`, `link`, `imageLink`, `price`; `availability` excluída.
+- Verificação pós-delay: 1.627/1.627 com os 4 campos presentes no product resource; 0 ainda faltando os 4 campos no productstatus.
+- Restante: `availability` ainda faltante em 1.616 linhas; tratar em pacote separado com Tiny como fonte de verdade.
+- Rollbacks privados chmod 600 salvos em `/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/`.
+### 2026-05-12 — GMC P1-B availability Tiny packet
+
+- Status: `gmc_p1_availability_tiny_packet_ready_no_write`.
+- Read-only packet: 5 online rows com `availability` ausente; 0 ready via Tiny depósito oficial (0 in stock / 0 out of stock); 5 bloqueados/revisão.
+- Nenhum Merchant/Tiny/Shopify/feed/DB/POS/campaign write executado.
+- Próximo gate: aprovação explícita para apply de `availability` somente nos ready IDs, com snapshot rollback privado.
+### 2026-05-12 — GMC P1-B availability Tiny packet interim
+
+- Status: `gmc_p1_availability_tiny_packet_queued_after_tiny_rate_limit`.
+- Criado executor/packet read-only para `availability` usando Tiny como fonte de estoque.
+- Primeiro teste encontrou rate-limit Tiny (`codigo_erro=6`); script corrigido para bloquear erro API e não converter em `out of stock`.
+- Reexecução completa enfileirada em background (`proc_3ebe93b6e640`) após cooldown de 30 minutos com pacing conservador.
+- Nenhum Merchant/Tiny/Shopify/feed/DB/POS/campaign write executado.
+### 2026-05-12 — LK OS handoff antes de restart gateway
+
+- Status: handoff salvo para retomar após restart.
+- Arquivo: `reports/lk-os-handoff-after-gateway-restart-2026-05-12.md`.
+- Retomada recomendada: GMC P1-B availability read-only packet; verificar Tiny rate-limit; não aplicar Merchant sem nova aprovação explícita.
+### 2026-05-12 — GMC P1-B availability retomado após restart
+
+- Status: `gmc_p1_availability_tiny_packet_running_with_tiny_backpressure_handling`.
+- Tiny teste simples OK, mas paginação completa encontrou `codigo_erro=6`; executor corrigido para cooldown/retry e para nunca converter Tiny não-OK em `out of stock`.
+- Processo atual: `proc_b97e693ef36f`, read-only/no-write, `notify_on_complete=true`.
+- Nenhum Merchant/Tiny/Shopify/feed/DB/POS/campaign write executado.
+### 2026-05-12 — LK OS next decision queue
+
+- Status: `lk_os_next_decision_queue_ready_no_write`.
+- Fila local/read-only consolidada: 10 itens; 7 exigem aprovação atual antes de execução. Observação posterior: os 4 itens de sourcing/cotação P1 genérica foram supercedidos pela correção Lucas de 2026-05-12; não devem virar envio a fornecedor sem gatilho de venda/stockout.
+- Arquivos: `reports/lk-os-next-decision-queue-2026-05-12.md` e `areas/lk/rotinas/lk-os-next-decision-queue-2026-05-12.md`.
+- Nenhum Merchant/Tiny/Shopify/Klaviyo/fornecedor/compra/marketplace/DB/POS/n8n write ou envio executado.
+### 2026-05-12 — LK OS supplier quote send preview
+
+- Status: `superseded_do_not_send_lucas_sourcing_correction_2026_05_12`.
+- Preview local de 4 mensagens P1 para cotação foi invalidado pela correção operacional de Lucas: reposição só começa por venda/pedido com SKU/tamanho e estoque zerado confirmado.
+- Novo fluxo: confirmar stockout → consultar Droper → se Droper não tiver, comparar StockX vs GOAT → preparar tarefa Notion/Júlio com link/custo/contexto; Hermes nunca compra/reserva/escolhe endereço/importador/aciona fornecedor sozinho.
+- Arquivos marcados como supercedidos: `reports/lk-os-supplier-quote-send-preview-2026-05-12.md` e `areas/lk/rotinas/lk-os-supplier-quote-send-preview-2026-05-12.md`; correção registrada em `reports/lk-os-sourcing-logic-correction-2026-05-12.md`.
+- Nenhum envio/contato/compra/PO/reserva/write/marketplace/n8n executado.
+### 2026-05-12 — LK OS stockout sourcing router template
+
+- Status: `lk_os_stockout_sourcing_router_template_ready_no_write`.
+- Correção Lucas operacionalizada: sourcing/reposição só por venda/pedido + stockout confirmado; Droper primeiro; StockX/GOAT fallback; tarefa Júlio/Notion; aprovação inline no Telegram.
+- Nenhum marketplace/Notion/n8n/fornecedor/compra/reserva/Shopify/Tiny/Merchant write executado.
+### 2026-05-12 — LK OS Telegram approval surface audit
+
+- Status: `lk_os_telegram_approval_surface_audit_ready_no_write`.
+- Escaneados 178 artefatos; 50 P1 precisam de reescrita inline antes de aprovação; 8 já parecem OK.
+- Regra Lucas aplicada: caminhos JSON/CSV/MD são auditoria; Telegram precisa carregar o conteúdo de aprovação no próprio texto.
+- Nenhum Tiny/Shopify/Merchant/Notion/fornecedor/write executado.
+### 2026-05-12 — GMC P1-B availability in-stock policy pilot apply
+
+- Status: `gmc_p1_availability_in_stock_policy_pilot_apply_verified`.
+- Aprovação: Lucas `Aprovo`; interpretado como piloto recomendado de 25.
+- Escopo: exact online Merchant IDs; `availability=in stock` apenas; Tiny/Shopify/feed/DB/POS/campanha/sourcing não tocados.
+- Resultado: 25 updates; 4 verificados `in stock`; rollback privado salvo.
+### 2026-05-12 — GMC P1-B availability in-stock policy resumable scale
+
+- Status: `partial_running`.
+- Aprovação: opção 1, escala em lotes controlados.
+- Resultado atual: processed=100; success_or_already=100; failed=0; remaining=1516.
+### 2026-05-12 — GMC P1-B availability in-stock policy fast scale
+
+- Status: `complete_verified`.
+- Aprovação: opção 1, escala em lotes controlados.
+- Resultado: processed=1616; success_or_already=1616; updated_verified=1354; already=262; failed=0; remaining=0.
+- Rollbacks privados por lote salvos em `/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/`.
+
+### 2026-05-13 — LK OS next execution queue after Loyalty pause
+
+- Status: `lk_os_next_execution_queue_ready_no_write`.
+- Decisão Lucas: deixar Customer Trust & Loyalty / Loyalty / Rivo / Judge.me como `pending_future` e voltar aos próximos blocos não-Loyalty do PRD.
+- Refresh GMC read-only executado: products/statuses 23.194/23.194; local C/D antigos ausentes 63/63; replacements preservados 14/14; issue instances 11.791; top bucket P1 `attribute_completion_preview` com 2.100 product IDs e 10.162 issue instances.
+- Preview P1 attribute completion atualizado: 1.583 candidates para approval packet futuro, 469 bloqueados, 60 high-confidence, 1.523 medium/review; 0 writes.
+- Próximo recomendado: `GMC attribute completion packet v2` no-write, com separação por confiança/campo e aprovação inline antes de qualquer Merchant/feed apply.
+- Packet v2 gerado: 1.583 candidates, com Onda 1 high-confidence 60 e Onda 2 medium/review 1.523; 469 bloqueados e 48 ambíguos não aplicáveis.
+- Relatórios: `reports/lk-os-next-execution-queue-2026-05-13.md` e `reports/lk-gmc-p1-attribute-completion-packet-v2-2026-05-13.md`.
+- Nenhum Merchant/Tiny/Shopify/Klaviyo/WhatsApp/Rivo/Judge.me/Notion/n8n/infra write ou envio executado.
+
+### 2026-05-13 — LK OS wacli/OpenClaw WhatsApp integration pending
+
+- Status: `contract_ready_for_review_no_external_action`.
+- Pedido Lucas: incorporar `wacli` ao universo operacional construído para a LK.
+- Estado técnico: `pessoal` e `lk-compras` conectados como contas separadas no wacli; `lk-compras` em sync inicial. `lk-loja` planejado para etapa futura.
+- Contrato criado: `areas/lk/rotinas/lk-os-wacli-openclaw-whatsapp-contract-2026-05-13.md`.
+- Próximo bloco seguro: classificador LK Compras v1 local/read-only, usando a regra corrigida de compras: pedido → respostas → escolher menor preço ou opção mais perto de São Paulo se diferença pequena → compra humana → lançamento no Notion. Calibragem inicial criada em `areas/lk/rotinas/lk-compras-whatsapp-notion-flow-calibration-2026-05-13.md`.
+- Próxima pendência WhatsApp: conectar amanhã a conta wacli `hermes` (`+55 11 98555-5245`) como agente Hermes para grupos/suporte/reportes. Exemplos futuros: report diário de vendas e responder perguntas operacionais do Júlio, como “quem ofereceu o 9060wht mais barato?”, buscando evidência em `lk-compras`/Shopify/Tiny/Notion. Conexão é permitida no escopo; envios, suporte automático, entrada/alteração de grupos, crons e Notion writes exigem aprovação separada.
+- Guardrail: nenhum envio WhatsApp, contato com grupo/cliente/fornecedor, compra, automação recorrente ou integração externa sem aprovação explícita atual.
+- Rotina pendente: `areas/lk/rotinas/lk-os-wacli-openclaw-whatsapp-integration-pending-2026-05-13.md`.
+### 2026-05-13 — GMC P1 attribute completion Onda 1 dry-run executor
+
+- Status: `gmc_p1_attribute_completion_onda1_executor_dry_run_ready`.
+- Escopo: Onda 1 high-confidence do packet v2; exact online Merchant IDs; `sizes` apenas.
+- Resultado dry-run: 60 ready; 60 selecionados pelo limite atual; nenhum Merchant/Shopify/Tiny/feed/write executado.
+- Apply futuro exige aprovação inline: `Lucas approved GMC P1 Attribute Onda 1 apply`.
+### 2026-05-13 — GMC P1 attribute post-apply Onda 1 + Onda 2 review
+
+- Status: `gmc_p1_attribute_post_apply_onda1_verified_wave2_review_ready_no_write`.
+- Onda 1 pós-apply: 60/60 com `sizes` esperado; size issues fresh remanescentes=0.
+- Onda 2: 1523 rows revisadas read-only; amostra de 80 preparada; nenhum apply/write.
+### 2026-05-13 — GMC P1 attribute completion Onda 2 pilot executor dry-run
+
+- Status: `gmc_p1_attribute_wave2_pilot_executor_dry_run_ready`.
+- Escopo: Onda 2 piloto conservador; `sizes` + `ageGroup=adult` + `gender=unisex`; exact online Merchant IDs.
+- Resultado dry-run: 1285 ready; 50 selecionados no piloto; nenhum write executado.
+- Apply futuro exige aprovação inline: `Lucas approved GMC P1 Attribute Wave2 pilot apply`.
+### 2026-05-13 — GMC P1 attribute Wave2 post-status recheck
+
+- Status: `gmc_p1_attribute_wave2_post_status_recheck_read_only_complete`.
+- Onda 2 aplicada: 969 IDs; productstatuses fresh avaliados.
+- Estados Onda 2 aplicada: {'ok_attrs_and_no_target_required_diagnostic': 969}.
+- Required attrs atuais no GMC: {'color': 1082, 'size': 464, 'age group': 437, 'gender': 437, 'price': 35}.
+- Nenhum write/delete adicional executado.
+### 2026-05-13 — GMC P1 remaining attribute Wave3 preview
+
+- Status: `gmc_p1_attribute_remaining_wave3_preview_read_only`.
+- Required attr rows: 800; instances: 1368.
+- Buckets: {'blocked_no_safe_suggestion': 165, 'candidate_wave3_color_tag_high_confidence': 5, 'candidate_wave3_color_title_review': 377, 'candidate_wave3_mixed_review': 7, 'candidate_wave3_price_review_do_not_apply_without_price_policy': 31, 'candidate_wave3_size_age_gender_review': 215}.
+- Nenhum write/delete adicional executado.
+
+### 2026-05-14 — GMC residual corrections pós-A/B/C
+
+- Status: `executado_com_rollback_e_monitoramento`.
+- Autorização Lucas: seguir/corrigir residuais 1/3/4/5 e usar Kicks.dev para GTIN quando seguro.
+- Resultado monitorado final imediato: `landing_page_error` 27→0, `landing_page_pending_crawl` 5→0, `price_updated` 1089→915, `strikethrough_price_updated` 516→231, `missing_item_attribute_for_product_type` 44→34, `image_link_broken` 6→3.
+- GTIN mantido sem write: Kicks.dev consultado, mas sem correspondência segura de tamanho para patch automático.
+- Guardrail aprendido: não usar Content API insert/upsert em itens `source=crawl`/multi-feed para missing attrs; a tentativa criou overlay `source=api`, foi revertida/deletada.
+- Relatório: `areas/lk/rotinas/gmc-residual-corrections-2026-05-14.md`.
+
+- [>] Atualização incremental Tiny 2026-05-15: 872 leituras consolidadas; lote 250/delay 3s pausado em rate limit após +30; Mission Control v2 atualizado, sem promoção para final.
+- [x] Approval Manager + Learning Loop v0 implementado localmente em 2026-05-15: correção crítica `/background` não autoriza envio externo registrada em memória, Brain e skills; contatos externos agora default `draft_only` até aprovação atual com payload/destinatário exatos. Artefato: `areas/lk/rotinas/lk-os-approval-manager-learning-loop-v0-2026-05-15.md`.
+- [x] Approval Manager Rules v0 materializado em SQLite local em 2026-05-15: tabela `lk_approval_manager_rules` com gates para envio externo, COMPRE JÁ/tema-CRO, campanhas, sourcing, GMC e data quality local. Artefato: `areas/lk/rotinas/lk-os-approval-manager-rules-v0-2026-05-15.md`.
+
+### 2026-05-15 — Approval Manager v1 finalizado
+
+- Status: `active_local_router_layer`.
+- SQLite local: `lk_approval_manager_rules`, `lk_approval_decision_ledger`, `lk_approval_router_tests`.
+- Router regression: 8/8 PASS para background/WhatsApp, Klaviyo, GMC price, sourcing/fornecedor, Data Quality, theme/CRO, GMC preview e Tiny/SKU local.
+- Mission Control v2 atualizado com filas `draft_only`, `needs_approval/preview` e `autonomous_readonly/local`.
+- Artefato: `areas/lk/rotinas/lk-os-approval-manager-v1-2026-05-15.md`.
+- Nenhum envio externo, campanha, compra, Shopify/Tiny/Merchant/Meta/Klaviyo/WhatsApp, cron, deploy ou infra executado.

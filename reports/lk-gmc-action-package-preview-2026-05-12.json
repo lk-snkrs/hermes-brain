@@ -1,0 +1,1522 @@
+{
+  "generated_at": "2026-05-12T15:45:25.947026+00:00",
+  "scope": "LK GMC complete action package preview read-only",
+  "status": "gmc_action_package_preview_ready_readonly",
+  "source_labels": [
+    "fact_merchant_center",
+    "fact_shopify_local_snapshot",
+    "derived_reconciliation",
+    "manual_approval_required"
+  ],
+  "summary": {
+    "merchant_products_read": 23147,
+    "queue_total_p0_p1": 2168,
+    "priority_counts": {
+      "P0": 5,
+      "P1": 2163
+    },
+    "channel_counts": {
+      "online": 866,
+      "local": 1302
+    },
+    "bucket_counts": {
+      "online_unmatched_possible_stale": 5,
+      "local_identifier_mismatch": 847,
+      "local_unmatched_after_normalization": 455,
+      "online_identifier_mismatch": 861
+    },
+    "package_counts": {
+      "A_online_stale_triage": 5,
+      "C_local_identifier_fix": 847,
+      "D_local_stale_triage": 455,
+      "B_online_identifier_fix": 861
+    },
+    "merchant_writes": 0,
+    "shopify_writes": 0,
+    "feed_writes": 0,
+    "external_sends": 0
+  },
+  "decision": {
+    "recommended_execution_order": [
+      "A_online_stale_triage",
+      "B_online_identifier_fix",
+      "D_local_stale_triage",
+      "C_local_identifier_fix"
+    ],
+    "why": "Start with online stale because it is largest and least likely to affect physical local inventory; keep local changes behind stricter approval.",
+    "execution_requires_current_approval": true
+  },
+  "bucket_packages": [
+    {
+      "bucket": "online_identifier_mismatch",
+      "count": 861,
+      "priority_counts": {
+        "P1": 861
+      },
+      "channel_counts": {
+        "online": 861
+      },
+      "action_package": {
+        "package": "B_online_identifier_fix",
+        "risk": "medium",
+        "proposed_sequence": [
+          "Confirm whether GTIN/product match maps to an active Shopify variant with different SKU/offer_id.",
+          "Prefer fixing source identifiers/feed mapping over deleting the Merchant item.",
+          "Generate exact before/after mapping preview for SKU/offer_id/product_id/GTIN.",
+          "Execute only after approval for the specific source to change: Merchant/feed/Shopify/app."
+        ],
+        "rollback_requirement": "Keep old identifier mapping and feed/resource snapshot; rollback by restoring previous identifier/feed row.",
+        "approval_needed": "Lucas approval for any feed, Merchant, Shopify, or app identifier write."
+      },
+      "sample_rows": [
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:11020158",
+          "offer_id": "11020158",
+          "reconciliation_offer_id": "11020158",
+          "title": "Jaqueta Lululemon Define Nulu",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:1183A592200",
+          "offer_id": "1183A592200",
+          "reconciliation_offer_id": "1183A592200",
+          "title": "Tênis Onitsuka Tiger Mexico 66 SD Birch Silver Bege",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:1183B566 021-9",
+          "offer_id": "1183B566 021-9",
+          "reconciliation_offer_id": "1183B566 021-9",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:1183C10200",
+          "offer_id": "1183C10200",
+          "reconciliation_offer_id": "1183C10200",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Black and White Preto",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:1183C102100",
+          "offer_id": "1183C102100",
+          "reconciliation_offer_id": "1183C102100",
+          "title": "Tênis Onitsuka Tiger Mexico 66 White Blue Branco",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:1183C123.200",
+          "offer_id": "1183C123.200",
+          "reconciliation_offer_id": "1183C123.200",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:1183C431020",
+          "offer_id": "1183C431020",
+          "reconciliation_offer_id": "1183C431020",
+          "title": "Tênis Onitsuka Tiger Tokuten Cinza",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:1183C468.300",
+          "offer_id": "1183C468.300",
+          "reconciliation_offer_id": "1183C468.300",
+          "title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:39884702",
+          "offer_id": "39884702",
+          "reconciliation_offer_id": "39884702",
+          "title": "Tênis Puma Speedcat Archive Haute Coffee Frosted Ivory Marrom",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:553558030",
+          "offer_id": "553558030",
+          "reconciliation_offer_id": "553558030",
+          "title": "Tênis Nike Air Jordan 1 Low Light Smoke Grey Cinza",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ADI-9091550-34",
+          "offer_id": "ADI-9091550-34",
+          "reconciliation_offer_id": "ADI-9091550-34",
+          "title": "Tênis Adidas Samba OG Valentine's Day",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ADI-9091550-35",
+          "offer_id": "ADI-9091550-35",
+          "reconciliation_offer_id": "ADI-9091550-35",
+          "title": "Tênis Adidas Samba OG Valentine's Day",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ADI-9091550-36",
+          "offer_id": "ADI-9091550-36",
+          "reconciliation_offer_id": "ADI-9091550-36",
+          "title": "Tênis Adidas Samba OG Valentine's Day",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ADI-9091550-37",
+          "offer_id": "ADI-9091550-37",
+          "reconciliation_offer_id": "ADI-9091550-37",
+          "title": "Tênis Adidas Samba OG Valentine's Day",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ADI-9091550-38",
+          "offer_id": "ADI-9091550-38",
+          "reconciliation_offer_id": "ADI-9091550-38",
+          "title": "Tênis Adidas Samba OG Valentine's Day",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ADI-9091550-39",
+          "offer_id": "ADI-9091550-39",
+          "reconciliation_offer_id": "ADI-9091550-39",
+          "title": "Tênis Adidas Samba OG Valentine's Day",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ALD-2352094-L",
+          "offer_id": "ALD-2352094-L",
+          "reconciliation_offer_id": "ALD-2352094-L",
+          "title": "Camiseta Aimé Leon Dore Queens Crest Pocket Pine Grove Verde",
+          "source": "api",
+          "availability": "out of stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ALD-2352094-M",
+          "offer_id": "ALD-2352094-M",
+          "reconciliation_offer_id": "ALD-2352094-M",
+          "title": "Camiseta Aimé Leon Dore Queens Crest Pocket Pine Grove Verde",
+          "source": "api",
+          "availability": "out of stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ALD-2352094-S",
+          "offer_id": "ALD-2352094-S",
+          "reconciliation_offer_id": "ALD-2352094-S",
+          "title": "Camiseta Aimé Leon Dore Queens Crest Pocket Pine Grove Verde",
+          "source": "api",
+          "availability": "out of stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ALD-2352094-XL",
+          "offer_id": "ALD-2352094-XL",
+          "reconciliation_offer_id": "ALD-2352094-XL",
+          "title": "Camiseta Aimé Leon Dore Queens Crest Pocket Pine Grove Verde",
+          "source": "api",
+          "availability": "out of stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ALD-2515934-L",
+          "offer_id": "ALD-2515934-L",
+          "reconciliation_offer_id": "ALD-2515934-L",
+          "title": "Camiseta Aimé Leon Dore Musician Graphic Preta",
+          "source": "api",
+          "availability": "out of stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online",
+            "merchant_item_level_issues"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 2
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ALD-2515934-M",
+          "offer_id": "ALD-2515934-M",
+          "reconciliation_offer_id": "ALD-2515934-M",
+          "title": "Camiseta Aimé Leon Dore Musician Graphic Preta",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online",
+            "merchant_item_level_issues"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 2
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ALD-2515934-S",
+          "offer_id": "ALD-2515934-S",
+          "reconciliation_offer_id": "ALD-2515934-S",
+          "title": "Camiseta Aimé Leon Dore Musician Graphic Preta",
+          "source": "api",
+          "availability": "out of stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online",
+            "merchant_item_level_issues"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 2
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ALD-2515934-XL",
+          "offer_id": "ALD-2515934-XL",
+          "reconciliation_offer_id": "ALD-2515934-XL",
+          "title": "Camiseta Aimé Leon Dore Musician Graphic Preta",
+          "source": "api",
+          "availability": "out of stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online",
+            "merchant_item_level_issues"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 2
+        },
+        {
+          "priority": "P1",
+          "bucket": "online_identifier_mismatch",
+          "channel": "online",
+          "product_id": "online:pt:BR:ALD-3072990-OS",
+          "offer_id": "ALD-3072990-OS",
+          "reconciliation_offer_id": "ALD-3072990-OS",
+          "title": "Boné Aime Leon Dore Washed Script Plaza Taupe Bege",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_online_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online",
+            "merchant_item_level_issues"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 2
+        }
+      ]
+    },
+    {
+      "bucket": "local_identifier_mismatch",
+      "count": 847,
+      "priority_counts": {
+        "P1": 847
+      },
+      "channel_counts": {
+        "local": 847
+      },
+      "action_package": {
+        "package": "C_local_identifier_fix",
+        "risk": "medium_high",
+        "proposed_sequence": [
+          "Preserve local listings by default because LK uses physical store/local inventory.",
+          "Confirm Shopify POS/local inventory mapping for LIA_ offer_id and current SKU/GTIN/product.",
+          "Prepare mapping correction preview; avoid local inventory deletion unless stale is proven.",
+          "Execute only after approval because it can affect local free listings/local inventory visibility."
+        ],
+        "rollback_requirement": "Keep LIA product resource snapshot and POS/local mapping before any change; rollback by restoring mapping/resource.",
+        "approval_needed": "Lucas approval for any local inventory/POS/Merchant mapping write."
+      },
+      "sample_rows": [
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_11020158",
+          "offer_id": "LIA_11020158",
+          "reconciliation_offer_id": "11020158",
+          "title": "Jaqueta Lululemon Define Nulu",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183A592200",
+          "offer_id": "LIA_1183A592200",
+          "reconciliation_offer_id": "1183A592200",
+          "title": "Tênis Onitsuka Tiger Mexico 66 SD Birch Silver Bege",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183B566 021-1",
+          "offer_id": "LIA_1183B566 021-1",
+          "reconciliation_offer_id": "1183B566 021-1",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183B566 021-2",
+          "offer_id": "LIA_1183B566 021-2",
+          "reconciliation_offer_id": "1183B566 021-2",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183B566 021-3",
+          "offer_id": "LIA_1183B566 021-3",
+          "reconciliation_offer_id": "1183B566 021-3",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183B566 021-4",
+          "offer_id": "LIA_1183B566 021-4",
+          "reconciliation_offer_id": "1183B566 021-4",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183B566 021-5",
+          "offer_id": "LIA_1183B566 021-5",
+          "reconciliation_offer_id": "1183B566 021-5",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183B566 021-6",
+          "offer_id": "LIA_1183B566 021-6",
+          "reconciliation_offer_id": "1183B566 021-6",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183B566 021-9",
+          "offer_id": "LIA_1183B566 021-9",
+          "reconciliation_offer_id": "1183B566 021-9",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Chrome Silver Prata",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183C102 751-1",
+          "offer_id": "LIA_1183C102 751-1",
+          "reconciliation_offer_id": "1183C102 751-1",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183C102 751-11",
+          "offer_id": "LIA_1183C102 751-11",
+          "reconciliation_offer_id": "1183C102 751-11",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183C102 751-2",
+          "offer_id": "LIA_1183C102 751-2",
+          "reconciliation_offer_id": "1183C102 751-2",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183C102 751-3",
+          "offer_id": "LIA_1183C102 751-3",
+          "reconciliation_offer_id": "1183C102 751-3",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183C10200",
+          "offer_id": "LIA_1183C10200",
+          "reconciliation_offer_id": "1183C10200",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Black and White Preto",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183C102100",
+          "offer_id": "LIA_1183C102100",
+          "reconciliation_offer_id": "1183C102100",
+          "title": "Tênis Onitsuka Tiger Mexico 66 White Blue Branco",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183C123.200",
+          "offer_id": "LIA_1183C123.200",
+          "reconciliation_offer_id": "1183C123.200",
+          "title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183C431020",
+          "offer_id": "LIA_1183C431020",
+          "reconciliation_offer_id": "1183C431020",
+          "title": "Tênis Onitsuka Tiger Tokuten Cinza",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "gtin_matches_shopify_barcode",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1183C468.300",
+          "offer_id": "LIA_1183C468.300",
+          "reconciliation_offer_id": "1183C468.300",
+          "title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id",
+            "same_normalized_offer_seen_in_local_and_online"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1FY4567-45",
+          "offer_id": "LIA_1FY4567-45",
+          "reconciliation_offer_id": "1FY4567-45",
+          "title": "Tênis Yeezy Foam Runner Sand Bege",
+          "source": "api",
+          "availability": "out of stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_205759 610-2",
+          "offer_id": "LIA_205759 610-2",
+          "reconciliation_offer_id": "205759 610-2",
+          "title": "Crocs Classic Clog x The Cars Lightning McQueen Vermelho",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_205759 610-3",
+          "offer_id": "LIA_205759 610-3",
+          "reconciliation_offer_id": "205759 610-3",
+          "title": "Crocs Classic Clog x The Cars Lightning McQueen Vermelho",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_205759 610-4",
+          "offer_id": "LIA_205759 610-4",
+          "reconciliation_offer_id": "205759 610-4",
+          "title": "Crocs Classic Clog x The Cars Lightning McQueen Vermelho",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_205759 610-5",
+          "offer_id": "LIA_205759 610-5",
+          "reconciliation_offer_id": "205759 610-5",
+          "title": "Crocs Classic Clog x The Cars Lightning McQueen Vermelho",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_205759 610-6",
+          "offer_id": "LIA_205759 610-6",
+          "reconciliation_offer_id": "205759 610-6",
+          "title": "Crocs Classic Clog x The Cars Lightning McQueen Vermelho",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_identifier_mismatch",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_205759 610-7",
+          "offer_id": "LIA_205759 610-7",
+          "reconciliation_offer_id": "205759 610-7",
+          "title": "Crocs Classic Clog x The Cars Lightning McQueen Vermelho",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "fix_or_confirm_local_identifier_mapping_preview",
+          "evidence": [
+            "item_group_matches_shopify_product_id"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        }
+      ]
+    },
+    {
+      "bucket": "local_unmatched_after_normalization",
+      "count": 455,
+      "priority_counts": {
+        "P1": 455
+      },
+      "channel_counts": {
+        "local": 455
+      },
+      "action_package": {
+        "package": "D_local_stale_triage",
+        "risk": "medium_high",
+        "proposed_sequence": [
+          "Sample against live Shopify POS/local inventory and Tiny before treating as stale.",
+          "If no valid current source exists, prepare local-only cleanup preview by exact product ID.",
+          "Do not disable the local channel globally; act only on proven stale product IDs.",
+          "Execute only after approval and rollback snapshot."
+        ],
+        "rollback_requirement": "Keep exact local product resource snapshot; rollback by restoring/reinserting local product or source feed row.",
+        "approval_needed": "Lucas approval for local Merchant cleanup or local inventory feed/app change."
+      },
+      "sample_rows": [
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A256-113-34",
+          "offer_id": "LIA_1201A256-113-34",
+          "reconciliation_offer_id": "1201A256-113-34",
+          "title": "Tênis ASICS Gel-1130 White Clay Canyon Branco",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A256-113-35",
+          "offer_id": "LIA_1201A256-113-35",
+          "reconciliation_offer_id": "1201A256-113-35",
+          "title": "Tênis ASICS Gel-1130 White Clay Canyon Branco",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A256-113-36",
+          "offer_id": "LIA_1201A256-113-36",
+          "reconciliation_offer_id": "1201A256-113-36",
+          "title": "Tênis ASICS Gel-1130 White Clay Canyon Branco",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A256-113-37",
+          "offer_id": "LIA_1201A256-113-37",
+          "reconciliation_offer_id": "1201A256-113-37",
+          "title": "Tênis ASICS Gel-1130 White Clay Canyon Branco",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A256-113-38",
+          "offer_id": "LIA_1201A256-113-38",
+          "reconciliation_offer_id": "1201A256-113-38",
+          "title": "Tênis ASICS Gel-1130 White Clay Canyon Branco",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A256-113-39",
+          "offer_id": "LIA_1201A256-113-39",
+          "reconciliation_offer_id": "1201A256-113-39",
+          "title": "Tênis ASICS Gel-1130 White Clay Canyon Branco",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A256-113-40",
+          "offer_id": "LIA_1201A256-113-40",
+          "reconciliation_offer_id": "1201A256-113-40",
+          "title": "Tênis ASICS Gel-1130 White Clay Canyon Branco",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A256-113-41",
+          "offer_id": "LIA_1201A256-113-41",
+          "reconciliation_offer_id": "1201A256-113-41",
+          "title": "Tênis ASICS Gel-1130 White Clay Canyon Branco",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A256-113-42",
+          "offer_id": "LIA_1201A256-113-42",
+          "reconciliation_offer_id": "1201A256-113-42",
+          "title": "Tênis ASICS Gel-1130 White Clay Canyon Branco",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A256-113-43",
+          "offer_id": "LIA_1201A256-113-43",
+          "reconciliation_offer_id": "1201A256-113-43",
+          "title": "Tênis ASICS Gel-1130 White Clay Canyon Branco",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A256-113-44",
+          "offer_id": "LIA_1201A256-113-44",
+          "reconciliation_offer_id": "1201A256-113-44",
+          "title": "Tênis ASICS Gel-1130 White Clay Canyon Branco",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A789-020-34",
+          "offer_id": "LIA_1201A789-020-34",
+          "reconciliation_offer_id": "1201A789-020-34",
+          "title": "Tênis ASICS Gel-NYC Graphite Grey Black Preto",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A789-020-35",
+          "offer_id": "LIA_1201A789-020-35",
+          "reconciliation_offer_id": "1201A789-020-35",
+          "title": "Tênis ASICS Gel-NYC Graphite Grey Black Preto",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A789-020-36",
+          "offer_id": "LIA_1201A789-020-36",
+          "reconciliation_offer_id": "1201A789-020-36",
+          "title": "Tênis ASICS Gel-NYC Graphite Grey Black Preto",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A789-020-37",
+          "offer_id": "LIA_1201A789-020-37",
+          "reconciliation_offer_id": "1201A789-020-37",
+          "title": "Tênis ASICS Gel-NYC Graphite Grey Black Preto",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A789-020-38",
+          "offer_id": "LIA_1201A789-020-38",
+          "reconciliation_offer_id": "1201A789-020-38",
+          "title": "Tênis ASICS Gel-NYC Graphite Grey Black Preto",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A789-020-39",
+          "offer_id": "LIA_1201A789-020-39",
+          "reconciliation_offer_id": "1201A789-020-39",
+          "title": "Tênis ASICS Gel-NYC Graphite Grey Black Preto",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A789-020-40",
+          "offer_id": "LIA_1201A789-020-40",
+          "reconciliation_offer_id": "1201A789-020-40",
+          "title": "Tênis ASICS Gel-NYC Graphite Grey Black Preto",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A789-020-41",
+          "offer_id": "LIA_1201A789-020-41",
+          "reconciliation_offer_id": "1201A789-020-41",
+          "title": "Tênis ASICS Gel-NYC Graphite Grey Black Preto",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A789-020-42",
+          "offer_id": "LIA_1201A789-020-42",
+          "reconciliation_offer_id": "1201A789-020-42",
+          "title": "Tênis ASICS Gel-NYC Graphite Grey Black Preto",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A789-020-43",
+          "offer_id": "LIA_1201A789-020-43",
+          "reconciliation_offer_id": "1201A789-020-43",
+          "title": "Tênis ASICS Gel-NYC Graphite Grey Black Preto",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A789-020-44",
+          "offer_id": "LIA_1201A789-020-44",
+          "reconciliation_offer_id": "1201A789-020-44",
+          "title": "Tênis ASICS Gel-NYC Graphite Grey Black Preto",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A906-001-34",
+          "offer_id": "LIA_1201A906-001-34",
+          "reconciliation_offer_id": "1201A906-001-34",
+          "title": "Tênis ASICS Gel-1130 Black Pure Silver Prata",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A906-001-35",
+          "offer_id": "LIA_1201A906-001-35",
+          "reconciliation_offer_id": "1201A906-001-35",
+          "title": "Tênis ASICS Gel-1130 Black Pure Silver Prata",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        },
+        {
+          "priority": "P1",
+          "bucket": "local_unmatched_after_normalization",
+          "channel": "local",
+          "product_id": "local:pt:BR:LIA_1201A906-001-36",
+          "offer_id": "LIA_1201A906-001-36",
+          "reconciliation_offer_id": "1201A906-001-36",
+          "title": "Tênis ASICS Gel-1130 Black Pure Silver Prata",
+          "source": "api",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_local_item_preview",
+          "evidence": [],
+          "has_destination_problem": false,
+          "item_issue_count": 0
+        }
+      ]
+    },
+    {
+      "bucket": "online_unmatched_possible_stale",
+      "count": 5,
+      "priority_counts": {
+        "P0": 5
+      },
+      "channel_counts": {
+        "online": 5
+      },
+      "action_package": {
+        "package": "A_online_stale_triage",
+        "risk": "high",
+        "proposed_sequence": [
+          "Verify a sample against live Shopify by offer_id, GTIN/barcode, product handle/title.",
+          "If no current Shopify/Data Spine match exists, prepare Merchant cleanup/delete preview for exact product IDs only.",
+          "Before execution, export product IDs, titles, URLs, status and current resource snapshot as rollback evidence.",
+          "Execute only after Lucas approval; verify Merchant count/diagnostics after reprocessing lag."
+        ],
+        "rollback_requirement": "Reinsert or restore exact Merchant product resource/feed row from pre-action snapshot if a valid item is removed.",
+        "approval_needed": "Lucas approval for Merchant product delete/suppression or feed change."
+      },
+      "sample_rows": [
+        {
+          "priority": "P0",
+          "bucket": "online_unmatched_possible_stale",
+          "channel": "online",
+          "product_id": "online:pt:BR:15767679015764438420",
+          "offer_id": "15767679015764438420",
+          "reconciliation_offer_id": "15767679015764438420",
+          "title": "36",
+          "source": "crawl",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_online_item_preview",
+          "evidence": [
+            "merchant_item_level_issues"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 3
+        },
+        {
+          "priority": "P0",
+          "bucket": "online_unmatched_possible_stale",
+          "channel": "online",
+          "product_id": "online:pt:BR:16881097185330469585",
+          "offer_id": "16881097185330469585",
+          "reconciliation_offer_id": "16881097185330469585",
+          "title": "39",
+          "source": "crawl",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_online_item_preview",
+          "evidence": [
+            "merchant_item_level_issues"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 3
+        },
+        {
+          "priority": "P0",
+          "bucket": "online_unmatched_possible_stale",
+          "channel": "online",
+          "product_id": "online:pt:BR:2635861299432826332",
+          "offer_id": "2635861299432826332",
+          "reconciliation_offer_id": "2635861299432826332",
+          "title": "38",
+          "source": "crawl",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_online_item_preview",
+          "evidence": [
+            "merchant_item_level_issues"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 4
+        },
+        {
+          "priority": "P0",
+          "bucket": "online_unmatched_possible_stale",
+          "channel": "online",
+          "product_id": "online:pt:BR:3981551483619956066",
+          "offer_id": "3981551483619956066",
+          "reconciliation_offer_id": "3981551483619956066",
+          "title": "40",
+          "source": "crawl",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_online_item_preview",
+          "evidence": [
+            "merchant_item_level_issues"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 3
+        },
+        {
+          "priority": "P0",
+          "bucket": "online_unmatched_possible_stale",
+          "channel": "online",
+          "product_id": "online:pt:BR:563228365708453237",
+          "offer_id": "563228365708453237",
+          "reconciliation_offer_id": "563228365708453237",
+          "title": "44",
+          "source": "crawl",
+          "availability": "in stock",
+          "recommended_action": "investigate_stale_or_wrong_online_item_preview",
+          "evidence": [
+            "merchant_item_level_issues"
+          ],
+          "has_destination_problem": false,
+          "item_issue_count": 3
+        }
+      ]
+    }
+  ],
+  "csv_rows_written": 2168,
+  "not_performed": [
+    "merchant_product_delete",
+    "merchant_product_update",
+    "feed_update",
+    "shopify_write",
+    "database_write",
+    "campaign_or_external_send",
+    "local_inventory_disable",
+    "gmb_update",
+    "pos_inventory_write"
+  ]
+}

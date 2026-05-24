@@ -1,0 +1,480 @@
+{
+  "generated_at": "2026-05-14T16:23:45.360668+00:00",
+  "status": "completed",
+  "summary": {
+    "target_rows": 14,
+    "execution": {
+      "upserted_content_api": 14
+    },
+    "verify_match": 1,
+    "verify_total": 14
+  },
+  "rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-residual-missing-attr-content-api-repair-rollback-20260514T162237Z.json",
+  "execution_results": [
+    {
+      "product_id": "online:pt:BR:11942764414726006273",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "sizes": [
+          "G"
+        ]
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      }
+    },
+    {
+      "product_id": "online:pt:BR:12273029318518873414",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "37"
+        ]
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      }
+    },
+    {
+      "product_id": "online:pt:BR:12666760103914768713",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "G"
+        ]
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      }
+    },
+    {
+      "product_id": "online:pt:BR:14382216781199547817",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "P"
+        ]
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      }
+    },
+    {
+      "product_id": "online:pt:BR:16327035847486546313",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "P"
+        ]
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      }
+    },
+    {
+      "product_id": "online:pt:BR:17233744321540595259",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "G"
+        ]
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1736512501686486863",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "L"
+        ]
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3104193228761997124",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "36"
+        ]
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3332348645938802802",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "G"
+        ]
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      }
+    },
+    {
+      "product_id": "online:pt:BR:4917838518253211418",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null
+      }
+    },
+    {
+      "product_id": "online:pt:BR:5830504980213147042",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "35"
+        ]
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      }
+    },
+    {
+      "product_id": "online:pt:BR:7158941586508696723",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "38"
+        ]
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      }
+    },
+    {
+      "product_id": "online:pt:BR:7793455940120203308",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "sizes": [
+          "G"
+        ]
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      }
+    },
+    {
+      "product_id": "online:pt:BR:8630660614210721891",
+      "status": "upserted_content_api",
+      "updated": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "40"
+        ]
+      },
+      "response_subset": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      }
+    }
+  ],
+  "verify_results": [
+    {
+      "product_id": "online:pt:BR:11942764414726006273",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "sizes": [
+          "G"
+        ]
+      },
+      "actual": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "sizes": [
+          "G"
+        ]
+      },
+      "match": true
+    },
+    {
+      "product_id": "online:pt:BR:12273029318518873414",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "37"
+        ]
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:12666760103914768713",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "G"
+        ]
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:14382216781199547817",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "P"
+        ]
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:16327035847486546313",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "P"
+        ]
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:17233744321540595259",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "G"
+        ]
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:1736512501686486863",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "L"
+        ]
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:3104193228761997124",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "36"
+        ]
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:3332348645938802802",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "G"
+        ]
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:4917838518253211418",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:5830504980213147042",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "35"
+        ]
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:7158941586508696723",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "38"
+        ]
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:7793455940120203308",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "male",
+        "sizes": [
+          "G"
+        ]
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:8630660614210721891",
+      "status": "read",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex",
+        "sizes": [
+          "40"
+        ]
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null,
+        "sizes": null
+      },
+      "match": false
+    }
+  ],
+  "not_performed": [
+    "price",
+    "gtin",
+    "image",
+    "landing page",
+    "Shopify/Tiny/feed/campaign"
+  ]
+}

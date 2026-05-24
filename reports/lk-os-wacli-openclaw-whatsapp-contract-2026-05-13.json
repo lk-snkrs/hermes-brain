@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-05-13",
+  "status": "contract_ready_for_review_no_external_action",
+  "scope": "LK OS wacli/OpenClaw WhatsApp multi-account integration",
+  "accounts": {
+    "pessoal": {
+      "role": "Lucas personal WhatsApp; technical validation only unless separately scoped",
+      "connected": true
+    },
+    "lk-compras": {
+      "role": "LK Compras WhatsApp Business; first operational channel",
+      "connected": true,
+      "store_stats_snapshot": {
+        "chats": 50,
+        "groups": 34,
+        "messages_first_snapshot": 2216
+      }
+    },
+    "lk-loja": {
+      "role": "LK physical store WhatsApp Business; future",
+      "connected": false
+    }
+  },
+  "allowed_without_new_approval_when_in_scope": [
+    "auth status",
+    "accounts list",
+    "store stats",
+    "docs/contracts/previews without PII"
+  ],
+  "sensitive_read_requires_bounded_scope_and_sanitization": [
+    "chats list",
+    "messages list",
+    "any conversation-derived signal extraction"
+  ],
+  "requires_explicit_current_approval": [
+    "send/reply WhatsApp",
+    "contact customer/supplier/group",
+    "create external task/automation from conversation",
+    "recurring cron over messages",
+    "export PII/conversation text",
+    "purchase/reserve/replenish"
+  ],
+  "recommended_next_step": "Approve a 24h manual read-only/sanitized calibration over lk-compras signals: counts by category + max 3 sanitized examples; no sends, no cron, no external contact."
+}

@@ -1,0 +1,3026 @@
+{
+  "generated_at": "2026-05-13T14:30:22.370104+00:00",
+  "status": "gmc_p1_attribute_wave4_aggressive_nonprice_apply_timeout_recovered_verified",
+  "mode": "apply_recovered_verify_only",
+  "scope": "Recovered verification for Wave4 apply after terminal timeout. Progress shows writes completed; this script performed no writes, only products.get and productstatuses recheck.",
+  "source_labels": [
+    "fact_merchant_center",
+    "manual_approval",
+    "derived_reconciliation"
+  ],
+  "rollback_snapshot": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p1-attribute-wave4-aggressive-nonprice-executor-rollback-20260513T141552Z.json",
+  "progress_jsonl": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p1-attribute-wave4-aggressive-nonprice-executor-progress-20260513T141552Z.jsonl",
+  "summary": {
+    "planned_records": 228,
+    "progress_rows": 228,
+    "execution_results_summary": {
+      "updated_wave4_aggressive_nonprice_attrs": 228
+    },
+    "verify_results_summary": {
+      "verified_product_get": 228
+    },
+    "verified_attrs_match_expected": 228,
+    "suggested_field_counts": {
+      "color": 183,
+      "sizes": 51,
+      "ageGroup": 31,
+      "gender": 31
+    },
+    "fresh_merchant_products_after": 23241,
+    "fresh_productstatuses_after": 23241,
+    "required_attr_rows_after": 45,
+    "required_attr_instances_after": 67,
+    "required_attr_counts_after": {
+      "price": 35,
+      "size": 32
+    }
+  },
+  "verified_results": [
+    {
+      "product_id": "online:pt:BR:1183A201-126-5",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-38",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-3",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-39",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JH7370-4",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-40",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-5",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:5706324928133224313",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "39"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-7",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-35",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6036386056472256840",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "37"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:LLM-4911966-OS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-2",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Off White / Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JP5309-3",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-6",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:KTH-4846430-OS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:3048242206072553507",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "42"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6234067398750979457",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "34"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6531799355487598672",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-2",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-38",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11810372920072143991",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-39",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2000478-XL",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-6",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALD-2515934-M",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-4",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Marrom / Bege"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-11",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:3876299146406606317",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender",
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto",
+        "sizes": [
+          "Único"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALO-3137118-OS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-40",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:RH20",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6562590402534581177",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Cinza",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-9",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Marrom / Bege"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:16599698222138562820",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "34"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-0696926-OS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2258634078163248862",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1863698749035586532",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "44"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:4531110532523186885",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "39"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2198938218729451562",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "37"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB16",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALO-4649822-OS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2162246425358063315",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "40"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:14088693984092512857",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15050545522805546621",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVNV-1",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Azul"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-6",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-3",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Off White / Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-9",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-2",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALD-2515934-S",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-35",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15334125053592144145",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Marrom",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:17378616365015099957",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Marrom",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-6",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-5",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALD-3072990-OS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:13498809788548851139",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-34",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-37",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-7",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-4",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:10002025469927148791",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Azul",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALD-3105758-OS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-6",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-3",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALO-1465950-OS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836591089",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-4",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-39",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto / Branco / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-7",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2000478-XS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:3036040229053224603",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color",
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor",
+        "sizes": [
+          "XL"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-44",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2000478-S",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-5",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-2",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-2",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Marrom / Bege"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-37",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-8",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Off White / Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:14252480804615463970",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "41"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9780847872657",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:4041641007094962608",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Bege",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-40",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-4",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:10591784840915585992",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Azul",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-3",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-38",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto / Branco / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-1",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JH7370-3",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-2",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8376229716754602501",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Bege",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-37",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15031239196158973196",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "45"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6061855494363671943",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JP5309-4",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:NUD-9375070-OS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9992569968476017768",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Cinza",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-41",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-1",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Off White / Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-11",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:4086849490768644696",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "34"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-35",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto / Branco / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-43",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-405",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836597982",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:13622509763707629816",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Cinza",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-41",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:12475328072847087695",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "42"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:5627606835540697766",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color",
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor",
+        "sizes": [
+          "M"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9250025623243509812",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:601647069162867212",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-1",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836585095",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:13294493627572294660",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-3",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-3",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:KTH-4813662-OS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-36",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-6",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:16606924615096196772",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "G"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JP5309-6",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15047612723779191692",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color",
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor",
+        "sizes": [
+          "37"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-42",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:12196644472973744396",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "36"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-36",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto / Branco / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-6",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Off White / Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8419194273885247483",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "34"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-38",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2000478-M",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836571968",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-5",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1475186660255881483",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Cinza",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15690098651674929383",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-4",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-44",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALD-2515934-XL",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-10",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:16552051163064136080",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "43"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-34",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-42",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8532426969879844901",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Off White / Branco",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-34",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11806875313375187771",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Bege",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JH7370-5",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JH7370-6",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:13315860803624221806",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:5390248129051651686",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "34"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:12053538457178343768",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "40"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-43",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:5328214585182033036",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "35"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-1",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-44",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JP5309-2",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-7",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Off White / Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-9681118-OS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6271425026146428361",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "XL"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15014470994320532817",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "36"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:16359969147856982838",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "gender",
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "M"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-1",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-2",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-8534238-OS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALD-2515934-L",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-43",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-1",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-4",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1624428988081867066",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Amarelo / Dourado",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-7",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:7958216211561773980",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-7",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8082476657063126648",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "43"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-5",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Off White / Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15507753369156717392",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:12887836741223739253",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "34"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-36",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15702667075807199895",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:13509922810333178540",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "L"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-42",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6620553011844522059",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "XL"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JH7370-2",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2183-USA",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-1",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Marrom / Bege"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11314792792398542744",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:300110",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-1",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-35",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2000478-L",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-4",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Prata"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8751205371375268276",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JP5309-1",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9780847866694",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-4",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Off White / Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-5",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8888219390173948734",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Verde",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-37",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto / Branco / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-10",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-12",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-36",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-8",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-3",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Marrom / Bege"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-6",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Marrom / Bege"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVNV-3",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Azul"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:10695397335246538087",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color",
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor",
+        "sizes": [
+          "42"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JP5309-5",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:LLM-4879198-OS",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ007",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Animal Print"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9914706510510919523",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color",
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor",
+        "sizes": [
+          "37"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:3256183830573196292",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "L"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-8",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:12820359859699264559",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Bege",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:17623149180616410488",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "ageGroup",
+        "color",
+        "gender"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JH7370-1",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6577883094469507641",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color",
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor",
+        "sizes": [
+          "43"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:10310578515087778063",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "40"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-40",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto / Branco / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-7",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Marrom / Bege"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-39",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-9",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2243578831328686793",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "sizes": [
+          "35"
+        ]
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-41",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-3",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVNV-2",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Azul"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-10",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Marrom / Bege"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-5",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Marrom / Bege"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-2",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Multicolor"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-34",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Preto / Branco / Creme"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-9",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Off White / Branco / Preto"
+      },
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-8",
+      "execution_status": "updated_wave4_aggressive_nonprice_attrs",
+      "fields": [
+        "color"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_attrs": {
+        "color": "Marrom / Bege"
+      },
+      "attrs_match_expected": true
+    }
+  ],
+  "not_performed": [
+    "merchant_write_in_recovery_script",
+    "merchant_price_update",
+    "merchant_delete",
+    "feed_update_or_fetch",
+    "shopify_write",
+    "tiny_call_or_write",
+    "database_write",
+    "klaviyo_or_whatsapp_send",
+    "notion_or_n8n_write",
+    "loyalty_or_judgeme_action"
+  ]
+}

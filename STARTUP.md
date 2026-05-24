@@ -1,47 +1,32 @@
-# SESSION START PROTOCOL — Executar em cada nova sessão
+# SESSION START PROTOCOL — Hermes Brain
 
-## REGRA: Hermes Brain é a fonte de verdade. Se não tá no brain, não sabe.
+## Regra central
 
----
+Hermes Brain é fonte versionada de contexto, decisões, rotinas, skills e governança. Ele não substitui dados vivos: para número operacional, estoque, pedido, campanha, lance, deploy ou status atual, consultar banco/API/fonte real.
 
-## PASSO 1: Verificar CURRENT_WORK.md
-```bash
-cat /root/.hermes/CURRENT_WORK.md
-```
-Se existir e dizer "[COMPLETO]" → trabalho anterior terminou. Se disser "[EM ANDAMENTO]" → continuar de onde parou.
+## Boot recomendado
 
----
+1. Identificar escopo: Lucas pessoal, LK, Zipper, SPITI, Hermes/Infra, Tecnologia, Governança ou multiempresa.
+2. Ler `START-HERE.md` e `MAPA.md` quando a navegação/importância estrutural importar.
+3. Ler `AGENTS.md` para guardrails globais.
+4. Carregar skill relevante se existir.
+5. Usar `session_search` quando o pedido depender de histórico de conversa.
+6. Verificar crons reais com `cronjob list` antes de afirmar que uma rotina roda.
+7. Usar Doppler `lc-keys/prd` sob demanda para credenciais; nunca imprimir valores.
 
-## PASSO 2: Verificar pendentes
-```bash
-cat /root/.hermes/memories/pending.md
-```
-Itens com `[URGENTE]` ou `[ALTA]` → listar primeiro.
+## Paths atuais
 
----
+- Brain: `/opt/data/hermes_bruno_ingest/hermes-brain`
+- Runtime Hermes principal: `/opt/data`
+- Perfis especialistas: `/opt/data/profiles/*`
+- Scripts runtime comuns: `/opt/data/scripts/`
 
-## PASSO 3: Resumo do sistema
-- Brain sync: `bash /root/.hermes/scripts/brain_sync.sh` (se sessão anterior teve mudanças)
-- Cron status: `cronjob list` (se há crons com falha)
-- Decisions: `cat /root/.hermes/memories/decisions.md` (últimas decisões)
-- Lessons: `cat /root/.hermes/memories/lessons.md` (lições recentes)
+## Encerramento / handoff
 
----
+Ao final de tarefa relevante:
 
-## PASSO 4: Se nada urgente e trabalho anterior completo
-"Bom dia! Trabalho anterior completo. O que vamos fazer hoje?"
-
-## PASSO 5: Se trabalho em andamento
-"Retomando trabalho anterior: [resumo do CURRENT_WORK]. O que vamos fazer?"
-
-## PASSO 6: Se há itens urgentes
-"Sistema com itens urgentes pendentes: [lista]. Vamos resolver esses primeiro?"
-
----
-
-## REGRA: Ao final de toda sessão — Checklist de 5 minutos
-1. `bash /root/.hermes/scripts/brain_sync.sh`
-2. `cd /root/hermes-brain && git add -A && git commit -m "Session end: $(date +%Y-%m-%d)" && git push`
-3. pending.md → atualizar
-4. lessons.md → adicionar se houve insight
-5. CURRENT_WORK.md → marcar completo ou manter EM ANDAMENTO
+1. Registrar decisões, receipts, approvals, riscos ou aprendizados no Brain/skill/ledger apropriado.
+2. Se mexeu em docs do Brain, rodar `python3 scripts/brain_health_check.py` em `/opt/data/hermes_bruno_ingest/hermes-brain`.
+3. Se for rotina recorrente, confirmar cron real via `cronjob list`; rotina documentada não prova execução.
+4. Se houver alteração externa/produção, registrar evidência + rollback; ações externas exigem aprovação atual de Lucas.
+5. Não usar comandos legados `/root/.hermes/scripts/brain_sync.sh`, Mem0 ou sync via `sshpass`; o fluxo atual é o fechamento/sync allowlist documentado nos relatórios `reports/brain-sync-safe-dry-run-*` e no cron `3fc45b0830c6`.

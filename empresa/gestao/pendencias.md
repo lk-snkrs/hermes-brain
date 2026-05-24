@@ -1,7 +1,24 @@
 # Pendências executivas — Hermes Brain
 
-Última revisão: 2026-05-09
+Última revisão: 2026-05-16
 Rotina aplicada: `areas/operacoes/rotinas/memory-hygiene-pendencias.md`
+
+## Revisão 2026-05-16 — Amora/Hermes identidade
+
+Lucas aprovou aplicar a adaptação dos templates Amora para Hermes, com verificação prévia do que já existia.
+
+Concluído nesta rodada:
+
+- DOCX Amora convertidos para markdown limpo e preservados em `reports/amora-reference-ingest-2026-05-16/`.
+- `agentes/hermes-geral/IDENTITY.md` criado.
+- `agentes/hermes-geral/SOUL.md`, `AGENTS.md` e `HEARTBEAT.md` consolidados em versão Hermes-native.
+- `MAPA.md` raiz criado para navegação rápida da Grande Mente.
+- `README.md`, `START-HERE.md` e `empresa/rotinas/_index.md` atualizados para apontar a nova estrutura.
+- `AGENTS.md` e `HEARTBEAT.md` da raiz higienizados para remover dependência de comandos/paths OpenClaw e centralizar regras Hermes-native.
+- Regra “repetição → skill” formalizada no Brain e na skill `lucas-chief-of-staff`.
+- Cron automático de heartbeat/revisão não foi criado; segue como rotina sob demanda até provar valor.
+
+Evidência: commit local `10978fc docs: adapt amora identity model for hermes` e alterações posteriores nesta branch.
 
 ## Estado executivo
 
@@ -11,6 +28,8 @@ Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a 
 
 ## Ativos
 
+- [x] **Rodar primeira revisão sob demanda com a nova identidade Hermes Geral** — Operações/Multiempresa — concluído em 2026-05-16 em modo read-only/local; escopo Hermes/Infra, LK OS, Zipper e SPITI; sem cron novo, contato externo, deploy ou write produtivo. Evidência: `reports/revisao-operacional-multiempresa-hermes-geral-2026-05-16.md`.
+- [x] **Concluir higiene pós-Amora da memória executiva compacta** — Operações/Governança — `memories/pending.md` atualizado em 2026-05-16 com resumo atual e separação entre ativos, bloqueados, aguardando e concluídos; sem apagar histórico útil.
 - [ ] **Implementar gaps P0 da auditoria BRUNO-ATUAL → Hermes Brain** — Operações/Brain — relatório concluído em 2026-05-19 (`reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md`) com nota geral 8,0/10. Próximas ações recomendadas: criar camada `hot/current`, inventário vivo de crons/bots/profiles, auditoria de skills, reconciliação Mission Control e documentação completa do Mordomo. Sem runtime/externo/prod alterado nesta auditoria.
 
 - [x] **Gerar primeiro Stock Intelligence real/read-only da LK com sourcing acionado por sinal** — LK/Stock/Sourcing — concluído em 2026-05-10 com `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`. Correção posterior: SKU Shopify é canônico para matching e Tiny deve ser mapeado/normalizado para Shopify; leitura Meta influencer precisa usar janela/período corretos e nomes em campaign/adset/ad antes de claim comercial.
@@ -21,7 +40,9 @@ Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a 
 - [x] **Criar matriz inicial de funcionários LK, funções e roteamento de relatórios** — LK/Governança — concluído em 2026-05-10 com `areas/lk/equipe/README.md`. Matriz v0.1 inclui Lucas, Renan, Júlio e Danilo; define roteamento por Daily Sales Brief, Pulso Comercial, Stock Intelligence, Supply & Sourcing, Paid/Influencer, Brand Mix, CRO, SEO, DesignMD, CRM, financeiro/fiscal e loja física. Próxima ação: Lucas validar canais/cópias antes de qualquer cron ou envio recorrente.
 - [x] **Aplicar Hermes Learning Loop global** — Operações/Governança — aplicado operacionalmente em 2026-05-11 no Projeto LK OS via `areas/lk/rotinas/approval-learning-ledger-2026-05-11.md`: 24 decisões/aprendizados consolidados, incluindo execução SEO verificada, CRO visível `pending_future` e cotações/sourcing `needs_approval`/`needs_data`. Próxima ação: manter o ledger como fonte de roteamento antes de repetir execução ou pedir aprovação.
 
-- [ ] **Completar subdocs de integrações não recorrentes quando virarem fluxo real** — Operações/Integrações — próxima ação: documentar Judge.me, Frenet, Tiny ERP, Email/Google Workspace, LeiloesBR, Railway, Vercel, Notion/NocoDB e Metricool somente quando houver necessidade operacional concreta. Evidência/base: `ROADMAP-30-DIAS-HERMES.md`, Rodada B.
+- [ ] **Completar subdocs de integrações não recorrentes quando virarem fluxo real** — Operações/Integrações — próxima ação: documentar Frenet, Tiny ERP, Email/Google Workspace, LeiloesBR, Railway, Vercel, Notion/NocoDB e Metricool somente quando houver necessidade operacional concreta. Judge.me foi promovido para etapa futura do LK OS junto com Rivo/LK Rewards. Evidência/base: `ROADMAP-30-DIAS-HERMES.md`, Rodada B.
+- [ ] **Adicionar Customer Trust & Loyalty ao LK OS** — LK/CRM/Fidelidade/Reviews — etapa futura planejada em 2026-05-13: integrar LK Rewards/Rivo e Judge.me ao Data Spine/Mission Control primeiro em modo read-only, sem cupons, reviews, campanhas, envios ou alterações de regras. Correção Lucas: LK Rewards deve ser modelado como benefícios automáticos por marco de gasto/status, não como troca manual de pontos por desconto; 1 ponto = R$1; objetivo recompra/margem + experiência premium/VIP; reviews Judge.me publicam automaticamente mas Lucas deleta ruins e responde negativas pessoalmente; review request deveria sair pelo Klaviyo mas precisa auditoria; página LK Rewards será necessária. Evidência/base: `areas/lk/rotinas/lk-os-future-rivo-rewards-judgeme-reviews-2026-05-13.md` e `areas/lk/rotinas/lk-rewards-automatic-spend-milestone-model-2026-05-13.md`.
+- [ ] **Adicionar captura de aniversário ao Shopify/checkout/customer profile da LK** — LK/CRM/Fidelidade — Lucas quer usar aniversário no LK Rewards, mas a data ainda não é captada no checkout. Próxima ação segura: mapear opções Shopify/Rivo/Klaviyo para coleta sem atrito, preparar copy/UX e plano de implementação com rollback; nenhum theme/checkout/customer write sem aprovação.
 
 ## Bloqueados — exigem decisão/aprovação Lucas
 
@@ -39,6 +60,7 @@ Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a 
 
 ## Concluídos nesta revisão
 
+- **Primeira revisão sob demanda com a nova identidade Hermes Geral** — concluído: relatório local `reports/revisao-operacional-multiempresa-hermes-geral-2026-05-16.md` gerado após leitura do Brain, cronjob list e git status. Decisão operacional: manter sob demanda até medir utilidade; qualquer cron/agenda recorrente ainda exige decisão de cadência/canal/kill criteria.
 - **Rotina de revisão operacional multiempresa** — concluído: `areas/operacoes/rotinas/revisao-operacional-multiempresa.md` criado; primeiro relatório gerado em `reports/revisao-operacional-multiempresa-2026-05-09.md`. Decisão operacional: usar sob demanda para priorização LK/Zipper/SPITI/Operações; não criar cron, não consultar produção e não acionar ações externas por padrão.
 - **Script local/read-only de retomada de planos/PRDs** — concluído: `scripts/retomada_planos_prds.py` criado; relatório gerado em `reports/retomada-planos-prds-2026-05-09.md` e JSON em `reports/retomada-planos-prds-2026-05-09.json`. Decisão operacional: não criar cron semanal agora; usar sob demanda quando Lucas disser “seguir”, “retomar” ou “onde paramos”.
 - **Script executivo para `brain-improvement-score.md`** — concluído: `scripts/brain_improvement_score.py` criado como ferramenta local/read-only; relatório gerado em `reports/brain-improvement-score-2026-05-09-script.md` e JSON em `reports/brain-improvement-score-2026-05-09-script.json`. Cron/UI/Telegram recorrente continuam bloqueados por aprovação explícita.

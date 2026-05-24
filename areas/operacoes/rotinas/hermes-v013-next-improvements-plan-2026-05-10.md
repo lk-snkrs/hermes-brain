@@ -1,5 +1,7 @@
 # Plano — próximas melhorias Hermes v0.13 após `approvals.mode: off`
 
+> LEGACY / SUPERSEDED — snapshot histórico de 2026-05-10. Não usar como plano operacional vivo. O runtime atual é governado por `areas/operacoes/intelligence-map.md`, `areas/operacoes/rotinas/cron-control-plane.md`, `areas/operacoes/rotinas/runtime-truth-reconciler.md` e pelos guardrails atuais de `/opt/data/`. Qualquer referência a `/root`, Docker/Hostinger ou logs de host abaixo é evidência histórica, não instrução para executar sem nova aprovação, backup/rollback e verificação read-only.
+
 Data: 2026-05-10
 Ambiente verificado: runtime Docker, hostname `46e218f8d4c9`, PID 1 `tini -- /opt/hermes/docker/entrypoint.sh gateway run`.
 

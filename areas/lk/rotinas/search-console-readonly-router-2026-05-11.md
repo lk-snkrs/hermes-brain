@@ -1,6 +1,6 @@
 # LK Search Console Read-only Router, 2026-05-11
 
-Generated at: `2026-05-11T20:57:59.142810+00:00`
+Generated at: `2026-05-23T11:41:06.487891+00:00`
 
 ## Veredito
 
@@ -9,9 +9,9 @@ Search Console entrou na Fase 6 como fonte `fact_gsc`: queries, páginas, CTR, p
 ## Janela e fonte
 
 - Property: `sc-domain:lksneakers.com.br`
-- Janela: `2026-04-11` a `2026-05-08`
+- Janela: `2026-04-23` a `2026-05-20`
 - Linhas query/página recebidas: 25000
-- Páginas agregadas recebidas: 15709
+- Páginas agregadas recebidas: 13412
 - Oportunidades roteadas: 40
 - Writes liberados agora: 0
 
@@ -20,111 +20,111 @@ Search Console entrou na Fase 6 como fonte `fact_gsc`: queries, páginas, CTR, p
 ### 1. P1 · title_meta_ctr_preview
 - Query: `onitsuka tiger`
 - Página: https://lksneakers.com.br/collections/onitsuka-tiger-todos-os-modelos
-- Clicks/impressões: 75 / 24327
-- CTR/posição: 0.31% / 8.0
+- Clicks/impressões: 61 / 26846
+- CTR/posição: 0.23% / 8.4
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 2. P1 · title_meta_ctr_preview
 - Query: `new balance 204l`
 - Página: https://lksneakers.com.br/collections/new-balance-204l
-- Clicks/impressões: 115 / 21539
-- CTR/posição: 0.53% / 7.8
+- Clicks/impressões: 73 / 18085
+- CTR/posição: 0.4% / 8.0
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 3. P1 · title_meta_ctr_preview
 - Query: `lululemon`
 - Página: https://lksneakers.com.br/collections/lululemon
-- Clicks/impressões: 105 / 15754
-- CTR/posição: 0.67% / 6.0
+- Clicks/impressões: 108 / 15522
+- CTR/posição: 0.7% / 6.2
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 4. P1 · title_meta_ctr_preview
 - Query: `lk`
 - Página: https://lksneakers.com.br/
-- Clicks/impressões: 27 / 13559
-- CTR/posição: 0.2% / 4.8
+- Clicks/impressões: 22 / 13791
+- CTR/posição: 0.16% / 6.4
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 5. P1 · title_meta_ctr_preview
-- Query: `tenis new balance 530`
-- Página: https://lksneakers.com.br/products/tenis-new-balance-530-silver-black-cinza
-- Clicks/impressões: 4 / 13248
-- CTR/posição: 0.03% / 6.1
+- Query: `yeezy`
+- Página: https://lksneakers.com.br/collections/yeezy
+- Clicks/impressões: 30 / 11399
+- CTR/posição: 0.26% / 8.4
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 6. P1 · title_meta_ctr_preview
-- Query: `yeezy`
-- Página: https://lksneakers.com.br/collections/yeezy
-- Clicks/impressões: 28 / 13212
-- CTR/posição: 0.21% / 8.4
+- Query: `tenis new balance 530`
+- Página: https://lksneakers.com.br/products/tenis-new-balance-530-silver-black-cinza
+- Clicks/impressões: 2 / 10335
+- CTR/posição: 0.02% / 5.9
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 7. P1 · title_meta_ctr_preview
-- Query: `jordan 4`
-- Página: https://lksneakers.com.br/collections/air-jordan-4
-- Clicks/impressões: 10 / 8646
-- CTR/posição: 0.12% / 9.3
+- Query: `onitsuka tiger mexico 66`
+- Página: https://lksneakers.com.br/collections/onitsuka-tiger-mexico-66
+- Clicks/impressões: 212 / 8706
+- CTR/posição: 2.44% / 2.9
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 8. P1 · title_meta_ctr_preview
-- Query: `onitsuka tiger mexico 66`
-- Página: https://lksneakers.com.br/collections/onitsuka-tiger-mexico-66
-- Clicks/impressões: 174 / 7648
-- CTR/posição: 2.28% / 3.1
+- Query: `jordan 4`
+- Página: https://lksneakers.com.br/collections/air-jordan-4
+- Clicks/impressões: 7 / 7538
+- CTR/posição: 0.09% / 9.4
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 9. P1 · title_meta_ctr_preview
-- Query: `crocs relampago mcqueen`
+- Query: `crocs mcqueen`
 - Página: https://lksneakers.com.br/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho
-- Clicks/impressões: 21 / 7327
-- CTR/posição: 0.29% / 8.2
+- Clicks/impressões: 20 / 5978
+- CTR/posição: 0.33% / 8.5
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 10. P1 · title_meta_ctr_preview
-- Query: `adidas marrom`
-- Página: https://lksneakers.com.br/products/tenis-adidas-handball-spezial-sporty-rich-brown-marrom
-- Clicks/impressões: 4 / 6956
-- CTR/posição: 0.06% / 4.2
+- Query: `crocs relampago mcqueen`
+- Página: https://lksneakers.com.br/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho
+- Clicks/impressões: 27 / 5939
+- CTR/posição: 0.45% / 8.7
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 11. P1 · title_meta_ctr_preview
-- Query: `tenis alo`
-- Página: https://lksneakers.com.br/products/tenis-alo-yoga-alo-runner-preto
-- Clicks/impressões: 5 / 6672
-- CTR/posição: 0.07% / 7.3
+- Query: `nike vomero premium`
+- Página: https://lksneakers.com.br/products/tenis-nike-vomero-premium-white-bright-crimson-branco?currency=BRL&country=BR&variant=47803677868254&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e
+- Clicks/impressões: 5 / 5188
+- CTR/posição: 0.1% / 9.0
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 12. P1 · title_meta_ctr_preview
 - Query: `crocs do relâmpago mcqueen`
 - Página: https://lksneakers.com.br/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho
-- Clicks/impressões: 9 / 6599
-- CTR/posição: 0.14% / 8.3
+- Clicks/impressões: 2 / 5173
+- CTR/posição: 0.04% / 6.0
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ## Top páginas por impressões
 
-- https://lksneakers.com.br/collections/lululemon: 737 clicks, 24492 impressões, CTR 3.01%, posição 5.3
-- https://lksneakers.com.br/collections/onitsuka-tiger-todos-os-modelos: 627 clicks, 54015 impressões, CTR 1.16%, posição 6.5
-- https://lksneakers.com.br/collections/onitsuka-tiger-mexico-66: 571 clicks, 29581 impressões, CTR 1.93%, posição 4.1
-- https://lksneakers.com.br/: 480 clicks, 36716 impressões, CTR 1.31%, posição 7.0
-- https://lksneakers.com.br/collections/new-balance-204l: 431 clicks, 50536 impressões, CTR 0.85%, posição 7.4
-- https://lksneakers.com.br/collections/air-jordan-travis-scott: 226 clicks, 28235 impressões, CTR 0.8%, posição 6.5
-- https://lksneakers.com.br/collections/adidas-samba-jane: 218 clicks, 19402 impressões, CTR 1.12%, posição 6.9
-- https://lksneakers.com.br/collections/nike-x-jacquemus-moon-shoe-sp: 205 clicks, 6815 impressões, CTR 3.01%, posição 2.9
-- https://www.lksneakers.com.br/: 198 clicks, 8116 impressões, CTR 2.44%, posição 5.6
-- https://blog.lksneakers.com.br/nike-ja-4-novo-tenis-de-ja-morant-2026/: 153 clicks, 9031 impressões, CTR 1.69%, posição 5.7
+- https://lksneakers.com.br/collections/onitsuka-tiger-todos-os-modelos: 738 clicks, 60035 impressões, CTR 1.23%, posição 6.9
+- https://lksneakers.com.br/collections/lululemon: 678 clicks, 24519 impressões, CTR 2.77%, posição 5.6
+- https://lksneakers.com.br/collections/onitsuka-tiger-mexico-66: 641 clicks, 31353 impressões, CTR 2.04%, posição 4.1
+- https://lksneakers.com.br/: 470 clicks, 33290 impressões, CTR 1.41%, posição 7.5
+- https://lksneakers.com.br/collections/new-balance-204l: 332 clicks, 42229 impressões, CTR 0.79%, posição 7.3
+- https://www.lksneakers.com.br/: 236 clicks, 9099 impressões, CTR 2.59%, posição 5.5
+- https://lksneakers.com.br/collections/adidas-samba-jane: 210 clicks, 15148 impressões, CTR 1.39%, posição 7.1
+- https://lksneakers.com.br/collections/air-jordan-travis-scott: 169 clicks, 27957 impressões, CTR 0.6%, posição 6.9
+- https://lksneakers.com.br/collections/nike-x-jacquemus-moon-shoe-sp: 166 clicks, 5872 impressões, CTR 2.83%, posição 3.0
+- https://blog.lksneakers.com.br/nike-ja-4-novo-tenis-de-ja-morant-2026/: 160 clicks, 10829 impressões, CTR 1.48%, posição 6.1
 
 ## Guardrails
 

@@ -1,0 +1,288 @@
+{
+  "generated_at": "2026-05-13T18:39:58.877950+00:00",
+  "status": "apply_verified",
+  "approval_required_for_apply": "Aprovo corrigir color Bordô nas 11 variantes JH5439 no GMC via Merchant API v1, com rollback e verificação.",
+  "summary": {
+    "mode": "apply",
+    "records_total": 11,
+    "eligible": 5,
+    "execution_results_summary": {
+      "patched_color_v1": 5
+    },
+    "verify_results_summary": {
+      "verified_merchant_product_get": 5
+    },
+    "verified_match_expected": 5
+  },
+  "private_rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p2a-residual-jh5439-color-rollback-20260513T183647Z.json",
+  "records": [
+    {
+      "product_id": "online:pt:BR:JH5439-1",
+      "title": "Tênis Adidas Handball Spezial Bordô",
+      "previous_product_attributes": {
+        "color": "Bordô",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ]
+      },
+      "planned_update": {
+        "color": "Bordô"
+      },
+      "eligible": false,
+      "evidence": "not_eligible_current_color_or_title_mismatch"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-2",
+      "title": "Tênis Adidas Handball Spezial Bordô",
+      "previous_product_attributes": {
+        "color": "Bordô",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ]
+      },
+      "planned_update": {
+        "color": "Bordô"
+      },
+      "eligible": false,
+      "evidence": "not_eligible_current_color_or_title_mismatch"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-3",
+      "title": "Tênis Adidas Handball Spezial Bordô",
+      "previous_product_attributes": {
+        "color": "Bordô",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ]
+      },
+      "planned_update": {
+        "color": "Bordô"
+      },
+      "eligible": false,
+      "evidence": "not_eligible_current_color_or_title_mismatch"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-4",
+      "title": "Tênis Adidas Handball Spezial Bordô",
+      "previous_product_attributes": {
+        "color": "Bordô",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ]
+      },
+      "planned_update": {
+        "color": "Bordô"
+      },
+      "eligible": false,
+      "evidence": "not_eligible_current_color_or_title_mismatch"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-5",
+      "title": "Tênis Adidas Handball Spezial Bordô",
+      "previous_product_attributes": {
+        "color": "Bordô",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ]
+      },
+      "planned_update": {
+        "color": "Bordô"
+      },
+      "eligible": false,
+      "evidence": "not_eligible_current_color_or_title_mismatch"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-6",
+      "title": "Tênis Adidas Handball Spezial Bordô",
+      "previous_product_attributes": {
+        "color": "Bordô",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ]
+      },
+      "planned_update": {
+        "color": "Bordô"
+      },
+      "eligible": false,
+      "evidence": "not_eligible_current_color_or_title_mismatch"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-7",
+      "title": "Tênis Adidas Handball Spezial Bordô",
+      "previous_product_attributes": {
+        "color": null,
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ]
+      },
+      "planned_update": {
+        "color": "Bordô"
+      },
+      "eligible": true,
+      "evidence": "title_exact_match_contains_Bordô"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-8",
+      "title": "Tênis Adidas Handball Spezial Bordô",
+      "previous_product_attributes": {
+        "color": null,
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ]
+      },
+      "planned_update": {
+        "color": "Bordô"
+      },
+      "eligible": true,
+      "evidence": "title_exact_match_contains_Bordô"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-9",
+      "title": "Tênis Adidas Handball Spezial Bordô",
+      "previous_product_attributes": {
+        "color": null,
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ]
+      },
+      "planned_update": {
+        "color": "Bordô"
+      },
+      "eligible": true,
+      "evidence": "title_exact_match_contains_Bordô"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-10",
+      "title": "Tênis Adidas Handball Spezial Bordô",
+      "previous_product_attributes": {
+        "color": null,
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ]
+      },
+      "planned_update": {
+        "color": "Bordô"
+      },
+      "eligible": true,
+      "evidence": "title_exact_match_contains_Bordô"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-11",
+      "title": "Tênis Adidas Handball Spezial Bordô",
+      "previous_product_attributes": {
+        "color": null,
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ]
+      },
+      "planned_update": {
+        "color": "Bordô"
+      },
+      "eligible": true,
+      "evidence": "title_exact_match_contains_Bordô"
+    }
+  ],
+  "execution_results": [
+    {
+      "product_id": "online:pt:BR:JH5439-7",
+      "execution_status": "patched_color_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-7",
+      "expected_color": "Bordô"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-8",
+      "execution_status": "patched_color_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-8",
+      "expected_color": "Bordô"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-9",
+      "execution_status": "patched_color_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-9",
+      "expected_color": "Bordô"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-10",
+      "execution_status": "patched_color_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-10",
+      "expected_color": "Bordô"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-11",
+      "execution_status": "patched_color_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-11",
+      "expected_color": "Bordô"
+    }
+  ],
+  "verify_results": [
+    {
+      "product_id": "online:pt:BR:JH5439-7",
+      "execution_status": "patched_color_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-7",
+      "expected_color": "Bordô",
+      "verify_status": "verified_merchant_product_get",
+      "actual_color": "Bordô",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-8",
+      "execution_status": "patched_color_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-8",
+      "expected_color": "Bordô",
+      "verify_status": "verified_merchant_product_get",
+      "actual_color": "Bordô",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-9",
+      "execution_status": "patched_color_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-9",
+      "expected_color": "Bordô",
+      "verify_status": "verified_merchant_product_get",
+      "actual_color": "Bordô",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-10",
+      "execution_status": "patched_color_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-10",
+      "expected_color": "Bordô",
+      "verify_status": "verified_merchant_product_get",
+      "actual_color": "Bordô",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-11",
+      "execution_status": "patched_color_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-11",
+      "expected_color": "Bordô",
+      "verify_status": "verified_merchant_product_get",
+      "actual_color": "Bordô",
+      "match_expected": true
+    }
+  ],
+  "not_performed": [
+    "title_update",
+    "price_update",
+    "availability_update",
+    "category_or_product_type_update",
+    "image_or_link_update",
+    "merchant_delete",
+    "shopify_write",
+    "tiny_write",
+    "database_write",
+    "feed_fetch_or_upload",
+    "campaign_or_message_send"
+  ]
+}

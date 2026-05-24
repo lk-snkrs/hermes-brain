@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-05-15T20:22:28.299724+00:00",
+  "run_id": "tiny_stock_20260515T092206Z",
+  "mode": "resume",
+  "status": "partial_api_rate_limited",
+  "backup_before_local_write": "/opt/data/hermes_bruno_ingest/local_sql/lk_os_backups/lk_os_phase5_before_tiny_stock_snapshot_full_readonly_20260515T201950Z.sqlite",
+  "database": "/opt/data/hermes_bruno_ingest/local_sql/lk_os_phase5.sqlite",
+  "raw_private_dir": "/opt/data/hermes_bruno_ingest/local_sql/lk_tiny_stock_snapshots",
+  "reports": {
+    "json": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-os-tiny-stock-snapshot-full-readonly-2026-05-15.json",
+    "md": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/rotinas/lk-os-tiny-stock-snapshot-full-readonly-2026-05-15.md"
+  },
+  "source_labels": [
+    "fact_tiny_stock",
+    "fact_shopify",
+    "derived_reconciliation"
+  ],
+  "official_deposit": "LK | CONTROLE ESTOQUE",
+  "counts": {
+    "tiny_products_listed": 17605,
+    "tiny_products_with_codigo": 15372,
+    "stock_products_checked": 897,
+    "deposit_rows": 2774,
+    "official_deposit_rows": 897,
+    "official_positive_rows": 40
+  },
+  "commercial_state_counts": {
+    "blocked_tiny_not_mapped": 10054,
+    "monitor_non_active_shopify_product": 1431,
+    "blocked_missing_shopify_sku": 1388,
+    "blocked_data_quality": 1032,
+    "ready_zero_stock_sourcing_candidate": 520,
+    "ready_available_tiny": 37,
+    "blocked_tiny_duplicate_code": 4
+  },
+  "tiny_status_counts": {
+    "not_mapped_in_tiny_snapshot": 12296,
+    "no_shopify_sku": 1388,
+    "zero_official_deposit": 736,
+    "available_official_deposit": 37,
+    "ambiguous_duplicate_tiny_code": 9
+  },
+  "not_performed": [
+    "tiny_write",
+    "shopify_write",
+    "inventory_change",
+    "price_change",
+    "supplier_contact",
+    "purchase",
+    "campaign_or_external_send",
+    "cron_creation"
+  ],
+  "limitations": [
+    "Snapshot Tiny v2 via produtos.pesquisa + produto.obter.estoque; rows still running/partial if status is not completed.",
+    "Tiny stock resume/full modes now enforce delay >= 1.0s; lower values are bumped automatically to reduce API pressure after rate limits.",
+    "Tiny remains operational stock truth; Shopify inventory was not used as stock truth.",
+    "GMC availability policy remains separate: do not turn Tiny zero into Merchant out-of-stock automatically."
+  ]
+}

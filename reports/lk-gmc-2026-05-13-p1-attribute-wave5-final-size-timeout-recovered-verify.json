@@ -1,0 +1,424 @@
+{
+  "generated_at": "2026-05-13T14:52:30.486380+00:00",
+  "status": "gmc_p1_attribute_wave5_final_size_apply_timeout_recovered_verified",
+  "mode": "apply_recovered_verify_only",
+  "scope": "Recovered verification for Wave5 size-only apply after terminal timeout. No writes in recovery.",
+  "rollback_snapshot": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p1-attribute-wave5-final-size-default-executor-rollback-20260513T143903Z.json",
+  "progress_jsonl": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p1-attribute-wave5-final-size-default-executor-progress-20260513T143903Z.jsonl",
+  "summary": {
+    "planned_records": 32,
+    "progress_rows": 32,
+    "execution_results_summary": {
+      "updated_wave5_final_size_default": 32
+    },
+    "verify_results_summary": {
+      "verified_product_get": 32
+    },
+    "verified_attrs_match_expected": 32,
+    "fresh_merchant_products_after": 23245,
+    "fresh_productstatuses_after": 23245,
+    "required_attr_rows_after": 35,
+    "required_attr_instances_after": 35,
+    "required_attr_counts_after": {
+      "price": 35
+    }
+  },
+  "verified_results": [
+    {
+      "product_id": "online:pt:BR:6531799355487598672",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:RH20",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "Único"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6562590402534581177",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2258634078163248862",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB16",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "Único"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15334125053592144145",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:17378616365015099957",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:13498809788548851139",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:10002025469927148791",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836591089",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "Único"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9780847872657",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "Único"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:4041641007094962608",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8376229716754602501",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9992569968476017768",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836597982",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "Único"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:13622509763707629816",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9250025623243509812",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836585095",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "Único"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:13294493627572294660",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836571968",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "Único"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1475186660255881483",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11806875313375187771",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:13315860803624221806",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15507753369156717392",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15702667075807199895",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2183-USA",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "Único"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11314792792398542744",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:300110",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "Único"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8751205371375268276",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9780847866694",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "Único"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:12820359859699264559",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:17623149180616410488",
+      "execution_status": "updated_wave5_final_size_default",
+      "fields": [
+        "sizes"
+      ],
+      "verify_status": "verified_product_get",
+      "actual_sizes": [
+        "M"
+      ],
+      "attrs_match_expected": true
+    }
+  ],
+  "not_performed": [
+    "merchant_write_in_recovery_script",
+    "merchant_price_update",
+    "merchant_delete",
+    "feed_update_or_fetch",
+    "shopify_write",
+    "tiny_call_or_write",
+    "database_write",
+    "klaviyo_or_whatsapp_send",
+    "notion_or_n8n_write",
+    "loyalty_or_judgeme_action"
+  ]
+}

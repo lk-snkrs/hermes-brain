@@ -6,15 +6,26 @@ Este é o ponto de entrada para Lucas e para o Hermes entenderem como navegar e 
 
 Hermes Brain é a fonte de verdade versionada para contexto, decisões, áreas, agentes, rotinas e skills de negócio.
 
+**Nomenclatura:** “Cérebro Cimino” e “Hermes Brain” são o mesmo sistema lógico — a Grande Mente / Hermes COO de Lucas Cimino. O nome técnico do repositório é Hermes Brain; o nome executivo pode ser Cérebro Cimino. Não criar cérebro, profile, repositório ou rotina duplicada por diferença de nome. Referência canônica: `empresa/contexto/nomenclatura-cerebro-cimino-hermes-brain.md`.
+
+O organograma correto é uma **grande mente central** que cuida de tudo e roteia para as camadas abaixo:
+
 ```text
 Lucas / Telegram
   ↓
 Hermes Agent
   ↓
-Hermes Brain GitHub — contexto, decisões, processos, áreas, rotinas e skills
+Grande Mente — Hermes Brain / Hermes COO
+  ├── Lucas pessoal
+  ├── Empresas: LK Sneakers, Zipper Galeria, SPITI Auction
+  ├── Operações Hermes
+  ├── Tecnologia / Infraestrutura
+  └── Governança / Segurança / Aprovações
   ↓
 Dados vivos — Supabase, Shopify, APIs, email, crons e integrações
 ```
+
+Referências: `empresa/contexto/organograma-operacional-hermes-brain.md` e `empresa/contexto/nomenclatura-cerebro-cimino-hermes-brain.md`.
 
 O agente não é o cérebro. O agente lê e escreve no cérebro.
 
@@ -35,6 +46,7 @@ Antes de aplicar qualquer ideia OpenClaw, responder mentalmente:
 ### 1. Comece por regras globais
 
 - `AGENTS.md` — regras operacionais globais.
+- `MAPA.md` — navegação rápida da Grande Mente.
 - `STARTUP.md` — protocolo de início de sessão.
 - `PROTOCOLS.md` — protocolos e lições estruturais.
 - `TOOLS.md` — ferramentas e integrações.

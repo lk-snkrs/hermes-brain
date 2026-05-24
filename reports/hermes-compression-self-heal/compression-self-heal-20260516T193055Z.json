@@ -1,0 +1,42 @@
+{
+  "startedAt": "2026-05-16T19:30:52Z",
+  "trigger": {
+    "path": "/opt/data/logs/agent.log",
+    "line": "2026-05-16 19:25:50,294 WARNING [20260516_191411_30af8e] root: Failed to generate context summary: [Errno 9] Bad file descriptor. Further summary attempts paused for 60 seconds.",
+    "digest": "869824e2e05fee97c9e30b722577423f56d336ff8900977f554c0ac10b6b38ee",
+    "tail_index": 951
+  },
+  "actions": [
+    "classifier already includes known transient compression markers",
+    "classifier regression test already present"
+  ],
+  "checks": [
+    {
+      "cmd": [
+        "/opt/hermes/.venv/bin/python",
+        "-m",
+        "py_compile",
+        "/opt/hermes/agent/auxiliary_client.py"
+      ],
+      "rc": 0,
+      "output_tail": ""
+    },
+    {
+      "cmd": [
+        "/opt/hermes/.venv/bin/python",
+        "-m",
+        "pytest",
+        "tests/agent/test_auxiliary_client.py::TestIsConnectionError",
+        "tests/agent/test_context_compressor.py::TestStreamingClosedFallback",
+        "-q",
+        "-o",
+        "addopts="
+      ],
+      "rc": 0,
+      "output_tail": "..........                                                               [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/_pytest/cacheprovider.py:475\n  /opt/hermes/.venv/lib/python3.13/site-packages/_pytest/cacheprovider.py:475: PytestCacheWarning: could not create cache path /opt/hermes/.pytest_cache/v/cache/nodeids: [Errno 13] Permission denied: '/opt/hermes/pytest-cache-files-ibz66vw5'\n    config.cache.set(\"cache/nodeids\", sorted(self.cached_nodeids))\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n10 passed, 1 warning in 2.22s\n"
+    }
+  ],
+  "restart": "not performed; gateway/container restart remains approval-gated unless Lucas explicitly approves that exact action",
+  "secretHandling": "log line sanitized/tail only; no env/config/secrets printed",
+  "status": "verified-existing-guardrail"
+}

@@ -1,0 +1,1542 @@
+{
+  "generated_at": "2026-05-13T16:43:26.351961+00:00",
+  "mode": "read_only_post_interruption_verify",
+  "progress_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p2-category-product-type-executor-progress-20260513T163349Z.jsonl",
+  "summary": {
+    "progressed_rows": 100,
+    "progress_execution_counts": {
+      "patched_p2a_category_product_type_v1": 100
+    },
+    "verify_counts": {
+      "verified_merchant_product_get": 100
+    },
+    "match_expected": 100,
+    "fresh_productstatuses_after": 23253,
+    "required_attr_rows_after": 1,
+    "required_attr_counts_after": {
+      "color": 1
+    },
+    "top_item_level_issue_counts_after": {
+      "price_updated": 1011,
+      "strikethrough_price_updated": 489,
+      "restricted_gtin": 102,
+      "landing_page_error": 63,
+      "image_single_color": 8,
+      "image_link_broken": 8,
+      "reserved_gtin": 6,
+      "condition_updated_from_detected": 4,
+      "restricted_nfs_policy_violation": 4,
+      "coupon_gtin": 3,
+      "multiple_sizes": 2,
+      "missing_item_attribute_for_product_type": 2
+    }
+  },
+  "verify_results": [
+    {
+      "product_id": "online:pt:BR:JR7031",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JR7031",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:200031434310-1",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~200031434310-1",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:200031434310-10",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~200031434310-10",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:200031434310-11",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~200031434310-11",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:200031434310-2",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~200031434310-2",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:200031434310-3",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~200031434310-3",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:200031434310-4",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~200031434310-4",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:200031434310-5",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~200031434310-5",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:200031434310-6",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~200031434310-6",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:200031434310-7",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~200031434310-7",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:200031434310-8",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~200031434310-8",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:200031434310-9",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~200031434310-9",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000415173436-1",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000415173436-1",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000415173436-10",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000415173436-10",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000415173436-2",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000415173436-2",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000415173436-3",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000415173436-3",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000415173436-4",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000415173436-4",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000415173436-5",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000415173436-5",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000415173436-6",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000415173436-6",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000415173436-7",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000415173436-7",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000415173436-8",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000415173436-8",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000415173436-9",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000415173436-9",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371251-1",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371251-1",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371251-2",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371251-2",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371251-3",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371251-3",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371251-4",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371251-4",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371251-5",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371251-5",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371251-6",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371251-6",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371251-7",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371251-7",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371254-1",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371254-1",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371254-10",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371254-10",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371254-11",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371254-11",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371254-2",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371254-2",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371254-3",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371254-3",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371254-4",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371254-4",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371254-5",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371254-5",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371254-6",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371254-6",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371254-7",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371254-7",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371254-8",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371254-8",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2000314371254-9",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2000314371254-9",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF3058-300-1",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HF3058-300-1",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF3058-300-2",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HF3058-300-2",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF3058-300-3",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HF3058-300-3",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF3058-300-4",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HF3058-300-4",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF3058-300-5",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HF3058-300-5",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF3058-300-6",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HF3058-300-6",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF3058-300-7",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HF3058-300-7",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-601",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-601",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-602",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-602",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-603",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-603",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-604",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-604",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-605",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-605",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-606",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-606",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-607",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-607",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-608",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-608",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-609",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-609",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-001-1",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-001-1",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-001-10",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-001-10",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-001-11",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-001-11",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-001-12",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-001-12",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-001-2",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-001-2",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-001-3",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-001-3",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-001-4",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-001-4",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-001-5",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-001-5",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-001-6",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-001-6",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-001-7",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-001-7",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-001-8",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-001-8",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-001-9",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-001-9",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-301-37",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-301-37",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-301-38",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-301-38",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-301-39",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-301-39",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-301-40",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-301-40",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-301-41",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-301-41",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-301-42",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-301-42",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-301-43",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-301-43",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-301-44",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-301-44",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-1",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-1",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-10",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-10",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-11",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-11",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-12",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-12",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-13",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-13",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-15",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-15",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-2",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-2",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-3",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-3",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-4",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-4",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-5",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-5",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-6",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-6",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-7",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-7",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-8",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-8",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-003-9",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-003-9",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-100-34",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-100-34",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-100-35",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-100-35",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-100-36",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-100-36",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-100-37",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-100-37",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-100-38",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-100-38",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-100-39",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-100-39",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-100-40",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-100-40",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-100-41",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-100-41",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-100-42",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-100-42",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HQ4307-100-43",
+      "execution_status": "patched_p2a_category_product_type_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HQ4307-100-43",
+      "verify_status": "verified_merchant_product_get",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Calçados"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Calçados"
+      ],
+      "match_expected": true
+    }
+  ],
+  "not_performed": [
+    "no_writes",
+    "no_reapply",
+    "no_delete",
+    "no_shopify_tiny_db_campaign_message_changes"
+  ]
+}

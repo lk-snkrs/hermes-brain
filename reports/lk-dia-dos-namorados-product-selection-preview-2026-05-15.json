@@ -1,0 +1,1784 @@
+{
+  "generated_at": "2026-05-15T19:16:15.846859+00:00",
+  "scope": "read-only local preview; no Shopify/Tiny/Klaviyo writes",
+  "source_db": "/opt/data/hermes_bruno_ingest/local_sql/lk_os_phase5.sqlite",
+  "summary": {
+    "stock_variants_seen": 5000,
+    "eligible_sku_in_stock_variants": 4786,
+    "promo_variants": 997,
+    "non_promo_pronta_entrega_variants": 3789
+  },
+  "promo_preview": [
+    {
+      "product_id": "53046",
+      "product_title": "Tênis adidas Campus 00s Scarlet Red Vermelho",
+      "vendor": "Adidas",
+      "handle": "tenis-adidas-campus-00s-scarlet-red-vermelho",
+      "variants": [
+        {
+          "variant_title": "37",
+          "sku": "H03474-4",
+          "qty": 4,
+          "price": 699.99,
+          "compare_at": 1749.99,
+          "discount_pct": 60.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "53038",
+      "product_title": "Tênis Adidas Campus 00s Crystal White Branco",
+      "vendor": "Adidas",
+      "handle": "tenis-adidas-campus-00s-crystal-white-branco",
+      "variants": [
+        {
+          "variant_title": "37",
+          "sku": "GY0042-2",
+          "qty": 1,
+          "price": 699.99,
+          "compare_at": 1599.99,
+          "discount_pct": 56.3,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "53043",
+      "product_title": "Tênis Adidas Campus 00s Grey Three Cinza",
+      "vendor": "Adidas",
+      "handle": "tenis-adidas-campus-00s-grey-three-cinza",
+      "variants": [
+        {
+          "variant_title": "34",
+          "sku": "HQ8707-4",
+          "qty": 2,
+          "price": 699.99,
+          "compare_at": 1499.99,
+          "discount_pct": 53.3,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "53032",
+      "product_title": "Tênis adidas Campus 00s Ambient Sky Azul",
+      "vendor": "Adidas",
+      "handle": "tenis-adidas-campus-00s-ambient-sky-azul",
+      "variants": [
+        {
+          "variant_title": "37",
+          "sku": "GY9473-4",
+          "qty": 1,
+          "price": 699.99,
+          "compare_at": 1499.99,
+          "discount_pct": 53.3,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52536",
+      "product_title": "Camiseta Sufgang Peace Talk Preto",
+      "vendor": "Sufgang",
+      "handle": "camiseta-sufgang-peace-talk-preto",
+      "variants": [
+        {
+          "variant_title": "M",
+          "sku": "PEACETALK2-2",
+          "qty": 3,
+          "price": 109.99,
+          "compare_at": 229.99,
+          "discount_pct": 52.2,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "S/P",
+          "sku": "PEACETALK2-1",
+          "qty": 2,
+          "price": 109.99,
+          "compare_at": 229.99,
+          "discount_pct": 52.2,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "L/G",
+          "sku": "PEACETALK2-3",
+          "qty": 1,
+          "price": 109.99,
+          "compare_at": 229.99,
+          "discount_pct": 52.2,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52535",
+      "product_title": "Camiseta Sufgang Peace Talk Branco",
+      "vendor": "Sufgang",
+      "handle": "camiseta-sufgang-peace-talk-branco",
+      "variants": [
+        {
+          "variant_title": "M",
+          "sku": "PEACKTALK1-2",
+          "qty": 2,
+          "price": 109.99,
+          "compare_at": 229.99,
+          "discount_pct": 52.2,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "S/P",
+          "sku": "PEACKTALK1-1",
+          "qty": 1,
+          "price": 109.99,
+          "compare_at": 229.99,
+          "discount_pct": 52.2,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52538",
+      "product_title": "Camiseta Sufgang Stunt Master Cinza",
+      "vendor": "Sufgang",
+      "handle": "camiseta-sufgang-stunt-master-cinza",
+      "variants": [
+        {
+          "variant_title": "S/P",
+          "sku": "STUNT2-1",
+          "qty": 2,
+          "price": 109.99,
+          "compare_at": 229.99,
+          "discount_pct": 52.2,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "M",
+          "sku": "STUNT2-2",
+          "qty": 2,
+          "price": 109.99,
+          "compare_at": 229.99,
+          "discount_pct": 52.2,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "L/G",
+          "sku": "STUNT2-3",
+          "qty": 1,
+          "price": 109.99,
+          "compare_at": 229.99,
+          "discount_pct": 52.2,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52539",
+      "product_title": "Camiseta Sufgang Stunt Master Preto",
+      "vendor": "Sufgang",
+      "handle": "camiseta-sufgang-stunt-master-preto",
+      "variants": [
+        {
+          "variant_title": "S/P",
+          "sku": "STUNT1-1",
+          "qty": 2,
+          "price": 109.99,
+          "compare_at": 229.99,
+          "discount_pct": 52.2,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52537",
+      "product_title": "Camiseta Sufgang Stunt Master Azul",
+      "vendor": "Sufgang",
+      "handle": "camiseta-sufgang-stunt-master-azul",
+      "variants": [
+        {
+          "variant_title": "S/P",
+          "sku": "STUNT3-1",
+          "qty": 1,
+          "price": 109.99,
+          "compare_at": 229.99,
+          "discount_pct": 52.2,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "L/G",
+          "sku": "STUNT3-3",
+          "qty": 1,
+          "price": 109.99,
+          "compare_at": 229.99,
+          "discount_pct": 52.2,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "53035",
+      "product_title": "Tênis adidas Campus 00s Bliss Pink Rosa",
+      "vendor": "Adidas",
+      "handle": "tenis-adidas-campus-00s-bliss-pink-rosa",
+      "variants": [
+        {
+          "variant_title": "34",
+          "sku": "IF3968-1",
+          "qty": 1,
+          "price": 699.99,
+          "compare_at": 1449.9,
+          "discount_pct": 51.7,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52533",
+      "product_title": "Camiseta Sufgang Basic Pack 5.8 Verde",
+      "vendor": "Sufgang",
+      "handle": "camiseta-sufgang-basic-pack-5-8-verde",
+      "variants": [
+        {
+          "variant_title": "P",
+          "sku": "SF2BSP5-2",
+          "qty": 3,
+          "price": 74.99,
+          "compare_at": 149.99,
+          "discount_pct": 50.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "53917",
+      "product_title": "Tênis Nike Sb Dunk Low x Futura Skateboard Bleached Aqua Azul",
+      "vendor": "Nike",
+      "handle": "tenis-nike-sb-dunk-low-x-futura-skateboard-bleached-aqua-azul",
+      "variants": [
+        {
+          "variant_title": "37",
+          "sku": "HF6061-400-2",
+          "qty": 2,
+          "price": 2999.99,
+          "compare_at": 5999.9,
+          "discount_pct": 50.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "34.5",
+          "sku": "HF6061400",
+          "qty": 1,
+          "price": 2999.99,
+          "compare_at": 5999.9,
+          "discount_pct": 50.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "35",
+          "sku": "HF6061400",
+          "qty": 1,
+          "price": 2999.99,
+          "compare_at": 5999.9,
+          "discount_pct": 50.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "35.5",
+          "sku": "HF6061400",
+          "qty": 1,
+          "price": 2999.99,
+          "compare_at": 5999.9,
+          "discount_pct": 50.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "38",
+          "sku": "HF6061-400-3",
+          "qty": 1,
+          "price": 2999.99,
+          "compare_at": 5999.9,
+          "discount_pct": 50.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "39",
+          "sku": "HF6061-400-4",
+          "qty": 1,
+          "price": 2999.99,
+          "compare_at": 5999.9,
+          "discount_pct": 50.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "39.5",
+          "sku": "HF6061400",
+          "qty": 1,
+          "price": 2999.99,
+          "compare_at": 5999.9,
+          "discount_pct": 50.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "40",
+          "sku": "HF6061-400-5",
+          "qty": 1,
+          "price": 2999.99,
+          "compare_at": 5999.9,
+          "discount_pct": 50.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52531",
+      "product_title": "Camiseta Sufgang Basic Pack 5.8 Azul",
+      "vendor": "Sufgang",
+      "handle": "camiseta-sufgang-basic-pack-5-8-azul",
+      "variants": [
+        {
+          "variant_title": "PP",
+          "sku": "SF2BSP7-1",
+          "qty": 1,
+          "price": 74.99,
+          "compare_at": 149.99,
+          "discount_pct": 50.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "53554",
+      "product_title": "Tênis Nike Air Jordan 1 Low Guava Ice Preto",
+      "vendor": "Jordan",
+      "handle": "air-jordan-1-low-guava-ice",
+      "variants": [
+        {
+          "variant_title": "34",
+          "sku": "DC0774003",
+          "qty": 1,
+          "price": 2199.99,
+          "compare_at": 3999.99,
+          "discount_pct": 45.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "35",
+          "sku": "DC0774004",
+          "qty": 1,
+          "price": 2199.99,
+          "compare_at": 3999.99,
+          "discount_pct": 45.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "36",
+          "sku": "DC0774005",
+          "qty": 1,
+          "price": 2199.99,
+          "compare_at": 3999.99,
+          "discount_pct": 45.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "37",
+          "sku": "DC0774006",
+          "qty": 1,
+          "price": 2199.99,
+          "compare_at": 3999.99,
+          "discount_pct": 45.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "38",
+          "sku": "DC0774007",
+          "qty": 1,
+          "price": 2199.99,
+          "compare_at": 3999.99,
+          "discount_pct": 45.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "39",
+          "sku": "DC0774008",
+          "qty": 1,
+          "price": 2199.99,
+          "compare_at": 3999.99,
+          "discount_pct": 45.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "40",
+          "sku": "DC0774009",
+          "qty": 1,
+          "price": 2199.99,
+          "compare_at": 3999.99,
+          "discount_pct": 45.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "54151",
+      "product_title": "Tênis Yeezy Boost 350 V2 Onyx Preto",
+      "vendor": "Yeezy",
+      "handle": "yeezy-boost-350-v2-onyx",
+      "variants": [
+        {
+          "variant_title": "45",
+          "sku": "HQ4540-45",
+          "qty": 2,
+          "price": 1999.99,
+          "compare_at": 3499.99,
+          "discount_pct": 42.9,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "34",
+          "sku": "HP4540-12",
+          "qty": 1,
+          "price": 1999.99,
+          "compare_at": 3499.99,
+          "discount_pct": 42.9,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52560",
+      "product_title": "Chinelo Havaianas Top Dolce & Gabbana Faux Fur Leopardo Marrom",
+      "vendor": "Havaianas",
+      "handle": "chinelo-havaianas-top-dolce-gabbana-faux-fur-leopardo-marrom",
+      "variants": [
+        {
+          "variant_title": "37/38",
+          "sku": "4150234_3581_412-2",
+          "qty": 8,
+          "price": 1199.99,
+          "compare_at": 1999.99,
+          "discount_pct": 40.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "39/40",
+          "sku": "4150234_3581_412-3",
+          "qty": 3,
+          "price": 1199.99,
+          "compare_at": 1999.99,
+          "discount_pct": 40.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "41/42",
+          "sku": "4150234_3581_412-4",
+          "qty": 3,
+          "price": 1199.99,
+          "compare_at": 1999.99,
+          "discount_pct": 40.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52561",
+      "product_title": "Chinelo Havaianas Top Dolce & Gabbana Faux Fur Zebra Preto",
+      "vendor": "Havaianas",
+      "handle": "chinelo-havaianas-top-dolce-gabbana-faux-fur-zebra-preto",
+      "variants": [
+        {
+          "variant_title": "35/36",
+          "sku": "4150234_0121_412-1",
+          "qty": 2,
+          "price": 1199.99,
+          "compare_at": 1999.99,
+          "discount_pct": 40.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "41/42",
+          "sku": "4150234_0121_412-4",
+          "qty": 2,
+          "price": 1199.99,
+          "compare_at": 1999.99,
+          "discount_pct": 40.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "54145",
+      "product_title": "Tênis Yeezy Boost 350 v2 Black Red (Bred) Preto",
+      "vendor": "Yeezy",
+      "handle": "tenis-yeezy-boost-350-v2-black-red-bred-preto",
+      "variants": [
+        {
+          "variant_title": "36",
+          "sku": "CP9652-2",
+          "qty": 2,
+          "price": 2999.99,
+          "compare_at": 4999.99,
+          "discount_pct": 40.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "37",
+          "sku": "CP9652-3",
+          "qty": 2,
+          "price": 2999.99,
+          "compare_at": 4999.99,
+          "discount_pct": 40.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "38",
+          "sku": "CP9652-4",
+          "qty": 2,
+          "price": 2999.99,
+          "compare_at": 4999.99,
+          "discount_pct": 40.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "39",
+          "sku": "CP9652-5",
+          "qty": 2,
+          "price": 2999.99,
+          "compare_at": 4999.99,
+          "discount_pct": 40.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "40",
+          "sku": "CP9652-6",
+          "qty": 2,
+          "price": 3499.99,
+          "compare_at": 4999.99,
+          "discount_pct": 30.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "53566",
+      "product_title": "Tênis Nike Air Jordan 1 Low Multi-Color Royal Toe Colorido",
+      "vendor": "Jordan",
+      "handle": "air-jordan-1-low-multi-color-royal-toe",
+      "variants": [
+        {
+          "variant_title": "37.5",
+          "sku": "CZ4776101-1",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 2599.99,
+          "discount_pct": 38.5,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "53888",
+      "product_title": "Tênis Nike SB Dunk Low Court Purple Roxo",
+      "vendor": "Nike",
+      "handle": "nike-sb-dunk-low-court-purple",
+      "variants": [
+        {
+          "variant_title": "37",
+          "sku": "BQ6817500-1",
+          "qty": 1,
+          "price": 1799.99,
+          "compare_at": 2799.99,
+          "discount_pct": 35.7,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "38",
+          "sku": "BQ6817500-2",
+          "qty": 1,
+          "price": 1799.99,
+          "compare_at": 2799.99,
+          "discount_pct": 35.7,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "40",
+          "sku": "BQ6817500",
+          "qty": 1,
+          "price": 1799.99,
+          "compare_at": 2799.99,
+          "discount_pct": 35.7,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "43",
+          "sku": "BQ6817500",
+          "qty": 1,
+          "price": 1799.99,
+          "compare_at": 2799.99,
+          "discount_pct": 35.7,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "53745",
+      "product_title": "Tênis Nike Dunk High x Wu Tang Clan Black and Pollen Amarelo",
+      "vendor": "Nike",
+      "handle": "tenis-nike-dunk-high-x-wu-tang-clan-black-and-pollen-amarelo",
+      "variants": [
+        {
+          "variant_title": "36",
+          "sku": "HJ4320001-1",
+          "qty": 2,
+          "price": 3299.99,
+          "compare_at": 4999.99,
+          "discount_pct": 34.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "37",
+          "sku": "HJ4320001-2",
+          "qty": 2,
+          "price": 3299.99,
+          "compare_at": 4999.99,
+          "discount_pct": 34.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "38",
+          "sku": "HJ4320001-3",
+          "qty": 2,
+          "price": 3299.99,
+          "compare_at": 4999.99,
+          "discount_pct": 34.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "39",
+          "sku": "HJ4320001-4",
+          "qty": 2,
+          "price": 3299.99,
+          "compare_at": 4999.99,
+          "discount_pct": 34.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "40",
+          "sku": "HJ4320001-5",
+          "qty": 2,
+          "price": 3299.99,
+          "compare_at": 4999.99,
+          "discount_pct": 34.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "41",
+          "sku": "HJ4320001-6",
+          "qty": 2,
+          "price": 3299.99,
+          "compare_at": 4999.99,
+          "discount_pct": 34.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "42",
+          "sku": "HJ4320001-7",
+          "qty": 2,
+          "price": 3299.99,
+          "compare_at": 4999.99,
+          "discount_pct": 34.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "43",
+          "sku": "HJ4320001-8",
+          "qty": 2,
+          "price": 3299.99,
+          "compare_at": 4999.99,
+          "discount_pct": 34.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "53751",
+      "product_title": "Tênis Nike Dunk Low Black Feminino Preto",
+      "vendor": "Nike",
+      "handle": "nike-dunk-low-black-feminino",
+      "variants": [
+        {
+          "variant_title": "36",
+          "sku": "DD1503101-36",
+          "qty": 3,
+          "price": 1699.99,
+          "compare_at": 2499.99,
+          "discount_pct": 32.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "37",
+          "sku": "DD1503101-37",
+          "qty": 1,
+          "price": 1699.99,
+          "compare_at": 2499.99,
+          "discount_pct": 32.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "39",
+          "sku": "DD1503101-6",
+          "qty": 1,
+          "price": 1699.99,
+          "compare_at": 2499.99,
+          "discount_pct": 32.0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "40",
+          "sku": "DD1503101-7",
+          "qty": 1,
+          "price": 1699.99,
+          "compare_at": 2499.99,
+          "discount_pct": 32.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "53294",
+      "product_title": "Tênis Concepts x Nike SB Dunk Low Orange Lobster Laranja",
+      "vendor": "Nike",
+      "handle": "concepts-x-nike-sb-dunk-low-orange-lobster",
+      "variants": [
+        {
+          "variant_title": "43",
+          "sku": "FD8776800-8",
+          "qty": 1,
+          "price": 4799.99,
+          "compare_at": 6999.99,
+          "discount_pct": 31.4,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52807",
+      "product_title": "Óculos de Sol Balenciaga BB0041S-014 Azul",
+      "vendor": "Balenciaga",
+      "handle": "oculos-de-sol-balenciaga-bb0041s-014-azul",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "BB0041S-014",
+          "qty": 2,
+          "price": 2309.99,
+          "compare_at": 3299.99,
+          "discount_pct": 30.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52826",
+      "product_title": "Óculos de Sol Jacquemus JAC2C1SUN Preto",
+      "vendor": "Jacquemus",
+      "handle": "oculos-de-sol-jacquemus-jac2c1sun-preto",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "JAC2C1SUN",
+          "qty": 2,
+          "price": 1749.99,
+          "compare_at": 2499.99,
+          "discount_pct": 30.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52827",
+      "product_title": "Óculos de Sol Jacquemus JAC2C2SUN Bege",
+      "vendor": "Jacquemus",
+      "handle": "oculos-de-sol-jacquemus-jac2c2sun-bege",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "JAC2C2SUN",
+          "qty": 2,
+          "price": 1749.99,
+          "compare_at": 2499.99,
+          "discount_pct": 30.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52830",
+      "product_title": "Óculos de Sol Jacquemus JAC5C2SUN Branco",
+      "vendor": "Jacquemus",
+      "handle": "oculos-de-sol-jacquemus-jac5c2sun-branco",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "JAC5C2SUN",
+          "qty": 2,
+          "price": 1749.99,
+          "compare_at": 2499.99,
+          "discount_pct": 30.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52833",
+      "product_title": "Óculos de Sol Palm Angels PERI039-1007 Preto",
+      "vendor": "Palm Angels",
+      "handle": "oculos-de-sol-palm-angels-peri039-1007-preto",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "PERI039-1007",
+          "qty": 2,
+          "price": 1749.99,
+          "compare_at": 2499.99,
+          "discount_pct": 30.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52250",
+      "product_title": "Calça Saint Studio Plissada Tech Preto",
+      "vendor": "Saint Studio",
+      "handle": "calca-saint-studio-plissada-tech-preto",
+      "variants": [
+        {
+          "variant_title": "44",
+          "sku": "ST19-4",
+          "qty": 1,
+          "price": 349.99,
+          "compare_at": 499.99,
+          "discount_pct": 30.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52323",
+      "product_title": "Camiseta Comme des Garçons Emblem Rhinestone White/Red Branco",
+      "vendor": "Comme des Garçons",
+      "handle": "camiseta-comme-des-garcons-emblem-rhinestone-white-red-branco",
+      "variants": [
+        {
+          "variant_title": "P/S",
+          "sku": "AX-T801-051-2",
+          "qty": 1,
+          "price": 839.99,
+          "compare_at": 1199.99,
+          "discount_pct": 30.0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    }
+  ],
+  "pronta_entrega_preview": [
+    {
+      "product_id": "52056",
+      "product_title": "Adidas Taekwondo Mei Ballet Preto e Branco",
+      "vendor": "Adidas",
+      "handle": "adidas-taekwondo-mei-ballet-preto-e-branco",
+      "variants": [
+        {
+          "variant_title": "42",
+          "sku": "JR7031",
+          "qty": 1,
+          "price": 1999.99,
+          "compare_at": null,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52062",
+      "product_title": "Bermuda Chino Saint Studio Supima Caqui",
+      "vendor": "Saint Studio",
+      "handle": "bermuda-chino-saint-studio-supima-caqui",
+      "variants": [
+        {
+          "variant_title": "40",
+          "sku": "ST1-2",
+          "qty": 1,
+          "price": 369.99,
+          "compare_at": 369.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52064",
+      "product_title": "Bermuda Nude Project Capicci Capri Jeans",
+      "vendor": "Nude Project",
+      "handle": "calca-nude-project-capicci-capri-jeans",
+      "variants": [
+        {
+          "variant_title": "Blue / L/G",
+          "sku": "NP04-8",
+          "qty": 2,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Blue / M",
+          "sku": "NP04-7",
+          "qty": 2,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Blue / S/P",
+          "sku": "NP04-6",
+          "qty": 2,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Blue / XS/PP",
+          "sku": "NP04-5",
+          "qty": 2,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Indigo / L/G",
+          "sku": "NP04-4",
+          "qty": 2,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Indigo / M",
+          "sku": "NP04-3",
+          "qty": 2,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Indigo / S/P",
+          "sku": "NP04-2",
+          "qty": 2,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Indigo / XS/PP",
+          "sku": "NP04-1",
+          "qty": 2,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52089",
+      "product_title": "Bolsa Lululemon Slouchy Sling 6L",
+      "vendor": "Lululemon",
+      "handle": "bolsa-lululemon-slouchy-sling-6l",
+      "variants": [
+        {
+          "variant_title": "Black",
+          "sku": "11750230-3",
+          "qty": 10,
+          "price": 999.99,
+          "compare_at": 999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Lava Cake",
+          "sku": "11750230-1",
+          "qty": 1,
+          "price": 999.99,
+          "compare_at": 999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Light Ivory",
+          "sku": "11750230-2",
+          "qty": 1,
+          "price": 999.99,
+          "compare_at": 999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52090",
+      "product_title": "Bolsa Minimal Saint Studio Cacto Caramelo (DF)",
+      "vendor": "Saint Studio",
+      "handle": "bolsa-minimal-saint-studio-cacto-caramelo",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "ST4",
+          "qty": 1,
+          "price": 629.99,
+          "compare_at": 629.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52094",
+      "product_title": "Bolsa Nike x Jacquemus Small Swoosh Bag Branco (DF)",
+      "vendor": "Nike",
+      "handle": "bolsa-nike-x-jacquemus-small-swoosh-bag-branco",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "NIKEXJAC1",
+          "qty": 1,
+          "price": 3999.99,
+          "compare_at": 3999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52095",
+      "product_title": "Bolsa Nike x Jacquemus Small Swoosh Bag Vermelho",
+      "vendor": "Nike",
+      "handle": "bolsa-nike-x-jacquemus-small-swoosh-bag-vermelho",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "NIKEJAC2",
+          "qty": 2,
+          "price": 3999.99,
+          "compare_at": 3999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52115",
+      "product_title": "Boné 6 Panel Aimé Leon Dore Cycling Logo Azul",
+      "vendor": "Aimé Leon Dore",
+      "handle": "bone-6-panel-aime-leon-dore-cycling-logo-azul",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "Aime5",
+          "qty": 2,
+          "price": 999.99,
+          "compare_at": 999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52119",
+      "product_title": "Boné 6 Panel Aimé Leon Dore Script Sport Black Preto",
+      "vendor": "Aimé Leon Dore",
+      "handle": "bone-6-panel-aime-leon-dore-script-sport-black-preto",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "SCRIPTSPORT",
+          "qty": 1,
+          "price": 999.99,
+          "compare_at": 999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52122",
+      "product_title": "Boné 6 Panel Onitsuka Tiger x Astroboy Preto",
+      "vendor": "Onitsuka Tiger",
+      "handle": "bone-6-panel-onitsuka-tiger-x-astroboy-preto",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "3183B170001",
+          "qty": 2,
+          "price": 1499.99,
+          "compare_at": 1499.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52123",
+      "product_title": "Boné 6 Panel Onitsuka Tiger x Astroboy Washed Verde",
+      "vendor": "Onitsuka Tiger",
+      "handle": "bone-6-panel-onitsuka-tiger-x-astroboy-washed-verde",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "3183B151400",
+          "qty": 2,
+          "price": 1499.99,
+          "compare_at": 1499.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52125",
+      "product_title": "Boné 6 Panel Supreme Pigment S Logo Rosa",
+      "vendor": "Supreme",
+      "handle": "bone-6-panel-supreme-pigment-s-logo-rosa",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "SUPPIGMENT2",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 649.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52143",
+      "product_title": "Boné Alo Yoga Washed Off-Duty",
+      "vendor": "Alo Yoga",
+      "handle": "bone-alo-yoga-washed-off-duty",
+      "variants": [
+        {
+          "variant_title": "Sand Dollar",
+          "sku": "42337316700340-4",
+          "qty": 1,
+          "price": 999.99,
+          "compare_at": 999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Vintage Navy",
+          "sku": "42337316700340-2",
+          "qty": 1,
+          "price": 999.99,
+          "compare_at": 999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52158",
+      "product_title": "Boné Lululemon Classic Ball Wordmark",
+      "vendor": "Lululemon",
+      "handle": "bone-lululemon-classic-ball-wordmark",
+      "variants": [
+        {
+          "variant_title": "Bone/White",
+          "sku": "11700328-1",
+          "qty": 1,
+          "price": 599.99,
+          "compare_at": 599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Butter Cream/Light Ivory",
+          "sku": "11700328-2",
+          "qty": 1,
+          "price": 599.99,
+          "compare_at": 599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Lavender Lux/Goodnight Plum",
+          "sku": "11700328-3",
+          "qty": 1,
+          "price": 599.99,
+          "compare_at": 599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Passionate",
+          "sku": "11700328-4",
+          "qty": 1,
+          "price": 599.99,
+          "compare_at": 599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "White/Black",
+          "sku": "11700328-6",
+          "qty": 1,
+          "price": 599.99,
+          "compare_at": 599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52176",
+      "product_title": "Boné Supreme Military Camp Cap (SS25) Coral Laranja",
+      "vendor": "Supreme",
+      "handle": "bone-supreme-military-camp-cap-ss25-coral-laranja",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "SUPSS2504",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 899.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52179",
+      "product_title": "Boné Supreme Military Camp Cap (SS25) Tan Bege",
+      "vendor": "Supreme",
+      "handle": "bone-supreme-military-camp-cap-ss25-tan-bege",
+      "variants": [
+        {
+          "variant_title": "Default Title",
+          "sku": "SUPSS2503",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 899.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52200",
+      "product_title": "Calça Alo Yoga Serenity Wide Leg Preto",
+      "vendor": "Alo Yoga",
+      "handle": "calca-alo-yoga-serenity-wide-leg-preto",
+      "variants": [
+        {
+          "variant_title": "L/G",
+          "sku": "w54162r-4",
+          "qty": 1,
+          "price": 1399.99,
+          "compare_at": 1399.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "M",
+          "sku": "w54162r-3",
+          "qty": 1,
+          "price": 1399.99,
+          "compare_at": 1399.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "XS/PP",
+          "sku": "w54162r-1",
+          "qty": 1,
+          "price": 1399.99,
+          "compare_at": 1399.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52209",
+      "product_title": "Calça Baggy Nude Project Old Jeans",
+      "vendor": "Nude Project",
+      "handle": "calca-baggy-nude-project-old-jeans",
+      "variants": [
+        {
+          "variant_title": "Black / L/G",
+          "sku": "NP12-4",
+          "qty": 1,
+          "price": 1999.99,
+          "compare_at": 1999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Black / M",
+          "sku": "NP12-3",
+          "qty": 2,
+          "price": 1999.99,
+          "compare_at": 1999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Black / S/P",
+          "sku": "NP12-2",
+          "qty": 2,
+          "price": 1999.99,
+          "compare_at": 1999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Black / XL/GG",
+          "sku": "NP12-5",
+          "qty": 2,
+          "price": 1999.99,
+          "compare_at": 1999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Black / XS/PP",
+          "sku": "NP12-1",
+          "qty": 2,
+          "price": 1999.99,
+          "compare_at": 1999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Blue / L/G",
+          "sku": "NP12-9",
+          "qty": 2,
+          "price": 1999.99,
+          "compare_at": 1999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Blue / M",
+          "sku": "NP12-8",
+          "qty": 1,
+          "price": 1999.99,
+          "compare_at": 1999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Blue / S/P",
+          "sku": "NP12-7",
+          "qty": 2,
+          "price": 1999.99,
+          "compare_at": 1999.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52210",
+      "product_title": "Calça Baggy Nude Project Old Jeans Animal Print",
+      "vendor": "Nude Project",
+      "handle": "calca-baggy-nude-project-old-jeans-animal-print",
+      "variants": [
+        {
+          "variant_title": "L/G",
+          "sku": "NP13-2",
+          "qty": 2,
+          "price": 2399.99,
+          "compare_at": 2399.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "M",
+          "sku": "NP13-1",
+          "qty": 2,
+          "price": 2399.99,
+          "compare_at": 2399.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "XL/GG",
+          "sku": "NP13-3",
+          "qty": 2,
+          "price": 2399.99,
+          "compare_at": 2399.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52211",
+      "product_title": "Calça Carhartt Men's Work - Relaxed Fit - Rugged Flex® - Canvas Bege",
+      "vendor": "Carhartt",
+      "handle": "calca-carhartt-mens-work-relaxed-fit-rugged-flex®-canvas-bege",
+      "variants": [
+        {
+          "variant_title": "38",
+          "sku": "1022913-1",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 899.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "42",
+          "sku": "1022913-3",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 899.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "44",
+          "sku": "1022913-4",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 899.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52212",
+      "product_title": "Calça Carhartt Men's Work - Relaxed Fit - Rugged Flex® - Canvas Marrom",
+      "vendor": "Carhartt",
+      "handle": "calca-carhartt-mens-work-relaxed-fit-rugged-flex®-canvas-marrom",
+      "variants": [
+        {
+          "variant_title": "38",
+          "sku": "1032792-1",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 899.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "40",
+          "sku": "1032792-2",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 899.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "42",
+          "sku": "1032792-3",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 899.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "44",
+          "sku": "1032792-4",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 899.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52213",
+      "product_title": "Calça Carhartt Men's Work - Relaxed Fit - Rugged Flex® - Canvas Preto",
+      "vendor": "Carhartt",
+      "handle": "calca-carhartt-mens-work-relaxed-fit-rugged-flex®-canvas-preto",
+      "variants": [
+        {
+          "variant_title": "38",
+          "sku": "102291-1",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 899.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "40",
+          "sku": "102291-2",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 899.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "42",
+          "sku": "102291-3",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 899.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "44",
+          "sku": "102291-4",
+          "qty": 1,
+          "price": 899.99,
+          "compare_at": 899.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52215",
+      "product_title": "Calça Dane-se Touch Linha Verde",
+      "vendor": "Dane-se",
+      "handle": "calca-dane-se-touch-linha-verde",
+      "variants": [
+        {
+          "variant_title": "G/L",
+          "sku": "5442-2",
+          "qty": 2,
+          "price": 498.0,
+          "compare_at": 498.0,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "M",
+          "sku": "5442-1",
+          "qty": 2,
+          "price": 498.0,
+          "compare_at": 498.0,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52221",
+      "product_title": "Calça Legging Alo Yoga 7/8 High-Waist Airlift",
+      "vendor": "Alo Yoga",
+      "handle": "calca-legging-alo-yoga-7-8-high-waist-airlift",
+      "variants": [
+        {
+          "variant_title": "L/G / Black",
+          "sku": "w5766r-10",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "L/G / Espresso",
+          "sku": "w5766r-11",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "L/G / Gravel",
+          "sku": "w5766r-12",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "M / Black",
+          "sku": "w5766r-7",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "M / Espresso",
+          "sku": "w5766r-8",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "M / Gravel",
+          "sku": "w5766r-9",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "S/P / Espresso",
+          "sku": "w5766r-5",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "S/P / Gravel",
+          "sku": "w5766r-6",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52224",
+      "product_title": "Calça Lululemon Daydrift Regular",
+      "vendor": "Lululemon",
+      "handle": "calca-lululemon-daydrift-regular",
+      "variants": [
+        {
+          "variant_title": "L/G / Black",
+          "sku": "11860288-28",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "L/G / Lava Cake",
+          "sku": "11860288-23",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "L/G / Light Ivory",
+          "sku": "11860288-26",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "L/G / Nomad",
+          "sku": "11860288-27",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "L/G / Sheer Oak",
+          "sku": "11860288-24",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "L/G / Solar Grey",
+          "sku": "11860288-25",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "L/G / True Navy",
+          "sku": "11860288-22",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "M / Black",
+          "sku": "11860288-21",
+          "qty": 1,
+          "price": 1599.99,
+          "compare_at": 1599.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    },
+    {
+      "product_id": "52226",
+      "product_title": "Calça Lululemon Scuba Mid-Rise Wide-Leg Regular",
+      "vendor": "Lululemon",
+      "handle": "calca-lululemon-scuba-mid-rise-wide-leg-regular",
+      "variants": [
+        {
+          "variant_title": "Black / L/G",
+          "sku": "11750327-5",
+          "qty": 2,
+          "price": 1399.99,
+          "compare_at": 1399.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Black / M",
+          "sku": "11750327-4",
+          "qty": 2,
+          "price": 1399.99,
+          "compare_at": 1399.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        },
+        {
+          "variant_title": "Black / XL/GG",
+          "sku": "11750327-6",
+          "qty": 2,
+          "price": 1399.99,
+          "compare_at": 1399.99,
+          "discount_pct": 0,
+          "confidence": "medium_local_shopify_stock_only"
+        }
+      ]
+    }
+  ],
+  "gift_card_values": [
+    500,
+    1000,
+    1500,
+    2000,
+    2500
+  ]
+}

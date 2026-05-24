@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hermes v0.13 runtime + cron watchdog (read-only, no_agent-ready).
+Hermes runtime + cron watchdog (read-only, no_agent-ready).
 
 Default contract for Hermes cron no_agent:
 - exit 0 + empty stdout: OK/silent
@@ -23,7 +23,7 @@ import subprocess
 import sys
 from typing import Any
 
-EXPECTED_VERSION_FRAGMENT = "v0.13.0"
+EXPECTED_VERSION_FRAGMENT = "v0.14.0"
 EXPECTED_CONFIG_CWD = "/opt/data"
 EXPECTED_JOB_ID = "f5a23dd6a1bd"
 MAX_NEXT_RUN_DELAY_HOURS = 30

@@ -37,6 +37,21 @@ Pode fazer sem aprovação:
 - preço, estoque, desconto ou checkout.
 - produção, deploy ou theme publish.
 
+## Handoff obrigatório ao Hermes Central
+
+LK Growth executa no profile/canal próprio, mas não é uma mente separada. Trabalho relevante deve ser registrado no Brain e/ou reportado ao Hermes Central.
+
+Aplicar o protocolo `areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md` quando houver:
+
+- newsletter/conteúdo/Klaviyo criado, aprovado, enviado ou agendado;
+- decisão de Renan ou Lucas;
+- approval packet, receipt, evidência, rollback ou impacto esperado;
+- write externo;
+- bloqueio/risco;
+- aprendizado de campanha, SEO, CRO, GEO ou CRM.
+
+O registro pode ser ao final do dia quando não for urgente, mas não pode ficar apenas no chat local do especialista.
+
 ## Regra de impacto
 
 Toda mudança aprovada deve gerar:

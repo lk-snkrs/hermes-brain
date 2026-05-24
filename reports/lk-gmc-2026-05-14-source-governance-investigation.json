@@ -1,0 +1,1465 @@
+{
+  "generated_at": "2026-05-14T21:52:54.913308+00:00",
+  "mode": "approved_read_only_source_governance_investigation",
+  "authorization": "Lucas chose option 1: governance investigation without writes/settings changes.",
+  "merchant_sources": {
+    "dataSources_list_status_code": 200,
+    "dataSources_list_count": 4,
+    "dataSources_list_resources": [
+      {
+        "name": "accounts/5297679409/dataSources/10525577766",
+        "dataSourceId": "10525577766",
+        "displayName": "lksneakers.com.br",
+        "primaryProductDataSource": {
+          "defaultRule": {
+            "takeFromDataSources": [
+              {
+                "self": true
+              }
+            ]
+          },
+          "destinations": [
+            {
+              "destination": "LOCAL_INVENTORY_ADS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "FREE_LOCAL_LISTINGS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "DISPLAY_ADS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "FREE_LISTINGS",
+              "state": "ENABLED"
+            },
+            {
+              "destination": "SHOPPING_ADS",
+              "state": "DISABLED"
+            }
+          ]
+        },
+        "input": "AUTOFEED"
+      },
+      {
+        "name": "accounts/5297679409/dataSources/10636384718",
+        "dataSourceId": "10636384718",
+        "displayName": "Content API",
+        "primaryProductDataSource": {
+          "feedLabel": "BR",
+          "contentLanguage": "pt",
+          "countries": [
+            "BR"
+          ],
+          "defaultRule": {
+            "takeFromDataSources": [
+              {
+                "self": true
+              }
+            ]
+          },
+          "destinations": [
+            {
+              "destination": "LOCAL_INVENTORY_ADS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "FREE_LOCAL_LISTINGS",
+              "state": "ENABLED"
+            }
+          ],
+          "legacyLocal": true
+        },
+        "input": "API"
+      },
+      {
+        "name": "accounts/5297679409/dataSources/10636492695",
+        "dataSourceId": "10636492695",
+        "displayName": "Content API",
+        "primaryProductDataSource": {
+          "feedLabel": "BR",
+          "contentLanguage": "pt",
+          "countries": [
+            "BR"
+          ],
+          "defaultRule": {
+            "takeFromDataSources": [
+              {
+                "self": true
+              }
+            ]
+          },
+          "destinations": [
+            {
+              "destination": "LOCAL_INVENTORY_ADS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "FREE_LOCAL_LISTINGS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "DISPLAY_ADS",
+              "state": "ENABLED"
+            },
+            {
+              "destination": "FREE_LISTINGS",
+              "state": "ENABLED"
+            },
+            {
+              "destination": "SHOPPING_ADS",
+              "state": "ENABLED"
+            }
+          ]
+        },
+        "input": "API"
+      },
+      {
+        "name": "accounts/5297679409/dataSources/10646853947",
+        "dataSourceId": "10646853947",
+        "displayName": "LK Sneakers - Color Supplemental Feed",
+        "primaryProductDataSource": {
+          "feedLabel": "BR",
+          "contentLanguage": "pt",
+          "countries": [
+            "BR"
+          ],
+          "defaultRule": {
+            "takeFromDataSources": [
+              {
+                "self": true
+              }
+            ]
+          },
+          "destinations": [
+            {
+              "destination": "LOCAL_INVENTORY_ADS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "FREE_LOCAL_LISTINGS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "DISPLAY_ADS",
+              "state": "ENABLED"
+            },
+            {
+              "destination": "FREE_LISTINGS",
+              "state": "ENABLED"
+            },
+            {
+              "destination": "SHOPPING_ADS",
+              "state": "ENABLED"
+            }
+          ]
+        },
+        "input": "FILE",
+        "fileInput": {
+          "fetchSettings": {
+            "enabled": true,
+            "timeOfDay": {
+              "hours": 3
+            },
+            "dayOfWeek": "MONDAY",
+            "timeZone": "America/Sao_Paulo",
+            "frequency": "FREQUENCY_WEEKLY",
+            "fetchUri": "https://gist.githubusercontent.com/lk-snkrs/8eb7f7fb61a46fa8d5a4d64fa7f21b2f/raw/eca0386a985ab6267ab582f7825247c15349d150/lk_sneakers_gmc_color_feed.csv"
+          },
+          "fileInputType": "FETCH"
+        }
+      }
+    ],
+    "known_dataSources_get": {
+      "10525577766": {
+        "status_code": 200,
+        "resource": {
+          "name": "accounts/5297679409/dataSources/10525577766",
+          "dataSourceId": "10525577766",
+          "displayName": "lksneakers.com.br",
+          "primaryProductDataSource": {
+            "defaultRule": {
+              "takeFromDataSources": [
+                {
+                  "self": true
+                }
+              ]
+            },
+            "destinations": [
+              {
+                "destination": "LOCAL_INVENTORY_ADS",
+                "state": "DISABLED"
+              },
+              {
+                "destination": "FREE_LOCAL_LISTINGS",
+                "state": "DISABLED"
+              },
+              {
+                "destination": "DISPLAY_ADS",
+                "state": "DISABLED"
+              },
+              {
+                "destination": "FREE_LISTINGS",
+                "state": "ENABLED"
+              },
+              {
+                "destination": "SHOPPING_ADS",
+                "state": "DISABLED"
+              }
+            ]
+          },
+          "input": "AUTOFEED"
+        }
+      },
+      "10636492695": {
+        "status_code": 200,
+        "resource": {
+          "name": "accounts/5297679409/dataSources/10636492695",
+          "dataSourceId": "10636492695",
+          "displayName": "Content API",
+          "primaryProductDataSource": {
+            "feedLabel": "BR",
+            "contentLanguage": "pt",
+            "countries": [
+              "BR"
+            ],
+            "defaultRule": {
+              "takeFromDataSources": [
+                {
+                  "self": true
+                }
+              ]
+            },
+            "destinations": [
+              {
+                "destination": "LOCAL_INVENTORY_ADS",
+                "state": "DISABLED"
+              },
+              {
+                "destination": "FREE_LOCAL_LISTINGS",
+                "state": "DISABLED"
+              },
+              {
+                "destination": "DISPLAY_ADS",
+                "state": "ENABLED"
+              },
+              {
+                "destination": "FREE_LISTINGS",
+                "state": "ENABLED"
+              },
+              {
+                "destination": "SHOPPING_ADS",
+                "state": "ENABLED"
+              }
+            ]
+          },
+          "input": "API"
+        }
+      },
+      "10636384718": {
+        "status_code": 200,
+        "resource": {
+          "name": "accounts/5297679409/dataSources/10636384718",
+          "dataSourceId": "10636384718",
+          "displayName": "Content API",
+          "primaryProductDataSource": {
+            "feedLabel": "BR",
+            "contentLanguage": "pt",
+            "countries": [
+              "BR"
+            ],
+            "defaultRule": {
+              "takeFromDataSources": [
+                {
+                  "self": true
+                }
+              ]
+            },
+            "destinations": [
+              {
+                "destination": "LOCAL_INVENTORY_ADS",
+                "state": "DISABLED"
+              },
+              {
+                "destination": "FREE_LOCAL_LISTINGS",
+                "state": "ENABLED"
+              }
+            ],
+            "legacyLocal": true
+          },
+          "input": "API"
+        }
+      },
+      "10646853947": {
+        "status_code": 200,
+        "resource": {
+          "name": "accounts/5297679409/dataSources/10646853947",
+          "dataSourceId": "10646853947",
+          "displayName": "LK Sneakers - Color Supplemental Feed",
+          "primaryProductDataSource": {
+            "feedLabel": "BR",
+            "contentLanguage": "pt",
+            "countries": [
+              "BR"
+            ],
+            "defaultRule": {
+              "takeFromDataSources": [
+                {
+                  "self": true
+                }
+              ]
+            },
+            "destinations": [
+              {
+                "destination": "LOCAL_INVENTORY_ADS",
+                "state": "DISABLED"
+              },
+              {
+                "destination": "FREE_LOCAL_LISTINGS",
+                "state": "DISABLED"
+              },
+              {
+                "destination": "DISPLAY_ADS",
+                "state": "ENABLED"
+              },
+              {
+                "destination": "FREE_LISTINGS",
+                "state": "ENABLED"
+              },
+              {
+                "destination": "SHOPPING_ADS",
+                "state": "ENABLED"
+              }
+            ]
+          },
+          "input": "FILE",
+          "fileInput": {
+            "fetchSettings": {
+              "enabled": true,
+              "timeOfDay": {
+                "hours": 3
+              },
+              "dayOfWeek": "MONDAY",
+              "timeZone": "America/Sao_Paulo",
+              "frequency": "FREQUENCY_WEEKLY",
+              "fetchUri": "https://gist.githubusercontent.com/lk-snkrs/8eb7f7fb61a46fa8d5a4d64fa7f21b2f/raw/eca0386a985ab6267ab582f7825247c15349d150/lk_sneakers_gmc_color_feed.csv"
+            },
+            "fileInputType": "FETCH"
+          }
+        }
+      }
+    },
+    "content_datafeeds_list_status_code": 200,
+    "content_datafeeds": {
+      "kind": "content#datafeedsListResponse",
+      "resources": [
+        {
+          "kind": "content#datafeed",
+          "id": "407508563",
+          "name": "LK Sneakers - Color Supplemental Feed",
+          "contentType": "products",
+          "targets": [
+            {
+              "country": "BR",
+              "feedLabel": "BR",
+              "targetCountries": [
+                "BR"
+              ],
+              "language": "pt",
+              "includedDestinations": [
+                "DisplayAds",
+                "SurfacesAcrossGoogle",
+                "Shopping"
+              ],
+              "excludedDestinations": [
+                "Shopping",
+                "LocalSurfacesAcrossGoogle"
+              ]
+            }
+          ],
+          "fileName": "lk_sneakers_gmc_color_feed.csv",
+          "fetchSchedule": {
+            "paused": false,
+            "weekday": "monday",
+            "hour": 3,
+            "timeZone": "America/Sao_Paulo",
+            "fetchUrl": "https://gist.githubusercontent.com/lk-snkrs/8eb7f7fb61a46fa8d5a4d64fa7f21b2f/raw/eca0386a985ab6267ab582f7825247c15349d150/lk_sneakers_gmc_color_feed.csv"
+          },
+          "format": {
+            "quotingMode": "value quoting"
+          }
+        }
+      ]
+    },
+    "account_settings_status_code": 200,
+    "account_settings_non_sensitive_keys": [
+      "accountManagement",
+      "adsLinks",
+      "adultContent",
+      "automaticImprovements",
+      "businessIdentity",
+      "businessInformation",
+      "conversionSettings",
+      "googleMyBusinessLink",
+      "id",
+      "kind",
+      "name",
+      "users",
+      "websiteUrl"
+    ],
+    "automaticImprovements": {
+      "itemUpdates": {
+        "accountItemUpdatesSettings": {
+          "allowPriceUpdates": true,
+          "allowAvailabilityUpdates": true,
+          "allowStrictAvailabilityUpdates": true,
+          "allowConditionUpdates": true
+        },
+        "effectiveAllowPriceUpdates": true,
+        "effectiveAllowAvailabilityUpdates": true,
+        "effectiveAllowStrictAvailabilityUpdates": true,
+        "effectiveAllowConditionUpdates": true
+      },
+      "imageImprovements": {
+        "accountImageImprovementsSettings": {
+          "allowAutomaticImageImprovements": true
+        },
+        "effectiveAllowAutomaticImageImprovements": true
+      },
+      "shippingImprovements": {
+        "allowShippingImprovements": true
+      }
+    }
+  },
+  "sample_readback": {
+    "content_api_products": [
+      {
+        "product_id": "online:pt:BR:01424-002-2",
+        "status_code": 200,
+        "source": "api",
+        "channel": "online",
+        "offerId": "01424-002-2",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "feedLabel": "BR",
+        "price": {
+          "value": "5999.90",
+          "currency": "BRL"
+        },
+        "salePrice": null,
+        "customAttributeNames": [
+          "update type"
+        ],
+        "top_level_keys": [
+          "ageGroup",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "channel",
+          "color",
+          "condition",
+          "contentLanguage",
+          "customAttributes",
+          "description",
+          "feedLabel",
+          "gender",
+          "googleProductCategory",
+          "gtin",
+          "id",
+          "imageLink",
+          "itemGroupId",
+          "kind",
+          "link",
+          "mpn",
+          "offerId",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "sizeSystem",
+          "sizeType",
+          "sizes",
+          "source",
+          "targetCountry",
+          "title"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:553558140-7",
+        "status_code": 200,
+        "source": "api",
+        "channel": "online",
+        "offerId": "553558140-7",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "feedLabel": "BR",
+        "price": {
+          "value": "1499.99",
+          "currency": "BRL"
+        },
+        "salePrice": null,
+        "customAttributeNames": [
+          "update type"
+        ],
+        "top_level_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "channel",
+          "color",
+          "condition",
+          "contentLanguage",
+          "costOfGoodsSold",
+          "customAttributes",
+          "description",
+          "feedLabel",
+          "gender",
+          "googleProductCategory",
+          "gtin",
+          "id",
+          "imageLink",
+          "itemGroupId",
+          "kind",
+          "link",
+          "mpn",
+          "offerId",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "sizeSystem",
+          "sizeType",
+          "sizes",
+          "source",
+          "targetCountry",
+          "title"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:AQ9129-170-5",
+        "status_code": 200,
+        "source": "api",
+        "channel": "online",
+        "offerId": "AQ9129-170-5",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "feedLabel": "BR",
+        "price": {
+          "value": "2599.99",
+          "currency": "BRL"
+        },
+        "salePrice": null,
+        "customAttributeNames": [
+          "update type"
+        ],
+        "top_level_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "channel",
+          "color",
+          "condition",
+          "contentLanguage",
+          "costOfGoodsSold",
+          "customAttributes",
+          "description",
+          "feedLabel",
+          "gender",
+          "googleProductCategory",
+          "gtin",
+          "id",
+          "imageLink",
+          "itemGroupId",
+          "kind",
+          "link",
+          "mpn",
+          "offerId",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "sizeSystem",
+          "sizeType",
+          "sizes",
+          "source",
+          "targetCountry",
+          "title"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:GW3773-39",
+        "status_code": 200,
+        "source": "api",
+        "channel": "online",
+        "offerId": "GW3773-39",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "feedLabel": "BR",
+        "price": {
+          "value": "3799.99",
+          "currency": "BRL"
+        },
+        "salePrice": null,
+        "customAttributeNames": [
+          "update type"
+        ],
+        "top_level_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "channel",
+          "color",
+          "condition",
+          "contentLanguage",
+          "costOfGoodsSold",
+          "customAttributes",
+          "description",
+          "feedLabel",
+          "gender",
+          "googleProductCategory",
+          "gtin",
+          "id",
+          "imageLink",
+          "itemGroupId",
+          "kind",
+          "link",
+          "mpn",
+          "offerId",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "sizeSystem",
+          "sizeType",
+          "sizes",
+          "source",
+          "targetCountry",
+          "title"
+        ]
+      }
+    ],
+    "merchant_products_v1": [
+      {
+        "product_id": "online:pt:BR:01424-002-2",
+        "status_code": 200,
+        "name": "accounts/5297679409/products/pt~BR~01424-002-2",
+        "offerId": "01424-002-2",
+        "productAttributes_keys": [
+          "ageGroup",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ],
+        "price": {
+          "amountMicros": "5999900000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": null,
+        "top_level_keys": [
+          "base64EncodedName",
+          "contentLanguage",
+          "dataSource",
+          "feedLabel",
+          "name",
+          "offerId",
+          "productAttributes",
+          "productStatus"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:553558140-7",
+        "status_code": 200,
+        "name": "accounts/5297679409/products/pt~BR~553558140-7",
+        "offerId": "553558140-7",
+        "productAttributes_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "costOfGoodsSold",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ],
+        "price": {
+          "amountMicros": "1499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": null,
+        "top_level_keys": [
+          "automatedDiscounts",
+          "base64EncodedName",
+          "contentLanguage",
+          "dataSource",
+          "feedLabel",
+          "name",
+          "offerId",
+          "productAttributes",
+          "productStatus"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:AQ9129-170-5",
+        "status_code": 200,
+        "name": "accounts/5297679409/products/pt~BR~AQ9129-170-5",
+        "offerId": "AQ9129-170-5",
+        "productAttributes_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "costOfGoodsSold",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ],
+        "price": {
+          "amountMicros": "2599990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": null,
+        "top_level_keys": [
+          "automatedDiscounts",
+          "base64EncodedName",
+          "contentLanguage",
+          "dataSource",
+          "feedLabel",
+          "name",
+          "offerId",
+          "productAttributes",
+          "productStatus"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:GW3773-39",
+        "status_code": 200,
+        "name": "accounts/5297679409/products/pt~BR~GW3773-39",
+        "offerId": "GW3773-39",
+        "productAttributes_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "costOfGoodsSold",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ],
+        "price": {
+          "amountMicros": "3799990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": null,
+        "top_level_keys": [
+          "automatedDiscounts",
+          "base64EncodedName",
+          "contentLanguage",
+          "dataSource",
+          "feedLabel",
+          "name",
+          "offerId",
+          "productAttributes",
+          "productStatus"
+        ]
+      }
+    ]
+  },
+  "shopify_channel_evidence": {
+    "shop_info": {
+      "available": true,
+      "body": {
+        "data": {
+          "shop": {
+            "name": "LK",
+            "myshopifyDomain": "lk-sneakerss.myshopify.com",
+            "primaryDomain": {
+              "url": "https://lksneakers.com.br",
+              "host": "lksneakers.com.br"
+            },
+            "plan": {
+              "displayName": "Shopify Plus"
+            }
+          }
+        },
+        "extensions": {
+          "cost": {
+            "requestedQueryCost": 3,
+            "actualQueryCost": 3,
+            "throttleStatus": {
+              "maximumAvailable": 20000.0,
+              "currentlyAvailable": 19997,
+              "restoreRate": 1000.0
+            }
+          }
+        }
+      }
+    },
+    "app_installations_summary": {
+      "available": true,
+      "count": 0,
+      "apps": [],
+      "google_like_apps": []
+    },
+    "publications_summary": {
+      "available": true,
+      "count": 8,
+      "publications": [
+        {
+          "name": "Online Store",
+          "id_suffix": "/79413379294"
+        },
+        {
+          "name": "Facebook & Instagram",
+          "id_suffix": "/79413412062"
+        },
+        {
+          "name": "Google & YouTube",
+          "id_suffix": "/79416787166"
+        },
+        {
+          "name": "Point of Sale",
+          "id_suffix": "109845151966"
+        },
+        {
+          "name": "Linktree",
+          "id_suffix": "117740699870"
+        },
+        {
+          "name": "Pinterest",
+          "id_suffix": "122642792670"
+        },
+        {
+          "name": "TikTok",
+          "id_suffix": "155884159198"
+        },
+        {
+          "name": "Attentive",
+          "id_suffix": "165435605214"
+        }
+      ]
+    },
+    "webhooks_probe": {
+      "available": true,
+      "status_code": 200,
+      "count": 9,
+      "topics_sample": [
+        "checkouts/create",
+        "orders/create",
+        "products/create",
+        "products/update",
+        "refunds/create"
+      ]
+    }
+  },
+  "local_codebase_evidence": {
+    "pattern_counts": {
+      "10636492695": 42,
+      "merchantapi.googleapis.com": 13,
+      "shoppingcontent.googleapis.com": 37,
+      "Google & YouTube": 1,
+      "google channel": 1,
+      "Content API": 71
+    },
+    "sample_hits": [
+      {
+        "path": "scripts/lk_execute_approved_abc_20260514.py",
+        "patterns": [
+          "10636492695",
+          "merchantapi.googleapis.com",
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p1_attribute_completion_onda1_executor_20260513.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_price_regular_micro_pilot_20260514.py",
+        "patterns": [
+          "10636492695",
+          "merchantapi.googleapis.com",
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_source_governance_investigation_20260514.py",
+        "patterns": [
+          "10636492695",
+          "merchantapi.googleapis.com",
+          "shoppingcontent.googleapis.com",
+          "Google & YouTube",
+          "google channel"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_resume_package_a_parallel_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_required_attrs_refresh_datafeed_url_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_required_attrs_apply_second_batch_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p2_category_product_type_executor_20260513.py",
+        "patterns": [
+          "10636492695",
+          "merchantapi.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p1_attribute_wave4_aggressive_nonprice_executor_20260513.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p1_execute_core_attrs_4field_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_price_source_diagnostic_20260514.py",
+        "patterns": [
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_package_b3_delete_old_duplicates_preview_20260512.py",
+        "patterns": [
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_residual_approved_resume_verify_20260514.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_api_overlay_delete_repair_20260514.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p1_attribute_wave6_price_merchant_api_v1_executor_20260513.py",
+        "patterns": [
+          "10636492695",
+          "merchantapi.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_nonprice_point_repair_20260514.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_price_source_api_content_repair_20260514.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_catalog_duplication_audit_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_required_attrs_apply_supplemental_feed_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p1_execute_availability_in_stock_policy_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_residual_approved_executor_20260514.py",
+        "patterns": [
+          "10636492695",
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p2a_residual_jh5439_color_executor_20260513.py",
+        "patterns": [
+          "10636492695",
+          "merchantapi.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p1_attribute_completion_post_apply_and_wave2_review_20260513.py",
+        "patterns": [
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_delete_12_draft_404_20260514.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p2b_title_critical_executor_20260513.py",
+        "patterns": [
+          "10636492695",
+          "merchantapi.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_execute_package_a_stale_triage_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_post_gtin_price_updated_preview_20260514.py",
+        "patterns": [
+          "10636492695",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_residual_missing_attr_repair_20260514.py",
+        "patterns": [
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_datafeed_source_inventory_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p1_attribute_wave3_color_tag_executor_20260513.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_lia_gtin_point_repair_20260514.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p2a_finalize_remaining_online_20260513.py",
+        "patterns": [
+          "10636492695"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p1_attribute_wave3_flexible_executor_20260513.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_mission_control_snapshot_20260512.py",
+        "patterns": [
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p1_core_attributes_approval_packet_preview_20260512.py",
+        "patterns": [
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_post_abc_monitor_20260514.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p1_resumable_scale_availability_in_stock_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p1_core_attributes_root_cause_probe_20260512.py",
+        "patterns": [
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_execute_local_cd_63_old_lia_cleanup_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_local_inventory_source_probe_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_execute_package_b3_delete_old_duplicates_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_orphan_ranking_20260512.py",
+        "patterns": [
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_required_attrs_verify_second_batch_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p2a_color_and_shoes_scale_20260513.py",
+        "patterns": [
+          "10636492695",
+          "merchantapi.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_lia_gtin_preview_20260514.py",
+        "patterns": [
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_lia_gtin_apply_20260514.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_execute_package_b_identifier_fix_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_required_attrs_verify_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_gtin_relaxed_same_product_repair_20260514.py",
+        "patterns": [
+          "10636492695",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_b3_emergency_rollback_restore_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p2b_size_title_pilot_b_executor_20260513.py",
+        "patterns": [
+          "10636492695",
+          "merchantapi.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_merchant_center_feed_readonly_router_20260511.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_catalog_cleanup_preview_20260512.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p1_attribute_completion_wave2_pilot_executor_20260513.py",
+        "patterns": [
+          "shoppingcontent.googleapis.com"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_local_cd_final_approval_packet_20260512.py",
+        "patterns": [
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_price_source_ownership_drilldown_20260514.py",
+        "patterns": [
+          "10636492695",
+          "merchantapi.googleapis.com",
+          "shoppingcontent.googleapis.com",
+          "Content API"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p2a_next_online_executor_20260513.py",
+        "patterns": [
+          "10636492695"
+        ]
+      },
+      {
+        "path": "scripts/lk_gmc_p1_attribute_completion_preview_20260512.py",
+        "patterns": [
+          "Content API"
+        ]
+      },
+      {
+        "path": "areas/lk/MAPA.md",
+        "patterns": [
+          "Content API"
+        ]
+      },
+      {
+        "path": "areas/lk/rotinas/mission-control-snapshot-2026-05-12.md",
+        "patterns": [
+          "Content API"
+        ]
+      }
+    ],
+    "total_hit_files_capped": 120
+  },
+  "interpretation": [
+    "Primary online DS 10636492695 is the intended API ProductInputs owner, but final product readbacks remain stale after price PATCH; investigate the upstream app/job/channel that writes this data source, not the PATCH endpoint alone.",
+    "Automatic price updates are effective and should remain enabled until upstream ownership is fixed; they are a safety net, not the primary source of truth.",
+    "Shopify app installation query did not expose a confirmed Google/feed app with the current token/scope; Merchant UI / Shopify apps UI remains needed for final ownership confirmation.",
+    "Sampled SKUs are ACTIVE and published to Shopify Google & YouTube with current Shopify prices; next ownership check should be Google & YouTube channel configuration/feed sync status, not another Merchant price patch."
+  ],
+  "not_performed": [
+    "Merchant/ProductInputs/Content API write",
+    "data source update/delete",
+    "automatic item update setting change",
+    "feed upload/fetchNow",
+    "Shopify write/app config change",
+    "Tiny write",
+    "campaign/send/contact"
+  ],
+  "shopify_google_youtube_sample_evidence": {
+    "publication_id_suffix": "79416787166",
+    "sample_count": 6,
+    "rows": [
+      {
+        "sku": "01424-002-2",
+        "shopify_price": "8999.99",
+        "shopify_compareAtPrice": null,
+        "product_status": "ACTIVE",
+        "title": "Tênis Born Raised x Nike SB Dunk Low One Block At A Time Azul",
+        "handle": "born-x-raised-x-nike-sb-dunk-low-one-block-at-a-time",
+        "published_on_google_youtube": true,
+        "published_channels": [
+          "Online Store",
+          "Facebook & Instagram",
+          "Linktree",
+          "Pinterest",
+          "TikTok",
+          "Point of Sale",
+          "Google & YouTube"
+        ]
+      },
+      {
+        "sku": "553558140-7",
+        "shopify_price": "1799.99",
+        "shopify_compareAtPrice": "1599.99",
+        "product_status": "ACTIVE",
+        "title": "Tênis Nike Air Jordan 1 Low Alternate Royal Toe Azul",
+        "handle": "air-jordan-1-low-royal-toe",
+        "published_on_google_youtube": true,
+        "published_channels": [
+          "Online Store",
+          "Facebook & Instagram",
+          "Linktree",
+          "Pinterest",
+          "TikTok",
+          "Point of Sale",
+          "Google & YouTube"
+        ]
+      },
+      {
+        "sku": "AQ9129-170-5",
+        "shopify_price": "2749.99",
+        "shopify_compareAtPrice": "2449.90",
+        "product_status": "ACTIVE",
+        "title": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+        "handle": "tenis-air-jordan-4-retro-metallic-gold-branco",
+        "published_on_google_youtube": true,
+        "published_channels": [
+          "Online Store",
+          "Facebook & Instagram",
+          "Pinterest",
+          "Linktree",
+          "TikTok",
+          "Point of Sale",
+          "Google & YouTube"
+        ]
+      },
+      {
+        "sku": "AQ9129-170-7",
+        "shopify_price": "3349.99",
+        "shopify_compareAtPrice": "2449.90",
+        "product_status": "ACTIVE",
+        "title": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+        "handle": "tenis-air-jordan-4-retro-metallic-gold-branco",
+        "published_on_google_youtube": true,
+        "published_channels": [
+          "Online Store",
+          "Facebook & Instagram",
+          "Pinterest",
+          "Linktree",
+          "TikTok",
+          "Point of Sale",
+          "Google & YouTube"
+        ]
+      },
+      {
+        "sku": "AQ9129-170-9",
+        "shopify_price": "3349.99",
+        "shopify_compareAtPrice": "2449.90",
+        "product_status": "ACTIVE",
+        "title": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+        "handle": "tenis-air-jordan-4-retro-metallic-gold-branco",
+        "published_on_google_youtube": true,
+        "published_channels": [
+          "Online Store",
+          "Facebook & Instagram",
+          "Pinterest",
+          "Linktree",
+          "TikTok",
+          "Point of Sale",
+          "Google & YouTube"
+        ]
+      },
+      {
+        "sku": "GW3773-39",
+        "shopify_price": "3799.99",
+        "shopify_compareAtPrice": "1699.99",
+        "product_status": "ACTIVE",
+        "title": "Tênis Yeezy Boost 350 V2 MX Oat Multicolor",
+        "handle": "yeezy-boost-350-v2-mx-oat",
+        "published_on_google_youtube": true,
+        "published_channels": [
+          "Online Store",
+          "Facebook & Instagram",
+          "Linktree",
+          "Pinterest",
+          "TikTok",
+          "Point of Sale",
+          "Google & YouTube"
+        ]
+      }
+    ],
+    "interpretation": "All sampled stale-price/landing SKUs found in Shopify are ACTIVE and published to Google & YouTube; Shopify has the target current prices/compare-at values. This supports Google & YouTube/Shopify channel as the upstream commerce channel to inspect for DS 10636492695 generation, while final Merchant API output remains stale for price."
+  }
+}

@@ -1,0 +1,657 @@
+{
+  "generated_at_utc": "2026-05-16T21:23:22.949966+00:00",
+  "generated_at_brt": "16/05/2026 18:23 BRT",
+  "scope": "LK OS sales reports: morning_yesterday, pulse_16h/current, store_1930/current_or_partial",
+  "reports": {
+    "morning_yesterday": {
+      "kind": "morning",
+      "label": "Vendas de ontem — 15/05",
+      "window": {
+        "start": "2026-05-15T00:00:00-03:00",
+        "end": "2026-05-15T23:59:59-03:00"
+      },
+      "shopify_ok": true,
+      "shopify_status": 200,
+      "summary": {
+        "orders_count": 14,
+        "revenue_total": 44564.85,
+        "average_order_value": 3183.2,
+        "channels": {
+          "online": {
+            "orders": 5,
+            "revenue": 22334.94
+          },
+          "loja": {
+            "orders": 9,
+            "revenue": 22229.91
+          }
+        },
+        "top_products": [
+          {
+            "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+            "sku": "1183C102 751-3",
+            "size_or_variant": "36",
+            "quantity": 2,
+            "line_revenue_estimate": 4799.98,
+            "channels": {
+              "loja": 2
+            }
+          },
+          {
+            "product_title": "Tênis Nike Vomero Premium Black Volt Preto",
+            "sku": "HQ2050-001-5",
+            "size_or_variant": "38",
+            "quantity": 1,
+            "line_revenue_estimate": 4499.99,
+            "channels": {
+              "online": 1
+            }
+          },
+          {
+            "product_title": "Chinelo Slide Nike Mind 001 Black Chrome Preto",
+            "sku": "HQ4307-001-5",
+            "size_or_variant": "38",
+            "quantity": 1,
+            "line_revenue_estimate": 3999.99,
+            "channels": {
+              "online": 1
+            }
+          },
+          {
+            "product_title": "Chinelo Slide Nike Mind 001 Black Chrome Preto",
+            "sku": "HQ4307-001-6",
+            "size_or_variant": "39",
+            "quantity": 1,
+            "line_revenue_estimate": 3999.99,
+            "channels": {
+              "online": 1
+            }
+          },
+          {
+            "product_title": "Tênis New Balance 204L Arid Timberwolf Bege",
+            "sku": "U204LMMC-6",
+            "size_or_variant": "39",
+            "quantity": 1,
+            "line_revenue_estimate": 2799.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis New Balance 9060 Bisque Frosted Glass Bege",
+            "sku": "43774078387850",
+            "size_or_variant": "35",
+            "quantity": 1,
+            "line_revenue_estimate": 2699.99,
+            "channels": {
+              "online": 1
+            }
+          },
+          {
+            "product_title": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+            "sku": "U9060WHT-3",
+            "size_or_variant": "36",
+            "quantity": 1,
+            "line_revenue_estimate": 2599.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis Nike Air Jordan 1 Low OG Olive Verde",
+            "sku": "HQ6998-208",
+            "size_or_variant": "42",
+            "quantity": 1,
+            "line_revenue_estimate": 2499.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis New Balance 9060 Rose Sugar Angora Rosa",
+            "sku": "U9060LBC-2",
+            "size_or_variant": "34",
+            "quantity": 1,
+            "line_revenue_estimate": 2399.99,
+            "channels": {
+              "online": 1
+            }
+          },
+          {
+            "product_title": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+            "sku": "1183C102250-5",
+            "size_or_variant": "38",
+            "quantity": 1,
+            "line_revenue_estimate": 2399.99,
+            "channels": {
+              "loja": 1
+            }
+          }
+        ],
+        "top_brands_by_qty": [
+          [
+            "Onitsuka Tiger",
+            4
+          ],
+          [
+            "New Balance",
+            4
+          ],
+          [
+            "Nike",
+            4
+          ],
+          [
+            "Represent",
+            2
+          ],
+          [
+            "Air Jordan",
+            2
+          ],
+          [
+            "Herit",
+            1
+          ],
+          [
+            "Saint",
+            1
+          ],
+          [
+            "Adidas",
+            1
+          ]
+        ],
+        "top_brands_by_revenue": [
+          [
+            "Nike",
+            13949.96
+          ],
+          [
+            "New Balance",
+            10499.96
+          ],
+          [
+            "Onitsuka Tiger",
+            9499.96
+          ],
+          [
+            "Air Jordan",
+            4289.89
+          ],
+          [
+            "Represent",
+            3249.98
+          ],
+          [
+            "Adidas",
+            1499.99
+          ],
+          [
+            "Saint",
+            1300.0
+          ],
+          [
+            "Herit",
+            1079.99
+          ]
+        ],
+        "seller_orders": [
+          [
+            "Danilo Muniz",
+            6
+          ],
+          [
+            "Wesley Matias",
+            2
+          ],
+          [
+            "LK Sneakers",
+            1
+          ]
+        ],
+        "seller_revenue": [
+          [
+            "Danilo Muniz",
+            13549.95
+          ],
+          [
+            "Wesley Matias",
+            7599.97
+          ],
+          [
+            "LK Sneakers",
+            1079.99
+          ]
+        ],
+        "source_names": [
+          [
+            "pos",
+            9
+          ],
+          [
+            "web",
+            5
+          ]
+        ],
+        "no_sku_line_items": 2
+      }
+    },
+    "pulse_16h": {
+      "kind": "pulse",
+      "label": "Pulso comercial — 16/05 até 18:23",
+      "window": {
+        "start": "2026-05-16T00:00:00-03:00",
+        "end": "2026-05-16T18:23:21.826257-03:00"
+      },
+      "shopify_ok": true,
+      "shopify_status": 200,
+      "summary": {
+        "orders_count": 14,
+        "revenue_total": 33698.98,
+        "average_order_value": 2407.07,
+        "channels": {
+          "loja": {
+            "orders": 8,
+            "revenue": 17369.92
+          },
+          "online": {
+            "orders": 6,
+            "revenue": 16329.06
+          }
+        },
+        "top_products": [
+          {
+            "product_title": "Tênis New Balance 204L Arid Timberwolf Bege",
+            "sku": "U204LMMC-2",
+            "size_or_variant": "35",
+            "quantity": 1,
+            "line_revenue_estimate": 2799.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis New Balance 9060 Triple White Branco",
+            "sku": "U9060NRJ-35",
+            "size_or_variant": "35",
+            "quantity": 1,
+            "line_revenue_estimate": 2799.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis Onitsuka Tiger California 78 EX White/Classic Red",
+            "sku": "1183C428.100-6",
+            "size_or_variant": "39",
+            "quantity": 1,
+            "line_revenue_estimate": 2799.99,
+            "channels": {
+              "online": 1
+            }
+          },
+          {
+            "product_title": "Tênis New Balance 9060 Triple White Branco",
+            "sku": "U9060NRJ-37",
+            "size_or_variant": "37",
+            "quantity": 1,
+            "line_revenue_estimate": 2799.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo",
+            "sku": "183A872-6",
+            "size_or_variant": "39",
+            "quantity": 1,
+            "line_revenue_estimate": 2499.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo",
+            "sku": "183A872-5",
+            "size_or_variant": "38",
+            "quantity": 1,
+            "line_revenue_estimate": 2499.99,
+            "channels": {
+              "online": 1
+            }
+          },
+          {
+            "product_title": "Tênis New Balance 9060 Sea Salt Raincloud Cinza",
+            "sku": "U9060ZGF-9",
+            "size_or_variant": "35",
+            "quantity": 1,
+            "line_revenue_estimate": 2499.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis Onitsuka Tiger Mexico 66 SD Beige Green Bege",
+            "sku": "1183A872254-11",
+            "size_or_variant": "35.5",
+            "quantity": 1,
+            "line_revenue_estimate": 2499.99,
+            "channels": {
+              "online": 1
+            }
+          },
+          {
+            "product_title": "Tênis New Balance 9060 Sea Salt Concrete Branco",
+            "sku": "U9060ECA-3",
+            "size_or_variant": "36",
+            "quantity": 1,
+            "line_revenue_estimate": 2499.99,
+            "channels": {
+              "online": 1
+            }
+          },
+          {
+            "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+            "sku": "1183C102 751-5",
+            "size_or_variant": "38",
+            "quantity": 1,
+            "line_revenue_estimate": 2399.99,
+            "channels": {
+              "loja": 1
+            }
+          }
+        ],
+        "top_brands_by_qty": [
+          [
+            "New Balance",
+            7
+          ],
+          [
+            "Onitsuka Tiger",
+            5
+          ],
+          [
+            "Polo",
+            1
+          ],
+          [
+            "Nike",
+            1
+          ],
+          [
+            "Jason",
+            1
+          ],
+          [
+            "Adidas",
+            1
+          ]
+        ],
+        "top_brands_by_revenue": [
+          [
+            "New Balance",
+            18198.94
+          ],
+          [
+            "Onitsuka Tiger",
+            12699.95
+          ],
+          [
+            "Nike",
+            1999.99
+          ],
+          [
+            "Adidas",
+            1499.99
+          ],
+          [
+            "Polo",
+            399.99
+          ],
+          [
+            "Jason",
+            199.99
+          ]
+        ],
+        "seller_orders": [
+          [
+            "Danilo Muniz",
+            4
+          ],
+          [
+            "Biel Matias",
+            3
+          ],
+          [
+            "Wesley Matias",
+            1
+          ]
+        ],
+        "seller_revenue": [
+          [
+            "Danilo Muniz",
+            8499.96
+          ],
+          [
+            "Biel Matias",
+            6469.97
+          ],
+          [
+            "Wesley Matias",
+            2399.99
+          ]
+        ],
+        "source_names": [
+          [
+            "pos",
+            8
+          ],
+          [
+            "web",
+            6
+          ]
+        ],
+        "no_sku_line_items": 0
+      }
+    },
+    "store_1930": {
+      "kind": "store",
+      "label": "Loja física — 16/05 até 18:23 (parcial antes de 19h30)",
+      "window": {
+        "start": "2026-05-16T00:00:00-03:00",
+        "end": "2026-05-16T18:23:21.826257-03:00"
+      },
+      "shopify_ok": true,
+      "shopify_status": 200,
+      "summary": {
+        "orders_count": 8,
+        "revenue_total": 17369.92,
+        "average_order_value": 2171.24,
+        "channels": {
+          "loja": {
+            "orders": 8,
+            "revenue": 17369.92
+          }
+        },
+        "top_products": [
+          {
+            "product_title": "Tênis New Balance 204L Arid Timberwolf Bege",
+            "sku": "U204LMMC-2",
+            "size_or_variant": "35",
+            "quantity": 1,
+            "line_revenue_estimate": 2799.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis New Balance 9060 Triple White Branco",
+            "sku": "U9060NRJ-35",
+            "size_or_variant": "35",
+            "quantity": 1,
+            "line_revenue_estimate": 2799.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis New Balance 9060 Triple White Branco",
+            "sku": "U9060NRJ-37",
+            "size_or_variant": "37",
+            "quantity": 1,
+            "line_revenue_estimate": 2799.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo",
+            "sku": "183A872-6",
+            "size_or_variant": "39",
+            "quantity": 1,
+            "line_revenue_estimate": 2499.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis New Balance 9060 Sea Salt Raincloud Cinza",
+            "sku": "U9060ZGF-9",
+            "size_or_variant": "35",
+            "quantity": 1,
+            "line_revenue_estimate": 2499.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+            "sku": "1183C102 751-5",
+            "size_or_variant": "38",
+            "quantity": 1,
+            "line_revenue_estimate": 2399.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Tênis Adidas Tokyo Off White Core Black Branco",
+            "sku": "JQ0567-4",
+            "size_or_variant": "37",
+            "quantity": 1,
+            "line_revenue_estimate": 1499.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Polo Slyce Classics Piquet Off White",
+            "sku": "SLCPVO-4",
+            "size_or_variant": "GG/XL",
+            "quantity": 1,
+            "line_revenue_estimate": 399.99,
+            "channels": {
+              "loja": 1
+            }
+          },
+          {
+            "product_title": "Jason Markk Essential Kit de Limpeza",
+            "sku": "300110",
+            "size_or_variant": "sem tamanho informado",
+            "quantity": 1,
+            "line_revenue_estimate": 199.99,
+            "channels": {
+              "loja": 1
+            }
+          }
+        ],
+        "top_brands_by_qty": [
+          [
+            "New Balance",
+            4
+          ],
+          [
+            "Onitsuka Tiger",
+            2
+          ],
+          [
+            "Polo",
+            1
+          ],
+          [
+            "Jason",
+            1
+          ],
+          [
+            "Adidas",
+            1
+          ]
+        ],
+        "top_brands_by_revenue": [
+          [
+            "New Balance",
+            10899.96
+          ],
+          [
+            "Onitsuka Tiger",
+            4899.98
+          ],
+          [
+            "Adidas",
+            1499.99
+          ],
+          [
+            "Polo",
+            399.99
+          ],
+          [
+            "Jason",
+            199.99
+          ]
+        ],
+        "seller_orders": [
+          [
+            "Danilo Muniz",
+            4
+          ],
+          [
+            "Biel Matias",
+            3
+          ],
+          [
+            "Wesley Matias",
+            1
+          ]
+        ],
+        "seller_revenue": [
+          [
+            "Danilo Muniz",
+            8499.96
+          ],
+          [
+            "Biel Matias",
+            6469.97
+          ],
+          [
+            "Wesley Matias",
+            2399.99
+          ]
+        ],
+        "source_names": [
+          [
+            "pos",
+            8
+          ]
+        ],
+        "no_sku_line_items": 0
+      }
+    }
+  },
+  "guardrails": [
+    "read_only_shopify",
+    "no_customer_pii",
+    "no_shopify_tiny_write",
+    "whatsapp_send_requires_current_approval"
+  ]
+}

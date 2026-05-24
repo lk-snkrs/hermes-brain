@@ -1,0 +1,79 @@
+# LK OS — Approval Manager Rules v0
+
+Gerado em: `2026-05-15T19:47:39.003558+00:00`
+Status: `active_local_rule_layer`
+
+## Veredito
+
+Materializei o Approval Manager em SQLite local e Brain: agora os gates principais do LK OS são regras consultáveis, não apenas texto solto.
+
+## Snapshot
+
+- Regras ativas: `6`
+- Regras que exigem aprovação: `5`
+- Regras autônomas read-only/local: `1`
+- Backup local antes do write SQLite: `/opt/data/hermes_bruno_ingest/local_sql/lk_os_backups/lk_os_phase5_before_approval_manager_rules_v0_20260515T194739Z.sqlite`
+
+## Regras vivas
+
+### LK-APPROVAL-EXTERNAL-SEND-DRAFT-ONLY-20260515
+
+- Domínio: `external_contact`
+- Estado default: `draft_only`
+- Exige aprovação: `True`
+- Contrato de aprovação: Current-turn explicit approval with named recipient + exact payload. Background/seguir never authorizes send.
+- Exemplo: Paulo/Zipper correction: should have generated draft, not sent email.
+
+### LK-APPROVAL-COMPRE-JA-VISUAL-BASELINE-20260515
+
+- Domínio: `theme_cro_visual`
+- Estado default: `visual_preview_or_reversible_fix`
+- Exige aprovação: `True`
+- Contrato de aprovação: Visual/theme changes require preview or exact scoped approval; if correcting a regression to original, keep parity and verify live/readback.
+- Exemplo: COMPRE JÁ returned to white background, light-gray border, no shadow/double stroke; preserve original visual parity.
+
+### LK-APPROVAL-CAMPAIGN-GATE-20260515
+
+- Domínio: `campaign_crm_paid`
+- Estado default: `preview_only`
+- Exige aprovação: `True`
+- Contrato de aprovação: Inline packet with audience, copy/creative, timing, budget/flow, expected action, rollback/stop plan; Lucas approval before send/activate/schedule.
+- Exemplo: Klaviyo/LK CRM can be draft/readiness only until Lucas approves send/schedule.
+
+### LK-APPROVAL-SOURCING-GATE-20260515
+
+- Domínio: `sourcing_purchase_supplier`
+- Estado default: `decision_preview_only`
+- Exige aprovação: `True`
+- Contrato de aprovação: Exact product/SKU/size, cost logic, price/margin, source, lead time, risk, and whether action is quote/contact/purchase. Lucas approval before external contact or purchase.
+- Exemplo: Sourcing uses Droper, exact StockX/GOAT, import cost FX*1.05, ideal cost*2; action remains preview until approved.
+
+### LK-APPROVAL-GMC-GATE-20260515
+
+- Domínio: `gmc_merchant_feed`
+- Estado default: `read_only_or_preview`
+- Exige aprovação: `True`
+- Contrato de aprovação: Exact offer/product IDs, fields, source ownership, before snapshot/rollback, no bulk wildcard, post-apply verification. Price/source writes require special caution.
+- Exemplo: GMC residual/preço remains blocked until UI/manual Google & YouTube/Shopify/Merchant checklist and exact preview.
+
+### LK-APPROVAL-DATA-QUALITY-AUTONOMY-20260515
+
+- Domínio: `data_quality_local_readonly`
+- Estado default: `autonomous_readonly_local`
+- Exige aprovação: `False`
+- Contrato de aprovação: Read-only/local/reversible data quality fixes may proceed; source-of-truth writes remain gated.
+- Exemplo: Tiny stock snapshot and lk_variant_commercial_state can update locally; final commercial action waits for coverage/approval.
+
+## O que não foi feito
+
+- email_send
+- whatsapp_send
+- campaign_send
+- shopify_write
+- tiny_write
+- merchant_write
+- meta_write
+- klaviyo_send_or_schedule
+- purchase
+- supplier_contact
+- cron_creation

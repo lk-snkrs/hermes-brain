@@ -1,0 +1,4360 @@
+{
+  "generated_at": "2026-05-13T19:25:56.729464+00:00",
+  "status": "dry_run_ready",
+  "api": "Merchant API v1 ProductInputs PATCH",
+  "data_source": "accounts/*/dataSources/10636492695",
+  "approval_required_for_apply": "Aprovo aplicar P2A next wave piloto em 250 produtos online no GMC via Merchant API v1, apenas googleProductCategory e productTypes, com rollback e verificação.",
+  "summary": {
+    "mode": "dry-run",
+    "records_total": 250,
+    "eligible": 250,
+    "bucket_counts": {
+      "Apparel & Accessories > Clothing > Shirts & Tops / Camiseta": 250
+    },
+    "execution_results_summary": {},
+    "verify_results_summary": {},
+    "verified_match_expected": 0
+  },
+  "private_rollback_snapshot_path": null,
+  "assessed_rows": [
+    {
+      "product_id": "online:pt:BR:IF2941731-3",
+      "offer_id": "IF2941731-3",
+      "title": "Camiseta Nike Ronaldinho Brasil 2004 Total 90 Amarela",
+      "fresh_current_googleProductCategory": "Artes e entretenimento > Hobbies e artes > Artigos colecionáveis > Artigos esportivos colecionáveis > Acessórios para fãs de esportes",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nike Ronaldinho Brasil 2004 Total 90 Amarela",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:IF2941731-4",
+      "offer_id": "IF2941731-4",
+      "title": "Camiseta Nike Ronaldinho Brasil 2004 Total 90 Amarela",
+      "fresh_current_googleProductCategory": "Artes e entretenimento > Hobbies e artes > Artigos colecionáveis > Artigos esportivos colecionáveis > Acessórios para fãs de esportes",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nike Ronaldinho Brasil 2004 Total 90 Amarela",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DR2630100",
+      "offer_id": "DR2630100",
+      "title": "Camiseta Nike x NOCTA \"Souvenir Cactus\" Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nike x NOCTA \"Souvenir Cactus\" Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:CU2477100",
+      "offer_id": "CU2477100",
+      "title": "Camiseta Nike x Off-White \"Short-Sleeve Top\" Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nike x Off-White \"Short-Sleeve Top\" Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:CU2477010",
+      "offer_id": "CU2477010",
+      "title": "Camiseta Nike x Off-White Short-Sleeve Top 'Black'",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nike x Off-White Short-Sleeve Top 'Black'",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:15690098651674929383",
+      "offer_id": "15690098651674929383",
+      "title": "Camiseta Nude Project Berry Tee White Branco - Tamanho M",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Berry Tee White Branco - Tamanho M",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NP22-1",
+      "offer_id": "NP22-1",
+      "title": "Camiseta Nude Project Global Soon",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Global Soon",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NP22-2",
+      "offer_id": "NP22-2",
+      "title": "Camiseta Nude Project Global Soon",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Global Soon",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NP22-3",
+      "offer_id": "NP22-3",
+      "title": "Camiseta Nude Project Global Soon",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Global Soon",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NP22-4",
+      "offer_id": "NP22-4",
+      "title": "Camiseta Nude Project Global Soon",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Global Soon",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NP22-5",
+      "offer_id": "NP22-5",
+      "title": "Camiseta Nude Project Global Soon",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Global Soon",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NP22-6",
+      "offer_id": "NP22-6",
+      "title": "Camiseta Nude Project Global Soon",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Global Soon",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NDP006-1",
+      "offer_id": "NDP006-1",
+      "title": "Camiseta Nude Project Global Soon Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Global Soon Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NDP006-2",
+      "offer_id": "NDP006-2",
+      "title": "Camiseta Nude Project Global Soon Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Global Soon Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NDP006-3",
+      "offer_id": "NDP006-3",
+      "title": "Camiseta Nude Project Global Soon Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Global Soon Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NDP006-4",
+      "offer_id": "NDP006-4",
+      "title": "Camiseta Nude Project Global Soon Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Global Soon Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NDP006-5",
+      "offer_id": "NDP006-5",
+      "title": "Camiseta Nude Project Global Soon Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Global Soon Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:13509922810333178540",
+      "offer_id": "13509922810333178540",
+      "title": "Camiseta Nude Project Honor Tee Black Preto - Tamanho G/L",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Honor Tee Black Preto - Tamanho G/L",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2066014-L",
+      "offer_id": "NUD-2066014-L",
+      "title": "Camiseta Nude Project Xoxo Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Xoxo Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2066014-M",
+      "offer_id": "NUD-2066014-M",
+      "title": "Camiseta Nude Project Xoxo Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Xoxo Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2066014-S",
+      "offer_id": "NUD-2066014-S",
+      "title": "Camiseta Nude Project Xoxo Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Xoxo Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2066014-XL",
+      "offer_id": "NUD-2066014-XL",
+      "title": "Camiseta Nude Project Xoxo Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Xoxo Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2066014-XS",
+      "offer_id": "NUD-2066014-XS",
+      "title": "Camiseta Nude Project Xoxo Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Nude Project Xoxo Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B519700-1",
+      "offer_id": "2183B519700-1",
+      "title": "Camiseta Onitsuka Tiger x Astroboy Graphic Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Onitsuka Tiger x Astroboy Graphic Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B519700-2",
+      "offer_id": "2183B519700-2",
+      "title": "Camiseta Onitsuka Tiger x Astroboy Graphic Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Onitsuka Tiger x Astroboy Graphic Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B519700-3",
+      "offer_id": "2183B519700-3",
+      "title": "Camiseta Onitsuka Tiger x Astroboy Graphic Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Onitsuka Tiger x Astroboy Graphic Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B519700-4",
+      "offer_id": "2183B519700-4",
+      "title": "Camiseta Onitsuka Tiger x Astroboy Graphic Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Onitsuka Tiger x Astroboy Graphic Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B519700-5",
+      "offer_id": "2183B519700-5",
+      "title": "Camiseta Onitsuka Tiger x Astroboy Graphic Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Onitsuka Tiger x Astroboy Graphic Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B519001-1",
+      "offer_id": "2183B519001-1",
+      "title": "Camiseta Onitsuka Tiger x Astroboy Graphic Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Onitsuka Tiger x Astroboy Graphic Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B519001-2",
+      "offer_id": "2183B519001-2",
+      "title": "Camiseta Onitsuka Tiger x Astroboy Graphic Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Onitsuka Tiger x Astroboy Graphic Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B519001-3",
+      "offer_id": "2183B519001-3",
+      "title": "Camiseta Onitsuka Tiger x Astroboy Graphic Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Onitsuka Tiger x Astroboy Graphic Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B519001-4",
+      "offer_id": "2183B519001-4",
+      "title": "Camiseta Onitsuka Tiger x Astroboy Graphic Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Onitsuka Tiger x Astroboy Graphic Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B519001-5",
+      "offer_id": "2183B519001-5",
+      "title": "Camiseta Onitsuka Tiger x Astroboy Graphic Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Onitsuka Tiger x Astroboy Graphic Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5362-1",
+      "offer_id": "5362-1",
+      "title": "Camiseta Oversized Dane-se Pare, Respire Off White",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Dane-se Pare, Respire Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5362-2",
+      "offer_id": "5362-2",
+      "title": "Camiseta Oversized Dane-se Pare, Respire Off White",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Dane-se Pare, Respire Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5362-3",
+      "offer_id": "5362-3",
+      "title": "Camiseta Oversized Dane-se Pare, Respire Off White",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Dane-se Pare, Respire Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5347-1",
+      "offer_id": "5347-1",
+      "title": "Camiseta Oversized Dane-se Pare, Respire Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Dane-se Pare, Respire Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5347-2",
+      "offer_id": "5347-2",
+      "title": "Camiseta Oversized Dane-se Pare, Respire Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Dane-se Pare, Respire Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5347-3",
+      "offer_id": "5347-3",
+      "title": "Camiseta Oversized Dane-se Pare, Respire Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Dane-se Pare, Respire Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5196-1",
+      "offer_id": "5196-1",
+      "title": "Camiseta Oversized Dane-se x Rubem Valentim 1981 Bordo",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Dane-se x Rubem Valentim 1981 Bordo",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5196-2",
+      "offer_id": "5196-2",
+      "title": "Camiseta Oversized Dane-se x Rubem Valentim 1981 Bordo",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Dane-se x Rubem Valentim 1981 Bordo",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5196-3",
+      "offer_id": "5196-3",
+      "title": "Camiseta Oversized Dane-se x Rubem Valentim 1981 Bordo",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Dane-se x Rubem Valentim 1981 Bordo",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5377-1",
+      "offer_id": "5377-1",
+      "title": "Camiseta Oversized Dane-se x Rubem Valentim Emblema 79 Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Dane-se x Rubem Valentim Emblema 79 Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5377-2",
+      "offer_id": "5377-2",
+      "title": "Camiseta Oversized Dane-se x Rubem Valentim Emblema 79 Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Dane-se x Rubem Valentim Emblema 79 Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5206-1",
+      "offer_id": "5206-1",
+      "title": "Camiseta Oversized Dane-se x Rubem Valentim Relevo 79 Marrom",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Dane-se x Rubem Valentim Relevo 79 Marrom",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5206-2",
+      "offer_id": "5206-2",
+      "title": "Camiseta Oversized Dane-se x Rubem Valentim Relevo 79 Marrom",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Dane-se x Rubem Valentim Relevo 79 Marrom",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:15334125053592144145",
+      "offer_id": "15334125053592144145",
+      "title": "Camiseta Oversized Fear of God Essentials Heavy Healther Wood Marrom",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Fear of God Essentials Heavy Healther Wood Marrom",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:13294493627572294660",
+      "offer_id": "13294493627572294660",
+      "title": "Camiseta Oversized Fear of God Essentials Heavy Jet Black Preto",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Fear of God Essentials Heavy Jet Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:1475186660255881483",
+      "offer_id": "1475186660255881483",
+      "title": "Camiseta Oversized Fear of God Essentials Ink Cinza",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Fear of God Essentials Ink Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B513100-1",
+      "offer_id": "2183B513100-1",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B513100-2",
+      "offer_id": "2183B513100-2",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B513100-3",
+      "offer_id": "2183B513100-3",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B513100-4",
+      "offer_id": "2183B513100-4",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B513100-5",
+      "offer_id": "2183B513100-5",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B513001-1",
+      "offer_id": "2183B513001-1",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B513001-2",
+      "offer_id": "2183B513001-2",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B513001-3",
+      "offer_id": "2183B513001-3",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B513001-4",
+      "offer_id": "2183B513001-4",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B513001-5",
+      "offer_id": "2183B513001-5",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B516400-1",
+      "offer_id": "2183B516400-1",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B516400-2",
+      "offer_id": "2183B516400-2",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B516400-3",
+      "offer_id": "2183B516400-3",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B516400-4",
+      "offer_id": "2183B516400-4",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B516400-5",
+      "offer_id": "2183B516400-5",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B494001-1",
+      "offer_id": "2183B494001-1",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Washed Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Washed Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B494001-2",
+      "offer_id": "2183B494001-2",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Washed Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Washed Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B494001-3",
+      "offer_id": "2183B494001-3",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Washed Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Washed Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:2183B494001-4",
+      "offer_id": "2183B494001-4",
+      "title": "Camiseta Oversized Onitsuka Tiger x Astroboy Washed Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Onitsuka Tiger x Astroboy Washed Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST24-1",
+      "offer_id": "ST24-1",
+      "title": "Camiseta Oversized Saint Studio Suedine Supima Contraste Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Saint Studio Suedine Supima Contraste Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST24-2",
+      "offer_id": "ST24-2",
+      "title": "Camiseta Oversized Saint Studio Suedine Supima Contraste Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Saint Studio Suedine Supima Contraste Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST24-3",
+      "offer_id": "ST24-3",
+      "title": "Camiseta Oversized Saint Studio Suedine Supima Contraste Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Saint Studio Suedine Supima Contraste Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST24-4",
+      "offer_id": "ST24-4",
+      "title": "Camiseta Oversized Saint Studio Suedine Supima Contraste Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Oversized Saint Studio Suedine Supima Contraste Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:YR0044",
+      "offer_id": "YR0044",
+      "title": "Camiseta Pace Buero Off White",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Buero Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:YR0045",
+      "offer_id": "YR0045",
+      "title": "Camiseta Pace Buero Off White",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Buero Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:YR0046",
+      "offer_id": "YR0046",
+      "title": "Camiseta Pace Buero Off White",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Buero Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:YR0047",
+      "offer_id": "YR0047",
+      "title": "Camiseta Pace Buero Off White",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Buero Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-1197278-L",
+      "offer_id": "PAC-1197278-L",
+      "title": "Camiseta Pace Buero Washed Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Buero Washed Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-1197278-M",
+      "offer_id": "PAC-1197278-M",
+      "title": "Camiseta Pace Buero Washed Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Buero Washed Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-1197278-S",
+      "offer_id": "PAC-1197278-S",
+      "title": "Camiseta Pace Buero Washed Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Buero Washed Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-1197278-XL",
+      "offer_id": "PAC-1197278-XL",
+      "title": "Camiseta Pace Buero Washed Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Buero Washed Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-0260062-L",
+      "offer_id": "PAC-0260062-L",
+      "title": "Camiseta Pace Double Satire Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Double Satire Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-0260062-M",
+      "offer_id": "PAC-0260062-M",
+      "title": "Camiseta Pace Double Satire Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Double Satire Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-0260062-S",
+      "offer_id": "PAC-0260062-S",
+      "title": "Camiseta Pace Double Satire Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Double Satire Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-0260062-XL",
+      "offer_id": "PAC-0260062-XL",
+      "title": "Camiseta Pace Double Satire Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Double Satire Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-8218078-L",
+      "offer_id": "PAC-8218078-L",
+      "title": "Camiseta Pace Ex-In Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Ex-In Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-8218078-M",
+      "offer_id": "PAC-8218078-M",
+      "title": "Camiseta Pace Ex-In Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Ex-In Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-8218078-XL",
+      "offer_id": "PAC-8218078-XL",
+      "title": "Camiseta Pace Ex-In Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Ex-In Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-1571806-L",
+      "offer_id": "PAC-1571806-L",
+      "title": "Camiseta Pace Fold Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Fold Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-1571806-M",
+      "offer_id": "PAC-1571806-M",
+      "title": "Camiseta Pace Fold Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Fold Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-1571806-XL",
+      "offer_id": "PAC-1571806-XL",
+      "title": "Camiseta Pace Fold Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Fold Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-1604574-L",
+      "offer_id": "PAC-1604574-L",
+      "title": "Camiseta Pace Fold Preta",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Fold Preta",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-1604574-M",
+      "offer_id": "PAC-1604574-M",
+      "title": "Camiseta Pace Fold Preta",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Fold Preta",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-1604574-XL",
+      "offer_id": "PAC-1604574-XL",
+      "title": "Camiseta Pace Fold Preta",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Fold Preta",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-8762078-L",
+      "offer_id": "PAC-8762078-L",
+      "title": "Camiseta Pace Less Is Less Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Less Is Less Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-8762078-M",
+      "offer_id": "PAC-8762078-M",
+      "title": "Camiseta Pace Less Is Less Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Less Is Less Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-8762078-S",
+      "offer_id": "PAC-8762078-S",
+      "title": "Camiseta Pace Less Is Less Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Less Is Less Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-8762078-XL",
+      "offer_id": "PAC-8762078-XL",
+      "title": "Camiseta Pace Less Is Less Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Less Is Less Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-4280798-L",
+      "offer_id": "PAC-4280798-L",
+      "title": "Camiseta Pace Locker Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Locker Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-4280798-M",
+      "offer_id": "PAC-4280798-M",
+      "title": "Camiseta Pace Locker Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Locker Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-4280798-S",
+      "offer_id": "PAC-4280798-S",
+      "title": "Camiseta Pace Locker Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Locker Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-4596958-L",
+      "offer_id": "PAC-4596958-L",
+      "title": "Camiseta Pace Locker Stoned Washed Black",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Locker Stoned Washed Black",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-4596958-M",
+      "offer_id": "PAC-4596958-M",
+      "title": "Camiseta Pace Locker Stoned Washed Black",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Locker Stoned Washed Black",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-0379230-L",
+      "offer_id": "PAC-0379230-L",
+      "title": "Camiseta Pace PRB Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace PRB Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-0379230-M",
+      "offer_id": "PAC-0379230-M",
+      "title": "Camiseta Pace PRB Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace PRB Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-0379230-S",
+      "offer_id": "PAC-0379230-S",
+      "title": "Camiseta Pace PRB Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace PRB Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-5857246-L",
+      "offer_id": "PAC-5857246-L",
+      "title": "Camiseta Pace Patavision Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Patavision Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-5857246-M",
+      "offer_id": "PAC-5857246-M",
+      "title": "Camiseta Pace Patavision Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Patavision Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-5857246-S",
+      "offer_id": "PAC-5857246-S",
+      "title": "Camiseta Pace Patavision Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Patavision Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-1936990-L",
+      "offer_id": "PAC-1936990-L",
+      "title": "Camiseta Pace Principles Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Principles Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-1936990-M",
+      "offer_id": "PAC-1936990-M",
+      "title": "Camiseta Pace Principles Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Principles Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-1936990-S",
+      "offer_id": "PAC-1936990-S",
+      "title": "Camiseta Pace Principles Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Principles Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PACEWAFFLE",
+      "offer_id": "PACEWAFFLE",
+      "title": "Camiseta Pace Waffle Knit Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Waffle Knit Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-5247326-S",
+      "offer_id": "PAC-5247326-S",
+      "title": "Camiseta Pace Waffle Knit Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Pace Waffle Knit Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9546974-L",
+      "offer_id": "DNS-9546974-L",
+      "title": "Camiseta Painel Dane-se x Athos Bulcão 107 Norte Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Painel Dane-se x Athos Bulcão 107 Norte Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9546974-M",
+      "offer_id": "DNS-9546974-M",
+      "title": "Camiseta Painel Dane-se x Athos Bulcão 107 Norte Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Painel Dane-se x Athos Bulcão 107 Norte Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9546974-S",
+      "offer_id": "DNS-9546974-S",
+      "title": "Camiseta Painel Dane-se x Athos Bulcão 107 Norte Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Painel Dane-se x Athos Bulcão 107 Norte Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9612510-L",
+      "offer_id": "DNS-9612510-L",
+      "title": "Camiseta Painel Dane-se x Athos Bulcão Torre de TV Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Painel Dane-se x Athos Bulcão Torre de TV Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9612510-M",
+      "offer_id": "DNS-9612510-M",
+      "title": "Camiseta Painel Dane-se x Athos Bulcão Torre de TV Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Painel Dane-se x Athos Bulcão Torre de TV Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9612510-S",
+      "offer_id": "DNS-9612510-S",
+      "title": "Camiseta Painel Dane-se x Athos Bulcão Torre de TV Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Painel Dane-se x Athos Bulcão Torre de TV Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9612510-XL",
+      "offer_id": "DNS-9612510-XL",
+      "title": "Camiseta Painel Dane-se x Athos Bulcão Torre de TV Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Painel Dane-se x Athos Bulcão Torre de TV Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:6094-1",
+      "offer_id": "6094-1",
+      "title": "Camiseta Regular Dane-se Arara do Cerrado Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se Arara do Cerrado Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:6094-2",
+      "offer_id": "6094-2",
+      "title": "Camiseta Regular Dane-se Arara do Cerrado Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se Arara do Cerrado Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:6094-3",
+      "offer_id": "6094-3",
+      "title": "Camiseta Regular Dane-se Arara do Cerrado Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se Arara do Cerrado Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5552-1",
+      "offer_id": "5552-1",
+      "title": "Camiseta Regular Dane-se Ipê do Cerrado Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se Ipê do Cerrado Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5552-2",
+      "offer_id": "5552-2",
+      "title": "Camiseta Regular Dane-se Ipê do Cerrado Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se Ipê do Cerrado Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5578-1",
+      "offer_id": "5578-1",
+      "title": "Camiseta Regular Dane-se Mini Tucano Cerrado Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se Mini Tucano Cerrado Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5578-2",
+      "offer_id": "5578-2",
+      "title": "Camiseta Regular Dane-se Mini Tucano Cerrado Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se Mini Tucano Cerrado Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5590-1",
+      "offer_id": "5590-1",
+      "title": "Camiseta Regular Dane-se Savannah Cerrado Amarelo",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se Savannah Cerrado Amarelo",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5590-2",
+      "offer_id": "5590-2",
+      "title": "Camiseta Regular Dane-se Savannah Cerrado Amarelo",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se Savannah Cerrado Amarelo",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5590-3",
+      "offer_id": "5590-3",
+      "title": "Camiseta Regular Dane-se Savannah Cerrado Amarelo",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se Savannah Cerrado Amarelo",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9645278-L",
+      "offer_id": "DNS-9645278-L",
+      "title": "Camiseta Regular Dane-se x Athos Bulcão Azulejos Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se x Athos Bulcão Azulejos Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9645278-M",
+      "offer_id": "DNS-9645278-M",
+      "title": "Camiseta Regular Dane-se x Athos Bulcão Azulejos Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se x Athos Bulcão Azulejos Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9645278-S",
+      "offer_id": "DNS-9645278-S",
+      "title": "Camiseta Regular Dane-se x Athos Bulcão Azulejos Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se x Athos Bulcão Azulejos Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9645278-XL",
+      "offer_id": "DNS-9645278-XL",
+      "title": "Camiseta Regular Dane-se x Athos Bulcão Azulejos Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se x Athos Bulcão Azulejos Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9579742-L",
+      "offer_id": "DNS-9579742-L",
+      "title": "Camiseta Regular Dane-se x Athos Bulcão Igrejinha Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se x Athos Bulcão Igrejinha Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9579742-M",
+      "offer_id": "DNS-9579742-M",
+      "title": "Camiseta Regular Dane-se x Athos Bulcão Igrejinha Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se x Athos Bulcão Igrejinha Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:DNS-9579742-S",
+      "offer_id": "DNS-9579742-S",
+      "title": "Camiseta Regular Dane-se x Athos Bulcão Igrejinha Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se x Athos Bulcão Igrejinha Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:5214-1",
+      "offer_id": "5214-1",
+      "title": "Camiseta Regular Dane-se x Rubem Valentim 1989 Marinho",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Regular Dane-se x Rubem Valentim 1989 Marinho",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep12-1",
+      "offer_id": "Rep12-1",
+      "title": "Camiseta Represent Clo Destructive Appetite Vintage Grey Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Destructive Appetite Vintage Grey Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep12-2",
+      "offer_id": "Rep12-2",
+      "title": "Camiseta Represent Clo Destructive Appetite Vintage Grey Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Destructive Appetite Vintage Grey Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep12-3",
+      "offer_id": "Rep12-3",
+      "title": "Camiseta Represent Clo Destructive Appetite Vintage Grey Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Destructive Appetite Vintage Grey Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep12-4",
+      "offer_id": "Rep12-4",
+      "title": "Camiseta Represent Clo Destructive Appetite Vintage Grey Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Destructive Appetite Vintage Grey Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep21-1",
+      "offer_id": "Rep21-1",
+      "title": "Camiseta Represent Clo Owners Club Flocked Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Owners Club Flocked Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep21-2",
+      "offer_id": "Rep21-2",
+      "title": "Camiseta Represent Clo Owners Club Flocked Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Owners Club Flocked Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep21-3",
+      "offer_id": "Rep21-3",
+      "title": "Camiseta Represent Clo Owners Club Flocked Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Owners Club Flocked Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep21-4",
+      "offer_id": "Rep21-4",
+      "title": "Camiseta Represent Clo Owners Club Flocked Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Owners Club Flocked Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep19",
+      "offer_id": "Rep19",
+      "title": "Camiseta Represent Clo Revere Manor Aged White Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Revere Manor Aged White Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep20",
+      "offer_id": "Rep20",
+      "title": "Camiseta Represent Clo Revere Manor Stained Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Revere Manor Stained Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep11-1",
+      "offer_id": "Rep11-1",
+      "title": "Camiseta Represent Clo Script Logo Flat White Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Script Logo Flat White Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep11-2",
+      "offer_id": "Rep11-2",
+      "title": "Camiseta Represent Clo Script Logo Flat White Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Script Logo Flat White Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep11-3",
+      "offer_id": "Rep11-3",
+      "title": "Camiseta Represent Clo Script Logo Flat White Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Script Logo Flat White Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep11-4",
+      "offer_id": "Rep11-4",
+      "title": "Camiseta Represent Clo Script Logo Flat White Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Script Logo Flat White Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep17",
+      "offer_id": "Rep17",
+      "title": "Camiseta Represent Clo Shark Jaws Off Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Shark Jaws Off Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep15",
+      "offer_id": "Rep15",
+      "title": "Camiseta Represent Clo Storms In Heaven Black Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Represent Clo Storms In Heaven Black Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-9498078-L",
+      "offer_id": "SST-9498078-L",
+      "title": "Camiseta Saint Studio Boxy SUPIMA Art Galleries Preta",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy SUPIMA Art Galleries Preta",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-9498078-M",
+      "offer_id": "SST-9498078-M",
+      "title": "Camiseta Saint Studio Boxy SUPIMA Art Galleries Preta",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy SUPIMA Art Galleries Preta",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-9498078-S",
+      "offer_id": "SST-9498078-S",
+      "title": "Camiseta Saint Studio Boxy SUPIMA Art Galleries Preta",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy SUPIMA Art Galleries Preta",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-9498078-XL",
+      "offer_id": "SST-9498078-XL",
+      "title": "Camiseta Saint Studio Boxy SUPIMA Art Galleries Preta",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy SUPIMA Art Galleries Preta",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-9563614-L",
+      "offer_id": "SST-9563614-L",
+      "title": "Camiseta Saint Studio Boxy SUPIMA Vermeer Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy SUPIMA Vermeer Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-9563614-M",
+      "offer_id": "SST-9563614-M",
+      "title": "Camiseta Saint Studio Boxy SUPIMA Vermeer Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy SUPIMA Vermeer Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-9563614-S",
+      "offer_id": "SST-9563614-S",
+      "title": "Camiseta Saint Studio Boxy SUPIMA Vermeer Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy SUPIMA Vermeer Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-9563614-XL",
+      "offer_id": "SST-9563614-XL",
+      "title": "Camiseta Saint Studio Boxy SUPIMA Vermeer Off White",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy SUPIMA Vermeer Off White",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-6502622-L",
+      "offer_id": "SST-6502622-L",
+      "title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Calças",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-6502622-M",
+      "offer_id": "SST-6502622-M",
+      "title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Calças",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-6502622-S",
+      "offer_id": "SST-6502622-S",
+      "title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Calças",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-6502622-XL",
+      "offer_id": "SST-6502622-XL",
+      "title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Calças",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-6502622-XS",
+      "offer_id": "SST-6502622-XS",
+      "title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Calças",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Breuer Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST55",
+      "offer_id": "ST55",
+      "title": "Camiseta Saint Studio Boxy Supima Cool Branco",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Cool Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST56",
+      "offer_id": "ST56",
+      "title": "Camiseta Saint Studio Boxy Supima Cool Branco",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Cool Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST57",
+      "offer_id": "ST57",
+      "title": "Camiseta Saint Studio Boxy Supima Cool Branco",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Cool Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST58",
+      "offer_id": "ST58",
+      "title": "Camiseta Saint Studio Boxy Supima Cool Branco",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Cool Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-5213278-L",
+      "offer_id": "SST-5213278-L",
+      "title": "Camiseta Saint Studio Boxy Supima It's All Good Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima It's All Good Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-5213278-M",
+      "offer_id": "SST-5213278-M",
+      "title": "Camiseta Saint Studio Boxy Supima It's All Good Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima It's All Good Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-5213278-S",
+      "offer_id": "SST-5213278-S",
+      "title": "Camiseta Saint Studio Boxy Supima It's All Good Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima It's All Good Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:SST-5213278-XL",
+      "offer_id": "SST-5213278-XL",
+      "title": "Camiseta Saint Studio Boxy Supima It's All Good Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima It's All Good Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST51",
+      "offer_id": "ST51",
+      "title": "Camiseta Saint Studio Boxy Supima Mid Century Branco",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Mid Century Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST52",
+      "offer_id": "ST52",
+      "title": "Camiseta Saint Studio Boxy Supima Mid Century Branco",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Mid Century Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST53",
+      "offer_id": "ST53",
+      "title": "Camiseta Saint Studio Boxy Supima Mid Century Branco",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Mid Century Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST54",
+      "offer_id": "ST54",
+      "title": "Camiseta Saint Studio Boxy Supima Mid Century Branco",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Mid Century Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST59",
+      "offer_id": "ST59",
+      "title": "Camiseta Saint Studio Boxy Supima Off Gola Vermelha Branco",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Off Gola Vermelha Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST60",
+      "offer_id": "ST60",
+      "title": "Camiseta Saint Studio Boxy Supima Off Gola Vermelha Branco",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Off Gola Vermelha Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST61",
+      "offer_id": "ST61",
+      "title": "Camiseta Saint Studio Boxy Supima Off Gola Vermelha Branco",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Off Gola Vermelha Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST62",
+      "offer_id": "ST62",
+      "title": "Camiseta Saint Studio Boxy Supima Off Gola Vermelha Branco",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Boxy Supima Off Gola Vermelha Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST32",
+      "offer_id": "ST32",
+      "title": "Camiseta Saint Studio Classy Suedine Supima Chairs Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Classy Suedine Supima Chairs Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST32-1",
+      "offer_id": "ST32-1",
+      "title": "Camiseta Saint Studio Classy Suedine Supima Chairs Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Classy Suedine Supima Chairs Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST32-2",
+      "offer_id": "ST32-2",
+      "title": "Camiseta Saint Studio Classy Suedine Supima Chairs Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Classy Suedine Supima Chairs Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST32-3",
+      "offer_id": "ST32-3",
+      "title": "Camiseta Saint Studio Classy Suedine Supima Chairs Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Classy Suedine Supima Chairs Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:ST32-4",
+      "offer_id": "ST32-4",
+      "title": "Camiseta Saint Studio Classy Suedine Supima Chairs Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios",
+      "fresh_current_productTypes": [
+        "Camiseta"
+      ],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Classy Suedine Supima Chairs Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:3256183830573196292",
+      "offer_id": "3256183830573196292",
+      "title": "Camiseta Saint Studio Oversized Suedine Supima Areia Bege - Tamanho G/L",
+      "fresh_current_googleProductCategory": null,
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Saint Studio Oversized Suedine Supima Areia Bege - Tamanho G/L",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078392130",
+      "offer_id": "43774078392130",
+      "title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078392140",
+      "offer_id": "43774078392140",
+      "title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078392150",
+      "offer_id": "43774078392150",
+      "title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078392160",
+      "offer_id": "43774078392160",
+      "title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078392170",
+      "offer_id": "43774078392170",
+      "title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078392180",
+      "offer_id": "43774078392180",
+      "title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078392190",
+      "offer_id": "43774078392190",
+      "title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078392200",
+      "offer_id": "43774078392200",
+      "title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Baby Tee Worn in Jersey Onyx Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388820",
+      "offer_id": "43774078388820",
+      "title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388830",
+      "offer_id": "43774078388830",
+      "title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388840",
+      "offer_id": "43774078388840",
+      "title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388850",
+      "offer_id": "43774078388850",
+      "title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388860",
+      "offer_id": "43774078388860",
+      "title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388870",
+      "offer_id": "43774078388870",
+      "title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388880",
+      "offer_id": "43774078388880",
+      "title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388890",
+      "offer_id": "43774078388890",
+      "title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Bone Bege",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388550",
+      "offer_id": "43774078388550",
+      "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388560",
+      "offer_id": "43774078388560",
+      "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388570",
+      "offer_id": "43774078388570",
+      "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388580",
+      "offer_id": "43774078388580",
+      "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388590",
+      "offer_id": "43774078388590",
+      "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388600",
+      "offer_id": "43774078388600",
+      "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388610",
+      "offer_id": "43774078388610",
+      "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388620",
+      "offer_id": "43774078388620",
+      "title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Kyanite Azul",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388730",
+      "offer_id": "43774078388730",
+      "title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388740",
+      "offer_id": "43774078388740",
+      "title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388750",
+      "offer_id": "43774078388750",
+      "title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388760",
+      "offer_id": "43774078388760",
+      "title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388770",
+      "offer_id": "43774078388770",
+      "title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388780",
+      "offer_id": "43774078388780",
+      "title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388790",
+      "offer_id": "43774078388790",
+      "title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388800",
+      "offer_id": "43774078388800",
+      "title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Light Heather Grey Cinza",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390650",
+      "offer_id": "43774078390650",
+      "title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390660",
+      "offer_id": "43774078390660",
+      "title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390670",
+      "offer_id": "43774078390670",
+      "title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390680",
+      "offer_id": "43774078390680",
+      "title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390690",
+      "offer_id": "43774078390690",
+      "title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390700",
+      "offer_id": "43774078390700",
+      "title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390710",
+      "offer_id": "43774078390710",
+      "title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390720",
+      "offer_id": "43774078390720",
+      "title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Marble Branco",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388640",
+      "offer_id": "43774078388640",
+      "title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388650",
+      "offer_id": "43774078388650",
+      "title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388660",
+      "offer_id": "43774078388660",
+      "title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388670",
+      "offer_id": "43774078388670",
+      "title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388680",
+      "offer_id": "43774078388680",
+      "title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388690",
+      "offer_id": "43774078388690",
+      "title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388700",
+      "offer_id": "43774078388700",
+      "title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388710",
+      "offer_id": "43774078388710",
+      "title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Mineral Verde",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388460",
+      "offer_id": "43774078388460",
+      "title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388470",
+      "offer_id": "43774078388470",
+      "title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388480",
+      "offer_id": "43774078388480",
+      "title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388490",
+      "offer_id": "43774078388490",
+      "title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388500",
+      "offer_id": "43774078388500",
+      "title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388510",
+      "offer_id": "43774078388510",
+      "title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388520",
+      "offer_id": "43774078388520",
+      "title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388530",
+      "offer_id": "43774078388530",
+      "title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Cotton Jersey Soot Preto",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390830",
+      "offer_id": "43774078390830",
+      "title": "Camiseta Skims Fits Everybody Cocoa Marrom",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Fits Everybody Cocoa Marrom",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390840",
+      "offer_id": "43774078390840",
+      "title": "Camiseta Skims Fits Everybody Cocoa Marrom",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Fits Everybody Cocoa Marrom",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390850",
+      "offer_id": "43774078390850",
+      "title": "Camiseta Skims Fits Everybody Cocoa Marrom",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Fits Everybody Cocoa Marrom",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390860",
+      "offer_id": "43774078390860",
+      "title": "Camiseta Skims Fits Everybody Cocoa Marrom",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Fits Everybody Cocoa Marrom",
+      "eligible": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390870",
+      "offer_id": "43774078390870",
+      "title": "Camiseta Skims Fits Everybody Cocoa Marrom",
+      "fresh_current_googleProductCategory": "Vestuário e acessórios > Roupas > Camisetas e tops",
+      "fresh_current_productTypes": [],
+      "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+      "suggested_productTypes": [
+        "Camiseta"
+      ],
+      "evidence": "shirt_token_high_confidence",
+      "eligible_for_p2a_next_wave": "True",
+      "current_productTypes": [],
+      "fresh_title": "Camiseta Skims Fits Everybody Cocoa Marrom",
+      "eligible": true
+    }
+  ],
+  "execution_results": [],
+  "verify_results": [],
+  "not_performed": [
+    "title_update",
+    "price_update",
+    "availability_update",
+    "image_or_link_update",
+    "merchant_delete",
+    "local_inventory_write",
+    "shopify_write",
+    "tiny_write",
+    "database_write",
+    "feed_fetch_or_upload",
+    "campaign_or_message_send"
+  ]
+}

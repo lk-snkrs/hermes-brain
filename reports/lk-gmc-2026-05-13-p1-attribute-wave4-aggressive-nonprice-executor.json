@@ -1,0 +1,6350 @@
+{
+  "generated_at": "2026-05-13T14:12:27.923765+00:00",
+  "status": "gmc_p1_attribute_wave4_aggressive_nonprice_dry_run_ready",
+  "mode": "dry-run",
+  "scope": "Wave4 aggressive non-price attrs: color/sizes/ageGroup/gender only; price excluded even when present.",
+  "source_labels": [
+    "fact_merchant_center",
+    "derived_reconciliation",
+    "manual_approval"
+  ],
+  "approval_required_for_apply": "Lucas approved GMC P1 Attribute Wave4 aggressive non-price apply",
+  "summary": {
+    "fresh_merchant_products_current": 23241,
+    "fresh_merchant_productstatuses_current": 23241,
+    "required_attr_rows_current": 232,
+    "required_attr_instances_current": 363,
+    "required_attr_counts": {
+      "color": 183,
+      "size": 83,
+      "price": 35,
+      "gender": 31,
+      "age group": 31
+    },
+    "decision_state_counts": {
+      "ready_for_wave4_aggressive_nonprice_apply": 228,
+      "blocked_price_only_no_nonprice_update": 4
+    },
+    "ready_total": 228,
+    "selected_for_apply_if_approved": 228,
+    "suggested_field_counts": {
+      "color": 183,
+      "sizes": 51,
+      "ageGroup": 31,
+      "gender": 31
+    },
+    "limit": 1000,
+    "write_allowed_now": 0,
+    "execution_results_summary": {},
+    "verify_results_summary": {},
+    "verified_attrs_match_expected": 0
+  },
+  "private_rollback_snapshot_path": null,
+  "public_rows": [
+    {
+      "product_id": "online:pt:BR:1183A201-126-5",
+      "offer_id": "1183A201-126-5",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-38",
+      "offer_id": "DA6672-700-38",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs Archive Dark Sulfur",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-3",
+      "offer_id": "JS0297-3",
+      "merchant_title": "Tênis Adidas Taekwondo Mei Cow Print (Women's) Animal Print",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "36"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-39",
+      "offer_id": "DA6672-700-39",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs Archive Dark Sulfur",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JH7370-4",
+      "offer_id": "JH7370-4",
+      "merchant_title": "Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Stripes Multi-Color",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-40",
+      "offer_id": "JRD-5205470-40",
+      "merchant_title": "Tênis Nike Air Jordan 1 Retro High OG SP Union LA Chicago Shadow",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-5",
+      "offer_id": "JS0297-5",
+      "merchant_title": "Tênis Adidas Taekwondo Mei Cow Print (Women's) Animal Print",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:5706324928133224313",
+      "offer_id": "5706324928133224313",
+      "merchant_title": "39",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "39"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "marrom",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-7",
+      "offer_id": "JS0297-7",
+      "merchant_title": "Tênis Adidas Taekwondo Mei Cow Print (Women's) Animal Print",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-35",
+      "offer_id": "DA6672-200-35",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:6036386056472256840",
+      "offer_id": "6036386056472256840",
+      "merchant_title": "37",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "37"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "preto",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:LLM-4911966-OS",
+      "offer_id": "LLM-4911966-OS",
+      "merchant_title": "Boné Lululemon Tennis Club Off White",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_one_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "Azul",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-2",
+      "offer_id": "JQ9229-2",
+      "merchant_title": "Tênis Adidas Ballerina Bad Bunny Off White Black Gum Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Off White / Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JP5309-3",
+      "offer_id": "JP5309-3",
+      "merchant_title": "Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Multi-Color",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "36"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-6",
+      "offer_id": "HV6417-001-6",
+      "merchant_title": "Tênis Nike Zoom Vomero 5 Metallic Silver Platinum Violet Prateado/Violeta",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:KTH-4846430-OS",
+      "offer_id": "KTH-4846430-OS",
+      "merchant_title": "Boné Kith Script Logo Classic Boné Stadium Branco/Verde",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_one_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "Branco",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:3048242206072553507",
+      "offer_id": "3048242206072553507",
+      "merchant_title": "42",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "42"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "prata",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:6234067398750979457",
+      "offer_id": "6234067398750979457",
+      "merchant_title": "34",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "34"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "marrom",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:6531799355487598672",
+      "offer_id": "6531799355487598672",
+      "merchant_title": "Camiseta Fear of God Essentials Jersey Crewneck Black Preto",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-2",
+      "offer_id": "HV6417-001-2",
+      "merchant_title": "Tênis Nike Zoom Vomero 5 Metallic Silver Platinum Violet Prateado/Violeta",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-38",
+      "offer_id": "JRD-5205470-38",
+      "merchant_title": "Tênis Nike Air Jordan 1 Retro High OG SP Union LA Chicago Shadow",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:11810372920072143991",
+      "offer_id": "11810372920072143991",
+      "merchant_title": "40",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38, 40, 42, 44"
+      ],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-39",
+      "offer_id": "DA6672-200-39",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2000478-XL",
+      "offer_id": "NUD-2000478-XL",
+      "merchant_title": "Camiseta Baby Look Nude Project Juicy Cherry Branca",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "XL/GG"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-6",
+      "offer_id": "1183A201-126-6",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:ALD-2515934-M",
+      "offer_id": "ALD-2515934-M",
+      "merchant_title": "Camiseta Aimé Leon Dore Musician Graphic Preta",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "M/M"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-4",
+      "offer_id": "1025116-1A17741_2NM5J-4",
+      "merchant_title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Marrom / Bege"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-11",
+      "offer_id": "HF8022300-11",
+      "merchant_title": "Yuto Horigome x Dunk Low SB Matcha",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "45"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:3876299146406606317",
+      "offer_id": "3876299146406606317",
+      "merchant_title": "Calça Saint Studio Jeans Baggy Preta",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Preto",
+        "sizes": [
+          "Único"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "sizes": "default_one_size_for_accessory_title",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "size filled from title/offer/one-size token",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:ALO-3137118-OS",
+      "offer_id": "ALO-3137118-OS",
+      "merchant_title": "Boné Alo Yoga Off-Duty Branco",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_one_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "Branco",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-40",
+      "offer_id": "DA6672-200-40",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:RH20",
+      "offer_id": "RH20",
+      "merchant_title": "Lip Tint Rhode Scented Peptide Toast",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:6562590402534581177",
+      "offer_id": "6562590402534581177",
+      "merchant_title": "Calça Nude Project Illegal Jeans Ash Cinza - LK",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Cinza",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:17533377349709354893",
+      "offer_id": "17533377349709354893",
+      "merchant_title": "Pop Mart Labubu The Monsters Big into Energy Series Happiness Vinyl Plush Pingente",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {},
+      "evidence": {},
+      "decision_state": "blocked_price_only_no_nonprice_update",
+      "decision_reasons": [
+        "price remains excluded"
+      ],
+      "selected_for_apply": false,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-9",
+      "offer_id": "1025116-1A17741_2NM5J-9",
+      "merchant_title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Marrom / Bege"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:16599698222138562820",
+      "offer_id": "16599698222138562820",
+      "merchant_title": "34",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "34"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "vermelho",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JRD-0696926-OS",
+      "offer_id": "JRD-0696926-OS",
+      "merchant_title": "Tênis Nike Air Jordan 1 Low Cardinal Vermelho",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_one_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "Vermelho",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:2258634078163248862",
+      "offer_id": "2258634078163248862",
+      "merchant_title": "Calça Chino Saint Studio Supima Preto",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:1863698749035586532",
+      "offer_id": "1863698749035586532",
+      "merchant_title": "44",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "44"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "prata",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:4531110532523186885",
+      "offer_id": "4531110532523186885",
+      "merchant_title": "39",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "39"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "azul",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:2198938218729451562",
+      "offer_id": "2198938218729451562",
+      "merchant_title": "37",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "37"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "marrom",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:MTB16",
+      "offer_id": "MTB16",
+      "merchant_title": "MEDICOM TOY - Bearbrick Pushead #6 400% Toy Art Multi-Color",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:ALO-4649822-OS",
+      "offer_id": "ALO-4649822-OS",
+      "merchant_title": "Meia Alo Yoga Throwback Barre Branca",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_one_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "Branco",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:2162246425358063315",
+      "offer_id": "2162246425358063315",
+      "merchant_title": "40/40.5",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "40"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "preto",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:14088693984092512857",
+      "offer_id": "14088693984092512857",
+      "merchant_title": "Boné 6 Panel Aimé Leon Dore Embroidered Logo Branco",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price"
+      ],
+      "suggested_attributes": {
+        "color": "Branco",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:15050545522805546621",
+      "offer_id": "15050545522805546621",
+      "merchant_title": "Pop Mart Labubu The Monsters Tasty Macarons Toffee Vinyl Plush Pingente",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVNV-1",
+      "offer_id": "SLCRBVNV-1",
+      "merchant_title": "Camiseta Slyce Racquet Club Bordada Azul Marinho",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Azul"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "P/S"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-6",
+      "offer_id": "JS0297-6",
+      "merchant_title": "Tênis Adidas Taekwondo Mei Cow Print (Women's) Animal Print",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-3",
+      "offer_id": "JQ9229-3",
+      "merchant_title": "Tênis Adidas Ballerina Bad Bunny Off White Black Gum Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Off White / Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "36"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-9",
+      "offer_id": "1183A201-126-9",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "42"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-2",
+      "offer_id": "MR530TA-2",
+      "merchant_title": "Tênis New Balance 530 Silver Cream Prateado",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:ALD-2515934-S",
+      "offer_id": "ALD-2515934-S",
+      "merchant_title": "Camiseta Aimé Leon Dore Musician Graphic Preta",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "S/P"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-35",
+      "offer_id": "JRD-5205470-35",
+      "merchant_title": "Tênis Nike Air Jordan 1 Retro High OG SP Union LA Chicago Shadow",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:15334125053592144145",
+      "offer_id": "15334125053592144145",
+      "merchant_title": "Camiseta Oversized Fear of God Essentials Heavy Healther Wood Marrom",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Marrom",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:17378616365015099957",
+      "offer_id": "17378616365015099957",
+      "merchant_title": "Moletom Fear Of God Essentials Brushed Hooded Bomber Brown Marrom",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Marrom",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-6",
+      "offer_id": "MR530TA-6",
+      "merchant_title": "Tênis New Balance 530 Silver Cream Prateado",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-5",
+      "offer_id": "HV6417-001-5",
+      "merchant_title": "Tênis Nike Zoom Vomero 5 Metallic Silver Platinum Violet Prateado/Violeta",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:ALD-3072990-OS",
+      "offer_id": "ALD-3072990-OS",
+      "merchant_title": "Boné Aime Leon Dore Washed Script Plaza Taupe Bege",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_one_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "Bege",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:13498809788548851139",
+      "offer_id": "13498809788548851139",
+      "merchant_title": "Moletom Essentials Fear of God Jet black SS24 Preto | LK Sneakers",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-34",
+      "offer_id": "JRD-5205470-34",
+      "merchant_title": "Tênis Nike Air Jordan 1 Retro High OG SP Union LA Chicago Shadow",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "34"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-37",
+      "offer_id": "DA6672-700-37",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs Archive Dark Sulfur",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-7",
+      "offer_id": "HF8022300-7",
+      "merchant_title": "Yuto Horigome x Dunk Low SB Matcha",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "41"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-4",
+      "offer_id": "1183A201-126-4",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:10002025469927148791",
+      "offer_id": "10002025469927148791",
+      "merchant_title": "Calça Nude Project Jeans Soft Velvet Azul Marinho",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Azul",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:ALD-3105758-OS",
+      "offer_id": "ALD-3105758-OS",
+      "merchant_title": "Boné Aime Leon Dore Washed Script Jet Black Preto",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_one_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "Preto",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-6",
+      "offer_id": "JI3098-6",
+      "merchant_title": "Tênis Adidas Samba OG x Disney Pixar Toy Story",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-3",
+      "offer_id": "1183A201-126-3",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "36"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:ALO-1465950-OS",
+      "offer_id": "ALO-1465950-OS",
+      "merchant_title": "Boné Alo Yoga Off-Duty Preto",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_one_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "Preto",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:9783836591089",
+      "offer_id": "9783836591089",
+      "merchant_title": "Livro Taschen The Adidas Archive: The Footwear Collection 21,7x15,6",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-4",
+      "offer_id": "MR530TA-4",
+      "merchant_title": "Tênis New Balance 530 Silver Cream Prateado",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-39",
+      "offer_id": "JR4790-39",
+      "merchant_title": "Tênis Adidas Tokyo MJ Core Black Cream White Gold Metallic Preto",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Preto / Branco / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-7",
+      "offer_id": "HV6417-001-7",
+      "merchant_title": "Tênis Nike Zoom Vomero 5 Metallic Silver Platinum Violet Prateado/Violeta",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2000478-XS",
+      "offer_id": "NUD-2000478-XS",
+      "merchant_title": "Camiseta Baby Look Nude Project Juicy Cherry Branca",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "XS/PP"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:3036040229053224603",
+      "offer_id": "3036040229053224603",
+      "merchant_title": "XL/Gg",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor",
+        "sizes": [
+          "XL"
+        ]
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy",
+        "sizes": "offer_or_title_alpha_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-44",
+      "offer_id": "DA6672-700-44",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs Archive Dark Sulfur",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "44"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2000478-S",
+      "offer_id": "NUD-2000478-S",
+      "merchant_title": "Camiseta Baby Look Nude Project Juicy Cherry Branca",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "S/P"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-5",
+      "offer_id": "MR530TA-5",
+      "merchant_title": "Tênis New Balance 530 Silver Cream Prateado",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-2",
+      "offer_id": "1183A201-126-2",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-2",
+      "offer_id": "1025116-1A17741_2NM5J-2",
+      "merchant_title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Marrom / Bege"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35.5"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-37",
+      "offer_id": "DA6672-200-37",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-8",
+      "offer_id": "JQ9229-8",
+      "merchant_title": "Tênis Adidas Ballerina Bad Bunny Off White Black Gum Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Off White / Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "41"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:14252480804615463970",
+      "offer_id": "14252480804615463970",
+      "merchant_title": "41",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "41"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "bege",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:9780847872657",
+      "offer_id": "9780847872657",
+      "merchant_title": "Livro Rizzoli From Soul to Sole: The Adidas Sneakers of Jacques Chassaing",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:4041641007094962608",
+      "offer_id": "4041641007094962608",
+      "merchant_title": "Camisa Saint Studio Trico Palha | LK Sneakers",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Bege",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-40",
+      "offer_id": "DA6672-700-40",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs Archive Dark Sulfur",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-4",
+      "offer_id": "HF8022300-4",
+      "merchant_title": "Yuto Horigome x Dunk Low SB Matcha",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "42.5"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:10591784840915585992",
+      "offer_id": "10591784840915585992",
+      "merchant_title": "Boné Saint Studio Art Department Azul - LK",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price"
+      ],
+      "suggested_attributes": {
+        "color": "Azul",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-3",
+      "offer_id": "JI3098-3",
+      "merchant_title": "Tênis Adidas Samba OG x Disney Pixar Toy Story",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-38",
+      "offer_id": "JR4790-38",
+      "merchant_title": "Tênis Adidas Tokyo MJ Core Black Cream White Gold Metallic Preto",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Preto / Branco / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-1",
+      "offer_id": "HV6417-001-1",
+      "merchant_title": "Tênis Nike Zoom Vomero 5 Metallic Silver Platinum Violet Prateado/Violeta",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "34"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JH7370-3",
+      "offer_id": "JH7370-3",
+      "merchant_title": "Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Stripes Multi-Color",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "36"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-2",
+      "offer_id": "HF8022300-2",
+      "merchant_title": "Yuto Horigome x Dunk Low SB Matcha",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39.5"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:8376229716754602501",
+      "offer_id": "8376229716754602501",
+      "merchant_title": "Short Fear Of God Essentials Classic Sweatshort Homestead Heather Bege",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Bege",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-37",
+      "offer_id": "JRD-5205470-37",
+      "merchant_title": "Tênis Nike Air Jordan 1 Retro High OG SP Union LA Chicago Shadow",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:15031239196158973196",
+      "offer_id": "15031239196158973196",
+      "merchant_title": "45",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "45"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "branco",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:6061855494363671943",
+      "offer_id": "6061855494363671943",
+      "merchant_title": "Pop Mart Labubu The Monsters Tasty Macarons Sesame Bean Vinyl Plush Pingente",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JP5309-4",
+      "offer_id": "JP5309-4",
+      "merchant_title": "Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Multi-Color",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:NUD-9375070-OS",
+      "offer_id": "NUD-9375070-OS",
+      "merchant_title": "Boné Nude Project New Varsity Bege",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_one_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "Bege",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:9992569968476017768",
+      "offer_id": "9992569968476017768",
+      "merchant_title": "Moletom Fear of God Essentials Fleece Light Heather Grey Cinza",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Cinza",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-41",
+      "offer_id": "JRD-5205470-41",
+      "merchant_title": "Tênis Nike Air Jordan 1 Retro High OG SP Union LA Chicago Shadow",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "41"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-1",
+      "offer_id": "JQ9229-1",
+      "merchant_title": "Tênis Adidas Ballerina Bad Bunny Off White Black Gum Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Off White / Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "34"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-11",
+      "offer_id": "1183A201-126-11",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "44"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:4086849490768644696",
+      "offer_id": "4086849490768644696",
+      "merchant_title": "34",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "34"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "cinza",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-35",
+      "offer_id": "JR4790-35",
+      "merchant_title": "Tênis Adidas Tokyo MJ Core Black Cream White Gold Metallic Preto",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Preto / Branco / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-43",
+      "offer_id": "DA6672-700-43",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs Archive Dark Sulfur",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "43"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-405",
+      "offer_id": "JRD-5205470-405",
+      "merchant_title": "Tênis Nike Air Jordan 1 Retro High OG SP Union LA Chicago Shadow",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40.5"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:9783836597982",
+      "offer_id": "9783836597982",
+      "merchant_title": "Livro Taschen The Ultimate Sneaker Book 15 x 21",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:13622509763707629816",
+      "offer_id": "13622509763707629816",
+      "merchant_title": "Calça Saint Studio Wide Alfaiataria Risca de Giz Cinza",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Cinza",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-41",
+      "offer_id": "DA6672-200-41",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "41"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:12475328072847087695",
+      "offer_id": "12475328072847087695",
+      "merchant_title": "42",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "42"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "preto",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:5627606835540697766",
+      "offer_id": "5627606835540697766",
+      "merchant_title": "M/m",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor",
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy",
+        "sizes": "offer_or_title_alpha_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:9250025623243509812",
+      "offer_id": "9250025623243509812",
+      "merchant_title": "Calça Saint Studio Wide Alfaiataria Risca de Giz Preta",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:601647069162867212",
+      "offer_id": "601647069162867212",
+      "merchant_title": "Pop Mart Labubu The Monsters Tasty Macarons Lychee Berry Vinyl Plush Pingente",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-1",
+      "offer_id": "HF8022300-1",
+      "merchant_title": "Yuto Horigome x Dunk Low SB Matcha",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "46"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:2669418431140851356",
+      "offer_id": "2669418431140851356",
+      "merchant_title": "Natural",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {},
+      "evidence": {},
+      "decision_state": "blocked_price_only_no_nonprice_update",
+      "decision_reasons": [
+        "price remains excluded"
+      ],
+      "selected_for_apply": false,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836585095",
+      "offer_id": "9783836585095",
+      "merchant_title": "Livro Taschen Virgil Abloh Nike ICONS",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:13294493627572294660",
+      "offer_id": "13294493627572294660",
+      "merchant_title": "Camiseta Oversized Fear of God Essentials Heavy Jet Black Preto",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-3",
+      "offer_id": "HV6417-001-3",
+      "merchant_title": "Tênis Nike Zoom Vomero 5 Metallic Silver Platinum Violet Prateado/Violeta",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "36"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-3",
+      "offer_id": "MR530TA-3",
+      "merchant_title": "Tênis New Balance 530 Silver Cream Prateado",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "36"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:KTH-4813662-OS",
+      "offer_id": "KTH-4813662-OS",
+      "merchant_title": "Boné Kith Script Logo Classic Boné Nocturnal Branco/Azul",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_one_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "Branco",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-36",
+      "offer_id": "DA6672-200-36",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "36"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-6",
+      "offer_id": "HF8022300-6",
+      "merchant_title": "Yuto Horigome x Dunk Low SB Matcha",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:16606924615096196772",
+      "offer_id": "16606924615096196772",
+      "merchant_title": "G/l",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "G"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_alpha_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "verde",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JP5309-6",
+      "offer_id": "JP5309-6",
+      "merchant_title": "Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Multi-Color",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:15047612723779191692",
+      "offer_id": "15047612723779191692",
+      "merchant_title": "37",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor",
+        "sizes": [
+          "37"
+        ]
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy",
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-42",
+      "offer_id": "DA6672-700-42",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs Archive Dark Sulfur",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "42"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:12196644472973744396",
+      "offer_id": "12196644472973744396",
+      "merchant_title": "36/37",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "36"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "branco",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-36",
+      "offer_id": "JR4790-36",
+      "merchant_title": "Tênis Adidas Tokyo MJ Core Black Cream White Gold Metallic Preto",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Preto / Branco / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "36"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-6",
+      "offer_id": "JQ9229-6",
+      "merchant_title": "Tênis Adidas Ballerina Bad Bunny Off White Black Gum Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Off White / Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:8419194273885247483",
+      "offer_id": "8419194273885247483",
+      "merchant_title": "34",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "34"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "prata",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-38",
+      "offer_id": "DA6672-200-38",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2000478-M",
+      "offer_id": "NUD-2000478-M",
+      "merchant_title": "Camiseta Baby Look Nude Project Juicy Cherry Branca",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "M/M"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:9783836571968",
+      "offer_id": "9783836571968",
+      "merchant_title": "Livro Taschen The Adidas Archive: The Footwear Collection",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-5",
+      "offer_id": "JI3098-5",
+      "merchant_title": "Tênis Adidas Samba OG x Disney Pixar Toy Story",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1475186660255881483",
+      "offer_id": "1475186660255881483",
+      "merchant_title": "Camiseta Oversized Fear of God Essentials Ink Cinza",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Cinza",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:15690098651674929383",
+      "offer_id": "15690098651674929383",
+      "merchant_title": "M/m",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_alpha_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "branco",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-4",
+      "offer_id": "JI3098-4",
+      "merchant_title": "Tênis Adidas Samba OG x Disney Pixar Toy Story",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "36"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-44",
+      "offer_id": "DA6672-200-44",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "44"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:ALD-2515934-XL",
+      "offer_id": "ALD-2515934-XL",
+      "merchant_title": "Camiseta Aimé Leon Dore Musician Graphic Preta",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "XL/GG"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-10",
+      "offer_id": "HF8022300-10",
+      "merchant_title": "Yuto Horigome x Dunk Low SB Matcha",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "44"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:16552051163064136080",
+      "offer_id": "16552051163064136080",
+      "merchant_title": "43",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "43"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "prata",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-34",
+      "offer_id": "DA6672-700-34",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs Archive Dark Sulfur",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "34"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-42",
+      "offer_id": "DA6672-200-42",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "42"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:8532426969879844901",
+      "offer_id": "8532426969879844901",
+      "merchant_title": "Boné Aimé Leon Dore Micro Logo Pristine Off White",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price"
+      ],
+      "suggested_attributes": {
+        "color": "Off White / Branco",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-34",
+      "offer_id": "DA6672-200-34",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "34"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:11806875313375187771",
+      "offer_id": "11806875313375187771",
+      "merchant_title": "Camiseta Fear Of God Essentials Classic Short Sleeve Homestead Heather Bege",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Bege",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:JH7370-5",
+      "offer_id": "JH7370-5",
+      "merchant_title": "Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Stripes Multi-Color",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JH7370-6",
+      "offer_id": "JH7370-6",
+      "merchant_title": "Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Stripes Multi-Color",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:13315860803624221806",
+      "offer_id": "13315860803624221806",
+      "merchant_title": "Short Fear Of God Essentials Sporty Nylon Classic Jet Black Preto",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:5390248129051651686",
+      "offer_id": "5390248129051651686",
+      "merchant_title": "34",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "34"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "branco",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:12053538457178343768",
+      "offer_id": "12053538457178343768",
+      "merchant_title": "40",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "40"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "verde",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-43",
+      "offer_id": "JRD-5205470-43",
+      "merchant_title": "Tênis Nike Air Jordan 1 Retro High OG SP Union LA Chicago Shadow",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "43"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:5328214585182033036",
+      "offer_id": "5328214585182033036",
+      "merchant_title": "35",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "35"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "prata",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-1",
+      "offer_id": "1183A201-126-1",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "34"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-44",
+      "offer_id": "JRD-5205470-44",
+      "merchant_title": "Tênis Nike Air Jordan 1 Retro High OG SP Union LA Chicago Shadow",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "44"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JP5309-2",
+      "offer_id": "JP5309-2",
+      "merchant_title": "Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Multi-Color",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-7",
+      "offer_id": "JQ9229-7",
+      "merchant_title": "Tênis Adidas Ballerina Bad Bunny Off White Black Gum Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Off White / Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JRD-9681118-OS",
+      "offer_id": "JRD-9681118-OS",
+      "merchant_title": "Tênis Nike Air Jordan 1 Low SE Iced Lilac Preto",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_one_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "Preto",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:6271425026146428361",
+      "offer_id": "6271425026146428361",
+      "merchant_title": "XL/Gg",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "XL"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_alpha_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "preto",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:15014470994320532817",
+      "offer_id": "15014470994320532817",
+      "merchant_title": "36",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "36"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "cinza",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:16359969147856982838",
+      "offer_id": "16359969147856982838",
+      "merchant_title": "M/m",
+      "fresh_required_attrs": [
+        "age group",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "sizes": "offer_or_title_alpha_size_token",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": "branco",
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-1",
+      "offer_id": "JI3098-1",
+      "merchant_title": "Tênis Adidas Samba OG x Disney Pixar Toy Story",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "33"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-2",
+      "offer_id": "JI3098-2",
+      "merchant_title": "Tênis Adidas Samba OG x Disney Pixar Toy Story",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "34"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JRD-8534238-OS",
+      "offer_id": "JRD-8534238-OS",
+      "merchant_title": "Tênis Nike Air Jordan 4 Craft Cinza",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_one_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "Cinza",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:ALD-2515934-L",
+      "offer_id": "ALD-2515934-L",
+      "merchant_title": "Camiseta Aimé Leon Dore Musician Graphic Preta",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "L/G"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-200-43",
+      "offer_id": "DA6672-200-43",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "43"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-1",
+      "offer_id": "JS0297-1",
+      "merchant_title": "Tênis Adidas Taekwondo Mei Cow Print (Women's) Animal Print",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "34"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-4",
+      "offer_id": "JS0297-4",
+      "merchant_title": "Tênis Adidas Taekwondo Mei Cow Print (Women's) Animal Print",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1624428988081867066",
+      "offer_id": "1624428988081867066",
+      "merchant_title": "Boné Aimé Leon Dore Porsche Nylon Logo Aspen Gold Amarelo | LK Sneaker",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price"
+      ],
+      "suggested_attributes": {
+        "color": "Amarelo / Dourado",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-7",
+      "offer_id": "MR530TA-7",
+      "merchant_title": "Tênis New Balance 530 Silver Cream Prateado",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:7958216211561773980",
+      "offer_id": "7958216211561773980",
+      "merchant_title": "Bolsa Aimé Leon Dore x Porsche Commuter Preto | LK Sneakers",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price"
+      ],
+      "suggested_attributes": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-7",
+      "offer_id": "1183A201-126-7",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:8082476657063126648",
+      "offer_id": "8082476657063126648",
+      "merchant_title": "43",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "43"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "prata",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-5",
+      "offer_id": "JQ9229-5",
+      "merchant_title": "Tênis Adidas Ballerina Bad Bunny Off White Black Gum Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Off White / Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:15507753369156717392",
+      "offer_id": "15507753369156717392",
+      "merchant_title": "Camisa Manga Longa Oversized Saint Studio Egípcio Listrada Azul",
+      "fresh_required_attrs": [
+        "age group",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": "azul",
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:12887836741223739253",
+      "offer_id": "12887836741223739253",
+      "merchant_title": "34",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "34"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "cinza",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-36",
+      "offer_id": "JRD-5205470-36",
+      "merchant_title": "Tênis Nike Air Jordan 1 Retro High OG SP Union LA Chicago Shadow",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "36"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:15702667075807199895",
+      "offer_id": "15702667075807199895",
+      "merchant_title": "Moletom Fear Of God Essentials Classic Full Zip-Up Jet Black Preto",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:13509922810333178540",
+      "offer_id": "13509922810333178540",
+      "merchant_title": "L/g",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "L"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_alpha_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "preto",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-42",
+      "offer_id": "JRD-5205470-42",
+      "merchant_title": "Tênis Nike Air Jordan 1 Retro High OG SP Union LA Chicago Shadow",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "42"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:6620553011844522059",
+      "offer_id": "6620553011844522059",
+      "merchant_title": "XL/Gg",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "XL"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_alpha_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "preto",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JH7370-2",
+      "offer_id": "JH7370-2",
+      "merchant_title": "Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Stripes Multi-Color",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:2183-USA",
+      "offer_id": "2183-USA",
+      "merchant_title": "Jason Markk Travel Shoe Cleaning Kit",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-1",
+      "offer_id": "1025116-1A17741_2NM5J-1",
+      "merchant_title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Marrom / Bege"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:11314792792398542744",
+      "offer_id": "11314792792398542744",
+      "merchant_title": "Moletom Oversized Nylon Fear of God Essentials Jet Black Preto",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:300110",
+      "offer_id": "300110",
+      "merchant_title": "Jason Markk Essential Kit de Limpeza",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:MR530TA-1",
+      "offer_id": "MR530TA-1",
+      "merchant_title": "Tênis New Balance 530 Silver Cream Prateado",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "34"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-35",
+      "offer_id": "DA6672-700-35",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs Archive Dark Sulfur",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2000478-L",
+      "offer_id": "NUD-2000478-L",
+      "merchant_title": "Camiseta Baby Look Nude Project Juicy Cherry Branca",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "L/G"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HV6417-001-4",
+      "offer_id": "HV6417-001-4",
+      "merchant_title": "Tênis Nike Zoom Vomero 5 Metallic Silver Platinum Violet Prateado/Violeta",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Prata"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:8751205371375268276",
+      "offer_id": "8751205371375268276",
+      "merchant_title": "Moletom Fear Of God Essentials Classic Jet Black Preto",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Preto",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:JP5309-1",
+      "offer_id": "JP5309-1",
+      "merchant_title": "Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Multi-Color",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "34"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:9780847866694",
+      "offer_id": "9780847866694",
+      "merchant_title": "Livro Rizzoli Nike SB: The Dunk Book",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-4",
+      "offer_id": "JQ9229-4",
+      "merchant_title": "Tênis Adidas Ballerina Bad Bunny Off White Black Gum Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Off White / Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-5",
+      "offer_id": "HF8022300-5",
+      "merchant_title": "Yuto Horigome x Dunk Low SB Matcha",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:8888219390173948734",
+      "offer_id": "8888219390173948734",
+      "merchant_title": "Boné Aimé Leon Dore x Porsche Nylon Logo Pine Grove Verde",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price"
+      ],
+      "suggested_attributes": {
+        "color": "Verde",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-37",
+      "offer_id": "JR4790-37",
+      "merchant_title": "Tênis Adidas Tokyo MJ Core Black Cream White Gold Metallic Preto",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Preto / Branco / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-10",
+      "offer_id": "1183A201-126-10",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "43"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-12",
+      "offer_id": "HF8022300-12",
+      "merchant_title": "Yuto Horigome x Dunk Low SB Matcha",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-36",
+      "offer_id": "DA6672-700-36",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs Archive Dark Sulfur",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "36"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-8",
+      "offer_id": "HF8022300-8",
+      "merchant_title": "Yuto Horigome x Dunk Low SB Matcha",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "42"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-3",
+      "offer_id": "1025116-1A17741_2NM5J-3",
+      "merchant_title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Marrom / Bege"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "36"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-6",
+      "offer_id": "1025116-1A17741_2NM5J-6",
+      "merchant_title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Marrom / Bege"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVNV-3",
+      "offer_id": "SLCRBVNV-3",
+      "merchant_title": "Camiseta Slyce Racquet Club Bordada Azul Marinho",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Azul"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "G/L"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:10695397335246538087",
+      "offer_id": "10695397335246538087",
+      "merchant_title": "42",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor",
+        "sizes": [
+          "42"
+        ]
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy",
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JP5309-5",
+      "offer_id": "JP5309-5",
+      "merchant_title": "Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Multi-Color",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "38"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:LLM-4879198-OS",
+      "offer_id": "LLM-4879198-OS",
+      "merchant_title": "Boné Lululemon Tennis Club Azul",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_one_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "Branco",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JCQ007",
+      "offer_id": "JCQ007",
+      "merchant_title": "Bolsa Jacquemus Le Bambino Long Flap Bag Leopard Print",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Animal Print"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:9914706510510919523",
+      "offer_id": "9914706510510919523",
+      "merchant_title": "37",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor",
+        "sizes": [
+          "37"
+        ]
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy",
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:3256183830573196292",
+      "offer_id": "3256183830573196292",
+      "merchant_title": "L/g",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "L"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_alpha_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "bege",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-8",
+      "offer_id": "1183A201-126-8",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "41"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:12820359859699264559",
+      "offer_id": "12820359859699264559",
+      "merchant_title": "Camiseta Fear Of God Essentials Jersey Crewneck Heather Bege",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Bege",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:17623149180616410488",
+      "offer_id": "17623149180616410488",
+      "merchant_title": "Jaqueta Aimé Leon Dore x Porsche Nylon Track",
+      "fresh_required_attrs": [
+        "age group",
+        "color",
+        "gender",
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor",
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy",
+        "ageGroup": "default_adult_lucas_completeness_policy",
+        "gender": "default_unisex_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "ageGroup default adult",
+        "gender default unisex",
+        "price remains excluded"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:JH7370-1",
+      "offer_id": "JH7370-1",
+      "merchant_title": "Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Stripes Multi-Color",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "34"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:6577883094469507641",
+      "offer_id": "6577883094469507641",
+      "merchant_title": "43",
+      "fresh_required_attrs": [
+        "color",
+        "size"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor",
+        "sizes": [
+          "43"
+        ]
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy",
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback",
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:10310578515087778063",
+      "offer_id": "10310578515087778063",
+      "merchant_title": "40",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "40"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "laranja",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-40",
+      "offer_id": "JR4790-40",
+      "merchant_title": "Tênis Adidas Tokyo MJ Core Black Cream White Gold Metallic Preto",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Preto / Branco / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-7",
+      "offer_id": "1025116-1A17741_2NM5J-7",
+      "merchant_title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Marrom / Bege"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:6666401935644385163",
+      "offer_id": "6666401935644385163",
+      "merchant_title": "Pop Mart Labubu The Monsters Coca-Cola Series Figure Single Blind Box [Lacrado]",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {},
+      "evidence": {},
+      "decision_state": "blocked_price_only_no_nonprice_update",
+      "decision_reasons": [
+        "price remains excluded"
+      ],
+      "selected_for_apply": false,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:JRD-5205470-39",
+      "offer_id": "JRD-5205470-39",
+      "merchant_title": "Tênis Nike Air Jordan 1 Retro High OG SP Union LA Chicago Shadow",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-9",
+      "offer_id": "HF8022300-9",
+      "merchant_title": "Yuto Horigome x Dunk Low SB Matcha",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "43"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:2243578831328686793",
+      "offer_id": "2243578831328686793",
+      "merchant_title": "35",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "35"
+        ]
+      },
+      "evidence": {
+        "sizes": "offer_or_title_numeric_size_token"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "size filled from title/offer/one-size token"
+      ],
+      "selected_for_apply": true,
+      "current_color": "verde",
+      "current_sizes": [],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:DA6672-700-41",
+      "offer_id": "DA6672-700-41",
+      "merchant_title": "Tenis Nike Craft General Purpose Shoe Tom Sachs Archive Dark Sulfur",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "41"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:HF8022300-3",
+      "offer_id": "HF8022300-3",
+      "merchant_title": "Yuto Horigome x Dunk Low SB Matcha",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40.5"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:SLCRBVNV-2",
+      "offer_id": "SLCRBVNV-2",
+      "merchant_title": "Camiseta Slyce Racquet Club Bordada Azul Marinho",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Azul"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "M"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-10",
+      "offer_id": "1025116-1A17741_2NM5J-10",
+      "merchant_title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Marrom / Bege"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "40.5"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-5",
+      "offer_id": "1025116-1A17741_2NM5J-5",
+      "merchant_title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Marrom / Bege"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "37.5"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JS0297-2",
+      "offer_id": "JS0297-2",
+      "merchant_title": "Tênis Adidas Taekwondo Mei Cow Print (Women's) Animal Print",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Multicolor"
+      },
+      "evidence": {
+        "color": "default_color_multicolor_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "35"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JR4790-34",
+      "offer_id": "JR4790-34",
+      "merchant_title": "Tênis Adidas Tokyo MJ Core Black Cream White Gold Metallic Preto",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Preto / Branco / Creme"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "34"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:JQ9229-9",
+      "offer_id": "JQ9229-9",
+      "merchant_title": "Tênis Adidas Ballerina Bad Bunny Off White Black Gum Branco",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Off White / Branco / Preto"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "42"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1025116-1A17741_2NM5J-8",
+      "offer_id": "1025116-1A17741_2NM5J-8",
+      "merchant_title": "Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "suggested_attributes": {
+        "color": "Marrom / Bege"
+      },
+      "evidence": {
+        "color": "title_color_token_aggressive"
+      },
+      "decision_state": "ready_for_wave4_aggressive_nonprice_apply",
+      "decision_reasons": [
+        "color filled from title token or Multicolor fallback"
+      ],
+      "selected_for_apply": true,
+      "current_color": null,
+      "current_sizes": [
+        "39.5"
+      ],
+      "current_ageGroup": "adult",
+      "current_gender": "unisex",
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:16354631407067711955",
+      "offer_id": "16354631407067711955",
+      "merchant_title": "Bolsa Aimé Leon Dore x Porsche Nylon Briefcase Preto | LK Sneakers",
+      "fresh_required_attrs": [
+        "price"
+      ],
+      "suggested_attributes": {},
+      "evidence": {},
+      "decision_state": "blocked_price_only_no_nonprice_update",
+      "decision_reasons": [
+        "price remains excluded"
+      ],
+      "selected_for_apply": false,
+      "current_color": null,
+      "current_sizes": [],
+      "current_ageGroup": null,
+      "current_gender": null,
+      "has_price_required_attr": true
+    }
+  ],
+  "execution_results": [],
+  "verified_results": [],
+  "not_performed": [
+    "merchant_price_update",
+    "merchant_delete",
+    "merchant_title_link_image_availability_update",
+    "feed_update_or_fetch",
+    "shopify_write",
+    "tiny_call_or_write",
+    "database_write",
+    "pos_or_local_inventory_write",
+    "klaviyo_or_whatsapp_send",
+    "notion_or_n8n_write",
+    "loyalty_or_judgeme_action"
+  ]
+}

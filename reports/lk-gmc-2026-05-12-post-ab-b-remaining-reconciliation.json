@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-05-12T14:18:02.468376+00:00",
+  "status": "gmc_post_ab_b_remaining_reconciliation_readonly",
+  "scope": "Package B remaining read-only reconciliation after applied A/B",
+  "source_labels": [
+    "fact_merchant_center",
+    "fact_shopify_local_snapshot",
+    "derived_reconciliation"
+  ],
+  "merchant_products_current_read": 23147,
+  "snapshot_b_records": 954,
+  "state_counts": {
+    "old_present_no_strict_target": 854,
+    "old_absent_after_ab": 93,
+    "old_present_target_already_exists": 7
+  },
+  "remaining_no_strict_target_blockers": {
+    "link_variant_not_found_active": 840,
+    "gtin_duplicate_active_skus": 3,
+    "gtin_not_found_in_active_shopify": 11
+  },
+  "review_queue_title_only_count": 0,
+  "private_review_csv": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_reconciliation/lk-gmc-2026-05-12-post-ab-b-remaining-reconciliation-review.csv",
+  "not_touched": [
+    "merchant_product_write_or_delete",
+    "local_channel",
+    "shopify",
+    "feed",
+    "database",
+    "campaign_or_external_send",
+    "google_business_profile",
+    "pos_inventory"
+  ],
+  "interpretation": {
+    "safe_write_ready_now": 0,
+    "needs_manual_or_data_spine_refresh": 854,
+    "note": "Title-only matches are evidence for manual/Data Spine review, not safe identifier writes."
+  }
+}

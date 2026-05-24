@@ -1,0 +1,877 @@
+{
+  "generated_at": "2026-05-13T06:05:01.090056+00:00",
+  "status": "read_only_sanitized_ranking_preview_ready",
+  "source_label": "platform_signal_wacli_local",
+  "input_signal_report": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-compras-whatsapp-signal-queue-2026-05-13.json",
+  "messages_scanned": 1000,
+  "candidate_clusters": 33,
+  "top_count": 25,
+  "ranking_formula": "message_count + weighted purchase/supplier/price/logistics/closing classes + evidence bonuses; not an approval to buy/contact/write",
+  "top_ranked_candidates": [
+    {
+      "ranking_id": "9b875420b618",
+      "rank_score": 170,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "487148e1e3",
+      "product_hint": "produto_nao_identificado",
+      "sizes_detected": [],
+      "price_band_detected": "R$ 402",
+      "min_price_detected_brl": 402,
+      "max_price_detected_brl": 402,
+      "logistic_flags": [
+        "prazo",
+        "proximidade_sp",
+        "envio/transportadora"
+      ],
+      "signal_classes": {
+        "proximidade_sp_logistica": 14,
+        "produto_tamanho_estoque": 12,
+        "resposta_fornecedor": 9,
+        "pedido_de_compra": 8,
+        "negociacao_preco": 7,
+        "fechamento_compra": 5
+      },
+      "message_count": 48,
+      "latest_timestamp_utc": "2026-05-13T00:28:22Z",
+      "evidence_signal_ids": [
+        "1e912aba1a8e",
+        "acddafada615",
+        "b024a43fb9bf",
+        "214990c78c2d",
+        "03ccf336b89a",
+        "56da7fb62fd5"
+      ],
+      "recommended_next_step": "rank_cheapest_vs_closer_to_sp",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "22d9073eb321",
+      "rank_score": 42,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "487148e1e3",
+      "product_hint": "on",
+      "sizes_detected": [],
+      "price_band_detected": "sem preço detectado",
+      "min_price_detected_brl": null,
+      "max_price_detected_brl": null,
+      "logistic_flags": [
+        "proximidade_sp",
+        "prazo"
+      ],
+      "signal_classes": {
+        "pedido_de_compra": 3,
+        "proximidade_sp_logistica": 2,
+        "produto_tamanho_estoque": 2,
+        "resposta_fornecedor": 2,
+        "negociacao_preco": 2
+      },
+      "message_count": 10,
+      "latest_timestamp_utc": "2026-05-12T23:34:14Z",
+      "evidence_signal_ids": [
+        "7132ad2c5d2c",
+        "b9f8caf5a840",
+        "2f0638152d0e",
+        "9c7af67fc46e",
+        "e60a325f0390",
+        "95c7adafdb82"
+      ],
+      "recommended_next_step": "validate_product_size_stock_context",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "9fa6fcca3f5c",
+      "rank_score": 26,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "147b539713",
+      "product_hint": "produto_nao_identificado",
+      "sizes_detected": [],
+      "price_band_detected": "R$ 301",
+      "min_price_detected_brl": 301,
+      "max_price_detected_brl": 301,
+      "logistic_flags": [
+        "retirada/motoboy",
+        "envio/transportadora"
+      ],
+      "signal_classes": {
+        "proximidade_sp_logistica": 6,
+        "produto_tamanho_estoque": 1,
+        "pedido_de_compra": 1
+      },
+      "message_count": 6,
+      "latest_timestamp_utc": "2026-05-12T16:07:15Z",
+      "evidence_signal_ids": [
+        "05eb05ecaa1d",
+        "52c83bd665d7",
+        "3bb5850efcf8",
+        "b4d855c2f424",
+        "2810cfaaf1c2",
+        "09ff3864e684"
+      ],
+      "recommended_next_step": "rank_cheapest_vs_closer_to_sp",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "75a074e8a348",
+      "rank_score": 18,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "e102c1e25a",
+      "product_hint": "on / preto",
+      "sizes_detected": [],
+      "price_band_detected": "R$ 328–2.810",
+      "min_price_detected_brl": 328,
+      "max_price_detected_brl": 2810,
+      "logistic_flags": [],
+      "signal_classes": {
+        "pedido_de_compra": 2,
+        "fechamento_compra": 2
+      },
+      "message_count": 2,
+      "latest_timestamp_utc": "2026-05-13T00:56:57Z",
+      "evidence_signal_ids": [
+        "543311b03978",
+        "aa16796cb6ea"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "240fe97f105a",
+      "rank_score": 15,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "92daa92b55",
+      "product_hint": "produto_nao_identificado",
+      "sizes_detected": [],
+      "price_band_detected": "sem preço detectado",
+      "min_price_detected_brl": null,
+      "max_price_detected_brl": null,
+      "logistic_flags": [
+        "prazo",
+        "retirada/motoboy"
+      ],
+      "signal_classes": {
+        "proximidade_sp_logistica": 3,
+        "resposta_fornecedor": 1
+      },
+      "message_count": 4,
+      "latest_timestamp_utc": "2026-05-12T15:42:20Z",
+      "evidence_signal_ids": [
+        "4051ae4a2908",
+        "83bb74b09a91",
+        "3bf777a9d4a7",
+        "458792c565ed"
+      ],
+      "recommended_next_step": "needs_manual_context_or_ignore",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "2966fb126679",
+      "rank_score": 14,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "e102c1e25a",
+      "product_hint": "new balance / on",
+      "sizes_detected": [
+        "38"
+      ],
+      "price_band_detected": "R$ 2.026–9.060",
+      "min_price_detected_brl": 2026,
+      "max_price_detected_brl": 9060,
+      "logistic_flags": [],
+      "signal_classes": {
+        "pedido_de_compra": 1,
+        "negociacao_preco": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T16:21:00Z",
+      "evidence_signal_ids": [
+        "86f8c13ea86a"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "df81698be946",
+      "rank_score": 14,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "e102c1e25a",
+      "product_hint": "adidas / samba",
+      "sizes_detected": [
+        "34",
+        "44"
+      ],
+      "price_band_detected": "R$ 1.900–2.026",
+      "min_price_detected_brl": 1900,
+      "max_price_detected_brl": 2026,
+      "logistic_flags": [],
+      "signal_classes": {
+        "pedido_de_compra": 1,
+        "negociacao_preco": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T00:44:57Z",
+      "evidence_signal_ids": [
+        "633496eae7d8"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "025b787bc9f6",
+      "rank_score": 14,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "e102c1e25a",
+      "product_hint": "nike / air force",
+      "sizes_detected": [
+        "40"
+      ],
+      "price_band_detected": "R$ 1.999–2.999",
+      "min_price_detected_brl": 1999,
+      "max_price_detected_brl": 2999,
+      "logistic_flags": [],
+      "signal_classes": {
+        "pedido_de_compra": 1,
+        "negociacao_preco": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T00:33:57Z",
+      "evidence_signal_ids": [
+        "ae95268cf5b5"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "9618b1952269",
+      "rank_score": 14,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "e102c1e25a",
+      "product_hint": "on / white",
+      "sizes_detected": [
+        "38"
+      ],
+      "price_band_detected": "R$ 2.026–4.799",
+      "min_price_detected_brl": 2026,
+      "max_price_detected_brl": 4799,
+      "logistic_flags": [],
+      "signal_classes": {
+        "pedido_de_compra": 1,
+        "negociacao_preco": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-11T22:15:31Z",
+      "evidence_signal_ids": [
+        "cc53b2b914b0"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "14c00463aea4",
+      "rank_score": 13,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "e102c1e25a",
+      "product_hint": "on / white",
+      "sizes_detected": [
+        "39"
+      ],
+      "price_band_detected": "R$ 566–5.090",
+      "min_price_detected_brl": 566,
+      "max_price_detected_brl": 5090,
+      "logistic_flags": [],
+      "signal_classes": {
+        "pedido_de_compra": 1,
+        "fechamento_compra": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T22:47:56Z",
+      "evidence_signal_ids": [
+        "6a3c86f091ec"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "7881a5e4f647",
+      "rank_score": 13,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "c41fdf44bc",
+      "product_hint": "produto_nao_identificado",
+      "sizes_detected": [],
+      "price_band_detected": "sem preço detectado",
+      "min_price_detected_brl": null,
+      "max_price_detected_brl": null,
+      "logistic_flags": [
+        "proximidade_sp"
+      ],
+      "signal_classes": {
+        "proximidade_sp_logistica": 2,
+        "pedido_de_compra": 1
+      },
+      "message_count": 3,
+      "latest_timestamp_utc": "2026-05-12T22:29:48Z",
+      "evidence_signal_ids": [
+        "7a9995609107",
+        "22c40b214f78",
+        "977debc3b846"
+      ],
+      "recommended_next_step": "needs_manual_context_or_ignore",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "2318809f3197",
+      "rank_score": 13,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "e102c1e25a",
+      "product_hint": "on / black",
+      "sizes_detected": [
+        "36"
+      ],
+      "price_band_detected": "R$ 1.183–2.482",
+      "min_price_detected_brl": 1183,
+      "max_price_detected_brl": 2482,
+      "logistic_flags": [],
+      "signal_classes": {
+        "pedido_de_compra": 1,
+        "fechamento_compra": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T18:54:05Z",
+      "evidence_signal_ids": [
+        "a6a8a034b509"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "d0ff6c516a88",
+      "rank_score": 13,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "92daa92b55",
+      "product_hint": "nike / on",
+      "sizes_detected": [],
+      "price_band_detected": "sem preço detectado",
+      "min_price_detected_brl": null,
+      "max_price_detected_brl": null,
+      "logistic_flags": [
+        "proximidade_sp"
+      ],
+      "signal_classes": {
+        "pedido_de_compra": 1,
+        "proximidade_sp_logistica": 1,
+        "fechamento_compra": 1,
+        "produto_tamanho_estoque": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T15:38:43Z",
+      "evidence_signal_ids": [
+        "28b4012eb952"
+      ],
+      "recommended_next_step": "validate_product_size_stock_context",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "9fd436d594ee",
+      "rank_score": 11,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "e102c1e25a",
+      "product_hint": "nike / on",
+      "sizes_detected": [
+        "42"
+      ],
+      "price_band_detected": "R$ 4.035–14.596",
+      "min_price_detected_brl": 4035,
+      "max_price_detected_brl": 14596,
+      "logistic_flags": [],
+      "signal_classes": {
+        "pedido_de_compra": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T20:49:48Z",
+      "evidence_signal_ids": [
+        "240e9eae578b"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "709b244b07b9",
+      "rank_score": 11,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "e102c1e25a",
+      "product_hint": "on / black",
+      "sizes_detected": [
+        "41"
+      ],
+      "price_band_detected": "R$ 2.499–10.097",
+      "min_price_detected_brl": 2499,
+      "max_price_detected_brl": 10097,
+      "logistic_flags": [],
+      "signal_classes": {
+        "pedido_de_compra": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T20:03:56Z",
+      "evidence_signal_ids": [
+        "2d35b0170452"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "8034f277ed74",
+      "rank_score": 11,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "e102c1e25a",
+      "product_hint": "adidas / samba",
+      "sizes_detected": [
+        "35"
+      ],
+      "price_band_detected": "R$ 2.399–7.598",
+      "min_price_detected_brl": 2399,
+      "max_price_detected_brl": 7598,
+      "logistic_flags": [],
+      "signal_classes": {
+        "pedido_de_compra": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T19:57:14Z",
+      "evidence_signal_ids": [
+        "edb21847f3c1"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "d860b16f6f69",
+      "rank_score": 11,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "e102c1e25a",
+      "product_hint": "new balance / on",
+      "sizes_detected": [
+        "35",
+        "36"
+      ],
+      "price_band_detected": "R$ 1.183–5.199",
+      "min_price_detected_brl": 1183,
+      "max_price_detected_brl": 5199,
+      "logistic_flags": [],
+      "signal_classes": {
+        "pedido_de_compra": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T18:18:08Z",
+      "evidence_signal_ids": [
+        "0de3e91c7fe5"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "5bc861e29e4f",
+      "rank_score": 11,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "92daa92b55",
+      "product_hint": "on",
+      "sizes_detected": [
+        "8"
+      ],
+      "price_band_detected": "sem preço detectado",
+      "min_price_detected_brl": null,
+      "max_price_detected_brl": null,
+      "logistic_flags": [],
+      "signal_classes": {
+        "pedido_de_compra": 1,
+        "fechamento_compra": 1,
+        "produto_tamanho_estoque": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T15:45:34Z",
+      "evidence_signal_ids": [
+        "1fb1b04431fc"
+      ],
+      "recommended_next_step": "validate_product_size_stock_context",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "59ea7f9d803d",
+      "rank_score": 11,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "e102c1e25a",
+      "product_hint": "puma / on",
+      "sizes_detected": [],
+      "price_band_detected": "R$ 322–2.026",
+      "min_price_detected_brl": 322,
+      "max_price_detected_brl": 2026,
+      "logistic_flags": [],
+      "signal_classes": {
+        "pedido_de_compra": 1,
+        "fechamento_compra": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T15:44:48Z",
+      "evidence_signal_ids": [
+        "94795465b813"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "46491eb834b1",
+      "rank_score": 9,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "80d12bb81b",
+      "product_hint": "on",
+      "sizes_detected": [],
+      "price_band_detected": "sem preço detectado",
+      "min_price_detected_brl": null,
+      "max_price_detected_brl": null,
+      "logistic_flags": [
+        "retirada/motoboy"
+      ],
+      "signal_classes": {
+        "proximidade_sp_logistica": 1,
+        "fechamento_compra": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T23:42:56Z",
+      "evidence_signal_ids": [
+        "ced26e6309df"
+      ],
+      "recommended_next_step": "notion_logging_preview_only_if_human_purchase_confirmed",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "d2d6c1f0369c",
+      "rank_score": 9,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "c41fdf44bc",
+      "product_hint": "travis / travis 43 em sp",
+      "sizes_detected": [
+        "43"
+      ],
+      "price_band_detected": "sem preço detectado",
+      "min_price_detected_brl": null,
+      "max_price_detected_brl": null,
+      "logistic_flags": [
+        "proximidade_sp"
+      ],
+      "signal_classes": {
+        "proximidade_sp_logistica": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T22:13:58Z",
+      "evidence_signal_ids": [
+        "13a784cb83dd"
+      ],
+      "recommended_next_step": "validate_product_size_stock_context",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "64ca35304811",
+      "rank_score": 8,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "411496fcc1",
+      "product_hint": "produto_nao_identificado",
+      "sizes_detected": [
+        "38",
+        "39"
+      ],
+      "price_band_detected": "R$ 1.750",
+      "min_price_detected_brl": 1750,
+      "max_price_detected_brl": 1750,
+      "logistic_flags": [],
+      "signal_classes": {
+        "resposta_fornecedor": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-13T00:05:42Z",
+      "evidence_signal_ids": [
+        "71d4592b049d"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "ffe1ce15de15",
+      "rank_score": 8,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "9d5ddee7d3",
+      "product_hint": "produto_nao_identificado",
+      "sizes_detected": [
+        "36"
+      ],
+      "price_band_detected": "R$ 600",
+      "min_price_detected_brl": 600,
+      "max_price_detected_brl": 600,
+      "logistic_flags": [],
+      "signal_classes": {
+        "negociacao_preco": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T21:12:28Z",
+      "evidence_signal_ids": [
+        "7b096789e6e5"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "1316ed857bb8",
+      "rank_score": 8,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "9d5ddee7d3",
+      "product_hint": "produto_nao_identificado",
+      "sizes_detected": [
+        "35",
+        "36"
+      ],
+      "price_band_detected": "R$ 600",
+      "min_price_detected_brl": 600,
+      "max_price_detected_brl": 600,
+      "logistic_flags": [],
+      "signal_classes": {
+        "negociacao_preco": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T21:12:07Z",
+      "evidence_signal_ids": [
+        "fc00c621629d"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    },
+    {
+      "ranking_id": "35269328cf1f",
+      "rank_score": 8,
+      "source_label": "platform_signal_wacli_local",
+      "chat_hash": "487148e1e3",
+      "product_hint": "on",
+      "sizes_detected": [
+        "38"
+      ],
+      "price_band_detected": "sem preço detectado",
+      "min_price_detected_brl": null,
+      "max_price_detected_brl": null,
+      "logistic_flags": [],
+      "signal_classes": {
+        "negociacao_preco": 1
+      },
+      "message_count": 1,
+      "latest_timestamp_utc": "2026-05-12T01:06:59Z",
+      "evidence_signal_ids": [
+        "bf1f0e0523e6"
+      ],
+      "recommended_next_step": "validate_product_size_stock_context",
+      "blocked_before_approval": [
+        "whatsapp_send",
+        "supplier_contact",
+        "purchase",
+        "reservation",
+        "notion_write",
+        "shopify_tiny_write",
+        "cron_or_automation"
+      ]
+    }
+  ],
+  "non_actions": [
+    "no_whatsapp_send",
+    "no_supplier_contact",
+    "no_customer_contact",
+    "no_purchase",
+    "no_reservation",
+    "no_notion_write",
+    "no_shopify_tiny_merchant_db_write",
+    "no_cron"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-05-14T21:11:29.842391+00:00",
+  "mode": "read_only_price_source_plan",
+  "productstatuses_read": 23277,
+  "current_target_issue_instances": {
+    "price_updated": 921,
+    "strikethrough_price_updated": 228,
+    "landing_page_error": 3
+  },
+  "current_target_product_counts": {
+    "price_updated": 307,
+    "strikethrough_price_updated": 76,
+    "landing_page_error": 1
+  },
+  "diagnosed_price_cohort": 152,
+  "diagnosis_counts": {
+    "merchant_stale_vs_shopify_and_public": 108,
+    "merchant_matches_shopify_admin": 44
+  },
+  "stale_mismatch_kind_counts": {
+    "regular_price_stale": 62,
+    "sale_price_only_stale": 30,
+    "sale_price_should_be_cleared": 5,
+    "price_and_sale_price_stale": 11
+  },
+  "data_sources": [
+    {
+      "id": "10525577766",
+      "display": "lksneakers.com.br",
+      "input": "AUTOFEED",
+      "role": "primary crawl/autofeed",
+      "destinations": "FREE_LISTINGS enabled; Shopping Ads disabled",
+      "price_risk": "can surface crawl-derived offer state, but no API write target"
+    },
+    {
+      "id": "10636492695",
+      "display": "Content API",
+      "input": "API",
+      "role": "primary API product input",
+      "destinations": "SHOPPING_ADS, FREE_LISTINGS, DISPLAY_ADS enabled",
+      "price_risk": "intended write target; price PATCH/upsert returned success but final Content readback did not persist for 109"
+    },
+    {
+      "id": "10636384718",
+      "display": "Content API",
+      "input": "API",
+      "role": "legacyLocal/local inventory",
+      "destinations": "FREE_LOCAL_LISTINGS enabled",
+      "price_risk": "local/LIA; not primary online price target"
+    },
+    {
+      "id": "10646853947",
+      "display": "LK Sneakers - Color Supplemental Feed",
+      "input": "FILE weekly fetch Mon 03:00 BRT",
+      "role": "supplemental-looking file",
+      "destinations": "Display/Free/Shopping enabled in resource; Content API feed target also excludes Shopping in legacy view",
+      "price_risk": "feed header has id,color,age_group,gender,size only; not direct price source"
+    }
+  ],
+  "supplemental_feed_header": [
+    "id",
+    "color",
+    "age_group",
+    "gender",
+    "size"
+  ],
+  "conclusion": "price writes are blocked; supplemental color file is not the direct price source; likely Merchant source ownership/auto-update/crawl/channel merge issue between API primary and autofeed/crawl/shopify integration.",
+  "next_gate": {
+    "recommended": "read-only Merchant source/settings drilldown and a no-write remediation design",
+    "not_authorized": "bulk price write, feed fetch/upload, deleting datasources, changing Shopify app/settings"
+  },
+  "not_performed": [
+    "Merchant write",
+    "Content API write",
+    "Shopify write",
+    "Tiny write",
+    "data source delete/update",
+    "feed fetch/upload",
+    "campaign/message/send"
+  ]
+}

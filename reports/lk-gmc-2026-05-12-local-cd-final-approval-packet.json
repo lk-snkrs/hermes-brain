@@ -1,0 +1,2459 @@
+{
+  "generated_at": "2026-05-12T16:33:09.318932+00:00",
+  "status": "gmc_local_cd_final_approval_packet_ready_no_execution",
+  "scope": "Final approval packet for 63 residual old local LIA rows, no execution",
+  "source_labels": [
+    "fact_merchant_center",
+    "fact_shopify",
+    "fact_tiny_stock",
+    "derived_reconciliation",
+    "manual_approval_required"
+  ],
+  "summary": {
+    "candidate_rows": 63,
+    "package_counts": {
+      "C_local_identifier_fix": 62,
+      "D_local_stale_triage": 1
+    },
+    "unique_merchant_titles": 14,
+    "replacement_presence_counts": {
+      "has_replacement": 63
+    },
+    "guard_failures_count": 0,
+    "private_rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-local-cd-pos-source-validation-rollback-snapshot.json",
+    "proposed_executor_path_after_approval": "scripts/lk_gmc_execute_local_cd_63_old_lia_cleanup_20260512.py",
+    "merchant_writes": 0,
+    "shopify_writes": 0,
+    "tiny_writes": 0,
+    "pos_or_local_inventory_writes": 0,
+    "database_writes": 0,
+    "external_sends": 0
+  },
+  "approval_contract": {
+    "current_state": "awaiting_lucas_explicit_execution_approval",
+    "what_lucas_would_approve_if_he_says_execute_this_packet": "Delete only the 63 exact old Merchant local product IDs listed in candidates[].old_product_id_to_delete_if_approved, after rebuilding/validating an executor with the hard guards below and verifying replacement rows still exist.",
+    "what_is_not_authorized_by_this_packet": [
+      "delete online products",
+      "delete replacement local rows",
+      "disable local inventory/channel/POS",
+      "modify Shopify/Tiny/feed/database",
+      "touch campaigns or customer-facing surfaces",
+      "expand scope beyond the 63 exact product IDs"
+    ],
+    "rollback_plan_if_approved_later": [
+      "Use private rollback snapshot at the path in summary.private_rollback_snapshot_path.",
+      "If any valid item is removed or count/regression appears, reinsert exact merchant_product_resource for affected old_product_id.",
+      "Verify exact product ID presence/absence after Content API eventual consistency delay.",
+      "Never restore/modify replacement local rows unless separate explicit approval exists."
+    ],
+    "hard_guards_for_executor": [
+      "load candidates from this JSON, not from a broad query",
+      "abort if guard_failures_count is nonzero",
+      "preflight list current Merchant products and confirm every replacement_local_product_id is present",
+      "preflight confirm every old_product_id exists or is already gone/idempotent",
+      "delete only exact old_product_id values; no prefix/wildcard deletes",
+      "after delete, poll full list until each old ID is gone and each replacement ID remains present",
+      "on any replacement missing/regression, stop and do not continue batch"
+    ]
+  },
+  "guard_failures": [],
+  "candidates": [
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ADI-3400542-34",
+      "old_offer_id": "LIA_ADI-3400542-34",
+      "old_normalized_sku": "ADI-3400542-34",
+      "merchant_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "shopify_product_handle": "tenis-adidas-tokyo-crew-white-floral-embroidery-branco",
+      "shopify_current_skus": [
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_JQ1687"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "25",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ADI-3400542-35",
+      "old_offer_id": "LIA_ADI-3400542-35",
+      "old_normalized_sku": "ADI-3400542-35",
+      "merchant_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "shopify_product_handle": "tenis-adidas-tokyo-crew-white-floral-embroidery-branco",
+      "shopify_current_skus": [
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_JQ1687"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "25",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ADI-3400542-36",
+      "old_offer_id": "LIA_ADI-3400542-36",
+      "old_normalized_sku": "ADI-3400542-36",
+      "merchant_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "shopify_product_handle": "tenis-adidas-tokyo-crew-white-floral-embroidery-branco",
+      "shopify_current_skus": [
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_JQ1687"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "25",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ADI-3400542-37",
+      "old_offer_id": "LIA_ADI-3400542-37",
+      "old_normalized_sku": "ADI-3400542-37",
+      "merchant_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "shopify_product_handle": "tenis-adidas-tokyo-crew-white-floral-embroidery-branco",
+      "shopify_current_skus": [
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_JQ1687"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "25",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ADI-3400542-38",
+      "old_offer_id": "LIA_ADI-3400542-38",
+      "old_normalized_sku": "ADI-3400542-38",
+      "merchant_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "shopify_product_handle": "tenis-adidas-tokyo-crew-white-floral-embroidery-branco",
+      "shopify_current_skus": [
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_JQ1687"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "25",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ADI-3400542-39",
+      "old_offer_id": "LIA_ADI-3400542-39",
+      "old_normalized_sku": "ADI-3400542-39",
+      "merchant_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "shopify_product_handle": "tenis-adidas-tokyo-crew-white-floral-embroidery-branco",
+      "shopify_current_skus": [
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_JQ1687"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "25",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ADI-3400542-40",
+      "old_offer_id": "LIA_ADI-3400542-40",
+      "old_normalized_sku": "ADI-3400542-40",
+      "merchant_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Adidas Tokyo Crew White Floral Embroidery Branco",
+      "shopify_product_handle": "tenis-adidas-tokyo-crew-white-floral-embroidery-branco",
+      "shopify_current_skus": [
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687",
+        "JQ1687"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_JQ1687"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "25",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ALD-8631262-OS",
+      "old_offer_id": "LIA_ALD-8631262-OS",
+      "old_normalized_sku": "ALD-8631262-OS",
+      "merchant_title": "Boné 5 Panel Aimé Leon Dore Unisphere Azul",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Boné 5 Panel Aimé Leon Dore Unisphere Azul",
+      "shopify_product_handle": "bone-5-panel-aime-leon-dore-unisphere-azul",
+      "shopify_current_skus": [
+        "AIME11"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_AIME11"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "-1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-3740254-34",
+      "old_offer_id": "LIA_ONI-3740254-34",
+      "old_normalized_sku": "ONI-3740254-34",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sabot-birch-peacoat-bege",
+      "shopify_current_skus": [
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C123.200"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "15",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-3740254-35",
+      "old_offer_id": "LIA_ONI-3740254-35",
+      "old_normalized_sku": "ONI-3740254-35",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sabot-birch-peacoat-bege",
+      "shopify_current_skus": [
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C123.200"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "15",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-3740254-36",
+      "old_offer_id": "LIA_ONI-3740254-36",
+      "old_normalized_sku": "ONI-3740254-36",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sabot-birch-peacoat-bege",
+      "shopify_current_skus": [
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C123.200"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "15",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-3740254-37",
+      "old_offer_id": "LIA_ONI-3740254-37",
+      "old_normalized_sku": "ONI-3740254-37",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sabot-birch-peacoat-bege",
+      "shopify_current_skus": [
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C123.200"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "15",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-3740254-38",
+      "old_offer_id": "LIA_ONI-3740254-38",
+      "old_normalized_sku": "ONI-3740254-38",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sabot-birch-peacoat-bege",
+      "shopify_current_skus": [
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C123.200"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "15",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-3740254-39",
+      "old_offer_id": "LIA_ONI-3740254-39",
+      "old_normalized_sku": "ONI-3740254-39",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sabot-birch-peacoat-bege",
+      "shopify_current_skus": [
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C123.200"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "15",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-3740254-40",
+      "old_offer_id": "LIA_ONI-3740254-40",
+      "old_normalized_sku": "ONI-3740254-40",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sabot-birch-peacoat-bege",
+      "shopify_current_skus": [
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C123.200"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "15",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-3740254-41",
+      "old_offer_id": "LIA_ONI-3740254-41",
+      "old_normalized_sku": "ONI-3740254-41",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sabot-birch-peacoat-bege",
+      "shopify_current_skus": [
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C123.200"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "15",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-3740254-42",
+      "old_offer_id": "LIA_ONI-3740254-42",
+      "old_normalized_sku": "ONI-3740254-42",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sabot-birch-peacoat-bege",
+      "shopify_current_skus": [
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C123.200"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "15",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-3740254-43",
+      "old_offer_id": "LIA_ONI-3740254-43",
+      "old_normalized_sku": "ONI-3740254-43",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Sabot Birch Peacoat Bege",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sabot-birch-peacoat-bege",
+      "shopify_current_skus": [
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200",
+        "1183C123.200"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C123.200"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "15",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-5436510-34",
+      "old_offer_id": "LIA_ONI-5436510-34",
+      "old_normalized_sku": "ONI-5436510-34",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sd-metallic-series-pale-mint-cream-azul-1",
+      "shopify_current_skus": [
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C468.300"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "18",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-5436510-35",
+      "old_offer_id": "LIA_ONI-5436510-35",
+      "old_normalized_sku": "ONI-5436510-35",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sd-metallic-series-pale-mint-cream-azul-1",
+      "shopify_current_skus": [
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C468.300"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "18",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-5436510-36",
+      "old_offer_id": "LIA_ONI-5436510-36",
+      "old_normalized_sku": "ONI-5436510-36",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sd-metallic-series-pale-mint-cream-azul-1",
+      "shopify_current_skus": [
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C468.300"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "18",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-5436510-37",
+      "old_offer_id": "LIA_ONI-5436510-37",
+      "old_normalized_sku": "ONI-5436510-37",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sd-metallic-series-pale-mint-cream-azul-1",
+      "shopify_current_skus": [
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C468.300"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "18",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-5436510-38",
+      "old_offer_id": "LIA_ONI-5436510-38",
+      "old_normalized_sku": "ONI-5436510-38",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sd-metallic-series-pale-mint-cream-azul-1",
+      "shopify_current_skus": [
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C468.300"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "18",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-5436510-39",
+      "old_offer_id": "LIA_ONI-5436510-39",
+      "old_normalized_sku": "ONI-5436510-39",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sd-metallic-series-pale-mint-cream-azul-1",
+      "shopify_current_skus": [
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C468.300"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "18",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-5436510-40",
+      "old_offer_id": "LIA_ONI-5436510-40",
+      "old_normalized_sku": "ONI-5436510-40",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sd-metallic-series-pale-mint-cream-azul-1",
+      "shopify_current_skus": [
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C468.300"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "18",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-5436510-41",
+      "old_offer_id": "LIA_ONI-5436510-41",
+      "old_normalized_sku": "ONI-5436510-41",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sd-metallic-series-pale-mint-cream-azul-1",
+      "shopify_current_skus": [
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C468.300"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "18",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_ONI-5436510-42",
+      "old_offer_id": "LIA_ONI-5436510-42",
+      "old_normalized_sku": "ONI-5436510-42",
+      "merchant_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 SD Metallic Series Pale Mint Cream Azul",
+      "shopify_product_handle": "tenis-onitsuka-tiger-mexico-66-sd-metallic-series-pale-mint-cream-azul-1",
+      "shopify_current_skus": [
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300",
+        "1183C468.300"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_1183C468.300"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "18",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_PAC-5280094-M",
+      "old_offer_id": "LIA_PAC-5280094-M",
+      "old_normalized_sku": "PAC-5280094-M",
+      "merchant_title": "Camiseta Pace Waffle Knit Off White",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Pace Waffle Knit Off White",
+      "shopify_product_handle": "camiseta-pace-waffle-knit-off-white",
+      "shopify_current_skus": [
+        "PACEWAFFLE",
+        "PACEWAFFLE",
+        "PACEWAFFLE"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_PACEWAFFLE"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_PAC-5280094-S",
+      "old_offer_id": "LIA_PAC-5280094-S",
+      "old_normalized_sku": "PAC-5280094-S",
+      "merchant_title": "Camiseta Pace Waffle Knit Off White",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Pace Waffle Knit Off White",
+      "shopify_product_handle": "camiseta-pace-waffle-knit-off-white",
+      "shopify_current_skus": [
+        "PACEWAFFLE",
+        "PACEWAFFLE",
+        "PACEWAFFLE"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_PACEWAFFLE"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_PAC-5280094-XL",
+      "old_offer_id": "LIA_PAC-5280094-XL",
+      "old_normalized_sku": "PAC-5280094-XL",
+      "merchant_title": "Camiseta Pace Waffle Knit Off White",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Pace Waffle Knit Off White",
+      "shopify_product_handle": "camiseta-pace-waffle-knit-off-white",
+      "shopify_current_skus": [
+        "PACEWAFFLE",
+        "PACEWAFFLE",
+        "PACEWAFFLE"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_PACEWAFFLE"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4448862-L",
+      "old_offer_id": "LIA_REP-4448862-L",
+      "old_normalized_sku": "REP-4448862-L",
+      "merchant_title": "Camiseta Represent Clo Revere Manor Stained Black Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Revere Manor Stained Black Preto",
+      "shopify_product_handle": "camiseta-represent-clo-revere-manor-stained-black-preto",
+      "shopify_current_skus": [
+        "Rep20",
+        "Rep20",
+        "Rep20",
+        "Rep20"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep20"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "2",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4448862-M",
+      "old_offer_id": "LIA_REP-4448862-M",
+      "old_normalized_sku": "REP-4448862-M",
+      "merchant_title": "Camiseta Represent Clo Revere Manor Stained Black Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Revere Manor Stained Black Preto",
+      "shopify_product_handle": "camiseta-represent-clo-revere-manor-stained-black-preto",
+      "shopify_current_skus": [
+        "Rep20",
+        "Rep20",
+        "Rep20",
+        "Rep20"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep20"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "2",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4448862-S",
+      "old_offer_id": "LIA_REP-4448862-S",
+      "old_normalized_sku": "REP-4448862-S",
+      "merchant_title": "Camiseta Represent Clo Revere Manor Stained Black Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Revere Manor Stained Black Preto",
+      "shopify_product_handle": "camiseta-represent-clo-revere-manor-stained-black-preto",
+      "shopify_current_skus": [
+        "Rep20",
+        "Rep20",
+        "Rep20",
+        "Rep20"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep20"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "2",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4448862-XL",
+      "old_offer_id": "LIA_REP-4448862-XL",
+      "old_normalized_sku": "REP-4448862-XL",
+      "merchant_title": "Camiseta Represent Clo Revere Manor Stained Black Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Revere Manor Stained Black Preto",
+      "shopify_product_handle": "camiseta-represent-clo-revere-manor-stained-black-preto",
+      "shopify_current_skus": [
+        "Rep20",
+        "Rep20",
+        "Rep20",
+        "Rep20"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep20"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "2",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4481630-L",
+      "old_offer_id": "LIA_REP-4481630-L",
+      "old_normalized_sku": "REP-4481630-L",
+      "merchant_title": "Camiseta Represent Clo Revere Manor Aged White Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Revere Manor Aged White Branco",
+      "shopify_product_handle": "camiseta-represent-clo-revere-manor-aged-white-branco",
+      "shopify_current_skus": [
+        "Rep19",
+        "Rep19",
+        "Rep19",
+        "Rep19"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep19"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4481630-M",
+      "old_offer_id": "LIA_REP-4481630-M",
+      "old_normalized_sku": "REP-4481630-M",
+      "merchant_title": "Camiseta Represent Clo Revere Manor Aged White Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Revere Manor Aged White Branco",
+      "shopify_product_handle": "camiseta-represent-clo-revere-manor-aged-white-branco",
+      "shopify_current_skus": [
+        "Rep19",
+        "Rep19",
+        "Rep19",
+        "Rep19"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep19"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4481630-S",
+      "old_offer_id": "LIA_REP-4481630-S",
+      "old_normalized_sku": "REP-4481630-S",
+      "merchant_title": "Camiseta Represent Clo Revere Manor Aged White Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Revere Manor Aged White Branco",
+      "shopify_product_handle": "camiseta-represent-clo-revere-manor-aged-white-branco",
+      "shopify_current_skus": [
+        "Rep19",
+        "Rep19",
+        "Rep19",
+        "Rep19"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep19"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4481630-XL",
+      "old_offer_id": "LIA_REP-4481630-XL",
+      "old_normalized_sku": "REP-4481630-XL",
+      "merchant_title": "Camiseta Represent Clo Revere Manor Aged White Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Revere Manor Aged White Branco",
+      "shopify_product_handle": "camiseta-represent-clo-revere-manor-aged-white-branco",
+      "shopify_current_skus": [
+        "Rep19",
+        "Rep19",
+        "Rep19",
+        "Rep19"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep19"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4547166-L",
+      "old_offer_id": "LIA_REP-4547166-L",
+      "old_normalized_sku": "REP-4547166-L",
+      "merchant_title": "Camiseta Represent Clo Shark Jaws Off Black Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Shark Jaws Off Black Preto",
+      "shopify_product_handle": "camiseta-represent-clo-shark-jaws-off-black-preto",
+      "shopify_current_skus": [
+        "Rep17",
+        "Rep17",
+        "Rep17",
+        "Rep17"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep17"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "2",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4547166-M",
+      "old_offer_id": "LIA_REP-4547166-M",
+      "old_normalized_sku": "REP-4547166-M",
+      "merchant_title": "Camiseta Represent Clo Shark Jaws Off Black Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Shark Jaws Off Black Preto",
+      "shopify_product_handle": "camiseta-represent-clo-shark-jaws-off-black-preto",
+      "shopify_current_skus": [
+        "Rep17",
+        "Rep17",
+        "Rep17",
+        "Rep17"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep17"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "2",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4547166-S",
+      "old_offer_id": "LIA_REP-4547166-S",
+      "old_normalized_sku": "REP-4547166-S",
+      "merchant_title": "Camiseta Represent Clo Shark Jaws Off Black Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Shark Jaws Off Black Preto",
+      "shopify_product_handle": "camiseta-represent-clo-shark-jaws-off-black-preto",
+      "shopify_current_skus": [
+        "Rep17",
+        "Rep17",
+        "Rep17",
+        "Rep17"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep17"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "2",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4547166-XL",
+      "old_offer_id": "LIA_REP-4547166-XL",
+      "old_normalized_sku": "REP-4547166-XL",
+      "merchant_title": "Camiseta Represent Clo Shark Jaws Off Black Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Shark Jaws Off Black Preto",
+      "shopify_product_handle": "camiseta-represent-clo-shark-jaws-off-black-preto",
+      "shopify_current_skus": [
+        "Rep17",
+        "Rep17",
+        "Rep17",
+        "Rep17"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep17"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "2",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4645470-L",
+      "old_offer_id": "LIA_REP-4645470-L",
+      "old_normalized_sku": "REP-4645470-L",
+      "merchant_title": "Camiseta Represent Clo Storms In Heaven Black Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Storms In Heaven Black Preto",
+      "shopify_product_handle": "camiseta-represent-clo-storms-in-heaven-black-preto",
+      "shopify_current_skus": [
+        "Rep15",
+        "Rep15",
+        "Rep15",
+        "Rep15"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep15"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "0",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4645470-M",
+      "old_offer_id": "LIA_REP-4645470-M",
+      "old_normalized_sku": "REP-4645470-M",
+      "merchant_title": "Camiseta Represent Clo Storms In Heaven Black Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Storms In Heaven Black Preto",
+      "shopify_product_handle": "camiseta-represent-clo-storms-in-heaven-black-preto",
+      "shopify_current_skus": [
+        "Rep15",
+        "Rep15",
+        "Rep15",
+        "Rep15"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep15"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "0",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4645470-S",
+      "old_offer_id": "LIA_REP-4645470-S",
+      "old_normalized_sku": "REP-4645470-S",
+      "merchant_title": "Camiseta Represent Clo Storms In Heaven Black Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Storms In Heaven Black Preto",
+      "shopify_product_handle": "camiseta-represent-clo-storms-in-heaven-black-preto",
+      "shopify_current_skus": [
+        "Rep15",
+        "Rep15",
+        "Rep15",
+        "Rep15"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep15"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "0",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-4645470-XL",
+      "old_offer_id": "LIA_REP-4645470-XL",
+      "old_normalized_sku": "REP-4645470-XL",
+      "merchant_title": "Camiseta Represent Clo Storms In Heaven Black Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Represent Clo Storms In Heaven Black Preto",
+      "shopify_product_handle": "camiseta-represent-clo-storms-in-heaven-black-preto",
+      "shopify_current_skus": [
+        "Rep15",
+        "Rep15",
+        "Rep15",
+        "Rep15"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep15"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "0",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-7288158-L",
+      "old_offer_id": "LIA_REP-7288158-L",
+      "old_normalized_sku": "REP-7288158-L",
+      "merchant_title": "Shorts Represent Clo Owners Club Flat White Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Shorts Represent Clo Owners Club Flat White Branco",
+      "shopify_product_handle": "shorts-represent-clo-owners-club-flat-white-branco",
+      "shopify_current_skus": [
+        "Rep06",
+        "Rep06",
+        "Rep06",
+        "Rep06"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep06"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "4",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-7288158-M",
+      "old_offer_id": "LIA_REP-7288158-M",
+      "old_normalized_sku": "REP-7288158-M",
+      "merchant_title": "Shorts Represent Clo Owners Club Flat White Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Shorts Represent Clo Owners Club Flat White Branco",
+      "shopify_product_handle": "shorts-represent-clo-owners-club-flat-white-branco",
+      "shopify_current_skus": [
+        "Rep06",
+        "Rep06",
+        "Rep06",
+        "Rep06"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep06"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "4",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-7288158-S",
+      "old_offer_id": "LIA_REP-7288158-S",
+      "old_normalized_sku": "REP-7288158-S",
+      "merchant_title": "Shorts Represent Clo Owners Club Flat White Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Shorts Represent Clo Owners Club Flat White Branco",
+      "shopify_product_handle": "shorts-represent-clo-owners-club-flat-white-branco",
+      "shopify_current_skus": [
+        "Rep06",
+        "Rep06",
+        "Rep06",
+        "Rep06"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep06"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "4",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-7288158-XL",
+      "old_offer_id": "LIA_REP-7288158-XL",
+      "old_normalized_sku": "REP-7288158-XL",
+      "merchant_title": "Shorts Represent Clo Owners Club Flat White Branco",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Shorts Represent Clo Owners Club Flat White Branco",
+      "shopify_product_handle": "shorts-represent-clo-owners-club-flat-white-branco",
+      "shopify_current_skus": [
+        "Rep06",
+        "Rep06",
+        "Rep06",
+        "Rep06"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep06"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "4",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-7451998-L",
+      "old_offer_id": "LIA_REP-7451998-L",
+      "old_normalized_sku": "REP-7451998-L",
+      "merchant_title": "Moletom Represent Clo Masking Tape Initial Cedar Marrom",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Moletom Represent Clo Masking Tape Initial Cedar Marrom",
+      "shopify_product_handle": "moletom-represent-clo-masking-tape-initial-cedar-marrom",
+      "shopify_current_skus": [
+        "Rep01",
+        "Rep01",
+        "Rep01",
+        "Rep01"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep01"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-7451998-M",
+      "old_offer_id": "LIA_REP-7451998-M",
+      "old_normalized_sku": "REP-7451998-M",
+      "merchant_title": "Moletom Represent Clo Masking Tape Initial Cedar Marrom",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Moletom Represent Clo Masking Tape Initial Cedar Marrom",
+      "shopify_product_handle": "moletom-represent-clo-masking-tape-initial-cedar-marrom",
+      "shopify_current_skus": [
+        "Rep01",
+        "Rep01",
+        "Rep01",
+        "Rep01"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep01"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-7451998-S",
+      "old_offer_id": "LIA_REP-7451998-S",
+      "old_normalized_sku": "REP-7451998-S",
+      "merchant_title": "Moletom Represent Clo Masking Tape Initial Cedar Marrom",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Moletom Represent Clo Masking Tape Initial Cedar Marrom",
+      "shopify_product_handle": "moletom-represent-clo-masking-tape-initial-cedar-marrom",
+      "shopify_current_skus": [
+        "Rep01",
+        "Rep01",
+        "Rep01",
+        "Rep01"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep01"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_REP-7451998-XL",
+      "old_offer_id": "LIA_REP-7451998-XL",
+      "old_normalized_sku": "REP-7451998-XL",
+      "merchant_title": "Moletom Represent Clo Masking Tape Initial Cedar Marrom",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Moletom Represent Clo Masking Tape Initial Cedar Marrom",
+      "shopify_product_handle": "moletom-represent-clo-masking-tape-initial-cedar-marrom",
+      "shopify_current_skus": [
+        "Rep01",
+        "Rep01",
+        "Rep01",
+        "Rep01"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_Rep01"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_SST-2772190-L",
+      "old_offer_id": "LIA_SST-2772190-L",
+      "old_normalized_sku": "SST-2772190-L",
+      "merchant_title": "Camisa Manga Curta Boxy Saint Studio Egípcio Listrada Marinho",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camisa Manga Curta Boxy Saint Studio Egípcio Listrada Marinho",
+      "shopify_product_handle": "camisa-manga-curta-boxy-saint-studio-egipcio-listrada-marinho",
+      "shopify_current_skus": [
+        "ST34",
+        "ST34",
+        "ST34",
+        "ST34"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_ST34"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_SST-2772190-M",
+      "old_offer_id": "LIA_SST-2772190-M",
+      "old_normalized_sku": "SST-2772190-M",
+      "merchant_title": "Camisa Manga Curta Boxy Saint Studio Egípcio Listrada Marinho",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camisa Manga Curta Boxy Saint Studio Egípcio Listrada Marinho",
+      "shopify_product_handle": "camisa-manga-curta-boxy-saint-studio-egipcio-listrada-marinho",
+      "shopify_current_skus": [
+        "ST34",
+        "ST34",
+        "ST34",
+        "ST34"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_ST34"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_SST-2772190-S",
+      "old_offer_id": "LIA_SST-2772190-S",
+      "old_normalized_sku": "SST-2772190-S",
+      "merchant_title": "Camisa Manga Curta Boxy Saint Studio Egípcio Listrada Marinho",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camisa Manga Curta Boxy Saint Studio Egípcio Listrada Marinho",
+      "shopify_product_handle": "camisa-manga-curta-boxy-saint-studio-egipcio-listrada-marinho",
+      "shopify_current_skus": [
+        "ST34",
+        "ST34",
+        "ST34",
+        "ST34"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_ST34"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_SST-2772190-XL",
+      "old_offer_id": "LIA_SST-2772190-XL",
+      "old_normalized_sku": "SST-2772190-XL",
+      "merchant_title": "Camisa Manga Curta Boxy Saint Studio Egípcio Listrada Marinho",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camisa Manga Curta Boxy Saint Studio Egípcio Listrada Marinho",
+      "shopify_product_handle": "camisa-manga-curta-boxy-saint-studio-egipcio-listrada-marinho",
+      "shopify_current_skus": [
+        "ST34",
+        "ST34",
+        "ST34",
+        "ST34"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_ST34"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_SST-2837726-L",
+      "old_offer_id": "LIA_SST-2837726-L",
+      "old_normalized_sku": "SST-2837726-L",
+      "merchant_title": "Camiseta Boxy Saint Studio Supima Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Boxy Saint Studio Supima Preto",
+      "shopify_product_handle": "camiseta-boxy-saint-studio-supima-preto",
+      "shopify_current_skus": [
+        "ST33",
+        "ST33",
+        "ST33",
+        "ST33"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_ST33"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_SST-2837726-M",
+      "old_offer_id": "LIA_SST-2837726-M",
+      "old_normalized_sku": "SST-2837726-M",
+      "merchant_title": "Camiseta Boxy Saint Studio Supima Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Boxy Saint Studio Supima Preto",
+      "shopify_product_handle": "camiseta-boxy-saint-studio-supima-preto",
+      "shopify_current_skus": [
+        "ST33",
+        "ST33",
+        "ST33",
+        "ST33"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_ST33"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_SST-2837726-S",
+      "old_offer_id": "LIA_SST-2837726-S",
+      "old_normalized_sku": "SST-2837726-S",
+      "merchant_title": "Camiseta Boxy Saint Studio Supima Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Boxy Saint Studio Supima Preto",
+      "shopify_product_handle": "camiseta-boxy-saint-studio-supima-preto",
+      "shopify_current_skus": [
+        "ST33",
+        "ST33",
+        "ST33",
+        "ST33"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_ST33"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_SST-2837726-XL",
+      "old_offer_id": "LIA_SST-2837726-XL",
+      "old_normalized_sku": "SST-2837726-XL",
+      "merchant_title": "Camiseta Boxy Saint Studio Supima Preto",
+      "package_origin": "C_local_identifier_fix",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Camiseta Boxy Saint Studio Supima Preto",
+      "shopify_product_handle": "camiseta-boxy-saint-studio-supima-preto",
+      "shopify_current_skus": [
+        "ST33",
+        "ST33",
+        "ST33",
+        "ST33"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_ST33"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "1",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    },
+    {
+      "approval_state": "awaiting_lucas_explicit_execution_approval",
+      "operation_type_if_approved": "merchant_local_product_delete_exact_old_id_only",
+      "old_product_id_to_delete_if_approved": "local:pt:BR:LIA_LAB-0132830-OS",
+      "old_offer_id": "LIA_LAB-0132830-OS",
+      "old_normalized_sku": "LAB-0132830-OS",
+      "merchant_title": "Pop Mart Labubu The Monsters Coca Cola Series Happy Factor Vinyl Plush Pingente",
+      "package_origin": "D_local_stale_triage",
+      "decision_state": "old_lia_sku_replaced_by_active_shopify_product_with_replacement_local_present",
+      "shopify_product_status": "ACTIVE",
+      "shopify_product_title": "Pop Mart Labubu The Monsters Coca Cola Series Happy Factor Vinyl Plush Pingente",
+      "shopify_product_handle": "pop-mart-labubu-the-monsters-big-into-energy-series-love-vinyl-plush-pingente-copia",
+      "shopify_current_skus": [
+        "43774078386840"
+      ],
+      "replacement_local_product_ids_present": [
+        "local:pt:BR:LIA_43774078386840"
+      ],
+      "replacement_local_present_count": 1,
+      "shopify_total_inventory_quantity": "2",
+      "merchant_destination_problem": false,
+      "merchant_item_issue_count": 0,
+      "why_candidate": "old LIA SKU absent from active Shopify product; replacement local row for current Shopify SKU is already present; Tiny exact codigo was absent in prior read-only probe",
+      "hard_guards_required_before_execution": [
+        "delete only exact old_product_id_to_delete_if_approved",
+        "confirm product_id starts with local:pt:BR:LIA_",
+        "confirm at least one replacement_local_product_id remains present before delete",
+        "confirm old_product_id differs from every replacement_local_product_id",
+        "do not delete replacement local rows",
+        "do not disable local channel or POS provider",
+        "use private rollback snapshot for restore if needed"
+      ]
+    }
+  ],
+  "not_performed": [
+    "merchant_product_delete",
+    "merchant_product_update",
+    "content_api_custombatch",
+    "feed_update",
+    "shopify_write",
+    "tiny_write",
+    "database_write",
+    "local_inventory_disable",
+    "pos_inventory_write",
+    "campaign_or_external_send"
+  ]
+}

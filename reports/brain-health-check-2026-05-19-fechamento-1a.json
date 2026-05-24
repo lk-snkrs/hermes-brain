@@ -1,0 +1,97 @@
+{
+  "summary": [
+    {
+      "check": "secrets",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "links",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "required_files",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "agent_files",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "area_maps",
+      "FAIL": 0,
+      "WARN": 1
+    },
+    {
+      "check": "routines_index",
+      "FAIL": 0,
+      "WARN": 8
+    },
+    {
+      "check": "skill_references",
+      "FAIL": 0,
+      "WARN": 0
+    }
+  ],
+  "issues": [
+    {
+      "level": "WARN",
+      "kind": "subarea_missing_mapa",
+      "path": "areas/zipper/sub-areas/programacao",
+      "detail": "MAPA.md"
+    },
+    {
+      "level": "WARN",
+      "kind": "routine_not_indexed",
+      "path": "areas/lk/rotinas/lk-cro-size-filter-concept-correction-2026-05-18.md",
+      "detail": "missing from empresa/rotinas/_index.md"
+    },
+    {
+      "level": "WARN",
+      "kind": "routine_not_indexed",
+      "path": "areas/lk/sub-areas/crm/rotinas/playbook-newsletter-klaviyo-lk.md",
+      "detail": "missing from empresa/rotinas/_index.md"
+    },
+    {
+      "level": "WARN",
+      "kind": "routine_not_indexed",
+      "path": "areas/lk/sub-areas/crm/rotinas/playbook-whatsapp-meta-templates-carrinho-checkout-abandonado-2026-05-19.md",
+      "detail": "missing from empresa/rotinas/_index.md"
+    },
+    {
+      "level": "WARN",
+      "kind": "routine_not_indexed",
+      "path": "areas/lk/sub-areas/growth/rotinas/weekly-growth-review.md",
+      "detail": "missing from empresa/rotinas/_index.md"
+    },
+    {
+      "level": "WARN",
+      "kind": "routine_not_indexed",
+      "path": "areas/operacoes/rotinas/mordomo-email-whatsapp-intake-correction-2026-05-18.md",
+      "detail": "missing from empresa/rotinas/_index.md"
+    },
+    {
+      "level": "WARN",
+      "kind": "routine_not_indexed",
+      "path": "areas/operacoes/rotinas/mordomo-global-followup-engine-2026-05-18.md",
+      "detail": "missing from empresa/rotinas/_index.md"
+    },
+    {
+      "level": "WARN",
+      "kind": "routine_not_indexed",
+      "path": "areas/operacoes/rotinas/mordomo-prd-implementation-1-3-5-6-2026-05-18.md",
+      "detail": "missing from empresa/rotinas/_index.md"
+    },
+    {
+      "level": "WARN",
+      "kind": "routine_not_indexed",
+      "path": "areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md",
+      "detail": "missing from empresa/rotinas/_index.md"
+    }
+  ],
+  "fail_count": 0,
+  "warn_count": 9
+}

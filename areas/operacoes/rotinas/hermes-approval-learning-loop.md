@@ -67,6 +67,19 @@ Mitigação documentada:
 - [ ] Rodar secret scan.
 - [ ] Completar Kanban com arquivos alterados, evidência, secret scan e próximo passo.
 
+## Registro de 2026-05-12 — Autonomia ampliada
+
+Lucas corrigiu a postura anterior: algumas correções read-only/locais, como a observabilidade Docker por SSH sanitizado, poderiam ter sido executadas sem pedir autorização. Ele quer Hermes com mais autonomia, mantendo julgamento e guardrails.
+
+Decisão operacional registrada em `areas/operacoes/rotinas/hermes-autonomy-ladder.md`:
+
+- A0/A1: executar sem perguntar quando for read-only, local, reversível, sanitizado, sem contato externo e sem mutar fonte de verdade.
+- A2: executar sem nova aprovação quando o pacote específico já foi previewado/aprovado ou quando o ajuste técnico só operacionaliza uma rotina read-only existente.
+- A3: preparar tudo sozinho, mas pedir aprovação antes do write final quando envolver produção/infra/fonte de verdade.
+- A4: bloquear até aprovação atual quando envolver envio externo, dinheiro, cliente, reputação, PII, secret ou destrutivo.
+
+Correção de comportamento: não transformar cautela em inércia. Quando a ação é segura e melhora operação, Hermes deve agir, verificar, documentar e reportar.
+
 ## Guardrail
 
-Este documento não autoriza deploy, restart, Docker, banco, campanha, envio externo, secret access ou exposição pública. Ele só transforma aprovações/correções em memória operacional.
+Este documento autoriza autonomia operacional conforme `hermes-autonomy-ladder.md`, mas não autoriza deploy, restart, mutação Docker/compose/gateway, banco/campanha/envio externo, exposição de secrets ou exposição pública sem os níveis A3/A4 correspondentes. Ele transforma aprovações/correções em memória operacional.

@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-05-15T19:18:38.025782+00:00",
+  "scope": "production narrow revert of COMPRE JÁ dynamic checkout button style only",
+  "theme": {
+    "id": 155065417950,
+    "name": "lk-new-theme/production",
+    "role": "main",
+    "asset": "sections/lk-pdp.liquid"
+  },
+  "backup_path": "/opt/data/hermes_bruno_ingest/local_sql/shopify_theme_backups/lk-prod-compre-ja-revert-20260515T191835Z/sections/lk-pdp.liquid",
+  "before_hash": "07b87c758a68163bcd82604497b2e53cda07ff5fc15e4cc94bed7ef43fc80f36",
+  "target_hash": "639ef271b46736f498dabfc3dd683a03231bd2ba2335037e2a09ac952c1af31e",
+  "readback_hash": "07b87c758a68163bcd82604497b2e53cda07ff5fc15e4cc94bed7ef43fc80f36",
+  "status": "verify_attention",
+  "style_ok": false,
+  "changes": [
+    {
+      "old": "background: var(--off-white, #f7f3ee) !important;",
+      "new": "background: var(--white) !important;",
+      "count": 1
+    },
+    {
+      "old": "background: var(--off-white, #f5f3f0) !important;",
+      "new": "background: var(--white) !important;",
+      "count": 1
+    },
+    {
+      "old": "border: 1px solid var(--warm-gray, #8a8580) !important;",
+      "new": "border: 1px solid var(--light-gray) !important;",
+      "count": 1
+    }
+  ],
+  "before_block": ".pi-actions .shopify-payment-button__button--unbranded {\n    background: var(--off-white, #f7f3ee) !important;\n    color: var(--black) !important;\n    border: 1px solid var(--warm-gray, #8a8580) !important;\n    font-family: var(--font-body) !important;\n    font-size: 10px !important;\n    font-weight: 500 !important;\n    letter-spacing: 2px !important;\n    text-transform: uppercase !important;\n    padding: 14px !important;\n    box-shadow: inset 0 0 0 1px rgba(10,10,10,0.04) !important;\n  }",
+  "after_block": ".pi-actions .shopify-payment-button__button--unbranded {\n    background: var(--off-white, #f7f3ee) !important;\n    color: var(--black) !important;\n    border: 1px solid var(--warm-gray, #8a8580) !important;\n    font-family: var(--font-body) !important;\n    font-size: 10px !important;\n    font-weight: 500 !important;\n    letter-spacing: 2px !important;\n    text-transform: uppercase !important;\n    padding: 14px !important;\n    box-shadow: inset 0 0 0 1px rgba(10,10,10,0.04) !important;\n  }",
+  "non_actions": [
+    "no theme publish/create",
+    "no products/prices/stock",
+    "no campaigns/customer sends",
+    "no broad layout upload"
+  ],
+  "retry_api": "2024-01",
+  "retry_put_status": 200,
+  "retry_before_hash": "639ef271b46736f498dabfc3dd683a03231bd2ba2335037e2a09ac952c1af31e",
+  "retry_target_hash": "d6dc9d60896545f28a60ce254faddcbe447423a1520335d363ace29e7e68a156",
+  "retry_timestamp": "2026-05-15T19:19:08.534000+00:00",
+  "final_status": "verified",
+  "final_hash": "d6dc9d60896545f28a60ce254faddcbe447423a1520335d363ace29e7e68a156",
+  "final_target_hash": "d6dc9d60896545f28a60ce254faddcbe447423a1520335d363ace29e7e68a156",
+  "final_block": ".pi-actions .shopify-payment-button__button--unbranded {\n    background: var(--white) !important;\n    color: var(--black) !important;\n    border: 1px solid var(--light-gray) !important;\n    font-family: var(--font-body) !important;\n    font-size: 10px !important;\n    font-weight: 500 !important;\n    letter-spacing: 2px !important;\n    text-transform: uppercase !important;\n    padding: 14px !important;\n  }",
+  "final_timestamp": "2026-05-15T19:19:36.418093+00:00",
+  "final_checks": {
+    "hash_matches": true,
+    "white_bg": true,
+    "light_gray_border": true,
+    "no_inset_box_shadow": true
+  }
+}

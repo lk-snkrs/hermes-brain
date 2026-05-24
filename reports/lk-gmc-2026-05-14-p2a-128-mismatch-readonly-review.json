@@ -1,0 +1,1765 @@
+{
+  "generated_at": "2026-05-14T06:29:19.556688+00:00",
+  "mode": "readonly_mismatch_review",
+  "source_progress": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p2a-finalize-remaining-online-progress-20260513T202857Z.jsonl",
+  "total_patched_rows": 9826,
+  "verified_merchant_product_get": 9826,
+  "mismatch_count": 153,
+  "failed_count": 0,
+  "pattern_counts": [
+    {
+      "count": 107,
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "count": 43,
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_googleProductCategory": null,
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "count": 1,
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing Accessories > Hats",
+      "expected_productTypes": [
+        "Boné"
+      ],
+      "actual_googleProductCategory": "3515",
+      "actual_productTypes": [
+        "Boné"
+      ]
+    },
+    {
+      "count": 1,
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_googleProductCategory": null,
+      "actual_productTypes": [
+        "Bolsa"
+      ]
+    },
+    {
+      "count": 1,
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_productTypes": [
+        "Tenis",
+        "Sneakers"
+      ]
+    }
+  ],
+  "mismatches": [
+    {
+      "product_id": "online:pt:BR:100289",
+      "expected_googleProductCategory": "Apparel & Accessories > Clothing Accessories > Hats",
+      "actual_googleProductCategory": "3515",
+      "expected_productTypes": [
+        "Boné"
+      ],
+      "actual_productTypes": [
+        "Boné"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:2669418431140851356",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:7958216211561773980",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:16354631407067711955",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:JCQ010",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:JCQ007",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:JCQ003",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:JCQ005",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:JCQ011",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:JCQ001",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:JCQ013",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:JCQ004",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:JCQ012",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:JCQ002",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:JCQ008",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:JCQ006",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:JCQ009",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:11870629-1",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:11680405",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:11750230-1",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:11750230-2",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:11750230-3",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ST4-1",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ST5-1",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:MA0759-AF4",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:NIKEXJAC1",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:NIKEJAC2",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:PAC-3039582-OS",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:RH13",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ST50",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ST8",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ST42-1",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ST42-2",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:LAB31",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-1",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-10",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-11",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-2",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-3",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-4",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-5",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-6",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-7",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-8",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-9",
+      "expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+      "actual_googleProductCategory": null,
+      "expected_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:43774078387680",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:43774078387690",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:43774078387700",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:43774078387710",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:43774078387720",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:43774078387730",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:43774078387740",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:MR530RA-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:MR530RA-10",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:MR530RA-11",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:MR530RA-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:MR530RA-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:MR530RA-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:MR530RA-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:MR530RA-6",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:MR530RA-7",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:MR530RA-8",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:MR530RA-9",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-6",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-7",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-8",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-141-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-141-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-141-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-141-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-141-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-141-6",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-141-7",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-141-8",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-141-9",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:fv5029-100",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:DH6927017-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:DH6927017-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:DH6927017-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:DH4401101",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Apparel & Accessories > Shoes",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tenis",
+        "Sneakers"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:31086601-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:31086601-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:31086601-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:31086601-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:31086601-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:31086601-6",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:31086601-7",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:31086601-8",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:31086601-9",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-11",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-12",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-14",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-15",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-16",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-19",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-20",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-21",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-34",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-34.5",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-35",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-36",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-37",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-38",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-39",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-40",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-40.5",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-41",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-42",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-42.5",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GX4472-43",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID4133-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID4133-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID4133-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID4133-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID4133-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID4133-6",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID4133-7",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID4133-8",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID4133-9",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-14",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-15",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-16",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-18",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-19",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-34",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-34.5",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-35",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-36",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-37",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-38",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-39",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-40",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-40.5",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-41",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-42",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-43",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-44",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:GW1931-45",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID2349-1",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID2349-10",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID2349-11",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID2349-2",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID2349-3",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID2349-4",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID2349-5",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID2349-6",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID2349-8",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:ID2349-9",
+      "expected_googleProductCategory": "Apparel & Accessories > Shoes",
+      "actual_googleProductCategory": "Vestuário e acessórios > Sapatos",
+      "expected_productTypes": [
+        "Tênis"
+      ],
+      "actual_productTypes": [
+        "Tênis"
+      ]
+    }
+  ],
+  "failed": [],
+  "not_performed": [
+    "merchant_patch",
+    "merchant_delete",
+    "title_update",
+    "price_update",
+    "availability_update",
+    "shopify_write",
+    "tiny_write",
+    "notion_write",
+    "marketplace_lookup"
+  ]
+}
