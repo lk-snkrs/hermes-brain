@@ -28,3 +28,20 @@
 ## Silent OK
 
 Rotinas automáticas devem evitar ruído quando tudo está saudável. Alertar apenas anomalias, decisões necessárias ou evidência de impacto.
+
+## Handoff obrigatório
+
+Registrar no Hermes Central quando houver output material, decisão, approval packet, bloqueio, risco, write aprovado/receipt ou aprendizado durável de SEO/CRO/GEO/GMC/CRM.
+
+- Ledger central: `empresa/contexto/handoff-ledger.md`
+- Registro por data: `empresa/contexto/handoffs/YYYY-MM-DD.md`
+- Template: `templates/handoff-especialista.md`
+
+Todo handoff deve declarar fontes, output, aprovação, risco e `Writes externos: não` quando a execução foi apenas read-only/local.
+
+## Bloqueios sem aprovação explícita
+
+- Shopify/GMC/feed/theme/Klaviyo/Meta/Google Ads writes.
+- Publicação de página, blog, schema, FAQ ou campanha.
+- Preço, estoque, desconto, checkout ou promessa material.
+- Envio externo por WhatsApp, e-mail, newsletter ou cliente.

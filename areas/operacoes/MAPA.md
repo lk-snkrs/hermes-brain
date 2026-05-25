@@ -35,6 +35,10 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/auditoria-skills-status-risco.md` — auditoria de skills com owner/status/risco/última revisão.
 - `rotinas/fechamento-agil-23h.md` — rotina ativa do Fechamento Ágil 23h: consolidação diária Brain-first, saída local em `reports/daily-consolidation/YYYY-MM-DD.md`, sem Telegram de sucesso normal.
 - `rotinas/painel-semanal-brain.md` — painel semanal do que entrou no Brain, bloqueios corretos do Brain Sync e rotinas/MAPAs a promover ou limpar.
+- `rotinas/mesa-coo-telegram-quality-audit.md` — auditoria local da próxima Mesa COO real no Telegram: UX limpa, utilidade executiva, botões nativos e ausência de wrapper/job_id/JSON/marker técnico.
+- `rotinas/orquestracao-scorecard-semanal.md` — scorecard semanal da orquestração Hermes COO: roteamento, handoff/receipt, approval gates, UX Telegram e aprendizado/skills.
+- `rotinas/handoff-completeness-audit-local.md` — auditoria local para detectar outputs materiais sem handoff/receipt central e corrigir apenas gaps documentais verificáveis.
+- `rotinas/skills-effectiveness-review.md` — revisão de efetividade de skills para detectar erro repetido, skill inchada/desatualizada e aprendizado no lugar errado.
 
 - `rotinas/brain-operating-layer.md` — camada Hermes-native que transforma o padrão Bruno/OpenClaw em operação viva com receipts, approvals, runtime truth e watchdogs.
 - `rotinas/brain-steward-daily.md` — steward diário silent-OK para daily/hot/receipts/decisões/handoffs/skills.
@@ -105,6 +109,8 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 
 - `../../reports/governance/hermes-brain-operating-layer-feature-audit-2026-05-20.md` — auditoria das 15 features Hermes aplicáveis ao ecossistema Bruno e status já faz/não faz/fortalecido.
 - `../../reports/governance/hermes-brain-operating-layer-implementation-2026-05-20.md` — registro da implementação documental + automação read-only do Brain Operating Layer.
+- `../../reports/governance/top5-melhorias-pos-auditoria-amora-2026-05-25.md` — execução local/read-only das 5 melhorias pós-auditoria Hermes vs Amora: Mesa audit, scorecard semanal, handoff completeness, guardrails read-only e revisão de skills.
+- `../../reports/governance/guardrails-readonly-admin-inspection-packet-2026-05-25.md` — packet para separar inspeção administrativa read-only de mutações em guardrails de ferramentas.
 
 ## Guardrails
 

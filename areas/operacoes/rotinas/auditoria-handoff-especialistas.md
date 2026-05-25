@@ -37,6 +37,20 @@ Para cada especialista/profile/bot ativo:
 6. Se houve envio externo, há evidência sem PII desnecessária?
 7. Se houve falha, existe bloqueio/rollback/próximo passo?
 8. O Hermes Central consegue retomar sem ler o chat bruto?
+9. Existem outputs materiais recentes em `reports/`, `areas/**/receipts/`, `areas/**/decisions/`, approval packets ou PRDs sem handoff correspondente?
+10. Se não houve handoff, a ausência é justificável como saúde normal/silent-OK ou é gap real?
+
+## Handoff completeness check
+
+Quando a auditoria for usada para fechamento Fase 8/COO, tratar estes casos como **gap**:
+
+- relatório interno que muda prioridade ou decisão e não aparece no ledger/handoff;
+- approval packet sem dono, risco, bloqueio, rollback ou próxima decisão;
+- output de especialista salvo só em chat;
+- receipt de write aprovado sem fonte, escopo ou rollback;
+- Mesa COO propondo decisão sem destino/output esperado quando envolver especialista.
+
+Não registrar handoff para checks saudáveis sem consequência; isso vira ruído e contraria silent-OK.
 
 ## Saída esperada
 

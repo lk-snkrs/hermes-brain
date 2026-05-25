@@ -43,35 +43,39 @@ A Mesa nunca aprova nem executa automaticamente:
 
 Saídas de risco viram pacote de decisão/preview com fonte, alvo, payload, risco e rollback.
 
-## Contrato de saída
+## Contrato de saída — v2
 
-Formato curto para Telegram:
+Formato curto para Telegram: **uma mensagem = uma decisão**.
+
+A Mesa COO v2 usa o contrato dos especialistas e o handoff ledger para escolher decisões reais, não status saudável.
+
+Fontes novas da Fase 8:
+
+- `empresa/contexto/contratos-handoff-especialistas.md`
+- `empresa/contexto/handoff-ledger.md`
+- `empresa/contexto/handoffs/YYYY-MM-DD.md`
+- `areas/operacoes/prds/hermes-orquestracao-fase-8-proatividade-handoffs-2026-05-24.md`
+
+Formato visível:
 
 ```md
 ## Mesa COO — YYYY-MM-DD
 
-**Decisão 1 agora:** ...
-- Recomendação: ...
-- Se aprovado, Hermes faz: ...
-- Não faz: ...
-- Fonte: ...
-
-**Bloqueado por Lucas:**
-- ...
-
-**Hermes pode fazer sozinho hoje:**
-- ...
-
-**Riscos:**
-- ...
-
-**Fontes vivas verificadas:**
-- Crons: ...
-- Brain: ...
-- Mission: ...
-
-**Próximo passo recomendado:** ...
+**Decisão 1/4:** ...
+- Dono: Hermes Geral / LK Growth / Mordomo / SPITI / Zipper / Operações
+- Por que importa: ...
+- Se escolher Fazer: ...
+- Evidência: ...
+- Limite/risco: ...
 ```
+
+Regras:
+
+1. Máximo 4 decisões reais por ciclo.
+2. Se não houver decisão real, enviar no máximo 3 bullets e parar.
+3. Não incluir catálogo de módulos, watchdog saudável, wrappers, job IDs, JSON ou marcadores técnicos visíveis.
+4. Para cron com botões nativos, o marcador `HERMES_INLINE_BUTTONS` só pode existir como marcador oculto final, removido pelo scheduler antes do Telegram.
+5. Quando a ação final for produção/contato/publicação/preço/disponibilidade/Docker/VPS/gateway/cron/write externo, **Fazer** significa preparar/validar approval packet ou preview read-only, não executar produção.
 
 ## Estado implementado
 

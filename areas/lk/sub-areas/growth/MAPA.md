@@ -50,7 +50,9 @@ Antes de declarar um diagnóstico de Growth completo, verificar os 18 tópicos e
 
 ## Arquivos desta subárea
 
-- `SOUL.md` — identidade do agente.
+- `SOUL.md` — personalidade, postura e anti-patterns do agente.
+- `IDENTITY.md` — papel, missão, escopo, autonomia e fontes de verdade.
+- `USER.md` — perfil de Lucas/LK para este especialista, preferências e guardrails.
 - `AGENTS.md` — regras operacionais e aprovações.
 - `TOOLS.md` — ferramentas e integrações.
 - `MEMORY.md` — memória local da subárea.

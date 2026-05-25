@@ -66,6 +66,14 @@ Template base: `templates/handoff-especialista.md`
 - Bloqueia: contato externo, proposta, preço, disponibilidade, logística sensível, publicação.
 - Contrato detalhado: `areas/zipper/contrato-operacional-readonly.md`.
 
+### Operações Hermes / Brain / runtime governance
+
+- Escopo: Task Router, Mesa COO, Brain hygiene, skills, cron inventory, runtime observability, gateway/Telegram UX e documentação operacional.
+- Fontes: Brain, skills, cron registry, testes locais, logs/health checks sanitizados e runtime read-only.
+- Pode sem aprovação: auditoria local/read-only, documentação, relatório, skill patch, teste local, secret scan, approval packet e rollback plan.
+- Bloqueia: cron novo/mudança de agenda ou delivery sem escopo aprovado, restart/gateway/Docker/VPS/Traefik/volumes/networks, exposição de porta, secrets e qualquer produção.
+- Handoff quando: houver mudança de governança, correção de UX Lucas-facing, decisão durável, risco runtime, packet ou relatório de fase.
+
 ## Política de silêncio
 
 Todos os especialistas seguem silent-OK: não reportar saúde normal. Alertar apenas decisão, bloqueio, falha, exceção, oportunidade com evidência ou ação que exige Lucas.

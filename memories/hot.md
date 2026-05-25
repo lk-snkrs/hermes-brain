@@ -1,7 +1,7 @@
 # Memória quente — contexto current
 
-Atualizado: 2026-05-22 12:05 UTC
-Status: camada Bruno/OpenClaw criada para evitar perda por compactação.
+Atualizado: 2026-05-25
+Status: camada Bruno/OpenClaw/Hermes COO criada para evitar perda por compactação e orientar handoffs.
 
 ## Prioridades current
 
@@ -9,7 +9,15 @@ Status: camada Bruno/OpenClaw criada para evitar perda por compactação.
 2. Garantir que decisões customer-facing aprovadas por Lucas virem arquivo vivo, MAPA/índice e evidência de verificação.
 3. Manter o Fechamento Ágil 23h + Brain Sync seguro como rotina de consolidação silenciosa/local.
 4. Evitar ruído no Telegram: sucesso normal fica local/Brain; Lucas recebe decisão, exceção, falha ou pedido de aprovação.
-5. Prioridade operacional atual: LK/GMC continua em modo read-only até confirmação visual das Data Sources e aprovação explícita para qualquer write externo.
+5. Orquestrador Hermes/Fase 8: validar a próxima Mesa COO real no Telegram sem wrapper/metadados e manter handoff obrigatório para outputs materiais de especialistas.
+6. Prioridade operacional atual: LK/GMC continua em modo read-only até confirmação visual das Data Sources e aprovação explícita para qualquer write externo.
+
+## Decisões abertas do COO
+
+- Mesa COO v2: aguardar próxima entrega real no Telegram. Se vier limpa, marcar P8.3 como validada; se vazar wrapper/metadata, corrigir scheduler/gateway com teste antes de novo prompt tweak.
+- Handoff completeness: outputs materiais em `reports/`, `areas/**/receipts/`, `areas/**/decisions/` ou approval packets precisam de registro localizável no Brain quando afetarem especialista, decisão, risco, aprovação ou write. Auditoria 2026-05-25 encontrou gap real em LK Growth; correção documental criada em `areas/lk/sub-areas/growth/reports/2026-05-25-handoff-retroativo-receipts-theme.md`, sem inferir aprovação além dos receipts.
+- Amora/Bruno benchmark: não copiar 60+ crons nem multi-canal por padrão; preservar identidade profunda, silêncio útil, MAPA vivo, skills para repetição e rotina com receipts.
+- Pós-auditoria Amora 2026-05-25: top 5 melhorias executadas em modo local/read-only. Item 2 ficou **semanal** via `areas/operacoes/rotinas/orquestracao-scorecard-semanal.md`; sem cron novo até provar utilidade manual/local.
 
 ## Decisões recentes que não podem sumir
 
@@ -25,6 +33,9 @@ Status: camada Bruno/OpenClaw criada para evitar perda por compactação.
 - `areas/operacoes/rotinas/brain-sync.md`
 - `areas/operacoes/rotinas/fechamento-agil-23h.md`
 - `areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md`
+- `areas/operacoes/rotinas/auditoria-handoff-especialistas.md`
+- `reports/governance/handoff-completeness-check-2026-05-25.md`
+- `reports/governance/hermes-orquestrador-vs-amora-audit-2026-05-25.md`
 - `reports/governance/`
 
 ## Bloqueios/guardrails current
