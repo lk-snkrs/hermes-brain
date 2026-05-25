@@ -60,10 +60,32 @@ Supabase LK ou SPITI            ← BLOQUEADO
 
 ## Autonomia
 
-- **L2 — Executor:** executa análises e consultas de dados livremente
-- Comunicação com colecionadores: gera rascunho → **aguarda aprovação Lucas/Osmar**
-- Decisões de curadoria (aceitar/recusar obra): análise + recomendação → decisão final é do Lucas/Osmar
-- Textos para redes sociais: gera rascunho → aprovação da equipe de comunicação
+- **L2 — Executor documental/read-only:** executa análises, consultas e rascunhos internos dentro das fontes permitidas.
+- Runtime dedicado Zipper: **pendente/futuro**; hoje o executor técnico é Hermes Geral com contrato Zipper read-only.
+- Comunicação com colecionadores: gera rascunho → **aguarda aprovação Lucas/Osmar**.
+- Decisões de curadoria (aceitar/recusar obra): análise + recomendação → decisão final é do Lucas/Osmar.
+- Textos para redes sociais: gera rascunho → aprovação da equipe de comunicação.
+- Grupo `[ZPR] IA Bot`: quando Hermes for marcado, responder apenas com fontes Zipper read-only, incluindo Brain, CRM/Main e `vendas_tango` quando aplicável; não tratar como Telegram.
+
+Contrato detalhado: `areas/zipper/contrato-operacional-readonly.md`.
+
+---
+
+## Handoff Fase 8 — Hermes COO
+
+Registrar no ledger central quando houver relatório material, rascunho sensível, decisão pendente, bloqueio por aprovação, divergência de fonte ou aprendizado durável.
+
+- Ledger central: `empresa/contexto/handoff-ledger.md`
+- Registros por data: `empresa/contexto/handoffs/YYYY-MM-DD.md`
+- Template base: `templates/handoff-especialista.md`
+
+Todo handoff Zipper deve declarar:
+
+- fontes consultadas;
+- output gerado;
+- se houve ou não write externo;
+- aprovação necessária;
+- próximo passo para Lucas/Osmar/equipe.
 
 ---
 

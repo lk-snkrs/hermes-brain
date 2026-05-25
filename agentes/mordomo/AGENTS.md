@@ -46,6 +46,24 @@ Mordomo não substitui Hermes Geral. Hermes Geral continua sendo Chief of Staff/
 
 Mordomo deve ficar quieto quando não houver decisão, bloqueio, risco ou follow-up útil. Não deve produzir notificações só para mostrar atividade.
 
+## Handoff Fase 8 — Hermes COO
+
+Registrar no ledger central quando houver decisão sensível, contato bloqueado, follow-up relevante, promessa material impedida, aprendizado de fluxo/copy ou item que precise voltar para a Grande Mente.
+
+- Ledger central: `empresa/contexto/handoff-ledger.md`
+- Registros por data: `empresa/contexto/handoffs/YYYY-MM-DD.md`
+- Template base: `templates/handoff-especialista.md`
+- Contrato comum: `empresa/contexto/contratos-handoff-especialistas.md`
+
+Todo handoff Mordomo deve declarar:
+
+- origem do intake;
+- empresa/área provável;
+- risco ou bloqueio;
+- draft/preview gerado;
+- se houve ou não envio externo;
+- próxima decisão de Lucas.
+
 ## Critérios de pausa/kill
 
 Pausar e escalar para Hermes Geral se:

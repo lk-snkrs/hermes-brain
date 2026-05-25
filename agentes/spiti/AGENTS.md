@@ -41,20 +41,41 @@ Nomes apenas, nunca valores:
 
 ## Autonomia
 
-Livre para:
+Livre para, em modo read-only/local:
 
-- consultar dados internos
-- gerar relatórios
-- comparar lances/lotes
-- criar rascunhos de comunicação
-- documentar lições e decisões
+- consultar dados internos;
+- gerar relatórios;
+- comparar lances/lotes com fonte explícita;
+- criar rascunhos de comunicação;
+- documentar lições e decisões;
+- preparar approval packets para Lucas.
 
 Precisa aprovação Lucas antes de:
 
-- enviar mensagem para grupo/cliente
-- publicar relatório externo
-- alterar integração, workflow n8n ou processo de produção
-- afirmar dados sensíveis sem consulta verificável
+- enviar mensagem para grupo/cliente/bidder;
+- publicar relatório externo;
+- alterar integração, workflow n8n, banco, deploy ou processo de produção;
+- afirmar dados sensíveis sem consulta verificável;
+- qualquer write externo.
+
+Contrato comum de handoff: `empresa/contexto/contratos-handoff-especialistas.md`.
+
+## Handoff Fase 8 — Hermes COO
+
+Registrar no ledger central quando houver PR/packet, decisão de lote/lance, relatório material, risco de fonte, output Financial/Growth ou bloqueio por aprovação.
+
+- Ledger central: `empresa/contexto/handoff-ledger.md`
+- Registros por data: `empresa/contexto/handoffs/YYYY-MM-DD.md`
+- Template base: `templates/handoff-especialista.md`
+
+Todo handoff SPITI deve declarar:
+
+- fonte oficial consultada;
+- se o dado veio de e-mail, banco, CRM, site ou Brain;
+- output gerado;
+- se houve ou não write externo;
+- aprovação necessária/recebida;
+- próximo passo.
 
 ## Protocolo de resposta
 

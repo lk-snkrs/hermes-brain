@@ -1,29 +1,43 @@
 # Mordomo — HEARTBEAT
 
-Status: proposta documental. Nenhum heartbeat/cron foi criado por este arquivo.
+Status: profile/rotinas parciais existentes; este arquivo não autoriza cron novo nem envio externo.
 
 ## Objetivo
 
-Se futuramente aprovado, Mordomo pode revisar inbox/follow-ups e lembrar Lucas apenas quando houver algo útil, bloqueado ou vencendo.
+Mordomo revisa inbox/follow-ups e lembra Lucas apenas quando houver algo útil, bloqueado ou vencendo.
 
-## Cadências candidatas (não ativas)
+## Checks sugeridos
 
-- Sob demanda: organizar uma conversa, áudio, print ou lista de tarefas.
-- Diário leve: resumo de pendências internas, se aprovado.
-- Semanal: higiene de follow-ups e itens esquecidos, se aprovado.
+- Follow-ups simples conhecidos/verificados que podem ser lembrados.
+- Conversas com preço/disponibilidade/reserva/negociação/reclamação/supplier/bulk bloqueadas para aprovação.
+- Itens com prazo, agenda ou compromisso claro.
+- Mensagens que pertencem a LK, Zipper, SPITI ou Operações e precisam roteamento.
+- Falha de rotina viva do Mordomo, quando houver impacto real.
 
-## Condições para virar rotina/cron
+## Política de ruído
 
-Antes de qualquer ativação real:
+Silent-OK: não avisar quando não houver novidade relevante. Não criar digest automático sem decisão de cadência/destino.
 
-1. Definir canal/destino.
-2. Definir cadência e janela de silêncio.
-3. Definir fonte de dados.
-4. Definir kill criteria.
-5. Criar preview manual.
-6. Obter aprovação explícita de Lucas.
-7. Registrar em `areas/operacoes/rotinas/runtime-profile-channel-inventory-2026-05-19.md`.
+Alertar apenas quando houver:
 
-## Contrato de silêncio
+- decisão de Lucas;
+- follow-up vencendo ou com janela clara;
+- bloqueio por aprovação;
+- risco de promessa material sem fonte;
+- item que precisa roteamento para especialista.
 
-Não avisar quando não houver novidade relevante. Não criar digest automático sem decisão de cadência/destino.
+## Bloqueios permanentes sem aprovação explícita
+
+- preço, disponibilidade, reserva, negociação, reclamação;
+- supplier/compra, campanha/bulk;
+- WhatsApp/e-mail/envio externo salvo exceção simples conhecida/verificada já aprovada;
+- criação de cron, webhook, bot, worker, gateway ou runtime.
+
+## Handoff
+
+Registrar outputs materiais no ledger:
+
+- `empresa/contexto/handoff-ledger.md`
+- `empresa/contexto/handoffs/YYYY-MM-DD.md`
+
+Todo registro deve declarar origem do intake, área provável, risco/bloqueio e `Writes externos: não` quando a execução foi apenas read-only/local.

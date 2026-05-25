@@ -1,3 +1,14 @@
+## 2026-05-24 — Daily Intelligence Loop saudável + Learning Ledger 23h→02h
+
+- Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-24.md`.
+- Host observability salvo em `reports/hermes-host-docker-observability-2026-05-24.json`: containers esperados `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)`, helper com `alerts: []`.
+- Confirmado estado vivo: 23 jobs ativos no cron status/list, watchdogs runtime/compressão/gateways especialistas em silent-OK; `hermes skills check` com 0 updates disponíveis.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 segue como release pública mais recente; nenhum runtime swap/restart executado.
+- Criado `reports/hermes-learning-ledger/2026-05-24.md`, promovendo os `Learning Ledger candidates` do Fechamento 23h para registro diário A0/A1 com destino, ação, verificação e bloqueios.
+- Corrigido helper local `/opt/data/scripts/brain_sync_safe.py` para allowlist de `reports/hermes-learning-ledger/`, validado com `py_compile` e dry-run; o ledger agora entra no pacote seguro de sync.
+- Atualizado `areas/operacoes/inventarios/crons-agentes-profiles.md` com seção 2026-05-24 para refletir a evidência viva atual de 23 jobs e delivery `local` dos watchdogs críticos.
+- Prioridade ativa roteada para LK OS/LK Growth: source pages/GEO, Shopify theme e automação POS em modo governado; Zipper/Mordomo em Decision Inbox/manutenção, SPITI em monitoramento e Hermes/Infra saudável.
+
 ## 2026-05-23 — Daily Intelligence Loop saudável + foco LK 404/GEO
 
 - Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-23.md`.

@@ -1,10 +1,12 @@
 # Organograma de Agentes — Hermes Brain
 
-Última atualização: 2026-05-19
+Última atualização: 2026-05-24
 
 ## Status curto
 
 O organograma estratégico está correto: uma Grande Mente central, com Lucas pessoal e os OSs das empresas abaixo. O que faltava era explicitar a diferença entre **camadas de negócio**, **agentes documentais** e **profiles/bots reais em runtime**.
+
+Complemento 2026-05-24: o organograma agora também explicita **orquestrador, tarefa, executor, approval boundary e handoff**. Referências canônicas: `organograma-orquestrador-tarefas-hermes.md`, `matriz-roteamento-tarefas-hermes.md` e `task-router-hermes.md`.
 
 ## Hierarquia canônica
 
@@ -37,6 +39,7 @@ Grande Mente — Hermes Brain / Hermes COO
 - Runtime: profile principal `/opt/data`.
 - Papel: Chief of Staff/COO central, roteamento, Brain, decisões, Mission Control, crons, skills, integrações e guardrails.
 - É a entrada padrão para Lucas no Telegram principal.
+- Limite: não é executor universal; quando a matriz define especialista dono, deve rotear e cobrar handoff.
 
 ### 2. Mordomo / Lucas pessoal
 
@@ -52,6 +55,7 @@ Grande Mente — Hermes Brain / Hermes COO
 - Especialista ativo recente: LK Growth OS em `areas/lk/sub-areas/growth/`.
 - Runtime Growth: `/opt/data/profiles/lk-growth` / bot `@LKGrowth_HermesBot`.
 - Regra: Growth é read-only/preview por padrão; Shopify/GMC/GA4/GSC/Klaviyo/Meta writes exigem approval packet e aprovação explícita.
+- Regra de roteamento: conteúdo/blog/source page/copy SEO/GEO/CRO/FAQ/schema editorial da LK pertence a `lk-growth`; Hermes Geral só orquestra, valida guardrails e entrega preview/packet.
 
 ### 4. Zipper OS
 
@@ -71,20 +75,26 @@ Grande Mente — Hermes Brain / Hermes COO
 
 - Organograma global: `empresa/contexto/organograma-operacional-hermes-brain.md`.
 - Este arquivo: mapa agente/runtime/profile.
+- Orquestração por tarefa: `empresa/contexto/organograma-orquestrador-tarefas-hermes.md`.
+- Matriz executor/aprovação/handoff: `empresa/contexto/matriz-roteamento-tarefas-hermes.md`.
+- Algoritmo operacional: `empresa/contexto/task-router-hermes.md`.
 - Regras globais: `AGENTS.md` e `agentes/hermes-geral/AGENTS.md`.
 - Regras por negócio: `areas/<empresa>/MAPA.md` + documentação em `agentes/<empresa>/`.
 - Runtime real: processos `hermes gateway run`, `HERMES_HOME`, `cronjob list` e configs dos profiles.
 
 ## Gaps conhecidos
 
-1. `agentes/lk/AGENTS.md` e `agentes/zipper/AGENTS.md` ainda têm marcas legadas de `cerebro-cimino`, `/root` e `Claw`; devem ser tratados como base histórica até serem normalizados para Hermes Brain.
-2. Mordomo está operacional como profile, mas ainda não tem pasta documental completa no padrão `agentes/mordomo/`.
-3. LK Growth está bem documentado em `areas/lk/sub-areas/growth/`, mas deve ser referenciado também nos mapas globais para não parecer um agente solto.
-4. O organograma deve separar sempre:
+1. `agentes/lk/AGENTS.md` e `agentes/zipper/AGENTS.md` ainda têm marcas legadas de `cerebro-cimino`, `/root` e `Claw`; já possuem aviso de manutenção, mas devem ser normalizados gradualmente para linguagem Hermes-native.
+2. Mordomo, LK, Zipper e SPITI agora têm pacote documental mínimo no padrão Amora/Hermes (`SOUL`, `IDENTITY`, `USER`, `AGENTS`, `MAPA`, `HEARTBEAT`, `TOOLS`, `MEMORY`). O próximo gap não é criar arquivo, é manter consistência entre esses arquivos e runtime real.
+3. LK Growth está bem documentado em `areas/lk/sub-areas/growth/` e referenciado nos mapas globais como especialista ativo; deve continuar sendo executor de conteúdo/SEO/GEO/CRO, não subpasta solta.
+4. Zipper permanece sem runtime dedicado; tratá-lo como documental/read-only até decisão de criar profile/bot próprio.
+5. O organograma deve separar sempre:
    - camada de negócio;
    - agente documental;
    - runtime profile/bot ativo;
-   - cron/rotina.
+   - cron/rotina;
+   - tarefa roteável;
+   - handoff/receipt.
 
 ## Regra curta
 

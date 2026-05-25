@@ -60,10 +60,33 @@ Supabase Zipper ou SPITI        ← BLOQUEADO
 
 ## Autonomia
 
-- **L2 — Executor:** executa análises e consultas de dados livremente
-- Campanhas Klaviyo: gera rascunho + preview → **aguarda aprovação Lucas** antes de enviar
-- Envios WhatsApp em massa: **sempre aprovação Lucas**
-- Cross-sell individual pós-compra: **sempre aprovação Lucas** com preview
+- **L2 — Executor documental/read-only:** executa análises, consultas e rascunhos internos dentro das fontes permitidas.
+- LK Growth profile é o dono preferencial de SEO, CRO, GEO, GMC, analytics, conteúdo, blog e source pages.
+- Campanhas Klaviyo: gera rascunho + preview → **aguarda aprovação Lucas** antes de enviar.
+- Envios WhatsApp em massa: **sempre aprovação Lucas**.
+- Cross-sell individual pós-compra: **sempre aprovação Lucas** com preview.
+- Shopify, GMC, Klaviyo, Meta, theme, produção, preço, disponibilidade, reserva e promessa material exigem fonte viva + aprovação explícita quando houver write/contato.
+
+Contrato comum de handoff: `empresa/contexto/contratos-handoff-especialistas.md`.
+
+---
+
+## Handoff Fase 8 — Hermes COO
+
+Registrar no ledger central quando houver conteúdo criado/revisado, relatório material, packet, decisão pendente, bloqueio por aprovação, write aprovado/receipt ou aprendizado durável.
+
+- Ledger central: `empresa/contexto/handoff-ledger.md`
+- Registros por data: `empresa/contexto/handoffs/YYYY-MM-DD.md`
+- Template base: `templates/handoff-especialista.md`
+
+Todo handoff LK deve declarar:
+
+- se o executor foi LK Growth ou LK operações;
+- fontes consultadas;
+- output gerado;
+- se houve ou não write externo;
+- aprovação necessária/recebida;
+- rollback/receipt quando houver write aprovado.
 
 ---
 

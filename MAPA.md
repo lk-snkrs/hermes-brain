@@ -65,6 +65,9 @@ hermes-brain/
 | Organograma da Grande Mente | `empresa/contexto/organograma-operacional-hermes-brain.md` |
 | Nomenclatura Cérebro Cimino vs Hermes Brain | `empresa/contexto/nomenclatura-cerebro-cimino-hermes-brain.md` |
 | Organograma de agentes/profiles | `empresa/contexto/organograma-agentes-hermes.md` |
+| Organograma de orquestrador e tarefas | `empresa/contexto/organograma-orquestrador-tarefas-hermes.md` |
+| Matriz de roteamento de tarefas | `empresa/contexto/matriz-roteamento-tarefas-hermes.md` |
+| Task Router Hermes | `empresa/contexto/task-router-hermes.md` |
 | Bruno/OpenClaw: segundo cérebro + crons | `areas/operacoes/base-conhecimento/bruno-openclaw-segundo-cerebro-crons-consolidacao-diaria-2026-05-19.md` |
 | BRD: Fechamento Ágil 23h | `areas/operacoes/brds/hermes-brain-fechamento-agil-23h-brd-2026-05-19.md` |
 | Bruno/OpenClaw: agentes → Brain | `areas/operacoes/base-conhecimento/bruno-openclaw-organograma-agentes-e-brain-2026-05-19.md` |

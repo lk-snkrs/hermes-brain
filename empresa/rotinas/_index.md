@@ -24,6 +24,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Fechamento Ágil 23h | `areas/operacoes/rotinas/fechamento-agil-23h.md` | Consolidação diária Brain-first às 23h BRT, saída local em `reports/daily-consolidation/YYYY-MM-DD.md`, sem Telegram de sucesso normal |
 | Painel Semanal do Brain | `areas/operacoes/rotinas/painel-semanal-brain.md` | Relatório semanal do que entrou no Brain, o que ficou bloqueado pelo Brain Sync e quais rotinas precisam promoção/limpeza |
 | Protocolo Handoff Agentes Especialistas | `areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md` | Regra para especialistas reportarem decisões, receipts e handoffs ao Hermes Central/Brain |
+| Task Router Handoff Especialistas | `areas/operacoes/rotinas/task-router-handoff-especialistas.md` | Roteamento e handoff seguro entre Hermes Geral, Mordomo e especialistas sem furar aprovação |
 | Auditoria Handoff Especialistas | `areas/operacoes/rotinas/auditoria-handoff-especialistas.md` | Checklist diário/semanal para verificar se profiles/bots/especialistas deixaram receipt/handoff no Brain e não viraram ilhas de dados |
 | Memória Hot/Daily Bruno | `areas/operacoes/rotinas/memoria-hot-daily-bruno.md` | Camada `memories/hot.md` e `memories/daily/YYYY-MM-DD.md` para sobreviver a compactação e reinício de sessão |
 | Auditoria Skills Status Risco | `areas/operacoes/rotinas/auditoria-skills-status-risco.md` | Rotina para revisar skills com owner lógico, status, risco, última revisão e falhas conhecidas |

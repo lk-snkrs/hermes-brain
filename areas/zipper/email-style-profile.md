@@ -1,13 +1,13 @@
 # Zipper OS — Perfil de Escrita de Lucas por E-mail
 
-Atualizado: 2026-05-23T06:21:22.217401+00:00
+Atualizado: 2026-05-24T06:21:48.500493+00:00
 
 ## Escopo
 
 - Conta analisada: `lucas@zippergaleria.com.br`
 - Janela: últimos 365 dias
 - Amostra enviada analisada: 50 mensagens
-- Mensagens recebidas localizadas para contexto: 29
+- Mensagens recebidas localizadas para contexto: 23
 
 ## Regra de segurança
 
@@ -15,30 +15,31 @@ Hermes usa este perfil **apenas para rascunhos/previews**. Nunca envia e-mail, W
 
 ## Padrões agregados detectados
 
-- Tamanho médio: 99.9 palavras / 14.6 linhas
-- Mensagens com algum compromisso/encaminhamento: 11
-- Mensagens com compromisso suave tipo “vou alinhar/confirmar/retorno”: 0
-- Mensagens com vocabulário cultural/Zipper: 25
-- Exclamações totais na amostra: 45
-- Perguntas totais na amostra: 72
+- Tamanho médio: 101.4 palavras / 15.5 linhas
+- Mensagens com algum compromisso/encaminhamento: 13
+- Mensagens com compromisso suave tipo “vou alinhar/confirmar/retorno”: 1
+- Mensagens com vocabulário cultural/Zipper: 24
+- Exclamações totais na amostra: 44
+- Perguntas totais na amostra: 73
 
 ## Aberturas frequentes
 
 - (sem saudação detectada): 22
-- Olá Fabi, tudo bem?: 2
+- Oi Marcella, tudo bem?: 1
+- Oi Ju, boa tarde! Fechado, você trás quando?: 1
+- Oi Julia, boa noite.: 1
 - Olá segue: 1
 - Oi Ju tudo bem?: 1
 - Olá Celina, tudo bem?: 1
 - Oi Matias, tudo bem?: 1
-- Olá como vai Flávia? Segue nosso preview ;): 1
-- Olá Salcy, tudo bem?: 1
 
 ## Fechamentos frequentes
 
-- (sem fechamento detectado): 35
-- Atenciosamente,: 7
-- Obrigado e abraços,: 6
+- (sem fechamento detectado): 36
+- Atenciosamente,: 6
+- Obrigado e abraços,: 5
 - Abraço,: 2
+- Um abraço,: 1
 
 ## Diretrizes operacionais para rascunhos Zipper
 

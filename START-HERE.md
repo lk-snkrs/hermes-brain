@@ -25,9 +25,28 @@ Grande Mente — Hermes Brain / Hermes COO
 Dados vivos — Supabase, Shopify, APIs, email, crons e integrações
 ```
 
-Referências: `empresa/contexto/organograma-operacional-hermes-brain.md` e `empresa/contexto/nomenclatura-cerebro-cimino-hermes-brain.md`.
+Referências: `empresa/contexto/organograma-operacional-hermes-brain.md`, `empresa/contexto/organograma-orquestrador-tarefas-hermes.md`, `empresa/contexto/matriz-roteamento-tarefas-hermes.md`, `empresa/contexto/task-router-hermes.md` e `empresa/contexto/nomenclatura-cerebro-cimino-hermes-brain.md`.
 
 O agente não é o cérebro. O agente lê e escreve no cérebro.
+
+## Regra de roteamento antes de executar
+
+Antes de executar trabalho operacional, o Hermes Geral deve consultar a matriz de roteamento quando houver especialista dono claro.
+
+Fluxo obrigatório:
+
+1. Classificar contexto: Lucas pessoal, LK, LK Growth, Zipper, SPITI, Operações Hermes, Tecnologia/Infra ou Governança.
+2. Classificar tipo de tarefa: decisão, conteúdo, analytics, atendimento, rotina/cron, código/infra, write externo ou documentação.
+3. Consultar `empresa/contexto/matriz-roteamento-tarefas-hermes.md` e `empresa/contexto/task-router-hermes.md`.
+4. Se existir especialista/profile dono, rotear em vez de executar por conveniência.
+5. Se envolver A3/A4 — write externo, produção, cliente, dinheiro, Docker/VPS, banco, Shopify, GMC, Klaviyo, Meta, Supabase — preparar packet/preview e aguardar aprovação explícita atual.
+6. Registrar handoff no Brain quando houver output relevante, decisão, risco, approval, receipt ou aprendizado.
+
+Regra anti-erro recente:
+
+- Conteúdo, blog, source page, copy SEO/GEO/CRO e FAQ/schema editorial da LK são tarefas de `lk-growth`, não do Hermes Geral.
+- Hermes Geral pode preparar briefing, rotear, validar guardrails e entregar arquivo/preview para Lucas.
+- Hermes Geral não deve escrever/publicar o conteúdo final da LK por conveniência.
 
 ## Regra Hermes vs OpenClaw
 
