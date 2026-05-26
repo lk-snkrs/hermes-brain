@@ -14,6 +14,7 @@ Status: mapa documental e operacional do SPITI OS.
 
 - Relatórios SPITI: `areas/spiti/reports/` ou subárea equivalente.
 - PRDs/projetos: `areas/spiti/projetos/` quando a estrutura existir.
+- Baseline de crons locais: `areas/spiti/projetos/spiti-cron-registry-baseline-2026-05-25.md`.
 - Handoffs: seguir `areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md`.
 - Código: usar repositórios SPITI com branch/PR seguro, nunca direto em produção.
 

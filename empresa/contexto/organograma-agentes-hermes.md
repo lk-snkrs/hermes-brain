@@ -46,7 +46,7 @@ Grande Mente — Hermes Brain / Hermes COO
 - Runtime: `/opt/data/profiles/mordomo`.
 - Papel: intake pessoal, follow-ups, inbox, drafts internos, agenda e roteamento pessoal/multiempresa.
 - Regra: nunca envia e-mail/WhatsApp/cliente/fornecedor sozinho; prepara preview/draft interno e espera aprovação explícita no turno atual quando houver contato externo.
-- Gap documental: precisa ganhar pasta documental própria em `agentes/mordomo/` ou `areas/lucas-pessoal/` se o volume continuar crescendo.
+- Status documental: pacote mínimo já existe em `agentes/mordomo/`; o próximo gap é manter consistência entre esse pacote, o runtime `/opt/data/profiles/mordomo` e os handoffs registrados no Brain.
 
 ### 3. LK OS
 

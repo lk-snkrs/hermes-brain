@@ -15,6 +15,7 @@ Este arquivo é um snapshot governamental do runtime local observado via registr
 - Telegram/origin é reservado para decisão, exceção, relatório aprovado ou falha relevante.
 - Cron pausado por mais de 14 dias precisa decisão: remover, reativar, arquivar ou converter em rotina manual.
 - Nenhum cron novo deve ser criado antes de checar duplicidade com 23h, 02h, 02h30 e Mesa COO.
+- Loops de aprendizado Pixel AI Hub/Brainzinho/Openclawzinho pertencem ao Hermes Agent / Operações Hermes. Se o executor técnico ainda estiver no profile Mordomo para ler WhatsApp, o owner documental e o prompt devem apontar para Hermes Agent, não Mordomo.
 
 ## Resumo do snapshot
 
@@ -96,6 +97,14 @@ Este arquivo é um snapshot governamental do runtime local observado via registr
   - Side effects: local/silent.
   - Kill criteria: afirmar runtime sem evidência; duplicar inventário sem registrar diferença.
 
+- `c358f8f56a26` — Pixel AI Hub / Brainzinho daily learning scan
+  - Schedule: `30 23 * * *` UTC / fim do dia.
+  - Delivery: `origin` apenas quando houver aprendizado relevante; no-op deve ser silent-OK quando tecnicamente possível.
+  - Owner corrigido em 2026-05-25: Hermes Agent / Operações Hermes, não Mordomo.
+  - Estado observado: ainda localizado no scheduler/profile Mordomo como executor técnico histórico; migração real para Hermes Agent exige alteração controlada de cron, backup antes/depois e prompt sem identidade Mordomo.
+  - Rotina/PRD: `areas/operacoes/prds/pixel-ai-hub-learning-loop-hermes-agent-2026-05-25.md`.
+  - Kill criteria: virar spam diário, copiar material bruto, tratar comunidade como lead/CRM, ou rodar com prompt/owner Mordomo depois da migração aprovada.
+
 ### Watchdogs técnicos
 
 - `edd06fe19397` — Hermes runtime + cron watchdog no_agent
@@ -134,6 +143,8 @@ Este arquivo é um snapshot governamental do runtime local observado via registr
   - Kill criteria: spam; reinício em loop.
 
 ### LK / negócio
+
+Nota de ownership: nesta seção, diferenciar `LK Growth` de `LK Comercial/Ops`. SEO, CRO, GEO, GMC, analytics, conteúdo e impact reviews pertencem ao especialista LK Growth. Vendas, pulso comercial, fechamento de loja e reports comerciais obrigatórios permanecem no Main/COO enquanto não existir um profile operacional LK próprio. Não migrar automaticamente relatórios comerciais para LK Growth só por conterem “LK”.
 
 - `7c688553e293` — LK Daily Sales Brief read-only mandatory delivery
   - Schedule: `0 11 * * *` UTC / 08h BRT.

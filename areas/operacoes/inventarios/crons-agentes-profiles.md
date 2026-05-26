@@ -1,7 +1,7 @@
 # Inventário vivo — crons, agentes, profiles e projetos
 
-Data-base: 2026-05-24 05:01 UTC
-Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via Hostinger helper + fallback Hermes CLI em 2026-05-24**
+Data-base: 2026-05-25 11:20 UTC
+Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-05-25**
 Escopo: Hermes Brain / Grande Mente / profiles especialistas / crons Hermes.
 
 ## 1. Princípio
@@ -340,6 +340,24 @@ Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-
 - Jobs ativos sem `Last run` ainda:
   - `Lucas Brain weekly Learning Loop report` (`f4c499e85eac`) — ativo, `origin`, semanal; primeira execução esperada em 2026-05-25 12:15 UTC.
 - Drift de contagem em relação ao snapshot anterior de 2026-05-24 05:01 UTC: sem mudança (`23 ativos / 0 pausados listados`).
+- Seções antigas com watchdogs em `origin` permanecem históricas; evidência viva atual confirma `local` para runtime+cron, compression self-heal, Mordomo gateway, LK Growth gateway, SPITI gateway, Operating Layer, Runtime Truth Reconciler, responder regression e strict-runtime guard.
+- Delivery `origin` observado sem erro explícito: `LK Daily Sales Brief`, `LK Weekly CEO Review`, `LK GMC Review`, `Mesa COO diária Telegram`, `Lucas Brain weekly Learning Loop report` e `Relatório Hermes diário 23h + 02h para Lucas`; nenhuma mudança de delivery foi feita.
+- Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo ou secret foi alterado.
+
+### Reconciliação Runtime Truth — 2026-05-25 11:20 UTC
+
+Evidência runtime: tentativa de `cronjob list` neste container/runtime não encontrou o comando no PATH; fallback canônico usado com sucesso: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all`.
+
+Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-25.md`.
+
+- Total de jobs listados: 23.
+- Ativos: 23.
+- Pausados/disabled listados: 0.
+- `last_status` não-ok: 0 na listagem atual.
+- Erros explícitos de delivery: 0 na listagem atual.
+- Jobs ativos sem `Last run` ainda:
+  - `Lucas Brain weekly Learning Loop report` (`f4c499e85eac`) — ativo, `origin`, semanal; próxima execução prevista em 2026-05-25 12:15 UTC.
+- Drift de contagem em relação ao snapshot anterior de 2026-05-24 11:21 UTC: sem mudança (`23 ativos / 0 pausados listados`).
 - Seções antigas com watchdogs em `origin` permanecem históricas; evidência viva atual confirma `local` para runtime+cron, compression self-heal, Mordomo gateway, LK Growth gateway, SPITI gateway, Operating Layer, Runtime Truth Reconciler, responder regression e strict-runtime guard.
 - Delivery `origin` observado sem erro explícito: `LK Daily Sales Brief`, `LK Weekly CEO Review`, `LK GMC Review`, `Mesa COO diária Telegram`, `Lucas Brain weekly Learning Loop report` e `Relatório Hermes diário 23h + 02h para Lucas`; nenhuma mudança de delivery foi feita.
 - Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo ou secret foi alterado.

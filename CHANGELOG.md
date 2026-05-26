@@ -1,3 +1,13 @@
+## 2026-05-25 — Daily Intelligence Loop saudável + Brain Improvement Score canônico
+
+- Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-25.md`.
+- Host observability salvo em `reports/hermes-host-docker-observability-2026-05-25.json`: containers esperados `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)`, helper com `alerts: []`.
+- Confirmado estado vivo: 23 jobs ativos no cron status/list, watchdogs runtime/compressão em silent-OK; `hermes skills check` com 0 updates disponíveis.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 segue como release pública mais recente; nenhum runtime swap/restart executado.
+- Gerados os artefatos canônicos aprovados do gate 02h: `reports/brain-health-check-2026-05-25-02h.json` com FAIL=0/WARN=0 e `reports/brain-improvement-score-2026-05-25-02h.{md,json}` com score 94/100.
+- Criado `reports/hermes-learning-ledger/2026-05-25.md`, registrando foco em UX limpa da Mesa COO/cron decisions, score item 2 e runtime-truth-before-claims.
+- Prioridade ativa roteada para Hermes Geral/Orquestrador/UX de decisão: validar próxima Mesa COO como decisão 1/N com botões nativos, sem wrapper técnico; LK/Zipper/SPITI/Mordomo ficam em manutenção/monitoramento.
+
 ## 2026-05-24 — Daily Intelligence Loop saudável + Learning Ledger 23h→02h
 
 - Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-24.md`.

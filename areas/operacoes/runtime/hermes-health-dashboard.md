@@ -80,6 +80,7 @@ Critério esperado:
 - Relatórios/raw JSON/receipts podem permanecer locais; promover só resumo durável.
 - Docker/VPS/Traefik/volumes/redes continuam fora de escopo sem aprovação explícita + backup/rollback.
 - Qualquer recriação de cron removido exige rotina `.md`, owner, fonte, delivery, kill criteria e approval packet novo.
+- Pixel AI Hub / Brainzinho foi reclassificado para Hermes Agent / Operações; enquanto a migração real do cron não for executada, tratar o job no Mordomo como executor técnico legado, não owner do raciocínio.
 
 ## Próximas melhorias recomendadas
 

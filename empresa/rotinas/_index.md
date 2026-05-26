@@ -11,6 +11,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Brain Health Check | `areas/operacoes/rotinas/brain-health-check.md` | Validação de secrets, links, agentes, rotinas e skills |
 | Hermes Release Watch | `areas/operacoes/rotinas/hermes-release-watch.md` | Monitorar releases do Hermes Agent e avaliar melhorias aplicáveis |
 | Hermes Runtime Observability | `areas/operacoes/rotinas/hermes-runtime-observability.md` | Inventário read-only de versão, containers, gateway, cron e logs Hermes |
+| Hermes Agent Cron e Performance Diagnóstico | `areas/operacoes/rotinas/hermes-agent-cron-e-performance-diagnostico.md` | Auditoria de crons por fonte primária e diagnóstico de lentidão/travamento por camadas antes de limpeza ou restart |
 | Runtime/Profile/Channel Inventory 2026-05-19 | `areas/operacoes/rotinas/runtime-profile-channel-inventory-2026-05-19.md` | Matriz única de profiles, bots, canais, destino, cadência, status documental, silent contract e kill criteria |
 | Mesa COO diária Telegram 2026-05-19 | `areas/operacoes/rotinas/mesa-coo-diaria-telegram-2026-05-19.md` | Rotina diária/on-demand da Mesa COO no Telegram, com Brain como source of truth e zero writes externos |
 | Second Brain Excellence Backlog 2026-05-19 | `areas/operacoes/rotinas/second-brain-excellence-backlog-2026-05-19.md` | Backlog P0 de runtime vivo, limpeza OpenClaw/cerebro, skill audit, Mordomo e Mission alinhado à Mesa COO |
@@ -36,6 +37,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Brain Steward Diário | `areas/operacoes/rotinas/brain-steward-daily.md` | Auditoria silent-OK de daily/hot/receipts/decisões/handoffs/skills |
 | Runtime Truth Reconciler | `areas/operacoes/rotinas/runtime-truth-reconciler.md` | Reconcilia inventário/documentação com cron/profile/bot runtime real |
 | Cron Control Plane | `areas/operacoes/rotinas/cron-control-plane.md` | Controle governamental dos crons vivos/pausados: owner, delivery, side effects e kill criteria |
+| Reauditoria Semanal Donos de Crons x Organograma | `areas/operacoes/rotinas/cron-owner-reaudit-semanal.md` | Rotina semanal/local para conferir crons por profile contra organograma, Task Router, ruído e candidatos a migração |
 | Decision Inbox Taxonomy | `areas/operacoes/rotinas/decision-inbox-taxonomy.md` | Taxonomy canônica da COO Queue/Decision Inbox para reduzir falsos positivos e ruído |
 | Customer-Facing Decision Guard | `areas/operacoes/rotinas/customer-facing-decision-guard.md` | Garante registro durável de copy, tom, canal, promessa, oferta e fluxo customer-facing |
 | Hot Memory Compiler | `areas/operacoes/rotinas/hot-memory-compiler.md` | Mantém `memories/hot.md` como snapshot operacional curado |
@@ -116,6 +118,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | LK SEO/CRO Weekly Improvement Loop | `areas/lk/rotinas/seo-cro-weekly-improvement-loop.md` | Rotina semanal read-only com Claude SEO: nota, meta e fila priorizada de melhorias de PDP/páginas |
 | LK Growth Weekly Review | `areas/lk/sub-areas/growth/rotinas/weekly-growth-review.md` | Revisão semanal Growth com GA4/GSC/GMC/Shopify, Claude SEO, Claude Ads e Claude Blog como camadas read-only |
 | LK Growth Decision Router | `areas/lk/sub-areas/growth/rotinas/growth-decision-router.md` | Roteia sintomas Growth para GA4/GSC/GMC/Shopify/CRO/GEO/Ads/Blog/DataForSEO e define critérios decision-grade |
+| LK Growth D+7 Review Digest Ledger | `areas/lk/sub-areas/growth/rotinas/growth-d7-review-digest-ledger.md` | Desenho local para consolidar reviews D+7 da LK Growth em digest/ledger antes de qualquer mudança de cron; não ativa cron, não muda delivery e não autoriza Shopify/GMC/externos |
 | LK Growth DataForSEO MCP Reload Approval | `areas/lk/sub-areas/growth/rotinas/dataforseo-mcp-reload-approval-2026-05-19.md` | Packet de aprovação para reload/restart controlado do runtime antes de expor DataForSEO no agente ativo |
 | LK CRO Weekly Preview Top Priorities 2026-05-19 | `areas/lk/rotinas/lk-cro-weekly-preview-top-priorities-2026-05-19.md` | Pacote read-only de hipóteses CRO/dev-theme para Onitsuka/Mexico 66, New Balance 204L e Kill Bill, sem writes |
 | LK Search Console Read-only Router 2026-05-11 | `areas/lk/rotinas/search-console-readonly-router-2026-05-11.md` | Fase 6: GSC real como `fact_gsc`, queries/páginas/CTR/posição virando fila SEO/CRO sem writes |

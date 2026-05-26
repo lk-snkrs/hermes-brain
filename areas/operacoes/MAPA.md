@@ -27,6 +27,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/area-skill-subagent-agent-decision.md` — matriz para decidir área, rotina, skill, subagent, cron ou agente/canal permanente.
 - `rotinas/hermes-release-watch.md` — monitoramento de releases Hermes Agent e avaliação de melhorias.
 - `rotinas/hermes-runtime-observability.md` — observabilidade read-only do runtime Hermes.
+- `rotinas/hermes-agent-cron-e-performance-diagnostico.md` — rotina Hermes Agent para auditar crons por fonte primária e diagnosticar lentidão/travamento por camadas antes de limpeza/restart.
 - `rotinas/company-decision-memory.md` — protocolo para salvar toda decisão empresarial na memória viva da empresa correspondente.
 - `rotinas/protocolo-registro-decisoes-aprovadas-contexto-compactado.md` — regra anti-perda para registrar aprovações de copy/tom/fluxo antes que contexto de chat seja compactado.
 - `rotinas/protocolo-handoff-agentes-especialistas.md` — mecanismo de handoff para impedir que especialistas virem ilhas de dados e garantir subida de decisões/receipts ao Hermes Central.
@@ -45,6 +46,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/runtime-truth-reconciler.md` — reconciliação entre documentação e runtime real de crons/profiles/bots.
 - `intelligence-map.md` — mapa central de loops 23h/02h/02h30/Mesa COO, fontes, outputs, guardrails e anti-duplicidade.
 - `rotinas/cron-control-plane.md` — snapshot governamental dos crons vivos/pausados, owners, delivery, side effects e kill criteria.
+- `rotinas/cron-owner-reaudit-semanal.md` — reauditoria semanal/local dos donos de crons x organograma, Task Router, profiles e ruído de entrega.
 - `rotinas/decision-inbox-taxonomy.md` — taxonomy canônica da COO Queue/Decision Inbox para reduzir falsos positivos e ruído.
 - `../../scripts/operational_docs_guard.py` — scanner de docs operacionais para impedir `/root`, `sshpass`, Mem0 legado e comandos perigosos como instrução viva sem marcador LEGACY/DRY-RUN/DO NOT RUN.
 - `rotinas/customer-facing-decision-guard.md` — guard para copy/tom/fluxo/canal/promessa/oferta/customer-facing.
@@ -80,6 +82,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 
 - `brds/hermes-brain-fechamento-agil-23h-brd-2026-05-19.md` — BRD para aprovação do Fechamento Ágil 23h: consolidação diária Brain-first, multi-agente, sem writes externos e sem ruído Telegram desnecessário.
 - `prds/hermes-brain-daily-consolidation-crons-prd-2026-05-19.md` — PRD inicial para implementar o ciclo Bruno/OpenClaw no Hermes Brain: inventário vivo, auditoria 07h, consolidação diária, manutenção de memória e auditoria mensal de MAPAs. Observação: horário do fechamento ajustado no BRD para 23h BRT conforme Lucas.
+- `prds/pixel-ai-hub-learning-loop-hermes-agent-2026-05-25.md` — PRD do loop Pixel AI Hub/Brainzinho como melhoria contínua do Hermes Agent central, não ownership do Mordomo.
 - `prds/company-decision-memory-prd-2026-05-17.md` — PRD da regra de memória de decisões por empresa.
 - `projetos/hermes-brain-improvement-system.md` — sistema contínuo para transformar material externo em melhorias seguras do Brain.
 - `projetos/mission-control-prd.md` — PRD do Mission Control Hermes read-only, começando como relatório/protocolo seguro.

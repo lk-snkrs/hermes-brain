@@ -14,6 +14,8 @@ Status: mapa documental/read-only até existir runtime dedicado.
 
 - Relatórios e análises: `areas/zipper/reports/` ou subárea pertinente.
 - Comunicação/artistas: `areas/zipper/sub-areas/comunicacao/` quando existir.
+- Operações e governança documental: `areas/zipper/operacoes/`.
+- Critério para profile próprio: `areas/zipper/operacoes/zipper-profile-promotion-criteria-2026-05-25.md`.
 - Handoffs: seguir `areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md`.
 
 ## Roteamento rápido
