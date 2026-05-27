@@ -7,6 +7,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `sub-areas/crm/` — recompra, RFM, cross-sell, leads esfriando, sugestões e consequências.
 - `sub-areas/trafego-pago/` — hipóteses, criativos, testes, dados e learnings de performance.
 - `sub-areas/ecommerce/` — Shopify, produtos, estoque, pedidos, UX e catálogo.
+- `sub-areas/shopify/` — LK Shopify especialista: produto/upload, coleções, páginas/objetos Shopify, preview/aprovação, readback/receipt e padrões canônicos de execução.
 - `sub-areas/atendimento/` — FAQ, dúvidas, suporte e consolidação para bot.
 
 ## Projeto estratégico aprovado
@@ -51,6 +52,11 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `rotinas/on-demand-sourcing-router-readiness-guard-2026-05-11.md` — `LK-AUTO-006` guard manual/read-only por item: 15 checks, 0 fails/warnings, 4 famílias prontas só após aprovação manual, sem marketplace/fornecedor/compra/write/cron.
 - `rotinas/phase8-completion-audit-2026-05-11.md` — fechamento Fase 8 atualizado após reconciliação PRD: 7 `LK-AUTO` consolidados, 4 crons ativos, 3 reports obrigatórios, 3 guards manuais, 0 n8n/writes/envios externos/compra/marketplace.
 - `rotinas/gmc-review-cron-reconciliation-2026-05-12.md` — correção Lucas/PRD: ativado `LK-AUTO-007` GMC Review read-only quinta 09h BRT, cron `d4c26da4cd48`, sem Merchant/feed/Shopify/GSC writes.
+- `rotinas/lk-trend-weekly-v1-2026-05-26.md` — especificação aprovada da v1 do LK Trend: relatório semanal + fila de oportunidades, sem writes, separando oportunidade de conteúdo de oportunidade de compra/reposição, com score 100, anti-duplicidade Shopify/Tiny e evolução futura para previews Shopify só após nova aprovação.
+- `rotinas/lk-trend-weekly-report-v1-2026-05-26.md` + `rotinas/lk-trend-opportunity-queue-v1-2026-05-26.json` — primeira edição real/read-only do LK Trend Weekly v1: Mary Jane/ballet sneakers, Onitsuka Mexico 66, Nike Moon Shoe Jacquemus, Alo Yoga reposição e New Balance 204L; nenhum write externo.
+- `rotinas/lk-trend-runtime-handoff-2026-05-26.md` — correção de roteamento: Hermes Geral mantém governança/documentação; próximas execuções do LK Trend devem rodar no perfil especialista, preferencialmente `lk-growth` até existir um bot/profile dedicado `lk-trends`.
+- `sub-areas/trends/` — pacote Brain do LK Trend Hermes: profile local `/opt/data/profiles/lk-trends` preparado, gateway parado, token Telegram dedicado pendente, PRD `projetos/prd-lk-trend-hermes-bot-20260526.md`, foco em relatório semanal/fila de oportunidades/previews internos sem writes.
+- `rotinas/shopify-event-tiny-stock-sync-prd-2026-05-26.md` + `rotinas/approval-packet-shopify-event-tiny-stock-sync-2026-05-26.md` — decisão Lucas: Shopify é gatilho de venda/cancelamento, Tiny é fonte única de estoque; sync proposto deve consultar Tiny por variante exata e só então atualizar Shopify, com dry-run/ledger/idempotência antes de qualquer write.
 - `rotinas/mission-control-snapshot-2026-05-12.md` — Fase 9 Mission Control v1: visão executiva read-only com 4 crons, 3 reports obrigatórios, 24 ledger records, 5 aprovações, 0 bloqueios de dados após autofix, Klaviyo Draft, sourcing readiness e GMC queue.
 - `rotinas/lk-os-status-surface-2026-05-14.md` — superfície padrão de resposta para `Status Projeto LK OS`/`Seguir`: estado atual, paralelo seguro, bloqueios, próximo passo e templates Telegram antes/depois do GMC final.
 - `rotinas/needs-data-autofix-readonly-2026-05-12.md` — regra Lucas aplicada: lookup/reconciliação/correção local de `needs_data` pode ser autônoma em read-only; 3 itens checados, 0 bloqueios restantes, Onitsuka/Saint monitor, Bearbrick higiene interna, 0 writes/contatos/compras/marketplace.
@@ -84,6 +90,8 @@ Shopify, Supabase LK, Klaviyo, GA4/GSC, Meta Ads, Judge.me, Frenet, Tiny ERP, Ev
 ## Skills canônicas LK
 
 - `skills/lk-shopify-readonly/SKILL.md` — Shopify LK em modo leitura, com Doppler e bloqueio de writes/envios sem aprovação.
+- `skills/lk-shopify-product-upload/SKILL.md` — cadastro/upload de produtos Shopify com GOAT/fotos/SKU/descrição SEO/preview antes de qualquer write.
+- `sub-areas/shopify/templates/preview-aprovacao-shopify.md` — template obrigatório para approval packets/preview de writes Shopify/Tiny/theme.
 - `skills/lk-crosssell/SKILL.md` — oportunidades de cross-sell pós-pedido.
 - `skills/lk-leads-esfriando/SKILL.md` — leads/clientes em risco de esfriar.
 

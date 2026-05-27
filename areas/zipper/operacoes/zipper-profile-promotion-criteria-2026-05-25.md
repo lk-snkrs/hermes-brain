@@ -94,4 +94,6 @@ Se a promoção for aprovada no futuro, preparar antes:
 
 ## Veredito atual
 
-Não criar profile Zipper agora. Manter como documental/read-only sob Mordomo/Hermes Geral e reavaliar quando houver volume, risco ou demanda de canal próprio.
+Não criar profile Zipper imediatamente. Manter como documental/read-only sob Mordomo/Hermes Geral, mas tratar a promoção como possibilidade real se o volume observado continuar.
+
+Documento complementar atualizado: `zipper-runtime-gatilhos-e-guardrails-2026-05-26.md`.

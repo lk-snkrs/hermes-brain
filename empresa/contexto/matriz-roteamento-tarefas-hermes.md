@@ -1,8 +1,9 @@
 # Matriz de Roteamento de Tarefas — Hermes
 
-Data: 2026-05-24  
-Status: aprovado para Fase 1 documental  
+Data: 2026-05-27
+Status: matriz operacional viva; Fase 1 documental concluída e runtime/guardrails em evolução
 PRD: `areas/operacoes/prds/hermes-orquestrador-tarefas-organograma-prd-2026-05-24.md`
+Política de autonomia/aprovação: `empresa/contexto/politica-autonomia-aprovacao-hermes.md`
 
 ## Como usar
 
@@ -18,6 +19,18 @@ Antes de executar uma tarefa operacional, Hermes Geral deve:
 Regra:
 
 > Se existe especialista dono claro, Hermes Geral não deve executar por conveniência.
+
+## Autonomia em 3 níveis
+
+Para evitar a sensação de "perda de autonomia" sem abrir mão da segurança, a matriz deve ser lida assim:
+
+- **Autonomia livre local**: leitura, auditoria, organização, documentação, preview e diagnóstico read-only.
+- **Autonomia local com escopo aprovado**: manutenção bounded, restart de profile nomeado, ajuste de launcher/env do perfil certo e execução do que já foi explicitamente aprovado.
+- **Ações sensíveis / writes externos**: produção, contato externo, writes externos, Docker/VPS/root/SSH/Traefik/volumes/networks, secrets e qualquer mudança fora do escopo aprovado exigem aprovação explícita atual; com aprovação, o especialista executa o escopo aprovado.
+
+Regra operacional: **aprovação escopada deve destravar a execução do que foi aprovado; ela não deve reaparecer como novo bloqueio a cada etapa local segura.**
+
+Regra de linguagem: **`seguir` sozinho não é aprovação de risco; só autoriza continuidade local/read-only/documental ou execução já coberta por escopo explícito anterior.**
 
 ## Matriz v1
 
@@ -61,7 +74,22 @@ Regra:
 - **Exige aprovação:** qualquer correção em Shopify, GMC, theme, feeds, ads, Klaviyo.
 - **Handoff:** obrigatório para packets, decisões, receipts e follow-ups.
 
-### 4. LK operações/atendimento/estoque/preço
+### 4. LK Shopify — produto/upload/coleções/superfície de publicação
+
+- **ID:** `lk-shopify-surface`
+- **Triggers:** Shopify, produto/upload, cadastrar produto, coleção, página Shopify, menu, tag, SEO field Shopify, tema/dev theme, variant/SKU, readback/receipt Shopify.
+- **Contexto:** LK Sneakers / Shopify.
+- **Orquestrador:** Hermes Geral ou LK Growth/LK Ops conforme entrada.
+- **Executor:** LK Shopify profile quando operacional; enquanto houver limitação de runtime, usar Brain/skills canônicos e registrar handoff.
+- **Runtime:** `/opt/data/profiles/lk-shopify`.
+- **Brain path:** `areas/lk/sub-areas/shopify/`.
+- **Output:** preview padronizado, approval packet, snapshot, readback, receipt, rollback.
+- **Permitido sem aprovação:** leitura read-only, diagnóstico, rascunho, preview, documentação/template, approval packet.
+- **Exige aprovação:** qualquer Shopify/Tiny/GMC/Klaviyo/Meta/theme/write externo; preço, estoque, publicação, status, campanha ou contato.
+- **Padrão canônico:** `areas/lk/sub-areas/shopify/templates/preview-aprovacao-shopify.md` + skills `lk-shopify-readonly`/`lk-shopify-product-upload`; se envolver guia/editorial, herdar padrão Moon Shoe do LK Growth.
+- **Handoff:** obrigatório para preview material, aprovação, execução, bloqueio, readback, receipt, rollback ou aprendizado.
+
+### 5. LK operações/atendimento/estoque/preço
 
 - **ID:** `lk-ops-commerce-sensitive`
 - **Triggers:** pedido, cliente, estoque, preço, disponibilidade, reserva, desconto, Tiny, Shopify pedido/produto.
@@ -73,7 +101,7 @@ Regra:
 - **Exige aprovação:** preço, disponibilidade prometida, reserva, contato externo sensível, Shopify/Tiny write.
 - **Handoff:** obrigatório se houver decisão ou resposta material.
 
-### 5. Mordomo / Lucas pessoal
+### 6. Mordomo / Lucas pessoal
 
 - **ID:** `mordomo-personal-intake`
 - **Triggers:** WhatsApp pessoal, agenda, lembrete, follow-up, cliente no WhatsApp pessoal, compromisso, cobrança simples.
@@ -86,7 +114,7 @@ Regra:
 - **Exige aprovação:** preço, disponibilidade, reserva, negociação, reclamação, fornecedor/compra, campanha/bulk, promessa material.
 - **Handoff:** decisões, exceções, contatos sensíveis e aprendizados devem voltar ao Brain.
 
-### 6. Zipper comunicação/CRM/obras
+### 7. Zipper comunicação/CRM/obras
 
 - **ID:** `zipper-os-readonly-comm-crm`
 - **Triggers:** Zipper, artista, obra, colecionador, proposta, vendas_tango, logística de obra, exposição.
@@ -99,7 +127,7 @@ Regra:
 - **Exige aprovação:** contato com colecionador/artista, proposta, preço, disponibilidade, logística externa sensível, e-mail/WhatsApp.
 - **Handoff:** obrigatório para relatório enviado/agendado, decisão, proposta/draft material ou risco.
 
-### 7. SPITI OS
+### 8. SPITI OS
 
 - **ID:** `spiti-os`
 - **Triggers:** SPITI, leilão, lote, lance, Hub, Financial, obra SPITI, bidder, SPITI Growth.
@@ -112,7 +140,7 @@ Regra:
 - **Exige aprovação:** deploy, banco/write, cliente/bidder contact, afirmação de lance/lote sem fonte oficial, publicação.
 - **Handoff:** obrigatório para decisões, PRs, output de Hub/Financial/Growth e riscos.
 
-### 8. Operações Hermes / Brain hygiene
+### 9. Operações Hermes / Brain hygiene
 
 - **ID:** `hermes-ops-brain-governance`
 - **Triggers:** Brain, memória, skills, crons, watchdog, noise, handoff, governance, “organograma”, “Amora/Bruno”.
@@ -124,7 +152,7 @@ Regra:
 - **Exige aprovação:** cron novo, Docker/gateway/restart arriscado, VPS/root/Traefik/volumes/networks, exposição de portas/secrets.
 - **Handoff:** registrar alterações de governança e decisões duráveis.
 
-### 9. Tecnologia / Infraestrutura / Mission Control
+### 10. Tecnologia / Infraestrutura / Mission Control
 
 - **ID:** `tech-infra-mission-control`
 - **Triggers:** deploy, Vercel, GitHub, repo, Mission Control, API, Docker, VPS, dashboard, plugin.
@@ -136,7 +164,7 @@ Regra:
 - **Exige aprovação:** produção, deploy, Docker/VPS/root/SSH/Traefik/volumes/networks, secrets, write externo.
 - **Handoff:** obrigatório para deploy/PR/risco/alteração técnica relevante.
 
-### 10. Pesquisa / conteúdo geral não-LK
+### 11. Pesquisa / conteúdo geral não-LK
 
 - **ID:** `general-research-content`
 - **Triggers:** pesquisa, resumo, PRD, relatório, análise sem dono especialista claro.

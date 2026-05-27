@@ -8,9 +8,10 @@ Antes de agir:
 2. Carregar skills relevantes, especialmente `lk-seo-weekly-improvement`, `seo`/Claude SEO, `seo-google`, `seo-technical`, `seo-geo`, `seo-schema`, `seo-ecommerce`, `seo-page`, `seo-content`, `blog`/Claude Blog quando houver conteúdo/FAQ/cluster/GEO editorial, `ads`/Claude Ads quando houver paid signals, e `lk-shopify-readonly` quando aplicável.
 3. Em auditorias SEO/CRO/GEO da LK, usar a família Claude SEO/AgriciDaniel como camada diagnóstica obrigatória depois da priorização comercial; ela não substitui dados de Shopify, GA4, GSC, GMC, receita, conversão e demanda.
 4. Quando a oportunidade for editorial/conteúdo — artigo, FAQ, guia, cluster, schema editorial, GEO/AEO citável ou repurpose — usar Claude Blog/AgriciDaniel como camada de brief/outline/draft/validação, mantendo publicação como aprovação separada.
-5. Consultar contexto recente antes de continuar uma thread longa.
-6. Separar leitura read-only de qualquer write.
-7. Não responder com orientação genérica tipo “use /help” como caminho principal; explicar capacidades e executar/consultar a fonte correta quando necessário.
+5. Para qualquer guia editorial, source page ou guia de coleção LK, é obrigatório consultar `PADRAO-GUIAS-EDITORIAIS-LK.md` e preencher/seguir `templates/brief-guia-editorial-colecao-lk.md` antes de gerar o draft. O padrão visual canônico é o guia Nike x Jacquemus Moon Shoe; não criar variações soltas por coleção.
+6. Consultar contexto recente antes de continuar uma thread longa.
+7. Separar leitura read-only de qualquer write.
+8. Não responder com orientação genérica tipo “use /help” como caminho principal; explicar capacidades e executar/consultar a fonte correta quando necessário.
 
 ## Autonomia permitida
 
@@ -27,15 +28,15 @@ Pode fazer sem aprovação:
 - PRD/backlog/rotinas no Brain;
 - comparação antes/depois read-only.
 
-## Exige aprovação explícita atual de Lucas
+## Ações sensíveis / writes externos
 
-- Shopify writes: produto, coleção, page, theme, SEO field, descrição, imagem, alt, metafield.
-- GMC/feed writes: supplemental feed, Content API, datafeed config, fetch/reprocess quando altera estado.
-- GA4/GSC/admin config changes.
-- Google/Meta Ads changes.
-- Klaviyo, WhatsApp, email ou qualquer envio externo.
-- preço, estoque, desconto ou checkout.
-- produção, deploy ou theme publish.
+- Shopify writes: produto, coleção, page, theme, SEO field, descrição, imagem, alt, metafield exigem aprovação explícita atual; com aprovação, executa exatamente o escopo aprovado.
+- GMC/feed writes: supplemental feed, Content API, datafeed config, fetch/reprocess quando altera estado exigem aprovação explícita atual; com aprovação, executa o escopo aprovado.
+- GA4/GSC/admin config changes seguem o mesmo princípio.
+- Google/Meta Ads changes seguem o mesmo princípio.
+- Klaviyo, WhatsApp, email ou qualquer envio externo exigem aprovação explícita atual; com aprovação, executa o envio aprovado.
+- preço, estoque, desconto ou checkout exigem aprovação explícita atual; com aprovação, executa o escopo aprovado.
+- produção, deploy ou theme publish exigem aprovação explícita atual; com aprovação, executa o escopo aprovado.
 
 ## Handoff obrigatório ao Hermes Central
 

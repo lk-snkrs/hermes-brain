@@ -362,6 +362,24 @@ Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-
 - Delivery `origin` observado sem erro explícito: `LK Daily Sales Brief`, `LK Weekly CEO Review`, `LK GMC Review`, `Mesa COO diária Telegram`, `Lucas Brain weekly Learning Loop report` e `Relatório Hermes diário 23h + 02h para Lucas`; nenhuma mudança de delivery foi feita.
 - Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo ou secret foi alterado.
 
+### Reconciliação Runtime Truth — 2026-05-26 11:21 UTC
+
+Evidência runtime: tentativa de localizar `cronjob list` neste container/runtime não encontrou o comando no PATH; fallback canônico usado com sucesso: `/opt/hermes/.venv/bin/hermes cron list --all` a partir de `/opt/data/hermes_bruno_ingest/hermes-brain`.
+
+Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-26.md`.
+
+- Total de jobs listados: 20.
+- Ativos: 20.
+- Pausados/disabled listados: 0.
+- `last_status` não-ok: 0 na listagem atual.
+- Erros explícitos de delivery: 0 na listagem atual.
+- Jobs ativos sem `Last run` ainda: 0.
+- Drift de contagem em relação ao snapshot anterior de 2026-05-25 11:20 UTC: `23 ativos / 0 pausados listados` → `20 ativos / 0 pausados listados`.
+- Jobs observados em 2026-05-25 que não aparecem mais na listagem viva atual: `LK GMC Review read-only mandatory delivery`, `LK WhatsApp Hermes responder regression watchdog` e um dos jobs LK/SEO-GMC previamente listados no snapshot de 23 jobs; tratar seções antigas como históricas até nova evidência viva.
+- Delivery `origin` observado sem erro explícito: `Mesa COO diária Telegram` e `Relatório Hermes diário 23h + 02h para Lucas`; nenhuma mudança de delivery foi feita.
+- Delivery `local` confirmado para LK Daily Sales Brief, LK Weekly CEO Review, todos os watchdogs de gateway listados, Fechamento 23h, Runtime Truth Reconciler e Operating Layer.
+- Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo, campanha, Shopify, GMC, Notion, WhatsApp, email ou secret foi alterado.
+
 ## 5. Regras de delivery para Fechamento 23h
 
 - Fechamento 23h: `local` por padrão.

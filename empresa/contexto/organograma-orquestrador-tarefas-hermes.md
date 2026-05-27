@@ -1,8 +1,9 @@
 # Organograma de Orquestrador e Tarefas — Hermes COO
 
-Data: 2026-05-24  
-Status: aprovado para Fase 1 documental  
-Fonte: PRD `areas/operacoes/prds/hermes-orquestrador-tarefas-organograma-prd-2026-05-24.md`
+Data: 2026-05-27  
+Status: organograma operacional vivo; Fase 1 documental concluída e especialistas/guardrails em evolução  
+Fonte: PRD `areas/operacoes/prds/hermes-orquestrador-tarefas-organograma-prd-2026-05-24.md`  
+Política de autonomia/aprovação: `empresa/contexto/politica-autonomia-aprovacao-hermes.md`
 
 ## Princípio
 
@@ -192,6 +193,8 @@ Adaptação Hermes:
 - usar profiles/bots como braços, não como cérebros separados;
 - registrar handoff no Brain.
 
+Regra anti-loop: `seguir` sozinho não aprova risco, mas também não deve travar leitura/análise/documentação. Aprovação escopada destrava somente o escopo aprovado e não deve virar novo approval packet a cada etapa local segura.
+
 ## Verificação antes de chamar algo de operacional
 
 - Existe escopo documental?
@@ -202,3 +205,27 @@ Adaptação Hermes:
 - Existe handoff obrigatório?
 - Existe rollback/receipt quando há write externo?
 - Existe reconciliação com o Hermes Central?
+
+## Próximos ajustes de maturidade
+
+O organograma já está estruturalmente correto. O que ainda pode melhorar é a uniformidade operacional:
+
+1. **Pacotes completos por especialista**
+   - cada profile/bot deveria ter o seu conjunto mínimo de identidade, mapa, regras, memória, ferramentas e heartbeat;
+   - hoje LK Ops e LK Trends ainda precisam ganhar a mesma maturidade contratual de LK Shopify.
+
+2. **Handoff único entre áreas**
+   - consolidar um modelo único de receipt/handoff para Hermes Geral, LK, SPITI, Mordomo e Zipper;
+   - isso reduz variação e evita “cada agente falando de um jeito”.
+
+3. **Dono lógico ≠ runtime atual**
+   - documentar sempre quando uma rotina está num profile por histórico e não por design final;
+   - isso vale especialmente para Main/Mordomo, onde ainda existem rotinas legadas de LK/Zipper.
+
+4. **Critérios objetivos de evolução**
+   - Zipper só ganha runtime dedicado quando houver gatilho claro de volume/risco/canal;
+   - perfis auxiliares devem ser classificados sem ambiguidade como ativos, experimentos, arquivos ou candidatos a pausa.
+
+5. **Autonomia escopada sem novo loop**
+   - aprovação explícita e escopada deve destravar a execução do que foi aprovado;
+   - `seguir` continua sendo continuação local/documental, não autorização nova e não bloqueio repetido.

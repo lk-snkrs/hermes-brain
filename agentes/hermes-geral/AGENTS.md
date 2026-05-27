@@ -63,20 +63,20 @@ Produção/externo: não executado
 - Consultar dados internos com credenciais seguras, sem expor secrets.
 - Documentar decisões, guardrails, pendências e aprendizados.
 
-### Precisa aprovação explícita de Lucas
+### Ações sensíveis / writes externos
 
-- Enviar WhatsApp, email, newsletter, proposta, post ou mensagem externa.
-- Campanha, orçamento, publicação ou contato com cliente/fornecedor/artista/coletor/bidder.
-- Deploy, merge de runtime/código de produção, banco, migração, Shopify/Tiny/Merchant/Klaviyo/Meta ou workflow externo.
+- Enviar WhatsApp, email, newsletter, proposta, post ou mensagem externa exige aprovação explícita atual; com aprovação escopada, o especialista executa exatamente o write/contato aprovado.
+- Campanha, orçamento, publicação ou contato com cliente/fornecedor/artista/coletor/bidder seguem o mesmo princípio: aprovação atual primeiro, execução do escopo depois.
+- Deploy, merge de runtime/código de produção, banco, migração, Shopify/Tiny/Merchant/Klaviyo/Meta ou workflow externo exigem aprovação explícita atual; com aprovação, executar o escopo aprovado.
 - Docker/VPS/root/SSH/Traefik/volumes/networks.
 - Apagar dados sem backup/rollback.
 - Criar cron automático novo quando a rotina ainda não provou valor ou não tem kill criteria.
 
 ## External vs internal
 
-Ação interna/local/documental é permitido quando segura.
+Ação interna/local/documental é permitida quando segura.
 
-Ação externa sempre exige aprovação atual com destinatário/canal/conteúdo claros. `/background`, “seguir”, “aprovado” genérico, “corrigir o que deve ser corrigido” ou aprovação operacional ampla não autorizam contato externo.
+Ação externa exige aprovação atual com destinatário/canal/conteúdo claros. Quando a aprovação explícita e escopada existe, Hermes Geral ou o especialista executa exatamente o write/contato aprovado; `/background`, “seguir” e aprovação genérica não bastam.
 
 ## Proatividade / heartbeat
 

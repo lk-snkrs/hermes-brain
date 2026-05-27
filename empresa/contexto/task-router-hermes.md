@@ -1,8 +1,9 @@
 # Task Router Hermes — Algoritmo Operacional
 
-Data: 2026-05-24  
-Status: aprovado para Fase 1 documental  
+Data: 2026-05-27
+Status: algoritmo operacional vivo; Fase 1 documental concluída e runtime/dispatcher em evolução
 Matriz: `empresa/contexto/matriz-roteamento-tarefas-hermes.md`
+Política de autonomia/aprovação: `empresa/contexto/politica-autonomia-aprovacao-hermes.md`
 
 ## Objetivo
 
@@ -21,6 +22,18 @@ Hermes Geral deve decidir uma destas ações:
 
 Perguntar só quando a ambiguidade muda materialmente a rota ou o risco.
 
+## Autonomia em 3 níveis
+
+Para evitar a sensação de "perda de autonomia" sem abrir mão da segurança, o router deve ler a tarefa assim:
+
+- **Autonomia livre local**: leitura, auditoria, organização, documentação, preview e diagnóstico read-only.
+- **Autonomia local com escopo aprovado**: manutenção bounded, restart de profile nomeado, ajuste de launcher/env do perfil certo e execução do que já foi explicitamente aprovado.
+- **Ações sensíveis / writes externos**: produção, contato externo, writes externos, Docker/VPS/root/SSH/Traefik/volumes/networks, secrets e qualquer mudança fora do escopo aprovado exigem aprovação explícita atual; com aprovação, a execução do escopo aprovado segue.
+
+Regra operacional: **aprovação escopada deve destravar a execução do que foi aprovado; ela não deve reaparecer como novo bloqueio a cada etapa local segura.**
+
+Regra de linguagem: **`seguir` sozinho não deve ser interpretado como aprovação para A3/A4; ele só continua análise/leitura/documentação ou uma execução local já explicitamente aprovada.**
+
 ## Algoritmo
 
 ### Passo 1 — Classificar contexto
@@ -30,6 +43,7 @@ Escolha um contexto principal:
 - `lucas_pessoal`
 - `lk`
 - `lk_growth`
+- `lk_shopify`
 - `zipper`
 - `spiti`
 - `operacoes_hermes`
@@ -48,6 +62,7 @@ Tipos principais:
 - pergunta/análise;
 - conteúdo/blog/source page/copy;
 - SEO/CRO/GEO/GMC/analytics;
+- Shopify produto/upload/coleções/superfície/publicação/tema;
 - atendimento/cliente/WhatsApp/e-mail;
 - rotina/cron/watchdog;
 - código/deploy/infra;
@@ -87,6 +102,19 @@ Regra:
 - A2 depende de escopo e segurança.
 - A3/A4 exigem aprovação explícita atual com escopo.
 
+### Aprovação explícita e escopada
+
+Quando Lucas aprovar uma ação de write, o agente/especialista **pode executar o write aprovado**, desde que a aprovação seja específica o suficiente para identificar:
+
+- sistema/alvo;
+- item ou rotina afetada;
+- ação permitida;
+- limite do escopo;
+- preview ou evidência anterior quando aplicável;
+- rollback/readback/receipt esperado.
+
+Aprovação ampla de princípio desbloqueia a política operacional, mas não vira cheque em branco permanente. Para writes externos, produção, cliente, preço, disponibilidade, reserva, dinheiro, infra ou dados sensíveis, a execução deve continuar escopada ao pedido aprovado e deixar receipt. Se a tarefa pede “fazer tudo” em múltiplos sistemas, dividir em fases e executar primeiro a menor unidade segura.
+
 ### Passo 5 — Decidir ação
 
 #### Executar aqui
@@ -95,6 +123,7 @@ Use quando:
 
 - é governança central;
 - é PRD/plano/documentação central;
+- é documentação/template local de LK Shopify já aprovada como governança, sem tocar Shopify/Tiny real;
 - não há especialista dono;
 - é pergunta simples com fonte clara;
 - é verificação local/read-only.
@@ -238,6 +267,7 @@ Escopo aprovado desta implementação:
 Gatilhos cobertos por teste:
 
 - LK source page/SEO/GEO/CRO → `lk-growth-content` / executor `lk-growth`.
+- LK Growth + tema/Shopify production + aprovação explícita de Lucas → `lk-growth-theme-production-write-enabled` / `executar_aqui`, com `runtime_profile` LK Growth, backup, patch mínimo, readback e verificação pública; não deve cair no fallback genérico read-only nem no handoff/packet loop.
 - WhatsApp/preço/disponibilidade/reserva → `mordomo-personal-intake` com bloqueio por aprovação.
 - SPITI/lote/lance/bidder → `spiti-os` com packet/aprovação.
 - Zipper/proposta/preço/colecionador → `zipper-os-readonly-comm-crm` com bloqueio.

@@ -62,10 +62,10 @@ Supabase Zipper ou SPITI        ← BLOQUEADO
 
 - **L2 — Executor documental/read-only:** executa análises, consultas e rascunhos internos dentro das fontes permitidas.
 - LK Growth profile é o dono preferencial de SEO, CRO, GEO, GMC, analytics, conteúdo, blog e source pages.
-- Campanhas Klaviyo: gera rascunho + preview → **aguarda aprovação Lucas** antes de enviar.
-- Envios WhatsApp em massa: **sempre aprovação Lucas**.
-- Cross-sell individual pós-compra: **sempre aprovação Lucas** com preview.
-- Shopify, GMC, Klaviyo, Meta, theme, produção, preço, disponibilidade, reserva e promessa material exigem fonte viva + aprovação explícita quando houver write/contato.
+- Campanhas Klaviyo: gera rascunho + preview → **aguarda aprovação Lucas** antes de enviar; com aprovação explícita atual, executa o envio aprovado.
+- Envios WhatsApp em massa: **sempre aprovação Lucas**; com aprovação explícita atual, executa o envio aprovado.
+- Cross-sell individual pós-compra: **sempre aprovação Lucas** com preview; com aprovação explícita atual, executa o contato aprovado.
+- Shopify, GMC, Klaviyo, Meta, theme, produção, preço, disponibilidade, reserva e promessa material exigem fonte viva + aprovação explícita quando houver write/contato; se aprovado, o executor executa exatamente o escopo aprovado.
 
 Contrato comum de handoff: `empresa/contexto/contratos-handoff-especialistas.md`.
 

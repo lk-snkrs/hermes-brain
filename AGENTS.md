@@ -32,6 +32,7 @@ Referências:
 - `empresa/contexto/organograma-orquestrador-tarefas-hermes.md` — organograma de orquestração e tarefas.
 - `empresa/contexto/matriz-roteamento-tarefas-hermes.md` — dono/executor/output/aprovação por tipo de tarefa.
 - `empresa/contexto/task-router-hermes.md` — algoritmo operacional de roteamento e bloqueio.
+- `empresa/contexto/politica-autonomia-aprovacao-hermes.md` — fonte canônica para autonomia local, aprovação escopada, anti-loop e bloqueios obrigatórios.
 
 ## Boot mínimo
 
@@ -55,6 +56,7 @@ Hermes Geral é orquestrador central, não executor universal. Se uma tarefa tiv
 Rotas críticas:
 
 - `lk-growth-content`: conteúdo, blog, source pages, copy SEO/GEO/CRO, FAQ/schema editorial da LK → executor `lk-growth`; output em `areas/lk/sub-areas/growth/`; publicação/Shopify/Klaviyo/GMC/Meta bloqueados sem aprovação.
+- `lk-shopify-surface`: produto/upload, coleções, páginas/objetos Shopify, menu/tag/SEO field, theme/dev theme, readback/receipt → executor `lk-shopify`/skills `lk-shopify-readonly` e `lk-shopify-product-upload`; usar `areas/lk/sub-areas/shopify/templates/preview-aprovacao-shopify.md`; writes Shopify/Tiny/theme continuam bloqueados sem aprovação escopada.
 - `mordomo-personal-intake`: agenda, follow-up pessoal e inbox conforme guardrails → executor Mordomo; bloquear preço/disponibilidade/reserva/negociação/reclamação/supplier/bulk sem fonte/aprovação.
 - `spiti-os`: Hub, leilões, lotes, CRM, Financial e Growth SPITI → executor SPITI; silêncio é melhor que dado errado.
 - `zipper-os-readonly-comm-crm`: Zipper permanece read-only/documental enquanto não houver profile dedicado; contato externo/proposta/preço/logística sensível exige aprovação.
@@ -103,15 +105,16 @@ Regra estrutural aprovada por Lucas em 2026-05-19:
 Regra aprovada por Lucas:
 
 - 1 vez: executar normal.
-- 2 vezes na mesma semana ou mesmo formato: documentar padrão.
+- 2 vezes na mesma semana ou mesmo formato: documentar padrão e criar fonte canônica/brief/template reutilizável.
 - 3 vezes ou impacto alto: criar/atualizar skill ou rotina.
 - Se envolve aprovação externa: a skill precisa conter aprovação, preview, guardrails, rollback e verificação.
+- Quando um agente produzir um formato recorrente (guia, preview, relatório, packet, handoff, coleção, conteúdo editorial), ele deve reutilizar o padrão canônico já aprovado em vez de inventar uma variação nova por caso; os outros agentes devem herdar esse padrão via Brain/skill/template.
 
 ## External vs internal
 
 Interno/local/documental é permitido quando seguro.
 
-Externo sempre exige aprovação atual com destinatário/canal/conteúdo claros. “Seguir”, `/background`, “aprovado” genérico ou aprovação operacional ampla não autorizam contato externo.
+Externo exige aprovação atual com destinatário/canal/conteúdo claros. Quando a aprovação explícita e escopada existe, o especialista pode executar exatamente o write ou contato aprovado; “seguir”, `/background` e aprovação genérica não bastam.
 
 ## Rotina documentada ≠ cron ativo
 

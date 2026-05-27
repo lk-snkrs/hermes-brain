@@ -1,0 +1,20 @@
+secrets: FAIL=0 WARN=0
+links: FAIL=0 WARN=0
+required_files: FAIL=0 WARN=0
+agent_files: FAIL=0 WARN=0
+area_maps: FAIL=0 WARN=1
+decisions_index: FAIL=0 WARN=0
+routines_index: FAIL=0 WARN=9
+skill_references: FAIL=0 WARN=0
+
+Issues:
+WARN	area_missing_mapa	areas/hermes	MAPA.md
+WARN	routine_not_indexed	areas/lk/rotinas/approval-packet-shopify-event-tiny-stock-sync-2026-05-26.md	missing from empresa/rotinas/_index.md
+WARN	routine_not_indexed	areas/lk/rotinas/implementation-plan-lk-tiny-local-stock-db-phase-a-2026-05-26.md	missing from empresa/rotinas/_index.md
+WARN	routine_not_indexed	areas/lk/rotinas/lk-trend-runtime-handoff-2026-05-26.md	missing from empresa/rotinas/_index.md
+WARN	routine_not_indexed	areas/lk/rotinas/lk-trend-weekly-report-v1-2026-05-26.md	missing from empresa/rotinas/_index.md
+WARN	routine_not_indexed	areas/lk/rotinas/lk-trend-weekly-v1-2026-05-26.md	missing from empresa/rotinas/_index.md
+WARN	routine_not_indexed	areas/lk/rotinas/prd-lk-tiny-local-stock-db-event-refresh-2026-05-26.md	missing from empresa/rotinas/_index.md
+WARN	routine_not_indexed	areas/lk/rotinas/receipt-shopify-event-tiny-stock-dryrun-router-fix-20260526.md	missing from empresa/rotinas/_index.md
+WARN	routine_not_indexed	areas/lk/rotinas/shopify-event-tiny-stock-sync-prd-2026-05-26.md	missing from empresa/rotinas/_index.md
+WARN	routine_not_indexed	areas/operacoes/rotinas/ledger-handoff-especialistas-diario.md	missing from empresa/rotinas/_index.md

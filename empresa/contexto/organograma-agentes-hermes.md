@@ -1,31 +1,63 @@
 # Organograma de Agentes — Hermes Brain
 
-Última atualização: 2026-05-24
+Última atualização: 2026-05-27
 
 ## Status curto
 
-O organograma estratégico está correto: uma Grande Mente central, com Lucas pessoal e os OSs das empresas abaixo. O que faltava era explicitar a diferença entre **camadas de negócio**, **agentes documentais** e **profiles/bots reais em runtime**.
+O organograma estratégico está correto: uma Grande Mente central, com Lucas pessoal e os OSs das empresas/frentes abaixo. A versão atual separa explicitamente:
 
-Complemento 2026-05-24: o organograma agora também explicita **orquestrador, tarefa, executor, approval boundary e handoff**. Referências canônicas: `organograma-orquestrador-tarefas-hermes.md`, `matriz-roteamento-tarefas-hermes.md` e `task-router-hermes.md`.
+- **camada de negócio**;
+- **agente documental**;
+- **runtime profile/bot ativo**;
+- **dono lógico de rotina/cron**;
+- **approval boundary**;
+- **handoff/receipt obrigatório quando houver decisão, risco, write ou output durável**.
+
+Regra central:
+
+> Hermes Geral coordena. Especialistas executam no escopo. Brain registra. Produção/externo/write sensível exige aprovação explícita e escopada; quando aprovado, o especialista executa livremente dentro do escopo concedido.
 
 ## Hierarquia canônica
 
 ```text
-Lucas / Telegram
+Lucas / Telegram principal
   ↓
-Hermes Geral — profile principal `/opt/data`
+Hermes Geral — COO / Orquestrador Central
+  Runtime: /opt/data
   ↓
-Grande Mente — Hermes Brain / Hermes COO
+Task Router / Approval Gate
+  ↓
+Hermes Brain — fonte de verdade, evidência, handoff, memória e skills
   ├── Lucas pessoal / Mordomo
-  │   └── runtime profile: `/opt/data/profiles/mordomo`
+  │   ├── Runtime: /opt/data/profiles/mordomo
+  │   └── Dono lógico: intake pessoal, agenda, follow-ups permitidos, triagem pessoal/multiempresa
+  │
   ├── LK OS — LK Sneakers
-  │   ├── agente documental: `agentes/lk/`
-  │   └── especialista ativo: LK Growth OS
-  │       └── runtime profile: `/opt/data/profiles/lk-growth` / bot `@LKGrowth_HermesBot`
+  │   ├── LK Growth
+  │   │   ├── Runtime: /opt/data/profiles/lk-growth
+  │   │   └── Dono: SEO, GEO, CRO, GMC, analytics, conteúdo, source pages, D+7 impact reviews
+  │   ├── LK Ops / Atendimento
+  │   │   ├── Runtime: /opt/data/profiles/lk-ops
+  │   │   └── Dono: atendimento, loja, vendas operacionais, estoque, preço, disponibilidade, Tiny/Shopify operacional
+  │   ├── LK Shopify
+  │   │   ├── Runtime: /opt/data/profiles/lk-shopify
+  │   │   └── Dono: Shopify operacional/preview, produto/upload, superfície de publicação, sempre approval-gated para writes
+  │   └── LK Trends
+  │       ├── Runtime: /opt/data/profiles/lk-trends
+  │       └── Dono: tendências, sourcing intelligence, sinais de mercado, pesquisas read-only
+  │
   ├── Zipper OS — Zipper Galeria
-  │   └── agente documental: `agentes/zipper/`
+  │   ├── Status atual: documental/read-only
+  │   ├── Runtime dedicado: não criado nesta data
+  │   └── Dono lógico: CRM/Main, vendas, artistas, colecionadores, enquiries, rascunhos internos
+  │
   ├── SPITI OS — SPITI Auction
-  │   └── agente documental: `agentes/spiti/`
+  │   ├── Runtime: /opt/data/profiles/spiti
+  │   └── Dono: Hub, obras, leilões, clientes, CRM/admin, análises com fonte verificável
+  │
+  ├── Brain Process / Governança documental
+  │   └── Dono: higiene Brain, relatórios, handoffs, FTS, health checks
+  │
   ├── Operações Hermes
   ├── Tecnologia / Infraestrutura
   └── Governança / Segurança / Aprovações
@@ -39,68 +71,143 @@ Grande Mente — Hermes Brain / Hermes COO
 - Runtime: profile principal `/opt/data`.
 - Papel: Chief of Staff/COO central, roteamento, Brain, decisões, Mission Control, crons, skills, integrações e guardrails.
 - É a entrada padrão para Lucas no Telegram principal.
-- Limite: não é executor universal; quando a matriz define especialista dono, deve rotear e cobrar handoff.
+- Limite: não é executor universal; quando a matriz define especialista dono, deve rotear, cobrar handoff e registrar no Brain.
+- Pode executar diretamente: governança central, documentação, auditoria local/read-only, PRDs, approval packets e coordenação multiempresa.
 
 ### 2. Mordomo / Lucas pessoal
 
 - Runtime: `/opt/data/profiles/mordomo`.
 - Papel: intake pessoal, follow-ups, inbox, drafts internos, agenda e roteamento pessoal/multiempresa.
-- Regra: nunca envia e-mail/WhatsApp/cliente/fornecedor sozinho; prepara preview/draft interno e espera aprovação explícita no turno atual quando houver contato externo.
-- Status documental: pacote mínimo já existe em `agentes/mordomo/`; o próximo gap é manter consistência entre esse pacote, o runtime `/opt/data/profiles/mordomo` e os handoffs registrados no Brain.
+- Regra: follow-up simples conhecido/verificado pode avançar conforme exceção aprovada; preço, disponibilidade, reserva, negociação, reclamação, fornecedor, campanha/bulk e promessa material exigem aprovação/fonte.
+- Gap atual: rotinas Zipper/LK WhatsApp hospedadas no Mordomo devem ter dono lógico explícito e handoff.
 
-### 3. LK OS
+### 3. LK OS — visão por subespecialista
 
-- Caminho operacional: `areas/lk/`.
-- Agente documental legado: `agentes/lk/`.
-- Especialista ativo recente: LK Growth OS em `areas/lk/sub-areas/growth/`.
-- Runtime Growth: `/opt/data/profiles/lk-growth` / bot `@LKGrowth_HermesBot`.
+#### LK Growth
+
+- Caminho operacional: `areas/lk/sub-areas/growth/`.
+- Runtime: `/opt/data/profiles/lk-growth`.
+- Bot: `@LKGrowth_HermesBot` quando ativo.
+- Dono: SEO/GEO/CRO/GMC/analytics/conteúdo/source pages/D+7 impact reviews.
 - Regra: Growth é read-only/preview por padrão; Shopify/GMC/GA4/GSC/Klaviyo/Meta writes exigem approval packet e aprovação explícita.
-- Regra de roteamento: conteúdo/blog/source page/copy SEO/GEO/CRO/FAQ/schema editorial da LK pertence a `lk-growth`; Hermes Geral só orquestra, valida guardrails e entrega preview/packet.
+- Anti-erro: Growth não é dono de atendimento, estoque, preço, disponibilidade ou loja.
+
+#### LK Ops / Atendimento
+
+- Caminho operacional: `areas/lk/sub-areas/atendimento/`.
+- Runtime: `/opt/data/profiles/lk-ops`.
+- Dono: atendimento, loja, vendas operacionais, relatórios comerciais, estoque, preço, disponibilidade, reservas, Tiny/Shopify operacional.
+- Fonte de verdade: Tiny para estoque; Shopify é gatilho/superfície, não ledger.
+- Regra: rascunho interno e diagnóstico read-only OK; promessa material, contato externo sensível e writes exigem aprovação explícita e escopada.
+
+#### LK Shopify
+
+- Caminho operacional: `areas/lk/sub-areas/shopify/`.
+- Runtime: `/opt/data/profiles/lk-shopify`.
+- Dono: Shopify operacional/preview, produto/upload, coleções, superfícies de publicação e integração com Tiny quando aprovado.
+- Regra: nenhum write em Shopify/Tiny sem snapshot, preview, aprovação, execução escopada, readback, receipt e rollback.
+- Padrão canônico: usar `areas/lk/sub-areas/shopify/templates/preview-aprovacao-shopify.md` e as skills `lk-shopify-readonly`/`lk-shopify-product-upload`; quando publicar conteúdo editorial/guia via Shopify, herdar o padrão Moon Shoe do LK Growth.
+
+#### LK Trends
+
+- Caminho operacional: `areas/lk/sub-areas/trends/`.
+- Runtime: `/opt/data/profiles/lk-trends`.
+- Dono: tendências, sourcing intelligence, sinais de mercado, validação Droper/StockX/GOAT e oportunidades.
+- Regra: pesquisa e relatório read-only OK; compra, reserva, negociação, disponibilidade, preço final e fornecedor exigem aprovação/fonte.
 
 ### 4. Zipper OS
 
 - Caminho operacional: `areas/zipper/`.
 - Agente documental: `agentes/zipper/`.
-- Fontes: Zipper Vendas `vendas_tango`, CRM/Main quando aplicável e textos institucionais no Brain.
-- Regra: rascunhos e análises internas OK; colecionadores, artistas, propostas e comunicação externa exigem aprovação.
+- Runtime dedicado: não existe hoje.
+- Runtimes atuais relacionados: Main/Mordomo para rotinas documentais/read-only e intake.
+- Fontes: CRM/Main, `vendas_tango`, textos institucionais, inbox e documentos no Brain.
+- Regra: rascunhos e análises internas OK; colecionadores, artistas, propostas, preço, disponibilidade, logística e comunicação externa exigem aprovação explícita e escopada.
+- Critério: criar runtime/bot próprio só se volume/risco/canal justificarem por período observado.
 
 ### 5. SPITI OS
 
 - Caminho operacional: `areas/spiti/`.
-- Agente documental: `agentes/spiti/`.
-- Fonte: Spiti Hub/repo, Supabase/CRM e fontes verificadas de leilão/lances.
+- Runtime: `/opt/data/profiles/spiti`.
+- Fonte: SPITI Hub/repo, Supabase/CRM e fontes verificadas de leilão/lances.
 - Regra: silêncio é melhor que dado errado; lance/lote só com fonte verificável.
+- Status de crons: registry local não encontrado em auditoria; documentar como escolha explícita ou pendência antes de criar rotina.
+
+### 6. Brain Process / profiles auxiliares read-only
+
+- Perfis observados: `brain-process`, `hermes-ops-readonly`, `lk-analyst-readonly`, `lk-content-reviewer`.
+- Status: auxiliares/read-only/experimentos; não devem virar runtime público ou dono de produção sem justificativa e aprovação.
+- Próxima ação: classificar cada um como ativo, experimento, arquivo ou candidato a pausa.
 
 ## O que é fonte de verdade
 
-- Organograma global: `empresa/contexto/organograma-operacional-hermes-brain.md`.
-- Este arquivo: mapa agente/runtime/profile.
+- Organograma global: `empresa/contexto/organograma-agentes-hermes.md`.
 - Orquestração por tarefa: `empresa/contexto/organograma-orquestrador-tarefas-hermes.md`.
 - Matriz executor/aprovação/handoff: `empresa/contexto/matriz-roteamento-tarefas-hermes.md`.
 - Algoritmo operacional: `empresa/contexto/task-router-hermes.md`.
+- Política canônica de autonomia/aprovação: `empresa/contexto/politica-autonomia-aprovacao-hermes.md`.
+- Matriz runtime/donos/status: `empresa/contexto/matriz-agentes-profiles-bots-crons-status-2026-05-26.md`.
 - Regras globais: `AGENTS.md` e `agentes/hermes-geral/AGENTS.md`.
-- Regras por negócio: `areas/<empresa>/MAPA.md` + documentação em `agentes/<empresa>/`.
-- Runtime real: processos `hermes gateway run`, `HERMES_HOME`, `cronjob list` e configs dos profiles.
+- Regras por negócio: `areas/<empresa>/MAPA.md` + documentação em `agentes/<empresa>/` e `areas/<empresa>/sub-areas/`.
+- Runtime real: processos `hermes gateway run`, `HERMES_HOME`, registries de cron e configs dos profiles.
 
 ## Gaps conhecidos
 
-1. `agentes/lk/AGENTS.md` e `agentes/zipper/AGENTS.md` ainda têm marcas legadas de `cerebro-cimino`, `/root` e `Claw`; já possuem aviso de manutenção, mas devem ser normalizados gradualmente para linguagem Hermes-native.
-2. Mordomo, LK, Zipper e SPITI agora têm pacote documental mínimo no padrão Amora/Hermes (`SOUL`, `IDENTITY`, `USER`, `AGENTS`, `MAPA`, `HEARTBEAT`, `TOOLS`, `MEMORY`). O próximo gap não é criar arquivo, é manter consistência entre esses arquivos e runtime real.
-3. LK Growth está bem documentado em `areas/lk/sub-areas/growth/` e referenciado nos mapas globais como especialista ativo; deve continuar sendo executor de conteúdo/SEO/GEO/CRO, não subpasta solta.
-4. Zipper permanece sem runtime dedicado; tratá-lo como documental/read-only até decisão de criar profile/bot próprio.
-5. O organograma deve separar sempre:
-   - camada de negócio;
-   - agente documental;
-   - runtime profile/bot ativo;
-   - cron/rotina;
-   - tarefa roteável;
-   - handoff/receipt.
+1. Main e Mordomo ainda hospedam rotinas LK Ops/Zipper por histórico; manter temporariamente com dono lógico explícito até migração aprovada.
+2. LK Shopify e LK Trends precisam pacote documental completo no padrão Amora/Hermes, além do MAPA/contrato inicial.
+3. SPITI precisa declarar se não terá crons próprios ou quais rituais locais serão criados.
+4. Zipper permanece sem runtime dedicado; não criar bot só por simetria.
+5. Todo profile/bot especialista deve reportar trabalho relevante ao Hermes Central e/ou registrar no Brain.
+
+## Melhorias prioritárias recomendadas
+
+Para ficar mais próximo da maturidade ritual/identitária observada na Amora, o próximo ganho não é criar mais agentes. É fechar contrato e uniformizar execução:
+
+1. **Contrato completo por especialista**
+   - garantir, para cada profile/bot, um pacote mínimo consistente: `IDENTITY`, `SOUL`, `USER`, `AGENTS`, `MAPA`, `HEARTBEAT`, `TOOLS`, `MEMORY` e template de `handoff`;
+   - LK Ops e LK Trends precisam do mesmo nível de clareza já aplicado em LK Shopify.
+
+2. **Handoff/receipt padronizado**
+   - um formato único para decisão, preview, bloqueios, o que foi feito, o que ficou pendente e qual é o rollback;
+   - evitar variação de formato entre Hermes Geral, LK, SPITI e Zipper.
+
+3. **Separar sempre dono lógico, runtime e cron**
+   - dono lógico da rotina não é automaticamente o profile que hoje a executa;
+   - documentar explicitamente quando uma rotina está em Main/Mordomo por histórico e quando já tem owner próprio.
+
+4. **Critérios de promoção para Zipper e perfis auxiliares**
+   - manter Zipper documental/read-only até existir gatilho objetivo de volume, risco ou canal;
+   - classificar auxiliares como ativo, experimento, arquivo ou candidato a pausa.
+
+5. **Fechar a linguagem de autonomia**
+   - manter a regra de que aprovação escopada destrava execução do escopo aprovado;
+   - `seguir` continua significando continuidade local/documental, não novo bloqueio e não write externo.
 
 ## Regra curta
 
-**A Grande Mente coordena. Profiles e bots são superfícies de execução. Agentes documentais explicam escopo e guardrails. Nenhum especialista vira uma mente separada.**
+**A Grande Mente coordena. Profiles e bots são superfícies de execução. Agentes documentais explicam escopo e guardrails. Nenhum especialista vira uma mente separada. Writes são permitidos quando Lucas aprova de forma explícita e escopada, com preview/readback/receipt/rollback.**
 
-Complemento operacional aprovado por Lucas: todo profile/bot especialista deve reportar trabalho relevante ao Hermes Central e/ou registrar no Brain, no mínimo em fechamento diário quando não for urgente. Handoff canônico: `areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md`.
+## Autonomia por nível
+
+Para evitar a sensação de "perda de autonomia" sem abrir mão da segurança, o organograma deve ser lido em três níveis. Fonte canônica: `empresa/contexto/politica-autonomia-aprovacao-hermes.md`.
+
+1. **Autonomia livre local**
+   - leitura, auditoria, síntese, documentação, preview, organização e diagnóstico read-only;
+   - não pede aprovação quando não há write, contato externo, produção ou mudança de runtime sensível.
+
+2. **Autonomia local com escopo aprovado**
+   - manutenção bounded de runtime/profile nomeado;
+   - restart controlado do perfil correto;
+   - ajuste de launcher/env apenas do escopo aprovado;
+   - correção de bugs locais, desde que não envolvam Docker, VPS, Traefik, secrets ou writes externos.
+
+3. **Ações sensíveis / writes externos: somente com aprovação explícita atual**
+   - produção, contatos externos, Shopify/Tiny/Klaviyo/WhatsApp/CRM writes, Docker/VPS/root/SSH/Traefik/volumes/networks e qualquer mudança fora do escopo aprovado;
+   - com aprovação explícita atual, o especialista pode executar exatamente o write aprovado sem novo loop de bloqueio.
+
+Regra operacional: **aprovação escopada deve destravar a execução do que foi aprovado; ela não deve ser reapresentada como novo bloqueio a cada etapa local segura.**
+
+Regra de linguagem: **`seguir` sozinho é continuidade de análise/leitura/documentação; não autoriza write externo, produção, contato externo, Docker/VPS/Traefik/root/SSH, secrets ou ação fora do escopo aprovado.**
 
 ## Base Bruno/OpenClaw usada
 
