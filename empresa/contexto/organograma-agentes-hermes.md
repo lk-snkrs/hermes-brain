@@ -153,23 +153,25 @@ Hermes Brain — fonte de verdade, evidência, handoff, memória e skills
 
 ## Gaps conhecidos
 
-1. Main e Mordomo ainda hospedam rotinas LK Ops/Zipper por histórico; manter temporariamente com dono lógico explícito até migração aprovada.
-2. LK Shopify e LK Trends precisam pacote documental completo no padrão Amora/Hermes, além do MAPA/contrato inicial.
+1. Main e Mordomo ainda hospedam algumas rotinas LK Ops/Zipper por histórico; manter temporariamente com dono lógico explícito até migração aprovada.
+2. LK Shopify, LK Trends e as subáreas de apoio agora têm contrato documental mínimo, mas o padrão precisa continuar uniforme na próxima revisão.
 3. SPITI precisa declarar se não terá crons próprios ou quais rituais locais serão criados.
 4. Zipper permanece sem runtime dedicado; não criar bot só por simetria.
 5. Todo profile/bot especialista deve reportar trabalho relevante ao Hermes Central e/ou registrar no Brain.
 
 ## Melhorias prioritárias recomendadas
 
-Para ficar mais próximo da maturidade ritual/identitária observada na Amora, o próximo ganho não é criar mais agentes. É fechar contrato e uniformizar execução:
+Para ficar mais próximo da maturidade ritual/identitária observada na Amora, o próximo ganho não é criar mais agentes nem reduzir autonomia. É fechar contrato e uniformizar execução:
 
 1. **Contrato completo por especialista**
    - garantir, para cada profile/bot, um pacote mínimo consistente: `IDENTITY`, `SOUL`, `USER`, `AGENTS`, `MAPA`, `HEARTBEAT`, `TOOLS`, `MEMORY` e template de `handoff`;
-   - LK Ops e LK Trends precisam do mesmo nível de clareza já aplicado em LK Shopify.
+   - o pacote define fronteira, não microgestão;
+   - LK Ops, LK Shopify e LK Trends devem continuar com a mesma clareza de dono, mas sem centralizar execução desnecessariamente.
 
 2. **Handoff/receipt padronizado**
    - um formato único para decisão, preview, bloqueios, o que foi feito, o que ficou pendente e qual é o rollback;
-   - evitar variação de formato entre Hermes Geral, LK, SPITI e Zipper.
+   - evitar variação de formato entre Hermes Geral, LK, SPITI e Zipper;
+   - handoff não é reaprovação: é registro, continuidade e memória.
 
 3. **Separar sempre dono lógico, runtime e cron**
    - dono lógico da rotina não é automaticamente o profile que hoje a executa;
@@ -179,7 +181,12 @@ Para ficar mais próximo da maturidade ritual/identitária observada na Amora, o
    - manter Zipper documental/read-only até existir gatilho objetivo de volume, risco ou canal;
    - classificar auxiliares como ativo, experimento, arquivo ou candidato a pausa.
 
-5. **Fechar a linguagem de autonomia**
+5. **Autonomia preservada por design**
+   - documentação, handoff e receipt existem para dar contexto e segurança;
+   - aprovação escopada deve destravar a execução do especialista no escopo aprovado, sem loop de bloqueio desnecessário;
+   - evitar que governança vire microgerenciamento do perfil correto.
+
+6. **Fechar a linguagem de autonomia**
    - manter a regra de que aprovação escopada destrava execução do escopo aprovado;
    - `seguir` continua significando continuidade local/documental, não novo bloqueio e não write externo.
 

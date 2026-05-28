@@ -1,6 +1,6 @@
 # Cron Control Plane — Hermes Brain
 
-Atualizado em: 2026-05-22 14:22 UTC
+Atualizado em: 2026-05-27 12:20 UTC
 
 ## Objetivo
 
@@ -16,17 +16,21 @@ Este arquivo é um snapshot governamental do runtime local observado via registr
 - Cron pausado por mais de 14 dias precisa decisão: remover, reativar, arquivar ou converter em rotina manual.
 - Nenhum cron novo deve ser criado antes de checar duplicidade com 23h, 02h, 02h30 e Mesa COO.
 - Loops de aprendizado Pixel AI Hub/Brainzinho/Openclawzinho pertencem ao Hermes Agent / Operações Hermes. Se o executor técnico ainda estiver no profile Mordomo para ler WhatsApp, o owner documental e o prompt devem apontar para Hermes Agent, não Mordomo.
+- Rotina documentada não equivale a cron ativo: jobs ausentes do live list devem ficar como `histórico/não confirmado nesta rodada` até prova em outro scheduler/profile.
 
-## Resumo do snapshot
+## Resumo do snapshot vivo
 
-- Total: 23 jobs.
-- Ativos/scheduled: 23.
+- Total observado no scheduler principal: 21 jobs.
+- Ativos/scheduled: 21.
 - Pausados: 0.
+- Delivery `local`: 18.
+- Delivery `origin`: 3.
+- `last_status != ok`: 0.
+- `last_delivery_error`: nenhum observado.
 - Removidos em 2026-05-22 após aprovação de Lucas: 5 jobs pausados/orfãos.
 - Criado em 2026-05-22 P2: `d9badcd83411` strict-runtime guard watchdog silent-OK.
-- Redução de ruído P2: `98478b820720` movido de `origin` para `local`; Mesa COO fica como fila executiva principal no Telegram.
-- Sem `last_delivery_error` observado.
-- Sem `last_status` não-ok observado entre jobs já executados.
+- Reconciliação 2026-05-27: `98478b820720` está vivo como `origin`; a documentação anterior dizia `local`. Correção de preferência: Lucas quer este resumo no Telegram, então manter `origin` e não tratar como ruído por padrão.
+- Reconciliação 2026-05-27: `c358f8f56a26`, `71b2636add5d`, `a5d7a392eed9` e `d4c26da4cd48` não apareceram no live list principal desta rodada; ficam históricos/não confirmados.
 
 ## Jobs ativos — controle
 
@@ -35,7 +39,7 @@ Este arquivo é um snapshot governamental do runtime local observado via registr
 - `f5a23dd6a1bd` — Lucas Brain daily intelligence loop
   - Schedule: `0 5 * * *` UTC / 02h BRT.
   - Delivery: `local`.
-  - Owner: Operações / Hermes Brain.
+  - Owner: Operações / Hermes Brain / Chief of Staff.
   - Função: meta-supervisor diário.
   - Side effects: leitura e documentação local; sem write externo.
   - Kill criteria: duplicar Mesa COO sem gerar decisões novas por 7 dias; falhas recorrentes; output sem fonte.
@@ -50,15 +54,16 @@ Este arquivo é um snapshot governamental do runtime local observado via registr
 
 - `98478b820720` — Relatório Hermes diário 23h + 02h para Lucas
   - Schedule: `30 5 * * *` UTC / 02h30 BRT.
-  - Delivery: `local` desde P2 2026-05-22.
+  - Delivery vivo observado em 2026-05-27: `origin`.
   - Owner: Operações / Hermes Brain.
-  - Função: resumo executivo local do 23h + 02h; insumo para Mesa COO, não interrupção no Telegram.
-  - Side effects: documentação/local scheduler output; sem Telegram em sucesso normal.
+  - Função: resumo executivo curto sobre 23h + 02h que Lucas quer receber no Telegram.
+  - Side effects: Telegram por `origin`.
+  - Status documental: divergência real com snapshot anterior, que dizia `local`; preferência corrigida em 2026-05-27 para manter no Telegram.
+  - Ação segura: manter `origin`; só mover para `local` se Lucas pedir explicitamente para parar este resumo no Telegram.
   - Kill criteria: duplicar Mesa COO; enviar sucesso técnico; mais de 5 itens sem decisão clara.
-  - Rollback se Lucas quiser voltar o Telegram 02h30: `cronjob update 98478b820720 deliver=origin`.
 
 - `749ee30b51eb` — Mesa COO diária Telegram
-  - Schedule: `30 11 * * *` UTC / 08h30 BRT.
+  - Schedule vivo: `0 9 * * *` UTC.
   - Delivery: `origin`.
   - Owner: Operações / COO.
   - Função: fila executiva diária.
@@ -67,16 +72,16 @@ Este arquivo é um snapshot governamental do runtime local observado via registr
 
 - `f4c499e85eac` — Lucas Brain weekly Learning Loop report
   - Schedule: `15 12 * * 1` UTC / segunda 09h15 BRT.
-  - Delivery: `origin`.
+  - Delivery vivo: `local`.
   - Owner: Operações / melhoria contínua.
   - Função: revisão semanal de aprendizados.
-  - Side effects: Telegram.
+  - Side effects: local; sem Telegram em sucesso normal.
   - Kill criteria: não gerar mudanças de skill/memória/rotina; repetir daily loop.
 
 - `d03fa04e1188` — Hermes Brain Operating Layer structural watchdog
   - Schedule: `10 11 * * *` UTC.
   - Delivery: `local`.
-  - Owner: Operações.
+  - Owner: Operações / Brain.
   - Função: checar estrutura do Brain Operating Layer.
   - Side effects: local/silent.
   - Kill criteria: output ruidoso sem anomalia; falso positivo recorrente.
@@ -92,89 +97,86 @@ Este arquivo é um snapshot governamental do runtime local observado via registr
 - `2404c0766d33` — Hermes Brain Runtime Truth Reconciler
   - Schedule: `20 11 * * *` UTC.
   - Delivery: `local`.
-  - Owner: Operações.
+  - Owner: Operações / runtime truth.
   - Função: reconciliar docs vs runtime.
   - Side effects: local/silent.
   - Kill criteria: afirmar runtime sem evidência; duplicar inventário sem registrar diferença.
-
-- `c358f8f56a26` — Pixel AI Hub / Brainzinho daily learning scan
-  - Schedule: `30 23 * * *` UTC / fim do dia.
-  - Delivery: `origin` apenas quando houver aprendizado relevante; no-op deve ser silent-OK quando tecnicamente possível.
-  - Owner corrigido em 2026-05-25: Hermes Agent / Operações Hermes, não Mordomo.
-  - Estado observado: ainda localizado no scheduler/profile Mordomo como executor técnico histórico; migração real para Hermes Agent exige alteração controlada de cron, backup antes/depois e prompt sem identidade Mordomo.
-  - Rotina/PRD: `areas/operacoes/prds/pixel-ai-hub-learning-loop-hermes-agent-2026-05-25.md`.
-  - Kill criteria: virar spam diário, copiar material bruto, tratar comunidade como lead/CRM, ou rodar com prompt/owner Mordomo depois da migração aprovada.
 
 ### Watchdogs técnicos
 
 - `edd06fe19397` — Hermes runtime + cron watchdog no_agent
   - Schedule: `*/30 * * * *`.
   - Delivery: `local`.
+  - Owner: Operações / runtime safety.
   - Kill criteria: prints em OK normal; restart sem receipt.
 
 - `4bb4e2223fd3` — Hermes compression failure self-heal watchdog
   - Schedule: `*/10 * * * *`.
   - Delivery: `local`.
+  - Owner: Operações / runtime safety.
   - Kill criteria: auto-heal fora do escopo seguro; spam.
-
-- `71b2636add5d` — LK WhatsApp Hermes responder watchdog
-  - Schedule: `every 1m`.
-  - Delivery: `local`.
-  - Kill criteria: qualquer envio fora dos guardrails LK; prints em OK.
-
-- `a5d7a392eed9` — LK WhatsApp Hermes responder regression watchdog
-  - Schedule: `*/30 * * * *`.
-  - Delivery: `local`.
-  - Kill criteria: teste não cobre gramática real; falso positivo/negativo recorrente.
 
 - `ac0b440e2643` — Mordomo Telegram gateway watchdog
   - Schedule: `every 1m`.
   - Delivery: `local`.
+  - Owner: Mordomo / Lucas pessoal.
   - Kill criteria: mexer no gateway sem aprovação fora de restart seguro documentado; spam.
 
 - `876d54c62ccd` — LK Growth Telegram gateway watchdog
   - Schedule: `every 1m`.
   - Delivery: `local`.
+  - Owner: LK Growth.
   - Kill criteria: spam; reinício em loop.
 
 - `663e3e6a148c` — SPITI Telegram gateway watchdog
   - Schedule: `every 1m`.
   - Delivery: `local`.
+  - Owner: SPITI OS.
   - Kill criteria: spam; reinício em loop.
+
+- `c1ce34b4449a` — Hermes multi-profile latency watchdog
+  - Schedule: `every 15m`.
+  - Delivery: `origin`.
+  - Owner: Operações / monitoramento de perfis.
+  - Função: alerta de latência entre múltiplos profiles.
+  - Side effects: Telegram quando houver anomalia relevante.
+  - Kill criteria: alertar sucesso normal; alertar histórico já recuperado como se fosse falha atual.
 
 ### LK / negócio
 
-Nota de ownership: nesta seção, diferenciar `LK Growth` de `LK Comercial/Ops`. SEO, CRO, GEO, GMC, analytics, conteúdo e impact reviews pertencem ao especialista LK Growth. Vendas, pulso comercial, fechamento de loja e reports comerciais obrigatórios permanecem no Main/COO enquanto não existir um profile operacional LK próprio. Não migrar automaticamente relatórios comerciais para LK Growth só por conterem “LK”.
+Nota de ownership: nesta seção, diferenciar `LK Growth`, `LK Shopify` e `LK Comercial/Ops`. SEO, CRO, GEO, GMC, analytics, conteúdo e impact reviews pertencem ao especialista LK Growth. Produto/upload/coleções/superfície Shopify pertencem ao especialista LK Shopify. Vendas, pulso comercial, fechamento de loja e reports comerciais obrigatórios pertencem a LK Ops/Comercial. Não migrar automaticamente relatórios comerciais para LK Growth só por conterem “LK”.
 
 - `7c688553e293` — LK Daily Sales Brief read-only mandatory delivery
   - Schedule: `0 11 * * *` UTC / 08h BRT.
-  - Delivery: `origin`.
-  - Função: briefing diário aprovado.
+  - Delivery vivo: `local`.
+  - Owner: LK Ops / Comercial / Atendimento.
+  - Função: briefing diário read-only.
   - Kill criteria: fonte indisponível sem sinalizar; dados sem verificação; misturar Tiny/Shopify indevidamente.
 
 - `953b9055458e` — LK Weekly CEO Review read-only mandatory delivery
   - Schedule: `0 12 * * 1` UTC / segunda 09h BRT.
-  - Delivery: `origin`.
+  - Delivery vivo: `local`.
+  - Owner: LK Ops / Comercial / Atendimento.
   - Kill criteria: repetir daily sem insight semanal; enviar sem fonte.
-
-- `d4c26da4cd48` — LK GMC Review read-only mandatory delivery
-  - Schedule: `0 12 * * 4` UTC / quinta 09h BRT.
-  - Delivery: `origin`.
-  - Kill criteria: sugerir write GMC sem approval packet; não diferenciar read-only vs ação externa.
 
 - `c3bb587519d2` — LK Pulso Comercial 16h read-only delivery
   - Schedule: `0 19 * * *` UTC / 16h BRT.
   - Delivery: `local`.
+  - Owner: LK Ops / Comercial / Atendimento.
   - Kill criteria: envio Telegram de sucesso; duplicar Daily Sales Brief.
 
 - `e3279babbc4a` — LK 09h previous-day sales report external delivery
   - Schedule: `0 12 * * *` UTC / 09h BRT.
-  - Delivery: `local`.
+  - Delivery vivo: `local`.
+  - Owner: LK Ops / Comercial / Atendimento.
+  - Status: manter com cautela; nome sugere entrega externa, mas runtime está local.
   - Kill criteria: envio externo fora do script/escopo aprovado; fonte ausente.
 
 - `a2ead305eab2` — LK 19h30 physical store close external delivery
   - Schedule: `30 22 * * *` UTC / 19h30 BRT.
-  - Delivery: `local`.
+  - Delivery vivo: `local`.
+  - Owner: LK Ops / Comercial / Atendimento.
+  - Status: manter com cautela; nome sugere entrega externa, mas runtime está local.
   - Kill criteria: envio externo fora do script/escopo aprovado; fonte ausente.
 
 ### Zipper / negócio
@@ -182,12 +184,38 @@ Nota de ownership: nesta seção, diferenciar `LK Growth` de `LK Comercial/Ops`.
 - `357d40a5863e` — Zipper OS vendas 09h WhatsApp/email
   - Schedule: `0 12 * * 1-5` UTC / dias úteis 09h BRT.
   - Delivery: `local`.
+  - Owner: Zipper OS.
   - Kill criteria: contato externo fora dos destinatários aprovados; dados não vindos de `vendas_tango`; misturar SPITI.
 
 - `71b147362ec1` — Zipper Gmail style learning refresh
   - Schedule: `20 6 * * *` UTC.
   - Delivery: `local`.
+  - Owner: Zipper OS documental/read-only.
   - Kill criteria: criar draft/responder e-mail; usar e-mail enviado como autorização.
+
+## Documentados mas não vistos no live list principal em 2026-05-27
+
+Estes itens ficam históricos/não confirmados até prova em outro scheduler/profile. Não recriar automaticamente.
+
+- `c358f8f56a26` — Pixel AI Hub / Brainzinho daily learning scan
+  - Estado: não apareceu no `cronjob(action='list')` principal de 2026-05-27.
+  - Owner documental esperado: Hermes Agent / Operações Hermes.
+  - Ação segura: procurar read-only em profile Mordomo/registry antigo antes de declarar removido.
+
+- `71b2636add5d` — LK WhatsApp Hermes responder watchdog
+  - Estado: não apareceu no live list principal de 2026-05-27.
+  - Owner esperado: LK Ops / WhatsApp, se existir.
+  - Ação segura: não recriar; reconciliar origem e guardrails antes de qualquer ativação.
+
+- `a5d7a392eed9` — LK WhatsApp Hermes responder regression watchdog
+  - Estado: não apareceu no live list principal de 2026-05-27.
+  - Owner esperado: LK Ops / QA WhatsApp, se existir.
+  - Ação segura: não recriar; reconciliar origem e guardrails antes de qualquer ativação.
+
+- `d4c26da4cd48` — LK GMC Review read-only mandatory delivery
+  - Estado: não apareceu no live list principal de 2026-05-27.
+  - Owner esperado: LK Growth/GMC.
+  - Ação segura: não recriar; confirmar se foi removido, migrado ou está em registry diferente.
 
 ## Jobs pausados removidos — decisão executada em 2026-05-22
 
@@ -224,5 +252,5 @@ Após aprovação explícita de Lucas, os 5 jobs pausados/orfãos foram removido
 
 - Confirmar semanalmente que o scheduler principal continua sem jobs pausados/orfãos.
 - Consolidar 02h30 e Mesa COO se continuarem duplicando decisões.
-- Recriar qualquer job removido somente com rotina `.md`, owner, fonte, delivery, kill criteria e approval packet novo.
+- Recriar qualquer job removido ou ausente somente com rotina `.md`, owner, fonte, delivery, kill criteria e approval packet novo.
 - Manter este arquivo atualizado sempre que `cronjob(action='create/update/pause/remove')` for usado.

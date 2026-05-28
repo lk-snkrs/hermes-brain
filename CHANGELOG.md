@@ -1,3 +1,13 @@
+## 2026-05-27 — Daily Intelligence Loop saudável + foco orquestrador/especialistas
+
+- Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-27.md`.
+- Host observability salvo em `reports/hermes-host-docker-observability-2026-05-27.json`: containers esperados `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)`, helper com `alerts: []`.
+- Confirmado estado vivo: 21 jobs ativos no cron status/list; jobs críticos de Daily Loop, Fechamento 23h, relatório 02h30, Mesa COO e watchdogs especialistas presentes; runtime/compressão em silent-OK.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 segue como release pública mais recente; nenhum runtime swap/restart executado.
+- Gerados artefatos canônicos do gate 02h: `reports/brain-health-check-2026-05-27-02h.json` com FAIL=0/WARN=0 e `reports/brain-improvement-score-2026-05-27-02h.{md,json}` com score 94/100.
+- Criado `reports/hermes-learning-ledger/2026-05-27.md`, registrando foco em governança Hermes Geral/especialistas, limites de memória, skills grandes e placeholders de mídia em Telegram.
+- Prioridade ativa roteada para Hermes Geral/Orquestrador/runtime governance: consolidar contratos, receipts/handoffs e observar Mesa COO/relatório 02h30; LK/Zipper/SPITI/Mordomo ficam em manutenção/guardrails.
+
 ## 2026-05-26 — Daily Intelligence Loop saudável + SPITI em monitoramento pós-provider
 
 - Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-26.md`.

@@ -14,6 +14,54 @@ Atenção: se o navegador estiver preso em **Shopify dev preview** (`lk-new-them
 
 Nenhum novo guia deve ser criado como página textual genérica. Antes de criar ou alterar guias, o executor deve abrir/analisar o padrão Moon Shoe e reutilizar sua lógica visual, editorial e estrutural.
 
+## Lei anti-invenção
+
+A LK não cria páginas “da cabeça”. Todo novo guia, página de marca, source page ou coleção editorial deve nascer de um dos moldes aprovados abaixo. Se o pedido não encaixar em um molde existente, o executor deve primeiro propor um **novo padrão/template para aprovação** e só depois criar a página.
+
+Regras obrigatórias:
+
+- reutilizar estrutura, hierarquia visual, espaçamento e componentes aprovados;
+- declarar qual molde está sendo usado antes de escrever ou montar a página;
+- consultar fontes reais antes de afirmar contexto de marca, cultura, collab, materiais ou origem do modelo;
+- nunca inventar nomes de seções, labels visíveis, CTAs ou formatos novos sem aprovação;
+- quando houver dúvida entre “coleção” e “guia”, separar: coleção vende primeiro; guia aprofunda depois;
+- toda exceção precisa ficar registrada no brief, com motivo comercial/SEO/CRO claro.
+
+## Moldes canônicos
+
+1. **Coleção Shopify produto-first**
+   - Produtos aparecem antes de qualquer texto longo.
+   - Topo minimalista: H1 limpo e dominante; kicker curto sem repetir o nome da coleção; parágrafo breve e, quando aprovado, mídia/fotos no padrão existente.
+   - Se o H1 já mostra o nome da coleção, o kicker não repete esse nome. Exemplo correto: `CURADORIA LK`; evitar `CURADORIA LK · NEW BALANCE 204L` quando o H1 já é `New Balance 204L`.
+   - Grid padrão: 20 produtos por página para preservar respiro, performance e leitura premium; exceções precisam ser aprovadas no brief.
+   - Guia/FAQ/schema ficam depois do grid ou em página linkada.
+   - Padrão visual de referência quando aplicável: New Balance 204L.
+
+2. **Guia editorial linkado à coleção**
+   - Página independente em `/pages/guia-...`.
+   - Visual e estrutura no padrão Moon Shoe.
+   - A coleção pode ter CTA discreto apontando para o guia, mas não deve virar uma matéria longa antes dos produtos.
+
+3. **Source page / matéria de marca ou collab**
+   - Página editorial premium para contexto de marca, collab, origem, matérias externas e leitura de curadoria.
+   - Hero forte, fontes externas, cards de referência, blocos citáveis LK e CTA discreto.
+   - Não pode ser artigo simples de texto corrido.
+
+4. **Página de apoio SEO/GEO / autenticidade / comparação**
+   - Usa o padrão editorial quando for customer-facing.
+   - Deve ter fontes, tabela ou checklist útil, FAQ e blocos citáveis.
+   - Não pode virar página genérica de palavras-chave.
+
+## Ordem obrigatória de criação
+
+1. Classificar o tipo: coleção produto-first, guia linkado, source page ou apoio SEO/GEO.
+2. Abrir o padrão canônico correspondente: Moon Shoe para guias/source pages; 204L para coleção produto-first quando aplicável.
+3. Preencher `templates/brief-guia-editorial-colecao-lk.md`.
+4. Listar fontes reais que serão usadas.
+5. Produzir rascunho/preview no molde escolhido.
+6. Fazer QA contra este documento antes de pedir aprovação.
+7. Só fazer write em Shopify produção com aprovação explícita.
+
 ## O que torna o padrão correto
 
 O guia correto tem aparência de matéria editorial premium, não de bloco SEO simples. Ele combina:

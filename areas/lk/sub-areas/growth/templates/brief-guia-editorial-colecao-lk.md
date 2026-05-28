@@ -8,14 +8,20 @@ Referência canônica obrigatória:
 - Guia visual base: Nike x Jacquemus Moon Shoe
 - Snapshot local: `areas/lk/sub-areas/growth/references/moon-shoe-jacquemus-canonical-guide-pattern.html`
 
-## 1. Identidade do guia
+## 1. Identidade do guia/página
 
+- Tipo obrigatório: coleção produto-first / guia linkado / source page / apoio SEO-GEO / novo padrão a aprovar
+- Molde canônico usado: Moon Shoe / 204L / outro padrão aprovado
+- Para coleção produto-first: confirmar H1 dominante, kicker sem repetir nome da coleção e grid com 20 produtos por página, salvo exceção aprovada.
+- Se for novo padrão: registrar motivo e pedir aprovação antes de produzir
 - Coleção/modelo:
 - Handle/URL alvo:
 - Objetivo comercial:
 - Público provável:
 - Produtos/coleções linkados:
 - Status: rascunho / preview / aprovado / publicado
+
+Regra: se `Tipo obrigatório` ou `Molde canônico usado` não estiver preenchido, não escrever o guia.
 
 ## 2. Fontes obrigatórias
 
@@ -66,6 +72,8 @@ Evitar:
 O guia só pode ser apresentado ao Lucas como “pronto para aprovar” se passar em todos estes pontos:
 
 - [ ] Abri/consultei o padrão Moon Shoe nesta tarefa.
+- [ ] Classifiquei o tipo da página e declarei o molde canônico usado.
+- [ ] Se o caso não encaixa em Moon Shoe/204L/outro padrão aprovado, parei para propor novo template antes de criar.
 - [ ] O layout não parece uma página textual simples.
 - [ ] Existe uma tabela comparativa realmente útil.
 - [ ] Existem fontes externas com links corretos e `rel="nofollow noopener"` quando externo.

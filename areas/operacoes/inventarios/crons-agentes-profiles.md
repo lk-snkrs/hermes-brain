@@ -1,7 +1,7 @@
 # Inventário vivo — crons, agentes, profiles e projetos
 
-Data-base: 2026-05-25 11:20 UTC
-Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-05-25**
+Data-base: 2026-05-27 11:20 UTC
+Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-05-27**
 Escopo: Hermes Brain / Grande Mente / profiles especialistas / crons Hermes.
 
 ## 1. Princípio
@@ -378,6 +378,24 @@ Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-
 - Jobs observados em 2026-05-25 que não aparecem mais na listagem viva atual: `LK GMC Review read-only mandatory delivery`, `LK WhatsApp Hermes responder regression watchdog` e um dos jobs LK/SEO-GMC previamente listados no snapshot de 23 jobs; tratar seções antigas como históricas até nova evidência viva.
 - Delivery `origin` observado sem erro explícito: `Mesa COO diária Telegram` e `Relatório Hermes diário 23h + 02h para Lucas`; nenhuma mudança de delivery foi feita.
 - Delivery `local` confirmado para LK Daily Sales Brief, LK Weekly CEO Review, todos os watchdogs de gateway listados, Fechamento 23h, Runtime Truth Reconciler e Operating Layer.
+- Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo, campanha, Shopify, GMC, Notion, WhatsApp, email ou secret foi alterado.
+
+### Reconciliação Runtime Truth — 2026-05-27 11:20 UTC
+
+Evidência runtime: tentativa de localizar `cronjob list` neste container/runtime não encontrou o comando no PATH; fallback canônico usado com sucesso: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all` a partir de `/opt/data/hermes_bruno_ingest/hermes-brain`.
+
+Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-27.md`.
+
+- Total de jobs listados: 21.
+- Ativos: 21.
+- Pausados/disabled listados: 0.
+- `last_status` não-ok: 0 na listagem atual.
+- Erros explícitos de delivery: 0 na listagem atual.
+- Jobs ativos sem `Last run` ainda: 0.
+- Drift de contagem em relação ao snapshot anterior de 2026-05-26 11:21 UTC: `20 ativos / 0 pausados listados` → `21 ativos / 0 pausados listados`.
+- Novo job observado na listagem viva atual: `Hermes multi-profile latency watchdog` — ativo, `origin`, script `hermes_profile_latency_watchdog.py`, último status `ok`; precisa permanecer documentado como alerta/anomalia, não como recibo de sucesso silencioso.
+- Delivery `origin` observado sem erro explícito: `Mesa COO diária Telegram`, `Relatório Hermes diário 23h + 02h para Lucas` e `Hermes multi-profile latency watchdog`; nenhuma mudança de delivery foi feita.
+- Delivery `local` confirmado para LK Daily Sales Brief, LK Weekly CEO Review, todos os watchdogs de gateway listados, Fechamento 23h, Runtime Truth Reconciler, Operating Layer e strict-runtime guard.
 - Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo, campanha, Shopify, GMC, Notion, WhatsApp, email ou secret foi alterado.
 
 ## 5. Regras de delivery para Fechamento 23h

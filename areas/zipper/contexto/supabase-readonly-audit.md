@@ -1,6 +1,6 @@
 # Zipper Supabase — Auditoria Read-only para PRD
 
-Atualizado: 2026-05-18T15:18:38.741362+00:00
+Atualizado: 2026-05-27T23:32:03.499881+00:00
 
 ## Escopo e segurança
 
@@ -20,7 +20,7 @@ Atualizado: 2026-05-18T15:18:38.741362+00:00
 
 #### `vendas_tango`
 
-- Linhas estimadas: `2102` (status 206, sample 206)
+- Linhas estimadas: `2108` (status 206, sample 206)
 - Colunas detectadas (18): `id, created_at, pedido_id, pedido_data, pedido_origem, pedido_evento, cliente_id, cliente_nome, cliente_bairro, cliente_cidade, cliente_uf, cliente_pais, artista_nome, valor_obra_final, acervo_id, deal_name, email, whatsapp`
 
 - money: `valor_obra_final`
@@ -49,9 +49,17 @@ Atualizado: 2026-05-18T15:18:38.741362+00:00
 
 #### `artist_pdfs`
 
-- Linhas estimadas: `0` (status 200, sample 200)
-- Colunas detectadas (0): ``
+- Linhas estimadas: `13` (status 200, sample 206)
+- Colunas detectadas (6): `id, artist_name, pdf_filename, pdf_base64, created_at, updated_at`
 
+- dates: `created_at, updated_at`
+- sensitive_or_identity: `artist_name, pdf_filename`
+- other: `id, pdf_base64`
+- Exemplos não sensíveis de formato:
+  - `id`: `1`
+  - `pdf_base64`: `JVBERi0xLjYNJeLjz9MNCjQ1MCAwIG9iag08PC9GaWx0ZXIvRmxhdGVEZWNvZGUvRmlyc3QgMTQvT...`
+  - `created_at`: `2026-05-18T15:45:02.987758+00:00`
+  - `updated_at`: `2026-05-18T15:45:02.987758+00:00`
 
 #### `scheduled_sends`
 
@@ -61,7 +69,7 @@ Atualizado: 2026-05-18T15:18:38.741362+00:00
 
 #### `contacts`
 
-- Linhas estimadas: `1960` (status 206, sample 206)
+- Linhas estimadas: `1961` (status 206, sample 206)
 - Colunas detectadas (12): `id, phone, first_name, last_name, artist_interest, context, tags, notes, pdf_count, email, created_at, updated_at`
 
 - dates: `created_at, updated_at`
@@ -120,20 +128,20 @@ Atualizado: 2026-05-18T15:18:38.741362+00:00
 
 #### `contents`
 
-- Linhas estimadas: `266` (status 200, sample 206)
+- Linhas estimadas: `268` (status 200, sample 206)
 - Colunas detectadas (10): `id, platform, external_id, content_type, url, thumbnail_url, caption, published_at, raw_payload, pulled_at`
 
 - other: `id, platform, external_id, content_type, url, thumbnail_url, caption, published_at, raw_payload, pulled_at`
 - Exemplos não sensíveis de formato:
-  - `id`: `98457dff-2600-48ef-9b09-caa81367fe98`
+  - `id`: `314df701-aef1-4b31-9e97-3a27de251755`
   - `platform`: `mailerlite`
-  - `external_id`: `168270261154481670`
+  - `external_id`: `168167512249206689`
   - `content_type`: `newsletter_campaign`
-  - `caption`: `Aberturas amanhã: Kachani e Julia
-Amanhã: aberturas na Zipper 💥`
-  - `published_at`: `2025-10-15T14:19:31+00:00`
-  - `raw_payload`: `{'id': '168270261154481670', 'can': {'copy': True, 'send': True, 'delete': Tr...`
-  - `pulled_at`: `2026-05-18T03:06:08.876+00:00`
+  - `caption`: `Flávia: 4 projetos
+Flávia Junqueira em 4 novos projetos`
+  - `published_at`: `2025-10-13T21:07:22+00:00`
+  - `raw_payload`: `{'id': '168167512249206689', 'can': {'copy': True, 'send': True, 'delete': Tr...`
+  - `pulled_at`: `2026-05-27T03:06:05.822+00:00`
 
 #### `spiti_recebimentos`
 
@@ -180,7 +188,7 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `content_metrics`
 
-- Linhas estimadas: `798` (status 200, sample 206)
+- Linhas estimadas: `831` (status 200, sample 206)
 - Colunas detectadas (14): `id, content_id, snapshot_date, impressions, reach, views, likes, comments, shares, saves, opens, clicks, unsubscribes, raw`
 
 - dates: `snapshot_date`
@@ -196,7 +204,7 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `followups`
 
-- Linhas estimadas: `19` (status 200, sample 206)
+- Linhas estimadas: `20` (status 200, sample 206)
 - Colunas detectadas (8): `id, jid, nome, sent_at, followup_at, status, completed_at, created_at`
 
 - dates: `created_at`
@@ -211,7 +219,7 @@ Amanhã: aberturas na Zipper 💥`
   - `completed_at`: `2026-02-27T13:31:53.65+00:00`
   - `created_at`: `2026-02-24T13:31:53.108289+00:00`
 - Distribuições categóricas amostradas:
-  - `status`: sent=16, cancelled=3
+  - `status`: sent=16, cancelled=3, pending=1
 
 #### `exhibition_artists`
 
@@ -340,7 +348,7 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `spiti_custos`
 
-- Linhas estimadas: `48` (status 200, sample 206)
+- Linhas estimadas: `54` (status 200, sample 206)
 - Colunas detectadas (9): `id, leilao_id, categoria, descricao, valor, data, pago, notas, criado_em`
 
 - money: `valor`
@@ -357,7 +365,7 @@ Amanhã: aberturas na Zipper 💥`
   - `notas`: ``
   - `criado_em`: `2026-04-24T13:29:01.493239+00:00`
 - Distribuições categóricas amostradas:
-  - `categoria`: Marketing=8, Alimentação=7, Freelance=6, Produção=5, Geral=5, Estrutura=5, Reembolso=4, Outros=3, Comissão=3, Segurança=2
+  - `categoria`: Produção=11, Marketing=8, Alimentação=7, Freelance=6, Geral=5, Estrutura=5, Reembolso=4, Outros=3, Comissão=3, Segurança=2
 
 #### `spiti_clientes`
 
@@ -409,7 +417,7 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `messages_log`
 
-- Linhas estimadas: `19` (status 200, sample 206)
+- Linhas estimadas: `24` (status 200, sample 206)
 - Colunas detectadas (5): `id, phone, message, template_used, sent_at`
 
 - sensitive_or_identity: `phone, message`
@@ -484,7 +492,7 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `sync_runs`
 
-- Linhas estimadas: `48` (status 200, sample 206)
+- Linhas estimadas: `50` (status 200, sample 206)
 - Colunas detectadas (10): `id, source, started_at, finished_at, items_seen, items_new, items_tagged, status, error_message, notes`
 
 - sensitive_or_identity: `error_message, notes`
@@ -499,7 +507,7 @@ Amanhã: aberturas na Zipper 💥`
   - `items_tagged`: `9`
   - `status`: `success`
 - Distribuições categóricas amostradas:
-  - `status`: success=48
+  - `status`: success=50
 
 #### `artists`
 
@@ -539,7 +547,7 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `content_tags`
 
-- Linhas estimadas: `313` (status 200, sample 206)
+- Linhas estimadas: `315` (status 200, sample 206)
 - Colunas detectadas (9): `id, content_id, entity_type, entity_id, source, matched_text, confirmed_by, confirmed_at, created_at`
 
 - dates: `created_at`
@@ -622,9 +630,17 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `artist_pdfs`
 
-- Linhas estimadas: `0` (status 200, sample 200)
-- Colunas detectadas (0): ``
+- Linhas estimadas: `13` (status 200, sample 206)
+- Colunas detectadas (6): `id, artist_name, pdf_filename, pdf_base64, created_at, updated_at`
 
+- dates: `created_at, updated_at`
+- sensitive_or_identity: `artist_name, pdf_filename`
+- other: `id, pdf_base64`
+- Exemplos não sensíveis de formato:
+  - `id`: `1`
+  - `pdf_base64`: `JVBERi0xLjYNJeLjz9MNCjQ1MCAwIG9iag08PC9GaWx0ZXIvRmxhdGVEZWNvZGUvRmlyc3QgMTQvT...`
+  - `created_at`: `2026-05-18T15:45:02.987758+00:00`
+  - `updated_at`: `2026-05-18T15:45:02.987758+00:00`
 
 #### `scheduled_sends`
 
@@ -634,7 +650,7 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `contacts`
 
-- Linhas estimadas: `1960` (status 206, sample 206)
+- Linhas estimadas: `1961` (status 206, sample 206)
 - Colunas detectadas (12): `id, phone, first_name, last_name, artist_interest, context, tags, notes, pdf_count, email, created_at, updated_at`
 
 - dates: `created_at, updated_at`
@@ -693,20 +709,20 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `contents`
 
-- Linhas estimadas: `266` (status 200, sample 206)
+- Linhas estimadas: `268` (status 200, sample 206)
 - Colunas detectadas (10): `id, platform, external_id, content_type, url, thumbnail_url, caption, published_at, raw_payload, pulled_at`
 
 - other: `id, platform, external_id, content_type, url, thumbnail_url, caption, published_at, raw_payload, pulled_at`
 - Exemplos não sensíveis de formato:
-  - `id`: `98457dff-2600-48ef-9b09-caa81367fe98`
+  - `id`: `314df701-aef1-4b31-9e97-3a27de251755`
   - `platform`: `mailerlite`
-  - `external_id`: `168270261154481670`
+  - `external_id`: `168167512249206689`
   - `content_type`: `newsletter_campaign`
-  - `caption`: `Aberturas amanhã: Kachani e Julia
-Amanhã: aberturas na Zipper 💥`
-  - `published_at`: `2025-10-15T14:19:31+00:00`
-  - `raw_payload`: `{'id': '168270261154481670', 'can': {'copy': True, 'send': True, 'delete': Tr...`
-  - `pulled_at`: `2026-05-18T03:06:08.876+00:00`
+  - `caption`: `Flávia: 4 projetos
+Flávia Junqueira em 4 novos projetos`
+  - `published_at`: `2025-10-13T21:07:22+00:00`
+  - `raw_payload`: `{'id': '168167512249206689', 'can': {'copy': True, 'send': True, 'delete': Tr...`
+  - `pulled_at`: `2026-05-27T03:06:05.822+00:00`
 
 #### `spiti_recebimentos`
 
@@ -753,7 +769,7 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `content_metrics`
 
-- Linhas estimadas: `798` (status 200, sample 206)
+- Linhas estimadas: `831` (status 200, sample 206)
 - Colunas detectadas (14): `id, content_id, snapshot_date, impressions, reach, views, likes, comments, shares, saves, opens, clicks, unsubscribes, raw`
 
 - dates: `snapshot_date`
@@ -769,7 +785,7 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `followups`
 
-- Linhas estimadas: `19` (status 200, sample 206)
+- Linhas estimadas: `20` (status 200, sample 206)
 - Colunas detectadas (8): `id, jid, nome, sent_at, followup_at, status, completed_at, created_at`
 
 - dates: `created_at`
@@ -784,7 +800,7 @@ Amanhã: aberturas na Zipper 💥`
   - `completed_at`: `2026-02-27T13:31:53.65+00:00`
   - `created_at`: `2026-02-24T13:31:53.108289+00:00`
 - Distribuições categóricas amostradas:
-  - `status`: sent=16, cancelled=3
+  - `status`: sent=16, cancelled=3, pending=1
 
 #### `exhibition_artists`
 
@@ -913,7 +929,7 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `spiti_custos`
 
-- Linhas estimadas: `48` (status 200, sample 206)
+- Linhas estimadas: `54` (status 200, sample 206)
 - Colunas detectadas (9): `id, leilao_id, categoria, descricao, valor, data, pago, notas, criado_em`
 
 - money: `valor`
@@ -930,7 +946,7 @@ Amanhã: aberturas na Zipper 💥`
   - `notas`: ``
   - `criado_em`: `2026-04-24T13:29:01.493239+00:00`
 - Distribuições categóricas amostradas:
-  - `categoria`: Marketing=8, Alimentação=7, Freelance=6, Produção=5, Geral=5, Estrutura=5, Reembolso=4, Outros=3, Comissão=3, Segurança=2
+  - `categoria`: Produção=11, Marketing=8, Alimentação=7, Freelance=6, Geral=5, Estrutura=5, Reembolso=4, Outros=3, Comissão=3, Segurança=2
 
 #### `spiti_clientes`
 
@@ -982,7 +998,7 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `messages_log`
 
-- Linhas estimadas: `19` (status 200, sample 206)
+- Linhas estimadas: `24` (status 200, sample 206)
 - Colunas detectadas (5): `id, phone, message, template_used, sent_at`
 
 - sensitive_or_identity: `phone, message`
@@ -1057,7 +1073,7 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `sync_runs`
 
-- Linhas estimadas: `48` (status 200, sample 206)
+- Linhas estimadas: `50` (status 200, sample 206)
 - Colunas detectadas (10): `id, source, started_at, finished_at, items_seen, items_new, items_tagged, status, error_message, notes`
 
 - sensitive_or_identity: `error_message, notes`
@@ -1072,7 +1088,7 @@ Amanhã: aberturas na Zipper 💥`
   - `items_tagged`: `9`
   - `status`: `success`
 - Distribuições categóricas amostradas:
-  - `status`: success=48
+  - `status`: success=50
 
 #### `artists`
 
@@ -1112,7 +1128,7 @@ Amanhã: aberturas na Zipper 💥`
 
 #### `content_tags`
 
-- Linhas estimadas: `313` (status 200, sample 206)
+- Linhas estimadas: `315` (status 200, sample 206)
 - Colunas detectadas (9): `id, content_id, entity_type, entity_id, source, matched_text, confirmed_by, confirmed_at, created_at`
 
 - dates: `created_at`
