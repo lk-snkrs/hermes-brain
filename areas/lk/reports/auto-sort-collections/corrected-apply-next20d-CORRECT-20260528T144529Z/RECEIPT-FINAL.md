@@ -1,0 +1,113 @@
+# Receipt — corrected collection order apply next20d CORRECT
+
+Data: 2026-05-28T14:46:35.927839+00:00
+
+## Summary
+- Adidas Campus (`adidas-campus`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis Bad Bunny x adidas Campus 'The Last Campus' Marrom
+  - 2. Tênis adidas Campus 00s Scarlet Red Vermelho
+  - 3. Tênis adidas Campus 00s Bliss Pink Rosa
+  - 4. Tênis Korn x adidas Campus 2.0 Carbon Cinza
+- Calça Alo Yoga (`calcas-alo-yoga`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Calça Alo Yoga Suit Up Trouser (Regular) Preto
+  - 2. Calça Alo Yoga Suit Up Trouser (Long) Preto
+  - 3. Calça Alo Yoga Suit Up Trouser (Regular) Azul Marinho
+  - 4. Calça Alo Yoga Airlift High-Waist 7/8 Line Up Legging Gravel Bege
+- Nike Vomero Premium (`nike-vomero-premium`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis Nike Vomero Premium Tangerine Tint Laranja
+  - 2. Tênis Nike Vomero Premium Pearl Pink Rosa
+  - 3. Tênis Nike Vomero Premium Barely Green Verde
+  - 4. Tênis Nike Vomero Premium x Renegade x Cinnamon Marrom
+- Balenciaga (`balenciaga`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Óculos de Sol Balenciaga BB0056S-003 Branco
+  - 2. Óculos de Sol Balenciaga BB0049S-004 Azul
+  - 3. Óculos de Sol Balenciaga BB0041S-014 Azul
+  - 4. Oculos de Sol Balenciaga BB0318S-001 Preto
+- Moletom Alo Yoga (`moletom-alo-yoga`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Moletom Alo Yoga Sweet EsBonée Zip Up Ivory Creme
+  - 2. Moletom Alo Yoga Cropped Accolade Preto
+  - 3. Moletom Alo Yoga Cropped Serenity Coverup Bluestone Azul
+  - 4. Moletom Alo Yoga Cropped Serenity Coverup Black Preto
+- Adidas SL 72 (`adidas-sl-72`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis adidas SL 72 Og Maroon Almost Yellow Marrom
+  - 2. Tênis Adidas SL 72 OG Leopard Print Laranja
+  - 3. Tênis Adidas SL 72 OG Sand Strata Preloved Brown Cream White Bege
+  - 4. Tênis adidas SL 72 Og Scarlet Crochet Vermelho
+- BE@RBRICK (`be-rbrick`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)
+  - 2. MEDICOM TOY - Bearbrick Jean-Michel Basquiat #10 1000% Toy Art Multi-Color
+  - 3. MEDICOM TOY - Bearbrick Keith Haring #8 1000% Toy Art Multi-Color
+  - 4. MEDICOM TOY - Bearbrick Jean-Michel Basquiat "Special" 100% & 400% Set Toy Art Multi-Color
+- Nike Mind (`nike-mind-001`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis Nike Mind 002 Grey Football Grey Cinza
+  - 2. Chinelo Slide Nike Mind 001 Blackened Blue Azul
+  - 3. Chinelo Slide Nike Mind 001 Mineral Slate Verde
+  - 4. Chinelo Slide Nike Mind 001 Pearl Pink Rosa
+- Adidas x Bad Bunny (`adidas-x-bad-bunny`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis adidas Ballerina Bad Bunny Flamboyan Vermelho
+  - 2. Tênis Bad Bunny x Adidas BADBO 1.0 Rise Branco
+  - 3. Tênis Adidas Ballerina Bad Bunny Off White Black Gum Branco
+  - 4. Tênis adidas Gazelle x Bad Bunny Core White Bege
+- Kith (`kith`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Camiseta Kith Brush Vintage Boxy Alex Silk Off White
+  - 2. Camiseta Kith Brush Vintage Boxy Alex Nocturnal Azul Marinho
+  - 3. Camiseta Kith Signature Rose Jones Black Preto
+  - 4. Tênis On Running x Kith ON K-Tech 2 Spirulina Barley Verde
+- Puma (`puma-todos-os-modelos`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis Puma Speedcat Silk Chocotart Warm White Marrom
+  - 2. Tênis Puma Speedcat Og Black White Preto
+  - 3. Tênis Puma Speedcat TTF 'Dark Chocolate Frosted Ivory' Marrom
+  - 4. Tênis Puma Speedcat Archive Haute Coffee Frosted Ivory Marrom
+- Adidas Taekwondo (`adidas-taekwondo`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis Adidas Taekwondo Mei Ballet Cream White Branco
+  - 2. adidas Taekwondo Mei Ballet Branco e Preto
+  - 3. Tênis Adidas Taekwondo Mei Ballet Black Gum Preto
+  - 4. Adidas Taekwondo Mei Ballet Preto e Branco
+- Camisa | Apparels (`camisa-streetwear`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Camisa Aimé Leon Dore Soccer Jersey Pristine Bege
+  - 2. Camisa Aphase Check - Light Blue Azul
+  - 3. Camisa Saint Studio Pima Listrada Azul
+  - 4. Camisa Pace EOT Cuban Collar Off White
+- Dia das Mães by Lala Noleto. (`dia-das-maes-by-lala-noleto`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Metallic Têniss Silver Gold Prateado
+  - 2. Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Blue Azul
+  - 3. Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Green
+  - 4. Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege
+- On Running Cloudsolo (`on-running-cloudsolo`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis On Running Cloudsolo Loewe Teal Eggshell Azul
+  - 2. Tênis On Running Cloudsolo Loewe Sand Burgundy Bege
+  - 3. Tênis On Running Cloudsolo Loewe Burgundy Eggshell Bordô
+  - 4. Tênis On Running Cloudsolo Loewe Taupe Eggshell Marrom
+- Adidas Handball Spezial (`adidas-handball-spezial`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis Adidas Handball Spezial Earth Strata Gum Marrom
+  - 2. Tênis adidas Handball Spezial Sporty & Rich Pink Rosa
+  - 3. Tênis Adidas Handball Spezial Green Pink Velvet Verde
+  - 4. Tênis Adidas Handball Spezial LT Collegiate Green Cream White Verde
+- Collab com Artistas (`collab-com-artistas`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Camiseta Saint Studio Classy Suedine Supima Chairs Branco
+  - 2. Camiseta MASP x Leonilson "34 com Cicatrizes" Branco
+  - 3. Camiseta MASP x Leonilson "O Porta Fortuna" Bege
+  - 4. Camiseta MASP x Leonilson "O Grande Rio" Branco
+- Comme des Garçons (`comme-des-garcons`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Comme des Garçons PLAY Black Emblem Black Preto
+  - 2. Polo Comme des Garçons PLAY Red Emblem White Branco
+  - 3. Camiseta Comme des Garçons Emblem Rhinestone White/Black Branco
+  - 4. Polo Comme des Garçons PLAY Black Emblem Black Preto
+- Adidas Taekwondo Mei Ballet (`adidas-taekwondo-mei-ballet`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis Adidas Taekwondo Mei Ballet Cream White Branco
+  - 2. adidas Taekwondo Mei Ballet Branco e Preto
+  - 3. Tênis Adidas Taekwondo Mei Ballet Black Gum Preto
+  - 4. Adidas Taekwondo Mei Ballet Preto e Branco
+- Nike Cortez (`nike-cortez`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis Nike Cortez Baroque Brown Marrom
+  - 2. Tênis Nike Cortez Picante Red Vermelho
+  - 3. Tênis Nike Cortez White Laser Fuchsia Branco
+  - 4. Tênis Nike Cortez SE Tiempo Pack Metallic Cool Grey Cinza
+
+## Artefatos
+- Snapshot/rollback: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/reports/auto-sort-collections/corrected-apply-next20d-CORRECT-20260528T144529Z/rollback-snapshot-pre-write-immediate.json`
+- Receipt JSON: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/reports/auto-sort-collections/corrected-apply-next20d-CORRECT-20260528T144529Z/receipt-final.json`
+
+## Não ações
+- Nenhum cron ativado.
+- Nenhum produto/preço/estoque/tema/tag/SEO/GMC/campanha/checkout alterado.

@@ -1,0 +1,118 @@
+# Receipt — corrected collection order apply final21 CORRECT
+
+Data: 2026-05-28T14:48:59.825841+00:00
+
+## Summary
+- Top Alo Yoga (`tops-alo-yoga`): moves=4; admin_top_ok=True; public_ok=True
+  - 1. Top Alo Yoga Aspire
+  - 2. Top Alo Yoga Airlift Line Up Gravel Bege
+  - 3. Top Alo Yoga Airbrush Double Up Preto/Branco
+  - 4. Top Alo Yoga Splendor
+- Onitsuka Tiger Mexico 66 Sabot (`onitsuka-tiger-mexico-66-sabot`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza
+  - 2. Tênis Onitsuka Tiger Mexico 66 Sabot Black/Black Preto
+  - 3. Tênis Onitsuka Tiger Mexico 66 Sabot Dark Brown Marrom
+  - 4. Tênis Onitsuka Tiger Mexico 66 Sabot Beige Green Bege
+- Onitsuka Tiger Mexico 66 TGRS (`onitsuka-tiger-mexico-66-tgrs`): moves=11; admin_top_ok=True; public_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 TGRS Black/Cream Preto
+  - 2. Tênis Onitsuka Tiger Mexico 66 TGRS Champagne/Cream Dourado
+  - 3. Tênis Onitsuka Tiger Mexico 66 TGRS Gunmetal/Metropolis Preto
+  - 4. Tênis Onitsuka Tiger Mexico 66 TGRS Crystal Pink/Cream Rosa
+- Puma Speedcat (`puma-speedcat`): moves=6; admin_top_ok=True; public_ok=True
+  - 1. Tênis Puma Speedcat Silk Chocotart Warm White Marrom
+  - 2. Tênis Puma Speedcat Og Black White Preto
+  - 3. Tênis Puma Speedcat TTF 'Dark Chocolate Frosted Ivory' Marrom
+  - 4. Tênis Puma Speedcat Archive Haute Coffee Frosted Ivory Marrom
+- Adidas Samba Jane (`adidas-samba-jane`): moves=9; admin_top_ok=True; public_ok=True
+  - 1. Tênis Adidas Tokyo Mary Jane Crystal Sky Cream White Azul
+  - 2. Tênis Adidas Tokyo Mary Jane Cream White Red Gold Metallic Creme
+  - 3. Tênis Adidas Tokyo Mary Jane Sandy Pink Earth Strata Rosa
+  - 4. Tênis Adidas Samba Jane Chalk White Wonder Quartz Branco
+- Adidas Sambae (`adidas-sambae`): moves=9; admin_top_ok=True; public_ok=True
+  - 1. Tênis adidas Sambae x Hello Kitty Cloud White Clear Pink Branco
+  - 2. Tênis adidas Sambae Linen Gum Bege
+  - 3. Tênis adidas Sambae Denim Azul
+  - 4. Tênis Adidas Sambae White Green Gum Branco
+- Adidas Tokyo (`adidas-tokyo`): moves=7; admin_top_ok=True; public_ok=True
+  - 1. Tênis Adidas Tokyo Mary Jane Crystal Sky Cream White Azul
+  - 2. Tênis Adidas Tokyo Mary Jane Cream White Red Gold Metallic Creme
+  - 3. Tênis Adidas Tokyo MJ Core Black Cream White Gold Metallic Preto
+  - 4. Tênis Adidas Tokyo Mary Jane Sandy Pink Earth Strata Rosa
+- Jason Markk (`jason-markk`): moves=5; admin_top_ok=True; public_ok=False
+  - 1. Jason Markk Essential Kit de Limpeza
+  - 2. Jason Markk Travel Shoe Cleaning Kit
+  - 3. Jason Markk Delicates Cleaning Brush
+  - 4. Jason Markk Durables Cleaning Brush
+- New Balance 1906R (`new-balance-1906r`): moves=9; admin_top_ok=True; public_ok=True
+  - 1. Tênis New Balance 1906L Black Suede Preto
+  - 2. Tênis New Balance 1906L Silver Metallic Black Prateado
+  - 3. Tênis New Balance 1906L Khaki Bege
+  - 4. Tênis New Balance 1906L Preto Couro Mesh Preto
+- Sufgang (`sufgang`): moves=6; admin_top_ok=True; public_ok=False
+  - 1. Camiseta Sufgang Basic Pack 5.8 Azul
+  - 2. Camiseta Sufgang Basic Pack 5.8 Verde
+  - 3. Camiseta Sufgang Stunt Master Azul
+  - 4. Camiseta Sufgang Stunt Master Preto
+- Dane-se x Rubem Valentim (`dane-se-x-rubem-valentim`): moves=7; admin_top_ok=True; public_ok=False
+  - 1. Camiseta Oversized Dane-se x Rubem Valentim Relevo 79 Marrom
+  - 2. Camiseta Oversized Dane-se x Rubem Valentim 1981 Bordo
+  - 3. Camiseta Regular Dane-se x Rubem Valentim 1989 Marinho
+  - 4. Camiseta Dane-se x Rubem Valentim Emblema 78 Bordo
+- Havaianas (`havaianas`): moves=7; admin_top_ok=True; public_ok=True
+  - 1. Chinelo Havaianas x Dolce & Gabbana Carreto Ciciliano Vermelho
+  - 2. Chinelo Havaianas x Dolce & Gabbana Leopard Marrom
+  - 3. Chinelo Havaianas x Dolce & Gabbana Blue Mediterraneo Azul
+  - 4. Chinelo Havaianas Top Dolce & Gabbana Faux Fur Leopardo Marrom
+- New Balance 1906L (`new-balance-1906l`): moves=8; admin_top_ok=True; public_ok=True
+  - 1. Tênis New Balance 1906L Black Suede Preto
+  - 2. Tênis New Balance 1906L Silver Metallic Black Prateado
+  - 3. Tênis New Balance 1906L Khaki Bege
+  - 4. Tênis New Balance 1906L Preto Couro Mesh Preto
+- by Tamara Rudge (`by-tamara-rudge`): moves=7; admin_top_ok=True; public_ok=True
+  - 1. Tênis Nike Moon Shoe SP Jacquemus University Red Vermelho
+  - 2. Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa
+  - 3. Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom
+  - 4. Tênis Nike Moon Shoe SP Jacquemus Off White
+- Onitsuka Tiger Mexico Mid (`onitsuka-tiger-mexico-mid`): moves=6; admin_top_ok=True; public_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico Mid Runner Cream/Directoire Blue Bege
+  - 2. Tênis Onitsuka Tiger Mexico Mid Runner Amarelo
+  - 3. Tênis Onitsuka Tiger Mexico Mid Runner Birch/Indian Ink Bege
+  - 4. Tênis Onitsuka Tiger Mexico Mid Runner Silver/Cream Prateado
+- Onitsuka Tiger x Versace (`onitsuka-tiger-x-versace`): moves=7; admin_top_ok=True; public_ok=True
+  - 1. Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown Blue Marrom
+  - 2. Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom
+  - 3. Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Metallic Têniss Silver Gold Prateado
+  - 4. Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Blue Azul
+- Adidas x Clot (`adidas-x-clot`): moves=2; admin_top_ok=True; public_ok=True
+  - 1. Tênis Adidas Taekwondo Caroline Hu x CLOT White Royal Branco
+  - 2. Tênis adidas Gazelle Indoor x Clot by Edison Chen Off White Branco
+  - 3. Tênis Adidas Taekwondo Caroline Hu x CLOT Black Preto
+  - 4. Tênis Adidas Taekwondo Caroline Hu x CLOT Pink Silver Rosa
+- Carhartt (`carhartt`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Calça Carhartt Men's Work - Relaxed Fit - Rugged Flex® - Canvas Marrom
+  - 2. Calça Carhartt Men's Work - Relaxed Fit - Rugged Flex® - Canvas Bege
+  - 3. Calça Carhartt Men's Work - Relaxed Fit - Rugged Flex® - Canvas Preto
+  - 4. Boné Carhartt Canvas Mesh-Back Preto
+- LK Picks (`lk-picks`): moves=2; admin_top_ok=True; public_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo
+  - 2. Tênis Onitsuka Tiger Mexico 66 SD Birch Metropolis Bege
+  - 3. Tênis New Balance 9060 Sea Salt Moonbeam Branco
+  - 4. Tênis adidas SL 72 Og Maroon Almost Yellow Marrom
+- Nike x Off White (`nike-x-off-white`): moves=3; admin_top_ok=True; public_ok=True
+  - 1. Tênis Nike Dunk Low x Off White "Lot 43" Cinza
+  - 2. Tênis Nike Dunk Low x Off-White Pine Green Verde
+  - 3. Tênis Nike Dunk Low x Off White "Lot 23" Cinza
+  - 4. Tênis Off-White x Nike Dunk Low Lot 46 of 50 Cinza
+- Onitsuka Tiger Moage CO (`onitsuka-tiger-moage-co`): moves=3; admin_top_ok=True; public_ok=True
+  - 1. Tênis Onitsuka Tiger Moage CO Cream Black Bege
+  - 2. Tênis Onitsuka Tiger Moage White/White Branco
+  - 3. Tênis Onitsuka Tiger Moage CO Birch Black Bege
+  - 4. Tênis Onitsuka Tiger Moage Co Oyster Grey/Feather Grey Cinza
+
+## Artefatos
+- Snapshot/rollback: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/reports/auto-sort-collections/corrected-apply-final21-CORRECT-20260528T144723Z/rollback-snapshot-pre-write-immediate.json`
+- Receipt JSON: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/reports/auto-sort-collections/corrected-apply-final21-CORRECT-20260528T144723Z/receipt-final.json`
+
+## Não ações
+- Nenhum cron ativado.
+- Nenhum produto/preço/estoque/tema/tag/SEO/GMC/campanha/checkout alterado.

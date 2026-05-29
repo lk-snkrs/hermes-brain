@@ -5,8 +5,9 @@ Use este template antes de gerar qualquer nova página/guia editorial de coleç�
 Referência canônica obrigatória:
 
 - Padrão: `areas/lk/sub-areas/growth/PADRAO-GUIAS-EDITORIAIS-LK.md`
-- Guia visual base: Nike x Jacquemus Moon Shoe
-- Snapshot local: `areas/lk/sub-areas/growth/references/moon-shoe-jacquemus-canonical-guide-pattern.html`
+- Se for **coleção produto-first**: base visual/comercial obrigatória = New Balance 204L (`/collections/new-balance-204l`).
+- Se for **guia/source page independente**: base visual/editorial obrigatória = Nike x Jacquemus Moon Shoe.
+- Snapshot Moon Shoe local: `areas/lk/sub-areas/growth/references/moon-shoe-jacquemus-canonical-guide-pattern.html`
 
 ## 1. Identidade do guia/página
 
@@ -35,6 +36,18 @@ Preencher antes de escrever. Não inventar fontes.
 
 ## 3. Estrutura visual obrigatória
 
+Para **coleção produto-first / molde 204L**:
+- [ ] Produtos antes do guia/editorial longo
+- [ ] Hero escuro no padrão 204L
+- [ ] H1 desktop ~52px, `display:inline-block`, sem faixa horizontal
+- [ ] Collage começa alinhado ao topo do breadcrumb; validar DOM/computed CSS
+- [ ] Bloco do hero usa o mesmo padding/top offset do 204L; não basta copiar `translateY`
+- [ ] Guia pós-grid off-white + card branco centralizado
+- [ ] Card interno desktop em 2 colunas
+- [ ] FAQ à direita alinhado verticalmente ao título da esquerda (`delta` visual/DOM ≈ 0)
+- [ ] CTA discreto e premium
+
+Para **guia/source page independente / molde Moon Shoe**:
 - [ ] Hero editorial no padrão Moon Shoe
 - [ ] Imagem contextual/editorial com alt text
 - [ ] H1 premium, não genérico

@@ -1,3 +1,14 @@
+## 2026-05-28 — Daily Intelligence Loop saudável + watchdog alinhado aos especialistas LK
+
+- Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-28.md`.
+- Host observability salvo em `reports/hermes-host-docker-observability-2026-05-28.json`: containers esperados `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão `Hermes Agent v0.14.0 (2026.5.16)`, helper com `alerts: []`.
+- GitHub Releases API confirmou que `v2026.5.16`/Hermes v0.14.0 segue como release pública mais recente; nenhum runtime swap/restart executado.
+- Gerados artefatos canônicos do gate 02h: `reports/brain-health-check-2026-05-28-02h.json` com FAIL=0/WARN=0 e `reports/brain-improvement-score-2026-05-28-02h.{md,json}` com score 94/100.
+- Auto-correção A1: `hermes_runtime_cron_watchdog.py` deixou de tratar `/opt/data/profiles/lk-ops`, `/opt/data/profiles/lk-shopify` e `/opt/data/profiles/lk-trends` como gateways inesperados, alinhando o watchdog ao estado aprovado dos especialistas LK.
+- Verificação da correção: `py_compile` nos scripts ativo/fonte + execução manual do watchdog com `rc=0` e stdout vazio; sem Docker/VPS/gateway/cron/token/API/webhook/external write.
+- Criado `reports/hermes-learning-ledger/2026-05-28.md` e referência procedural `runtime-watchdog-expected-specialist-profiles-20260528.md` na skill de melhoria contínua.
+- Prioridade ativa roteada para Hermes Geral/Orquestrador/runtime governance de especialistas LK; LK/Zipper/SPITI/Mordomo permanecem em manutenção/guardrails conforme escopo.
+
 ## 2026-05-27 — Daily Intelligence Loop saudável + foco orquestrador/especialistas
 
 - Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-27.md`.

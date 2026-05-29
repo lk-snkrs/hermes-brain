@@ -42,6 +42,7 @@ LK Shopify não deve inventar uma nova superfície de preview/aprovação para c
 - produto/upload: `skills/lk-shopify-product-upload/SKILL.md`;
 - leitura/catálogo/pedido/cliente/menu/tag/SEO/SKU/theme exceptions: `skills/lk-shopify-readonly/SKILL.md`;
 - guia/source page/editorial que será publicado via Shopify: padrão Moon Shoe + `areas/lk/sub-areas/growth/PADRAO-GUIAS-EDITORIAIS-LK.md`;
+- coleção comercial produto-first: `templates/template-colecao-produto-first-lk.md` como template proposto/read-only até oficialização por Lucas;
 - estoque/SKU: Tiny como verdade, Shopify como superfície/evento.
 
 A regra 1x/2x/3x do Brain vale aqui: repetir formato duas vezes cria template; terceira vez ou alto impacto atualiza skill/rotina.

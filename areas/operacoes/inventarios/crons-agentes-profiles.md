@@ -1,7 +1,7 @@
 # Inventário vivo — crons, agentes, profiles e projetos
 
-Data-base: 2026-05-27 11:20 UTC
-Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-05-27**
+Data-base: 2026-05-28 11:20 UTC
+Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-05-28**
 Escopo: Hermes Brain / Grande Mente / profiles especialistas / crons Hermes.
 
 ## 1. Princípio
@@ -396,6 +396,25 @@ Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-
 - Novo job observado na listagem viva atual: `Hermes multi-profile latency watchdog` — ativo, `origin`, script `hermes_profile_latency_watchdog.py`, último status `ok`; precisa permanecer documentado como alerta/anomalia, não como recibo de sucesso silencioso.
 - Delivery `origin` observado sem erro explícito: `Mesa COO diária Telegram`, `Relatório Hermes diário 23h + 02h para Lucas` e `Hermes multi-profile latency watchdog`; nenhuma mudança de delivery foi feita.
 - Delivery `local` confirmado para LK Daily Sales Brief, LK Weekly CEO Review, todos os watchdogs de gateway listados, Fechamento 23h, Runtime Truth Reconciler, Operating Layer e strict-runtime guard.
+- Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo, campanha, Shopify, GMC, Notion, WhatsApp, email ou secret foi alterado.
+
+### Reconciliação Runtime Truth — 2026-05-28 11:20 UTC
+
+Evidência runtime: tentativa de localizar `cronjob list` neste container/runtime não encontrou o comando no PATH; fallback canônico usado com sucesso: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all` a partir de `/opt/data/hermes_bruno_ingest/hermes-brain`.
+
+Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-28.md`.
+
+- Total de jobs listados: 21.
+- Ativos: 21.
+- Pausados/disabled listados: 0.
+- `last_status` não-ok: 1 na listagem atual.
+- Erros explícitos de delivery: 0 na listagem atual.
+- Jobs ativos sem `Last run` ainda: 0.
+- Drift de contagem em relação ao snapshot anterior de 2026-05-27 11:20 UTC: sem mudança (`21 ativos / 0 pausados listados`).
+- Job ativo com `last_status` não-ok: `Hermes Brain Operating Layer structural watchdog` — ativo, `local`, script `brain_operating_layer_audit.py`; último run retornou `error: Script exited with code 1` após auto-heal criar `memories/daily/2026-05-28.md` e ainda detectar `memories/hot.md stale >3 days`.
+- Delivery `origin` observado sem erro explícito: `Mesa COO diária Telegram`, `Relatório Hermes diário 23h + 02h para Lucas` e `Hermes multi-profile latency watchdog`; nenhuma mudança de delivery foi feita.
+- Delivery `local` confirmado para LK Daily Sales Brief, LK Weekly CEO Review, todos os watchdogs de gateway listados, Fechamento 23h, Runtime Truth Reconciler, Operating Layer, strict-runtime guard e relatórios script-only listados.
+- Drift documental a reconciliar sem reescrever histórico: seções antigas ainda mencionam alguns watchdogs/relatórios como `origin`, mas a evidência viva de 2026-05-28 confirma `local` para esses jobs; considerar limpeza documental em rodada própria se necessário.
 - Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo, campanha, Shopify, GMC, Notion, WhatsApp, email ou secret foi alterado.
 
 ## 5. Regras de delivery para Fechamento 23h

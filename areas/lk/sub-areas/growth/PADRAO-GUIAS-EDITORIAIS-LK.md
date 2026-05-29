@@ -4,15 +4,21 @@ Este documento define o padrão obrigatório para qualquer guia editorial, sourc
 
 ## Regra central
 
-O padrão visual e editorial canônico é o guia **Nike x Jacquemus Moon Shoe**:
+A LK tem **dois moldes canônicos diferentes**. Não misturar:
 
-- URL pública de referência: `https://lksneakers.com.br/pages/nike-moon-shoe-jacquemus-guia-lk`
-- Snapshot canônico local: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/references/moon-shoe-jacquemus-canonical-guide-pattern.html`
-- Referência interna: guia Moon Shoe / Jacquemus / “Monshu”
+1. **Coleção Shopify produto-first** → padrão visual/comercial **New Balance 204L**.
+   - URL pública de referência: `https://lksneakers.com.br/collections/new-balance-204l`
+   - Uso: coleção com produtos primeiro, hero escuro com collage, guia/FAQ pós-grid.
+   - Regra: uma nova coleção produto-first deve espelhar a 204L em estrutura, hierarquia, espaçamento, grid, hero, guide card e FAQ. Trocam-se apenas copy, assets e fatos específicos.
 
-Atenção: se o navegador estiver preso em **Shopify dev preview** (`lk-new-theme/dev`, barra “Draft”), a URL pública pode renderizar só o título/rodapé porque o preview usa outro tema/template. Para auditoria de padrão, usar a URL fora do preview ou o snapshot local acima.
+2. **Guia editorial/source page independente** → padrão visual/editorial **Nike x Jacquemus Moon Shoe**.
+   - URL pública de referência: `https://lksneakers.com.br/pages/nike-moon-shoe-jacquemus-guia-lk`
+   - Snapshot canônico local: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/references/moon-shoe-jacquemus-canonical-guide-pattern.html`
+   - Referência interna: guia Moon Shoe / Jacquemus / “Monshu”
 
-Nenhum novo guia deve ser criado como página textual genérica. Antes de criar ou alterar guias, o executor deve abrir/analisar o padrão Moon Shoe e reutilizar sua lógica visual, editorial e estrutural.
+Atenção: se o navegador estiver preso em **Shopify dev preview** (`lk-new-theme/dev`, barra “Draft”), a URL pública Moon Shoe pode renderizar só o título/rodapé porque o preview usa outro tema/template. Para auditoria desse padrão, usar a URL fora do preview ou o snapshot local acima.
+
+Nenhuma coleção/guia deve ser criada como página textual genérica ou como variação solta. Antes de criar ou alterar: classificar tipo, declarar molde e validar contra o molde correto.
 
 ## Lei anti-invenção
 
@@ -31,11 +37,12 @@ Regras obrigatórias:
 
 1. **Coleção Shopify produto-first**
    - Produtos aparecem antes de qualquer texto longo.
-   - Topo minimalista: H1 limpo e dominante; kicker curto sem repetir o nome da coleção; parágrafo breve e, quando aprovado, mídia/fotos no padrão existente.
+   - Topo minimalista no padrão 204L: H1 limpo e dominante; kicker curto sem repetir o nome da coleção; parágrafo breve; hero escuro com collage quando o molde for aplicado.
    - Se o H1 já mostra o nome da coleção, o kicker não repete esse nome. Exemplo correto: `CURADORIA LK`; evitar `CURADORIA LK · NEW BALANCE 204L` quando o H1 já é `New Balance 204L`.
    - Grid padrão: 20 produtos por página para preservar respiro, performance e leitura premium; exceções precisam ser aprovadas no brief.
    - Guia/FAQ/schema ficam depois do grid ou em página linkada.
-   - Padrão visual de referência quando aplicável: New Balance 204L.
+   - Padrão visual de referência quando aplicável: **New Balance 204L**.
+   - Paridade 204L exige validação renderizada, não só cópia de classes: H1 ~52px desktop, `display:inline-block`, collage alinhado ao topo do breadcrumb, mesmo padding superior do bloco, mesma altura/transform/margem do collage, card pós-grid 2 colunas e FAQ alinhado ao título da coluna esquerda.
 
 2. **Guia editorial linkado à coleção**
    - Página independente em `/pages/guia-...`.
