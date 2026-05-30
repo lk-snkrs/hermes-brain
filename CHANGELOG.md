@@ -1,3 +1,10 @@
+## 2026-05-30 — Data boundaries e resumos autorizados multiempresa
+
+- Adicionada rotina `areas/operacoes/rotinas/data-boundaries-authorized-summaries.md` para aplicar aprendizados Pixel AI Hub/Brainzinho: Brain/Git guarda conhecimento estável; APIs/bancos/sistemas seguem como fontes vivas para dados operacionais.
+- Reforçado o modelo hub-and-spoke: Hermes Geral/Mission Control recebe resumos executivos autorizados de LK, Zipper e SPITI, não dumps brutos ou acesso cruzado por conveniência.
+- Atualizados `seguranca/permissoes.md`, `seguranca/acoes-sensiveis.md`, `brain-structure-governance-preflight.md`, `areas/operacoes/MAPA.md` e `empresa/rotinas/_index.md`.
+- Preservados limites: documentação/governança apenas; sem cron, runtime, banco/API write, Docker/VPS, campanha, WhatsApp, email, Mission Control UI ou contato externo.
+
 ## 2026-05-24 — Brain governance preflight e score por risco
 
 - Adicionada rotina `areas/operacoes/rotinas/brain-structure-governance-preflight.md` para validar estrutura antes de mexer em skills, agentes, heartbeats, rotinas ou reorganizações do Brain.
