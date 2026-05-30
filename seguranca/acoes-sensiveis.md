@@ -68,6 +68,23 @@ Este arquivo classifica ações por risco e define quando o Hermes pode agir dir
 - Alterar produção sem backup/rollback.
 - Afirmar dado sensível de negócio sem fonte consultada.
 - Misturar bases LK, Zipper e SPITI sem justificar fonte e escopo.
+- Versionar dados vivos como se fossem conhecimento permanente sem fonte viva, timestamp e minimização.
+- Dar ao Hermes Geral/Mission Control dados brutos de uma empresa quando um resumo autorizado bastaria.
+
+## Dados vivos e resumos autorizados
+
+Conhecimento estável pertence ao Hermes Brain/Git. Dado operacional atual pertence à fonte viva: Shopify, Tiny, Supabase, GA4/GSC, Meta/Metricool, Klaviyo, WhatsApp, email, GitHub/runtime, logs ou sistema equivalente.
+
+Ao gerar report, painel ou handoff multiempresa:
+
+1. consultar a fonte viva correta;
+2. registrar `generated_at`, fonte e limite do snapshot;
+3. separar fato, interpretação e recomendação;
+4. omitir PII, dumps brutos e dados sensíveis desnecessários;
+5. compartilhar com Hermes Geral/Mission Control somente resumo autorizado da área dona;
+6. bloquear qualquer ação externa, banco/produção/infra ou campanha sem aprovação Lucas.
+
+Rotina canônica: `areas/operacoes/rotinas/data-boundaries-authorized-summaries.md`.
 
 ## Regras por negócio
 

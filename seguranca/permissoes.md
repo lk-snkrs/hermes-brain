@@ -28,6 +28,14 @@ Usuários adicionais por área podem ser documentados nos arquivos `agentes/*/AG
 | `skills/` | Skills canônicas | Atualizar quando workflow recorrente muda; não duplicar lógica divergente |
 | `scripts/` | Scripts operacionais | Alterações exigem verificação e cuidado com produção |
 
+## Fontes de verdade: conhecimento vs dado vivo
+
+O Hermes Brain/Git é fonte versionada para conhecimento estável: contexto, decisões, regras, PRDs, rotinas, skills, templates, permissões e aprendizados.
+
+O Brain não substitui fontes vivas. Pedidos, clientes, estoque, margem, faturamento, campanhas, lances, status de runtime/deploy, logs e métricas atuais devem ser consultados no sistema real antes de qualquer afirmação operacional. Quando um dado vivo precisar aparecer no Brain, registrar apenas snapshot datado, fonte consultada, limite do snapshot e interpretação executiva; não versionar dumps brutos, PII ou dados sensíveis desnecessários.
+
+Rotina canônica: `areas/operacoes/rotinas/data-boundaries-authorized-summaries.md`.
+
 ## Agentes e escopos
 
 | Agente | Leitura | Escrita preferencial | Bloqueios / limites |
@@ -39,6 +47,14 @@ Usuários adicionais por área podem ser documentados nos arquivos `agentes/*/AG
 | Operações | `empresa/`, `areas/operacoes/`, `scripts/`, `skills/brain-sync/` | `areas/operacoes/` e docs operacionais | Não alterar produção sem rollback/plano |
 | Governança | `seguranca/`, `empresa/decisoes/`, `areas/governanca/` | `areas/governanca/`, `seguranca/` | Mudanças de política exigem Lucas |
 | Tecnologia | `TOOLS.md`, `scripts/`, `areas/tecnologia/`, `empresa/contexto/` | `areas/tecnologia/` e docs técnicos | Secrets via Doppler; deploy/infra requer cuidado |
+
+## Hub-and-spoke multiempresa
+
+Hermes Geral atua como hub/orquestrador. LK, Zipper e SPITI continuam como spokes com fontes, permissões, clientes, bancos e riscos próprios.
+
+Regra: o hub recebe **resumos executivos autorizados** das áreas/agentes especialistas, não acesso irrestrito por conveniência ao banco, CRM, WhatsApp, e-mail ou histórico bruto de cada empresa. Mission Control deve mostrar síntese, status, risco, aprovação pendente e link para artefato/fonte autorizada — não dumps sensíveis.
+
+Qualquer cruzamento LK ↔ Zipper ↔ SPITI exige escopo explícito, fonte declarada, minimização de dados e separação de fato/interpretação/recomendação.
 
 ## Permissões por negócio
 
@@ -56,6 +72,7 @@ Fontes permitidas quando necessário:
 Regras:
 
 - Consultar dados reais antes de afirmar métricas, clientes, pedidos ou produtos.
+- Compartilhar com Hermes Geral/Mission Control somente resumo autorizado e minimizado quando houver dados de clientes, pedido, estoque, margem ou campanhas.
 - Não sugerir produto fora de estoque.
 - Campanhas, WhatsApp, email e contato com cliente exigem aprovação Lucas.
 
@@ -70,6 +87,7 @@ Fontes permitidas quando necessário:
 Regras:
 
 - Nunca confundir vendas reais da Zipper com leilão SPITI.
+- Não compartilhar CRM, colecionadores, vendas ou feira como dado bruto multiempresa; usar resumo autorizado com fonte e limite.
 - Nunca afirmar que obra/artista “vende bem” sem consultar histórico real.
 - Contato com colecionador, proposta ou decisão de curadoria exige aprovação Lucas/Osmar.
 
@@ -85,6 +103,7 @@ Fontes permitidas quando necessário:
 Regras:
 
 - Meta tag é preço base, não lance atual.
+- Resumos para Hermes Geral/Mission Control devem declarar confiança e fonte; não misturar SPITI com Zipper Vendas sem escopo explícito.
 - Silêncio é melhor que dado errado.
 - Mensagens para grupo/cliente ou relatório externo exigem aprovação Lucas.
 
@@ -120,6 +139,7 @@ Podem ser feitas sem aprovação adicional quando dentro do escopo:
 - Alterar dados financeiros/comerciais sem trilha de auditoria.
 - Enviar mensagens em massa sem preview aprovado.
 - Misturar dados entre LK, Zipper e SPITI sem justificativa documentada.
+- Transformar dados vivos em Markdown permanente sem fonte, timestamp, minimização e ressalva.
 
 ## Doppler
 

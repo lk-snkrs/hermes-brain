@@ -50,6 +50,7 @@ Ler/inspecionar os arquivos relevantes antes de escrever:
 - `empresa/rotinas/_index.md` quando for rotina;
 - `empresa/skills/_index.md` e `skills/` quando for skill;
 - `seguranca/permissoes.md` e `seguranca/acoes-sensiveis.md` quando houver risco.
+- `areas/operacoes/rotinas/data-boundaries-authorized-summaries.md` quando houver dado vivo, relatório multiempresa, Mission Control ou handoff entre agentes.
 
 ### 3. Mapear destino correto
 
@@ -61,6 +62,11 @@ Gerar uma leitura curta:
 - índice/MAPA que precisa ser atualizado;
 - skill/rotina canônica existente que deve ser reaproveitada;
 - fonte de verdade: Brain, Doppler, Shopify, Tiny, Supabase, GitHub, WhatsApp, email, API ou outro.
+
+Separar explicitamente:
+
+- **conhecimento estável**: decisões, contexto, rotinas, skills, PRDs, regras e aprendizados → pode morar no Brain/Git;
+- **dado vivo**: pedidos, estoque, margem, faturamento, lances, campanhas, logs, status de deploy/runtime e métricas atuais → consultar fonte viva e, no Brain, registrar apenas snapshot datado, regra, resumo autorizado ou link para artefato.
 
 Quando o material externo usa `pessoal/`, `empresa/` e `diretoria/`, traduzir para o modelo Hermes:
 
@@ -80,6 +86,8 @@ Checar explicitamente:
 - falta `MAPA.md`, README, índice ou link de navegação?
 - a mudança criaria cron/agente/canal permanente sem kill criteria?
 - há dados vivos, secrets, cliente, preço, campanha, proposta ou produção?
+- o Hermes Geral/Mission Control precisa mesmo do dado bruto, ou basta um resumo executivo autorizado da área dona?
+- o pedido cruza LK, Zipper e SPITI? Se sim, há escopo explícito para cada fonte e foi evitado vazamento cruzado?
 
 ### 5. Preview antes de aplicar
 
@@ -102,6 +110,8 @@ Se for seguro seguir:
 - atualizar MAPA/índice correspondente na mesma rodada;
 - não duplicar lógica canônica de skill sem linkar a fonte;
 - manter material bruto de terceiro fora do Brain salvo aprovação explícita;
+- manter dados vivos/brutos fora do Brain salvo snapshot datado necessário, minimizado e sem PII/secrets;
+- para multiempresa, fazer hub-and-spoke: área/agente especialista gera resumo autorizado; Hermes Geral usa síntese para decisão/roteamento, não acesso irrestrito por conveniência;
 - não criar cron/UI/runtime por implicação.
 
 ### 7. Verificar antes de concluir

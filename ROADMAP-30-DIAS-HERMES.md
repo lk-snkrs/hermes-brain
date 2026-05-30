@@ -98,6 +98,15 @@ Status: concluído como guardrail documental seguro.
 - `Brain Improvement Score` passou a priorizar risco executivo em vez de nota decorativa: segurança, rollback, integridade, evidência, próxima ação segura e não alterações.
 - Regra operacional: antes de mexer em skills, agentes, heartbeats, USER/AGENTS, rotinas ou reorganização, validar estrutura, dono, riscos, índices/MAPAs e aprovação necessária.
 
+### 9a. Data boundaries e resumos autorizados
+
+Status: concluído como guardrail documental seguro.
+
+- Criada rotina `areas/operacoes/rotinas/data-boundaries-authorized-summaries.md`.
+- Regra operacional: Brain/Git guarda conhecimento estável; APIs, bancos e sistemas vivos guardam pedidos, estoque, margem, faturamento, lances, campanhas, logs e métricas atuais.
+- Modelo multiempresa: Hermes Geral/Mission Control recebe resumos executivos autorizados de LK, Zipper e SPITI, não dumps brutos ou acesso cruzado por conveniência.
+- Preservados limites: nenhuma mudança em cron, runtime, produção, banco/API, Docker/VPS, campanha, WhatsApp, email ou Mission Control UI.
+
 ### 10. Revisão operacional multiempresa sob demanda
 
 Status: concluído como rotina/report documental segura.
