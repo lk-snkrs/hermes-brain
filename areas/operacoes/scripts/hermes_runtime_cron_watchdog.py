@@ -23,11 +23,29 @@ import subprocess
 import sys
 from typing import Any
 
-EXPECTED_VERSION_FRAGMENT = "v0.14.0"
+EXPECTED_VERSION_FRAGMENT = "v0.15.1"
 EXPECTED_CONFIG_CWD = "/opt/data"
 EXPECTED_JOB_ID = "f5a23dd6a1bd"
 MAX_NEXT_RUN_DELAY_HOURS = 30
 MAX_LAST_RUN_AGE_HOURS = 48
+# Lucas now runs intentional isolated Telegram profiles. Multiple gateway
+# processes are healthy when they map to distinct HERMES_HOME values.
+# REQUIRED: must always be running; absence is an alert.
+# OPTIONAL_DORMANT: prepared/configured but not necessarily running;
+#   absence is informational only, not an alert.
+REQUIRED_GATEWAY_HOMES = {
+    "/opt/data",
+    "/opt/data/profiles/mordomo",
+    "/opt/data/profiles/lk-growth",
+    "/opt/data/profiles/spiti",
+}
+OPTIONAL_DORMANT_GATEWAY_HOMES = {
+    "/opt/data/profiles/lk-ops",
+    "/opt/data/profiles/lk-shopify",
+    "/opt/data/profiles/lk-trends",
+}
+# Combined for backwards compat (unknown-home checks)
+EXPECTED_GATEWAY_HOMES = REQUIRED_GATEWAY_HOMES | OPTIONAL_DORMANT_GATEWAY_HOMES
 SENSITIVE_RE = re.compile(
     r"(?i)(token|secret|password|passwd|api[_-]?key|authorization|bearer|shpat_|sbp_|xox[baprs]-|ghp_|github_pat_)"
 )
@@ -141,17 +159,91 @@ def check_config(alerts: list[str], diag: list[str]) -> None:
         alerts.append(f"Config terminal.cwd inesperado: esperado {EXPECTED_CONFIG_CWD}; obtido {cwd!r}.")
 
 
+def process_env_value(pid: int, key: str) -> str | None:
+    try:
+        raw = pathlib.Path(f"/proc/{pid}/environ").read_bytes()
+    except Exception:
+        return None
+    prefix = f"{key}=".encode()
+    for item in raw.split(b"\0"):
+        if item.startswith(prefix):
+            return item[len(prefix):].decode("utf-8", errors="replace")
+    return None
+
+
+def process_cmdline_tokens(pid: int) -> list[str]:
+    try:
+        raw = pathlib.Path(f"/proc/{pid}/cmdline").read_bytes()
+    except Exception:
+        return []
+    return [item.decode("utf-8", errors="replace") for item in raw.split(b"\0") if item]
+
+
+def is_real_gateway_cmdline(tokens: list[str]) -> bool:
+    """Return True only for an actual Hermes gateway process.
+
+    Do not grep the rendered `ps args` string: cron/terminal shell wrappers can
+    contain the literal text "hermes gateway run" inside a script argument and
+    must not count as gateways. The real gateway command has `gateway` and `run`
+    as separate argv tokens and is launched through a hermes executable/script.
+    """
+    if len(tokens) < 3:
+        return False
+    for i in range(len(tokens) - 1):
+        if tokens[i] == "gateway" and tokens[i + 1] == "run":
+            prefix = tokens[:i]
+            return any(pathlib.Path(t).name.startswith("hermes") for t in prefix)
+    return False
+
+
 def check_process(alerts: list[str], diag: list[str]) -> None:
-    rc, out, err = run(["ps", "-eo", "pid,ppid,comm,args"], timeout=10)
+    rc, out, err = run(["ps", "-eo", "pid,ppid,comm"], timeout=10)
     if rc != 0:
         alerts.append(f"Falha ao inspecionar processos (rc={rc}): {err or out}")
         return
-    lines = [line for line in out.splitlines() if "hermes gateway run" in line and "grep" not in line]
-    diag.append(f"gateway_process_count={len(lines)}")
-    if not lines:
+
+    rows: list[dict[str, Any]] = []
+    for line in out.splitlines()[1:]:
+        parts = line.strip().split(None, 2)
+        if len(parts) < 3:
+            continue
+        pid_s, ppid_s, comm = parts
+        try:
+            pid = int(pid_s)
+            ppid = int(ppid_s)
+        except ValueError:
+            continue
+        tokens = process_cmdline_tokens(pid)
+        if not is_real_gateway_cmdline(tokens):
+            continue
+        home = process_env_value(pid, "HERMES_HOME") or "[unknown]"
+        rows.append({"pid": pid, "ppid": ppid, "comm": comm, "home": home})
+
+    homes: dict[str, list[int]] = {}
+    for row in rows:
+        homes.setdefault(str(row["home"]), []).append(int(row["pid"]))
+
+    diag.append(
+        "gateway_processes="
+        + ",".join(f"{home}:{len(pids)}" for home, pids in sorted(homes.items()))
+    )
+    if not rows:
         alerts.append("Nenhum processo `hermes gateway run` visível; se o Telegram ainda responde, pode ser limitação do contexto do cron, mas precisa verificação.")
-    elif len(lines) > 2:
-        alerts.append(f"Possíveis gateways duplicados: {len(lines)} processos `hermes gateway run` visíveis.")
+        return
+
+    unknown = sorted(home for home in homes if home not in EXPECTED_GATEWAY_HOMES)
+    if unknown:
+        alerts.append("Gateways com HERMES_HOME inesperado: " + ", ".join(unknown) + ".")
+    missing = sorted(home for home in REQUIRED_GATEWAY_HOMES if home not in homes)
+    if missing:
+        alerts.append("Gateways esperados ausentes: " + ", ".join(missing) + ".")
+    duplicates = {home: pids for home, pids in homes.items() if len(pids) > 1}
+    if duplicates:
+        alerts.append(
+            "Possíveis gateways duplicados por profile: "
+            + "; ".join(f"{home} ({len(pids)} processos)" for home, pids in sorted(duplicates.items()))
+            + "."
+        )
 
 
 def load_jobs() -> Any:

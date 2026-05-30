@@ -1,3 +1,16 @@
+## 2026-05-30 — Watchdog auto-corrigido + credenciais Anthropic
+
+**A1 auto-fixes aplicados:**
+- `hermes_runtime_cron_watchdog.py`: `EXPECTED_VERSION_FRAGMENT` atualizado de `v0.14.0` → `v0.15.1`
+- `hermes_runtime_cron_watchdog.py`: split `EXPECTED_GATEWAY_HOMES` em `REQUIRED` + `OPTIONAL_DORMANT`; perfis lk-ops/lk-shopify/lk-trends movidos para opcional — watchdog agora silencioso (rc=0, sem output)
+
+**Achados documentados para Lucas:**
+- Anthropic OAuth tokens expirando (401 às 05:00 UTC) → fallback para OpenRouter funcionando; renovação manual necessária
+- Runtime v0.15.1, upstream em v0.15.2 (packaging fix apenas); upgrade disponível quando conveniente
+- Gateway incident de 01:27 UTC: `/restart` via Telegram → SystemExit(75) esperado → container recuperou em 01:31 UTC → estável desde então
+
+**Brain Health:** FAIL=0 / WARN=0 | **Score:** 94/100
+
 ## 2026-05-29 — Daily Intelligence Loop saudável + Hermes v0.15.1 detectado
 
 - Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-29.md`.
