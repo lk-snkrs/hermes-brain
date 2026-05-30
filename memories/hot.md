@@ -1,7 +1,7 @@
 # Memória quente — contexto current
 
-Atualizado: 2026-05-25
-Status: camada Bruno/OpenClaw/Hermes COO criada para evitar perda por compactação e orientar handoffs.
+Atualizado: 2026-05-29
+Status: camada Bruno/OpenClaw/Hermes COO ativa para evitar perda por compactação, orientar handoffs e reconciliar runtime/Brain sem ruído.
 
 ## Prioridades current
 
@@ -9,8 +9,9 @@ Status: camada Bruno/OpenClaw/Hermes COO criada para evitar perda por compactaç
 2. Garantir que decisões customer-facing aprovadas por Lucas virem arquivo vivo, MAPA/índice e evidência de verificação.
 3. Manter o Fechamento Ágil 23h + Brain Sync seguro como rotina de consolidação silenciosa/local.
 4. Evitar ruído no Telegram: sucesso normal fica local/Brain; Lucas recebe decisão, exceção, falha ou pedido de aprovação.
-5. Orquestrador Hermes/Fase 8: validar a próxima Mesa COO real no Telegram sem wrapper/metadados e manter handoff obrigatório para outputs materiais de especialistas.
-6. Prioridade operacional atual: LK/GMC continua em modo read-only até confirmação visual das Data Sources e aprovação explícita para qualquer write externo.
+5. Orquestrador Hermes/Fase 8: manter Mesa COO/decisões com UX limpa, sem wrapper/metadados, e handoff obrigatório para outputs materiais de especialistas.
+6. Prioridade operacional atual: LK OS/especialistas LK em modo governado. LK Shopify/Trends/Ops estão ativos como especialistas esperados; round-trip final depende de Lucas responder nos chats. Writes Shopify/Tiny/GMC/Meta/Klaviyo continuam bloqueados sem aprovação escopada.
+7. Hermes runtime: v0.15.1 saiu em 2026-05-29; tratar como oportunidade/decisão de upgrade com plano e rollback, nunca como auto-update de Docker/gateway.
 
 ## Decisões abertas do COO
 

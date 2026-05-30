@@ -70,7 +70,7 @@ O fechamento **não** deve virar transcrição de chat.
   - CRM local/Mordomo;
   - drafts/previews internos.
 - Crons relacionados:
-  - `Mordomo Telegram gateway watchdog` — ativo, `origin`, script-only.
+  - `Mordomo Telegram gateway watchdog` — ativo, `local`, script-only.
   - `Mordomo WhatsApp pessoal resumo 17h BRT` — pausado.
   - `Mordomo WhatsApp pessoal realtime scan` — pausado, local.
   - `Mordomo: confirmar entrega com Seda Embalagens` — pausado/one-shot antigo.
@@ -100,8 +100,8 @@ O fechamento **não** deve virar transcrição de chat.
   - stock/sourcing;
   - paid/influencer intelligence.
 - Crons relacionados:
-  - `LK Daily Sales Brief read-only mandatory delivery` — ativo, `origin`.
-  - `LK Weekly CEO Review read-only mandatory delivery` — ativo, `origin`.
+  - `LK Daily Sales Brief read-only mandatory delivery` — ativo, `local`.
+  - `LK Weekly CEO Review read-only mandatory delivery` — ativo, `local`.
   - `LK GMC Review read-only mandatory delivery` — ativo na evidência viva de 2026-05-22; read-only obrigatório.
   - `LK Pulso Comercial 16h read-only delivery` — ativo, `local`.
   - `LK 09h previous-day sales report external delivery` — ativo, `local` após correção de delivery/ruído; entrega externa é feita pelo script, Telegram recebe só exceções quando aplicável.
@@ -127,7 +127,7 @@ O fechamento **não** deve virar transcrição de chat.
   - Klaviyo dentro do escopo de conteúdo;
   - impacto de mudanças SEO.
 - Crons relacionados:
-  - `LK Growth Telegram gateway watchdog` — ativo, `origin`.
+  - `LK Growth Telegram gateway watchdog` — ativo, `local`.
   - rotinas SEO/CRO pausadas no Hermes Geral, a revisar se devem migrar/rodar no profile Growth.
 - Entra no Fechamento 23h: **sim, se houver output, aprovação, campanha, conteúdo, decisão ou gap de handoff**.
 - Destino de handoff: `areas/lk/sub-areas/growth/`, `areas/lk/`, relatório diário.
@@ -173,7 +173,7 @@ O fechamento **não** deve virar transcrição de chat.
   - IA de obras;
   - public site futuro.
 - Crons relacionados:
-  - `SPITI Telegram gateway watchdog` — ativo, `origin`.
+  - `SPITI Telegram gateway watchdog` — ativo, `local`.
 - Entra no Fechamento 23h: **sim, quando houver atividade/decisão/output/gap**.
 - Destino de handoff: `areas/spiti/`, relatório diário, pendências globais se houver risco/decisão.
 - Gap: organograma documental deve explicitar melhor o runtime/profile SPITI, não apenas o agente documental.
@@ -195,8 +195,8 @@ O fechamento **não** deve virar transcrição de chat.
 - Status: **ativos e mistos**.
 - Não são agentes conversacionais, mas podem gerar fatos operacionais relevantes.
 - Exemplos atuais:
-  - `Hermes runtime + cron watchdog no_agent` — ativo, `origin`.
-  - `Hermes compression failure self-heal watchdog` — ativo, `origin`.
+  - `Hermes runtime + cron watchdog no_agent` — ativo, `local`.
+  - `Hermes compression failure self-heal watchdog` — ativo, `local`.
   - gateways Mordomo/LK Growth/SPITI — ativos.
   - LK WhatsApp responder — ativo/local.
 - Entra no Fechamento 23h: **sim, por exceção/falha/alerta/ação tomada; não por sucesso silencioso normal**.
@@ -204,25 +204,15 @@ O fechamento **não** deve virar transcrição de chat.
 
 ## 4. Resumo dos crons atuais por cobertura
 
-Snapshot vivo do `/opt/hermes/.venv/bin/hermes cron list --all` em 2026-05-20 18:00 UTC: 26 jobs.
+Snapshot vivo do `/opt/hermes/.venv/bin/hermes cron list --all` em 2026-05-29 11:20 UTC: 19 jobs.
 
 - Ativos/scheduled: 19.
-- Pausados: 7.
-- Evidência runtime mais recente: tentativa de `cronjob list` seguida de fallback `/opt/hermes/.venv/bin/hermes cron list --all` em 2026-05-20 18:00 UTC.
-- `no_agent`/script-only: maioria dos watchdogs e relatórios operacionais.
-- Entrega `local`: usada para alguns jobs que devem ser silenciosos/Brain-first.
-- Entrega `origin`: ainda usada por vários jobs; deve ser revisada caso o sucesso normal gere ruído para Lucas.
-
-### Atualização Brain Operating Layer — 2026-05-20 17:52 UTC
-
-Evidência runtime: `cronjob list` executado após ativação do Brain Operating Layer.
-
-- Total de jobs: 26.
-- Novos jobs ativos:
-  - `Hermes Brain Operating Layer structural watchdog` — job `d03fa04e1188`, schedule `10 11 * * *`, `no_agent=true`, script `brain_operating_layer_audit.py`, delivery `origin`, silent-OK: stdout vazio não envia mensagem.
-  - `Hermes Brain Runtime Truth Reconciler` — job `2404c0766d33`, schedule `20 11 * * *`, delivery `local`, skills `bruno-openclaw-hermes-brain-adaptation` + `hermes-agent`, workdir `/opt/data/hermes_bruno_ingest/hermes-brain`.
-- Objetivo: reforçar o padrão Bruno/OpenClaw com evidência runtime, receipts, approvals, hot memory, handoffs, skill candidates e reconciliação diária.
-- Guardrail: nenhum dos novos jobs altera Docker/VPS/Traefik, envia campanha, muda Shopify/GMC/Notion/WhatsApp ou acessa secrets; são read-only/local/Brain-first.
+- Pausados: 0.
+- `last_status` não-ok: 1.
+- Erros explícitos de delivery: 0 na listagem atual.
+- Jobs ativos sem `Last run` ainda: 0.
+- `local` confirmado para a maioria dos watchdogs e rotinas silenciosas.
+- `origin` mantido apenas onde a entrega ao Telegram é intencional ou o alerta é parte da rotina executiva.
 
 ### Reconciliação Runtime Truth — 2026-05-20 18:00 UTC
 
@@ -236,7 +226,7 @@ Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-
 - `last_status` não-ok: 0 na listagem atual.
 - Erros explícitos de delivery: 0 na listagem atual.
 - Jobs ativos sem `Last run` ainda:
-  - `Lucas Brain weekly Learning Loop report` (`f4c499e85eac`) — ativo, `origin`, semanal; acompanhar após primeira execução.
+  - `Lucas Brain weekly Learning Loop report` (`f4c499e85eac`) — ativo, `origin`, semanal; acompanhar após primeira execução registrada.
   - `Hermes Brain Operating Layer structural watchdog` (`d03fa04e1188`) — ativo, `origin`, novo, sem primeira execução registrada.
   - `Hermes Brain Runtime Truth Reconciler` (`2404c0766d33`) — ativo, `local`, novo, sem primeira execução registrada.
 - Job pausado sem `Last run`:
@@ -258,10 +248,9 @@ Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-
 - Job ativo com `last_status` não-ok:
   - `Hermes Brain Operating Layer structural watchdog` (`d03fa04e1188`) — último run `error: Script exited with code 1`; saída indicou falta de `memories/daily/2026-05-21.md`.
 - Job ativo sem `Last run` ainda:
-  - `Lucas Brain weekly Learning Loop report` (`f4c499e85eac`) — ativo, `origin`, semanal; acompanhar após primeira execução registrada.
-- Jobs pausados sem `Last run`:
+  - `Lucas Brain weekly Learning Loop report` (`f4c499e85eac`) — ativo, `origin`, semanal.
+- Job pausado sem `Last run`:
   - `Mordomo: confirmar entrega com Seda Embalagens` (`527ee57b3a6b`) — one-shot pausado/antigo; candidato a limpeza/arquivamento documental futuro.
-  - `LK SEO/CRO impact review — SEO title/meta P1 packets` (`a7e883edd200`) — one-shot pausado sem execução registrada; candidato a reconciliação documental futura.
 - Drift de contagem em relação ao snapshot anterior: `26 jobs / 19 ativos / 7 pausados` → `28 jobs / 21 ativos / 7 pausados`.
 - Novos jobs observados na listagem atual que não apareciam no snapshot anterior deste inventário: `LK WhatsApp Hermes responder regression watchdog` (`a5d7a392eed9`) e `Relatório Hermes diário 23h + 02h para Lucas` (`98478b820720`).
 - Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, sistema externo ou secret foi alterado.
@@ -307,7 +296,7 @@ Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-
 - `Lembrete GMC Data Sources 10h` (`1d3a188b24f2`), observado como ativo/one-shot sem execução no snapshot de 2026-05-22, não aparece mais na listagem viva atual.
 - Delivery `origin` observado sem erro explícito: `LK Daily Sales Brief`, `LK Weekly CEO Review`, `LK GMC Review`, `Mesa COO diária Telegram` e `Lucas Brain weekly Learning Loop report`; manter revisão futura apenas com aprovação de Lucas.
 - Drift documental em seções antigas: alguns watchdogs ainda aparecem descritos como `origin`, mas a evidência viva atual mostra `local` para runtime/cron, compressão self-heal, Mordomo, LK Growth e SPITI; esta seção datada é a fonte viva mais recente sem reescrever histórico.
-- Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo ou secret foi alterado.
+- Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, sistema externo ou secret foi alterado.
 
 ### Reconciliação Runtime Truth — 2026-05-24 05:01 UTC
 
@@ -400,7 +389,7 @@ Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-
 
 ### Reconciliação Runtime Truth — 2026-05-28 11:20 UTC
 
-Evidência runtime: tentativa de localizar `cronjob list` neste container/runtime não encontrou o comando no PATH; fallback canônico usado com sucesso: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all` a partir de `/opt/data/hermes_bruno_ingest/hermes-brain`.
+Evidência runtime: tentativa de `cronjob list` neste container/runtime não encontrou o comando no PATH; fallback canônico usado com sucesso: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all` a partir de `/opt/data/hermes_bruno_ingest/hermes-brain`.
 
 Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-28.md`.
 
@@ -415,6 +404,32 @@ Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-
 - Delivery `origin` observado sem erro explícito: `Mesa COO diária Telegram`, `Relatório Hermes diário 23h + 02h para Lucas` e `Hermes multi-profile latency watchdog`; nenhuma mudança de delivery foi feita.
 - Delivery `local` confirmado para LK Daily Sales Brief, LK Weekly CEO Review, todos os watchdogs de gateway listados, Fechamento 23h, Runtime Truth Reconciler, Operating Layer, strict-runtime guard e relatórios script-only listados.
 - Drift documental a reconciliar sem reescrever histórico: seções antigas ainda mencionam alguns watchdogs/relatórios como `origin`, mas a evidência viva de 2026-05-28 confirma `local` para esses jobs; considerar limpeza documental em rodada própria se necessário.
+- Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo, campanha, Shopify, GMC, Notion, WhatsApp, email ou secret foi alterado.
+
+### Reconciliação Runtime Truth — 2026-05-29 11:20 UTC
+
+Evidência runtime: comando solicitado `cronjob list` indisponível neste runtime (`command not found`); fallback canônico usado com sucesso: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all` a partir de `/opt/data/hermes_bruno_ingest/hermes-brain`.
+
+Relatório de governança: `reports/governance/runtime-truth-reconciler-2026-05-29.md`.
+
+- Total de jobs listados: 19.
+- Ativos: 19.
+- Pausados/disabled listados: 0.
+- `last_status` não-ok: 1.
+- Erros explícitos de delivery: 0.
+- Jobs ativos sem `Last run` ainda: 0.
+- Drift de contagem em relação ao snapshot anterior de 2026-05-28 11:20 UTC: `21 ativos / 0 pausados` → `19 ativos / 0 pausados`.
+- Job ativo com `last_status` não-ok:
+  - `LK Weekly Collection Sort Rule B` (`787134d4ac5c`) — ativo, `local`, script `lk_weekly_collection_sort_ruleB.sh`; último run retornou `error: Script timed out after 120s: /opt/data/scripts/lk_weekly_collection_sort_ruleB.sh`.
+- Jobs ativos com `deliver=origin` que merecem reconciliação documental porque são recados/alertas e não sucesso silencioso:
+  - `Mesa COO diária Telegram` (`749ee30b51eb`) — origin, ok.
+  - `Relatório Hermes diário 23h + 02h para Lucas` (`98478b820720`) — origin, ok.
+  - `Hermes multi-profile latency watchdog` (`c1ce34b4449a`) — origin, ok.
+- Jobs/itens históricos removidos da evidência viva em relação ao snapshot anterior:
+  - `Hermes Brain Operating Layer structural watchdog` não aparece mais na listagem atual.
+  - `Hermes Brain strict-runtime guard watchdog` não aparece mais na listagem atual.
+  - `Hermes Brain Runtime Truth Reconciler` não aparece mais na listagem atual.
+- A listagem viva atual confirma `local` para os watchdogs/gateways/relatórios restantes, incluindo LK Daily Sales Brief, LK Weekly CEO Review, Zipper Gmail style learning refresh, Hermes compression failure self-heal watchdog, LK Pulso Comercial 16h, LK 09h previous-day sales report, LK 19h30 physical store close, Mordomo gateway, Zipper vendas, LK Growth gateway, SPITI gateway, Fechamento Ágil 23h + Brain Sync e Lucas Brain weekly Learning Loop report.
 - Nenhum schedule, delivery, prompt, script, profile, Docker/gateway, VPS, Traefik, container, rede, sistema externo, campanha, Shopify, GMC, Notion, WhatsApp, email ou secret foi alterado.
 
 ## 5. Regras de delivery para Fechamento 23h

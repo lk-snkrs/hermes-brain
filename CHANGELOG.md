@@ -1,3 +1,13 @@
+## 2026-05-29 — Daily Intelligence Loop saudável + Hermes v0.15.1 detectado
+
+- Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-29.md`.
+- Host observability salvo em `reports/hermes-host-docker-observability-2026-05-29.json`: containers esperados `running`, imagem `hermes-agent-custom:v0.14.0-20260516`, versão runtime `Hermes Agent v0.14.0 (2026.5.16)`, helper com `alerts: []`.
+- GitHub Releases API detectou novas releases upstream: `v2026.5.28`/Hermes v0.15.0 e `v2026.5.29`/Hermes v0.15.1. Nenhum runtime swap/restart executado; upgrade classificado como decisão A3 com pacote, testes e rollback.
+- Gerados artefatos canônicos do gate 02h: `reports/brain-health-check-2026-05-29-02h.json` com FAIL=0/WARN=0 e `reports/brain-improvement-score-2026-05-29-02h.{md,json}` com score 94/100.
+- Auto-correção A1: `memories/hot.md` atualizado para 2026-05-29 e `memories/daily/2026-05-29.md` criado pelo watchdog estrutural; execução manual do Operating Layer retornou `rc=0`.
+- Criado `reports/hermes-learning-ledger/2026-05-29.md`, registrando release-as-decision, hot memory auto-fix e implicações de v0.15 para `session_search`, dashboard/Docker e Kanban.
+- Prioridade ativa roteada para Hermes Geral/Orquestrador + LK OS governado, com próximo passo seguro sendo preparar brief de upgrade v0.15.1 em paralelo, sem tocar produção.
+
 ## 2026-05-28 — Daily Intelligence Loop saudável + watchdog alinhado aos especialistas LK
 
 - Executado `Lucas Brain daily intelligence loop` em modo local/read-only; relatório salvo em `reports/hermes-continuous-improvement/2026-05-28.md`.
