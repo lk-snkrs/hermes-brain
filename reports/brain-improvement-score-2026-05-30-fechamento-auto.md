@@ -47,7 +47,7 @@ Recomendações:
 ### Links, arquivos e consistência — 100/100
 Motivo: Traduz o health check técnico em leitura executiva.
 Evidências:
-- Health check usado: reports/brain-health-check-2026-05-30-02h.json
+- Health check usado: reports/brain-health-check-2026-05-30-fechamento-auto.json
 - FAIL=0 WARN=0
 - Disponível: True
 ## Correções seguras recomendadas
@@ -61,7 +61,7 @@ Evidências:
 - Qualquer alteração em produção, VPS/Docker/Traefik/volumes/redes, banco, secrets, campanhas ou mensagens externas.
 
 ## Evidências
-- Health check JSON: `reports/brain-health-check-2026-05-30-02h.json`; disponível=True; FAIL=0; WARN=0.
+- Health check JSON: `reports/brain-health-check-2026-05-30-fechamento-auto.json`; disponível=True; FAIL=0; WARN=0.
 - Script: `scripts/brain_improvement_score.py`.
 - Fonte: arquivos versionados do Hermes Brain no working tree local.
 
