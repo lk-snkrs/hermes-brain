@@ -1,7 +1,29 @@
 # Inventário vivo — crons, agentes, profiles e projetos
 
-Data-base: 2026-05-28 11:20 UTC
-Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-05-28**
+Data-base: 2026-05-30 11:20 UTC
+Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-05-30**
+
+---
+
+### Atualização 2026-05-30 11:20 UTC
+
+**Fonte:** `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all`
+
+**Contagem:** 23 jobs ativos, 0 pausados.
+
+**`last_status` não-ok:** 1 — `LK Weekly Collection Sort Rule B` (`787134d4ac5c`) — timeout persistente (120s) desde 2026-05-29. Próximo run: 2026-06-05T09:00.
+
+**Novos jobs vs evidência anterior (2026-05-29):**
+- `d03fa04e1188` Hermes Brain Operating Layer structural watchdog — ok (2026-05-30T11:10)
+- `d9badcd83411` Hermes Brain strict-runtime guard watchdog — ok (2026-05-30T10:01)
+- `2404c0766d33` Hermes Brain Runtime Truth Reconciler — ok (2026-05-29T11:22)
+- `a1d1e36f8075` LK Weekly Catalog Badges BEST SELLER sync — novo job, sem last run ainda, next 2026-06-05T09:30
+
+**Jobs deliver=origin (saídas intencionais):** Mesa COO diária (749ee30b51eb), Relatório Hermes 23h+02h (98478b820720), Hermes multi-profile latency watchdog (c1ce34b4449a) — todos ok.
+
+**Relatório completo:** `reports/governance/runtime-truth-reconciler-2026-05-30.md`
+
+---
 Escopo: Hermes Brain / Grande Mente / profiles especialistas / crons Hermes.
 
 ## 1. Princípio

@@ -40,6 +40,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Runtime Truth Reconciler | `areas/operacoes/rotinas/runtime-truth-reconciler.md` | Reconcilia inventário/documentação com cron/profile/bot runtime real |
 | Cron Control Plane | `areas/operacoes/rotinas/cron-control-plane.md` | Controle governamental dos crons vivos/pausados: owner, delivery, side effects e kill criteria |
 | Reauditoria Semanal Donos de Crons x Organograma | `areas/operacoes/rotinas/cron-owner-reaudit-semanal.md` | Rotina semanal/local para conferir crons por profile contra organograma, Task Router, ruído e candidatos a migração |
+| Revisão Organograma Vivo Amora/Bruno | `areas/operacoes/rotinas/revisao-organograma-vivo-amora-bruno.md` | Checklist documental para manter organograma, profiles, crons, handoffs e silent-OK alinhados à lógica Bruno/Amora |
 | Decision Inbox Taxonomy | `areas/operacoes/rotinas/decision-inbox-taxonomy.md` | Taxonomy canônica da COO Queue/Decision Inbox para reduzir falsos positivos e ruído |
 | Customer-Facing Decision Guard | `areas/operacoes/rotinas/customer-facing-decision-guard.md` | Garante registro durável de copy, tom, canal, promessa, oferta e fluxo customer-facing |
 | Hot Memory Compiler | `areas/operacoes/rotinas/hot-memory-compiler.md` | Mantém `memories/hot.md` como snapshot operacional curado |

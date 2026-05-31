@@ -16,6 +16,7 @@
 
 ## Navegação
 
+- Manual simples de produção Hermes/LK: `operacoes/manual-producao/README.md`
 - Receipts: `operacoes/receipts/`
 - Rotinas canônicas relacionadas: `areas/operacoes/rotinas/`
 - Organograma e roteamento: `empresa/contexto/`

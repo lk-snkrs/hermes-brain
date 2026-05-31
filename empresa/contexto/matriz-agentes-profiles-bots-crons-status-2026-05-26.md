@@ -1,6 +1,6 @@
 # Matriz — Agentes, profiles, bots, crons e status
 
-Data: 2026-05-26  
+Data: 2026-05-30  
 Escopo: matriz local/read-only para alinhar organograma, runtime e donos lógicos.  
 Produção/runtime: nenhuma alteração feita por este documento.
 
@@ -23,6 +23,7 @@ Produção/runtime: nenhuma alteração feita por este documento.
 - Escopo permitido: governança, Brain, Mesa COO, watchdogs centrais, approval packets, auditorias, coordenação multiempresa.
 - Writes permitidos: local/docs; produção/externo somente com aprovação explícita e escopada.
 - Status: **correto; ajustar rotinas LK/Zipper hospedadas por histórico**.
+- Watchdog/gateway: Main é check-only no watchdog global `b78ae7ac81d0`; não reiniciar automaticamente Docker/Main por script local.
 
 ### Mordomo
 
@@ -33,7 +34,21 @@ Produção/runtime: nenhuma alteração feita por este documento.
 - Cron registry: `/opt/data/profiles/mordomo/cron/jobs.json`.
 - Escopo permitido: agenda, follow-ups permitidos, triagem, rascunhos, lembretes, inbox pessoal.
 - Writes permitidos: follow-up simples conhecido/verificado; contatos sensíveis e promessas materiais exigem aprovação/fonte.
-- Status: **ajustar; contém rotinas Zipper/LK WhatsApp que precisam dono lógico e eventual migração**.
+- Status: **correto como Mordomo; pendente apenas classificar rotinas Zipper/LK WhatsApp hospedadas por histórico antes de qualquer migração**.
+- Watchdog/gateway: coberto pelo watchdog global `b78ae7ac81d0`.
+
+### [LC] Claude Cli
+
+- Dono lógico: Lucas / brainstorm de pautas.
+- Runtime profile: `/opt/data/profiles/lc-claude-cli`.
+- Bot/canal: CLI local preparado; Telegram/canal dedicado pendente de token/canal explícito.
+- Área Brain: `agentes/lc-claude-cli/`.
+- Modelo: Claude via Claude CLI/proxy local `http://127.0.0.1:3456/v1`.
+- Cron registry: nenhum; sem proatividade automática por padrão.
+- Escopo permitido: ideação de pautas, ângulos, títulos, perguntas, crítica editorial e briefs internos.
+- Writes permitidos: local/docs; publicação/envio/campanha/cron/produção somente com aprovação explícita e roteamento ao especialista correto.
+- Status: **profile criado e CLI validado; gateway parado intencionalmente até ativação de canal**.
+- Watchdog/gateway: não coberto pelo watchdog global enquanto não for agente Telegram operacional.
 
 ### LK Growth
 
@@ -45,6 +60,7 @@ Produção/runtime: nenhuma alteração feita por este documento.
 - Escopo permitido: SEO, GEO, CRO, GMC, analytics, conteúdo, source pages, D+7 impact reviews.
 - Writes permitidos: drafts/previews locais; Shopify/GMC/Klaviyo/ads/theme/feed somente com aprovação explícita e escopada.
 - Status: **correto; classificar D+7 entre decisão Telegram e relatório local**.
+- Watchdog/gateway: coberto pelo watchdog global `b78ae7ac81d0`.
 
 ### LK Ops / Atendimento
 
@@ -55,18 +71,20 @@ Produção/runtime: nenhuma alteração feita por este documento.
 - Cron registry atual relacionado: Main e Mordomo enquanto migração não for aprovada.
 - Escopo permitido: atendimento, loja, vendas operacionais, estoque, preço, disponibilidade, reservas, Tiny/Shopify operacional.
 - Writes permitidos: somente quando Lucas aprovar item/ação; exigir fonte viva, snapshot, preview, readback, receipt e rollback.
-- Status: **ajustar; dono lógico correto, crons ainda espalhados**.
+- Status: **correto como dono lógico; pendência documentada é inventário/migração opcional de crons comerciais hoje espalhados**.
+- Watchdog/gateway: coberto pelo watchdog global `b78ae7ac81d0`.
 
 ### LK Shopify
 
 - Dono lógico: LK Shopify.
 - Runtime profile: `/opt/data/profiles/lk-shopify`.
-- Bot/canal: LK Shopify Telegram quando ativo/preparado.
+- Bot/canal: LK Shopify Telegram ativo quando o gateway do profile está rodando.
 - Área Brain: `areas/lk/sub-areas/shopify/`.
 - Cron registry: sem registry próprio consolidado nesta auditoria.
 - Escopo permitido: diagnóstico Shopify, preview, produto/upload, coleções, superfície de publicação, integração com Tiny quando aprovada.
 - Writes permitidos: Shopify/Tiny somente com aprovação explícita e escopada, snapshot, readback, receipt e rollback.
-- Status: **ajustar documentação; não executar produção por padrão**.
+- Status: **documentação mínima completa; não executar produção por padrão**.
+- Watchdog/gateway: coberto pelo watchdog global `b78ae7ac81d0`.
 
 ### LK Trends
 
@@ -77,7 +95,8 @@ Produção/runtime: nenhuma alteração feita por este documento.
 - Cron registry: sem registry próprio consolidado nesta auditoria.
 - Escopo permitido: tendências, sourcing intelligence, validação de oportunidade, Droper/StockX/GOAT read-only, relatórios.
 - Writes permitidos: compra/reserva/negociação/contato fornecedor somente com aprovação explícita e fonte.
-- Status: **ajustar escopo para não conflitar com Growth/Ops**.
+- Status: **correto; fronteira documentada com Growth/Ops e sem write/compra por padrão**.
+- Watchdog/gateway: coberto pelo watchdog global `b78ae7ac81d0`.
 
 ### SPITI
 
@@ -89,6 +108,7 @@ Produção/runtime: nenhuma alteração feita por este documento.
 - Escopo permitido: Hub, obras, leilões, lotes, clientes, CRM/admin, análise com fonte verificável.
 - Writes permitidos: PR/branch/draft conforme escopo; deploy/banco/cliente/bidder/financeiro somente com aprovação explícita e escopada.
 - Status: **correto; declarar ausência de crons como escolha ou pendência**.
+- Watchdog/gateway: coberto pelo watchdog global `b78ae7ac81d0`.
 
 ### Zipper
 
@@ -99,7 +119,7 @@ Produção/runtime: nenhuma alteração feita por este documento.
 - Cron registry atual relacionado: Main e Mordomo.
 - Escopo permitido: read-only/documental, CRM/Main e vendas como fonte, rascunhos internos, análise de artistas/obras/enquiries.
 - Writes permitidos: nenhum externo sem aprovação explícita e escopada; e-mail/WhatsApp/CRM/preço/proposta/logística bloqueados por padrão.
-- Status: **ajustar; runtime futuro só com gatilho de volume/risco/canal**.
+- Status: **correto documental/read-only; runtime futuro só com gatilho objetivo de volume/risco/canal**.
 
 ### Brain Process / auxiliares read-only
 
@@ -110,7 +130,8 @@ Produção/runtime: nenhuma alteração feita por este documento.
 - Cron registry: não consolidado como dono de negócio.
 - Escopo permitido: leitura, análise, documentação, experimentos locais.
 - Writes permitidos: local/docs; produção/runtime somente com aprovação específica.
-- Status: **classificar como ativo/experimento/arquivo/candidato a pausa**.
+- Status: **classificados por política em `empresa/contexto/criterios-promocao-agentes-auxiliares.md`; preparados/read-only, não agentes operacionais por padrão**.
+- Watchdog/gateway: não auto-startar por token; só entram no watchdog global se Lucas decidir que são agentes Telegram operacionais.
 
 ## Rotinas com dono lógico diferente do runtime atual
 

@@ -138,7 +138,7 @@ Antes de dizer que algo roda automaticamente, verificar runtime real (`cronjob l
 - `agentes/hermes-geral/AGENTS.md` — regras do agente principal.
 - `agentes/hermes-geral/MAPA.md` — navegação do orquestrador central.
 - `agentes/hermes-geral/HEARTBEAT.md` — proatividade.
-- `agentes/<lk|mordomo|spiti|zipper>/IDENTITY.md` e `MAPA.md` — escopo e navegação dos especialistas no padrão Amora/Hermes.
+- `agentes/<lk|mordomo|spiti|zipper|lc-claude-cli>/IDENTITY.md` e `MAPA.md` — escopo e navegação dos especialistas no padrão Amora/Hermes.
 - `empresa/rotinas/_index.md` — índice de rotinas documentadas.
 - `empresa/skills/_index.md` — índice de skills do Brain.
 - `seguranca/` — ações sensíveis e permissões.

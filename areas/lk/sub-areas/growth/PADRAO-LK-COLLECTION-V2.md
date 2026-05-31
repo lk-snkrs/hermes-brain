@@ -140,14 +140,54 @@ Snippet de validação:
 })()
 ```
 
+## Moon Shoe final — aprovação 2026-05-30
+
+Lucas aprovou como **perfeito** o ajuste desktop da coleção `/collections/nike-x-jacquemus-moon-shoe-sp` após o topo do collage/imagens alinhar com o topo de `.coll-banner__crumbs`, e não com `.coll-banner__title`.
+
+Contrato final aprovado para o padrão v2:
+
+- O topo do bloco visual/collage deve usar `.coll-banner__crumbs` como régua vertical.
+- Diferença alvo: `mediaTopMinusCrumbTop = 0px` ou visualmente imperceptível.
+- `.coll-banner` não deve ter linha inferior no hero: `border-bottom: 0`.
+- O layout deve preservar leitura produto-first: banner/título + collage editorial no topo, produtos logo depois, guia editorial após o grid.
+- Para compatibilidade com páginas já construídas em `lk-204l-*`, pode haver classe dupla durante a migração:
+  - legado operacional: `.lk-204l-coll-preview`, `.lk-204l-collage`, `.lk-204l-card`;
+  - namespace canônico novo: `.lk-collection-v2`, `.lk-collection-v2__media`, `.lk-collection-v2__card`.
+- Próximas coleções novas devem nascer diretamente em `lk-collection-v2`; `lk-204l-*` fica apenas como compatibilidade/ponte de migração, não como novo padrão.
+- O asset canônico criado para novos temas é `assets/lk-collection-v2.css`, incluído em `layout/theme.liquid`.
+
+Validação pública feita na produção após salvar dev + production:
+
+```js
+{
+  hasV2: true,
+  rootClass: "lk-204l-coll-preview lk-collection-v2 lk-collection-v2--nike-x-jacquemus-moon-shoe-sp",
+  v2CssLoaded: true,
+  runtime: true,
+  mediaTopMinusCrumbTop: 0,
+  collBannerBorder: "0px none"
+}
+```
+
 ## Processo obrigatório para replicar em próximas coleções
 
 1. Criar implementação no Dev Theme `155065450718`.
-2. Usar a 204L aprovada como gold source e comparar no mesmo viewport/sessão.
-3. Trocar apenas conteúdo, assets e modificador de handle; preservar o contrato visual.
-4. Validar computed styles e screenshot.
-5. Enviar preview com `preview_theme_id=155065450718` e cache-buster `lkqa=...`.
-6. Produção só com aprovação explícita de Lucas, rollback e receipt.
+2. Usar a 204L aprovada e a Moon Shoe final como gold sources: 204L para contrato base; Moon Shoe para o alinhamento breadcrumb → collage.
+3. Usar o namespace novo `lk-collection-v2` desde o início:
+   - `.lk-collection-v2`
+   - `.lk-collection-v2--{handle}`
+   - `.lk-collection-v2__inner`
+   - `.lk-collection-v2__copy`
+   - `.lk-collection-v2__eyebrow`
+   - `.lk-collection-v2__headline`
+   - `.lk-collection-v2__body`
+   - `.lk-collection-v2__media`
+   - `.lk-collection-v2__card`
+   - `.lk-collection-v2__card--large`
+4. Trocar apenas conteúdo, assets e modificador de handle; preservar o contrato visual.
+5. Validar computed styles e screenshot.
+6. Enviar preview com `preview_theme_id=155065450718` e cache-buster `lkqa=...`.
+7. Produção só com aprovação explícita de Lucas, rollback e receipt.
 
 ## Não fazer
 

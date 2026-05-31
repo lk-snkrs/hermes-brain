@@ -1,6 +1,6 @@
 # Organograma de Agentes — Hermes Brain
 
-Última atualização: 2026-05-27
+Última atualização: 2026-05-30
 
 ## Status curto
 
@@ -31,6 +31,11 @@ Hermes Brain — fonte de verdade, evidência, handoff, memória e skills
   ├── Lucas pessoal / Mordomo
   │   ├── Runtime: /opt/data/profiles/mordomo
   │   └── Dono lógico: intake pessoal, agenda, follow-ups permitidos, triagem pessoal/multiempresa
+  │
+  ├── [LC] Claude Cli — brainstorm de pautas
+  │   ├── Runtime: /opt/data/profiles/lc-claude-cli
+  │   ├── Modelo: Claude via Claude CLI/proxy local
+  │   └── Dono lógico: ideação editorial, pauta, ângulos, títulos e briefs internos; sem publicação/envio automático
   │
   ├── LK OS — LK Sneakers
   │   ├── LK Growth
@@ -80,6 +85,15 @@ Hermes Brain — fonte de verdade, evidência, handoff, memória e skills
 - Papel: intake pessoal, follow-ups, inbox, drafts internos, agenda e roteamento pessoal/multiempresa.
 - Regra: follow-up simples conhecido/verificado pode avançar conforme exceção aprovada; preço, disponibilidade, reserva, negociação, reclamação, fornecedor, campanha/bulk e promessa material exigem aprovação/fonte.
 - Gap atual: rotinas Zipper/LK WhatsApp hospedadas no Mordomo devem ter dono lógico explícito e handoff.
+
+### 2b. [LC] Claude Cli / brainstorm de pautas
+
+- Caminho documental: `agentes/lc-claude-cli/`.
+- Runtime: `/opt/data/profiles/lc-claude-cli`.
+- Modelo: Claude via `claude-max-api`/Claude CLI proxy local (`http://127.0.0.1:3456/v1`).
+- Papel: canal criativo de Lucas para brainstorm de pautas, ângulos editoriais, títulos, perguntas de pesquisa e briefs internos.
+- Regra: ideação e organização são livres; publicação, envio externo, campanha, cron editorial ou alteração em superfícies de negócio exigem aprovação explícita e roteamento ao especialista correto.
+- Status: profile CLI criado e validado; gateway/Telegram dedicado não ativado até existir token/canal aprovados.
 
 ### 3. LK OS — visão por subespecialista
 
@@ -147,17 +161,21 @@ Hermes Brain — fonte de verdade, evidência, handoff, memória e skills
 - Algoritmo operacional: `empresa/contexto/task-router-hermes.md`.
 - Política canônica de autonomia/aprovação: `empresa/contexto/politica-autonomia-aprovacao-hermes.md`.
 - Matriz runtime/donos/status: `empresa/contexto/matriz-agentes-profiles-bots-crons-status-2026-05-26.md`.
+- Matriz cron/dono lógico/status: `empresa/contexto/matriz-crons-dono-logico-status.md`.
+- Critérios de promoção de auxiliares/novos agentes: `empresa/contexto/criterios-promocao-agentes-auxiliares.md`.
+- Rotina de revisão do organograma vivo: `areas/operacoes/rotinas/revisao-organograma-vivo-amora-bruno.md`.
 - Regras globais: `AGENTS.md` e `agentes/hermes-geral/AGENTS.md`.
 - Regras por negócio: `areas/<empresa>/MAPA.md` + documentação em `agentes/<empresa>/` e `areas/<empresa>/sub-areas/`.
 - Runtime real: processos `hermes gateway run`, `HERMES_HOME`, registries de cron e configs dos profiles.
 
 ## Gaps conhecidos
 
-1. Main e Mordomo ainda hospedam algumas rotinas LK Ops/Zipper por histórico; manter temporariamente com dono lógico explícito até migração aprovada.
-2. LK Shopify, LK Trends e as subáreas de apoio agora têm contrato documental mínimo, mas o padrão precisa continuar uniforme na próxima revisão.
-3. SPITI precisa declarar se não terá crons próprios ou quais rituais locais serão criados.
-4. Zipper permanece sem runtime dedicado; não criar bot só por simetria.
-5. Todo profile/bot especialista deve reportar trabalho relevante ao Hermes Central e/ou registrar no Brain.
+1. Main e Mordomo ainda hospedam algumas rotinas LK Ops/Zipper por histórico; manter temporariamente com dono lógico explícito até migração aprovada. A classificação documental vive em `empresa/contexto/matriz-crons-dono-logico-status.md`.
+2. LK Shopify, LK Trends, LK Ops/Atendimento e demais especialistas ativos já têm contrato documental mínimo uniforme (`SOUL`, `IDENTITY`, `USER`, `AGENTS`, `MAPA`, `HEARTBEAT`, `TOOLS`, `MEMORY`); manter revisão periódica para evitar drift.
+3. Watchdog global canônico dos gateways Telegram esperados: cron `b78ae7ac81d0`, script `scripts/hermes_all_gateway_watchdog.py`; cobre Main check-only + Mordomo + LK Growth + SPITI + LK Ops + LK Shopify + LK Trends.
+4. SPITI sem cron próprio consolidado é tratado como escolha segura até existir ritual aprovado; qualquer cron novo/migração exige aprovação.
+5. Zipper permanece sem runtime dedicado; critérios de promoção estão em `empresa/contexto/criterios-promocao-agentes-auxiliares.md`.
+6. Todo profile/bot especialista deve reportar trabalho relevante ao Hermes Central e/ou registrar no Brain.
 
 ## Melhorias prioritárias recomendadas
 
