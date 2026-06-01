@@ -1,7 +1,35 @@
 # Inventário vivo — crons, agentes, profiles e projetos
 
-Data-base: 2026-05-30 11:20 UTC
-Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-05-30**
+Data-base: 2026-05-31 11:20 UTC
+Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-05-31**
+
+---
+
+### Atualização 2026-05-31 11:20 UTC
+
+**Fonte:** `cronjob list` solicitado; `cronjob` não disponível no PATH deste runtime. Fallback canônico usado: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all`.
+
+**Contagem:** 27 jobs totais — 23 ativos, 4 pausados.
+
+**`last_status` não-ok:** 1 — `LK Weekly Collection Sort Rule B` (`787134d4ac5c`) — timeout persistente (120s) desde 2026-05-29. Próximo run: 2026-06-05T09:00.
+
+**Erros explícitos de delivery:** 0.
+
+**Jobs pausados na evidência viva:**
+- `ac0b440e2643` Mordomo Telegram gateway watchdog — pausado, último status ok em 2026-05-30T15:52.
+- `876d54c62ccd` LK Growth Telegram gateway watchdog — pausado, último status ok em 2026-05-30T15:52.
+- `663e3e6a148c` SPITI Telegram gateway watchdog — pausado, último status ok em 2026-05-30T15:52.
+- `955dc769b5a6` LK specialist Telegram gateway watchdog — pausado, `deliver=origin`, último status ok em 2026-05-30T15:52.
+
+**Drift/notable reconciliation:**
+- `claude-proxy-watchdog` (`5bacaa61bb12`) e `claude-max-proxy watchdog` (`3cd1011edf33`) estão ativos e precisam entrar no inventário documental de runtime/modelos.
+- `Hermes all Telegram gateways watchdog` (`b78ae7ac81d0`) está ativo com `deliver=origin` e deve ser documentado como alerta condicional.
+- `LK Weekly Catalog Badges BEST SELLER sync` (`a1d1e36f8075`) segue ativo, sem primeira execução registrada; próxima execução prevista para 2026-06-05T09:30.
+- Documentação que ainda descreve Mordomo/LK Growth/SPITI gateway watchdogs como ativos deve ser reconciliada com o estado vivo atual: crons pausados.
+
+**Jobs deliver=origin (saídas intencionais/condicionais):** Mesa COO diária (`749ee30b51eb`), Relatório Hermes 23h+02h (`98478b820720`), Hermes multi-profile latency watchdog (`c1ce34b4449a`), Hermes all Telegram gateways watchdog (`b78ae7ac81d0`). `LK specialist Telegram gateway watchdog` (`955dc769b5a6`) também está configurado como `origin`, mas está pausado.
+
+**Relatório completo:** `reports/governance/runtime-truth-reconciler-2026-05-31.md`
 
 ---
 

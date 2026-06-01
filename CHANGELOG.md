@@ -1,3 +1,13 @@
+## 2026-05-31 — Drift `[LC] Claude Cli` detectado + watchdog global corrigido
+
+**A1 auto-fix aplicado:**
+- `/opt/data/scripts/hermes_all_gateway_watchdog.py`: removido `lc-claude-cli` da lista `EXPECTED`; esse profile é local/CLI de brainstorm e não deve ser auto-iniciado como gateway Telegram sem aprovação.
+
+**Achado acionável:**
+- `hermes_runtime_cron_watchdog.py` detectou gateway inesperado em `/opt/data/profiles/lc-claude-cli`. O processo já vivo não foi parado porque stop/restart de gateway é mutação runtime; foi gerado pacote de decisão no relatório diário.
+
+**Saúde:** containers production `running`, runtime v0.15.1, cron vivo com 23 ativos; Brain Health FAIL=0/WARN=0; Score 94/100. Upstream segue em v0.15.2 como micro-oportunidade, sem update automático.
+
 ## 2026-05-30 — Watchdog auto-corrigido + credenciais Anthropic
 
 **A1 auto-fixes aplicados:**
