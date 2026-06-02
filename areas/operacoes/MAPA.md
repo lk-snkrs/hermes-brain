@@ -11,6 +11,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 
 ## Inventários
 
+- `decisions/` — decisões operacionais canônicas, incluindo política de memória sem provider externo.
 - `inventarios/crons-agentes-profiles.md` — inventário vivo de agentes, profiles, bots, crons, conversas/projetos e cobertura do Fechamento Ágil 23h.
 - `mordomo/MAPA.md` — ponte canônica mínima para Mordomo/Lucas pessoal, sem criar runtime ou agente novo.
 

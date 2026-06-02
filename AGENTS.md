@@ -42,12 +42,13 @@ Antes de agir em trabalho operacional:
 2. Identificar tipo de tarefa e risco A0-A4.
 3. Consultar a matriz de roteamento quando houver especialista/profile dono claro.
 4. Consultar `START-HERE.md` e `MAPA.md` quando a navegação importar.
-5. Consultar `agentes/hermes-geral/` para identidade, tom e regras do Hermes Geral.
-6. Carregar skill relevante quando existir.
-7. Usar `session_search` quando o pedido depender de histórico de conversa.
-8. Ler arquivos do Brain antes de afirmar estado documental.
-9. Consultar API/banco/fonte real antes de afirmar dado vivo.
-10. Usar Doppler `lc-keys/prd` para credenciais sob demanda, sem imprimir valores.
+5. Para decisões de memória/contexto, consultar `memories/politica-memoria-hermes.md`: Brain = memória rica canônica/fonte de verdade; `MEMORY.md`/`USER.md` = boot mínimo; daily/hot/reports/receipts = continuidade/evidência/current; skills = procedimentos; `session_search` = histórico; Mem0/provider externo = decisão atual é não usar; só reabrir com novo PRD/spike explícito, nunca fonte de verdade.
+6. Consultar `agentes/hermes-geral/` para identidade, tom e regras do Hermes Geral.
+7. Carregar skill relevante quando existir.
+8. Usar `session_search` quando o pedido depender de histórico de conversa.
+9. Ler arquivos do Brain antes de afirmar estado documental.
+10. Consultar API/banco/fonte real antes de afirmar dado vivo.
+11. Usar fonte segura autorizada para credenciais sob demanda, sem imprimir valores.
 
 ## Roteamento obrigatório
 

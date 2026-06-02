@@ -2,9 +2,13 @@
 
 Status: preview interno. Envio real exige aprovação explícita atual.
 
-## Regra de layout
+## Regra editorial e de layout
+
+A newsletter LK-TRENDS começa pelo **radar externo/liquidez/evidência** e só depois traduz o sinal em ação LK. Não transformar a edição em storytelling de produto único quando a demanda é trends: primeiro ranquear o que está aquecendo fora do Brasil, separar `boost`, `sourcing`, `watchlist` e `ignorar`, e então indicar o que a LK já tem ou precisa validar.
 
 A newsletter LK-TRENDS deve usar o **mesmo layout/base visual das newsletters LK/Klaviyo já existentes**, não um layout novo de relatório.
+
+Quando for e-mail real, o HTML precisa ser **email-safe**: table-based, inline styles, sem CSS de browser, sem Google Fonts, sem grid/flex como dependência crítica, largura 600–640px e teste/preview em Gmail/mobile antes de envio. HTML bonito de navegador serve apenas como calibração visual, não como payload final de e-mail.
 
 Fonte visual canônica:
 

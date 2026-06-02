@@ -75,6 +75,29 @@ Itens promovidos:
    - Destino: `areas/operacoes/rotinas/hermes-agent-cron-e-performance-diagnostico.md`.
    - Owner: Hermes Agent / Operações.
 
+## 6.1. Aplicação aprovada por Lucas em 2026-06-01
+
+Lucas aprovou executar os itens 2 e 5 do digest de 2026-05-31 e perguntou se o item 1 era o ideal.
+
+Itens promovidos agora:
+
+1. **Cérebro estável separado de dado vivo**
+   - Decisão: aplicar como critério de higiene de Brain/governança.
+   - Regra: Brain/memória/skill guardam regra, decisão, processo e template; pedido, estoque, faturamento, ads, logs, preço, status e disponibilidade ficam em fonte viva, relatório datado, snapshot ou link de origem.
+   - Destino: `empresa/contexto/politica-autonomia-aprovacao-hermes.md` e `empresa/gestao/hermes-learning-loop.md`.
+
+2. **Relatório de agente não é evidência**
+   - Decisão: aplicar continuamente em rotinas, Mission Control, PRDs e entregas de agentes.
+   - Regra: conclusão relevante precisa de evidência verificável: arquivo/diff, teste/check, readback/smoke test, escopo do que não mudou e rollback quando aplicável.
+   - Destino: `empresa/contexto/politica-autonomia-aprovacao-hermes.md` e `empresa/gestao/hermes-learning-loop.md`.
+
+Item avaliado, mas não promovido agora:
+
+3. **Aprovação humana não pode depender só do agente**
+   - Julgamento: ideal como arquitetura final para ações A3/A4, principalmente produção, dinheiro, APIs externas, cliente e infra.
+   - Decisão atual: não implementar como próximo passo imediato porque é mais pesado; manter como backlog de governança/Mission Control até existir uma superfície/fluxo específico pedindo executor externo, `approval_id`, hash de payload, TTL e rollback.
+   - Motivo: reduz risco real, mas exige desenho de backend/policy engine; itens 2 e 5 dão ganho agora sem criar burocracia.
+
 ## 7. Migração do cron real
 
 O cron histórico existe no profile Mordomo como `Pixel AI Hub / Brainzinho daily learning scan`, com prompt e skill do digest.

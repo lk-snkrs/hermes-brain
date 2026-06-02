@@ -196,3 +196,108 @@ Validação pública feita na produção após salvar dev + production:
 - Não declarar paridade apenas por métrica de DOM; validar screenshot e tipografia real.
 - Não trocar a linguagem aprovada por labels como “Sinal editorial”; usar vocabulário premium e minimalista, como `Curadoria LK`.
 - Não mudar espaçamentos por intuição quando Lucas pedir porcentagem; aplicar a redução/aumento literal e compensar media lift apenas quando necessário.
+
+## 2026-06-01 19:50:47 — Regra obrigatória LK Growth Optimized Collection
+
+Toda coleção que for otimizada/melhorada para SEO, GEO/AI Search, CRO, layout, hero, guia ou texto deve obrigatoriamente passar pelo fluxo **LK Growth Optimized Collection**, usando a skill `lk-superpowers-collection-optimizer`, camada CLAUDE-SEO, guia dedicado, Guia Editorial LK pós-grid, imagens editoriais reais, tag/metafields e ledger. Regra canônica: `rules/REGRA-LK-GROWTH-OPTIMIZED-COLLECTION-OBRIGATORIA.md`.
+
+## Padrão obrigatório refinado — 2026-06-01T20:43:30Z
+
+Feedback visual/textual aprovado por Lucas no piloto Adidas Samba Jane:
+
+- **Texto hero/editorial maior:** o primeiro texto da coleção otimizada deve ter mais corpo. Usar como referência **500–700 caracteres** no primeiro parágrafo/bloco, com densidade de styling, intenção de uso, leitura estética e curadoria LK. Textos curtos demais passam a reprovar QA.
+- **CTA de guia em fundo claro:** chamadas como “Para aprofundar versões, materiais e proporção, abra o guia completo da coleção.” devem usar **fundo claro**, visual premium e contraste suave. Fundo escuro nesse CTA não é padrão e só deve ser usado se Lucas aprovar explicitamente.
+- **QA obrigatório:** antes de considerar uma coleção `LK Growth Optimized Collection` pronta, validar: texto principal com corpo suficiente + card/CTA de guia em fundo claro.
+
+## Regra operacional obrigatória — 2026-06-01T21:06:42Z
+
+Feedback Lucas por áudio:
+
+- Sempre que qualquer alteração for aplicada em tema Shopify, DEV theme, preview, collection, página, guia, asset visual ou bloco renderizado, a resposta ao Lucas deve obrigatoriamente incluir o **link direto de acesso/preview** do que foi alterado.
+- Não basta dizer que foi aplicado ou validado; o link precisa estar visível na resposta final do turno.
+- Para tema DEV, sempre enviar URL com `preview_theme_id` correspondente.
+- Para produção, enviar URL pública final.
+- Esta regra vale para qualquer alteração visual, textual, SEO/CRO/GEO ou de layout.
+- Se houver múltiplas páginas alteradas, listar todos os links.
+
+## Correção obrigatória de padrão — 2026-06-01T21:59:24Z
+
+Feedback Lucas — QA Adidas Samba Jane:
+
+1. **CTA do guia deve ter fundo claro**
+   - O bloco/frase “Para aprofundar versões, materiais e proporção, abra o guia completo da coleção.” não pode ficar com fundo escuro.
+   - Padrão obrigatório: fundo claro, visual premium, contraste suave, borda discreta se necessário.
+   - Qualquer CTA de guia em fundo escuro reprova QA visual.
+
+2. **Apenas um FAQ por coleção otimizada**
+   - Não pode haver dois blocos de FAQ na mesma experiência da coleção.
+   - O único FAQ permitido deve ser o FAQ criado dentro do **Guia LK** / bloco editorial canônico.
+   - Se existir FAQ legado, FAQ automático, FAQ duplicado de tema ou outro FAQ fora do Guia LK, ele deve ser removido/ocultado para aquela coleção.
+   - Schema FAQPage também deve refletir apenas o FAQ canônico do Guia LK, evitando duplicidade para usuário e para Google/AI Search.
+
+Regra de QA: coleção `LK Growth Optimized Collection` só pode ser aprovada se tiver CTA de guia claro e um único FAQ visível, o do Guia LK.
+
+## Alias operacional obrigatório — 2026-06-01T22:19:59Z
+
+- **LKGOC** significa **LK Growth Optimized Collection**.
+- Sempre que Lucas falar “LKGOC”, interpretar como o padrão/skill/processo **LK Growth Optimized Collection**.
+- O termo se refere ao pacote completo de otimização de coleção: texto hero robusto, layout editorial, imagens editoriais, guia pós-grid, Guia LK, FAQ único canônico, CTA claro, schema, QA, ledger/tag/metafields quando aplicável e link obrigatório de preview após qualquer alteração.
+- Regra de comunicação: responder usando o contexto LKGOC sem pedir esclarecimento quando Lucas usar essa sigla.
+
+## Correção LKGOC CTA — 2026-06-01T23:48:29Z
+
+Padrão obrigatório Lucas:
+- No LKGOC, o bloco de texto “Para aprofundar versões, materiais e proporção, abra o guia completo da coleção.” deve usar **o mesmo fundo claro/card editorial do bloco acima**.
+- O botão/link **ABRIR GUIA COMPLETO** deve ter **fonte branca** sobre botão/fundo escuro.
+- QA visual deve reprovar se o card “Para aprofundar...” estiver com cor divergente do bloco acima ou se o texto do botão não estiver branco.
+
+## Correção LKGOC mobile CTA — 2026-06-02T00:11:52Z
+
+Padrão obrigatório:
+- LKGOC precisa validar **desktop e mobile** separadamente.
+- No mobile, o bloco “Para aprofundar versões, materiais e proporção...” deve manter o mesmo fundo claro do card editorial acima (`#faf8f4` / família visual clara), sem cair em variação escura ou fundo diferente.
+- O botão “ABRIR GUIA COMPLETO” deve manter texto branco também no mobile.
+- QA LKGOC só passa após checagem visual mobile.
+
+## Correção LKGOC Guia LK novo — 2026-06-02T00:16:23Z
+
+Padrão obrigatório atualizado por Lucas:
+- O bloco Guia LK do LKGOC deve usar a versão nova adaptada para desktop, não a versão antiga.
+- Desktop: card editorial e FAQ no mesmo card amplo, com **divisor vertical** entre o conteúdo de escolha e o FAQ.
+- Mobile: o mesmo padrão deve adaptar com divisor superior entre conteúdo e FAQ, mantendo espaçamento premium.
+- O card “Para aprofundar versões, materiais e proporção...” deve usar o mesmo fundo claro dos cards internos do Guia LK (`#fff` com borda `#e2dbd0`), não uma variação diferente.
+- O botão “ABRIR GUIA COMPLETO” deve manter fundo escuro e texto branco.
+- QA LKGOC deve reprovar se a coleção estiver usando versão antiga do Guia LK ou se o card de aprofundamento tiver cor diferente dos cards internos.
+
+## Regra LKGOC — coleção + guia juntos — 2026-06-02T00:25:03Z
+
+Feedback Lucas:
+
+- Todo trabalho de **LKGOC / LK Growth Optimized Collection** deve tratar **coleção otimizada + Guia LK dedicado** como um pacote único.
+- Não considerar a coleção pronta se o guia dedicado correspondente não estiver planejado, escrito e pronto para publicação/approval.
+- Objetivo central: **contar e vender histórias**, não apenas descrever produto.
+- Todo texto de coleção e todo Guia LK devem seguir a lógica:
+  1. história/origem/DNA do modelo;
+  2. como o modelo volta ou se transforma nos tempos atuais;
+  3. por que ele é relevante agora em moda, cultura, comportamento e styling;
+  4. como a curadoria LK ajuda a escolher versão, cor, proporção, autenticidade e intenção de uso;
+  5. fechamento comercial premium, humano e editorial.
+- O guia deve cruzar o passado do modelo com sua leitura contemporânea, explicando por que ele importa hoje.
+- QA LKGOC reprova textos genéricos, puramente técnicos ou sem narrativa histórica/comercial.
+
+## Regra LKGOC — pesquisa na internet obrigatória — 2026-06-02T00:56:58Z
+
+- Todo **LKGOC / LK Growth Optimized Collection** deve fazer pesquisa na internet antes de escrever ou publicar coleção/Guia LK.
+- A pesquisa deve alimentar narrativa, SEO/GEO e curadoria, cobrindo quando aplicável:
+  - história/origem/DNA do modelo;
+  - contexto cultural e fashion;
+  - relevância contemporânea;
+  - styling atual;
+  - dúvidas reais de busca;
+  - SERP/concorrentes;
+  - fontes editoriais e páginas oficiais.
+- Fontes preferenciais: Google/SERP, DataForSEO, páginas oficiais da marca, Highsnobiety, Hypebeast, Vogue, GQ, Who What Wear, Glamour, FFW, Sneaker News, Complex, Footwear News e veículos editoriais equivalentes.
+- O LKGOC não deve inventar história nem escrever só com conhecimento genérico.
+- A narrativa final deve cruzar **internet + SERP + fontes editoriais + curadoria LK + intenção comercial atual**.
+- Guia LK só passa em QA se explicar: passado/DNA do modelo, por que ele importa agora, como escolher e por que a curadoria LK ajuda a comprar melhor.
+

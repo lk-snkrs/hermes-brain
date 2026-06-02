@@ -9,6 +9,7 @@ Escopo: memória operacional durável do Hermes Brain. Esta pasta não é transc
 - `decisions.md` — decisões duráveis globais que não pertencem claramente a uma única área.
 - `pending.md` — pendências globais abertas.
 - `lessons.md` — aprendizados recorrentes e lições operacionais.
+- `politica-memoria-hermes.md` — política canônica de camadas: Brain = memória rica/fonte de verdade; `MEMORY.md`/`USER.md` = boot mínimo; daily/hot/reports/receipts = continuidade/evidência/current; skills = procedimentos; `session_search` = histórico conversacional; Mem0/provider externo = índice semântico auxiliar, nunca fonte de verdade.
 - `lk.md`, `zipper.md`, `spiti.md` — memória por empresa quando o fato não exige rotina/decisão própria.
 - `consolidation_weekly/` — consolidações semanais históricas.
 

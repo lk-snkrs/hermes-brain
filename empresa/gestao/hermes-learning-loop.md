@@ -295,6 +295,25 @@ Ao final de uma tarefa complexa, checar:
 - Não registrar feedback trivial que não melhora execução futura.
 - Não sobrescrever regra de negócio sem evidência ou aprovação explícita.
 
+## 2026-06-01 — Pixel AI Hub: Brain estável vs dado vivo; evidência independente
+
+Tipo: aprovação / regra de execução / padrão operacional.
+
+Lucas aprovou priorizar o item 2 do digest Pixel AI Hub / Brainzinho de 2026-05-31 — **cérebro estável separado de dado vivo** — e também fazer o item 5 — **relatório de agente não é evidência**.
+
+Regras aprendidas:
+
+- Antes de salvar algo no Brain/memória/skill, Hermes deve classificar se é regra/decisão/processo durável ou dado operacional temporário.
+- Dados vivos como pedido, estoque, faturamento, ads, logs, status, preço e disponibilidade devem permanecer em fonte viva, relatório datado ou snapshot verificável; não viram memória permanente nem verdade copiada no Brain.
+- Entrega de agente deve vir com evidência verificável: arquivo/diff, teste/check, readback/smoke test, escopo do que não mudou e rollback quando aplicável.
+- O relato do agente é útil como resumo, mas não é prova suficiente.
+
+Onde aplicar: Hermes Brain, Mission Control, rotinas, skills, cron/digests, PRDs, Approval Center, LK/Zipper/SPITI reports.
+
+Artefato canônico atualizado: `empresa/contexto/politica-autonomia-aprovacao-hermes.md`.
+
+Status: registrado.
+
 ### Global/Zipper — `/background` não autoriza envio externo
 
 ```text

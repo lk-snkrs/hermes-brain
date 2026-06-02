@@ -111,3 +111,53 @@ Antes de considerar aplicado:
 
 - Reverter o asset da seção/tema usando backup/receipt anterior.
 - Se houver hotfix runtime no `layout/theme.liquid`, remover o `<style>` correspondente após consolidar o CSS no asset canônico.
+
+## Padrão obrigatório refinado — 2026-06-01T20:43:30Z
+
+Feedback visual/textual aprovado por Lucas no piloto Adidas Samba Jane:
+
+- **Texto hero/editorial maior:** o primeiro texto da coleção otimizada deve ter mais corpo. Usar como referência **500–700 caracteres** no primeiro parágrafo/bloco, com densidade de styling, intenção de uso, leitura estética e curadoria LK. Textos curtos demais passam a reprovar QA.
+- **CTA de guia em fundo claro:** chamadas como “Para aprofundar versões, materiais e proporção, abra o guia completo da coleção.” devem usar **fundo claro**, visual premium e contraste suave. Fundo escuro nesse CTA não é padrão e só deve ser usado se Lucas aprovar explicitamente.
+- **QA obrigatório:** antes de considerar uma coleção `LK Growth Optimized Collection` pronta, validar: texto principal com corpo suficiente + card/CTA de guia em fundo claro.
+
+## Correção obrigatória de padrão — 2026-06-01T21:59:24Z
+
+Feedback Lucas — QA Adidas Samba Jane:
+
+1. **CTA do guia deve ter fundo claro**
+   - O bloco/frase “Para aprofundar versões, materiais e proporção, abra o guia completo da coleção.” não pode ficar com fundo escuro.
+   - Padrão obrigatório: fundo claro, visual premium, contraste suave, borda discreta se necessário.
+   - Qualquer CTA de guia em fundo escuro reprova QA visual.
+
+2. **Apenas um FAQ por coleção otimizada**
+   - Não pode haver dois blocos de FAQ na mesma experiência da coleção.
+   - O único FAQ permitido deve ser o FAQ criado dentro do **Guia LK** / bloco editorial canônico.
+   - Se existir FAQ legado, FAQ automático, FAQ duplicado de tema ou outro FAQ fora do Guia LK, ele deve ser removido/ocultado para aquela coleção.
+   - Schema FAQPage também deve refletir apenas o FAQ canônico do Guia LK, evitando duplicidade para usuário e para Google/AI Search.
+
+Regra de QA: coleção `LK Growth Optimized Collection` só pode ser aprovada se tiver CTA de guia claro e um único FAQ visível, o do Guia LK.
+
+## Alias operacional obrigatório — 2026-06-01T22:19:59Z
+
+- **LKGOC** significa **LK Growth Optimized Collection**.
+- Sempre que Lucas falar “LKGOC”, interpretar como o padrão/skill/processo **LK Growth Optimized Collection**.
+- O termo se refere ao pacote completo de otimização de coleção: texto hero robusto, layout editorial, imagens editoriais, guia pós-grid, Guia LK, FAQ único canônico, CTA claro, schema, QA, ledger/tag/metafields quando aplicável e link obrigatório de preview após qualquer alteração.
+- Regra de comunicação: responder usando o contexto LKGOC sem pedir esclarecimento quando Lucas usar essa sigla.
+
+## Correção LKGOC CTA — 2026-06-01T23:48:29Z
+
+Padrão obrigatório Lucas:
+- No LKGOC, o bloco de texto “Para aprofundar versões, materiais e proporção, abra o guia completo da coleção.” deve usar **o mesmo fundo claro/card editorial do bloco acima**.
+- O botão/link **ABRIR GUIA COMPLETO** deve ter **fonte branca** sobre botão/fundo escuro.
+- QA visual deve reprovar se o card “Para aprofundar...” estiver com cor divergente do bloco acima ou se o texto do botão não estiver branco.
+
+## Correção LKGOC Guia LK novo — 2026-06-02T00:16:23Z
+
+Padrão obrigatório atualizado por Lucas:
+- O bloco Guia LK do LKGOC deve usar a versão nova adaptada para desktop, não a versão antiga.
+- Desktop: card editorial e FAQ no mesmo card amplo, com **divisor vertical** entre o conteúdo de escolha e o FAQ.
+- Mobile: o mesmo padrão deve adaptar com divisor superior entre conteúdo e FAQ, mantendo espaçamento premium.
+- O card “Para aprofundar versões, materiais e proporção...” deve usar o mesmo fundo claro dos cards internos do Guia LK (`#fff` com borda `#e2dbd0`), não uma variação diferente.
+- O botão “ABRIR GUIA COMPLETO” deve manter fundo escuro e texto branco.
+- QA LKGOC deve reprovar se a coleção estiver usando versão antiga do Guia LK ou se o card de aprofundamento tiver cor diferente dos cards internos.
+

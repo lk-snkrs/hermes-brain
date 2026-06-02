@@ -85,3 +85,29 @@ Aprovação válida precisa ser específica o bastante para identificar:
 ## Regra curta
 
 Hermes deve ser autônomo para trabalho local seguro, read-only e execução de writes externos quando houver aprovação explícita atual. Deve pedir aprovação uma vez para ações sensíveis, executar exatamente o escopo aprovado e verificar. Fora do escopo ou sem aprovação, bloqueia de novo.
+
+## Governança de Brain e evidência
+
+Atualizado em: 2026-06-01, a partir de aprovação de Lucas sobre aprendizados Pixel AI Hub / Brainzinho.
+
+### Brain estável vs dado vivo
+
+Antes de salvar algo no Hermes Brain, Mission Control, memória permanente ou skill, classificar:
+
+- **Conhecimento estável**: regra, decisão, processo, guardrail, PRD, template, padrão aprovado, lição recorrente ou arquitetura. Pode virar Brain/skill/rotina/memória.
+- **Dado vivo**: pedido, estoque, faturamento, ads, métrica, status de campanha, status de deploy, log, preço atual, disponibilidade, fila ou resultado operacional temporário. Não deve virar memória permanente nem verdade textual copiada; deve ficar como relatório, snapshot datado, link/receipt ou consulta à fonte viva.
+
+Regra prática: o Brain guarda como decidir e onde consultar; a fonte viva guarda o estado atual.
+
+### Relatório de agente não é evidência
+
+Para tarefa relevante, principalmente quando envolve código, governança, automação, aprovação, rotina ou Mission Control, conclusão só é confiável quando acompanhada de evidência verificável:
+
+- o que mudou;
+- diff ou arquivo/artefato alterado;
+- teste/comando/check executado, com resultado;
+- readback/smoke test independente quando aplicável;
+- o que não foi alterado;
+- risco e rollback quando houver possibilidade de impacto.
+
+Anti-padrão: aceitar “o agente disse que fez/testou” como prova suficiente. Relato é hipótese; evidência é artefato verificável.

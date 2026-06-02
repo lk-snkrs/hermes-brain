@@ -30,3 +30,7 @@ Subárea documental/ponte. A fonte canônica do especialista Shopify é `areas/l
 ## Regra de roteamento
 
 Se a tarefa for execução/alteração Shopify pura, usar `areas/lk/sub-areas/shopify/`. Se for recomendação Growth que precisa de preview/packet para Shopify, este diretório pode guardar a ponte e o handoff.
+
+## Regra transversal de collections — 2026-06-01 19:51:55
+
+Para qualquer trabalho em Shopify collections com SEO/GEO/CRO/layout/guia, obedecer ao fluxo **LK Growth Optimized Collection** definido pela área Growth. Produção exige aprovação explícita.

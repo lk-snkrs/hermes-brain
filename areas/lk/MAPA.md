@@ -101,3 +101,12 @@ Shopify, Supabase LK, Klaviyo, GA4/GSC, Meta Ads, Judge.me, Frenet, Tiny ERP, Ev
 - Copy LK sem travessão, sem “compre agora”, sem “melhor do Brasil”.
 - Preview no Telegram antes de campanha, WhatsApp, contato com cliente ou ação externa.
 - Doppler `lc-keys/prd` é a fonte de credenciais; nunca versionar valores.
+
+## 2026-06-01 20:02:48 — Regra transversal: LK Growth Optimized Collection
+
+Para qualquer otimização/melhoria de Shopify collection da LK envolvendo SEO, GEO/AI Search/LLM, CRO, layout, hero, descrição, Guia Editorial LK ou guia dedicado, o fluxo obrigatório é **LK Growth Optimized Collection**.
+
+Fonte canônica: `sub-areas/growth/rules/REGRA-LK-GROWTH-OPTIMIZED-COLLECTION-OBRIGATORIA.md`.
+Skill operacional: `sub-areas/growth/skills/lk-superpowers-collection-optimizer/SKILL.md`.
+Tag Shopify: `LK Growth Optimized Collection`.
+

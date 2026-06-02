@@ -1,7 +1,21 @@
 # Memória quente — contexto current
 
-Atualizado: 2026-05-29
+Atualizado: 2026-06-01
 Status: camada Bruno/OpenClaw/Hermes COO ativa para evitar perda por compactação, orientar handoffs e reconciliar runtime/Brain sem ruído.
+
+## Política current de memória
+
+- Memória curta/injetada do Hermes (`MEMORY.md`/`USER.md`) = boot mínimo curado: identidade, preferências, guardrails e ponteiros.
+- Memória rica = Brain/daily notes/`hot.md`/context files/skills/session_search/reports/archive e, se aprovado, provider externo.
+- Fonte canônica: `memories/politica-memoria-hermes.md`.
+- Relatório de validação web: `/opt/data/reports/hermes-memory-best-practices-web-validation-20260601.md`.
+- Profiles especialistas compactados em 2026-06-01; receipt: `reports/governance/hermes-memory-profile-compact-receipt-2026-06-01.md`.
+- Conteúdo rico removido foi auditado e classificado em `reports/governance/hermes-memory-rich-content-migration-backlog-2026-06-01.md`; provider externo fica somente como spike futuro em `reports/governance/hermes-memory-provider-spike-criteria-2026-06-01.md`.
+- `MEMORY.md` ricos do Brain também foram revisados para reduzir localizador sensível/estado longo; receipt: `reports/governance/hermes-brain-rich-memory-hygiene-receipt-2026-06-01.md`.
+- Política canônica ganhou índice operacional de roteamento de memória e o `AGENTS.md` raiz aponta para ela; resumo canônico agora está explícito em `memories/politica-memoria-hermes.md`, `memories/MAPA.md` e `AGENTS.md`: Brain = fonte rica; `MEMORY.md`/`USER.md` = boot mínimo; daily/hot/reports/receipts = continuidade/evidência/current; skills = procedimentos; `session_search` = histórico; provider externo = atualmente rejeitado/off; Brain é fonte rica. Receipt: `reports/governance/hermes-memory-policy-context-routing-receipt-2026-06-01.md`.
+- PRD provider externo + Hermes Brain criado em `areas/operacoes/prds/hermes-memzero-brain-memory-prd-2026-06-01.md`; recomendação current: não ativar provider externo em produção, apenas spike canário/sintético se aprovado.
+- Spike de provider externo preparado até Tarefa 3: queries de avaliação e approval packet local em `reports/governance/provider_external_spike-eval-queries-2026-06-01.md` e `reports/governance/provider_external_canary-approval-packet-2026-06-01.md`; provider ainda não ativado.
+- Reauditoria de memória vs Bruno/OpenClaw e docs oficiais Hermes concluída: `reports/governance/hermes-memory-reaudit-bruno-docs-2026-06-01.md`. Estado current: arquitetura correta; P1 recomendado é compactar `USER.md` default, hoje alto (~89,7%), sem mexer em runtime/provider.
 
 ## Prioridades current
 
@@ -49,3 +63,14 @@ Status: camada Bruno/OpenClaw/Hermes COO ativa para evitar perda por compactaç�
 ## Próxima revisão
 
 Atualizar no fechamento diário ou sempre que Lucas corrigir prioridade/decisão que afete execução contínua.
+
+
+## Memória Hermes P1–P4 — 2026-06-01
+
+- P1 aplicado: `/opt/data/memories/USER.md` default compactado com backup em `/opt/data/backups/memory_hygiene_20260601/`.
+- P2 preparado: monitor diário/silent-OK de higiene de memória via script local; mensal foi corrigido por ser lento demais para um Brain vivo.
+- P3 consolidado: Bruno/OpenClaw é benchmark metodológico; Brain é fonte rica canônica; `MEMORY.md`/`USER.md` são boot mínimo.
+- P4 decidido: Lucas não quer usar provider externo de memória; provider externo fica off e artefatos de canário são históricos/rejeitados.
+- Receipt: receipt P1–P4 de memória em `reports/governance/`.
+
+- P2 runtime local: cron `f9a1d43caf48` ajustado para rodar junto do ciclo 02h BRT, com folga de 15 minutos para o ciclo 02h concluir (`15 5 * * *` = 02:15 BRT), `deliver=local` e `no_agent`; script silent-OK validado com stdout vazio.

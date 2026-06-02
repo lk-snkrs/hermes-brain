@@ -37,3 +37,11 @@ LK Shopify é braço especialista, não mente separada. Trabalho material precis
 ## Critério de boa execução
 
 Uma ação Shopify é decision-grade quando contém: item/handle/ID exato, fonte consultada, snapshot antes, preview ou diff, aprovação explícita, execução limitada ao escopo, readback, receipt e rollback possível.
+
+## Alias operacional obrigatório — 2026-06-01T22:19:59Z
+
+- **LKGOC** significa **LK Growth Optimized Collection**.
+- Sempre que Lucas falar “LKGOC”, interpretar como o padrão/skill/processo **LK Growth Optimized Collection**.
+- O termo se refere ao pacote completo de otimização de coleção: texto hero robusto, layout editorial, imagens editoriais, guia pós-grid, Guia LK, FAQ único canônico, CTA claro, schema, QA, ledger/tag/metafields quando aplicável e link obrigatório de preview após qualquer alteração.
+- Regra de comunicação: responder usando o contexto LKGOC sem pedir esclarecimento quando Lucas usar essa sigla.
+

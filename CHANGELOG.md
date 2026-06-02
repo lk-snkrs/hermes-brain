@@ -1,3 +1,20 @@
+## 2026-06-01 — Weekly Learning Loop W23 consolidado
+
+**Governança semanal:**
+- Gerado `reports/hermes-learning-weekly/2026-W23-2026-05-26-a-2026-06-01.md`, consolidando os reports diários 02h, CHANGELOG e sessão recente.
+- Síntese: Learning Loop saudável, Brain Health 0/0 durante a semana, Score 94/100, runtime v0.15.1, foco em runtime governance/especialistas + LK OS/LK Trends.
+- Decisões pendentes registradas: `lc-claude-cli` gateway inesperado e renovação Anthropic OAuth; sem execução de runtime/externos.
+
+## 2026-06-01 — Daily Loop saudável + host observability alinhado ao v0.15.1
+
+**A1 auto-fixes aplicados:**
+- `/opt/data/scripts/hermes_host_docker_observability.py` e espelho Brain atualizados para esperar `Hermes Agent v0.15.1 (2026.5.29)`, eliminando falso positivo de versão após upgrade runtime.
+- Template LK Trends atualizado: newsletter começa por radar externo/liquidez/evidência e e-mail real deve ser HTML email-safe/table-based, não HTML de browser.
+
+**Saúde:** containers production `running`, helper host observability com `alerts: []`, runtime v0.15.1, Brain Health FAIL=0/WARN=0, Score 94/100. Upstream v0.15.2 segue classificado como packaging fix/P2, sem update automático.
+
+**Pendências mantidas:** `LK Weekly Collection Sort Rule B` ainda tem timeout anterior; small theme fixes/OG title/GMC Packet D seguem bloqueados até aprovação/destino explícito.
+
 ## 2026-05-31 — Drift `[LC] Claude Cli` detectado + watchdog global corrigido
 
 **A1 auto-fix aplicado:**
