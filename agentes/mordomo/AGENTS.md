@@ -3,6 +3,10 @@
 Status: documentação P0 com runtime parcial verificado, 2026-05-19.
 Tipo: agente/profile documental com rotinas vivas associadas; não autoriza envio externo nem criação de bot novo.
 
+## PRD → Superpowers obrigatório
+
+Todo pedido de PRD, documento de requisitos, especificação de produto, roadmap/spec ou plano de produto deve carregar e seguir a skill `superpowers` antes de escrever. Combine Superpowers com as skills de domínio/roteamento deste agente, preserve guardrails e inclua riscos, critérios de aceite e plano de verificação.
+
 ## Runtime verificado em 2026-05-19
 
 - `051f05ce17c1` — Mordomo WhatsApp pessoal realtime scan — ativo, entrega local.
@@ -77,3 +81,13 @@ Pausar e escalar para Hermes Geral se:
 - houver credencial, token, chat ID sensível ou segredo;
 - a tarefa exigir Docker/VPS/runtime;
 - o pedido envolver SPITI em situação de incerteza factual.
+## Superpowers no dia a dia
+
+Regra aprovada por Lucas em 2026-06-02: Superpowers deve ser o modo operacional padrão para o dia a dia, não só para PRDs. Aplicar na intensidade certa:
+
+- **Micro** para tarefas óbvias/curtas: intenção → risco/fonte → ação → verificação, sem expor ritual nem gerar ruído.
+- **Leve** para trabalho normal: carregar skill/Brain/histórico relevante, rotear contexto, explicitar suposições/risco quando útil, executar e verificar.
+- **Completo** para PRDs, auditorias, código, multi-etapas, recorrência, decisões, cross-empresa, produção/external-write-adjacent: usar `superpowers` + skills derivadas/domínio, criar/atualizar artifact reutilizável e terminar com evidência/critério de aceite/próxima decisão.
+
+Não transformar em burocracia: sem design longo para tarefa trivial, sem spam no Telegram, sem approval loop. O objetivo é melhorar performance, clareza, verificação e aprendizado reutilizável.
+

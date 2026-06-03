@@ -1,3 +1,14 @@
+## 2026-06-02 — Daily Loop: v0.15.2 alinhado + wacli hermes pendente
+
+**A1 auto-fixes aplicados:**
+- Watchdogs/helpers de runtime atualizados para esperar `Hermes Agent v0.15.2 (2026.5.29.2)` em `/opt/data/scripts/` e espelhos `areas/operacoes/scripts/`.
+- Verificação pós-fix: `py_compile` OK, runtime watchdog manual silent OK, host observability com `alerts: []`.
+- Skill `lk-report-delivery` atualizada: relatório gerado ≠ relatório entregue; falha de `wacli` deve virar pendência/receipt.
+
+**Saúde:** containers production `running`, gateway/cron vivo, Brain Health FAIL=0/WARN=0, Score 94/100.
+
+**Pendência acionável:** conta `wacli hermes` está `authenticated=False`, afetando entregas WhatsApp aprovadas de LK/Zipper. Reautenticação precisa de Lucas presente para QR/código; nenhum envio/restart/produção foi executado.
+
 ## 2026-06-01 — Weekly Learning Loop W23 consolidado
 
 **Governança semanal:**

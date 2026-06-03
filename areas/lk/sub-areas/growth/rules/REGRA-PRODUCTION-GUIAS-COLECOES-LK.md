@@ -73,3 +73,21 @@ Erro confirmado por Lucas após preview DEV das coleções/guias Nike Vomero Pre
 
 Toda coleção que for otimizada/melhorada para SEO, GEO/AI Search, CRO, layout, hero, guia ou texto deve obrigatoriamente passar pelo fluxo **LK Growth Optimized Collection**, usando a skill `lk-superpowers-collection-optimizer`, camada CLAUDE-SEO, guia dedicado, Guia Editorial LK pós-grid, imagens editoriais reais, tag/metafields e ledger. Regra canônica: `rules/REGRA-LK-GROWTH-OPTIMIZED-COLLECTION-OBRIGATORIA.md`.
 
+## Aprendizado crítico adicional — 2026-06-02, Guia Adidas Samba Jane aprovado
+
+Lucas aprovou o refinamento visual do Guia Adidas Samba Jane em DEV como padrão LKGOC para guias dedicados:
+
+- Guia dedicado deve usar shell Moon Shoe com hero preto/full-bleed; não publicar hero branco ou artigo estreito.
+- Imagem editorial precisa mostrar o tênis de verdade. Pessoa usando não basta se calça/ângulo/corte esconderem o calçado. Bloquear e trocar imagem.
+- Fonte aspiracional continua importante, mas visibilidade do produto é gate visual. Se Vogue/Glamour não mostrarem o tênis, usar outra fonte editorial de styling com justificativa.
+- Texto abaixo do hero deve manter a mesma régua/largura útil do hero preto. Não permitir regressão para coluna estreita do `main-page`.
+- FAQ desktop deve ser visualmente equilibrado: até 4 perguntas = 1 coluna; mais de 4 = 6 ou 8 perguntas em 2 colunas; mobile = 1 coluna.
+- Approval de Lucas em preview DEV não autoriza production automaticamente fora do escopo pedido; production continua exigindo aprovação explícita atual.
+
+## Referência LKGOC
+
+O padrão completo de LKGOC vive em um único documento canônico:
+
+- `LKGOC-PADRAO-CANONICO.md`
+
+Não duplicar regras longas aqui. Este arquivo deve apenas complementar seu escopo específico e apontar para o canônico.

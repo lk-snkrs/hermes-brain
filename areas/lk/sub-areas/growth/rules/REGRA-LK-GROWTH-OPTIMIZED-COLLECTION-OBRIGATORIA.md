@@ -193,3 +193,76 @@ Feedback Lucas:
 - A narrativa final deve cruzar **internet + SERP + fontes editoriais + curadoria LK + intenção comercial atual**.
 - Guia LK só passa em QA se explicar: passado/DNA do modelo, por que ele importa agora, como escolher e por que a curadoria LK ajuda a comprar melhor.
 
+## Regra LKGOC — padrão visual correto não é opcional — 2026-06-02T11:06:41Z
+
+Feedback Lucas após incidente `guia-adidas-samba-jane`:
+
+- O padrão correto deve ser salvo no LKGOC **assim que Lucas aprova visualmente um modelo**, sem esperar novo pedido para “salvar como padrão”.
+- Quando Lucas aponta que `204L` e `Moon Shoe` estavam corretos, isso vira referência operacional obrigatória imediatamente:
+  - **Coleção produto-first** = padrão **New Balance 204L** / `lk-collection-v2` / produtos antes de guia longo.
+  - **Guia LK dedicado `/pages/guia-*`** = padrão **Nike x Jacquemus Moon Shoe** / shell editorial premium.
+- Guia dedicado LKGOC que renderiza como texto corrido, `<article>` simples, Markdown/HTML cru, FAQ básico ou página sem shell Moon Shoe **reprova automaticamente**.
+- A validação LKGOC deve comparar visualmente o render final com o padrão correto antes de qualquer production:
+  - desktop;
+  - mobile;
+  - hero editorial;
+  - imagem/contexto visual;
+  - tabela comparativa quando aplicável;
+  - cards/fontes externas;
+  - blocos citáveis LK;
+  - FAQ no padrão;
+  - CTA discreto para coleção.
+- QA técnico/readback textual **não é suficiente**. HTTP 200, handle certo, title/meta, FAQ/schema ou conteúdo bom não aprovam guia se o layout estiver fora do padrão.
+- Bloqueio automático: se o guia dedicado não usa o shell Moon Shoe, não pode ser publicado nem apresentado como “Guia LK final”.
+- Qualquer padrão novo só pode substituir 204L/Moon Shoe após aprovação visual explícita de Lucas e registro imediato no LKGOC/Brain.
+
+## Regra Telegram/preview — draft visível em Shopify DEV — 2026-06-02T12:14:03Z
+
+Feedback Lucas: draft local sozinho não serve em fluxo por Telegram, porque Lucas não consegue ver/validar visualmente.
+
+Regra obrigatória LKGOC:
+
+- Todo draft visual de coleção, Guia LK, source page, CTA, FAQ ou bloco editorial deve ser materializado em **Shopify DEV theme/preview** antes de pedir opinião/aprovação.
+- A resposta no Telegram deve trazer o **link direto de preview Shopify** (`preview_theme_id=155065450718` ou tema DEV ativo equivalente).
+- Arquivo local/Brain é apenas backup/rollback/evidência; não é output final para Lucas validar.
+- Se ainda não for possível criar preview no Shopify DEV, declarar bloqueio técnico e não apresentar como “pronto”.
+- Para guia dedicado, o padrão é: rascunho → snippet/template/section no DEV theme → URL preview clicável → QA visual desktop/mobile → só então approval de produção.
+
+## Regra visual canônica — hero preto LK — 2026-06-02T12:24:15Z
+
+Correção Lucas: o padrão aprovado New Balance 204L / Moon Shoe não usa hero editorial branco. O hero/topo deve ter base **preta/escura**, com texto claro e imagem/editorial integrada.
+
+Aplicação obrigatória:
+- Coleções produto-first: `lk-collection-v2` com banner/hero preto (`#101010` ou equivalente), como New Balance 204L.
+- Guias dedicados `/pages/guia-*`: shell editorial com hero preto/full-bleed, seguindo Moon Shoe; nunca hero branco/texto corrido dentro do `main-page` estreito.
+- QA visual deve comparar explicitamente: fundo do hero, largura do hero, contraste, presença de imagem/contexto, tabela/cards/FAQ e CTA discreto.
+
+## Regra de fontes externas — portais internacionais primeiro — 2026-06-02T12:43:12Z
+
+Feedback Lucas: cliente brasileiro valoriza saber o que está “bombando lá fora”.
+
+Regra obrigatória para Guia LK e blocos GEO:
+- Links externos de referência devem priorizar **portais internacionais de moda/sneakers/cultura**: ex. Vogue, GQ, Highsnobiety, Hypebeast/Hypebae, Who What Wear, Glamour US/UK, Elle, Harper's Bazaar, Complex, Sneaker News, Sole Retriever, WWD.
+- Evitar usar portal brasileiro como card de autoridade principal quando o objetivo é tendência/styling/global signal.
+- Fonte oficial da marca pode entrar como evidência de produto, mas os cards editoriais devem mostrar leitura internacional/tendência global.
+- Se usar fonte brasileira, deve ser exceção justificada, não padrão.
+
+## Refinamento de fontes internacionais — revistas de moda reconhecíveis — 2026-06-02T12:47:59Z
+
+Feedback Lucas por áudio: quando for usar links externos em guias LK, priorizar revistas/portais internacionais de moda reconhecíveis pelo cliente brasileiro, porque dão mais percepção de desejo global.
+
+Prioridade editorial obrigatória para cards/fonte externa:
+1. **Revistas de moda internacionais mainstream e aspiracionais**: Vogue, GQ, Marie Claire, Elle, Harper's Bazaar, Glamour, Who What Wear, W Magazine, InStyle, Vanity Fair quando relevante.
+2. **Portais sneaker/streetwear globais**: Highsnobiety, Hypebeast/Hypebae, Complex, Sneaker News, Sole Retriever, WWD.
+3. **Fonte oficial da marca**: usar para evidência técnica/produto, não como principal prova de tendência.
+4. **Fontes brasileiras**: só como exceção justificada; não usar como card principal de tendência global.
+
+Critério comercial: escolher fontes que comuniquem “isso está bombando lá fora” de forma imediatamente reconhecível para o público LK.
+
+## Referência LKGOC
+
+O padrão completo de LKGOC vive em um único documento canônico:
+
+- `LKGOC-PADRAO-CANONICO.md`
+
+Não duplicar regras longas aqui. Este arquivo deve apenas complementar seu escopo específico e apontar para o canônico.

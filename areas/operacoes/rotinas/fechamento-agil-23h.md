@@ -1,6 +1,8 @@
 # Rotina — Hermes Brain Fechamento Ágil 23h
 
-Status: **ativa como cron recorrente aprovado por Lucas após Fase 1A**
+Status: **histórica/superseded** — rotina viva atual: `areas/operacoes/rotinas/fechamento-agil-01h.md`
+
+Status anterior: **ativa como cron recorrente aprovado por Lucas após Fase 1A**
 Criada em: 2026-05-20 UTC
 Área: Operações / Hermes Brain / Grande Mente
 

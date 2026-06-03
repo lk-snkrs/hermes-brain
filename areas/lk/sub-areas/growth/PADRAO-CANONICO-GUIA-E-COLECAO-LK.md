@@ -363,3 +363,54 @@ Feedback Lucas:
 - A narrativa final deve cruzar **internet + SERP + fontes editoriais + curadoria LK + intenção comercial atual**.
 - Guia LK só passa em QA se explicar: passado/DNA do modelo, por que ele importa agora, como escolher e por que a curadoria LK ajuda a comprar melhor.
 
+## Padrão visual aprovado — Guia LK dedicado Moon Shoe / Samba Jane — 2026-06-02
+
+Status: **aprovado por Lucas** após correção do guia Adidas Samba Jane no DEV.
+
+Este refinamento passa a ser obrigatório para qualquer **Guia LK dedicado** (`/pages/guia-*`) criado pelo LKGOC:
+
+- Referência visual principal: **Moon Shoe/Jacquemus** para shell editorial; Samba Jane DEV aprovado como refinamento de aplicação.
+- Hero: fundo preto/escuro (`#101010`), full-bleed, texto branco, CTAs discretos e imagem editorial integrada.
+- Imagem do hero: deve mostrar pessoa usando o tênis/modelo ou silhueta equivalente de forma clara. Não basta ser Vogue/Glamour/ELLE se o calçado estiver tapado pela calça, cortado ou invisível. Produto isolado/packshot continua proibido.
+- Fonte de imagem: priorizar Vogue, GQ, ELLE, Marie Claire, Harper's Bazaar, Glamour, Who What Wear e portais sneaker/cultura; se a melhor imagem visível vier de outra fonte editorial de styling, pode usar com justificativa e fonte registrada.
+- Régua/largura: o conteúdo abaixo do hero deve seguir a **mesma lógica de rail do hero preto**. H2, parágrafos, quotes e signals não podem voltar para coluna estreita ou centralizada pelo wrapper padrão do `main-page`.
+- FAQ: até 4 perguntas em 1 coluna no desktop; com mais de 4, usar quantidade par e equilibrada — 6 ou 8 perguntas em 2 colunas no desktop; mobile sempre 1 coluna.
+- CTA final: discreto, alinhado à régua do guia; no desktop, manter texto em uma linha quando couber e botão à direita sem quebrar o layout.
+- QA visual obrigatório: desktop e mobile no Shopify DEV preview antes de approval; readback técnico não substitui validação visual.
+
+Exemplo de regra CSS funcional aprovada para guias dedicados com hero full-bleed:
+
+```css
+@media (min-width: 990px) {
+  .lk-source-page--HANDLE { --lk-guide-rail: max(72px, calc((100vw - 1180px) / 2)); }
+  .lk-source-page--HANDLE .lk-source-page__header {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-left: var(--lk-guide-rail);
+    padding-right: var(--lk-guide-rail);
+    background: #101010;
+  }
+  .lk-source-page--HANDLE > section {
+    padding-left: var(--lk-guide-rail);
+    padding-right: var(--lk-guide-rail);
+  }
+  .lk-source-page--HANDLE > section > h2,
+  .lk-source-page--HANDLE > section > p,
+  .lk-source-page--HANDLE > section > .lk-source-quote,
+  .lk-source-page--HANDLE > section > .lk-source-signal {
+    width: min(1180px, calc(100vw - (2 * var(--lk-guide-rail))));
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+```
+
+## Referência LKGOC
+
+O padrão completo de LKGOC vive em um único documento canônico:
+
+- `LKGOC-PADRAO-CANONICO.md`
+
+Não duplicar regras longas aqui. Este arquivo deve apenas complementar seu escopo específico e apontar para o canônico.

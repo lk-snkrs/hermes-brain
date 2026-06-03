@@ -37,3 +37,11 @@ Se faltarem os dados autenticados relevantes, declarar explicitamente: **não de
 ## Guardrail de writes
 
 Por padrão, o LK Growth OS opera read-only/preview. Writes em Shopify, GMC, GA4/GSC config, Ads, Klaviyo, theme production, preço, estoque, checkout, WhatsApp/e-mail ou qualquer canal externo exigem aprovação explícita atual de Lucas, evidência e rollback.
+
+## Referência LKGOC
+
+O padrão completo de LKGOC vive em um único documento canônico:
+
+- `LKGOC-PADRAO-CANONICO.md`
+
+Não duplicar regras longas aqui. Este arquivo deve apenas complementar seu escopo específico e apontar para o canônico.

@@ -156,7 +156,7 @@ Antes de enviar para produção, validar em DEV:
 Para coleções estratégicas:
 
 - Descrição principal: **750–1.000 caracteres**.
-- Primeiro parágrafo visível: **350–450 caracteres**.
+- Primeiro parágrafo visível/bloco hero LKGOC: **500–700 caracteres**, salvo exceção registrada. A régua antiga de 350–450 caracteres só vale para microdescrição não-LKGOC e não pode aprovar LKGOC final.
 - Bloco editorial/visual: **600–800 caracteres**.
 - Guia/FAQ: variável, com foco em decisão e respostas citáveis.
 

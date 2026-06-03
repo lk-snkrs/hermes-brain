@@ -135,3 +135,10 @@ Feedback Lucas:
 - A narrativa final deve cruzar **internet + SERP + fontes editoriais + curadoria LK + intenção comercial atual**.
 - Guia LK só passa em QA se explicar: passado/DNA do modelo, por que ele importa agora, como escolher e por que a curadoria LK ajuda a comprar melhor.
 
+## Referência LKGOC
+
+O padrão completo de LKGOC vive em um único documento canônico:
+
+- `LKGOC-PADRAO-CANONICO.md`
+
+Não duplicar regras longas aqui. Este arquivo deve apenas complementar seu escopo específico e apontar para o canônico.

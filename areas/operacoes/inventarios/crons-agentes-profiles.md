@@ -1,7 +1,40 @@
 # Inventário vivo — crons, agentes, profiles e projetos
 
-Data-base: 2026-06-01 11:20 UTC
-Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento 23h recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-06-01**
+Data-base: 2026-06-02 11:21 UTC
+Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-06-02**
+
+---
+
+### Atualização 2026-06-02 11:21 UTC
+
+**Fonte:** `cronjob list` solicitado; `cronjob` não disponível no PATH deste runtime. Fallback canônico usado: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all`.
+
+**Contagem:** 29 jobs totais — 25 ativos, 4 pausados.
+
+**`last_status` não-ok:** 5 — falhas WACLI em `LK Pulso Comercial 16h read-only delivery` (`c3bb587519d2`), `LK 09h previous-day sales report external delivery` (`e3279babbc4a`), `LK 19h30 physical store close external delivery` (`a2ead305eab2`), `Zipper OS vendas 09h WhatsApp/email` (`357d40a5863e`), além do timeout persistente de `LK Weekly Collection Sort Rule B` (`787134d4ac5c`).
+
+**Erros explícitos de delivery do scheduler:** 0 na listagem. **Falhas de envio externo em stdout:** 4 por WACLI `hermes` não autenticado.
+
+**Jobs ativos sem primeira execução registrada:**
+- `a1d1e36f8075` LK Weekly Catalog Badges BEST SELLER sync — ativo, `local`, próxima execução prevista para 2026-06-05T09:30.
+
+**Jobs pausados na evidência viva:**
+- `ac0b440e2643` Mordomo Telegram gateway watchdog — pausado, último status ok em 2026-05-30T15:52.
+- `876d54c62ccd` LK Growth Telegram gateway watchdog — pausado, último status ok em 2026-05-30T15:52.
+- `663e3e6a148c` SPITI Telegram gateway watchdog — pausado, último status ok em 2026-05-30T15:52.
+- `955dc769b5a6` LK specialist Telegram gateway watchdog — pausado, `deliver=origin`, último status ok em 2026-05-30T15:52.
+
+**Drift/notable reconciliation:**
+- Contagem subiu vs 2026-06-01: 27 → 29 totais / 23 → 25 ativos / 4 pausados estável.
+- Novos jobs vivos a documentar em rodada própria: `c64a0c63b881` LK Tiny stock local DB daily fullsync e `f9a1d43caf48` Hermes memory hygiene watchdog 02h15 BRT.
+- Quatro rotinas de entrega externa aprovada falharam por WACLI não autenticado; não foi feita nenhuma reautenticação ou write externo neste reconciler.
+- `LK Weekly Collection Sort Rule B` segue como timeout persistente desde 2026-05-29; precisa frente própria para timeout/runner, não mudança automática neste reconciler.
+- Documentação que ainda descreve Mordomo/LK Growth/SPITI gateway watchdogs como ativos deve permanecer marcada como histórica até nova evidência viva mostrar reativação.
+- Fechamento Ágil aparece na evidência viva como `Hermes Brain Fechamento Ágil 01h + Brain Sync` (`0 4 * * *`) e o relatório executivo como `Relatório Hermes diário 01h + 02h + 02h15 para Lucas` (`30 5 * * *`); docs antigas devem reconciliar o nome/schedule sem inferir intenção além da evidência runtime.
+
+**Jobs deliver=origin (saídas intencionais/condicionais):** Mesa COO diária (`749ee30b51eb`), Relatório Hermes 01h+02h+02h15 (`98478b820720`), Hermes multi-profile latency watchdog (`c1ce34b4449a`), Hermes all Telegram gateways watchdog (`b78ae7ac81d0`). `LK specialist Telegram gateway watchdog` (`955dc769b5a6`) também está configurado como `origin`, mas está pausado.
+
+**Relatório completo:** `reports/governance/runtime-truth-reconciler-2026-06-02.md`
 
 ---
 
