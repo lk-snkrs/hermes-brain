@@ -23,7 +23,7 @@ import subprocess
 import sys
 from typing import Any
 
-EXPECTED_VERSION_FRAGMENT = "v0.15.1"
+EXPECTED_VERSION_FRAGMENT = "v0.15.2"
 EXPECTED_CONFIG_CWD = "/opt/data"
 EXPECTED_JOB_ID = "f5a23dd6a1bd"
 MAX_NEXT_RUN_DELAY_HOURS = 30
@@ -38,6 +38,8 @@ REQUIRED_GATEWAY_HOMES = {
     "/opt/data/profiles/mordomo",
     "/opt/data/profiles/lk-growth",
     "/opt/data/profiles/spiti",
+    # Activated 2026-06-03 after scoped Lucas approval; API/webhook disabled.
+    "/opt/data/profiles/lk-collection-optimizer",
 }
 OPTIONAL_DORMANT_GATEWAY_HOMES = {
     "/opt/data/profiles/lk-ops",

@@ -1,3 +1,13 @@
+## 2026-06-04 — Daily Loop: watchdog reconciliado ao novo especialista LKGOC
+
+**A1 auto-fix aplicado:**
+- `hermes_runtime_cron_watchdog.py` e espelho Brain atualizados para reconhecer `/opt/data/profiles/lk-collection-optimizer` como gateway requerido após ativação aprovada do agente `[LK] Otimização de Coleção`.
+- Verificação: `py_compile` OK, runtime watchdog manual voltou a silent-OK, host observability `alerts: []`.
+
+**Saúde:** runtime v0.15.2 no latest público, containers production `running`, Brain Health FAIL=0/WARN=0, Score 94/100.
+
+**Pendências mantidas:** mitigação de dashboard público Hermes, reconexão `wacli hermes`, teste inbound do bot LKGOC e resposta Zipper com preço/disponibilidade seguem approval/fonte-gated; nada externo ou produção foi executado.
+
 ## 2026-06-03 — Daily Loop: ciclo 01h validado + drift 23h→01h corrigido
 
 **A1 auto-fixes aplicados:**
