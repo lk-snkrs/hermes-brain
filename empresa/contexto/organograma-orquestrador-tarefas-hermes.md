@@ -162,7 +162,7 @@ Hermes COO / Grande Mente
 | Negócio | Área ou empresa atendida | LK, Zipper, SPITI |
 | Agente documental | Pasta com identidade, escopo e regras | `agentes/hermes-geral/` |
 | Runtime profile/bot | Processo real do Hermes com HOME próprio | `/opt/data/profiles/lk-growth` |
-| Rotina/cron | Execução recorrente documentada ou agendada | GMC Review, fechamento 23h |
+| Rotina/cron | Execução recorrente documentada ou agendada | GMC Review, Fechamento Ágil 01h + Brain Sync |
 | Tarefa | Unidade de trabalho roteável | “criar source page 530” |
 | Handoff | Registro do que especialista fez | template em `templates/handoff-especialista.md` |
 

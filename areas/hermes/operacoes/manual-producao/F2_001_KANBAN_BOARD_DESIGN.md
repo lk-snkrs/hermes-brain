@@ -1,8 +1,8 @@
 # F2-001 — Kanban board design: `hermes-lk-improvements`
 
 Gerado em: 2026-05-30T22:20:43+00:00  
-Status: **concluído em modo local/documental**  
-Escopo: desenhar o board Kanban da Fase 2 sem criar board real, sem criar cards reais, sem atribuir workers e sem acionar dispatcher produtivo.
+Status: **concluído; board real criado em modo seguro em 2026-06-03**  
+Escopo original: desenhar o board Kanban da Fase 2 sem criar board real, sem criar cards reais, sem atribuir workers e sem acionar dispatcher produtivo. Atualização 2026-06-03: Lucas aprovou “seguir”; o board real foi criado com cards iniciais **sem assignee**, mantendo bloqueio contra worker/dispatcher produtivo.
 
 ## 1. Decisão executiva
 
@@ -218,6 +218,17 @@ Todo card real deve receber comentários nestes marcos:
 Receipts técnicos ficam no Brain/arquivo local. Telegram recebe apenas resumo executivo, decisão ou exceção.
 
 ## 11. Cards iniciais prontos para eventual criação real
+
+Atualização 2026-06-03:
+
+- Board real: `hermes-lk-improvements`.
+- Receipt: `RECEIPT_FASE2_KANBAN_BOARD_LIVE_20260603.md`.
+- Setup card concluído: `t_49098f9f`.
+- Cards concluídos: `t_49098f9f`, `t_cd3dd451`, `t_2302a6a6`.
+- Cards prontos sem assignee: `t_01156a76`, `t_fe598ba5`, `t_45b92440`.
+- Nenhum worker real atribuído; nenhum dispatch produtivo executado.
+- Revalidação F2-004 atualizou a classificação: API default segue host-local; webhook default segue público; há dashboard público separado que exige revisão de autenticação/exposição antes de cockpit operacional. Receipt: `RECEIPT_F2_004_EXPOSURE_REVALIDATION_20260603.md`.
+- Revisão específica do dashboard público (`t_2302a6a6`) encontrou token de sessão injetado em HTML público, OpenAPI/docs públicos e endpoints sensíveis acessíveis com o token da própria página. Receipt: `RECEIPT_F2_DASHBOARD_PUBLIC_AUTH_REVIEW_20260603.md`. Cockpit/plugin operacional segue bloqueado até mitigação/isolamento.
 
 ### F2-KB-001 — Specify `hermes-lk-improvements` board
 

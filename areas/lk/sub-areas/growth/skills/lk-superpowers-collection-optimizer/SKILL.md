@@ -432,3 +432,33 @@ O padrão completo de LKGOC vive em um único documento canônico:
 - `LKGOC-PADRAO-CANONICO.md`
 
 Não duplicar regras longas aqui. Este arquivo deve apenas complementar seu escopo específico e apontar para o canônico.
+
+
+## Gate hard — DEV-first e merge para Production
+
+Esta regra é obrigatória para o agente LK Otimização de Coleção / LKGOC.
+
+### Sequência única permitida
+
+1. **DEV primeiro:** toda alteração LKGOC de Shopify theme, section, snippet, CSS, schema renderizado, collection layout, guia visual ou página visual deve ser publicada primeiro em tema DEV real.
+2. **Verificação por API:** antes do write, registrar `theme_id`, `name` e `role`. Nome do tema não é evidência. O tema alvo precisa estar com `role: unpublished`.
+3. **Abortar se production:** se o tema tiver `role: main`, abortar imediatamente. Não corrigir “rapidinho” em production.
+4. **QA no DEV:** readback API + storefront preview com cookie/`preview_theme_id` + desktop/mobile + ausência de `Liquid error` + ausência de placeholder/comentário técnico + FAQ/schema correto + padrão visual 204L/Moon Shoe.
+5. **Approval do Lucas:** enviar apenas link DEV, scorecard, riscos e rollback. Sem approval explícito atual, parar no DEV.
+6. **Merge/promoção:** production recebe somente o diff aprovado do DEV, preservando linhagem **DEV → Production**. Não fazer patch solto independente em production.
+7. **Exceção:** hotfix direto em production só se Lucas disser explicitamente “hotfix direto em production”, com escopo e rollback.
+
+### Bloqueadores antes de mandar link para Lucas
+
+Não enviar link de approval se houver:
+
+- placeholder editorial ou texto “pendente/substituir”;
+- `Liquid error`;
+- comentário técnico visível;
+- FAQ/schema duplicado ou desatualizado;
+- guia dedicado fora do shell Moon Shoe/Jacquemus;
+- coleção fora do contrato 204L/LKGOC;
+- QA apenas técnico sem visual desktop/mobile;
+- preview não validado no tema DEV/unpublished.
+
+Essa seção complementa `LKGOC-PADRAO-CANONICO.md` e `rules/shopify-theme-dev-to-production-promotion-rule-20260531.md`. Se houver divergência, vence a regra mais restritiva.

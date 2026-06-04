@@ -47,6 +47,27 @@ Regra operacional:
 
 Frase-gatilho equivalente: “otimizar coleção com LKGOC” = **refactor/rewrite completo LKGOC**, não polish.
 
+
+## 0.4 Gate DEV-first / merge para production — regra obrigatória Lucas
+
+Toda alteração LKGOC que envolva Shopify theme, collection layout, guia visual, snippet, section, CSS, schema renderizado ou página visual deve seguir obrigatoriamente a sequência:
+
+1. **Descoberta e verificação do tema alvo:** antes de qualquer write, listar/ler o tema Shopify por API e registrar `theme_id`, `name` e principalmente `role`.
+2. **DEV real obrigatório:** publicar/aplicar primeiro em tema **DEV/unpublished**. Nome do tema não basta. Se o `role` for `main`, abortar imediatamente.
+3. **QA no DEV:** executar readback API, storefront preview com cookie/`preview_theme_id`, QA desktop e mobile, screenshot/render quando disponível, validação de Liquid errors, placeholders, FAQ/schema, links, CTA e scorecard LKGOC.
+4. **Approval de Lucas:** entregar link DEV e pacote de aprovação. Sem aprovação explícita no turno atual, parar no DEV.
+5. **Merge/promoção para production:** production só recebe o diff aprovado do DEV, preservando linhagem **DEV → Production**. Não fazer patch independente em production.
+6. **Receipt e rollback:** registrar before/after, diff/sha, readback, storefront público, rollback e revisão de impacto.
+
+Bloqueadores automáticos:
+
+- Tema com nome “dev”, “preview” ou similar mas `role: main` = **produção**; abortar write.
+- Link enviado para Lucas sem QA visual mínimo no DEV = falha de governança.
+- Placeholder editorial, comentário técnico, bloco “pendente”, `Liquid error`, FAQ/schema duplicado ou guia fora do padrão 204L/Moon Shoe = não pode ir para approval.
+- Production write direto só é permitido se Lucas disser explicitamente “hotfix direto em production”, nomeando a exceção e o escopo.
+
+Esta regra complementa e reforça `rules/shopify-theme-dev-to-production-promotion-rule-20260531.md`; se houver divergência, a regra mais restritiva vence.
+
 ## 0. Gates executivos obrigatórios — não negociar
 
 Se o agente LK Growth não cumprir qualquer item abaixo, a entrega deve ser tratada como **drift LKGOC** e não pode ser apresentada como coleção otimizada:
@@ -60,6 +81,7 @@ Se o agente LK Growth não cumprir qualquer item abaixo, a entrega deve ser trat
 7. **Stack de dados SEO obrigatório quando disponível:** usar Google Search Console como fonte de verdade para demanda real da LK (queries, impressões, CTR, posição e páginas similares); usar DataForSEO para SERP/keyword/volume/intenção/concorrentes/People Also Ask/AI visibility; usar Ahrefs como camada complementar para concorrência, backlinks, autoridade e gap de conteúdo. Se algum conector não estiver disponível, declarar a limitação no approval packet e não inventar dado.
 8. **Claude SEO obrigatório para texto:** depois da pesquisa factual, rodar camada Claude SEO/GEO usando as skills instaladas da família Claude SEO (`seo-content`, `seo-ecommerce`, `seo-page`, `seo-geo` e `seo-dataforseo` quando houver SERP/dados), mapeadas do upstream `AgriciDaniel/claude-seo`, para refinar entidade, E-E-A-T, SEO de coleção/ecommerce, AI readability/GEO, title/meta, FAQ e evitar copy genérica.
 9. **Texto hero robusto:** primeiro bloco/parágrafo principal deve ter **500–700 caracteres**, salvo exceção registrada; regras antigas de 350–450 caracteres estão obsoletas para LKGOC.
+   - Métrica operacional: contar o **texto editorial principal do hero/bloco de abertura que alimenta o read-more**, não snippets de botão, breadcrumbs, FAQ ou schema. Se o gold source 204L ou uma coleção aprovada tiver texto expandido acima da faixa por decisão visual/comercial, registrar como exceção no scorecard/approval. Textos abaixo de 500 chars em LKGOC Full reprovam salvo exceção explícita.
 10. **FAQ único:** apenas um FAQ visível/canônico por experiência LKGOC, dentro do Guia LK/bloco guia; schema `FAQPage` deve refletir somente esse FAQ.
 11. **CTA do guia:** card/faixa “Para aprofundar...” em fundo claro igual aos cards internos do Guia LK; botão `ABRIR GUIA COMPLETO` em fundo escuro com texto branco, também no mobile.
 12. **Preview Shopify DEV obrigatório:** draft local/Brain não é output final para Lucas validar. Todo draft visual deve ir para Shopify DEV/preview e a resposta deve trazer link direto com `preview_theme_id` quando aplicável.
@@ -236,3 +258,88 @@ Uma entrega LKGOC só fecha quando houver:
 ## 11. Ponteiros permitidos
 
 Outros documentos do Brain podem conter apenas um resumo curto e link para este arquivo. Não duplicar este padrão completo fora daqui.
+
+## Regra operacional — LKGOC como contexto obrigatório para tema Shopify
+
+Registrado em: 20260603T152400Z
+
+Sempre que Lucas falar sobre **LKGOC** e/ou sobre **tema Shopify** dentro deste profile, o agente deve tratar o assunto como execução pelo **LKGOC / LK Growth Optimized Collections**, não como edição genérica de tema.
+
+Implicações obrigatórias:
+- carregar e aplicar o padrão canônico do LKGOC antes de diagnosticar ou propor mudança;
+- usar o fluxo DEV-first: tema Shopify com `role: unpublished` verificado por API;
+- nunca tratar tema production como área de teste;
+- qualquer preview, QA, approval packet, rollback ou merge deve ser descrito e executado no vocabulário/processo LKGOC;
+- se a conversa envolver coleção, guia, collection template, metafields, FAQ/schema, blocos editoriais ou Liquid de coleção, assumir LKGOC por padrão;
+- se houver ambiguidade, perguntar apenas o mínimo necessário, mas manter o LKGOC como default operacional.
+
+## Regra operacional — LKGOC não inventa tema novo
+
+Registrado em: 20260603T152525Z
+
+O LKGOC **não deve inventar um tema, layout ou padrão visual novo**. Toda execução deve **copiar e adaptar o padrão definido/aprovado** para otimização de collections da LK.
+
+Implicações obrigatórias:
+- usar o padrão canônico LKGOC como fonte de verdade;
+- replicar estrutura, hierarquia, blocos, densidade editorial, tom premium e comportamento visual já definidos;
+- adaptar apenas conteúdo, links, produtos, FAQ e nuances comerciais da coleção alvo;
+- não criar novo design system, nova arquitetura de seção, novo bloco visual ou novo comportamento sem aprovação explícita de Lucas;
+- se faltar referência do padrão aprovado, parar e localizar a referência antes de propor execução;
+- qualquer variação deve ser marcada como exceção e ir para approval antes de implementação.
+
+## Regra operacional — namespace CSS LKGOC
+
+Registrado em: 20260603T153717Z
+
+O namespace preferencial novo para o LK Growth Optimized Collections é `lk-goc-*`.
+
+Implicações:
+- novas classes estruturais do LKGOC devem usar `lk-goc-*`;
+- durante transição, manter compatibilidade quando necessário com aliases antigos `lk-lkgoc-*` e `lk-204l-*`;
+- 204L continua sendo padrão-base/gold source visual, mas não deve obrigar novos blocos a dependerem somente de `lk-204l-*`;
+- em tema Shopify, qualquer mudança segue DEV/unpublished → QA → approval Lucas → merge para Production.
+
+## Standard v1 — `lk-goc-*`
+
+Registrado em: 20260603T162846Z
+
+O padrão canônico reutilizável do LKGOC está documentado em:
+
+- `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/LKGOC-STANDARD-V1-LK-GOC.md`
+
+A coleção New Balance 204L e o guia New Balance 204L são a gold source inicial.
+
+Mudanças futuras aprovadas em uma implementação LKGOC devem ser avaliadas como evolução do Standard LK-GOC, para propagação controlada em outros temas/collections otimizados.
+
+## Regra operacional — LK-GOC sem legado `lk-204l-*`
+
+Registrado em: 20260603T163131Z
+
+Para o padrão novo LKGOC, usar apenas `lk-goc-*` nas áreas/componentes migrados.
+
+- `lk-204l-*` não é mais alias padrão.
+- `lk-lkgoc-*` permanece obsoleto/transitório.
+- 204L continua sendo gold source visual/editorial, mas não como namespace CSS.
+- Migração deve ocorrer em DEV/unpublished, com readback, preview QA e aprovação antes de Production.
+
+## Regra operacional — tema alvo oficial LKGOC
+
+Registrado em: 20260603T164243Z
+
+Tema correto/alvo informado por Lucas: `155065450718` (`lk-new-theme/dev`).
+
+- Tratar este tema como fonte correta do LKGOC.
+- Esquecer/desconsiderar outros temas como alvo oficial, salvo nova instrução explícita.
+- Como o role verificado é `main`, não escrever direto sem aprovação explícita de produção.
+- Para execução segura, criar/usar cópia `unpublished` derivada deste tema antes de aplicar mudanças.
+
+## Regra operacional — destino DEV obrigatório
+
+Registrado em: 20260603T170929Z
+
+Lucas reforçou que o LKGOC deve **sempre alterar o tema DEV**.
+
+- Não usar tema sandbox/alternativo como destino oficial sem instrução explícita.
+- Se o tema indicado como DEV aparecer com `role: main` na Shopify API, registrar conflito e pedir/obter confirmação explícita antes de qualquer write.
+- O objetivo operacional permanece: DEV correto → QA → approval → Production.
+

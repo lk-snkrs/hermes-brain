@@ -1,195 +1,43 @@
 {
-  "operational_date": "2026-06-02",
-  "generated_at_utc": "2026-06-03T04:03:17Z",
+  "operational_date": "2026-06-03",
+  "generated_at_utc": "2026-06-04T04:01:44Z",
   "status": "attention",
-  "executive_summary": "Brain Health 0/0 and Brain Improvement Score 94/100. First 01h handoff JSON package written for the 02h supervisor. Main operational attention remains WACLI hermes not authenticated, which breaks approved LK/Zipper WhatsApp deliveries; no external sends or production writes were performed by the closing job.",
+  "executive_summary": "Fechamento com Brain saudável (FAIL=0/WARN=0, score 94/100), forte execução LK/LKGOC e criação do agente [LK] Otimização de Coleção. Atenção principal: dashboard público Hermes expõe superfície operacional sensível; WACLI hermes segue não autenticado para entregas WhatsApp LK/Zipper; Zipper tem lead comercial bloqueado por falta de fonte verificada.",
   "material_changes": [
-    {
-      "domain": "Hermes Geral / Grande Mente",
-      "change": "01h closing package now includes Markdown plus dated handoff JSON and latest-handoff.json for the 02h Daily Intelligence Loop.",
-      "artifact": "reports/daily-consolidation/2026-06-02.md"
-    },
-    {
-      "domain": "Hermes governance",
-      "change": "Superpowers Operating System PRD, plan, receipts, observe-only integration and local digest were documented on 2026-06-02.",
-      "artifact": "reports/governance/superpowers-os-*.md"
-    },
-    {
-      "domain": "Hermes/Bruno audit",
-      "change": "Reaudit concluded Hermes is mature but still has P0/P1 gaps: live docs 23h-to-01h drift, first full 01h cycle validation, skills control plane, WACLI channel health, Kanban/cockpit pilots.",
-      "artifact": "reports/governance/hermes-ecosystem-vs-bruno-aula-a-aula-reaudit-2026-06-02.md"
-    }
+    {"domain":"Hermes Geral / Grande Mente","change":"Ciclo vivo 01h -> 02h -> 02h15 validado; drift 23h->01h corrigido em artefatos documentais; Brain health FAIL=0/WARN=0 e Brain Improvement Score 94/100.","evidence":["reports/hermes-learning-ledger/2026-06-03.md","reports/hermes-continuous-improvement/2026-06-03.md","reports/brain-health-check-2026-06-03-02h.json","reports/brain-improvement-score-2026-06-03-02h.md"]},
+    {"domain":"LK OS / LK Growth","change":"Rule B corrigida para dry-run/dispatch por padrão; APPLY real aprovado e validado em 140 coleções, 4982 movimentos, 140/140 admin/public ok.","evidence":["reports/governance/ruleb-memory-compaction-receipt-2026-06-03.json","areas/lk/reports/auto-sort-collections/all-manual-ruleB-net-sales-ga4-20260603T122044Z/RECEIPT.md"]},
+    {"domain":"LK Growth / Especialistas","change":"Agente [LK] Otimização de Coleção documentado e ativado em profile dedicado, com API/webhook desligados e handoff no Brain.","evidence":["areas/lk/sub-areas/growth/prds/lk-otimizacao-colecao-agent-prd-2026-06-03.md","areas/lk/sub-areas/growth/collection-optimizer/receipts/activation-20260603T135840Z.md","empresa/contexto/organograma-agentes-hermes.md"]},
+    {"domain":"Hermes runtime / Mission Control adjacent","change":"Dashboard público Hermes classificado como risco alto para cockpit/plugin operacional até mitigação de auth/restrição.","evidence":["areas/hermes/operacoes/manual-producao/RECEIPT_F2_DASHBOARD_PUBLIC_AUTH_REVIEW_20260603.md"]},
+    {"domain":"Zipper OS","change":"Intake Zipper criou item needs-attention para lead pedindo preço/disponibilidade/medidas de obras; resposta externa bloqueada até fonte verificada.","evidence":["areas/zipper/inbox/email-intake/2026-06-04-hubspot-ze-luiz-nogueira-needs-attention.md"]}
   ],
   "incidents": [
-    {
-      "domain": "LK OS / Zipper OS",
-      "severity": "P0 operational",
-      "summary": "Approved WhatsApp deliveries fail because wacli account hermes is not authenticated.",
-      "affected_jobs": [
-        "LK 09h previous-day sales report external delivery",
-        "LK Pulso Comercial 16h read-only delivery",
-        "LK 19h30 physical store close external delivery",
-        "Zipper OS vendas 09h WhatsApp/email"
-      ],
-      "next_action": "Prepare a scoped WACLI reconnection/readiness packet with Lucas present; do not initiate pairing from cron."
-    },
-    {
-      "domain": "LK OS",
-      "severity": "P1",
-      "summary": "LK Weekly Collection Sort Rule B keeps a persistent timeout from 2026-05-29.",
-      "next_action": "Create a focused fix before the Friday schedule; reduce timeout or split into fast dispatcher plus processing."
-    }
+    {"category":"security_guardrail","domain":"Hermes dashboard público","summary":"Dashboard público expõe docs/OpenAPI e endpoints operacionais com token de página; não usar como cockpit operacional antes de mitigação.","severity":"attention_high","external_action_taken":false,"requires_lucas_decision":true},
+    {"category":"delivery_failure","domain":"LK/Zipper WhatsApp reports","summary":"LK 09h, LK 16h, LK 19h30 e Zipper 09h falham na entrega WhatsApp por wacli hermes não autenticado; geração local continua.","severity":"attention","external_action_taken":false,"requires_lucas_decision":true},
+    {"category":"commercial_blocker","domain":"Zipper OS","summary":"Lead Zé Luiz Nogueira solicita disponibilidade, medidas e preço de obras; bloqueado até consulta de acervo/fonte verificada.","severity":"attention","external_action_taken":false,"requires_lucas_decision":false}
   ],
   "decisions_made_by_lucas": [
-    {
-      "decision": "The 01h close must produce a complete handoff package for the 02h Daily Intelligence Loop, including dated and latest JSON artifacts.",
-      "scope": "Brain/local/documental reports only; sanitized JSON; no raw transcripts or secrets.",
-      "exclusions": "No Docker, VPS, gateway, external systems, secrets, WhatsApp/email/customer sends or production writes."
-    },
-    {
-      "decision": "Brain Health Check and Brain Improvement Score item 2 are part of the existing daily close gate, not a separate cron.",
-      "scope": "Local/read-only health and score scripts plus reports inside the Brain repository.",
-      "exclusions": "No new cron and no production/runtime/external mutation."
-    }
+    {"decision":"Hermes deve compactar boot memory segura sozinho antes de alertar quando saturação estiver próxima.","scope":"Memórias locais/boot, A0/A1, com backup/receipt; não inclui provider externo, Docker/VPS/gateway ou produção.","evidence":["session_search: Compactação de memória Hermes","reports/governance/ruleb-memory-compaction-receipt-2026-06-03.json"]},
+    {"decision":"APPLY real da Rule B aprovado no escopo específico executado em 2026-06-03.","scope":"Execução escopada do sort de coleções validado; não autoriza automaticamente APPLY recorrente futuro.","evidence":["areas/lk/reports/auto-sort-collections/all-manual-ruleB-net-sales-ga4-20260603T122044Z/RECEIPT.md"]},
+    {"decision":"Criar e ativar o agente [LK] Otimização de Coleção com bot/profile dedicado.","scope":"Especialista LKGOC; API/webhook off; Shopify writes continuam approval-gated.","evidence":["areas/lk/sub-areas/growth/collection-optimizer/receipts/activation-20260603T135840Z.md"]},
+    {"decision":"Revisar dashboard público antes de avançar cockpit/plugin operacional.","scope":"Read-only/auditoria; mitigação infra/auth requer nova aprovação.","evidence":["areas/hermes/operacoes/manual-producao/RECEIPT_F2_DASHBOARD_PUBLIC_AUTH_REVIEW_20260603.md"]}
   ],
   "approvals_and_corrections": [
-    {
-      "type": "approval",
-      "pattern": "Generate 01h handoff JSON artifacts every run.",
-      "exact_scope": "Write reports/daily-consolidation/YYYY-MM-DD-handoff.json and reports/daily-consolidation/latest-handoff.json after the Markdown daily consolidation.",
-      "exclusions": "Do not include raw chat transcripts, secrets, unverified live data, HTML dumps or customer-sensitive payloads."
-    },
-    {
-      "type": "correction/learning",
-      "pattern": "Generated reports are not delivered reports.",
-      "exact_scope": "Delivery routines must separate generated, email sent, WhatsApp sent and failure states.",
-      "exclusions": "Do not mark WhatsApp delivery as successful when wacli fails."
-    },
-    {
-      "type": "guardrail",
-      "pattern": "Cron with deliver=origin should not have prompt/delivery changed automatically.",
-      "exact_scope": "Document the recommended Superpowers/02h15 section for the 02h30 report, but wait for scoped approval before editing the origin-delivered job.",
-      "exclusions": "No Telegram prompt/delivery mutation in this job."
-    }
+    {"type":"correction","pattern":"Se Hermes consegue corrigir boot memory local com segurança, deve fazê-lo sozinho em vez de só alertar Lucas.","exact_scope":"A0/A1 local/documental/reversível com backup e secret scan.","exclusions":["provider externo","Docker/VPS/gateway","secrets","produção","WhatsApp/email/envio externo"]},
+    {"type":"approval","pattern":"APPLY real da Rule B foi aprovado uma vez, mas recorrência automática precisa decisão separada.","exact_scope":"Execução de 2026-06-03 com receipt e readback.","exclusions":["APPLY recorrente sem nova decisão","preço/estoque/Tiny/GMC","campanhas","envios externos"]},
+    {"type":"correction_guardrail","pattern":"Dashboard público com superfície operacional sensível deve bloquear avanço de cockpit/plugin até mitigar auth/exposição.","exact_scope":"Read-only classification and documentation.","exclusions":["Traefik/Cloudflare/Docker/auth changes without explicit approval"]}
   ],
   "learning_ledger_candidates": [
-    {
-      "learning": "01h handoff JSON is mandatory input for the 02h supervisor.",
-      "recommended_destination": "areas/operacoes/rotinas/fechamento-agil-01h.md and nightly governance artifact checker.",
-      "action_applied_or_blocked": "Applied by writing dated and latest handoff JSON in this run.",
-      "verification_needed": "02h and 02h30 should confirm consumption/reporting without wrapper noise."
-    },
-    {
-      "learning": "WACLI reconnection is an operational pairing flow requiring Lucas present.",
-      "recommended_destination": "WACLI/channel health approval packet and report-delivery routines.",
-      "action_applied_or_blocked": "Blocked for cron; only status/cron evidence captured.",
-      "verification_needed": "After pairing, run auth status and dry-run/readiness only."
-    },
-    {
-      "learning": "Superpowers OS observe-only score is calibration, not an automatic blocker.",
-      "recommended_destination": "Superpowers OS PRD/receipts and future digest routine.",
-      "action_applied_or_blocked": "Documented; no enforcement or runtime restart applied.",
-      "verification_needed": "Calibrate baseline before warn/soft-block."
-    },
-    {
-      "learning": "Docs with live pointers must say 01h, while 23h material remains historical evidence.",
-      "recommended_destination": "Brain documentation hygiene backlog and active routines/MAPAs.",
-      "action_applied_or_blocked": "Pending A1 documentation patch; not mixed into closing write.",
-      "verification_needed": "Focused search, patch, health check, secret scan."
-    }
+    {"learning":"Dashboard público não pode ser base de cockpit/plugin operacional sem auth/restrição forte.","destination_recommended":["reports/hermes-learning-ledger/2026-06-04.md","lucas-runtime-operations skill/reference","areas/hermes/operacoes/manual-producao"],"action_applied":"Receipt e classificação F2 atualizados; nenhuma infra alterada.","verification_needed":"Approval packet + mitigação + probes públicos retornando 401/403."},
+    {"learning":"Relatório gerado deve separar geração local, entrega e falha de canal.","destination_recommended":["Learning Ledger","rotinas LK/Zipper de relatório"],"action_applied":"Fechamento registrou falhas WACLI separadas da geração.","verification_needed":"Após reconexão WACLI, dry-run/readiness e próximo run."},
+    {"learning":"Crons com write potencial devem ser dry-run/dispatcher por padrão e exigir APPLY explícito.","destination_recommended":["skill/rotina LK Shopify/Growth","brain-sync/automation guardrail"],"action_applied":"Wrapper Rule B corrigido e validado; APPLY real receiptado.","verification_needed":"Decidir política recorrente antes da próxima janela semanal."},
+    {"learning":"Agente especialista novo deve nascer com Brain package, handoff route e API/webhook off quando não precisa API.","destination_recommended":["rotina de criação de agentes especialistas","multiempresa-routing-lucas reference"],"action_applied":"Pacote documental, profile, organograma, matriz e receipt criados.","verification_needed":"Teste inbound no bot e primeiro handoff LKGOC real."},
+    {"learning":"Zipper lead comercial com preço/disponibilidade/medidas é needs-attention, não resposta automática.","destination_recommended":["Zipper inbox/intake routine","Mordomo/Zipper guardrails"],"action_applied":"Arquivo needs-attention criado; sem envio externo.","verification_needed":"Consulta de acervo/preço/medidas por responsável humano."}
   ],
-  "autonomy_pattern_candidates": [
-    {
-      "candidate": "Write sanitized daily handoff Markdown/JSON and run local health/score checks.",
-      "proposed_autonomy": "A0/A1 recurring local/documental",
-      "reason": "Already approved and reversible; no external or production mutation."
-    },
-    {
-      "candidate": "Patch active Brain docs for 23h-to-01h wording drift.",
-      "proposed_autonomy": "A1 documentation",
-      "reason": "Safe local documentation correction when verified with health and secret scan."
-    },
-    {
-      "candidate": "WACLI pairing/reconnection for hermes account.",
-      "proposed_autonomy": "Keep A3/A4 approval/presence-gated",
-      "reason": "Requires Lucas/WhatsApp pairing and affects external delivery channel."
-    },
-    {
-      "candidate": "Change Telegram/origin cron prompt or delivery.",
-      "proposed_autonomy": "Keep approval-gated",
-      "reason": "User-facing Telegram behavior and noise require scoped approval."
-    }
-  ],
-  "pending_decisions_for_lucas": [
-    {
-      "decision": "Whether to reauthenticate wacli account hermes now to restore approved LK/Zipper deliveries.",
-      "recommended_option": "Do a short guided pairing/reconnection session with dry-run/readiness and no extra sends."
-    },
-    {
-      "decision": "Whether to add the Superpowers OS and 02h15 memory section to the 02h30 Telegram report prompt.",
-      "recommended_option": "Approve a scoped prompt edit only after the first full 01h/02h/02h15/02h30 cycle is observed."
-    }
-  ],
-  "safe_next_actions": [
-    "Validate JSON handoff contract and let 02h consume latest-handoff.json.",
-    "Patch active docs that still present 23h as live when they should point to 01h.",
-    "Prepare WACLI reconnection approval packet, without initiating pairing in cron.",
-    "Create skills control plane inventory for critical skills.",
-    "Open focused fix for LK Weekly Collection Sort Rule B timeout."
-  ],
-  "blocked_actions_requiring_approval": [
-    "WACLI/WhatsApp pairing or reconnection for account hermes.",
-    "Any WhatsApp/email/customer/supplier/campaign send.",
-    "Changing Telegram/origin cron prompt, delivery, schedule or destination.",
-    "Docker, VPS, gateway, Traefik, volume, network or production runtime mutation.",
-    "Shopify, Tiny, GMC, Klaviyo, Meta, Supabase/database writes or external channel changes."
-  ],
-  "cron_and_delivery_truth": [
-    {
-      "fact": "cronjob command was unavailable in PATH; canonical Hermes CLI fallback succeeded.",
-      "evidence": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all"
-    },
-    {
-      "fact": "29 jobs observed: 25 active, 4 paused.",
-      "delivery_truth": "Generated vs delivered must be separated for external reports."
-    },
-    {
-      "fact": "01h close, 02h intelligence, 02h15 memory hygiene and 02h30 report are active in the registry.",
-      "delivery_truth": "01h/02h/02h15 are local/silent by default; 02h30 delivers origin."
-    },
-    {
-      "fact": "LK/Zipper delivery jobs failed at WhatsApp send stage due to wacli hermes not authenticated.",
-      "delivery_truth": "Local reports may exist, but WhatsApp delivery is not verified."
-    },
-    {
-      "fact": "Brain Health 2026-06-03 02h is FAIL=0/WARN=0 and Brain Improvement Score is 94/100.",
-      "delivery_truth": "Healthy governance; ecosystem incidents still exist outside structural health."
-    }
-  ],
-  "sources": [
-    "areas/operacoes/inventarios/crons-agentes-profiles.md",
-    "areas/operacoes/brds/hermes-brain-fechamento-agil-23h-brd-2026-05-19.md",
-    "empresa/contexto/organograma-agentes-hermes.md",
-    "areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md",
-    "areas/operacoes/rotinas/fechamento-agil-01h.md",
-    "areas/operacoes/rotinas/brain-sync.md",
-    "reports/hermes-daily-digest/2026-06-02.md",
-    "reports/hermes-learning-ledger/2026-06-02.md",
-    "reports/hermes-continuous-improvement/2026-06-02.md",
-    "reports/governance/runtime-truth-reconciler-2026-06-02.md",
-    "reports/governance/hermes-ecosystem-vs-bruno-aula-a-aula-reaudit-2026-06-02.md",
-    "reports/governance/superpowers-os-*.md",
-    "reports/brain-health-check-2026-06-03-02h.json",
-    "reports/brain-improvement-score-2026-06-03-02h.md",
-    "session_search recent context",
-    "live cron registry fallback"
-  ],
-  "sanitization": {
-    "secrets_redacted": true,
-    "raw_chat_transcripts_excluded": true,
-    "live_facts_verified": true,
-    "contains_customer_pii": false,
-    "contains_raw_html": false,
-    "targeted_secret_scan_required": true
-  }
+  "autonomy_pattern_candidates": {"may_be_A0_A1_when_safe":["compactação de boot memory com backup/receipt","secret scan e health check","criação de receipt/handoff","criação de PRD/approval packet","read-only probes sanitizados"],"must_remain_A3_A4":["Traefik/Cloudflare/Docker/auth/dashboard mitigation","WACLI pairing ou envio WhatsApp/email","Shopify/Tiny/GMC/Klaviyo/Ads writes","preço/disponibilidade/cliente","produção/runtime/restart","secrets"]},
+  "pending_decisions_for_lucas": ["Aprovar pacote de mitigação do dashboard público Hermes, com backup/rollback e verificação.","Estar presente para reconectar WACLI hermes se quiser restaurar entregas WhatsApp LK/Zipper.","Enviar mensagem de teste para @lk_otimizacaodecolecao_bot.","Decidir se Rule B semanal fica dry-run ou APPLY recorrente com kill switch/readback."],
+  "safe_next_actions": ["Preparar approval packet para mitigação do dashboard público.","Preparar checklist de reconexão WACLI com dry-run/readiness, sem envio extra.","Acompanhar próximo run de Rule B e Catalog Badges em 2026-06-05.","Consolidar learning ledger de 2026-06-04 com candidatos deste handoff.","Verificar fonte de acervo Zipper antes de qualquer resposta ao lead."],
+  "blocked_actions_requiring_approval": ["Alterar Traefik/Cloudflare/Docker/dashboard auth ou reiniciar runtime.","Pairing WACLI ou qualquer WhatsApp/email externo.","Shopify/Tiny/GMC/Klaviyo/Meta writes.","Responder lead Zipper com preço/disponibilidade/medidas sem fonte verificada.","Ativar APPLY recorrente automático da Rule B sem decisão escopada."],
+  "cron_and_delivery_truth": {"source":"HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all","total_jobs":29,"active_jobs":25,"paused_jobs":4,"health":"governance jobs mostly healthy; WACLI delivery failures remain actionable; Rule B now ok after correction","generated_vs_delivered":"LK/Zipper reports can be generated locally while WhatsApp delivery fails; do not claim external delivery when WACLI fails.","silent_ok":["Fechamento 01h","Daily Intelligence 02h","Memory Hygiene 02h15","runtime watchdogs local"],"actionable_stdout":["LK/Zipper WACLI delivery failures","dashboard public exposure risk documented separately"]},
+  "sources": ["reports/daily-consolidation/2026-06-03.md","reports/hermes-daily-digest/2026-06-03.md","reports/hermes-learning-ledger/2026-06-03.md","reports/hermes-continuous-improvement/2026-06-03.md","reports/governance/runtime-truth-reconciler-2026-06-03.md","reports/governance/nightly-governance-artifacts-2026-06-03.json","reports/brain-health-check-2026-06-03-02h.json","reports/brain-improvement-score-2026-06-03-02h.md","reports/governance/ruleb-memory-compaction-receipt-2026-06-03.json","areas/lk/reports/auto-sort-collections/all-manual-ruleB-net-sales-ga4-20260603T122044Z/RECEIPT.md","areas/lk/sub-areas/growth/collection-optimizer/receipts/activation-20260603T135840Z.md","areas/hermes/operacoes/manual-producao/RECEIPT_F2_DASHBOARD_PUBLIC_AUTH_REVIEW_20260603.md","areas/zipper/inbox/email-intake/2026-06-04-hubspot-ze-luiz-nogueira-needs-attention.md","session_search recent operational context"],
+  "sanitization": {"secrets_redacted":true,"raw_chat_transcripts_excluded":true,"live_facts_verified":true,"secret_scan_required":true,"contains_raw_html":false,"contains_connection_strings":false}
 }

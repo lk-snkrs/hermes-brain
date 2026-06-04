@@ -159,13 +159,60 @@ Motivo:
 5. **Antes de plugin de status**: pode ler esses estados localmente, mas não deve expor API key, webhook secret ou subscription route.
 6. **Antes de Kanban real**: lembrar que default tem `kanban.dispatch_in_gateway=true`; assignment a worker pode executar.
 
-## 6. Status do card F2-004
+## 6. Revalidação 2026-06-03 — Fase 2 Kanban
 
-F2-004 está concluído como classificação read-only.
+Receipt: `RECEIPT_F2_004_EXPOSURE_REVALIDATION_20260603.md`  
+Board/card: `hermes-lk-improvements` / `t_cd3dd451`  
+Modo: read-only, sem alteração de runtime/Docker/Traefik/config/secrets/gateway.
 
-Resultado final:
+Atualização material desde a classificação inicial:
+
+- **API default (`8642`)** segue classificada como **host-local por Docker publish**: o processo escuta `0.0.0.0:8642` dentro do container, mas o publish observado continua `127.0.0.1:8642` no host; `/v1/models` com chave inválida retorna `401 invalid_api_key`.
+- **Webhook default (`8644`)** segue classificado como **público via Traefik/Cloudflare**: hostnames públicos `/health` retornam `200 platform=webhook`; há 2 subscriptions LK Shopify `orders/paid`/`orders/cancelled`, `Deliver: log`, descritas como sem writes Shopify/Tiny.
+- **Dashboard/cockpit** foi reclassificado: há um **dashboard público separado** em `hermes-agent-5ajw.srv1331756.hstgr.cloud`, servido por container/serviço `4860`, exposto por Traefik. `GET /` retorna HTML `Hermes Agent - Dashboard`; `GET /health` e `GET /v1/models` nesse hostname caem no SPA, sem evidência de roteamento para a API default. O HTML inclui token de sessão de frontend; o valor não foi preservado.
+- **Especialistas vivos** observados continuam com `API_SERVER_ENABLED=false` e `WEBHOOK_ENABLED=false` no env live: Mordomo, LK Growth, SPITI, LK Ops, LK Shopify, LK Trends e LK Collection Optimizer.
+
+Decisão operacional atualizada:
+
+1. API default pode ser usada apenas em modo local/read-only/túnel controlado; não tratar como API pública.
+2. Webhook default é superfície pública ativa; nenhuma nova rota/evento sem approval packet com HMAC, filtro, idempotência, owner, rollback e logs redigidos.
+3. Dashboard público exige revisão específica de autenticação/exposição antes de qualquer cockpit operacional ou plugin de status.
+4. Cards Kanban de Fase 2 continuam `unassigned` até approval packet do primeiro piloto read-only.
+
+## 7. Revisão específica do dashboard público — 2026-06-03
+
+Receipt: `RECEIPT_F2_DASHBOARD_PUBLIC_AUTH_REVIEW_20260603.md`  
+Board/card: `hermes-lk-improvements` / `t_2302a6a6`  
+Modo: read-only, sem POST/PUT/PATCH/DELETE e sem alteração de runtime/Docker/Traefik/config/secrets/gateway.
+
+Achado material:
+
+- `GET /`, `GET /docs`, `GET /redoc` e `GET /openapi.json` estão públicos no hostname do dashboard.
+- O HTML público injeta `window.__HERMES_SESSION_TOKEN__`; o valor não foi preservado.
+- Sem token, alguns endpoints sensíveis retornam `401`, mas `GET /api/status` é público e expõe versão/paths/estado.
+- Com o token público injetado pela própria página, endpoints read-only sensíveis responderam `200`, incluindo `/api/config`, `/api/sessions`, `/api/skills` e `/api/logs`.
+- Container do dashboard está publicado por Traefik no serviço interno `4860`; OpenAPI público lista também rotas mutantes, que não foram chamadas.
+
+Classificação atualizada:
+
+- **Dashboard público**: risco alto para uso operacional enquanto exposto com token de página e docs OpenAPI públicos.
+- **Cockpit/plugin operacional**: bloqueado até mitigação ou isolamento.
+
+Mitigação recomendada antes de continuar cockpit/plugin:
+
+1. Restringir/remover exposição pública do dashboard por Traefik/Cloudflare Access/VPN/Tailscale/allowlist.
+2. Proteger ou desabilitar `/docs`, `/redoc` e `/openapi.json` em produção pública.
+3. Remover token de sessão estático/injetado em HTML público; exigir autenticação server-side forte.
+4. Garantir autorização robusta para rotas mutantes e endpoints de logs/sessões/config.
+5. Revalidar que `/api/config`, `/api/sessions`, `/api/logs` e `/api/skills` retornam `401/403` para visitante público.
+
+## 8. Status do card F2-004
+
+F2-004 está concluído como classificação + revalidação read-only, e a revisão específica do dashboard público foi registrada separadamente.
+
+Resultado final atualizado:
 
 - API default: **host-local / não pública por evidência Docker atual**.
 - Webhook default: **público via Traefik/Cloudflare**.
-- Dashboard: **não evidenciado como público**.
-- Próxima ação segura: seguir para **F2-001 Kanban board design** ou **F2-002 MCP/DataForSEO inventory** sem ativação runtime.
+- Dashboard: **público separado via Traefik com risco alto enquanto exposto com token de página, docs OpenAPI públicos e endpoints sensíveis acessíveis via token público do frontend**.
+- Próxima ação segura: approval packet separado para fechar/proteger o dashboard público antes de cockpit/plugin operacional.

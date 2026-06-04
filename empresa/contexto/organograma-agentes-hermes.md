@@ -41,6 +41,9 @@ Hermes Brain — fonte de verdade, evidência, handoff, memória e skills
   │   ├── LK Growth
   │   │   ├── Runtime: /opt/data/profiles/lk-growth
   │   │   └── Dono: SEO, GEO, CRO, GMC, analytics, conteúdo, source pages, D+7 impact reviews
+  │   ├── [LK] Otimização de Coleção
+  │   │   ├── Runtime: /opt/data/profiles/lk-collection-optimizer
+  │   │   └── Dono: LKGOC, otimização de coleções, guias/páginas de produto-modelo, evidence packets, scorecards, approval packets e impact reviews; Shopify writes approval-gated
   │   ├── LK Ops / Atendimento
   │   │   ├── Runtime: /opt/data/profiles/lk-ops
   │   │   └── Dono: atendimento, loja, vendas operacionais, estoque, preço, disponibilidade, Tiny/Shopify operacional
@@ -105,6 +108,15 @@ Hermes Brain — fonte de verdade, evidência, handoff, memória e skills
 - Dono: SEO/GEO/CRO/GMC/analytics/conteúdo/source pages/D+7 impact reviews.
 - Regra: Growth é read-only/preview por padrão; Shopify/GMC/GA4/GSC/Klaviyo/Meta writes exigem approval packet e aprovação explícita.
 - Anti-erro: Growth não é dono de atendimento, estoque, preço, disponibilidade ou loja.
+
+#### [LK] Otimização de Coleção
+
+- Caminho documental: `agentes/lk-otimizacao-colecao/`.
+- Caminho operacional: `areas/lk/sub-areas/growth/collection-optimizer/`.
+- Runtime: `/opt/data/profiles/lk-collection-optimizer`.
+- Bot: `@lk_otimizacaodecolecao_bot`.
+- Dono: LKGOC, otimização de coleções, guias/páginas de produto-modelo, evidence packets, scorecards, approval packets, receipts e impact reviews.
+- Regra: read-only/preview por padrão; Shopify/theme/page/collection/metafield/SEO field writes exigem aprovação explícita, rollback, readback e receipt; preço/estoque/atendimento continuam fora do escopo.
 
 #### LK Ops / Atendimento
 

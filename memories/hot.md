@@ -21,7 +21,7 @@ Status: camada Bruno/OpenClaw/Hermes COO ativa para evitar perda por compactaç�
 
 1. Manter o Hermes Brain como fonte de verdade, não o chat.
 2. Garantir que decisões customer-facing aprovadas por Lucas virem arquivo vivo, MAPA/índice e evidência de verificação.
-3. Manter o Fechamento Ágil 23h + Brain Sync seguro como rotina de consolidação silenciosa/local.
+3. Manter o Fechamento Ágil 01h BRT + Brain Sync seguro como rotina de consolidação silenciosa/local, com `latest-handoff.json` alimentando o supervisor 02h; referências 23h são históricas/superseded.
 4. Evitar ruído no Telegram: sucesso normal fica local/Brain; Lucas recebe decisão, exceção, falha ou pedido de aprovação.
 5. Orquestrador Hermes/Fase 8: manter Mesa COO/decisões com UX limpa, sem wrapper/metadados, e handoff obrigatório para outputs materiais de especialistas.
 6. Prioridade operacional atual: LK OS/especialistas LK em modo governado. LK Shopify/Trends/Ops estão ativos como especialistas esperados; round-trip final depende de Lucas responder nos chats. Writes Shopify/Tiny/GMC/Meta/Klaviyo continuam bloqueados sem aprovação escopada.
@@ -46,7 +46,8 @@ Status: camada Bruno/OpenClaw/Hermes COO ativa para evitar perda por compactaç�
 - `areas/operacoes/rotinas/protocolo-registro-decisoes-aprovadas-contexto-compactado.md`
 - `areas/operacoes/templates/decisao-customer-facing.md`
 - `areas/operacoes/rotinas/brain-sync.md`
-- `areas/operacoes/rotinas/fechamento-agil-23h.md`
+- `areas/operacoes/rotinas/fechamento-agil-01h.md`
+- `areas/operacoes/rotinas/fechamento-agil-23h.md` (histórico/superseded)
 - `areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md`
 - `areas/operacoes/rotinas/auditoria-handoff-especialistas.md`
 - `reports/governance/handoff-completeness-check-2026-05-25.md`

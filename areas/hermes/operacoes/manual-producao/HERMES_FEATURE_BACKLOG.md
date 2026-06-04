@@ -1,8 +1,9 @@
 # Hermes Feature Backlog — Fase 2
 
 Gerado em: 2026-05-30T22:02:16+00:00  
-Status: **backlog canônico v0.1 / sem execução automática**  
+Status: **backlog canônico v0.2 / board Kanban real sem execução automática**  
 Board planejado: `hermes-lk-improvements`  
+Board real criado em 2026-06-03: `hermes-lk-improvements`  
 Regra: cards abaixo são **documentais/unassigned** até existir approval packet para execução real. Não acionar dispatcher produtivo por este arquivo.
 
 ## Como usar este backlog
@@ -87,7 +88,7 @@ Critério de aceite:
 ## Card F2-003 — Especificar plugin local/read-only “Hermes/LK Capability Status”
 
 Prioridade: P1  
-Status: ready-for-review / unassigned  
+Status: card real criado em 2026-06-03 / `ready` / `assignee=null` / id `t_01156a76`  
 Owner lógico: Hermes Geral / runtime observability  
 Tipo: design local
 
@@ -128,7 +129,7 @@ Critério de aceite:
 ## Card F2-004 — Classificar exposição Dashboard/API default
 
 Prioridade: P0/P1  
-Status: completed/read-only em 2026-05-30 — ver `F2_004_DASHBOARD_API_EXPOSURE_CLASSIFICATION.md`  
+Status: revalidado/concluído em 2026-06-03 — board `hermes-lk-improvements` / id `t_cd3dd451` / `done`; revisão específica do dashboard público registrada no card `t_2302a6a6`; ver `F2_004_DASHBOARD_API_EXPOSURE_CLASSIFICATION.md`, `RECEIPT_F2_004_EXPOSURE_REVALIDATION_20260603.md` e `RECEIPT_F2_DASHBOARD_PUBLIC_AUTH_REVIEW_20260603.md`  
 Owner lógico: Hermes Geral / infra safety  
 Tipo: read-only
 
@@ -156,6 +157,12 @@ Saída esperada:
 - evidências redigidas;
 - ação recomendada.
 
+Resultado 2026-06-03:
+
+- API default: host-local via publish `127.0.0.1:8642`, com API key exigida.
+- Webhook default: público via Traefik/Cloudflare, com subscriptions LK Shopify `Deliver: log`.
+- Dashboard: público separado via Traefik em hostname Hermes Agent Dashboard; revisão específica encontrou docs/OpenAPI públicos, token de sessão injetado no HTML e acesso read-only sensível com token da própria página. Uso operacional fica bloqueado até mitigação/isolamento.
+
 Critério de aceite:
 
 - nenhuma decisão de cockpit/dashboard acontece sem saber o blast radius.
@@ -163,7 +170,7 @@ Critério de aceite:
 ## Card F2-005 — Padronizar deliverable mode e receipts
 
 Prioridade: P1  
-Status: ready-for-review / unassigned  
+Status: card real criado em 2026-06-03 / `ready` / `assignee=null` / id `t_fe598ba5`  
 Owner lógico: Hermes Geral / UX Telegram  
 Tipo: local/documental
 
@@ -220,7 +227,7 @@ Saída esperada:
 ## Card F2-007 — Preparar piloto real pequeno
 
 Prioridade: P2 depois de F2-001/F2-002/F2-003  
-Status: pilot-executed/read-only em 2026-05-30 — ver `F2_007_DATAFORSEO_MCP_PILOT_RECEIPT.md`; Supabase packet preparado em `APPROVAL_PACKET_SUPABASE_MCP_READONLY.md`  
+Status: pilot-executed/read-only em 2026-05-30 — ver `F2_007_DATAFORSEO_MCP_PILOT_RECEIPT.md`; Supabase packet preparado em `APPROVAL_PACKET_SUPABASE_MCP_READONLY.md`; card Kanban para escolher próximo piloto criado em 2026-06-03 / `ready` / `assignee=null` / id `t_45b92440`  
 Owner lógico: Hermes Geral + LK Growth/LK Shopify/LK Trends  
 Tipo: approval packet / piloto MCP pequeno
 

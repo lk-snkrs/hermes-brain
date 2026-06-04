@@ -38,7 +38,7 @@ A regra é simples:
    - Backlog canônico da Fase 2 com cards documentais/unassigned para Kanban, MCP, plugin local/read-only, dashboard/API e deliverables.
 
 8. `F2_004_DASHBOARD_API_EXPOSURE_CLASSIFICATION.md`
-   - Resultado do card F2-004: classificação read-only da exposição API/webhook/dashboard do default.
+   - Resultado do card F2-004: classificação read-only da exposição API/webhook/dashboard do default; revalidação 2026-06-03 registrou API default host-local, webhook público e dashboard público separado exigindo revisão de autenticação/exposição.
 
 9. `F2_001_KANBAN_BOARD_DESIGN.md`
    - Resultado do card F2-001: design documental do board Kanban `hermes-lk-improvements`, estados, labels de risco, template de card e política de assignees.

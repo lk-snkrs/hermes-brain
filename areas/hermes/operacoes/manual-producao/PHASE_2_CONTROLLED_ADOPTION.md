@@ -1,7 +1,7 @@
 # Fase 2 — Adoção controlada de features Hermes
 
 Aberta em: 2026-05-30T22:02:16+00:00  
-Status: **aberta / execução local-documental autorizada**  
+Status: **aberta / board Kanban real criado em modo seguro**  
 Escopo: transformar a matriz de capabilities em pilotos seguros. **Este documento não autoriza alteração de runtime, Docker, VPS, Traefik, secrets, webhooks, crons, API pública, dispatcher produtivo, MCP remoto com credenciais, plugins ativos em produção ou writes externos.**
 
 ## 1. Tese da fase
@@ -141,4 +141,16 @@ Cada approval packet deve conter:
 
 Fase 2 aberta com autorização apenas para documentação, inventário read-only e preparação de backlog/packets.
 
-Próximo arquivo canônico: `HERMES_FEATURE_BACKLOG.md`.
+Atualização 2026-06-03:
+
+- Board Kanban real criado: `hermes-lk-improvements`.
+- Cards iniciais criados sem assignee real; portanto não acionam worker pelo dispatcher.
+- Primeiro card de setup concluído manualmente por Hermes Geral como receipt local.
+- Cards executáveis permanecem `ready` + `assignee=null` até approval packet separado.
+- Receipt: `RECEIPT_FASE2_KANBAN_BOARD_LIVE_20260603.md`.
+
+Próximos arquivos canônicos:
+
+- `HERMES_FEATURE_BACKLOG.md`.
+- `F2_001_KANBAN_BOARD_DESIGN.md`.
+- `RECEIPT_FASE2_KANBAN_BOARD_LIVE_20260603.md`.

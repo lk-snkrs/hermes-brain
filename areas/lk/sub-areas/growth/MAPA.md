@@ -73,6 +73,7 @@ Antes de declarar um diagnóstico de Growth completo, verificar os 18 tópicos e
 - `templates/d7-review-digest-template.md` — template do digest consolidado de reviews D+7.
 - `reports/growth-360-smoke-test-2026-05-19.md` — validação documental do fluxo 360º e próximos critérios de smoke test live controlado.
 - `projetos/growth-action-prd-2026-05-19.md` — PRD de ação para cadência semanal orientada a receita, conversão e reviews D+7.
+- `prds/lk-otimizacao-colecao-agent-prd-2026-06-03.md` — PRD do agente `[LK] Otimização de Coleção`, especialista LKGOC documental/sem runtime ativado nesta etapa.
 - `contexto/` — mapas por fonte e domínio.
 - `rotinas/` — rotinas operacionais.
 - `templates/` — formatos padronizados de auditoria/approval packet.

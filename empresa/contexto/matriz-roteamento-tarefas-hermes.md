@@ -74,7 +74,22 @@ Regra de linguagem: **`seguir` sozinho não é aprovação de risco; só autoriz
 - **Exige aprovação:** qualquer correção em Shopify, GMC, theme, feeds, ads, Klaviyo.
 - **Handoff:** obrigatório para packets, decisões, receipts e follow-ups.
 
-### 4. LK Shopify — produto/upload/coleções/superfície de publicação
+### 4. [LK] Otimização de Coleção — LKGOC/coleções/guias
+
+- **ID:** `lk-collection-optimizer-lkgoc`.
+- **Triggers:** LKGOC, otimizar coleção, coleção SEO/GEO/CRO, guia de coleção, página/guia de produto ou modelo, drift LKGOC, scorecard de coleção, evidence packet de coleção.
+- **Contexto:** LK Sneakers / Growth + Shopify surface.
+- **Orquestrador:** Hermes Geral ou LK Growth, conforme entrada.
+- **Executor:** `[LK] Otimização de Coleção` profile; coordena com LK Shopify para preview/write.
+- **Runtime:** `/opt/data/profiles/lk-collection-optimizer`.
+- **Brain path:** `agentes/lk-otimizacao-colecao/` e `areas/lk/sub-areas/growth/collection-optimizer/`.
+- **Output:** input contract, evidence packet, draft de coleção/guia, scorecard, approval packet, DEV preview packet, receipt e impact review.
+- **Permitido sem aprovação:** leitura/pesquisa/draft/scorecard/packet/Brain docs/read-only checks.
+- **Exige aprovação:** Shopify Page/Product/Collection/theme/metafield/SEO field write, produção, cron novo, publicação, GMC/Klaviyo/Ads/Tiny/contato externo.
+- **Handoff:** obrigatório para drafts materiais, packets, aprovações, receipts, bloqueios e impact reviews.
+- **Anti-erro:** otimizar coleção com LKGOC significa reconstruir experiência completa usando existente como evidência, não remendo incremental.
+
+### 5. LK Shopify — produto/upload/coleções/superfície de publicação
 
 - **ID:** `lk-shopify-surface`
 - **Triggers:** Shopify, produto/upload, cadastrar produto, coleção, página Shopify, menu, tag, SEO field Shopify, tema/dev theme, variant/SKU, readback/receipt Shopify.

@@ -1,3 +1,14 @@
+## 2026-06-03 — Daily Loop: ciclo 01h validado + drift 23h→01h corrigido
+
+**A1 auto-fixes aplicados:**
+- `TOOLS.md`, `memories/hot.md`, `skills/brain-sync/SKILL.md` e `empresa/contexto/organograma-orquestrador-tarefas-hermes.md` atualizados para refletir a rotina viva: Fechamento Ágil 01h BRT + `latest-handoff.json`; 23h fica histórico/superseded.
+- Skill runtime `lucas-hermes-continuous-improvement` corrigida para registrar v0.15.2 como runtime atual/latest, não gap pendente.
+- Criado `reports/hermes-learning-ledger/2026-06-03.md` e relatório diário `reports/hermes-continuous-improvement/2026-06-03.md`.
+
+**Saúde:** containers production `running`, runtime v0.15.2 já no latest público, host observability com `alerts: []`, Brain Health FAIL=0/WARN=0, Score 94/100.
+
+**Pendências acionáveis:** `wacli hermes` segue não autenticado e afeta entregas WhatsApp aprovadas de LK/Zipper; `LK Weekly Collection Sort Rule B` segue com timeout antes da próxima sexta. Nenhum envio/restart/produção foi executado.
+
 ## 2026-06-02 — Daily Loop: v0.15.2 alinhado + wacli hermes pendente
 
 **A1 auto-fixes aplicados:**
