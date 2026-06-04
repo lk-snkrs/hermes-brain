@@ -1,4 +1,4 @@
-# Brain Improvement Score — 2026-06-03
+# Brain Improvement Score — 2026-06-04
 ## Status geral
 Score geral: **94/100**
 Leitura executiva: relatório gerado por script local/read-only. O score traduz estrutura, health check e rastreabilidade do Brain em uma visão executiva; não prova saúde de produção, cron real, VPS, APIs ou dados vivos.
@@ -6,18 +6,18 @@ Leitura executiva: relatório gerado por script local/read-only. O score traduz 
 ### Identidade e agentes — 100/100
 Motivo: Agentes principais têm estrutura operacional; penalização aplicada apenas para arquivos obrigatórios ausentes.
 Evidências:
-- Agentes avaliados: 6
+- Agentes avaliados: 7
 - Arquivos obrigatórios faltantes: 0
 ### MAPAs e navegação — 100/100
 Motivo: Navegação executiva depende dos arquivos de entrada e MAPAs por área/subárea.
 Evidências:
 - Arquivos de entrada ausentes: 0
-- Diretórios com MAPA.md: 22
+- Diretórios com MAPA.md: 24
 ### Rotinas e crons — 99/100
 Motivo: Rotinas documentadas estão indexadas; o score não afirma execução real de cron.
 Evidências:
-- Rotinas documentadas: 357
-- Cobertura aproximada no índice por nome de arquivo: 348/357
+- Rotinas documentadas: 359
+- Cobertura aproximada no índice por nome de arquivo: 350/359
 Recomendações:
 - Manter a separação: rotina documentada não prova cron ativo; verificar runtime/VPS quando a pergunta for operacional.
 ### Skills e procedimentos — 78/100
