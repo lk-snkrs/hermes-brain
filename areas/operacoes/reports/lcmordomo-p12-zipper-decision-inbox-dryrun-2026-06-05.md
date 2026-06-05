@@ -1,7 +1,7 @@
 # LC Mordomo OS — P1.2 Zipper Decision Inbox dry-run
 
-**Data:** 2026-06-05T20:47:18.761618+00:00  
-**Escopo:** consultas locais sobre `zipper_canonical.sqlite` para separar decisão real de ruído.  
+**Data:** 2026-06-05T21:10:18.915480+00:00
+**Escopo:** consultas locais sobre `zipper_canonical.sqlite` para separar decisão real de ruído.
 **Modo:** dry-run local/read-only; nenhum Telegram, WhatsApp, e-mail, Supabase, cron ou infraestrutura alterado.
 
 ---
@@ -36,7 +36,7 @@ Interpretação:
 - Telegram-ready: não
 - Por quê: Destinatário bloqueado por regra operacional; nunca deve virar envio/alerta de aprovação comum.
 - Ação local recomendada: Manter suprimido; só reabrir se Lucas der exceção explícita no turno atual.
-- Fonte follow-up: `whatsapp:pessoal:[email]:zipper`
+- Fonte follow-up: `whatsapp:pessoal:[phone]:zipper`
 
 ### needs_enrichment — Cássia Olliveira
 
@@ -46,7 +46,7 @@ Interpretação:
 - Telegram-ready: não
 - Por quê: Status pede Lucas, mas faltam fonte/draft/risco claros.
 - Ação local recomendada: Enriquecer antes de alertar.
-- Fonte follow-up: `whatsapp:pessoal:[email]:zipper`
+- Fonte follow-up: `whatsapp:pessoal:[phone]:zipper`
 
 ### hard_recipient_blocklist — LK Sneakers & Streetwear
 
@@ -56,7 +56,7 @@ Interpretação:
 - Telegram-ready: não
 - Por quê: Destinatário bloqueado por regra operacional; nunca deve virar envio/alerta de aprovação comum.
 - Ação local recomendada: Manter suprimido; só reabrir se Lucas der exceção explícita no turno atual.
-- Fonte follow-up: `whatsapp:pessoal:[email]:zipper`
+- Fonte follow-up: `whatsapp:pessoal:[phone]:zipper`
 
 ### suppress_followup_noise — Marcus Bitencourt
 
@@ -66,7 +66,7 @@ Interpretação:
 - Telegram-ready: não
 - Por quê: Marcado como decisão, mas parece follow-up seguro; deve voltar para automação A1/A2.
 - Ação local recomendada: Reconciliar como follow-up automático ou waiting_client.
-- Fonte follow-up: `whatsapp:pessoal:[email]:zipper`
+- Fonte follow-up: `whatsapp:pessoal:[phone]:zipper`
 
 ### suppress_followup_noise — Brenda
 
@@ -76,7 +76,7 @@ Interpretação:
 - Telegram-ready: não
 - Por quê: Marcado como decisão, mas parece follow-up seguro; deve voltar para automação A1/A2.
 - Ação local recomendada: Reconciliar como follow-up automático ou waiting_client.
-- Fonte follow-up: `whatsapp:pessoal:[email]:zipper`
+- Fonte follow-up: `whatsapp:pessoal:[phone]:zipper`
 
 ### action_ready_candidate — Clau Xavier — Adriana Duque
 
@@ -96,7 +96,7 @@ Interpretação:
 - Telegram-ready: sim
 - Por quê: Há sinal material/comercial que exige decisão ou resposta aprovada.
 - Ação local recomendada: Oi Camila, tudo bem? Só passando para saber se alguma outra obra da seleção te chamou atenção. Mesmo aquela obra não estando disponível, temos outras opções e posso te ajudar a pensar em uma alternativa.
-- Fonte follow-up: `whatsapp:pessoal:[email]:zipper`
+- Fonte follow-up: `whatsapp:pessoal:[phone]:zipper`
 
 ### action_ready_candidate — Rafaela Rocha — Rodrigo Braga
 
@@ -116,7 +116,7 @@ Interpretação:
 - Telegram-ready: não
 - Por quê: Erro técnico local; não é decisão comercial para Lucas até reconciliação.
 - Ação local recomendada: Corrigir/reconciliar localmente antes de alertar.
-- Fonte follow-up: `whatsapp:pessoal:[email]:zipper:history_pdf_followup_failed:20260602`
+- Fonte follow-up: `whatsapp:pessoal:[phone]:zipper:history_pdf_followup_failed:20260602`
 
 ### technical_error_local — Contato Zipper
 
@@ -126,7 +126,7 @@ Interpretação:
 - Telegram-ready: não
 - Por quê: Erro técnico local; não é decisão comercial para Lucas até reconciliação.
 - Ação local recomendada: Corrigir/reconciliar localmente antes de alertar.
-- Fonte follow-up: `whatsapp:pessoal:[email]:zipper:history_pdf_followup_failed:20260602`
+- Fonte follow-up: `whatsapp:pessoal:[phone]:zipper:history_pdf_followup_failed:20260602`
 
 ### technical_error_local — Contato Zipper
 
@@ -136,7 +136,7 @@ Interpretação:
 - Telegram-ready: não
 - Por quê: Erro técnico local; não é decisão comercial para Lucas até reconciliação.
 - Ação local recomendada: Corrigir/reconciliar localmente antes de alertar.
-- Fonte follow-up: `whatsapp:pessoal:[email]:zipper:history_pdf_followup_failed:20260602`
+- Fonte follow-up: `whatsapp:pessoal:[phone]:zipper:history_pdf_followup_failed:20260602`
 
 ### technical_error_local — Contato Zipper
 
@@ -146,7 +146,7 @@ Interpretação:
 - Telegram-ready: não
 - Por quê: Erro técnico local; não é decisão comercial para Lucas até reconciliação.
 - Ação local recomendada: Corrigir/reconciliar localmente antes de alertar.
-- Fonte follow-up: `whatsapp:pessoal:[email]:zipper:history_pdf_followup_failed:20260602`
+- Fonte follow-up: `whatsapp:pessoal:[phone]:zipper:history_pdf_followup_failed:20260602`
 
 ### technical_error_local — Contato Zipper
 
@@ -156,7 +156,7 @@ Interpretação:
 - Telegram-ready: não
 - Por quê: Erro técnico local; não é decisão comercial para Lucas até reconciliação.
 - Ação local recomendada: Corrigir/reconciliar localmente antes de alertar.
-- Fonte follow-up: `whatsapp:pessoal:[email]:zipper:history_pdf_followup_failed:20260602`
+- Fonte follow-up: `whatsapp:pessoal:[phone]:zipper:history_pdf_followup_failed:20260602`
 
 ### review_before_alert — Olavo
 
@@ -166,7 +166,7 @@ Interpretação:
 - Telegram-ready: não
 - Por quê: Pode ser decisão material, mas veio de estado due_alerted; precisa pacote com fonte/draft antes de Telegram.
 - Ação local recomendada: Enriquecer fonte e recomendação; não enviar alerta cru.
-- Fonte follow-up: `whatsapp:pessoal:[email]:zipper`
+- Fonte follow-up: `whatsapp:pessoal:[phone]:zipper`
 
 ### review_before_alert — Alipio
 
@@ -176,7 +176,7 @@ Interpretação:
 - Telegram-ready: não
 - Por quê: Pode ser decisão material, mas veio de estado due_alerted; precisa pacote com fonte/draft antes de Telegram.
 - Ação local recomendada: Enriquecer fonte e recomendação; não enviar alerta cru.
-- Fonte follow-up: `whatsapp:pessoal:[email]:zipper`
+- Fonte follow-up: `whatsapp:pessoal:[phone]:zipper`
 
 ---
 

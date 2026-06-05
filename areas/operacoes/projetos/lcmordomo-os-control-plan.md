@@ -304,6 +304,21 @@ Consultas locais criadas:
 
 **Critério de pronto P1.2 atingido:** Decision Inbox agora tem filtro local para não transformar follow-up seguro, erro técnico ou destinatário bloqueado em alerta solto para Lucas. Ainda não há envio Telegram/cron; é dry-run local.
 
+### P1 — Zipper action packet renderer — P1.3 concluído em 2026-06-05
+
+**Implementado:** `/opt/data/profiles/mordomo/scripts/zipper_action_packet_renderer.py`.
+
+Saídas locais:
+
+- `/opt/data/profiles/mordomo/state/zipper_action_packets_preview.json`;
+- `areas/operacoes/reports/lcmordomo-p13-zipper-action-packet-renderer-2026-06-05.md`.
+
+**Resultado:** os 3 candidatos action-ready viraram pacotes Lucas-facing com contexto, fonte mascarada, risco, recomendação, draft e decisão sugerida. Os demais 12 itens ficaram fora do alerta.
+
+**Correção aplicada durante P1.3:** mascaramento de fonte foi ajustado para tratar WhatsApp JID como telefone mascarado, não como e-mail.
+
+**Critério de pronto P1.3 atingido:** renderer recompõe a classificação a partir do SQLite local, gera somente pacotes action-first, passa regressão de termos proibidos de cron/log/classificador e não envia nada.
+
 ### P2 — Pessoal/Calendário
 
 **Ação:** formalizar contrato e avaliar reativação do calendar watcher.
@@ -348,14 +363,14 @@ Não enviar:
 
 ## 7. Próxima execução recomendada
 
-Próxima frente segura: **P1.3 Zipper action packet renderer**.
+Próxima frente segura: **P1.4 Zipper packet QA + activation decision**.
 
 Sequência:
 
-1. Gerar pacote action-first somente para os 3 `action_ready_candidate` do dry-run.
-2. Incluir em cada pacote: contexto, fonte, risco, recomendação, draft e bloqueio explícito de envio sem aprovação.
-3. Manter `hard_recipient_blocklist`, `technical_error_local`, `suppress_followup_noise`, `review_before_alert` e `needs_enrichment` fora do Telegram.
-4. Rodar snapshot local do renderer e teste de termos proibidos de cron/log/JSON.
-5. Só depois decidir se vale reativar um digest/cron; por enquanto fica local.
+1. Revisar os 3 pacotes P1.3 como formato Lucas-facing: ação clara, draft adequado, contexto suficiente e zero log/classificador.
+2. Criar fixture/regressão para renderer com estes casos e casos negativos (`hard_recipient_blocklist`, erro técnico, follow-up seguro).
+3. Definir contrato de entrega se virar cron: destino, frequência, limite de pacotes, termos proibidos e modo silencioso quando não houver decisão.
+4. Manter sem Telegram/cron até aprovação explícita do formato e da cadência.
+5. Depois disso, mapear ponte Supabase Zipper ou executor genérico de follow-up, conforme prioridade.
 
 Parar antes de qualquer ação que envolva Docker/VPS/restart/deploy/secrets/banco de produção/Supabase write ou envio externo fora das classes A1/A2 já autorizadas.
