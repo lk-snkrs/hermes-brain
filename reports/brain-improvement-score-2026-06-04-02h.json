@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-04",
+  "date": "2026-06-05",
   "overall_score": 94,
   "dimensions": [
     {
@@ -30,8 +30,8 @@
       "score": 99,
       "reason": "Rotinas documentadas estão indexadas; o score não afirma execução real de cron.",
       "evidence": [
-        "Rotinas documentadas: 359",
-        "Cobertura aproximada no índice por nome de arquivo: 350/359"
+        "Rotinas documentadas: 362",
+        "Cobertura aproximada no índice por nome de arquivo: 353/362"
       ],
       "recommendations": [
         "Manter a separação: rotina documentada não prova cron ativo; verificar runtime/VPS quando a pergunta for operacional."
