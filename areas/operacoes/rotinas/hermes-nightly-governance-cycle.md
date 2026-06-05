@@ -62,6 +62,20 @@ Quando Lucas aprova ou corrige algo:
 4. Se A3/A4, cria decisão com escopo, benefício, risco, blast radius, exclusões e rollback.
 5. O 02h30 explica em linguagem humana o que Hermes aprendeu e se algo depende de Lucas.
 
+## Governança de contexto de subagentes
+
+O ciclo noturno deve reforçar a regra aprovada de **contexto mínimo + busca sob demanda**.
+
+Checks documentais esperados:
+
+- subagentes recorrentes têm escopo, fontes e autonomia definidos no registry/PRD;
+- novas rotinas ou crons de subagente apontam para índice/Brain/fonte viva, não para “carregar tudo”;
+- handoffs sobem decisão, fonte, status, próximos passos e blockers, sem histórico bruto inteiro;
+- aprendizados duráveis são promovidos seletivamente para memória, skill, rotina ou Brain;
+- ausência de contexto vira lookup sob demanda (`session_search`, Brain, API/banco/fonte autorizada), não aumento indiscriminado de prompt.
+
+Sinal de melhoria segura A0/A1: corrigir docs, índice, rotina ou skill para reduzir contexto carregado e melhorar recuperação sob demanda, sem alterar produção, cron externo ou fonte viva.
+
 ## Validação
 
 O script `/opt/data/scripts/hermes_nightly_governance_artifacts_check.py` deve ser usado pelo 02h e/ou 02h30 para detectar:

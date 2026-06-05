@@ -29,6 +29,17 @@ python3 scripts/brain_health_check.py --json reports/brain-health-check-YYYY-MM-
 - Skills canônicas ausentes de `empresa/skills/_index.md`.
 - Skills de navegação por área que apontam para skill canônica inexistente.
 
+## Gate de governança de contexto
+
+Para LC Mordomo OS e novos subagentes, o health check documental deve ser interpretado também como guard de **contexto mínimo + busca sob demanda**:
+
+- decisões/PRDs/rotinas de subagente devem estar indexadas em `MAPA.md`;
+- subagentes recorrentes devem apontar para registry/rotina/PRD em vez de depender de memória solta;
+- handoff/receipt deve ser compacto e navegável;
+- docs que proponham “carregar tudo”, “memória infinita” ou histórico bruto inteiro devem ser tratados como drift de governança, salvo se marcados como hipótese/rejeitado/legacy.
+
+O script atual ainda não valida semanticamente todos esses pontos; quando mexer em subagentes, rodar o health check técnico e fazer revisão manual deste gate no relatório/commit.
+
 ## Quando rodar
 
 - Antes de cada commit relevante.
