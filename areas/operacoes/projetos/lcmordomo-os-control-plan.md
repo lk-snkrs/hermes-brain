@@ -264,19 +264,27 @@ Aplicado nos watchers ativos:
 
 Relatório: `areas/operacoes/reports/lcmordomo-p0-watchdog-parser-2026-06-05.md`.
 
-### P1 — Consolidar Zipper MVP runtime → objetos
+### P1 — Consolidar Zipper MVP runtime → objetos — concluído em 2026-06-05
 
-**Ação:** transformar scripts/estados atuais em objetos canônicos:
+**Implementado:** `/opt/data/profiles/mordomo/scripts/zipper_canonical_store_build.py`.
 
-- contact;
-- lead/enquiry;
-- artist_interest;
-- followup;
-- suppression;
-- sent_action;
-- decision_packet.
+**Store local derivado:** `/opt/data/profiles/mordomo/state/zipper_canonical.sqlite`.
 
-**Critério de pronto:** uma linha ZPR/PDF consegue ser rastreada ponta a ponta: origem → PDF → WhatsApp/e-mail → follow-up → resposta → CRM/supressão/decisão.
+Objetos canônicos criados:
+
+- `contact`;
+- `lead_enquiry`;
+- `artist_interest`;
+- `followup`;
+- `suppression`;
+- `sent_action`;
+- `decision_packet`.
+
+**Snapshot do build:** `contact=130`, `lead_enquiry=9`, `artist_interest=32`, `followup=120`, `suppression=2`, `sent_action=171`, `decision_packet=15`.
+
+**Critério de pronto atingido para P1.1:** runtime Zipper existente agora pode ser lido por objetos canônicos locais e rebuildable/idempotentes. O store é cache local, não Supabase e não fonte externa de verdade.
+
+**Relatório:** `areas/operacoes/reports/lcmordomo-p1-zipper-canonical-store-2026-06-05.md`.
 
 ### P1 — Decision Inbox action-ready
 
@@ -328,14 +336,14 @@ Não enviar:
 
 ## 7. Próxima execução recomendada
 
-Próxima frente segura: **P0 Blindagem dos crons/follow-up**.
+Próxima frente segura: **P1.2 Zipper canonical queries + Decision Inbox action-ready**.
 
 Sequência:
 
-1. Inventariar scripts que chamam `wacli --json` e aplicar parser robusto comum onde faltar.
-2. Criar rotina/documentação de watchdog dos crons críticos de follow-up.
-3. Implementar watchdog local no profile Mordomo, se a implementação for apenas local/reversível e sem infraestrutura sensível.
-4. Rodar QA: `py_compile`, regressões WhatsApp/ZPR/e-mail e execução dry-run/silent-OK.
-5. Atualizar Brain/skill com a classe nova de erro para não repetir.
+1. Criar consultas locais sobre `zipper_canonical.sqlite` para rastrear lead ponta-a-ponta por contato/artista.
+2. Separar `decision_packet` real de estados técnicos/ruído (`manual_send_failed`, `due_alerted`, `needs_lucas_decision`).
+3. Desenhar o pacote Telegram action-first apenas para decisões comerciais reais: contexto, fonte, risco, recomendação e draft.
+4. Manter follow-up A1/A2 automático fora do Decision Inbox.
+5. Só considerar cron/digest depois de dry-run local e revisão de UX.
 
-Parar antes de qualquer ação que envolva Docker/VPS/restart/deploy/secrets/banco de produção ou envio externo fora das classes A1/A2 já autorizadas.
+Parar antes de qualquer ação que envolva Docker/VPS/restart/deploy/secrets/banco de produção/Supabase write ou envio externo fora das classes A1/A2 já autorizadas.
