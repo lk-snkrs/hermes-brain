@@ -343,6 +343,18 @@ Saídas locais:
 
 **Critério de pronto P1.5 atingido:** suíte local ampliada para 7 testes, renderer gera JSON preview com proposta de entrega e `activation_decision(..., explicit_approval=False)` segue bloqueando cron/Telegram.
 
+### P1 — Correção Lucas: follow-ups não são Decision Inbox — P1.6 concluído em 2026-06-05
+
+**Correção:** Lucas informou que os 3 exemplos eram follow-ups e, portanto, não deveriam virar aprovação. Mordomo deve fazer follow-ups sozinho; para follow-ups importantes, deve buscar o contexto das mensagens anteriores ligadas antes de executar.
+
+**Implementado:** classificador ajustado para `important_followup_needs_context`, fila local `/opt/data/profiles/mordomo/state/zipper_important_followup_context_queue.json` e regressões locais.
+
+**Relatório:** `areas/operacoes/reports/lcmordomo-p16-zipper-followup-correction-context-queue-2026-06-05.md`.
+
+**Resultado atualizado:** `telegram_ready_count=0`, 0 pacotes Decision Inbox, 5 follow-ups importantes em fila de contexto antes de execução autônoma.
+
+**Critério de pronto P1.6 atingido:** suíte local ampliada para 8 testes; nenhuma entrega externa, cron ou Supabase acionado.
+
 ### P2 — Pessoal/Calendário
 
 **Ação:** formalizar contrato e avaliar reativação do calendar watcher.
@@ -387,13 +399,14 @@ Não enviar:
 
 ## 7. Próxima execução recomendada
 
-Próxima frente segura: **P1.6 pacote de aprovação para ativação ou on-demand**.
+Próxima frente segura: **P1.7 context enricher + executor seguro de follow-up**.
 
 Sequência:
 
-1. Consolidar os 3 pacotes v2 e o contrato de entrega em uma decisão única para Lucas.
-2. Perguntar explicitamente se ativa entrega `telegram:origin`, sob demanda/diária condicional, máximo 3 pacotes, vazio silencioso e kill-switch.
-3. Se Lucas aprovar no turno atual, preparar implementação mínima de entrega com testes e sem tocar WhatsApp/e-mail/Supabase.
-4. Se Lucas não aprovar, manter apenas renderer local/on-demand e seguir para ponte Supabase Zipper ou executor genérico de follow-up.
+1. Ler `/opt/data/profiles/mordomo/state/zipper_important_followup_context_queue.json`.
+2. Para cada item, buscar mensagens anteriores ligadas ao lead/contato nas fontes locais disponíveis.
+3. Reclassificar em `safe_to_autofollowup`, `needs_lucas_context` ou `blocked_sensitive_material`.
+4. Executar autonomamente apenas `safe_to_autofollowup`, com idempotência e sem duplicar mensagens.
+5. Alertar Lucas só para itens que precisam de contexto humano ou têm material sensível.
 
 Parar antes de qualquer ação que envolva Docker/VPS/restart/deploy/secrets/banco de produção/Supabase write ou envio externo fora das classes A1/A2 já autorizadas.
