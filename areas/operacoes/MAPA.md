@@ -14,6 +14,8 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `decisions/` — decisões operacionais canônicas, incluindo política de memória sem provider externo.
 - `inventarios/crons-agentes-profiles.md` — inventário vivo de agentes, profiles, bots, crons, conversas/projetos e cobertura do Fechamento Ágil 23h.
 - `mordomo/MAPA.md` — ponte canônica mínima para Mordomo/Lucas pessoal, sem criar runtime ou agente novo.
+- `mordomo/LC-MORDOMO-CENTRAL-SOUL-2026-06-05.md` — SOUL v0.1 do LC Mordomo Central: identidade, missão, autonomia A0-A4, interface única, subagentes e learning loop.
+- `mordomo/subagent-registry-2026-06-05.md` — registry v0.1 dos subagentes lógicos/operacionais do LC Mordomo OS e regra de promoção para profile/runtime separado.
 
 ## Rotinas principais
 
@@ -32,6 +34,8 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/company-decision-memory.md` — protocolo para salvar toda decisão empresarial na memória viva da empresa correspondente.
 - `rotinas/protocolo-registro-decisoes-aprovadas-contexto-compactado.md` — regra anti-perda para registrar aprovações de copy/tom/fluxo antes que contexto de chat seja compactado.
 - `rotinas/protocolo-handoff-agentes-especialistas.md` — mecanismo de handoff para impedir que especialistas virem ilhas de dados e garantir subida de decisões/receipts ao Hermes Central.
+- `rotinas/lcmordomo-handoff-protocol.md` — protocolo v0.1 de handoff entre LC Mordomo Central e subagentes, com formato mínimo, gatilhos obrigatórios e anti-padrões.
+- `rotinas/lcmordomo-source-confidence-and-approval-ledger.md` — rotina v0.1 para Source Confidence e Approval Ledger do LC Mordomo OS, impedindo uso indevido de aprovações passadas e fontes fracas.
 - `rotinas/auditoria-handoff-especialistas.md` — auditoria diária/semanal para confirmar que profiles/bots/especialistas deixaram receipt/handoff no Brain.
 - `rotinas/memoria-hot-daily-bruno.md` — rotina da camada `memories/hot.md` + `memories/daily/YYYY-MM-DD.md` no padrão Bruno/OpenClaw.
 - `rotinas/auditoria-skills-status-risco.md` — auditoria de skills com owner/status/risco/última revisão.
@@ -84,8 +88,12 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `brds/hermes-brain-fechamento-agil-23h-brd-2026-05-19.md` — BRD para aprovação do Fechamento Ágil 23h: consolidação diária Brain-first, multi-agente, sem writes externos e sem ruído Telegram desnecessário.
 - `prds/hermes-brain-daily-consolidation-crons-prd-2026-05-19.md` — PRD inicial para implementar o ciclo Bruno/OpenClaw no Hermes Brain: inventário vivo, auditoria 07h, consolidação diária, manutenção de memória e auditoria mensal de MAPAs. Observação: horário do fechamento ajustado no BRD para 23h BRT conforme Lucas.
 - `prds/pixel-ai-hub-learning-loop-hermes-agent-2026-05-25.md` — PRD do loop Pixel AI Hub/Brainzinho como melhoria contínua do Hermes Agent central, não ownership do Mordomo.
+- `prds/lcmordomo-os-prd-2026-06-05.md` — PRD v0.1 do LC Mordomo OS: agente principal único para Lucas com subagentes especializados, memória/Brain/skills/crons próprios por domínio, Decision Inbox, CRM/follow-up global roteado e governança A0-A4.
+- `prds/lcmordomo-subagente-zipper-migration-prd-2026-06-05.md` — PRD v0.1 para migrar/ensinar os fluxos atuais do LC Mordomo ao Subagente Zipper lógico: ZPR/PDF, drafts de e-mail, WhatsApp pós-PDF, CRM de interesse/supressão e Decision Inbox, com Supabase Zipper como destino principal e execução híbrida A2/A3.
+- `prds/lcmordomo-whatsapp-pessoal-followup-autoack-prd-2026-06-05.md` — PRD do módulo LC Mordomo OS para follow-up e auto-ack no WhatsApp pessoal: agradecimentos pós-PDF, seed de contexto por fila, contato não salvo mas lead registrado, cron silent-OK e dedupe/auditoria.
 - `prds/company-decision-memory-prd-2026-05-17.md` — PRD da regra de memória de decisões por empresa.
 - `projetos/hermes-brain-improvement-system.md` — sistema contínuo para transformar material externo em melhorias seguras do Brain.
+- `projetos/lcmordomo-os-control-plan.md` — plano de controle operacional vivo do LC Mordomo OS: módulos, crons verificados, riscos, backlog P0/P1 e critérios de pronto.
 - `projetos/mission-control-prd.md` — PRD do Mission Control Hermes read-only, começando como relatório/protocolo seguro.
 - `projetos/mission-control-hermes-native-prd-2026-05-17.md` — PRD completo do novo Mission Control Hermes-native / COO Cockpit construído do zero, abandonando Tenacity OS como base e aproveitando aprendizados do Hermes Workspace com guardrails multiempresa.
 
@@ -114,6 +122,8 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `../../reports/governance/hermes-brain-operating-layer-feature-audit-2026-05-20.md` — auditoria das 15 features Hermes aplicáveis ao ecossistema Bruno e status já faz/não faz/fortalecido.
 - `../../reports/governance/hermes-brain-operating-layer-implementation-2026-05-20.md` — registro da implementação documental + automação read-only do Brain Operating Layer.
 - `../../reports/governance/top5-melhorias-pos-auditoria-amora-2026-05-25.md` — execução local/read-only das 5 melhorias pós-auditoria Hermes vs Amora: Mesa audit, scorecard semanal, handoff completeness, guardrails read-only e revisão de skills.
+- `reports/lcmordomo-os-next-steps-2026-06-05.md` — próximos passos executivos do LC Mordomo OS após PRD/SOUL/registry/protocols: validar contrato, MVP Zipper, auditoria de crons, SPITI, calendário e LK.
+- `reports/lcmordomo-subagente-zipper-readonly-inventory-2026-06-05.md` — inventário técnico read-only do MVP Subagente Zipper: crons ativos/pausados, scripts, estados locais, CRM SQLite, gaps e plano seguro local → Supabase.
 - `../../reports/governance/guardrails-readonly-admin-inspection-packet-2026-05-25.md` — packet para separar inspeção administrativa read-only de mutações em guardrails de ferramentas.
 
 ## Guardrails
