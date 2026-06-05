@@ -331,6 +331,18 @@ Saídas locais:
 
 **Critério de pronto P1.4 atingido:** teste local `python3 -m unittest test_zipper_action_packet_renderer -v` passa e o gate `activation_decision(..., explicit_approval=False)` mantém entrega bloqueada.
 
+### P1 — Zipper editorial packets + delivery proposal — P1.5 concluído em 2026-06-05
+
+**Implementado:** pacote Lucas-facing v2 no renderer, regressões editoriais e função `delivery_contract_proposal()`.
+
+**Relatório:** `areas/operacoes/reports/lcmordomo-p15-zipper-editorial-delivery-contract-2026-06-05.md`.
+
+**Resultado:** os 3 pacotes ficaram mais curtos e orientados a decisão: decisão para Lucas, contexto curto, cuidado, recomendação, draft e opções. Removidos ruídos de timestamp/canais de outbound, códigos de risco no texto Lucas-facing e termos de classificador.
+
+**Contrato proposto, não ativado:** `telegram:origin`, sob demanda ou 1 vez ao dia somente se houver pacote, máximo 3 pacotes, vazio silencioso, kill-switch para log/classificador/PII/pacote sem decisão/excesso de itens.
+
+**Critério de pronto P1.5 atingido:** suíte local ampliada para 7 testes, renderer gera JSON preview com proposta de entrega e `activation_decision(..., explicit_approval=False)` segue bloqueando cron/Telegram.
+
 ### P2 — Pessoal/Calendário
 
 **Ação:** formalizar contrato e avaliar reativação do calendar watcher.
@@ -375,14 +387,13 @@ Não enviar:
 
 ## 7. Próxima execução recomendada
 
-Próxima frente segura: **P1.5 revisão editorial dos pacotes + proposta de contrato de entrega**.
+Próxima frente segura: **P1.6 pacote de aprovação para ativação ou on-demand**.
 
 Sequência:
 
-1. Melhorar o texto dos 3 pacotes para reduzir duplicação, calibrar tom Zipper e deixar a decisão mais clara.
-2. Gerar preview local v2 e rodar a suíte P1.4 contra o novo formato.
-3. Propor contrato de entrega sem ativar nada: destino, frequência, limite máximo de pacotes, modo silencioso e critérios de kill-switch.
-4. Só criar/reativar cron ou Telegram se Lucas aprovar explicitamente formato, destino e cadência no turno atual.
-5. Depois disso, mapear ponte Supabase Zipper ou executor genérico de follow-up, conforme prioridade.
+1. Consolidar os 3 pacotes v2 e o contrato de entrega em uma decisão única para Lucas.
+2. Perguntar explicitamente se ativa entrega `telegram:origin`, sob demanda/diária condicional, máximo 3 pacotes, vazio silencioso e kill-switch.
+3. Se Lucas aprovar no turno atual, preparar implementação mínima de entrega com testes e sem tocar WhatsApp/e-mail/Supabase.
+4. Se Lucas não aprovar, manter apenas renderer local/on-demand e seguir para ponte Supabase Zipper ou executor genérico de follow-up.
 
 Parar antes de qualquer ação que envolva Docker/VPS/restart/deploy/secrets/banco de produção/Supabase write ou envio externo fora das classes A1/A2 já autorizadas.
