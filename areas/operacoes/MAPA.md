@@ -94,6 +94,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `reports/lcmordomo-os-next-steps-2026-06-05.md` — próximos passos validados para evoluir o LC Mordomo OS.
 - `reports/lcmordomo-p0-watchdog-parser-2026-06-05.md` — implementação P0 do watchdog de crons críticos e parser robusto `wacli --json`.
 - `reports/lcmordomo-p1-zipper-canonical-store-2026-06-05.md` — implementação P1.1 do store canônico local do Subagente Zipper: `contact`, `lead_enquiry`, `artist_interest`, `followup`, `suppression`, `sent_action` e `decision_packet` derivados do runtime Mordomo.
+- `reports/lcmordomo-p12-zipper-decision-inbox-dryrun-2026-06-05.md` — P1.2 dry-run local do Decision Inbox Zipper: separa decisão real de follow-up seguro, erro técnico, enriquecimento pendente e destinatário em blocklist dura.
 - `prds/company-decision-memory-prd-2026-05-17.md` — PRD da regra de memória de decisões por empresa.
 - `projetos/hermes-brain-improvement-system.md` — sistema contínuo para transformar material externo em melhorias seguras do Brain.
 - `projetos/lcmordomo-os-control-plan.md` — plano de controle operacional vivo do LC Mordomo OS: módulos, crons verificados, riscos, backlog P0/P1 e critérios de pronto.

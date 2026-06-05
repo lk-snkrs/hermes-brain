@@ -286,11 +286,23 @@ Objetos canônicos criados:
 
 **Relatório:** `areas/operacoes/reports/lcmordomo-p1-zipper-canonical-store-2026-06-05.md`.
 
-### P1 — Decision Inbox action-ready
+### P1 — Decision Inbox action-ready — P1.2 dry-run concluído em 2026-06-05
 
-**Ação:** redesenhar digest para receber só bloqueios/decisões reais.
+**Implementado:** `/opt/data/profiles/mordomo/scripts/zipper_canonical_queries.py`.
 
-**Critério de pronto:** zero alertas de follow-up seguro; alertas comerciais vêm com draft, fonte e recomendação.
+Consultas locais criadas:
+
+- `summary` — resumo operacional do `zipper_canonical.sqlite`;
+- `trace <termo>` — rastreio ponta-a-ponta por contato/artista/lead;
+- `decision-dryrun --write` — classificação local de `decision_packet` em buckets action-ready.
+
+**Resultado do dry-run:** 15 candidatos brutos viraram apenas 3 `action_ready_candidate` reais. O restante foi separado em `technical_error_local`, `suppress_followup_noise`, `review_before_alert`, `needs_enrichment` e `hard_recipient_blocklist`.
+
+**Correção aplicada durante P1.2:** destinatários bloqueados por regra operacional, como Ivan Grilo e LK Sneakers, não podem virar candidato comum de envio/alerta; foram classificados como `hard_recipient_blocklist`.
+
+**Relatório:** `areas/operacoes/reports/lcmordomo-p12-zipper-decision-inbox-dryrun-2026-06-05.md`.
+
+**Critério de pronto P1.2 atingido:** Decision Inbox agora tem filtro local para não transformar follow-up seguro, erro técnico ou destinatário bloqueado em alerta solto para Lucas. Ainda não há envio Telegram/cron; é dry-run local.
 
 ### P2 — Pessoal/Calendário
 
@@ -336,14 +348,14 @@ Não enviar:
 
 ## 7. Próxima execução recomendada
 
-Próxima frente segura: **P1.2 Zipper canonical queries + Decision Inbox action-ready**.
+Próxima frente segura: **P1.3 Zipper action packet renderer**.
 
 Sequência:
 
-1. Criar consultas locais sobre `zipper_canonical.sqlite` para rastrear lead ponta-a-ponta por contato/artista.
-2. Separar `decision_packet` real de estados técnicos/ruído (`manual_send_failed`, `due_alerted`, `needs_lucas_decision`).
-3. Desenhar o pacote Telegram action-first apenas para decisões comerciais reais: contexto, fonte, risco, recomendação e draft.
-4. Manter follow-up A1/A2 automático fora do Decision Inbox.
-5. Só considerar cron/digest depois de dry-run local e revisão de UX.
+1. Gerar pacote action-first somente para os 3 `action_ready_candidate` do dry-run.
+2. Incluir em cada pacote: contexto, fonte, risco, recomendação, draft e bloqueio explícito de envio sem aprovação.
+3. Manter `hard_recipient_blocklist`, `technical_error_local`, `suppress_followup_noise`, `review_before_alert` e `needs_enrichment` fora do Telegram.
+4. Rodar snapshot local do renderer e teste de termos proibidos de cron/log/JSON.
+5. Só depois decidir se vale reativar um digest/cron; por enquanto fica local.
 
 Parar antes de qualquer ação que envolva Docker/VPS/restart/deploy/secrets/banco de produção/Supabase write ou envio externo fora das classes A1/A2 já autorizadas.
