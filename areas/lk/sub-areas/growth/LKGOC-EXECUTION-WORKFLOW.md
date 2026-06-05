@@ -2,7 +2,7 @@
 
 ## Fluxo obrigatório
 
-1. Abrir `LKGOC-PADRAO-CANONICO.md`.
+1. Abrir `LKGOC-PADRAO-CANONICO.md` e `references/LKGOC-BEFORE-NEW-COLLECTION-CHECKLIST-20260605.md`.
 2. Definir nível: Full / Lite / Correção / Não-LKGOC.
 3. Preencher `LKGOC-INPUT-CONTRACT.md`.
 4. Preencher `LKGOC-EVIDENCE-PACKET.md`.

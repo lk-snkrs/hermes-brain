@@ -1,6 +1,6 @@
 # LK Merchant Center Feed Read-only Router, 2026-05-11
 
-Generated at: `2026-05-28T12:32:00.062313+00:00`
+Generated at: `2026-06-04T09:50:19.874855+00:00`
 
 ## Veredito
 
@@ -10,180 +10,180 @@ Merchant Center entrou na Fase 6 como fonte `fact_merchant_center`: status de fe
 
 - Escopo de leitura: até 30000 produtos; full catalog esperado: True
 - Merchant Center ID presente no Doppler: True
-- Produtos/status lidos: 20443
-- Itens roteados na fila: 1746
-- P1: 1743
-- P2: 3
-- Produtos com issue de item: 1743
-- Produtos com destino reprovado: 37
+- Produtos/status lidos: 21402
+- Itens roteados na fila: 12773
+- P1: 12773
+- P2: 0
+- Produtos com issue de item: 12773
+- Produtos com destino reprovado: 11909
 - Produtos cruzando oportunidade GSC: 4
 - Writes liberados agora: 0
 
 ## Top grupos de problema
 
-### 1. P1 · feed_issue_fix_preview · 1102 itens
+### 1. P1 · feed_issue_fix_preview · 10399 itens
+- Issue codes: mhlsf_full_missing_valid_link_template
+- Destinos reprovados: Shopping
+- Amostras de produto: local:pt:BR:LIA_LK-5524446-L, local:pt:BR:LIA_LK-5524446-XS, local:pt:BR:LIA_LK-5524446-M, local:pt:BR:LIA_LK-5524446-S, local:pt:BR:LIA_LK-5524446-XL
+- Status: `read_only_preview`
+
+### 2. P1 · feed_issue_fix_preview · 1322 itens
+- Issue codes: landing_page_error
+- Destinos reprovados: DisplayAds, Shopping, SurfacesAcrossGoogle
+- Amostras de produto: online:pt:BR:2162246425358063315, online:pt:BR:JCQ007, online:pt:BR:JCQ005, online:pt:BR:JCQ013, online:pt:BR:JCQ012
+- Status: `read_only_preview`
+
+### 3. P1 · feed_issue_fix_preview · 614 itens
 - Issue codes: missing_item_attribute_for_product_type
 - Destinos reprovados: no_disapproved_destination
 - Amostras de produto: online:pt:BR:4096148038527481596, online:pt:BR:12020378807434295587, online:pt:BR:324917400624183249, online:pt:BR:14748919792779393441, online:pt:BR:13632860601308160972
 - Status: `read_only_preview`
 
-### 2. P1 · feed_issue_fix_preview · 303 itens
+### 4. P1 · feed_issue_fix_preview · 155 itens
 - Issue codes: price_updated, strikethrough_price_updated
 - Destinos reprovados: no_disapproved_destination
-- Amostras de produto: online:pt:BR:TB010061-713-3, online:pt:BR:TB010061-713-1, online:pt:BR:TB010061-713-2, online:pt:BR:TB010061-713-6, online:pt:BR:APH-7284190-XL
+- Amostras de produto: online:pt:BR:TB010061-713-1, online:pt:BR:TB010061-713-2, online:pt:BR:TB010061-713-6, online:pt:BR:CU2477010, online:pt:BR:PAC-1936990-L
 - Status: `read_only_preview`
 
-### 3. P1 · feed_issue_fix_preview · 228 itens
+### 5. P1 · feed_issue_fix_preview · 49 itens
+- Issue codes: landing_page_error, missing_item_attribute_for_product_type
+- Destinos reprovados: DisplayAds, Shopping, SurfacesAcrossGoogle
+- Amostras de produto: online:pt:BR:7866599083713103688, online:pt:BR:11870629-1, online:pt:BR:Aime5, online:pt:BR:ALO-1465950-OS, online:pt:BR:ALO-4485982-S
+- Status: `read_only_preview`
+
+### 6. P1 · feed_issue_fix_preview · 36 itens
 - Issue codes: price_updated
 - Destinos reprovados: no_disapproved_destination
-- Amostras de produto: online:pt:BR:TB010061-713-4, online:pt:BR:TB010061-713-7, online:pt:BR:205759610-9, online:pt:BR:205759610-6, online:pt:BR:205759610-7
+- Amostras de produto: online:pt:BR:205759610-8, online:pt:BR:205759610-2, online:pt:BR:205759610-4, online:pt:BR:w6334r-9, online:pt:BR:JQ6446-5
 - Status: `read_only_preview`
 
-### 4. P1 · feed_issue_fix_preview · 38 itens
+### 7. P1 · feed_issue_fix_preview · 32 itens
 - Issue codes: strikethrough_price_updated
 - Destinos reprovados: no_disapproved_destination
-- Amostras de produto: online:pt:BR:PLAYPRINTED-2, online:pt:BR:PLAYPRINTED-3, online:pt:BR:DZ5485031-5, online:pt:BR:DZ5485031-2, online:pt:BR:DZ6333083
+- Amostras de produto: online:pt:BR:DZ5485031-5, online:pt:BR:DZ5485031-3, online:pt:BR:DZ5485031-2, online:pt:BR:DZ6333083, online:pt:BR:DZ6333083-1
 - Status: `read_only_preview`
 
-### 5. P1 · feed_issue_fix_preview · 35 itens
-- Issue codes: local_stores_lack_inventory
-- Destinos reprovados: LocalSurfacesAcrossGoogle
-- Amostras de produto: local:pt:BR:LIA_205759610-4, local:pt:BR:LIA_205759610-5, local:pt:BR:LIA_205759610-6, local:pt:BR:LIA_205759610-2, local:pt:BR:LIA_205759610-7
+### 8. P1 · feed_issue_fix_preview · 27 itens
+- Issue codes: local_stores_lack_inventory, mhlsf_full_missing_valid_link_template
+- Destinos reprovados: LocalSurfacesAcrossGoogle, Shopping
+- Amostras de produto: local:pt:BR:LIA_30095-1, local:pt:BR:LIA_205759610-4, local:pt:BR:LIA_205759610-5, local:pt:BR:LIA_205759610-6, local:pt:BR:LIA_205759610-2
 - Status: `read_only_preview`
 
-### 6. P1 · feed_issue_fix_preview · 14 itens
-- Issue codes: restricted_gtin
-- Destinos reprovados: no_disapproved_destination
-- Amostras de produto: online:pt:BR:U9060ZGE-9, online:pt:BR:U9060ZGE-4, online:pt:BR:555088108-5, online:pt:BR:553558612-6, online:pt:BR:553558612-7
+### 9. P1 · feed_issue_fix_preview · 26 itens
+- Issue codes: landing_page_error, price_updated, strikethrough_price_updated
+- Destinos reprovados: DisplayAds, Shopping, SurfacesAcrossGoogle
+- Amostras de produto: online:pt:BR:20046-3, online:pt:BR:dd1873-100-1, online:pt:BR:FQ9112100-3, online:pt:BR:HQ6998-600-11, online:pt:BR:HQ6998-600-9
 - Status: `read_only_preview`
 
-### 7. P1 · feed_issue_fix_preview · 6 itens
-- Issue codes: utf8_encoding_error
-- Destinos reprovados: no_disapproved_destination
-- Amostras de produto: online:pt:BR:CLC-0067294-XXL, online:pt:BR:CLC-0067294-L, online:pt:BR:CLC-0067294-M, online:pt:BR:CLC-0067294-XS, online:pt:BR:CLC-0067294-S
+### 10. P1 · feed_issue_fix_preview · 19 itens
+- Issue codes: item_missing_required_attribute, landing_page_error, missing_item_attribute_for_product_type
+- Destinos reprovados: SurfacesAcrossGoogle
+- Amostras de produto: online:pt:BR:10695397335246538087, online:pt:BR:12603524085191418332, online:pt:BR:2258634078163248862, online:pt:BR:6562590402534581177, online:pt:BR:10002025469927148791
 - Status: `read_only_preview`
 
-### 8. P1 · feed_issue_fix_preview · 4 itens
-- Issue codes: condition_updated_from_detected
-- Destinos reprovados: no_disapproved_destination
-- Amostras de produto: local:pt:BR:LIA_IG6192-3, local:pt:BR:LIA_IG6192-2, local:pt:BR:LIA_IG6192-4, local:pt:BR:LIA_IG6192-1
+### 11. P1 · feed_issue_fix_preview · 16 itens
+- Issue codes: landing_page_error, missing_item_attribute_for_product_type
+- Destinos reprovados: SurfacesAcrossGoogle
+- Amostras de produto: online:pt:BR:17132474926828267951, online:pt:BR:8259662579508245136, online:pt:BR:8370112528719469130, online:pt:BR:2421339187503443526, online:pt:BR:5081227975339163665
 - Status: `read_only_preview`
 
-### 9. P2 · gsc_feed_pdp_alignment_preview · 3 itens
-- Issue codes: no_item_issue_code
-- Destinos reprovados: no_disapproved_destination
-- Amostras de produto: online:pt:BR:HQ4307-001-4, local:pt:BR:LIA_U9060BLC-9, online:pt:BR:HQ2050-103-10
-- Status: `read_only_preview`
-
-### 10. P1 · feed_issue_fix_preview · 2 itens
-- Issue codes: coupon_gtin
-- Destinos reprovados: no_disapproved_destination
-- Amostras de produto: online:pt:BR:FZ4167-200-6, local:pt:BR:LIA_FZ4167-200-6
-- Status: `read_only_preview`
-
-### 11. P1 · feed_issue_fix_preview · 2 itens
-- Issue codes: image_single_color
-- Destinos reprovados: no_disapproved_destination
-- Amostras de produto: local:pt:BR:LIA_U9060PSD-5, local:pt:BR:LIA_U9060PSD-1
-- Status: `read_only_preview`
-
-### 12. P1 · feed_issue_fix_preview · 1 itens
-- Issue codes: availability_updated
-- Destinos reprovados: no_disapproved_destination
-- Amostras de produto: online:pt:BR:20054-3
+### 12. P1 · feed_issue_fix_preview · 10 itens
+- Issue codes: landing_page_error, price_updated
+- Destinos reprovados: DisplayAds, Shopping, SurfacesAcrossGoogle
+- Amostras de produto: online:pt:BR:205759610-9, online:pt:BR:205759610-6, online:pt:BR:205759610-7, online:pt:BR:205759610-5, online:pt:BR:205759610-3
 - Status: `read_only_preview`
 
 ## Amostras de fila individual
 
 ### 1. P1 · feed_issue_fix_preview
-- Produto: Camisa Aphase Check - Light Yellow Bege
-- Link: https://lksneakers.com.br/products/camisa-aphase-check-light-yellow-bege?currency=BRL&country=BR&variant=47007457738974&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e
-- Issues: 9 · availability_updated, availability_updated, availability_updated, price_updated, price_updated
-- Destinos reprovados: nenhum
+- Produto: 38
+- Link: https://lksneakers.com.br/products/tenis-adidas-samba-og-cream-white-cardboard-creme
+- Issues: 9 · missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type
+- Destinos reprovados: Shopping, DisplayAds, SurfacesAcrossGoogle
 - Destinos pendentes: nenhum
 - Motivo: produto com issue/reprovação em Merchant Center
 - Status: `read_only_preview`
 
 ### 2. P1 · feed_issue_fix_preview
-- Produto: 34
-- Link: https://lksneakers.com.br/products/tenis-adidas-samba-og-silver-metallic-cracked-leather-prateado
-- Issues: 6 · missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type
-- Destinos reprovados: nenhum
+- Produto: Jaqueta Aphase Relaxed Denim- Black Preto
+- Link: https://lksneakers.com.br/products/jaqueta-aphase-relaxed-denim-black-preto?currency=BRL&country=BR&variant=47007281283294&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e
+- Issues: 9 · landing_page_error, landing_page_error, landing_page_error, price_updated, price_updated
+- Destinos reprovados: Shopping, DisplayAds, SurfacesAcrossGoogle
 - Destinos pendentes: nenhum
 - Motivo: produto com issue/reprovação em Merchant Center
 - Status: `read_only_preview`
 
 ### 3. P1 · feed_issue_fix_preview
-- Produto: 35
-- Link: https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-slip-on-white-pure-silver-prateado
-- Issues: 6 · missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type
-- Destinos reprovados: nenhum
+- Produto: Tênis Dunk Low Next Nature Pink Pale Coral Rosa
+- Link: https://lksneakers.com.br/products/dunk-low-next-nature-pink-pale-coral?currency=BRL&country=BR&variant=44269130940638&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e
+- Issues: 9 · landing_page_error, landing_page_error, landing_page_error, price_updated, price_updated
+- Destinos reprovados: Shopping, DisplayAds, SurfacesAcrossGoogle
 - Destinos pendentes: nenhum
 - Motivo: produto com issue/reprovação em Merchant Center
 - Status: `read_only_preview`
 
 ### 4. P1 · feed_issue_fix_preview
-- Produto: 35
-- Link: https://lksneakers.com.br/products/tenis-nike-zoom-vomero-5-metallic-silver-blue-tint-prateado-azul
-- Issues: 6 · missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type
-- Destinos reprovados: nenhum
+- Produto: Tênis Nike Air Jordan 1 Low Se "Glitter Swoosh" Branco
+- Link: https://lksneakers.com.br/products/tenis-air-jordan-1-low-se-gs-glitter-swoosh-branco-1?currency=BRL&country=BR&variant=44746890608862&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e
+- Issues: 9 · landing_page_error, landing_page_error, landing_page_error, price_updated, price_updated
+- Destinos reprovados: Shopping, DisplayAds, SurfacesAcrossGoogle
 - Destinos pendentes: nenhum
 - Motivo: produto com issue/reprovação em Merchant Center
 - Status: `read_only_preview`
 
 ### 5. P1 · feed_issue_fix_preview
-- Produto: 35
-- Link: https://lksneakers.com.br/products/tenis-new-balance-1906l-silver-metallic-black-prata
-- Issues: 6 · missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type
-- Destinos reprovados: nenhum
+- Produto: Tênis Nike Air Jordan 1 Retro Low OG Chicago (2025) Vermelho
+- Link: https://lksneakers.com.br/products/tenis-nike-air-jordan-1-retro-low-og-chicago-2025-vermelho?currency=BRL&country=BR&variant=47670376661214&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e
+- Issues: 9 · landing_page_error, landing_page_error, landing_page_error, price_updated, price_updated
+- Destinos reprovados: Shopping, DisplayAds, SurfacesAcrossGoogle
 - Destinos pendentes: nenhum
 - Motivo: produto com issue/reprovação em Merchant Center
 - Status: `read_only_preview`
 
 ### 6. P1 · feed_issue_fix_preview
-- Produto: 35
-- Link: https://lksneakers.com.br/products/tenis-nike-zoom-vomero-5-metallic-silver-platinum-violet-prateado-violeta
-- Issues: 6 · missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type
-- Destinos reprovados: nenhum
+- Produto: Tênis Nike Air Jordan 1 Retro Low OG Chicago (2025) Vermelho
+- Link: https://lksneakers.com.br/products/tenis-nike-air-jordan-1-retro-low-og-chicago-2025-vermelho?currency=BRL&country=BR&variant=47670376595678&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e
+- Issues: 9 · landing_page_error, landing_page_error, landing_page_error, price_updated, price_updated
+- Destinos reprovados: Shopping, DisplayAds, SurfacesAcrossGoogle
 - Destinos pendentes: nenhum
 - Motivo: produto com issue/reprovação em Merchant Center
 - Status: `read_only_preview`
 
 ### 7. P1 · feed_issue_fix_preview
-- Produto: 35
-- Link: https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-glitter-pack-pure-silver-prateado
-- Issues: 6 · missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type
-- Destinos reprovados: nenhum
+- Produto: Tênis Nike Dunk Low Black Paisley Preto
+- Link: https://lksneakers.com.br/products/nike-dunk-low-black-paisley?currency=BRL&country=BR&variant=44265080586462&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e
+- Issues: 9 · landing_page_error, landing_page_error, landing_page_error, price_updated, price_updated
+- Destinos reprovados: Shopping, DisplayAds, SurfacesAcrossGoogle
 - Destinos pendentes: nenhum
 - Motivo: produto com issue/reprovação em Merchant Center
 - Status: `read_only_preview`
 
 ### 8. P1 · feed_issue_fix_preview
-- Produto: 37
-- Link: https://lksneakers.com.br/products/tenis-new-balance-530-beige-angora-creme-1069960456
-- Issues: 6 · missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type, missing_item_attribute_for_product_type
-- Destinos reprovados: nenhum
+- Produto: Tênis Nike Dunk Low Fossil Rose Azul/Rosa
+- Link: https://lksneakers.com.br/products/nike-dunk-low-fossil-rose?currency=BRL&country=BR&variant=44265073148126&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e
+- Issues: 9 · landing_page_error, landing_page_error, landing_page_error, price_updated, price_updated
+- Destinos reprovados: Shopping, DisplayAds, SurfacesAcrossGoogle
 - Destinos pendentes: nenhum
 - Motivo: produto com issue/reprovação em Merchant Center
 - Status: `read_only_preview`
 
 ## Top issue codes
 
-- missing_item_attribute_for_product_type: 2495
-- price_updated: 1596
-- strikethrough_price_updated: 1029
-- local_stores_lack_inventory: 35
-- restricted_gtin: 23
+- mhlsf_full_missing_valid_link_template: 10441
+- landing_page_error: 4270
+- missing_item_attribute_for_product_type: 1719
+- price_updated: 681
+- strikethrough_price_updated: 648
+- local_stores_lack_inventory: 54
+- item_missing_required_attribute: 36
+- restricted_gtin: 30
+- restricted_nfs_policy_violation: 19
+- availability_updated: 18
 - utf8_encoding_error: 18
-- availability_updated: 6
-- condition_updated_from_detected: 4
-- restricted_nfs_policy_violation: 4
-- coupon_gtin: 3
-- image_single_color: 2
-- reserved_gtin: 2
-- pause_expired: 2
-- sexual_interests_policy_violation: 1
-- vehicles_policy_violation: 1
+- condition_updated_from_detected: 8
+- image_link_internal_error: 6
+- sexual_interests_policy_violation: 5
+- image_single_color: 4
 
 ## Guardrails
 

@@ -10,6 +10,8 @@ O agente em runtime lê e escreve no Brain. O Brain não substitui dados vivos: 
 
 ## Modelo mental canônico
 
+Regra operacional reforçada pelo material Bruno/Hermes 2026-06-04: agente é funcionário operacional, não chatbot. Antes de exigir autonomia, o agente precisa de caso de uso real, Brain/contexto organizado, skills, tools, rotina/heartbeat, permissões mínimas, secret handling e governança. Padrão recomendado: `inbox → score/classificação → roteamento → skill → output/receipt → feedback → melhoria do processo`.
+
 ```text
 Lucas / Telegram
   ↓
