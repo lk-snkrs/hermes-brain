@@ -91,6 +91,8 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `prds/lcmordomo-os-prd-2026-06-05.md` — PRD v0.1 do LC Mordomo OS: agente principal único para Lucas com subagentes especializados, memória/Brain/skills/crons próprios por domínio, Decision Inbox, CRM/follow-up global roteado e governança A0-A4.
 - `prds/lcmordomo-subagente-zipper-migration-prd-2026-06-05.md` — PRD v0.1 para migrar/ensinar os fluxos atuais do LC Mordomo ao Subagente Zipper lógico: ZPR/PDF, drafts de e-mail, WhatsApp pós-PDF, CRM de interesse/supressão e Decision Inbox, com Supabase Zipper como destino principal e execução híbrida A2/A3.
 - `prds/lcmordomo-whatsapp-pessoal-followup-autoack-prd-2026-06-05.md` — PRD do módulo LC Mordomo OS para follow-up e auto-ack no WhatsApp pessoal: agradecimentos pós-PDF, seed de contexto por fila, contato não salvo mas lead registrado, cron silent-OK e dedupe/auditoria.
+- `reports/lcmordomo-os-next-steps-2026-06-05.md` — próximos passos validados para evoluir o LC Mordomo OS.
+- `reports/lcmordomo-p0-watchdog-parser-2026-06-05.md` — implementação P0 do watchdog de crons críticos e parser robusto `wacli --json`.
 - `prds/company-decision-memory-prd-2026-05-17.md` — PRD da regra de memória de decisões por empresa.
 - `projetos/hermes-brain-improvement-system.md` — sistema contínuo para transformar material externo em melhorias seguras do Brain.
 - `projetos/lcmordomo-os-control-plan.md` — plano de controle operacional vivo do LC Mordomo OS: módulos, crons verificados, riscos, backlog P0/P1 e critérios de pronto.

@@ -232,25 +232,37 @@ Leitura: o coração atual do LC Mordomo OS já é Zipper/follow-up. A próxima 
 
 ## 5. Backlog priorizado
 
-### P0 — Blindar follow-up seguro contra nova parada
+### P0 — Blindar follow-up seguro contra nova parada — concluído em 2026-06-05
 
-**Ação:** implementar/registrar watchdog local para crons críticos de follow-up seguro.
+**Implementado:** `/opt/data/profiles/mordomo/scripts/lcmordomo_critical_cron_watchdog.py`.
 
-Escopo inicial:
+Escopo ativo:
 
-- verificar `Mordomo global WhatsApp watcher — Lucas pessoal` enabled/scheduled;
-- verificar `ZPR Enquiry Form watcher — approval-gated` enabled/scheduled;
-- verificar `Zipper direct main e-mail monitor` enabled/scheduled;
-- alertar Lucas só se houver falha real ou impossibilidade de self-heal seguro;
-- não reiniciar infra, não alterar Docker/VPS, não enviar mensagens externas.
+- verifica `Mordomo global WhatsApp watcher — Lucas pessoal` enabled/scheduled;
+- verifica `ZPR Enquiry Form watcher — approval-gated` enabled/scheduled;
+- verifica `Zipper direct main e-mail monitor` enabled/scheduled;
+- reativa localmente jobs críticos pausados quando a correção é segura/reversível;
+- alerta Lucas só se houver falha real ou impossibilidade de self-heal seguro;
+- não reinicia infra, não altera Docker/VPS, não envia mensagens externas.
 
-**Critério de pronto:** cron crítico pausado ou falhando não passa despercebido; se o ajuste for permitido e local/reversível, o sistema corrige; se não, gera alerta limpo.
+**Cron registrado:** `LC Mordomo OS critical cron watchdog`, ID `lcmcw202606`, every 10m, `no_agent=true`, `deliver=local`.
 
-### P0 — Padronizar parser `wacli --json`
+**Critério de pronto atingido:** dry-run e run real retornaram `actions=[]`, `alerts=[]`, `changed=false`; crons críticos estavam enabled/scheduled/ok.
 
-**Ação:** extrair/replicar função robusta para stdout misto com logs + JSON final.
+### P0 — Padronizar parser `wacli --json` — concluído em 2026-06-05
 
-**Critério de pronto:** scripts de follow-up não quebram quando `wacli` imprime diagnóstico antes do JSON; qualquer falha pós-envio reconcilia antes de retry.
+**Implementado:** `/opt/data/profiles/mordomo/scripts/mordomo_json_utils.py` com `parse_mixed_json()` / `wacli_data()`.
+
+Aplicado nos watchers ativos:
+
+- `mordomo_whatsapp_global_watch.py`;
+- `zipper_whatsapp_response_watch.py`.
+
+`zipper_zpr_enquiry_watcher.py` já usava parser tolerante equivalente em seu caminho de envio.
+
+**Critério de pronto atingido:** fixtures cobrem JSON limpo, logs antes do JSON, objeto aninhado antes de `success:true` e payload lista; `py_compile` OK.
+
+Relatório: `areas/operacoes/reports/lcmordomo-p0-watchdog-parser-2026-06-05.md`.
 
 ### P1 — Consolidar Zipper MVP runtime → objetos
 
