@@ -319,6 +319,18 @@ Saídas locais:
 
 **Critério de pronto P1.3 atingido:** renderer recompõe a classificação a partir do SQLite local, gera somente pacotes action-first, passa regressão de termos proibidos de cron/log/classificador e não envia nada.
 
+### P1 — Zipper packet QA + activation decision — P1.4 concluído em 2026-06-05
+
+**Implementado:** `/opt/data/profiles/mordomo/scripts/test_zipper_action_packet_renderer.py` e função `activation_decision()` no renderer.
+
+**Relatório:** `areas/operacoes/reports/lcmordomo-p14-zipper-packet-qa-activation-decision-2026-06-05.md`.
+
+**Regressões cobertas:** 3 pacotes positivos, 12 itens negativos suprimidos, contrato Lucas-facing, termos proibidos, PII/JID masking e bloqueio de ativação sem aprovação explícita.
+
+**Decisão de ativação:** bloqueada. O renderer está pronto para QA local, mas não pode criar cron nem enviar Telegram sem aprovação explícita do Lucas para formato, destino e cadência.
+
+**Critério de pronto P1.4 atingido:** teste local `python3 -m unittest test_zipper_action_packet_renderer -v` passa e o gate `activation_decision(..., explicit_approval=False)` mantém entrega bloqueada.
+
 ### P2 — Pessoal/Calendário
 
 **Ação:** formalizar contrato e avaliar reativação do calendar watcher.
@@ -363,14 +375,14 @@ Não enviar:
 
 ## 7. Próxima execução recomendada
 
-Próxima frente segura: **P1.4 Zipper packet QA + activation decision**.
+Próxima frente segura: **P1.5 revisão editorial dos pacotes + proposta de contrato de entrega**.
 
 Sequência:
 
-1. Revisar os 3 pacotes P1.3 como formato Lucas-facing: ação clara, draft adequado, contexto suficiente e zero log/classificador.
-2. Criar fixture/regressão para renderer com estes casos e casos negativos (`hard_recipient_blocklist`, erro técnico, follow-up seguro).
-3. Definir contrato de entrega se virar cron: destino, frequência, limite de pacotes, termos proibidos e modo silencioso quando não houver decisão.
-4. Manter sem Telegram/cron até aprovação explícita do formato e da cadência.
+1. Melhorar o texto dos 3 pacotes para reduzir duplicação, calibrar tom Zipper e deixar a decisão mais clara.
+2. Gerar preview local v2 e rodar a suíte P1.4 contra o novo formato.
+3. Propor contrato de entrega sem ativar nada: destino, frequência, limite máximo de pacotes, modo silencioso e critérios de kill-switch.
+4. Só criar/reativar cron ou Telegram se Lucas aprovar explicitamente formato, destino e cadência no turno atual.
 5. Depois disso, mapear ponte Supabase Zipper ou executor genérico de follow-up, conforme prioridade.
 
 Parar antes de qualquer ação que envolva Docker/VPS/restart/deploy/secrets/banco de produção/Supabase write ou envio externo fora das classes A1/A2 já autorizadas.
