@@ -1,0 +1,90 @@
+# Auditoria — termos operacionais em Product SEO title/description
+
+- Timestamp UTC: 20260605T182525Z
+- Produtos com hits: 94
+
+## Contagens
+- entrega_sp: 2
+- pronta_entrega: 94
+
+## Amostras
+- `adidas-samba-og-white-black-gum` — seo_description:pronta_entrega
+- `tenis-nike-dunk-low-cacao-wow-marrom` — seo_description:pronta_entrega
+- `new-balance-530-white-natural-indigo-1` — seo_description:pronta_entrega
+- `tenis-adidas-samba-og-maroon-cream-white-vinho` — seo_description:pronta_entrega
+- `tenis-adidas-samba-og-cream-white-core-black-bege` — seo_description:pronta_entrega
+- `tenis-air-jordan-4-retro-metallic-gold-branco` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-chrome-silver-prata` — seo_description:pronta_entrega
+- `tenis-new-balance-9060-sea-salt-concrete-branco` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-brich-green-branco` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-white-blue-branco` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-brich-peacoat-bege` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-sd-kill-bill-amarelo` — seo_description:pronta_entrega
+- `tenis-new-balance-9060-sea-salt-moonbeam-branco` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-beige-grass-green-marrom` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-black-and-white-preto` — seo_description:pronta_entrega
+- `tenis-new-balance-9060-bone-sparrow-marrom` — seo_description:pronta_entrega
+- `jason-markk-essential-kit` — seo_description:pronta_entrega
+- `tenis-air-jordan-1-low-ps-mocha-marrom` — seo_description:pronta_entrega
+- `tenis-nike-sb-dunk-low-x-the-wizard-of-oz-poppy-field-vermelho` — seo_description:pronta_entrega
+- `tenis-adidas-yeezy-boost-350-v2-zyon-marrom` — seo_description:pronta_entrega
+- `tenis-adidas-yeezy-boost-350-v2-butter-amarelo` — seo_description:pronta_entrega
+- `jason-markk-repel-spray` — seo_description:pronta_entrega
+- `tenis-adidas-sl72-og-maroon-almost-yellow-marrom` — seo_description:pronta_entrega
+- `tenis-air-jordan-1-low-og-year-of-snake-2025-cinza` — seo_description:pronta_entrega
+- `tenis-nike-dunk-low-year-of-the-snake-2025-verde` — seo_description:pronta_entrega
+- `tenis-nike-air-force-1-07-le-year-of-snake-2025-branco` — seo_description:pronta_entrega
+- `tenis-adidas-samba-og-year-the-snake-2025-branco` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-oatmeal-ginger-peach-rosa` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-sd-brich-peacoat-bege` — seo_description:pronta_entrega
+- `camiseta-saint-studio-classy-suedine-supima-chairs-branco` — seo_description:pronta_entrega
+- `tenis-adidas-samba-og-collegiate-green-leopard-marrom` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-sd-birch-peacoat-bege` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-sd-cream-black-orange-bege` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-sd-cream-birch-bege` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-sd-birch-metropolis-bege` — seo_description:pronta_entrega
+- `tenis-nike-dunk-low-retro-qs-halloween-skull-verde` — seo_description:pronta_entrega
+- `lip-case-rhode-by-hailey-bieber` — seo_description:pronta_entrega
+- `the-peptide-lip-tints-rhode-multicolor` — seo_description:pronta_entrega
+- `tenis-air-jordan-1-retro-high-og-black-toe-reimagined-vermelho` — seo_description:pronta_entrega
+- `tenis-new-balance-9060-sea-salt-raincloud-cinza` — seo_description:pronta_entrega
+- `camiseta-masp-x-leonilson-sem-titulo-marrom` — seo_description:pronta_entrega
+- `onitsuka-tiger-mexico-66-sd-metallic-series-desert-camp-cream-dourado` — seo_description:pronta_entrega
+- `camiseta-lululemon-hold-tight-henley` — seo_description:pronta_entrega, seo_description:entrega_sp
+- `bolsa-lululemon-city-essentials` — seo_description:pronta_entrega
+- `jaqueta-lululemon-define-nulu` — seo_description:pronta_entrega, seo_description:entrega_sp
+- `tenis-onitsuka-tiger-mexico-66-slip-on-pink-cream-rosa` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-kill-bill-slip-on-amarelo` — seo_description:pronta_entrega
+- `yuto-horigome-x-dunk-low-sb-matcha` — seo_description:pronta_entrega
+- `tenis-adidas-samba-og-white-night-indigo-branco` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-white-black-branco` — seo_description:pronta_entrega
+- `tenis-air-jordan-1-low-lunar-new-year-photon-dust-cinza` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-pure-gold-black-dourado` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-sd-cream-peacoat-navy-red-bege` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-sd-beige-beet-juice-bege` — seo_description:pronta_entrega
+- `rhode-pocket-blush` — seo_description:pronta_entrega
+- `tenis-adidas-samba-og-sanda-strata-sky-tint-bege` — seo_description:pronta_entrega
+- `tenis-adidas-samba-og-valentines-day` — seo_description:pronta_entrega
+- `new-balance-9060-triple-white` — seo_description:pronta_entrega
+- `tenis-air-jordan-1-retro-low-og-sp-trophy-room-rookie-card-away` — seo_description:pronta_entrega
+- `tenis-new-balance-9060-mushroom-arid-stone-camurca` — seo_description:pronta_entrega
+- `tenis-adidas-samba-og-crochet-pack-sand-strata-bege` — seo_description:pronta_entrega
+- `calca-alo-yoga-suit-up-trouser-regular-preto` — seo_description:pronta_entrega
+- `tenis-new-balance-9060-bisque-sea-salt-bege` — seo_description:pronta_entrega
+- `tenis-new-balance-204l-mushroom-arid-stone-marrom` — seo_description:pronta_entrega
+- `tenis-new-balance-204l-silver-metallic-flat-taupe-prateado` — seo_description:pronta_entrega
+- `tenis-new-balance-204l-silver-metallic-sage-green-prateado` — seo_description:pronta_entrega
+- `tenis-new-balance-204l-silver-metallic-sky-prateado` — seo_description:pronta_entrega
+- `tenis-new-balance-204l-timberwolf-bege` — seo_description:pronta_entrega
+- `tenis-nike-moon-shoe-sp-jacquemus-off-noir-preto` — seo_description:pronta_entrega
+- `nike-moon-shoe-sp-jacquemus-alabaster-amarelo` — seo_description:pronta_entrega
+- `tenis-nike-moon-shoe-sp-jacquemus-university-red-vermelho` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-sabot-birch-peacoat-bege` — seo_description:pronta_entrega
+- `tenis-onitsuka-tiger-mexico-66-sabot-beige-green-bege` — seo_description:pronta_entrega
+- `tenis-nike-vomero-premium-black-volt-preto` — seo_description:pronta_entrega
+- `tenis-new-balance-204l-rosewood-rosa` — seo_description:pronta_entrega
+- `yeezy-boost-350-v2-earth-bege` — seo_description:pronta_entrega
+- `slide-nike-mind-001-light-smoke-grey-cinza` — seo_description:pronta_entrega
+- `tenis-new-balance-204l-year-of-the-horse-white-bege` — seo_description:pronta_entrega
+- `tenis-new-balance-204l-basketcase-beef-broccoli-marrom` — seo_description:pronta_entrega
+- `tenis-new-balance-9060-cortado-marrom` — seo_description:pronta_entrega

@@ -40,8 +40,8 @@ Subagentes internos acionados via execução supervisionada:
 
 1. `Growth Data Scout + SEO/GEO Analyst`
    - Razão: separar fonte verificada/parcial/ausente e avaliar NB 204L, Onitsuka, GEO/FAQPage.
-2. `CRO/PDP Analyst + Content/Collection Analyst`
-   - Razão: avaliar Packet A, Packet B, LKGOC/source pages e limites de theme/dev/prod.
+2. `CRO/PDP Analyst + Content/SEO Analyst — não-LKGOC / Collection Optimizer handoff`
+   - Razão: avaliar Packet A, Packet B, source pages não-LKGOC e limites de theme/dev/prod; se o caso for LKGOC, gerar handoff para `[LK] Otimização de Coleções`.
 3. `GMC/Product Data Analyst + Growth Governor`
    - Razão: avaliar Packet C `link_template`, Popular Products/NB 204L, approval classes e regrades.
 
@@ -88,7 +88,7 @@ Rebaixamentos:
 - PageSpeed timeout/CrUX 404 na simulação anterior.
 - ChatGPT/Perplexity/AI Search live não consultados.
 
-### 4.2 CRO/PDP Analyst + Content/Collection Analyst
+### 4.2 CRO/PDP Analyst + Content/SEO Analyst — não-LKGOC / Collection Optimizer handoff
 
 Confidence: **medium**
 
@@ -106,7 +106,7 @@ Principais achados:
   - `air-jordan-travis-scott`: 207 sessões, CVR 0,00%, 27.818 impressões, CTR 0,66%, R$ 154.448,68 venda combinada;
   - `lululemon`: 859 sessões, CVR 0,00%, 25.178 impressões, CTR 3,03%, R$ 56.649,54 venda combinada;
   - `onitsuka-tiger-mexico-66`: 748 sessões, CVR 0,00%, 31.659 impressões, CTR 1,96%, R$ 1.727.732,80 venda combinada.
-- New Balance 204L é o melhor preview imediato para LKGOC/source page.
+- New Balance 204L é o melhor candidato imediato para handoff ao `[LK] Otimização de Coleções` criar preview LKGOC/source page.
 - Onitsuka/Mexico 66 deve seguir modo `protect-and-enhance`, não rewrite agressivo.
 - CRO mobile/theme continua hipótese sem evidência suficiente para alteração.
 
@@ -135,7 +135,7 @@ Principais achados:
 
 - Preparar Packet C local/read-only de investigação GMC `link_template`.
 - Preparar product-data cross-check local/read-only de NB 204L Mushroom/Popular Products.
-- Preparar preview local LKGOC/source page para New Balance 204L.
+- Encaminhar New Balance 204L para `[LK] Otimização de Coleções` preparar preview local LKGOC/source page.
 - Preparar packet conservador Onitsuka/Mexico 66 `protect-and-enhance`.
 - Preparar Packet B local para coleções P1 com scorecard, sem publicação.
 - Preparar Packet A somente como levantamento de gaps e seleção real dos PDPs.
@@ -194,7 +194,7 @@ Top prioridades após Fase 2:
 4. **Packet B — coleções P1 GEO/FAQPage preview**
    - Status: A1 local/read-only, URL-a-URL.
    - Motivo: algumas coleções têm métricas fortes no report 2026-05-19.
-   - Follow-up: scorecard LKGOC, estado atual Shopify, schema atual, approval packet.
+   - Follow-up: handoff para `[LK] Otimização de Coleções` produzir scorecard LKGOC; LK Shopify só avalia estado/preview/readback se houver superfície Shopify.
 
 5. **Packet A — PDP Top 5 CRO/SEO**
    - Status: gap-finding only.

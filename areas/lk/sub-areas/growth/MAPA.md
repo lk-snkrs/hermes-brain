@@ -65,11 +65,16 @@ Antes de declarar um diagnóstico de Growth completo, verificar os 18 tópicos e
 - `IMPACT-REVIEWS.md` — política e estado dos follow-ups/impact reviews no profile `lk-growth`.
 - Handoff obrigatório para Hermes Central: `../../../operacoes/rotinas/protocolo-handoff-agentes-especialistas.md`.
 - `contexto/` — mapas por fonte e domínio.
+- `agentic-os/FASE-1B-LK-GROWTH-OS-20260605.md` — OS operacional do agente-funcionário LK Growth: inbox, radar, score, rotinas, workers temporários selecionados automaticamente por tipo de demanda, permissões e feedback loop.
+- `agentic-os/inbox-growth.md` — fila operacional de entradas Growth.
+- `agentic-os/opportunity-ledger.md` — ledger de oportunidades e score 0-100.
+- `agentic-os/feedback-ledger.md` — feedback/aprendizado Growth e regra 1x/2x/3x.
 - `rotinas/` — rotinas operacionais.
 - `rotinas/growth-decision-router.md` — matriz de decisão para escolher GA4/GSC/GMC/Shopify/CRO/GEO/Ads/Blog/DataForSEO por sintoma.
 - `rotinas/growth-d7-review-digest-ledger.md` — rotina local para consolidar reviews D+7 em digest/ledger antes de qualquer mudança de cron ou entrega.
 - `rotinas/dataforseo-mcp-reload-approval-2026-05-19.md` — approval packet para expor DataForSEO MCP no runtime ativo sem violar guardrails de VPS/Hermes.
 - `templates/growth-audit-output-template.md` — template padrão de auditoria Growth com fatos, interpretação, recomendação, approval packet, rollback e review de impacto.
+- `templates/index-playbooks-lk-growth-20260605.md` — playbooks práticos LK Growth para Weekly Command Center, GMC/Product Data, SEO/GEO não-LKGOC, CRO/PDP handoff e Impact Review.
 - `templates/d7-review-digest-template.md` — template do digest consolidado de reviews D+7.
 - `reports/growth-360-smoke-test-2026-05-19.md` — validação documental do fluxo 360º e próximos critérios de smoke test live controlado.
 - `projetos/growth-action-prd-2026-05-19.md` — PRD de ação para cadência semanal orientada a receita, conversão e reviews D+7.

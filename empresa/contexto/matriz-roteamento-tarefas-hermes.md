@@ -59,6 +59,8 @@ Regra de linguagem: **`seguir` sozinho não é aprovação de risco; só autoriz
 - **Permitido sem aprovação:** pesquisa read-only, briefing, draft local, schema proposto, packet, preview local.
 - **Exige aprovação:** Shopify Page/Product/Collection/theme write, publicação, Klaviyo send, GMC/feed write, Meta/Google Ads, produção.
 - **Handoff:** obrigatório para conteúdo criado/revisado/aprovado/enviado, packets e riscos.
+- **OS Fase 1B:** `areas/lk/sub-areas/growth/agentic-os/FASE-1B-LK-GROWTH-OS-20260605.md`.
+- **Governança Growth/Shopify:** `empresa/contexto/lk-growth-shopify-agent-governance-20260605.md`.
 - **Anti-erro:** Hermes Geral não escreve conteúdo final da LK; rotear para LK Growth.
 
 ### 3. LK Growth — analytics/SEO/CRO/GMC read-only
@@ -102,6 +104,8 @@ Regra de linguagem: **`seguir` sozinho não é aprovação de risco; só autoriz
 - **Permitido sem aprovação:** leitura read-only, diagnóstico, rascunho, preview, documentação/template, approval packet.
 - **Exige aprovação:** qualquer Shopify/Tiny/GMC/Klaviyo/Meta/theme/write externo; preço, estoque, publicação, status, campanha ou contato.
 - **Padrão canônico:** `areas/lk/sub-areas/shopify/templates/preview-aprovacao-shopify.md` + skills `lk-shopify-readonly`/`lk-shopify-product-upload`; se envolver guia/editorial, herdar padrão Moon Shoe do LK Growth.
+- **OS Fase 1B:** `areas/lk/sub-areas/shopify/agentic-os/FASE-1B-LK-SHOPIFY-OS-20260605.md`.
+- **Governança Growth/Shopify:** `empresa/contexto/lk-growth-shopify-agent-governance-20260605.md`.
 - **Handoff:** obrigatório para preview material, aprovação, execução, bloqueio, readback, receipt, rollback ou aprendizado.
 
 ### 5. LK operações/atendimento/estoque/preço

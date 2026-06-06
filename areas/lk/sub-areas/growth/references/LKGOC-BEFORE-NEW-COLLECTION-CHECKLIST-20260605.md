@@ -21,6 +21,8 @@ Evitar repetir os erros das execuções anteriores de LKGOC e preservar o que fu
 
 ## O que funcionou e deve ser repetido
 
+- Para approvals no Telegram, preferir botões inline com escopo claro em vez de pedir aprovação textual manual.
+
 - Usar Gold Source 204L como fonte visual e funcional principal.
 - Trabalhar em DEV/preview primeiro; produção só depois de approval escopado.
 - Separar coleção + guia dedicado como pacote LKGOC, com fluxo: coleção produto-first -> guia -> seleção -> FAQ/trust.
@@ -66,3 +68,12 @@ Só iniciar execução quando houver:
 ## Regra operacional
 
 Para a próxima coleção, primeiro preparar o pacote LKGOC e preview em DEV. O pedido de aprovação deve vir depois da evidência visual e técnica, nunca antes.
+
+
+## Guardrail obrigatório — remover FAQ/descrição legado `coll-rich-content`
+
+Registrado em: 2026-06-05T17:42:57
+
+Para qualquer coleção otimizada com LKGOC, o bloco legado `.coll-rich-content` — especialmente a seção antiga de **Perguntas frequentes** — deve ser removido/ocultado no escopo da coleção otimizada. QA obrigatório: não pode haver `.coll-rich-content` visível nem FAQ antigo duplicado depois do LKGOC.
+
+Fonte: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/rules/REGRA-LKGOC-REMOVER-COLL-RICH-CONTENT-LEGADO.md`

@@ -63,12 +63,12 @@ Regra: decisão `decision-grade` só pode se apoiar em fonte `read_only_verified
 - DataForSEO Shopping/SERP: auxiliar para impacto.
 - Merchant/Product API writes/feed patches: bloqueado sem aprovação A3/A4.
 
-### Content/Collection Analyst
+### Content/SEO Analyst — não-LKGOC / Collection Optimizer handoff
 
-- Brain LKGOC canonical: fonte superior para padrão.
-- GSC/DataForSEO: evidência de demanda/intent.
-- SERP/public web: concorrentes/PAA/citability.
-- Shopify read-only: estado atual de collection/product/page.
+- GSC/DataForSEO: demanda e SERP.
+- Shopify read-only: estado atual quando houver superfície relacionada.
+- Templates Brain: conteúdo/source page não-LKGOC.
+- LKGOC/otimização de coleção/guia de coleção: não executar no Growth; rotear para `[LK] Otimização de Coleções`.
 - Templates Brain: guia editorial, source page, LKGOC.
 - Publishing/Shopify write: bloqueado.
 

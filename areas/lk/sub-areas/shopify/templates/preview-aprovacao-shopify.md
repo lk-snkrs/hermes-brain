@@ -1,6 +1,6 @@
 # Template — Preview/Aprovação LK Shopify
 
-Use este template sempre que LK Shopify preparar criação/alteração de produto, coleção, página, SEO fields, menu, tema/dev theme, inventory mirror ou qualquer write Shopify/Tiny relacionado.
+Use este template sempre que LK Shopify preparar criação/alteração de produto, coleção, página, SEO fields, menu, tema/dev theme, section/snippet/asset/CSS, cart drawer/minicart, feature de site, app/config/tracking, preço/promo aprovado, inventory mirror ou qualquer write Shopify/Tiny relacionado.
 
 ## 1. Veredito curto
 
@@ -42,7 +42,8 @@ Marcar o padrão aprovado que está sendo reutilizado, em vez de inventar um nov
 - Read-only/catálogo/order/customer: `lk-shopify-readonly`
 - SKU/Tiny: Tiny `codigo` como referência, Shopify como superfície
 - Coleção/source page/editorial: padrão Moon Shoe + `PADRAO-GUIAS-EDITORIAIS-LK.md`
-- Theme/CRO: dev theme + screenshot/QA mobile-first antes de produção
+- Theme/CRO/feature/cart drawer: dev theme + screenshot/QA mobile-first + rollback antes de produção
+- Preço/promo: fonte/decisão aprovada + lista exata de variantes + readback antes/depois
 - Menu/tag/SEO field: exception pattern correspondente da skill `lk-shopify-readonly`
 - Outro padrão aprovado:
 

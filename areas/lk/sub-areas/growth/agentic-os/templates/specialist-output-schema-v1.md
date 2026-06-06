@@ -6,7 +6,7 @@ Escopo: schema obrigatório para qualquer subagente interno do `lk-growth`
 ## Universal Specialist Output
 
 ```yaml
-subagent: <Growth Data Scout | SEO/GEO Analyst | CRO/PDP Analyst | GMC/Product Data Analyst | Content/Collection Analyst | Experiment Reviewer>
+subagent: <Growth Data Scout | SEO/GEO Analyst | CRO/PDP Analyst | GMC/Product Data Analyst | Content/SEO Analyst — não-LKGOC | Experiment Reviewer>
 run_id: <run id>
 run_scope: <short scope>
 called_by: Growth Planner
@@ -97,16 +97,16 @@ Must include:
 - source of overwrite risk;
 - approval class for any correction.
 
-### Content/Collection Analyst
+### Content/SEO Analyst — não-LKGOC
 
 Must include:
 
-- canonical alignment to LKGOC/Brain pattern;
-- collection/source page target;
+- confirmation that the task is not LKGOC/collection optimization, or a handoff to `[LK] Otimização de Coleções`;
+- source page/content target when non-LKGOC;
 - demand/intent evidence;
 - proposed content structure;
 - schema/FAQ/citability status;
-- scorecard or gap list.
+- gap list and follow-up metric.
 
 ### Experiment Reviewer
 

@@ -14,3 +14,12 @@ Sempre que for feito QA visual de LKGOC/tema Shopify/collections com screenshot 
 
 ## Guardrail
 Continua obrigatório: DEV/unpublished → QA visual/readback → approval Lucas → merge/promoção para Production. Produção não deve ser alterada para gerar screenshot.
+
+
+## Guardrail obrigatório — remover FAQ/descrição legado `coll-rich-content`
+
+Registrado em: 2026-06-05T17:42:57
+
+Para qualquer coleção otimizada com LKGOC, o bloco legado `.coll-rich-content` — especialmente a seção antiga de **Perguntas frequentes** — deve ser removido/ocultado no escopo da coleção otimizada. QA obrigatório: não pode haver `.coll-rich-content` visível nem FAQ antigo duplicado depois do LKGOC.
+
+Fonte: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/rules/REGRA-LKGOC-REMOVER-COLL-RICH-CONTENT-LEGADO.md`

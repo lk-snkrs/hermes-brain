@@ -89,7 +89,7 @@ Modo padrão: local/read-only salvo no Brain
 - non_decision_grade_reasons:
   - `<reason>`
 
-### Content/Collection Analyst
+### Content/SEO Analyst — não-LKGOC / Collection Optimizer handoff
 
 - confidence: `high | medium | low`
 - key_findings:

@@ -1,3 +1,23 @@
+## 2026-06-06 — LC Hermes: governança sistêmica de contexto mínimo verificada
+
+**A1 documental/governança aplicado:**
+- Handoff `reports/governance/handoff-lc-hermes-subagent-context-systemwide-2026-06-06.md` promovido para relatório LC Hermes em `reports/hermes-continuous-improvement/2026-06-06.md`.
+- Ledger `reports/hermes-learning-ledger/2026-06-06.md` registra a regra sistêmica: subagentes usam Context Budget, MAPA/índice e busca sob demanda; melhoria sobre contexto/memória/skills/crons/governança pertence ao LC Hermes central, não só ao Mordomo.
+
+**Auto-fix adicional:** `/opt/data/scripts/hermes_nightly_governance_artifacts_check.py` corrigido para selecionar artefato “latest” por `mtime`, não por ordem lexicográfica, evitando ledger antigo em recibos de digest.
+
+**Verificação:** cron supervisor 02h vivo como `LC Hermes daily intelligence loop — systemwide`, governance artifact checker OK, Brain Health `FAIL=0/WARN=0`, `py_compile` do validador OK. Nenhum Docker/gateway/runtime/delivery externo foi alterado.
+
+## 2026-06-05 — Daily Loop: parser wacli corrigido para LK Pulso 16h
+
+**A1 auto-fix aplicado:**
+- `/opt/data/scripts/lk_report_external_delivery.py` atualizado para parsear `wacli --json` com stdout ruidoso sem quebrar por `JSONDecodeError`.
+- Skill `wacli-whatsapp-cli` atualizada com a regra durável para scripts/cron: parsear JSON-looking line, scrubbar erro e nunca testar parser fazendo novo envio externo.
+
+**Saúde:** runtime v0.15.2 no latest público, containers production `running`, host observability `alerts: []`, Brain Health FAIL=0/WARN=0, Score 94/100.
+
+**Pendência mantida:** confirmar no próximo run real do LK Pulso 16h; nenhum WhatsApp/e-mail manual foi enviado nesta correção.
+
 ## 2026-06-04 — Daily Loop: watchdog reconciliado ao novo especialista LKGOC
 
 **A1 auto-fix aplicado:**

@@ -22,7 +22,7 @@ Subagentes simulados:
 
 1. `Growth Planner`
 2. `SEO/GEO Analyst`
-3. `Content/Collection Analyst`
+3. `Content/SEO Analyst — não-LKGOC / Collection Optimizer handoff`
 4. `CRO/PDP Analyst`
 5. `GMC/Product Data Analyst`
 6. `Growth Governor / Critic` consolidado nesta síntese
@@ -75,7 +75,7 @@ Transformar o review semanal em uma fila decision-grade, separando coleta, anál
 - `SEO/GEO Analyst`: necessário para New Balance 204L, Onitsuka, SERP, GEO e FAQ/schema.
 - `CRO/PDP Analyst`: necessário para Packet A e mobile/PDP.
 - `GMC/Product Data Analyst`: necessário para Packet C e `link_template`.
-- `Content/Collection Analyst`: necessário para Packet B, LKGOC e source pages.
+- `Content/SEO Analyst — não-LKGOC / Collection Optimizer handoff`: necessário para Packet B e source pages não-LKGOC; LKGOC deve ir para `[LK] Otimização de Coleções`.
 - `Growth Governor / Critic`: obrigatório para rebaixar ou bloquear recomendações sem evidência.
 
 `Experiment Reviewer` não foi chamado porque ainda não havia ação aprovada a medir.
@@ -94,7 +94,7 @@ Um item só é decision-grade se tiver:
 
 ## 5. Findings por área
 
-### 5.1 SEO/GEO + Content/Collection
+### 5.1 SEO/GEO + Content/SEO não-LKGOC / Collection Optimizer handoff
 
 #### New Balance 204L
 
@@ -111,7 +111,7 @@ Evidência:
 
 Recomendação agentic:
 
-- criar preview local LKGOC/source page para New Balance 204L;
+- encaminhar New Balance 204L para `[LK] Otimização de Coleções` criar preview local LKGOC/source page;
 - incluir autenticidade, originalidade, Brasil, feminino/bege/Mushroom onde confirmado;
 - criar FAQ e citability blocks;
 - não publicar sem GSC/Shopify/URL baseline.
@@ -161,7 +161,7 @@ Leitura agentic:
 
 Recomendação:
 
-- transformar Packet B em fluxo LKGOC completo;
+- transformar Packet B em handoff para fluxo LKGOC completo no agente `[LK] Otimização de Coleções`;
 - exigir URL, GSC/DataForSEO, estado atual Shopify, alinhamento canônico e scorecard;
 - preparar preview, não publicar.
 
@@ -246,7 +246,7 @@ Recomendação:
 
 ### Pode avançar sem aprovação externa
 
-- Criar preview LKGOC/source page NB 204L.
+- Encaminhar NB 204L para `[LK] Otimização de Coleções` criar preview LKGOC/source page.
 - Criar packet conservador Onitsuka “protect & enhance”.
 - Preparar Packet A local, desde que comece pela seleção dos 5 PDPs e gaps.
 - Preparar Packet B local, mas com New Balance como único candidato já evidenciado.

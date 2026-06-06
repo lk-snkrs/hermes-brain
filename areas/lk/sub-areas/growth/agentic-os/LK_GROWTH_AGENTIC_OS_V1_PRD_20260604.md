@@ -13,7 +13,7 @@ A meta não é criar mais bots soltos. A meta é criar uma mini-equipe operacion
 
 ## 2. Objetivos
 
-1. Aumentar a qualidade das recomendações de SEO/CRO/GEO/GMC/LKGOC.
+1. Aumentar a qualidade das recomendações de SEO/CRO/GEO/GMC e dos handoffs para LKGOC quando a demanda pertencer ao agente `[LK] Otimização de Coleções`.
 2. Reduzir relatórios genéricos e transformar cada execução em decisões acionáveis.
 3. Separar coleta, análise, crítica, síntese e aprendizagem.
 4. Garantir que cada recomendação tenha fonte, confiança, risco e follow-up.
@@ -171,24 +171,26 @@ Output:
 - micro-piloto sugerido;
 - approval packet requerido.
 
-#### Content/Collection Analyst
+#### Content/SEO Analyst — não-LKGOC
 
 Missão:
-- LKGOC, guias editoriais, source pages, copy comercial, citability blocks.
+- conteúdo Growth não-LKGOC, source pages não-LKGOC, copy comercial, citability blocks e handoff para `[LK] Otimização de Coleções` quando a demanda virar LKGOC.
 
 Fontes/ferramentas:
-- Brain LKGOC canônico;
 - GSC/DataForSEO;
 - public SERP;
+- Brain Growth;
 - Shopify read-only;
-- templates de guia editorial;
-- scorecard LKGOC.
+- templates editoriais não-LKGOC.
+
+Bloqueio:
+- LKGOC, otimização de coleção, guia de coleção e página/guia de produto-modelo não são executados por este worker; devem ser roteados ao agente `[LK] Otimização de Coleções`.
 
 Output:
 - evidence packet;
-- estrutura recomendada;
-- riscos de desvio do padrão canônico;
-- scorecard;
+- estrutura recomendada não-LKGOC;
+- sinal/handoff para Collection Optimizer quando aplicável;
+- riscos;
 - preview/local artifact.
 
 #### Experiment Reviewer

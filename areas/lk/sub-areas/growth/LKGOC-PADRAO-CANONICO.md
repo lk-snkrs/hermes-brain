@@ -343,3 +343,12 @@ Lucas reforçou que o LKGOC deve **sempre alterar o tema DEV**.
 - Se o tema indicado como DEV aparecer com `role: main` na Shopify API, registrar conflito e pedir/obter confirmação explícita antes de qualquer write.
 - O objetivo operacional permanece: DEV correto → QA → approval → Production.
 
+
+
+## Guardrail obrigatório — remover FAQ/descrição legado `coll-rich-content`
+
+Registrado em: 2026-06-05T17:42:57
+
+Para qualquer coleção otimizada com LKGOC, o bloco legado `.coll-rich-content` — especialmente a seção antiga de **Perguntas frequentes** — deve ser removido/ocultado no escopo da coleção otimizada. QA obrigatório: não pode haver `.coll-rich-content` visível nem FAQ antigo duplicado depois do LKGOC.
+
+Fonte: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/rules/REGRA-LKGOC-REMOVER-COLL-RICH-CONTENT-LEGADO.md`

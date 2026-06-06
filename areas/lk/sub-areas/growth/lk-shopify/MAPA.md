@@ -1,10 +1,14 @@
 # MAPA — LK Shopify Hermes
 
-Status: preparado / aguardando ativação runtime
+Status: **pacote legado/deprecated**. A fonte canônica atual do agente LK Shopify é `areas/lk/sub-areas/shopify/`.
+
+Correção arquitetural 2026-06-05: LK Shopify é agente-funcionário permanente e independente, não subagente nem backup subordinado ao LK Growth. Este diretório antigo permanece apenas como referência histórica de preparação do profile.
 
 ## Missão
 
-Especialista Hermes de backup do LK Growth para CRO, tema Shopify, SEO, QA visual, GMC/feed analysis e preparação de alterações seguras em Shopify.
+Referência histórica: este pacote descrevia LK Shopify como apoio/backup do LK Growth. A correção arquitetural de 2026-06-05 substitui essa leitura: LK Shopify é agente especialista permanente e independente. A fonte canônica atual é `areas/lk/sub-areas/shopify/agentic-os/FASE-1B-LK-SHOPIFY-OS-20260605.md`.
+
+Especialista Hermes da superfície Shopify para produto, coleção, page, theme/dev theme, SEO fields, QA visual, readback, receipts e rollback, com execução apenas quando aprovada de forma escopada.
 
 ## Superfícies
 

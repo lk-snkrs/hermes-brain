@@ -462,3 +462,13 @@ Não enviar link de approval se houver:
 - preview não validado no tema DEV/unpublished.
 
 Essa seção complementa `LKGOC-PADRAO-CANONICO.md` e `rules/shopify-theme-dev-to-production-promotion-rule-20260531.md`. Se houver divergência, vence a regra mais restritiva.
+
+## Aprendizado obrigatório — paridade 204L sem seletores frágeis
+
+Fonte canônica complementar: `areas/lk/sub-areas/growth/rules/REGRA-LKGOC-PARIDADE-204L-SEM-SELETORES-FRAGEIS.md`.
+
+Ao executar Full LKGOC baseado no gold source New Balance 204L, não basta clonar HTML/classes principais. Validar e preservar os overrides finais de acabamento, especialmente mobile. Evitar seletor frágil preso ao texto do `aria-label` da 204L; usar/duplicar hooks por classe estável para a coleção alvo. Antes de enviar preview, medir no mobile `.coll-banner__title` e `.lk-collection-v2__headline` contra 204L: padding, x, font-size, line-height, letter-spacing e font-family.
+
+## Aprendizado obrigatório — guia LK canônico `lk-goc-*`
+
+Para Guia Editorial LK dentro de collections Full LKGOC, usar contrato class-based e namespace `lk-goc-*`: `lk-goc-guide-panel`, `lk-goc-guide-grid`, `lk-goc-guide-card`, `lk-goc-guide-faq`, `lk-goc-guide-media`, `lk-goc-guide-panel__cta`. Manter aliases `lk-guide-standard-*`/`lk-lkgoc-*` apenas como compatibilidade temporária. Não criar patches por handle (`#lk-guia-[handle]`) quando a intenção for padrão reutilizável. QA obrigatório contra 204L em mobile e desktop.

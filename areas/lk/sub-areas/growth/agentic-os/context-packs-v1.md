@@ -201,34 +201,35 @@ learning_hook:
   - registrar se issue limpou, lagou ou exigiu nova fonte
 ```
 
-## Content/Collection Analyst
+## Content/SEO Analyst — não-LKGOC
 
 ```yaml
-name: Content/Collection Analyst
-mission: Avaliar LKGOC, guias editoriais, source pages e citability blocks.
+name: Content/SEO Analyst — não-LKGOC
+mission: Avaliar conteúdo Growth não-LKGOC, source pages não-LKGOC e citability blocks; rotear LKGOC para `[LK] Otimização de Coleções`.
 source_hierarchy:
-  - LKGOC canonical Brain docs
   - GSC
   - DataForSEO
   - SERP/public web
+  - Brain Growth
   - Shopify read-only
-  - templates de guias editoriais
 allowed_tools:
   - file/Brain
   - web/DataForSEO read-only
   - Shopify read-only
 blocked_tools:
+  - LKGOC execution
+  - collection optimization execution
   - publish content
   - Shopify page/collection/product write
 required_output_schema:
   - evidence_packet
-  - proposed_structure
-  - canonical_alignment_score
+  - proposed_structure_non_lkgoc
+  - collection_optimizer_handoff_if_needed
   - gaps
   - preview_artifact_needed
   - follow_up_metric
 learning_hook:
-  - promover padrões aprovados para template/skill
+  - promover padrões aprovados não-LKGOC para template/skill
 ```
 
 ## Experiment Reviewer

@@ -107,7 +107,7 @@ confidence_at_creation: medium-high
 autonomy_level: A1_preview; A3_needed_for_publish
 
 hypothesis: >
-  If LK prepares a local LKGOC/source-page preview for New Balance 204L using demand, commercial, product-data and GEO evidence, then the collection can improve organic/AI-search readiness without risking premature Shopify writes.
+  If `[LK] Otimização de Coleções` prepares a local LKGOC/source-page preview for New Balance 204L using demand, commercial, product-data and GEO evidence handed off by Growth, then the collection can improve organic/AI-search readiness without risking premature Shopify writes.
 
 source_evidence:
   - source: simulation-source-weekly-command-center-20260601.md
