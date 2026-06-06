@@ -97,6 +97,11 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `reports/lcmordomo-p0-watchdog-parser-2026-06-05.md` — implementação P0 do watchdog de crons críticos e parser robusto `wacli --json`.
 - `reports/lcmordomo-p1-zipper-canonical-store-2026-06-05.md` — implementação P1.1 do store canônico local do Subagente Zipper: `contact`, `lead_enquiry`, `artist_interest`, `followup`, `suppression`, `sent_action` e `decision_packet` derivados do runtime Mordomo.
 - `reports/lcmordomo-p12-zipper-decision-inbox-dryrun-2026-06-05.md` — P1.2 dry-run local do Decision Inbox Zipper: separa decisão real de follow-up seguro, erro técnico, enriquecimento pendente e destinatário em blocklist dura.
+- `reports/lcmordomo-p13-zipper-action-packet-renderer-2026-06-05.md` — P1.3 renderer local de pacotes action-first para candidatos Zipper, com contexto, fonte mascarada, risco, recomendação, draft e decisão sugerida.
+- `reports/lcmordomo-p14-zipper-packet-qa-activation-decision-2026-06-05.md` — P1.4 QA/regressão e gate de ativação do renderer; bloqueia cron/Telegram sem aprovação explícita.
+- `reports/lcmordomo-p15-zipper-editorial-delivery-contract-2026-06-05.md` — P1.5 pacote editorial curto + proposta de contrato de entrega, ainda não ativada.
+- `reports/lcmordomo-p16-zipper-followup-correction-context-queue-2026-06-05.md` — P1.6 correção: follow-ups não são Decision Inbox; fila local de 5 follow-ups importantes para enriquecimento contextual.
+- `reports/lcmordomo-p17-zipper-followup-context-enricher-2026-06-06.md` — P1.7 enricher local/read-only dos 5 follow-ups importantes: 2 bloqueados por material sensível, 3 exigem contexto bruto/idempotência, 0 envios liberados.
 - `prds/company-decision-memory-prd-2026-05-17.md` — PRD da regra de memória de decisões por empresa.
 - `projetos/hermes-brain-improvement-system.md` — sistema contínuo para transformar material externo em melhorias seguras do Brain.
 - `projetos/lcmordomo-os-control-plan.md` — plano de controle operacional vivo do LC Mordomo OS: módulos, crons verificados, riscos, backlog P0/P1 e critérios de pronto.

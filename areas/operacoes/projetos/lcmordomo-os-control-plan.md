@@ -355,6 +355,21 @@ Saídas locais:
 
 **Critério de pronto P1.6 atingido:** suíte local ampliada para 8 testes; nenhuma entrega externa, cron ou Supabase acionado.
 
+### P1 — Zipper context enricher de follow-ups — P1.7 concluído em 2026-06-06
+
+**Implementado:** `/opt/data/profiles/mordomo/scripts/zipper_followup_context_enricher.py` e regressão `/opt/data/profiles/mordomo/scripts/test_zipper_followup_context_enricher.py`.
+
+**Saídas locais:**
+
+- `/opt/data/profiles/mordomo/state/zipper_followup_context_enriched.json`;
+- `areas/operacoes/reports/lcmordomo-p17-zipper-followup-context-enricher-2026-06-06.md`.
+
+**Resultado:** 5 follow-ups importantes enriquecidos a partir do `zipper_canonical.sqlite`; 2 classificados como `blocked_sensitive_material`, 3 como `needs_lucas_context`, 0 liberados para envio por este passo.
+
+**Critério de pronto P1.7 atingido:** contexto local mascarado, sem raw JID/telefone/e-mail, `py_compile` OK, regressões OK e Brain health OK. Nenhum Telegram, WhatsApp, e-mail, cron, Supabase, produção ou infra acionado.
+
+**Próximo gate P1.8:** executor live/idempotente deve buscar histórico bruto do mesmo canal antes de qualquer follow-up, bloquear termos materiais, deduplicar por `sent_action` e só então enviar classes seguras já aprovadas.
+
 ### P2 — Pessoal/Calendário
 
 **Ação:** formalizar contrato e avaliar reativação do calendar watcher.
