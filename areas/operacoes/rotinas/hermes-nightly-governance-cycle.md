@@ -11,7 +11,7 @@ Fazer Hermes aprender diariamente com Lucas e com o próprio runtime, aumentando
 O ciclo é composto por quatro camadas:
 
 1. **01h — Fechamento + Handoff**: consolida o dia e gera pacote estruturado de aprendizado.
-2. **02h — Daily Intelligence**: promove aprendizados, audita o ecossistema e aplica auto-melhorias A0/A1.
+2. **02h — LC Hermes Daily Intelligence**: promove aprendizados, audita o ecossistema inteiro e aplica auto-melhorias A0/A1. A responsabilidade é do LC Hermes / Hermes Agent central, não do Mordomo isolado.
 3. **02h15 — Higiene de Memória**: verifica memória e providers externos, mantendo silent-OK e receipt local.
 4. **02h30 — Digest para Lucas**: relata o que aconteceu, o que Hermes fez, como Hermes se auto-melhorou e o que precisa de Lucas.
 
@@ -62,9 +62,15 @@ Quando Lucas aprova ou corrige algo:
 4. Se A3/A4, cria decisão com escopo, benefício, risco, blast radius, exclusões e rollback.
 5. O 02h30 explica em linguagem humana o que Hermes aprendeu e se algo depende de Lucas.
 
+Correção sistêmica aprovada em 2026-06-06: quando o aprendizado afetar arquitetura, governança, contexto, memória, skills, crons ou subagentes, o Mordomo deve fazer handoff para o **LC Hermes / Hermes Agent central**. O LC Hermes é o owner de promoção sistêmica para o ecossistema inteiro; Mordomo não deve manter a melhoria apenas no próprio profile.
+
+O handoff canônico desta decisão está em `reports/governance/handoff-lc-hermes-subagent-context-systemwide-2026-06-06.md`.
+
 ## Governança de contexto de subagentes
 
 O ciclo noturno deve reforçar a regra aprovada de **contexto mínimo + busca sob demanda**.
+
+Owner: **LC Hermes / Hermes Agent central**. Escopo: Hermes central, Brain versionado, crons de governança, LK, Zipper, SPITI, Mordomo, Mission Control e especialistas. Mordomo pode registrar o aprendizado, mas a promoção sistêmica e o relatório de melhoria pertencem ao LC Hermes.
 
 Checks documentais esperados:
 
@@ -100,3 +106,4 @@ Se houver falha, o digest deve separar:
 - 02h30 entrega o resumo executivo esperado por Lucas.
 - O resumo não deve conter wrapper, job ID, JSON bruto, logs, comandos ou ruído técnico.
 - Se houver alerta, explicar gatilho, impacto, ação feita e próximo passo.
+- O relatório/digest deve dizer quando uma melhoria foi promovida pelo LC Hermes para o sistema inteiro, diferenciando melhoria sistêmica de ajuste local do Mordomo.

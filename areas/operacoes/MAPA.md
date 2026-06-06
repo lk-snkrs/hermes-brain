@@ -13,6 +13,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 
 - `decisions/` — decisões operacionais canônicas, incluindo política de memória sem provider externo.
 - `decisions/subagentes-contexto-minimo-brain-sob-demanda-2026-06-05.md` — decisão aprovada: subagentes usam contexto mínimo, índices, busca sob demanda, handoff compacto e Brain health; rejeita “memória infinita carregada”.
+- `../../reports/governance/handoff-lc-hermes-subagent-context-systemwide-2026-06-06.md` — handoff aprovado para o LC Hermes promover essa regra no sistema inteiro, não apenas no Mordomo.
 - `inventarios/crons-agentes-profiles.md` — inventário vivo de agentes, profiles, bots, crons, conversas/projetos e cobertura do Fechamento Ágil 23h.
 - `mordomo/MAPA.md` — ponte canônica mínima para Mordomo/Lucas pessoal, sem criar runtime ou agente novo.
 - `mordomo/LC-MORDOMO-CENTRAL-SOUL-2026-06-05.md` — SOUL v0.1 do LC Mordomo Central: identidade, missão, autonomia A0-A4, interface única, subagentes e learning loop.

@@ -28,25 +28,27 @@ Este mapa não cria runtime novo. Ele documenta a hierarquia aprovada para opera
 - Saída esperada: documentação local em `reports/daily-consolidation/` e artefatos correlatos.
 - Regra anti-ruído: não mandar Telegram em sucesso normal; alertar só falha, risco, bloqueio ou decisão.
 
-### 2. Meta-supervisor 02h BRT
+### 2. Meta-supervisor 02h BRT — LC Hermes
 
-- Job: `f5a23dd6a1bd` — Lucas Brain daily intelligence loop.
+- Job: `f5a23dd6a1bd` — Lucas Brain daily intelligence loop / LC Hermes systemic improvement loop.
 - Cadência: diário, 02h BRT (`0 5 * * *` UTC).
 - Delivery: `local`.
-- Função: analisar o Brain consolidado, identificar riscos, oportunidades e gaps.
+- Owner: LC Hermes / Hermes Agent central / Operações Hermes.
+- Função: analisar o Brain consolidado e o ecossistema inteiro, identificar riscos, oportunidades, gaps e melhorias A0/A1. Não é rotina local do Mordomo.
 - Fonte: Brain versionado, session search, crons, skills, memória Hermes, relatórios locais.
-- Saída esperada: plano/diagnóstico local, não spam.
+- Saída esperada: plano/diagnóstico local do LC Hermes, incluindo melhorias sistêmicas aplicadas ou gaps que exigem aprovação; não spam.
 - Regra anti-duplicidade: não repetir relatório executivo se a Mesa COO já cobre a decisão do dia.
 
 ### 3. Relatório executivo curto 02h30 BRT
 
-- Job: `98478b820720` — Relatório Hermes diário 23h + 02h para Lucas.
+- Job: `98478b820720` — Relatório Hermes diário 01h + 02h + 02h15 para Lucas.
 - Cadência: diário, 02h30 BRT (`30 5 * * *` UTC).
-- Delivery: `local` desde P2 2026-05-22.
-- Função: consolidar localmente o 23h + 02h como insumo; não competir com a Mesa COO no Telegram.
-- Fonte: 23h + 02h.
-- Regra anti-ruído: Telegram fica reservado para Mesa COO e exceções; rollback documentado no cron control plane.
+- Delivery vivo: `origin` para Lucas, com artefato local quando houver melhoria sistêmica relevante.
+- Função: consolidar 01h + 02h + 02h15, evidenciando o que o LC Hermes melhorou no sistema inteiro sem virar log técnico.
+- Fonte: 01h + 02h + 02h15, incluindo relatórios locais do LC Hermes quando houver melhoria sistêmica.
+- Regra anti-ruído: Telegram fica reservado para melhoria real, decisão, exceção, risco ou próximo passo; rollback documentado no cron control plane.
 - Risco monitorado: se a Mesa COO não absorver decisões críticas, reavaliar delivery `origin` ou fundir prompts.
+- Correção Lucas 2026-06-06: o relatório deve refletir melhorias no sistema Hermes inteiro, não apenas no Mordomo.
 
 ### 4. Mesa COO diária
 

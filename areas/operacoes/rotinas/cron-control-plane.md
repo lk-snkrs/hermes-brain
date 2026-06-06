@@ -36,13 +36,14 @@ Este arquivo é um snapshot governamental do runtime local observado via registr
 
 ### Brain / governança central
 
-- `f5a23dd6a1bd` — Lucas Brain daily intelligence loop
+- `f5a23dd6a1bd` — Lucas Brain daily intelligence loop / LC Hermes systemic improvement loop
   - Schedule: `0 5 * * *` UTC / 02h BRT.
   - Delivery: `local`.
-  - Owner: Operações / Hermes Brain / Chief of Staff.
-  - Função: meta-supervisor diário.
+  - Owner: LC Hermes / Hermes Agent central / Operações Hermes.
+  - Função: meta-supervisor diário do sistema inteiro — runtime Hermes, Brain, crons, skills, memória, subagentes e especialistas; não é rotina local do Mordomo.
   - Side effects: leitura e documentação local; sem write externo.
   - Kill criteria: duplicar Mesa COO sem gerar decisões novas por 7 dias; falhas recorrentes; output sem fonte.
+  - Correção Lucas 2026-06-06: melhorias de governança de contexto/memória/subagentes devem ser promovidas pelo LC Hermes para todo o sistema, com handoff/relatório no Brain; não podem ficar apenas no profile Mordomo.
 
 - `3fc45b0830c6` — Hermes Brain Fechamento Ágil 23h + Brain Sync
   - Schedule: `0 2 * * *` UTC / 23h BRT.
@@ -56,11 +57,12 @@ Este arquivo é um snapshot governamental do runtime local observado via registr
   - Schedule: `30 5 * * *` UTC / 02h30 BRT.
   - Delivery vivo observado em 2026-05-27: `origin`.
   - Owner: Operações / Hermes Brain.
-  - Função: resumo executivo curto sobre 23h + 02h que Lucas quer receber no Telegram.
+  - Função: resumo executivo curto sobre 01h + 02h + 02h15 que Lucas quer receber no Telegram, com cópia/artefato local quando houver melhoria sistêmica promovida pelo LC Hermes.
   - Side effects: Telegram por `origin`.
   - Status documental: divergência real com snapshot anterior, que dizia `local`; preferência corrigida em 2026-05-27 para manter no Telegram.
   - Ação segura: manter `origin`; só mover para `local` se Lucas pedir explicitamente para parar este resumo no Telegram.
   - Kill criteria: duplicar Mesa COO; enviar sucesso técnico; mais de 5 itens sem decisão clara.
+  - Deve diferenciar melhoria sistêmica do LC Hermes de ajuste local de Mordomo/especialista.
 
 - `749ee30b51eb` — Mesa COO diária Telegram
   - Schedule vivo: `0 9 * * *` UTC.
