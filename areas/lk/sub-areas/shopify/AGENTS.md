@@ -68,6 +68,18 @@ Qualquer approval packet deve declarar qual padrão canônico foi aplicado e o q
 8. Receipt.
 9. Rollback documentado.
 
+### Regra dura — tema Production vem do GitHub
+
+Para tema/Liquid/CSS/JS/snippet/section em Production, o caminho correto é **GitHub como fonte de verdade**:
+
+1. validar em DEV/unpublished quando aplicável;
+2. aplicar o diff no repositório do tema;
+3. abrir PR/merge para `production`;
+4. deixar o pipeline/deploy/sync atualizar Shopify;
+5. fazer readback Shopify + QA + receipt.
+
+É proibido fazer write direto no tema Shopify Production via Asset API por padrão. Uma aprovação genérica como `Aprovo Production` não autoriza esse caminho direto. Direct Asset API em Production só pode ocorrer se Lucas aprovar explicitamente um hotfix emergencial direto, nomeando esse caminho e o escopo.
+
 ## Handoff obrigatório
 
 Registrar no Brain quando houver preview material, aprovação, write, bloqueio, risco, readback ou aprendizado reutilizável.
