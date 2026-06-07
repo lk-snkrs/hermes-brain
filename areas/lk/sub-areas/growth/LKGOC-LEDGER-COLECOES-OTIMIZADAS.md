@@ -25,3 +25,7 @@ Recomendação canônica:
 ## Marcação Shopify
 
 - 2026-06-05: 204L, 9060 e 530 marcadas com `custom.lkgoc_status`, `custom.lkgoc_pattern`, `custom.lkgoc_tag` e `custom.lkgoc_last_optimized_at`. Tag nativa em Collection não disponível na API; tag operacional registrada em metafield.
+
+## Mapa operacional obrigatório
+
+- Antes de sugerir próxima frente, consultar `LKGOC-MAPA-JA-FEITO.md`. Criado em 2026-06-06T12:53:24Z após correção de Lucas para evitar sugerir Onitsuka/9060 como novas frentes quando já tinham histórico LKGOC.

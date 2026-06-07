@@ -90,7 +90,16 @@ Não usar:
 - Decisões aprovadas: decision ledger/Brain da empresa.
 - Follow-ups: CRM/follow-up queue.
 
-## 8. Verificação
+## 8. LK/Evolution operational knowledge
+
+Quando o assunto for LK Evolution API, confirmação de entrega WhatsApp, `lk-evolution-delivery-reconciliation`, `matched=0`, `updated=0`, `delivery_updates` ou POS thank-you ledger, carregar/consultar:
+
+- `areas/operacoes/rotinas/lcmordomo-lk-evolution-delivery-reconciliation-runbook-2026-06-06.md`
+- skill do perfil Mordomo: `lk-evolution-webhook-operations`
+
+Regra: LC Mordomo entende e roteia o problema, mas não executa envio WhatsApp LK, alteração Evolution, deploy Vercel, restart gateway ou mutação de ledger sem aprovação explícita e escopo atual de Lucas. LK Ops é dono operacional; Tiny segue fonte de verdade de estoque/disponibilidade/preço.
+
+## 9. Verificação
 
 Antes de fechar uma tarefa com subagente:
 

@@ -10,6 +10,14 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Heartbeat | `areas/operacoes/rotinas/heartbeat.md` | Checagens periódicas operacionais |
 | Brain Health Check | `areas/operacoes/rotinas/brain-health-check.md` | Validação de secrets, links, agentes, rotinas e skills |
 | Hermes Release Watch | `areas/operacoes/rotinas/hermes-release-watch.md` | Monitorar releases do Hermes Agent e avaliar melhorias aplicáveis |
+| Manual Lucas Dashboard v0.16 | `areas/operacoes/rotinas/manual-lucas-dashboard-v016.md` | Guia prático para Lucas usar o Dashboard remoto v0.16 com limites de segurança e approval packets |
+| Hermes v0.16 Continuous Improvement Checklist | `areas/operacoes/rotinas/hermes-v016-continuous-improvement-checklist.md` | Checklist pós-release/semanal para transformar features Hermes em melhorias reais, com P0/P1/P2/A3-A4 |
+| Hermes v0.16 Context/Sessions/Prompt Diagnostic | `areas/operacoes/rotinas/hermes-v016-context-sessions-prompt-diagnostic.md` | Rotina read-only para diagnosticar lentidão, compressão, session store e prompt-size antes de runtime/model changes |
+| Dashboard v0.16 Sensitive Action Approval Packet | `areas/operacoes/rotinas/dashboard-v016-sensitive-action-approval-packet-template.md` | Template obrigatório para credentials, webhooks, channels, MCP, gateway, modelos e ações sensíveis via Dashboard |
+| Protocolo v0.16 Receipts/Handoff Operating Layer | `areas/operacoes/rotinas/protocolo-receipts-handoff-v016-operating-layer.md` | Padrão de receipts, handoff, workers e storage entre Hermes Geral e especialistas, sem aumentar ruído no Telegram |
+| Template Receipt Executivo Telegram-safe v0.16 | `areas/operacoes/rotinas/template-receipt-executivo-telegram-safe-v016.md` | Template único para entregar resultado executivo no Telegram quando Lucas pediu a execução, mantendo receipt completo no Brain |
+| Template Approval Packet Cron Delivery Telegram v0.16 | `areas/operacoes/rotinas/template-approval-packet-cron-delivery-telegram-v016.md` | Template obrigatório antes de qualquer mudança nominal de cron delivery/Telegram noise, com lista de jobs, rollback e verificação |
+| Hermes v0.16 Kanban Pilot Controlled PRD | `areas/operacoes/prds/hermes-v016-kanban-pilot-controlled-prd-2026-06-06.md` | PRD para piloto Kanban local/controlado, sem workers automáticos nem execução externa por padrão |
 | Hermes Runtime Observability | `areas/operacoes/rotinas/hermes-runtime-observability.md` | Inventário read-only de versão, containers, gateway, cron e logs Hermes |
 | Hermes Agent Cron e Performance Diagnóstico | `areas/operacoes/rotinas/hermes-agent-cron-e-performance-diagnostico.md` | Auditoria de crons por fonte primária e diagnóstico de lentidão/travamento por camadas antes de limpeza ou restart |
 | Runtime/Profile/Channel Inventory 2026-05-19 | `areas/operacoes/rotinas/runtime-profile-channel-inventory-2026-05-19.md` | Matriz única de profiles, bots, canais, destino, cadência, status documental, silent contract e kill criteria |
@@ -50,6 +58,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Skill Promotion Engine | `areas/operacoes/rotinas/skill-promotion-engine.md` | Detecta procedimentos repetíveis e cria candidatos a skill |
 | Approval Ledger | `areas/operacoes/rotinas/approval-ledger.md` | Livro-razão de aprovações, correções e autonomia concedida por Lucas |
 | LC Mordomo Source Confidence + Approval Ledger | `areas/operacoes/rotinas/lcmordomo-source-confidence-and-approval-ledger.md` | Rotina específica do LC Mordomo OS para classificar fontes e impedir que aprovação pontual vire autonomia ampla |
+| LC Mordomo LK Evolution Delivery Reconciliation Runbook 2026-06-06 | `areas/operacoes/rotinas/lcmordomo-lk-evolution-delivery-reconciliation-runbook-2026-06-06.md` | Runbook ensinado ao Mordomo para reconhecer/rotear reconciliação de delivery Evolution/LK sem executar WhatsApp, Vercel, gateway ou writes sem aprovação |
 | Webhooks/Eventos → Brain | `areas/operacoes/rotinas/webhooks-to-brain.md` | Eventos externos viram receipts/read-only antes de qualquer write |
 | Voice-to-Brain | `areas/operacoes/rotinas/voice-to-brain.md` | Áudio Telegram vira daily/hot/decisão/pendência com confirmação quando crítico |
 | Brain Diff Digest | `areas/operacoes/rotinas/brain-diff-digest.md` | Digest pré-sync de mudanças, riscos, secrets e escopo versionável |

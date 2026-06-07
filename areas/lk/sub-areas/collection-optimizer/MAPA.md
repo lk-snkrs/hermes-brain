@@ -16,8 +16,8 @@ Este agente é independente de LK Growth e LK Shopify.
 
 ## Fonte canônica
 
-- Padrão LKGOC atual: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/LKGOC-PADRAO-CANONICO.md`
-- Este diretório organiza o OS dedicado do agente e aponta para o canônico até migração/curadoria completa.
+- Padrão LKGOC histórico atual: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/LKGOC-PADRAO-CANONICO.md`
+- Este diretório é o OS dedicado e a fonte de ownership do agente. O arquivo canônico ainda estar fisicamente em `growth/` não significa hierarquia Growth → LKGOC; é legado de path até migração/curadoria completa.
 
 ## Playbooks ativos
 

@@ -1,7 +1,7 @@
 # Skill — LK SUPERPOWERS Collection Optimizer
 
-Versão: v1.1  
-Atualizado em: 2026-06-02T11:06:41Z  
+Versão: v1.2  
+Atualizado em: 20260606T164407Z  
 Área: LK Growth  
 Status: aprovado como processo operacional local — produção sempre exige aprovação explícita.
 
@@ -91,6 +91,35 @@ O LKGOC tem dois padrões visuais canônicos e não deve inventar variação:
 Regra de bloqueio: guia dedicado publicado ou pronto como `<article>` simples, texto corrido, Markdown/HTML cru, FAQ básico, hero branco fora do padrão, imagem em que o tênis não aparece claramente, ou shell sem a régua/largura Moon Shoe **não é Guia LK aprovado**. Reprovar QA e refazer em DEV/local antes de qualquer production.
 
 Não esperar Lucas pedir para salvar padrão: quando Lucas aprovar visualmente uma referência ou corrigir um padrão, registrar imediatamente na regra LKGOC, checklist e template aplicável.
+
+
+
+## v1.2 — Contract Lock bloqueante antes de qualquer write LKGOC
+
+Atualizado em: 20260606T164407Z. Esta seção existe por causa da falha Puma Speedcat/Nike Dunk em que o agente validou código/DOM, mas não validou o contrato visual LKGOC.
+
+Antes de escrever em Shopify, criar e registrar um **LKGOC Contract Lock**. Sem ele, a tarefa deve parar com status `BLOQUEADO / NÃO LKGOC`.
+
+Campos obrigatórios do Contract Lock:
+
+1. `gold_source_collection`: URL/snapshot/asset exato da coleção aprovada que será clonada.
+2. `gold_source_guide`: URL/snapshot/asset exato do guia aprovado que será clonado.
+3. `immutable_visual_contract`: hierarquia, densidade, grid antes do guia, guia pós-grid, FAQ/schema, mobile/desktop.
+4. `media_manifest`: cada imagem com fonte, licença/status, screenshot e aprovação visual.
+5. `hero_has_person_using_product`: deve ser verdadeiro; packshot/PDP/produto isolado reprova.
+6. `guide_pattern_manifest`: prova de que o guia segue o padrão aprovado, não bloco simplificado.
+7. `acceptance_tests`: testes visuais e técnicos que serão usados antes de enviar preview ao Lucas.
+
+Regras duras:
+
+- Componente único correto **não é suficiente** para chamar de LKGOC.
+- DOM/HTTP/readback sem QA visual **não é suficiente**.
+- Se faltar imagem de pessoa usando/contexto editorial seguro, parar e pedir asset ao Lucas.
+- Se o guia não estiver clonado do gold source, parar.
+- Workers Visual QA e LKGOC Experience Architect têm poder de veto antes do write.
+- Nunca executar lote de 5 sem aprovar primeiro uma coleção piloto.
+
+Arquivo complementar: `areas/lk/sub-areas/collection-optimizer/rules/REGRA-LKGOC-CONTRACT-LOCK-ANTES-DE-WRITE.md`.
 
 ## Camada pensante obrigatória — CLAUDE-SEO
 
@@ -472,3 +501,63 @@ Ao executar Full LKGOC baseado no gold source New Balance 204L, não basta clona
 ## Aprendizado obrigatório — guia LK canônico `lk-goc-*`
 
 Para Guia Editorial LK dentro de collections Full LKGOC, usar contrato class-based e namespace `lk-goc-*`: `lk-goc-guide-panel`, `lk-goc-guide-grid`, `lk-goc-guide-card`, `lk-goc-guide-faq`, `lk-goc-guide-media`, `lk-goc-guide-panel__cta`. Manter aliases `lk-guide-standard-*`/`lk-lkgoc-*` apenas como compatibilidade temporária. Não criar patches por handle (`#lk-guia-[handle]`) quando a intenção for padrão reutilizável. QA obrigatório contra 204L em mobile e desktop.
+
+## CORREÇÃO CANÔNICA LUCAS — mídia editorial, DEV write e Production proibido
+
+Registrado em: 20260606T165914Z
+
+- LKGOC deve sempre buscar/retirar as imagens principais dos principais veículos de moda/editoriais relevantes, como Vogue, Vogue Brasil, Highsnobiety, Hypebeast e campanhas oficiais.
+- Para hero, priorizar pessoa usando/contexto editorial/lifestyle; packshot/PDP/produto isolado não é hero LKGOC.
+- Todo write Shopify do LKGOC deve acontecer sempre em tema DEV/unpublished e não precisa de autorização prévia de Lucas.
+- Antes de qualquer write, verificar por API que o tema tem `role: unpublished`.
+- Write direto em Production/main é extremamente proibido.
+- A autorização de Lucas é necessária apenas para merge/promoção para Production/main ou qualquer mudança customer-facing.
+- Qualquer regra anterior que bloqueie DEV por Contract/asset/licença está obsoleta; o bloqueio é para Production, não para DEV.
+
+## HARD LOCK — 204L Gold Source Visual Contract
+
+Toda execução LKGOC deve tratar a coleção New Balance 204L como **Gold Source visual bloqueante**, não como referência genérica.
+
+Antes de qualquer `PASS`:
+
+- screenshot 204L obrigatório;
+- screenshot DEV da coleção alvo obrigatório;
+- comparativo lado a lado obrigatório;
+- equivalência visual obrigatória em hierarquia, densidade editorial, hero, guia pós-grid, FAQ e ordem hero → grid → guia;
+- QA técnico sem side-by-side 204L é automaticamente `FAIL`.
+
+Regra fonte: `rules/REGRA-LKGOC-204L-GOLD-SOURCE-VISUAL-CONTRACT.md`.
+
+## HARD LOCK — Gate -2 PRD / Questions / Superpowers
+
+Antes de qualquer rebuild LKGOC:
+
+- PRD obrigatório;
+- perguntas bloqueantes respondidas por Lucas ou marcadas como default aprovado;
+- Gold Source 204L confirmado;
+- critérios de aceite visual congelados;
+- worker verdicts Superpowers obrigatórios;
+- sem PRD ou sem perguntas: `FAIL_NO_PRD` / `FAIL_NO_QUESTIONS`.
+
+Regra fonte: `rules/REGRA-LKGOC-PRD-ANTES-DE-REBUILD.md`.
+Templates:
+
+- `templates/lkgoc-prd-template.md`
+- `templates/lkgoc-questions-template.md`
+- `templates/lkgoc-worker-verdicts-template.md`
+- `templates/lkgoc-side-by-side-qa-template.md`
+
+## HARD LOCK — Shared Shell / Só Texto e Imagem Mudam
+
+Lucas definiu que as coleções LKGOC devem ser praticamente idênticas ao Gold Source 204L. Entre coleções, só devem mudar texto, fotos/imagens, links e conteúdo específico necessário.
+
+O padrão deve ser compartilhado para que mudanças futuras no tema/padrão propaguem de forma consistente. É proibido cada coleção virar um layout próprio.
+
+Regra fonte: `rules/REGRA-LKGOC-SHARED-SHELL-SO-TEXTO-E-IMAGEM-MUDAM.md`.
+
+
+
+## LKGOC pós-grid — todos os produtos
+- Regra Lucas: pós-grid significa depois de todos os produtos renderizados da coleção.
+- Guia/FAQ/bloco editorial antes do último produto = `FAIL_POS_GRID_NOT_AFTER_ALL_PRODUCTS`.
+- QA deve provar DOM + screenshot da sequência último produto → guia.

@@ -91,3 +91,26 @@ Regra aprovada por Lucas em 2026-06-02: Superpowers deve ser o modo operacional 
 
 Não transformar em burocracia: sem design longo para tarefa trivial, sem spam no Telegram, sem approval loop. O objetivo é melhorar performance, clareza, verificação e aprendizado reutilizável.
 
+<!-- HERMES_BROWSER_CDP_PROTOCOL_START -->
+## Browser dedicado Hermes/CDP/Playwright
+
+Quando uma tarefa exigir browser persistente, login/captcha humano, QA visual ou automação por Playwright/MCP, carregar a skill `hermes-browser-cdp` e seguir o protocolo canônico:
+
+- `skills/hermes-browser-cdp/SKILL.md`
+- `governance/protocols/browser-cdp-hermes-playwright.md`
+
+Resumo operacional:
+
+- Acesso humano para Lucas: `https://web.lucascimino.com`.
+- Endpoint CDP privado para agentes na rede Docker Hermes: `http://lk-browser-web:9223`.
+- Nunca expor CDP publicamente, nunca publicar em Traefik/Cloudflare e nunca imprimir cookies, tokens, senhas ou headers sensíveis.
+- Login/captcha é resolvido por Lucas no browser humano; agentes usam a sessão somente para leitura/QA/automação autorizada.
+- Writes externos/customer-facing via browser exigem aprovação explícita atual, rollback e receipt.
+
+
+### Regra de uso Playwright vs browser humano
+
+Padrão Lucas: usar **Playwright/CDP primeiro** para tarefas normais. Usar `https://web.lucascimino.com` quando for complexo, visual, instável, exigir login/captcha/2FA ou intervenção humana.
+
+<!-- HERMES_BROWSER_CDP_PROTOCOL_END -->
+

@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-06-06T15:48:23.114340+00:00",
+  "scope": "lcmordomo-p3-real-local-no-agent-cron-execution",
+  "checked_paths": [
+    "/opt/data/scripts/lcmordomo_zipper_followup_silent_ok_no_agent.py",
+    "/opt/data/profiles/mordomo/state/zipper_followup_real_local_no_agent_cron_execution.json",
+    "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/reports/lcmordomo-p3-zipper-real-local-no-agent-cron-execution-2026-06-06.md",
+    "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/projetos/lcmordomo-os-control-plan.md"
+  ],
+  "fail": 0,
+  "warn": 0,
+  "raw_pii_findings": [],
+  "secret_findings": [],
+  "cron_job_id_present": true,
+  "cron_name_count": 1,
+  "old_one_shot_absent": true,
+  "cron_block": [
+    "  8b9ddeb90a1d [active]",
+    "    Name:      LC Mordomo Zipper follow-up silent-OK local no-agent",
+    "    Schedule:  every 30m",
+    "    Repeat:    ∞",
+    "    Next run:  2026-06-06T16:16:13.938664+00:00",
+    "    Deliver:   local",
+    "    Script:    lcmordomo_zipper_followup_silent_ok_no_agent.py",
+    "    Mode:      no-agent (script stdout delivered directly)",
+    "    Workdir:   /opt/data/profiles/mordomo/scripts",
+    ""
+  ]
+}

@@ -1,6 +1,21 @@
 # QA Checklist — LK SUPERPOWERS Collection Optimizer
 
-Atualizado em: 2026-06-02T11:06:41Z
+Atualizado em: 20260606T164407Z
+
+
+
+## Contract Lock — gates bloqueantes pré-write
+
+- [ ] `contract_lock_exists`: artefato criado antes de qualquer write.
+- [ ] `gold_source_collection_locked`: gold source da coleção registrado com URL/snapshot/asset.
+- [ ] `gold_source_guide_locked`: gold source do guia registrado com URL/snapshot/asset.
+- [ ] `immutable_visual_contract_locked`: hierarquia, grid antes do guia, FAQ/schema, mobile/desktop definidos como imutáveis.
+- [ ] `media_manifest_complete`: imagens listadas com fonte, licença/status e screenshot.
+- [ ] `hero_has_person_using_product`: hero mostra pessoa usando ou contexto editorial/lifestyle real.
+- [ ] `hero_not_packshot`: hero não usa PDP, packshot ou produto isolado.
+- [ ] `guide_pattern_manifest_complete`: guia prova clonagem do padrão aprovado.
+- [ ] `acceptance_tests_defined_before_build`: critérios de QA definidos antes do build.
+- [ ] Se qualquer item acima falhar: status `BLOQUEADO / NÃO LKGOC`; não escrever em Shopify e não enviar preview como LKGOC.
 
 ## Camada CLAUDE-SEO
 
@@ -123,3 +138,80 @@ O padrão completo de LKGOC vive em um único documento canônico:
 - `LKGOC-PADRAO-CANONICO.md`
 
 Não duplicar regras longas aqui. Este arquivo deve apenas complementar seu escopo específico e apontar para o canônico.
+
+
+## Veto final — técnico não substitui visual
+
+- DOM limpo, Liquid sem erro e snippet único não aprovam LKGOC sozinhos.
+- O aceite exige comparação visual/editorial contra gold source, hero lifestyle com pessoas e guia premium completo.
+- Qualquer divergência relevante vira `BLOCKED`, não `APPROVED WITH NOTES`.
+
+## Correção QA — DEV write permitido
+
+- DEV/unpublished pode receber build mesmo com pendências, desde que pendências estejam visíveis no preview/receipt.
+- QA deve classificar: `DEV_PREVIEW_OK`, `DEV_PREVIEW_NEEDS_FIX`, `PRODUCTION_BLOCKED` ou `PRODUCTION_READY_FOR_APPROVAL`.
+- Falta de asset lifestyle bloqueia Production, não bloqueia construção em DEV.
+
+## CORREÇÃO CANÔNICA LUCAS — mídia editorial, DEV write e Production proibido
+
+Registrado em: 20260606T165914Z
+
+- LKGOC deve sempre buscar/retirar as imagens principais dos principais veículos de moda/editoriais relevantes, como Vogue, Vogue Brasil, Highsnobiety, Hypebeast e campanhas oficiais.
+- Para hero, priorizar pessoa usando/contexto editorial/lifestyle; packshot/PDP/produto isolado não é hero LKGOC.
+- Todo write Shopify do LKGOC deve acontecer sempre em tema DEV/unpublished e não precisa de autorização prévia de Lucas.
+- Antes de qualquer write, verificar por API que o tema tem `role: unpublished`.
+- Write direto em Production/main é extremamente proibido.
+- A autorização de Lucas é necessária apenas para merge/promoção para Production/main ou qualquer mudança customer-facing.
+- Qualquer regra anterior que bloqueie DEV por Contract/asset/licença está obsoleta; o bloqueio é para Production, não para DEV.
+
+## Gate bloqueante — 204L Gold Source Visual Contract
+
+Status obrigatório antes de PASS: `PASS_204L_VISUAL_CONTRACT`
+
+Checklist:
+
+- [ ] Screenshot Gold Source New Balance 204L capturado.
+- [ ] Screenshot DEV/unpublished da coleção alvo capturado.
+- [ ] Comparativo lado a lado gerado e anexado ao receipt.
+- [ ] Hero da coleção alvo mantém mesma família visual/peso do 204L.
+- [ ] Guia pós-grid mantém shell/densidade editorial do 204L.
+- [ ] FAQ mantém padrão visual do 204L.
+- [ ] Ordem hero → grid → guia confirmada.
+- [ ] O build é adaptação mínima do shell 204L, não layout novo.
+- [ ] QA técnico isolado não foi usado como substituto do QA visual.
+
+Se qualquer item falhar: `FAIL_VISUAL_CONTRACT_204L` e Production permanece bloqueado.
+
+## HARD LOCK — Gate -2 PRD / Questions / Superpowers
+
+Antes de qualquer rebuild LKGOC:
+
+- PRD obrigatório;
+- perguntas bloqueantes respondidas por Lucas ou marcadas como default aprovado;
+- Gold Source 204L confirmado;
+- critérios de aceite visual congelados;
+- worker verdicts Superpowers obrigatórios;
+- sem PRD ou sem perguntas: `FAIL_NO_PRD` / `FAIL_NO_QUESTIONS`.
+
+Regra fonte: `rules/REGRA-LKGOC-PRD-ANTES-DE-REBUILD.md`.
+Templates:
+
+- `templates/lkgoc-prd-template.md`
+- `templates/lkgoc-questions-template.md`
+- `templates/lkgoc-worker-verdicts-template.md`
+- `templates/lkgoc-side-by-side-qa-template.md`
+
+## HARD LOCK — Shared Shell / Só Texto e Imagem Mudam
+
+Lucas definiu que as coleções LKGOC devem ser praticamente idênticas ao Gold Source 204L. Entre coleções, só devem mudar texto, fotos/imagens, links e conteúdo específico necessário.
+
+O padrão deve ser compartilhado para que mudanças futuras no tema/padrão propaguem de forma consistente. É proibido cada coleção virar um layout próprio.
+
+Regra fonte: `rules/REGRA-LKGOC-SHARED-SHELL-SO-TEXTO-E-IMAGEM-MUDAM.md`.
+
+
+
+## LKGOC pós-grid — todos os produtos
+- Regra Lucas: pós-grid significa depois de todos os produtos renderizados da coleção.
+- Guia/FAQ/bloco editorial antes do último produto = `FAIL_POS_GRID_NOT_AFTER_ALL_PRODUCTS`.
+- QA deve provar DOM + screenshot da sequência último produto → guia.

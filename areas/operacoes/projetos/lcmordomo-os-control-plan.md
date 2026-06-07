@@ -82,7 +82,7 @@ Fonte: `/opt/data/profiles/mordomo/cron/jobs.json` e estados locais em `/opt/dat
   - Script: `zipper_zpr_enquiry_watcher.py`
   - Papel: intake ZPR/site → PDF/lead/follow-up; envio/ações externas continuam guardrailadas conforme classe.
 
-- **Zipper direct main e-mail monitor — zipper@zippergaleria.com.br**
+- **Zipper direct main e-mail monitor — [zipper-main-email]**
   - ID: `20972b3c7595`
   - Status verificado: ativo/scheduled
   - Frequência: every 60m
@@ -368,7 +368,22 @@ Saídas locais:
 
 **Critério de pronto P1.7 atingido:** contexto local mascarado, sem raw JID/telefone/e-mail, `py_compile` OK, regressões OK e Brain health OK. Nenhum Telegram, WhatsApp, e-mail, cron, Supabase, produção ou infra acionado.
 
-**Próximo gate P1.8:** executor live/idempotente deve buscar histórico bruto do mesmo canal antes de qualquer follow-up, bloquear termos materiais, deduplicar por `sent_action` e só então enviar classes seguras já aprovadas.
+### P1 — Zipper live/idempotent follow-up executor plan — P1.8 concluído em 2026-06-06
+
+**Implementado:** `/opt/data/profiles/mordomo/scripts/zipper_followup_live_executor.py` e regressão `/opt/data/profiles/mordomo/scripts/test_zipper_followup_live_executor.py`.
+
+**Saídas locais:**
+
+- `/opt/data/profiles/mordomo/state/zipper_followup_live_executor_plan.json`;
+- `areas/operacoes/reports/lcmordomo-p18-zipper-followup-live-executor-plan-2026-06-06.md`.
+
+**Resultado:** planner/fixture local criado para o executor live/idempotente. Ele libera apenas follow-up seguro quando há classificação local segura, WhatsApp validado, draft leve, histórico bruto do mesmo canal anexado, nenhum inbound material e nenhuma duplicidade do draft no histórico live. No estado real atual: 5 itens avaliados; 0 prontos para envio; 3 `needs_lucas_context`; 2 `blocked_sensitive_material`.
+
+**Regressões cobertas:** fixture positivo que só vira `would_send` em dry-run, bloqueio por preço/disponibilidade no histórico live, dedupe de outbound já enviado, supressão de `needs_lucas_context`/`blocked_sensitive_material`, fila real com zero envio liberado, e markdown sem PII/raw send claim.
+
+**Critério de pronto P1.8 atingido:** plano local e testes prontos; nenhum Telegram, WhatsApp, e-mail, cron, Supabase, produção ou infra acionado. P1.8 ainda não é sender nem cron.
+
+**Próximo gate P1.9:** conectar o planner a um leitor live/read-only do mesmo canal (`wacli messages list` e/ou Gmail conforme lead), ainda em dry-run, para anexar histórico bruto real antes de qualquer executor de envio.
 
 ### P2 — Pessoal/Calendário
 
@@ -414,14 +429,285 @@ Não enviar:
 
 ## 7. Próxima execução recomendada
 
-Próxima frente segura: **P1.7 context enricher + executor seguro de follow-up**.
+P1.22 concluído em modo local/dry-run: **final audit/readiness summary criado**, sem executar `hermes cron create`, sem chamar Hermes CLI real, sem alterar scheduler, sem criar cron, sem ativar sender/runtime-send e sem enviar nada.
 
-Sequência:
+Artefatos P1.22:
 
-1. Ler `/opt/data/profiles/mordomo/state/zipper_important_followup_context_queue.json`.
-2. Para cada item, buscar mensagens anteriores ligadas ao lead/contato nas fontes locais disponíveis.
-3. Reclassificar em `safe_to_autofollowup`, `needs_lucas_context` ou `blocked_sensitive_material`.
-4. Executar autonomamente apenas `safe_to_autofollowup`, com idempotência e sem duplicar mensagens.
-5. Alertar Lucas só para itens que precisam de contexto humano ou têm material sensível.
+- Módulo novo: `/opt/data/profiles/mordomo/scripts/zipper_followup_final_audit_readiness_summary.py`
+- Testes novos: `/opt/data/profiles/mordomo/scripts/test_zipper_followup_final_audit_readiness_summary.py`
+- Sumário local: `/opt/data/profiles/mordomo/state/zipper_followup_final_audit_readiness_summary.json`
+- Relatório Brain: `areas/operacoes/reports/lcmordomo-p122-zipper-final-audit-readiness-summary-2026-06-06.md`
 
-Parar antes de qualquer ação que envolva Docker/VPS/restart/deploy/secrets/banco de produção/Supabase write ou envio externo fora das classes A1/A2 já autorizadas.
+Resultado P1.22 no snapshot atual:
+
+- Consolidou P1.8–P1.21: 14 artefatos esperados, 14 existentes.
+- Go/No-Go: `NO-GO`.
+- Decisão de produção registrada: não.
+- Frase casual recebida `fazer` não é suficiente para produção/cron real.
+- Frase futura exigida para decisão de produção: `DECIDIR PRODUCAO CRON LOCAL ZIPPER NO-AGENT SEM ENVIO EXTERNO`.
+- Mesmo com a frase futura, o snapshot atual continua `NO-GO` por blockers upstream.
+- Bloqueios principais atuais incluem: `p120_not_clean`, `p121_command_not_executable_now`, `cron_real_approval_not_recorded`, `final_execute_phrase_missing`, `ledger_not_clean_silent_ok`, `state_and_rollback_rehearsal_not_complete`, `upstream_blockers_present`.
+- Cron real criado: não.
+- Comando executado: não.
+- Hermes CLI real chamado: não.
+- Scheduler real alterado: não.
+- Sender chamado: não.
+- Runtime send enabled: não.
+- Envio externo habilitado: não.
+- 0 chamadas externas.
+- 0 falha de PII nos artefatos persistidos.
+
+Regressões P1.22 cobertas:
+
+- consolida P1.8–P1.21 e retorna `NO-GO` no snapshot bloqueado;
+- artifact ausente bloqueia readiness;
+- qualquer side effect real reportado bloqueia;
+- P1.20/P1.21 sujos bloqueiam;
+- `seguir`/`fazer`/`aprovado` não registram decisão de produção;
+- frase exata futura pode registrar decisão, mas ainda não executa nada nesta fase;
+- Markdown/JSON/self-test não preservam raw PII nem afirmam criação real.
+
+Status final da fase P1 local: **pronto como auditoria/artefato, não pronto para produção**.
+
+P2 aberta em modo local/dry-run para corrigir blockers upstream localmente, sem produção.
+
+Artefato P2 criado:
+
+- Plano P2: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/projetos/lcmordomo-os-p2-readiness-plan-2026-06-06.md`
+
+Escopo P2:
+
+- limpar blockers por evidência local, não por bypass;
+- preservar TDD e self-test;
+- manter cron real, Hermes CLI real, scheduler mutation, sender, runtime-send e envio externo bloqueados;
+- separar readiness técnica de decisão humana.
+
+Sequência P2 proposta:
+
+1. P2.1 — blocker taxonomy and dependency map.
+2. P2.2 — clean fixture builder for readiness rehearsal.
+3. P2.3 — state + rollback rehearsal completion repair.
+4. P2.4 — ledger cleanliness repair.
+5. P2.5 — approval surface reconciliation.
+6. P2.6 — final P2 readiness audit.
+
+P2.1 concluído em modo local/dry-run: **blocker taxonomy and dependency map criado**, sem executar `hermes cron create`, sem chamar Hermes CLI real, sem alterar scheduler, sem criar cron, sem ativar sender/runtime-send e sem enviar nada.
+
+Artefatos P2.1:
+
+- Módulo novo: `/opt/data/profiles/mordomo/scripts/zipper_followup_p2_blocker_taxonomy.py`
+- Testes novos: `/opt/data/profiles/mordomo/scripts/test_zipper_followup_p2_blocker_taxonomy.py`
+- Taxonomia local: `/opt/data/profiles/mordomo/state/zipper_followup_p2_blocker_taxonomy.json`
+- Relatório Brain: `areas/operacoes/reports/lcmordomo-p201-zipper-blocker-taxonomy-2026-06-06.md`
+
+Resultado P2.1:
+
+- Go/No-Go: `NO-GO`.
+- Categorias: `approval_phrase_missing`, `command_envelope_readiness`, `data_current_snapshot`, `ledger_cleanliness`, `rehearsal_completion`, `sender_runtime_guard`, `upstream_dependency`.
+- Owners: `local_p2` = 14 blockers; `lucas_decision` = 6 blockers.
+- Nenhum blocker conhecido ficou `uncategorized`.
+- Sequência recomendada: P2.2 → P2.3 → P2.4 → P2.5 → P2.6.
+- `seguir` não registra decisão de produção.
+- Frase futura de decisão registra apenas decisão; não executa comando, não cria cron, não habilita runtime-send e não aprova envio externo.
+- Cron real criado: não.
+- Comando executado: não.
+- Hermes CLI real chamado: não.
+- Scheduler real alterado: não.
+- Sender chamado: não.
+- Runtime send enabled: não.
+- Envio externo habilitado: não.
+- 0 chamadas externas.
+- 0 falha de PII nos artefatos persistidos.
+
+P2.2 concluído em modo local/dry-run: **clean fixture builder criado**, sem executar `hermes cron create`, sem chamar Hermes CLI real, sem alterar scheduler, sem criar cron, sem ativar sender/runtime-send e sem enviar nada.
+
+Artefatos P2.2:
+
+- Módulo novo: `/opt/data/profiles/mordomo/scripts/zipper_followup_p2_clean_fixture_builder.py`
+- Testes novos: `/opt/data/profiles/mordomo/scripts/test_zipper_followup_p2_clean_fixture_builder.py`
+- Fixture local: `/opt/data/profiles/mordomo/state/zipper_followup_p2_clean_fixture_builder.json`
+- Relatório Brain: `areas/operacoes/reports/lcmordomo-p202-zipper-clean-fixture-builder-2026-06-06.md`
+
+Resultado P2.2:
+
+- Fixture Go/No-Go: `GO-TECHNICAL-FIXTURE-NOT-PRODUCTION`.
+- Snapshot real preservado bloqueado: `NO-GO`.
+- P1.18–P1.21 sintéticos limpos com `blocking_reasons=[]`.
+- Fake cron id sintético: `fixture-cron-zpr-clean-001`.
+- Rehearsal state/rollback sintético completo: sim.
+- Nenhuma decisão de produção registrada.
+- Nenhuma aprovação de runtime-send/envio externo registrada.
+- Cron real criado: não.
+- Comando executado: não.
+- Hermes CLI real chamado: não.
+- Scheduler real alterado: não.
+- Sender chamado: não.
+- Runtime send enabled: não.
+- Envio externo habilitado: não.
+- 0 chamadas externas.
+- 0 falha de PII nos artefatos persistidos.
+
+P2.3 concluído em modo local/dry-run: **state + rollback rehearsal repair criado**, sem executar `hermes cron create`, sem chamar Hermes CLI real, sem alterar scheduler, sem criar/remover cron real, sem ativar sender/runtime-send e sem enviar nada.
+
+Artefatos P2.3:
+
+- Módulo novo: `/opt/data/profiles/mordomo/scripts/zipper_followup_p2_state_rollback_repair.py`
+- Testes novos: `/opt/data/profiles/mordomo/scripts/test_zipper_followup_p2_state_rollback_repair.py`
+- Repair local: `/opt/data/profiles/mordomo/state/zipper_followup_p2_state_rollback_repair.json`
+- Relatório Brain: `areas/operacoes/reports/lcmordomo-p203-zipper-state-rollback-repair-2026-06-06.md`
+
+Resultado P2.3:
+
+- Repair Go/No-Go: `REHEARSAL-COMPLETE-FIXTURE-ONLY`.
+- Snapshot real preservado bloqueado: `NO-GO`.
+- Fake cron id: `fixture-cron-zpr-clean-001`.
+- Blockers de fixture limpos: `state_and_rollback_rehearsal_not_complete`, `no_fake_cron_id_available`.
+- State check stub executado: sim.
+- Rollback stub executado: sim.
+- Post-check stub executado: sim.
+- Elegível para cron real agora: não.
+- Cron real criado: não.
+- Cron real removido: não.
+- Comando executado: não.
+- Hermes CLI real chamado: não.
+- Scheduler real alterado: não.
+- Sender chamado: não.
+- Runtime send enabled: não.
+- Envio externo habilitado: não.
+- 0 chamadas externas.
+- 0 falha de PII nos artefatos persistidos.
+
+P2.4 concluído em modo local/dry-run: **ledger cleanliness repair criado**, sem executar `hermes cron create`, sem chamar Hermes CLI real, sem alterar scheduler, sem criar/remover cron real, sem ativar sender/runtime-send e sem enviar nada.
+
+Artefatos P2.4:
+
+- Módulo novo: `/opt/data/profiles/mordomo/scripts/zipper_followup_p2_ledger_cleanliness_repair.py`
+- Testes novos: `/opt/data/profiles/mordomo/scripts/test_zipper_followup_p2_ledger_cleanliness_repair.py`
+- Repair local: `/opt/data/profiles/mordomo/state/zipper_followup_p2_ledger_cleanliness_repair.json`
+- Relatório Brain: `areas/operacoes/reports/lcmordomo-p204-zipper-ledger-cleanliness-repair-2026-06-06.md`
+
+Resultado P2.4:
+
+- Ledger Go/No-Go: `LEDGER-CLEAN-SILENT-OK-FIXTURE-ONLY`.
+- Snapshot real preservado bloqueado: `NO-GO`.
+- Blocker de fixture limpo: `ledger_not_clean_silent_ok`.
+- Ledger clean silent-OK: sim.
+- Stdout contract: `silent_ok`.
+- Stdout vazio: sim.
+- Entradas sintéticas: 0.
+- Candidate count: 0.
+- Elegível para cron real agora: não.
+- Cron real criado: não.
+- Cron real removido: não.
+- Comando executado: não.
+- Hermes CLI real chamado: não.
+- Scheduler real alterado: não.
+- Sender chamado: não.
+- Runtime send enabled: não.
+- Envio externo habilitado: não.
+- 0 chamadas externas.
+- 0 falha de PII nos artefatos persistidos.
+
+P2.5 concluído em modo local/dry-run: **approval surface reconciliation criado**, tratando `aprovo` como continuidade casual local, sem registrar decisão de produção, sem executar `hermes cron create`, sem chamar Hermes CLI real, sem alterar scheduler, sem criar/remover cron real, sem ativar sender/runtime-send e sem enviar nada.
+
+Artefatos P2.5:
+
+- Módulo novo: `/opt/data/profiles/mordomo/scripts/zipper_followup_p2_approval_surface_reconciliation.py`
+- Testes novos: `/opt/data/profiles/mordomo/scripts/test_zipper_followup_p2_approval_surface_reconciliation.py`
+- Reconciliação local: `/opt/data/profiles/mordomo/state/zipper_followup_p2_approval_surface_reconciliation.json`
+- Relatório Brain: `areas/operacoes/reports/lcmordomo-p205-zipper-approval-surface-reconciliation-2026-06-06.md`
+
+Resultado P2.5:
+
+- Frase recebida: `aprovo`.
+- Classe da frase: `casual_continue`.
+- Approval Go/No-Go: `GO-TECHNICAL-NOT-PRODUCTION`.
+- Technical fixture clean: sim.
+- Decisão de produção registrada: não.
+- Execução aprovada: não.
+- Elegível para futura criação de cron: não.
+- Elegível para cron real agora: não.
+- Bloqueio humano restante: `production_decision_phrase_missing`.
+- Validação não persistente da frase exata de decisão: `GO-ELIGIBLE-BUT-NOT-EXECUTED`, sem execução, sem runtime-send e sem envio externo.
+- Cron real criado: não.
+- Cron real removido: não.
+- Comando executado: não.
+- Hermes CLI real chamado: não.
+- Scheduler real alterado: não.
+- Sender chamado: não.
+- Runtime send enabled: não.
+- Envio externo habilitado: não.
+- 0 chamadas externas.
+- 0 falha de PII nos artefatos persistidos.
+
+P2.6 concluído em modo local/dry-run: **final P2 readiness audit criado**, consolidando P2.1–P2.5, sem executar `hermes cron create`, sem chamar Hermes CLI real, sem alterar scheduler, sem criar/remover cron real, sem ativar sender/runtime-send e sem enviar nada.
+
+Artefatos P2.6:
+
+- Módulo novo: `/opt/data/profiles/mordomo/scripts/zipper_followup_p2_final_readiness_audit.py`
+- Testes novos: `/opt/data/profiles/mordomo/scripts/test_zipper_followup_p2_final_readiness_audit.py`
+- Auditoria final local: `/opt/data/profiles/mordomo/state/zipper_followup_p2_final_readiness_audit.json`
+- Relatório Brain: `areas/operacoes/reports/lcmordomo-p206-zipper-final-p2-readiness-audit-2026-06-06.md`
+
+Resultado final P2 atualizado após frase exata de decisão:
+
+- P2 Final Go/No-Go: `GO-ELIGIBLE-BUT-NOT-EXECUTED`.
+- Technical fixture clean: sim.
+- Decisão de produção registrada: sim.
+- Elegível para futura criação de cron: sim.
+- Execução aprovada: não.
+- Elegível para cron real agora: não.
+- Artefatos P2 esperados/encontrados: 15/15.
+- Blockers técnicos/humanos restantes nesta auditoria: nenhum.
+- Cron real criado: não.
+- Cron real removido: não.
+- Comando executado: não.
+- Hermes CLI real chamado: não.
+- Scheduler real alterado: não.
+- Sender chamado: não.
+- Runtime send enabled: não.
+- Envio externo habilitado: não.
+- 0 chamadas externas.
+- 0 falha de PII nos artefatos persistidos.
+
+P2 concluída em modo local/dry-run com decisão de produção registrada. Próximo passo seguro: parar aqui ou iniciar etapa separada de execução futura com frase exata própria e verificação fresca; execução real continua não executada e runtime-send/envio externo seguem bloqueados.
+
+## P3 — Real local no-agent cron execution — 2026-06-06
+
+Execução autorizada pela frase exata `EXECUTAR CRON REAL LOCAL NO-AGENT ZIPPER SEM ENVIO EXTERNO`.
+
+Resultado:
+
+- Cron real criado: sim.
+- Job id ativo: `8b9ddeb90a1d`.
+- Nome: `LC Mordomo Zipper follow-up silent-OK local no-agent`.
+- Schedule: `every 30m`.
+- Delivery: `local`.
+- Script: `lcmordomo_zipper_followup_silent_ok_no_agent.py`.
+- Workdir: `/opt/data/profiles/mordomo/scripts`.
+- Mode: `no-agent`.
+- Wrapper criado: `/opt/data/scripts/lcmordomo_zipper_followup_silent_ok_no_agent.py`.
+- Registro local: `/opt/data/profiles/mordomo/state/zipper_followup_real_local_no_agent_cron_execution.json`.
+- Relatório Brain: `areas/operacoes/reports/lcmordomo-p3-zipper-real-local-no-agent-cron-execution-2026-06-06.md`.
+
+Correção aplicada:
+
+- Primeira tentativa com `30m` criou job one-shot `52cb617afc7d`; removido imediatamente.
+- Job recorrente recriado com `every 30m`: `8b9ddeb90a1d`.
+- Duplicidade por nome após correção: 1.
+
+Verificação:
+
+- Manual wrapper tick: rc=0, stdout=0 bytes, stderr=0 bytes.
+- Cron list confirmou `8b9ddeb90a1d [active]`, `Schedule: every 30m`, `Repeat: ∞`.
+- Sender chamado: não.
+- Runtime-send enabled: não.
+- Envio externo aprovado/habilitado: não.
+- Sends now: não.
+- External calls: 0.
+
+Rollback:
+
+```bash
+HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron remove 8b9ddeb90a1d
+```

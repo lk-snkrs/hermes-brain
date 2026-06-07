@@ -15,6 +15,7 @@ Skills são processos repetíveis com entrada, passos, saída e verificação. E
 | LK Shopify Product Upload | `skills/lk-shopify-product-upload/SKILL.md` | LK Ecommerce | Cadastro seguro de produtos Shopify com GOAT, pesquisa histórica, SEO, preview e aprovação |
 | LK SEO Weekly Improvement | `skills/lk-seo-weekly-improvement/SKILL.md` | LK SEO/CRO | Processo semanal de nota Claude SEO, metas e fila de melhoria de páginas/PDPs |
 | Lucas Hermes Continuous Improvement | `skills/lucas-hermes-continuous-improvement/SKILL.md` | Operações | Varredura contínua de melhorias Hermes/LK em modo seguro, read-only/local por padrão |
+| Hermes Browser CDP | `skills/hermes-browser-cdp/SKILL.md` | Operações/QA | Browser dedicado via CDP privado para QA visual, login/captcha humano e automação Playwright/MCP segura |
 
 ## Navegação por área
 

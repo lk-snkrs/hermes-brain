@@ -1,3 +1,12 @@
+## 2026-06-06 — Daily Loop: v0.16 detectado + fallback de observabilidade host registrado
+
+**Atenção sem incidente confirmado:**
+- GitHub Releases publicou Hermes `v0.16.0 (2026.6.5) — The Surface Release`; runtime local segue em `v0.15.2`. Classificado como oportunidade A3 para pacote paralelo de upgrade, sem update/restart/swap automático.
+- Host Docker observability via SSH falhou por timeout; criado recibo sanitizado `reports/hermes-host-docker-observability-2026-06-06.json` e usados fallbacks locais. Watchdogs runtime/cron e compression self-heal estavam silent-OK.
+- Brain Health 02h `FAIL=0/WARN=0`, Brain Improvement Score `94/100`, governance artifact checker `status=ok`.
+
+**Próximo passo seguro:** matriz inicial versionável criada em `reports/governance/hermes-v016-adoption-matrix-2026-06-06.md`; transformar em pacote A3 de upgrade paralelo se Lucas aprovar. Produção/gateway/Docker continuam approval-gated.
+
 ## 2026-06-06 — LC Hermes: governança sistêmica de contexto mínimo verificada
 
 **A1 documental/governança aplicado:**
