@@ -51,6 +51,7 @@ Antes de agir em trabalho operacional:
 9. Ler arquivos do Brain antes de afirmar estado documental.
 10. Consultar API/banco/fonte real antes de afirmar dado vivo.
 11. Usar fonte segura autorizada para credenciais sob demanda, sem imprimir valores.
+12. Para webhooks externos, preferir `hermes-webhooks` no Vercel como ingresso público canônico (`https://hermes-webhooks.lucascimino.com/webhooks/<route>`, alias técnico `https://hermes-webhooks.vercel.app/webhooks/<route>`) antes do Hermes Gateway; não inventar n8n/Railway/Zapier/túnel quando o Vercel proxy existente cobre ou pode cobrir o caso. Shopify exige validação `X-Shopify-Hmac-Sha256` no Vercel, preservação do raw body e reassinatura para a rota Hermes. Deploy Vercel, env/secrets, configuração upstream e writes externos seguem exigindo aprovação escopada.
 
 ## Roteamento obrigatório
 

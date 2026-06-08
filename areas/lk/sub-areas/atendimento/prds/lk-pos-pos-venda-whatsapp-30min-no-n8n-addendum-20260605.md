@@ -33,7 +33,7 @@ Evidência:
 
 Webhooks relevantes encontrados:
 
-- `orders/paid` → `https://hermes-webhooks.vercel.app/webhooks/lk-shopify-pos-restock`
+- `orders/paid` → `https://hermes-webhooks.lucascimino.com/webhooks/lk-shopify-pos-restock`
 - `orders/paid` → `https://lucascimino.com/webhook/shopify`
 - `orders/create` → `https://lucascimino.com/webhook/shopify`
 - `orders/paid` → `https://crisp-hooks.srv1331756.hstgr.cloud/webhooks/lk-shopify-tiny-stock-sync`

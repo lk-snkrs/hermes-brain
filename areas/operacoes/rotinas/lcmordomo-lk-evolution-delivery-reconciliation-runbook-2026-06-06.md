@@ -95,7 +95,7 @@ Receipt canônico LK Ops:
 ## Checklist se o problema reaparecer
 
 1. Confirmar rota pública Evolution → Vercel:
-   - `https://hermes-webhooks.vercel.app/webhooks/lk-evolution-delivery-reconciliation?secret=[REDACTED]`
+   - `https://hermes-webhooks.lucascimino.com/webhooks/lk-evolution-delivery-reconciliation?secret=[REDACTED]`
 2. Verificar logs Vercel/Hermes sanitizados:
    - evento `messages.update`
    - `message_id_hash`

@@ -1,3 +1,11 @@
+## 2026-06-07 — Runtime watchdog: expectativa v0.16 alinhada
+
+**A1 auto-fix aplicado:**
+- Watchdog runtime/cron e helper de observabilidade host atualizados para esperar `Hermes Agent v0.16.0 (2026.6.5)` após o runtime local responder v0.16.0.
+- Verificação: `py_compile` OK e execução manual do runtime watchdog voltou a silent-OK.
+
+**Limite observado:** primeira tentativa de host Docker observability expirou em 35s, mas o recheck read-only seguinte confirmou containers `running`, runtime v0.16.0 nos dois containers, cron/gateway vivo e `alerts: []`. Nenhuma ação Docker/gateway/produção foi executada.
+
 ## 2026-06-06 — Daily Loop: v0.16 detectado + fallback de observabilidade host registrado
 
 **Atenção sem incidente confirmado:**
