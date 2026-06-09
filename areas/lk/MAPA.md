@@ -6,8 +6,9 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 
 - `sub-areas/crm/` — recompra, RFM, cross-sell, leads esfriando, sugestões e consequências.
 - `sub-areas/trafego-pago/` — hipóteses, criativos, testes, dados e learnings de performance.
-- `sub-areas/ecommerce/` — Shopify, produtos, estoque, pedidos, UX e catálogo.
+- `sub-areas/ecommerce/` — Shopify, produtos, pedidos, UX e catálogo; roteia estoque físico/pronta entrega para `sub-areas/stock/`.
 - `sub-areas/shopify/` — LK Shopify especialista: produto/upload, coleções, páginas/objetos Shopify, preview/aprovação, readback/receipt e padrões canônicos de execução.
+- `sub-areas/stock/` — `[LK] Estoque Loja Física` / perfil `lk-stock`: dono obrigatório para qualquer pergunta de estoque, pronta entrega, disponibilidade, “tem na loja?”, ruptura/baixo estoque, grade/tamanho e fila de reposição/transferência/compra com Tiny como verdade. Todos os agentes LK devem rotear esse tipo de demanda para cá.
 - `sub-areas/atendimento/` — FAQ, dúvidas, suporte e consolidação para bot.
 
 ## Projeto estratégico aprovado
@@ -110,4 +111,4 @@ Para qualquer otimização/melhoria de Shopify collection da LK envolvendo SEO, 
 Fonte canônica: `sub-areas/growth/rules/REGRA-LK-GROWTH-OPTIMIZED-COLLECTION-OBRIGATORIA.md`.
 Skill operacional: `sub-areas/growth/skills/lk-superpowers-collection-optimizer/SKILL.md`.
 Tag Shopify: `LK Growth Optimized Collection`.
-
+- `sub-areas/stock/references/lk-stock-routing-canon-pronta-entrega-estoque-20260608.md` — regra canônica: todo estoque/pronta entrega da LK deve ser resolvido pelo `lk-stock`; LK Ops/Atendimento não corrige/mapeia disponibilidade por conta própria.

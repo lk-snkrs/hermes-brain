@@ -1,13 +1,13 @@
 # Zipper OS — Perfil de Escrita de Lucas por E-mail
 
-Atualizado: 2026-06-07T06:21:18.067256+00:00
+Atualizado: 2026-06-08T06:21:04.578355+00:00
 
 ## Escopo
 
 - Conta analisada: `lucas@zippergaleria.com.br`
 - Janela: últimos 365 dias
 - Amostra enviada analisada: 50 mensagens
-- Mensagens recebidas localizadas para contexto: 15
+- Mensagens recebidas localizadas para contexto: 26
 
 ## Regra de segurança
 

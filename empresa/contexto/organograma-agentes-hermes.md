@@ -122,9 +122,17 @@ Hermes Brain — fonte de verdade, evidência, handoff, memória e skills
 
 - Caminho operacional: `areas/lk/sub-areas/atendimento/`.
 - Runtime: `/opt/data/profiles/lk-ops`.
-- Dono: atendimento, loja, vendas operacionais, relatórios comerciais, estoque, preço, disponibilidade, reservas, Tiny/Shopify operacional.
-- Fonte de verdade: Tiny para estoque; Shopify é gatilho/superfície, não ledger.
+- Dono: atendimento, loja, vendas operacionais, WhatsApp/Chatwoot, pós-venda, triagem e resposta final ao cliente/equipe.
+- Regra crítica: estoque, pronta entrega, disponibilidade, grade/tamanho, ruptura/baixo estoque e divergência SKU/Tiny/Shopify devem ser roteados obrigatoriamente para `lk-stock`; LK Ops não corrige/mapeia disponibilidade por conta própria.
 - Regra: rascunho interno e diagnóstico read-only OK; promessa material, contato externo sensível e writes exigem aprovação explícita e escopada.
+
+#### [LK] Estoque Loja Física
+
+- Caminho operacional: `areas/lk/sub-areas/stock/`.
+- Runtime: `/opt/data/profiles/lk-stock`.
+- Dono: estoque físico, pronta entrega, disponibilidade por SKU/tamanho, ruptura/baixo estoque, best sellers disponíveis e filas de reposição/transferência/compra.
+- Fonte de verdade: Tiny / `LK | CONTROLE ESTOQUE`; Shopify é superfície/gatilho/contexto, não verdade final de estoque.
+- Regra: todos os agentes LK devem rotear demandas de estoque/pronta entrega para `lk-stock`; nenhum agente promete disponibilidade sem evidência retornada por ele.
 
 #### LK Shopify
 

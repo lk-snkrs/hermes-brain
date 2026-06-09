@@ -1,0 +1,1020 @@
+{
+  "jobs": [
+    {
+      "id": "738d3deabaeb",
+      "name": "LK Growth OS Weekly Growth Review",
+      "prompt": "Tarefa recorrente semanal para Lucas Cimino / LK Sneakers — LK Growth OS Weekly Growth Review decision-grade.\n\nVocê está rodando no perfil especialista `lk-growth`. Use o Brain em `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/` como contexto operacional.\n\nObjetivo:\n- Gerar um review semanal de Growth para LK Sneakers cobrindo o checklist canônico de 18 tópicos em `ESCOPO-18-TOPICOS.md`.\n- Priorizar oportunidades de impacto comercial: tráfego qualificado, CTR, conversão, receita, Merchant health, CRO mobile e visibilidade em IA.\n\nObrigatório:\n1. Operar read-only/preview por padrão.\n2. Não executar writes em Shopify, GMC, GA4/GSC config, Ads, Klaviyo, WhatsApp, e-mail, theme production, preço, estoque ou checkout.\n3. Declarar quando um item não for decision-grade por falta de dado autenticado.\n4. Usar, quando disponível, GA4, GSC, GMC, Shopify read-only, PageSpeed/CrUX, SERP e Brain histórico.\n5. Separar fato verificado, interpretação, recomendação, risco, rollback e aprovação necessária.\n6. Produzir top 5 ações por impacto/esforço/risco.\n7. Sugerir approval packets apenas como preview.\n8. Incluir uma seção “18 tópicos — cobertura” marcando cada tópico como verificado, parcial, não aplicável ou pendente.\n\nFormato de entrega:\n- Resumo executivo.\n- Alertas/anomalias.\n- Oportunidades top 5.\n- 18 tópicos — cobertura.\n- Pacotes de decisão/approval sugeridos.\n- Próximos passos seguros.\n\nSe tudo estiver saudável, ainda entregue o review semanal: este relatório é o produto esperado da rotina.",
+      "skills": [
+        "lk-seo-weekly-improvement",
+        "lk-operational-intelligence",
+        "lk-shopify-readonly",
+        "seo-audit",
+        "seo-page",
+        "seo-content",
+        "seo-ecommerce",
+        "seo-google"
+      ],
+      "skill": "lk-seo-weekly-improvement",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 13 * * 1",
+        "display": "0 13 * * 1"
+      },
+      "schedule_display": "0 13 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T00:14:25.767364+00:00",
+      "next_run_at": "2026-05-25T13:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": "/opt/data/hermes_bruno_ingest/hermes-brain"
+    },
+    {
+      "id": "1240644c5f3f",
+      "name": "LK Growth OS GMC Review read-only",
+      "prompt": "Tarefa recorrente semanal para Lucas Cimino / LK Sneakers — LK Growth OS GMC Review read-only.\n\nVocê está rodando no perfil especialista `lk-growth`. Use o Brain em `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/` como contexto operacional.\n\nObjetivo:\n- Revisar semanalmente a saúde do Google Merchant Center e Product Data da LK Sneakers.\n- Identificar issues, warnings, disapprovals, divergências Shopify ↔ GMC, atributos ausentes e oportunidades de feed/supplemental feed.\n\nObrigatório:\n1. Operar read-only/preview por padrão.\n2. Não executar Content API writes, supplemental feed writes, reprocess/fetch que altere estado, Shopify writes ou mudanças em preço/estoque sem aprovação explícita atual de Lucas.\n3. Tratar qualquer correção como approval packet: problema, evidência, produto/offer afetado, ação proposta, risco, rollback e validação.\n4. Considerar o escopo do `ESCOPO-18-TOPICOS.md`, principalmente GMC, catálogo/product data quality, schema/Product, Shopify SEO/CRO quando impactar PDP e impact review.\n5. Se credenciais/dados autenticados faltarem, declarar claramente “não decision-grade ainda” e listar o dado necessário.\n\nFormato de entrega:\n- Resumo executivo GMC.\n- Issues críticos e impacto comercial.\n- Produtos/atributos prioritários.\n- Divergências Shopify ↔ GMC.\n- Approval packets sugeridos, sem executar.\n- Próximos passos seguros.\n\nSe tudo estiver saudável, entregar resumo breve com evidência e backlog vazio/baixo risco.",
+      "skills": [
+        "lk-seo-weekly-improvement",
+        "lk-shopify-readonly",
+        "doppler-secrets-operations",
+        "seo-ecommerce",
+        "seo-google"
+      ],
+      "skill": "lk-seo-weekly-improvement",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * 4",
+        "display": "0 12 * * 4"
+      },
+      "schedule_display": "0 12 * * 4",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T00:14:26.227884+00:00",
+      "next_run_at": "2026-05-28T12:00:00+00:00",
+      "last_run_at": "2026-05-21T12:16:04.099342+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": "/opt/data/hermes_bruno_ingest/hermes-brain"
+    },
+    {
+      "id": "c45cda5fe2df",
+      "name": "LK Growth OS SEO/CRO impact review — SEO title/meta P1 packets",
+      "prompt": "One-shot task for Lucas Cimino / LK Sneakers — LK Growth OS SEO/CRO impact review for approved SEO title/meta P1 packets applied on 2026-05-18.\n\nYou are running in the specialist profile `lk-growth`. Use the Brain under `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/` and the reference `lk-seo-weekly-improvement/references/approved-seo-fields-execution-impact-review-20260518.md`.\n\nScope:\n- Read-only only.\n- Compare impact after the 2026-05-18 approved Shopify SEO title/meta changes for the 8 P1 packets.\n- Use artifacts:\n  - `reports/lk-seo-cro-approved-seo-fields-execution-2026-05-18.json`\n  - `reports/lk-seo-cro-approved-seo-fields-execution-2026-05-18.md`\n  - `reports/lk-seo-cro-approved-seo-fields-rollback-2026-05-18.json`\n- Compare changed URLs/handles against pre-change/baseline where available on:\n  - visits/sessions;\n  - conversion;\n  - orders/revenue;\n  - GSC impressions/clicks/CTR/position;\n  - collections vs PDP separately;\n  - verdict: improved, neutral, worse, or insufficient data;\n  - sample-size/sazonality caveats.\n\nAllowed sources:\n- Shopify Admin read-only queries.\n- GA4 read-only if permission works; if GA4 is blocked, explicitly label GA4 as blocked and do not fake metrics.\n- GSC Search Analytics read-only.\n- Local reports/Brain artifacts.\n- GMC read-only only if needed for search/product context.\n\nForbidden:\n- No Shopify writes.\n- No GMC/Merchant writes.\n- No GSC/GA4 writes.\n- No theme/CRO changes.\n- No Klaviyo, WhatsApp, email, ads, customer/team sends, or external write.\n- No secrets in output.\n\nDeliver to Lucas in Portuguese through the LK Growth OS Telegram channel.\nOutput format:\n1. Veredito executivo.\n2. URLs/handles avaliados.\n3. Métricas por fonte with timestamp/freshness.\n4. What improved / neutral / worse / inconclusive.\n5. Caveats and confidence.\n6. Recommended next approval packets, if any, as preview only.\n7. Explicit “não fiz”: writes, sends, campaigns, prices, stock, theme, Merchant/GSC/GA4 writes.",
+      "skills": [
+        "lk-seo-weekly-improvement",
+        "lk-shopify-readonly",
+        "doppler-secrets-operations",
+        "seo-google"
+      ],
+      "skill": "lk-seo-weekly-improvement",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-25T14:34:23+00:00",
+        "display": "once at 2026-05-25 14:34"
+      },
+      "schedule_display": "once at 2026-05-25 14:34",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T00:27:57.302481+00:00",
+      "next_run_at": "2026-05-25T14:34:23+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": "/opt/data/hermes_bruno_ingest/hermes-brain"
+    },
+    {
+      "id": "3526b59ca052",
+      "name": "LK CRO dev preview impact review — Onitsuka/NB/Kill Bill",
+      "prompt": "Você é o LK Growth OS. Faça uma revisão D+7 read-only do preview CRO aplicado em 2026-05-19 no Shopify dev theme `lk-new-theme/dev` para Onitsuka Tiger todos os modelos, Onitsuka Tiger Mexico 66, New Balance 204L e PDP Kill Bill. Escopo: comparar sinais GA4/GSC/Shopify disponíveis antes/depois quando aplicável, verificar se o preview ainda está só em dev ou se foi promovido, listar impacto observado, riscos e recomendação. Não execute writes externos. Use Brain report `reports/lk-cro-dev-theme-preview-2026-05-19.md` e theme PR `https://github.com/lk-snkrs/lk-new-theme/pull/15` como contexto. Entregue resumo executivo ao Lucas no Telegram/origin.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-26T12:00:00+00:00",
+        "display": "once at 2026-05-26 12:00"
+      },
+      "schedule_display": "once at 2026-05-26 12:00",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T12:35:20.743546+00:00",
+      "next_run_at": "2026-05-26T12:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "web",
+        "browser"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "61717aaf7c61",
+      "name": "LK D+7 review — botão Compre Já branco PDP",
+      "prompt": "Revisão D+7 LK Sneakers — hotfix de produção aplicado em 2026-05-19 no tema Shopify `lk-new-theme/production`, asset `sections/lk-pdp.liquid`: botão dinâmico `COMPRE JÁ` alterado de `background: var(--off-white, #f7f3ee) !important;` para `background: var(--white, #ffffff) !important;`. Verificar read-only: (1) a página https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo ainda mostra o botão COMPRE JÁ com fundo branco; (2) não houve regressão visual óbvia nos botões do PDP mobile; (3) se possível, conferir GA4/Shopify read-only para sinais de PDP→checkout sem tomar ações externas. Reportar em português com evidência, status e qualquer recomendação. Não executar writes externos.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-26T15:30:00-03:00",
+        "display": "once at 2026-05-26 15:30"
+      },
+      "schedule_display": "once at 2026-05-26 15:30",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T15:29:16.289299+00:00",
+      "next_run_at": "2026-05-26T15:30:00-03:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": null,
+      "enabled_toolsets": [
+        "browser",
+        "web",
+        "terminal"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "9834f69e3541",
+      "name": "LK D+7 review — PDP CRO production promotion 2026-05-19",
+      "prompt": "Revisar impacto D+7 da mudança de produção LK Sneakers feita em 2026-05-19 no Shopify theme production `lk-new-theme/production` theme ID `155065417950`, asset `sections/lk-pdp.liquid`. Contexto/receipt: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/reports/theme-production-pdp-cro-promotion-2026-05-19.md`. Tarefa: coletar evidência read-only de GA4/Shopify/GSC se conectores estiverem disponíveis; no mínimo validar storefront mobile em PDP representativa sem `preview_theme_id` para confirmar que `COMPRE JÁ`, trust grid e aviso continuam visíveis; comparar com baseline quando disponível; entregar resumo executivo em português com fatos, impacto, anomalias e recomendação. Não executar writes, não alterar Shopify/tema/campanhas/estoque/preço e não enviar nada externo.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-26T15:30:00+00:00",
+        "display": "once at 2026-05-26 15:30"
+      },
+      "schedule_display": "once at 2026-05-26 15:30",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T15:30:28.852173+00:00",
+      "next_run_at": "2026-05-26T15:30:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": null,
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "browser",
+        "web"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "d34a61f3bcd9",
+      "name": "LK PDP CRO hotfix D+7 review — trustbar/reviews/tryon",
+      "prompt": "Revisar o hotfix de CRO aplicado no PDP da LK Sneakers em 2026-05-19: barra de sujeito mais discreta, Provador Virtual com altura da trustbar, popup de avaliações Judge.me com fallback, trustbar Google 400+ avaliações e troca de Frete Grátis por Loja Física Jardins SP. Verificar em pelo menos um PDP ativo se: (1) trustbar mostra Google 4.9 · 400+ avaliações; (2) há Loja Física Jardins, SP e não há duplicação indevida; (3) Provador Virtual segue 52px; (4) clique nas avaliações de produto abre modal/fallback; (5) clique no Google abre modal Google; (6) não houve regressão visual mobile. Usar somente leitura. Entregar resumo executivo com evidências e recomendação.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-26T15:45:41+00:00",
+        "display": "once at 2026-05-26 15:45"
+      },
+      "schedule_display": "once at 2026-05-26 15:45",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T15:45:49.040299+00:00",
+      "next_run_at": "2026-05-26T15:45:41+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "browser",
+        "terminal",
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "3c6547609c35",
+      "name": "LK PDP preorder compact hotfix D+7 review",
+      "prompt": "Revisar o hotfix de CRO aplicado no PDP da LK Sneakers em production para compactar o aviso de prazo especial/pre-order. Verificar em páginas de produto com tag encomenda/pre-order se o bloco .pi-preorder-card permanece discreto (aprox. 28-30px), se não aparece mais o texto 'Sujeito a encomenda', se o CTA de WhatsApp funciona visualmente, e reportar qualquer regressão de layout. Não fazer writes; apenas auditoria read-only e resumo executivo para Lucas.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-26T16:05:00+00:00",
+        "display": "once at 2026-05-26 16:05"
+      },
+      "schedule_display": "once at 2026-05-26 16:05",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T16:03:25.636248+00:00",
+      "next_run_at": "2026-05-26T16:05:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "browser"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "20affa4dcba6",
+      "name": "LK n8n checkout abandonado hardening impact review",
+      "prompt": "Faça uma revisão de impacto do hardening aplicado em 2026-05-20 no workflow n8n da LK Sneakers `kWQbmEMuvdipcGjd` (checkout abandonado 30min/24h/72h via Crisp). Contexto: hardening v2 adicionou Shopify abandonedCheckouts first:250, frequency cap por telefone 96h em staticData.phoneSequences, auditLog, Crisp onError continueRegularOutput e removeu fallback inseguro originals[0]. Use credenciais via Doppler se necessário sem imprimir valores. Verifique read-only: workflow active/version/activeVersionId/triggerCount; últimas execuções; staticData counts sent/failed/skipped/phoneSequences/auditLog; presença de 24h/72h/cupom; erros Crisp/Shopify; callback/delivery se disponível. Não envie WhatsApp nem altere n8n/Shopify/Crisp sem aprovação. Entregue resumo executivo com: enviado/failed por touchpoint, anomalias, recomendação de manter/pausar/hardening adicional, e rollback se necessário. Referências Brain: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/crm/receipts/lk-n8n-checkout-abandonado-hardening-2026-05-20.md` e audit correspondente.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-27T17:50:00-03:00",
+        "display": "once at 2026-05-27 17:50"
+      },
+      "schedule_display": "once at 2026-05-27 17:50",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-20T17:48:32.435449+00:00",
+      "next_run_at": "2026-05-27T17:50:00-03:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "web"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "2fd730af8433",
+      "name": "LK cart intent Crisp REST identity review D+7",
+      "prompt": "Revise o impacto do hotfix LK cart-intent/Crisp REST identity aplicado em 2026-05-20. Verificar, sem writes externos: 1) n8n workflow XLODECE4MvNRNCQ9 ainda ativo e com node 'Crisp REST Get Conversation Meta' usando credencial 'Crisp REST Website Basic Auth - LK'; 2) Supabase lk_crm_cart_intent_events: contagem dos últimos 7 dias por tracker_version, has_crisp, has_phone, has_email, event_name; 3) se houve aumento de identity_update/cart events com Crisp; 4) se algum envio WhatsApp foi elegível/enviado, separar request_accepted de delivery/callback quando disponível; 5) reportar gaps e recomendar próximo ajuste. Não enviar mensagens a clientes, não alterar n8n/Shopify/Crisp.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-27T12:00:00-03:00",
+        "display": "once at 2026-05-27 12:00"
+      },
+      "schedule_display": "once at 2026-05-27 12:00",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-20T23:55:21.086929+00:00",
+      "next_run_at": "2026-05-27T12:00:00-03:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "web"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "a215814309a2",
+      "name": "LK Recovery OS T1 go-live D+7 impact review",
+      "prompt": "Revisão D+7 read-only do go-live LK Recovery OS T1 abandon checkout. Contexto: Lucas autorizou go-live em 2026-05-21; runner cron job b34963a154a6 `LK Recovery OS T1 abandoned checkout live runner` roda a cada 15min via script `/opt/data/profiles/lk-growth/scripts/lk_recovery_os_t1_runner.py`; repo `/opt/data/hermes_bruno_ingest/lk-recovery-os`; receipt `receipts/lk-recovery-os-t1-go-live-2026-05-21.json`; template `lk_checkout_abandonado_30min_v4`. Faça auditoria read-only: listar mensagens live desde go-live por status, callbacks de entrega/falha, marketing-limit count, frequência de envios, sinais de recovered checkout quando possível, erros do cron, e recomendações de manter/pausar/ajustar. Não enviar WhatsApp, não alterar cron, não alterar Shopify/Crisp/Supabase. Responder em português executivo com fatos, riscos e decisão recomendada.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-28T12:00:00-03:00",
+        "display": "once at 2026-05-28 12:00"
+      },
+      "schedule_display": "once at 2026-05-28 12:00",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-21T21:50:25.258263+00:00",
+      "next_run_at": "2026-05-28T12:00:00-03:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "644f8a37e250",
+      "name": "LK Recovery OS checkout_started webhook D+7 impact review",
+      "prompt": "Revisão D+7 read-only do rollout LK Recovery OS checkout_started webhook/Identity Spine. Contexto: em 2026-05-22 foi feito deploy production em https://lk-recovery-os.vercel.app, configurados envs Vercel LK_RECOVERY_SHOPIFY_STORE_URL / LK_RECOVERY_SHOPIFY_ACCESS_TOKEN / LK_RECOVERY_SHOPIFY_WEBHOOK_SECRET, registrado webhook Shopify checkouts/create para /webhooks/shopify/checkouts/create, mantendo LK_RECOVERY_DRY_RUN=true e LK_RECOVERY_LIVE_SEND_ENABLED=false. O cron customer-facing fdc9ad165daa deve permanecer pausado salvo aprovação explícita atual de Lucas. Tarefa: verificar read-only saúde do endpoint, HMAC reject, volume de eventos shopify_webhook/checkouts/create, sequências WAITING, supressões por order recheck/checkout_token, erros Vercel/logs se acessíveis, e se há qualquer sinal de envio customer-facing indevido. Não ativar cron, não enviar WhatsApp, não fazer writes. Entregar resumo executivo com recomendação: manter dry-run, avançar para gate controlado ou rollback. Cron-run sessions não devem criar novos cron jobs.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-29T15:01:10.110991+00:00",
+        "display": "once in 7d"
+      },
+      "schedule_display": "once in 7d",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T15:01:10.111077+00:00",
+      "next_run_at": "2026-05-29T15:01:10.110991+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "web"
+      ],
+      "workdir": "/opt/data/hermes_bruno_ingest/lk-recovery-os"
+    },
+    {
+      "id": "e87932cda969",
+      "name": "LK GEO llms.txt root D+7 impact review",
+      "prompt": "Revisão D+7 read-only do Packet A GEO da LK Sneakers aplicado em produção em 2026-05-22.\n\nContexto:\n- Lucas aprovou corrigir `/llms.txt` e `/llms-full.txt`.\n- Theme production: `lk-new-theme/production`, theme ID `155065417950`.\n- Fix efetivo: `templates/agents.md.liquid` recebeu bloco `LK commercial context for AI Search / GEO`, porque `/llms.txt` e `/llms-full.txt` continuavam servindo o conteúdo de `agents.md` mesmo após criar `templates/llms.txt.liquid` e `templates/llms-full.txt.liquid`.\n- Receipt no Brain: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-growth-geo-llms-root-production-receipt-2026-05-22.md`.\n- Backups locais:\n  - `/opt/data/hermes_bruno_ingest/local_sql/lk_theme_rollback_snapshots/lk-geo-llms-root-155065417950-20260522T163822Z/`\n  - `/opt/data/hermes_bruno_ingest/local_sql/lk_theme_rollback_snapshots/lk-geo-agents-root-155065417950-20260522T164128Z/`\n\nTarefa:\n1. Verifique publicamente, sem writes, os endpoints `https://lksneakers.com.br/llms.txt`, `/llms-full.txt` e `/agents.md` com cache-busting.\n2. Confirme se todos ainda contêm estes 8 marcadores: New Balance 204L, Nike Mind 001, Onitsuka Tiger Mexico 66, Adidas Samba Jane, Air Jordan Travis Scott, Lululemon, Kill Bill, onitsuka-tiger-todos-os-modelos.\n3. Rode uma checagem leve de AI Search/DataForSEO se disponível para perguntas como `onde comprar New Balance 204L original no Brasil` e `onde comprar Onitsuka Tiger Mexico 66 original no Brasil`; reporte se LK aparece ou não.\n4. Se houver acesso read-only a GSC/GA4/Shopify, traga sinais de impressões/cliques/sessões/conversão das P1s; se não houver, marque como não decision-grade.\n5. Entregue um relatório executivo curto: status, evidência, riscos, próxima recomendação. Não faça nenhum write externo.",
+      "skills": [
+        "lk-seo-weekly-improvement",
+        "seo-geo",
+        "seo-google"
+      ],
+      "skill": "lk-seo-weekly-improvement",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-29T13:45:00-03:00",
+        "display": "once at 2026-05-29 13:45"
+      },
+      "schedule_display": "once at 2026-05-29 13:45",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T16:43:36.492475+00:00",
+      "next_run_at": "2026-05-29T13:45:00-03:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "terminal",
+        "file"
+      ],
+      "workdir": "/opt/data/hermes_bruno_ingest/hermes-brain"
+    },
+    {
+      "id": "de3a45d36040",
+      "name": "LK SEO/GEO Experiment Ledger — weekly impact review",
+      "prompt": "Tarefa recorrente semanal read-only para Lucas Cimino / LK Sneakers — LK SEO/GEO Experiment Ledger e Impact Review.\n\nObjetivo: toda sexta-feira, revisar as mudanças de SEO/GEO/CRO feitas recentemente na LK, comparar sinais de Google/Search Console quando disponíveis, e propor a próxima melhoria pequena e testável. Não execute writes em Shopify, tema, Merchant, Klaviyo, campanhas ou qualquer canal customer-facing. Produza apenas análise, fila de decisão e approval packets.\n\nContexto e guardrails:\n- LK é premium/minimal/mobile-first. Evitar linguagem pública de pronta entrega/encomenda/estoque como taxonomia. Preferir curadoria exclusiva, autenticidade, atendimento humano e confirmação via chat quando necessário.\n- Priorização deve ser decision-grade quando possível: GSC impressões/cliques/CTR/posição, GA4/sessões/conversão/receita, Shopify vendas/receita, GMC quando relevante. Se dados autenticados faltarem, marque como não decision-grade.\n- GEO: procurar blocos citáveis de 134–167 palavras, FAQ em formato pergunta/resposta, schema quando aplicável, llms.txt/agentic endpoints, SSR e legibilidade para AI Search.\n- Não priorizar por estoque/Tiny.\n- Para cada mudança analisada, separar: fato verificado, interpretação, recomendação.\n\nExecução esperada:\n1. Buscar no Brain relatórios/receipts recentes de mudanças SEO/GEO/CRO/tema da LK nos últimos 7–14 dias.\n2. Montar um ledger com: data, URL/handle, tipo de mudança, status (dev/prod/live), hipótese, métrica esperada, risco, rollback.\n3. Para mudanças live há pelo menos ~7 dias, comparar antes/depois quando os dados existirem: GSC CTR/cliques/impressões/posição; GA4 sessões/conversão/receita; Shopify vendas/receita; sinais de indexação/snippet; e páginas públicas.\n4. Para mudanças ainda em dev ou sem dados suficientes, marcar como pendente e dizer exatamente o que falta.\n5. Escolher no máximo 3 próximas melhorias pequenas e testáveis para a semana seguinte. Preferir uma página/collection por vez, com hipótese clara e métrica de sucesso.\n6. Gerar approval packets curtos para qualquer mudança proposta, com copy proposta quando for FAQ/title/meta/description, impacto, esforço, risco, rollback e se precisa aprovação.\n7. Salvar relatório no Brain em `reports/lk-seo-geo-experiment-ledger-YYYY-MM-DD.md` e responder a Lucas com resumo executivo.\n\nFormato da resposta para Lucas:\n- Veredito: o que melhorou / neutro / ainda sem dados.\n- Mudanças analisadas.\n- Evidências do Google/Shopify disponíveis.\n- Próximo teste recomendado, com pergunta de aprovação se houver write.\n- Bloqueios/dados ausentes.",
+      "skills": [
+        "lk-seo-weekly-improvement",
+        "seo-geo",
+        "seo-google",
+        "lk-shopify-readonly"
+      ],
+      "skill": "lk-seo-weekly-improvement",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 13 * * 5",
+        "display": "30 13 * * 5"
+      },
+      "schedule_display": "30 13 * * 5",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T18:09:04.417281+00:00",
+      "next_run_at": "2026-05-29T13:30:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "web"
+      ],
+      "workdir": "/opt/data/hermes_bruno_ingest/hermes-brain"
+    },
+    {
+      "id": "cd5f548bfe49",
+      "name": "LK collection GEO FAQ production D+7 impact review",
+      "prompt": "Faça revisão D+7 do experimento LK Sneakers publicado em produção em 2026-05-22: Top 10 collection GEO/FAQ overrides no tema Shopify production `lk-new-theme/production` (theme_id 155065417950), asset `sections/lk-collection.liquid`. Verifique publicamente as 10 coleções: onitsuka-tiger-todos-os-modelos, new-balance-204l, air-jordan-travis-scott, lululemon, adidas-samba-jane, onitsuka-tiger-mexico-66, nike-mind-001, yeezy, nike-x-jacquemus-moon-shoe-sp, nude-project. Confirmar: 1 FAQ visual, 1 FAQPage schema, ausência de FAQ duplicado, ausência de “calça grande ou pequeno”/“veste grande ou pequeno”, copy correta “tem a forma grande ou pequena” ou “tem a modelagem grande ou pequena”. Se houver acesso local a relatórios/GSC no Brain, comparar sinais de impressões/cliques/CTR/queries antes/depois; se não houver, marcar como não decision-grade e pedir dados autenticados. Não faça writes.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-29T18:45:00-03:00",
+        "display": "once at 2026-05-29 18:45"
+      },
+      "schedule_display": "once at 2026-05-29 18:45",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T18:42:43.855975+00:00",
+      "next_run_at": "2026-05-29T18:45:00-03:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "web",
+        "browser"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "b58683155a65",
+      "name": "LK Auth Hub D+7 impact review",
+      "prompt": "Você é o especialista Growth da LK Sneakers. Fazer uma revisão D+7 read-only da página publicada https://lksneakers.com.br/pages/autenticidade após a publicação do Authenticity Hub. Verificar publicamente: página acessível, hero presente, FAQPage schema presente, ausência dos termos públicos proibidos 'estoque', 'encomenda', 'pronta entrega', links internos dos guias, e sinais básicos de indexabilidade. Se houver acesso a dados autenticados não disponível, declarar que GSC/GA4 não foi verificado e recomendar coleta manual de cliques/impressões/sessões/conversão. Entregar resumo executivo em português com: ok/anomalias, evidências, próximos ajustes e necessidade de approval se houver write.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-29T19:11:33+00:00",
+        "display": "once at 2026-05-29 19:11"
+      },
+      "schedule_display": "once at 2026-05-29 19:11",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T19:11:41.207900+00:00",
+      "next_run_at": "2026-05-29T19:11:33+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "browser"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "e0f45429a4f7",
+      "name": "LK blog boutique premium D+7 impact review",
+      "prompt": "Revisão D+7 read-only do post publicado na Shopify em 2026-05-22 para LK Sneakers: \"Boutique premium de sneakers no Brasil: o que muda na experiência de compra\". URL: https://lksneakers.com.br/blogs/novidades/boutique-premium-de-sneakers-no-brasil. Verificar: indexabilidade básica, resposta pública 200, title/meta visíveis, se o posicionamento boutique premium aparece no DOM, se termos proibidos aparecem no artigo, e sinais iniciais de Search/GEO se ferramentas disponíveis. Não fazer writes. Reportar achados, riscos, e próximos passos. Contexto estratégico: LK é boutique premium/loja especializada; não posicionar como marketplace, legit-check ou vídeo de autenticação; concorrentes principais são Juicy Sneakers, Hype Concept, PalmTree48.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-29T19:59:55.714648+00:00",
+        "display": "once in 7d"
+      },
+      "schedule_display": "once in 7d",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T19:59:55.714713+00:00",
+      "next_run_at": "2026-05-29T19:59:55.714648+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "terminal",
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "c90e2186b0a0",
+      "name": "LK NB blog rewrite D+7 impact review",
+      "prompt": "Faça uma revisão read-only de impacto D+7 do artigo publicado da LK Sneakers: https://lksneakers.com.br/blogs/novidades/new-balance-original-vs-falso-6-diferencas-cruciais. Verifique publicamente se o layout e a versão v2 continuam visíveis: título único (sem H1 duplicado no corpo), featured/hero da loja, caixa de resposta direta, imagens inline editoriais creditadas, seção por modelos (9060, 530, 550, 2002R, 990v6), seção 'Onde comprar New Balance original no Brasil?', CTA 'Explore a curadoria New Balance da LK', FAQ com QR code e 9060, e marcadores: lk-blog-summary, lk-blog-nb-authenticity, modelos-new-balance-original-vs-falso, onde-comprar-new-balance-original-brasil, lk-blog-cta-new-balance, wwd.com, highsnobiety.com. Verifique também se há erros óbvios de renderização/cache e resuma em português. Não faça writes. Se tiver acesso a dados autenticados de Search Console/GA4 no ambiente, apenas leia e reporte sinais iniciais; se não tiver, marque como sem dados autenticados.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-29T20:51:19.428180+00:00",
+        "display": "once in 7d"
+      },
+      "schedule_display": "once in 7d",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T20:51:19.428236+00:00",
+      "next_run_at": "2026-05-29T20:51:19.428180+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "terminal"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "e0088791bb3b",
+      "name": "LK GEO Source Pages D+7 Impact Review",
+      "prompt": "Faça a revisão D+7 read-only das páginas-fonte GEO publicadas/corrigidas em 2026-05-23 para LK Sneakers. URLs finais vigentes após correção sales-informed hero e cache-bust por handle: https://lksneakers.com.br/pages/onitsuka-tiger-original-brasil-guia-lk, https://lksneakers.com.br/pages/new-balance-204l-original-brasil-guia-lk, https://lksneakers.com.br/pages/adidas-sl-72-og-vs-rs-guia-lk, https://lksneakers.com.br/pages/yeezy-original-brasil-guia-lk, https://lksneakers.com.br/pages/air-jordan-travis-scott-original-brasil-guia-lk, https://lksneakers.com.br/pages/lululemon-original-brasil-guia-lk. Verifique: HTTP 200 nas URLs finais; redirects 301/302 das URLs antigas para as finais; H1 único; FAQPage/WebPage schema; ausência dos termos proibidos ('pronta entrega', 'encomenda', 'estoque', 'marketplace', 'legit-check'); presença do produto hero sales-informed correto: Onitsuka Kill Bill, New Balance 204L Mushroom Arid Stone, Adidas SL72 OG Maroon Almost Yellow, Yeezy Boost 350 V2 Onyx, Air Jordan 1 Low Travis Scott Medium Olive, Jaqueta Lululemon Define Nulu. Se houver acesso a GSC/GA4, comparar primeiras tendências de impressões, cliques e sessões; se não houver, marcar como não decision-grade e usar somente diagnóstico público. Entregar resumo executivo com evidências, riscos e próximos passos.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-30T10:00:00-03:00",
+        "display": "once at 2026-05-30 10:00"
+      },
+      "schedule_display": "once at 2026-05-30 10:00",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-23T09:51:17.572943+00:00",
+      "next_run_at": "2026-05-30T10:00:00-03:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "terminal",
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "0ab9cd485d15",
+      "name": "LK D+7 impact review — Adidas SL 72 OG vs RS GEO page table",
+      "prompt": "Faça uma revisão read-only D+7 do impacto da correção/página GEO da LK Sneakers `https://lksneakers.com.br/pages/adidas-sl-72-og-vs-rs`. Contexto: em 2026-05-23 Lucas aprovou trocar o comparativo OG vs RS de lista para tabela real em produção; Admin Shopify foi atualizado/verificado, mas o storefront podia estar com Shopify page_cache temporariamente antigo. Verifique publicamente a URL, confirme se a tabela `lk-auth-compare` ou tabela comparativa aparece no HTML/DOM público, consulte Search Console/relatórios Brain se disponível para impressões/cliques/CTR/posição da URL e queries relacionadas a `adidas sl 72 og vs rs`, e entregue um resumo executivo em português: status da renderização, sinais GSC/SEO, recomendação de manter/ajustar/rollback, e próximos passos sem executar writes.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-30T11:44:55.841222+00:00",
+        "display": "once in 7d"
+      },
+      "schedule_display": "once in 7d",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-23T11:44:55.841446+00:00",
+      "next_run_at": "2026-05-30T11:44:55.841222+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "web"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "31b40105c4e5",
+      "name": "LK D+7 impact review — Packet D GEO Source Pages",
+      "prompt": "Execute a read-only LK Sneakers Growth D+7 impact review for the Packet D GEO Source Pages published/corrected on 2026-05-23. Final URLs after sales-informed hero correction and handle cache-bust: https://lksneakers.com.br/pages/yeezy-original-brasil-guia-lk, https://lksneakers.com.br/pages/air-jordan-travis-scott-original-brasil-guia-lk, https://lksneakers.com.br/pages/lululemon-original-brasil-guia-lk. Verify final URLs HTTP 200, old handles redirect, H1 count, FAQ/WebPage schema, forbidden terms absent, and hero products are sales-informed: Yeezy Boost 350 V2 Onyx, Air Jordan 1 Low Travis Scott Medium Olive, Jaqueta Lululemon Define Nulu. If authenticated GSC/GA4 is unavailable, mark impact as not decision-grade and report only public diagnostic evidence. Return concise executive summary, evidence, risks, and next actions.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-30T10:30:00-03:00",
+        "display": "once at 2026-05-30 10:30"
+      },
+      "schedule_display": "once at 2026-05-30 10:30",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-23T12:13:23.910532+00:00",
+      "next_run_at": "2026-05-30T10:30:00-03:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "terminal",
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "f81883cce339",
+      "name": "LK Menu Drawer Production D+7 Review",
+      "prompt": "Revisar o hotfix de produção do menu mobile da LK Sneakers aplicado em 2026-05-23. Verificar publicamente https://lksneakers.com.br/ com cache-busting: confirmar que o header HTML contém `--lk-drawer-offset` e `function updateDrawerOffset()`, que não contém o CSS antigo `.lk-drawer__panel { position: fixed; top: var(--header-height, 64px); ... }`, e que ao abrir/simular o drawer os computed styles de `.lk-drawer__panel` e `.lk-drawer__backdrop` começam abaixo do header (top ≈ header bottom). Também verificar se não houve regressão visual evidente no header/menu. Entregar resumo curto com status, evidências e qualquer anomalia. Não fazer writes.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-30T13:00:00+00:00",
+        "display": "once at 2026-05-30 13:00"
+      },
+      "schedule_display": "once at 2026-05-30 13:00",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-23T13:28:25.319404+00:00",
+      "next_run_at": "2026-05-30T13:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "browser",
+        "terminal"
+      ],
+      "workdir": null
+    }
+  ],
+  "updated_at": "2026-05-23T13:28:25.320583+00:00"
+}

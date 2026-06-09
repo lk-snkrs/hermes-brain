@@ -1,0 +1,100 @@
+{
+  "active": [],
+  "active_count": 0,
+  "alerts": {
+    "271525f7aad957b2": {
+      "alert": {
+        "detail": {
+          "job": "LK GMC Review read-only mandatory delivery",
+          "registry": "/opt/data/profiles/lk-growth/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "271525f7aad957b2",
+      "first_seen": "2026-06-08T21:15:42.505777+00:00",
+      "last_seen": "2026-06-09T00:57:39.533917+00:00",
+      "resolved_at": "2026-06-09T00:59:57.047372+00:00",
+      "seen_count": 11,
+      "status": "resolved"
+    },
+    "46863d9b8c70d943": {
+      "alert": {
+        "files": [
+          "/opt/data/config.yaml",
+          "/opt/data/hermes_bruno_ingest/hermes-brain/CHANGELOG.md"
+        ],
+        "high_confidence": 0,
+        "sensitive_literals": 2,
+        "type": "secret_scan_hits"
+      },
+      "fingerprint": "46863d9b8c70d943",
+      "first_seen": "2026-06-08T21:15:42.505777+00:00",
+      "last_seen": "2026-06-08T21:20:21.056984+00:00",
+      "resolved_at": "2026-06-08T21:25:47.277689+00:00",
+      "seen_count": 4,
+      "status": "resolved"
+    },
+    "4d07a40ae3ab760d": {
+      "alert": {
+        "files": [
+          "/opt/data/config.yaml"
+        ],
+        "high_confidence": 0,
+        "sensitive_literals": 1,
+        "type": "secret_scan_hits"
+      },
+      "fingerprint": "4d07a40ae3ab760d",
+      "first_seen": "2026-06-08T21:25:47.277689+00:00",
+      "last_seen": "2026-06-09T00:04:26.532686+00:00",
+      "resolved_at": "2026-06-09T00:35:25.048773+00:00",
+      "seen_count": 4,
+      "status": "resolved"
+    },
+    "7e8ff281b6c00b7e": {
+      "alert": {
+        "profiles": [
+          {
+            "missing": 5,
+            "missing_names": [
+              "GOOGLE_CLIENT_ID",
+              "GOOGLE_CLIENT_SECRET",
+              "GOOGLE_REFRESH_TOKEN_LK_CONTENT",
+              "GOOGLE_REFRESH_TOKEN",
+              "LK_CONTENT_CALENDAR_ID"
+            ],
+            "profile": "lk-content"
+          }
+        ],
+        "type": "doppler_expected_missing"
+      },
+      "fingerprint": "7e8ff281b6c00b7e",
+      "first_seen": "2026-06-08T21:18:30.007604+00:00",
+      "last_seen": "2026-06-09T00:04:26.532686+00:00",
+      "resolved_at": "2026-06-09T00:35:25.048773+00:00",
+      "seen_count": 6,
+      "status": "resolved"
+    },
+    "a6f30859ae125f02": {
+      "alert": {
+        "detail": {
+          "job": "LK Curadoria PDP maintenance quinzenal",
+          "registry": "/opt/data/profiles/lk-shopify/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "a6f30859ae125f02",
+      "first_seen": "2026-06-08T21:15:42.505777+00:00",
+      "last_seen": "2026-06-09T00:57:39.533917+00:00",
+      "resolved_at": "2026-06-09T00:59:57.047372+00:00",
+      "seen_count": 11,
+      "status": "resolved"
+    }
+  },
+  "new_count": 0,
+  "recurring_count": 0,
+  "resolved_since_previous_count": 0,
+  "updated_at": "2026-06-09T01:01:07.547697+00:00",
+  "values_printed": false
+}

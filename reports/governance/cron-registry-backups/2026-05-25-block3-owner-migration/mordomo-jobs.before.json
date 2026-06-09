@@ -1,0 +1,485 @@
+{
+  "jobs": [
+    {
+      "id": "6f4c913082db",
+      "name": "Mordomo global WhatsApp watcher \u2014 Lucas pessoal",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "mordomo_whatsapp_global_watch.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 5,
+        "display": "every 5m"
+      },
+      "schedule_display": "every 5m",
+      "repeat": {
+        "times": null,
+        "completed": 1627
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-18T18:48:40.465055+00:00",
+      "next_run_at": "2026-05-25T11:37:54.426290+00:00",
+      "last_run_at": "2026-05-25T11:32:54.426290+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "5bbe5169fe62",
+      "name": "Zipper Gmail draft engine \u2014 safe draft-only",
+      "prompt": "Voc\u00ea \u00e9 o Mordomo Hermes operando a caixa lucas@zippergaleria.com.br em modo draft-only/actionable. Objetivo principal: clientes, contatos, leads, artistas, exposi\u00e7\u00f5es, PDFs, propostas, follow-ups comerciais/relacionais e lembretes de parcelas de clientes quando ligados a uma venda espec\u00edfica. N\u00c3O priorize financeiro interno geral; Lucas corrigiu que fechamento/repasse/pagamento administrativo \u00e9 assunto dele/Cibele e n\u00e3o deve gerar alerta/a\u00e7\u00e3o por padr\u00e3o. Newsletters/lojas de t\u00eanis/Danki/e-commerce promocional s\u00e3o ru\u00eddo: n\u00e3o alertar.\n\nREGRA DE ENTREGA/ALERTA: Lucas n\u00e3o quer ser avisado quando um draft for criado. Crie drafts silenciosamente. Entregue mensagem ao Telegram apenas se houver decis\u00e3o real, bloqueio concreto, risco, erro operacional, falha de ferramenta, ou a\u00e7\u00e3o que precise de Lucas. Se tudo correu bem e s\u00f3 criou draft(s), finalize com sa\u00edda vazia/silenciosa.\n\nTarefa recorrente:\n1) Use `/opt/data/scripts/zipper_gmail_draft_helper.py candidates --max 10` para listar candidatos.\n2) Para cada candidato novo, use `/opt/data/scripts/zipper_gmail_draft_helper.py get MESSAGE_ID` e leia a thread.\n3) NUNCA envie e-mail. NUNCA use Gmail send. S\u00f3 pode criar rascunho via `/opt/data/scripts/zipper_gmail_draft_helper.py draft --input /path/payload.json`, marcar needs-attention, ou gerar Decision Packet.\n4) Todos os drafts de e-mail de Lucas/Zipper devem incluir a assinatura padr\u00e3o de Lucas/Zipper no final. Se necess\u00e1rio, extraia de e-mails enviados recentes de `lucas@zippergaleria.com.br`; n\u00e3o deixe draft sem assinatura.\n5) Regra Zipper obra/certificado: `acervo` \u00e9 o identificador principal da obra. Em venda, etiqueta, certificado, produ\u00e7\u00e3o, log\u00edstica ou documento de obra, sempre referencie/pe\u00e7a o n\u00famero de acervo; n\u00e3o tratar s\u00f3 por t\u00edtulo/cliente. Se o assunto envolve etiqueta/certificado e Produ\u00e7\u00e3o n\u00e3o est\u00e1 copiada, inclua `Produ\u00e7\u00e3o Zipper <producao@zippergaleria.com.br>` como `extra_cc` no payload do draft. Lucas Gualberto/Produ\u00e7\u00e3o toca certificado/produ\u00e7\u00e3o; Cibele n\u00e3o \u00e9 a dona operacional do certificado.\n6) Filtre/ignore por padr\u00e3o financeiro interno: pagamento administrativo, cobran\u00e7a, boleto, nota fiscal, comprovante, fechamento de m\u00eas, repasse de artista, parcela interna e administrativo similar. Registre silenciosamente se quiser, mas n\u00e3o alerte Lucas nem crie Decision Packet, salvo se houver prazo cr\u00edtico expl\u00edcito, reclama\u00e7\u00e3o forte, amea\u00e7a jur\u00eddica ou Lucas mencionado diretamente pedindo decis\u00e3o.\n7) Filtre/ignore por padr\u00e3o newsletters, promo\u00e7\u00f5es, lojas de t\u00eanis, Danki, varejo, marketing gen\u00e9rico, convites irrelevantes e unknown sem sinal comercial/relacional Zipper. N\u00e3o pergunte sobre todo unknown em tempo real; acumule para calibra\u00e7\u00e3o apenas se houver padr\u00e3o recorrente.\n8) Exce\u00e7\u00e3o importante: se houver CLIENTE/VENDA espec\u00edfica \u2014 nova venda direta, dados do comprador, obra vendida, valor, parcelas, pedido de etiqueta/certificado/faturamento/documento \u2014 trate como CRM operacional e crie rascunho seguro de resposta/encaminhamento interno. Exemplo: artista comunica venda direta e pede etiqueta/certificado; draft deve agradecer, confirmar recebimento, pedir/acusar acervo se necess\u00e1rio e acionar Produ\u00e7\u00e3o quando aplic\u00e1vel, sem discutir valores/condi\u00e7\u00f5es. N\u00e3o classificar isso como financeiro interno.\n9) Foque em: clientes/leads pedindo obras/PDF/cat\u00e1logo/proposta; respostas de clientes a PDFs/follow-ups; contatos relevantes; exposi\u00e7\u00e3o/evento/convite institucional/imprensa/parceria; artista/obra com oportunidade clara; parcelas/vencimentos de cliente derivados de venda confirmada/documento.\n10) Crie draft apenas se for seguro: lead simples, resposta cordial, pedido gen\u00e9rico de informa\u00e7\u00e3o, envio/continua\u00e7\u00e3o de PDF validado, confirma\u00e7\u00e3o/encaminhamento interno de nova venda, sem pre\u00e7o/disponibilidade/reserva/desconto/pagamento/contrato/log\u00edstica sens\u00edvel/decis\u00e3o curatorial. Para qualquer d\u00favida comercial relevante, marque needs-attention com recomenda\u00e7\u00e3o concreta.\n11) Quando marcar needs-attention, o relat\u00f3rio para Lucas deve ser \u00fatil e acion\u00e1vel: o que \u00e9, por que importa, dono prov\u00e1vel, pr\u00f3xima a\u00e7\u00e3o, rascunho sugerido se aplic\u00e1vel, bloqueio/dado faltante, prazo sugerido.\n12) Para Zipper, tom Lucas Cimino: pessoal, elegante, cultural, sem hard sell. N\u00e3o usar \u201ccom calma\u201d. Para leads gen\u00e9ricos de artista, fale em \u201cobras do PDF\u201d/\u201ctrabalhos dispon\u00edveis\u201d, n\u00e3o em obra espec\u00edfica do site.\n13) Registre artefato resumido em `/opt/data/hermes_bruno_ingest/hermes-brain/areas/zipper/inbox/email-intake/` para cada draft/needs-attention criado, sem expor segredos.\n14) Se n\u00e3o houver bloqueio/decis\u00e3o/erro/risco, seja silencioso. N\u00e3o entregue resumo apenas porque criou draft.\n\nFerramenta principal: terminal/file. N\u00e3o fa\u00e7a contatos externos al\u00e9m de rascunho salvo.",
+      "skills": [
+        "google-workspace",
+        "multiempresa-routing-lucas",
+        "lucas-chief-of-staff"
+      ],
+      "skill": "google-workspace",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 15,
+        "display": "every 15m"
+      },
+      "schedule_display": "every 15m",
+      "repeat": {
+        "times": null,
+        "completed": 538
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-18T21:30:39.339044+00:00",
+      "next_run_at": "2026-05-25T11:43:31.746241+00:00",
+      "last_run_at": "2026-05-25T11:28:31.746241+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "fe5cf7f1b228",
+      "name": "Mordomo global Calendar watcher",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "mordomo_calendar_global_watch.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 15,
+        "display": "every 15m"
+      },
+      "schedule_display": "every 15m",
+      "repeat": {
+        "times": null,
+        "completed": 585
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T01:11:25.675373+00:00",
+      "next_run_at": "2026-05-25T11:44:33.754893+00:00",
+      "last_run_at": "2026-05-25T11:29:33.754893+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "daf97feec481",
+      "name": "Mordomo CRM local sync",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "mordomo_crm_sync_local.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 10,
+        "display": "every 10m"
+      },
+      "schedule_display": "every 10m",
+      "repeat": {
+        "times": null,
+        "completed": 861
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T01:11:26.679315+00:00",
+      "next_run_at": "2026-05-25T11:34:14.358922+00:00",
+      "last_run_at": "2026-05-25T11:24:14.358922+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "e46ea230f0cf",
+      "name": "Mordomo Decision Inbox digest",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "mordomo_decision_digest_direct.sh",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "display": "0 9 * * *"
+      },
+      "schedule_display": "0 9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 7
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T01:11:27.684513+00:00",
+      "next_run_at": "2026-05-26T09:00:00+00:00",
+      "last_run_at": "2026-05-25T09:00:33.032929+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "c358f8f56a26",
+      "name": "Pixel AI Hub / Brainzinho daily learning scan",
+      "prompt": "Voc\u00ea \u00e9 o Mordomo Hermes de Lucas Cimino.\n\nTarefa di\u00e1ria de fim de dia: revisar em modo read-only os grupos/chats Pixel AI Hub, Brainzinho e Openclawzinho como fonte de aprendizado Bruno/OpenClaw para melhoria do Hermes.\n\nCarregue e siga a skill `pixel-ai-hub-learning-digest` e o PRD local `/opt/data/profiles/mordomo/docs/prd-pixel-ai-hub-daily-learning.md`.\n\nRegras obrigat\u00f3rias:\n- N\u00e3o envie, responda, reaja, encaminhe nem interaja no WhatsApp.\n- N\u00e3o copie dumps, prints crus, material extenso de terceiros, PII desnecess\u00e1ria nem segredos.\n- N\u00e3o implemente mudan\u00e7as automaticamente.\n- N\u00e3o trate Brainzinho/Openclawzinho/Pixel AI Hub como lead, suporte comercial ou alerta em tempo real.\n- Use apenas s\u00edntese pr\u00f3pria e operacional.\n- Se n\u00e3o houver aprendizado relevante, fique silencioso quando tecnicamente poss\u00edvel.\n\nProcesso:\n1. Inspecione read-only as mensagens recentes, janela padr\u00e3o 24\u201336h, dos chats/labels relacionados a Pixel AI Hub, Brainzinho e Openclawzinho.\n2. Agrupe t\u00f3picos e descarte ru\u00eddo.\n3. Para cada item relevante, aplique a matriz Bruno \u2192 Hermes:\n   - o que foi ensinado/discutido;\n   - o que Hermes j\u00e1 faz melhor/diferente;\n   - se melhora ou burocratiza;\n   - vers\u00e3o Hermes-native;\n   - recomenda\u00e7\u00e3o: aplicar, adaptar, adiar ou ignorar;\n   - destino sugerido: skill, rotina, PRD, Brain, Mission Control, backlog ou nenhum.\n4. Entregue no m\u00e1ximo 1\u20135 aprendizados \u00fateis para Lucas.\n5. Se houver proposta de mudan\u00e7a sens\u00edvel/externa/produtiva, apresente como recomenda\u00e7\u00e3o/preview, n\u00e3o execute.\n\nFormato de sa\u00edda: use o template da skill `pixel-ai-hub-learning-digest` em portugu\u00eas brasileiro.",
+      "skills": [
+        "pixel-ai-hub-learning-digest",
+        "wacli-whatsapp-cli",
+        "bruno-openclaw-hermes-brain-adaptation",
+        "lucas-chief-of-staff"
+      ],
+      "skill": "pixel-ai-hub-learning-digest",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 23 * * *",
+        "display": "30 23 * * *"
+      },
+      "schedule_display": "30 23 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 6
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T09:18:10.055433+00:00",
+      "next_run_at": "2026-05-25T23:30:00+00:00",
+      "last_run_at": "2026-05-24T23:32:21.774231+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "20972b3c7595",
+      "name": "Zipper direct main e-mail monitor \u2014 zipper@zippergaleria.com.br",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "zipper_main_email_monitor.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 60,
+        "display": "every 60m"
+      },
+      "schedule_display": "every 60m",
+      "repeat": {
+        "times": null,
+        "completed": 141
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T12:08:49.689234+00:00",
+      "next_run_at": "2026-05-25T12:24:54.623585+00:00",
+      "last_run_at": "2026-05-25T11:24:54.623585+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "3bcbf3be9b73",
+      "name": "Mordomo WhatsApp pessoal resumo 17h BRT",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "mordomo_whatsapp_summary_17.sh",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 20 * * *",
+        "display": "0 20 * * *"
+      },
+      "schedule_display": "0 20 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 6
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T16:25:06.241971+00:00",
+      "next_run_at": "2026-05-25T20:00:00+00:00",
+      "last_run_at": "2026-05-24T20:00:12.695093+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "f537bb9c505b",
+      "name": "Zipper artist PDFs local-only known-answer ingest",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "zpr_artist_pdf_local_ingest.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 30,
+        "display": "every 30m"
+      },
+      "schedule_display": "every 30m",
+      "repeat": {
+        "times": null,
+        "completed": 169
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-21T20:56:05.043420+00:00",
+      "next_run_at": "2026-05-25T11:58:12.714072+00:00",
+      "last_run_at": "2026-05-25T11:28:12.714072+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "871b9bc5617a",
+      "name": "ZPR Enquiry Form watcher \u2014 approval-gated",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "zipper_zpr_enquiry_watcher.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 5,
+        "display": "every 5m"
+      },
+      "schedule_display": "every 5m",
+      "repeat": {
+        "times": null,
+        "completed": 746
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T15:26:01.525335+00:00",
+      "next_run_at": "2026-05-25T11:34:32.760184+00:00",
+      "last_run_at": "2026-05-25T11:29:32.760184+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "1f734765abc4",
+      "name": "Follow-up Leticia Albuquerque \u2014 importa\u00e7\u00e3o/Portugal",
+      "prompt": "Voc\u00ea \u00e9 o Mordomo Hermes de Lucas Cimino. Lembre Lucas de fazer follow-up com Leticia Albuquerque no WhatsApp sobre a conversa de importa\u00e7\u00e3o/Portugal. Contexto do print: contato Leticia Albuquerque perguntou se no valor aproximado de US$ 2.000 est\u00e1 incluso tudo, como \u00e9 o desembara\u00e7o, se pode taxar e como \u00e9 feita a entrega no apartamento; Lucas respondeu que estava verificando sobre Portugal, que normalmente \u00e9 porta a porta, talvez tenha imposto via isso e depois disse que era 23% do valor declarado e que poderia declarar tipo 2 mil d\u00f3lares; Leticia respondeu \u201cT\u00e1 bem, vou avaliar e te aviso. De qualquer forma, agrade\u00e7o as informa\u00e7\u00f5es\u201d; Lucas respondeu \u201cCombinado! Te espero!\u201d. Entregue um lembrete curto com sugest\u00e3o de mensagem segura, sem enviar WhatsApp automaticamente. Sugest\u00e3o base: \u201cOi Leticia, tudo bem? Passando para saber se voc\u00ea conseguiu avaliar com calma as informa\u00e7\u00f5es sobre a importa\u00e7\u00e3o para Portugal. Fico \u00e0 disposi\u00e7\u00e3o se quiser seguir ou se tiver mais alguma d\u00favida.\u201d",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-28T12:00:00-03:00",
+        "display": "once at 2026-05-28 12:00"
+      },
+      "schedule_display": "once at 2026-05-28 12:00",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T19:56:01.295368+00:00",
+      "next_run_at": "2026-05-28T12:00:00-03:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null
+    }
+  ],
+  "updated_at": "2026-05-25T11:32:54.426724+00:00"
+}

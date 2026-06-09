@@ -108,13 +108,28 @@ Regra de linguagem: **`seguir` sozinho não é aprovação de risco; só autoriz
 - **Governança Growth/Shopify:** `empresa/contexto/lk-growth-shopify-agent-governance-20260605.md`.
 - **Handoff:** obrigatório para preview material, aprovação, execução, bloqueio, readback, receipt, rollback ou aprendizado.
 
-### 5. LK operações/atendimento/estoque/preço
+### 5A. LK Estoque Loja Física — best sellers/pronta entrega
+
+- **ID:** `lk-stock-physical-ready-stock`
+- **Triggers:** estoque físico, loja física, pronta entrega, best sellers, ruptura, baixo estoque, reposição, transferência, compra, Tiny estoque, disponibilidade por SKU/tamanho, “tem na loja?”, “deveríamos ter esse produto disponível?”.
+- **Contexto:** LK Sneakers / Estoque físico.
+- **Orquestrador:** Hermes Geral ou LK Ops, conforme entrada.
+- **Executor:** `[LK] Estoque Loja Física` profile.
+- **Runtime:** `/opt/data/profiles/lk-stock` — preparado/parado; gateway/bot/cron pendentes de aprovação.
+- **Brain path:** `areas/lk/sub-areas/stock/`.
+- **Output:** score de best seller/pronta entrega, fila P0/P1/P2/P3, approval packet de reposição/transferência/compra/saneamento SKU, receipt/handoff.
+- **Permitido sem aprovação:** Brain/local docs, diagnóstico read-only, score/fila/packet/handoff, consulta read-only quando credencial/fonte estiver aprovada via Doppler.
+- **Exige aprovação:** Tiny write, Shopify inventory/product write, compra/fornecedor, reserva/promessa a cliente, cron/gateway/bot, campanha/CRM.
+- **Fonte de verdade:** Tiny / `LK | CONTROLE ESTOQUE`; Shopify é contexto/event trigger, não estoque final.
+- **Handoff:** obrigatório para `lk-ops`, `lk-shopify`, `lk-growth`, `lk-trends` ou Lucas conforme próximo dono.
+
+### 5B. LK operações/atendimento/preço/pedido
 
 - **ID:** `lk-ops-commerce-sensitive`
-- **Triggers:** pedido, cliente, estoque, preço, disponibilidade, reserva, desconto, Tiny, Shopify pedido/produto.
+- **Triggers:** pedido, cliente, preço, reserva, desconto, atendimento, status operacional, Shopify pedido/produto; estoque físico/pronta entrega deve rotear para `lk-stock-physical-ready-stock`.
 - **Contexto:** LK Sneakers / Operações.
 - **Orquestrador:** Hermes Geral.
-- **Executor:** depende da fonte; se atendimento/cliente, seguir guardrails LK/Mordomo; se produto/upload, usar skill LK apropriada.
+- **Executor:** depende da fonte; se atendimento/cliente, seguir guardrails LK/Mordomo; se produto/upload, usar skill LK apropriada; se estoque físico/best sellers, rotear para `lk-stock`.
 - **Output:** resposta verificada, packet, rascunho, diagnóstico.
 - **Permitido sem aprovação:** leitura read-only, resolução local de variantes, rascunho interno.
 - **Exige aprovação:** preço, disponibilidade prometida, reserva, contato externo sensível, Shopify/Tiny write.

@@ -29,10 +29,11 @@ Pode fazer sem aprovação adicional:
 ## Roteamento
 
 - Superfície Shopify → LK Shopify.
-- Estoque, preço, pedido, atendimento → LK Ops.
+- Estoque físico, best sellers, pronta entrega, ruptura/baixo estoque, reposição/transferência/compra → `[LK] Estoque Loja Física` / perfil `lk-stock`.
+- Pedido, atendimento e processo operacional amplo → LK Ops.
 - SEO/GEO/CRO/GMC/analytics → LK Growth.
 - CRM/campanha/relacionamento → LK CRM.
-- Mercado/sourcing → LK Trends.
+- Mercado/sourcing/tendência → LK Trends.
 
 ## Handoff obrigatório
 

@@ -6,6 +6,7 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Ativos agora
 
+- [ ] Agente LC Hermes: criar rotina canônica `areas/operacoes/rotinas/brain-fonte-viva-e-dados-grandes.md` a partir do handoff `areas/operacoes/handoffs/handoff-lc-hermes-brain-fonte-viva-governance-20260609T000522Z.md`; incluir matriz Brain vs fonte viva, checklist para PRDs/ingests/subagentes/Mission Control e atualizar MAPA. Critério de pronto: rotina criada, MAPA indexado e regra promovível para skills relevantes.
 - [ ] Aprofundar dicionário canônico de influencers/campanhas LK e auditar match influencer → produto — usar evidências Shopify/Meta/UTM/cupom; Silvia/Helena têm ROAS operacional provisório, Lala segue ambígua.
 - [ ] Reconciliar Mission Control em rodada dedicada — ponte documental criada em `areas/operacoes/projetos/mission-control-reconciliation-pointer-2026-05-19.md`; detalhar ativo/legado/benchmark/próximos módulos sem repo/UI/runtime nesta rodada.
 - [x] Primeiro Stock Intelligence real/read-only da LK com sourcing acionado por sinal — relatório `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`; sem WhatsApp, Notion, compra ou alteração produtiva.

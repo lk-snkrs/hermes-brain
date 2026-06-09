@@ -78,6 +78,12 @@ Especialistas ativos/documentados
 │   ├── Escopo: SEO, CRO, GEO, GMC, analytics, conteúdo/blog/source pages, approval packets
 │   └── Handoff: drafts, packets, receipts, approvals, riscos, writes externos
 │
+├── [LK] Estoque Loja Física
+│   ├── Runtime: /opt/data/profiles/lk-stock
+│   ├── Status: preparado/parado; gateway/bot/cron pendentes de aprovação
+│   ├── Escopo: estoque físico, best sellers, pronta entrega, ruptura/baixo estoque, fila de reposição/transferência/compra
+│   └── Handoff: Tiny/Shopify/Growth/Trends/Ops packets, decisões, bloqueios e receipts
+│
 ├── SPITI OS
 │   ├── Runtime: /opt/data/profiles/spiti
 │   ├── Escopo: Hub, leilões, lotes, CRM, Financial read-only, Growth SPITI
@@ -130,6 +136,11 @@ Hermes COO / Grande Mente
 │   │   ├── Runtime: /opt/data/profiles/lk-growth
 │   │   ├── Tarefas: SEO, CRO, GEO, GMC, analytics, blog/source pages, packets
 │   │   └── Bloqueios: Shopify/GMC/Klaviyo/Meta/theme/produção sem aprovação
+│   ├── [LK] Estoque Loja Física
+│   │   ├── Runtime: /opt/data/profiles/lk-stock
+│   │   ├── Status: preparado/parado; gateway/bot/cron pendentes de aprovação
+│   │   ├── Tarefas: estoque físico, best sellers, pronta entrega, ruptura, reposição/transferência/compra
+│   │   └── Bloqueios: Tiny/Shopify write, fornecedor/compra, promessa de disponibilidade, cron/gateway sem aprovação
 │   └── LK Operações/Atendimento — documental/rotinas
 │
 ├── Zipper OS — Zipper Galeria

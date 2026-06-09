@@ -1,8 +1,8 @@
 # LK Ecommerce — Mapa
 
-Escopo: Shopify, produtos, estoque, pedidos, clientes, Judge.me, Tiny/Frenet quando aplicável.
+Escopo: Shopify, produtos, pedidos, clientes, Judge.me, Tiny/Frenet quando aplicável. Estoque físico/pronta entrega/best sellers agora pertence ao especialista `lk-stock` em `../stock/`.
 
-Regra: consultar fonte viva antes de responder sobre estoque, preço, pedido ou prazo.
+Regra: consultar fonte viva antes de responder sobre estoque, preço, pedido ou prazo. Para estoque físico, encaminhar ao `lk-stock`: Tiny / `LK | CONTROLE ESTOQUE` é a verdade.
 
 ## Skill canônica
 

@@ -21,6 +21,7 @@ Use este template para handoffs de LK Ops, LK Trends e LK Shopify quando houver 
 Regra: se houve write externo, anexar ou referenciar snapshot, readback e rollback.
 
 Padrão de uso:
-- LK Ops/Atendimento usa quando o assunto for atendimento, estoque, preço, disponibilidade, reserva, pedido ou relatório comercial.
+- LK Stock usa quando o assunto for estoque, pronta entrega, disponibilidade por SKU/tamanho, ruptura, baixo estoque, reposição, transferência, compra ou divergência SKU/Tiny/Shopify de estoque.
+- LK Ops/Atendimento usa quando o assunto for atendimento, preço, reserva, pedido ou relatório comercial; se envolver estoque/pronta entrega/disponibilidade, deve handoff obrigatório para `lk-stock` antes da resposta final.
 - LK Trends usa quando houver oportunidade, sourcing, risco, fornecedor, compra/recomendação ou insight reutilizável.
 - LK Shopify usa quando houver preview, produto/upload, coleção, superfície Shopify, write aprovado ou bloqueio.

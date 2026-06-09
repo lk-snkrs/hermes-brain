@@ -1,0 +1,41 @@
+{
+  "checker": "hermes_nightly_governance_artifacts_check.py",
+  "daily_intelligence": {
+    "exists": true,
+    "latest_path": "reports/hermes-continuous-improvement/2026-06-06.md",
+    "size_chars": 5367
+  },
+  "findings": [],
+  "generated_at_utc": "2026-06-06T05:32:01.787044+00:00",
+  "handoff": {
+    "exists": true,
+    "missing_fields": [],
+    "operational_date": "2026-06-05",
+    "path": "reports/daily-consolidation/latest-handoff.json",
+    "status": "attention",
+    "valid_json": true
+  },
+  "learning_ledger": {
+    "exists": true,
+    "latest_path": "reports/hermes-learning-ledger/2026-06-06.md",
+    "size_chars": 3821
+  },
+  "memory_hygiene": {
+    "exists": true,
+    "path": "reports/memory-hygiene/latest.json",
+    "status": "attention",
+    "summary": {
+      "active_mem0_doc_hits": 0,
+      "alert_count": 2,
+      "auto_compaction_count": 2,
+      "external_memory_provider_active": false,
+      "files_checked": 24,
+      "near_saturation_count": 2,
+      "over_limit_count": 0,
+      "possible_secret_locator_count": 0
+    },
+    "valid_json": true
+  },
+  "mode": "digest",
+  "status": "ok"
+}

@@ -1,3 +1,39 @@
+## 2026-06-08 — Daily Intelligence Loop P2 hardening local/read-only
+
+**Melhoria aprovada por Lucas:**
+- Preflight 02h evoluído para schema v3 com `host_docker_observability_snapshot`, `p2_release_adoption_planner`, `skill_quality_audit` e `mistake_ledger`.
+- Host/Docker helper read-only gerou artefato sanitizado com `alerts_count=0` e `containers_count=2`; o preflight agora usa o snapshot sanitizado mais recente sem mutar infra.
+- Release planner evita revisão repetida quando não há tag nova; skill QA transforma skills grandes/stale/broken-reference em sinal de confiança; mistake ledger converte alertas recorrentes em causa-raiz e próxima ação segura.
+- Cron 02h existente atualizado para consumir os sinais P2, mantendo agenda, `deliver=local`, mesmo script e sem criar/remover/reagendar jobs.
+
+**Limite preservado:** sem Docker/SSH/Hostinger/gateway/restart/secrets/externos/source-of-truth; qualquer upgrade/runtime continua approval-gated.
+
+## 2026-06-08 — Daily Intelligence Loop P1 hardening local
+
+**Melhoria aprovada por Lucas:**
+- Preflight 02h evoluído para schema v2 com tendência de score 7d, dedupe de alertas, inventário Doppler presence-only via helper universal, `blocked_by_approval` estruturado e release-watch local.
+- Criado validador pós-run `/opt/data/scripts/hermes_daily_intelligence_artifact_validator.py`, com recibos em `reports/governance/daily-intelligence-artifact-validation-*.json`.
+- Cron 02h existente atualizado para consumir esses campos e rodar o validador depois dos artefatos.
+- Verificação: `py_compile` OK; preflight e validador executados; Brain Health pós-hardening 0/0; targeted secret scan sem hits reais; `values_printed=false`.
+
+**Limite preservado:** sem Docker/SSH/Hostinger/gateway/restart/novo cron/secrets/externos/source-of-truth.
+
+## 2026-06-08 — Weekly Learning Loop W24 consolidado
+
+**Governança semanal:**
+- Gerado `reports/hermes-learning-weekly/2026-W24-2026-06-02-a-2026-06-08.md`, consolidando os reports diários 02h, CHANGELOG, handoff 01h e sessão recente.
+- Síntese: Learning Loop saudável e auto-melhorando, Brain Health 0/0, Score 94/100, runtime v0.16.0, foco em LC Hermes systemwide governance + LK Content/LK specialist operations.
+- Decisões pendentes registradas: LK Content grupo/profile config, GMC `link_template`, Zipper Flávia Junqueira draft e Vercel native Git link; sem execução de runtime/externos/source-of-truth.
+
+## 2026-06-08 — Daily Loop: LK Content reconhecido como profile gerenciado
+
+**A1 auto-fix aplicado:**
+- Runtime watchdog `hermes_runtime_cron_watchdog.py` e espelho Brain atualizados para reconhecer `/opt/data/profiles/lk-content` como gateway requerido após Gate 10 LK Content aprovado.
+- Handoff 01h recebeu campo explícito `sanitization.secrets_redacted=true` para o validador noturno.
+- Verificação: `py_compile` OK; runtime watchdog manual silent-OK; all-gateway watchdog manual silent-OK; host observability `alerts: []`; Brain Health pós-run `FAIL=0/WARN=0`.
+
+**Limite preservado:** não houve Docker/gateway/restart/cron registry/profile config/secret/external write; LK Content grupo Telegram e demais ações A3/A4 seguem approval-gated.
+
 ## 2026-06-07 — Runtime watchdog: expectativa v0.16 alinhada
 
 **A1 auto-fix aplicado:**

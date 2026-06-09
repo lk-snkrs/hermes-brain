@@ -117,3 +117,11 @@ Antes de qualquer execução LKGOC em coleção Shopify, carregar:
 `playbooks/shopify-collections-standardization-lkgoc.md`
 
 Regra crítica: pós-grid só existe depois de todos os produtos/cards renderizados e, se houver, depois da paginação/load-more. Qualquer guia/bloco editorial antes do último produto é `FAIL_POS_GRID_NOT_AFTER_ALL_PRODUCTS`.
+## HARD LOCK — GitHub DEV branch antes de Production
+
+Correção Lucas registrada: LKGOC nunca deve escrever direto em Shopify Production/main. O fluxo correto é GitHub branch DEV → preview/QA/readback → approval Lucas → merge para branch Production → deploy/promoção controlada.
+
+Mesmo com aprovação, não tratar production como destino de patch manual; approval autoriza o merge/deploy no fluxo correto, não um write direto improvisado em `role: main`.
+
+Regra fonte: `rules/REGRA-LKGOC-GITHUB-DEV-BRANCH-ANTES-DE-PRODUCTION.md`.
+
