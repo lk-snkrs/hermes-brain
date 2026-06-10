@@ -102,3 +102,11 @@ Somente se Lucas aprovar:
 - Criar hub LK Editorial Collection Guides: concluído localmente.
 - Criar hub LK Source Pages / GEO Experiments: concluído localmente.
 - Próximo gate: scanner, secret scan, Brain health e docs guard.
+
+## Status Onda 8 — 2026-06-10
+
+- Criar hub LK Stockout / Recompra Router: concluído localmente.
+- Criar hub LK Supplier Quote Approval Flow: concluído localmente.
+- Criar hub LK Sourcing Pricing / Size Governance: concluído localmente.
+- Criar hub LK Paid Attribution / Influencer Intelligence: concluído localmente.
+- Próximo gate: scanner, secret scan, Brain health e docs guard.

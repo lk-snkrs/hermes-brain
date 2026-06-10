@@ -31,3 +31,4 @@ Pastas: angulos, formatos, criativos, testes, learnings, skills, rotinas.
 ## Projetos Brain OS
 
 - `projetos/meta-ads-performance/` — hub canônico Brain OS Onda 3 para Meta Ads/performance signals, paid/influencer learnings e approval gates.
+- `projetos/paid-attribution-influencer-intelligence/` — hub canônico Brain OS Onda 8 para dicionário de atribuição, influenciadores, criativos e reconciliação de tráfego pago.

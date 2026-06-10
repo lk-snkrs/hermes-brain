@@ -293,6 +293,42 @@ PROJECT_DEFS = [
         'risk': 'seo_geo_experiment_mistaken_for_measured_production_gain_risk',
         'wave': 7,
     },
+    {
+        'id': 'stockout-recompra-router',
+        'title': 'LK Stockout / Recompra Router',
+        'owner_area': 'areas/lk/sub-areas/stock',
+        'suggested_hubs': ['areas/lk/sub-areas/stock/projetos/stockout-recompra-router'],
+        'terms': ['stockout', 'recompra', 'restock', 'pos sale restock', 'stock action queue', 'sourcing router template'],
+        'risk': 'restock_recommendation_external_action_risk',
+        'wave': 8,
+    },
+    {
+        'id': 'supplier-quote-approval-flow',
+        'title': 'LK Supplier Quote Approval Flow',
+        'owner_area': 'areas/lk/sub-areas/stock',
+        'suggested_hubs': ['areas/lk/sub-areas/stock/projetos/supplier-quote-approval-flow'],
+        'terms': ['supplier quote', 'quote validation', 'fornecedor', 'fila a sourcing', 'compras ranking', 'whatsapp signal queue'],
+        'risk': 'supplier_contact_or_purchase_without_current_approval_risk',
+        'wave': 8,
+    },
+    {
+        'id': 'sourcing-pricing-size-governance',
+        'title': 'LK Sourcing Pricing / Size Governance',
+        'owner_area': 'areas/lk/sub-areas/stock',
+        'suggested_hubs': ['areas/lk/sub-areas/stock/projetos/sourcing-pricing-size-governance'],
+        'terms': ['br to us size', 'size conversion', 'exact size validator', 'current lk price reference', 'exact usd price', 'markup', 'economic correction'],
+        'risk': 'price_size_margin_stale_data_risk',
+        'wave': 8,
+    },
+    {
+        'id': 'paid-attribution-influencer-intelligence',
+        'title': 'LK Paid Attribution / Influencer Intelligence',
+        'owner_area': 'areas/lk/sub-areas/trafego-pago',
+        'suggested_hubs': ['areas/lk/sub-areas/trafego-pago/projetos/paid-attribution-influencer-intelligence'],
+        'terms': ['campaign attribution', 'attribution dictionary', 'influencer', 'pareto', 'metricool', 'ads intelligence', 'creative pipeline'],
+        'risk': 'campaign_attribution_or_external_email_action_risk',
+        'wave': 8,
+    },
 
 ]
 

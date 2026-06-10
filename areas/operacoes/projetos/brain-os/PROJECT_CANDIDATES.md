@@ -82,3 +82,10 @@ Observação: o candidato do scanner `mission-control-mesa-coo` foi separado em 
 - `areas/lk/sub-areas/shopify/projetos/catalog-badges-sync/` — LK Catalog Badges Sync.
 - `areas/lk/sub-areas/collection-optimizer/projetos/editorial-collection-guides/` — LK Editorial Collection Guides.
 - `areas/lk/sub-areas/growth/projetos/source-pages-geo-experiments/` — LK Source Pages / GEO Experiments.
+
+## Onda 8 — executada localmente em 2026-06-10
+
+- `areas/lk/sub-areas/stock/projetos/stockout-recompra-router/` — LK Stockout / Recompra Router.
+- `areas/lk/sub-areas/stock/projetos/supplier-quote-approval-flow/` — LK Supplier Quote Approval Flow.
+- `areas/lk/sub-areas/stock/projetos/sourcing-pricing-size-governance/` — LK Sourcing Pricing / Size Governance.
+- `areas/lk/sub-areas/trafego-pago/projetos/paid-attribution-influencer-intelligence/` — LK Paid Attribution / Influencer Intelligence.
