@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-10T19:45:59.320815+00:00",
+  "generated_at": "2026-06-10T20:09:06.608921+00:00",
   "root": "/opt/data/hermes_bruno_ingest/hermes-brain",
   "mode": "read_only_scan",
   "scanner_version": "brain-os-v1",
-  "total_text_files_scanned": 17201,
+  "total_text_files_scanned": 17236,
   "candidates": [
     {
       "id": "lk-growth-gmc-shopify-meta",
@@ -69,8 +69,8 @@
       ],
       "wave": 1,
       "risk": "source_of_truth_confusion",
-      "owner_file_count": 7867,
-      "term_hit_files": 8337,
+      "owner_file_count": 7871,
+      "term_hit_files": 8341,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -167,7 +167,7 @@
       ],
       "wave": 1,
       "risk": "context_truth_and_runtime_claim_risk",
-      "owner_file_count": 331,
+      "owner_file_count": 353,
       "term_hit_files": 250,
       "sample_artifacts": [
         "AGENTS.md",
@@ -211,11 +211,13 @@
       "suggested_hubs": [
         "areas/zipper/projetos/email-crm-intake"
       ],
-      "existing_hubs": [],
+      "existing_hubs": [
+        "areas/zipper/projetos/email-crm-intake"
+      ],
       "wave": 2,
       "risk": "commercial_reply_and_human_approval_risk",
-      "owner_file_count": 354,
-      "term_hit_files": 760,
+      "owner_file_count": 362,
+      "term_hit_files": 768,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -248,7 +250,7 @@
         "reports/hermes-host-docker-observability-2026-05-22.json",
         "reports/lk-growth-geo-seo-claude-audit-2026-05-25.md"
       ],
-      "score": 58,
+      "score": 48,
       "recommendation": "canonical_hub_needed"
     },
     {
@@ -258,11 +260,13 @@
       "suggested_hubs": [
         "areas/operacoes/projetos/mordomo-os"
       ],
-      "existing_hubs": [],
+      "existing_hubs": [
+        "areas/operacoes/projetos/mordomo-os"
+      ],
       "wave": 2,
       "risk": "personal_external_action_risk",
-      "owner_file_count": 331,
-      "term_hit_files": 625,
+      "owner_file_count": 353,
+      "term_hit_files": 633,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -295,7 +299,7 @@
         "reports/lk-seo-cro-seo-fields-runner-gate-2026-05-18.md",
         "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
       ],
-      "score": 53,
+      "score": 43,
       "recommendation": "canonical_hub_needed"
     },
     {
@@ -306,11 +310,14 @@
         "areas/operacoes/projetos/mission-control",
         "areas/operacoes/projetos/mesa-coo"
       ],
-      "existing_hubs": [],
+      "existing_hubs": [
+        "areas/operacoes/projetos/mission-control",
+        "areas/operacoes/projetos/mesa-coo"
+      ],
       "wave": 2,
       "risk": "approval_sequence_and_decision_state_risk",
-      "owner_file_count": 331,
-      "term_hit_files": 323,
+      "owner_file_count": 353,
+      "term_hit_files": 338,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
         "AGENTS.md",
@@ -343,8 +350,8 @@
         "reports/brain-improvement-score-2026-06-05-02h.md",
         "reports/brain-improvement-score-2026-06-10-02h.json"
       ],
-      "score": 40,
-      "recommendation": "canonical_hub_needed"
+      "score": 31,
+      "recommendation": "monitor_or_refine_existing_hub"
     }
   ]
 }

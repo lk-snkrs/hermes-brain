@@ -49,3 +49,10 @@ Somente se Lucas aprovar:
 - Integrar com Memory OS replay/coverage.
 - Criar dashboards executivos.
 - Criar Kanban board se houver múltiplas frentes paralelas.
+
+## Status Onda 2 — 2026-06-10
+
+- Criar hub Zipper Email / CRM / Intake: concluído localmente.
+- Criar hub Mordomo OS: concluído localmente.
+- Separar `mission-control-mesa-coo` em dois hubs: concluído localmente.
+- Próximo gate: scanner, secret scan, Brain health e docs guard; commit/push apenas com aprovação explícita.

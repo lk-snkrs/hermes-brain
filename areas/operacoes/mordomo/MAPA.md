@@ -63,3 +63,7 @@ Critério para virar pasta maior `agentes/mordomo/` ou `areas/lucas-pessoal/`:
 - necessidade de perfil/bot próprio com AGENTS/SOUL/HEARTBEAT.
 
 Até lá, manter em `areas/operacoes/mordomo/MAPA.md` e indexar documentos relevantes daqui.
+
+## Projetos Brain OS
+
+- `../projetos/mordomo-os/` — hub canônico Onda 2 do Mordomo OS, preservando esta ponte canônica e indexando PRDs, SOUL, registry, rotinas, guardrails e reports.

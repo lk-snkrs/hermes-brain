@@ -157,3 +157,9 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 
 - `projetos/brain-os/` — sistema de organização canônica da inteligência durável do Brain.
 - `projetos/memory-os/` — hub canônico inicial do Memory OS.
+
+## Projetos Brain OS — Onda 2
+
+- `projetos/mordomo-os/` — hub canônico do Mordomo OS / Lucas pessoal.
+- `projetos/mission-control/` — hub canônico do Mission Control / COO Cockpit.
+- `projetos/mesa-coo/` — hub canônico da Mesa COO / ritual executivo Telegram.

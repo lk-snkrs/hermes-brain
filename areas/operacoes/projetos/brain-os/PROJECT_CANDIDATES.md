@@ -33,3 +33,12 @@
 ## Critério de priorização
 
 Priorizar por impacto de negócio, volume, risco externo, recorrência e chance de o agente precisar responder rápido.
+
+## Onda 2 — executada localmente em 2026-06-10
+
+- `areas/zipper/projetos/email-crm-intake/` — Zipper Email / CRM / Intake.
+- `areas/operacoes/projetos/mordomo-os/` — Mordomo OS.
+- `areas/operacoes/projetos/mission-control/` — Mission Control.
+- `areas/operacoes/projetos/mesa-coo/` — Mesa COO.
+
+Observação: o candidato do scanner `mission-control-mesa-coo` foi separado em dois hubs porque o inventário mostrou fronteira clara entre produto/cockpit (Mission Control) e ritual/Telegram/decisões (Mesa COO).

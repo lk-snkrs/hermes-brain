@@ -58,3 +58,7 @@ Evitar:
 ## Aprovação
 
 Qualquer contato com colecionador, negociação, proposta, publicação externa ou decisão de curadoria exige aprovação de Lucas/Osmar ou da equipe responsável.
+
+## Projetos Brain OS
+
+- `projetos/email-crm-intake/` — hub canônico Onda 2 para Zipper Email / CRM / Intake: ZPR/enquiry, leads, inbox, action packets, guardrails de aprovação e fontes comerciais.
