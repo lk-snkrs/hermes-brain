@@ -1,0 +1,104 @@
+# Gate B2 P2 — correction packet — tenis-new-balance-530-turtledove-mushroom-mesh-casual
+
+- title: `Tênis New Balance 530 Turtledove Mushroom Mesh Bege`
+- priority: `P2_saneamento`
+- lane: `TINY_DEPOSIT_PACKET`
+- proposed_action: Verificar mapeamento do depósito LK | CONTROLE ESTOQUE e preparar proposta; NÃO executar write sem aprovação escopada.
+- row_count: `88`
+- prefixes: `NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB, NB`
+
+## Status counts
+- matched_exact_sku_stock_missing_deposit: `5`
+- matched_exact_sku_stock_resolved: `52`
+- shopify_variant_tiny_missing: `31`
+
+## Linhas principais
+- `NB` | shopify_variant_tiny_missing | Shopify SKU `NB` | Tiny `` id ``
+- `NB-0058078-34` | matched_exact_sku_stock_missing_deposit | Shopify SKU `NB-0058078-34` | Tiny `NB-0058078-34` id `1069539093`
+- `NB-0254942-34` | shopify_variant_tiny_missing | Shopify SKU `NB-0254942-34` | Tiny `` id ``
+- `NB-1467358-34` | shopify_variant_tiny_missing | Shopify SKU `NB-1467358-34` | Tiny `` id ``
+- `NB-1663966-34` | shopify_variant_tiny_missing | Shopify SKU `NB-1663966-34` | Tiny `` id ``
+- `NB-2384862-34` | shopify_variant_tiny_missing | Shopify SKU `NB-2384862-34` | Tiny `` id ``
+- `NB-7961182-34` | matched_exact_sku_stock_resolved | Shopify SKU `NB-7961182-34` | Tiny `NB-7961182-34` id `1069543825` | saldo LK CONTROLE: 0.0
+- `NB-8518238-34` | matched_exact_sku_stock_resolved | Shopify SKU `NB-8518238-34` | Tiny `NB-8518238-34` id `1069543892` | saldo LK CONTROLE: 0.0
+- `NB-9796190-34` | matched_exact_sku_stock_resolved | Shopify SKU `NB-9796190-34` | Tiny `NB-9796190-34` id `1069543962` | saldo LK CONTROLE: 0.0
+- `NB-0058078-35` | matched_exact_sku_stock_resolved | Shopify SKU `NB-0058078-35` | Tiny `NB-0058078-35` id `1069539098` | saldo LK CONTROLE: 0.0
+- `NB-0254942-35` | matched_exact_sku_stock_resolved | Shopify SKU `NB-0254942-35` | Tiny `NB-0254942-35` id `1069544037` | saldo LK CONTROLE: 0.0
+- `NB-1467358-35` | matched_exact_sku_stock_resolved | Shopify SKU `NB-1467358-35` | Tiny `NB-1467358-35` id `1069544174` | saldo LK CONTROLE: 0.0
+- `NB-1663966-35` | matched_exact_sku_stock_resolved | Shopify SKU `NB-1663966-35` | Tiny `NB-1663966-35` id `1069540132` | saldo LK CONTROLE: 0.0
+- `NB-2384862-35` | matched_exact_sku_stock_missing_deposit | Shopify SKU `NB-2384862-35` | Tiny `NB-2384862-35` id `1069544241`
+- `NB-7961182-35` | shopify_variant_tiny_missing | Shopify SKU `NB-7961182-35` | Tiny `` id ``
+- `NB-8518238-35` | shopify_variant_tiny_missing | Shopify SKU `NB-8518238-35` | Tiny `` id ``
+- `NB-9796190-35` | shopify_variant_tiny_missing | Shopify SKU `NB-9796190-35` | Tiny `` id ``
+- `NB-0058078-36` | shopify_variant_tiny_missing | Shopify SKU `NB-0058078-36` | Tiny `` id ``
+- `NB-0254942-36` | matched_exact_sku_stock_resolved | Shopify SKU `NB-0254942-36` | Tiny `NB-0254942-36` id `1069544042` | saldo LK CONTROLE: 0.0
+- `NB-1467358-36` | matched_exact_sku_stock_resolved | Shopify SKU `NB-1467358-36` | Tiny `NB-1467358-36` id `1069529637` | saldo LK CONTROLE: 0.0
+- `NB-1663966-36` | matched_exact_sku_stock_resolved | Shopify SKU `NB-1663966-36` | Tiny `NB-1663966-36` id `1069540137` | saldo LK CONTROLE: 0.0
+- `NB-2384862-36` | matched_exact_sku_stock_resolved | Shopify SKU `NB-2384862-36` | Tiny `NB-2384862-36` id `1069544246` | saldo LK CONTROLE: 0.0
+- `NB-7961182-36` | matched_exact_sku_stock_resolved | Shopify SKU `NB-7961182-36` | Tiny `NB-7961182-36` id `1069543835` | saldo LK CONTROLE: 0.0
+- `NB-8518238-36` | matched_exact_sku_stock_resolved | Shopify SKU `NB-8518238-36` | Tiny `NB-8518238-36` id `1069543902` | saldo LK CONTROLE: 0.0
+- `NB-9796190-36` | matched_exact_sku_stock_resolved | Shopify SKU `NB-9796190-36` | Tiny `NB-9796190-36` id `1069543972` | saldo LK CONTROLE: 0.0
+- `NB-0058078-37` | matched_exact_sku_stock_resolved | Shopify SKU `NB-0058078-37` | Tiny `NB-0058078-37` id `1069539108` | saldo LK CONTROLE: 0.0
+- `NB-0254942-37` | shopify_variant_tiny_missing | Shopify SKU `NB-0254942-37` | Tiny `` id ``
+- `NB-1467358-37` | shopify_variant_tiny_missing | Shopify SKU `NB-1467358-37` | Tiny `` id ``
+- `NB-1663966-37` | shopify_variant_tiny_missing | Shopify SKU `NB-1663966-37` | Tiny `` id ``
+- `NB-2384862-37` | shopify_variant_tiny_missing | Shopify SKU `NB-2384862-37` | Tiny `` id ``
+- `NB-7961182-37` | shopify_variant_tiny_missing | Shopify SKU `NB-7961182-37` | Tiny `` id ``
+- `NB-8518238-37` | matched_exact_sku_stock_resolved | Shopify SKU `NB-8518238-37` | Tiny `NB-8518238-37` id `1069543907` | saldo LK CONTROLE: 0.0
+- `NB-9796190-37` | matched_exact_sku_stock_resolved | Shopify SKU `NB-9796190-37` | Tiny `NB-9796190-37` id `1069543977` | saldo LK CONTROLE: 0.0
+- `NB-0058078-38` | matched_exact_sku_stock_resolved | Shopify SKU `NB-0058078-38` | Tiny `NB-0058078-38` id `1069539113` | saldo LK CONTROLE: 0.0
+- `NB-0254942-38` | matched_exact_sku_stock_resolved | Shopify SKU `NB-0254942-38` | Tiny `NB-0254942-38` id `1068941875` | saldo LK CONTROLE: 0.0
+- `NB-1467358-38` | matched_exact_sku_stock_resolved | Shopify SKU `NB-1467358-38` | Tiny `NB-1467358-38` id `1069544186` | saldo LK CONTROLE: 0.0
+- `NB-1663966-38` | matched_exact_sku_stock_resolved | Shopify SKU `NB-1663966-38` | Tiny `NB-1663966-38` id `1064894666` | saldo LK CONTROLE: 0.0
+- `NB-2384862-38` | matched_exact_sku_stock_resolved | Shopify SKU `NB-2384862-38` | Tiny `NB-2384862-38` id `1069544256` | saldo LK CONTROLE: 0.0
+- `NB-7961182-38` | matched_exact_sku_stock_missing_deposit | Shopify SKU `NB-7961182-38` | Tiny `NB-7961182-38` id `1069543842`
+- `NB-8518238-38` | shopify_variant_tiny_missing | Shopify SKU `NB-8518238-38` | Tiny `` id ``
+- `NB-9796190-38` | shopify_variant_tiny_missing | Shopify SKU `NB-9796190-38` | Tiny `` id ``
+- `NB-0058078-39` | shopify_variant_tiny_missing | Shopify SKU `NB-0058078-39` | Tiny `` id ``
+- `NB-0254942-39` | shopify_variant_tiny_missing | Shopify SKU `NB-0254942-39` | Tiny `` id ``
+- `NB-1467358-39` | matched_exact_sku_stock_resolved | Shopify SKU `NB-1467358-39` | Tiny `NB-1467358-39` id `1069544191` | saldo LK CONTROLE: 0.0
+- `NB-1663966-39` | matched_exact_sku_stock_resolved | Shopify SKU `NB-1663966-39` | Tiny `NB-1663966-39` id `1069540146` | saldo LK CONTROLE: 0.0
+- `NB-2384862-39` | matched_exact_sku_stock_resolved | Shopify SKU `NB-2384862-39` | Tiny `NB-2384862-39` id `1069544261` | saldo LK CONTROLE: 0.0
+- `NB-7961182-39` | matched_exact_sku_stock_resolved | Shopify SKU `NB-7961182-39` | Tiny `NB-7961182-39` id `1069543847` | saldo LK CONTROLE: 0.0
+- `NB-8518238-39` | matched_exact_sku_stock_resolved | Shopify SKU `NB-8518238-39` | Tiny `NB-8518238-39` id `1069543917` | saldo LK CONTROLE: 0.0
+- `NB-9796190-39` | matched_exact_sku_stock_resolved | Shopify SKU `NB-9796190-39` | Tiny `NB-9796190-39` id `1069543987` | saldo LK CONTROLE: 0.0
+- `NB-0058078-40` | matched_exact_sku_stock_resolved | Shopify SKU `NB-0058078-40` | Tiny `NB-0058078-40` id `1069539123` | saldo LK CONTROLE: 0.0
+- `NB-0254942-40` | matched_exact_sku_stock_resolved | Shopify SKU `NB-0254942-40` | Tiny `NB-0254942-40` id `1069544059` | saldo LK CONTROLE: 0.0
+- `NB-1467358-40` | matched_exact_sku_stock_missing_deposit | Shopify SKU `NB-1467358-40` | Tiny `NB-1467358-40` id `1069544196`
+- `NB-1663966-40` | shopify_variant_tiny_missing | Shopify SKU `NB-1663966-40` | Tiny `` id ``
+- `NB-2384862-40` | shopify_variant_tiny_missing | Shopify SKU `NB-2384862-40` | Tiny `` id ``
+- `NB-7961182-40` | shopify_variant_tiny_missing | Shopify SKU `NB-7961182-40` | Tiny `` id ``
+- `NB-8518238-40` | shopify_variant_tiny_missing | Shopify SKU `NB-8518238-40` | Tiny `` id ``
+- `NB-9796190-40` | matched_exact_sku_stock_resolved | Shopify SKU `NB-9796190-40` | Tiny `NB-9796190-40` id `1069543992` | saldo LK CONTROLE: 0.0
+- `NB-0058078-41` | matched_exact_sku_stock_resolved | Shopify SKU `NB-0058078-41` | Tiny `NB-0058078-41` id `1064893341` | saldo LK CONTROLE: 0.0
+- `NB-0254942-41` | matched_exact_sku_stock_resolved | Shopify SKU `NB-0254942-41` | Tiny `NB-0254942-41` id `1069544064` | saldo LK CONTROLE: 0.0
+- `NB-1467358-41` | matched_exact_sku_stock_resolved | Shopify SKU `NB-1467358-41` | Tiny `NB-1467358-41` id `1069544201` | saldo LK CONTROLE: 0.0
+- `NB-2384862-41` | matched_exact_sku_stock_resolved | Shopify SKU `NB-2384862-41` | Tiny `NB-2384862-41` id `1069544271` | saldo LK CONTROLE: 0.0
+- `NB-7961182-41` | matched_exact_sku_stock_resolved | Shopify SKU `NB-7961182-41` | Tiny `NB-7961182-41` id `1069543857` | saldo LK CONTROLE: 0.0
+- `NB-8518238-41` | matched_exact_sku_stock_resolved | Shopify SKU `NB-8518238-41` | Tiny `NB-8518238-41` id `1069543927` | saldo LK CONTROLE: 0.0
+- `NB-9796190-41` | matched_exact_sku_stock_resolved | Shopify SKU `NB-9796190-41` | Tiny `NB-9796190-41` id `1069543997` | saldo LK CONTROLE: 0.0
+- `NB-0058078-42` | shopify_variant_tiny_missing | Shopify SKU `NB-0058078-42` | Tiny `` id ``
+- `NB-0254942-42` | shopify_variant_tiny_missing | Shopify SKU `NB-0254942-42` | Tiny `` id ``
+- `NB-1467358-42` | shopify_variant_tiny_missing | Shopify SKU `NB-1467358-42` | Tiny `` id ``
+- `NB-2384862-42` | shopify_variant_tiny_missing | Shopify SKU `NB-2384862-42` | Tiny `` id ``
+- `NB-7961182-42` | shopify_variant_tiny_missing | Shopify SKU `NB-7961182-42` | Tiny `` id ``
+- `NB-8518238-42` | matched_exact_sku_stock_resolved | Shopify SKU `NB-8518238-42` | Tiny `NB-8518238-42` id `1069543932` | saldo LK CONTROLE: 0.0
+- `NB-9796190-42` | matched_exact_sku_stock_resolved | Shopify SKU `NB-9796190-42` | Tiny `NB-9796190-42` id `1069544002` | saldo LK CONTROLE: 0.0
+- `NB-0058078-43` | matched_exact_sku_stock_resolved | Shopify SKU `NB-0058078-43` | Tiny `NB-0058078-43` id `1069539135` | saldo LK CONTROLE: 0.0
+- `NB-0254942-43` | matched_exact_sku_stock_resolved | Shopify SKU `NB-0254942-43` | Tiny `NB-0254942-43` id `1069544074` | saldo LK CONTROLE: 0.0
+- `NB-1467358-43` | matched_exact_sku_stock_resolved | Shopify SKU `NB-1467358-43` | Tiny `NB-1467358-43` id `1069544211` | saldo LK CONTROLE: 0.0
+- `NB-2384862-43` | matched_exact_sku_stock_resolved | Shopify SKU `NB-2384862-43` | Tiny `NB-2384862-43` id `1069544281` | saldo LK CONTROLE: 0.0
+- `NB-7961182-43` | matched_exact_sku_stock_resolved | Shopify SKU `NB-7961182-43` | Tiny `NB-7961182-43` id `1069543867` | saldo LK CONTROLE: 0.0
+- `NB-8518238-43` | matched_exact_sku_stock_missing_deposit | Shopify SKU `NB-8518238-43` | Tiny `NB-8518238-43` id `1069543937`
+- `NB-9796190-43` | shopify_variant_tiny_missing | Shopify SKU `NB-9796190-43` | Tiny `` id ``
+- `NB-0058078-44` | shopify_variant_tiny_missing | Shopify SKU `NB-0058078-44` | Tiny `` id ``
+- `NB-0254942-44` | shopify_variant_tiny_missing | Shopify SKU `NB-0254942-44` | Tiny `` id ``
+- ... +8 linhas no JSON/CSV agregado
+
+## Guardrails
+- Tiny write: `0`
+- Shopify write: `0`
+- Writes externos: `0`
+- Cron/webhook/runtime novo: `0`
+- Promessa de disponibilidade pública: `0`
+- Rollback: descartar artefatos locais; nada externo alterado.

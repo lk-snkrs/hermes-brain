@@ -1,0 +1,84 @@
+# Gate B2 P2 — correction packet — tenis-nike-vomero-premium-pearl-pink-rosa
+
+- title: `Tênis Nike Vomero Premium Pearl Pink Rosa`
+- priority: `P2_saneamento`
+- lane: `TINY_DEPOSIT_PACKET`
+- proposed_action: Verificar mapeamento do depósito LK | CONTROLE ESTOQUE e preparar proposta; NÃO executar write sem aprovação escopada.
+- row_count: `61`
+- prefixes: `HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973, HM5973`
+
+## Status counts
+- matched_exact_sku_stock_missing_deposit: `4`
+- matched_exact_sku_stock_resolved: `35`
+- shopify_variant_tiny_missing: `22`
+
+## Linhas principais
+- `HM5973` | shopify_variant_tiny_missing | Shopify SKU `HM5973` | Tiny `` id ``
+- `HM5973-002-1` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-002-1` | Tiny `HM5973-002-1` id `1067888086` | saldo LK CONTROLE: 0.0
+- `HM5973-300-34` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-300-34` | Tiny `HM5973-300-34` id `1070659480` | saldo LK CONTROLE: 0.0
+- `HM5973-400-1` | matched_exact_sku_stock_missing_deposit | Shopify SKU `HM5973-400-1` | Tiny `HM5973-400-1` id `1066344385`
+- `HM5973-603-1` | shopify_variant_tiny_missing | Shopify SKU `HM5973-603-1` | Tiny `` id ``
+- `HM5973-606-34` | shopify_variant_tiny_missing | Shopify SKU `HM5973-606-34` | Tiny `` id ``
+- `HM5973-607` | shopify_variant_tiny_missing | Shopify SKU `HM5973-607` | Tiny `` id ``
+- `HM5973-801-34` | shopify_variant_tiny_missing | Shopify SKU `HM5973-801-34` | Tiny `` id ``
+- `HM5973-002-2` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-002-2` | Tiny `HM5973-002-2` id `1067888089` | saldo LK CONTROLE: 0.0
+- `HM5973-300-35` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-300-35` | Tiny `HM5973-300-35` id `1070659485` | saldo LK CONTROLE: 0.0
+- `HM5973-400-2` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-400-2` | Tiny `HM5973-400-2` id `1066344388` | saldo LK CONTROLE: 0.0
+- `HM5973-603-2` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-603-2` | Tiny `HM5973-603-2` id `1066878026` | saldo LK CONTROLE: 0.0
+- `HM5973-606-35` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-606-35` | Tiny `HM5973-606-35` id `1070659547` | saldo LK CONTROLE: 0.0
+- `HM5973-608` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-608` | Tiny `HM5973-608` id `1069545576` | saldo LK CONTROLE: 0.0
+- `HM5973-801-35` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-801-35` | Tiny `HM5973-801-35` id `1070659614` | saldo LK CONTROLE: 0.0
+- `HM5973-002-3` | matched_exact_sku_stock_missing_deposit | Shopify SKU `HM5973-002-3` | Tiny `HM5973-002-3` id `1067888092`
+- `HM5973-300-36` | shopify_variant_tiny_missing | Shopify SKU `HM5973-300-36` | Tiny `` id ``
+- `HM5973-400-3` | shopify_variant_tiny_missing | Shopify SKU `HM5973-400-3` | Tiny `` id ``
+- `HM5973-603-3` | shopify_variant_tiny_missing | Shopify SKU `HM5973-603-3` | Tiny `` id ``
+- `HM5973-606-36` | shopify_variant_tiny_missing | Shopify SKU `HM5973-606-36` | Tiny `` id ``
+- `HM5973-609` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-609` | Tiny `HM5973-609` id `1069545581` | saldo LK CONTROLE: 0.0
+- `HM5973-801-36` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-801-36` | Tiny `HM5973-801-36` id `1070659619` | saldo LK CONTROLE: 0.0
+- `HM5973-002-4` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-002-4` | Tiny `HM5973-002-4` id `1067888095` | saldo LK CONTROLE: 0.0
+- `HM5973-300-37` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-300-37` | Tiny `HM5973-300-37` id `1070659495` | saldo LK CONTROLE: 0.0
+- `HM5973-400-4` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-400-4` | Tiny `HM5973-400-4` id `1066344394` | saldo LK CONTROLE: 1.0
+- `HM5973-603-4` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-603-4` | Tiny `HM5973-603-4` id `1066878032` | saldo LK CONTROLE: 1.0
+- `HM5973-606-37` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-606-37` | Tiny `HM5973-606-37` id `1070659557` | saldo LK CONTROLE: 0.0
+- `HM5973-610` | matched_exact_sku_stock_missing_deposit | Shopify SKU `HM5973-610` | Tiny `HM5973-610` id `1069545586`
+- `HM5973-801-37` | shopify_variant_tiny_missing | Shopify SKU `HM5973-801-37` | Tiny `` id ``
+- `HM5973-002-5` | shopify_variant_tiny_missing | Shopify SKU `HM5973-002-5` | Tiny `` id ``
+- `HM5973-300-38` | shopify_variant_tiny_missing | Shopify SKU `HM5973-300-38` | Tiny `` id ``
+- `HM5973-400-5` | shopify_variant_tiny_missing | Shopify SKU `HM5973-400-5` | Tiny `` id ``
+- `HM5973-603-5` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-603-5` | Tiny `HM5973-603-5` id `1066878035` | saldo LK CONTROLE: 0.0
+- `HM5973-606-38` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-606-38` | Tiny `HM5973-606-38` id `1070659562` | saldo LK CONTROLE: 0.0
+- `HM5973-613` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-613` | Tiny `HM5973-613` id `1069545591` | saldo LK CONTROLE: 0.0
+- `HM5973-801-38` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-801-38` | Tiny `HM5973-801-38` id `1070659629` | saldo LK CONTROLE: 0.0
+- `HM5973-002-6` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-002-6` | Tiny `HM5973-002-6` id `1067888101` | saldo LK CONTROLE: 0.0
+- `HM5973-300-39` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-300-39` | Tiny `HM5973-300-39` id `1070659505` | saldo LK CONTROLE: 0.0
+- `HM5973-400-6` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-400-6` | Tiny `HM5973-400-6` id `1066344400` | saldo LK CONTROLE: 0.0
+- `HM5973-603-6` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-603-6` | Tiny `HM5973-603-6` id `1066878038` | saldo LK CONTROLE: 0.0
+- `HM5973-606-39` | shopify_variant_tiny_missing | Shopify SKU `HM5973-606-39` | Tiny `` id ``
+- `HM5973-611` | shopify_variant_tiny_missing | Shopify SKU `HM5973-611` | Tiny `` id ``
+- `HM5973-801-39` | shopify_variant_tiny_missing | Shopify SKU `HM5973-801-39` | Tiny `` id ``
+- `HM5973-002-7` | shopify_variant_tiny_missing | Shopify SKU `HM5973-002-7` | Tiny `` id ``
+- `HM5973-300-40` | shopify_variant_tiny_missing | Shopify SKU `HM5973-300-40` | Tiny `` id ``
+- `HM5973-400-7` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-400-7` | Tiny `HM5973-400-7` id `1066344403` | saldo LK CONTROLE: 0.0
+- `HM5973-603-7` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-603-7` | Tiny `HM5973-603-7` id `1066878041` | saldo LK CONTROLE: 0.0
+- `HM5973-606-40` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-606-40` | Tiny `HM5973-606-40` id `1070659572` | saldo LK CONTROLE: 0.0
+- `HM5973-612` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-612` | Tiny `HM5973-612` id `1069545601` | saldo LK CONTROLE: 0.0
+- `HM5973-801-40` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-801-40` | Tiny `HM5973-801-40` id `1070659639` | saldo LK CONTROLE: 0.0
+- `HM5973-300-41` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-300-41` | Tiny `HM5973-300-41` id `1070659515` | saldo LK CONTROLE: 0.0
+- `HM5973-400-8` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-400-8` | Tiny `HM5973-400-8` id `1066344406` | saldo LK CONTROLE: 0.0
+- `HM5973-603-8` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-603-8` | Tiny `HM5973-603-8` id `1066878044` | saldo LK CONTROLE: 0.0
+- `HM5973-606-41` | matched_exact_sku_stock_missing_deposit | Shopify SKU `HM5973-606-41` | Tiny `HM5973-606-41` id `1070659577`
+- `HM5973-801-41` | shopify_variant_tiny_missing | Shopify SKU `HM5973-801-41` | Tiny `` id ``
+- `HM5973-300-42` | shopify_variant_tiny_missing | Shopify SKU `HM5973-300-42` | Tiny `` id ``
+- `HM5973-603-9` | shopify_variant_tiny_missing | Shopify SKU `HM5973-603-9` | Tiny `` id ``
+- `HM5973-606-42` | shopify_variant_tiny_missing | Shopify SKU `HM5973-606-42` | Tiny `` id ``
+- `HM5973-801-42` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-801-42` | Tiny `HM5973-801-42` id `1070659649` | saldo LK CONTROLE: 0.0
+- `HM5973-603-10` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-603-10` | Tiny `HM5973-603-10` id `1066878050` | saldo LK CONTROLE: 0.0
+- `HM5973-603-11` | matched_exact_sku_stock_resolved | Shopify SKU `HM5973-603-11` | Tiny `HM5973-603-11` id `1066878053` | saldo LK CONTROLE: 0.0
+
+## Guardrails
+- Tiny write: `0`
+- Shopify write: `0`
+- Writes externos: `0`
+- Cron/webhook/runtime novo: `0`
+- Promessa de disponibilidade pública: `0`
+- Rollback: descartar artefatos locais; nada externo alterado.

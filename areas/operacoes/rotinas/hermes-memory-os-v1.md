@@ -168,3 +168,124 @@ Estado de ativação:
 - Se o checker apontar drift local corrigível (`hot.md` stale, daily ausente/skeleton), corrigir localmente antes de alertar Lucas.
 - Não classificar profiles explicitamente excluídos do watchdog como managed failure.
 - Próximo estado verde volta para maturação por ciclos reais; restart/gateway/Docker/VPS/Traefik/Mission Control exigem aprovação separada.
+
+## Memory OS v1.20 — contrato anti-recorrência auto-heal
+
+- Auto-heal recorrente não deve virar normalidade invisível: se a mesma rota/reason cura `>= 3` vezes em 7 dias, registrar `auto-heal-generator-findings-latest.json` e corrigir o gerador local/documental quando seguro.
+- Rotas recorrentes atuais: adoption_auto_heal, generator_contract.
+- Escopo automático permitido: L0/L1 local/documental com backup/ledger/verificação; L2 requer aprovação; L3 é proibido automático.
+- Telegram permanece silencioso se o estado final ficou verde; alertar Lucas apenas quando sobrar problema acionável ou decisão L2.
+## Memory OS v1.30 — Context Intelligence Layer
+
+- Objetivo: transformar higiene de memória em roteamento determinístico de contexto por pergunta/tarefa antes de responder ou delegar.
+- Entregas locais/documentais aprovadas: Context Router, `context/current/*.md`, testes sintéticos de recall e `context/packs/*.json` para subagentes.
+- Script: `/opt/data/scripts/hermes_memory_os_context_intelligence.py`.
+- Relatório live/documental: `reports/memory-hygiene/context-intelligence-latest.json`.
+- Testes sintéticos: `reports/memory-hygiene/context-recall-tests-v130.json` e `/opt/data/tests/test_memory_os_context_intelligence_v130.py`.
+- Regra de uso: perguntas críticas (`qual 2/2?`, `está ativo?`, `já aprovou?`, `o que ficou pendente?`, `pode executar?`) devem passar pelo Context Router e consultar ledger/current/report antes de resposta final.
+- Guardrail: v1.30 não autoriza runtime, gateway, cron, provider, Telegram delivery, Docker/VPS ou writes externos; é camada local de contexto e teste.
+
+## Memory OS v1.40 — Evidence & Sufficiency Layer
+
+- Objetivo: impedir respostas confiantes com contexto insuficiente, especialmente em perguntas `está ativo?`, `qual 2/2?`, `já aprovou?`, `pode executar?` e fatos vivos de negócio.
+- Entregas locais/documentais aprovadas: Evidence Ladder, Context Sufficiency Score, TTL por classe de fonte e classes de erro operacional aprendíveis.
+- Script: `/opt/data/scripts/hermes_memory_os_context_intelligence.py` agora retorna `evidence_ladder`, `context_sufficiency`, `ttl_policy` e `operational_error_classes` junto do plano de contexto.
+- Relatório live/documental: `reports/memory-hygiene/context-intelligence-latest.json`, versão `v1.40`.
+- Testes sintéticos: `reports/memory-hygiene/context-recall-tests-v140.json` e `/opt/data/tests/test_memory_os_evidence_sufficiency_v140.py`.
+- Evidence Ladder canônica: runtime/live quando a pergunta é status ativo; ledger/receipt para decisões e N/M; current state como ponte; Brain MAPA/skills/session history/chat summary apenas em ordem decrescente de confiança.
+- TTL: status runtime e fatos vivos exigem evidência fresca; política/guardrail é durável; chat summary/prompt memory é apenas pista, nunca verdade final.
+- Guardrail: v1.40 é local/documental + testes; não ativa provider externo, não altera gateway/runtime/crons/Telegram e não executa writes em Shopify/Tiny/GMC/Klaviyo/WhatsApp/e-mail/banco.
+
+## Memory OS v1.50 — Contradiction Detector + Current State TTL Enforcement
+
+- Objetivo: detectar conflitos explícitos entre current/runtime/reports e bloquear claims de estado atual quando a evidência está vencida.
+- Entregas locais/documentais aprovadas: detector de contradições por claim marker, enforcement de TTL para evidências voláteis, fixture `context-ttl-tests-v150.json` e relatório `context-contradictions-latest.json`.
+- Script: `/opt/data/scripts/hermes_memory_os_context_intelligence.py` agora expõe `detect_context_contradictions(brain)` e `enforce_ttl_for_plan(plan, evidence)`.
+- Relatório live/documental: `reports/memory-hygiene/context-intelligence-latest.json`, versão `v1.50`, com `contradiction_scan.status=ok` quando não há conflito explícito.
+- Testes: `/opt/data/tests/test_memory_os_contradiction_ttl_v150.py` cobre conflito `active/offline`, ausência de falso positivo em context pointer, runtime stale bloqueado e runtime fresco permitido.
+- Regra de uso: claims `active/online/offline`, preço/estoque/status vivo e health atual devem passar por TTL enforcement antes de resposta final; se bloqueado, responder com necessidade de evidência fresca, não com certeza.
+- Guardrail: v1.50 não autoriza runtime, gateway, cron, provider, Telegram delivery, Docker/VPS ou writes externos; é camada local/documental + testes.
+
+## Memory OS v1.60 — Decision Continuity Ledger
+
+- Objetivo: preservar continuidade de decisões sequenciais (`1/N`, `2/N`, “Fazer”, “Não fazer”, “APROVO”) sem depender de chat summary ou memória compactada.
+- Entregas locais/documentais aprovadas: helpers de ledger JSONL append-only, normalização de resposta Lucas, resolução determinística de `N/M`, gate anti-approval-scope-drift e fixture `decision-continuity-tests-v160.json`.
+- Script: `/opt/data/scripts/hermes_memory_os_context_intelligence.py` agora expõe `write_decision_sequence_ledger`, `resolve_decision_sequence_query`, `record_lucas_decision_response`, `approval_scope_gate` e `load_decision_sequence_state`.
+- Relatório live/documental: `reports/memory-hygiene/context-intelligence-latest.json`, versão `v1.60`, com entregas `decision_continuity_ledger` e `approval_scope_gate`.
+- Testes: `/opt/data/tests/test_memory_os_decision_continuity_v160.py` cobre criação append-only de sequência, resolução `2/2` via ledger, “não fazer” limitado ao item aberto, bloqueio de aprovação genérica/high-risk e bootstrap v1.60.
+- Regra de uso: perguntas Mesa COO `qual N/M?` devem ler ledger primeiro; “APROVO”/“Fazer” só vale para o item atual e ação escopada; produção/runtime/external write continua bloqueado sem aprovação específica.
+- Guardrail: v1.60 não autoriza runtime, gateway, cron, provider, Telegram delivery, Docker/VPS ou writes externos; é camada local/documental + testes.
+
+## Memory OS v1.70 — Subagent Context Contract v2
+
+- Objetivo: padronizar o pacote de contexto entregue a subagentes para evitar prompt gigante, fonte errada, chat summary como verdade, claims runtime sem evidência e execução fora do approval scope.
+- Entregas locais/documentais aprovadas: `build_subagent_context_contract`, `validate_subagent_context_contract`, `create_subagent_handoff_packet`, fixture `subagent-context-contract-tests-v170.json` e report `context-intelligence-latest.json` versão `v1.70`.
+- Contrato v2: orçamento máximo de fontes/tokens, `current_state` obrigatório, `never_do` explícito, gates `return_evidence_paths`, `do_not_claim_runtime_without_live_evidence`, `approval_scope_check` e output schema mínimo.
+- Handoff packet: inclui truth policy (`chat_summary=hint_only`, runtime/live source required), stop conditions e expected output com evidências/incertezas/ações não tomadas.
+- Testes: `/opt/data/tests/test_memory_os_subagent_context_contract_v170.py` cobre contrato budgetado, validação de guardrails, bloqueio de A3/A4 sem approval packet, handoff sem raw chat summary e bootstrap v1.70.
+- Regra de uso: antes de delegar trabalho sensível/operacional a subagente, montar contrato v2 e bloquear se faltarem current state, guardrails, evidence return ou approval packet para A3/A4.
+- Guardrail: v1.70 não autoriza runtime, gateway, cron, provider, Telegram delivery, Docker/VPS ou writes externos; é camada local/documental + testes.
+
+## Memory OS v1.80 — Silent-OK Self-Test Contract
+
+- Objetivo: permitir um self-test diário/no_agent que valide a saúde local do Memory OS sem gerar ruído quando tudo está verde.
+- Entregas locais/documentais aprovadas: `run_memory_os_self_test`, `format_memory_os_self_test_stdout`, CLI `--self-test`, fixture `self-test-contract-v180.json` e report `context-intelligence-latest.json` versão `v1.80`.
+- Contrato silent-OK: se `status=ok`, stdout é exatamente vazio; se houver falha local, stdout contém alerta sanitizado/actionable com nomes dos checks e ação sugerida.
+- Checks atuais: `context_intelligence_latest`, `contradiction_scan_ok`, `ttl_fixture`, `decision_continuity_fixture`, `subagent_contract_fixture`, `recall_fixture`, `current_state_memory_os`.
+- Testes: `/opt/data/tests/test_memory_os_selftest_silent_ok_v180.py` cobre self-test saudável silencioso, alerta quando fixture falta, formatador stdout e CLI `--self-test` silencioso.
+- Regra de uso: qualquer cron/no_agent futuro deve usar esse contrato; sucesso fica silencioso e falha imprime somente causa sanitizada e ação local, sem secrets e sem logs brutos.
+- Guardrail: v1.80 não agenda cron, não muda delivery Telegram e não autoriza runtime/gateway/provider/Docker/VPS/writes externos; é camada local/documental + testes.
+
+## Memory OS v1.90 — Operational Regression Registry
+
+- Objetivo: transformar erros operacionais recorrentes em entradas auditáveis de regressão e plano de prevenção, sem depender de memória de chat ou alerta solto.
+- Entregas locais/documentais aprovadas: `register_operational_regression`, `build_regression_prevention_plan`, fixture `operational-regression-tests-v190.json`, recall `context-recall-tests-v190.json` e report `context-intelligence-latest.json` versão `v1.90`.
+- Registry JSONL: `operational-regression-registry.jsonl` é append-only, sanitiza sintomas, registra `error_class`, `prevention_test`, `evidence_paths`, `risk_level`, `autoheal_status` e flags `external_writes=false`/`runtime_changes=false`.
+- Fail-closed: auto-heal L1 só pode apontar para allowlist local/documental; ações L2/L3 como Docker/runtime/gateway/provider/Telegram/cron/writes externos viram `approval_required` e `approval_packet_required`.
+- Plano: `build_regression_prevention_plan` agrupa itens abertos por classe de erro, lista testes obrigatórios e separa itens que exigem aprovação.
+- Testes: `/opt/data/tests/test_memory_os_regression_registry_v190.py` cobre sanitização, bloqueio L2/L3, agrupamento do plano e bootstrap v1.90.
+- Regra de uso: quando um erro operacional for encontrado, registrar classe + teste preventivo antes de encerrar; não resolver via lembrança solta ou só resumo de chat.
+- Guardrail: v1.90 não executa auto-heal real, não agenda cron, não muda runtime/gateway/Telegram/provider/Docker/VPS/writes externos; é camada local/documental + testes.
+
+## Memory OS v2.0 — Local QA Gate
+
+- Objetivo: consolidar a verificação completa do Memory OS em um plano local determinístico, sem depender de checklist manual ou claims de sucesso sem evidência fresca.
+- Entregas locais/documentais aprovadas: `build_memory_os_qa_gate_plan`, `validate_memory_os_qa_gate_plan`, `format_memory_os_qa_gate_plan`, CLI `--qa-plan`, fixture `local-qa-gate-v200.json`, recall `context-recall-tests-v200.json` e report `context-intelligence-latest.json` versão `v2.0`.
+- Plano v2.0: lista testes v1.20-v2.0, bootstrap, self-test silent-OK, contradiction scan, Brain health, operational docs guard e focused secret scan.
+- Segurança: `validate_memory_os_qa_gate_plan` bloqueia comandos com Docker/SSH/curl/wget/kubectl/systemctl/restart/Telegram/provedores/writes externos; plano declara `local_only=true`, `external_writes=false`, `runtime_changes=false`.
+- CLI: `--qa-plan` imprime JSON do plano e não executa checks; success real exige rodada fresca dos comandos e receipt pós-verificação.
+- Testes: `/opt/data/tests/test_memory_os_local_qa_gate_v200.py` cobre completude do plano, bloqueio de comandos runtime/network, CLI plan-only, formatação sem claim de execução e bootstrap v2.0.
+- Regra de uso: ao fechar pacote Memory OS, usar o QA gate como checklist canônico; se receipt/report mudar depois da verificação, rerodar o gate relevante antes de responder.
+- Guardrail: v2.0 não executa runtime/gateway/provider/Docker/VPS/Telegram/cron/writes externos; é plano/contrato local + testes.
+
+## Memory OS v2.1 — Coverage & Drift Matrix
+
+- Objetivo: cobrir frentes/agentes reais com matriz local de cobertura, evitando buracos silenciosos entre `default`, Mordomo, LK, SPITI, Zipper e Mesa COO.
+- Entregas locais/documentais: `build_memory_os_coverage_matrix`, `validate_memory_os_coverage_matrix`, fixture `memory-os-coverage-matrix-v210.json`, latest report com `coverage_drift_matrix` e `coverage_matrix_fixture`.
+- Campos por frente: `front`, `status`, `evidence_paths`, `current_state`, `context_pack`, `skill_routine`, `owner`, `logical_source`.
+- Status permitidos: `covered`, `partial`, `missing`, `stale`; evidências ficam repo-relativas/sanitizadas.
+- Teste: `/opt/data/tests/test_memory_os_coverage_matrix_v210.py`.
+- Guardrail: matriz apenas lê evidências locais/documentais; sem runtime, sem rede, sem writes externos.
+
+## Memory OS v2.2 — Receipt Writer Adoption Gate
+
+- Objetivo: garantir adoção contínua do padrão de receipts/writer/linter em rotinas críticas, sem depender de memória solta.
+- Entregas locais/documentais: `build_receipt_adoption_gate`, `validate_receipt_adoption_gate`, fixture `receipt-adoption-gate-v220.json`, latest report com `receipt_writer_adoption_gate`.
+- Targets cobertos: writer core, fallback hook, adoption linter, rotinas de checagem, template, diretórios de governance receipts, latest/events logs.
+- Validação: classifica missing/stale/partial/drift e bloqueia quando há `missing_receipt_adoption_coverage`, `stale_receipt_adoption_coverage` ou `partial_receipt_writer_adoption`.
+- Teste: `/opt/data/tests/test_memory_os_receipt_adoption_v220.py`.
+- Guardrail: gate local/documental; não cria/edita receipts automaticamente e não toca cron/runtime/Telegram.
+
+## Memory OS v2.3 — Replay Simulator
+
+- Objetivo: simular perguntas/decisões históricas críticas contra o contrato do Memory OS para prevenir regressões de raciocínio operacional.
+- Entregas locais/documentais: `build_memory_os_replay_suite`, `run_memory_os_replay_simulator`, fixture `replay-simulator-v230.json`, latest report com `memory_os_replay_simulator` e `replay_simulator_cases`.
+- Casos obrigatórios: Mesa 2/2 ledger-first, runtime ativo exige evidência viva, approval-scope drift bloqueado, `não fazer` bloqueia writes externos, chat summary é hint-only, self-test OK é silencioso.
+- Teste: `/opt/data/tests/test_memory_os_replay_simulator_v230.py`.
+- Guardrail: simulador não executa ações reais; só compara rotas/evidências/bloqueios esperados em fixture local.
+
+## Memory OS v2.3 — Atualização do QA Gate
+
+- `build_memory_os_qa_gate_plan` agora inclui os testes v2.1, v2.2 e v2.3 no plano.
+- `context-intelligence-latest.json` reporta `version=v2.3` e inclui `coverage_drift_matrix`, `receipt_writer_adoption_gate` e `memory_os_replay_simulator` em `deliveries`.
+- Regra de fechamento: sucesso só pode ser claimado após testes v1.20-v2.3, bootstrap, self-test silent-OK, contradiction scan, Brain health, docs guard e secret scan frescos.

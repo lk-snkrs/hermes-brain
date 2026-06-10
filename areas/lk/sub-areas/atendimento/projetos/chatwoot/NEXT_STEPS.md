@@ -26,3 +26,10 @@
 - Nenhuma mensagem externa sem aprovação escopada.
 - Nenhum write em Chatwoot/Shopify/Tiny/WhatsApp/Evolution sem snapshot/readback/receipt.
 - Nenhum secret no Brain/Git/Telegram.
+
+## Motor de recuperação (adicionado 2026-06-10)
+
+1. Ligar fluxos quando Lucas autorizar: `SHOPIFY_RECOVERY_ENABLED=true` + delays `60,1440,2880`; `SHOPIFY_NOTIFY_ENABLED=true`; followup `4320`. (Ver RUNBOOK do recovery-engine.)
+2. Captura de telefone no checkout — gargalo nº1 (78,6% dos carrinhos inalcançáveis).
+3. Migração do número oficial Cloud API 5511949565000 (Crisp, 2-step PIN) → destrava templates Meta nativos.
+4. Backlog técnico: BroadcastSendJob com retomada; Customer 360 (429/matching/moeda); cupons por toque (backend); RFM exclusivo; conteúdo por tipo de produto (sonho do Lucas — base {{produto}} pronta).

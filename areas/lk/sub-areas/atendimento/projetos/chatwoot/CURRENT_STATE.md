@@ -52,6 +52,13 @@ O projeto Chatwoot da LK está documentado no Brain como frente de **atendimento
 - Report apply: `reports/lk_pos_postsale_chatwoot_layer_20260610T154557Z_apply.json`.
 - Resultado documentado: 10 pedidos POS registrados como conversas/notas internas; mensagens ao cliente pelo Chatwoot: 0.
 
+### 7. Motor de recuperação de carrinho + journeys WhatsApp (NOVO — 10/jun)
+
+- Frente construída pelo Lucas com Claude (Cowork) no fork `lk-chatwoot` (produção `v2-recovery17`).
+- Pacote canônico: `recovery-engine/` (README, ARQUITETURA, ESTADO-ATUAL, RUNBOOK, AUDIT-FIXES-2026-06-10).
+- Estado: motor pronto e testado; fluxos automáticos DESLIGADOS por decisão do Lucas; templates preenchidos (8, tom LK) com interpolação; resposta de agente na inbox LK Flagship CONSERTADA (webhook Evolution); audit completo com todos os críticos corrigidos.
+- Guardrail: delays ainda demo (1,2,3 min) — trocar para 60,1440,2880 AO LIGAR.
+
 ## Estado POS registrado
 
 `processed_orders=10; updated_at_utc=2026-06-10T15:45:57.370898+00:00; guardrail=internal Chatwoot records only; no customer-visible Chatwoot messages`

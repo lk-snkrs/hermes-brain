@@ -140,6 +140,10 @@ Registrar no Brain:
 - aprendizados de copy/design/produto;
 - próximo teste recomendado.
 
+### Aprendizado vivo — campanha giftable / compra por tamanho
+
+Evidência 24h da campanha `2026-06-09 | Dia dos Namorados | Gifts by LK | 15% off pronta entrega`: quando a peça oferece coleção presenteável + navegação por tamanho, a maior parte do clique tende a ir para a coleção/filtros de tamanho, não necessariamente para produtos individuais. Para próximas campanhas giftable, tratar `compra por tamanho` como CTA/UX forte, mas acompanhar se o clique vira pedido; se receita ficar zerada, testar follow-up segmentado para `clicked/no purchase` com curadoria mais fechada por faixa de tamanho e não só landing ampla. Confiança: média, baseada em 1 campanha/24h.
+
 ## Exemplo — Samba Jane
 
 Para uma newsletter do `Adidas Samba Jane`, a lógica esperada é:

@@ -1,0 +1,105 @@
+# Gate B2 P2 — correction packet — slide-nike-mind-001-sail-bege
+
+- title: `Chinelo Slide Nike Mind 001 Sail Bege`
+- priority: `P2_saneamento`
+- lane: `TINY_DUPLICATE_PACKET`
+- proposed_action: Preparar saneamento Tiny de código duplicado e rollback/readback; NÃO executar write sem aprovação escopada.
+- row_count: `101`
+- prefixes: `HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307, HQ4307`
+
+## Status counts
+- matched_exact_sku_stock_missing_deposit: `3`
+- matched_exact_sku_stock_resolved: `49`
+- shopify_variant_tiny_missing: `48`
+- tiny_duplicate_exact_code_blocked: `1`
+
+## Linhas principais
+- `HQ4307` | shopify_variant_tiny_missing | Shopify SKU `HQ4307` | Tiny `` id ``
+- `HQ4307-001-1` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-001-1` | Tiny `HQ4307-001-1` id `1068220042` | saldo LK CONTROLE: 0.0
+- `HQ4307-002-1` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-002-1` | Tiny `HQ4307-002-1` id `1068220110` | saldo LK CONTROLE: 0.0
+- `HQ4307-003-1` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-003-1` | Tiny `HQ4307-003-1` id `1068219977` | saldo LK CONTROLE: 0.0
+- `HQ4307-100-34` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-100-34` | Tiny `HQ4307-100-34` id `1070658161` | saldo LK CONTROLE: 0.0
+- `HQ4307-101-34` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-101-34` | Tiny `` id ``
+- `HQ4307-600-1` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-600-1` | Tiny `` id ``
+- `HQ4307-001-2` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-001-2` | Tiny `` id ``
+- `HQ4307-002-2` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-002-2` | Tiny `` id ``
+- `HQ4307-003-2` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-003-2` | Tiny `` id ``
+- `HQ4307-100-35` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-100-35` | Tiny `` id ``
+- `HQ4307-101-35` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-101-35` | Tiny `HQ4307-101-35` id `1070658329` | saldo LK CONTROLE: 0.0
+- `HQ4307-600-2` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-600-2` | Tiny `HQ4307-600-2` id `1068220873` | saldo LK CONTROLE: 0.0
+- `HQ4307-001-3` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-001-3` | Tiny `HQ4307-001-3` id `1068220048` | saldo LK CONTROLE: 0.0
+- `HQ4307-002-3` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-002-3` | Tiny `HQ4307-002-3` id `1068220116` | saldo LK CONTROLE: 0.0
+- `HQ4307-003-3` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-003-3` | Tiny `HQ4307-003-3` id `1068219983` | saldo LK CONTROLE: 3.0
+- `HQ4307-100-36` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-100-36` | Tiny `HQ4307-100-36` id `1070658171` | saldo LK CONTROLE: 0.0
+- `HQ4307-101-36` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-101-36` | Tiny `` id ``
+- `HQ4307-600-3` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-600-3` | Tiny `` id ``
+- `HQ4307-001-4` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-001-4` | Tiny `` id ``
+- `HQ4307-002-4` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-002-4` | Tiny `` id ``
+- `HQ4307-003-4` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-003-4` | Tiny `` id ``
+- `HQ4307-100-37` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-100-37` | Tiny `` id ``
+- `HQ4307-101-37` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-101-37` | Tiny `HQ4307-101-37` id `1070658339` | saldo LK CONTROLE: 0.0
+- `HQ4307-301-37` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-301-37` | Tiny `HQ4307-301-37` id `1070119167` | saldo LK CONTROLE: 0.0
+- `HQ4307-600-4` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-600-4` | Tiny `HQ4307-600-4` id `1068220879` | saldo LK CONTROLE: 0.0
+- `HQ4307-003-15` | tiny_duplicate_exact_code_blocked | Shopify SKU `HQ4307-003-15` | Tiny `HQ4307-003-15` id `1068973405`
+- `HQ4307-001-5` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-001-5` | Tiny `HQ4307-001-5` id `1068220054` | saldo LK CONTROLE: 0.0
+- `HQ4307-002-5` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-002-5` | Tiny `` id ``
+- `HQ4307-003-5` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-003-5` | Tiny `` id ``
+- `HQ4307-100-38` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-100-38` | Tiny `` id ``
+- `HQ4307-101-38` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-101-38` | Tiny `` id ``
+- `HQ4307-300-38` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-300-38` | Tiny `` id ``
+- `HQ4307-301-38` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-301-38` | Tiny `` id ``
+- `HQ4307-600-5` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-600-5` | Tiny `HQ4307-600-5` id `1068220882` | saldo LK CONTROLE: 0.0
+- `HQ4307-601` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-601` | Tiny `HQ4307-601` id `1070658631` | saldo LK CONTROLE: 0.0
+- `HQ4307-001-6` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-001-6` | Tiny `HQ4307-001-6` id `1068220057` | saldo LK CONTROLE: 0.0
+- `HQ4307-002-6` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-002-6` | Tiny `HQ4307-002-6` id `1068220125` | saldo LK CONTROLE: 0.0
+- `HQ4307-003-6` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-003-6` | Tiny `HQ4307-003-6` id `1068219992` | saldo LK CONTROLE: 0.0
+- `HQ4307-100-39` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-100-39` | Tiny `HQ4307-100-39` id `1070658186` | saldo LK CONTROLE: 0.0
+- `HQ4307-101-39` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-101-39` | Tiny `` id ``
+- `HQ4307-300-39` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-300-39` | Tiny `` id ``
+- `HQ4307-301-39` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-301-39` | Tiny `` id ``
+- `HQ4307-600-6` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-600-6` | Tiny `` id ``
+- `HQ4307-602` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-602` | Tiny `` id ``
+- `HQ4307-001-7` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-001-7` | Tiny `` id ``
+- `HQ4307-002-7` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-002-7` | Tiny `HQ4307-002-7` id `1068220128` | saldo LK CONTROLE: 0.0
+- `HQ4307-003-7` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-003-7` | Tiny `HQ4307-003-7` id `1068219995` | saldo LK CONTROLE: 0.0
+- `HQ4307-100-40` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-100-40` | Tiny `HQ4307-100-40` id `1070658191` | saldo LK CONTROLE: 0.0
+- `HQ4307-101-40` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-101-40` | Tiny `HQ4307-101-40` id `1070658354` | saldo LK CONTROLE: 0.0
+- `HQ4307-300-40` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-300-40` | Tiny `HQ4307-300-40` id `1070659187` | saldo LK CONTROLE: 0.0
+- `HQ4307-301-40` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-301-40` | Tiny `HQ4307-301-40` id `1070119182` | saldo LK CONTROLE: 0.0
+- `HQ4307-600-7` | matched_exact_sku_stock_missing_deposit | Shopify SKU `HQ4307-600-7` | Tiny `HQ4307-600-7` id `1068220888`
+- `HQ4307-603` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-603` | Tiny `` id ``
+- `HQ4307-001-8` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-001-8` | Tiny `` id ``
+- `HQ4307-002-8` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-002-8` | Tiny `` id ``
+- `HQ4307-003-8` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-003-8` | Tiny `` id ``
+- `HQ4307-100-41` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-100-41` | Tiny `` id ``
+- `HQ4307-101-41` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-101-41` | Tiny `HQ4307-101-41` id `1070658359` | saldo LK CONTROLE: 0.0
+- `HQ4307-300-41` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-300-41` | Tiny `HQ4307-300-41` id `1070659192` | saldo LK CONTROLE: 0.0
+- `HQ4307-301-41` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-301-41` | Tiny `HQ4307-301-41` id `1070119187` | saldo LK CONTROLE: 0.0
+- `HQ4307-600-8` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-600-8` | Tiny `HQ4307-600-8` id `1068220891` | saldo LK CONTROLE: 0.0
+- `HQ4307-604` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-604` | Tiny `HQ4307-604` id `1070658646` | saldo LK CONTROLE: 0.0
+- `HQ4307-001-9` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-001-9` | Tiny `HQ4307-001-9` id `1068220066` | saldo LK CONTROLE: 1.0
+- `HQ4307-002-9` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-002-9` | Tiny `` id ``
+- `HQ4307-003-9` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-003-9` | Tiny `` id ``
+- `HQ4307-100-42` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-100-42` | Tiny `` id ``
+- `HQ4307-101-42` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-101-42` | Tiny `` id ``
+- `HQ4307-300-42` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-300-42` | Tiny `` id ``
+- `HQ4307-301-42` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-301-42` | Tiny `` id ``
+- `HQ4307-600-9` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-600-9` | Tiny `HQ4307-600-9` id `1068220894` | saldo LK CONTROLE: 1.0
+- `HQ4307-605` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-605` | Tiny `HQ4307-605` id `1070658651` | saldo LK CONTROLE: 0.0
+- `HQ4307-001-10` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-001-10` | Tiny `HQ4307-001-10` id `1068220069` | saldo LK CONTROLE: 3.0
+- `HQ4307-002-10` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-002-10` | Tiny `HQ4307-002-10` id `1068220137` | saldo LK CONTROLE: 0.0
+- `HQ4307-003-10` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-003-10` | Tiny `HQ4307-003-10` id `1068220004` | saldo LK CONTROLE: 0.0
+- `HQ4307-100-43` | matched_exact_sku_stock_resolved | Shopify SKU `HQ4307-100-43` | Tiny `HQ4307-100-43` id `1070658206` | saldo LK CONTROLE: 0.0
+- `HQ4307-101-43` | matched_exact_sku_stock_missing_deposit | Shopify SKU `HQ4307-101-43` | Tiny `HQ4307-101-43` id `1070658369`
+- `HQ4307-300-43` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-300-43` | Tiny `` id ``
+- `HQ4307-301-43` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-301-43` | Tiny `` id ``
+- `HQ4307-600-10` | shopify_variant_tiny_missing | Shopify SKU `HQ4307-600-10` | Tiny `` id ``
+- ... +21 linhas no JSON/CSV agregado
+
+## Guardrails
+- Tiny write: `0`
+- Shopify write: `0`
+- Writes externos: `0`
+- Cron/webhook/runtime novo: `0`
+- Promessa de disponibilidade pública: `0`
+- Rollback: descartar artefatos locais; nada externo alterado.

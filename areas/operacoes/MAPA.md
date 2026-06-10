@@ -33,7 +33,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/retomada-planos-prds.md` — retomada de planos, PRDs, branches e análises pausadas.
 - `rotinas/revisao-operacional-multiempresa.md` — leitura executiva sob demanda de LK, Zipper, SPITI e Operações usando Brain versionado.
 - `rotinas/memory-hygiene-pendencias.md` — higiene de memória, pendências, decisões e lições.
-- `rotinas/hermes-memory-os-v1.md` — rotina v1 para memória viva/contínua durante o dia: router, compactação preventiva, daily/hot current, coverage por profile e Telegram silent-OK.
+- `rotinas/hermes-memory-os-v1.md` — rotina v1/v2.3 para memória viva/contínua durante o dia: router, compactação preventiva, daily/hot/current, context router, evidence ladder, sufficiency score, TTL enforcement, contradiction detector, decision continuity ledger, subagent context contract v2, silent-OK self-test, operational regression registry, local QA gate, coverage/drift matrix, receipt adoption gate, replay simulator, context packs, recall tests, coverage por profile e Telegram silent-OK.
 - `rotinas/security-checkup.md` — revisão de segurança para Brain, integrações, canais, secrets e execução.
 - `rotinas/area-skill-subagent-agent-decision.md` — matriz para decidir área, rotina, skill, subagent, cron ou agente/canal permanente.
 - `rotinas/hermes-release-watch.md` — monitoramento de releases Hermes Agent e avaliação de melhorias.
@@ -53,6 +53,8 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/orquestracao-scorecard-semanal.md` — scorecard semanal da orquestração Hermes COO: roteamento, handoff/receipt, approval gates, UX Telegram e aprendizado/skills.
 - `rotinas/handoff-completeness-audit-local.md` — auditoria local para detectar outputs materiais sem handoff/receipt central e corrigir apenas gaps documentais verificáveis.
 - `rotinas/skills-effectiveness-review.md` — revisão de efetividade de skills para detectar erro repetido, skill inchada/desatualizada e aprendizado no lugar errado.
+- `rotinas/agent-operating-modes-fast-deep.md` — contrato de modos operacionais dos agentes: fast lane, deep work, no_agent watchdog, approval packet e handoff/delegation.
+- `rotinas/configured-vs-active-scorecard.md` — scorecard read-only para separar documented/configured/active/verified por profile, gateway, plataforma, modelo, toolset, cron e watchdog.
 
 - `rotinas/brain-operating-layer.md` — camada Hermes-native que transforma o padrão Bruno/OpenClaw em operação viva com receipts, approvals, runtime truth e watchdogs.
 - `rotinas/brain-steward-daily.md` — steward diário silent-OK para daily/hot/receipts/decisões/handoffs/skills.

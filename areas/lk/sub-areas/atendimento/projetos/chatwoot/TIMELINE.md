@@ -33,3 +33,13 @@
 - 10 pedidos POS elegíveis registrados como conversas/notas internas.
 - State local de idempotência salvo.
 - Pasta canônica do projeto Chatwoot criada no Brain.
+
+## 2026-06-10 — Motor de recuperação: audit + corrigir tudo (Claude/Cowork + Lucas)
+
+- Audit 3 frentes (código/dados/integrações) do fork lk-chatwoot → 6 críticos, 6 altos.
+- TODOS críticos corrigidos e deployados (`v2-recovery17` + migração recovery_event_logs): webhook Evolution da inbox 3 (resposta de agente estava 100% quebrada), broadcast simulado que enviava real, dedup do ciclo de pedido, claims atômicos, guard de template, Redis cache, Klaviyo header-only, segredos mascarados, UI honesta.
+- Incidente "(vazio)" (6 clientes) estancado e causas raiz corrigidas.
+- Templates das journeys redigidos (tom LK), gravados e testados no número do Lucas; interpolação {{nome}}/{{produto}}/{{valor}}/{{link}}/{{pedido}}/{{rastreio}} implementada.
+- Klaviyo: token rotacionado; flows Checkout Started + Added to Cart apontados pro Chatwoot.
+- Decisão Lucas: fluxos permanecem DESLIGADOS até ordem explícita.
+- Docs: `projetos/chatwoot/recovery-engine/`.
