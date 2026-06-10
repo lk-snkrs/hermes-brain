@@ -112,3 +112,10 @@ Fonte canônica: `sub-areas/growth/rules/REGRA-LK-GROWTH-OPTIMIZED-COLLECTION-OB
 Skill operacional: `sub-areas/growth/skills/lk-superpowers-collection-optimizer/SKILL.md`.
 Tag Shopify: `LK Growth Optimized Collection`.
 - `sub-areas/stock/references/lk-stock-routing-canon-pronta-entrega-estoque-20260608.md` — regra canônica: todo estoque/pronta entrega da LK deve ser resolvido pelo `lk-stock`; LK Ops/Atendimento não corrige/mapeia disponibilidade por conta própria.
+
+## Projetos Brain OS
+
+- `projetos/lk-operating-system/` — hub canônico Brain OS Onda 5 para PRD/arquitetura global do LK OS e programa de implementação.
+- `projetos/data-quality-layer/` — hub canônico Brain OS Onda 5 para qualidade de dados, auditorias e reconciliação entre fontes vivas.
+- `projetos/reporting-briefings/` — hub canônico Brain OS Onda 5 para briefings, relatórios comerciais, dailies/weeklies e superfícies executivas LK.
+- `projetos/approval-learning-ledger/` — hub canônico Brain OS Onda 5 para decisões, aprovações, outcomes, lessons e consequência operacional LK.

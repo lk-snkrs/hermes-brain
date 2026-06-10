@@ -183,6 +183,43 @@ PROJECT_DEFS = [
         'wave': 4,
     },
 
+    {
+        'id': 'lk-operating-system',
+        'title': 'LK Operating System',
+        'owner_area': 'areas/lk',
+        'suggested_hubs': ['areas/lk/projetos/lk-operating-system'],
+        'terms': ['lk operating system', 'lk-os', 'lk os', 'program to finish', 'implementation control', 'future configuration', 'gap audit'],
+        'risk': 'cross_specialist_runtime_confusion_risk',
+        'wave': 5,
+    },
+    {
+        'id': 'lk-data-quality-layer',
+        'title': 'LK Data Quality Layer',
+        'owner_area': 'areas/lk',
+        'suggested_hubs': ['areas/lk/projetos/data-quality-layer'],
+        'terms': ['data quality', 'qualidade de dados', 'materialization', 'materialização', 'status audit', 'reconciliation', 'reconciliação'],
+        'risk': 'stale_or_conflicting_source_of_truth_risk',
+        'wave': 5,
+    },
+    {
+        'id': 'lk-reporting-briefings',
+        'title': 'LK Reporting / Briefings',
+        'owner_area': 'areas/lk',
+        'suggested_hubs': ['areas/lk/projetos/reporting-briefings'],
+        'terms': ['daily sales', 'weekly', 'briefing', 'report', 'relatório', 'morning briefing', 'status surface'],
+        'risk': 'telegram_noise_or_stale_report_risk',
+        'wave': 5,
+    },
+    {
+        'id': 'lk-approval-learning-ledger',
+        'title': 'LK Approval / Learning Ledger',
+        'owner_area': 'areas/lk',
+        'suggested_hubs': ['areas/lk/projetos/approval-learning-ledger'],
+        'terms': ['approval', 'aprovação', 'decision log', 'ledger', 'outcome', 'lesson', 'consequence tracker'],
+        'risk': 'approval_history_misuse_or_ledger_manipulation_risk',
+        'wave': 5,
+    },
+
 ]
 
 

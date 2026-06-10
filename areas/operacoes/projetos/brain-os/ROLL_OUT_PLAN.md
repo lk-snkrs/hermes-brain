@@ -78,3 +78,11 @@ Somente se Lucas aprovar:
 - Criar hub LK E-commerce Orders / Checkout: concluído localmente.
 - Normalizar hub LK Atendimento / Chatwoot / Elle: concluído localmente.
 - Próximo gate: scanner, secret scan, Brain health e docs guard.
+
+## Status Onda 5 — 2026-06-10
+
+- Criar hub LK Operating System: concluído localmente.
+- Criar hub LK Data Quality Layer: concluído localmente.
+- Criar hub LK Reporting / Briefings: concluído localmente.
+- Criar hub LK Approval / Learning Ledger: concluído localmente.
+- Próximo gate: scanner, secret scan, Brain health e docs guard.

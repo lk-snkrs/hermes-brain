@@ -61,3 +61,10 @@ Observação: o candidato do scanner `mission-control-mesa-coo` foi separado em 
 - `areas/lk/sub-areas/trends/projetos/sourcing-intelligence/` — LK Trends / Sourcing Intelligence.
 - `areas/lk/sub-areas/ecommerce/projetos/orders-checkout/` — LK E-commerce Orders / Checkout.
 - `areas/lk/sub-areas/atendimento/projetos/chatwoot/` — LK Atendimento / Chatwoot / Elle; hub existente normalizado no scanner/rollout.
+
+## Onda 5 — executada localmente em 2026-06-10
+
+- `areas/lk/projetos/lk-operating-system/` — LK Operating System.
+- `areas/lk/projetos/data-quality-layer/` — LK Data Quality Layer.
+- `areas/lk/projetos/reporting-briefings/` — LK Reporting / Briefings.
+- `areas/lk/projetos/approval-learning-ledger/` — LK Approval / Learning Ledger.
