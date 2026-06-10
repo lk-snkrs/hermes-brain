@@ -163,3 +163,4 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `projetos/mordomo-os/` — hub canônico do Mordomo OS / Lucas pessoal.
 - `projetos/mission-control/` — hub canônico do Mission Control / COO Cockpit.
 - `projetos/mesa-coo/` — hub canônico da Mesa COO / ritual executivo Telegram.
+- `projetos/executive-dashboards/` — hub canônico Brain OS Onda 3 para dashboards executivos, snapshots e governança de fonte viva vs estado documental.

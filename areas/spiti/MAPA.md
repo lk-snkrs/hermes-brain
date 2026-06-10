@@ -44,3 +44,7 @@ Silêncio é melhor que dado errado.
 - Não dizer “sem lance” sem fonte correta.
 - Não usar dado não confirmado.
 - Não enviar mensagem para grupo/cliente sem aprovação Lucas.
+
+## Projetos Brain OS
+
+- `projetos/bridge-governance/` — hub canônico Brain OS Onda 3 para governança/ponte SPITI, fonte de verdade de lances, handoff e guardrails.

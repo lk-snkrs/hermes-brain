@@ -61,3 +61,12 @@ Somente se Lucas aprovar:
 
 - Criar hub LK Content / Klaviyo Agent: concluído localmente como fechamento de gap da Onda 2.
 - Scanner Brain OS atualizado para rastrear o domínio Content/Klaviyo em ondas futuras.
+
+## Status Onda 3 — 2026-06-10
+
+- Criar hub SPITI Bridge / Governance: concluído localmente.
+- Criar hub Shopify Product Upload / Bot: concluído localmente.
+- Criar hub Meta Ads Performance: concluído localmente.
+- Criar hub Theme / CRO Performance: concluído localmente.
+- Criar hub Executive Dashboards: concluído localmente.
+- Próximo gate: scanner, secret scan, Brain health e docs guard.

@@ -100,6 +100,52 @@ PROJECT_DEFS = [
         'risk': 'commercial_reply_and_human_approval_risk',
         'wave': 2,
     },
+    {
+        'id': 'spiti-bridge-governance',
+        'title': 'SPITI Bridge / Governance',
+        'owner_area': 'areas/spiti',
+        'suggested_hubs': ['areas/spiti/projetos/bridge-governance'],
+        'terms': ['spiti', 'lance', 'leilao', 'leilão', 'pregao', 'pregão', 'spiti-hub'],
+        'risk': 'auction_bid_source_of_truth_risk',
+        'wave': 3,
+    },
+    {
+        'id': 'lk-shopify-product-upload-bot',
+        'title': 'LK Shopify Product Upload / Bot',
+        'owner_area': 'areas/lk/sub-areas/shopify',
+        'suggested_hubs': ['areas/lk/sub-areas/shopify/projetos/product-upload-bot'],
+        'terms': ['product upload', 'cadastro produto', 'shopify product', 'variant', 'metafield', 'product-upload'],
+        'risk': 'shopify_product_write_risk',
+        'wave': 3,
+    },
+    {
+        'id': 'meta-ads-performance',
+        'title': 'Meta Ads Performance',
+        'owner_area': 'areas/lk/sub-areas/trafego-pago',
+        'suggested_hubs': ['areas/lk/sub-areas/trafego-pago/projetos/meta-ads-performance'],
+        'terms': ['meta ads', 'facebook ads', 'instagram ads', 'paid attribution', 'trafego pago', 'tráfego pago', 'roas'],
+        'risk': 'ads_campaign_write_risk',
+        'wave': 3,
+    },
+    {
+        'id': 'theme-cro-performance',
+        'title': 'Theme / CRO Performance',
+        'owner_area': 'areas/lk/sub-areas/growth',
+        'suggested_hubs': ['areas/lk/sub-areas/growth/projetos/theme-cro-performance'],
+        'terms': ['theme', 'cro', 'conversion', 'pagespeed', 'core web vitals', 'pdp', 'dev theme'],
+        'risk': 'theme_production_write_risk',
+        'wave': 3,
+    },
+    {
+        'id': 'executive-dashboards',
+        'title': 'Executive Dashboards',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/executive-dashboards'],
+        'terms': ['dashboard', 'mission control', 'snapshot', 'cockpit', 'executive', 'painel'],
+        'risk': 'snapshot_vs_live_state_risk',
+        'wave': 3,
+    },
+
 ]
 
 

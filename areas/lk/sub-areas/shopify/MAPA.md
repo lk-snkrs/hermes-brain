@@ -94,3 +94,6 @@ Quando Lucas aprovar um write:
 - LK Shopify só participa quando o packet do Collection Optimizer exigir superfície Shopify: dev theme, collection/page/metafield/SEO field, preview, readback, receipt ou rollback.
 - Não duplicar templates/scorecards LKGOC dentro do Shopify OS.
 
+## Projetos Brain OS
+
+- `projetos/product-upload-bot/` — hub canônico Brain OS Onda 3 para upload/cadastro Shopify, approval packets, bot/especialista e guardrails de write/readback.
