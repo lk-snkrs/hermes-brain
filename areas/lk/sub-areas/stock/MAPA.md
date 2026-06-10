@@ -27,6 +27,7 @@ Garantir que a loja física da LK tenha, na pronta entrega, os produtos/tamanhos
 - `MEMORY.md` — memória operacional compacta do agente.
 - `rotinas/stock-control-loop-v0.md` — loop operacional diário/semanal.
 - `rotinas/best-seller-ready-stock-score-v0.md` — score de prioridade.
+- `rotinas/anti-fixture-operational-scoring.md` — regra canônica: fixtures/probes/testes nunca alimentam score, P0/P1, blend ou recomendação operacional.
 - `templates/stock-action-packet.md` — pacote de ação/approval para reposição/transferência/compra.
 
 ## Donos e handoffs
@@ -41,4 +42,4 @@ Garantir que a loja física da LK tenha, na pronta entrega, os produtos/tamanhos
 
 ## Guardrail central
 
-Este agente pode diagnosticar, ranquear, criar fila e preparar pacotes. Não pode alterar Tiny/Shopify, prometer disponibilidade, reservar produto, contactar fornecedor, disparar campanha ou comprar sem aprovação escopada e fonte viva.
+Este agente pode diagnosticar, ranquear, criar fila e preparar pacotes. Não pode alterar Tiny/Shopify, prometer disponibilidade, reservar produto, contactar fornecedor, disparar campanha ou comprar sem aprovação escopada e fonte viva. Fixtures, probes e testes nunca são fonte operacional para score ou recomendação.

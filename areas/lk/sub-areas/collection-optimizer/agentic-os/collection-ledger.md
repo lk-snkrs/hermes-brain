@@ -26,3 +26,10 @@
 - Production receipt: n/a
 - Rollback: n/a até existir write
 - Impact review D+7/D+14/D+30: Growth mede após implementação
+
+
+## 2026-06-09 — Sent from Growth
+
+- Onitsuka Tiger broad — sent/queued for LKGOC dev-first preview. Workdir: `work/onitsuka-tiger-broad-from-growth-20260609/`.
+- New Balance 204L refresh — sent/queued for LKGOC dev-first preview. Workdir: `work/new-balance-204l-refresh-from-growth-20260609/`.
+- Guardrail: no production; DEV preview + scorecard + approval required.

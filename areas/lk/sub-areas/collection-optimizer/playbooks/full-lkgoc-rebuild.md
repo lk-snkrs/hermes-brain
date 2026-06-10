@@ -26,6 +26,7 @@ Antes do passo 1 e antes de qualquer write Shopify:
 2. Classificar input contract e lacunas.
 3. Tratar o existente como inventário/evidência; não remendar.
 4. Fazer evidence packet: fonte oficial, SERP, concorrentes, intenção, PAA, tendências e dúvidas reais.
+4.1. Criar text packet e media manifest conforme `rules/REGRA-LKGOC-TEXTOS-E-SELECAO-DE-IMAGENS.md`; sem isso, Production fica bloqueada.
 5. Projetar experiência: hero, produto-first, grid antes do guia, guia pós-grid, FAQ único.
 6. Escrever Guia LK e metadados.
 7. Materializar em DEV/unpublished ou preparar handoff para LK Shopify.
@@ -109,3 +110,10 @@ Regra fonte: `rules/REGRA-LKGOC-SHARED-SHELL-SO-TEXTO-E-IMAGEM-MUDAM.md`.
 - Regra Lucas: pós-grid significa depois de todos os produtos renderizados da coleção.
 - Guia/FAQ/bloco editorial antes do último produto = `FAIL_POS_GRID_NOT_AFTER_ALL_PRODUCTS`.
 - QA deve provar DOM + screenshot da sequência último produto → guia.
+
+
+## Camada Claude SEO
+
+Depois do evidence packet e antes do text packet final, aplicar Claude SEO como camada de apoio para intenção, SERP, FAQ, title/meta, GEO/AI Search e validação de genericidade. Não permitir que Claude SEO altere shell visual, padrão 204L ou escolha de mídia sem media manifest.
+
+Regra fonte: `rules/REGRA-LKGOC-CLAUDE-SEO-COMO-CAMADA-DE-APOIO.md`.

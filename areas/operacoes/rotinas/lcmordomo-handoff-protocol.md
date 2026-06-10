@@ -86,6 +86,8 @@ Não usar:
 
 - Handoffs materiais diários: `areas/operacoes/reports/handoffs/YYYY-MM-DD.md`
 - Handoffs de empresa: área da empresa correspondente.
+- Receipts operacionais novos: preferir `/opt/data/scripts/hermes_memory_os_receipt_writer.py` para salvar o receipt e chamar hook em uma única operação local.
+- Handoff/approval packet criado manualmente: executar `/opt/data/scripts/hermes_memory_os_event_hook.py <caminho-do-artefato>` após salvar.
 - Correções de procedimento: skill/reference.
 - Decisões aprovadas: decision ledger/Brain da empresa.
 - Follow-ups: CRM/follow-up queue.
@@ -108,3 +110,4 @@ Antes de fechar uma tarefa com subagente:
 - o risco A0-A4 foi marcado?
 - o registro durável existe?
 - Lucas só será interrompido se necessário?
+- receipt/handoff material acionou wrapper/hook Memory OS e ficou silencioso quando verde?

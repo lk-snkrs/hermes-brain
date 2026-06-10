@@ -38,6 +38,8 @@ Toda decisão material precisa deixar receipt/handoff no Brain com:
 
 ## Bloqueios
 
+- Fixtures, probes, fontes `shopify_fixture`, `tiny_fixture`, `manual_fixture`, `GATEB-PROBE-*` ou dados de teste não podem alimentar score, blend, P0/P1, quantidade de compra/reposição ou recomendação operacional. Aplicar `rotinas/anti-fixture-operational-scoring.md` antes de qualquer fila acionável.
+
 Sem aprovação escopada:
 
 - Tiny write;
@@ -46,3 +48,12 @@ Sem aprovação escopada:
 - promessa a cliente;
 - campanha/CRM;
 - cron/gateway/bot.
+
+## Memory OS v1.13 — todos agentes e workers
+
+- Todo agente/worker que criar receipt operacional novo sob qualquer segmento `receipts/` deve usar `/opt/data/scripts/hermes_memory_os_receipt_writer.py`; escrita manual + hook-only é drift e deve ser corrigida antes de silent-OK.
+- Se um worker legado já escreveu um receipt local e o conteúdo não deve ser sobrescrito, registrar com `hermes_memory_os_receipt_writer.py --register-existing --path <path> ... --registration-reason <motivo>`; não usar `--allow-overwrite` para registro normal.
+- Handoffs e approval packets continuam usando `/opt/data/scripts/hermes_memory_os_event_hook.py`.
+- O checker do Memory OS roda em cron a cada 30min, tenta auto-heal local primeiro e só alerta Lucas no Telegram quando corrigiu problema ou quando precisa de decisão humana.
+- Mission Control não é superfície operacional do Memory OS; não propor/ativar deploy/card/runtime Mission Control para este fluxo.
+

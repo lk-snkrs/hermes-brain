@@ -1,6 +1,6 @@
 # Hermes profile memory coverage
 
-Atualizado: 2026-06-06T11:39Z UTC
+Atualizado: 2026-06-09T00:00Z UTC
 
 ## Regra canônica
 
@@ -21,10 +21,12 @@ Profiles com arquivos de memória e cobertura de template:
 - `hermes-ops-readonly` — coberto.
 - `lk-analyst-readonly` — coberto.
 - `lk-collection-optimizer` — coberto; agente permanente independente `[LK] Otimização de Coleções`, não subagente de Growth/Shopify.
+- `lk-content` — coberto; conteúdo/CRM/Klaviyo/editorial LK, sem envio/publicação externa sem aprovação escopada.
 - `lk-content-reviewer` — coberto.
 - `lk-growth` — coberto.
 - `lk-ops` — coberto.
 - `lk-shopify` — coberto.
+- `lk-stock` — coberto; fonte viva Tiny para estoque/pronta entrega/availability, sem dado inventado.
 - `lk-trends` — coberto.
 - `mordomo` — coberto.
 - `spiti` — coberto.
@@ -32,6 +34,13 @@ Profiles com arquivos de memória e cobertura de template:
 Profile existente sem arquivos de boot memory no momento:
 
 - `lc-claude-cli` — profile existe, mas `memories/MEMORY.md` e `memories/USER.md` não existem; não entra no compactor até existir boot memory.
+
+## Estado após Fase 1 Memory OS v1 — 2026-06-09
+
+- `lk-content` e `lk-stock` adicionados à cobertura por template.
+- Próxima verificação esperada: `coverage_missing_for_existing_memory=[]` em `reports/memory-hygiene/latest.json` após execução manual do watchdog.
+- Verificação 2026-06-09: `latest.json.status=ok`, `template_coverage_missing_count=0`, `over_limit_count=0`, `near_saturation_count=0`.
+- Qualquer compactação deve manter backup local e não tocar runtime, provider, cron, Docker/VPS ou sistemas externos.
 
 ## Estado após compactação geral 2026-06-06
 

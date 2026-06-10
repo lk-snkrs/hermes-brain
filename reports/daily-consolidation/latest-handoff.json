@@ -1,183 +1,40 @@
 {
-  "operational_date": "2026-06-09",
-  "generated_at_utc": "2026-06-09T04:00:00Z",
-  "status": "ok_with_attention",
-  "executive_summary": "Fechamento 01h BRT consolidou Hermes Geral/Grande Mente, Mordomo, LK Stock, LK Shopify, LK Growth/GMC, Zipper e governança de crons/watchdogs. SPITI, ZIZ OS e Mission Control sem evidência operacional material nova nas fontes consultadas. Health FAIL=0/WARN=0 e Brain Improvement Score 94/100.",
+  "operational_date": "2026-06-10",
+  "generated_at_utc": "2026-06-10T04:00:32Z",
+  "status": "ok",
+  "executive_summary": "Fechamento 01h Brain-first/local concluído. Health check FAIL=0/WARN=0, Brain Improvement Score 94/100. Sinais materiais: Memory OS v1.18/readiness, LK Growth/GMC stale cron metadata remediado localmente, LK Content Dashboard publicado/corrigido, LK Stock Gate B.2 avançou em dry-run, Zipper registrou duas pendências. Sem sends externos ou writes em produção pelo job.",
   "material_changes": [
-    {
-      "domain": "Hermes Geral",
-      "change": "Daily Intelligence 02h e preflight/watchdogs receberam hardening local P1/P2, dedupe, validador pós-run, expected-map Doppler e allowlist segura para JSONs canônicos.",
-      "risk": "A1/A2 local/documental; sem produção externa por este fechamento"
-    },
-    {
-      "domain": "Mordomo",
-      "change": "Correção de allowlist Telegram para Helô no profile Mordomo; profile reiniciado fora deste job e verificado vivo em sessão anterior.",
-      "risk": "runtime/profile scoped; registrar como fato operacional, não repetir ação"
-    },
-    {
-      "domain": "LK Stock",
-      "change": "P0/preview indevido por fixture foi marcado superseded; base local saneada; regra adicionada contra fixtures/probes em recomendações operacionais.",
-      "risk": "A1 local/read-only; sem compra/envio/write externo"
-    },
-    {
-      "domain": "LK Shopify",
-      "change": "Judge.me PDP premium modal promovido para Production via GitHub PR e Shopify readback após aprovação de Lucas.",
-      "risk": "write aprovado e escopado; rollback via PR documentado"
-    },
-    {
-      "domain": "LK Growth/GMC",
-      "change": "GMC Batch 8 residual manual enrichment executado com aprovação; Batch 9 gerado como approval packet/template sem write.",
-      "risk": "Batch 8 aprovado; Batch 9 bloqueado até aprovação"
-    },
-    {
-      "domain": "Zipper",
-      "change": "Entrada Clau Gimmenez/HubSpot marcada needs_attention; nenhum e-mail/draft externo criado.",
-      "risk": "external contact bloqueado até decisão Zipper/Lucas"
-    }
+    {"domain":"Hermes Geral / Memory OS","summary":"Readiness pós-rollout v1.18 verde, hot/daily curados, alert wrapper ajustado contra ruído de warmup benigno, hygiene 2026-06-10 status ok.","artifact_paths":["reports/governance/receipts/memory-os-v118-post-rollout-readiness-20260610.md","reports/memory-hygiene/2026-06-10.json","memories/daily/2026-06-10.md"]},
+    {"domain":"LK Growth OS / GMC","summary":"Status stale de job GMC pausado/substituído foi normalizado localmente; job ativo substituto continua sendo a cadência atual. Nenhuma reativação de cron.","artifact_paths":["reports/governance/receipts/lk-growth-gmc-paused-cron-status-remediation-20260610.md"]},
+    {"domain":"LK Content OS","summary":"LK Content Dashboard publicado em repo privado e corrigido para Vercel Production após advisory Next.js; build e deploy finais ok.","artifact_paths":["areas/lk/sub-areas/content/receipts/2026-06-10-lk-content-dashboard-publish-github-vercel.json","areas/lk/sub-areas/content/receipts/2026-06-10-lk-content-dashboard-vercel-prod-fix.json"]},
+    {"domain":"LK Stock OS","summary":"Gate B.2 avançou com shards locais/read-only/dry-run; shard 85 processou 20 SKUs/prefixos, 208 linhas, 186 internos liberados e 22 bloqueios/issues. Não é claim público de disponibilidade.","artifact_paths":["areas/lk/sub-areas/stock/receipts/lk-stock-gate-b2-shard85-20260610T035746Z.md"]},
+    {"domain":"Zipper OS","summary":"Intakes registrados para Diego Moura/PDF Marcelo Tinoco e Fujocka/Flávia Junqueira. Diego depende de anexo/link; Fujocka depende de decisão comercial de Lucas.","artifact_paths":["areas/zipper/inbox/email-intake/2026-06-10-diego-moura-marcelo-tinoco-pdf-nao-baixa.md","areas/zipper/inbox/email-intake/2026-06-10-fujocka-flavia-junqueira-orcamento-imagens-needs-attention.md"]}
   ],
   "incidents": [
-    {
-      "domain": "LK Stock",
-      "incident": "Fixture/teste foi usado indevidamente como demanda real em recomendação P0 antes de ser revertido.",
-      "impact": "Recomendação/preview superseded; sem envio/write externo; regra corretiva registrada."
-    },
-    {
-      "domain": "Mordomo",
-      "incident": "Mordomo não respondia para Helô por allowlist insuficiente.",
-      "impact": "Allowlist corrigida na sessão operacional; monitorar teste humano."
-    }
+    {"severity":"attention","domain":"Memory OS","summary":"Maturidade 21/21 ainda não completa por reset de ciclo não-silencioso anterior; maturidade deve acumular ciclos reais."},
+    {"severity":"blocked_by_approval","domain":"Zipper OS","summary":"Orçamento/desconto/parcelamento Fujocka/Flávia exige decisão comercial; nenhum envio externo autorizado."}
   ],
   "decisions_made_by_lucas": [
-    {
-      "decision": "Corrigir/melhorar localmente o Daily Intelligence/Hermes governance sem ações externas sensíveis.",
-      "scope": "A0/A1 local/documental/read-only; sem Docker/SSH/Hostinger/gateway/externos/secrets impressos."
-    },
-    {
-      "decision": "Fazer merge para Production do layout Judge.me PDP aprovado.",
-      "scope": "Dois assets aprovados via GitHub PR para production; sem hotfix direto Shopify Production."
-    },
-    {
-      "decision": "Seguir Batch 8 GMC residual manual enrichment.",
-      "scope": "High/medium prefill API-input; fileInput excluído."
-    },
-    {
-      "decision": "Fazer handoff para LC Hermes executar rotina Brain vs fonte viva/dados grandes.",
-      "scope": "Documentação local/read-only, rotina/MAPA/receipt."
-    }
+    {"decision":"Seguir o PRD do Memory OS em escopo seguro.","scope":"Local/read-only/documental; sem runtime/gateway/Docker/VPS/cron mutation sensível."},
+    {"decision":"Corrigir achado LK/GMC fora do PRD Memory OS.","scope":"Remediação local de status stale de job pausado/substituído, com backup e sem reativar cron."}
   ],
   "approvals_and_corrections": [
-    {
-      "type": "approval",
-      "scope": "Judge.me PDP premium modal Production merge",
-      "exclusions": ["direct Shopify Asset API hotfix", "Judge.me admin", "product/metafield/review moderation", "stock", "price", "checkout", "Klaviyo", "GMC", "ads", "Tiny", "WhatsApp", "campaign"],
-      "learn": "Para tema Production, aprovação genérica deve seguir GitHub PR/production + readback, salvo autorização explícita de hotfix direto."
-    },
-    {
-      "type": "approval",
-      "scope": "GMC Batch 8 high/medium enrichment",
-      "exclusions": ["fileInput", "Batch 9", "Shopify", "preço", "estoque", "GTIN/título/link fora do packet"],
-      "learn": "Writes GMC aprovados devem registrar escopo exato, receipt, readback e pós-scan."
-    },
-    {
-      "type": "correction",
-      "scope": "LK Stock P0 indevido",
-      "exclusions": ["qualquer fixture/probe/teste como demanda real"],
-      "learn": "Fixture/test data must never enter operational blends, replenishment quantities or purchase recommendations."
-    }
+    {"type":"correction","scope":"Memory OS / contexto dos agentes","pattern_to_learn":"Quando Lucas disser Mordomo OS querendo dizer Memory OS, interpretar como Memory OS/contexto dos agentes sem tratar como erro operacional do Mordomo.","exclusions":["Não mudar Mordomo runtime por essa correção de nomenclatura."]},
+    {"type":"approval_guardrail","scope":"Zipper external communications","pattern_to_learn":"Preço, orçamento, desconto e parcelamento exigem aprovação explícita antes de e-mail/WhatsApp externo.","exclusions":["Sem envio externo automático."]}
   ],
   "learning_ledger_candidates": [
-    {
-      "learning": "Fixture/probe/teste não é evidência operacional para estoque, compra ou reposição.",
-      "recommended_destination": "LK Stock skill/rotina/profile-local tests",
-      "action_applied": "Receipt rollback/superseded criado; base local saneada.",
-      "verification_needed": "Promover para skill/profile-local e regressão."
-    },
-    {
-      "learning": "Brain deve guardar contexto/índice/decisão/receipt e apontar para fonte viva quando o dado é grande, vivo ou sensível.",
-      "recommended_destination": "areas/operacoes/rotinas/brain-fonte-viva-e-dados-grandes.md",
-      "action_applied": "Handoff criado para LC Hermes.",
-      "verification_needed": "Criar rotina, MAPA e receipt."
-    },
-    {
-      "learning": "Cron pausado ou erro histórico não deve virar alerta ativo sem evidência viva.",
-      "recommended_destination": "Daily Intelligence preflight/watchdog docs",
-      "action_applied": "Preflight corrigido em sessão anterior; cron list atual mostra 0 não-ok.",
-      "verification_needed": "Observar saída 02h."
-    },
-    {
-      "learning": "Literal local só deve ser removido após Doppler presence e injeção runtime/child-env comprovadas.",
-      "recommended_destination": "doppler-secrets-operations/runtime docs",
-      "action_applied": "P2 removeu literal local com helper injection, sem valores impressos.",
-      "verification_needed": "Manter expected-map realista por profile."
-    }
+    {"learning":"Maturidade Memory OS 21/21 é por ciclos reais consecutivos; não sintetizar nem apagar ciclo não-silencioso.","destination_recommended":"Memory OS routine/skill + 02h supervisor handoff","action_applied":"Registrado no fechamento/handoff.","verification_needed":"Verificar ledger de ciclos nos próximos runs."},
+    {"learning":"Status stale em job pausado/substituído pode ser corrigido localmente com backup e receipt, sem reativação.","destination_recommended":"Cron/runtime governance routine","action_applied":"Receipt LK Growth/GMC criado.","verification_needed":"Confirmar job ativo substituto no próximo runtime truth."},
+    {"learning":"Gate B.2/crosswalk LK Stock é baseline técnico interno, não autorização de disponibilidade/pronta entrega.","destination_recommended":"LK Stock anti-fixture/operational scoring guardrail","action_applied":"Guardrail incluído no fechamento.","verification_needed":"LK Stock deve validar Tiny antes de claims finais."}
   ],
-  "autonomy_pattern_candidates": [
-    {
-      "candidate": "Correções A0/A1 em preflight, dedupe, índices, reports e validation artifacts podem continuar autônomas.",
-      "keep_blocked": ["Docker/VPS/gateway/restart", "external sends", "source-of-truth writes", "secret mutation/persistence", "cron schedule mutation by the 02h job"]
-    },
-    {
-      "candidate": "Reconciliar status histórico de cron após execução local read-only comprovada pode ser A1 quando não muda schedule/delivery/prompt.",
-      "keep_blocked": ["reativar job pausado", "mudar delivery para origin", "restart gateway", "despausar cron por conveniência"]
-    }
-  ],
+  "autonomy_pattern_candidates": {"safe_a0_a1_candidates":["Criar/atualizar relatórios e handoffs locais sanitizados.","Normalizar metadado stale em artefato local/documental de cron pausado, com backup e receipt, quando não muda runtime/agendamento.","Registrar intakes Zipper sem enviar mensagem externa."],"must_stay_a3_a4":["Reativar, remover, reschedule ou alterar cron vivo.","Enviar WhatsApp/e-mail para cliente/coletor/fornecedor.","Escrever em Shopify, Tiny, GMC, Klaviyo, Meta, Supabase/banco ou produção.","Alterar Docker/VPS/gateway/Traefik/volumes/networks.","Expor ou mover secrets."]},
   "pending_decisions_for_lucas": [
-    {
-      "domain": "Zipper",
-      "decision": "O que fazer com entrada Clau Gimmenez: ignorar/arquivar, responder por canal correto, ou encaminhar à curadoria/comunicação."
-    },
-    {
-      "domain": "LK Growth/GMC",
-      "decision": "Aprovar e preencher Batch 9 antes de qualquer write residual feed/source."
-    }
+    {"domain":"Zipper OS","decision":"Enviar PDF funcional/link para Diego Moura ou descartar follow-up.","urgency":"normal"},
+    {"domain":"Zipper OS","decision":"Aprovar, negociar ou recusar orçamento Fujocka/Flávia Junqueira.","urgency":"normal"}
   ],
-  "safe_next_actions": [
-    "LC Hermes criar rotina brain-fonte-viva-e-dados-grandes.md, indexar e criar receipt.",
-    "Observar próximo 02h para validator/dedupe/blocked_by_approval.",
-    "Promover regra anti-fixture para LK Stock skill/profile-local.",
-    "Monitorar Mordomo após teste humano da Helô se houver nova queixa."
-  ],
-  "blocked_actions_requiring_approval": [
-    "WhatsApp/e-mail/HubSpot/Instagram para Zipper/Clau Gimmenez.",
-    "Qualquer write GMC Batch 9 sem CSV revisado e escopo aprovado.",
-    "Compra/fornecedor/transferência/Tiny/Shopify/estoque a partir de LK Stock.",
-    "Docker/VPS/gateway/restart/deploy/Traefik/volumes/networks.",
-    "Mutação de secrets ou impressão/cópia de valores."
-  ],
-  "cron_and_delivery_truth": [
-    {
-      "observed_at_utc": "2026-06-09T04:00:46Z",
-      "source": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all fallback; cronjob not in PATH",
-      "total_jobs": 32,
-      "active_jobs": 28,
-      "paused_jobs": 4,
-      "last_status_non_ok": 0,
-      "fechamento_job": "3fc45b0830c6 active local next 2026-06-10T04:00Z",
-      "daily_report_job": "98478b820720 active origin next 2026-06-09T05:30Z",
-      "silent_ok": true
-    }
-  ],
-  "sources": [
-    "reports/daily-consolidation/2026-06-09.md",
-    "reports/brain-health-check-2026-06-09-02h.json",
-    "reports/brain-improvement-score-2026-06-09-02h.md",
-    "reports/hermes-daily-digest/2026-06-08.md",
-    "reports/hermes-learning-ledger/2026-06-08.md",
-    "reports/governance/daily-intelligence-p1-hardening-2026-06-08.md",
-    "reports/governance/daily-intelligence-p2-fixes-2026-06-08.md",
-    "areas/operacoes/handoffs/handoff-to-agent-lc-hermes-execute-brain-fonte-viva-20260609T011130Z.md",
-    "areas/lk/sub-areas/growth/handoffs/gmc-residual-manual-enrichment-batch8-high-medium-executed-20260609.md",
-    "areas/lk/sub-areas/shopify/receipts/judgeme-premium-modal-production-20260609/receipt.md",
-    "areas/lk/sub-areas/stock/receipts/lk-stock-rollback-wrong-p0-fixture-blend-dm0032005-40-20260608T211459Z.md",
-    "areas/zipper/inbox/email-intake/20260608T235244Z-clau-gimmenez-hubspot-portfolio-needs-attention.md",
-    "session_search recent operational corrections"
-  ],
-  "sanitization": {
-    "secrets_redacted": true,
-    "values_printed": false,
-    "raw_chat_transcripts_excluded": true,
-    "live_facts_verified": true,
-    "external_sends_performed_by_this_job": false,
-    "production_writes_performed_by_this_job": false
-  }
+  "safe_next_actions": ["02h supervisor consumir este handoff e promover apenas aprendizados seguros.","Monitorar health/score/memory hygiene sem criar cron novo.","Acompanhar ciclos reais do Memory OS até completar 21/21.","Manter LK Stock Gate B.2 em read-only/dry-run até validação do dono LK Stock."],
+  "blocked_actions_requiring_approval": ["Envio de e-mail/WhatsApp Zipper.","Decisão comercial sobre orçamento/desconto/parcelamento.","Reativação/alteração de crons pausados.","Writes em Shopify/Tiny/GMC/Klaviyo/Meta/Supabase/bancos/produção.","Docker/VPS/gateway/restart/deploy/infra changes."],
+  "cron_and_delivery_truth": {"cron_listing_method":"HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all","cronjob_cli_available":false,"fechamento_job":{"id":"3fc45b0830c6","status":"active","deliver":"local","next_run_utc":"2026-06-11T04:00:00+00:00"},"health_gate":{"path":"reports/brain-health-check-2026-06-10-02h.json","fail_count":0,"warn_count":0},"brain_improvement_score":{"path_md":"reports/brain-improvement-score-2026-06-10-02h.md","path_json":"reports/brain-improvement-score-2026-06-10-02h.json","overall_score":94},"silent_ok_policy":"Este fechamento é local/silent em sucesso normal; origin/Telegram só para falha crítica, segredo, health warn/fail, score baixo ou decisão urgente."},
+  "sources": ["reports/daily-consolidation/2026-06-10.md","reports/memory-hygiene/2026-06-10.json","memories/daily/2026-06-10.md","reports/governance/receipts/memory-os-v118-post-rollout-readiness-20260610.md","reports/governance/receipts/lk-growth-gmc-paused-cron-status-remediation-20260610.md","areas/lk/sub-areas/content/receipts/2026-06-10-lk-content-dashboard-publish-github-vercel.json","areas/lk/sub-areas/content/receipts/2026-06-10-lk-content-dashboard-vercel-prod-fix.json","areas/lk/sub-areas/stock/receipts/lk-stock-gate-b2-shard85-20260610T035746Z.md","areas/zipper/inbox/email-intake/2026-06-10-diego-moura-marcelo-tinoco-pdf-nao-baixa.md","areas/zipper/inbox/email-intake/2026-06-10-fujocka-flavia-junqueira-orcamento-imagens-needs-attention.md","reports/brain-health-check-2026-06-10-02h.json","reports/brain-improvement-score-2026-06-10-02h.json","session_search:20260610_010615_0937a6"],
+  "sanitization": {"values_printed":false,"raw_transcripts_included":false,"secrets_included":false,"targeted_secret_scan_required":true,"external_writes_by_this_job":["github_push_via_brain_sync_safe_only_if_allowed"]}
 }

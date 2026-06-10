@@ -135,6 +135,54 @@ Kill criteria:
 - Receipts por área: `areas/<empresa>/.../receipts/`
 - Handoffs operacionais: `areas/operacoes/handoffs/` ou sub-área dona.
 
+## Regra Memory OS v1.12 — receipt writer obrigatório para receipt novo
+
+Para receipt operacional novo, o caminho padrão é o wrapper local `receipt_writer`. Não escrever receipt novo manualmente por conveniência quando o wrapper cobre o caso: hook-only em receipt novo vira `drift_receipt_hook_only` e deve bloquear silent-OK até correção.
+
+```bash
+python3 /opt/data/scripts/hermes_memory_os_receipt_writer.py --path <caminho-do-receipt> --title '<título>' --empresa-area '<área>' --pedido '<pedido>' --fonte '<fonte>' --feito '<ação>' --output '<artefato>' --aprovacao '<escopo/aprovação>' --rollback '<rollback>' --documentado '<onde>'
+```
+
+O wrapper valida campos mínimos, salva o receipt no Brain e chama o hook Memory OS automaticamente. Se um receipt já foi criado por outro fluxo local e precisa ser corrigido sem sobrescrever conteúdo, registrar explicitamente:
+
+```bash
+python3 /opt/data/scripts/hermes_memory_os_receipt_writer.py --register-existing --allow-overwrite --path <caminho-do-receipt-existente> --title '<registro>' --empresa-area '<área>' --pedido '<por que registrar>' --fonte '<fonte>' --feito '<ação>' --output '<resultado>' --aprovacao '<escopo/aprovação>' --rollback '<rollback>' --documentado '<onde>' --registration-reason '<motivo explícito>'
+```
+
+O hook local é fallback legítimo para:
+
+- handoff de especialista;
+- approval packet;
+- artefato legado já escrito;
+- receipt excepcional criado por outro meio, desde que registrado via `--register-existing` ou com exceção explícita e motivo documentado.
+
+Nesses casos, chamar:
+
+```bash
+python3 /opt/data/scripts/hermes_memory_os_event_hook.py <caminho-do-artefato>
+```
+
+- Se wrapper/hook ficarem verdes, stdout deve ser vazio e nada vai para Telegram.
+- Desde v1.12, hook chamado diretamente em receipt novo sem evidência do writer deve retornar atenção local (`receipt_writer_required`); isso é enforcement, não ruído.
+- Se wrapper/hook apontarem rota/alerta, registrar o achado em receipt/follow-up e só alertar Lucas se houver decisão, falha atual ou risco acionável.
+- O wrapper não substitui julgamento, aprovação, rollback nem readback; ele apenas padroniza receipt + hook.
+- Não usar wrapper/hook como aprovação para Docker/VPS/gateway/provider externo ou writes de negócio.
+
+## Checklist canônico de roteamento — Memory vs Brain vs skill
+
+Antes de promover contexto, escolher a camada objetiva correta:
+
+- Preferência durável do usuário/Lucas → `USER.md` curto do profile relevante.
+- Guardrail global, regra de segurança ou política de boot → `MEMORY.md` curto do profile relevante, com ponteiro para Brain quando precisar de detalhe.
+- Prioridade, bloqueio ou estado current que deve influenciar a sessão atual → `memories/hot.md`.
+- Decisão, entrega ou pendência do dia → `memories/daily/YYYY-MM-DD.md`.
+- Evidência, relatório, receipt, auditoria ou output material → Brain em `receipts/`, `reports/` ou área dona; boot memory guarda no máximo ponteiro.
+- Procedimento reutilizável, rotina repetível ou como-fazer operacional → skill, referência de skill ou `areas/operacoes/rotinas/`.
+- Dado vivo (estoque, pedido, campanha, deploy, métrica, preço, disponibilidade, banco) → consultar a fonte real; Brain registra apenas ponteiro, receipt/report e incerteza temporal.
+- Conversa antiga ou lembrança cross-session → usar `session_search`; promover para Brain/USER/MEMORY/skill somente se virar decisão durável, preferência estável, regra ou procedimento.
+
+Regra de contenção: não transformar daily/hot em histórico longo, nem `USER.md`/`MEMORY.md` em repositório rico. Brain é a memória rica canônica; boot memory é só o mínimo para agir certo.
+
 ## Regra anti-ruído Telegram
 
 Receipt não significa Telegram. Telegram só recebe:
@@ -180,4 +228,5 @@ Antes de chamar uma frente de “operante”, verificar:
 - [ ] writes externos têm approval + rollback + readback;
 - [ ] secrets não aparecem;
 - [ ] próximo passo humano ou automático está claro;
-- [ ] aprendizado recorrente virou rotina/skill quando aplicável.
+- [ ] aprendizado recorrente virou rotina/skill quando aplicável;
+- [ ] receipt operacional novo foi criado via `receipt_writer`; se já existia, foi registrado via `receipt_writer --register-existing`; hook-only em receipt novo não é fechamento válido.

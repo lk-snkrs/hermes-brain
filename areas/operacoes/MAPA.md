@@ -20,6 +20,10 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `mordomo/LC-MORDOMO-CENTRAL-SOUL-2026-06-05.md` — SOUL v0.1 do LC Mordomo Central: identidade, missão, autonomia A0-A4, interface única, subagentes e learning loop.
 - `mordomo/subagent-registry-2026-06-05.md` — registry v0.1 dos subagentes lógicos/operacionais do LC Mordomo OS e regra de promoção para profile/runtime separado.
 
+## PRDs / R&D
+
+- `prds/hermes-memory-os-v1-prd-2026-06-09.md` — PRD/R&D do Memory OS v1 executado em escopo local/silent-OK: checker diurno, cron no_agent local, dashboard documental, sem provider externo e sem mutação runtime sensível.
+
 ## Rotinas principais
 
 - `rotinas/brain-sync.md` — sincronização/versionamento do Brain.
@@ -29,6 +33,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/retomada-planos-prds.md` — retomada de planos, PRDs, branches e análises pausadas.
 - `rotinas/revisao-operacional-multiempresa.md` — leitura executiva sob demanda de LK, Zipper, SPITI e Operações usando Brain versionado.
 - `rotinas/memory-hygiene-pendencias.md` — higiene de memória, pendências, decisões e lições.
+- `rotinas/hermes-memory-os-v1.md` — rotina v1 para memória viva/contínua durante o dia: router, compactação preventiva, daily/hot current, coverage por profile e Telegram silent-OK.
 - `rotinas/security-checkup.md` — revisão de segurança para Brain, integrações, canais, secrets e execução.
 - `rotinas/area-skill-subagent-agent-decision.md` — matriz para decidir área, rotina, skill, subagent, cron ou agente/canal permanente.
 - `rotinas/hermes-release-watch.md` — monitoramento de releases Hermes Agent e avaliação de melhorias.
@@ -65,6 +70,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/voice-to-brain.md` — áudio Telegram para Brain com confirmação em casos críticos.
 - `rotinas/brain-diff-digest.md` — digest pré-sync de alterações, riscos e bloqueios.
 - `rotinas/source-confidence.md` — classificação de confiabilidade de fonte.
+- `rotinas/brain-fonte-viva-e-dados-grandes.md` — regra canônica: Brain aponta para fonte viva e não replica bases grandes/dados operacionais mutáveis; inclui matriz e checklist para PRDs, ingests, subagentes e Mission Control.
 - `rotinas/mission-control-brain-cockpit.md` — Mission Control como cockpit/decision inbox, não fonte de verdade paralela.
 - `rotinas/semantic-recovery-session-search.md` — recuperar sessões antigas e promover achados duráveis ao Brain.
 - `rotinas/runtime-profile-channel-inventory-2026-05-19.md` — inventário canônico de profiles, bots, canais, cadência, status documental, silent contract e kill criteria.
@@ -143,3 +149,4 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - Secrets sempre via Doppler, apenas nomes em docs.
 - Produção, VPS, Docker, Traefik, volumes, redes, deploys, banco, campanhas e mensagens externas exigem aprovação Lucas.
 - PRs documentais/Brain de baixo risco podem seguir com merge autônomo se health check, secret scan e mergeability estiverem limpos; produção, infra, secrets, banco e ações externas seguem exigindo aprovação explícita.
+- `rotinas/hermes-memory-os-v1.md` — Memory OS v1.13: checker 30min, auto-heal antes de alerta, todos agentes/workers, Mission Control fora.

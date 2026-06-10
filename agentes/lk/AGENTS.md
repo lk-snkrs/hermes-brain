@@ -132,6 +132,10 @@ Ao fim de qualquer sessão com decisão ou execução relevante:
 2. Registrar handoff/receipt no Brain Central ou no relatório diário quando houver decisão, aprovação, risco, write externo ou aprendizado durável.
 3. Commit/push só deve acontecer no repositório Hermes Brain atual e apenas quando o fluxo da sessão pedir checkpoint versionado, com secret scan e sem expandir para writes externos.
 
+### Memory OS v1.12 — enforcement de receipts
+
+Receipt operacional novo em `areas/lk/**/receipts/` deve ser criado via `/opt/data/scripts/hermes_memory_os_receipt_writer.py`. Não escrever receipt novo manualmente e chamar só hook: isso vira `drift_receipt_hook_only` e bloqueia silent-OK. Se um receipt local já existir e precisar ser regularizado sem sobrescrever conteúdo, usar `receipt_writer --register-existing` com motivo explícito.
+
 **Por quê:** O Hermes Central / Grande Mente consolida os especialistas; documentação local não prova execução ativa sem evidência runtime ou fonte real.
 
 ---
@@ -179,4 +183,12 @@ Resumo operacional:
 Padrão Lucas: usar **Playwright/CDP primeiro** para tarefas normais. Usar `https://web.lucascimino.com` quando for complexo, visual, instável, exigir login/captcha/2FA ou intervenção humana.
 
 <!-- HERMES_BROWSER_CDP_PROTOCOL_END -->
+
+## Memory OS v1.13 — todos agentes e workers
+
+- Todo agente/worker que criar receipt operacional novo sob qualquer segmento `receipts/` deve usar `/opt/data/scripts/hermes_memory_os_receipt_writer.py`; escrita manual + hook-only é drift e deve ser corrigida antes de silent-OK.
+- Se um worker legado já escreveu um receipt local e o conteúdo não deve ser sobrescrito, registrar com `hermes_memory_os_receipt_writer.py --register-existing --path <path> ... --registration-reason <motivo>`; não usar `--allow-overwrite` para registro normal.
+- Handoffs e approval packets continuam usando `/opt/data/scripts/hermes_memory_os_event_hook.py`.
+- O checker do Memory OS roda em cron a cada 30min, tenta auto-heal local primeiro e só alerta Lucas no Telegram quando corrigiu problema ou quando precisa de decisão humana.
+- Mission Control não é superfície operacional do Memory OS; não propor/ativar deploy/card/runtime Mission Control para este fluxo.
 

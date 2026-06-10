@@ -10,12 +10,17 @@
 ## Passos
 
 1. Resolver produto → variant → SKU → tamanho.
-2. Consultar Tiny como estoque final.
-3. Calcular score best-seller/pronta entrega.
-4. Classificar P0/P1/P2/P3.
-5. Para P0/P1, criar action packet com recomendação.
-6. Handoff para dono: Ops/Tiny, Shopify, Growth, Trends ou Lucas.
-7. Registrar receipt.
+2. Separar fonte operacional de fonte técnica/teste; aplicar `rotinas/anti-fixture-operational-scoring.md` antes de qualquer soma.
+3. Consultar Tiny como estoque final.
+4. Calcular score best-seller/pronta entrega.
+5. Classificar P0/P1/P2/P3.
+6. Para P0/P1, criar action packet com recomendação.
+7. Handoff para dono: Ops/Tiny, Shopify, Growth, Trends ou Lucas.
+8. Registrar receipt.
+
+## Bloqueio anti-fixture
+
+`shopify_fixture`, `tiny_fixture`, `manual_fixture`, `GATEB-PROBE-*` e qualquer fonte marcada como fixture/probe/teste não entram em vendas, demanda, snapshot Tiny, score, P0/P1 ou recomendação operacional. Se só houver fonte de teste, a saída é bloquear a decisão e consultar fonte viva.
 
 ## Saída
 

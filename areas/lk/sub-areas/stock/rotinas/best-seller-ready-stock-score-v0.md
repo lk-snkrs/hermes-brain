@@ -25,3 +25,7 @@
 ## Regra de bloqueio
 
 Se SKU/Tiny mapping < confiança alta, o item vira `needs_sku_resolution` antes de compra/reposição.
+
+## Regra anti-fixture
+
+Antes de calcular vendas recentes, demanda externa, risco de ruptura ou confiança de dados, excluir fontes técnicas/de teste conforme `rotinas/anti-fixture-operational-scoring.md`. Fixtures/probes/testes não contam pontos e não podem gerar P0/P1.

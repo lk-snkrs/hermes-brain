@@ -125,3 +125,33 @@ Mesmo com aprovação, não tratar production como destino de patch manual; appr
 
 Regra fonte: `rules/REGRA-LKGOC-GITHUB-DEV-BRANCH-ANTES-DE-PRODUCTION.md`.
 
+
+
+## HARD LOCK — Shopify template padrão de coleção otimizada
+
+Lucas definiu que LKGOC deve ser replicado na Shopify via template padrão de coleção otimizada, não recriando layout do zero por coleção. O shell visual é compartilhado; por coleção mudam apenas conteúdo, imagens, links, FAQ/schema e metafields/metaobjects.
+
+Regra fonte: `rules/REGRA-LKGOC-SHOPIFY-TEMPLATE-OTIMIZADA.md`.
+
+
+## HARD LOCK — Textos e seleção de imagens LKGOC
+
+Todo texto e imagem LKGOC deve nascer de evidence packet, text packet e media manifest. Hero prioriza pessoa/contexto editorial/lifestyle; packshot/PDP isolado bloqueia Production salvo exceção aprovada. O tom é premium, humano e comercial; não usar estoque/pronta entrega como taxonomia pública.
+
+Regra fonte: `rules/REGRA-LKGOC-TEXTOS-E-SELECAO-DE-IMAGENS.md`. Templates: `templates/lkgoc-text-packet-template.md` e `templates/lkgoc-media-manifest-template.md`.
+
+
+## HARD LOCK — Claude SEO como camada de apoio
+
+Coleções LKGOC devem usar Claude SEO como worker/camada de apoio para intenção, SERP, FAQ, title/meta, GEO/AI Search e validação de genericidade. Claude SEO não substitui o dono LKGOC, o Gold Source 204L, o template Shopify padrão nem approval Lucas.
+
+Regra fonte: `rules/REGRA-LKGOC-CLAUDE-SEO-COMO-CAMADA-DE-APOIO.md`.
+
+## Memory OS v1.13 — todos agentes e workers
+
+- Todo agente/worker que criar receipt operacional novo sob qualquer segmento `receipts/` deve usar `/opt/data/scripts/hermes_memory_os_receipt_writer.py`; escrita manual + hook-only é drift e deve ser corrigida antes de silent-OK.
+- Se um worker legado já escreveu um receipt local e o conteúdo não deve ser sobrescrito, registrar com `hermes_memory_os_receipt_writer.py --register-existing --path <path> ... --registration-reason <motivo>`; não usar `--allow-overwrite` para registro normal.
+- Handoffs e approval packets continuam usando `/opt/data/scripts/hermes_memory_os_event_hook.py`.
+- O checker do Memory OS roda em cron a cada 30min, tenta auto-heal local primeiro e só alerta Lucas no Telegram quando corrigiu problema ou quando precisa de decisão humana.
+- Mission Control não é superfície operacional do Memory OS; não propor/ativar deploy/card/runtime Mission Control para este fluxo.
+

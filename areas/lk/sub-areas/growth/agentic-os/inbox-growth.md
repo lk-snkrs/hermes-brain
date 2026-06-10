@@ -84,3 +84,13 @@ notes: []
 ## Primeira fila operacional
 
 Ainda sem itens ativos nesta criação. Próximo passo: usar esta inbox para a primeira demanda real de Growth/GMC/CRO/SEO não-LKGOC. Demandas LKGOC vão para `[LK] Otimização de Coleções`.
+
+
+## 2026-06-09 — Nike Mind SEO/GEO/schema pilot
+
+Origem: cron SEO/GSC + GEO + comando Lucas “seguir”.
+
+- Workdir: `areas/lk/sub-areas/growth/work/nike-mind-001-seo-geo-schema-pilot-20260609/`
+- Approval packet: `areas/lk/sub-areas/growth/approval-packets/nike-mind-001-seo-geo-schema-pilot-20260609/APPROVAL_PACKET.md`
+- Status: preview content package pronto; sem Shopify write; sem produção.
+- Próximo gate: aplicar em dev/preview Shopify se Lucas aprovar escopo dev explícito; produção separada.

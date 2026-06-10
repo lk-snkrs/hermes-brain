@@ -29,3 +29,21 @@ Use para toda execução relevante feita por Hermes Central, profile especialist
 - Ações externas, customer-facing, infra, campanha, preço, disponibilidade, reserva, negociação e fornecedor exigem aprovação ou fonte/escopo previamente autorizados.
 - Receipts devem ficar na área que executou: `areas/<empresa>/.../receipts/` ou `areas/operacoes/receipts/`.
 - Reports brutos podem ficar locais; receipts curados são artefatos de governança.
+
+## Memory OS hook obrigatório
+
+Preferência v1.4 para receipts novos: criar o receipt pelo wrapper local, que valida campos mínimos, salva o arquivo e chama o hook automaticamente:
+
+```bash
+python3 /opt/data/scripts/hermes_memory_os_receipt_writer.py --path <caminho-do-receipt> --title '<título>' --empresa-area '<área>' --pedido '<pedido>' --fonte '<fonte>' --feito '<ação>' --output '<artefato>' --aprovacao '<escopo/aprovação>' --rollback '<rollback>' --documentado '<onde>'
+```
+
+Memory OS v1.12: receipt operacional novo deve sair pelo writer. Hook direto em receipt novo é drift local (`drift_receipt_hook_only`). Para regularizar receipt local já existente sem sobrescrever conteúdo, usar `--register-existing` com motivo explícito.
+
+Se o receipt foi criado por outro meio, executar localmente após salvar:
+
+```bash
+python3 /opt/data/scripts/hermes_memory_os_event_hook.py <caminho-do-receipt>
+```
+
+Contrato: stdout vazio quando verde; se imprimir alerta, registrar no próprio receipt ou em follow-up. O wrapper atualiza `reports/memory-hygiene/receipt-writer-latest.json`; o hook atualiza `reports/memory-hygiene/hook-latest.json` e `hook-events.jsonl`, sem ler/despejar conteúdo do receipt e sem Telegram em sucesso.

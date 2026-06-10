@@ -2,11 +2,11 @@
 
 Última revisão: 2026-05-16
 Última revisão: 2026-05-19
+Última revisão: 2026-06-09
 Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Ativos agora
 
-- [ ] Agente LC Hermes: criar rotina canônica `areas/operacoes/rotinas/brain-fonte-viva-e-dados-grandes.md` a partir do handoff `areas/operacoes/handoffs/handoff-lc-hermes-brain-fonte-viva-governance-20260609T000522Z.md`; incluir matriz Brain vs fonte viva, checklist para PRDs/ingests/subagentes/Mission Control e atualizar MAPA. Critério de pronto: rotina criada, MAPA indexado e regra promovível para skills relevantes.
 - [ ] Aprofundar dicionário canônico de influencers/campanhas LK e auditar match influencer → produto — usar evidências Shopify/Meta/UTM/cupom; Silvia/Helena têm ROAS operacional provisório, Lala segue ambígua.
 - [ ] Reconciliar Mission Control em rodada dedicada — ponte documental criada em `areas/operacoes/projetos/mission-control-reconciliation-pointer-2026-05-19.md`; detalhar ativo/legado/benchmark/próximos módulos sem repo/UI/runtime nesta rodada.
 - [x] Primeiro Stock Intelligence real/read-only da LK com sourcing acionado por sinal — relatório `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`; sem WhatsApp, Notion, compra ou alteração produtiva.
@@ -23,7 +23,7 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 - [ ] Rotação de senha root da `lc.vps`, se desejado — infra sensível.
 - [ ] Decidir se a chave SSH dedicada da VPS permanece ou será removida.
 - [ ] Correção ativa do alerta/divergência Gateway Hermes — restart/update/Docker/VPS exigem aprovação.
-- [ ] Mission Control visual ou cron recorrente — exige aprovação de escopo/cadência.
+- [ ] Mission Control visual ou cron recorrente — exige aprovação de escopo/cadência. Memory OS card/fonte `mission-memory-os` fica pendente por decisão de Lucas em 2026-06-09.
 - [ ] Campanhas, WhatsApp, email, posts, contatos externos e ações produtivas — sempre com preview/aprovação.
 
 ## Aguardando data/evento
@@ -33,6 +33,7 @@ Fonte executiva detalhada: `empresa/gestao/pendencias.md`
 
 ## Concluídos / retirados da fila ativa
 
+- [x] Agente LC Hermes: rotina canônica `areas/operacoes/rotinas/brain-fonte-viva-e-dados-grandes.md` criada em 2026-06-09 a partir do handoff `areas/operacoes/handoffs/handoff-lc-hermes-brain-fonte-viva-governance-20260609T000522Z.md`; MAPA indexado; matriz Brain vs fonte viva e checklist para PRDs/ingests/subagentes/Mission Control incluídos. Receipt: `areas/operacoes/receipts/brain-fonte-viva-e-dados-grandes-20260609.md`.
 - [x] Primeira revisão sob demanda com a nova identidade Hermes Geral — relatório gerado em `reports/revisao-operacional-multiempresa-hermes-geral-2026-05-16.md`; escopo Hermes/Infra, LK OS, Zipper e SPITI; sem cron novo, contato externo, deploy ou write produtivo.
 - [x] Adaptação Amora → Hermes Geral — DOCX convertidos, `IDENTITY.md` criado, `SOUL/AGENTS/HEARTBEAT` consolidados, `MAPA.md` raiz criado, raiz `AGENTS.md`/`HEARTBEAT.md` higienizada para Hermes-native; sem cron novo. Evidência: `areas/operacoes/rotinas/amora-templates-hermes-geral-adaptacao-2026-05-16.md` e `reports/amora-reference-ingest-2026-05-16/`.
 - [x] Preservação do `spiti-hub` antigo não-git — evidências copiadas para `reports/spiti-hub-diff-2026-05-16/old-nongit-preservation/`; secret scan limpo; não mergear fontes antigas no `spiti-hub-git`.

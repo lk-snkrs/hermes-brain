@@ -1,21 +1,25 @@
-# Mordomo Decision Dashboard — 01/06/2026 17:00 BRT
+# Mordomo Decision Dashboard — 09/06/2026 17:41 BRT
 
 ## Saúde executiva
-- Decisões abertas: 8
-- Follow-ups operacionais próximos: 6
-- Ações enviadas hoje: 0
+- Decisões abertas: 20
+- Follow-ups operacionais próximos: 21
+- Ações enviadas hoje: 1
 - Ruídos segurados na amostra: 8
-- Cliques de botão registrados na amostra: 4
+- Cliques de botão registrados na amostra: 6
 
 ## Top decisões
 1. Rafaela Rocha — Rodrigo Braga — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
 2. Camila Paschoalin — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
 3. Clau Xavier — Adriana Duque — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
 4. Brenda — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-5. Marcus Bitencourt — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-6. Olavo — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-7. Jônatas Sodré Sulfrio Ar condicionado - Manutenção, Aquecedor e Pintura — LK — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-8. Concierge da Dra Monize Prado — Pessoal — confiança média: bom para rascunho, mas revisar contexto antes de responder.
+5. Cássia Olliveira — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+6. José Louzada — Nina Pandolfo — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+7. Henrique Takinaga / Triptyque — Janaina Mello Landini — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+8. Viviane Campelo — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+9. Olavo — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+10. Keeta — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+11. José Louzada — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+12. Gleice — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
 
 ## Contrato de comunicação
 - Telegram: só decisão/alerta real, com botões funcionais quando envio direto estiver ativo.

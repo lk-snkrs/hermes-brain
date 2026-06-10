@@ -31,6 +31,8 @@ Próximo passo:
 
 ## Template completo para Brain
 
+Preferência operacional: criar o receipt completo via `/opt/data/scripts/hermes_memory_os_receipt_writer.py` para validar campos mínimos e chamar o hook automaticamente. Se escrever manualmente, executar o hook depois.
+
 ```md
 # Receipt — [área/tarefa]
 
@@ -81,4 +83,5 @@ Escopo autorizado:
 - [ ] A mensagem contém o resultado, não só caminho interno?
 - [ ] A mensagem evita wrapper, JSON bruto, job_id, stack trace e logs longos?
 - [ ] O receipt completo ficou no Brain?
+- [ ] O receipt novo foi criado pelo wrapper v1.5 ou teve hook Memory OS executado?
 - [ ] OK rotineiro ficou silencioso?

@@ -178,7 +178,7 @@ Se qualquer resposta for “não”, não salvar na memória injetada.
 Memória built-in do profile default foi compactada para boot mínimo:
 
 - `MEMORY.md`: cerca de 1.092 chars de 2.200.
-- `USER.md`: cerca de 1084 chars de 1.375 após P1 sem Mem0.
+- `USER.md`: cerca de 1084 chars de 1.375 após P1 sem provider externo de memória.
 
 A sessão atual pode continuar mostrando snapshot antigo até `/new` ou nova sessão, porque Hermes congela memória no início da sessão para preservar cache.
 

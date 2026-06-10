@@ -31,6 +31,16 @@ Exige aprovação explícita atual: Shopify/Tiny/GMC/Klaviyo/Ads/WhatsApp/email 
 
 Registrar no Brain quando houver draft material, decisão, aprovação, write, receipt, rollback, risco, bloqueio ou aprendizado. Nenhuma execução relevante pode ficar só no chat do bot.
 
+## Memory OS v1.12 — receipts LKGOC
+
+Receipt operacional novo de LKGOC deve ser criado pelo wrapper local, não por escrita manual + hook:
+
+```bash
+python3 /opt/data/scripts/hermes_memory_os_receipt_writer.py --path <caminho-do-receipt> --title '<título>' --empresa-area 'LK / Collection Optimizer' --pedido '<pedido>' --fonte '<fonte>' --feito '<ação>' --output '<artefato>' --aprovacao '<escopo/aprovação>' --rollback '<rollback>' --documentado '<onde>'
+```
+
+Se o receipt já existir por fluxo local anterior, corrigir sem sobrescrever conteúdo com `--register-existing --allow-overwrite` e motivo explícito. Hook direto em receipt novo é drift (`drift_receipt_hook_only`) e não fecha Definition of Done.
+
 ## Definition of Done
 
 - nível LKGOC declarado;
@@ -43,6 +53,7 @@ Registrar no Brain quando houver draft material, decisão, aprovação, write, r
 - preview/QA visual desktop + mobile;
 - approval packet antes de write;
 - rollback/readback/receipt pós-write aprovado;
+- receipt novo com evidência de `hermes_memory_os_receipt_writer.py` ou registro explícito `--register-existing`;
 - impact review agendado/documentado quando houver produção.
 
 <!-- HERMES_BROWSER_CDP_PROTOCOL_START -->
@@ -67,4 +78,12 @@ Resumo operacional:
 Padrão Lucas: usar **Playwright/CDP primeiro** para tarefas normais. Usar `https://web.lucascimino.com` quando for complexo, visual, instável, exigir login/captcha/2FA ou intervenção humana.
 
 <!-- HERMES_BROWSER_CDP_PROTOCOL_END -->
+
+## Memory OS v1.13 — todos agentes e workers
+
+- Todo agente/worker que criar receipt operacional novo sob qualquer segmento `receipts/` deve usar `/opt/data/scripts/hermes_memory_os_receipt_writer.py`; escrita manual + hook-only é drift e deve ser corrigida antes de silent-OK.
+- Se um worker legado já escreveu um receipt local e o conteúdo não deve ser sobrescrito, registrar com `hermes_memory_os_receipt_writer.py --register-existing --path <path> ... --registration-reason <motivo>`; não usar `--allow-overwrite` para registro normal.
+- Handoffs e approval packets continuam usando `/opt/data/scripts/hermes_memory_os_event_hook.py`.
+- O checker do Memory OS roda em cron a cada 30min, tenta auto-heal local primeiro e só alerta Lucas no Telegram quando corrigiu problema ou quando precisa de decisão humana.
+- Mission Control não é superfície operacional do Memory OS; não propor/ativar deploy/card/runtime Mission Control para este fluxo.
 

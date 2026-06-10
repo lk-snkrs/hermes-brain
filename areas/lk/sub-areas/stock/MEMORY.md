@@ -6,6 +6,7 @@
 - Shopify é contexto/event trigger, não verdade final de estoque.
 - Disponibilidade deve ser por SKU/variante/tamanho.
 - Best seller deve ser derivado de vendas/demanda reais.
+- Fixtures, probes e testes nunca contam como demanda/estoque operacional nem podem gerar P0/P1 ou recomendação.
 - O agente v0.1 está preparado; gateway/bot/cron pendentes de aprovação.
 
 ## Decisões pendentes

@@ -92,3 +92,12 @@ Qualquer ação produtiva posterior precisa de novo preview + aprovação explí
 - Prompt salvo em: `/opt/data/profiles/lk-growth/cron-prompts/product-description-operational-copy-cleanup-d7-20260612.md`.
 - Modo: read-only; qualquer nova alteração vira approval packet, sem write automático.
 
+
+
+## 2026-06-09 — Nike Mind SEO/GEO/schema production merge
+
+- Change: bloco citável + FAQ + FAQPage publicado em production para `/collections/nike-mind-001`.
+- Receipt: `receipts/shopify-production/nike-mind-seo-geo-schema-production-20260609/FINAL_RECEIPT.md`.
+- D+7: 2026-06-16.
+- D+14: 2026-06-23.
+- Métricas: GSC clicks/impressions/CTR/position, GA4 organic sessions, HTML/schema QA.
