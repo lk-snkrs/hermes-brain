@@ -42,3 +42,7 @@ Priorizar por impacto de negócio, volume, risco externo, recorrência e chance 
 - `areas/operacoes/projetos/mesa-coo/` — Mesa COO.
 
 Observação: o candidato do scanner `mission-control-mesa-coo` foi separado em dois hubs porque o inventário mostrou fronteira clara entre produto/cockpit (Mission Control) e ritual/Telegram/decisões (Mesa COO).
+
+## Onda 2 — gap fechado em 2026-06-10
+
+- `areas/lk/sub-areas/content/projetos/lk-content-klaviyo-agent/` — LK Content / Klaviyo Agent, listado na Onda 2 e consolidado como hub canônico separado.

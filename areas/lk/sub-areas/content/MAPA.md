@@ -38,3 +38,6 @@ Arquivos do pacote:
 ## Guardrail
 
 Este diretório é documental até aprovação explícita de ativação runtime. Não salvar tokens, API keys ou secrets no Brain.
+## Projetos Brain OS
+
+- `projetos/lk-content-klaviyo-agent/` — hub canônico para LK Content / Klaviyo Agent: PRD, agente documental, Klaviyo/CRM, calendário editorial, dashboard, Brand Guide, receipts e guardrails de envio/runtime.

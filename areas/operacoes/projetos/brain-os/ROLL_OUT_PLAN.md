@@ -56,3 +56,8 @@ Somente se Lucas aprovar:
 - Criar hub Mordomo OS: concluído localmente.
 - Separar `mission-control-mesa-coo` em dois hubs: concluído localmente.
 - Próximo gate: scanner, secret scan, Brain health e docs guard; commit/push apenas com aprovação explícita.
+
+## Status Onda 2 — complemento 2026-06-10
+
+- Criar hub LK Content / Klaviyo Agent: concluído localmente como fechamento de gap da Onda 2.
+- Scanner Brain OS atualizado para rastrear o domínio Content/Klaviyo em ondas futuras.

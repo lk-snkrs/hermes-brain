@@ -63,6 +63,16 @@ PROJECT_DEFS = [
         'risk': 'context_truth_and_runtime_claim_risk',
         'wave': 1,
     },
+
+    {
+        'id': 'lk-content-klaviyo-agent',
+        'title': 'LK Content / Klaviyo Agent',
+        'owner_area': 'areas/lk/sub-areas/content',
+        'suggested_hubs': ['areas/lk/sub-areas/content/projetos/lk-content-klaviyo-agent'],
+        'terms': ['lk content', 'klaviyo', 'newsletter', 'calendar', 'calendario editorial', 'brand guide', 'content guide', 'dashboard'],
+        'risk': 'campaign_send_and_runtime_activation_risk',
+        'wave': 2,
+    },
     {
         'id': 'mission-control-mesa-coo',
         'title': 'Mission Control / Mesa COO',
