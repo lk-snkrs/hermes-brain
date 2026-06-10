@@ -33,3 +33,10 @@ Começar assistido, não bot público autônomo.
 ## Limite com LK Growth
 
 LK Growth cuida de SEO/GEO/CRO/GMC/conteúdo/analytics. LK Ops/Atendimento cuida de atendimento, WhatsApp, vendas operacionais, estoque, preço, disponibilidade e loja.
+
+## Projeto canônico — Chatwoot / Elle / WhatsApp
+
+- Pasta canônica: `projetos/chatwoot/` — hub do projeto Chatwoot da LK Atendimento.
+- Começar por: `projetos/chatwoot/README.md` e `projetos/chatwoot/CURRENT_STATE.md`.
+- Inventário completo: `projetos/chatwoot/ARTIFACT_INDEX.md` e `projetos/chatwoot/manifest.json`.
+- Guardrail: Chatwoot pode receber contexto/nota interna quando aprovado; mensagens externas/WhatsApp/campanhas/writes seguem aprovação escopada, fonte viva, snapshot, readback e receipt.
