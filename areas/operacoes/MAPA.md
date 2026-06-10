@@ -152,3 +152,8 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - Produção, VPS, Docker, Traefik, volumes, redes, deploys, banco, campanhas e mensagens externas exigem aprovação Lucas.
 - PRs documentais/Brain de baixo risco podem seguir com merge autônomo se health check, secret scan e mergeability estiverem limpos; produção, infra, secrets, banco e ações externas seguem exigindo aprovação explícita.
 - `rotinas/hermes-memory-os-v1.md` — Memory OS v1.13: checker 30min, auto-heal antes de alerta, todos agentes/workers, Mission Control fora.
+
+## Projetos Brain OS
+
+- `projetos/brain-os/` — sistema de organização canônica da inteligência durável do Brain.
+- `projetos/memory-os/` — hub canônico inicial do Memory OS.

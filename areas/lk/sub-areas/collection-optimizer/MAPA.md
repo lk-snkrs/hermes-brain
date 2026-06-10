@@ -30,3 +30,7 @@ Este agente é independente de LK Growth e LK Shopify.
 ## Guardrail principal
 
 Nunca escrever direto em theme production. Fluxo padrão: DEV/unpublished ou branch → QA/readback → approval Lucas → GitHub PR/review quando aplicável → merge/deploy → readback/receipt.
+
+## Projetos Brain OS
+
+- `projetos/lkgoc-collection-optimizer/` — hub canônico inicial do especialista permanente LKGOC.

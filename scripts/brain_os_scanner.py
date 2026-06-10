@@ -1,0 +1,195 @@
+#!/usr/bin/env python3
+"""Brain OS scanner: local/read-only candidate discovery for canonical project hubs.
+
+This script does not mutate the Brain. It scans markdown/json/text-like artifact paths,
+computes project-sprawl signals, and writes a sanitized JSON report when requested.
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import re
+from dataclasses import dataclass, asdict
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Iterable
+
+DEFAULT_ROOT = Path('/opt/data/hermes_bruno_ingest/hermes-brain')
+TEXT_EXTS = {'.md', '.json', '.txt', '.yaml', '.yml', '.csv'}
+EXCLUDE_PARTS = {'.git', '__pycache__'}
+
+PROJECT_DEFS = [
+    {
+        'id': 'lk-growth-gmc-shopify-meta',
+        'title': 'LK Growth / Shopify / GMC / Meta',
+        'owner_area': 'areas/lk/sub-areas/growth',
+        'suggested_hubs': [
+            'areas/lk/sub-areas/growth/projetos/gmc-merchant-center',
+            'areas/lk/sub-areas/growth/projetos/shopify-growth-os',
+            'areas/lk/sub-areas/growth/projetos/meta-ads-performance',
+        ],
+        'terms': ['growth', 'gmc', 'merchant', 'shopify', 'meta', 'ads', 'facebook', 'instagram', 'klaviyo', 'cro'],
+        'risk': 'high_external_write_risk',
+        'wave': 1,
+    },
+    {
+        'id': 'lk-stock-tiny-pos',
+        'title': 'LK Estoque / Tiny / POS / Pronta Entrega',
+        'owner_area': 'areas/lk/sub-areas/stock',
+        'suggested_hubs': [
+            'areas/lk/sub-areas/stock/projetos/tiny-estoque-source-of-truth',
+            'areas/lk/sub-areas/stock/projetos/pronta-entrega-pos',
+        ],
+        'terms': ['tiny', 'estoque', 'stock', 'pos', 'pronta entrega', 'produto', 'shopify-stock'],
+        'risk': 'source_of_truth_confusion',
+        'wave': 1,
+    },
+    {
+        'id': 'lkgoc-collection-optimizer',
+        'title': 'LKGOC Collection Optimizer',
+        'owner_area': 'areas/lk/sub-areas/collection-optimizer',
+        'suggested_hubs': ['areas/lk/sub-areas/collection-optimizer/projetos/lkgoc-collection-optimizer'],
+        'terms': ['collection optimizer', 'lkgoc', 'colecao', 'collection', 'scorecard', 'qa'],
+        'risk': 'production_theme_or_shopify_write_risk',
+        'wave': 1,
+    },
+    {
+        'id': 'memory-os',
+        'title': 'Hermes Memory OS',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/memory-os'],
+        'terms': ['memory os', 'memory-os', 'memoria', 'memory hygiene', 'auto-heal', 'context intelligence'],
+        'risk': 'context_truth_and_runtime_claim_risk',
+        'wave': 1,
+    },
+    {
+        'id': 'mission-control-mesa-coo',
+        'title': 'Mission Control / Mesa COO',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/mission-control', 'areas/operacoes/projetos/mesa-coo'],
+        'terms': ['mission control', 'mesa coo', 'decision inbox', 'decisao', 'telegram ux'],
+        'risk': 'approval_sequence_and_decision_state_risk',
+        'wave': 2,
+    },
+    {
+        'id': 'mordomo-os',
+        'title': 'Mordomo OS',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/mordomo-os'],
+        'terms': ['mordomo', 'whatsapp', 'wacli', 'calendar', 'follow-up', 'followup'],
+        'risk': 'personal_external_action_risk',
+        'wave': 2,
+    },
+    {
+        'id': 'zipper-email-crm-intake',
+        'title': 'Zipper Email / CRM / Leads Intake',
+        'owner_area': 'areas/zipper',
+        'suggested_hubs': ['areas/zipper/projetos/email-crm-intake'],
+        'terms': ['zipper', 'zpr', 'enquiry', 'crm', 'lead', 'email intake', 'vendas_tango'],
+        'risk': 'commercial_reply_and_human_approval_risk',
+        'wave': 2,
+    },
+]
+
+
+def iter_files(root: Path) -> Iterable[Path]:
+    for dp, dirs, files in os.walk(root):
+        dirs[:] = [d for d in dirs if d not in EXCLUDE_PARTS]
+        p = Path(dp)
+        for name in files:
+            f = p / name
+            if f.suffix.lower() in TEXT_EXTS:
+                yield f
+
+
+def safe_read(path: Path, max_bytes: int = 200_000) -> str:
+    try:
+        data = path.read_bytes()[:max_bytes]
+        return data.decode('utf-8', errors='ignore').lower()
+    except Exception:
+        return ''
+
+
+def count_owner_files(root: Path, rel: str) -> int:
+    p = root / rel
+    if not p.exists():
+        return 0
+    return sum(1 for f in p.rglob('*') if f.is_file())
+
+
+def existing_hubs(root: Path, hubs: list[str]) -> list[str]:
+    return [h for h in hubs if (root / h).exists()]
+
+
+def scan(root: Path) -> dict:
+    root = root.resolve()
+    text_files = list(iter_files(root))
+    rels = [str(p.relative_to(root)) for p in text_files]
+    candidates = []
+    for spec in PROJECT_DEFS:
+        term_hits = 0
+        file_hits = []
+        term_re = re.compile('|'.join(re.escape(t.lower()) for t in spec['terms']))
+        for p, rel in zip(text_files, rels):
+            rel_l = rel.lower()
+            path_match = any(t.lower().replace(' ', '-') in rel_l or t.lower() in rel_l for t in spec['terms'])
+            content_match = False
+            if path_match:
+                content_match = True
+            elif len(file_hits) < 250:
+                content_match = bool(term_re.search(safe_read(p, 60_000)))
+            if path_match or content_match:
+                file_hits.append(rel)
+                term_hits += 1
+        owner_files = count_owner_files(root, spec['owner_area'])
+        hubs_existing = existing_hubs(root, spec['suggested_hubs'])
+        score = 0
+        score += min(owner_files // 100, 40)
+        score += min(term_hits // 25, 30)
+        score += 15 if not hubs_existing else 5
+        score += 10 if spec['risk'] else 0
+        score += 5 if spec['wave'] == 1 else 0
+        candidates.append({
+            'id': spec['id'],
+            'title': spec['title'],
+            'owner_area': spec['owner_area'],
+            'suggested_hubs': spec['suggested_hubs'],
+            'existing_hubs': hubs_existing,
+            'wave': spec['wave'],
+            'risk': spec['risk'],
+            'owner_file_count': owner_files,
+            'term_hit_files': term_hits,
+            'sample_artifacts': file_hits[:30],
+            'score': score,
+            'recommendation': 'canonical_hub_needed' if not hubs_existing or score >= 40 else 'monitor_or_refine_existing_hub',
+        })
+    candidates.sort(key=lambda x: (-x['wave'], -x['score']))
+    return {
+        'generated_at': datetime.now(timezone.utc).isoformat(),
+        'root': str(root),
+        'mode': 'read_only_scan',
+        'scanner_version': 'brain-os-v1',
+        'total_text_files_scanned': len(text_files),
+        'candidates': sorted(candidates, key=lambda x: (x['wave'], -x['score'])),
+    }
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--root', default=str(DEFAULT_ROOT))
+    ap.add_argument('--json', action='store_true')
+    ap.add_argument('--output')
+    args = ap.parse_args()
+    result = scan(Path(args.root))
+    text = json.dumps(result, ensure_ascii=False, indent=2)
+    if args.output:
+        out = Path(args.output)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(text + '\n', encoding='utf-8')
+    if args.json or not args.output:
+        print(text)
+    return 0
+
+if __name__ == '__main__':
+    raise SystemExit(main())

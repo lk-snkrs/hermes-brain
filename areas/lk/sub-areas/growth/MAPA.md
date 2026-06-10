@@ -139,3 +139,7 @@ O padrão completo de LKGOC vive em um único documento canônico:
 - `LKGOC-PADRAO-CANONICO.md`
 
 Não duplicar regras longas aqui. Este arquivo deve apenas complementar seu escopo específico e apontar para o canônico.
+
+## Projetos Brain OS
+
+- `projetos/gmc-merchant-center/` — hub canônico inicial para GMC/Merchant Center dentro de LK Growth.

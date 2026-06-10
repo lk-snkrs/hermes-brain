@@ -1,0 +1,51 @@
+# Brain OS — Rollout Plan
+
+## Fase 0 — Descoberta e design
+
+- Pesquisar Hermes/docs e práticas externas.
+- Auditar volume local do Brain.
+- Definir modelo híbrido.
+- Criar PRD e padrão.
+
+## Fase 1 — Infra documental
+
+- Criar `areas/operacoes/projetos/brain-os/`.
+- Criar scanner local/read-only.
+- Criar report de candidatos.
+
+## Fase 2 — Primeiros hubs
+
+Criar hubs canônicos sem mover/apagar originais:
+
+1. GMC Merchant Center.
+2. Tiny Estoque Source of Truth.
+3. LKGOC Collection Optimizer.
+4. Memory OS.
+
+## Fase 3 — Verificação
+
+- Scanner JSON válido.
+- Focused secret scan.
+- Brain health check.
+- Operational docs guard.
+- Git status explícito.
+
+## Fase 4 — GitHub
+
+Somente se Lucas aprovar:
+
+- `git add` explícito;
+- `git diff --cached --check`;
+- focused secret scan;
+- Brain health;
+- docs guard;
+- commit;
+- push via Doppler/GIT_ASKPASS;
+- verificar remoto.
+
+## Fase 5 — Evolução futura
+
+- Transformar scanner em rotina silent-OK local.
+- Integrar com Memory OS replay/coverage.
+- Criar dashboards executivos.
+- Criar Kanban board se houver múltiplas frentes paralelas.

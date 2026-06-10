@@ -43,3 +43,7 @@ Garantir que a loja física da LK tenha, na pronta entrega, os produtos/tamanhos
 ## Guardrail central
 
 Este agente pode diagnosticar, ranquear, criar fila e preparar pacotes. Não pode alterar Tiny/Shopify, prometer disponibilidade, reservar produto, contactar fornecedor, disparar campanha ou comprar sem aprovação escopada e fonte viva. Fixtures, probes e testes nunca são fonte operacional para score ou recomendação.
+
+## Projetos Brain OS
+
+- `projetos/tiny-estoque-source-of-truth/` — hub canônico inicial para Tiny/estoque como fonte da verdade.
