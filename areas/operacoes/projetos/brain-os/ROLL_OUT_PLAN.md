@@ -94,3 +94,11 @@ Somente se Lucas aprovar:
 - Criar hub LK Rewards / Loyalty / Trust: concluído localmente.
 - Criar hub LK WhatsApp Integration Platform: concluído localmente.
 - Próximo gate: scanner, secret scan, Brain health e docs guard.
+
+## Status Onda 7 — 2026-06-10
+
+- Criar hub LK Collection Sort Automation: concluído localmente.
+- Criar hub LK Catalog Badges Sync: concluído localmente.
+- Criar hub LK Editorial Collection Guides: concluído localmente.
+- Criar hub LK Source Pages / GEO Experiments: concluído localmente.
+- Próximo gate: scanner, secret scan, Brain health e docs guard.

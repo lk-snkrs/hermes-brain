@@ -75,3 +75,10 @@ Observação: o candidato do scanner `mission-control-mesa-coo` foi separado em 
 - `areas/lk/sub-areas/growth/projetos/seo-cro-weekly-improvement/` — LK SEO / CRO Weekly Improvement.
 - `areas/lk/sub-areas/growth/projetos/rewards-loyalty-trust/` — LK Rewards / Loyalty / Trust.
 - `areas/lk/sub-areas/atendimento/projetos/whatsapp-integration-platform/` — LK WhatsApp Integration Platform.
+
+## Onda 7 — executada localmente em 2026-06-10
+
+- `areas/lk/sub-areas/collection-optimizer/projetos/collection-sort-automation/` — LK Collection Sort Automation.
+- `areas/lk/sub-areas/shopify/projetos/catalog-badges-sync/` — LK Catalog Badges Sync.
+- `areas/lk/sub-areas/collection-optimizer/projetos/editorial-collection-guides/` — LK Editorial Collection Guides.
+- `areas/lk/sub-areas/growth/projetos/source-pages-geo-experiments/` — LK Source Pages / GEO Experiments.

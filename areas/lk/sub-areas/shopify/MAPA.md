@@ -97,3 +97,4 @@ Quando Lucas aprovar um write:
 ## Projetos Brain OS
 
 - `projetos/product-upload-bot/` — hub canônico Brain OS Onda 3 para upload/cadastro Shopify, approval packets, bot/especialista e guardrails de write/readback.
+- `projetos/catalog-badges-sync/` — hub canônico Brain OS Onda 7 para sync de badges/tags/superfície de catálogo Shopify com previews, snapshots e receipts.

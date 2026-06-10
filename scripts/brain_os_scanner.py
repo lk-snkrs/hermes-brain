@@ -257,6 +257,43 @@ PROJECT_DEFS = [
         'wave': 6,
     },
 
+    {
+        'id': 'collection-sort-automation',
+        'title': 'LK Collection Sort Automation',
+        'owner_area': 'areas/lk/sub-areas/collection-optimizer',
+        'suggested_hubs': ['areas/lk/sub-areas/collection-optimizer/projetos/collection-sort-automation'],
+        'terms': ['auto-sort', 'autosort', 'ruleb', 'rule b', 'manual collections', 'collection sorting', 'rollback-snapshot-pre-write'],
+        'risk': 'shopify_collection_order_write_or_receipt_confusion_risk',
+        'wave': 7,
+    },
+    {
+        'id': 'catalog-badges-sync',
+        'title': 'LK Catalog Badges Sync',
+        'owner_area': 'areas/lk/sub-areas/shopify',
+        'suggested_hubs': ['areas/lk/sub-areas/shopify/projetos/catalog-badges-sync'],
+        'terms': ['catalog badges', 'badge sync', 'badges sync', 'catalog-badges-sync', 'tag new', 'snapshot-before'],
+        'risk': 'shopify_badge_or_tag_write_without_current_source_risk',
+        'wave': 7,
+    },
+    {
+        'id': 'editorial-collection-guides',
+        'title': 'LK Editorial Collection Guides',
+        'owner_area': 'areas/lk/sub-areas/collection-optimizer',
+        'suggested_hubs': ['areas/lk/sub-areas/collection-optimizer/projetos/editorial-collection-guides'],
+        'terms': ['guia lk', 'collection guides', 'guias editoriais', 'source page', 'moon shoe', 'samba jane', '204l'],
+        'risk': 'production_page_or_theme_publish_without_research_qa_approval_risk',
+        'wave': 7,
+    },
+    {
+        'id': 'source-pages-geo-experiments',
+        'title': 'LK Source Pages / GEO Experiments',
+        'owner_area': 'areas/lk/sub-areas/growth',
+        'suggested_hubs': ['areas/lk/sub-areas/growth/projetos/source-pages-geo-experiments'],
+        'terms': ['seo geo', 'geo source', 'source pages', 'comparison table', 'llms', 'ai search', 'experiment ledger'],
+        'risk': 'seo_geo_experiment_mistaken_for_measured_production_gain_risk',
+        'wave': 7,
+    },
+
 ]
 
 
