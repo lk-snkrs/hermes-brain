@@ -47,3 +47,7 @@ pedido/cliente → segmentação → recomendação → preview Lucas → envio 
 - Não disparar campanha ou WhatsApp sem aprovação explícita.
 - Registrar resultado para fechar o ciclo de aprendizado.
 - HTML customer-facing de CRM não deve conter jargões internos como P1, Brain, preview, Klaviyo, sem envio, SKU/Tiny ou mecânica de estoque.
+
+## Projetos Brain OS
+
+- `projetos/recovery-os/` — hub canônico Brain OS Onda 4 para CRM Recovery OS: checkout/carrinho abandonado, Crisp/Hugo, n8n callbacks, WhatsApp Meta, Klaviyo e outcome tracking.

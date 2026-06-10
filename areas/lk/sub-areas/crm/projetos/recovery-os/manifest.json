@@ -1,0 +1,23 @@
+{
+  "schema": "brain-os-project-hub-v1",
+  "id": "lk-crm-recovery-os",
+  "title": "LK CRM Recovery OS",
+  "owner_area": "areas/lk/sub-areas/crm",
+  "hub_path": "areas/lk/sub-areas/crm/projetos/recovery-os",
+  "created_at": "2026-06-10",
+  "source": "brain-os-wave-4-local-documental",
+  "external_writes": false,
+  "runtime_changes": false,
+  "preserves_originals": true,
+  "files": [
+    "README.md",
+    "CURRENT_STATE.md",
+    "DECISIONS_AND_GUARDRAILS.md",
+    "ARTIFACT_INDEX.md",
+    "TIMELINE.md",
+    "NEXT_STEPS.md",
+    "manifest.json"
+  ],
+  "indexed_artifact_count": 9,
+  "guardrail_count": 4
+}

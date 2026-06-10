@@ -63,3 +63,7 @@ Toda recomendação precisa separar:
 - `areas/lk/templates/handoff-padrao-lk.md` — template canônico de handoff/receipt para LK Ops, LK Trends e LK Shopify.
 - `areas/lk/sub-areas/trends/references/lk-trends-primary-role-correction-2026-05-26.md`
 - `areas/lk/sub-areas/trends/reports/lk-trends-sourcing-packet-readonly-2026-05-26.md`
+
+## Projetos Brain OS
+
+- `projetos/sourcing-intelligence/` — hub canônico Brain OS Onda 4 para radar de tendências, sourcing intelligence e oportunidades de compra sem execução automática.

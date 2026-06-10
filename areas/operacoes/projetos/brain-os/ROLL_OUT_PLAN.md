@@ -70,3 +70,11 @@ Somente se Lucas aprovar:
 - Criar hub Theme / CRO Performance: concluído localmente.
 - Criar hub Executive Dashboards: concluído localmente.
 - Próximo gate: scanner, secret scan, Brain health e docs guard.
+
+## Status Onda 4 — 2026-06-10
+
+- Criar hub LK CRM Recovery OS: concluído localmente.
+- Criar hub LK Trends / Sourcing Intelligence: concluído localmente.
+- Criar hub LK E-commerce Orders / Checkout: concluído localmente.
+- Normalizar hub LK Atendimento / Chatwoot / Elle: concluído localmente.
+- Próximo gate: scanner, secret scan, Brain health e docs guard.

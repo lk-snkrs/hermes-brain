@@ -146,6 +146,43 @@ PROJECT_DEFS = [
         'wave': 3,
     },
 
+    {
+        'id': 'lk-crm-recovery-os',
+        'title': 'LK CRM Recovery OS',
+        'owner_area': 'areas/lk/sub-areas/crm',
+        'suggested_hubs': ['areas/lk/sub-areas/crm/projetos/recovery-os'],
+        'terms': ['checkout abandonado', 'carrinho abandonado', 'crisp', 'hugo', 'whatsapp', 'meta templates', 'klaviyo', 'rfm', 'cross-sell'],
+        'risk': 'external_contact_and_crm_automation_risk',
+        'wave': 4,
+    },
+    {
+        'id': 'lk-trends-sourcing-intelligence',
+        'title': 'LK Trends / Sourcing Intelligence',
+        'owner_area': 'areas/lk/sub-areas/trends',
+        'suggested_hubs': ['areas/lk/sub-areas/trends/projetos/sourcing-intelligence'],
+        'terms': ['trends', 'tendencia', 'tendência', 'sourcing', 'droper', 'stockx', 'goat', 'fornecedor', 'compras'],
+        'risk': 'purchase_negotiation_or_supplier_contact_risk',
+        'wave': 4,
+    },
+    {
+        'id': 'lk-ecommerce-orders-checkout',
+        'title': 'LK E-commerce Orders / Checkout',
+        'owner_area': 'areas/lk/sub-areas/ecommerce',
+        'suggested_hubs': ['areas/lk/sub-areas/ecommerce/projetos/orders-checkout'],
+        'terms': ['ecommerce', 'e-commerce', 'checkout', 'pedido', 'pedidos', 'frete', 'pagamento', 'catalogo', 'catálogo'],
+        'risk': 'order_checkout_customer_promise_risk',
+        'wave': 4,
+    },
+    {
+        'id': 'lk-atendimento-chatwoot-elle',
+        'title': 'LK Atendimento / Chatwoot / Elle',
+        'owner_area': 'areas/lk/sub-areas/atendimento',
+        'suggested_hubs': ['areas/lk/sub-areas/atendimento/projetos/chatwoot'],
+        'terms': ['atendimento', 'chatwoot', 'elle', 'whatsapp', 'ops', 'loja', 'resposta', 'cliente'],
+        'risk': 'customer_support_external_message_risk',
+        'wave': 4,
+    },
+
 ]
 
 

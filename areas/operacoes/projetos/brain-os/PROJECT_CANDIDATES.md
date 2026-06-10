@@ -54,3 +54,10 @@ Observação: o candidato do scanner `mission-control-mesa-coo` foi separado em 
 - `areas/lk/sub-areas/trafego-pago/projetos/meta-ads-performance/` — Meta Ads Performance.
 - `areas/lk/sub-areas/growth/projetos/theme-cro-performance/` — Theme / CRO Performance.
 - `areas/operacoes/projetos/executive-dashboards/` — Executive Dashboards.
+
+## Onda 4 — executada localmente em 2026-06-10
+
+- `areas/lk/sub-areas/crm/projetos/recovery-os/` — LK CRM Recovery OS.
+- `areas/lk/sub-areas/trends/projetos/sourcing-intelligence/` — LK Trends / Sourcing Intelligence.
+- `areas/lk/sub-areas/ecommerce/projetos/orders-checkout/` — LK E-commerce Orders / Checkout.
+- `areas/lk/sub-areas/atendimento/projetos/chatwoot/` — LK Atendimento / Chatwoot / Elle; hub existente normalizado no scanner/rollout.

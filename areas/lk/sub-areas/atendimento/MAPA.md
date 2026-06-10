@@ -40,3 +40,7 @@ LK Growth cuida de SEO/GEO/CRO/GMC/conteúdo/analytics. LK Ops/Atendimento cuida
 - Começar por: `projetos/chatwoot/README.md` e `projetos/chatwoot/CURRENT_STATE.md`.
 - Inventário completo: `projetos/chatwoot/ARTIFACT_INDEX.md` e `projetos/chatwoot/manifest.json`.
 - Guardrail: Chatwoot pode receber contexto/nota interna quando aprovado; mensagens externas/WhatsApp/campanhas/writes seguem aprovação escopada, fonte viva, snapshot, readback e receipt.
+
+## Projetos Brain OS
+
+- `projetos/chatwoot/` — hub canônico Brain OS Onda 4 para Atendimento/Chatwoot/Elle e recovery engine assistido.
