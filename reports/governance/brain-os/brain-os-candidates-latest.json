@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-10T21:14:14.443267+00:00",
+  "generated_at": "2026-06-10T21:20:22.823771+00:00",
   "root": "/opt/data/hermes_bruno_ingest/hermes-brain",
   "mode": "read_only_scan",
   "scanner_version": "brain-os-v1",
-  "total_text_files_scanned": 17352,
+  "total_text_files_scanned": 17381,
   "candidates": [
     {
       "id": "lk-growth-gmc-shopify-meta",
@@ -19,8 +19,8 @@
       ],
       "wave": 1,
       "risk": "high_external_write_risk",
-      "owner_file_count": 10953,
-      "term_hit_files": 9999,
+      "owner_file_count": 10967,
+      "term_hit_files": 10013,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -69,8 +69,8 @@
       ],
       "wave": 1,
       "risk": "source_of_truth_confusion",
-      "owner_file_count": 7886,
-      "term_hit_files": 8356,
+      "owner_file_count": 7893,
+      "term_hit_files": 8363,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -168,7 +168,7 @@
       "wave": 1,
       "risk": "context_truth_and_runtime_claim_risk",
       "owner_file_count": 362,
-      "term_hit_files": 251,
+      "term_hit_files": 252,
       "sample_artifacts": [
         "AGENTS.md",
         "reports/memory-hygiene-2026-05-09.md",
@@ -266,7 +266,7 @@
       "wave": 2,
       "risk": "personal_external_action_risk",
       "owner_file_count": 362,
-      "term_hit_files": 635,
+      "term_hit_files": 642,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -414,8 +414,8 @@
       ],
       "wave": 3,
       "risk": "theme_production_write_risk",
-      "owner_file_count": 10953,
-      "term_hit_files": 6889,
+      "owner_file_count": 10967,
+      "term_hit_files": 6896,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -659,8 +659,8 @@
       ],
       "wave": 4,
       "risk": "customer_support_external_message_risk",
-      "owner_file_count": 251,
-      "term_hit_files": 763,
+      "owner_file_count": 258,
+      "term_hit_files": 770,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -709,7 +709,7 @@
       "wave": 4,
       "risk": "external_contact_and_crm_automation_risk",
       "owner_file_count": 117,
-      "term_hit_files": 588,
+      "term_hit_files": 595,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -758,7 +758,7 @@
       "wave": 4,
       "risk": "purchase_negotiation_or_supplier_contact_risk",
       "owner_file_count": 77,
-      "term_hit_files": 343,
+      "term_hit_files": 350,
       "sample_artifacts": [
         "lessons.md",
         "HEARTBEAT.md",
@@ -791,7 +791,7 @@
         "reports/brain-health-lk-sourcing-ops-v2-2026-05-15.json",
         "reports/lk-compras-julio-notion-preview-droper-15-2026-05-14.json"
       ],
-      "score": 28,
+      "score": 29,
       "recommendation": "monitor_or_refine_existing_hub"
     },
     {
@@ -855,8 +855,8 @@
       ],
       "wave": 5,
       "risk": "telegram_noise_or_stale_report_risk",
-      "owner_file_count": 22101,
-      "term_hit_files": 8345,
+      "owner_file_count": 22129,
+      "term_hit_files": 8353,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -904,7 +904,7 @@
       ],
       "wave": 5,
       "risk": "approval_history_misuse_or_ledger_manipulation_risk",
-      "owner_file_count": 22101,
+      "owner_file_count": 22129,
       "term_hit_files": 2904,
       "sample_artifacts": [
         "TOOLS.md",
@@ -953,7 +953,7 @@
       ],
       "wave": 5,
       "risk": "cross_specialist_runtime_confusion_risk",
-      "owner_file_count": 22101,
+      "owner_file_count": 22129,
       "term_hit_files": 296,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -1002,7 +1002,7 @@
       ],
       "wave": 5,
       "risk": "stale_or_conflicting_source_of_truth_risk",
-      "owner_file_count": 22101,
+      "owner_file_count": 22129,
       "term_hit_files": 273,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -1038,6 +1038,202 @@
       ],
       "score": 65,
       "recommendation": "canonical_hub_needed"
+    },
+    {
+      "id": "lk-sourcing-procurement-os",
+      "title": "LK Sourcing / Procurement OS",
+      "owner_area": "areas/lk/sub-areas/stock",
+      "suggested_hubs": [
+        "areas/lk/sub-areas/stock/projetos/sourcing-procurement-os"
+      ],
+      "existing_hubs": [
+        "areas/lk/sub-areas/stock/projetos/sourcing-procurement-os"
+      ],
+      "wave": 6,
+      "risk": "external_purchase_or_supplier_contact_without_approval_risk",
+      "owner_file_count": 7893,
+      "term_hit_files": 303,
+      "sample_artifacts": [
+        "AGENTS.md",
+        "HEARTBEAT.md",
+        "CHANGELOG.md",
+        "receipts/hermes-v016-next-adoption-packet-receipt-2026-06-06.md",
+        "receipts/hermes-v016-adoption-os-local-docs-receipt-2026-06-06.md",
+        "reports/lk-fila-a-sourcing-validation-and-quote-preview-2026-05-11.json",
+        "reports/lk-gmc-required-attrs-verify-2026-05-12.json",
+        "reports/lk-mission-control-snapshot-2026-05-14.csv",
+        "reports/lk-phase5-p1-klaviyo-klaviyo-objects-2026-05-11.json",
+        "reports/lk-p0-remaining-tiny-code-preview-2026-05-11.json",
+        "reports/lk-os-droper-readonly-approval-packet-18-2026-05-14.md",
+        "reports/lk-gmc-2026-05-15-approved-packets-a42-b20.json",
+        "reports/lk-os-stockout-recompra-sourcing-validation-queue-2026-05-13.json",
+        "reports/lk-os-mission-control-v2-commercial-state-2026-05-15.json",
+        "reports/lk-compras-julio-notion-payload-inline-droper-15-2026-05-14.json",
+        "reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.csv",
+        "reports/lk-os-droper-readonly-results-18-2026-05-14.md",
+        "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.md",
+        "reports/lk-stock-sku-saneamento-b-e-preview-a-2026-05-11.json",
+        "reports/lk-os-current-next-decision-queue-2026-05-13.md",
+        "reports/lk-influencer-sku-stock-matrix-readonly-2026-05-10.md",
+        "reports/lk-gmc-2026-05-13-p2a-residual-jh5439-color-approval-packet.md",
+        "reports/lk-seo-cro-decision-grade-refresh-2026-05-18.json",
+        "reports/lk-seo-cro-seo-fields-runner-gate-2026-05-18.md",
+        "reports/lk-gmc-required-attrs-datafeed-refresh-2026-05-12.json",
+        "reports/lk-os-weekly-ceo-review-2026-05-04_2026-05-10.json",
+        "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json",
+        "reports/lk-on-demand-sourcing-router-readiness-guard-2026-05-11.json",
+        "reports/lk-os-data-quality-layer-audit-2026-05-15.json",
+        "reports/lk-shopify-tiny-residual-fila-b-2026-05-11.json"
+      ],
+      "score": 67,
+      "recommendation": "canonical_hub_needed"
+    },
+    {
+      "id": "lk-seo-cro-weekly-improvement",
+      "title": "LK SEO / CRO Weekly Improvement",
+      "owner_area": "areas/lk/sub-areas/growth",
+      "suggested_hubs": [
+        "areas/lk/sub-areas/growth/projetos/seo-cro-weekly-improvement"
+      ],
+      "existing_hubs": [
+        "areas/lk/sub-areas/growth/projetos/seo-cro-weekly-improvement"
+      ],
+      "wave": 6,
+      "risk": "preview_or_readonly_evidence_mistaken_for_production_change_risk",
+      "owner_file_count": 10967,
+      "term_hit_files": 250,
+      "sample_artifacts": [
+        "CHANGELOG.md",
+        "reports/hermes-host-docker-observability-2026-05-19.json",
+        "reports/lk-os-current-next-decision-queue-2026-05-13.md",
+        "reports/lk-seo-cro-decision-grade-refresh-2026-05-18.json",
+        "reports/lk-seo-cro-seo-fields-runner-gate-2026-05-18.md",
+        "reports/lk-search-console-readonly-router-2026-05-11.json",
+        "reports/lk-moon-shoe-impact-readonly-2026-06-01.md",
+        "reports/hermes-host-docker-observability-2026-05-22.json",
+        "reports/lk-growth-geo-seo-claude-audit-2026-05-25.md",
+        "reports/hermes-host-docker-observability-2026-05-18.json",
+        "reports/hermes-host-docker-observability-2026-05-14.json",
+        "reports/lk-seo-cro-p1-approval-packets-2026-05-18.json",
+        "reports/lk-seo-cro-title-meta-preview-2026-05-11.json",
+        "reports/lk-gmc-weekly-review-2026-05-21.md",
+        "reports/hermes-host-docker-observability-2026-05-16-post-v014-fixed.json",
+        "reports/hermes-host-docker-observability-2026-05-16-post-v014-alert.json",
+        "reports/hermes-host-docker-observability-pre-v014-2026-05-16-111350.json",
+        "reports/lk-seo-cro-approved-seo-fields-execution-2026-05-18.json",
+        "reports/lk-search-console-readonly-router-2026-05-11.md",
+        "reports/lk-mission-control-snapshot-2026-05-12.json",
+        "reports/lk-growth-weekly-revenue-opportunity-2026-05-19.md",
+        "reports/lk-seo-cro-p1-impact-review-2026-05-25.md",
+        "reports/lk-seo-cro-weekly-2026-05-11.json",
+        "reports/lk-cro-conversion-preview-v0-2026-05-18.json",
+        "reports/lk-seo-cro-seo-fields-runner-gate-2026-05-18.json",
+        "reports/lk-seo-cro-p1-impact-review-2026-05-25.json",
+        "reports/lk-cro-weekly-preview-top-priorities-2026-05-19.csv",
+        "reports/lk-seo-cro-decision-grade-refresh-2026-05-18.csv",
+        "reports/lk-seo-cro-p1-approval-packets-2026-05-18.md",
+        "reports/lk-phase8-completion-audit-2026-05-11.json"
+      ],
+      "score": 65,
+      "recommendation": "canonical_hub_needed"
+    },
+    {
+      "id": "lk-rewards-loyalty-trust",
+      "title": "LK Rewards / Loyalty / Trust",
+      "owner_area": "areas/lk/sub-areas/growth",
+      "suggested_hubs": [
+        "areas/lk/sub-areas/growth/projetos/rewards-loyalty-trust"
+      ],
+      "existing_hubs": [
+        "areas/lk/sub-areas/growth/projetos/rewards-loyalty-trust"
+      ],
+      "wave": 6,
+      "risk": "customer_benefit_or_commercial_promise_without_policy_risk",
+      "owner_file_count": 10967,
+      "term_hit_files": 151,
+      "sample_artifacts": [
+        "TOOLS.md",
+        "ROADMAP-30-DIAS-HERMES.md",
+        "reports/lk-os-current-next-decision-queue-2026-05-13.md",
+        "reports/lk-meta-campaign-title-roas-readonly-2026-05-10.json",
+        "reports/lk-gmc-2026-05-13-p1-attribute-completion-wave2-pilot-executor.md",
+        "reports/lk-gmc-2026-05-13-p1-attribute-wave2-post-status-recheck.md",
+        "reports/lk-gmc-2026-05-13-p1-attribute-completion-onda1-executor.md",
+        "reports/lk-gmc-2026-05-13-p1-attribute-wave4-aggressive-nonprice-timeout-recovered-verify.md",
+        "reports/lk-gmc-2026-05-13-p1-attribute-wave5-final-size-default-executor.md",
+        "reports/lk-gmc-2026-05-13-p1-attribute-wave5-final-size-timeout-recovered-verify.json",
+        "reports/lk-os-current-next-decision-queue-2026-05-13.json",
+        "reports/lk-gmc-p1-attribute-completion-packet-v2-2026-05-13.json",
+        "reports/lk-os-next-execution-queue-2026-05-13.md",
+        "reports/lk-gmc-2026-05-13-p1-attribute-wave5-final-size-default-executor.json",
+        "reports/lk-gmc-2026-05-13-p1-attribute-post-apply-wave2-review.md",
+        "reports/revisao-operacional-multiempresa-hermes-geral-2026-05-16.md",
+        "reports/lk-gmc-p1-attribute-completion-packet-v2-2026-05-13.md",
+        "reports/lk-gmc-2026-05-13-p1-attribute-wave6-price-shopify-source-executor.md",
+        "reports/lk-gmc-2026-05-13-p1-attribute-completion-onda1-executor.json",
+        "reports/lk-gmc-2026-05-13-p1-attribute-wave3-flexible-executor.md",
+        "reports/lk-gmc-2026-05-13-p1-attribute-wave3-color-tag-executor.md",
+        "reports/lk-gmc-2026-05-13-p1-attribute-remaining-wave3-preview.md",
+        "reports/lk-gmc-2026-05-13-p1-attribute-wave4-aggressive-nonprice-executor.md",
+        "reports/lk-gmc-2026-05-13-p1-attribute-wave5-final-size-timeout-recovered-verify.md",
+        "reports/lk-gmc-2026-05-13-p1-attribute-wave6-price-shopify-source-executor.json",
+        "reports/lk-gmc-2026-05-13-p1-attribute-wave3-color-tag-executor.json",
+        "reports/cwc-vs-hermes-analysis.md",
+        "reports/daily-consolidation/2026-06-07.md",
+        "reports/daily-consolidation/2026-06-09-handoff.json",
+        "reports/daily-consolidation/2026-06-07-handoff.json"
+      ],
+      "score": 61,
+      "recommendation": "canonical_hub_needed"
+    },
+    {
+      "id": "lk-whatsapp-integration-platform",
+      "title": "LK WhatsApp Integration Platform",
+      "owner_area": "areas/lk/sub-areas/atendimento",
+      "suggested_hubs": [
+        "areas/lk/sub-areas/atendimento/projetos/whatsapp-integration-platform"
+      ],
+      "existing_hubs": [
+        "areas/lk/sub-areas/atendimento/projetos/whatsapp-integration-platform"
+      ],
+      "wave": 6,
+      "risk": "external_customer_or_supplier_message_without_approval_risk",
+      "owner_file_count": 258,
+      "term_hit_files": 263,
+      "sample_artifacts": [
+        "TOOLS.md",
+        "ROADMAP-30-DIAS-HERMES.md",
+        "README.md",
+        "AGENTS.md",
+        "MAPA.md",
+        "START-HERE.md",
+        "CHANGELOG.md",
+        "ARCHITECTURE.md",
+        "REVIEW-CHECKLIST.md",
+        "reports/lk-os-current-next-decision-queue-2026-05-13.md",
+        "reports/brain-improvement-score-2026-05-09.md",
+        "reports/lk-os-wacli-openclaw-whatsapp-contract-2026-05-13.json",
+        "reports/hermes-host-docker-observability-2026-05-24.json",
+        "reports/hermes-host-docker-observability-2026-06-05.json",
+        "reports/lk-compras-ranking-preview-2026-05-13.json",
+        "reports/lk-os-current-next-decision-queue-2026-05-13.json",
+        "reports/lk-os-next-execution-queue-2026-05-13.md",
+        "reports/hermes-host-docker-observability-2026-05-25.json",
+        "reports/hermes-host-docker-observability-2026-06-04.json",
+        "reports/lk-compras-whatsapp-signal-queue-2026-05-13.json",
+        "reports/hermes-host-docker-observability-2026-06-03.json",
+        "reports/lk-gmc-2026-05-13-p1-price-wave6-blocked-merchant-api-v1.md",
+        "reports/hermes-host-docker-observability-2026-06-07-watchdog-recheck.json",
+        "reports/lk-os-stockout-recompra-ranking-notion-preflight-2026-05-14.json",
+        "reports/lk-gmc-2026-05-13-p1-price-merchant-api-v1-final-verified.md",
+        "reports/hermes-host-docker-observability-2026-06-08.json",
+        "reports/hermes-host-docker-observability-2026-05-17.json",
+        "reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md",
+        "reports/lk-compras-ranking-preview-2026-05-13.md",
+        "reports/hermes-host-docker-observability-2026-05-31.json"
+      ],
+      "score": 27,
+      "recommendation": "monitor_or_refine_existing_hub"
     }
   ]
 }

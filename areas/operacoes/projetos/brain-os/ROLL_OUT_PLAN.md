@@ -86,3 +86,11 @@ Somente se Lucas aprovar:
 - Criar hub LK Reporting / Briefings: concluído localmente.
 - Criar hub LK Approval / Learning Ledger: concluído localmente.
 - Próximo gate: scanner, secret scan, Brain health e docs guard.
+
+## Status Onda 6 — 2026-06-10
+
+- Criar hub LK Sourcing / Procurement OS: concluído localmente.
+- Criar hub LK SEO / CRO Weekly Improvement: concluído localmente.
+- Criar hub LK Rewards / Loyalty / Trust: concluído localmente.
+- Criar hub LK WhatsApp Integration Platform: concluído localmente.
+- Próximo gate: scanner, secret scan, Brain health e docs guard.

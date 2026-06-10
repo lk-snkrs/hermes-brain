@@ -44,3 +44,4 @@ LK Growth cuida de SEO/GEO/CRO/GMC/conteúdo/analytics. LK Ops/Atendimento cuida
 ## Projetos Brain OS
 
 - `projetos/chatwoot/` — hub canônico Brain OS Onda 4 para Atendimento/Chatwoot/Elle e recovery engine assistido.
+- `projetos/whatsapp-integration-platform/` — hub canônico Brain OS Onda 6 para LK WhatsApp Integration Platform.

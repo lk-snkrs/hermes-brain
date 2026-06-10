@@ -144,3 +144,5 @@ Não duplicar regras longas aqui. Este arquivo deve apenas complementar seu esco
 
 - `projetos/gmc-merchant-center/` — hub canônico inicial para GMC/Merchant Center dentro de LK Growth.
 - `projetos/theme-cro-performance/` — hub canônico Brain OS Onda 3 para theme/CRO/performance, previews, PageSpeed/CWV e impact reviews.
+- `projetos/seo-cro-weekly-improvement/` — hub canônico Brain OS Onda 6 para LK SEO / CRO Weekly Improvement.
+- `projetos/rewards-loyalty-trust/` — hub canônico Brain OS Onda 6 para LK Rewards / Loyalty / Trust.

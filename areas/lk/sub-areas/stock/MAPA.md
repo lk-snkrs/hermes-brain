@@ -47,3 +47,4 @@ Este agente pode diagnosticar, ranquear, criar fila e preparar pacotes. Não pod
 ## Projetos Brain OS
 
 - `projetos/tiny-estoque-source-of-truth/` — hub canônico inicial para Tiny/estoque como fonte da verdade.
+- `projetos/sourcing-procurement-os/` — hub canônico Brain OS Onda 6 para LK Sourcing / Procurement OS.

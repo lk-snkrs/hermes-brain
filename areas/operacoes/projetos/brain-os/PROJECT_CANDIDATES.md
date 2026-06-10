@@ -68,3 +68,10 @@ Observação: o candidato do scanner `mission-control-mesa-coo` foi separado em 
 - `areas/lk/projetos/data-quality-layer/` — LK Data Quality Layer.
 - `areas/lk/projetos/reporting-briefings/` — LK Reporting / Briefings.
 - `areas/lk/projetos/approval-learning-ledger/` — LK Approval / Learning Ledger.
+
+## Onda 6 — executada localmente em 2026-06-10
+
+- `areas/lk/sub-areas/stock/projetos/sourcing-procurement-os/` — LK Sourcing / Procurement OS.
+- `areas/lk/sub-areas/growth/projetos/seo-cro-weekly-improvement/` — LK SEO / CRO Weekly Improvement.
+- `areas/lk/sub-areas/growth/projetos/rewards-loyalty-trust/` — LK Rewards / Loyalty / Trust.
+- `areas/lk/sub-areas/atendimento/projetos/whatsapp-integration-platform/` — LK WhatsApp Integration Platform.

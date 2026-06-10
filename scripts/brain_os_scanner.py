@@ -220,6 +220,43 @@ PROJECT_DEFS = [
         'wave': 5,
     },
 
+    {
+        'id': 'lk-sourcing-procurement-os',
+        'title': 'LK Sourcing / Procurement OS',
+        'owner_area': 'areas/lk/sub-areas/stock',
+        'suggested_hubs': ['areas/lk/sub-areas/stock/projetos/sourcing-procurement-os'],
+        'terms': ['sourcing', 'compras', 'recompra', 'stockout', 'quote', 'cotação', 'fornecedor', 'supplier', 'mission-control-sourcing'],
+        'risk': 'external_purchase_or_supplier_contact_without_approval_risk',
+        'wave': 6,
+    },
+    {
+        'id': 'lk-seo-cro-weekly-improvement',
+        'title': 'LK SEO / CRO Weekly Improvement',
+        'owner_area': 'areas/lk/sub-areas/growth',
+        'suggested_hubs': ['areas/lk/sub-areas/growth/projetos/seo-cro-weekly-improvement'],
+        'terms': ['seo cro', 'seo-cro', 'search console', 'seo fields', 'cro weekly', 'conversion preview', 'decision-grade'],
+        'risk': 'preview_or_readonly_evidence_mistaken_for_production_change_risk',
+        'wave': 6,
+    },
+    {
+        'id': 'lk-rewards-loyalty-trust',
+        'title': 'LK Rewards / Loyalty / Trust',
+        'owner_area': 'areas/lk/sub-areas/growth',
+        'suggested_hubs': ['areas/lk/sub-areas/growth/projetos/rewards-loyalty-trust'],
+        'terms': ['rewards', 'loyalty', 'trust spine', 'rivo', 'judgeme', 'milestone', 'cashback'],
+        'risk': 'customer_benefit_or_commercial_promise_without_policy_risk',
+        'wave': 6,
+    },
+    {
+        'id': 'lk-whatsapp-integration-platform',
+        'title': 'LK WhatsApp Integration Platform',
+        'owner_area': 'areas/lk/sub-areas/atendimento',
+        'suggested_hubs': ['areas/lk/sub-areas/atendimento/projetos/whatsapp-integration-platform'],
+        'terms': ['whatsapp hermes', 'wacli', 'openclaw', 'agent number', 'whatsapp integration', 'whatsapp notion', 'signal queue'],
+        'risk': 'external_customer_or_supplier_message_without_approval_risk',
+        'wave': 6,
+    },
+
 ]
 
 
