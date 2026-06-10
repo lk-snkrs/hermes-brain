@@ -48,9 +48,15 @@ Antes de qualquer nova ação em Chatwoot/Elle/LK Atendimento:
 3. Se envolver Chatwoot/Shopify/WhatsApp/Evolution/API/runtime/cliente, exigir fonte viva + aprovação escopada + snapshot/readback/receipt.
 4. Registrar novo receipt usando `/opt/data/scripts/hermes_memory_os_receipt_writer.py`.
 
+## Status GitHub
+
+Esta pasta canônica foi commitada e pushada para o repositório `lk-snkrs/hermes-brain`.
+
+- Branch: `consolidation/brain-filesystem-git-hygiene-20260516`
+- Commit inicial do hub: `7d3566a3a7c091d50494aeddcf042fb0d19bd8b7`
+
 ## O que esta consolidação NÃO fez
 
 - Não moveu nem apagou arquivos históricos.
-- Não fez push para GitHub.
 - Não alterou Chatwoot, Shopify, WhatsApp, Evolution, Docker, VPS, gateway, cron ou runtime.
 - Não copiou secrets para esta pasta.
