@@ -1,0 +1,23 @@
+{
+  "schema": "brain-os-project-hub-v1",
+  "id": "lk-ecommerce-orders-checkout",
+  "title": "LK E-commerce Orders / Checkout",
+  "owner_area": "areas/lk/sub-areas/ecommerce",
+  "hub_path": "areas/lk/sub-areas/ecommerce/projetos/orders-checkout",
+  "created_at": "2026-06-10",
+  "source": "brain-os-wave-4-local-documental",
+  "external_writes": false,
+  "runtime_changes": false,
+  "preserves_originals": true,
+  "files": [
+    "README.md",
+    "CURRENT_STATE.md",
+    "DECISIONS_AND_GUARDRAILS.md",
+    "ARTIFACT_INDEX.md",
+    "TIMELINE.md",
+    "NEXT_STEPS.md",
+    "manifest.json"
+  ],
+  "indexed_artifact_count": 8,
+  "guardrail_count": 4
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "brain_os_project_manifest_v1",
+  "project_id": "shopify-growth-os",
+  "title": "Shopify Growth OS / LK Growth",
+  "created_at": "2026-06-11T13:05:00+00:00",
+  "updated_at": "2026-06-11T13:05:00+00:00",
+  "owner_area": "areas/lk/sub-areas/growth",
+  "hub_path": "areas/lk/sub-areas/growth/projetos/shopify-growth-os",
+  "mode": "canonical_index_preserve_originals",
+  "external_writes": false,
+  "source_of_truth": [
+    "Shopify live/admin only when consulted read-only or with scoped approval",
+    "GA4/GSC/GMC as demand and performance context",
+    "Brain as evidence/history/decisions, not live store state"
+  ],
+  "guardrails": [
+    "No Shopify product, collection, theme, SEO field, metafield, price, inventory, or production write without explicit scoped approval",
+    "DEV/theme preview is not production truth",
+    "Do not infer current Shopify state from backups, reports, or historical receipts"
+  ],
+  "scanner_candidate_id": "lk-growth-gmc-shopify-meta",
+  "scanner_score": 90,
+  "wave": 14,
+  "artifact_count": "scanner_gap_closure",
+  "artifact_sample": [
+    "areas/lk/sub-areas/growth/MAPA.md",
+    "areas/lk/sub-areas/growth/AGENTS.md",
+    "areas/lk/sub-areas/growth/CONNECTORS-READONLY-INVENTORY.md",
+    "areas/lk/sub-areas/growth/projetos/theme-cro-performance/",
+    "areas/lk/sub-areas/shopify/projetos/product-upload-bot/"
+  ],
+  "required_files": [
+    "README.md",
+    "CURRENT_STATE.md",
+    "DECISIONS_AND_GUARDRAILS.md",
+    "ARTIFACT_INDEX.md",
+    "TIMELINE.md",
+    "NEXT_STEPS.md"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "brain_os_project_manifest_v1",
+  "project_id": "pronta-entrega-pos",
+  "title": "Pronta Entrega / POS / LK Stock",
+  "created_at": "2026-06-11T13:05:00+00:00",
+  "updated_at": "2026-06-11T13:05:00+00:00",
+  "owner_area": "areas/lk/sub-areas/stock",
+  "hub_path": "areas/lk/sub-areas/stock/projetos/pronta-entrega-pos",
+  "mode": "canonical_index_preserve_originals",
+  "external_writes": false,
+  "source_of_truth": [
+    "Tiny / LK | CONTROLE ESTOQUE as live stock truth when consulted",
+    "Shopify orders/items and POS/sales reports as demand evidence",
+    "Brain as historical evidence and approval ledger"
+  ],
+  "guardrails": [
+    "No availability promise, reservation, transfer, purchase, supplier contact, or Tiny/Shopify write without scoped approval",
+    "Fixtures/probes/test data never feed operational stock scores or P0/P1 recommendations",
+    "Pronta entrega is an internal operational signal, not public SEO taxonomy"
+  ],
+  "scanner_candidate_id": "lk-stock-tiny-pos",
+  "scanner_score": 90,
+  "wave": 14,
+  "artifact_count": "scanner_gap_closure",
+  "artifact_sample": [
+    "areas/lk/sub-areas/stock/MAPA.md",
+    "areas/lk/sub-areas/stock/AGENTS.md",
+    "areas/lk/sub-areas/stock/rotinas/best-seller-ready-stock-score-v0.md",
+    "areas/lk/sub-areas/stock/templates/stock-action-packet.md",
+    "areas/lk/sub-areas/stock/projetos/tiny-estoque-source-of-truth/"
+  ],
+  "required_files": [
+    "README.md",
+    "CURRENT_STATE.md",
+    "DECISIONS_AND_GUARDRAILS.md",
+    "ARTIFACT_INDEX.md",
+    "TIMELINE.md",
+    "NEXT_STEPS.md"
+  ]
+}
