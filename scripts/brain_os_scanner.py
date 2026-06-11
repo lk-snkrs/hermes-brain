@@ -1,0 +1,619 @@
+#!/usr/bin/env python3
+"""Brain OS scanner: local/read-only candidate discovery for canonical project hubs.
+
+This script does not mutate the Brain. It scans markdown/json/text-like artifact paths,
+computes project-sprawl signals, and writes a sanitized JSON report when requested.
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import re
+from dataclasses import dataclass, asdict
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Iterable
+
+DEFAULT_ROOT = Path('/opt/data/hermes_bruno_ingest/hermes-brain')
+TEXT_EXTS = {'.md', '.json', '.txt', '.yaml', '.yml', '.csv'}
+EXCLUDE_PARTS = {'.git', '__pycache__'}
+
+PROJECT_DEFS = [
+    {
+        'id': 'lk-growth-gmc-shopify-meta',
+        'title': 'LK Growth / Shopify / GMC / Meta',
+        'owner_area': 'areas/lk/sub-areas/growth',
+        'suggested_hubs': [
+            'areas/lk/sub-areas/growth/projetos/gmc-merchant-center',
+            'areas/lk/sub-areas/growth/projetos/shopify-growth-os',
+        ],
+        'terms': ['growth', 'gmc', 'merchant', 'shopify', 'meta', 'ads', 'facebook', 'instagram', 'klaviyo', 'cro'],
+        'risk': 'high_external_write_risk',
+        'wave': 1,
+    },
+    {
+        'id': 'lk-stock-tiny-pos',
+        'title': 'LK Estoque / Tiny / POS / Pronta Entrega',
+        'owner_area': 'areas/lk/sub-areas/stock',
+        'suggested_hubs': [
+            'areas/lk/sub-areas/stock/projetos/tiny-estoque-source-of-truth',
+            'areas/lk/sub-areas/stock/projetos/pronta-entrega-pos',
+        ],
+        'terms': ['tiny', 'estoque', 'stock', 'pos', 'pronta entrega', 'produto', 'shopify-stock'],
+        'risk': 'source_of_truth_confusion',
+        'wave': 1,
+    },
+    {
+        'id': 'lkgoc-collection-optimizer',
+        'title': 'LKGOC Collection Optimizer',
+        'owner_area': 'areas/lk/sub-areas/collection-optimizer',
+        'suggested_hubs': ['areas/lk/sub-areas/collection-optimizer/projetos/lkgoc-collection-optimizer'],
+        'terms': ['collection optimizer', 'lkgoc', 'colecao', 'collection', 'scorecard', 'qa'],
+        'risk': 'production_theme_or_shopify_write_risk',
+        'wave': 1,
+    },
+    {
+        'id': 'memory-os',
+        'title': 'Hermes Memory OS',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/memory-os'],
+        'terms': ['memory os', 'memory-os', 'memoria', 'memory hygiene', 'auto-heal', 'context intelligence'],
+        'risk': 'context_truth_and_runtime_claim_risk',
+        'wave': 1,
+    },
+
+    {
+        'id': 'lk-content-klaviyo-agent',
+        'title': 'LK Content / Klaviyo Agent',
+        'owner_area': 'areas/lk/sub-areas/content',
+        'suggested_hubs': ['areas/lk/sub-areas/content/projetos/lk-content-klaviyo-agent'],
+        'terms': ['lk content', 'klaviyo', 'newsletter', 'calendar', 'calendario editorial', 'brand guide', 'content guide', 'dashboard'],
+        'risk': 'campaign_send_and_runtime_activation_risk',
+        'wave': 2,
+    },
+    {
+        'id': 'mission-control-mesa-coo',
+        'title': 'Mission Control / Mesa COO',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/mission-control', 'areas/operacoes/projetos/mesa-coo'],
+        'terms': ['mission control', 'mesa coo', 'decision inbox', 'decisao', 'telegram ux'],
+        'risk': 'approval_sequence_and_decision_state_risk',
+        'wave': 2,
+    },
+    {
+        'id': 'mordomo-os',
+        'title': 'Mordomo OS',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/mordomo-os'],
+        'terms': ['mordomo', 'whatsapp', 'wacli', 'calendar', 'follow-up', 'followup'],
+        'risk': 'personal_external_action_risk',
+        'wave': 2,
+    },
+    {
+        'id': 'zipper-email-crm-intake',
+        'title': 'Zipper Email / CRM / Leads Intake',
+        'owner_area': 'areas/zipper',
+        'suggested_hubs': ['areas/zipper/projetos/email-crm-intake'],
+        'terms': ['zipper', 'zpr', 'enquiry', 'crm', 'lead', 'email intake', 'vendas_tango'],
+        'risk': 'commercial_reply_and_human_approval_risk',
+        'wave': 2,
+    },
+    {
+        'id': 'spiti-bridge-governance',
+        'title': 'SPITI Bridge / Governance',
+        'owner_area': 'areas/spiti',
+        'suggested_hubs': ['areas/spiti/projetos/bridge-governance'],
+        'terms': ['spiti', 'lance', 'leilao', 'leilão', 'pregao', 'pregão', 'spiti-hub'],
+        'risk': 'auction_bid_source_of_truth_risk',
+        'wave': 3,
+    },
+    {
+        'id': 'lk-shopify-product-upload-bot',
+        'title': 'LK Shopify Product Upload / Bot',
+        'owner_area': 'areas/lk/sub-areas/shopify',
+        'suggested_hubs': ['areas/lk/sub-areas/shopify/projetos/product-upload-bot'],
+        'terms': ['product upload', 'cadastro produto', 'shopify product', 'variant', 'metafield', 'product-upload'],
+        'risk': 'shopify_product_write_risk',
+        'wave': 3,
+    },
+    {
+        'id': 'meta-ads-performance',
+        'title': 'Meta Ads Performance',
+        'owner_area': 'areas/lk/sub-areas/trafego-pago',
+        'suggested_hubs': ['areas/lk/sub-areas/trafego-pago/projetos/meta-ads-performance'],
+        'terms': ['meta ads', 'facebook ads', 'instagram ads', 'paid attribution', 'trafego pago', 'tráfego pago', 'roas'],
+        'risk': 'ads_campaign_write_risk',
+        'wave': 3,
+    },
+    {
+        'id': 'theme-cro-performance',
+        'title': 'Theme / CRO Performance',
+        'owner_area': 'areas/lk/sub-areas/growth',
+        'suggested_hubs': ['areas/lk/sub-areas/growth/projetos/theme-cro-performance'],
+        'terms': ['theme', 'cro', 'conversion', 'pagespeed', 'core web vitals', 'pdp', 'dev theme'],
+        'risk': 'theme_production_write_risk',
+        'wave': 3,
+    },
+    {
+        'id': 'executive-dashboards',
+        'title': 'Executive Dashboards',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/executive-dashboards'],
+        'terms': ['dashboard', 'mission control', 'snapshot', 'cockpit', 'executive', 'painel'],
+        'risk': 'snapshot_vs_live_state_risk',
+        'wave': 3,
+    },
+
+    {
+        'id': 'lk-crm-recovery-os',
+        'title': 'LK CRM Recovery OS',
+        'owner_area': 'areas/lk/sub-areas/crm',
+        'suggested_hubs': ['areas/lk/sub-areas/crm/projetos/recovery-os'],
+        'terms': ['checkout abandonado', 'carrinho abandonado', 'crisp', 'hugo', 'whatsapp', 'meta templates', 'klaviyo', 'rfm', 'cross-sell'],
+        'risk': 'external_contact_and_crm_automation_risk',
+        'wave': 4,
+    },
+    {
+        'id': 'lk-trends-sourcing-intelligence',
+        'title': 'LK Trends / Sourcing Intelligence',
+        'owner_area': 'areas/lk/sub-areas/trends',
+        'suggested_hubs': ['areas/lk/sub-areas/trends/projetos/sourcing-intelligence'],
+        'terms': ['trends', 'tendencia', 'tendência', 'sourcing', 'droper', 'stockx', 'goat', 'fornecedor', 'compras'],
+        'risk': 'purchase_negotiation_or_supplier_contact_risk',
+        'wave': 4,
+    },
+    {
+        'id': 'lk-ecommerce-orders-checkout',
+        'title': 'LK E-commerce Orders / Checkout',
+        'owner_area': 'areas/lk/sub-areas/ecommerce',
+        'suggested_hubs': ['areas/lk/sub-areas/ecommerce/projetos/orders-checkout'],
+        'terms': ['ecommerce', 'e-commerce', 'checkout', 'pedido', 'pedidos', 'frete', 'pagamento', 'catalogo', 'catálogo'],
+        'risk': 'order_checkout_customer_promise_risk',
+        'wave': 4,
+    },
+    {
+        'id': 'lk-atendimento-chatwoot-elle',
+        'title': 'LK Atendimento / Chatwoot / Elle',
+        'owner_area': 'areas/lk/sub-areas/atendimento',
+        'suggested_hubs': ['areas/lk/sub-areas/atendimento/projetos/chatwoot'],
+        'terms': ['atendimento', 'chatwoot', 'elle', 'whatsapp', 'ops', 'loja', 'resposta', 'cliente'],
+        'risk': 'customer_support_external_message_risk',
+        'wave': 4,
+    },
+
+    {
+        'id': 'lk-operating-system',
+        'title': 'LK Operating System',
+        'owner_area': 'areas/lk',
+        'suggested_hubs': ['areas/lk/projetos/lk-operating-system'],
+        'terms': ['lk operating system', 'lk-os', 'lk os', 'program to finish', 'implementation control', 'future configuration', 'gap audit'],
+        'risk': 'cross_specialist_runtime_confusion_risk',
+        'wave': 5,
+    },
+    {
+        'id': 'lk-data-quality-layer',
+        'title': 'LK Data Quality Layer',
+        'owner_area': 'areas/lk',
+        'suggested_hubs': ['areas/lk/projetos/data-quality-layer'],
+        'terms': ['data quality', 'qualidade de dados', 'materialization', 'materialização', 'status audit', 'reconciliation', 'reconciliação'],
+        'risk': 'stale_or_conflicting_source_of_truth_risk',
+        'wave': 5,
+    },
+    {
+        'id': 'lk-reporting-briefings',
+        'title': 'LK Reporting / Briefings',
+        'owner_area': 'areas/lk',
+        'suggested_hubs': ['areas/lk/projetos/reporting-briefings'],
+        'terms': ['daily sales', 'weekly', 'briefing', 'report', 'relatório', 'morning briefing', 'status surface'],
+        'risk': 'telegram_noise_or_stale_report_risk',
+        'wave': 5,
+    },
+    {
+        'id': 'lk-approval-learning-ledger',
+        'title': 'LK Approval / Learning Ledger',
+        'owner_area': 'areas/lk',
+        'suggested_hubs': ['areas/lk/projetos/approval-learning-ledger'],
+        'terms': ['approval', 'aprovação', 'decision log', 'ledger', 'outcome', 'lesson', 'consequence tracker'],
+        'risk': 'approval_history_misuse_or_ledger_manipulation_risk',
+        'wave': 5,
+    },
+
+    {
+        'id': 'lk-sourcing-procurement-os',
+        'title': 'LK Sourcing / Procurement OS',
+        'owner_area': 'areas/lk/sub-areas/stock',
+        'suggested_hubs': ['areas/lk/sub-areas/stock/projetos/sourcing-procurement-os'],
+        'terms': ['sourcing', 'compras', 'recompra', 'stockout', 'quote', 'cotação', 'fornecedor', 'supplier', 'mission-control-sourcing'],
+        'risk': 'external_purchase_or_supplier_contact_without_approval_risk',
+        'wave': 6,
+    },
+    {
+        'id': 'lk-seo-cro-weekly-improvement',
+        'title': 'LK SEO / CRO Weekly Improvement',
+        'owner_area': 'areas/lk/sub-areas/growth',
+        'suggested_hubs': ['areas/lk/sub-areas/growth/projetos/seo-cro-weekly-improvement'],
+        'terms': ['seo cro', 'seo-cro', 'search console', 'seo fields', 'cro weekly', 'conversion preview', 'decision-grade'],
+        'risk': 'preview_or_readonly_evidence_mistaken_for_production_change_risk',
+        'wave': 6,
+    },
+    {
+        'id': 'lk-rewards-loyalty-trust',
+        'title': 'LK Rewards / Loyalty / Trust',
+        'owner_area': 'areas/lk/sub-areas/growth',
+        'suggested_hubs': ['areas/lk/sub-areas/growth/projetos/rewards-loyalty-trust'],
+        'terms': ['rewards', 'loyalty', 'trust spine', 'rivo', 'judgeme', 'milestone', 'cashback'],
+        'risk': 'customer_benefit_or_commercial_promise_without_policy_risk',
+        'wave': 6,
+    },
+    {
+        'id': 'lk-whatsapp-integration-platform',
+        'title': 'LK WhatsApp Integration Platform',
+        'owner_area': 'areas/lk/sub-areas/atendimento',
+        'suggested_hubs': ['areas/lk/sub-areas/atendimento/projetos/whatsapp-integration-platform'],
+        'terms': ['whatsapp hermes', 'wacli', 'openclaw', 'agent number', 'whatsapp integration', 'whatsapp notion', 'signal queue'],
+        'risk': 'external_customer_or_supplier_message_without_approval_risk',
+        'wave': 6,
+    },
+
+    {
+        'id': 'collection-sort-automation',
+        'title': 'LK Collection Sort Automation',
+        'owner_area': 'areas/lk/sub-areas/collection-optimizer',
+        'suggested_hubs': ['areas/lk/sub-areas/collection-optimizer/projetos/collection-sort-automation'],
+        'terms': ['auto-sort', 'autosort', 'ruleb', 'rule b', 'manual collections', 'collection sorting', 'rollback-snapshot-pre-write'],
+        'risk': 'shopify_collection_order_write_or_receipt_confusion_risk',
+        'wave': 7,
+    },
+    {
+        'id': 'catalog-badges-sync',
+        'title': 'LK Catalog Badges Sync',
+        'owner_area': 'areas/lk/sub-areas/shopify',
+        'suggested_hubs': ['areas/lk/sub-areas/shopify/projetos/catalog-badges-sync'],
+        'terms': ['catalog badges', 'badge sync', 'badges sync', 'catalog-badges-sync', 'tag new', 'snapshot-before'],
+        'risk': 'shopify_badge_or_tag_write_without_current_source_risk',
+        'wave': 7,
+    },
+    {
+        'id': 'editorial-collection-guides',
+        'title': 'LK Editorial Collection Guides',
+        'owner_area': 'areas/lk/sub-areas/collection-optimizer',
+        'suggested_hubs': ['areas/lk/sub-areas/collection-optimizer/projetos/editorial-collection-guides'],
+        'terms': ['guia lk', 'collection guides', 'guias editoriais', 'source page', 'moon shoe', 'samba jane', '204l'],
+        'risk': 'production_page_or_theme_publish_without_research_qa_approval_risk',
+        'wave': 7,
+    },
+    {
+        'id': 'source-pages-geo-experiments',
+        'title': 'LK Source Pages / GEO Experiments',
+        'owner_area': 'areas/lk/sub-areas/growth',
+        'suggested_hubs': ['areas/lk/sub-areas/growth/projetos/source-pages-geo-experiments'],
+        'terms': ['seo geo', 'geo source', 'source pages', 'comparison table', 'llms', 'ai search', 'experiment ledger'],
+        'risk': 'seo_geo_experiment_mistaken_for_measured_production_gain_risk',
+        'wave': 7,
+    },
+    {
+        'id': 'stockout-recompra-router',
+        'title': 'LK Stockout / Recompra Router',
+        'owner_area': 'areas/lk/sub-areas/stock',
+        'suggested_hubs': ['areas/lk/sub-areas/stock/projetos/stockout-recompra-router'],
+        'terms': ['stockout', 'recompra', 'restock', 'pos sale restock', 'stock action queue', 'sourcing router template'],
+        'risk': 'restock_recommendation_external_action_risk',
+        'wave': 8,
+    },
+    {
+        'id': 'supplier-quote-approval-flow',
+        'title': 'LK Supplier Quote Approval Flow',
+        'owner_area': 'areas/lk/sub-areas/stock',
+        'suggested_hubs': ['areas/lk/sub-areas/stock/projetos/supplier-quote-approval-flow'],
+        'terms': ['supplier quote', 'quote validation', 'fornecedor', 'fila a sourcing', 'compras ranking', 'whatsapp signal queue'],
+        'risk': 'supplier_contact_or_purchase_without_current_approval_risk',
+        'wave': 8,
+    },
+    {
+        'id': 'sourcing-pricing-size-governance',
+        'title': 'LK Sourcing Pricing / Size Governance',
+        'owner_area': 'areas/lk/sub-areas/stock',
+        'suggested_hubs': ['areas/lk/sub-areas/stock/projetos/sourcing-pricing-size-governance'],
+        'terms': ['br to us size', 'size conversion', 'exact size validator', 'current lk price reference', 'exact usd price', 'markup', 'economic correction'],
+        'risk': 'price_size_margin_stale_data_risk',
+        'wave': 8,
+    },
+    {
+        'id': 'paid-attribution-influencer-intelligence',
+        'title': 'LK Paid Attribution / Influencer Intelligence',
+        'owner_area': 'areas/lk/sub-areas/trafego-pago',
+        'suggested_hubs': ['areas/lk/sub-areas/trafego-pago/projetos/paid-attribution-influencer-intelligence'],
+        'terms': ['campaign attribution', 'attribution dictionary', 'influencer', 'pareto', 'metricool', 'ads intelligence', 'creative pipeline'],
+        'risk': 'campaign_attribution_or_external_email_action_risk',
+        'wave': 8,
+    },
+
+    {
+        'id': 'hermes-runtime-observability',
+        'title': 'Hermes Runtime Observability',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/hermes-runtime-observability'],
+        'terms': ['runtime observability', 'runtime-profile', 'profile channel', 'health dashboard', 'gateway remediation', 'readonly diagnostic'],
+        'risk': 'documented_runtime_state_confused_with_live_activation_risk',
+        'wave': 9,
+    },
+    {
+        'id': 'cron-control-plane',
+        'title': 'Hermes Cron Control Plane',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/cron-control-plane'],
+        'terms': ['cron control plane', 'cron inventory', 'cron owner', 'silent ok', 'cron delivery governance', 'approval packet cron'],
+        'risk': 'cron_noise_or_unapproved_runtime_schedule_change_risk',
+        'wave': 9,
+    },
+    {
+        'id': 'brain-fonte-viva-data-governance',
+        'title': 'Brain Fonte Viva / Data Governance',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/brain-fonte-viva-data-governance'],
+        'terms': ['fonte viva', 'dados grandes', 'source confidence', 'runtime truth', 'brain operating layer', 'data governance'],
+        'risk': 'brain_documentation_mistaken_for_current_live_data_risk',
+        'wave': 9,
+    },
+    {
+        'id': 'webhooks-to-brain-ingestion',
+        'title': 'Webhooks to Brain Ingestion',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/webhooks-to-brain-ingestion'],
+        'terms': ['webhooks-to-brain', 'webhook to brain', 'webhook-to-brain-event', 'voice-to-brain', 'raw body', 'hmac'],
+        'risk': 'unvalidated_webhook_event_triggering_external_or_runtime_action_risk',
+        'wave': 9,
+    },
+
+    {
+        'id': 'zipper-followup-decision-inbox',
+        'title': 'Zipper Follow-up / Decision Inbox',
+        'owner_area': 'areas/zipper',
+        'suggested_hubs': ['areas/zipper/projetos/followup-decision-inbox'],
+        'terms': ['zipper followup', 'decision inbox', 'action packet', 'packet qa', 'canonical store', 'shadow ledger'],
+        'risk': 'zipper_external_followup_without_current_approval_or_context_risk',
+        'wave': 10,
+    },
+    {
+        'id': 'zipper-cron-readiness-control',
+        'title': 'Zipper Cron Readiness Control',
+        'owner_area': 'areas/zipper',
+        'suggested_hubs': ['areas/zipper/projetos/cron-readiness-control'],
+        'terms': ['zipper cron', 'cron creation', 'cron envelope', 'readiness audit', 'silent-ok fixture', 'rollback rehearsal'],
+        'risk': 'zipper_cron_activation_without_scoped_approval_risk',
+        'wave': 10,
+    },
+    {
+        'id': 'spiti-auction-operations',
+        'title': 'SPITI Auction Operations',
+        'owner_area': 'areas/spiti',
+        'suggested_hubs': ['areas/spiti/projetos/auction-operations'],
+        'terms': ['verificacao lances', 'verificação lances', 'relatorio leilao', 'relatório leilão', 'pregao ao vivo', 'pregão ao vivo', 'divergencia lances', 'pós-leilão'],
+        'risk': 'spiti_auction_or_bid_claim_without_live_source_risk',
+        'wave': 10,
+    },
+    {
+        'id': 'hermes-kanban-command-center',
+        'title': 'Hermes Kanban Command Center',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/hermes-kanban-command-center'],
+        'terms': ['telegram kanban', 'kanban workers', 'kanban pilot', 'subagent registry', 'subagentes contexto minimo', 'worker readiness'],
+        'risk': 'kanban_worker_or_command_activation_without_runtime_approval_risk',
+        'wave': 10,
+    },
+
+    {
+        'id': 'growth-evidence-ledger',
+        'title': 'LK Growth Evidence Ledger',
+        'owner_area': 'areas/lk/sub-areas/growth',
+        'suggested_hubs': ['areas/lk/sub-areas/growth/projetos/growth-evidence-ledger'],
+        'terms': ['growth evidence', 'growth receipts', 'impact review', 'seo geo experiment ledger', 'approval packet', 'rollback', 'readback'],
+        'risk': 'growth_receipt_or_preview_mistaken_for_live_production_state_risk',
+        'wave': 11,
+    },
+    {
+        'id': 'stock-approval-packets-ledger',
+        'title': 'LK Stock Approval Packets Ledger',
+        'owner_area': 'areas/lk/sub-areas/stock',
+        'suggested_hubs': ['areas/lk/sub-areas/stock/projetos/stock-approval-packets-ledger'],
+        'terms': ['approval-packets', 'stock action packet', 'fila a sourcing', 'quote preview', 'fixture operational scoring', 'recompra approval'],
+        'risk': 'stock_approval_packet_mistaken_for_purchase_or_supplier_authorization_risk',
+        'wave': 11,
+    },
+    {
+        'id': 'lkgoc-evidence-workbench',
+        'title': 'LKGOC Evidence Workbench',
+        'owner_area': 'areas/lk/sub-areas/collection-optimizer',
+        'suggested_hubs': ['areas/lk/sub-areas/collection-optimizer/projetos/lkgoc-evidence-workbench'],
+        'terms': ['lkgoc evidence', 'work packet', 'media manifest', 'side-by-side', 'gold source', 'visual qa', 'dev preview'],
+        'risk': 'lkgoc_dev_or_evidence_receipt_mistaken_for_production_publish_risk',
+        'wave': 11,
+    },
+    {
+        'id': 'governance-receipts-memory-backups',
+        'title': 'Governance Receipts / Memory Backups',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/governance-receipts-memory-backups'],
+        'terms': ['governance receipts', 'memory backups', 'memory-hygiene', 'profile memory coverage', 'brain health check', 'operational docs guard'],
+        'risk': 'governance_backup_or_receipt_mistaken_for_current_runtime_state_risk',
+        'wave': 11,
+    },
+
+    {
+        'id': 'lk-sales-reports-ledger',
+        'title': 'LK Sales Reports Ledger',
+        'owner_area': 'areas/lk',
+        'suggested_hubs': ['areas/lk/projetos/sales-reports-ledger'],
+        'terms': ['lk-sales-reports', 'daily sales', 'store close', 'pulse finance', 'whatsapp sales reports', 'weekly ceo review'],
+        'risk': 'sales_report_preview_or_local_file_mistaken_for_external_delivery_risk',
+        'wave': 12,
+    },
+    {
+        'id': 'shopify-theme-backups-archive',
+        'title': 'LK Shopify Theme Backups Archive',
+        'owner_area': 'areas/lk',
+        'suggested_hubs': ['areas/lk/projetos/shopify-theme-backups-archive'],
+        'terms': ['shopify-theme-backups', 'theme backups', 'rollback snapshot', 'dev theme', 'theme asset', 'production main'],
+        'risk': 'theme_backup_or_dev_preview_mistaken_for_current_production_state_risk',
+        'wave': 12,
+    },
+    {
+        'id': 'hermes-execution-scripts-archive',
+        'title': 'Hermes Execution Scripts Archive',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/hermes-execution-scripts-archive'],
+        'terms': ['scripts/', 'brain_health_check', 'operational_docs_guard', 'hermes_task_router', 'one-off script', 'execution script'],
+        'risk': 'historical_script_mistaken_for_active_safe_routine_risk',
+        'wave': 12,
+    },
+    {
+        'id': 'repo-hygiene-artifact-retention',
+        'title': 'Brain Repo Hygiene / Artifact Retention',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/repo-hygiene-artifact-retention'],
+        'terms': ['git status', 'untracked', 'artifact retention', 'tmp/', 'cleanup', 'safe-sync', 'brain-diff-digest'],
+        'risk': 'bulk_cleanup_or_versioning_without_artifact_classification_risk',
+        'wave': 12,
+    },
+
+
+    {
+        'id': 'profile-channel-runtime-inventory',
+        'title': 'Hermes Profile / Channel Runtime Inventory',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/profile-channel-runtime-inventory'],
+        'terms': ['runtime-profile', 'profile channel', 'profile inventory', 'gateway state', 'toolset exposure', 'configured vs active'],
+        'risk': 'documented_profile_or_channel_state_confused_with_live_runtime_activation_risk',
+        'wave': 13,
+    },
+    {
+        'id': 'doppler-secrets-operations-ledger',
+        'title': 'Doppler / Secrets Operations Ledger',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/doppler-secrets-operations-ledger'],
+        'terms': ['doppler', 'lc-keys', 'secret exists', 'values_printed=false', 'runtime injected', 'credential presence'],
+        'risk': 'secret_presence_or_env_documentation_mistaken_for_safe_runtime_injection_risk',
+        'wave': 13,
+    },
+    {
+        'id': 'mcp-tooling-activation-governance',
+        'title': 'MCP / Tooling Activation Governance',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/mcp-tooling-activation-governance'],
+        'terms': ['mcp', 'native-mcp', 'mcporter', 'toolset', 'tool activation', 'server configured discovered exposed'],
+        'risk': 'configured_mcp_or_tooling_mistaken_for_available_authorized_tool_risk',
+        'wave': 13,
+    },
+    {
+        'id': 'telegram-delivery-ux-governance',
+        'title': 'Telegram Delivery / UX Governance',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/telegram-delivery-ux-governance'],
+        'terms': ['telegram ux', 'silent-ok', 'telegram alert', 'delivery governance', 'decision inbox telegram', 'actionable alert'],
+        'risk': 'telegram_noise_or_external_message_without_current_approval_risk',
+        'wave': 13,
+    },
+]
+
+
+def iter_files(root: Path) -> Iterable[Path]:
+    for dp, dirs, files in os.walk(root):
+        dirs[:] = [d for d in dirs if d not in EXCLUDE_PARTS]
+        p = Path(dp)
+        for name in files:
+            f = p / name
+            if f.suffix.lower() in TEXT_EXTS:
+                yield f
+
+
+def safe_read(path: Path, max_bytes: int = 200_000) -> str:
+    try:
+        data = path.read_bytes()[:max_bytes]
+        return data.decode('utf-8', errors='ignore').lower()
+    except Exception:
+        return ''
+
+
+def count_owner_files(root: Path, rel: str) -> int:
+    p = root / rel
+    if not p.exists():
+        return 0
+    return sum(1 for f in p.rglob('*') if f.is_file())
+
+
+def existing_hubs(root: Path, hubs: list[str]) -> list[str]:
+    return [h for h in hubs if (root / h).exists()]
+
+
+def scan(root: Path) -> dict:
+    root = root.resolve()
+    text_files = list(iter_files(root))
+    rels = [str(p.relative_to(root)) for p in text_files]
+    candidates = []
+    for spec in PROJECT_DEFS:
+        term_hits = 0
+        file_hits = []
+        term_re = re.compile('|'.join(re.escape(t.lower()) for t in spec['terms']))
+        for p, rel in zip(text_files, rels):
+            rel_l = rel.lower()
+            path_match = any(t.lower().replace(' ', '-') in rel_l or t.lower() in rel_l for t in spec['terms'])
+            content_match = False
+            if path_match:
+                content_match = True
+            elif len(file_hits) < 250:
+                content_match = bool(term_re.search(safe_read(p, 60_000)))
+            if path_match or content_match:
+                file_hits.append(rel)
+                term_hits += 1
+        owner_files = count_owner_files(root, spec['owner_area'])
+        hubs_existing = existing_hubs(root, spec['suggested_hubs'])
+        score = 0
+        score += min(owner_files // 100, 40)
+        score += min(term_hits // 25, 30)
+        score += 15 if not hubs_existing else 5
+        score += 10 if spec['risk'] else 0
+        score += 5 if spec['wave'] == 1 else 0
+        candidates.append({
+            'id': spec['id'],
+            'title': spec['title'],
+            'owner_area': spec['owner_area'],
+            'suggested_hubs': spec['suggested_hubs'],
+            'existing_hubs': hubs_existing,
+            'wave': spec['wave'],
+            'risk': spec['risk'],
+            'owner_file_count': owner_files,
+            'term_hit_files': term_hits,
+            'sample_artifacts': file_hits[:30],
+            'score': score,
+            'recommendation': 'canonical_hub_needed' if not hubs_existing or score >= 40 else 'monitor_or_refine_existing_hub',
+        })
+    candidates.sort(key=lambda x: (-x['wave'], -x['score']))
+    return {
+        'generated_at': datetime.now(timezone.utc).isoformat(),
+        'root': str(root),
+        'mode': 'read_only_scan',
+        'scanner_version': 'brain-os-v1',
+        'total_text_files_scanned': len(text_files),
+        'candidates': sorted(candidates, key=lambda x: (x['wave'], -x['score'])),
+    }
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--root', default=str(DEFAULT_ROOT))
+    ap.add_argument('--json', action='store_true')
+    ap.add_argument('--output')
+    args = ap.parse_args()
+    result = scan(Path(args.root))
+    text = json.dumps(result, ensure_ascii=False, indent=2)
+    if args.output:
+        out = Path(args.output)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(text + '\n', encoding='utf-8')
+    if args.json or not args.output:
+        print(text)
+    return 0
+
+if __name__ == '__main__':
+    raise SystemExit(main())

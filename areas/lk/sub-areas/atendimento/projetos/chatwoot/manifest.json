@@ -1,0 +1,645 @@
+{
+  "generated_at_utc": "2026-06-10T18:33:50Z",
+  "canonical_folder": "areas/lk/sub-areas/atendimento/projetos/chatwoot",
+  "source_scope": "areas/lk/sub-areas/atendimento/**/*chatwoot* excluding __pycache__ and canonical folder",
+  "total_files": 77,
+  "by_category": {
+    "approval-packets": 2,
+    "evaluation": 4,
+    "plans": 2,
+    "pr-packages": 3,
+    "prds": 4,
+    "receipts": 42,
+    "reports": 8,
+    "research": 2,
+    "root-docs": 6,
+    "scripts": 3,
+    "state": 1
+  },
+  "tracked_by_git_count": 56,
+  "local_untracked_count": 21,
+  "guardrails": [
+    "local/documental consolidation only",
+    "no external writes",
+    "no secrets copied",
+    "original artifacts preserved"
+  ],
+  "items": [
+    {
+      "path": "areas/lk/sub-areas/atendimento/approval-packets/elle-chatwoot-internal-copilot-write-approval-2026-06-09.md",
+      "category": "approval-packets",
+      "title": "Approval Packet — Elle Chatwoot copiloto interno real",
+      "size_bytes": 3430,
+      "modified_utc": "2026-06-09T13:32:24Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/approval-packets/elle-mvp1c-chatwoot-webhook-approval-20260602.md",
+      "category": "approval-packets",
+      "title": "Approval Packet — Elle MVP 1C Chatwoot internal writes",
+      "size_bytes": 2911,
+      "modified_utc": "2026-06-02T17:08:29Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/chatwoot-cloud-bot-atendimento-direcionamento-2026-06-09-091655.md",
+      "category": "root-docs",
+      "title": "Direcionamento — Bot de atendimento LK no Chatwoot Cloud — 2026-06-09-091655 -03",
+      "size_bytes": 1930,
+      "modified_utc": "2026-06-09T12:16:56Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/chatwoot-data-services-diagnostico-readonly-2026-06-09-090732.md",
+      "category": "root-docs",
+      "title": "Diagnóstico Chatwoot `data_services` — 2026-06-09-090732 -03",
+      "size_bytes": 3756,
+      "modified_utc": "2026-06-09T12:07:32Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/chatwoot-elle-diagnostico-readonly-2026-06-09-083424.md",
+      "category": "root-docs",
+      "title": "Diagnóstico Chatwoot/Elle LK — 2026-06-09-083424 -03",
+      "size_bytes": 4425,
+      "modified_utc": "2026-06-09T11:34:24Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/chatwoot-shopify-contact-import-diagnostico-20260603.md",
+      "category": "root-docs",
+      "title": "Diagnóstico — Chatwoot não importa contatos Shopify automaticamente",
+      "size_bytes": 2000,
+      "modified_utc": "2026-06-03T17:12:33Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/elle-chatwoot-cloud-existing-info-status-2026-06-09-095323.md",
+      "category": "root-docs",
+      "title": "Elle Chatwoot Cloud — execution status from existing info — 2026-06-09-095323 -03",
+      "size_bytes": 2542,
+      "modified_utc": "2026-06-09T12:53:23Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/elle-chatwoot-cloud-migration-pack-2026-06-09-092602.md",
+      "category": "root-docs",
+      "title": "Elle → Chatwoot Cloud Migration Pack — 2026-06-09-092602 -03",
+      "size_bytes": 9096,
+      "modified_utc": "2026-06-09T12:26:03Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/evaluation/fixtures/chatwoot_message_created_examples.jsonl",
+      "category": "evaluation",
+      "title": "chatwoot_message_created_examples",
+      "size_bytes": 4988,
+      "modified_utc": "2026-06-02T17:04:07Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/evaluation/test_chatwoot_context.py",
+      "category": "evaluation",
+      "title": "!/usr/bin/env python3",
+      "size_bytes": 1295,
+      "modified_utc": "2026-06-02T17:04:18Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/evaluation/test_chatwoot_internal_actions.py",
+      "category": "evaluation",
+      "title": "!/usr/bin/env python3",
+      "size_bytes": 1517,
+      "modified_utc": "2026-06-02T17:04:17Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/evaluation/test_chatwoot_target_config.py",
+      "category": "evaluation",
+      "title": "!/usr/bin/env python3",
+      "size_bytes": 3522,
+      "modified_utc": "2026-06-09T12:56:09Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/implementation-plan-elle-mvp1c-chatwoot-20260602.md",
+      "category": "plans",
+      "title": "Elle MVP 1C — Implementation Plan",
+      "size_bytes": 11104,
+      "modified_utc": "2026-06-02T17:00:38Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/plans/lk-chatwoot-whatsapp-template-builder-implementation-plan-20260603.md",
+      "category": "plans",
+      "title": "Chatwoot WhatsApp Template Builder — Implementation Plan",
+      "size_bytes": 13420,
+      "modified_utc": "2026-06-03T14:57:47Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/pr-packages/chatwoot-sidebar-templates/PR_BODY.md",
+      "category": "pr-packages",
+      "title": "PR — Chatwoot Sidebar Templates WhatsApp/META",
+      "size_bytes": 2359,
+      "modified_utc": "2026-06-03T18:27:20Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/pr-packages/chatwoot-sidebar-templates/chatwoot-sidebar-templates.patch",
+      "category": "pr-packages",
+      "title": "chatwoot-sidebar-templates",
+      "size_bytes": 54181,
+      "modified_utc": "2026-06-03T18:26:59Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/pr-packages/chatwoot-sidebar-templates/diff-stat.txt",
+      "category": "pr-packages",
+      "title": "diff-stat",
+      "size_bytes": 1119,
+      "modified_utc": "2026-06-03T18:26:59Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/prd-elle-chatwoot-shopify-whatsapp-transbordo-20260602.md",
+      "category": "prds",
+      "title": "PRD — Elle, Cérebro de Atendimento LK conectado ao Chatwoot",
+      "size_bytes": 15773,
+      "modified_utc": "2026-06-02T16:28:00Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/prds/2026-06-03-chatwoot-sidebar-templates-prd.md",
+      "category": "prds",
+      "title": "PRD — Chatwoot Sidebar “Templates” para WhatsApp/META",
+      "size_bytes": 13172,
+      "modified_utc": "2026-06-03T18:07:41Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/prds/2026-06-03-shopify-chatwoot-event-sync-prd.md",
+      "category": "prds",
+      "title": "PRD — Shopify → Chatwoot Event Sync / CRM inteligente",
+      "size_bytes": 11958,
+      "modified_utc": "2026-06-03T18:07:53Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/prds/lk-chatwoot-whatsapp-template-builder-prd-20260603.md",
+      "category": "prds",
+      "title": "PRD — Chatwoot WhatsApp Business API Template Builder",
+      "size_bytes": 12934,
+      "modified_utc": "2026-06-03T14:40:23Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/2026-06-03-evolution-chatwoot-linking-intake.md",
+      "category": "receipts",
+      "title": "Intake — Evolution API Railway + Chatwoot",
+      "size_bytes": 1276,
+      "modified_utc": "2026-06-03T12:27:07Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/20260602-192501-evolutionapi-chatwoot-lk-flagship-guidance.md",
+      "category": "receipts",
+      "title": "Evolution API -> Chatwoot guidance — LK Flagship",
+      "size_bytes": 1228,
+      "modified_utc": "2026-06-02T19:25:10Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/chatwoot-deploy-backup-20260603-161825Z/ROLLBACK.md",
+      "category": "receipts",
+      "title": "Chatwoot rollback reference — 20260603-161825Z",
+      "size_bytes": 548,
+      "modified_utc": "2026-06-03T16:18:26Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/chatwoot-deploy-backup-20260603-161825Z/chatwoot-rails-1.env.keys.txt",
+      "category": "receipts",
+      "title": "chatwoot-rails-1.env.keys",
+      "size_bytes": 1404,
+      "modified_utc": "2026-06-03T16:18:25Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/chatwoot-deploy-backup-20260603-161825Z/chatwoot-rails-1.inspect.txt",
+      "category": "receipts",
+      "title": "chatwoot-rails-1.inspect",
+      "size_bytes": 2007,
+      "modified_utc": "2026-06-03T16:18:25Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/chatwoot-deploy-backup-20260603-161825Z/chatwoot-sidekiq-1.env.keys.txt",
+      "category": "receipts",
+      "title": "chatwoot-sidekiq-1.env.keys",
+      "size_bytes": 1404,
+      "modified_utc": "2026-06-03T16:18:25Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/chatwoot-deploy-backup-20260603-161825Z/chatwoot-sidekiq-1.inspect.txt",
+      "category": "receipts",
+      "title": "chatwoot-sidekiq-1.inspect",
+      "size_bytes": 1664,
+      "modified_utc": "2026-06-03T16:18:25Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/chatwoot-deploy-backup-20260603-161825Z/predeploy-health.txt",
+      "category": "receipts",
+      "title": "predeploy-health",
+      "size_bytes": 102,
+      "modified_utc": "2026-06-03T16:18:26Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/elle-chatwoot-controlled-smoke-2026-06-09.md",
+      "category": "receipts",
+      "title": "Elle / Chatwoot — smoke test controlado em dry-run",
+      "size_bytes": 2481,
+      "modified_utc": "2026-06-09T13:29:40Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/elle-chatwoot-incoming-watch-no-event-2026-06-09.md",
+      "category": "receipts",
+      "title": "Elle / Chatwoot — watch de inbound sem evento",
+      "size_bytes": 1186,
+      "modified_utc": "2026-06-09T14:22:36Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/elle-chatwoot-internal-copilot-activated-2026-06-09.md",
+      "category": "receipts",
+      "title": "Elle / Chatwoot — copiloto interno ativado",
+      "size_bytes": 3606,
+      "modified_utc": "2026-06-09T13:41:57Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/elle-chatwoot-post-activation-canary-2026-06-09.md",
+      "category": "receipts",
+      "title": "Elle / Chatwoot — canário pós-ativação",
+      "size_bytes": 2752,
+      "modified_utc": "2026-06-09T13:49:55Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/elle-chatwoot-real-event-observation-2026-06-09.md",
+      "category": "receipts",
+      "title": "Elle / Chatwoot — observação de eventos reais pós-ativação",
+      "size_bytes": 2806,
+      "modified_utc": "2026-06-09T13:54:00Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/elle-chatwoot-webhook-credentials-received-2026-06-09.md",
+      "category": "receipts",
+      "title": "Elle / Chatwoot webhook — credenciais recebidas",
+      "size_bytes": 1821,
+      "modified_utc": "2026-06-09T13:05:20Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/elle-chatwoot-whatsapp-doppler-dryrun-2026-06-09.md",
+      "category": "receipts",
+      "title": "Elle / Chatwoot — dry-run controlado pós-credenciais WhatsApp",
+      "size_bytes": 2972,
+      "modified_utc": "2026-06-09T13:12:34Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/elle-chatwoot-whatsapp-inbox-readonly-diagnosis-2026-06-09.md",
+      "category": "receipts",
+      "title": "Elle / Chatwoot — diagnóstico read-only da inbox WhatsApp",
+      "size_bytes": 3147,
+      "modified_utc": "2026-06-09T14:32:02Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/elle-dual-target-chatwoot-config-2026-06-09-095712.md",
+      "category": "receipts",
+      "title": "Receipt — Elle dual-target Chatwoot config prepared — 2026-06-09-095712 -03",
+      "size_bytes": 2988,
+      "modified_utc": "2026-06-09T12:57:12Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-auto-responder-brain-human-handoff-question-20260602T155500Z.md",
+      "category": "receipts",
+      "title": "Receipt — Pergunta sobre Chatwoot API, auto-responder com cérebro e transbordo humano",
+      "size_bytes": 1868,
+      "modified_utc": "2026-06-02T16:12:44Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-elle-correction-verified-20260602T181457Z.md",
+      "category": "receipts",
+      "title": "LK Chatwoot Elle correction and verification",
+      "size_bytes": 3125,
+      "modified_utc": "2026-06-02T18:15:18Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-elle-live-connection-check-20260602T180458Z.md",
+      "category": "receipts",
+      "title": "LK Chatwoot / Elle live connection check",
+      "size_bytes": 2093,
+      "modified_utc": "2026-06-02T18:05:12Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-pos-venda-flagship-layer-20260610.md",
+      "category": "receipts",
+      "title": "Receipt — Chatwoot PÓS VENDA LK FLAGSHIP",
+      "size_bytes": 4432,
+      "modified_utc": "2026-06-10T15:49:09Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-readiness-20260603T122451Z.md",
+      "category": "receipts",
+      "title": "LK Chatwoot readiness check",
+      "size_bytes": 1989,
+      "modified_utc": "2026-06-03T12:25:04Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-shopify-app-config-enabled-20260602T152900Z.md",
+      "category": "receipts",
+      "title": "Receipt — Chatwoot Shopify app config appears enabled",
+      "size_bytes": 1502,
+      "modified_utc": "2026-06-02T15:27:23Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-shopify-duplicate-hook-diagnosis-20260602T153900Z.md",
+      "category": "receipts",
+      "title": "Receipt — Chatwoot Shopify OAuth duplicate hook diagnosis",
+      "size_bytes": 1880,
+      "modified_utc": "2026-06-02T15:38:21Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-shopify-feature-enabled-active-20260602T154800Z.md",
+      "category": "receipts",
+      "title": "Receipt — Chatwoot Shopify feature enabled and integration active",
+      "size_bytes": 2142,
+      "modified_utc": "2026-06-02T15:47:58Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-shopify-feature-flag-missing-20260602T154600Z.md",
+      "category": "receipts",
+      "title": "Receipt — Chatwoot Shopify feature flag missing",
+      "size_bytes": 1780,
+      "modified_utc": "2026-06-02T15:44:40Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-shopify-integration-connected-20260602T154000Z.md",
+      "category": "receipts",
+      "title": "Receipt — Chatwoot Shopify integration connected",
+      "size_bytes": 1896,
+      "modified_utc": "2026-06-02T15:39:49Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-shopify-integration-population-audit-20260603-1414z.md",
+      "category": "receipts",
+      "title": "LK Chatwoot Shopify integration / population audit",
+      "size_bytes": 3653,
+      "modified_utc": "2026-06-03T14:14:55Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-shopify-oauth-app-credentials-received-20260602T152443Z.md",
+      "category": "receipts",
+      "title": "Receipt — Chatwoot Shopify OAuth app credentials received",
+      "size_bytes": 1510,
+      "modified_utc": "2026-06-02T15:24:54Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-shopify-oauth-error-installed-in-shopify-20260602T153500Z.md",
+      "category": "receipts",
+      "title": "Receipt — Chatwoot Shopify OAuth error, app appears installed in Shopify",
+      "size_bytes": 2276,
+      "modified_utc": "2026-06-02T15:36:38Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-shopify-token-validation-20260602T151241Z.md",
+      "category": "receipts",
+      "title": "Receipt — Chatwoot Shopify integration attempt / token validation",
+      "size_bytes": 1599,
+      "modified_utc": "2026-06-02T15:12:54Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-shopify-ui-error-after-hook-20260602T154500Z.md",
+      "category": "receipts",
+      "title": "Receipt — Chatwoot Shopify UI still shows connect/error after hook exists",
+      "size_bytes": 2655,
+      "modified_utc": "2026-06-02T15:42:28Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-template-availability-check-20260603-170041Z.md",
+      "category": "receipts",
+      "title": "LK Chatwoot — verificação template WhatsApp aprovado x Chatwoot",
+      "size_bytes": 1567,
+      "modified_utc": "2026-06-03T17:00:51Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-template-builder-deploy-20260603-1621z.md",
+      "category": "receipts",
+      "title": "LK Chatwoot — WhatsApp Template Builder deploy",
+      "size_bytes": 3680,
+      "modified_utc": "2026-06-03T16:21:12Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-token-doppler-verified-20260602.md",
+      "category": "receipts",
+      "title": "Receipt — Chatwoot API token saved in Doppler",
+      "size_bytes": 968,
+      "modified_utc": "2026-06-02T17:49:28Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-whatsapp-api-initial-config-20260602T150317Z.md",
+      "category": "receipts",
+      "title": "Receipt — LK Chatwoot WhatsApp API initial config",
+      "size_bytes": 1582,
+      "modified_utc": "2026-06-02T15:03:28Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-whatsapp-campaign-capability-check-20260603-1421z.md",
+      "category": "receipts",
+      "title": "LK Chatwoot — WhatsApp campaign capability check",
+      "size_bytes": 1810,
+      "modified_utc": "2026-06-03T14:21:50Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-whatsapp-campaign-feature-enabled-20260603-1429z.md",
+      "category": "receipts",
+      "title": "LK Chatwoot — whatsapp_campaign feature enabled",
+      "size_bytes": 1358,
+      "modified_utc": "2026-06-03T14:30:10Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-whatsapp-template-builder-20260603-1522z.md",
+      "category": "receipts",
+      "title": "LK Chatwoot — WhatsApp Template Builder local customization",
+      "size_bytes": 4170,
+      "modified_utc": "2026-06-03T15:23:08Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-chatwoot-whatsapp-template-builder-plan-ready-20260603-1456z.md",
+      "category": "receipts",
+      "title": "LK Chatwoot — WhatsApp template builder follow-up",
+      "size_bytes": 1854,
+      "modified_utc": "2026-06-03T14:58:04Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-elle-chatwoot-webhook-dryrun-deployed-20260602.md",
+      "category": "receipts",
+      "title": "Receipt — Elle Chatwoot webhook dry-run deployed",
+      "size_bytes": 2449,
+      "modified_utc": "2026-06-02T17:55:39Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/receipts/lk-recovery-os-chatwoot-audit-fixes-20260602.md",
+      "category": "receipts",
+      "title": "lk-recovery-os Chatwoot provider audit and local fixes",
+      "size_bytes": 3078,
+      "modified_utc": "2026-06-02T19:50:02Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/reports/2026-06-03-chatwoot-sidebar-templates-implementation-handoff.md",
+      "category": "reports",
+      "title": "Handoff — Chatwoot Sidebar Templates",
+      "size_bytes": 2797,
+      "modified_utc": "2026-06-03T18:25:29Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/reports/2026-06-03-chatwoot-sidebar-templates-live-validation.md",
+      "category": "reports",
+      "title": "Live validation — Chatwoot Sidebar Templates",
+      "size_bytes": 1469,
+      "modified_utc": "2026-06-03T19:18:32Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/reports/2026-06-03-chatwoot-sidebar-templates-pr-package-handoff.md",
+      "category": "reports",
+      "title": "Handoff — Chatwoot Sidebar Templates / PR package",
+      "size_bytes": 2108,
+      "modified_utc": "2026-06-03T18:27:37Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/reports/2026-06-03-shopify-chatwoot-mvp0-phone-dryrun.json",
+      "category": "reports",
+      "title": "2026-06-03-shopify-chatwoot-mvp0-phone-dryrun",
+      "size_bytes": 2279,
+      "modified_utc": "2026-06-03T17:35:54Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/reports/2026-06-03-shopify-chatwoot-mvp1-phone-backfill-result.json",
+      "category": "reports",
+      "title": "2026-06-03-shopify-chatwoot-mvp1-phone-backfill-result",
+      "size_bytes": 1759,
+      "modified_utc": "2026-06-03T18:05:42Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/reports/lk_pos_postsale_chatwoot_layer_20260610T153018Z_dryrun.json",
+      "category": "reports",
+      "title": "lk_pos_postsale_chatwoot_layer_20260610T153018Z_dryrun",
+      "size_bytes": 2670,
+      "modified_utc": "2026-06-10T15:30:17Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/reports/lk_pos_postsale_chatwoot_layer_20260610T154557Z_apply.json",
+      "category": "reports",
+      "title": "lk_pos_postsale_chatwoot_layer_20260610T154557Z_apply",
+      "size_bytes": 4234,
+      "modified_utc": "2026-06-10T15:45:57Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/reports/lk_pos_postsale_chatwoot_layer_20260610T154603Z_dryrun.json",
+      "category": "reports",
+      "title": "lk_pos_postsale_chatwoot_layer_20260610T154603Z_dryrun",
+      "size_bytes": 2660,
+      "modified_utc": "2026-06-10T15:46:03Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/research/lk-chatwoot-shopify-lifecycle-messaging-research-20260602.md",
+      "category": "research",
+      "title": "LK Chatwoot + Shopify lifecycle messaging research",
+      "size_bytes": 14473,
+      "modified_utc": "2026-06-02T19:13:22Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/research/lk-recovery-os-chatwoot-unification-assessment-20260602.md",
+      "category": "research",
+      "title": "LK Recovery OS + Chatwoot unification assessment",
+      "size_bytes": 10878,
+      "modified_utc": "2026-06-02T19:29:18Z",
+      "tracked_by_git": true
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/scripts/chatwoot_context.py",
+      "category": "scripts",
+      "title": "!/usr/bin/env python3",
+      "size_bytes": 2740,
+      "modified_utc": "2026-06-02T17:06:08Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/scripts/chatwoot_internal_actions.py",
+      "category": "scripts",
+      "title": "!/usr/bin/env python3",
+      "size_bytes": 3372,
+      "modified_utc": "2026-06-09T12:56:24Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/scripts/chatwoot_target_config.py",
+      "category": "scripts",
+      "title": "!/usr/bin/env python3",
+      "size_bytes": 3950,
+      "modified_utc": "2026-06-09T12:55:13Z",
+      "tracked_by_git": false
+    },
+    {
+      "path": "areas/lk/sub-areas/atendimento/state/lk_pos_postsale_chatwoot_state.json",
+      "category": "state",
+      "title": "lk_pos_postsale_chatwoot_state",
+      "size_bytes": 1935,
+      "modified_utc": "2026-06-10T15:45:57Z",
+      "tracked_by_git": false
+    }
+  ]
+}
