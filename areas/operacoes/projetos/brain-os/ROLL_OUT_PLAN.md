@@ -118,3 +118,11 @@ Somente se Lucas aprovar:
 - Criar hub Brain Fonte Viva / Data Governance: concluído localmente.
 - Criar hub Webhooks to Brain Ingestion: concluído localmente.
 - Próximo gate: scanner, secret scan, Brain health e docs guard.
+
+## Status Onda 10 — 2026-06-11
+
+- Criar hub Zipper Follow-up / Decision Inbox: concluído localmente.
+- Criar hub Zipper Cron Readiness Control: concluído localmente.
+- Criar hub SPITI Auction Operations: concluído localmente.
+- Criar hub Hermes Kanban Command Center: concluído localmente.
+- Próximo gate: scanner, secret scan, Brain health e docs guard.

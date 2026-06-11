@@ -62,3 +62,5 @@ Qualquer contato com colecionador, negociação, proposta, publicação externa 
 ## Projetos Brain OS
 
 - `projetos/email-crm-intake/` — hub canônico Onda 2 para Zipper Email / CRM / Intake: ZPR/enquiry, leads, inbox, action packets, guardrails de aprovação e fontes comerciais.
+- `projetos/followup-decision-inbox/` — hub canônico Brain OS Onda 10 para follow-ups Zipper, decision inbox, action packets e CRM local.
+- `projetos/cron-readiness-control/` — hub canônico Brain OS Onda 10 para readiness de cron Zipper, silent-OK fixture, approval surface e rollback.

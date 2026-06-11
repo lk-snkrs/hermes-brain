@@ -48,3 +48,4 @@ Silêncio é melhor que dado errado.
 ## Projetos Brain OS
 
 - `projetos/bridge-governance/` — hub canônico Brain OS Onda 3 para governança/ponte SPITI, fonte de verdade de lances, handoff e guardrails.
+- `projetos/auction-operations/` — hub canônico Brain OS Onda 10 para operação de leilão SPITI, lances, pregão, relatórios e pós-leilão.

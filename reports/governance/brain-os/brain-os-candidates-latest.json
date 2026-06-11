@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-11T00:11:29.576311+00:00",
+  "generated_at": "2026-06-11T00:17:56.853447+00:00",
   "root": "/opt/data/hermes_bruno_ingest/hermes-brain",
   "mode": "read_only_scan",
   "scanner_version": "brain-os-v1",
-  "total_text_files_scanned": 17472,
+  "total_text_files_scanned": 17504,
   "candidates": [
     {
       "id": "lk-growth-gmc-shopify-meta",
@@ -20,7 +20,7 @@
       "wave": 1,
       "risk": "high_external_write_risk",
       "owner_file_count": 10974,
-      "term_hit_files": 10035,
+      "term_hit_files": 10043,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -69,8 +69,8 @@
       ],
       "wave": 1,
       "risk": "source_of_truth_confusion",
-      "owner_file_count": 7914,
-      "term_hit_files": 8384,
+      "owner_file_count": 7915,
+      "term_hit_files": 8385,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -167,8 +167,8 @@
       ],
       "wave": 1,
       "risk": "context_truth_and_runtime_claim_risk",
-      "owner_file_count": 390,
-      "term_hit_files": 256,
+      "owner_file_count": 397,
+      "term_hit_files": 259,
       "sample_artifacts": [
         "AGENTS.md",
         "reports/memory-hygiene-2026-05-09.md",
@@ -216,8 +216,8 @@
       ],
       "wave": 2,
       "risk": "commercial_reply_and_human_approval_risk",
-      "owner_file_count": 368,
-      "term_hit_files": 781,
+      "owner_file_count": 382,
+      "term_hit_files": 795,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -265,8 +265,8 @@
       ],
       "wave": 2,
       "risk": "personal_external_action_risk",
-      "owner_file_count": 390,
-      "term_hit_files": 643,
+      "owner_file_count": 397,
+      "term_hit_files": 650,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -299,7 +299,7 @@
         "reports/lk-seo-cro-seo-fields-runner-gate-2026-05-18.md",
         "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
       ],
-      "score": 43,
+      "score": 44,
       "recommendation": "canonical_hub_needed"
     },
     {
@@ -365,8 +365,8 @@
       ],
       "wave": 2,
       "risk": "approval_sequence_and_decision_state_risk",
-      "owner_file_count": 390,
-      "term_hit_files": 338,
+      "owner_file_count": 397,
+      "term_hit_files": 345,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
         "AGENTS.md",
@@ -415,7 +415,7 @@
       "wave": 3,
       "risk": "theme_production_write_risk",
       "owner_file_count": 10974,
-      "term_hit_files": 6903,
+      "term_hit_files": 6911,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -512,7 +512,7 @@
       ],
       "wave": 3,
       "risk": "snapshot_vs_live_state_risk",
-      "owner_file_count": 390,
+      "owner_file_count": 397,
       "term_hit_files": 1310,
       "sample_artifacts": [
         "TOOLS.md",
@@ -561,8 +561,8 @@
       ],
       "wave": 3,
       "risk": "auction_bid_source_of_truth_risk",
-      "owner_file_count": 27,
-      "term_hit_files": 661,
+      "owner_file_count": 34,
+      "term_hit_files": 668,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -855,8 +855,8 @@
       ],
       "wave": 5,
       "risk": "telegram_noise_or_stale_report_risk",
-      "owner_file_count": 22185,
-      "term_hit_files": 8359,
+      "owner_file_count": 22186,
+      "term_hit_files": 8361,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -904,7 +904,7 @@
       ],
       "wave": 5,
       "risk": "approval_history_misuse_or_ledger_manipulation_risk",
-      "owner_file_count": 22185,
+      "owner_file_count": 22186,
       "term_hit_files": 2911,
       "sample_artifacts": [
         "TOOLS.md",
@@ -953,7 +953,7 @@
       ],
       "wave": 5,
       "risk": "cross_specialist_runtime_confusion_risk",
-      "owner_file_count": 22185,
+      "owner_file_count": 22186,
       "term_hit_files": 296,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -1002,7 +1002,7 @@
       ],
       "wave": 5,
       "risk": "stale_or_conflicting_source_of_truth_risk",
-      "owner_file_count": 22185,
+      "owner_file_count": 22186,
       "term_hit_files": 273,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -1051,7 +1051,7 @@
       ],
       "wave": 6,
       "risk": "external_purchase_or_supplier_contact_without_approval_risk",
-      "owner_file_count": 7914,
+      "owner_file_count": 7915,
       "term_hit_files": 324,
       "sample_artifacts": [
         "AGENTS.md",
@@ -1443,7 +1443,7 @@
       ],
       "wave": 8,
       "risk": "restock_recommendation_external_action_risk",
-      "owner_file_count": 7914,
+      "owner_file_count": 7915,
       "term_hit_files": 250,
       "sample_artifacts": [
         "CHANGELOG.md",
@@ -1492,7 +1492,7 @@
       ],
       "wave": 8,
       "risk": "supplier_contact_or_purchase_without_current_approval_risk",
-      "owner_file_count": 7914,
+      "owner_file_count": 7915,
       "term_hit_files": 259,
       "sample_artifacts": [
         "CHANGELOG.md",
@@ -1541,7 +1541,7 @@
       ],
       "wave": 8,
       "risk": "price_size_margin_stale_data_risk",
-      "owner_file_count": 7914,
+      "owner_file_count": 7915,
       "term_hit_files": 65,
       "sample_artifacts": [
         "receipts/hermes-v016-stage1-candidate-runtime-validation-receipt-2026-06-06.md",
@@ -1639,7 +1639,7 @@
       ],
       "wave": 9,
       "risk": "brain_documentation_mistaken_for_current_live_data_risk",
-      "owner_file_count": 390,
+      "owner_file_count": 397,
       "term_hit_files": 250,
       "sample_artifacts": [
         "reports/brain-health-check-2026-05-31-runtime-truth-reconciler.json",
@@ -1688,8 +1688,8 @@
       ],
       "wave": 9,
       "risk": "unvalidated_webhook_event_triggering_external_or_runtime_action_risk",
-      "owner_file_count": 390,
-      "term_hit_files": 87,
+      "owner_file_count": 397,
+      "term_hit_files": 88,
       "sample_artifacts": [
         "AGENTS.md",
         "reports/daily-consolidation/2026-05-20.md",
@@ -1707,6 +1707,7 @@
         "reports/governance/cron-registry-backups/2026-05-25-block2-paused-oneshot-cleanup/lk-growth-jobs.after.json",
         "reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/lk-growth-jobs.before.json",
         "reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/lk-growth-jobs.after.json",
+        "reports/governance/receipts/brain-os-v1-wave9-canonical-hubs-20260610.md",
         "empresa/rotinas/_index.md",
         "areas/operacoes/MAPA.md",
         "areas/operacoes/rotinas/hot-memory-compiler.md",
@@ -1719,8 +1720,7 @@
         "areas/operacoes/rotinas/mission-control-brain-cockpit.md",
         "areas/operacoes/rotinas/semantic-recovery-session-search.md",
         "areas/operacoes/rotinas/webhooks-to-brain.md",
-        "areas/operacoes/rotinas/brain-operating-layer.md",
-        "areas/operacoes/rotinas/skill-promotion-engine.md"
+        "areas/operacoes/rotinas/brain-operating-layer.md"
       ],
       "score": 21,
       "recommendation": "monitor_or_refine_existing_hub"
@@ -1737,8 +1737,8 @@
       ],
       "wave": 9,
       "risk": "cron_noise_or_unapproved_runtime_schedule_change_risk",
-      "owner_file_count": 390,
-      "term_hit_files": 66,
+      "owner_file_count": 397,
+      "term_hit_files": 69,
       "sample_artifacts": [
         "CHANGELOG.md",
         "reports/hermes-host-docker-observability-2026-06-06.json",
@@ -1786,13 +1786,14 @@
       ],
       "wave": 9,
       "risk": "documented_runtime_state_confused_with_live_activation_risk",
-      "owner_file_count": 390,
-      "term_hit_files": 30,
+      "owner_file_count": 397,
+      "term_hit_files": 32,
       "sample_artifacts": [
         "CHANGELOG.md",
         "reports/lk-gmc-2026-05-14-google-youtube-channel-readonly-diagnostic.md",
         "reports/lk-gmc-2026-05-14-google-youtube-channel-readonly-diagnostic.json",
         "reports/governance/memory-cron-intelligence-proactivity-audit-2026-05-22.md",
+        "reports/governance/receipts/brain-os-v1-wave9-canonical-hubs-20260610.md",
         "empresa/contexto/contratos-handoff-especialistas.md",
         "empresa/rotinas/_index.md",
         "memories/pending.md",
@@ -1807,6 +1808,7 @@
         "areas/operacoes/projetos/mission-control-mesa-coo-alignment-2026-05-19.md",
         "areas/operacoes/projetos/brain-os/ROLL_OUT_PLAN.md",
         "areas/operacoes/projetos/brain-os/PROJECT_CANDIDATES.md",
+        "areas/operacoes/projetos/hermes-kanban-command-center/NEXT_STEPS.md",
         "areas/operacoes/projetos/hermes-runtime-observability/DECISIONS_AND_GUARDRAILS.md",
         "areas/operacoes/projetos/hermes-runtime-observability/README.md",
         "areas/operacoes/projetos/hermes-runtime-observability/ARTIFACT_INDEX.md",
@@ -1816,11 +1818,191 @@
         "areas/operacoes/projetos/hermes-runtime-observability/CURRENT_STATE.md",
         "areas/hermes/operacoes/manual-producao/PHASE_2_CONTROLLED_ADOPTION.md",
         "areas/hermes/operacoes/manual-producao/HERMES_FEATURE_BACKLOG.md",
-        "areas/hermes/operacoes/manual-producao/CAPABILITIES_ADOPTION_MATRIX.md",
-        "areas/lk/rotinas/gmc-2026-05-14-google-youtube-channel-readonly-diagnostic.md",
-        "agentes/mordomo/MEMORY.md"
+        "areas/hermes/operacoes/manual-producao/CAPABILITIES_ADOPTION_MATRIX.md"
       ],
       "score": 19,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "zipper-followup-decision-inbox",
+      "title": "Zipper Follow-up / Decision Inbox",
+      "owner_area": "areas/zipper",
+      "suggested_hubs": [
+        "areas/zipper/projetos/followup-decision-inbox"
+      ],
+      "existing_hubs": [
+        "areas/zipper/projetos/followup-decision-inbox"
+      ],
+      "wave": 10,
+      "risk": "zipper_external_followup_without_current_approval_or_context_risk",
+      "owner_file_count": 384,
+      "term_hit_files": 117,
+      "sample_artifacts": [
+        "CHANGELOG.md",
+        "reports/lk-seo-cro-p1-approval-packets-2026-05-18.json",
+        "reports/brain-health-check-2026-06-05-lcmordomo-p1-zipper-canonical-store.json",
+        "reports/mission-control-ops-state-latest.json",
+        "reports/lk-mission-control-snapshot-2026-05-14-post-gmc-monitor.md",
+        "reports/brain-health-check-2026-06-05-lcmordomo-p12-decision-inbox-dryrun.json",
+        "reports/brain-health-check-2026-06-05-lcmordomo-p14-packet-qa.json",
+        "reports/mission-control-ops-state-2026-05-16.json",
+        "reports/brain-health-check-2026-06-05-lcmordomo-p13-action-packet-renderer.json",
+        "reports/daily-consolidation/2026-06-05-handoff.json",
+        "reports/daily-consolidation/2026-05-24.md",
+        "reports/daily-consolidation/2026-06-05.md",
+        "reports/daily-consolidation/2026-05-19.md",
+        "reports/daily-consolidation/2026-05-22.md",
+        "reports/daily-consolidation/2026-05-23.md",
+        "reports/daily-consolidation/2026-05-21.md",
+        "reports/daily-consolidation/2026-05-25.md",
+        "reports/hermes-continuous-improvement/2026-05-24.md",
+        "reports/hermes-continuous-improvement/2026-05-22.md",
+        "reports/hermes-continuous-improvement/2026-05-23.md",
+        "reports/hermes-continuous-improvement/2026-05-29.md",
+        "reports/hermes-daily-digest/2026-05-24.md",
+        "reports/hermes-daily-digest/2026-05-22.md",
+        "reports/hermes-daily-digest/2026-05-23.md",
+        "reports/governance/runtime-vs-organograma-2026-05-24.md",
+        "reports/governance/cron-cleanup-migration-approval-packet-2026-05-25.md",
+        "reports/governance/cron-owner-classification-2026-05-26.md",
+        "reports/governance/cron-owner-final-reaudit-2026-05-25.md",
+        "reports/governance/cron-ownership-vs-task-router-2026-05-24.md",
+        "reports/governance/matriz-donos-crons-vs-organograma-2026-05-26.md"
+      ],
+      "score": 22,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "zipper-cron-readiness-control",
+      "title": "Zipper Cron Readiness Control",
+      "owner_area": "areas/zipper",
+      "suggested_hubs": [
+        "areas/zipper/projetos/cron-readiness-control"
+      ],
+      "existing_hubs": [
+        "areas/zipper/projetos/cron-readiness-control"
+      ],
+      "wave": 10,
+      "risk": "zipper_cron_activation_without_scoped_approval_risk",
+      "owner_file_count": 384,
+      "term_hit_files": 34,
+      "sample_artifacts": [
+        "reports/memory-hygiene/memory-os-v118-post-rollout-readiness-latest.json",
+        "reports/governance/memory-os-v118-post-rollout-readiness-audit-20260609.md",
+        "reports/governance/receipts/memory-os-v118-post-rollout-readiness-20260610.md",
+        "memories/daily/2026-06-10.md",
+        "areas/operacoes/rotinas/hermes-memory-os-v1.md",
+        "areas/operacoes/reports/lcmordomo-p202-zipper-clean-fixture-builder-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p115-zipper-shadow-ledger-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p112-zipper-cron-silent-ok-fixture-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p205-zipper-approval-surface-reconciliation-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p203-zipper-state-rollback-repair-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p206-zipper-final-p2-readiness-audit-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p121-zipper-final-cron-envelope-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p114-zipper-readiness-audit-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p118-zipper-cron-creation-dryrun-executor-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p116-zipper-cron-creation-preview-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p119-zipper-cron-state-rollback-rehearsal-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p117-zipper-cron-approval-packet-2026-06-06.md",
+        "areas/operacoes/projetos/lcmordomo-os-p2-readiness-plan-2026-06-06.md",
+        "areas/operacoes/projetos/lcmordomo-os-control-plan.md",
+        "areas/operacoes/projetos/brain-os/ROLL_OUT_PLAN.md",
+        "areas/operacoes/projetos/brain-os/PROJECT_CANDIDATES.md",
+        "areas/lk/rotinas/lk-os-tiny-stock-micro-batch-2026-05-15.md",
+        "areas/lk/rotinas/implementation-plan-lk-tiny-local-stock-db-phase-a-2026-05-26.md",
+        "areas/lk/sub-areas/content/receipts/lk-content-gate10-crons-activated-20260607.md",
+        "areas/lk/sub-areas/content/receipts/lk-content-telegram-bot-activated-20260607.md",
+        "areas/zipper/MAPA.md",
+        "areas/zipper/projetos/cron-readiness-control/DECISIONS_AND_GUARDRAILS.md",
+        "areas/zipper/projetos/cron-readiness-control/README.md",
+        "areas/zipper/projetos/cron-readiness-control/ARTIFACT_INDEX.md",
+        "areas/zipper/projetos/cron-readiness-control/TIMELINE.md"
+      ],
+      "score": 19,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "hermes-kanban-command-center",
+      "title": "Hermes Kanban Command Center",
+      "owner_area": "areas/operacoes",
+      "suggested_hubs": [
+        "areas/operacoes/projetos/hermes-kanban-command-center"
+      ],
+      "existing_hubs": [
+        "areas/operacoes/projetos/hermes-kanban-command-center"
+      ],
+      "wave": 10,
+      "risk": "kanban_worker_or_command_activation_without_runtime_approval_risk",
+      "owner_file_count": 397,
+      "term_hit_files": 32,
+      "sample_artifacts": [
+        "receipts/hermes-v016-operating-layer-packet-receipt-2026-06-06.md",
+        "receipts/hermes-telegram-kanban-command-approval-a-readonly-receipt-2026-06-06.md",
+        "reports/mission-control-ops-state-latest.json",
+        "reports/mission-control-ops-state-2026-05-16.json",
+        "reports/daily-consolidation/2026-06-05-handoff.json",
+        "reports/daily-consolidation/2026-06-05.md",
+        "reports/hermes-continuous-improvement/2026-05-17.md",
+        "reports/hermes-continuous-improvement/2026-05-18.md",
+        "reports/hermes-continuous-improvement/2026-05-29.md",
+        "reports/governance/hermes-telegram-kanban-command-approval-packet-2026-06-06.md",
+        "reports/governance/hermes-v016-continuous-adoption-rd-2026-06-06.md",
+        "reports/governance/hermes-v016-operating-layer-next-step-approval-packet-2026-06-06.md",
+        "reports/mission-control-pr-package/mission-control-p2-10-11-12-20260516-summary.md",
+        "reports/mission-control-pr-package/mission-control-12-improvements-20260516-summary.md",
+        "empresa/rotinas/_index.md",
+        "memories/decisions.md",
+        "areas/operacoes/MAPA.md",
+        "areas/operacoes/mordomo/subagent-registry-2026-06-05.md",
+        "areas/operacoes/rotinas/hermes-v013-next-improvements-plan-2026-05-10.md",
+        "areas/operacoes/rotinas/hermes-v016-continuous-improvement-checklist.md",
+        "areas/operacoes/rotinas/hermes-v013-kanban-lk-growth-ops.md",
+        "areas/operacoes/rotinas/hermes-v013-operacionalizacao.md",
+        "areas/operacoes/reports/lcmordomo-os-next-steps-2026-06-05.md",
+        "areas/operacoes/projetos/hermes-kanban-command-center/README.md",
+        "areas/operacoes/projetos/hermes-kanban-command-center/CURRENT_STATE.md",
+        "areas/operacoes/decisions/subagentes-contexto-minimo-brain-sob-demanda-2026-06-05.md",
+        "areas/operacoes/prds/hermes-telegram-kanban-command-prd-2026-06-06.md",
+        "areas/operacoes/prds/hermes-v016-kanban-pilot-controlled-prd-2026-06-06.md",
+        "areas/operacoes/prds/hermes-v013-kanban-workers-readiness.md",
+        "areas/hermes/operacoes/manual-producao/PHASE_2_CONTROLLED_ADOPTION.md"
+      ],
+      "score": 19,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "spiti-auction-operations",
+      "title": "SPITI Auction Operations",
+      "owner_area": "areas/spiti",
+      "suggested_hubs": [
+        "areas/spiti/projetos/auction-operations"
+      ],
+      "existing_hubs": [
+        "areas/spiti/projetos/auction-operations"
+      ],
+      "wave": 10,
+      "risk": "spiti_auction_or_bid_claim_without_live_source_risk",
+      "owner_file_count": 34,
+      "term_hit_files": 16,
+      "sample_artifacts": [
+        "ROADMAP-30-DIAS-HERMES.md",
+        "reports/revisao-operacional-multiempresa-hermes-geral-2026-05-16.md",
+        "areas/operacoes/projetos/mission-control-hermes-native-prd-2026-05-17.md",
+        "areas/spiti/MAPA.md",
+        "areas/spiti/contexto/spiti-hub-github.md",
+        "areas/spiti/rotinas/relatorio-leilao.md",
+        "areas/spiti/rotinas/verificacao-lances.md",
+        "areas/spiti/rotinas/pos-leilao-lessons.md",
+        "areas/spiti/rotinas/playbook-pregao-ao-vivo.md",
+        "areas/spiti/rotinas/playbook-divergencia-lances.md",
+        "areas/spiti/projetos/spiti-readonly-audit-status-2026-05-19.md",
+        "areas/spiti/projetos/auction-operations/README.md",
+        "areas/spiti/projetos/auction-operations/NEXT_STEPS.md",
+        "areas/spiti/projetos/auction-operations/CURRENT_STATE.md",
+        "areas/spiti/templates/relatorio-interno-matriz-evidencia.md",
+        "areas/spiti/paperclip/prd-implantacao-paperclip-spiti.md"
+      ],
+      "score": 15,
       "recommendation": "monitor_or_refine_existing_hub"
     }
   ]

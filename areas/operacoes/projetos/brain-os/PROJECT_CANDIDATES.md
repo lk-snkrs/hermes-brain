@@ -96,3 +96,10 @@ Observação: o candidato do scanner `mission-control-mesa-coo` foi separado em 
 - `areas/operacoes/projetos/cron-control-plane/` — Hermes Cron Control Plane.
 - `areas/operacoes/projetos/brain-fonte-viva-data-governance/` — Brain Fonte Viva / Data Governance.
 - `areas/operacoes/projetos/webhooks-to-brain-ingestion/` — Webhooks to Brain Ingestion.
+
+## Onda 10 — executada localmente em 2026-06-11
+
+- `areas/zipper/projetos/followup-decision-inbox/` — Zipper Follow-up / Decision Inbox.
+- `areas/zipper/projetos/cron-readiness-control/` — Zipper Cron Readiness Control.
+- `areas/spiti/projetos/auction-operations/` — SPITI Auction Operations.
+- `areas/operacoes/projetos/hermes-kanban-command-center/` — Hermes Kanban Command Center.

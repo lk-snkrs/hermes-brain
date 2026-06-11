@@ -367,6 +367,43 @@ PROJECT_DEFS = [
         'wave': 9,
     },
 
+    {
+        'id': 'zipper-followup-decision-inbox',
+        'title': 'Zipper Follow-up / Decision Inbox',
+        'owner_area': 'areas/zipper',
+        'suggested_hubs': ['areas/zipper/projetos/followup-decision-inbox'],
+        'terms': ['zipper followup', 'decision inbox', 'action packet', 'packet qa', 'canonical store', 'shadow ledger'],
+        'risk': 'zipper_external_followup_without_current_approval_or_context_risk',
+        'wave': 10,
+    },
+    {
+        'id': 'zipper-cron-readiness-control',
+        'title': 'Zipper Cron Readiness Control',
+        'owner_area': 'areas/zipper',
+        'suggested_hubs': ['areas/zipper/projetos/cron-readiness-control'],
+        'terms': ['zipper cron', 'cron creation', 'cron envelope', 'readiness audit', 'silent-ok fixture', 'rollback rehearsal'],
+        'risk': 'zipper_cron_activation_without_scoped_approval_risk',
+        'wave': 10,
+    },
+    {
+        'id': 'spiti-auction-operations',
+        'title': 'SPITI Auction Operations',
+        'owner_area': 'areas/spiti',
+        'suggested_hubs': ['areas/spiti/projetos/auction-operations'],
+        'terms': ['verificacao lances', 'verificação lances', 'relatorio leilao', 'relatório leilão', 'pregao ao vivo', 'pregão ao vivo', 'divergencia lances', 'pós-leilão'],
+        'risk': 'spiti_auction_or_bid_claim_without_live_source_risk',
+        'wave': 10,
+    },
+    {
+        'id': 'hermes-kanban-command-center',
+        'title': 'Hermes Kanban Command Center',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/hermes-kanban-command-center'],
+        'terms': ['telegram kanban', 'kanban workers', 'kanban pilot', 'subagent registry', 'subagentes contexto minimo', 'worker readiness'],
+        'risk': 'kanban_worker_or_command_activation_without_runtime_approval_risk',
+        'wave': 10,
+    },
+
 ]
 
 
