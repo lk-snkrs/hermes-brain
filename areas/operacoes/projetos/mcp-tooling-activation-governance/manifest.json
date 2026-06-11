@@ -19,5 +19,17 @@
     "manifest.json"
   ],
   "indexed_artifact_count": 7,
-  "guardrail_count": 4
+  "guardrail_count": 4,
+  "updated_at": "2026-06-11T15:52:22Z",
+  "source_of_truth": [
+    "Live Hermes tool registry/config discovery for activation state",
+    "Brain hub as governance snapshot/index only",
+    "MCP skills as procedure references outside Brain repo when applicable"
+  ],
+  "guardrails": [
+    "Brain is a snapshot/index; live source wins for current state.",
+    "Local/documental updates only by default.",
+    "No external writes, runtime changes, secrets, customer messages, purchases, campaigns or production changes without scoped approval.",
+    "Receipts/reports are evidence, not current operational approval."
+  ]
 }

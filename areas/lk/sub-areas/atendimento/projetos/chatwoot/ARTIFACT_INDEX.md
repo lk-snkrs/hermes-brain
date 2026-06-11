@@ -1,3 +1,29 @@
+# Chatwoot / Elle / LK Atendimento — Artifact Index
+
+Este índice aponta para artefatos verificados no repositório Brain. Ele não move nem duplica fontes; serve para roteamento e recuperação.
+
+## Verified sample paths
+
+- `areas/lk/sub-areas/atendimento/projetos/chatwoot/README.md`
+- `areas/lk/sub-areas/atendimento/projetos/chatwoot/CURRENT_STATE.md`
+- `areas/lk/sub-areas/atendimento/projetos/chatwoot/DECISIONS_AND_GUARDRAILS.md`
+- `areas/lk/sub-areas/atendimento/projetos/chatwoot/ARTIFACT_INDEX.md`
+- `areas/lk/sub-areas/atendimento/projetos/chatwoot/TIMELINE.md`
+- `areas/lk/sub-areas/atendimento/projetos/chatwoot/NEXT_STEPS.md`
+- `areas/lk/sub-areas/atendimento/projetos/chatwoot/manifest.json`
+
+## Evidence families
+
+- Receipts/reports: evidência histórica e snapshot, não aprovação atual.
+- Runbooks/rotinas: procedimento documental; validar runtime antes de executar.
+- Hub files: pacote canônico Brain OS para decisão local/documental.
+
+## Regra de leitura
+
+Se houver conflito entre este hub e uma fonte viva/runtime verificada, a fonte viva/runtime verificada vence. Este hub deve registrar ponte, não substituir verificação.
+
+## Historical generated index preserved below
+
 # Artifact Index — Chatwoot / Elle / LK Atendimento
 
 Gerado em: `2026-06-10T18:33:50Z`

@@ -19,5 +19,17 @@
     "manifest.json"
   ],
   "indexed_artifact_count": 7,
-  "guardrail_count": 4
+  "guardrail_count": 4,
+  "updated_at": "2026-06-11T15:52:22Z",
+  "source_of_truth": [
+    "Live runtime/profile state from Hermes profile files and current process/cron inspection",
+    "Brain hub as documented snapshot/index only",
+    "Hermes runtime observability and cron control plane hubs for related evidence"
+  ],
+  "guardrails": [
+    "Brain is a snapshot/index; live source wins for current state.",
+    "Local/documental updates only by default.",
+    "No external writes, runtime changes, secrets, customer messages, purchases, campaigns or production changes without scoped approval.",
+    "Receipts/reports are evidence, not current operational approval."
+  ]
 }

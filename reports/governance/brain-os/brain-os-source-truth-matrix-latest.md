@@ -1,12 +1,12 @@
 # Brain OS Source-of-Truth Matrix
 
-- Generated at: `2026-06-11T14:45:46.679766+00:00`
+- Generated at: `2026-06-11T15:54:27.719935+00:00`
 - Hubs: `56`
 
 ## Domain counts
 - `Chatwoot`: 2
 - `Cron`: 26
-- `Docker`: 9
+- `Docker`: 10
 - `Doppler`: 6
 - `GMC`: 8
 - `GitHub`: 4
@@ -17,7 +17,7 @@
 - `Shopify`: 25
 - `Supabase`: 1
 - `Tiny`: 12
-- `VPS`: 9
+- `VPS`: 10
 - `WhatsApp`: 12
 - `Zipper`: 5
 
@@ -69,7 +69,7 @@
 - `areas/operacoes/projetos/mesa-coo` — domains=['WhatsApp']; live_source_required=True; approval_required_for_writes=True
 - `areas/operacoes/projetos/mission-control` — domains=[]; live_source_required=True; approval_required_for_writes=True
 - `areas/operacoes/projetos/mordomo-os` — domains=['VPS', 'Docker', 'Cron', 'LK']; live_source_required=True; approval_required_for_writes=True
-- `areas/operacoes/projetos/profile-channel-runtime-inventory` — domains=['Cron']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/profile-channel-runtime-inventory` — domains=['VPS', 'Docker', 'Cron']; live_source_required=True; approval_required_for_writes=True
 - `areas/operacoes/projetos/repo-hygiene-artifact-retention` — domains=[]; live_source_required=True; approval_required_for_writes=True
 - `areas/operacoes/projetos/telegram-delivery-ux-governance` — domains=['Cron']; live_source_required=True; approval_required_for_writes=True
 - `areas/operacoes/projetos/webhooks-to-brain-ingestion` — domains=['Shopify', 'Doppler', 'Cron']; live_source_required=True; approval_required_for_writes=True

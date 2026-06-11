@@ -1,6 +1,6 @@
 # Brain OS Docs/Runtime Guard
 
-- Generated at: `2026-06-11T14:45:57.745270+00:00`
+- Generated at: `2026-06-11T15:54:58.176367+00:00`
 - Findings: `256`
 
 ## Findings
