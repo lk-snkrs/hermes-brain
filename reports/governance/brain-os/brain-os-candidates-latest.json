@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-11T00:28:37.611922+00:00",
+  "generated_at": "2026-06-11T01:10:31.948462+00:00",
   "root": "/opt/data/hermes_bruno_ingest/hermes-brain",
   "mode": "read_only_scan",
   "scanner_version": "brain-os-v1",
-  "total_text_files_scanned": 17539,
+  "total_text_files_scanned": 17571,
   "candidates": [
     {
       "id": "lk-growth-gmc-shopify-meta",
@@ -20,7 +20,7 @@
       "wave": 1,
       "risk": "high_external_write_risk",
       "owner_file_count": 10981,
-      "term_hit_files": 10053,
+      "term_hit_files": 10060,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -70,7 +70,7 @@
       "wave": 1,
       "risk": "source_of_truth_confusion",
       "owner_file_count": 7925,
-      "term_hit_files": 8395,
+      "term_hit_files": 8396,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -167,7 +167,7 @@
       ],
       "wave": 1,
       "risk": "context_truth_and_runtime_claim_risk",
-      "owner_file_count": 404,
+      "owner_file_count": 418,
       "term_hit_files": 260,
       "sample_artifacts": [
         "AGENTS.md",
@@ -265,7 +265,7 @@
       ],
       "wave": 2,
       "risk": "personal_external_action_risk",
-      "owner_file_count": 404,
+      "owner_file_count": 418,
       "term_hit_files": 650,
       "sample_artifacts": [
         "TOOLS.md",
@@ -365,7 +365,7 @@
       ],
       "wave": 2,
       "risk": "approval_sequence_and_decision_state_risk",
-      "owner_file_count": 404,
+      "owner_file_count": 418,
       "term_hit_files": 345,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -415,7 +415,7 @@
       "wave": 3,
       "risk": "theme_production_write_risk",
       "owner_file_count": 10981,
-      "term_hit_files": 6914,
+      "term_hit_files": 6921,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -463,7 +463,7 @@
       ],
       "wave": 3,
       "risk": "snapshot_vs_live_state_risk",
-      "owner_file_count": 404,
+      "owner_file_count": 418,
       "term_hit_files": 1310,
       "sample_artifacts": [
         "TOOLS.md",
@@ -659,8 +659,8 @@
       ],
       "wave": 4,
       "risk": "customer_support_external_message_risk",
-      "owner_file_count": 259,
-      "term_hit_files": 772,
+      "owner_file_count": 261,
+      "term_hit_files": 774,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -855,8 +855,8 @@
       ],
       "wave": 5,
       "risk": "telegram_noise_or_stale_report_risk",
-      "owner_file_count": 22211,
-      "term_hit_files": 8363,
+      "owner_file_count": 22227,
+      "term_hit_files": 8372,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -904,8 +904,8 @@
       ],
       "wave": 5,
       "risk": "approval_history_misuse_or_ledger_manipulation_risk",
-      "owner_file_count": 22211,
-      "term_hit_files": 2925,
+      "owner_file_count": 22227,
+      "term_hit_files": 2933,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -953,7 +953,7 @@
       ],
       "wave": 5,
       "risk": "cross_specialist_runtime_confusion_risk",
-      "owner_file_count": 22211,
+      "owner_file_count": 22227,
       "term_hit_files": 296,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -1002,7 +1002,7 @@
       ],
       "wave": 5,
       "risk": "stale_or_conflicting_source_of_truth_risk",
-      "owner_file_count": 22211,
+      "owner_file_count": 22227,
       "term_hit_files": 273,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -1198,7 +1198,7 @@
       ],
       "wave": 6,
       "risk": "external_customer_or_supplier_message_without_approval_risk",
-      "owner_file_count": 259,
+      "owner_file_count": 261,
       "term_hit_files": 264,
       "sample_artifacts": [
         "TOOLS.md",
@@ -1639,7 +1639,7 @@
       ],
       "wave": 9,
       "risk": "brain_documentation_mistaken_for_current_live_data_risk",
-      "owner_file_count": 404,
+      "owner_file_count": 418,
       "term_hit_files": 250,
       "sample_artifacts": [
         "reports/brain-health-check-2026-05-31-runtime-truth-reconciler.json",
@@ -1688,7 +1688,7 @@
       ],
       "wave": 9,
       "risk": "unvalidated_webhook_event_triggering_external_or_runtime_action_risk",
-      "owner_file_count": 404,
+      "owner_file_count": 418,
       "term_hit_files": 88,
       "sample_artifacts": [
         "AGENTS.md",
@@ -1737,7 +1737,7 @@
       ],
       "wave": 9,
       "risk": "cron_noise_or_unapproved_runtime_schedule_change_risk",
-      "owner_file_count": 404,
+      "owner_file_count": 418,
       "term_hit_files": 69,
       "sample_artifacts": [
         "CHANGELOG.md",
@@ -1786,7 +1786,7 @@
       ],
       "wave": 9,
       "risk": "documented_runtime_state_confused_with_live_activation_risk",
-      "owner_file_count": 404,
+      "owner_file_count": 418,
       "term_hit_files": 32,
       "sample_artifacts": [
         "CHANGELOG.md",
@@ -1884,7 +1884,7 @@
       ],
       "wave": 10,
       "risk": "kanban_worker_or_command_activation_without_runtime_approval_risk",
-      "owner_file_count": 404,
+      "owner_file_count": 418,
       "term_hit_files": 32,
       "sample_artifacts": [
         "receipts/hermes-v016-operating-layer-packet-receipt-2026-06-06.md",
@@ -2095,9 +2095,9 @@
         "reports/daily-consolidation/2026-05-28.md",
         "reports/brain-worktrees-2026-05-16/lk-marketing-attribution-export/metadata.json",
         "reports/brain-organogram-consolidation-2026-05-16/status-by-organogram.json",
-        "reports/memory-hygiene/events-latest.json",
         "reports/memory-hygiene/receipt-adoption-gate-v220.json",
         "reports/memory-hygiene/adoption-latest.json",
+        "reports/memory-hygiene/daytime-latest.json",
         "reports/brain-git-hygiene-2026-05-16/status-classification.json"
       ],
       "score": 85,
@@ -2133,6 +2133,7 @@
         "reports/governance/cron-registry-backups/2026-05-25-block2-paused-oneshot-cleanup/lk-growth-jobs.after.json",
         "reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/lk-growth-jobs.before.json",
         "reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/lk-growth-jobs.after.json",
+        "reports/governance/receipts/brain-os-v1-wave11-evidence-ledgers-20260611.md",
         "reports/governance/worker-smoke-raw-20260606/lkgoc-worker-smoke-20260606T132146Z.txt",
         "reports/governance/worker-smoke-raw-20260606/lk-shopify-worker-smoke-20260606T131856Z.txt",
         "empresa/contexto/matriz-roteamento-tarefas-hermes.md",
@@ -2146,8 +2147,7 @@
         "areas/lk/sub-areas/growth/PADRAO-CANONICO-GUIA-E-COLECAO-LK.md",
         "areas/lk/sub-areas/growth/LKGOC-MAPA-JA-FEITO.md",
         "areas/lk/sub-areas/growth/PLANO-ROLL_OUT-PADRAO-GUIA-E-COLECAO-LK-20260529.md",
-        "areas/lk/sub-areas/growth/LKGOC-STANDARD-V1-LK-GOC.md",
-        "areas/lk/sub-areas/growth/PADRAO-LK-COLLECTION-V2.md"
+        "areas/lk/sub-areas/growth/LKGOC-STANDARD-V1-LK-GOC.md"
       ],
       "score": 42,
       "recommendation": "canonical_hub_needed"
@@ -2164,7 +2164,7 @@
       ],
       "wave": 11,
       "risk": "governance_backup_or_receipt_mistaken_for_current_runtime_state_risk",
-      "owner_file_count": 404,
+      "owner_file_count": 418,
       "term_hit_files": 367,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -2199,6 +2199,202 @@
         "reports/brain-health-check-2026-05-09-lk-os-examples.json"
       ],
       "score": 33,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "shopify-theme-backups-archive",
+      "title": "LK Shopify Theme Backups Archive",
+      "owner_area": "areas/lk",
+      "suggested_hubs": [
+        "areas/lk/projetos/shopify-theme-backups-archive"
+      ],
+      "existing_hubs": [
+        "areas/lk/projetos/shopify-theme-backups-archive"
+      ],
+      "wave": 12,
+      "risk": "theme_backup_or_dev_preview_mistaken_for_current_production_state_risk",
+      "owner_file_count": 22227,
+      "term_hit_files": 1932,
+      "sample_artifacts": [
+        "AGENTS.md",
+        "CHANGELOG.md",
+        "reports/lk-gmc-2026-05-12-local-cd-residual-tiny-probe.json",
+        "reports/lk-gmc-2026-05-21-approved-next-wave-final-report.md",
+        "reports/lk-cro-trust-below-readmore-dev-theme-2026-05-18.md",
+        "reports/lk-growth-geo-seo-claude-audit-2026-05-25.md",
+        "reports/lk-cro-filter-below-trust-dev-theme-2026-05-18.md",
+        "reports/lk-seo-cro-p1-approval-packets-2026-05-18.json",
+        "reports/lk-gmc-2026-05-21-packet-a-dev-theme-upload.json",
+        "reports/lk-gmc-2026-05-12-phase7-post-cleanup-monitor.md",
+        "reports/lk-cro-visual-preview-pack-v0-dev-theme-2026-05-18.md",
+        "reports/lk-growth-weekly-revenue-opportunity-2026-05-19.md",
+        "reports/lk-cro-conversion-preview-v0-2026-05-18.json",
+        "reports/lk-gmc-2026-05-12-p1-core-attributes-root-cause-probe.json",
+        "reports/lk-gmc-2026-05-12-local-cd-pos-source-validation.csv",
+        "reports/lk-cro-visual-preview-pack-v0-2026-05-18.md",
+        "reports/lk-cro-weekly-preview-top-priorities-2026-05-19.csv",
+        "reports/lk-seo-cro-p1-approval-packets-2026-05-18.md",
+        "reports/lk-growth-collection-description-rewrite-packet-2026-05-22.md",
+        "reports/lk-gmc-2026-05-12-phase7-post-cleanup-monitor.json",
+        "reports/lk-gmc-2026-05-21-packet-a-dev-theme-upload.md",
+        "reports/lk-cro-chat-availability-copy-fix-2026-05-18.md",
+        "reports/lk-cro-conversion-preview-v0-2026-05-18.csv",
+        "reports/lk-cro-weekly-preview-top-priorities-2026-05-19.md",
+        "reports/lk-gmc-2026-05-12-local-cd-pos-source-validation.json",
+        "reports/lk-growth-geo-packet-b-dev-theme-dedupe-fix-2026-05-22.md",
+        "reports/lk-gmc-2026-05-12-p1-availability-tiny-packet.json",
+        "reports/lk-gmc-2026-05-12-local-cd-final-approval-packet.json",
+        "reports/lk-growth-geo-seo-claude-audit-2026-05-22.md",
+        "reports/lk-os-telegram-inline-approval-rewrites-gmc-p1-2026-05-12.md"
+      ],
+      "score": 85,
+      "recommendation": "canonical_hub_needed"
+    },
+    {
+      "id": "lk-sales-reports-ledger",
+      "title": "LK Sales Reports Ledger",
+      "owner_area": "areas/lk",
+      "suggested_hubs": [
+        "areas/lk/projetos/sales-reports-ledger"
+      ],
+      "existing_hubs": [
+        "areas/lk/projetos/sales-reports-ledger"
+      ],
+      "wave": 12,
+      "risk": "sales_report_preview_or_local_file_mistaken_for_external_delivery_risk",
+      "owner_file_count": 22227,
+      "term_hit_files": 392,
+      "sample_artifacts": [
+        "ROADMAP-30-DIAS-HERMES.md",
+        "CHANGELOG.md",
+        "reports/hermes-host-docker-observability-2026-05-19.json",
+        "reports/lk-os-current-next-decision-queue-2026-05-13.md",
+        "reports/hermes-host-docker-observability-2026-05-26.json",
+        "reports/lk-os-weekly-ceo-review-2026-05-04_2026-05-10.json",
+        "reports/hermes-host-docker-observability-triage-2026-06-06T1006Z.json",
+        "reports/hermes-host-docker-observability-2026-05-22.json",
+        "reports/hermes-host-docker-observability-2026-05-18.json",
+        "reports/hermes-host-docker-observability-2026-05-14.json",
+        "reports/hermes-host-docker-observability-2026-05-16-post-v014-fixed.json",
+        "reports/hermes-host-docker-observability-2026-05-16-post-v014-alert.json",
+        "reports/hermes-host-docker-observability-pre-v014-2026-05-16-111350.json",
+        "reports/lk-mission-control-snapshot-2026-05-12.json",
+        "reports/hermes-host-docker-observability-2026-05-24.json",
+        "reports/hermes-host-docker-observability-2026-06-05.json",
+        "reports/lk-daily-weekly-silent-cron-activation-2026-05-11.json",
+        "reports/hermes-host-docker-observability-2026-05-28.json",
+        "reports/lk-phase8-completion-audit-2026-05-11.json",
+        "reports/lk-os-daily-sales-brief-telegram-preview-2026-05-10.md",
+        "reports/lk-os-current-next-decision-queue-2026-05-13.json",
+        "reports/lk-os-daily-sales-brief-2026-05-10.json",
+        "reports/lk-daily-weekly-dry-run-validation-2026-05-11.md",
+        "reports/hermes-host-docker-observability-2026-05-12.json",
+        "reports/hermes-host-docker-observability-2026-05-20.json",
+        "reports/mission-control-ops-state-latest.json",
+        "reports/revisao-operacional-multiempresa-hermes-geral-2026-05-16.md",
+        "reports/hermes-host-docker-observability-2026-05-25.json",
+        "reports/hermes-host-docker-observability-triage-2026-06-06T1008Z.json",
+        "reports/hermes-host-docker-observability-2026-06-04.json"
+      ],
+      "score": 70,
+      "recommendation": "canonical_hub_needed"
+    },
+    {
+      "id": "repo-hygiene-artifact-retention",
+      "title": "Brain Repo Hygiene / Artifact Retention",
+      "owner_area": "areas/operacoes",
+      "suggested_hubs": [
+        "areas/operacoes/projetos/repo-hygiene-artifact-retention"
+      ],
+      "existing_hubs": [
+        "areas/operacoes/projetos/repo-hygiene-artifact-retention"
+      ],
+      "wave": 12,
+      "risk": "bulk_cleanup_or_versioning_without_artifact_classification_risk",
+      "owner_file_count": 418,
+      "term_hit_files": 280,
+      "sample_artifacts": [
+        "TOOLS.md",
+        "ROADMAP-30-DIAS-HERMES.md",
+        "HEARTBEAT.md",
+        "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.md",
+        "reports/lk-gmc-2026-05-12-local-cd-residual-tiny-probe.json",
+        "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json",
+        "reports/lk-gmc-catalog-cleanup-preview-2026-05-12.csv",
+        "reports/hermes-host-docker-observability-2026-05-22.json",
+        "reports/lk-gmc-2026-05-12-phase7-diagnostics-triage.json",
+        "reports/lk-gmc-executable-previews-2026-05-12.csv",
+        "reports/lk-gmc-weekly-review-2026-05-21.md",
+        "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.csv",
+        "reports/lk-gmc-2026-05-12-phase7-post-cleanup-monitor.md",
+        "reports/lk-gmc-executable-previews-2026-05-12.json",
+        "reports/hermes-host-docker-observability-2026-06-05.json",
+        "reports/lk-gmc-orphan-ranking-2026-05-12.json",
+        "reports/lk-gmc-2026-05-12-local-cd-pos-source-validation.csv",
+        "reports/lk-os-telegram-approval-surface-audit-2026-05-12.json",
+        "reports/lk-gmc-weekly-review-2026-06-04.md",
+        "reports/lk-gmc-2026-05-12-phase7-post-cleanup-monitor.json",
+        "reports/lk-gmc-2026-05-12-local-cd-shopify-live-preview.json",
+        "reports/lk-os-next-execution-queue-2026-05-13.md",
+        "reports/hermes-host-docker-observability-2026-05-20.json",
+        "reports/lk-gmc-catalog-cleanup-preview-2026-05-12.json",
+        "reports/lk-gmc-2026-05-12-local-cd-pos-source-validation.json",
+        "reports/lk-gmc-weekly-review-2026-05-28.md",
+        "reports/revisao-operacional-multiempresa-hermes-geral-2026-05-16.md",
+        "reports/hermes-host-docker-observability-2026-05-25.json",
+        "reports/lk-gmc-local-inventory-source-probe-2026-05-12.json",
+        "reports/lk-gmc-2026-05-12-local-cd-final-approval-packet.json"
+      ],
+      "score": 30,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "hermes-execution-scripts-archive",
+      "title": "Hermes Execution Scripts Archive",
+      "owner_area": "areas/operacoes",
+      "suggested_hubs": [
+        "areas/operacoes/projetos/hermes-execution-scripts-archive"
+      ],
+      "existing_hubs": [
+        "areas/operacoes/projetos/hermes-execution-scripts-archive"
+      ],
+      "wave": 12,
+      "risk": "historical_script_mistaken_for_active_safe_routine_risk",
+      "owner_file_count": 418,
+      "term_hit_files": 257,
+      "sample_artifacts": [
+        "TOOLS.md",
+        "ROADMAP-30-DIAS-HERMES.md",
+        "README.md",
+        "AGENTS.md",
+        "MAPA.md",
+        "STARTUP.md",
+        "CHANGELOG.md",
+        "receipts/hermes-v016-adoption-os-local-docs-receipt-2026-06-06.md",
+        "reports/hermes-host-docker-observability-2026-05-19.json",
+        "reports/brain-improvement-score-2026-06-06-02h.md",
+        "reports/hermes-host-docker-observability-2026-05-22.json",
+        "reports/lk-gmc-2026-05-12-p1-availability-tiny-packet-running-status-2039.md",
+        "reports/brain-improvement-score-2026-05-25-item2.md",
+        "reports/brain-sync-safe-dry-run-2026-05-22-gap-closure.txt",
+        "reports/brain-improvement-score-2026-06-02-02h.md",
+        "reports/lk-gmc-2026-05-12-b3-same-id-root-cause.md",
+        "reports/brain-improvement-score-2026-05-31-02h.md",
+        "reports/brain-improvement-score-2026-05-09.md",
+        "reports/brain-improvement-score-2026-06-08-02h.md",
+        "reports/lk-seo-cro-weekly-2026-05-11.json",
+        "reports/hermes-host-docker-observability-2026-05-24.json",
+        "reports/brain-improvement-score-2026-05-30-fechamento-auto.md",
+        "reports/brain-improvement-score-2026-06-05-02h.md",
+        "reports/lk-gmc-api-data-sources-investigation-2026-05-21.json",
+        "reports/hermes-host-docker-observability-2026-06-05.json",
+        "reports/lk-daily-weekly-silent-cron-activation-2026-05-11.json",
+        "reports/brain-improvement-score-2026-06-10-02h.md",
+        "reports/lk-gmc-brain-safe-continuation-2026-05-22.md",
+        "reports/brain-improvement-score-2026-05-27-02h.md",
+        "reports/brain-improvement-score-2026-05-28-02h.md"
+      ],
+      "score": 29,
       "recommendation": "monitor_or_refine_existing_hub"
     }
   ]

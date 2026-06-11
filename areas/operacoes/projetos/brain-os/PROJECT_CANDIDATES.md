@@ -110,3 +110,10 @@ Observação: o candidato do scanner `mission-control-mesa-coo` foi separado em 
 - `areas/lk/sub-areas/stock/projetos/stock-approval-packets-ledger/` — LK Stock Approval Packets Ledger.
 - `areas/lk/sub-areas/collection-optimizer/projetos/lkgoc-evidence-workbench/` — LKGOC Evidence Workbench.
 - `areas/operacoes/projetos/governance-receipts-memory-backups/` — Governance Receipts / Memory Backups.
+
+## Onda 12 — executada localmente em 2026-06-11
+
+- `areas/lk/projetos/sales-reports-ledger/` — LK Sales Reports Ledger.
+- `areas/lk/projetos/shopify-theme-backups-archive/` — LK Shopify Theme Backups Archive.
+- `areas/operacoes/projetos/hermes-execution-scripts-archive/` — Hermes Execution Scripts Archive.
+- `areas/operacoes/projetos/repo-hygiene-artifact-retention/` — Brain Repo Hygiene / Artifact Retention.

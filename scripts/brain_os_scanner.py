@@ -441,6 +441,43 @@ PROJECT_DEFS = [
         'wave': 11,
     },
 
+    {
+        'id': 'lk-sales-reports-ledger',
+        'title': 'LK Sales Reports Ledger',
+        'owner_area': 'areas/lk',
+        'suggested_hubs': ['areas/lk/projetos/sales-reports-ledger'],
+        'terms': ['lk-sales-reports', 'daily sales', 'store close', 'pulse finance', 'whatsapp sales reports', 'weekly ceo review'],
+        'risk': 'sales_report_preview_or_local_file_mistaken_for_external_delivery_risk',
+        'wave': 12,
+    },
+    {
+        'id': 'shopify-theme-backups-archive',
+        'title': 'LK Shopify Theme Backups Archive',
+        'owner_area': 'areas/lk',
+        'suggested_hubs': ['areas/lk/projetos/shopify-theme-backups-archive'],
+        'terms': ['shopify-theme-backups', 'theme backups', 'rollback snapshot', 'dev theme', 'theme asset', 'production main'],
+        'risk': 'theme_backup_or_dev_preview_mistaken_for_current_production_state_risk',
+        'wave': 12,
+    },
+    {
+        'id': 'hermes-execution-scripts-archive',
+        'title': 'Hermes Execution Scripts Archive',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/hermes-execution-scripts-archive'],
+        'terms': ['scripts/', 'brain_health_check', 'operational_docs_guard', 'hermes_task_router', 'one-off script', 'execution script'],
+        'risk': 'historical_script_mistaken_for_active_safe_routine_risk',
+        'wave': 12,
+    },
+    {
+        'id': 'repo-hygiene-artifact-retention',
+        'title': 'Brain Repo Hygiene / Artifact Retention',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/repo-hygiene-artifact-retention'],
+        'terms': ['git status', 'untracked', 'artifact retention', 'tmp/', 'cleanup', 'safe-sync', 'brain-diff-digest'],
+        'risk': 'bulk_cleanup_or_versioning_without_artifact_classification_risk',
+        'wave': 12,
+    },
+
 ]
 
 

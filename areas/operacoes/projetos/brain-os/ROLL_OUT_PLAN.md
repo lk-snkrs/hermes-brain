@@ -134,3 +134,11 @@ Somente se Lucas aprovar:
 - Criar hub LKGOC Evidence Workbench: concluído localmente.
 - Criar hub Governance Receipts / Memory Backups: concluído localmente.
 - Próximo gate: scanner, secret scan, Brain health e docs guard.
+
+## Status Onda 12 — 2026-06-11
+
+- Criar hub LK Sales Reports Ledger: concluído localmente.
+- Criar hub LK Shopify Theme Backups Archive: concluído localmente.
+- Criar hub Hermes Execution Scripts Archive: concluído localmente.
+- Criar hub Brain Repo Hygiene / Artifact Retention: concluído localmente.
+- Próximo gate: scanner, secret scan, Brain health e docs guard.

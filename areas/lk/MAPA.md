@@ -119,3 +119,5 @@ Tag Shopify: `LK Growth Optimized Collection`.
 - `projetos/data-quality-layer/` — hub canônico Brain OS Onda 5 para qualidade de dados, auditorias e reconciliação entre fontes vivas.
 - `projetos/reporting-briefings/` — hub canônico Brain OS Onda 5 para briefings, relatórios comerciais, dailies/weeklies e superfícies executivas LK.
 - `projetos/approval-learning-ledger/` — hub canônico Brain OS Onda 5 para decisões, aprovações, outcomes, lessons e consequência operacional LK.
+- `projetos/sales-reports-ledger/` — hub canônico Brain OS Onda 12 para relatórios recorrentes de vendas, previews WhatsApp/e-mail e histórico daily/weekly/pulse/store close.
+- `projetos/shopify-theme-backups-archive/` — hub canônico Brain OS Onda 12 para backups/snapshots Shopify theme, rollback/readback e separação DEV/preview/produção.
