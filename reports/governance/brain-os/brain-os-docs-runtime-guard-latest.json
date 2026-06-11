@@ -1,0 +1,1010 @@
+{
+  "generated_at": "2026-06-11T14:33:12.604974+00:00",
+  "root": "/opt/data/hermes_brain_wave14_publish",
+  "mode": "local_readonly_docs_runtime_guard",
+  "guard_version": "brain-os-docs-runtime-guard-v1",
+  "finding_count": 256,
+  "findings": [
+    {
+      "kind": "runtime_write",
+      "path": "TOOLS.md",
+      "line": 236
+    },
+    {
+      "kind": "runtime_write",
+      "path": "ROADMAP-30-DIAS-HERMES.md",
+      "line": 166
+    },
+    {
+      "kind": "external_write",
+      "path": "AGENTS.md",
+      "line": 71
+    },
+    {
+      "kind": "external_write",
+      "path": "STARTUP.md",
+      "line": 44
+    },
+    {
+      "kind": "external_write",
+      "path": "PROTOCOLS.md",
+      "line": 47
+    },
+    {
+      "kind": "runtime_write",
+      "path": "CHANGELOG.md",
+      "line": 805
+    },
+    {
+      "kind": "external_write",
+      "path": "CHANGELOG.md",
+      "line": 74
+    },
+    {
+      "kind": "secret_literal",
+      "path": "alert_system.py",
+      "line": 265
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-fila-a-sourcing-validation-and-quote-preview-2026-05-11.json",
+      "line": 9
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-merchant-center-feed-readonly-router-2026-05-11.json",
+      "line": 7173
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-gmc-required-attrs-verify-2026-05-12.json",
+      "line": 1536
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-p0-remaining-tiny-code-preview-2026-05-11.json",
+      "line": 6
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.md",
+      "line": 113
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-stock-sku-saneamento-b-e-preview-a-2026-05-11.json",
+      "line": 1764
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-influencer-sku-stock-matrix-readonly-2026-05-10.md",
+      "line": 5
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-seo-cro-decision-grade-refresh-2026-05-18.json",
+      "line": 4478
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-p0-tiny-code-correction-execution-2026-05-11.json",
+      "line": 7
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-gmc-required-attrs-datafeed-refresh-2026-05-12.json",
+      "line": 67
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-weekly-ceo-review-2026-05-04_2026-05-10.json",
+      "line": 968
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json",
+      "line": 67
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-on-demand-sourcing-router-readiness-guard-2026-05-11.json",
+      "line": 190
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-search-console-readonly-router-2026-05-11.json",
+      "line": 829
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-shopify-tiny-residual-fila-b-2026-05-11.json",
+      "line": 745
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-p0-remaining-tiny-code-execution-retry-apparel-2026-05-11.json",
+      "line": 6
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-phase5-purchase-to-recommendation-matrix-2026-05-11.md",
+      "line": 167
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-crm-phase5-next-decision-router-2026-05-11.json",
+      "line": 136
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-seo-cro-p1-approval-packets-2026-05-18.json",
+      "line": 503
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-seo-cro-title-meta-preview-2026-05-11.json",
+      "line": 3
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-stock-influencer-audit-readonly-2026-05-10.md",
+      "line": 11
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-gmc-p0-url-checkout-review-2026-05-12.json",
+      "line": 111
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-search-console-readonly-router-2026-05-11.md",
+      "line": 138
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-mission-control-snapshot-2026-05-12.json",
+      "line": 540
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-shopify-tiny-residual-fila-b-prioritized-review-2026-05-11.json",
+      "line": 10
+    },
+    {
+      "kind": "runtime_write",
+      "path": "reports/memory-hygiene-2026-05-09.md",
+      "line": 31
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-weekly-quote-validation-preview-2026-05-04_2026-05-10.json",
+      "line": 237
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.json",
+      "line": 60
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-daily-weekly-silent-cron-activation-2026-05-11.json",
+      "line": 48
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-p0-tiny-code-correction-preview-2026-05-11.json",
+      "line": 6
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-pdp-low-conversion-priority-router-2026-05-11.md",
+      "line": 236
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-seo-cro-p1-approval-packets-2026-05-18.md",
+      "line": 107
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-phase8-completion-audit-2026-05-11.json",
+      "line": 83
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-sku-shopify-tiny-map-preview-2026-05-10.json",
+      "line": 4
+    },
+    {
+      "kind": "runtime_write",
+      "path": "reports/revisao-operacional-multiempresa-2026-05-09.md",
+      "line": 57
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-p0-remaining-followup-readonly-2026-05-11.json",
+      "line": 7
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-daily-sales-brief-2026-05-10.json",
+      "line": 767
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-weekly-internal-influencer-email-preview-2026-05-11.md",
+      "line": 72
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-daily-weekly-dry-run-validation-2026-05-11.md",
+      "line": 29
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-influencer-identity-bridge-2026-05-11.json",
+      "line": 555
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-gmc-correction-preview-2026-05-12.json",
+      "line": 305
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-gmc-required-attrs-preview-2026-05-12.json",
+      "line": 3992
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-weekly-internal-influencer-email-preview-2026-05-11.json",
+      "line": 102
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-creative-visual-approval-gate-2026-05-11.json",
+      "line": 517
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-weekly-ceo-review-2026-05-04_2026-05-10.md",
+      "line": 78
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-weekly-stock-sku-action-plan-2026-05-04_2026-05-10.json",
+      "line": 54
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-pdp-low-conversion-priority-router-2026-05-11.json",
+      "line": 1370
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-gmc-p0-url-checkout-review-2026-05-12.md",
+      "line": 33
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-on-demand-sourcing-router-2026-05-04_2026-05-10.json",
+      "line": 82
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-on-demand-sourcing-router-readiness-guard-2026-05-11.md",
+      "line": 81
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-mission-control-snapshot-2026-05-12.md",
+      "line": 108
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-merchant-center-feed-readonly-router-2026-05-11.md",
+      "line": 198
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-seo-cro-commercial-opportunity-router-2026-05-18.md",
+      "line": 17
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-creative-visual-approval-gate-2026-05-11.md",
+      "line": 131
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-phase5-p1-approved-action-files-2026-05-11.json",
+      "line": 46
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-gmc-required-attrs-apply-2026-05-12.json",
+      "line": 94
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-needs-data-autofix-readonly-2026-05-12.md",
+      "line": 69
+    },
+    {
+      "kind": "runtime_write",
+      "path": "reports/retomada-planos-prds-2026-05-09.md",
+      "line": 34
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-approval-learning-ledger-2026-05-11.json",
+      "line": 39
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-gmc-correction-preview-2026-05-12.md",
+      "line": 37
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-safe-automation-readiness-registry-2026-05-11.json",
+      "line": 53
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-p0-residual-correction-queue-2026-05-11.json",
+      "line": 104
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-phase5-p1-approved-action-files-2026-05-11.md",
+      "line": 49
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-pareto-operational-split-2026-05-11.json",
+      "line": 528
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-daily-weekly-dry-run-validation-2026-05-11.json",
+      "line": 62
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-p1-seo-cro-approval-packets-2026-05-11.md",
+      "line": 265
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-p0-blocked-six-correction-queue-2026-05-11.json",
+      "line": 6
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-p1-seo-cro-approval-packets-2026-05-11.json",
+      "line": 395
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-gmc-required-attrs-apply-2026-05-12.md",
+      "line": 51
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-p0-blocked-six-live-recheck-2026-05-11.json",
+      "line": 7
+    },
+    {
+      "kind": "runtime_write",
+      "path": "reports/cwc-vs-hermes-analysis.md",
+      "line": 445
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/cwc-vs-hermes-analysis.md",
+      "line": 494
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-gmc-required-attrs-preview-2026-05-12.md",
+      "line": 170
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-needs-data-autofix-readonly-2026-05-12.json",
+      "line": 717
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-next-stage-fila-a-sourcing-preview-2026-05-11.json",
+      "line": 9
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-seo-cro-commercial-opportunity-router-2026-05-18.json",
+      "line": 9075
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-safe-automation-readiness-registry-2026-05-11.md",
+      "line": 36
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-p0-remaining-tiny-code-execution-2026-05-11.json",
+      "line": 7
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-phase8-completion-audit-2026-05-11.md",
+      "line": 77
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-crm-phase5-next-decision-router-2026-05-11.md",
+      "line": 73
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-weekly-ceo-review-telegram-preview-2026-05-04_2026-05-10.json",
+      "line": 33
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-daily-sales-brief-telegram-preview-2026-05-10.json",
+      "line": 26
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-os-on-demand-sourcing-router-2026-05-04_2026-05-10.md",
+      "line": 106
+    },
+    {
+      "kind": "runtime_write",
+      "path": "reports/retomada-planos-prds-2026-05-09.json",
+      "line": 32
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-gmc-required-attrs-datafeed-refresh-2026-05-12.md",
+      "line": 29
+    },
+    {
+      "kind": "external_write",
+      "path": "reports/lk-phase5-purchase-to-recommendation-matrix-2026-05-11.json",
+      "line": 660
+    },
+    {
+      "kind": "runtime_write",
+      "path": "memories/pending.md",
+      "line": 19
+    },
+    {
+      "kind": "external_write",
+      "path": "memories/pending.md",
+      "line": 10
+    },
+    {
+      "kind": "runtime_write",
+      "path": "memories/lessons.md",
+      "line": 253
+    },
+    {
+      "kind": "runtime_write",
+      "path": "memories/decisions.md",
+      "line": 45
+    },
+    {
+      "kind": "runtime_write",
+      "path": "seguranca/acoes-sensiveis.md",
+      "line": 42
+    },
+    {
+      "kind": "runtime_write",
+      "path": "seguranca/permissoes.md",
+      "line": 129
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_p1_seo_cro_approval_packets_20260511.py",
+      "line": 191
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_weekly_creative_audit.py",
+      "line": 367
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_os_daily_sales_brief_20260511.py",
+      "line": 452
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_os_daily_sales_brief_20260511.py",
+      "line": 66
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_p0_remaining_tiny_code_final_verify_20260511.py",
+      "line": 18
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_os_weekly_quote_validation_preview_20260511.py",
+      "line": 138
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_os_approval_decision_log_router_20260511.py",
+      "line": 172
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_gmc_required_attrs_refresh_datafeed_url_20260512.py",
+      "line": 150
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_gmc_required_attrs_refresh_datafeed_url_20260512.py",
+      "line": 45
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_os_weekly_ceo_review_20260511.py",
+      "line": 378
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_os_weekly_ceo_review_20260511.py",
+      "line": 79
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_phase5_send_p1_whatsapp_evolution_20260511.py",
+      "line": 44
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_gmc_review_watchdog.py",
+      "line": 72
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_on_demand_sourcing_router_readiness_guard_20260511.py",
+      "line": 27
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/rfm_report.py",
+      "line": 14
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_gmc_required_attrs_preview_20260512.py",
+      "line": 33
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_gmc_required_attrs_preview_20260512.py",
+      "line": 45
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_pdp_low_conversion_priority_router_20260511.py",
+      "line": 292
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_pdp_low_conversion_priority_router_20260511.py",
+      "line": 40
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_phase5_stockx_full_sync_scaffold_20260511.py",
+      "line": 32
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_os_build_operational_spine_20260511.py",
+      "line": 29
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_os_creative_visual_approval_gate_20260511.py",
+      "line": 152
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_phase8_completion_audit_20260511.py",
+      "line": 79
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_daily_weekly_dry_run_validation_20260511.py",
+      "line": 25
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_phase5_generate_klaviyo_ready_visual_preview_20260511.py",
+      "line": 91
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_gmc_required_attrs_apply_supplemental_feed_20260512.py",
+      "line": 256
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_gmc_required_attrs_apply_supplemental_feed_20260512.py",
+      "line": 59
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_needs_data_autofix_readonly_20260512.py",
+      "line": 62
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_needs_data_autofix_readonly_20260512.py",
+      "line": 70
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_gmc_p0_url_checkout_review_20260512.py",
+      "line": 38
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_gmc_p0_url_checkout_review_20260512.py",
+      "line": 49
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_daily_weekly_silent_cron_activation_20260511.py",
+      "line": 36
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_os_data_spine_snapshots_20260511.py",
+      "line": 48
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_os_weekly_stock_sku_action_plan_20260511.py",
+      "line": 121
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_p0_remaining_followup_readonly_20260511.py",
+      "line": 167
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_p0_remaining_tiny_code_execute_20260511.py",
+      "line": 230
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_p0_remaining_tiny_code_execute_20260511.py",
+      "line": 64
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_safe_automation_readiness_registry_20260511.py",
+      "line": 58
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/outcomes_tracker.py",
+      "line": 14
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_os_weekly_internal_influencer_email_preview_20260511.py",
+      "line": 222
+    },
+    {
+      "kind": "runtime_write",
+      "path": "scripts/brain_os_docs_runtime_guard.py",
+      "line": 12
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/brain_os_docs_runtime_guard.py",
+      "line": 13
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_os_tiny_freshness_report_20260511.py",
+      "line": 36
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_monthly_pareto_reconciliation.py",
+      "line": 178
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_os_supplier_quote_approval_packet_20260511.py",
+      "line": 92
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_weekly_influencer_sales_report.py",
+      "line": 64
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_mission_control_snapshot_20260512.py",
+      "line": 216
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_klaviyo_crm_draft_readiness_watcher_20260511.py",
+      "line": 29
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_p0_remaining_tiny_code_retry_apparel_20260511.py",
+      "line": 64
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_p0_remaining_tiny_code_retry_apparel_20260511.py",
+      "line": 16
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_phase5_purchase_to_recommendation_matrix_20260511.py",
+      "line": 165
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_crm_phase5_next_decision_router_20260511.py",
+      "line": 172
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_apply_approved_p1_seo_fields_20260511.py",
+      "line": 40
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_os_pareto_operational_split_20260511.py",
+      "line": 170
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_p0_blocked_six_live_recheck_20260511.py",
+      "line": 108
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_os_influencer_identity_bridge_20260511.py",
+      "line": 307
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/session_end_summary.py",
+      "line": 10
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_search_console_readonly_router_20260511.py",
+      "line": 297
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_search_console_readonly_router_20260511.py",
+      "line": 60
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_phase5_generate_klaviyo_visual_preview_20260511.py",
+      "line": 34
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_phase5_p1_recipients_tiny_stock_20260511.py",
+      "line": 39
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_os_on_demand_sourcing_router_20260511.py",
+      "line": 126
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_gmc_correction_preview_20260512.py",
+      "line": 25
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_gmc_required_attrs_verify_20260512.py",
+      "line": 104
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_gmc_required_attrs_verify_20260512.py",
+      "line": 36
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_phase5_prepare_p1_approved_action_files_20260511.py",
+      "line": 5
+    },
+    {
+      "kind": "external_write",
+      "path": "scripts/lk_merchant_center_feed_readonly_router_20260511.py",
+      "line": 280
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_merchant_center_feed_readonly_router_20260511.py",
+      "line": 40
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_phase5_create_klaviyo_list_template_20260511.py",
+      "line": 41
+    },
+    {
+      "kind": "secret_literal",
+      "path": "scripts/lk_tiny_variation_shape_inspect_20260511.py",
+      "line": 7
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/session-start-protocol/SKILL.md",
+      "line": 21
+    },
+    {
+      "kind": "runtime_write",
+      "path": "skills/brain-sync/SKILL.md",
+      "line": 31
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/brain-sync/SKILL.md",
+      "line": 25
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/lk-shopify-readonly/SKILL.md",
+      "line": 3
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/lk-shopify-product-upload/SKILL.md",
+      "line": 3
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/lk-shopify-product-upload/references/shopify-product-upload-operationalization-20260511.md",
+      "line": 37
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/lk-shopify-readonly/references/lk-fila-a-sourcing-preview-20260511.md",
+      "line": 39
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/lk-shopify-readonly/references/lk-p0-residual-live-lookup-20260511.md",
+      "line": 9
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/lk-shopify-readonly/references/lk-external-price-intelligence-pending-20260511.md",
+      "line": 83
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/lk-shopify-readonly/references/lk-fila-a-validation-quote-preview-20260511.md",
+      "line": 51
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/lk-shopify-readonly/references/shopify-sku-normalization-to-tiny-20260511.md",
+      "line": 5
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/lk-shopify-readonly/references/p0-residual-correction-queue-20260511.md",
+      "line": 9
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/lk-shopify-readonly/references/residual-fila-b-prioritization-20260511.md",
+      "line": 47
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/lk-shopify-readonly/references/catalog-wide-shopify-sku-normalization-20260511.md",
+      "line": 20
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/lk-shopify-readonly/references/p0-tiny-code-correction-preview-20260511.md",
+      "line": 43
+    },
+    {
+      "kind": "external_write",
+      "path": "skills/lk-shopify-readonly/references/p0-blocked-residual-decision-queue-20260511.md",
+      "line": 20
+    },
+    {
+      "kind": "external_write",
+      "path": "agentes/mordomo/TOOLS.md",
+      "line": 20
+    },
+    {
+      "kind": "external_write",
+      "path": "agentes/lk/AGENTS.md",
+      "line": 103
+    },
+    {
+      "kind": "external_write",
+      "path": "agentes/zipper/AGENTS.md",
+      "line": 102
+    },
+    {
+      "kind": "external_write",
+      "path": "areas/lk/MAPA.md",
+      "line": 59
+    },
+    {
+      "kind": "runtime_write",
+      "path": "areas/tecnologia/contexto/hermes-docker-footprint.md",
+      "line": 73
+    },
+    {
+      "kind": "external_write",
+      "path": "areas/lk/rotinas/mission-control-snapshot-2026-05-12.md",
+      "line": 108
+    },
+    {
+      "kind": "external_write",
+      "path": "areas/lk/rotinas/shopify-tiny-fila-b-residual-pos-saneamento-2026-05-11.md",
+      "line": 14
+    },
+    {
+      "kind": "external_write",
+      "path": "areas/lk/rotinas/gmc-required-attrs-datafeed-refresh-2026-05-12.md",
+      "line": 29
+    },
+    {
+      "kind": "external_write",
+      "path": "areas/lk/rotinas/gmc-review-cron-reconciliation-2026-05-12.md",
+      "line": 37
+    },
+    {
+      "kind": "external_write",
+      "path": "areas/lk/rotinas/p1-seo-cro-approval-packets-2026-05-11.md",
+      "line": 265
+    },
+    {
+      "kind": "external_write",
+      "path": "areas/lk/rotinas/lk-p0-tiny-code-correction-preview-2026-05-11.md",
+      "line": 6
+    },
+    {
+      "kind": "external_write",
+      "path": "areas/lk/rotinas/on-demand-sourcing-router-readiness-guard-2026-05-11.md",
+      "line": 81
+    },
+    {
+      "kind": "external_write",
+      "path": "areas/lk/rotinas/on-demand-sourcing-router-readonly-2026-05-11.md",
+      "line": 106
+    },
+    {
+      "kind": "external_write",
+      "path": "areas/lk/rotinas/search-console-readonly-router-2026-05-11.md",
+      "line": 138
+    }
+  ],
+  "truncated": true
+}

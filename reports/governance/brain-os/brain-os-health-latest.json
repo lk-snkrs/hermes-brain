@@ -1,0 +1,1544 @@
+{
+  "generated_at": "2026-06-11T14:33:10.608968+00:00",
+  "root": "/opt/data/hermes_brain_wave14_publish",
+  "mode": "read_only_local_health_audit",
+  "auditor_version": "brain-os-health-v1",
+  "total_hubs": 56,
+  "status_counts": {
+    "healthy": 22,
+    "watch": 34,
+    "needs_attention": 0,
+    "critical": 0
+  },
+  "average_score": 90.3,
+  "min_score": 82,
+  "max_score": 100,
+  "top_issues": {
+    "manifest_source_of_truth_empty": 50,
+    "artifact_index_missing_sample_paths_3": 8,
+    "artifact_index_missing_sample_paths_8": 8,
+    "artifact_index_missing_sample_paths_7": 7,
+    "artifact_index_missing_sample_paths_5": 7,
+    "artifact_index_missing_sample_paths_4": 5,
+    "artifact_index_missing_sample_paths_6": 4,
+    "next_steps_not_decision_grade": 4,
+    "artifact_index_missing_sample_paths_2": 3,
+    "artifact_index_missing_sample_paths_12": 2,
+    "manifest_schema_missing_or_unaccepted": 1,
+    "artifact_index_missing_sample_paths_20": 1,
+    "artifact_index_missing_sample_paths_15": 1,
+    "artifact_index_missing_sample_paths_18": 1,
+    "artifact_index_missing_sample_paths_1": 1
+  },
+  "lowest_scoring_hubs": [
+    {
+      "hub_path": "areas/operacoes/projetos/doppler-secrets-operations-ledger",
+      "project_id": "doppler-secrets-operations-ledger",
+      "title": "Doppler / Secrets Operations Ledger",
+      "schema": "brain-os-project-hub-v1",
+      "score": 82,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 50,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 70
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "next_steps_not_decision_grade",
+        "artifact_index_absolute_paths",
+        "artifact_index_missing_sample_paths_2"
+      ],
+      "recommended_next_actions": [
+        "split NEXT_STEPS into local/documental vs approval-required actions"
+      ]
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/profile-channel-runtime-inventory",
+      "project_id": "profile-channel-runtime-inventory",
+      "title": "Hermes Profile / Channel Runtime Inventory",
+      "schema": "brain-os-project-hub-v1",
+      "score": 84,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 50,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "next_steps_not_decision_grade",
+        "artifact_index_missing_sample_paths_2"
+      ],
+      "recommended_next_actions": [
+        "split NEXT_STEPS into local/documental vs approval-required actions"
+      ]
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/telegram-delivery-ux-governance",
+      "project_id": "telegram-delivery-ux-governance",
+      "title": "Telegram Delivery / UX Governance",
+      "schema": "brain-os-project-hub-v1",
+      "score": 84,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 50,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "next_steps_not_decision_grade",
+        "artifact_index_missing_sample_paths_3"
+      ],
+      "recommended_next_actions": [
+        "split NEXT_STEPS into local/documental vs approval-required actions"
+      ]
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/atendimento/projetos/chatwoot",
+      "project_id": "chatwoot",
+      "title": "chatwoot",
+      "schema": null,
+      "score": 85,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 60,
+        "artifact_index": 100
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_schema_missing_or_unaccepted",
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_20"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/mcp-tooling-activation-governance",
+      "project_id": "mcp-tooling-activation-governance",
+      "title": "MCP / Tooling Activation Governance",
+      "schema": "brain-os-project-hub-v1",
+      "score": 85,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 55,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "next_steps_not_decision_grade",
+        "artifact_index_missing_sample_paths_4"
+      ],
+      "recommended_next_actions": [
+        "split NEXT_STEPS into local/documental vs approval-required actions"
+      ]
+    },
+    {
+      "hub_path": "areas/lk/projetos/approval-learning-ledger",
+      "project_id": "lk-approval-learning-ledger",
+      "title": "LK Approval / Learning Ledger",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_3"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/projetos/lk-operating-system",
+      "project_id": "lk-operating-system",
+      "title": "LK Operating System",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_5"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/projetos/reporting-briefings",
+      "project_id": "lk-reporting-briefings",
+      "title": "LK Reporting / Briefings",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_4"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/projetos/shopify-theme-backups-archive",
+      "project_id": "shopify-theme-backups-archive",
+      "title": "LK Shopify Theme Backups Archive",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_3"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/atendimento/projetos/whatsapp-integration-platform",
+      "project_id": "lk-whatsapp-integration-platform",
+      "title": "LK WhatsApp Integration Platform",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_8"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/collection-optimizer/projetos/collection-sort-automation",
+      "project_id": "collection-sort-automation",
+      "title": "LK Collection Sort Automation",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_4"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/collection-optimizer/projetos/editorial-collection-guides",
+      "project_id": "editorial-collection-guides",
+      "title": "LK Editorial Collection Guides",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_7"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/collection-optimizer/projetos/lkgoc-evidence-workbench",
+      "project_id": "lkgoc-evidence-workbench",
+      "title": "LKGOC Evidence Workbench",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_7"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/crm/projetos/recovery-os",
+      "project_id": "lk-crm-recovery-os",
+      "title": "LK CRM Recovery OS",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_6"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/growth/projetos/growth-evidence-ledger",
+      "project_id": "growth-evidence-ledger",
+      "title": "LK Growth Evidence Ledger",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_5"
+      ],
+      "recommended_next_actions": []
+    }
+  ],
+  "hubs": [
+    {
+      "hub_path": "areas/lk/projetos/approval-learning-ledger",
+      "project_id": "lk-approval-learning-ledger",
+      "title": "LK Approval / Learning Ledger",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_3"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/projetos/data-quality-layer",
+      "project_id": "lk-data-quality-layer",
+      "title": "LK Data Quality Layer",
+      "schema": "brain-os-project-hub-v1",
+      "score": 94,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 100,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_7"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/projetos/lk-operating-system",
+      "project_id": "lk-operating-system",
+      "title": "LK Operating System",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_5"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/projetos/reporting-briefings",
+      "project_id": "lk-reporting-briefings",
+      "title": "LK Reporting / Briefings",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_4"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/projetos/sales-reports-ledger",
+      "project_id": "lk-sales-reports-ledger",
+      "title": "LK Sales Reports Ledger",
+      "schema": "brain-os-project-hub-v1",
+      "score": 94,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 100,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_2"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/projetos/shopify-theme-backups-archive",
+      "project_id": "shopify-theme-backups-archive",
+      "title": "LK Shopify Theme Backups Archive",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_3"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/atendimento/projetos/chatwoot",
+      "project_id": "chatwoot",
+      "title": "chatwoot",
+      "schema": null,
+      "score": 85,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 60,
+        "artifact_index": 100
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_schema_missing_or_unaccepted",
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_20"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/atendimento/projetos/whatsapp-integration-platform",
+      "project_id": "lk-whatsapp-integration-platform",
+      "title": "LK WhatsApp Integration Platform",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_8"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/collection-optimizer/projetos/collection-sort-automation",
+      "project_id": "collection-sort-automation",
+      "title": "LK Collection Sort Automation",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_4"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/collection-optimizer/projetos/editorial-collection-guides",
+      "project_id": "editorial-collection-guides",
+      "title": "LK Editorial Collection Guides",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_7"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/collection-optimizer/projetos/lkgoc-collection-optimizer",
+      "project_id": "lkgoc-collection-optimizer",
+      "title": "LKGOC Collection Optimizer",
+      "schema": "brain_os_project_manifest_v1",
+      "score": 95,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 100,
+        "artifact_index": 100
+      },
+      "age_days": 0,
+      "issues": [
+        "artifact_index_missing_sample_paths_15"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/collection-optimizer/projetos/lkgoc-evidence-workbench",
+      "project_id": "lkgoc-evidence-workbench",
+      "title": "LKGOC Evidence Workbench",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_7"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/content/projetos/lk-content-klaviyo-agent",
+      "project_id": "lk-content-klaviyo-agent",
+      "title": "LK Content / Klaviyo Agent",
+      "schema": "brain-os-project-hub-v1",
+      "score": 90,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 100
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_18"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/crm/projetos/recovery-os",
+      "project_id": "lk-crm-recovery-os",
+      "title": "LK CRM Recovery OS",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_6"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/ecommerce/projetos/orders-checkout",
+      "project_id": "lk-ecommerce-orders-checkout",
+      "title": "LK E-commerce Orders / Checkout",
+      "schema": "brain-os-project-hub-v1",
+      "score": 94,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 100,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_6"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/growth/projetos/gmc-merchant-center",
+      "project_id": "gmc-merchant-center",
+      "title": "GMC Merchant Center / LK Growth",
+      "schema": "brain_os_project_manifest_v1",
+      "score": 100,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 100,
+        "fonte_viva_guardrails": 100,
+        "artifact_index": 100
+      },
+      "age_days": 0,
+      "issues": [
+        "artifact_index_missing_sample_paths_8"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/growth/projetos/growth-evidence-ledger",
+      "project_id": "growth-evidence-ledger",
+      "title": "LK Growth Evidence Ledger",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_5"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/growth/projetos/rewards-loyalty-trust",
+      "project_id": "lk-rewards-loyalty-trust",
+      "title": "LK Rewards / Loyalty / Trust",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_5"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/growth/projetos/seo-cro-weekly-improvement",
+      "project_id": "lk-seo-cro-weekly-improvement",
+      "title": "LK SEO / CRO Weekly Improvement",
+      "schema": "brain-os-project-hub-v1",
+      "score": 90,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 100
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_5"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/growth/projetos/shopify-growth-os",
+      "project_id": "shopify-growth-os",
+      "title": "Shopify Growth OS / LK Growth",
+      "schema": "brain_os_project_manifest_v1",
+      "score": 94,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 100,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/growth/projetos/source-pages-geo-experiments",
+      "project_id": "source-pages-geo-experiments",
+      "title": "LK Source Pages / GEO Experiments",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_7"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/growth/projetos/theme-cro-performance",
+      "project_id": "theme-cro-performance",
+      "title": "Theme / CRO Performance",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_1"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/shopify/projetos/catalog-badges-sync",
+      "project_id": "catalog-badges-sync",
+      "title": "LK Catalog Badges Sync",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_3"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/shopify/projetos/product-upload-bot",
+      "project_id": "lk-shopify-product-upload-bot",
+      "title": "LK Shopify Product Upload / Bot",
+      "schema": "brain-os-project-hub-v1",
+      "score": 94,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 100,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_6"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/stock/projetos/pronta-entrega-pos",
+      "project_id": "pronta-entrega-pos",
+      "title": "Pronta Entrega / POS / LK Stock",
+      "schema": "brain_os_project_manifest_v1",
+      "score": 94,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 100,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "artifact_index_missing_sample_paths_3"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/stock/projetos/sourcing-pricing-size-governance",
+      "project_id": "sourcing-pricing-size-governance",
+      "title": "LK Sourcing Pricing / Size Governance",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_8"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/stock/projetos/sourcing-procurement-os",
+      "project_id": "lk-sourcing-procurement-os",
+      "title": "LK Sourcing / Procurement OS",
+      "schema": "brain-os-project-hub-v1",
+      "score": 90,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 100
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_8"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/stock/projetos/stock-approval-packets-ledger",
+      "project_id": "stock-approval-packets-ledger",
+      "title": "LK Stock Approval Packets Ledger",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_5"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/stock/projetos/stockout-recompra-router",
+      "project_id": "stockout-recompra-router",
+      "title": "LK Stockout / Recompra Router",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_5"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/stock/projetos/supplier-quote-approval-flow",
+      "project_id": "supplier-quote-approval-flow",
+      "title": "LK Supplier Quote Approval Flow",
+      "schema": "brain-os-project-hub-v1",
+      "score": 94,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 100,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_3"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/stock/projetos/tiny-estoque-source-of-truth",
+      "project_id": "tiny-estoque-source-of-truth",
+      "title": "Tiny Estoque Source of Truth / LK Stock",
+      "schema": "brain_os_project_manifest_v1",
+      "score": 95,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 100,
+        "artifact_index": 100
+      },
+      "age_days": 0,
+      "issues": [
+        "artifact_index_missing_sample_paths_11"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/trafego-pago/projetos/meta-ads-performance",
+      "project_id": "meta-ads-performance",
+      "title": "Meta Ads Performance",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/trafego-pago/projetos/paid-attribution-influencer-intelligence",
+      "project_id": "paid-attribution-influencer-intelligence",
+      "title": "LK Paid Attribution / Influencer Intelligence",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/lk/sub-areas/trends/projetos/sourcing-intelligence",
+      "project_id": "lk-trends-sourcing-intelligence",
+      "title": "LK Trends / Sourcing Intelligence",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_8"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/brain-fonte-viva-data-governance",
+      "project_id": "brain-fonte-viva-data-governance",
+      "title": "Brain Fonte Viva / Data Governance",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_8"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/cron-control-plane",
+      "project_id": "cron-control-plane",
+      "title": "Hermes Cron Control Plane",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_7"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/doppler-secrets-operations-ledger",
+      "project_id": "doppler-secrets-operations-ledger",
+      "title": "Doppler / Secrets Operations Ledger",
+      "schema": "brain-os-project-hub-v1",
+      "score": 82,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 50,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 70
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "next_steps_not_decision_grade",
+        "artifact_index_absolute_paths",
+        "artifact_index_missing_sample_paths_2"
+      ],
+      "recommended_next_actions": [
+        "split NEXT_STEPS into local/documental vs approval-required actions"
+      ]
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/executive-dashboards",
+      "project_id": "executive-dashboards",
+      "title": "Executive Dashboards",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_3"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/governance-receipts-memory-backups",
+      "project_id": "governance-receipts-memory-backups",
+      "title": "Governance Receipts / Memory Backups",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_5"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/hermes-execution-scripts-archive",
+      "project_id": "hermes-execution-scripts-archive",
+      "title": "Hermes Execution Scripts Archive",
+      "schema": "brain-os-project-hub-v1",
+      "score": 94,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 100,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_4"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/hermes-kanban-command-center",
+      "project_id": "hermes-kanban-command-center",
+      "title": "Hermes Kanban Command Center",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_6"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/hermes-runtime-observability",
+      "project_id": "hermes-runtime-observability",
+      "title": "Hermes Runtime Observability",
+      "schema": "brain-os-project-hub-v1",
+      "score": 94,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 100,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_3"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/mcp-tooling-activation-governance",
+      "project_id": "mcp-tooling-activation-governance",
+      "title": "MCP / Tooling Activation Governance",
+      "schema": "brain-os-project-hub-v1",
+      "score": 85,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 55,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "next_steps_not_decision_grade",
+        "artifact_index_missing_sample_paths_4"
+      ],
+      "recommended_next_actions": [
+        "split NEXT_STEPS into local/documental vs approval-required actions"
+      ]
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/memory-os",
+      "project_id": "memory-os",
+      "title": "Hermes Memory OS",
+      "schema": "brain_os_project_manifest_v1",
+      "score": 95,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 100,
+        "artifact_index": 100
+      },
+      "age_days": 0,
+      "issues": [
+        "artifact_index_missing_sample_paths_16"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/mesa-coo",
+      "project_id": "mesa-coo",
+      "title": "Mesa COO",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_7"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/mission-control",
+      "project_id": "mission-control",
+      "title": "Mission Control",
+      "schema": "brain-os-project-hub-v1",
+      "score": 95,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 100,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 100
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_8"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/mordomo-os",
+      "project_id": "mordomo-os",
+      "title": "Mordomo OS",
+      "schema": "brain-os-project-hub-v1",
+      "score": 90,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 100
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_12"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/profile-channel-runtime-inventory",
+      "project_id": "profile-channel-runtime-inventory",
+      "title": "Hermes Profile / Channel Runtime Inventory",
+      "schema": "brain-os-project-hub-v1",
+      "score": 84,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 50,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "next_steps_not_decision_grade",
+        "artifact_index_missing_sample_paths_2"
+      ],
+      "recommended_next_actions": [
+        "split NEXT_STEPS into local/documental vs approval-required actions"
+      ]
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/repo-hygiene-artifact-retention",
+      "project_id": "repo-hygiene-artifact-retention",
+      "title": "Brain Repo Hygiene / Artifact Retention",
+      "schema": "brain-os-project-hub-v1",
+      "score": 94,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 100,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_4"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/telegram-delivery-ux-governance",
+      "project_id": "telegram-delivery-ux-governance",
+      "title": "Telegram Delivery / UX Governance",
+      "schema": "brain-os-project-hub-v1",
+      "score": 84,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 50,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "next_steps_not_decision_grade",
+        "artifact_index_missing_sample_paths_3"
+      ],
+      "recommended_next_actions": [
+        "split NEXT_STEPS into local/documental vs approval-required actions"
+      ]
+    },
+    {
+      "hub_path": "areas/operacoes/projetos/webhooks-to-brain-ingestion",
+      "project_id": "webhooks-to-brain-ingestion",
+      "title": "Webhooks to Brain Ingestion",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_7"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/spiti/projetos/auction-operations",
+      "project_id": "spiti-auction-operations",
+      "title": "SPITI Auction Operations",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/spiti/projetos/bridge-governance",
+      "project_id": "spiti-bridge-governance",
+      "title": "SPITI Bridge / Governance",
+      "schema": "brain-os-project-hub-v1",
+      "score": 90,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 100
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/zipper/projetos/cron-readiness-control",
+      "project_id": "zipper-cron-readiness-control",
+      "title": "Zipper Cron Readiness Control",
+      "schema": "brain-os-project-hub-v1",
+      "score": 89,
+      "status": "watch",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_8"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/zipper/projetos/email-crm-intake",
+      "project_id": "zipper-email-crm-intake",
+      "title": "Zipper Email / CRM / Intake",
+      "schema": "brain-os-project-hub-v1",
+      "score": 90,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 75,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 100
+      },
+      "age_days": 1,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_12"
+      ],
+      "recommended_next_actions": []
+    },
+    {
+      "hub_path": "areas/zipper/projetos/followup-decision-inbox",
+      "project_id": "zipper-followup-decision-inbox",
+      "title": "Zipper Follow-up / Decision Inbox",
+      "schema": "brain-os-project-hub-v1",
+      "score": 94,
+      "status": "healthy",
+      "component_scores": {
+        "completeness": 100,
+        "freshness": 100,
+        "next_steps": 100,
+        "fonte_viva_guardrails": 80,
+        "artifact_index": 90
+      },
+      "age_days": 0,
+      "issues": [
+        "manifest_source_of_truth_empty",
+        "artifact_index_missing_sample_paths_9"
+      ],
+      "recommended_next_actions": []
+    }
+  ]
+}
