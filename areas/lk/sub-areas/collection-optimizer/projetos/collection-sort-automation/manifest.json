@@ -19,5 +19,17 @@
     "manifest.json"
   ],
   "indexed_artifact_count": 5,
-  "guardrail_count": 4
+  "guardrail_count": 4,
+  "source_of_truth": [
+    "Brain hub is a local/documental snapshot and routing index.",
+    "Use the linked ARTIFACT_INDEX/CURRENT_STATE/DECISIONS_AND_GUARDRAILS files for local evidence.",
+    "For current operational/business state, consult the named live source or runtime before acting."
+  ],
+  "updated_at": "2026-06-11T15:52:22Z",
+  "guardrails": [
+    "Brain is a snapshot/index; live source wins for current state.",
+    "Local/documental updates only by default.",
+    "No external writes, runtime changes, secrets, customer messages, purchases, campaigns or production changes without scoped approval.",
+    "Receipts/reports are evidence, not current operational approval."
+  ]
 }

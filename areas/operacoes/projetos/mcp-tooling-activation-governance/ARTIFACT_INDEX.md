@@ -1,14 +1,25 @@
 # MCP / Tooling Activation Governance — Artifact Index
 
-Artefatos e famílias de evidência associados. Este índice não move nem duplica fontes; serve para roteamento e recuperação.
+Este índice aponta para artefatos verificados no repositório Brain. Ele não move nem duplica fontes; serve para roteamento e recuperação.
 
-- `areas/operacoes/rotinas/nova-integracao.md`
-- `areas/operacoes/rotinas/configured-vs-active-scorecard.md`
+## Verified sample paths
+
+- `areas/operacoes/projetos/mcp-tooling-activation-governance/README.md`
+- `areas/operacoes/projetos/mcp-tooling-activation-governance/CURRENT_STATE.md`
+- `areas/operacoes/projetos/mcp-tooling-activation-governance/DECISIONS_AND_GUARDRAILS.md`
+- `areas/operacoes/projetos/mcp-tooling-activation-governance/ARTIFACT_INDEX.md`
+- `areas/operacoes/projetos/mcp-tooling-activation-governance/TIMELINE.md`
+- `areas/operacoes/projetos/mcp-tooling-activation-governance/NEXT_STEPS.md`
+- `areas/operacoes/projetos/mcp-tooling-activation-governance/manifest.json`
 - `areas/operacoes/projetos/profile-channel-runtime-inventory/`
 - `reports/governance/`
 - `TOOLS.md`
-- `skills/mcp/native-mcp/SKILL.md (procedimento local, fora do Brain repo quando aplicável)`
-- `skills/mcp/mcporter/SKILL.md (procedimento local, fora do Brain repo quando aplicável)`
+
+## Evidence families
+
+- Receipts/reports: evidência histórica e snapshot, não aprovação atual.
+- Runbooks/rotinas: procedimento documental; validar runtime antes de executar.
+- Hub files: pacote canônico Brain OS para decisão local/documental.
 
 ## Regra de leitura
 

@@ -19,5 +19,17 @@
     "manifest.json"
   ],
   "indexed_artifact_count": 7,
-  "guardrail_count": 4
+  "guardrail_count": 4,
+  "updated_at": "2026-06-11T15:52:22Z",
+  "source_of_truth": [
+    "Doppler lc-keys/prd presence checks via hermes_doppler.py",
+    "Brain hub as sanitized snapshot/index only",
+    "skills/devops/doppler-secrets-operations as procedure reference outside Brain repo"
+  ],
+  "guardrails": [
+    "Brain is a snapshot/index; live source wins for current state.",
+    "Local/documental updates only by default.",
+    "No external writes, runtime changes, secrets, customer messages, purchases, campaigns or production changes without scoped approval.",
+    "Receipts/reports are evidence, not current operational approval."
+  ]
 }

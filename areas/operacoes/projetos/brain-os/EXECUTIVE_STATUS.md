@@ -1,6 +1,6 @@
 # Brain OS — Executive Status
 
-**Atualizado em:** 2026-06-11T14:45:48.125105+00:00
+**Atualizado em:** 2026-06-11T15:54:29.783872+00:00
 **Audiência:** Lucas / Hermes default / especialistas
 **Modo:** status documental automático, local/read-only.
 **Fonte principal:** scanner v2 + health audit + manifests locais.
@@ -10,18 +10,18 @@
 
 ## TL;DR
 
-Brain OS está operacional e versionado; o foco passou de criar hubs para maturidade semântica. O status atual é **amarelo**: pacote estrutural saudável, com melhoria pendente em qualidade/metadata dos hubs e classificação fina de lacunas.
+Brain OS está operacional e versionado; o foco passou de criar hubs para maturidade semântica. O status atual é **verde**: pacote estrutural saudável, com melhoria pendente em qualidade/metadata dos hubs e classificação fina de lacunas.
 
 ## Snapshot executivo
 
 - **Hubs vivos auditados:** 56
 - **Hubs por área:** lk=34, operacoes=17, spiti=2, zipper=3
-- **Qualidade:** A=22 / B=34 / C=0 / D=0
-- **Scanner:** 53 candidatos, 1 sem hub vivo, 0 com score >= 80
-- **Health:** critical=0 / needs_attention=0 / watch=34 / healthy=22
+- **Qualidade:** A=56 / B=0 / C=0 / D=0
+- **Scanner:** 53 candidatos, 0 sem hub vivo, 0 com score >= 80
+- **Health:** critical=0 / needs_attention=0 / watch=0 / healthy=56
 - **Stale:** 0 hubs acima do limite de atualização documental
-- **Risco:** 50 hubs com guardrails/fonte viva/write/runtime relevantes a revisar
-- **Veredito:** amarelo
+- **Risco:** 0 hubs com guardrails/fonte viva/write/runtime relevantes a revisar
+- **Veredito:** verde
 
 ## Status por eixo
 
@@ -50,8 +50,8 @@ Brain OS está operacional e versionado; o foco passou de criar hubs para maturi
 
 ### Distribuição
 
-- **A:** 22
-- **B:** 34
+- **A:** 56
+- **B:** 0
 - **C:** 0
 - **D:** 0
 
@@ -62,35 +62,35 @@ Brain OS está operacional e versionado; o foco passou de criar hubs para maturi
 ## Scanner — cobertura e lacunas
 
 - **Relatório:** `reports/governance/brain-os/brain-os-candidates-latest.json`
-- **Gerado em:** 2026-06-11T14:45:46.446201+00:00
+- **Gerado em:** 2026-06-11T15:54:27.445876+00:00
 - **Versão:** brain-os-v2
 - **Política de classificação:** brain-os-artifact-classification-v1
 - **Arquivos texto escaneados:** 1047
 - **Candidatos:** 53
-- **Candidatos sem hub vivo:** 1
-- **Manifest class counts:** `{'hub_manifest': 55, 'artifact_manifest': 1}`
+- **Candidatos sem hub vivo:** 0
+- **Manifest class counts:** `{'hub_manifest': 56}`
 
 ### Maiores scores do scanner
 
 - `lk-growth-gmc-shopify-meta` — score 37 / wave 1 / maturity `live_hub_present`
-- `lk-atendimento-chatwoot-elle` — score 35 / wave 4 / maturity `hub_dir_without_live_manifest`
 - `lk-reporting-briefings` — score 33 / wave 5 / maturity `live_hub_present`
 - `lk-stock-tiny-pos` — score 32 / wave 1 / maturity `live_hub_present`
 - `lk-approval-learning-ledger` — score 31 / wave 5 / maturity `live_hub_present`
 - `mordomo-os` — score 26 / wave 2 / maturity `live_hub_present`
 - `zipper-email-crm-intake` — score 26 / wave 2 / maturity `live_hub_present`
 - `theme-cro-performance` — score 26 / wave 3 / maturity `live_hub_present`
+- `executive-dashboards` — score 26 / wave 3 / maturity `live_hub_present`
 
 ### Próximas lacunas sugeridas pelo scanner
 
-- `lk-atendimento-chatwoot-elle` — promote_or_replace_artifact_manifest_with_hub_manifest
+- Nenhuma lacuna crítica.
 
 ## Health local
 
 - **Script:** `scripts/brain_os_health.py`
 - **Modo:** local/read-only.
-- **Average score:** 90.3/100
-- **Top issues:** `{'manifest_source_of_truth_empty': 50, 'artifact_index_missing_sample_paths_3': 8, 'artifact_index_missing_sample_paths_8': 8, 'artifact_index_missing_sample_paths_7': 7, 'artifact_index_missing_sample_paths_5': 7, 'artifact_index_missing_sample_paths_4': 5, 'artifact_index_missing_sample_paths_6': 4, 'next_steps_not_decision_grade': 4, 'artifact_index_missing_sample_paths_2': 3, 'artifact_index_missing_sample_paths_12': 2, 'manifest_schema_missing_or_unaccepted': 1, 'artifact_index_missing_sample_paths_20': 1, 'artifact_index_missing_sample_paths_15': 1, 'artifact_index_missing_sample_paths_18': 1, 'artifact_index_missing_sample_paths_1': 1}`
+- **Average score:** 95.7/100
+- **Top issues:** `{'artifact_index_missing_sample_paths_3': 11, 'artifact_index_missing_sample_paths_8': 8, 'artifact_index_missing_sample_paths_7': 7, 'artifact_index_missing_sample_paths_5': 7, 'artifact_index_missing_sample_paths_4': 4, 'artifact_index_missing_sample_paths_6': 4, 'artifact_index_missing_sample_paths_12': 2, 'artifact_index_missing_sample_paths_2': 1, 'artifact_index_missing_sample_paths_13': 1, 'artifact_index_missing_sample_paths_15': 1, 'artifact_index_missing_sample_paths_18': 1, 'artifact_index_missing_sample_paths_1': 1, 'artifact_index_missing_sample_paths_11': 1, 'artifact_index_missing_sample_paths_16': 1, 'artifact_index_missing_sample_paths_9': 1}`
 
 ## Stale / risco de fonte viva
 

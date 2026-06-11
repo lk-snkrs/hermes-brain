@@ -1,14 +1,24 @@
 # Telegram Delivery / UX Governance — Artifact Index
 
-Artefatos e famílias de evidência associados. Este índice não move nem duplica fontes; serve para roteamento e recuperação.
+Este índice aponta para artefatos verificados no repositório Brain. Ele não move nem duplica fontes; serve para roteamento e recuperação.
 
-- `areas/operacoes/rotinas/mesa-coo-telegram-quality-audit.md`
-- `areas/operacoes/rotinas/decision-inbox-taxonomy.md`
-- `areas/operacoes/rotinas/customer-facing-decision-guard.md`
+## Verified sample paths
+
+- `areas/operacoes/projetos/telegram-delivery-ux-governance/README.md`
+- `areas/operacoes/projetos/telegram-delivery-ux-governance/CURRENT_STATE.md`
+- `areas/operacoes/projetos/telegram-delivery-ux-governance/DECISIONS_AND_GUARDRAILS.md`
+- `areas/operacoes/projetos/telegram-delivery-ux-governance/ARTIFACT_INDEX.md`
+- `areas/operacoes/projetos/telegram-delivery-ux-governance/TIMELINE.md`
+- `areas/operacoes/projetos/telegram-delivery-ux-governance/NEXT_STEPS.md`
+- `areas/operacoes/projetos/telegram-delivery-ux-governance/manifest.json`
 - `areas/operacoes/projetos/mesa-coo/`
 - `areas/operacoes/projetos/hermes-kanban-command-center/`
-- `areas/operacoes/projetos/cron-control-plane/`
-- `reports/governance/`
+
+## Evidence families
+
+- Receipts/reports: evidência histórica e snapshot, não aprovação atual.
+- Runbooks/rotinas: procedimento documental; validar runtime antes de executar.
+- Hub files: pacote canônico Brain OS para decisão local/documental.
 
 ## Regra de leitura
 
