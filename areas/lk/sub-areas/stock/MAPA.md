@@ -52,3 +52,4 @@ Este agente pode diagnosticar, ranquear, criar fila e preparar pacotes. Não pod
 - `projetos/supplier-quote-approval-flow/` — hub canônico Brain OS Onda 8 para validação de cotações, fila de fornecedores/Júlio e approval packets de compra.
 - `projetos/sourcing-pricing-size-governance/` — hub canônico Brain OS Onda 8 para governança de preço, markup, câmbio, tamanho BR/US e validação econômica de sourcing.
 - `projetos/stock-approval-packets-ledger/` — hub canônico Brain OS Onda 11 para approval packets, relatórios, receipts e evidência de estoque/recompra/fornecedor.
+- `projetos/pronta-entrega-pos/` — hub canônico Brain OS Onda 14 para pronta entrega/POS, best sellers, disponibilidade por tamanho e pacotes de reposição/transferência com Tiny como fonte viva.

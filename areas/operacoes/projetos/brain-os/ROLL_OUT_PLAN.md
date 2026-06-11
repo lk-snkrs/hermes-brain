@@ -150,3 +150,21 @@ Somente se Lucas aprovar:
 - Criar hub MCP / Tooling Activation Governance: concluído localmente.
 - Criar hub Telegram Delivery / UX Governance: concluído localmente.
 - Próximo gate: scanner, secret scan, Brain health e docs guard.
+
+## Status Onda 14 — 2026-06-11
+
+- Criar hub Shopify Growth OS: concluído localmente.
+- Criar hub Pronta Entrega / POS: concluído localmente.
+- Ajustar scanner para evitar duplicação de Meta Ads em Growth: concluído localmente; Meta Ads permanece canônico em `trafego-pago`.
+- Próximo gate: scanner, secret scan, Brain health e docs guard.
+
+
+## Fase 6 — Pós-merge / maturidade — 2026-06-11
+
+Após PR #144, o foco passa de novas ondas de hubs para qualidade:
+
+1. Publicar docs centrais Brain OS em `areas/operacoes/projetos/brain-os/`.
+2. Formalizar semântica hub vs receipt/backup/artifact.
+3. Criar superfície executiva de status.
+4. Melhorar scanner para classificação por tipo de manifest.
+5. Rodar gates antes de qualquer nova publicação.

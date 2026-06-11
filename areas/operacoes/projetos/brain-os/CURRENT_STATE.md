@@ -1,39 +1,37 @@
 # Brain OS — Current State
 
-**Atualizado em:** 2026-06-10T19:29:26.659007+00:00
-**Modo:** local/documental
-**GitHub:** não fazer commit/push sem aprovação explícita
+**Atualizado em:** 2026-06-11T13:55:54.899501+00:00
+**Modo:** local/documental + GitHub docs-as-code
+**Última publicação base:** PR #144 merged em `main` (`cb4a31e`)
 **Runtime:** não tocado
 
-## Estado
+## Estado atual
 
-Brain OS v1 está sendo implantado como camada de organização canônica sobre o Brain existente.
+Brain OS v1 está publicado como camada de organização canônica sobre o Brain existente. O pós-merge mudou a prioridade: o scanner já cobre os principais hubs, então a melhoria mais valiosa agora é maturidade/qualidade, não criar hubs duplicados.
 
-## Evidência inicial do Brain
+## Evidência publicada pós-merge
 
-Varredura local antes da implantação indicou:
+- Repo publicado: `lk-snkrs/hermes-brain`.
+- Branch base reconciliada: `main`.
+- HEAD verificado antes desta evolução: `cb4a31e`.
+- Scanner publicado: `reports/governance/brain-os/brain-os-candidates-latest.json`.
+- Scanner version: `brain-os-v1`.
+- Candidatos no scanner: `53`.
+- Hub manifests publicados no pacote PR #144: todos com pacote mínimo esperado conforme validação local da onda.
 
-- `areas/`: 22.666 arquivos;
-- `reports/`: 2.828 arquivos;
-- `context/`: 16 arquivos;
-- `memories/`: 34 arquivos.
+## Estado lógico
 
-Maiores sinais de sprawl:
-
-- LK Growth;
-- LK Estoque/Tiny/POS;
-- LKGOC Collection Optimizer;
-- Memory OS;
-- Mission Control/Mesa COO;
-- Mordomo OS;
-- Zipper CRM/Inbox.
-
-## Primeiro padrão validado
-
-Chatwoot já possui hub canônico em:
-
-`areas/lk/sub-areas/atendimento/projetos/chatwoot/`
+- **Hubs canônicos:** vivem nas áreas donas (`areas/lk/...`, `areas/operacoes/...`, `areas/zipper/...`, `areas/spiti/...`).
+- **Core Brain OS:** vive aqui em `areas/operacoes/projetos/brain-os/`.
+- **Receipts/backups/reports:** são evidência, não hubs vivos, salvo promoção explícita.
+- **Fonte viva externa:** Tiny, Shopify, GMC, Meta, Klaviyo, Chatwoot, Supabase etc. vencem snapshots/documentos quando a pergunta depende de estado atual.
 
 ## Próxima regra operacional
 
-Novos projetos de alto volume devem receber hub canônico antes de novas expansões de agentes, crons ou rotinas.
+Novas frentes de alto volume devem receber hub canônico antes de novas expansões de agentes, crons ou rotinas. Se o scanner estiver limpo, priorizar:
+
+1. qualidade de hubs existentes;
+2. status executivo;
+3. semântica de manifests/artefatos;
+4. scanner com melhor classificação;
+5. só depois novos hubs.

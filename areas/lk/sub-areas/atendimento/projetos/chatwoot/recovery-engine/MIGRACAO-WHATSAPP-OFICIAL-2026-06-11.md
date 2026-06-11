@@ -29,3 +29,16 @@ O número oficial **+55 11 94956-5000** (WABA "LK Sneakers & Apparels", 14780260
 - Apontar jornadas pro oficial (trocar `SHOPIFY_RECOVERY_INBOX_ID`/`KLAVIYO_RECOVERY_INBOX_ID` 3→2) QUANDO Lucas quiser + cartão ok. Hoje jornadas seguem no Evolution (inbox 3), desligadas.
 - Avaliar desativar/cancelar assinatura do Crisp (export completo já salvo em /opt/data/crisp-export e entregue ao Lucas).
 - Evolution (551123671467) segue ativo como canal secundário/backup.
+
+## Atualização 11/jun (tarde) — Elle pausada a pedido do Lucas
+- Lucas pediu remoção de TODAS as notas de triagem "Elle MVP 1C" (~5.5k deletadas, geradas em massa pelos imports).
+- Webhook da conta Chatwoot -> elle.lkskrs.online REMOVIDO (URL preservada nos backups de webhook_subscriptions) e container `elle-chatwoot` PARADO (a fila persistente dela continuava repostando notas usando o access token do Lucas).
+- Para religar a Elle: reconfigurar para NAO criar notas de triagem (ou ignora-las por inbox), recriar o webhook na conta 1 e dar docker start no elle-chatwoot.
+
+## Atualização 11/jun (noite) — Número movido para WABA NOVA (problema da linha de crédito do Crisp resolvido)
+- A WABA antiga (1478026007140488) ficou presa à linha de crédito do Crisp IM SAS (EUR), impossibilitando cartão próprio e moeda BRL. Solução: Lucas criou WABA NOVA **"LK Sneakers & Apparels" 1284396440344645** (Mastercard *1701, moeda USD — BRL não foi possível) e o número foi MIGRADO para ela.
+- Migração: instantânea (mesmo business + 2FA off), verificação por SMS no chip do Lucas, nome de exibição re-aprovado, perfil migrou.
+- Novo **phone_number_id: 1212113718645214**. Registrado na Cloud API com PIN 2FA novo (Lucas tem). App LK Wts inscrito na nova WABA. Chatwoot provider_config atualizado (waba + phone id). Webhook inalterado (rota por telefone).
+- Templates: 5 essenciais recriados na nova WABA (em análise): lk_checkout_abandonado_30min_v2/24h_v2/72h_v2, lk_carrinho_abandonado_30min_v1, lk_teste_chatwoot_builder. 5 variantes com IMAGEM no header falharam (media handle não transfere; recriar com re-upload se necessário).
+- Teste E2E: envio via Chatwoot → **status delivered com wamid** (entrada e saída OK). Templates pagos agora destravados pelo cartão do Lucas.
+- WABA antiga: vazia, pode ser arquivada/ignorada. Pendência cosmética: moeda USD (BRL travado pela Meta).

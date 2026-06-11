@@ -30,3 +30,13 @@ Cada hub canônico deve ter `manifest.json` para permitir auditoria automática.
 - `external_writes` deve ser `false` para hubs documentais.
 - `artifact_sample` deve usar paths relativos e sanitizados.
 - Não incluir tokens, IDs secretos, payloads sensíveis ou dados pessoais desnecessários.
+
+
+## Semântica por caminho
+
+- `areas/**/projetos/*/manifest.json`: candidato a hub canônico vivo, desde que o pacote mínimo exista.
+- `reports/**`, `receipts/**`: evidência/receipt; exige reconciliação antes de virar estado atual.
+- `backups/**`: snapshot/rollback; nunca é fonte ativa.
+- `scripts/**` ou `work/**`: artefato operacional; indexável, mas não hub vivo por padrão.
+
+Ver `MANIFEST_SEMANTICS.md` para regras de precedência.

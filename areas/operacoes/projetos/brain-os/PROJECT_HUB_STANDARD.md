@@ -43,3 +43,8 @@ projetos/<slug>/
 - Não copiar dados sensíveis.
 - Marcar incerteza quando depender de fonte viva.
 - Verificar após criar.
+
+
+## Hub vivo vs evidência
+
+Um hub canônico vivo normalmente fica em `areas/<area>/.../projetos/<slug>/` e possui o pacote mínimo completo. Receipts, backups, reports, scripts e workdirs podem ter manifests ou índices próprios, mas são evidência histórica/operacional; não substituem `CURRENT_STATE.md` do hub. Ver `MANIFEST_SEMANTICS.md`.

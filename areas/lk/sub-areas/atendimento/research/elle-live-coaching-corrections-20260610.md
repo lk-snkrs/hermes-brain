@@ -179,4 +179,6 @@ Observações:
 - Fit guidance pode ser respondido quando for informação geral de produto/modelo.
 - Quando a marca tiver formas diferentes por modelo, perguntar modelo antes de orientar.
 - A abertura deve perguntar como a pessoa vai e adaptar nome/gênero quando houver contexto.
-- Disponibilidade em loja e status de pedido continuam bloqueados e devem transbordar para Larissa.
+- Disponibilidade em loja continua bloqueada para resposta pública automática e deve transbordar para Larissa/lk-stock.
+- Para status de pedido, a Elle pode responder publicamente **quando o pedido já foi enviado/em trânsito e houver rastreio verificado**. Se o pedido ainda não foi enviado, estiver ambíguo, atrasado/problemático ou sem rastreio, transbordar para Larissa.
+- Referência: `areas/lk/sub-areas/atendimento/references/elle-order-status-crosscheck-and-larissa-draft-20260611.md`.

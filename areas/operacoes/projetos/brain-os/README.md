@@ -2,8 +2,8 @@
 
 **Nome curto:** Brain OS
 **Subtítulo:** Canonical Project Intelligence Layer
-**Status:** v1 em implantação local/documental
-**Criado em:** 2026-06-10
+**Status:** v1 publicado em hubs canônicos; maturidade/qualidade em evolução
+**Atualizado em:** 2026-06-11T13:55:54.899501+00:00
 
 ## Tese
 
@@ -26,11 +26,12 @@ Modelo híbrido:
 2. O Brain OS mantém um índice central e scanner para enxergar todos os hubs.
 3. O histórico original permanece no lugar; hubs apontam para evidências, não apagam nem movem originais.
 
-## Primeiro exemplo validado
+## Estado pós-merge PR #144
 
-`areas/lk/sub-areas/atendimento/projetos/chatwoot/`
-
-Esse hub estabeleceu o padrão mínimo: README, estado atual, decisões/guardrails, índice de artefatos, timeline, próximos passos e manifest.
+- Os hubs canônicos das ondas Brain OS foram publicados em `main`.
+- O scanner publicado possui `scanner_version=brain-os-v1`.
+- O pacote mínimo de hub é validável por `manifest.json` + 6 arquivos documentais.
+- O próximo foco não é criar hubs por volume, e sim maturidade: docs centrais, semântica de manifests e status executivo.
 
 ## Guardrail de execução
 
@@ -41,7 +42,7 @@ Brain OS v1 é local/documental:
 - sem writes em Shopify, Tiny, GMC, WhatsApp, Chatwoot, e-mail ou APIs externas;
 - sem copiar secrets;
 - sem apagar histórico;
-- Git commit/push só com aprovação explícita.
+- Git commit/push/PR apenas dentro de escopo documental aprovado.
 
 ## Arquivos deste projeto
 
@@ -53,3 +54,5 @@ Brain OS v1 é local/documental:
 - `ROLL_OUT_PLAN.md` — plano de rollout.
 - `SCANNER_SPEC.md` — especificação do scanner local.
 - `MANIFEST_STANDARD.md` — padrão de manifest.
+- `MANIFEST_SEMANTICS.md` — diferença entre hub canônico, receipt, backup e artefato.
+- `EXECUTIVE_STATUS.md` — superfície executiva de status Brain OS.

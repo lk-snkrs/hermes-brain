@@ -124,3 +124,9 @@ Observação: o candidato do scanner `mission-control-mesa-coo` foi separado em 
 - `areas/operacoes/projetos/doppler-secrets-operations-ledger/` — Doppler / Secrets Operations Ledger.
 - `areas/operacoes/projetos/mcp-tooling-activation-governance/` — MCP / Tooling Activation Governance.
 - `areas/operacoes/projetos/telegram-delivery-ux-governance/` — Telegram Delivery / UX Governance.
+
+## Onda 14 — executada localmente em 2026-06-11
+
+- `areas/lk/sub-areas/growth/projetos/shopify-growth-os/` — Shopify Growth OS; fecha lacuna do candidato `lk-growth-gmc-shopify-meta` sem duplicar GMC/Theme/CRO.
+- `areas/lk/sub-areas/stock/projetos/pronta-entrega-pos/` — Pronta Entrega / POS; companion hub do Tiny source-of-truth para disponibilidade física, POS e pacotes de reposição.
+- Scanner Brain OS ajustado para não exigir `growth/projetos/meta-ads-performance`, porque o hub canônico de Meta Ads já vive em `areas/lk/sub-areas/trafego-pago/projetos/meta-ads-performance/`.
