@@ -110,3 +110,11 @@ Somente se Lucas aprovar:
 - Criar hub LK Sourcing Pricing / Size Governance: concluído localmente.
 - Criar hub LK Paid Attribution / Influencer Intelligence: concluído localmente.
 - Próximo gate: scanner, secret scan, Brain health e docs guard.
+
+## Status Onda 9 — 2026-06-10
+
+- Criar hub Hermes Runtime Observability: concluído localmente.
+- Criar hub Hermes Cron Control Plane: concluído localmente.
+- Criar hub Brain Fonte Viva / Data Governance: concluído localmente.
+- Criar hub Webhooks to Brain Ingestion: concluído localmente.
+- Próximo gate: scanner, secret scan, Brain health e docs guard.

@@ -89,3 +89,10 @@ Observação: o candidato do scanner `mission-control-mesa-coo` foi separado em 
 - `areas/lk/sub-areas/stock/projetos/supplier-quote-approval-flow/` — LK Supplier Quote Approval Flow.
 - `areas/lk/sub-areas/stock/projetos/sourcing-pricing-size-governance/` — LK Sourcing Pricing / Size Governance.
 - `areas/lk/sub-areas/trafego-pago/projetos/paid-attribution-influencer-intelligence/` — LK Paid Attribution / Influencer Intelligence.
+
+## Onda 9 — executada localmente em 2026-06-10
+
+- `areas/operacoes/projetos/hermes-runtime-observability/` — Hermes Runtime Observability.
+- `areas/operacoes/projetos/cron-control-plane/` — Hermes Cron Control Plane.
+- `areas/operacoes/projetos/brain-fonte-viva-data-governance/` — Brain Fonte Viva / Data Governance.
+- `areas/operacoes/projetos/webhooks-to-brain-ingestion/` — Webhooks to Brain Ingestion.

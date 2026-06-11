@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-10T23:07:21.451679+00:00",
+  "generated_at": "2026-06-11T00:11:29.576311+00:00",
   "root": "/opt/data/hermes_bruno_ingest/hermes-brain",
   "mode": "read_only_scan",
   "scanner_version": "brain-os-v1",
-  "total_text_files_scanned": 17443,
+  "total_text_files_scanned": 17472,
   "candidates": [
     {
       "id": "lk-growth-gmc-shopify-meta",
@@ -20,7 +20,7 @@
       "wave": 1,
       "risk": "high_external_write_risk",
       "owner_file_count": 10974,
-      "term_hit_files": 10028,
+      "term_hit_files": 10035,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -167,8 +167,8 @@
       ],
       "wave": 1,
       "risk": "context_truth_and_runtime_claim_risk",
-      "owner_file_count": 362,
-      "term_hit_files": 253,
+      "owner_file_count": 390,
+      "term_hit_files": 256,
       "sample_artifacts": [
         "AGENTS.md",
         "reports/memory-hygiene-2026-05-09.md",
@@ -265,7 +265,7 @@
       ],
       "wave": 2,
       "risk": "personal_external_action_risk",
-      "owner_file_count": 362,
+      "owner_file_count": 390,
       "term_hit_files": 643,
       "sample_artifacts": [
         "TOOLS.md",
@@ -365,7 +365,7 @@
       ],
       "wave": 2,
       "risk": "approval_sequence_and_decision_state_risk",
-      "owner_file_count": 362,
+      "owner_file_count": 390,
       "term_hit_files": 338,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -415,7 +415,7 @@
       "wave": 3,
       "risk": "theme_production_write_risk",
       "owner_file_count": 10974,
-      "term_hit_files": 6896,
+      "term_hit_files": 6903,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -512,7 +512,7 @@
       ],
       "wave": 3,
       "risk": "snapshot_vs_live_state_risk",
-      "owner_file_count": 362,
+      "owner_file_count": 390,
       "term_hit_files": 1310,
       "sample_artifacts": [
         "TOOLS.md",
@@ -611,7 +611,7 @@
       "wave": 3,
       "risk": "ads_campaign_write_risk",
       "owner_file_count": 44,
-      "term_hit_files": 155,
+      "term_hit_files": 156,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -856,7 +856,7 @@
       "wave": 5,
       "risk": "telegram_noise_or_stale_report_risk",
       "owner_file_count": 22185,
-      "term_hit_files": 8358,
+      "term_hit_files": 8359,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -1591,7 +1591,7 @@
       "wave": 8,
       "risk": "campaign_attribution_or_external_email_action_risk",
       "owner_file_count": 44,
-      "term_hit_files": 263,
+      "term_hit_files": 264,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -1625,6 +1625,202 @@
         "reports/lk-os-telegram-approval-surface-audit-2026-05-12.json"
       ],
       "score": 25,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "brain-fonte-viva-data-governance",
+      "title": "Brain Fonte Viva / Data Governance",
+      "owner_area": "areas/operacoes",
+      "suggested_hubs": [
+        "areas/operacoes/projetos/brain-fonte-viva-data-governance"
+      ],
+      "existing_hubs": [
+        "areas/operacoes/projetos/brain-fonte-viva-data-governance"
+      ],
+      "wave": 9,
+      "risk": "brain_documentation_mistaken_for_current_live_data_risk",
+      "owner_file_count": 390,
+      "term_hit_files": 250,
+      "sample_artifacts": [
+        "reports/brain-health-check-2026-05-31-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-06-02-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-05-20-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-05-29-runtime-truth-reconciler.json",
+        "reports/revisao-operacional-multiempresa-2026-05-09.md",
+        "reports/brain-health-check-2026-05-25-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-06-10-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-06-08-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-06-01-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-05-23-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-06-05-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-05-24-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-05-21-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-06-06-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-06-03-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-05-30-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-06-07-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-05-20-brain-operating-layer.json",
+        "reports/brain-health-check-2026-05-22-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-05-27-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-06-09-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-05-26-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-06-04-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-05-28-runtime-truth-reconciler.json",
+        "reports/daily-consolidation/2026-06-07.md",
+        "reports/daily-consolidation/2026-06-01.md",
+        "reports/daily-consolidation/2026-05-30.md",
+        "reports/daily-consolidation/2026-05-27.md",
+        "reports/daily-consolidation/2026-06-09-handoff.json",
+        "reports/daily-consolidation/2026-05-24.md"
+      ],
+      "score": 28,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "webhooks-to-brain-ingestion",
+      "title": "Webhooks to Brain Ingestion",
+      "owner_area": "areas/operacoes",
+      "suggested_hubs": [
+        "areas/operacoes/projetos/webhooks-to-brain-ingestion"
+      ],
+      "existing_hubs": [
+        "areas/operacoes/projetos/webhooks-to-brain-ingestion"
+      ],
+      "wave": 9,
+      "risk": "unvalidated_webhook_event_triggering_external_or_runtime_action_risk",
+      "owner_file_count": 390,
+      "term_hit_files": 87,
+      "sample_artifacts": [
+        "AGENTS.md",
+        "reports/daily-consolidation/2026-05-20.md",
+        "reports/hermes-continuous-improvement/2026-05-28.md",
+        "reports/governance/hermes-webhooks-domain-and-signed-probes-20260607.md",
+        "reports/governance/hermes-webhooks-vercel-canonical-ingress-20260607.md",
+        "reports/governance/hermes-webhooks-custom-domain-github-canonicalization-20260607.md",
+        "reports/governance/hermes-brain-operating-layer-feature-audit-2026-05-20.md",
+        "reports/governance/lk-specialist-runtime-correction-partial-2026-05-26.md",
+        "reports/governance/lk-specialists-runtime-activation-receipt-2026-05-27.md",
+        "reports/governance/hermes-brain-operating-layer-implementation-2026-05-20.md",
+        "reports/governance/lk-specialists-telegram-roundtrip-probe-2026-05-28.md",
+        "reports/governance/lk-specialists-runtime-activation-approval-packet-2026-05-27.md",
+        "reports/governance/cron-registry-backups/2026-05-25-block2-paused-oneshot-cleanup/lk-growth-jobs.before.json",
+        "reports/governance/cron-registry-backups/2026-05-25-block2-paused-oneshot-cleanup/lk-growth-jobs.after.json",
+        "reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/lk-growth-jobs.before.json",
+        "reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/lk-growth-jobs.after.json",
+        "empresa/rotinas/_index.md",
+        "areas/operacoes/MAPA.md",
+        "areas/operacoes/rotinas/hot-memory-compiler.md",
+        "areas/operacoes/rotinas/approval-ledger.md",
+        "areas/operacoes/rotinas/brain-steward-daily.md",
+        "areas/operacoes/rotinas/runtime-truth-reconciler.md",
+        "areas/operacoes/rotinas/brain-diff-digest.md",
+        "areas/operacoes/rotinas/source-confidence.md",
+        "areas/operacoes/rotinas/voice-to-brain.md",
+        "areas/operacoes/rotinas/mission-control-brain-cockpit.md",
+        "areas/operacoes/rotinas/semantic-recovery-session-search.md",
+        "areas/operacoes/rotinas/webhooks-to-brain.md",
+        "areas/operacoes/rotinas/brain-operating-layer.md",
+        "areas/operacoes/rotinas/skill-promotion-engine.md"
+      ],
+      "score": 21,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "cron-control-plane",
+      "title": "Hermes Cron Control Plane",
+      "owner_area": "areas/operacoes",
+      "suggested_hubs": [
+        "areas/operacoes/projetos/cron-control-plane"
+      ],
+      "existing_hubs": [
+        "areas/operacoes/projetos/cron-control-plane"
+      ],
+      "wave": 9,
+      "risk": "cron_noise_or_unapproved_runtime_schedule_change_risk",
+      "owner_file_count": 390,
+      "term_hit_files": 66,
+      "sample_artifacts": [
+        "CHANGELOG.md",
+        "reports/hermes-host-docker-observability-2026-06-06.json",
+        "reports/mission-control-ops-state-latest.json",
+        "reports/mission-control-ops-state-2026-05-16.json",
+        "reports/operational-consolidation-crons-2026-05-16.md",
+        "reports/daily-consolidation/2026-05-30.md",
+        "reports/memory-hygiene/cycle-maturity-latest.json",
+        "reports/hermes-continuous-improvement/2026-06-02.md",
+        "reports/hermes-continuous-improvement/2026-05-27.md",
+        "reports/governance/auditoria-completa-governanca-organograma-hermes-vs-amora-2026-05-26.md",
+        "reports/governance/runtime-vs-organograma-2026-05-24.md",
+        "reports/governance/organograma-agentes-vs-amora-reaudit-2026-05-25.md",
+        "reports/governance/ruleb-memory-compaction-receipt-2026-06-03.json",
+        "reports/governance/cron-cleanup-migration-approval-packet-2026-05-25.md",
+        "reports/governance/cron-owner-migration-block3-receipt-2026-05-25.md",
+        "reports/governance/cron-owner-migration-block3-final-receipt-2026-05-25.md",
+        "reports/governance/cron-owner-migration-block3-duplicate-fix-receipt-2026-05-25.json",
+        "reports/governance/cron-owner-classification-2026-05-26.md",
+        "reports/governance/hermes-runtime-audit-2026-05-22.md",
+        "reports/governance/brain-gmc-governance-reaudit-2026-05-22.md",
+        "reports/governance/cron-owner-final-reaudit-2026-05-25.md",
+        "reports/governance/cron-ownership-vs-task-router-2026-05-24.md",
+        "reports/governance/matriz-donos-crons-vs-organograma-2026-05-26.md",
+        "reports/governance/cron-ownership-vs-task-router-2026-05-25.md",
+        "reports/governance/organograma-amora-followthrough-2026-05-27.md",
+        "reports/governance/memory-cron-intelligence-proactivity-audit-2026-05-22.md",
+        "reports/governance/amora-style-agent-orchestration-hardening-2026-05-24.md",
+        "reports/governance/cron-owner-migration-block3-receipt-2026-05-25.json",
+        "reports/governance/hermes-runtime-p2-noise-dashboard-watchdog-2026-05-22.md",
+        "reports/governance/memory-os-v180-silent-ok-self-test-20260610.md"
+      ],
+      "score": 20,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "hermes-runtime-observability",
+      "title": "Hermes Runtime Observability",
+      "owner_area": "areas/operacoes",
+      "suggested_hubs": [
+        "areas/operacoes/projetos/hermes-runtime-observability"
+      ],
+      "existing_hubs": [
+        "areas/operacoes/projetos/hermes-runtime-observability"
+      ],
+      "wave": 9,
+      "risk": "documented_runtime_state_confused_with_live_activation_risk",
+      "owner_file_count": 390,
+      "term_hit_files": 30,
+      "sample_artifacts": [
+        "CHANGELOG.md",
+        "reports/lk-gmc-2026-05-14-google-youtube-channel-readonly-diagnostic.md",
+        "reports/lk-gmc-2026-05-14-google-youtube-channel-readonly-diagnostic.json",
+        "reports/governance/memory-cron-intelligence-proactivity-audit-2026-05-22.md",
+        "empresa/contexto/contratos-handoff-especialistas.md",
+        "empresa/rotinas/_index.md",
+        "memories/pending.md",
+        "memories/current.md",
+        "areas/operacoes/MAPA.md",
+        "areas/operacoes/rotinas/hermes-gateway-remediation-plan.md",
+        "areas/operacoes/rotinas/hermes-runtime-observability.md",
+        "areas/operacoes/rotinas/hermes-gateway-readonly-diagnostic-2026-05-04.md",
+        "areas/operacoes/rotinas/runtime-profile-channel-inventory-2026-05-19.md",
+        "areas/operacoes/runtime/hermes-health-dashboard.md",
+        "areas/operacoes/projetos/mission-control-reconciliation-pointer-2026-05-19.md",
+        "areas/operacoes/projetos/mission-control-mesa-coo-alignment-2026-05-19.md",
+        "areas/operacoes/projetos/brain-os/ROLL_OUT_PLAN.md",
+        "areas/operacoes/projetos/brain-os/PROJECT_CANDIDATES.md",
+        "areas/operacoes/projetos/hermes-runtime-observability/DECISIONS_AND_GUARDRAILS.md",
+        "areas/operacoes/projetos/hermes-runtime-observability/README.md",
+        "areas/operacoes/projetos/hermes-runtime-observability/ARTIFACT_INDEX.md",
+        "areas/operacoes/projetos/hermes-runtime-observability/TIMELINE.md",
+        "areas/operacoes/projetos/hermes-runtime-observability/manifest.json",
+        "areas/operacoes/projetos/hermes-runtime-observability/NEXT_STEPS.md",
+        "areas/operacoes/projetos/hermes-runtime-observability/CURRENT_STATE.md",
+        "areas/hermes/operacoes/manual-producao/PHASE_2_CONTROLLED_ADOPTION.md",
+        "areas/hermes/operacoes/manual-producao/HERMES_FEATURE_BACKLOG.md",
+        "areas/hermes/operacoes/manual-producao/CAPABILITIES_ADOPTION_MATRIX.md",
+        "areas/lk/rotinas/gmc-2026-05-14-google-youtube-channel-readonly-diagnostic.md",
+        "agentes/mordomo/MEMORY.md"
+      ],
+      "score": 19,
       "recommendation": "monitor_or_refine_existing_hub"
     }
   ]

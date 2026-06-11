@@ -330,6 +330,43 @@ PROJECT_DEFS = [
         'wave': 8,
     },
 
+    {
+        'id': 'hermes-runtime-observability',
+        'title': 'Hermes Runtime Observability',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/hermes-runtime-observability'],
+        'terms': ['runtime observability', 'runtime-profile', 'profile channel', 'health dashboard', 'gateway remediation', 'readonly diagnostic'],
+        'risk': 'documented_runtime_state_confused_with_live_activation_risk',
+        'wave': 9,
+    },
+    {
+        'id': 'cron-control-plane',
+        'title': 'Hermes Cron Control Plane',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/cron-control-plane'],
+        'terms': ['cron control plane', 'cron inventory', 'cron owner', 'silent ok', 'cron delivery governance', 'approval packet cron'],
+        'risk': 'cron_noise_or_unapproved_runtime_schedule_change_risk',
+        'wave': 9,
+    },
+    {
+        'id': 'brain-fonte-viva-data-governance',
+        'title': 'Brain Fonte Viva / Data Governance',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/brain-fonte-viva-data-governance'],
+        'terms': ['fonte viva', 'dados grandes', 'source confidence', 'runtime truth', 'brain operating layer', 'data governance'],
+        'risk': 'brain_documentation_mistaken_for_current_live_data_risk',
+        'wave': 9,
+    },
+    {
+        'id': 'webhooks-to-brain-ingestion',
+        'title': 'Webhooks to Brain Ingestion',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/webhooks-to-brain-ingestion'],
+        'terms': ['webhooks-to-brain', 'webhook to brain', 'webhook-to-brain-event', 'voice-to-brain', 'raw body', 'hmac'],
+        'risk': 'unvalidated_webhook_event_triggering_external_or_runtime_action_risk',
+        'wave': 9,
+    },
+
 ]
 
 

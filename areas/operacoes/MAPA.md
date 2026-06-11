@@ -164,3 +164,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `projetos/mission-control/` — hub canônico do Mission Control / COO Cockpit.
 - `projetos/mesa-coo/` — hub canônico da Mesa COO / ritual executivo Telegram.
 - `projetos/executive-dashboards/` — hub canônico Brain OS Onda 3 para dashboards executivos, snapshots e governança de fonte viva vs estado documental.
+- `projetos/hermes-runtime-observability/` — hub canônico Brain OS Onda 9 para inventário runtime, profiles, gateway, health dashboards e diagnósticos.
+- `projetos/cron-control-plane/` — hub canônico Brain OS Onda 9 para inventário, governança, silent-OK e approval packets de crons.
+- `projetos/brain-fonte-viva-data-governance/` — hub canônico Brain OS Onda 9 para governança Brain vs fonte viva, dados grandes, source confidence e runtime truth.
+- `projetos/webhooks-to-brain-ingestion/` — hub canônico Brain OS Onda 9 para entrada webhooks/voice-to-brain/eventos e roteamento seguro para Brain.
