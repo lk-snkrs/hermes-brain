@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-11T00:17:56.853447+00:00",
+  "generated_at": "2026-06-11T00:28:37.611922+00:00",
   "root": "/opt/data/hermes_bruno_ingest/hermes-brain",
   "mode": "read_only_scan",
   "scanner_version": "brain-os-v1",
-  "total_text_files_scanned": 17504,
+  "total_text_files_scanned": 17539,
   "candidates": [
     {
       "id": "lk-growth-gmc-shopify-meta",
@@ -19,8 +19,8 @@
       ],
       "wave": 1,
       "risk": "high_external_write_risk",
-      "owner_file_count": 10974,
-      "term_hit_files": 10043,
+      "owner_file_count": 10981,
+      "term_hit_files": 10053,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -69,8 +69,8 @@
       ],
       "wave": 1,
       "risk": "source_of_truth_confusion",
-      "owner_file_count": 7915,
-      "term_hit_files": 8385,
+      "owner_file_count": 7925,
+      "term_hit_files": 8395,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -118,8 +118,8 @@
       ],
       "wave": 1,
       "risk": "production_theme_or_shopify_write_risk",
-      "owner_file_count": 1649,
-      "term_hit_files": 2102,
+      "owner_file_count": 1656,
+      "term_hit_files": 2109,
       "sample_artifacts": [
         "AGENTS.md",
         "CHANGELOG.md",
@@ -167,8 +167,8 @@
       ],
       "wave": 1,
       "risk": "context_truth_and_runtime_claim_risk",
-      "owner_file_count": 397,
-      "term_hit_files": 259,
+      "owner_file_count": 404,
+      "term_hit_files": 260,
       "sample_artifacts": [
         "AGENTS.md",
         "reports/memory-hygiene-2026-05-09.md",
@@ -201,7 +201,7 @@
         "reports/memory-hygiene/hook-latest.json",
         "reports/memory-hygiene/2026-06-05.json"
       ],
-      "score": 33,
+      "score": 34,
       "recommendation": "monitor_or_refine_existing_hub"
     },
     {
@@ -216,8 +216,8 @@
       ],
       "wave": 2,
       "risk": "commercial_reply_and_human_approval_risk",
-      "owner_file_count": 382,
-      "term_hit_files": 795,
+      "owner_file_count": 384,
+      "term_hit_files": 797,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -265,7 +265,7 @@
       ],
       "wave": 2,
       "risk": "personal_external_action_risk",
-      "owner_file_count": 397,
+      "owner_file_count": 404,
       "term_hit_files": 650,
       "sample_artifacts": [
         "TOOLS.md",
@@ -299,7 +299,7 @@
         "reports/lk-seo-cro-seo-fields-runner-gate-2026-05-18.md",
         "reports/lk-os-approval-decision-log-router-2026-05-04_2026-05-10.json"
       ],
-      "score": 44,
+      "score": 45,
       "recommendation": "canonical_hub_needed"
     },
     {
@@ -365,7 +365,7 @@
       ],
       "wave": 2,
       "risk": "approval_sequence_and_decision_state_risk",
-      "owner_file_count": 397,
+      "owner_file_count": 404,
       "term_hit_files": 345,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -399,7 +399,7 @@
         "reports/brain-improvement-score-2026-06-05-02h.md",
         "reports/brain-improvement-score-2026-06-10-02h.json"
       ],
-      "score": 31,
+      "score": 32,
       "recommendation": "monitor_or_refine_existing_hub"
     },
     {
@@ -414,8 +414,8 @@
       ],
       "wave": 3,
       "risk": "theme_production_write_risk",
-      "owner_file_count": 10974,
-      "term_hit_files": 6911,
+      "owner_file_count": 10981,
+      "term_hit_files": 6914,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -449,6 +449,55 @@
         "reports/lk-gmc-local-link-template-investigation-2026-05-31.json"
       ],
       "score": 85,
+      "recommendation": "canonical_hub_needed"
+    },
+    {
+      "id": "executive-dashboards",
+      "title": "Executive Dashboards",
+      "owner_area": "areas/operacoes",
+      "suggested_hubs": [
+        "areas/operacoes/projetos/executive-dashboards"
+      ],
+      "existing_hubs": [
+        "areas/operacoes/projetos/executive-dashboards"
+      ],
+      "wave": 3,
+      "risk": "snapshot_vs_live_state_risk",
+      "owner_file_count": 404,
+      "term_hit_files": 1310,
+      "sample_artifacts": [
+        "TOOLS.md",
+        "ROADMAP-30-DIAS-HERMES.md",
+        "AGENTS.md",
+        "HEARTBEAT.md",
+        "CHANGELOG.md",
+        "receipts/hermes-v016-operating-layer-packet-receipt-2026-06-06.md",
+        "receipts/hermes-v016-stage1-candidate-runtime-validation-receipt-2026-06-06.md",
+        "receipts/hermes-dashboard-bridge-hermes-lucascimino-com-receipt-2026-06-06.md",
+        "receipts/hermes-v016-next-adoption-packet-receipt-2026-06-06.md",
+        "receipts/hermes-v016-telegram-noise-followthrough-1-2-3-4-receipt-2026-06-06.md",
+        "receipts/hermes-v016-operating-layer-next-step-approval-packet-receipt-2026-06-06.md",
+        "receipts/hermes-v016-adoption-os-local-docs-receipt-2026-06-06.md",
+        "receipts/hermes-v016-stage2-cutover-final-receipt-2026-06-06.md",
+        "receipts/hermes-v016-track1-track2-receipt-2026-06-06.md",
+        "receipts/hermes-v016-release-adoption-verification-2026-06-06.md",
+        "receipts/hermes-v016-kanban-t_cfef0a8d-handoff-pilot-receipt-2026-06-06.md",
+        "receipts/hermes-v016-operating-layer-all-approved-cards-receipt-2026-06-06.md",
+        "receipts/hermes-v016-stage2-approval-packet-receipt-2026-06-06.md",
+        "receipts/hermes-telegram-kanban-command-approval-a-readonly-receipt-2026-06-06.md",
+        "receipts/hermes-v016-operating-layer-kanban-board-receipt-2026-06-06.md",
+        "reports/lk-gmc-2026-05-14-p2a-128-mismatch-readonly-review.json",
+        "reports/lk-os-cro-baseline-020-readonly-2026-05-15.json",
+        "reports/lk-merchant-center-feed-readonly-router-2026-05-11.json",
+        "reports/lk-gmc-2026-05-14-price-regular-micro-pilot.md",
+        "reports/lk-mission-control-snapshot-2026-05-14.csv",
+        "reports/lk-gmc-local-link-template-investigation-2026-06-04.md",
+        "reports/lk-gmc-2026-05-31-packet-d-price-governance-readonly.csv",
+        "reports/zipper-os-executive-inbox-followups-2026-05-16.md",
+        "reports/lk-gmc-2026-05-14-price-mismatch-fresh-repair.json",
+        "reports/lk-gmc-2026-05-14-lia-gtin-apply.json"
+      ],
+      "score": 49,
       "recommendation": "canonical_hub_needed"
     },
     {
@@ -501,55 +550,6 @@
       "recommendation": "canonical_hub_needed"
     },
     {
-      "id": "executive-dashboards",
-      "title": "Executive Dashboards",
-      "owner_area": "areas/operacoes",
-      "suggested_hubs": [
-        "areas/operacoes/projetos/executive-dashboards"
-      ],
-      "existing_hubs": [
-        "areas/operacoes/projetos/executive-dashboards"
-      ],
-      "wave": 3,
-      "risk": "snapshot_vs_live_state_risk",
-      "owner_file_count": 397,
-      "term_hit_files": 1310,
-      "sample_artifacts": [
-        "TOOLS.md",
-        "ROADMAP-30-DIAS-HERMES.md",
-        "AGENTS.md",
-        "HEARTBEAT.md",
-        "CHANGELOG.md",
-        "receipts/hermes-v016-operating-layer-packet-receipt-2026-06-06.md",
-        "receipts/hermes-v016-stage1-candidate-runtime-validation-receipt-2026-06-06.md",
-        "receipts/hermes-dashboard-bridge-hermes-lucascimino-com-receipt-2026-06-06.md",
-        "receipts/hermes-v016-next-adoption-packet-receipt-2026-06-06.md",
-        "receipts/hermes-v016-telegram-noise-followthrough-1-2-3-4-receipt-2026-06-06.md",
-        "receipts/hermes-v016-operating-layer-next-step-approval-packet-receipt-2026-06-06.md",
-        "receipts/hermes-v016-adoption-os-local-docs-receipt-2026-06-06.md",
-        "receipts/hermes-v016-stage2-cutover-final-receipt-2026-06-06.md",
-        "receipts/hermes-v016-track1-track2-receipt-2026-06-06.md",
-        "receipts/hermes-v016-release-adoption-verification-2026-06-06.md",
-        "receipts/hermes-v016-kanban-t_cfef0a8d-handoff-pilot-receipt-2026-06-06.md",
-        "receipts/hermes-v016-operating-layer-all-approved-cards-receipt-2026-06-06.md",
-        "receipts/hermes-v016-stage2-approval-packet-receipt-2026-06-06.md",
-        "receipts/hermes-telegram-kanban-command-approval-a-readonly-receipt-2026-06-06.md",
-        "receipts/hermes-v016-operating-layer-kanban-board-receipt-2026-06-06.md",
-        "reports/lk-gmc-2026-05-14-p2a-128-mismatch-readonly-review.json",
-        "reports/lk-os-cro-baseline-020-readonly-2026-05-15.json",
-        "reports/lk-merchant-center-feed-readonly-router-2026-05-11.json",
-        "reports/lk-gmc-2026-05-14-price-regular-micro-pilot.md",
-        "reports/lk-mission-control-snapshot-2026-05-14.csv",
-        "reports/lk-gmc-local-link-template-investigation-2026-06-04.md",
-        "reports/lk-gmc-2026-05-31-packet-d-price-governance-readonly.csv",
-        "reports/zipper-os-executive-inbox-followups-2026-05-16.md",
-        "reports/lk-gmc-2026-05-14-price-mismatch-fresh-repair.json",
-        "reports/lk-gmc-2026-05-14-lia-gtin-apply.json"
-      ],
-      "score": 48,
-      "recommendation": "canonical_hub_needed"
-    },
-    {
       "id": "spiti-bridge-governance",
       "title": "SPITI Bridge / Governance",
       "owner_area": "areas/spiti",
@@ -562,7 +562,7 @@
       "wave": 3,
       "risk": "auction_bid_source_of_truth_risk",
       "owner_file_count": 34,
-      "term_hit_files": 668,
+      "term_hit_files": 669,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -659,8 +659,8 @@
       ],
       "wave": 4,
       "risk": "customer_support_external_message_risk",
-      "owner_file_count": 258,
-      "term_hit_files": 771,
+      "owner_file_count": 259,
+      "term_hit_files": 772,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -709,7 +709,7 @@
       "wave": 4,
       "risk": "external_contact_and_crm_automation_risk",
       "owner_file_count": 117,
-      "term_hit_files": 596,
+      "term_hit_files": 597,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -855,8 +855,8 @@
       ],
       "wave": 5,
       "risk": "telegram_noise_or_stale_report_risk",
-      "owner_file_count": 22186,
-      "term_hit_files": 8361,
+      "owner_file_count": 22211,
+      "term_hit_files": 8363,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -904,8 +904,8 @@
       ],
       "wave": 5,
       "risk": "approval_history_misuse_or_ledger_manipulation_risk",
-      "owner_file_count": 22186,
-      "term_hit_files": 2911,
+      "owner_file_count": 22211,
+      "term_hit_files": 2925,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -953,7 +953,7 @@
       ],
       "wave": 5,
       "risk": "cross_specialist_runtime_confusion_risk",
-      "owner_file_count": 22186,
+      "owner_file_count": 22211,
       "term_hit_files": 296,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -1002,7 +1002,7 @@
       ],
       "wave": 5,
       "risk": "stale_or_conflicting_source_of_truth_risk",
-      "owner_file_count": 22186,
+      "owner_file_count": 22211,
       "term_hit_files": 273,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -1051,7 +1051,7 @@
       ],
       "wave": 6,
       "risk": "external_purchase_or_supplier_contact_without_approval_risk",
-      "owner_file_count": 7915,
+      "owner_file_count": 7925,
       "term_hit_files": 324,
       "sample_artifacts": [
         "AGENTS.md",
@@ -1100,7 +1100,7 @@
       ],
       "wave": 6,
       "risk": "preview_or_readonly_evidence_mistaken_for_production_change_risk",
-      "owner_file_count": 10974,
+      "owner_file_count": 10981,
       "term_hit_files": 250,
       "sample_artifacts": [
         "CHANGELOG.md",
@@ -1149,7 +1149,7 @@
       ],
       "wave": 6,
       "risk": "customer_benefit_or_commercial_promise_without_policy_risk",
-      "owner_file_count": 10974,
+      "owner_file_count": 10981,
       "term_hit_files": 153,
       "sample_artifacts": [
         "TOOLS.md",
@@ -1198,7 +1198,7 @@
       ],
       "wave": 6,
       "risk": "external_customer_or_supplier_message_without_approval_risk",
-      "owner_file_count": 258,
+      "owner_file_count": 259,
       "term_hit_files": 264,
       "sample_artifacts": [
         "TOOLS.md",
@@ -1247,7 +1247,7 @@
       ],
       "wave": 7,
       "risk": "seo_geo_experiment_mistaken_for_measured_production_gain_risk",
-      "owner_file_count": 10974,
+      "owner_file_count": 10981,
       "term_hit_files": 441,
       "sample_artifacts": [
         "AGENTS.md",
@@ -1296,7 +1296,7 @@
       ],
       "wave": 7,
       "risk": "production_page_or_theme_publish_without_research_qa_approval_risk",
-      "owner_file_count": 1649,
+      "owner_file_count": 1656,
       "term_hit_files": 1485,
       "sample_artifacts": [
         "AGENTS.md",
@@ -1345,7 +1345,7 @@
       ],
       "wave": 7,
       "risk": "shopify_collection_order_write_or_receipt_confusion_risk",
-      "owner_file_count": 1649,
+      "owner_file_count": 1656,
       "term_hit_files": 277,
       "sample_artifacts": [
         "CHANGELOG.md",
@@ -1443,7 +1443,7 @@
       ],
       "wave": 8,
       "risk": "restock_recommendation_external_action_risk",
-      "owner_file_count": 7915,
+      "owner_file_count": 7925,
       "term_hit_files": 250,
       "sample_artifacts": [
         "CHANGELOG.md",
@@ -1492,7 +1492,7 @@
       ],
       "wave": 8,
       "risk": "supplier_contact_or_purchase_without_current_approval_risk",
-      "owner_file_count": 7915,
+      "owner_file_count": 7925,
       "term_hit_files": 259,
       "sample_artifacts": [
         "CHANGELOG.md",
@@ -1541,7 +1541,7 @@
       ],
       "wave": 8,
       "risk": "price_size_margin_stale_data_risk",
-      "owner_file_count": 7915,
+      "owner_file_count": 7925,
       "term_hit_files": 65,
       "sample_artifacts": [
         "receipts/hermes-v016-stage1-candidate-runtime-validation-receipt-2026-06-06.md",
@@ -1639,7 +1639,7 @@
       ],
       "wave": 9,
       "risk": "brain_documentation_mistaken_for_current_live_data_risk",
-      "owner_file_count": 397,
+      "owner_file_count": 404,
       "term_hit_files": 250,
       "sample_artifacts": [
         "reports/brain-health-check-2026-05-31-runtime-truth-reconciler.json",
@@ -1673,7 +1673,7 @@
         "reports/daily-consolidation/2026-06-09-handoff.json",
         "reports/daily-consolidation/2026-05-24.md"
       ],
-      "score": 28,
+      "score": 29,
       "recommendation": "monitor_or_refine_existing_hub"
     },
     {
@@ -1688,7 +1688,7 @@
       ],
       "wave": 9,
       "risk": "unvalidated_webhook_event_triggering_external_or_runtime_action_risk",
-      "owner_file_count": 397,
+      "owner_file_count": 404,
       "term_hit_files": 88,
       "sample_artifacts": [
         "AGENTS.md",
@@ -1722,7 +1722,7 @@
         "areas/operacoes/rotinas/webhooks-to-brain.md",
         "areas/operacoes/rotinas/brain-operating-layer.md"
       ],
-      "score": 21,
+      "score": 22,
       "recommendation": "monitor_or_refine_existing_hub"
     },
     {
@@ -1737,7 +1737,7 @@
       ],
       "wave": 9,
       "risk": "cron_noise_or_unapproved_runtime_schedule_change_risk",
-      "owner_file_count": 397,
+      "owner_file_count": 404,
       "term_hit_files": 69,
       "sample_artifacts": [
         "CHANGELOG.md",
@@ -1771,7 +1771,7 @@
         "reports/governance/hermes-runtime-p2-noise-dashboard-watchdog-2026-05-22.md",
         "reports/governance/memory-os-v180-silent-ok-self-test-20260610.md"
       ],
-      "score": 20,
+      "score": 21,
       "recommendation": "monitor_or_refine_existing_hub"
     },
     {
@@ -1786,7 +1786,7 @@
       ],
       "wave": 9,
       "risk": "documented_runtime_state_confused_with_live_activation_risk",
-      "owner_file_count": 397,
+      "owner_file_count": 404,
       "term_hit_files": 32,
       "sample_artifacts": [
         "CHANGELOG.md",
@@ -1820,7 +1820,7 @@
         "areas/hermes/operacoes/manual-producao/HERMES_FEATURE_BACKLOG.md",
         "areas/hermes/operacoes/manual-producao/CAPABILITIES_ADOPTION_MATRIX.md"
       ],
-      "score": 19,
+      "score": 20,
       "recommendation": "monitor_or_refine_existing_hub"
     },
     {
@@ -1836,7 +1836,7 @@
       "wave": 10,
       "risk": "zipper_external_followup_without_current_approval_or_context_risk",
       "owner_file_count": 384,
-      "term_hit_files": 117,
+      "term_hit_files": 118,
       "sample_artifacts": [
         "CHANGELOG.md",
         "reports/lk-seo-cro-p1-approval-packets-2026-05-18.json",
@@ -1873,55 +1873,6 @@
       "recommendation": "monitor_or_refine_existing_hub"
     },
     {
-      "id": "zipper-cron-readiness-control",
-      "title": "Zipper Cron Readiness Control",
-      "owner_area": "areas/zipper",
-      "suggested_hubs": [
-        "areas/zipper/projetos/cron-readiness-control"
-      ],
-      "existing_hubs": [
-        "areas/zipper/projetos/cron-readiness-control"
-      ],
-      "wave": 10,
-      "risk": "zipper_cron_activation_without_scoped_approval_risk",
-      "owner_file_count": 384,
-      "term_hit_files": 34,
-      "sample_artifacts": [
-        "reports/memory-hygiene/memory-os-v118-post-rollout-readiness-latest.json",
-        "reports/governance/memory-os-v118-post-rollout-readiness-audit-20260609.md",
-        "reports/governance/receipts/memory-os-v118-post-rollout-readiness-20260610.md",
-        "memories/daily/2026-06-10.md",
-        "areas/operacoes/rotinas/hermes-memory-os-v1.md",
-        "areas/operacoes/reports/lcmordomo-p202-zipper-clean-fixture-builder-2026-06-06.md",
-        "areas/operacoes/reports/lcmordomo-p115-zipper-shadow-ledger-2026-06-06.md",
-        "areas/operacoes/reports/lcmordomo-p112-zipper-cron-silent-ok-fixture-2026-06-06.md",
-        "areas/operacoes/reports/lcmordomo-p205-zipper-approval-surface-reconciliation-2026-06-06.md",
-        "areas/operacoes/reports/lcmordomo-p203-zipper-state-rollback-repair-2026-06-06.md",
-        "areas/operacoes/reports/lcmordomo-p206-zipper-final-p2-readiness-audit-2026-06-06.md",
-        "areas/operacoes/reports/lcmordomo-p121-zipper-final-cron-envelope-2026-06-06.md",
-        "areas/operacoes/reports/lcmordomo-p114-zipper-readiness-audit-2026-06-06.md",
-        "areas/operacoes/reports/lcmordomo-p118-zipper-cron-creation-dryrun-executor-2026-06-06.md",
-        "areas/operacoes/reports/lcmordomo-p116-zipper-cron-creation-preview-2026-06-06.md",
-        "areas/operacoes/reports/lcmordomo-p119-zipper-cron-state-rollback-rehearsal-2026-06-06.md",
-        "areas/operacoes/reports/lcmordomo-p117-zipper-cron-approval-packet-2026-06-06.md",
-        "areas/operacoes/projetos/lcmordomo-os-p2-readiness-plan-2026-06-06.md",
-        "areas/operacoes/projetos/lcmordomo-os-control-plan.md",
-        "areas/operacoes/projetos/brain-os/ROLL_OUT_PLAN.md",
-        "areas/operacoes/projetos/brain-os/PROJECT_CANDIDATES.md",
-        "areas/lk/rotinas/lk-os-tiny-stock-micro-batch-2026-05-15.md",
-        "areas/lk/rotinas/implementation-plan-lk-tiny-local-stock-db-phase-a-2026-05-26.md",
-        "areas/lk/sub-areas/content/receipts/lk-content-gate10-crons-activated-20260607.md",
-        "areas/lk/sub-areas/content/receipts/lk-content-telegram-bot-activated-20260607.md",
-        "areas/zipper/MAPA.md",
-        "areas/zipper/projetos/cron-readiness-control/DECISIONS_AND_GUARDRAILS.md",
-        "areas/zipper/projetos/cron-readiness-control/README.md",
-        "areas/zipper/projetos/cron-readiness-control/ARTIFACT_INDEX.md",
-        "areas/zipper/projetos/cron-readiness-control/TIMELINE.md"
-      ],
-      "score": 19,
-      "recommendation": "monitor_or_refine_existing_hub"
-    },
-    {
       "id": "hermes-kanban-command-center",
       "title": "Hermes Kanban Command Center",
       "owner_area": "areas/operacoes",
@@ -1933,7 +1884,7 @@
       ],
       "wave": 10,
       "risk": "kanban_worker_or_command_activation_without_runtime_approval_risk",
-      "owner_file_count": 397,
+      "owner_file_count": 404,
       "term_hit_files": 32,
       "sample_artifacts": [
         "receipts/hermes-v016-operating-layer-packet-receipt-2026-06-06.md",
@@ -1966,6 +1917,55 @@
         "areas/operacoes/prds/hermes-v016-kanban-pilot-controlled-prd-2026-06-06.md",
         "areas/operacoes/prds/hermes-v013-kanban-workers-readiness.md",
         "areas/hermes/operacoes/manual-producao/PHASE_2_CONTROLLED_ADOPTION.md"
+      ],
+      "score": 20,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "zipper-cron-readiness-control",
+      "title": "Zipper Cron Readiness Control",
+      "owner_area": "areas/zipper",
+      "suggested_hubs": [
+        "areas/zipper/projetos/cron-readiness-control"
+      ],
+      "existing_hubs": [
+        "areas/zipper/projetos/cron-readiness-control"
+      ],
+      "wave": 10,
+      "risk": "zipper_cron_activation_without_scoped_approval_risk",
+      "owner_file_count": 384,
+      "term_hit_files": 35,
+      "sample_artifacts": [
+        "reports/memory-hygiene/memory-os-v118-post-rollout-readiness-latest.json",
+        "reports/governance/memory-os-v118-post-rollout-readiness-audit-20260609.md",
+        "reports/governance/receipts/memory-os-v118-post-rollout-readiness-20260610.md",
+        "reports/governance/receipts/brain-os-v1-wave10-canonical-hubs-20260611.md",
+        "memories/daily/2026-06-10.md",
+        "areas/operacoes/rotinas/hermes-memory-os-v1.md",
+        "areas/operacoes/reports/lcmordomo-p202-zipper-clean-fixture-builder-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p115-zipper-shadow-ledger-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p112-zipper-cron-silent-ok-fixture-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p205-zipper-approval-surface-reconciliation-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p203-zipper-state-rollback-repair-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p206-zipper-final-p2-readiness-audit-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p121-zipper-final-cron-envelope-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p114-zipper-readiness-audit-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p118-zipper-cron-creation-dryrun-executor-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p116-zipper-cron-creation-preview-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p119-zipper-cron-state-rollback-rehearsal-2026-06-06.md",
+        "areas/operacoes/reports/lcmordomo-p117-zipper-cron-approval-packet-2026-06-06.md",
+        "areas/operacoes/projetos/lcmordomo-os-p2-readiness-plan-2026-06-06.md",
+        "areas/operacoes/projetos/lcmordomo-os-control-plan.md",
+        "areas/operacoes/projetos/brain-os/ROLL_OUT_PLAN.md",
+        "areas/operacoes/projetos/brain-os/PROJECT_CANDIDATES.md",
+        "areas/lk/rotinas/lk-os-tiny-stock-micro-batch-2026-05-15.md",
+        "areas/lk/rotinas/implementation-plan-lk-tiny-local-stock-db-phase-a-2026-05-26.md",
+        "areas/lk/sub-areas/content/receipts/lk-content-gate10-crons-activated-20260607.md",
+        "areas/lk/sub-areas/content/receipts/lk-content-telegram-bot-activated-20260607.md",
+        "areas/zipper/MAPA.md",
+        "areas/zipper/projetos/cron-readiness-control/DECISIONS_AND_GUARDRAILS.md",
+        "areas/zipper/projetos/cron-readiness-control/README.md",
+        "areas/zipper/projetos/cron-readiness-control/ARTIFACT_INDEX.md"
       ],
       "score": 19,
       "recommendation": "monitor_or_refine_existing_hub"
@@ -2003,6 +2003,202 @@
         "areas/spiti/paperclip/prd-implantacao-paperclip-spiti.md"
       ],
       "score": 15,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "growth-evidence-ledger",
+      "title": "LK Growth Evidence Ledger",
+      "owner_area": "areas/lk/sub-areas/growth",
+      "suggested_hubs": [
+        "areas/lk/sub-areas/growth/projetos/growth-evidence-ledger"
+      ],
+      "existing_hubs": [
+        "areas/lk/sub-areas/growth/projetos/growth-evidence-ledger"
+      ],
+      "wave": 11,
+      "risk": "growth_receipt_or_preview_mistaken_for_live_production_state_risk",
+      "owner_file_count": 10981,
+      "term_hit_files": 3274,
+      "sample_artifacts": [
+        "TOOLS.md",
+        "ROADMAP-30-DIAS-HERMES.md",
+        "AGENTS.md",
+        "STARTUP.md",
+        "CHANGELOG.md",
+        "receipts/hermes-v016-operating-layer-packet-receipt-2026-06-06.md",
+        "receipts/hermes-dashboard-bridge-hermes-lucascimino-com-receipt-2026-06-06.md",
+        "receipts/hermes-v016-next-adoption-packet-receipt-2026-06-06.md",
+        "receipts/hermes-v016-telegram-noise-followthrough-1-2-3-4-receipt-2026-06-06.md",
+        "receipts/hermes-v016-operating-layer-next-step-approval-packet-receipt-2026-06-06.md",
+        "receipts/hermes-v016-adoption-os-local-docs-receipt-2026-06-06.md",
+        "receipts/hermes-v016-stage2-cutover-final-receipt-2026-06-06.md",
+        "receipts/hermes-v016-track1-track2-receipt-2026-06-06.md",
+        "receipts/hermes-v016-kanban-t_cfef0a8d-handoff-pilot-receipt-2026-06-06.md",
+        "receipts/hermes-v016-operating-layer-all-approved-cards-receipt-2026-06-06.md",
+        "receipts/hermes-v016-stage2-approval-packet-receipt-2026-06-06.md",
+        "receipts/hermes-v016-a3-packet-receipt-2026-06-06.md",
+        "receipts/hermes-v016-telegram-noise-receipts-audit-receipt-2026-06-06.md",
+        "receipts/hermes-v016-operating-layer-kanban-board-receipt-2026-06-06.md",
+        "reports/lk-gmc-2026-05-14-p2a-128-mismatch-readonly-review.json",
+        "reports/lk-gmc-2026-05-14-price-regular-micro-pilot.md",
+        "reports/lk-gmc-local-link-template-investigation-2026-06-04.md",
+        "reports/lk-gmc-2026-05-14-price-source-diagnostic.md",
+        "reports/lk-os-droper-readonly-approval-packet-18-2026-05-14.md",
+        "reports/lk-gmc-2026-05-14-price-mismatch-fresh-repair.json",
+        "reports/lk-gmc-2026-05-14-lia-gtin-apply.json",
+        "reports/lk-gmc-2026-05-15-approved-packets-a42-b20.json",
+        "reports/lk-os-stockout-recompra-sourcing-validation-queue-2026-05-13.json",
+        "reports/lk-seo-geo-readiness-2026-05-18.md",
+        "reports/lk-os-supplier-quote-approval-packet-2026-05-04_2026-05-10.csv"
+      ],
+      "score": 85,
+      "recommendation": "canonical_hub_needed"
+    },
+    {
+      "id": "stock-approval-packets-ledger",
+      "title": "LK Stock Approval Packets Ledger",
+      "owner_area": "areas/lk/sub-areas/stock",
+      "suggested_hubs": [
+        "areas/lk/sub-areas/stock/projetos/stock-approval-packets-ledger"
+      ],
+      "existing_hubs": [
+        "areas/lk/sub-areas/stock/projetos/stock-approval-packets-ledger"
+      ],
+      "wave": 11,
+      "risk": "stock_approval_packet_mistaken_for_purchase_or_supplier_authorization_risk",
+      "owner_file_count": 7925,
+      "term_hit_files": 2547,
+      "sample_artifacts": [
+        "CHANGELOG.md",
+        "reports/lk-fila-a-sourcing-validation-and-quote-preview-2026-05-11.json",
+        "reports/lk-on-demand-sourcing-router-readiness-guard-2026-05-11.json",
+        "reports/lk-seo-cro-p1-approval-packets-2026-05-18.json",
+        "reports/lk-seo-cro-approved-seo-fields-execution-2026-05-18.json",
+        "reports/lk-os-supplier-quote-send-preview-2026-05-12.json",
+        "reports/lk-growth-weekly-revenue-opportunity-2026-05-19.md",
+        "reports/lk-cro-conversion-preview-v0-2026-05-18.json",
+        "reports/lk-seo-cro-seo-fields-runner-gate-2026-05-18.json",
+        "reports/lk-seo-cro-p1-approval-packets-2026-05-18.md",
+        "reports/lk-os-telegram-approval-surface-audit-2026-05-12.json",
+        "reports/lk-on-demand-sourcing-router-readiness-guard-2026-05-11.md",
+        "reports/lk-visible-cro-pending-future-2026-05-11.json",
+        "reports/lk-approved-p1-seo-fields-execution-2026-05-11.json",
+        "reports/lk-seo-cro-p1-approval-packets-2026-05-18.csv",
+        "reports/lk-p1-seo-cro-approval-packets-2026-05-11.md",
+        "reports/lk-fila-a-sourcing-validation-and-quote-preview-2026-05-11.csv",
+        "reports/lk-p1-seo-cro-approval-packets-2026-05-11.json",
+        "reports/lk-os-next-stage-fila-a-sourcing-preview-2026-05-11.csv",
+        "reports/lk-os-next-stage-fila-a-sourcing-preview-2026-05-11.json",
+        "reports/lk-seo-cro-claude-seo-scorecard-2026-05-18.json",
+        "reports/daily-consolidation/2026-05-31.md",
+        "reports/daily-consolidation/2026-06-09.md",
+        "reports/daily-consolidation/2026-05-28.md",
+        "reports/brain-worktrees-2026-05-16/lk-marketing-attribution-export/metadata.json",
+        "reports/brain-organogram-consolidation-2026-05-16/status-by-organogram.json",
+        "reports/memory-hygiene/events-latest.json",
+        "reports/memory-hygiene/receipt-adoption-gate-v220.json",
+        "reports/memory-hygiene/adoption-latest.json",
+        "reports/brain-git-hygiene-2026-05-16/status-classification.json"
+      ],
+      "score": 85,
+      "recommendation": "canonical_hub_needed"
+    },
+    {
+      "id": "lkgoc-evidence-workbench",
+      "title": "LKGOC Evidence Workbench",
+      "owner_area": "areas/lk/sub-areas/collection-optimizer",
+      "suggested_hubs": [
+        "areas/lk/sub-areas/collection-optimizer/projetos/lkgoc-evidence-workbench"
+      ],
+      "existing_hubs": [
+        "areas/lk/sub-areas/collection-optimizer/projetos/lkgoc-evidence-workbench"
+      ],
+      "wave": 11,
+      "risk": "lkgoc_dev_or_evidence_receipt_mistaken_for_production_publish_risk",
+      "owner_file_count": 1656,
+      "term_hit_files": 275,
+      "sample_artifacts": [
+        "reports/lk-cro-weekly-preview-top-priorities-2026-05-19.md",
+        "reports/lk-experiment-ledger-2026-06-05.md",
+        "reports/daily-consolidation/2026-06-03.md",
+        "reports/governance/cron-cleanup-migration-approval-packet-2026-05-25.md",
+        "reports/governance/lk-three-agent-temporary-workers-runtime-audit-2026-06-06.md",
+        "reports/governance/lk-three-agent-worker-smoke-test-2026-06-06.md",
+        "reports/governance/cron-owner-final-reaudit-2026-05-25.md",
+        "reports/governance/hermes-v016-fastlane-model-routing-prd-2026-06-06.md",
+        "reports/governance/cron-ownership-vs-task-router-2026-05-24.md",
+        "reports/governance/cron-ownership-vs-task-router-2026-05-25.md",
+        "reports/governance/hermes-v016-fastlane-smoke-test-suite-2026-06-06.md",
+        "reports/governance/cron-registry-backups/2026-05-25-block2-paused-oneshot-cleanup/lk-growth-jobs.before.json",
+        "reports/governance/cron-registry-backups/2026-05-25-block2-paused-oneshot-cleanup/lk-growth-jobs.after.json",
+        "reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/lk-growth-jobs.before.json",
+        "reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/lk-growth-jobs.after.json",
+        "reports/governance/worker-smoke-raw-20260606/lkgoc-worker-smoke-20260606T132146Z.txt",
+        "reports/governance/worker-smoke-raw-20260606/lk-shopify-worker-smoke-20260606T131856Z.txt",
+        "empresa/contexto/matriz-roteamento-tarefas-hermes.md",
+        "areas/operacoes/projetos/brain-os/ROLL_OUT_PLAN.md",
+        "areas/operacoes/projetos/brain-os/PROJECT_CANDIDATES.md",
+        "areas/lk/rotinas/lk-cro-weekly-preview-top-priorities-2026-05-19.md",
+        "areas/lk/sub-areas/growth/LKGOC-PRD.md",
+        "areas/lk/sub-areas/growth/LKGOC-EVIDENCE-PACKET.md",
+        "areas/lk/sub-areas/growth/LKGOC-PADRAO-CANONICO.md",
+        "areas/lk/sub-areas/growth/OPERATING-GUARDRAILS.md",
+        "areas/lk/sub-areas/growth/PADRAO-CANONICO-GUIA-E-COLECAO-LK.md",
+        "areas/lk/sub-areas/growth/LKGOC-MAPA-JA-FEITO.md",
+        "areas/lk/sub-areas/growth/PLANO-ROLL_OUT-PADRAO-GUIA-E-COLECAO-LK-20260529.md",
+        "areas/lk/sub-areas/growth/LKGOC-STANDARD-V1-LK-GOC.md",
+        "areas/lk/sub-areas/growth/PADRAO-LK-COLLECTION-V2.md"
+      ],
+      "score": 42,
+      "recommendation": "canonical_hub_needed"
+    },
+    {
+      "id": "governance-receipts-memory-backups",
+      "title": "Governance Receipts / Memory Backups",
+      "owner_area": "areas/operacoes",
+      "suggested_hubs": [
+        "areas/operacoes/projetos/governance-receipts-memory-backups"
+      ],
+      "existing_hubs": [
+        "areas/operacoes/projetos/governance-receipts-memory-backups"
+      ],
+      "wave": 11,
+      "risk": "governance_backup_or_receipt_mistaken_for_current_runtime_state_risk",
+      "owner_file_count": 404,
+      "term_hit_files": 367,
+      "sample_artifacts": [
+        "ROADMAP-30-DIAS-HERMES.md",
+        "reports/brain-health-check-2026-06-07-fechamento-auto.json",
+        "reports/brain-health-check-2026-05-10-lk-influencer-audit-corrected.json",
+        "reports/brain-health-check-2026-05-31-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-06-04-lk-growth-agentic-os-prd.json",
+        "reports/brain-health-check-2026-06-01-fechamento-auto.json",
+        "reports/brain-health-check-2026-06-06-lcmordomo-p18.json",
+        "reports/brain-health-check-2026-06-06-lcmordomo-p19.json",
+        "reports/brain-health-check-2026-05-25-fechamento-auto.json",
+        "reports/brain-health-check-2026-05-26-post.json",
+        "reports/brain-health-check-2026-05-30-02h.json",
+        "reports/brain-health-check-2026-05-10-lk-campaign-attribution-dictionary.json",
+        "reports/brain-health-check-2026-06-06-lc-hermes-systemwide-handoff.json",
+        "reports/brain-health-check-2026-05-10-lk-roas-correction.json",
+        "reports/brain-health-check-2026-05-10-monthly-pareto-script.json",
+        "reports/brain-health-check-2026-06-02-runtime-truth-reconciler.json",
+        "reports/brain-health-check-2026-05-09-lk-readonly-templates.json",
+        "reports/brain-health-check-2026-05-26-governanca-organograma-audit-post-handoff.json",
+        "reports/brain-health-check-2026-06-04-youtube-transcriptapi-agent-learning-final.json",
+        "reports/brain-health-check-2026-05-28-post-daily-loop.json",
+        "reports/brain-health-check-2026-05-10-lk-sku-map-preview.json",
+        "reports/brain-health-check-2026-05-26-governanca-organograma-audit.json",
+        "reports/brain-health-check-2026-05-19-three-fixes.json",
+        "reports/brain-health-check-2026-06-05-02h.json",
+        "reports/brain-health-check-2026-06-06-lcmordomo-p204.json",
+        "reports/brain-health-check-2026-06-08-p2-hardening-final2.json",
+        "reports/brain-health-check-2026-06-07-02h.json",
+        "reports/brain-health-check-2026-06-06-02h-final2.json",
+        "reports/brain-health-check-2026-05-23-post.json",
+        "reports/brain-health-check-2026-05-09-lk-os-examples.json"
+      ],
+      "score": 33,
       "recommendation": "monitor_or_refine_existing_hub"
     }
   ]

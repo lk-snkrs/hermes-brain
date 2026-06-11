@@ -51,3 +51,4 @@ Este agente pode diagnosticar, ranquear, criar fila e preparar pacotes. Não pod
 - `projetos/stockout-recompra-router/` — hub canônico Brain OS Onda 8 para ranking de stockout/recompra, sinais POS e roteamento de reposição.
 - `projetos/supplier-quote-approval-flow/` — hub canônico Brain OS Onda 8 para validação de cotações, fila de fornecedores/Júlio e approval packets de compra.
 - `projetos/sourcing-pricing-size-governance/` — hub canônico Brain OS Onda 8 para governança de preço, markup, câmbio, tamanho BR/US e validação econômica de sourcing.
+- `projetos/stock-approval-packets-ledger/` — hub canônico Brain OS Onda 11 para approval packets, relatórios, receipts e evidência de estoque/recompra/fornecedor.

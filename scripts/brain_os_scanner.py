@@ -404,6 +404,43 @@ PROJECT_DEFS = [
         'wave': 10,
     },
 
+    {
+        'id': 'growth-evidence-ledger',
+        'title': 'LK Growth Evidence Ledger',
+        'owner_area': 'areas/lk/sub-areas/growth',
+        'suggested_hubs': ['areas/lk/sub-areas/growth/projetos/growth-evidence-ledger'],
+        'terms': ['growth evidence', 'growth receipts', 'impact review', 'seo geo experiment ledger', 'approval packet', 'rollback', 'readback'],
+        'risk': 'growth_receipt_or_preview_mistaken_for_live_production_state_risk',
+        'wave': 11,
+    },
+    {
+        'id': 'stock-approval-packets-ledger',
+        'title': 'LK Stock Approval Packets Ledger',
+        'owner_area': 'areas/lk/sub-areas/stock',
+        'suggested_hubs': ['areas/lk/sub-areas/stock/projetos/stock-approval-packets-ledger'],
+        'terms': ['approval-packets', 'stock action packet', 'fila a sourcing', 'quote preview', 'fixture operational scoring', 'recompra approval'],
+        'risk': 'stock_approval_packet_mistaken_for_purchase_or_supplier_authorization_risk',
+        'wave': 11,
+    },
+    {
+        'id': 'lkgoc-evidence-workbench',
+        'title': 'LKGOC Evidence Workbench',
+        'owner_area': 'areas/lk/sub-areas/collection-optimizer',
+        'suggested_hubs': ['areas/lk/sub-areas/collection-optimizer/projetos/lkgoc-evidence-workbench'],
+        'terms': ['lkgoc evidence', 'work packet', 'media manifest', 'side-by-side', 'gold source', 'visual qa', 'dev preview'],
+        'risk': 'lkgoc_dev_or_evidence_receipt_mistaken_for_production_publish_risk',
+        'wave': 11,
+    },
+    {
+        'id': 'governance-receipts-memory-backups',
+        'title': 'Governance Receipts / Memory Backups',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/governance-receipts-memory-backups'],
+        'terms': ['governance receipts', 'memory backups', 'memory-hygiene', 'profile memory coverage', 'brain health check', 'operational docs guard'],
+        'risk': 'governance_backup_or_receipt_mistaken_for_current_runtime_state_risk',
+        'wave': 11,
+    },
+
 ]
 
 

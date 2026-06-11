@@ -169,3 +169,4 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `projetos/brain-fonte-viva-data-governance/` — hub canônico Brain OS Onda 9 para governança Brain vs fonte viva, dados grandes, source confidence e runtime truth.
 - `projetos/webhooks-to-brain-ingestion/` — hub canônico Brain OS Onda 9 para entrada webhooks/voice-to-brain/eventos e roteamento seguro para Brain.
 - `projetos/hermes-kanban-command-center/` — hub canônico Brain OS Onda 10 para comandos Telegram Kanban, workers, subagentes e roteamento operacional.
+- `projetos/governance-receipts-memory-backups/` — hub canônico Brain OS Onda 11 para receipts de governança, backups de memória e evidência de health/docs guard.

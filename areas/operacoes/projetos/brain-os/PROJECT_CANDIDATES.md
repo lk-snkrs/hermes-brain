@@ -103,3 +103,10 @@ Observação: o candidato do scanner `mission-control-mesa-coo` foi separado em 
 - `areas/zipper/projetos/cron-readiness-control/` — Zipper Cron Readiness Control.
 - `areas/spiti/projetos/auction-operations/` — SPITI Auction Operations.
 - `areas/operacoes/projetos/hermes-kanban-command-center/` — Hermes Kanban Command Center.
+
+## Onda 11 — executada localmente em 2026-06-11
+
+- `areas/lk/sub-areas/growth/projetos/growth-evidence-ledger/` — LK Growth Evidence Ledger.
+- `areas/lk/sub-areas/stock/projetos/stock-approval-packets-ledger/` — LK Stock Approval Packets Ledger.
+- `areas/lk/sub-areas/collection-optimizer/projetos/lkgoc-evidence-workbench/` — LKGOC Evidence Workbench.
+- `areas/operacoes/projetos/governance-receipts-memory-backups/` — Governance Receipts / Memory Backups.

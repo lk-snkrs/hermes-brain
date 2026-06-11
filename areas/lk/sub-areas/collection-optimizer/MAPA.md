@@ -36,3 +36,4 @@ Nunca escrever direto em theme production. Fluxo padrão: DEV/unpublished ou bra
 - `projetos/lkgoc-collection-optimizer/` — hub canônico inicial do especialista permanente LKGOC.
 - `projetos/collection-sort-automation/` — hub canônico Brain OS Onda 7 para automação de ordenação de coleções, Rule B, snapshots, receipts e rollback.
 - `projetos/editorial-collection-guides/` — hub canônico Brain OS Onda 7 para Guias LK editoriais, source pages, coleção+guia e QA LKGOC.
+- `projetos/lkgoc-evidence-workbench/` — hub canônico Brain OS Onda 11 para work packets, audits, receipts, evidence/media manifests e QA visual LKGOC.

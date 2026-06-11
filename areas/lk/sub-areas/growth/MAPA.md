@@ -147,3 +147,4 @@ Não duplicar regras longas aqui. Este arquivo deve apenas complementar seu esco
 - `projetos/seo-cro-weekly-improvement/` — hub canônico Brain OS Onda 6 para LK SEO / CRO Weekly Improvement.
 - `projetos/rewards-loyalty-trust/` — hub canônico Brain OS Onda 6 para LK Rewards / Loyalty / Trust.
 - `projetos/source-pages-geo-experiments/` — hub canônico Brain OS Onda 7 para source pages, GEO/AI Search experiments, comparison tables e impact reviews.
+- `projetos/growth-evidence-ledger/` — hub canônico Brain OS Onda 11 para receipts, approval packets, backups, impact reviews e evidência Growth/GMC/SEO/CRO/GEO.
