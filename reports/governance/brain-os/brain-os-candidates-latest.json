@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-11T14:33:10.347367+00:00",
+  "generated_at": "2026-06-11T14:45:55.962535+00:00",
   "root": "/opt/data/hermes_brain_wave14_publish",
   "mode": "read_only_scan",
   "scanner_version": "brain-os-v2",
   "classification_policy_version": "brain-os-artifact-classification-v1",
-  "total_text_files_scanned": 1044,
+  "total_text_files_scanned": 1047,
   "artifact_class_counts": {
     "hub_manifest": 55,
     "receipt_manifest": 80,
     "backup_manifest": 10,
     "artifact_manifest": 127,
-    "other": 772
+    "other": 775
   },
   "manifest_class_counts": {
     "hub_manifest": 55,
@@ -837,10 +837,10 @@
       "maturity": "live_hub_present",
       "wave": 1,
       "risk": "context_truth_and_runtime_claim_risk",
-      "owner_file_count": 184,
-      "term_hit_files": 24,
+      "owner_file_count": 185,
+      "term_hit_files": 27,
       "artifact_class_counts": {
-        "other": 20,
+        "other": 23,
         "artifact_manifest": 3,
         "hub_manifest": 1
       },
@@ -849,6 +849,8 @@
         "reports/retomada-planos-prds-2026-05-09.md",
         "reports/retomada-planos-prds-2026-05-09.json",
         "reports/governance/receipts/brain-os-v1-wave14-scanner-gap-hubs-20260611.md",
+        "reports/governance/brain-os/brain-os-memory-os-integration-latest.md",
+        "reports/governance/brain-os/brain-os-memory-os-integration-latest.json",
         "reports/governance/brain-os/brain-os-health-latest.json",
         "reports/governance/brain-os/brain-os-candidates-latest.json",
         "reports/governance/brain-os/brain-os-source-truth-matrix-latest.md",
@@ -862,6 +864,7 @@
         "areas/operacoes/projetos/brain-os/DECISIONS_AND_GUARDRAILS.md",
         "areas/operacoes/projetos/brain-os/README.md",
         "areas/operacoes/projetos/brain-os/PROJECT_CANDIDATES.md",
+        "areas/operacoes/projetos/brain-os/MEMORY_OS_INTEGRATION.md",
         "areas/operacoes/projetos/memory-os/DECISIONS_AND_GUARDRAILS.md",
         "areas/operacoes/projetos/memory-os/README.md",
         "areas/operacoes/projetos/memory-os/ARTIFACT_INDEX.md",
@@ -891,6 +894,18 @@
         },
         {
           "path": "reports/governance/receipts/brain-os-v1-wave14-scanner-gap-hubs-20260611.md",
+          "artifact_type": "other",
+          "confidence": "low",
+          "signals": []
+        },
+        {
+          "path": "reports/governance/brain-os/brain-os-memory-os-integration-latest.md",
+          "artifact_type": "other",
+          "confidence": "low",
+          "signals": []
+        },
+        {
+          "path": "reports/governance/brain-os/brain-os-memory-os-integration-latest.json",
           "artifact_type": "other",
           "confidence": "low",
           "signals": []
@@ -978,6 +993,12 @@
           "signals": []
         },
         {
+          "path": "areas/operacoes/projetos/brain-os/MEMORY_OS_INTEGRATION.md",
+          "artifact_type": "other",
+          "confidence": "low",
+          "signals": []
+        },
+        {
           "path": "areas/operacoes/projetos/memory-os/DECISIONS_AND_GUARDRAILS.md",
           "artifact_type": "other",
           "confidence": "low",
@@ -1026,7 +1047,7 @@
           "signals": []
         }
       ],
-      "score": 21,
+      "score": 22,
       "recommendation": "monitor_or_refine_existing_hub"
     },
     {
@@ -1047,7 +1068,7 @@
       "maturity": "live_hub_present",
       "wave": 2,
       "risk": "personal_external_action_risk",
-      "owner_file_count": 184,
+      "owner_file_count": 185,
       "term_hit_files": 263,
       "artifact_class_counts": {
         "other": 201,
@@ -1842,7 +1863,7 @@
       "maturity": "live_hub_present",
       "wave": 2,
       "risk": "approval_sequence_and_decision_state_risk",
-      "owner_file_count": 184,
+      "owner_file_count": 185,
       "term_hit_files": 94,
       "artifact_class_counts": {
         "other": 79,
@@ -2622,10 +2643,10 @@
       "maturity": "live_hub_present",
       "wave": 3,
       "risk": "snapshot_vs_live_state_risk",
-      "owner_file_count": 184,
-      "term_hit_files": 234,
+      "owner_file_count": 185,
+      "term_hit_files": 237,
       "artifact_class_counts": {
-        "other": 179,
+        "other": 182,
         "receipt_manifest": 27,
         "backup_manifest": 7,
         "artifact_manifest": 17,
@@ -3417,8 +3438,8 @@
       "owner_file_count": 27,
       "term_hit_files": 274,
       "artifact_class_counts": {
-        "other": 197,
-        "receipt_manifest": 31,
+        "other": 198,
+        "receipt_manifest": 30,
         "artifact_manifest": 42,
         "backup_manifest": 3,
         "hub_manifest": 1
@@ -3677,9 +3698,9 @@
       "wave": 4,
       "risk": "external_contact_and_crm_automation_risk",
       "owner_file_count": 19,
-      "term_hit_files": 268,
+      "term_hit_files": 270,
       "artifact_class_counts": {
-        "other": 203,
+        "other": 205,
         "artifact_manifest": 34,
         "receipt_manifest": 23,
         "backup_manifest": 6,
@@ -4469,9 +4490,9 @@
       "wave": 5,
       "risk": "telegram_noise_or_stale_report_risk",
       "owner_file_count": 401,
-      "term_hit_files": 357,
+      "term_hit_files": 359,
       "artifact_class_counts": {
-        "other": 224,
+        "other": 226,
         "artifact_manifest": 61,
         "receipt_manifest": 60,
         "backup_manifest": 9,
@@ -8167,7 +8188,7 @@
       "maturity": "live_hub_present",
       "wave": 9,
       "risk": "brain_documentation_mistaken_for_current_live_data_risk",
-      "owner_file_count": 184,
+      "owner_file_count": 185,
       "term_hit_files": 149,
       "artifact_class_counts": {
         "other": 140,
@@ -8413,7 +8434,7 @@
       "maturity": "live_hub_present",
       "wave": 9,
       "risk": "documented_runtime_state_confused_with_live_activation_risk",
-      "owner_file_count": 184,
+      "owner_file_count": 185,
       "term_hit_files": 31,
       "artifact_class_counts": {
         "other": 26,
@@ -8669,7 +8690,7 @@
       "maturity": "live_hub_present",
       "wave": 9,
       "risk": "cron_noise_or_unapproved_runtime_schedule_change_risk",
-      "owner_file_count": 184,
+      "owner_file_count": 185,
       "term_hit_files": 15,
       "artifact_class_counts": {
         "other": 12,
@@ -8814,7 +8835,7 @@
       "maturity": "live_hub_present",
       "wave": 9,
       "risk": "unvalidated_webhook_event_triggering_external_or_runtime_action_risk",
-      "owner_file_count": 184,
+      "owner_file_count": 185,
       "term_hit_files": 13,
       "artifact_class_counts": {
         "other": 11,
@@ -8943,7 +8964,7 @@
       "maturity": "live_hub_present",
       "wave": 10,
       "risk": "kanban_worker_or_command_activation_without_runtime_approval_risk",
-      "owner_file_count": 184,
+      "owner_file_count": 185,
       "term_hit_files": 7,
       "artifact_class_counts": {
         "other": 7
@@ -9712,7 +9733,7 @@
       "maturity": "live_hub_present",
       "wave": 11,
       "risk": "governance_backup_or_receipt_mistaken_for_current_runtime_state_risk",
-      "owner_file_count": 184,
+      "owner_file_count": 185,
       "term_hit_files": 84,
       "artifact_class_counts": {
         "other": 69,
@@ -10927,10 +10948,10 @@
       "maturity": "live_hub_present",
       "wave": 12,
       "risk": "historical_script_mistaken_for_active_safe_routine_risk",
-      "owner_file_count": 184,
-      "term_hit_files": 107,
+      "owner_file_count": 185,
+      "term_hit_files": 108,
       "artifact_class_counts": {
-        "other": 93,
+        "other": 94,
         "backup_manifest": 1,
         "artifact_manifest": 10,
         "receipt_manifest": 2,
@@ -11175,7 +11196,7 @@
       "maturity": "live_hub_present",
       "wave": 12,
       "risk": "bulk_cleanup_or_versioning_without_artifact_classification_risk",
-      "owner_file_count": 184,
+      "owner_file_count": 185,
       "term_hit_files": 39,
       "artifact_class_counts": {
         "other": 29,
@@ -11434,7 +11455,7 @@
       "maturity": "live_hub_present",
       "wave": 13,
       "risk": "secret_presence_or_env_documentation_mistaken_for_safe_runtime_injection_risk",
-      "owner_file_count": 184,
+      "owner_file_count": 185,
       "term_hit_files": 150,
       "artifact_class_counts": {
         "other": 139,
@@ -11683,7 +11704,7 @@
       "maturity": "live_hub_present",
       "wave": 13,
       "risk": "configured_mcp_or_tooling_mistaken_for_available_authorized_tool_risk",
-      "owner_file_count": 184,
+      "owner_file_count": 185,
       "term_hit_files": 49,
       "artifact_class_counts": {
         "other": 43,
@@ -11938,10 +11959,10 @@
       "maturity": "live_hub_present",
       "wave": 13,
       "risk": "telegram_noise_or_external_message_without_current_approval_risk",
-      "owner_file_count": 184,
-      "term_hit_files": 27,
+      "owner_file_count": 185,
+      "term_hit_files": 28,
       "artifact_class_counts": {
-        "other": 22,
+        "other": 23,
         "receipt_manifest": 1,
         "artifact_manifest": 3,
         "hub_manifest": 1
@@ -11956,6 +11977,7 @@
         "empresa/rotinas/_index.md",
         "areas/operacoes/projetos/brain-os/ROLL_OUT_PLAN.md",
         "areas/operacoes/projetos/brain-os/EXECUTIVE_STATUS.md",
+        "areas/operacoes/projetos/brain-os/MEMORY_OS_INTEGRATION.md",
         "areas/operacoes/projetos/telegram-delivery-ux-governance/DECISIONS_AND_GUARDRAILS.md",
         "areas/operacoes/projetos/telegram-delivery-ux-governance/README.md",
         "areas/operacoes/projetos/telegram-delivery-ux-governance/CURRENT_STATE.md",
@@ -12030,6 +12052,12 @@
         },
         {
           "path": "areas/operacoes/projetos/brain-os/EXECUTIVE_STATUS.md",
+          "artifact_type": "other",
+          "confidence": "low",
+          "signals": []
+        },
+        {
+          "path": "areas/operacoes/projetos/brain-os/MEMORY_OS_INTEGRATION.md",
           "artifact_type": "other",
           "confidence": "low",
           "signals": []
@@ -12172,7 +12200,7 @@
       "maturity": "live_hub_present",
       "wave": 13,
       "risk": "documented_profile_or_channel_state_confused_with_live_runtime_activation_risk",
-      "owner_file_count": 184,
+      "owner_file_count": 185,
       "term_hit_files": 17,
       "artifact_class_counts": {
         "other": 14,
