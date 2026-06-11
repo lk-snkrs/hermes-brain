@@ -112,3 +112,10 @@ Só propor alteração de `deliver`, pausa, remoção, digest automático ou nov
 - Não enviar WhatsApp, e-mail, Klaviyo ou qualquer mensagem externa.
 - Não publicar theme, Shopify, GMC/feed, Ads ou conteúdo.
 - Não ocultar falta de dados; marcar como `no_signal_yet`.
+## 2026-06-11 — Reminder GMC Local LIA link_template micro-pilot
+
+- Lembrete solicitado por Lucas: recheck do micro-piloto Merchant/GMC Local LIA `link_template` 20 offers.
+- Último estado: patch_ok=20/20; processed readback=17/20 propagados; 3/20 pendentes.
+- Próxima checagem: 30–60min/24h.
+- Decisão futura: se ≥18/20 estabilizar sem overwrite, preparar próxima onda; se regressão/overwrite, corrigir no source Simprosys/local feed.
+- Receipt: `areas/lk/sub-areas/growth/receipts/gmc/local-link-template-micro-pilot-20-20260611T114802Z/RECEIPT.md`.

@@ -145,6 +145,7 @@
     "session_search"
   ],
   "sanitization": {
+    "secrets_redacted": true,
     "raw_chat_transcripts_included": false,
     "secret_values_included": false,
     "token_previews_included": false,

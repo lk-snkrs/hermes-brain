@@ -43,3 +43,10 @@
 - Klaviyo: token rotacionado; flows Checkout Started + Added to Cart apontados pro Chatwoot.
 - Decisão Lucas: fluxos permanecem DESLIGADOS até ordem explícita.
 - Docs: `projetos/chatwoot/recovery-engine/`.
+
+## 2026-06-11 — Migração do WhatsApp oficial Crisp → Chatwoot (Claude/Cowork + Lucas)
+
+- Número +55 11 94956-5000 migrado: 2FA off → token system user "Chatwoot"/app LK Wts → webhook + messages assinado → app publicado → canal reativado → Crisp removido como parceiro.
+- Recebimento e envio de agente validados; Elle triando a inbox oficial.
+- Histórico Crisp completo (589 conversas/11k msgs) unificado na inbox LK WhatsApp; leads ≤7d abertos com label lead-quente-crisp.
+- Detalhes: `recovery-engine/MIGRACAO-WHATSAPP-OFICIAL-2026-06-11.md`.
