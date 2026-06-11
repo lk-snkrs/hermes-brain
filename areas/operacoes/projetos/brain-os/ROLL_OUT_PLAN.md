@@ -142,3 +142,11 @@ Somente se Lucas aprovar:
 - Criar hub Hermes Execution Scripts Archive: concluído localmente.
 - Criar hub Brain Repo Hygiene / Artifact Retention: concluído localmente.
 - Próximo gate: scanner, secret scan, Brain health e docs guard.
+
+## Status Onda 13 — 2026-06-11
+
+- Criar hub Hermes Profile / Channel Runtime Inventory: concluído localmente.
+- Criar hub Doppler / Secrets Operations Ledger: concluído localmente.
+- Criar hub MCP / Tooling Activation Governance: concluído localmente.
+- Criar hub Telegram Delivery / UX Governance: concluído localmente.
+- Próximo gate: scanner, secret scan, Brain health e docs guard.

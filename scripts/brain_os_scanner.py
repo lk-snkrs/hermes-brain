@@ -478,6 +478,43 @@ PROJECT_DEFS = [
         'wave': 12,
     },
 
+
+    {
+        'id': 'profile-channel-runtime-inventory',
+        'title': 'Hermes Profile / Channel Runtime Inventory',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/profile-channel-runtime-inventory'],
+        'terms': ['runtime-profile', 'profile channel', 'profile inventory', 'gateway state', 'toolset exposure', 'configured vs active'],
+        'risk': 'documented_profile_or_channel_state_confused_with_live_runtime_activation_risk',
+        'wave': 13,
+    },
+    {
+        'id': 'doppler-secrets-operations-ledger',
+        'title': 'Doppler / Secrets Operations Ledger',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/doppler-secrets-operations-ledger'],
+        'terms': ['doppler', 'lc-keys', 'secret exists', 'values_printed=false', 'runtime injected', 'credential presence'],
+        'risk': 'secret_presence_or_env_documentation_mistaken_for_safe_runtime_injection_risk',
+        'wave': 13,
+    },
+    {
+        'id': 'mcp-tooling-activation-governance',
+        'title': 'MCP / Tooling Activation Governance',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/mcp-tooling-activation-governance'],
+        'terms': ['mcp', 'native-mcp', 'mcporter', 'toolset', 'tool activation', 'server configured discovered exposed'],
+        'risk': 'configured_mcp_or_tooling_mistaken_for_available_authorized_tool_risk',
+        'wave': 13,
+    },
+    {
+        'id': 'telegram-delivery-ux-governance',
+        'title': 'Telegram Delivery / UX Governance',
+        'owner_area': 'areas/operacoes',
+        'suggested_hubs': ['areas/operacoes/projetos/telegram-delivery-ux-governance'],
+        'terms': ['telegram ux', 'silent-ok', 'telegram alert', 'delivery governance', 'decision inbox telegram', 'actionable alert'],
+        'risk': 'telegram_noise_or_external_message_without_current_approval_risk',
+        'wave': 13,
+    },
 ]
 
 

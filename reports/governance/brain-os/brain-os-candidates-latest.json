@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-11T01:10:31.948462+00:00",
+  "generated_at": "2026-06-11T01:23:26.529019+00:00",
   "root": "/opt/data/hermes_bruno_ingest/hermes-brain",
   "mode": "read_only_scan",
   "scanner_version": "brain-os-v1",
-  "total_text_files_scanned": 17571,
+  "total_text_files_scanned": 17601,
   "candidates": [
     {
       "id": "lk-growth-gmc-shopify-meta",
@@ -167,7 +167,7 @@
       ],
       "wave": 1,
       "risk": "context_truth_and_runtime_claim_risk",
-      "owner_file_count": 418,
+      "owner_file_count": 446,
       "term_hit_files": 260,
       "sample_artifacts": [
         "AGENTS.md",
@@ -216,8 +216,8 @@
       ],
       "wave": 2,
       "risk": "commercial_reply_and_human_approval_risk",
-      "owner_file_count": 384,
-      "term_hit_files": 797,
+      "owner_file_count": 385,
+      "term_hit_files": 798,
       "sample_artifacts": [
         "TOOLS.md",
         "ROADMAP-30-DIAS-HERMES.md",
@@ -265,7 +265,7 @@
       ],
       "wave": 2,
       "risk": "personal_external_action_risk",
-      "owner_file_count": 418,
+      "owner_file_count": 446,
       "term_hit_files": 650,
       "sample_artifacts": [
         "TOOLS.md",
@@ -365,7 +365,7 @@
       ],
       "wave": 2,
       "risk": "approval_sequence_and_decision_state_risk",
-      "owner_file_count": 418,
+      "owner_file_count": 446,
       "term_hit_files": 345,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -463,7 +463,7 @@
       ],
       "wave": 3,
       "risk": "snapshot_vs_live_state_risk",
-      "owner_file_count": 418,
+      "owner_file_count": 446,
       "term_hit_files": 1310,
       "sample_artifacts": [
         "TOOLS.md",
@@ -856,7 +856,7 @@
       "wave": 5,
       "risk": "telegram_noise_or_stale_report_risk",
       "owner_file_count": 22227,
-      "term_hit_files": 8372,
+      "term_hit_files": 8373,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -905,7 +905,7 @@
       "wave": 5,
       "risk": "approval_history_misuse_or_ledger_manipulation_risk",
       "owner_file_count": 22227,
-      "term_hit_files": 2933,
+      "term_hit_files": 2940,
       "sample_artifacts": [
         "TOOLS.md",
         "lessons.md",
@@ -1639,8 +1639,8 @@
       ],
       "wave": 9,
       "risk": "brain_documentation_mistaken_for_current_live_data_risk",
-      "owner_file_count": 418,
-      "term_hit_files": 250,
+      "owner_file_count": 446,
+      "term_hit_files": 252,
       "sample_artifacts": [
         "reports/brain-health-check-2026-05-31-runtime-truth-reconciler.json",
         "reports/brain-health-check-2026-06-02-runtime-truth-reconciler.json",
@@ -1688,7 +1688,7 @@
       ],
       "wave": 9,
       "risk": "unvalidated_webhook_event_triggering_external_or_runtime_action_risk",
-      "owner_file_count": 418,
+      "owner_file_count": 446,
       "term_hit_files": 88,
       "sample_artifacts": [
         "AGENTS.md",
@@ -1737,7 +1737,7 @@
       ],
       "wave": 9,
       "risk": "cron_noise_or_unapproved_runtime_schedule_change_risk",
-      "owner_file_count": 418,
+      "owner_file_count": 446,
       "term_hit_files": 69,
       "sample_artifacts": [
         "CHANGELOG.md",
@@ -1786,8 +1786,8 @@
       ],
       "wave": 9,
       "risk": "documented_runtime_state_confused_with_live_activation_risk",
-      "owner_file_count": 418,
-      "term_hit_files": 32,
+      "owner_file_count": 446,
+      "term_hit_files": 39,
       "sample_artifacts": [
         "CHANGELOG.md",
         "reports/lk-gmc-2026-05-14-google-youtube-channel-readonly-diagnostic.md",
@@ -1806,19 +1806,19 @@
         "areas/operacoes/runtime/hermes-health-dashboard.md",
         "areas/operacoes/projetos/mission-control-reconciliation-pointer-2026-05-19.md",
         "areas/operacoes/projetos/mission-control-mesa-coo-alignment-2026-05-19.md",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/DECISIONS_AND_GUARDRAILS.md",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/README.md",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/ARTIFACT_INDEX.md",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/TIMELINE.md",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/manifest.json",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/NEXT_STEPS.md",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/CURRENT_STATE.md",
         "areas/operacoes/projetos/brain-os/ROLL_OUT_PLAN.md",
         "areas/operacoes/projetos/brain-os/PROJECT_CANDIDATES.md",
         "areas/operacoes/projetos/hermes-kanban-command-center/NEXT_STEPS.md",
         "areas/operacoes/projetos/hermes-runtime-observability/DECISIONS_AND_GUARDRAILS.md",
         "areas/operacoes/projetos/hermes-runtime-observability/README.md",
-        "areas/operacoes/projetos/hermes-runtime-observability/ARTIFACT_INDEX.md",
-        "areas/operacoes/projetos/hermes-runtime-observability/TIMELINE.md",
-        "areas/operacoes/projetos/hermes-runtime-observability/manifest.json",
-        "areas/operacoes/projetos/hermes-runtime-observability/NEXT_STEPS.md",
-        "areas/operacoes/projetos/hermes-runtime-observability/CURRENT_STATE.md",
-        "areas/hermes/operacoes/manual-producao/PHASE_2_CONTROLLED_ADOPTION.md",
-        "areas/hermes/operacoes/manual-producao/HERMES_FEATURE_BACKLOG.md",
-        "areas/hermes/operacoes/manual-producao/CAPABILITIES_ADOPTION_MATRIX.md"
+        "areas/operacoes/projetos/hermes-runtime-observability/ARTIFACT_INDEX.md"
       ],
       "score": 20,
       "recommendation": "monitor_or_refine_existing_hub"
@@ -1835,8 +1835,8 @@
       ],
       "wave": 10,
       "risk": "zipper_external_followup_without_current_approval_or_context_risk",
-      "owner_file_count": 384,
-      "term_hit_files": 118,
+      "owner_file_count": 385,
+      "term_hit_files": 121,
       "sample_artifacts": [
         "CHANGELOG.md",
         "reports/lk-seo-cro-p1-approval-packets-2026-05-18.json",
@@ -1884,7 +1884,7 @@
       ],
       "wave": 10,
       "risk": "kanban_worker_or_command_activation_without_runtime_approval_risk",
-      "owner_file_count": 418,
+      "owner_file_count": 446,
       "term_hit_files": 32,
       "sample_artifacts": [
         "receipts/hermes-v016-operating-layer-packet-receipt-2026-06-06.md",
@@ -1933,7 +1933,7 @@
       ],
       "wave": 10,
       "risk": "zipper_cron_activation_without_scoped_approval_risk",
-      "owner_file_count": 384,
+      "owner_file_count": 385,
       "term_hit_files": 35,
       "sample_artifacts": [
         "reports/memory-hygiene/memory-os-v118-post-rollout-readiness-latest.json",
@@ -2067,7 +2067,7 @@
       "wave": 11,
       "risk": "stock_approval_packet_mistaken_for_purchase_or_supplier_authorization_risk",
       "owner_file_count": 7925,
-      "term_hit_files": 2547,
+      "term_hit_files": 2546,
       "sample_artifacts": [
         "CHANGELOG.md",
         "reports/lk-fila-a-sourcing-validation-and-quote-preview-2026-05-11.json",
@@ -2097,8 +2097,8 @@
         "reports/brain-organogram-consolidation-2026-05-16/status-by-organogram.json",
         "reports/memory-hygiene/receipt-adoption-gate-v220.json",
         "reports/memory-hygiene/adoption-latest.json",
-        "reports/memory-hygiene/daytime-latest.json",
-        "reports/brain-git-hygiene-2026-05-16/status-classification.json"
+        "reports/brain-git-hygiene-2026-05-16/status-classification.json",
+        "reports/brain-git-hygiene-2026-05-16/status-short.txt"
       ],
       "score": 85,
       "recommendation": "canonical_hub_needed"
@@ -2164,7 +2164,7 @@
       ],
       "wave": 11,
       "risk": "governance_backup_or_receipt_mistaken_for_current_runtime_state_risk",
-      "owner_file_count": 418,
+      "owner_file_count": 446,
       "term_hit_files": 367,
       "sample_artifacts": [
         "ROADMAP-30-DIAS-HERMES.md",
@@ -2311,7 +2311,7 @@
       ],
       "wave": 12,
       "risk": "bulk_cleanup_or_versioning_without_artifact_classification_risk",
-      "owner_file_count": 418,
+      "owner_file_count": 446,
       "term_hit_files": 280,
       "sample_artifacts": [
         "TOOLS.md",
@@ -2360,7 +2360,7 @@
       ],
       "wave": 12,
       "risk": "historical_script_mistaken_for_active_safe_routine_risk",
-      "owner_file_count": 418,
+      "owner_file_count": 446,
       "term_hit_files": 257,
       "sample_artifacts": [
         "TOOLS.md",
@@ -2395,6 +2395,195 @@
         "reports/brain-improvement-score-2026-05-28-02h.md"
       ],
       "score": 29,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "doppler-secrets-operations-ledger",
+      "title": "Doppler / Secrets Operations Ledger",
+      "owner_area": "areas/operacoes",
+      "suggested_hubs": [
+        "areas/operacoes/projetos/doppler-secrets-operations-ledger"
+      ],
+      "existing_hubs": [
+        "areas/operacoes/projetos/doppler-secrets-operations-ledger"
+      ],
+      "wave": 13,
+      "risk": "secret_presence_or_env_documentation_mistaken_for_safe_runtime_injection_risk",
+      "owner_file_count": 446,
+      "term_hit_files": 254,
+      "sample_artifacts": [
+        "TOOLS.md",
+        "ROADMAP-30-DIAS-HERMES.md",
+        "README.md",
+        "START-HERE.md",
+        "STARTUP.md",
+        "CHANGELOG.md",
+        "ARCHITECTURE.md",
+        "REVIEW-CHECKLIST.md",
+        "reports/zipper-os-executive-inbox-followups-2026-05-16.md",
+        "reports/hermes-host-docker-observability-2026-05-26.json",
+        "reports/brain-improvement-score-2026-05-09.md",
+        "reports/lk-phase5-stockx-full-sync-local-sql-scaffold-2026-05-11.md",
+        "reports/hermes-host-docker-observability-2026-06-05.json",
+        "reports/lk-seo-cro-seo-fields-runner-gate-2026-05-18.json",
+        "reports/mission-control-ops-state-latest.json",
+        "reports/lk-seo-cro-shopify-execution-2026-05-11.md",
+        "reports/hermes-host-docker-observability-2026-06-03.json",
+        "reports/lk-seo-cro-weekly-2026-05-11.md",
+        "reports/lk-merchant-center-feed-readonly-router-2026-05-11.md",
+        "reports/zipper-os-executive-inbox-followups-2026-05-18.md",
+        "reports/lk-os-handoff-after-gateway-restart-2026-05-12.md",
+        "reports/hermes-host-docker-observability-2026-06-08.json",
+        "reports/zipper-os-executive-inbox-followups-2026-05-17.md",
+        "reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md",
+        "reports/hermes-host-docker-observability-2026-05-31.json",
+        "reports/lk-seo-cro-weekly-2026-05-18.md",
+        "reports/hermes-host-docker-observability-2026-05-29.json",
+        "reports/cwc-vs-hermes-analysis.md",
+        "reports/mission-control-ops-state-2026-05-16.json",
+        "reports/lk-shopify-readonly-skill-operationalization-audit-2026-05-11.md"
+      ],
+      "score": 29,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "telegram-delivery-ux-governance",
+      "title": "Telegram Delivery / UX Governance",
+      "owner_area": "areas/operacoes",
+      "suggested_hubs": [
+        "areas/operacoes/projetos/telegram-delivery-ux-governance"
+      ],
+      "existing_hubs": [
+        "areas/operacoes/projetos/telegram-delivery-ux-governance"
+      ],
+      "wave": 13,
+      "risk": "telegram_noise_or_external_message_without_current_approval_risk",
+      "owner_file_count": 446,
+      "term_hit_files": 250,
+      "sample_artifacts": [
+        "AGENTS.md",
+        "CHANGELOG.md",
+        "receipts/hermes-v016-telegram-noise-receipts-audit-receipt-2026-06-06.md",
+        "reports/mission-control-ops-state-latest.json",
+        "reports/lk-daily-weekly-silent-cron-activation-2026-05-11.md",
+        "reports/lk-safe-automation-readiness-registry-2026-05-11.json",
+        "reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md",
+        "reports/brain-health-check-2026-06-06-lcmordomo-p3-cron-execution.json",
+        "reports/brain-health-check-2026-06-06-lcmordomo-p112.json",
+        "reports/mission-control-ops-state-2026-05-16.json",
+        "reports/lk-safe-automation-readiness-registry-2026-05-11.md",
+        "reports/daily-consolidation/2026-06-02.md",
+        "reports/daily-consolidation/2026-05-30.md",
+        "reports/daily-consolidation/2026-05-27.md",
+        "reports/daily-consolidation/2026-05-24.md",
+        "reports/daily-consolidation/2026-06-08.md",
+        "reports/daily-consolidation/2026-05-22.md",
+        "reports/daily-consolidation/2026-06-10.md",
+        "reports/daily-consolidation/2026-05-23.md",
+        "reports/daily-consolidation/2026-05-21.md",
+        "reports/daily-consolidation/2026-05-20.md",
+        "reports/daily-consolidation/2026-05-25.md",
+        "reports/daily-consolidation/2026-05-26.md",
+        "reports/daily-consolidation/2026-06-08-handoff.json",
+        "reports/memory-hygiene/2026-06-02.json",
+        "reports/memory-hygiene/2026-06-03.json",
+        "reports/memory-hygiene/2026-06-05.json",
+        "reports/memory-hygiene/2026-06-06.json",
+        "reports/memory-hygiene/2026-06-07.json",
+        "reports/memory-hygiene/latest.json"
+      ],
+      "score": 29,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "mcp-tooling-activation-governance",
+      "title": "MCP / Tooling Activation Governance",
+      "owner_area": "areas/operacoes",
+      "suggested_hubs": [
+        "areas/operacoes/projetos/mcp-tooling-activation-governance"
+      ],
+      "existing_hubs": [
+        "areas/operacoes/projetos/mcp-tooling-activation-governance"
+      ],
+      "wave": 13,
+      "risk": "configured_mcp_or_tooling_mistaken_for_available_authorized_tool_risk",
+      "owner_file_count": 446,
+      "term_hit_files": 214,
+      "sample_artifacts": [
+        "AGENTS.md",
+        "CHANGELOG.md",
+        "receipts/hermes-v016-next-adoption-packet-receipt-2026-06-06.md",
+        "receipts/hermes-v016-adoption-os-local-docs-receipt-2026-06-06.md",
+        "receipts/hermes-v016-track1-track2-receipt-2026-06-06.md",
+        "receipts/hermes-v016-release-adoption-verification-2026-06-06.md",
+        "reports/hermes-host-docker-observability-2026-06-05.json",
+        "reports/hermes-host-docker-observability-2026-05-31.json",
+        "reports/cwc-vs-hermes-analysis.md",
+        "reports/lk-growth-readonly-ads-pulse-2026-05-30.md",
+        "reports/daily-consolidation/2026-06-02.md",
+        "reports/daily-consolidation/2026-05-27.md",
+        "reports/daily-consolidation/2026-05-23.md",
+        "reports/hermes-release-catchup-2026-05-10/v2026.4.30.md",
+        "reports/hermes-release-catchup-2026-05-10/v2026.5.7.md",
+        "reports/hermes-release-catchup-2026-05-10/action-matrix.md",
+        "reports/hermes-release-catchup-2026-05-10/index.json",
+        "reports/hermes-release-catchup-2026-05-10/v2026.4.23.md",
+        "reports/hermes-continuous-improvement/2026-05-29.md",
+        "reports/hermes-continuous-improvement/2026-05-16.md",
+        "reports/lk-weekly-creative-audit-2026-05-09/creative-audit-output.json",
+        "reports/cron-audits/brain-02h-cron-review-2026-05-20.md",
+        "reports/cron-audits/brain-02h-cron-prompt-backup-2026-05-20.txt",
+        "reports/governance/mesa-coo-fechamento-23h-date-convention-fix-2026-05-23.md",
+        "reports/governance/daily-intelligence-loop-hardening-2026-06-08.md",
+        "reports/governance/auditoria-completa-governanca-organograma-hermes-vs-amora-2026-05-26.md",
+        "reports/governance/hermes-v016-release-adoption-prd-2026-06-06.md",
+        "reports/governance/hermes-v016-adoption-matrix-2026-06-06.md",
+        "reports/governance/hermes-v016-profile-toolset-readonly-audit-2026-06-06.json",
+        "reports/governance/lk-three-agent-temporary-workers-runtime-audit-2026-06-06.md"
+      ],
+      "score": 27,
+      "recommendation": "monitor_or_refine_existing_hub"
+    },
+    {
+      "id": "profile-channel-runtime-inventory",
+      "title": "Hermes Profile / Channel Runtime Inventory",
+      "owner_area": "areas/operacoes",
+      "suggested_hubs": [
+        "areas/operacoes/projetos/profile-channel-runtime-inventory"
+      ],
+      "existing_hubs": [
+        "areas/operacoes/projetos/profile-channel-runtime-inventory"
+      ],
+      "wave": 13,
+      "risk": "documented_profile_or_channel_state_confused_with_live_runtime_activation_risk",
+      "owner_file_count": 446,
+      "term_hit_files": 23,
+      "sample_artifacts": [
+        "CHANGELOG.md",
+        "receipts/hermes-dashboard-bridge-hermes-lucascimino-com-receipt-2026-06-06.md",
+        "reports/lk-growth-readonly-ads-pulse-2026-05-30.md",
+        "reports/governance/hermes-dashboard-bridge-hermes-lucascimino-com-approval-packet-2026-06-06.md",
+        "reports/governance/hermes-memory-reaudit-bruno-docs-2026-06-01.md",
+        "reports/governance/hermes-agents-parallel-maturity-audit-20260610.md",
+        "reports/governance/lk-ops-runtime-repair-receipt-2026-05-27.md",
+        "empresa/rotinas/_index.md",
+        "memories/pending.md",
+        "memories/current.md",
+        "areas/operacoes/MAPA.md",
+        "areas/operacoes/rotinas/configured-vs-active-scorecard.md",
+        "areas/operacoes/rotinas/runtime-profile-channel-inventory-2026-05-19.md",
+        "areas/operacoes/projetos/mission-control-reconciliation-pointer-2026-05-19.md",
+        "areas/operacoes/projetos/mission-control-mesa-coo-alignment-2026-05-19.md",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/DECISIONS_AND_GUARDRAILS.md",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/README.md",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/ARTIFACT_INDEX.md",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/TIMELINE.md",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/manifest.json",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/NEXT_STEPS.md",
+        "areas/operacoes/projetos/profile-channel-runtime-inventory/CURRENT_STATE.md",
+        "agentes/mordomo/MEMORY.md"
+      ],
+      "score": 19,
       "recommendation": "monitor_or_refine_existing_hub"
     }
   ]

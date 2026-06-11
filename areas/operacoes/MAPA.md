@@ -172,3 +172,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `projetos/governance-receipts-memory-backups/` — hub canônico Brain OS Onda 11 para receipts de governança, backups de memória e evidência de health/docs guard.
 - `projetos/hermes-execution-scripts-archive/` — hub canônico Brain OS Onda 12 para scripts one-off/utilitários, separando histórico de rotina viva.
 - `projetos/repo-hygiene-artifact-retention/` — hub canônico Brain OS Onda 12 para governança de artefatos não rastreados, temporários, retenção e cleanup seguro.
+- `projetos/profile-channel-runtime-inventory/` — hub canônico Brain OS Onda 13 para inventário de profiles, canais, bots, gateway, toolsets e separação configured/documented/active/verified.
+- `projetos/doppler-secrets-operations-ledger/` — hub canônico Brain OS Onda 13 para política Doppler-first, presença/ausência sanitizada de secrets e injeção runtime sem expor valores.
+- `projetos/mcp-tooling-activation-governance/` — hub canônico Brain OS Onda 13 para MCP/tooling, separando configuração, descoberta, toolset exposto e autorização de uso.
+- `projetos/telegram-delivery-ux-governance/` — hub canônico Brain OS Onda 13 para alertas Telegram, silent-OK, Decision Inbox e qualidade de entrega executiva.

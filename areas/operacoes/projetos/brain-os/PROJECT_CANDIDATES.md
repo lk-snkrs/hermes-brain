@@ -117,3 +117,10 @@ Observação: o candidato do scanner `mission-control-mesa-coo` foi separado em 
 - `areas/lk/projetos/shopify-theme-backups-archive/` — LK Shopify Theme Backups Archive.
 - `areas/operacoes/projetos/hermes-execution-scripts-archive/` — Hermes Execution Scripts Archive.
 - `areas/operacoes/projetos/repo-hygiene-artifact-retention/` — Brain Repo Hygiene / Artifact Retention.
+
+## Onda 13 — executada localmente em 2026-06-11
+
+- `areas/operacoes/projetos/profile-channel-runtime-inventory/` — Hermes Profile / Channel Runtime Inventory.
+- `areas/operacoes/projetos/doppler-secrets-operations-ledger/` — Doppler / Secrets Operations Ledger.
+- `areas/operacoes/projetos/mcp-tooling-activation-governance/` — MCP / Tooling Activation Governance.
+- `areas/operacoes/projetos/telegram-delivery-ux-governance/` — Telegram Delivery / UX Governance.
