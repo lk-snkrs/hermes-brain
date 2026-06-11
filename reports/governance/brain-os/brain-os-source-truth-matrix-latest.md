@@ -1,0 +1,80 @@
+# Brain OS Source-of-Truth Matrix
+
+- Generated at: `2026-06-11T14:32:56.934826+00:00`
+- Hubs: `56`
+
+## Domain counts
+- `Chatwoot`: 2
+- `Cron`: 26
+- `Docker`: 9
+- `Doppler`: 6
+- `GMC`: 8
+- `GitHub`: 4
+- `Klaviyo`: 4
+- `LK`: 36
+- `Meta`: 12
+- `SPITI`: 6
+- `Shopify`: 25
+- `Supabase`: 1
+- `Tiny`: 12
+- `VPS`: 9
+- `WhatsApp`: 12
+- `Zipper`: 5
+
+## Hubs requiring live source / approval guard
+- `areas/lk/projetos/approval-learning-ledger` — domains=['LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/projetos/data-quality-layer` — domains=['Tiny', 'Shopify', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/projetos/lk-operating-system` — domains=['Tiny', 'Shopify', 'Meta', 'Klaviyo', 'WhatsApp', 'Cron', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/projetos/reporting-briefings` — domains=['WhatsApp', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/projetos/sales-reports-ledger` — domains=['WhatsApp', 'Cron', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/projetos/shopify-theme-backups-archive` — domains=['Shopify', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/atendimento/projetos/chatwoot` — domains=['Tiny', 'Shopify', 'Meta', 'Chatwoot', 'WhatsApp', 'Doppler', 'VPS', 'Docker', 'Cron', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/atendimento/projetos/whatsapp-integration-platform` — domains=['Chatwoot', 'WhatsApp', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/collection-optimizer/projetos/collection-sort-automation` — domains=['Shopify', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/collection-optimizer/projetos/editorial-collection-guides` — domains=['Shopify', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/collection-optimizer/projetos/lkgoc-collection-optimizer` — domains=['Shopify', 'GMC', 'Meta', 'GitHub', 'VPS', 'Docker', 'Cron', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/collection-optimizer/projetos/lkgoc-evidence-workbench` — domains=['LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/content/projetos/lk-content-klaviyo-agent` — domains=['Shopify', 'Klaviyo', 'WhatsApp', 'Cron', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/crm/projetos/recovery-os` — domains=['Tiny', 'Shopify', 'Meta', 'Klaviyo', 'WhatsApp', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/ecommerce/projetos/orders-checkout` — domains=['Tiny', 'Shopify', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/growth/projetos/gmc-merchant-center` — domains=['Shopify', 'GMC', 'Meta', 'GitHub', 'VPS', 'Docker', 'Cron', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/growth/projetos/growth-evidence-ledger` — domains=['Shopify', 'GMC', 'Meta', 'Klaviyo', 'Doppler', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/growth/projetos/rewards-loyalty-trust` — domains=['LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/growth/projetos/seo-cro-weekly-improvement` — domains=['Shopify', 'GMC', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/growth/projetos/shopify-growth-os` — domains=['Shopify', 'GMC', 'Meta', 'VPS', 'Docker', 'Cron', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/growth/projetos/source-pages-geo-experiments` — domains=['Shopify', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/growth/projetos/theme-cro-performance` — domains=['Shopify', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/shopify/projetos/catalog-badges-sync` — domains=['Shopify', 'Meta', 'Cron', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/shopify/projetos/product-upload-bot` — domains=['Tiny', 'Shopify', 'Meta', 'Cron', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/stock/projetos/pronta-entrega-pos` — domains=['Tiny', 'Shopify', 'VPS', 'Docker', 'Cron', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/stock/projetos/sourcing-pricing-size-governance` — domains=['Tiny', 'Shopify', 'GMC', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/stock/projetos/sourcing-procurement-os` — domains=['WhatsApp', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/stock/projetos/stock-approval-packets-ledger` — domains=['Tiny', 'Shopify', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/stock/projetos/stockout-recompra-router` — domains=['Tiny', 'WhatsApp', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/stock/projetos/supplier-quote-approval-flow` — domains=['LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/stock/projetos/tiny-estoque-source-of-truth` — domains=['Tiny', 'Shopify', 'GMC', 'GitHub', 'VPS', 'Docker', 'Cron', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/trafego-pago/projetos/meta-ads-performance` — domains=['Meta', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/trafego-pago/projetos/paid-attribution-influencer-intelligence` — domains=['Meta', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/lk/sub-areas/trends/projetos/sourcing-intelligence` — domains=['Shopify', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/brain-fonte-viva-data-governance` — domains=['Tiny', 'Shopify', 'GMC', 'Cron']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/cron-control-plane` — domains=['Cron']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/doppler-secrets-operations-ledger` — domains=['Doppler', 'Cron']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/executive-dashboards` — domains=['LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/governance-receipts-memory-backups` — domains=['Cron']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/hermes-execution-scripts-archive` — domains=['Doppler', 'Cron']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/hermes-kanban-command-center` — domains=['Doppler', 'Cron', 'SPITI', 'Zipper']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/hermes-runtime-observability` — domains=['VPS', 'Docker', 'Cron']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/mcp-tooling-activation-governance` — domains=[]; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/memory-os` — domains=['GitHub', 'VPS', 'Docker', 'Cron']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/mesa-coo` — domains=['WhatsApp']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/mission-control` — domains=[]; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/mordomo-os` — domains=['VPS', 'Docker', 'Cron', 'LK']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/profile-channel-runtime-inventory` — domains=['Cron']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/repo-hygiene-artifact-retention` — domains=[]; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/telegram-delivery-ux-governance` — domains=['Cron']; live_source_required=True; approval_required_for_writes=True
+- `areas/operacoes/projetos/webhooks-to-brain-ingestion` — domains=['Shopify', 'Doppler', 'Cron']; live_source_required=True; approval_required_for_writes=True
+- `areas/spiti/projetos/auction-operations` — domains=['Cron', 'SPITI', 'Zipper']; live_source_required=True; approval_required_for_writes=True
+- `areas/spiti/projetos/bridge-governance` — domains=['Meta', 'Supabase', 'SPITI']; live_source_required=True; approval_required_for_writes=True
+- `areas/zipper/projetos/cron-readiness-control` — domains=['WhatsApp', 'Cron', 'SPITI', 'Zipper']; live_source_required=True; approval_required_for_writes=True
+- `areas/zipper/projetos/email-crm-intake` — domains=['WhatsApp', 'SPITI', 'Zipper']; live_source_required=True; approval_required_for_writes=True
+- `areas/zipper/projetos/followup-decision-inbox` — domains=['Cron', 'SPITI', 'Zipper']; live_source_required=True; approval_required_for_writes=True
