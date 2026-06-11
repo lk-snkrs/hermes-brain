@@ -1,6 +1,6 @@
 # Brain OS Source-of-Truth Matrix
 
-- Generated at: `2026-06-11T14:32:56.934826+00:00`
+- Generated at: `2026-06-11T14:45:46.679766+00:00`
 - Hubs: `56`
 
 ## Domain counts

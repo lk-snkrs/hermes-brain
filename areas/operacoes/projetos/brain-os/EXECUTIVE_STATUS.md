@@ -1,6 +1,6 @@
 # Brain OS — Executive Status
 
-**Atualizado em:** 2026-06-11T14:32:58.676915+00:00
+**Atualizado em:** 2026-06-11T14:45:48.125105+00:00
 **Audiência:** Lucas / Hermes default / especialistas
 **Modo:** status documental automático, local/read-only.
 **Fonte principal:** scanner v2 + health audit + manifests locais.
@@ -62,10 +62,10 @@ Brain OS está operacional e versionado; o foco passou de criar hubs para maturi
 ## Scanner — cobertura e lacunas
 
 - **Relatório:** `reports/governance/brain-os/brain-os-candidates-latest.json`
-- **Gerado em:** 2026-06-11T14:32:56.588999+00:00
+- **Gerado em:** 2026-06-11T14:45:46.446201+00:00
 - **Versão:** brain-os-v2
 - **Política de classificação:** brain-os-artifact-classification-v1
-- **Arquivos texto escaneados:** 1044
+- **Arquivos texto escaneados:** 1047
 - **Candidatos:** 53
 - **Candidatos sem hub vivo:** 1
 - **Manifest class counts:** `{'hub_manifest': 55, 'artifact_manifest': 1}`
