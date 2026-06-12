@@ -1,5 +1,18 @@
 # AGENTS — LK Growth OS
 
+## Regra obrigatória — LK Stock é o único dono de consulta de estoque
+
+Quando qualquer tarefa envolver estoque da LK — estoque, disponibilidade, pronta entrega, “tem na loja?”, grade/tamanho disponível, ruptura, baixo estoque, reposição, transferência, compra, SKU/Tiny/Shopify divergente ou qualquer pergunta operacional de disponibilidade — este agente **não deve consultar estoque diretamente** em Tiny, Shopify, DB local, planilha, relatório antigo ou cache próprio.
+
+Fluxo obrigatório:
+1. Coletar apenas o contexto mínimo: produto/modelo, SKU, tamanho/variante, canal/origem e urgência.
+2. Solicitar a validação ao `[LK] Estoque Loja Física` / `lk-stock` ou registrar handoff em `areas/lk/sub-areas/stock/`.
+3. Usar somente a resposta/evidência retornada pelo `lk-stock` para atendimento, relatório, campanha, sourcing, reposição ou decisão.
+4. Se `lk-stock` não retornar evidência suficiente, responder “não confirmado” e pedir reconciliação; nunca prometer disponibilidade.
+
+Exceção: o próprio perfil `lk-stock` pode consultar a Stock OS DB local primeiro e fazer fallback/reconciliação conforme sua política. Para todos os outros agentes, a regra é delegar ao `lk-stock`.
+
+
 ## PRD → Superpowers obrigatório
 
 Todo pedido de PRD, documento de requisitos, especificação de produto, roadmap/spec ou plano de produto deve carregar e seguir a skill `superpowers` antes de escrever. Combine Superpowers com as skills de domínio/roteamento deste agente, preserve guardrails e inclua riscos, critérios de aceite e plano de verificação.

@@ -1,5 +1,18 @@
 # [LC] Claude Cli — Regras do agente/profile
 
+## Regra obrigatória — LK Stock é o único dono de consulta de estoque
+
+Quando qualquer tarefa envolver estoque da LK — estoque, disponibilidade, pronta entrega, “tem na loja?”, grade/tamanho disponível, ruptura, baixo estoque, reposição, transferência, compra, SKU/Tiny/Shopify divergente ou qualquer pergunta operacional de disponibilidade — este agente **não deve consultar estoque diretamente** em Tiny, Shopify, DB local, planilha, relatório antigo ou cache próprio.
+
+Fluxo obrigatório:
+1. Coletar apenas o contexto mínimo: produto/modelo, SKU, tamanho/variante, canal/origem e urgência.
+2. Solicitar a validação ao `[LK] Estoque Loja Física` / `lk-stock` ou registrar handoff em `areas/lk/sub-areas/stock/`.
+3. Usar somente a resposta/evidência retornada pelo `lk-stock` para atendimento, relatório, campanha, sourcing, reposição ou decisão.
+4. Se `lk-stock` não retornar evidência suficiente, responder “não confirmado” e pedir reconciliação; nunca prometer disponibilidade.
+
+Exceção: o próprio perfil `lk-stock` pode consultar a Stock OS DB local primeiro e fazer fallback/reconciliação conforme sua política. Para todos os outros agentes, a regra é delegar ao `lk-stock`.
+
+
 Status: profile preparado; runtime CLI configurado para Claude proxy. Gateway/Telegram dedicado depende de token/canal e ativação explícita.
 
 ## PRD → Superpowers obrigatório

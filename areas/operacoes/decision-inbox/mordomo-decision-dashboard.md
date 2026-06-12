@@ -1,11 +1,11 @@
-# Mordomo Decision Dashboard — 10/06/2026 17:00 BRT
+# Mordomo Decision Dashboard — 11/06/2026 17:00 BRT
 
 ## Saúde executiva
-- Decisões abertas: 17
-- Follow-ups operacionais próximos: 18
+- Decisões abertas: 20
+- Follow-ups operacionais próximos: 16
 - Ações enviadas hoje: 0
 - Ruídos segurados na amostra: 8
-- Cliques de botão registrados na amostra: 7
+- Cliques de botão registrados na amostra: 8
 
 ## Top decisões
 1. Rafaela Rocha — Rodrigo Braga — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
