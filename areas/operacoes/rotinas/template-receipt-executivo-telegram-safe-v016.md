@@ -75,6 +75,14 @@ Escopo autorizado:
 ## Próximo passo
 
 - [ação/decisão]
+
+## Reminder OS
+
+- Reminder OS loop needed: yes/no
+- Reminder OS owner:
+- Reminder OS next action:
+- Reminder OS review trigger:
+- Reminder OS evidence:
 ```
 
 ## Checklist antes de enviar Telegram
@@ -84,4 +92,5 @@ Escopo autorizado:
 - [ ] A mensagem evita wrapper, JSON bruto, job_id, stack trace e logs longos?
 - [ ] O receipt completo ficou no Brain?
 - [ ] O receipt novo foi criado pelo wrapper v1.5 ou teve hook Memory OS executado?
+- [ ] Se há próximo passo aberto, existe campo Reminder OS ou loop criado/encaminhado?
 - [ ] OK rotineiro ficou silencioso?

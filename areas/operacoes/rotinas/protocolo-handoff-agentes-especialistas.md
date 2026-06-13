@@ -131,4 +131,30 @@ Antes de declarar uma rotina ou especialista “operacional”, verificar:
 - existe regra de autonomia;
 - existe rota de handoff para o Hermes Central;
 - existe local no Brain para receipts/outputs;
-- existe fechamento diário ou equivalente.
+- existe fechamento diário ou equivalente;
+- existe **handoff funcional**, não só arquivo passivo.
+
+## Definição de handoff funcional
+
+Um handoff só funciona quando cria uma ponte acionável entre quem executou e quem precisa continuar. Portanto, todo handoff material deve ter:
+
+1. owner/dono explícito do próximo passo;
+2. próxima ação concreta, não apenas “acompanhar” ou “aguardar”;
+3. gatilho de revisão: data/hora, evento esperado, resposta de outro agente, métrica ou condição;
+4. evidência/artefato verificável;
+5. status e writes externos declarados;
+6. `Reminder OS loop needed: yes/no`;
+7. se `yes`, preencher owner, next action, review trigger e evidence;
+8. hook local executado:
+
+```bash
+python3 /opt/data/scripts/hermes_memory_os_event_hook.py <caminho-do-handoff> --event-type handoff
+```
+
+Anti-padrão que Lucas reportou: agente “faz handoff” criando um `.md`, mas ninguém consome, não há gatilho, não há Reminder OS e o próximo dono não é acionado. Isso é handoff documental, não operacional.
+
+Auditoria local:
+
+```bash
+python3 /opt/data/scripts/handoff_functionality_audit.py --days 2 --write-report
+```

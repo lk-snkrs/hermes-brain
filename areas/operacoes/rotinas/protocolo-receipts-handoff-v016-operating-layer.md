@@ -49,6 +49,11 @@ Fontes/evidências:
 Artefatos gerados:
 O que não foi feito:
 Próximo passo:
+Reminder OS loop needed: yes/no
+Reminder OS owner:
+Reminder OS next action:
+Reminder OS review trigger:
+Reminder OS evidence:
 ```
 
 ### R2 — Handoff especialista → Hermes Central
@@ -74,6 +79,11 @@ Writes externos:
 Riscos/bloqueios:
 Onde foi documentado no Brain:
 Próximo passo:
+Reminder OS loop needed: yes/no
+Reminder OS owner:
+Reminder OS next action:
+Reminder OS review trigger:
+Reminder OS evidence:
 ```
 
 ### R3 — Receipt com rollback
@@ -228,5 +238,6 @@ Antes de chamar uma frente de “operante”, verificar:
 - [ ] writes externos têm approval + rollback + readback;
 - [ ] secrets não aparecem;
 - [ ] próximo passo humano ou automático está claro;
+- [ ] se o próximo passo ficou aberto, existe bloco Reminder OS ou loop criado/encaminhado;
 - [ ] aprendizado recorrente virou rotina/skill quando aplicável;
 - [ ] receipt operacional novo foi criado via `receipt_writer`; se já existia, foi registrado via `receipt_writer --register-existing`; hook-only em receipt novo não é fechamento válido.

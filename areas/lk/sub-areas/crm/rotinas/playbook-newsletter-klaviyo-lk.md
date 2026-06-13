@@ -142,7 +142,7 @@ Registrar no Brain:
 
 ### Aprendizado vivo — campanha giftable / compra por tamanho
 
-Evidência 24h da campanha `2026-06-09 | Dia dos Namorados | Gifts by LK | 15% off pronta entrega`: quando a peça oferece coleção presenteável + navegação por tamanho, a maior parte do clique tende a ir para a coleção/filtros de tamanho, não necessariamente para produtos individuais. Para próximas campanhas giftable, tratar `compra por tamanho` como CTA/UX forte, mas acompanhar se o clique vira pedido; se receita ficar zerada, testar follow-up segmentado para `clicked/no purchase` com curadoria mais fechada por faixa de tamanho e não só landing ampla. Confiança: média, baseada em 1 campanha/24h.
+Evidência final 72h da campanha `2026-06-09 | Dia dos Namorados | Gifts by LK | 15% off pronta entrega`: quando a peça oferece coleção presenteável + navegação por tamanho, a maior parte do clique tende a ir para a coleção/filtros de tamanho, não necessariamente para produtos individuais. Resultado final Klaviyo com métrica correta `Placed Order` / Shopify: 54,05% open rate, 1,39% click rate, 2,57% click-to-open, 1 pedido atribuído e R$ 2.280,00; os top cliques foram tamanho 37, coleção giftable e tamanho 36. Para próximas campanhas giftable, tratar `compra por tamanho` como CTA/UX forte no hero, mas reduzir dispersão pós-clique com produto-âncora + curadoria por faixa/numeração. Desconto deve ser suporte, não narrativa principal. Nunca diagnosticar ecommerce como zerado sem checar métricas duplicadas por integração; nunca prometer pronta entrega/envio/tamanho disponível sem validação `lk-stock`. Confiança: média-alta, baseada em 1 campanha/72h com leitura Klaviyo corrigida.
 
 ## Exemplo — Samba Jane
 

@@ -107,6 +107,8 @@ Regra estrutural aprovada por Lucas em 2026-05-19:
 - Trabalho relevante feito em `lk-growth`, Mordomo, SPITI, Zipper ou outro especialista deve gerar handoff para o Hermes Central e/ou registro no Brain.
 - O registro não precisa ser instantâneo em toda tarefa, mas deve existir até o fechamento do dia quando houver decisão, output, envio, approval, receipt, write externo, risco ou aprendizado.
 - Protocolo canônico: `areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md`.
+- Handoff funcional ≠ arquivo `.md` passivo. Deve ter owner explícito, próxima ação concreta, gatilho de revisão, evidência, status/writes, campos Reminder OS quando houver loop aberto e hook local executado (`hermes_memory_os_event_hook.py --event-type handoff`).
+- Se o próximo dono não receber/descobrir/ter gatilho para agir, o handoff falhou mesmo que esteja documentado.
 
 ## PRD → Superpowers obrigatório
 
@@ -207,4 +209,14 @@ Padrão Lucas: usar **Playwright/CDP primeiro** para tarefas normais. Usar `http
 - Handoffs e approval packets continuam usando `/opt/data/scripts/hermes_memory_os_event_hook.py`.
 - O checker do Memory OS roda em cron a cada 30min, tenta auto-heal local primeiro e só alerta Lucas no Telegram quando corrigiu problema ou quando precisa de decisão humana.
 - Mission Control não é superfície operacional do Memory OS; não propor/ativar deploy/card/runtime Mission Control para este fluxo.
+
+## Reminder OS v0 — todos agentes e workers
+
+- Reminder OS é a camada de continuidade operacional anti-stand-by: quando um trabalho relevante não fecha no turno atual, ele deve virar loop com dono, próximo passo e gatilho de retomada.
+- Todo agente/worker deve registrar ou encaminhar loop Reminder OS para itens em stand-by, `waiting_lucas`, `waiting_event`, review futuro, bloqueio por approval/dados/especialista, ou construção parcialmente pronta.
+- Fonte documental: `areas/operacoes/reminder-os/` e rotina `areas/operacoes/rotinas/reminder-os-v0-2026-06-12.md`.
+- Superfície operacional: estrutura nativa Hermes Agent — agents/profiles, Brain, Kanban, cron/watchdog e ledger local. Mission Control fica fora do Reminder OS.
+- Board operacional: Kanban `reminder-os`. O board governa o sistema; não autoriza execução externa.
+- Watchdog aprovado: `/opt/data/scripts/reminder_os_watchdog.py`, cron a cada 2h, silent-OK; Telegram só para loop acionável.
+- Reminder OS não substitui approval gates: writes externos/prod/infra/secrets continuam bloqueados sem aprovação escopada, backup/rollback e verificação.
 

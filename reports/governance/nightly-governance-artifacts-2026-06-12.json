@@ -2,11 +2,11 @@
   "checker": "hermes_nightly_governance_artifacts_check.py",
   "daily_intelligence": {
     "exists": true,
-    "latest_path": "reports/hermes-continuous-improvement/2026-06-11.md",
-    "size_chars": 3007
+    "latest_path": "reports/hermes-continuous-improvement/2026-06-12.md",
+    "size_chars": 3239
   },
   "findings": [],
-  "generated_at_utc": "2026-06-12T04:09:23.982860+00:00",
+  "generated_at_utc": "2026-06-12T05:31:11.014553+00:00",
   "handoff": {
     "exists": true,
     "missing_fields": [],
@@ -17,8 +17,8 @@
   },
   "learning_ledger": {
     "exists": true,
-    "latest_path": "reports/hermes-learning-ledger/2026-06-11.md",
-    "size_chars": 1148
+    "latest_path": "reports/hermes-learning-ledger/2026-06-12.md",
+    "size_chars": 1430
   },
   "memory_hygiene": {
     "exists": true,
@@ -37,6 +37,6 @@
     },
     "valid_json": true
   },
-  "mode": "check",
+  "mode": "digest",
   "status": "ok"
 }

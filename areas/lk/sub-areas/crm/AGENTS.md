@@ -72,3 +72,22 @@ Não transformar em burocracia: sem design longo para tarefa trivial, sem spam n
 - O checker do Memory OS roda em cron a cada 30min, tenta auto-heal local primeiro e só alerta Lucas no Telegram quando corrigiu problema ou quando precisa de decisão humana.
 - Mission Control não é superfície operacional do Memory OS; não propor/ativar deploy/card/runtime Mission Control para este fluxo.
 
+## Reminder OS — handoff funcional
+
+Todo agente/profile que encerra trabalho relevante deve deixar continuidade operacional, não apenas arquivo passivo. Se o trabalho não fechou no turno atual, registrar ou encaminhar loop para o Reminder OS com:
+
+- `Reminder OS loop needed: yes/no`;
+- owner/dono explícito;
+- próxima ação concreta;
+- gatilho de revisão/data/evento;
+- evidência verificável;
+- status e writes externos declarados.
+
+Handoff funcional exige hook local:
+
+```bash
+python3 /opt/data/scripts/hermes_memory_os_event_hook.py <caminho-do-handoff> --event-type handoff
+```
+
+Se `loop needed: yes`, o item precisa estar coberto no ledger `areas/operacoes/reminder-os/reminders.jsonl` ou aparecer como blocker no health/ingress audit. Se `loop needed: no`, explicar por que o ciclo está fechado. Regra: se outro agente não consegue retomar sem contexto de chat, o handoff falhou.
+

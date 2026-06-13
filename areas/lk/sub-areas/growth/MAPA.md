@@ -72,6 +72,7 @@ Antes de declarar um diagnóstico de Growth completo, verificar os 18 tópicos e
 - `rotinas/` — rotinas operacionais.
 - `rotinas/growth-decision-router.md` — matriz de decisão para escolher GA4/GSC/GMC/Shopify/CRO/GEO/Ads/Blog/DataForSEO por sintoma.
 - `rotinas/growth-d7-review-digest-ledger.md` — rotina local para consolidar reviews D+7 em digest/ledger antes de qualquer mudança de cron ou entrega.
+- `rotinas/lk-growth-impact-review-readonly-prewrite-gate-2026-06-12.md` — gate aprovado por Lucas: impact review read-only obrigatório antes de novos writes Growth relacionados a mudanças já aplicadas.
 - `rotinas/dataforseo-mcp-reload-approval-2026-05-19.md` — approval packet para expor DataForSEO MCP no runtime ativo sem violar guardrails de VPS/Hermes.
 - `templates/growth-audit-output-template.md` — template padrão de auditoria Growth com fatos, interpretação, recomendação, approval packet, rollback e review de impacto.
 - `templates/index-playbooks-lk-growth-20260605.md` — playbooks práticos LK Growth para Weekly Command Center, GMC/Product Data, SEO/GEO não-LKGOC, CRO/PDP handoff e Impact Review.

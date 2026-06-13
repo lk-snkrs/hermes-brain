@@ -339,3 +339,12 @@ Tipo: padrão aprovado + regra de execução.
 Lucas aprovou finalizar o Approval Manager como parte do LK OS. O padrão correto é: regras-mestre + ledger auditável + router de aprovação + testes de regressão + superfície no Mission Control. Políticas soltas em Markdown não bastam quando a regra precisa governar ações futuras.
 
 Artefato: `areas/lk/rotinas/lk-os-approval-manager-v1-2026-05-15.md`.
+
+## 2026-06-12 — “Fazer tudo” com escopo limitado
+
+Tipo: correção aprovada + regra de aprovação.
+
+Lucas aprovou transformar a interpretação de “Fazer tudo” em regra oficial: frase ampla de continuidade só herda o pacote seguro já aprovado. Não autoriza novos campos, novos alvos, preço, estoque, cliente/fornecedor, Tiny/Shopify fora do campo aprovado, campanhas/envios, produção/infra/runtime, banco, cron, secrets ou integrações.
+
+Artefato: `areas/lk/rotinas/lk-os-fazer-tudo-scope-limited-approval-guardrail-2026-06-12.md`.
+Status: `active_rule_verified`; external writes `0`.

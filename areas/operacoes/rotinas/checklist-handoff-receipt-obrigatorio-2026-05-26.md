@@ -33,6 +33,8 @@ Registrar no Brain quando houver qualquer um destes casos:
 - Readback/verificação.
 - Rollback.
 - Próximo passo.
+- Reminder OS loop needed: yes/no.
+- Reminder OS owner, next action, review trigger e evidence quando o próximo passo ficar aberto.
 
 ## Regra por risco
 
@@ -87,6 +89,30 @@ Critério de fechamento: se o registro criado for receipt operacional novo, deve
 
 Usar também `areas/operacoes/rotinas/ledger-handoff-especialistas-diario.md` como índice operacional por especialista. O ledger não é cron ativo por si só; é a rotina documental para consolidar outputs materiais sem transformar todo silent-OK em ruído no Telegram.
 
+## Handoff funcional — gate obrigatório
+
+Um handoff não pode ser tratado como “funcionando” só porque existe um arquivo `.md`. Para ser funcional, deve cumprir o contrato:
+
+- owner/dono explícito;
+- próxima ação concreta;
+- trigger de revisão;
+- evidência verificável;
+- status + writes externos;
+- campos Reminder OS preenchidos ou `loop needed: no` justificado;
+- hook local executado para Memory OS/Brain routing:
+
+```bash
+python3 /opt/data/scripts/hermes_memory_os_event_hook.py <caminho-do-handoff> --event-type handoff
+```
+
+Validação local:
+
+```bash
+python3 /opt/data/scripts/handoff_functionality_audit.py --days 2 --write-report
+```
+
+Se a auditoria marcar `missing_owner_action`, `missing_reminder_fields` ou `missing_core`, o handoff é documental/passivo e deve ser corrigido antes de afirmar que o agente transferiu a bola.
+
 ## Anti-padrões
 
 - “Feito” sem readback.
@@ -96,3 +122,4 @@ Usar também `areas/operacoes/rotinas/ledger-handoff-especialistas-diario.md` co
 - Write externo sem receipt.
 - Receipt operacional novo escrito manualmente sem `receipt_writer`, salvo exceção registrada e hook executado.
 - Relatório no Telegram com job id, JSON, wrapper ou metadado técnico.
+- Próximo passo aberto sem campo Reminder OS ou sem loop/handoff equivalente.

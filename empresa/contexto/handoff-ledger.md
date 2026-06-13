@@ -49,6 +49,11 @@ Não registrar ruído operacional sem decisão, sucesso silencioso, checks saud�
 - Writes externos: sim/não
 - Risco/bloqueio:
 - Próximo passo:
+- Reminder OS loop needed: yes/no
+- Reminder OS owner:
+- Reminder OS next action:
+- Reminder OS review trigger:
+- Reminder OS evidence:
 ```
 
 ## Regras
@@ -58,6 +63,7 @@ Não registrar ruído operacional sem decisão, sucesso silencioso, checks saud�
 3. Se o handoff envolve produção ou cliente, incluir rollback/receipt ou dizer explicitamente que não houve write.
 4. Se a ação foi só local/read-only, declarar `Writes externos: não`.
 5. Se for recurring/silent-OK, registrar apenas exceção, falha ou decisão necessária.
+6. Se `Próximo passo` não estiver fechado no próprio ciclo, preencher os campos Reminder OS ou criar/encaminhar loop com dono, próxima ação, gatilho e evidência. O Reminder OS não autoriza execução; só preserva continuidade.
 
 ## Relação com Task Router
 

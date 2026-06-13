@@ -9,8 +9,8 @@ Materializei o Approval Manager em SQLite local e Brain: agora os gates principa
 
 ## Snapshot
 
-- Regras ativas: `6`
-- Regras que exigem aprovação: `5`
+- Regras ativas: `7`
+- Regras que exigem aprovação: `6`
 - Regras autônomas read-only/local: `1`
 - Backup local antes do write SQLite: `/opt/data/hermes_bruno_ingest/local_sql/lk_os_backups/lk_os_phase5_before_approval_manager_rules_v0_20260515T194739Z.sqlite`
 
@@ -63,6 +63,14 @@ Materializei o Approval Manager em SQLite local e Brain: agora os gates principa
 - Exige aprovação: `False`
 - Contrato de aprovação: Read-only/local/reversible data quality fixes may proceed; source-of-truth writes remain gated.
 - Exemplo: Tiny stock snapshot and lk_variant_commercial_state can update locally; final commercial action waits for coverage/approval.
+
+### LK-APPROVAL-BROAD-CONTINUATION-SCOPE-LIMIT-20260612
+
+- Domínio: `broad_continuation_approval`
+- Estado default: `scope_limited_to_prevalidated_safe_package`
+- Exige aprovação: `True`
+- Contrato de aprovação: “Fazer tudo” / `seguir tudo` / `continuar tudo` só continua o mesmo pacote seguro já aprovado. Qualquer novo campo, alvo, envio externo, preço, estoque, cliente, fornecedor, produção, infra, banco, cron, secret ou integração exige novo approval packet escopado.
+- Exemplo: LK Stock second pass continuou apenas SKU-only comprovável e manteve bloqueados alvos ambíguos.
 
 ## O que não foi feito
 

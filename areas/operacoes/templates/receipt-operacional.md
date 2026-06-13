@@ -20,6 +20,11 @@ Use para toda execução relevante feita por Hermes Central, profile especialist
 - Riscos/bloqueios:
 - Rollback/mitigação:
 - Próximos passos:
+- Reminder OS loop needed: yes/no
+- Reminder OS owner:
+- Reminder OS next action:
+- Reminder OS review trigger:
+- Reminder OS evidence:
 - Onde foi documentado no Brain:
 - Source confidence: runtime-verificado | fonte-primária | fonte-secundária | inferido | não-verificado
 ```
@@ -29,6 +34,7 @@ Use para toda execução relevante feita por Hermes Central, profile especialist
 - Ações externas, customer-facing, infra, campanha, preço, disponibilidade, reserva, negociação e fornecedor exigem aprovação ou fonte/escopo previamente autorizados.
 - Receipts devem ficar na área que executou: `areas/<empresa>/.../receipts/` ou `areas/operacoes/receipts/`.
 - Reports brutos podem ficar locais; receipts curados são artefatos de governança.
+- Se `Próximos passos` não estiver fechado, preencher o bloco Reminder OS ou criar/encaminhar loop com dono, próxima ação, gatilho e evidência. O Reminder OS não autoriza execução; ele só preserva continuidade.
 
 ## Memory OS hook obrigatório
 

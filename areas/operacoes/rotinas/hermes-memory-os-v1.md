@@ -172,7 +172,7 @@ Estado de ativação:
 ## Memory OS v1.20 — contrato anti-recorrência auto-heal
 
 - Auto-heal recorrente não deve virar normalidade invisível: se a mesma rota/reason cura `>= 3` vezes em 7 dias, registrar `auto-heal-generator-findings-latest.json` e corrigir o gerador local/documental quando seguro.
-- Rotas recorrentes atuais: adoption_auto_heal, generator_contract.
+- Rotas recorrentes atuais: adoption_auto_heal, daily_curator, generator_contract.
 - Escopo automático permitido: L0/L1 local/documental com backup/ledger/verificação; L2 requer aprovação; L3 é proibido automático.
 - Telegram permanece silencioso se o estado final ficou verde; alertar Lucas apenas quando sobrar problema acionável ou decisão L2.
 ## Memory OS v1.30 — Context Intelligence Layer
@@ -289,3 +289,11 @@ Estado de ativação:
 - `build_memory_os_qa_gate_plan` agora inclui os testes v2.1, v2.2 e v2.3 no plano.
 - `context-intelligence-latest.json` reporta `version=v2.3` e inclui `coverage_drift_matrix`, `receipt_writer_adoption_gate` e `memory_os_replay_simulator` em `deliveries`.
 - Regra de fechamento: sucesso só pode ser claimado após testes v1.20-v2.3, bootstrap, self-test silent-OK, contradiction scan, Brain health, docs guard e secret scan frescos.
+
+## Memory OS × Reminder OS v1 — continuidade de próximos passos
+
+- Quando Memory OS encontrar handoff/receipt/daily/hot com `Próximo passo` aberto, deve classificar se há loop Reminder OS necessário antes de encerrar o ciclo.
+- Spec canônica: `areas/operacoes/reminder-os/memory-os-integration-v1.md`.
+- Dedupe canônico: owner + next action + evidence; não criar duplicata para artefato já coberto por loop ativo.
+- Sucesso permanece silent-OK; criação de loop por si só não vira Telegram. Alerta só via watchdog/2h quando houver `waiting_lucas`, vencimento ou risco real.
+- Fase atual é documental/local: não muda hook Memory OS, cron, gateway, runtime, provider ou writes externos sem fase de ativação separada.

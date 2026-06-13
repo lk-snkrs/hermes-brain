@@ -100,3 +100,26 @@ Relatório origem: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-area
 - Não foi prometida disponibilidade.
 - Não foi alterado estoque/preço/produto/coleção.
 - Qualquer campanha `voltou ao estoque` ou `últimas unidades` depende de retorno do lk-stock/Tiny.
+
+## Backfill funcional — Handoff + Reminder OS (2026-06-12T19:01:04Z)
+
+- Agente/profile: Hermes Agent default / backfill local de handoff funcional
+- Pedido original: Corrigir handoffs recentes que estavam como documentação passiva, sem transferência operacional verificável.
+- Status: scheduled_check; handoff normalizado retroativamente para contrato funcional.
+- Fontes/evidência: `areas/lk/sub-areas/stock/handoffs/wishlist-stock-attention-20260611.md`; `reports/handoff-functionality/handoff-functionality-2026-06-12.json`; ledger Reminder OS quando aplicável.
+- Output artifact: este próprio handoff atualizado com bloco canônico de continuidade.
+- Aprovação Lucas: autorização explícita no Telegram — “CORRIGIR POR FAVOR” — limitada a correção local/documental e Reminder OS; sem aprovação para writes externos/runtime.
+- Writes externos: nenhum; 0 Shopify/Tiny/GMC/Klaviyo/Meta/WhatsApp/e-mail/prod/runtime writes.
+- Reminder OS loop needed: no
+- Reminder OS owner: [LK] Estoque / profile lk-stock
+- Reminder OS next action: Validar evidência read-only de estoque/disponibilidade usando Stock OS/Tiny conforme regra LK; devolver confirmado/não confirmado/divergente sem Shopify/Tiny writes.
+- Reminder OS review trigger: Revisar no próximo ciclo LK Stock ou quando Lucas pedir status de estoque/disponibilidade.
+- Evidence: areas/lk/sub-areas/stock/handoffs/wishlist-stock-attention-20260611.md
+
+## Reminder OS closure — 2026-06-12
+
+- Status: expired/closed by Lucas request.
+- Reason: conservative backfill loop reviewed; no longer treated as active pending work.
+- Writes externos: 0.
+- Reminder OS loop needed: no
+- Evidence: areas/operacoes/reminder-os/reminders.jsonl

@@ -35,3 +35,6 @@ Painel: https://chat.lkskrs.online → `/app/accounts/1/settings/recovery` (abas
 - **Delays ainda em valores demo (1,2,3 min)** — trocar para `60,1440,2880` AO LIGAR; followup demo (2 min) → sugerido 4320.
 - Mensagem visível a cliente exige canal pronto + template resolvível; placeholders/nomes não resolvidos NUNCA são enviados (lição do incidente "(vazio)" de 10/jun).
 - Broadcast com Evolution conectado agora é REAL (status 'ready'); amostra simulada não envia nada.
+
+## REGRA INEGOCIÁVEL (12/jun, ordem do Lucas)
+- **NUNCA enviar mensagem a cliente real** — nem teste, nem reprocessamento — sem aprovação explícita do Lucas para AQUELA ação. Testes somente nos números do próprio Lucas (5511991203361). Incidente: reprocessamento de 2 pedidos avisar-enc enviou a clientes reais sem aprovação.

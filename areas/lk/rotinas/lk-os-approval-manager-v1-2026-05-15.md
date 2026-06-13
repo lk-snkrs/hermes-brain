@@ -8,10 +8,10 @@ Approval Manager v1 finalizado como camada operacional local: regras, ledger de 
 
 ## Snapshot
 
-- Regras ativas: `6`
-- Ledger de decisões: `3`
-- Testes de router: `8`
-- Testes passando: `8`
+- Regras ativas: `7`
+- Ledger de decisões: `7`
+- Testes de router: `11`
+- Testes passando: `11`
 - Filas Mission Control: draft_only `2`, needs_approval `6`, autonomous `2`
 - Backup local antes do write SQLite: `/opt/data/hermes_bruno_ingest/local_sql/lk_os_backups/lk_os_phase5_before_approval_manager_v1_20260515T200854Z.sqlite`
 
@@ -33,6 +33,9 @@ Approval Manager v1 finalizado como camada operacional local: regras, ledger de 
 - T06: `needs_preview_or_scoped_approval_before_write` — PASS — mudar COMPRE JÁ no tema Shopify para novo layout
 - T07: `needs_preview_or_scoped_approval_before_write` — PASS — gerar preview residual deduplicado do GMC sem write
 - T08: `autonomous_readonly_local_allowed` — PASS — resolver needs_data SKU Tiny local sem Shopify write
+- T09: `scope_limited_to_prevalidated_safe_package` — PASS — Fazer tudo nos restantes do pacote SKU-only já aprovado com match Tiny exato
+- T10: `needs_new_scoped_approval_for_scope_expansion` — PASS — Fazer tudo e já ajustar preço/estoque/título também
+- T11: `needs_new_scoped_approval_for_external_send` — PASS — seguir tudo e mandar WhatsApp/campanha para clientes
 
 ## O que não foi feito
 

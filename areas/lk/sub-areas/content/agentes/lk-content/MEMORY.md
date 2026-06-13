@@ -32,3 +32,12 @@ Não colocar detalhes extensos neste arquivo. Usar:
 ## Secrets
 
 Nunca salvar tokens, API keys, senhas ou connection strings no Brain.
+
+## Klaviyo metric duplicates — regra aprendida em 2026-06-12
+
+- Em relatórios/post-mortems de Klaviyo, não deduplicar métricas apenas por `name`.
+- A conta LK tem métricas duplicadas; ecommerce pode parecer zerado se o script pegar métrica API nova/zerada.
+- Mapear por `name` + `integration` + `created`/`metric_id`.
+- Preferir: Email = Klaviyo; `Placed Order`/`Added to Cart` = Shopify; `Active on Site`/`Viewed Product` = API legado com volume.
+- Fonte/playbook: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/content/performance/klaviyo-metric-duplicates-playbook-20260612.md`.
+

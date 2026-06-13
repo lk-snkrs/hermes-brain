@@ -29,6 +29,7 @@ Começar assistido, não bot público autônomo.
 
 - `contrato-operacional-lk-ops-atendimento-2026-05-26.md` — contrato LK Ops/Atendimento, guardrails, handoff e critério para runtime futuro.
 - `areas/lk/templates/handoff-padrao-lk.md` — template canônico de handoff/receipt para LK Ops, LK Trends e LK Shopify.
+- `decisions/` — decisões duráveis de LK Atendimento/Elle/WhatsApp; não autoriza envio externo sem aprovação escopada atual.
 
 ## Limite com LK Growth
 

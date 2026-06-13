@@ -17,6 +17,7 @@ Depois de qualquer execução aprovada em SEO/CRO/GMC/GEO/Shopify SEO fields/tem
 5. Usar apenas fontes read-only.
 6. Declarar limites de amostra, sazonalidade e atraso de dados.
 7. Nunca executar novo write como parte do impact review; gerar apenas approval packets.
+8. Antes de qualquer novo write relacionado a uma mudança já aplicada, consultar/rodar o impact review como gate read-only obrigatório; se o veredito for inconclusivo, parcial ou sem fonte decision-grade, o próximo passo é novo briefing/packet ou nova medição, não execução.
 
 ## Comando padrão
 

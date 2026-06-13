@@ -23,6 +23,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 ## PRDs / R&D
 
 - `prds/hermes-memory-os-v1-prd-2026-06-09.md` — PRD/R&D do Memory OS v1 executado em escopo local/silent-OK: checker diurno, cron no_agent local, dashboard documental, sem provider externo e sem mutação runtime sensível.
+- `prds/reminder-os-prd-v1-2026-06-12.md` — PRD v1 do Reminder OS: camada cross-agent de continuidade com ledger, Kanban, watchdog 2h, ingress/template audit e health gate silent-OK.
 
 ## Rotinas principais
 
@@ -55,6 +56,8 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/skills-effectiveness-review.md` — revisão de efetividade de skills para detectar erro repetido, skill inchada/desatualizada e aprendizado no lugar errado.
 - `rotinas/agent-operating-modes-fast-deep.md` — contrato de modos operacionais dos agentes: fast lane, deep work, no_agent watchdog, approval packet e handoff/delegation.
 - `rotinas/configured-vs-active-scorecard.md` — scorecard read-only para separar documented/configured/active/verified por profile, gateway, plataforma, modelo, toolset, cron e watchdog.
+- `reminder-os/README.md` — hub operacional do Reminder OS: ledger local, schema, watchdog 2h, auditorias de ingress/templates e health gate agregado.
+- `plans/reminder-os-v1-implementation-plan-2026-06-12.md` — plano/execução faseada do Reminder OS v1.
 
 - `rotinas/brain-operating-layer.md` — camada Hermes-native que transforma o padrão Bruno/OpenClaw em operação viva com receipts, approvals, runtime truth e watchdogs.
 - `rotinas/brain-steward-daily.md` — steward diário silent-OK para daily/hot/receipts/decisões/handoffs/skills.
@@ -144,6 +147,8 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `../../reports/governance/top5-melhorias-pos-auditoria-amora-2026-05-25.md` — execução local/read-only das 5 melhorias pós-auditoria Hermes vs Amora: Mesa audit, scorecard semanal, handoff completeness, guardrails read-only e revisão de skills.
 - `reports/lcmordomo-os-next-steps-2026-06-05.md` — próximos passos executivos do LC Mordomo OS após PRD/SOUL/registry/protocols: validar contrato, MVP Zipper, auditoria de crons, SPITI, calendário e LK.
 - `reports/lcmordomo-subagente-zipper-readonly-inventory-2026-06-05.md` — inventário técnico read-only do MVP Subagente Zipper: crons ativos/pausados, scripts, estados locais, CRM SQLite, gaps e plano seguro local → Supabase.
+- `../../reports/reminder-os/health-gate-2026-06-12.md` — health gate agregado do Reminder OS: ledger, ingress, templates e Kanban em PASS/FAIL Telegram-safe.
+- `../../reports/reminder-os/status-2026-06-12.md` — snapshot on-demand Telegram-safe do Reminder OS.
 - `../../reports/governance/guardrails-readonly-admin-inspection-packet-2026-05-25.md` — packet para separar inspeção administrativa read-only de mutações em guardrails de ferramentas.
 
 ## Guardrails

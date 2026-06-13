@@ -76,6 +76,14 @@ Regras:
 3. Não incluir catálogo de módulos, watchdog saudável, wrappers, job IDs, JSON ou marcadores técnicos visíveis.
 4. Para cron com botões nativos, o marcador `HERMES_INLINE_BUTTONS` só pode existir como marcador oculto final, removido pelo scheduler antes do Telegram.
 5. Quando a ação final for produção/contato/publicação/preço/disponibilidade/Docker/VPS/gateway/cron/write externo, **Fazer** significa preparar/validar approval packet ou preview read-only, não executar produção.
+6. Loops Reminder OS só viram decisão da Mesa quando forem acionáveis: `waiting_lucas`, alta severidade, risco real de abandono ou decisão humana clara. Backlog baixo/stale deve ficar local, resumido ou expirado.
+7. Ao usar Reminder OS como fonte, a Mesa deve citar evidência curta e nunca expor JSON bruto do ledger, job ID ou wrapper técnico.
+
+## Integração Reminder OS
+
+Spec canônica: `areas/operacoes/reminder-os/mesa-coo-integration-v1.md`.
+
+Critério: Reminder OS alimenta a Mesa com loops que precisam de decisão executiva; a Mesa não vira lista de tarefas. `Fazer` preserva o escopo seguro descrito na decisão e não autoriza writes externos/runtime por inferência.
 
 ## Estado implementado
 

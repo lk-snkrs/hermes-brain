@@ -1,6 +1,22 @@
 {
-  "active": [],
-  "active_count": 0,
+  "active": [
+    {
+      "alert": {
+        "detail": {
+          "job": "LK AI/GEO Endpoints Monitor",
+          "registry": "/opt/data/profiles/lk-growth/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "f9acad02865c915c",
+      "first_seen": "2026-06-12T22:48:29.853345+00:00",
+      "last_seen": "2026-06-12T22:54:05.663408+00:00",
+      "seen_count": 3,
+      "status": "recurring"
+    }
+  ],
+  "active_count": 1,
   "alerts": {
     "271525f7aad957b2": {
       "alert": {
@@ -90,11 +106,26 @@
       "resolved_at": "2026-06-09T00:59:57.047372+00:00",
       "seen_count": 11,
       "status": "resolved"
+    },
+    "f9acad02865c915c": {
+      "alert": {
+        "detail": {
+          "job": "LK AI/GEO Endpoints Monitor",
+          "registry": "/opt/data/profiles/lk-growth/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "f9acad02865c915c",
+      "first_seen": "2026-06-12T22:48:29.853345+00:00",
+      "last_seen": "2026-06-12T22:54:05.663408+00:00",
+      "seen_count": 3,
+      "status": "recurring"
     }
   },
   "new_count": 0,
-  "recurring_count": 0,
+  "recurring_count": 1,
   "resolved_since_previous_count": 0,
-  "updated_at": "2026-06-11T05:04:49.315237+00:00",
+  "updated_at": "2026-06-12T22:54:05.663408+00:00",
   "values_printed": false
 }
