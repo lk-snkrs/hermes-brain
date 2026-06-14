@@ -267,6 +267,53 @@ def export_search_index(con: sqlite3.Connection) -> dict[str, Any]:
         from shopify_sales_paid_line_items_enriched
         group by sku, product_title, variant_title, vendor, brand_group, model_family, category, category_source, channel_group
     """).fetchall()
+    window_rows = con.execute("""
+        select
+          coalesce(sku,'') sku,
+          coalesce(product_title,'Produto sem título') product_title,
+          coalesce(variant_title,'—') variant_title,
+          count(distinct case when order_created_at_dt >= datetime('now','-7 days') then shopify_order_id end) orders_d7,
+          coalesce(sum(case when order_created_at_dt >= datetime('now','-7 days') then quantity else 0 end),0) quantity_d7,
+          coalesce(sum(case when order_created_at_dt >= datetime('now','-7 days') then line_revenue_estimate else 0 end),0) revenue_d7,
+          count(distinct case when order_created_at_dt >= datetime('now','-30 days') then shopify_order_id end) orders_d30,
+          coalesce(sum(case when order_created_at_dt >= datetime('now','-30 days') then quantity else 0 end),0) quantity_d30,
+          coalesce(sum(case when order_created_at_dt >= datetime('now','-30 days') then line_revenue_estimate else 0 end),0) revenue_d30,
+          count(distinct case when order_created_at_dt >= datetime('now','-90 days') then shopify_order_id end) orders_d90,
+          coalesce(sum(case when order_created_at_dt >= datetime('now','-90 days') then quantity else 0 end),0) quantity_d90,
+          coalesce(sum(case when order_created_at_dt >= datetime('now','-90 days') then line_revenue_estimate else 0 end),0) revenue_d90
+        from shopify_sales_paid_line_items_enriched
+        group by sku, product_title, variant_title
+    """).fetchall()
+    windows_by_key = {
+        (r["sku"] or "", r["product_title"] or "", r["variant_title"] or ""): {
+            "d7": {"orders": int(r["orders_d7"] or 0), "quantity": round(float(r["quantity_d7"] or 0), 2), "revenue": round(float(r["revenue_d7"] or 0), 2)},
+            "d30": {"orders": int(r["orders_d30"] or 0), "quantity": round(float(r["quantity_d30"] or 0), 2), "revenue": round(float(r["revenue_d30"] or 0), 2)},
+            "d90": {"orders": int(r["orders_d90"] or 0), "quantity": round(float(r["quantity_d90"] or 0), 2), "revenue": round(float(r["revenue_d90"] or 0), 2)},
+        } for r in window_rows
+    }
+    recent_rows = con.execute("""
+        select coalesce(li.sku,'') sku, coalesce(li.product_title,'Produto sem título') product_title, coalesce(li.variant_title,'—') variant_title,
+               coalesce(o.order_name, o.order_number, li.shopify_order_id) order_ref, coalesce(o.source_name, li.source_name, 'unknown') source_name,
+               coalesce(li.quantity,0) quantity, coalesce(li.line_revenue_estimate,0) revenue, coalesce(o.financial_status,'') financial_status,
+               datetime(replace(replace(coalesce(o.created_at, li.created_at), 'T',' '),'Z','')) order_created_at_dt
+        from shopify_order_line_items li
+        join shopify_orders o on o.shopify_order_id = li.shopify_order_id
+        where lower(coalesce(o.financial_status,''))='paid' and coalesce(o.cancelled_at,'')=''
+        order by order_created_at_dt desc
+    """).fetchall()
+    recent_by_key: dict[tuple[str, str, str], list[dict[str, Any]]] = {}
+    for rr in recent_rows:
+        key = (rr["sku"] or "", rr["product_title"] or "", rr["variant_title"] or "")
+        bucket = recent_by_key.setdefault(key, [])
+        if len(bucket) < 8:
+            bucket.append({
+                "order_ref": rr["order_ref"],
+                "order_created_at": rr["order_created_at_dt"],
+                "channel": "loja_fisica" if str(rr["source_name"] or '').lower() == 'pos' else ("site" if str(rr["source_name"] or '').lower() == 'web' else rr["source_name"]),
+                "quantity": round(float(rr["quantity"] or 0), 2),
+                "revenue": round(float(rr["revenue"] or 0), 2),
+                "financial_status": rr["financial_status"],
+            })
     products: dict[tuple[str, str, str], dict[str, Any]] = {}
     for r in rows:
         key = (r["sku"] or "", r["product_title"] or "", r["variant_title"] or "")
@@ -282,6 +329,8 @@ def export_search_index(con: sqlite3.Connection) -> dict[str, Any]:
             "orders": 0,
             "quantity": 0.0,
             "revenue": 0.0,
+            "windows": windows_by_key.get(key, {"d7": {"orders": 0, "quantity": 0, "revenue": 0}, "d30": {"orders": 0, "quantity": 0, "revenue": 0}, "d90": {"orders": 0, "quantity": 0, "revenue": 0}}),
+            "recent_sales": recent_by_key.get(key, []),
             "channels": {},
             "first_order_at": r["first_order_at"],
             "last_order_at": r["last_order_at"],
