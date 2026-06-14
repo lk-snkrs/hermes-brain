@@ -14,8 +14,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sqlite3
+import time
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -23,6 +26,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DB = ROOT / "data" / "shopify_sales_os.db"
 DEFAULT_REPORT = ROOT / "data" / "shopify_sales_analytics_readiness.json"
+API_VERSION = os.environ.get("SHOPIFY_API_VERSION", "2024-01")
 
 CLOTHING_RE = re.compile(
     r"\b(camiseta|cal[cç]a|jaqueta|shorts?|top|vestido|saia|blusa|moletom|hoodie|regata|body|legging|bermuda|casaco|camisa|suti[aã]|meias?|bon[eé]|cropped|su[eé]ter|cardigan|polo|trouser|pants|jacket|shirt|tee)\b",
@@ -91,7 +95,7 @@ QUESTION_CAPABILITIES = [
     ("top_store_product", "Qual produto mais vendido na loja física?", "yes"),
     ("brand_site_store_share", "Qual share site vs loja por marca?", "yes"),
     ("model_site_store_share", "Qual share site vs loja por modelo?", "yes"),
-    ("category_share_channel", "Quanto % de um canal foi roupa/calçado/acessório?", "heuristic"),
+    ("category_share_channel", "Quanto % de um canal foi roupa/calçado/acessório?", "yes_with_shopify_product_type_tags_fallback_heuristic"),
     ("nike_share", "Qual share de Nike no faturamento?", "yes_with_brand_rule"),
     ("nike_family_rank", "Dentro de Nike, qual família mais vendeu?", "yes_with_family_rule"),
     ("refunds_by_product", "Qual produto teve mais refund?", "yes"),
@@ -105,9 +109,73 @@ QUESTION_CAPABILITIES = [
     ("audience_kids", "Quanto kids/infantil vendeu?", "heuristic"),
     ("collab_share", "Quanto collab vendeu?", "heuristic"),
     ("color_share", "Qual cor mais vendeu?", "partial_title_heuristic"),
-    ("official_product_type", "Categoria oficial Shopify product_type/tags", "missing_until_product_enrichment"),
+    ("official_product_type", "Categoria oficial Shopify product_type/tags", "yes_read_only_product_enrichment"),
     ("gross_margin", "Margem por produto", "missing_cost_data"),
 ]
+
+
+
+def shopify_store() -> str:
+    store = (os.environ.get("SHOPIFY_STORE_URL") or os.environ.get("SHOPIFY_STORE") or os.environ.get("SHOPIFY_SHOP_NAME") or "").replace("https://", "").replace("http://", "").strip("/")
+    if store and not store.endswith(".myshopify.com") and "." not in store:
+        store += ".myshopify.com"
+    return store
+
+
+def shopify_token() -> str:
+    return os.environ.get("SHOPIFY_ACCESS_TOKEN") or os.environ.get("SHOPIFY_ADMIN_TOKEN") or os.environ.get("SHOPIFY_API_TOKEN") or ""
+
+
+def shopify_graphql(query: str, variables: dict[str, Any]) -> dict[str, Any]:
+    store = shopify_store()
+    token = shopify_token()
+    if not store or not token:
+        raise RuntimeError("missing_shopify_credentials")
+    req = urllib.request.Request(
+        f"https://{store}/admin/api/{API_VERSION}/graphql.json",
+        data=json.dumps({"query": query, "variables": variables}).encode(),
+        method="POST",
+        headers={"X-Shopify-Access-Token": token, "Content-Type": "application/json"},
+    )
+    with urllib.request.urlopen(req, timeout=90) as resp:
+        payload = json.loads(resp.read().decode())
+    if payload.get("errors"):
+        raise RuntimeError("shopify_graphql_error:" + json.dumps(payload["errors"], ensure_ascii=False)[:1000])
+    return payload.get("data") or {}
+
+
+def chunked(values: list[str], size: int) -> list[list[str]]:
+    return [values[i:i + size] for i in range(0, len(values), size)]
+
+
+def parse_tags(value: Any) -> list[str]:
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return [str(v).strip() for v in value if str(v).strip()]
+    text = str(value).strip()
+    if not text:
+        return []
+    try:
+        parsed = json.loads(text)
+        if isinstance(parsed, list):
+            return [str(v).strip() for v in parsed if str(v).strip()]
+    except Exception:
+        pass
+    return [v.strip() for v in text.split(",") if v.strip()]
+
+
+def classify_category_from_official(product_type: str, tags: list[str]) -> tuple[str | None, str | None, float | None]:
+    blob = f"{product_type} {' '.join(tags)}"
+    if not blob.strip():
+        return None, None, None
+    if FOOTWEAR_RE.search(blob):
+        return "calcado", "shopify_product_type_tags_v1", 0.97
+    if CLOTHING_RE.search(blob):
+        return "roupa", "shopify_product_type_tags_v1", 0.95
+    if ACCESSORY_RE.search(blob):
+        return "acessorio", "shopify_product_type_tags_v1", 0.94
+    return None, None, None
 
 
 def now_iso() -> str:
@@ -191,6 +259,12 @@ def init_schema(con: sqlite3.Connection) -> None:
           product_title TEXT,
           variant_title TEXT,
           vendor TEXT,
+          shopify_product_type TEXT,
+          shopify_tags_json TEXT,
+          shopify_product_title TEXT,
+          shopify_product_vendor TEXT,
+          shopify_product_updated_at TEXT,
+          shopify_product_synced_at TEXT,
           brand_group TEXT,
           model_family TEXT,
           category TEXT,
@@ -208,8 +282,114 @@ def init_schema(con: sqlite3.Connection) -> None:
         CREATE INDEX IF NOT EXISTS idx_sales_dim_brand ON shopify_sales_product_dimension(brand_group);
         CREATE INDEX IF NOT EXISTS idx_sales_dim_model ON shopify_sales_product_dimension(model_family);
         CREATE INDEX IF NOT EXISTS idx_sales_dim_category ON shopify_sales_product_dimension(category);
+        CREATE TABLE IF NOT EXISTS shopify_sales_product_metadata (
+          product_id TEXT PRIMARY KEY,
+          title TEXT,
+          vendor TEXT,
+          product_type TEXT,
+          tags_json TEXT,
+          handle TEXT,
+          status TEXT,
+          updated_at TEXT,
+          synced_at TEXT NOT NULL
+        );
+        CREATE INDEX IF NOT EXISTS idx_sales_product_metadata_type ON shopify_sales_product_metadata(product_type);
         """
     )
+    # Backfill columns when upgrading an existing local DB.
+    existing_cols = {r[1] for r in con.execute("PRAGMA table_info(shopify_sales_product_dimension)").fetchall()}
+    for col, ddl in {
+        "shopify_product_type": "ALTER TABLE shopify_sales_product_dimension ADD COLUMN shopify_product_type TEXT",
+        "shopify_tags_json": "ALTER TABLE shopify_sales_product_dimension ADD COLUMN shopify_tags_json TEXT",
+        "shopify_product_title": "ALTER TABLE shopify_sales_product_dimension ADD COLUMN shopify_product_title TEXT",
+        "shopify_product_vendor": "ALTER TABLE shopify_sales_product_dimension ADD COLUMN shopify_product_vendor TEXT",
+        "shopify_product_updated_at": "ALTER TABLE shopify_sales_product_dimension ADD COLUMN shopify_product_updated_at TEXT",
+        "shopify_product_synced_at": "ALTER TABLE shopify_sales_product_dimension ADD COLUMN shopify_product_synced_at TEXT",
+    }.items():
+        if col not in existing_cols:
+            con.execute(ddl)
+
+
+
+def sync_shopify_product_metadata(con: sqlite3.Connection, *, only_missing: bool = False, batch_size: int = 50) -> dict[str, Any]:
+    init_schema(con)
+    if only_missing:
+        rows = con.execute(
+            """
+            SELECT DISTINCT li.product_id
+            FROM shopify_order_line_items li
+            LEFT JOIN shopify_sales_product_metadata pm ON pm.product_id = CASE WHEN li.product_id LIKE 'gid://%' THEN li.product_id ELSE 'gid://shopify/Product/' || li.product_id END
+            WHERE coalesce(li.product_id,'')<>'' AND pm.product_id IS NULL
+            ORDER BY li.product_id
+            """
+        ).fetchall()
+    else:
+        rows = con.execute(
+            "SELECT DISTINCT product_id FROM shopify_order_line_items WHERE coalesce(product_id,'')<>'' ORDER BY product_id"
+        ).fetchall()
+    product_ids = []
+    for r in rows:
+        raw = str(r[0] or "").strip()
+        if not raw:
+            continue
+        product_ids.append(raw if raw.startswith("gid://") else f"gid://shopify/Product/{raw}")
+    product_ids = sorted(set(product_ids))
+    if not product_ids:
+        return {"status": "ok", "requested_products": 0, "synced_products": 0, "missing_products": 0, "values_printed": False}
+    query = """
+    query ProductNodes($ids: [ID!]!) {
+      nodes(ids: $ids) {
+        ... on Product {
+          id
+          title
+          vendor
+          productType
+          tags
+          handle
+          status
+          updatedAt
+        }
+      }
+    }
+    """
+    synced = 0
+    missing = 0
+    synced_at = now_iso()
+    for batch in chunked(product_ids, batch_size):
+        data = shopify_graphql(query, {"ids": batch})
+        nodes = data.get("nodes") or []
+        by_id = {n.get("id"): n for n in nodes if isinstance(n, dict) and n.get("id")}
+        for pid in batch:
+            node = by_id.get(pid)
+            if not node:
+                missing += 1
+                continue
+            tags = parse_tags(node.get("tags"))
+            con.execute(
+                """
+                INSERT INTO shopify_sales_product_metadata(product_id, title, vendor, product_type, tags_json, handle, status, updated_at, synced_at)
+                VALUES (?,?,?,?,?,?,?,?,?)
+                ON CONFLICT(product_id) DO UPDATE SET
+                  title=excluded.title, vendor=excluded.vendor, product_type=excluded.product_type,
+                  tags_json=excluded.tags_json, handle=excluded.handle, status=excluded.status,
+                  updated_at=excluded.updated_at, synced_at=excluded.synced_at
+                """,
+                (
+                    pid,
+                    norm(node.get("title")),
+                    norm(node.get("vendor")),
+                    norm(node.get("productType")),
+                    json.dumps(tags, ensure_ascii=False),
+                    norm(node.get("handle")),
+                    norm(node.get("status")),
+                    norm(node.get("updatedAt")),
+                    synced_at,
+                ),
+            )
+            synced += 1
+        con.commit()
+        time.sleep(0.15)
+    return {"status": "ok", "requested_products": len(product_ids), "synced_products": synced, "missing_products": missing, "values_printed": False}
 
 
 def refresh_dimension(con: sqlite3.Connection) -> dict[str, Any]:
@@ -219,11 +399,15 @@ def refresh_dimension(con: sqlite3.Connection) -> dict[str, Any]:
     con.execute("DELETE FROM shopify_sales_product_dimension")
     rows = con.execute(
         """
-        SELECT product_id, variant_id, sku, product_title, variant_title, vendor,
-               min(created_at) first_seen_at, max(created_at) last_seen_at,
-               count(*) row_count, coalesce(sum(quantity),0) units
-        FROM shopify_order_line_items
-        GROUP BY product_id, variant_id, sku, product_title, variant_title, vendor
+        SELECT li.product_id, li.variant_id, li.sku, li.product_title, li.variant_title, li.vendor,
+               pm.title AS shopify_product_title, pm.vendor AS shopify_product_vendor, pm.product_type AS shopify_product_type,
+               pm.tags_json AS shopify_tags_json, pm.updated_at AS shopify_product_updated_at, pm.synced_at AS shopify_product_synced_at,
+               min(li.created_at) first_seen_at, max(li.created_at) last_seen_at,
+               count(*) row_count, coalesce(sum(li.quantity),0) units
+        FROM shopify_order_line_items li
+        LEFT JOIN shopify_sales_product_metadata pm ON pm.product_id = CASE WHEN li.product_id LIKE 'gid://%' THEN li.product_id ELSE 'gid://shopify/Product/' || li.product_id END
+        GROUP BY li.product_id, li.variant_id, li.sku, li.product_title, li.variant_title, li.vendor,
+                 pm.title, pm.vendor, pm.product_type, pm.tags_json, pm.updated_at, pm.synced_at
         """
     ).fetchall()
     updated = 0
@@ -232,9 +416,15 @@ def refresh_dimension(con: sqlite3.Connection) -> dict[str, Any]:
         title = norm(r["product_title"])
         sku = norm(r["sku"])
         vendor = norm(r["vendor"])
-        cat, source, confidence = classify_category(vendor, title, sku)
-        bg = brand_group(vendor, title, sku)
-        family = model_family(vendor, title, sku)
+        product_type = norm(r["shopify_product_type"])
+        tags = parse_tags(r["shopify_tags_json"])
+        official_cat, official_source, official_confidence = classify_category_from_official(product_type, tags)
+        if official_cat:
+            cat, source, confidence = official_cat, official_source or "shopify_product_type_tags_v1", official_confidence or 0.95
+        else:
+            cat, source, confidence = classify_category(vendor, title, sku)
+        bg = brand_group(norm(r["shopify_product_vendor"]) or vendor, norm(r["shopify_product_title"]) or title, sku)
+        family = model_family(norm(r["shopify_product_vendor"]) or vendor, norm(r["shopify_product_title"]) or title, sku)
         aud = audience(title, sku)
         blob = f"{vendor} {title} {sku}"
         product_key = make_key(r)
@@ -243,12 +433,16 @@ def refresh_dimension(con: sqlite3.Connection) -> dict[str, Any]:
             """
             INSERT INTO shopify_sales_product_dimension(
               product_key, product_id, variant_id, sku, product_title, variant_title, vendor,
+              shopify_product_type, shopify_tags_json, shopify_product_title, shopify_product_vendor, shopify_product_updated_at, shopify_product_synced_at,
               brand_group, model_family, category, category_source, category_confidence, audience,
               is_clothing, is_footwear, is_accessory, is_collab, first_seen_at, last_seen_at, updated_at
-            ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             ON CONFLICT(product_key) DO UPDATE SET
               product_id=excluded.product_id, variant_id=excluded.variant_id, sku=excluded.sku,
               product_title=excluded.product_title, variant_title=excluded.variant_title, vendor=excluded.vendor,
+              shopify_product_type=excluded.shopify_product_type, shopify_tags_json=excluded.shopify_tags_json,
+              shopify_product_title=excluded.shopify_product_title, shopify_product_vendor=excluded.shopify_product_vendor,
+              shopify_product_updated_at=excluded.shopify_product_updated_at, shopify_product_synced_at=excluded.shopify_product_synced_at,
               brand_group=excluded.brand_group, model_family=excluded.model_family, category=excluded.category,
               category_source=excluded.category_source, category_confidence=excluded.category_confidence,
               audience=excluded.audience, is_clothing=excluded.is_clothing, is_footwear=excluded.is_footwear,
@@ -263,6 +457,12 @@ def refresh_dimension(con: sqlite3.Connection) -> dict[str, Any]:
                 title,
                 norm(r["variant_title"]),
                 vendor,
+                product_type,
+                json.dumps(tags, ensure_ascii=False),
+                norm(r["shopify_product_title"]),
+                norm(r["shopify_product_vendor"]),
+                norm(r["shopify_product_updated_at"]),
+                norm(r["shopify_product_synced_at"]),
                 bg,
                 family,
                 cat,
@@ -303,6 +503,12 @@ def refresh_dimension(con: sqlite3.Connection) -> dict[str, Any]:
           CASE WHEN lower(coalesce(o.financial_status,''))='paid' THEN 1 ELSE 0 END AS is_paid_order,
           datetime(replace(replace(o.created_at,'T',' '),'Z','')) AS order_created_at_dt,
           d.product_key,
+          d.shopify_product_type,
+          d.shopify_tags_json,
+          d.shopify_product_title,
+          d.shopify_product_vendor,
+          d.shopify_product_updated_at,
+          d.shopify_product_synced_at,
           d.brand_group,
           d.model_family,
           d.category,
@@ -358,17 +564,31 @@ def fetch_summary(con: sqlite3.Connection) -> dict[str, Any]:
     by_channel_category = [dict(r) for r in con.execute("select * from shopify_sales_category_channel_summary order by channel_group, revenue desc")]
     top_brands = [dict(r) for r in con.execute("select brand_group, count(distinct shopify_order_id) orders, sum(quantity) units, round(sum(line_revenue_estimate),2) revenue from shopify_sales_paid_line_items_enriched group by brand_group order by revenue desc limit 20")]
     nike_models = [dict(r) for r in con.execute("select model_family, orders, units, revenue from shopify_sales_brand_model_summary where brand_group in ('Nike','Jordan','Jacquemus') or model_family like 'Nike %' order by revenue desc limit 20")]
-    return {"paid_totals": totals, "by_category": by_category, "by_channel_category": by_channel_category, "top_brands": top_brands, "nike_models": nike_models}
+    metadata = dict(con.execute("""
+        select count(distinct CASE WHEN li.product_id LIKE 'gid://%' THEN li.product_id ELSE 'gid://shopify/Product/' || li.product_id END) products_in_sales,
+               count(distinct pm.product_id) products_with_shopify_metadata,
+               sum(case when coalesce(pm.product_type,'')<>'' then 1 else 0 end) metadata_rows_with_product_type,
+               max(pm.synced_at) latest_product_metadata_sync
+        from (select distinct CASE WHEN product_id LIKE 'gid://%' THEN product_id ELSE 'gid://shopify/Product/' || product_id END AS product_id from shopify_order_line_items where coalesce(product_id,'')<>'') li
+        left join shopify_sales_product_metadata pm on pm.product_id = li.product_id
+    """).fetchone())
+    category_source = [dict(r) for r in con.execute("select category_source, count(*) dimension_rows from shopify_sales_product_dimension group by category_source order by dimension_rows desc")]
+    return {"paid_totals": totals, "product_metadata": metadata, "category_source": category_source, "by_category": by_category, "by_channel_category": by_channel_category, "top_brands": top_brands, "nike_models": nike_models}
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("command", choices=["refresh", "report"])
+    ap.add_argument("command", choices=["refresh", "report", "sync-products"])
     ap.add_argument("--db", type=Path, default=DEFAULT_DB)
     ap.add_argument("--output", type=Path, default=DEFAULT_REPORT)
+    ap.add_argument("--with-shopify-products", action="store_true", help="Read Shopify Admin product_type/tags into local metadata before refreshing analytics")
+    ap.add_argument("--only-missing-products", action="store_true", help="When syncing Shopify products, fetch only product_ids not yet cached")
     args = ap.parse_args()
     con = sqlite3.connect(args.db)
     con.row_factory = sqlite3.Row
+    product_sync = None
+    if args.with_shopify_products or args.command == "sync-products":
+        product_sync = sync_shopify_product_metadata(con, only_missing=args.only_missing_products)
     result = refresh_dimension(con)
     summary = fetch_summary(con)
     payload = {
@@ -377,15 +597,16 @@ def main() -> int:
         "generated_at": now_iso(),
         "db": str(args.db),
         "refresh": result,
+        "shopify_product_sync": product_sync,
         "summary": summary,
         "question_capabilities": [{"id": i, "question": q, "status": s} for i, q, s in QUESTION_CAPABILITIES],
-        "classification_note": "category/model/audience/collab fields are deterministic local heuristics from title/vendor/SKU until Shopify product_type/tags are added.",
+        "classification_note": "category uses Shopify product_type/tags when available, then deterministic local title/vendor/SKU heuristics as fallback; model/audience/collab remain deterministic local signals.",
         "guardrails": {"shopify_write": 0, "tiny_write": 0, "external_write": 0, "public_availability_promise": 0, "auto_purchase": 0},
         "values_printed": False,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
-    print(json.dumps({"status": "ok", "dimension_rows_processed": result["dimension_rows_processed"], "dimension_table_rows": result["dimension_table_rows"], "output": str(args.output), "values_printed": False}, ensure_ascii=False))
+    print(json.dumps({"status": "ok", "shopify_product_sync": product_sync, "dimension_rows_processed": result["dimension_rows_processed"], "dimension_table_rows": result["dimension_table_rows"], "output": str(args.output), "values_printed": False}, ensure_ascii=False))
     return 0
 
 

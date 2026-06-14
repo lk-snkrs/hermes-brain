@@ -1,17 +1,24 @@
 {
   "status": "ok",
   "source": "shopify_sales_os_db_local_enrichment",
-  "generated_at": "2026-06-14T14:25:50.099659Z",
+  "generated_at": "2026-06-14T14:36:29.024763Z",
   "db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/shopify_sales_os.db",
   "refresh": {
     "dimension_rows_processed": 1892,
     "dimension_table_rows": 1864,
     "category_rows": {
-      "outros": 56,
-      "roupa": 489,
-      "acessorio": 49,
-      "calcado": 1298
+      "outros": 25,
+      "roupa": 501,
+      "acessorio": 46,
+      "calcado": 1320
     }
+  },
+  "shopify_product_sync": {
+    "status": "ok",
+    "requested_products": 794,
+    "synced_products": 794,
+    "missing_products": 0,
+    "values_printed": false
   },
   "summary": {
     "paid_totals": {
@@ -19,30 +26,54 @@
       "units": 2687.0,
       "revenue": 6242109.23
     },
+    "product_metadata": {
+      "products_in_sales": 794,
+      "products_with_shopify_metadata": 794,
+      "metadata_rows_with_product_type": 772,
+      "latest_product_metadata_sync": "2026-06-14T14:36:21.493218Z"
+    },
+    "category_source": [
+      {
+        "category_source": "shopify_product_type_tags_v1",
+        "dimension_rows": 1727
+      },
+      {
+        "category_source": "heuristic_title_sku_vendor_v1",
+        "dimension_rows": 108
+      },
+      {
+        "category_source": "heuristic_title_sku_vendor_v1_unknown",
+        "dimension_rows": 24
+      },
+      {
+        "category_source": "heuristic_title_sku_vendor_v1_ambiguous",
+        "dimension_rows": 5
+      }
+    ],
     "by_category": [
       {
         "category": "calcado",
-        "orders": 1442,
-        "units": 1923.0,
-        "revenue": 5691437.18
+        "orders": 1467,
+        "units": 2000.0,
+        "revenue": 5722126.41
       },
       {
         "category": "roupa",
-        "orders": 333,
-        "units": 526.0,
-        "revenue": 423487.44
-      },
-      {
-        "category": "outros",
-        "orders": 56,
-        "units": 74.0,
-        "revenue": 65166.22
+        "orders": 342,
+        "units": 543.0,
+        "revenue": 449356.28
       },
       {
         "category": "acessorio",
-        "orders": 119,
-        "units": 164.0,
-        "revenue": 62018.39
+        "orders": 83,
+        "units": 106.0,
+        "revenue": 52178.97
+      },
+      {
+        "category": "outros",
+        "orders": 32,
+        "units": 38.0,
+        "revenue": 18447.57
       }
     ],
     "by_channel_category": [
@@ -84,58 +115,58 @@
       {
         "channel_group": "loja_fisica",
         "category": "calcado",
-        "orders": 561,
-        "units": 769.0,
-        "revenue": 2256541.23
+        "orders": 565,
+        "units": 791.0,
+        "revenue": 2263901.01
       },
       {
         "channel_group": "loja_fisica",
         "category": "roupa",
-        "orders": 181,
+        "orders": 182,
         "units": 302.0,
-        "revenue": 224872.08
+        "revenue": 223791.09
       },
       {
         "channel_group": "loja_fisica",
         "category": "acessorio",
-        "orders": 48,
-        "units": 63.0,
-        "revenue": 28309.4
+        "orders": 36,
+        "units": 46.0,
+        "revenue": 25449.57
       },
       {
         "channel_group": "loja_fisica",
         "category": "outros",
-        "orders": 21,
-        "units": 24.0,
-        "revenue": 17106.71
+        "orders": 17,
+        "units": 19.0,
+        "revenue": 13687.75
       },
       {
         "channel_group": "site",
         "category": "calcado",
-        "orders": 868,
-        "units": 1135.0,
-        "revenue": 3383696.14
+        "orders": 889,
+        "units": 1190.0,
+        "revenue": 3407025.59
       },
       {
         "channel_group": "site",
         "category": "roupa",
-        "orders": 149,
-        "units": 219.0,
-        "revenue": 194985.41
-      },
-      {
-        "channel_group": "site",
-        "category": "outros",
-        "orders": 34,
-        "units": 49.0,
-        "revenue": 47674.52
+        "orders": 157,
+        "units": 236.0,
+        "revenue": 221935.24
       },
       {
         "channel_group": "site",
         "category": "acessorio",
-        "orders": 69,
-        "units": 97.0,
-        "revenue": 32029.03
+        "orders": 45,
+        "units": 56.0,
+        "revenue": 25049.44
+      },
+      {
+        "channel_group": "site",
+        "category": "outros",
+        "orders": 14,
+        "units": 18.0,
+        "revenue": 4374.83
       }
     ],
     "top_brands": [
@@ -403,7 +434,7 @@
     {
       "id": "category_share_channel",
       "question": "Quanto % de um canal foi roupa/calçado/acessório?",
-      "status": "heuristic"
+      "status": "yes_with_shopify_product_type_tags_fallback_heuristic"
     },
     {
       "id": "nike_share",
@@ -473,7 +504,7 @@
     {
       "id": "official_product_type",
       "question": "Categoria oficial Shopify product_type/tags",
-      "status": "missing_until_product_enrichment"
+      "status": "yes_read_only_product_enrichment"
     },
     {
       "id": "gross_margin",
@@ -481,7 +512,7 @@
       "status": "missing_cost_data"
     }
   ],
-  "classification_note": "category/model/audience/collab fields are deterministic local heuristics from title/vendor/SKU until Shopify product_type/tags are added.",
+  "classification_note": "category uses Shopify product_type/tags when available, then deterministic local title/vendor/SKU heuristics as fallback; model/audience/collab remain deterministic local signals.",
   "guardrails": {
     "shopify_write": 0,
     "tiny_write": 0,
