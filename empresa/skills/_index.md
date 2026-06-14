@@ -27,6 +27,7 @@ Skills são processos repetíveis com entrada, passos, saída e verificação. E
 | Shopify Read-only LK | `skills/lk-shopify-readonly/SKILL.md` | `skills/lk-shopify-readonly/SKILL.md` |
 | Shopify Product Upload LK | `skills/lk-shopify-product-upload/SKILL.md` | `skills/lk-shopify-product-upload/SKILL.md` |
 | SEO/CRO Weekly LK | `skills/lk-seo-weekly-improvement/SKILL.md` | `skills/lk-seo-weekly-improvement/SKILL.md` |
+| LK Collection Optimizer | `areas/lk/sub-areas/growth/skills/lk-superpowers-collection-optimizer/SKILL.md` | `areas/lk/sub-areas/growth/skills/lk-superpowers-collection-optimizer/SKILL.md` |
 
 ## Auditoria de status/risco
 

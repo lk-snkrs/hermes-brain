@@ -1,3 +1,12 @@
+## 2026-06-13 — Follow-up das recomendações 02h30
+
+**A1 local/documental aplicado após aprovação de Lucas:**
+- Investigado o `attention` antigo de receipts Memory OS: causa era estado global transitório do checker, não falha ativa do writer; dry-run atual reavalia receipt afetado como `ok` com `route_count=0` e enforcement por `receipt_writer_log`.
+- Reduzido drift de skill/index: `LK Collection Optimizer` adicionado ao índice de skills por área; `Hermes Browser CDP` e `LK Collection Optimizer` adicionados à matriz owner/status/risco.
+- Artefato: `reports/governance/receipt-writer-attention-and-skill-index-followup-2026-06-13.md`.
+
+**Limite preservado:** sem Docker/VPS/Traefik/gateway restart, deploy, cron mutation, secrets, writes externos ou fonte da verdade operacional.
+
 ## 2026-06-08 — Daily Intelligence Loop P2 hardening local/read-only
 
 **Melhoria aprovada por Lucas:**

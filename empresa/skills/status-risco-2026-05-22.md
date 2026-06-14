@@ -28,6 +28,13 @@ Escopo: skills canônicas versionadas em `skills/*/SKILL.md` no Hermes Brain.
 | LK Shopify Read-only | `skills/lk-shopify-readonly/SKILL.md` | LK Ecommerce | Ativa read-only | Médio | 2026-05-22 | Presença no índice + guardrails | Consultas Shopify sem writes. |
 | LK Shopify Product Upload | `skills/lk-shopify-product-upload/SKILL.md` | LK Ecommerce | Ativa com aprovação forte | Alto | 2026-05-22 | Presença no índice + guardrails | Cadastro/produto/produção exige preview, aprovação e verificação. |
 | LK SEO Weekly Improvement | `skills/lk-seo-weekly-improvement/SKILL.md` | LK Growth/SEO | Ativa/pausável conforme cron | Alto | 2026-05-22 | Presença no índice + cron inventory | Mudanças SEO/Shopify/externas exigem approval packet. |
+| Hermes Browser CDP | `skills/hermes-browser-cdp/SKILL.md` | Operações Hermes/QA | Ativa com guardrails | Médio | 2026-06-13 | Presença no índice + escopo read-only/QA | QA visual/browser deve evitar produção, credenciais e ações externas sem aprovação. |
+
+## Skills de área indexadas
+
+| Skill | Caminho | Owner | Status | Risco | Última revisão | Última verificação | Observação |
+|---|---|---|---|---|---|---|---|
+| LK Collection Optimizer | `areas/lk/sub-areas/growth/skills/lk-superpowers-collection-optimizer/SKILL.md` | LK Growth / Otimização de Coleções | Ativa com guardrails | Alto | 2026-06-13 | Presença no índice + guardrails LKGOC | Especialista de coleções; Shopify/theme/fonte da verdade continuam approval-gated. |
 
 ## Gaps encontrados
 

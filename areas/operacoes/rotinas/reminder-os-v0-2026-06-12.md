@@ -16,9 +16,11 @@ Evitar que trabalhos iniciados no Hermes fiquem em stand-by sem retomada. Remind
 ## Fontes v0
 
 1. Ledger canônico: `areas/operacoes/reminder-os/reminders.jsonl`.
-2. Kanban Hermes: boards e cards `ready`, `blocked`, `scheduled`.
+2. Kanban canônico do Reminder OS: board `reminder-os` para governança/loops do próprio sistema.
 3. Handoffs/receipts/rotinas — integração direta fica para v1, mas o contrato já existe.
 4. Memory OS/Mesa COO — devem escrever loops no ledger quando detectarem stand-by.
+
+Regra corrigida em 2026-06-13: backlog de Kanban especialista (`lk-growth-ops`, LK Stock, Mordomo, SPITI, Zipper etc.) **não** deve virar alerta central para Lucas via Hermes Geral. Quando o loop tem dono especialista, o reminder deve ser roteado para a superfície/profile do agente dono; Hermes Geral só recebe alertas de governança/sistema ou escalonamentos sem dono operacional.
 
 ## Regra cross-agent
 
@@ -60,10 +62,11 @@ Script: `/opt/data/scripts/reminder_os_watchdog.py`
 Comportamento:
 
 1. Lê ledger.
-2. Lê boards Kanban sem executar cards.
-3. Detecta items vencidos, `waiting_lucas`, bloqueados antigos e cards `ready` parados.
-4. Emite mensagem curta apenas se houver item acionável.
-5. Nunca imprime secrets, JSON bruto ou IDs de cron.
+2. Lê apenas o board Kanban canônico `reminder-os` por padrão; outros boards só entram com allowlist escopada e plano de roteamento.
+3. Detecta items vencidos, `waiting_lucas`, bloqueados antigos e cards `ready` parados dentro do escopo do Reminder OS.
+4. Emite mensagem curta apenas se houver item acionável para Hermes Geral/Lucas.
+5. Filtra loops com `owner` especialista (`LK Growth`, `LK Stock`, Mordomo, SPITI, Zipper etc.) para não paginar o canal central; esses loops ficam no ledger/health para cobertura, mas a entrega deve ocorrer pela superfície do agente dono quando ela existir.
+6. Nunca imprime secrets, JSON bruto ou IDs de cron.
 
 ## Guardrail
 
