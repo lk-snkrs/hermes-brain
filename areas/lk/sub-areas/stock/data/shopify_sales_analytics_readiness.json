@@ -1,13 +1,13 @@
 {
   "status": "ok",
   "source": "shopify_sales_os_db_local_enrichment",
-  "generated_at": "2026-06-14T15:23:53.730756Z",
+  "generated_at": "2026-06-14T18:45:38.025858Z",
   "db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/shopify_sales_os.db",
   "refresh": {
-    "dimension_rows_processed": 1894,
-    "dimension_table_rows": 1866,
+    "dimension_rows_processed": 1895,
+    "dimension_table_rows": 1867,
     "category_rows": {
-      "calcado": 1326,
+      "calcado": 1327,
       "roupa": 466,
       "acessorio": 99,
       "outros": 3
@@ -28,20 +28,20 @@
   },
   "summary": {
     "paid_totals": {
-      "orders": 1809,
-      "units": 2688.0,
-      "revenue": 6244609.22
+      "orders": 1810,
+      "units": 2689.0,
+      "revenue": 6248609.21
     },
     "product_metadata": {
       "products_in_sales": 794,
       "products_with_shopify_metadata": 794,
       "metadata_rows_with_product_type": 772,
-      "latest_product_metadata_sync": "2026-06-14T15:23:45.847775Z"
+      "latest_product_metadata_sync": "2026-06-14T18:45:30.381475Z"
     },
     "category_source": [
       {
         "category_source": "shopify_product_type_tags_v1",
-        "dimension_rows": 1763
+        "dimension_rows": 1764
       },
       {
         "category_source": "heuristic_title_sku_vendor_v1",
@@ -59,9 +59,9 @@
     "by_category": [
       {
         "category": "calcado",
-        "orders": 1471,
-        "units": 2005.0,
-        "revenue": 5730436.39
+        "orders": 1472,
+        "units": 2006.0,
+        "revenue": 5734436.38
       },
       {
         "category": "roupa",
@@ -142,9 +142,9 @@
       {
         "channel_group": "site",
         "category": "calcado",
-        "orders": 890,
-        "units": 1191.0,
-        "revenue": 3409525.58
+        "orders": 891,
+        "units": 1192.0,
+        "revenue": 3413525.57
       },
       {
         "channel_group": "site",
@@ -177,9 +177,9 @@
       },
       {
         "brand_group": "Onitsuka Tiger",
-        "orders": 526,
-        "units": 635.0,
-        "revenue": 1563973.72
+        "orders": 527,
+        "units": 636.0,
+        "revenue": 1567973.71
       },
       {
         "brand_group": "New Balance",
