@@ -1,16 +1,16 @@
 {
   "status": "ok",
   "source": "shopify_sales_os_db_local_enrichment",
-  "generated_at": "2026-06-14T14:36:29.024763Z",
+  "generated_at": "2026-06-14T15:12:25.813902Z",
   "db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/shopify_sales_os.db",
   "refresh": {
-    "dimension_rows_processed": 1892,
-    "dimension_table_rows": 1864,
+    "dimension_rows_processed": 1894,
+    "dimension_table_rows": 1866,
     "category_rows": {
-      "outros": 25,
-      "roupa": 501,
-      "acessorio": 46,
-      "calcado": 1320
+      "calcado": 1326,
+      "roupa": 466,
+      "acessorio": 99,
+      "outros": 3
     }
   },
   "shopify_product_sync": {
@@ -22,58 +22,58 @@
   },
   "summary": {
     "paid_totals": {
-      "orders": 1808,
-      "units": 2687.0,
-      "revenue": 6242109.23
+      "orders": 1809,
+      "units": 2688.0,
+      "revenue": 6244609.22
     },
     "product_metadata": {
       "products_in_sales": 794,
       "products_with_shopify_metadata": 794,
       "metadata_rows_with_product_type": 772,
-      "latest_product_metadata_sync": "2026-06-14T14:36:21.493218Z"
+      "latest_product_metadata_sync": "2026-06-14T15:12:18.052888Z"
     },
     "category_source": [
       {
         "category_source": "shopify_product_type_tags_v1",
-        "dimension_rows": 1727
+        "dimension_rows": 1763
       },
       {
         "category_source": "heuristic_title_sku_vendor_v1",
-        "dimension_rows": 108
+        "dimension_rows": 100
+      },
+      {
+        "category_source": "service_non_product_v1",
+        "dimension_rows": 2
       },
       {
         "category_source": "heuristic_title_sku_vendor_v1_unknown",
-        "dimension_rows": 24
-      },
-      {
-        "category_source": "heuristic_title_sku_vendor_v1_ambiguous",
-        "dimension_rows": 5
+        "dimension_rows": 1
       }
     ],
     "by_category": [
       {
         "category": "calcado",
-        "orders": 1467,
-        "units": 2000.0,
-        "revenue": 5722126.41
+        "orders": 1471,
+        "units": 2005.0,
+        "revenue": 5730436.39
       },
       {
         "category": "roupa",
-        "orders": 342,
-        "units": 543.0,
-        "revenue": 449356.28
+        "orders": 320,
+        "units": 504.0,
+        "revenue": 420203.65
       },
       {
         "category": "acessorio",
-        "orders": 83,
-        "units": 106.0,
-        "revenue": 52178.97
+        "orders": 137,
+        "units": 176.0,
+        "revenue": 92769.18
       },
       {
         "category": "outros",
-        "orders": 32,
-        "units": 38.0,
-        "revenue": 18447.57
+        "orders": 3,
+        "units": 3.0,
+        "revenue": 1200.0
       }
     ],
     "by_channel_category": [
@@ -101,72 +101,65 @@
       {
         "channel_group": "draft_order",
         "category": "acessorio",
-        "orders": 2,
-        "units": 4.0,
-        "revenue": 1679.96
+        "orders": 3,
+        "units": 5.0,
+        "revenue": 2064.95
       },
       {
-        "channel_group": "draft_order",
+        "channel_group": "loja_fisica",
+        "category": "calcado",
+        "orders": 568,
+        "units": 795.0,
+        "revenue": 2269711.0
+      },
+      {
+        "channel_group": "loja_fisica",
+        "category": "roupa",
+        "orders": 169,
+        "units": 278.0,
+        "revenue": 204199.31
+      },
+      {
+        "channel_group": "loja_fisica",
+        "category": "acessorio",
+        "orders": 66,
+        "units": 83.0,
+        "revenue": 52219.11
+      },
+      {
+        "channel_group": "loja_fisica",
+        "category": "outros",
+        "orders": 2,
+        "units": 2.0,
+        "revenue": 700.0
+      },
+      {
+        "channel_group": "site",
+        "category": "calcado",
+        "orders": 890,
+        "units": 1191.0,
+        "revenue": 3409525.58
+      },
+      {
+        "channel_group": "site",
+        "category": "roupa",
+        "orders": 148,
+        "units": 221.0,
+        "revenue": 212374.39
+      },
+      {
+        "channel_group": "site",
+        "category": "acessorio",
+        "orders": 68,
+        "units": 88.0,
+        "revenue": 38485.12
+      },
+      {
+        "channel_group": "site",
         "category": "outros",
         "orders": 1,
         "units": 1.0,
-        "revenue": 384.99
-      },
-      {
-        "channel_group": "loja_fisica",
-        "category": "calcado",
-        "orders": 565,
-        "units": 791.0,
-        "revenue": 2263901.01
-      },
-      {
-        "channel_group": "loja_fisica",
-        "category": "roupa",
-        "orders": 182,
-        "units": 302.0,
-        "revenue": 223791.09
-      },
-      {
-        "channel_group": "loja_fisica",
-        "category": "acessorio",
-        "orders": 36,
-        "units": 46.0,
-        "revenue": 25449.57
-      },
-      {
-        "channel_group": "loja_fisica",
-        "category": "outros",
-        "orders": 17,
-        "units": 19.0,
-        "revenue": 13687.75
-      },
-      {
-        "channel_group": "site",
-        "category": "calcado",
-        "orders": 889,
-        "units": 1190.0,
-        "revenue": 3407025.59
-      },
-      {
-        "channel_group": "site",
-        "category": "roupa",
-        "orders": 157,
-        "units": 236.0,
-        "revenue": 221935.24
-      },
-      {
-        "channel_group": "site",
-        "category": "acessorio",
-        "orders": 45,
-        "units": 56.0,
-        "revenue": 25049.44
-      },
-      {
-        "channel_group": "site",
-        "category": "outros",
-        "orders": 14,
-        "units": 18.0,
-        "revenue": 4374.83
+        "revenue": 500.0
       }
     ],
     "top_brands": [
@@ -178,9 +171,9 @@
       },
       {
         "brand_group": "Onitsuka Tiger",
-        "orders": 525,
-        "units": 634.0,
-        "revenue": 1561473.73
+        "orders": 526,
+        "units": 635.0,
+        "revenue": 1563973.72
       },
       {
         "brand_group": "New Balance",

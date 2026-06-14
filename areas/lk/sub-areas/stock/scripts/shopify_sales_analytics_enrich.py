@@ -29,18 +29,19 @@ DEFAULT_REPORT = ROOT / "data" / "shopify_sales_analytics_readiness.json"
 API_VERSION = os.environ.get("SHOPIFY_API_VERSION", "2024-01")
 
 CLOTHING_RE = re.compile(
-    r"\b(camiseta|cal[cç]a|jaqueta|shorts?|top|vestido|saia|blusa|moletom|hoodie|regata|body|legging|bermuda|casaco|camisa|suti[aã]|meias?|bon[eé]|cropped|su[eé]ter|cardigan|polo|trouser|pants|jacket|shirt|tee)\b",
+    r"\b(camiseta|cal[cç]a|jaqueta|shorts?|top|vestido|saia|blusa|moletom|hoodie|regata|body|legging|bermuda|casaco|camisa|suti[aã]|cueca|pul[oô]ver|cropped|su[eé]ter|cardigan|polo|trouser|pants|jacket|shirt|tee|apparel)\b",
     re.I,
 )
 FOOTWEAR_RE = re.compile(
-    r"\b(t[eê]nis|tenis|slide|crocs|sneaker|sapatilha|bota|sand[aá]lia|sapato|clog|loafer|mule|samba|vomero|9060|204l|530|550|shox|dunk|air force|air max|moon shoe|mind 00[12]|mexico 66|onitsuka|jordan)\b",
+    r"\b(t[eê]nis|tenis|slide|crocs|sneaker|sapatilha|bota|sand[aá]lia|sapato|clog|loafer|mule|samba|vomero|9060|204l|530|550|shox|dunk|air force|air max|moon shoe|mind 00[12]|mexico 66|onitsuka|jordan|dockside|moc toe|tokyo mj|s[eé]zane x new balance)\b",
     re.I,
 )
 ACCESSORY_RE = re.compile(
-    r"\b(lip|spray|kit|bolsa|case|[oó]culos|chaveiro|garrafa|limpeza|repel|blush|peptide|bon[eé]|meias?|meia|bag|cap|hat|socks|wallet|cinto)\b",
+    r"\b(acess[oó]rios?|lip|spray|kit|bolsa|case|[oó]culos|chaveiro|keychain|garrafa|limpeza|repel|blush|peptide|bon[eé]|meias?|meia|luvas?|espelho|pingente|colecion[aá]ve(?:l|is)|brinquedos?|figures?|toy|cleaning|cleaner|manuten[cç][aã]o|bag|cap|hat|socks|wallet|cinto)\b",
     re.I,
 )
 KIDS_RE = re.compile(r"\b(kids?|infantil|crian[cç]a|baby|toddler|gs|ps|td)\b", re.I)
+SERVICE_RE = re.compile(r"\b(frete|cr[eé]dito|credito|shipping)\b", re.I)
 COLLAB_RE = re.compile(r"\bx\b|jacquemus|travis scott|skims|loewe|versace|aim[eé] leon dore|aime leon dore|masp", re.I)
 
 MODEL_PATTERNS: list[tuple[str, str]] = [
@@ -169,6 +170,8 @@ def classify_category_from_official(product_type: str, tags: list[str]) -> tuple
     blob = f"{product_type} {' '.join(tags)}"
     if not blob.strip():
         return None, None, None
+    if SERVICE_RE.search(blob):
+        return "outros", "shopify_product_type_tags_v1_service", 0.99
     if FOOTWEAR_RE.search(blob):
         return "calcado", "shopify_product_type_tags_v1", 0.97
     if CLOTHING_RE.search(blob):
@@ -217,9 +220,12 @@ def model_family(vendor: str, title: str, sku: str) -> str:
 
 def classify_category(vendor: str, title: str, sku: str) -> tuple[str, str, float]:
     blob = f"{vendor} {title} {sku}"
+    is_service = bool(SERVICE_RE.search(blob))
     is_clothing = bool(CLOTHING_RE.search(blob))
     is_footwear = bool(FOOTWEAR_RE.search(blob))
     is_accessory = bool(ACCESSORY_RE.search(blob))
+    if is_service:
+        return "outros", "service_non_product_v1", 0.99
     if is_footwear:
         return "calcado", "heuristic_title_sku_vendor_v1", 0.88
     if is_clothing and not is_accessory:
@@ -418,11 +424,14 @@ def refresh_dimension(con: sqlite3.Connection) -> dict[str, Any]:
         vendor = norm(r["vendor"])
         product_type = norm(r["shopify_product_type"])
         tags = parse_tags(r["shopify_tags_json"])
-        official_cat, official_source, official_confidence = classify_category_from_official(product_type, tags)
-        if official_cat:
-            cat, source, confidence = official_cat, official_source or "shopify_product_type_tags_v1", official_confidence or 0.95
+        if SERVICE_RE.search(f"{vendor} {title} {sku}"):
+            cat, source, confidence = "outros", "service_non_product_v1", 0.99
         else:
-            cat, source, confidence = classify_category(vendor, title, sku)
+            official_cat, official_source, official_confidence = classify_category_from_official(product_type, tags)
+            if official_cat:
+                cat, source, confidence = official_cat, official_source or "shopify_product_type_tags_v1", official_confidence or 0.95
+            else:
+                cat, source, confidence = classify_category(vendor, title, sku)
         bg = brand_group(norm(r["shopify_product_vendor"]) or vendor, norm(r["shopify_product_title"]) or title, sku)
         family = model_family(norm(r["shopify_product_vendor"]) or vendor, norm(r["shopify_product_title"]) or title, sku)
         aud = audience(title, sku)
