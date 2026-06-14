@@ -18,6 +18,7 @@ from typing import Any
 
 DEFAULT_DB = Path(__file__).resolve().parents[1] / "data" / "shopify_sales_os.db"
 DEFAULT_SUMMARY = Path(__file__).resolve().parents[1] / "data" / "shopify_sales_os_summary.json"
+DEFAULT_SEARCH_INDEX = Path(__file__).resolve().parents[1] / "data" / "shopify_sales_search_index.json"
 API_VERSION = os.environ.get("SHOPIFY_API_VERSION", "2024-01")
 GUARDRAILS = {
     "shopify_write": 0,
@@ -246,6 +247,78 @@ def export_summary(con: sqlite3.Connection) -> dict[str, Any]:
     }
 
 
+def export_search_index(con: sqlite3.Connection) -> dict[str, Any]:
+    rows = con.execute("""
+        select
+          coalesce(sku,'') sku,
+          coalesce(product_title,'Produto sem título') product_title,
+          coalesce(variant_title,'—') variant_title,
+          coalesce(vendor,'') vendor,
+          coalesce(brand_group,'Outros') brand_group,
+          coalesce(model_family,'') model_family,
+          coalesce(category,'outros') category,
+          coalesce(category_source,'') category_source,
+          coalesce(channel_group, coalesce(source_name,'unknown')) channel_group,
+          count(distinct shopify_order_id) orders,
+          coalesce(sum(quantity),0) quantity,
+          coalesce(sum(line_revenue_estimate),0) revenue,
+          min(order_created_at_dt) first_order_at,
+          max(order_created_at_dt) last_order_at
+        from shopify_sales_paid_line_items_enriched
+        group by sku, product_title, variant_title, vendor, brand_group, model_family, category, category_source, channel_group
+    """).fetchall()
+    products: dict[tuple[str, str, str], dict[str, Any]] = {}
+    for r in rows:
+        key = (r["sku"] or "", r["product_title"] or "", r["variant_title"] or "")
+        current = products.setdefault(key, {
+            "sku": r["sku"] or "",
+            "product_title": r["product_title"] or "Produto sem título",
+            "variant_title": r["variant_title"] or "—",
+            "vendor": r["vendor"] or "",
+            "brand_group": r["brand_group"] or "Outros",
+            "model_family": r["model_family"] or "",
+            "category": r["category"] or "outros",
+            "category_source": r["category_source"] or "",
+            "orders": 0,
+            "quantity": 0.0,
+            "revenue": 0.0,
+            "channels": {},
+            "first_order_at": r["first_order_at"],
+            "last_order_at": r["last_order_at"],
+        })
+        channel = r["channel_group"] or "unknown"
+        orders = int(r["orders"] or 0)
+        qty = float(r["quantity"] or 0)
+        rev = float(r["revenue"] or 0)
+        current["orders"] += orders
+        current["quantity"] += qty
+        current["revenue"] += rev
+        current["channels"][channel] = {"orders": orders, "quantity": round(qty, 2), "revenue": round(rev, 2)}
+        if r["first_order_at"] and (not current["first_order_at"] or r["first_order_at"] < current["first_order_at"]):
+            current["first_order_at"] = r["first_order_at"]
+        if r["last_order_at"] and (not current["last_order_at"] or r["last_order_at"] > current["last_order_at"]):
+            current["last_order_at"] = r["last_order_at"]
+    items = []
+    for item in products.values():
+        item["quantity"] = round(float(item["quantity"] or 0), 2)
+        item["revenue"] = round(float(item["revenue"] or 0), 2)
+        item["avg_unit_revenue"] = round(item["revenue"] / item["quantity"], 2) if item["quantity"] else 0
+        haystack = " ".join(str(item.get(k) or "") for k in ["sku", "product_title", "variant_title", "vendor", "brand_group", "model_family", "category"]).lower()
+        item["search_text"] = haystack
+        items.append(item)
+    items.sort(key=lambda x: (x["revenue"], x["quantity"]), reverse=True)
+    totals = {"products": len(items), "orders": sum(i["orders"] for i in items), "units": round(sum(i["quantity"] for i in items), 2), "revenue": round(sum(i["revenue"] for i in items), 2)}
+    return {
+        "status": "ok" if items else "empty",
+        "source": "shopify_sales_os_db_paid_active_line_items",
+        "generated_at": now_iso(),
+        "totals": totals,
+        "items": items,
+        "guardrails": GUARDRAILS,
+        "coverage_note": "Índice read-only de vendas pagas/ativas (financial_status=PAID e não canceladas). Não promete disponibilidade pública.",
+    }
+
+
 def shopify_store() -> str:
     store = (os.environ.get("SHOPIFY_STORE_URL") or os.environ.get("SHOPIFY_STORE") or os.environ.get("SHOPIFY_SHOP_NAME") or "").replace("https://", "").replace("http://", "").strip("/")
     if store and not store.endswith(".myshopify.com") and "." not in store:
@@ -346,7 +419,7 @@ def backfill(con: sqlite3.Connection, since: str, until: str | None, limit: int)
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="LK Shopify Sales OS local read-only DB")
     sub = parser.add_subparsers(dest="cmd", required=True)
-    for name in ["init-db", "export-summary", "ingest-file", "ingest-stdin", "backfill"]:
+    for name in ["init-db", "export-summary", "export-search-index", "ingest-file", "ingest-stdin", "backfill"]:
         p = sub.add_parser(name)
         p.add_argument("--db", default=str(DEFAULT_DB))
     p = sub.choices["ingest-file"]
@@ -361,6 +434,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--summary-output", default=str(DEFAULT_SUMMARY))
     p = sub.choices["export-summary"]
     p.add_argument("--output", default=str(DEFAULT_SUMMARY))
+    p = sub.choices["export-search-index"]
+    p.add_argument("--output", default=str(DEFAULT_SEARCH_INDEX))
     p = sub.choices["backfill"]
     p.add_argument("--since", required=True)
     p.add_argument("--until")
@@ -421,6 +496,13 @@ def main(argv: list[str] | None = None) -> int:
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
         print(json.dumps({"status": payload["status"], "output": str(out), "guardrails": GUARDRAILS}, ensure_ascii=False))
+        return 0
+    if args.cmd == "export-search-index":
+        payload = export_search_index(con)
+        out = Path(args.output)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+        print(json.dumps({"status": payload["status"], "output": str(out), "items": payload["totals"]["products"], "guardrails": GUARDRAILS}, ensure_ascii=False))
         return 0
     if args.cmd == "backfill":
         print(json.dumps(backfill(con, args.since, args.until, args.limit), ensure_ascii=False))
