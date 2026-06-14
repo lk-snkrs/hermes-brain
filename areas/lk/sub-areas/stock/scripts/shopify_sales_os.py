@@ -346,7 +346,7 @@ def backfill(con: sqlite3.Connection, since: str, until: str | None, limit: int)
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="LK Shopify Sales OS local read-only DB")
     sub = parser.add_subparsers(dest="cmd", required=True)
-    for name in ["init-db", "export-summary", "ingest-file", "backfill"]:
+    for name in ["init-db", "export-summary", "ingest-file", "ingest-stdin", "backfill"]:
         p = sub.add_parser(name)
         p.add_argument("--db", default=str(DEFAULT_DB))
     p = sub.choices["ingest-file"]
@@ -355,6 +355,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--event-id")
     p.add_argument("--hmac")
     p.add_argument("--webhook-secret", default=os.environ.get("SHOPIFY_WEBHOOK_SECRET", ""))
+    p = sub.choices["ingest-stdin"]
+    p.add_argument("--topic", default=os.environ.get("HERMES_WEBHOOK_EVENT_TYPE") or "orders/paid")
+    p.add_argument("--event-id", default=os.environ.get("HERMES_WEBHOOK_DELIVERY_ID") or None)
+    p.add_argument("--summary-output", default=str(DEFAULT_SUMMARY))
     p = sub.choices["export-summary"]
     p.add_argument("--output", default=str(DEFAULT_SUMMARY))
     p = sub.choices["backfill"]
@@ -372,6 +376,43 @@ def main(argv: list[str] | None = None) -> int:
             print(json.dumps({"status": "failed", "reason": "invalid_hmac", "guardrails": GUARDRAILS}, ensure_ascii=False))
             return 3
         result = upsert_order(con, json.loads(raw.decode()), args.topic, event_id=args.event_id, raw=raw)
+        print(json.dumps(result, ensure_ascii=False))
+        return 0
+    if args.cmd == "ingest-stdin":
+        raw = sys.stdin.buffer.read()
+        try:
+            payload = json.loads(raw.decode("utf-8") or "{}")
+        except Exception:
+            print(json.dumps({"status": "failed", "reason": "invalid_json", "guardrails": GUARDRAILS}, ensure_ascii=False))
+            return 2
+        topic = str(args.topic or "")
+        if topic.startswith("refunds/"):
+            # Refund payloads do not always contain the complete order/line-item
+            # shape needed by the sales read model. Keep an idempotent event
+            # receipt in the ledger by storing the raw refund object as an order
+            # shell only when Shopify includes order_id; otherwise ignore safely.
+            payload = {
+                "id": payload.get("order_id") or payload.get("admin_graphql_api_id") or payload.get("id"),
+                "name": payload.get("order_name") or payload.get("order_id") or payload.get("id"),
+                "created_at": payload.get("created_at") or now_iso(),
+                "updated_at": payload.get("processed_at") or payload.get("created_at") or now_iso(),
+                "cancelled_at": None,
+                "source_name": "shopify_refund_webhook",
+                "financial_status": "refunded",
+                "fulfillment_status": None,
+                "currency": payload.get("currency") or "BRL",
+                "subtotal_price": 0,
+                "total_price": 0,
+                "total_discounts": 0,
+                "total_tax": 0,
+                "line_items": [],
+            }
+        result = upsert_order(con, payload, topic, event_id=args.event_id, raw=raw)
+        summary = export_summary(con)
+        out = Path(args.summary_output)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n")
+        result["summary_output"] = str(out)
         print(json.dumps(result, ensure_ascii=False))
         return 0
     if args.cmd == "export-summary":

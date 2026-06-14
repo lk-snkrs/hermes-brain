@@ -64,6 +64,40 @@ class ShopifySalesOsTest(unittest.TestCase):
                 "auto_purchase": 0,
             })
 
+    def test_ingest_stdin_updates_db_and_summary_for_webhook_runtime(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="shopify-sales-os-") as tmp:
+            db = Path(tmp) / "shopify_sales_os.db"
+            out = Path(tmp) / "summary.json"
+            raw = FIXTURE.read_text(encoding="utf-8")
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(SCRIPT),
+                    "ingest-stdin",
+                    "--db",
+                    str(db),
+                    "--topic",
+                    "orders/updated",
+                    "--event-id",
+                    "delivery-stdin-1",
+                    "--summary-output",
+                    str(out),
+                ],
+                input=raw,
+                cwd=ROOT,
+                text=True,
+                capture_output=True,
+                check=False,
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+            payload = json.loads(result.stdout)
+            self.assertEqual(payload["status"], "processed")
+            self.assertEqual(payload["guardrails"]["external_write"], 0)
+            self.assertTrue(out.exists())
+            summary = json.loads(out.read_text())
+            self.assertEqual(summary["totals"]["orders"], 1)
+            self.assertEqual(summary["totals"]["units"], 6)
+
 
 if __name__ == "__main__":
     unittest.main()
