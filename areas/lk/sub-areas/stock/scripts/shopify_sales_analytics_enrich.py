@@ -25,7 +25,9 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DB = ROOT / "data" / "shopify_sales_os.db"
-DEFAULT_REPORT = ROOT / "data" / "shopify_sales_analytics_readiness.json"
+DEFAULT_REPORT = ROOT / "data/shopify_sales_analytics_readiness.json"
+DEFAULT_OVERRIDES = ROOT / "data/shopify_sales_category_overrides.json"
+HERMES_CLI_RUN = Path("/opt/data/home/.local/bin/hermes-cli-run")
 API_VERSION = os.environ.get("SHOPIFY_API_VERSION", "2024-01")
 
 CLOTHING_RE = re.compile(
@@ -299,8 +301,23 @@ def init_schema(con: sqlite3.Connection) -> None:
           updated_at TEXT,
           synced_at TEXT NOT NULL
         );
+        CREATE TABLE IF NOT EXISTS shopify_sales_category_overrides (
+          product_key TEXT PRIMARY KEY,
+          match_title TEXT,
+          match_sku TEXT,
+          category TEXT NOT NULL,
+          category_source TEXT NOT NULL,
+          category_confidence REAL NOT NULL,
+          brand_group TEXT,
+          model_family TEXT,
+          reason TEXT,
+          approved_by TEXT,
+          created_at TEXT,
+          synced_at TEXT NOT NULL
+        );
         CREATE INDEX IF NOT EXISTS idx_sales_product_metadata_type ON shopify_sales_product_metadata(product_type);
         """
+
     )
     # Backfill columns when upgrading an existing local DB.
     existing_cols = {r[1] for r in con.execute("PRAGMA table_info(shopify_sales_product_dimension)").fetchall()}
@@ -398,8 +415,56 @@ def sync_shopify_product_metadata(con: sqlite3.Connection, *, only_missing: bool
     return {"status": "ok", "requested_products": len(product_ids), "synced_products": synced, "missing_products": missing, "values_printed": False}
 
 
+
+def sync_category_overrides(con: sqlite3.Connection, path: Path = DEFAULT_OVERRIDES) -> dict[str, Any]:
+    """Load audited manual category overrides from JSON into SQLite.
+
+    Overrides are intentionally narrow: use them only for legacy/no-metadata rows
+    where the default classifier cannot produce an evidence-based source.
+    """
+    init_schema(con)
+    con.execute("DELETE FROM shopify_sales_category_overrides")
+    if not path.exists():
+        con.commit()
+        return {"status": "missing", "path": str(path), "overrides": 0, "values_printed": False}
+    data = json.loads(path.read_text())
+    overrides = data.get("overrides", [])
+    now = datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+    for item in overrides:
+        product_key = norm(item.get("product_key")) or product_key_for("", "", norm(item.get("match_title")), norm(item.get("match_sku")))
+        category = norm(item.get("category"))
+        source = norm(item.get("category_source")) or "manual_review_v1"
+        confidence = float(item.get("category_confidence", 0.99))
+        if not product_key or category not in {"calcado", "roupa", "acessorio", "outros"}:
+            raise ValueError(f"invalid category override: {item!r}")
+        con.execute(
+            """
+            INSERT INTO shopify_sales_category_overrides(
+              product_key, match_title, match_sku, category, category_source, category_confidence,
+              brand_group, model_family, reason, approved_by, created_at, synced_at
+            ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+            """,
+            (
+                product_key,
+                norm(item.get("match_title")),
+                norm(item.get("match_sku")),
+                category,
+                source,
+                confidence,
+                norm(item.get("brand_group")),
+                norm(item.get("model_family")),
+                norm(item.get("reason")),
+                norm(item.get("approved_by")),
+                norm(item.get("created_at")),
+                now,
+            ),
+        )
+    con.commit()
+    return {"status": "ok", "path": str(path), "overrides": len(overrides), "values_printed": False}
+
 def refresh_dimension(con: sqlite3.Connection) -> dict[str, Any]:
     init_schema(con)
+    override_payload = sync_category_overrides(con)
     # Derived table: rebuild deterministically each run so changes to product_key
     # logic/classifiers do not leave stale dimension rows behind.
     con.execute("DELETE FROM shopify_sales_product_dimension")
@@ -424,7 +489,16 @@ def refresh_dimension(con: sqlite3.Connection) -> dict[str, Any]:
         vendor = norm(r["vendor"])
         product_type = norm(r["shopify_product_type"])
         tags = parse_tags(r["shopify_tags_json"])
-        if SERVICE_RE.search(f"{vendor} {title} {sku}"):
+        product_key = make_key(r)
+        override = con.execute(
+            "SELECT * FROM shopify_sales_category_overrides WHERE product_key=?",
+            (product_key,),
+        ).fetchone()
+        if override:
+            cat = override["category"]
+            source = override["category_source"]
+            confidence = float(override["category_confidence"])
+        elif SERVICE_RE.search(f"{vendor} {title} {sku}"):
             cat, source, confidence = "outros", "service_non_product_v1", 0.99
         else:
             official_cat, official_source, official_confidence = classify_category_from_official(product_type, tags)
@@ -436,7 +510,6 @@ def refresh_dimension(con: sqlite3.Connection) -> dict[str, Any]:
         family = model_family(norm(r["shopify_product_vendor"]) or vendor, norm(r["shopify_product_title"]) or title, sku)
         aud = audience(title, sku)
         blob = f"{vendor} {title} {sku}"
-        product_key = make_key(r)
         category_counts[cat] = category_counts.get(cat, 0) + 1
         con.execute(
             """
@@ -560,7 +633,7 @@ def refresh_dimension(con: sqlite3.Connection) -> dict[str, Any]:
     )
     con.commit()
     table_rows = con.execute("SELECT count(*) FROM shopify_sales_product_dimension").fetchone()[0]
-    return {"dimension_rows_processed": updated, "dimension_table_rows": int(table_rows), "category_rows": category_counts}
+    return {"dimension_rows_processed": updated, "dimension_table_rows": int(table_rows), "category_rows": category_counts, "category_overrides": override_payload}
 
 
 def fetch_summary(con: sqlite3.Connection) -> dict[str, Any]:
