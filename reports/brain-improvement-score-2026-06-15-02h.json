@@ -1,0 +1,128 @@
+{
+  "date": "2026-06-15",
+  "overall_score": 100,
+  "dimensions": [
+    {
+      "key": "agents",
+      "label": "Identidade e agentes",
+      "score": 100,
+      "reason": "Agentes principais têm estrutura operacional; penalização aplicada apenas para arquivos obrigatórios ausentes.",
+      "evidence": [
+        "Agentes avaliados: 7",
+        "Arquivos obrigatórios faltantes: 0"
+      ],
+      "recommendations": []
+    },
+    {
+      "key": "maps",
+      "label": "MAPAs e navegação",
+      "score": 100,
+      "reason": "Navegação executiva depende dos arquivos de entrada e MAPAs por área/subárea.",
+      "evidence": [
+        "Arquivos de entrada ausentes: 0",
+        "Diretórios com MAPA.md: 28"
+      ],
+      "recommendations": []
+    },
+    {
+      "key": "routines",
+      "label": "Rotinas e crons",
+      "score": 99,
+      "reason": "Rotinas documentadas estão indexadas; o score não afirma execução real de cron.",
+      "evidence": [
+        "Rotinas documentadas: 386",
+        "Cobertura aproximada no índice por nome de arquivo: 377/386"
+      ],
+      "recommendations": [
+        "Manter a separação: rotina documentada não prova cron ativo; verificar runtime/VPS quando a pergunta for operacional."
+      ]
+    },
+    {
+      "key": "skills",
+      "label": "Skills e procedimentos",
+      "score": 100,
+      "reason": "Avalia SKILL.md canônicos por índice e health check; markdowns de referência não são penalizados como skills independentes.",
+      "evidence": [
+        "SKILL.md canônicos em skills/: 10",
+        "Cobertura aproximada no índice: 10/10",
+        "Markdowns de referência preservados sem penalização: 31"
+      ],
+      "recommendations": [
+        "Transformar fluxos repetidos em skills apenas depois de repetição real, evitando burocracia."
+      ]
+    },
+    {
+      "key": "security",
+      "label": "Segurança, secrets e aprovações",
+      "score": 100,
+      "reason": "Avalia docs de permissão e resultado do check de secrets; não consulta valores de credenciais.",
+      "evidence": [
+        "Arquivos de segurança ausentes: 0",
+        "Health check secrets: FAIL=0 WARN=0"
+      ],
+      "recommendations": []
+    },
+    {
+      "key": "integrations",
+      "label": "Integrações",
+      "score": 100,
+      "reason": "Mede cobertura dos docs canônicos por ferramenta, não saúde das APIs ou permissões reais.",
+      "evidence": [
+        "Docs canônicos encontrados: 10/10"
+      ],
+      "recommendations": []
+    },
+    {
+      "key": "tracking",
+      "label": "Roadmap, changelog e pendências",
+      "score": 100,
+      "reason": "Avalia rastreabilidade executiva pela fila compacta de pendências; arquivo detalhado serve como evidência, não como segunda fila duplicada.",
+      "evidence": [
+        "Arquivos de tracking ausentes: 0",
+        "Checkboxes abertos na fila compacta: 12",
+        "Checkboxes concluídos na fila compacta: 16",
+        "Arquivo detalhado consultado: abertos=12 concluídos=9"
+      ],
+      "recommendations": [
+        "Manter pendências como fila acionável, não log de sessão."
+      ]
+    },
+    {
+      "key": "consistency",
+      "label": "Links, arquivos e consistência",
+      "score": 100,
+      "reason": "Traduz o health check técnico em leitura executiva.",
+      "evidence": [
+        "Health check usado: reports/brain-health-check-2026-06-15-02h.json",
+        "FAIL=0 WARN=0",
+        "Disponível: True",
+        "JSON parse_ok: True"
+      ],
+      "recommendations": []
+    }
+  ],
+  "health_check": {
+    "path": "reports/brain-health-check-2026-06-15-02h.json",
+    "available": true,
+    "fail_count": 0,
+    "warn_count": 0
+  },
+  "safe_recommendations": [
+    "Manter a separação: rotina documentada não prova cron ativo; verificar runtime/VPS quando a pergunta for operacional.",
+    "Transformar fluxos repetidos em skills apenas depois de repetição real, evitando burocracia.",
+    "Manter pendências como fila acionável, não log de sessão."
+  ],
+  "requires_lucas_approval": [
+    "Cron recorrente ou entrega automática por Telegram para este score.",
+    "UI/Mission Control visual ou painel operacional permanente.",
+    "Qualquer alteração em produção, VPS/Docker/Traefik/volumes/redes, banco, secrets, campanhas ou mensagens externas."
+  ],
+  "non_changes": [
+    "Produção",
+    "VPS/Docker/Traefik/volumes/redes",
+    "Bancos e dados vivos",
+    "Secrets/credenciais",
+    "Campanhas, WhatsApp, email, posts e contatos externos",
+    "Cron, UI e runtime"
+  ]
+}
