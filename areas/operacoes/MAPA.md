@@ -16,6 +16,9 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `../../reports/governance/handoff-lc-hermes-subagent-context-systemwide-2026-06-06.md` — handoff aprovado para o LC Hermes promover essa regra no sistema inteiro, não apenas no Mordomo.
 - `handoffs/handoff-lc-hermes-brain-fonte-viva-governance-20260609T000522Z.md` — handoff Mordomo → LC Hermes para promover a regra “Brain guarda resumo/índice/governança; bases grandes e dados vivos ficam em fonte viva consultável”.
 - `inventarios/crons-agentes-profiles.md` — inventário vivo de agentes, profiles, bots, crons, conversas/projetos e cobertura do Fechamento Ágil 23h.
+- `runtime/hermes-os-registry-2026-06-14.md` — snapshot canônico dos OS/camadas operacionais rodando hoje: Memory OS, Brain OS, Mordomo OS, Stock OS, Reminder OS, Mesa COO, Zipper OS vendas, LK Shopify Sales OS e profiles especialistas vivos.
+- `runtime/nightly-ops-audit-matrix.md` — matriz do Hermes Nightly Operations Audit OS: auditoria 02h50 BRT de agentes/sistemas/scripts/crons, Brain OS 02h25, autoheal A0/A1 e integração com digest 03h.
+- `runtime/hermes-principal-scorecard-0-100.md` — contrato do score 0–100 para os sistemas principais do Hermes, calculado pela auditoria 02h50 e exibido no digest obrigatório das 03h.
 - `mordomo/MAPA.md` — ponte canônica mínima para Mordomo/Lucas pessoal, sem criar runtime ou agente novo.
 - `mordomo/LC-MORDOMO-CENTRAL-SOUL-2026-06-05.md` — SOUL v0.1 do LC Mordomo Central: identidade, missão, autonomia A0-A4, interface única, subagentes e learning loop.
 - `mordomo/subagent-registry-2026-06-05.md` — registry v0.1 dos subagentes lógicos/operacionais do LC Mordomo OS e regra de promoção para profile/runtime separado.
@@ -24,6 +27,8 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 
 - `prds/hermes-memory-os-v1-prd-2026-06-09.md` — PRD/R&D do Memory OS v1 executado em escopo local/silent-OK: checker diurno, cron no_agent local, dashboard documental, sem provider externo e sem mutação runtime sensível.
 - `prds/reminder-os-prd-v1-2026-06-12.md` — PRD v1 do Reminder OS: camada cross-agent de continuidade com ledger, Kanban, watchdog 2h, ingress/template audit e health gate silent-OK.
+- `prds/hermes-systemwide-auto-remediation-prd-2026-06-14.md` — PRD sistêmico: erro identificado por Hermes/agente/script/cron vira correção iniciada quando seguro; A3/A4 viram approval packet específico.
+- `prds/hermes-nightly-ops-audit-os-prd-2026-06-14.md` — PRD aprovado para auditoria transversal noturna de crons/scripts/agentes/sistemas; emenda 2026-06-15 moveu Brain OS para 02h25, auditoria para 02h50 e manteve digest diário às 03h.
 
 ## Rotinas principais
 
@@ -56,7 +61,9 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/skills-effectiveness-review.md` — revisão de efetividade de skills para detectar erro repetido, skill inchada/desatualizada e aprendizado no lugar errado.
 - `rotinas/agent-operating-modes-fast-deep.md` — contrato de modos operacionais dos agentes: fast lane, deep work, no_agent watchdog, approval packet e handoff/delegation.
 - `rotinas/configured-vs-active-scorecard.md` — scorecard read-only para separar documented/configured/active/verified por profile, gateway, plataforma, modelo, toolset, cron e watchdog.
-- `reminder-os/README.md` — hub operacional do Reminder OS: ledger local, schema, watchdog 2h, auditorias de ingress/templates e health gate agregado.
+- `rotinas/reminder-os-v0-2026-06-12.md` — rotina cross-agent de continuidade com ledger, Kanban `reminder-os`, watchdog 2h silent-OK e contratos de ingress/template/health.
+- `rotinas/hermes-auto-remediation-contract.md` — contrato sistêmico: falhas detectadas por Hermes/agentes/scripts/crons devem iniciar correção segura automaticamente ou gerar approval packet específico se sensíveis.
+- `rotinas/hermes-autoheal-coverage-matrix.md` — matriz de cobertura que separa detector, autoheal A0/A1 permitido, boundary de approval packet e backlog sensível.
 - `plans/reminder-os-v1-implementation-plan-2026-06-12.md` — plano/execução faseada do Reminder OS v1.
 
 - `rotinas/brain-operating-layer.md` — camada Hermes-native que transforma o padrão Bruno/OpenClaw em operação viva com receipts, approvals, runtime truth e watchdogs.

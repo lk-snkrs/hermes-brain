@@ -128,3 +128,9 @@ Fase 1, local e sem envio externo:
 - Salvar estágio no CRM/Customer 360.
 - Mostrar “próxima melhor ação” por conversa no Dashboard.
 - Criar fila de “responder por voz” separada de follow-ups automáticos.
+
+## Auto-remediação
+
+- Falhas A0/A1 detectadas por esta rotina/documento devem iniciar correção local segura imediatamente: ajustar documentação, índice, relatório, classificação, checklist ou reexecutar verificação local quando aplicável.
+- Se a correção exigir produção, runtime, cron schedule/delivery, Docker/VPS/Traefik, credencial/secret, envio externo, banco ou integração produtiva, interromper antes da mutação e gerar approval packet com alvo, risco, rollback/readback e verificação.
+- Sucesso saudável permanece silent-OK/local; Telegram só recebe decisão, exceção atual ou blocker acionável.

@@ -107,6 +107,12 @@ Se qualquer gate falhar, abortar antes do commit/push.
 - Falha de secret scan, conflito/push, erro Git ou risco crítico: reportar como exceção curta para Lucas quando o job tiver canal de mensagem habilitado.
 - Nunca imprimir segredo; reportar apenas caminho e tipo de padrão detectado.
 
+## 6.1 Auto-remediação
+
+- Falhas A0/A1 do sync seguro — arquivo fora de allowlist, conflito local reexecutável, relatório bruto que precisa de síntese, índice/MAPA faltando, health check local reexecutável — devem iniciar correção local/documental ou gerar síntese/approval packet antes de alertar Lucas.
+- Secret scan positivo, push remoto, credencial, GitHub auth, cron schedule/delivery, runtime, Docker/VPS/Traefik ou qualquer write externo continuam approval-gated; nesses casos, abortar antes da mutação e registrar alvo, causa, rollback e verificação esperada.
+- Bloqueio por allowlist é proteção normal; só vira alerta se houver mudança Brain importante que precise ser promovida para documentação permitida.
+
 ## 7. Relação com Fechamento Ágil 23h
 
 O `Fechamento Ágil 23h` escreve `reports/daily-consolidation/YYYY-MM-DD.md` e, depois da validação local, chama o Brain Sync seguro.

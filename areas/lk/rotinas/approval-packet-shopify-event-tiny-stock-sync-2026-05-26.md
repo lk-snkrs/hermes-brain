@@ -79,3 +79,21 @@ Aprovar Fase A + B em modo seguro:
 Aprovação sugerida:
 
 > Aprovo Fase A+B: implementar e ativar o dry-run do sync Shopify evento → Tiny estoque, para `orders/paid` e `orders/cancelled`, sem write Shopify/Tiny e com ledger de bloqueios.
+
+## Complemento de completude do approval packet — 2026-06-14
+
+### Decisão solicitada / ação proposta
+- Decisão solicitada: aprovar ou bloquear a Fase A+B em modo dry-run para o fluxo Shopify event → Tiny stock truth → Shopify inventory.
+- Ação proposta nesta fase: implementar/validar processor, HMAC, idempotência, consulta Tiny, ledger e relatório, sem write Shopify/Tiny.
+
+### Target / owner
+- Target: eventos Shopify `orders/paid` e `orders/cancelled` da LK Sneakers e consulta de estoque Tiny no depósito `LK | CONTROLE ESTOQUE`.
+- Owner operacional: LK Operações / LK Shopify, com governança Hermes Geral e aprovação Lucas.
+
+### Escopo permitido
+- Escopo permitido para Fase A+B: dry-run, testes locais, validação HMAC, deduplicação, resolução de SKU/variante, consulta Tiny read-only, ledger e relatório de bloqueios.
+- Pode fazer readback/validação local e registrar receipt; não pode efetuar write de estoque.
+
+### Secret hygiene
+- Usar Shopify/Tiny somente via Doppler/wrappers aprovados; não imprimir tokens, API keys, passwords, refresh tokens, service-account JSON ou connection strings.
+- Logs, ledger e receipts devem declarar `values_printed=false` e redigir qualquer valor sensível como `[REDACTED]`.

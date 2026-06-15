@@ -93,4 +93,6 @@ Escopo autorizado:
 - [ ] O receipt completo ficou no Brain?
 - [ ] O receipt novo foi criado pelo wrapper v1.5 ou teve hook Memory OS executado?
 - [ ] Se há próximo passo aberto, existe campo Reminder OS ou loop criado/encaminhado?
+- [ ] Se foi identificado erro A0/A1, a correção local segura já foi iniciada/verificada antes de alertar?
+- [ ] Se o erro é A2/A3/A4, a mensagem traz approval packet específico com alvo, risco, rollback/readback e verificação?
 - [ ] OK rotineiro ficou silencioso?

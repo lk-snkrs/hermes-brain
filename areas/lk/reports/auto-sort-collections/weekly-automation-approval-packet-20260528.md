@@ -75,3 +75,35 @@ Como `APPLY=1` faz Shopify write recorrente, exige aprovação explícita de Luc
 
 Frase sugerida para aprovação:
 > Aprovado habilitar cron semanal com APPLY=1 para LK Sort Manual Regra B todo domingo às 06:00 BRT.
+
+## Complemento de completude do approval packet — 2026-06-14
+
+### Target / owner
+- Target: coleções Shopify manuais da LK Sneakers cobertas pela Regra B LK Sort Manual.
+- Owner operacional: LK Growth / LK Shopify, com governança Hermes Geral para aprovação e receipt.
+
+### Escopo permitido
+- Escopo permitido somente após aprovação explícita: instalar ou executar a rotina semanal descrita para reordenar coleções manuais via `collectionReorderProducts`.
+- Pode fazer: gerar snapshot pré-write, calcular ranking, aplicar reorder apenas nas coleções elegíveis, fazer readback e salvar receipt.
+
+### O que continua bloqueado
+- Não pode fazer mudanças em produto, preço, estoque, tags, SEO, tema, checkout, GMC, campanhas, clientes, Klaviyo, Tiny ou criação/publicação de coleções.
+- Não pode mudar cron/schedule/delivery/runtime sem aprovação específica do cron recorrente.
+
+### Risco
+- Risco principal: alteração recorrente da ordem pública das coleções manuais no storefront se o cron com `APPLY=1` for aprovado.
+- Blast radius limitado às coleções manuais elegíveis; qualquer falha de fonte crítica deve bloquear apply.
+
+### Verificação / readback
+- Verificação obrigatória: comparar snapshot pré-write com plano aplicado, ler a ordem completa no Shopify Admin, validar Top 12 público por coleção afetada e registrar receipt JSON/MD.
+- Se Shopify, GA4 ou Tiny snapshot falhar, bloquear apply e registrar causa sanitizada.
+
+### Opções de aprovação
+- Aprovar cron recorrente com `APPLY=1` no horário definido.
+- Aprovar apenas dry-run recorrente, mantendo apply manual.
+- Ajustar frequência/horário/coleções antes de qualquer execução.
+- Bloquear a automação.
+
+### Secret hygiene
+- Usar credenciais somente via Doppler/wrapper seguro; não imprimir tokens, previews, refresh tokens, passwords ou connection strings.
+- Relatórios e receipts devem declarar `values_printed=false` e redigir qualquer valor sensível como `[REDACTED]`.

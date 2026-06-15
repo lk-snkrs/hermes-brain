@@ -1,6 +1,6 @@
 # Pendências executivas — Hermes Brain
 
-Última revisão: 2026-05-16
+Última revisão: 2026-06-14
 Rotina aplicada: `areas/operacoes/rotinas/memory-hygiene-pendencias.md`
 
 ## Revisão 2026-05-16 — Amora/Hermes identidade
@@ -30,7 +30,7 @@ Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a 
 
 - [x] **Rodar primeira revisão sob demanda com a nova identidade Hermes Geral** — Operações/Multiempresa — concluído em 2026-05-16 em modo read-only/local; escopo Hermes/Infra, LK OS, Zipper e SPITI; sem cron novo, contato externo, deploy ou write produtivo. Evidência: `reports/revisao-operacional-multiempresa-hermes-geral-2026-05-16.md`.
 - [x] **Concluir higiene pós-Amora da memória executiva compacta** — Operações/Governança — `memories/pending.md` atualizado em 2026-05-16 com resumo atual e separação entre ativos, bloqueados, aguardando e concluídos; sem apagar histórico útil.
-- [ ] **Implementar gaps P0 da auditoria BRUNO-ATUAL → Hermes Brain** — Operações/Brain — relatório concluído em 2026-05-19 (`reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md`) com nota geral 8,0/10. Próximas ações recomendadas: criar camada `hot/current`, inventário vivo de crons/bots/profiles, auditoria de skills, reconciliação Mission Control e documentação completa do Mordomo. Sem runtime/externo/prod alterado nesta auditoria.
+- [x] **Gaps P0 da auditoria BRUNO-ATUAL → Hermes Brain** — Operações/Brain — pacote documental concluído em ondas posteriores: camada `hot/current`, inventário vivo de crons/bots/profiles, auditoria de skills e documentação Mordomo foram promovidos para Brain OS/Memory OS/organograma. Mission Control permanece como pendência dedicada separada, não como P0 geral. Evidência-base: `reports/bruno-atual-hermes-adaptation-audit-2026-05-19.md` + relatórios Brain OS/Memory OS de junho.
 
 - [x] **Gerar primeiro Stock Intelligence real/read-only da LK com sourcing acionado por sinal** — LK/Stock/Sourcing — concluído em 2026-05-10 com `reports/lk-stock-influencer-audit-readonly-2026-05-10.md`. Correção posterior: SKU Shopify é canônico para matching e Tiny deve ser mapeado/normalizado para Shopify; leitura Meta influencer precisa usar janela/período corretos e nomes em campaign/adset/ad antes de claim comercial.
 - [x] **Criar mapa canônico SKU Shopify ↔ Tiny** — LK/Stock/Data Quality — preview read-only gerado em 2026-05-10: `reports/lk-sku-shopify-tiny-map-preview-2026-05-10.md`. Resultado: 6/6 campeões antes marcados como `mapear SKU no Tiny` tiveram candidato Tiny encontrado com confiança alta; tabela de aprovação gerada em `reports/lk-sku-tiny-alias-approval-preview-2026-05-10.md`; nenhum write produtivo executado.
@@ -54,8 +54,8 @@ Critério: manter aqui somente pendências acionáveis ou bloqueios que mudam a 
 
 ## Aguardando data/evento
 
-- [ ] **Hermes release watch** — Operações — próximo evento: cron semanal `Hermes release watch` agendado para 2026-05-11 09:00 UTC; post-check one-shot às 09:15 UTC. Evidência: `cronjob list` em 2026-05-09.
-- [ ] **Revisão mensal/arquivamento de pendências antigas** — Governança — próximo check recomendado: 2026-05-26, conforme consolidação de 2026-04-28. Evidência: `memories/consolidation_weekly/2026-04-28.md`.
+- [ ] **Hermes release watch** — Operações — monitoramento recorrente já foi incorporado à rotina de melhoria contínua; manter aqui apenas se um novo release gerar decisão acionável. Evidência: `reports/hermes-release-watch/latest.json`.
+- [ ] **Revisão mensal/arquivamento de pendências antigas** — Governança — próximo check recomendado: 2026-06-30; rotina: compactar a fila executiva sem transformar pendências em log de sessão.
 - [ ] **SPITI email poller / monitor de leilão** — SPITI — aguardando novo leilão ou necessidade operacional; sem auction previsto até agosto/2026 nos registros antigos. Evidência: `memories/decisions.md` e `ROADMAP-30-DIAS-HERMES.md`.
 
 ## Concluídos nesta revisão

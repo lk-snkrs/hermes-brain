@@ -51,6 +51,12 @@ reports/brain-weekly-panel/brain-weekly-panel-YYYY-MM-DD.md
 - Não fazer writes externos além de documentação/GitHub via Brain Sync seguro.
 - Telegram só para exceção crítica; relatório normal fica no Brain/local.
 
+## Auto-remediação
+
+- Se o painel encontrar falha A0/A1 de documentação, índice, MAPA, relatório local ou health check reexecutável, iniciar correção local segura e verificar antes de alertar.
+- Se o achado exigir GitHub push, runtime, cron, Docker/VPS/Traefik, segredo, integração externa ou dado produtivo, gerar approval packet com alvo, rollback e verificação em vez de executar implicitamente.
+- Bloqueios esperados do Brain Sync devem ser classificados como `comportamento correto` quando forem proteção de allowlist/secret scan, não como incidente.
+
 ## Critério de sucesso
 
 - Relatório semanal criado.

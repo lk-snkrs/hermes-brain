@@ -85,3 +85,31 @@ Materializei o Approval Manager em SQLite local e Brain: agora os gates principa
 - purchase
 - supplier_contact
 - cron_creation
+
+## Complemento de completude do approval packet — 2026-06-14
+
+### Decisão solicitada / ação proposta
+- Decisão solicitada: tratar estas regras como camada local de governança do LK OS, sem transformar o documento em autorização para ações produtivas.
+- Ação proposta se aprovado em wave futura: usar as regras como checklist/gate para approval packets, previews e blockers dos domínios listados.
+
+### Escopo permitido
+- Escopo permitido neste artefato: consulta local/read-only das regras, documentação, validação de packets e geração de previews/rascunhos.
+- Pode fazer: classificar ações por domínio, apontar exigência de aprovação e bloquear execução quando faltar approval packet escopado.
+
+### O que continua bloqueado
+- Não pode enviar e-mail/WhatsApp/campanha, fazer Shopify/Tiny/Merchant/Meta/Klaviyo writes, compra, contato com fornecedor, criação de cron ou qualquer execução externa/produtiva apenas com base neste documento.
+- `seguir`, `fazer tudo` ou aprovação genérica continuam limitados ao pacote seguro já validado; novo alvo exige novo approval packet.
+
+### Risco
+- Risco principal: interpretar regras de governança como permissão de execução. Mitigação: fail-closed, approval packet específico e receipt/readback antes de qualquer write sensível.
+- Risco adicional: regra desatualizada; mitigar com revisão periódica e evidência viva antes de agir.
+
+### Opções de aprovação
+- Aprovar uso local/read-only das regras como checklist/gate.
+- Aprovar uma regra específica para virar teste/validator local.
+- Pedir ajuste em uma regra antes de adoção.
+- Bloquear qualquer uso além de referência histórica.
+
+### Secret hygiene
+- Não armazenar nem imprimir tokens, API keys, passwords, refresh tokens, service-account JSON ou connection strings nas regras, relatórios ou receipts.
+- Quando houver validação com integrações, usar Doppler/wrapper seguro e registrar apenas `values_printed=false`.

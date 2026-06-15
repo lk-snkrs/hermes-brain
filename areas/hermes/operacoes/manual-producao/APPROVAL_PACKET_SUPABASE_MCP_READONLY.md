@@ -110,3 +110,15 @@ Para executar runtime/config, Lucas deve aprovar com escopo parecido com:
 > Aprovo configurar Supabase MCP read-only no profile `<profile>`, para o projeto `<Zipper/SPITI/LK>`, usando secrets Doppler `<nomes>`, sampling off, sem mutations, com backup de config, restart apenas do profile alvo e rollback restaurando o config anterior.
 
 Sem essa frase, o trabalho fica em documentação e discovery read-only.
+
+## Completeness hardening — 2026-06-14
+
+Target / owner: profile alvo escolhido por Lucas (`hermes-ops-readonly`, `spiti` ou profile dedicado futuro para Zipper); responsável operacional: Hermes, com Lucas aprovando o escopo antes de qualquer runtime/config.
+
+Escopo permitido: somente configurar/testar o MCP Supabase em modo read-only para o projeto/profile explicitamente aprovado, usando wrapper Doppler, sampling off, backup de config, restart apenas do profile alvo se necessário, schema discovery e uma query `select` pequena com limite baixo.
+
+O que continua bloqueado: nenhum write SQL, DDL/DML, RPC mutável, gestão de auth/users/storage/secrets, export em massa, acesso cross-empresa, Main/default amplo, Docker/VPS/Traefik, alteração de cron, gateway global ou qualquer mutation.
+
+Verificação: confirmar backup criado, config sem valores de secrets, logs sem secrets, tool discovery do MCP no profile alvo, query read-only pequena com `limit <= 20`, ausência de mutations, receipt sanitizado no Brain e rollback testável removendo o MCP do profile alvo.
+
+Secret hygiene: `values_printed=false`; usar somente nomes de secrets Doppler, nunca valores/previews/tokens/service keys em Telegram, logs, receipts ou YAML direto.

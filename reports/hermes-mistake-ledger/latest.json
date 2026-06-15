@@ -3,9 +3,9 @@
   "patterns": [
     {
       "next_safe_action": "inspect the exact profile cron output and create a scoped fix/approval packet; do not generalize to Docker failure.",
-      "object": "LK AI/GEO Endpoints Monitor",
-      "pattern": "recurring_cron_non_ok",
-      "seen_count": 4,
+      "object": "LK Stock Tiny sharded full sync nightly read-only",
+      "pattern": "new_cron_non_ok",
+      "seen_count": 1,
       "why_it_causes_errors": "Agents may report governance healthy while a specialist cron is failing."
     },
     {
@@ -17,6 +17,6 @@
     }
   ],
   "patterns_count": 2,
-  "updated_at": "2026-06-13T05:01:48.333088+00:00",
+  "updated_at": "2026-06-14T05:01:42.996817+00:00",
   "values_printed": false
 }

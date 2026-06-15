@@ -81,3 +81,13 @@ Para eu ativar a recorrência APPLY, responda exatamente ou de forma equivalente
 **APROVO RULE B APPLY RECORRENTE**
 
 Sem essa aprovação, o cron permanece em dry-run.
+
+## Completeness hardening — 2026-06-14
+
+Target / owner: cron `787134d4ac5c` / `LK Weekly Collection Sort Rule B`; owner lógico LK Growth/Shopify merchandising; execução somente por Hermes/LK com aprovação atual de Lucas para recorrência APPLY.
+
+Escopo permitido: criar wrapper APPLY recorrente, trocar somente o script desse cron para o wrapper, validar sintaxe/localmente e conferir por listagem de cron que apenas esse job mudou.
+
+O que continua bloqueado: não alterar outros crons, não executar APPLY manual extra, não mudar lógica Rule B, não tocar produtos/preços/estoque/tags/SEO/GMC/tema/campanhas/clientes, não mexer em Docker/VPS/Traefik/gateway/providers/secrets.
+
+Secret hygiene: `values_printed=false`; qualquer receipt/log deve omitir tokens, envs sensíveis, previews de credenciais e payloads desnecessários.

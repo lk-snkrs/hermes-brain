@@ -76,3 +76,21 @@ Sem uma dessas frases, continuar só em preview/read-only.
 - Shopify write
 - feed fetch/upload
 - campanha/envio/contato externo
+
+## Complemento de completude do approval packet — 2026-06-14
+
+### Target / owner
+- Target: Google Merchant Center / ProductInputs da LK Sneakers para os IDs exatos dos pacotes A e/ou B descritos neste preview.
+- Owner operacional: LK Growth / GMC, com governança Hermes Geral e aprovação final Lucas.
+
+### Escopo permitido
+- Escopo permitido somente após aprovação textual explícita de uma das opções: pacote A price-only 10 IDs, pacote A price-only 42 IDs ou pacote B DRAFT/404 20 IDs.
+- Pode fazer: executar apenas o pacote aprovado, usar snapshot/rollback correspondente, fazer pós-check Product API/statuses e salvar receipt.
+
+### Risco
+- Risco pacote A: preço incorreto no Merchant pode afetar anúncios/listagens e divergência com Shopify.
+- Risco pacote B: suppress/delete indevido pode remover produto que ainda deveria aparecer; bloquear qualquer caso com public 200/monitor ou identidade ambígua.
+
+### Secret hygiene
+- Usar credenciais Google/Merchant/Shopify somente via Doppler/wrapper seguro; não imprimir tokens, refresh tokens, passwords, service-account JSON ou connection strings.
+- Relatórios e receipts devem manter `values_printed=false` e redigir qualquer valor sensível como `[REDACTED]`.

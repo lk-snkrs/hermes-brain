@@ -83,7 +83,10 @@ Pode executar sem perguntar:
 - relatórios internos, planos, PRDs e previews;
 - checks read-only;
 - commits locais em branch de trabalho;
-- atualização de skills/rotinas quando corrigem procedimento aprovado.
+- atualização de skills/rotinas quando corrigem procedimento aprovado;
+- auto-correção de falhas identificadas em escopo local/read-only/documental/diagnóstico/script seguro, com verificação e registro quando material.
+
+Regra sistêmica: erro identificado por Hermes, agente, script ou cron não deve terminar em diagnóstico passivo. Se a correção é A0/A1, iniciar a correção automaticamente; se cruza A2/A3/A4, gerar approval packet específico. Rotina canônica: `areas/operacoes/rotinas/hermes-auto-remediation-contract.md`.
 
 Precisa aprovação explícita atual de Lucas:
 

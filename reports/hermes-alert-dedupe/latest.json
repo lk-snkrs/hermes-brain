@@ -3,17 +3,17 @@
     {
       "alert": {
         "detail": {
-          "job": "LK AI/GEO Endpoints Monitor",
-          "registry": "/opt/data/profiles/lk-growth/cron/jobs.json",
+          "job": "LK Stock Tiny sharded full sync nightly read-only",
+          "registry": "/opt/data/profiles/lk-stock/cron/jobs.json",
           "status": "error"
         },
         "type": "cron_non_ok"
       },
-      "fingerprint": "f9acad02865c915c",
-      "first_seen": "2026-06-12T22:48:29.853345+00:00",
-      "last_seen": "2026-06-13T05:01:48.332436+00:00",
-      "seen_count": 4,
-      "status": "recurring"
+      "fingerprint": "556f1831d90173b2",
+      "first_seen": "2026-06-14T05:01:42.995784+00:00",
+      "last_seen": "2026-06-14T05:01:42.995784+00:00",
+      "seen_count": 1,
+      "status": "new"
     }
   ],
   "active_count": 1,
@@ -67,6 +67,21 @@
       "seen_count": 4,
       "status": "resolved"
     },
+    "556f1831d90173b2": {
+      "alert": {
+        "detail": {
+          "job": "LK Stock Tiny sharded full sync nightly read-only",
+          "registry": "/opt/data/profiles/lk-stock/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "556f1831d90173b2",
+      "first_seen": "2026-06-14T05:01:42.995784+00:00",
+      "last_seen": "2026-06-14T05:01:42.995784+00:00",
+      "seen_count": 1,
+      "status": "new"
+    },
     "7e8ff281b6c00b7e": {
       "alert": {
         "profiles": [
@@ -119,13 +134,14 @@
       "fingerprint": "f9acad02865c915c",
       "first_seen": "2026-06-12T22:48:29.853345+00:00",
       "last_seen": "2026-06-13T05:01:48.332436+00:00",
+      "resolved_at": "2026-06-14T05:01:42.995784+00:00",
       "seen_count": 4,
-      "status": "recurring"
+      "status": "resolved"
     }
   },
-  "new_count": 0,
-  "recurring_count": 1,
-  "resolved_since_previous_count": 0,
-  "updated_at": "2026-06-13T05:01:48.332436+00:00",
+  "new_count": 1,
+  "recurring_count": 0,
+  "resolved_since_previous_count": 1,
+  "updated_at": "2026-06-14T05:01:42.995784+00:00",
   "values_printed": false
 }

@@ -1,3 +1,12 @@
+## 2026-06-14 — Daily Loop: LK Stock cron em observação + referência de roteamento corrigida
+
+**A1 local/documental aplicado:**
+- Criada a referência ausente da skill `multiempresa-routing-lucas`: `references/lk-stock-routing-canon-all-agents-delegation-20260611.md`, reforçando que só `lk-stock` consulta evidência de estoque LK e que scripts também obedecem à regra.
+- Daily Intelligence classificou o `cron_non_ok` novo do LK Stock full sync como pendente de primeira execução sharded real: o timeout antigo já tem fix/receipt e manual full sync OK, mas o registry ainda aguarda próxima janela 06:20/07:20/08:20 UTC.
+- Artefatos: `reports/hermes-continuous-improvement/2026-06-14.md`, `reports/hermes-learning-ledger/2026-06-14.md`, `reports/hermes-daily-score/2026-06-14.json`.
+
+**Limite preservado:** sem Docker/VPS/Traefik/gateway restart, cron mutation, source-of-truth write, Tiny/Shopify/GMC/Klaviyo/Meta/WhatsApp/e-mail/database write ou secrets. `values_printed=false`.
+
 ## 2026-06-13 — Follow-up das recomendações 02h30
 
 **A1 local/documental aplicado após aprovação de Lucas:**

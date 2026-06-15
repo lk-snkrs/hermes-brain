@@ -1,6 +1,6 @@
 # Zipper OS — Perfil de Escrita de Lucas por E-mail
 
-Atualizado: 2026-06-13T06:21:37.395446+00:00
+Atualizado: 2026-06-14T06:21:22.784426+00:00
 
 ## Escopo
 
@@ -15,28 +15,29 @@ Hermes usa este perfil **apenas para rascunhos/previews**. Nunca envia e-mail, W
 
 ## Padrões agregados detectados
 
-- Tamanho médio: 222.6 palavras / 40.3 linhas
+- Tamanho médio: 232.5 palavras / 40.8 linhas
 - Mensagens com algum compromisso/encaminhamento: 1
 - Mensagens com compromisso suave tipo “vou alinhar/confirmar/retorno”: 0
-- Mensagens com vocabulário cultural/Zipper: 8
-- Exclamações totais na amostra: 39
-- Perguntas totais na amostra: 38
+- Mensagens com vocabulário cultural/Zipper: 10
+- Exclamações totais na amostra: 38
+- Perguntas totais na amostra: 42
 
 ## Aberturas frequentes
 
-- (sem saudação detectada): 39
+- (sem saudação detectada): 40
+- Olá Renata, tudo bem?: 1
 - Olá Denise, tudo bem?: 1
 - Olá Camilla, tudo bem?: 1
 - Olá Patrícia, boa tarde! Tudo bem?: 1
 - Olá Gabriela, tudo bem?: 1
 - Olá Felipe, tudo bem?: 1
 - Olá Bruna, tudo bem?: 1
-- Olá, tudo bem?: 1
 
 ## Fechamentos frequentes
 
-- (sem fechamento detectado): 44
+- (sem fechamento detectado): 43
 - Atenciosamente,: 6
+- Um abraço,: 1
 
 ## Diretrizes operacionais para rascunhos Zipper
 

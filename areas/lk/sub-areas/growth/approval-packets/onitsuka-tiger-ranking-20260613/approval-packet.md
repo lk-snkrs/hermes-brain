@@ -157,6 +157,22 @@ Para executar em produção preciso de aprovação explícita de Lucas para:
 3. alterar schema/FAQPage se for via Shopify/theme/metafield;
 4. qualquer write Shopify/theme production.
 
+## O que continua bloqueado
+
+Mesmo com aprovação deste packet, continuam bloqueados sem novo escopo explícito:
+
+- alterações de preço, estoque, disponibilidade, frete, checkout ou desconto;
+- publicação ampla de theme, deploy, Docker/VPS/Traefik/gateway ou cron;
+- envio externo, campanha, WhatsApp, e-mail, Klaviyo ou anúncio pago;
+- qualquer produto, coleção, URL ou campo Shopify não listado neste packet;
+- qualquer credential/token/secret value em artefatos ou mensagens.
+
+## Higiene de secrets
+
+- `values_printed=false`.
+- Nenhum token, API key, password, refresh token ou credential value deve ser impresso no receipt, log ou Telegram.
+- Rodar secret scan nos artefatos antes de considerar a execução concluída.
+
 ## Próxima ação proposta
 
 Se aprovado para execução: aplicar primeiro em ambiente seguro/dev/metafield conforme rota Shopify correta, fazer readback, salvar receipt e agendar D+14 impact review.

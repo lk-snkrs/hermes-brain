@@ -54,3 +54,27 @@ Para aplicar somente as tags nos produtos Shopify, responder exatamente:
 Para além disso subir o Liquid para um tema Shopify, preciso de aprovação separada indicando o destino:
 - `dev theme` para preview seguro; ou
 - `production theme` se quiser ir direto para live.
+
+## Complemento de completude do approval packet — 2026-06-14
+
+### Target / owner
+- Target: tags de produto Shopify da LK Sneakers para badges `new` e `best-seller--<collection_handle>`.
+- Owner operacional: LK Shopify / LK Growth; aprovação final: Lucas.
+
+### Escopo permitido
+- Escopo permitido somente se aprovado: aplicar nos produtos Shopify as mudanças de tags listadas no preview 20260529T005414Z.
+- Pode fazer: aplicar tags planejadas, remover tags genéricas gerenciadas no preview, fazer readback por produto alterado e salvar receipt.
+
+### Verificação / readback
+- Verificação obrigatória: readback Shopify das tags dos produtos alterados, amostragem por coleção principal, comparação com `REPORT.md` e receipt com contagens aplicadas/ignoradas/bloqueadas.
+- Se o readback divergir do preview ou se houver produto sem identidade operacional única, bloquear e registrar exceção sanitizada.
+
+### Opções de aprovação
+- Aprovar somente aplicação de tags conforme preview 20260529T005414Z.
+- Aprovar dev theme separadamente para validar Liquid.
+- Aprovar production theme separadamente, se desejado.
+- Bloquear ou pedir novo preview antes de qualquer write.
+
+### Secret hygiene
+- Credenciais Shopify/GA4 devem vir de Doppler/wrapper seguro; não imprimir tokens, secrets, refresh tokens, passwords ou service-account JSON.
+- Receipts e relatórios devem manter `values_printed=false` e substituir qualquer valor sensível por `[REDACTED]`.

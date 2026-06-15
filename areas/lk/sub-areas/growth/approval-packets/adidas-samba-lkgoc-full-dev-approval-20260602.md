@@ -68,3 +68,43 @@ Score atual: 78/100 — não pronto para aprovação de produção.
 - Nenhuma aprovação pedida para produção agora.
 - Próxima aprovação só depois de resolver preview e refazer QA coleção desktop/mobile comparando com 204L.
 - Se Lucas aprovar depois: aplicar/copyar assets para produção ou publicar alteração correspondente, com rollback explícito e revisão de impacto em ~7 dias.
+
+## Complemento de completude do approval packet — 2026-06-14
+
+### Decisão solicitada / ação proposta
+- Decisão solicitada: Lucas deve aprovar, ajustar ou bloquear explicitamente o packet `Approval Packet — Adidas Samba LKGOC Full DEV` antes de qualquer execução sensível.
+- Ação proposta: usar este documento apenas como approval packet/preview; execução só pode ocorrer no escopo exato aprovado e com receipt/readback posterior.
+
+### Target / owner
+- Target: `Approval Packet — Adidas Samba LKGOC Full DEV` no caminho `areas/lk/sub-areas/growth/approval-packets/adidas-samba-lkgoc-full-dev-approval-20260602.md`.
+- Owner operacional: LKGOC / LK Growth, com governança Hermes Geral e aprovação final Lucas.
+
+### Escopo permitido
+- Escopo permitido somente após aprovação explícita: executar apenas os itens, IDs, fluxos, mensagens, campos, coleções, arquivos ou rotinas descritos neste packet, sem ampliar alvo por inferência.
+- Pode fazer localmente sem nova aprovação: validação documental, preview, auditoria read-only, receipt e classificação de blockers.
+
+### O que continua bloqueado
+- Não pode fazer Shopify/theme production write, publish, alteração de coleção pública, sort automático, Liquid/snippet/theme, preço, estoque, campanha ou envio externo fora do escopo aprovado.
+- Aprovação genérica como `seguir`, `fazer tudo` ou contexto antigo não amplia escopo; novo alvo exige novo approval packet.
+
+### Risco
+- Risco principal: transformar preview/packet em autorização ampla e executar ação sensível fora do escopo exato.
+- Mitigação: fail-closed, approval textual específica, backup/snapshot quando aplicável, readback e receipt com contagens.
+
+### Rollback
+- Rollback obrigatório: reverter somente a alteração aprovada usando backup/snapshot/artefato anterior quando aplicável; se a ação foi apenas preview/read-only, rollback é manter sem execução e registrar o bloqueio.
+- Qualquer rollback que toque sistema externo exige o mesmo escopo aprovado, readback e receipt.
+
+### Verificação / readback
+- Verificação obrigatória: preview/readback do artefato/coleção afetada, comparação com baseline quando aplicável, contagem de arquivos/coleções alteradas e receipt com zero execução externa não aprovada.
+- Se houver divergência de identidade, fonte, escopo ou aprovação, bloquear execução e registrar causa sanitizada.
+
+### Opções de aprovação
+- Aprovar exatamente o escopo descrito neste packet.
+- Aprovar apenas preview/dry-run/read-only.
+- Ajustar alvo/limite antes de executar.
+- Bloquear execução e manter como histórico/rascunho.
+
+### Secret hygiene
+- Usar credenciais somente via Doppler/wrapper seguro quando houver integração; não imprimir tokens, refresh tokens, passwords, service-account JSON, API keys ou connection strings.
+- Relatórios e receipts devem manter `values_printed=false` e redigir qualquer valor sensível como `[REDACTED]`.

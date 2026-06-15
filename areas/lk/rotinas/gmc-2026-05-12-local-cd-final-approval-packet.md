@@ -84,3 +84,29 @@ Status: `gmc_local_cd_final_approval_packet_ready_no_execution`
 - local_inventory_disable
 - pos_inventory_write
 - campaign_or_external_send
+
+## Complemento de completude do approval packet — 2026-06-14
+
+### Decisão solicitada / ação proposta
+- Decisão solicitada: aprovar, ajustar ou bloquear a remoção dos 63 IDs antigos `local:pt:BR:LIA_<old_sku>` listados no JSON/CSV público deste packet.
+- Ação proposta se aprovado: deletar somente esses 63 IDs antigos no Merchant/local, preservando todos os replacements atuais já presentes.
+
+### Target / owner
+- Target: Google Merchant Center / canal local da LK Sneakers, somente os 63 IDs exatos listados neste packet.
+- Owner operacional: LK Growth / GMC, com governança Hermes Geral e aprovação final Lucas.
+
+### Escopo permitido
+- Escopo permitido somente após aprovação explícita: deletar os 63 IDs antigos listados, manter replacements `local:pt:BR:LIA_<current_sku>`, gerar/readback pós-delete e receipt.
+- Pode fazer: usar o snapshot/CSV indicado, executar apenas a ação aprovada e validar old gone + replacement present após delay de consistência.
+
+### Risco
+- Risco principal: remoção indevida de item local válido caso identidade/SKU esteja incorreta.
+- Blast radius limitado aos 63 IDs exatos; qualquer divergência de replacement ou readback deve bloquear a execução.
+
+### Verificação / readback
+- Verificação obrigatória: readback Merchant após delay, confirmar IDs antigos ausentes, replacements presentes e zero alterações em online/Shopify/Tiny/feed/POS/banco/campanhas.
+- Registrar receipt com contagens de deletados, preservados, bloqueados e divergências.
+
+### Secret hygiene
+- Usar credenciais Google/Merchant somente via Doppler/wrapper seguro; não imprimir tokens, refresh tokens, passwords, service-account JSON ou connection strings.
+- Relatórios e receipts devem manter `values_printed=false` e redigir qualquer valor sensível como `[REDACTED]`.

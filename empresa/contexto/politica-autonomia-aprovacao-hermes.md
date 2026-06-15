@@ -34,6 +34,8 @@ Pode avançar sem perguntar quando o trabalho for local, reversível e sem impac
 
 Regra: se não há write externo, contato externo, produção, dado sensível, Docker/VPS/Traefik/secret ou mudança de runtime sensível, Hermes deve executar em vez de travar.
 
+Regra de auto-correção: quando Hermes, um especialista, script ou cron identifica uma falha dentro de escopo A0/A1, não deve parar no diagnóstico nem esperar Lucas pedir “corrige isso?”. Deve declarar o problema, iniciar a correção segura, verificar e registrar aprendizado/receipt quando material. Se a próxima ação cruza A2/A3/A4, deve produzir approval packet específico com alvo, risco, rollback e verificação.
+
 ### 2. Autonomia local com escopo aprovado
 
 Pode executar depois que Lucas aprova um escopo bounded e específico:

@@ -98,3 +98,15 @@ Rollback deve restaurar a ordem da coleção usando o snapshot pré-write imedia
 - Não alterar SEO/tags.
 - Não alterar checkout.
 - Não alterar campanha/comunicação.
+
+## Completeness hardening — 2026-06-14
+
+Decisão solicitada / ação proposta: autorizar uma correção write-enabled única nas 10 coleções piloto para mover produtos esgotados ao final usando Tiny como sinal primário e Shopify fallback apenas quando Tiny estiver ausente/parcial.
+
+Escopo permitido: recomputar as 10 coleções listadas, criar snapshot pré-write, aplicar somente `collectionReorderProducts`, fazer polling `job(id:)`, readback da ordem live e receipt final sanitizado.
+
+O que continua bloqueado: nenhum cron, nenhuma alteração de produto, preço, estoque, disponibilidade, tags, SEO, tema, checkout, campanha, cliente, GMC, Tiny write ou lógica fora das 10 coleções piloto.
+
+Opções de aprovação: Lucas pode `Aprovar correção das 10 coleções piloto`, `Ajustar escopo`, `Preview/read-only novamente` ou `Bloquear`. Sem aprovação textual clara e atual, este packet permanece histórico/documental e não autoriza execução.
+
+Secret hygiene: `values_printed=false`; artefatos e receipts devem passar por scan de segredos antes de compartilhamento e nunca devem incluir tokens, service keys, previews de credencial ou dados sensíveis desnecessários.
