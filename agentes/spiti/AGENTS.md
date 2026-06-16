@@ -1,5 +1,17 @@
 # AGENTS — Agente SPITI
 
+## Regra obrigatória — aprendizado do Lucas vira melhoria do ecossistema
+
+Quando Lucas corrigir, ensinar ou apontar uma melhoria de processo, o agente **não deve salvar só na memória da conversa/perfil**. Memória é apenas lembrete fraco. A correção durável precisa ser propagada para a superfície que executa o comportamento: skill relevante, Brain/source-of-truth, AGENTS/prompt do perfil, cron prompt/checklist, template de relatório, script/validator/test ou handoff operacional.
+
+Fluxo obrigatório:
+1. Identificar quais agentes/perfis/rotinas podem repetir o erro.
+2. Atualizar o artefato executável/canônico de cada um, não apenas o agente atual.
+3. Criar backup antes de editar múltiplas superfícies locais.
+4. Verificar por busca/contagem que a regra entrou nos destinos pretendidos.
+5. Reportar escopo e limites: quais agentes/superfícies foram atualizados e quais writes externos/prod não foram tocados.
+
+
 ## Regra obrigatória — LK Stock é o único dono de consulta de estoque
 
 Quando qualquer tarefa envolver estoque da LK — estoque, disponibilidade, pronta entrega, “tem na loja?”, grade/tamanho disponível, ruptura, baixo estoque, reposição, transferência, compra, SKU/Tiny/Shopify divergente ou qualquer pergunta operacional de disponibilidade — este agente **não deve consultar estoque diretamente** em Tiny, Shopify, DB local, planilha, relatório antigo ou cache próprio.

@@ -255,11 +255,12 @@ Resposta deve incluir ressalva de confiabilidade.
 
 ### Estoque/produtos
 
-1. Para perguntas de disponibilidade por produto/SKU/tamanho no WhatsApp, a V1 usa Tiny read-only como fonte primária operacional: `produtos.pesquisa`, `produto.obter` para variações e `produto.obter.estoque`.
-2. O depósito oficial para responder “tem/não tem” é `LK | CONTROLE ESTOQUE`.
-3. Se houver saldo em `LK FISCAL`, consignação, encomendas ou outro depósito, mas zero em `LK | CONTROLE ESTOQUE`, responder como **não disponível no Controle Estoque** e citar o saldo externo como pendente de validação operacional; não prometer ao cliente.
-4. Exemplos cobertos: `Tem New Balance 9060 Moonbeam tamanho 38?`, `Tem U9060WHT 38?`, `Quais New Balance 9060 tem no 38?`.
-5. Shopify + Tiny reconciliados continuam preferíveis para decisões comerciais amplas; se divergirem, explicitar divergência e não afirmar disponibilidade sem checagem.
+1. Correção 2026-06-15: para perguntas de disponibilidade por produto/SKU/tamanho no WhatsApp, Hermes/Elle/LK Ops **não consulta Tiny diretamente**. O fluxo obrigatório é `lk-stock` / Stock OS local DB como superfície dona de estoque.
+2. Se o Stock OS confirmar produto+tamanho com identidade segura, responder como evidência interna do `LK Stock OS local DB (lk-stock)` e manter ressalva de validação antes de promessa ao cliente.
+3. Se o Stock OS não confirmar o item exato, responder **não confirmado** e pedir validação/reconciliação do `lk-stock`; não transformar ausência de match em “zerado”.
+4. Tiny / `LK | CONTROLE ESTOQUE` permanece fonte operacional usada pelo dono `lk-stock`, não por atendimento/WhatsApp responder diretamente.
+5. Exemplos cobertos: `Tem New Balance 9060 Moonbeam tamanho 38?`, `Tem U9060WHT 38?`, `Quais New Balance 9060 tem no 38?`, `temos Air Jordan 1 Low Panda 36 e New Balance 9060 Triple White Branco 36 na loja?`.
+6. Shopify + Tiny reconciliados continuam preferíveis para decisões comerciais amplas; se divergirem, explicitar divergência via `lk-stock` e não afirmar disponibilidade sem checagem.
 
 ### Site/tráfego
 

@@ -1,3 +1,12 @@
+## 2026-06-15 — Weekly Learning Loop W25 consolidado
+
+**Governança semanal:**
+- Gerado `reports/hermes-learning-weekly/2026-W25-2026-06-09-a-2026-06-15.md`, consolidando os reports diários 02h, scores, CHANGELOG e sessão recente.
+- Síntese: Learning Loop saudável, runtime v0.16.0 estável, score diário subiu de 94 para 98, auto-heals A1 fecharam drift de watchdogs/no_agent/Reminder OS, e foco ativo virou Hermes operacional + LK Stock como camada crítica do LK OS.
+- Sem decisão pendente nova; pendência operacional é `lk-stock` validar Nike Mind 001/002 antes de qualquer material customer-facing.
+
+**Limite preservado:** sem Docker/VPS/Traefik/gateway restart, cron mutation, source-of-truth write, Tiny/Shopify/GMC/Klaviyo/Meta/WhatsApp/e-mail/database write ou secrets. `values_printed=false`.
+
 ## 2026-06-14 — Daily Loop: LK Stock cron em observação + referência de roteamento corrigida
 
 **A1 local/documental aplicado:**

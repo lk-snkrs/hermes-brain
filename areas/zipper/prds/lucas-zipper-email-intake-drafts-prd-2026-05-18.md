@@ -1,6 +1,6 @@
 # PRD — lucas@zippergaleria.com.br: intake, triagem e drafts do Mordomo
 
-Atualizado: 2026-05-18
+Atualizado: 2026-06-16
 Status: v0.1 operacional — acesso validado; geração automática de drafts em modo controlado/dry-run antes de ativação ampla
 
 ## 1. Objetivo
@@ -25,11 +25,15 @@ Transformar `lucas@zippergaleria.com.br` em uma caixa operacional assistida pelo
 - contatos de arquitetos, instituições, curadores e parceiros;
 - leads de obra/artista/PDF/proposta;
 - exposições novas, convites, feiras, imprensa e oportunidades relacionais;
-- follow-ups comerciais/relacionais.
+- follow-ups comerciais/relacionais;
+- lembretes de parcelas de clientes quando ligados a uma venda específica.
 
 Fora do foco por padrão:
 
-- financeiro, pagamentos, boletos, notas, comprovantes, fechamentos mensais, parcelas e repasses de artista. Lucas corrigiu que isso é assunto dele/Cibele e não deve gerar alerta/ação por padrão.
+- financeiro interno geral, pagamentos administrativos, boletos, notas, comprovantes, fechamentos mensais, repasses de artista, parcelas internas e administrativo similar. Lucas corrigiu que fechamento/repasse/pagamento administrativo é assunto dele/Cibele e não deve gerar alerta/ação por padrão.
+- newsletters, promoções, lojas de tênis, Danki, varejo, marketing genérico, convites irrelevantes e `unknown` sem sinal comercial/relacional Zipper; não perguntar sobre todo unknown em tempo real, apenas acumular para calibração se houver padrão recorrente.
+
+Exceção: se houver cliente/venda específica — nova venda direta, dados do comprador, obra vendida, valor, parcelas, pedido de etiqueta/certificado/faturamento/documento — tratar como CRM operacional e criar rascunho seguro de resposta/encaminhamento interno quando couber, sem discutir valores/condições.
 
 Não misturar com LK, SPITI ou pessoal sem classificação explícita.
 
@@ -42,6 +46,7 @@ Cada e-mail deve ser classificado como:
 - `preco_disponibilidade`: pedido de valor, disponibilidade, reserva ou condição específica;
 - `logistica_producao`: coleta, entrega, montagem, retirada, agenda de obra;
 - `financeiro_admin`: pagamento, nota, cobrança, imposto;
+- `venda_cliente_operacional`: venda específica, dados de comprador, obra vendida, parcela de cliente, etiqueta/certificado/faturamento/documento de obra;
 - `artista_relacao`: comunicação com artista/estúdio;
 - `evento_institucional`: feira, exposição, convite, instituição;
 - `newsletter_ruido`: marketing/boletim sem ação;
@@ -55,6 +60,7 @@ Cada e-mail deve ser classificado como:
 - Agradecimento/acknowledgment simples.
 - Follow-up leve já aprovado por contexto.
 - Pedido interno de mais informação quando não há compromisso comercial.
+- Confirmação/encaminhamento interno de nova venda específica, pedido de etiqueta/certificado/faturamento/documento ou dados de comprador, sem negociar valor/condição e acionando Produção quando certificado/etiqueta estiver em pauta.
 
 ### Não deve gerar draft externo automaticamente sem revisão mais forte
 
@@ -75,6 +81,15 @@ Pode gerar Decision Packet, mas não draft final pronto quando houver:
 - Não explicar preventivamente que obra do site pode estar vendida.
 - Não perguntar “quais obras?” no primeiro WhatsApp; em e-mail curatorial mais completo, a pergunta pode entrar quando natural.
 - Para Flávia Junqueira, usar template curatorial salvo em `/opt/data/hermes_bruno_ingest/hermes-brain/areas/zipper/comunicacao/templates/email-flavia-junqueira-obras-disponiveis-2026-05-18.md`.
+
+## 6.1 Regras operacionais de entrega, assinatura e obra
+
+- Modo padrão: `draft-only/actionable`; nunca enviar e-mail, nunca usar Gmail send. Criar rascunhos silenciosamente.
+- Lucas não quer aviso apenas porque um draft foi criado; só alertar Telegram se houver decisão real, bloqueio concreto, risco, erro operacional, falha de ferramenta ou ação que precise de Lucas.
+- Todo draft de Lucas/Zipper deve terminar com a assinatura padrão de Lucas/Zipper; usar `/opt/data/scripts/zipper_gmail_draft_helper.py draft`, que normaliza a assinatura, ou validar assinatura antes de salvar.
+- Em venda, etiqueta, certificado, produção, logística ou documento de obra, `acervo` é o identificador principal. Sempre referenciar/pedir número de acervo; não tratar só por título/cliente.
+- Se o assunto envolve etiqueta/certificado e Produção não está copiada, incluir `Produção Zipper <producao@zippergaleria.com.br>` como `extra_cc` no payload do draft. Lucas Gualberto/Produção é o dono operacional de certificado/produção; Cibele não é a dona operacional do certificado.
+- Quando marcar `needs-attention`, o relatório para Lucas precisa ser acionável: o que é, por que importa, dono provável, próxima ação, rascunho sugerido se aplicável, bloqueio/dado faltante e prazo sugerido.
 
 ## 7. Pipeline desejado
 

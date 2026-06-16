@@ -27,6 +27,7 @@ Antes do passo 1 e antes de qualquer write Shopify:
 3. Tratar o existente como inventário/evidência; não remendar.
 4. Fazer evidence packet: fonte oficial, SERP, concorrentes, intenção, PAA, tendências e dúvidas reais.
 4.1. Criar text packet e media manifest conforme `rules/REGRA-LKGOC-TEXTOS-E-SELECAO-DE-IMAGENS.md`; sem isso, Production fica bloqueada.
+4.2. Criar e aprovar Description Packet conforme `rules/REGRA-LKGOC-DESCRICAO-COLECAO-QUALITY-GATE-20260615.md`; descrição genérica bloqueia LKGOC mesmo em DEV.
 5. Projetar experiência: hero, produto-first, grid antes do guia, guia pós-grid, FAQ único.
 6. Escrever Guia LK e metadados.
 7. Materializar em DEV/unpublished ou preparar handoff para LK Shopify.

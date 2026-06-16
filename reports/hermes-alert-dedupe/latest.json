@@ -2,16 +2,15 @@
   "active": [
     {
       "alert": {
-        "detail": {
-          "job": "LK Stock Tiny sharded full sync nightly read-only",
-          "registry": "/opt/data/profiles/lk-stock/cron/jobs.json",
-          "status": "error"
-        },
-        "type": "cron_non_ok"
+        "issues": [
+          "reminder_health_not_pass",
+          "reminder_ingress_open_needed"
+        ],
+        "type": "nightly_self_improvement_regression_attention"
       },
-      "fingerprint": "556f1831d90173b2",
-      "first_seen": "2026-06-14T05:01:42.995784+00:00",
-      "last_seen": "2026-06-14T05:01:42.995784+00:00",
+      "fingerprint": "86135f8038ac821e",
+      "first_seen": "2026-06-15T05:01:51.362651+00:00",
+      "last_seen": "2026-06-15T05:01:51.362651+00:00",
       "seen_count": 1,
       "status": "new"
     }
@@ -79,8 +78,9 @@
       "fingerprint": "556f1831d90173b2",
       "first_seen": "2026-06-14T05:01:42.995784+00:00",
       "last_seen": "2026-06-14T05:01:42.995784+00:00",
+      "resolved_at": "2026-06-15T05:01:51.362651+00:00",
       "seen_count": 1,
-      "status": "new"
+      "status": "resolved"
     },
     "7e8ff281b6c00b7e": {
       "alert": {
@@ -105,6 +105,20 @@
       "resolved_at": "2026-06-09T00:35:25.048773+00:00",
       "seen_count": 6,
       "status": "resolved"
+    },
+    "86135f8038ac821e": {
+      "alert": {
+        "issues": [
+          "reminder_health_not_pass",
+          "reminder_ingress_open_needed"
+        ],
+        "type": "nightly_self_improvement_regression_attention"
+      },
+      "fingerprint": "86135f8038ac821e",
+      "first_seen": "2026-06-15T05:01:51.362651+00:00",
+      "last_seen": "2026-06-15T05:01:51.362651+00:00",
+      "seen_count": 1,
+      "status": "new"
     },
     "a6f30859ae125f02": {
       "alert": {
@@ -142,6 +156,6 @@
   "new_count": 1,
   "recurring_count": 0,
   "resolved_since_previous_count": 1,
-  "updated_at": "2026-06-14T05:01:42.995784+00:00",
+  "updated_at": "2026-06-15T05:01:51.362651+00:00",
   "values_printed": false
 }

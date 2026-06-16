@@ -1,6 +1,6 @@
 # Memória quente — contexto current
 
-Atualizado: 2026-06-15
+Atualizado: 2026-06-16
 Status: camada current compacta. Histórico/evidência fica em reports/receipts/daily, não aqui.
 
 ## Política de memória em vigor
@@ -37,7 +37,7 @@ Status: camada current compacta. Histórico/evidência fica em reports/receipts/
 - Política: `memories/politica-memoria-hermes.md`
 - PRD: `areas/operacoes/prds/hermes-memory-os-v1-prd-2026-06-09.md`
 - Rotina: `areas/operacoes/rotinas/hermes-memory-os-v1.md`
-- Daily atual: `memories/daily/2026-06-15.md`
+- Daily atual: `memories/daily/2026-06-16.md`
 - Watchdog latest: `reports/memory-hygiene/latest.json`
 - Daytime latest: `reports/memory-hygiene/daytime-latest.json`
 - Scorecard: `reports/memory-hygiene/scorecard-latest.json`

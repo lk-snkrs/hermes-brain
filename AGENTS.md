@@ -1,5 +1,17 @@
 # AGENTS — Hermes Brain
 
+## Regra obrigatória — aprendizado do Lucas vira melhoria do ecossistema
+
+Quando Lucas corrigir, ensinar ou apontar uma melhoria de processo, o agente **não deve salvar só na memória da conversa/perfil**. Memória é apenas lembrete fraco. A correção durável precisa ser propagada para a superfície que executa o comportamento: skill relevante, Brain/source-of-truth, AGENTS/prompt do perfil, cron prompt/checklist, template de relatório, script/validator/test ou handoff operacional.
+
+Fluxo obrigatório:
+1. Identificar quais agentes/perfis/rotinas podem repetir o erro.
+2. Atualizar o artefato executável/canônico de cada um, não apenas o agente atual.
+3. Criar backup antes de editar múltiplas superfícies locais.
+4. Verificar por busca/contagem que a regra entrou nos destinos pretendidos.
+5. Reportar escopo e limites: quais agentes/superfícies foram atualizados e quais writes externos/prod não foram tocados.
+
+
 Regras globais para qualquer agente/processo operando neste repositório.
 
 ## Fonte de verdade
@@ -60,7 +72,7 @@ Hermes Geral é orquestrador central, não executor universal. Se uma tarefa tiv
 Rotas críticas:
 
 - `lk-growth-content`: conteúdo, blog, source pages, copy SEO/GEO/CRO, FAQ/schema editorial da LK → executor `lk-growth`; output em `areas/lk/sub-areas/growth/`; publicação/Shopify/Klaviyo/GMC/Meta bloqueados sem aprovação.
-- `lk-shopify-surface`: produto/upload, coleções, páginas/objetos Shopify, menu/tag/SEO field, theme/dev theme, readback/receipt → executor `lk-shopify`/skills `lk-shopify-readonly` e `lk-shopify-product-upload`; usar `areas/lk/sub-areas/shopify/templates/preview-aprovacao-shopify.md`; writes Shopify/Tiny/theme continuam bloqueados sem aprovação escopada.
+- `lk-shopify-surface`: produto/upload, coleções, páginas/objetos Shopify, menu/tag/SEO field, theme/dev theme, readback/receipt → executor `lk-shopify`/skills `lk-shopify-readonly` and `lk-shopify-product-upload`; usar `areas/lk/sub-areas/shopify/templates/preview-aprovacao-shopify.md`; writes Shopify/Tiny/theme continuam bloqueados sem aprovação escopada. Regra global: qualquer agente de Lucas — conteúdo, anúncios, SEO, campanha, sourcing, coleções, atendimento ou ops — que perceber necessidade de subir/criar/listar produto deve acionar/hand off para `lk-shopify`; não é uma regra exclusiva do LC WhatsApp/`!subir`.
 - `mordomo-personal-intake`: agenda, follow-up pessoal e inbox conforme guardrails → executor Mordomo; bloquear preço/disponibilidade/reserva/negociação/reclamação/supplier/bulk sem fonte/aprovação.
 - `spiti-os`: Hub, leilões, lotes, CRM, Financial e Growth SPITI → executor SPITI; silêncio é melhor que dado errado.
 - `zipper-os-readonly-comm-crm`: Zipper permanece read-only/documental enquanto não houver profile dedicado; contato externo/proposta/preço/logística sensível exige aprovação.

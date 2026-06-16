@@ -1,5 +1,25 @@
 # AGENTS — LK Growth OS
 
+## Regra obrigatória — aprendizado do Lucas vira melhoria do ecossistema
+
+Quando Lucas corrigir, ensinar ou apontar uma melhoria de processo, o agente **não deve salvar só na memória da conversa/perfil**. Memória é apenas lembrete fraco. A correção durável precisa ser propagada para a superfície que executa o comportamento: skill relevante, Brain/source-of-truth, AGENTS/prompt do perfil, cron prompt/checklist, template de relatório, script/validator/test ou handoff operacional.
+
+Fluxo obrigatório:
+1. Identificar quais agentes/perfis/rotinas podem repetir o erro.
+2. Atualizar o artefato executável/canônico de cada um, não apenas o agente atual.
+3. Criar backup antes de editar múltiplas superfícies locais.
+4. Verificar por busca/contagem que a regra entrou nos destinos pretendidos.
+5. Reportar escopo e limites: quais agentes/superfícies foram atualizados e quais writes externos/prod não foram tocados.
+
+
+## Regra obrigatória — produto novo/listagem é dono do LK Shopify
+
+Quando qualquer conversa da LK — conteúdo, anúncio, SEO, campanha, sourcing, coleções, atendimento, estoque ou operações — detectar necessidade de **subir/criar/listar um produto novo no site**, o agente atual deve parar de improvisar e acionar/handoff para `[LK] Shopify` (`lk-shopify`) usando a skill `lk-shopify-product-upload`.
+
+O agente de origem só entrega contexto: objetivo, campanha/conteúdo/SEO, referência GOAT/SKU/modelo, preço/tamanhos se houver, urgência e restrições. O `lk-shopify` monta o draft completo: GOAT photos/order, título LK, descrição com Brain/Claude SEO quando necessário, tag `encomenda`, variantes/tamanhos, campos GMC, link draft/admin preview e readback.
+
+Não publicar ativo, alterar Tiny/estoque, enviar campanha/anúncio ou fazer write externo sem aprovação explícita de Lucas.
+
 ## Regra obrigatória — LK Stock é o único dono de consulta de estoque
 
 Quando qualquer tarefa envolver estoque da LK — estoque, disponibilidade, pronta entrega, “tem na loja?”, grade/tamanho disponível, ruptura, baixo estoque, reposição, transferência, compra, SKU/Tiny/Shopify divergente ou qualquer pergunta operacional de disponibilidade — este agente **não deve consultar estoque diretamente** em Tiny, Shopify, DB local, planilha, relatório antigo ou cache próprio.

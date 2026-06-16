@@ -1,7 +1,40 @@
 # Inventário vivo — crons, agentes, profiles e projetos
 
-Data-base: 2026-06-14 11:20 UTC
-Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-06-14**
+Data-base: 2026-06-15 11:20 UTC
+Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-06-15**
+
+---
+
+### Atualização 2026-06-15 11:20 UTC
+
+**Fonte:** `cronjob list` solicitado; `cronjob` não disponível no PATH deste runtime. Fallback canônico usado: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all`.
+
+**Contagem:** 40 jobs totais — 36 ativos, 4 pausados.
+
+**`last_status` não-ok:** 0. Todos os jobs com execução registrada constam `ok` na evidência viva desta execução.
+
+**Erros explícitos de delivery do scheduler:** 0 na listagem. **Falhas em stdout de job:** 0 observadas pela listagem resumida.
+
+**Jobs ativos sem primeira execução registrada:** 1.
+- `7ef586b9ec1a` Reanalisar backlog Auto-Remediation em 72h — job one-shot ativo, `deliver=origin`, sem `Last run` ainda; próxima execução prevista para 2026-06-17T13:31 UTC.
+
+**Jobs pausados na evidência viva:**
+- `ac0b440e2643` Mordomo Telegram gateway watchdog — pausado, último status ok em 2026-05-30T15:52.
+- `876d54c62ccd` LK Growth Telegram gateway watchdog — pausado, último status ok em 2026-05-30T15:52.
+- `663e3e6a148c` SPITI Telegram gateway watchdog — pausado, último status ok em 2026-05-30T15:52.
+- `955dc769b5a6` LK specialist Telegram gateway watchdog — pausado, `deliver=origin`, último status ok em 2026-05-30T15:52.
+
+**Drift/notable reconciliation:**
+- Contagem mudou vs 2026-06-14: 38 → 40 totais; 34 → 36 ativos; 4 pausados estável.
+- Novos jobs vivos na evidência: `7ef586b9ec1a` Reanalisar backlog Auto-Remediation em 72h — one-shot ativo/sem primeira execução; `2e5bc91d27d6` Hermes Nightly Operations Audit OS — 02h50 BRT — ativo/local/ok.
+- Alguns jobs antes listados como `deliver=origin` aparecem agora como `deliver=local`: `c1ce34b4449a` Hermes multi-profile latency watchdog, `b78ae7ac81d0` Hermes all Telegram gateways watchdog, `7b7ae67655c5` wacli pessoal sync watchdog, `bc96bb03d2b0` Hermes Memory OS daytime checker/router e `23143847316e` Brain OS silent-OK health/scanner watchdog. Tratar como drift documental/operacional benigno até confirmação por histórico/decisão; não alterar cron sem aprovação.
+- Nenhum `last_status` não-ok ou erro explícito de delivery na evidência atual.
+- Rotinas previamente problemáticas (`d03fa04e1188`, `c3bb587519d2`, `e3279babbc4a`, `a2ead305eab2`, `357d40a5863e`, `787134d4ac5c`, `a1d1e36f8075`) seguem `ok`; não manter como falha ativa sem nova evidência.
+- Documentação que descreve Mordomo/LK Growth/SPITI gateway watchdogs como ativos deve permanecer marcada como histórica até nova evidência viva mostrar reativação.
+
+**Jobs deliver=origin (saídas intencionais/condicionais):** Mesa COO diária (`749ee30b51eb`), Relatório Hermes 01h+02h+02h15+02h25+02h50 + Score 0–100 — 03h Telegram (`98478b820720`), Reminder OS — 2h open-loop watchdog (`518634d5ea60`) e Reanalisar backlog Auto-Remediation em 72h (`7ef586b9ec1a`). `LK specialist Telegram gateway watchdog` (`955dc769b5a6`) também está configurado como `origin`, mas está pausado.
+
+**Relatório completo:** `reports/governance/runtime-truth-reconciler-2026-06-15.md`
 
 ---
 

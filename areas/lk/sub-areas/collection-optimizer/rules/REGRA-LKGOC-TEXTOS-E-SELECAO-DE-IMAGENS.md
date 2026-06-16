@@ -121,3 +121,9 @@ Cada execução LKGOC Full/Lite deve gerar ou atualizar:
 - QA visual 204L side-by-side;
 - approval packet;
 - rollback/receipt.
+
+## 2.1. Description Packet obrigatório
+
+Além do pacote textual geral, cada coleção LKGOC deve passar pelo quality gate de descrição definido em `REGRA-LKGOC-DESCRICAO-COLECAO-QUALITY-GATE-20260615.md`.
+
+Descrições genéricas, com tom de sistema ou sem densidade premium ficam bloqueadas como `COPY_BLOCKED / NÃO LKGOC`.
