@@ -1,4 +1,4 @@
-# Brain Improvement Score — 2026-06-15
+# Brain Improvement Score — 2026-06-16
 ## Status geral
 Score geral: **100/100**
 Leitura executiva: relatório gerado por script local/read-only. O score traduz estrutura, health check e rastreabilidade do Brain em uma visão executiva; não prova saúde de produção, cron real, VPS, APIs ou dados vivos.
@@ -25,7 +25,7 @@ Motivo: Avalia SKILL.md canônicos por índice e health check; markdowns de refe
 Evidências:
 - SKILL.md canônicos em skills/: 10
 - Cobertura aproximada no índice: 10/10
-- Markdowns de referência preservados sem penalização: 31
+- Markdowns de referência preservados sem penalização: 32
 Recomendações:
 - Transformar fluxos repetidos em skills apenas depois de repetição real, evitando burocracia.
 ### Segurança, secrets e aprovações — 100/100
