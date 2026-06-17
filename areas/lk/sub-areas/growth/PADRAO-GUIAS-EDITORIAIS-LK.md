@@ -342,3 +342,18 @@ O padrão completo de LKGOC vive em um único documento canônico:
 - `LKGOC-PADRAO-CANONICO.md`
 
 Não duplicar regras longas aqui. Este arquivo deve apenas complementar seu escopo específico e apontar para o canônico.
+
+## Regra obrigatória — FAQ Real Intent Gate (Lucas, 2026-06-16)
+
+FAQ da LK não pode ser preenchimento SEO genérico. Antes de propor ou aplicar FAQ em PDP, coleção, guia editorial, source page ou bloco GEO/AEO, cada pergunta deve mapear para pelo menos uma intenção real: GSC/query da LK, PAA/PAS/SERP live, objeção comercial específica do modelo, comparação entre versões, dúvida de tamanho/material/styling/autenticidade específica ou resposta citável para AI Search.
+
+Bloqueios obrigatórios:
+
+- não repetir FAQ genérico como “produto original?”, “qual prazo?”, “como escolher tamanho?” em todas as páginas sem especificidade do modelo;
+- não falar em estoque, pronta entrega, encomenda, prazo operacional ou disponibilidade como conteúdo SEO/GEO; isso vai para atendimento/chat;
+- não duplicar FAQ específico com FAQ global/legado abaixo da página;
+- não usar perguntas de “melhor em 2026” quando a resposta muda para outro modelo e confunde a coleção;
+- se a resposta não ajuda decisão de compra, comparação ou citabilidade, a pergunta sai.
+
+QA obrigatório em qualquer packet FAQ: listar para cada pergunta a fonte de intenção (`GSC`, `PAA`, `PAS`, `SERP`, `objeção comercial`, `styling`, `tamanho/material`, `autenticidade específica`) e marcar `generic-filler=false`.
+
