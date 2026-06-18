@@ -1,0 +1,97 @@
+# Receipt — Safe inferred color upstream Shopify
+
+- Criado: 2026-06-17T20:25:55.267937+00:00
+- Escopo: preencher `mm-google-shopping.color` ausente apenas com inferência única e segura por título/handle.
+- Produtos ativos escaneados: 1838
+- Cores preenchidas: 127
+- Readback OK: 127
+- Falhas: 0
+- Ambíguos pulados: 34
+
+## Excluído
+- Cores ambíguas/múltiplas, preço, estoque, variantes, SKU, MPN, GMC direto, campanhas, theme.
+
+## Rollback
+- Restaurar valores anteriores a partir de `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/receipts/gmc/product-data-upstream-color-infer-safe-20260617T202532Z/backup-before.json`
+
+## Amostra
+- accolade-straight-leg-sweatpant-charcoal-green: Verde
+- tenis-adidas-tokyo-mary-jane-sandy-pink-earth-strata-rosa: Rosa
+- tenis-onitsuka-tiger-mexico-66-fringe-black-black-preto: Preto
+- tenis-onitsuka-tiger-mexico-66-fringe-mocha-brown-dark-brown-marrom: Marrom
+- tenis-nike-air-jordan-1-high-virgil-abloh-archive-x-alaska-branco: Branco
+- tenis-nike-air-liquid-max-x-fragment-design-black-anthracite-preto: Preto
+- tenis-adidas-badbo-1-0-rise-branco: Branco
+- tenis-on-cloudtilt-x-loewe-white-branco: Branco
+- tenis-new-balance-1906l-black-suede-preto: Preto
+- slide-nike-mind-001-team-red-vermelho: Vermelho
+- tenis-nike-shox-tl-black-cave-stone-preto: Preto
+- tenis-nike-shox-tl-sunrise-gradient-laranja: Laranja
+- tenis-nike-shox-tl-velvet-brown-denim-turquoise-marrom: Marrom
+- tenis-nike-shox-tl-pumice-night-maroon-cinza: Cinza
+- slide-nike-mind-001-pearl-pink-rosa: Rosa
+- slide-nike-mind-001-mineral-slate-verde: Verde
+- slide-nike-mind-001-blackened-blue-azul: Azul
+- tenis-nike-mind-002-grey-football-grey-cinza: Cinza
+- tenis-nike-vomero-premium-x-melitta-baumeister-total-orange-laranja: Laranja
+- tenis-nike-vomero-premium-x-renegade-x-cinnamon-marrom: Marrom
+- tenis-nike-vomero-premium-barely-green-verde: Verde
+- tenis-nike-vomero-premium-pearl-pink-rosa: Rosa
+- tenis-nike-vomero-premium-tangerine-tint-laranja: Laranja
+- camiseta-nude-project-berry-tee-white-branco: Branco
+- camiseta-nude-project-honor-tee-black-preto: Preto
+- camiseta-nude-project-honor-tee-marshmallow-off-white: Branco
+- camiseta-nude-project-kora-black-preto: Preto
+- moletom-nude-project-side-eye-zip-up-black-preto: Preto
+- moletom-nude-project-cult-hoodie-black-beige-preto: Preto
+- shorts-saint-studio-plissado-tech-preto: Preto
+- camiseta-saint-studio-oversized-suedine-supima-areia-bege: Bege
+- tenis-nike-air-jordan-1-low-se-repaired-denim-swoosh-azul: Azul
+- calca-legging-alo-yoga-7-8-high-waist-airlift-preto: Preto
+- shorts-deus-ex-machina-walk-ford-azul-marinho: Azul
+- camiseta-deus-ex-machina-old-turps-off-white: Branco
+- camiseta-deus-ex-machina-shield-estonada-chumbo-cinza: Cinza
+- camiseta-deus-ex-machina-hauntology-verde: Verde
+- camiseta-deus-ex-machina-venice-skull-preto: Preto
+- camiseta-fear-of-god-essentials-varsity-90s-short-sleeve-tee-cinza: Cinza
+- camiseta-deus-ex-machina-time-taker-azul-marinho: Azul
+- the-peptide-lip-tints-rhode-limited-edition-shade-dourado-1: Dourado
+- tenis-on-running-x-kith-on-k-tech-2-spirulina-barley-verde: Verde
+- tenis-asics-gel-1130-white-clay-canyon-branco: Branco
+- tenis-jordan-5-retro-white-metallic-2026-metalizado: Branco
+- tenis-jordan-5-retro-wolf-grey-2026-cinza: Cinza
+- tenis-nike-kobe-5-protro-lower-merion-aces-away-prata: Prateado
+- tenis-jordan-4-retro-toro-bravo-2026-vermelho: Vermelho
+- tenis-jordan-4-retro-toro-bravo-2026-vermelho-1: Vermelho
+- tenis-jordan-4-retro-lakers-roxo: Roxo
+- tenis-jordan-11-retro-low-university-blue-2026-azul: Azul
+- tenis-nike-kobe-11-protro-mamba-day-dourado: Dourado
+- tenis-nike-air-force-1-low-protro-kobe-bryant-siempre-hermanos-marrom: Marrom
+- camisa-aime-leon-dore-fassianos-half-zip-cycling-off-white: Branco
+- tenis-new-balance-990v6-made-in-usa-cinza-castlerock: Cinza
+- tenis-nike-sb-dunk-low-pro-bluetile-skateboards-azul: Azul
+- camiseta-aime-leon-dore-ald-golf-swing-coconut-milk-off-white: Branco
+- tenis-adidas-ballerina-bad-bunny-flamboyan-vermelho: Vermelho
+- tenis-tom-sachs-x-nikecraft-general-purpose-summit-white-branco: Branco
+- tenis-nike-craft-general-purpose-shoe-tom-sachs-field-brown-marrom: Marrom
+- tenis-adidas-by-stella-mccartney-sportswear-x-trainers-cloud-white-ivory-branco: Branco
+- tenis-adidas-by-stella-mccartney-sportswear-x-trainers-brown-mauve-gum: Marrom
+- tenis-adidas-stella-mccartney-x-adidas-wmns-sportswear-x-trainers-core-black-preto: Preto
+- tenis-herit-age-harbor-azul-marinho: Azul
+- tenis-herit-era-matcha-verde: Verde
+- tenis-herit-age-paper-branco: Branco
+- camiseta-kith-signature-rose-jones-black-preto: Preto
+- camiseta-kith-brush-vintage-boxy-alex-nocturnal-azul-marinho: Azul
+- camiseta-kith-brush-vintage-boxy-alex-silk-off-white: Branco
+- tenis-on-running-cloudsolo-loewe-black-eggshell-preto: Preto
+- tenis-on-running-cloudsolo-loewe-red-eggshell-vermelho: Vermelho
+- tenis-on-running-cloudsolo-loewe-taupe-eggshell-marrom: Marrom
+- tenis-on-running-cloudsolo-loewe-teal-eggshell-azul: Azul
+- tenis-on-running-cloudsolo-loewe-sand-burgundy-bege: Bege
+- tenis-on-running-cloudsolo-loewe-teal-eggshell-azul-1: Azul
+- sueter-pace-overlock-black-vintage-preto: Preto
+- camiseta-pace-tsuho-regular-stone-washed-black-preto: Preto
+- camiseta-pace-oxido-cotton-code-grey-cinza: Cinza
+- tenis-herit-age-mink-marrom: Marrom
+- tenis-herit-era-nerano-azul: Azul
+- tenis-herit-era-ash-cinza: Cinza

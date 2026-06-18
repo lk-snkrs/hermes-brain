@@ -28,7 +28,7 @@
     {
       "check": "decisions_index",
       "FAIL": 0,
-      "WARN": 0
+      "WARN": 1
     },
     {
       "check": "routines_index",
@@ -41,7 +41,14 @@
       "WARN": 0
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "level": "WARN",
+      "kind": "decisions_not_linked",
+      "path": "areas/lk/sub-areas/growth/decisions",
+      "detail": "decisions folder has markdown files but is not linked from parent MAPA.md"
+    }
+  ],
   "fail_count": 0,
-  "warn_count": 0
+  "warn_count": 1
 }

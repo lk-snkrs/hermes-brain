@@ -81,6 +81,7 @@ Antes de declarar um diagnóstico de Growth completo, verificar os 18 tópicos e
 - `projetos/growth-action-prd-2026-05-19.md` — PRD de ação para cadência semanal orientada a receita, conversão e reviews D+7.
 - `prds/lk-otimizacao-colecao-agent-prd-2026-06-03.md` — PRD do agente `[LK] Otimização de Coleção`, especialista LKGOC documental/sem runtime ativado nesta etapa.
 - `contexto/` — mapas por fonte e domínio.
+- `decisions/` — decisões Growth indexáveis e rastreáveis por Brain Health; não ativa writes nem altera rotinas por si só.
 - `rotinas/` — rotinas operacionais.
 - `templates/` — formatos padronizados de auditoria/approval packet.
 - `skills/` — processos repetíveis.

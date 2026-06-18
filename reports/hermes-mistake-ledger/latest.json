@@ -3,27 +3,20 @@
   "patterns": [
     {
       "next_safe_action": "inspect the exact profile cron output and create a scoped fix/approval packet; do not generalize to Docker failure.",
-      "object": "LK-TRENDS · Cloudflare email delivery",
+      "object": "LC Mordomo OS whatsapp_context_engine",
       "pattern": "new_cron_non_ok",
       "seen_count": 1,
       "why_it_causes_errors": "Agents may report governance healthy while a specialist cron is failing."
     },
     {
-      "next_safe_action": "inspect the exact failing local gate, fix locally if safe, and keep Telegram alert-only for actionable degradation.",
-      "object": "reminder_health_not_pass,reminder_ingress_open_needed",
-      "pattern": "nightly_self_improvement_regression_attention",
-      "seen_count": 2,
-      "why_it_causes_errors": "Self-heal, Reminder OS, Memory OS, or gateway regression can silently undo recent operating improvements."
-    },
-    {
       "next_safe_action": "split oversized instructions into references, repair missing refs, and prefer source lookup before acting.",
-      "object": "74 flagged skills",
+      "object": "78 flagged skills",
       "pattern": "skill_quality_drift",
       "seen_count": 1,
       "why_it_causes_errors": "Oversized/stale/broken-reference skills increase hallucinated or outdated operating instructions."
     }
   ],
-  "patterns_count": 3,
-  "updated_at": "2026-06-16T05:01:30.704414+00:00",
+  "patterns_count": 2,
+  "updated_at": "2026-06-17T05:01:59.081100+00:00",
   "values_printed": false
 }

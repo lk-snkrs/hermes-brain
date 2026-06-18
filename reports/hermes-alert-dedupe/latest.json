@@ -3,34 +3,20 @@
     {
       "alert": {
         "detail": {
-          "job": "LK-TRENDS · Cloudflare email delivery",
-          "registry": "/opt/data/profiles/lk-trends/cron/jobs.json",
-          "status": "paused_by_lucas_after_bad_newsletter"
+          "job": "LC Mordomo OS whatsapp_context_engine",
+          "registry": "/opt/data/profiles/mordomo/cron/jobs.json",
+          "status": "error"
         },
         "type": "cron_non_ok"
       },
-      "fingerprint": "877bf6b0ee5b379b",
-      "first_seen": "2026-06-16T05:01:30.703158+00:00",
-      "last_seen": "2026-06-16T05:01:30.703158+00:00",
+      "fingerprint": "84d84b9aa41a2340",
+      "first_seen": "2026-06-17T05:01:59.080389+00:00",
+      "last_seen": "2026-06-17T05:01:59.080389+00:00",
       "seen_count": 1,
       "status": "new"
-    },
-    {
-      "alert": {
-        "issues": [
-          "reminder_health_not_pass",
-          "reminder_ingress_open_needed"
-        ],
-        "type": "nightly_self_improvement_regression_attention"
-      },
-      "fingerprint": "86135f8038ac821e",
-      "first_seen": "2026-06-15T05:01:51.362651+00:00",
-      "last_seen": "2026-06-16T05:01:30.703158+00:00",
-      "seen_count": 2,
-      "status": "recurring"
     }
   ],
-  "active_count": 2,
+  "active_count": 1,
   "alerts": {
     "271525f7aad957b2": {
       "alert": {
@@ -121,6 +107,21 @@
       "seen_count": 6,
       "status": "resolved"
     },
+    "84d84b9aa41a2340": {
+      "alert": {
+        "detail": {
+          "job": "LC Mordomo OS whatsapp_context_engine",
+          "registry": "/opt/data/profiles/mordomo/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "84d84b9aa41a2340",
+      "first_seen": "2026-06-17T05:01:59.080389+00:00",
+      "last_seen": "2026-06-17T05:01:59.080389+00:00",
+      "seen_count": 1,
+      "status": "new"
+    },
     "86135f8038ac821e": {
       "alert": {
         "issues": [
@@ -132,8 +133,9 @@
       "fingerprint": "86135f8038ac821e",
       "first_seen": "2026-06-15T05:01:51.362651+00:00",
       "last_seen": "2026-06-16T05:01:30.703158+00:00",
+      "resolved_at": "2026-06-17T05:01:59.080389+00:00",
       "seen_count": 2,
-      "status": "recurring"
+      "status": "resolved"
     },
     "877bf6b0ee5b379b": {
       "alert": {
@@ -147,8 +149,9 @@
       "fingerprint": "877bf6b0ee5b379b",
       "first_seen": "2026-06-16T05:01:30.703158+00:00",
       "last_seen": "2026-06-16T05:01:30.703158+00:00",
+      "resolved_at": "2026-06-17T05:01:59.080389+00:00",
       "seen_count": 1,
-      "status": "new"
+      "status": "resolved"
     },
     "a6f30859ae125f02": {
       "alert": {
@@ -184,8 +187,8 @@
     }
   },
   "new_count": 1,
-  "recurring_count": 1,
-  "resolved_since_previous_count": 0,
-  "updated_at": "2026-06-16T05:01:30.703158+00:00",
+  "recurring_count": 0,
+  "resolved_since_previous_count": 2,
+  "updated_at": "2026-06-17T05:01:59.080389+00:00",
   "values_printed": false
 }
