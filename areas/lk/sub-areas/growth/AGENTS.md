@@ -37,6 +37,21 @@ Exceção: o próprio perfil `lk-stock` pode consultar a Stock OS DB local prime
 
 Todo pedido de PRD, documento de requisitos, especificação de produto, roadmap/spec ou plano de produto deve carregar e seguir a skill `superpowers` antes de escrever. Combine Superpowers com as skills de domínio/roteamento deste agente, preserve guardrails e inclua riscos, critérios de aceite e plano de verificação.
 
+
+## Regra obrigatória — Ahrefs API antes de pedir export manual
+
+Quando Lucas enviar alerta, print, email ou diagnóstico do Ahrefs/Site Audit para a LK, o LK Growth deve **primeiro verificar a API do Ahrefs via Doppler** antes de pedir CSV/export manual ou concluir por amostragem pública.
+
+Fluxo obrigatório:
+1. Checar presença sanitizada de `AHREFS_API_KEY`/`AHREFS_API_TOKEN` no Doppler (`values_printed=false`).
+2. Usar `/opt/data/scripts/hermes_doppler.py run -- ...` se o secret existir mas não estiver injetado no profile `lk-growth`.
+3. Consultar `/v3/site-audit/projects`, identificar o `project_id` da LK e puxar `/v3/site-audit/issues?project_id=...`.
+4. Para issues acionáveis, usar `/v3/site-audit/page-explorer?project_id=...&issue_id=...` antes de solicitar export do Ahrefs UI.
+5. Só pedir export/manual se a API não entregar a coluna necessária, documentando endpoint, HTTP status e limitação sem expor token.
+6. Salvar relatório e evidência no Brain em `reports/ahrefs-broken-links/` ou pasta pertinente.
+
+Motivo: evitar pedir ao Lucas dados que já estão disponíveis por integração read-only.
+
 ## Boot
 
 Antes de agir:

@@ -1,22 +1,6 @@
 {
-  "active": [
-    {
-      "alert": {
-        "detail": {
-          "job": "LC Mordomo OS whatsapp_context_engine",
-          "registry": "/opt/data/profiles/mordomo/cron/jobs.json",
-          "status": "error"
-        },
-        "type": "cron_non_ok"
-      },
-      "fingerprint": "84d84b9aa41a2340",
-      "first_seen": "2026-06-17T05:01:59.080389+00:00",
-      "last_seen": "2026-06-17T05:01:59.080389+00:00",
-      "seen_count": 1,
-      "status": "new"
-    }
-  ],
-  "active_count": 1,
+  "active": [],
+  "active_count": 0,
   "alerts": {
     "271525f7aad957b2": {
       "alert": {
@@ -119,8 +103,9 @@
       "fingerprint": "84d84b9aa41a2340",
       "first_seen": "2026-06-17T05:01:59.080389+00:00",
       "last_seen": "2026-06-17T05:01:59.080389+00:00",
+      "resolved_at": "2026-06-18T05:02:05.020792+00:00",
       "seen_count": 1,
-      "status": "new"
+      "status": "resolved"
     },
     "86135f8038ac821e": {
       "alert": {
@@ -186,9 +171,9 @@
       "status": "resolved"
     }
   },
-  "new_count": 1,
+  "new_count": 0,
   "recurring_count": 0,
-  "resolved_since_previous_count": 2,
-  "updated_at": "2026-06-17T05:01:59.080389+00:00",
+  "resolved_since_previous_count": 1,
+  "updated_at": "2026-06-18T05:02:05.020792+00:00",
   "values_printed": false
 }

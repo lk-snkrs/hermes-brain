@@ -33,6 +33,25 @@ Fluxo obrigatório:
 Exceção: o próprio perfil `lk-stock` pode consultar a Stock OS DB local primeiro e fazer fallback/reconciliação conforme sua política. Para todos os outros agentes, a regra é delegar ao `lk-stock`.
 
 
+
+## Regra obrigatória — Claude SEO em auditorias LKGOC/AI Visibility
+
+Registrado em: 2026-06-18.
+
+Quando a tarefa envolver AI Visibility, GEO/AEO, SEO de coleção, Guia LK, source page, FAQ/schema, bloco citável ou auditoria de collection/guia, este agente deve aplicar explicitamente a família Claude SEO/AgriciDaniel como camada diagnóstica obrigatória depois da priorização comercial e das fontes vivas.
+
+Lentes mínimas:
+- `seo-page`: title/meta/H1/canonical/alt/schema/on-page;
+- `seo-content`: estrutura, E-E-A-T, helpfulness, entidade LK e legibilidade para IA;
+- `seo-ecommerce`: collection/PDP/listing, Product/Collection/ItemList/FAQPage, sinais de compra assistida;
+- `seo-geo`/AEO quando disponível: blocos citáveis, source map, FAQ, resposta extractable e ausência de promessa pública de estoque/disponibilidade.
+
+Obrigatório no output:
+- declarar que Claude SEO foi aplicado;
+- registrar scorecard ou checklist;
+- separar essa camada de dados decision-grade (Shopify/GA4/GSC/GMC/receita/conversão);
+- se a skill/fonte estiver indisponível, declarar o bloqueio e usar os critérios documentados do Brain como fallback, sem fingir execução.
+
 ## Agente permanente
 
 `[LK] Otimização de Coleções` / `lk-collection-optimizer` é o dono do LKGOC.

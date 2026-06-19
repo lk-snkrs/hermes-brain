@@ -2,13 +2,6 @@
   "operating_rule": "Do not repeat an alert unchanged; classify root cause, safe next action and approval boundary.",
   "patterns": [
     {
-      "next_safe_action": "inspect the exact profile cron output and create a scoped fix/approval packet; do not generalize to Docker failure.",
-      "object": "LC Mordomo OS whatsapp_context_engine",
-      "pattern": "new_cron_non_ok",
-      "seen_count": 1,
-      "why_it_causes_errors": "Agents may report governance healthy while a specialist cron is failing."
-    },
-    {
       "next_safe_action": "split oversized instructions into references, repair missing refs, and prefer source lookup before acting.",
       "object": "78 flagged skills",
       "pattern": "skill_quality_drift",
@@ -16,7 +9,7 @@
       "why_it_causes_errors": "Oversized/stale/broken-reference skills increase hallucinated or outdated operating instructions."
     }
   ],
-  "patterns_count": 2,
-  "updated_at": "2026-06-17T05:01:59.081100+00:00",
+  "patterns_count": 1,
+  "updated_at": "2026-06-18T05:02:05.021216+00:00",
   "values_printed": false
 }
