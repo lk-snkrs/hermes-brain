@@ -9,6 +9,7 @@ Fonte resumida atual: `memories/lk.md`. Data contract atual: `contexto/data-spin
 - `sub-areas/ecommerce/` — Shopify, produtos, pedidos, UX e catálogo; roteia estoque físico/pronta entrega para `sub-areas/stock/`.
 - `sub-areas/shopify/` — LK Shopify especialista: produto/upload, coleções, páginas/objetos Shopify, preview/aprovação, readback/receipt e padrões canônicos de execução.
 - `sub-areas/stock/` — `[LK] Estoque Loja Física` / perfil `lk-stock`: dono obrigatório para qualquer pergunta de estoque, pronta entrega, disponibilidade, “tem na loja?”, ruptura/baixo estoque, grade/tamanho e fila de reposição/transferência/compra com Tiny como verdade. Todos os agentes LK devem rotear esse tipo de demanda para cá.
+- `sub-areas/finance/` — `[LK] Financeiro` / perfil `lk-finance`: gastos, recebimentos, contas a pagar/receber, caixa, conciliação, PDFs financeiros e receipts locais; banking/payment/accounting writes e contatos externos exigem aprovação escopada.
 - `sub-areas/atendimento/` — FAQ, dúvidas, suporte e consolidação para bot.
 
 ## Projeto estratégico aprovado

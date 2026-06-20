@@ -1,0 +1,150 @@
+{
+  "operational_date": "2026-06-19",
+  "generated_at_utc": "2026-06-20T04:05:00Z",
+  "status": "attention_controlled",
+  "executive_summary": "Hermes/Brain terminou saudável: Brain Health FAIL=0/WARN=0 e Brain Improvement Score 100. Houve hot-patch LK Stock aprovado para corrigir aba Vendas do dashboard interno, protocolo Honcho v1 aplicado a perfis/agentes, Zipper email-intake com draft/needs-attention, Klaviyo checkpoint read-only e alerta Memory Hygiene por provider externo ativo vs decisão vigente de não usar Mem0/provider externo.",
+  "material_changes": [
+    {
+      "domain": "Hermes Geral",
+      "change": "Daily Intelligence aplicou autoheal A1: LK Finance MAPA, index em LK MAPA e referência faltante em lucas-chief-of-staff; Brain Health pós-fix 0/0 e score 100.",
+      "evidence": "reports/hermes-continuous-improvement/2026-06-19.md"
+    },
+    {
+      "domain": "LK Stock",
+      "change": "Hot-patch Docker aprovado por Lucas no dashboard Stock.LK para reativar aba Vendas com fallback Shopify Sales OS DB; backup/rollback/smoke documentados.",
+      "evidence": "areas/lk/sub-areas/stock/receipts/2026-06-19-stock-lk-dashboard-vendas-hotpatch-20260619T162036Z.md"
+    },
+    {
+      "domain": "Honcho/Hermes Profiles",
+      "change": "Honcho Usage Protocol v1 aplicado a perfis locais e auditor all-agents; verificações sem HIGH/WARN e sem secret hits.",
+      "evidence": "session_search 2026-06-19 Honcho Usage Protocol v1 rollout"
+    },
+    {
+      "domain": "Zipper",
+      "change": "Email-intake registrou rascunho para Marcella/Nina Pandolfo e needs-attention HubSpot/Liany Taira; sem envio confirmado pelo fechamento.",
+      "evidence": "areas/zipper/inbox/email-intake/*.md de 2026-06-19"
+    }
+  ],
+  "incidents": [
+    {
+      "severity": "attention",
+      "domain": "Memory Hygiene",
+      "summary": "external memory provider appears active in config.yaml; decisão vigente é não usar Mem0/provider externo.",
+      "evidence": "reports/memory-hygiene/2026-06-19.json e 2026-06-20.json",
+      "action_needed": "Reconciliar config/runtime de forma secret-safe; sem imprimir valores e sem runtime mutation não aprovada."
+    }
+  ],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Aprovação explícita do hot-patch Docker agora para corrigir aba Vendas do Stock.LK dashboard.",
+      "scope": "Container interno lk-estoque-web/dashboard protegido, com backup/rollback e readback; Tiny/Shopify/Notion writes 0.",
+      "evidence": "areas/lk/sub-areas/stock/receipts/2026-06-19-stock-lk-dashboard-vendas-hotpatch-20260619T162036Z.md"
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "type": "approval",
+      "summary": "Lucas aprovou hot-patch Docker Stock.LK escopado.",
+      "exact_scope": "Corrigir parte de Vendas vazia do dashboard Stock.LK; execução com rollback/readback; sem writes em Tiny/Shopify/Notion.",
+      "exclusions": ["customer contact", "Tiny write", "Shopify write", "Notion write", "cron/gateway mutation outside scope"],
+      "learn_pattern": "Hot-patch operacional aprovado precisa de backup/rollback antes, smoke/readback depois e receipt Memory OS."
+    },
+    {
+      "type": "operational_learning",
+      "summary": "Agentes devem usar Honcho com protocolo estratégico, não só armazenamento automático.",
+      "exact_scope": "7 regras de consulta, recall, contexto peer/session, dialectic parcimonioso, não promover ruído, peer lucas canônico e separação de camadas.",
+      "exclusions": ["não salvar ruído temporário", "não expor memória sensível", "não virar fonte de verdade fora do Brain"],
+      "learn_pattern": "Protocolos de memória precisam chegar aos prompts locais dos perfis e ao auditor, não apenas ao chat."
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Hot-patch Docker aprovado deve sempre ter rollback image/backup, smoke/readback e receipt.",
+      "destination_recommended": "LK Stock dashboard routine/receipt + possible infra-sensitive patch checklist",
+      "action_applied_or_blocked": "Aplicado no receipt; formalização em Git/CI ainda pendente.",
+      "verification_needed": "Confirmar persistência pós-recreate e decidir se vira PR/CI."
+    },
+    {
+      "learning": "Honcho Usage Protocol v1 precisa ser versão governada se for regra durável de todos os perfis.",
+      "destination_recommended": "Brain governance + honcho-memory-operations skill",
+      "action_applied_or_blocked": "Aplicado localmente e skill atualizada; verificar promoção para Brain se necessário.",
+      "verification_needed": "Checar se síntese canônica já está versionada no Brain."
+    },
+    {
+      "learning": "Zipper HubSpot notifications não devem ser respondidas via noreply; recuperar email real/anexos antes.",
+      "destination_recommended": "Zipper email-intake routine/Mordomo",
+      "action_applied_or_blocked": "Needs-attention registrado; resposta externa bloqueada.",
+      "verification_needed": "Abrir HubSpot e preparar preview com e-mail real."
+    },
+    {
+      "learning": "Provider externo de memória ativo vs decisão não-Mem0 deve gerar reconciliação objetiva e secret-safe.",
+      "destination_recommended": "Memory Hygiene / Brain governance",
+      "action_applied_or_blocked": "Bloqueado para correção automática nesta execução; requer reconciliação de config/runtime.",
+      "verification_needed": "Confirmar presença, modo e impacto sem expor valores."
+    }
+  ],
+  "autonomy_pattern_candidates": [
+    {
+      "candidate": "Autoheal A1 local/documental com receipt e revalidação",
+      "should_become": "A0/A1 permitido quando reversível, sem runtime/prod/secrets/external write e com Memory OS receipt quando material"
+    },
+    {
+      "candidate": "Hot-patch Docker interno",
+      "should_remain": "A3/A4 approval-gated: só executar com aprovação escopada, backup, rollback e readback"
+    },
+    {
+      "candidate": "Email draft/needs-attention Zipper",
+      "should_remain": "Preview/draft local permitido conforme rotina; envio externo sempre approval-gated"
+    }
+  ],
+  "pending_decisions_for_lucas": [],
+  "safe_next_actions": [
+    "Reconciliar Memory Hygiene provider externo ativo em modo read-only/secret-safe.",
+    "Formalizar hot-patch Stock.LK em Git/CI ou documentar estratégia de permanência/rollback.",
+    "Preparar preview Zipper HubSpot após recuperar e-mail real/anexos.",
+    "Revisar se jobs Honcho deliver=origin devem virar local/silent-OK."
+  ],
+  "blocked_actions_requiring_approval": [
+    "Qualquer alteração Docker/VPS/gateway/runtime/cron schedule-delivery além de documentação/read-only.",
+    "Qualquer envio de email/WhatsApp/cliente/fornecedor/campanha.",
+    "Qualquer write em Shopify, Tiny, GMC, Ads, Klaviyo, Supabase, banco ou Mission Control produção.",
+    "Qualquer mudança de secrets ou exposição de valores."
+  ],
+  "cron_and_delivery_truth": {
+    "live_snapshot_source": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all fallback; cronjob unavailable in PATH when needed",
+    "jobs_total": 39,
+    "active": 35,
+    "paused": 4,
+    "last_status_non_ok_observed": 0,
+    "active_without_first_run": 0,
+    "silent_ok_notes": [
+      "Nightly Ops scorecard 100/100 with watch=1",
+      "LK Growth cron delivery watchdog ok=true alerts=0 warnings=0",
+      "Memory Hygiene status action_required due external memory provider active",
+      "Honcho deliver=origin jobs are ok but should be reviewed for silent-OK intent"
+    ]
+  },
+  "sources": [
+    "reports/daily-consolidation/2026-06-19.md",
+    "reports/hermes-daily-digest/2026-06-19.md",
+    "reports/hermes-continuous-improvement/2026-06-19.md",
+    "reports/nightly-ops-audit/2026-06-19.md",
+    "reports/governance/runtime-truth-reconciler-2026-06-19.md",
+    "reports/memory-hygiene/2026-06-19.json",
+    "reports/memory-hygiene/2026-06-20.json",
+    "reports/brain-health-check-2026-06-19-02h.json",
+    "reports/brain-improvement-score-2026-06-19-02h.json",
+    "areas/lk/sub-areas/stock/receipts/2026-06-19-stock-lk-dashboard-vendas-hotpatch-20260619T162036Z.md",
+    "areas/lk/sub-areas/content/receipts/2026-06-19T185100Z-klaviyo-checkpoint-24h-01kv1cheanpm6bxcsgz81mr844.json",
+    "areas/lk/sub-areas/growth/reports/cron-delivery-watchdog/cron-delivery-watchdog-2026-06-19.json",
+    "areas/zipper/inbox/email-intake/2026-06-19_203325Z_19ee193a17863715_needs-attention.md",
+    "areas/zipper/inbox/email-intake/2026-06-19_19ee02f95d66e2d1_marcella-nina-pandolfo.md",
+    "session_search: 2026-06-19 Honcho Usage Protocol v1 rollout"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "raw_chat_transcripts_excluded": true,
+    "live_facts_verified": true,
+    "values_printed": false
+  }
+}

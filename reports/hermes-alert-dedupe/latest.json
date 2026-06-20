@@ -138,6 +138,19 @@
       "seen_count": 1,
       "status": "resolved"
     },
+    "93ba340b85bac387": {
+      "alert": {
+        "artifact": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/daily-preflight-brain-health-latest.json",
+        "rc": 124,
+        "type": "brain_health_non_ok"
+      },
+      "fingerprint": "93ba340b85bac387",
+      "first_seen": "2026-06-19T05:02:27.208251+00:00",
+      "last_seen": "2026-06-19T05:02:27.208251+00:00",
+      "resolved_at": "2026-06-19T05:04:01.725157+00:00",
+      "seen_count": 1,
+      "status": "resolved"
+    },
     "a6f30859ae125f02": {
       "alert": {
         "detail": {
@@ -173,7 +186,7 @@
   },
   "new_count": 0,
   "recurring_count": 0,
-  "resolved_since_previous_count": 1,
-  "updated_at": "2026-06-18T05:02:05.020792+00:00",
+  "resolved_since_previous_count": 0,
+  "updated_at": "2026-06-19T05:07:29.908435+00:00",
   "values_printed": false
 }

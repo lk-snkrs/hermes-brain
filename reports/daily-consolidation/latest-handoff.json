@@ -1,181 +1,39 @@
 {
-  "operational_date": "2026-06-18",
-  "generated_at_utc": "2026-06-19T04:06:00Z",
+  "operational_date": "2026-06-19",
+  "generated_at_utc": "2026-06-20T04:05:00Z",
   "status": "attention_controlled",
-  "executive_summary": "Hermes Brain/local governance remained healthy, with Brain Health FAIL=0/WARN=1 and Brain Improvement Score 99/100. The day’s main operational facts were LK Growth Shopify/GMC packet status verified as partial, LK Atendimento avisar-enc confirmed disabled by readback, Zipper Google Workspace 2FA blocked by admin/OAuth scope, LK Finance local PDF/OCR stack validated and Itaú Maio categorized locally, and crons/runtime without live non-ok status.",
+  "executive_summary": "Hermes/Brain terminou saudável: Brain Health FAIL=0/WARN=0 e Brain Improvement Score 100. Houve hot-patch LK Stock aprovado para corrigir aba Vendas do dashboard interno, protocolo Honcho v1 aplicado a perfis/agentes, Zipper email-intake com draft/needs-attention, Klaviyo checkpoint read-only e alerta Memory Hygiene por provider externo ativo vs decisão vigente de não usar Mem0/provider externo.",
   "material_changes": [
-    {
-      "domain": "Hermes Geral / Grande Mente",
-      "summary": "Daily Intelligence/Memory OS recorded A1 local/documental autoheal and runtime/crons remained without live non-ok status.",
-      "evidence": "reports/hermes-continuous-improvement/2026-06-18.md"
-    },
-    {
-      "domain": "LK Growth OS",
-      "summary": "Mesa COO decision 1/3 was verified as partial: base Shopify/GMC approval packet exists, but final canonical values/rules were not fully closed; no writes executed.",
-      "evidence": "empresa/contexto/decision-sequences/2026-06-18.jsonl"
-    },
-    {
-      "domain": "LK Growth OS",
-      "summary": "GMC/Product Data ranking review generated read-only preview and identified Local Inventory link_template and missing product attributes as priority packets.",
-      "evidence": "areas/lk/sub-areas/growth/reports/gmc/lk-gmc-product-data-ranking-review-2026-06-18.md"
-    },
-    {
-      "domain": "LK Atendimento",
-      "summary": "Runtime readback confirmed avisar-enc disabled because SHOPIFY_TAG_TRIGGERS is empty; no write needed.",
-      "evidence": "areas/lk/sub-areas/atendimento/receipts/20260618T095455Z-avisar-enc-disabled-readback.md"
-    },
-    {
-      "domain": "LK Finance",
-      "summary": "Local PDF/OCR stack was installed/validated and Itaú Maio PDF was categorized locally with no external document service.",
-      "evidence": "areas/lk/sub-areas/finance/receipts/20260618T123421Z-local-pdf-ocr-stack-installed.md"
-    },
-    {
-      "domain": "Zipper OS",
-      "summary": "Google Workspace 2FA read-only packet prepared; Admin Reports/Directory blocked by insufficient scope and OAuth app access not configured.",
-      "evidence": "areas/zipper/approval-packets/google-workspace-2fa-admin-readonly-20260618.md"
-    }
+    {"domain": "Hermes Geral", "change": "Daily Intelligence aplicou autoheal A1: LK Finance MAPA, index em LK MAPA e referência faltante em lucas-chief-of-staff; Brain Health pós-fix 0/0 e score 100.", "evidence": "reports/hermes-continuous-improvement/2026-06-19.md"},
+    {"domain": "LK Stock", "change": "Hot-patch Docker aprovado por Lucas no dashboard Stock.LK para reativar aba Vendas com fallback Shopify Sales OS DB; backup/rollback/smoke documentados.", "evidence": "areas/lk/sub-areas/stock/receipts/2026-06-19-stock-lk-dashboard-vendas-hotpatch-20260619T162036Z.md"},
+    {"domain": "Honcho/Hermes Profiles", "change": "Honcho Usage Protocol v1 aplicado a perfis locais e auditor all-agents; verificações sem HIGH/WARN e sem secret hits.", "evidence": "session_search 2026-06-19 Honcho Usage Protocol v1 rollout"},
+    {"domain": "Zipper", "change": "Email-intake registrou rascunho para Marcella/Nina Pandolfo e needs-attention HubSpot/Liany Taira; sem envio confirmado pelo fechamento.", "evidence": "areas/zipper/inbox/email-intake/*.md de 2026-06-19"}
   ],
   "incidents": [
-    {
-      "domain": "Zipper / Google Workspace",
-      "severity": "attention",
-      "summary": "2FA audit cannot be completed via current token because Admin Reports/Directory scope/admin OAuth path is blocked.",
-      "blocked_actions": ["Google Workspace admin write", "2FA enforcement", "user/policy change", "credential scope change without approval"]
-    },
-    {
-      "domain": "LK Growth / Shopify-GMC",
-      "severity": "attention",
-      "summary": "Package is not complete enough to authorize batch Shopify/GMC correction; canonical final rules/values still need closure.",
-      "blocked_actions": ["Shopify write", "GMC/feed write", "ProductInput/dataSource/fetch", "price/stock/SKU/theme/campaign mutation"]
-    },
-    {
-      "domain": "Hermes Brain",
-      "severity": "warn",
-      "summary": "Brain Health WARN: missing MAPA.md in areas/lk/sub-areas/finance.",
-      "blocked_actions": []
-    }
+    {"severity": "attention", "domain": "Memory Hygiene", "summary": "external memory provider appears active in config.yaml; decisão vigente é não usar Mem0/provider externo.", "evidence": "reports/memory-hygiene/2026-06-19.json e 2026-06-20.json", "action_needed": "Reconciliar config/runtime de forma secret-safe; sem imprimir valores e sem runtime mutation não aprovada."}
   ],
   "decisions_made_by_lucas": [
-    {
-      "decision": "LK Atendimento avisar-enc should remain disabled.",
-      "scope": "read-only runtime readback; no Chatwoot/WhatsApp automation write needed",
-      "evidence": "areas/lk/sub-areas/atendimento/receipts/20260618T095455Z-avisar-enc-disabled-readback.md"
-    },
-    {
-      "decision": "LK Finance may use local PDF/OCR stack and local processing for the supplied Itaú Maio PDF.",
-      "scope": "local runtime install/validation and local document processing; no external services",
-      "evidence": "areas/lk/sub-areas/finance/receipts/20260618T123421Z-local-pdf-ocr-stack-installed.md"
-    }
+    {"decision": "Aprovação explícita do hot-patch Docker agora para corrigir aba Vendas do Stock.LK dashboard.", "scope": "Container interno lk-estoque-web/dashboard protegido, com backup/rollback e readback; Tiny/Shopify/Notion writes 0.", "evidence": "areas/lk/sub-areas/stock/receipts/2026-06-19-stock-lk-dashboard-vendas-hotpatch-20260619T162036Z.md"}
   ],
   "approvals_and_corrections": [
-    {
-      "pattern": "Treat user claim that an operational packet is already done as a readback task, not production approval.",
-      "exact_scope": "Mesa COO decision 1/3 Shopify/GMC packet status verification",
-      "exclusions": ["batch Shopify/GMC writes", "feed reprocess", "price/stock/SKU/theme/campaign mutations"]
-    },
-    {
-      "pattern": "Automation status should be closed by runtime readback of final state, not by previous intent or HTTP status alone.",
-      "exact_scope": "LK Atendimento avisar-enc readback",
-      "exclusions": ["Chatwoot write", "WhatsApp automation change", "external send"]
-    },
-    {
-      "pattern": "Sensitive documents can be processed locally when Lucas supplies them and the output remains sanitized/local; no external OCR/document service by default.",
-      "exact_scope": "LK Finance PDF/OCR local processing",
-      "exclusions": ["external upload", "bank/accounting write", "email send", "public logging of sensitive document text"]
-    }
+    {"type": "approval", "summary": "Lucas aprovou hot-patch Docker Stock.LK escopado.", "exact_scope": "Corrigir parte de Vendas vazia do dashboard Stock.LK; execução com rollback/readback; sem writes em Tiny/Shopify/Notion.", "exclusions": ["customer contact", "Tiny write", "Shopify write", "Notion write", "cron/gateway mutation outside scope"], "learn_pattern": "Hot-patch operacional aprovado precisa de backup/rollback antes, smoke/readback depois e receipt Memory OS."},
+    {"type": "operational_learning", "summary": "Agentes devem usar Honcho com protocolo estratégico, não só armazenamento automático.", "exact_scope": "7 regras de consulta, recall, contexto peer/session, dialectic parcimonioso, não promover ruído, peer lucas canônico e separação de camadas.", "exclusions": ["não salvar ruído temporário", "não expor memória sensível", "não virar fonte de verdade fora do Brain"], "learn_pattern": "Protocolos de memória precisam chegar aos prompts locais dos perfis e ao auditor, não apenas ao chat."}
   ],
   "learning_ledger_candidates": [
-    {
-      "learning": "Mesa COO decisions need explicit status classes such as verified_partial when evidence exists but final canonical packet is not closed.",
-      "recommended_destination": "Mesa COO decision workflow",
-      "action_applied": true,
-      "verification_needed": "02h supervisor should not mark the Shopify/GMC item fully resolved."
-    },
-    {
-      "learning": "LK Finance now has operational receipts and should get a MAPA.md to satisfy Brain Health.",
-      "recommended_destination": "areas/lk/sub-areas/finance/MAPA.md",
-      "action_applied": false,
-      "blocker": "Safe A1 documentation pending."
-    },
-    {
-      "learning": "Google Workspace security checks must preserve business domain separation and require correct admin/read-only scope before claims.",
-      "recommended_destination": "multiempresa routing / Google Workspace routine",
-      "action_applied": false,
-      "blocker": "Admin OAuth/app access not configured."
-    }
+    {"learning": "Hot-patch Docker aprovado deve sempre ter rollback image/backup, smoke/readback e receipt.", "destination_recommended": "LK Stock dashboard routine/receipt + possible infra-sensitive patch checklist", "action_applied_or_blocked": "Aplicado no receipt; formalização em Git/CI ainda pendente.", "verification_needed": "Confirmar persistência pós-recreate e decidir se vira PR/CI."},
+    {"learning": "Honcho Usage Protocol v1 precisa ser versão governada se for regra durável de todos os perfis.", "destination_recommended": "Brain governance + honcho-memory-operations skill", "action_applied_or_blocked": "Aplicado localmente e skill atualizada; verificar promoção para Brain se necessário.", "verification_needed": "Checar se síntese canônica já está versionada no Brain."},
+    {"learning": "Zipper HubSpot notifications não devem ser respondidas via noreply; recuperar email real/anexos antes.", "destination_recommended": "Zipper email-intake routine/Mordomo", "action_applied_or_blocked": "Needs-attention registrado; resposta externa bloqueada.", "verification_needed": "Abrir HubSpot e preparar preview com e-mail real."},
+    {"learning": "Provider externo de memória ativo vs decisão não-Mem0 deve gerar reconciliação objetiva e secret-safe.", "destination_recommended": "Memory Hygiene / Brain governance", "action_applied_or_blocked": "Bloqueado para correção automática nesta execução; requer reconciliação de config/runtime.", "verification_needed": "Confirmar presença, modo e impacto sem expor valores."}
   ],
-  "autonomy_pattern_candidates": {
-    "may_become_A0_A1_when_safe": [
-      "Create missing area MAPA.md when Brain Health reports subarea_missing_mapa and source docs exist",
-      "Runtime readback/status checks for already-approved disabled automation without performing writes",
-      "Local PDF/OCR extraction for user-supplied documents when no external service or secret is involved and outputs are sanitized"
-    ],
-    "must_remain_A3_A4": [
-      "Shopify/GMC/feed/ProductInput/dataSource/fetch/reprocess writes",
-      "Google Workspace admin/security enforcement or credential scope changes",
-      "External/customer/supplier messages",
-      "Finance/banking/accounting/payment writes",
-      "Docker/VPS/gateway/deploy/cron schedule or delivery changes"
-    ]
-  },
-  "pending_decisions_for_lucas": [
-    {
-      "domain": "LK Growth",
-      "decision_needed": "Approve or reject a final canonical Shopify/GMC packet once rules/values are complete; current status is partial, not production-ready."
-    },
-    {
-      "domain": "Zipper",
-      "decision_needed": "Choose path for Google Workspace 2FA read-only audit: Super Admin OAuth/app allowlist or manual Admin Console export/check."
-    },
-    {
-      "domain": "LK Finance",
-      "decision_needed": "Review Itaú Maio categories marked as revisar/pessoal before final accounting use."
-    }
+  "autonomy_pattern_candidates": [
+    {"candidate": "Autoheal A1 local/documental com receipt e revalidação", "should_become": "A0/A1 permitido quando reversível, sem runtime/prod/secrets/external write e com Memory OS receipt quando material"},
+    {"candidate": "Hot-patch Docker interno", "should_remain": "A3/A4 approval-gated: só executar com aprovação escopada, backup, rollback e readback"},
+    {"candidate": "Email draft/needs-attention Zipper", "should_remain": "Preview/draft local permitido conforme rotina; envio externo sempre approval-gated"}
   ],
-  "safe_next_actions": [
-    "Create areas/lk/sub-areas/finance/MAPA.md and rerun Brain Health.",
-    "Close LK Growth Shopify/GMC canonical packet as approved/rejected/needs-human-review before any write packet.",
-    "Prepare Zipper Google Workspace manual Admin Console checklist if OAuth remains blocked."
-  ],
-  "blocked_actions_requiring_approval": [
-    "Shopify/GMC/Tiny/Klaviyo/Meta/Supabase/database writes",
-    "WhatsApp/email/customer/collector/supplier sends",
-    "Google Workspace admin/policy/user enforcement",
-    "Docker/VPS/gateway/restart/deploy/cron mutations",
-    "Finance/banking/accounting/payment writes"
-  ],
-  "cron_and_delivery_truth": {
-    "normal_delivery": "local/silent",
-    "telegram_or_origin_required": true,
-    "reason": "Brain Health WARN=1 / Score 99 indicates actionable local documentation gap; not a critical failure.",
-    "runtime_summary": "Fallback Hermes CLI list showed no live non-ok status; prior runtime reconciler had 40 total jobs, 36 active, 4 paused, non_ok=0.",
-    "generated_artifacts": [
-      "reports/daily-consolidation/2026-06-18.md",
-      "reports/daily-consolidation/2026-06-18-handoff.json",
-      "reports/daily-consolidation/latest-handoff.json",
-      "reports/brain-health-check-2026-06-18-02h.json",
-      "reports/brain-improvement-score-2026-06-18-02h.md",
-      "reports/brain-improvement-score-2026-06-18-02h.json"
-    ]
-  },
-  "sources": [
-    "empresa/contexto/decision-sequences/2026-06-18.jsonl",
-    "reports/hermes-daily-digest/2026-06-18.md",
-    "reports/nightly-ops-audit/2026-06-18.md",
-    "reports/hermes-continuous-improvement/2026-06-18.md",
-    "reports/hermes-learning-ledger/2026-06-18.md",
-    "reports/governance/runtime-truth-reconciler-2026-06-18.md",
-    "areas/lk/sub-areas/growth/reports/gmc/lk-gmc-product-data-ranking-review-2026-06-18.md",
-    "areas/lk/sub-areas/atendimento/receipts/20260618T095455Z-avisar-enc-disabled-readback.md",
-    "areas/zipper/approval-packets/google-workspace-2fa-admin-readonly-20260618.md",
-    "areas/lk/sub-areas/finance/receipts/20260618T123421Z-local-pdf-ocr-stack-installed.md",
-    "areas/lk/sub-areas/finance/receipts/20260618T124002Z-itau-maio-local-categorization.md"
-  ],
-  "sanitization": {
-    "secrets_redacted": true,
-    "values_printed": false,
-    "raw_transcripts_included": false,
-    "pii_minimized": true,
-    "external_writes": false
-  }
+  "pending_decisions_for_lucas": [],
+  "safe_next_actions": ["Reconciliar Memory Hygiene provider externo ativo em modo read-only/secret-safe.", "Formalizar hot-patch Stock.LK em Git/CI ou documentar estratégia de permanência/rollback.", "Preparar preview Zipper HubSpot após recuperar e-mail real/anexos.", "Revisar se jobs Honcho deliver=origin devem virar local/silent-OK."],
+  "blocked_actions_requiring_approval": ["Qualquer alteração Docker/VPS/gateway/runtime/cron schedule-delivery além de documentação/read-only.", "Qualquer envio de email/WhatsApp/cliente/fornecedor/campanha.", "Qualquer write em Shopify, Tiny, GMC, Ads, Klaviyo, Supabase, banco ou Mission Control produção.", "Qualquer mudança de secrets ou exposição de valores."],
+  "cron_and_delivery_truth": {"live_snapshot_source": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all fallback; cronjob unavailable in PATH when needed", "jobs_total": 39, "active": 35, "paused": 4, "last_status_non_ok_observed": 0, "active_without_first_run": 0, "silent_ok_notes": ["Nightly Ops scorecard 100/100 with watch=1", "LK Growth cron delivery watchdog ok=true alerts=0 warnings=0", "Memory Hygiene status action_required due external memory provider active", "Honcho deliver=origin jobs are ok but should be reviewed for silent-OK intent"]},
+  "sources": ["reports/daily-consolidation/2026-06-19.md", "reports/hermes-daily-digest/2026-06-19.md", "reports/hermes-continuous-improvement/2026-06-19.md", "reports/nightly-ops-audit/2026-06-19.md", "reports/governance/runtime-truth-reconciler-2026-06-19.md", "reports/memory-hygiene/2026-06-19.json", "reports/memory-hygiene/2026-06-20.json", "reports/brain-health-check-2026-06-19-02h.json", "reports/brain-improvement-score-2026-06-19-02h.json", "areas/lk/sub-areas/stock/receipts/2026-06-19-stock-lk-dashboard-vendas-hotpatch-20260619T162036Z.md", "areas/lk/sub-areas/content/receipts/2026-06-19T185100Z-klaviyo-checkpoint-24h-01kv1cheanpm6bxcsgz81mr844.json", "areas/lk/sub-areas/growth/reports/cron-delivery-watchdog/cron-delivery-watchdog-2026-06-19.json", "areas/zipper/inbox/email-intake/2026-06-19_203325Z_19ee193a17863715_needs-attention.md", "areas/zipper/inbox/email-intake/2026-06-19_19ee02f95d66e2d1_marcella-nina-pandolfo.md", "session_search: 2026-06-19 Honcho Usage Protocol v1 rollout"],
+  "sanitization": {"secrets_redacted": true, "raw_chat_transcripts_excluded": true, "live_facts_verified": true, "values_printed": false}
 }
