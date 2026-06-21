@@ -1,8 +1,8 @@
-# Mordomo Decision Dashboard — 19/06/2026 17:00 BRT
+# Mordomo Decision Dashboard — 20/06/2026 17:00 BRT
 
 ## Saúde executiva
 - Decisões abertas: 33
-- Follow-ups operacionais próximos: 27
+- Follow-ups operacionais próximos: 33
 - Ações enviadas hoje: 0
 - Ruídos segurados na amostra: 8
 - Cliques de botão registrados na amostra: 8

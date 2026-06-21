@@ -1,6 +1,23 @@
 {
-  "active": [],
-  "active_count": 0,
+  "active": [
+    {
+      "alert": {
+        "issues": [
+          "memory_daytime_not_silent_ok",
+          "memory_latest_status_action_required",
+          "memory_daytime_latest_status_action_required",
+          "memory_scorecard_status_attention"
+        ],
+        "type": "nightly_self_improvement_regression_attention"
+      },
+      "fingerprint": "a9087abfad5f141f",
+      "first_seen": "2026-06-20T05:01:45.272714+00:00",
+      "last_seen": "2026-06-20T05:01:45.272714+00:00",
+      "seen_count": 1,
+      "status": "new"
+    }
+  ],
+  "active_count": 1,
   "alerts": {
     "271525f7aad957b2": {
       "alert": {
@@ -167,6 +184,22 @@
       "seen_count": 11,
       "status": "resolved"
     },
+    "a9087abfad5f141f": {
+      "alert": {
+        "issues": [
+          "memory_daytime_not_silent_ok",
+          "memory_latest_status_action_required",
+          "memory_daytime_latest_status_action_required",
+          "memory_scorecard_status_attention"
+        ],
+        "type": "nightly_self_improvement_regression_attention"
+      },
+      "fingerprint": "a9087abfad5f141f",
+      "first_seen": "2026-06-20T05:01:45.272714+00:00",
+      "last_seen": "2026-06-20T05:01:45.272714+00:00",
+      "seen_count": 1,
+      "status": "new"
+    },
     "f9acad02865c915c": {
       "alert": {
         "detail": {
@@ -184,9 +217,9 @@
       "status": "resolved"
     }
   },
-  "new_count": 0,
+  "new_count": 1,
   "recurring_count": 0,
   "resolved_since_previous_count": 0,
-  "updated_at": "2026-06-19T05:07:29.908435+00:00",
+  "updated_at": "2026-06-20T05:01:45.272714+00:00",
   "values_printed": false
 }
