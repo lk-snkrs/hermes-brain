@@ -5,7 +5,7 @@
       "next_safe_action": "inspect the exact failing local gate, fix locally if safe, and keep Telegram alert-only for actionable degradation.",
       "object": "memory_daytime_not_silent_ok,memory_latest_status_action_required,memory_daytime_latest_status_action_required,memory_scorecard_status_attention",
       "pattern": "nightly_self_improvement_regression_attention",
-      "seen_count": 1,
+      "seen_count": 3,
       "why_it_causes_errors": "Self-heal, Reminder OS, Memory OS, or gateway regression can silently undo recent operating improvements."
     },
     {
@@ -14,16 +14,9 @@
       "pattern": "skill_quality_drift",
       "seen_count": 1,
       "why_it_causes_errors": "Oversized/stale/broken-reference skills increase hallucinated or outdated operating instructions."
-    },
-    {
-      "next_safe_action": "write local adoption matrix; upgrades remain approval-gated.",
-      "object": "v2026.6.19",
-      "pattern": "new_release_needs_adoption_decision",
-      "seen_count": 1,
-      "why_it_causes_errors": "New Hermes features can remain available-but-not-adopted unless mapped into habits/checks."
     }
   ],
-  "patterns_count": 3,
-  "updated_at": "2026-06-20T05:01:45.273189+00:00",
+  "patterns_count": 2,
+  "updated_at": "2026-06-21T05:03:50.545885+00:00",
   "values_printed": false
 }

@@ -16,7 +16,8 @@ A memória rica deve existir fora do prompt fixo, em camadas consultáveis.
 - **daily / hot / reports / receipts**: continuidade, evidência, estado current, auditorias e recibos de alteração.
 - **skills**: procedimentos repetíveis, troubleshooting, runbooks, checklists com verificação/rollback.
 - **`session_search`**: histórico conversacional e origem de decisões que ainda não foram materializadas no Brain.
-- **Mem0/provider externo**: decisão atual é **não usar**; Brain é a fonte rica canônica. Só reabrir com novo PRD/spike explícito de Lucas.
+- **Mem0/provider externo genérico**: decisão atual é **não usar**; Brain é a fonte rica canônica. Só reabrir com novo PRD/spike explícito de Lucas.
+- **Honcho**: exceção governada aprovada por Lucas em 2026-06-21 como camada auxiliar de recall/contexto quando `memory.provider=honcho`, `honcho.json` aponta para workspace/peer esperados e o watchdog Honcho está silent-OK. Honcho não substitui o Brain.
 
 Camadas consultáveis detalhadas:
 
@@ -27,7 +28,8 @@ Camadas consultáveis detalhadas:
 - skills para procedimentos repetíveis;
 - `session_search` para histórico conversacional;
 - reports/archive/receipts para evidência;
-- provider externo de memória: atualmente rejeitado/off; só reabrir com novo PRD/spike explícito.
+- provider externo de memória genérico/Mem0: rejeitado/off; só reabrir com novo PRD/spike explícito;
+- Honcho: permitido apenas como provider governado, com health/workspace/peer/watchdog OK e `values_printed=false`.
 
 ## Por quê
 
@@ -131,7 +133,7 @@ O prompt fixo deve conter ponteiro para o report, não o report inteiro.
 
 ### 8. Provider externo de memória
 
-**Decisão atual de Lucas: não usar Mem0/provider externo para memória Hermes.** Hermes Brain continua como memória rica canônica; `memory.provider` deve ficar vazio/off. Artefatos de canário/PRD anteriores são históricos/rejeitados, não backlog ativo. Só reabrir se Lucas pedir novo PRD/spike explícito, sem dados reais sensíveis e sem ativação automática.
+**Decisão atual de Lucas: Mem0/provider externo genérico continua rejeitado/off. Honcho é provider governado aprovado.** Hermes Brain continua como memória rica canônica; Honcho é apenas camada auxiliar de recall/contexto e observação. `memory.provider: honcho` é aceitável quando os checks locais confirmam: `honcho.json` presente, workspace `lucas-hermes`, peer `lucas`, `saveMessages=true`, recall mode intencional e watchdog Honcho silent-OK. Qualquer provider diferente de Honcho, ou Honcho degradado/sem health/workspace/peer OK, volta a ser `action_required`. Artefatos de canário/PRD Mem0 anteriores são históricos/rejeitados, não backlog ativo.
 
 ## Índice operacional: onde procurar/salvar cada memória
 
@@ -146,7 +148,7 @@ Use este roteador antes de gravar informação nova:
 - Histórico de conversa ou origem de uma decisão que não foi materializada → `session_search` primeiro; só promover se virar regra/decisão.
 - Dado vivo/operacional atual — estoque, pedido, métrica, status de gateway/cron/deploy/campanha → fonte real/API/CLI no momento; Brain guarda apenas ponteiro/receipt.
 - Credenciais, tokens, senhas, refresh tokens, connection strings → nunca no Brain nem na memória injetada; consultar fonte segura autorizada e não imprimir valor.
-- Conhecimento semântico amplo que exigiria recall automático → hoje permanece em Brain/session_search; provider externo está rejeitado/off até novo PRD explícito.
+- Conhecimento semântico amplo que exigiria recall automático → Brain permanece canônico; Honcho pode auxiliar recall/contexto se governado e saudável; Mem0/provider externo genérico segue rejeitado/off até novo PRD explícito.
 
 ## Política de promoção/rebaixamento
 

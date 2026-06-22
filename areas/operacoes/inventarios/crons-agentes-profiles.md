@@ -1,7 +1,39 @@
 # Inventário vivo — crons, agentes, profiles e projetos
 
-Data-base: 2026-06-20 11:20 UTC
-Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-06-20**
+Data-base: 2026-06-21 11:20 UTC
+Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-06-21**
+
+---
+
+### Atualização 2026-06-21 11:20 UTC
+
+**Fonte:** `cronjob list` solicitado; `cronjob` não disponível no PATH deste runtime. Fallback canônico usado: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all`.
+
+**Contagem:** 42 jobs totais — 38 ativos, 4 pausados.
+
+**`last_status` não-ok:** 0. Todos os jobs com execução registrada constam `ok` na evidência viva desta execução.
+
+**Erros explícitos de delivery do scheduler:** 0 na listagem. **Falhas em stdout de job:** 0 observadas pela listagem resumida.
+
+**Jobs ativos sem primeira execução registrada:** 0.
+
+**Jobs pausados na evidência viva:**
+- `ac0b440e2643` Mordomo Telegram gateway watchdog — pausado, último status ok em 2026-05-30T15:52.
+- `876d54c62ccd` LK Growth Telegram gateway watchdog — pausado, último status ok em 2026-05-30T15:52.
+- `663e3e6a148c` SPITI Telegram gateway watchdog — pausado, último status ok em 2026-05-30T15:52.
+- `955dc769b5a6` LK specialist Telegram gateway watchdog — pausado, `deliver=origin`, último status ok em 2026-05-30T15:52.
+
+**Drift/notable reconciliation:**
+- Contagem estável vs 2026-06-20: 42 totais / 38 ativos / 4 pausados.
+- Nenhum `last_status` não-ok, erro explícito de delivery ou job ativo sem primeira execução registrada na evidência atual.
+- Jobs Honcho recém-observados em 2026-06-20 continuam ativos/`deliver=origin`/`ok`: `7d32b8b77317` Honcho Hermes memory watchdog silent-OK, `39b176e08174` Honcho memory quality auditor silent-OK, `16dfc4d14c85` Honcho Intelligence Layer v1 weekly silent-OK.
+- `2e5bc91d27d6` Hermes Nightly Operations Audit OS — 02h50 BRT segue ativo/local/ok e ainda merece reconciliação documental de owner/finalidade/critério de sucesso em rodada própria.
+- Rotinas previamente problemáticas (`d03fa04e1188`, `c3bb587519d2`, `e3279babbc4a`, `a2ead305eab2`, `357d40a5863e`, `787134d4ac5c`, `a1d1e36f8075`) seguem `ok`; não manter como falha ativa sem nova evidência.
+- Documentação que descreve Mordomo/LK Growth/SPITI gateway watchdogs como ativos deve permanecer marcada como histórica até nova evidência viva mostrar reativação.
+
+**Jobs deliver=origin (saídas intencionais/condicionais):** Mesa COO diária (`749ee30b51eb`), Relatório Hermes 01h+02h+02h15+02h25+02h50 + Score 0–100 — 03h Telegram (`98478b820720`), Reminder OS — 2h open-loop watchdog (`518634d5ea60`), Honcho Hermes memory watchdog silent-OK (`7d32b8b77317`), Honcho memory quality auditor silent-OK (`39b176e08174`) e Honcho Intelligence Layer v1 weekly silent-OK (`16dfc4d14c85`). `LK specialist Telegram gateway watchdog` (`955dc769b5a6`) também está configurado como `origin`, mas está pausado.
+
+**Relatório completo:** `reports/governance/runtime-truth-reconciler-2026-06-21.md`
 
 ---
 

@@ -56,7 +56,7 @@ Antes de agir em trabalho operacional:
 2. Identificar tipo de tarefa e risco A0-A4.
 3. Consultar a matriz de roteamento quando houver especialista/profile dono claro.
 4. Consultar `START-HERE.md` e `MAPA.md` quando a navegação importar.
-5. Para decisões de memória/contexto, consultar `memories/politica-memoria-hermes.md`: Brain = memória rica canônica/fonte de verdade; `MEMORY.md`/`USER.md` = boot mínimo; daily/hot/reports/receipts = continuidade/evidência/current; skills = procedimentos; `session_search` = histórico; Mem0/provider externo = decisão atual é não usar; só reabrir com novo PRD/spike explícito, nunca fonte de verdade.
+5. Para decisões de memória/contexto, consultar `memories/politica-memoria-hermes.md`: Brain = memória rica canônica/fonte de verdade; `MEMORY.md`/`USER.md` = boot mínimo; daily/hot/reports/receipts = continuidade/evidência/current; skills = procedimentos; `session_search` = histórico; Mem0/provider externo genérico = rejeitado/off; Honcho = provider governado auxiliar quando health/workspace/peer/watchdog estão OK; nenhum provider externo vira fonte de verdade.
 6. Consultar `agentes/hermes-geral/` para identidade, tom e regras do Hermes Geral.
 7. Carregar skill relevante quando existir.
 8. Usar `session_search` quando o pedido depender de histórico de conversa.
@@ -234,4 +234,12 @@ Padrão Lucas: usar **Playwright/CDP primeiro** para tarefas normais. Usar `http
 - Board operacional: Kanban `reminder-os`. O board governa o sistema; não autoriza execução externa.
 - Watchdog aprovado: `/opt/data/scripts/reminder_os_watchdog.py`, cron a cada 2h, silent-OK; Telegram só para loop acionável.
 - Reminder OS não substitui approval gates: writes externos/prod/infra/secrets continuam bloqueados sem aprovação escopada, backup/rollback e verificação.
+
+## Honcho Utility Enforcement v2 — valor visível, não só armazenamento
+
+- Antes de qualquer decisão estratégica, operacional, comercial, técnica ou de segurança que dependa de histórico/preferências, o agente deve consultar Honcho (`context`, `search` ou `reasoning`) quando disponível, ou registrar explicitamente por que não foi necessário.
+- Distinguir sempre: `configured` (config existe), `active` (runtime usa provider), `functioning` (save/search/dialectic verificados) e `useful` (a memória alterou a decisão/resposta ou reduziu ruído/pergunta repetida).
+- Se Honcho retornar contexto irrelevante, genérico, truncado ou contraditório, tratar como sinal de degradação de utilidade: preferir Brain/fonte live e registrar candidato de higiene em vez de propagar ruído.
+- Não salvar progresso efêmero, IDs, outputs transitórios, falhas recuperadas, secrets ou conclusões sobre empresa como fato do Lucas; empresa/domínio vai para Brain/fonte canônica.
+- Para Lucas, o sucesso do Honcho é melhoria operacional visível: menos repetição, melhor bloqueio de risco, melhor roteamento, menos Telegram desnecessário e respostas mais contextualizadas.
 
