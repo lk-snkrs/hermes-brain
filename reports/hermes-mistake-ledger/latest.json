@@ -2,13 +2,6 @@
   "operating_rule": "Do not repeat an alert unchanged; classify root cause, safe next action and approval boundary.",
   "patterns": [
     {
-      "next_safe_action": "inspect the exact failing local gate, fix locally if safe, and keep Telegram alert-only for actionable degradation.",
-      "object": "memory_daytime_not_silent_ok,memory_latest_status_action_required,memory_daytime_latest_status_action_required,memory_scorecard_status_attention",
-      "pattern": "nightly_self_improvement_regression_attention",
-      "seen_count": 3,
-      "why_it_causes_errors": "Self-heal, Reminder OS, Memory OS, or gateway regression can silently undo recent operating improvements."
-    },
-    {
       "next_safe_action": "split oversized instructions into references, repair missing refs, and prefer source lookup before acting.",
       "object": "79 flagged skills",
       "pattern": "skill_quality_drift",
@@ -16,7 +9,7 @@
       "why_it_causes_errors": "Oversized/stale/broken-reference skills increase hallucinated or outdated operating instructions."
     }
   ],
-  "patterns_count": 2,
-  "updated_at": "2026-06-21T05:03:50.545885+00:00",
+  "patterns_count": 1,
+  "updated_at": "2026-06-22T05:01:54.667117+00:00",
   "values_printed": false
 }

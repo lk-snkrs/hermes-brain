@@ -10,6 +10,7 @@ Este índice aponta para rotinas business-readable documentadas no Brain. Ele n�
 | Heartbeat | `areas/operacoes/rotinas/heartbeat.md` | Checagens periódicas operacionais |
 | Brain Health Check | `areas/operacoes/rotinas/brain-health-check.md` | Validação de secrets, links, agentes, rotinas e skills |
 | Hermes Release Watch | `areas/operacoes/rotinas/hermes-release-watch.md` | Monitorar releases do Hermes Agent e avaliar melhorias aplicáveis |
+| Hermes v0.17 Adoption Sentinel | `areas/operacoes/rotinas/hermes-v017-adoption-sentinel.md` | Sentinel read-only da adoção v0.17: delegated tests, gaps de perfis, crons `origin`, scripts e approval gates |
 | Manual Lucas Dashboard v0.16 | `areas/operacoes/rotinas/manual-lucas-dashboard-v016.md` | Guia prático para Lucas usar o Dashboard remoto v0.16 com limites de segurança e approval packets |
 | Hermes v0.16 Continuous Improvement Checklist | `areas/operacoes/rotinas/hermes-v016-continuous-improvement-checklist.md` | Checklist pós-release/semanal para transformar features Hermes em melhorias reais, com P0/P1/P2/A3-A4 |
 | Hermes v0.16 Context/Sessions/Prompt Diagnostic | `areas/operacoes/rotinas/hermes-v016-context-sessions-prompt-diagnostic.md` | Rotina read-only para diagnosticar lentidão, compressão, session store e prompt-size antes de runtime/model changes |

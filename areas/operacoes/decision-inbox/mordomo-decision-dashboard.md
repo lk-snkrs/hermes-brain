@@ -1,4 +1,4 @@
-# Mordomo Decision Dashboard — 21/06/2026 17:00 BRT
+# Mordomo Decision Dashboard — 22/06/2026 17:00 BRT
 
 ## Saúde executiva
 - Decisões abertas: 33

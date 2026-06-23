@@ -1,3 +1,12 @@
+## 2026-06-22 — Weekly Learning Loop W26 consolidado
+
+**Governança semanal:**
+- Gerado `reports/hermes-learning-weekly/2026-W26-2026-06-16-a-2026-06-22.md`, consolidando reports diários 02h, scores, CHANGELOG, Nightly Ops e release watch.
+- Síntese: Learning Loop saudável com atenção controlada; runtime observado em v0.17.0, score diário médio 95,57, auto-heals A1 fecharam Reminder OS, Memory OS idempotente, MAPAs/skills e watchdog version alignment.
+- Decisões pendentes: política Honcho como provider governado vs rollback/desativação; LK-Trends e-mail delivery deve seguir local até revisão/aprovação escopada.
+
+**Limite preservado:** sem Docker/VPS/Traefik/gateway restart, cron mutation, source-of-truth write, Tiny/Shopify/GMC/Klaviyo/Meta/WhatsApp/e-mail/database write ou secrets. `values_printed=false`.
+
 ## 2026-06-15 — Weekly Learning Loop W25 consolidado
 
 **Governança semanal:**

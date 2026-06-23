@@ -175,3 +175,19 @@ python3 /opt/data/scripts/hermes_memory_os_event_hook.py <caminho-do-handoff> --
 
 Se `loop needed: yes`, o item precisa estar coberto no ledger `areas/operacoes/reminder-os/reminders.jsonl` ou aparecer como blocker no health/ingress audit. Se `loop needed: no`, explicar por que o ciclo está fechado. Regra: se outro agente não consegue retomar sem contexto de chat, o handoff falhou.
 
+
+
+## Correção Lucas — GMC/feed link_template é Shopify-first
+
+Registrado em: 2026-06-22T17:48:04.918396+00:00
+
+Quando o problema de GMC/feed estiver ligado a campos derivados de produto/feed — incluindo `link_template`, `mobile_link_template`, `ads_redirect`, URL local/LIA, atributos de produto, cor, product_type ou qualquer dado sincronizado por Simprosys/Shopify — o LK Growth **não deve tratar o Merchant Center como fonte primária de correção** por padrão.
+
+Fluxo obrigatório:
+1. Identificar a fonte Shopify/Simprosys/supplemental que gera o campo no GMC.
+2. Corrigir primeiro na fonte upstream correta, preferencialmente Shopify/configuração de feed/Simprosys, quando esse for o dono do dado.
+3. Usar GMC/Merchant API inicialmente para readback, diagnóstico e validação de sync.
+4. Só usar `productInputs.patch` direto no GMC como exceção controlada quando comprovado que o campo não é gerado/reescrito pela Shopify/Simprosys, com approval explícito, snapshot, rollback e D+1 stickiness check.
+5. Se Lucas disser que “tecnicamente tem que corrigir na Shopify e depois o GMC sincroniza”, pausar qualquer lote Merchant API direto e reabrir investigação Shopify-first.
+
+Motivo: evitar patch direto no GMC que seja sobrescrito pelo feed e garantir correção durável na fonte de verdade.

@@ -42,7 +42,8 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/hermes-memory-os-v1.md` — rotina v1/v2.3 para memória viva/contínua durante o dia: router, compactação preventiva, daily/hot/current, context router, evidence ladder, sufficiency score, TTL enforcement, contradiction detector, decision continuity ledger, subagent context contract v2, silent-OK self-test, operational regression registry, local QA gate, coverage/drift matrix, receipt adoption gate, replay simulator, context packs, recall tests, coverage por profile e Telegram silent-OK.
 - `rotinas/security-checkup.md` — revisão de segurança para Brain, integrações, canais, secrets e execução.
 - `rotinas/area-skill-subagent-agent-decision.md` — matriz para decidir área, rotina, skill, subagent, cron ou agente/canal permanente.
-- `rotinas/hermes-release-watch.md` — monitoramento de releases Hermes Agent e avaliação de melhorias.
+- `rotinas/hermes-release-watch.md` — monitoramento de releases Hermes Agent e avaliação de melhorias aplicáveis.
+- `rotinas/hermes-v017-adoption-sentinel.md` — sentinel read-only da adoção Hermes v0.17: delegated tests/Delegated Done, gaps de perfis, contratos Telegram em crons, scripts e Brain/skills; não ativa runtime nem canais.
 - `rotinas/hermes-runtime-observability.md` — observabilidade read-only do runtime Hermes.
 - `rotinas/hermes-agent-cron-e-performance-diagnostico.md` — rotina Hermes Agent para auditar crons por fonte primária e diagnosticar lentidão/travamento por camadas antes de limpeza/restart.
 - `rotinas/company-decision-memory.md` — protocolo para salvar toda decisão empresarial na memória viva da empresa correspondente.

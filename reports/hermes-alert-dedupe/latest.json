@@ -1,23 +1,6 @@
 {
-  "active": [
-    {
-      "alert": {
-        "issues": [
-          "memory_daytime_not_silent_ok",
-          "memory_latest_status_action_required",
-          "memory_daytime_latest_status_action_required",
-          "memory_scorecard_status_attention"
-        ],
-        "type": "nightly_self_improvement_regression_attention"
-      },
-      "fingerprint": "a9087abfad5f141f",
-      "first_seen": "2026-06-20T05:01:45.272714+00:00",
-      "last_seen": "2026-06-21T05:03:50.545586+00:00",
-      "seen_count": 3,
-      "status": "recurring"
-    }
-  ],
-  "active_count": 1,
+  "active": [],
+  "active_count": 0,
   "alerts": {
     "271525f7aad957b2": {
       "alert": {
@@ -197,8 +180,9 @@
       "fingerprint": "a9087abfad5f141f",
       "first_seen": "2026-06-20T05:01:45.272714+00:00",
       "last_seen": "2026-06-21T05:03:50.545586+00:00",
+      "resolved_at": "2026-06-22T05:01:54.666196+00:00",
       "seen_count": 3,
-      "status": "recurring"
+      "status": "resolved"
     },
     "f9acad02865c915c": {
       "alert": {
@@ -218,8 +202,8 @@
     }
   },
   "new_count": 0,
-  "recurring_count": 1,
-  "resolved_since_previous_count": 0,
-  "updated_at": "2026-06-21T05:03:50.545586+00:00",
+  "recurring_count": 0,
+  "resolved_since_previous_count": 1,
+  "updated_at": "2026-06-22T05:01:54.666196+00:00",
   "values_printed": false
 }
