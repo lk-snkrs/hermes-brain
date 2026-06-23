@@ -20,7 +20,7 @@ from urllib.parse import parse_qs, urlparse
 ROOT_MARKERS = ("AGENTS.md", "START-HERE.md", "MAPA.md")
 DEFAULT_POINTER = Path("areas/lk/sub-areas/stock/data/lk_stock_os_current_pointer.json")
 DEFAULT_LIMIT = 10
-MAX_LIMIT = 10_000
+MAX_LIMIT = 50_000
 READONLY_GUARDRAILS = {
     "tiny_write": 0,
     "shopify_write": 0,
@@ -107,6 +107,10 @@ def clamp_limit(limit: int | str | None) -> int:
     return max(1, min(MAX_LIMIT, parsed))
 
 
+def row_value(row: sqlite3.Row, key: str, default: Any = None) -> Any:
+    return row[key] if key in row.keys() else default
+
+
 def row_to_result(row: sqlite3.Row) -> dict[str, Any]:
     local_safe = int(row["local_consult_safe"] or 0) == 1
     identity_safe = int(row["identity_resolved_safe"] or 0) == 1
@@ -121,6 +125,15 @@ def row_to_result(row: sqlite3.Row) -> dict[str, Any]:
     motivo = None if confirmed else "identity_not_resolved_for_public_availability" if local_safe else "local_consult_not_safe"
     title = row["title"]
     brand = infer_brand(title)
+    scored_priority = row_value(row, "scored_action_priority")
+    action_priority = scored_priority or "P3"
+    scored_lane = row_value(row, "scored_action_lane")
+    if scored_lane:
+        action_lane = scored_lane
+    elif not confirmed:
+        action_lane = "RESOLVE_IDENTITY_BEFORE_STOCK_DECISION"
+    else:
+        action_lane = "NO_ACTION"
     return {
         "status": "confirmado" if confirmed else "nao_confirmado",
         "sku": row["sku"],
@@ -139,7 +152,17 @@ def row_to_result(row: sqlite3.Row) -> dict[str, Any]:
         "stock_freshness": row["stock_freshness"],
         "source_observed_at": row["source_observed_at"],
         "canonical_status": row["canonical_status"],
-        "priority": row["priority"],
+        "priority": action_priority,
+        "sanitation_priority": row["priority"],
+        "action_priority": action_priority,
+        "action_lane": action_lane,
+        "operational_score": float(row_value(row, "operational_score", 0) or 0),
+        "units_signal": float(row_value(row, "units_signal", 0) or 0),
+        "revenue_signal": float(row_value(row, "revenue_signal", 0) or 0),
+        "store_units_signal": float(row_value(row, "store_units_signal", 0) or 0),
+        "demand_tier": row_value(row, "demand_tier"),
+        "rupture_risk": row_value(row, "rupture_risk"),
+        "signal_sources": row_value(row, "signal_sources"),
         "local_consult_safe": int(row["local_consult_safe"] or 0),
         "identity_resolved_safe": int(row["identity_resolved_safe"] or 0),
         "needs_live_tiny_confirmation": int(row["needs_live_tiny_confirmation"] or 0),
@@ -155,22 +178,39 @@ def query_rows(db_path: Path, query: str, limit: int) -> list[sqlite3.Row]:
     term = query.strip()
     like = f"%{term}%"
     select_columns = """
-        SELECT sku, handle, title, size, tiny_codigo, tiny_id_candidates, priority,
-               canonical_status, stock_quantity_sum_observed, stock_quantity_max_observed, stock_source,
-               stock_freshness, source_observed_at, local_consult_safe,
-               identity_resolved_safe, public_availability_safe,
-               availability_claim_allowed, needs_live_tiny_confirmation,
-               data_quality_gap
-        FROM current_local_stock
+        SELECT c.sku, c.handle, c.title, c.size, c.tiny_codigo, c.tiny_id_candidates, c.priority,
+               c.canonical_status, c.stock_quantity_sum_observed, c.stock_quantity_max_observed, c.stock_source,
+               c.stock_freshness, c.source_observed_at, c.local_consult_safe,
+               c.identity_resolved_safe, c.public_availability_safe,
+               c.availability_claim_allowed, c.needs_live_tiny_confirmation,
+               c.data_quality_gap,
+               s.action_priority AS scored_action_priority,
+               s.action_lane AS scored_action_lane,
+               s.operational_score,
+               s.units_signal,
+               s.revenue_signal,
+               s.store_units_signal,
+               s.demand_tier,
+               s.rupture_risk,
+               s.signal_sources
+        FROM current_local_stock c
+        LEFT JOIN current_stock_scored s
+          ON s.sku = c.sku AND coalesce(s.handle, '') = coalesce(c.handle, '')
     """
     order_by = """
         ORDER BY
+          CASE coalesce(s.action_priority, 'P3')
+            WHEN 'P0' THEN 0
+            WHEN 'P1' THEN 1
+            WHEN 'P2' THEN 2
+            ELSE 3
+          END,
           CASE
-            WHEN local_consult_safe = 1 AND identity_resolved_safe = 1 THEN 0
+            WHEN c.local_consult_safe = 1 AND c.identity_resolved_safe = 1 THEN 0
             ELSE 1
           END,
-          sku ASC,
-          size ASC
+          c.sku ASC,
+          c.size ASC
         LIMIT ?
     """
     con = sqlite3.connect(f"file:{db_path}?mode=ro&immutable=1", uri=True)
@@ -182,23 +222,29 @@ def query_rows(db_path: Path, query: str, limit: int) -> list[sqlite3.Row]:
             con.execute(
                 f"""
                 {select_columns}
-                WHERE sku = ?
-                   OR tiny_codigo = ?
-                   OR handle = ?
-                   OR sku LIKE ?
-                   OR tiny_codigo LIKE ?
-                   OR handle LIKE ?
-                   OR title LIKE ?
+                WHERE c.sku = ?
+                   OR c.tiny_codigo = ?
+                   OR c.handle = ?
+                   OR c.sku LIKE ?
+                   OR c.tiny_codigo LIKE ?
+                   OR c.handle LIKE ?
+                   OR c.title LIKE ?
                 ORDER BY
                   CASE
-                    WHEN sku = ? THEN 0
-                    WHEN tiny_codigo = ? THEN 1
-                    WHEN handle = ? THEN 2
-                    WHEN local_consult_safe = 1 AND identity_resolved_safe = 1 THEN 3
+                    WHEN c.sku = ? THEN 0
+                    WHEN c.tiny_codigo = ? THEN 1
+                    WHEN c.handle = ? THEN 2
+                    WHEN c.local_consult_safe = 1 AND c.identity_resolved_safe = 1 THEN 3
                     ELSE 4
                   END,
-                  sku ASC,
-                  size ASC
+                  CASE coalesce(s.action_priority, 'P3')
+                    WHEN 'P0' THEN 0
+                    WHEN 'P1' THEN 1
+                    WHEN 'P2' THEN 2
+                    ELSE 3
+                  END,
+                  c.sku ASC,
+                  c.size ASC
                 LIMIT ?
                 """,
                 (term, term, term, like, like, like, like, term, term, term, limit),
