@@ -120,7 +120,7 @@ class StockApiAdapterTest(unittest.TestCase):
         )
         rows = [
             ("ABC-40", "tenis-abc", "Tênis Nike ABC", "40", "ABC-40", "123", "P0", "CONSULTABLE_LOCAL_RESOLVED_BY_FULL_LIVE_MATCH", "", "", "", "", 1, "2.0", 2.0, 2.0, 1, 0, "tiny_full_sync", "tiny_full_sync_nightly", "2026-06-12T06:20:21Z", 1, 1, 0, 0, 1, "RECONFIRM_BEFORE_PUBLIC"),
-            ("DUP-40", "tenis-dup", "Tênis DUP", "40", "DUP-40", "123,456", "P1", "BLOCKED_TINY_DUPLICATE_LIVE_FULL", "tiny_duplicate_exact_code_blocked", "TINY_DUPLICATE_PACKET", "Resolver duplicidade Tiny", "packet.md", 0, "", None, None, 0, 0, "gate_b2", "stale", "2026-06-12T10:29:59Z", 0, 0, 0, 0, 1, "BLOCKED_TINY_DUPLICATE"),
+            ("DUP-40", "tenis-dup", "Tênis DUP", "40", "DUP-40", "123,456", "P1", "BLOCKED_TINY_DUPLICATE_LIVE_FULL", "tiny_duplicate_exact_code_blocked", "TINY_DUPLICATE_PACKET", "Resolver duplicidade Tiny", "packet.md", 0, "2.0", 2.0, 2.0, 1, 0, "gate_b2", "stale", "2026-06-12T10:29:59Z", 0, 0, 0, 0, 1, "BLOCKED_TINY_DUPLICATE"),
         ]
         con.executemany(
             """
@@ -240,6 +240,7 @@ class StockApiAdapterTest(unittest.TestCase):
             self.assertEqual(row["store_units_signal"], 3.0)
             self.assertEqual(row["demand_tier"], "HIGH")
             self.assertEqual(row["rupture_risk"], "ZERO_STOCK_DEMAND")
+            self.assertEqual(row["scored_in_stock_os"], 1)
 
     def test_lookup_exposes_global_freshness_movement_and_thumbnail_contract(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -277,6 +278,7 @@ class StockApiAdapterTest(unittest.TestCase):
             self.assertEqual(row["action_priority"], "P3")
             self.assertEqual(row["action_lane"], "RESOLVE_IDENTITY_BEFORE_STOCK_DECISION")
             self.assertEqual(row["operational_score"], 0)
+            self.assertEqual(row["scored_in_stock_os"], 0)
 
     def test_lookup_blocked_row_is_not_confirmed_not_zero_stock(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -290,7 +292,9 @@ class StockApiAdapterTest(unittest.TestCase):
 
             self.assertEqual(result["status"], "nao_confirmado")
             self.assertEqual(result["results"][0]["status"], "nao_confirmado")
-            self.assertIsNone(result["results"][0]["quantity_lk_controle_estoque"])
+            self.assertEqual(result["results"][0]["quantity_lk_controle_estoque"], None)
+            self.assertEqual(result["results"][0]["observed_stock_quantity"], 2.0)
+            self.assertEqual(result["results"][0]["raw_stock_quantity_max_observed"], 2.0)
             self.assertEqual(result["results"][0]["motivo"], "local_consult_not_safe")
             self.assertEqual(result["results"][0]["action"], "reconfirmar via lk-stock/Tiny antes de afirmar disponibilidade")
 
