@@ -15,7 +15,7 @@ import sqlite3
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs, quote, urlparse
 
 ROOT_MARKERS = ("AGENTS.md", "START-HERE.md", "MAPA.md")
 DEFAULT_POINTER = Path("areas/lk/sub-areas/stock/data/lk_stock_os_current_pointer.json")
@@ -111,6 +111,110 @@ def row_value(row: sqlite3.Row, key: str, default: Any = None) -> Any:
     return row[key] if key in row.keys() else default
 
 
+def table_exists(con: sqlite3.Connection, table: str) -> bool:
+    return bool(con.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name=?", (table,)).fetchone())
+
+
+def stock_freshness_summary(db_path: Path) -> dict[str, Any]:
+    con = sqlite3.connect(f"file:{db_path}?mode=ro&immutable=1", uri=True)
+    con.row_factory = sqlite3.Row
+    try:
+        observed = con.execute(
+            """
+            SELECT min(source_observed_at) AS source_observed_at_min,
+                   max(source_observed_at) AS source_observed_at_max
+              FROM current_local_stock
+             WHERE source_observed_at LIKE '20__-__-__T%'
+            """
+        ).fetchone()
+        freshness_rows = [
+            dict(row)
+            for row in con.execute(
+                """
+                SELECT coalesce(stock_freshness, 'unknown') AS freshness, count(*) AS count
+                  FROM current_local_stock
+                 GROUP BY coalesce(stock_freshness, 'unknown')
+                 ORDER BY count DESC, freshness ASC
+                 LIMIT 12
+                """
+            )
+        ]
+        latest_sync: dict[str, Any] = {}
+        if table_exists(con, "tiny_full_sync_runs"):
+            row = con.execute(
+                """
+                SELECT run_id, started_at, finished_at, rows_scanned, rows_updated, rows_failed, rows_skipped, status
+                  FROM tiny_full_sync_runs
+                 ORDER BY coalesce(finished_at, started_at, run_id) DESC
+                 LIMIT 1
+                """
+            ).fetchone()
+            latest_sync = dict(row) if row else {}
+        return {
+            "source_observed_at_min": observed["source_observed_at_min"] if observed else None,
+            "source_observed_at_max": observed["source_observed_at_max"] if observed else None,
+            "latest_sync_run_id": latest_sync.get("run_id"),
+            "latest_sync_started_at": latest_sync.get("started_at"),
+            "latest_sync_finished_at": latest_sync.get("finished_at"),
+            "latest_sync_status": latest_sync.get("status"),
+            "latest_sync_rows_scanned": latest_sync.get("rows_scanned"),
+            "latest_sync_rows_updated": latest_sync.get("rows_updated"),
+            "latest_sync_rows_failed": latest_sync.get("rows_failed"),
+            "latest_sync_rows_skipped": latest_sync.get("rows_skipped"),
+            "freshness_counts": freshness_rows,
+        }
+    finally:
+        con.close()
+
+
+def movement_summary(db_path: Path) -> dict[str, Any]:
+    empty = {"changed": 0, "went_to_zero": 0, "back_in_stock": 0, "went_negative": 0, "biggest_drops": []}
+    con = sqlite3.connect(f"file:{db_path}?mode=ro&immutable=1", uri=True)
+    con.row_factory = sqlite3.Row
+    try:
+        if not table_exists(con, "tiny_full_sync_item_ledger"):
+            return empty
+        latest = con.execute("SELECT run_id FROM tiny_full_sync_item_ledger ORDER BY id DESC LIMIT 1").fetchone()
+        if not latest:
+            return empty
+        run_id = latest["run_id"]
+        counts = con.execute(
+            """
+            SELECT
+              sum(CASE WHEN previous_quantity IS NOT NULL AND quantity IS NOT NULL AND quantity != previous_quantity THEN 1 ELSE 0 END) AS changed,
+              sum(CASE WHEN previous_quantity > 0 AND quantity = 0 THEN 1 ELSE 0 END) AS went_to_zero,
+              sum(CASE WHEN coalesce(previous_quantity, 0) <= 0 AND quantity > 0 THEN 1 ELSE 0 END) AS back_in_stock,
+              sum(CASE WHEN quantity < 0 THEN 1 ELSE 0 END) AS went_negative
+             FROM tiny_full_sync_item_ledger
+             WHERE run_id = ?
+            """,
+            (run_id,),
+        ).fetchone()
+        drops = [
+            dict(row)
+            for row in con.execute(
+                """
+                SELECT sku, handle, quantity, previous_quantity, (quantity - previous_quantity) AS delta, observed_at
+                  FROM tiny_full_sync_item_ledger
+                 WHERE run_id = ? AND previous_quantity IS NOT NULL AND quantity IS NOT NULL AND quantity < previous_quantity
+                 ORDER BY delta ASC, sku ASC
+                 LIMIT 20
+                """,
+                (run_id,),
+            )
+        ]
+        return {
+            "run_id": run_id,
+            "changed": int(counts["changed"] or 0),
+            "went_to_zero": int(counts["went_to_zero"] or 0),
+            "back_in_stock": int(counts["back_in_stock"] or 0),
+            "went_negative": int(counts["went_negative"] or 0),
+            "biggest_drops": drops,
+        }
+    finally:
+        con.close()
+
+
 def row_to_result(row: sqlite3.Row) -> dict[str, Any]:
     local_safe = int(row["local_consult_safe"] or 0) == 1
     identity_safe = int(row["identity_resolved_safe"] or 0) == 1
@@ -134,6 +238,14 @@ def row_to_result(row: sqlite3.Row) -> dict[str, Any]:
         action_lane = "RESOLVE_IDENTITY_BEFORE_STOCK_DECISION"
     else:
         action_lane = "NO_ACTION"
+    previous_quantity = row_value(row, "previous_quantity")
+    ledger_quantity = row_value(row, "ledger_quantity")
+    stock_delta = None
+    if previous_quantity is not None and ledger_quantity is not None:
+        stock_delta = float(ledger_quantity or 0) - float(previous_quantity or 0)
+    thumbnail_url = row_value(row, "thumbnail_url")
+    if not thumbnail_url and row["handle"]:
+        thumbnail_url = f"/api/product-thumbnail?handle={quote(str(row['handle']))}"
     return {
         "status": "confirmado" if confirmed else "nao_confirmado",
         "sku": row["sku"],
@@ -163,6 +275,13 @@ def row_to_result(row: sqlite3.Row) -> dict[str, Any]:
         "demand_tier": row_value(row, "demand_tier"),
         "rupture_risk": row_value(row, "rupture_risk"),
         "signal_sources": row_value(row, "signal_sources"),
+        "previous_quantity": previous_quantity,
+        "ledger_quantity": ledger_quantity,
+        "ledger_observed_at": row_value(row, "ledger_observed_at"),
+        "ledger_status": row_value(row, "ledger_status"),
+        "stock_delta": stock_delta,
+        "thumbnail_url": thumbnail_url or "",
+        "image_url": thumbnail_url or "",
         "local_consult_safe": int(row["local_consult_safe"] or 0),
         "identity_resolved_safe": int(row["identity_resolved_safe"] or 0),
         "needs_live_tiny_confirmation": int(row["needs_live_tiny_confirmation"] or 0),
@@ -192,10 +311,25 @@ def query_rows(db_path: Path, query: str, limit: int) -> list[sqlite3.Row]:
                s.store_units_signal,
                s.demand_tier,
                s.rupture_risk,
-               s.signal_sources
+               s.signal_sources,
+               l.previous_quantity,
+               l.quantity AS ledger_quantity,
+               l.observed_at AS ledger_observed_at,
+               l.status AS ledger_status
         FROM current_local_stock c
         LEFT JOIN current_stock_scored s
           ON s.sku = c.sku AND coalesce(s.handle, '') = coalesce(c.handle, '')
+        LEFT JOIN (
+          SELECT item.*
+            FROM tiny_full_sync_item_ledger item
+            JOIN (
+              SELECT sku, coalesce(handle, '') AS handle_key, max(id) AS max_id
+                FROM tiny_full_sync_item_ledger
+               GROUP BY sku, coalesce(handle, '')
+            ) latest
+              ON latest.max_id = item.id
+        ) l
+          ON l.sku = c.sku AND coalesce(l.handle, '') = coalesce(c.handle, '')
     """
     order_by = """
         ORDER BY
@@ -321,11 +455,15 @@ def lookup_stock(
 
     confirmed_any = any(item["status"] == "confirmado" for item in results)
     first = results[0]
+    freshness = stock_freshness_summary(db_path)
+    movements = movement_summary(db_path)
     return {
         **base,
         "status": "confirmado" if confirmed_any else "nao_confirmado",
         "freshness": first.get("stock_freshness"),
-        "source_observed_at": first.get("source_observed_at"),
+        "source_observed_at": freshness.get("source_observed_at_max") or first.get("source_observed_at"),
+        "freshness_summary": freshness,
+        "movement_summary": movements,
         "result_count": len(results),
         "total_count": total_count,
         "truncated": total_count > len(results),

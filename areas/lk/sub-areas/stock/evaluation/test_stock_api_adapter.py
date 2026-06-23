@@ -74,9 +74,53 @@ class StockApiAdapterTest(unittest.TestCase):
             )
             """
         )
+        con.execute(
+            """
+            CREATE TABLE tiny_full_sync_runs (
+              run_id TEXT,
+              started_at TEXT,
+              finished_at TEXT,
+              input_db TEXT,
+              output_db TEXT,
+              rows_scanned INTEGER,
+              rows_updated INTEGER,
+              rows_failed INTEGER,
+              rows_skipped INTEGER,
+              status TEXT,
+              tiny_write INTEGER,
+              shopify_write INTEGER,
+              writes_externos INTEGER,
+              public_availability_safe INTEGER,
+              availability_claim_allowed INTEGER,
+              summary_json TEXT
+            )
+            """
+        )
+        con.execute(
+            """
+            CREATE TABLE tiny_full_sync_item_ledger (
+              id INTEGER PRIMARY KEY AUTOINCREMENT,
+              run_id TEXT NOT NULL,
+              sku TEXT NOT NULL,
+              handle TEXT,
+              tiny_product_id TEXT NOT NULL,
+              status TEXT NOT NULL,
+              quantity REAL,
+              previous_quantity REAL,
+              observed_at TEXT NOT NULL,
+              deposit TEXT NOT NULL,
+              error TEXT,
+              tiny_write INTEGER NOT NULL DEFAULT 0,
+              shopify_write INTEGER NOT NULL DEFAULT 0,
+              writes_externos INTEGER NOT NULL DEFAULT 0,
+              public_availability_safe INTEGER NOT NULL DEFAULT 0,
+              availability_claim_allowed INTEGER NOT NULL DEFAULT 0
+            )
+            """
+        )
         rows = [
             ("ABC-40", "tenis-abc", "Tênis Nike ABC", "40", "ABC-40", "123", "P0", "CONSULTABLE_LOCAL_RESOLVED_BY_FULL_LIVE_MATCH", "", "", "", "", 1, "2.0", 2.0, 2.0, 1, 0, "tiny_full_sync", "tiny_full_sync_nightly", "2026-06-12T06:20:21Z", 1, 1, 0, 0, 1, "RECONFIRM_BEFORE_PUBLIC"),
-            ("DUP-40", "tenis-dup", "Tênis DUP", "40", "DUP-40", "123,456", "P1", "BLOCKED_TINY_DUPLICATE_LIVE_FULL", "tiny_duplicate_exact_code_blocked", "TINY_DUPLICATE_PACKET", "Resolver duplicidade Tiny", "packet.md", 0, "", None, None, 0, 0, "gate_b2", "stale", "old", 0, 0, 0, 0, 1, "BLOCKED_TINY_DUPLICATE"),
+            ("DUP-40", "tenis-dup", "Tênis DUP", "40", "DUP-40", "123,456", "P1", "BLOCKED_TINY_DUPLICATE_LIVE_FULL", "tiny_duplicate_exact_code_blocked", "TINY_DUPLICATE_PACKET", "Resolver duplicidade Tiny", "packet.md", 0, "", None, None, 0, 0, "gate_b2", "stale", "2026-06-12T10:29:59Z", 0, 0, 0, 0, 1, "BLOCKED_TINY_DUPLICATE"),
         ]
         con.executemany(
             """
@@ -109,6 +153,21 @@ class StockApiAdapterTest(unittest.TestCase):
                 0,
                 0,
             ),
+        )
+        con.execute(
+            "INSERT INTO tiny_full_sync_runs VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            ("run-1", "2026-06-12T10:00:00Z", "2026-06-12T10:31:00Z", "in.db", "out.db", 2, 2, 0, 0, "ok", 0, 0, 0, 0, 0, "{}"),
+        )
+        con.executemany(
+            """
+            INSERT INTO tiny_full_sync_item_ledger
+            (run_id, sku, handle, tiny_product_id, status, quantity, previous_quantity, observed_at, deposit)
+            VALUES (?,?,?,?,?,?,?,?,?)
+            """,
+            [
+                ("run-1", "ABC-40", "tenis-abc", "123", "updated", 2.0, 5.0, "2026-06-12T10:30:00Z", "LK | CONTROLE ESTOQUE"),
+                ("run-1", "DUP-40", "tenis-dup", "456", "updated", 0.0, 1.0, "2026-06-12T10:30:00Z", "LK | CONTROLE ESTOQUE"),
+            ],
         )
         con.commit()
         con.close()
@@ -148,7 +207,7 @@ class StockApiAdapterTest(unittest.TestCase):
             self.assertEqual(result["query"], "ABC-40")
             self.assertEqual(result["source"], "Stock OS DB")
             self.assertEqual(result["freshness"], "tiny_full_sync_nightly")
-            self.assertEqual(result["source_observed_at"], "2026-06-12T06:20:21Z")
+            self.assertEqual(result["source_observed_at"], "2026-06-12T10:29:59Z")
             self.assertEqual(result["guardrails"]["tiny_write"], 0)
             self.assertEqual(result["guardrails"]["shopify_write"], 0)
             self.assertEqual(result["guardrails"]["public_availability_safe"], 0)
@@ -181,6 +240,27 @@ class StockApiAdapterTest(unittest.TestCase):
             self.assertEqual(row["store_units_signal"], 3.0)
             self.assertEqual(row["demand_tier"], "HIGH")
             self.assertEqual(row["rupture_risk"], "ZERO_STOCK_DEMAND")
+
+    def test_lookup_exposes_global_freshness_movement_and_thumbnail_contract(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            db = tmp_path / "stock.db"
+            pointer = tmp_path / "pointer.json"
+            self._make_db(db)
+            self._make_pointer(pointer, db)
+
+            result = lookup_stock("all", pointer_path=pointer, limit=1000)
+            row = next(item for item in result["results"] if item["sku"] == "ABC-40")
+
+            self.assertEqual(result["freshness_summary"]["source_observed_at_min"], "2026-06-12T06:20:21Z")
+            self.assertEqual(result["freshness_summary"]["source_observed_at_max"], "2026-06-12T10:29:59Z")
+            self.assertEqual(result["freshness_summary"]["latest_sync_finished_at"], "2026-06-12T10:31:00Z")
+            self.assertEqual(result["source_observed_at"], "2026-06-12T10:29:59Z")
+            self.assertEqual(result["movement_summary"]["went_to_zero"], 1)
+            self.assertEqual(result["movement_summary"]["changed"], 2)
+            self.assertEqual(row["previous_quantity"], 5.0)
+            self.assertEqual(row["stock_delta"], -3.0)
+            self.assertEqual(row["thumbnail_url"], "/api/product-thumbnail?handle=tenis-abc")
 
     def test_lookup_unscored_sanitation_row_defaults_to_p3_not_sanitation_p_lane(self):
         with tempfile.TemporaryDirectory() as tmp:
