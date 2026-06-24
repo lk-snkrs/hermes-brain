@@ -1,6 +1,6 @@
 # LK Search Console Read-only Router, 2026-05-11
 
-Generated at: `2026-06-22T11:33:59.597800+00:00`
+Generated at: `2026-06-23T11:32:37.897131+00:00`
 
 ## Veredito
 
@@ -9,9 +9,9 @@ Search Console entrou na Fase 6 como fonte `fact_gsc`: queries, páginas, CTR, p
 ## Janela e fonte
 
 - Property: `sc-domain:lksneakers.com.br`
-- Janela: `2026-05-23` a `2026-06-19`
+- Janela: `2026-05-24` a `2026-06-20`
 - Linhas query/página recebidas: 25000
-- Páginas agregadas recebidas: 11767
+- Páginas agregadas recebidas: 11727
 - Oportunidades roteadas: 40
 - Writes liberados agora: 0
 
@@ -20,7 +20,7 @@ Search Console entrou na Fase 6 como fonte `fact_gsc`: queries, páginas, CTR, p
 ### 1. P1 · title_meta_ctr_preview
 - Query: `nike mind 001`
 - Página: https://lksneakers.com.br/products/slide-nike-mind-001-black-chrome-preto
-- Clicks/impressões: 4 / 37325
+- Clicks/impressões: 4 / 37295
 - CTR/posição: 0.01% / 9.1
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
@@ -28,8 +28,8 @@ Search Console entrou na Fase 6 como fonte `fact_gsc`: queries, páginas, CTR, p
 ### 2. P1 · title_meta_ctr_preview
 - Query: `onitsuka tiger`
 - Página: https://lksneakers.com.br/collections/onitsuka-tiger-todos-os-modelos
-- Clicks/impressões: 112 / 30932
-- CTR/posição: 0.36% / 7.9
+- Clicks/impressões: 110 / 30916
+- CTR/posição: 0.36% / 7.8
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
@@ -44,47 +44,47 @@ Search Console entrou na Fase 6 como fonte `fact_gsc`: queries, páginas, CTR, p
 ### 4. P1 · title_meta_ctr_preview
 - Query: `lululemon`
 - Página: https://lksneakers.com.br/collections/lululemon
-- Clicks/impressões: 140 / 20792
-- CTR/posição: 0.67% / 4.8
+- Clicks/impressões: 142 / 20876
+- CTR/posição: 0.68% / 4.8
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 5. P1 · title_meta_ctr_preview
 - Query: `crocs mcqueen`
 - Página: https://lksneakers.com.br/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho
-- Clicks/impressões: 33 / 17253
-- CTR/posição: 0.19% / 8.7
+- Clicks/impressões: 32 / 17469
+- CTR/posição: 0.18% / 8.5
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 6. P1 · title_meta_ctr_preview
 - Query: `crocs relampago mcqueen`
 - Página: https://lksneakers.com.br/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho
-- Clicks/impressões: 33 / 16581
-- CTR/posição: 0.2% / 8.5
+- Clicks/impressões: 30 / 16807
+- CTR/posição: 0.18% / 8.5
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 7. P1 · title_meta_ctr_preview
 - Query: `lk`
 - Página: https://lksneakers.com.br/
-- Clicks/impressões: 25 / 13435
-- CTR/posição: 0.19% / 6.7
+- Clicks/impressões: 26 / 13357
+- CTR/posição: 0.19% / 6.8
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 8. P1 · title_meta_ctr_preview
 - Query: `crocs do relâmpago mcqueen`
 - Página: https://lksneakers.com.br/products/crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho
-- Clicks/impressões: 19 / 12952
-- CTR/posição: 0.15% / 6.6
+- Clicks/impressões: 19 / 13301
+- CTR/posição: 0.14% / 6.5
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 9. P1 · content_onpage_boost_preview
 - Query: `nike mind 001`
 - Página: https://lksneakers.com.br/products/slide-nike-mind-001-black-chrome-preto?currency=BRL&country=BR&variant=47839129239774&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e
-- Clicks/impressões: 12 / 12453
+- Clicks/impressões: 12 / 12454
 - CTR/posição: 0.1% / 12.5
 - Motivo: posição 4–15 com volume suficiente para ganho por on-page/conteúdo
 - Status: `read_only_preview`
@@ -92,7 +92,7 @@ Search Console entrou na Fase 6 como fonte `fact_gsc`: queries, páginas, CTR, p
 ### 10. P1 · title_meta_ctr_preview
 - Query: `nike shox brasil`
 - Página: https://blog.lksneakers.com.br/nike-shox-r4-brazil-edicao-especial-cbf/
-- Clicks/impressões: 34 / 11334
+- Clicks/impressões: 35 / 11832
 - CTR/posição: 0.3% / 2.3
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
@@ -100,31 +100,31 @@ Search Console entrou na Fase 6 como fonte `fact_gsc`: queries, páginas, CTR, p
 ### 11. P1 · title_meta_ctr_preview
 - Query: `chinelo nike mind 001`
 - Página: https://lksneakers.com.br/products/slide-nike-mind-001-black-chrome-preto
-- Clicks/impressões: 6 / 10610
+- Clicks/impressões: 6 / 10641
 - CTR/posição: 0.06% / 6.0
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ### 12. P1 · title_meta_ctr_preview
-- Query: `vomero premium`
-- Página: https://lksneakers.com.br/products/tenis-nike-vomero-premium-white-bright-crimson-branco?currency=BRL&country=BR&variant=47803677868254&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e
-- Clicks/impressões: 8 / 9602
-- CTR/posição: 0.08% / 8.7
+- Query: `nike travis scott`
+- Página: https://lksneakers.com.br/collections/air-jordan-travis-scott
+- Clicks/impressões: 122 / 9907
+- CTR/posição: 1.23% / 6.0
 - Motivo: impressões altas, posição próxima da primeira página e CTR baixo
 - Status: `read_only_preview`
 
 ## Top páginas por impressões
 
-- https://lksneakers.com.br/collections/onitsuka-tiger-todos-os-modelos: 892 clicks, 69714 impressões, CTR 1.28%, posição 6.6
-- https://lksneakers.com.br/collections/lululemon: 749 clicks, 31077 impressões, CTR 2.41%, posição 4.6
-- https://lksneakers.com.br/collections/air-jordan-travis-scott: 532 clicks, 45616 impressões, CTR 1.17%, posição 6.0
-- https://lksneakers.com.br/: 461 clicks, 41328 impressões, CTR 1.12%, posição 8.2
-- https://lksneakers.com.br/collections/onitsuka-tiger-mexico-66: 376 clicks, 17812 impressões, CTR 2.11%, posição 3.6
-- https://lksneakers.com.br/blogs/novidades/como-saber-se-tenis-nike-e-original: 318 clicks, 19830 impressões, CTR 1.6%, posição 4.1
-- https://lksneakers.com.br/blogs/novidades/new-balance-original-vs-falso-6-diferencas-cruciais: 220 clicks, 10768 impressões, CTR 2.04%, posição 6.3
-- https://lksneakers.com.br/collections/nike-mind-001: 203 clicks, 15856 impressões, CTR 1.28%, posição 7.4
-- https://www.lksneakers.com.br/: 198 clicks, 7544 impressões, CTR 2.62%, posição 5.3
-- https://lksneakers.com.br/collections/adidas-samba-jane: 195 clicks, 18056 impressões, CTR 1.08%, posição 5.9
+- https://lksneakers.com.br/collections/onitsuka-tiger-todos-os-modelos: 888 clicks, 69757 impressões, CTR 1.27%, posição 6.6
+- https://lksneakers.com.br/collections/lululemon: 750 clicks, 31194 impressões, CTR 2.4%, posição 4.6
+- https://lksneakers.com.br/collections/air-jordan-travis-scott: 707 clicks, 53051 impressões, CTR 1.33%, posição 6.0
+- https://lksneakers.com.br/: 461 clicks, 41332 impressões, CTR 1.12%, posição 8.3
+- https://lksneakers.com.br/collections/onitsuka-tiger-mexico-66: 375 clicks, 17697 impressões, CTR 2.12%, posição 3.6
+- https://lksneakers.com.br/blogs/novidades/como-saber-se-tenis-nike-e-original: 327 clicks, 20518 impressões, CTR 1.59%, posição 4.1
+- https://lksneakers.com.br/blogs/novidades/new-balance-original-vs-falso-6-diferencas-cruciais: 221 clicks, 11031 impressões, CTR 2.0%, posição 6.2
+- https://lksneakers.com.br/collections/nike-mind-001: 201 clicks, 15791 impressões, CTR 1.27%, posição 7.4
+- https://www.lksneakers.com.br/: 194 clicks, 7417 impressões, CTR 2.62%, posição 5.3
+- https://lksneakers.com.br/collections/adidas-samba-jane: 193 clicks, 18128 impressões, CTR 1.06%, posição 5.9
 
 ## Guardrails
 

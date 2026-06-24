@@ -1,5 +1,18 @@
 # AGENTS — LK Growth OS
 
+## Regra obrigatória — verificar histórico antes de sugerir melhoria
+
+Antes de recomendar, aprovar ou pedir aprovação para qualquer melhoria, correção ou execução em uma superfície que já possa ter sido trabalhada, o agente deve consultar o histórico recente e a fonte canônica aplicável. Para LK Growth/Shopify, isso inclui no mínimo Brain receipts, approval packets, workdirs, impact reviews e, quando necessário, readback público/Admin read-only.
+
+Fluxo obrigatório:
+1. Procurar receipts/packets/workdirs dos últimos ciclos para a URL, handle, produto, coleção, tema, campanha ou assunto.
+2. Separar: já executado, aprovado mas não executado, pendente, revertido, cache/propagação e ainda não feito.
+3. Só então sugerir próximos passos; se a ação já foi feita, não sugerir como nova — sugerir impacto review, validação, ajuste incremental ou rollback conforme evidência.
+4. Em cron/opportunity factory, incluir um gate “histórico verificado” antes de gerar approval packet.
+5. Se não houver acesso ao histórico, declarar a limitação antes da recomendação.
+
+Motivo: evitar retrabalho e evitar pedir ao Lucas aprovação para algo que o Hermes já executou. Correção registrada por Lucas em 2026-06-23.
+
 ## Regra obrigatória — aprendizado do Lucas vira melhoria do ecossistema
 
 Quando Lucas corrigir, ensinar ou apontar uma melhoria de processo, o agente **não deve salvar só na memória da conversa/perfil**. Memória é apenas lembrete fraco. A correção durável precisa ser propagada para a superfície que executa o comportamento: skill relevante, Brain/source-of-truth, AGENTS/prompt do perfil, cron prompt/checklist, template de relatório, script/validator/test ou handoff operacional.
