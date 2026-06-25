@@ -18,6 +18,7 @@
 - Riscos/bloqueios: Cobertura ainda limitada a 26 handles/46 regras públicas no mapa final; alguns pares são variações da mesma família/modelo. Produtos sem regra caem no fallback seguro por modelo ou escondem o bloco. Estoque não foi usado como score.
 - Rollback/mitigação: Reverter PR #101 e PR #100 para voltar ao estado PR #99; backup DEV antes do primeiro write em /opt/data/profiles/lk-shopify/workdirs/cart-drawer-cross-sell-xy-20260625/dev_before_cross_sell_v2_windows_snippets__lk-cart-drawer.liquid.
 - Próximos passos: Monitorar lista visual no cart drawer e evoluir o mapa com mais histórico/telemetria se Lucas aprovar.
+- QA público complementar pós-merge: Chromium headless/CDP em Production com sessão temporária validou `/products/slide-nike-mind-001-light-smoke-grey-cinza?_qa=cross-sell-cdp`; mapa v2 public-filtered presente; `/collections/all/products.json` ausente; add-to-cart temporário retornou 200; drawer abriu (`cart-drawer open`); título `Também compram com este produto` visível; recomendação exibida `/products/slide-nike-mind-001-black-chrome-preto`; produto âncora excluído; checkout visível; carrinho temporário limpo ao final. Evidência local: `/opt/data/profiles/lk-shopify/workdirs/cart-drawer-cross-sell-xy-20260625/live_cart_drawer_cross_sell_cdp_qa.json` e `.png`.
 - Onde foi documentado no Brain: Packets v2 atualizados, v1 marcado superseded, receipt criado via writer.
 - Source confidence: runtime-verificado
 
