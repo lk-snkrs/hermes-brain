@@ -3,7 +3,7 @@
     "brain_health_json": {
       "exists": true,
       "parse_ok": true,
-      "path": "reports/brain-health-check-2026-06-23-02h.json",
+      "path": "reports/brain-health-check-2026-06-24-daily-intelligence-post.json",
       "type": "dict"
     },
     "brain_health_semantics": {
@@ -40,28 +40,34 @@
       ],
       "exists": true,
       "non_empty": true,
-      "path": "reports/hermes-continuous-improvement/2026-06-23.md",
+      "path": "reports/hermes-continuous-improvement/2026-06-24.md",
       "required_checks_ok": true
     },
     "critical_json_artifacts": {
-      "artifacts_checked": 8,
+      "artifacts_checked": 9,
       "checks": [
         {
           "exists": true,
           "parse_ok": true,
-          "path": "reports/brain-health-check-2026-06-23-02h.json",
+          "path": "reports/brain-health-check-2026-06-24-02h.json",
           "type": "dict"
         },
         {
           "exists": true,
           "parse_ok": true,
-          "path": "reports/brain-health-check-2026-06-23-fechamento-auto.json",
+          "path": "reports/brain-health-check-2026-06-24-daily-intelligence-post.json",
           "type": "dict"
         },
         {
           "exists": true,
           "parse_ok": true,
-          "path": "reports/brain-improvement-score-2026-06-23-02h.json",
+          "path": "reports/brain-health-check-2026-06-24-fechamento-auto.json",
+          "type": "dict"
+        },
+        {
+          "exists": true,
+          "parse_ok": true,
+          "path": "reports/brain-improvement-score-2026-06-24-02h.json",
           "type": "dict"
         },
         {
@@ -79,7 +85,7 @@
         {
           "exists": true,
           "parse_ok": true,
-          "path": "reports/governance/nightly-governance-artifacts-2026-06-23.json",
+          "path": "reports/governance/nightly-governance-artifacts-2026-06-24.json",
           "type": "dict"
         },
         {
@@ -91,7 +97,7 @@
         {
           "exists": true,
           "parse_ok": true,
-          "path": "reports/hermes-daily-score/2026-06-23.json",
+          "path": "reports/hermes-daily-score/2026-06-24.json",
           "type": "dict"
         }
       ],
@@ -120,13 +126,13 @@
       ],
       "exists": true,
       "non_empty": true,
-      "path": "reports/hermes-learning-ledger/2026-06-23.md",
+      "path": "reports/hermes-learning-ledger/2026-06-24.md",
       "required_checks_ok": true
     },
     "score_json": {
       "exists": true,
       "parse_ok": true,
-      "path": "reports/brain-improvement-score-2026-06-23-02h.json",
+      "path": "reports/brain-improvement-score-2026-06-24-02h.json",
       "type": "dict"
     },
     "score_semantics": {
@@ -144,9 +150,9 @@
       "values_printed": false
     }
   },
-  "date": "2026-06-23",
+  "date": "2026-06-24",
   "failures": [],
-  "generated_at": "2026-06-23T05:08:26.076191+00:00",
+  "generated_at": "2026-06-24T05:14:56.264021+00:00",
   "guardrails": {
     "local_only": true,
     "no_external_writes": true,

@@ -1,7 +1,42 @@
 # Inventário vivo — crons, agentes, profiles e projetos
 
-Data-base: 2026-06-23 11:21 UTC
-Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-06-23**
+Data-base: 2026-06-24 11:21 UTC
+Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-06-24**
+
+---
+
+### Atualização 2026-06-24 11:21 UTC
+
+**Fonte:** `cronjob list` solicitado; `cronjob` não disponível no PATH deste runtime. Fallback canônico usado: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all`. Fonte estruturada sanitizada para contagem: `/opt/data/cron/jobs.json`.
+
+**Contagem:** 43 jobs totais — 39 ativos, 4 pausados.
+
+**`last_status` não-ok:** 2.
+- `357d40a5863e` Zipper OS vendas 09h WhatsApp/email — active, `deliver=local`, erro de script ao interpretar resposta JSON do envio interno aprovado; último run: 2026-06-23T12:00:47.203156+00:00.
+- `e2f169cc046a` LK POS Shopify→fila reconciliador — active, `deliver=local`, erro de rede (`Network is unreachable`) no reconciliador Shopify→fila; último run: 2026-06-24T11:21:05.156519+00:00.
+
+**Erros explícitos de delivery do scheduler:** 0 na listagem/estado. **Falhas em stdout de job:** 2 jobs com `last_status=error`; stdout bruto não versionado.
+
+**Jobs ativos sem primeira execução registrada:** 1.
+- `00a9f839879f` Honcho utility go/no-go review one-shot — active, `deliver=origin`, sem Last run; próxima execução: 2026-06-29T01:10:16+00:00
+
+**Jobs pausados na evidência viva:**
+- `ac0b440e2643` Mordomo Telegram gateway watchdog — paused, `deliver=local`, ok / 2026-05-30T15:52:55.213145+00:00
+- `876d54c62ccd` LK Growth Telegram gateway watchdog — paused, `deliver=local`, ok / 2026-05-30T15:52:55.226608+00:00
+- `663e3e6a148c` SPITI Telegram gateway watchdog — paused, `deliver=local`, ok / 2026-05-30T15:52:55.201503+00:00
+- `955dc769b5a6` LK specialist Telegram gateway watchdog — paused, `deliver=origin`, ok / 2026-05-30T15:52:55.190857+00:00
+
+**Drift/notable reconciliation:**
+- Contagem estável vs 2026-06-23: 43 totais / 39 ativos / 4 pausados.
+- Drift negativo de runtime: `357d40a5863e` e `e2f169cc046a` estavam `ok` no relatório de 2026-06-23 e agora aparecem com `last_status=error`.
+- `00a9f839879f` Honcho utility go/no-go review one-shot segue ativo/`deliver=origin`/sem primeira execução; acompanhar até 2026-06-29T01:10 UTC e documentar owner/finalidade/critério de sucesso/contrato de alerta.
+- Jobs Honcho `7d32b8b77317`, `39b176e08174` e `16dfc4d14c85` seguem vivos/ok com `deliver=local`; manter reconciliação documental da mudança de entrega para evitar falso gap de ruído.
+- `2e5bc91d27d6` Hermes Nightly Operations Audit OS — 02h50 BRT segue ativo/local/ok e ainda merece reconciliação documental de owner/finalidade/critério de sucesso em rodada própria.
+- Documentação que descreve Mordomo/LK Growth/SPITI gateway watchdogs como ativos deve permanecer marcada como histórica até nova evidência viva mostrar reativação.
+
+**Jobs deliver=origin (saídas intencionais/condicionais):** Mesa COO diária Telegram (`749ee30b51eb`), Relatório Hermes diário 01h+02h+02h15+02h25+02h50 + Score 0–100 — 03h Telegram (`98478b820720`), Reminder OS — 2h open-loop watchdog (`518634d5ea60`), Honcho utility go/no-go review one-shot (`00a9f839879f`). Pausado com `origin`: LK specialist Telegram gateway watchdog (`955dc769b5a6`).
+
+**Relatório completo:** `reports/governance/runtime-truth-reconciler-2026-06-24.md`
 
 ---
 
