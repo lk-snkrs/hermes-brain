@@ -3,7 +3,7 @@
 - **Data:** 2026-06-25
 - **Perfil:** lk-shopify
 - **Superfície:** cart drawer `cart-drawer__upsell-inner`
-- **Status:** análise read-only concluída; **nenhum write Shopify/GitHub/theme executado**.
+- **Status:** análise read-only v1 concluída, mas **superseded pela v2** porque Lucas corrigiu que compra sequencial deve usar janelas 30/90/180 dias. **Não usar v1 para implementação.** Nenhum write Shopify/GitHub/theme executado.
 - **PII:** nenhum dado de cliente/pedido individual salvo ou impresso. Uso de customer/order IDs ficou somente em memória durante agregação; output persistido é agregado por handle/modelo.
 - **Correção de Lucas:** ranking deve ser possibilidade de cross-sell: cliente comprou/colocou X → tem % de chance de comprar Y.
 

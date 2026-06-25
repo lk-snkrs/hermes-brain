@@ -79,7 +79,7 @@ Para fazer isso direito, o packet v1 deve combinar:
 
 ### B) Compra sequencial
 
-- mesmo cliente compra X e depois Y em janela de 7/14/30 dias;
+- mesmo cliente compra X e depois Y em janelas de **30/90/180 dias** — correção de Lucas em 2026-06-25;
 - output agregado e sem PII.
 
 ### C) Agrupamento por modelo/silhueta
