@@ -33,21 +33,24 @@ Referência encontrada no Brain:
 
 - `areas/lk/sub-areas/stock/rotinas/best-seller-ready-stock-score-v0.md`
 
-Score v0 documentado:
+Score v0 do Stock existe como referência geral, mas Lucas corrigiu este escopo em 2026-06-25: **para cart drawer upsell, não usar `margem/valor` como critério**.
 
-| Critério | Peso |
+Regra proposta específica para o cart drawer:
+
+| Critério | Peso sugerido |
 |---|---:|
-| Vendas recentes | 30 |
-| Margem/valor | 20 |
-| Demanda externa | 15 |
-| Risco de ruptura | 15 |
-| Histórico/família | 10 |
-| Confiança de dados | 10 |
+| Pronta entrega confirmada / disponibilidade confiável | 35 |
+| Mesmo modelo/silhueta ou complementaridade clara | 25 |
+| Grade saudável / tamanhos relevantes disponíveis | 20 |
+| Demanda recente / best seller real | 15 |
+| Confiança de dados / SKU mapping | 5 |
 
-Bloqueio do score:
+Bloqueios do score:
 
-- se SKU/Tiny mapping não tiver confiança alta, item vira `needs_sku_resolution` antes de decisão operacional;
-- fixtures/probes/testes não podem alimentar score.
+- se SKU/Tiny mapping não tiver confiança alta, item vira `needs_sku_resolution` antes de recomendação;
+- fixtures/probes/testes não podem alimentar score;
+- baixo estoque crítico, sem evidência de pronta entrega ou produto atual no carrinho devem bloquear recomendação;
+- margem/valor fica explicitamente fora deste ranking, salvo nova decisão de Lucas.
 
 ## Proposta técnica Shopify
 

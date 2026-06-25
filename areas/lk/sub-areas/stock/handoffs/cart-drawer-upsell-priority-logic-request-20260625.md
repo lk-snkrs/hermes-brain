@@ -54,24 +54,27 @@ Para uso imediato no cart drawer:
 
 Critérios sugeridos, se o lk-stock preferir regra dinâmica:
 
-- pronta entrega confirmada;
+- pronta entrega confirmada / disponibilidade confiável;
+- mesmo modelo/silhueta ou complementaridade clara;
 - grade saudável / tamanho relevante disponível;
-- prioridade de giro/ruptura/encalhe;
-- margem/curadoria, se disponível e autorizado;
+- demanda recente / best seller real;
+- confiança de dados / SKU mapping;
 - excluir baixo estoque crítico ou item que não deve ser empurrado;
 - excluir produto atual do carrinho;
-- priorizar mesmo modelo/silhueta quando fizer sentido.
+- **não usar margem/valor neste ranking do cart drawer**, por correção explícita de Lucas em 2026-06-25.
 
 Formato sugerido:
 
 ```json
 {
   "score_rules": [
-    {"criterion":"pronta_entrega_confirmada", "weight": 40},
-    {"criterion":"same_model_or_silhouette", "weight": 25},
+    {"criterion":"pronta_entrega_confirmada", "weight": 35},
+    {"criterion":"same_model_or_complementary_silhouette", "weight": 25},
     {"criterion":"grade_saudavel", "weight": 20},
-    {"criterion":"stock_priority", "weight": 15}
+    {"criterion":"demanda_recente_best_seller", "weight": 15},
+    {"criterion":"data_confidence_sku_mapping", "weight": 5}
   ],
+  "excluded_criteria": ["margem", "valor"],
   "blocked_conditions": ["sem_evidencia_stock", "baixo_estoque_critico", "produto_atual_no_carrinho"]
 }
 ```
