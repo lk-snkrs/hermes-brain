@@ -129,14 +129,62 @@ Resultado:
 - DEV: restaurar backups pré-write dos 2 assets.
 - Production: reverter PR/commit do fix, aguardar Shopify sync, readback e QA.
 
+## Addendum 2026-06-25 — Trust Grid Google reviews no `/cart`
+
+Lucas adicionou o item 3: o Trust Grid de `https://lksneakers.com.br/cart` deve puxar a quantidade correta de avaliações do Google usando a mesma lógica do checkout.
+
+### Evidência read-only
+
+- `/cart` theme section tem blocks configurados; nesse caminho, o Google badge usa `block.settings.label_line2`, que está estático (`4.9 · 376 avaliações`) e ignora o metafield.
+- O fallback sem blocks já tenta ler `shop.metafields.lk_google.reviews.value`, mas usa `count` e fallback `376`.
+- O cron de checkout usa estado local:
+  - `/opt/data/profiles/lk-shopify/cron/state/lk_google_reviews_state.json`
+  - estado atual: rating `4.9`, `userRatingCount = 418`, atualizado em 2026-06-22.
+- O metafield Shopify `shop.metafields.lk_google.reviews` existe, mas está stale (`count = 384`, updated `2026-04-08`), então só trocar o Liquid para metafield sem atualizar a fonte ainda não garante o número correto.
+
+### Patch local adicionado ao target
+
+Arquivo local:
+
+`/opt/data/profiles/lk-shopify/workdirs/cart-drawer-fix-20260625/target_sections__lk-cart.liquid`
+
+Mudanças preparadas:
+
+- Define uma única fonte Liquid para o Trust Grid:
+  - `shop.metafields.lk_google.reviews.value.rating`
+  - `shop.metafields.lk_google.reviews.value.userRatingCount`
+  - fallback `count`
+  - fallback final `418`, alinhado ao cron/checkout state atual.
+- Faz o caminho com `section.blocks.size > 0` ignorar `block.settings.label_line2` no Google badge e renderizar:
+  - `Google<br>{{ lk_google_rating }} · {{ lk_google_review_count }} avaliações`
+- Faz o fallback sem blocks usar a mesma variável.
+- Atualiza o schema default de `376` para `418` para novos instanciamentos.
+
+Static QA:
+
+`/opt/data/profiles/lk-shopify/workdirs/cart-drawer-fix-20260625/cart_trust_grid_static_qa.json`
+
+Resultado: `ok=true`; `node --check` OK; `376` removido do target; `userRatingCount` + metafield usados; Google block dinâmico em ambos os caminhos.
+
+### Observação importante
+
+Para o cart ficar **sempre correto automaticamente**, existem dois escopos possíveis:
+
+1. **Tema somente:** `/cart` passa a puxar do metafield/fallback correto. Requer que o metafield seja mantido atualizado.
+2. **Tema + fonte:** além do tema, atualizar o metafield `lk_google.reviews` para o estado atual `418` e/ou aprovar uma rotina que atualize esse metafield quando o cron detectar mudança. Isso é Shopify/metafield write recorrente e precisa aprovação explícita própria.
+
 ## Aprovação necessária
 
-Para aplicar primeiro em DEV/unpublished:
+Para aplicar primeiro em DEV/unpublished somente o tema/cart:
 
-`Aprovo DEV cart drawer upsell + cart add fix`
+`Aprovo DEV cart drawer + cart add + Trust Grid Google reviews`
 
 Para já autorizar também o merge Production **após DEV readback/QA OK**:
 
-`Aprovo DEV e merge Production cart drawer upsell + cart add fix`
+`Aprovo DEV e merge Production cart drawer + cart add + Trust Grid Google reviews`
 
-Escopo: somente os 2 assets de tema acima. Sem produto, preço, estoque, Tiny, checkout config, apps, campanhas ou metafields.
+Escopo: assets de tema do cart (`snippets/lk-cart-drawer.liquid` e `sections/lk-cart.liquid`). Sem produto, preço, estoque, Tiny, checkout config, apps, campanhas ou GMC.
+
+Se quiser também manter a fonte 100% automática via Shopify metafield/cron, aprovação separada necessária:
+
+`Aprovo atualizar e manter metafield lk_google.reviews pelo cron Google Reviews`
