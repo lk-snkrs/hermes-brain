@@ -33,11 +33,13 @@ Resumo:
 | Produtos únicos | 698 |
 | Regras X→Y com support ≥ 2 | 270 |
 | Handles com regra candidata support ≥ 3 e score ≥ 78 | 29 |
-| Regras candidatas no mapa v2 | 52 |
+| Handles após filtro público/comprável | 26 |
+| Regras candidatas no mapa v2 bruto | 52 |
+| Regras candidatas após filtro público/comprável | 46 |
 
 Candidate map local corrigido:
 
-- `/opt/data/profiles/lk-shopify/workdirs/cart-drawer-cross-sell-xy-20260625/cart_drawer_cross_sell_candidate_map_v2_windows.json`
+- `/opt/data/profiles/lk-shopify/workdirs/cart-drawer-cross-sell-xy-20260625/cart_drawer_cross_sell_candidate_map_v2_windows_public_available.json`
 
 ## Mudança proposta DEV
 

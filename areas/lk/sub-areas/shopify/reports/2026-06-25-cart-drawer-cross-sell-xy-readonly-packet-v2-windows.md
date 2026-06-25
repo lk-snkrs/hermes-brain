@@ -36,7 +36,9 @@ weighted_support = same_order
 | Produtos únicos | 698 |
 | Regras X→Y com support ≥ 2 | 270 |
 | Handles com regra candidata support ≥ 3 e score ≥ 78 | 29 |
-| Regras candidatas no mapa v2 | 52 |
+| Handles após filtro público/comprável | 26 |
+| Regras candidatas no mapa v2 bruto | 52 |
+| Regras candidatas após filtro público/comprável | 46 |
 
 ## Top regras X→Y v2
 
@@ -61,6 +63,10 @@ weighted_support = same_order
 ## Candidate map corrigido
 
 Arquivo local:
+
+- `/opt/data/profiles/lk-shopify/workdirs/cart-drawer-cross-sell-xy-20260625/cart_drawer_cross_sell_candidate_map_v2_windows_public_available.json`
+
+O mapa bruto antes do filtro público/comprável fica preservado em:
 
 - `/opt/data/profiles/lk-shopify/workdirs/cart-drawer-cross-sell-xy-20260625/cart_drawer_cross_sell_candidate_map_v2_windows.json`
 
