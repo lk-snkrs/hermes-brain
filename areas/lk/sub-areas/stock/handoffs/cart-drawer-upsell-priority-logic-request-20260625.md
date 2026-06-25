@@ -1,106 +1,71 @@
-# Handoff — LK Stock priority logic for cart drawer upsell
+# Handoff superseded — Cart drawer is cross-sell X→Y, not Stock priority ranking
 
 - **Data:** 2026-06-25
 - **Origem:** lk-shopify
-- **Destino/owner:** lk-stock / [LK] Estoque Loja Física
-- **Contexto:** Lucas apontou que a ordem dos 4 produtos exibidos no `cart-drawer__upsell-inner` “não faz sentido” e pediu conectar a lógica às prioridades do LK Stock.
-- **Status:** bloqueado aguardando regra/evidência do lk-stock. LK Shopify não consultou estoque diretamente.
+- **Destino/owner original:** lk-stock / [LK] Estoque Loja Física
+- **Status:** **superseded / não acionar LK Stock para ranking principal**
+- **Correção de Lucas:** “tudo errado... não é isso.. tem que ser possibilidade de CROSS SELL. por exemplo, cliente comprou X, tem % de chances de comprar os produtos Y.”
 
-## Pedido ao LK Stock
+## Correção de rota
 
-Definir uma regra operacional de prioridade para os 4 produtos recomendados no cart drawer, usando somente fonte/evidência do lk-stock.
+O pedido original para LK Stock definir prioridade dos 4 cards estava errado.
 
-## Contexto técnico atual
+A lógica correta do `cart-drawer__upsell-inner` é:
 
-Arquivo atual:
-
-- `snippets/lk-cart-drawer.liquid`
-
-Lógica atual do cart drawer:
-
-1. Detecta modelo/silhueta do item no carrinho.
-2. Busca `/collections/<modelo>/products.json?limit=16&sort_by=best-selling`.
-3. Filtra disponíveis pelo JSON público Shopify e remove produtos já no carrinho.
-4. Renderiza os 4 primeiros em `cart-drawer__upsell-inner`.
-5. Se não detectar modelo ou não houver produto, cai em fallback `/collections/all/products.json?limit=16&sort_by=best-selling`.
-
-Problema apontado por Lucas:
-
-- A ordem dos 4 cards não parece comercial/operacionalmente inteligente.
-- Precisamos conectar com prioridade LK Stock, não apenas best-selling público.
-
-## Informação mínima necessária do LK Stock
-
-Favor retornar uma das opções abaixo, com evidência sanitizada:
-
-### Opção A — lista de handles priorizados
-
-Para uso imediato no cart drawer:
-
-```json
-{
-  "priority_handles": [
-    "handle-1",
-    "handle-2",
-    "handle-3",
-    "handle-4"
-  ],
-  "fallback_handles": ["..."],
-  "blocked_handles": ["..."]
-}
+```text
+cliente colocou/comprou X
+→ calcular/usar probabilidade histórica de comprar Y
+→ ordenar Y por chance de cross-sell
+→ renderizar até 4 produtos
 ```
 
-### Opção B — regra de score por produto
+## Novo dono do ranking
 
-Critérios sugeridos, se o lk-stock preferir regra dinâmica:
+- **Dono do ranking X→Y:** `lk-shopify`, via análise read-only/agregada de pedidos/co-compra.
+- **Papel eventual do LK Stock:** somente filtro final de elegibilidade/comprabilidade se necessário; por exemplo, bloquear item sem disponibilidade confiável. LK Stock não deve decidir o score principal.
 
-- pronta entrega confirmada / disponibilidade confiável;
-- mesmo modelo/silhueta ou complementaridade clara;
-- grade saudável / tamanho relevante disponível;
-- demanda recente / best seller real;
-- confiança de dados / SKU mapping;
-- excluir baixo estoque crítico ou item que não deve ser empurrado;
-- excluir produto atual do carrinho;
-- **não usar margem/valor neste ranking do cart drawer**, por correção explícita de Lucas em 2026-06-25.
+## Fonte correta
 
-Formato sugerido:
+Análise agregada de pedidos/co-compra, sem dados pessoais no output:
 
-```json
-{
-  "score_rules": [
-    {"criterion":"pronta_entrega_confirmada", "weight": 35},
-    {"criterion":"same_model_or_complementary_silhouette", "weight": 25},
-    {"criterion":"grade_saudavel", "weight": 20},
-    {"criterion":"demanda_recente_best_seller", "weight": 15},
-    {"criterion":"data_confidence_sku_mapping", "weight": 5}
-  ],
-  "excluded_criteria": ["margem", "valor"],
-  "blocked_conditions": ["sem_evidencia_stock", "baixo_estoque_critico", "produto_atual_no_carrinho"]
-}
-```
+- pares no mesmo pedido: `X + Y`;
+- possível compra sequencial por mesmo cliente em janela curta, se seguro e permitido;
+- agregação por produto e por modelo/silhueta;
+- métricas: `confidence(X→Y)`, `lift(X,Y)`, `support`, recência;
+- filtros: excluir item atual do carrinho, itens já no carrinho, produto indisponível/não comprável.
 
-## Critério de aceite para LK Shopify depois do retorno
+## Critérios fora do ranking
 
-LK Shopify só deve implementar quando houver resposta/evidência do lk-stock. Implementação proposta:
+Não usar como critério principal de ranking:
 
-- remover fallback `/collections/all`;
-- manter modelo/silhueta como contexto;
-- aplicar ranking LK Stock sobre candidatos;
-- renderizar até 4 produtos;
-- se não houver evidência suficiente, esconder bloco ou usar fallback curado aprovado, nunca prometer disponibilidade;
-- QA com carrinho real e readback.
+- margem/valor;
+- prioridade operacional de estoque/giro;
+- coleção `/all`;
+- escolha manual fixa sem evidência;
+- estoque como score.
+
+## Próxima ação correta
+
+LK Shopify deve preparar um packet de análise read-only:
+
+1. período analisado;
+2. método de co-compra;
+3. top regras X→Y;
+4. risco de amostra pequena;
+5. formato de artefato agregado para o tema;
+6. proposta DEV + QA + rollback.
 
 ## Reminder OS
 
 - **Reminder OS loop needed:** yes
-- **Reminder OS owner:** lk-stock
-- **Reminder OS next action:** devolver regra/lista priorizada de produtos/handles para cart drawer upsell, com evidência sanitizada.
-- **Reminder OS review trigger:** antes de LK Shopify mudar a lógica de ordenação dos 4 produtos no cart drawer.
-- **Reminder OS evidence:** este handoff + pedido do Lucas no Telegram em 2026-06-25.
+- **Reminder OS owner:** lk-shopify
+- **Reminder OS next action:** gerar análise read-only de co-compra/cross-sell X→Y para cart drawer; não aguardar LK Stock como dono do ranking.
+- **Reminder OS review trigger:** antes de qualquer nova mudança na lógica dos 4 produtos do cart drawer.
+- **Reminder OS evidence:** correção de Lucas no Telegram em 2026-06-25 + spec `areas/lk/sub-areas/shopify/reports/2026-06-25-cart-drawer-upsell-stock-priority-technical-spec.md` corrigida para cross-sell.
 
 ## Guardrails
 
-- LK Shopify não deve consultar Tiny/DB/planilha/cache de estoque diretamente.
-- Não prometer disponibilidade sem resposta do lk-stock.
-- Sem write Shopify/GitHub/Production até regra e aprovação explícita de Lucas para implementação.
+- Sem Shopify write até approval packet/DEV approval.
+- Sem expor dados pessoais de pedidos/clientes; output deve ser agregado.
+- Sem prometer disponibilidade sem filtro/evidência.
 - `values_printed=false`.

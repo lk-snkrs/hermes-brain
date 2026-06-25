@@ -1,9 +1,9 @@
-# Technical spec — Cart drawer upsell priority via LK Stock
+# Technical spec — Cart drawer cross-sell logic X → Y
 
 - **Data:** 2026-06-25
 - **Perfil:** lk-shopify
-- **Status:** especificação técnica preparada; implementação bloqueada até evidência/regra do `lk-stock`.
-- **Motivo:** Lucas pediu seguir após corrigirmos o bug dos “mesmos 4”; próximo passo é conectar a ordem do `cart-drawer__upsell-inner` com prioridades operacionais do LK Stock.
+- **Status:** especificação corrigida após feedback de Lucas; implementação bloqueada até análise read-only de co-compra/cross-sell e approval packet.
+- **Motivo:** Lucas corrigiu que o objetivo não é prioridade de margem/estoque. A lógica certa é **cross-sell probabilístico**: se o cliente colocou/comprou X, quais produtos Y têm maior chance de compra conjunta/seguinte.
 
 ## Estado atual pós-PR #99
 
@@ -20,56 +20,80 @@ Já resolvido:
 
 ## Objetivo da fase 2
 
-Substituir a lógica puramente `best-selling` por uma ordenação que combine:
+Substituir a lógica de `best-selling`/fallback por **cross-sell baseado em co-compra**:
 
-1. contexto do carrinho/modelo;
-2. disponibilidade/pronta entrega confirmada pelo `lk-stock`;
-3. prioridade operacional de estoque/grade/giro;
-4. segurança de não prometer disponibilidade sem evidência.
+> Se cliente colocou/comprou X, quais produtos Y historicamente têm maior chance de serem comprados junto ou na sequência?
 
-## Fonte canônica Stock
+A ordem dos 4 cards deve vir de uma matriz X→Y, não de margem, estoque, coleção genérica ou gosto manual.
 
-Referência encontrada no Brain:
+## Modelo correto de ranking
 
-- `areas/lk/sub-areas/stock/rotinas/best-seller-ready-stock-score-v0.md`
+### Fonte primária — co-compra / associação de cesta
 
-Score v0 do Stock existe como referência geral, mas Lucas corrigiu este escopo em 2026-06-25: **para cart drawer upsell, não usar `margem/valor` como critério**.
+Construir uma matriz com pedidos reais, em leitura segura e agregada:
 
-Regra proposta específica para o cart drawer:
+- pares comprados no mesmo pedido: `X + Y`;
+- pares comprados pelo mesmo cliente em janela curta, se permitido/seguro: `X → Y em N dias`;
+- agregação por produto e por modelo/silhueta para evitar amostra pequena;
+- excluir o produto atual do carrinho;
+- excluir produtos indisponíveis/publicamente não compráveis apenas como filtro final, sem transformar estoque em critério de ranking.
+
+### Métricas sugeridas
+
+| Métrica | Uso |
+|---|---|
+| `support(X,Y)` | volume absoluto de pedidos com X e Y juntos |
+| `confidence(X→Y)` | % dos pedidos com X que também compram Y |
+| `lift(X,Y)` | quanto Y aparece com X acima do acaso |
+| `recency_weight` | dá mais peso para comportamento recente |
+| `model_family` | agrupa por modelo/silhueta quando SKU/variante tem pouca amostra |
+
+### Score cross-sell sugerido
 
 | Critério | Peso sugerido |
 |---|---:|
-| Pronta entrega confirmada / disponibilidade confiável | 35 |
-| Mesmo modelo/silhueta ou complementaridade clara | 25 |
-| Grade saudável / tamanhos relevantes disponíveis | 20 |
-| Demanda recente / best seller real | 15 |
-| Confiança de dados / SKU mapping | 5 |
+| Confidence X→Y | 45 |
+| Lift X,Y | 25 |
+| Support mínimo / robustez | 15 |
+| Recência | 10 |
+| Mesmo universo/complementaridade visual | 5 |
 
-Bloqueios do score:
+Critérios explicitamente fora do ranking:
 
-- se SKU/Tiny mapping não tiver confiança alta, item vira `needs_sku_resolution` antes de recomendação;
-- fixtures/probes/testes não podem alimentar score;
-- baixo estoque crítico, sem evidência de pronta entrega ou produto atual no carrinho devem bloquear recomendação;
-- margem/valor fica explicitamente fora deste ranking, salvo nova decisão de Lucas.
+- margem/valor;
+- prioridade de giro/estoque;
+- coleção `/all`;
+- escolha manual fixa sem evidência.
+
+Estoque entra só como **filtro de elegibilidade** no final, preferencialmente via LK Stock quando necessário: não recomendar item sem evidência de disponibilidade/comprabilidade.
 
 ## Proposta técnica Shopify
 
-### 1) Input Stock → Shopify
+### 1) Input cross-sell → Shopify
 
-A forma mais segura é LK Stock devolver um artefato sanitizado, sem quantidades sensíveis se não necessário:
+Gerar um artefato agregado, sem dados pessoais:
 
 ```json
 {
   "generated_at": "...",
-  "source": "lk-stock",
-  "confidence": "high|medium|low",
-  "priority_handles": [
-    {"handle":"tenis-x", "score":86, "reason":"same_model + pronta_entrega + grade_saudavel"},
-    {"handle":"tenis-y", "score":78, "reason":"fallback_sneaker + demanda"}
-  ],
-  "blocked_handles": [
-    {"handle":"tenis-z", "reason":"needs_sku_resolution|sem_evidencia|baixo_estoque_critico"}
-  ]
+  "source": "shopify_orders_aggregated_readonly",
+  "method": "basket_cooccurrence",
+  "rules": {
+    "min_support": 3,
+    "lookback_days": 180,
+    "exclude_current_cart_product": true
+  },
+  "by_handle": {
+    "produto-x": [
+      {"handle":"produto-y", "confidence":0.23, "lift":2.1, "support":11, "score":87},
+      {"handle":"produto-z", "confidence":0.18, "lift":1.7, "support":8, "score":74}
+    ]
+  },
+  "by_model": {
+    "new-balance-530": [
+      {"handle":"produto-y", "score":82, "reason":"co_compra_modelo"}
+    ]
+  }
 }
 ```
 
@@ -79,14 +103,13 @@ Pseudo-fluxo:
 
 ```text
 cart item(s)
-→ detectar modelo/silhueta
-→ buscar candidatos do modelo/coleção curada
-→ excluir produto atual
-→ excluir blocked_handles
-→ ordenar por stock_priority_score desc
-→ fallback para best-selling do modelo somente se stock confidence >= medium
+→ identificar handle/modelo do X
+→ procurar recomendações X→Y no mapa agregado
+→ excluir produto atual e itens já no carrinho
+→ aplicar filtro de elegibilidade/comprável/disponível
+→ ordenar por cross_sell_score desc
 → renderizar até 4
-→ se não houver candidatos confiáveis, esconder bloco
+→ se não houver regra confiável, fallback por modelo/silhueta; se ainda não houver, esconder bloco
 ```
 
 ### 3) Onde plugar no código
@@ -101,39 +124,32 @@ Funções atuais relevantes:
 Nova função sugerida:
 
 ```js
-function applyStockPriority(products, stockPriority, cartHandles) {
-  // remove current cart handles
-  // remove blocked handles
-  // annotate score/reason
-  // sort score desc, then keep source order
+function loadCrossSellRecommendations(container, cart, cartHandles) {
+  // read static/generated cross-sell map
+  // merge handle-level and model-level rules
+  // filter current cart products
+  // fetch product JSON only for selected Y candidates
+  // render top 4 by cross_sell_score
 }
 ```
 
 ## Pendência obrigatória
 
-`lk-shopify` não deve consultar Tiny/DB/estoque diretamente. A implementação só pode avançar quando `lk-stock` devolver uma das opções:
+Antes de implementar no tema, LK Shopify precisa produzir um **packet de análise read-only** com dados agregados de pedidos/co-compra:
 
-1. lista de handles priorizados; ou
-2. regra/score com evidência sanitizada suficiente.
+1. período analisado;
+2. método de agregação;
+3. top regras X→Y;
+4. exclusões/filtros;
+5. risco de amostra pequena;
+6. proposta do artefato JSON/Liquid para o tema;
+7. QA e rollback.
 
-Handoff ativo:
-
-- `areas/lk/sub-areas/stock/handoffs/cart-drawer-upsell-priority-logic-request-20260625.md`
-
-Reminder ativo:
-
-- `rem-lk-stock-cart-drawer-upsell-priority-20260625`
+LK Stock deixa de ser dono do ranking. Ele pode ser consultado depois apenas como filtro de disponibilidade/elegibilidade, sem decidir o score principal.
 
 ## Próxima decisão para Lucas
 
-Sem resposta do `lk-stock`, o estado seguro é manter PR #99: não repetir os mesmos 4 genéricos e esconder upsell quando não há modelo.
-
-Quando `lk-stock` responder, LK Shopify prepara:
-
-1. patch DEV;
-2. QA com produtos mapeados e não mapeados;
-3. PR/merge Production após aprovação;
-4. receipt/readback.
+Próximo passo correto: análise read-only de pedidos/co-compra para gerar a matriz X→Y. Depois disso, preparar patch DEV + approval packet para plugar no cart drawer.
 
 ## Writes externos
 
