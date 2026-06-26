@@ -172,7 +172,7 @@ Estado de ativação:
 ## Memory OS v1.20 — contrato anti-recorrência auto-heal
 
 - Auto-heal recorrente não deve virar normalidade invisível: se a mesma rota/reason cura `>= 3` vezes em 7 dias, registrar `auto-heal-generator-findings-latest.json` e corrigir o gerador local/documental quando seguro.
-- Rotas recorrentes atuais: adoption_auto_heal, daily_curator, generator_contract.
+- Rotas recorrentes atuais: adoption_auto_heal.
 - Escopo automático permitido: L0/L1 local/documental com backup/ledger/verificação; L2 requer aprovação; L3 é proibido automático.
 - Telegram permanece silencioso se o estado final ficou verde; alertar Lucas apenas quando sobrar problema acionável ou decisão L2.
 ## Memory OS v1.30 — Context Intelligence Layer
