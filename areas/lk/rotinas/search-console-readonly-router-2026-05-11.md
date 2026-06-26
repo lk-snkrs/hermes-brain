@@ -1,6 +1,6 @@
 # LK Search Console Read-only Router, 2026-05-11
 
-Generated at: `2026-06-26T09:27:19.644472+00:00`
+Generated at: `2026-06-26T11:33:40.204769+00:00`
 
 ## Veredito
 
