@@ -1,22 +1,6 @@
 {
-  "active": [
-    {
-      "alert": {
-        "detail": {
-          "job": "Zipper OS vendas 09h WhatsApp/email",
-          "registry": "/opt/data/cron/jobs.json",
-          "status": "error"
-        },
-        "type": "cron_non_ok"
-      },
-      "fingerprint": "360f950219d318dc",
-      "first_seen": "2026-06-24T05:01:43.227288+00:00",
-      "last_seen": "2026-06-24T05:01:43.227288+00:00",
-      "seen_count": 1,
-      "status": "new"
-    }
-  ],
-  "active_count": 1,
+  "active": [],
+  "active_count": 0,
   "alerts": {
     "271525f7aad957b2": {
       "alert": {
@@ -46,8 +30,9 @@
       "fingerprint": "360f950219d318dc",
       "first_seen": "2026-06-24T05:01:43.227288+00:00",
       "last_seen": "2026-06-24T05:01:43.227288+00:00",
+      "resolved_at": "2026-06-25T05:02:16.932783+00:00",
       "seen_count": 1,
-      "status": "new"
+      "status": "resolved"
     },
     "46863d9b8c70d943": {
       "alert": {
@@ -232,9 +217,9 @@
       "status": "resolved"
     }
   },
-  "new_count": 1,
+  "new_count": 0,
   "recurring_count": 0,
-  "resolved_since_previous_count": 0,
-  "updated_at": "2026-06-24T05:01:43.227288+00:00",
+  "resolved_since_previous_count": 1,
+  "updated_at": "2026-06-25T05:02:16.932783+00:00",
   "values_printed": false
 }

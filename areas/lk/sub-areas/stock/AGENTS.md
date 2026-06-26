@@ -20,6 +20,17 @@ O agente de origem só entrega contexto: objetivo, campanha/conteúdo/SEO, refer
 
 Não publicar ativo, alterar Tiny/estoque, enviar campanha/anúncio ou fazer write externo sem aprovação explícita de Lucas.
 
+## Regra obrigatória — UI Stock OS precisa ser endereçável por link
+
+Quando este agente ou worker alterar qualquer tela/página do Stock OS (`estoque.lkskrs.online`), a superfície precisa ter ou preservar uma rota/URL direta testável. Não basta esconder/mostrar um modo dentro de outra tela se a área tiver fluxo operacional próprio.
+
+Fluxo obrigatório:
+1. Identificar a rota canônica antes de editar, por exemplo `/`, `/vendas`, `/reposicao`, `/produto/:id`.
+2. Se a superfície for operacionalmente distinta, criar/preservar rota própria e HTML acessível por link.
+3. Manter IDs/classes estáveis para busca automática, DOM check, screenshot e browser validation.
+4. Testar abrindo a URL final diretamente, com HTTP smoke e marcador HTML da tela.
+5. Não reportar UI como pronta se ela não puder ser aberta e validada por link direto.
+
 ## Regra obrigatória — LK Stock é o único dono de consulta de estoque
 
 Quando qualquer tarefa envolver estoque da LK — estoque, disponibilidade, pronta entrega, “tem na loja?”, grade/tamanho disponível, ruptura, baixo estoque, reposição, transferência, compra, SKU/Tiny/Shopify divergente ou qualquer pergunta operacional de disponibilidade — este agente **não deve consultar estoque diretamente** em Tiny, Shopify, DB local, planilha, relatório antigo ou cache próprio.

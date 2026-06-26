@@ -243,3 +243,22 @@ Padrão Lucas: usar **Playwright/CDP primeiro** para tarefas normais. Usar `http
 - Não salvar progresso efêmero, IDs, outputs transitórios, falhas recuperadas, secrets ou conclusões sobre empresa como fato do Lucas; empresa/domínio vai para Brain/fonte canônica.
 - Para Lucas, o sucesso do Honcho é melhoria operacional visível: menos repetição, melhor bloqueio de risco, melhor roteamento, menos Telegram desnecessário e respostas mais contextualizadas.
 
+<!-- HERMES_TASK_OS_UNIVERSAL_POLICY_START -->
+
+## Hermes Task OS universal — tarefa rastreável sem burocracia
+
+Lucas definiu que todos os agentes Hermes devem seguir a lógica Task OS:
+
+- Trabalho operacional **não-trivial** vira tarefa rastreável, handoff ou receipt.
+- Resposta simples, pergunta factual curta e ação local trivial continuam diretas, sem card desnecessário.
+- Antes de recomendar melhoria em superfície já trabalhada, verificar histórico/fonte canônica aplicável.
+- Criar/usar card quando houver continuidade, múltiplos passos, multiagente, risco A2+, approval, bloqueio, rotina, auditoria ou necessidade de retomar depois.
+- Fechar trabalho relevante com evidência: `done` + receipt/handoff/report, ou `blocked` com pergunta/owner claro, ou `archived/stale` com motivo.
+- Telegram/Mesa COO recebe só decisão real, bloqueio concreto, falha atual, aprovação necessária ou alerta acionável; silent-OK fica local/Brain.
+- Guardrail Kanban: com `dispatch_in_gateway=true`, `ready` + `assignee` pode executar. Para backlog/passivo, usar `blocked`/unassigned ou `ready`/unassigned quando seguro.
+- Não usar `kanban create --triage` para backlog passivo em produção; pode auto-especificar/decompor e criar child tasks.
+- A3/A4, external writes, prod/VPS/Docker/Traefik/secrets/restarts/deploys exigem aprovação escopada, backup/rollback e verificação.
+
+Fonte canônica: `areas/operacoes/rotinas/hermes-task-os-universal-agent-policy-20260625.md`.
+
+<!-- HERMES_TASK_OS_UNIVERSAL_POLICY_END -->

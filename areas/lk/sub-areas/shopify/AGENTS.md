@@ -155,3 +155,18 @@ python3 /opt/data/scripts/hermes_memory_os_event_hook.py <caminho-do-handoff> --
 
 Se `loop needed: yes`, o item precisa estar coberto no ledger `areas/operacoes/reminder-os/reminders.jsonl` ou aparecer como blocker no health/ingress audit. Se `loop needed: no`, explicar por que o ciclo está fechado. Regra: se outro agente não consegue retomar sem contexto de chat, o handoff falhou.
 
+## Regra obrigatória — evidência final fora de scratch workspace
+
+Para qualquer task de LK Shopify com write externo aprovado, não basta deixar JSON/readback apenas no `$HERMES_KANBAN_WORKSPACE` quando o workspace for `scratch`, porque ele pode ser removido/GC e o receipt fica apontando para evidência perdida.
+
+Fluxo obrigatório:
+1. Gerar readback final sanitizado (`values_printed=false`) para Admin/API e público quando aplicável.
+2. Copiar ou escrever a evidência final em Brain ou backup durável antes de completar o card, por exemplo:
+   - `areas/lk/sub-areas/shopify/evidence/<slug>-<timestamp>/`; ou
+   - `/opt/data/backups/lk-shopify-evidence/<slug>-<timestamp>/` com caminho citado no receipt.
+3. O receipt deve apontar para evidência durável, não apenas scratch workspace.
+4. Se o workspace scratch já foi removido, refazer readback e preservar novo JSON durável antes de responder status final.
+5. Nunca salvar tokens, headers, previews de secret ou `.env`; apenas status/IDs/HTTP/readback sanitizado.
+
+Motivo: em 2026-06-25, o card `t_ae530570` completou corretamente, mas os JSONs citados no receipt estavam em workspace scratch que não existia mais durante auditoria posterior.
+

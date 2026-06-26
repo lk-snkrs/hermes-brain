@@ -1,8 +1,8 @@
-# Mordomo Decision Dashboard — 24/06/2026 17:00 BRT
+# Mordomo Decision Dashboard — 25/06/2026 17:00 BRT
 
 ## Saúde executiva
 - Decisões abertas: 44
-- Follow-ups operacionais próximos: 69
+- Follow-ups operacionais próximos: 65
 - Ações enviadas hoje: 0
 - Ruídos segurados na amostra: 8
 - Cliques de botão registrados na amostra: 8
@@ -13,13 +13,13 @@
 3. Renata Cafaro — Laura Villarosa — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
 4. Projeto Graos de Amor — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
 5. Larissa Greff - Plock 🇵🇱 — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-6. Associação Brasileira de Arte Contemporânea — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-7. Unimed CNU — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-8. World Legend Mastercard by Ten Lifestyle Group — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-9. Rafa Dal’Maso — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-10. Sueli Pennone — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-11. Esther Safdie — LK — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-12. Barbara Salles — LK — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+6. Unimed CNU — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+7. Rafa Dal’Maso — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+8. Sueli Pennone — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+9. Esther Safdie — LK — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+10. Itaú — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+11. RK — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+12. Cello — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
 
 ## Contrato de comunicação
 - Telegram: só decisão/alerta real, com botões funcionais quando envio direto estiver ativo.

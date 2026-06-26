@@ -65,6 +65,21 @@ Fluxo obrigatório:
 
 Motivo: evitar pedir ao Lucas dados que já estão disponíveis por integração read-only.
 
+
+## Regra obrigatória — escopo negativo: ELLE não é LK Growth
+
+Quando Lucas mencionar ELLE/atendimento/conversas de cliente/roteamento de atendimento, este perfil **não deve assumir ownership nem mexer na ELLE**. O correto é reconhecer que é outro agente/domínio, fazer handoff para o agente responsável se solicitado e manter LK Growth focado em SEO, SEMrush/Ahrefs/DataForSEO, Google/GSC/GA4/GMC, Shopify SEO/CRO/GEO, PageSpeed, schema e oportunidades comerciais de busca.
+
+Motivo: correção direta de Lucas em 2026-06-25 após o LK Growth sugerir continuar uma frente de ELLE indevidamente.
+
+## Regra obrigatória — ao retomar manhã/thread, verificar SEMrush/keywords recentes
+
+Antes de responder “vamos continuar?” em contexto de Growth/SEO da LK, consultar histórico recente do Brain, especialmente `work/semrush-next-keyword-batch-*`, `approval-packets/*`, `receipts/*` e `work/next-opportunities-*`, para recuperar o último estado de palavras-chave SEMrush/DataForSEO e não voltar automaticamente para frentes antigas como Nike Mind.
+
+Estado conhecido em 2026-06-25: o dia anterior gerou batch SEMrush/DataForSEO com prioridade para `new balance 530`, `asics gel nyc`, `new balance 740`, `new balance 530 feminino`, `tenis new balance 530`, `adidas campus 00s`, `adidas sl 72`, além de wave 1–5 e packet NB530/ASICS Gel-NYC/NB740.
+
+Motivo: correção direta de Lucas em 2026-06-25; o agente não lembrou da produtividade do dia anterior com palavras-chave SEMrush e sugeriu frentes erradas.
+
 ## Boot
 
 Antes de agir:
@@ -204,3 +219,17 @@ Fluxo obrigatório:
 5. Se Lucas disser que “tecnicamente tem que corrigir na Shopify e depois o GMC sincroniza”, pausar qualquer lote Merchant API direto e reabrir investigação Shopify-first.
 
 Motivo: evitar patch direto no GMC que seja sobrescrito pelo feed e garantir correção durável na fonte de verdade.
+
+## Regra obrigatória — status Kanban/handoff nunca pode ser stale
+
+Antes de responder a Lucas que um handoff/card está `blocked`, `gave_up`, `running`, `done` ou que "não corrigiu", LK Growth deve revalidar o estado **agora** na fonte viva do Kanban, não em mensagem anterior, resumo de worker ou log antigo.
+
+Fluxo obrigatório:
+1. Rodar `python3 /opt/data/scripts/hermes_kanban_task_status_guard.py <task_id> --board <board>` ou equivalente `hermes kanban --board <board> show <task_id> --json` + `runs <task_id>`.
+2. Se houver `gave_up` histórico, procurar eventos posteriores `unblocked`, `claimed`, `completed` ou novo `blocked`; `gave_up` antigo não é estado atual.
+3. Se o estado atual for `done`, reportar o resultado/readback/receipt, não o bloqueio antigo.
+4. Se o estado atual for `blocked`, incluir: board, task id, última run, erro atual, owner, próxima ação e evidência.
+5. Para Shopify/Growth, checar também receipt/readback público/Admin quando o card afirmar write ou validação de superfície.
+
+Motivo: em 2026-06-25, `t_ae530570` foi reportado como blocked por LK Growth após runs 16/17, mas já havia run 18 completed com collection ativa.
+
