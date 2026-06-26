@@ -1,5 +1,8 @@
 # Approval packet — Memory provider Honcho vs política Memory OS
 
+> **Documento histórico / DO NOT RUN:** comandos e caminhos citados são evidência/registro; não executar sem aprovação escopada, backup, rollback e readback.
+
+
 Data: 2026-06-20
 Status: decisão pendente de Lucas
 Escopo: read-only / documental. Nenhum runtime, gateway, Docker, VPS, Traefik, cron, provider ou secret foi alterado.

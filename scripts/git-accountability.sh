@@ -1,4 +1,5 @@
 #!/bin/bash
+# DEPRECATED / DO NOT RUN: legacy Hermes Brain script retained only for historical/reference audit. Not part of current runtime.
 # Auto-commit after session — git accountability para Hermes
 # Rodar após toda sessão relevante
 #

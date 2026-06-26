@@ -1,5 +1,8 @@
 # Elle — deploy de regras aprovadas por Lucas
 
+> **Documento histórico / DO NOT RUN:** comandos e caminhos citados são evidência/registro; não executar sem aprovação escopada, backup, rollback e readback.
+
+
 Data: 2026-06-15
 Responsável: lk-ops
 Sistema: `/opt/elle-chatwoot` no VPS

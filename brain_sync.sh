@@ -1,4 +1,5 @@
 #!/bin/bash
+# DEPRECATED / DO NOT RUN: legacy Hermes Brain script retained only for historical/reference audit. Not part of current runtime.
 #
 # brain_sync.sh — Sync Brain files (decisions.md, lessons.md, pending.md) to Mem0
 # Usage: bash /root/.hermes/scripts/brain_sync.sh [--dry-run]

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# DEPRECATED / DO NOT RUN: legacy Hermes Brain script retained only for historical/reference audit. Not part of current runtime.
 """
 Alert System for Hermes Monitor
 Reads monitor state, evaluates alert rules, and dispatches notifications.

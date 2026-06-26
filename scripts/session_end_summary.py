@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# DEPRECATED / DO NOT RUN: legacy Hermes Brain script retained only for historical/reference audit. Not part of current runtime.
 """
 Session-End Mem0 Summary — pushes session summary to Mem0 at session end.
 Integrates with hermes session end protocol.

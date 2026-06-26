@@ -1,3 +1,5 @@
+> **Documento histórico / DO NOT RUN:** comandos e caminhos citados são evidência/registro; não executar sem aprovação escopada, backup, rollback e readback.
+
 
 ## pending = Receita Real — AntiFraude LK (20/04/2026)
 - LK tem antifraude com delay entre `pending` e `paid`

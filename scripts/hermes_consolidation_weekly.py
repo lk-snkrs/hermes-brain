@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# DEPRECATED / DO NOT RUN: legacy Hermes Brain script retained only for historical/reference audit. Not part of current runtime.
 """
 Hermes Consolidation Weekly — Unificado
 Executa: Learning Loop + Memory Consolidation + Knowledge Freshness Review

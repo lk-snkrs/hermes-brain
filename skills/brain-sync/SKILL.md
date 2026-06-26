@@ -4,6 +4,9 @@ description: Bidirectional sync between local memories and VPS Hermes Brain + Me
 tags: [memory, brain, sync, vps]
 ---
 
+> **DEPRECATED / DO NOT RUN:** legacy skill retained only for historical/reference audit. Not part of current Hermes Brain runtime.
+
+
 # Brain Sync — Sincroniza todas as fontes de memória
 
 Executa sync bidirecional entre:

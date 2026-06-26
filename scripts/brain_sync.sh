@@ -1,4 +1,5 @@
 #!/bin/bash
+# DEPRECATED / DO NOT RUN: legacy Hermes Brain script retained only for historical/reference audit. Not part of current runtime.
 # Brain Sync — Bidirectional sync entre local e VPS
 # Uso: bash /root/.hermes/scripts/brain_sync.sh
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# DEPRECATED / DO NOT RUN: legacy Hermes Brain script retained only for historical/reference audit. Not part of current runtime.
 """
 Real-time System Monitoring Daemon
 Monitors CPU, memory, disk, network, and process metrics.

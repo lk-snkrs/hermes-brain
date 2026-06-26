@@ -1,5 +1,8 @@
 # LK Chatwoot Recovery — 131049 cooldown/cadência production fix 2026-06-15
 
+> **Documento histórico / DO NOT RUN:** comandos e caminhos citados são evidência/registro; não executar sem aprovação escopada, backup, rollback e readback.
+
+
 ## Contexto
 
 Lucas pediu seguir ações 1–5 após pesquisa do erro Meta WhatsApp `131049` em carrinho abandonado.
