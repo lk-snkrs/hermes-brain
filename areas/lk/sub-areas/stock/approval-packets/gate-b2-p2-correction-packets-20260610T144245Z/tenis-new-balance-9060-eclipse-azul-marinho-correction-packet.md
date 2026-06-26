@@ -1,0 +1,24 @@
+# Gate B2 P2 — correction packet — tenis-new-balance-9060-eclipse-azul-marinho
+
+- title: `Tênis New Balance 9060 Eclipse Azul Marinho`
+- priority: `P2_saneamento`
+- lane: `SHOPIFY_DUPLICATE_PACKET`
+- proposed_action: Preparar diff Shopify por variante/SKU duplicado e rollback; NÃO executar write sem aprovação escopada.
+- row_count: `2`
+- prefixes: `U9060NV, U9060NV`
+
+## Status counts
+- shopify_duplicate_sku_blocked: `1`
+- shopify_variant_tiny_missing: `1`
+
+## Linhas principais
+- `U9060NV` | shopify_variant_tiny_missing | Shopify SKU `U9060NV` | Tiny `` id ``
+- `U9060NV-1` | shopify_duplicate_sku_blocked | Shopify SKU `U9060NV-1` | Tiny `` id ``
+
+## Guardrails
+- Tiny write: `0`
+- Shopify write: `0`
+- Writes externos: `0`
+- Cron/webhook/runtime novo: `0`
+- Promessa de disponibilidade pública: `0`
+- Rollback: descartar artefatos locais; nada externo alterado.

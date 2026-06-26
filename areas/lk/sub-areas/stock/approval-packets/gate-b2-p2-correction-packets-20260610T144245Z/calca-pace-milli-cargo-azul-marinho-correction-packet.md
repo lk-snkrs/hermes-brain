@@ -1,0 +1,103 @@
+# Gate B2 P2 — correction packet — calca-pace-milli-cargo-azul-marinho
+
+- title: `Calça Pace Milli Cargo Azul Marinho`
+- priority: `P2_saneamento`
+- lane: `SHOPIFY_DUPLICATE_PACKET`
+- proposed_action: Preparar diff Shopify por variante/SKU duplicado e rollback; NÃO executar write sem aprovação escopada.
+- row_count: `79`
+- prefixes: `PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC, PAC`
+
+## Status counts
+- matched_exact_sku_stock_missing_deposit: `4`
+- matched_exact_sku_stock_resolved: `37`
+- shopify_duplicate_sku_blocked: `1`
+- shopify_variant_tiny_missing: `37`
+
+## Linhas principais
+- `PAC` | shopify_variant_tiny_missing | Shopify SKU `PAC` | Tiny `` id ``
+- `PAC-8544990-38` | shopify_variant_tiny_missing | Shopify SKU `PAC-8544990-38` | Tiny `` id ``
+- `PAC-8544990-40` | shopify_variant_tiny_missing | Shopify SKU `PAC-8544990-40` | Tiny `` id ``
+- `PAC-8676062-40` | shopify_variant_tiny_missing | Shopify SKU `PAC-8676062-40` | Tiny `` id ``
+- `PAC-8544990-42` | shopify_variant_tiny_missing | Shopify SKU `PAC-8544990-42` | Tiny `` id ``
+- `PAC-8676062-42` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-8676062-42` | Tiny `PAC-8676062-42` id `1064489868` | saldo LK CONTROLE: 0.0
+- `PAC-8544990-44` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-8544990-44` | Tiny `PAC-8544990-44` id `1064489991` | saldo LK CONTROLE: 1.0
+- `PAC-0260062-L` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-0260062-L` | Tiny `PAC-0260062-L` id `1069539448` | saldo LK CONTROLE: 0.0
+- `PAC-0260062-M` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-0260062-M` | Tiny `PAC-0260062-M` id `1069539443` | saldo LK CONTROLE: 0.0
+- `PAC-0260062-S` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-0260062-S` | Tiny `PAC-0260062-S` id `1069539438` | saldo LK CONTROLE: 0.0
+- `PAC-0260062-XL` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-0260062-XL` | Tiny `PAC-0260062-XL` id `1063977112` | saldo LK CONTROLE: 0.0
+- `PAC-0379230-L` | matched_exact_sku_stock_missing_deposit | Shopify SKU `PAC-0379230-L` | Tiny `PAC-0379230-L` id `1063951729`
+- `PAC-0379230-M` | shopify_variant_tiny_missing | Shopify SKU `PAC-0379230-M` | Tiny `` id ``
+- `PAC-0379230-S` | shopify_variant_tiny_missing | Shopify SKU `PAC-0379230-S` | Tiny `` id ``
+- `PAC-1197278-L` | shopify_variant_tiny_missing | Shopify SKU `PAC-1197278-L` | Tiny `` id ``
+- `PAC-1197278-M` | shopify_variant_tiny_missing | Shopify SKU `PAC-1197278-M` | Tiny `` id ``
+- `PAC-1197278-S` | shopify_variant_tiny_missing | Shopify SKU `PAC-1197278-S` | Tiny `` id ``
+- `PAC-1197278-XL` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-1197278-XL` | Tiny `PAC-1197278-XL` id `1069930838` | saldo LK CONTROLE: 0.0
+- `PAC-1571806-L` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-1571806-L` | Tiny `PAC-1571806-L` id `1069541499` | saldo LK CONTROLE: 0.0
+- `PAC-1571806-M` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-1571806-M` | Tiny `PAC-1571806-M` id `1069541494` | saldo LK CONTROLE: 0.0
+- `PAC-1571806-XL` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-1571806-XL` | Tiny `PAC-1571806-XL` id `1065416893` | saldo LK CONTROLE: 0.0
+- `PAC-1604574-L` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-1604574-L` | Tiny `PAC-1604574-L` id `1069541509` | saldo LK CONTROLE: -1.0
+- `PAC-1604574-M` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-1604574-M` | Tiny `PAC-1604574-M` id `1069541504` | saldo LK CONTROLE: 1.0
+- `PAC-1604574-XL` | matched_exact_sku_stock_missing_deposit | Shopify SKU `PAC-1604574-XL` | Tiny `PAC-1604574-XL` id `1065416873`
+- `PAC-1936990-L` | shopify_variant_tiny_missing | Shopify SKU `PAC-1936990-L` | Tiny `` id ``
+- `PAC-1936990-M` | shopify_variant_tiny_missing | Shopify SKU `PAC-1936990-M` | Tiny `` id ``
+- `PAC-1936990-S` | shopify_variant_tiny_missing | Shopify SKU `PAC-1936990-S` | Tiny `` id ``
+- `PAC-3039582-OS` | shopify_variant_tiny_missing | Shopify SKU `PAC-3039582-OS` | Tiny `` id ``
+- `PAC-4280798-L` | shopify_variant_tiny_missing | Shopify SKU `PAC-4280798-L` | Tiny `` id ``
+- `PAC-4280798-M` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-4280798-M` | Tiny `PAC-4280798-M` id `1063955017` | saldo LK CONTROLE: 0.0
+- `PAC-4280798-S` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-4280798-S` | Tiny `PAC-4280798-S` id `1069539405` | saldo LK CONTROLE: 0.0
+- `PAC-4541918-S` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-4541918-S` | Tiny `PAC-4541918-S` id `1061406285` | saldo LK CONTROLE: 1.0
+- `PAC-4596958-L` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-4596958-L` | Tiny `PAC-4596958-L` id `1063955161` | saldo LK CONTROLE: 0.0
+- `PAC-4596958-M` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-4596958-M` | Tiny `PAC-4596958-M` id `1067703974` | saldo LK CONTROLE: 1.0
+- `PAC-5083486-L` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-5083486-L` | Tiny `PAC-5083486-L` id `1061406129` | saldo LK CONTROLE: 2.0
+- `PAC-5083486-M` | shopify_variant_tiny_missing | Shopify SKU `PAC-5083486-M` | Tiny `` id ``
+- `PAC-5083486-S` | shopify_variant_tiny_missing | Shopify SKU `PAC-5083486-S` | Tiny `` id ``
+- `PAC-5083486-XS` | shopify_variant_tiny_missing | Shopify SKU `PAC-5083486-XS` | Tiny `` id ``
+- `PAC-5149022-G` | shopify_variant_tiny_missing | Shopify SKU `PAC-5149022-G` | Tiny `` id ``
+- `PAC-5149022-M` | shopify_variant_tiny_missing | Shopify SKU `PAC-5149022-M` | Tiny `` id ``
+- `PAC-5149022-S` | shopify_variant_tiny_missing | Shopify SKU `PAC-5149022-S` | Tiny `` id ``
+- `PAC-5149022-XS` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-5149022-XS` | Tiny `PAC-5149022-XS` id `1069538694` | saldo LK CONTROLE: 0.0
+- `PAC-5181790-L` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-5181790-L` | Tiny `PAC-5181790-L` id `1061405172` | saldo LK CONTROLE: 0.0
+- `PAC-5181790-M` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-5181790-M` | Tiny `PAC-5181790-M` id `1061405175` | saldo LK CONTROLE: 0.0
+- `PAC-5181790-S` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-5181790-S` | Tiny `PAC-5181790-S` id `1069538706` | saldo LK CONTROLE: 0.0
+- `PAC-5247326-S` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-5247326-S` | Tiny `PAC-5247326-S` id `1061404217` | saldo LK CONTROLE: 1.0
+- `PAC-5857246-L` | matched_exact_sku_stock_missing_deposit | Shopify SKU `PAC-5857246-L` | Tiny `PAC-5857246-L` id `1063951385`
+- `PAC-5857246-M` | shopify_variant_tiny_missing | Shopify SKU `PAC-5857246-M` | Tiny `` id ``
+- `PAC-5857246-S` | shopify_variant_tiny_missing | Shopify SKU `PAC-5857246-S` | Tiny `` id ``
+- `PAC-6023262-L` | shopify_variant_tiny_missing | Shopify SKU `PAC-6023262-L` | Tiny `` id ``
+- `PAC-6023262-M` | shopify_variant_tiny_missing | Shopify SKU `PAC-6023262-M` | Tiny `` id ``
+- `PAC-6023262-S` | shopify_variant_tiny_missing | Shopify SKU `PAC-6023262-S` | Tiny `` id ``
+- `PAC-8218078-L` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-8218078-L` | Tiny `PAC-8218078-L` id `1069543469` | saldo LK CONTROLE: 1.0
+- `PAC-8218078-M` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-8218078-M` | Tiny `PAC-8218078-M` id `1069543464` | saldo LK CONTROLE: 0.0
+- `PAC-8218078-XL` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-8218078-XL` | Tiny `PAC-8218078-XL` id `1067632983` | saldo LK CONTROLE: 0.0
+- `PAC-8316382-L` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-8316382-L` | Tiny `PAC-8316382-L` id `1067632841` | saldo LK CONTROLE: 1.0
+- `PAC-8316382-M` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-8316382-M` | Tiny `PAC-8316382-M` id `1069543489` | saldo LK CONTROLE: 0.0
+- `PAC-8381918-L` | matched_exact_sku_stock_missing_deposit | Shopify SKU `PAC-8381918-L` | Tiny `PAC-8381918-L` id `1067632800`
+- `PAC-8381918-M` | shopify_variant_tiny_missing | Shopify SKU `PAC-8381918-M` | Tiny `` id ``
+- `PAC-8414686-L` | shopify_variant_tiny_missing | Shopify SKU `PAC-8414686-L` | Tiny `` id ``
+- `PAC-8414686-M` | shopify_variant_tiny_missing | Shopify SKU `PAC-8414686-M` | Tiny `` id ``
+- `PAC-8414686-XL` | shopify_variant_tiny_missing | Shopify SKU `PAC-8414686-XL` | Tiny `` id ``
+- `PAC-8708830-L` | shopify_variant_tiny_missing | Shopify SKU `PAC-8708830-L` | Tiny `` id ``
+- `PAC-8708830-M` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-8708830-M` | Tiny `PAC-8708830-M` id `1069540218` | saldo LK CONTROLE: 0.0
+- `PAC-8708830-S` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-8708830-S` | Tiny `PAC-8708830-S` id `1069540213` | saldo LK CONTROLE: 0.0
+- `PAC-8762078-L` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-8762078-L` | Tiny `PAC-8762078-L` id `1069539391` | saldo LK CONTROLE: 0.0
+- `PAC-8762078-M` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-8762078-M` | Tiny `PAC-8762078-M` id `1063954812` | saldo LK CONTROLE: 0.0
+- `PAC-8762078-S` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-8762078-S` | Tiny `PAC-8762078-S` id `1069539385` | saldo LK CONTROLE: 0.0
+- `PAC-8762078-XL` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-8762078-XL` | Tiny `PAC-8762078-XL` id `1063954809` | saldo LK CONTROLE: 0.0
+- `PAC-8970974-L` | shopify_variant_tiny_missing | Shopify SKU `PAC-8970974-L` | Tiny `` id ``
+- `PAC-8970974-M` | shopify_variant_tiny_missing | Shopify SKU `PAC-8970974-M` | Tiny `` id ``
+- `PAC-8970974-XL` | shopify_variant_tiny_missing | Shopify SKU `PAC-8970974-XL` | Tiny `` id ``
+- `PAC-9003742-L` | shopify_variant_tiny_missing | Shopify SKU `PAC-9003742-L` | Tiny `` id ``
+- `PAC-9003742-M` | shopify_variant_tiny_missing | Shopify SKU `PAC-9003742-M` | Tiny `` id ``
+- `PAC-9003742-S` | shopify_variant_tiny_missing | Shopify SKU `PAC-9003742-S` | Tiny `` id ``
+- `PAC-9003742-XL` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-9003742-XL` | Tiny `PAC-9003742-XL` id `1064489397` | saldo LK CONTROLE: 1.0
+- `PAC-9134814-L` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-9134814-L` | Tiny `PAC-9134814-L` id `1064489431` | saldo LK CONTROLE: 0.0
+- `PAC-9134814-M` | matched_exact_sku_stock_resolved | Shopify SKU `PAC-9134814-M` | Tiny `PAC-9134814-M` id `1069540282` | saldo LK CONTROLE: 0.0
+- `PACEWAFFLE` | shopify_duplicate_sku_blocked | Shopify SKU `PACEWAFFLE` | Tiny `PACEWAFFLE` id `1061073213`
+
+## Guardrails
+- Tiny write: `0`
+- Shopify write: `0`
+- Writes externos: `0`
+- Cron/webhook/runtime novo: `0`
+- Promessa de disponibilidade pública: `0`
+- Rollback: descartar artefatos locais; nada externo alterado.

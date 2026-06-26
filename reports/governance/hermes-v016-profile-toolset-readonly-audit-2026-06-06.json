@@ -1,0 +1,296 @@
+[
+  {
+    "profile": "default",
+    "config": "/opt/data/config.yaml",
+    "platform_toolsets_telegram": [
+      "browser",
+      "clarify",
+      "code_execution",
+      "cronjob",
+      "delegation",
+      "file",
+      "image_gen",
+      "memory",
+      "messaging",
+      "session_search",
+      "skills",
+      "terminal",
+      "todo",
+      "tts",
+      "vision",
+      "web",
+      "mcp-time",
+      "mcp-fetch",
+      "mcp-sequential_thinking",
+      "mcp-metricool_readonly",
+      "mcp-dataforseo"
+    ],
+    "agent_max_turns": 90,
+    "model_provider": "openai-codex",
+    "model_default_present": true,
+    "delegation_provider": "openai-codex",
+    "delegation_model_present": true,
+    "notes": [
+      "telegram includes high-power/heavy toolsets: browser, code_execution, cronjob, file, terminal"
+    ]
+  },
+  {
+    "profile": "lk-shopify",
+    "config": "/opt/data/profiles/lk-shopify/config.yaml",
+    "platform_toolsets_telegram": [
+      "clarify",
+      "file",
+      "memory",
+      "session_search",
+      "skills",
+      "todo",
+      "web",
+      "terminal",
+      "code_execution",
+      "mcp-dataforseo",
+      "mcp-time",
+      "mcp-fetch",
+      "mcp-sequential_thinking"
+    ],
+    "agent_max_turns": 50,
+    "model_provider": "openai-codex",
+    "model_default_present": true,
+    "delegation_provider": "openai-codex",
+    "delegation_model_present": true,
+    "notes": [
+      "telegram includes high-power/heavy toolsets: code_execution, file, terminal"
+    ]
+  },
+  {
+    "profile": "lk-trends",
+    "config": "/opt/data/profiles/lk-trends/config.yaml",
+    "platform_toolsets_telegram": [
+      "browser",
+      "clarify",
+      "file",
+      "memory",
+      "session_search",
+      "skills",
+      "terminal",
+      "todo",
+      "web",
+      "mcp-dataforseo",
+      "mcp-time",
+      "mcp-fetch",
+      "mcp-sequential_thinking"
+    ],
+    "agent_max_turns": 45,
+    "model_provider": "openai-codex",
+    "model_default_present": true,
+    "delegation_provider": "openai-codex",
+    "delegation_model_present": true,
+    "notes": [
+      "telegram includes high-power/heavy toolsets: browser, file, terminal"
+    ]
+  },
+  {
+    "profile": "spiti",
+    "config": "/opt/data/profiles/spiti/config.yaml",
+    "platform_toolsets_telegram": [
+      "browser",
+      "clarify",
+      "file",
+      "memory",
+      "session_search",
+      "skills",
+      "terminal",
+      "todo",
+      "vision",
+      "web",
+      "mcp-time",
+      "mcp-fetch",
+      "mcp-sequential_thinking",
+      "mcp-dataforseo"
+    ],
+    "agent_max_turns": 55,
+    "model_provider": "openai-codex",
+    "model_default_present": true,
+    "delegation_provider": "openai-codex",
+    "delegation_model_present": true,
+    "notes": [
+      "telegram includes high-power/heavy toolsets: browser, file, terminal"
+    ]
+  },
+  {
+    "profile": "mordomo",
+    "config": "/opt/data/profiles/mordomo/config.yaml",
+    "platform_toolsets_telegram": [
+      "browser",
+      "clarify",
+      "code_execution",
+      "file",
+      "memory",
+      "messaging",
+      "session_search",
+      "skills",
+      "terminal",
+      "todo",
+      "vision",
+      "web",
+      "mcp-time",
+      "mcp-fetch",
+      "mcp-sequential_thinking"
+    ],
+    "agent_max_turns": 45,
+    "model_provider": "openai-codex",
+    "model_default_present": true,
+    "delegation_provider": "openai-codex",
+    "delegation_model_present": true,
+    "notes": [
+      "telegram includes high-power/heavy toolsets: browser, code_execution, file, terminal"
+    ]
+  },
+  {
+    "profile": "lc-claude-cli",
+    "config": "/opt/data/profiles/lc-claude-cli/config.yaml",
+    "platform_toolsets_telegram": [
+      "clarify",
+      "file",
+      "memory",
+      "session_search",
+      "skills",
+      "todo",
+      "web"
+    ],
+    "agent_max_turns": 50,
+    "model_provider": "lc-claude-cli-proxy",
+    "model_default_present": true,
+    "delegation_provider": "lc-claude-cli-proxy",
+    "delegation_model_present": true,
+    "notes": [
+      "telegram includes high-power/heavy toolsets: file"
+    ]
+  },
+  {
+    "profile": "lk-ops",
+    "config": "/opt/data/profiles/lk-ops/config.yaml",
+    "platform_toolsets_telegram": [
+      "clarify",
+      "file",
+      "memory",
+      "session_search",
+      "skills",
+      "todo",
+      "terminal",
+      "code_execution",
+      "mcp-time",
+      "mcp-fetch",
+      "mcp-sequential_thinking"
+    ],
+    "agent_max_turns": 40,
+    "model_provider": "openai-codex",
+    "model_default_present": true,
+    "delegation_provider": "openai-codex",
+    "delegation_model_present": true,
+    "notes": [
+      "telegram includes high-power/heavy toolsets: code_execution, file, terminal"
+    ]
+  },
+  {
+    "profile": "lk-collection-optimizer",
+    "config": "/opt/data/profiles/lk-collection-optimizer/config.yaml",
+    "platform_toolsets_telegram": [
+      "terminal",
+      "mcp-metricool_readonly",
+      "mcp-meta_ads_readonly",
+      "mcp-time",
+      "mcp-fetch",
+      "mcp-sequential_thinking",
+      "mcp-dataforseo"
+    ],
+    "agent_max_turns": 60,
+    "model_provider": "openai-codex",
+    "model_default_present": true,
+    "delegation_provider": "openai-codex",
+    "delegation_model_present": true,
+    "notes": [
+      "telegram includes high-power/heavy toolsets: terminal"
+    ]
+  },
+  {
+    "profile": "brain-process",
+    "config": "/opt/data/profiles/brain-process/config.yaml",
+    "platform_toolsets_telegram": [
+      "skills"
+    ],
+    "agent_max_turns": 90,
+    "model_provider": "openai-codex",
+    "model_default_present": true,
+    "delegation_provider": "openai-codex",
+    "delegation_model_present": true,
+    "notes": [
+      "telegram toolsets look relatively narrow"
+    ]
+  },
+  {
+    "profile": "lk-content-reviewer",
+    "config": "/opt/data/profiles/lk-content-reviewer/config.yaml",
+    "platform_toolsets_telegram": [
+      "skills"
+    ],
+    "agent_max_turns": 90,
+    "model_provider": "openai-codex",
+    "model_default_present": true,
+    "delegation_provider": "openai-codex",
+    "delegation_model_present": true,
+    "notes": [
+      "telegram toolsets look relatively narrow"
+    ]
+  },
+  {
+    "profile": "lk-growth",
+    "config": "/opt/data/profiles/lk-growth/config.yaml",
+    "platform_toolsets_telegram": [
+      "terminal",
+      "mcp-metricool_readonly",
+      "mcp-meta_ads_readonly",
+      "mcp-time",
+      "mcp-fetch",
+      "mcp-sequential_thinking",
+      "mcp-dataforseo"
+    ],
+    "agent_max_turns": 60,
+    "model_provider": "openai-codex",
+    "model_default_present": true,
+    "delegation_provider": "openai-codex",
+    "delegation_model_present": true,
+    "notes": [
+      "telegram includes high-power/heavy toolsets: terminal"
+    ]
+  },
+  {
+    "profile": "lk-analyst-readonly",
+    "config": "/opt/data/profiles/lk-analyst-readonly/config.yaml",
+    "platform_toolsets_telegram": [
+      "skills"
+    ],
+    "agent_max_turns": 90,
+    "model_provider": "openai-codex",
+    "model_default_present": true,
+    "delegation_provider": "openai-codex",
+    "delegation_model_present": true,
+    "notes": [
+      "telegram toolsets look relatively narrow"
+    ]
+  },
+  {
+    "profile": "hermes-ops-readonly",
+    "config": "/opt/data/profiles/hermes-ops-readonly/config.yaml",
+    "platform_toolsets_telegram": [
+      "skills"
+    ],
+    "agent_max_turns": 90,
+    "model_provider": "openai-codex",
+    "model_default_present": true,
+    "delegation_provider": "openai-codex",
+    "delegation_model_present": true,
+    "notes": [
+      "telegram toolsets look relatively narrow"
+    ]
+  }
+]

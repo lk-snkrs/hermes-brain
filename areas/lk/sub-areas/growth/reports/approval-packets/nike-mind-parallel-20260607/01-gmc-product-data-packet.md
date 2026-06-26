@@ -1,0 +1,141 @@
+# 01 — GMC/Product Data packet — Nike Mind
+
+## Resumo
+- Produtos na collection: 18
+- Produtos com variantes sem barcode/GTIN: 13
+- Regra: não inventar GTIN; validar fonte real por SKU/variante.
+
+## Produtos/variantes que precisam decisão
+- Chinelo Slide Nike Mind 001 Light Smoke Grey Cinza / `slide-nike-mind-001-light-smoke-grey-cinza`: 2/16 variantes sem barcode
+  - SKU `None` | variante `33.5` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `None` | variante `40.5` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+- Chinelo Slide Nike Mind 001 Black Chrome Preto / `slide-nike-mind-001-black-chrome-preto`: 1/14 variantes sem barcode
+  - SKU `None` | variante `40.5` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+- Tênis Nike Mind 002 Light Smoke Grey Cinza / `tenis-nike-mind-002-light-smoke-grey-cinza`: 15/15 variantes sem barcode
+  - SKU `HQ4308-003-3` | variante `34` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-003-4` | variante `35` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-003-5` | variante `36` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-003-6` | variante `37` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-003-7` | variante `38` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-003-2` | variante `39` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-003-8` | variante `40` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `None` | variante `40.5` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-003-1` | variante `41` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-003-9` | variante `42` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-003-10` | variante `43` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-003-11` | variante `44` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+- Tênis Nike Mind 002 Black Hyper Crimson Preto / `tenis-nike-mind-002-black-hyper-crimson-preto`: 14/14 variantes sem barcode
+  - SKU `HQ4308-001-5` | variante `34` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-001-6` | variante `35` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-001-7` | variante `36` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-001-8` | variante `37` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-001-9` | variante `38` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-001-4` | variante `39` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `None` | variante `40.5` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-001-10` | variante `40` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-001-2` | variante `41` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-001-11` | variante `42` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-001-3` | variante `43` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4308-001-12` | variante `44` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+- Tênis Nike Mind 002 Light Khaki Bege / `tenis-nike-mind-002-light-khaki-bege`: 13/13 variantes sem barcode
+  - SKU `NKE-9054174-34` | variante `34` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `NKE-9054174-35` | variante `35` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `NKE-9054174-36` | variante `36` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `NKE-9054174-37` | variante `37` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `NKE-9054174-38` | variante `38` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `NKE-9054174-39` | variante `39` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `NKE-9054174-40` | variante `40` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `NKE-9054174-41` | variante `41` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `NKE-9054174-42` | variante `42` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `NKE-9054174-43` | variante `43` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `NKE-9054174-44` | variante `44` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `NKE-9054174-45` | variante `45` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+- Tênis Nike Mind 002 Sail Bege / `tenis-nike-mind-002-sail-bege`: 13/13 variantes sem barcode
+  - SKU `HQ4310-100-34` | variante `34` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-100-35` | variante `35` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-100-36` | variante `36` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-100-37` | variante `37` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-100-38` | variante `38` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-100-39` | variante `39` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-100-40` | variante `40` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-100-41` | variante `41` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-100-42` | variante `42` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-100-43` | variante `43` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-100-44` | variante `44` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-100-45` | variante `45` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+- Tênis Nike Mind 002 Grey Football Grey Cinza / `tenis-nike-mind-002-grey-football-grey-cinza`: 9/9 variantes sem barcode
+  - SKU `HQ4310-002-34` | variante `34` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-002-35` | variante `35` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-002-36` | variante `36` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-002-37` | variante `37` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-002-38` | variante `38` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-002-39` | variante `39` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-002-40` | variante `40` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-002-41` | variante `41` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4310-002-42` | variante `42` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+- Chinelo Slide Nike Mind 001 Blackened Blue Azul / `slide-nike-mind-001-blackened-blue-azul`: 7/7 variantes sem barcode
+  - SKU `HQ4307-400-38` | variante `38` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-400-39` | variante `39` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-400-40` | variante `40` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-400-41` | variante `41` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-400-42` | variante `42` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-400-43` | variante `43` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-400-44` | variante `44` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+- Chinelo Slide Nike Mind 001 'Team Red' Vermelho / `slide-nike-mind-001-team-red-vermelho`: 9/9 variantes sem barcode
+  - SKU `HQ4307-601` | variante `38` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-602` | variante `39` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-603` | variante `40` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-604` | variante `41` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-605` | variante `42` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-606` | variante `43` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-607` | variante `44` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-608` | variante `45` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-609` | variante `46` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+- Chinelo Slide Nike Mind 001 Sail Bege / `slide-nike-mind-001-sail-bege`: 13/13 variantes sem barcode
+  - SKU `HQ4307-100-34` | variante `34` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-100-35` | variante `35` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-100-36` | variante `36` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-100-37` | variante `37` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-100-38` | variante `38` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-100-39` | variante `39` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-100-40` | variante `40` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-100-41` | variante `41` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-100-42` | variante `42` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-100-43` | variante `43` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-100-44` | variante `44` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-100-45` | variante `45` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+- Chinelo Slide Nike Mind 001 Mineral Slate Verde / `slide-nike-mind-001-mineral-slate-verde`: 7/7 variantes sem barcode
+  - SKU `HQ4307-300-38` | variante `38` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-300-39` | variante `39` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-300-40` | variante `40` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-300-41` | variante `41` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-300-42` | variante `42` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-300-43` | variante `43` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-300-44` | variante `44` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+- Chinelo Slide Nike Mind 001 Pearl Pink Rosa / `slide-nike-mind-001-pearl-pink-rosa`: 7/7 variantes sem barcode
+  - SKU `HQ4309-610-34` | variante `34` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4309-610-35` | variante `35` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4309-610-36` | variante `36` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4309-610-37` | variante `37` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4309-610-38` | variante `38` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4309-610-39` | variante `39` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4309-610-40` | variante `40` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+- Chinelo Slide Nike Mind 001 White Speed Red Branco / `slide-nike-mind-001-white-speed-red-branco`: 13/13 variantes sem barcode
+  - SKU `HQ4307-101-34` | variante `34` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-101-35` | variante `35` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-101-36` | variante `36` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-101-37` | variante `37` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-101-38` | variante `38` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-101-39` | variante `39` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-101-40` | variante `40` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-101-41` | variante `41` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-101-42` | variante `42` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-101-43` | variante `43` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-101-44` | variante `44` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+  - SKU `HQ4307-101-45` | variante `45` | ação proposta: validar GTIN real ou mapear MPN/identifier_exists
+
+## Approval packet
+- Impacto esperado: melhorar qualidade Merchant/Shopping e elegibilidade de Popular Products.
+- Risco: GTIN incorreto pode causar reprovação/misrepresentation; por isso não preencher sem fonte confiável.
+- Rollback: snapshot de variants/feed antes de qualquer write; restaurar barcode/metafield/feed row.
+- Precisa aprovação para write: sim — Shopify variant barcode, GMC/feed ou supplemental feed.

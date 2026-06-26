@@ -14,6 +14,8 @@ Skills são processos repetíveis com entrada, passos, saída e verificação. E
 | LK Shopify Read-only | `skills/lk-shopify-readonly/SKILL.md` | LK Ecommerce | Consultas seguras no Shopify LK sem writes, envios ou alterações de produção |
 | LK Shopify Product Upload | `skills/lk-shopify-product-upload/SKILL.md` | LK Ecommerce | Cadastro seguro de produtos Shopify com GOAT, pesquisa histórica, SEO, preview e aprovação |
 | LK SEO Weekly Improvement | `skills/lk-seo-weekly-improvement/SKILL.md` | LK SEO/CRO | Processo semanal de nota Claude SEO, metas e fila de melhoria de páginas/PDPs |
+| Lucas Hermes Continuous Improvement | `skills/lucas-hermes-continuous-improvement/SKILL.md` | Operações | Varredura contínua de melhorias Hermes/LK em modo seguro, read-only/local por padrão |
+| Hermes Browser CDP | `skills/hermes-browser-cdp/SKILL.md` | Operações/QA | Browser dedicado via CDP privado para QA visual, login/captcha humano e automação Playwright/MCP segura |
 
 ## Navegação por área
 
@@ -25,6 +27,11 @@ Skills são processos repetíveis com entrada, passos, saída e verificação. E
 | Shopify Read-only LK | `skills/lk-shopify-readonly/SKILL.md` | `skills/lk-shopify-readonly/SKILL.md` |
 | Shopify Product Upload LK | `skills/lk-shopify-product-upload/SKILL.md` | `skills/lk-shopify-product-upload/SKILL.md` |
 | SEO/CRO Weekly LK | `skills/lk-seo-weekly-improvement/SKILL.md` | `skills/lk-seo-weekly-improvement/SKILL.md` |
+| LK Collection Optimizer | `areas/lk/sub-areas/growth/skills/lk-superpowers-collection-optimizer/SKILL.md` | `areas/lk/sub-areas/growth/skills/lk-superpowers-collection-optimizer/SKILL.md` |
+
+## Auditoria de status/risco
+
+- `empresa/skills/status-risco-2026-05-22.md` — baseline formal de owner/status/risco/última revisão/última verificação das skills canônicas.
 
 ## Templates
 

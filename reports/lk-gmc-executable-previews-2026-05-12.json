@@ -1,0 +1,219 @@
+{
+  "generated_at": "2026-05-12T12:17:29.199259+00:00",
+  "scope": "LK GMC executable previews for all A/B/C/D packages",
+  "status": "gmc_executable_previews_ready_preview_only",
+  "source_labels": [
+    "fact_merchant_center",
+    "fact_shopify_local_snapshot",
+    "derived_reconciliation",
+    "manual_approval_required"
+  ],
+  "summary": {
+    "queue_total": 4671,
+    "priority_counts": {
+      "P0": 2383,
+      "P1": 2288
+    },
+    "channel_counts": {
+      "online": 3369,
+      "local": 1302
+    },
+    "package_counts": {
+      "A_online_stale_triage": 2415,
+      "B_online_identifier_fix": 954,
+      "D_local_stale_triage": 455,
+      "C_local_identifier_fix": 847
+    },
+    "private_rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-executable-previews-rollback-2026-05-12.json",
+    "private_rollback_records": 4671,
+    "merchant_writes": 0,
+    "shopify_writes": 0,
+    "feed_writes": 0,
+    "external_sends": 0
+  },
+  "execution_contract": {
+    "preview_only": true,
+    "approval_required_before_any_write": true,
+    "rollback_ready_for_preview": true,
+    "rollback_snapshot_private_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-executable-previews-rollback-2026-05-12.json",
+    "recommended_order": [
+      "A_online_stale_triage",
+      "B_online_identifier_fix",
+      "D_local_stale_triage",
+      "C_local_identifier_fix"
+    ]
+  },
+  "packages": [
+    {
+      "package": "A_online_stale_triage",
+      "count": 2415,
+      "priority_counts": {
+        "P0": 2383,
+        "P1": 32
+      },
+      "channel_counts": {
+        "online": 2415
+      },
+      "bucket_counts": {
+        "online_unmatched_possible_stale": 2415
+      },
+      "approval_gate": "Approval required to delete/suppress exact Merchant online product IDs or change source feed/app.",
+      "proposed_operations": {
+        "merchant_cleanup_candidate_exact_product_id_after_final_sample_validation": 2415
+      },
+      "sample_product_ids": [
+        "online:pt:BR:10002025469927148791",
+        "online:pt:BR:10131134412697596529",
+        "online:pt:BR:10310578515087778063",
+        "online:pt:BR:10312083433143971915",
+        "online:pt:BR:10339778285846091232",
+        "online:pt:BR:10494354248419479343",
+        "online:pt:BR:10588380249806721771",
+        "online:pt:BR:10591784840915585992",
+        "online:pt:BR:10621083909303937387",
+        "online:pt:BR:1066317393403197052",
+        "online:pt:BR:10670199908087968917",
+        "online:pt:BR:10695397335246538087",
+        "online:pt:BR:10784534773176376609",
+        "online:pt:BR:10904592510604289283",
+        "online:pt:BR:1095700719253484391",
+        "online:pt:BR:10964298058642879571",
+        "online:pt:BR:11064332150580902720",
+        "online:pt:BR:1113702393165161260",
+        "online:pt:BR:11155759485124230902",
+        "online:pt:BR:11252184373683873935"
+      ]
+    },
+    {
+      "package": "B_online_identifier_fix",
+      "count": 954,
+      "priority_counts": {
+        "P1": 954
+      },
+      "channel_counts": {
+        "online": 954
+      },
+      "bucket_counts": {
+        "online_identifier_mismatch": 954
+      },
+      "approval_gate": "Approval required for exact identifier mapping write in Merchant/feed/Shopify/app.",
+      "proposed_operations": {
+        "identifier_mapping_fix_candidate_before_delete": 954
+      },
+      "sample_product_ids": [
+        "online:pt:BR:11020158",
+        "online:pt:BR:1183A592200",
+        "online:pt:BR:1183B566 021-1",
+        "online:pt:BR:1183B566 021-2",
+        "online:pt:BR:1183B566 021-3",
+        "online:pt:BR:1183B566 021-4",
+        "online:pt:BR:1183B566 021-5",
+        "online:pt:BR:1183B566 021-6",
+        "online:pt:BR:1183B566 021-9",
+        "online:pt:BR:1183C102 751-1",
+        "online:pt:BR:1183C102 751-11",
+        "online:pt:BR:1183C102 751-2",
+        "online:pt:BR:1183C102 751-3",
+        "online:pt:BR:1183C10200",
+        "online:pt:BR:1183C102100",
+        "online:pt:BR:1183C123.200",
+        "online:pt:BR:1183C431020",
+        "online:pt:BR:1183C468.300",
+        "online:pt:BR:1FY4567-45",
+        "online:pt:BR:205759 610-2"
+      ]
+    },
+    {
+      "package": "D_local_stale_triage",
+      "count": 455,
+      "priority_counts": {
+        "P1": 455
+      },
+      "channel_counts": {
+        "local": 455
+      },
+      "bucket_counts": {
+        "local_unmatched_after_normalization": 455
+      },
+      "approval_gate": "Approval required to delete/suppress exact local Merchant product IDs after POS/Tiny validation.",
+      "proposed_operations": {
+        "local_cleanup_candidate_exact_product_id_after_pos_tiny_validation": 455
+      },
+      "sample_product_ids": [
+        "local:pt:BR:LIA_1201A256-113-34",
+        "local:pt:BR:LIA_1201A256-113-35",
+        "local:pt:BR:LIA_1201A256-113-36",
+        "local:pt:BR:LIA_1201A256-113-37",
+        "local:pt:BR:LIA_1201A256-113-38",
+        "local:pt:BR:LIA_1201A256-113-39",
+        "local:pt:BR:LIA_1201A256-113-40",
+        "local:pt:BR:LIA_1201A256-113-41",
+        "local:pt:BR:LIA_1201A256-113-42",
+        "local:pt:BR:LIA_1201A256-113-43",
+        "local:pt:BR:LIA_1201A256-113-44",
+        "local:pt:BR:LIA_1201A789-020-34",
+        "local:pt:BR:LIA_1201A789-020-35",
+        "local:pt:BR:LIA_1201A789-020-36",
+        "local:pt:BR:LIA_1201A789-020-37",
+        "local:pt:BR:LIA_1201A789-020-38",
+        "local:pt:BR:LIA_1201A789-020-39",
+        "local:pt:BR:LIA_1201A789-020-40",
+        "local:pt:BR:LIA_1201A789-020-41",
+        "local:pt:BR:LIA_1201A789-020-42"
+      ]
+    },
+    {
+      "package": "C_local_identifier_fix",
+      "count": 847,
+      "priority_counts": {
+        "P1": 847
+      },
+      "channel_counts": {
+        "local": 847
+      },
+      "bucket_counts": {
+        "local_identifier_mismatch": 847
+      },
+      "approval_gate": "Approval required for local inventory/POS/Merchant mapping write; do not disable local channel.",
+      "proposed_operations": {
+        "local_identifier_mapping_fix_candidate_preserve_listing": 847
+      },
+      "sample_product_ids": [
+        "local:pt:BR:LIA_11020158",
+        "local:pt:BR:LIA_1183A592200",
+        "local:pt:BR:LIA_1183B566 021-1",
+        "local:pt:BR:LIA_1183B566 021-2",
+        "local:pt:BR:LIA_1183B566 021-3",
+        "local:pt:BR:LIA_1183B566 021-4",
+        "local:pt:BR:LIA_1183B566 021-5",
+        "local:pt:BR:LIA_1183B566 021-6",
+        "local:pt:BR:LIA_1183B566 021-9",
+        "local:pt:BR:LIA_1183C102 751-1",
+        "local:pt:BR:LIA_1183C102 751-11",
+        "local:pt:BR:LIA_1183C102 751-2",
+        "local:pt:BR:LIA_1183C102 751-3",
+        "local:pt:BR:LIA_1183C10200",
+        "local:pt:BR:LIA_1183C102100",
+        "local:pt:BR:LIA_1183C123.200",
+        "local:pt:BR:LIA_1183C431020",
+        "local:pt:BR:LIA_1183C468.300",
+        "local:pt:BR:LIA_1FY4567-45",
+        "local:pt:BR:LIA_205759 610-2"
+      ]
+    }
+  ],
+  "not_performed": [
+    "delete",
+    "insert",
+    "update",
+    "custombatch",
+    "fetchNow",
+    "shopify_write",
+    "feed_write",
+    "database_write",
+    "campaign_or_external_send",
+    "local_inventory_disable",
+    "gmb_update",
+    "pos_inventory_write"
+  ]
+}

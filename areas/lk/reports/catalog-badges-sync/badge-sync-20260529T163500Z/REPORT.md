@@ -1,0 +1,38 @@
+# LK catalog badges sync
+
+Data: 2026-05-29T16:35:00.405756+00:00
+Modo: preview
+
+## Evidência
+- Menu: `main-menu`
+- Coleções alvo no menu: `48`
+- Produtos escaneados: `2318`
+- Produtos com mudança planejada: `4`
+- NEW 90d encontrados: `193`
+- GA4: `{"available": true, "rows_total": 2423, "property": "348553567"}`
+
+## Interpretação
+- Badge `NEW` passou a ser padronizado em janela de `90` dias via tag `new`.
+- Badge `BEST SELLER` passou a ser padronizado por coleção via tag `best-seller--<handle>`; tags genéricas antigas são removidas pelo sync para evitar badge fora de contexto.
+- Produtos esgotados/OOS são excluídos da candidatura de `BEST SELLER`, mesmo que venceriam por score.
+- O ranking usa híbrido 70% vendas Shopify + 30% GA4 page views, limitado às coleções do menu principal.
+
+## Preview
+- Tênis Nike Air Jordan 1 High Fragment Design x Union LA Varsity Red Branco (`tenis-nike-air-jordan-1-high-fragment-design-x-union-la-varsity-red-branco`): +[-] / -[new]
+- Tênis Nike Air Jordan 1 Retro Low OG SP Travis Scott Sail Tropical Pink Rosa (`tenis-nike-air-jordan-1-retro-low-og-sp-travis-scott-sail-tropical-pink-rosa`): +[new] / -[-]
+- Tênis Nike Air Jordan 1 Retro Low OG SP Travis Scott Shy Pink Bege (`tenis-nike-air-jordan-1-retro-low-og-sp-travis-scott-shy-pink-bege`): +[new] / -[-]
+- Tênis Nike Mind 002 Light Violet Ore Roxo (`tenis-nike-mind-002-light-violet-ore-roxo`): +[-] / -[new]
+
+## Risco
+- Write externo em Shopify: tags de produtos e lógica de badge do tema.
+- Requer readback após aplicação para confirmar tags no Admin/API.
+
+## Bloqueio
+- Nenhum bloqueio técnico identificado no preview.
+
+## Rollback
+- Snapshot: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/reports/catalog-badges-sync/badge-sync-20260529T163500Z/rollback-snapshot.json`
+- Restaurar `current_tags` por product id usando o mesmo script em modo rollback, ou aplicar manualmente o snapshot.
+
+## Próxima decisão
+- Se o preview estiver ok, executar `--apply` e validar readback dos produtos alterados.

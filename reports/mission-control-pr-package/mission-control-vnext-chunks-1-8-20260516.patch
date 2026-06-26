@@ -1,0 +1,3479 @@
+diff --git a/docs/rebuild/mission-control-initial-audit-tenacitos-2026-05-16.md b/docs/rebuild/mission-control-initial-audit-tenacitos-2026-05-16.md
+new file mode 100644
+index 0000000..4dbdca2
+--- /dev/null
++++ b/docs/rebuild/mission-control-initial-audit-tenacitos-2026-05-16.md
+@@ -0,0 +1,126 @@
++# Mission Control Initial Audit — TenacitOS / Impeccable / Bruno
++
++Data: 2026-05-16
++Alvo: `https://mission.lucascimino.com/`
++Repo local: `/opt/data/hermes_bruno_ingest/mission-control-cimino-hermes`
++
++## Veredito
++
++O Mission Control certo é `mission.lucascimino.com`. Ele está tecnicamente saudável e já contém muito da visão TenacitOS, mas ainda não está correto como sistema diário para Lucas. A falha principal é de estrutura de produto: a home é longa, densa e ainda parece inventário de módulos/ledgers, quando deveria ser uma Mesa COO focada em decisões.
++
++## Evidência coletada
++
++- Produção aberta no browser: OK.
++- Título da página: `Mission Control v5 | Grupo Cimino`.
++- H1: `Mesa COO`.
++- Sidebar: 22 links.
++- Home: 26 regiões/seções.
++- Botões visíveis: Aprovar escopo, Preview only, Ajustar, Bloquear, Kanban packet, Execution bridge.
++- `npm run lint`: OK.
++- `npm run build`: OK.
++- Build gerou 25 páginas e 5 APIs `/api/mission/*`.
++- `npx impeccable detect --fast --json src DESIGN.md PRODUCT.md docs/rebuild`: `[]`.
++- TenacitOS auditado read-only via clone temporário: commit `b021506`, 192 arquivos.
++
++## Pontuação Impeccable audit
++
++- Accessibility: 3/4. Sem erro óbvio no snapshot, mas precisa auditoria de teclado/auth/form states.
++- Performance: 3/4. Build OK, sem sinal visual de animação pesada; precisa bundles reais após módulos funcionais.
++- Theming: 4/4. PRODUCT/DESIGN existem e paleta está alinhada.
++- Responsive: 3/4. Estrutura parece responsiva, mas 26 seções tornam mobile cansativo.
++- Anti-patterns: 2/4. Detector limpo, mas há cardificação/repetição e taxonomia de IA demais.
++
++Total: 15/20, tecnicamente bom, estrategicamente incompleto.
++
++## P0
++
++### P0.1 — Home longa demais
++
++A home contém Decision Inbox, Health Center, 12 melhorias, Command System, Waiting Lucas, Action Packets, Event Ledger, Approval Ledger, Risk Ledger, Learning Journal, Rituais, Watchers, Kanban Policy, Rollback Registry, LK Intelligence, Operating Loops Next, Central Inbox, Event Lifecycle, Daily COO Brief, Noise Budget, Worker Profiles, Execution Bridge, Shopify Skill e Drill Down.
++
++Impacto: Lucas precisa ler o sistema em vez de decidir.
++
++Correção: home reduzida a Modo atual, Lucas Queue, Kanban compacto, risco por domínio e executando seguro.
++
++### P0.2 — Decisão duplicada
++
++Decision Inbox, Waiting Lucas, Central Inbox e Action Packets competem.
++
++Impacto: não fica claro onde Lucas aprova ou bloqueia.
++
++Correção: criar uma única `Lucas Queue`, com filtros e estados.
++
++### P0.3 — Kanban não é vivo o suficiente
++
++Kanban aparece como policy/registry, não como fluxo principal.
++
++Impacto: não atende plenamente Bruno/TenacitOS.
++
++Correção: Kanban derivado de packets/cards reais com owner, SLA, blockers, source e next safe action.
++
++## P1
++
++### P1.1 — Módulos TenacitOS visíveis, mas rasos
++
++Office 3D, Memory Browser, File Browser, Terminal, Cron e Cost Tracking ainda parecem preview/shell em partes.
++
++Correção: Module Registry deve marcar cada módulo como real, preview, planned ou locked, com fonte e próximo passo.
++
++### P1.2 — Auth ainda não é produto
++
++`/login` existe como preview travado.
++
++Correção: auth real com cookie httpOnly, rate-limit, public-safe mode e audit.
++
++### P1.3 — Técnica demais na camada Lucas
++
++A home expõe muito hash, packet ID, worker, JSON mirror e backend detail.
++
++Correção: home em linguagem executiva; técnica em drill-down.
++
++## P2
++
++- Reduzir mistura PT/EN quando o termo não for canônico.
++- Diminuir número de cards com peso visual igual.
++- Criar empty/error/loading states reais nas páginas funcionais.
++- Tornar Office 3D operacional ou rebaixá-lo.
++- Separar cron real, rotina Brain e watcher.
++
++## TenacitOS gap map
++
++- Auth: parcial/preview.
++- System Monitor: parcial/read-only.
++- Agent Dashboard: parcial.
++- Activity/Sessions: parcial.
++- Cost Tracking: planejado/parcial.
++- Cron Manager: parcial/read-only.
++- Memory Browser: parcial/static.
++- File Browser: parcial/static/locked.
++- Global Search: rota existe, profundidade a validar.
++- Notifications/Approval Inbox: parcial, precisa unificar.
++- Office 3D: preview/decorativo.
++- Terminal: locked, precisa safe command palette se aprovado.
++- Skills/Workflows: parcial.
++- Reports/Logs: parcial.
++- Quick Actions: parcial, precisa lifecycle.
++- Settings: parcial.
++
++## Recomendação
++
++Não fazer mais uma rodada de CSS. Fazer PRD/rebuild estrutural com Chunk 0 + Chunk 1:
++
++1. branch seguro;
++2. contratos de dados;
++3. Lucas Queue unificada;
++4. home de Mesa COO curta;
++5. Kanban compacto;
++6. Module Registry completo;
++7. preview Vercel;
++8. screenshots desktop/mobile para Lucas.
++
++## Não executado
++
++- Nenhum write externo.
++- Nenhum deploy.
++- Nenhum push/PR.
++- Nenhuma mudança em Docker/VPS/Shopify/Tiny/Merchant/Klaviyo/WhatsApp/DB/campanhas.
+diff --git a/docs/rebuild/mission-control-ui-ux-council-audit-2026-05-14.md b/docs/rebuild/mission-control-ui-ux-council-audit-2026-05-14.md
+new file mode 100644
+index 0000000..fdffe5b
+--- /dev/null
++++ b/docs/rebuild/mission-control-ui-ux-council-audit-2026-05-14.md
+@@ -0,0 +1,200 @@
++# Mission Control UI/UX Council Audit — 2026-05-14
++
++## Escopo
++
++- Alvo local: http://127.0.0.1:3000
++- Produto: Hermes Mission Control / LK OS privado
++- Registro Impeccable: product
++- Direção declarada: Maison Ledger, COO cockpit, read-only, multiempresa, A0-A4
++- Pedido de Lucas: novo audit, UI/UX, Council, não tratar Impeccable como CSS
++
++## Contexto carregado
++
++- PRODUCT.md: presente e específico
++- DESIGN.md: presente e específico
++- Impeccable references: product, critique, layout, Lucas Mission Control correction, LK Maison Ledger
++- Council skill: carregada e aplicada como War Room
++
++## Evidência técnica
++
++- Rotas inspecionadas: /, /agents, /office, /actions, /system, /logs, /terminal, /git, /workflows, /activity, /memory, /files, /cron, /sessions, /search, /analytics, /reports, /skills, /costs, /settings, /about
++- Viewports programáticos: 390px e 1280px
++- Overflow horizontal: 0 nas rotas medidas
++- Console browser: 0 erros JS após auditoria
++- Detector Impeccable: `npx impeccable detect --fast --json src` retornou `[]`
++- Screenshot principal: /opt/data/cache/screenshots/browser_screenshot_d09403d5b58447ce99dc7e05ab8c98b8.png
++
++## Veredito executivo
++
++Lucas está correto: o problema principal não é CSS. A UI está tecnicamente limpa, mas o produto ainda não faz sentido como cockpit COO. A interface atual usa uma estética Maison Ledger e respeita gates, mas organiza a experiência como catálogo de módulos + cards, não como mesa de decisão operacional.
++
++Detector limpo não significa design aprovado. A tela pode passar lint, build, detector e responsividade, mas ainda falhar na pergunta central: `o que Lucas precisa decidir agora?`
++
++## Design health score
++
++- Visibilidade do status: 2/4 — há gates e status, mas não há estado operacional global forte.
++- Match com mundo real: 2/4 — fala de agentes e gates, mas não estrutura por empresa/decisão.
++- Controle e liberdade: 2/4 — read-only é claro, mas ação segura vs bloqueada não é operacionalizada.
++- Consistência: 3/4 — visual consistente, porém homogêneo demais.
++- Prevenção de erro: 3/4 — A4 e read-only estão presentes.
++- Reconhecimento vs memória: 2/4 — sidebar com 21 módulos exige entendimento técnico.
++- Eficiência: 1/4 — não há Decision Inbox nem next best action claro.
++- Estética e minimalismo: 2/4 — bonito, mas cardificado e pouco funcional.
++- Recuperação de erro: 1/4 — poucos estados de falha/rollback/receita de recuperação na UI.
++- Ajuda/documentação: 2/4 — copy explica, mas não orienta a decisão.
++
++Total: 20/40. Funcionalmente coerente, mas ainda imaturo como produto COO.
++
++## Prioridade P0
++
++### P0.1 — Home não responde a pergunta de COO
++
++Pergunta que a tela deveria responder em 10 segundos:
++
++- O que está em risco?
++- O que depende do Lucas?
++- Qual empresa precisa de atenção?
++- Qual ação é segura agora?
++- Qual ação está bloqueada por A4?
++- De onde veio a evidência?
++
++A home atual responde melhor: quais módulos existem.
++
++Correção: reconstruir a home como `Mesa COO`, não `Dashboard`.
++
++### P0.2 — IA/topologia ausente como camada de raciocínio
++
++A interface lista agentes, mas não mostra o raciocínio Hermes:
++
++- o que sei;
++- o que não sei;
++- fonte;
++- confiança;
++- recomendação;
++- gate;
++- próximo passo seguro;
++- payload de aprovação quando existir.
++
++Correção: criar `Decision Inbox` e `Approval Packets` como centro do produto.
++
++## Prioridade P1
++
++### P1.1 — Multiempresa está nos dados, mas não domina a IA
++
++Domínios existem: LK, Zipper, SPITI, Hermes, Infra. Mas aparecem como lista secundária. Para Lucas, a unidade mental é empresa/risco/decisão, não Terminal/Cron/Git.
++
++Correção: navegação e home por operação:
++
++- Comando;
++- Empresas;
++- Decisões;
++- Rotinas;
++- Memória/Fonte;
++- Sistema.
++
++### P1.2 — Gates são badges, não gramática operacional
++
++A0-A4 aparecem como pílulas. Falta mostrar:
++
++- pode preparar;
++- pode executar;
++- exige aprovação atual;
++- exige rollback;
++- fonte faltante;
++- payload inline para Telegram.
++
++Correção: cada item de decisão deve trazer gate + ação permitida + ação bloqueada.
++
++### P1.3 — Office 3D é decorativo no estado atual
++
++Office 3D não deve ser protagonista se não mostra desks/agentes/status/fonte/risco. Hoje parece promessa visual.
++
++Correção: rebaixar para experimental ou fazer virar mapa operacional real por empresa/agente.
++
++## Prioridade P2
++
++- Sidebar com 21 entradas mistura módulos prontos, placeholders, infra e ações perigosas no mesmo nível.
++- Kanban parece estático e decorativo, com contagens artificiais e sem owner/prazo/impacto.
++- `Mapa TenacitOS` duplica a navegação e ocupa espaço nobre.
++- `Bloqueios reais` é importante, mas visualmente fica como painel lateral, não como centro de decisão.
++- Muitas rotas genéricas têm layout repetido e pouco conteúdo real.
++
++## War Room / Council
++
++### COO
++
++Reconstruir. O cockpit deve priorizar decisões, riscos, empresa e próximo passo, não catálogo de módulos.
++
++### Cliente/Marca
++
++Lucas dizer `feio e sem sentido` é sinal de posicionamento errado, não de cor errada. A experiência precisa parecer um COO digital privado, não admin panel de features.
++
++### Red Team
++
++Risco de manter: cristalizar um produto correto porém sem uso diário. Ataques prováveis: `para que eu uso?`, `cadê o que eu decido?`, `isso é dashboard ou menu?`.
++
++### Dados/Evidência
++
++Os blocos certos já existem no código: lanes, modules, approvals, domains, gates. O problema é composição e hierarquia, não ausência total de dados.
++
++### Decisão recomendada
++
++Reconstruir a superfície principal como mesa operacional COO, reaproveitando dados/componentes. Não mexer em produção, Docker, secrets, integrações ou ações reais.
++
++## Nova topologia recomendada
++
++### Home: Mesa COO
++
++1. Estado da operação agora
++   - modo read-only;
++   - último update;
++   - principal risco;
++   - fonte do estado;
++   - gate global.
++
++2. Decision Inbox
++   - decisão;
++   - empresa;
++   - impacto;
++   - fonte;
++   - confiança;
++   - gate;
++   - próximo passo seguro;
++   - payload de aprovação, quando aplicável.
++
++3. Empresas / domínios
++   - LK Sneakers;
++   - Zipper Galeria;
++   - SPITI Auction;
++   - Hermes Geral;
++   - Infra / Runtime.
++
++4. Risk & Approval Ledger
++   - A4 locks;
++   - rollback existente;
++   - fonte faltante;
++   - ação bloqueada;
++   - ação permitida.
++
++5. Activity / Learning Journal
++   - últimas decisões;
++   - correções de Lucas;
++   - o que Hermes aprendeu;
++   - link para fonte.
++
++6. Módulos técnicos como drill-down
++   - Memory;
++   - Files;
++   - Cron;
++   - Terminal;
++   - Git;
++   - Reports;
++   - Search;
++   - Costs;
++   - Settings.
++
++## Conclusão
++
++Não declarar a UI como boa ainda. A execução está tecnicamente estável, mas estrategicamente errada no centro da experiência. Próximo passo correto: redesenhar a home e a navegação principal em torno de decisões multiempresa, evidência, risco e próximos gestos seguros.
++
++Nível de risco para próximo passo: A1/A2 se for apenas branch local/preview, read-only e reversível. A3/A4 se publicar em produção oficial, alterar fonte de verdade, secrets, Docker, bancos, Shopify, Meta/Google, cliente ou dinheiro.
+diff --git a/docs/rebuild/mission-control-vnext-chunk-1-report-2026-05-16.md b/docs/rebuild/mission-control-vnext-chunk-1-report-2026-05-16.md
+new file mode 100644
+index 0000000..38cd763
+--- /dev/null
++++ b/docs/rebuild/mission-control-vnext-chunk-1-report-2026-05-16.md
+@@ -0,0 +1,53 @@
++# Mission Control vNext — Chunk 1 Report
++
++Data: 2026-05-16
++Branch: `rebuild/mission-control-zero-tenacitos-20260516`
++Rollback tag: `rollback/mission-control-pre-zero-tenacitos-20260516-145015`
++
++## Escopo executado
++
++- Criada base vNext local para a Home como **Mesa COO**.
++- Substituída a home longa/fragmentada por uma estrutura curta:
++  - Hero executivo compacto.
++  - **Lucas Queue** como foco principal.
++  - Kanban vivo em fluxo único.
++  - Registry de módulos TenacitOS com maturidade honesta.
++  - Ritual diário e guardrails A0-A4.
++  - Drill-down técnico abaixo da mesa decisória.
++- Criado contrato de dados local em `src/data/vnext-operating-system.ts`.
++- Mantidos módulos sensíveis como preview/locked quando não há fonte real ou aprovação A3/A4.
++
++## Arquivos alterados
++
++- `src/data/vnext-operating-system.ts`
++- `src/components/modules/MissionPages.tsx`
++- `src/app/globals.css`
++- `docs/rebuild/mission-control-initial-audit-tenacitos-2026-05-16.md`
++- `docs/rebuild/mission-control-ui-ux-council-audit-2026-05-14.md`
++- `docs/rebuild/mission-control-vnext-zero-prd-tenacitos-2026-05-16.md`
++- `docs/rebuild/mission-control-vnext-chunk-1-report-2026-05-16.md`
++
++## QA executado
++
++- `npm run lint` — passou sem erros.
++- `npm run build` — passou; 25 rotas estáticas + 5 APIs.
++- `npx impeccable detect` — executado sem infrações reportadas.
++- Secret scan local nos arquivos tocados — `SECRET_SCAN_OK`.
++- `git diff --check` — passou.
++- Browser local em `http://127.0.0.1:3067/`:
++  - título carregou: `Mission Control v5 | Grupo Cimino`;
++  - sem erros de console;
++  - sem overflow horizontal detectado (`scrollWidth == clientWidth`);
++  - Lucas Queue aparece no topo como foco operacional.
++
++## Ações externas não executadas
++
++- Sem deploy em produção.
++- Sem push para GitHub.
++- Sem Vercel/Docker/VPS/restart.
++- Sem banco, Shopify, Merchant, Meta/Google, campanha, WhatsApp, email ou contato externo.
++- Sem leitura/exposição de segredos.
++
++## Próximo chunk recomendado
++
++Chunk 2: conectar a Lucas Queue a fonte local/gerada real (`ops-state.generated`, packets e kanban API) com snapshots, mantendo writes externos bloqueados por A3/A4.
+diff --git a/docs/rebuild/mission-control-vnext-chunk-2-report-2026-05-16.md b/docs/rebuild/mission-control-vnext-chunk-2-report-2026-05-16.md
+new file mode 100644
+index 0000000..345686e
+--- /dev/null
++++ b/docs/rebuild/mission-control-vnext-chunk-2-report-2026-05-16.md
+@@ -0,0 +1,61 @@
++# Mission Control vNext — Chunk 2 Report
++
++Data: 2026-05-16
++Branch: `rebuild/mission-control-zero-tenacitos-20260516`
++Base anterior: `d8c074f1e30d2138c847d7b9b63a95b546022b61`
++
++## Escopo executado
++
++- Conectei a Home vNext a fontes locais reais/sanitizadas já existentes:
++  - `opsState.waitingLucas`
++  - `opsState.actionPackets`
++  - `opsState.kanbanPolicy`
++  - `opsState.healthCenter`
++  - APIs `/api/mission/*`
++- A Lucas Queue deixou de ser mock estático e agora é derivada de `ops-state.generated.ts`.
++- O Kanban vivo deixou de ser lista inventada e agora reflete a política real de lanes/dispatch restrito.
++- O Module Registry agora mostra maturidade baseada em fontes reais:
++  - Lucas Queue
++  - Action Packets
++  - Kanban restrito
++  - Health Center
++  - Command Palette
++  - Cost & Sessions como `missing-source`
++- Reintroduzi o painel de Action API na Home, mas somente como recibo/contrato local:
++  - não executa shell arbitrário;
++  - não envia externo;
++  - não toca Docker/VPS;
++  - não faz write Shopify/Tiny/Merchant/Meta/Google;
++  - não imprime segredo.
++- O seletor de pacotes do painel agora é derivado de `opsState.actionPackets`, não hardcoded.
++
++## QA executado
++
++- `npm run lint` — passou sem erros.
++- `npm run build` — passou; 25 rotas estáticas + 5 APIs.
++- `npx impeccable detect` — executado sem infrações reportadas.
++- Secret scan local nos arquivos tocados — `SECRET_SCAN_OK`.
++- `git diff --check` — passou.
++- Browser local em `http://127.0.0.1:3067/`:
++  - sem overflow horizontal;
++  - sem erros de console;
++  - Lucas Queue mostrou 4 itens vindos de `opsState.waitingLucas`;
++  - Action API apareceu na Home;
++  - seletor mostrou pacotes vindos de `opsState.actionPackets`.
++- Smoke API local:
++  - POST `/api/mission/approvals` com `preview_only` para `lk-operating-intelligence-readonly` retornou `ok: true`;
++  - receipt gerado: `604f0269a7d1becd`;
++  - `scope.externalSend: false`.
++
++## Ações externas não executadas
++
++- Sem deploy em produção.
++- Sem push para GitHub.
++- Sem Vercel/Docker/VPS/restart.
++- Sem banco externo ou alteração de fonte de verdade.
++- Sem Shopify, Tiny, Merchant, Meta/Google, campanha, compra, email, WhatsApp ou contato externo.
++- Sem leitura/exposição de segredos.
++
++## Próximo chunk recomendado
++
++Chunk 3: melhorar fonte e frescor do `ops-state.generated.ts`, removendo registros duplicados/stale e criando um gerador de snapshot mais explícito para Mission Control vNext antes de qualquer deploy/cutover.
+diff --git a/docs/rebuild/mission-control-vnext-chunk-3-report-2026-05-16.md b/docs/rebuild/mission-control-vnext-chunk-3-report-2026-05-16.md
+new file mode 100644
+index 0000000..0634451
+--- /dev/null
++++ b/docs/rebuild/mission-control-vnext-chunk-3-report-2026-05-16.md
+@@ -0,0 +1,71 @@
++# Mission Control vNext — Chunk 3 Report — 2026-05-16
++
++## Scope
++
++Fortalecer o gerador local `ops-state` para que a Home vNext e as APIs `/api/mission/*` recebam um snapshot mais confiável, sem writes externos e sem mudanças de infra/runtime.
++
++## Implementado
++
++- Corrigido `packetId` duplicado: `mission-control-vnext-operating-loops` não representa mais dois pacotes diferentes.
++- Adicionado pacote explícito `mission-control-reliability-layer`, alinhando o primeiro item da Lucas Queue com um Action Packet real.
++- Adicionado pacote explícito `zipper-followup-draft-only`, evitando fallback genérico para Zipper.
++- Adicionado `dedupe_by_key()` no gerador para normalizar IDs e remover duplicatas futuras de forma determinística.
++- Adicionado `feedQuality` ao snapshot gerado:
++  - contagem de packets;
++  - contagem de Waiting Lucas;
++  - cobertura `waitingLucas -> actionPackets`;
++  - duplicatas removidas;
++  - packets expirados;
++  - evidências stale.
++- Adicionado `validate_state()` para bloquear geração inválida quando:
++  - houver `packetId` duplicado;
++  - Waiting Lucas apontar para Action Packet inexistente;
++  - chaves top-level críticas faltarem.
++- Adicionado sinal `Feed Quality` ao `healthCenter`.
++- Adicionado módulo `Feed Quality` no registry da Home vNext.
++- Regenerado `src/data/ops-state.generated.ts` e espelhos Brain locais.
++
++## Snapshot atual
++
++- Action Packets: 6
++- Waiting Lucas: 4
++- Cobertura: 4/4 decisões Waiting Lucas têm Action Packet correspondente
++- Duplicatas removidas: 0
++- Packets expirados: 0
++- Status `feedQuality`: green
++
++## Segurança / guardrails
++
++Nada executado em:
++
++- GitHub push/PR/merge
++- Vercel deploy/config
++- Docker/Hostinger/gateway
++- Shopify/Tiny/Merchant/Meta/Google
++- Banco externo
++- WhatsApp/email/cliente
++- Segredos
++
++O trabalho ficou restrito a código local, Brain mirrors sanitizados e validação local.
++
++## QA
++
++- `python3 scripts/mission_control_ops_state.py` ✅
++- Snapshot JSON readback ✅
++- `python3 -m py_compile scripts/mission_control_ops_state.py` ✅
++- `git diff --check` ✅
++- `npm run lint` ✅
++- `npm run build` ✅
++- `npx impeccable detect` ✅
++- Secret scan local ✅
++- API local `/api/mission/state` ✅
++- API local `/api/mission/packets` ✅
++- API local `/api/mission/approvals` smoke com `mission-control-reliability-layer` ✅
++- Browser local `/` ✅
++  - `Feed Quality` visível no registry
++  - sem overflow horizontal
++  - console sem erros
++
++## Próximo recomendado
++
++Chunk 4: ligar essa qualidade de feed ao watchdog/cron de Mission Control, para alertar silenciosamente quando houver regressão de cobertura, duplicata, expiração ou evidência stale — mantendo contrato silent OK e sem deploy/push automático.
+diff --git a/docs/rebuild/mission-control-vnext-chunk-4-report-2026-05-16.md b/docs/rebuild/mission-control-vnext-chunk-4-report-2026-05-16.md
+new file mode 100644
+index 0000000..a40d918
+--- /dev/null
++++ b/docs/rebuild/mission-control-vnext-chunk-4-report-2026-05-16.md
+@@ -0,0 +1,75 @@
++# Mission Control vNext — Chunk 4 Report — 2026-05-16
++
++## Scope
++
++Ligar `feedQuality` ao watchdog existente do Mission Control, mantendo contrato `no_agent`/silent OK: `rc=0` + stdout vazio quando saudável; stdout somente para alerta acionável.
++
++## Implementado
++
++- Atualizado `/opt/data/scripts/mission_control_ops_watchdog.py`.
++- Espelhado o watchdog atualizado em:
++  - `/opt/data/hermes_bruno_ingest/hermes-brain/scripts/mission_control_ops_watchdog.py`
++  - `scripts/mission_control_ops_watchdog.py`
++- O cron existente continua usando o mesmo script/ID:
++  - job `feec299b99e5`
++  - nome `Mission Control ops watchdog silent`
++  - agenda `*/15 * * * *`
++  - `no_agent=True`
++- Não criei cron novo, evitando sprawl.
++
++## Correções de ruído
++
++Antes, o watchdog comparava muitos marcadores de estado operacional diretamente contra `MissionPages.tsx`, o que podia gerar falso alerta depois da Home vNext mover a fonte de verdade para `opsState`/`vnext-operating-system.ts`.
++
++Agora:
++
++- a UI local só é verificada por marcadores estruturais reais:
++  - `CommandActionPanel`
++  - `moduleRegistry`
++  - `lucasQueue`
++  - `operatingKanban`
++- o estado operacional é validado no JSON `mission-control-ops-state-latest.json`, que é a fonte correta.
++
++## Validações novas de `feedQuality`
++
++O watchdog agora alerta se encontrar:
++
++- `feedQuality` ausente/inválido;
++- `feedQuality.status != green`;
++- Waiting Lucas apontando para Action Packet inexistente;
++- `packetId` duplicado;
++- packets expirados;
++- cobertura `waitingPacketCoverage` diferente do tamanho da fila;
++- evidência stale;
++- Health Center sem sinal `Feed Quality`.
++
++## QA
++
++- `python3 -m py_compile` nos 3 espelhos do watchdog ✅
++- Execução direta do watchdog: stdout `0 bytes` ✅
++- `npm run lint` ✅
++- `npm run build` ✅
++- `git diff --check` ✅
++- `npx impeccable detect` ✅
++- Secret scan local ✅
++- Readback `feedQuality` no Brain JSON ✅
++- Cron existente verificado via `cronjob list` ✅
++- Trigger manual do job existente solicitado via `cronjob run feec299b99e5` ✅
++
++## Segurança / guardrails
++
++Nada executado em:
++
++- Vercel deploy/config
++- Docker/Hostinger/gateway/restart
++- GitHub push/PR/merge
++- Shopify/Tiny/Merchant/Meta/Google
++- Banco externo
++- WhatsApp/email/cliente
++- Segredos
++
++O trabalho ficou restrito a script read-only/silent watchdog, espelhos locais/Brain e commit local.
++
++## Próximo recomendado
++
++Chunk 5: adicionar um pequeno teste/regression fixture para simular `feedQuality` quebrado e provar que o watchdog emite alerta acionável sem tocar produção. Depois disso, a parte de confiabilidade local do Mission Control fica bem mais fechada para um futuro deploy/PR separado.
+diff --git a/docs/rebuild/mission-control-vnext-chunk-5-report-2026-05-16.md b/docs/rebuild/mission-control-vnext-chunk-5-report-2026-05-16.md
+new file mode 100644
+index 0000000..8685465
+--- /dev/null
++++ b/docs/rebuild/mission-control-vnext-chunk-5-report-2026-05-16.md
+@@ -0,0 +1,62 @@
++# Mission Control vNext — Chunk 5 report — 2026-05-16
++
++## Escopo
++
++Adicionar regression fixture/teste para provar que o watchdog de Mission Control alerta quando `feedQuality` quebra, mantendo o contrato `silent OK` quando o feed está verde.
++
++## Ações executadas
++
++- Criei `tests/test_mission_control_ops_watchdog.py` usando `unittest` e fixtures temporárias locais.
++- Refatorei `scripts/mission_control_ops_watchdog.py` com `validate_ops_state_file(path, alerts)` para permitir testar snapshots isolados sem tocar o JSON real do Brain.
++- Mantive `validate_ops_state(alerts)` delegando para o caminho produtivo `OPS_JSON`, preservando o comportamento do cron existente.
++- Espelhei o watchdog atualizado em:
++  - `/opt/data/scripts/mission_control_ops_watchdog.py`
++  - `/opt/data/hermes_bruno_ingest/hermes-brain/scripts/mission_control_ops_watchdog.py`
++
++## Cobertura adicionada
++
++- Feed verde: não gera alertas.
++- `feedQuality.status = yellow`: gera alerta explícito.
++- `feedQuality.missingWaitingPackets`: gera alerta explícito.
++- Health Center sem sistema `Feed Quality`: gera alerta explícito.
++
++## TDD / RED-GREEN
++
++RED observado:
++
++```text
++AttributeError: module 'mission_control_ops_watchdog' has no attribute 'validate_ops_state_file'
++```
++
++GREEN observado:
++
++```text
++Ran 3 tests ... OK
++```
++
++## QA executado
++
++- `python3 -m py_compile scripts/mission_control_ops_watchdog.py /opt/data/scripts/mission_control_ops_watchdog.py /opt/data/hermes_bruno_ingest/hermes-brain/scripts/mission_control_ops_watchdog.py` ✅
++- `python3 -m unittest tests.test_mission_control_ops_watchdog -v` ✅
++- `/opt/data/scripts/mission_control_ops_watchdog.py` com stdout vazio ✅
++- `git diff --check` ✅
++- `npm run lint` ✅
++- `npm run build` ✅
++- Secret scan em diff local ✅
++- `npx impeccable detect` ✅
++- Independent code review via subagent ✅
++
++## Limites preservados
++
++Não houve:
++
++- push GitHub;
++- deploy Vercel;
++- Docker/VPS/gateway/restart;
++- writes Shopify/Tiny/Merchant/Meta/Google;
++- envio externo;
++- exposição de secrets.
++
++## Resultado
++
++O watchdog agora tem uma regression suite local que captura quebra de `feedQuality` antes de alterar o cron produtivo. O cron existente continua `silent OK` em estado saudável.
+diff --git a/docs/rebuild/mission-control-vnext-chunk-6-report-2026-05-16.md b/docs/rebuild/mission-control-vnext-chunk-6-report-2026-05-16.md
+new file mode 100644
+index 0000000..3eb892d
+--- /dev/null
++++ b/docs/rebuild/mission-control-vnext-chunk-6-report-2026-05-16.md
+@@ -0,0 +1,79 @@
++# Mission Control vNext — Chunk 6 report — 2026-05-16
++
++## Escopo
++
++Transformar os checks locais de Mission Control em um gate único antes de PR/deploy: `npm run qa:local`.
++
++## Implementado
++
++- Adicionei `scripts/mission_control_qa_gate.py`.
++- Adicionei script npm em `package.json`:
++
++```bash
++npm run qa:local
++```
++
++- Adicionei `tests/test_mission_control_qa_gate.py` para travar o contrato do comando e o plano de checks.
++
++## Checks executados pelo gate
++
++- `python unittest watchdog fixtures`
++- `python py_compile watchdog scripts`
++- `mission watchdog silent OK`
++- `git diff whitespace check`
++- `git staged diff whitespace check`
++- `npm lint`
++- `npm build`
++- `diff secret scan`
++
++## TDD / RED-GREEN
++
++RED observado:
++
++```text
++KeyError: 'qa:local'
++can't open file 'scripts/mission_control_qa_gate.py': [Errno 2] No such file or directory
++```
++
++GREEN observado:
++
++```text
++PASS python unittest watchdog fixtures
++PASS python py_compile watchdog scripts
++PASS mission watchdog silent OK
++PASS git diff whitespace check
++PASS git staged diff whitespace check
++PASS npm lint
++PASS npm build
++PASS diff secret scan
++Mission Control QA gate passed
++```
++
++## Guardrails
++
++O gate é local/read-only e não contém chamadas para:
++
++- GitHub push/PR/merge;
++- Vercel deploy/env;
++- Docker/VPS/gateway/restart;
++- Shopify/Tiny/Merchant/Meta/Google writes;
++- envio externo;
++- secrets reais.
++
++## QA executado
++
++- `python3 -m unittest tests.test_mission_control_qa_gate -v` ✅
++- `npm run qa:local` ✅
++- `git diff --check` e `git diff --cached --check` via gate ✅
++- `npm run lint` via gate ✅
++- `npm run build` via gate ✅
++- Secret scan do diff via gate ✅
++- Review independente por subagent ✅
++
++## Resultado
++
++Mission Control agora tem um comando único local para validar watchdog fixtures, build, lint, silent OK e secrets antes de qualquer pacote de PR/deploy.
++
++## Limites preservados
++
++Não houve push, deploy, Docker/VPS/gateway restart, writes externos ou exposição de secrets.
+diff --git a/docs/rebuild/mission-control-vnext-chunk-7-report-2026-05-16.md b/docs/rebuild/mission-control-vnext-chunk-7-report-2026-05-16.md
+new file mode 100644
+index 0000000..2a7dc22
+--- /dev/null
++++ b/docs/rebuild/mission-control-vnext-chunk-7-report-2026-05-16.md
+@@ -0,0 +1,88 @@
++# Mission Control vNext — Chunk 7 report — 2026-05-16
++
++## Escopo
++
++Gerar pacote PR local consolidado dos commits recentes de Mission Control vNext chunks 1–6, com patch forward, rollback patch, resumo e QA — sem push/deploy.
++
++## Base e range
++
++- Branch local: `rebuild/mission-control-zero-tenacitos-20260516`
++- Base: `fabae1a` / `rollback/mission-control-pre-zero-tenacitos-20260516-145015`
++- Head: `836b602 chore: add mission control local qa gate`
++
++Commits incluídos:
++
++```text
++d8c074f feat: rebuild mission control COO desk vnext
++800ca98 feat: connect mission control queue to ops state
++4894986 fix: harden mission control ops state feed
++5bb28b9 chore: wire feed quality into mission watchdog
++0c71307 test: cover mission feed quality watchdog
++836b602 chore: add mission control local qa gate
++```
++
++## Artefatos gerados
++
++- Forward patch: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/mission-control-pr-package/mission-control-vnext-chunks-1-6-20260516.patch`
++- Rollback patch: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/mission-control-pr-package/mission-control-vnext-chunks-1-6-20260516-rollback.patch`
++- Summary: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/mission-control-pr-package/mission-control-vnext-chunks-1-6-20260516-summary.md`
++
++## Tamanho / escopo técnico
++
++- Patch forward: 136362 bytes
++- Rollback patch: 136422 bytes
++- Diff stat: 20 arquivos, 2559 inserções, 263 deleções
++
++Principais áreas:
++
++- `MissionPages.tsx`
++- `CommandActionPanel.tsx`
++- `vnext-operating-system.ts`
++- `ops-state.generated.ts`
++- `mission_control_ops_state.py`
++- `mission_control_ops_watchdog.py`
++- `mission_control_qa_gate.py`
++- testes watchdog/QA gate
++- relatórios `docs/rebuild/`
++
++## QA executado
++
++- `npm run qa:local` ✅
++- Secret scan nos artefatos do pacote ✅
++- `git apply --check` do patch forward em worktree temporário no base `fabae1a` ✅
++- `git apply --check` do rollback patch em worktree temporário no `HEAD` ✅
++- Worktrees temporários removidos ✅
++- Git status limpo após QA ✅
++
++## Rollback
++
++Rollback local preparado em:
++
++```text
++/opt/data/hermes_bruno_ingest/hermes-brain/reports/mission-control-pr-package/mission-control-vnext-chunks-1-6-20260516-rollback.patch
++```
++
++Se o pacote for futuramente aplicado/pushado/deployado e precisar voltar:
++
++```bash
++git apply /opt/data/hermes_bruno_ingest/hermes-brain/reports/mission-control-pr-package/mission-control-vnext-chunks-1-6-20260516-rollback.patch
++npm run qa:local
++```
++
++Se houver deploy Vercel posterior, promover o deployment anterior conhecido bom ou redeployar o commit de rollback.
++
++## Limites preservados
++
++Não houve:
++
++- GitHub push;
++- PR remoto;
++- Vercel deploy/env;
++- Docker/VPS/gateway/restart;
++- writes Shopify/Tiny/Merchant/Meta/Google;
++- envio externo;
++- exposição de secrets.
++
++## Resultado
++
++Pacote PR local consolidado está pronto para uma próxima decisão A3 separada: push/criar PR remoto ou manter como pacote local.
+diff --git a/docs/rebuild/mission-control-vnext-chunk-8-report-2026-05-16.md b/docs/rebuild/mission-control-vnext-chunk-8-report-2026-05-16.md
+new file mode 100644
+index 0000000..d7e231a
+--- /dev/null
++++ b/docs/rebuild/mission-control-vnext-chunk-8-report-2026-05-16.md
+@@ -0,0 +1,83 @@
++# Mission Control vNext — Chunk 8 — Decision Inbox polish
++
++Date: 2026-05-16 16:10 UTC
++
++## Context
++
++Continuation after local PR packaging. No GitHub push, remote PR, Vercel deploy, Docker/VPS/gateway action, external write, customer/client send, or secret exposure was executed.
++
++## Goal
++
++Make the COO home read more explicitly as Lucas's daily Decision Inbox while preserving the Maison Ledger product surface: off-white/taupe/caramel, read-only first, source-aware, approval-gated.
++
++## Changes
++
++- Renamed the top briefing context from generic vNext rebuild language to `Mesa COO · Decision Inbox`.
++- Reframed the hero headline to `A fila de decisão abre o dia.`
++- Changed the executive summary from a generic Lucas Queue count to explicit decision and blocking counts.
++- Made the primary queue section label explicit: `Decision Inbox · Lucas Queue`.
++- Changed the primary queue heading to `Decidir agora, aprovar com escopo ou bloquear`.
++- Added a compact section summary explaining that each packet has source, safe gesture, block and A1-A4 gate.
++- Increased selected summary/card text sizes slightly for readability.
++- Added mobile alignment for the new queue summary copy.
++- Added singular/plural-safe labels for decision, packet and external-blocking counts.
++
++## Verification
++
++```text
++npm run qa:local
++PASS python unittest watchdog fixtures
++PASS python py_compile watchdog scripts
++PASS mission watchdog silent OK
++PASS git diff whitespace check
++PASS git staged diff whitespace check
++PASS npm lint
++PASS npm build
++PASS diff secret scan
++Mission Control QA gate passed
++```
++
++```text
++npx impeccable detect --fast --json src
++[]
++```
++
++```text
++git diff --check
++PASS
++```
++
++## Independent review
++
++Independent pre-commit review passed. No security concerns or blocking logic issues were found. Reviewer only suggested pluralization polish, which was implemented before final QA.
++
++## Browser/visual review
++
++Local production server was started on port 3010 from the built Next app. Browser snapshot and visual review confirmed:
++
++- The queue now reads explicitly as `Decision Inbox · Lucas Queue`.
++- The first actionable area remains visible early on desktop.
++- The design remains premium/coherent with the off-white/taupe/caramel COO desk direction.
++- No blocking visual issue was observed.
++
++Non-blocking future polish:
++
++- Consider balancing the four queue cards as 2x2 if four items remain the common state.
++- Clarify selected packet linkage between a queue card and the Action API dropdown.
++- Decide whether mixed Portuguese/English product terms are intentional.
++
++## Files changed
++
++- `src/components/modules/MissionPages.tsx`
++- `src/app/globals.css`
++
++## Explicit exclusions
++
++This chunk did not execute or authorize:
++
++- GitHub push, PR creation or merge;
++- Vercel deploy or env changes;
++- Docker/VPS/gateway restarts;
++- Shopify/Tiny/Merchant/Meta/Google writes;
++- WhatsApp/email/client/customer sends;
++- secret printing or credential changes.
+diff --git a/docs/rebuild/mission-control-vnext-zero-prd-tenacitos-2026-05-16.md b/docs/rebuild/mission-control-vnext-zero-prd-tenacitos-2026-05-16.md
+new file mode 100644
+index 0000000..2b58b92
+--- /dev/null
++++ b/docs/rebuild/mission-control-vnext-zero-prd-tenacitos-2026-05-16.md
+@@ -0,0 +1,915 @@
++# Mission Control vNext Zero PRD — TenacitOS + Bruno/OpenClaw + Lucas Daily OS
++
++Data: 2026-05-16
++Alvo: `https://mission.lucascimino.com/`
++Repo local auditado: `/opt/data/hermes_bruno_ingest/mission-control-cimino-hermes`
++Status: PRD de rebuild/estrutura, sem execução de writes externos, Docker/VPS, Shopify, bancos, campanhas ou mensagens.
++
++---
++
++## 1. Resposta curta
++
++Sim. O Mission Control sendo atualizado é `mission.lucascimino.com`.
++
++A versão atual já está em Next.js/App Router, tem a maior parte das rotas TenacitOS visíveis e está tecnicamente saudável. Mas Lucas está certo: a estrutura ainda não está correta como produto diário. A home ainda mostra muito “encanamento” e inventário de módulos. O próximo salto não é adicionar mais cards. É redesenhar o sistema do zero em torno do uso diário de Lucas: decisão, risco, fonte, gate, execução segura e aprendizado.
++
++---
++
++## 2. Contexto e fontes usadas
++
++### Bruno/OpenClaw Aula 14
++
++Princípios obrigatórios extraídos da referência de Bruno:
++
++1. Procurar template primeiro, não reinventar sem comparar.
++2. Auditar template antes de clonar/adaptar.
++3. Escrever PRD com “superpowers” antes de executar.
++4. Implementar em chunks.
++5. Iterar por Telegram/prints/áudio.
++6. Segurança A10: menor privilégio, desconfiança de template externo, logs, rollback, aprovação para ações sensíveis.
++
++### TenacitOS auditado em clone read-only
++
++Clone local temporário: `/tmp/tenacitOS-audit`
++Commit auditado: `b021506`
++Arquivos rastreados: 192
++
++README do TenacitOS declara os módulos:
++
++- System Monitor
++- Agent Dashboard
++- Cost Tracking
++- Cron Manager
++- Activity Feed
++- Memory Browser
++- File Browser
++- Global Search
++- Notifications
++- Office 3D
++- Terminal read-only
++- Auth
++
++Superfície sensível observada em API routes:
++
++- cron run/update/delete
++- file write/delete/upload/mkdir
++- terminal command
++- system services
++- git actions
++- notifications mutation
++- auth/session
++
++Decisão: TenacitOS é benchmark funcional e arquitetural, não código para copiar cegamente.
++
++### Impeccable
++
++Contexto carregado:
++
++- `PRODUCT.md`: registro product, private read-only COO cockpit.
++- `DESIGN.md`: Maison Ledger, premium LK, off-white/taupe/caramel, read-only, source/gates near claims.
++- Impeccable product/audit/shape references.
++- Detector executado: `npx impeccable detect --fast --json src DESIGN.md PRODUCT.md docs/rebuild` retornou `[]`.
++
++### Superpowers
++
++Não há skill literal chamada `superpowers` no runtime atual. Usei os equivalentes Hermes já disponíveis:
++
++- `writing-plans`, adaptação direta do padrão superpowers/obra para PRDs e planos bite-sized.
++- `impeccable` para produto/UI.
++- `bruno-openclaw-hermes-brain-adaptation` para Bruno/A14/TenacitOS.
++
++---
++
++## 3. Diagnóstico inicial do Mission Control atual
++
++### Evidência técnica
++
++- Produção auditada: `https://mission.lucascimino.com/?audit=tenacitos-prd-20260516`
++- Título: `Mission Control v5 | Grupo Cimino`
++- `npm run lint`: passou.
++- `npm run build`: passou.
++- Rotas geradas pelo build: 25 páginas + 5 API routes internas Mission Control.
++- Sidebar pública contém 22 entradas.
++- Home contém 26 regiões/seções principais.
++- Botões visíveis na home: Aprovar escopo, Preview only, Ajustar, Bloquear, Kanban packet, Execution bridge.
++- Detector Impeccable: limpo.
++
++### O que está bom
++
++1. O alvo certo já está online em `mission.lucascimino.com`.
++2. O stack já é Next.js/App Router, alinhado ao TenacitOS.
++3. As rotas principais existem: agentes, atividade, relatórios, memória, arquivos, cron/rotinas, busca, fluxos, sistema, git, logs, terminal, ajustes, office, aprovações, sessões, analytics, skills, custos.
++4. A home já contém Decision Inbox, gates A1-A4, fontes, confiança, ações seguras e bloqueios.
++5. Módulos sensíveis estão visíveis e com linguagem de gate/trava.
++6. Segurança básica de API pública foi melhorada: `no-store`, `noindex`, sanitização de e-mails/tokens, allowlist de packet IDs, rate-limit em memória, approval token hash opcional.
++7. A estética já caminha para LK: off-white, taupe, caramel, sem dark war-room, sem neon.
++
++### O que está incompleto ou errado
++
++#### P0 — Home ainda é inventário, não mesa diária
++
++A home tenta provar que tudo existe. Isso cria uma página longa, densa e repetitiva. Lucas deveria abrir e ver imediatamente:
++
++- o que depende dele agora;
++- qual empresa está em risco;
++- qual ação é segura;
++- qual ação está bloqueada;
++- qual fonte sustenta cada afirmação;
++- o que mudou desde a última abertura.
++
++Hoje isso existe, mas diluído entre muitos blocos técnicos.
++
++#### P0 — Filas decisórias duplicadas
++
++Há sobreposição entre:
++
++- Decision Inbox
++- Waiting Lucas
++- Central Inbox
++- Action Packets
++- Approval Ledger
++- Event Lifecycle
++
++Produto correto: uma única `Lucas Queue`, com filtros e estados.
++
++#### P0 — Kanban ainda é política/visão, não sistema vivo
++
++O Kanban aparece como política e dados estáticos. Para TenacitOS/Bruno, precisa ser superfície operacional:
++
++- lanes reais;
++- owner/worker;
++- SLA;
++- bloqueio;
++- fonte;
++- próximo safe action;
++- relação com approval packet;
++- dispatch local quando permitido.
++
++#### P1 — Módulos existem, mas nem todos têm profundidade funcional
++
++Algumas páginas são shells/preview:
++
++- Office 3D é preview tático, não mapa operacional real.
++- File Browser e Memory Browser são descrições estáticas, não navegação real allowlisted.
++- Terminal está corretamente travado, mas não há read-only safe command palette.
++- Cron/rotinas ainda precisa distinguir cron real, rotina Brain, watcher e plano.
++- Cost Tracking precisa custo real por Hermes/Cron/LLM/integração, mesmo que inicialmente estimado.
++
++#### P1 — Linguagem muito técnica na home
++
++A camada de Lucas deve falar mais em:
++
++- decisão;
++- risco;
++- impacto;
++- tempo;
++- empresa;
++- evidência;
++- próximo gesto.
++
++Detalhes como paths, hashes, packet IDs, JSON mirror, gateway, dispatch e worker profile devem ficar em drill-down.
++
++#### P1 — Auth ainda não é produto real
++
++TenacitOS tem auth com senha/cookie. O Mission Control atual tem `/login` como preview travado. Para produção privada real, precisa Auth V1:
++
++- sessão segura;
++- rate-limit;
++- cookie httpOnly;
++- gate por ambiente;
++- modo demo/public sem dados sensíveis;
++- audit log de login.
++
++#### P1 — Gated não pode virar fake button
++
++Botões de aprovação existem, mas o produto precisa garantir que cada botão gere:
++
++- receipt;
++- packet hash;
++- gate;
++- rollback;
++- status atualizado;
++- evento no ledger;
++- envio/retorno ao Telegram quando aplicável.
++
++Sem isso, vira mock perigoso.
++
++---
++
++## 4. Produto desejado
++
++Mission Control deve ser o sistema operacional diário de Lucas para Hermes + LK + Zipper + SPITI.
++
++Não é um dashboard de métricas. Não é um catálogo de módulos. Não é uma landing page privada.
++
++É uma mesa COO que responde, em menos de 30 segundos:
++
++1. O que eu preciso decidir agora?
++2. O que está bloqueado por mim?
++3. O que Hermes pode fazer sozinho com segurança?
++4. Qual empresa está em risco?
++5. Qual fonte prova isso?
++6. O que foi aprendido e virou regra?
++7. O que está rodando em silêncio e o que falhou?
++8. O que jamais será executado sem aprovação atual?
++
++---
++
++## 5. Usuário principal e cenas de uso
++
++### Usuário principal
++
++Lucas Cimino, usando desktop e Telegram para tomada de decisão executiva multiempresa.
++
++### Cena diária 1 — manhã
++
++Lucas abre o Mission Control antes de responder mensagens. Quer saber:
++
++- decisões pendentes;
++- urgências por empresa;
++- follow-ups elegantes da Zipper;
++- riscos de LK estoque/campanha/catálogo;
++- SPITI divergências sem fonte;
++- estado de Hermes runtime sem mexer em infra.
++
++### Cena diária 2 — durante operação
++
++Lucas recebe um pacote no Telegram, aprova escopo ou bloqueia. O Mission Control precisa refletir:
++
++- packet recebido;
++- ação autorizada;
++- execução local/read-only;
++- bloqueio de A4;
++- receipt e rollback.
++
++### Cena diária 3 — revisão semanal
++
++Lucas quer saber o que aprendeu e onde melhorar:
++
++- decisões tomadas;
++- erros corrigidos;
++- skills atualizadas;
++- rotinas silenciosas;
++- custos;
++- backlog;
++- riscos por empresa.
++
++---
++
++## 6. Princípios de produto
++
++1. Lucas Queue antes de módulos.
++2. Empresa/risco/fonte/gate antes de tecnologia.
++3. Full TenacitOS vision, execução por fases Bruno-style.
++4. Módulos sensíveis visíveis, mas gated/locked, não escondidos.
++5. A4 sempre exige aprovação atual de Lucas.
++6. Read-only não é desculpa para mock: todo dado deve dizer fonte e freshness.
++7. Home deve cortar ruído, não exibir tudo.
++8. Técnica em drill-down, decisão na primeira dobra.
++9. Cada ação gera recibo ou não é ação.
++10. Cada correção de Lucas vira aprendizado, PRD update, skill ou Brain note conforme durabilidade.
++
++---
++
++## 7. Arquitetura de informação vNext
++
++### 7.1 Home: Mesa COO
++
++Primeira dobra:
++
++1. `Modo atual`
++   - operação assistida;
++   - sem writes automáticos;
++   - último update;
++   - freshness;
++   - risco global;
++   - fonte.
++
++2. `Lucas Queue`
++   - Agora;
++   - Expira hoje;
++   - Bloqueando receita;
++   - Bloqueando execução;
++   - Alta sensibilidade;
++   - Por empresa.
++
++3. `Kanban vivo compacto`
++   - Backlog;
++   - Ready read-only;
++   - Doing;
++   - Waiting Lucas;
++   - Blocked A4;
++   - QA;
++   - Done.
++
++4. `Risco por domínio`
++   - LK;
++   - Zipper;
++   - SPITI;
++   - Hermes;
++   - Infra.
++
++Segunda dobra:
++
++5. `Executando seguro`
++   - A0/A1/A2 ações locais/read-only.
++
++6. `Bloqueios A3/A4`
++   - produção, cliente, dinheiro, secrets, infra, DB, Shopify/Tiny/Merchant, campanhas.
++
++7. `Aprendizado recente`
++   - correções de Lucas;
++   - skills/Brain afetados;
++   - regra nova.
++
++Drill-down:
++
++- Ledgers completos;
++- Packets;
++- Event lifecycle;
++- Worker profiles;
++- Rollback registry;
++- raw technical logs.
++
++### 7.2 Módulos TenacitOS adaptados
++
++#### Auth
++
++Objetivo: privacidade real.
++
++V1:
++
++- login funcional;
++- session cookie httpOnly;
++- rate-limit;
++- modo public-safe se auth ausente;
++- audit de login.
++
++Gate:
++
++- A2 para auth local/preview;
++- A3 para produção/domain settings;
++- A4 se envolver secret rotation.
++
++#### System Monitor
++
++Objetivo: saúde Hermes/Vercel/API sem ações perigosas.
++
++V1:
++
++- build/deploy status;
++- Vercel freshness;
++- API health;
++- Hermes version/runtime last-known;
++- Docker/VPS read-only summary se coletado por watcher aprovado.
++
++Não fazer sem A3/A4:
++
++- restart;
++- compose;
++- container mutation;
++- firewall/root/SSH.
++
++#### Agent Dashboard
++
++Objetivo: mostrar operadores e responsabilidades.
++
++V1:
++
++- Hermes Geral;
++- LK Chief of Staff;
++- Zipper Chief of Staff;
++- SPITI Chief of Staff;
++- Infra/SRE;
++- estado, fonte, próxima ação, gate, bloqueio.
++
++#### Activity/Sessions
++
++Objetivo: trilha cronológica confiável.
++
++V1:
++
++- decisões;
++- PRDs;
++- deploys;
++- audits;
++- packets;
++- Telegram approvals;
++- skills/Brain updates.
++
++#### Cost Tracking
++
++Objetivo: custo operacional por domínio.
++
++V1:
++
++- estimado por cron/modelo quando real não existir;
++- custos Vercel/Hermes se fonte segura disponível;
++- alertas de aumento;
++- custo por empresa/rotina.
++
++#### Cron Manager
++
++Objetivo: rotinas claras.
++
++V1:
++
++- listar cronjobs Hermes;
++- distinguir cron real vs rotina Brain documentada;
++- last run/status;
++- output recente sanitizado;
++- botão `propor run` gated, não executar direto.
++
++#### Memory Browser
++
++Objetivo: navegar Hermes Brain e memória durável.
++
++V1:
++
++- índice por empresa;
++- decisões;
++- lessons;
++- PRDs;
++- skills;
++- rotinas;
++- busca segura.
++
++Writes:
++
++- só via PR/Brain flow ou packet aprovado.
++
++#### File Browser
++
++Objetivo: ver arquivos allowlisted sem expor secrets.
++
++V1:
++
++- roots allowlisted;
++- denylist para `.env`, secrets, tokens, private keys;
++- preview read-only;
++- diff antes de qualquer write.
++
++#### Global Search
++
++Objetivo: busca unificada.
++
++V1:
++
++- Brain docs;
++- Mission Control docs;
++- reports;
++- routines;
++- sanitized logs;
++- resultados com fonte e timestamp.
++
++#### Notifications / Approval Inbox
++
++Objetivo: centro decisório de Lucas.
++
++V1:
++
++- unifica Decision Inbox, Waiting Lucas, Central Inbox e Action Packets;
++- cada item tem payload, risco, rollback, expiração e botões;
++- integração Telegram como canal principal de aprovação.
++
++#### Terminal
++
++Objetivo: status seguro, não shell livre.
++
++V1:
++
++- comandos read-only allowlisted;
++- output sanitizado;
++- sem stdin arbitrário;
++- sem root/VPS/container writes.
++
++Exemplos permitidos depois de aprovação de design:
++
++- version;
++- health;
++- git status;
++- build artifact status;
++- cron list read-only.
++
++#### Office 3D
++
++Objetivo: mapa de operadores/agentes, não decoração.
++
++V1:
++
++- mesa por empresa/operador;
++- estado/risco/gate;
++- clique abre agente/domínio;
++- sem consumir primeira dobra.
++
++#### Skills & Workflows
++
++Objetivo: transformar Bruno/Hermes em procedimentos executáveis.
++
++V1:
++
++- lista skills relevantes;
++- quando usar;
++- gate;
++- último uso;
++- owner;
++- lacunas.
++
++#### Reports & Logs
++
++Objetivo: auditoria e prestação de contas.
++
++V1:
++
++- build/lint/detector;
++- secret scan;
++- deploy proof;
++- PRD changes;
++- event ledger;
++- output de watchers.
++
++#### Quick Actions
++
++Objetivo: iniciar fluxos seguros.
++
++V1:
++
++- Criar PRD;
++- Preparar preview;
++- Gerar daily brief;
++- Abrir packet;
++- Pedir source;
++- Enviar para Telegram como pedido de aprovação.
++
++Todas são A1/A2 até virarem ação externa.
++
++#### Settings
++
++Objetivo: configurar sem risco.
++
++V1:
++
++- profile de visualização;
++- alert thresholds;
++- enabled modules;
++- approval token status sem revelar token;
++- environment health.
++
++---
++
++## 8. Data model conceitual
++
++### `DecisionItem`
++
++Campos mínimos:
++
++- id
++- company/domain
++- title
++- why_now
++- impact
++- source_refs
++- confidence
++- freshness
++- gate
++- safe_action
++- blocked_action
++- approval_payload
++- rollback
++- expires_at
++- owner/worker
++- status
++- linked_events
++
++### `MissionPacket`
++
++- packet_id
++- decision_id
++- gate
++- action_type
++- payload_hash
++- full_payload_redacted
++- allowed_scope
++- denied_scope
++- rollback
++- expires_at
++- receipt_ids
++- telegram_thread/message if available
++
++### `KanbanCard`
++
++- card_id
++- lane
++- owner/worker
++- domain
++- title
++- packet_id optional
++- next_safe_step
++- blockers
++- due/sla
++- evidence_refs
++- risk
++
++### `ModuleStatus`
++
++- module
++- tenacitos_origin
++- lucas_use_case
++- status: real / preview / planned / locked
++- gate
++- data_source
++- last_verified
++- gaps
++
++---
++
++## 9. Gates e permissões
++
++### A0 — Free local
++
++- ler arquivos allowlisted;
++- analisar;
++- resumir;
++- criar plano;
++- criar relatório local.
++
++### A1 — Safe product local
++
++- atualizar UI read-only;
++- gerar snapshot;
++- rodar lint/build/detector;
++- criar PRD;
++- criar packet sem executar.
++
++### A2 — Preview/branch/PR
++
++- branch;
++- commit;
++- preview Vercel;
++- PR;
++- Execution Bridge A1/A2 local contract only.
++
++### A3 — Produção/infra/fonte de verdade
++
++- produção Vercel;
++- DB/source-of-truth write;
++- GitHub protected branch/merge;
++- Docker/VPS/cron real;
++- Shopify/Tiny/Merchant mutation.
++
++Exige rollback e escopo explícito.
++
++### A4 — Externo/dinheiro/cliente/secrets/destrutivo
++
++- WhatsApp/email cliente;
++- Klaviyo/campanha;
++- compra/fornecedor;
++- preço/estoque real;
++- secrets/root/SSH;
++- destrutivo.
++
++Exige aprovação atual de Lucas com payload completo.
++
++---
++
++## 10. V1 cut recomendado
++
++Produto final completo é TenacitOS-style. V1 não nega nenhum módulo, mas corta execução perigosa.
++
++### V1 deve entregar
++
++1. Home nova como `Mesa COO` reduzida.
++2. Lucas Queue unificada.
++3. Kanban vivo compacto alimentado por packets/estado.
++4. Module Registry com todos os módulos TenacitOS e status real/preview/locked.
++5. Auth funcional mínimo.
++6. Approval packet lifecycle completo em UI/API local.
++7. Global Search read-only inicial.
++8. Memory/Brain browser read-only inicial.
++9. Cron/rotina read-only inicial.
++10. Terminal allowlisted read-only, se segurança aprovada no PRD chunk.
++11. Reports/Logs com QA e audit artifacts.
++12. Mobile-first check para Lucas/Telegram.
++
++### V1 não deve entregar sem nova aprovação
++
++- shell arbitrário;
++- file write/delete/upload real;
++- cron run/pause/delete real;
++- Docker/VPS mutation;
++- Shopify/Tiny/Merchant writes;
++- customer sends;
++- campaigns;
++- secret rotation;
++- production cutover se ainda não aprovado no pacote específico.
++
++---
++
++## 11. Roadmap em chunks Bruno-style
++
++### Chunk 0 — Segurança e base
++
++Objetivo: travar fundação antes de UI nova.
++
++Entregas:
++
++- branch limpa;
++- backup/rollback tag;
++- secret scan baseline;
++- auth design;
++- module registry schema;
++- data contracts;
++- tests para sanitização/gates/packets.
++
++Critério de pronto:
++
++- lint/build pass;
++- detector pass;
++- secret scan 0;
++- PRD atualizado.
++
++### Chunk 1 — Mesa COO e Lucas Queue
++
++Objetivo: substituir home-inventário por home decisória.
++
++Entregas:
++
++- `Lucas Queue` unificada;
++- filtros;
++- decision cards/rows com fonte/gate/risco;
++- primeira dobra com 5 prioridades;
++- técnico movido para drill-down.
++
++Critério de pronto:
++
++- visão desktop e mobile aprovada por screenshot;
++- home responde “o que Lucas decide agora?” em 10 segundos.
++
++### Chunk 2 — Kanban + Approval Lifecycle
++
++Objetivo: transformar política em fluxo vivo.
++
++Entregas:
++
++- cards derivados de packets;
++- lane/owner/SLA/blocker;
++- approval receipt;
++- event lifecycle;
++- Telegram-ready payload.
++
++Critério de pronto:
++
++- botão não executa A4;
++- recibo gerado;
++- ledger reflete status;
++- packet expira.
++
++### Chunk 3 — Módulos read-only reais
++
++Objetivo: profundidade funcional sem risco.
++
++Entregas:
++
++- Memory Browser;
++- Global Search;
++- Cron/Routine Manager;
++- Reports/Logs;
++- Agent Dashboard;
++- System Monitor read-only.
++
++Critério de pronto:
++
++- cada módulo tem fonte real ou diz “placeholder” explicitamente;
++- nenhum secret/PII;
++- páginas não são shells repetidos.
++
++### Chunk 4 — Auth + sensitive module gates
++
++Objetivo: tornar privado e preparar módulos perigosos.
++
++Entregas:
++
++- login real;
++- sessão segura;
++- module permissions;
++- terminal safe-command palette;
++- file browser allowlist;
++- settings.
++
++Critério de pronto:
++
++- teste de acesso sem auth;
++- rate-limit;
++- no token in browser;
++- comandos allowlisted e auditados.
++
++### Chunk 5 — Office 3D + Daily Use polish
++
++Objetivo: dar presença TenacitOS sem virar decoração.
++
++Entregas:
++
++- Office 3D como mapa operacional;
++- Cost Tracking V1;
++- mobile polish;
++- daily/weekly review modes;
++- onboarding/empty states;
++- visual final Impeccable.
++
++Critério de pronto:
++
++- Impeccable detector `[]`;
++- browser vision aprova hierarquia;
++- Lucas consegue usar sem explicar módulos técnicos.
++
++---
++
++## 12. Testes e verificação obrigatórios
++
++Antes de qualquer claim de pronto:
++
++- `npm run lint`
++- `npm run build`
++- `npx impeccable detect --fast --json src DESIGN.md PRODUCT.md docs/rebuild`
++- secret scan changed files e whole repo quando alterar APIs/data
++- browser desktop screenshot
++- browser mobile screenshot
++- console JS clean
++- API route smoke tests
++- auth smoke tests quando implementado
++- packet lifecycle test
++- no PII/secrets in public payload
++
++---
++
++## 13. Critérios de aceite do produto
++
++### Aceite funcional
++
++- Lucas Queue aparece na primeira dobra.
++- Kanban aparece como fluxo operacional, não documentação.
++- Todos os módulos TenacitOS aparecem no Module Registry com status/gate.
++- Ações A3/A4 nunca executam sem aprovação atual.
++- Cada decisão tem fonte/confiança/freshness.
++- Cada packet tem expiração, hash e rollback.
++- Cada módulo sensível mostra o que é permitido e bloqueado.
++
++### Aceite de uso diário
++
++Lucas deve conseguir responder sem perguntar ao Hermes:
++
++- o que eu aprovo agora?
++- o que está bloqueado?
++- o que Hermes pode tocar sozinho?
++- qual risco por empresa?
++- o que mudou desde ontem?
++- onde vejo detalhes se quiser?
++
++### Aceite visual
++
++- Premium LK, não generic admin.
++- Off-white/taupe/caramel restrito.
++- Sem dark cockpit, glass, gradient text, hero metric, side stripe, card grid repetitiva.
++- Home mais curta e hierarquizada.
++- Detalhe técnico em drill-down.
++
++---
++
++## 14. Decisões propostas
++
++1. Tratar a versão atual como `vNext operating-loops preview`, não como produto final correto.
++2. Fazer rebuild estrutural da home e IA, não CSS patch.
++3. Manter Next.js/App Router e aproveitar rotas/componentes úteis.
++4. Implementar o TenacitOS completo como visão de produto, gated por segurança.
++5. Não copiar rotas sensíveis do TenacitOS sem auth/allowlist/audit.
++6. Criar primeiro um branch/preview com V1 cut, depois produção apenas com pacote A3 explícito.
++
++---
++
++## 15. Próxima ação recomendada
++
++Criar um branch `rebuild/mission-control-zero-tenacitos-20260516` e executar apenas Chunk 0 + Chunk 1 inicialmente:
++
++- segurança/base;
++- home Mesa COO + Lucas Queue;
++- Kanban compacto;
++- Module Registry status;
++- sem writes externos;
++- sem produção automática;
++- preview Vercel para validação visual.
++
++Depois de screenshot/Telegram e aprovação de Lucas, avançar Chunk 2.
++
++---
++
++## 16. O que não foi feito neste PRD
++
++- Não alterei Shopify, Tiny, Merchant, Notion, Meta, Google, Klaviyo, WhatsApp, Supabase, SPITI, Zipper Vendas ou Paperclip.
++- Não reiniciei Docker/VPS/Traefik/containers/volumes/networks.
++- Não rodei terminal remoto nem comando host real.
++- Não criei cron novo.
++- Não enviei mensagem externa.
++- Não fiz deploy novo.
++- Não fiz push/PR.
++
++Este documento é a base para a próxima implementação segura.
+diff --git a/package.json b/package.json
+index 548c5e4..ff12f0a 100644
+--- a/package.json
++++ b/package.json
+@@ -6,7 +6,8 @@
+     "dev": "next dev -H 0.0.0.0",
+     "build": "next build",
+     "start": "next start -H 0.0.0.0",
+-    "lint": "eslint"
++    "lint": "eslint",
++    "qa:local": "python3 scripts/mission_control_qa_gate.py"
+   },
+   "dependencies": {
+     "@tailwindcss/postcss": "latest",
+diff --git a/scripts/mission_control_ops_state.py b/scripts/mission_control_ops_state.py
+index f025092..0aed808 100755
+--- a/scripts/mission_control_ops_state.py
++++ b/scripts/mission_control_ops_state.py
+@@ -13,6 +13,7 @@ import json
+ import shutil
+ import subprocess
+ from pathlib import Path
++from typing import Iterable
+ 
+ ROOT = Path('/opt/data/hermes_bruno_ingest/mission-control-cimino-hermes')
+ BRAIN = Path('/opt/data/hermes_bruno_ingest/hermes-brain')
+@@ -28,6 +29,29 @@ def slug(text: str) -> str:
+     return ''.join(ch if ch.isalnum() else '-' for ch in text.lower()).strip('-')[:96]
+ 
+ 
++def stable_hash(value: str, length: int = 16) -> str:
++    return hashlib.sha256(value.encode('utf-8')).hexdigest()[:length]
++
++
++def dedupe_by_key(items: Iterable[dict], key: str) -> tuple[list[dict], list[str]]:
++    """Keep the first occurrence of each key and report duplicates deterministically."""
++    seen: set[str] = set()
++    duplicates: list[str] = []
++    result: list[dict] = []
++    for raw in items:
++        item = dict(raw)
++        value = slug(str(item.get(key) or ''))
++        if not value:
++            value = stable_hash(json.dumps(item, ensure_ascii=False, sort_keys=True))
++        item[key] = value
++        if value in seen:
++            duplicates.append(value)
++            continue
++        seen.add(value)
++        result.append(item)
++    return result, duplicates
++
++
+ def exists_status(path: Path, label: str) -> dict[str, str]:
+     if path.exists() and path.stat().st_size > 200:
+         return {'label': label, 'status': 'verified', 'detail': f'{path} existe ({path.stat().st_size} bytes)'}
+@@ -107,13 +131,16 @@ def kanban_snapshot() -> dict:
+ 
+ def build_action_packets(now: dt.datetime) -> list[dict]:
+     expires = (now + dt.timedelta(hours=24)).isoformat().replace('+00:00', 'Z')
+-    return [
+-        {'packetId':'mission-control-vnext-operating-loops','company':'Mission Control','decision':'Ativar Reliability Layer completo','gate':'A3','status':'approved-executing','confidence':'alta','source':'Telegram Lucas + local QA','expiresAt':expires,'payloadHash':hashlib.sha256(b'reliability-layer-v1').hexdigest()[:16],'recommendedAction':'approve_scope','safeAction':'Deploy Vercel Mission Control + Brain/local ledgers + read-only health checks','blockedAction':'Git push/DB externo/Docker/gateway/cliente sem pacote específico','rollback':'promover deploy anterior e aplicar patch reverso'},
++    packets = [
++        {'packetId':'mission-control-reliability-layer','company':'Mission Control','decision':'Ativar Reliability Layer completo','gate':'A3','status':'approved-executing','confidence':'alta','source':'Telegram Lucas + local QA','expiresAt':expires,'payloadHash':hashlib.sha256(b'reliability-layer-v1').hexdigest()[:16],'recommendedAction':'approve_scope','safeAction':'Deploy Vercel Mission Control + Brain/local ledgers + read-only health checks','blockedAction':'Git push/DB externo/Docker/gateway/cliente sem pacote específico','rollback':'promover deploy anterior e aplicar patch reverso'},
+         {'packetId':'lk-operating-intelligence-readonly','company':'LK Sneakers','decision':'Unificar sinais comerciais read-only em intelligence cards','gate':'A2','status':'ready','confidence':'média','source':'Shopify skills, GA4, Metricool, GMC, Brain','expiresAt':expires,'payloadHash':hashlib.sha256(b'lk-operating-intelligence').hexdigest()[:16],'recommendedAction':'preview_only','safeAction':'Gerar ranking de oportunidades e anomalias sem writes','blockedAction':'Compra, preço, campanha, Shopify/Tiny/Merchant write ou fornecedor','rollback':'desligar seção e cron read-only, sem impacto em fontes'},
+         {'packetId':'kanban-restricted-dispatch-policy','company':'Hermes Runtime','decision':'Permitir somente dispatch read-only/local por lane','gate':'A3','status':'active-restricted','confidence':'alta','source':'lk-growth-ops stats + smoke card','expiresAt':expires,'payloadHash':hashlib.sha256(b'kanban-restricted-lanes').hexdigest()[:16],'recommendedAction':'kanban_dispatch_packet','safeAction':'Atribuir apenas cards explicitamente read-only/local aos perfis restritos','blockedAction':'Cards com email/Klaviyo/Shopify/externo/dinheiro ficam Waiting Lucas','rollback':'unassign cards e pausar dispatch'},
+         {'packetId':'mission-control-vnext-operating-loops','company':'Mission Control','decision':'Ativar Operating Loops vNext','gate':'A3','status':'approved-executing','confidence':'alta','source':'Telegram Lucas + Reliability Layer QA','expiresAt':expires,'payloadHash':hashlib.sha256(b'vnext-operating-loops').hexdigest()[:16],'recommendedAction':'approve_scope','safeAction':'PR package, auth hardening, inbox central, lifecycle, Daily COO Brief, noise budget e execution bridge A1/A2 sem writes externos','blockedAction':'GitHub push/merge, DB externo, Docker/gateway, Shopify/Tiny/Merchant/campanha/cliente sem pacote específico','rollback':'promover deploy anterior + patch reverso + desabilitar /api/mission/execute'},
+         {'packetId':'mission-control-safe-execution-bridge','company':'Mission Control','decision':'Permitir bridge de execução apenas A1/A2 local','gate':'A3','status':'active-restricted','confidence':'média','source':'Operating Loops guardrails','expiresAt':expires,'payloadHash':hashlib.sha256(b'safe-execution-bridge-a1-a2').hexdigest()[:16],'recommendedAction':'execute_safe','safeAction':'Marcar packet local, gerar relatório, criar draft local/Brain ou card Kanban read-only; sem externo','blockedAction':'qualquer shell arbitrário, segredo, fonte verdade, externo, dinheiro, cliente, Docker ou write LK','rollback':'remover rota execute e ocultar botão Execution Bridge'},
++        {'packetId':'zipper-followup-draft-only','company':'Zipper Galeria','decision':'Transformar follow-ups de feira em drafts aprováveis','gate':'A4','status':'draft-only','confidence':'média','source':'Zipper OS cockpit local + política de envio A4','expiresAt':expires,'payloadHash':hashlib.sha256(b'zipper-followup-draft-only').hexdigest()[:16],'recommendedAction':'preview_only','safeAction':'Gerar rascunho local com payload completo para Lucas revisar','blockedAction':'WhatsApp/email/cliente/galerista externo sem aprovação atual do texto e destinatário','rollback':'arquivar rascunho local; nenhum envio externo executado'},
+     ]
++    deduped, _duplicates = dedupe_by_key(packets, 'packetId')
++    return deduped
+ 
+ 
+ 
+@@ -167,6 +194,60 @@ def build_noise_budget(cron_count: int) -> list[dict]:
+         {'class':'deprecated/no-value','budget':'0','current':'revisar jobs sem valor em 7 dias','action':'propor pausa com rollback, não remover sozinho'},
+     ]
+ 
++
++class DateParse:
++    @staticmethod
++    def safe_is_expired(value: str) -> bool:
++        try:
++            parsed = dt.datetime.fromisoformat(value.replace('Z', '+00:00'))
++        except ValueError:
++            return True
++        return parsed < utc_now()
++
++
++def build_feed_quality(state: dict, duplicate_packet_ids: list[str] | None = None) -> dict:
++    packets = state.get('actionPackets', [])
++    waiting = state.get('waitingLucas', [])
++    packet_ids = {item.get('packetId') for item in packets}
++    waiting_ids = [item.get('packetId') for item in waiting]
++    missing_waiting_packets = sorted(str(item) for item in waiting_ids if item not in packet_ids)
++    expired_packets = sorted(
++        str(item.get('packetId'))
++        for item in packets
++        if item.get('expiresAt') and DateParse.safe_is_expired(str(item.get('expiresAt')))
++    )
++    stale_lk_cards = [
++        {'id': card.get('id'), 'ageHours': card.get('ageHours'), 'evidence': card.get('evidence')}
++        for card in state.get('lkIntelligenceCards', [])
++        if isinstance(card.get('ageHours'), int) and card.get('ageHours') > state.get('freshnessSlaHours', 24) * 3
++    ]
++    return {
++        'status': 'green' if not missing_waiting_packets and not expired_packets and not duplicate_packet_ids else 'yellow',
++        'packetCount': len(packets),
++        'waitingLucasCount': len(waiting),
++        'waitingPacketCoverage': len(waiting) - len(missing_waiting_packets),
++        'duplicatePacketIdsRemoved': duplicate_packet_ids or [],
++        'missingWaitingPackets': missing_waiting_packets,
++        'expiredPackets': expired_packets,
++        'staleEvidence': stale_lk_cards,
++        'contract': 'packetId único; waitingLucas sempre referencia actionPacket existente; fontes antigas aparecem como atenção, não como fato fresco.',
++    }
++
++
++def validate_state(state: dict) -> None:
++    packet_ids = [item.get('packetId') for item in state.get('actionPackets', [])]
++    duplicates = sorted({item for item in packet_ids if packet_ids.count(item) > 1})
++    if duplicates:
++        raise ValueError(f'duplicate action packet ids: {duplicates}')
++    missing = state.get('feedQuality', {}).get('missingWaitingPackets', [])
++    if missing:
++        raise ValueError(f'waitingLucas references missing action packets: {missing}')
++    required_top_level = ['generatedAt', 'actionPackets', 'waitingLucas', 'kanbanPolicy', 'healthCenter', 'feedQuality']
++    absent = [key for key in required_top_level if key not in state]
++    if absent:
++        raise ValueError(f'missing required ops-state keys: {absent}')
++
++
+ def build_state() -> dict:
+     now = utc_now()
+     seed_ledger(now)
+@@ -202,7 +283,7 @@ def build_state() -> dict:
+         {'company':'Zipper Galeria','decision':'Transformar follow-ups de feira em approval packets com texto inteiro no Telegram.', 'recommendation':'Draft-only; envio continua A4.', 'gate':'A4', 'packetId':'zipper-followup-draft-only', 'ageHours': 0, 'expiresAt': packets[0]['expiresAt']},
+     ]
+ 
+-    return {
++    state = {
+         'generatedAt': now.isoformat().replace('+00:00', 'Z'),
+         'mode': 'vNext operating-loops active + approval-gated',
+         'freshnessSlaHours': 24,
+@@ -332,6 +413,17 @@ def build_state() -> dict:
+             {'path':'/opt/data/scripts/mission_control_ops_watchdog.py','kind':'runtime silent watchdog'},
+         ],
+     }
++    deduped_packets, duplicate_packet_ids = dedupe_by_key(state['actionPackets'], 'packetId')
++    state['actionPackets'] = deduped_packets
++    state['feedQuality'] = build_feed_quality(state, duplicate_packet_ids)
++    state['healthCenter'].append({
++        'system':'Feed Quality',
++        'status': state['feedQuality']['status'],
++        'signal': f"{state['feedQuality']['packetCount']} packets únicos; {state['feedQuality']['waitingPacketCoverage']}/{state['feedQuality']['waitingLucasCount']} decisões Waiting Lucas cobertas; duplicatas removidas: {len(state['feedQuality']['duplicatePacketIdsRemoved'])}.",
++    })
++    validate_state(state)
++    return state
++
+ 
+ 
+ def write_state(state: dict) -> None:
+diff --git a/scripts/mission_control_ops_watchdog.py b/scripts/mission_control_ops_watchdog.py
+new file mode 100755
+index 0000000..ed4baa7
+--- /dev/null
++++ b/scripts/mission_control_ops_watchdog.py
+@@ -0,0 +1,214 @@
++#!/usr/bin/env python3
++"""Mission Control operational watchdog.
++
++Silent contract: rc=0 + empty stdout = healthy; rc=0 + stdout = actionable alert.
++Allowed low-risk self-heal: regenerate the local Mission Control ops-state JSON/TS feed
++when stale/missing. No external sends, Shopify/Tiny/Merchant writes, Docker/host/Vercel
++mutation, gateway restart, or secret printing.
++"""
++from __future__ import annotations
++
++import datetime as dt
++import hashlib
++import json
++import subprocess
++from pathlib import Path
++from urllib.error import HTTPError, URLError
++from urllib.request import Request, urlopen
++
++ROOT = Path('/opt/data/hermes_bruno_ingest/mission-control-cimino-hermes')
++BRAIN = Path('/opt/data/hermes_bruno_ingest/hermes-brain')
++URL = 'https://mission.lucascimino.com/?watchdog=mission-control'
++OPS_JSON = BRAIN / 'reports/mission-control-ops-state-latest.json'
++OPS_TS = ROOT / 'src/data/ops-state.generated.ts'
++GENERATOR = Path('/opt/data/scripts/mission_control_ops_state.py')
++REQUIRED_FILES = [
++    ROOT / 'src/components/modules/MissionPages.tsx',
++    ROOT / 'src/components/modules/CommandActionPanel.tsx',
++    ROOT / 'src/app/api/mission/state/route.ts',
++    ROOT / 'src/app/api/mission/approvals/route.ts',
++    ROOT / 'src/app/api/mission/kanban/route.ts',
++    ROOT / 'src/app/api/mission/packets/route.ts',
++    ROOT / 'src/app/api/mission/execute/route.ts',
++    ROOT / 'src/data/cron-jobs.ts',
++    ROOT / 'src/data/ops-state.generated.ts',
++    ROOT / 'scripts/mission_control_ops_state.py',
++    BRAIN / 'reports/mission-control-ops-state-latest.json',
++    BRAIN / 'skills/lk-shopify-readonly/SKILL.md',
++    BRAIN / 'skills/lk-shopify-product-upload/SKILL.md',
++    Path('/opt/data/scripts/hermes_compression_failure_self_heal.py'),
++]
++REQUIRED_DEPLOYED_MARKERS = [
++    'Mission Control',
++    'LK Sneakers',
++]
++REQUIRED_LOCAL_MARKERS = [
++    'CommandActionPanel',
++    'moduleRegistry',
++    'lucasQueue',
++    'operatingKanban',
++]
++REQUIRED_OPS_LISTS = [
++    'health',
++    'healthCenter',
++    'commandSystem',
++    'improvements12',
++    'approvalLedger',
++    'waitingLucas',
++    'actionPackets',
++    'eventLedger',
++    'kanbanPolicy',
++    'rollbackRegistry',
++    'lkOperatingIntelligence',
++    'watchers',
++    'artifacts',
++]
++
++
++def sha(path: Path) -> str:
++    return hashlib.sha256(path.read_bytes()).hexdigest()
++
++
++def utc_now() -> dt.datetime:
++    return dt.datetime.now(dt.UTC)
++
++
++def parse_ts(ts: str) -> dt.datetime | None:
++    try:
++        text = ts.replace('Z', '+00:00')
++        return dt.datetime.fromisoformat(text)
++    except Exception:
++        return None
++
++
++def regenerate_if_needed(alerts: list[str]) -> None:
++    needs = False
++    if not OPS_JSON.exists() or not OPS_TS.exists():
++        needs = True
++    elif GENERATOR.exists():
++        try:
++            data = json.loads(OPS_JSON.read_text())
++            generated = parse_ts(str(data.get('generatedAt', '')))
++            if generated is None or (utc_now() - generated).total_seconds() > 24 * 3600:
++                needs = True
++        except Exception:
++            needs = True
++    if needs:
++        if not GENERATOR.exists():
++            alerts.append(f'Mission Control ops-state generator missing: {GENERATOR}')
++            return
++        proc = subprocess.run([str(GENERATOR)], text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=60)
++        if proc.returncode != 0:
++            alerts.append(f'ops-state regeneration failed rc={proc.returncode}: {proc.stdout[-500:]}')
++
++
++def validate_ops_state(alerts: list[str]) -> None:
++    validate_ops_state_file(OPS_JSON, alerts)
++
++
++def validate_ops_state_file(path: Path, alerts: list[str]) -> None:
++    if not path.exists():
++        alerts.append(f'Mission Control ops-state JSON missing: {path}')
++        return
++    try:
++        data = json.loads(path.read_text())
++    except Exception as exc:
++        alerts.append(f'Mission Control ops-state JSON invalid: {type(exc).__name__}: {str(exc)[:120]}')
++        return
++    generated = parse_ts(str(data.get('generatedAt', '')))
++    if generated is None:
++        alerts.append('Mission Control ops-state generatedAt invalid/missing')
++    else:
++        age_hours = (utc_now() - generated).total_seconds() / 3600
++        if age_hours > float(data.get('freshnessSlaHours', 24)):
++            alerts.append(f'Mission Control ops-state stale: {age_hours:.1f}h old')
++    for key in REQUIRED_OPS_LISTS:
++        if not isinstance(data.get(key), list) or not data[key]:
++            alerts.append(f'Mission Control ops-state missing non-empty {key}')
++    if len(data.get('improvements12', [])) != 12:
++        alerts.append(f"Mission Control ops-state improvements12 count is {len(data.get('improvements12', []))}, expected 12")
++
++    packet_ids = [item.get('packetId') for item in data.get('actionPackets', []) if isinstance(item, dict)]
++    duplicate_packet_ids = sorted({item for item in packet_ids if packet_ids.count(item) > 1})
++    if duplicate_packet_ids:
++        alerts.append(f'Mission Control duplicate action packet ids: {duplicate_packet_ids}')
++    waiting_ids = [item.get('packetId') for item in data.get('waitingLucas', []) if isinstance(item, dict)]
++    missing_waiting_packets = sorted(str(item) for item in waiting_ids if item not in set(packet_ids))
++    if missing_waiting_packets:
++        alerts.append(f'Mission Control Waiting Lucas packet coverage broken: missing {missing_waiting_packets}')
++
++    feed_quality = data.get('feedQuality')
++    if not isinstance(feed_quality, dict):
++        alerts.append('Mission Control feedQuality missing or invalid')
++    else:
++        if feed_quality.get('status') != 'green':
++            alerts.append(f"Mission Control feedQuality not green: {feed_quality.get('status')}")
++        if feed_quality.get('missingWaitingPackets'):
++            alerts.append(f"Mission Control feedQuality missingWaitingPackets: {feed_quality.get('missingWaitingPackets')}")
++        if feed_quality.get('duplicatePacketIdsRemoved'):
++            alerts.append(f"Mission Control feedQuality removed duplicate packet ids: {feed_quality.get('duplicatePacketIdsRemoved')}")
++        if feed_quality.get('expiredPackets'):
++            alerts.append(f"Mission Control feedQuality expired packets: {feed_quality.get('expiredPackets')}")
++        if int(feed_quality.get('waitingPacketCoverage') or 0) != len(data.get('waitingLucas', [])):
++            alerts.append(
++                f"Mission Control feedQuality coverage mismatch: {feed_quality.get('waitingPacketCoverage')}/{len(data.get('waitingLucas', []))}"
++            )
++        stale = feed_quality.get('staleEvidence')
++        if stale:
++            alerts.append(f'Mission Control feedQuality stale evidence: {json.dumps(stale, ensure_ascii=False)[:400]}')
++
++    health_systems = {item.get('system') for item in data.get('healthCenter', []) if isinstance(item, dict)}
++    if 'Feed Quality' not in health_systems:
++        alerts.append('Mission Control Health Center missing Feed Quality signal')
++
++    watcher_ids = {item.get('id') for item in data.get('watchers', []) if isinstance(item, dict)}
++    for required in ['feec299b99e5', '4bb4e2223fd3', 'edd06fe19397']:
++        if required not in watcher_ids:
++            alerts.append(f'Mission Control ops-state missing watcher id {required}')
++
++
++def main() -> int:
++    alerts: list[str] = []
++    regenerate_if_needed(alerts)
++
++    for path in REQUIRED_FILES:
++        if not path.exists():
++            alerts.append(f'missing required Mission Control artifact: {path}')
++        elif path.stat().st_size < 200:
++            alerts.append(f'suspiciously small artifact: {path} ({path.stat().st_size} bytes)')
++
++    validate_ops_state(alerts)
++
++    for name in ['lk-shopify-readonly', 'lk-shopify-product-upload']:
++        rt = Path(f'/opt/data/skills/productivity/{name}/SKILL.md')
++        br = BRAIN / f'skills/{name}/SKILL.md'
++        if rt.exists() and br.exists() and sha(rt) != sha(br):
++            alerts.append(f'{name} skill drift: runtime and Brain mirror differ')
++
++    local_text = (ROOT / 'src/components/modules/MissionPages.tsx').read_text(errors='replace') if (ROOT / 'src/components/modules/MissionPages.tsx').exists() else ''
++    for marker in REQUIRED_LOCAL_MARKERS:
++        if marker not in local_text:
++            alerts.append(f'Mission Control local UI marker missing: {marker}')
++
++    try:
++        req = Request(URL, headers={'User-Agent': 'HermesMissionControlWatchdog/1.1'})
++        with urlopen(req, timeout=12) as resp:
++            status = getattr(resp, 'status', None)
++            body = resp.read(250000).decode('utf-8', errors='replace')
++        if status != 200:
++            alerts.append(f'Mission Control HTTP status is {status}, expected 200')
++        for marker in REQUIRED_DEPLOYED_MARKERS:
++            if marker not in body:
++                alerts.append(f'Mission Control marker not found in HTML: {marker}')
++    except (HTTPError, URLError, TimeoutError, OSError) as exc:
++        alerts.append(f'Mission Control public GET failed: {type(exc).__name__}: {str(exc)[:180]}')
++
++    if alerts:
++        print('Mission Control ops watchdog alert')
++        for item in alerts:
++            print(f'- {item}')
++    return 0
++
++
++if __name__ == '__main__':
++    raise SystemExit(main())
+diff --git a/scripts/mission_control_qa_gate.py b/scripts/mission_control_qa_gate.py
+new file mode 100755
+index 0000000..92c590a
+--- /dev/null
++++ b/scripts/mission_control_qa_gate.py
+@@ -0,0 +1,140 @@
++#!/usr/bin/env python3
++"""Mission Control local QA gate.
++
++Runs read-only/local checks before Mission Control PR/deploy work. This script must not
++push, deploy, call Docker/VPS/gateway restarts, or mutate external systems.
++"""
++from __future__ import annotations
++
++import argparse
++import os
++import re
++import subprocess
++import sys
++from dataclasses import dataclass
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[1]
++RUNTIME_WATCHDOG = Path('/opt/data/scripts/mission_control_ops_watchdog.py')
++BRAIN_WATCHDOG = Path('/opt/data/hermes_bruno_ingest/hermes-brain/scripts/mission_control_ops_watchdog.py')
++REPO_WATCHDOG = ROOT / 'scripts' / 'mission_control_ops_watchdog.py'
++SECRET_RE = re.compile(
++    r'(api[_-]?key|secret|password|passwd|token)\s*[:=]\s*["\'][^"\']{6,}["\']|'
++    r'sk-[A-Za-z0-9]{16,}|ghp_[A-Za-z0-9]{16,}|xox[baprs]-[A-Za-z0-9-]{16,}',
++    re.IGNORECASE,
++)
++
++
++@dataclass(frozen=True)
++class Check:
++    name: str
++    command: list[str]
++    allow_stdout: bool = True
++
++
++CHECKS = [
++    Check('python unittest watchdog fixtures', [sys.executable, '-m', 'unittest', 'tests.test_mission_control_ops_watchdog', 'tests.test_mission_control_qa_gate', '-v']),
++    Check(
++        'python py_compile watchdog scripts',
++        [
++            sys.executable,
++            '-c',
++            "import py_compile, sys, tempfile; "
++            "[py_compile.compile(path, cfile=tempfile.NamedTemporaryFile(suffix='.pyc').name, doraise=True) for path in sys.argv[1:]]",
++            str(REPO_WATCHDOG),
++            str(RUNTIME_WATCHDOG),
++            str(BRAIN_WATCHDOG),
++        ],
++    ),
++    Check('mission watchdog silent OK', [str(RUNTIME_WATCHDOG)], allow_stdout=False),
++    Check('git diff whitespace check', ['git', 'diff', '--check']),
++    Check('git staged diff whitespace check', ['git', 'diff', '--cached', '--check']),
++    Check('npm lint', ['npm', 'run', 'lint']),
++    Check('npm build', ['npm', 'run', 'build']),
++]
++
++
++def run_command(check: Check) -> tuple[bool, str]:
++    env = os.environ.copy()
++    env.setdefault('CI', '1')
++    env.setdefault('PYTHONDONTWRITEBYTECODE', '1')
++    proc = subprocess.run(
++        check.command,
++        cwd=ROOT,
++        text=True,
++        stdout=subprocess.PIPE,
++        stderr=subprocess.STDOUT,
++        env=env,
++        timeout=600,
++    )
++    output = proc.stdout or ''
++    if proc.returncode != 0:
++        return False, f'{check.name} failed rc={proc.returncode}\n{output}'
++    if not check.allow_stdout and output.strip():
++        return False, f'{check.name} expected silent stdout but got:\n{output}'
++    return True, output
++
++
++def secret_scan_diff() -> tuple[bool, str]:
++    proc = subprocess.run(
++        ['git', 'diff', 'HEAD'],
++        cwd=ROOT,
++        text=True,
++        stdout=subprocess.PIPE,
++        stderr=subprocess.STDOUT,
++        timeout=60,
++    )
++    if proc.returncode != 0:
++        return False, f'diff secret scan could not read git diff rc={proc.returncode}\n{proc.stdout}'
++    findings = []
++    for idx, line in enumerate(proc.stdout.splitlines(), start=1):
++        if not line.startswith('+') or line.startswith('+++'):
++            continue
++        if SECRET_RE.search(line):
++            findings.append(f'line {idx}: potential secret in added diff')
++    if findings:
++        return False, 'diff secret scan failed\n' + '\n'.join(findings)
++    return True, 'diff secret scan passed'
++
++
++def print_plan() -> None:
++    for check in CHECKS:
++        print(check.name)
++    print('diff secret scan')
++
++
++def main() -> int:
++    parser = argparse.ArgumentParser(description='Run Mission Control local QA gate')
++    parser.add_argument('--plan', action='store_true', help='print the checks without running them')
++    args = parser.parse_args()
++    if args.plan:
++        print_plan()
++        return 0
++
++    failures: list[str] = []
++    for check in CHECKS:
++        ok, output = run_command(check)
++        if ok:
++            print(f'PASS {check.name}')
++        else:
++            print(f'FAIL {check.name}')
++            failures.append(output)
++    ok, output = secret_scan_diff()
++    if ok:
++        print('PASS diff secret scan')
++    else:
++        print('FAIL diff secret scan')
++        failures.append(output)
++
++    if failures:
++        print('\nMission Control QA gate failed:')
++        for failure in failures:
++            print('\n---')
++            print(failure[-4000:])
++        return 1
++    print('Mission Control QA gate passed')
++    return 0
++
++
++if __name__ == '__main__':
++    raise SystemExit(main())
+diff --git a/src/app/globals.css b/src/app/globals.css
+index 6dbbce1..906baff 100644
+--- a/src/app/globals.css
++++ b/src/app/globals.css
+@@ -80,7 +80,7 @@ button { color: inherit; }
+ .page-head h1 { margin: 7px 0 7px; display: flex; align-items: center; gap: 10px; color: var(--ink); font-size: clamp(1.7rem, 3vw, 2.55rem); line-height: 1.02; letter-spacing: -.045em; }
+ .page-head h1 svg { color: var(--caramel); flex: 0 0 auto; }
+ .page-head p { margin: 0; max-width: 68ch; color: var(--muted); font-size: .98rem; line-height: 1.5; }
+-.status-receipt, .panel, .lane, .terminal-panel, .workspace-rail, .module-map, .operation-receipt, .decision-desk, .domain-strip, .approval-ledger, .learning-journal, .technical-drilldown { border: 1px solid var(--line-soft); border-radius: var(--radius); background: oklch(99% 0.006 88 / .90); box-shadow: 0 14px 34px oklch(42% 0.018 76 / .04); min-width: 0; }
++.status-receipt, .panel, .lane, .terminal-panel, .workspace-rail, .module-map, .operation-receipt, .decision-desk, .domain-strip, .approval-ledger, .learning-journal, .technical-drilldown, .command-hero, .kanban-panel, .module-registry { border: 1px solid var(--line-soft); border-radius: var(--radius); background: oklch(99% 0.006 88 / .90); box-shadow: 0 14px 34px oklch(42% 0.018 76 / .04); min-width: 0; }
+ .status-receipt { overflow: hidden; }
+ .status-receipt div { display: grid; grid-template-columns: 86px minmax(0, 1fr); gap: 10px; padding: 12px 14px; border-bottom: 1px solid var(--line-soft); align-items: start; }
+ .status-receipt div:last-child { border-bottom: 0; }
+@@ -89,6 +89,39 @@ button { color: inherit; }
+ 
+ 
+ .coo-desk { display: grid; gap: 14px; }
++.vnext-desk { gap: 16px; }
++.command-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 430px); gap: 0; overflow: hidden; border-top-color: var(--line); }
++.command-copy { padding: clamp(14px, 2vw, 24px); background: linear-gradient(135deg, oklch(99% 0.006 88), oklch(95.8% 0.014 84)); }
++.command-copy h2 { margin: 7px 0 8px; max-width: 24ch; color: var(--ink); font-family: var(--font-display); font-size: clamp(1.65rem, 2.8vw, 3rem); line-height: .96; letter-spacing: -.055em; font-weight: 520; }
++.command-copy p:last-child { margin: 0; max-width: 68ch; color: var(--muted); font-size: .95rem; line-height: 1.48; }
++.command-summary { display: grid; align-content: stretch; border-left: 1px solid var(--line-soft); background: var(--paper); }
++.command-summary div { display: grid; grid-template-columns: 108px minmax(0, 1fr); gap: 12px; padding: 13px 15px; border-bottom: 1px solid var(--line-soft); align-items: start; }
++.command-summary div:last-child { border-bottom: 0; }
++.command-summary span, .queue-card dt { color: var(--faint); text-transform: uppercase; letter-spacing: .10em; font-size: .64rem; font-weight: 780; }
++.command-summary strong { color: var(--ink); font-size: .88rem; line-height: 1.35; overflow-wrap: anywhere; }
++.lucas-queue-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
++.queue-card { display: grid; gap: 12px; padding: 14px; border: 1px solid var(--line-soft); border-radius: var(--radius-sm); background: var(--panel); min-width: 0; }
++.queue-card.now { border-color: oklch(70% 0.032 31); background: linear-gradient(180deg, var(--oxblood-wash), var(--paper)); }
++.queue-card.today { border-color: oklch(72% 0.034 66); background: linear-gradient(180deg, var(--caramel-wash), var(--paper)); }
++.queue-card header, .registry-grid header, .operating-kanban header { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
++.queue-card header span { display: block; margin-bottom: 5px; color: var(--caramel); text-transform: uppercase; letter-spacing: .12em; font-size: .64rem; font-weight: 820; }
++.queue-card h3 { margin: 0; color: var(--ink); font-size: 1rem; line-height: 1.24; letter-spacing: -.025em; }
++.queue-card p { margin: 0; color: var(--muted); font-size: .84rem; line-height: 1.45; }
++.queue-card dl { margin: 0; display: grid; gap: 9px; }
++.queue-card dd { margin: 3px 0 0; color: var(--text); font-size: .8rem; line-height: 1.38; }
++.queue-card footer { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: auto; }
++.queue-card footer code, .queue-card footer span, .registry-grid code { display: inline-flex; width: max-content; max-width: 100%; padding: 5px 7px; border: 1px solid var(--line-soft); border-radius: 8px; background: var(--paper); color: var(--text); font-family: var(--font-mono); font-size: .68rem; overflow-wrap: anywhere; }
++.kanban-panel, .module-registry { padding: 16px; }
++.operating-kanban { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 9px; }
++.operating-kanban article, .registry-grid article { border: 1px solid var(--line-soft); border-radius: var(--radius-sm); background: var(--panel); padding: 12px; min-width: 0; }
++.operating-kanban b, .registry-grid b { color: var(--ink); font-size: .86rem; }
++.operating-kanban header span { min-width: 24px; height: 24px; display: grid; place-items: center; border-radius: 999px; background: var(--paper); border: 1px solid var(--line-soft); color: var(--muted); font-family: var(--font-mono); font-size: .72rem; }
++.operating-kanban p, .registry-grid p { margin: 8px 0 10px; color: var(--muted); font-size: .77rem; line-height: 1.4; }
++.operating-kanban ul { margin: 0; padding-left: 16px; color: var(--muted); font-size: .74rem; line-height: 1.45; }
++.registry-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
++.registry-grid article.locked { border-style: dashed; background: var(--oxblood-wash); }
++.registry-grid article.missing-source { border-style: dashed; background: var(--wash); }
++.registry-grid small { display: block; margin-bottom: 10px; color: var(--faint); font-size: .72rem; line-height: 1.35; }
+ .briefing-ledger { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 420px); gap: 14px; align-items: stretch; }
+ .briefing-copy { padding: clamp(14px, 2vw, 22px); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line-soft); background: linear-gradient(180deg, oklch(99% 0.006 88 / .76), transparent); }
+ .briefing-copy h2 { margin: 6px 0 8px; max-width: 28ch; color: var(--ink); font-family: var(--font-display); font-size: clamp(1.75rem, 3.2vw, 3.15rem); line-height: .96; letter-spacing: -.055em; font-weight: 520; }
+@@ -157,6 +190,8 @@ button { color: inherit; }
+ .dashboard-stack { display: grid; gap: 18px; }
+ .section-title { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+ .section-title h2 { margin: 0; color: var(--ink); font-size: 1.02rem; letter-spacing: -.02em; }
++.decision-title { align-items: end; border-bottom: 1px solid var(--line-soft); padding-bottom: 10px; }
++.decision-title > p { margin: 0; max-width: 34ch; color: var(--muted); font-size: .86rem; line-height: 1.45; text-align: right; }
+ .lane-board { min-width: 0; }
+ .lanes { display: grid; grid-template-columns: repeat(auto-fit, minmax(154px, 1fr)); gap: 10px; }
+ .lane { min-height: 142px; padding: 12px; box-shadow: none; }
+@@ -251,8 +286,10 @@ button { color: inherit; }
+ .seo-flow code { display: block; margin-top: 10px; padding: 9px; border: 1px solid var(--line-soft); border-radius: 10px; background: var(--paper); color: var(--text); font-family: var(--font-mono); font-size: .72rem; line-height: 1.35; white-space: pre-wrap; }
+ 
+ @media (max-width: 1120px) {
+-  .page-head, .split-grid, .tenacitos-layout, .generic-grid, .briefing-ledger, .coo-support-grid, .seo-hero { grid-template-columns: 1fr; }
+-  .status-receipt { max-width: none; }
++  .page-head, .split-grid, .tenacitos-layout, .generic-grid, .briefing-ledger, .command-hero, .coo-support-grid, .seo-hero { grid-template-columns: 1fr; }
++  .command-summary { border-left: 0; border-top: 1px solid var(--line-soft); }
++  .lucas-queue-list, .registry-grid { grid-template-columns: 1fr; }
++  .operating-kanban { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+ }
+ @media (max-width: 820px) {
+   html, body { overflow-x: hidden; }
+@@ -268,7 +305,7 @@ button { color: inherit; }
+   .page-head h1 { font-size: 1.65rem; letter-spacing: -.035em; }
+   .page-head p { font-size: .92rem; }
+   .status-receipt div { grid-template-columns: 78px minmax(0, 1fr); }
+-  .lanes, .domain-ledger, .technical-drilldown .module-list, .seo-grid, .seo-specialist-list, .seo-flow { grid-template-columns: 1fr; }
++  .lanes, .domain-ledger, .technical-drilldown .module-list, .seo-grid, .seo-specialist-list, .seo-flow, .operating-kanban { grid-template-columns: 1fr; }
+   .decision-row { grid-template-columns: 1fr; gap: 10px; }
+   .domain-ledger article { box-shadow: inset 0 -1px 0 var(--line-soft); }
+   .domain-ledger article:last-child { box-shadow: none; }
+@@ -285,6 +322,7 @@ button { color: inherit; }
+   .os-main { padding-inline: 12px; }
+   .panel, .module-map, .status-receipt, .terminal-panel, .workspace-rail, .operation-receipt, .decision-desk, .domain-strip, .approval-ledger, .learning-journal, .technical-drilldown, .seo-hero > div, .seo-scorecard, .seo-grid article { border-radius: 13px; }
+   .section-title { align-items: start; flex-direction: column; gap: 3px; }
++  .decision-title > p { max-width: none; text-align: left; }
+   .module-row { min-height: 0; align-items: start; }
+   .module-row em { display: none; }
+ }
+diff --git a/src/components/modules/CommandActionPanel.tsx b/src/components/modules/CommandActionPanel.tsx
+index 81a3541..eb5db6d 100644
+--- a/src/components/modules/CommandActionPanel.tsx
++++ b/src/components/modules/CommandActionPanel.tsx
+@@ -1,6 +1,7 @@
+ 'use client';
+ 
+ import { useState } from 'react';
++import { opsState } from '@/data/ops-state.generated';
+ 
+ type Receipt = {
+   ok?: boolean;
+@@ -19,18 +20,16 @@ const actions = [
+   { action: 'block', label: 'Bloquear', note: 'Bloqueado por Lucas.' },
+ ];
+ 
+-const packets = [
+-  { id: 'mission-control-vnext-operating-loops', label: 'Operating Loops vNext' },
+-  { id: 'mission-control-safe-execution-bridge', label: 'Execution Bridge' },
+-  { id: 'mission-control-reliability-layer', label: 'Reliability Layer' },
+-  { id: 'lk-operating-intelligence-readonly', label: 'LK Intelligence' },
+-  { id: 'kanban-restricted-dispatch-policy', label: 'Kanban Policy' },
+-];
++const packets = Array.from(
++  new Map(
++    opsState.actionPackets.map((packet) => [packet.packetId, { id: packet.packetId, label: `${packet.company} · ${packet.decision}` }]),
++  ).values(),
++);
+ 
+ export function CommandActionPanel() {
+   const [receipt, setReceipt] = useState<Receipt | null>(null);
+   const [loading, setLoading] = useState<string | null>(null);
+-  const [packetId, setPacketId] = useState(packets[0].id);
++  const [packetId, setPacketId] = useState<string>(packets[0]?.id || 'mission-control-vnext-operating-loops');
+ 
+   async function send(action: string, note: string, endpoint = '/api/mission/approvals') {
+     setLoading(action);
+diff --git a/src/components/modules/MissionPages.tsx b/src/components/modules/MissionPages.tsx
+index a5243fc..7296d47 100644
+--- a/src/components/modules/MissionPages.tsx
++++ b/src/components/modules/MissionPages.tsx
+@@ -1,62 +1,14 @@
+ import { brainSources, modules, safeCommands, seoOfficePrinciples, seoSpecialists, seoWorkflowCards } from '@/data/tenacitos';
++import { cooRhythm, lucasQueue, moduleRegistry, operatingKanban } from '@/data/vnext-operating-system';
++import { CommandActionPanel } from './CommandActionPanel';
+ import { activities } from '@/data/activities';
+ import { cronJobs } from '@/data/cron-jobs';
+ import { domains } from '@/data/domains';
+-import { opsState } from '@/data/ops-state.generated';
+ import { permissionCopy } from '@/lib/permissions';
+-import { CommandActionPanel } from './CommandActionPanel';
+ import type { MissionModule } from '@/data/tenacitos';
+ import type { PermissionLevel } from '@/lib/types';
+ 
+ 
+-type DecisionItem = {
+-  company: string;
+-  decision: string;
+-  impact: string;
+-  source: string;
+-  confidence: string;
+-  gate: PermissionLevel;
+-  safeAction: string;
+-  blockedAction: string;
+-  payload: string;
+-};
+-
+-const decisionInbox: DecisionItem[] = [
+-  {
+-    company: 'LK Sneakers',
+-    decision: 'A/B/C do LK OS está verificado: 15 cards Notion/Júlio criados, 12 DRAFT/404 ausentes no Merchant e 64 atributos sem issue alvo.',
+-    impact: 'A frente aprovada saiu de yellow para verde no escopo aplicado; os próximos residuais Merchant viram novo preview, não reexecução em massa.',
+-    source: 'Notion write audit, Shopify DRAFT probe read-only, Merchant products.get/productstatuses.get e baseline productstatuses',
+-    confidence: 'alta no escopo A/B/C: 12/12 ausentes por GET direto; 64/64 sem color/ageGroup/gender issue',
+-    gate: 'A2',
+-    safeAction: 'Executar autonomamente read-only/local: preview residual, QA de dados, sincronização de skills/docs e watcher silencioso Mission Control.',
+-    blockedAction: 'Novo Merchant/Shopify/Tiny write, tema, campanha, fornecedor, compra ou contato externo sem botões de aprovação com payload/rollback.',
+-    payload: 'Botões esperados: Aprovar escopo · Ajustar · Preview only · Bloquear. Shopify skills: readonly + product-upload já verificadas.'
+-  },
+-  {
+-    company: 'Zipper Galeria',
+-    decision: 'ARPA e feiras viram relacionamento, não só anotação de conversa.',
+-    impact: 'Converte sinal social em follow-up elegante e sem hard sell.',
+-    source: 'WhatsApp pessoal, Zipper Vendas, memória de tom por cliente',
+-    confidence: 'média, depende de contexto do contato',
+-    gate: 'A4',
+-    safeAction: 'Preparar lembrete e texto no tom do cliente para aprovação.',
+-    blockedAction: 'Enviar WhatsApp ou confirmar visita sem aprovação atual.',
+-    payload: 'Sugestão de mensagem deve aparecer inteira no Telegram.',
+-  },
+-  {
+-    company: 'SPITI Auction',
+-    decision: 'Qualquer lote, lance ou cliente exige fonte verificada antes de síntese.',
+-    impact: 'Protege reputação: silêncio é melhor que dado errado.',
+-    source: 'SPITI Hub, email, CRM, Paperclip',
+-    confidence: 'baixa sem fonte primária anexada',
+-    gate: 'A4',
+-    safeAction: 'Mostrar divergência e pedir fonte, sem inventar status.',
+-    blockedAction: 'Afirmar lance, preço, lote ou falar com cliente.',
+-    payload: 'Resumo precisa separar fato, sinal, hipótese e desconhecido.',
+-  },
+-];
+-
+ const safetyLedger = [
+   { label: 'Pode agora', detail: 'Ler, resumir, comparar fontes, preparar pacote, criar evento claro.', gate: 'A1' as PermissionLevel },
+   { label: 'Precisa escopo', detail: 'Preview, branch, PR, docs e mudanças locais reversíveis.', gate: 'A2' as PermissionLevel },
+@@ -64,26 +16,6 @@ const safetyLedger = [
+   { label: 'Precisa aprovação atual', detail: 'Cliente, dinheiro, secrets, WhatsApp, campanhas, compras, destrutivo.', gate: 'A4' as PermissionLevel },
+ ];
+ 
+-const learningJournal = [
+-  { when: 'hoje', title: 'Mordomo WhatsApp', detail: 'Lucas autorizou leitura ampla, tom por cliente e aprovação externa via Telegram.' },
+-  { when: 'hoje', title: 'Mission Control', detail: 'Lucas rejeitou CSS por CSS. A home precisa responder decisão, risco, fonte e próximo gesto.' },
+-  { when: 'fixo', title: 'Zipper em feira', detail: 'ARPA ou feira com Zipper exige perguntar se agenda follow-up para visitar o estande.' },
+-];
+-
+-const operatingRituals = [
+-  { label: '/goal', detail: 'Abrir missões longas no Hermes como objetivo persistente: escopo, evidências, checklist e critério de pronto.' },
+-  { label: '/subgoal', detail: 'Quebrar execução em pacotes menores: pesquisa, implementação, QA, deploy e aprendizado; evita pedir “seguir”.' },
+-  { label: 'Botões de aprovação', detail: 'Pacotes A3/A4 mostram payload, risco, rollback e exclusões inline com opções Aprovar escopo, Ajustar, Preview only ou Bloquear.' },
+-  { label: 'context_from', detail: 'Cron de síntese usa saída recente de coletores/watchers para reduzir repetição e preservar contexto operacional.' },
+-  { label: 'QA obrigatório', detail: 'Todo script que vira cron precisa smoke test, silent-OK, secret scan e registro no Mission Control antes de ficar recorrente.' },
+-];
+-
+-const shopifySkillState = [
+-  { label: 'lk-shopify-readonly', detail: 'Instalada no runtime e espelhada no Brain; GET/query-only por padrão; Tiny continua fonte de estoque.' },
+-  { label: 'lk-shopify-product-upload', detail: 'Instalada separadamente para cadastro/subir produto; não deve ser confundida com análise read-only.' },
+-  { label: 'Guardrail', detail: 'Nenhum write Shopify, Tiny, Merchant, tema, campanha ou contato externo entra sem pacote + aprovação específica.' },
+-];
+-
+ function Gate({ value }: { value: PermissionLevel }) {
+   return <span className={value === 'A4' ? 'gate-pill high' : 'gate-pill'}>{value}</span>;
+ }
+@@ -129,177 +61,81 @@ export function ModuleBody({ module }: { module: MissionModule }) {
+ 
+ function DashboardBody() {
+   const technicalModules = modules.filter((m) => m.primary && m.id !== 'dashboard').slice(0, 8);
+-  return <div className="coo-desk">
+-    <section className="briefing-ledger" aria-labelledby="briefing-title">
+-      <div className="briefing-copy">
+-        <p className="eyebrow">Mesa COO · leitura privada</p>
+-        <h2 id="briefing-title">Decidir menos coisas, com mais evidência.</h2>
+-        <p>Esta superfície não lista módulos primeiro. Ela mostra o que depende de Lucas, qual empresa está em risco, qual fonte sustenta a decisão e qual gesto é seguro agora.</p>
+-        <p className="ops-summary">{opsState.summary}</p>
+-      </div>
+-      <div className="operation-receipt" aria-label="Estado operacional">
+-        <div><span>Modo</span><strong>{opsState.mode}</strong></div>
+-        <div><span>Gerado</span><strong>{new Date(opsState.generatedAt).toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' })}</strong></div>
+-        <div><span>SLA freshness</span><strong>{opsState.freshnessSlaHours}h</strong></div>
+-        <div><span>Fonte</span><strong>ops-state.generated.ts + Brain JSON mirror</strong></div>
++  const liveModules = moduleRegistry.filter((item) => item.maturity === 'live').length;
++  const queueCount = lucasQueue.length;
++  const highestGate = lucasQueue.some((item) => item.gate === 'A4') ? 'A4' : 'A3';
++  const blockedExternalCount = lucasQueue.filter((item) => item.status === 'blocked-external').length;
++  const decisionLabel = queueCount === 1 ? 'decisão aguardando Lucas' : 'decisões aguardando Lucas';
++  const packetLabel = queueCount === 1 ? 'pacote com fonte, gesto seguro, bloqueio e gate A1-A4.' : 'pacotes com fonte, gesto seguro, bloqueio e gate A1-A4.';
++  const blockedLabel = blockedExternalCount === 1 ? 'item externo exige aprovação atual' : 'itens externos exigem aprovação atual';
++
++  return <div className="coo-desk vnext-desk">
++    <section className="command-hero" aria-labelledby="briefing-title">
++      <div className="command-copy">
++        <p className="eyebrow">Mesa COO · Decision Inbox</p>
++        <h2 id="briefing-title">A fila de decisão abre o dia.</h2>
++        <p>O Mission Control deixa de ser inventário de módulos e vira estação de trabalho: decisão no topo, risco claro, fonte explícita e próximo gesto seguro.</p>
+       </div>
++      <aside className="command-summary" aria-label="Resumo executivo">
++        <div><span>Agora</span><strong>{queueCount} {decisionLabel}</strong></div>
++        <div><span>Gate máximo</span><strong>{highestGate} · nada externo sem payload</strong></div>
++        <div><span>Bloqueios</span><strong>{blockedExternalCount} {blockedLabel}</strong></div>
++        <div><span>Módulos vivos</span><strong>{liveModules}/{moduleRegistry.length} com fonte acionável</strong></div>
++      </aside>
+     </section>
+ 
+-    <section className="decision-desk" aria-labelledby="decision-title">
+-      <div className="section-title"><span className="eyebrow">Decision Inbox</span><h2 id="decision-title">O que precisa de julgamento</h2></div>
+-      <div className="decision-list">{decisionInbox.map((item) => <article className="decision-row" key={item.company}>
+-        <div className="decision-company"><b>{item.company}</b><Gate value={item.gate}/></div>
+-        <div className="decision-main"><h3>{item.decision}</h3><p>{item.impact}</p></div>
+-        <dl className="decision-evidence">
+-          <div><dt>Fonte</dt><dd>{item.source}</dd></div>
+-          <div><dt>Confiança</dt><dd>{item.confidence}</dd></div>
++    <section className="decision-desk lucas-queue" aria-labelledby="lucas-queue-title">
++      <div className="section-title decision-title"><div><span className="eyebrow">Decision Inbox · Lucas Queue</span><h2 id="lucas-queue-title">Decidir agora, aprovar com escopo ou bloquear</h2></div><p>{queueCount} {packetLabel}</p></div>
++      <div className="lucas-queue-list">{lucasQueue.map((item) => <article className={`queue-card ${item.severity}`} key={item.id}>
++        <header><div><span>{item.domain}</span><h3>{item.title}</h3></div><Gate value={item.gate}/></header>
++        <p>{item.why}</p>
++        <dl>
++          <div><dt>Fonte</dt><dd>{item.evidence}</dd></div>
++          <div><dt>Próximo gesto</dt><dd>{item.nextGesture}</dd></div>
++          <div><dt>Bloqueado</dt><dd>{item.blocked}</dd></div>
+         </dl>
+-        <div className="decision-actions">
+-          <div><span>Seguro agora</span><p>{item.safeAction}</p></div>
+-          <div><span>Bloqueado</span><p>{item.blockedAction}</p></div>
+-          <code>{item.payload}</code>
+-        </div>
++        <footer><code>{item.status}</code><span>{item.severity}</span></footer>
+       </article>)}</div>
+     </section>
+ 
+-    <section className="domain-strip" aria-labelledby="domain-title">
+-      <div className="section-title"><span className="eyebrow">Empresas</span><h2 id="domain-title">Status por domínio</h2></div>
+-      <div className="domain-ledger">{domains.map((domain) => <article key={domain.id}>
+-        <header><b>{domain.name}</b><Gate value={domain.permission}/></header>
+-        <p>{domain.nextStep}</p>
+-        <small>{domain.sources.join(' · ')}</small>
+-      </article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="ops-health-title">
+-      <div className="section-title"><span className="eyebrow">Health Center</span><h2 id="ops-health-title">Saúde operacional gerada pelo Hermes</h2></div>
+-      <div className="ops-registry">{opsState.healthCenter.map((item) => <article key={item.system}><b>{item.system}</b><p><span className="state-dot">{item.status}</span> · {item.signal}</p></article>)}</div>
+-      <div className="ops-registry compact-grid">{opsState.health.map((item) => <article key={item.label}><b>{item.label}</b><p><span className="state-dot">{item.status}</span> · {item.detail}</p></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="improvements12-title">
+-      <div className="section-title"><span className="eyebrow">12 melhorias</span><h2 id="improvements12-title">De vitrine operacional para sistema vivo de comando</h2></div>
+-      <div className="improvement-grid">{opsState.improvements12.map((item) => <article key={item.id} className={String(item.state) === 'preview-locked' ? 'locked' : ''}>
+-        <header><span>{item.priority}</span><Gate value={item.gate}/></header>
+-        <b>{item.title}</b>
+-        <p>{item.outcome}</p>
+-        <code>{item.state}</code>
+-      </article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="command-system-title">
+-      <div className="section-title"><span className="eyebrow">Command System</span><h2 id="command-system-title">Botões, backend, API pública e workers com trava de segurança</h2></div>
+-      <div className="ops-registry">{opsState.commandSystem.map((item) => <article key={item.name}><Gate value={item.gate}/><b>{item.name}</b><p><span className="state-dot">{item.status}</span> · {item.detail}</p></article>)}</div>
++    <section className="technical-drilldown command-dock" aria-labelledby="command-dock-title">
++      <div className="section-title"><span className="eyebrow">Action API</span><h2 id="command-dock-title">Recibos locais para os pacotes da fila</h2></div>
+       <CommandActionPanel />
+     </section>
+ 
+-    <section className="decision-desk" aria-labelledby="waiting-lucas-title">
+-      <div className="section-title"><span className="eyebrow">Waiting Lucas</span><h2 id="waiting-lucas-title">Fila real de aprovação/decisão</h2></div>
+-      <div className="decision-list">{opsState.waitingLucas.map((item) => <article className="decision-row compact" key={`${item.company}-${item.decision}`}>
+-        <div className="decision-company"><b>{item.company}</b><Gate value={item.gate}/></div>
+-        <div className="decision-main"><h3>{item.decision}</h3><p>{item.recommendation}</p><small>Packet: {item.packetId} · expira {item.expiresAt}</small></div>
+-        <div className="decision-actions"><code>Botões: Aprovar escopo · Ajustar · Preview only · Bloquear</code></div>
++    <section className="kanban-panel" aria-labelledby="kanban-title">
++      <div className="section-title"><span className="eyebrow">Kanban vivo</span><h2 id="kanban-title">Fluxo operacional único</h2></div>
++      <div className="operating-kanban">{operatingKanban.map((lane) => <article key={lane.title}>
++        <header><b>{lane.title}</b><span>{lane.items.length}</span></header>
++        <p>{lane.promise}</p>
++        <ul>{lane.items.map((item) => <li key={item}>{item}</li>)}</ul>
+       </article>)}</div>
+     </section>
+ 
+-    <section className="technical-drilldown" aria-labelledby="packets-title">
+-      <div className="section-title"><span className="eyebrow">Action Packets</span><h2 id="packets-title">Decisões padronizadas com expiração e rollback</h2></div>
+-      <div className="ops-registry">{opsState.actionPackets.map((packet) => <article key={packet.packetId}><Gate value={packet.gate}/><b>{packet.decision}</b><p>{packet.company} · {packet.status} · confiança {packet.confidence}</p><code>{packet.packetId} · hash {packet.payloadHash} · expira {packet.expiresAt}</code><p>{packet.safeAction}</p></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="event-ledger-title">
+-      <div className="section-title"><span className="eyebrow">Event Ledger</span><h2 id="event-ledger-title">Recibos e eventos auditáveis</h2></div>
+-      <div className="ops-registry">{opsState.eventLedger.map((event) => <article key={event.eventId}><Gate value={event.gate}/><b>{event.action} · {event.status}</b><p>{event.summary}</p><code>{event.eventId} · {event.packetId} · {event.ts}</code></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="generated-ledger-title">
+-      <div className="section-title"><span className="eyebrow">Approval Ledger</span><h2 id="generated-ledger-title">Escopo aprovado, risco e rollback por gate</h2></div>
+-      <div className="ops-registry">{opsState.approvalLedger.map((item) => <article key={item.gate}><Gate value={item.gate}/><b>{item.title}</b><p>{item.scope}</p><code>{item.buttons}</code></article>)}</div>
++    <section className="module-registry" aria-labelledby="module-registry-title">
++      <div className="section-title"><span className="eyebrow">TenacitOS adaptado</span><h2 id="module-registry-title">Módulos que precisam existir, com maturidade honesta</h2></div>
++      <div className="registry-grid">{moduleRegistry.map((item) => <article key={item.name} className={item.maturity}>
++        <header><b>{item.name}</b><Gate value={item.gate}/></header>
++        <p>{item.purpose}</p>
++        <small>{item.source}</small>
++        <code>{item.maturity}</code>
++      </article>)}</div>
+     </section>
+ 
+     <div className="coo-support-grid">
+-      <section className="approval-ledger" aria-labelledby="risk-title">
+-        <div className="section-title"><span className="eyebrow">Risk Ledger</span><h2 id="risk-title">Gramática A0-A4</h2></div>
+-        <div className="approval-list">{safetyLedger.map((item) => <article key={item.label}><Gate value={item.gate}/><div><b>{item.label}</b><p>{item.detail}</p></div></article>)}</div>
++      <section className="approval-ledger" aria-labelledby="rhythm-title">
++        <div className="section-title"><span className="eyebrow">Ritual diário</span><h2 id="rhythm-title">Como usar no dia a dia</h2></div>
++        <div className="approval-list">{cooRhythm.map((item) => <article key={item.label}><div><b>{item.label}</b><p>{item.detail}</p></div></article>)}</div>
+       </section>
+ 
+-      <section className="learning-journal" aria-labelledby="learning-title">
+-        <div className="section-title"><span className="eyebrow">Learning Journal</span><h2 id="learning-title">Correções que viraram regra</h2></div>
+-        <div className="activity-list">{learningJournal.map((item) => <article key={item.title}><time>{item.when}</time><div><b>{item.title}</b><p>{item.detail}</p></div></article>)}</div>
++      <section className="learning-journal" aria-labelledby="guardrail-title">
++        <div className="section-title"><span className="eyebrow">Guardrails</span><h2 id="guardrail-title">Autonomia sem acidente</h2></div>
++        <div className="approval-list">{safetyLedger.map((item) => <article key={item.label}><Gate value={item.gate}/><div><b>{item.label}</b><p>{item.detail}</p></div></article>)}</div>
+       </section>
+     </div>
+ 
+-    <section className="technical-drilldown" aria-labelledby="ritual-title">
+-      <div className="section-title"><span className="eyebrow">Rituais Hermes v0.14</span><h2 id="ritual-title">Mais autonomia, com aprovação estruturada onde importa</h2></div>
+-      <div className="ops-registry">{operatingRituals.map((item) => <article key={item.label}><b>{item.label}</b><p>{item.detail}</p></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="watcher-title">
+-      <div className="section-title"><span className="eyebrow">Watchers</span><h2 id="watcher-title">Monitores silenciosos que só interrompem com anomalia acionável</h2></div>
+-      <div className="watcher-list">{opsState.watchers.map((item) => <article key={item.id}><div><b>{item.name}</b><span>{item.cadence}</span></div><p>{item.id}</p><code>{item.contract}</code></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="kanban-policy-title">
+-      <div className="section-title"><span className="eyebrow">Kanban Policy</span><h2 id="kanban-policy-title">Dispatch por lane com trava read-only/local</h2></div>
+-      <div className="ops-registry">{opsState.kanbanPolicy.map((item) => <article key={item.lane}><b>{item.lane}</b><p>{item.rule}</p><code>{item.autoDispatch} · {item.allowedProfiles}</code></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="rollback-title">
+-      <div className="section-title"><span className="eyebrow">Rollback Registry</span><h2 id="rollback-title">Como voltar cada peça ao estado seguro</h2></div>
+-      <div className="ops-registry">{opsState.rollbackRegistry.map((item) => <article key={item.component}><Gate value={item.risk}/><b>{item.component}</b><p>{item.rollback}</p><code>last good: {item.lastGood}</code></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="lk-intelligence-title">
+-      <div className="section-title"><span className="eyebrow">LK Operating Intelligence</span><h2 id="lk-intelligence-title">Sinais comerciais read-only, sem writes automáticos</h2></div>
+-      <div className="ops-registry">{opsState.lkOperatingIntelligence.map((item) => <article key={item.signal}><b>{item.signal}</b><p>{item.source}</p><code>{item.status}</code><p>{item.next}</p></article>)}</div>
+-      <div className="ops-registry compact-grid">{opsState.lkIntelligenceCards.map((card) => <article key={card.id}><Gate value={card.gate}/><b>{card.title}</b><p>{card.source} · {card.status} · {card.priority}</p><code>{card.evidence}</code><p>{card.recommendedNext}</p></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="vnext-title">
+-      <div className="section-title"><span className="eyebrow">Operating Loops vNext</span><h2 id="vnext-title">Loops fechados: PR, inbox, lifecycle, brief e ruído</h2></div>
+-      <div className="ops-registry">
+-        <article><b>Git/PR Source</b><p>{opsState.gitSourceControl.branch} · {opsState.gitSourceControl.formalPrStatus}</p><code>{opsState.gitSourceControl.remote} · {opsState.gitSourceControl.changedFiles} arquivos</code></article>
+-        {opsState.approvalHardening.map((item) => <article key={item.control}><b>{item.control}</b><p>{item.detail}</p><code>{item.status}</code></article>)}
+-      </div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="central-inbox-title">
+-      <div className="section-title"><span className="eyebrow">Central Inbox</span><h2 id="central-inbox-title">Tudo que depende de Lucas, com expiração</h2></div>
+-      <div className="decision-list">{opsState.centralInbox.map((item) => <article className="decision-row compact" key={`${item.company}-${item.packetId}-${item.decision}`}><div className="decision-company"><b>{item.company}</b><Gate value={item.gate}/></div><div className="decision-main"><h3>{item.decision}</h3><p>{item.recommendation}</p><small>{item.packetId} · expira {item.expiresAt}</small></div><div className="decision-actions"><code>gate {item.gate}</code></div></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="lifecycle-title">
+-      <div className="section-title"><span className="eyebrow">Event Lifecycle</span><h2 id="lifecycle-title">Máquina de estado dos approvals</h2></div>
+-      <div className="ops-registry">{opsState.eventLifecycle.map((item) => <article key={item.state}><b>{item.state}</b><p>{item.meaning}</p><code>next: {item.next}</code></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="coo-brief-title">
+-      <div className="section-title"><span className="eyebrow">Daily COO Brief</span><h2 id="coo-brief-title">Brief diário consolidado por empresa e sistema</h2></div>
+-      <div className="ops-registry">{opsState.dailyCooBrief.map((item) => <article key={item.section}><b>{item.section}</b><p>{item.source}</p><code>{item.output}</code></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="noise-title">
+-      <div className="section-title"><span className="eyebrow">Noise Budget</span><h2 id="noise-title">Orçamento de alertas para evitar spam operacional</h2></div>
+-      <div className="ops-registry">{opsState.noiseBudget.map((item) => <article key={item.class}><b>{item.class}</b><p>{item.current}</p><code>{item.budget} · {item.action}</code></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="profiles-title">
+-      <div className="section-title"><span className="eyebrow">Worker Profiles</span><h2 id="profiles-title">Especialistas restritos por gate máximo</h2></div>
+-      <div className="ops-registry">{opsState.workerProfiles.map((item) => <article key={item.profile}><b>{item.profile}</b><p>{item.tools}</p><code>{item.gateMax} · negado: {item.denied}</code></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="bridge-title">
+-      <div className="section-title"><span className="eyebrow">Execution Bridge</span><h2 id="bridge-title">Execução só A1/A2 local, sem comando arbitrário</h2></div>
+-      <div className="ops-registry">{opsState.executionBridge.map((item) => <article key={item.action}><Gate value={item.gate}/><b>{item.action}</b><p>{item.effect}</p><code>{item.status}</code></article>)}</div>
+-    </section>
+-
+-    <section className="technical-drilldown" aria-labelledby="shopify-title">
+-      <div className="section-title"><span className="eyebrow">Shopify Skill</span><h2 id="shopify-title">Verificado antes de planejar: já existe e está operacionalizado</h2></div>
+-      <div className="ops-registry">{shopifySkillState.map((item) => <article key={item.label}><b>{item.label}</b><p>{item.detail}</p></article>)}</div>
+-    </section>
+-
+     <section className="technical-drilldown" aria-labelledby="drill-title">
+-      <div className="section-title"><span className="eyebrow">Drill-down</span><h2 id="drill-title">Módulos técnicos, quando precisar investigar</h2></div>
++      <div className="section-title"><span className="eyebrow">Drill-down</span><h2 id="drill-title">Módulos técnicos ficam abaixo da mesa decisória</h2></div>
+       <div className="module-list">{technicalModules.map((item) => <ModuleRow module={item} key={item.id}/>)}</div>
+     </section>
+   </div>;
+diff --git a/src/data/ops-state.generated.ts b/src/data/ops-state.generated.ts
+index c2a7ad7..daa3b38 100644
+--- a/src/data/ops-state.generated.ts
++++ b/src/data/ops-state.generated.ts
+@@ -1,7 +1,7 @@
+ import type { PermissionLevel } from '@/lib/types';
+ 
+ export const opsState = {
+-  "generatedAt": "2026-05-16T14:05:19Z",
++  "generatedAt": "2026-05-16T15:15:20Z",
+   "mode": "vNext operating-loops active + approval-gated",
+   "freshnessSlaHours": 24,
+   "summary": "Mission Control agora opera com Operating Loops: fonte Git/PR preparada, auth hardening, LK cards read-only, inbox central, lifecycle ledger, Daily COO Brief, noise budget, worker profiles e execution bridge A1/A2 sem writes externos.",
+@@ -9,12 +9,12 @@ export const opsState = {
+     {
+       "label": "Mission Control generated feed",
+       "status": "verified",
+-      "detail": "/opt/data/hermes_bruno_ingest/mission-control-cimino-hermes/src/data/ops-state.generated.ts existe (18391 bytes)"
++      "detail": "/opt/data/hermes_bruno_ingest/mission-control-cimino-hermes/src/data/ops-state.generated.ts existe (31580 bytes)"
+     },
+     {
+       "label": "Brain JSON mirror",
+       "status": "verified",
+-      "detail": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/mission-control-ops-state-latest.json existe (18202 bytes)"
++      "detail": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/mission-control-ops-state-latest.json existe (31391 bytes)"
+     },
+     {
+       "label": "Event Ledger Brain mirror",
+@@ -29,7 +29,7 @@ export const opsState = {
+     {
+       "label": "Mission Control watchdog",
+       "status": "verified",
+-      "detail": "/opt/data/scripts/mission_control_ops_watchdog.py existe (6935 bytes)"
++      "detail": "/opt/data/scripts/mission_control_ops_watchdog.py existe (7149 bytes)"
+     },
+     {
+       "label": "Compression self-heal watchdog",
+@@ -81,12 +81,17 @@ export const opsState = {
+     {
+       "system": "Git/PR",
+       "status": "yellow",
+-      "signal": "local-package-ready; remote push/PR requires explicit source-of-truth approval · branch feat/agric-daniel-seo-office · 15 arquivos modificados"
++      "signal": "local-package-ready; remote push/PR requires explicit source-of-truth approval · branch rebuild/mission-control-zero-tenacitos-20260516 · 1 arquivos modificados"
+     },
+     {
+       "system": "Noise Budget",
+       "status": "green",
+       "signal": "Crons classificados por orçamento de ruído; repetição vira digest, crítico rompe silêncio."
++    },
++    {
++      "system": "Feed Quality",
++      "status": "green",
++      "signal": "6 packets únicos; 4/4 decisões Waiting Lucas cobertas; duplicatas removidas: 0."
+     }
+   ],
+   "commandSystem": [
+@@ -221,14 +226,14 @@ export const opsState = {
+   ],
+   "actionPackets": [
+     {
+-      "packetId": "mission-control-vnext-operating-loops",
++      "packetId": "mission-control-reliability-layer",
+       "company": "Mission Control",
+       "decision": "Ativar Reliability Layer completo",
+       "gate": "A3",
+       "status": "approved-executing",
+       "confidence": "alta",
+       "source": "Telegram Lucas + local QA",
+-      "expiresAt": "2026-05-17T14:05:19Z",
++      "expiresAt": "2026-05-17T15:15:20Z",
+       "payloadHash": "c71b32836e081788",
+       "recommendedAction": "approve_scope",
+       "safeAction": "Deploy Vercel Mission Control + Brain/local ledgers + read-only health checks",
+@@ -243,7 +248,7 @@ export const opsState = {
+       "status": "ready",
+       "confidence": "média",
+       "source": "Shopify skills, GA4, Metricool, GMC, Brain",
+-      "expiresAt": "2026-05-17T14:05:19Z",
++      "expiresAt": "2026-05-17T15:15:20Z",
+       "payloadHash": "58003b0b9fc5fe88",
+       "recommendedAction": "preview_only",
+       "safeAction": "Gerar ranking de oportunidades e anomalias sem writes",
+@@ -258,7 +263,7 @@ export const opsState = {
+       "status": "active-restricted",
+       "confidence": "alta",
+       "source": "lk-growth-ops stats + smoke card",
+-      "expiresAt": "2026-05-17T14:05:19Z",
++      "expiresAt": "2026-05-17T15:15:20Z",
+       "payloadHash": "88bcd4cf397e34f7",
+       "recommendedAction": "kanban_dispatch_packet",
+       "safeAction": "Atribuir apenas cards explicitamente read-only/local aos perfis restritos",
+@@ -273,7 +278,7 @@ export const opsState = {
+       "status": "approved-executing",
+       "confidence": "alta",
+       "source": "Telegram Lucas + Reliability Layer QA",
+-      "expiresAt": "2026-05-17T14:05:19Z",
++      "expiresAt": "2026-05-17T15:15:20Z",
+       "payloadHash": "f33bb3cf4d2c7567",
+       "recommendedAction": "approve_scope",
+       "safeAction": "PR package, auth hardening, inbox central, lifecycle, Daily COO Brief, noise budget e execution bridge A1/A2 sem writes externos",
+@@ -288,12 +293,27 @@ export const opsState = {
+       "status": "active-restricted",
+       "confidence": "média",
+       "source": "Operating Loops guardrails",
+-      "expiresAt": "2026-05-17T14:05:19Z",
++      "expiresAt": "2026-05-17T15:15:20Z",
+       "payloadHash": "0cfce9331be3519d",
+       "recommendedAction": "execute_safe",
+       "safeAction": "Marcar packet local, gerar relatório, criar draft local/Brain ou card Kanban read-only; sem externo",
+       "blockedAction": "qualquer shell arbitrário, segredo, fonte verdade, externo, dinheiro, cliente, Docker ou write LK",
+       "rollback": "remover rota execute e ocultar botão Execution Bridge"
++    },
++    {
++      "packetId": "zipper-followup-draft-only",
++      "company": "Zipper Galeria",
++      "decision": "Transformar follow-ups de feira em drafts aprováveis",
++      "gate": "A4",
++      "status": "draft-only",
++      "confidence": "média",
++      "source": "Zipper OS cockpit local + política de envio A4",
++      "expiresAt": "2026-05-17T15:15:20Z",
++      "payloadHash": "518fa8126d7e89d2",
++      "recommendedAction": "preview_only",
++      "safeAction": "Gerar rascunho local com payload completo para Lucas revisar",
++      "blockedAction": "WhatsApp/email/cliente/galerista externo sem aprovação atual do texto e destinatário",
++      "rollback": "arquivar rascunho local; nenhum envio externo executado"
+     }
+   ],
+   "eventLedger": [
+@@ -356,7 +376,7 @@ export const opsState = {
+       "gate": "A3",
+       "packetId": "mission-control-reliability-layer",
+       "ageHours": 0,
+-      "expiresAt": "2026-05-17T14:05:19Z"
++      "expiresAt": "2026-05-17T15:15:20Z"
+     },
+     {
+       "company": "LK Sneakers",
+@@ -365,7 +385,7 @@ export const opsState = {
+       "gate": "A2",
+       "packetId": "lk-operating-intelligence-readonly",
+       "ageHours": 0,
+-      "expiresAt": "2026-05-17T14:05:19Z"
++      "expiresAt": "2026-05-17T15:15:20Z"
+     },
+     {
+       "company": "Hermes Runtime",
+@@ -374,7 +394,7 @@ export const opsState = {
+       "gate": "A3",
+       "packetId": "kanban-restricted-dispatch-policy",
+       "ageHours": 0,
+-      "expiresAt": "2026-05-17T14:05:19Z"
++      "expiresAt": "2026-05-17T15:15:20Z"
+     },
+     {
+       "company": "Zipper Galeria",
+@@ -383,7 +403,7 @@ export const opsState = {
+       "gate": "A4",
+       "packetId": "zipper-followup-draft-only",
+       "ageHours": 0,
+-      "expiresAt": "2026-05-17T14:05:19Z"
++      "expiresAt": "2026-05-17T15:15:20Z"
+     }
+   ],
+   "kanbanPolicy": [
+@@ -489,9 +509,9 @@ export const opsState = {
+     }
+   ],
+   "gitSourceControl": {
+-    "branch": "feat/agric-daniel-seo-office",
++    "branch": "rebuild/mission-control-zero-tenacitos-20260516",
+     "remote": "github:lk-snkrs/mission-control-cimino.git",
+-    "changedFiles": 15,
++    "changedFiles": 1,
+     "formalPrStatus": "local-package-ready; remote push/PR requires explicit source-of-truth approval",
+     "rollback": "git checkout previous commit/branch + promote previous Vercel deploy"
+   },
+@@ -520,7 +540,7 @@ export const opsState = {
+       "gate": "A3",
+       "packetId": "mission-control-reliability-layer",
+       "ageHours": 0,
+-      "expiresAt": "2026-05-17T14:05:19Z"
++      "expiresAt": "2026-05-17T15:15:20Z"
+     },
+     {
+       "company": "LK Sneakers",
+@@ -529,7 +549,7 @@ export const opsState = {
+       "gate": "A2",
+       "packetId": "lk-operating-intelligence-readonly",
+       "ageHours": 0,
+-      "expiresAt": "2026-05-17T14:05:19Z"
++      "expiresAt": "2026-05-17T15:15:20Z"
+     },
+     {
+       "company": "Hermes Runtime",
+@@ -538,7 +558,7 @@ export const opsState = {
+       "gate": "A3",
+       "packetId": "kanban-restricted-dispatch-policy",
+       "ageHours": 0,
+-      "expiresAt": "2026-05-17T14:05:19Z"
++      "expiresAt": "2026-05-17T15:15:20Z"
+     },
+     {
+       "company": "Zipper Galeria",
+@@ -547,7 +567,7 @@ export const opsState = {
+       "gate": "A4",
+       "packetId": "zipper-followup-draft-only",
+       "ageHours": 0,
+-      "expiresAt": "2026-05-17T14:05:19Z"
++      "expiresAt": "2026-05-17T15:15:20Z"
+     },
+     {
+       "company": "LK Sneakers",
+@@ -556,7 +576,7 @@ export const opsState = {
+       "gate": "A2",
+       "packetId": "lk-operating-intelligence-readonly",
+       "ageHours": 0,
+-      "expiresAt": "2026-05-17T14:05:19Z"
++      "expiresAt": "2026-05-17T15:15:20Z"
+     },
+     {
+       "company": "Mission Control",
+@@ -565,7 +585,7 @@ export const opsState = {
+       "gate": "A3",
+       "packetId": "mission-control-vnext-operating-loops",
+       "ageHours": 0,
+-      "expiresAt": "2026-05-17T14:05:19Z"
++      "expiresAt": "2026-05-17T15:15:20Z"
+     }
+   ],
+   "eventLifecycle": [
+@@ -754,7 +774,7 @@ export const opsState = {
+       "status": "read-only-card",
+       "source": "GMC / Merchant read-only",
+       "evidence": "lk-gmc-2026-05-15-a42-post-fallback-readonly-recheck.json",
+-      "ageHours": 15,
++      "ageHours": 16,
+       "recommendedNext": "Revisar divergências de fonte/preço antes de qualquer Content API write.",
+       "blocked": "Shopify/Tiny/Merchant write, compra, fornecedor, preço, campanha ou contato externo sem A4."
+     },
+@@ -766,7 +786,7 @@ export const opsState = {
+       "status": "read-only-card",
+       "source": "Tiny snapshot read-only",
+       "evidence": "lk-os-tiny-stock-snapshot-full-readonly-2026-05-15.json",
+-      "ageHours": 17,
++      "ageHours": 18,
+       "recommendedNext": "Usar Tiny como estoque verdade; Shopify stock não decide disponibilidade sozinho.",
+       "blocked": "Shopify/Tiny/Merchant write, compra, fornecedor, preço, campanha ou contato externo sem A4."
+     },
+@@ -778,7 +798,7 @@ export const opsState = {
+       "status": "read-only-card",
+       "source": "SKU saneamento read-only",
+       "evidence": "lk-sku-tiny-manual-cadastro-needed-pace-rhode-saintstudio-2026-05-15.md",
+-      "ageHours": 19,
++      "ageHours": 20,
+       "recommendedNext": "Manter fila Júlio/Lucas; não pular para compra/sourcing até SKU verdade.",
+       "blocked": "Shopify/Tiny/Merchant write, compra, fornecedor, preço, campanha ou contato externo sem A4."
+     },
+@@ -790,7 +810,7 @@ export const opsState = {
+       "status": "read-only-card",
+       "source": "LK daily sales watchdog",
+       "evidence": "lk-os-daily-sales-brief-2026-05-10.json",
+-      "ageHours": 3,
++      "ageHours": 4,
+       "recommendedNext": "Converter achados em cards de oportunidade, sem preço/campanha/compra automática.",
+       "blocked": "Shopify/Tiny/Merchant write, compra, fornecedor, preço, campanha ou contato externo sem A4."
+     },
+@@ -888,7 +908,18 @@ export const opsState = {
+       "path": "/opt/data/scripts/mission_control_ops_watchdog.py",
+       "kind": "runtime silent watchdog"
+     }
+-  ]
++  ],
++  "feedQuality": {
++    "status": "green",
++    "packetCount": 6,
++    "waitingLucasCount": 4,
++    "waitingPacketCoverage": 4,
++    "duplicatePacketIdsRemoved": [],
++    "missingWaitingPackets": [],
++    "expiredPackets": [],
++    "staleEvidence": [],
++    "contract": "packetId único; waitingLucas sempre referencia actionPacket existente; fontes antigas aparecem como atenção, não como fato fresco."
++  }
+ } as const;
+ 
+ export type OpsApproval = { gate: PermissionLevel; title: string; scope: string; buttons: string };
+diff --git a/src/data/vnext-operating-system.ts b/src/data/vnext-operating-system.ts
+new file mode 100644
+index 0000000..a7e8fab
+--- /dev/null
++++ b/src/data/vnext-operating-system.ts
+@@ -0,0 +1,165 @@
++import { opsState } from '@/data/ops-state.generated';
++import type { PermissionLevel } from '@/lib/types';
++
++export type QueueSeverity = 'now' | 'today' | 'watch';
++export type QueueStatus = 'needs-lucas' | 'preview-ready' | 'blocked-external' | 'safe-autonomy';
++export type KanbanLaneId = 'capture' | 'triage' | 'decision' | 'execution' | 'learning' | 'qa' | 'done';
++export type ModuleMaturity = 'live' | 'preview' | 'locked' | 'missing-source';
++
++export interface LucasQueueItem {
++  id: string;
++  domain: string;
++  title: string;
++  why: string;
++  evidence: string;
++  nextGesture: string;
++  blocked: string;
++  gate: PermissionLevel;
++  severity: QueueSeverity;
++  status: QueueStatus;
++}
++
++export interface OperatingKanbanLane {
++  id: KanbanLaneId;
++  title: string;
++  promise: string;
++  items: string[];
++}
++
++export interface ModuleRegistryItem {
++  name: string;
++  purpose: string;
++  source: string;
++  maturity: ModuleMaturity;
++  gate: PermissionLevel;
++}
++
++export interface CooRhythmItem {
++  label: string;
++  detail: string;
++}
++
++function slug(input: string): string {
++  const normalized = input
++    .normalize('NFKD')
++    .replace(/[\u0300-\u036f]/g, '')
++    .toLowerCase()
++    .replace(/[^a-z0-9]+/g, '-')
++    .replace(/^-+|-+$/g, '');
++  return normalized || 'lane';
++}
++
++function gateSeverity(gate: PermissionLevel, index: number): QueueSeverity {
++  if (gate === 'A4') return 'watch';
++  if (gate === 'A3') return 'today';
++  return index === 0 ? 'now' : 'today';
++}
++
++function gateStatus(gate: PermissionLevel): QueueStatus {
++  if (gate === 'A4') return 'blocked-external';
++  if (gate === 'A3') return 'needs-lucas';
++  return 'preview-ready';
++}
++
++function findPacket(packetId: string) {
++  return opsState.actionPackets.find((packet) => packet.packetId === packetId);
++}
++
++export const lucasQueue: LucasQueueItem[] = opsState.waitingLucas.map((item, index) => {
++  const packet = findPacket(item.packetId);
++  return {
++    id: item.packetId,
++    domain: item.company,
++    title: item.decision,
++    why: item.recommendation,
++    evidence: packet?.source || `opsState.waitingLucas · gerado em ${opsState.generatedAt}`,
++    nextGesture: packet?.safeAction || 'Preparar pacote de decisão com fonte, risco e rollback antes de qualquer execução sensível.',
++    blocked: packet?.blockedAction || 'Ações externas, fontes de verdade, dinheiro, cliente, Docker/host e secrets continuam bloqueados sem aprovação atual.',
++    gate: item.gate,
++    severity: gateSeverity(item.gate, index),
++    status: gateStatus(item.gate),
++  };
++});
++
++const kanbanLaneMap: Partial<Record<string, KanbanLaneId>> = {
++  backlog: 'capture',
++  'ready-read-only': 'triage',
++  doing: 'execution',
++  'waiting-lucas': 'decision',
++  'waiting-external': 'decision',
++  qa: 'qa',
++  done: 'done',
++};
++
++export const operatingKanban: OperatingKanbanLane[] = opsState.kanbanPolicy.map((lane) => {
++  const laneSlug = slug(lane.lane);
++  const id = kanbanLaneMap[laneSlug] || 'triage';
++  return {
++    id,
++    title: lane.lane,
++    promise: lane.rule,
++    items: [
++      `dispatch: ${lane.autoDispatch}`,
++      `profiles: ${lane.allowedProfiles}`,
++      lane.autoDispatch === 'never' ? 'segura até Lucas desbloquear' : 'somente read-only/local',
++    ],
++  };
++});
++
++export const moduleRegistry: ModuleRegistryItem[] = [
++  {
++    name: 'Lucas Queue',
++    purpose: `${opsState.waitingLucas.length} decisões derivadas de opsState.waitingLucas e actionPackets.`,
++    source: `ops-state.generated.ts · ${opsState.generatedAt}`,
++    maturity: 'live',
++    gate: 'A2',
++  },
++  {
++    name: 'Action Packets',
++    purpose: `${opsState.actionPackets.length} pacotes com hash, expiração, safeAction e blockedAction.`,
++    source: '/api/mission/packets + approval receipt backend',
++    maturity: 'live',
++    gate: 'A3',
++  },
++  {
++    name: 'Kanban restrito',
++    purpose: `${opsState.kanbanPolicy.length} lanes com política de dispatch; browser nunca executa workers.`,
++    source: '/api/mission/kanban + lk-growth-ops policy',
++    maturity: 'live',
++    gate: 'A3',
++  },
++  {
++    name: 'Health Center',
++    purpose: `${opsState.healthCenter.length} sinais de saúde sanitizados para status executivo.`,
++    source: '/api/mission/state publicState() no-store/noindex',
++    maturity: 'live',
++    gate: 'A1',
++  },
++  {
++    name: 'Command Palette',
++    purpose: 'Botões geram recibos e contratos; não shell arbitrário nem write externo.',
++    source: '/api/mission/approvals + /execute allowlist',
++    maturity: 'preview',
++    gate: 'A4',
++  },
++  {
++    name: 'Feed Quality',
++    purpose: `${opsState.feedQuality.packetCount} packets únicos; ${opsState.feedQuality.waitingPacketCoverage}/${opsState.feedQuality.waitingLucasCount} decisões cobertas; status ${opsState.feedQuality.status}.`,
++    source: 'scripts/mission_control_ops_state.py validate_state() + feedQuality',
++    maturity: 'live',
++    gate: 'A1',
++  },
++  {
++    name: 'Cost & Sessions',
++    purpose: 'Só deve sair de placeholder quando houver fonte real de runtime/sessão/custo.',
++    source: 'runtime/session logs pendentes',
++    maturity: 'missing-source',
++    gate: 'A2',
++  },
++];
++
++export const cooRhythm: CooRhythmItem[] = [
++  { label: 'Manhã', detail: `Ver ${opsState.waitingLucas.length} itens da Lucas Queue: decisão, gate, expiração e fonte.` },
++  { label: 'Durante o dia', detail: 'Deixar Hermes executar A0-A2 local/read-only; exigir pacote para A3/A4.' },
++  { label: 'Fim do dia', detail: 'Revisar receipts, ruído, pendências expiradas e aprendizados que viram Brain/skill.' },
++];
+diff --git a/tests/test_mission_control_ops_watchdog.py b/tests/test_mission_control_ops_watchdog.py
+new file mode 100644
+index 0000000..21fec15
+--- /dev/null
++++ b/tests/test_mission_control_ops_watchdog.py
+@@ -0,0 +1,103 @@
++import datetime as dt
++import importlib.util
++import json
++import tempfile
++import unittest
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[1]
++WATCHDOG_PATH = ROOT / 'scripts' / 'mission_control_ops_watchdog.py'
++
++
++def load_watchdog():
++    spec = importlib.util.spec_from_file_location('mission_control_ops_watchdog', WATCHDOG_PATH)
++    if spec is None or spec.loader is None:
++        raise RuntimeError(f'Could not load watchdog module from {WATCHDOG_PATH}')
++    module = importlib.util.module_from_spec(spec)
++    spec.loader.exec_module(module)
++    return module
++
++
++def base_ops_state() -> dict:
++    now = dt.datetime.now(dt.UTC).replace(microsecond=0)
++    expires = (now + dt.timedelta(hours=6)).isoformat().replace('+00:00', 'Z')
++    return {
++        'generatedAt': now.isoformat().replace('+00:00', 'Z'),
++        'freshnessSlaHours': 24,
++        'health': [{'label': 'ok'}],
++        'healthCenter': [{'system': 'Feed Quality', 'status': 'green', 'signal': 'ok'}],
++        'commandSystem': [{'name': 'ok'}],
++        'improvements12': [{'id': f'p{i:02d}'} for i in range(12)],
++        'approvalLedger': [{'gate': 'A1'}],
++        'actionPackets': [
++            {'packetId': 'packet-a', 'expiresAt': expires},
++            {'packetId': 'packet-b', 'expiresAt': expires},
++        ],
++        'waitingLucas': [{'packetId': 'packet-a'}],
++        'eventLedger': [{'eventId': 'e1'}],
++        'kanbanPolicy': [{'lane': 'Ready Read-only'}],
++        'rollbackRegistry': [{'component': 'Mission Control'}],
++        'lkOperatingIntelligence': [{'signal': 'read-only'}],
++        'watchers': [
++            {'id': 'feec299b99e5'},
++            {'id': '4bb4e2223fd3'},
++            {'id': 'edd06fe19397'},
++        ],
++        'artifacts': [{'path': 'src/data/ops-state.generated.ts'}],
++        'feedQuality': {
++            'status': 'green',
++            'waitingPacketCoverage': 1,
++            'waitingLucasCount': 1,
++            'missingWaitingPackets': [],
++            'duplicatePacketIdsRemoved': [],
++            'expiredPackets': [],
++            'staleEvidence': [],
++        },
++    }
++
++
++def write_state(directory: Path, state: dict) -> Path:
++    path = directory / 'mission-control-ops-state-latest.json'
++    path.write_text(json.dumps(state, ensure_ascii=False))
++    return path
++
++
++class MissionControlOpsWatchdogTests(unittest.TestCase):
++    def setUp(self):
++        self.watchdog = load_watchdog()
++        self.tmpdir = tempfile.TemporaryDirectory()
++        self.tmp_path = Path(self.tmpdir.name)
++
++    def tearDown(self):
++        self.tmpdir.cleanup()
++
++    def test_validate_ops_state_file_is_silent_for_green_feed(self):
++        alerts: list[str] = []
++
++        self.watchdog.validate_ops_state_file(write_state(self.tmp_path, base_ops_state()), alerts)
++
++        self.assertEqual(alerts, [])
++
++    def test_validate_ops_state_file_alerts_when_feed_quality_is_yellow(self):
++        state = base_ops_state()
++        state['feedQuality']['status'] = 'yellow'
++        state['feedQuality']['missingWaitingPackets'] = ['missing-packet']
++        alerts: list[str] = []
++
++        self.watchdog.validate_ops_state_file(write_state(self.tmp_path, state), alerts)
++
++        self.assertIn('Mission Control feedQuality not green: yellow', alerts)
++        self.assertIn("Mission Control feedQuality missingWaitingPackets: ['missing-packet']", alerts)
++
++    def test_validate_ops_state_file_alerts_when_health_center_lacks_feed_quality(self):
++        state = base_ops_state()
++        state['healthCenter'] = [{'system': 'Mission Control', 'status': 'green'}]
++        alerts: list[str] = []
++
++        self.watchdog.validate_ops_state_file(write_state(self.tmp_path, state), alerts)
++
++        self.assertIn('Mission Control Health Center missing Feed Quality signal', alerts)
++
++
++if __name__ == '__main__':
++    unittest.main()
+diff --git a/tests/test_mission_control_qa_gate.py b/tests/test_mission_control_qa_gate.py
+new file mode 100644
+index 0000000..b310da3
+--- /dev/null
++++ b/tests/test_mission_control_qa_gate.py
+@@ -0,0 +1,42 @@
++import json
++import subprocess
++import sys
++import unittest
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[1]
++QA_GATE = ROOT / 'scripts' / 'mission_control_qa_gate.py'
++
++
++class MissionControlQaGateTests(unittest.TestCase):
++    def test_package_json_exposes_single_local_qa_command(self):
++        package = json.loads((ROOT / 'package.json').read_text())
++
++        self.assertEqual(package['scripts']['qa:local'], 'python3 scripts/mission_control_qa_gate.py')
++
++    def test_qa_gate_plan_lists_required_checks_without_running_them(self):
++        proc = subprocess.run(
++            [sys.executable, str(QA_GATE), '--plan'],
++            cwd=ROOT,
++            text=True,
++            stdout=subprocess.PIPE,
++            stderr=subprocess.STDOUT,
++            timeout=15,
++        )
++
++        self.assertEqual(proc.returncode, 0, proc.stdout)
++        for marker in [
++            'python unittest watchdog fixtures',
++            'python py_compile watchdog scripts',
++            'mission watchdog silent OK',
++            'git diff whitespace check',
++            'git staged diff whitespace check',
++            'npm lint',
++            'npm build',
++            'diff secret scan',
++        ]:
++            self.assertIn(marker, proc.stdout)
++
++
++if __name__ == '__main__':
++    unittest.main()

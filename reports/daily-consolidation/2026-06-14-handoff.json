@@ -1,0 +1,209 @@
+{
+  "operational_date": "2026-06-14",
+  "generated_at_utc": "2026-06-14T04:04:19Z",
+  "status": "healthy",
+  "executive_summary": "Fechamento 01h BRT saudável: daily consolidation e handoff gerados; Brain Health FAIL=0/WARN=0; Brain Improvement Score=94/100; cron truth consultado com 34 ativos, 4 pausados e 0 últimos status não-ok. Material changes: Reminder OS ledger/ingress repair, Memory OS maturity autoheal, LK Stock Shopify Sales OS Gate S3 read-only/local com webhook ainda bloqueado por approval packet.",
+  "material_changes": [
+    {
+      "domain": "Hermes Geral / Reminder OS",
+      "summary": "Regularização local de ledger_schema_errors:2 e ingress_open_needed:1 após Lucas dizer Seguir; health gate voltou a PASS com schema_error_count=0 e ingress_open_needed=0.",
+      "artifacts": [
+        "areas/operacoes/receipts/reminder-os-ledger-schema-ingress-repair-20260614.md",
+        "areas/operacoes/reminder-os/reminders.jsonl"
+      ],
+      "external_writes": 0
+    },
+    {
+      "domain": "Hermes Geral / Memory OS",
+      "summary": "Autoheal A1 local do ciclo de maturidade; Memory OS permanece mature com 58/21 ciclos reais silent-OK e scorecard 100.",
+      "artifacts": [
+        "areas/operacoes/receipts/memory-os-maturity-promotion-ledger-autoheal-20260614.md",
+        "reports/memory-hygiene/cycle-maturity-latest.json",
+        "reports/memory-hygiene/scorecard-latest.json"
+      ],
+      "external_writes": 0
+    },
+    {
+      "domain": "LK OS / LK Stock",
+      "summary": "Shopify Sales OS Gate S3 implementado/documentado com DB local SQLite, backfill Shopify read-only, summary, endpoint/dashboard e approval packet de webhook. Webhook real não ativado.",
+      "artifacts": [
+        "areas/lk/sub-areas/stock/receipts/shopify-sales-os-gate-s3-20260614T001817Z.md",
+        "areas/lk/sub-areas/stock/prds/shopify-sales-os-gate-s3-20260614T001817Z.md",
+        "areas/lk/sub-areas/stock/approval-packets/shopify-sales-os-webhook-activation-20260614T001817Z.md",
+        "areas/lk/sub-areas/stock/data/shopify_sales_os_summary.json"
+      ],
+      "external_writes": "GitHub push do trabalho escopado; Shopify write 0; Tiny write 0; webhook subscription 0"
+    },
+    {
+      "domain": "Lucas pessoal / Mordomo",
+      "summary": "Status CRM local/SQLite atualizado: contacts 256, followups 251, signals 3937, actions 0, conversation_intelligence 2, conversation_brain_crm_updates 0. Sem write Supabase.",
+      "artifacts": [
+        "areas/operacoes/crm/mordomo-crm-local-status.md"
+      ],
+      "external_writes": 0
+    }
+  ],
+  "incidents": [
+    {
+      "domain": "Reminder OS",
+      "severity": "low",
+      "summary": "Health gate anterior tinha ledger_schema_errors:2 e ingress_open_needed:1; corrigido localmente com backup e receipt oficial.",
+      "status": "resolved"
+    },
+    {
+      "domain": "Memory OS",
+      "severity": "low",
+      "summary": "Notificação única de maturidade podia resetar artificialmente o contador; corrigido via autoheal local seguro.",
+      "status": "resolved"
+    }
+  ],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Seguir a regularização Reminder OS local após alerta com ledger_schema_errors e ingress_open_needed.",
+      "scope": "ledger/ingress local canônico; sem execução da tarefa lembrada; sem external writes",
+      "source": "session_search contexto recente e receipt Reminder OS"
+    },
+    {
+      "decision": "Seguir com padrão DB local + sync + webhook para vendas Shopify no LK Stock.",
+      "scope": "Gate S3 local/read-only e approval packet; webhook real ainda exige aprovação separada",
+      "source": "receipt Shopify Sales OS Gate S3"
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "type": "approval",
+      "scope": "Reminder OS local repair",
+      "exclusions": [
+        "executar tarefa lembrada",
+        "alertar Hermes Geral por loops especialistas saudáveis",
+        "writes externos"
+      ],
+      "pattern_to_learn": "Health PASS com loops ativos/scheduled bem formados não é falha; apenas due/blocker/sem dono/decisão humana deve paginar."
+    },
+    {
+      "type": "approval",
+      "scope": "LK Stock Shopify Sales OS Gate S3",
+      "exclusions": [
+        "ativar webhook Shopify",
+        "Shopify/Tiny write",
+        "promessa de disponibilidade",
+        "compra automática"
+      ],
+      "pattern_to_learn": "Separar read model local/backfill de ativação externa webhook por approval packet separado."
+    },
+    {
+      "type": "correction_preference",
+      "scope": "safe autoheal",
+      "exclusions": [
+        "Docker/VPS/gateway/restart/deploy",
+        "segredos",
+        "sistemas externos",
+        "ações destrutivas"
+      ],
+      "pattern_to_learn": "Falha local segura de cron/watchdog deve tentar autoheal autônomo antes de alertar Lucas."
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Reminder OS active_loops pode ser saudável quando cada loop tem owner/status/gatilho; não alertar se não estiver due/acionável.",
+      "recommended_destination": "rotina Reminder OS + Daily Intelligence supervisor",
+      "action_applied_or_blocked": "Aplicado no fechamento e handoff; monitorar no 02h",
+      "verification_needed": "health gate PASS e watchdog silent-OK"
+    },
+    {
+      "learning": "Memory OS maturity promotion notification deve ser classificada sem resetar contador de silent-OK.",
+      "recommended_destination": "Memory OS rotina/scripts + skill/procedimento se recorrente",
+      "action_applied_or_blocked": "Autoheal local aplicado; receipt criado",
+      "verification_needed": "cycle-maturity-latest permanece mature"
+    },
+    {
+      "learning": "Shopify Sales OS webhook é A3/A4 separado de backfill/read model local.",
+      "recommended_destination": "LK Stock PRD/approval packet/skill futura",
+      "action_applied_or_blocked": "Packet criado; ativação bloqueada até aprovação explícita",
+      "verification_needed": "approval packet + HMAC + rollback + smoke antes de qualquer write"
+    },
+    {
+      "learning": "Brain Improvement Score 94/100 com health 0/0 deve virar melhoria gradual, não alerta urgente.",
+      "recommended_destination": "Daily Intelligence / Brain Improvement Score routine",
+      "action_applied_or_blocked": "Artefatos gerados; sem alerta",
+      "verification_needed": "alertar só se score <90, health WARN/FAIL ou secret issue"
+    }
+  ],
+  "autonomy_pattern_candidates": {
+    "promote_to_A0_A1_if_safe": [
+      "Autoheal documental/local de ledger, receipts, indices e reports quando reversível e sem segredo.",
+      "Reprocessamento de envelopes locais Memory OS para corrigir contagem/maturidade.",
+      "Geração de health/score/daily/handoff local."
+    ],
+    "must_remain_A3_A4": [
+      "Ativar webhooks Shopify ou rota pública hermes-webhooks.",
+      "Shopify/Tiny/GMC/Klaviyo/Meta writes.",
+      "WhatsApp/e-mail/campanha/cliente/fornecedor.",
+      "Docker/VPS/gateway/restart/deploy/cron mutation sensível.",
+      "Secrets/token rotation ou exposição de valores."
+    ]
+  },
+  "pending_decisions_for_lucas": [
+    {
+      "decision": "Aprovar ou não a ativação real dos webhooks Shopify Sales OS nos tópicos e rota do approval packet.",
+      "urgency": "not_urgent",
+      "artifact": "areas/lk/sub-areas/stock/approval-packets/shopify-sales-os-webhook-activation-20260614T001817Z.md"
+    }
+  ],
+  "safe_next_actions": [
+    "Supervisor 02h consumir este handoff e manter status saudável se checks continuarem 0/0.",
+    "Continuar redução documental gradual de skills/tracking sem criar cron/UI/runtime novo.",
+    "Manter Reminder OS e Memory OS em silent-OK salvo blocker real."
+  ],
+  "blocked_actions_requiring_approval": [
+    "Ativação de webhook Shopify Sales OS ou configuração de rota pública/upstream.",
+    "Qualquer Shopify/Tiny/GMC/Klaviyo/Meta/Supabase/banco write.",
+    "WhatsApp, e-mail, campanha, proposta, cliente, fornecedor ou publicações.",
+    "Docker/VPS/gateway/Traefik/volumes/networks/restart/deploy.",
+    "Criar cron/UI/Mission Control permanente para score/tracking."
+  ],
+  "cron_and_delivery_truth": {
+    "cron_source": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all fallback; cronjob command unavailable in PATH",
+    "active_jobs": 34,
+    "paused_jobs": 4,
+    "last_run_non_ok_count": 0,
+    "delivery_contract": "Fechamento 01h local/silent-OK; Telegram/origin only for critical failure, secret issue, health WARN/FAIL, score <90, urgent decision or broken sync.",
+    "generated_vs_delivered": "daily consolidation and handoff generated locally; final response handled by scheduler; no manual send_message used"
+  },
+  "brain_quality_gate": {
+    "health_json": "reports/brain-health-check-2026-06-14-02h.json",
+    "health_fail_count": 0,
+    "health_warn_count": 0,
+    "score_md": "reports/brain-improvement-score-2026-06-14-02h.md",
+    "score_json": "reports/brain-improvement-score-2026-06-14-02h.json",
+    "overall_score": 94
+  },
+  "sources": [
+    "reports/daily-consolidation/2026-06-14.md",
+    "areas/operacoes/receipts/reminder-os-ledger-schema-ingress-repair-20260614.md",
+    "areas/operacoes/receipts/memory-os-maturity-promotion-ledger-autoheal-20260614.md",
+    "areas/lk/sub-areas/stock/receipts/shopify-sales-os-gate-s3-20260614T001817Z.md",
+    "areas/lk/sub-areas/stock/prds/shopify-sales-os-gate-s3-20260614T001817Z.md",
+    "areas/lk/sub-areas/stock/approval-packets/shopify-sales-os-webhook-activation-20260614T001817Z.md",
+    "areas/operacoes/crm/mordomo-crm-local-status.md",
+    "reports/memory-hygiene/2026-06-14.json",
+    "reports/memory-hygiene/cycle-maturity-latest.json",
+    "reports/memory-hygiene/daytime-latest.json",
+    "reports/memory-hygiene/scorecard-latest.json",
+    "reports/governance/nightly-governance-artifacts-2026-06-14.json",
+    "reports/brain-health-check-2026-06-14-02h.json",
+    "reports/brain-improvement-score-2026-06-14-02h.md",
+    "reports/brain-improvement-score-2026-06-14-02h.json",
+    "session_search recent context",
+    "Hermes cron list fallback"
+  ],
+  "sanitization": {
+    "raw_chat_transcripts_included": false,
+    "secret_values_printed": false,
+    "token_previews_printed": false,
+    "service_account_json_included": false,
+    "pii_minimized": true,
+    "values_printed": false,
+    "secrets_redacted": true
+  }
+}

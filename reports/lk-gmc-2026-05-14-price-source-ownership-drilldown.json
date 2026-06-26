@@ -1,0 +1,1569 @@
+{
+  "generated_at": "2026-05-15T20:18:49.160007+00:00",
+  "mode": "read_only_price_source_ownership_drilldown",
+  "sample_size": 12,
+  "sample_product_ids": [
+    "online:pt:BR:01424-002-2",
+    "online:pt:BR:553558140-7",
+    "online:pt:BR:AQ9129-170-5",
+    "online:pt:BR:AQ9129-170-7",
+    "online:pt:BR:AQ9129-170-9",
+    "online:pt:BR:CJ5378700-36",
+    "online:pt:BR:553558053-1",
+    "online:pt:BR:553558053-42",
+    "online:pt:BR:555088108",
+    "online:pt:BR:555088108-1",
+    "online:pt:BR:555088108-12",
+    "online:pt:BR:555088134-40"
+  ],
+  "account_settings_probe": {
+    "content_accounts_get_status_code": 200,
+    "automaticImprovements": {
+      "itemUpdates": {
+        "accountItemUpdatesSettings": {
+          "allowPriceUpdates": true,
+          "allowAvailabilityUpdates": true,
+          "allowStrictAvailabilityUpdates": true,
+          "allowConditionUpdates": true
+        },
+        "effectiveAllowPriceUpdates": true,
+        "effectiveAllowAvailabilityUpdates": true,
+        "effectiveAllowStrictAvailabilityUpdates": true,
+        "effectiveAllowConditionUpdates": true
+      },
+      "imageImprovements": {
+        "accountImageImprovementsSettings": {
+          "allowAutomaticImageImprovements": true
+        },
+        "effectiveAllowAutomaticImageImprovements": true
+      },
+      "shippingImprovements": {
+        "allowShippingImprovements": true
+      }
+    },
+    "returned_non_sensitive_keys": [
+      "accountManagement",
+      "adsLinks",
+      "adultContent",
+      "automaticImprovements",
+      "businessIdentity",
+      "businessInformation",
+      "conversionSettings",
+      "googleMyBusinessLink",
+      "id",
+      "kind",
+      "name",
+      "users",
+      "websiteUrl"
+    ]
+  },
+  "account_status_probe": {
+    "status_code": 200,
+    "returned_non_sensitive_keys": [
+      "accountId",
+      "accountManagement",
+      "kind",
+      "products",
+      "websiteClaimed"
+    ]
+  },
+  "data_sources_get": {
+    "10525577766": {
+      "status_code": 200,
+      "resource": {
+        "name": "accounts/5297679409/dataSources/10525577766",
+        "dataSourceId": "10525577766",
+        "displayName": "lksneakers.com.br",
+        "primaryProductDataSource": {
+          "defaultRule": {
+            "takeFromDataSources": [
+              {
+                "self": true
+              }
+            ]
+          },
+          "destinations": [
+            {
+              "destination": "LOCAL_INVENTORY_ADS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "FREE_LOCAL_LISTINGS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "DISPLAY_ADS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "FREE_LISTINGS",
+              "state": "ENABLED"
+            },
+            {
+              "destination": "SHOPPING_ADS",
+              "state": "DISABLED"
+            }
+          ]
+        },
+        "input": "AUTOFEED"
+      }
+    },
+    "10636492695": {
+      "status_code": 200,
+      "resource": {
+        "name": "accounts/5297679409/dataSources/10636492695",
+        "dataSourceId": "10636492695",
+        "displayName": "Content API",
+        "primaryProductDataSource": {
+          "feedLabel": "BR",
+          "contentLanguage": "pt",
+          "countries": [
+            "BR"
+          ],
+          "defaultRule": {
+            "takeFromDataSources": [
+              {
+                "self": true
+              }
+            ]
+          },
+          "destinations": [
+            {
+              "destination": "LOCAL_INVENTORY_ADS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "FREE_LOCAL_LISTINGS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "DISPLAY_ADS",
+              "state": "ENABLED"
+            },
+            {
+              "destination": "FREE_LISTINGS",
+              "state": "ENABLED"
+            },
+            {
+              "destination": "SHOPPING_ADS",
+              "state": "ENABLED"
+            }
+          ]
+        },
+        "input": "API"
+      }
+    },
+    "10636384718": {
+      "status_code": 200,
+      "resource": {
+        "name": "accounts/5297679409/dataSources/10636384718",
+        "dataSourceId": "10636384718",
+        "displayName": "Content API",
+        "primaryProductDataSource": {
+          "feedLabel": "BR",
+          "contentLanguage": "pt",
+          "countries": [
+            "BR"
+          ],
+          "defaultRule": {
+            "takeFromDataSources": [
+              {
+                "self": true
+              }
+            ]
+          },
+          "destinations": [
+            {
+              "destination": "LOCAL_INVENTORY_ADS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "FREE_LOCAL_LISTINGS",
+              "state": "ENABLED"
+            }
+          ],
+          "legacyLocal": true
+        },
+        "input": "API"
+      }
+    },
+    "10646853947": {
+      "status_code": 200,
+      "resource": {
+        "name": "accounts/5297679409/dataSources/10646853947",
+        "dataSourceId": "10646853947",
+        "displayName": "LK Sneakers - Color Supplemental Feed",
+        "primaryProductDataSource": {
+          "feedLabel": "BR",
+          "contentLanguage": "pt",
+          "countries": [
+            "BR"
+          ],
+          "defaultRule": {
+            "takeFromDataSources": [
+              {
+                "self": true
+              }
+            ]
+          },
+          "destinations": [
+            {
+              "destination": "LOCAL_INVENTORY_ADS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "FREE_LOCAL_LISTINGS",
+              "state": "DISABLED"
+            },
+            {
+              "destination": "DISPLAY_ADS",
+              "state": "ENABLED"
+            },
+            {
+              "destination": "FREE_LISTINGS",
+              "state": "ENABLED"
+            },
+            {
+              "destination": "SHOPPING_ADS",
+              "state": "ENABLED"
+            }
+          ]
+        },
+        "input": "FILE",
+        "fileInput": {
+          "fetchSettings": {
+            "enabled": true,
+            "timeOfDay": {
+              "hours": 3
+            },
+            "dayOfWeek": "MONDAY",
+            "timeZone": "America/Sao_Paulo",
+            "frequency": "FREQUENCY_WEEKLY",
+            "fetchUri": "https://gist.githubusercontent.com/lk-snkrs/8eb7f7fb61a46fa8d5a4d64fa7f21b2f/raw/eca0386a985ab6267ab582f7825247c15349d150/lk_sneakers_gmc_color_feed.csv"
+          },
+          "fileInputType": "FETCH"
+        }
+      }
+    }
+  },
+  "source_presence_counts_in_sample": {},
+  "api_input_vs_final_output_counts": {},
+  "fresh_output_vs_shopify_counts": {
+    "fresh_output_stale_vs_shopify_target": 12
+  },
+  "fresh_productstatus_price_issue_counts_in_sample": {
+    "price_updated": 36
+  },
+  "data_source_price_value_counts_in_sample": {},
+  "probes": [
+    {
+      "product_id": "online:pt:BR:01424-002-2",
+      "prior_content_output": {
+        "price": "5999.90",
+        "salePrice": null,
+        "source": "api"
+      },
+      "fresh_content_output": {
+        "price": "5999.90",
+        "salePrice": null,
+        "source": "api"
+      },
+      "shopify_target": {
+        "sku": "01424-002-2",
+        "variant_title": "41",
+        "price": "8999.99",
+        "salePrice": null,
+        "raw_price": "8999.99",
+        "raw_compareAtPrice": null,
+        "sale_mode": false
+      },
+      "public_target": {
+        "price": "8999.99",
+        "salePrice": null,
+        "raw_price": "8999.99",
+        "raw_compareAtPrice": null,
+        "sale_mode": false
+      },
+      "data_source_inputs": {
+        "10636492695": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10525577766": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10646853947": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10636384718": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        }
+      },
+      "merchant_v1_output": {
+        "status_code": 200,
+        "price": "5999.90",
+        "salePrice": null,
+        "raw_keys": [
+          "ageGroup",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ]
+      },
+      "fresh_productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:553558140-7",
+      "prior_content_output": {
+        "price": "1499.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "fresh_content_output": {
+        "price": "1499.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "shopify_target": {
+        "sku": "553558140-7",
+        "variant_title": "41",
+        "price": "1799.99",
+        "salePrice": null,
+        "raw_price": "1799.99",
+        "raw_compareAtPrice": "1599.99",
+        "sale_mode": false
+      },
+      "public_target": {
+        "price": "1799.99",
+        "salePrice": null,
+        "raw_price": "1799.99",
+        "raw_compareAtPrice": "1599.99",
+        "sale_mode": false
+      },
+      "data_source_inputs": {
+        "10636492695": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10525577766": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10646853947": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10636384718": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        }
+      },
+      "merchant_v1_output": {
+        "status_code": 200,
+        "price": "1499.99",
+        "salePrice": null,
+        "raw_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "costOfGoodsSold",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ]
+      },
+      "fresh_productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-5",
+      "prior_content_output": {
+        "price": "2599.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "fresh_content_output": {
+        "price": "2599.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "shopify_target": {
+        "sku": "AQ9129-170-5",
+        "variant_title": "38",
+        "price": "2749.99",
+        "salePrice": null,
+        "raw_price": "2749.99",
+        "raw_compareAtPrice": "2449.90",
+        "sale_mode": false
+      },
+      "public_target": {
+        "price": "2749.99",
+        "salePrice": null,
+        "raw_price": "2749.99",
+        "raw_compareAtPrice": "2449.90",
+        "sale_mode": false
+      },
+      "data_source_inputs": {
+        "10636492695": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10525577766": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10646853947": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10636384718": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        }
+      },
+      "merchant_v1_output": {
+        "status_code": 200,
+        "price": "2599.99",
+        "salePrice": null,
+        "raw_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "costOfGoodsSold",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ]
+      },
+      "fresh_productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-7",
+      "prior_content_output": {
+        "price": "2599.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "fresh_content_output": {
+        "price": "2599.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "shopify_target": {
+        "sku": "AQ9129-170-7",
+        "variant_title": "40",
+        "price": "3349.99",
+        "salePrice": null,
+        "raw_price": "3349.99",
+        "raw_compareAtPrice": "2449.90",
+        "sale_mode": false
+      },
+      "public_target": {
+        "price": "3349.99",
+        "salePrice": null,
+        "raw_price": "3349.99",
+        "raw_compareAtPrice": "2449.90",
+        "sale_mode": false
+      },
+      "data_source_inputs": {
+        "10636492695": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10525577766": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10646853947": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10636384718": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        }
+      },
+      "merchant_v1_output": {
+        "status_code": 200,
+        "price": "2599.99",
+        "salePrice": null,
+        "raw_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "costOfGoodsSold",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ]
+      },
+      "fresh_productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-9",
+      "prior_content_output": {
+        "price": "2599.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "fresh_content_output": {
+        "price": "2599.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "shopify_target": {
+        "sku": "AQ9129-170-9",
+        "variant_title": "39.5",
+        "price": "3349.99",
+        "salePrice": null,
+        "raw_price": "3349.99",
+        "raw_compareAtPrice": "2449.90",
+        "sale_mode": false
+      },
+      "public_target": {
+        "price": "3349.99",
+        "salePrice": null,
+        "raw_price": "3349.99",
+        "raw_compareAtPrice": "2449.90",
+        "sale_mode": false
+      },
+      "data_source_inputs": {
+        "10636492695": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10525577766": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10646853947": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10636384718": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        }
+      },
+      "merchant_v1_output": {
+        "status_code": 200,
+        "price": "2599.99",
+        "salePrice": null,
+        "raw_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "costOfGoodsSold",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ]
+      },
+      "fresh_productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:CJ5378700-36",
+      "prior_content_output": {
+        "price": "5499.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "fresh_content_output": {
+        "price": "5499.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "shopify_target": {
+        "sku": "CJ5378700-36",
+        "variant_title": "38",
+        "price": "6099.99",
+        "salePrice": null,
+        "raw_price": "6099.99",
+        "raw_compareAtPrice": "6099.99",
+        "sale_mode": false
+      },
+      "public_target": {
+        "price": "6099.99",
+        "salePrice": null,
+        "raw_price": "6099.99",
+        "raw_compareAtPrice": "6099.99",
+        "sale_mode": false
+      },
+      "data_source_inputs": {
+        "10636492695": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10525577766": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10646853947": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10636384718": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        }
+      },
+      "merchant_v1_output": {
+        "status_code": 200,
+        "price": "5499.99",
+        "salePrice": null,
+        "raw_keys": [
+          "ageGroup",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "title"
+        ]
+      },
+      "fresh_productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:553558053-1",
+      "prior_content_output": {
+        "price": "2199.99",
+        "salePrice": "1799.99",
+        "source": "api"
+      },
+      "fresh_content_output": {
+        "price": "2199.99",
+        "salePrice": "1799.99",
+        "source": "api"
+      },
+      "shopify_target": {
+        "sku": "553558053-1",
+        "variant_title": "37",
+        "price": "2199.99",
+        "salePrice": "1999.99",
+        "raw_price": "1999.99",
+        "raw_compareAtPrice": "2199.99",
+        "sale_mode": true
+      },
+      "public_target": {
+        "price": "2199.99",
+        "salePrice": "1999.99",
+        "raw_price": "1999.99",
+        "raw_compareAtPrice": "2199.99",
+        "sale_mode": true
+      },
+      "data_source_inputs": {
+        "10636492695": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10525577766": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10646853947": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10636384718": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        }
+      },
+      "merchant_v1_output": {
+        "status_code": 200,
+        "price": "2199.99",
+        "salePrice": "1799.99",
+        "raw_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "costOfGoodsSold",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "salePrice",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ]
+      },
+      "fresh_productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:553558053-42",
+      "prior_content_output": {
+        "price": "2199.99",
+        "salePrice": "1799.99",
+        "source": "api"
+      },
+      "fresh_content_output": {
+        "price": "2199.99",
+        "salePrice": "1799.99",
+        "source": "api"
+      },
+      "shopify_target": {
+        "sku": "553558053-42",
+        "variant_title": "42",
+        "price": "2199.99",
+        "salePrice": "1999.99",
+        "raw_price": "1999.99",
+        "raw_compareAtPrice": "2199.99",
+        "sale_mode": true
+      },
+      "public_target": {
+        "price": "2199.99",
+        "salePrice": "1999.99",
+        "raw_price": "1999.99",
+        "raw_compareAtPrice": "2199.99",
+        "sale_mode": true
+      },
+      "data_source_inputs": {
+        "10636492695": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10525577766": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10646853947": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10636384718": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        }
+      },
+      "merchant_v1_output": {
+        "status_code": 200,
+        "price": "2199.99",
+        "salePrice": "1799.99",
+        "raw_keys": [
+          "ageGroup",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "costOfGoodsSold",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "salePrice",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ]
+      },
+      "fresh_productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:555088108",
+      "prior_content_output": {
+        "price": "2999.99",
+        "salePrice": "2449.99",
+        "source": "api"
+      },
+      "fresh_content_output": {
+        "price": "2999.99",
+        "salePrice": "2449.99",
+        "source": "api"
+      },
+      "shopify_target": {
+        "sku": "555088108",
+        "variant_title": "36",
+        "price": "2999.99",
+        "salePrice": "2799.99",
+        "raw_price": "2799.99",
+        "raw_compareAtPrice": "2999.99",
+        "sale_mode": true
+      },
+      "public_target": {
+        "price": "2999.99",
+        "salePrice": "2799.99",
+        "raw_price": "2799.99",
+        "raw_compareAtPrice": "2999.99",
+        "sale_mode": true
+      },
+      "data_source_inputs": {
+        "10636492695": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10525577766": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10646853947": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10636384718": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        }
+      },
+      "merchant_v1_output": {
+        "status_code": 200,
+        "price": "2999.99",
+        "salePrice": "2449.99",
+        "raw_keys": [
+          "ageGroup",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "salePrice",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ]
+      },
+      "fresh_productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:555088108-1",
+      "prior_content_output": {
+        "price": "2999.99",
+        "salePrice": "2449.99",
+        "source": "api"
+      },
+      "fresh_content_output": {
+        "price": "2999.99",
+        "salePrice": "2449.99",
+        "source": "api"
+      },
+      "shopify_target": {
+        "sku": "555088108-1",
+        "variant_title": "38",
+        "price": "2999.99",
+        "salePrice": "2799.99",
+        "raw_price": "2799.99",
+        "raw_compareAtPrice": "2999.99",
+        "sale_mode": true
+      },
+      "public_target": {
+        "price": "2999.99",
+        "salePrice": "2799.99",
+        "raw_price": "2799.99",
+        "raw_compareAtPrice": "2999.99",
+        "sale_mode": true
+      },
+      "data_source_inputs": {
+        "10636492695": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10525577766": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10646853947": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10636384718": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        }
+      },
+      "merchant_v1_output": {
+        "status_code": 200,
+        "price": "2999.99",
+        "salePrice": "2449.99",
+        "raw_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "costOfGoodsSold",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "salePrice",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ]
+      },
+      "fresh_productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:555088108-12",
+      "prior_content_output": {
+        "price": "2999.99",
+        "salePrice": "2449.99",
+        "source": "api"
+      },
+      "fresh_content_output": {
+        "price": "2999.99",
+        "salePrice": "2449.99",
+        "source": "api"
+      },
+      "shopify_target": {
+        "sku": "555088108-12",
+        "variant_title": "37.5",
+        "price": "2999.99",
+        "salePrice": "2799.99",
+        "raw_price": "2799.99",
+        "raw_compareAtPrice": "2999.99",
+        "sale_mode": true
+      },
+      "public_target": {
+        "price": "2999.99",
+        "salePrice": "2799.99",
+        "raw_price": "2799.99",
+        "raw_compareAtPrice": "2999.99",
+        "sale_mode": true
+      },
+      "data_source_inputs": {
+        "10636492695": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10525577766": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10646853947": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10636384718": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        }
+      },
+      "merchant_v1_output": {
+        "status_code": 200,
+        "price": "2999.99",
+        "salePrice": "2449.99",
+        "raw_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "costOfGoodsSold",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "salePrice",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ]
+      },
+      "fresh_productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:555088134-40",
+      "prior_content_output": {
+        "price": "3499.99",
+        "salePrice": "2999.90",
+        "source": "api"
+      },
+      "fresh_content_output": {
+        "price": "3499.99",
+        "salePrice": "2999.90",
+        "source": "api"
+      },
+      "shopify_target": {
+        "sku": "555088134-40",
+        "variant_title": "40",
+        "price": "3499.99",
+        "salePrice": "2999.99",
+        "raw_price": "2999.99",
+        "raw_compareAtPrice": "3499.99",
+        "sale_mode": true
+      },
+      "public_target": {
+        "price": "3499.99",
+        "salePrice": "2999.99",
+        "raw_price": "2999.99",
+        "raw_compareAtPrice": "3499.99",
+        "sale_mode": true
+      },
+      "data_source_inputs": {
+        "10636492695": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10525577766": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10646853947": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        },
+        "10636384718": {
+          "exists": false,
+          "status_code": 404,
+          "error_status": {}
+        }
+      },
+      "merchant_v1_output": {
+        "status_code": 200,
+        "price": "3499.99",
+        "salePrice": "2999.90",
+        "raw_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "color",
+          "condition",
+          "costOfGoodsSold",
+          "description",
+          "gender",
+          "googleProductCategory",
+          "gtins",
+          "imageLink",
+          "itemGroupId",
+          "link",
+          "mpn",
+          "price",
+          "productTypes",
+          "salePrice",
+          "shipping",
+          "shippingWeight",
+          "size",
+          "sizeSystem",
+          "sizeTypes",
+          "title"
+        ]
+      },
+      "fresh_productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    "Automatic item price updates are enabled/effective at account level; productstatuses confirm Google is auto-updating mismatched prices from the online store with servability unaffected.",
+    "ProductInputs GET returned 404 for all sampled source/dataSource combinations even though final products are readable; source ownership could not be proven at ProductInput-read level, so use final product + account auto-update + productstatus evidence.",
+    "Some fresh final outputs remain stale vs Shopify target; those need source/feed regeneration or a tightly verified price/salePrice pilot after the ownership path is fixed."
+  ],
+  "not_performed": [
+    "Merchant write",
+    "Content API write",
+    "ProductInputs PATCH",
+    "data source update/delete",
+    "automatic item update settings change",
+    "feed fetch/upload",
+    "Shopify write",
+    "Tiny write",
+    "campaign/message/send"
+  ]
+}

@@ -1,0 +1,1050 @@
+{
+  "jobs": [
+    {
+      "id": "f5a23dd6a1bd",
+      "name": "Lucas Brain daily intelligence loop",
+      "prompt": "Execute the Lucas Brain Daily Intelligence Loop for Lucas Cimino.\n\nPurpose:\nRun the daily 02:00 BRT intelligence cycle that makes Hermes healthier, smarter, more proactive, and better documented. This job is the operating-system review for Lucas's whole Hermes Brain: Hermes runtime, Brain documentation, crons, skills, memory/learning, LK, Zipper, SPITI, Mordomo, Mission Control, and cross-company priorities.\n\nCurrent production context (treat as source-of-truth unless live read-only checks prove otherwise):\n- Hermes production is Docker-first on Lucas's Hostinger VPS under compose project `/docker/hermes-agent-5ajw`.\n- Expected production containers: `hermes-agent-5ajw-hermes-agent-1` and `hermes-agent-5ajw-hermes-telegram-1`.\n- Expected current production version after Lucas-approved v0.14 upgrade: custom image `hermes-agent-custom:v0.14.0-20260516`, `Hermes Agent v0.14.0 (2026.5.16)`.\n- Previous v0.13 deploy incident was a smoke-test script using bare `python3` inside the container; correct Docker smoke tests must use `/opt/hermes/.venv/bin/python` or `python3`.\n- Do not use host systemd Hermes commands as the primary operational path. This deployment is Docker-first.\n\nStanding safety rules:\n- Read-only, local docs, local scripts, skills, Brain updates, and analysis are allowed when low risk.\n- Production runtime, Docker/container swaps, compose/image changes, gateway restart, host/root/Traefik/network changes, secrets, databases, Shopify writes, Meta/Google campaign changes, external sends, money/customer actions, and destructive operations require explicit Lucas approval with plan + rollback.\n- Never expose secrets. Redact tokens/keys/passwords/connection strings. Do not paste raw `hermes status --all` output; summarize sanitized status.\n- Cron-run sessions must not recursively create/schedule more cron jobs unless Lucas explicitly asked for that in the current task. You may recommend cron changes; do not create new jobs unless the current run's instruction explicitly approves that specific job.\n- External email/WhatsApp/client contact is draft-only unless Lucas explicitly approves exact content + recipient in the current conversation.\n- This job is a meta-supervisor, not an operator for production writes: if a discovery points to A3/A4 work, produce a decision brief with scope, payload, exclusions, rollback, and recommendation; do not execute it.\n\nRequired daily sections/tasks:\n1) System health and observability: run `/opt/data/scripts/hermes_host_docker_observability.py --output /opt/data/hermes_bruno_ingest/hermes-brain/reports/hermes-host-docker-observability-YYYY-MM-DD.json` first; confirm containers/images/version, `/health`, `hermes cron status/list`, recent sanitized log alerts, watchdogs, curator/skills. If helper fails, use local read-only fallbacks and classify the gap accurately.\n2) Hermes release/GitHub research: query `https://api.github.com/repos/NousResearch/hermes-agent/releases?per_page=10` directly via curl/Python if web tools fail. Inspect latest/new releases after active v0.14 and classify features as adopt-as-process, teach Lucas, later, irrelevant, or approval-needed. Do not deploy runtime automatically.\n3) Priority and business intelligence: detect active priority from live recent sessions plus Brain artifacts. Treat any stated current priority as a hypothesis, not truth. Explicitly note shifts such as Zipper \u2192 LK/Mission Control, keep non-priority areas in maintenance/watchdog mode, and route recommendations accordingly.\n\nPriority routing rubric (mandatory for sections 3 and 4):\n- Pick one primary focus unless there is a true critical incident. Classify other companies/surfaces as maintenance, monitoring, waiting Lucas, or blocked/approval.\n- Evidence order: (1) Lucas's explicit recent asks, (2) active/current-session work, (3) 23h Brain Sync and previous 02h report, (4) recent Brain artifacts/PRDs/reports/changelog, (5) cron/watchdog alerts, (6) durable memory only as baseline.\n- Daily/semanal output must include: primary focus, 2-4 evidence bullets, mode for LK/Mission Control/Zipper/SPITI/Mordomo, risk of dispersion, and one next safe action.\n- P0 focus = explicit recent ask + work in progress + operational impact. P1 maintenance = healthy recurring process with useful alert/opportunity. P2 monitoring = no recent ask/critical alert. Blocked/approval = any source-of-truth/external/money/customer/runtime/host/secret/destructive action.\n- Do not let stale Brain docs override live recent asks. If Lucas shifted focus, state the shift and update the report/changelog.\n\n4) Bruno-style Second Brain runtime reconciliation: reconcile `cronjob list` against Brain docs, AGENTS.md files, skills, routines, and the latest 23h BRT consolidation output when available. Maintain/update a current operating map for Hermes Geral, LK, LK Growth, Zipper, SPITI, Mordomo, Mission Control and watchdogs. Flag documented-but-not-running, running-but-not-documented, stale OpenClaw/cerebro operational references, skills without owner/risk/last execution, and noisy checks that violate silent-OK. Follow Bruno's split: cron = when, heartbeat = polling/silence rules, hot/current map = what matters now. This is read-only/Brain-hygiene only: no new cron, gateway restart, Docker/host mutation, external send, Shopify/GMC/Ads write, or bot/channel change unless Lucas separately approves exact scope and rollback.\n5) Hermes mechanism improvement review: evaluate whether Hermes asked approvals correctly, stopped early, required repeated \u201cseguir\u201d, produced overly technical reports, left context only in chat, used stale prompts/skills, repeated errors, or could use Hermes features such as structured approvals, no_agent watchers, context_from, browser/x_search, Kanban, subagents, or webhooks better. Apply safe process improvements and document durable lessons.\n6) Documentation and learning loop: document every run in Brain. Required: daily report `/opt/data/hermes_bruno_ingest/hermes-brain/reports/hermes-continuous-improvement/YYYY-MM-DD.md`, host observability JSON, concise top entry in `CHANGELOG.md`, operations routine/ledger updates when behavior changed, skill patches for durable process knowledge, compact memory only for durable facts. No PII/raw messages/secrets. Feed the weekly Learning Loop report by making the daily report easy to summarize: include durable lessons, repeated failure patterns, improvements applied, priority routing, and approval-needed briefs with clear labels.\n7) Apply low-risk improvements: Brain docs, skill patches, local read-only scripts, checklist/report format improvements, prompt refinements, cron audit notes, watchdog proposals. Verify with py_compile/tests/lint/secret scan where relevant. Medium/high risk gets an approval brief with benefit, risk, blast radius, backup/rollback, and recommendation.\n8) Noise and delivery policy: healthy runs should be Silent Success. Because this job delivers locally by default, write the full report to Brain/local artifacts. Send Lucas a Telegram message using the messaging tool only if there is a critical failure, security/runtime risk, missing required artifact, repeated cron failure, approval-needed decision, or high-value opportunity requiring his attention. Keep that message short and include the exact decision/options inline. Do not send success-only Telegram updates.\n9) Final response: if the run is healthy and no Telegram alert was needed, return only a short local-run summary suitable for the local cron output. If there was an alert/decision, state that Lucas was notified and summarize the notification.\n\nUse the injected context from the 23h Brain Sync job plus runtime watchdog jobs when present, but validate live state before relying on it. Ignore stale/deleted job IDs rather than treating their absence as system failure.\nRun date/time must be live, not guessed. Use tools for current date/time and current facts.\n\n## Hardening aprovado por Lucas \u2014 auto-learning / auto-improvement / safe auto-fix supervisor\n\nEste job \u00e9 o supervisor di\u00e1rio de aprendizado cont\u00ednuo. Al\u00e9m de auditar sa\u00fade e prioridade, ele deve fechar o ciclo de melhoria:\n\n- Ler o fechamento 23h e capturar `Learning Ledger candidates` quando existirem.\n- Converter aprendizados A0/A1 em a\u00e7\u00e3o dur\u00e1vel no mesmo run: Brain docs, memories compactas, skill patches, changelog, \u00edndices, rotinas, relat\u00f3rios ou checks locais.\n- Corrigir automaticamente falhas locais/read-only/documentais quando seguras e verific\u00e1veis: drift documental de cron, \u00edndices desatualizados, relat\u00f3rios sem link, watchdogs silent-OK com contrato quebrado, skill/procedimento claramente obsoleto, artefatos Brain health WARN que n\u00e3o envolvam segredo nem source-of-truth externo.\n- Quando a corre\u00e7\u00e3o exigir A3/A4, n\u00e3o executar: gerar decis\u00e3o sequencial com escopo, payload, exclus\u00f5es, rollback e recomenda\u00e7\u00e3o.\n- Escrever diariamente `reports/hermes-learning-ledger/YYYY-MM-DD.md` com: aprendizado, origem, destino aplicado, a\u00e7\u00e3o feita, verifica\u00e7\u00e3o, bloqueio, pr\u00f3xima regra.\n- Verificar o que alterou com readback, Brain Health quando aplic\u00e1vel, secret scan direcionado e testes/py_compile quando houver c\u00f3digo/script.\n- O objetivo \u00e9 reduzir erros repetidos: se Lucas corrigiu uma vez e \u00e9 dur\u00e1vel, amanh\u00e3 o sistema deve nascer sabendo ou pelo menos alertar que falta promover.\n\nAPPROVED 2026-05-25 \u2014 02h BRT Brain Improvement Score gate\nLucas approved that the Brain Improvement Score item 2 should be part of the existing 02:00 BRT daily intelligence loop, not a separate cron.\n\nMandatory daily score gate:\n1. First check whether the preceding 23h/02:00 UTC Fechamento \u00c1gil + Brain Sync context/artifacts already produced today's Brain Health Check + Brain Improvement Score under `reports/`.\n2. If today's score artifacts are missing, stale, unreadable, or not clearly tied to the current health JSON, run locally/read-only from repo root:\n   `python3 scripts/brain_health_check.py --json reports/brain-health-check-YYYY-MM-DD-02h.json`\n   `python3 scripts/brain_improvement_score.py --health-json reports/brain-health-check-YYYY-MM-DD-02h.json --output reports/brain-improvement-score-YYYY-MM-DD-02h.md --json-output reports/brain-improvement-score-YYYY-MM-DD-02h.json`\n3. Include score, FAIL/WARN counts, and paths in the local daily intelligence output.\n4. Stay silent/local when healthy. Alert Lucas only if score <90, FAIL/WARN >0, secret/token-like issue, artifact/script failure, or real approval decision.\n5. Do not create a duplicate cron for this score and do not mutate Docker/VPS/gateway/Traefik/volumes/networks, secrets, DBs, campaigns, Shopify/GMC, WhatsApp/e-mail/customer sends, or production systems.\n",
+      "skills": [
+        "hermes-agent",
+        "lucas-hermes-continuous-improvement",
+        "multiempresa-routing-lucas",
+        "lucas-chief-of-staff"
+      ],
+      "skill": "hermes-agent",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "context_from": [
+        "3fc45b0830c6",
+        "edd06fe19397",
+        "4bb4e2223fd3"
+      ],
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 5 * * *",
+        "display": "0 5 * * *"
+      },
+      "schedule_display": "0 5 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 17
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-10T20:08:16.531262+00:00",
+      "next_run_at": "2026-05-26T05:00:00+00:00",
+      "last_run_at": "2026-05-25T05:04:47.772946+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "web",
+        "terminal",
+        "file",
+        "skills",
+        "cronjob",
+        "session_search",
+        "memory",
+        "messaging"
+      ],
+      "workdir": "/opt/data/hermes_bruno_ingest/hermes-brain",
+      "updated_at": "2026-05-25T00:11:15.048657+00:00"
+    },
+    {
+      "id": "edd06fe19397",
+      "name": "Hermes runtime + cron watchdog no_agent",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "hermes_runtime_cron_watchdog.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/30 * * * *",
+        "display": "*/30 * * * *"
+      },
+      "schedule_display": "*/30 * * * *",
+      "repeat": {
+        "times": 999999,
+        "completed": 702
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-10T23:05:26.140835+00:00",
+      "next_run_at": "2026-05-25T11:30:00+00:00",
+      "last_run_at": "2026-05-25T11:00:38.564534+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "7c688553e293",
+      "name": "LK Daily Sales Brief read-only mandatory delivery",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "lk_daily_sales_brief_watchdog.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 11 * * *",
+        "display": "0 11 * * *"
+      },
+      "schedule_display": "0 11 * * *",
+      "repeat": {
+        "times": 999999,
+        "completed": 14
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-11T22:16:40.365813+00:00",
+      "next_run_at": "2026-05-26T11:00:00+00:00",
+      "last_run_at": "2026-05-25T11:01:07.841910+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "953b9055458e",
+      "name": "LK Weekly CEO Review read-only mandatory delivery",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "lk_weekly_ceo_review_watchdog.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * 1",
+        "display": "0 12 * * 1"
+      },
+      "schedule_display": "0 12 * * 1",
+      "repeat": {
+        "times": 999999,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-11T22:16:44.727207+00:00",
+      "next_run_at": "2026-05-25T12:00:00+00:00",
+      "last_run_at": "2026-05-18T12:01:32.733983+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "d4c26da4cd48",
+      "name": "LK GMC Review read-only mandatory delivery",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "lk_gmc_review_watchdog.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * 4",
+        "display": "0 12 * * 4"
+      },
+      "schedule_display": "0 12 * * 4",
+      "repeat": {
+        "times": 999999,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-12T00:33:27.631577+00:00",
+      "next_run_at": "2026-05-28T12:00:00+00:00",
+      "last_run_at": "2026-05-14T12:02:25.889790+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "71b147362ec1",
+      "name": "Zipper Gmail style learning refresh",
+      "prompt": "Run the Zipper Gmail style learner read-only + local documentation refresh. Command: /opt/data/scripts/zipper_gmail_style_learner.py learn --days 365 --sent-max 50 --inbox-max 50 --write. Do not send emails, create external messages, create drafts, or expose raw email bodies/secrets. Verify the markdown exists at /opt/data/hermes_bruno_ingest/hermes-brain/areas/zipper/email-style-profile.md and summarize only aggregate counts in the local cron output.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "20 6 * * *",
+        "display": "20 6 * * *"
+      },
+      "schedule_display": "20 6 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 10
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-15T22:05:46.722751+00:00",
+      "next_run_at": "2026-05-26T06:20:00+00:00",
+      "last_run_at": "2026-05-25T06:21:23.587319+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": "/opt/data"
+    },
+    {
+      "id": "4bb4e2223fd3",
+      "name": "Hermes compression failure self-heal watchdog",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "hermes_compression_failure_self_heal.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/10 * * * *",
+        "display": "*/10 * * * *"
+      },
+      "schedule_display": "*/10 * * * *",
+      "repeat": {
+        "times": 999999,
+        "completed": 1276
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-16T12:49:02.583286+00:00",
+      "next_run_at": "2026-05-25T11:30:00+00:00",
+      "last_run_at": "2026-05-25T11:22:46.566431+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "71b2636add5d",
+      "name": "LK WhatsApp Hermes responder watchdog",
+      "prompt": "Script-only watchdog for LK WhatsApp Hermes responder. It restarts the local wacli sync and responder process if either is down. Silent when healthy.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "lk_hermes_whatsapp_watchdog.sh",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 1,
+        "display": "every 1m"
+      },
+      "schedule_display": "every 1m",
+      "repeat": {
+        "times": null,
+        "completed": 11777
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-17T01:11:20.268466+00:00",
+      "next_run_at": "2026-05-25T11:28:47.124173+00:00",
+      "last_run_at": "2026-05-25T11:27:47.124173+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "c3bb587519d2",
+      "name": "LK Pulso Comercial 16h read-only delivery",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "lk_financial_pulse_16h_watchdog.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 19 * * *",
+        "display": "0 19 * * *"
+      },
+      "schedule_display": "0 19 * * *",
+      "repeat": {
+        "times": 999999,
+        "completed": 8
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-18T09:58:53.936747+00:00",
+      "next_run_at": "2026-05-25T19:00:00+00:00",
+      "last_run_at": "2026-05-24T19:00:57.330119+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "updated_at": "2026-05-18T13:56:00+00:00"
+    },
+    {
+      "id": "e3279babbc4a",
+      "name": "LK 09h previous-day sales report external delivery",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "lk_previous_day_09h_sales_report_watchdog.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * *",
+        "display": "0 12 * * *"
+      },
+      "schedule_display": "0 12 * * *",
+      "repeat": {
+        "times": 999999,
+        "completed": 6
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-18T12:25:34.140005+00:00",
+      "next_run_at": "2026-05-25T12:00:00+00:00",
+      "last_run_at": "2026-05-24T12:00:27.061440+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "updated_at": "2026-05-18T13:56:00+00:00"
+    },
+    {
+      "id": "a2ead305eab2",
+      "name": "LK 19h30 physical store close external delivery",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "lk_store_close_1930_watchdog.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 22 * * *",
+        "display": "30 22 * * *"
+      },
+      "schedule_display": "30 22 * * *",
+      "repeat": {
+        "times": 999999,
+        "completed": 7
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-18T12:25:35.151368+00:00",
+      "next_run_at": "2026-05-25T22:30:00+00:00",
+      "last_run_at": "2026-05-24T22:31:21.122066+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "updated_at": "2026-05-18T13:56:00+00:00"
+    },
+    {
+      "id": "ac0b440e2643",
+      "name": "Mordomo Telegram gateway watchdog",
+      "prompt": "Silent-OK watchdog for Mordomo Telegram gateway. The script prints only when it restarts the gateway or fails.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "mordomo_gateway_watchdog.sh",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 1,
+        "display": "every 1m"
+      },
+      "schedule_display": "every 1m",
+      "repeat": {
+        "times": null,
+        "completed": 6310
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-18T14:22:39.058980+00:00",
+      "next_run_at": "2026-05-25T11:28:47.156923+00:00",
+      "last_run_at": "2026-05-25T11:27:47.156923+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "357d40a5863e",
+      "name": "Zipper OS vendas 09h WhatsApp/email",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "zipper_weekday_sales_report_watchdog.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * 1-5",
+        "display": "0 12 * * 1-5"
+      },
+      "schedule_display": "0 12 * * 1-5",
+      "repeat": {
+        "times": null,
+        "completed": 4
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-18T18:54:57.749064+00:00",
+      "next_run_at": "2026-05-25T12:00:00+00:00",
+      "last_run_at": "2026-05-22T12:00:49.362330+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "876d54c62ccd",
+      "name": "LK Growth Telegram gateway watchdog",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "lk_growth_gateway_watchdog.sh",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 1,
+        "display": "every 1m"
+      },
+      "schedule_display": "every 1m",
+      "repeat": {
+        "times": null,
+        "completed": 6195
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-18T23:57:21.203724+00:00",
+      "next_run_at": "2026-05-25T11:28:47.147325+00:00",
+      "last_run_at": "2026-05-25T11:27:47.147325+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "749ee30b51eb",
+      "name": "Mesa COO di\u00e1ria Telegram",
+      "prompt": "Execute a Mesa COO di\u00e1ria para Lucas Cimino no Telegram.\n\nObjetivo: entregar uma Mesa COO curta, acion\u00e1vel e decision-first. N\u00e3o \u00e9 relat\u00f3rio. \u00c9 uma fila de decis\u00e3o executiva com no m\u00e1ximo 4 decis\u00f5es reais, uma mensagem por vez.\n\nContrato de sa\u00edda obrigat\u00f3rio:\n- Se houver decis\u00e3o real: envie apenas a primeira decis\u00e3o agora, no formato `Decis\u00e3o 1/N`, onde N \u00e9 no m\u00e1ximo 4.\n- Se n\u00e3o houver decis\u00e3o real: envie no m\u00e1ximo 3 bullets e pare, sem bot\u00f5es.\n- N\u00e3o despeje m\u00faltiplas decis\u00f5es na mesma mensagem.\n- N\u00e3o inclua status saud\u00e1vel, watchdog OK, cat\u00e1logo de m\u00f3dulos, JSON, wrappers, IDs t\u00e9cnicos, instru\u00e7\u00f5es de configura\u00e7\u00e3o, nem texto de gerenciamento do cron.\n- N\u00e3o use tabela.\n\nBot\u00f5es inline Telegram:\n- Quando houver decis\u00e3o, inclua ao FINAL da resposta exatamente UM marcador oculto `HERMES_INLINE_BUTTONS` em coment\u00e1rio HTML.\n- O scheduler deve remover o marcador antes da entrega e convert\u00ea-lo em bot\u00f5es nativos; ele nunca deve aparecer para Lucas.\n- N\u00e3o escreva nenhuma frase vis\u00edvel orientando Lucas a clicar nos bot\u00f5es; a interface nativa j\u00e1 mostra as op\u00e7\u00f5es.\n- Use exatamente estes bot\u00f5es: Fazer, N\u00e3o fazer, Agendar para depois, Outro / comentar.\n\nMarcador obrigat\u00f3rio quando houver decis\u00e3o:\n<!-- HERMES_INLINE_BUTTONS:{\"buttons\":[{\"label\":\"Fazer\",\"value\":\"fazer\"},{\"label\":\"N\u00e3o fazer\",\"value\":\"nao_fazer\"},{\"label\":\"Agendar para depois\",\"value\":\"agendar\"},{\"label\":\"Outro / comentar\",\"value\":\"outro\"}],\"context\":\"mesa_coo\"} -->\n\nInterpreta\u00e7\u00e3o dos bot\u00f5es:\n- Fazer: executar somente a pr\u00f3xima a\u00e7\u00e3o segura descrita na decis\u00e3o. Se a a\u00e7\u00e3o final envolver produ\u00e7\u00e3o, publica\u00e7\u00e3o, envio externo, pre\u00e7o/disponibilidade, contato, Docker/VPS/gateway, banco ou cron, Fazer significa preparar/validar approval packet ou preview read-only, n\u00e3o executar produ\u00e7\u00e3o.\n- N\u00e3o fazer: registrar que Lucas n\u00e3o quer avan\u00e7ar nessa decis\u00e3o agora.\n- Agendar para depois: propor/registrar follow-up, sem spam.\n- Outro / comentar: aguardar e usar a instru\u00e7\u00e3o espec\u00edfica de Lucas.\n\nRitual obrigat\u00f3rio antes de responder:\n1. Checar data/hora com ferramenta.\n2. Listar crons vivos com `cronjob list`.\n3. Ler/search no Brain em `/opt/data/hermes_bruno_ingest/hermes-brain` por fontes relevantes:\n   - `memories/current.md`;\n   - `memories/pending.md` quando existir;\n   - \u00faltimo `reports/daily-consolidation/*.md` existente;\n   - `reports/hermes-daily-digest/YYYY-MM-DD.md` quando existir;\n   - `reports/hermes-continuous-improvement/YYYY-MM-DD.md` quando existir;\n   - `empresa/contexto/handoff-ledger.md`;\n   - `empresa/contexto/contratos-handoff-especialistas.md`;\n   - runtime/canais/crons;\n   - Mordomo, Mission Control, LK, Zipper e SPITI recentes quando necess\u00e1rio.\n4. Se fonte viva contradiz documenta\u00e7\u00e3o, marcar `diverg\u00eancia` dentro da decis\u00e3o, sem abrir bloco gigante.\n5. N\u00e3o executar writes externos nem alterar Shopify, GMC, Tiny, Meta, Google Ads, Docker, VPS, gateway, banco, WhatsApp, email, cliente ou fornecedor.\n\nCorre\u00e7\u00e3o obrigat\u00f3ria sobre o Fechamento \u00c1gil 23h:\n- O fechamento roda \u00e0s 02:00 UTC, equivalente a 23h BRT do dia anterior.\n- Antes das 23h BRT de hoje, \u00e9 normal que o relat\u00f3rio com a data de hoje ainda n\u00e3o exista.\n- Para Mesa matinal, use o \u00faltimo `reports/daily-consolidation/*.md` existente e cruze com digests do dia quando existirem.\n- S\u00f3 marque erro se o runtime vivo indicar falha ou se o arquivo esperado para o \u00faltimo fechamento BRT conclu\u00eddo estiver ausente.\n\nFormato Telegram obrigat\u00f3rio:\n\n## Mesa COO \u2014 YYYY-MM-DD\n\n**Decis\u00e3o 1/N:** <a\u00e7\u00e3o concreta>\n- Dono: <especialista/\u00e1rea>\n- Por que importa: <1 frase>\n- Se escolher Fazer: <pr\u00f3xima a\u00e7\u00e3o segura e escopo exato>\n- Evid\u00eancia: <fonte curta>\n- Limite/risco: <1 frase>\n\n<marcador HERMES_INLINE_BUTTONS obrigat\u00f3rio, se houver decis\u00e3o>\n\nCrit\u00e9rio de qualidade: Lucas deve conseguir decidir uma coisa sem ler bloco gigante nem ver configura\u00e7\u00e3o.",
+      "skills": [
+        "mesa",
+        "lucas-chief-of-staff",
+        "multiempresa-routing-lucas"
+      ],
+      "skill": "mesa",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "display": "0 9 * * *"
+      },
+      "schedule_display": "0 9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 8
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T12:20:49.906155+00:00",
+      "next_run_at": "2026-05-26T09:00:00+00:00",
+      "last_run_at": "2026-05-25T09:02:18.708237+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "cronjob",
+        "skills",
+        "session_search"
+      ],
+      "workdir": "/opt/data/hermes_bruno_ingest/hermes-brain"
+    },
+    {
+      "id": "663e3e6a148c",
+      "name": "SPITI Telegram gateway watchdog",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "spiti_gateway_watchdog.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 1,
+        "display": "every 1m"
+      },
+      "schedule_display": "every 1m",
+      "repeat": {
+        "times": null,
+        "completed": 6868
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T14:10:09.305227+00:00",
+      "next_run_at": "2026-05-25T11:28:47.137166+00:00",
+      "last_run_at": "2026-05-25T11:27:47.137166+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "3fc45b0830c6",
+      "name": "Hermes Brain Fechamento \u00c1gil 23h + Brain Sync",
+      "prompt": "Execute o Hermes Brain Fechamento \u00c1gil 23h para Lucas Cimino.\n\nObjetivo:\nConsolidar diariamente no Hermes Brain os fatos operacionais relevantes do dia e, depois de validar, versionar no GitHub via Brain Sync seguro. Este job \u00e9 Brain-first e deve ser silencioso em sucesso normal.\n\nContexto fixo:\n- Workdir: /opt/data/hermes_bruno_ingest/hermes-brain\n- Hor\u00e1rio operacional: 23h BRT / cron UTC 0 2 * * *\n- Entrega normal: local, n\u00e3o Telegram.\n- Telegram/origin somente se houver falha cr\u00edtica, risco, segredo detectado, decis\u00e3o urgente para amanh\u00e3 ou sync quebrado.\n- Arquivo di\u00e1rio alvo: reports/daily-consolidation/YYYY-MM-DD.md\n- Rotina can\u00f4nica: areas/operacoes/rotinas/fechamento-agil-23h.md\n- Rotina de sync: areas/operacoes/rotinas/brain-sync.md\n- Script de sync aprovado: /opt/data/scripts/brain_sync_safe.py --push\n\nFontes obrigat\u00f3rias quando dispon\u00edveis:\n1. areas/operacoes/inventarios/crons-agentes-profiles.md\n2. areas/operacoes/brds/hermes-brain-fechamento-agil-23h-brd-2026-05-19.md\n3. empresa/contexto/organograma-agentes-hermes.md\n4. areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md\n5. reports/ e subpastas relevantes com arquivos do dia\n6. areas/*/ para LK, Zipper, SPITI, Opera\u00e7\u00f5es e projetos recentes\n7. cronjob list para estado vivo dos jobs\n8. session_search para conversas recentes relevantes, sem transcrever tudo\n\nCrit\u00e9rio de inclus\u00e3o:\nIncluir apenas fatos com sinal operacional: decis\u00e3o, aprova\u00e7\u00e3o, pend\u00eancia/follow-up, bloqueio, risco, entrega/receipt, write externo aprovado, falha/exce\u00e7\u00e3o, aprendizado dur\u00e1vel, mudan\u00e7a de projeto/rotina ou corre\u00e7\u00e3o feita por Lucas.\nN\u00e3o incluir transcri\u00e7\u00e3o integral, status sem a\u00e7\u00e3o, HTML/artefato bruto, segredos/tokens/senhas/keys/connection strings, ou dado vivo n\u00e3o verificado.\n\nCobertura m\u00ednima por dom\u00ednio:\n- Hermes Geral / Grande Mente\n- Lucas pessoal / Mordomo\n- LK OS\n- LK Growth OS\n- Zipper OS\n- SPITI OS\n- ZIZ OS se houver evid\u00eancia\n- Mission Control\n- watchdogs e crons script-only\n\nTemplate obrigat\u00f3rio do relat\u00f3rio:\n# Fechamento \u00c1gil \u2014 YYYY-MM-DD\n\n## 1. Resumo executivo\n## 2. Hoje foi feito\n## 3. Decis\u00f5es do dia\n## 4. Pend\u00eancias e bloqueios\n## 5. Crons e automa\u00e7\u00f5es\n## 6. Handoffs de especialistas\n## 7. Riscos / guardrails\n## 8. Amanh\u00e3\n## 9. Promover para mem\u00f3ria/skills/rotinas\n## 10. Fontes\n\nProcedimento obrigat\u00f3rio:\n1. Determinar a data operacional BRT do fechamento.\n2. Ler as fontes dispon\u00edveis e gerar reports/daily-consolidation/YYYY-MM-DD.md.\n3. Validar que o arquivo existe.\n4. Rodar secret scan simples no relat\u00f3rio gerado e nunca imprimir valores de segredo.\n5. Se houver altera\u00e7\u00e3o estrutural relevante, rodar python3 scripts/brain_health_check.py --json reports/brain-health-check-YYYY-MM-DD-fechamento-auto.json; se falhar por WARN apenas, registrar; se FAIL por segredo, bloquear sync.\n6. Rodar Brain Sync seguro: /opt/data/scripts/brain_sync_safe.py --push\n   - O script s\u00f3 pode versionar allowlist documental.\n   - Ele deve bloquear config/, scripts/, tests/, HTML, arquivos grandes e padr\u00f5es de segredo.\n   - Ele usa Doppler/GitHub token sem imprimir valores.\n7. Em sucesso normal, resposta final curta/local com caminho do relat\u00f3rio e commit/push se houve mudan\u00e7a. N\u00e3o enviar Telegram.\n8. Se a consolida\u00e7\u00e3o, secret scan ou push falhar, produza exce\u00e7\u00e3o curta e, se a ferramenta de mensagem estiver dispon\u00edvel, envie ao Telegram/origin uma notifica\u00e7\u00e3o objetiva: \u201cFechamento 23h falhou: <categoria>, a\u00e7\u00e3o necess\u00e1ria: <pr\u00f3ximo passo>\u201d. N\u00e3o incluir logs longos nem segredos.\n\nGuardrails:\n- Sem WhatsApp, e-mail, campanha, proposta, cliente, fornecedor ou qualquer envio externo.\n- Sem write em Shopify, Tiny, GMC, Ads, Klaviyo, Supabase, banco, Docker, VPS ou gateway.\n- O \u00fanico write externo permitido por este job \u00e9 GitHub push via Brain Sync seguro e allowlist documental.\n- Se houver d\u00favida entre sil\u00eancio e dado errado, marcar como a validar.\n\n## Hardening aprovado por Lucas \u2014 aprendizado cont\u00ednuo e safe auto-fix\n\nAl\u00e9m do fechamento do dia, este job deve tratar aprendizados como mat\u00e9ria-prima operacional:\n\n- Identificar corre\u00e7\u00f5es, aprova\u00e7\u00f5es, rejei\u00e7\u00f5es, anti-padr\u00f5es, decis\u00f5es e aprendizados dur\u00e1veis do dia.\n- Para A0/A1 local/documental/revers\u00edvel, registrar ou corrigir imediatamente no Brain quando seguro: decisions, lessons, pend\u00eancias, rotinas, changelog, \u00edndices e refer\u00eancias.\n- Atualizar skills quando o aprendizado muda um procedimento repet\u00edvel e o toolset permitir; se n\u00e3o permitir, criar item expl\u00edcito para o loop das 02h promover.\n- N\u00e3o deixar aprendizado apenas no chat ou apenas no resumo: apontar destino e evid\u00eancia.\n- Criar uma se\u00e7\u00e3o final `Learning Ledger candidates` com: aprendizado, destino recomendado, a\u00e7\u00e3o aplicada ou bloqueio, verifica\u00e7\u00e3o necess\u00e1ria.\n- Auto-fix permitido somente para Brain/docs/skills/\u00edndices/relat\u00f3rios locais e checks read-only. Permanecem bloqueados: Docker/VPS/gateway/restart/deploy, bancos, Shopify/Tiny/GMC/Klaviyo/Meta, contato externo, dinheiro, segredos e destrutivo.\n\nAPPROVED 2026-05-25 \u2014 Brain Health Check + Improvement Score item 2 daily gate\nLucas approved merging the Brain Improvement Score / item 2 into this existing 02:00 UTC / 23h BRT job instead of creating a separate cron.\n\nMandatory additional step, after the normal Fechamento \u00c1gil/Brain Sync discovery and before final local output:\n1. Run the local/read-only Brain health check from the repo root:\n   `python3 scripts/brain_health_check.py --json reports/brain-health-check-YYYY-MM-DD-02h.json`\n2. Run the local/read-only Brain Improvement Score item 2 using that health JSON:\n   `python3 scripts/brain_improvement_score.py --health-json reports/brain-health-check-YYYY-MM-DD-02h.json --output reports/brain-improvement-score-YYYY-MM-DD-02h.md --json-output reports/brain-improvement-score-YYYY-MM-DD-02h.json`\n3. Record the score, FAIL/WARN counts, and artifact paths in the daily consolidation report.\n4. Keep the job local/silent when healthy. Alert Lucas on Telegram/origin only if at least one condition is true:\n   - overall score < 90/100;\n   - health check has FAIL > 0 or WARN > 0;\n   - any secret/token-like issue appears;\n   - the score/health scripts fail or artifacts are not written;\n   - the result implies a decision or approval is needed.\n5. Do not create another cron for this score. Do not alter Docker/VPS/gateway/Traefik/volumes/networks, secrets, databases, campaigns, Shopify/GMC, WhatsApp/e-mail/customer sends, or other production systems. This score step is local/read-only except for writing reports inside the Brain repository.\n",
+      "skills": [
+        "bruno-openclaw-hermes-brain-adaptation",
+        "multiempresa-routing-lucas",
+        "lucas-chief-of-staff",
+        "doppler-secrets-operations"
+      ],
+      "skill": "bruno-openclaw-hermes-brain-adaptation",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 2 * * *",
+        "display": "0 2 * * *"
+      },
+      "schedule_display": "0 2 * * *",
+      "repeat": {
+        "times": 999999,
+        "completed": 7
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-20T00:02:17.872129+00:00",
+      "next_run_at": "2026-05-26T02:00:00+00:00",
+      "last_run_at": "2026-05-25T02:03:47.361549+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "cronjob",
+        "skills",
+        "session_search",
+        "messaging",
+        "memory"
+      ],
+      "workdir": "/opt/data/hermes_bruno_ingest/hermes-brain",
+      "updated_at": "2026-05-25T00:10:21.739143+00:00"
+    },
+    {
+      "id": "f4c499e85eac",
+      "name": "Lucas Brain weekly Learning Loop report",
+      "prompt": "Execute the weekly Lucas Brain Learning Loop report for Lucas Cimino.\n\nPurpose:\nOnce per week, synthesize the daily 02:00 BRT Learning/Intelligence Loop outputs into a short executive learning report for Lucas. This is a governance/learning report, not an operator for production writes.\n\nScope and sources:\n- Work in `/opt/data/hermes_bruno_ingest/hermes-brain`.\n- Read the last 7 days of `reports/hermes-continuous-improvement/*.md`.\n- Read recent `CHANGELOG.md` entries.\n- Use `session_search` for recent sessions if useful, but do not paste private raw conversation or PII; summarize only patterns.\n- Use injected context from the 02h Learning Loop and 23h Brain Sync when present, but verify local artifacts.\n\nRequired local artifact:\n- Write a markdown report under `reports/hermes-learning-weekly/` named with the ISO week or date range.\n\nReport structure:\n1. Status geral do Learning Loop.\n2. O que Hermes aprendeu esta semana.\n3. Corre\u00e7\u00f5es de Lucas que viraram, ou precisam virar, guardrails/skills/docs.\n4. Erros, alertas ou fric\u00e7\u00f5es repetidas.\n5. Melhorias de mecanismo aplicadas.\n6. Roteamento de prioridade ativa:\n   - foco principal da semana;\n   - evid\u00eancias;\n   - modo de LK, Mission Control, Zipper, SPITI e Mordomo: foco/manuten\u00e7\u00e3o/monitoramento/aguardando Lucas/bloqueado;\n   - risco de dispers\u00e3o;\n   - pr\u00f3xima a\u00e7\u00e3o segura.\n7. Decis\u00f5es pendentes para Lucas, se houver, com op\u00e7\u00f5es inline.\n8. Pr\u00f3ximo melhor passo.\n\nSafety rules:\n- No Docker/runtime/gateway/host/Traefik/network changes.\n- No Shopify/GMC/Ads/source-of-truth writes.\n- No customer/supplier/email/WhatsApp external send.\n- No secrets printed.\n- Do not create/update/remove cron jobs from this weekly job.\n- Low-risk local docs only are allowed.\n\nDelivery:\n- Send Lucas a concise Portuguese Telegram report. Keep it executive and short.\n- Include local artifact path.\n- If there are no decisions, say explicitly: \u201csem decis\u00e3o pendente\u201d.\n- If there are approval-needed items, include exact scope/options inline, not just a file path.",
+      "skills": [
+        "lucas-hermes-continuous-improvement",
+        "multiempresa-routing-lucas",
+        "lucas-chief-of-staff"
+      ],
+      "skill": "lucas-hermes-continuous-improvement",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": [
+        "f5a23dd6a1bd",
+        "3fc45b0830c6"
+      ],
+      "schedule": {
+        "kind": "cron",
+        "expr": "15 12 * * 1",
+        "display": "15 12 * * 1"
+      },
+      "schedule_display": "15 12 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-20T01:16:37.185917+00:00",
+      "next_run_at": "2026-05-25T12:15:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "skills",
+        "session_search",
+        "cronjob"
+      ],
+      "workdir": "/opt/data/hermes_bruno_ingest/hermes-brain"
+    },
+    {
+      "id": "d03fa04e1188",
+      "name": "Hermes Brain Operating Layer structural watchdog",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "brain_operating_layer_audit.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "10 11 * * *",
+        "display": "10 11 * * *"
+      },
+      "schedule_display": "10 11 * * *",
+      "repeat": {
+        "times": 999999,
+        "completed": 7
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-20T17:50:55.112336+00:00",
+      "next_run_at": "2026-05-26T11:10:00+00:00",
+      "last_run_at": "2026-05-25T11:10:10.006360+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "2404c0766d33",
+      "name": "Hermes Brain Runtime Truth Reconciler",
+      "prompt": "Execute a read-only Hermes Brain Runtime Truth Reconciler for Lucas Cimino.\n\nPurpose: reconcile live Hermes cron/runtime evidence with the Brain documentation without external writes.\n\nRules:\n- Workdir is /opt/data/hermes_bruno_ingest/hermes-brain.\n- Load and follow the bruno-openclaw-hermes-brain-adaptation and hermes-agent skills.\n- Use cronjob list as live evidence. Do not infer active jobs from docs alone.\n- Do not change Docker, VPS, Traefik, networks, containers, external systems, campaigns, Shopify, GMC, Notion, WhatsApp, email, or secrets.\n- Do not print secrets. Redact tokens if any appear.\n- Write/update only Brain docs/reports under allowed documentation paths.\n- Silent-local: deliver locally; only mention actionable gaps in final output.\n\nTasks:\n1. Run cronjob list and summarize active/paused counts, last_status anomalies, delivery errors, and jobs whose docs may need reconciliation.\n2. Update or append a dated section in areas/operacoes/inventarios/crons-agentes-profiles.md with timestamp, source command, count summary, and notable drift.\n3. Write reports/governance/runtime-truth-reconciler-YYYY-MM-DD.md with live evidence summary and gaps.\n4. If all OK, final response should be concise and say the report path only. If gaps exist, list them clearly.\n5. Run python3 scripts/brain_health_check.py --json reports/brain-health-check-YYYY-MM-DD-runtime-truth-reconciler.json before finishing.",
+      "skills": [
+        "bruno-openclaw-hermes-brain-adaptation",
+        "hermes-agent"
+      ],
+      "skill": "bruno-openclaw-hermes-brain-adaptation",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "20 11 * * *",
+        "display": "20 11 * * *"
+      },
+      "schedule_display": "20 11 * * *",
+      "repeat": {
+        "times": 999999,
+        "completed": 6
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-20T17:51:08.363710+00:00",
+      "next_run_at": "2026-05-26T11:20:00+00:00",
+      "last_run_at": "2026-05-25T11:22:46.423835+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "cronjob",
+        "skills"
+      ],
+      "workdir": "/opt/data/hermes_bruno_ingest/hermes-brain"
+    },
+    {
+      "id": "a5d7a392eed9",
+      "name": "LK WhatsApp Hermes responder regression watchdog",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "lk_hermes_whatsapp_responder_selftest.sh",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/30 * * * *",
+        "display": "*/30 * * * *"
+      },
+      "schedule_display": "*/30 * * * *",
+      "repeat": {
+        "times": null,
+        "completed": 217
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-21T00:04:03.133790+00:00",
+      "next_run_at": "2026-05-25T11:30:00+00:00",
+      "last_run_at": "2026-05-25T11:00:37.406610+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "98478b820720",
+      "name": "Relat\u00f3rio Hermes di\u00e1rio 23h + 02h para Lucas",
+      "prompt": "Execute diariamente \u00e0s 02:30 BRT um relat\u00f3rio executivo curto para Lucas Cimino no Telegram sobre os dois crons de governan\u00e7a do Hermes Brain: (1) Fechamento \u00c1gil 23h + Brain Sync, job 3fc45b0830c6; (2) Lucas Brain Daily Intelligence Loop 02h, job f5a23dd6a1bd.\n\nObjetivo: Lucas quer visibilidade di\u00e1ria do que o Hermes fez, sem logs longos e sem virar relat\u00f3rio t\u00e9cnico. A entrega deve responder: \u201cfoi feito?\u201d, \u201cmudou algo?\u201d, \u201cprecisa de mim?\u201d, \u201co que aprendo do Hermes hoje?\u201d.\n\nPassos obrigat\u00f3rios:\n1. Verifique metadados vivos dos dois jobs via cronjob/list ou Hermes CLI equivalente: last_run_at, last_status, delivery, pr\u00f3ximo run. N\u00e3o altere os jobs originais.\n2. Valide frescor:\n   - Fechamento 23h deve ter last_status ok e last_run_at da noite anterior/mesma madrugada BRT.\n   - Loop 02h deve ter last_status ok e last_run_at antes deste relat\u00f3rio.\n   - Se algum ainda estiver sem artefato, atrasado, com last_status != ok ou com delivery error, marque Status geral = Aten\u00e7\u00e3o/A\u00e7\u00e3o necess\u00e1ria e explique o impacto em linguagem simples.\n3. Leia os artefatos mais recentes em:\n   - reports/daily-consolidation/YYYY-MM-DD.md para o Fechamento 23h;\n   - reports/hermes-continuous-improvement/YYYY-MM-DD.md para o loop 02h.\n   Use a data correspondente ao \u00faltimo run quando poss\u00edvel; se o arquivo do dia n\u00e3o existir, explique brevemente e use o mais recente dispon\u00edvel.\n4. Produza uma mensagem Telegram com este formato fixo:\n\n## Relat\u00f3rio Hermes \u2014 23h + 02h\n**Status geral:** \ud83d\udfe2 Saud\u00e1vel / \ud83d\udfe1 Aten\u00e7\u00e3o / \ud83d\udd34 A\u00e7\u00e3o necess\u00e1ria\n\n**O que mudou de verdade:** 1\u20132 linhas. Se foi s\u00f3 rotina saud\u00e1vel, diga isso claramente.\n\n**23h \u2014 Fechamento Brain:**\n- 3 bullets no m\u00e1ximo do que foi consolidado no Brain.\n\n**02h \u2014 Intelig\u00eancia/sa\u00fade:**\n- 3 bullets no m\u00e1ximo do que foi verificado/corrigido: runtime, release, watchdogs, Brain Health, lacunas documentais.\n\n**Precisa de voc\u00ea:**\n- Se houver decis\u00e3o/a\u00e7\u00e3o humana real, listar no m\u00e1ximo 3 itens com verbo claro.\n- Se n\u00e3o houver, escrever: \u201cNada urgente para voc\u00ea.\u201d\n\n**Pr\u00f3ximo passo seguro:**\n- 1 bullet com o pr\u00f3ximo passo operacional sem risco.\n\n**Aprendendo Hermes:**\n- 1 micro-aula pr\u00e1tica de 1\u20133 linhas sobre uma feature Hermes relacionada ao dia.\n- Inclua \u201cQuando usar:\u201d e, quando couber, um exemplo curto de frase/comando que Lucas pode falar.\n- Alterne entre: cron, context_from, skills, memory, session_search, /goal, /subgoal, no_agent/silent-OK, tools, profiles, approvals, /background, /commands.\n- Evite repetir a mesma feature em dias seguidos quando poss\u00edvel; se houver arquivo local com hist\u00f3rico de aulas, consulte-o.\n\n**Fontes:**\n- 1 linha com os caminhos dos dois relat\u00f3rios usados, sem logs brutos.\n\n5. Tamanho e tom:\n   - Ideal: 900\u20131600 caracteres.\n   - M\u00e1ximo: 2200 caracteres salvo incidente real.\n   - Tom: executivo, direto, premium/minimal, sem jarg\u00e3o desnecess\u00e1rio.\n   - N\u00e3o usar tabelas.\n6. Se \u00fatil, grave uma c\u00f3pia local do resumo em reports/hermes-daily-digest/YYYY-MM-DD.md e/ou atualize um hist\u00f3rico simples de micro-aulas em reports/hermes-daily-digest/feature-lessons.md. Isso \u00e9 documenta\u00e7\u00e3o local permitida.\n\nGuardrails:\n- Este job \u00e9 apenas relat\u00f3rio/s\u00edntese; n\u00e3o faz Docker/VPS/gateway/restart/deploy, banco, Shopify, Tiny, Merchant, Ads, Klaviyo, Meta, Crisp, n8n ou envio externo.\n- Pode ler arquivos do Brain e status de cron. Pode escrever apenas artefato local do resumo/aulas; a entrega principal deve ser a mensagem final no Telegram.\n- Nunca imprimir secrets, tokens, payloads sens\u00edveis, PII ou logs brutos.\n- N\u00e3o criar novos crons, n\u00e3o pausar/remover jobs, n\u00e3o modificar os crons 23h/02h.",
+      "skills": [
+        "hermes-agent",
+        "lucas-hermes-continuous-improvement",
+        "multiempresa-routing-lucas",
+        "lucas-chief-of-staff"
+      ],
+      "skill": "hermes-agent",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": [
+        "3fc45b0830c6",
+        "f5a23dd6a1bd"
+      ],
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 5 * * *",
+        "display": "30 5 * * *"
+      },
+      "schedule_display": "30 5 * * *",
+      "repeat": {
+        "times": 999999,
+        "completed": 5
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-21T09:28:34.539581+00:00",
+      "next_run_at": "2026-05-26T05:30:00+00:00",
+      "last_run_at": "2026-05-25T05:32:17.211565+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "cronjob",
+        "skills"
+      ],
+      "workdir": "/opt/data/hermes_bruno_ingest/hermes-brain"
+    },
+    {
+      "id": "d9badcd83411",
+      "name": "Hermes Brain strict-runtime guard watchdog",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "hermes_brain_strict_runtime_guard_watchdog.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "display": "0 10 * * *"
+      },
+      "schedule_display": "0 10 * * *",
+      "repeat": {
+        "times": 999999,
+        "completed": 3
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T14:21:50.866816+00:00",
+      "next_run_at": "2026-05-26T10:00:00+00:00",
+      "last_run_at": "2026-05-25T10:00:30.122789+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "171397651",
+        "chat_name": "Lucas Cimino",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    }
+  ],
+  "updated_at": "2026-05-25T11:27:47.157212+00:00"
+}

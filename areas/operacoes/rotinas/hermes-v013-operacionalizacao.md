@@ -1,5 +1,7 @@
 # Rotina — Operacionalização Hermes v0.13
 
+> LEGACY / SUPERSEDED — rotina histórica da fase v0.13. Não usar como estado atual do runtime. Para governança viva, usar `areas/operacoes/intelligence-map.md`, `areas/operacoes/rotinas/cron-control-plane.md`, `areas/operacoes/rotinas/runtime-truth-reconciler.md` e o registro real de crons. Comandos, IDs de jobs e paths citados abaixo podem estar obsoletos.
+
 Data: 2026-05-10
 Escopo: Hermes/LK/Hermes Brain em produção Docker v0.13.0.
 
@@ -171,6 +173,104 @@ Estado confirmado a partir do container atual:
 - GitHub releases não mostrou release público posterior a `v2026.5.7`/v0.13.0.
 
 Gap registrado: este cron roda dentro de container sem acesso ao Docker daemon (`/var/run/docker.sock` indisponível). Portanto, nesta execução, não foi possível confirmar via `docker ps` as imagens dos containers nem ler logs Docker diretamente. Fechar esse gap exige plano separado de observabilidade Docker read-only no host, socket controlado ou SSH, com aprovação Lucas por tocar superfície de infra.
+
+## Run diário — 2026-05-12 02:00 BRT
+
+Relatório: `reports/hermes-continuous-improvement/2026-05-12.md`.
+
+Estado confirmado a partir do container atual:
+
+- `/opt/hermes/.venv/bin/hermes --version` retorna `Hermes Agent v0.13.0 (2026.5.7)`;
+- config ativo: `/opt/data/config.yaml`, config version `23` OK;
+- GitHub releases não mostrou release público posterior a `v2026.5.7`/v0.13.0;
+- 8 crons ativos, incluindo o cron diário `f5a23dd6a1bd`, os watchdogs `no_agent` `edd06fe19397` e `e7a61e275c37`, e os relatórios obrigatórios LK Daily/Weekly/GMC;
+- watchdog runtime/cron e watchdog freshness continuam com contrato silencioso OK (`rc=0`, stdout vazio, stderr vazio);
+- logs locais mostram gateway Telegram com atividade recente; não há evidência de falha persistente de startup neste recorte;
+- board `lk-growth-ops`: 8 cards concluídos e 5 cards `ready` sem assignee.
+
+Gaps registrados:
+
+- este cron segue sem acesso ao Docker daemon (`/var/run/docker.sock` indisponível), então não confirmou imagens/containers por `docker ps` nem logs Docker diretamente;
+- `hermes cron status`/`hermes status --all` reportou gateway parado, mas o cron está executando e logs locais mostram atividade recente. Tratar como discrepância de detector/ambiente até inspeção Hostinger/Docker read-only confirmar o contrário;
+- `hermes status --all` pode imprimir fragmentos ou valores de chaves; usar só para diagnóstico interno e sanitizar antes de qualquer relatório.
+
+Próxima ação recomendada: preparar plano read-only de observabilidade Docker no host para publicar status sanitizado dos containers/logs em `/opt/data/`, sem socket amplo nem restart, e pedir aprovação Lucas antes de qualquer mudança em Hostinger/Docker.
+
+## Run diário — 2026-05-13 02:00 BRT
+
+Relatório: `reports/hermes-continuous-improvement/2026-05-13.md`.
+
+Estado confirmado a partir do container atual + helper aprovado:
+
+- helper Hostinger/Docker executado primeiro e salvou JSON sanitizado em `reports/hermes-host-docker-observability-2026-05-13.json`;
+- o helper falhou em SSH read-only com `Permission denied`, sem executar mutação;
+- fallback local retornou `Hermes Agent v0.13.0 (2026.5.7)`;
+- config ativo `/opt/data/config.yaml`, config version `23` OK;
+- `hermes cron status` reportou gateway/scheduler rodando, PID `7`, com 8 crons ativos;
+- watchdogs `no_agent` `edd06fe19397` e `e7a61e275c37` seguem com contrato silencioso OK (`rc=0`, stdout vazio, stderr vazio);
+- API local `/health` retornou `200`/`ok`;
+- GitHub releases não mostrou release público posterior a `v2026.5.7`/v0.13.0;
+- board `lk-growth-ops`: 8 cards concluídos e 5 cards `ready` sem assignee.
+
+Gap registrado: a lacuna Docker host melhorou de “sem helper” para “helper existe, roda e registra JSON, mas falha autenticação SSH read-only”. Próximo passo recomendado é corrigir o acesso read-only do helper com plano mínimo e rollback, sem alterar Docker/compose/gateway/root além do necessário e sem restart.
+
+## Run diário — 2026-05-14 02:00 BRT
+
+Relatório: `reports/hermes-continuous-improvement/2026-05-14.md`.
+
+Estado confirmado por helper Hostinger/Docker aprovado + fallback local:
+
+- helper Hostinger/Docker executado primeiro e salvou JSON sanitizado em `reports/hermes-host-docker-observability-2026-05-14.json`;
+- o gap de autenticação SSH read-only observado em 2026-05-13 foi fechado nesta execução: o helper confirmou os containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` rodando no host;
+- ambos os containers usam a imagem esperada `hermes-agent-custom:v0.13.0-20260510`;
+- ambos reportam `Hermes Agent v0.13.0 (2026.5.7)` via `/opt/hermes/.venv/bin/hermes --version`;
+- config ativo `/opt/data/config.yaml`, config version `23` OK;
+- `hermes cron status` reportou gateway/scheduler rodando, PID `7`, com 8 crons ativos;
+- API local `/health` retornou `200`/`ok`;
+- GitHub releases não mostrou release pública posterior a `v2026.5.7`/v0.13.0;
+- `hermes curator status` confirmou curator habilitado, último run há 1 dia, sem intervenção necessária;
+- `hermes skills check` mostrou `0 update(s)` disponíveis para as skills rastreadas.
+
+Próxima ação recomendada: nenhum runtime change. Acompanhar o primeiro run do `LK GMC Review` obrigatório às 09:00 BRT sem criar novos crons recursivamente.
+
+## Run diário — 2026-05-15 02:00 BRT
+
+Relatório: `reports/hermes-continuous-improvement/2026-05-15.md`.
+
+Estado confirmado por helper Hostinger/Docker aprovado + checks locais:
+
+- helper Hostinger/Docker executado primeiro e salvou JSON sanitizado em `reports/hermes-host-docker-observability-2026-05-15.json`;
+- containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` confirmados `running` no host;
+- ambos usam a imagem esperada `hermes-agent-custom:v0.13.0-20260510`;
+- ambos reportam `Hermes Agent v0.13.0 (2026.5.7)` via `/opt/hermes/.venv/bin/hermes --version`;
+- config ativo `/opt/data/config.yaml`, config version `23` OK;
+- `hermes cron status` reportou gateway/scheduler rodando, PID `7`, com 13 crons ativos;
+- API local `/health` em `127.0.0.1:8642` retornou `200`/`ok`;
+- GitHub releases não mostrou release pública posterior a `v2026.5.7`/v0.13.0;
+- `hermes curator status` confirmou curator habilitado, último run há 2 dias, sem intervenção necessária;
+- `hermes skills check` mostrou `0 update(s)` disponíveis para a skill rastreada;
+- watchdogs `no_agent` runtime/cron e freshness revalidados com contrato silencioso OK (`rc=0`, stdout vazio, stderr vazio).
+
+Observação: logs recentes continuam contendo warnings transitórios de rede Telegram (`TimedOut`, fallback IP, `RemoteProtocolError`), mas o helper registrou `alerts: []` e não há evidência de falha persistente de startup. Próxima ação recomendada: nenhum runtime change; manter monitoramento diário.
+
+## Run diário — 2026-05-16 02:00 BRT
+
+Relatório: `reports/hermes-continuous-improvement/2026-05-16.md`.
+
+Estado confirmado por helper Hostinger/Docker aprovado + checks locais:
+
+- helper Hostinger/Docker executado primeiro e salvou JSON sanitizado em `reports/hermes-host-docker-observability-2026-05-16.json`;
+- containers `hermes-agent-5ajw-hermes-agent-1` e `hermes-agent-5ajw-hermes-telegram-1` confirmados `running` no host;
+- ambos usam a imagem esperada `hermes-agent-custom:v0.13.0-20260510`;
+- ambos reportam `Hermes Agent v0.13.0 (2026.5.7)` via `/opt/hermes/.venv/bin/hermes --version`;
+- `hermes cron status` reportou gateway/scheduler rodando, PID `7`, com 14 crons ativos;
+- API local `/health` em `127.0.0.1:8642` retornou `200`/`ok`;
+- GitHub Releases API no run inicial das 02h ainda não mostrou release pública posterior a `v2026.5.7`/v0.13.0; rechecagem intradia às 07:49 BRT identificou `v2026.5.16`/Hermes v0.14.0 e gerou `areas/operacoes/rotinas/hermes-v014-decision-brief-2026-05-16.md`, sem runtime swap/restart;
+- `hermes curator status` confirmou curator habilitado, último run há 3 dias, sem intervenção necessária;
+- `hermes skills check` mostrou `0 update(s)` disponíveis para a skill rastreada;
+- watchdogs `no_agent` runtime/cron e freshness revalidados com contrato silencioso OK (`rc=0`, stdout vazio, stderr vazio).
+
+Observação: logs recentes continuam contendo warnings transitórios de rede Telegram (`TimedOut`, fallback IP, `RemoteProtocolError`), mas o helper registrou `alerts: []`, gateway/API estão saudáveis e não há evidência de falha persistente. O aumento para 14 crons ativos é compatível com os crons de Mordomo/Zipper; não foi classificado como drift. Próxima ação recomendada: nenhum runtime change; manter monitoramento diário.
 
 ## Relação com release catch-up
 

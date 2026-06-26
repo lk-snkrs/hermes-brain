@@ -1,0 +1,114 @@
+{
+  "values_printed": false,
+  "approval_interpretation": "Generic Aprovo interpreted as approval for immediate scoped DEV/unpublished action only; Production not approved.",
+  "theme_id": "155065450718",
+  "main_key": "snippets/lk-variante-top30-visited-v2.liquid",
+  "split_key": "snippets/lk-variante-asics-gt2160-walesbonner-20260608.liquid",
+  "put_status": {
+    "split": 200,
+    "main": 200
+  },
+  "preflight_ok": true,
+  "preflight_product_count": 9,
+  "preflight_image_count": 9,
+  "pre_upload_qa": {
+    "main_size_before": 261103,
+    "main_size_after": 261184,
+    "main_under_256kb": true,
+    "split_size": 6097,
+    "render_line_count": 1,
+    "markers_in_split": {
+      "top30-asics-gt-2160-regular": 2,
+      "top30-adidas-wales-bonner-samba": 2
+    },
+    "malformed_urls": false,
+    "placeholder_images": false
+  },
+  "post_readback_qa": {
+    "readback_attempts": 1,
+    "main_sha_before": "aba2ed49b088",
+    "main_sha_after": "7b5e88f521ba",
+    "split_sha_after": "be2f6216c380",
+    "split_existed_before": false,
+    "render_line_count": 1,
+    "marker_counts": {
+      "top30-asics-gt-2160-regular": 2,
+      "top30-adidas-wales-bonner-samba": 2
+    },
+    "all_handles_present": {
+      "top30-asics-gt-2160-regular": true,
+      "top30-adidas-wales-bonner-samba": true
+    },
+    "current_exclusion_markup": true,
+    "malformed_urls": false,
+    "placeholder_images": false
+  },
+  "post_ok": true,
+  "families": [
+    {
+      "marker": "top30-asics-gt-2160-regular",
+      "label": "ASICS GT-2160",
+      "handles": [
+        "tenis-asics-gt-2160-x-above-the-clouds-white-pure-silver-branco",
+        "tenis-asics-gt-2160-white-putty-branco",
+        "tenis-asics-gt-2160-x-kith-marvel-villains-spider-man-venom-colorido",
+        "tenis-asics-gt-2160-x-gallery-dept-complexcon-cinza",
+        "tenis-asics-gt-2160-x-papergirl-beams-white-silver-branco",
+        "tenis-asics-gt-2160-x-jjjound-white-branco"
+      ]
+    },
+    {
+      "marker": "top30-adidas-wales-bonner-samba",
+      "label": "Adidas Samba Wales Bonner",
+      "handles": [
+        "tenis-adidas-samba-x-wales-bonner-wonder-clay-royal-bege",
+        "tenis-adidas-samba-x-wales-bonner-collegiate-navy-wonder-white-azul-marinho",
+        "tenis-adidas-samba-x-wales-bonner-wonder-white-marrom"
+      ]
+    }
+  ],
+  "post_preview_qa": {
+    "static": {
+      "theme_name": "lk-new-theme/dev",
+      "theme_role": "unpublished",
+      "main_sha12": "7b5e88f521ba",
+      "split_sha12": "be2f6216c380",
+      "render_line_count": 1,
+      "markers": {
+        "top30-asics-gt-2160-regular": 2,
+        "top30-adidas-wales-bonner-samba": 2
+      },
+      "handles_present": {
+        "tenis-asics-gt-2160-white-putty-branco": true,
+        "tenis-adidas-samba-x-wales-bonner-wonder-white-marrom": true
+      },
+      "malformed_urls": false,
+      "placeholder_images": false,
+      "section_guard_count": 6,
+      "exclusion_guard_count": 2
+    },
+    "preview_results": [
+      {
+        "handle": "tenis-asics-gt-2160-white-putty-branco",
+        "marker": "top30-asics-gt-2160-regular",
+        "status": 200,
+        "final_url_contains_preview": false,
+        "marker_present": false,
+        "lk_variante_present": false,
+        "current_product_excluded": true,
+        "bytes_read": 249507
+      },
+      {
+        "handle": "tenis-adidas-samba-x-wales-bonner-wonder-white-marrom",
+        "marker": "top30-adidas-wales-bonner-samba",
+        "status": 200,
+        "final_url_contains_preview": false,
+        "marker_present": false,
+        "lk_variante_present": false,
+        "current_product_excluded": true,
+        "bytes_read": 249508
+      }
+    ],
+    "note": "Preview public HTML may be inconclusive if Shopify redirects/strips preview_theme_id or anti-bot intervenes."
+  }
+}

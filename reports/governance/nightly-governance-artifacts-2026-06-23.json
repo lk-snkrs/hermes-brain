@@ -1,0 +1,58 @@
+{
+  "checker": "hermes_nightly_governance_artifacts_check.py",
+  "daily_intelligence": {
+    "exists": true,
+    "latest_path": "reports/hermes-continuous-improvement/2026-06-22.md",
+    "size_chars": 5042
+  },
+  "findings": [],
+  "generated_at_utc": "2026-06-23T04:08:12.436913+00:00",
+  "handoff": {
+    "exists": true,
+    "missing_fields": [],
+    "operational_date": "2026-06-23",
+    "path": "reports/daily-consolidation/latest-handoff.json",
+    "status": "ok",
+    "valid_json": true
+  },
+  "learning_ledger": {
+    "exists": true,
+    "latest_path": "reports/hermes-learning-ledger/2026-06-22.md",
+    "size_chars": 1960
+  },
+  "memory_hygiene": {
+    "exists": true,
+    "path": "reports/memory-hygiene/latest.json",
+    "status": "ok",
+    "summary": {
+      "active_mem0_doc_hits": 0,
+      "alert_count": 0,
+      "auto_compaction_count": 0,
+      "external_memory_provider_active": true,
+      "external_memory_provider_governed": true,
+      "external_memory_provider_policy": "generic_external_off_honcho_governed_allowed",
+      "files_checked": 32,
+      "honcho_governance": {
+        "config_exists": true,
+        "governed": true,
+        "peer_ok": true,
+        "provider": "honcho",
+        "recall_mode_ok": true,
+        "save_messages_ok": true,
+        "values_printed": false,
+        "watchdog_ok": true,
+        "watchdog_rc": 0,
+        "watchdog_stdout_empty": true,
+        "workspace_ok": true
+      },
+      "memory_provider": "honcho",
+      "near_saturation_count": 0,
+      "over_limit_count": 0,
+      "possible_secret_locator_count": 0,
+      "template_coverage_missing_count": 0
+    },
+    "valid_json": true
+  },
+  "mode": "check",
+  "status": "ok"
+}

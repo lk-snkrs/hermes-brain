@@ -1,0 +1,29 @@
+# Receipt — Operações Hermes — Brain fonte viva e dados grandes — 2026-06-09
+
+- Data/hora: 2026-06-09T10:41:23Z
+- Agente/profile/cron: Hermes Agent default / LC Hermes Central
+- Empresa/área: Operações Hermes / Governança do Brain / Arquitetura de contexto
+- Responsável humano: Lucas Cimino
+- Pedido original: Lucas respondeu “Fazer” à decisão da Mesa COO para transformar a regra “Brain aponta para fonte viva; não replica dados grandes” em rotina canônica hoje.
+- Classificação: local-write
+- Fontes usadas:
+  - `areas/operacoes/handoffs/handoff-lc-hermes-brain-fonte-viva-governance-20260609T000522Z.md`
+  - `areas/operacoes/MAPA.md`
+  - `empresa/rotinas/_index.md`
+  - `areas/operacoes/templates/receipt-operacional.md`
+  - `memories/pending.md`
+- O que foi feito:
+  - Criada rotina canônica `areas/operacoes/rotinas/brain-fonte-viva-e-dados-grandes.md`.
+  - Indexada a rotina em `areas/operacoes/MAPA.md` e `empresa/rotinas/_index.md`.
+  - Marcada a pendência correspondente como concluída em `memories/pending.md`.
+  - Ajustada uma linha de `memories/politica-memoria-hermes.md` para manter a política sem referência operacional desnecessária a provider externo rejeitado e passar no guard documental.
+  - Registrado este receipt local.
+- Output/artefato: rotina com regra canônica, padrão para bases grandes/vivas, matriz Brain vs fonte viva, checklist para PRDs/ingests/subagentes/Mission Control, critérios de aceite, exceções, anti-padrões e regra de promoção para skills.
+- Aprovação: “Fazer” via Telegram na Mesa COO de 2026-06-09.
+- Envio/publicação: nenhum envio externo; somente resposta Telegram ao Lucas após verificação.
+- Writes externos: nenhum.
+- Riscos/bloqueios: não foram movidos/apagados dados existentes; não foram alterados runtime, crons, Docker, VPS, gateway, Shopify, Tiny, GMC, campanhas, bancos ou integrações.
+- Rollback/mitigação: reverter os arquivos locais alterados/criados (`rotinas/brain-fonte-viva-e-dados-grandes.md`, `areas/operacoes/MAPA.md`, `empresa/rotinas/_index.md`, `memories/pending.md`, `memories/politica-memoria-hermes.md`) e remover este receipt se Lucas decidir desfazer.
+- Próximos passos: promover a regra para skills relevantes em rodada dedicada se aparecer como decisão/escopo aprovado; não fazer mudança runtime.
+- Onde foi documentado no Brain: `areas/operacoes/receipts/brain-fonte-viva-e-dados-grandes-20260609.md`
+- Source confidence: fonte-primária para o pedido/handoff e verificação local dos arquivos alterados; runtime não aplicável.

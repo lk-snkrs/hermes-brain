@@ -1,0 +1,3041 @@
+{
+  "generated_at": "2026-05-13T17:35:38.505268+00:00",
+  "status": "p2b_size_title_pilot_b_apply_verified",
+  "mode": "apply",
+  "api": "Merchant API v1 ProductInputs PATCH",
+  "data_source": "accounts/*/dataSources/10636492695",
+  "approval_required_for_apply": "Aprovo aplicar o piloto B nos 100 títulos de tênis do preview, somente no GMC/ProductInput, com rollback e verificação; não alterar Shopify",
+  "summary": {
+    "selected_for_apply": 100,
+    "limit": 100,
+    "execution_results_summary": {
+      "patched_p2b_size_title_pilot_b_v1": 100
+    },
+    "verify_results_summary": {
+      "verified_merchant_product_get": 100
+    },
+    "verified_match_expected": 100
+  },
+  "private_rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p2b-size-title-pilot-b-executor-rollback-20260513T172833Z.json",
+  "rows": [
+    {
+      "product_id": "online:pt:BR:FD0860001-5",
+      "offer_id": "FD0860001-5",
+      "current_gmc_title": "Tênis Jarritos x Nike SB Dunk Low Branco/Verde",
+      "proposed_gmc_title": "Tênis Jarritos x Nike SB Dunk Low Branco/Verde - Tamanho 43",
+      "shopify_product_title": "Tênis Jarritos x Nike SB Dunk Low Branco/Verde",
+      "variant_id": "44591804285150",
+      "variant_sku": "FD0860001-5",
+      "size": "43",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/jarritos-x-nike-sb-dunk-low?currency=BRL&country=BR&variant=44591804285150&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:JI3185-7",
+      "offer_id": "JI3185-7",
+      "current_gmc_title": "Tênis Adidas Samba OG Cream White Cardboard Creme",
+      "proposed_gmc_title": "Tênis Adidas Samba OG Cream White Cardboard Creme - Tamanho 40",
+      "shopify_product_title": "Tênis Adidas Samba OG Cream White Cardboard Creme",
+      "variant_id": "46494929453278",
+      "variant_sku": "JI3185-7",
+      "size": "40",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/tenis-adidas-samba-og-cream-white-cardboard-creme?variant=46494929453278",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:JR8772-4",
+      "offer_id": "JR8772-4",
+      "current_gmc_title": "Tênis Adidas SL 72 RS Aurora Ivy Off White Verde",
+      "proposed_gmc_title": "Tênis Adidas SL 72 RS Aurora Ivy Off White Verde - Tamanho 37",
+      "shopify_product_title": "Tênis Adidas SL 72 RS Aurora Ivy Off White Verde",
+      "variant_id": "47162097074398",
+      "variant_sku": "JR8772-4",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-adidas-sl-72-rs-aurora-ivy-off-white-verde?currency=BRL&country=BR&variant=47162097074398&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:BQ6817303-46",
+      "offer_id": "BQ6817303-46",
+      "current_gmc_title": "Tênis Nike SB Dunk Low Pro St. Patrick's Day Verde",
+      "proposed_gmc_title": "Tênis Nike SB Dunk Low Pro St. Patrick's Day Verde - Tamanho 46",
+      "shopify_product_title": "Tênis Nike SB Dunk Low Pro St. Patrick's Day Verde",
+      "variant_id": "44265056567518",
+      "variant_sku": "BQ6817303-46",
+      "size": "46",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/nike-sb-dunk-low-pro-st-patricks-day?currency=BRL&country=BR&variant=44265056567518&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DV0426-012-2",
+      "offer_id": "DV0426-012-2",
+      "current_gmc_title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza - Tamanho 36",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+      "variant_id": "44703695798494",
+      "variant_sku": "DV0426-012-2",
+      "size": "36",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/wmns-air-jordan-1-low-se-light-steel-grey?currency=BRL&country=BR&variant=44703695798494&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:JI2714-5",
+      "offer_id": "JI2714-5",
+      "current_gmc_title": "Tênis adidas Gazelle Indoor Dark Brown Glow Pink Court Green Marrom",
+      "proposed_gmc_title": "Tênis adidas Gazelle Indoor Dark Brown Glow Pink Court Green Marrom - Tamanho 38",
+      "shopify_product_title": "Tênis adidas Gazelle Indoor Dark Brown Glow Pink Court Green Marrom",
+      "variant_id": "46193616978142",
+      "variant_sku": "JI2714-5",
+      "size": "38",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-adidas-gazelle-indoor-dark-brown-glow-pink-court-green-marrom?currency=BRL&country=BR&variant=46193616978142&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1183B566020-4",
+      "offer_id": "1183B566020-4",
+      "current_gmc_title": "Tênis Onitsuka Tiger Mexico 66 Pure Silver Black Cinza",
+      "proposed_gmc_title": "Tênis Onitsuka Tiger Mexico 66 Pure Silver Black Cinza - Tamanho 37",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Pure Silver Black Cinza",
+      "variant_id": "45993790963934",
+      "variant_sku": "1183B566020-4",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-pure-silver-black-cinza?currency=BRL&country=BR&variant=45993790963934&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:FD9923111-4",
+      "offer_id": "FD9923111-4",
+      "current_gmc_title": "Tênis Nike Dunk Low Multi-Color Colorido",
+      "proposed_gmc_title": "Tênis Nike Dunk Low Multi-Color Colorido - Tamanho 37",
+      "shopify_product_title": "Tênis Nike Dunk Low Multi-Color Colorido",
+      "variant_id": "44265076359390",
+      "variant_sku": "FD9923111-4",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/nike-dunk-low-multi-color?currency=BRL&country=BR&variant=44265076359390&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:u1906lbn3",
+      "offer_id": "u1906lbn3",
+      "current_gmc_title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+      "proposed_gmc_title": "Tênis New Balance 1906L Preto Couro Mesh Preto - Tamanho 36",
+      "shopify_product_title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+      "variant_id": "47124611563742",
+      "variant_sku": "u1906lbn3",
+      "size": "36",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-1906l-preto-couro-mesh-casual?currency=BRL&country=BR&variant=47124611563742&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-100-5",
+      "offer_id": "HV0823-100-5",
+      "current_gmc_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul - Tamanho 38",
+      "shopify_product_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul",
+      "variant_id": "46676035797214",
+      "variant_sku": "HV0823-100-5",
+      "size": "38",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/tenis-air-jordan-4-retro-forget-me-not-azul?variant=46676035797214",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:BQ6472104-1",
+      "offer_id": "BQ6472104-1",
+      "current_gmc_title": "Tênis Nike Air Jordan 1 Mid Kentucky Blue Azul",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 Mid Kentucky Blue Azul - Tamanho 38",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Mid Kentucky Blue Azul",
+      "variant_id": "47739925856478",
+      "variant_sku": "BQ6472104-1",
+      "size": "38",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/air-jordan-1-mid-kentucky-blue?variant=47739925856478",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DH4401101-40",
+      "offer_id": "DH4401101-40",
+      "current_gmc_title": "Tênis Nike Dunk Low Blue Paisley Azul",
+      "proposed_gmc_title": "Tênis Nike Dunk Low Blue Paisley Azul - Tamanho 34",
+      "shopify_product_title": "Tênis Nike Dunk Low Blue Paisley Azul",
+      "variant_id": "45065961668830",
+      "variant_sku": "DH4401101-40",
+      "size": "34",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/nike-dunk-low-blue-paisley?currency=BRL&country=BR&variant=45065961668830&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DO9395400-10",
+      "offer_id": "DO9395400-10",
+      "current_gmc_title": "Tênis Nike SB Dunk Low LA Dodgers Azul",
+      "proposed_gmc_title": "Tênis Nike SB Dunk Low LA Dodgers Azul - Tamanho 46",
+      "shopify_product_title": "Tênis Nike SB Dunk Low LA Dodgers Azul",
+      "variant_id": "44265059123422",
+      "variant_sku": "DO9395400-10",
+      "size": "46",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/nike-sb-dunk-low-la-dodgers?currency=BRL&country=BR&variant=44265059123422&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-010-43",
+      "offer_id": "FV5029-010-43",
+      "current_gmc_title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto - Tamanho 43",
+      "shopify_product_title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+      "variant_id": "47935086166238",
+      "variant_sku": "FV5029-010-43",
+      "size": "43",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/tenis-nike-air-jordan-4-retro-black-cat-preto?variant=47935086166238",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1182A678.750-7",
+      "offer_id": "1182A678.750-7",
+      "current_gmc_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Yellow/Black Amarelo",
+      "proposed_gmc_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Yellow/Black Amarelo - Tamanho 40",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Yellow/Black Amarelo",
+      "variant_id": "47783906148574",
+      "variant_sku": "1182A678.750-7",
+      "size": "40",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-tgrs-yellow-black-amarelo?currency=BRL&country=BR&variant=47783906148574&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:HF6061-400-4",
+      "offer_id": "HF6061-400-4",
+      "current_gmc_title": "Tênis Nike Sb Dunk Low x Futura Skateboard Bleached Aqua Azul",
+      "proposed_gmc_title": "Tênis Nike Sb Dunk Low x Futura Skateboard Bleached Aqua Azul - Tamanho 39",
+      "shopify_product_title": "Tênis Nike Sb Dunk Low x Futura Skateboard Bleached Aqua Azul",
+      "variant_id": "45389635944670",
+      "variant_sku": "HF6061-400-4",
+      "size": "39",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-x-futura-skateboard-bleached-aqua-azul?currency=BRL&country=BR&variant=45389635944670&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:BB550VTC-40",
+      "offer_id": "BB550VTC-40",
+      "current_gmc_title": "Tênis New Balance 550 White Pine Green Branco/Verde",
+      "proposed_gmc_title": "Tênis New Balance 550 White Pine Green Branco/Verde - Tamanho 40",
+      "shopify_product_title": "Tênis New Balance 550 White Pine Green Branco/Verde",
+      "variant_id": "44265039823070",
+      "variant_sku": "BB550VTC-40",
+      "size": "40",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/new-balance-550-white-pine-green?currency=BRL&country=BR&variant=44265039823070&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078386610",
+      "offer_id": "43774078386610",
+      "current_gmc_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Silver Cream Prateado",
+      "proposed_gmc_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Silver Cream Prateado - Tamanho 38",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Silver Cream Prateado",
+      "variant_id": "47456165069022",
+      "variant_sku": "43774078386610",
+      "size": "38",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-tgrs-silver-cream-prateado?currency=BRL&country=BR&variant=47456165069022&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:IQ0627-004",
+      "offer_id": "IQ0627-004",
+      "current_gmc_title": "Tênis Nike Vomero Premium SP Black Mini Chrome Swoosh Preto",
+      "proposed_gmc_title": "Tênis Nike Vomero Premium SP Black Mini Chrome Swoosh Preto - Tamanho 39",
+      "shopify_product_title": "Tênis Nike Vomero Premium SP Black Mini Chrome Swoosh Preto",
+      "variant_id": "47910946144478",
+      "variant_sku": "IQ0627-004",
+      "size": "39",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-vomero-premium-sp-black-mini-chrome-swoosh-preto?currency=BRL&country=BR&variant=47910946144478&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:u1906lbn6",
+      "offer_id": "u1906lbn6",
+      "current_gmc_title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+      "proposed_gmc_title": "Tênis New Balance 1906L Preto Couro Mesh Preto - Tamanho 39",
+      "shopify_product_title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+      "variant_id": "47124611662046",
+      "variant_sku": "u1906lbn6",
+      "size": "39",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-1906l-preto-couro-mesh-casual?currency=BRL&country=BR&variant=47124611662046&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:ONI-0995678-35",
+      "offer_id": "ONI-0995678-35",
+      "current_gmc_title": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom",
+      "proposed_gmc_title": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - Tamanho 35",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom",
+      "variant_id": "48066691170526",
+      "variant_sku": "ONI-0995678-35",
+      "size": "35",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-fringe-mocha-brown-dark-brown-marrom?currency=BRL&country=BR&variant=48066691170526&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:U204LSWD-10",
+      "offer_id": "U204LSWD-10",
+      "current_gmc_title": "Tênis New Balance 204L Silver Metallic Black Prateado",
+      "proposed_gmc_title": "Tênis New Balance 204L Silver Metallic Black Prateado - Tamanho 43",
+      "shopify_product_title": "Tênis New Balance 204L Silver Metallic Black Prateado",
+      "variant_id": "47555051323614",
+      "variant_sku": "U204LSWD-10",
+      "size": "43",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-204l-silver-metallic-black-prateado?currency=BRL&country=BR&variant=47555051323614&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102-11",
+      "offer_id": "1183C102-11",
+      "current_gmc_title": "Tênis Onitsuka Tiger Mexico 66 Birch Peacoat Bege",
+      "proposed_gmc_title": "Tênis Onitsuka Tiger Mexico 66 Birch Peacoat Bege - Tamanho 41.5",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Birch Peacoat Bege",
+      "variant_id": "47327633801438",
+      "variant_sku": "1183C102-11",
+      "size": "41.5",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-brich-peacoat-bege?currency=BRL&country=BR&variant=47327633801438&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-100-6",
+      "offer_id": "HV0823-100-6",
+      "current_gmc_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul - Tamanho 39",
+      "shopify_product_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul",
+      "variant_id": "46676035829982",
+      "variant_sku": "HV0823-100-6",
+      "size": "39",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/tenis-air-jordan-4-retro-forget-me-not-azul?variant=46676035829982",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:IG6785-4",
+      "offer_id": "IG6785-4",
+      "current_gmc_title": "Tênis adidas Gazelle Indoor Blue Semi Pink Velvet Azul",
+      "proposed_gmc_title": "Tênis adidas Gazelle Indoor Blue Semi Pink Velvet Azul - Tamanho 37",
+      "shopify_product_title": "Tênis adidas Gazelle Indoor Blue Semi Pink Velvet Azul",
+      "variant_id": "45920359481566",
+      "variant_sku": "IG6785-4",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-adidas-gazelle-indoor-blue-semi-pink-velvet-azul?currency=BRL&country=BR&variant=45920359481566&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DQ5130400-42",
+      "offer_id": "DQ5130400-42",
+      "current_gmc_title": "Tênis Fly Streetwear x Dunk Low Pro SB 'Gardenia' Azul",
+      "proposed_gmc_title": "Tênis Fly Streetwear x Dunk Low Pro SB 'Gardenia' Azul - Tamanho 42",
+      "shopify_product_title": "Tênis Fly Streetwear x Dunk Low Pro SB 'Gardenia' Azul",
+      "variant_id": "44266645389534",
+      "variant_sku": "DQ5130400-42",
+      "size": "42",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/fly-streetwear-x-dunk-low-pro-sb-gardenia?currency=BRL&country=BR&variant=44266645389534&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:FQ8138-103-3",
+      "offer_id": "FQ8138-103-3",
+      "current_gmc_title": "Tênis Nike Air Jordan 4 Retro Oxidized Branco",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 4 Retro Oxidized Branco - Tamanho 36",
+      "shopify_product_title": "Tênis Nike Air Jordan 4 Retro Oxidized Branco",
+      "variant_id": "45736581431518",
+      "variant_sku": "FQ8138-103-3",
+      "size": "36",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-air-jordan-4-retro-oxidized-branco?currency=BRL&country=BR&variant=45736581431518&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:CZ0790-110-5",
+      "offer_id": "CZ0790-110-5",
+      "current_gmc_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza - Tamanho 39",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza",
+      "variant_id": "45813403123934",
+      "variant_sku": "CZ0790-110-5",
+      "size": "39",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-air-jordan-1-low-og-barrons-cinza?currency=BRL&country=BR&variant=45813403123934&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C428.200-10",
+      "offer_id": "1183C428.200-10",
+      "current_gmc_title": "Tênis Onitsuka Tiger California 78 EX Putty/Green Bege",
+      "proposed_gmc_title": "Tênis Onitsuka Tiger California 78 EX Putty/Green Bege - Tamanho 43",
+      "shopify_product_title": "Tênis Onitsuka Tiger California 78 EX Putty/Green Bege",
+      "variant_id": "46833866178782",
+      "variant_sku": "1183C428.200-10",
+      "size": "43",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/tenis-onitsuka-tiger-california-78-ex-putty-green-bege?variant=46833866178782",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:555088036",
+      "offer_id": "555088036",
+      "current_gmc_title": "Tênis Nike Air Jordan 1 High OG Starfish Laranja",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 High OG Starfish Laranja - Tamanho 39",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 High OG Starfish Laranja",
+      "variant_id": "45346264154334",
+      "variant_sku": "555088036",
+      "size": "39",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/air-jordan-1-high-og-starfish?currency=BRL&country=BR&variant=45346264187102&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:UGTR83J-42",
+      "offer_id": "UGTR83J-42",
+      "current_gmc_title": "Tênis New Balance Gator Run Star Burst Bege",
+      "proposed_gmc_title": "Tênis New Balance Gator Run Star Burst Bege - Tamanho 42",
+      "shopify_product_title": "Tênis New Balance Gator Run Star Burst Bege",
+      "variant_id": "47948162138334",
+      "variant_sku": "UGTR83J-42",
+      "size": "42",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/tenis-new-balance-gator-run-star-burst-bege?variant=47948162138334",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:H03474-11",
+      "offer_id": "H03474-11",
+      "current_gmc_title": "Tênis adidas Campus 00s Scarlet Red Vermelho",
+      "proposed_gmc_title": "Tênis adidas Campus 00s Scarlet Red Vermelho - Tamanho 44",
+      "shopify_product_title": "Tênis adidas Campus 00s Scarlet Red Vermelho",
+      "variant_id": "45540128456926",
+      "variant_sku": "H03474-11",
+      "size": "44",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-adidas-campus-00s-scarlet-red-vermelho?currency=BRL&country=BR&variant=45540128456926&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060LBD-9",
+      "offer_id": "U9060LBD-9",
+      "current_gmc_title": "Tênis New Balance 9060 Incense Raincloud Arid Stone Marrom",
+      "proposed_gmc_title": "Tênis New Balance 9060 Incense Raincloud Arid Stone Marrom - Tamanho 42",
+      "shopify_product_title": "Tênis New Balance 9060 Incense Raincloud Arid Stone Marrom",
+      "variant_id": "46321700896990",
+      "variant_sku": "U9060LBD-9",
+      "size": "42",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-9060-incense-raincloud-arid-stone-marrom?currency=BRL&country=BR&variant=46321700896990&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DX5930001-38",
+      "offer_id": "DX5930001-38",
+      "current_gmc_title": "Tênis Nike Dunk Low Phantom Metallic Gold Dourado",
+      "proposed_gmc_title": "Tênis Nike Dunk Low Phantom Metallic Gold Dourado - Tamanho 38",
+      "shopify_product_title": "Tênis Nike Dunk Low Phantom Metallic Gold Dourado",
+      "variant_id": "44266646995166",
+      "variant_sku": "DX5930001-38",
+      "size": "38",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/nike-dunk-low-phantom-metallic-gold?currency=BRL&country=BR&variant=44266646995166&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060EEH-11",
+      "offer_id": "U9060EEH-11",
+      "current_gmc_title": "Tênis New Balance 9060 Sparrow Flat Taupe Marrom",
+      "proposed_gmc_title": "Tênis New Balance 9060 Sparrow Flat Taupe Marrom - Tamanho 44",
+      "shopify_product_title": "Tênis New Balance 9060 Sparrow Flat Taupe Marrom",
+      "variant_id": "46009629114590",
+      "variant_sku": "U9060EEH-11",
+      "size": "44",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-9060-sparrow-flat-taupe-marrom?currency=BRL&country=BR&variant=46009629114590&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DZ1382001-41",
+      "offer_id": "DZ1382001-41",
+      "current_gmc_title": "Tênis Tiffany & Co. x Nike Air Force 1 Low 1837 Preto",
+      "proposed_gmc_title": "Tênis Tiffany & Co. x Nike Air Force 1 Low 1837 Preto - Tamanho 41",
+      "shopify_product_title": "Tênis Tiffany & Co. x Nike Air Force 1 Low 1837 Preto",
+      "variant_id": "44265054208222",
+      "variant_sku": "DZ1382001-41",
+      "size": "41",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tiffany-co-x-nike-air-force-1-low-1837?currency=BRL&country=BR&variant=44265054208222&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:HV6103300-9",
+      "offer_id": "HV6103300-9",
+      "current_gmc_title": "Tênis Nike Dunk Low Retro QS Halloween Skull Verde",
+      "proposed_gmc_title": "Tênis Nike Dunk Low Retro QS Halloween Skull Verde - Tamanho 39.5",
+      "shopify_product_title": "Tênis Nike Dunk Low Retro QS Halloween Skull Verde",
+      "variant_id": "46236464054494",
+      "variant_sku": "HV6103300-9",
+      "size": "39.5",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-dunk-low-retro-qs-halloween-skull-verde?currency=BRL&country=BR&variant=46236464054494&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:u9060aga-8",
+      "offer_id": "u9060aga-8",
+      "current_gmc_title": "Tênis New Balance 9060 Grey Day 2025 Cinza",
+      "proposed_gmc_title": "Tênis New Balance 9060 Grey Day 2025 Cinza - Tamanho 41",
+      "shopify_product_title": "Tênis New Balance 9060 Grey Day 2025 Cinza",
+      "variant_id": "47046882918622",
+      "variant_sku": "u9060aga-8",
+      "size": "41",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/tenis-new-balance-9060-grey-day-2025-esportivo-casual?variant=47046882918622",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:ALO-2441950-39",
+      "offer_id": "ALO-2441950-39",
+      "current_gmc_title": "Tênis Alo Yoga Alo Runner Pink Rosa",
+      "proposed_gmc_title": "Tênis Alo Yoga Alo Runner Pink Rosa - Tamanho 39",
+      "shopify_product_title": "Tênis Alo Yoga Alo Runner Pink Rosa",
+      "variant_id": "47895152656606",
+      "variant_sku": "ALO-2441950-39",
+      "size": "39",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/alo-runner-sweet-pink-rosa?currency=BRL&country=BR&variant=47895152656606&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:U530CSB-4",
+      "offer_id": "U530CSB-4",
+      "current_gmc_title": "Tênis New Balance 530 Arid Stone Cinza",
+      "proposed_gmc_title": "Tênis New Balance 530 Arid Stone Cinza - Tamanho 37",
+      "shopify_product_title": "Tênis New Balance 530 Arid Stone Cinza",
+      "variant_id": "46182737346782",
+      "variant_sku": "U530CSB-4",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-530-arid-stone-cinza?currency=BRL&country=BR&variant=46182737346782&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:JR5114-5",
+      "offer_id": "JR5114-5",
+      "current_gmc_title": "Tênis adidas Superstar x CLOT Chinese New Year Preto",
+      "proposed_gmc_title": "Tênis adidas Superstar x CLOT Chinese New Year Preto - Tamanho 38",
+      "shopify_product_title": "Tênis adidas Superstar x CLOT Chinese New Year Preto",
+      "variant_id": "46213415534814",
+      "variant_sku": "JR5114-5",
+      "size": "38",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-adidas-superstar-x-clot-chinese-new-year-preto?currency=BRL&country=BR&variant=46213415534814&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-002-36",
+      "offer_id": "HV8547-002-36",
+      "current_gmc_title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "proposed_gmc_title": "Tênis Nike Moon Shoe SP Jacquemus Off White - Tamanho 36",
+      "shopify_product_title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "variant_id": "47936427819230",
+      "variant_sku": "HV8547-002-36",
+      "size": "36",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-moon-shoe-sp-jacquemus-off-white?currency=BRL&country=BR&variant=47936427819230&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-5",
+      "offer_id": "1183A201-126-5",
+      "current_gmc_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "proposed_gmc_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco - Tamanho 38",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+      "variant_id": "46619126628574",
+      "variant_sku": "1183A201-126-5",
+      "size": "38",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-white-black-branco?currency=BRL&country=BR&variant=46619126628574&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:CZ0790-102-8",
+      "offer_id": "CZ0790-102-8",
+      "current_gmc_title": "Tênis Nike Air Jordan 1 Low Og Mocha Marrom",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 Low Og Mocha Marrom - Tamanho 41",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Low Og Mocha Marrom",
+      "variant_id": "45763786309854",
+      "variant_sku": "CZ0790-102-8",
+      "size": "41",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-air-jordan-1-low-og-mocha-marrom?currency=BRL&country=BR&variant=45763786309854&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-10",
+      "offer_id": "U9060CCB-10",
+      "current_gmc_title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+      "proposed_gmc_title": "Tênis New Balance 9060 Bisque Sea Salt Bege - Tamanho 43",
+      "shopify_product_title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+      "variant_id": "47542843637982",
+      "variant_sku": "U9060CCB-10",
+      "size": "43",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-9060-bisque-sea-salt-bege?currency=BRL&country=BR&variant=47542843637982&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:FB9907102-2",
+      "offer_id": "FB9907102-2",
+      "current_gmc_title": "Tênis Nike Air Jordan 1 Low SE Sky J Mauve Roxo",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 Low SE Sky J Mauve Roxo - Tamanho 35",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Low SE Sky J Mauve Roxo",
+      "variant_id": "44665304875230",
+      "variant_sku": "FB9907102-2",
+      "size": "35",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/air-jordan-1-low-se-sky-j-mauve?currency=BRL&country=BR&variant=44665304875230&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:MR530RB-4",
+      "offer_id": "MR530RB-4",
+      "current_gmc_title": "Tênis New Balance 530 White Mint Branco",
+      "proposed_gmc_title": "Tênis New Balance 530 White Mint Branco - Tamanho 37",
+      "shopify_product_title": "Tênis New Balance 530 White Mint Branco",
+      "variant_id": "45468900393182",
+      "variant_sku": "MR530RB-4",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-530-white-mint-branco?currency=BRL&country=BR&variant=45468900393182&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:YZY-2566238-43",
+      "offer_id": "YZY-2566238-43",
+      "current_gmc_title": "Tênis Adidas Yeezy Boost 350 V2 Earth Marrom",
+      "proposed_gmc_title": "Tênis Adidas Yeezy Boost 350 V2 Earth Marrom - Tamanho 43",
+      "shopify_product_title": "Tênis Adidas Yeezy Boost 350 V2 Earth Marrom",
+      "variant_id": "47852668354782",
+      "variant_sku": "YZY-2566238-43",
+      "size": "43",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/yeezy-boost-350-v2-earth-bege?currency=BRL&country=BR&variant=47852668354782&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DV5464500-3",
+      "offer_id": "DV5464500-3",
+      "current_gmc_title": "Tênis Nike SB Dunk Low Pro ISO Orange Label Court Purple Roxo",
+      "proposed_gmc_title": "Tênis Nike SB Dunk Low Pro ISO Orange Label Court Purple Roxo - Tamanho 38",
+      "shopify_product_title": "Tênis Nike SB Dunk Low Pro ISO Orange Label Court Purple Roxo",
+      "variant_id": "44320947798238",
+      "variant_sku": "DV5464500-3",
+      "size": "38",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-pro-iso-orange-label-court-purple-roxo?currency=BRL&country=BR&variant=44320947798238&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060EEB-2",
+      "offer_id": "U9060EEB-2",
+      "current_gmc_title": "Tênis New Balance 9060 Moonrock Linen Dark Artic Grey Cinza",
+      "proposed_gmc_title": "Tênis New Balance 9060 Moonrock Linen Dark Artic Grey Cinza - Tamanho 36",
+      "shopify_product_title": "Tênis New Balance 9060 Moonrock Linen Dark Artic Grey Cinza",
+      "variant_id": "44795132674270",
+      "variant_sku": "U9060EEB-2",
+      "size": "36",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-9060-moonrock-linen-dark-artic-greycinza?currency=BRL&country=BR&variant=44795132674270&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DR9866001-36",
+      "offer_id": "DR9866001-36",
+      "current_gmc_title": "Tênis Nike Air Force 1 Low World Champ Lakers Preto",
+      "proposed_gmc_title": "Tênis Nike Air Force 1 Low World Champ Lakers Preto - Tamanho 36",
+      "shopify_product_title": "Tênis Nike Air Force 1 Low World Champ Lakers Preto",
+      "variant_id": "44265038512350",
+      "variant_sku": "DR9866001-36",
+      "size": "36",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/nike-air-force-1-low-world-champ-lakers?currency=BRL&country=BR&variant=44265038512350&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:002010763",
+      "offer_id": "002010763",
+      "current_gmc_title": "Tênis Autry Medalist Low LL15 Branco",
+      "proposed_gmc_title": "Tênis Autry Medalist Low LL15 Branco - Tamanho 38",
+      "shopify_product_title": "Tênis Autry Medalist Low LL15 Branco",
+      "variant_id": "47543143923934",
+      "variant_sku": "002010763",
+      "size": "38",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-autry-medalist-low-ll15-branco?currency=BRL&country=BR&variant=47543143923934&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1203A554100-5",
+      "offer_id": "1203A554100-5",
+      "current_gmc_title": "Tênis Asics GT-2160 x JJJJound White Branco",
+      "proposed_gmc_title": "Tênis Asics GT-2160 x JJJJound White Branco - Tamanho 40",
+      "shopify_product_title": "Tênis Asics GT-2160 x JJJJound White Branco",
+      "variant_id": "46183178272990",
+      "variant_sku": "1203A554100-5",
+      "size": "40",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-asics-gt-2160-x-jjjound-white-branco?currency=BRL&country=BR&variant=46183178272990&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102004-2",
+      "offer_id": "1183C102004-2",
+      "current_gmc_title": "Tênis Onitsuka Tiger Mexico 66 SD Black Classic Red Preto",
+      "proposed_gmc_title": "Tênis Onitsuka Tiger Mexico 66 SD Black Classic Red Preto - Tamanho 35",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 SD Black Classic Red Preto",
+      "variant_id": "46233511887070",
+      "variant_sku": "1183C102004-2",
+      "size": "35",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-sd-black-classic-red-preto?currency=BRL&country=BR&variant=46233511887070&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DR8867400",
+      "offer_id": "DR8867400",
+      "current_gmc_title": "Tênis Nike Air Jordan 1 Low SE Craft Inside Out Obsidian Azul",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 Low SE Craft Inside Out Obsidian Azul - Tamanho 37",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Low SE Craft Inside Out Obsidian Azul",
+      "variant_id": "46704136585438",
+      "variant_sku": "DR8867400",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-air-jordan-1-low-se-craft-inside-out-obsidian-azul?currency=BRL&country=BR&variant=46704136585438&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:a0590u_04-8",
+      "offer_id": "a0590u_04-8",
+      "current_gmc_title": "Tênis Alo Yoga ALO Runner Espresso Marrom",
+      "proposed_gmc_title": "Tênis Alo Yoga ALO Runner Espresso Marrom - Tamanho 41",
+      "shopify_product_title": "Tênis Alo Yoga ALO Runner Espresso Marrom",
+      "variant_id": "47433199452382",
+      "variant_sku": "a0590u_04-8",
+      "size": "41",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-alo-yoga-alo-runner-espresso-marrom?currency=BRL&country=BR&variant=47433199452382&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DD1391401-39.5",
+      "offer_id": "DD1391401-39.5",
+      "current_gmc_title": "Tênis Nike Dunk Low Racer Blue Azul",
+      "proposed_gmc_title": "Tênis Nike Dunk Low Racer Blue Azul - Tamanho 39.5",
+      "shopify_product_title": "Tênis Nike Dunk Low Racer Blue Azul",
+      "variant_id": "44265030844638",
+      "variant_sku": "DD1391401-39.5",
+      "size": "39.5",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/nike-dunk-low-racer-blue?currency=BRL&country=BR&variant=44265030844638&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:FZ8320400-9",
+      "offer_id": "FZ8320400-9",
+      "current_gmc_title": "Tênis The Powerpuff Girls x Nike SB Dunk Low Bubbles Azul",
+      "proposed_gmc_title": "Tênis The Powerpuff Girls x Nike SB Dunk Low Bubbles Azul - Tamanho 43",
+      "shopify_product_title": "Tênis The Powerpuff Girls x Nike SB Dunk Low Bubbles Azul",
+      "variant_id": "44631314170078",
+      "variant_sku": "FZ8320400-9",
+      "size": "43",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/the-powerpuff-girls-x-nike-sb-dunk-low-bubbles?currency=BRL&country=BR&variant=44631314170078&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388010",
+      "offer_id": "43774078388010",
+      "current_gmc_title": "Tênis New Balance 9060 Garter Snake Pearl Grey Verde",
+      "proposed_gmc_title": "Tênis New Balance 9060 Garter Snake Pearl Grey Verde - Tamanho 39",
+      "shopify_product_title": "Tênis New Balance 9060 Garter Snake Pearl Grey Verde",
+      "variant_id": "47460671258846",
+      "variant_sku": "43774078388010",
+      "size": "39",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-9060-garter-snake-pearl-grey-verde?currency=BRL&country=BR&variant=47460671258846&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:U204LMMA-11",
+      "offer_id": "U204LMMA-11",
+      "current_gmc_title": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "proposed_gmc_title": "Tênis New Balance 204L Mushroom Arid Stone Marrom - Tamanho 44",
+      "shopify_product_title": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "variant_id": "47554946924766",
+      "variant_sku": "U204LMMA-11",
+      "size": "44",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-204l-mushroom-arid-stone-marrom?currency=BRL&country=BR&variant=47554946924766&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:HF6061-400-6",
+      "offer_id": "HF6061-400-6",
+      "current_gmc_title": "Tênis Nike Sb Dunk Low x Futura Skateboard Bleached Aqua Azul",
+      "proposed_gmc_title": "Tênis Nike Sb Dunk Low x Futura Skateboard Bleached Aqua Azul - Tamanho 41",
+      "shopify_product_title": "Tênis Nike Sb Dunk Low x Futura Skateboard Bleached Aqua Azul",
+      "variant_id": "45389636010206",
+      "variant_sku": "HF6061-400-6",
+      "size": "41",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-x-futura-skateboard-bleached-aqua-azul?currency=BRL&country=BR&variant=45389636010206&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C141-100-4",
+      "offer_id": "1183C141-100-4",
+      "current_gmc_title": "Tênis Onitsuka Tiger Mexico 66 Slip-On White Branco",
+      "proposed_gmc_title": "Tênis Onitsuka Tiger Mexico 66 Slip-On White Branco - Tamanho 37",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Slip-On White Branco",
+      "variant_id": "46478597292254",
+      "variant_sku": "1183C141-100-4",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-slip-on-white-branco?variant=46478597292254",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060HSA-2",
+      "offer_id": "U9060HSA-2",
+      "current_gmc_title": "Tênis New Balance 9060 Quartz Grey Cinza",
+      "proposed_gmc_title": "Tênis New Balance 9060 Quartz Grey Cinza - Tamanho 35",
+      "shopify_product_title": "Tênis New Balance 9060 Quartz Grey Cinza",
+      "variant_id": "47583470289118",
+      "variant_sku": "U9060HSA-2",
+      "size": "35",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-9060-quartz-grey-cinza?currency=BRL&country=BR&variant=47583470289118&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078387780",
+      "offer_id": "43774078387780",
+      "current_gmc_title": "Tênis Adidas Samba Jane Cream Black Gum Bege",
+      "proposed_gmc_title": "Tênis Adidas Samba Jane Cream Black Gum Bege - Tamanho 36",
+      "shopify_product_title": "Tênis Adidas Samba Jane Cream Black Gum Bege",
+      "variant_id": "47460636786910",
+      "variant_sku": "43774078387780",
+      "size": "36",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-adidas-samba-jane-cream-black-gum-bege?currency=BRL&country=BR&variant=47460636786910&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:HV5992111-5",
+      "offer_id": "HV5992111-5",
+      "current_gmc_title": "Tênis Nike Air Force 1 Low Valentine's Day (2025) Branco",
+      "proposed_gmc_title": "Tênis Nike Air Force 1 Low Valentine's Day (2025) Branco - Tamanho 38",
+      "shopify_product_title": "Tênis Nike Air Force 1 Low Valentine's Day (2025) Branco",
+      "variant_id": "46236612264158",
+      "variant_sku": "HV5992111-5",
+      "size": "38",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-air-force-1-low-valentines-day-2025?currency=BRL&country=BR&variant=46236612264158&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:Ih5373-4",
+      "offer_id": "Ih5373-4",
+      "current_gmc_title": "Tênis adidas Handball Spezial Lucid Blue Pink Azul",
+      "proposed_gmc_title": "Tênis adidas Handball Spezial Lucid Blue Pink Azul - Tamanho 37",
+      "shopify_product_title": "Tênis adidas Handball Spezial Lucid Blue Pink Azul",
+      "variant_id": "45775355445470",
+      "variant_sku": "Ih5373-4",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-lucid-blue-pink-azul?currency=BRL&country=BR&variant=45775355445470&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A872.106-6",
+      "offer_id": "1183A872.106-6",
+      "current_gmc_title": "Tênis Onitsuka Tiger Mexico 66 SD White/Rose Gold Branco",
+      "proposed_gmc_title": "Tênis Onitsuka Tiger Mexico 66 SD White/Rose Gold Branco - Tamanho 39",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 SD White/Rose Gold Branco",
+      "variant_id": "47422835654878",
+      "variant_sku": "1183A872.106-6",
+      "size": "39",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-sd-white-rose-gold-branco?currency=BRL&country=BR&variant=47422835654878&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:FJ2260-001-3",
+      "offer_id": "FJ2260-001-3",
+      "current_gmc_title": "Tênis Nike Dunk Low Lx Brown Ostrich Marrom",
+      "proposed_gmc_title": "Tênis Nike Dunk Low Lx Brown Ostrich Marrom - Tamanho 36",
+      "shopify_product_title": "Tênis Nike Dunk Low Lx Brown Ostrich Marrom",
+      "variant_id": "44837662359774",
+      "variant_sku": "FJ2260-001-3",
+      "size": "36",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-dunk-low-lx-brown-ostrich-marrom?currency=BRL&country=BR&variant=44837662359774&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:FJ2260-001-2",
+      "offer_id": "FJ2260-001-2",
+      "current_gmc_title": "Tênis Nike Dunk Low Lx Brown Ostrich Marrom",
+      "proposed_gmc_title": "Tênis Nike Dunk Low Lx Brown Ostrich Marrom - Tamanho 35",
+      "shopify_product_title": "Tênis Nike Dunk Low Lx Brown Ostrich Marrom",
+      "variant_id": "44837662327006",
+      "variant_sku": "FJ2260-001-2",
+      "size": "35",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-dunk-low-lx-brown-ostrich-marrom?currency=BRL&country=BR&variant=44837662327006&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:JQ4774-6",
+      "offer_id": "JQ4774-6",
+      "current_gmc_title": "Tênis adidas Taekwondo Cloud White Branco",
+      "proposed_gmc_title": "Tênis adidas Taekwondo Cloud White Branco - Tamanho 39",
+      "shopify_product_title": "Tênis adidas Taekwondo Cloud White Branco",
+      "variant_id": "46193709711582",
+      "variant_sku": "JQ4774-6",
+      "size": "39",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-adidas-taekwondo-cloud-white-branco?currency=BRL&country=BR&variant=46193709711582&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:JI1349-5",
+      "offer_id": "JI1349-5",
+      "current_gmc_title": "Tênis adidas Sambae Cloud White Silver Metallic Gold Branco",
+      "proposed_gmc_title": "Tênis adidas Sambae Cloud White Silver Metallic Gold Branco - Tamanho 38",
+      "shopify_product_title": "Tênis adidas Sambae Cloud White Silver Metallic Gold Branco",
+      "variant_id": "45502414815454",
+      "variant_sku": "JI1349-5",
+      "size": "38",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-adidas-sambae-cloud-white-silver-metallic-gold-branco?currency=BRL&country=BR&variant=45502414815454&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:IG5929-7",
+      "offer_id": "IG5929-7",
+      "current_gmc_title": "Tênis adidas Gazelle Indoor Collegiate Green Verde",
+      "proposed_gmc_title": "Tênis adidas Gazelle Indoor Collegiate Green Verde - Tamanho 35.5",
+      "shopify_product_title": "Tênis adidas Gazelle Indoor Collegiate Green Verde",
+      "variant_id": "45404008644830",
+      "variant_sku": "IG5929-7",
+      "size": "35.5",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-adidas-gazelle-indoor-collegiate-green-verde?currency=BRL&country=BR&variant=45404008644830&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:ALO-2441950-43",
+      "offer_id": "ALO-2441950-43",
+      "current_gmc_title": "Tênis Alo Yoga Alo Runner Pink Rosa",
+      "proposed_gmc_title": "Tênis Alo Yoga Alo Runner Pink Rosa - Tamanho 43",
+      "shopify_product_title": "Tênis Alo Yoga Alo Runner Pink Rosa",
+      "variant_id": "47901027795166",
+      "variant_sku": "ALO-2441950-43",
+      "size": "43",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/alo-runner-sweet-pink-rosa?currency=BRL&country=BR&variant=47901027795166&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DX5549400-38",
+      "offer_id": "DX5549400-38",
+      "current_gmc_title": "Tênis Why So Sad? x Nike SB Dunk Low The Predatory Bird Azul",
+      "proposed_gmc_title": "Tênis Why So Sad? x Nike SB Dunk Low The Predatory Bird Azul - Tamanho 38",
+      "shopify_product_title": "Tênis Why So Sad? x Nike SB Dunk Low The Predatory Bird Azul",
+      "variant_id": "44265071116510",
+      "variant_sku": "DX5549400-38",
+      "size": "38",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/why-so-sad-x-nike-sb-dunk-low-the-predatory-bird?currency=BRL&country=BR&variant=44265071116510&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:CZ0790-110-6",
+      "offer_id": "CZ0790-110-6",
+      "current_gmc_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza - Tamanho 40",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza",
+      "variant_id": "45813403156702",
+      "variant_sku": "CZ0790-110-6",
+      "size": "40",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-air-jordan-1-low-og-barrons-cinza?currency=BRL&country=BR&variant=45813403156702&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-100-2",
+      "offer_id": "HV0823-100-2",
+      "current_gmc_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul - Tamanho 35",
+      "shopify_product_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul",
+      "variant_id": "46676035698910",
+      "variant_sku": "HV0823-100-2",
+      "size": "35",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/tenis-air-jordan-4-retro-forget-me-not-azul?variant=46676035698910",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:IH3264",
+      "offer_id": "IH3264",
+      "current_gmc_title": "Tênis adidas Samba x Wales Bonner Wonder White Marrom",
+      "proposed_gmc_title": "Tênis adidas Samba x Wales Bonner Wonder White Marrom - Tamanho 37",
+      "shopify_product_title": "Tênis adidas Samba x Wales Bonner Wonder White Marrom",
+      "variant_id": "47044807393502",
+      "variant_sku": "IH3264",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-adidas-samba-x-wales-bonner-wonder-white-marrom?currency=BRL&country=BR&variant=47044807393502&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DV0426-012-9",
+      "offer_id": "DV0426-012-9",
+      "current_gmc_title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza - Tamanho 40.5",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+      "variant_id": "44703696027870",
+      "variant_sku": "DV0426-012-9",
+      "size": "40.5",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/wmns-air-jordan-1-low-se-light-steel-grey?currency=BRL&country=BR&variant=44703696027870&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:NB-8518238-43",
+      "offer_id": "NB-8518238-43",
+      "current_gmc_title": "Tênis New Balance 204L Silver Metallic Double Bubble Prateado",
+      "proposed_gmc_title": "Tênis New Balance 204L Silver Metallic Double Bubble Prateado - Tamanho 43",
+      "shopify_product_title": "Tênis New Balance 204L Silver Metallic Double Bubble Prateado",
+      "variant_id": "47856398303454",
+      "variant_sku": "NB-8518238-43",
+      "size": "43",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-204l-silver-metallic-double-bubble-prateado?currency=BRL&country=BR&variant=47856398303454&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060NRI-11",
+      "offer_id": "U9060NRI-11",
+      "current_gmc_title": "Tênis New Balance 9060 Triple Black Preto",
+      "proposed_gmc_title": "Tênis New Balance 9060 Triple Black Preto - Tamanho 44",
+      "shopify_product_title": "Tênis New Balance 9060 Triple Black Preto",
+      "variant_id": "45736544043230",
+      "variant_sku": "U9060NRI-11",
+      "size": "44",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-9060-triple-black-preto?currency=BRL&country=BR&variant=45736544043230&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DV0788-001-2",
+      "offer_id": "DV0788-001-2",
+      "current_gmc_title": "Tênis Air Force 1 Low '07 Panda Preto",
+      "proposed_gmc_title": "Tênis Air Force 1 Low '07 Panda Preto - Tamanho 39",
+      "shopify_product_title": "Tênis Air Force 1 Low '07 Panda Preto",
+      "variant_id": "45794273493214",
+      "variant_sku": "DV0788-001-2",
+      "size": "39",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-air-force-1-low-07-panda-preto?currency=BRL&country=BR&variant=45794273493214&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:CZ0790-110-2",
+      "offer_id": "CZ0790-110-2",
+      "current_gmc_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza - Tamanho 36",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza",
+      "variant_id": "45813403025630",
+      "variant_sku": "CZ0790-110-2",
+      "size": "36",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-air-jordan-1-low-og-barrons-cinza?currency=BRL&country=BR&variant=45813403025630&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DQ8426-104-5",
+      "offer_id": "DQ8426-104-5",
+      "current_gmc_title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Midnight Navy Cinza",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Midnight Navy Cinza - Tamanho 42",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Midnight Navy Cinza",
+      "variant_id": "45775586656478",
+      "variant_sku": "DQ8426-104-5",
+      "size": "42",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-air-jordan-1-mid-wolf-grey-midnight-navy-cinza?currency=BRL&country=BR&variant=45775586656478&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DV5464500-12",
+      "offer_id": "DV5464500-12",
+      "current_gmc_title": "Tênis Nike SB Dunk Low Pro ISO Orange Label Court Purple Roxo",
+      "proposed_gmc_title": "Tênis Nike SB Dunk Low Pro ISO Orange Label Court Purple Roxo - Tamanho 40.5",
+      "shopify_product_title": "Tênis Nike SB Dunk Low Pro ISO Orange Label Court Purple Roxo",
+      "variant_id": "44320948093150",
+      "variant_sku": "DV5464500-12",
+      "size": "40.5",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-pro-iso-orange-label-court-purple-roxo?currency=BRL&country=BR&variant=44320948093150&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DX5930001-34",
+      "offer_id": "DX5930001-34",
+      "current_gmc_title": "Tênis Nike Dunk Low Phantom Metallic Gold Dourado",
+      "proposed_gmc_title": "Tênis Nike Dunk Low Phantom Metallic Gold Dourado - Tamanho 34",
+      "shopify_product_title": "Tênis Nike Dunk Low Phantom Metallic Gold Dourado",
+      "variant_id": "44266646864094",
+      "variant_sku": "DX5930001-34",
+      "size": "34",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/nike-dunk-low-phantom-metallic-gold?currency=BRL&country=BR&variant=44266646864094&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-8",
+      "offer_id": "JH5439-8",
+      "current_gmc_title": "Tênis Adidas Handball Spezial Bordô",
+      "proposed_gmc_title": "Tênis Adidas Handball Spezial Bordô - Tamanho 41",
+      "shopify_product_title": "Tênis Adidas Handball Spezial Bordô",
+      "variant_id": "46646626812126",
+      "variant_sku": "JH5439-8",
+      "size": "41",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo?variant=46646626812126",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:001010845",
+      "offer_id": "001010845",
+      "current_gmc_title": "Tênis Autry Medalist Low LS75 Branco",
+      "proposed_gmc_title": "Tênis Autry Medalist Low LS75 Branco - Tamanho 38",
+      "shopify_product_title": "Tênis Autry Medalist Low LS75 Branco",
+      "variant_id": "47543139172574",
+      "variant_sku": "001010845",
+      "size": "38",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-autry-medalist-low-ls75-branco?currency=BRL&country=BR&variant=47543139172574&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:Ih5373-2",
+      "offer_id": "Ih5373-2",
+      "current_gmc_title": "Tênis adidas Handball Spezial Lucid Blue Pink Azul",
+      "proposed_gmc_title": "Tênis adidas Handball Spezial Lucid Blue Pink Azul - Tamanho 35",
+      "shopify_product_title": "Tênis adidas Handball Spezial Lucid Blue Pink Azul",
+      "variant_id": "45775355379934",
+      "variant_sku": "Ih5373-2",
+      "size": "35",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-lucid-blue-pink-azul?currency=BRL&country=BR&variant=45775355379934&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:HM5973-610",
+      "offer_id": "HM5973-610",
+      "current_gmc_title": "Tênis Nike Vomero Premium Particle Rose Burgundy Rosa",
+      "proposed_gmc_title": "Tênis Nike Vomero Premium Particle Rose Burgundy Rosa - Tamanho 37",
+      "shopify_product_title": "Tênis Nike Vomero Premium Particle Rose Burgundy Rosa",
+      "variant_id": "47910936084702",
+      "variant_sku": "HM5973-610",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-vomero-premium-particle-rose-burgundy-rosa?currency=BRL&country=BR&variant=47910936084702&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:FZ8320400-10",
+      "offer_id": "FZ8320400-10",
+      "current_gmc_title": "Tênis The Powerpuff Girls x Nike SB Dunk Low Bubbles Azul",
+      "proposed_gmc_title": "Tênis The Powerpuff Girls x Nike SB Dunk Low Bubbles Azul - Tamanho 40.5",
+      "shopify_product_title": "Tênis The Powerpuff Girls x Nike SB Dunk Low Bubbles Azul",
+      "variant_id": "44631314039006",
+      "variant_sku": "FZ8320400-10",
+      "size": "40.5",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/the-powerpuff-girls-x-nike-sb-dunk-low-bubbles?currency=BRL&country=BR&variant=44631314039006&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DD1873102-4",
+      "offer_id": "DD1873102-4",
+      "current_gmc_title": "Tênis Nike Dunk Low Next Nature Black White Preto",
+      "proposed_gmc_title": "Tênis Nike Dunk Low Next Nature Black White Preto - Tamanho 37",
+      "shopify_product_title": "Tênis Nike Dunk Low Next Nature Black White Preto",
+      "variant_id": "44265093234910",
+      "variant_sku": "DD1873102-4",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/nike-dunk-low-next-nature-black-white?currency=BRL&country=BR&variant=44265093234910&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1182A678.750-4",
+      "offer_id": "1182A678.750-4",
+      "current_gmc_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Yellow/Black Amarelo",
+      "proposed_gmc_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Yellow/Black Amarelo - Tamanho 37",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Yellow/Black Amarelo",
+      "variant_id": "47783906050270",
+      "variant_sku": "1182A678.750-4",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-tgrs-yellow-black-amarelo?currency=BRL&country=BR&variant=47783906050270&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390070",
+      "offer_id": "43774078390070",
+      "current_gmc_title": "Tênis Nike Air Jordan 1 Retro Low Fragment Design x Travis Scott Couro Branco Preto Azul",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 Retro Low Fragment Design x Travis Scott Couro Branco Preto Azul - Tamanho 41",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Retro Low Fragment Design x Travis Scott Couro Branco Preto Azul",
+      "variant_id": "47447162945758",
+      "variant_sku": "43774078390070",
+      "size": "41",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/tenis-air-jordan-1-retro-low-fragment-design-x-travis-scott-couro-branco-preto-azul?variant=47447162945758",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:553558612-9",
+      "offer_id": "553558612-9",
+      "current_gmc_title": "Tênis Nike Air Jordan 1 Low Bred Toe Vermelho",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 Low Bred Toe Vermelho - Tamanho 43",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Low Bred Toe Vermelho",
+      "variant_id": "44515718136030",
+      "variant_sku": "553558612-9",
+      "size": "43",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/air-jordan-1-low-bred-toe-1?currency=BRL&country=BR&variant=44515718136030&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:BQ6817600-2",
+      "offer_id": "BQ6817600-2",
+      "current_gmc_title": "Tênis Nike SB Dunk Low Pro Chicago Vermelho",
+      "proposed_gmc_title": "Tênis Nike SB Dunk Low Pro Chicago Vermelho - Tamanho 37",
+      "shopify_product_title": "Tênis Nike SB Dunk Low Pro Chicago Vermelho",
+      "variant_id": "44265059614942",
+      "variant_sku": "BQ6817600-2",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/nike-sb-dunk-low-pro-chicago?currency=BRL&country=BR&variant=44265059614942&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-6",
+      "offer_id": "U9060CCB-6",
+      "current_gmc_title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+      "proposed_gmc_title": "Tênis New Balance 9060 Bisque Sea Salt Bege - Tamanho 39",
+      "shopify_product_title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+      "variant_id": "47542843506910",
+      "variant_sku": "U9060CCB-6",
+      "size": "39",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-9060-bisque-sea-salt-bege?currency=BRL&country=BR&variant=47542843506910&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DR5415-100-40",
+      "offer_id": "DR5415-100-40",
+      "current_gmc_title": "Tênis Nike SB Air Jordan 4 x Retro SP Navy Branco",
+      "proposed_gmc_title": "Tênis Nike SB Air Jordan 4 x Retro SP Navy Branco - Tamanho 40",
+      "shopify_product_title": "Tênis Nike SB Air Jordan 4 x Retro SP Navy Branco",
+      "variant_id": "47960852922590",
+      "variant_sku": "DR5415-100-40",
+      "size": "40",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/tenis-nike-sb-air-jordan-4-x-retro-sp-navy-branco?variant=47960852922590",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1184A049.250-1",
+      "offer_id": "1184A049.250-1",
+      "current_gmc_title": "Tênis Onitsuka Tiger Mexico 66 Kids Beige Grass/Green Marrom",
+      "proposed_gmc_title": "Tênis Onitsuka Tiger Mexico 66 Kids Beige Grass/Green Marrom - Tamanho 25",
+      "shopify_product_title": "Tênis Onitsuka Tiger Mexico 66 Kids Beige Grass/Green Marrom",
+      "variant_id": "47380175225054",
+      "variant_sku": "1184A049.250-1",
+      "size": "25",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-kids-beige-grass-green-marrom?currency=BRL&country=BR&variant=47380175225054&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-6",
+      "offer_id": "JH5439-6",
+      "current_gmc_title": "Tênis Adidas Handball Spezial Bordô",
+      "proposed_gmc_title": "Tênis Adidas Handball Spezial Bordô - Tamanho 39",
+      "shopify_product_title": "Tênis Adidas Handball Spezial Bordô",
+      "variant_id": "46646626746590",
+      "variant_sku": "JH5439-6",
+      "size": "39",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://www.lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo?variant=46646626746590",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:DQ5130400-37",
+      "offer_id": "DQ5130400-37",
+      "current_gmc_title": "Tênis Fly Streetwear x Dunk Low Pro SB 'Gardenia' Azul",
+      "proposed_gmc_title": "Tênis Fly Streetwear x Dunk Low Pro SB 'Gardenia' Azul - Tamanho 37",
+      "shopify_product_title": "Tênis Fly Streetwear x Dunk Low Pro SB 'Gardenia' Azul",
+      "variant_id": "44266645225694",
+      "variant_sku": "DQ5130400-37",
+      "size": "37",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/fly-streetwear-x-dunk-low-pro-sb-gardenia?currency=BRL&country=BR&variant=44266645225694&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+      "selected_for_apply": true
+    }
+  ],
+  "execution_results": [
+    {
+      "product_id": "online:pt:BR:FD0860001-5",
+      "offer_id": "FD0860001-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FD0860001-5"
+    },
+    {
+      "product_id": "online:pt:BR:JI3185-7",
+      "offer_id": "JI3185-7",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JI3185-7"
+    },
+    {
+      "product_id": "online:pt:BR:JR8772-4",
+      "offer_id": "JR8772-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JR8772-4"
+    },
+    {
+      "product_id": "online:pt:BR:BQ6817303-46",
+      "offer_id": "BQ6817303-46",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~BQ6817303-46"
+    },
+    {
+      "product_id": "online:pt:BR:DV0426-012-2",
+      "offer_id": "DV0426-012-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DV0426-012-2"
+    },
+    {
+      "product_id": "online:pt:BR:JI2714-5",
+      "offer_id": "JI2714-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JI2714-5"
+    },
+    {
+      "product_id": "online:pt:BR:1183B566020-4",
+      "offer_id": "1183B566020-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183B566020-4"
+    },
+    {
+      "product_id": "online:pt:BR:FD9923111-4",
+      "offer_id": "FD9923111-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FD9923111-4"
+    },
+    {
+      "product_id": "online:pt:BR:u1906lbn3",
+      "offer_id": "u1906lbn3",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u1906lbn3"
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-100-5",
+      "offer_id": "HV0823-100-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HV0823-100-5"
+    },
+    {
+      "product_id": "online:pt:BR:BQ6472104-1",
+      "offer_id": "BQ6472104-1",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~BQ6472104-1"
+    },
+    {
+      "product_id": "online:pt:BR:DH4401101-40",
+      "offer_id": "DH4401101-40",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DH4401101-40"
+    },
+    {
+      "product_id": "online:pt:BR:DO9395400-10",
+      "offer_id": "DO9395400-10",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DO9395400-10"
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-010-43",
+      "offer_id": "FV5029-010-43",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FV5029-010-43"
+    },
+    {
+      "product_id": "online:pt:BR:1182A678.750-7",
+      "offer_id": "1182A678.750-7",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1182A678.750-7"
+    },
+    {
+      "product_id": "online:pt:BR:HF6061-400-4",
+      "offer_id": "HF6061-400-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HF6061-400-4"
+    },
+    {
+      "product_id": "online:pt:BR:BB550VTC-40",
+      "offer_id": "BB550VTC-40",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~BB550VTC-40"
+    },
+    {
+      "product_id": "online:pt:BR:43774078386610",
+      "offer_id": "43774078386610",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078386610"
+    },
+    {
+      "product_id": "online:pt:BR:IQ0627-004",
+      "offer_id": "IQ0627-004",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~IQ0627-004"
+    },
+    {
+      "product_id": "online:pt:BR:u1906lbn6",
+      "offer_id": "u1906lbn6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u1906lbn6"
+    },
+    {
+      "product_id": "online:pt:BR:ONI-0995678-35",
+      "offer_id": "ONI-0995678-35",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ONI-0995678-35"
+    },
+    {
+      "product_id": "online:pt:BR:U204LSWD-10",
+      "offer_id": "U204LSWD-10",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U204LSWD-10"
+    },
+    {
+      "product_id": "online:pt:BR:1183C102-11",
+      "offer_id": "1183C102-11",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183C102-11"
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-100-6",
+      "offer_id": "HV0823-100-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HV0823-100-6"
+    },
+    {
+      "product_id": "online:pt:BR:IG6785-4",
+      "offer_id": "IG6785-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~IG6785-4"
+    },
+    {
+      "product_id": "online:pt:BR:DQ5130400-42",
+      "offer_id": "DQ5130400-42",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DQ5130400-42"
+    },
+    {
+      "product_id": "online:pt:BR:FQ8138-103-3",
+      "offer_id": "FQ8138-103-3",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FQ8138-103-3"
+    },
+    {
+      "product_id": "online:pt:BR:CZ0790-110-5",
+      "offer_id": "CZ0790-110-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~CZ0790-110-5"
+    },
+    {
+      "product_id": "online:pt:BR:1183C428.200-10",
+      "offer_id": "1183C428.200-10",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183C428.200-10"
+    },
+    {
+      "product_id": "online:pt:BR:555088036",
+      "offer_id": "555088036",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~555088036"
+    },
+    {
+      "product_id": "online:pt:BR:UGTR83J-42",
+      "offer_id": "UGTR83J-42",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~UGTR83J-42"
+    },
+    {
+      "product_id": "online:pt:BR:H03474-11",
+      "offer_id": "H03474-11",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~H03474-11"
+    },
+    {
+      "product_id": "online:pt:BR:U9060LBD-9",
+      "offer_id": "U9060LBD-9",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060LBD-9"
+    },
+    {
+      "product_id": "online:pt:BR:DX5930001-38",
+      "offer_id": "DX5930001-38",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DX5930001-38"
+    },
+    {
+      "product_id": "online:pt:BR:U9060EEH-11",
+      "offer_id": "U9060EEH-11",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060EEH-11"
+    },
+    {
+      "product_id": "online:pt:BR:DZ1382001-41",
+      "offer_id": "DZ1382001-41",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DZ1382001-41"
+    },
+    {
+      "product_id": "online:pt:BR:HV6103300-9",
+      "offer_id": "HV6103300-9",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HV6103300-9"
+    },
+    {
+      "product_id": "online:pt:BR:u9060aga-8",
+      "offer_id": "u9060aga-8",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u9060aga-8"
+    },
+    {
+      "product_id": "online:pt:BR:ALO-2441950-39",
+      "offer_id": "ALO-2441950-39",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ALO-2441950-39"
+    },
+    {
+      "product_id": "online:pt:BR:U530CSB-4",
+      "offer_id": "U530CSB-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U530CSB-4"
+    },
+    {
+      "product_id": "online:pt:BR:JR5114-5",
+      "offer_id": "JR5114-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JR5114-5"
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-002-36",
+      "offer_id": "HV8547-002-36",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HV8547-002-36"
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-5",
+      "offer_id": "1183A201-126-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183A201-126-5"
+    },
+    {
+      "product_id": "online:pt:BR:CZ0790-102-8",
+      "offer_id": "CZ0790-102-8",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~CZ0790-102-8"
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-10",
+      "offer_id": "U9060CCB-10",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060CCB-10"
+    },
+    {
+      "product_id": "online:pt:BR:FB9907102-2",
+      "offer_id": "FB9907102-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FB9907102-2"
+    },
+    {
+      "product_id": "online:pt:BR:MR530RB-4",
+      "offer_id": "MR530RB-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~MR530RB-4"
+    },
+    {
+      "product_id": "online:pt:BR:YZY-2566238-43",
+      "offer_id": "YZY-2566238-43",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~YZY-2566238-43"
+    },
+    {
+      "product_id": "online:pt:BR:DV5464500-3",
+      "offer_id": "DV5464500-3",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DV5464500-3"
+    },
+    {
+      "product_id": "online:pt:BR:U9060EEB-2",
+      "offer_id": "U9060EEB-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060EEB-2"
+    },
+    {
+      "product_id": "online:pt:BR:DR9866001-36",
+      "offer_id": "DR9866001-36",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DR9866001-36"
+    },
+    {
+      "product_id": "online:pt:BR:002010763",
+      "offer_id": "002010763",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~002010763"
+    },
+    {
+      "product_id": "online:pt:BR:1203A554100-5",
+      "offer_id": "1203A554100-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1203A554100-5"
+    },
+    {
+      "product_id": "online:pt:BR:1183C102004-2",
+      "offer_id": "1183C102004-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183C102004-2"
+    },
+    {
+      "product_id": "online:pt:BR:DR8867400",
+      "offer_id": "DR8867400",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DR8867400"
+    },
+    {
+      "product_id": "online:pt:BR:a0590u_04-8",
+      "offer_id": "a0590u_04-8",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~a0590u_04-8"
+    },
+    {
+      "product_id": "online:pt:BR:DD1391401-39.5",
+      "offer_id": "DD1391401-39.5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DD1391401-39.5"
+    },
+    {
+      "product_id": "online:pt:BR:FZ8320400-9",
+      "offer_id": "FZ8320400-9",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FZ8320400-9"
+    },
+    {
+      "product_id": "online:pt:BR:43774078388010",
+      "offer_id": "43774078388010",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078388010"
+    },
+    {
+      "product_id": "online:pt:BR:U204LMMA-11",
+      "offer_id": "U204LMMA-11",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U204LMMA-11"
+    },
+    {
+      "product_id": "online:pt:BR:HF6061-400-6",
+      "offer_id": "HF6061-400-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HF6061-400-6"
+    },
+    {
+      "product_id": "online:pt:BR:1183C141-100-4",
+      "offer_id": "1183C141-100-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183C141-100-4"
+    },
+    {
+      "product_id": "online:pt:BR:U9060HSA-2",
+      "offer_id": "U9060HSA-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060HSA-2"
+    },
+    {
+      "product_id": "online:pt:BR:43774078387780",
+      "offer_id": "43774078387780",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078387780"
+    },
+    {
+      "product_id": "online:pt:BR:HV5992111-5",
+      "offer_id": "HV5992111-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HV5992111-5"
+    },
+    {
+      "product_id": "online:pt:BR:Ih5373-4",
+      "offer_id": "Ih5373-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~Ih5373-4"
+    },
+    {
+      "product_id": "online:pt:BR:1183A872.106-6",
+      "offer_id": "1183A872.106-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183A872.106-6"
+    },
+    {
+      "product_id": "online:pt:BR:FJ2260-001-3",
+      "offer_id": "FJ2260-001-3",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FJ2260-001-3"
+    },
+    {
+      "product_id": "online:pt:BR:FJ2260-001-2",
+      "offer_id": "FJ2260-001-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FJ2260-001-2"
+    },
+    {
+      "product_id": "online:pt:BR:JQ4774-6",
+      "offer_id": "JQ4774-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JQ4774-6"
+    },
+    {
+      "product_id": "online:pt:BR:JI1349-5",
+      "offer_id": "JI1349-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JI1349-5"
+    },
+    {
+      "product_id": "online:pt:BR:IG5929-7",
+      "offer_id": "IG5929-7",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~IG5929-7"
+    },
+    {
+      "product_id": "online:pt:BR:ALO-2441950-43",
+      "offer_id": "ALO-2441950-43",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ALO-2441950-43"
+    },
+    {
+      "product_id": "online:pt:BR:DX5549400-38",
+      "offer_id": "DX5549400-38",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DX5549400-38"
+    },
+    {
+      "product_id": "online:pt:BR:CZ0790-110-6",
+      "offer_id": "CZ0790-110-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~CZ0790-110-6"
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-100-2",
+      "offer_id": "HV0823-100-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HV0823-100-2"
+    },
+    {
+      "product_id": "online:pt:BR:IH3264",
+      "offer_id": "IH3264",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~IH3264"
+    },
+    {
+      "product_id": "online:pt:BR:DV0426-012-9",
+      "offer_id": "DV0426-012-9",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DV0426-012-9"
+    },
+    {
+      "product_id": "online:pt:BR:NB-8518238-43",
+      "offer_id": "NB-8518238-43",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~NB-8518238-43"
+    },
+    {
+      "product_id": "online:pt:BR:U9060NRI-11",
+      "offer_id": "U9060NRI-11",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060NRI-11"
+    },
+    {
+      "product_id": "online:pt:BR:DV0788-001-2",
+      "offer_id": "DV0788-001-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DV0788-001-2"
+    },
+    {
+      "product_id": "online:pt:BR:CZ0790-110-2",
+      "offer_id": "CZ0790-110-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~CZ0790-110-2"
+    },
+    {
+      "product_id": "online:pt:BR:DQ8426-104-5",
+      "offer_id": "DQ8426-104-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DQ8426-104-5"
+    },
+    {
+      "product_id": "online:pt:BR:DV5464500-12",
+      "offer_id": "DV5464500-12",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DV5464500-12"
+    },
+    {
+      "product_id": "online:pt:BR:DX5930001-34",
+      "offer_id": "DX5930001-34",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DX5930001-34"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-8",
+      "offer_id": "JH5439-8",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-8"
+    },
+    {
+      "product_id": "online:pt:BR:001010845",
+      "offer_id": "001010845",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~001010845"
+    },
+    {
+      "product_id": "online:pt:BR:Ih5373-2",
+      "offer_id": "Ih5373-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~Ih5373-2"
+    },
+    {
+      "product_id": "online:pt:BR:HM5973-610",
+      "offer_id": "HM5973-610",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HM5973-610"
+    },
+    {
+      "product_id": "online:pt:BR:FZ8320400-10",
+      "offer_id": "FZ8320400-10",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FZ8320400-10"
+    },
+    {
+      "product_id": "online:pt:BR:DD1873102-4",
+      "offer_id": "DD1873102-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DD1873102-4"
+    },
+    {
+      "product_id": "online:pt:BR:1182A678.750-4",
+      "offer_id": "1182A678.750-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1182A678.750-4"
+    },
+    {
+      "product_id": "online:pt:BR:43774078390070",
+      "offer_id": "43774078390070",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390070"
+    },
+    {
+      "product_id": "online:pt:BR:553558612-9",
+      "offer_id": "553558612-9",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~553558612-9"
+    },
+    {
+      "product_id": "online:pt:BR:BQ6817600-2",
+      "offer_id": "BQ6817600-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~BQ6817600-2"
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-6",
+      "offer_id": "U9060CCB-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060CCB-6"
+    },
+    {
+      "product_id": "online:pt:BR:DR5415-100-40",
+      "offer_id": "DR5415-100-40",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DR5415-100-40"
+    },
+    {
+      "product_id": "online:pt:BR:1184A049.250-1",
+      "offer_id": "1184A049.250-1",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1184A049.250-1"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-6",
+      "offer_id": "JH5439-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-6"
+    },
+    {
+      "product_id": "online:pt:BR:DQ5130400-37",
+      "offer_id": "DQ5130400-37",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DQ5130400-37"
+    }
+  ],
+  "verified_results": [
+    {
+      "product_id": "online:pt:BR:FD0860001-5",
+      "offer_id": "FD0860001-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FD0860001-5",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Jarritos x Nike SB Dunk Low Branco/Verde - Tamanho 43",
+      "expected_title": "Tênis Jarritos x Nike SB Dunk Low Branco/Verde - Tamanho 43",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JI3185-7",
+      "offer_id": "JI3185-7",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JI3185-7",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Adidas Samba OG Cream White Cardboard Creme - Tamanho 40",
+      "expected_title": "Tênis Adidas Samba OG Cream White Cardboard Creme - Tamanho 40",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JR8772-4",
+      "offer_id": "JR8772-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JR8772-4",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Adidas SL 72 RS Aurora Ivy Off White Verde - Tamanho 37",
+      "expected_title": "Tênis Adidas SL 72 RS Aurora Ivy Off White Verde - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:BQ6817303-46",
+      "offer_id": "BQ6817303-46",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~BQ6817303-46",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike SB Dunk Low Pro St. Patrick's Day Verde - Tamanho 46",
+      "expected_title": "Tênis Nike SB Dunk Low Pro St. Patrick's Day Verde - Tamanho 46",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DV0426-012-2",
+      "offer_id": "DV0426-012-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DV0426-012-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza - Tamanho 36",
+      "expected_title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza - Tamanho 36",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JI2714-5",
+      "offer_id": "JI2714-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JI2714-5",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis adidas Gazelle Indoor Dark Brown Glow Pink Court Green Marrom - Tamanho 38",
+      "expected_title": "Tênis adidas Gazelle Indoor Dark Brown Glow Pink Court Green Marrom - Tamanho 38",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183B566020-4",
+      "offer_id": "1183B566020-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183B566020-4",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Onitsuka Tiger Mexico 66 Pure Silver Black Cinza - Tamanho 37",
+      "expected_title": "Tênis Onitsuka Tiger Mexico 66 Pure Silver Black Cinza - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:FD9923111-4",
+      "offer_id": "FD9923111-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FD9923111-4",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Dunk Low Multi-Color Colorido - Tamanho 37",
+      "expected_title": "Tênis Nike Dunk Low Multi-Color Colorido - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u1906lbn3",
+      "offer_id": "u1906lbn3",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u1906lbn3",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 1906L Preto Couro Mesh Preto - Tamanho 36",
+      "expected_title": "Tênis New Balance 1906L Preto Couro Mesh Preto - Tamanho 36",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-100-5",
+      "offer_id": "HV0823-100-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HV0823-100-5",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul - Tamanho 38",
+      "expected_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul - Tamanho 38",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:BQ6472104-1",
+      "offer_id": "BQ6472104-1",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~BQ6472104-1",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 Mid Kentucky Blue Azul - Tamanho 38",
+      "expected_title": "Tênis Nike Air Jordan 1 Mid Kentucky Blue Azul - Tamanho 38",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DH4401101-40",
+      "offer_id": "DH4401101-40",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DH4401101-40",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Dunk Low Blue Paisley Azul - Tamanho 34",
+      "expected_title": "Tênis Nike Dunk Low Blue Paisley Azul - Tamanho 34",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DO9395400-10",
+      "offer_id": "DO9395400-10",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DO9395400-10",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike SB Dunk Low LA Dodgers Azul - Tamanho 46",
+      "expected_title": "Tênis Nike SB Dunk Low LA Dodgers Azul - Tamanho 46",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:FV5029-010-43",
+      "offer_id": "FV5029-010-43",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FV5029-010-43",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto - Tamanho 43",
+      "expected_title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto - Tamanho 43",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1182A678.750-7",
+      "offer_id": "1182A678.750-7",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1182A678.750-7",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Yellow/Black Amarelo - Tamanho 40",
+      "expected_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Yellow/Black Amarelo - Tamanho 40",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF6061-400-4",
+      "offer_id": "HF6061-400-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HF6061-400-4",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Sb Dunk Low x Futura Skateboard Bleached Aqua Azul - Tamanho 39",
+      "expected_title": "Tênis Nike Sb Dunk Low x Futura Skateboard Bleached Aqua Azul - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:BB550VTC-40",
+      "offer_id": "BB550VTC-40",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~BB550VTC-40",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 550 White Pine Green Branco/Verde - Tamanho 40",
+      "expected_title": "Tênis New Balance 550 White Pine Green Branco/Verde - Tamanho 40",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078386610",
+      "offer_id": "43774078386610",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078386610",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Silver Cream Prateado - Tamanho 38",
+      "expected_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Silver Cream Prateado - Tamanho 38",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:IQ0627-004",
+      "offer_id": "IQ0627-004",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~IQ0627-004",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Vomero Premium SP Black Mini Chrome Swoosh Preto - Tamanho 39",
+      "expected_title": "Tênis Nike Vomero Premium SP Black Mini Chrome Swoosh Preto - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u1906lbn6",
+      "offer_id": "u1906lbn6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u1906lbn6",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 1906L Preto Couro Mesh Preto - Tamanho 39",
+      "expected_title": "Tênis New Balance 1906L Preto Couro Mesh Preto - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ONI-0995678-35",
+      "offer_id": "ONI-0995678-35",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ONI-0995678-35",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - Tamanho 35",
+      "expected_title": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom - Tamanho 35",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:U204LSWD-10",
+      "offer_id": "U204LSWD-10",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U204LSWD-10",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 204L Silver Metallic Black Prateado - Tamanho 43",
+      "expected_title": "Tênis New Balance 204L Silver Metallic Black Prateado - Tamanho 43",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102-11",
+      "offer_id": "1183C102-11",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183C102-11",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Onitsuka Tiger Mexico 66 Birch Peacoat Bege - Tamanho 41.5",
+      "expected_title": "Tênis Onitsuka Tiger Mexico 66 Birch Peacoat Bege - Tamanho 41.5",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-100-6",
+      "offer_id": "HV0823-100-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HV0823-100-6",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul - Tamanho 39",
+      "expected_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:IG6785-4",
+      "offer_id": "IG6785-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~IG6785-4",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis adidas Gazelle Indoor Blue Semi Pink Velvet Azul - Tamanho 37",
+      "expected_title": "Tênis adidas Gazelle Indoor Blue Semi Pink Velvet Azul - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DQ5130400-42",
+      "offer_id": "DQ5130400-42",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DQ5130400-42",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Fly Streetwear x Dunk Low Pro SB 'Gardenia' Azul - Tamanho 42",
+      "expected_title": "Tênis Fly Streetwear x Dunk Low Pro SB 'Gardenia' Azul - Tamanho 42",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:FQ8138-103-3",
+      "offer_id": "FQ8138-103-3",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FQ8138-103-3",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 4 Retro Oxidized Branco - Tamanho 36",
+      "expected_title": "Tênis Nike Air Jordan 4 Retro Oxidized Branco - Tamanho 36",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:CZ0790-110-5",
+      "offer_id": "CZ0790-110-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~CZ0790-110-5",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza - Tamanho 39",
+      "expected_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C428.200-10",
+      "offer_id": "1183C428.200-10",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183C428.200-10",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Onitsuka Tiger California 78 EX Putty/Green Bege - Tamanho 43",
+      "expected_title": "Tênis Onitsuka Tiger California 78 EX Putty/Green Bege - Tamanho 43",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:555088036",
+      "offer_id": "555088036",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~555088036",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 High OG Starfish Laranja - Tamanho 39",
+      "expected_title": "Tênis Nike Air Jordan 1 High OG Starfish Laranja - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:UGTR83J-42",
+      "offer_id": "UGTR83J-42",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~UGTR83J-42",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance Gator Run Star Burst Bege - Tamanho 42",
+      "expected_title": "Tênis New Balance Gator Run Star Burst Bege - Tamanho 42",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:H03474-11",
+      "offer_id": "H03474-11",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~H03474-11",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis adidas Campus 00s Scarlet Red Vermelho - Tamanho 44",
+      "expected_title": "Tênis adidas Campus 00s Scarlet Red Vermelho - Tamanho 44",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060LBD-9",
+      "offer_id": "U9060LBD-9",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060LBD-9",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 9060 Incense Raincloud Arid Stone Marrom - Tamanho 42",
+      "expected_title": "Tênis New Balance 9060 Incense Raincloud Arid Stone Marrom - Tamanho 42",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DX5930001-38",
+      "offer_id": "DX5930001-38",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DX5930001-38",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Dunk Low Phantom Metallic Gold Dourado - Tamanho 38",
+      "expected_title": "Tênis Nike Dunk Low Phantom Metallic Gold Dourado - Tamanho 38",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060EEH-11",
+      "offer_id": "U9060EEH-11",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060EEH-11",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 9060 Sparrow Flat Taupe Marrom - Tamanho 44",
+      "expected_title": "Tênis New Balance 9060 Sparrow Flat Taupe Marrom - Tamanho 44",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DZ1382001-41",
+      "offer_id": "DZ1382001-41",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DZ1382001-41",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Tiffany & Co. x Nike Air Force 1 Low 1837 Preto - Tamanho 41",
+      "expected_title": "Tênis Tiffany & Co. x Nike Air Force 1 Low 1837 Preto - Tamanho 41",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HV6103300-9",
+      "offer_id": "HV6103300-9",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HV6103300-9",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Dunk Low Retro QS Halloween Skull Verde - Tamanho 39.5",
+      "expected_title": "Tênis Nike Dunk Low Retro QS Halloween Skull Verde - Tamanho 39.5",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:u9060aga-8",
+      "offer_id": "u9060aga-8",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~u9060aga-8",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 9060 Grey Day 2025 Cinza - Tamanho 41",
+      "expected_title": "Tênis New Balance 9060 Grey Day 2025 Cinza - Tamanho 41",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALO-2441950-39",
+      "offer_id": "ALO-2441950-39",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ALO-2441950-39",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Alo Yoga Alo Runner Pink Rosa - Tamanho 39",
+      "expected_title": "Tênis Alo Yoga Alo Runner Pink Rosa - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:U530CSB-4",
+      "offer_id": "U530CSB-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U530CSB-4",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 530 Arid Stone Cinza - Tamanho 37",
+      "expected_title": "Tênis New Balance 530 Arid Stone Cinza - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JR5114-5",
+      "offer_id": "JR5114-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JR5114-5",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis adidas Superstar x CLOT Chinese New Year Preto - Tamanho 38",
+      "expected_title": "Tênis adidas Superstar x CLOT Chinese New Year Preto - Tamanho 38",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-002-36",
+      "offer_id": "HV8547-002-36",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HV8547-002-36",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Moon Shoe SP Jacquemus Off White - Tamanho 36",
+      "expected_title": "Tênis Nike Moon Shoe SP Jacquemus Off White - Tamanho 36",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-5",
+      "offer_id": "1183A201-126-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183A201-126-5",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco - Tamanho 38",
+      "expected_title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco - Tamanho 38",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:CZ0790-102-8",
+      "offer_id": "CZ0790-102-8",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~CZ0790-102-8",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 Low Og Mocha Marrom - Tamanho 41",
+      "expected_title": "Tênis Nike Air Jordan 1 Low Og Mocha Marrom - Tamanho 41",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-10",
+      "offer_id": "U9060CCB-10",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060CCB-10",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 9060 Bisque Sea Salt Bege - Tamanho 43",
+      "expected_title": "Tênis New Balance 9060 Bisque Sea Salt Bege - Tamanho 43",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:FB9907102-2",
+      "offer_id": "FB9907102-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FB9907102-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 Low SE Sky J Mauve Roxo - Tamanho 35",
+      "expected_title": "Tênis Nike Air Jordan 1 Low SE Sky J Mauve Roxo - Tamanho 35",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:MR530RB-4",
+      "offer_id": "MR530RB-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~MR530RB-4",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 530 White Mint Branco - Tamanho 37",
+      "expected_title": "Tênis New Balance 530 White Mint Branco - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:YZY-2566238-43",
+      "offer_id": "YZY-2566238-43",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~YZY-2566238-43",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Adidas Yeezy Boost 350 V2 Earth Marrom - Tamanho 43",
+      "expected_title": "Tênis Adidas Yeezy Boost 350 V2 Earth Marrom - Tamanho 43",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DV5464500-3",
+      "offer_id": "DV5464500-3",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DV5464500-3",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike SB Dunk Low Pro ISO Orange Label Court Purple Roxo - Tamanho 38",
+      "expected_title": "Tênis Nike SB Dunk Low Pro ISO Orange Label Court Purple Roxo - Tamanho 38",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060EEB-2",
+      "offer_id": "U9060EEB-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060EEB-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 9060 Moonrock Linen Dark Artic Grey Cinza - Tamanho 36",
+      "expected_title": "Tênis New Balance 9060 Moonrock Linen Dark Artic Grey Cinza - Tamanho 36",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DR9866001-36",
+      "offer_id": "DR9866001-36",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DR9866001-36",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Force 1 Low World Champ Lakers Preto - Tamanho 36",
+      "expected_title": "Tênis Nike Air Force 1 Low World Champ Lakers Preto - Tamanho 36",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:002010763",
+      "offer_id": "002010763",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~002010763",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Autry Medalist Low LL15 Branco - Tamanho 38",
+      "expected_title": "Tênis Autry Medalist Low LL15 Branco - Tamanho 38",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1203A554100-5",
+      "offer_id": "1203A554100-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1203A554100-5",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Asics GT-2160 x JJJJound White Branco - Tamanho 40",
+      "expected_title": "Tênis Asics GT-2160 x JJJJound White Branco - Tamanho 40",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102004-2",
+      "offer_id": "1183C102004-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183C102004-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Onitsuka Tiger Mexico 66 SD Black Classic Red Preto - Tamanho 35",
+      "expected_title": "Tênis Onitsuka Tiger Mexico 66 SD Black Classic Red Preto - Tamanho 35",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DR8867400",
+      "offer_id": "DR8867400",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DR8867400",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 Low SE Craft Inside Out Obsidian Azul - Tamanho 37",
+      "expected_title": "Tênis Nike Air Jordan 1 Low SE Craft Inside Out Obsidian Azul - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:a0590u_04-8",
+      "offer_id": "a0590u_04-8",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~a0590u_04-8",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Alo Yoga ALO Runner Espresso Marrom - Tamanho 41",
+      "expected_title": "Tênis Alo Yoga ALO Runner Espresso Marrom - Tamanho 41",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DD1391401-39.5",
+      "offer_id": "DD1391401-39.5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DD1391401-39.5",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Dunk Low Racer Blue Azul - Tamanho 39.5",
+      "expected_title": "Tênis Nike Dunk Low Racer Blue Azul - Tamanho 39.5",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:FZ8320400-9",
+      "offer_id": "FZ8320400-9",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FZ8320400-9",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis The Powerpuff Girls x Nike SB Dunk Low Bubbles Azul - Tamanho 43",
+      "expected_title": "Tênis The Powerpuff Girls x Nike SB Dunk Low Bubbles Azul - Tamanho 43",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078388010",
+      "offer_id": "43774078388010",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078388010",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 9060 Garter Snake Pearl Grey Verde - Tamanho 39",
+      "expected_title": "Tênis New Balance 9060 Garter Snake Pearl Grey Verde - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:U204LMMA-11",
+      "offer_id": "U204LMMA-11",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U204LMMA-11",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 204L Mushroom Arid Stone Marrom - Tamanho 44",
+      "expected_title": "Tênis New Balance 204L Mushroom Arid Stone Marrom - Tamanho 44",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HF6061-400-6",
+      "offer_id": "HF6061-400-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HF6061-400-6",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Sb Dunk Low x Futura Skateboard Bleached Aqua Azul - Tamanho 41",
+      "expected_title": "Tênis Nike Sb Dunk Low x Futura Skateboard Bleached Aqua Azul - Tamanho 41",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C141-100-4",
+      "offer_id": "1183C141-100-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183C141-100-4",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Onitsuka Tiger Mexico 66 Slip-On White Branco - Tamanho 37",
+      "expected_title": "Tênis Onitsuka Tiger Mexico 66 Slip-On White Branco - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060HSA-2",
+      "offer_id": "U9060HSA-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060HSA-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 9060 Quartz Grey Cinza - Tamanho 35",
+      "expected_title": "Tênis New Balance 9060 Quartz Grey Cinza - Tamanho 35",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078387780",
+      "offer_id": "43774078387780",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078387780",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Adidas Samba Jane Cream Black Gum Bege - Tamanho 36",
+      "expected_title": "Tênis Adidas Samba Jane Cream Black Gum Bege - Tamanho 36",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HV5992111-5",
+      "offer_id": "HV5992111-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HV5992111-5",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Force 1 Low Valentine's Day (2025) Branco - Tamanho 38",
+      "expected_title": "Tênis Nike Air Force 1 Low Valentine's Day (2025) Branco - Tamanho 38",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:Ih5373-4",
+      "offer_id": "Ih5373-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~Ih5373-4",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis adidas Handball Spezial Lucid Blue Pink Azul - Tamanho 37",
+      "expected_title": "Tênis adidas Handball Spezial Lucid Blue Pink Azul - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183A872.106-6",
+      "offer_id": "1183A872.106-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1183A872.106-6",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Onitsuka Tiger Mexico 66 SD White/Rose Gold Branco - Tamanho 39",
+      "expected_title": "Tênis Onitsuka Tiger Mexico 66 SD White/Rose Gold Branco - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:FJ2260-001-3",
+      "offer_id": "FJ2260-001-3",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FJ2260-001-3",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Dunk Low Lx Brown Ostrich Marrom - Tamanho 36",
+      "expected_title": "Tênis Nike Dunk Low Lx Brown Ostrich Marrom - Tamanho 36",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:FJ2260-001-2",
+      "offer_id": "FJ2260-001-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FJ2260-001-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Dunk Low Lx Brown Ostrich Marrom - Tamanho 35",
+      "expected_title": "Tênis Nike Dunk Low Lx Brown Ostrich Marrom - Tamanho 35",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JQ4774-6",
+      "offer_id": "JQ4774-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JQ4774-6",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis adidas Taekwondo Cloud White Branco - Tamanho 39",
+      "expected_title": "Tênis adidas Taekwondo Cloud White Branco - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JI1349-5",
+      "offer_id": "JI1349-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JI1349-5",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis adidas Sambae Cloud White Silver Metallic Gold Branco - Tamanho 38",
+      "expected_title": "Tênis adidas Sambae Cloud White Silver Metallic Gold Branco - Tamanho 38",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:IG5929-7",
+      "offer_id": "IG5929-7",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~IG5929-7",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis adidas Gazelle Indoor Collegiate Green Verde - Tamanho 35.5",
+      "expected_title": "Tênis adidas Gazelle Indoor Collegiate Green Verde - Tamanho 35.5",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ALO-2441950-43",
+      "offer_id": "ALO-2441950-43",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~ALO-2441950-43",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Alo Yoga Alo Runner Pink Rosa - Tamanho 43",
+      "expected_title": "Tênis Alo Yoga Alo Runner Pink Rosa - Tamanho 43",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DX5549400-38",
+      "offer_id": "DX5549400-38",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DX5549400-38",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Why So Sad? x Nike SB Dunk Low The Predatory Bird Azul - Tamanho 38",
+      "expected_title": "Tênis Why So Sad? x Nike SB Dunk Low The Predatory Bird Azul - Tamanho 38",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:CZ0790-110-6",
+      "offer_id": "CZ0790-110-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~CZ0790-110-6",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza - Tamanho 40",
+      "expected_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza - Tamanho 40",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-100-2",
+      "offer_id": "HV0823-100-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HV0823-100-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul - Tamanho 35",
+      "expected_title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul - Tamanho 35",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:IH3264",
+      "offer_id": "IH3264",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~IH3264",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis adidas Samba x Wales Bonner Wonder White Marrom - Tamanho 37",
+      "expected_title": "Tênis adidas Samba x Wales Bonner Wonder White Marrom - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DV0426-012-9",
+      "offer_id": "DV0426-012-9",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DV0426-012-9",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza - Tamanho 40.5",
+      "expected_title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza - Tamanho 40.5",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:NB-8518238-43",
+      "offer_id": "NB-8518238-43",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~NB-8518238-43",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 204L Silver Metallic Double Bubble Prateado - Tamanho 43",
+      "expected_title": "Tênis New Balance 204L Silver Metallic Double Bubble Prateado - Tamanho 43",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060NRI-11",
+      "offer_id": "U9060NRI-11",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060NRI-11",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 9060 Triple Black Preto - Tamanho 44",
+      "expected_title": "Tênis New Balance 9060 Triple Black Preto - Tamanho 44",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DV0788-001-2",
+      "offer_id": "DV0788-001-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DV0788-001-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Air Force 1 Low '07 Panda Preto - Tamanho 39",
+      "expected_title": "Tênis Air Force 1 Low '07 Panda Preto - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:CZ0790-110-2",
+      "offer_id": "CZ0790-110-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~CZ0790-110-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza - Tamanho 36",
+      "expected_title": "Tênis Nike Air Jordan 1 Low Og Barrons Cinza - Tamanho 36",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DQ8426-104-5",
+      "offer_id": "DQ8426-104-5",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DQ8426-104-5",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Midnight Navy Cinza - Tamanho 42",
+      "expected_title": "Tênis Nike Air Jordan 1 Mid Wolf Grey Midnight Navy Cinza - Tamanho 42",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DV5464500-12",
+      "offer_id": "DV5464500-12",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DV5464500-12",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike SB Dunk Low Pro ISO Orange Label Court Purple Roxo - Tamanho 40.5",
+      "expected_title": "Tênis Nike SB Dunk Low Pro ISO Orange Label Court Purple Roxo - Tamanho 40.5",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DX5930001-34",
+      "offer_id": "DX5930001-34",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DX5930001-34",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Dunk Low Phantom Metallic Gold Dourado - Tamanho 34",
+      "expected_title": "Tênis Nike Dunk Low Phantom Metallic Gold Dourado - Tamanho 34",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-8",
+      "offer_id": "JH5439-8",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-8",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Adidas Handball Spezial Bordô - Tamanho 41",
+      "expected_title": "Tênis Adidas Handball Spezial Bordô - Tamanho 41",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:001010845",
+      "offer_id": "001010845",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~001010845",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Autry Medalist Low LS75 Branco - Tamanho 38",
+      "expected_title": "Tênis Autry Medalist Low LS75 Branco - Tamanho 38",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:Ih5373-2",
+      "offer_id": "Ih5373-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~Ih5373-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis adidas Handball Spezial Lucid Blue Pink Azul - Tamanho 35",
+      "expected_title": "Tênis adidas Handball Spezial Lucid Blue Pink Azul - Tamanho 35",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:HM5973-610",
+      "offer_id": "HM5973-610",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~HM5973-610",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Vomero Premium Particle Rose Burgundy Rosa - Tamanho 37",
+      "expected_title": "Tênis Nike Vomero Premium Particle Rose Burgundy Rosa - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:FZ8320400-10",
+      "offer_id": "FZ8320400-10",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~FZ8320400-10",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis The Powerpuff Girls x Nike SB Dunk Low Bubbles Azul - Tamanho 40.5",
+      "expected_title": "Tênis The Powerpuff Girls x Nike SB Dunk Low Bubbles Azul - Tamanho 40.5",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DD1873102-4",
+      "offer_id": "DD1873102-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DD1873102-4",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Dunk Low Next Nature Black White Preto - Tamanho 37",
+      "expected_title": "Tênis Nike Dunk Low Next Nature Black White Preto - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1182A678.750-4",
+      "offer_id": "1182A678.750-4",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1182A678.750-4",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Yellow/Black Amarelo - Tamanho 37",
+      "expected_title": "Tênis Onitsuka Tiger Mexico 66 TGRS Yellow/Black Amarelo - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078390070",
+      "offer_id": "43774078390070",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~43774078390070",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 Retro Low Fragment Design x Travis Scott Couro Branco Preto Azul - Tamanho 41",
+      "expected_title": "Tênis Nike Air Jordan 1 Retro Low Fragment Design x Travis Scott Couro Branco Preto Azul - Tamanho 41",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:553558612-9",
+      "offer_id": "553558612-9",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~553558612-9",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 Low Bred Toe Vermelho - Tamanho 43",
+      "expected_title": "Tênis Nike Air Jordan 1 Low Bred Toe Vermelho - Tamanho 43",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:BQ6817600-2",
+      "offer_id": "BQ6817600-2",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~BQ6817600-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike SB Dunk Low Pro Chicago Vermelho - Tamanho 37",
+      "expected_title": "Tênis Nike SB Dunk Low Pro Chicago Vermelho - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-6",
+      "offer_id": "U9060CCB-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~U9060CCB-6",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 9060 Bisque Sea Salt Bege - Tamanho 39",
+      "expected_title": "Tênis New Balance 9060 Bisque Sea Salt Bege - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DR5415-100-40",
+      "offer_id": "DR5415-100-40",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DR5415-100-40",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike SB Air Jordan 4 x Retro SP Navy Branco - Tamanho 40",
+      "expected_title": "Tênis Nike SB Air Jordan 4 x Retro SP Navy Branco - Tamanho 40",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1184A049.250-1",
+      "offer_id": "1184A049.250-1",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1184A049.250-1",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Onitsuka Tiger Mexico 66 Kids Beige Grass/Green Marrom - Tamanho 25",
+      "expected_title": "Tênis Onitsuka Tiger Mexico 66 Kids Beige Grass/Green Marrom - Tamanho 25",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-6",
+      "offer_id": "JH5439-6",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~JH5439-6",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Adidas Handball Spezial Bordô - Tamanho 39",
+      "expected_title": "Tênis Adidas Handball Spezial Bordô - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:DQ5130400-37",
+      "offer_id": "DQ5130400-37",
+      "execution_status": "patched_p2b_size_title_pilot_b_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~DQ5130400-37",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Fly Streetwear x Dunk Low Pro SB 'Gardenia' Azul - Tamanho 37",
+      "expected_title": "Tênis Fly Streetwear x Dunk Low Pro SB 'Gardenia' Azul - Tamanho 37",
+      "match_expected": true
+    }
+  ],
+  "not_performed": [
+    "shopify_write",
+    "shopify_title_update",
+    "handle_update",
+    "description_update",
+    "price_update",
+    "availability_update",
+    "googleProductCategory_update",
+    "productTypes_update",
+    "merchant_delete",
+    "tiny_write",
+    "database_write",
+    "feed_fetch_or_upload",
+    "message_or_campaign_send"
+  ]
+}

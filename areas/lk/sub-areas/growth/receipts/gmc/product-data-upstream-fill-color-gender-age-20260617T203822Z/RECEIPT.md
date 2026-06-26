@@ -1,0 +1,145 @@
+# Receipt — Fill remaining color/gender/age upstream Shopify
+
+- Criado: 2026-06-17T20:39:00.333157+00:00
+- Aprovação: Lucas: “vamos fazer todos, 1 2 e 3 depois aguardar o 4”.
+- Escopo: Shopify product metafields `mm-google-shopping.color`, `gender`, `age_group`.
+- Produtos ativos escaneados: 1838
+- Alterações tentadas: 317
+- Readback OK: 317
+- Falhas: 0
+- Erros API: 0
+
+## Pós-check
+- Missing color: 0
+- Missing gender: 0
+- Missing age_group: 0
+- Gender não-canônico: []
+- Age não-canônico: []
+
+## Excluído
+- preço, estoque, disponibilidade, variantes, SKU, MPN, feed/GMC direto, campanhas, theme.
+
+## Rollback
+- Restaurar valores anteriores/nulos a partir de `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/receipts/gmc/product-data-upstream-fill-color-gender-age-20260617T203822Z/backup-before.json`.
+
+## Amostra de alterações
+- tenis-new-balance-9060-kids-rose-sugar-ice-wine-rosa — gender: `Infantil` → `unisex`
+- tenis-new-balance-530-silver-metallic-linen-bege — gender: `Bege` → `unisex`
+- accolade-straight-leg-sweatpant-charcoal-green — gender: `None` → `unisex`
+- accolade-straight-leg-sweatpant-charcoal-green — age_group: `None` → `adult`
+- tenis-adidas-tokyo-mary-jane-sandy-pink-earth-strata-rosa — gender: `None` → `unisex`
+- tenis-adidas-tokyo-mary-jane-sandy-pink-earth-strata-rosa — age_group: `None` → `adult`
+- tenis-adidas-tokyo-mj-core-black-cream-white-gold-metallic-preto — color: `None` → `Preto/Branco/Bege`
+- tenis-adidas-tokyo-mj-core-black-cream-white-gold-metallic-preto — gender: `None` → `unisex`
+- tenis-adidas-tokyo-mj-core-black-cream-white-gold-metallic-preto — age_group: `None` → `adult`
+- tenis-adidas-tokyo-mary-jane-cream-white-red-gold-metallic-creme — color: `None` → `Branco/Bege/Vermelho`
+- tenis-adidas-tokyo-mary-jane-cream-white-red-gold-metallic-creme — gender: `None` → `unisex`
+- tenis-adidas-tokyo-mary-jane-cream-white-red-gold-metallic-creme — age_group: `None` → `adult`
+- tenis-adidas-tokyo-mary-jane-crystal-sky-cream-white-azul — color: `None` → `Branco/Bege/Azul`
+- tenis-adidas-tokyo-mary-jane-crystal-sky-cream-white-azul — gender: `None` → `unisex`
+- tenis-adidas-tokyo-mary-jane-crystal-sky-cream-white-azul — age_group: `None` → `adult`
+- tenis-onitsuka-tiger-mexico-66-fringe-black-black-preto — gender: `None` → `unisex`
+- tenis-onitsuka-tiger-mexico-66-fringe-mocha-brown-dark-brown-marrom — gender: `None` → `unisex`
+- tenis-onitsuka-tiger-mexico-66-fringe-yellow-black-amarelo — color: `None` → `Preto/Amarelo`
+- tenis-onitsuka-tiger-mexico-66-fringe-yellow-black-amarelo — gender: `None` → `unisex`
+- tenis-nike-air-jordan-1-high-virgil-abloh-archive-x-alaska-branco — gender: `None` → `unisex`
+- tenis-nike-air-jordan-1-high-virgil-abloh-archive-x-alaska-branco — age_group: `None` → `adult`
+- tenis-nike-air-liquid-max-x-fragment-design-black-anthracite-preto — gender: `None` → `unisex`
+- tenis-nike-air-liquid-max-x-fragment-design-black-anthracite-preto — age_group: `None` → `adult`
+- tenis-nike-mind-002-sail-bege — color: `None` → `Branco/Bege`
+- tenis-nike-mind-002-sail-bege — gender: `None` → `unisex`
+- tenis-nike-mind-002-sail-bege — age_group: `None` → `adult`
+- slide-nike-mind-001-sail-bege — color: `None` → `Branco/Bege`
+- slide-nike-mind-001-sail-bege — gender: `None` → `unisex`
+- slide-nike-mind-001-sail-bege — age_group: `None` → `adult`
+- slide-nike-mind-001-white-speed-red-branco — color: `None` → `Branco/Vermelho`
+- slide-nike-mind-001-white-speed-red-branco — gender: `None` → `unisex`
+- slide-nike-mind-001-white-speed-red-branco — age_group: `None` → `adult`
+- tenis-puma-speedcat-silk-chocotart-warm-white-marrom — color: `None` → `Branco/Marrom`
+- tenis-puma-speedcat-silk-chocotart-warm-white-marrom — gender: `None` → `unisex`
+- tenis-puma-speedcat-silk-chocotart-warm-white-marrom — age_group: `None` → `adult`
+- tenis-adidas-taekwondo-mei-ballet-cream-white-branco — color: `None` → `Branco/Bege`
+- tenis-adidas-taekwondo-mei-ballet-cream-white-branco — gender: `None` → `unisex`
+- tenis-adidas-taekwondo-mei-ballet-cream-white-branco — age_group: `None` → `adult`
+- tenis-adidas-badbo-1-0-rise-branco — gender: `None` → `unisex`
+- tenis-adidas-badbo-1-0-rise-branco — age_group: `None` → `adult`
+- tenis-on-cloudtilt-x-loewe-white-branco — gender: `None` → `unisex`
+- tenis-on-cloudtilt-x-loewe-white-branco — age_group: `None` → `adult`
+- tenis-new-balance-1906l-black-suede-preto — gender: `None` → `unisex`
+- slide-nike-mind-001-team-red-vermelho — gender: `None` → `unisex`
+- tenis-nike-shox-tl-black-dynamic-yellow-preto — color: `None` → `Preto/Amarelo`
+- tenis-nike-shox-tl-black-dynamic-yellow-preto — gender: `None` → `unisex`
+- tenis-nike-shox-tl-black-dynamic-yellow-preto — age_group: `None` → `adult`
+- tenis-nike-shox-tl-black-cave-stone-preto — gender: `None` → `unisex`
+- tenis-nike-shox-tl-black-cave-stone-preto — age_group: `None` → `adult`
+- tenis-nike-shox-tl-sunrise-gradient-laranja — gender: `None` → `unisex`
+- tenis-nike-shox-tl-sunrise-gradient-laranja — age_group: `None` → `adult`
+- tenis-nike-shox-tl-velvet-brown-denim-turquoise-marrom — gender: `None` → `unisex`
+- tenis-nike-shox-tl-velvet-brown-denim-turquoise-marrom — age_group: `None` → `adult`
+- tenis-nike-shox-tl-blue-tint-orange-azul — color: `None` → `Azul/Laranja`
+- tenis-nike-shox-tl-blue-tint-orange-azul — gender: `None` → `unisex`
+- tenis-nike-shox-tl-blue-tint-orange-azul — age_group: `None` → `adult`
+- tenis-nike-shox-tl-pumice-night-maroon-cinza — gender: `None` → `unisex`
+- tenis-nike-shox-tl-pumice-night-maroon-cinza — age_group: `None` → `adult`
+- tenis-nike-shox-tl-orewood-brown-cave-stone-bege — color: `None` → `Marrom/Bege`
+- tenis-nike-shox-tl-orewood-brown-cave-stone-bege — gender: `None` → `unisex`
+- tenis-nike-shox-tl-orewood-brown-cave-stone-bege — age_group: `None` → `adult`
+- slide-nike-mind-001-pearl-pink-rosa — gender: `None` → `unisex`
+- slide-nike-mind-001-pearl-pink-rosa — age_group: `None` → `adult`
+- slide-nike-mind-001-mineral-slate-verde — gender: `None` → `unisex`
+- slide-nike-mind-001-mineral-slate-verde — age_group: `None` → `adult`
+- slide-nike-mind-001-blackened-blue-azul — gender: `None` → `unisex`
+- slide-nike-mind-001-blackened-blue-azul — age_group: `None` → `adult`
+- tenis-nike-mind-002-grey-football-grey-cinza — gender: `None` → `unisex`
+- tenis-nike-mind-002-grey-football-grey-cinza — age_group: `None` → `adult`
+- tenis-nike-vomero-premium-x-melitta-baumeister-total-orange-laranja — gender: `None` → `unisex`
+- tenis-nike-vomero-premium-x-melitta-baumeister-total-orange-laranja — age_group: `None` → `adult`
+- tenis-nike-vomero-premium-x-renegade-x-cinnamon-marrom — gender: `None` → `unisex`
+- tenis-nike-vomero-premium-x-renegade-x-cinnamon-marrom — age_group: `None` → `adult`
+- tenis-nike-vomero-premium-barely-green-verde — gender: `None` → `unisex`
+- tenis-nike-vomero-premium-barely-green-verde — age_group: `None` → `adult`
+- tenis-nike-vomero-premium-pearl-pink-rosa — gender: `None` → `unisex`
+- tenis-nike-vomero-premium-pearl-pink-rosa — age_group: `None` → `adult`
+- tenis-nike-vomero-premium-tangerine-tint-laranja — gender: `None` → `unisex`
+- tenis-nike-vomero-premium-tangerine-tint-laranja — age_group: `None` → `adult`
+- camiseta-nude-project-berry-tee-white-branco — gender: `None` → `unisex`
+- camiseta-nude-project-honor-tee-black-preto — gender: `None` → `unisex`
+- camiseta-nude-project-honor-tee-marshmallow-off-white — gender: `None` → `unisex`
+- camiseta-nude-project-honor-tee-marshmallow-off-white — age_group: `None` → `adult`
+- camiseta-nude-project-kora-black-preto — gender: `None` → `unisex`
+- moletom-nude-project-side-eye-zip-up-black-preto — gender: `None` → `unisex`
+- moletom-nude-project-side-eye-zip-up-black-preto — age_group: `None` → `adult`
+- moletom-nude-project-cult-hoodie-black-beige-preto — gender: `None` → `unisex`
+- moletom-nude-project-cult-hoodie-black-beige-preto — age_group: `None` → `adult`
+- shorts-saint-studio-plissado-tech-preto — gender: `None` → `unisex`
+- camiseta-saint-studio-oversized-suedine-supima-areia-bege — gender: `None` → `unisex`
+- tenis-nike-air-jordan-1-low-se-repaired-denim-swoosh-azul — gender: `None` → `unisex`
+- tenis-nike-air-jordan-1-low-se-repaired-denim-swoosh-azul — age_group: `None` → `adult`
+- calca-legging-alo-yoga-7-8-high-waist-airlift-preto — gender: `None` → `unisex`
+- calca-legging-alo-yoga-7-8-high-waist-airlift-preto — age_group: `None` → `adult`
+- shorts-deus-ex-machina-walk-ford-azul-marinho — gender: `None` → `unisex`
+- shorts-deus-ex-machina-walk-ford-azul-marinho — age_group: `None` → `adult`
+- camiseta-deus-ex-machina-old-turps-off-white — gender: `None` → `unisex`
+- camiseta-deus-ex-machina-old-turps-off-white — age_group: `None` → `adult`
+- camiseta-deus-ex-machina-shield-estonada-chumbo-cinza — gender: `None` → `unisex`
+- camiseta-deus-ex-machina-shield-estonada-chumbo-cinza — age_group: `None` → `adult`
+- camiseta-deus-ex-machina-hauntology-verde — gender: `None` → `unisex`
+- camiseta-deus-ex-machina-hauntology-verde — age_group: `None` → `adult`
+- camiseta-deus-ex-machina-venice-skull-preto — gender: `None` → `unisex`
+- camiseta-deus-ex-machina-venice-skull-preto — age_group: `None` → `adult`
+- camiseta-fear-of-god-essentials-varsity-90s-short-sleeve-tee-cinza — gender: `None` → `unisex`
+- bone-deus-ex-machina-classics-dad-hat-shield-standard-preto — color: `None` → `Preto/Bege`
+- bone-deus-ex-machina-classics-dad-hat-shield-standard-preto — gender: `None` → `unisex`
+- bone-deus-ex-machina-classics-dad-hat-shield-standard-preto — age_group: `None` → `adult`
+- bone-deus-ex-machina-records-dad-hat-strata-branco — color: `None` → `Branco/Bege`
+- bone-deus-ex-machina-records-dad-hat-strata-branco — gender: `None` → `unisex`
+- bone-deus-ex-machina-records-dad-hat-strata-branco — age_group: `None` → `adult`
+- camiseta-deus-ex-machina-shield-standard — color: `None` → `Colorido`
+- camiseta-deus-ex-machina-shield-standard — gender: `None` → `unisex`
+- camiseta-deus-ex-machina-shield-standard — age_group: `None` → `adult`
+- camiseta-deus-ex-machina-time-taker-azul-marinho — gender: `None` → `unisex`
+- camiseta-deus-ex-machina-time-taker-azul-marinho — age_group: `None` → `adult`
+- the-peptide-lip-tints-rhode-limited-edition-shade-dourado-1 — gender: `None` → `unisex`
+- the-peptide-lip-tints-rhode-limited-edition-shade-dourado-1 — age_group: `None` → `adult`
+- tenis-on-running-x-kith-on-k-tech-2-spirulina-barley-verde — gender: `None` → `unisex`
+- tenis-on-running-x-kith-on-k-tech-2-spirulina-barley-verde — age_group: `None` → `adult`

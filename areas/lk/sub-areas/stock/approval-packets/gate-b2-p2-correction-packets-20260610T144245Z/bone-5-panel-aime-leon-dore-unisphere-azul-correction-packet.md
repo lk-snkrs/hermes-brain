@@ -1,0 +1,105 @@
+# Gate B2 P2 — correction packet — bone-5-panel-aime-leon-dore-unisphere-azul
+
+- title: `Boné 5 Panel Aimé Leon Dore Unisphere Azul`
+- priority: `P2_saneamento`
+- lane: `SHOPIFY_DUPLICATE_PACKET`
+- proposed_action: Preparar diff Shopify por variante/SKU duplicado e rollback; NÃO executar write sem aprovação escopada.
+- row_count: `81`
+- prefixes: `AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11, AIME11`
+
+## Status counts
+- matched_exact_sku_stock_missing_deposit: `2`
+- matched_exact_sku_stock_resolved: `38`
+- shopify_duplicate_sku_blocked: `1`
+- shopify_variant_tiny_missing: `40`
+
+## Linhas principais
+- `AIME11` | shopify_duplicate_sku_blocked | Shopify SKU `AIME11` | Tiny `AIME11` id `1065054885`
+- `AIME110-1` | matched_exact_sku_stock_resolved | Shopify SKU `AIME110-1` | Tiny `AIME110-1` id `1066348491` | saldo LK CONTROLE: 0.0
+- `AIME110-2` | shopify_variant_tiny_missing | Shopify SKU `AIME110-2` | Tiny `` id ``
+- `AIME110-3` | shopify_variant_tiny_missing | Shopify SKU `AIME110-3` | Tiny `` id ``
+- `AIME110-4` | shopify_variant_tiny_missing | Shopify SKU `AIME110-4` | Tiny `` id ``
+- `AIME110-5` | shopify_variant_tiny_missing | Shopify SKU `AIME110-5` | Tiny `` id ``
+- `AIME110-6` | shopify_variant_tiny_missing | Shopify SKU `AIME110-6` | Tiny `` id ``
+- `AIME111-1` | shopify_variant_tiny_missing | Shopify SKU `AIME111-1` | Tiny `` id ``
+- `AIME111-2` | matched_exact_sku_stock_resolved | Shopify SKU `AIME111-2` | Tiny `AIME111-2` id `1066348636` | saldo LK CONTROLE: 0.0
+- `AIME111-3` | matched_exact_sku_stock_resolved | Shopify SKU `AIME111-3` | Tiny `AIME111-3` id `1066348639` | saldo LK CONTROLE: 0.0
+- `AIME111-4` | matched_exact_sku_stock_resolved | Shopify SKU `AIME111-4` | Tiny `AIME111-4` id `1066348642` | saldo LK CONTROLE: 0.0
+- `AIME111-5` | matched_exact_sku_stock_resolved | Shopify SKU `AIME111-5` | Tiny `AIME111-5` id `1066348645` | saldo LK CONTROLE: 0.0
+- `AIME111-6` | matched_exact_sku_stock_resolved | Shopify SKU `AIME111-6` | Tiny `AIME111-6` id `1066348648` | saldo LK CONTROLE: 0.0
+- `AIME112-1` | matched_exact_sku_stock_missing_deposit | Shopify SKU `AIME112-1` | Tiny `AIME112-1` id `1066348676`
+- `AIME112-2` | shopify_variant_tiny_missing | Shopify SKU `AIME112-2` | Tiny `` id ``
+- `AIME112-3` | shopify_variant_tiny_missing | Shopify SKU `AIME112-3` | Tiny `` id ``
+- `AIME112-4` | shopify_variant_tiny_missing | Shopify SKU `AIME112-4` | Tiny `` id ``
+- `AIME112-5` | shopify_variant_tiny_missing | Shopify SKU `AIME112-5` | Tiny `` id ``
+- `AIME112-6` | shopify_variant_tiny_missing | Shopify SKU `AIME112-6` | Tiny `` id ``
+- `AIME113-1` | matched_exact_sku_stock_resolved | Shopify SKU `AIME113-1` | Tiny `AIME113-1` id `1066349039` | saldo LK CONTROLE: 0.0
+- `AIME113-10` | matched_exact_sku_stock_resolved | Shopify SKU `AIME113-10` | Tiny `AIME113-10` id `1066349069` | saldo LK CONTROLE: 0.0
+- `AIME113-11` | matched_exact_sku_stock_resolved | Shopify SKU `AIME113-11` | Tiny `AIME113-11` id `1066349079` | saldo LK CONTROLE: 0.0
+- `AIME113-12` | matched_exact_sku_stock_resolved | Shopify SKU `AIME113-12` | Tiny `AIME113-12` id `1066349087` | saldo LK CONTROLE: 0.0
+- `AIME113-2` | matched_exact_sku_stock_resolved | Shopify SKU `AIME113-2` | Tiny `AIME113-2` id `1066349047` | saldo LK CONTROLE: 0.0
+- `AIME113-3` | matched_exact_sku_stock_resolved | Shopify SKU `AIME113-3` | Tiny `AIME113-3` id `1066349055` | saldo LK CONTROLE: 0.0
+- `AIME113-4` | shopify_variant_tiny_missing | Shopify SKU `AIME113-4` | Tiny `` id ``
+- `AIME113-5` | shopify_variant_tiny_missing | Shopify SKU `AIME113-5` | Tiny `` id ``
+- `AIME113-6` | shopify_variant_tiny_missing | Shopify SKU `AIME113-6` | Tiny `` id ``
+- `AIME113-7` | shopify_variant_tiny_missing | Shopify SKU `AIME113-7` | Tiny `` id ``
+- `AIME113-8` | shopify_variant_tiny_missing | Shopify SKU `AIME113-8` | Tiny `` id ``
+- `AIME113-9` | shopify_variant_tiny_missing | Shopify SKU `AIME113-9` | Tiny `` id ``
+- `AIME114-1` | matched_exact_sku_stock_resolved | Shopify SKU `AIME114-1` | Tiny `AIME114-1` id `1066349143` | saldo LK CONTROLE: 0.0
+- `AIME114-10` | matched_exact_sku_stock_resolved | Shopify SKU `AIME114-10` | Tiny `AIME114-10` id `1066349179` | saldo LK CONTROLE: 0.0
+- `AIME114-11` | matched_exact_sku_stock_resolved | Shopify SKU `AIME114-11` | Tiny `AIME114-11` id `1066349183` | saldo LK CONTROLE: 0.0
+- `AIME114-12` | matched_exact_sku_stock_resolved | Shopify SKU `AIME114-12` | Tiny `AIME114-12` id `1066349187` | saldo LK CONTROLE: 0.0
+- `AIME114-2` | matched_exact_sku_stock_resolved | Shopify SKU `AIME114-2` | Tiny `AIME114-2` id `1066349147` | saldo LK CONTROLE: 0.0
+- `AIME114-3` | matched_exact_sku_stock_resolved | Shopify SKU `AIME114-3` | Tiny `AIME114-3` id `1066349151` | saldo LK CONTROLE: 0.0
+- `AIME114-4` | shopify_variant_tiny_missing | Shopify SKU `AIME114-4` | Tiny `` id ``
+- `AIME114-5` | shopify_variant_tiny_missing | Shopify SKU `AIME114-5` | Tiny `` id ``
+- `AIME114-6` | shopify_variant_tiny_missing | Shopify SKU `AIME114-6` | Tiny `` id ``
+- `AIME114-7` | shopify_variant_tiny_missing | Shopify SKU `AIME114-7` | Tiny `` id ``
+- `AIME114-8` | shopify_variant_tiny_missing | Shopify SKU `AIME114-8` | Tiny `` id ``
+- `AIME114-9` | shopify_variant_tiny_missing | Shopify SKU `AIME114-9` | Tiny `` id ``
+- `AIME115-1` | matched_exact_sku_stock_resolved | Shopify SKU `AIME115-1` | Tiny `AIME115-1` id `1066349333` | saldo LK CONTROLE: 0.0
+- `AIME115-10` | matched_exact_sku_stock_resolved | Shopify SKU `AIME115-10` | Tiny `AIME115-10` id `1066349370` | saldo LK CONTROLE: 0.0
+- `AIME115-11` | matched_exact_sku_stock_resolved | Shopify SKU `AIME115-11` | Tiny `AIME115-11` id `1066349374` | saldo LK CONTROLE: 0.0
+- `AIME115-12` | matched_exact_sku_stock_resolved | Shopify SKU `AIME115-12` | Tiny `AIME115-12` id `1066349378` | saldo LK CONTROLE: 0.0
+- `AIME115-2` | matched_exact_sku_stock_resolved | Shopify SKU `AIME115-2` | Tiny `AIME115-2` id `1066349337` | saldo LK CONTROLE: 0.0
+- `AIME115-3` | matched_exact_sku_stock_resolved | Shopify SKU `AIME115-3` | Tiny `AIME115-3` id `1066349341` | saldo LK CONTROLE: 0.0
+- `AIME115-4` | shopify_variant_tiny_missing | Shopify SKU `AIME115-4` | Tiny `` id ``
+- `AIME115-5` | shopify_variant_tiny_missing | Shopify SKU `AIME115-5` | Tiny `` id ``
+- `AIME115-6` | shopify_variant_tiny_missing | Shopify SKU `AIME115-6` | Tiny `` id ``
+- `AIME115-7` | shopify_variant_tiny_missing | Shopify SKU `AIME115-7` | Tiny `` id ``
+- `AIME115-8` | shopify_variant_tiny_missing | Shopify SKU `AIME115-8` | Tiny `` id ``
+- `AIME115-9` | shopify_variant_tiny_missing | Shopify SKU `AIME115-9` | Tiny `` id ``
+- `AIME116-1` | matched_exact_sku_stock_resolved | Shopify SKU `AIME116-1` | Tiny `AIME116-1` id `1066349663` | saldo LK CONTROLE: 0.0
+- `AIME116-10` | matched_exact_sku_stock_resolved | Shopify SKU `AIME116-10` | Tiny `AIME116-10` id `1066349699` | saldo LK CONTROLE: 0.0
+- `AIME116-11` | matched_exact_sku_stock_resolved | Shopify SKU `AIME116-11` | Tiny `AIME116-11` id `1066349703` | saldo LK CONTROLE: 0.0
+- `AIME116-12` | matched_exact_sku_stock_resolved | Shopify SKU `AIME116-12` | Tiny `AIME116-12` id `1066349707` | saldo LK CONTROLE: 0.0
+- `AIME116-2` | matched_exact_sku_stock_resolved | Shopify SKU `AIME116-2` | Tiny `AIME116-2` id `1066349667` | saldo LK CONTROLE: 0.0
+- `AIME116-3` | matched_exact_sku_stock_resolved | Shopify SKU `AIME116-3` | Tiny `AIME116-3` id `1066349671` | saldo LK CONTROLE: 0.0
+- `AIME116-4` | shopify_variant_tiny_missing | Shopify SKU `AIME116-4` | Tiny `` id ``
+- `AIME116-5` | shopify_variant_tiny_missing | Shopify SKU `AIME116-5` | Tiny `` id ``
+- `AIME116-6` | shopify_variant_tiny_missing | Shopify SKU `AIME116-6` | Tiny `` id ``
+- `AIME116-7` | shopify_variant_tiny_missing | Shopify SKU `AIME116-7` | Tiny `` id ``
+- `AIME116-8` | shopify_variant_tiny_missing | Shopify SKU `AIME116-8` | Tiny `` id ``
+- `AIME116-9` | shopify_variant_tiny_missing | Shopify SKU `AIME116-9` | Tiny `` id ``
+- `AIME117-1` | matched_exact_sku_stock_resolved | Shopify SKU `AIME117-1` | Tiny `AIME117-1` id `1066349820` | saldo LK CONTROLE: 0.0
+- `AIME117-10` | matched_exact_sku_stock_resolved | Shopify SKU `AIME117-10` | Tiny `AIME117-10` id `1066349856` | saldo LK CONTROLE: 0.0
+- `AIME117-11` | matched_exact_sku_stock_resolved | Shopify SKU `AIME117-11` | Tiny `AIME117-11` id `1066349860` | saldo LK CONTROLE: 0.0
+- `AIME117-12` | matched_exact_sku_stock_resolved | Shopify SKU `AIME117-12` | Tiny `AIME117-12` id `1066349864` | saldo LK CONTROLE: 0.0
+- `AIME117-2` | matched_exact_sku_stock_resolved | Shopify SKU `AIME117-2` | Tiny `AIME117-2` id `1066349824` | saldo LK CONTROLE: 0.0
+- `AIME117-3` | matched_exact_sku_stock_resolved | Shopify SKU `AIME117-3` | Tiny `AIME117-3` id `1066349828` | saldo LK CONTROLE: 0.0
+- `AIME117-4` | matched_exact_sku_stock_missing_deposit | Shopify SKU `AIME117-4` | Tiny `AIME117-4` id `1066349832`
+- `AIME117-5` | shopify_variant_tiny_missing | Shopify SKU `AIME117-5` | Tiny `` id ``
+- `AIME117-6` | shopify_variant_tiny_missing | Shopify SKU `AIME117-6` | Tiny `` id ``
+- `AIME117-7` | shopify_variant_tiny_missing | Shopify SKU `AIME117-7` | Tiny `` id ``
+- `AIME117-8` | shopify_variant_tiny_missing | Shopify SKU `AIME117-8` | Tiny `` id ``
+- `AIME117-9` | shopify_variant_tiny_missing | Shopify SKU `AIME117-9` | Tiny `` id ``
+- `AIME118` | matched_exact_sku_stock_resolved | Shopify SKU `AIME118` | Tiny `AIME118` id `1066349954` | saldo LK CONTROLE: 0.0
+- ... +1 linhas no JSON/CSV agregado
+
+## Guardrails
+- Tiny write: `0`
+- Shopify write: `0`
+- Writes externos: `0`
+- Cron/webhook/runtime novo: `0`
+- Promessa de disponibilidade pública: `0`
+- Rollback: descartar artefatos locais; nada externo alterado.

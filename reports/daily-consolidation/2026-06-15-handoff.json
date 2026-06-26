@@ -1,0 +1,187 @@
+{
+  "operational_date": "2026-06-15",
+  "generated_at_utc": "2026-06-16T04:07:24Z",
+  "status": "ok",
+  "executive_summary": "Fechamento 01h saudável: daily consolidation reescrito em formato textual mais claro, Brain Health FAIL=0 WARN=0 e Brain Improvement Score 100/100. Aprendizado principal: Lucas corrigiu que o relatório noturno técnico/scorecard está ruim; deve explicar em linguagem humana o que melhorou, o que foi corrigido, o que não foi mexido, versão Hermes e pendências reais. Versão atual observada: Hermes Agent v0.16.0 / 2026.6.5; não há evidência suficiente de comparação com latest release remoto neste fechamento.",
+  "material_changes": [
+    {
+      "domain": "Hermes Geral / Grande Mente",
+      "summary": "Relatório diário reescrito para formato narrativo/acionável e não apenas scorecard técnico.",
+      "evidence": "reports/daily-consolidation/2026-06-15.md"
+    },
+    {
+      "domain": "Brain Health / Improvement Score",
+      "summary": "Health check local passou com FAIL=0 WARN=0 e Brain Improvement Score ficou em 100/100.",
+      "evidence": "reports/brain-health-check-2026-06-15-02h.json; reports/brain-improvement-score-2026-06-15-02h.json"
+    },
+    {
+      "domain": "Reminder OS",
+      "summary": "Reports e receipts indicam correção A1/local de ledger/ingress, eliminando falso positivo ativo e mantendo health acionável.",
+      "evidence": "reports/hermes-learning-ledger/2026-06-15.md; areas/operacoes/receipts/reminder-os-ingress-repair-whatsapp-stock-responder-20260615.md"
+    },
+    {
+      "domain": "Memory OS",
+      "summary": "Memory Hygiene 02h15 reportou 32/32 templates cobertos, sem alertas e sem auto-compactions.",
+      "evidence": "reports/memory-hygiene/2026-06-16.json"
+    },
+    {
+      "domain": "LK Shopify",
+      "summary": "Readback confirma publicação do Salomon XT-6 Cloudburst Icy Pink nos canais solicitados, com all_requested_published=true e values_printed=false.",
+      "evidence": "reports/lk-shopify-channel-publication/2026-06-15T144617Z-salomon-xt6-channel-publication.json"
+    },
+    {
+      "domain": "LK Stock / WhatsApp",
+      "summary": "Responder WhatsApp foi corrigido para usar LK Stock OS local DB em caminhos de estoque, sem Tiny/Shopify direto e sem mensagem manual enviada.",
+      "evidence": "areas/lk/sub-areas/stock/receipts/lk-whatsapp-stock-os-runtime-audit-fix-20260615T1938Z.md"
+    },
+    {
+      "domain": "Elle / Chatwoot",
+      "summary": "Receipt indica hotpatch para usar Messages API oficial do Chatwoot para respostas públicas, health HTTP 200, sem envio manual durante manutenção.",
+      "evidence": "areas/lk/sub-areas/atendimento/receipts/elle-official-chatwoot-public-send-20260615.md"
+    }
+  ],
+  "incidents": [],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Relatório noturno deve ser mais fácil de entender em texto humano, não apenas técnico/scorecard.",
+      "scope": "Formato de Fechamento Ágil / digest noturno / governança local.",
+      "exclusions": "Não autoriza runtime mutation, Docker/VPS/gateway, deploy, integrações externas, cliente/WhatsApp/e-mail/campanha, bancos/source-of-truth writes ou exposição de segredos.",
+      "evidence": "session_search: crítica de Lucas ao relatório noturno"
+    },
+    {
+      "decision": "Relatório deve verificar/mostrar novas versões do Hermes, não apenas registrar score.",
+      "scope": "Adicionar campo de versão instalada vs latest disponível como controle read-only.",
+      "exclusions": "Não autoriza atualização automática do Hermes/runtime sem approval packet e rollback.",
+      "evidence": "session_search: pergunta de Lucas sobre novas versões do Hermes"
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "type": "correction",
+      "summary": "Lucas corrigiu que o formato atual do relatório noturno está ruim para leitura executiva.",
+      "exact_scope": "Melhorar formato textual do relatório e explicitar melhorias reais.",
+      "exclusions": "Sem mudanças produtivas/externas/infra.",
+      "pattern_to_learn": "Score técnico deve vir depois de uma leitura humana: melhorou, corrigiu, risco, decisão, versão, próximo passo.",
+      "status": "partially_applied_in_current_report"
+    },
+    {
+      "type": "correction",
+      "summary": "Lucas perguntou se o relatório viu novas versões do Hermes.",
+      "exact_scope": "Controle de versão do Hermes no fechamento.",
+      "exclusions": "Não atualizar Hermes automaticamente.",
+      "pattern_to_learn": "Diferenciar versão atual observada de latest release verificada.",
+      "status": "blocked_pending_release_check_integration"
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Relatório noturno técnico demais não serve; precisa de texto executivo com melhorias concretas e pendências reais.",
+      "recommended_destination": "areas/operacoes/rotinas/fechamento-agil-01h.md; template/script do digest noturno",
+      "action": "aplicado no relatório 2026-06-15; patch canônico ainda recomendado",
+      "verification_needed": "Próximo fechamento deve sair no novo formato"
+    },
+    {
+      "learning": "Controle de versão Hermes deve mostrar versão instalada e latest release disponível separadamente.",
+      "recommended_destination": "areas/operacoes/rotinas/hermes-release-watch.md; Fechamento Ágil 01h",
+      "action": "bloqueado parcialmente: versão atual encontrada, latest remoto não evidenciado",
+      "verification_needed": "Implementar checagem read-only de release remoto"
+    },
+    {
+      "learning": "Reminder OS/Memory OS saudáveis devem ficar silent-OK; alertas devem ser acionáveis e explicar qual camada corrigir.",
+      "recommended_destination": "Reminder OS / Memory OS / Nightly Governance routines",
+      "action": "aplicado nos reports e receipts consultados",
+      "verification_needed": "Próximo alerta real deve manter linguagem humana sem wrapper técnico"
+    },
+    {
+      "learning": "Scripts de atendimento/WhatsApp LK devem usar LK Stock OS para disponibilidade, não Tiny/Shopify direto.",
+      "recommended_destination": "LK Stock skills/rotinas e regressões de scripts",
+      "action": "aplicado em receipt de runtime audit fix",
+      "verification_needed": "Manter selftest/regressão em mudanças futuras"
+    }
+  ],
+  "autonomy_pattern_candidates": [
+    {
+      "pattern": "A0/A1 permitido: reformatar relatórios, corrigir docs/templates, rodar health/score, secret scan e Brain Sync documental.",
+      "candidate_status": "safe_to_repeat_with_checks"
+    },
+    {
+      "pattern": "A1 candidato: checagem read-only de latest Hermes release no fechamento.",
+      "candidate_status": "safe_candidate_after_template_patch"
+    },
+    {
+      "pattern": "A3/A4 permanece bloqueado: atualizar Hermes runtime, restart gateway/Docker/VPS, deploy, bancos, Shopify/Tiny/GMC/Klaviyo/Meta, contato externo, dinheiro, segredos ou destrutivo.",
+      "candidate_status": "must_remain_approval_gated"
+    }
+  ],
+  "pending_decisions_for_lucas": [],
+  "safe_next_actions": [
+    "Patch canônico no template/rotina do Fechamento para formato textual executivo.",
+    "Adicionar checagem read-only de latest Hermes release ao relatório, sem atualizar runtime automaticamente.",
+    "Continuar silent-OK para Memory OS/Reminder OS/Brain Health quando saudáveis."
+  ],
+  "blocked_actions_requiring_approval": [
+    "Atualizar Hermes Agent/runtime/gateway/containers.",
+    "Qualquer WhatsApp/e-mail/campanha/proposta/cliente/fornecedor.",
+    "Qualquer Shopify/Tiny/GMC/Ads/Klaviyo/Supabase/banco/source-of-truth write.",
+    "Qualquer Docker/VPS/gateway/deploy/restart/Traefik/volume/network/root/SSH change.",
+    "Qualquer novo cron produtivo ou entrega externa fora do escopo já aprovado."
+  ],
+  "cron_and_delivery_truth": {
+    "generated": true,
+    "delivered_to_telegram": false,
+    "normal_delivery": "local/silent-OK",
+    "live_cron_summary": {
+      "active_jobs": 36,
+      "paused_jobs": 4,
+      "last_status_non_ok": 0,
+      "active_missing_last_run": 1,
+      "source": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all"
+    },
+    "nightly_ops_audit": {
+      "status": "ok",
+      "scorecard": 100,
+      "critical": 0,
+      "attention": 0,
+      "watch": 0,
+      "values_printed": false
+    },
+    "health_check": {
+      "artifact": "reports/brain-health-check-2026-06-15-02h.json",
+      "fail_count": 0,
+      "warn_count": 0
+    },
+    "brain_improvement_score": {
+      "artifact_md": "reports/brain-improvement-score-2026-06-15-02h.md",
+      "artifact_json": "reports/brain-improvement-score-2026-06-15-02h.json",
+      "overall_score": 100
+    },
+    "hermes_version_truth": {
+      "current_version_observed": "Hermes Agent v0.16.0 / 2026.6.5",
+      "latest_release_checked": false,
+      "gap": "current version is recorded, but latest remote release comparison was not evidenced in the read artifacts"
+    }
+  },
+  "sources": [
+    "reports/daily-consolidation/2026-06-15.md",
+    "reports/hermes-continuous-improvement/2026-06-15.md",
+    "reports/hermes-learning-ledger/2026-06-15.md",
+    "reports/nightly-ops-audit/2026-06-15.md",
+    "reports/hermes-learning-weekly/2026-W25-2026-06-09-a-2026-06-15.md",
+    "reports/memory-hygiene/2026-06-16.json",
+    "reports/lk-shopify-channel-publication/2026-06-15T144617Z-salomon-xt6-channel-publication.json",
+    "areas/lk/sub-areas/stock/receipts/lk-whatsapp-stock-os-runtime-audit-fix-20260615T1938Z.md",
+    "areas/lk/sub-areas/atendimento/receipts/elle-official-chatwoot-public-send-20260615.md",
+    "areas/operacoes/receipts/reminder-os-ingress-repair-whatsapp-stock-responder-20260615.md",
+    "reports/brain-health-check-2026-06-15-02h.json",
+    "reports/brain-improvement-score-2026-06-15-02h.md",
+    "reports/brain-improvement-score-2026-06-15-02h.json",
+    "cron list fallback",
+    "session_search"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "raw_chat_transcripts_excluded": true,
+    "live_facts_verified": true,
+    "values_printed": false
+  }
+}

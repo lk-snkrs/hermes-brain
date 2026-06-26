@@ -1,0 +1,94 @@
+# Batch 17 — read-only candidate scan
+
+- timestamp UTC: `2026-06-03T15:01:37.241694+00:00`
+- source SHA: `3918da96d152`
+- public products read: `1807`
+- covered handles loaded: `220`
+- no Shopify writes / no theme upload
+
+## Candidates
+- `new-balance-9060-extra` / New Balance 9060: clean `49`, covered `17`, uncovered clean `32`, existing_group `True`
+  - `tenis-new-balance-9060-linen-blue-cinza` — 9060 'Linen Blue' Cinza
+  - `tenis-new-balance-9060-reflection-black-suede-casual` — 9060 Reflection Black Suede Bran
+  - `tenis-new-balance-9060-camurca-mesh-cinza-slate-grey-calcium` — 9060 Mesh Slate Grey Calcium Cin
+  - `tenis-new-balance-9060-linen-burgundy-bege` — 9060 'Linen Burgundy' Bege
+  - `tenis-new-balance-9060-grey-day-2025-esportivo-casual` — 9060 Grey Day 2025 Cinza
+  - `tenis-new-balance-9060-driftwood-castlerock-marrom` — 9060 Driftwood Castlerock Marrom
+  - `tenis-new-balance-9060-pearl-grey-linen-azul` — 9060 Pearl Grey Linen Azul
+  - `tenis-new-balance-9060-incense-raincloud-arid-stone-marrom` — 9060 Incense Raincloud Arid Ston
+- `onitsuka-mexico-66-regular-extra` / Onitsuka Mexico 66 regular: clean `42`, covered `10`, uncovered clean `32`, existing_group `True`
+  - `onitsuka-tiger-mexico-66-white` — Mexico 66 White Branco
+  - `tenis-onitsuka-tiger-mexico-66-kids-beige-green-bege` — Mexico 66 Kids Beige/Green Bege
+  - `tenis-onitsuka-tiger-mexico-66-kids-birch-rust-orange-bege-1` — Mexico 66 Kids Birch/Rust Orange
+  - `tenis-onitsuka-tiger-mexico-66-first-kids-white-huddle-yellow-branco` — Mexico 66 First Kids White/Huddl
+  - `tenis-onitsuka-tiger-mexico-66-kids-white-dragon-fruit-branco-1` — Mexico 66 Kids White/Dragon Frui
+  - `tenis-onitsuka-tiger-mexico-66-kids-birch-peacoat-bege` — Mexico 66 Kids Birch/Peacoat Beg
+  - `tenis-onitsuka-tiger-mexico-66-kids-kill-bill-amarelo-1` — Mexico 66 Kids Kill Bill Amarelo
+  - `tenis-onitsuka-tiger-mexico-66-kids-birch-rust-orange-bege` — Mexico 66 Kids Birch/Rust Orange
+- `adidas-samba-og-extra` / Adidas Samba OG: clean `35`, covered `3`, uncovered clean `32`, existing_group `True`
+  - `tenis-adidas-samba-og-crystal-linen-ivory-gum-branco` — Samba OG Crystal Linen Ivory Gum
+  - `tenis-adidas-samba-og-off-white-earth-strata-gum-bege` — Samba OG Off White Earth Strata 
+  - `tenis-adidas-samba-og-snakeskin-collegiate-green-verde` — Samba OG Snakeskin Collegiate Gr
+  - `tenis-adidas-samba-og-hazy-green-sky-tint-verde` — Samba OG Hazy Green Sky Tint Ver
+  - `tenis-adidas-samba-og-better-scarlet-white-vermelho` — Samba OG Better Scarlet White Ve
+  - `tenis-adidas-samba-og-sanda-strata-sky-tint-bege` — Samba OG Sanda Strata Sky Tint B
+  - `tenis-adidas-samba-og-shadow-brown-powder-yellow-marrom` — Samba OG Shadow Brown Powder Yel
+  - `tenis-adidas-samba-og-white-night-indigo-branco` — Samba OG White Night Indigo Bran
+- `nike-sb-dunk-low-extra` / Nike SB Dunk Low: clean `29`, covered `10`, uncovered clean `19`, existing_group `True`
+  - `tenis-nike-sb-dunk-low-pro-triple-white-branco` — Sb Dunk Low Pro Triple White Bra
+  - `tenis-nike-sb-dunk-low-trocadero-gardens-marrom` — Sb Dunk Low Trocadéro Gardens Ma
+  - `nike-sb-dunk-low-pro-iso-dark-russet` — SB Dunk Low Pro ISO Dark Russet 
+  - `nike-sb-dunk-low-pro-classic-green` — SB Dunk Low Pro Classic Green Ve
+  - `nike-sb-dunk-low-prm-paisley-brown` — SB Dunk Low PRM Paisley Brown Ma
+  - `nike-sb-dunk-low-prm-phillies` — SB Dunk Low PRM Phillies Azul
+  - `nike-sb-dunk-low-club-58-gulf` — SB Dunk Low Club 58 Gulf Azul
+  - `nike-sb-dunk-low-vx-1000-camcorder` — SB Dunk Low VX 1000 Camcorder Ci
+- `air-jordan-4-extra` / Air Jordan 4 regular: clean `23`, covered `7`, uncovered clean `16`, existing_group `True`
+  - `tenis-nike-air-jordan-4-cave-stone-and-black-marrom` — Cave Stone and Black Marrom
+  - `tenis-air-jordan-4-retro-military-blue-branco-copia` — Retro Oxidized Green Branco
+  - `tenis-air-jordan-4-retro-forget-me-not-azul` — Retro Forget Me Not Azul
+  - `tenis-air-jordan-4-retro-seafoam-verde` — Retrô Seafoam Verde
+  - `tenis-air-jordan-4-retro-orchid-rosa` — Retro Orchid Rosa
+  - `tenis-air-jordan-4-retro-white-thunder-preto` — Retro White Thunder Preto
+  - `tenis-air-jordan-4-retro-shimmer-rosa` — Retro Shimmer Rosa
+  - `tenis-air-jordan-4-retro-oxidized-branco` — Retro Oxidized Branco
+- `onitsuka-mexico-66-sd-extra` / Onitsuka Mexico 66 SD: clean `24`, covered `11`, uncovered clean `13`, existing_group `True`
+  - `tenis-onitsuka-tiger-mexico-66-sd-exposed-black-black-preto` — Mexico 66 SD Exposed Black/Black
+  - `tenis-onitsuka-tiger-mexico-66-sd-clay-canyon-marrom` — Mexico 66 SD Exposed Clay Canyon
+  - `tenis-onitsuka-tiger-mexico-66-sd-exposed-foam-jade-verde` — Mexico 66 SD Exposed Foam Jade V
+  - `tenis-onitsuka-tiger-mexico-66-sd-exposed-foam-peacoat-azul` — Mexico 66 SD Exposed Foam Peacoa
+  - `tenis-onitsuka-tiger-mexico-66-sd-white-rose-gold-branco` — Mexico 66 SD White/Rose Gold Bra
+  - `tenis-onitsuka-tiger-mexico-66-sd-vin-mantle-green-ivory-verde` — Mexico 66 SD Vin Mantle Green Iv
+  - `tenis-onitsuka-tiger-mexico-66-sd-metallic-series-pale-mint-cream-azul-1` — Mexico 66 SD Metallic Series Pal
+  - `onitsuka-tiger-mexico-66-sd-metallic-series-jade-cream-verde` — Mexico 66 SD Metallic Series Jad
+- `new-balance-530-extra` / New Balance 530: clean `22`, covered `16`, uncovered clean `6`, existing_group `True`
+  - `tenis-new-balance-530-kids-summer-fog-navy-cinza` — 530 Kids Summer Fog Navy Cinza
+  - `tenis-new-balance-530-white-green-matcha-verde` — 530 White Green Matcha Verde
+  - `tenis-new-balance-530-white-chrome-blue-branco` — 530 White Chrome Blue Branco
+  - `tenis-new-balance-530-sea-salt-white-marsh-green-branco` — 530 Sea Salt White Marsh Green B
+  - `tenis-new-balance-530-white-light-crome-blue-branco` — 530 White Light Crome Blue Branc
+  - `tenis-new-balance-530-stoneware-line-branco` — 530 Stoneware Line Branco
+- `adidas-gazelle-indoor-extra` / Adidas Gazelle Indoor regular: clean `15`, covered `10`, uncovered clean `5`, existing_group `True`
+  - `tenis-adidas-gazelle-indoor-collegiate-green-verde-1` — Gazelle Indoor Collegiate Green 
+  - `tenis-adidas-gazelle-indoor-blue-semi-pink-velvet-azul` — Gazelle Indoor Blue Semi Pink Ve
+  - `tenis-adidas-gazelle-indoor-better-scarlet-green-velvet-vermelho` — Gazelle Indoor Better Scarlet Gr
+  - `tenis-adidas-gazelle-indoor-wonder-clay-rosa` — Gazelle Indoor Wonder Clay Rosa
+  - `tenis-adidas-gazelle-indoor-semi-blue-burst-almost-yellow-azul` — Gazelle Indoor Semi Blue Burst A
+- `onitsuka-mexico-66-sabot-extra` / Onitsuka Mexico 66 Sabot: clean `12`, covered `10`, uncovered clean `2`, existing_group `True`
+  - `tenis-onitsuka-tiger-mexico-66-sabot-pure-silver-cream-cinza` — Mexico 66 Sabot Pure Silver Crea
+  - `tenis-onitsuka-tiger-mexico-66-sabot-iron-navy-cream-azul` — Mexico 66 Sabot Iron Navy Cream 
+- `nike-dunk-low-regular` / Nike Dunk Low regular: clean `103`, covered `0`, uncovered clean `103`, existing_group `False`
+  - `tenis-nike-dunk-low-baroque-brown-marrom` — Dunk Low Baroque Brown Marrom
+  - `tenis-nike-dunk-low-denim-turquoise-azul` — Dunk Low Denim Turquoise Azul
+  - `tenis-nike-dunk-low-viotech-rosa` — Dunk Low Viotech Rosa
+  - `tenis-nike-dunk-low-next-nature-aster-pink-rosa` — Dunk Low Next Nature Aster Pink 
+  - `tenis-nike-dunk-flax-suede-marrom` — Dunk Low Flax Suede Marrom
+  - `tenis-nike-dunk-low-suede-panda-preto` — Dunk Low Suede Panda Preto
+  - `tenis-nike-dunk-low-safari-oil-green-verde` — Dunk Low Safari Oil Green Verde
+  - `tenis-nike-dunk-low-safari-phantom-bege` — Dunk Low Safari Phantom Bege
+
+## No-go / caution top
+- `adidas-campus-00s-new`: clean `5`, uncovered `5`, blocked samples `0`
+- `nike-vomero-5-new`: clean `2`, uncovered `2`, blocked samples `1`
+- `new-balance-550-new`: clean `1`, uncovered `1`, blocked samples `2`
+- `nike-air-max-95-new`: clean `0`, uncovered `0`, blocked samples `3`

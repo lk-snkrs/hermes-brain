@@ -1,8 +1,8 @@
 # LK Ecommerce — Mapa
 
-Escopo: Shopify, produtos, estoque, pedidos, clientes, Judge.me, Tiny/Frenet quando aplicável.
+Escopo: Shopify, produtos, pedidos, clientes, Judge.me, Tiny/Frenet quando aplicável. Estoque físico/pronta entrega/best sellers agora pertence ao especialista `lk-stock` em `../stock/`.
 
-Regra: consultar fonte viva antes de responder sobre estoque, preço, pedido ou prazo.
+Regra: consultar fonte viva antes de responder sobre estoque, preço, pedido ou prazo. Para estoque físico, encaminhar ao `lk-stock`: Tiny / `LK | CONTROLE ESTOQUE` é a verdade.
 
 ## Skill canônica
 
@@ -13,3 +13,7 @@ Regra: consultar fonte viva antes de responder sobre estoque, preço, pedido ou 
 - Shopify é fonte para pedidos, clientes, catálogo e contexto de venda.
 - Tiny / `LK | CONTROLE ESTOQUE` é a verdade de estoque.
 - Qualquer write em Shopify, alteração de produto/preço/estoque/tag/metafield, tema, app, webhook ou envio ao cliente exige aprovação explícita de Lucas.
+
+## Projetos Brain OS
+
+- `projetos/orders-checkout/` — hub canônico Brain OS Onda 4 para pedidos, checkout, catálogo e roteamento e-commerce entre especialistas.

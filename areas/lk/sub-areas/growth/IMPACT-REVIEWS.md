@@ -17,6 +17,7 @@ Depois de qualquer execução aprovada em SEO/CRO/GMC/GEO/Shopify SEO fields/tem
 5. Usar apenas fontes read-only.
 6. Declarar limites de amostra, sazonalidade e atraso de dados.
 7. Nunca executar novo write como parte do impact review; gerar apenas approval packets.
+8. Antes de qualquer novo write relacionado a uma mudança já aplicada, consultar/rodar o impact review como gate read-only obrigatório; se o veredito for inconclusivo, parcial ou sem fonte decision-grade, o próximo passo é novo briefing/packet ou nova medição, não execução.
 
 ## Comando padrão
 
@@ -76,3 +77,28 @@ Impact review não autoriza:
 - contato com clientes/fornecedores/time.
 
 Qualquer ação produtiva posterior precisa de novo preview + aprovação explícita do Lucas.
+
+## Impact review criado em 2026-06-05
+
+### Product operational copy cleanup — descrições/SEO/WhatsApp URL
+
+- Mudança executada: 2026-06-05.
+- Escopo: limpeza de termos operacionais customer-facing em product descriptions/body_html, product SEO e WhatsApp URL text; preservados `Sujeito a encomenda`, `sob encomenda`, prazo 4–6 semanas, tags, variantes, estoque, preço, theme e checkout.
+- Baseline: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/reports/impact-reviews/product-description-operational-copy-cleanup-baseline-20260605T191325Z`.
+- QA final: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/reports/product-audits/final-product-operational-terms-qa-20260605T190954Z`.
+- Job D+7 no `lk-growth`: `12b96a478751`.
+- Nome: `LK Growth OS impact review D+7 — product operational copy cleanup`.
+- Schedule: `2026-06-12T19:15:00Z`.
+- Deliver: `telegram` no profile `lk-growth`.
+- Prompt salvo em: `/opt/data/profiles/lk-growth/cron-prompts/product-description-operational-copy-cleanup-d7-20260612.md`.
+- Modo: read-only; qualquer nova alteração vira approval packet, sem write automático.
+
+
+
+## 2026-06-09 — Nike Mind SEO/GEO/schema production merge
+
+- Change: bloco citável + FAQ + FAQPage publicado em production para `/collections/nike-mind-001`.
+- Receipt: `receipts/shopify-production/nike-mind-seo-geo-schema-production-20260609/FINAL_RECEIPT.md`.
+- D+7: 2026-06-16.
+- D+14: 2026-06-23.
+- Métricas: GSC clicks/impressions/CTR/position, GA4 organic sessions, HTML/schema QA.

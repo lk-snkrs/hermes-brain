@@ -21,12 +21,24 @@ python3 scripts/brain_health_check.py --json reports/brain-health-check-YYYY-MM-
 - Token-shaped secrets versionados, incluindo Doppler, Shopify, Supabase PAT, GitHub classic/fine-grained, OpenAI, Mem0, Telegram, FAL, W&B, Tinker e Google OAuth/refresh-token.
 - Links markdown relativos quebrados.
 - Anchors markdown internos quebrados quando o link aponta para `#secao` em arquivo `.md`.
-- Arquivos estruturais obrigatórios do Brain: README, START-HERE, STARTUP, PROTOCOLS, TOOLS, ARCHITECTURE, changelog, roadmap, índices, memória e segurança.
+- Arquivos estruturais obrigatórios do Brain: README, START-HERE, STARTUP, PROTOCOLS, TOOLS, ARCHITECTURE, changelog, roadmap, índices, memória, `memories/MAPA.md`, `memories/hot.md` e segurança.
 - Arquivos obrigatórios por agente: `SOUL.md`, `AGENTS.md`, `TOOLS.md`, `USER.md`, `MEMORY.md`, `HEARTBEAT.md`.
 - `MAPA.md` obrigatório em cada área e subárea.
+- Pastas `areas/**/decisions/*.md` precisam estar navegáveis a partir do `MAPA.md` local da área/subárea.
 - Rotinas em `areas/**/rotinas/*.md` ausentes de `empresa/rotinas/_index.md`.
 - Skills canônicas ausentes de `empresa/skills/_index.md`.
 - Skills de navegação por área que apontam para skill canônica inexistente.
+
+## Gate de governança de contexto
+
+Para LC Mordomo OS e novos subagentes, o health check documental deve ser interpretado também como guard de **contexto mínimo + busca sob demanda**:
+
+- decisões/PRDs/rotinas de subagente devem estar indexadas em `MAPA.md`;
+- subagentes recorrentes devem apontar para registry/rotina/PRD em vez de depender de memória solta;
+- handoff/receipt deve ser compacto e navegável;
+- docs que proponham “carregar tudo”, “memória infinita” ou histórico bruto inteiro devem ser tratados como drift de governança, salvo se marcados como hipótese/rejeitado/legacy.
+
+O script atual ainda não valida semanticamente todos esses pontos; quando mexer em subagentes, rodar o health check técnico e fazer revisão manual deste gate no relatório/commit.
 
 ## Quando rodar
 

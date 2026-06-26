@@ -1,0 +1,109 @@
+{
+  "timestamp_utc": "2026-05-25T11:33:21.442090+00:00",
+  "scope": "Block 3 — migrate unequivocal cron owners to specialist profiles",
+  "moved": [
+    {
+      "id": "d4c26da4cd48",
+      "name": "LK GMC Review read-only mandatory delivery",
+      "from": "main",
+      "to": "lk-growth",
+      "script": "lk_gmc_review_watchdog.py",
+      "script_copy": "/opt/data/profiles/lk-growth/scripts/lk_gmc_review_watchdog.py",
+      "reason": "Growth/GMC pertence ao LK Growth",
+      "deliver": "local",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * 4",
+        "display": "0 12 * * 4"
+      }
+    },
+    {
+      "id": "71b2636add5d",
+      "name": "LK WhatsApp Hermes responder watchdog",
+      "from": "main",
+      "to": "mordomo",
+      "script": "lk_hermes_whatsapp_watchdog.sh",
+      "script_copy": "/opt/data/profiles/mordomo/scripts/lk_hermes_whatsapp_watchdog.sh",
+      "reason": "watcher de atendimento/WhatsApp deve ficar no Mordomo/LK atendimento",
+      "deliver": "local",
+      "schedule": {
+        "kind": "interval",
+        "minutes": 1,
+        "display": "every 1m"
+      }
+    },
+    {
+      "id": "a5d7a392eed9",
+      "name": "LK WhatsApp Hermes responder regression watchdog",
+      "from": "main",
+      "to": "mordomo",
+      "script": "lk_hermes_whatsapp_responder_selftest.sh",
+      "script_copy": "/opt/data/profiles/mordomo/scripts/lk_hermes_whatsapp_responder_selftest.sh",
+      "reason": "regression watchdog de atendimento/WhatsApp deve ficar no Mordomo/LK atendimento",
+      "deliver": "local",
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/30 * * * *",
+        "display": "*/30 * * * *"
+      }
+    }
+  ],
+  "backups": {
+    "main": {
+      "registry": "/opt/data/cron/jobs.json",
+      "before": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/main-jobs.before.json",
+      "after": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/main-jobs.after.json",
+      "sha256_before": "f62296eb78b7923b96f6e107a29b05bc38cc2a2d419ad61d63a8ff1b117da0e7",
+      "sha256_after": "d37386dacd94e3c929389d4ab69c84adbf332c4ac59e809ee81c4d1fbccf9e5c"
+    },
+    "lk-growth": {
+      "registry": "/opt/data/profiles/lk-growth/cron/jobs.json",
+      "before": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/lk-growth-jobs.before.json",
+      "after": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/lk-growth-jobs.after.json",
+      "sha256_before": "318746a57930a17720a9c2e173bf75ab53efa035d529526ad1ed81376143091d",
+      "sha256_after": "ef26cb549d379b87693caac6c80d03710a6d912c2308e921cfda468862b4a1d1"
+    },
+    "mordomo": {
+      "registry": "/opt/data/profiles/mordomo/cron/jobs.json",
+      "before": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/mordomo-jobs.before.json",
+      "after": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration/mordomo-jobs.after.json",
+      "sha256_before": "b12e15e2020e3dd02da60391727ae4b1f6d584edda74e0e976ce8d4f85510007",
+      "sha256_after": "27e3a0496844f87e70b8ea071e0dce9c4f853043cae226c3c091d852e5ae83bd"
+    }
+  },
+  "verify": {
+    "main": {
+      "total": 23,
+      "active": 23,
+      "paused": 0,
+      "target_ids_present": [
+        "d4c26da4cd48",
+        "71b2636add5d",
+        "a5d7a392eed9"
+      ]
+    },
+    "lk-growth": {
+      "total": 23,
+      "active": 23,
+      "paused": 0,
+      "target_ids_present": [
+        "d4c26da4cd48"
+      ]
+    },
+    "mordomo": {
+      "total": 13,
+      "active": 13,
+      "paused": 0,
+      "target_ids_present": [
+        "71b2636add5d",
+        "a5d7a392eed9"
+      ]
+    }
+  },
+  "not_touched": [
+    "gateway/Docker/VPS",
+    "external systems",
+    "schedules/prompts changed intentionally: none"
+  ],
+  "rollback": "copy each *-jobs.before.json back to its registry path; copied scripts can be left harmless or removed after registry rollback"
+}

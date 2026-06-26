@@ -1,0 +1,3786 @@
+{
+  "generated_at": "2026-05-14T20:00:36.350253+00:00",
+  "status": "completed_with_review",
+  "input_mismatches": 152,
+  "triage_counts": {
+    "needs_patch_price": 62,
+    "no_action_current_matches_shopify": 42,
+    "needs_patch_sale": 43,
+    "review_clear_salePrice_no_shopify_sale": 5
+  },
+  "actions_count": 105,
+  "execution_counts": {
+    "patched": 105
+  },
+  "verify_counts": {
+    "read": 105
+  },
+  "verify_matches": 0,
+  "verify_mismatches": 105,
+  "rollback_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-price-mismatch-fresh-repair-rollback-20260514T195302Z.json",
+  "progress_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-price-mismatch-fresh-repair-progress-20260514T195302Z.jsonl",
+  "triage": [
+    {
+      "product_id": "online:pt:BR:01424-002-2",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44413386457310"
+    },
+    {
+      "product_id": "online:pt:BR:205759610-9",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "44834189738206",
+      "shopify_price": "1399.99",
+      "shopify_compareAtPrice": "749.90",
+      "merchant_price": "1399.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:553558053-1",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44677265162462"
+    },
+    {
+      "product_id": "online:pt:BR:553558053-42",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44677265326302"
+    },
+    {
+      "product_id": "online:pt:BR:553558140-7",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "44670918361310",
+      "shopify_price": "1799.99",
+      "shopify_compareAtPrice": "1599.99",
+      "merchant_price": "1799.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:555088108",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "45711228371166"
+    },
+    {
+      "product_id": "online:pt:BR:555088108-1",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44513881653470"
+    },
+    {
+      "product_id": "online:pt:BR:555088108-12",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44513881817310"
+    },
+    {
+      "product_id": "online:pt:BR:555088134-40",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44265048047838"
+    },
+    {
+      "product_id": "online:pt:BR:555088134-44",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44265048080606"
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-5",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44986048282846"
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-7",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44986048348382"
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-8",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44986048381150"
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-9",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44986048413918"
+    },
+    {
+      "product_id": "online:pt:BR:CDGP1-1",
+      "bucket": "review_clear_salePrice_no_shopify_sale",
+      "legacy_variant": "46122946789598",
+      "shopify_price": "1799.99",
+      "shopify_compareAtPrice": "1799.99",
+      "merchant_price": "1199.99",
+      "merchant_salePrice": "839.99"
+    },
+    {
+      "product_id": "online:pt:BR:CDGP1-2",
+      "bucket": "review_clear_salePrice_no_shopify_sale",
+      "legacy_variant": "46122946822366",
+      "shopify_price": "1799.99",
+      "shopify_compareAtPrice": "1799.99",
+      "merchant_price": "1199.99",
+      "merchant_salePrice": "839.99"
+    },
+    {
+      "product_id": "online:pt:BR:CJ5378700-36",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265041690846"
+    },
+    {
+      "product_id": "online:pt:BR:CJ5378700-37",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265041723614"
+    },
+    {
+      "product_id": "online:pt:BR:CJ5378700-40",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265041821918"
+    },
+    {
+      "product_id": "online:pt:BR:CP9652-6",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "46183155269854"
+    },
+    {
+      "product_id": "online:pt:BR:CU1726100",
+      "bucket": "review_clear_salePrice_no_shopify_sale",
+      "legacy_variant": "45692182364382",
+      "shopify_price": "2199.99",
+      "shopify_compareAtPrice": "2199.99",
+      "merchant_price": "1999.99",
+      "merchant_salePrice": "1899.99"
+    },
+    {
+      "product_id": "online:pt:BR:CU1726100-36",
+      "bucket": "review_clear_salePrice_no_shopify_sale",
+      "legacy_variant": "44265032220894",
+      "shopify_price": "2199.99",
+      "shopify_compareAtPrice": "2199.99",
+      "merchant_price": "1999.99",
+      "merchant_salePrice": "1899.99"
+    },
+    {
+      "product_id": "online:pt:BR:CU1726100-42",
+      "bucket": "review_clear_salePrice_no_shopify_sale",
+      "legacy_variant": "44265032351966",
+      "shopify_price": "2199.99",
+      "shopify_compareAtPrice": "2199.99",
+      "merchant_price": "1999.99",
+      "merchant_salePrice": "1899.99"
+    },
+    {
+      "product_id": "online:pt:BR:CU3244100-41",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265043362014"
+    },
+    {
+      "product_id": "online:pt:BR:CZ2239600-3",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44274675187934"
+    },
+    {
+      "product_id": "online:pt:BR:DC0774042",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "45346493890782"
+    },
+    {
+      "product_id": "online:pt:BR:DC0774141-37",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44265073934558"
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-1",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265069740254"
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-3",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265069805790"
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-35",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265069773022"
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-39",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265069904094"
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-4",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265069838558"
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-7",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265069936862"
+    },
+    {
+      "product_id": "online:pt:BR:DN1803300-37",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265042804958"
+    },
+    {
+      "product_id": "online:pt:BR:DN1803300-44",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265043132638"
+    },
+    {
+      "product_id": "online:pt:BR:DN1803300-45",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265043165406"
+    },
+    {
+      "product_id": "online:pt:BR:DQ4040400-39",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265026748638"
+    },
+    {
+      "product_id": "online:pt:BR:DQ8394301-1",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44265070100702"
+    },
+    {
+      "product_id": "online:pt:BR:DQ8394301-38",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44265070231774"
+    },
+    {
+      "product_id": "online:pt:BR:DQ8394301-6",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44265070264542"
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-2",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44515819421918"
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-4",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44515819487454"
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-5",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44515819520222"
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-6",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44515819552990"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-1",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "45697012793566"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-2",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "45697012826334"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-3",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "45697012859102"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-4",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "45697012891870"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-6",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "45697012957406"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485031-3",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44269137264862"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485031-5",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44269137330398"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44846816657630"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-2",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44698443808990"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-5",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44698443907294"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-gs-1",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44698444005598"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-gs-2",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44698444071134"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-gs-7",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "45002108403934"
+    },
+    {
+      "product_id": "online:pt:BR:FB9927200-1",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44656966729950"
+    },
+    {
+      "product_id": "online:pt:BR:FB9927200-7",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44656966926558"
+    },
+    {
+      "product_id": "online:pt:BR:FD2596600-34",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44513880080606"
+    },
+    {
+      "product_id": "online:pt:BR:FD2596600-7",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44513880277214"
+    },
+    {
+      "product_id": "online:pt:BR:FD8776800",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "45341352198366",
+      "shopify_price": "4799.99",
+      "shopify_compareAtPrice": "2999.99",
+      "merchant_price": "4799.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:FD8776800-41",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44265066823902"
+    },
+    {
+      "product_id": "online:pt:BR:FD8776800-8",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "45341352231134"
+    },
+    {
+      "product_id": "online:pt:BR:FJ4555100",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44274654478558"
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-4",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "45410515124446"
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-7",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "45410515222750"
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-8",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "45410515255518"
+    },
+    {
+      "product_id": "online:pt:BR:FQ9117-400-5",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "45102410989790"
+    },
+    {
+      "product_id": "online:pt:BR:FQ9117-400-6",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "45102411022558"
+    },
+    {
+      "product_id": "online:pt:BR:FZ5045091",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "45502592418014"
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-40",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265075376350"
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-41",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265075409118"
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-42",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265075441886"
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-45",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265075540190"
+    },
+    {
+      "product_id": "online:pt:BR:HQ2060-41",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265078751454"
+    },
+    {
+      "product_id": "online:pt:BR:HQ2060-42",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265078784222"
+    },
+    {
+      "product_id": "online:pt:BR:HQ6447",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44265017245918"
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-211",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "47885478035678"
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-212",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "47885478068446"
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-213",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "47885478101214"
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-119",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "47885482262750"
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-1",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598953890014",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-10",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598954021086",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-2",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598953922782",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-3",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598953955550",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-4",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598953988318",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-5",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598954053854",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-6",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598954086622",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-7",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598954119390",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-8",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598954152158",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-9",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598954184926",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-600-1",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598963097822",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-600-2",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598963130590",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-600-4",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598963196126",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-600-7",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598963294430",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-600-8",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598963327198",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-600-9",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598963359966",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-1",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "47598961295582"
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-11",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598961590494",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-14",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47703707648222",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-15",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47703707680990",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-2",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598961328350",
+      "shopify_price": "8499.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "8499.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-4",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598961393886",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-5",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598961426654",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-6",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598961459422",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-7",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598961492190",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-8",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598961524958",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-9",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47598961557726",
+      "shopify_price": "6999.99",
+      "shopify_compareAtPrice": "3999.99",
+      "merchant_price": "6999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:ID0440-1",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "45002227712222"
+    },
+    {
+      "product_id": "online:pt:BR:ID0440-3",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "45002227777758"
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-1",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44303751708894"
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-2",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44303751741662"
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-3",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44303751774430"
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-8",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "45741657096414"
+    },
+    {
+      "product_id": "online:pt:BR:IF9734-9",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "45651973538014"
+    },
+    {
+      "product_id": "online:pt:BR:IG5932",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "45734219612382"
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-4",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44325425971422"
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-5",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44325426004190"
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-6",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "44325426036958"
+    },
+    {
+      "product_id": "online:pt:BR:PLAYPRINTED-3",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "46122977427678"
+    },
+    {
+      "product_id": "online:pt:BR:TB010061-713-4",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "47670408478942"
+    },
+    {
+      "product_id": "online:pt:BR:TB010061-713-5",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "47670408511710"
+    },
+    {
+      "product_id": "online:pt:BR:TB010061-713-7",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "47670408577246"
+    },
+    {
+      "product_id": "online:pt:BR:U9060504",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "47892215103710"
+    },
+    {
+      "product_id": "online:pt:BR:U9060505",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "47892215136478"
+    },
+    {
+      "product_id": "online:pt:BR:U9060506",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "47892215169246"
+    },
+    {
+      "product_id": "online:pt:BR:U9060507",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "47892215202014"
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-1",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47542843343070",
+      "shopify_price": "2799.99",
+      "shopify_compareAtPrice": "2399.99",
+      "merchant_price": "2799.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-10",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47542843637982",
+      "shopify_price": "2799.99",
+      "shopify_compareAtPrice": "2399.99",
+      "merchant_price": "2799.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-11",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47542843670750",
+      "shopify_price": "2799.99",
+      "shopify_compareAtPrice": "2399.99",
+      "merchant_price": "2799.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-2",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47542843375838",
+      "shopify_price": "2799.99",
+      "shopify_compareAtPrice": "2399.99",
+      "merchant_price": "2799.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-3",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47542843408606",
+      "shopify_price": "2799.99",
+      "shopify_compareAtPrice": "2399.99",
+      "merchant_price": "2799.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-4",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47542843441374",
+      "shopify_price": "2799.99",
+      "shopify_compareAtPrice": "2399.99",
+      "merchant_price": "2799.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-5",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47542843474142",
+      "shopify_price": "2799.99",
+      "shopify_compareAtPrice": "2399.99",
+      "merchant_price": "2799.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-6",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47542843506910",
+      "shopify_price": "2799.99",
+      "shopify_compareAtPrice": "2399.99",
+      "merchant_price": "2799.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-7",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47542843539678",
+      "shopify_price": "2799.99",
+      "shopify_compareAtPrice": "2399.99",
+      "merchant_price": "2799.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-8",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47542843572446",
+      "shopify_price": "2799.99",
+      "shopify_compareAtPrice": "2399.99",
+      "merchant_price": "2799.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-9",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "47542843605214",
+      "shopify_price": "2799.99",
+      "shopify_compareAtPrice": "2399.99",
+      "merchant_price": "2799.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:VN0009QC6BT",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "44755597361374"
+    },
+    {
+      "product_id": "online:pt:BR:fn5030-001-7",
+      "bucket": "needs_patch_sale",
+      "legacy_variant": "45188499177694"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-1",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "46492434301150"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-12",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "46492434661598"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-14",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "46492434727134"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-15",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "46492434759902"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-3",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "46492434366686",
+      "shopify_price": "999.99",
+      "shopify_compareAtPrice": "999.99",
+      "merchant_price": "999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-4",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "46492434399454"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-5",
+      "bucket": "no_action_current_matches_shopify",
+      "legacy_variant": "46492434432222",
+      "shopify_price": "999.99",
+      "shopify_compareAtPrice": "999.99",
+      "merchant_price": "999.99",
+      "merchant_salePrice": null
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-6",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "46492434464990"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-7",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "46492434497758"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-8",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "46492434530526"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-9",
+      "bucket": "needs_patch_price",
+      "legacy_variant": "46492434563294"
+    }
+  ],
+  "executions": [
+    {
+      "product_id": "online:pt:BR:01424-002-2",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "8999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~01424-002-2"
+    },
+    {
+      "product_id": "online:pt:BR:553558053-1",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2199990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "1999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~553558053-1"
+    },
+    {
+      "product_id": "online:pt:BR:553558053-42",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2199990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "1999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~553558053-42"
+    },
+    {
+      "product_id": "online:pt:BR:555088108",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2799990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~555088108"
+    },
+    {
+      "product_id": "online:pt:BR:555088108-1",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2799990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~555088108-1"
+    },
+    {
+      "product_id": "online:pt:BR:555088108-12",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2799990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~555088108-12"
+    },
+    {
+      "product_id": "online:pt:BR:555088134-40",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~555088134-40"
+    },
+    {
+      "product_id": "online:pt:BR:555088134-44",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~555088134-44"
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-5",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2749990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~AQ9129-170-5"
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-7",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3349990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~AQ9129-170-7"
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-8",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2749990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~AQ9129-170-8"
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-9",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3349990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~AQ9129-170-9"
+    },
+    {
+      "product_id": "online:pt:BR:CJ5378700-36",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "6099990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~CJ5378700-36"
+    },
+    {
+      "product_id": "online:pt:BR:CJ5378700-37",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "5899990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~CJ5378700-37"
+    },
+    {
+      "product_id": "online:pt:BR:CJ5378700-40",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "8499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~CJ5378700-40"
+    },
+    {
+      "product_id": "online:pt:BR:CP9652-6",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "4999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~CP9652-6"
+    },
+    {
+      "product_id": "online:pt:BR:CU3244100-41",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "22999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~CU3244100-41"
+    },
+    {
+      "product_id": "online:pt:BR:CZ2239600-3",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "6999900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~CZ2239600-3"
+    },
+    {
+      "product_id": "online:pt:BR:DC0774042",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2449990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DC0774042"
+    },
+    {
+      "product_id": "online:pt:BR:DC0774141-37",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2199990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "1999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DC0774141-37"
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-1",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DD9335641-1"
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-3",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DD9335641-3"
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-35",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DD9335641-35"
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-39",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DD9335641-39"
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-4",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DD9335641-4"
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-7",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DD9335641-7"
+    },
+    {
+      "product_id": "online:pt:BR:DN1803300-37",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DN1803300-37"
+    },
+    {
+      "product_id": "online:pt:BR:DN1803300-44",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1749990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DN1803300-44"
+    },
+    {
+      "product_id": "online:pt:BR:DN1803300-45",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1699990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DN1803300-45"
+    },
+    {
+      "product_id": "online:pt:BR:DQ4040400-39",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DQ4040400-39"
+    },
+    {
+      "product_id": "online:pt:BR:DQ8394301-1",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2249990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DQ8394301-1"
+    },
+    {
+      "product_id": "online:pt:BR:DQ8394301-38",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2249990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DQ8394301-38"
+    },
+    {
+      "product_id": "online:pt:BR:DQ8394301-6",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2249990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DQ8394301-6"
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-2",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "1799990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DV1299104-2"
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-4",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "1799990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DV1299104-4"
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-5",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "1799990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DV1299104-5"
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-6",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "1799990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DV1299104-6"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-1",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DZ5485020-1"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-2",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DZ5485020-2"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-3",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DZ5485020-3"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-4",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DZ5485020-4"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-6",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DZ5485020-6"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485031-3",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2400000000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2299900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DZ5485031-3"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485031-5",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2400000000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2399900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DZ5485031-5"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2249900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DZ5485400"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-2",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2249900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DZ5485400-2"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-5",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "1999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DZ5485400-5"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-gs-1",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2249900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DZ5485400-gs-1"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-gs-2",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "1999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DZ5485400-gs-2"
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-gs-7",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2499990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2249900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~DZ5485400-gs-7"
+    },
+    {
+      "product_id": "online:pt:BR:FB9927200-1",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2799900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~FB9927200-1"
+    },
+    {
+      "product_id": "online:pt:BR:FB9927200-7",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2799900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~FB9927200-7"
+    },
+    {
+      "product_id": "online:pt:BR:FD2596600-34",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~FD2596600-34"
+    },
+    {
+      "product_id": "online:pt:BR:FD2596600-7",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~FD2596600-7"
+    },
+    {
+      "product_id": "online:pt:BR:FD8776800-41",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "6999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "5999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~FD8776800-41"
+    },
+    {
+      "product_id": "online:pt:BR:FD8776800-8",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "6999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "4799990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~FD8776800-8"
+    },
+    {
+      "product_id": "online:pt:BR:FJ4555100",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2199990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "1999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~FJ4555100"
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-4",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "5999900000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "4999900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~FN0344-001-4"
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-7",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "5999900000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "4999900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~FN0344-001-7"
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-8",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "5999900000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "4999900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~FN0344-001-8"
+    },
+    {
+      "product_id": "online:pt:BR:FQ9117-400-5",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~FQ9117-400-5"
+    },
+    {
+      "product_id": "online:pt:BR:FQ9117-400-6",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2999900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~FQ9117-400-6"
+    },
+    {
+      "product_id": "online:pt:BR:FZ5045091",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~FZ5045091"
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-40",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3999900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~GY7164-40"
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-41",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3999900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~GY7164-41"
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-42",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3999900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~GY7164-42"
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-45",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3999900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~GY7164-45"
+    },
+    {
+      "product_id": "online:pt:BR:HQ2060-41",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3999900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~HQ2060-41"
+    },
+    {
+      "product_id": "online:pt:BR:HQ2060-42",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3999900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~HQ2060-42"
+    },
+    {
+      "product_id": "online:pt:BR:HQ6447",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1799990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~HQ6447"
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-211",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~HQ6998-211"
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-212",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~HQ6998-212"
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-213",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~HQ6998-213"
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-119",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "4499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~HV0823-119"
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-1",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "8499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~HV8547-700-1"
+    },
+    {
+      "product_id": "online:pt:BR:ID0440-1",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1749990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~ID0440-1"
+    },
+    {
+      "product_id": "online:pt:BR:ID0440-3",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1749990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~ID0440-3"
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-1",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2749900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~ID2529-1"
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-2",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2749900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~ID2529-2"
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-3",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2749900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~ID2529-3"
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-8",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2749900000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~ID2529-8"
+    },
+    {
+      "product_id": "online:pt:BR:IF9734-9",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "4499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IF9734-9"
+    },
+    {
+      "product_id": "online:pt:BR:IG5932",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1799990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IG5932"
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-4",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1799990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IG5932-4"
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-5",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1799990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IG5932-5"
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-6",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1799990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IG5932-6"
+    },
+    {
+      "product_id": "online:pt:BR:PLAYPRINTED-3",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1199990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "839990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~PLAYPRINTED-3"
+    },
+    {
+      "product_id": "online:pt:BR:TB010061-713-4",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~TB010061-713-4"
+    },
+    {
+      "product_id": "online:pt:BR:TB010061-713-5",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~TB010061-713-5"
+    },
+    {
+      "product_id": "online:pt:BR:TB010061-713-7",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3999990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "2999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~TB010061-713-7"
+    },
+    {
+      "product_id": "online:pt:BR:U9060504",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060504"
+    },
+    {
+      "product_id": "online:pt:BR:U9060505",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060505"
+    },
+    {
+      "product_id": "online:pt:BR:U9060506",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060506"
+    },
+    {
+      "product_id": "online:pt:BR:U9060507",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "3499990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060507"
+    },
+    {
+      "product_id": "online:pt:BR:VN0009QC6BT",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "1199900000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~VN0009QC6BT"
+    },
+    {
+      "product_id": "online:pt:BR:fn5030-001-7",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "2199990000",
+          "currencyCode": "BRL"
+        },
+        "salePrice": {
+          "amountMicros": "1999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~fn5030-001-7"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-1",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~w6334r-1"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-12",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~w6334r-12"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-14",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~w6334r-14"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-15",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~w6334r-15"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-4",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~w6334r-4"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-6",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~w6334r-6"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-7",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~w6334r-7"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-8",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~w6334r-8"
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-9",
+      "status": "patched",
+      "attrs": {
+        "price": {
+          "amountMicros": "999990000",
+          "currencyCode": "BRL"
+        }
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~w6334r-9"
+    }
+  ],
+  "verify": [
+    {
+      "product_id": "online:pt:BR:01424-002-2",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "8999.99",
+          "actual": "5999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:553558053-1",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2199.99",
+          "actual": "2199.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:553558053-42",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2199.99",
+          "actual": "2199.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088108",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2999.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2799.99",
+          "actual": "2449.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088108-1",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2999.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2799.99",
+          "actual": "2449.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088108-12",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2999.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2799.99",
+          "actual": "2449.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088134-40",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "3499.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088134-44",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "3499.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-5",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2749.99",
+          "actual": "2599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-7",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3349.99",
+          "actual": "2599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-8",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2749.99",
+          "actual": "2599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-9",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3349.99",
+          "actual": "2599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CJ5378700-36",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "6099.99",
+          "actual": "5499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CJ5378700-37",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "5899.99",
+          "actual": "5499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CJ5378700-40",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "8499.99",
+          "actual": "5499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CP9652-6",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "4999.99",
+          "actual": "4999.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "3499.99",
+          "actual": "2999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CU3244100-41",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "22999.99",
+          "actual": "14999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CZ2239600-3",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "6999.90",
+          "actual": "4699.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DC0774042",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2449.99",
+          "actual": "1999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DC0774141-37",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2199.99",
+          "actual": "2199.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-1",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-3",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-35",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-39",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-4",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-7",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DN1803300-37",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DN1803300-44",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1749.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DN1803300-45",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1699.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DQ4040400-39",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DQ8394301-1",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "2499.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2249.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DQ8394301-38",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "2499.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2249.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DQ8394301-6",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "2499.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2249.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-2",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1999.99",
+          "actual": "1999.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1799.99",
+          "actual": "1749.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-4",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1999.99",
+          "actual": "1999.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1799.99",
+          "actual": "1749.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-5",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1999.99",
+          "actual": "1999.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1799.99",
+          "actual": "1749.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-6",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1999.99",
+          "actual": "1999.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1799.99",
+          "actual": "1749.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-1",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2999.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-2",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2999.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-3",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2999.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-4",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2999.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-6",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2999.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485031-3",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2400.00",
+          "actual": "2400.00",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2299.90",
+          "actual": "2199.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485031-5",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2400.00",
+          "actual": "2400.00",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2399.90",
+          "actual": "2199.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "2499.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2249.90",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-2",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "2499.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2249.90",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-5",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "2499.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-gs-1",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "2499.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2249.90",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-gs-2",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "2499.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-gs-7",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "2499.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2249.90",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FB9927200-1",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2799.90",
+          "actual": "2499.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FB9927200-7",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2799.90",
+          "actual": "2499.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FD2596600-34",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2499.99",
+          "actual": "2099.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FD2596600-7",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2499.99",
+          "actual": "2099.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FD8776800-41",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "6999.99",
+          "actual": "3499.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "5999.99",
+          "actual": null,
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FD8776800-8",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "6999.99",
+          "actual": "3499.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "4799.99",
+          "actual": null,
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FJ4555100",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2199.99",
+          "actual": "2099.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "1999.99",
+          "actual": "1999.99",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-4",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "5999.90",
+          "actual": "5999.90",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "4999.90",
+          "actual": "4749.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-7",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "5999.90",
+          "actual": "5999.90",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "4999.90",
+          "actual": "4749.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-8",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "5999.90",
+          "actual": "5999.90",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "4999.90",
+          "actual": "4749.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FQ9117-400-5",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.90",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FQ9117-400-6",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.90",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FZ5045091",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-40",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.90",
+          "actual": "2799.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-41",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.90",
+          "actual": "2799.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-42",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.90",
+          "actual": "2799.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-45",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.90",
+          "actual": "2799.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HQ2060-41",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.90",
+          "actual": "3499.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HQ2060-42",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.90",
+          "actual": "3499.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HQ6447",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "1499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-211",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-212",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-213",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-119",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "4499.99",
+          "actual": "3499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-1",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "8499.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:ID0440-1",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1749.99",
+          "actual": "1449.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:ID0440-3",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1749.99",
+          "actual": "1449.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-1",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2749.90",
+          "actual": "2249.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-2",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2749.90",
+          "actual": "2249.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-3",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2749.90",
+          "actual": "2249.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-8",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2749.90",
+          "actual": "2249.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:IF9734-9",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "4499.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:IG5932",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-4",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-5",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-6",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:PLAYPRINTED-3",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1199.99",
+          "actual": "999.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "839.99",
+          "actual": "839.99",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:TB010061-713-4",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "3999.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:TB010061-713-5",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "3999.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:TB010061-713-7",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "3999.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060504",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2399.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060505",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2399.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060506",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2399.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060507",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2399.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:VN0009QC6BT",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1199.90",
+          "actual": "1199.90",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "999.99",
+          "actual": "899.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:fn5030-001-7",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2199.99",
+          "actual": "2199.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1999.99",
+          "actual": "1899.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-1",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-12",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-14",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-15",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-4",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-6",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-7",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-8",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-9",
+      "status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    }
+  ],
+  "not_performed": [
+    "Shopify write",
+    "Tiny write",
+    "feed fetch/upload",
+    "campaign/message/send",
+    "bulk reapply",
+    "salePrice clearing for no-Shopify-sale rows"
+  ]
+}

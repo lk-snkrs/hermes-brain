@@ -1,0 +1,150 @@
+{
+  "operational_date": "2026-06-26",
+  "generated_at_utc": "2026-06-26T04:00:57Z",
+  "status": "ok",
+  "executive_summary": "Fechamento 01h BRT consolidou Task OS/Handoff, correção aprovada de webhook Shopify LK e melhorias Memory OS/Honcho. Brain Health 02h FAIL=0/WARN=0; Brain Improvement Score 100/100; crons vivos 44 totais, 40 ativos, 4 pausados, ativos non-ok 0.",
+  "material_changes": [
+    {
+      "domain": "Hermes Geral / Task OS",
+      "summary": "Task OS universal documentado, propagado e carregado em runtime; Main/default reiniciado/validado; kanban-worker preflight OK em 17/17 profiles; guard anti-stale aplicado ao fallback de goal-mode.",
+      "evidence": [
+        "reports/governance/kanban-task-os-all-readiness-activation-2026-06-25.md",
+        "reports/governance/hermes-task-os-main-default-restart-activation-2026-06-25.md"
+      ]
+    },
+    {
+      "domain": "LK Shopify",
+      "summary": "Dois webhooks Shopify lk-shopify-tiny-stock-sync foram corrigidos para a URL canônica hermes-webhooks, com readback/probe/log monitor OK.",
+      "evidence": [
+        "reports/governance/shopify-webhook-canonical-url-fix-lk-shopify-tiny-stock-sync-2026-06-25.md"
+      ]
+    },
+    {
+      "domain": "LK Shopify",
+      "summary": "Coleção ASICS Gel NYC criada/ativada com 1 produto ACTIVE; NB740 bloqueada por ausência de produto ACTIVE correspondente.",
+      "evidence": [
+        "areas/lk/sub-areas/shopify/receipts/nb740-asics-gel-nyc-collections-20260626T010324Z.md"
+      ]
+    },
+    {
+      "domain": "Memory OS / Honcho",
+      "summary": "Memory OS verde; adoption ledger compactado/tail-only validado; boot memories >80% compactadas; Honcho filtro/higiene preventiva aplicado; semantic contamination histórica segue attention.",
+      "evidence": [
+        "reports/governance/memory-os-audit-2026-06-26.md",
+        "reports/governance/memory-os-phase123-followup-execution-2026-06-26.md",
+        "reports/governance/honcho-memory-os-full-improvement-2026-06-26.md",
+        "reports/governance/honcho-docs-usage-verification-2026-06-26.md"
+      ]
+    }
+  ],
+  "incidents": [],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Aprovação escopada para corrigir 2 webhooks Shopify lk-shopify-tiny-stock-sync para a URL canônica hermes-webhooks.lucascimino.com.",
+      "scope": "Alterar apenas address dos webhooks orders/paid e orders/cancelled; sem produto, estoque, preço, Tiny, Klaviyo ou mensagem externa.",
+      "evidence": "reports/governance/shopify-webhook-canonical-url-fix-lk-shopify-tiny-stock-sync-2026-06-25.md"
+    },
+    {
+      "decision": "Task OS universal deve reger trabalho operacional não-trivial em todos os agentes Hermes.",
+      "scope": "Tarefas rastreáveis/handoff/receipt sem transformar perguntas simples em card obrigatório; Telegram só para decisão/bloqueio/falha/aprovação acionável.",
+      "evidence": "reports/governance/kanban-task-os-all-readiness-activation-2026-06-25.md"
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "type": "approval",
+      "summary": "Shopify webhook fix aprovado e executado no escopo exato.",
+      "exclusions": ["produto", "estoque", "Tiny", "preço", "Klaviyo", "mensagem externa", "tema"],
+      "learn_pattern": "Aprovação ampla não extrapola escopo; registrar exclusões/readback/rollback/receipt."
+    },
+    {
+      "type": "correction_pattern",
+      "summary": "Honcho não deve tratar eventos Shopify/pedidos/clientes como fatos pessoais do Lucas.",
+      "exclusions": ["delete heurístico sem IDs", "usar Honcho como fonte de verdade"],
+      "learn_pattern": "Brain/fonte viva é canônica; Honcho é auxiliar governado."
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Task OS universal deve ser comportamento padrão para trabalho operacional não-trivial.",
+      "recommended_destination": "AGENTS/profile docs, Task OS routines, kanban skills",
+      "action_applied": "Documentado/propagado; runtime validado; continuar medindo uso real via receipts/handoffs."
+    },
+    {
+      "learning": "Honcho útil tecnicamente, mas precisa filtro contra payload operacional e governança semântica.",
+      "recommended_destination": "honcho-memory-operations skill, Memory OS routines, future provider config",
+      "action_applied": "Filtro/higiene/scorers/reports aplicados; cleanup histórico bloqueado até IDs/rollback."
+    },
+    {
+      "learning": "Webhook Shopify deve passar pelo proxy Vercel canônico quando precisar re-assinar para Hermes.",
+      "recommended_destination": "webhook-subscriptions references and future subscription checklist",
+      "action_applied": "Reference/receipt/report criados; URL corrigida."
+    }
+  ],
+  "autonomy_pattern_candidates": [
+    {
+      "candidate": "A0/A1: registrar e indexar aprendizados/correções em Brain/skills/rotinas quando não há external write.",
+      "status": "safe_candidate"
+    },
+    {
+      "candidate": "A3/A4: Shopify/Admin, runtime/gateway/Docker/VPS, provider cleanup/delete, external sends continuam approval-gated.",
+      "status": "must_remain_approval_gated"
+    }
+  ],
+  "pending_decisions_for_lucas": [
+    {
+      "item": "NB740 collection/product path",
+      "why": "Coleção não foi criada porque só havia produto ARCHIVED; cadastro/reativação/listagem exige novo escopo."
+    },
+    {
+      "item": "Honcho historical cleanup by IDs",
+      "why": "Semantic contamination histórica segue attention, mas delete sem IDs/rollback é bloqueado."
+    }
+  ],
+  "safe_next_actions": [
+    "02h Daily Intelligence Loop promover aprendizados A0/A1 seguros do pacote.",
+    "Medir Honcho utility/semantic nos próximos ciclos antes de limpeza histórica.",
+    "Revisar LKGOC C1+C2 quando dados vivos GSC/GA4/Shopify estiverem disponíveis."
+  ],
+  "blocked_actions_requiring_approval": [
+    "Deletar/limpar memória Honcho histórica sem IDs e rollback.",
+    "Criar/reativar/listar produto ou coleção NB740 fora do escopo aprovado.",
+    "Qualquer envio externo Zipper/LK/SPITI não coberto por aprovação atual.",
+    "Qualquer Docker/VPS/gateway/deploy/secret/database mutation."
+  ],
+  "cron_and_delivery_truth": {
+    "source": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all",
+    "total_jobs": 44,
+    "active_jobs": 40,
+    "paused_jobs": 4,
+    "active_non_ok_last_status": 0,
+    "deliver_origin_active_observed": [
+      "Mesa COO diária Telegram",
+      "Relatório Hermes diário 01h+02h+02h15+02h25+02h50 + Score 0–100 — 03h Telegram",
+      "Reminder OS — 2h open-loop watchdog",
+      "Honcho utility go/no-go review one-shot"
+    ],
+    "silent_ok_contract": "Fechamento 01h entrega local; Telegram/origin só para exceção crítica/decisão urgente."
+  },
+  "sources": [
+    "reports/daily-consolidation/2026-06-26.md",
+    "reports/brain-health-check-2026-06-26-02h.json",
+    "reports/brain-improvement-score-2026-06-26-02h.md",
+    "reports/brain-improvement-score-2026-06-26-02h.json",
+    "reports/governance/shopify-webhook-canonical-url-fix-lk-shopify-tiny-stock-sync-2026-06-25.md",
+    "reports/governance/kanban-task-os-all-readiness-activation-2026-06-25.md",
+    "reports/governance/hermes-task-os-main-default-restart-activation-2026-06-25.md",
+    "reports/governance/memory-os-audit-2026-06-26.md",
+    "reports/governance/memory-os-phase123-followup-execution-2026-06-26.md",
+    "reports/governance/honcho-memory-os-full-improvement-2026-06-26.md",
+    "areas/lk/sub-areas/shopify/receipts/nb740-asics-gel-nyc-collections-20260626T010324Z.md",
+    "areas/zipper/inbox/email-intake/20260626T024233Z_draft_19f01cbdbdb187c2_tidio_camila-chiarello.md"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "raw_chat_transcripts_excluded": true,
+    "live_facts_verified": true,
+    "raw_customer_payloads_excluded": true,
+    "values_printed": false
+  }
+}

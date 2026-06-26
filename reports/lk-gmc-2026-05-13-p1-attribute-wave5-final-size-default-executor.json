@@ -1,0 +1,770 @@
+{
+  "generated_at": "2026-05-13T14:36:34.652586+00:00",
+  "status": "gmc_p1_attribute_wave5_final_size_defaults_dry_run_ready",
+  "mode": "dry-run",
+  "scope": "Wave5 sizes-only defaults for remaining size diagnostics; price excluded.",
+  "source_labels": [
+    "fact_merchant_center",
+    "manual_approval",
+    "derived_reconciliation"
+  ],
+  "approval_required_for_apply": "Lucas approved GMC P1 Attribute Wave5 final size defaults apply",
+  "summary": {
+    "fresh_merchant_products_current": 23241,
+    "fresh_merchant_productstatuses_current": 23241,
+    "size_required_rows_current": 32,
+    "decision_state_counts": {
+      "ready_for_wave5_final_size_default_apply": 32
+    },
+    "ready_total": 32,
+    "selected_for_apply_if_approved": 32,
+    "limit": 1000,
+    "write_allowed_now": 0,
+    "execution_results_summary": {},
+    "verify_results_summary": {},
+    "verified_attrs_match_expected": 0
+  },
+  "private_rollback_snapshot_path": null,
+  "public_rows": [
+    {
+      "product_id": "online:pt:BR:6531799355487598672",
+      "offer_id": "6531799355487598672",
+      "merchant_title": "Camiseta Fear of God Essentials Jersey Crewneck Black Preto",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:RH20",
+      "offer_id": "RH20",
+      "merchant_title": "Lip Tint Rhode Scented Peptide Toast",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_one_size_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:6562590402534581177",
+      "offer_id": "6562590402534581177",
+      "merchant_title": "Calça Nude Project Illegal Jeans Ash Cinza - LK",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:2258634078163248862",
+      "offer_id": "2258634078163248862",
+      "merchant_title": "Calça Chino Saint Studio Supima Preto",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB16",
+      "offer_id": "MTB16",
+      "merchant_title": "MEDICOM TOY - Bearbrick Pushead #6 400% Toy Art Multi-Color",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_one_size_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:15334125053592144145",
+      "offer_id": "15334125053592144145",
+      "merchant_title": "Camiseta Oversized Fear of God Essentials Heavy Healther Wood Marrom",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:17378616365015099957",
+      "offer_id": "17378616365015099957",
+      "merchant_title": "Moletom Fear Of God Essentials Brushed Hooded Bomber Brown Marrom",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:13498809788548851139",
+      "offer_id": "13498809788548851139",
+      "merchant_title": "Moletom Essentials Fear of God Jet black SS24 Preto | LK Sneakers",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:10002025469927148791",
+      "offer_id": "10002025469927148791",
+      "merchant_title": "Calça Nude Project Jeans Soft Velvet Azul Marinho",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836591089",
+      "offer_id": "9783836591089",
+      "merchant_title": "Livro Taschen The Adidas Archive: The Footwear Collection 21,7x15,6",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_one_size_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:9780847872657",
+      "offer_id": "9780847872657",
+      "merchant_title": "Livro Rizzoli From Soul to Sole: The Adidas Sneakers of Jacques Chassaing",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_one_size_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:4041641007094962608",
+      "offer_id": "4041641007094962608",
+      "merchant_title": "Camisa Saint Studio Trico Palha | LK Sneakers",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:8376229716754602501",
+      "offer_id": "8376229716754602501",
+      "merchant_title": "Short Fear Of God Essentials Classic Sweatshort Homestead Heather Bege",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:9992569968476017768",
+      "offer_id": "9992569968476017768",
+      "merchant_title": "Moletom Fear of God Essentials Fleece Light Heather Grey Cinza",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836597982",
+      "offer_id": "9783836597982",
+      "merchant_title": "Livro Taschen The Ultimate Sneaker Book 15 x 21",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_one_size_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:13622509763707629816",
+      "offer_id": "13622509763707629816",
+      "merchant_title": "Calça Saint Studio Wide Alfaiataria Risca de Giz Cinza",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:9250025623243509812",
+      "offer_id": "9250025623243509812",
+      "merchant_title": "Calça Saint Studio Wide Alfaiataria Risca de Giz Preta",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836585095",
+      "offer_id": "9783836585095",
+      "merchant_title": "Livro Taschen Virgil Abloh Nike ICONS",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_one_size_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:13294493627572294660",
+      "offer_id": "13294493627572294660",
+      "merchant_title": "Camiseta Oversized Fear of God Essentials Heavy Jet Black Preto",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836571968",
+      "offer_id": "9783836571968",
+      "merchant_title": "Livro Taschen The Adidas Archive: The Footwear Collection",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_one_size_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:1475186660255881483",
+      "offer_id": "1475186660255881483",
+      "merchant_title": "Camiseta Oversized Fear of God Essentials Ink Cinza",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:11806875313375187771",
+      "offer_id": "11806875313375187771",
+      "merchant_title": "Camiseta Fear Of God Essentials Classic Short Sleeve Homestead Heather Bege",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:13315860803624221806",
+      "offer_id": "13315860803624221806",
+      "merchant_title": "Short Fear Of God Essentials Sporty Nylon Classic Jet Black Preto",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:15507753369156717392",
+      "offer_id": "15507753369156717392",
+      "merchant_title": "Camisa Manga Longa Oversized Saint Studio Egípcio Listrada Azul",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:15702667075807199895",
+      "offer_id": "15702667075807199895",
+      "merchant_title": "Moletom Fear Of God Essentials Classic Full Zip-Up Jet Black Preto",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:2183-USA",
+      "offer_id": "2183-USA",
+      "merchant_title": "Jason Markk Travel Shoe Cleaning Kit",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_one_size_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:11314792792398542744",
+      "offer_id": "11314792792398542744",
+      "merchant_title": "Moletom Oversized Nylon Fear of God Essentials Jet Black Preto",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:300110",
+      "offer_id": "300110",
+      "merchant_title": "Jason Markk Essential Kit de Limpeza",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_one_size_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:8751205371375268276",
+      "offer_id": "8751205371375268276",
+      "merchant_title": "Moletom Fear Of God Essentials Classic Jet Black Preto",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:9780847866694",
+      "offer_id": "9780847866694",
+      "merchant_title": "Livro Rizzoli Nike SB: The Dunk Book",
+      "fresh_required_attrs": [
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "Único"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_one_size_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": false
+    },
+    {
+      "product_id": "online:pt:BR:12820359859699264559",
+      "offer_id": "12820359859699264559",
+      "merchant_title": "Camiseta Fear Of God Essentials Jersey Crewneck Heather Bege",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    },
+    {
+      "product_id": "online:pt:BR:17623149180616410488",
+      "offer_id": "17623149180616410488",
+      "merchant_title": "Jaqueta Aimé Leon Dore x Porsche Nylon Track",
+      "fresh_required_attrs": [
+        "price",
+        "size"
+      ],
+      "suggested_attributes": {
+        "sizes": [
+          "M"
+        ]
+      },
+      "evidence": {
+        "sizes": "default_apparel_M_lucas_completeness_policy"
+      },
+      "decision_state": "ready_for_wave5_final_size_default_apply",
+      "decision_reasons": [
+        "remaining size issue filled by Lucas completeness policy; price untouched if present"
+      ],
+      "selected_for_apply": true,
+      "has_price_required_attr": true
+    }
+  ],
+  "execution_results": [],
+  "verified_results": [],
+  "not_performed": [
+    "merchant_price_update",
+    "merchant_delete",
+    "merchant_color_age_gender_update",
+    "feed_update_or_fetch",
+    "shopify_write",
+    "tiny_call_or_write",
+    "database_write",
+    "klaviyo_or_whatsapp_send",
+    "notion_or_n8n_write",
+    "loyalty_or_judgeme_action"
+  ]
+}

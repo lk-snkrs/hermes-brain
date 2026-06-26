@@ -1,0 +1,190 @@
+{
+  "operational_date": "2026-06-07",
+  "generated_at_utc": "2026-06-07T04:06:46Z",
+  "status": "attention",
+  "executive_summary": "Fechamento 01h consolidou LK Shopify, LK Growth, LK Content, Zipper e Hermes governance. Health check FAIL=0/WARN=0; Brain Improvement Score 94/100. Há pendências não críticas: lk-content sem token, cache público pós-writes Shopify, Zipper/Tidio needs_attention e watchdog estrutural com hot.md stale no último runtime report.",
+  "material_changes": [
+    {
+      "domain": "LK Shopify",
+      "summary": "Cron quinzenal Curadoria LK PDP criado no perfil lk-shopify, read-only/no-agent, primeira execução prevista 2026-06-08T11:00Z; dry-run validou relatório com verde 15/vermelho 20/260 handles.",
+      "evidence": "areas/lk/sub-areas/shopify/receipts/curadoria-lk-pdp/cron-curadoria-lk-pdp-maintenance-20260607.md"
+    },
+    {
+      "domain": "LK Shopify",
+      "summary": "Curadoria LK PDP teve hotfix AJ1 e merges Production aprovados para Cortez/Speedcat e Onitsuka/Gazelle; source/readback/static QA ok, com propagação pública intermitente de edge/cache em alguns checks.",
+      "evidence": "areas/lk/sub-areas/shopify/receipts/curadoria-lk-pdp/"
+    },
+    {
+      "domain": "LK Growth",
+      "summary": "SEO/P1 fixes aplicados: recovery/n8n CORS mitigados, ET ScriptTag removido, SEO metafields para pages e Judge.me preloader legado removido; alguns readbacks públicos aguardam cache.",
+      "evidence": "areas/lk/sub-areas/growth/reports/seo-audits/claude-seo-ecommerce-audit-20260606T2359Z/"
+    },
+    {
+      "domain": "LK Content",
+      "summary": "PRD e pacote Brain documental aprovados/criados; perfil local lk-content preparado, mas gateway não iniciado por token ausente.",
+      "evidence": "areas/lk/sub-areas/content/receipts/"
+    },
+    {
+      "domain": "Zipper",
+      "summary": "Lead Tidio/Gmail sobre Rondon classificado needs_attention; nenhum draft/envio externo por contexto incompleto e PDF não validado.",
+      "evidence": "areas/zipper/inbox/email-intake/20260607T011427Z-tidio-nicole-rondon-needs-attention.md"
+    }
+  ],
+  "incidents": [
+    {
+      "domain": "Hermes runtime",
+      "summary": "Compression self-heal detectou falha transitória de context compressor e verificou guardrail existente; restart não realizado.",
+      "severity": "low",
+      "evidence": "reports/hermes-compression-self-heal/compression-self-heal-20260607T020033Z.json"
+    },
+    {
+      "domain": "Cron/runtime",
+      "summary": "Última evidência viva ainda mostra d03fa04e1188 com error por memories/hot.md stale >3 days; próxima execução 2026-06-07T11:10Z.",
+      "severity": "medium",
+      "evidence": "cron list --all; areas/operacoes/inventarios/crons-agentes-profiles.md"
+    }
+  ],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Criar cron quinzenal Curadoria LK PDP, segunda 08:00 BRT, entrega Telegram, read-only/no-agent.",
+      "scope": "LK Shopify Curadoria PDP maintenance",
+      "exclusions": "Sem correção automática de blocos, sem write Shopify pelo cron, sem alteração de produtos/preços/estoque/campanhas."
+    },
+    {
+      "decision": "Aprovar Production/hotfixes Curadoria LK PDP para escopos exatos documentados nos receipts.",
+      "scope": "Theme/Production snippets/section only for approved Curadoria PDP packages",
+      "exclusions": "Sem produto, preço, estoque, coleção, GMC, Klaviyo, ads, WhatsApp/e-mail, Tiny, checkout ou campanha."
+    },
+    {
+      "decision": "Executar correção de SEO Pages em todas as páginas problemáticas e correção Judge.me.",
+      "scope": "LK Growth SEO/P1 Shopify theme/pages/Judge.me preloader",
+      "exclusions": "Sem alteração de apps/tokens sensíveis além dos writes documentados; cache público exige revalidação."
+    },
+    {
+      "decision": "Aprovar PRD/pacote documental LK Content e preparar runtime até limite seguro.",
+      "scope": "Novo agente LK Content exclusivo, Klaviyo/newsletter, Lucas+Renan como aprovadores/autoridade no escopo",
+      "exclusions": "Sem envio Klaviyo, sem gateway sem token, sem cron real, sem writes externos."
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "pattern": "Aprovação de produção deve ser interpretada apenas para o pacote imediatamente descrito, com receipt/readback/rollback e exclusões explícitas.",
+      "learn": "Não transformar 'aprovo' em permissão ampla para outros writes Shopify ou campanhas."
+    },
+    {
+      "pattern": "Quando Lucas reporta erro visual em produção ('deu erro no layout corrigir'), a aprovação cobre hotfix estreito do defeito reportado, não redesign amplo.",
+      "learn": "Registrar root cause, aplicar patch mínimo, validar public checks e manter rollback."
+    },
+    {
+      "pattern": "Perfil de agente Telegram sem token dedicado fica preparado/stopped; não iniciar gateway com token ausente.",
+      "learn": "Token validation/getMe é pré-condição, sem imprimir segredo."
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Separar source/readback/static QA ok de public storefront cache/edge propagation em Shopify.",
+      "recommended_destination": "skills/lk-shopify-readonly ou rotina Curadoria LK PDP",
+      "action_applied": "Receipts de produção registram cache intermitente; relatório diário consolidou pendência.",
+      "verification_needed": "Recheck público pós-cache."
+    },
+    {
+      "learning": "Notificação Tidio/Gmail resumida não basta para contato com lead Zipper; validar conversa/material antes.",
+      "recommended_destination": "Rotina Zipper Gmail/Tidio intake",
+      "action_applied": "Needs_attention registrado com dados mascarados e sem draft/envio.",
+      "verification_needed": "Abrir Tidio e validar PDF/material comercial."
+    },
+    {
+      "learning": "Cron recorrente aprovado precisa de schedule/delivery/gate/dry-run/rollback/desativação em receipt.",
+      "recommended_destination": "Cron approval pattern / LK Shopify routine docs",
+      "action_applied": "Receipt cron Curadoria LK PDP criado.",
+      "verification_needed": "Primeira execução real em 2026-06-08."
+    }
+  ],
+  "autonomy_pattern_candidates": [
+    {
+      "candidate": "Revalidações pós-cache de storefront público para writes já aprovados e documentados.",
+      "possible_level": "A0/A1 read-only",
+      "must_remain_gated": "Qualquer novo patch Shopify/theme/produção."
+    },
+    {
+      "candidate": "Classificar lead Zipper/Tidio incompleto como needs_attention sem draft/envio.",
+      "possible_level": "A0/A1 local/documental",
+      "must_remain_gated": "Contato com cliente, proposta, preço, disponibilidade, envio de PDF ou resposta externa."
+    }
+  ],
+  "pending_decisions_for_lucas": [
+    {
+      "item": "Fornecer/rotacionar token dedicado do bot LK Content em canal seguro para concluir gateway.",
+      "urgency": "medium"
+    },
+    {
+      "item": "Zipper/Tidio Nicole Rondon: decidir após validação da conversa/material se responde sem PDF, envia PDF ou encaminha para responsável.",
+      "urgency": "medium"
+    }
+  ],
+  "safe_next_actions": [
+    "Revalidar cache público Curadoria LK PDP/Judge.me/pages SEO read-only.",
+    "Acompanhar primeiro run do cron Curadoria LK PDP em 2026-06-08T11:00Z.",
+    "Corrigir/atualizar memories/hot.md como ação documental local para limpar watchdog estrutural, se evidência confirmar stale.",
+    "Preparar ativação LK Content somente após token dedicado e getMe sanitizado.",
+    "Abrir/confirmar Tidio Rondon antes de qualquer contato externo."
+  ],
+  "blocked_actions_requiring_approval": [
+    "Iniciar gateway LK Content sem token dedicado validado.",
+    "Enviar e-mail/WhatsApp/Telegram externo para lead Zipper.",
+    "Novo write Shopify/theme/Tiny/GMC/Klaviyo/Meta/campanha fora dos approvals já documentados.",
+    "Restart Docker/VPS/gateway/Traefik ou alteração de runtime por este fechamento.",
+    "Expor, imprimir ou versionar tokens/keys/secrets."
+  ],
+  "cron_and_delivery_truth": [
+    {
+      "fact": "cron list --all mostra 31 jobs: 27 ativos, 4 pausados; 1 último status não-ok (d03fa04e1188).",
+      "source": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all"
+    },
+    {
+      "fact": "Fechamento Ágil 01h + Brain Sync ativo/local; último run anterior ok; próximo 2026-06-08T04:00Z.",
+      "source": "cron list --all"
+    },
+    {
+      "fact": "Novo cron Curadoria LK PDP existe no perfil lk-shopify, delivery Telegram, no-agent, gate quinzenal no script.",
+      "source": "areas/lk/sub-areas/shopify/receipts/curadoria-lk-pdp/cron-curadoria-lk-pdp-maintenance-20260607.md"
+    },
+    {
+      "fact": "Webhook health/test order lk-shopify-pos-restock foi ignorado sem POS restock action e sem alerta Telegram.",
+      "source": "session_search 20260607_015035_2ad6c449"
+    }
+  ],
+  "health_and_score": {
+    "brain_health_02h_json": "reports/brain-health-check-2026-06-07-02h.json",
+    "brain_health_fechamento_json": "reports/brain-health-check-2026-06-07-fechamento-auto.json",
+    "fail_count": 0,
+    "warn_count": 0,
+    "brain_improvement_score": 94,
+    "score_markdown": "reports/brain-improvement-score-2026-06-07-02h.md",
+    "score_json": "reports/brain-improvement-score-2026-06-07-02h.json"
+  },
+  "sources": [
+    "reports/daily-consolidation/2026-06-07.md",
+    "areas/operacoes/rotinas/fechamento-agil-01h.md",
+    "areas/operacoes/rotinas/brain-sync.md",
+    "areas/operacoes/inventarios/crons-agentes-profiles.md",
+    "areas/lk/sub-areas/content/receipts/lk-content-prd-approved-brain-package-20260607.md",
+    "areas/lk/sub-areas/content/receipts/lk-content-runtime-prepared-token-pending-20260607.md",
+    "areas/lk/sub-areas/shopify/receipts/curadoria-lk-pdp/cron-curadoria-lk-pdp-maintenance-20260607.md",
+    "areas/lk/sub-areas/shopify/prd/curadoria-lk-pdp-maintenance-system-20260607.md",
+    "areas/lk/sub-areas/growth/reports/seo-audits/claude-seo-ecommerce-audit-20260606T2359Z/EXECUTION-RECEIPT-20260607.md",
+    "areas/lk/sub-areas/growth/reports/seo-audits/claude-seo-ecommerce-audit-20260606T2359Z/EXECUTION-RECEIPT-20260607-P1-FIXES.md",
+    "areas/lk/sub-areas/growth/reports/seo-audits/claude-seo-ecommerce-audit-20260606T2359Z/EXECUTION-RECEIPT-20260607-PAGES-ALL-JUDGEME.md",
+    "areas/zipper/inbox/email-intake/20260607T011427Z-tidio-nicole-rondon-needs-attention.md",
+    "reports/hermes-compression-self-heal/compression-self-heal-20260607T020033Z.json",
+    "cron list --all",
+    "session_search recent sessions"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "raw_chat_transcripts_excluded": true,
+    "live_facts_verified": true,
+    "pii_masked": true,
+    "secret_scan_required": true
+  }
+}

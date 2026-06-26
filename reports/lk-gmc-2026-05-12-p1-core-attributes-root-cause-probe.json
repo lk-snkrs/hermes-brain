@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-05-13T06:33:08.618663+00:00",
+  "status": "gmc_p1_core_attributes_root_cause_probe_readonly_ready",
+  "scope": "Read-only root-cause probe for P1 online products missing title/link/image link/price/availability diagnostics",
+  "source_labels": [
+    "fact_merchant_center",
+    "fact_shopify_local_snapshot",
+    "derived_reconciliation",
+    "manual_approval_required"
+  ],
+  "summary": {
+    "merchant_products_current": 23194,
+    "merchant_productstatuses_current": 23194,
+    "core_attr_preview_rows_loaded": 0,
+    "core_attr_rows_currently_rechecked": 0,
+    "root_cause_bucket_counts": {},
+    "diagnostic_missing_core_attr_counts": {},
+    "merchant_payload_missing_core_attr_counts": {},
+    "shopify_can_supply_missing_core_attr_counts": {},
+    "exact_update_candidate_rows_for_future_approval_packet": 0,
+    "recheck_before_write_rows": 0,
+    "incomplete_source_rows": 0,
+    "write_allowed_now": 0,
+    "merchant_writes": 0,
+    "shopify_writes": 0,
+    "tiny_writes": 0,
+    "feed_writes": 0,
+    "database_writes": 0,
+    "external_sends": 0
+  },
+  "interpretation": {
+    "verdict": "Core-attribute diagnostics were rechecked against current Merchant product resources and local Shopify SKU evidence. Rows are split into exact update candidates, consistency recheck/no-write, incomplete-source, and manual-review buckets.",
+    "recommended_next_safe_block": "Generate a separate approval packet only for rows where Merchant payload is missing core attributes and Shopify has exact active-SKU evidence for every missing core value; include private rollback product snapshots before any write executor."
+  },
+  "approval_contract": {
+    "current_state": "probe_only_no_execution",
+    "not_authorized_now": [
+      "merchant_product_update",
+      "content_api_custombatch",
+      "supplemental_feed_upload",
+      "datafeedFetchNow",
+      "shopify_write",
+      "tiny_write",
+      "database_write",
+      "pos_or_local_inventory_change",
+      "campaign_or_external_send"
+    ],
+    "future_write_requires": "Lucas explicit approval for exact product IDs + exact fields + rollback snapshot path + execution method (Content API update/custombatch vs supplemental feed).",
+    "hard_guards_for_future_executor": [
+      "load exact candidate JSON only",
+      "abort if product resource is absent",
+      "snapshot full products.get resource before update",
+      "abort if any missing core attr lacks Shopify exact active SKU evidence",
+      "never touch local channel rows in this package",
+      "verify product resource and productstatus after Content API consistency delay"
+    ]
+  },
+  "rows": [],
+  "samples": {
+    "exact_update_candidates": [],
+    "recheck_before_write": [],
+    "incomplete_source": []
+  },
+  "not_performed": [
+    "merchant_product_delete",
+    "merchant_product_insert",
+    "merchant_product_update",
+    "content_api_custombatch",
+    "supplemental_feed_upload",
+    "datafeed_fetchNow",
+    "feed_update",
+    "shopify_write",
+    "tiny_write",
+    "database_write",
+    "pos_or_local_inventory_setting_change",
+    "campaign_or_external_send"
+  ]
+}

@@ -1,0 +1,98 @@
+# Gate B2 P2 — correction packet — tenis-nike-moon-shoe-sp-jacquemus-medium-brown
+
+- title: `Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom`
+- priority: `P2_saneamento`
+- lane: `SHOPIFY_DUPLICATE_PACKET`
+- proposed_action: Preparar diff Shopify por variante/SKU duplicado e rollback; NÃO executar write sem aprovação escopada.
+- row_count: `73`
+- prefixes: `HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547, HV8547`
+
+## Status counts
+- matched_exact_sku_stock_missing_deposit: `3`
+- matched_exact_sku_stock_resolved: `40`
+- shopify_duplicate_sku_blocked: `2`
+- shopify_variant_tiny_missing: `27`
+- tiny_duplicate_exact_code_blocked: `1`
+
+## Linhas principais
+- `HV8547` | shopify_variant_tiny_missing | Shopify SKU `HV8547` | Tiny `` id ``
+- `HV8547-001-1` | shopify_variant_tiny_missing | Shopify SKU `HV8547-001-1` | Tiny `` id ``
+- `HV8547-002-34` | shopify_variant_tiny_missing | Shopify SKU `HV8547-002-34` | Tiny `` id ``
+- `HV8547-200-34` | shopify_variant_tiny_missing | Shopify SKU `HV8547-200-34` | Tiny `` id ``
+- `HV8547-600-1` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-600-1` | Tiny `HV8547-600-1` id `1066218851` | saldo LK CONTROLE: 0.0
+- `HV8547-601-34` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-601-34` | Tiny `HV8547-601-34` id `1069545962` | saldo LK CONTROLE: 0.0
+- `HV8547-700-1` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-700-1` | Tiny `HV8547-700-1` id `1066218809` | saldo LK CONTROLE: 0.0
+- `HV8547-001-2` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-001-2` | Tiny `HV8547-001-2` id `1066218753` | saldo LK CONTROLE: 1.0
+- `HV8547-002-35` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-002-35` | Tiny `HV8547-002-35` id `1069546045` | saldo LK CONTROLE: 0.0
+- `HV8547-200-35` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-200-35` | Tiny `HV8547-200-35` id `1069546118` | saldo LK CONTROLE: 0.0
+- `HV8547-600-2` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-600-2` | Tiny `HV8547-600-2` id `1066218854` | saldo LK CONTROLE: 0.0
+- `HV8547-601-35` | matched_exact_sku_stock_missing_deposit | Shopify SKU `HV8547-601-35` | Tiny `HV8547-601-35` id `1069545967`
+- `HV8547-001-3` | shopify_variant_tiny_missing | Shopify SKU `HV8547-001-3` | Tiny `` id ``
+- `HV8547-002-36` | shopify_variant_tiny_missing | Shopify SKU `HV8547-002-36` | Tiny `` id ``
+- `HV8547-200-36` | shopify_variant_tiny_missing | Shopify SKU `HV8547-200-36` | Tiny `` id ``
+- `HV8547-600-3` | shopify_variant_tiny_missing | Shopify SKU `HV8547-600-3` | Tiny `` id ``
+- `HV8547-601-36` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-601-36` | Tiny `HV8547-601-36` id `1069545972` | saldo LK CONTROLE: 0.0
+- `HV8547-700-3` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-700-3` | Tiny `HV8547-700-3` id `1066218815` | saldo LK CONTROLE: 0.0
+- `HV8547-001-4` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-001-4` | Tiny `HV8547-001-4` id `1066218759` | saldo LK CONTROLE: 0.0
+- `HV8547-002-37` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-002-37` | Tiny `HV8547-002-37` id `1069546055` | saldo LK CONTROLE: 1.0
+- `HV8547-200-37` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-200-37` | Tiny `HV8547-200-37` id `1069546128` | saldo LK CONTROLE: 1.0
+- `HV8547-600-4` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-600-4` | Tiny `HV8547-600-4` id `1066218861` | saldo LK CONTROLE: 0.0
+- `HV8547-601-37` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-601-37` | Tiny `HV8547-601-37` id `1069545977` | saldo LK CONTROLE: 2.0
+- `HV8547-700-4` | shopify_variant_tiny_missing | Shopify SKU `HV8547-700-4` | Tiny `` id ``
+- `HV8547-001-10` | shopify_variant_tiny_missing | Shopify SKU `HV8547-001-10` | Tiny `` id ``
+- `HV8547-002-37.5` | shopify_variant_tiny_missing | Shopify SKU `HV8547-002-37.5` | Tiny `` id ``
+- `HV8547-601-37.5` | shopify_variant_tiny_missing | Shopify SKU `HV8547-601-37.5` | Tiny `` id ``
+- `HV8547-700-11` | shopify_variant_tiny_missing | Shopify SKU `HV8547-700-11` | Tiny `` id ``
+- `HV8547-001-5` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-001-5` | Tiny `HV8547-001-5` id `1066218765` | saldo LK CONTROLE: 0.0
+- `HV8547-002-38` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-002-38` | Tiny `HV8547-002-38` id `1069546060` | saldo LK CONTROLE: 0.0
+- `HV8547-200-38` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-200-38` | Tiny `HV8547-200-38` id `1069546133` | saldo LK CONTROLE: 2.0
+- `HV8547-600-5` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-600-5` | Tiny `HV8547-600-5` id `1066218864` | saldo LK CONTROLE: 0.0
+- `HV8547-601-38` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-601-38` | Tiny `HV8547-601-38` id `1069545983` | saldo LK CONTROLE: 1.0
+- `HV8547-700-5` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-700-5` | Tiny `HV8547-700-5` id `1066218821` | saldo LK CONTROLE: 0.0
+- `HV8547-001-6` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-001-6` | Tiny `HV8547-001-6` id `1066218768` | saldo LK CONTROLE: 0.0
+- `HV8547-002-39` | shopify_variant_tiny_missing | Shopify SKU `HV8547-002-39` | Tiny `` id ``
+- `HV8547-200-39` | shopify_variant_tiny_missing | Shopify SKU `HV8547-200-39` | Tiny `` id ``
+- `HV8547-600-6` | shopify_variant_tiny_missing | Shopify SKU `HV8547-600-6` | Tiny `` id ``
+- `HV8547-601-39` | shopify_variant_tiny_missing | Shopify SKU `HV8547-601-39` | Tiny `` id ``
+- `HV8547-700-6` | shopify_variant_tiny_missing | Shopify SKU `HV8547-700-6` | Tiny `` id ``
+- `HV8547-200-39.5` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-200-39.5` | Tiny `HV8547-200-39.5` id `1069816678` | saldo LK CONTROLE: 1.0
+- `HV8547-001-7` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-001-7` | Tiny `HV8547-001-7` id `1066218771` | saldo LK CONTROLE: 1.0
+- `HV8547-002-40` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-002-40` | Tiny `HV8547-002-40` id `1069546070` | saldo LK CONTROLE: 1.0
+- `HV8547-200-40` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-200-40` | Tiny `HV8547-200-40` id `1069546143` | saldo LK CONTROLE: 1.0
+- `HV8547-600-7` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-600-7` | Tiny `HV8547-600-7` id `1066218870` | saldo LK CONTROLE: 1.0
+- `HV8547-601-40` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-601-40` | Tiny `HV8547-601-40` id `1069545994` | saldo LK CONTROLE: 0.0
+- `HV8547-700-7` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-700-7` | Tiny `HV8547-700-7` id `1066218827` | saldo LK CONTROLE: 0.0
+- `HV8547-001-8` | matched_exact_sku_stock_missing_deposit | Shopify SKU `HV8547-001-8` | Tiny `HV8547-001-8` id `1066218774`
+- `HV8547-002-41` | shopify_variant_tiny_missing | Shopify SKU `HV8547-002-41` | Tiny `` id ``
+- `HV8547-200-41` | shopify_variant_tiny_missing | Shopify SKU `HV8547-200-41` | Tiny `` id ``
+- `HV8547-600-8` | shopify_variant_tiny_missing | Shopify SKU `HV8547-600-8` | Tiny `` id ``
+- `HV8547-601-41` | shopify_variant_tiny_missing | Shopify SKU `HV8547-601-41` | Tiny `` id ``
+- `HV8547-700-8` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-700-8` | Tiny `HV8547-700-8` id `1066218830` | saldo LK CONTROLE: 0.0
+- `HV8547-001-9` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-001-9` | Tiny `HV8547-001-9` id `1066218777` | saldo LK CONTROLE: 0.0
+- `HV8547-002-42` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-002-42` | Tiny `HV8547-002-42` id `1069546080` | saldo LK CONTROLE: 3.0
+- `HV8547-200-42` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-200-42` | Tiny `HV8547-200-42` id `1069546153` | saldo LK CONTROLE: 2.0
+- `HV8547-600-9` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-600-9` | Tiny `HV8547-600-9` id `1066218876` | saldo LK CONTROLE: 0.0
+- `HV8547-601-42` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-601-42` | Tiny `HV8547-601-42` id `1069546004` | saldo LK CONTROLE: 0.0
+- `HV8547-700-9` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-700-9` | Tiny `HV8547-700-9` id `1066218833` | saldo LK CONTROLE: 1.0
+- `HV8547-001` | shopify_duplicate_sku_blocked | Shopify SKU `HV8547-001` | Tiny `HV8547-001` id `1066218691`
+- `HV8547-002-43` | shopify_variant_tiny_missing | Shopify SKU `HV8547-002-43` | Tiny `` id ``
+- `HV8547-200-43` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-200-43` | Tiny `HV8547-200-43` id `1069546158` | saldo LK CONTROLE: 3.0
+- `HV8547-600` | shopify_duplicate_sku_blocked | Shopify SKU `HV8547-600` | Tiny `HV8547-600` id `1066218840`
+- `HV8547-601-43` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-601-43` | Tiny `HV8547-601-43` id `1069546009` | saldo LK CONTROLE: 0.0
+- `HV8547-700-14` | tiny_duplicate_exact_code_blocked | Shopify SKU `HV8547-700-14` | Tiny `HV8547-700-14` id `1069541820`
+- `HV8547-002-44` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-002-44` | Tiny `HV8547-002-44` id `1069546087` | saldo LK CONTROLE: 0.0
+- `HV8547-200-44` | matched_exact_sku_stock_missing_deposit | Shopify SKU `HV8547-200-44` | Tiny `HV8547-200-44` id `1069546163`
+- `HV8547-601-44` | shopify_variant_tiny_missing | Shopify SKU `HV8547-601-44` | Tiny `` id ``
+- `HV8547-700-15` | shopify_variant_tiny_missing | Shopify SKU `HV8547-700-15` | Tiny `` id ``
+- `HV8547-002-45` | shopify_variant_tiny_missing | Shopify SKU `HV8547-002-45` | Tiny `` id ``
+- `HV8547-200-45` | shopify_variant_tiny_missing | Shopify SKU `HV8547-200-45` | Tiny `` id ``
+- `HV8547-601-45` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-601-45` | Tiny `HV8547-601-45` id `1069546019` | saldo LK CONTROLE: 0.0
+- `HV8547-700-16` | matched_exact_sku_stock_resolved | Shopify SKU `HV8547-700-16` | Tiny `HV8547-700-16` id `1069541830` | saldo LK CONTROLE: 0.0
+
+## Guardrails
+- Tiny write: `0`
+- Shopify write: `0`
+- Writes externos: `0`
+- Cron/webhook/runtime novo: `0`
+- Promessa de disponibilidade pública: `0`
+- Rollback: descartar artefatos locais; nada externo alterado.

@@ -1,0 +1,496 @@
+# Matriz de donos de crons vs Organograma/Task Router — 2026-05-25
+
+Escopo: inventário read-only dos registries locais de cron por profile. Nenhum cron foi criado, pausado, removido, migrado ou editado. Nenhum gateway/Docker/VPS/integração externa foi alterado.
+
+## Veredito curto
+
+A distribuição está parcialmente coerente com o organograma: Hermes Geral concentra governança/COO/watchdogs, LK Growth concentra Growth/SEO/GEO/CRO/GMC/CRM impact reviews, Mordomo concentra WhatsApp/agenda/inbox e Zipper draft/read-only, e SPITI tem runtime vivo mas sem registry local de crons encontrado. O principal ganho agora é reduzir ambiguidade/ruído e preparar uma fase futura de migração/limpeza com aprovação explícita.
+
+## Counts por profile
+
+- main: total=23; ativos=23; pausados=0
+- lk-growth: total=26; ativos=22; pausados=4
+- mordomo: total=12; ativos=11; pausados=1
+- spiti: registry não encontrado
+
+## Counts por dono lógico
+
+- LK Growth: 27
+- Brain governance/Hermes ops: 13
+- Mordomo: 7
+- LK ops/comercial: 5
+- Zipper via Mordomo/read-only: 4
+- Zipper documental/read-only: 2
+- Mordomo/LK atendimento: 2
+- legado/revisar: 1
+
+## Coerência por profile
+
+### main
+- Brain governance/Hermes ops: 13
+- LK ops/comercial: 5
+- Zipper documental/read-only: 2
+- Mordomo/LK atendimento: 2
+- LK Growth: 1
+
+### lk-growth
+- LK Growth: 26
+
+### mordomo
+- Mordomo: 7
+- Zipper via Mordomo/read-only: 4
+- legado/revisar: 1
+
+## Findings principais
+
+1. Main/Hermes Geral ainda contém rotinas LK ops/comercial e LK GMC; isso não é erro automático, mas deve virar backlog de ownership/delivery.
+2. LK Growth tem 26 rotinas, incluindo vários one-shots/reviews de impacto. São coerentes com o profile, mas há candidatos a limpeza após confirmar execução e aprovar.
+3. Mordomo concentra corretamente WhatsApp/Calendar/Decision Inbox e fluxos Zipper draft/read-only; coerente enquanto Zipper não tiver profile próprio.
+4. SPITI tem runtime gateway vivo observado na auditoria anterior, mas não há `/opt/data/profiles/spiti/cron/jobs.json`; documentar como “sem crons locais” ou criar registry apenas quando houver rotina aprovada.
+5. `deliver=origin/telegram` deve ser separado entre decisão real para Lucas e ruído operacional que deveria ser `local`/silent-OK.
+6. `Pixel AI Hub / Brainzinho daily learning scan` permanece como legado/revisar.
+
+## Inventário classificado
+
+- **main — Lucas Brain daily intelligence loop**
+  - id: `f5a23dd6a1bd`
+  - status/cadência: active; `0 5 * * *`
+  - entrega/tipo: `local`; agent
+  - dono lógico: Brain governance/Hermes ops
+  - runtime recomendado: /opt/data
+  - nota: baixo/ok
+- **main — Hermes runtime + cron watchdog no_agent**
+  - id: `edd06fe19397`
+  - status/cadência: active; `*/30 * * * *`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: Brain governance/Hermes ops
+  - runtime recomendado: /opt/data
+  - nota: baixo/ok
+- **main — LK Daily Sales Brief read-only mandatory delivery**
+  - id: `7c688553e293`
+  - status/cadência: active; `0 11 * * *`
+  - entrega/tipo: `origin`; script/no_agent
+  - dono lógico: LK ops/comercial
+  - runtime recomendado: classificar: LK ops vs /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **main — LK Weekly CEO Review read-only mandatory delivery**
+  - id: `953b9055458e`
+  - status/cadência: active; `0 12 * * 1`
+  - entrega/tipo: `origin`; script/no_agent
+  - dono lógico: LK ops/comercial
+  - runtime recomendado: classificar: LK ops vs /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **main — LK GMC Review read-only mandatory delivery**
+  - id: `d4c26da4cd48`
+  - status/cadência: active; `0 12 * * 4`
+  - entrega/tipo: `origin`; script/no_agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: runtime atual diverge do dono recomendado; entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **main — Zipper Gmail style learning refresh**
+  - id: `71b147362ec1`
+  - status/cadência: active; `20 6 * * *`
+  - entrega/tipo: `local`; agent
+  - dono lógico: Zipper documental/read-only
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: runtime atual diverge do dono recomendado
+- **main — Hermes compression failure self-heal watchdog**
+  - id: `4bb4e2223fd3`
+  - status/cadência: active; `*/10 * * * *`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: Brain governance/Hermes ops
+  - runtime recomendado: /opt/data
+  - nota: baixo/ok
+- **main — LK WhatsApp Hermes responder watchdog**
+  - id: `71b2636add5d`
+  - status/cadência: active; `every 1m`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: Mordomo/LK atendimento
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: runtime atual diverge do dono recomendado
+- **main — LK Pulso Comercial 16h read-only delivery**
+  - id: `c3bb587519d2`
+  - status/cadência: active; `0 19 * * *`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: LK ops/comercial
+  - runtime recomendado: classificar: LK ops vs /opt/data/profiles/lk-growth
+  - nota: baixo/ok
+- **main — LK 09h previous-day sales report external delivery**
+  - id: `e3279babbc4a`
+  - status/cadência: active; `0 12 * * *`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: LK ops/comercial
+  - runtime recomendado: classificar: LK ops vs /opt/data/profiles/lk-growth
+  - nota: baixo/ok
+- **main — LK 19h30 physical store close external delivery**
+  - id: `a2ead305eab2`
+  - status/cadência: active; `30 22 * * *`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: LK ops/comercial
+  - runtime recomendado: classificar: LK ops vs /opt/data/profiles/lk-growth
+  - nota: baixo/ok
+- **main — Mordomo Telegram gateway watchdog**
+  - id: `ac0b440e2643`
+  - status/cadência: active; `every 1m`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: Brain governance/Hermes ops
+  - runtime recomendado: /opt/data
+  - nota: baixo/ok
+- **main — Zipper OS vendas 09h WhatsApp/email**
+  - id: `357d40a5863e`
+  - status/cadência: active; `0 12 * * 1-5`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: Zipper documental/read-only
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: runtime atual diverge do dono recomendado
+- **main — LK Growth Telegram gateway watchdog**
+  - id: `876d54c62ccd`
+  - status/cadência: active; `every 1m`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: Brain governance/Hermes ops
+  - runtime recomendado: /opt/data
+  - nota: baixo/ok
+- **main — Mesa COO diária Telegram**
+  - id: `749ee30b51eb`
+  - status/cadência: active; `0 9 * * *`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: Brain governance/Hermes ops
+  - runtime recomendado: /opt/data
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **main — SPITI Telegram gateway watchdog**
+  - id: `663e3e6a148c`
+  - status/cadência: active; `every 1m`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: Brain governance/Hermes ops
+  - runtime recomendado: /opt/data
+  - nota: baixo/ok
+- **main — Hermes Brain Fechamento Ágil 23h + Brain Sync**
+  - id: `3fc45b0830c6`
+  - status/cadência: active; `0 2 * * *`
+  - entrega/tipo: `local`; agent
+  - dono lógico: Brain governance/Hermes ops
+  - runtime recomendado: /opt/data
+  - nota: baixo/ok
+- **main — Lucas Brain weekly Learning Loop report**
+  - id: `f4c499e85eac`
+  - status/cadência: active; `15 12 * * 1`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: Brain governance/Hermes ops
+  - runtime recomendado: /opt/data
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **main — Hermes Brain Operating Layer structural watchdog**
+  - id: `d03fa04e1188`
+  - status/cadência: active; `10 11 * * *`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: Brain governance/Hermes ops
+  - runtime recomendado: /opt/data
+  - nota: baixo/ok
+- **main — Hermes Brain Runtime Truth Reconciler**
+  - id: `2404c0766d33`
+  - status/cadência: active; `20 11 * * *`
+  - entrega/tipo: `local`; agent
+  - dono lógico: Brain governance/Hermes ops
+  - runtime recomendado: /opt/data
+  - nota: baixo/ok
+- **main — LK WhatsApp Hermes responder regression watchdog**
+  - id: `a5d7a392eed9`
+  - status/cadência: active; `*/30 * * * *`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: Mordomo/LK atendimento
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: runtime atual diverge do dono recomendado
+- **main — Relatório Hermes diário 23h + 02h para Lucas**
+  - id: `98478b820720`
+  - status/cadência: active; `30 5 * * *`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: Brain governance/Hermes ops
+  - runtime recomendado: /opt/data
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **main — Hermes Brain strict-runtime guard watchdog**
+  - id: `d9badcd83411`
+  - status/cadência: active; `0 10 * * *`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: Brain governance/Hermes ops
+  - runtime recomendado: /opt/data
+  - nota: baixo/ok
+- **lk-growth — LK Growth OS Weekly Growth Review**
+  - id: `738d3deabaeb`
+  - status/cadência: active; `0 13 * * 1`
+  - entrega/tipo: `telegram`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **lk-growth — LK Growth OS GMC Review read-only**
+  - id: `1240644c5f3f`
+  - status/cadência: active; `0 12 * * 4`
+  - entrega/tipo: `telegram`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **lk-growth — LK Growth OS SEO/CRO impact review — SEO title/meta P1 packets**
+  - id: `c45cda5fe2df`
+  - status/cadência: active; `once at 2026-05-25 14:34`
+  - entrega/tipo: `telegram`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK CRO dev preview impact review — Onitsuka/NB/Kill Bill**
+  - id: `3526b59ca052`
+  - status/cadência: active; `once at 2026-05-26 12:00`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK D+7 review — botão Compre Já branco PDP**
+  - id: `61717aaf7c61`
+  - status/cadência: active; `once at 2026-05-26 15:30`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK D+7 review — PDP CRO production promotion 2026-05-19**
+  - id: `9834f69e3541`
+  - status/cadência: active; `once at 2026-05-26 15:30`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK PDP CRO hotfix D+7 review — trustbar/reviews/tryon**
+  - id: `d34a61f3bcd9`
+  - status/cadência: active; `once at 2026-05-26 15:45`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK PDP preorder compact hotfix D+7 review**
+  - id: `3c6547609c35`
+  - status/cadência: active; `once at 2026-05-26 16:05`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK n8n checkout abandonado hardening impact review**
+  - id: `20affa4dcba6`
+  - status/cadência: active; `once at 2026-05-27 17:50`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK cart intent phase 2 — monitor 90min**
+  - id: `350be0e438c7`
+  - status/cadência: paused; `once in 30m`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK cart intent v2.2 cache/event monitor**
+  - id: `015cb75e8e91`
+  - status/cadência: paused; `once in 15m`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK cart intent Crisp REST identity review D+7**
+  - id: `2fd730af8433`
+  - status/cadência: active; `once at 2026-05-27 12:00`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK Recovery OS T1 go-live D+7 impact review**
+  - id: `a215814309a2`
+  - status/cadência: active; `once at 2026-05-28 12:00`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK Recovery OS production tracker propagation monitor**
+  - id: `36694eae598e`
+  - status/cadência: paused; `once in 15m`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK Recovery OS cart intent controlled LIVE runner**
+  - id: `fdc9ad165daa`
+  - status/cadência: paused; `every 30m`
+  - entrega/tipo: `origin`; script/no_agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **lk-growth — LK Recovery OS checkout_started webhook D+7 impact review**
+  - id: `644f8a37e250`
+  - status/cadência: active; `once in 7d`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK GEO llms.txt root D+7 impact review**
+  - id: `e87932cda969`
+  - status/cadência: active; `once at 2026-05-29 13:45`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK SEO/GEO Experiment Ledger — weekly impact review**
+  - id: `de3a45d36040`
+  - status/cadência: active; `30 13 * * 5`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **lk-growth — LK collection GEO FAQ production D+7 impact review**
+  - id: `cd5f548bfe49`
+  - status/cadência: active; `once at 2026-05-29 18:45`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK Auth Hub D+7 impact review**
+  - id: `b58683155a65`
+  - status/cadência: active; `once at 2026-05-29 19:11`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK blog boutique premium D+7 impact review**
+  - id: `e0f45429a4f7`
+  - status/cadência: active; `once in 7d`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK NB blog rewrite D+7 impact review**
+  - id: `c90e2186b0a0`
+  - status/cadência: active; `once in 7d`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK GEO Source Pages D+7 Impact Review**
+  - id: `e0088791bb3b`
+  - status/cadência: active; `once at 2026-05-30 10:00`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK D+7 impact review — Adidas SL 72 OG vs RS GEO page table**
+  - id: `0ab9cd485d15`
+  - status/cadência: active; `once in 7d`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK D+7 impact review — Packet D GEO Source Pages**
+  - id: `31b40105c4e5`
+  - status/cadência: active; `once at 2026-05-30 10:30`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **lk-growth — LK Menu Drawer Production D+7 Review**
+  - id: `f81883cce339`
+  - status/cadência: active; `once at 2026-05-30 13:00`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: LK Growth
+  - runtime recomendado: /opt/data/profiles/lk-growth
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+- **mordomo — Mordomo global WhatsApp watcher — Lucas pessoal**
+  - id: `6f4c913082db`
+  - status/cadência: active; `every 5m`
+  - entrega/tipo: `origin`; script/no_agent
+  - dono lógico: Mordomo
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **mordomo — Zipper Gmail draft engine — safe draft-only**
+  - id: `5bbe5169fe62`
+  - status/cadência: active; `every 15m`
+  - entrega/tipo: `local`; agent
+  - dono lógico: Zipper via Mordomo/read-only
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: baixo/ok
+- **mordomo — Mordomo global Calendar watcher**
+  - id: `fe5cf7f1b228`
+  - status/cadência: active; `every 15m`
+  - entrega/tipo: `origin`; script/no_agent
+  - dono lógico: Mordomo
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **mordomo — Mordomo CRM local sync**
+  - id: `daf97feec481`
+  - status/cadência: active; `every 10m`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: Mordomo
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: baixo/ok
+- **mordomo — Mordomo Decision Inbox digest**
+  - id: `e46ea230f0cf`
+  - status/cadência: active; `0 9 * * *`
+  - entrega/tipo: `origin`; script/no_agent
+  - dono lógico: Mordomo
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **mordomo — Mordomo A2 executor scaffold**
+  - id: `058df00bf941`
+  - status/cadência: paused; `every 30m`
+  - entrega/tipo: `origin`; script/no_agent
+  - dono lógico: Mordomo
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **mordomo — Pixel AI Hub / Brainzinho daily learning scan**
+  - id: `c358f8f56a26`
+  - status/cadência: active; `30 23 * * *`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: legado/revisar
+  - runtime recomendado: revisar se ainda existe dono lógico
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **mordomo — Zipper direct main e-mail monitor — zipper@zippergaleria.com.br**
+  - id: `20972b3c7595`
+  - status/cadência: active; `every 60m`
+  - entrega/tipo: `origin`; script/no_agent
+  - dono lógico: Zipper via Mordomo/read-only
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **mordomo — Mordomo WhatsApp pessoal resumo 17h BRT**
+  - id: `3bcbf3be9b73`
+  - status/cadência: active; `0 20 * * *`
+  - entrega/tipo: `origin`; script/no_agent
+  - dono lógico: Mordomo
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **mordomo — Zipper artist PDFs local-only known-answer ingest**
+  - id: `f537bb9c505b`
+  - status/cadência: active; `every 30m`
+  - entrega/tipo: `local`; script/no_agent
+  - dono lógico: Zipper via Mordomo/read-only
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: baixo/ok
+- **mordomo — ZPR Enquiry Form watcher — approval-gated**
+  - id: `871b9bc5617a`
+  - status/cadência: active; `every 5m`
+  - entrega/tipo: `origin`; script/no_agent
+  - dono lógico: Zipper via Mordomo/read-only
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão
+- **mordomo — Follow-up Leticia Albuquerque — importação/Portugal**
+  - id: `1f734765abc4`
+  - status/cadência: active; `once at 2026-05-28 12:00`
+  - entrega/tipo: `origin`; agent
+  - dono lógico: Mordomo
+  - runtime recomendado: /opt/data/profiles/mordomo
+  - nota: entrega pode gerar ruído/decisão em Telegram; revisar silent-OK vs decisão; one-shot: candidato a limpeza após confirmar execução/expiração e aprovar
+
+## Próxima fase recomendada
+
+Preparar um approval packet separado para três ações possíveis, sem executar ainda:
+
+1. Reduzir ruído: mover entregas operacionais comprovadamente silent-OK para `local`.
+2. Limpar one-shots expirados/pausados após backup do registry.
+3. Migrar apenas rotinas com dono inequívoco para o profile correto, com rollback.
+
+## Guardrails preservados
+
+- Sem alteração em cron registry.
+- Sem restart de gateway/Docker/VPS.
+- Sem escrita em Shopify/GMC/WhatsApp/e-mail/Supabase/etc.
+- Sem exposição de credenciais.

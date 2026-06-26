@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T02:28:18.652021+00:00",
+  "generated_at": "2026-05-12T10:53:23.304202+00:00",
   "scope": "LK OS Mission Control snapshot v1",
   "status": "mission_control_active_approved_gmc_write",
   "summary": {
@@ -15,14 +15,14 @@
     "pending_future": 8,
     "klaviyo_campaign_status": "Draft",
     "sourcing_ready_after_manual_approval": 4,
-    "gmc_queue_items": 977,
-    "gmc_p1_items": 977,
+    "gmc_queue_items": 972,
+    "gmc_p1_items": 972,
     "gmc_correction_packages": 6,
     "gmc_correction_p0_packages": 1,
     "gmc_p0_rows_reviewed": 32,
     "gmc_p0_pdp_http_200_rows": 32,
     "gmc_required_attr_rows_reviewed": 80,
-    "gmc_required_attr_preview_rows": 80,
+    "gmc_required_attr_preview_rows": 71,
     "gmc_required_attr_rows_applied": 80,
     "gmc_required_attr_rows_verified": 80,
     "gmc_required_attr_rows_not_matching": 0,
@@ -155,14 +155,14 @@
     "status": "required_attrs_applied_verified_processing_status_lag",
     "next_safe_action": "80 required-attribute rows applied and verified in Content API product resources; monitor Merchant item diagnostics until status issues clear after reprocessing.",
     "blocked": "Further Merchant/feed/Shopify/GSC writes without new preview/approval",
-    "queue_items": 977,
-    "p1_items": 977,
+    "queue_items": 972,
+    "p1_items": 972,
     "correction_packages": 6,
     "p0_packages": 1,
     "p0_rows_reviewed": 32,
     "p0_pdp_http_200_rows": 32,
     "required_attr_rows_reviewed": 80,
-    "required_attr_preview_rows": 80,
+    "required_attr_preview_rows": 71,
     "required_attr_rows_applied": 80,
     "required_attr_rows_verified": 80
   },
@@ -385,13 +385,13 @@
       "evidence": {
         "merchant_center_id_present": true,
         "product_statuses_read": 5000,
-        "queue_items": 977,
-        "p1_items": 977,
+        "queue_items": 972,
+        "p1_items": 972,
         "p2_items": 0,
-        "products_with_item_issues": 977,
-        "products_with_disapproved_destination": 726,
+        "products_with_item_issues": 972,
+        "products_with_disapproved_destination": 717,
         "products_crossing_gsc_priority": 1,
-        "issue_groups": 17,
+        "issue_groups": 18,
         "writes_allowed_now": 0
       }
     },
@@ -402,14 +402,14 @@
       "detail": "GMC correction preview must package issues without permitting writes.",
       "evidence": {
         "source_product_statuses_read": 5000,
-        "source_queue_items": 963,
-        "source_p1_items": 963,
-        "source_products_with_disapproved_destination": 708,
+        "source_queue_items": 957,
+        "source_p1_items": 957,
+        "source_products_with_disapproved_destination": 586,
         "packages": 6,
         "p0_packages": 1,
         "p1_packages": 3,
         "p2_packages": 2,
-        "preview_only_items_covered": 963,
+        "preview_only_items_covered": 957,
         "write_allowed_now": 0,
         "production_writes": 0,
         "external_sends_or_contacts": 0,
@@ -450,11 +450,12 @@
       "detail": "GMC required-attributes preview must propose local corrections without writes.",
       "evidence": {
         "required_attr_rows_reviewed": 80,
-        "shopify_matched_rows": 80,
-        "supplemental_feed_preview_rows": 80,
-        "manual_review_rows": 0,
+        "shopify_matched_rows": 71,
+        "supplemental_feed_preview_rows": 71,
+        "manual_review_rows": 9,
         "confidence_counts": {
-          "medium": 80
+          "low": 9,
+          "medium": 71
         },
         "missing_attribute_counts": {
           "age group": 80,
@@ -466,9 +467,9 @@
           "kids": 1
         },
         "suggested_gender_counts": {
-          "male": 7,
-          "unisex": 70,
-          "female": 3
+          "unisex": 68,
+          "male": 4,
+          "female": 8
         },
         "write_allowed_now": 0,
         "production_writes": 0,

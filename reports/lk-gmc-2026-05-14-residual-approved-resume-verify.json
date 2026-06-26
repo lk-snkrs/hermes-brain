@@ -1,0 +1,2616 @@
+{
+  "generated_at": "2026-05-14T19:24:08.046324+00:00",
+  "status": "completed_with_verify_mismatches",
+  "source_progress_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-residual-approved-executor-progress-20260514T190600Z.jsonl",
+  "source_rollback_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-residual-approved-executor-rollback-20260514T190600Z.json",
+  "local_repair_progress_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-residual-approved-resume-verify-local-repair-20260514T191747Z.jsonl",
+  "summary": {
+    "source_progress_lines": 182,
+    "source_execution_counts": {
+      "patched": 180,
+      "error": 2
+    },
+    "source_kind_counts": {
+      "price_saleprice_shopify_variant": 160,
+      "missing_attribute_completion": 17,
+      "image_link_repair": 5
+    },
+    "local_repairs": {
+      "local_content_upsert_patched": 2
+    },
+    "verify_counts": {
+      "read": 182
+    },
+    "verify_matches": 30,
+    "verify_mismatches": 152,
+    "productstatuses_read": 23277,
+    "target_issue_instances_after": {
+      "price_updated": 915,
+      "strikethrough_price_updated": 228,
+      "missing_item_attribute_for_product_type": 44,
+      "image_single_color": 8,
+      "image_link_broken": 3,
+      "landing_page_error": 3
+    },
+    "target_issue_instances_after_on_acted_ids": {
+      "price_updated": 450,
+      "strikethrough_price_updated": 48,
+      "image_single_color": 8,
+      "image_link_broken": 3
+    },
+    "acted_ids_with_target_issue_after": 157
+  },
+  "local_repairs": [
+    {
+      "product_id": "local:pt:BR:LIA_U9060PSD-1",
+      "kind": "image_link_repair",
+      "status": "error",
+      "error": "only_online_supported local:pt:BR:LIA_U9060PSD-1",
+      "attrs": {
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8188438.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4471147.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-3473591.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-7639534.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8031813.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6608052.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4562597.png?v=1759338167"
+        ]
+      },
+      "resume_status": "local_content_upsert_patched",
+      "response_id": "local:pt:BR:LIA_U9060PSD-1",
+      "response_imageLink": null
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060PSD-5",
+      "kind": "image_link_repair",
+      "status": "error",
+      "error": "only_online_supported local:pt:BR:LIA_U9060PSD-5",
+      "attrs": {
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8188438.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4471147.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-3473591.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-7639534.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8031813.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6608052.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4562597.png?v=1759338167"
+        ]
+      },
+      "resume_status": "local_content_upsert_patched",
+      "response_id": "local:pt:BR:LIA_U9060PSD-5",
+      "response_imageLink": null
+    }
+  ],
+  "verify_results": [
+    {
+      "product_id": "online:pt:BR:01424-002-2",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "8999.99",
+          "actual": "5999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:205759 610-9",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "price": {
+          "expected": "749.90",
+          "actual": "749.90",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:205759610-9",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "749.90",
+          "actual": "1399.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:553558030",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "price": {
+          "expected": "2399.99",
+          "actual": "2399.99",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:553558053-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "1999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:553558053-42",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "1999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:553558140-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1599.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088108",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2799.99",
+          "actual": "2449.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088108-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2799.99",
+          "actual": "2449.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088108-12",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2799.99",
+          "actual": "2449.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088134-40",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088134-44",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-5",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2449.90",
+          "actual": "2599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2449.90",
+          "actual": "2599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-8",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2449.90",
+          "actual": "2599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-9",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2449.90",
+          "actual": "2599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CDGP1-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "1199.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CDGP1-2",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "1199.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CJ5378700-36",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "6099.99",
+          "actual": "5499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CJ5378700-37",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "5899.99",
+          "actual": "5499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CJ5378700-40",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "8499.99",
+          "actual": "5499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CP9652-6",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "3499.99",
+          "actual": "2999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CU1726100",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2199.99",
+          "actual": "1999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CU1726100-36",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2199.99",
+          "actual": "1999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CU1726100-42",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2199.99",
+          "actual": "1999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CU3244100-41",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "22999.99",
+          "actual": "14999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:CZ2239600-3",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "6999.90",
+          "actual": "4699.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DC0774042",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "1999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DC0774141-37",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "1999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DC0774801-8",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "price": {
+          "expected": "1600.00",
+          "actual": "1600.00",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1599.99",
+          "actual": "1599.99",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2699.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-3",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2699.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-35",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2699.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-39",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2699.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-4",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2699.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DD9335641-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2699.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DH4401101",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "price": {
+          "expected": "1999.99",
+          "actual": "1999.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1599.99",
+          "actual": "1599.99",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DN1803300-37",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DN1803300-42.5",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "price": {
+          "expected": "2149.99",
+          "actual": "2149.99",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DN1803300-44",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1749.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DN1803300-45",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1699.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DQ4040400-39",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2999.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DQ8394301-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2249.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DQ8394301-38",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2249.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DQ8394301-6",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2249.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-2",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "1799.99",
+          "actual": "1749.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-4",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "1799.99",
+          "actual": "1749.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-5",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "1799.99",
+          "actual": "1749.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DV1299104-6",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "1799.99",
+          "actual": "1749.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2999.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-2",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2999.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-3",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2999.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-4",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2999.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485020-6",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2999.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485031-2",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "price": {
+          "expected": "2400.00",
+          "actual": "2400.00",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "2299.90",
+          "actual": "2299.90",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485031-3",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2299.90",
+          "actual": "2199.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485031-5",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2399.90",
+          "actual": "2199.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2249.90",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-2",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2249.90",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-5",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "1999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-gs-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2249.90",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-gs-2",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "1999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:DZ5485400-gs-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2249.90",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FB9907102-4",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "price": {
+          "expected": "1999.99",
+          "actual": "1999.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1999.90",
+          "actual": "1999.90",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FB9927200-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1999.99",
+          "actual": "2499.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FB9927200-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1999.99",
+          "actual": "2499.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FD2596600-34",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2499.99",
+          "actual": "2099.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FD2596600-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "2499.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "2499.99",
+          "actual": "2099.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FD8776800",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2999.99",
+          "actual": "4799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FD8776800-41",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "6999.99",
+          "actual": "3499.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "5999.99",
+          "actual": null,
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FD8776800-8",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "6999.99",
+          "actual": "3499.99",
+          "match": false
+        },
+        "salePrice": {
+          "expected": "4799.99",
+          "actual": null,
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FJ4555100",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2199.99",
+          "actual": "2099.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-4",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "4999.90",
+          "actual": "4749.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "4999.90",
+          "actual": "4749.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FN0344-001-8",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "4999.90",
+          "actual": "4749.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FQ9117-400-5",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2199.90",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FQ9117-400-6",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2199.90",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FZ5045091",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.90",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-40",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "2799.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-41",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "2799.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-42",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "2799.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:GY7164-45",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "2799.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HQ2060-41",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "3499.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HQ2060-42",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2499.99",
+          "actual": "3499.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HQ6447",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1249.99",
+          "actual": "1499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-211",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-212",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HQ6998-213",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV0823-119",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "4499.99",
+          "actual": "3499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-10",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-2",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-3",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-4",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-5",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-6",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-8",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-001-9",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-600-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-600-2",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-600-4",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-600-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-600-8",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-600-9",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-11",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-14",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-15",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-2",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "8499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-4",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-5",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-6",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-8",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-700-9",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3999.99",
+          "actual": "6999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:ID0440-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1749.99",
+          "actual": "1449.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:ID0440-3",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1749.99",
+          "actual": "1449.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "2249.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-2",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "2249.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-3",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "2249.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:ID2529-8",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "2249.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:IF9734-9",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2199.99",
+          "actual": "2499.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:IG5932",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-4",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-5",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:IG5932-6",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1799.99",
+          "actual": "1599.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JQ6445-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "price": {
+          "expected": "1499.99",
+          "actual": "1499.99",
+          "match": true
+        },
+        "salePrice": {
+          "expected": "1299.99",
+          "actual": "1299.99",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:PLAYPRINTED-3",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "1199.99",
+          "actual": "999.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:TB010061-713-4",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:TB010061-713-5",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:TB010061-713-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "2999.99",
+          "actual": "1799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060504",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2399.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060505",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2399.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060506",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2399.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060507",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "3499.99",
+          "actual": "2399.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2399.99",
+          "actual": "2799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-10",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2399.99",
+          "actual": "2799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-11",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2399.99",
+          "actual": "2799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-2",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2399.99",
+          "actual": "2799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-3",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2399.99",
+          "actual": "2799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-4",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2399.99",
+          "actual": "2799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-5",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2399.99",
+          "actual": "2799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-6",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2399.99",
+          "actual": "2799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2399.99",
+          "actual": "2799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-8",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2399.99",
+          "actual": "2799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-9",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "2399.99",
+          "actual": "2799.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:VN0009QC6BT",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "999.99",
+          "actual": "899.90",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:fn5030-001-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "salePrice": {
+          "expected": "1999.99",
+          "actual": "1899.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-1",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-12",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-14",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-15",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-3",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-4",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-5",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-6",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-7",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-8",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:w6334r-9",
+      "kind": "price_saleprice_shopify_variant",
+      "verify_status": "read",
+      "match_expected": false,
+      "detail": {
+        "price": {
+          "expected": "999.99",
+          "actual": "629.99",
+          "match": false
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3MF30665476",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3MF30665477",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3MF30665478",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3MF30665479",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3MF30665480",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3MF30665481",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3MF30665482",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3MF30665483",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3MF30665484",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3MF30665485",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3MF30665486",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:3MF30665487",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2464734-L",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2464734-M",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2464734-S",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2464734-XL",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:NUD-2464734-XS",
+      "kind": "missing_attribute_completion",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "color": {
+          "expected": "Preto",
+          "actual": "Preto",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060PSD-1",
+      "kind": "image_link_repair",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "imageLink": {
+          "expected": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+          "actual": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+          "match": true
+        },
+        "additionalImageLinks": {
+          "expected": [
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8188438.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4471147.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-3473591.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-7639534.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8031813.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6608052.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4562597.png?v=1759338167"
+          ],
+          "actual": [
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8188438.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4471147.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-3473591.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-7639534.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8031813.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6608052.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4562597.png?v=1759338167"
+          ],
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060PSD-5",
+      "kind": "image_link_repair",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "imageLink": {
+          "expected": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+          "actual": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+          "match": true
+        },
+        "additionalImageLinks": {
+          "expected": [
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8188438.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4471147.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-3473591.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-7639534.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8031813.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6608052.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4562597.png?v=1759338167"
+          ],
+          "actual": [
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8188438.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4471147.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-3473591.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-7639534.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8031813.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6608052.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4562597.png?v=1759338167"
+          ],
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:9914706510510919523",
+      "kind": "image_link_repair",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "imageLink": {
+          "expected": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-sb-dunk-low-pro-muni-lightning-denim-turquoise-turquesa-lk-ir1888-700-34-5473395.webp?v=1777990446",
+          "actual": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-sb-dunk-low-pro-muni-lightning-denim-turquoise-turquesa-lk-ir1888-700-34-5473395.webp?v=1777990446",
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060PSD-1",
+      "kind": "image_link_repair",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "imageLink": {
+          "expected": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+          "actual": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+          "match": true
+        },
+        "additionalImageLinks": {
+          "expected": [
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8188438.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4471147.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-3473591.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-7639534.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8031813.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6608052.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4562597.png?v=1759338167"
+          ],
+          "actual": [
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8188438.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4471147.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-3473591.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-7639534.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8031813.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6608052.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4562597.png?v=1759338167"
+          ],
+          "match": true
+        }
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060PSD-5",
+      "kind": "image_link_repair",
+      "verify_status": "read",
+      "match_expected": true,
+      "detail": {
+        "imageLink": {
+          "expected": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+          "actual": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+          "match": true
+        },
+        "additionalImageLinks": {
+          "expected": [
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8188438.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4471147.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-3473591.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-7639534.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8031813.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6608052.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4562597.png?v=1759338167"
+          ],
+          "actual": [
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8188438.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4471147.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-3473591.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-7639534.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8031813.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6608052.png?v=1759338167",
+            "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4562597.png?v=1759338167"
+          ],
+          "match": true
+        }
+      }
+    }
+  ],
+  "not_performed": [
+    "Shopify write",
+    "Tiny write",
+    "feed fetch/upload",
+    "campaign/message/send",
+    "bulk reapply after timeout"
+  ]
+}

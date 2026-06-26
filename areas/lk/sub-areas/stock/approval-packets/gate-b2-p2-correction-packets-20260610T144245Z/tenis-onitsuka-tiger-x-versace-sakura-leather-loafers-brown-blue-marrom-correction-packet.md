@@ -1,0 +1,104 @@
+# Gate B2 P2 — correction packet — tenis-onitsuka-tiger-x-versace-sakura-leather-loafers-brown-blue-marrom
+
+- title: `Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown Blue Marrom`
+- priority: `P2_saneamento`
+- lane: `TINY_DEPOSIT_PACKET`
+- proposed_action: Verificar mapeamento do depósito LK | CONTROLE ESTOQUE e preparar proposta; NÃO executar write sem aprovação escopada.
+- row_count: `101`
+- prefixes: `OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV, OXV`
+
+## Status counts
+- matched_exact_sku_stock_missing_deposit: `5`
+- matched_exact_sku_stock_resolved: `59`
+- shopify_variant_tiny_missing: `37`
+
+## Linhas principais
+- `OXV` | shopify_variant_tiny_missing | Shopify SKU `OXV` | Tiny `` id ``
+- `OXV-0587614-35` | shopify_variant_tiny_missing | Shopify SKU `OXV-0587614-35` | Tiny `` id ``
+- `OXV-2368606-35` | shopify_variant_tiny_missing | Shopify SKU `OXV-2368606-35` | Tiny `` id ``
+- `OXV-2733022-35` | shopify_variant_tiny_missing | Shopify SKU `OXV-2733022-35` | Tiny `` id ``
+- `OXV-3513694-35` | shopify_variant_tiny_missing | Shopify SKU `OXV-3513694-35` | Tiny `` id ``
+- `OXV-7659742-35` | shopify_variant_tiny_missing | Shopify SKU `OXV-7659742-35` | Tiny `` id ``
+- `OXV-8554206-35` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-8554206-35` | Tiny `OXV-8554206-35` id `1070120190` | saldo LK CONTROLE: 0.0
+- `OXV-0587614-355` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-0587614-355` | Tiny `OXV-0587614-355` id `1070119784` | saldo LK CONTROLE: 0.0
+- `OXV-2368606-355` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2368606-355` | Tiny `OXV-2368606-355` id `1070119709` | saldo LK CONTROLE: 0.0
+- `OXV-2733022-355` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2733022-355` | Tiny `OXV-2733022-355` id `1070119992` | saldo LK CONTROLE: 0.0
+- `OXV-3513694-355` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-3513694-355` | Tiny `OXV-3513694-355` id `1070120094` | saldo LK CONTROLE: 0.0
+- `OXV-7659742-355` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-7659742-355` | Tiny `OXV-7659742-355` id `1070119892` | saldo LK CONTROLE: 0.0
+- `OXV-8554206-355` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-8554206-355` | Tiny `OXV-8554206-355` id `1070120195` | saldo LK CONTROLE: 0.0
+- `OXV-0587614-36` | matched_exact_sku_stock_missing_deposit | Shopify SKU `OXV-0587614-36` | Tiny `OXV-0587614-36` id `1070119789`
+- `OXV-2368606-36` | shopify_variant_tiny_missing | Shopify SKU `OXV-2368606-36` | Tiny `` id ``
+- `OXV-2733022-36` | shopify_variant_tiny_missing | Shopify SKU `OXV-2733022-36` | Tiny `` id ``
+- `OXV-3513694-36` | shopify_variant_tiny_missing | Shopify SKU `OXV-3513694-36` | Tiny `` id ``
+- `OXV-7659742-36` | shopify_variant_tiny_missing | Shopify SKU `OXV-7659742-36` | Tiny `` id ``
+- `OXV-8554206-36` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-8554206-36` | Tiny `OXV-8554206-36` id `1070120200` | saldo LK CONTROLE: 0.0
+- `OXV-0587614-37` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-0587614-37` | Tiny `OXV-0587614-37` id `1070119796` | saldo LK CONTROLE: 0.0
+- `OXV-2368606-37` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2368606-37` | Tiny `OXV-2368606-37` id `1070119719` | saldo LK CONTROLE: 0.0
+- `OXV-2733022-37` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2733022-37` | Tiny `OXV-2733022-37` id `1070120002` | saldo LK CONTROLE: 0.0
+- `OXV-3513694-37` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-3513694-37` | Tiny `OXV-3513694-37` id `1070120105` | saldo LK CONTROLE: 0.0
+- `OXV-7659742-37` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-7659742-37` | Tiny `OXV-7659742-37` id `1070119902` | saldo LK CONTROLE: 0.0
+- `OXV-8554206-37` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-8554206-37` | Tiny `OXV-8554206-37` id `1070120205` | saldo LK CONTROLE: 0.0
+- `OXV-0587614-375` | matched_exact_sku_stock_missing_deposit | Shopify SKU `OXV-0587614-375` | Tiny `OXV-0587614-375` id `1070119803`
+- `OXV-2368606-375` | shopify_variant_tiny_missing | Shopify SKU `OXV-2368606-375` | Tiny `` id ``
+- `OXV-2733022-375` | shopify_variant_tiny_missing | Shopify SKU `OXV-2733022-375` | Tiny `` id ``
+- `OXV-3513694-375` | shopify_variant_tiny_missing | Shopify SKU `OXV-3513694-375` | Tiny `` id ``
+- `OXV-7659742-375` | shopify_variant_tiny_missing | Shopify SKU `OXV-7659742-375` | Tiny `` id ``
+- `OXV-8554206-375` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-8554206-375` | Tiny `OXV-8554206-375` id `1070120210` | saldo LK CONTROLE: 0.0
+- `OXV-0587614-38` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-0587614-38` | Tiny `OXV-0587614-38` id `1070119809` | saldo LK CONTROLE: 0.0
+- `OXV-2368606-38` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2368606-38` | Tiny `OXV-2368606-38` id `1070119729` | saldo LK CONTROLE: 0.0
+- `OXV-2733022-38` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2733022-38` | Tiny `OXV-2733022-38` id `1070120012` | saldo LK CONTROLE: 1.0
+- `OXV-3513694-38` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-3513694-38` | Tiny `OXV-3513694-38` id `1070120115` | saldo LK CONTROLE: 1.0
+- `OXV-7659742-38` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-7659742-38` | Tiny `OXV-7659742-38` id `1070119912` | saldo LK CONTROLE: 0.0
+- `OXV-8554206-38` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-8554206-38` | Tiny `OXV-8554206-38` id `1070120215` | saldo LK CONTROLE: 0.0
+- `OXV-0587614-39` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-0587614-39` | Tiny `OXV-0587614-39` id `1070119814` | saldo LK CONTROLE: 0.0
+- `OXV-2368606-39` | shopify_variant_tiny_missing | Shopify SKU `OXV-2368606-39` | Tiny `` id ``
+- `OXV-2733022-39` | shopify_variant_tiny_missing | Shopify SKU `OXV-2733022-39` | Tiny `` id ``
+- `OXV-2785246-39` | shopify_variant_tiny_missing | Shopify SKU `OXV-2785246-39` | Tiny `` id ``
+- `OXV-3513694-39` | shopify_variant_tiny_missing | Shopify SKU `OXV-3513694-39` | Tiny `` id ``
+- `OXV-7659742-39` | shopify_variant_tiny_missing | Shopify SKU `OXV-7659742-39` | Tiny `` id ``
+- `OXV-8554206-39` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-8554206-39` | Tiny `OXV-8554206-39` id `1070120220` | saldo LK CONTROLE: 0.0
+- `OXV-0587614-395` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-0587614-395` | Tiny `OXV-0587614-395` id `1070119819` | saldo LK CONTROLE: 0.0
+- `OXV-2368606-395` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2368606-395` | Tiny `OXV-2368606-395` id `1070119739` | saldo LK CONTROLE: 0.0
+- `OXV-2733022-395` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2733022-395` | Tiny `OXV-2733022-395` id `1070120022` | saldo LK CONTROLE: 1.0
+- `OXV-3513694-395` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-3513694-395` | Tiny `OXV-3513694-395` id `1070120125` | saldo LK CONTROLE: 1.0
+- `OXV-7659742-395` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-7659742-395` | Tiny `OXV-7659742-395` id `1070119922` | saldo LK CONTROLE: 0.0
+- `OXV-8554206-395` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-8554206-395` | Tiny `OXV-8554206-395` id `1070120225` | saldo LK CONTROLE: 0.0
+- `OXV-0587614-40` | matched_exact_sku_stock_missing_deposit | Shopify SKU `OXV-0587614-40` | Tiny `OXV-0587614-40` id `1070119825`
+- `OXV-2368606-40` | shopify_variant_tiny_missing | Shopify SKU `OXV-2368606-40` | Tiny `` id ``
+- `OXV-2733022-40` | shopify_variant_tiny_missing | Shopify SKU `OXV-2733022-40` | Tiny `` id ``
+- `OXV-2785246-40` | shopify_variant_tiny_missing | Shopify SKU `OXV-2785246-40` | Tiny `` id ``
+- `OXV-3513694-40` | shopify_variant_tiny_missing | Shopify SKU `OXV-3513694-40` | Tiny `` id ``
+- `OXV-7659742-40` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-7659742-40` | Tiny `OXV-7659742-40` id `1070119927` | saldo LK CONTROLE: 0.0
+- `OXV-8554206-40` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-8554206-40` | Tiny `OXV-8554206-40` id `1070120230` | saldo LK CONTROLE: 0.0
+- `OXV-0587614-405` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-0587614-405` | Tiny `OXV-0587614-405` id `1070119830` | saldo LK CONTROLE: 0.0
+- `OXV-2368606-405` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2368606-405` | Tiny `OXV-2368606-405` id `1070119752` | saldo LK CONTROLE: 0.0
+- `OXV-2733022-405` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2733022-405` | Tiny `OXV-2733022-405` id `1070120032` | saldo LK CONTROLE: 0.0
+- `OXV-2785246-405` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2785246-405` | Tiny `OXV-2785246-405` id `1070120358` | saldo LK CONTROLE: 0.0
+- `OXV-3513694-405` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-3513694-405` | Tiny `OXV-3513694-405` id `1070120135` | saldo LK CONTROLE: 0.0
+- `OXV-7659742-405` | matched_exact_sku_stock_missing_deposit | Shopify SKU `OXV-7659742-405` | Tiny `OXV-7659742-405` id `1070119932`
+- `OXV-8554206-405` | shopify_variant_tiny_missing | Shopify SKU `OXV-8554206-405` | Tiny `` id ``
+- `OXV-2785246-41` | shopify_variant_tiny_missing | Shopify SKU `OXV-2785246-41` | Tiny `` id ``
+- `OXV-0587614-415` | shopify_variant_tiny_missing | Shopify SKU `OXV-0587614-415` | Tiny `` id ``
+- `OXV-2733022-415` | shopify_variant_tiny_missing | Shopify SKU `OXV-2733022-415` | Tiny `` id ``
+- `OXV-2785246-415` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2785246-415` | Tiny `OXV-2785246-415` id `1070120368` | saldo LK CONTROLE: 0.0
+- `OXV-3513694-415` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-3513694-415` | Tiny `OXV-3513694-415` id `1070120140` | saldo LK CONTROLE: 0.0
+- `OXV-7659742-415` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-7659742-415` | Tiny `OXV-7659742-415` id `1070119937` | saldo LK CONTROLE: 0.0
+- `OXV-8554206-415` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-8554206-415` | Tiny `OXV-8554206-415` id `1070120240` | saldo LK CONTROLE: 0.0
+- `OXV-0587614-42` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-0587614-42` | Tiny `OXV-0587614-42` id `1070119840` | saldo LK CONTROLE: 0.0
+- `OXV-2733022-42` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2733022-42` | Tiny `OXV-2733022-42` id `1070120043` | saldo LK CONTROLE: 0.0
+- `OXV-2785246-42` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2785246-42` | Tiny `OXV-2785246-42` id `1070120373` | saldo LK CONTROLE: 0.0
+- `OXV-3513694-42` | matched_exact_sku_stock_missing_deposit | Shopify SKU `OXV-3513694-42` | Tiny `OXV-3513694-42` id `1070120145`
+- `OXV-7659742-42` | shopify_variant_tiny_missing | Shopify SKU `OXV-7659742-42` | Tiny `` id ``
+- `OXV-8554206-42` | shopify_variant_tiny_missing | Shopify SKU `OXV-8554206-42` | Tiny `` id ``
+- `OXV-0587614-425` | shopify_variant_tiny_missing | Shopify SKU `OXV-0587614-425` | Tiny `` id ``
+- `OXV-2733022-425` | shopify_variant_tiny_missing | Shopify SKU `OXV-2733022-425` | Tiny `` id ``
+- `OXV-2785246-425` | matched_exact_sku_stock_resolved | Shopify SKU `OXV-2785246-425` | Tiny `OXV-2785246-425` id `1070120378` | saldo LK CONTROLE: 0.0
+- ... +21 linhas no JSON/CSV agregado
+
+## Guardrails
+- Tiny write: `0`
+- Shopify write: `0`
+- Writes externos: `0`
+- Cron/webhook/runtime novo: `0`
+- Promessa de disponibilidade pública: `0`
+- Rollback: descartar artefatos locais; nada externo alterado.

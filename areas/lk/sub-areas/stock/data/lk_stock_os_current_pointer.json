@@ -1,0 +1,323 @@
+{
+  "artifacts": {
+    "csv": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/reports/lk-stock-os-identity-resolution-20260610T172139Z.csv",
+    "demand_score_csv": "areas/lk/sub-areas/stock/reports/lk-stock-os-demand-score-20260610T190741Z.csv",
+    "demand_score_guide": "areas/lk/sub-areas/stock/references/lk-stock-os-demand-score-guide-20260610.md",
+    "demand_score_json": "areas/lk/sub-areas/stock/reports/lk-stock-os-demand-score-20260610T190741Z.json",
+    "demand_score_packet": "areas/lk/sub-areas/stock/approval-packets/lk-stock-os-demand-score-20260610T190741Z.md",
+    "full_live_match_tiny_stock_csv": "areas/lk/sub-areas/stock/reports/lk-stock-os-full-live-match-tiny-stock-20260611T012728Z.csv",
+    "full_live_match_tiny_stock_db": "areas/lk/sub-areas/stock/data/lk_stock_os_current_full_live_match_tiny_stock_20260611T012728Z.db",
+    "full_live_match_tiny_stock_guide": "areas/lk/sub-areas/stock/references/lk-stock-os-full-live-match-tiny-stock-guide-20260611.md",
+    "full_live_match_tiny_stock_json": "areas/lk/sub-areas/stock/reports/lk-stock-os-full-live-match-tiny-stock-20260611T012728Z.json",
+    "full_live_match_tiny_stock_md": "areas/lk/sub-areas/stock/reports/lk-stock-os-full-live-match-tiny-stock-20260611T012728Z.md",
+    "full_live_match_tiny_stock_packet": "areas/lk/sub-areas/stock/approval-packets/lk-stock-os-full-live-match-tiny-stock-20260611T012728Z.md",
+    "guide": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/references/lk-stock-os-identity-resolution-guide-20260610.md",
+    "identity_repair_json": "areas/lk/sub-areas/stock/reports/lk-stock-os-identity-repair-20260612T9060REPAIR3.json",
+    "internal_consult_overlay_csv": "areas/lk/sub-areas/stock/reports/lk-stock-os-internal-consult-overlay-20260616T_INTERNAL_CONSULT_FIX.csv",
+    "internal_consult_overlay_db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/lk_stock_os_current_internal_consult_overlay_20260616T_INTERNAL_CONSULT_FIX.db",
+    "internal_consult_overlay_guide": "areas/lk/sub-areas/stock/references/lk-stock-os-internal-consult-overlay-guide-20260616.md",
+    "internal_consult_overlay_json": "areas/lk/sub-areas/stock/reports/lk-stock-os-internal-consult-overlay-20260616T_INTERNAL_CONSULT_FIX.json",
+    "internal_consult_overlay_md": "areas/lk/sub-areas/stock/reports/lk-stock-os-internal-consult-overlay-20260616T_INTERNAL_CONSULT_FIX.md",
+    "json": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/reports/lk-stock-os-identity-resolution-20260610T172139Z.json",
+    "local_identity_alias_meia_saint_studio_pima_branco_csv": "areas/lk/sub-areas/stock/reports/lk-stock-local-identity-alias-meia-saint-studio-pima-branco-20260612T005354Z.csv",
+    "local_identity_alias_meia_saint_studio_pima_branco_json": "areas/lk/sub-areas/stock/reports/lk-stock-local-identity-alias-meia-saint-studio-pima-branco-20260612T005354Z.json",
+    "local_identity_alias_meia_saint_studio_pima_branco_packet": "areas/lk/sub-areas/stock/approval-packets/lk-stock-local-identity-alias-meia-saint-studio-pima-branco-20260612T005354Z.md",
+    "p0p1_queue_csv": "areas/lk/sub-areas/stock/reports/lk-stock-os-p0-p1-operational-queue-20260610T192328Z.csv",
+    "p0p1_queue_guide": "areas/lk/sub-areas/stock/references/lk-stock-os-p0-p1-operational-queue-guide-20260610.md",
+    "p0p1_queue_json": "areas/lk/sub-areas/stock/reports/lk-stock-os-p0-p1-operational-queue-20260610T192328Z.json",
+    "p0p1_queue_md": "areas/lk/sub-areas/stock/reports/lk-stock-os-p0-p1-operational-queue-20260610T192328Z.md",
+    "p0p1_queue_packet": "areas/lk/sub-areas/stock/approval-packets/lk-stock-os-p0-p1-operational-queue-20260610T192328Z.md",
+    "p0p1_queue_worker_dir": "areas/lk/sub-areas/stock/reports/gate-b3-p0p1-operational-queue-workers-20260610T_P0P1_QUEUE_WORKERS",
+    "packet_md": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/approval-packets/lk-stock-os-identity-resolution-20260610T172139Z.md",
+    "pointer": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/lk_stock_os_current_pointer.json",
+    "script": "areas/lk/sub-areas/stock/scripts/gate_b3_build_unified_local_stock_db.py",
+    "sequential_a_p0_csv": "areas/lk/sub-areas/stock/reports/lk-stock-os-sequential-A-p0-preview-20260610TSEQBA.csv",
+    "sequential_b_p1_csv": "areas/lk/sub-areas/stock/reports/lk-stock-os-sequential-B-p1-identity-20260610TSEQBA.csv",
+    "sequential_b_then_a_db": "areas/lk/sub-areas/stock/data/lk_stock_os_current_p1_identity_then_p0_preview_20260610TSEQBA.db",
+    "sequential_b_then_a_guide": "areas/lk/sub-areas/stock/references/lk-stock-os-sequential-b-then-a-guide-20260610.md",
+    "sequential_b_then_a_json": "areas/lk/sub-areas/stock/reports/lk-stock-os-sequential-B-p1-identity-A-p0-preview-20260610TSEQBA.json",
+    "sequential_b_then_a_md": "areas/lk/sub-areas/stock/reports/lk-stock-os-sequential-B-then-A-20260610TSEQBA.md",
+    "sequential_b_then_a_packet": "areas/lk/sub-areas/stock/approval-packets/lk-stock-os-sequential-B-then-A-20260610TSEQBA.md",
+    "sqlite_db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/lk_stock_os_current_internal_consult_overlay_20260616T_INTERNAL_CONSULT_FIX.db",
+    "tiny_9060_gap_report": "areas/lk/sub-areas/stock/reports/lk-9060-missing-dashboard-tiny-stock-readback-retry.json",
+    "variant_promotion_csv": "areas/lk/sub-areas/stock/reports/lk-stock-os-variant-promotion-20260611T023437Z.csv",
+    "variant_promotion_json": "areas/lk/sub-areas/stock/reports/lk-stock-os-variant-promotion-20260611T023437Z.json",
+    "variant_promotion_md": "areas/lk/sub-areas/stock/reports/lk-stock-os-variant-promotion-20260611T023437Z.md",
+    "variant_promotion_packet": "areas/lk/sub-areas/stock/approval-packets/lk-stock-os-variant-promotion-20260611T023437Z.md",
+    "worker_dir": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/reports/gate-b3-identity-resolution-workers-20260610T172139Z"
+  },
+  "current_stage": "internal_consult_overlay_completed",
+  "full_live_match_tiny_stock": {
+    "guardrails": {
+      "availability_claim_allowed": 0,
+      "cron_webhook_bot_runtime_new": 0,
+      "public_availability_safe": 0,
+      "shopify_write": 0,
+      "tiny_write": 0,
+      "writes_externos": 0
+    },
+    "resolved_rows": 251,
+    "rows_total": 903,
+    "run_id": "20260611T012728Z",
+    "status_counts": {
+      "BLOCKED_SHOPIFY_DUPLICATE_LIVE_FULL": 282,
+      "BLOCKED_SHOPIFY_MISSING_LIVE_FULL": 14,
+      "BLOCKED_TINY_DUPLICATE_LIVE_FULL": 100,
+      "BLOCKED_TINY_MISSING_LIVE_FULL": 15,
+      "CONSULTABLE_LOCAL_RESOLVED_BY_FULL_LIVE_MATCH": 251,
+      "UNRESOLVED_LIVE_FULL": 241
+    },
+    "tiny_stock_positive_rows": 55,
+    "tiny_stock_rows": 635,
+    "tiny_stock_zero_rows": 580
+  },
+  "guardrails": {
+    "availability_claim_allowed": 0,
+    "public_availability_safe": 0,
+    "shopify_write": 0,
+    "tiny_write": 0,
+    "writes_externos": 0
+  },
+  "identity_repair": {
+    "after_duplicate_stats": {
+      "duplicate_9060_distinct_handle_count": 0,
+      "duplicate_sku_distinct_handle_count": 0
+    },
+    "before_duplicate_stats": {
+      "duplicate_9060_distinct_handle_count": 25,
+      "duplicate_sku_distinct_handle_count": 739
+    },
+    "changed_rows": 2341,
+    "deduped_rows_deleted": 0,
+    "guardrails": {
+      "availability_claim_allowed": 0,
+      "cron_webhook_bot_runtime_new": 0,
+      "public_availability_safe": 0,
+      "shopify_write": 0,
+      "tiny_write": 0,
+      "writes_externos": 0
+    },
+    "run_id": "20260612T9060REPAIR3"
+  },
+  "identity_resolution": {
+    "decision_counts": {
+      "KEEP_BLOCKED_SHOPIFY_DUPLICATE": 285,
+      "KEEP_BLOCKED_TINY_DEPOSIT_MISSING": 7,
+      "KEEP_BLOCKED_TINY_DUPLICATE": 73,
+      "KEEP_BLOCKED_TINY_MISSING": 265,
+      "LOCAL_IDENTITY_RESOLVED_EXACT_SKU_TINY_STOCK_EVIDENCE": 164,
+      "NO_SAFE_LOCAL_IDENTITY_CHANGE": 103
+    },
+    "guardrails": {
+      "availability_claim_allowed": 0,
+      "cron_webhook_bot_runtime_new": 0,
+      "public_availability_safe": 0,
+      "shopify_write": 0,
+      "tiny_write": 0,
+      "writes_externos": 0
+    },
+    "identity_resolved_safe_rows_after": 170,
+    "input_db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/lk_stock_os_current_20260610T165523Z.db",
+    "output_db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/lk_stock_os_current_identity_resolved_20260610T172139Z.db",
+    "previous_status_counts_in_scope": {
+      "BLOCKED_SHOPIFY_DUPLICATE": 287,
+      "BLOCKED_TINY_DEPOSIT_MISSING": 57,
+      "BLOCKED_TINY_DUPLICATE": 96,
+      "BLOCKED_TINY_MISSING": 457
+    },
+    "resolved_by_previous_status": {
+      "BLOCKED_TINY_DEPOSIT_MISSING": 41,
+      "BLOCKED_TINY_MISSING": 123
+    },
+    "rows_total": 903,
+    "run_id": "20260610T172139Z",
+    "safe_local_identity_resolved_new_rows": 164,
+    "status_counts_after": {
+      "BLOCKED_SHOPIFY_DUPLICATE": 287,
+      "BLOCKED_TINY_DEPOSIT_MISSING": 16,
+      "BLOCKED_TINY_DUPLICATE": 96,
+      "BLOCKED_TINY_MISSING": 334,
+      "CONSULTABLE_LOCAL_RESOLVED": 6,
+      "CONSULTABLE_LOCAL_RESOLVED_BY_LIVE_EXACT_MATCH": 164
+    },
+    "worker_dir": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/reports/gate-b3-identity-resolution-workers-20260610T172139Z"
+  },
+  "internal_consult_overlay": {
+    "decision_counts": {
+      "CLASSIFIED_PARENT_BASE_NON_STOCK_VARIANT": 255,
+      "PROMOTED_TINY_UNIQUE_INTERNAL_CONSULT_IDENTITY_BLOCKED": 218
+    },
+    "guardrails": {
+      "availability_claim_allowed": 0,
+      "public_availability_safe": 0,
+      "shopify_write": 0,
+      "tiny_write": 0,
+      "writes_externos": 0
+    },
+    "identity_unresolved_rows_after": 718,
+    "non_consultable_blocked_rows_after": 179,
+    "output_db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/lk_stock_os_current_internal_consult_overlay_20260616T_INTERNAL_CONSULT_FIX.db",
+    "run_id": "20260616T_INTERNAL_CONSULT_FIX"
+  },
+  "local_identity_alias_title_fallback": {
+    "added_rows": 1,
+    "guardrails": {
+      "availability_claim_allowed": 0,
+      "public_availability_safe": 0,
+      "shopify_write": 0,
+      "tiny_write": 0,
+      "writes_externos": 0
+    },
+    "handle": "meia-saint-studio-pima-branco",
+    "new_db": "areas/lk/sub-areas/stock/data/lk_stock_os_current_local_identity_aliases_20260612T005354Z.db",
+    "run_id": "20260612T005354Z",
+    "shopify_variant_id": "48283857780958",
+    "status": "ok",
+    "stock_quantity": 1.0,
+    "tiny_id": "1071195617"
+  },
+  "p0p1_operational_queue": {
+    "counts": {
+      "P0": 4,
+      "P1": 13,
+      "total": 17
+    },
+    "guardrails": {
+      "availability_claim_allowed": 0,
+      "cron_webhook_bot_runtime_new": 0,
+      "public_availability_safe": 0,
+      "shopify_write": 0,
+      "tiny_write": 0,
+      "writes_externos": 0
+    },
+    "run_id": "20260610T192328Z"
+  },
+  "pointer_name": "lk_stock_os_current_pointer",
+  "scope": "LK Stock OS unified local current stock read model + local identity resolution overlay",
+  "sequential_b_then_a": {
+    "guardrails": {
+      "availability_claim_allowed": 0,
+      "cron_webhook_bot_runtime_new": 0,
+      "public_availability_safe": 0,
+      "shopify_write": 0,
+      "tiny_write": 0,
+      "writes_externos": 0
+    },
+    "p0_preview_recommended_total_qty": 13,
+    "p0_total": 4,
+    "p1_remaining_blocked": 12,
+    "p1_resolved_count": 1,
+    "p1_total": 13,
+    "run_id": "20260610TSEQBA"
+  },
+  "source_dbs": {
+    "canonical_current_db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/gate_b2_canonical_current_index_20260610T130644Z.db",
+    "gate_b_runtime_db": "/opt/data/profiles/lk-stock/state/lk-stock-gate-b.sqlite",
+    "master_register_db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/gate_b2_master_register_20260610T162241Z.db"
+  },
+  "tiny_9060_gap_promotion": {
+    "guardrails": {
+      "availability_claim_allowed": 0,
+      "public_availability_safe": 0,
+      "shopify_write": 0,
+      "tiny_write": 0,
+      "writes_externos": 0
+    },
+    "input_db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/lk_stock_os_current_identity_repaired_20260612T9060REPAIR3.db",
+    "output_db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/lk_stock_os_current_tiny_9060_gap_promoted_20260612T9060TINYGAP.db",
+    "promoted_rows": 65,
+    "promoted_units": 86.0,
+    "run_id": "20260612T9060TINYGAP",
+    "source_report": "areas/lk/sub-areas/stock/reports/lk-9060-missing-dashboard-tiny-stock-readback-retry.json",
+    "stats_after": {
+      "positive_rows_9060": 91,
+      "rows_9060": 220,
+      "tiny_gap_promoted_rows": 65,
+      "tiny_gap_promoted_units": 86.0,
+      "units_9060": 118.0
+    }
+  },
+  "tiny_full_sync": {
+    "guardrails": {
+      "availability_claim_allowed": 0,
+      "public_availability_safe": 0,
+      "shopify_write": 0,
+      "tiny_write": 0,
+      "writes_externos": 0
+    },
+    "output_db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/lk_stock_os_current_tiny_full_sync_20260616T082014Z.db",
+    "quantity_source": "Tiny produto.obter.estoque / LK | CONTROLE ESTOQUE",
+    "rows_failed": 0,
+    "rows_scanned": 1008,
+    "rows_updated": 1008,
+    "run_id": "20260616T082014Z",
+    "status": "ok",
+    "updated_at_utc": "2026-06-16T08:46:47Z"
+  },
+  "totals": {
+    "availability_claim_allowed_rows": 0,
+    "current_local_stock_rows": 3746,
+    "identity_resolved_safe_rows": 3028,
+    "identity_unresolved_or_blocked_rows": 897,
+    "identity_unresolved_rows": 718,
+    "local_consult_safe_rows": 3567,
+    "local_identity_alias_title_fallback_rows": 1,
+    "master_register_rows": 558,
+    "non_consultable_blocked_rows": 179,
+    "non_consultable_blocked_status_counts": {
+      "BLOCKED_SHOPIFY_DUPLICATE_LIVE_FULL": 64,
+      "BLOCKED_TINY_DUPLICATE_LIVE_FULL": 100,
+      "BLOCKED_TINY_MISSING_LIVE_FULL": 15
+    },
+    "public_availability_safe_rows": 0,
+    "safe_local_identity_resolved_new_rows": 164,
+    "status_counts_after_identity_overlay": {
+      "BLOCKED_SHOPIFY_DUPLICATE": 287,
+      "BLOCKED_TINY_DEPOSIT_MISSING": 16,
+      "BLOCKED_TINY_DUPLICATE": 96,
+      "BLOCKED_TINY_MISSING": 334,
+      "CONSULTABLE_LOCAL_RESOLVED": 6,
+      "CONSULTABLE_LOCAL_RESOLVED_BY_LIVE_EXACT_MATCH": 164
+    },
+    "status_counts_current": {
+      "BLOCKED_SHOPIFY_DUPLICATE_LIVE_FULL": 64,
+      "BLOCKED_TINY_DUPLICATE_LIVE_FULL": 100,
+      "BLOCKED_TINY_MISSING_LIVE_FULL": 15,
+      "CONSULTABLE_LOCAL_PARENT_BASE_NO_STOCK_VARIANT": 255,
+      "CONSULTABLE_LOCAL_RESOLVED_BY_FULL_LIVE_MATCH": 251,
+      "CONSULTABLE_LOCAL_RESOLVED_BY_OBSERVED_EXACT_VARIANT_PROMOTION": 2777,
+      "CONSULTABLE_LOCAL_TINY_STOCK_IDENTITY_BLOCKED": 218,
+      "CONSULTABLE_LOCAL_TINY_TITLE_FALLBACK_IDENTITY_UNLINKED": 65,
+      "CONSULTABLE_LOCAL_TITLE_FALLBACK_IDENTITY_UNLINKED": 1
+    },
+    "stock_observation_rows": 8334,
+    "stock_observed_current_rows": 316,
+    "stock_positive_current_rows": 283,
+    "stock_zero_current_rows": 3021,
+    "unique_handles": 558
+  },
+  "updated_at": "2026-06-12T00:53:54Z",
+  "updated_at_utc": "2026-06-16T18:08:05.507448Z",
+  "variant_promotion": {
+    "current_rows": 5191,
+    "guardrails": {
+      "availability_claim_allowed": 0,
+      "cron_webhook_bot_runtime_new": 0,
+      "public_availability_safe": 0,
+      "shopify_write": 0,
+      "tiny_write": 0,
+      "writes_externos": 0
+    },
+    "promoted_exact_variant_rows": 4288,
+    "run_id": "20260611T023437Z",
+    "status_counts": {
+      "BLOCKED_SHOPIFY_DUPLICATE_LIVE_FULL": 282,
+      "BLOCKED_SHOPIFY_MISSING_LIVE_FULL": 14,
+      "BLOCKED_TINY_DUPLICATE_LIVE_FULL": 100,
+      "BLOCKED_TINY_MISSING_LIVE_FULL": 15,
+      "CONSULTABLE_LOCAL_RESOLVED_BY_FULL_LIVE_MATCH": 251,
+      "CONSULTABLE_LOCAL_RESOLVED_BY_OBSERVED_EXACT_VARIANT_PROMOTION": 4288,
+      "UNRESOLVED_LIVE_FULL": 241
+    }
+  }
+}

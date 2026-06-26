@@ -1,0 +1,158 @@
+# Approval packet — produtos ACTIVE sem compra paga histórica para possível DRAFT
+
+Status: PREVIEW READ-ONLY. Nenhum produto foi alterado.
+
+## Critério usado
+- Shopify Admin GraphQL read-only: produtos `ACTIVE` atuais.
+- Shopify Admin GraphQL read-only: pedidos com `financial_status:paid`, pulando cancelados, histórico observado de 2023-02-02 a 2026-06-19.
+- Candidato = produto ACTIVE cujo `product.id` não apareceu em nenhum line item pago não cancelado.
+- `totalInventory` é apenas contexto Shopify; não usei como verdade de estoque.
+
+## Resumo
+- active_products_shopify: 1825
+- unique_products_with_paid_purchase_all_history: 1294
+- active_products_zero_paid_purchase_all_history: 782
+- orders_seen_paid_query: 5402
+- cancelled_orders_skipped: 149
+- line_items_non_cancelled_paid: 7136
+- paid_order_history_from: 2023-02-02T08:01:01Z
+- paid_order_history_to: 2026-06-19T15:43:24Z
+- generated_at_utc: 2026-06-19T18:15:42.532861+00:00
+- zero_by_min_age_days: {'0': 782, '7': 761, '14': 757, '30': 732, '60': 697, '90': 645, '120': 627, '180': 596, '365': 381}
+- top_vendors: [('Nike', 161), ('Jordan', 118), ('Adidas', 59), ('Alo Yoga', 51), ('Onitsuka Tiger', 35), ('New Balance', 28), ('LK', 23), ('Nude Project', 22), ('Skims', 22), ('Jacquemus', 20), ('Yeezy', 16), ('Dane-se', 15), ('Lululemon', 15), ('KAWS', 15), ('Slyce', 14), ('Aimé Leon Dore', 12), ('Saint Studio', 11), ('Medicom Toy', 10), ('Represent Clo', 10), ('Cold Culture', 9), ('Air Jordan', 9), ('On Running x Loewe', 8), ('Taschen', 7), ('ASICS', 7), ('Balenciaga', 6)]
+- top_product_types: [('Tênis', 454), ('Camiseta', 63), ('', 55), ('Moletom', 38), ('Colecionável', 30), ('Bolsa', 21), ('Boné', 21), ('Shorts', 16), ('Calça', 13), ('Chinelo Slide', 13), ('Óculos', 12), ('Livro', 10), ('Top', 9), ('Sneakers', 9), ('Saia', 7), ('Polo', 4), ('Jaqueta', 3), ('Mochila', 1), ('Regata', 1), ('Vestido', 1), ('Beleza', 1)]
+
+## Sugestão de corte seguro
+- Eu NÃO recomendo draftar os 612 de uma vez sem filtro comercial.
+- Corte conservador inicial: idade >= 180 dias sem compra paga: 596 produtos.
+- Corte mais agressivo: idade >= 90 dias sem compra paga: 645 produtos.
+- Evitar draft automático de best-sellers/SEO landings/itens estratégicos antes de revisão humana, mesmo se sem compra.
+
+## Top candidatos mais antigos
+- 1074d | Adidas | Tênis | Tênis ADI2000 Triple Black Preto | handle `adi2000-triple-black` | id 8084012040414 | inv_ctx 16 | encomenda=True
+- 1074d | Yeezy | Tênis | Tênis Yeezy Boost 350 V2 Dazzling Blue Preto | handle `yeezy-boost-350-v2-dazzling-blue` | id 8084016824542 | inv_ctx 7 | encomenda=True
+- 1074d | Yeezy | Tênis | Tênis Yeezy Boost 350 V2 Salt Verde | handle `yeezy-350-v2-salt` | id 8084017610974 | inv_ctx 11 | encomenda=True
+- 1074d | Yeezy | Tênis | Tênis Yeezy Foam Runner Onyx Preto | handle `yeezy-foam-runner-onyx` | id 8084001226974 | inv_ctx 6 | encomenda=True
+- 1074d | Yeezy | Tênis | Tênis Yeezy Foam Runner Stone Sage Bege | handle `yeezy-foam-runner-stone-sage-924604518` | id 8084014923998 | inv_ctx 1 | encomenda=True
+- 1064d | Yeezy | Tênis | Tênis Yeezy Slide Azure Azul | handle `yeezy-slide-azure` | id 8091815641310 | inv_ctx 0 | encomenda=True
+- 1051d | Supreme | Camiseta | Camiseta Supreme "Washed Script Black" Preto | handle `supreme-washed-script-short-sleeve-top-black` | id 8101966938334 | inv_ctx 1 | encomenda=False
+- 1044d | Adidas | Tênis | Tênis adidas Samba OG Green Branco | handle `adidas-samba-og-green` | id 8106533880030 | inv_ctx 5 | encomenda=True
+- 925d | Nike | Tênis | Tênis Run The Jewels x Dunk Low SB '4/20' Azul | handle `run-the-jewels-x-dunk-low-sb-4-20` | id 8228419240158 | inv_ctx 11 | encomenda=True
+- 898d | Adidas | Tênis | Tênis The Grinch x adidas Forum Low Green Verde | handle `the-grinch-x-adidas-forum-low-green` | id 8084002472158 | inv_ctx 0 | encomenda=True
+- 898d | Adidas | Tênis | Tênis Yu-Gi-Oh! x adidas ADI2000 Dark Magician Branco | handle `yu-gi-oh-x-adidas-adi2000-dark-magician` | id 8084000538846 | inv_ctx 0 | encomenda=True
+- 898d | New Balance | Tênis | Tênis New Balance 9060 Mineral Red Truffle Rain Cloud Vermelho | handle `new-balance-9060-mineral-red-truffle-rain-cloud` | id 8084006830302 | inv_ctx 21 | encomenda=True
+- 898d | Nike | Tênis | Tênis Air Max Plus Black University Blue Preto | handle `air-max-plus-black-university-blue` | id 8084008403166 | inv_ctx 0 | encomenda=True
+- 898d | Yeezy | Tênis | Tênis Yeezy 500 Blush Bege | handle `yeezy-500-blush` | id 8084001718494 | inv_ctx 0 | encomenda=True
+- 898d | Yeezy | Tênis | Tênis Yeezy 700 V1 Wave Runner Cinza | handle `yeezy-700-v1-wave-runner` | id 8084001685726 | inv_ctx 10 | encomenda=True
+- 898d | Yeezy | Tênis | Tênis Yeezy 700 V3 Mono Safflower Amarelo | handle `yeezy-700-v3-mono-safflower` | id 8084001620190 | inv_ctx 12 | encomenda=True
+- 898d | Yeezy | Tênis | Tênis Yeezy Boost 350 V2 MX Oat Multicolor | handle `yeezy-boost-350-v2-mx-oat` | id 8084001358046 | inv_ctx 3 | encomenda=True
+- 898d | Yeezy | Tênis | Tênis Yeezy Boost 350 v2 Mono Ice Azul | handle `yeezy-boost-350-v2-mono-ice` | id 8084001390814 | inv_ctx 0 | encomenda=True
+- 898d | Yeezy | Tênis | Tênis Yeezy Foam Runner Sand Bege | handle `yeezy-foam-runner-sand-937693356` | id 8084001063134 | inv_ctx 1 | encomenda=True
+- 868d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low "Dune Red" Vermelho | handle `tenis-jordan-1-low-dune-red-vermelho` | id 8272543187166 | inv_ctx 9 | encomenda=True
+- 834d | Adidas | Tênis | Tênis adidas Campus 00s Ambient Sky Azul | handle `tenis-adidas-campus-00s-ambient-sky-azul` | id 8307080298718 | inv_ctx 1 | encomenda=True
+- 827d | Adidas | Tênis | Tênis adidas Handball Spezial Preloved Green Verde | handle `tenis-adidas-handball-spezial-preloved-green-verde` | id 8313341083870 | inv_ctx 4 | encomenda=True
+- 787d | Adidas | Tênis | Tênis adidas Sambae x KSENIASCHNAIDER Black Multicolor Colorido | handle `tenis-adidas-sambae-x-kseniaschnaiderc-black-multicolor-colorido` | id 8382526128350 | inv_ctx 4 | encomenda=True
+- 748d | New Balance | Tênis | Tênis New Balance 530 White Mint Branco | handle `tenis-new-balance-530-white-mint-branco` | id 8525163135198 | inv_ctx 11 | encomenda=True
+- 743d | Adidas | Tênis | Tênis adidas Forum Buckle Low  x Bad Bunny Blue Tint Azul | handle `tenis-adidas-forum-buckle-low-x-bad-bunny-blue-tint-azul` | id 8540743925982 | inv_ctx 0 | encomenda=True
+- 741d | Adidas | Tênis | Tênis adidas Samba x Humanrace Core Black Cinza | handle `tenis-adidas-samba-x-humanrace-core-black-cinza` | id 8541968105694 | inv_ctx 3 | encomenda=True
+- 741d | Adidas | Tênis | Tênis adidas Samba x Humanrace Navy Aluminum Cinza | handle `tenis-adidas-samba-x-humanrace-navy-aluminum-cinza` | id 8541966336222 | inv_ctx 6 | encomenda=True
+- 739d | Adidas | Tênis | Tênis adidas Sambae Core Black Metallic Gold Preto | handle `tenis-adidas-sambae-core-black-metallic-gold-preto` | id 8540754280670 | inv_ctx 6 | encomenda=True
+- 738d | Yeezy | Tênis | Tênis Yeezy Boost 350 V2 Beluga Cinza | handle `tenis-yeezy-boost-350-v2-beluga-cinza` | id 8545297203422 | inv_ctx 6 | encomenda=True
+- 735d | Adidas | Tênis | Tênis adidas Campus 00s Scarlet Red Vermelho | handle `tenis-adidas-campus-00s-scarlet-red-vermelho` | id 8553126658270 | inv_ctx 4 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike A Ma Maniére x Air Jordan 1 Sail and Burgundy Bege | handle `a-ma-maniere-x-air-jordan-1-sail-and-burgundy` | id 8107019501790 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 High 85 College Navy Azul | handle `air-jordan-1-high-85-college-navy` | id 8084011843806 | inv_ctx 7 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 High Atmosphere Rosa | handle `air-jordan-1-high-atmosphere` | id 8084015972574 | inv_ctx 18 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 High Dark Mocha Marrom | handle `air-jordan-1-high-dark-mocha` | id 8084014727390 | inv_ctx 10 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 High Lucky Green Verde | handle `air-jordan-1-high-lucky-green` | id 8083999850718 | inv_ctx 7 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 High Next Chapter Vermelho | handle `air-jordan-1-high-next-chapter` | id 8083997065438 | inv_ctx 6 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 High OG Starfish Laranja | handle `air-jordan-1-high-og-starfish` | id 8097346224350 | inv_ctx 2 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 High OG Stealth Cinza | handle `air-jordan-1-high-og-stealth` | id 8084013252830 | inv_ctx 9 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 High OG UNC Toe Azul | handle `tenis-air-jordan-1-high-og-unc-toe-azul` | id 8261291081950 | inv_ctx 9 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 High Og Green Glow Verde | handle `tenis-air-jordan-1-high-og-green-glow-verde` | id 8430360821982 | inv_ctx 7 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 High Palomino Marrom | handle `air-jordan-1-high-gs-palomino` | id 8245119811806 | inv_ctx 10 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 High Patent Bred Vermelho | handle `air-jordan-1-high-patent-bred` | id 8085328888030 | inv_ctx 11 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 High Stage Haze Cinza | handle `air-jordan-1-high-stage-haze` | id 8201597649118 | inv_ctx 9 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 High University Blue (UNC) Azul | handle `air-jordan-1-high-university-blue-unc` | id 8084011057374 | inv_ctx 8 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low "Floral Canvas" Rosa | handle `tenis-air-jordan-1-low-floral-canvas-rosa` | id 8275894304990 | inv_ctx 12 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low All-Star Carbon Fiber Preto | handle `air-jordan-1-low-all-star-carbon-fiber` | id 8085144109278 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Alternate Bred Toe Vermelho | handle `air-jordan-1-low-alternate-bred-toe` | id 8090803798238 | inv_ctx 3 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Black Grey Pink Cinza | handle `air-jordan-1-low-black-grey-pink` | id 8090803667166 | inv_ctx 6 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Canyon Rust Colorido | handle `air-jordan-1-low-canyon-rust` | id 8100890149086 | inv_ctx 5 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Cardinal Vermelho | handle `air-jordan-1-low-cardinal` | id 8084010696926 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Cherrywood Red Vermelho | handle `air-jordan-1-low-cherrywood-red` | id 8250260488414 | inv_ctx 6 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Coconut Milk Branco | handle `air-jordan-1-low-coconut-milk` | id 8084010369246 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Crater Grey University Blue Preto | handle `air-jordan-1-low-crater-grey-university-blue` | id 8084009943262 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Dark Beetroot Vermelho | handle `air-jordan-1-low-dark-beetroot` | id 8083997294814 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Dark Teal Azul | handle `air-jordan-1-low-dark-teal` | id 8091810791646 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low GS Fierce Pink Rosa | handle `air-jordan-1-low-gs-fierce-pink` | id 8251491483870 | inv_ctx 4 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Green Toe Verde | handle `air-jordan-1-low-green-toe` | id 8084013154526 | inv_ctx 5 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Industrial Blue Azul | handle `tenis-air-jordan-1-low-industrial-blue-azul` | id 8344628723934 | inv_ctx 7 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Light Green Verde | handle `tenis-air-jordan-1-low-light-green-verde` | id 8466608390366 | inv_ctx 7 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Light Madder Root Rosa | handle `air-jordan-1-low-light-madder-root` | id 8245122498782 | inv_ctx 5 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Lucky Green Verde | handle `tenis-air-jordan-1-low-lucky-green-verde` | id 8201600336094 | inv_ctx 1 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Multi-Color Royal Toe Colorido | handle `air-jordan-1-low-multi-color-royal-toe` | id 8090807795934 | inv_ctx 1 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low OG Black Toe (2023) Vermelho | handle `air-jordan-1-low-og-black-toe-2023` | id 8100890935518 | inv_ctx 8 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low OG Bleached Coral Rosa | handle `air-jordan-1-low-og-bleached-coral` | id 8090807533790 | inv_ctx 8 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low OG UNC Azul | handle `air-jordan-1-low-og-unc` | id 8089968902366 | inv_ctx 11 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Og Year of Dragon Chinese New Year Verde | handle `tenis-air-jordan-1-low-og-year-of-dragon-chinese-new-year-verde` | id 8561332977886 | inv_ctx 6 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low SE Iced Lilac Preto | handle `air-jordan-1-low-se-iced-lilac` | id 8084009681118 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low SE Reverse Ice Blue Azul | handle `tenis-air-jordan-1-low-se-reverse-ice-blue-azul` | id 8202832642270 | inv_ctx 18 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low SE Sport Spice Laranja | handle `tenis-air-jordan-1-low-se-sport-spice-laranja` | id 8294163742942 | inv_ctx 1 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low SE Twine Orange Quartz Laranja | handle `air-jordan-1-low-se-twine-orange-quartz` | id 8090811891934 | inv_ctx 3 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low SE Wear Away Tan Preto | handle `air-jordan-1-low-se-wear-away-tan` | id 8091813904606 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Sky J Purple Roxo | handle `tenis-air-jordan-1-low-sky-j-purple-roxo` | id 8269323862238 | inv_ctx 9 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Smoke Grey Toe Gs Cinza | handle `air-jordan-1-low-smoke-grey-toe-1` | id 8085123629278 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Starfish Laranja | handle `air-jordan-1-low-starfish-mans-feminino` | id 8083997720798 | inv_ctx 6 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low Sunset Haze Laranja | handle `air-jordan-1-low-sunset-haze` | id 8083996868830 | inv_ctx 8 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low UNC 2021 Cinza | handle `air-jordan-1-low-unc-2021` | id 8097347633374 | inv_ctx 13 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Mid 'Canyon Rust' Multicolor | handle `wmns-air-jordan-1-mid-canyon-rust` | id 8084001980638 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Mid Aqua Blue Tint Verde | handle `air-jordan-1-mid-aqua-blue-tint` | id 8084009255134 | inv_ctx 3 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Mid Carbon Fiber Preto | handle `air-jordan-1-mid-carbon-fiber` | id 8084015874270 | inv_ctx 11 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Mid Chicago Black Toe Vermelho/Preto | handle `air-jordan-1-mid-chicago-black-toe` | id 8090805108958 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Mid Ice Blue Azul | handle `air-jordan-1-mid-se-ice-blue` | id 8084017283294 | inv_ctx 4 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Mid Light Smoke Grey Cinza | handle `air-jordan-1-mid-smoke-grey` | id 8084009091294 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Mid SE Berry Pink Rosa | handle `air-jordan-1-mid-se-berry-pink` | id 8086900539614 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Mid SE Craft Inside Out Black Preto | handle `air-jordan-1-mid-se-craft-inside-out-black` | id 8084012663006 | inv_ctx 7 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Mid SE Light Iron Ore Cinza | handle `air-jordan-1-mid-se-light-iron-ore` | id 8084009025758 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Mid SE Space Jam Preto ou | handle `air-jordan-1-mid-se-space-jam` | id 8084016726238 | inv_ctx 12 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Mid University Blue (UNC) Azul | handle `air-jordan-1-mid-university-blue-unc` | id 8084008992990 | inv_ctx 4 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 3 Retro x J Balvin "Rio" Preto | handle `tenis-air-jordan-3-retro-x-j-balvin-rio-preto` | id 8500996702430 | inv_ctx 8 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 4 Craft Cinza | handle `air-jordan-4-craft` | id 8084008534238 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 4 Retro "Military Black" Branco | handle `tenis-air-jordan-4-retro-military-black-branco` | id 8289634549982 | inv_ctx 6 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 4 SE Black Canvas Preto | handle `air-jordan-4-se-black-canvas` | id 8090811597022 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 4 Seafoam Branco/Verde | handle `air-jordan-4-seafoam` | id 8091811250398 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 4 Thunder Preto/Amarelo | handle `air-jordan-4-thunder` | id 8090811334878 | inv_ctx 0 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Off-White x Air Jordan 4 Sail Bege | handle `off-white-x-air-jordan-4-sail` | id 8084002898142 | inv_ctx 7 | encomenda=True
+- 724d | Jordan | Tênis | Tênis Nike Air Jordan 1 Low SE Tie Dye Colorido | handle `air-jordan-1-low-se-tie-dye` | id 8084014465246 | inv_ctx 4 | encomenda=True
+- 724d | Nike | Tênis | Tênis Nike Dunk Low Blue Clear Swoosh Azul | handle `nike-dunk-low-gs-triple-pink` | id 8084018626782 | inv_ctx 3 | encomenda=True
+- 724d | Nike | Tênis | Tênis Nike Dunk Low Grey Cinza | handle `nike-dunk-low-grey-white` | id 8084015513822 | inv_ctx 0 | encomenda=True
+- 724d | Nike | Tênis | Tênis Nike SB Dunk Low Elephant Colorido | handle `nike-sb-dunk-low-elephant` | id 8084003291358 | inv_ctx 7 | encomenda=True
+- 724d | Nike | Tênis | Tênis Nike SB Dunk Low Pro Chicago Vermelho | handle `nike-sb-dunk-low-pro-chicago` | id 8084014006494 | inv_ctx 10 | encomenda=True
+- 724d | Nike | Tênis | Tênis Travis Scott x Nike Air Max 1 Cactus Brown Marrom | handle `travis-scott-x-nike-air-max-1-cactus-brown` | id 8084002242782 | inv_ctx 15 | encomenda=True
+- 722d | Adidas | Tênis | Tênis adidas Gazelle Indoor x Bad Bunny San Juan Azul | handle `tenis-adidas-gazelle-indoor-x-bad-bunny-san-juan-azul` | id 8586378903774 | inv_ctx 14 | encomenda=True
+- 717d | Jordan | Tênis | Tênis Nike Air Jordan 1 Elevate Low Jade Smoke Verde | handle `tenis-jordan-1-elevate-low-jade-smoke-verde` | id 8594864931038 | inv_ctx 2 | encomenda=True
+- 717d | Nike | Camiseta | Jersey Off White x Nike "Allover Print Kelly Green" Verde | handle `jersey-off-white-x-nike-allover-print-kelly-green-verde` | id 8267042947294 | inv_ctx 4 | encomenda=False
+- 717d | Nike | Tênis | Tênis Ben & Jerry's x Dunk Low SB Chunky Dunky Colorido | handle `ben-jerrys-x-dunk-low-sb-chunky-dunky` | id 8084007944414 | inv_ctx 4 | encomenda=True
+- 717d | Nike | Tênis | Tênis Nike Dunk Low Obsidian Vintage Green Azul Marinho | handle `tenis-nike-dunk-low-obsidian-vintage-green-azul-marinho` | id 8594868797662 | inv_ctx 4 | encomenda=True
+- 717d | Nike | Tênis | Tênis Nike SB Dunk Low LA Dodgers Azul | handle `nike-sb-dunk-low-la-dodgers` | id 8084013842654 | inv_ctx 13 | encomenda=True
+- 717d | Nike | Tênis | Tênis Nike SB Dunk Low Pro Sour Apple Verde | handle `nike-sb-dunk-low-pro-sour-apple` | id 8084016300254 | inv_ctx 5 | encomenda=True
+- 717d | Nike | Tênis | Tênis TIGHTBOOTH x Nike SB Dunk Low Pro Black White Preto | handle `tightbooth-x-nike-sb-dunk-low-pro-black-white` | id 8250265632990 | inv_ctx 13 | encomenda=True
+- 717d | Nike | Tênis | Tênis Tiffany & Co. x Nike Air Force 1 Low 1837 Preto | handle `tiffany-co-x-nike-air-force-1-low-1837` | id 8084012892382 | inv_ctx 8 | encomenda=True
+- 717d | Vans | Tênis | Tênis Vans Knu Skool MTE x Imra Potato Black Preto | handle `tenis-vans-knu-skool-mte-x-imra-potato-black-preto` | id 8594916311262 | inv_ctx 6 | encomenda=True
+- 716d | Nike | Tênis | Tênis Born Raised x Nike SB Dunk Low One Block At A Time Azul | handle `born-x-raised-x-nike-sb-dunk-low-one-block-at-a-time` | id 8155837497566 | inv_ctx 7 | encomenda=True
+- 716d | Nike | Tênis | Tênis Nike Dunk Low "University Blue" Azul | handle `tenis-nike-dunk-low-university-blue-azul` | id 8284295200990 | inv_ctx 11 | encomenda=True
+- 716d | Nike | Tênis | Tênis Nike Dunk Low Kentucky Azul | handle `nike-dunk-low-kentucky` | id 8084004831454 | inv_ctx 7 | encomenda=True
+- 716d | Nike | Tênis | Tênis Nike Dunk Low Medium Olive Verde | handle `nike-dunk-low-medium-olive` | id 8084018331870 | inv_ctx 8 | encomenda=True
+- 716d | Nike | Tênis | Tênis Nike Dunk Low Next Nature Blue Tint Azul | handle `nike-dunk-low-next-nature-blue-tint` | id 8251492204766 | inv_ctx 3 | encomenda=True
+- 716d | Nike | Tênis | Tênis Nike Dunk Low Pale Ivory Redwood Cinza | handle `nike-dunk-low-pale-ivory-redwood` | id 8083997327582 | inv_ctx 7 | encomenda=True
+- 716d | Nike | Tênis | Tênis Nike Dunk Low Sea Glass Verde | handle `tenis-nike-dunk-low-sea-glass-verde` | id 8596316586206 | inv_ctx 6 | encomenda=True
+- 716d | Nike | Tênis | Tênis Nike Dunk Low x Off White "Lot 23" Cinza | handle `tenis-nike-dunk-low-x-off-white-lot-23-cinza` | id 8274008342750 | inv_ctx 1 | encomenda=True
+- 716d | Nike | Tênis | Tênis Nike Dunk Low x Off White "Lot 43" Cinza | handle `tenis-nike-dunk-low-x-off-white-lot-43-cinza` | id 8274014929118 | inv_ctx 0 | encomenda=True
+- 716d | Nike | Tênis | Tênis Nike SB Dunk Low Pro ISO Orange Label Court Purple Roxo | handle `tenis-nike-sb-dunk-low-pro-iso-orange-label-court-purple-roxo` | id 8115118637278 | inv_ctx 12 | encomenda=True
+
+## Mutação proposta se Lucas aprovar
+- Backup JSON dos produtos selecionados: id, title, handle, status, publishedAt, tags, variants.
+- Executar somente `productUpdate(input:{id, status:DRAFT})` nos IDs selecionados.
+- Verificar por readback Admin que status virou `DRAFT`.
+- Não alterar preço, estoque, SKU, título, tags, collections, Tiny, tema, campanhas ou clientes.
+- Rollback: `productUpdate(status:ACTIVE)` para os IDs alterados a partir do backup.

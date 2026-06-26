@@ -1,0 +1,985 @@
+{
+  "generated_at": "2026-05-13T17:20:51.931945+00:00",
+  "status": "p2b_critical_title_apply_verified",
+  "mode": "apply",
+  "api": "Merchant API v1 ProductInputs PATCH",
+  "data_source": "accounts/*/dataSources/10636492695",
+  "approval_required_for_apply": "Lucas approved GMC P2B critical title apply only on GMC ProductInput with rollback and verification",
+  "summary": {
+    "selected_for_apply": 35,
+    "limit": 35,
+    "execution_results_summary": {
+      "patched_p2b_title_v1": 34,
+      "failed_patch_v1": 1
+    },
+    "verify_results_summary": {
+      "verified_merchant_product_get": 34,
+      "not_verified_due_to_execution_status": 1
+    },
+    "verified_match_expected": 34
+  },
+  "private_rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p2b-critical-title-executor-rollback-20260513T171717Z.json",
+  "rows": [
+    {
+      "product_id": "online:pt:BR:5706324928133224313",
+      "offer_id": "5706324928133224313",
+      "current_gmc_title": "39",
+      "proposed_gmc_title": "Tênis New Balance 204L x Atmos Cow Girl Brown Marrom - Tamanho 39",
+      "shopify_product_title": "Tênis New Balance 204L x Atmos Cow Girl Brown Marrom",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-204l-x-atmos-cow-girl-brown-marrom",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:6036386056472256840",
+      "offer_id": "6036386056472256840",
+      "current_gmc_title": "37",
+      "proposed_gmc_title": "Tênis Nike Shox TL Black Cave Stone Preto - Tamanho 37",
+      "shopify_product_title": "Tênis Nike Shox TL Black Cave Stone Preto",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-shox-tl-black-cave-stone-preto",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:3048242206072553507",
+      "offer_id": "3048242206072553507",
+      "current_gmc_title": "42",
+      "proposed_gmc_title": "Tênis ASICS Gel-1130 White Black Silver Prata - Tamanho 42",
+      "shopify_product_title": "Tênis ASICS Gel-1130 White Black Silver Prata",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-asics-gel-1130-white-black-silver-prata",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:6234067398750979457",
+      "offer_id": "6234067398750979457",
+      "current_gmc_title": "34",
+      "proposed_gmc_title": "Tênis Nike Air Force 1 Low Protro Kobe Bryant Siempre Hermanos Marrom - Tamanho 34",
+      "shopify_product_title": "Tênis Nike Air Force 1 Low Protro Kobe Bryant Siempre Hermanos Marrom",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-air-force-1-low-protro-kobe-bryant-siempre-hermanos-marrom",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:11810372920072143991",
+      "offer_id": "11810372920072143991",
+      "current_gmc_title": "40",
+      "proposed_gmc_title": "Calca Saint Studio Wide Alfaiataria Preto - Tamanho 40",
+      "shopify_product_title": "Calca Saint Studio Wide Alfaiataria Preto",
+      "confidence": "média",
+      "source": "handle_fallback_HTTPError",
+      "link": "https://lksneakers.com.br/collections/roupas/products/calca-saint-studio-wide-alfaiataria-preto",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:16599698222138562820",
+      "offer_id": "16599698222138562820",
+      "current_gmc_title": "34",
+      "proposed_gmc_title": "Tênis Jordan 4 Retro Toro Bravo 2026 Vermelho - Tamanho 34",
+      "shopify_product_title": "Tênis Jordan 4 Retro Toro Bravo 2026 Vermelho",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-jordan-4-retro-toro-bravo-2026-vermelho-1",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:1863698749035586532",
+      "offer_id": "1863698749035586532",
+      "current_gmc_title": "44",
+      "proposed_gmc_title": "Tênis ASICS Gel-1130 Black Pure Silver Prata - Tamanho 44",
+      "shopify_product_title": "Tênis ASICS Gel-1130 Black Pure Silver Prata",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-asics-gel-1130-black-pure-silver-prata",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:4531110532523186885",
+      "offer_id": "4531110532523186885",
+      "current_gmc_title": "39",
+      "proposed_gmc_title": "Tênis Nike Air Jordan 1 Low SE Repaired Denim Swoosh Azul - Tamanho 39",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Low SE Repaired Denim Swoosh Azul",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-air-jordan-1-low-se-repaired-denim-swoosh-azul",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:2198938218729451562",
+      "offer_id": "2198938218729451562",
+      "current_gmc_title": "37",
+      "proposed_gmc_title": "Tênis Nike Shox TL Velvet Brown Denim Turquoise Marrom - Tamanho 37",
+      "shopify_product_title": "Tênis Nike Shox TL Velvet Brown Denim Turquoise Marrom",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-shox-tl-velvet-brown-denim-turquoise-marrom",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:14252480804615463970",
+      "offer_id": "14252480804615463970",
+      "current_gmc_title": "41",
+      "proposed_gmc_title": "Bota Timberland 6 Premium Waterproof Boot Supreme Wheat Bege - Tamanho 41",
+      "shopify_product_title": "Bota Timberland 6 Premium Waterproof Boot Supreme Wheat Bege",
+      "confidence": "média",
+      "source": "handle_fallback_HTTPError",
+      "link": "https://lksneakers.com.br/products/bota-timberland-6-premium-waterproof-boot-supreme-wheat-bege",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:15031239196158973196",
+      "offer_id": "15031239196158973196",
+      "current_gmc_title": "45",
+      "proposed_gmc_title": "Nike Air Force 1 07 White - Tamanho 45",
+      "shopify_product_title": "Nike Air Force 1 07 White",
+      "confidence": "média",
+      "source": "handle_fallback_HTTPError",
+      "link": "https://lksneakers.com.br/products/nike-air-force-1-07-white",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:4086849490768644696",
+      "offer_id": "4086849490768644696",
+      "current_gmc_title": "34",
+      "proposed_gmc_title": "Tênis Nike Mind 002 Grey Football Grey Cinza - Tamanho 34",
+      "shopify_product_title": "Tênis Nike Mind 002 Grey Football Grey Cinza",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-mind-002-grey-football-grey-cinza",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:12475328072847087695",
+      "offer_id": "12475328072847087695",
+      "current_gmc_title": "42",
+      "proposed_gmc_title": "Bota Timberland 6 Premium Waterproof Boot Supreme Black Preto - Tamanho 42",
+      "shopify_product_title": "Bota Timberland 6 Premium Waterproof Boot Supreme Black Preto",
+      "confidence": "média",
+      "source": "handle_fallback_HTTPError",
+      "link": "https://lksneakers.com.br/products/bota-timberland-6-premium-waterproof-boot-supreme-black-preto",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:5627606835540697766",
+      "offer_id": "5627606835540697766",
+      "current_gmc_title": "M/m",
+      "proposed_gmc_title": "Camiseta Aimé Leon Dore ALD Golf Swing Coconut Milk Off White - Tamanho M",
+      "shopify_product_title": "Camiseta Aimé Leon Dore ALD Golf Swing Coconut Milk Off White",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/camiseta-aime-leon-dore-ald-golf-swing-coconut-milk-off-white",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:2669418431140851356",
+      "offer_id": "2669418431140851356",
+      "current_gmc_title": "Natural",
+      "proposed_gmc_title": "Bolsa Aime Leon Dore Porsche Canvas Tote Bag - Cor Natural",
+      "shopify_product_title": "Bolsa Aime Leon Dore Porsche Canvas Tote Bag",
+      "confidence": "média",
+      "source": "handle_fallback_HTTPError",
+      "link": "https://lksneakers.com.br/products/bolsa-aime-leon-dore-porsche-canvas-tote-bag",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:4467332493483768941",
+      "offer_id": "4467332493483768941",
+      "current_gmc_title": "36",
+      "proposed_gmc_title": "Tenis Nike SB Dunk Low Pro Bluetile Skateboards Azul - Tamanho 36",
+      "shopify_product_title": "Tenis Nike SB Dunk Low Pro Bluetile Skateboards Azul",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-pro-bluetile-skateboards-azul",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:16606924615096196772",
+      "offer_id": "16606924615096196772",
+      "current_gmc_title": "G/l",
+      "proposed_gmc_title": "Moletom Aimé Leon Dore Market Hoodie Pine Groove Verde - Tamanho G/L",
+      "shopify_product_title": "Moletom Aimé Leon Dore Market Hoodie Pine Groove Verde",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/moletom-aime-leon-dore-market-hoodie-pine-groove-verde",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:15047612723779191692",
+      "offer_id": "15047612723779191692",
+      "current_gmc_title": "37",
+      "proposed_gmc_title": "Tênis Jordan 5 Retro White Metallic (2026) Metalizado - Tamanho 37",
+      "shopify_product_title": "Tênis Jordan 5 Retro White Metallic (2026) Metalizado",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-jordan-5-retro-white-metallic-2026-metalizado",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:8419194273885247483",
+      "offer_id": "8419194273885247483",
+      "current_gmc_title": "34",
+      "proposed_gmc_title": "Tênis ASICS Gel-1130 White Black Silver Prata - Tamanho 34",
+      "shopify_product_title": "Tênis ASICS Gel-1130 White Black Silver Prata",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-asics-gel-1130-white-black-silver-prata-1",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:15690098651674929383",
+      "offer_id": "15690098651674929383",
+      "current_gmc_title": "M/m",
+      "proposed_gmc_title": "Camiseta Nude Project Berry Tee White Branco - Tamanho M",
+      "shopify_product_title": "Camiseta Nude Project Berry Tee White Branco",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/camiseta-nude-project-berry-tee-white-branco",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:16552051163064136080",
+      "offer_id": "16552051163064136080",
+      "current_gmc_title": "43",
+      "proposed_gmc_title": "Tênis ASICS Gel-1130 White Pure Silver Prata - Tamanho 43",
+      "shopify_product_title": "Tênis ASICS Gel-1130 White Pure Silver Prata",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-asics-gel-1130-white-pure-silver-prata",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:5390248129051651686",
+      "offer_id": "5390248129051651686",
+      "current_gmc_title": "34",
+      "proposed_gmc_title": "Tênis ASICS Gel-1130 White Clay Canyon Branco - Tamanho 34",
+      "shopify_product_title": "Tênis ASICS Gel-1130 White Clay Canyon Branco",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-asics-gel-1130-white-clay-canyon-branco",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:12053538457178343768",
+      "offer_id": "12053538457178343768",
+      "current_gmc_title": "40",
+      "proposed_gmc_title": "Tênis On Running x Kith ON K-Tech 2 Spirulina Barley Verde - Tamanho 40",
+      "shopify_product_title": "Tênis On Running x Kith ON K-Tech 2 Spirulina Barley Verde",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-on-running-x-kith-on-k-tech-2-spirulina-barley-verde",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:5328214585182033036",
+      "offer_id": "5328214585182033036",
+      "current_gmc_title": "35",
+      "proposed_gmc_title": "Tênis Nike Kobe 5 Protro Lower Merion Aces Away Prata - Tamanho 35",
+      "shopify_product_title": "Tênis Nike Kobe 5 Protro Lower Merion Aces Away Prata",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-kobe-5-protro-lower-merion-aces-away-prata",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:15014470994320532817",
+      "offer_id": "15014470994320532817",
+      "current_gmc_title": "36",
+      "proposed_gmc_title": "Tênis New Balance 204L Slate Grey Raincloud Cinza - Tamanho 36",
+      "shopify_product_title": "Tênis New Balance 204L Slate Grey Raincloud Cinza",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-204l-slate-grey-raincloud-cinza",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:16359969147856982838",
+      "offer_id": "16359969147856982838",
+      "current_gmc_title": "M/m",
+      "proposed_gmc_title": "Top Nude Project Bassa White Branco - Tamanho M",
+      "shopify_product_title": "Top Nude Project Bassa White Branco",
+      "confidence": "média",
+      "source": "handle_fallback_HTTPError",
+      "link": "https://lksneakers.com.br/products/top-nude-project-bassa-white-branco",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:8082476657063126648",
+      "offer_id": "8082476657063126648",
+      "current_gmc_title": "43",
+      "proposed_gmc_title": "Tênis ASICS Gel-1130 Black Pure Silver Prata - Tamanho 43",
+      "shopify_product_title": "Tênis ASICS Gel-1130 Black Pure Silver Prata",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-asics-gel-1130-black-pure-silver-prata-1",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:12887836741223739253",
+      "offer_id": "12887836741223739253",
+      "current_gmc_title": "34",
+      "proposed_gmc_title": "Tênis New Balance 990v6 Made in USA Cinza Castlerock - Tamanho 34",
+      "shopify_product_title": "Tênis New Balance 990v6 Made in USA Cinza Castlerock",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-new-balance-990v6-made-in-usa-cinza-castlerock",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:13509922810333178540",
+      "offer_id": "13509922810333178540",
+      "current_gmc_title": "L/g",
+      "proposed_gmc_title": "Camiseta Nude Project Honor Tee Black Preto - Tamanho G/L",
+      "shopify_product_title": "Camiseta Nude Project Honor Tee Black Preto",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/camiseta-nude-project-honor-tee-black-preto",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:10695397335246538087",
+      "offer_id": "10695397335246538087",
+      "current_gmc_title": "42",
+      "proposed_gmc_title": "Bota Timberland 6 Premium Waterproof Boot Supreme Multi Color Colorido - Tamanho 42",
+      "shopify_product_title": "Bota Timberland 6 Premium Waterproof Boot Supreme Multi Color Colorido",
+      "confidence": "média",
+      "source": "handle_fallback_HTTPError",
+      "link": "https://lksneakers.com.br/products/bota-timberland-6-premium-waterproof-boot-supreme-multi-color-colorido",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:9914706510510919523",
+      "offer_id": "9914706510510919523",
+      "current_gmc_title": "37",
+      "proposed_gmc_title": "Tenis Nike SB Dunk Low Pro Muni Lightning Denim Turquoise Turquesa - Tamanho 37",
+      "shopify_product_title": "Tenis Nike SB Dunk Low Pro Muni Lightning Denim Turquoise Turquesa",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-pro-muni-lightning-denim-turquoise-turquesa",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:3256183830573196292",
+      "offer_id": "3256183830573196292",
+      "current_gmc_title": "L/g",
+      "proposed_gmc_title": "Camiseta Saint Studio Oversized Suedine Supima Areia Bege - Tamanho G/L",
+      "shopify_product_title": "Camiseta Saint Studio Oversized Suedine Supima Areia Bege",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/camiseta-saint-studio-oversized-suedine-supima-areia-bege",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:6577883094469507641",
+      "offer_id": "6577883094469507641",
+      "current_gmc_title": "43",
+      "proposed_gmc_title": "Tênis Nike Kobe 11 Protro Mamba Day Dourado - Tamanho 43",
+      "shopify_product_title": "Tênis Nike Kobe 11 Protro Mamba Day Dourado",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-kobe-11-protro-mamba-day-dourado",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:10310578515087778063",
+      "offer_id": "10310578515087778063",
+      "current_gmc_title": "40",
+      "proposed_gmc_title": "Tênis Nike Vomero Premium Tangerine Tint Laranja - Tamanho 40",
+      "shopify_product_title": "Tênis Nike Vomero Premium Tangerine Tint Laranja",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-vomero-premium-tangerine-tint-laranja",
+      "selected_for_apply": true
+    },
+    {
+      "product_id": "online:pt:BR:2243578831328686793",
+      "offer_id": "2243578831328686793",
+      "current_gmc_title": "35",
+      "proposed_gmc_title": "Tênis Nike Vomero Premium Barely Green Verde - Tamanho 35",
+      "shopify_product_title": "Tênis Nike Vomero Premium Barely Green Verde",
+      "confidence": "alta",
+      "source": "shopify_public_product_js",
+      "link": "https://lksneakers.com.br/products/tenis-nike-vomero-premium-barely-green-verde",
+      "selected_for_apply": true
+    }
+  ],
+  "execution_results": [
+    {
+      "product_id": "online:pt:BR:5706324928133224313",
+      "offer_id": "5706324928133224313",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~5706324928133224313"
+    },
+    {
+      "product_id": "online:pt:BR:6036386056472256840",
+      "offer_id": "6036386056472256840",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~6036386056472256840"
+    },
+    {
+      "product_id": "online:pt:BR:3048242206072553507",
+      "offer_id": "3048242206072553507",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~3048242206072553507"
+    },
+    {
+      "product_id": "online:pt:BR:6234067398750979457",
+      "offer_id": "6234067398750979457",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~6234067398750979457"
+    },
+    {
+      "product_id": "online:pt:BR:11810372920072143991",
+      "offer_id": "11810372920072143991",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11810372920072143991"
+    },
+    {
+      "product_id": "online:pt:BR:16599698222138562820",
+      "offer_id": "16599698222138562820",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~16599698222138562820"
+    },
+    {
+      "product_id": "online:pt:BR:1863698749035586532",
+      "offer_id": "1863698749035586532",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1863698749035586532"
+    },
+    {
+      "product_id": "online:pt:BR:4531110532523186885",
+      "offer_id": "4531110532523186885",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~4531110532523186885"
+    },
+    {
+      "product_id": "online:pt:BR:2198938218729451562",
+      "offer_id": "2198938218729451562",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2198938218729451562"
+    },
+    {
+      "product_id": "online:pt:BR:14252480804615463970",
+      "offer_id": "14252480804615463970",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~14252480804615463970"
+    },
+    {
+      "product_id": "online:pt:BR:15031239196158973196",
+      "offer_id": "15031239196158973196",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15031239196158973196"
+    },
+    {
+      "product_id": "online:pt:BR:4086849490768644696",
+      "offer_id": "4086849490768644696",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~4086849490768644696"
+    },
+    {
+      "product_id": "online:pt:BR:12475328072847087695",
+      "offer_id": "12475328072847087695",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~12475328072847087695"
+    },
+    {
+      "product_id": "online:pt:BR:5627606835540697766",
+      "offer_id": "5627606835540697766",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~5627606835540697766"
+    },
+    {
+      "product_id": "online:pt:BR:2669418431140851356",
+      "offer_id": "2669418431140851356",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2669418431140851356"
+    },
+    {
+      "product_id": "online:pt:BR:4467332493483768941",
+      "offer_id": "4467332493483768941",
+      "execution_status": "failed_patch_v1",
+      "error": "http_400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"[item] validation/other: Validation failed: Item uploaded through multiple feeds\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"invalid\",\n        \"domain\": \"merchantapi.googleapis.com\",\n        \"metadata\": {\n          \"FIELD_LOCATION\": \"item\",\n          \"VALIDATION_CODE\": \"validation/other\",\n          \"DESTINATIONS\": \"\",\n          \"FORMATTED_ITEM_MESSAGE\": \"Item uploaded through multiple feeds\",\n          \"REASON\": \"VALIDATION_DYNAMIC_ISSUE\"\n        }\n      }\n    ]\n  }\n}\n"
+    },
+    {
+      "product_id": "online:pt:BR:16606924615096196772",
+      "offer_id": "16606924615096196772",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~16606924615096196772"
+    },
+    {
+      "product_id": "online:pt:BR:15047612723779191692",
+      "offer_id": "15047612723779191692",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15047612723779191692"
+    },
+    {
+      "product_id": "online:pt:BR:8419194273885247483",
+      "offer_id": "8419194273885247483",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~8419194273885247483"
+    },
+    {
+      "product_id": "online:pt:BR:15690098651674929383",
+      "offer_id": "15690098651674929383",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15690098651674929383"
+    },
+    {
+      "product_id": "online:pt:BR:16552051163064136080",
+      "offer_id": "16552051163064136080",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~16552051163064136080"
+    },
+    {
+      "product_id": "online:pt:BR:5390248129051651686",
+      "offer_id": "5390248129051651686",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~5390248129051651686"
+    },
+    {
+      "product_id": "online:pt:BR:12053538457178343768",
+      "offer_id": "12053538457178343768",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~12053538457178343768"
+    },
+    {
+      "product_id": "online:pt:BR:5328214585182033036",
+      "offer_id": "5328214585182033036",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~5328214585182033036"
+    },
+    {
+      "product_id": "online:pt:BR:15014470994320532817",
+      "offer_id": "15014470994320532817",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15014470994320532817"
+    },
+    {
+      "product_id": "online:pt:BR:16359969147856982838",
+      "offer_id": "16359969147856982838",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~16359969147856982838"
+    },
+    {
+      "product_id": "online:pt:BR:8082476657063126648",
+      "offer_id": "8082476657063126648",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~8082476657063126648"
+    },
+    {
+      "product_id": "online:pt:BR:12887836741223739253",
+      "offer_id": "12887836741223739253",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~12887836741223739253"
+    },
+    {
+      "product_id": "online:pt:BR:13509922810333178540",
+      "offer_id": "13509922810333178540",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~13509922810333178540"
+    },
+    {
+      "product_id": "online:pt:BR:10695397335246538087",
+      "offer_id": "10695397335246538087",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~10695397335246538087"
+    },
+    {
+      "product_id": "online:pt:BR:9914706510510919523",
+      "offer_id": "9914706510510919523",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~9914706510510919523"
+    },
+    {
+      "product_id": "online:pt:BR:3256183830573196292",
+      "offer_id": "3256183830573196292",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~3256183830573196292"
+    },
+    {
+      "product_id": "online:pt:BR:6577883094469507641",
+      "offer_id": "6577883094469507641",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~6577883094469507641"
+    },
+    {
+      "product_id": "online:pt:BR:10310578515087778063",
+      "offer_id": "10310578515087778063",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~10310578515087778063"
+    },
+    {
+      "product_id": "online:pt:BR:2243578831328686793",
+      "offer_id": "2243578831328686793",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2243578831328686793"
+    }
+  ],
+  "verified_results": [
+    {
+      "product_id": "online:pt:BR:5706324928133224313",
+      "offer_id": "5706324928133224313",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~5706324928133224313",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 204L x Atmos Cow Girl Brown Marrom - Tamanho 39",
+      "expected_title": "Tênis New Balance 204L x Atmos Cow Girl Brown Marrom - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6036386056472256840",
+      "offer_id": "6036386056472256840",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~6036386056472256840",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Shox TL Black Cave Stone Preto - Tamanho 37",
+      "expected_title": "Tênis Nike Shox TL Black Cave Stone Preto - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:3048242206072553507",
+      "offer_id": "3048242206072553507",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~3048242206072553507",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis ASICS Gel-1130 White Black Silver Prata - Tamanho 42",
+      "expected_title": "Tênis ASICS Gel-1130 White Black Silver Prata - Tamanho 42",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6234067398750979457",
+      "offer_id": "6234067398750979457",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~6234067398750979457",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Force 1 Low Protro Kobe Bryant Siempre Hermanos Marrom - Tamanho 34",
+      "expected_title": "Tênis Nike Air Force 1 Low Protro Kobe Bryant Siempre Hermanos Marrom - Tamanho 34",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11810372920072143991",
+      "offer_id": "11810372920072143991",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~11810372920072143991",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Calca Saint Studio Wide Alfaiataria Preto - Tamanho 40",
+      "expected_title": "Calca Saint Studio Wide Alfaiataria Preto - Tamanho 40",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:16599698222138562820",
+      "offer_id": "16599698222138562820",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~16599698222138562820",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Jordan 4 Retro Toro Bravo 2026 Vermelho - Tamanho 34",
+      "expected_title": "Tênis Jordan 4 Retro Toro Bravo 2026 Vermelho - Tamanho 34",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1863698749035586532",
+      "offer_id": "1863698749035586532",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~1863698749035586532",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis ASICS Gel-1130 Black Pure Silver Prata - Tamanho 44",
+      "expected_title": "Tênis ASICS Gel-1130 Black Pure Silver Prata - Tamanho 44",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:4531110532523186885",
+      "offer_id": "4531110532523186885",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~4531110532523186885",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Air Jordan 1 Low SE Repaired Denim Swoosh Azul - Tamanho 39",
+      "expected_title": "Tênis Nike Air Jordan 1 Low SE Repaired Denim Swoosh Azul - Tamanho 39",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2198938218729451562",
+      "offer_id": "2198938218729451562",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2198938218729451562",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Shox TL Velvet Brown Denim Turquoise Marrom - Tamanho 37",
+      "expected_title": "Tênis Nike Shox TL Velvet Brown Denim Turquoise Marrom - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:14252480804615463970",
+      "offer_id": "14252480804615463970",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~14252480804615463970",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Bota Timberland 6 Premium Waterproof Boot Supreme Wheat Bege - Tamanho 41",
+      "expected_title": "Bota Timberland 6 Premium Waterproof Boot Supreme Wheat Bege - Tamanho 41",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15031239196158973196",
+      "offer_id": "15031239196158973196",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15031239196158973196",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Nike Air Force 1 07 White - Tamanho 45",
+      "expected_title": "Nike Air Force 1 07 White - Tamanho 45",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:4086849490768644696",
+      "offer_id": "4086849490768644696",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~4086849490768644696",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Mind 002 Grey Football Grey Cinza - Tamanho 34",
+      "expected_title": "Tênis Nike Mind 002 Grey Football Grey Cinza - Tamanho 34",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:12475328072847087695",
+      "offer_id": "12475328072847087695",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~12475328072847087695",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Bota Timberland 6 Premium Waterproof Boot Supreme Black Preto - Tamanho 42",
+      "expected_title": "Bota Timberland 6 Premium Waterproof Boot Supreme Black Preto - Tamanho 42",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:5627606835540697766",
+      "offer_id": "5627606835540697766",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~5627606835540697766",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Camiseta Aimé Leon Dore ALD Golf Swing Coconut Milk Off White - Tamanho M",
+      "expected_title": "Camiseta Aimé Leon Dore ALD Golf Swing Coconut Milk Off White - Tamanho M",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2669418431140851356",
+      "offer_id": "2669418431140851356",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2669418431140851356",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Bolsa Aime Leon Dore Porsche Canvas Tote Bag - Cor Natural",
+      "expected_title": "Bolsa Aime Leon Dore Porsche Canvas Tote Bag - Cor Natural",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:4467332493483768941",
+      "offer_id": "4467332493483768941",
+      "execution_status": "failed_patch_v1",
+      "error": "http_400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"[item] validation/other: Validation failed: Item uploaded through multiple feeds\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"invalid\",\n        \"domain\": \"merchantapi.googleapis.com\",\n        \"metadata\": {\n          \"FIELD_LOCATION\": \"item\",\n          \"VALIDATION_CODE\": \"validation/other\",\n          \"DESTINATIONS\": \"\",\n          \"FORMATTED_ITEM_MESSAGE\": \"Item uploaded through multiple feeds\",\n          \"REASON\": \"VALIDATION_DYNAMIC_ISSUE\"\n        }\n      }\n    ]\n  }\n}\n",
+      "verify_status": "not_verified_due_to_execution_status"
+    },
+    {
+      "product_id": "online:pt:BR:16606924615096196772",
+      "offer_id": "16606924615096196772",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~16606924615096196772",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Moletom Aimé Leon Dore Market Hoodie Pine Groove Verde - Tamanho G/L",
+      "expected_title": "Moletom Aimé Leon Dore Market Hoodie Pine Groove Verde - Tamanho G/L",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15047612723779191692",
+      "offer_id": "15047612723779191692",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15047612723779191692",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Jordan 5 Retro White Metallic (2026) Metalizado - Tamanho 37",
+      "expected_title": "Tênis Jordan 5 Retro White Metallic (2026) Metalizado - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8419194273885247483",
+      "offer_id": "8419194273885247483",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~8419194273885247483",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis ASICS Gel-1130 White Black Silver Prata - Tamanho 34",
+      "expected_title": "Tênis ASICS Gel-1130 White Black Silver Prata - Tamanho 34",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15690098651674929383",
+      "offer_id": "15690098651674929383",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15690098651674929383",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Camiseta Nude Project Berry Tee White Branco - Tamanho M",
+      "expected_title": "Camiseta Nude Project Berry Tee White Branco - Tamanho M",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:16552051163064136080",
+      "offer_id": "16552051163064136080",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~16552051163064136080",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis ASICS Gel-1130 White Pure Silver Prata - Tamanho 43",
+      "expected_title": "Tênis ASICS Gel-1130 White Pure Silver Prata - Tamanho 43",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:5390248129051651686",
+      "offer_id": "5390248129051651686",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~5390248129051651686",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis ASICS Gel-1130 White Clay Canyon Branco - Tamanho 34",
+      "expected_title": "Tênis ASICS Gel-1130 White Clay Canyon Branco - Tamanho 34",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:12053538457178343768",
+      "offer_id": "12053538457178343768",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~12053538457178343768",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis On Running x Kith ON K-Tech 2 Spirulina Barley Verde - Tamanho 40",
+      "expected_title": "Tênis On Running x Kith ON K-Tech 2 Spirulina Barley Verde - Tamanho 40",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:5328214585182033036",
+      "offer_id": "5328214585182033036",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~5328214585182033036",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Kobe 5 Protro Lower Merion Aces Away Prata - Tamanho 35",
+      "expected_title": "Tênis Nike Kobe 5 Protro Lower Merion Aces Away Prata - Tamanho 35",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:15014470994320532817",
+      "offer_id": "15014470994320532817",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~15014470994320532817",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 204L Slate Grey Raincloud Cinza - Tamanho 36",
+      "expected_title": "Tênis New Balance 204L Slate Grey Raincloud Cinza - Tamanho 36",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:16359969147856982838",
+      "offer_id": "16359969147856982838",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~16359969147856982838",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Top Nude Project Bassa White Branco - Tamanho M",
+      "expected_title": "Top Nude Project Bassa White Branco - Tamanho M",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:8082476657063126648",
+      "offer_id": "8082476657063126648",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~8082476657063126648",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis ASICS Gel-1130 Black Pure Silver Prata - Tamanho 43",
+      "expected_title": "Tênis ASICS Gel-1130 Black Pure Silver Prata - Tamanho 43",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:12887836741223739253",
+      "offer_id": "12887836741223739253",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~12887836741223739253",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis New Balance 990v6 Made in USA Cinza Castlerock - Tamanho 34",
+      "expected_title": "Tênis New Balance 990v6 Made in USA Cinza Castlerock - Tamanho 34",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:13509922810333178540",
+      "offer_id": "13509922810333178540",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~13509922810333178540",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Camiseta Nude Project Honor Tee Black Preto - Tamanho G/L",
+      "expected_title": "Camiseta Nude Project Honor Tee Black Preto - Tamanho G/L",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:10695397335246538087",
+      "offer_id": "10695397335246538087",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~10695397335246538087",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Bota Timberland 6 Premium Waterproof Boot Supreme Multi Color Colorido - Tamanho 42",
+      "expected_title": "Bota Timberland 6 Premium Waterproof Boot Supreme Multi Color Colorido - Tamanho 42",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:9914706510510919523",
+      "offer_id": "9914706510510919523",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~9914706510510919523",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tenis Nike SB Dunk Low Pro Muni Lightning Denim Turquoise Turquesa - Tamanho 37",
+      "expected_title": "Tenis Nike SB Dunk Low Pro Muni Lightning Denim Turquoise Turquesa - Tamanho 37",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:3256183830573196292",
+      "offer_id": "3256183830573196292",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~3256183830573196292",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Camiseta Saint Studio Oversized Suedine Supima Areia Bege - Tamanho G/L",
+      "expected_title": "Camiseta Saint Studio Oversized Suedine Supima Areia Bege - Tamanho G/L",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:6577883094469507641",
+      "offer_id": "6577883094469507641",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~6577883094469507641",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Kobe 11 Protro Mamba Day Dourado - Tamanho 43",
+      "expected_title": "Tênis Nike Kobe 11 Protro Mamba Day Dourado - Tamanho 43",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:10310578515087778063",
+      "offer_id": "10310578515087778063",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~10310578515087778063",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Vomero Premium Tangerine Tint Laranja - Tamanho 40",
+      "expected_title": "Tênis Nike Vomero Premium Tangerine Tint Laranja - Tamanho 40",
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2243578831328686793",
+      "offer_id": "2243578831328686793",
+      "execution_status": "patched_p2b_title_v1",
+      "product_input": "accounts/5297679409/productInputs/pt~BR~2243578831328686793",
+      "verify_status": "verified_merchant_product_get",
+      "actual_title": "Tênis Nike Vomero Premium Barely Green Verde - Tamanho 35",
+      "expected_title": "Tênis Nike Vomero Premium Barely Green Verde - Tamanho 35",
+      "match_expected": true
+    }
+  ],
+  "not_performed": [
+    "shopify_write",
+    "shopify_title_update",
+    "handle_update",
+    "description_update",
+    "price_update",
+    "availability_update",
+    "googleProductCategory_update",
+    "productTypes_update",
+    "merchant_delete",
+    "tiny_write",
+    "database_write",
+    "feed_fetch_or_upload",
+    "message_or_campaign_send"
+  ]
+}

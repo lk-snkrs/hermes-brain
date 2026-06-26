@@ -1,0 +1,20 @@
+{
+  "version": "2026-06-14.manual-overrides.v1",
+  "source": "manual_audit_from_shopify_sales_os_db",
+  "values_printed": false,
+  "overrides": [
+    {
+      "product_key": "title:Motoca|sku:",
+      "match_title": "Motoca",
+      "match_sku": "",
+      "category": "outros",
+      "category_source": "manual_review_no_product_metadata_v1",
+      "category_confidence": 0.99,
+      "brand_group": "Unknown",
+      "model_family": "Unknown",
+      "reason": "Legacy POS line item has no product_id, variant_id, sku, vendor, Shopify product_type or tags; keep as outros without forcing product category.",
+      "approved_by": "Lucas via Telegram: Seguir",
+      "created_at": "2026-06-14T15:23:00Z"
+    }
+  ]
+}

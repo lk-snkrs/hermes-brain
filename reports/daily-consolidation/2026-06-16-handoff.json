@@ -1,0 +1,170 @@
+{
+  "operational_date": "2026-06-16",
+  "generated_at_utc": "2026-06-17T04:05:07Z",
+  "status": "attention_controlled",
+  "executive_summary": "Operação saudável com atenção documental: Brain Health FAIL=0/WARN=1, Brain Improvement Score 99/100, crons vivos sem last_status não-ok. Reminder OS foi auto-corrigido localmente; LK Shopify/LK Stock tiveram entregas verificadas; LK Trends email segue pausado por qualidade.",
+  "material_changes": [
+    {
+      "domain": "Operações / Reminder OS",
+      "change": "Auto-heal A1 para bloqueio puro ingress_open_needed registrado em ledger, com health gate PASS e watchdog silent-OK.",
+      "external_writes": false,
+      "source": "areas/operacoes/reminder-os/receipts/reminder-os-ingress-autoheal-hardening-20260616.md"
+    },
+    {
+      "domain": "LK Shopify",
+      "change": "Coleção Nike Vomero 5 promovida/atualizada em Production sob aprovação escopada; Admin/API corretos, cache público em convergência.",
+      "external_writes": true,
+      "source": "areas/lk/sub-areas/shopify/receipts/vomero5-collection-production-promotion-and-seo-20260616.md"
+    },
+    {
+      "domain": "LK Shopify",
+      "change": "Lote aprovado de 10 PDPs teve apenas seo.title e seo.description aplicados; QA público/Admin 10/10.",
+      "external_writes": true,
+      "source": "areas/lk/sub-areas/shopify/receipts/seo-pdp-apply10-20260616.md"
+    },
+    {
+      "domain": "LK Stock",
+      "change": "POS alert HQ2050-001-5 corrigido no Stock OS local via fallback live read-only Shopify↔Tiny; sem write Tiny/Shopify.",
+      "external_writes": false,
+      "source": "areas/lk/sub-areas/stock/receipts/lk-pos-alert-hq2050-001-stockos-miss-fix-20260616T2154Z.md"
+    },
+    {
+      "domain": "LK Content runtime",
+      "change": "Cron one-shot profile-local que matava o gateway foi pausado/disabled após backup; watchdog global voltou a ok.",
+      "external_writes": false,
+      "source": "areas/operacoes/runtime/receipts/lk-content-renan-gateway-repair-20260616.md"
+    }
+  ],
+  "incidents": [
+    {
+      "severity": "warn",
+      "domain": "Brain Health",
+      "summary": "areas/lk/sub-areas/growth/decisions tem markdowns mas não está linkado no MAPA.md pai.",
+      "action_needed": "Linkar a pasta de decisões no MAPA pai e rerodar health check."
+    },
+    {
+      "severity": "attention_controlled",
+      "domain": "LK Trends",
+      "summary": "Cloudflare email delivery segue paused_by_lucas_after_bad_newsletter.",
+      "action_needed": "Manter local/pausado até revisão humana e aprovação escopada."
+    }
+  ],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Corrigir Reminder OS para reduzir recorrência de follow-up perdido.",
+      "scope": "Local/documental A1; sem cron novo, sem runtime mutation, sem alerta genérico.",
+      "source": "areas/operacoes/reminder-os/receipts/reminder-os-ingress-autoheal-hardening-20260616.md"
+    },
+    {
+      "decision": "Aprovar escopos específicos LK Shopify para Nike Vomero 5 e SEO PDP lote 10.",
+      "scope": "Somente campos/assets documentados; exclui preço, estoque, Tiny, campanhas e customer-facing sends.",
+      "source": "areas/lk/sub-areas/shopify/receipts/"
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "type": "approval",
+      "pattern_to_learn": "Aprovação escopada de Shopify precisa terminar em snapshot/readback/receipt/rollback e não expande para preço/estoque/campanhas.",
+      "exclusions": ["Tiny write", "stock write", "campaign send", "customer contact", "price change"]
+    },
+    {
+      "type": "correction",
+      "pattern_to_learn": "Follow-up perdido por handoff deve ser resolvido pelo Reminder OS ledger/health, não por novo cron ou alerta genérico.",
+      "exclusions": ["cron creation", "gateway restart", "external send"]
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Pure Reminder OS ingress_open_needed blocker can be auto-healed locally by deduping/appending a ledger row and rerunning health gate.",
+      "recommended_destination": "Reminder OS skill/routine/health gate",
+      "action_applied": true,
+      "verification_needed": "Next watchdog remains PASS with open_needed_count=0."
+    },
+    {
+      "learning": "LK Stock POS miss for new product can use live read-only Shopify↔Tiny crosswalk and local promotion without source-of-truth writes.",
+      "recommended_destination": "lk-stock skill/routine",
+      "action_applied": true,
+      "verification_needed": "Monitor recurrence of new products missing from current_local_stock."
+    },
+    {
+      "learning": "Past-due one-shot profile crons can self-kill gateways when ticker starts; disable after one-time purpose completes.",
+      "recommended_destination": "lucas-runtime-operations skill/checklist",
+      "action_applied": true,
+      "verification_needed": "Gateway stays alive and watchdog reports ok."
+    },
+    {
+      "learning": "Decision folders in subareas should be linked from parent MAPA.md to keep Brain navigation clean.",
+      "recommended_destination": "LK Growth MAPA / Brain health hygiene",
+      "action_applied": false,
+      "verification_needed": "Rerun brain_health_check and reach WARN=0."
+    }
+  ],
+  "autonomy_pattern_candidates": {
+    "may_be_a0_a1_when_safe": [
+      "Reminder OS pure ingress ledger repair with backup and health gate verification",
+      "Local/read-only Stock OS surface repair after verified crosswalk evidence",
+      "Disabling completed one-shot profile-local cron after backup when it is causing self-termination"
+    ],
+    "must_stay_a3_a4": [
+      "Shopify/Tiny/GMC/Klaviyo/Meta production writes outside exact approved scope",
+      "External e-mail/WhatsApp/newsletter/customer/collector sends",
+      "Docker/VPS/gateway/restart/deploy/cron mutation beyond scoped approved local docs",
+      "Secrets, payments, destructive operations"
+    ]
+  },
+  "pending_decisions_for_lucas": [
+    "Salomon XT-6 GTX Black: informar preço/tamanhos e aprovar ou não criação como DRAFT.",
+    "Zipper/Mordomo Decision Inbox: responder/decidir leads que exigem contexto humano.",
+    "LK Trends newsletter/email: revisar template/conteúdo antes de qualquer reativação."
+  ],
+  "safe_next_actions": [
+    "Linkar areas/lk/sub-areas/growth/decisions no MAPA pai e rerodar health check.",
+    "Rodar nova checagem pública da coleção Nike Vomero 5 para cache/CDN.",
+    "Manter watchdogs silent-OK e tratar somente alertas acionáveis."
+  ],
+  "blocked_actions_requiring_approval": [
+    "Reativar LK Trends Cloudflare email delivery/newsletter.",
+    "Publicar produto Shopify ativo, alterar preço, estoque ou Tiny.",
+    "Enviar WhatsApp/e-mail/follow-up para cliente/colecionador/fornecedor.",
+    "Alterar Docker/VPS/gateway/crons/schedules/delivery sem escopo aprovado."
+  ],
+  "cron_and_delivery_truth": {
+    "cron_source": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all",
+    "cronjob_list_available_in_path": false,
+    "total_jobs": 40,
+    "active_jobs": 36,
+    "paused_jobs": 4,
+    "non_ok_last_status_count": 0,
+    "silent_ok_interpretation": "Healthy watchdogs remain local/silent unless actionable.",
+    "delivery_note": "Normal Fechamento delivery is local; final report only because WARN=1 requires attention."
+  },
+  "health_and_score": {
+    "health_json": "reports/brain-health-check-2026-06-16-02h.json",
+    "health_fail_count": 0,
+    "health_warn_count": 1,
+    "score_markdown": "reports/brain-improvement-score-2026-06-16-02h.md",
+    "score_json": "reports/brain-improvement-score-2026-06-16-02h.json",
+    "overall_score": 99
+  },
+  "sources": [
+    "reports/daily-consolidation/2026-06-16.md",
+    "reports/hermes-daily-digest/2026-06-16.md",
+    "reports/nightly-ops-audit/2026-06-16.md",
+    "reports/hermes-continuous-improvement/2026-06-16.md",
+    "reports/hermes-learning-ledger/2026-06-16.md",
+    "reports/governance/runtime-truth-reconciler-2026-06-16.md",
+    "reports/memory-hygiene/2026-06-17.json",
+    "areas/operacoes/runtime/receipts/lk-content-renan-gateway-repair-20260616.md",
+    "areas/lk/sub-areas/shopify/receipts/vomero5-collection-production-promotion-and-seo-20260616.md",
+    "areas/lk/sub-areas/shopify/receipts/seo-pdp-apply10-20260616.md",
+    "areas/lk/sub-areas/stock/receipts/lk-pos-alert-hq2050-001-stockos-miss-fix-20260616T2154Z.md",
+    "areas/operacoes/decision-inbox/whatsapp-17h-digest-20260616.md",
+    "areas/operacoes/reminder-os/receipts/reminder-os-ingress-autoheal-hardening-20260616.md"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "values_printed": false,
+    "raw_chat_transcripts_included": false,
+    "secret_scan_required": true
+  }
+}

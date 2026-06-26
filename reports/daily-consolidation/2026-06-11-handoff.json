@@ -1,0 +1,155 @@
+{
+  "operational_date": "2026-06-11",
+  "generated_at_utc": "2026-06-11T04:05:18Z",
+  "status": "healthy",
+  "executive_summary": "Fechamento 01h BRT executado em modo Brain-first/local. Health check FAIL=0 WARN=0; Brain Improvement Score 94/100; crons principais consultados; Brain OS Ondas 10-13 registradas por receipts documentais; sem writes externos/produtivos.",
+  "material_changes": [
+    {
+      "type": "daily_consolidation",
+      "path": "reports/daily-consolidation/2026-06-11.md",
+      "summary": "Relatório diário do Fechamento Ágil 01h gerado com cron truth, health/score, receipts Brain OS e guardrails."
+    },
+    {
+      "type": "health_score_artifacts",
+      "paths": [
+        "reports/brain-health-check-2026-06-11-02h.json",
+        "reports/brain-improvement-score-2026-06-11-02h.md",
+        "reports/brain-improvement-score-2026-06-11-02h.json"
+      ],
+      "summary": "Artefatos obrigatórios do gate 01h/02h gerados localmente."
+    }
+  ],
+  "incidents": [
+    {
+      "category": "compression_self_heal",
+      "status": "verified-existing-guardrail",
+      "summary": "Watchdog identificou falha conhecida de compressão por Bad file descriptor, validou py_compile/testes e não reiniciou gateway/container por ser approval-gated.",
+      "external_action_taken": false
+    }
+  ],
+  "decisions_made_by_lucas": [],
+  "approvals_and_corrections": [
+    {
+      "scope": "Fechamento 01h / Brain Improvement Score",
+      "pattern_to_learn": "Health check e Brain Improvement Score devem rodar dentro do fechamento existente, sem criação de cron separado.",
+      "exclusions": [
+        "sem produção",
+        "sem Docker/VPS/gateway/restart",
+        "sem bancos/integrações/customer-facing",
+        "sem Telegram em sucesso normal"
+      ],
+      "status": "applied_in_this_run"
+    },
+    {
+      "scope": "Handoff 01h para supervisor 02h",
+      "pattern_to_learn": "O fechamento deve produzir markdown diário e JSON parseável/sanitizado como pacote direto para o supervisor 02h.",
+      "exclusions": [
+        "sem raw chat transcripts",
+        "sem secrets",
+        "sem dados vivos não verificados"
+      ],
+      "status": "applied_in_this_run"
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Health/Score 01h são gate do fechamento, não cron separado.",
+      "recommended_destination": "areas/operacoes/rotinas/fechamento-agil-01h.md ou supervisor 02h",
+      "action_applied_or_blocked": "Aplicado no relatório e handoff desta execução.",
+      "verification_needed": "Confirmar que Brain Sync versionou os artefatos allowlisted."
+    },
+    {
+      "learning": "Rotina documentada não prova cron vivo; perguntas operacionais exigem cronjob list/runtime truth.",
+      "recommended_destination": "rotinas de governança e relatórios 01h/02h",
+      "action_applied_or_blocked": "Aplicado na seção Crons e automações.",
+      "verification_needed": "Continuar consultando cron truth em fechamentos futuros."
+    },
+    {
+      "learning": "Self-heal pode validar guardrail de compressão, mas restart continua approval-gated.",
+      "recommended_destination": "runtime governance / incident ledger",
+      "action_applied_or_blocked": "Registrado sem restart.",
+      "verification_needed": "Se recorrente, preparar approval packet específico para restart/fix runtime."
+    },
+    {
+      "learning": "Cobertura de índice de skills é a menor dimensão do score atual; melhorar somente quando houver repetição real.",
+      "recommended_destination": "pendências de Brain OS / skill curation",
+      "action_applied_or_blocked": "Registrado como oportunidade não bloqueante.",
+      "verification_needed": "Usar critério 3+ repetições ou alto impacto antes de criar/patchar skill."
+    }
+  ],
+  "autonomy_pattern_candidates": {
+    "candidate_a0_a1": [
+      "gerar/validar relatórios locais do Brain",
+      "rodar health check e score read-only",
+      "secret scan sanitizado",
+      "Brain Sync seguro allowlist documental"
+    ],
+    "must_remain_a3_a4": [
+      "restart de gateway/container",
+      "Docker/VPS/Traefik/volumes/redes",
+      "writes em Shopify/Tiny/GMC/Klaviyo/Meta/Supabase/bancos",
+      "WhatsApp/e-mail/campanha/cliente/fornecedor",
+      "criação ou alteração de cron recorrente com entrega externa"
+    ]
+  },
+  "pending_decisions_for_lucas": [],
+  "safe_next_actions": [
+    "Supervisor 02h consumir este handoff e promover apenas aprendizados A0/A1 seguros.",
+    "Manter pendências como fila acionável e reduzir lacunas de skill/index quando houver repetição real.",
+    "Se houver nova onda Brain OS, verificar SHA local/remoto antes de tocar arquivos."
+  ],
+  "blocked_actions_requiring_approval": [
+    "restart/redeploy/gateway/Docker/VPS",
+    "produção ou integrações source-of-truth",
+    "mensagens externas e campanhas",
+    "cron novo ou mudança de delivery para Telegram/origin fora do escopo já aprovado"
+  ],
+  "cron_and_delivery_truth": {
+    "generated": true,
+    "delivered_to_telegram": false,
+    "normal_delivery_contract": "local/silent on healthy run",
+    "health_check": {
+      "path": "reports/brain-health-check-2026-06-11-02h.json",
+      "fail_count": 0,
+      "warn_count": 0
+    },
+    "brain_improvement_score": {
+      "path": "reports/brain-improvement-score-2026-06-11-02h.json",
+      "overall_score": 94
+    },
+    "cron_truth_summary": [
+      "daily intelligence loop active, last OK in consulted registry",
+      "runtime + cron watchdog active, last OK",
+      "compression self-heal watchdog active, last OK",
+      "Memory OS alert-only active, last OK",
+      "Mordomo Telegram gateway watchdog paused",
+      "LK mandatory/reporting and POS/reconciler jobs active in consulted registry"
+    ]
+  },
+  "sources": [
+    "areas/operacoes/inventarios/crons-agentes-profiles.md",
+    "areas/operacoes/brds/hermes-brain-fechamento-agil-23h-brd-2026-05-19.md",
+    "empresa/contexto/organograma-agentes-hermes.md",
+    "areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md",
+    "areas/operacoes/rotinas/fechamento-agil-01h.md",
+    "areas/operacoes/rotinas/brain-sync.md",
+    "reports/governance/receipts/brain-os-v1-wave10-canonical-hubs-20260611.md",
+    "reports/governance/receipts/brain-os-v1-wave11-evidence-ledgers-20260611.md",
+    "reports/governance/receipts/brain-os-v1-wave12-artifact-archives-20260611.md",
+    "reports/governance/receipts/brain-os-v1-wave13-runtime-governance-20260611.md",
+    "reports/memory-hygiene/2026-06-11.json",
+    "reports/hermes-compression-self-heal/compression-self-heal-20260611T033012Z.json",
+    "reports/brain-health-check-2026-06-11-02h.json",
+    "reports/brain-improvement-score-2026-06-11-02h.json",
+    "cronjob list",
+    "session_search"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "raw_chat_transcripts_included": false,
+    "secret_values_included": false,
+    "token_previews_included": false,
+    "pii_dump_included": false,
+    "values_printed": false
+  }
+}

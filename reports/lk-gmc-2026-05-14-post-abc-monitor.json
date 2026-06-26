@@ -1,0 +1,892 @@
+{
+  "generated_at": "2026-05-14T15:23:33.436004+00:00",
+  "scope": "read-only monitor after approved 2026-05-14 LK A/B/C execution",
+  "status": "post_abc_clean_for_target_scope",
+  "source_labels": [
+    "fact_merchant_center",
+    "manual_approval_lucas_abc",
+    "fact_shopify_readonly_prior_draft_diagnosis"
+  ],
+  "summary": {
+    "deleted_targets": 12,
+    "deleted_absent_both_count": 12,
+    "attr_targets": 64,
+    "attr_ids_without_target_issue_count": 64,
+    "target_attr_issue_counts": {}
+  },
+  "deleted_exact_id_check": [
+    {
+      "product_id": "online:pt:BR:10002025469927148791",
+      "present_product_get": false,
+      "present_status_get": false
+    },
+    {
+      "product_id": "online:pt:BR:10591784840915585992",
+      "present_product_get": false,
+      "present_status_get": false
+    },
+    {
+      "product_id": "online:pt:BR:11314792792398542744",
+      "present_product_get": false,
+      "present_status_get": false
+    },
+    {
+      "product_id": "online:pt:BR:13498809788548851139",
+      "present_product_get": false,
+      "present_status_get": false
+    },
+    {
+      "product_id": "online:pt:BR:13622509763707629816",
+      "present_product_get": false,
+      "present_status_get": false
+    },
+    {
+      "product_id": "online:pt:BR:15031239196158973196",
+      "present_product_get": false,
+      "present_status_get": false
+    },
+    {
+      "product_id": "online:pt:BR:1624428988081867066",
+      "present_product_get": false,
+      "present_status_get": false
+    },
+    {
+      "product_id": "online:pt:BR:2258634078163248862",
+      "present_product_get": false,
+      "present_status_get": false
+    },
+    {
+      "product_id": "online:pt:BR:3876299146406606317",
+      "present_product_get": false,
+      "present_status_get": false
+    },
+    {
+      "product_id": "online:pt:BR:4041641007094962608",
+      "present_product_get": false,
+      "present_status_get": false
+    },
+    {
+      "product_id": "online:pt:BR:6562590402534581177",
+      "present_product_get": false,
+      "present_status_get": false
+    },
+    {
+      "product_id": "online:pt:BR:9250025623243509812",
+      "present_product_get": false,
+      "present_status_get": false
+    }
+  ],
+  "attr_exact_id_check": [
+    {
+      "product_id": "online:pt:BR:1183B577.200-1",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:1183B577.200-10",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:1183B577.200-2",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:1183B577.200-3",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:1183B577.200-4",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:1183B577.200-5",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:1183B577.200-6",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:1183B577.200-7",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:1183B577.200-8",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:1183B577.200-9",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:16354631407067711955",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:2669418431140851356",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:43774078387680",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:43774078387690",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:43774078387700",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:43774078387710",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:43774078387720",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:43774078387730",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:43774078387740",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:HAHA01",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:HAHA02",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:HAHA03",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:HAHA04",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:HAHA05",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:HAHA06",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:HAHA07",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:HAHA08",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:HAHA09",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-1",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-10",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-11",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-2",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-3",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-4",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-5",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-6",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-7",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-8",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-9",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-1",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-2",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-3",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-4",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-5",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:JI3098-6",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:SLBCS",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:ST63",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:ST64",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:ST65",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:ST66",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:ST67",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:dc0774-0211",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:dc0774-02110",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:dc0774-02111",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:dc0774-02112",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:dc0774-0212",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:dc0774-0213",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:dc0774-0214",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:dc0774-0215",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:dc0774-0216",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:dc0774-0217",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:dc0774-0218",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:dc0774-0219",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    },
+    {
+      "product_id": "online:pt:BR:fv5029-100",
+      "status_present": true,
+      "target_attr_issue_count": 0,
+      "target_attr_issues": []
+    }
+  ],
+  "full_status_baseline": {
+    "productstatuses_read": 23267,
+    "rows_with_item_issues": 524,
+    "item_issue_instances": 1849,
+    "item_issue_counts_top": [
+      {
+        "issue_key": "price_updated",
+        "count": 1089
+      },
+      {
+        "issue_key": "strikethrough_price_updated",
+        "count": 516
+      },
+      {
+        "issue_key": "restricted_gtin",
+        "count": 100
+      },
+      {
+        "issue_key": "missing_item_attribute_for_product_type",
+        "count": 44
+      },
+      {
+        "issue_key": "availability_updated",
+        "count": 30
+      },
+      {
+        "issue_key": "landing_page_error",
+        "count": 27
+      },
+      {
+        "issue_key": "image_single_color",
+        "count": 8
+      },
+      {
+        "issue_key": "reserved_gtin",
+        "count": 6
+      },
+      {
+        "issue_key": "image_link_broken",
+        "count": 6
+      },
+      {
+        "issue_key": "landing_page_pending_crawl",
+        "count": 5
+      },
+      {
+        "issue_key": "condition_updated_from_detected",
+        "count": 4
+      },
+      {
+        "issue_key": "restricted_nfs_policy_violation",
+        "count": 4
+      },
+      {
+        "issue_key": "coupon_gtin",
+        "count": 3
+      },
+      {
+        "issue_key": "multiple_sizes",
+        "count": 2
+      },
+      {
+        "issue_key": "pause_expired",
+        "count": 2
+      },
+      {
+        "issue_key": "item_missing_required_attribute",
+        "count": 1
+      },
+      {
+        "issue_key": "sexual_interests_policy_violation",
+        "count": 1
+      },
+      {
+        "issue_key": "image_too_small_for_high_resolution",
+        "count": 1
+      }
+    ],
+    "item_issue_counts_by_channel_top": {
+      "online": [
+        {
+          "issue_key": "price_updated",
+          "count": 1089
+        },
+        {
+          "issue_key": "strikethrough_price_updated",
+          "count": 516
+        },
+        {
+          "issue_key": "restricted_gtin",
+          "count": 68
+        },
+        {
+          "issue_key": "missing_item_attribute_for_product_type",
+          "count": 44
+        },
+        {
+          "issue_key": "availability_updated",
+          "count": 30
+        },
+        {
+          "issue_key": "landing_page_error",
+          "count": 27
+        },
+        {
+          "issue_key": "image_single_color",
+          "count": 6
+        },
+        {
+          "issue_key": "image_link_broken",
+          "count": 6
+        },
+        {
+          "issue_key": "landing_page_pending_crawl",
+          "count": 5
+        },
+        {
+          "issue_key": "reserved_gtin",
+          "count": 4
+        },
+        {
+          "issue_key": "restricted_nfs_policy_violation",
+          "count": 3
+        },
+        {
+          "issue_key": "multiple_sizes",
+          "count": 2
+        }
+      ],
+      "local": [
+        {
+          "issue_key": "restricted_gtin",
+          "count": 32
+        },
+        {
+          "issue_key": "condition_updated_from_detected",
+          "count": 4
+        },
+        {
+          "issue_key": "reserved_gtin",
+          "count": 2
+        },
+        {
+          "issue_key": "image_single_color",
+          "count": 2
+        },
+        {
+          "issue_key": "restricted_nfs_policy_violation",
+          "count": 1
+        },
+        {
+          "issue_key": "coupon_gtin",
+          "count": 1
+        }
+      ]
+    },
+    "destination_status_counts_top": [
+      {
+        "destination_status": "SurfacesAcrossGoogle:approved",
+        "count": 11675
+      },
+      {
+        "destination_status": "Shopping:approved",
+        "count": 11649
+      },
+      {
+        "destination_status": "DisplayAds:approved",
+        "count": 11648
+      },
+      {
+        "destination_status": "LocalSurfacesAcrossGoogle:approved",
+        "count": 11576
+      },
+      {
+        "destination_status": "SurfacesAcrossGoogle:disapproved",
+        "count": 11
+      },
+      {
+        "destination_status": "DisplayAds:disapproved",
+        "count": 11
+      },
+      {
+        "destination_status": "Shopping:disapproved",
+        "count": 10
+      },
+      {
+        "destination_status": "SurfacesAcrossGoogle:pending",
+        "count": 5
+      }
+    ],
+    "sample_issues": [
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza - Tamanho 36",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza - Tamanho 36",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza - Tamanho 36",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza - Tamanho 36",
+        "channel": "online",
+        "issue_key": "strikethrough_price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page"
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza - Tamanho 36",
+        "channel": "online",
+        "issue_key": "strikethrough_price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page"
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza - Tamanho 36",
+        "channel": "online",
+        "issue_key": "strikethrough_price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page"
+      },
+      {
+        "product_id": "online:pt:BR:HV8547-002-36",
+        "title": "Tênis Nike Moon Shoe SP Jacquemus Off White - Tamanho 36",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:HV8547-002-36",
+        "title": "Tênis Nike Moon Shoe SP Jacquemus Off White - Tamanho 36",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:HV8547-002-36",
+        "title": "Tênis Nike Moon Shoe SP Jacquemus Off White - Tamanho 36",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:U9060CCB-10",
+        "title": "Tênis New Balance 9060 Bisque Sea Salt Bege - Tamanho 43",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:U9060CCB-10",
+        "title": "Tênis New Balance 9060 Bisque Sea Salt Bege - Tamanho 43",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:U9060CCB-10",
+        "title": "Tênis New Balance 9060 Bisque Sea Salt Bege - Tamanho 43",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:43774078387780",
+        "title": "Tênis Adidas Samba Jane Cream Black Gum Bege - Tamanho 36",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:43774078387780",
+        "title": "Tênis Adidas Samba Jane Cream Black Gum Bege - Tamanho 36",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:43774078387780",
+        "title": "Tênis Adidas Samba Jane Cream Black Gum Bege - Tamanho 36",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:43774078387780",
+        "title": "Tênis Adidas Samba Jane Cream Black Gum Bege - Tamanho 36",
+        "channel": "online",
+        "issue_key": "strikethrough_price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page"
+      },
+      {
+        "product_id": "online:pt:BR:43774078387780",
+        "title": "Tênis Adidas Samba Jane Cream Black Gum Bege - Tamanho 36",
+        "channel": "online",
+        "issue_key": "strikethrough_price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page"
+      },
+      {
+        "product_id": "online:pt:BR:43774078387780",
+        "title": "Tênis Adidas Samba Jane Cream Black Gum Bege - Tamanho 36",
+        "channel": "online",
+        "issue_key": "strikethrough_price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page"
+      },
+      {
+        "product_id": "online:pt:BR:11157608326226995514",
+        "title": "Pop Mart Disney Mickey Family Together Series Plush Keychain Single Blind Box Lacrada",
+        "channel": "online",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "attributeName": "color",
+        "detail": "Add the color of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:FN4193100-8",
+        "title": "Tênis Crenshaw Skate Club x Nike SB Dunk Low Multicolor",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:FN4193100-8",
+        "title": "Tênis Crenshaw Skate Club x Nike SB Dunk Low Multicolor",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:FN4193100-8",
+        "title": "Tênis Crenshaw Skate Club x Nike SB Dunk Low Multicolor",
+        "channel": "online",
+        "issue_key": "price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:FN4193100-8",
+        "title": "Tênis Crenshaw Skate Club x Nike SB Dunk Low Multicolor",
+        "channel": "online",
+        "issue_key": "strikethrough_price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page"
+      },
+      {
+        "product_id": "online:pt:BR:FN4193100-8",
+        "title": "Tênis Crenshaw Skate Club x Nike SB Dunk Low Multicolor",
+        "channel": "online",
+        "issue_key": "strikethrough_price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page"
+      },
+      {
+        "product_id": "online:pt:BR:FN4193100-8",
+        "title": "Tênis Crenshaw Skate Club x Nike SB Dunk Low Multicolor",
+        "channel": "online",
+        "issue_key": "strikethrough_price_updated",
+        "severity": null,
+        "attributeName": "price",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page"
+      }
+    ]
+  },
+  "next_safe_gate": "Build next residual preview only after reviewing current full diagnostics; no second Merchant/Shopify/Notion write without explicit inline approval.",
+  "not_performed": [
+    "Merchant write/delete/patch",
+    "Shopify publish/redirect/write",
+    "Tiny write",
+    "Notion write",
+    "feed fetch/upload",
+    "campaign/message/customer/supplier contact"
+  ]
+}

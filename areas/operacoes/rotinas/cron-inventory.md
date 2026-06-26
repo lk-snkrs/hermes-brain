@@ -1,5 +1,7 @@
 # Inventário de Crons — Hermes / VPS
 
+> LEGACY SNAPSHOT — inventário histórico de 2026-05-04. Não é fonte viva para crons atuais. Para controle atual, usar `areas/operacoes/rotinas/cron-control-plane.md` + `cronjob(action='list')`. Comandos de inspeção de host, paths `/root` e achados de VPS abaixo são evidência histórica e não autorização para executar ações em host/Docker/SSH sem aprovação explícita.
+
 Data da última tentativa de verificação: 2026-05-04.
 
 ## Objetivo
@@ -37,8 +39,8 @@ Tentativas iniciais realizadas sem persistir credenciais:
 
 - hosts: `72.60.150.124`, `187.127.10.158`;
 - usuários testados: `root`, `hermes`, `ubuntu`, `admin`, `debian` conforme aplicável;
-- secrets testados sob demanda via Doppler: `HERMES_VPS_SSH_PASS`, `HERMES_SUDO_PASS`, `VPS_ROOT_PASSWORD`;
-- resultado: `Permission denied (publickey,password)`.
+- credenciais históricas testadas via Doppler foram descontinuadas para este fluxo; não usar senha ou helper de senha SSH para inventário;
+- resultado histórico: `Permission denied (publickey,password)`.
 
 Conclusão inicial: as credenciais SSH disponíveis no Doppler não autenticavam nas VPS atuais.
 
@@ -233,7 +235,7 @@ systemctl list-units --all --type=service --no-pager 2>&1 | grep -Ei 'hermes|lk_
 docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}' 2>&1
 find /docker /root /opt -maxdepth 4 \( -name 'docker-compose.yml' -o -name 'compose.yml' -o -name 'docker-compose.yaml' \) 2>/dev/null | sort
 (command -v hermes && hermes cron list --all) 2>&1
-find /root/.hermes /root/hermes-brain -maxdepth 3 -type f \( -name '*cron*' -o -name '*schedule*' -o -name '*briefing*' -o -name '*sync*' -o -name '*heartbeat*' \) 2>/dev/null | sort
+find /opt/data /opt/data/hermes_bruno_ingest/hermes-brain -maxdepth 3 -type f \( -name '*cron*' -o -name '*schedule*' -o -name '*briefing*' -o -name '*sync*' -o -name '*heartbeat*' \) 2>/dev/null | sort
 ```
 
 ## Regra de comunicação

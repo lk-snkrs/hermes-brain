@@ -1,0 +1,113 @@
+# Receipt — corrected collection order apply next20b
+
+Data: 2026-05-28T14:37:45.752272+00:00
+
+## Summary
+- Adidas Gazelle (`adidas-gazelle`): moves=19; admin_top_ok=True; public_ok=True
+  - 1. Tênis Adidas Gazelle Indoor Maroon Almost Yellow Marrom
+  - 2. Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Stripes Multi-Color
+  - 3. Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Multi-Color
+  - 4. Tênis adidas Gazelle x Bad Bunny Core White Bege
+- Eyewear (`eyewear`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Óculos de Sol Jacquemus JAC5C2SUN Branco
+  - 2. Óculos de Sol Jacquemus JAC2C1SUN Preto
+  - 3. Óculos de Sol Jacquemus JAC2C2SUN Bege
+  - 4. Óculos de Sol Palm Angels PERI037-0107 Branco
+- New Balance 204L (`new-balance-204l`): moves=19; admin_top_ok=True; public_ok=True
+  - 1. Tênis New Balance 204L Slate Grey Raincloud Cinza
+  - 2. Tênis New Balance 204L x Atmos Cow Girl Brown Marrom
+  - 3. Tênis New Balance 204L Raincloud Ash Wood Cinza
+  - 4. Tênis New Balance 204L Lone Star Grey Cinza
+- Jaqueta | Apparels (`jaqueta-streetwear`): moves=17; admin_top_ok=True; public_ok=True
+  - 1. Jaqueta Lululemon Define Nulu Black Plum/Gold Roxo
+  - 2. Jaqueta Lululemon Define Nulu Black/Gold Preto
+  - 3. Jaqueta Lululemon Define Luon White Branco
+  - 4. Jaqueta Lululemon Define Nulu
+- Nike Air Force 1 (`nike-air-force-1`): moves=18; admin_top_ok=True; public_ok=True
+  - 1. Tênis Nike Air Force 1 Low Protro Kobe Bryant Siempre Hermanos Marrom
+  - 2. Tênis Nike Air Force 1 Low x Supreme Wheat Marrom
+  - 3. Tênis Nike Air Force 1 Low x Supreme Black Preto
+  - 4. Tênis Ambush x Nike Air Force 1 Low Phantom Branco
+- Skims (`skims`): moves=5; admin_top_ok=True; public_ok=True
+  - 1. Regata Skims Cotton Cami Soot Preto
+  - 2. Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom
+  - 3. Regata Skims Cotton Cami Halite Rosa
+  - 4. Regata Skims Cotton Cami Marble Branco
+- Air Jordan 4 (`air-jordan-4`): moves=19; admin_top_ok=True; public_ok=True
+  - 1. Tênis Nike Air Jordan 4 Retro Metallic Gold Branco
+  - 2. Tênis Nike Air Jordan 4 Retro Oxidized Branco
+  - 3. Tênis Nike SB x Air Jordan 4 Retro 'Pine Green' Verde
+  - 4. Tênis Nike Air Jordan 4 Frozen Moments Cinza
+- Aimé Leon Dore x Porsche (`aime-leon-dore-x-porsche`): moves=1; admin_top_ok=True; public_ok=False
+  - 1. Boné Aimé Leon Dore x Porsche Colorblock Logo Pristine Off White
+  - 2. Boné Aimé Leon Dore Porsche Nylon Logo Jet Black Preto
+  - 3. Jaqueta Aimé Leon Dore x Porsche GORE-TEX Cabrio
+  - 4. Pullover Aimé Leon Dore x Porsche Jacquard Collar Quarter Zip
+- Dane-se (`dane-se`): moves=16; admin_top_ok=True; public_ok=True
+  - 1. Camiseta Regular Dane-se x Athos Bulcão Azulejos Branco
+  - 2. Camiseta Painel Dane-se x Athos Bulcão Torre de TV Branco
+  - 3. Camiseta Regular Dane-se x Athos Bulcão Igrejinha Preto
+  - 4. Camiseta Painel Dane-se x Athos Bulcão 107 Norte Branco
+- Slyce (`slyce`): moves=11; admin_top_ok=True; public_ok=True
+  - 1. Shorts Slyce Frenchterry Off White
+  - 2. Camiseta Slyce Racquet Club 2.0 Verde
+  - 3. Moletom Slyce Off Court Off White
+  - 4. Pulôver Slyce Frenchterry Zipper Off White
+- Nike Air Max (`nike-air-max`): moves=10; admin_top_ok=True; public_ok=True
+  - 1. Tênis Nike Air Max 90 x Patta SP Sapphire Azul
+  - 2. Tênis Nike Air Max 90 x Patta SP Cyber Branco
+  - 3. Tênis Nike Air Max 1 x Patta Monarch Laranja
+  - 4. Tênis Nike Air Max 1 x Patta Noise Aqua Azul
+- New Balance 530 (`new-balance-530`): moves=20; admin_top_ok=True; public_ok=True
+  - 1. Tênis New Balance 530 Silver White Branco
+  - 2. Tênis New Balance 530 White Natural Indigo Branco
+  - 3. Tênis New Balance 530 Brown Tan Marrom
+  - 4. Tênis New Balance 530 Arid Stone Cinza
+- Rhode (`rhode`): moves=10; admin_top_ok=True; public_ok=True
+  - 1. Rhode Pocket Blush
+  - 2. The Peptide Lip Tints Rhode Multicolor
+  - 3. Lip Tint Rhode Scented Peptide Raspberry Jelly
+  - 4. Lip Tint Rhode Scented Peptide Toast
+- Short | Apparels (`short-streetwear`): moves=4; admin_top_ok=True; public_ok=True
+  - 1. Shorts Saint Studio Plissado Tech Preto
+  - 2. Shorts Saint Studio Everywear Preto
+  - 3. Shorts Saint Studio Everywear Caqui Bege
+  - 4. Shorts Fear Of God Essentials Classic Sweatshort Vintage Black Preto
+- Adidas Gazelle Indoor (`adidas-gazelle-indoor`): moves=13; admin_top_ok=True; public_ok=True
+  - 1. Tênis Adidas Gazelle Indoor Maroon Almost Yellow Marrom
+  - 2. Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Stripes Multi-Color
+  - 3. Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Multi-Color
+  - 4. Tênis adidas Gazelle Indoor x Clot by Edison Chen Off White Branco
+- Kids (`kids-1`): moves=7; admin_top_ok=True; public_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 Kids Birch/Indian INK Bege
+  - 2. Tênis New Balance 9060 Kids Raincloud Cinza (Infantil)
+  - 3. Tênis Onitsuka Tiger Mexico 66 Kids Beige Grass/Green Marrom
+  - 4. Tênis New Balance 9060 Kids Rose Sugar Ice Wine Rosa (Infantil)
+- Nike x Travis Scott (`air-jordan-travis-scott`): moves=14; admin_top_ok=True; public_ok=True
+  - 1. Tênis Nike Air Jordan Chase B x Travis Scott x Jumpman Jack TR Black Night Silver Preto
+  - 2. Tênis Nike Air Jordan 1 Low Og Sp x Travis Scott Medium Olive Verde
+  - 3. Tênis Nike Air Jordan 1 Low Og Sp x Travis Scott Mocha
+  - 4. Tênis Nike Travis Scott x Air Jordan 1 Low OG SP 'Black Phantom' Preto
+- Represent Clo. (`represent-clo`): moves=4; admin_top_ok=True; public_ok=True
+  - 1. Camiseta Represent Clo Owners Club Flocked Preto
+  - 2. Camiseta Represent Clo Revere Manor Stained Black Preto
+  - 3. Moletom Represent Clo Masking Tape Initial Cedar Marrom
+  - 4. Moletom Represent Clo Owners Club Zip Ash Grey Cinza
+- Yeezy 350 (`yeezy-350`): moves=6; admin_top_ok=True; public_ok=True
+  - 1. Tênis Yeezy Boost 350 V2 Onyx Preto
+  - 2. Tênis adidas Yeezy Boost 350 V2 "Steel Grey" Cinza
+  - 3. Tênis Yeezy Boost 350 V2 Boné Branco
+  - 4. Tênis Yeezy 350 V2 Static Non-Reflective (2023) Branco
+- Loewe x On Running (`loewe-x-on-running`): moves=11; admin_top_ok=True; public_ok=True
+  - 1. Tênis On Running Loewe LightSpray Cloudmonster Branco
+  - 2. Tênis On Running Cloudsolo Loewe Teal Eggshell Azul
+  - 3. Tênis On Running Cloudsolo Loewe Sand Burgundy Bege
+  - 4. Tênis On Running Cloudsolo Loewe Burgundy Eggshell Bordô
+
+## Artefatos
+- Snapshot/rollback: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/reports/auto-sort-collections/corrected-apply-next20b-20260528T143607Z/rollback-snapshot-pre-write-immediate.json`
+- Receipt JSON: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/reports/auto-sort-collections/corrected-apply-next20b-20260528T143607Z/receipt-final.json`
+
+## Não ações
+- Nenhum cron ativado.
+- Nenhum produto/preço/estoque/tema/tag/SEO/GMC/campanha/checkout alterado.

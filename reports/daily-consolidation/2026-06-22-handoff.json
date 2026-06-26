@@ -1,0 +1,149 @@
+{
+  "operational_date": "2026-06-22",
+  "generated_at_utc": "2026-06-22T04:00:57Z",
+  "status": "ok",
+  "executive_summary": "Fechamento 01h BRT executado em modo Brain-first/local. Health FAIL=0/WARN=0 e Brain Improvement Score 100. Sinais materiais: Honcho governado auditado, Hermes v0.17.0 atualizado em disco mas ainda sem restart do gateway principal, hotfix LK Growth AI/GEO aprovado e verificado, LK Stock retornou ranking para newsletter, Mordomo/Zipper acumulou decisões/alertas sem envio externo.",
+  "material_changes": [
+    {
+      "domain": "Hermes Geral",
+      "summary": "Honcho utility enforcement audit aplicado: AGENTS/protocolo reforçado, auditor local criado, peer card curado e one-shot go/no-go agendado para 2026-06-29.",
+      "evidence": "areas/operacoes/receipts/honcho-utility-enforcement-audit-20260622.md"
+    },
+    {
+      "domain": "Hermes runtime",
+      "summary": "Hermes Agent v0.17.0 instalado em disco e config migrada, mas gateway principal ainda roda processo anterior; restart controlado pendente de aprovação.",
+      "evidence": "areas/operacoes/receipts/hermes-v017-update-20260622.md"
+    },
+    {
+      "domain": "LK Growth",
+      "summary": "Hotfix aprovado em endpoints AI/GEO de Shopify production; /llms.txt e /llms-full.txt verificados com source map e zero termos proibidos.",
+      "evidence": "areas/lk/sub-areas/growth/receipts/shopify-production/ai-geo-endpoints-hotfix-20260621T1614Z/receipt.md"
+    },
+    {
+      "domain": "LK Stock",
+      "summary": "Ranking sanitizado de apparel best sellers com estoque interno confirmado foi entregue para newsletter; Content não deve prometer grade/pronta entrega.",
+      "evidence": "areas/lk/sub-areas/stock/reports/lk-content-apparel-bestsellers-in-stock-newsletter-20260621T234235Z.md"
+    }
+  ],
+  "incidents": [],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Fazer tudo acima para Honcho governado: auditar utilidade, curar peer card, reforçar protocolo e criar go/no-go.",
+      "scope": "local/documental/read-only; sem Docker/VPS/restart/secrets/runtime mutation",
+      "evidence": "areas/operacoes/receipts/honcho-utility-enforcement-audit-20260622.md"
+    },
+    {
+      "decision": "Fazer hotfix LK Growth dos endpoints AI/GEO.",
+      "scope": "restaurar templates llms no tema Shopify production conforme baseline aprovada; com rollback/readback/receipt",
+      "evidence": "areas/lk/sub-areas/growth/receipts/shopify-production/ai-geo-endpoints-hotfix-20260621T1614Z/receipt.md"
+    },
+    {
+      "decision": "Aplicar otimizações OpenRouter/DeepSeek para Elle/LK Ops.",
+      "scope": "patch runtime Elle com backup, restart e smokes; sem imprimir secrets",
+      "evidence": "areas/lk/sub-areas/atendimento/receipts/elle-openrouter-deepseek-api-optimization-20260622.md"
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "pattern": "Aprovação de pacote local/documental não autoriza runtime/gateway/Docker/VPS automaticamente.",
+      "learn": "Separar pacote em disco/config de runtime live; pedir aprovação escopada para restart.",
+      "evidence": "areas/operacoes/receipts/hermes-v017-update-20260622.md"
+    },
+    {
+      "pattern": "Campanha LK dependente de estoque deve passar por lk-stock.",
+      "learn": "Content/Growth não consulta estoque direto; só usa evidência retornada por lk-stock.",
+      "evidence": "areas/lk/sub-areas/stock/handoffs/lk-content-request-apparel-bestsellers-in-stock-newsletter-20260621.md"
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Alertas recorrentes com packet já criado devem ser deduplicados e apontar para próxima decisão, não reabrir incidente.",
+      "recommended_destination": "Daily Intelligence learning ledger / alert dedupe routine",
+      "action_applied_or_blocked": "Aplicado no ledger 2026-06-21 e pacote Honcho; verificar 02h para não duplicar sem fato novo.",
+      "verification_needed": "Checar artifacts 02h de 2026-06-22."
+    },
+    {
+      "learning": "Hermes update em disco não comprova runtime atualizado.",
+      "recommended_destination": "release-watch / Hermes update routine",
+      "action_applied_or_blocked": "Receipt v0.17.0 registrou limite; restart bloqueado sem aprovação.",
+      "verification_needed": "Se aprovado, validar versão live pós-restart."
+    },
+    {
+      "learning": "Newsletter LK com disponibilidade real exige validação de lk-stock e reconfirmação antes de envio se houver estoque baixo.",
+      "recommended_destination": "LK Content/Growth/Stock handoff templates",
+      "action_applied_or_blocked": "Handoff e relatório Stock gerados; envio continua bloqueado sem aprovação.",
+      "verification_needed": "Reconfirmar itens de baixo estoque antes de qualquer Klaviyo send/schedule."
+    }
+  ],
+  "autonomy_pattern_candidates": [
+    {
+      "candidate": "Deduplicar alerta recorrente já coberto por packet local",
+      "proposed_level": "A0/A1",
+      "guardrail": "não alterar runtime, config, provider, delivery ou secrets sem aprovação"
+    },
+    {
+      "candidate": "Criar rascunho seguro Zipper para artista/portfolio submission vindo de Tidio/no-reply",
+      "proposed_level": "A1/A2 preview",
+      "guardrail": "não enviar e-mail externo sem aprovação específica"
+    }
+  ],
+  "pending_decisions_for_lucas": [
+    {
+      "decision": "Aprovar ou adiar restart controlado do gateway principal para ativar Hermes v0.17.0 em runtime.",
+      "risk": "runtime/gateway; exige backup/rollback/readback"
+    },
+    {
+      "decision": "Validar Freshworks organization deletion para Zipper.",
+      "risk": "apagamento SaaS potencialmente irreversível"
+    },
+    {
+      "decision": "Renovar/verificar certificado digital Bird ID antes de 2026-07-07.",
+      "risk": "bloqueio administrativo se expirar"
+    }
+  ],
+  "safe_next_actions": [
+    "02h verificar que Health/Score 0/0/100 foram consumidos e que alerta Honcho não foi duplicado.",
+    "LK Content usar apenas itens confirmados pelo LK Stock e reconfirmar estoque baixo antes de envio.",
+    "Mordomo manter decisões Zipper como preview/decisão humana; sem envio automático."
+  ],
+  "blocked_actions_requiring_approval": [
+    "Restart de gateway principal, Docker/VPS/Traefik/cron schedule/delivery/runtime mutation.",
+    "Qualquer envio WhatsApp/e-mail/Klaviyo/customer/collector/supplier.",
+    "Writes em Shopify, Tiny, GMC, Ads, Supabase, banco, secrets ou produção fora dos escopos já aprovados/receipted."
+  ],
+  "cron_and_delivery_truth": {
+    "cronjob_command_available": false,
+    "fallback_used": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all",
+    "fechamento_job": {
+      "id": "3fc45b0830c6",
+      "status": "active",
+      "deliver": "local",
+      "last_status": "ok"
+    },
+    "health_gate": {
+      "health_json": "reports/brain-health-check-2026-06-22-02h.json",
+      "fail_count": 0,
+      "warn_count": 0,
+      "score_json": "reports/brain-improvement-score-2026-06-22-02h.json",
+      "overall_score": 100
+    },
+    "delivery_policy": "Fechamento normal local/silent; origin apenas para falha crítica, risco, segredo, decisão urgente ou sync quebrado."
+  },
+  "sources": [
+    "reports/daily-consolidation/2026-06-22.md",
+    "areas/operacoes/receipts/honcho-utility-enforcement-audit-20260622.md",
+    "areas/operacoes/receipts/hermes-v017-update-20260622.md",
+    "areas/lk/sub-areas/growth/receipts/shopify-production/ai-geo-endpoints-hotfix-20260621T1614Z/receipt.md",
+    "areas/lk/sub-areas/stock/reports/lk-content-apparel-bestsellers-in-stock-newsletter-20260621T234235Z.md",
+    "areas/lk/sub-areas/atendimento/receipts/elle-openrouter-deepseek-api-optimization-20260622.md",
+    "areas/operacoes/decision-inbox/mordomo-decision-dashboard.md",
+    "reports/brain-health-check-2026-06-22-02h.json",
+    "reports/brain-improvement-score-2026-06-22-02h.json"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "raw_chat_transcripts_excluded": true,
+    "live_facts_verified": true,
+    "values_printed": false
+  }
+}

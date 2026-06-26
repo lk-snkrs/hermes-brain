@@ -1,0 +1,23 @@
+{
+  "timestamp_utc": "2026-05-25T11:33:37.750102+00:00",
+  "scope": "Correction — remove duplicated migrated jobs from main after Block 3",
+  "removed_from_main": [
+    {
+      "id": "d4c26da4cd48",
+      "name": "LK GMC Review read-only mandatory delivery"
+    },
+    {
+      "id": "71b2636add5d",
+      "name": "LK WhatsApp Hermes responder watchdog"
+    },
+    {
+      "id": "a5d7a392eed9",
+      "name": "LK WhatsApp Hermes responder regression watchdog"
+    }
+  ],
+  "backup_before": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration-fix-main-duplicate/main-jobs.before-fix.json",
+  "backup_after": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cron-registry-backups/2026-05-25-block3-owner-migration-fix-main-duplicate/main-jobs.after-fix.json",
+  "sha256_before": "d37386dacd94e3c929389d4ab69c84adbf332c4ac59e809ee81c4d1fbccf9e5c",
+  "sha256_after": "d3b6f6118401bc2ca90e79af059588614e08f3f40f30d0b6d811cbd4d737a29e",
+  "rollback": "copy main-jobs.before-fix.json back to /opt/data/cron/jobs.json if rollback needed"
+}

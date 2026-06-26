@@ -45,6 +45,19 @@ Este loop vale para:
 - campanhas/conteúdo;
 - aprovações operacionais.
 
+## Regra global de decisão por etapas
+
+Quando um cron, rotina, agente, Mission Control, Mesa COO ou qualquer sistema do Hermes precisar perguntar a Lucas o que fazer, o padrão aprovado é:
+
+- dividir em etapas sequenciais (`1/N`), sem blocão;
+- pedir uma decisão por vez;
+- usar botões no Telegram quando possível;
+- opções padrão: **Fazer**, **Não fazer**, **Agendar para depois**, **Outro / comentar**;
+- quando Lucas escolher **Outro**, capturar o comentário escrito como instrução específica do que deve ser feito;
+- só avançar para a próxima etapa depois da aprovação/rejeição/agendamento/comentário da etapa atual.
+
+Esta regra vale para decisões de cron e governança em geral, não apenas para a Mesa COO.
+
 ## Tipos de feedback
 
 ### Aprovação
@@ -225,6 +238,36 @@ Onde aplicar: Daily Sales Brief 07h, Pulso Comercial, Paid Traffic & Influencer 
 Próximo refinamento: padronizar UTM/cupom por influencer e criar confiança da atribuição: alta/média/baixa.
 ```
 
+## Regra anti-perda em contexto compactado
+
+Feedback crítico de Lucas em 2026-05-20: decisões aprovadas em chat, especialmente copy/tom/fluxo de contato com cliente, não podem depender da memória temporária da conversa. Compressão/compaction pode preservar o resumo geral e ainda perder o texto exato aprovado ou a razão da aprovação.
+
+Regra operacional:
+
+- Se Lucas aprovar uma mensagem, sequência, tom, oferta, condição, cadência ou fluxo que possa ser enviado para cliente/lead/fornecedor/coletor, registrar imediatamente em artefato durável antes de continuar.
+- O registro precisa guardar: texto aprovado ou path do artefato, contexto, canal, destinatário/segmento, status de aprovação, limites de uso, tom aprovado, data e próxima ação permitida.
+- Para CRM/carrinho abandonado/Klaviyo/WhatsApp/e-mail, usar um ledger ou arquivo de campanha/fluxo no Brain; não confiar em “foi aprovado acima no chat”.
+- Se a conversa for compactada ou retomada depois, consultar o ledger/Brain antes de continuar o fluxo.
+- Se não houver registro durável, tratar como aprovação não comprovada: reconstruir preview e pedir confirmação antes de envio externo.
+
+Template mínimo:
+
+```text
+Decision ID:
+Data:
+Área/empresa:
+Fluxo/campanha:
+Canal:
+Segmento/destinatário:
+Copy aprovada:
+Tom aprovado:
+O que Lucas aprovou exatamente:
+Limites/guardrails:
+Pode enviar agora? sim/não — aprovação atual necessária se externo
+Artefato/path:
+Status:
+```
+
 ## Approval UX recomendada
 
 Todo preview operacional deveria permitir, mesmo que manualmente no início:
@@ -251,3 +294,57 @@ Ao final de uma tarefa complexa, checar:
 - Não transformar log de sessão inteiro em memória permanente.
 - Não registrar feedback trivial que não melhora execução futura.
 - Não sobrescrever regra de negócio sem evidência ou aprovação explícita.
+
+## 2026-06-01 — Pixel AI Hub: Brain estável vs dado vivo; evidência independente
+
+Tipo: aprovação / regra de execução / padrão operacional.
+
+Lucas aprovou priorizar o item 2 do digest Pixel AI Hub / Brainzinho de 2026-05-31 — **cérebro estável separado de dado vivo** — e também fazer o item 5 — **relatório de agente não é evidência**.
+
+Regras aprendidas:
+
+- Antes de salvar algo no Brain/memória/skill, Hermes deve classificar se é regra/decisão/processo durável ou dado operacional temporário.
+- Dados vivos como pedido, estoque, faturamento, ads, logs, status, preço e disponibilidade devem permanecer em fonte viva, relatório datado ou snapshot verificável; não viram memória permanente nem verdade copiada no Brain.
+- Entrega de agente deve vir com evidência verificável: arquivo/diff, teste/check, readback/smoke test, escopo do que não mudou e rollback quando aplicável.
+- O relato do agente é útil como resumo, mas não é prova suficiente.
+
+Onde aplicar: Hermes Brain, Mission Control, rotinas, skills, cron/digests, PRDs, Approval Center, LK/Zipper/SPITI reports.
+
+Artefato canônico atualizado: `empresa/contexto/politica-autonomia-aprovacao-hermes.md`.
+
+Status: registrado.
+
+### Global/Zipper — `/background` não autoriza envio externo
+
+```text
+Feedback ID: GLOBAL-EXTERNAL-SEND-20260515-01
+Data: 2026-05-15
+Área: Global / Zipper / LK OS Approval Manager
+Tipo: correção / anti-padrão / regra de execução
+Resumo: Lucas corrigiu que uma execução em `/background` enviou e-mail automaticamente para Paulo/Zipper; o correto era gerar um draft.
+Antes: Hermes interpretou execução/background como autorização suficiente para enviar a resposta.
+Depois: background, seguir ou aprovação ampla de trabalho geram apenas draft/preview para contatos externos.
+Regra aprendida: e-mail/WhatsApp/cliente/coletor/fornecedor/campanha só sai com aprovação atual explícita do payload e destinatário nomeado. Se houver erro, preparar mitigação como draft e pedir aprovação antes de novo envio.
+Onde aplicar: Google Workspace/Gmail, Mordomo WhatsApp, Zipper atendimento, LK CRM/Klaviyo/WhatsApp, SPITI contatos, Mission Control Approval Manager.
+Precisa atualizar skill? sim — google-workspace, multiempresa-routing-lucas, lucas-chief-of-staff.
+Precisa atualizar PRD? sim — LK OS Approval Manager + Learning Loop.
+Precisa atualizar memória? sim.
+Status: registrado_e_skills_patchadas
+```
+
+## 2026-05-15 — LK OS Approval Manager v1
+
+Tipo: padrão aprovado + regra de execução.
+
+Lucas aprovou finalizar o Approval Manager como parte do LK OS. O padrão correto é: regras-mestre + ledger auditável + router de aprovação + testes de regressão + superfície no Mission Control. Políticas soltas em Markdown não bastam quando a regra precisa governar ações futuras.
+
+Artefato: `areas/lk/rotinas/lk-os-approval-manager-v1-2026-05-15.md`.
+
+## 2026-06-12 — “Fazer tudo” com escopo limitado
+
+Tipo: correção aprovada + regra de aprovação.
+
+Lucas aprovou transformar a interpretação de “Fazer tudo” em regra oficial: frase ampla de continuidade só herda o pacote seguro já aprovado. Não autoriza novos campos, novos alvos, preço, estoque, cliente/fornecedor, Tiny/Shopify fora do campo aprovado, campanhas/envios, produção/infra/runtime, banco, cron, secrets ou integrações.
+
+Artefato: `areas/lk/rotinas/lk-os-fazer-tudo-scope-limited-approval-guardrail-2026-06-12.md`.
+Status: `active_rule_verified`; external writes `0`.

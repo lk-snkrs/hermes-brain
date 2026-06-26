@@ -1,0 +1,103 @@
+{
+  "timestamp_utc": "2026-05-25T11:31:22.755795+00:00",
+  "scope": "Block 2 — cleanup paused/past one-shot jobs",
+  "changes": [
+    {
+      "profile": "lk-growth",
+      "id": "350be0e438c7",
+      "name": "LK cart intent phase 2 — monitor 90min",
+      "action": "removed",
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-20T21:53:36.273490+00:00",
+        "display": "once in 30m"
+      },
+      "deliver": "origin",
+      "enabled": false,
+      "paused": null
+    },
+    {
+      "profile": "lk-growth",
+      "id": "015cb75e8e91",
+      "name": "LK cart intent v2.2 cache/event monitor",
+      "action": "removed",
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-20T23:10:25.953169+00:00",
+        "display": "once in 15m"
+      },
+      "deliver": "origin",
+      "enabled": false,
+      "paused": null
+    },
+    {
+      "profile": "lk-growth",
+      "id": "36694eae598e",
+      "name": "LK Recovery OS production tracker propagation monitor",
+      "action": "removed",
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-22T01:20:27.181497+00:00",
+        "display": "once in 15m"
+      },
+      "deliver": "origin",
+      "enabled": false,
+      "paused": null
+    },
+    {
+      "profile": "lk-growth",
+      "id": "fdc9ad165daa",
+      "name": "LK Recovery OS cart intent controlled LIVE runner",
+      "action": "removed",
+      "schedule": {
+        "kind": "interval",
+        "minutes": 30,
+        "display": "every 30m"
+      },
+      "deliver": "origin",
+      "enabled": false,
+      "paused": null
+    },
+    {
+      "profile": "mordomo",
+      "id": "058df00bf941",
+      "name": "Mordomo A2 executor scaffold",
+      "action": "removed",
+      "schedule": {
+        "kind": "interval",
+        "minutes": 30,
+        "display": "every 30m"
+      },
+      "deliver": "origin",
+      "enabled": false,
+      "paused": null
+    }
+  ],
+  "backups": {
+    "lk-growth": {
+      "registry": "/opt/data/profiles/lk-growth/cron/jobs.json",
+      "before": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cron-registry-backups/2026-05-25-block2-paused-oneshot-cleanup/lk-growth-jobs.before.json",
+      "after": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cron-registry-backups/2026-05-25-block2-paused-oneshot-cleanup/lk-growth-jobs.after.json",
+      "sha256_before": "50fe969302683d6896ff264f6a9509a199b5ec3241e343ed4700186219958e63",
+      "sha256_after": "318746a57930a17720a9c2e173bf75ab53efa035d529526ad1ed81376143091d",
+      "removed_count": 4,
+      "remaining_count": 22
+    },
+    "mordomo": {
+      "registry": "/opt/data/profiles/mordomo/cron/jobs.json",
+      "before": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cron-registry-backups/2026-05-25-block2-paused-oneshot-cleanup/mordomo-jobs.before.json",
+      "after": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cron-registry-backups/2026-05-25-block2-paused-oneshot-cleanup/mordomo-jobs.after.json",
+      "sha256_before": "850366e3649887136d316e16a11857b3ac5e478612fd6b3332ccd1431ad455ed",
+      "sha256_after": "4efeb14c520b6bbb7b42bd15d951e5eea74cc8e5936a57db4f1ad3822fea1142",
+      "removed_count": 1,
+      "remaining_count": 11
+    }
+  },
+  "not_touched": [
+    "main registry",
+    "SPITI registry",
+    "gateway/Docker/VPS",
+    "external systems"
+  ],
+  "rollback": "copy the corresponding *.before.json backup back to the registry path"
+}

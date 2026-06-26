@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-05-12T10:54:27.037426+00:00",
+  "scope": "LK GMC datafeed source inventory read-only",
+  "status": "gmc_datafeed_source_inventory_ready_readonly",
+  "datafeed_count": 1,
+  "datafeeds": [
+    {
+      "id": "407508563",
+      "name": "LK Sneakers - Color Supplemental Feed",
+      "fileName": "lk_sneakers_gmc_color_feed.csv",
+      "contentLanguage": null,
+      "targetCountry": null,
+      "attributeLanguage": null,
+      "intendedDestinations": null,
+      "targets": [
+        {
+          "country": "BR",
+          "feedLabel": "BR",
+          "targetCountries": [
+            "BR"
+          ],
+          "language": "pt",
+          "includedDestinations": [
+            "DisplayAds",
+            "SurfacesAcrossGoogle",
+            "Shopping"
+          ],
+          "excludedDestinations": [
+            "Shopping",
+            "LocalSurfacesAcrossGoogle"
+          ]
+        }
+      ],
+      "format": {
+        "quotingMode": "value quoting"
+      },
+      "schedule": null,
+      "fetch_url_kind": "gist",
+      "fetch_url_present": true
+    }
+  ],
+  "not_performed": [
+    "datafeed_update",
+    "feed_delete",
+    "merchant_product_delete",
+    "shopify_write",
+    "campaign_send"
+  ]
+}

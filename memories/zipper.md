@@ -1,5 +1,8 @@
 # Zipper Gallery — Memória
 
+> LEGACY / SUPERSEDED — este arquivo contém referências históricas migradas de fases anteriores. Não usar paths `/root`, Mem0, OpenClaw/cerebro-cimino ou scripts citados aqui como instrução operacional viva. Fonte atual: `/opt/data/hermes_bruno_ingest/hermes-brain` e rotinas governadas em `areas/operacoes/`.
+
+
 ## Contexto
 - **Dono:** Lucas Cimino + Osmar (sócio/diretor comercial)
 - **Meta 2026:** R$ 1.400.000

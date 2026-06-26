@@ -1,0 +1,214 @@
+{
+  "generated_at": "2026-05-13T13:18:02.148211+00:00",
+  "status": "gmc_p1_attribute_wave3_color_tag_apply_verified",
+  "mode": "apply",
+  "scope": "Wave3 high-confidence color-tag bucket; color only; exact online IDs.",
+  "source_labels": [
+    "fact_merchant_center",
+    "fact_shopify_local_snapshot",
+    "derived_reconciliation"
+  ],
+  "approval_required_for_apply": "Lucas approved GMC P1 Attribute Wave3 color-tag apply",
+  "summary": {
+    "preview_candidates": 5,
+    "fresh_merchant_products_current": 23241,
+    "fresh_merchant_productstatuses_current": 23241,
+    "decision_state_counts": {
+      "ready_for_wave3_color_tag_apply_if_lucas_approves": 5
+    },
+    "ready_total": 5,
+    "selected_for_apply_if_approved": 5,
+    "target_fields": [
+      "color"
+    ],
+    "limit": 25,
+    "write_allowed_now": 0,
+    "execution_results_summary": {
+      "updated_color": 5
+    },
+    "verify_results_summary": {
+      "verified_product_get": 5
+    },
+    "verified_attrs_match_expected": 4
+  },
+  "private_rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p1-attribute-wave3-color-tag-executor-rollback-20260513T131621Z.json",
+  "public_rows": [
+    {
+      "product_id": "online:pt:BR:ST63",
+      "merchant_title": "Calça Saint Studio Jeans Baggy Risca de Giz Azul",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "current_color": null,
+      "suggested_color": "Azul",
+      "evidence": {
+        "color": "shopify_tag_color"
+      },
+      "decision_state": "ready_for_wave3_color_tag_apply_if_lucas_approves",
+      "decision_reasons": [
+        "fresh color diagnostic + explicit Shopify color tag"
+      ],
+      "selected_for_apply": true,
+      "write_scope_if_approved": "color only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:ST64",
+      "merchant_title": "Calça Saint Studio Jeans Baggy Risca de Giz Azul",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "current_color": null,
+      "suggested_color": "Azul",
+      "evidence": {
+        "color": "shopify_tag_color"
+      },
+      "decision_state": "ready_for_wave3_color_tag_apply_if_lucas_approves",
+      "decision_reasons": [
+        "fresh color diagnostic + explicit Shopify color tag"
+      ],
+      "selected_for_apply": true,
+      "write_scope_if_approved": "color only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:ST65",
+      "merchant_title": "Calça Saint Studio Jeans Baggy Risca de Giz Azul",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "current_color": null,
+      "suggested_color": "Azul",
+      "evidence": {
+        "color": "shopify_tag_color"
+      },
+      "decision_state": "ready_for_wave3_color_tag_apply_if_lucas_approves",
+      "decision_reasons": [
+        "fresh color diagnostic + explicit Shopify color tag"
+      ],
+      "selected_for_apply": true,
+      "write_scope_if_approved": "color only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:ST66",
+      "merchant_title": "Calça Saint Studio Jeans Baggy Risca de Giz Azul",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "current_color": null,
+      "suggested_color": "Azul",
+      "evidence": {
+        "color": "shopify_tag_color"
+      },
+      "decision_state": "ready_for_wave3_color_tag_apply_if_lucas_approves",
+      "decision_reasons": [
+        "fresh color diagnostic + explicit Shopify color tag"
+      ],
+      "selected_for_apply": true,
+      "write_scope_if_approved": "color only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:ST67",
+      "merchant_title": "Calça Saint Studio Jeans Baggy Risca de Giz Azul",
+      "fresh_required_attrs": [
+        "color"
+      ],
+      "current_color": null,
+      "suggested_color": "Azul",
+      "evidence": {
+        "color": "shopify_tag_color"
+      },
+      "decision_state": "ready_for_wave3_color_tag_apply_if_lucas_approves",
+      "decision_reasons": [
+        "fresh color diagnostic + explicit Shopify color tag"
+      ],
+      "selected_for_apply": true,
+      "write_scope_if_approved": "color only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    }
+  ],
+  "execution_results": [
+    {
+      "product_id": "online:pt:BR:ST63",
+      "execution_status": "updated_color",
+      "color_after_response": null
+    },
+    {
+      "product_id": "online:pt:BR:ST64",
+      "execution_status": "updated_color",
+      "color_after_response": null
+    },
+    {
+      "product_id": "online:pt:BR:ST65",
+      "execution_status": "updated_color",
+      "color_after_response": null
+    },
+    {
+      "product_id": "online:pt:BR:ST66",
+      "execution_status": "updated_color",
+      "color_after_response": null
+    },
+    {
+      "product_id": "online:pt:BR:ST67",
+      "execution_status": "updated_color",
+      "color_after_response": null
+    }
+  ],
+  "verified_results": [
+    {
+      "product_id": "online:pt:BR:ST63",
+      "execution_status": "updated_color",
+      "color_after_response": null,
+      "verify_status": "verified_product_get",
+      "color_after_get": "Azul",
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST64",
+      "execution_status": "updated_color",
+      "color_after_response": null,
+      "verify_status": "verified_product_get",
+      "color_after_get": "Azul",
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST65",
+      "execution_status": "updated_color",
+      "color_after_response": null,
+      "verify_status": "verified_product_get",
+      "color_after_get": "Azul",
+      "attrs_match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST66",
+      "execution_status": "updated_color",
+      "color_after_response": null,
+      "verify_status": "verified_product_get",
+      "color_after_get": null,
+      "attrs_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:ST67",
+      "execution_status": "updated_color",
+      "color_after_response": null,
+      "verify_status": "verified_product_get",
+      "color_after_get": "Azul",
+      "attrs_match_expected": true
+    }
+  ],
+  "not_performed": [
+    "merchant_delete",
+    "merchant_delete",
+    "merchant_price_title_link_image_availability_update",
+    "feed_update_or_fetch",
+    "shopify_write",
+    "tiny_call_or_write",
+    "database_write",
+    "pos_or_local_inventory_write",
+    "klaviyo_or_whatsapp_send",
+    "notion_or_n8n_write",
+    "loyalty_or_judgeme_action"
+  ]
+}

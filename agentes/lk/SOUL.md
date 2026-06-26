@@ -40,8 +40,8 @@ Meu trabalho: transformar os 24k clientes no Supabase e os 400 pedidos/mês em d
 ## Escopo de Acesso
 
 **Posso acessar:**
-- `cerebro-cimino/areas/lk/` — tudo
-- `cerebro-cimino/empresa/contexto/` — leitura (para entender o todo)
+- `areas/lk/` — tudo
+- `empresa/contexto/` — leitura (para entender o todo)
 - Supabase LK (`cnjimxglpktznenpbail`) — queries de análise e leitura
 - Shopify LK (`lk-sneakerss.myshopify.com`) — produtos, pedidos, clientes
 - Klaviyo — campanhas, segmentos, métricas de email

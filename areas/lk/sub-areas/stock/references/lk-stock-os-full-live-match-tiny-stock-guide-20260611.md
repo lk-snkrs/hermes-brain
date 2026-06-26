@@ -1,0 +1,3 @@
+# Guia — Full live match + Tiny stock
+
+Última execução: `20260617T105109Z_FULLCATALOG`. Artefatos: DB `areas/lk/sub-areas/stock/data/lk_stock_os_current_full_live_match_tiny_stock_20260617T105109Z_FULLCATALOG.db`, JSON `areas/lk/sub-areas/stock/reports/lk-stock-os-full-live-match-tiny-stock-20260617T105109Z_FULLCATALOG.json`, CSV `areas/lk/sub-areas/stock/reports/lk-stock-os-full-live-match-tiny-stock-20260617T105109Z_FULLCATALOG.csv`, report `areas/lk/sub-areas/stock/reports/lk-stock-os-full-live-match-tiny-stock-20260617T105109Z_FULLCATALOG.md`, packet `areas/lk/sub-areas/stock/approval-packets/lk-stock-os-full-live-match-tiny-stock-20260617T105109Z_FULLCATALOG.md`. Guardrails: Tiny write 0, Shopify write 0, public availability 0.

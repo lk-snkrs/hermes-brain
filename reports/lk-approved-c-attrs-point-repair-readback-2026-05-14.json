@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-14T15:01:22.939425+00:00",
+  "rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-approved-c-attrs-point-repair-rollback-20260514T145948Z.json",
+  "execution_results": [
+    {
+      "product_id": "online:pt:BR:JH5439-10",
+      "execution_status": "patched",
+      "target_attrs": {
+        "color": "Bordô"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:43774078387730",
+      "execution_status": "patched",
+      "target_attrs": {
+        "color": "Branco/Azul"
+      }
+    }
+  ],
+  "verify_counts": {
+    "match": 2
+  },
+  "verified_results": [
+    {
+      "product_id": "online:pt:BR:JH5439-10",
+      "expected": {
+        "color": "Bordô"
+      },
+      "actual": {
+        "color": "Bordô"
+      },
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:43774078387730",
+      "expected": {
+        "color": "Branco/Azul"
+      },
+      "actual": {
+        "color": "Branco/Azul"
+      },
+      "match_expected": true
+    }
+  ]
+}

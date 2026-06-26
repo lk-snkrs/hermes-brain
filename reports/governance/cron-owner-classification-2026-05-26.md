@@ -1,0 +1,418 @@
+# Classificação linha-a-linha — Crons por dono lógico
+Data: 2026-05-26  
+Escopo: leitura local dos registries. Sem alteração de jobs, delivery, gateway ou produção.
+## Resumo executivo
+- Main Hermes está correto como centro de governança, mas carrega rotinas LK Ops e Zipper documental que precisam de rótulo explícito.
+- LK Growth está coerente como profile de Growth, porém com muitos D+7 entregando no Telegram/origin.
+- Mordomo contém rotinas pessoais corretas, mas também rotinas Zipper e LK WhatsApp que devem ser reclassificadas.
+- SPITI não tem registry local de cron encontrado; registrar como estado atual, não como erro.
+## Main Hermes
+- Registry: `/opt/data/cron/jobs.json`
+- Total parseável: 20
+- Ativos: 20
+
+### Jobs
+- **Lucas Brain daily intelligence loop**
+  - Dono lógico: Hermes Geral / Governança
+  - Runtime atual: Main Hermes
+  - Agenda: 0 5 * * *
+  - Entrega: local
+  - Tipo: agent/prompt
+  - Recomendação: Manter no Main; preservar silent-OK exceto decisões
+- **Hermes runtime + cron watchdog no_agent**
+  - Dono lógico: Hermes Geral / Governança
+  - Runtime atual: Main Hermes
+  - Agenda: */30 * * * *
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter no Main; preservar silent-OK exceto decisões
+- **LK Daily Sales Brief read-only mandatory delivery**
+  - Dono lógico: LK Ops/Comercial
+  - Runtime atual: Main Hermes
+  - Agenda: 0 11 * * *
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter temporariamente onde está; definir LK Ops documental antes de runtime
+- **LK Weekly CEO Review read-only mandatory delivery**
+  - Dono lógico: LK Ops/Comercial
+  - Runtime atual: Main Hermes
+  - Agenda: 0 12 * * 1
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter temporariamente onde está; definir LK Ops documental antes de runtime
+- **Zipper Gmail style learning refresh**
+  - Dono lógico: Zipper documental/read-only
+  - Runtime atual: Main Hermes
+  - Agenda: 20 6 * * *
+  - Entrega: local
+  - Tipo: agent/prompt
+  - Recomendação: Revisar owner; manter sem write/contato externo; candidato a futuro Zipper runtime se volume persistir
+- **Hermes compression failure self-heal watchdog**
+  - Dono lógico: Hermes Geral / Governança
+  - Runtime atual: Main Hermes
+  - Agenda: */10 * * * *
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter no Main; preservar silent-OK exceto decisões
+- **LK Pulso Comercial 16h read-only delivery**
+  - Dono lógico: LK Ops/Comercial
+  - Runtime atual: Main Hermes
+  - Agenda: 0 19 * * *
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter temporariamente onde está; definir LK Ops documental antes de runtime
+- **LK 09h previous-day sales report external delivery**
+  - Dono lógico: LK Ops/Comercial
+  - Runtime atual: Main Hermes
+  - Agenda: 0 12 * * *
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter temporariamente onde está; definir LK Ops documental antes de runtime
+- **LK 19h30 physical store close external delivery**
+  - Dono lógico: LK Ops/Comercial
+  - Runtime atual: Main Hermes
+  - Agenda: 30 22 * * *
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter temporariamente onde está; definir LK Ops documental antes de runtime
+- **Mordomo Telegram gateway watchdog**
+  - Dono lógico: Hermes Geral / Supervisão de runtime
+  - Runtime atual: Main Hermes
+  - Agenda: every 1m
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter central se for watchdog de saúde; sem mudar runtime
+- **Zipper OS vendas 09h WhatsApp/email**
+  - Dono lógico: Zipper documental/read-only
+  - Runtime atual: Main Hermes
+  - Agenda: 0 12 * * 1-5
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Revisar owner; manter sem write/contato externo; candidato a futuro Zipper runtime se volume persistir
+- **LK Growth Telegram gateway watchdog**
+  - Dono lógico: Hermes Geral / Supervisão de runtime
+  - Runtime atual: Main Hermes
+  - Agenda: every 1m
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter central se for watchdog de saúde; sem mudar runtime
+- **Mesa COO diária Telegram**
+  - Dono lógico: Hermes Geral / Governança
+  - Runtime atual: Main Hermes
+  - Agenda: 0 9 * * *
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no Main; preservar silent-OK exceto decisões
+- **SPITI Telegram gateway watchdog**
+  - Dono lógico: Hermes Geral / Supervisão de runtime
+  - Runtime atual: Main Hermes
+  - Agenda: every 1m
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter central se for watchdog de saúde; sem mudar runtime
+- **Hermes Brain Fechamento Ágil 23h + Brain Sync**
+  - Dono lógico: Hermes Geral / Governança
+  - Runtime atual: Main Hermes
+  - Agenda: 0 2 * * *
+  - Entrega: local
+  - Tipo: agent/prompt
+  - Recomendação: Manter no Main; preservar silent-OK exceto decisões
+- **Lucas Brain weekly Learning Loop report**
+  - Dono lógico: Hermes Geral / Governança
+  - Runtime atual: Main Hermes
+  - Agenda: 15 12 * * 1
+  - Entrega: local
+  - Tipo: agent/prompt
+  - Recomendação: Manter no Main; preservar silent-OK exceto decisões
+- **Hermes Brain Operating Layer structural watchdog**
+  - Dono lógico: Hermes Geral / Governança
+  - Runtime atual: Main Hermes
+  - Agenda: 10 11 * * *
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter no Main; preservar silent-OK exceto decisões
+- **Hermes Brain Runtime Truth Reconciler**
+  - Dono lógico: Hermes Geral / Governança
+  - Runtime atual: Main Hermes
+  - Agenda: 20 11 * * *
+  - Entrega: local
+  - Tipo: agent/prompt
+  - Recomendação: Manter no Main; preservar silent-OK exceto decisões
+- **Relatório Hermes diário 23h + 02h para Lucas**
+  - Dono lógico: Indefinido
+  - Runtime atual: Main Hermes
+  - Agenda: 30 5 * * *
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Revisar manualmente antes de qualquer mudança
+- **Hermes Brain strict-runtime guard watchdog**
+  - Dono lógico: Hermes Geral / Governança
+  - Runtime atual: Main Hermes
+  - Agenda: 0 10 * * *
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter no Main; preservar silent-OK exceto decisões
+
+## LK Growth
+- Registry: `/opt/data/profiles/lk-growth/cron/jobs.json`
+- Total parseável: 21
+- Ativos: 21
+
+### Jobs
+- **LK Growth OS Weekly Growth Review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: 0 13 * * 1
+  - Entrega: telegram
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK Growth OS GMC Review read-only**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: 0 12 * * 4
+  - Entrega: telegram
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK D+7 review — botão Compre Já branco PDP**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once at 2026-05-26 15:30
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK PDP CRO hotfix D+7 review — trustbar/reviews/tryon**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once at 2026-05-26 15:45
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK PDP preorder compact hotfix D+7 review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once at 2026-05-26 16:05
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK n8n checkout abandonado hardening impact review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once at 2026-05-27 17:50
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK cart intent Crisp REST identity review D+7**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once at 2026-05-27 12:00
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK Recovery OS T1 go-live D+7 impact review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once at 2026-05-28 12:00
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK Recovery OS checkout_started webhook D+7 impact review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once in 7d
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK GEO llms.txt root D+7 impact review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once at 2026-05-29 13:45
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK SEO/GEO Experiment Ledger — weekly impact review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: 30 13 * * 5
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK collection GEO FAQ production D+7 impact review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once at 2026-05-29 18:45
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK Auth Hub D+7 impact review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once at 2026-05-29 19:11
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK blog boutique premium D+7 impact review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once in 7d
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK NB blog rewrite D+7 impact review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once in 7d
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK GEO Source Pages D+7 Impact Review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once at 2026-05-30 10:00
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK D+7 impact review — Adidas SL 72 OG vs RS GEO page table**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once in 7d
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK D+7 impact review — Packet D GEO Source Pages**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once at 2026-05-30 10:30
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK Menu Drawer Production D+7 Review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once at 2026-05-30 13:00
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK GMC Review read-only mandatory delivery**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: 0 12 * * 4
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+- **LK Moon Shoe page/collection impact review**
+  - Dono lógico: LK Growth
+  - Runtime atual: LK Growth
+  - Agenda: once at 2026-06-01 15:12
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no LK Growth; revisar delivery Telegram vs local/silent-OK
+
+## Mordomo
+- Registry: `/opt/data/profiles/mordomo/cron/jobs.json`
+- Total parseável: 13
+- Ativos: 13
+- Observações de leitura:
+  - bytes inválidos ignorados para leitura read-only
+  - trailing data após primeiro JSON: 16 chars
+
+### Jobs
+- **Mordomo global WhatsApp watcher — Lucas pessoal**
+  - Dono lógico: Mordomo
+  - Runtime atual: Mordomo
+  - Agenda: every 5m
+  - Entrega: origin
+  - Tipo: script/no_agent
+  - Recomendação: Manter no Mordomo; garantir handoff quando houver contato/decisão sensível
+- **Zipper Gmail draft engine — safe draft-only**
+  - Dono lógico: Zipper documental/read-only
+  - Runtime atual: Mordomo
+  - Agenda: every 15m
+  - Entrega: local
+  - Tipo: agent/prompt
+  - Recomendação: Revisar owner; manter sem write/contato externo; candidato a futuro Zipper runtime se volume persistir
+- **Mordomo global Calendar watcher**
+  - Dono lógico: Mordomo
+  - Runtime atual: Mordomo
+  - Agenda: every 15m
+  - Entrega: origin
+  - Tipo: script/no_agent
+  - Recomendação: Manter no Mordomo; garantir handoff quando houver contato/decisão sensível
+- **Mordomo CRM local sync**
+  - Dono lógico: Mordomo
+  - Runtime atual: Mordomo
+  - Agenda: every 10m
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter no Mordomo; garantir handoff quando houver contato/decisão sensível
+- **Mordomo Decision Inbox digest**
+  - Dono lógico: Mordomo
+  - Runtime atual: Mordomo
+  - Agenda: 0 9 * * *
+  - Entrega: origin
+  - Tipo: script/no_agent
+  - Recomendação: Manter no Mordomo; garantir handoff quando houver contato/decisão sensível
+- **Pixel AI Hub / Brainzinho daily learning scan**
+  - Dono lógico: Mordomo
+  - Runtime atual: Mordomo
+  - Agenda: 30 23 * * *
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no Mordomo; garantir handoff quando houver contato/decisão sensível
+- **Zipper direct main e-mail monitor — zipper@zippergaleria.com.br**
+  - Dono lógico: Zipper documental/read-only
+  - Runtime atual: Mordomo
+  - Agenda: every 60m
+  - Entrega: origin
+  - Tipo: script/no_agent
+  - Recomendação: Revisar owner; manter sem write/contato externo; candidato a futuro Zipper runtime se volume persistir
+- **Mordomo WhatsApp pessoal resumo 17h BRT**
+  - Dono lógico: Mordomo
+  - Runtime atual: Mordomo
+  - Agenda: 0 20 * * *
+  - Entrega: origin
+  - Tipo: script/no_agent
+  - Recomendação: Manter no Mordomo; garantir handoff quando houver contato/decisão sensível
+- **Zipper artist PDFs local-only known-answer ingest**
+  - Dono lógico: Zipper documental/read-only
+  - Runtime atual: Mordomo
+  - Agenda: every 30m
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Revisar owner; manter sem write/contato externo; candidato a futuro Zipper runtime se volume persistir
+- **ZPR Enquiry Form watcher — approval-gated**
+  - Dono lógico: Zipper documental/read-only
+  - Runtime atual: Mordomo
+  - Agenda: every 5m
+  - Entrega: origin
+  - Tipo: script/no_agent
+  - Recomendação: Revisar owner; manter sem write/contato externo; candidato a futuro Zipper runtime se volume persistir
+- **Follow-up Leticia Albuquerque — importação/Portugal**
+  - Dono lógico: Mordomo
+  - Runtime atual: Mordomo
+  - Agenda: once at 2026-05-28 12:00
+  - Entrega: origin
+  - Tipo: agent/prompt
+  - Recomendação: Manter no Mordomo; garantir handoff quando houver contato/decisão sensível
+- **LK WhatsApp Hermes responder watchdog**
+  - Dono lógico: LK Ops/Comercial
+  - Runtime atual: Mordomo
+  - Agenda: every 1m
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter temporariamente onde está; definir LK Ops documental antes de runtime
+- **LK WhatsApp Hermes responder regression watchdog**
+  - Dono lógico: LK Ops/Comercial
+  - Runtime atual: Mordomo
+  - Agenda: */30 * * * *
+  - Entrega: local
+  - Tipo: script/no_agent
+  - Recomendação: Manter temporariamente onde está; definir LK Ops documental antes de runtime
+
+## SPITI
+- Registry não encontrado: `/opt/data/profiles/spiti/cron/jobs.json`.
+## Ações recomendadas sem executar ainda
+1. Sanear o registry do Mordomo com backup antes de qualquer edição.
+2. Criar rótulo documental para LK Ops/Atendimento antes de mover cron.
+3. Definir critério formal de Zipper runtime; não criar bot ainda.
+4. Revisar delivery dos D+7 de LK Growth para separar decisão real de relatório local/silent-OK.
+5. Manter SPITI sem cron próprio até haver necessidade operacional clara.

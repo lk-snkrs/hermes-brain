@@ -1,0 +1,181 @@
+{
+  "operational_date": "2026-06-18",
+  "generated_at_utc": "2026-06-19T04:06:00Z",
+  "status": "attention_controlled",
+  "executive_summary": "Hermes Brain/local governance remained healthy, with Brain Health FAIL=0/WARN=1 and Brain Improvement Score 99/100. The day’s main operational facts were LK Growth Shopify/GMC packet status verified as partial, LK Atendimento avisar-enc confirmed disabled by readback, Zipper Google Workspace 2FA blocked by admin/OAuth scope, LK Finance local PDF/OCR stack validated and Itaú Maio categorized locally, and crons/runtime without live non-ok status.",
+  "material_changes": [
+    {
+      "domain": "Hermes Geral / Grande Mente",
+      "summary": "Daily Intelligence/Memory OS recorded A1 local/documental autoheal and runtime/crons remained without live non-ok status.",
+      "evidence": "reports/hermes-continuous-improvement/2026-06-18.md"
+    },
+    {
+      "domain": "LK Growth OS",
+      "summary": "Mesa COO decision 1/3 was verified as partial: base Shopify/GMC approval packet exists, but final canonical values/rules were not fully closed; no writes executed.",
+      "evidence": "empresa/contexto/decision-sequences/2026-06-18.jsonl"
+    },
+    {
+      "domain": "LK Growth OS",
+      "summary": "GMC/Product Data ranking review generated read-only preview and identified Local Inventory link_template and missing product attributes as priority packets.",
+      "evidence": "areas/lk/sub-areas/growth/reports/gmc/lk-gmc-product-data-ranking-review-2026-06-18.md"
+    },
+    {
+      "domain": "LK Atendimento",
+      "summary": "Runtime readback confirmed avisar-enc disabled because SHOPIFY_TAG_TRIGGERS is empty; no write needed.",
+      "evidence": "areas/lk/sub-areas/atendimento/receipts/20260618T095455Z-avisar-enc-disabled-readback.md"
+    },
+    {
+      "domain": "LK Finance",
+      "summary": "Local PDF/OCR stack was installed/validated and Itaú Maio PDF was categorized locally with no external document service.",
+      "evidence": "areas/lk/sub-areas/finance/receipts/20260618T123421Z-local-pdf-ocr-stack-installed.md"
+    },
+    {
+      "domain": "Zipper OS",
+      "summary": "Google Workspace 2FA read-only packet prepared; Admin Reports/Directory blocked by insufficient scope and OAuth app access not configured.",
+      "evidence": "areas/zipper/approval-packets/google-workspace-2fa-admin-readonly-20260618.md"
+    }
+  ],
+  "incidents": [
+    {
+      "domain": "Zipper / Google Workspace",
+      "severity": "attention",
+      "summary": "2FA audit cannot be completed via current token because Admin Reports/Directory scope/admin OAuth path is blocked.",
+      "blocked_actions": ["Google Workspace admin write", "2FA enforcement", "user/policy change", "credential scope change without approval"]
+    },
+    {
+      "domain": "LK Growth / Shopify-GMC",
+      "severity": "attention",
+      "summary": "Package is not complete enough to authorize batch Shopify/GMC correction; canonical final rules/values still need closure.",
+      "blocked_actions": ["Shopify write", "GMC/feed write", "ProductInput/dataSource/fetch", "price/stock/SKU/theme/campaign mutation"]
+    },
+    {
+      "domain": "Hermes Brain",
+      "severity": "warn",
+      "summary": "Brain Health WARN: missing MAPA.md in areas/lk/sub-areas/finance.",
+      "blocked_actions": []
+    }
+  ],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "LK Atendimento avisar-enc should remain disabled.",
+      "scope": "read-only runtime readback; no Chatwoot/WhatsApp automation write needed",
+      "evidence": "areas/lk/sub-areas/atendimento/receipts/20260618T095455Z-avisar-enc-disabled-readback.md"
+    },
+    {
+      "decision": "LK Finance may use local PDF/OCR stack and local processing for the supplied Itaú Maio PDF.",
+      "scope": "local runtime install/validation and local document processing; no external services",
+      "evidence": "areas/lk/sub-areas/finance/receipts/20260618T123421Z-local-pdf-ocr-stack-installed.md"
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "pattern": "Treat user claim that an operational packet is already done as a readback task, not production approval.",
+      "exact_scope": "Mesa COO decision 1/3 Shopify/GMC packet status verification",
+      "exclusions": ["batch Shopify/GMC writes", "feed reprocess", "price/stock/SKU/theme/campaign mutations"]
+    },
+    {
+      "pattern": "Automation status should be closed by runtime readback of final state, not by previous intent or HTTP status alone.",
+      "exact_scope": "LK Atendimento avisar-enc readback",
+      "exclusions": ["Chatwoot write", "WhatsApp automation change", "external send"]
+    },
+    {
+      "pattern": "Sensitive documents can be processed locally when Lucas supplies them and the output remains sanitized/local; no external OCR/document service by default.",
+      "exact_scope": "LK Finance PDF/OCR local processing",
+      "exclusions": ["external upload", "bank/accounting write", "email send", "public logging of sensitive document text"]
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Mesa COO decisions need explicit status classes such as verified_partial when evidence exists but final canonical packet is not closed.",
+      "recommended_destination": "Mesa COO decision workflow",
+      "action_applied": true,
+      "verification_needed": "02h supervisor should not mark the Shopify/GMC item fully resolved."
+    },
+    {
+      "learning": "LK Finance now has operational receipts and should get a MAPA.md to satisfy Brain Health.",
+      "recommended_destination": "areas/lk/sub-areas/finance/MAPA.md",
+      "action_applied": false,
+      "blocker": "Safe A1 documentation pending."
+    },
+    {
+      "learning": "Google Workspace security checks must preserve business domain separation and require correct admin/read-only scope before claims.",
+      "recommended_destination": "multiempresa routing / Google Workspace routine",
+      "action_applied": false,
+      "blocker": "Admin OAuth/app access not configured."
+    }
+  ],
+  "autonomy_pattern_candidates": {
+    "may_become_A0_A1_when_safe": [
+      "Create missing area MAPA.md when Brain Health reports subarea_missing_mapa and source docs exist",
+      "Runtime readback/status checks for already-approved disabled automation without performing writes",
+      "Local PDF/OCR extraction for user-supplied documents when no external service or secret is involved and outputs are sanitized"
+    ],
+    "must_remain_A3_A4": [
+      "Shopify/GMC/feed/ProductInput/dataSource/fetch/reprocess writes",
+      "Google Workspace admin/security enforcement or credential scope changes",
+      "External/customer/supplier messages",
+      "Finance/banking/accounting/payment writes",
+      "Docker/VPS/gateway/deploy/cron schedule or delivery changes"
+    ]
+  },
+  "pending_decisions_for_lucas": [
+    {
+      "domain": "LK Growth",
+      "decision_needed": "Approve or reject a final canonical Shopify/GMC packet once rules/values are complete; current status is partial, not production-ready."
+    },
+    {
+      "domain": "Zipper",
+      "decision_needed": "Choose path for Google Workspace 2FA read-only audit: Super Admin OAuth/app allowlist or manual Admin Console export/check."
+    },
+    {
+      "domain": "LK Finance",
+      "decision_needed": "Review Itaú Maio categories marked as revisar/pessoal before final accounting use."
+    }
+  ],
+  "safe_next_actions": [
+    "Create areas/lk/sub-areas/finance/MAPA.md and rerun Brain Health.",
+    "Close LK Growth Shopify/GMC canonical packet as approved/rejected/needs-human-review before any write packet.",
+    "Prepare Zipper Google Workspace manual Admin Console checklist if OAuth remains blocked."
+  ],
+  "blocked_actions_requiring_approval": [
+    "Shopify/GMC/Tiny/Klaviyo/Meta/Supabase/database writes",
+    "WhatsApp/email/customer/collector/supplier sends",
+    "Google Workspace admin/policy/user enforcement",
+    "Docker/VPS/gateway/restart/deploy/cron mutations",
+    "Finance/banking/accounting/payment writes"
+  ],
+  "cron_and_delivery_truth": {
+    "normal_delivery": "local/silent",
+    "telegram_or_origin_required": true,
+    "reason": "Brain Health WARN=1 / Score 99 indicates actionable local documentation gap; not a critical failure.",
+    "runtime_summary": "Fallback Hermes CLI list showed no live non-ok status; prior runtime reconciler had 40 total jobs, 36 active, 4 paused, non_ok=0.",
+    "generated_artifacts": [
+      "reports/daily-consolidation/2026-06-18.md",
+      "reports/daily-consolidation/2026-06-18-handoff.json",
+      "reports/daily-consolidation/latest-handoff.json",
+      "reports/brain-health-check-2026-06-18-02h.json",
+      "reports/brain-improvement-score-2026-06-18-02h.md",
+      "reports/brain-improvement-score-2026-06-18-02h.json"
+    ]
+  },
+  "sources": [
+    "empresa/contexto/decision-sequences/2026-06-18.jsonl",
+    "reports/hermes-daily-digest/2026-06-18.md",
+    "reports/nightly-ops-audit/2026-06-18.md",
+    "reports/hermes-continuous-improvement/2026-06-18.md",
+    "reports/hermes-learning-ledger/2026-06-18.md",
+    "reports/governance/runtime-truth-reconciler-2026-06-18.md",
+    "areas/lk/sub-areas/growth/reports/gmc/lk-gmc-product-data-ranking-review-2026-06-18.md",
+    "areas/lk/sub-areas/atendimento/receipts/20260618T095455Z-avisar-enc-disabled-readback.md",
+    "areas/zipper/approval-packets/google-workspace-2fa-admin-readonly-20260618.md",
+    "areas/lk/sub-areas/finance/receipts/20260618T123421Z-local-pdf-ocr-stack-installed.md",
+    "areas/lk/sub-areas/finance/receipts/20260618T124002Z-itau-maio-local-categorization.md"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "values_printed": false,
+    "raw_transcripts_included": false,
+    "pii_minimized": true,
+    "external_writes": false
+  }
+}
