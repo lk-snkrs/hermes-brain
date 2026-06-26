@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-05-18",
+  "whatsapp": {
+    "label": "Grupo LK Vendas",
+    "resolved_chat_name": "[LK] Vendas/Trocas/Envios",
+    "jid": "120363314625506305@g.us",
+    "account": "hermes",
+    "fallback_account": "pessoal"
+  },
+  "email": {
+    "to": ["lk@lksneakers.com.br"],
+    "design_system": "DesignMD / LK newsletter"
+  },
+  "telegram_origin": {
+    "purpose": "Lucas approval, previews, receipts, sensitive decisions and next steps"
+  },
+  "guardrails": {
+    "external_auto_send_enabled": true,
+    "approval": "Lucas: Aprovado envio externo de todos os relatórios",
+    "enabled_at": "2026-05-18",
+    "note": "External delivery is enabled only for approved LK sales report cadences/destinations: WhatsApp Grupo LK Vendas and email lk@lksneakers.com.br. Strategic decisions/next steps remain on Telegram/origin."
+  }
+}
