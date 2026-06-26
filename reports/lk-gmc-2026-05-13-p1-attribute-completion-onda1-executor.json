@@ -1,0 +1,1331 @@
+{
+  "generated_at": "2026-05-13T12:48:41.383714+00:00",
+  "status": "gmc_p1_attribute_completion_onda1_apply_verified",
+  "mode": "apply",
+  "scope": "Onda 1 high-confidence only; exact online Merchant product IDs; update sizes only if later approved.",
+  "source_labels": [
+    "fact_merchant_center",
+    "fact_shopify_local_snapshot",
+    "derived_reconciliation"
+  ],
+  "approval_required_for_apply": "Lucas approved GMC P1 Attribute Onda 1 apply",
+  "summary": {
+    "candidate_rows_onda1": 60,
+    "fresh_merchant_products_current": 23241,
+    "fresh_merchant_productstatuses_current": 23241,
+    "decision_state_counts": {
+      "skipped_already_corrected_size_present": 59,
+      "ready_for_onda1_size_apply_if_lucas_approves": 1
+    },
+    "ready_total": 1,
+    "selected_for_apply_if_approved": 1,
+    "target_fields": [
+      "sizes"
+    ],
+    "limit": 10,
+    "write_allowed_now": 0,
+    "execution_results_summary": {
+      "updated_sizes": 1
+    },
+    "verify_results_summary": {
+      "verified_product_get": 1
+    },
+    "verified_sizes_match_expected": 1
+  },
+  "private_rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p1-attribute-completion-onda1-executor-rollback-20260513T124709Z.json",
+  "public_rows": [
+    {
+      "product_id": "online:pt:BR:105247",
+      "offer_id": "105247",
+      "merchant_title": "Boné Carhartt Canvas Script Graphic Preto",
+      "shopify_product_title": "Boné Carhartt Canvas Script Graphic Preto",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:11700328-1",
+      "offer_id": "11700328-1",
+      "merchant_title": "Boné Lululemon Classic Ball Wordmark",
+      "shopify_product_title": "Boné Lululemon Classic Ball Wordmark",
+      "shopify_variant_title": "Bone/White",
+      "current_sizes": [
+        "Bone/White"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Bone/White"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:11700328-2",
+      "offer_id": "11700328-2",
+      "merchant_title": "Boné Lululemon Classic Ball Wordmark",
+      "shopify_product_title": "Boné Lululemon Classic Ball Wordmark",
+      "shopify_variant_title": "Butter Cream/Light Ivory",
+      "current_sizes": [
+        "Butter Cream/Light Ivory"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Butter Cream/Light Ivory"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:11700328-3",
+      "offer_id": "11700328-3",
+      "merchant_title": "Boné Lululemon Classic Ball Wordmark",
+      "shopify_product_title": "Boné Lululemon Classic Ball Wordmark",
+      "shopify_variant_title": "Lavender Lux/Goodnight Plum",
+      "current_sizes": [
+        "Lavender Lux/Goodnight Plum"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Lavender Lux/Goodnight Plum"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:11700328-4",
+      "offer_id": "11700328-4",
+      "merchant_title": "Boné Lululemon Classic Ball Wordmark",
+      "shopify_product_title": "Boné Lululemon Classic Ball Wordmark",
+      "shopify_variant_title": "Passionate",
+      "current_sizes": [
+        "Passionate"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Passionate"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:11700328-5",
+      "offer_id": "11700328-5",
+      "merchant_title": "Boné Lululemon Classic Ball Wordmark",
+      "shopify_product_title": "Boné Lululemon Classic Ball Wordmark",
+      "shopify_variant_title": "Black/White",
+      "current_sizes": [
+        "Black/White"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Black/White"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:11700328-6",
+      "offer_id": "11700328-6",
+      "merchant_title": "Boné Lululemon Classic Ball Wordmark",
+      "shopify_product_title": "Boné Lululemon Classic Ball Wordmark",
+      "shopify_variant_title": "White/Black",
+      "current_sizes": [
+        "White/Black"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "White/Black"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:11750230-1",
+      "offer_id": "11750230-1",
+      "merchant_title": "Bolsa Lululemon Slouchy Sling 6L",
+      "shopify_product_title": "Bolsa Lululemon Slouchy Sling 6L",
+      "shopify_variant_title": "Lava Cake",
+      "current_sizes": [
+        "Lava Cake"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Lava Cake"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:11750230-2",
+      "offer_id": "11750230-2",
+      "merchant_title": "Bolsa Lululemon Slouchy Sling 6L",
+      "shopify_product_title": "Bolsa Lululemon Slouchy Sling 6L",
+      "shopify_variant_title": "Light Ivory",
+      "current_sizes": [
+        "Light Ivory"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Light Ivory"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:11750230-3",
+      "offer_id": "11750230-3",
+      "merchant_title": "Bolsa Lululemon Slouchy Sling 6L",
+      "shopify_product_title": "Bolsa Lululemon Slouchy Sling 6L",
+      "shopify_variant_title": "Black",
+      "current_sizes": [
+        "Black"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Black"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:11870629-1",
+      "offer_id": "11870629-1",
+      "merchant_title": "Bolsa Lululemon City Essentials",
+      "shopify_product_title": "Bolsa Lululemon City Essentials",
+      "shopify_variant_title": "Black/Gold",
+      "current_sizes": [
+        "Black/Gold"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Black/Gold"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836572231",
+      "offer_id": "9783836572231",
+      "merchant_title": "Livro Taschen The Ultimate Sneaker Book",
+      "shopify_product_title": "Livro Taschen The Ultimate Sneaker Book",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836596244",
+      "offer_id": "9783836596244",
+      "merchant_title": "Livro Taschen Shoes A–Z: The Collection of The Museum at FIT",
+      "shopify_product_title": "Livro Taschen Shoes A–Z: The Collection of The Museum at FIT",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:9783836596299",
+      "offer_id": "9783836596299",
+      "merchant_title": "Livro Taschen World’s Greatest Sneaker Collectors",
+      "shopify_product_title": "Livro Taschen World’s Greatest Sneaker Collectors",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:9783848002399",
+      "offer_id": "9783848002399",
+      "merchant_title": "Livro H. F. Ullmann Sapatos",
+      "shopify_product_title": "Livro H. F. Ullmann Sapatos",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:AIME109",
+      "offer_id": "AIME109",
+      "merchant_title": "Boné Aimé Leon Dore Porsche Nylon Logo Jet Black Preto",
+      "shopify_product_title": "Boné Aimé Leon Dore Porsche Nylon Logo Jet Black Preto",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:AIME123",
+      "offer_id": "AIME123",
+      "merchant_title": "Boné Aimé Leon Dore x Porsche Colorblock Logo Pristine Off White",
+      "shopify_product_title": "Boné Aimé Leon Dore x Porsche Colorblock Logo Pristine Off White",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:Aime5",
+      "offer_id": "Aime5",
+      "merchant_title": "Boné 6 Panel Aimé Leon Dore Cycling Logo Azul",
+      "shopify_product_title": "Boné 6 Panel Aimé Leon Dore Cycling Logo Azul",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:DM4657004",
+      "offer_id": "DM4657004",
+      "merchant_title": "Tênis Nike Air Jordan 1 Low Crater Grey University Blue Preto",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Low Crater Grey University Blue Preto",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:DN4045001",
+      "offer_id": "DN4045001",
+      "merchant_title": "Tênis Nike Air Jordan 1 Mid SE Light Iron Ore Cinza",
+      "shopify_product_title": "Tênis Nike Air Jordan 1 Mid SE Light Iron Ore Cinza",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:JAC2C1SUN",
+      "offer_id": "JAC2C1SUN",
+      "merchant_title": "Óculos de Sol Jacquemus JAC2C1SUN Preto",
+      "shopify_product_title": "Óculos de Sol Jacquemus JAC2C1SUN Preto",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:JAC2C2SUN",
+      "offer_id": "JAC2C2SUN",
+      "merchant_title": "Óculos de Sol Jacquemus JAC2C2SUN Bege",
+      "shopify_product_title": "Óculos de Sol Jacquemus JAC2C2SUN Bege",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:JAC4C1SUN",
+      "offer_id": "JAC4C1SUN",
+      "merchant_title": "Óculos de Sol Jacquemus JAC4C1SUN Preto",
+      "shopify_product_title": "Óculos de Sol Jacquemus JAC4C1SUN Preto",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:JAC4C2SUN",
+      "offer_id": "JAC4C2SUN",
+      "merchant_title": "Óculos de Sol Jacquemus JAC4C2SUN Animal Print",
+      "shopify_product_title": "Óculos de Sol Jacquemus JAC4C2SUN Animal Print",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:JAC5C2SUN",
+      "offer_id": "JAC5C2SUN",
+      "merchant_title": "Óculos de Sol Jacquemus JAC5C2SUN Branco",
+      "shopify_product_title": "Óculos de Sol Jacquemus JAC5C2SUN Branco",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:JM2",
+      "offer_id": "JM2",
+      "merchant_title": "Jason Markk Ready to Use Foam Cleaner",
+      "shopify_product_title": "Jason Markk Ready to Use Foam Cleaner",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:JM4",
+      "offer_id": "JM4",
+      "merchant_title": "Jason Markk Refresh Spray",
+      "shopify_product_title": "Jason Markk Refresh Spray",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:JM5",
+      "offer_id": "JM5",
+      "merchant_title": "Jason Markk Delicates Cleaning Brush",
+      "shopify_product_title": "Jason Markk Delicates Cleaning Brush",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:JM6",
+      "offer_id": "JM6",
+      "merchant_title": "Jason Markk Durables Cleaning Brush",
+      "shopify_product_title": "Jason Markk Durables Cleaning Brush",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:JM8",
+      "offer_id": "JM8",
+      "merchant_title": "Kit Jason Markk Espuma Quick Clean",
+      "shopify_product_title": "Kit Jason Markk Espuma Quick Clean",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [],
+      "fresh_missing_required_attrs": [
+        "size"
+      ],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "ready_for_onda1_size_apply_if_lucas_approves",
+      "selected_for_apply": true,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB1",
+      "offer_id": "MTB1",
+      "merchant_title": "MEDICOM TOY - Bearbrick Jean-Michel Basquiat \"Special\" 100% & 400% Set Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick Jean-Michel Basquiat \"Special\" 100% & 400% Set Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB10",
+      "offer_id": "MTB10",
+      "merchant_title": "MEDICOM TOY - Bearbrick Death Stranding 1000% Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick Death Stranding 1000% Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB11",
+      "offer_id": "MTB11",
+      "merchant_title": "MEDICOM TOY - Bearbrick Keith Haring #8 1000% Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick Keith Haring #8 1000% Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB12",
+      "offer_id": "MTB12",
+      "merchant_title": "MEDICOM TOY - Bearbrick Breaking Bad Pink Bear 1000% Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick Breaking Bad Pink Bear 1000% Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB13",
+      "offer_id": "MTB13",
+      "merchant_title": "MEDICOM TOY - Bearbrick Jean-Michel Basquiat #7 1000% Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick Jean-Michel Basquiat #7 1000% Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB14",
+      "offer_id": "MTB14",
+      "merchant_title": "MEDICOM TOY - Bearbrick Jackson Pollock Studio (Splash) 1000% Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick Jackson Pollock Studio (Splash) 1000% Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB15",
+      "offer_id": "MTB15",
+      "merchant_title": "MEDICOM TOY - Bearbrick Leonardo De Vinci Mona Lisa 1000% Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick Leonardo De Vinci Mona Lisa 1000% Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB2",
+      "offer_id": "MTB2",
+      "merchant_title": "MEDICOM TOY - Bearbrick Jean-Michel Basquiat \"Special\" 1000% Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick Jean-Michel Basquiat \"Special\" 1000% Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB3",
+      "offer_id": "MTB3",
+      "merchant_title": "MEDICOM TOY - Bearbrick x S'YTE x Junji Ito Uzumaki 1000% Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick x S'YTE x Junji Ito Uzumaki 1000% Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB4",
+      "offer_id": "MTB4",
+      "merchant_title": "MEDICOM TOY - Bearbrick x S'YTE x Junji Ito Tomie 1000% Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick x S'YTE x Junji Ito Tomie 1000% Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB5",
+      "offer_id": "MTB5",
+      "merchant_title": "MEDICOM TOY - Bearbrick Jean-Michel Basquiat #10 1000% Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick Jean-Michel Basquiat #10 1000% Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB6",
+      "offer_id": "MTB6",
+      "merchant_title": "MEDICOM TOY - Bearbrick ROBERT INDIANA x fragmentdesign 100% & 400% Set Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick ROBERT INDIANA x fragmentdesign 100% & 400% Set Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB7",
+      "offer_id": "MTB7",
+      "merchant_title": "MEDICOM TOY - Bearbrick ROBERT INDIANA x fragmentdesign 100% & 400% Set Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick ROBERT INDIANA x fragmentdesign 100% & 400% Set Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB8",
+      "offer_id": "MTB8",
+      "merchant_title": "MEDICOM TOY - Bearbrick Katsushika Hokusai (Thirty-six Views of Tomitake, Fine Wind, Clear Morning) 1000% Toy Art Multi-",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick Katsushika Hokusai (Thirty-six Views of Tomitake, Fine Wind, Clear Morning) 1000% Toy Art Multi-",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:MTB9",
+      "offer_id": "MTB9",
+      "merchant_title": "MEDICOM TOY - BEARBRICK The Batman 100% e 400% Toy Art Multi-Color",
+      "shopify_product_title": "MEDICOM TOY - BEARBRICK The Batman 100％ e 400％ Toy Art Multi-Color",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:PERI034-1007",
+      "offer_id": "PERI034-1007",
+      "merchant_title": "Óculos de Sol Palm Angels PERI034-1007 Preto",
+      "shopify_product_title": "Óculos de Sol Palm Angels PERI034-1007 Preto",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:PERI037-0107",
+      "offer_id": "PERI037-0107",
+      "merchant_title": "Óculos de Sol Palm Angels PERI037-0107 Branco",
+      "shopify_product_title": "Óculos de Sol Palm Angels PERI037-0107 Branco",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:PERI049-1007",
+      "offer_id": "PERI049-1007",
+      "merchant_title": "Óculos de Sol Palm Angels PERI049-1007 Preto",
+      "shopify_product_title": "Óculos de Sol Palm Angels PERI049-1007 Preto",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:PERI056-1764",
+      "offer_id": "PERI056-1764",
+      "merchant_title": "Óculos de Sol Palm Angels PERI056-1764 Bege",
+      "shopify_product_title": "Óculos de Sol Palm Angels PERI056-1764 Bege",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:RH11",
+      "offer_id": "RH11",
+      "merchant_title": "Kit Rhode The Oversized Black Preto",
+      "shopify_product_title": "Kit Rhode The Oversized Black Preto",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:RH13",
+      "offer_id": "RH13",
+      "merchant_title": "Bolsa Rhode Oversized Bubble Bag Black Preto",
+      "shopify_product_title": "Bolsa Rhode Oversized Bubble Bag Black Preto",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:RH19",
+      "offer_id": "RH19",
+      "merchant_title": "Lip Tint Rhode Scented Peptide Ribbon",
+      "shopify_product_title": "Lip Tint Rhode Scented Peptide Ribbon",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:RH21",
+      "offer_id": "RH21",
+      "merchant_title": "Lip Tint Rhode Scented Peptide Raspberry Jelly",
+      "shopify_product_title": "Lip Tint Rhode Scented Peptide Raspberry Jelly",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:RH25-1",
+      "offer_id": "RH25-1",
+      "merchant_title": "Rhode Peptide Eye Prep",
+      "shopify_product_title": "Rhode Peptide Eye Prep",
+      "shopify_variant_title": "Rhode Logo",
+      "current_sizes": [
+        "Rhode Logo"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Rhode Logo"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:RH25-2",
+      "offer_id": "RH25-2",
+      "merchant_title": "Rhode Peptide Eye Prep",
+      "shopify_product_title": "Rhode Peptide Eye Prep",
+      "shopify_variant_title": "R Icon",
+      "current_sizes": [
+        "R Icon"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "R Icon"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep22",
+      "offer_id": "Rep22",
+      "merchant_title": "Boné Represent Clo Micro Owners Club Jet Black Preto",
+      "shopify_product_title": "Boné Represent Clo Micro Owners Club Jet Black Preto",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:Rep23",
+      "offer_id": "Rep23",
+      "merchant_title": "Boné Represent Clo Owners Club Script Cap Black Preto",
+      "shopify_product_title": "Boné Represent Clo Owners Club Script Cap Black Preto",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:SSB-3507",
+      "offer_id": "SSB-3507",
+      "merchant_title": "MEDICOM TOY - Bearbrick Series 49 100% Toy Art",
+      "shopify_product_title": "MEDICOM TOY - Bearbrick Series 49 100% Toy Art",
+      "shopify_variant_title": "Default Title",
+      "current_sizes": [
+        "Default Title"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Default Title"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:ST42-1",
+      "offer_id": "ST42-1",
+      "merchant_title": "Bolsa Saint Studio Tote Museo",
+      "shopify_product_title": "Bolsa Saint Studio Tote Museo",
+      "shopify_variant_title": "Preto",
+      "current_sizes": [
+        "Preto"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Preto"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    },
+    {
+      "product_id": "online:pt:BR:ST42-2",
+      "offer_id": "ST42-2",
+      "merchant_title": "Bolsa Saint Studio Tote Museo",
+      "shopify_product_title": "Bolsa Saint Studio Tote Museo",
+      "shopify_variant_title": "Marrom",
+      "current_sizes": [
+        "Marrom"
+      ],
+      "fresh_missing_required_attrs": [],
+      "missing_attributes_from_packet": [
+        "size"
+      ],
+      "suggested_sizes": [
+        "Marrom"
+      ],
+      "decision_state": "skipped_already_corrected_size_present",
+      "selected_for_apply": false,
+      "write_scope_if_approved": "sizes only, exact online Merchant product resource, products.insert upsert",
+      "rollback_required_before_write": true
+    }
+  ],
+  "execution_results": [
+    {
+      "product_id": "online:pt:BR:JM8",
+      "execution_status": "updated_sizes",
+      "sizes_after_response": null
+    }
+  ],
+  "verified_results": [
+    {
+      "product_id": "online:pt:BR:JM8",
+      "execution_status": "updated_sizes",
+      "sizes_after_response": null,
+      "verify_status": "verified_product_get",
+      "sizes_after_get": [
+        "Default Title"
+      ],
+      "sizes_match_expected": true
+    }
+  ],
+  "not_performed": [
+    "merchant_delete",
+    "merchant_delete",
+    "merchant_price_title_link_image_update",
+    "availability_update",
+    "feed_update_or_fetch",
+    "shopify_write",
+    "tiny_call_or_write",
+    "database_write",
+    "pos_or_local_inventory_write",
+    "klaviyo_or_whatsapp_send",
+    "notion_or_n8n_write",
+    "loyalty_or_judgeme_action"
+  ]
+}

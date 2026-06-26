@@ -1,6 +1,6 @@
 # LK GMC Required Attributes Preview, 2026-05-12
 
-Generated at: `2026-05-12T02:08:40.964250+00:00`
+Generated at: `2026-05-12T10:53:23.224052+00:00`
 
 ## Veredito
 
@@ -11,155 +11,155 @@ Preview local para corrigir atributos obrigatórios do Merchant. Não foi enviad
 ## Resumo
 
 - Linhas required-attributes revisadas: 80
-- Matches Shopify: 80
-- Linhas prontas para preview de supplemental feed: 80
-- Linhas para revisão manual antes de write: 0
-- Confiança: {'medium': 80}
+- Matches Shopify: 71
+- Linhas prontas para preview de supplemental feed: 71
+- Linhas para revisão manual antes de write: 9
+- Confiança: {'low': 9, 'medium': 71}
 - Atributos faltantes: {'age group': 80, 'gender': 80, 'size': 80}
 - Sugestão age_group: {'adult': 79, 'kids': 1}
-- Sugestão gender: {'male': 7, 'unisex': 70, 'female': 3}
+- Sugestão gender: {'unisex': 68, 'male': 4, 'female': 8}
 - Writes/envios/contatos/compras/marketplace/n8n: 0/0/0/0/0
 
 ## Amostras
 
-### JI3185-7
-- Produto: Tênis Adidas Samba OG Cream White Cardboard Creme
-- Variant: 40 / `JI3185-7`
+### DZ4137116
+- Produto: sem match
+- Variant: n/a / `n/a`
 - Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`male`, size=`40`, color=``
-- Confiança: medium / superfície: supplemental_feed_preview_preferred
+- Sugestão: age_group=`adult`, gender=`unisex`, size=``, color=``
+- Confiança: low / superfície: manual_review_before_write
 
-### HQ4309-610-40
-- Produto: Chinelo Slide Nike Mind 001 Pearl Pink Rosa
-- Variant: 40 / `HQ4309-610-40`
+### ST75
+- Produto: Shorts Saint Studio Everywear Caqui Bege
+- Variant: 40 / `ST75`
 - Missing: age group, gender, size
 - Sugestão: age_group=`adult`, gender=`unisex`, size=`40`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### U204L2SZ-36
-- Produto: Tênis New Balance 204L Sea Salt Linen Bege
-- Variant: 36 / `U204L2SZ-36`
+### FZ3124200
+- Produto: sem match
+- Variant: n/a / `n/a`
 - Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`unisex`, size=`36`, color=``
+- Sugestão: age_group=`adult`, gender=`unisex`, size=``, color=``
+- Confiança: low / superfície: manual_review_before_write
+
+### IH7323102
+- Produto: sem match
+- Variant: n/a / `n/a`
+- Missing: age group, gender, size
+- Sugestão: age_group=`adult`, gender=`unisex`, size=``, color=``
+- Confiança: low / superfície: manual_review_before_write
+
+### JQ9230-1
+- Produto: Tênis Adidas Ballerina Bad Bunny Bold Gold Amarelo
+- Variant: 34 / `JQ9230-1`
+- Missing: age group, gender, size
+- Sugestão: age_group=`adult`, gender=`unisex`, size=`34`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### U1906LNT-10
-- Produto: Tênis New Balance 1906L Black Suede Preto
-- Variant: 42 / `U1906LNT-10`
+### U9060AUB-2
+- Produto: Tênis New Balance 9060 Mesh Slate Grey Calcium Cinza
+- Variant: 35 / `U9060AUB-2`
 - Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`unisex`, size=`42`, color=``
+- Sugestão: age_group=`adult`, gender=`male`, size=`35`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### JH5439-8
-- Produto: Tênis Adidas Handball Spezial Bordô
-- Variant: 41 / `JH5439-8`
+### gw0099
+- Produto: Tênis Adidas Yeezy Boost 350 V2 Ash Stone Cinza
+- Variant: 44 / `gw0099`
 - Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`unisex`, size=`41`, color=``
+- Sugestão: age_group=`adult`, gender=`unisex`, size=`44`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### JH5439-6
-- Produto: Tênis Adidas Handball Spezial Bordô
-- Variant: 39 / `JH5439-6`
-- Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`unisex`, size=`39`, color=``
-- Confiança: medium / superfície: supplemental_feed_preview_preferred
-
-### HQ4307-101-38
-- Produto: Chinelo Slide Nike Mind 001 White Speed Red Branco
-- Variant: 38 / `HQ4307-101-38`
-- Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`unisex`, size=`38`, color=``
-- Confiança: medium / superfície: supplemental_feed_preview_preferred
-
-### HQ4307-300-43
-- Produto: Chinelo Slide Nike Mind 001 Mineral Slate Verde
-- Variant: 43 / `HQ4307-300-43`
+### IH7971-001-43
+- Produto: Tênis Nike Air Jordan Chase B x Travis Scott x Jumpman Jack TR Black Night Silver Preto
+- Variant: 43 / `IH7971-001-43`
 - Missing: age group, gender, size
 - Sugestão: age_group=`adult`, gender=`unisex`, size=`43`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### 4150234_3581_412-2
-- Produto: Chinelo Havaianas Top Dolce & Gabbana Faux Fur Leopardo Marrom
-- Variant: 37/38 / `4150234_3581_412-2`
+### HM4743408
+- Produto: sem match
+- Variant: n/a / `n/a`
 - Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`unisex`, size=`37/38`, color=``
+- Sugestão: age_group=`adult`, gender=`unisex`, size=``, color=``
+- Confiança: low / superfície: manual_review_before_write
+
+### IH4001-40
+- Produto: Tênis Adidas Tokyo Mary Jane Crystal Sky Cream White Azul
+- Variant: 40 / `IH4001-40`
+- Missing: age group, gender, size
+- Sugestão: age_group=`adult`, gender=`unisex`, size=`40`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### U204L2SZ-44
-- Produto: Tênis New Balance 204L Sea Salt Linen Bege
-- Variant: 44 / `U204L2SZ-44`
+### U9060AUB-5
+- Produto: Tênis New Balance 9060 Mesh Slate Grey Calcium Cinza
+- Variant: 38 / `U9060AUB-5`
 - Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`unisex`, size=`44`, color=``
+- Sugestão: age_group=`adult`, gender=`male`, size=`38`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### ST64
-- Produto: Calça Saint Studio Jeans Baggy Risca de Giz Azul
-- Variant: 38 / `ST64`
+### 43774078387150
+- Produto: Tênis Adidas Handball Spezial Preloved Brown Orange Tint Gum Marrom
+- Variant: 38 / `43774078387150`
 - Missing: age group, gender, size
 - Sugestão: age_group=`adult`, gender=`unisex`, size=`38`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### YR0067
-- Produto: Calça Pace Nomo Tailoring Trousers Preto
-- Variant: L/G / `YR0067`
+### U204L7A8-34
+- Produto: Tênis New Balance 204L Light Silver Metallic Prata
+- Variant: 34 / `U204L7A8-34`
 - Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`unisex`, size=`L/G`, color=``
+- Sugestão: age_group=`adult`, gender=`unisex`, size=`34`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### CUNISPHEREBLK-1
-- Produto: Camiseta Aimé Leon Dore Unisphere Preto
-- Variant: G/L / `CUNISPHEREBLK-1`
+### bb5359
+- Produto: Tênis Adidas Yeezy Boost 350 Pirate Black 2023
+- Variant: 43 / `bb5359`
 - Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`unisex`, size=`G/L`, color=``
+- Sugestão: age_group=`adult`, gender=`unisex`, size=`43`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### JI3185-8
-- Produto: Tênis Adidas Samba OG Cream White Cardboard Creme
-- Variant: 41 / `JI3185-8`
+### DM7866105
+- Produto: sem match
+- Variant: n/a / `n/a`
 - Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`male`, size=`41`, color=``
+- Sugestão: age_group=`adult`, gender=`unisex`, size=``, color=``
+- Confiança: low / superfície: manual_review_before_write
+
+### FJ2530-102-5
+- Produto: Tênis Nike Cortez Vintage Muslin Black Bege
+- Variant: 38 / `FJ2530-102-5`
+- Missing: age group, gender, size
+- Sugestão: age_group=`adult`, gender=`female`, size=`38`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### JI3185-3
-- Produto: Tênis Adidas Samba OG Cream White Cardboard Creme
-- Variant: 36 / `JI3185-3`
+### JR0881-1
+- Produto: Tênis Adidas Samba OG Better Scarlet White Vermelho
+- Variant: 34 / `JR0881-1`
 - Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`male`, size=`36`, color=``
+- Sugestão: age_group=`adult`, gender=`unisex`, size=`34`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### 125AS254481F-5
-- Produto: Camiseta Fear Of God Essentials Varsity 90s Short Sleeve Tee Cinza
-- Variant: XL/GG / `125AS254481F-5`
-- Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`unisex`, size=`XL/GG`, color=``
-- Confiança: medium / superfície: supplemental_feed_preview_preferred
-
-### HQ4309-610-38
-- Produto: Chinelo Slide Nike Mind 001 Pearl Pink Rosa
-- Variant: 38 / `HQ4309-610-38`
+### U204L5AV-38
+- Produto: Tênis New Balance 204L Lone Star Grey Cinza
+- Variant: 38 / `U204L5AV-38`
 - Missing: age group, gender, size
 - Sugestão: age_group=`adult`, gender=`unisex`, size=`38`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### JQ9231-6
-- Produto: Tênis Adidas Ballerina Bad Bunny Black Chalk Preto
-- Variant: 39 / `JQ9231-6`
+### 1183B577.102-8
+- Produto: Tênis Onitsuka Tiger Mexico Mid Runner White/Blue Bege
+- Variant: 41 / `1183B577.102-8`
 - Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`unisex`, size=`39`, color=``
+- Sugestão: age_group=`adult`, gender=`unisex`, size=`41`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
-### U1906LAE-36
-- Produto: Tênis New Balance 1906L Silver Shadow Grey Slip-on Prata
-- Variant: 36 / `U1906LAE-36`
+### IH4001-34
+- Produto: Tênis Adidas Tokyo Mary Jane Crystal Sky Cream White Azul
+- Variant: 34 / `IH4001-34`
 - Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`male`, size=`36`, color=``
-- Confiança: medium / superfície: supplemental_feed_preview_preferred
-
-### U1906LNT-11
-- Produto: Tênis New Balance 1906L Black Suede Preto
-- Variant: 44 / `U1906LNT-11`
-- Missing: age group, gender, size
-- Sugestão: age_group=`adult`, gender=`unisex`, size=`44`, color=``
+- Sugestão: age_group=`adult`, gender=`unisex`, size=`34`, color=``
 - Confiança: medium / superfície: supplemental_feed_preview_preferred
 
 ## Plano recomendado

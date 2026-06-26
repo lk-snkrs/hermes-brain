@@ -1,0 +1,179 @@
+{
+  "status": "completed",
+  "source_rollback": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-residual-missing-attr-content-api-repair-rollback-20260514T162237Z.json",
+  "execution": {
+    "restored_prior_resource": 14
+  },
+  "results": [
+    {
+      "product_id": "online:pt:BR:11942764414726006273",
+      "status": "restored_prior_resource"
+    },
+    {
+      "product_id": "online:pt:BR:12273029318518873414",
+      "status": "restored_prior_resource"
+    },
+    {
+      "product_id": "online:pt:BR:12666760103914768713",
+      "status": "restored_prior_resource"
+    },
+    {
+      "product_id": "online:pt:BR:14382216781199547817",
+      "status": "restored_prior_resource"
+    },
+    {
+      "product_id": "online:pt:BR:16327035847486546313",
+      "status": "restored_prior_resource"
+    },
+    {
+      "product_id": "online:pt:BR:17233744321540595259",
+      "status": "restored_prior_resource"
+    },
+    {
+      "product_id": "online:pt:BR:1736512501686486863",
+      "status": "restored_prior_resource"
+    },
+    {
+      "product_id": "online:pt:BR:3104193228761997124",
+      "status": "restored_prior_resource"
+    },
+    {
+      "product_id": "online:pt:BR:3332348645938802802",
+      "status": "restored_prior_resource"
+    },
+    {
+      "product_id": "online:pt:BR:4917838518253211418",
+      "status": "restored_prior_resource"
+    },
+    {
+      "product_id": "online:pt:BR:5830504980213147042",
+      "status": "restored_prior_resource"
+    },
+    {
+      "product_id": "online:pt:BR:7158941586508696723",
+      "status": "restored_prior_resource"
+    },
+    {
+      "product_id": "online:pt:BR:7793455940120203308",
+      "status": "restored_prior_resource"
+    },
+    {
+      "product_id": "online:pt:BR:8630660614210721891",
+      "status": "restored_prior_resource"
+    }
+  ],
+  "verify": [
+    {
+      "product_id": "online:pt:BR:11942764414726006273",
+      "status": "read",
+      "ageGroup": null,
+      "gender": null,
+      "sizes": null
+    },
+    {
+      "product_id": "online:pt:BR:12273029318518873414",
+      "status": "read",
+      "ageGroup": null,
+      "gender": null,
+      "sizes": null
+    },
+    {
+      "product_id": "online:pt:BR:12666760103914768713",
+      "status": "read",
+      "ageGroup": "adult",
+      "gender": "unisex",
+      "sizes": [
+        "G"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:14382216781199547817",
+      "status": "read",
+      "ageGroup": "adult",
+      "gender": "unisex",
+      "sizes": [
+        "P"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:16327035847486546313",
+      "status": "read",
+      "ageGroup": null,
+      "gender": null,
+      "sizes": null
+    },
+    {
+      "product_id": "online:pt:BR:17233744321540595259",
+      "status": "read",
+      "ageGroup": null,
+      "gender": null,
+      "sizes": null
+    },
+    {
+      "product_id": "online:pt:BR:1736512501686486863",
+      "status": "read",
+      "ageGroup": null,
+      "gender": null,
+      "sizes": null
+    },
+    {
+      "product_id": "online:pt:BR:3104193228761997124",
+      "status": "read",
+      "ageGroup": "adult",
+      "gender": "unisex",
+      "sizes": [
+        "36"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:3332348645938802802",
+      "status": "read",
+      "ageGroup": "adult",
+      "gender": "unisex",
+      "sizes": [
+        "G"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:4917838518253211418",
+      "status": "read",
+      "ageGroup": "adult",
+      "gender": "unisex",
+      "sizes": null
+    },
+    {
+      "product_id": "online:pt:BR:5830504980213147042",
+      "status": "read",
+      "ageGroup": null,
+      "gender": null,
+      "sizes": null
+    },
+    {
+      "product_id": "online:pt:BR:7158941586508696723",
+      "status": "read",
+      "ageGroup": "adult",
+      "gender": "unisex",
+      "sizes": [
+        "38"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:7793455940120203308",
+      "status": "read",
+      "ageGroup": "adult",
+      "gender": "male",
+      "sizes": [
+        "G"
+      ]
+    },
+    {
+      "product_id": "online:pt:BR:8630660614210721891",
+      "status": "read",
+      "ageGroup": "adult",
+      "gender": "unisex",
+      "sizes": [
+        "40"
+      ]
+    }
+  ]
+}

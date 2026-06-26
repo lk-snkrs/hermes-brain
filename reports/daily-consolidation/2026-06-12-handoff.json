@@ -1,0 +1,188 @@
+{
+  "operational_date": "2026-06-12",
+  "generated_at_utc": "2026-06-12T04:03:39Z",
+  "status": "healthy",
+  "executive_summary": "Fechamento 01h BRT executado em modo Brain-first/local. Health check FAIL=0 WARN=0; Brain Improvement Score 94/100. Principal sinal operacional: LK Stock corrigiu fallback Tiny para Meia Saint Studio Pima Branco e executou, com aprovação explícita de Lucas, Shopify SKU-only em 8 variantes seguras, mantendo 7 bloqueadas.",
+  "material_changes": [
+    {
+      "type": "daily_consolidation",
+      "path": "reports/daily-consolidation/2026-06-12.md",
+      "summary": "Relatório diário do Fechamento Ágil 01h gerado com handoffs LK Stock, cron truth, memory hygiene, health/score e guardrails."
+    },
+    {
+      "type": "handoff_package",
+      "paths": [
+        "reports/daily-consolidation/2026-06-12-handoff.json",
+        "reports/daily-consolidation/latest-handoff.json"
+      ],
+      "summary": "Pacote JSON sanitizado para supervisor 02h."
+    },
+    {
+      "type": "health_score_artifacts",
+      "paths": [
+        "reports/brain-health-check-2026-06-12-02h.json",
+        "reports/brain-improvement-score-2026-06-12-02h.md",
+        "reports/brain-improvement-score-2026-06-12-02h.json"
+      ],
+      "summary": "Artefatos obrigatórios do gate 01h/02h gerados localmente."
+    }
+  ],
+  "incidents": [
+    {
+      "category": "lk_stock_identity_lookup_gap",
+      "status": "corrected_documented",
+      "summary": "Primeiro diagnóstico de Meia Saint Studio Pima Branco parou na ausência de vínculo Shopify/Stock OS; handoff corretivo registrou fallback Tiny read-only por título encontrando saldo 1 no depósito oficial, mas identidade operacional segue quebrada.",
+      "external_action_taken_by_this_job": false
+    }
+  ],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Aprovar Shopify SKU-only a partir do código Tiny para alvos seguros.",
+      "scope": "Adicionar na Shopify o SKU que está no Tiny, preservando preço/estoque/título/tema/cliente/Tiny sem alteração.",
+      "evidence": "Receipt lk-stock-shopify-sku-from-tiny-safe-apply-20260612T011049Z.md",
+      "exclusions": [
+        "sem Tiny write",
+        "sem preço",
+        "sem estoque",
+        "sem título/produto/tema",
+        "sem cliente/envio externo"
+      ]
+    },
+    {
+      "decision": "Continuar o passe SKU-only nos restantes comprováveis após 'Fazer tudo'.",
+      "scope": "Aplicar SKU-only apenas onde havia match exato por tamanho na grade Tiny e codigo não vazio; manter bloqueados alvos ambíguos.",
+      "evidence": "Receipt lk-stock-shopify-sku-from-tiny-second-pass-20260612T012705Z.md",
+      "exclusions": [
+        "sem inventar SKU",
+        "sem alterar variantes sem codigo Tiny único/não vazio",
+        "sem writes fora de SKU-only"
+      ]
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "scope": "LK Stock / Shopify SKU-only",
+      "pattern_to_learn": "Aprovação explícita de Lucas para um write Shopify deve ser executada exatamente no escopo aprovado, com rollback/readback e sem inferir permissão para campos relacionados.",
+      "status": "applied_by_lk_stock",
+      "external_write_summary": "Shopify variant SKU-only em 8 variantes; Tiny write 0; preço/estoque/título/tema/cliente 0."
+    },
+    {
+      "scope": "LK Stock identity fallback",
+      "pattern_to_learn": "Quando Shopify variant/Stock OS não resolve por SKU/barcode/metafield vazio, lk-stock deve fazer fallback Tiny read-only por título/handle normalizado antes de concluir ausência de estoque.",
+      "status": "captured_for_02h_promotion"
+    },
+    {
+      "scope": "Interpretação de 'Fazer tudo'",
+      "pattern_to_learn": "'Fazer tudo' pode continuar o escopo seguro já aprovado, mas não vira autorização ampla para produção, estoque, preço, cliente ou integrações fora do pacote validado.",
+      "status": "captured_for_approval_guardrail"
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "LK Stock deve fazer fallback Tiny read-only por título/handle quando Shopify/Stock OS não resolve por identidade vazia.",
+      "recommended_destination": "LK Stock skill/rotina e learning ledger 02h",
+      "action_applied_or_blocked": "Registrado no fechamento; promoção sistêmica fica para 02h.",
+      "verification_needed": "Patchar/validar procedimento LK Stock sem produção."
+    },
+    {
+      "learning": "'Fazer tudo' permanece limitado ao escopo seguro já aprovado; não é aprovação ampla.",
+      "recommended_destination": "Approval Manager / multiempresa routing guardrail",
+      "action_applied_or_blocked": "Aplicado no segundo passe: só SKU-only comprovável; 7 alvos pulados.",
+      "verification_needed": "Manter regressões contra writes externos/produtivos fora do escopo."
+    },
+    {
+      "learning": "Shopify SKU-only write exige aprovação escopada, backup/readback, mapeamento Tiny seguro, exclusions claras e receipt.",
+      "recommended_destination": "LK Stock rotina/receipt template",
+      "action_applied_or_blocked": "Receipts documentaram backup, readback e suíte Stock OS 30 OK.",
+      "verification_needed": "Confirmar versionamento seguro dos artifacts allowlisted."
+    },
+    {
+      "learning": "Review de impacto LK Growth deve permanecer read-only até nova aprovação de write.",
+      "recommended_destination": "LK Growth impact review routine",
+      "action_applied_or_blocked": "Registrado como pendência de amanhã.",
+      "verification_needed": "Executar análise GA4/Shopify/GSC sem mutation."
+    }
+  ],
+  "autonomy_pattern_candidates": {
+    "candidate_a0_a1": [
+      "gerar/validar relatórios locais do Brain",
+      "rodar health check e score read-only",
+      "secret scan sanitizado",
+      "Brain Sync seguro allowlist documental",
+      "promover guardrails documentais de fallback read-only do lk-stock"
+    ],
+    "candidate_a2_a3_scoped": [
+      "Shopify SKU-only quando Lucas aprova explicitamente o pacote e há backup/readback, mapeamento Tiny seguro, testes e exclusions claras"
+    ],
+    "must_remain_a3_a4": [
+      "preço/estoque/título/tema/produto Shopify fora do escopo aprovado",
+      "Tiny write",
+      "GMC/Klaviyo/Meta/Supabase/bancos",
+      "WhatsApp/e-mail/campanha/cliente/fornecedor",
+      "restart/deploy/gateway/Docker/VPS/Traefik/volumes/redes",
+      "cron novo ou mudança de delivery externo"
+    ]
+  },
+  "pending_decisions_for_lucas": [],
+  "safe_next_actions": [
+    "Supervisor 02h consumir este handoff e promover apenas aprendizados A0/A1 seguros.",
+    "LK Stock manter fila dos 7 SKUs restantes até código Tiny canônico ou mapeamento de tamanho confiável.",
+    "LK Growth executar review de impacto de descrições como read-only."
+  ],
+  "blocked_actions_requiring_approval": [
+    "novo write Shopify fora de SKU-only aprovado",
+    "Tiny write ou alteração de estoque/preço",
+    "promessa pública de disponibilidade/pronta entrega",
+    "mensagens externas e campanhas",
+    "produção/infra/runtime/secrets/database"
+  ],
+  "cron_and_delivery_truth": {
+    "generated": true,
+    "delivered_to_telegram": false,
+    "normal_delivery_contract": "local/silent on healthy run",
+    "health_check": {
+      "path": "reports/brain-health-check-2026-06-12-02h.json",
+      "fail_count": 0,
+      "warn_count": 0
+    },
+    "brain_improvement_score": {
+      "path": "reports/brain-improvement-score-2026-06-12-02h.json",
+      "overall_score": 94
+    },
+    "cron_truth_summary": [
+      "cronjob CLI unavailable in this runtime; used /opt/hermes/.venv/bin/hermes cron list --all fallback",
+      "Fechamento Ágil 01h active, prior last run OK",
+      "daily intelligence loop active, prior last run OK",
+      "runtime + cron watchdog active, last OK",
+      "compression self-heal watchdog active, last OK",
+      "LK mandatory reporting jobs active in consulted registry",
+      "Mordomo/LK Growth/SPITI Telegram gateway watchdogs paused"
+    ]
+  },
+  "sources": [
+    "areas/operacoes/rotinas/fechamento-agil-01h.md",
+    "areas/operacoes/rotinas/hermes-nightly-governance-cycle.md",
+    "areas/operacoes/inventarios/crons-agentes-profiles.md",
+    "areas/operacoes/brds/hermes-brain-fechamento-agil-23h-brd-2026-05-19.md",
+    "empresa/contexto/organograma-agentes-hermes.md",
+    "areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md",
+    "areas/operacoes/handoffs/handoff-lk-stock-identity-gap-meia-saint-studio-pima-branco-20260612T002048Z.md",
+    "areas/operacoes/handoffs/handoff-lk-stock-correction-meia-saint-studio-pima-branco-tiny-stock-found-20260612T003616Z.md",
+    "areas/lk/sub-areas/stock/receipts/lk-stock-shopify-sku-from-tiny-safe-apply-20260612T011049Z.md",
+    "areas/lk/sub-areas/stock/receipts/lk-stock-shopify-sku-from-tiny-second-pass-20260612T012705Z.md",
+    "areas/lk/sub-areas/growth/reviews/impact-review-product-description-operational-cleanup-20260612.md",
+    "reports/memory-hygiene/2026-06-12.json",
+    "reports/brain-health-check-2026-06-12-02h.json",
+    "reports/brain-improvement-score-2026-06-12-02h.json",
+    "Hermes cron list fallback",
+    "session_search"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "raw_chat_transcripts_included": false,
+    "secret_values_included": false,
+    "token_previews_included": false,
+    "pii_dump_included": false,
+    "values_printed": false
+  }
+}

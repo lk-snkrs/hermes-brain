@@ -4,7 +4,7 @@
 
 ## Objetivo
 
-Produzir uma revisão executiva semanal para Lucas, consolidando LK Sneakers, Zipper Galeria, SPITI Auction e infraestrutura Hermes, sem misturar contextos ou executar ações externas.
+Produzir uma revisão executiva semanal para Lucas, consolidando **LK OS**, **Zipper OS**, **SPITI OS** e infraestrutura Hermes, sem misturar contextos ou executar ações externas.
 
 ## Quando usar
 
@@ -20,20 +20,20 @@ Produzir uma revisão executiva semanal para Lucas, consolidando LK Sneakers, Zi
 
 ## Escopo
 
-### LK Sneakers
+### LK OS — LK Sneakers
 
 - Pendências de CRM/campanhas.
 - Oportunidades de cross-sell/leads esfriando.
 - Alertas de dados/integrações se houver evidência.
 - Nenhum envio externo sem preview + aprovação Lucas.
 
-### Zipper Galeria
+### Zipper OS — Zipper Galeria
 
 - Pendências de obras, colecionadores, feiras e comunicação.
 - Rascunhos ou oportunidades comerciais apenas como proposta interna.
 - Nenhum contato/publicação/proposta sem aprovação Lucas/Osmar/responsável.
 
-### SPITI Auction
+### SPITI OS — SPITI Auction
 
 - Pendências de leilão, Spiti Hub, lances, SEO/conteúdo e analytics.
 - Dados de lances só com fonte verificada; se não houver fonte, registrar como desconhecido.
@@ -56,7 +56,7 @@ Produzir uma revisão executiva semanal para Lucas, consolidando LK Sneakers, Zi
 1. Carregar `lucas-chief-of-staff` e `multiempresa-routing-lucas`.
 2. Verificar se existe contexto recente relevante com `session_search`.
 3. Ler os resumos/arquivos necessários do Hermes Brain.
-4. Separar a revisão em quatro blocos: LK, Zipper, SPITI, Hermes/Infra.
+4. Separar a revisão em quatro blocos: LK OS, Zipper OS, SPITI OS, Hermes/Infra.
 5. Para cada bloco, listar:
    - status conhecido;
    - pendências;
@@ -72,19 +72,19 @@ Produzir uma revisão executiva semanal para Lucas, consolidando LK Sneakers, Zi
 ```markdown
 ## Revisão semanal — [data]
 
-### LK Sneakers
+### LK OS — LK Sneakers
 - Status:
 - Pendências:
 - Riscos:
 - Próximas ações:
 
-### Zipper Galeria
+### Zipper OS — Zipper Galeria
 - Status:
 - Pendências:
 - Riscos:
 - Próximas ações:
 
-### SPITI Auction
+### SPITI OS — SPITI Auction
 - Status:
 - Pendências:
 - Riscos:

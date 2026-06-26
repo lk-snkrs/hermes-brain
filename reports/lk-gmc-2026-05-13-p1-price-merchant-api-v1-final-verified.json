@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-05-13T16:13:41.906696+00:00",
+  "status": "gmc_p1_required_attributes_zero_final_verified",
+  "source_report": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-gmc-2026-05-13-p1-attribute-wave6-price-merchant-api-v1-executor.json",
+  "registered_gcp_project": "openclaw-hst / 279776001868",
+  "merchant_account": "LK Merchant Center",
+  "data_source": "accounts/*/dataSources/10636492695",
+  "price_apply_summary": {
+    "source_ready_rows": 35,
+    "execution_results_summary": {
+      "patched_price_v1": 35
+    },
+    "verify_results_summary": {
+      "verified_gets": 35
+    },
+    "verified_content_price_match_expected": 32,
+    "verified_merchant_price_match_expected": 32,
+    "fresh_productstatuses_after": 23245,
+    "required_attr_rows_after": 2,
+    "required_attr_counts_after": {
+      "price": 2
+    }
+  },
+  "final_productstatuses_recheck": {
+    "fresh_productstatuses": 23245,
+    "required_attr_rows": 0,
+    "required_attr_counts": {}
+  },
+  "rollback_snapshot": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-13-p1-attribute-wave6-price-merchant-api-v1-executor-rollback-20260513T160309Z.json",
+  "not_performed": [
+    "merchant_delete",
+    "shopify_write",
+    "tiny_write",
+    "database_write",
+    "campaign_or_message_send",
+    "non_price_write_in_v1_executor"
+  ]
+}

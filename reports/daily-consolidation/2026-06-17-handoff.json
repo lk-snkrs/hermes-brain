@@ -1,0 +1,177 @@
+{
+  "operational_date": "2026-06-17",
+  "generated_at_utc": "2026-06-18T04:06:54Z",
+  "status": "attention_controlled",
+  "executive_summary": "Brain healthy and synced-ready; operational attention remains localized in Mordomo/Zipper decisions, Google Workspace Zipper 2FA scope, LK Atendimento Chatwoot verification, and LK Growth upstream Shopify approval boundaries.",
+  "material_changes": [
+    {
+      "domain": "Hermes Geral / Grande Mente",
+      "summary": "Daily Intelligence autohealed a local/documental Brain Health gap by linking LK Growth decisions in the parent MAPA; Brain Health ended FAIL=0/WARN=0 and Brain Improvement Score 100/100.",
+      "evidence": "reports/hermes-continuous-improvement/2026-06-17.md"
+    },
+    {
+      "domain": "LK Stock",
+      "summary": "POS restock alert preflight now cures missing Stock OS origin for the whole order before sending a false 'stock not found' alert; local regression suite passed.",
+      "evidence": "areas/lk/sub-areas/stock/receipts/lk-pos-restock-alert-origin-preflight-fix-20260617.md"
+    },
+    {
+      "domain": "LK Stock",
+      "summary": "Local Stock OS active Shopify skeleton backfill inserted missing active Shopify SKUs into local/canonical database while preserving no-public-availability guardrail for skeleton rows.",
+      "evidence": "areas/lk/sub-areas/stock/receipts/lk-stock-os-active-shopify-database-backfill-20260617.md"
+    },
+    {
+      "domain": "LK Growth",
+      "summary": "Shopify upstream GMC field audit confirmed durable product-data corrections should happen through Shopify/Simprosys metafields, especially mm-google-shopping.color.",
+      "evidence": "areas/lk/sub-areas/growth/reports/gmc/shopify-upstream-gmc-fields-20260617/REPORT-SHOPIFY-UPSTREAM-GMC-FIELDS-20260617.md"
+    },
+    {
+      "domain": "LK Content",
+      "summary": "Klaviyo newsletter hero/template was updated in Draft only, with no send, schedule, or list mutation.",
+      "evidence": "areas/lk/sub-areas/content/receipts/klaviyo-curadoria-inverno-tons-terrosos-hero-image-replace-20260617.json"
+    },
+    {
+      "domain": "Zipper",
+      "summary": "Artsy lead for a José Patrício artwork was converted into draft-only intake without price, availability, reservation, payment, discount, or logistics claims.",
+      "evidence": "areas/zipper/inbox/email-intake/20260617T213849Z-artsy-germano-jose-patricio.md"
+    }
+  ],
+  "incidents": [
+    {
+      "domain": "Mordomo",
+      "severity": "attention",
+      "summary": "Nightly Ops saw timeout in LC Mordomo OS whatsapp_context_engine; later runtime truth showed no current non-ok cron status. Treat as localized degradation/stale-metadata reconciliation, not a global gateway incident.",
+      "blocked_actions": ["restart gateway", "change schedule", "alter external messaging behavior"]
+    },
+    {
+      "domain": "LK Atendimento",
+      "severity": "attention",
+      "summary": "Chatwoot trigger disable attempt was failed_or_not_verified and message delete/cancel receipt has mixed HTTP 200 vs semantic result. Needs readback before declaring resolved.",
+      "blocked_actions": ["broad Chatwoot automation mutation", "customer-facing send"]
+    },
+    {
+      "domain": "Zipper / Google Workspace",
+      "severity": "attention",
+      "summary": "2FA alert for seven Zipper users could not be fully audited through Admin Reports API due insufficient scope; do not route through LK credentials.",
+      "blocked_actions": ["admin change", "credential/scope change without approval"]
+    }
+  ],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "LK Stock recurring POS alert problem must be fixed at origin/database level, not SKU-by-SKU every day.",
+      "scope": "local/read-only Stock OS preflight and database hygiene; no public availability promise from skeleton data",
+      "evidence": "areas/lk/sub-areas/stock/receipts/lk-pos-restock-alert-origin-preflight-fix-20260617.md"
+    },
+    {
+      "decision": "LK newsletter image/copy corrections were authorized for draft/template correction only, not live send/schedule.",
+      "scope": "Klaviyo campaign Draft update and readback",
+      "evidence": "areas/lk/sub-areas/content/receipts/klaviyo-curadoria-inverno-tons-terrosos-hero-image-replace-20260617.json"
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "pattern": "Correct local data origin before alerting humans repeatedly about the same stock miss.",
+      "exact_scope": "LK POS restock alert local preflight and local database promotion when safe",
+      "exclusions": ["external customer message", "Shopify/Tiny write", "public availability claim"]
+    },
+    {
+      "pattern": "Shopify upstream/metafields are the durable correction path for GMC product data.",
+      "exact_scope": "read-only audit and approval packet preparation",
+      "exclusions": ["batch Shopify writes", "Merchant direct patch as default", "MPN/SKU/status/price/stock/theme/campaign mutations"]
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Brain Health decisions_not_linked can be autohealed as A1 when the fix is a local MAPA link and health check passes.",
+      "recommended_destination": "Daily Intelligence / Brain Health routine",
+      "action_applied": true,
+      "verification_needed": "Keep health FAIL=0/WARN=0 after patch."
+    },
+    {
+      "learning": "Stock OS skeleton rows are local search/crosswalk scaffolding, not proof of stock availability.",
+      "recommended_destination": "lk-stock skill and atendimento guardrail",
+      "action_applied": true,
+      "verification_needed": "Future agents must not use skeleton rows for customer availability claims."
+    },
+    {
+      "learning": "Chatwoot automation changes require final-state readback; HTTP status alone is insufficient.",
+      "recommended_destination": "LK Atendimento routine/readback checklist",
+      "action_applied": false,
+      "blocker": "Needs safe follow-up and readback."
+    },
+    {
+      "learning": "Google Workspace/Zipper security alerts must stay in Zipper context and not be handled with LK credentials.",
+      "recommended_destination": "multiempresa routing / Google Workspace security routine",
+      "action_applied": false,
+      "blocker": "Admin Reports scope or Admin Console access needed."
+    }
+  ],
+  "autonomy_pattern_candidates": {
+    "may_become_A0_A1_when_safe": [
+      "Local Brain MAPA/index link repair after Brain Health WARN",
+      "Read-only/local Stock OS preflight and local skeleton backfill with no public availability claim",
+      "Draft-only/internal preview updates where explicit draft scope is recorded"
+    ],
+    "must_remain_A3_A4": [
+      "Customer/collector/client WhatsApp or email sends",
+      "Shopify/Tiny/GMC/Klaviyo/Meta/Supabase writes beyond scoped approval",
+      "Google Workspace admin/security changes",
+      "Docker/VPS/gateway/restart/deploy/cron schedule or delivery changes",
+      "Price, availability, reservation, negotiation, payment or logistics promises"
+    ]
+  },
+  "pending_decisions_for_lucas": [
+    "Choose/approve handling for Zipper/Mordomo P0 decision inbox items before any external replies.",
+    "Approve Google Workspace Zipper Admin Console/scope path to audit 2FA users.",
+    "Approve canonical rules for LK Growth upstream Shopify fields before batch product-data writes.",
+    "Approve or reject live send/schedule for LK Klaviyo newsletter after visual/content review."
+  ],
+  "safe_next_actions": [
+    "Investigate Mordomo timeout locally/read-only and classify stale metadata vs real performance issue.",
+    "Prepare a concise decision queue for Zipper P0 items without sending externally.",
+    "Read back Chatwoot trigger state and message state before declaring Atendimento resolved.",
+    "Monitor next LK POS restock alerts for false 'stock not found' regressions."
+  ],
+  "blocked_actions_requiring_approval": [
+    "Any WhatsApp/email/customer/collector/supplier send",
+    "Any Shopify/Tiny/GMC/Klaviyo/Meta/Supabase/database write beyond already scoped draft updates",
+    "Any Docker/VPS/gateway/restart/deploy/cron mutation",
+    "Any Google Workspace admin/security mutation or credential/scope change"
+  ],
+  "cron_and_delivery_truth": {
+    "generated": true,
+    "delivered_to_user": false,
+    "normal_delivery": "local/silent",
+    "cron_source": "cronjob list plus runtime truth report",
+    "overall_scheduler_interpretation": "healthy with localized Mordomo attention",
+    "actionable_stdout": true,
+    "silent_ok_eligible": false,
+    "reason_not_silent": "attention items and learning handoff package should be visible to downstream 02h loop"
+  },
+  "sources": [
+    "reports/daily-consolidation/2026-06-17.md",
+    "reports/hermes-daily-digest/2026-06-17.md",
+    "reports/nightly-ops-audit/2026-06-17.md",
+    "reports/hermes-continuous-improvement/2026-06-17.md",
+    "reports/hermes-learning-ledger/2026-06-17.md",
+    "reports/governance/runtime-truth-reconciler-2026-06-17.md",
+    "reports/brain-health-check-2026-06-17-02h.json",
+    "reports/brain-improvement-score-2026-06-17-02h.md",
+    "reports/memory-hygiene/2026-06-17.json",
+    "areas/operacoes/decision-inbox/whatsapp-17h-digest-20260617.md",
+    "areas/lk/sub-areas/stock/receipts/lk-pos-restock-alert-origin-preflight-fix-20260617.md",
+    "areas/lk/sub-areas/stock/receipts/lk-stock-os-active-shopify-database-backfill-20260617.md",
+    "areas/lk/sub-areas/growth/reports/gmc/shopify-upstream-gmc-fields-20260617/REPORT-SHOPIFY-UPSTREAM-GMC-FIELDS-20260617.md",
+    "areas/lk/sub-areas/growth/approval-packets/product-data-upstream-full-correction-20260617/APPROVAL-PACKET-CORRECAO-TOTAL-UPSTREAM-SHOPIFY-20260617.md",
+    "areas/lk/sub-areas/content/receipts/klaviyo-curadoria-inverno-tons-terrosos-hero-image-replace-20260617.json",
+    "areas/lk/sub-areas/atendimento/receipts/20260617T201054Z-chatwoot-disable-avisar-enc-trigger.json",
+    "areas/lk/sub-areas/atendimento/receipts/20260617T201242Z-chatwoot-cancel-message-44893-marcela-147175.json",
+    "areas/zipper/inbox/email-intake/20260617T213849Z-artsy-germano-jose-patricio.md"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "raw_chat_transcripts_included": false,
+    "token_values_printed": false,
+    "pii_minimized": true,
+    "values_printed": false
+  }
+}

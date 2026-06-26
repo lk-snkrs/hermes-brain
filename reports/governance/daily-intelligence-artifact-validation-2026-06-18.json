@@ -1,0 +1,163 @@
+{
+  "checks": {
+    "brain_health_json": {
+      "exists": true,
+      "parse_ok": true,
+      "path": "reports/brain-health-check-2026-06-18-02h.json",
+      "type": "dict"
+    },
+    "brain_health_semantics": {
+      "available": true,
+      "fail_count": 0,
+      "warn_count": 0
+    },
+    "continuous_report": {
+      "checks": [
+        {
+          "any_of": [
+            "Status geral",
+            "Status executivo",
+            "Status:"
+          ],
+          "present": true
+        },
+        {
+          "any_of": [
+            "Como Hermes se auto-melhorou",
+            "Auto-melhorias",
+            "nenhuma mudança local necessária"
+          ],
+          "present": true
+        },
+        {
+          "any_of": [
+            "Excluído explicitamente",
+            "Não houve",
+            "Guardrails"
+          ],
+          "present": true
+        }
+      ],
+      "exists": true,
+      "non_empty": true,
+      "path": "reports/hermes-continuous-improvement/2026-06-18.md",
+      "required_checks_ok": true
+    },
+    "critical_json_artifacts": {
+      "artifacts_checked": 9,
+      "checks": [
+        {
+          "exists": true,
+          "parse_ok": true,
+          "path": "reports/brain-health-check-2026-06-18-02h.json",
+          "type": "dict"
+        },
+        {
+          "exists": true,
+          "parse_ok": true,
+          "path": "reports/brain-improvement-score-2026-06-18-02h.json",
+          "type": "dict"
+        },
+        {
+          "exists": true,
+          "parse_ok": true,
+          "path": "reports/daily-consolidation/latest-handoff.json",
+          "type": "dict"
+        },
+        {
+          "exists": true,
+          "parse_ok": true,
+          "path": "reports/governance/daily-intelligence-artifact-validation-2026-06-18.json",
+          "type": "dict"
+        },
+        {
+          "exists": true,
+          "parse_ok": true,
+          "path": "reports/governance/daily-postrun-brain-health-2026-06-18.json",
+          "type": "dict"
+        },
+        {
+          "exists": true,
+          "parse_ok": true,
+          "path": "reports/governance/daily-preflight-brain-health-latest.json",
+          "type": "dict"
+        },
+        {
+          "exists": true,
+          "parse_ok": true,
+          "path": "reports/governance/nightly-governance-artifacts-2026-06-18.json",
+          "type": "dict"
+        },
+        {
+          "exists": true,
+          "parse_ok": true,
+          "path": "reports/governance/nightly-governance-artifacts-latest.json",
+          "type": "dict"
+        },
+        {
+          "exists": true,
+          "parse_ok": true,
+          "path": "reports/hermes-daily-score/2026-06-18.json",
+          "type": "dict"
+        }
+      ],
+      "malformed": [],
+      "malformed_count": 0,
+      "values_printed": false
+    },
+    "learning_ledger": {
+      "checks": [
+        {
+          "any_of": [
+            "Padrão aprendido",
+            "Learning",
+            "aprend"
+          ],
+          "present": true
+        },
+        {
+          "any_of": [
+            "Autonomia",
+            "A0",
+            "A1"
+          ],
+          "present": true
+        }
+      ],
+      "exists": true,
+      "non_empty": true,
+      "path": "reports/hermes-learning-ledger/2026-06-18.md",
+      "required_checks_ok": true
+    },
+    "score_json": {
+      "exists": true,
+      "parse_ok": true,
+      "path": "reports/brain-improvement-score-2026-06-18-02h.json",
+      "type": "dict"
+    },
+    "score_semantics": {
+      "available": true,
+      "has_dimensions": true,
+      "has_overall_score": true,
+      "overall_score": 100,
+      "values_printed_false_or_absent": true
+    },
+    "secret_scan": {
+      "files_scanned": 5,
+      "files_with_hits": [],
+      "high_confidence_token_hits": 0,
+      "sensitive_field_literal_hits": 0,
+      "values_printed": false
+    }
+  },
+  "date": "2026-06-18",
+  "failures": [],
+  "generated_at": "2026-06-18T05:09:51.308800+00:00",
+  "guardrails": {
+    "local_only": true,
+    "no_external_writes": true,
+    "values_printed": false
+  },
+  "ok": true,
+  "schema": "lc_hermes_daily_intelligence_artifact_validation.v1"
+}

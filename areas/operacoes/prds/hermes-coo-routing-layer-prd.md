@@ -143,37 +143,66 @@ Usar quando:
 - há regras de negócio ou guardrails;
 - Lucas está definindo como a operação deve funcionar.
 
+### Hermes Council
+
+Usar automaticamente quando a solicitação envolver decisão estratégica, alto impacto, A3/A4, marca, cliente, dinheiro, produção, infraestrutura, dados ou trade-off real — mesmo que Lucas não diga explicitamente `council`.
+
+Também usar quando Lucas disser:
+- `council this` / `run the council`;
+- `war room this`;
+- `pressure-test this`;
+- `debate this`;
+- “faz sentido?”, “vale a pena?”, “vamos implementar?”, “qual caminho?”, quando houver decisão relevante.
+
+Defaults aprovados por Lucas em 2026-05-13:
+- nome oficial: **Hermes Council**;
+- resposta Telegram curta por padrão; relatório completo só para War Room/alta complexidade;
+- papéis fixos: COO/operação, CFO/unit economics, Cliente/Marca, Red Team, Síntese/decisor;
+- em LK, separar visão **premium brand** de **performance/ROI**.
+
+Guardrail: Council recomenda, mas não aprova A3/A4. Se a decisão exigir produção, fonte da verdade, cliente, dinheiro, segredo, infraestrutura ou envio externo, terminar com plano + rollback + approval packet inline.
+
 ### Subagentes / delegation
 
 Usar quando:
 - há subtarefas paralelas independentes;
 - pesquisa/revisão pesada pode contaminar o contexto principal;
-- é útil ter revisor separado.
+- é útil ter revisor separado;
+- um War Room é complexo o suficiente para papéis independentes.
 
 Não usar para:
 - tarefas que precisam de pergunta ao Lucas;
 - side-effects externos sem verificação;
-- missões duráveis que devem sobreviver à sessão.
+- missões duráveis que devem sobreviver à sessão;
+- Council simples que cabe em resposta curta no Telegram.
 
 ## 7. Guardrails de aprovação
 
-Hermes pode executar autonomamente:
-- leitura local;
-- documentação/Brain;
-- criação de PRD/rotina/skill;
-- secret scan;
-- checks read-only;
+Referência operacional: `areas/operacoes/rotinas/hermes-autonomy-ladder.md`.
+
+Hermes deve executar autonomamente quando a ação cair em A0/A1:
+- leitura local, web pública e APIs read-only já autorizadas;
+- consulta a Doppler para usar secrets em processo, sem imprimir valores;
+- SSH/host/Docker read-only para inventário, status e logs sanitizados;
+- documentação/Brain, PRD, rotina, skill, relatório, CSV/JSON local e preview;
+- scripts locais, dry-runs, secret scan, lint, health check, readback e diff;
+- correção de `needs_data` quando for lookup/reconciliação/correção local read-only;
 - PRs documentais/Brain de baixo risco com checks limpos.
 
-Hermes deve pedir aprovação antes de:
-- restart/troca de imagem/compose/runtime;
-- Docker, VPS, Traefik, volumes, networks, root/SSH;
-- banco/migração/write em Supabase/Shopify/Tiny;
+Hermes pode executar sem nova aprovação quando cair em A2:
+- pacote específico já previewado e aprovado;
+- ajuste técnico necessário para o pacote aprovado, com snapshot/rollback quando aplicável;
+- atualização de prompt/cron existente que só aumenta observabilidade read-only ou reduz ruído, sem mudar entrega externa.
+
+Hermes deve preparar autonomamente, mas pedir aprovação antes do write final, quando cair em A3/A4:
+- restart/troca de imagem/compose/runtime/gateway/deploy;
+- mudança em Docker, VPS, Traefik, volumes, networks, root/SSH/permissões/firewall;
+- banco/migração/write não previewado em Supabase/Shopify/Tiny/Merchant;
 - envio de e-mail, WhatsApp, campanha, post, customer contact;
-- expor dashboard;
-- instalar skill com permissões sensíveis;
-- ativar workers reais em produção;
-- qualquer operação destrutiva ou irreversível.
+- expor dashboard público;
+- instalar/expandir permissão sensível;
+- ativar workers reais/daemon permanente em produção;
+- qualquer operação destrutiva, irreversível, externa, financeira, reputacional ou com blast radius desconhecido.
 
 ## 8. Critérios de aceite
 

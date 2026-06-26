@@ -1,0 +1,54 @@
+{
+  "summary": [
+    {
+      "check": "secrets",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "links",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "required_files",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "agent_files",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "area_maps",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "decisions_index",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "routines_index",
+      "FAIL": 0,
+      "WARN": 1
+    },
+    {
+      "check": "skill_references",
+      "FAIL": 0,
+      "WARN": 0
+    }
+  ],
+  "issues": [
+    {
+      "level": "WARN",
+      "kind": "routine_not_indexed",
+      "path": "areas/lk/rotinas/gmc-local-link-template-investigation-2026-06-04.md",
+      "detail": "missing from empresa/rotinas/_index.md"
+    }
+  ],
+  "fail_count": 0,
+  "warn_count": 1
+}

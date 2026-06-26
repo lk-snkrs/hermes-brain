@@ -1,0 +1,1288 @@
+{
+  "generated_at": "2026-05-14T21:58:50.630693+00:00",
+  "mode": "approved_read_only_google_youtube_channel_diagnostic",
+  "authorization": "Lucas chose option 1: Google & YouTube / Shopify channel read-only diagnostic.",
+  "shopify_publications": {
+    "status_code": 200,
+    "count": 8,
+    "publications": [
+      {
+        "name": "Online Store",
+        "id_suffix": "79413379294",
+        "supportsFuturePublishing": true,
+        "catalog": null
+      },
+      {
+        "name": "Facebook & Instagram",
+        "id_suffix": "79413412062",
+        "supportsFuturePublishing": false,
+        "catalog": null
+      },
+      {
+        "name": "Google & YouTube",
+        "id_suffix": "79416787166",
+        "supportsFuturePublishing": true,
+        "catalog": null
+      },
+      {
+        "name": "Point of Sale",
+        "id_suffix": "109845151966",
+        "supportsFuturePublishing": false,
+        "catalog": null
+      },
+      {
+        "name": "Linktree",
+        "id_suffix": "117740699870",
+        "supportsFuturePublishing": false,
+        "catalog": null
+      },
+      {
+        "name": "Pinterest",
+        "id_suffix": "122642792670",
+        "supportsFuturePublishing": false,
+        "catalog": null
+      },
+      {
+        "name": "TikTok",
+        "id_suffix": "155884159198",
+        "supportsFuturePublishing": false,
+        "catalog": null
+      },
+      {
+        "name": "Attentive",
+        "id_suffix": "165435605214",
+        "supportsFuturePublishing": false,
+        "catalog": null
+      }
+    ],
+    "google_youtube_publication": {
+      "name": "Google & YouTube",
+      "id_suffix": "79416787166"
+    }
+  },
+  "shopify_graphql_query_fields_relevant": [
+    {
+      "name": "app",
+      "args": [
+        "id"
+      ]
+    },
+    {
+      "name": "appByHandle",
+      "args": [
+        "handle"
+      ]
+    },
+    {
+      "name": "appByKey",
+      "args": [
+        "apiKey"
+      ]
+    },
+    {
+      "name": "appDiscountType",
+      "args": [
+        "functionId"
+      ]
+    },
+    {
+      "name": "appDiscountTypes",
+      "args": []
+    },
+    {
+      "name": "appDiscountTypesNodes",
+      "args": [
+        "first",
+        "after",
+        "last",
+        "before",
+        "reverse"
+      ]
+    },
+    {
+      "name": "appInstallation",
+      "args": [
+        "id"
+      ]
+    },
+    {
+      "name": "appInstallations",
+      "args": [
+        "first",
+        "after",
+        "last",
+        "before",
+        "reverse",
+        "sortKey",
+        "category",
+        "privacy"
+      ]
+    },
+    {
+      "name": "catalog",
+      "args": [
+        "id"
+      ]
+    },
+    {
+      "name": "catalogOperations",
+      "args": []
+    },
+    {
+      "name": "catalogs",
+      "args": [
+        "type",
+        "first",
+        "after",
+        "last",
+        "before",
+        "reverse",
+        "sortKey",
+        "query"
+      ]
+    },
+    {
+      "name": "catalogsCount",
+      "args": [
+        "type",
+        "query",
+        "limit"
+      ]
+    },
+    {
+      "name": "channel",
+      "args": [
+        "id"
+      ]
+    },
+    {
+      "name": "channels",
+      "args": [
+        "first",
+        "after",
+        "last",
+        "before",
+        "reverse"
+      ]
+    },
+    {
+      "name": "currentAppInstallation",
+      "args": []
+    },
+    {
+      "name": "financeAppAccessPolicy",
+      "args": []
+    },
+    {
+      "name": "market",
+      "args": [
+        "id"
+      ]
+    },
+    {
+      "name": "marketLocalizableResource",
+      "args": [
+        "resourceId"
+      ]
+    },
+    {
+      "name": "marketLocalizableResources",
+      "args": [
+        "resourceType",
+        "first",
+        "after",
+        "last",
+        "before",
+        "reverse"
+      ]
+    },
+    {
+      "name": "marketLocalizableResourcesByIds",
+      "args": [
+        "resourceIds",
+        "first",
+        "after",
+        "last",
+        "before",
+        "reverse"
+      ]
+    },
+    {
+      "name": "marketingActivities",
+      "args": [
+        "marketingActivityIds",
+        "remoteIds",
+        "utm",
+        "first",
+        "after",
+        "last",
+        "before",
+        "reverse",
+        "sortKey",
+        "query",
+        "savedSearchId"
+      ]
+    },
+    {
+      "name": "marketingActivity",
+      "args": [
+        "id"
+      ]
+    },
+    {
+      "name": "marketingEvent",
+      "args": [
+        "id"
+      ]
+    },
+    {
+      "name": "marketingEvents",
+      "args": [
+        "first",
+        "after",
+        "last",
+        "before",
+        "reverse",
+        "sortKey",
+        "query"
+      ]
+    },
+    {
+      "name": "markets",
+      "args": [
+        "type",
+        "first",
+        "after",
+        "last",
+        "before",
+        "reverse",
+        "sortKey",
+        "query"
+      ]
+    },
+    {
+      "name": "marketsResolvedValues",
+      "args": [
+        "buyerSignal"
+      ]
+    },
+    {
+      "name": "mobilePlatformApplication",
+      "args": [
+        "id"
+      ]
+    },
+    {
+      "name": "mobilePlatformApplications",
+      "args": [
+        "first",
+        "after",
+        "last",
+        "before",
+        "reverse"
+      ]
+    },
+    {
+      "name": "productFeed",
+      "args": [
+        "id"
+      ]
+    },
+    {
+      "name": "productFeeds",
+      "args": [
+        "first",
+        "after",
+        "last",
+        "before",
+        "reverse"
+      ]
+    },
+    {
+      "name": "productResourceFeedback",
+      "args": [
+        "id"
+      ]
+    },
+    {
+      "name": "publication",
+      "args": [
+        "id"
+      ]
+    },
+    {
+      "name": "publications",
+      "args": [
+        "catalogType",
+        "first",
+        "after",
+        "last",
+        "before",
+        "reverse"
+      ]
+    },
+    {
+      "name": "publicationsCount",
+      "args": [
+        "catalogType",
+        "limit"
+      ]
+    }
+  ],
+  "shopify_rest_readonly_probes": {
+    "publications.json?limit=250": {
+      "status_code": 200,
+      "top_level_keys": [
+        "publications"
+      ],
+      "count_hint": {
+        "publications": 15
+      },
+      "error": null
+    },
+    "product_listings.json?limit=5": {
+      "status_code": 404,
+      "top_level_keys": [
+        "errors"
+      ],
+      "count_hint": {},
+      "error": "Not Found"
+    },
+    "products.json?limit=1&status=active": {
+      "status_code": 200,
+      "top_level_keys": [
+        "products"
+      ],
+      "count_hint": {
+        "products": 1
+      },
+      "error": null
+    },
+    "webhooks.json?limit=250": {
+      "status_code": 200,
+      "top_level_keys": [
+        "webhooks"
+      ],
+      "count_hint": {
+        "webhooks": 9
+      },
+      "error": null
+    }
+  },
+  "merchant_primary_api_datasource": {
+    "status_code": 200,
+    "resource": {
+      "name": "accounts/5297679409/dataSources/10636492695",
+      "dataSourceId": "10636492695",
+      "displayName": "Content API",
+      "primaryProductDataSource": {
+        "feedLabel": "BR",
+        "contentLanguage": "pt",
+        "countries": [
+          "BR"
+        ],
+        "defaultRule": {
+          "takeFromDataSources": [
+            {
+              "self": true
+            }
+          ]
+        },
+        "destinations": [
+          {
+            "destination": "LOCAL_INVENTORY_ADS",
+            "state": "DISABLED"
+          },
+          {
+            "destination": "FREE_LOCAL_LISTINGS",
+            "state": "DISABLED"
+          },
+          {
+            "destination": "DISPLAY_ADS",
+            "state": "ENABLED"
+          },
+          {
+            "destination": "FREE_LISTINGS",
+            "state": "ENABLED"
+          },
+          {
+            "destination": "SHOPPING_ADS",
+            "state": "ENABLED"
+          }
+        ]
+      },
+      "input": "API"
+    }
+  },
+  "sample_sku_diagnostics": [
+    {
+      "sku": "01424-002-2",
+      "product_id": "online:pt:BR:01424-002-2",
+      "shopify_found": true,
+      "shopify_variant": {
+        "price": "8999.99",
+        "compareAtPrice": null,
+        "updatedAt": "2026-04-07T17:09:43Z",
+        "legacyResourceId": "44413386457310"
+      },
+      "shopify_product": {
+        "title": "Tênis Born Raised x Nike SB Dunk Low One Block At A Time Azul",
+        "status": "ACTIVE",
+        "handle": "born-x-raised-x-nike-sb-dunk-low-one-block-at-a-time",
+        "updatedAt": "2026-05-12T10:15:21Z",
+        "publishedOnGoogleYoutube": true,
+        "googlePublicationRecord": {
+          "isPublished": true,
+          "publishDate": "2026-04-17T17:54:12Z"
+        },
+        "published_publications": [
+          "Online Store",
+          "Facebook & Instagram",
+          "Linktree",
+          "Pinterest",
+          "TikTok",
+          "Point of Sale",
+          "Google & YouTube"
+        ]
+      },
+      "merchant_content_api": {
+        "status_code": 200,
+        "source": "api",
+        "price": {
+          "value": "5999.90",
+          "currency": "BRL"
+        },
+        "salePrice": null,
+        "title": "Tênis Born Raised x Nike SB Dunk Low One Block At A Time Azul",
+        "link": "https://lksneakers.com.br/products/born-x-raised-x-nike-sb-dunk-low-one-block-at-a-time?currency=BRL&country=BR&variant=44413386457310&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "offerId": "01424-002-2",
+        "top_level_keys": [
+          "ageGroup",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "channel",
+          "color",
+          "condition",
+          "contentLanguage",
+          "customAttributes",
+          "description",
+          "feedLabel",
+          "gender",
+          "googleProductCategory",
+          "gtin",
+          "id",
+          "imageLink",
+          "itemGroupId",
+          "kind",
+          "link",
+          "mpn",
+          "offerId",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "sizeSystem",
+          "sizeType",
+          "sizes",
+          "source",
+          "targetCountry",
+          "title"
+        ]
+      },
+      "merchant_productstatus": {
+        "status_code": 200,
+        "target_issues": [
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          },
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          },
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          }
+        ],
+        "destinationStatuses": [
+          {
+            "destination": "Shopping",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          },
+          {
+            "destination": "DisplayAds",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          },
+          {
+            "destination": "SurfacesAcrossGoogle",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          }
+        ]
+      },
+      "classification": "shopify_google_published_but_merchant_price_stale"
+    },
+    {
+      "sku": "553558140-7",
+      "product_id": "online:pt:BR:553558140-7",
+      "shopify_found": true,
+      "shopify_variant": {
+        "price": "1799.99",
+        "compareAtPrice": "1599.99",
+        "updatedAt": "2026-04-07T17:07:25Z",
+        "legacyResourceId": "44670918361310"
+      },
+      "shopify_product": {
+        "title": "Tênis Nike Air Jordan 1 Low Alternate Royal Toe Azul",
+        "status": "ACTIVE",
+        "handle": "air-jordan-1-low-royal-toe",
+        "updatedAt": "2026-05-13T20:50:37Z",
+        "publishedOnGoogleYoutube": true,
+        "googlePublicationRecord": {
+          "isPublished": true,
+          "publishDate": "2026-04-17T17:54:51Z"
+        },
+        "published_publications": [
+          "Online Store",
+          "Facebook & Instagram",
+          "Linktree",
+          "Pinterest",
+          "TikTok",
+          "Point of Sale",
+          "Google & YouTube"
+        ]
+      },
+      "merchant_content_api": {
+        "status_code": 200,
+        "source": "api",
+        "price": {
+          "value": "1499.99",
+          "currency": "BRL"
+        },
+        "salePrice": null,
+        "title": "Tênis Nike Air Jordan 1 Low Alternate Royal Toe Azul",
+        "link": "https://lksneakers.com.br/products/air-jordan-1-low-royal-toe?currency=BRL&country=BR&variant=44670918361310&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "offerId": "553558140-7",
+        "top_level_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "channel",
+          "color",
+          "condition",
+          "contentLanguage",
+          "costOfGoodsSold",
+          "customAttributes",
+          "description",
+          "feedLabel",
+          "gender",
+          "googleProductCategory",
+          "gtin",
+          "id",
+          "imageLink",
+          "itemGroupId",
+          "kind",
+          "link",
+          "mpn",
+          "offerId",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "sizeSystem",
+          "sizeType",
+          "sizes",
+          "source",
+          "targetCountry",
+          "title"
+        ]
+      },
+      "merchant_productstatus": {
+        "status_code": 200,
+        "target_issues": [
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          },
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          },
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          }
+        ],
+        "destinationStatuses": [
+          {
+            "destination": "Shopping",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          },
+          {
+            "destination": "DisplayAds",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          },
+          {
+            "destination": "SurfacesAcrossGoogle",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          }
+        ]
+      },
+      "classification": "shopify_google_published_but_merchant_price_stale"
+    },
+    {
+      "sku": "AQ9129-170-5",
+      "product_id": "online:pt:BR:AQ9129-170-5",
+      "shopify_found": true,
+      "shopify_variant": {
+        "price": "2749.99",
+        "compareAtPrice": "2449.90",
+        "updatedAt": "2026-04-07T17:04:29Z",
+        "legacyResourceId": "44986048282846"
+      },
+      "shopify_product": {
+        "title": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+        "status": "ACTIVE",
+        "handle": "tenis-air-jordan-4-retro-metallic-gold-branco",
+        "updatedAt": "2026-04-20T16:45:15Z",
+        "publishedOnGoogleYoutube": true,
+        "googlePublicationRecord": {
+          "isPublished": true,
+          "publishDate": "2026-04-17T17:55:37Z"
+        },
+        "published_publications": [
+          "Online Store",
+          "Facebook & Instagram",
+          "Pinterest",
+          "Linktree",
+          "TikTok",
+          "Point of Sale",
+          "Google & YouTube"
+        ]
+      },
+      "merchant_content_api": {
+        "status_code": 200,
+        "source": "api",
+        "price": {
+          "value": "2599.99",
+          "currency": "BRL"
+        },
+        "salePrice": null,
+        "title": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+        "link": "https://lksneakers.com.br/products/tenis-air-jordan-4-retro-metallic-gold-branco?currency=BRL&country=BR&variant=44986048282846&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "offerId": "AQ9129-170-5",
+        "top_level_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "channel",
+          "color",
+          "condition",
+          "contentLanguage",
+          "costOfGoodsSold",
+          "customAttributes",
+          "description",
+          "feedLabel",
+          "gender",
+          "googleProductCategory",
+          "gtin",
+          "id",
+          "imageLink",
+          "itemGroupId",
+          "kind",
+          "link",
+          "mpn",
+          "offerId",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "sizeSystem",
+          "sizeType",
+          "sizes",
+          "source",
+          "targetCountry",
+          "title"
+        ]
+      },
+      "merchant_productstatus": {
+        "status_code": 200,
+        "target_issues": [
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          },
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          },
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          }
+        ],
+        "destinationStatuses": [
+          {
+            "destination": "Shopping",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          },
+          {
+            "destination": "DisplayAds",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          },
+          {
+            "destination": "SurfacesAcrossGoogle",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          }
+        ]
+      },
+      "classification": "shopify_google_published_but_merchant_price_stale"
+    },
+    {
+      "sku": "AQ9129-170-7",
+      "product_id": "online:pt:BR:AQ9129-170-7",
+      "shopify_found": true,
+      "shopify_variant": {
+        "price": "3349.99",
+        "compareAtPrice": "2449.90",
+        "updatedAt": "2026-04-15T15:51:38Z",
+        "legacyResourceId": "44986048348382"
+      },
+      "shopify_product": {
+        "title": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+        "status": "ACTIVE",
+        "handle": "tenis-air-jordan-4-retro-metallic-gold-branco",
+        "updatedAt": "2026-04-20T16:45:15Z",
+        "publishedOnGoogleYoutube": true,
+        "googlePublicationRecord": {
+          "isPublished": true,
+          "publishDate": "2026-04-17T17:55:37Z"
+        },
+        "published_publications": [
+          "Online Store",
+          "Facebook & Instagram",
+          "Pinterest",
+          "Linktree",
+          "TikTok",
+          "Point of Sale",
+          "Google & YouTube"
+        ]
+      },
+      "merchant_content_api": {
+        "status_code": 200,
+        "source": "api",
+        "price": {
+          "value": "2599.99",
+          "currency": "BRL"
+        },
+        "salePrice": null,
+        "title": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+        "link": "https://lksneakers.com.br/products/tenis-air-jordan-4-retro-metallic-gold-branco?currency=BRL&country=BR&variant=44986048348382&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "offerId": "AQ9129-170-7",
+        "top_level_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "channel",
+          "color",
+          "condition",
+          "contentLanguage",
+          "costOfGoodsSold",
+          "customAttributes",
+          "description",
+          "feedLabel",
+          "gender",
+          "googleProductCategory",
+          "gtin",
+          "id",
+          "imageLink",
+          "itemGroupId",
+          "kind",
+          "link",
+          "mpn",
+          "offerId",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "sizeSystem",
+          "sizeType",
+          "sizes",
+          "source",
+          "targetCountry",
+          "title"
+        ]
+      },
+      "merchant_productstatus": {
+        "status_code": 200,
+        "target_issues": [
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          },
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          },
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          }
+        ],
+        "destinationStatuses": [
+          {
+            "destination": "Shopping",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          },
+          {
+            "destination": "DisplayAds",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          },
+          {
+            "destination": "SurfacesAcrossGoogle",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          }
+        ]
+      },
+      "classification": "shopify_google_published_but_merchant_price_stale"
+    },
+    {
+      "sku": "AQ9129-170-9",
+      "product_id": "online:pt:BR:AQ9129-170-9",
+      "shopify_found": true,
+      "shopify_variant": {
+        "price": "3349.99",
+        "compareAtPrice": "2449.90",
+        "updatedAt": "2026-04-07T17:04:29Z",
+        "legacyResourceId": "44986048413918"
+      },
+      "shopify_product": {
+        "title": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+        "status": "ACTIVE",
+        "handle": "tenis-air-jordan-4-retro-metallic-gold-branco",
+        "updatedAt": "2026-04-20T16:45:15Z",
+        "publishedOnGoogleYoutube": true,
+        "googlePublicationRecord": {
+          "isPublished": true,
+          "publishDate": "2026-04-17T17:55:37Z"
+        },
+        "published_publications": [
+          "Online Store",
+          "Facebook & Instagram",
+          "Pinterest",
+          "Linktree",
+          "TikTok",
+          "Point of Sale",
+          "Google & YouTube"
+        ]
+      },
+      "merchant_content_api": {
+        "status_code": 200,
+        "source": "api",
+        "price": {
+          "value": "2599.99",
+          "currency": "BRL"
+        },
+        "salePrice": null,
+        "title": "Tênis Nike Air Jordan 4 Retro Metallic Gold Branco",
+        "link": "https://lksneakers.com.br/products/tenis-air-jordan-4-retro-metallic-gold-branco?currency=BRL&country=BR&variant=44986048413918&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "offerId": "AQ9129-170-9",
+        "top_level_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "channel",
+          "color",
+          "condition",
+          "contentLanguage",
+          "costOfGoodsSold",
+          "customAttributes",
+          "description",
+          "feedLabel",
+          "gender",
+          "googleProductCategory",
+          "gtin",
+          "id",
+          "imageLink",
+          "itemGroupId",
+          "kind",
+          "link",
+          "mpn",
+          "offerId",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "sizeSystem",
+          "sizeType",
+          "sizes",
+          "source",
+          "targetCountry",
+          "title"
+        ]
+      },
+      "merchant_productstatus": {
+        "status_code": 200,
+        "target_issues": [
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          },
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          },
+          {
+            "code": "price_updated",
+            "attributeName": "price",
+            "detail": "Your product's price value was automatically updated to match the data on your online store",
+            "description": "Automatic updates: Mismatched price",
+            "servability": "unaffected",
+            "resolution": "merchant_action"
+          }
+        ],
+        "destinationStatuses": [
+          {
+            "destination": "Shopping",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          },
+          {
+            "destination": "DisplayAds",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          },
+          {
+            "destination": "SurfacesAcrossGoogle",
+            "channel": "online",
+            "status": "approved",
+            "approvedCountries": [
+              "BR"
+            ]
+          }
+        ]
+      },
+      "classification": "shopify_google_published_but_merchant_price_stale"
+    },
+    {
+      "sku": "GW3773-39",
+      "product_id": "online:pt:BR:GW3773-39",
+      "shopify_found": true,
+      "shopify_variant": {
+        "price": "3799.99",
+        "compareAtPrice": "1699.99",
+        "updatedAt": "2026-04-01T17:48:22Z",
+        "legacyResourceId": "44265020457182"
+      },
+      "shopify_product": {
+        "title": "Tênis Yeezy Boost 350 V2 MX Oat Multicolor",
+        "status": "ACTIVE",
+        "handle": "yeezy-boost-350-v2-mx-oat",
+        "updatedAt": "2026-04-17T17:51:39Z",
+        "publishedOnGoogleYoutube": true,
+        "googlePublicationRecord": {
+          "isPublished": true,
+          "publishDate": "2026-04-17T17:51:38Z"
+        },
+        "published_publications": [
+          "Online Store",
+          "Facebook & Instagram",
+          "Linktree",
+          "Pinterest",
+          "TikTok",
+          "Point of Sale",
+          "Google & YouTube"
+        ]
+      },
+      "merchant_content_api": {
+        "status_code": 200,
+        "source": "api",
+        "price": {
+          "value": "3799.99",
+          "currency": "BRL"
+        },
+        "salePrice": null,
+        "title": "Tênis Yeezy Boost 350 V2 MX Oat Multicolor",
+        "link": "https://lksneakers.com.br/products/yeezy-boost-350-v2-mx-oat?currency=BRL&country=BR&variant=44265020457182&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "offerId": "GW3773-39",
+        "top_level_keys": [
+          "ageGroup",
+          "autoPricingMinPrice",
+          "availability",
+          "brand",
+          "canonicalLink",
+          "channel",
+          "color",
+          "condition",
+          "contentLanguage",
+          "costOfGoodsSold",
+          "customAttributes",
+          "description",
+          "feedLabel",
+          "gender",
+          "googleProductCategory",
+          "gtin",
+          "id",
+          "imageLink",
+          "itemGroupId",
+          "kind",
+          "link",
+          "mpn",
+          "offerId",
+          "price",
+          "productTypes",
+          "shipping",
+          "shippingWeight",
+          "sizeSystem",
+          "sizeType",
+          "sizes",
+          "source",
+          "targetCountry",
+          "title"
+        ]
+      },
+      "merchant_productstatus": {
+        "status_code": 200,
+        "target_issues": [
+          {
+            "code": "landing_page_error",
+            "attributeName": "link",
+            "detail": "Ensure your product page can be accessed from desktop and mobile devices and is not restricted from Google crawling",
+            "description": "Product page unavailable",
+            "servability": "disapproved",
+            "resolution": "merchant_action"
+          },
+          {
+            "code": "landing_page_error",
+            "attributeName": "link",
+            "detail": "Ensure your product page can be accessed from desktop and mobile devices and is not restricted from Google crawling",
+            "description": "Product page unavailable",
+            "servability": "disapproved",
+            "resolution": "merchant_action"
+          },
+          {
+            "code": "landing_page_error",
+            "attributeName": "link",
+            "detail": "Ensure your product page can be accessed from desktop and mobile devices and is not restricted from Google crawling",
+            "description": "Product page unavailable",
+            "servability": "disapproved",
+            "resolution": "merchant_action"
+          }
+        ],
+        "destinationStatuses": [
+          {
+            "destination": "Shopping",
+            "channel": "online",
+            "status": "disapproved",
+            "disapprovedCountries": [
+              "BR"
+            ]
+          },
+          {
+            "destination": "DisplayAds",
+            "channel": "online",
+            "status": "disapproved",
+            "disapprovedCountries": [
+              "BR"
+            ]
+          },
+          {
+            "destination": "SurfacesAcrossGoogle",
+            "channel": "online",
+            "status": "disapproved",
+            "disapprovedCountries": [
+              "BR"
+            ]
+          }
+        ]
+      },
+      "classification": "review"
+    }
+  ],
+  "counts": {
+    "sample_count": 6,
+    "shopify_found": 6,
+    "published_on_google_youtube": 6,
+    "merchant_price_stale_vs_shopify_price": 5,
+    "merchant_price_issue_instances": 18
+  },
+  "interpretation": [
+    "All sampled SKUs are active/found and published on Shopify Google & YouTube, so channel eligibility is not the blocker at publication level.",
+    "Merchant final Content API price remains stale vs Shopify current price for sampled SKUs; this points to Google & YouTube sync/output state or Merchant source merge, not Shopify catalog price itself.",
+    "Shopify API exposes some app/query surfaces, but installation/config details were not enough to inspect Google channel sync settings safely.",
+    "Shopify channel query confirms Google & YouTube channel handle `google` with product count 1810 and an ACTIVE AppCatalog; productFeeds query returns 0 nodes, so feed/sync diagnostics are not exposed as ProductFeed records through this token.",
+    "Shopify productResourceFeedback is access-denied without `read_resource_feedbacks` / sales-channel app scope; the current token can verify publication/catalog state but not Google channel item-level sync feedback."
+  ],
+  "next_checklist_ui_readonly": [
+    "Shopify Admin > Sales channels > Google & YouTube: abrir product sync/status/feed diagnostics.",
+    "Filtrar pelos SKUs amostra e confirmar se o app mostra preço antigo, erro de sync, pending review ou last synced timestamp.",
+    "Merchant Center > Products > Data sources: confirmar se DS 10636492695 aparece como Google & YouTube/Content API channel e se há regra/attribute source para price.",
+    "Merchant Center > Automatic improvements > Item updates: manter ligado por enquanto; só alterar com packet separado.",
+    "Se UI mostrar botão de resync/reprocess em Google & YouTube, preparar plano com screenshots + rollback/monitor antes de qualquer execução."
+  ],
+  "not_performed": [
+    "Shopify write",
+    "Shopify app/channel config change",
+    "Google & YouTube resync button",
+    "Merchant write",
+    "ProductInputs PATCH",
+    "Content API write",
+    "data source update/delete",
+    "automatic item updates setting change",
+    "feed upload/fetchNow",
+    "Tiny write",
+    "campaign/send/contact"
+  ],
+  "shopify_channel_catalog_evidence": {
+    "channels_count": 8,
+    "google_youtube_channel": {
+      "id": "gid://shopify/Channel/79416787166",
+      "name": "Google & YouTube",
+      "handle": "google",
+      "supportsFuturePublishing": true,
+      "productsCount": {
+        "count": 1810
+      },
+      "app": {
+        "title": "Google & YouTube",
+        "handle": "google",
+        "id": "gid://shopify/App/1780363"
+      }
+    },
+    "catalogs_count": 9,
+    "google_youtube_catalog": {
+      "id": "gid://shopify/AppCatalog/40883847390",
+      "title": "Channel Catalog 79416787166 for Google",
+      "status": "ACTIVE",
+      "publication": {
+        "id": "gid://shopify/Publication/79416787166",
+        "name": "Google & YouTube"
+      }
+    },
+    "productFeeds_count": 0,
+    "productFeeds_nodes": [],
+    "productResourceFeedback_probe": {
+      "available": false,
+      "error": "Access denied for productResourceFeedback field. Required access: `read_resource_feedbacks` access scope. Also: App must be configured to use the Storefront API or as a Sales Channel."
+    }
+  }
+}

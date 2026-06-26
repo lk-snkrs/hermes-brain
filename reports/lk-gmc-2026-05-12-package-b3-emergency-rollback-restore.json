@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-12T15:20:01.281376+00:00",
+  "status": "gmc_package_b3_emergency_rollback_restored_verified",
+  "source_labels": [
+    "fact_merchant_center",
+    "rollback_execution"
+  ],
+  "summary": {
+    "mode": "emergency_rollback_restore_after_b3_same_id_preview_error",
+    "records_total": 854,
+    "to_restore_absent_before": 0,
+    "already_present_before": 854,
+    "restore_ok": 0,
+    "restore_failed": 0,
+    "merchant_products_before_restore": 23147,
+    "merchant_products_after_verify": 23147,
+    "verified_present_after": 854,
+    "still_missing_count": 0,
+    "still_missing_sample": [],
+    "private_audit_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-12-package-b3-emergency-rollback-restore.json"
+  },
+  "not_touched": [
+    "shopify_write",
+    "feed",
+    "database",
+    "campaign_or_external_send",
+    "local_channel",
+    "pos_inventory",
+    "google_business_profile"
+  ]
+}

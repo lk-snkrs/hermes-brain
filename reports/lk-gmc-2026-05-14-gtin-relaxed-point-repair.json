@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-05-14T17:14:36.961690+00:00",
+  "rollback": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-gtin-relaxed-point-repair-rollback-20260514T171220Z.json",
+  "results": [
+    {
+      "product_id": "online:pt:BR:1203A655-100-7",
+      "status": "patched",
+      "attrs": {
+        "gtins": [
+          "197298534666"
+        ]
+      },
+      "response": {
+        "name": "accounts/5297679409/productInputs/pt~BR~1203A655-100-7",
+        "offerId": "1203A655-100-7"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FN4193100-2",
+      "status": "patched",
+      "attrs": {
+        "gtins": [
+          "47042612"
+        ]
+      },
+      "response": {
+        "name": "accounts/5297679409/productInputs/pt~BR~FN4193100-2",
+        "offerId": "FN4193100-2"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FN5880-001-1",
+      "status": "patched",
+      "attrs": {
+        "gtins": [
+          "196977847226"
+        ]
+      },
+      "response": {
+        "name": "accounts/5297679409/productInputs/pt~BR~FN5880-001-1",
+        "offerId": "FN5880-001-1"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:FN5880-001-3",
+      "status": "patched",
+      "attrs": {
+        "gtins": [
+          "196977847226"
+        ]
+      },
+      "response": {
+        "name": "accounts/5297679409/productInputs/pt~BR~FN5880-001-3",
+        "offerId": "FN5880-001-3"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:HJ3386-300-8",
+      "status": "patched",
+      "attrs": {
+        "gtins": [
+          "197601222648"
+        ]
+      },
+      "response": {
+        "name": "accounts/5297679409/productInputs/pt~BR~HJ3386-300-8",
+        "offerId": "HJ3386-300-8"
+      }
+    }
+  ],
+  "verify": [
+    {
+      "product_id": "online:pt:BR:1203A655-100-7",
+      "expected": "197298534666",
+      "content_gtin": "197298534666",
+      "merchant_gtins": [
+        "197298534666"
+      ],
+      "match": true
+    },
+    {
+      "product_id": "online:pt:BR:FN4193100-2",
+      "expected": "47042612",
+      "content_gtin": "47042612",
+      "merchant_gtins": [
+        "47042612"
+      ],
+      "match": true
+    },
+    {
+      "product_id": "online:pt:BR:FN5880-001-1",
+      "expected": "196977847226",
+      "content_gtin": "196977847226",
+      "merchant_gtins": [
+        "196977847226"
+      ],
+      "match": true
+    },
+    {
+      "product_id": "online:pt:BR:FN5880-001-3",
+      "expected": "196977847226",
+      "content_gtin": "196977847226",
+      "merchant_gtins": [
+        "196977847226"
+      ],
+      "match": true
+    },
+    {
+      "product_id": "online:pt:BR:HJ3386-300-8",
+      "expected": "197601222648",
+      "content_gtin": "197601222648",
+      "merchant_gtins": [
+        "197601222648"
+      ],
+      "match": true
+    }
+  ]
+}

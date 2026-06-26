@@ -13,7 +13,9 @@ empresa/
 
 ## Função desta camada
 
-A camada `empresa/` não substitui as áreas. Ela organiza informações que atravessam LK, Zipper, SPITI, Operações, Governança e Tecnologia.
+A camada `empresa/` é a ponte entre a Grande Mente e as áreas. Ela não substitui LK, Zipper, SPITI, Operações, Governança ou Tecnologia; ela organiza o que atravessa mais de uma frente e mantém a hierarquia global.
+
+Referência de organograma: `empresa/contexto/organograma-operacional-hermes-brain.md`.
 
 Use `empresa/` para:
 

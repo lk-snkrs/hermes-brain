@@ -1,0 +1,225 @@
+{
+  "active": [],
+  "active_count": 0,
+  "alerts": {
+    "271525f7aad957b2": {
+      "alert": {
+        "detail": {
+          "job": "LK GMC Review read-only mandatory delivery",
+          "registry": "/opt/data/profiles/lk-growth/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "271525f7aad957b2",
+      "first_seen": "2026-06-08T21:15:42.505777+00:00",
+      "last_seen": "2026-06-09T00:57:39.533917+00:00",
+      "resolved_at": "2026-06-09T00:59:57.047372+00:00",
+      "seen_count": 11,
+      "status": "resolved"
+    },
+    "360f950219d318dc": {
+      "alert": {
+        "detail": {
+          "job": "Zipper OS vendas 09h WhatsApp/email",
+          "registry": "/opt/data/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "360f950219d318dc",
+      "first_seen": "2026-06-24T05:01:43.227288+00:00",
+      "last_seen": "2026-06-24T05:01:43.227288+00:00",
+      "resolved_at": "2026-06-25T05:02:16.932783+00:00",
+      "seen_count": 1,
+      "status": "resolved"
+    },
+    "46863d9b8c70d943": {
+      "alert": {
+        "files": [
+          "/opt/data/config.yaml",
+          "/opt/data/hermes_bruno_ingest/hermes-brain/CHANGELOG.md"
+        ],
+        "high_confidence": 0,
+        "sensitive_literals": 2,
+        "type": "secret_scan_hits"
+      },
+      "fingerprint": "46863d9b8c70d943",
+      "first_seen": "2026-06-08T21:15:42.505777+00:00",
+      "last_seen": "2026-06-08T21:20:21.056984+00:00",
+      "resolved_at": "2026-06-08T21:25:47.277689+00:00",
+      "seen_count": 4,
+      "status": "resolved"
+    },
+    "4d07a40ae3ab760d": {
+      "alert": {
+        "files": [
+          "/opt/data/config.yaml"
+        ],
+        "high_confidence": 0,
+        "sensitive_literals": 1,
+        "type": "secret_scan_hits"
+      },
+      "fingerprint": "4d07a40ae3ab760d",
+      "first_seen": "2026-06-08T21:25:47.277689+00:00",
+      "last_seen": "2026-06-09T00:04:26.532686+00:00",
+      "resolved_at": "2026-06-09T00:35:25.048773+00:00",
+      "seen_count": 4,
+      "status": "resolved"
+    },
+    "556f1831d90173b2": {
+      "alert": {
+        "detail": {
+          "job": "LK Stock Tiny sharded full sync nightly read-only",
+          "registry": "/opt/data/profiles/lk-stock/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "556f1831d90173b2",
+      "first_seen": "2026-06-14T05:01:42.995784+00:00",
+      "last_seen": "2026-06-14T05:01:42.995784+00:00",
+      "resolved_at": "2026-06-15T05:01:51.362651+00:00",
+      "seen_count": 1,
+      "status": "resolved"
+    },
+    "7e8ff281b6c00b7e": {
+      "alert": {
+        "profiles": [
+          {
+            "missing": 5,
+            "missing_names": [
+              "GOOGLE_CLIENT_ID",
+              "GOOGLE_CLIENT_SECRET",
+              "GOOGLE_REFRESH_TOKEN_LK_CONTENT",
+              "GOOGLE_REFRESH_TOKEN",
+              "LK_CONTENT_CALENDAR_ID"
+            ],
+            "profile": "lk-content"
+          }
+        ],
+        "type": "doppler_expected_missing"
+      },
+      "fingerprint": "7e8ff281b6c00b7e",
+      "first_seen": "2026-06-08T21:18:30.007604+00:00",
+      "last_seen": "2026-06-09T00:04:26.532686+00:00",
+      "resolved_at": "2026-06-09T00:35:25.048773+00:00",
+      "seen_count": 6,
+      "status": "resolved"
+    },
+    "84d84b9aa41a2340": {
+      "alert": {
+        "detail": {
+          "job": "LC Mordomo OS whatsapp_context_engine",
+          "registry": "/opt/data/profiles/mordomo/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "84d84b9aa41a2340",
+      "first_seen": "2026-06-17T05:01:59.080389+00:00",
+      "last_seen": "2026-06-17T05:01:59.080389+00:00",
+      "resolved_at": "2026-06-18T05:02:05.020792+00:00",
+      "seen_count": 1,
+      "status": "resolved"
+    },
+    "86135f8038ac821e": {
+      "alert": {
+        "issues": [
+          "reminder_health_not_pass",
+          "reminder_ingress_open_needed"
+        ],
+        "type": "nightly_self_improvement_regression_attention"
+      },
+      "fingerprint": "86135f8038ac821e",
+      "first_seen": "2026-06-15T05:01:51.362651+00:00",
+      "last_seen": "2026-06-16T05:01:30.703158+00:00",
+      "resolved_at": "2026-06-17T05:01:59.080389+00:00",
+      "seen_count": 2,
+      "status": "resolved"
+    },
+    "877bf6b0ee5b379b": {
+      "alert": {
+        "detail": {
+          "job": "LK-TRENDS · Cloudflare email delivery",
+          "registry": "/opt/data/profiles/lk-trends/cron/jobs.json",
+          "status": "paused_by_lucas_after_bad_newsletter"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "877bf6b0ee5b379b",
+      "first_seen": "2026-06-16T05:01:30.703158+00:00",
+      "last_seen": "2026-06-16T05:01:30.703158+00:00",
+      "resolved_at": "2026-06-17T05:01:59.080389+00:00",
+      "seen_count": 1,
+      "status": "resolved"
+    },
+    "93ba340b85bac387": {
+      "alert": {
+        "artifact": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/daily-preflight-brain-health-latest.json",
+        "rc": 124,
+        "type": "brain_health_non_ok"
+      },
+      "fingerprint": "93ba340b85bac387",
+      "first_seen": "2026-06-19T05:02:27.208251+00:00",
+      "last_seen": "2026-06-23T05:01:56.159031+00:00",
+      "resolved_at": "2026-06-23T05:05:28.766159+00:00",
+      "seen_count": 2,
+      "status": "resolved"
+    },
+    "a6f30859ae125f02": {
+      "alert": {
+        "detail": {
+          "job": "LK Curadoria PDP maintenance quinzenal",
+          "registry": "/opt/data/profiles/lk-shopify/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "a6f30859ae125f02",
+      "first_seen": "2026-06-08T21:15:42.505777+00:00",
+      "last_seen": "2026-06-09T00:57:39.533917+00:00",
+      "resolved_at": "2026-06-09T00:59:57.047372+00:00",
+      "seen_count": 11,
+      "status": "resolved"
+    },
+    "a9087abfad5f141f": {
+      "alert": {
+        "issues": [
+          "memory_daytime_not_silent_ok",
+          "memory_latest_status_action_required",
+          "memory_daytime_latest_status_action_required",
+          "memory_scorecard_status_attention"
+        ],
+        "type": "nightly_self_improvement_regression_attention"
+      },
+      "fingerprint": "a9087abfad5f141f",
+      "first_seen": "2026-06-20T05:01:45.272714+00:00",
+      "last_seen": "2026-06-21T05:03:50.545586+00:00",
+      "resolved_at": "2026-06-22T05:01:54.666196+00:00",
+      "seen_count": 3,
+      "status": "resolved"
+    },
+    "f9acad02865c915c": {
+      "alert": {
+        "detail": {
+          "job": "LK AI/GEO Endpoints Monitor",
+          "registry": "/opt/data/profiles/lk-growth/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "f9acad02865c915c",
+      "first_seen": "2026-06-12T22:48:29.853345+00:00",
+      "last_seen": "2026-06-13T05:01:48.332436+00:00",
+      "resolved_at": "2026-06-14T05:01:42.995784+00:00",
+      "seen_count": 4,
+      "status": "resolved"
+    }
+  },
+  "new_count": 0,
+  "recurring_count": 0,
+  "resolved_since_previous_count": 1,
+  "updated_at": "2026-06-25T05:02:16.932783+00:00",
+  "values_printed": false
+}

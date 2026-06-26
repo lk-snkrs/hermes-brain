@@ -1,0 +1,183 @@
+{
+  "operational_date": "2026-06-08",
+  "generated_at_utc": "2026-06-08T04:00:30Z",
+  "status": "validated",
+  "executive_summary": "Fechamento 01h consolidou LK Shopify, LK Growth/GMC, LK Content, Zipper, Hermes webhooks/governança e crons. Houve writes externos aprovados por especialistas/documentados em receipts, mas o fechamento em si não executou writes externos além do Brain Sync seguro.",
+  "material_changes": [
+    {
+      "domain": "Hermes Geral",
+      "summary": "Watchdogs Telegram/origin revisados para alertas acionáveis com silent-OK; Relatório Hermes Diário preservado como Telegram obrigatório."
+    },
+    {
+      "domain": "Hermes Webhooks",
+      "summary": "GitHub Actions configurado como fallback operacional para deploy Vercel Production do repo lucascimino/hermes-webhook; health checks públicos 200 OK."
+    },
+    {
+      "domain": "LK Shopify",
+      "summary": "Curadoria LK PDP ASICS GT-2160 + Wales Bonner validada em DEV e mergeada em Production via GitHub PR #35, com readback/QA e cache caveat."
+    },
+    {
+      "domain": "LK Growth/GMC",
+      "summary": "5 itens Nike Mind Local/LIA tiveram GTIN corrigido no GMC; Shopify não alterado; link_template permanece issue separada."
+    },
+    {
+      "domain": "LK Content",
+      "summary": "Calendar read-only/write smoke validados para eventos internos; Brand/Content Guide criado; 3 crons próprios ativados após aprovação; configuração de grupo Telegram ficou bloqueada."
+    },
+    {
+      "domain": "Zipper",
+      "summary": "Rascunho Gmail draft-only criado para lead Tidio interessado em Flávia Junqueira; nenhum envio executado."
+    }
+  ],
+  "incidents": [
+    {
+      "domain": "LK Content",
+      "category": "blocked_config",
+      "summary": "Configuração do grupo [LK] Produção de Conteúdo não foi aplicada por guardrails de profile config/.env/gateway."
+    },
+    {
+      "domain": "Hermes Webhooks",
+      "category": "native_git_link_blocked",
+      "summary": "Vercel Git link nativo permaneceu desconectado; fallback GitHub Actions está operacional."
+    }
+  ],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Relatório Hermes Diário deve continuar chegando no Telegram às 02:30 BRT; reduzir ruído via conteúdo dos watchdogs, não suprimindo entrega.",
+      "scope": "Hermes governance delivery UX"
+    },
+    {
+      "decision": "Aprovação `Merge` para Curadoria LK PDP ASICS GT-2160 + Wales Bonner em Production.",
+      "scope": "LK Shopify theme Production via GitHub PR/merge"
+    },
+    {
+      "decision": "Autorização de validação Google Calendar para LK Content, incluindo smoke de criação de evento interno.",
+      "scope": "LK Content calendar internal events only"
+    },
+    {
+      "decision": "Aprovação Gate 10 dos crons LK Content após cadence/kill criteria packet.",
+      "scope": "3 recurring planning/read-only jobs in lk-content profile"
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "approval_or_correction": "Production theme/Liquid da LK deve seguir GitHub PR/merge como fonte de verdade; Asset API direto só com hotfix emergencial explicitamente aprovado.",
+      "exact_scope": "Curadoria LK PDP ASICS GT-2160 + Wales Bonner Production merge",
+      "exclusions": [
+        "No direct Shopify Asset API Production write by default",
+        "No price/stock/customer promises"
+      ],
+      "learn_pattern": "Aprovação genérica de Production não equivale a aprovação de direct Asset API."
+    },
+    {
+      "approval_or_correction": "LK Content Calendar autonomy is narrow.",
+      "exact_scope": "Create internal LK Content events on lk@lksneakers.com.br when context is clear",
+      "exclusions": [
+        "external attendees",
+        "updates/deletes",
+        "non-LK calendars",
+        "broad recurring automations"
+      ],
+      "learn_pattern": "Calendar write smoke validates only a bounded A1/A2 operating pattern, not broad calendar autonomy."
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Production theme da LK deve usar GitHub PR/merge como fonte de verdade.",
+      "destination_recommended": "lk-shopify-readonly skill + Curadoria LK PDP routine",
+      "action_applied": "Subarea AGENTS policy and receipts updated",
+      "verification_needed": "Patch canonical skill/reference if not already linked"
+    },
+    {
+      "learning": "Relatório Hermes Diário é Telegram-obrigatório; watchdog noise is a format problem, not delivery suppression.",
+      "destination_recommended": "lucas-runtime-operations skill + watchdog routines",
+      "action_applied": "Scripts/skill/receipt revised",
+      "verification_needed": "Observe real next alerts"
+    },
+    {
+      "learning": "GMC GTIN success does not solve Local/LIA link_template issue.",
+      "destination_recommended": "LK Growth GMC troubleshooting routine",
+      "action_applied": "FINAL_SUCCESS records remaining issue",
+      "verification_needed": "Create/read-only packet for link_template"
+    },
+    {
+      "learning": "Zipper draft-only is safe for non-commercial acknowledgment, but sends/claims remain gated.",
+      "destination_recommended": "Zipper Tidio/Gmail intake playbook",
+      "action_applied": "Draft receipt created without send",
+      "verification_needed": "Lucas approval before sending"
+    }
+  ],
+  "autonomy_pattern_candidates": {
+    "may_become_a0_a1_if_safe": [
+      "Create internal LK Content calendar events with no attendees when source/context is clear and scoped to authorized LK calendar",
+      "Create Zipper draft-only acknowledgment without price/availability/reservation/commercial terms",
+      "Run read-only/runtime cron verification and concise governance receipts"
+    ],
+    "must_stay_a3_a4": [
+      "Shopify/GMC/theme Production writes without scoped approval",
+      "External email/WhatsApp sends",
+      "Gateway/config/restart for profile activation",
+      "Vercel native Git link/admin integration changes",
+      "Calendar events with external attendees or destructive updates/deletes"
+    ]
+  },
+  "pending_decisions_for_lucas": [
+    "Whether to connect Vercel native Git integration in dashboard or keep GitHub Actions fallback",
+    "Whether/when to execute profile-local Telegram group config for LK Content",
+    "Whether to approve/send the Zipper Flávia Junqueira draft",
+    "Whether to open the GMC link_template correction packet after GTIN fix"
+  ],
+  "safe_next_actions": [
+    "Monitor LK Content first weekly cron output",
+    "Recheck public PDP cache for ASICS/Wales Bonner",
+    "Prepare GMC link_template read-only diagnosis packet",
+    "Review Zipper draft content before approval"
+  ],
+  "blocked_actions_requiring_approval": [
+    "Any Zipper email send or commercial claim",
+    "Any Shopify/Tiny/GMC/Klaviyo/Meta write beyond already approved receipts",
+    "Any Docker/VPS/gateway/profile config mutation",
+    "Any external calendar invitations or calendar destructive edits"
+  ],
+  "cron_and_delivery_truth": {
+    "source": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all",
+    "cronjob_cli_available": false,
+    "observed_at_utc": "2026-06-08T04:00Z",
+    "total_jobs": 32,
+    "active_jobs": 28,
+    "paused_jobs": 4,
+    "last_status_non_ok_count": 0,
+    "fechamento_job": "3fc45b0830c6 active local",
+    "daily_report_job": "98478b820720 active origin next 2026-06-08T05:30Z",
+    "silent_ok_normal": true,
+    "actionable_stdout_only": true
+  },
+  "sources": [
+    "reports/daily-consolidation/2026-06-08.md",
+    "reports/governance/watchdog-telegram-alert-format-review-2026-06-07.md",
+    "reports/governance/hermes-webhooks-github-actions-vercel-link-20260607.md",
+    "areas/lk/sub-areas/shopify/receipts/curadoria-lk-pdp/prod-asics-gt2160-walesbonner-github-merge-20260608T0125Z/receipt.md",
+    "areas/lk/sub-areas/growth/receipts/gmc/nike-mind-lia-gtin-5-feedpath-20260607T2140Z/FINAL_SUCCESS.md",
+    "areas/lk/sub-areas/content/receipts/lk-content-gate10-crons-activated-20260607.md",
+    "areas/zipper/inbox/email-intake/2026-06-08-tidio-carolina-caldeira-flavia-junqueira-draft.md"
+  ],
+  "sanitization": {
+    "raw_chat_transcripts_included": false,
+    "secrets_values_printed": false,
+    "pii_minimized": true,
+    "token_like_scan_required": true,
+    "values_printed": false,
+    "secrets_redacted": true
+  },
+  "brain_health_gate": {
+    "status": "pass",
+    "fail": 0,
+    "warn": 0,
+    "artifact": "reports/brain-health-check-2026-06-08-02h.json"
+  },
+  "brain_improvement_score": {
+    "overall_score": 94,
+    "artifact_md": "reports/brain-improvement-score-2026-06-08-02h.md",
+    "artifact_json": "reports/brain-improvement-score-2026-06-08-02h.json"
+  }
+}

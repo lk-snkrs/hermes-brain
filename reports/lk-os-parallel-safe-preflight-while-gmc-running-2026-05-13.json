@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-05-14T00:39:50.922834+00:00",
+  "status": "parallel_safe_preflight_ready",
+  "scope": "read-only/local while GMC P2A keeps running; prepares Step 2 only, does not execute sourcing",
+  "table_readiness": {
+    "lk_orders": {
+      "exists": true,
+      "rows": 6059
+    },
+    "lk_order_items": {
+      "exists": true,
+      "rows": 8166
+    },
+    "lk_product_variants": {
+      "exists": true,
+      "rows": 14466
+    },
+    "lk_products": {
+      "exists": true,
+      "rows": 2241
+    },
+    "tiny_anchor_stock": {
+      "exists": true,
+      "rows": 49
+    }
+  },
+  "counts": {
+    "recent_paid_items_120d_with_sku": 1446,
+    "distinct_skus_recent_120d": 752,
+    "recent_skus_shopify_zero_signal": 553,
+    "recent_skus_tiny_zero_snapshot": 18
+  },
+  "provisional_top_items_no_pii": [
+    {
+      "product_title": "Tênis Nike Air Jordan 1 Low Og Sp x Travis Scott Mocha",
+      "variant": "40",
+      "sku": "CQ4277001",
+      "handle": "tenis-air-jordan-1-low-og-sp-x-travis-scott-mocha",
+      "last_order_at": "2026-02-20T22:35:33+00:00",
+      "recent_units_120d_fact_shopify": 6,
+      "recent_revenue_120d_fact_shopify": 131999.94,
+      "shopify_inventory_signal": 0,
+      "tiny_snapshot": null,
+      "provisional_status": "needs_tiny_confirmation_after_gmc_final"
+    },
+    {
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "variant": "38",
+      "sku": "1183C015101",
+      "handle": "tenis-onitsuka-tiger-mexico-66-sd-cream-birch-bege",
+      "last_order_at": "2026-04-01T21:28:22+00:00",
+      "recent_units_120d_fact_shopify": 48,
+      "recent_revenue_120d_fact_shopify": 119999.52,
+      "shopify_inventory_signal": -1,
+      "tiny_snapshot": 0.0,
+      "provisional_status": "ready_for_step2_after_gmc_final"
+    },
+    {
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "variant": "37",
+      "sku": "1183C015101",
+      "handle": "tenis-onitsuka-tiger-mexico-66-sd-cream-birch-bege",
+      "last_order_at": "2026-03-10T18:14:29+00:00",
+      "recent_units_120d_fact_shopify": 48,
+      "recent_revenue_120d_fact_shopify": 119999.52,
+      "shopify_inventory_signal": 0,
+      "tiny_snapshot": 0.0,
+      "provisional_status": "ready_for_step2_after_gmc_final"
+    },
+    {
+      "product_title": "Tênis Nike Air Jordan 1 Low SE Gs \"Gold Toe\" Preto",
+      "variant": "37",
+      "sku": "DR6970071",
+      "handle": "tenis-air-jordan-1-low-se-gs-gold-toe-preto",
+      "last_order_at": "2026-02-11T13:25:46+00:00",
+      "recent_units_120d_fact_shopify": 42,
+      "recent_revenue_120d_fact_shopify": 83999.58,
+      "shopify_inventory_signal": -7,
+      "tiny_snapshot": null,
+      "provisional_status": "needs_tiny_confirmation_after_gmc_final"
+    },
+    {
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "variant": "35",
+      "sku": "1183C015101",
+      "handle": "tenis-onitsuka-tiger-mexico-66-sd-cream-birch-bege",
+      "last_order_at": "2026-04-02T15:13:54+00:00",
+      "recent_units_120d_fact_shopify": 30,
+      "recent_revenue_120d_fact_shopify": 74999.7,
+      "shopify_inventory_signal": 0,
+      "tiny_snapshot": 0.0,
+      "provisional_status": "ready_for_step2_after_gmc_final"
+    },
+    {
+      "product_title": "Tênis Nike Air Jordan 1 Retro High OG 'UNC Reimagined' Azul",
+      "variant": "43",
+      "sku": "dz5485-402",
+      "handle": "tenis-air-jordan-1-retro-high-og-unc-reimagined-nike-esportivo-couro",
+      "last_order_at": "2026-03-07T18:21:06+00:00",
+      "recent_units_120d_fact_shopify": 12,
+      "recent_revenue_120d_fact_shopify": 32399.88,
+      "shopify_inventory_signal": 0,
+      "tiny_snapshot": null,
+      "provisional_status": "needs_tiny_confirmation_after_gmc_final"
+    },
+    {
+      "product_title": "Tênis New Balance 204L Mushroom Arid Stone Marrom",
+      "variant": "38",
+      "sku": "U204LMMA-5",
+      "handle": "tenis-new-balance-204l-mushroom-arid-stone-marrom",
+      "last_order_at": "2026-04-16T01:29:58+00:00",
+      "recent_units_120d_fact_shopify": 11,
+      "recent_revenue_120d_fact_shopify": 30799.89,
+      "shopify_inventory_signal": 0,
+      "tiny_snapshot": 4.0,
+      "provisional_status": "needs_tiny_confirmation_after_gmc_final"
+    },
+    {
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "variant": "34",
+      "sku": "1183C015101",
+      "handle": "tenis-onitsuka-tiger-mexico-66-sd-cream-birch-bege",
+      "last_order_at": "2026-03-04T19:00:53+00:00",
+      "recent_units_120d_fact_shopify": 12,
+      "recent_revenue_120d_fact_shopify": 29999.88,
+      "shopify_inventory_signal": -1,
+      "tiny_snapshot": 0.0,
+      "provisional_status": "ready_for_step2_after_gmc_final"
+    },
+    {
+      "product_title": "Tênis Onitsuka Tiger Mexico 66 SD Cream Birch Bege",
+      "variant": "36",
+      "sku": "1183C015101",
+      "handle": "tenis-onitsuka-tiger-mexico-66-sd-cream-birch-bege",
+      "last_order_at": "2026-01-31T18:20:58+00:00",
+      "recent_units_120d_fact_shopify": 12,
+      "recent_revenue_120d_fact_shopify": 29999.88,
+      "shopify_inventory_signal": -1,
+      "tiny_snapshot": 0.0,
+      "provisional_status": "ready_for_step2_after_gmc_final"
+    },
+    {
+      "product_title": "Tênis New Balance 530 Silver White Branco",
+      "variant": "38",
+      "sku": "MR530EMA",
+      "handle": "tenis-new-balance-530-silver-white-branco",
+      "last_order_at": "2026-02-18T11:48:06+00:00",
+      "recent_units_120d_fact_shopify": 15,
+      "recent_revenue_120d_fact_shopify": 29999.85,
+      "shopify_inventory_signal": -4,
+      "tiny_snapshot": null,
+      "provisional_status": "needs_tiny_confirmation_after_gmc_final"
+    }
+  ],
+  "not_performed": [
+    "no_gmc_new_write",
+    "no_droper_lookup",
+    "no_stockx_lookup",
+    "no_goat_lookup",
+    "no_whatsapp_read_send",
+    "no_supplier_contact",
+    "no_purchase",
+    "no_notion_write",
+    "no_shopify_tiny_write"
+  ]
+}

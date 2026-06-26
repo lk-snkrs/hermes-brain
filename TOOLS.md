@@ -233,19 +233,19 @@ railway project list
 ### 1️⃣2️⃣ GitHub
 
 **Status:** ✅ Ativo
-**SSH Key:** `/root/.ssh/id_rsa`
+**SSH Key:** usar apenas credenciais/keys atuais verificadas no runtime; não assumir `/root/.ssh/id_rsa`.
 **Repos:**
-- lk-snkrs/lk-new-theme (dev branch)
-- cerebro-cimino (OpenClaw source)
-- hermes-brain (Hermes memory)
+- lk-snkrs/lk-new-theme (quando o escopo LK/theme estiver aprovado)
+- Hermes Brain canônico: `/opt/data/hermes_bruno_ingest/hermes-brain`
+- OpenClaw/cerebro-cimino: referência histórica, não runtime operacional
 
 **Troubleshoot:**
 ```bash
 # Testar SSH
 ssh -T git@github.com
 
-# Status hermes-brain
-cd /root/hermes-brain && git status
+# Status hermes-brain atual
+cd /opt/data/hermes_bruno_ingest/hermes-brain && git status
 ```
 
 ---
@@ -319,15 +319,15 @@ doppler secrets list
 
 ## 🧠 Hermes Brain
 
-**Path:** `/root/hermes-brain/` (VPS)
-**Fonte original:** `/root/cerebro-cimino/` (OpenClaw)
-**Skills:** hermes-brain, lk-crosssell, lk-leads-esfriando, heartbeat-rotativo
-**Sync:** `/root/hermes-brain/sync_hermes.sh` (diário)
+**Path canônico atual:** `/opt/data/hermes_bruno_ingest/hermes-brain`
+**Referência histórica:** OpenClaw/cerebro-cimino foi material de origem; não usar paths `/root/*` como runtime sem revalidar.
+**Skills:** skills canônicas ficam em `skills/` e também no runtime Hermes quando instaladas.
+**Sync/fechamento:** verificar runtime real com `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all`; rotina viva atual é o Fechamento Ágil **01h BRT** + Brain Sync (`3fc45b0830c6`), com pacote `reports/daily-consolidation/latest-handoff.json` para o supervisor 02h e evidências em `reports/brain-sync-safe-dry-run-*`. O fechamento 23h é histórico/superseded.
 
-**Scripts principais:**
-- `/root/lk-price/` — monitor concorrentes
-- `/root/lk-geo/` — Reddit scanner
-- `/root/lc-whatsapp/` — WhatsApp bot Zipper
+**Scripts principais atuais:**
+- `scripts/` dentro do Brain para scripts versionados/documentais.
+- `/opt/data/scripts/` para scripts de cron/runtime quando existentes.
+- Sempre confirmar script real + último status antes de afirmar que algo está operacional.
 
 ---
 

@@ -1,0 +1,93 @@
+# Receipt — corrected collection order apply lot12
+
+Data: 2026-05-28T14:19:44.806839+00:00
+
+## Summary
+- Nike (`nike-todos-os-modelos`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Tênis Nike Moon Shoe SP Jacquemus University Red Vermelho
+  - 2. Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa
+  - 3. Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom
+  - 4. Tênis Nike Moon Shoe SP Jacquemus Off White
+- Lançamentos (`lancamentos`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Jaqueta Lululemon Define Nulu Black Plum/Gold Roxo
+  - 2. Jaqueta Lululemon Define Nulu Black/Gold Preto
+  - 3. Camiseta Lululemon Manga Longa Swiftly Tech Shirt 2.0 Hip Length Lotus Lavender Roxo
+  - 4. Jaqueta Lululemon Define Luon White Branco
+- Todos os Produtos (`ultimos-lancamentos-2`): moves=237; admin_top_ok=True; public_ok=True
+  - 1. Tênis New Balance 204L Mushroom Arid Stone Marrom
+  - 2. Tênis New Balance 204L Arid Timberwolf Bege
+  - 3. Tênis New Balance 9060 Bisque Sea Salt Bege
+  - 4. Calça Alo Yoga Suit Up Trouser (Regular) Preto
+- Tênis e Sneakers Originais (`sneakers`): moves=241; admin_top_ok=True; public_ok=True
+  - 1. Tênis Nike Moon Shoe SP Jacquemus University Red Vermelho
+  - 2. Tênis New Balance 204L Mushroom Arid Stone Marrom
+  - 3. Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo
+  - 4. Tênis New Balance 204L Arid Timberwolf Bege
+- Apparels (`roupas`): moves=214; admin_top_ok=True; public_ok=True
+  - 1. Camisa Aphase Check - Light Blue Azul
+  - 2. Calça Nude Project Jeans Old Baggy Black/Purple Preto/Roxo
+  - 3. Camisa Saint Studio Pima Listrada Azul
+  - 4. Shorts Saint Studio Everywear Preto
+- LK Sale (`sale`): moves=0; admin_top_ok=False; public_ok=False
+  - 1. Tênis Adidas Samba Jane Chalk White Wonder Quartz Branco
+  - 2. Tênis adidas Samba OG Crystal Linen Ivory Gum Branco
+  - 3. Tênis Adidas Samba OG Giraffe Print Grey Crystal White Gold Bege
+  - 4. Tênis Adidas Samba 62 'Wild Brown' Marrom
+- Adidas (`adidas-todos-os-modelos`): moves=231; admin_top_ok=True; public_ok=True
+  - 1. Tênis Adidas by Stella McCartney Sportswear X Trainers Bold Gold Amarelo
+  - 2. Tênis Adidas by Stella McCartney Sportswear X Trainers Core Black Preto
+  - 3. Tênis Adidas by Stella McCartney Sportswear X Trainers Brown Mauve Gum
+  - 4. Tênis Adidas by Stella McCartney Sportswear X Trainers Cloud White Ivory Branco
+- Air Jordan (`air-jordan`): moves=181; admin_top_ok=True; public_ok=True
+  - 1. Tênis Nike Air Jordan 1 Low SE Repaired Denim Swoosh Azul
+  - 2. Tênis Nike Air Jordan 1 Low OG Obsidian UNC Azul
+  - 3. Tênis Nike Air Jordan 1 Low SE Gs "Gold Toe" Preto
+  - 4. Tênis Nike Air Jordan 1 Low Og Sp x Travis Scott Medium Olive Verde
+- Onitsuka Tiger (`onitsuka-tiger-todos-os-modelos`): moves=142; admin_top_ok=True; public_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 Fringe Yellow/Black Amarelo
+  - 2. Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom
+  - 3. Tênis Onitsuka Tiger Mexico 66 Fringe Black/Black Preto
+  - 4. Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown Blue Marrom
+- New Balance (`new-balance-todos-os-modelos`): moves=135; admin_top_ok=True; public_ok=True
+  - 1. Tênis New Balance 204L Slate Grey Raincloud Cinza
+  - 2. Tênis New Balance 204L x Atmos Cow Girl Brown Marrom
+  - 3. Tênis New Balance 990v6 Made in USA Cinza Castlerock
+  - 4. Tênis New Balance 1906L Black Suede Preto
+- Alo Yoga (`alo-yoga-1`): moves=93; admin_top_ok=True; public_ok=True
+  - 1. Calça Alo Yoga Suit Up Trouser (Regular) Preto
+  - 2. Calça Alo Yoga Suit Up Trouser (Long) Preto
+  - 3. Calça Alo Yoga Suit Up Trouser (Regular) Azul Marinho
+  - 4. Calça Alo Yoga Airlift High-Waist 7/8 Line Up Legging Gravel Bege
+- Geral | Best Sellers (`geral-best-sellers`): moves=0; admin_top_ok=False; public_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo
+  - 2. Tênis New Balance 204L Mushroom Arid Stone Marrom
+  - 3. Tênis New Balance 9060 Sea Salt Moonbeam Branco
+  - 4. Tênis Onitsuka Tiger Mexico 66 Birch Peacoat Bege
+- Sneakers | Best Sellers (`best-sellers-1`): moves=0; admin_top_ok=False; public_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo
+  - 2. Tênis New Balance 204L Mushroom Arid Stone Marrom
+  - 3. Tênis New Balance 9060 Sea Salt Moonbeam Branco
+  - 4. Tênis Onitsuka Tiger Mexico 66 Birch Peacoat Bege
+- Vestuário | Best Sellers (`vestuario-best-sellers`): moves=37; admin_top_ok=True; public_ok=True
+  - 1. Camiseta Saint Studio Boxy Supima Off Gola Vermelha Branco
+  - 2. Camiseta Aimé Leon Dore Pappoús Logo Navy Blazer Azul
+  - 3. Calça Pace Nomo Tailoring Trousers Preto
+  - 4. Calça Alo Yoga Suit Up Trouser (Regular) Preto
+- On Running (`on-running-todos-os-modelos`): moves=14; admin_top_ok=True; public_ok=True
+  - 1. Tênis On Running Loewe LightSpray Cloudmonster Branco
+  - 2. Tênis On Running Cloudsolo Loewe Teal Eggshell Azul
+  - 3. Tênis On Running Cloudsolo Loewe Sand Burgundy Bege
+  - 4. Tênis On Running Cloudsolo Loewe Burgundy Eggshell Bordô
+- Asics (`asics-todos-os-modelos`): moves=9; admin_top_ok=True; public_ok=True
+  - 1. Tênis ASICS Gel-NYC Graphite Grey Black Preto
+  - 2. Tênis ASICS Gel-1130 Black Pure Silver Prata
+  - 3. Tênis ASICS Gel-1130 Black Pure Silver Prata
+  - 4. Tênis ASICS Gel-1130 White Pure Silver Prata
+
+## Artefatos
+- Snapshot/rollback: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/reports/auto-sort-collections/corrected-apply-lot12-20260528T141619Z/rollback-snapshot-pre-write-immediate.json`
+- Receipt JSON: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/reports/auto-sort-collections/corrected-apply-lot12-20260528T141619Z/receipt-final.json`
+
+## Não ações
+- Nenhum cron ativado.
+- Nenhum produto/preço/estoque/tema/tag/SEO/GMC/campanha/checkout alterado.

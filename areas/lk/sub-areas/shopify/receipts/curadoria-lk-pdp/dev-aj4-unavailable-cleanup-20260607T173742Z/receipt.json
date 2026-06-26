@@ -1,0 +1,159 @@
+{
+  "timestamp_utc": "2026-06-07T17:37:48.681430+00:00",
+  "approval_interpretation": "Lucas replied \"Aprovo\" immediately after exact requested DEV cleanup phrase; interpreted as DEV-only removal of unavailable AJ4 handle, not Production.",
+  "scope": "DEV/unpublished theme only; remove unavailable handle from top30-air-jordan-4-regular in snippets/lk-variante-top30-visited-v2.liquid",
+  "themes": {
+    "dev": {
+      "id": "155065450718",
+      "name": "lk-new-theme/dev",
+      "role": "unpublished"
+    },
+    "production_readonly": {
+      "id": "155065417950",
+      "name": "lk-new-theme/production",
+      "role": "main"
+    }
+  },
+  "asset": "snippets/lk-variante-top30-visited-v2.liquid",
+  "change": {
+    "changed": true,
+    "before_count": 16,
+    "after_count": 15,
+    "removed": {
+      "handle": "tenis-air-jordan-4-retro-military-blue-branco",
+      "label": "Military Blue",
+      "image": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-air-jordan-4-retro-military-blue-branco-lk-sneakers-321957.jpg?v=1714848642"
+    },
+    "remaining_handles": [
+      "tenis-air-jordan-4-retro-metallic-gold-branco",
+      "tenis-nike-air-jordan-4-retro-black-cat-preto",
+      "air-jordan-4-frozen-moments",
+      "tenis-nike-air-jordan-4-retro-tex-worn-blue-denim-azul",
+      "air-jordan-4-craft-medium-olive",
+      "tenis-air-jordan-4-retro-se-paris-we-cement-cinza",
+      "tenis-air-jordan-4-retro-og-nike-white-cement-couro",
+      "tenis-nike-air-jordan-4-cave-stone-and-black-marrom",
+      "tenis-air-jordan-4-retro-military-blue-branco-copia",
+      "tenis-air-jordan-4-retro-forget-me-not-azul",
+      "tenis-air-jordan-4-retro-seafoam-verde",
+      "tenis-air-jordan-4-retro-orchid-rosa",
+      "tenis-air-jordan-4-retro-white-thunder-preto",
+      "tenis-air-jordan-4-retro-shimmer-rosa",
+      "tenis-air-jordan-4-retro-oxidized-branco"
+    ]
+  },
+  "hashes": {
+    "dev_before_sha256": "e5df3582f2e9f5e17485deee2b8c9b29a055ca8da6b215c48b8c35d4c19a240e",
+    "dev_target_sha256": "aba2ed49b0883d920cc60e0811426629f2c8128ce44d19c46acb6999398cdaea",
+    "dev_readback_sha256": "aba2ed49b0883d920cc60e0811426629f2c8128ce44d19c46acb6999398cdaea",
+    "production_before_sha256": "c64dafba4777418ac7be08c0dafa6224d6fab8dafe3b0aa61029ba7b63f9da8d",
+    "production_after_sha256": "c64dafba4777418ac7be08c0dafa6224d6fab8dafe3b0aa61029ba7b63f9da8d"
+  },
+  "sha12": {
+    "dev_before": "e5df3582f2e9",
+    "dev_target": "aba2ed49b088",
+    "dev_readback": "aba2ed49b088",
+    "production_before": "c64dafba4777",
+    "production_after": "c64dafba4777"
+  },
+  "readback_matches_target": true,
+  "production_unchanged": true,
+  "static_qa": {
+    "parallel_group_counts_equal": true,
+    "all_top_arrays_equal": true,
+    "top_array_lengths": {
+      "lk_top30_markers": 29,
+      "lk_top30_names": 29,
+      "lk_top30_handles_groups": 29,
+      "lk_top30_labels_groups": 29,
+      "lk_top30_images_groups": 29
+    },
+    "target_group_counts": {
+      "handles": 15,
+      "labels": 15,
+      "images": 15
+    },
+    "target_exact_handle_count": 0,
+    "target_absent_from_handles": true,
+    "substring_occurrences_total": 1,
+    "bad_url_occurrences": {
+      "https:https://": 0,
+      "https://https://": 0,
+      "TenisMoldeLK": 0
+    },
+    "remaining_handles": [
+      "tenis-air-jordan-4-retro-metallic-gold-branco",
+      "tenis-nike-air-jordan-4-retro-black-cat-preto",
+      "air-jordan-4-frozen-moments",
+      "tenis-nike-air-jordan-4-retro-tex-worn-blue-denim-azul",
+      "air-jordan-4-craft-medium-olive",
+      "tenis-air-jordan-4-retro-se-paris-we-cement-cinza",
+      "tenis-air-jordan-4-retro-og-nike-white-cement-couro",
+      "tenis-nike-air-jordan-4-cave-stone-and-black-marrom",
+      "tenis-air-jordan-4-retro-military-blue-branco-copia",
+      "tenis-air-jordan-4-retro-forget-me-not-azul",
+      "tenis-air-jordan-4-retro-seafoam-verde",
+      "tenis-air-jordan-4-retro-orchid-rosa",
+      "tenis-air-jordan-4-retro-white-thunder-preto",
+      "tenis-air-jordan-4-retro-shimmer-rosa",
+      "tenis-air-jordan-4-retro-oxidized-branco"
+    ]
+  },
+  "rollback": {
+    "restore_dev_asset_from": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/shopify/receipts/curadoria-lk-pdp/dev-aj4-unavailable-cleanup-20260607T173742Z/dev-before.liquid",
+    "theme_id": "155065450718",
+    "asset": "snippets/lk-variante-top30-visited-v2.liquid"
+  },
+  "non_actions": [
+    "No Production write",
+    "No product/price/stock/Tiny/GMC/Klaviyo/Ads/checkout write",
+    "No theme publish"
+  ],
+  "preview_public_qa": {
+    "preview_theme_id": "155065450718",
+    "classification": "public preview partial/inconclusive because final URL stripped preview_theme_id, but sampled HTML returned 200 and was consistent with DEV source",
+    "samples": [
+      {
+        "handle": "tenis-air-jordan-4-retro-metallic-gold-branco",
+        "status": 200,
+        "final_has_preview_theme_id": false,
+        "has_marker": true,
+        "has_curadoria": true,
+        "removed_exact_card_href": false,
+        "liquid_errors": 0,
+        "anti_bot": false
+      },
+      {
+        "handle": "tenis-nike-air-jordan-4-retro-black-cat-preto",
+        "status": 200,
+        "final_has_preview_theme_id": false,
+        "has_marker": true,
+        "has_curadoria": true,
+        "removed_exact_card_href": false,
+        "liquid_errors": 0,
+        "anti_bot": false
+      },
+      {
+        "handle": "tenis-air-jordan-4-retro-og-nike-white-cement-couro",
+        "status": 200,
+        "final_has_preview_theme_id": false,
+        "has_marker": true,
+        "has_curadoria": true,
+        "removed_exact_card_href": false,
+        "liquid_errors": 0,
+        "anti_bot": false
+      },
+      {
+        "handle": "tenis-air-jordan-4-retro-military-blue-branco",
+        "status": 200,
+        "final_has_preview_theme_id": false,
+        "has_marker": true,
+        "has_curadoria": true,
+        "removed_exact_card_href": true,
+        "liquid_errors": 0,
+        "anti_bot": false,
+        "note": "current/product URL can create self-link evidence; not used as proof of card absence"
+      }
+    ]
+  }
+}

@@ -39,6 +39,11 @@ obra/artista/contexto → checagem de fonte → rascunho → aprovação equipe/
 
 Textos para redes e comunicação externa são rascunhos até aprovação da equipe responsável ou Lucas.
 
+## Textos institucionais de artistas
+
+- `artistas/README.md` — mapa, fonte de verdade e regras de uso dos textos de artistas.
+- `artistas/joao-castilho.md` — texto atualizado por Eduardo Biz e capturado do site da Zipper em 2026-05-18.
+
 ## Templates
 
 - `templates/briefing-publicacao-obra-artista.md` — briefing de publicação por obra/artista/feira com fonte, ângulo narrativo, checklist de tom e aprovação.

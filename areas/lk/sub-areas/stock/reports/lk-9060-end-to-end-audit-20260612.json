@@ -1,0 +1,231 @@
+{
+  "all_65_missing_positive_present_with_expected_qty": true,
+  "db_counts": {
+    "availability_claim_allowed_rows": 0,
+    "db_path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/lk_stock_os_current_tiny_9060_gap_promoted_20260612T9060TINYGAP.db",
+    "pointer_stage": "tiny_9060_gap_promoted",
+    "positive_rows_9060": 91,
+    "public_availability_safe_rows": 0,
+    "rows_9060": 220,
+    "units_9060_net": 118.0
+  },
+  "expected_reconciled_units_net": 118.0,
+  "expected_reconciled_units_positive": 121.0,
+  "generated_at_utc": "2026-06-12T21:50:46Z",
+  "guardrails": {
+    "shopify_write": 0,
+    "tiny_write": 0,
+    "values_printed": false,
+    "writes_externos": 0
+  },
+  "live_spot_checks": [
+    {
+      "dashboard_qty": 4.0,
+      "matches_dashboard": true,
+      "report_qty": 4.0,
+      "sku": "U9060EEH-2",
+      "tiny_id": "1060479350",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 4.0,
+        "tiny_status": "OK"
+      }
+    },
+    {
+      "dashboard_qty": 3.0,
+      "matches_dashboard": true,
+      "report_qty": 3.0,
+      "sku": "U9060EEE-9",
+      "tiny_id": "1060479283",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 3.0,
+        "tiny_status": "OK"
+      }
+    },
+    {
+      "dashboard_qty": 3.0,
+      "matches_dashboard": true,
+      "report_qty": 3.0,
+      "sku": "U9060EEH-3",
+      "tiny_id": "1060479353",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 3.0,
+        "tiny_status": "OK"
+      }
+    },
+    {
+      "dashboard_qty": 3.0,
+      "matches_dashboard": true,
+      "report_qty": 3.0,
+      "sku": "U9060LBC-2",
+      "tiny_id": "1066075274",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 3.0,
+        "tiny_status": "OK"
+      }
+    },
+    {
+      "dashboard_qty": 3.0,
+      "matches_dashboard": true,
+      "report_qty": 3.0,
+      "sku": "u9060aga-2",
+      "tiny_id": "1065543501",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 3.0,
+        "tiny_status": "OK"
+      }
+    },
+    {
+      "dashboard_qty": 2.0,
+      "matches_dashboard": true,
+      "report_qty": 2.0,
+      "sku": "U9060BLC-9",
+      "tiny_id": "1061228194",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 2.0,
+        "tiny_status": "OK"
+      }
+    },
+    {
+      "dashboard_qty": 2.0,
+      "matches_dashboard": true,
+      "report_qty": 2.0,
+      "sku": "U9060CCC-2",
+      "tiny_id": "1066011403",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 2.0,
+        "tiny_status": "OK"
+      }
+    },
+    {
+      "dashboard_qty": 2.0,
+      "matches_dashboard": true,
+      "report_qty": 2.0,
+      "sku": "U9060EEE-5",
+      "tiny_id": "1060479271",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 2.0,
+        "tiny_status": "OK"
+      }
+    },
+    {
+      "dashboard_qty": 2.0,
+      "matches_dashboard": true,
+      "report_qty": 2.0,
+      "sku": "U9060ZGE-7",
+      "tiny_id": "1062140799",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 2.0,
+        "tiny_status": "OK"
+      }
+    },
+    {
+      "dashboard_qty": 1.0,
+      "matches_dashboard": true,
+      "report_qty": 1.0,
+      "sku": "3992464",
+      "tiny_id": "1066033861",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 1.0,
+        "tiny_status": "OK"
+      }
+    },
+    {
+      "dashboard_qty": 1.0,
+      "matches_dashboard": true,
+      "report_qty": 1.0,
+      "sku": "U9060PSD-2",
+      "tiny_id": "1064254134",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 1.0,
+        "tiny_status": "OK"
+      }
+    },
+    {
+      "dashboard_qty": 1.0,
+      "matches_dashboard": true,
+      "report_qty": 1.0,
+      "sku": "U9060CCB-2",
+      "tiny_id": "1065786835",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 1.0,
+        "tiny_status": "OK"
+      }
+    },
+    {
+      "dashboard_qty": 1.0,
+      "matches_dashboard": true,
+      "report_qty": 1.0,
+      "sku": "U9060ZGF-12",
+      "tiny_id": "1064347159",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 1.0,
+        "tiny_status": "OK"
+      }
+    },
+    {
+      "dashboard_qty": 1.0,
+      "matches_dashboard": true,
+      "report_qty": 1.0,
+      "sku": "U9060ZGF-14",
+      "tiny_id": "1068886501",
+      "tiny_live": {
+        "official_deposit_found": true,
+        "ok": true,
+        "saldo_lk": 1.0,
+        "tiny_status": "OK"
+      }
+    }
+  ],
+  "live_spot_count": 14,
+  "live_spot_mismatches": [],
+  "pass": true,
+  "prod_counts": {
+    "positive_rows_9060": 91,
+    "rows_9060": 220,
+    "total_rows": 3746,
+    "units_9060_net": 118.0,
+    "units_9060_positive": 121.0
+  },
+  "prod_status": {
+    "api": 200,
+    "html": 200,
+    "no_auth": 401
+  },
+  "qty_mismatch_count": 0,
+  "qty_mismatches_sample": [],
+  "tiny_discovery": {
+    "missing_checked": 427,
+    "missing_positive_count": 65,
+    "missing_positive_units": 86.0,
+    "remaining_errors": 0,
+    "tiny_active_found": 586,
+    "tiny_missing_initial": 427,
+    "tiny_pages": 6
+  }
+}

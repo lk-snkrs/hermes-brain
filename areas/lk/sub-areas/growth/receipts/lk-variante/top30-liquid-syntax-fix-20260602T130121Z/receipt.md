@@ -1,0 +1,36 @@
+# Top30 Liquid Syntax Fix
+
+- Aplicados: `28`
+- Bloqueados: `2`
+- Prod control blocks: `0`
+
+- rank `1` `tenis-adidas-samba-og-crochet-pack-sand-strata-bege`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-samba-og`
+- rank `2` `tenis-onitsuka-tiger-mexico-66-sabot-birch-peacoat-bege`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-mexico66-sabot`
+- rank `3` `slide-nike-mind-001-light-smoke-grey-cinza`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-nike-mind-001`
+- rank `4` `tenis-new-balance-204l-mushroom-arid-stone-marrom`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-nb-204l`
+- rank `5` `tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-mexico66-regular`
+- rank `6` `tenis-nike-vomero-premium-flat-stout-marrom`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-vomero-premium`
+- rank `7` `tenis-new-balance-204l-timberwolf-bege`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-nb-204l`
+- rank `8` `tenis-adidas-samba-disney-101-dalmatians-penny-branco`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-samba-og`
+- rank `9` `nike-moon-shoe-sp-jacquemus-alabaster-amarelo`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-moon-shoe-jacquemus`
+- rank `10` `slide-nike-mind-001-black-chrome-preto`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-nike-mind-001`
+- rank `11` `tenis-adidas-samba-og-white-floral-embroidery-branco`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-samba-og`
+- rank `12` `tenis-nike-vomero-premium-sail-coconut-milk-branco`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-vomero-premium`
+- rank `13` `tenis-adidas-samba-og-crochet-pack-orbit-green-verde`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-samba-og`
+- rank `14` `tenis-onitsuka-tiger-mexico-66-sabot-beige-green-bege`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-mexico66-sabot`
+- rank `15` `mule-bravest-studios-bear-claw-black-preto`: blocks `0`, items `0`, current `False`, errors `0`, markers ``
+- rank `16` `tenis-new-balance-9060-mushroom-arid-stone-camurca`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-nb-9060`
+- rank `17` `tenis-nike-vomero-premium-black-volt-preto`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-vomero-premium`
+- rank `18` `tenis-adidas-sl-72-og-scarlet-crochet-vermelho`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-sl72-og`
+- rank `19` `tenis-onitsuka-tiger-mexico-66-sd-beige-beet-juice-bege`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-mexico66-sd`
+- rank `20` `travis-scott-x-air-jordan-1-low-og-reverse-mocha`: blocks `1`, items `5`, current `False`, errors `0`, markers `air-jordan-1-low-travis`
+- rank `21` `tenis-nike-moon-shoe-sp-jacquemus-off-white`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-moon-shoe-jacquemus`
+- rank `22` `jaqueta-lululemon-define-nulu`: blocks `0`, items `0`, current `False`, errors `0`, markers ``
+- rank `23` `tenis-nike-vomero-premium-alabaster-amarelo`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-vomero-premium`
+- rank `24` `tenis-new-balance-530-turtledove-mushroom-mesh-casual`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-nb-530`
+- rank `25` `tenis-adidas-sl72-og-maroon-almost-yellow-marrom`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-sl72-og`
+- rank `26` `nike-sb-dunk-low-sandy-ebay-2022`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-sb-dunk-low`
+- rank `27` `tenis-adidas-samba-og-x-disney-pixar-toy-story`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-samba-og`
+- rank `28` `tenis-onitsuka-tiger-mexico-66-sd-kill-bill-amarelo`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-mexico66-sd`
+- rank `29` `tenis-nike-vomero-premium-white-bright-crimson-branco`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-vomero-premium`
+- rank `30` `tenis-onitsuka-tiger-mexico-66-white-black-branco`: blocks `1`, items `5`, current `False`, errors `0`, markers `top30-mexico66-regular`

@@ -1,0 +1,149 @@
+{
+  "operational_date": "2026-06-04",
+  "generated_at_utc": "2026-06-05T04:00:00Z",
+  "status": "attention",
+  "executive_summary": "Fechamento 2026-06-04 consolidou governança Hermes, LK Growth/GMC, LK Collection Optimizer e Zipper inbox. Brain Health/Score do ciclo estão saudáveis (FAIL=0/WARN=0, score 94/100), mas há atenção operacional no LK Pulso 16h e decisões Zipper pendentes.",
+  "material_changes": [
+    {
+      "domain": "Hermes Geral",
+      "change": "Watchdog global reconciliado para tratar /opt/data/profiles/lk-collection-optimizer como profile esperado após ativação aprovada.",
+      "evidence": "reports/hermes-continuous-improvement/2026-06-04.md"
+    },
+    {
+      "domain": "LK Growth/GMC",
+      "change": "GMC weekly review read-only gerado com 21402 productstatuses/products, 712 missing color/product type e investigação de 10441 ofertas locais sem link_template.",
+      "evidence": "reports/lk-gmc-weekly-review-2026-06-04.md"
+    },
+    {
+      "domain": "Zipper",
+      "change": "Três emails foram classificados como needs-attention, sem envio externo: Art Basel HK 2027, Contemporary Istanbul 2026 e lead Zé Luiz Nogueira.",
+      "evidence": "areas/zipper/inbox/email-intake/2026-06-04-*.md"
+    }
+  ],
+  "incidents": [
+    {
+      "domain": "LK OS",
+      "incident": "LK Pulso Comercial 16h registrou erro no último run vivo por parsing/saída de wacli durante envio externo aprovado.",
+      "severity": "medium",
+      "next_step": "Observar próximo run após fallback/correção; se reincidir, corrigir parser/estado por canal sem pareamento automático."
+    },
+    {
+      "domain": "Hermes/Mission Control",
+      "incident": "Dashboard/cockpit Hermes segue bloqueio A3/A4 até mitigação de auth/infra com approval packet.",
+      "severity": "medium",
+      "next_step": "Preparar approval packet apenas se Lucas pedir; sem produção automática."
+    }
+  ],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Quando o WhatsApp Hermes estiver offline/unauthenticated, relatórios comerciais aprovados podem usar o WhatsApp pessoal como fallback.",
+      "scope": "Relatórios comerciais aprovados: LK 09h, LK 16h, LK 19h30 e Zipper 09h; JIDs allowlisted; sem escolha dinâmica de contato.",
+      "exclusions": "Não autoriza mensagens externas genéricas, pairing automático, leitura de conversas ou alteração de destinatários."
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "pattern": "Fallback de canal aprovado deve preservar escopo, allowlist, receipt e idempotência por canal.",
+      "learn": "Geração local, envio email e envio WhatsApp devem ser reportados separadamente."
+    },
+    {
+      "pattern": "Specialist profile aprovado precisa ser incluído no watchdog global para evitar falso positivo.",
+      "learn": "Profile recém-ativado deve virar REQUIRED ou OPTIONAL_DORMANT conforme estado esperado."
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Specialist profile ativado deve reconciliar watchdog global no mesmo ciclo.",
+      "destination_recommended": "rotina/watchdog + skill runtime operations",
+      "action_applied": "Aplicado no ciclo 02h; verificar próximos ticks."
+    },
+    {
+      "learning": "Fallback WhatsApp pessoal é permitido apenas para relatórios comerciais aprovados e JIDs allowlisted quando hermes estiver unauthenticated.",
+      "destination_recommended": "rotinas LK/Zipper report delivery + approval ledger",
+      "action_applied": "Receipt registrado; observar próximo run real."
+    },
+    {
+      "learning": "GMC mhlsf_full_missing_valid_link_template é problema de ofertas locais/LIA/API, não de copy/PDP/feed online.",
+      "destination_recommended": "LK Growth GMC playbook/backlog",
+      "action_applied": "Approval packet read-only criado; execução bloqueada."
+    },
+    {
+      "learning": "Zipper inbox estratégico precisa virar decisão curta na Mesa, não resposta automática.",
+      "destination_recommended": "Mesa COO/pendências Zipper",
+      "action_applied": "Needs-attention documentados; aguarda Lucas."
+    }
+  ],
+  "autonomy_pattern_candidates": [
+    {
+      "candidate": "Correção A1 de watchdog/documentação quando o Brain já comprova profile aprovado.",
+      "classification": "A1 local/script-watchdog/documental, sem runtime mutation",
+      "keep_blocked": "Docker/gateway restart/cron mutation/produção."
+    },
+    {
+      "candidate": "GMC read-only review e approval packet nominal.",
+      "classification": "A0/A1 read-only/preview",
+      "keep_blocked": "ProductInput/feed/Shopify/POS/fetchNow/reprocessamento sem aprovação."
+    }
+  ],
+  "pending_decisions_for_lucas": [
+    "Zipper: decidir se aplica à Art Basel Hong Kong 2027.",
+    "Zipper: decidir se pede proposta para Contemporary Istanbul 2026.",
+    "Zipper: verificar/autorizar dados de preço, medidas e disponibilidade para lead Zé Luiz Nogueira.",
+    "LK/GMC: aprovar ou não micro-piloto nominal para local link_template.",
+    "LK/GMC: aprovar ou não aplicação de missing color high-confidence após revisão humana.",
+    "Hermes: aprovar pacote A3/A4 se quiser mitigar dashboard/cockpit público."
+  ],
+  "safe_next_actions": [
+    "Observar próximo run do LK Pulso 16h e registrar se fallback resolveu.",
+    "Preparar fila curta para Mesa COO com três decisões Zipper.",
+    "Manter GMC packets como preview até aprovação explícita.",
+    "Acompanhar primeira execução do LK Weekly Catalog Badges BEST SELLER sync em 2026-06-05T09:30Z."
+  ],
+  "blocked_actions_requiring_approval": [
+    "WhatsApp/e-mail/customer/collector/supplier send fora dos relatórios comerciais já aprovados.",
+    "Pairing ou reautenticação wacli hermes sem Lucas presente.",
+    "Shopify/Tiny/GMC/ProductInput/POS/feed/fetchNow/reprocessamento.",
+    "Docker/VPS/gateway/Traefik/deploy/restart/dashboard auth changes.",
+    "Zipper preço/disponibilidade/medidas sem fonte verificada."
+  ],
+  "cron_and_delivery_truth": [
+    {
+      "source": "fallback Hermes CLI cron list --all",
+      "total_jobs": 29,
+      "active": 25,
+      "paused": 4,
+      "notable": "LK 16h último run error; LK 09h, LK 19h30 e Zipper 09h ok no estado vivo atual."
+    },
+    {
+      "job": "Hermes Brain Fechamento Ágil 01h + Brain Sync",
+      "status": "active/local/ok_previous_run",
+      "delivery": "local"
+    },
+    {
+      "job": "Daily Intelligence Loop 02h",
+      "status": "active/local/ok",
+      "health": "FAIL=0/WARN=0; score=94/100"
+    }
+  ],
+  "sources": [
+    "reports/daily-consolidation/2026-06-04.md",
+    "reports/hermes-continuous-improvement/2026-06-04.md",
+    "reports/hermes-learning-ledger/2026-06-04.md",
+    "reports/lk-gmc-weekly-review-2026-06-04.md",
+    "reports/lk-gmc-missing-color-preview-2026-06-04.md",
+    "reports/lk-gmc-local-link-template-investigation-2026-06-04.md",
+    "reports/governance/runtime-truth-reconciler-2026-06-04.md",
+    "reports/governance/whatsapp-personal-fallback-commercial-reports-2026-06-04.md",
+    "reports/governance/lk-collection-optimizer-roundtrip-verified-2026-06-04.md",
+    "areas/zipper/inbox/email-intake/2026-06-04-*.md",
+    "cron list fallback runtime evidence",
+    "session_search recent context"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "raw_chat_transcripts_excluded": true,
+    "live_facts_verified": true,
+    "html_raw_excluded": true,
+    "token_like_scan_required": true
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "generated_at": "2026-05-14T09:27:39.732824+00:00",
+  "status": "apply_completed_needs_review",
+  "source_review": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-gmc-2026-05-14-p2a-128-mismatch-readonly-review.json",
+  "summary": {
+    "mode": "apply",
+    "selected_count": 44,
+    "source_expected_googleProductCategory": "Luggage & Bags > Handbags, Wallets & Cases",
+    "target_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+    "still_needs_patch_preflight": 44,
+    "preflight_current_patterns": {
+      "None / ['Bolsa/Carteira']": 43,
+      "None / ['Bolsa']": 1
+    },
+    "execution_results_summary": {
+      "patched_bags_44_point_repair_v1": 44
+    },
+    "patched_count": 44,
+    "verify_match_expected": 43,
+    "verify_mismatch_count": 1,
+    "verify_patterns": {
+      "Apparel & Accessories > Handbags, Wallets & Cases / ['Bolsa/Carteira']": 43,
+      "Apparel & Accessories > Handbags, Wallets & Cases / ['Bolsa']": 1
+    }
+  },
+  "private_rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-p2a-bags-44-point-repair-rollback-20260514T092239Z.json",
+  "private_progress_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-p2a-bags-44-point-repair-progress-20260514T092239Z.jsonl",
+  "verify_results": [
+    {
+      "product_id": "online:pt:BR:11680405",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11750230-1",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11750230-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11750230-3",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-1",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-10",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-11",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-3",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-4",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-5",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-6",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-7",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-8",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:1183C102.203-9",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:11870629-1",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:16354631407067711955",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:2669418431140851356",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:7958216211561773980",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ001",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ002",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ003",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ004",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ005",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ006",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ007",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ008",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ009",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ010",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ011",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ012",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:JCQ013",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:LAB31",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:MA0759-AF4",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa"
+      ],
+      "match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:NIKEJAC2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:NIKEXJAC1",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:PAC-3039582-OS",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:RH13",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST4-1",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST42-1",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST42-2",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST5-1",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST50",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    },
+    {
+      "product_id": "online:pt:BR:ST8",
+      "verify_status": "verified_merchant_product_get",
+      "actual_googleProductCategory": "Apparel & Accessories > Handbags, Wallets & Cases",
+      "actual_productTypes": [
+        "Bolsa/Carteira"
+      ],
+      "match_expected": true
+    }
+  ],
+  "not_performed": [
+    "title_update",
+    "price_update",
+    "availability_update",
+    "image_or_link_update",
+    "merchant_delete",
+    "local_inventory_write",
+    "shopify_write",
+    "tiny_write",
+    "database_write",
+    "notion_write",
+    "feed_fetch_or_upload",
+    "campaign_or_message_send",
+    "marketplace_lookup"
+  ]
+}

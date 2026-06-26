@@ -1,0 +1,464 @@
+{
+  "generated_at": "2026-05-14T21:27:49.873558+00:00",
+  "status": "pilot_completed_needs_review",
+  "approval": "Lucas approved micro-pilot GMC preço regular: até 5 online IDs regular_price_stale, Merchant API v1 dataSource 10636492695, rollback privado, sem salePrice/settings/feed/Shopify/Tiny.",
+  "data_source": "10636492695",
+  "selected_count": 5,
+  "skipped_counts": {
+    "no_action_current_matches_or_no_target": 2,
+    "excluded_sale_or_current_sale": 7
+  },
+  "execution_counts": {
+    "patched_price_only": 5
+  },
+  "verify_content_matches": 0,
+  "verify_merchant_v1_matches": 0,
+  "status_issue_counts_after": {
+    "price_updated": 15
+  },
+  "rollback_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-price-regular-micro-pilot-rollback-20260514T212618Z.json",
+  "progress_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-price-regular-micro-pilot-progress-20260514T212618Z.jsonl",
+  "candidates": [
+    {
+      "product_id": "online:pt:BR:01424-002-2",
+      "current_price": "5999.90",
+      "target": {
+        "variant_id": "44413386457310",
+        "sku": "01424-002-2",
+        "shopify_price": "8999.99",
+        "shopify_compareAtPrice": null,
+        "target_price": "8999.99",
+        "target_salePrice": null,
+        "sale_mode": false
+      }
+    },
+    {
+      "product_id": "online:pt:BR:553558140-7",
+      "current_price": "1499.99",
+      "target": {
+        "variant_id": "44670918361310",
+        "sku": "553558140-7",
+        "shopify_price": "1799.99",
+        "shopify_compareAtPrice": "1599.99",
+        "target_price": "1799.99",
+        "target_salePrice": null,
+        "sale_mode": false
+      }
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-5",
+      "current_price": "2599.99",
+      "target": {
+        "variant_id": "44986048282846",
+        "sku": "AQ9129-170-5",
+        "shopify_price": "2749.99",
+        "shopify_compareAtPrice": "2449.90",
+        "target_price": "2749.99",
+        "target_salePrice": null,
+        "sale_mode": false
+      }
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-7",
+      "current_price": "2599.99",
+      "target": {
+        "variant_id": "44986048348382",
+        "sku": "AQ9129-170-7",
+        "shopify_price": "3349.99",
+        "shopify_compareAtPrice": "2449.90",
+        "target_price": "3349.99",
+        "target_salePrice": null,
+        "sale_mode": false
+      }
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-9",
+      "current_price": "2599.99",
+      "target": {
+        "variant_id": "44986048413918",
+        "sku": "AQ9129-170-9",
+        "shopify_price": "3349.99",
+        "shopify_compareAtPrice": "2449.90",
+        "target_price": "3349.99",
+        "target_salePrice": null,
+        "sale_mode": false
+      }
+    }
+  ],
+  "skipped_sample": [
+    {
+      "product_id": "online:pt:BR:205759610-9",
+      "bucket": "no_action_current_matches_or_no_target",
+      "current_price": "1499.99",
+      "target": {
+        "variant_id": "44834189738206",
+        "sku": "205759 610-9",
+        "shopify_price": "1499.99",
+        "shopify_compareAtPrice": "749.90",
+        "target_price": "1499.99",
+        "target_salePrice": null,
+        "sale_mode": false
+      }
+    },
+    {
+      "product_id": "online:pt:BR:553558053-1",
+      "bucket": "excluded_sale_or_current_sale",
+      "current_salePrice": "1799.99",
+      "target": {
+        "variant_id": "44677265162462",
+        "sku": "553558053-1",
+        "shopify_price": "1999.99",
+        "shopify_compareAtPrice": "2199.99",
+        "target_price": "2199.99",
+        "target_salePrice": "1999.99",
+        "sale_mode": true
+      }
+    },
+    {
+      "product_id": "online:pt:BR:553558053-42",
+      "bucket": "excluded_sale_or_current_sale",
+      "current_salePrice": "1799.99",
+      "target": {
+        "variant_id": "44677265326302",
+        "sku": "553558053-42",
+        "shopify_price": "1999.99",
+        "shopify_compareAtPrice": "2199.99",
+        "target_price": "2199.99",
+        "target_salePrice": "1999.99",
+        "sale_mode": true
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088108",
+      "bucket": "excluded_sale_or_current_sale",
+      "current_salePrice": "2449.99",
+      "target": {
+        "variant_id": "45711228371166",
+        "sku": "555088108",
+        "shopify_price": "2799.99",
+        "shopify_compareAtPrice": "2999.99",
+        "target_price": "2999.99",
+        "target_salePrice": "2799.99",
+        "sale_mode": true
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088108-1",
+      "bucket": "excluded_sale_or_current_sale",
+      "current_salePrice": "2449.99",
+      "target": {
+        "variant_id": "44513881653470",
+        "sku": "555088108-1",
+        "shopify_price": "2799.99",
+        "shopify_compareAtPrice": "2999.99",
+        "target_price": "2999.99",
+        "target_salePrice": "2799.99",
+        "sale_mode": true
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088108-12",
+      "bucket": "excluded_sale_or_current_sale",
+      "current_salePrice": "2449.99",
+      "target": {
+        "variant_id": "44513881817310",
+        "sku": "555088108-12",
+        "shopify_price": "2799.99",
+        "shopify_compareAtPrice": "2999.99",
+        "target_price": "2999.99",
+        "target_salePrice": "2799.99",
+        "sale_mode": true
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088134-40",
+      "bucket": "excluded_sale_or_current_sale",
+      "current_salePrice": "2999.90",
+      "target": {
+        "variant_id": "44265048047838",
+        "sku": "555088134-40",
+        "shopify_price": "2999.99",
+        "shopify_compareAtPrice": "3499.99",
+        "target_price": "3499.99",
+        "target_salePrice": "2999.99",
+        "sale_mode": true
+      }
+    },
+    {
+      "product_id": "online:pt:BR:555088134-44",
+      "bucket": "excluded_sale_or_current_sale",
+      "current_salePrice": "2999.90",
+      "target": {
+        "variant_id": "44265048080606",
+        "sku": "555088134-44",
+        "shopify_price": "2999.99",
+        "shopify_compareAtPrice": "3499.99",
+        "target_price": "3499.99",
+        "target_salePrice": "2999.99",
+        "sale_mode": true
+      }
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-8",
+      "bucket": "no_action_current_matches_or_no_target",
+      "current_price": "2749.99",
+      "target": {
+        "variant_id": "44986048381150",
+        "sku": "AQ9129-170-8",
+        "shopify_price": "2749.99",
+        "shopify_compareAtPrice": "2449.90",
+        "target_price": "2749.99",
+        "target_salePrice": null,
+        "sale_mode": false
+      }
+    }
+  ],
+  "executions": [
+    {
+      "product_id": "online:pt:BR:01424-002-2",
+      "status": "patched_price_only",
+      "expected_price": "8999.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~01424-002-2"
+    },
+    {
+      "product_id": "online:pt:BR:553558140-7",
+      "status": "patched_price_only",
+      "expected_price": "1799.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~553558140-7"
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-5",
+      "status": "patched_price_only",
+      "expected_price": "2749.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~AQ9129-170-5"
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-7",
+      "status": "patched_price_only",
+      "expected_price": "3349.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~AQ9129-170-7"
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-9",
+      "status": "patched_price_only",
+      "expected_price": "3349.99",
+      "response_name": "accounts/5297679409/productInputs/pt~BR~AQ9129-170-9"
+    }
+  ],
+  "verify": [
+    {
+      "product_id": "online:pt:BR:01424-002-2",
+      "expected_price": "8999.99",
+      "content_api": {
+        "price": "5999.90",
+        "salePrice": null,
+        "source": "api"
+      },
+      "merchant_v1": {
+        "price": "5999.90",
+        "salePrice": null
+      },
+      "productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ],
+      "content_match_expected": false,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:553558140-7",
+      "expected_price": "1799.99",
+      "content_api": {
+        "price": "1499.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "merchant_v1": {
+        "price": "1499.99",
+        "salePrice": null
+      },
+      "productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ],
+      "content_match_expected": false,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-5",
+      "expected_price": "2749.99",
+      "content_api": {
+        "price": "2599.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "merchant_v1": {
+        "price": "2599.99",
+        "salePrice": null
+      },
+      "productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ],
+      "content_match_expected": false,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-7",
+      "expected_price": "3349.99",
+      "content_api": {
+        "price": "2599.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "merchant_v1": {
+        "price": "2599.99",
+        "salePrice": null
+      },
+      "productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ],
+      "content_match_expected": false,
+      "merchant_v1_match_expected": false
+    },
+    {
+      "product_id": "online:pt:BR:AQ9129-170-9",
+      "expected_price": "3349.99",
+      "content_api": {
+        "price": "2599.99",
+        "salePrice": null,
+        "source": "api"
+      },
+      "merchant_v1": {
+        "price": "2599.99",
+        "salePrice": null
+      },
+      "productstatus_price_issues": [
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        },
+        {
+          "code": "price_updated",
+          "attributeName": "price",
+          "detail": "Your product's price value was automatically updated to match the data on your online store",
+          "description": "Automatic updates: Mismatched price",
+          "resolution": "merchant_action",
+          "servability": "unaffected"
+        }
+      ],
+      "content_match_expected": false,
+      "merchant_v1_match_expected": false
+    }
+  ],
+  "not_performed": [
+    "salePrice write",
+    "automatic item update settings change",
+    "feed fetch/upload",
+    "Shopify write",
+    "Tiny write",
+    "campaign/message/send",
+    "bulk price write"
+  ]
+}

@@ -1,5 +1,7 @@
 # Lições Aprendidas — Grupo Cimino
 
+> LEGACY / SUPERSEDED — arquivo histórico de lições importadas. Não usar paths `/root`, Mem0 ou scripts citados aqui como instrução operacional viva. Para memória atual, usar `memories/hot.md`, `memories/daily/`, ledgers/decisões e rotinas governadas em `/opt/data/hermes_bruno_ingest/hermes-brain`.
+
 ## 🔒 Estratégicas (Permanentes)
 
 ### Dados antes de afirmar

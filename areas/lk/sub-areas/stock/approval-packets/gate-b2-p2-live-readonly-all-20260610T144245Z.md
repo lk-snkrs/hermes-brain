@@ -1,0 +1,445 @@
+# Gate B2 — P2 live read-only completo — 20260610T144245Z
+
+Escopo: investigar a próxima prioridade da worklist com workers locais paralelos, usando Shopify/Tiny read-only. Nenhuma correção externa foi executada.
+
+## Totais
+- priority: `P2_saneamento`
+- workers solicitados: `8`
+- workers concluídos: `8`
+- linhas da worklist cobertas: `425`
+- handles investigados: `408`
+- prefixes investigados: `410`
+- linhas crosswalk live/read-only: `6493`
+
+## Status live/read-only
+- matched_exact_sku_stock_missing_deposit: `225`
+- matched_exact_sku_stock_resolved: `3412`
+- shopify_duplicate_sku_blocked: `236`
+- shopify_variant_tiny_missing: `2606`
+- tiny_duplicate_exact_code_blocked: `14`
+
+## Por handle
+- `990v6-made-in-usa-triple-black` — matched_exact_sku_stock_missing_deposit: 3, matched_exact_sku_stock_resolved: 48, shopify_variant_tiny_missing: 37
+- `adi2000-triple-black` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 3
+- `adidas-adi2000-chalk-white` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 2
+- `adidas-campus-00s-kids-black-white-gum` — matched_exact_sku_stock_resolved: 6, shopify_duplicate_sku_blocked: 1
+- `adidas-samba-collegiate-green` — matched_exact_sku_stock_resolved: 6
+- `adidas-samba-og-white-black-gum` — matched_exact_sku_stock_resolved: 7, shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-elevate-low-guava-ice` — matched_exact_sku_stock_resolved: 3, shopify_variant_tiny_missing: 1
+- `air-jordan-1-elevate-low-se-silver-toe` — matched_exact_sku_stock_resolved: 6
+- `air-jordan-1-high-85-college-navy` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `air-jordan-1-high-chicago-lost-and-found` — matched_exact_sku_stock_resolved: 7, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 5
+- `air-jordan-1-high-dark-mocha` — matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-high-og-denim` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `air-jordan-1-high-og-starfish` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `air-jordan-1-high-patent-bred` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `air-jordan-1-high-seafoam` — shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-high-stage-haze` — matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `air-jordan-1-high-university-blue-unc` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `air-jordan-1-low-all-star-carbon-fiber` — matched_exact_sku_stock_resolved: 1, shopify_variant_tiny_missing: 1
+- `air-jordan-1-low-black-grey-pink` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-low-bred-toe-1` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 2, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 5
+- `air-jordan-1-low-canyon-rust` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-low-cherrywood-red` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-low-crater-grey-university-blue` — shopify_variant_tiny_missing: 2
+- `air-jordan-1-low-gs-fierce-pink` — matched_exact_sku_stock_resolved: 2, shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-low-gs-light-arctic-pink` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-low-gs-rabbit` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-low-lucky-green` — shopify_duplicate_sku_blocked: 2
+- `air-jordan-1-low-og-black-toe-2023` — matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 4
+- `air-jordan-1-low-og-bleached-coral` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `air-jordan-1-low-og-ex-black-and-smoke-grey` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-low-palomino` — shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-low-royal-toe` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `air-jordan-1-low-se-pink-velvet` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 2
+- `air-jordan-1-low-se-sky-j-mauve` — matched_exact_sku_stock_resolved: 4, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `air-jordan-1-low-se-tie-dye` — matched_exact_sku_stock_resolved: 6, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `air-jordan-1-low-se-twine-orange-quartz` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `air-jordan-1-low-se-vivid-orange` — shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-low-shadow-brown` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 5
+- `air-jordan-1-low-smoke-grey-toe-1` — shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-low-taxi` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `air-jordan-1-low-unc-2021` — matched_exact_sku_stock_resolved: 1, shopify_variant_tiny_missing: 4
+- `air-jordan-1-low-vintage-unc-grey` — shopify_variant_tiny_missing: 4
+- `air-jordan-1-low-white-university-red` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `air-jordan-1-mid-aqua-blue-tint` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-mid-gs-fierce-pink` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `air-jordan-1-mid-gs-valentines-day-2023` — matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 2
+- `air-jordan-1-mid-lakers` — matched_exact_sku_stock_resolved: 1, shopify_variant_tiny_missing: 1
+- `air-jordan-1-mid-se-berry-pink` — shopify_duplicate_sku_blocked: 1
+- `air-jordan-1-mid-se-craft-inside-out-black` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 5
+- `air-jordan-1-mid-se-french-blue` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `air-jordan-1-mid-se-light-iron-ore` — shopify_variant_tiny_missing: 2
+- `air-jordan-1-mid-se-red-stardust-white` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 2
+- `air-jordan-1-mid-wolf-grey` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 4
+- `air-jordan-1-retro-low-og-black-cement` — matched_exact_sku_stock_resolved: 3, shopify_variant_tiny_missing: 4
+- `air-jordan-4-frozen-moments` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 5
+- `air-max-1-86-og-big-bubble-sport-red` — shopify_duplicate_sku_blocked: 1
+- `air-max-plus-black-university-blue` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 4
+- `alo-runner-sweet-pink-rosa` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 28, shopify_variant_tiny_missing: 30
+- `ambush-x-nike-air-force-1-low-black` — matched_exact_sku_stock_resolved: 1, shopify_variant_tiny_missing: 1
+- `ambush-x-nike-air-force-1-low-game-royal-and-vivid-sulphur` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 3
+- `ambush-x-nike-air-force-1-low-phantom` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 3
+- `bad-bunny-x-adidas-campus-light-cloud-white` — matched_exact_sku_stock_resolved: 2, shopify_duplicate_sku_blocked: 1
+- `bad-bunny-x-adidas-forum-buckle-low-white` — matched_exact_sku_stock_resolved: 8, shopify_variant_tiny_missing: 7
+- `ben-jerrys-x-dunk-low-sb-chunky-dunky` — shopify_variant_tiny_missing: 6
+- `bolsa-minimal-saint-studio-cacto-caramelo` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 17, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 16
+- `bolsa-minimal-saint-studio-cacto-off-white` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 10, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 10
+- `bone-5-panel-aime-leon-dore-unisphere-azul` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 38, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 40
+- `calca-pace-milli-cargo-azul-marinho` — matched_exact_sku_stock_missing_deposit: 4, matched_exact_sku_stock_resolved: 37, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 37
+- `calca-saint-studio-wide-alfaiataria-caqui` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `camisa-manga-curta-boxy-saint-studio-egipcio-listrada-marinho` — shopify_duplicate_sku_blocked: 1
+- `camiseta-boxy-saint-studio-supima-preto` — shopify_duplicate_sku_blocked: 1
+- `camiseta-fear-of-god-essentials-varsity-90s-short-sleeve-tee-cinza` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 1
+- `camiseta-pace-waffle-knit-off-white` — shopify_duplicate_sku_blocked: 1
+- `camiseta-represent-clo-patron-of-the-club-washed-grey-cinza` — shopify_duplicate_sku_blocked: 1
+- `camiseta-represent-clo-revere-manor-aged-white-branco` — shopify_duplicate_sku_blocked: 1
+- `camiseta-represent-clo-revere-manor-stained-black-preto` — shopify_duplicate_sku_blocked: 1
+- `camiseta-represent-clo-shark-jaws-off-black-preto` — shopify_duplicate_sku_blocked: 1
+- `camiseta-represent-clo-storms-in-heaven-black-preto` — shopify_duplicate_sku_blocked: 1
+- `crocs-classic-clog-x-the-cars-lightning-mcqueen-vermelho` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 3, shopify_variant_tiny_missing: 5
+- `crushed-d-c-x-nike-sb-dunk-low-golden-hour` — shopify_variant_tiny_missing: 5
+- `dunk-low-light-ocean-bliss` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 5, shopify_duplicate_sku_blocked: 1
+- `grateful-dead-x-nike-sb-dunk-low-yellow-bear` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 6
+- `jaqueta-lululemon-define-nulu` — matched_exact_sku_stock_resolved: 9, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 6
+- `jarritos-x-nike-sb-dunk-low` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 3
+- `jersey-off-white-x-nike-allover-print-kelly-green-verde` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 2, shopify_variant_tiny_missing: 2
+- `jordan-1-mid-tropical-twist-igloo-gs` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1
+- `jordan-1-retro-low-og-university-red` — shopify_duplicate_sku_blocked: 1
+- `kasina-x-nike-air-max-1-won-ang-grey` — shopify_duplicate_sku_blocked: 1
+- `lip-case-rhode-by-hailey-bieber` — matched_exact_sku_stock_resolved: 7, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 5
+- `medicom-toy-x-nike-sb-dunk-be-rbrick` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `moletom-becalm-hoodie-cropped-ultra-suave-modal-algodao` — matched_exact_sku_stock_resolved: 1, shopify_variant_tiny_missing: 4
+- `moletom-nude-project-cult-hoodie-black-beige-preto` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 5, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 9
+- `moletom-represent-clo-masking-tape-initial-cedar-marrom` — shopify_duplicate_sku_blocked: 1
+- `new-balance-550-white-pine-green` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 6
+- `new-balance-9060-mineral-red-truffle-rain-cloud` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 3
+- `nike-air-force-1-low-nail-art` — shopify_variant_tiny_missing: 4
+- `nike-air-force-1-low-world-champ` — shopify_variant_tiny_missing: 3
+- `nike-air-force-1-low-world-champ-lakers` — shopify_variant_tiny_missing: 5
+- `nike-air-max-1-87-safari` — matched_exact_sku_stock_resolved: 3, shopify_variant_tiny_missing: 4
+- `nike-air-max-1-baltic-blue-corduroy` — matched_exact_sku_stock_resolved: 1, shopify_variant_tiny_missing: 1
+- `nike-air-max-1-premium-wabi-sabi` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 2
+- `nike-air-max-plus-m-frank-rudy` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 6
+- `nike-air-max-plus-yellow-pink-gradient` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 5
+- `nike-air-max-scorpion-barely-volt` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 3, shopify_variant_tiny_missing: 5
+- `nike-air-max-scorpion-green` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 4
+- `nike-air-max-scorpion-wheat` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 3
+- `nike-dunk-gs-triple-pink` — matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 3
+- `nike-dunk-low-black-panda` — shopify_duplicate_sku_blocked: 1, tiny_duplicate_exact_code_blocked: 1
+- `nike-dunk-low-black-world-champ` — matched_exact_sku_stock_resolved: 1, shopify_variant_tiny_missing: 4
+- `nike-dunk-low-blue-paisley` — matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 2
+- `nike-dunk-low-court-purple` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 5
+- `nike-dunk-low-diffused-taupe` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 5
+- `nike-dunk-low-gorge-green-midnight-navy` — matched_exact_sku_stock_missing_deposit: 5, matched_exact_sku_stock_resolved: 47, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 43
+- `nike-dunk-low-grey-fog` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 3
+- `nike-dunk-low-gs-black-white-metallic` — matched_exact_sku_stock_resolved: 4, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 6
+- `nike-dunk-low-gs-orange-blue` — shopify_variant_tiny_missing: 4
+- `nike-dunk-low-kentucky` — matched_exact_sku_stock_resolved: 4, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 5
+- `nike-dunk-low-light-violet` — shopify_duplicate_sku_blocked: 1
+- `nike-dunk-low-lx-black-team-gold` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `nike-dunk-low-lx-pink-foam` — matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 2
+- `nike-dunk-low-next-nature-lilac` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 4
+- `nike-dunk-low-next-nature-white-gym-red` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `nike-dunk-low-next-nature-white-mint` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 5
+- `nike-dunk-low-oxygen-purple` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 3
+- `nike-dunk-low-pale-ivory-redwood` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 2
+- `nike-dunk-low-patent-halloween` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `nike-dunk-low-pink-foam-black` — matched_exact_sku_stock_resolved: 3, shopify_variant_tiny_missing: 2
+- `nike-dunk-low-pink-paisley` — matched_exact_sku_stock_resolved: 3, shopify_variant_tiny_missing: 5
+- `nike-dunk-low-polar-blue` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 2, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `nike-dunk-low-premium-valentines-day` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 2
+- `nike-dunk-low-racer-blue` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 1
+- `nike-dunk-low-se-animal` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 5
+- `nike-dunk-low-se-fleece-honeydew` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 8
+- `nike-dunk-low-setsubun` — matched_exact_sku_stock_resolved: 8, shopify_variant_tiny_missing: 7
+- `nike-dunk-low-sun-club` — matched_exact_sku_stock_resolved: 1, shopify_variant_tiny_missing: 2
+- `nike-dunk-low-syracuse` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 2
+- `nike-dunk-low-team-red` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `nike-dunk-low-teddy-bear` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 5
+- `nike-dunk-low-ucla` — shopify_duplicate_sku_blocked: 1
+- `nike-dunk-low-university-red` — matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1
+- `nike-dunk-low-white-paisley` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `nike-dunk-sb-grateful-dead-green` — matched_exact_sku_stock_resolved: 1, shopify_variant_tiny_missing: 1
+- `nike-sb-dunk-high-pro-black-and-metallic-gold` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 5
+- `nike-sb-dunk-low-cherry` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `nike-sb-dunk-low-court-purple` — matched_exact_sku_stock_resolved: 5, shopify_duplicate_sku_blocked: 1
+- `nike-sb-dunk-low-elephant` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `nike-sb-dunk-low-pink-pig` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `nike-sb-dunk-low-prm-paisley-brown` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `nike-sb-dunk-low-prm-phillies` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 3
+- `nike-sb-dunk-low-pro-blue-raspberry` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `nike-sb-dunk-low-pro-classic-green` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `nike-sb-dunk-low-pro-iso-dark-russet` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1
+- `nike-sb-dunk-low-pro-iso-grey-gum` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `nike-sb-dunk-low-sandy-ebay-2022` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 3
+- `nike-sb-dunk-low-strangelove` — shopify_variant_tiny_missing: 2
+- `nike-sb-dunk-low-vx-1000-camcorder` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `nike-sb-x-air-jordan-4-retro-pine-green` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 4
+- `nike-x-nocta-x-cpfm-t-shirt-white` — shopify_duplicate_sku_blocked: 1
+- `nike-x-off-white-short-sleeve-top-black` — shopify_variant_tiny_missing: 1
+- `oculos-de-sol-balenciaga-bb0133s-001-preto` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 1
+- `off-white-x-air-jordan-4-sail` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 1
+- `off-white-x-nike-air-force-1-low-green-brooklyn` — shopify_variant_tiny_missing: 3
+- `onitsuka-tiger-mexico-66-sd-metallic-series-jade-cream-verde` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 5
+- `onitsuka-tiger-mexico-66-white` — matched_exact_sku_stock_resolved: 12, shopify_variant_tiny_missing: 9
+- `onitsuka-tiger-moage-co-oyster-grey-feather-grey` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 33, shopify_variant_tiny_missing: 37
+- `parra-x-nike-sb-dunk-low-pro-abstract-art` — matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1
+- `polo-comme-des-garcons-play-branco` — shopify_duplicate_sku_blocked: 1
+- `pre-venda-camiseta-manga-longa-adidas-x-korn` — matched_exact_sku_stock_resolved: 1, shopify_variant_tiny_missing: 5
+- `pre-venda-tenis-korn-x-adidas-campus-2-0-carbon-cinza` — matched_exact_sku_stock_missing_deposit: 1, shopify_variant_tiny_missing: 6, tiny_duplicate_exact_code_blocked: 1
+- `rhode-pocket-blush` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 1
+- `run-the-jewels-x-dunk-low-sb-4-20` — matched_exact_sku_stock_resolved: 4, shopify_duplicate_sku_blocked: 1
+- `samba-og-white-scarlet` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `sean-cliver-x-dunk-low-sb-holiday-special` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `shorts-pace-midmasa-tailored-charcoal` — matched_exact_sku_stock_resolved: 35, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 43
+- `shorts-represent-clo-owners-club-flat-white-branco` — shopify_duplicate_sku_blocked: 1
+- `slide-nike-mind-001-blackened-blue-azul` — matched_exact_sku_stock_missing_deposit: 3, matched_exact_sku_stock_resolved: 50, shopify_variant_tiny_missing: 47, tiny_duplicate_exact_code_blocked: 1
+- `slide-nike-mind-001-geode-teal-verde` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 53, shopify_variant_tiny_missing: 45, tiny_duplicate_exact_code_blocked: 1
+- `slide-nike-mind-001-mineral-slate-verde` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 47, shopify_variant_tiny_missing: 51, tiny_duplicate_exact_code_blocked: 1
+- `slide-nike-mind-001-pearl-pink-rosa` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 6
+- `slide-nike-mind-001-sail-bege` — matched_exact_sku_stock_missing_deposit: 3, matched_exact_sku_stock_resolved: 49, shopify_variant_tiny_missing: 48, tiny_duplicate_exact_code_blocked: 1
+- `slide-nike-mind-001-white-speed-red-branco` — matched_exact_sku_stock_missing_deposit: 4, matched_exact_sku_stock_resolved: 50, shopify_variant_tiny_missing: 46, tiny_duplicate_exact_code_blocked: 1
+- `stussy-x-nike-air-force-1-triple-black` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 3
+- `tenis-adidas-badbo-1-0-rise-branco` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 7
+- `tenis-adidas-ballerina-bad-bunny-flamboyan-vermelho` — matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 5
+- `tenis-adidas-campus-00s-crystal-white-branco` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `tenis-adidas-campus-00s-grey-three-cinza` — matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `tenis-adidas-gazelle-indor-active-marron-vermelho` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 5, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 5
+- `tenis-adidas-gazelle-indor-beam-pink-solar-red-rosa` — matched_exact_sku_stock_resolved: 2, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `tenis-adidas-gazelle-x-clot-by-edison-chen-halo-ivory-bege` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `tenis-adidas-handball-spezial-preloved-green-verde` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 3
+- `tenis-adidas-handball-spezial-sporty-rich-pink-rosa` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `tenis-adidas-responce-cl-x-bad-bunny-wonder-branco` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 3
+- `tenis-adidas-samba-cardboard-marrom` — matched_exact_sku_stock_resolved: 7, shopify_duplicate_sku_blocked: 1
+- `tenis-adidas-samba-jane-chalk-white-wonder-quartz-branco` — matched_exact_sku_stock_missing_deposit: 1, shopify_variant_tiny_missing: 6
+- `tenis-adidas-samba-og-crystal-linen-ivory-gum-branco` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 1, shopify_variant_tiny_missing: 6
+- `tenis-adidas-samba-og-night-navy-gum-azul-marinho` — matched_exact_sku_stock_resolved: 2, shopify_duplicate_sku_blocked: 1
+- `tenis-adidas-samba-og-off-white-oat-violet-tone-branco` — matched_exact_sku_stock_resolved: 6
+- `tenis-adidas-samba-og-valentines-day` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 3, shopify_variant_tiny_missing: 3
+- `tenis-adidas-samba-x-humanrace-navy-aluminum-cinza` — matched_exact_sku_stock_resolved: 2, shopify_duplicate_sku_blocked: 1
+- `tenis-adidas-samba-x-wales-bonner-wonder-white-marrom` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `tenis-adidas-sambae-cloud-white-branco` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 4
+- `tenis-adidas-sambae-cloud-white-collegiate-green-branco` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 1
+- `tenis-adidas-sambae-x-kseniaschnaiderc-black-multicolor-colorido` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1
+- `tenis-adidas-sl72-rs-cloud-white-core-black-spark-branco` — matched_exact_sku_stock_resolved: 6, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `tenis-adidas-stella-mccartney-x-adidas-wmns-sportswear-x-trainers-core-black-preto` — shopify_variant_tiny_missing: 6
+- `tenis-adidas-taekwondo-mei-ballet-cream-white-branco` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 4
+- `tenis-adidas-tokyo-crew-white-floral-embroidery-branco` — shopify_duplicate_sku_blocked: 1
+- `tenis-adidas-tokyo-mary-jane-black-cream-white-gold-metallic-preto` — matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 4, shopify_variant_tiny_missing: 4
+- `tenis-adidas-tokyo-mary-jane-cream-white-red-gold-metallic-creme` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 5
+- `tenis-adidas-tokyo-mary-jane-crystal-sky-cream-white-azul` — matched_exact_sku_stock_resolved: 3, shopify_variant_tiny_missing: 5
+- `tenis-adidas-yeezy-boost-350-v2-zyon-marrom` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 6
+- `tenis-air-jordan-1-high-og-green-glow-verde` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 39, shopify_duplicate_sku_blocked: 3, shopify_variant_tiny_missing: 42, tiny_duplicate_exact_code_blocked: 1
+- `tenis-air-jordan-1-high-og-sp-x-travis-scott-mocha` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `tenis-air-jordan-1-low-archaeo-brown-nike-casual` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 39, shopify_duplicate_sku_blocked: 7, shopify_variant_tiny_missing: 38
+- `tenis-air-jordan-1-low-dark-grey-womans-cinza` — shopify_duplicate_sku_blocked: 1
+- `tenis-air-jordan-1-low-eastside-golf-azul-marinho` — matched_exact_sku_stock_resolved: 3, tiny_duplicate_exact_code_blocked: 1
+- `tenis-air-jordan-1-low-floral-canvas-rosa` — shopify_duplicate_sku_blocked: 1
+- `tenis-air-jordan-1-low-galactic-jade-verde` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `tenis-air-jordan-1-low-light-green-verde` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 3
+- `tenis-air-jordan-1-low-og-sp-x-travis-scott-velvet-brown-marrom` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 16, shopify_duplicate_sku_blocked: 3, shopify_variant_tiny_missing: 16
+- `tenis-air-jordan-1-low-purple-roxo` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 5
+- `tenis-air-jordan-1-low-se-craft-inside-out-taupe-haze-bege` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `tenis-air-jordan-1-low-se-gs-gold-toe-preto` — shopify_duplicate_sku_blocked: 1
+- `tenis-air-jordan-1-low-se-legend-coffee-marrom` — matched_exact_sku_stock_resolved: 2, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 6
+- `tenis-air-jordan-1-low-se-silver-metallic-cinza` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 3
+- `tenis-air-jordan-1-low-sky-j-purple-roxo` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 4
+- `tenis-air-jordan-1-low-x-paris-saint-germain-sail-and-off-noir-preto` — matched_exact_sku_stock_resolved: 4, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `tenis-air-jordan-1-low-year-of-dragon-2024-vinho` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 2
+- `tenis-air-jordan-1-mid-gs-rookie-season-branco-vermelho` — matched_exact_sku_stock_resolved: 4, shopify_duplicate_sku_blocked: 1
+- `tenis-air-jordan-1-retro-high-og-unc-reimagined-nike-esportivo-couro` — matched_exact_sku_stock_missing_deposit: 4, matched_exact_sku_stock_resolved: 41, shopify_duplicate_sku_blocked: 3, shopify_variant_tiny_missing: 37, tiny_duplicate_exact_code_blocked: 1
+- `tenis-air-jordan-1-retro-low-og-sp-trophy-room-rookie-card-away` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `tenis-air-jordan-4-bred-reimagined-preto` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 5
+- `tenis-air-jordan-4-og-sp-x-nigel-sylvester-brick-after-brick-branco` — matched_exact_sku_stock_resolved: 8, shopify_variant_tiny_missing: 6
+- `tenis-air-jordan-4-retro-military-black-branco` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `tenis-air-jordan-4-retro-military-blue-branco` — matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 6
+- `tenis-air-jordan-4-retro-og-nike-white-cement-couro` — matched_exact_sku_stock_missing_deposit: 3, matched_exact_sku_stock_resolved: 28, shopify_duplicate_sku_blocked: 2, shopify_variant_tiny_missing: 18
+- `tenis-air-jordan-4-retro-red-cement-branco` — shopify_duplicate_sku_blocked: 1
+- `tenis-alo-yoga-alo-recovery-mode-sneaker-pink-wild-rose-rosa-copia` — matched_exact_sku_stock_missing_deposit: 3, matched_exact_sku_stock_resolved: 19, shopify_variant_tiny_missing: 12
+- `tenis-alo-yoga-alo-sunset-sneaker-sandstone-bege` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 10, shopify_variant_tiny_missing: 10
+- `tenis-asics-gel-1130-white-clay-canyon-branco` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 5
+- `tenis-asics-gel-1130-white-pure-silver-prata` — matched_exact_sku_stock_resolved: 8, shopify_variant_tiny_missing: 4
+- `tenis-asics-gel-kayano-14-x-senna-white-red-branco` — matched_exact_sku_stock_resolved: 6, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `tenis-asics-gel-nyc-graphite-grey-black-preto` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 6
+- `tenis-asics-marvel-vs-capcom-x-kith-x-asics-gel-kayano-14-ryu-branco` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 3
+- `tenis-jordan-1-low-dune-red-vermelho` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 5
+- `tenis-jordan-1-retro-high-og-sp-fragment-x-union-la-sport-royal` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 15, shopify_variant_tiny_missing: 9
+- `tenis-jordan-11-retro-low-university-blue-2026-azul` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 8
+- `tenis-jordan-4-retro-lakers-roxo` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 29, shopify_duplicate_sku_blocked: 2, shopify_variant_tiny_missing: 19
+- `tenis-jordan-5-retro-white-metallic-2026-metalizado` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 7, shopify_variant_tiny_missing: 4
+- `tenis-jordan-5-retro-wolf-grey-2026-cinza` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 6
+- `tenis-jordan-jumpman-jack-tr-travis-scott-bright-cactus-couro-lona` — matched_exact_sku_stock_resolved: 6, shopify_duplicate_sku_blocked: 3, shopify_variant_tiny_missing: 4
+- `tenis-new-balance-1906l-black-suede-preto` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 6
+- `tenis-new-balance-1906l-khaki-bege` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 5, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 5
+- `tenis-new-balance-1906l-rich-oak-suede-camurca-slip-on` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 7, shopify_variant_tiny_missing: 4
+- `tenis-new-balance-1906l-silver-shadow-grey-mesh-sintetico-slip-on` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 6
+- `tenis-new-balance-2002r-protection-pack-phantom-cinza-camurca-mesh` — shopify_duplicate_sku_blocked: 1
+- `tenis-new-balance-2002r-protection-pack-rain-cloud-suede-mesh` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `tenis-new-balance-204l-cortado-marrom` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 52, shopify_variant_tiny_missing: 34
+- `tenis-new-balance-204l-lone-star-grey-cinza` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 6
+- `tenis-new-balance-204l-reflection-bege` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 6
+- `tenis-new-balance-204l-sea-salt-linen-bege` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 7
+- `tenis-new-balance-530-beige-angora-creme-1069960456` — matched_exact_sku_stock_resolved: 8, shopify_variant_tiny_missing: 1
+- `tenis-new-balance-530-grey-matter-silver-metallic-cinza` — matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1
+- `tenis-new-balance-530-sea-salt-white-mercury-rede-branco` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `tenis-new-balance-530-stoneware-line-branco` — matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1
+- `tenis-new-balance-530-turtledove-mushroom-mesh-casual` — matched_exact_sku_stock_missing_deposit: 5, matched_exact_sku_stock_resolved: 52, shopify_variant_tiny_missing: 31
+- `tenis-new-balance-530-x-salehe-bembury-prosperity-be-the-prize-verde` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `tenis-new-balance-9060-chrome-blue-azul` — matched_exact_sku_stock_missing_deposit: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `tenis-new-balance-9060-driftwood-castlerock-marrom` — shopify_duplicate_sku_blocked: 1
+- `tenis-new-balance-9060-eclipse-azul-marinho` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `tenis-new-balance-9060-grey-day-2025-esportivo-casual` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 7
+- `tenis-new-balance-9060-kids-rose-sugar-ice-wine-rosa` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 3
+- `tenis-new-balance-9060-moonbeam-vintage-rose-lime-colorido` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `tenis-new-balance-9060-nori-verde` — matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `tenis-new-balance-9060-olivine-verde` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 4, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `tenis-new-balance-9060-pink-granite-silver-metallic-silver-cinza` — matched_exact_sku_stock_resolved: 4, shopify_duplicate_sku_blocked: 1
+- `tenis-new-balance-9060-rain-cloud-grey-cinza` — matched_exact_sku_stock_resolved: 2, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 5
+- `tenis-new-balance-9060-reflection-raincloud-quarry-blue-bege` — matched_exact_sku_stock_resolved: 8, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `tenis-new-balance-990v6-made-in-usa-cinza-castlerock` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 6
+- `tenis-new-balance-997-made-in-usa-x-aime-leon-dore-dark-moss-angora-marrom` — matched_exact_sku_stock_resolved: 5, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `tenis-new-balance-gator-run-black-preto` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 5
+- `tenis-new-balance-gator-run-shadow-red-vermelho` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 6
+- `tenis-new-balance-gator-run-star-burst-bege` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 6
+- `tenis-new-balance-gator-run-timberwolf-bege` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 5
+- `tenis-nike-air-force-1-low-protro-kobe-bryant-siempre-hermanos-marrom` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 7
+- `tenis-nike-air-force-1-low-x-a-ma-maniere-while-you-were-sleeping-rose` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 6, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 8
+- `tenis-nike-air-force-1-low-x-supreme-wheat-marrom` — matched_exact_sku_stock_resolved: 6, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `tenis-nike-air-jordan-1-high-fragment-design-x-union-la-varsity-red-branco` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 14, shopify_variant_tiny_missing: 9
+- `tenis-nike-air-jordan-1-high-virgil-abloh-archive-x-alaska-branco` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 8, shopify_variant_tiny_missing: 5
+- `tenis-nike-air-jordan-1-low-og-chinese-new-year-2026-cinza` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 5
+- `tenis-nike-air-jordan-1-low-se-repaired-denim-swoosh-azul` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 2
+- `tenis-nike-air-jordan-1-retro-high-og-sp-union-la-chicago-shadow` — matched_exact_sku_stock_resolved: 16, shopify_variant_tiny_missing: 14
+- `tenis-nike-air-jordan-1-retro-low-og-howard-university-vermelho` — shopify_variant_tiny_missing: 12
+- `tenis-nike-air-jordan-1-retro-low-og-sp-travis-scott-sail-tropical-pink-rosa` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 5, shopify_duplicate_sku_blocked: 10, shopify_variant_tiny_missing: 8
+- `tenis-nike-air-jordan-1-retro-low-og-sp-travis-scott-shy-pink-bege` — matched_exact_sku_stock_resolved: 4, shopify_duplicate_sku_blocked: 10, shopify_variant_tiny_missing: 10
+- `tenis-nike-air-jordan-4-retro-black-cat-preto` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 29, shopify_duplicate_sku_blocked: 2, shopify_variant_tiny_missing: 18
+- `tenis-nike-air-jordan-4-retro-og-sp-brick-by-brick-camurca-firewood-orange` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 16, shopify_variant_tiny_missing: 13
+- `tenis-nike-air-jordan-chase-b-x-travis-scott-x-jumpman-jack-tr-black-night-silver-preto` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 6
+- `tenis-nike-air-liquid-max-x-fragment-design-black-anthracite-preto` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 6
+- `tenis-nike-air-max-1-x-patta-hyper-crimson-branco` — matched_exact_sku_stock_resolved: 7, shopify_variant_tiny_missing: 1
+- `tenis-nike-air-max-1-x-patta-monarch-laranja` — matched_exact_sku_stock_resolved: 10, shopify_variant_tiny_missing: 9
+- `tenis-nike-air-max-1-x-patta-noise-aqua-azul` — matched_exact_sku_stock_resolved: 9, shopify_variant_tiny_missing: 10
+- `tenis-nike-air-max-90-x-patta-sp-cyber-branco` — matched_exact_sku_stock_resolved: 10, shopify_variant_tiny_missing: 13
+- `tenis-nike-air-max-90-x-patta-sp-sapphire-azul-branco` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 15, shopify_variant_tiny_missing: 7
+- `tenis-nike-air-rift-sail-bege` — matched_exact_sku_stock_resolved: 12, shopify_variant_tiny_missing: 7
+- `tenis-nike-air-zoom-vomero-5-doernbecher-2023-laranja` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 5
+- `tenis-nike-cortez-forrest-gump-2024-branco` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 5
+- `tenis-nike-cortez-picante-red-vermelho` — matched_exact_sku_stock_resolved: 9, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 9
+- `tenis-nike-cortez-white-laser-fuchsia-branco` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `tenis-nike-craft-general-purpose-shoe-tom-sachs` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 29, shopify_variant_tiny_missing: 14
+- `tenis-nike-craft-general-purpose-shoe-tom-sachs-archive-dark-sulfur` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 22, shopify_variant_tiny_missing: 22
+- `tenis-nike-craft-general-purpose-shoe-tom-sachs-field-brown-marrom` — matched_exact_sku_stock_resolved: 25, shopify_variant_tiny_missing: 20
+- `tenis-nike-dunk-low-concord-roxo` — matched_exact_sku_stock_resolved: 23, shopify_duplicate_sku_blocked: 3, shopify_variant_tiny_missing: 14
+- `tenis-nike-dunk-low-indigo-haze-roxo` — matched_exact_sku_stock_missing_deposit: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `tenis-nike-dunk-low-light-carbon-cinza` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 7, shopify_variant_tiny_missing: 1
+- `tenis-nike-dunk-low-prm-lilac-bloom-colorido` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 2
+- `tenis-nike-dunk-low-se-just-do-it-white-phantom-branco` — matched_exact_sku_stock_resolved: 4, shopify_variant_tiny_missing: 3
+- `tenis-nike-dunk-low-university-blue-azul` — matched_exact_sku_stock_resolved: 4, shopify_duplicate_sku_blocked: 2, shopify_variant_tiny_missing: 5, tiny_duplicate_exact_code_blocked: 2
+- `tenis-nike-dunk-low-x-off-white-lot-23-cinza` — matched_exact_sku_stock_resolved: 3, shopify_variant_tiny_missing: 1
+- `tenis-nike-dunk-sb-x-verdy-visty-azul` — matched_exact_sku_stock_resolved: 4, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `tenis-nike-kobe-11-protro-mamba-day-dourado` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 7, shopify_variant_tiny_missing: 4
+- `tenis-nike-kobe-5-protro-lower-merion-aces-away-prata` — matched_exact_sku_stock_resolved: 8, shopify_variant_tiny_missing: 4
+- `tenis-nike-mind-002-black-hyper-crimson-preto` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 22, shopify_variant_tiny_missing: 12
+- `tenis-nike-mind-002-grey-football-grey-cinza` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 17, shopify_variant_tiny_missing: 15
+- `tenis-nike-mind-002-light-khaki-bege` — matched_exact_sku_stock_resolved: 13, shopify_variant_tiny_missing: 10
+- `tenis-nike-mind-002-light-smoke-grey-cinza` — matched_exact_sku_stock_resolved: 17, shopify_variant_tiny_missing: 19
+- `tenis-nike-mind-002-light-violet-ore-roxo` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 18, shopify_variant_tiny_missing: 14
+- `tenis-nike-mind-002-sail-bege` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 17, shopify_variant_tiny_missing: 15
+- `tenis-nike-mind-002-thunder-blue-azul` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 22, shopify_variant_tiny_missing: 12
+- `tenis-nike-moon-shoe-sp-jacquemus-medium-brown` — matched_exact_sku_stock_missing_deposit: 3, matched_exact_sku_stock_resolved: 40, shopify_duplicate_sku_blocked: 2, shopify_variant_tiny_missing: 27, tiny_duplicate_exact_code_blocked: 1
+- `tenis-nike-moon-shoe-sp-jacquemus-off-noir-preto` — matched_exact_sku_stock_missing_deposit: 4, matched_exact_sku_stock_resolved: 42, shopify_duplicate_sku_blocked: 2, shopify_variant_tiny_missing: 25
+- `tenis-nike-moon-shoe-sp-jacquemus-off-white` — matched_exact_sku_stock_missing_deposit: 3, matched_exact_sku_stock_resolved: 40, shopify_duplicate_sku_blocked: 2, shopify_variant_tiny_missing: 27, tiny_duplicate_exact_code_blocked: 1
+- `tenis-nike-moon-shoe-sp-jacquemus-pale-pink-rosa` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 41, shopify_duplicate_sku_blocked: 2, shopify_variant_tiny_missing: 28
+- `tenis-nike-moon-shoe-sp-jacquemus-university-red-vermelho` — matched_exact_sku_stock_missing_deposit: 3, matched_exact_sku_stock_resolved: 40, shopify_duplicate_sku_blocked: 2, shopify_variant_tiny_missing: 28
+- `tenis-nike-sb-dunk-low-pro-bluetile-skateboards-azul` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 6
+- `tenis-nike-sb-dunk-low-pro-muni-lightning-denim-turquoise-turquesa` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 6
+- `tenis-nike-sb-dunk-low-x-rayssa-leal-bege` — matched_exact_sku_stock_resolved: 7, shopify_variant_tiny_missing: 3
+- `tenis-nike-shox-tl-black-cave-stone-preto` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 5
+- `tenis-nike-shox-tl-black-dynamic-yellow-preto` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 4
+- `tenis-nike-shox-tl-blue-tint-orange-azul` — matched_exact_sku_stock_missing_deposit: 3, matched_exact_sku_stock_resolved: 16, shopify_variant_tiny_missing: 10
+- `tenis-nike-shox-tl-orewood-brown-cave-stone-bege` — matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 5
+- `tenis-nike-shox-tl-pumice-night-maroon-cinza` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 14, shopify_variant_tiny_missing: 13
+- `tenis-nike-shox-tl-sunrise-gradient-laranja` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 5
+- `tenis-nike-shox-tl-velvet-brown-denim-turquoise-marrom` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 3, shopify_variant_tiny_missing: 3
+- `tenis-nike-vomero-premium-barely-green-verde` — matched_exact_sku_stock_missing_deposit: 4, matched_exact_sku_stock_resolved: 36, shopify_variant_tiny_missing: 21
+- `tenis-nike-vomero-premium-pearl-pink-rosa` — matched_exact_sku_stock_missing_deposit: 4, matched_exact_sku_stock_resolved: 35, shopify_variant_tiny_missing: 22
+- `tenis-nike-vomero-premium-tangerine-tint-laranja` — matched_exact_sku_stock_missing_deposit: 3, matched_exact_sku_stock_resolved: 35, shopify_variant_tiny_missing: 23
+- `tenis-nike-vomero-premium-volt-tint-sapphire-verde` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 14, shopify_variant_tiny_missing: 7
+- `tenis-nike-vomero-premium-x-melitta-baumeister-total-orange-laranja` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 7, shopify_variant_tiny_missing: 5
+- `tenis-nike-vomero-premium-x-renegade-x-cinnamon-marrom` — matched_exact_sku_stock_resolved: 8, shopify_variant_tiny_missing: 1
+- `tenis-nike-x-skims-rift-mesh-archaeo-brown-marrom` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 5
+- `tenis-nike-x-tom-sachs-mars-yard-3-0-bege` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 7, shopify_variant_tiny_missing: 4
+- `tenis-on-cloudtilt-2-x-loewe-sand-white-branco` — shopify_duplicate_sku_blocked: 1
+- `tenis-on-running-cloudtilt-preto-e-branco` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 7, shopify_variant_tiny_missing: 5
+- `tenis-on-running-x-kith-on-k-tech-2-spirulina-barley-verde` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 5
+- `tenis-onitsuka-tiger-mexico-66-fringe-mocha-brown-dark-brown-marrom` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 43, shopify_variant_tiny_missing: 27
+- `tenis-onitsuka-tiger-mexico-66-fringe-yellow-black-amarelo` — matched_exact_sku_stock_missing_deposit: 4, matched_exact_sku_stock_resolved: 42, shopify_variant_tiny_missing: 26
+- `tenis-onitsuka-tiger-mexico-66-sabot-beige-green-bege` — matched_exact_sku_stock_resolved: 6, shopify_variant_tiny_missing: 5
+- `tenis-onitsuka-tiger-mexico-66-sabot-birch-peacoat-bege` — shopify_duplicate_sku_blocked: 1
+- `tenis-onitsuka-tiger-mexico-66-sabot-black-black-preto` — matched_exact_sku_stock_missing_deposit: 4, matched_exact_sku_stock_resolved: 45, shopify_variant_tiny_missing: 23
+- `tenis-onitsuka-tiger-mexico-66-sabot-dark-brown-marrom` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 44, shopify_variant_tiny_missing: 26
+- `tenis-onitsuka-tiger-mexico-66-sabot-pure-silver-cream-cinza` — matched_exact_sku_stock_missing_deposit: 3, matched_exact_sku_stock_resolved: 41, shopify_variant_tiny_missing: 28
+- `tenis-onitsuka-tiger-mexico-66-sd-metallic-series-pale-mint-cream-azul` — shopify_duplicate_sku_blocked: 1
+- `tenis-onitsuka-tiger-mexico-66-white-blue-branco` — matched_exact_sku_stock_resolved: 5, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 4
+- `tenis-onitsuka-tiger-tokuten-charcoal-birch-cinza` — matched_exact_sku_stock_resolved: 11, shopify_variant_tiny_missing: 1
+- `tenis-onitsuka-tiger-x-versace-sakura-leather-loafers-brown-blue-marrom` — matched_exact_sku_stock_missing_deposit: 5, matched_exact_sku_stock_resolved: 59, shopify_variant_tiny_missing: 37
+- `tenis-onitsuka-tiger-x-versace-sakura-leather-loafers-brown-white-marrom` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 7, shopify_variant_tiny_missing: 3
+- `tenis-onitsuka-tiger-x-versace-tai-chi-sakura-metallic-sneakers-silver-gold-prateado` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 77, shopify_variant_tiny_missing: 22
+- `tenis-onitsuka-tiger-x-versace-tai-chi-sakura-nappa-sneakers-black-brown-preto` — matched_exact_sku_stock_missing_deposit: 4, matched_exact_sku_stock_resolved: 88, shopify_variant_tiny_missing: 9
+- `tenis-onitsuka-tiger-x-versace-tai-chi-sakura-nappa-sneakers-brown-yellow-amarelo` — matched_exact_sku_stock_missing_deposit: 4, matched_exact_sku_stock_resolved: 61, shopify_variant_tiny_missing: 36
+- `tenis-onitsuka-tiger-x-versace-tai-chi-sakura-nappa-sneakers-pink-rosa` — matched_exact_sku_stock_missing_deposit: 3, matched_exact_sku_stock_resolved: 73, shopify_variant_tiny_missing: 25
+- `tenis-onitsuka-tiger-x-versace-tai-chi-sakura-suede-sneakers-blue-azul` — matched_exact_sku_stock_missing_deposit: 3, matched_exact_sku_stock_resolved: 60, shopify_variant_tiny_missing: 38
+- `tenis-onitsuka-tiger-x-versace-tai-chi-sakura-suede-sneakers-brown-bege` — matched_exact_sku_stock_resolved: 8, shopify_variant_tiny_missing: 3
+- `tenis-onitsuka-tiger-x-versace-tai-chi-sakura-suede-sneakers-green` — matched_exact_sku_stock_missing_deposit: 4, matched_exact_sku_stock_resolved: 61, shopify_variant_tiny_missing: 36
+- `tenis-puma-speedcat-archive-haute-coffee-frosted-ivory-marrom` — matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 3
+- `tenis-puma-speedcat-silk-chocotart-warm-white-marrom` — matched_exact_sku_stock_resolved: 10, shopify_variant_tiny_missing: 2
+- `tenis-swarovski-x-air-jordan-1-retro-low-og-shadow-cinza` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `tenis-tom-sachs-x-nikecraft-general-purpose-summit-white-branco` — matched_exact_sku_stock_missing_deposit: 2, matched_exact_sku_stock_resolved: 25, shopify_variant_tiny_missing: 18
+- `tenis-travis-scott-x-jordan-jumpman-jack-tr-dark-mocha-nobuck-lona` — matched_exact_sku_stock_resolved: 9, shopify_duplicate_sku_blocked: 3, shopify_variant_tiny_missing: 1
+- `tenis-travis-scott-x-jordan-jumpman-jack-tr-sail-couro-lona-marrom` — shopify_duplicate_sku_blocked: 1
+- `tenis-vans-knu-old-skool-black-white-preto` — shopify_duplicate_sku_blocked: 1
+- `tenis-vans-knu-skool-mte-1-lx-imran-potato-azul` — shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `tenis-vans-old-skool-lx-x-bape-abc-camo-pink-blue-green-preto` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 4, shopify_duplicate_sku_blocked: 1
+- `the-grinch-x-adidas-forum-low-green` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 3, shopify_variant_tiny_missing: 2
+- `the-peptide-lip-tints-rhode-limited-edition-shade-dourado` — shopify_duplicate_sku_blocked: 1
+- `the-peptide-lip-tints-rhode-multicolor` — matched_exact_sku_stock_resolved: 9, shopify_duplicate_sku_blocked: 3, shopify_variant_tiny_missing: 4
+- `the-powerpuff-girls-x-nike-sb-dunk-low-blossom` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 8, shopify_variant_tiny_missing: 2
+- `the-powerpuff-girls-x-nike-sb-dunk-low-bubbles` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 8, shopify_variant_tiny_missing: 3
+- `tiffany-co-x-nike-air-force-1-low-1837` — matched_exact_sku_stock_resolved: 5, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 1
+- `tightbooth-x-nike-sb-dunk-low-pro-black-white` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 7, shopify_variant_tiny_missing: 2
+- `travis-scott-x-nike-air-max-1-cactus-brown` — matched_exact_sku_stock_resolved: 12, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 7
+- `wmns-air-jordan-1-mid-canyon-rust` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 28, shopify_variant_tiny_missing: 1
+- `yeezy-350-v2-static-non-reflective-2023` — shopify_duplicate_sku_blocked: 1
+- `yeezy-boost-350-v2-bone` — matched_exact_sku_stock_resolved: 9, shopify_variant_tiny_missing: 5
+- `yeezy-boost-350-v2-citrin` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 3, shopify_variant_tiny_missing: 2
+- `yeezy-boost-350-v2-earth-bege` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 8, shopify_variant_tiny_missing: 4
+- `yeezy-boost-350-v2-mono-ice` — matched_exact_sku_stock_resolved: 9, shopify_variant_tiny_missing: 1
+- `yeezy-boost-350-v2-oreo` — matched_exact_sku_stock_resolved: 3, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 2
+- `yeezy-boost-350-v2-zebra` — matched_exact_sku_stock_resolved: 1, shopify_duplicate_sku_blocked: 1, shopify_variant_tiny_missing: 5
+- `yeezy-foam-runner-carbon` — shopify_duplicate_sku_blocked: 1
+- `yeezy-foam-runner-mx-cinder` — shopify_duplicate_sku_blocked: 1
+- `yeezy-foam-runner-mx-sand-grey` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 5, shopify_variant_tiny_missing: 1
+- `yeezy-foam-runner-onyx` — shopify_duplicate_sku_blocked: 1
+- `yeezy-slide-glow-green` — shopify_duplicate_sku_blocked: 1
+- `yeezy-slide-onyx` — shopify_duplicate_sku_blocked: 1
+- `yu-gi-oh-x-adi2000-yugis-world` — matched_exact_sku_stock_resolved: 2, shopify_variant_tiny_missing: 5
+- `yu-gi-oh-x-adidas-adi2000-dark-magician` — matched_exact_sku_stock_missing_deposit: 1, matched_exact_sku_stock_resolved: 8, shopify_variant_tiny_missing: 1
+- `yuto-horigome-x-dunk-low-sb-matcha` — matched_exact_sku_stock_resolved: 12, shopify_variant_tiny_missing: 1
+
+## Artefatos
+- JSON: `areas/lk/sub-areas/stock/reports/gate-b2-p2-live-readonly-all-20260610T144245Z.json`
+- CSV: `areas/lk/sub-areas/stock/reports/gate-b2-p2-live-readonly-all-20260610T144245Z.csv`
+- diretório workers: `areas/lk/sub-areas/stock/reports/gate-b2-p2-live-readonly-workers-20260610T144245Z`
+
+## Guardrails
+- Tiny write: `0`
+- Shopify write: `0`
+- Writes externos: `0`
+- Cron/webhook/runtime novo: `0`
+- Promessa de disponibilidade pública/pronta entrega: `0`
+- Saldos Tiny lidos são evidência interna e precisam de reconfirmação/fonte viva antes de atendimento.
+
+## Próximo gate recomendado
+Revisar packets de correção por handle/lane com diff/rollback/readback proposto. Não executar writes sem aprovação escopada.

@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "blocked_sensitive_material": 2,
+    "needs_lucas_context": 3
+  },
+  "fail": 0,
+  "live_history": {
+    "attempted": 5,
+    "blocked": 0,
+    "errors": 0,
+    "fetched": 5,
+    "gmail_attempted": 0,
+    "gmail_errors": 0,
+    "gmail_fetched": 0
+  },
+  "mode": "dry_run_multichannel_history_no_send",
+  "qa": {
+    "raw_pii_failure_count": 0,
+    "raw_pii_failures": []
+  },
+  "raw_pii_findings": [],
+  "scope": "lcmordomo-p110",
+  "source_count": 5,
+  "warn": 0
+}

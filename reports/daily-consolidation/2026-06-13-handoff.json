@@ -1,0 +1,182 @@
+{
+  "operational_date": "2026-06-13",
+  "generated_at_utc": "2026-06-13T04:04:03Z",
+  "status": "healthy",
+  "executive_summary": "Fechamento 01h BRT saudável. Brain Health final FAIL=0 WARN=0 após auto-fix A0 no MAPA de LK Atendimento; Brain Improvement Score 94/100. Sinais materiais: Reminder OS/handoffs terminou PASS sem loops ativos, 11 loops conservadores expirados a pedido de Lucas, Klaviyo Wishlist Flow V478R8 teve upload/associação técnica aprovada mas segue manual e sem envio, e o preflight 02h ganhou nightly_self_improvement_regression sem criar cron novo.",
+  "material_changes": [
+    {
+      "domain": "Reminder OS",
+      "change": "Contrato de handoff funcional auditado e reforçado em Brain/profile AGENTS; health gate cobre gaps de AGENTS e teste sintético cross-agent.",
+      "evidence": [
+        "reports/reminder-os/health-gate-2026-06-12-after-profile-agents-coverage.md",
+        "reports/reminder-os/synthetic-cross-agent-handoff-2026-06-12.md"
+      ],
+      "external_writes": 0
+    },
+    {
+      "domain": "Reminder OS",
+      "change": "11 loops conservadores de backfill expirados após correção de Lucas; ledger final sem ativos/due.",
+      "evidence": [
+        "reports/reminder-os/health-gate-2026-06-12-after-expire-backfill-loops.md"
+      ],
+      "external_writes": 0
+    },
+    {
+      "domain": "LK Content / Klaviyo",
+      "change": "Wishlist Flow V478R8 teve script corrigido para product.* e PATCH /flow-actions; associação técnica feita sob aprovação, flow segue manual.",
+      "evidence": [
+        "session_search: Klaviyo Wishlist V478R8 / RODE O SCRIPT / readback manual"
+      ],
+      "external_writes": "approved_klaviyo_template_flow_action_write_only; no_send_no_activation_no_delete"
+    },
+    {
+      "domain": "Hermes Daily Intelligence",
+      "change": "Preflight 02h atualizado para schema v4 com nightly_self_improvement_regression; nenhum cron novo criado.",
+      "evidence": [
+        "areas/operacoes/receipts/nightly-self-improvement-regression-20260612.md",
+        "reports/hermes-self-improvement-regression/latest.json"
+      ],
+      "external_writes": 0
+    },
+    {
+      "domain": "Brain Health",
+      "change": "Auto-fix A0 linkou decisions/ no MAPA de LK Atendimento e removeu WARN de decisions_not_linked.",
+      "evidence": [
+        "areas/lk/sub-areas/atendimento/MAPA.md",
+        "reports/brain-health-check-2026-06-13-02h.json"
+      ],
+      "external_writes": 0
+    }
+  ],
+  "incidents": [],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Fechar/expirar loops conservadores do Reminder OS que não representavam trabalho ativo real.",
+      "scope": "11 loops criados por backfill conservador em 2026-06-12.",
+      "exclusions": "Não deletar histórico; não criar backlog fantasma; não executar tarefas externas.",
+      "pattern_to_learn": "Backfill conservador não deve manter itens históricos/ambíguos/cobertos como ativos por padrão. Expirar/fechar quando não houver próxima ação real."
+    },
+    {
+      "decision": "Rodar script Klaviyo Wishlist Flow V478R8 aprovado no escopo técnico de upload/associação.",
+      "scope": "Templates CODE e flow-actions do Wishlist Flow V478R8.",
+      "exclusions": "Sem ativação de flow, sem envio teste/live, sem schedule, sem delete de templates, sem campanha ou customer-facing action.",
+      "pattern_to_learn": "Aprovação técnica de script não libera sends/ativação/customer-facing sem nova aprovação explícita."
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "type": "correction",
+      "text_sanitized": "Lucas indicou que os 11 loops ativos deveriam ser fechados/expirados.",
+      "exact_scope": "Loops de backfill conservador do Reminder OS.",
+      "exclusions": "Não fechar loops futuros que tenham continuidade real; não apagar histórico.",
+      "learn": "Evitar backlog fantasma; classificar histórico/ambíguo/coberto como expired/done."
+    },
+    {
+      "type": "approval",
+      "text_sanitized": "Lucas aprovou rodar o script Klaviyo.",
+      "exact_scope": "Script Wishlist Flow V478R8 e associação técnica de templates.",
+      "exclusions": "Flow activation, sends, schedule, deletes, campaigns and external customer actions.",
+      "learn": "Broad technical execution approval stays bounded to the previewed/actioned script."
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Backfill conservador não deve criar backlog fantasma.",
+      "destination_recommended": "Reminder OS routine + lucas-chief-of-staff skill + 02h learning ledger",
+      "action_applied_or_blocked": "Applied: 11 loops expired and skill patched.",
+      "verification_needed": "Keep health gate PASS with active=0 when no real next action exists."
+    },
+    {
+      "learning": "Handoff funcional requires owner, concrete next action, review trigger, evidence, status/writes, Reminder OS marker and Memory OS hook.",
+      "destination_recommended": "handoff protocol + AGENTS + health gate",
+      "action_applied_or_blocked": "Applied in local docs/profile contracts; audit 22/22 functional.",
+      "verification_needed": "Expand synthetic cross-agent pairs if repeated cross-profile failures appear."
+    },
+    {
+      "learning": "Klaviyo Wishlist V478R8 uses product.* variables and PATCH /api/flow-actions/{id}; live readback beats local receipt when IDs diverge.",
+      "destination_recommended": "LK Content/Klaviyo skill or routine reference",
+      "action_applied_or_blocked": "Applied in script; activation/send/delete blocked.",
+      "verification_needed": "Readback before any further Klaviyo action."
+    },
+    {
+      "learning": "Self-improvement regression checks belong in existing 02h preflight, not another cron.",
+      "destination_recommended": "Daily Intelligence routine",
+      "action_applied_or_blocked": "Applied as preflight v4 nightly_self_improvement_regression.",
+      "verification_needed": "Check next 02h artifact."
+    }
+  ],
+  "autonomy_pattern_candidates": {
+    "candidate_a0_a1": [
+      "Fix simple Brain health WARNs by local reversible MAPA/index/docs patches, then rerun health.",
+      "Expire Reminder OS loops that are clearly historical/ambiguous/covered after Lucas correction or explicit evidence."
+    ],
+    "must_stay_a3_a4": [
+      "Klaviyo flow activation, test/live send, campaign schedule or template deletion.",
+      "External WhatsApp/email/customer/supplier messages.",
+      "Docker/VPS/gateway/restart/deploy/cron mutation beyond already approved local registry prompt updates.",
+      "Shopify/Tiny/GMC/Ads/Supabase/database writes without scoped approval."
+    ]
+  },
+  "pending_decisions_for_lucas": [],
+  "safe_next_actions": [
+    "Promote Reminder OS anti-backlog-ghost rule into 02h learning ledger if not already captured.",
+    "If Klaviyo work continues, reconcile live template IDs before preparing any approval packet.",
+    "Investigate receipt writer attention statuses as local tooling hygiene.",
+    "Continue low-risk skill index/drift reduction in small batches."
+  ],
+  "blocked_actions_requiring_approval": [
+    "Activate Klaviyo Wishlist Flow V478R8 or send any test/live email.",
+    "Delete or clean duplicate Klaviyo templates.",
+    "Create new cron or change delivery to origin unless explicitly scoped.",
+    "Any customer-facing send, production deploy/restart, external-system write or destructive action."
+  ],
+  "cron_and_delivery_truth": {
+    "fechamento_01h": {
+      "status": "active",
+      "deliver": "local",
+      "last_run_observed": "2026-06-12T04:10:40Z ok",
+      "next_run_observed": "2026-06-14T04:00:00Z"
+    },
+    "daily_intelligence_02h": {
+      "status": "active",
+      "deliver": "local",
+      "last_run_observed": "2026-06-12T05:08:05Z ok",
+      "next_run_observed": "2026-06-13T05:00:00Z",
+      "preflight_schema": "lc_hermes_daily_intelligence_preflight.v4"
+    },
+    "normal_delivery": "local/silent-OK",
+    "telegram_or_origin": "only for actionable exceptions; this handoff does not require Telegram by itself"
+  },
+  "health_and_score": {
+    "health_json": "reports/brain-health-check-2026-06-13-02h.json",
+    "health_fail": 0,
+    "health_warn": 0,
+    "score_md": "reports/brain-improvement-score-2026-06-13-02h.md",
+    "score_json": "reports/brain-improvement-score-2026-06-13-02h.json",
+    "overall_score": 94
+  },
+  "sources": [
+    "reports/daily-consolidation/2026-06-13.md",
+    "reports/reminder-os/health-gate-2026-06-12-after-expire-backfill-loops.md",
+    "reports/reminder-os/health-gate-2026-06-12-after-profile-agents-coverage.md",
+    "reports/reminder-os/synthetic-cross-agent-handoff-2026-06-12.md",
+    "reports/handoff-functionality/handoff-functionality-2026-06-12.md",
+    "areas/operacoes/receipts/nightly-self-improvement-regression-20260612.md",
+    "reports/hermes-self-improvement-regression/latest.json",
+    "reports/memory-hygiene/2026-06-13.json",
+    "reports/brain-health-check-2026-06-13-02h.json",
+    "reports/brain-improvement-score-2026-06-13-02h.md",
+    "reports/brain-improvement-score-2026-06-13-02h.json",
+    "Hermes cron list fallback",
+    "session_search recent Reminder OS/Klaviyo/self-improvement context"
+  ],
+  "sanitization": {
+    "values_printed": false,
+    "raw_transcripts_included": false,
+    "secrets_included": false,
+    "token_previews_included": false,
+    "pii_dump_included": false,
+    "targeted_secret_scan_required": true,
+    "secrets_redacted": true
+  }
+}

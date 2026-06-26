@@ -1,0 +1,150 @@
+{
+  "operational_date": "2026-06-24",
+  "generated_at_utc": "2026-06-24T04:03:24Z",
+  "status": "attention_controlled",
+  "executive_summary": "Fechamento 01h BRT Brain-first/local. Brain Health ficou 0/0 após auto-fix A1 documental no índice de rotinas; Brain Improvement Score 100/100. Memory OS/Honcho OK. LK teve pedido pago de alto valor #147912 em rotas Shopify/WABA dry-run sem envio externo. Zipper OS vendas 09h teve último run com erro de parse JSON no envio interno aprovado e precisa diagnóstico read-only sem retry automático.",
+  "material_changes": [
+    {
+      "area": "Hermes Brain",
+      "change": "Gerado relatório diário e pacote de handoff 01h.",
+      "artifacts": [
+        "reports/daily-consolidation/2026-06-24.md",
+        "reports/daily-consolidation/2026-06-24-handoff.json",
+        "reports/daily-consolidation/latest-handoff.json"
+      ],
+      "external_write": false
+    },
+    {
+      "area": "Governança Brain",
+      "change": "Auto-fix A1: rotina LK Growth histórico antes de recomendação indexada em empresa/rotinas/_index.md.",
+      "artifacts": [
+        "empresa/rotinas/_index.md",
+        "areas/lk/sub-areas/growth/rotinas/historico-antes-de-recomendacao-2026-06-23.md"
+      ],
+      "external_write": false
+    }
+  ],
+  "incidents": [
+    {
+      "area": "Zipper OS",
+      "severity": "attention",
+      "summary": "Job Zipper OS vendas 09h WhatsApp/email com last_status error no run de 2026-06-23T12:00:47Z.",
+      "sanitized_cause": "parse JSON falhou ao ler stdout do wacli send --json; não há valores sensíveis no resumo.",
+      "next_action": "Diagnóstico read-only do contrato stdout/JSON e idempotência antes de qualquer reenvio.",
+      "external_write_performed_by_this_job": false
+    }
+  ],
+  "decisions_made_by_lucas": [],
+  "approvals_and_corrections": [
+    {
+      "scope": "Regra de aprendizado já registrada em 2026-06-23: verificar histórico antes de recomendar melhoria LK Growth.",
+      "correction_or_approval": "Promovida para índice global de rotinas após WARN do health check.",
+      "exclusions": "Não autoriza writes Shopify/GMC/GA4/GSC/Klaviyo/Meta nem novo cron.",
+      "pattern_to_learn": "Correção durável de Lucas deve aparecer no artefato canônico e nos índices/checagens, não apenas em chat ou relatório."
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "WARN documental de índice pode ser auto-fix A1 quando não toca produção/externos.",
+      "recommended_destination": "Auto-remediation contract / Daily Intelligence loop",
+      "action_applied": "empresa/rotinas/_index.md atualizado; Brain Health rerodado 0/0.",
+      "verification_needed": "Brain Sync seguro deve versionar somente allowlist documental."
+    },
+    {
+      "learning": "Job com envio interno aprovado pode falhar depois do send por parse de stdout; retry cego pode duplicar contato.",
+      "recommended_destination": "Zipper vendas 09h runbook/script",
+      "action_applied": "Incidente registrado; nenhum retry executado.",
+      "verification_needed": "Diagnóstico read-only do stdout/receipt e idempotência."
+    },
+    {
+      "learning": "Webhook pago de alto valor com payload truncado é sinal acionável, mas não basta para estoque/SKU/fulfillment completo.",
+      "recommended_destination": "LK Shopify / LK Stock / WABA guardrail",
+      "action_applied": "Resumo sanitizado; sem envio externo; estoque roteado para lk-stock.",
+      "verification_needed": "Fonte viva completa + validação lk-stock."
+    },
+    {
+      "learning": "D+7 Growth pendente deve virar impacto review antes de novo write.",
+      "recommended_destination": "LK Growth impact review workflow",
+      "action_applied": "Quatro reviews Nike Mind identificados; nenhum write.",
+      "verification_needed": "Puxar GSC/GA4/Shopify read-only."
+    }
+  ],
+  "autonomy_pattern_candidates": [
+    {
+      "candidate": "Indexar rotina/documento já existente quando Brain Health acusa routine_not_indexed.",
+      "suggested_autonomy": "A1 local/documental/reversível",
+      "must_stay_gated": "Qualquer alteração de cron, runtime, script executável, envio externo ou produção."
+    },
+    {
+      "candidate": "Registrar webhook customer-facing dry-run como evidência de não-envio e sinal operacional.",
+      "suggested_autonomy": "A0/A1 relatório/handoff sanitizado",
+      "must_stay_gated": "Enviar WhatsApp/e-mail/Klaviyo ou alterar pedido/fulfillment/estoque."
+    }
+  ],
+  "pending_decisions_for_lucas": [],
+  "safe_next_actions": [
+    "Diagnosticar Zipper vendas 09h read-only, sem reenvio automático.",
+    "Acompanhar pedido LK #147912 em fonte viva e acionar lk-stock para estoque/itens se necessário.",
+    "Puxar métricas dos quatro reviews D+7 Nike Mind antes de novo write Growth.",
+    "Rodar Brain Sync seguro e confirmar HEAD remoto quando permitido pelo allowlist."
+  ],
+  "blocked_actions_requiring_approval": [
+    "WhatsApp/e-mail/cliente/colecionador/fornecedor send ou reenvio Zipper.",
+    "Shopify/Tiny/GMC/Klaviyo/Meta/Supabase write.",
+    "Cron schedule/delivery mutation, Docker/VPS/gateway/restart/deploy.",
+    "Fulfillment, alteração de estoque, preço, campanha ou contato customer-facing."
+  ],
+  "cron_and_delivery_truth": {
+    "source": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all",
+    "cronjob_cli_available": false,
+    "total_jobs": 43,
+    "active_or_scheduled_jobs": 39,
+    "paused_jobs": 4,
+    "last_status_non_ok": 1,
+    "non_ok_jobs": [
+      {
+        "id": "357d40a5863e",
+        "name": "Zipper OS vendas 09h WhatsApp/email",
+        "deliver": "local",
+        "last_status": "error",
+        "last_run_at": "2026-06-23T12:00:47.203156+00:00"
+      }
+    ],
+    "silent_ok_jobs_observed": [
+      "Hermes runtime + cron watchdog no_agent",
+      "Hermes memory hygiene watchdog 02h15 BRT",
+      "Brain OS silent-OK health/scanner watchdog",
+      "Hermes all Telegram gateways watchdog",
+      "Honcho Hermes memory watchdog silent-OK"
+    ],
+    "generated_vs_delivered": "Fechamento 01h é local/Brain-first; Telegram/origin só para falha crítica, risco, decisão urgente ou sync quebrado."
+  },
+  "health_and_score": {
+    "health_json": "reports/brain-health-check-2026-06-24-02h.json",
+    "health_fail": 0,
+    "health_warn": 0,
+    "score_md": "reports/brain-improvement-score-2026-06-24-02h.md",
+    "score_json": "reports/brain-improvement-score-2026-06-24-02h.json",
+    "overall_score": 100,
+    "auto_fix_applied_before_final_score": true
+  },
+  "sources": [
+    "areas/operacoes/inventarios/crons-agentes-profiles.md",
+    "areas/operacoes/brds/hermes-brain-fechamento-agil-23h-brd-2026-05-19.md",
+    "empresa/contexto/organograma-agentes-hermes.md",
+    "areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md",
+    "reports/memory-hygiene/2026-06-24.json",
+    "reports/brain-health-check-2026-06-24-02h.json",
+    "reports/brain-improvement-score-2026-06-24-02h.json",
+    "reports/nightly-ops-audit/2026-06-23.md",
+    "reports/hermes-continuous-improvement/2026-06-23.md",
+    "session_search:webhook LK orders/paid/orders/updated #147912 sanitized"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "pii_redacted": true,
+    "raw_chat_transcripts_included": false,
+    "raw_webhook_payloads_included": false,
+    "values_printed": false
+  }
+}

@@ -194,7 +194,7 @@ Arquivos principais:
 
 Pendências futuras:
 
-1. Criar subdocs para Judge.me, Frenet, Tiny ERP, Email/Google Workspace, LeiloesBR, Railway, Vercel, Notion/NocoDB e Metricool quando virarem fluxo recorrente.
+1. Criar subdocs para Frenet, Tiny ERP, Email/Google Workspace, LeiloesBR, Railway, Vercel, Notion/NocoDB e Metricool quando virarem fluxo recorrente. Judge.me foi promovido para a futura etapa `Customer Trust & Loyalty` do LK OS junto com Rivo/LK Rewards (`areas/lk/rotinas/lk-os-future-rivo-rewards-judgeme-reviews-2026-05-13.md`).
 2. Transformar rotinas mais usadas em skills executáveis.
 3. Rodar testes reais read-only por ferramenta quando houver pergunta operacional concreta.
 

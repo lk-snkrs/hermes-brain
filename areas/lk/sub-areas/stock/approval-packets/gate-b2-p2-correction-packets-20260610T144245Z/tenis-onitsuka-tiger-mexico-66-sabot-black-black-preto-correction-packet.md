@@ -1,0 +1,95 @@
+# Gate B2 P2 — correction packet — tenis-onitsuka-tiger-mexico-66-sabot-black-black-preto
+
+- title: `Tênis Onitsuka Tiger Mexico 66 Sabot Black/Black Preto`
+- priority: `P2_saneamento`
+- lane: `TINY_DEPOSIT_PACKET`
+- proposed_action: Verificar mapeamento do depósito LK | CONTROLE ESTOQUE e preparar proposta; NÃO executar write sem aprovação escopada.
+- row_count: `72`
+- prefixes: `ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI, ONI`
+
+## Status counts
+- matched_exact_sku_stock_missing_deposit: `4`
+- matched_exact_sku_stock_resolved: `45`
+- shopify_variant_tiny_missing: `23`
+
+## Linhas principais
+- `ONI` | shopify_variant_tiny_missing | Shopify SKU `ONI` | Tiny `` id ``
+- `ONI-0995678-34` | shopify_variant_tiny_missing | Shopify SKU `ONI-0995678-34` | Tiny `` id ``
+- `ONI-1225054-34` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-1225054-34` | Tiny `ONI-1225054-34` id `1070120768` | saldo LK CONTROLE: 0.0
+- `ONI-2283614-34` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-2283614-34` | Tiny `ONI-2283614-34` id `1070119459` | saldo LK CONTROLE: 0.0
+- `ONI-6772830-34` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-6772830-34` | Tiny `ONI-6772830-34` id `1070119529` | saldo LK CONTROLE: 0.0
+- `ONI-7270110-34` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-7270110-34` | Tiny `ONI-7270110-34` id `1070119389` | saldo LK CONTROLE: 0.0
+- `ONI-8676190-34` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-8676190-34` | Tiny `ONI-8676190-34` id `1066638718` | saldo LK CONTROLE: 0.0
+- `ONI-0995678-35` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-0995678-35` | Tiny `ONI-0995678-35` id `1070120690` | saldo LK CONTROLE: 0.0
+- `ONI-1225054-35` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-1225054-35` | Tiny `ONI-1225054-35` id `1070120773` | saldo LK CONTROLE: 0.0
+- `ONI-2283614-35` | matched_exact_sku_stock_missing_deposit | Shopify SKU `ONI-2283614-35` | Tiny `ONI-2283614-35` id `1070119464`
+- `ONI-6772830-35` | shopify_variant_tiny_missing | Shopify SKU `ONI-6772830-35` | Tiny `` id ``
+- `ONI-7270110-35` | shopify_variant_tiny_missing | Shopify SKU `ONI-7270110-35` | Tiny `` id ``
+- `ONI-8676190-35` | shopify_variant_tiny_missing | Shopify SKU `ONI-8676190-35` | Tiny `` id ``
+- `ONI-0995678-36` | shopify_variant_tiny_missing | Shopify SKU `ONI-0995678-36` | Tiny `` id ``
+- `ONI-1225054-36` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-1225054-36` | Tiny `ONI-1225054-36` id `1070120778` | saldo LK CONTROLE: 0.0
+- `ONI-2283614-36` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-2283614-36` | Tiny `ONI-2283614-36` id `1070119469` | saldo LK CONTROLE: 0.0
+- `ONI-6772830-36` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-6772830-36` | Tiny `ONI-6772830-36` id `1070119539` | saldo LK CONTROLE: 0.0
+- `ONI-7270110-36` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-7270110-36` | Tiny `ONI-7270110-36` id `1070119399` | saldo LK CONTROLE: 0.0
+- `ONI-8676190-36` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-8676190-36` | Tiny `ONI-8676190-36` id `1066638728` | saldo LK CONTROLE: 0.0
+- `ONI-0995678-37` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-0995678-37` | Tiny `ONI-0995678-37` id `1070120701` | saldo LK CONTROLE: 0.0
+- `ONI-1225054-37` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-1225054-37` | Tiny `ONI-1225054-37` id `1070120783` | saldo LK CONTROLE: 0.0
+- `ONI-2283614-37` | matched_exact_sku_stock_missing_deposit | Shopify SKU `ONI-2283614-37` | Tiny `ONI-2283614-37` id `1070119474`
+- `ONI-6772830-37` | shopify_variant_tiny_missing | Shopify SKU `ONI-6772830-37` | Tiny `` id ``
+- `ONI-7270110-37` | shopify_variant_tiny_missing | Shopify SKU `ONI-7270110-37` | Tiny `` id ``
+- `ONI-8676190-37` | shopify_variant_tiny_missing | Shopify SKU `ONI-8676190-37` | Tiny `` id ``
+- `ONI-0995678-38` | shopify_variant_tiny_missing | Shopify SKU `ONI-0995678-38` | Tiny `` id ``
+- `ONI-1225054-38` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-1225054-38` | Tiny `ONI-1225054-38` id `1070120788` | saldo LK CONTROLE: 0.0
+- `ONI-2283614-38` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-2283614-38` | Tiny `ONI-2283614-38` id `1070119484` | saldo LK CONTROLE: 0.0
+- `ONI-6772830-38` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-6772830-38` | Tiny `ONI-6772830-38` id `1070119554` | saldo LK CONTROLE: 0.0
+- `ONI-7270110-38` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-7270110-38` | Tiny `ONI-7270110-38` id `1070119414` | saldo LK CONTROLE: 0.0
+- `ONI-8676190-38` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-8676190-38` | Tiny `ONI-8676190-38` id `1066638738` | saldo LK CONTROLE: 0.0
+- `ONI-0995678-39` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-0995678-39` | Tiny `ONI-0995678-39` id `1070120711` | saldo LK CONTROLE: 0.0
+- `ONI-1225054-39` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-1225054-39` | Tiny `ONI-1225054-39` id `1070120793` | saldo LK CONTROLE: 0.0
+- `ONI-2283614-39` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-2283614-39` | Tiny `ONI-2283614-39` id `1070119479` | saldo LK CONTROLE: 0.0
+- `ONI-6772830-39` | matched_exact_sku_stock_missing_deposit | Shopify SKU `ONI-6772830-39` | Tiny `ONI-6772830-39` id `1070119549`
+- `ONI-7270110-39` | shopify_variant_tiny_missing | Shopify SKU `ONI-7270110-39` | Tiny `` id ``
+- `ONI-8676190-39` | shopify_variant_tiny_missing | Shopify SKU `ONI-8676190-39` | Tiny `` id ``
+- `ONI-0995678-40` | shopify_variant_tiny_missing | Shopify SKU `ONI-0995678-40` | Tiny `` id ``
+- `ONI-1225054-40` | shopify_variant_tiny_missing | Shopify SKU `ONI-1225054-40` | Tiny `` id ``
+- `ONI-2283614-40` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-2283614-40` | Tiny `ONI-2283614-40` id `1070119489` | saldo LK CONTROLE: 0.0
+- `ONI-6772830-40` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-6772830-40` | Tiny `ONI-6772830-40` id `1070119559` | saldo LK CONTROLE: 0.0
+- `ONI-7270110-40` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-7270110-40` | Tiny `ONI-7270110-40` id `1070119419` | saldo LK CONTROLE: 0.0
+- `ONI-8676190-40` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-8676190-40` | Tiny `ONI-8676190-40` id `1066638748` | saldo LK CONTROLE: 0.0
+- `ONI-0995678-405` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-0995678-405` | Tiny `ONI-0995678-405` id `1070120721` | saldo LK CONTROLE: 0.0
+- `ONI-1225054-405` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-1225054-405` | Tiny `ONI-1225054-405` id `1070120803` | saldo LK CONTROLE: 0.0
+- `ONI-2283614-41` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-2283614-41` | Tiny `ONI-2283614-41` id `1070119494` | saldo LK CONTROLE: 0.0
+- `ONI-6772830-41` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-6772830-41` | Tiny `ONI-6772830-41` id `1070119564` | saldo LK CONTROLE: 0.0
+- `ONI-7270110-41` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-7270110-41` | Tiny `ONI-7270110-41` id `1070119424` | saldo LK CONTROLE: 0.0
+- `ONI-8676190-41` | shopify_variant_tiny_missing | Shopify SKU `ONI-8676190-41` | Tiny `` id ``
+- `ONI-0995678-415` | shopify_variant_tiny_missing | Shopify SKU `ONI-0995678-415` | Tiny `` id ``
+- `ONI-1225054-415` | shopify_variant_tiny_missing | Shopify SKU `ONI-1225054-415` | Tiny `` id ``
+- `ONI-8676190-415` | shopify_variant_tiny_missing | Shopify SKU `ONI-8676190-415` | Tiny `` id ``
+- `ONI-0995678-42` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-0995678-42` | Tiny `ONI-0995678-42` id `1070120731` | saldo LK CONTROLE: 0.0
+- `ONI-1225054-42` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-1225054-42` | Tiny `ONI-1225054-42` id `1070120813` | saldo LK CONTROLE: 0.0
+- `ONI-2283614-42` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-2283614-42` | Tiny `ONI-2283614-42` id `1070119499` | saldo LK CONTROLE: 0.0
+- `ONI-6772830-42` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-6772830-42` | Tiny `ONI-6772830-42` id `1070119569` | saldo LK CONTROLE: 0.0
+- `ONI-7270110-42` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-7270110-42` | Tiny `ONI-7270110-42` id `1070119429` | saldo LK CONTROLE: 0.0
+- `ONI-0995678-425` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-0995678-425` | Tiny `ONI-0995678-425` id `1070120736` | saldo LK CONTROLE: 0.0
+- `ONI-1225054-425` | matched_exact_sku_stock_missing_deposit | Shopify SKU `ONI-1225054-425` | Tiny `ONI-1225054-425` id `1070120818`
+- `ONI-8676190-425` | shopify_variant_tiny_missing | Shopify SKU `ONI-8676190-425` | Tiny `` id ``
+- `ONI-0995678-43` | shopify_variant_tiny_missing | Shopify SKU `ONI-0995678-43` | Tiny `` id ``
+- `ONI-1225054-43` | shopify_variant_tiny_missing | Shopify SKU `ONI-1225054-43` | Tiny `` id ``
+- `ONI-2283614-43` | shopify_variant_tiny_missing | Shopify SKU `ONI-2283614-43` | Tiny `` id ``
+- `ONI-6772830-43` | shopify_variant_tiny_missing | Shopify SKU `ONI-6772830-43` | Tiny `` id ``
+- `ONI-7270110-43` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-7270110-43` | Tiny `ONI-7270110-43` id `1070119434` | saldo LK CONTROLE: 0.0
+- `ONI-8676190-43` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-8676190-43` | Tiny `ONI-8676190-43` id `1066638768` | saldo LK CONTROLE: 0.0
+- `ONI-0995678-44` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-0995678-44` | Tiny `ONI-0995678-44` id `1070120746` | saldo LK CONTROLE: 0.0
+- `ONI-1225054-44` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-1225054-44` | Tiny `ONI-1225054-44` id `1070120828` | saldo LK CONTROLE: 0.0
+- `ONI-2283614-44` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-2283614-44` | Tiny `ONI-2283614-44` id `1070119509` | saldo LK CONTROLE: 0.0
+- `ONI-6772830-44` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-6772830-44` | Tiny `ONI-6772830-44` id `1070119579` | saldo LK CONTROLE: 0.0
+- `ONI-7270110-44` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-7270110-44` | Tiny `ONI-7270110-44` id `1070119439` | saldo LK CONTROLE: 0.0
+- `ONI-8676190-44` | matched_exact_sku_stock_resolved | Shopify SKU `ONI-8676190-44` | Tiny `ONI-8676190-44` id `1066638773` | saldo LK CONTROLE: 0.0
+
+## Guardrails
+- Tiny write: `0`
+- Shopify write: `0`
+- Writes externos: `0`
+- Cron/webhook/runtime novo: `0`
+- Promessa de disponibilidade pública: `0`
+- Rollback: descartar artefatos locais; nada externo alterado.

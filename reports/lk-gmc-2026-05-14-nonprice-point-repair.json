@@ -1,0 +1,2024 @@
+{
+  "generated_at": "2026-05-14T20:31:41.277722+00:00",
+  "approval": "Lucas: seguir; prior approval: corrigir o que deve ser corrigido está aprovado",
+  "status": "completed",
+  "source_labels": [
+    "manual_approval",
+    "fact_merchant_center",
+    "fact_shopify"
+  ],
+  "summary": {
+    "triage_nonprice_products": 28,
+    "planned_actions": 27,
+    "planned_by_kind": {
+      "clear_bad_additional_image_links": 5,
+      "online_color_completion": 22
+    },
+    "pending_records": 1,
+    "pending_by_reason": {
+      "landing_page_error_but_shopify_product_active_or_unknown_public_probe_needed": 1
+    },
+    "execution_counts": {
+      "patched_content_api": 2,
+      "patched_productinputs_v1": 25
+    },
+    "verify_counts": {
+      "match": 18,
+      "mismatch": 9
+    },
+    "final_target_issue_counts_on_acted_ids": {},
+    "acted_rows_with_target_issue_after": 0
+  },
+  "rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-nonprice-point-repair-rollback-20260514T202719Z.json",
+  "progress_jsonl_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-nonprice-point-repair-progress-20260514T202719Z.jsonl",
+  "actions": [
+    {
+      "product_id": "local:pt:BR:LIA_U9060PSD-1",
+      "kind": "clear_bad_additional_image_links",
+      "attrs": {
+        "additionalImageLinks": []
+      },
+      "evidence": {
+        "issue_attribute_names": [
+          "additional image link"
+        ],
+        "current_additional_count": 7,
+        "main_image_preserved": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060PSD-5",
+      "kind": "clear_bad_additional_image_links",
+      "attrs": {
+        "additionalImageLinks": []
+      },
+      "evidence": {
+        "issue_attribute_names": [
+          "additional image link"
+        ],
+        "current_additional_count": 7,
+        "main_image_preserved": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-1",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-10",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-11",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-2",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-3",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-4",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-5",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-6",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-7",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-8",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-9",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Branco"
+      },
+      "evidence": {
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:9914706510510919523",
+      "kind": "clear_bad_additional_image_links",
+      "attrs": {
+        "additionalImageLinks": []
+      },
+      "evidence": {
+        "issue_attribute_names": [
+          "additional image link"
+        ],
+        "current_additional_count": 1,
+        "main_image_preserved": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-sb-dunk-low-pro-muni-lightning-denim-turquoise-turquesa-lk-ir1888-700-34-5473395.webp?v=1777990446"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-1",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "evidence": {
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-10",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "evidence": {
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-11",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "evidence": {
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-2",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "evidence": {
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-3",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "evidence": {
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-4",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "evidence": {
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-5",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "evidence": {
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-6",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "evidence": {
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-7",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "evidence": {
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-8",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "evidence": {
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-9",
+      "kind": "online_color_completion",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "evidence": {
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "missing_attributes": [
+          "color"
+        ]
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060PSD-1",
+      "kind": "clear_bad_additional_image_links",
+      "attrs": {
+        "additionalImageLinks": []
+      },
+      "evidence": {
+        "issue_attribute_names": [
+          "additional image link"
+        ],
+        "current_additional_count": 7,
+        "main_image_preserved": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060PSD-5",
+      "kind": "clear_bad_additional_image_links",
+      "attrs": {
+        "additionalImageLinks": []
+      },
+      "evidence": {
+        "issue_attribute_names": [
+          "additional image link"
+        ],
+        "current_additional_count": 7,
+        "main_image_preserved": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663"
+      }
+    }
+  ],
+  "pending_records": [
+    {
+      "product_id": "online:pt:BR:GW3773-39",
+      "reason": "landing_page_error_but_shopify_product_active_or_unknown_public_probe_needed",
+      "codes": [
+        "landing_page_error"
+      ],
+      "handle": "yeezy-boost-350-v2-mx-oat",
+      "shopify_status": "ACTIVE",
+      "onlineStoreUrl": "https://lksneakers.com.br/products/yeezy-boost-350-v2-mx-oat"
+    }
+  ],
+  "execution_results": [
+    {
+      "product_id": "local:pt:BR:LIA_U9060PSD-1",
+      "kind": "clear_bad_additional_image_links",
+      "execution_status": "patched_content_api",
+      "attrs": {
+        "additionalImageLinks": []
+      },
+      "response_id": "local:pt:BR:LIA_U9060PSD-1"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060PSD-5",
+      "kind": "clear_bad_additional_image_links",
+      "execution_status": "patched_content_api",
+      "attrs": {
+        "additionalImageLinks": []
+      },
+      "response_id": "local:pt:BR:LIA_U9060PSD-5"
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-1",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Branco"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~1183A201-126-1"
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-10",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Branco"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~1183A201-126-10"
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-11",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Branco"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~1183A201-126-11"
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-2",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Branco"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~1183A201-126-2"
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-3",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Branco"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~1183A201-126-3"
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-4",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Branco"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~1183A201-126-4"
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-5",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Branco"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~1183A201-126-5"
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-6",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Branco"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~1183A201-126-6"
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-7",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Branco"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~1183A201-126-7"
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-8",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Branco"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~1183A201-126-8"
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-9",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Branco"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~1183A201-126-9"
+    },
+    {
+      "product_id": "online:pt:BR:9914706510510919523",
+      "kind": "clear_bad_additional_image_links",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "additionalImageLinks": []
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~9914706510510919523"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-1",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~JH5439-1"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-10",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~JH5439-10"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-11",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~JH5439-11"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-2",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~JH5439-2"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-3",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~JH5439-3"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-4",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~JH5439-4"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-5",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~JH5439-5"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-6",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~JH5439-6"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-7",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~JH5439-7"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-8",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~JH5439-8"
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-9",
+      "kind": "online_color_completion",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "color": "Bordô"
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~JH5439-9"
+    },
+    {
+      "product_id": "online:pt:BR:U9060PSD-1",
+      "kind": "clear_bad_additional_image_links",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "additionalImageLinks": []
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060PSD-1"
+    },
+    {
+      "product_id": "online:pt:BR:U9060PSD-5",
+      "kind": "clear_bad_additional_image_links",
+      "execution_status": "patched_productinputs_v1",
+      "attrs": {
+        "additionalImageLinks": []
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060PSD-5"
+    }
+  ],
+  "verify_results": [
+    {
+      "product_id": "local:pt:BR:LIA_U9060PSD-1",
+      "kind": "clear_bad_additional_image_links",
+      "verify_status": "read",
+      "expected": {
+        "additionalImageLinks": []
+      },
+      "actual": {
+        "additionalImageLinks": null
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_U9060PSD-1",
+        "offerId": "LIA_U9060PSD-1",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "link": "https://lksneakers.com.br/products/tenis-new-balance-9060-linen-burgundy-bege?variant=47052332892382&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+        "gtin": "0198686787343",
+        "brand": "New Balance",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Bege",
+        "sizes": [
+          "34"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060PSD-5",
+      "kind": "clear_bad_additional_image_links",
+      "verify_status": "read",
+      "expected": {
+        "additionalImageLinks": []
+      },
+      "actual": {
+        "additionalImageLinks": null
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "local:pt:BR:LIA_U9060PSD-5",
+        "offerId": "LIA_U9060PSD-5",
+        "channel": "local",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "link": "https://lksneakers.com.br/products/tenis-new-balance-9060-linen-burgundy-bege?variant=47052333023454&country=BR",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+        "gtin": "0198686787398",
+        "brand": "New Balance",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Bege",
+        "sizes": [
+          "38"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-1",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Branco"
+      },
+      "actual": {
+        "color": "Branco"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:1183A201-126-1",
+        "offerId": "1183A201-126-1",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-white-black-branco?currency=BRL&country=BR&variant=46619126497502&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-200919.png?v=1745524460",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-219175.png?v=1745524460",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-865243.png?v=1745524461",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-471635.png?v=1745524461",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-448148.png?v=1745524461",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-985927.png?v=1745524461",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-183888.png?v=1745524462",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-118322.png?v=1745524462"
+        ],
+        "gtin": "6922875432882",
+        "brand": "Onitsuka Tiger",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Branco",
+        "sizes": [
+          "34"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-10",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Branco"
+      },
+      "actual": {
+        "color": "Branco"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:1183A201-126-10",
+        "offerId": "1183A201-126-10",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-white-black-branco?currency=BRL&country=BR&variant=46619126792414&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-200919.png?v=1745524460",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-865243.png?v=1745524461"
+        ],
+        "gtin": "4570158018029",
+        "brand": "Onitsuka Tiger",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Branco",
+        "sizes": [
+          "43"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-11",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Branco"
+      },
+      "actual": {
+        "color": "Branco"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:1183A201-126-11",
+        "offerId": "1183A201-126-11",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-white-black-branco?currency=BRL&country=BR&variant=46619126825182&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-200919.png?v=1745524460",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-219175.png?v=1745524460",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-865243.png?v=1745524461",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-471635.png?v=1745524461",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-448148.png?v=1745524461",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-985927.png?v=1745524461",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-183888.png?v=1745524462",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-118322.png?v=1745524462"
+        ],
+        "gtin": "4570158018067",
+        "brand": "Onitsuka Tiger",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Branco",
+        "sizes": [
+          "44"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-2",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Branco"
+      },
+      "actual": {
+        "color": "Branco"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:1183A201-126-2",
+        "offerId": "1183A201-126-2",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-white-black-branco?currency=BRL&country=BR&variant=46619126530270&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-200919.png?v=1745524460",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-471635.png?v=1745524461"
+        ],
+        "gtin": "4570158018012",
+        "brand": "Onitsuka Tiger",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Branco",
+        "sizes": [
+          "35"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-3",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Branco"
+      },
+      "actual": {
+        "color": "Branco"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:1183A201-126-3",
+        "offerId": "1183A201-126-3",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-white-black-branco?currency=BRL&country=BR&variant=46619126563038&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-200919.png?v=1745524460",
+        "gtin": "4570158018074",
+        "brand": "Onitsuka Tiger",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Branco",
+        "sizes": [
+          "36"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-4",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Branco"
+      },
+      "actual": {
+        "color": "Branco"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:1183A201-126-4",
+        "offerId": "1183A201-126-4",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-white-black-branco?currency=BRL&country=BR&variant=46619126595806&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-200919.png?v=1745524460",
+        "gtin": "4570158018104",
+        "brand": "Onitsuka Tiger",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Branco",
+        "sizes": [
+          "37"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-5",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Branco"
+      },
+      "actual": {
+        "color": null
+      },
+      "match_expected": false,
+      "fresh_subset": {
+        "id": "online:pt:BR:1183A201-126-5",
+        "offerId": "1183A201-126-5",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-white-black-branco?currency=BRL&country=BR&variant=46619126628574&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-200919.png?v=1745524460",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-183888.png?v=1745524462"
+        ],
+        "gtin": "4570158017985",
+        "brand": "Onitsuka Tiger",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "sizes": [
+          "38"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-6",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Branco"
+      },
+      "actual": {
+        "color": null
+      },
+      "match_expected": false,
+      "fresh_subset": {
+        "id": "online:pt:BR:1183A201-126-6",
+        "offerId": "1183A201-126-6",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-white-black-branco?currency=BRL&country=BR&variant=46619126661342&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-200919.png?v=1745524460",
+        "gtin": "4570158018142",
+        "brand": "Onitsuka Tiger",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "sizes": [
+          "39"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-7",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Branco"
+      },
+      "actual": {
+        "color": null
+      },
+      "match_expected": false,
+      "fresh_subset": {
+        "id": "online:pt:BR:1183A201-126-7",
+        "offerId": "1183A201-126-7",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-white-black-branco?currency=BRL&country=BR&variant=46619126694110&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-200919.png?v=1745524460",
+        "gtin": "4570158018098",
+        "brand": "Onitsuka Tiger",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "sizes": [
+          "40"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-8",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Branco"
+      },
+      "actual": {
+        "color": null
+      },
+      "match_expected": false,
+      "fresh_subset": {
+        "id": "online:pt:BR:1183A201-126-8",
+        "offerId": "1183A201-126-8",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-white-black-branco?currency=BRL&country=BR&variant=46619126726878&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-200919.png?v=1745524460",
+        "gtin": "6922875432998",
+        "brand": "Onitsuka Tiger",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "sizes": [
+          "41"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-9",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Branco"
+      },
+      "actual": {
+        "color": null
+      },
+      "match_expected": false,
+      "fresh_subset": {
+        "id": "online:pt:BR:1183A201-126-9",
+        "offerId": "1183A201-126-9",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-white-black-branco?currency=BRL&country=BR&variant=46619126759646&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-onitsuka-tiger-mexico-66-white-black-branco-lk-1183a201-126-1-4550457465960-200919.png?v=1745524460",
+        "gtin": "6922875432813",
+        "brand": "Onitsuka Tiger",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "sizes": [
+          "42"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:9914706510510919523",
+      "kind": "clear_bad_additional_image_links",
+      "verify_status": "read",
+      "expected": {
+        "additionalImageLinks": []
+      },
+      "actual": {
+        "additionalImageLinks": null
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:9914706510510919523",
+        "offerId": "9914706510510919523",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tenis Nike SB Dunk Low Pro Muni Lightning Denim Turquoise Turquesa - Tamanho 37",
+        "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-pro-muni-lightning-denim-turquoise-turquesa",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-nike-sb-dunk-low-pro-muni-lightning-denim-turquoise-turquesa-lk-ir1888-700-34-5473395.webp?v=1777990446",
+        "brand": "Nike",
+        "price": {
+          "value": "2499.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Apparel & Accessories > Shoes",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Multicolor",
+        "sizes": [
+          "37"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-1",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Bordô"
+      },
+      "actual": {
+        "color": null
+      },
+      "match_expected": false,
+      "fresh_subset": {
+        "id": "online:pt:BR:JH5439-1",
+        "offerId": "JH5439-1",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo?currency=BRL&country=BR&variant=46646626582750&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-596087.png?v=1745938810",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-827387.png?v=1745938810",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-291036.png?v=1745938810",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-138649.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-636408.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-742104.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-278733.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-184235.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-196799.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-249645.png?v=1745938812"
+        ],
+        "gtin": "4067904980902",
+        "brand": "Adidas",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "sizes": [
+          "34"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-10",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Bordô"
+      },
+      "actual": {
+        "color": "Bordô"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:JH5439-10",
+        "offerId": "JH5439-10",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo?currency=BRL&country=BR&variant=46646626877662&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-596087.png?v=1745938810",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-827387.png?v=1745938810",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-291036.png?v=1745938810",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-138649.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-636408.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-742104.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-278733.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-184235.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-196799.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-249645.png?v=1745938812"
+        ],
+        "gtin": "0196479186984",
+        "brand": "Adidas",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Bordô",
+        "sizes": [
+          "43"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-11",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Bordô"
+      },
+      "actual": {
+        "color": "Bordô"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:JH5439-11",
+        "offerId": "JH5439-11",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo?currency=BRL&country=BR&variant=46646626910430&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-596087.png?v=1745938810",
+        "gtin": "0196479187004",
+        "brand": "Adidas",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Bordô",
+        "sizes": [
+          "44"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-2",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Bordô"
+      },
+      "actual": {
+        "color": "Bordô"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:JH5439-2",
+        "offerId": "JH5439-2",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo?currency=BRL&country=BR&variant=46646626615518&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-596087.png?v=1745938810",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-184235.png?v=1745938811"
+        ],
+        "gtin": "4067904980872",
+        "brand": "Adidas",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Bordô",
+        "sizes": [
+          "35"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-3",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Bordô"
+      },
+      "actual": {
+        "color": "Bordô"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:JH5439-3",
+        "offerId": "JH5439-3",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo?currency=BRL&country=BR&variant=46646626648286&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-596087.png?v=1745938810",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-291036.png?v=1745938810",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-636408.png?v=1745938811"
+        ],
+        "gtin": "0196479187011",
+        "brand": "Adidas",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Bordô",
+        "sizes": [
+          "36"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-4",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Bordô"
+      },
+      "actual": {
+        "color": "Bordô"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:JH5439-4",
+        "offerId": "JH5439-4",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo?currency=BRL&country=BR&variant=46646626681054&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-596087.png?v=1745938810",
+        "gtin": "0196479187097",
+        "brand": "Adidas",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Bordô",
+        "sizes": [
+          "37"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-5",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Bordô"
+      },
+      "actual": {
+        "color": "Bordô"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:JH5439-5",
+        "offerId": "JH5439-5",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo?currency=BRL&country=BR&variant=46646626713822&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-596087.png?v=1745938810",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-827387.png?v=1745938810",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-291036.png?v=1745938810",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-138649.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-636408.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-742104.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-278733.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-184235.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-196799.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-249645.png?v=1745938812"
+        ],
+        "gtin": "4067904980889",
+        "brand": "Adidas",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Bordô",
+        "sizes": [
+          "38"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-6",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Bordô"
+      },
+      "actual": {
+        "color": "Bordô"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:JH5439-6",
+        "offerId": "JH5439-6",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo?currency=BRL&country=BR&variant=46646626746590&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-596087.png?v=1745938810",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-827387.png?v=1745938810",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-291036.png?v=1745938810",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-138649.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-636408.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-742104.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-278733.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-184235.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-196799.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-249645.png?v=1745938812"
+        ],
+        "gtin": "0196479187141",
+        "brand": "Adidas",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Bordô",
+        "sizes": [
+          "39"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-7",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Bordô"
+      },
+      "actual": {
+        "color": "Bordô"
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:JH5439-7",
+        "offerId": "JH5439-7",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo?currency=BRL&country=BR&variant=46646626779358&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-596087.png?v=1745938810",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-636408.png?v=1745938811"
+        ],
+        "gtin": "0196479187134",
+        "brand": "Adidas",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Bordô",
+        "sizes": [
+          "40"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-8",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Bordô"
+      },
+      "actual": {
+        "color": null
+      },
+      "match_expected": false,
+      "fresh_subset": {
+        "id": "online:pt:BR:JH5439-8",
+        "offerId": "JH5439-8",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo?currency=BRL&country=BR&variant=46646626812126&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-596087.png?v=1745938810",
+        "gtin": "0196479183365",
+        "brand": "Adidas",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "sizes": [
+          "41"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-9",
+      "kind": "online_color_completion",
+      "verify_status": "read",
+      "expected": {
+        "color": "Bordô"
+      },
+      "actual": {
+        "color": null
+      },
+      "match_expected": false,
+      "fresh_subset": {
+        "id": "online:pt:BR:JH5439-9",
+        "offerId": "JH5439-9",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis Adidas Handball Spezial Bordô",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-handball-spezial-bordo?currency=BRL&country=BR&variant=46646626844894&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-596087.png?v=1745938810",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-742104.png?v=1745938811",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-adidas-handball-spezial-bordo-lk-jh5439-1-184235.png?v=1745938811"
+        ],
+        "gtin": "0196479187035",
+        "brand": "Adidas",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Vestuário e acessórios > Sapatos",
+        "productTypes": [
+          "Tênis"
+        ],
+        "sizes": [
+          "42"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060PSD-1",
+      "kind": "clear_bad_additional_image_links",
+      "verify_status": "read",
+      "expected": {
+        "additionalImageLinks": []
+      },
+      "actual": {
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8188438.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4471147.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-3473591.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-7639534.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8031813.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6608052.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4562597.png?v=1759338167"
+        ]
+      },
+      "match_expected": false,
+      "fresh_subset": {
+        "id": "online:pt:BR:U9060PSD-1",
+        "offerId": "U9060PSD-1",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "link": "https://lksneakers.com.br/products/tenis-new-balance-9060-linen-burgundy-bege?currency=BRL&country=BR&variant=47052332892382&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+        "additionalImageLinks": [
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8188438.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4471147.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-3473591.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-7639534.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-8031813.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6608052.png?v=1759338167",
+          "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-4562597.png?v=1759338167"
+        ],
+        "gtin": "0198686787343",
+        "brand": "New Balance",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Apparel & Accessories > Shoes",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Bege",
+        "sizes": [
+          "34"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060PSD-5",
+      "kind": "clear_bad_additional_image_links",
+      "verify_status": "read",
+      "expected": {
+        "additionalImageLinks": []
+      },
+      "actual": {
+        "additionalImageLinks": null
+      },
+      "match_expected": true,
+      "fresh_subset": {
+        "id": "online:pt:BR:U9060PSD-5",
+        "offerId": "U9060PSD-5",
+        "channel": "online",
+        "contentLanguage": "pt",
+        "targetCountry": "BR",
+        "source": "api",
+        "title": "Tênis New Balance 9060 'Linen Burgundy' Bege",
+        "link": "https://lksneakers.com.br/products/tenis-new-balance-9060-linen-burgundy-bege?currency=BRL&country=BR&variant=47052333023454&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "imageLink": "https://cdn.shopify.com/s/files/1/0621/8969/9294/files/tenis-new-balance-9060-linen-burgundy-bege-lk-u9060psd-1-6447235.png?v=1759378663",
+        "gtin": "0198686787398",
+        "brand": "New Balance",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "availability": "in stock",
+        "googleProductCategory": "Apparel & Accessories > Shoes",
+        "productTypes": [
+          "Tênis"
+        ],
+        "color": "Bege",
+        "sizes": [
+          "38"
+        ],
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    }
+  ],
+  "final_productstatus_results": [
+    {
+      "product_id": "local:pt:BR:LIA_U9060PSD-1",
+      "kind": "clear_bad_additional_image_links",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060PSD-5",
+      "kind": "clear_bad_additional_image_links",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-1",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-10",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-11",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-2",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-3",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-4",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-5",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-6",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-7",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-8",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:1183A201-126-9",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:9914706510510919523",
+      "kind": "clear_bad_additional_image_links",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-1",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-10",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-11",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-2",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-3",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-4",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-5",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-6",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-7",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-8",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:JH5439-9",
+      "kind": "online_color_completion",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:U9060PSD-1",
+      "kind": "clear_bad_additional_image_links",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    },
+    {
+      "product_id": "online:pt:BR:U9060PSD-5",
+      "kind": "clear_bad_additional_image_links",
+      "status_read": "ok",
+      "target_issue_codes": [],
+      "all_issue_codes": []
+    }
+  ],
+  "not_performed": [
+    "price/salePrice write",
+    "Shopify write",
+    "Tiny write",
+    "feed fetch/upload",
+    "campaign/message/send",
+    "bulk reapply",
+    "new image asset generation or product-photo invention"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "summary": [
+    {
+      "check": "secrets",
+      "FAIL": 13,
+      "WARN": 0
+    },
+    {
+      "check": "links",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "required_files",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "agent_files",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "area_maps",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "decisions_index",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "routines_index",
+      "FAIL": 0,
+      "WARN": 1
+    },
+    {
+      "check": "skill_references",
+      "FAIL": 0,
+      "WARN": 0
+    }
+  ],
+  "issues": [
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "AGENTS.md",
+      "detail": "openai"
+    },
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "MAPA.md",
+      "detail": "openai"
+    },
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "START-HERE.md",
+      "detail": "openai"
+    },
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "reports/governance/runtime-vs-organograma-2026-05-24.md",
+      "detail": "openai"
+    },
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "reports/governance/task-router-tecnico-v1-2026-05-24.md",
+      "detail": "openai"
+    },
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "reports/governance/amora-style-agent-orchestration-hardening-2026-05-24.md",
+      "detail": "openai"
+    },
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "empresa/contexto/organograma-agentes-hermes.md",
+      "detail": "openai"
+    },
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "empresa/contexto/task-router-hermes.md",
+      "detail": "openai"
+    },
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "empresa/contexto/organograma-orquestrador-tarefas-hermes.md",
+      "detail": "openai"
+    },
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "areas/operacoes/rotinas/task-router-handoff-especialistas.md",
+      "detail": "openai"
+    },
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "areas/operacoes/prds/hermes-orquestrador-tarefas-organograma-prd-2026-05-24.md",
+      "detail": "openai"
+    },
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "agentes/hermes-geral/AGENTS.md",
+      "detail": "openai"
+    },
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "agentes/hermes-geral/MAPA.md",
+      "detail": "openai"
+    },
+    {
+      "level": "WARN",
+      "kind": "routine_not_indexed",
+      "path": "areas/operacoes/rotinas/task-router-handoff-especialistas.md",
+      "detail": "missing from empresa/rotinas/_index.md"
+    }
+  ],
+  "fail_count": 13,
+  "warn_count": 1
+}

@@ -1,0 +1,322 @@
+{
+  "generated_at": "2026-05-15T09:10:55.703042+00:00",
+  "mode": "read_only_local_sql_audit",
+  "db_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_os_phase5.sqlite",
+  "db_permissions_octal": "0o600",
+  "table_counts": {
+    "external_market_sources": 3,
+    "final_approval_groups": 10,
+    "lk_customer_rfm": 3679,
+    "lk_customers": 26413,
+    "lk_order_items": 8166,
+    "lk_orders": 6059,
+    "lk_os_entity_dictionary": 8,
+    "lk_os_sync_runs": 1,
+    "lk_product_variants": 14466,
+    "lk_products": 2241,
+    "market_full_sync_runs": 1,
+    "market_product_identity": 87,
+    "market_sync_gaps": 4,
+    "metadata": 5,
+    "p1_candidate_recipients": 108,
+    "p1_group_readiness": 10,
+    "size_conversion_rules": 2,
+    "sourcing_price_comparisons": 0,
+    "sqlite_sequence": 3,
+    "stockx_product_snapshots": 0,
+    "stockx_size_offers": 0,
+    "tiny_anchor_stock": 49
+  },
+  "metrics": {
+    "variants": {
+      "total": 14466,
+      "active": 0,
+      "with_sku": 13078,
+      "with_sku_pct": 90.41,
+      "missing_sku": 1388,
+      "with_current_shopify_price": 14458,
+      "with_current_shopify_price_pct": 99.94,
+      "with_inventory_item_id": 14466,
+      "missing_product_join": 0,
+      "duplicate_sku_groups": 239
+    },
+    "order_items": {
+      "total": 8166,
+      "with_sku": 7054,
+      "with_sku_pct": 86.38,
+      "with_variant_id_or_source_variant_id": 8045,
+      "with_variant_id_pct": 98.52,
+      "missing_variant_join_when_variant_id_present": 0
+    },
+    "orders": {
+      "total": 6059,
+      "with_source_name": 6058,
+      "with_source_name_pct": 99.98,
+      "with_tags": 6058,
+      "paid_like": 4841
+    },
+    "tiny_anchor_stock": {
+      "total_anchor_rows": 49,
+      "status_counts": {
+        "available": 27,
+        "not_mapped": 13,
+        "zero_stock": 9
+      },
+      "note": "Apenas anchor stock parcial; ainda não é snapshot full variant-level do Tiny."
+    },
+    "sync_runs_recent": [
+      {
+        "source": "Supabase LK REST read-only",
+        "status": "completed",
+        "started_at": "2026-05-11T15:11:42.668851+00:00",
+        "finished_at": "2026-05-11T15:11:57.390712+00:00",
+        "rows_customers": 26413,
+        "rows_orders": 6059,
+        "rows_order_items": 8166,
+        "rows_products": 2241,
+        "rows_variants": 14466,
+        "rows_rfm": 3679
+      }
+    ]
+  },
+  "required_model_audit": {
+    "canonical_product": {
+      "status": "partial",
+      "current_tables": [
+        "lk_products",
+        "lk_product_variants"
+      ],
+      "missing": [
+        "canonical style/model id",
+        "normalized brand/model/colorway",
+        "curation status"
+      ]
+    },
+    "variant_size": {
+      "status": "partial",
+      "current_tables": [
+        "lk_product_variants"
+      ],
+      "missing": [
+        "normalized BR size",
+        "US M/W/EU conversion fields",
+        "size confidence",
+        "variant commercial state"
+      ]
+    },
+    "shopify_tiny_sku_map": {
+      "status": "partial",
+      "current_tables": [
+        "lk_product_variants",
+        "tiny_anchor_stock"
+      ],
+      "missing": [
+        "dedicated alias table",
+        "Tiny product id/variation id confidence",
+        "manual review state"
+      ]
+    },
+    "tiny_stock_truth": {
+      "status": "partial",
+      "current_tables": [
+        "tiny_anchor_stock"
+      ],
+      "missing": [
+        "full variant-level Tiny snapshot",
+        "free vs reserved stock",
+        "deposit id/name",
+        "snapshot history"
+      ]
+    },
+    "commercial_state": {
+      "status": "missing",
+      "current_tables": [],
+      "missing": [
+        "disponivel",
+        "reservado",
+        "sob_encomenda_br",
+        "sob_encomenda_us",
+        "em_transito",
+        "recebido_ja_vendido",
+        "recebido_livre",
+        "divergente"
+      ]
+    },
+    "price_current_and_history": {
+      "status": "partial",
+      "current_tables": [
+        "lk_product_variants",
+        "lk_order_items",
+        "sourcing_price_comparisons"
+      ],
+      "missing": [
+        "price snapshot table",
+        "compare_at snapshot",
+        "approved price decision ledger",
+        "external price evidence TTL"
+      ]
+    },
+    "sales_history": {
+      "status": "partial",
+      "current_tables": [
+        "lk_orders",
+        "lk_order_items"
+      ],
+      "missing": [
+        "variant/model/day rollup table",
+        "120d demand materialization",
+        "channel/source reconciliation confidence"
+      ]
+    },
+    "approvals_events": {
+      "status": "partial",
+      "current_tables": [
+        "final_approval_groups",
+        "lk_os_entity_dictionary"
+      ],
+      "missing": [
+        "canonical approval/event ledger table",
+        "superseded/no-op states",
+        "result/learning links"
+      ]
+    },
+    "data_quality_flags": {
+      "status": "missing",
+      "current_tables": [],
+      "missing": [
+        "per-variant dq status",
+        "blocking reason",
+        "source freshness",
+        "last verified at"
+      ]
+    }
+  },
+  "readiness": {
+    "green": [
+      "Shopify/Supabase operational spine exists locally with customers/orders/items/products/variants/RFM.",
+      "Variant-level Shopify price/SKU/catalog fields are available for most variants.",
+      "Reports can avoid PII and use aggregate counts from private SQLite."
+    ],
+    "yellow": [
+      "Tiny stock truth exists only as partial anchor stock, not full variant-level history.",
+      "SKU mapping is present in variant rows but lacks a dedicated alias/confidence table.",
+      "Sales history exists in order_items but demand rollups are not materialized as canonical tables.",
+      "Approvals exist in scattered reports/groups, not one event ledger with result/learning links."
+    ],
+    "red": [
+      "Commercial state per variant is missing.",
+      "Data quality flags per variant are missing.",
+      "Price history/snapshots are missing; current Shopify price is available but not a history ledger.",
+      "Reserved/free/encomenda/em_transito states are not represented as source-labeled facts."
+    ]
+  },
+  "recommended_next_tables": [
+    {
+      "table": "lk_variant_quality_status",
+      "purpose": "One row per Shopify variant/SKU/size with source-labeled readiness and blocking reasons.",
+      "key_fields": [
+        "variant_id",
+        "source_variant_id",
+        "sku",
+        "normalized_size",
+        "dq_status",
+        "blocking_reason",
+        "last_verified_at"
+      ],
+      "mode": "local/materialized from read-only sources"
+    },
+    {
+      "table": "lk_sku_alias_map",
+      "purpose": "Canonical Shopify SKU to Tiny code/product/variation aliases with confidence and manual-review state.",
+      "key_fields": [
+        "shopify_variant_id",
+        "shopify_sku",
+        "tiny_product_id",
+        "tiny_codigo",
+        "match_confidence",
+        "review_status"
+      ],
+      "mode": "local/materialized + approval-gated correction queue"
+    },
+    {
+      "table": "lk_tiny_stock_snapshots",
+      "purpose": "Full Tiny stock truth by SKU/size/deposit, preserving free/reserved/physical counts over time.",
+      "key_fields": [
+        "snapshot_at",
+        "deposit_name",
+        "tiny_codigo",
+        "sku",
+        "size",
+        "stock_free",
+        "stock_reserved",
+        "stock_physical"
+      ],
+      "mode": "read-only sync; no Tiny writes"
+    },
+    {
+      "table": "lk_variant_commercial_state",
+      "purpose": "Business state per variant: available/reserved/encomenda/transit/sold/divergent with evidence.",
+      "key_fields": [
+        "variant_id",
+        "sku",
+        "commercial_state",
+        "state_source",
+        "confidence",
+        "evidence_ref",
+        "updated_at"
+      ],
+      "mode": "derived preview first; human approval for uncertain states"
+    },
+    {
+      "table": "lk_price_snapshots",
+      "purpose": "Current and historical price/compare-at/cost/landed-price evidence separated by source.",
+      "key_fields": [
+        "captured_at",
+        "variant_id",
+        "sku",
+        "source_label",
+        "price_brl",
+        "compare_at_brl",
+        "cost_brl",
+        "evidence_ref"
+      ],
+      "mode": "read-only capture; price writes remain approval-gated"
+    },
+    {
+      "table": "lk_variant_sales_rollups",
+      "purpose": "Daily/weekly/120d demand by variant/model/size to feed Stock, CRO, Brand Mix and sourcing.",
+      "key_fields": [
+        "window",
+        "variant_id",
+        "sku",
+        "units",
+        "revenue",
+        "orders",
+        "last_sale_at",
+        "source_label"
+      ],
+      "mode": "derived from Shopify/Supabase order_items"
+    },
+    {
+      "table": "lk_action_event_ledger",
+      "purpose": "Unified Approval Manager / Learning Loop event table for recommendations, approvals, executions and lessons.",
+      "key_fields": [
+        "event_id",
+        "area",
+        "artifact",
+        "status",
+        "approval_text",
+        "executed_at",
+        "result",
+        "learning_ref"
+      ],
+      "mode": "local ledger; external writes need approval"
+    }
+  ],
+  "non_actions": [
+    "No external API call",
+    "No Shopify/Tiny/Merchant/Klaviyo/Notion/WhatsApp write",
+    "No cron/UI/worker created",
+    "No PII exported in reports"
+  ]
+}

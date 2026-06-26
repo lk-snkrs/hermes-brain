@@ -1,0 +1,52 @@
+{
+  "a": "/opt/data/hermes_bruno_ingest/spiti-hub",
+  "b": "/opt/data/hermes_bruno_ingest/spiti-hub-git",
+  "exclude": [
+    ".git",
+    ".next",
+    "build",
+    "dist",
+    "node_modules"
+  ],
+  "only_a": [
+    ".hermes_source.json",
+    "docs/briefing-2026-04-30.md"
+  ],
+  "only_b": [],
+  "different": [
+    "src/App.jsx",
+    "src/components/DrawerObra.jsx",
+    "src/components/Layout.jsx",
+    "src/components/ModalLeilao.jsx",
+    "src/components/Toast.jsx",
+    "src/lib/documentos.js",
+    "src/lib/leilao-context.jsx",
+    "src/lib/pdfTemplates.jsx",
+    "src/lib/segmentos.js",
+    "src/pages/AdminAudit.jsx",
+    "src/pages/AdminUsuarios.jsx",
+    "src/pages/BulkFotos.jsx",
+    "src/pages/CampanhaDetalhe.jsx",
+    "src/pages/Captacoes.jsx",
+    "src/pages/CatalogoPublico.jsx",
+    "src/pages/CobrancaPublica.jsx",
+    "src/pages/Dashboard.jsx",
+    "src/pages/Documentos.jsx",
+    "src/pages/Leiloes.jsx",
+    "src/pages/Obras.jsx",
+    "src/pages/Pedidos.jsx",
+    "src/pages/Pessoas.jsx",
+    "src/pages/PosLeilao.jsx",
+    "src/pages/Resultado.jsx",
+    "src/pages/Segmentos.jsx",
+    "src/pages/Vendas.jsx",
+    "vite.config.js"
+  ],
+  "counts": {
+    "a": 129,
+    "b": 127,
+    "only_a": 2,
+    "only_b": 0,
+    "different": 27
+  }
+}

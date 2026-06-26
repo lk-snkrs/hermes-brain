@@ -1,0 +1,15 @@
+{
+  "operating_rule": "Do not repeat an alert unchanged; classify root cause, safe next action and approval boundary.",
+  "patterns": [
+    {
+      "next_safe_action": "split oversized instructions into references, repair missing refs, and prefer source lookup before acting.",
+      "object": "80 flagged skills",
+      "pattern": "skill_quality_drift",
+      "seen_count": 1,
+      "why_it_causes_errors": "Oversized/stale/broken-reference skills increase hallucinated or outdated operating instructions."
+    }
+  ],
+  "patterns_count": 1,
+  "updated_at": "2026-06-25T05:02:16.933208+00:00",
+  "values_printed": false
+}

@@ -1,0 +1,82 @@
+# Gate B2 P2 — correction packet — alo-runner-sweet-pink-rosa
+
+- title: `Tênis Alo Yoga Alo Runner Pink Rosa`
+- priority: `P2_saneamento`
+- lane: `TINY_DEPOSIT_PACKET`
+- proposed_action: Verificar mapeamento do depósito LK | CONTROLE ESTOQUE e preparar proposta; NÃO executar write sem aprovação escopada.
+- row_count: `59`
+- prefixes: `ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO, ALO`
+
+## Status counts
+- matched_exact_sku_stock_missing_deposit: `1`
+- matched_exact_sku_stock_resolved: `28`
+- shopify_variant_tiny_missing: `30`
+
+## Linhas principais
+- `ALO` | shopify_variant_tiny_missing | Shopify SKU `ALO` | Tiny `` id ``
+- `ALO-2441950-34` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-2441950-34` | Tiny `ALO-2441950-34` id `1069545432` | saldo LK CONTROLE: 0.0
+- `ALO-2441950-35` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-2441950-35` | Tiny `ALO-2441950-35` id `1069545437` | saldo LK CONTROLE: 0.0
+- `ALO-2441950-36` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-2441950-36` | Tiny `ALO-2441950-36` id `1069493625` | saldo LK CONTROLE: 0.0
+- `ALO-2441950-37` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-2441950-37` | Tiny `ALO-2441950-37` id `1069545444` | saldo LK CONTROLE: 0.0
+- `ALO-2441950-38` | matched_exact_sku_stock_missing_deposit | Shopify SKU `ALO-2441950-38` | Tiny `ALO-2441950-38` id `1069545449`
+- `ALO-2441950-39` | shopify_variant_tiny_missing | Shopify SKU `ALO-2441950-39` | Tiny `` id ``
+- `ALO-2441950-40` | shopify_variant_tiny_missing | Shopify SKU `ALO-2441950-40` | Tiny `` id ``
+- `ALO-2441950-41` | shopify_variant_tiny_missing | Shopify SKU `ALO-2441950-41` | Tiny `` id ``
+- `ALO-2441950-42` | shopify_variant_tiny_missing | Shopify SKU `ALO-2441950-42` | Tiny `` id ``
+- `ALO-2441950-43` | shopify_variant_tiny_missing | Shopify SKU `ALO-2441950-43` | Tiny `` id ``
+- `ALO-2441950-44` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-2441950-44` | Tiny `ALO-2441950-44` id `1069545476` | saldo LK CONTROLE: 0.0
+- `ALO-0341470-L` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-0341470-L` | Tiny `ALO-0341470-L` id `1069542833` | saldo LK CONTROLE: 0.0
+- `ALO-0341470-M` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-0341470-M` | Tiny `ALO-0341470-M` id `1069542828` | saldo LK CONTROLE: 0.0
+- `ALO-0341470-S` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-0341470-S` | Tiny `ALO-0341470-S` id `1069542823` | saldo LK CONTROLE: 0.0
+- `ALO-0341470-XS` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-0341470-XS` | Tiny `ALO-0341470-XS` id `1069542818` | saldo LK CONTROLE: 0.0
+- `ALO-0865758-L` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-0865758-L` | Tiny `ALO-0865758-L` id `1069542861` | saldo LK CONTROLE: 0.0
+- `ALO-0865758-M` | shopify_variant_tiny_missing | Shopify SKU `ALO-0865758-M` | Tiny `` id ``
+- `ALO-0865758-S` | shopify_variant_tiny_missing | Shopify SKU `ALO-0865758-S` | Tiny `` id ``
+- `ALO-0865758-XS` | shopify_variant_tiny_missing | Shopify SKU `ALO-0865758-XS` | Tiny `` id ``
+- `ALO-1193438-L` | shopify_variant_tiny_missing | Shopify SKU `ALO-1193438-L` | Tiny `` id ``
+- `ALO-1193438-M` | shopify_variant_tiny_missing | Shopify SKU `ALO-1193438-M` | Tiny `` id ``
+- `ALO-1193438-S` | shopify_variant_tiny_missing | Shopify SKU `ALO-1193438-S` | Tiny `` id ``
+- `ALO-1193438-XS` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-1193438-XS` | Tiny `ALO-1193438-XS` id `1069542874` | saldo LK CONTROLE: 0.0
+- `ALO-1465950-OS` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-1465950-OS` | Tiny `ALO-1465950-OS` id `1065059599` | saldo LK CONTROLE: 0.0
+- `ALO-1750494-L` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-1750494-L` | Tiny `ALO-1750494-L` id `1069542917` | saldo LK CONTROLE: 0.0
+- `ALO-1750494-M` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-1750494-M` | Tiny `ALO-1750494-M` id `1069542912` | saldo LK CONTROLE: 0.0
+- `ALO-1750494-S` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-1750494-S` | Tiny `ALO-1750494-S` id `1069542907` | saldo LK CONTROLE: 0.0
+- `ALO-1750494-XS` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-1750494-XS` | Tiny `ALO-1750494-XS` id `1069542902` | saldo LK CONTROLE: 0.0
+- `ALO-3137118-OS` | shopify_variant_tiny_missing | Shopify SKU `ALO-3137118-OS` | Tiny `` id ``
+- `ALO-4485982-L` | shopify_variant_tiny_missing | Shopify SKU `ALO-4485982-L` | Tiny `` id ``
+- `ALO-4485982-M` | shopify_variant_tiny_missing | Shopify SKU `ALO-4485982-M` | Tiny `` id ``
+- `ALO-4485982-S` | shopify_variant_tiny_missing | Shopify SKU `ALO-4485982-S` | Tiny `` id ``
+- `ALO-4485982-XS` | shopify_variant_tiny_missing | Shopify SKU `ALO-4485982-XS` | Tiny `` id ``
+- `ALO-4485982-XXS` | shopify_variant_tiny_missing | Shopify SKU `ALO-4485982-XXS` | Tiny `` id ``
+- `ALO-4584286-L` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-4584286-L` | Tiny `ALO-4584286-L` id `1069543320` | saldo LK CONTROLE: 0.0
+- `ALO-4584286-M` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-4584286-M` | Tiny `ALO-4584286-M` id `1067237096` | saldo LK CONTROLE: 1.0
+- `ALO-4584286-S` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-4584286-S` | Tiny `ALO-4584286-S` id `1069543315` | saldo LK CONTROLE: 0.0
+- `ALO-4584286-XS` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-4584286-XS` | Tiny `ALO-4584286-XS` id `1069543310` | saldo LK CONTROLE: 0.0
+- `ALO-4584286-XXS` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-4584286-XXS` | Tiny `ALO-4584286-XXS` id `1069543305` | saldo LK CONTROLE: 0.0
+- `ALO-4617054-OS` | shopify_variant_tiny_missing | Shopify SKU `ALO-4617054-OS` | Tiny `` id ``
+- `ALO-4649822-OS` | shopify_variant_tiny_missing | Shopify SKU `ALO-4649822-OS` | Tiny `` id ``
+- `ALO-7326814-L` | shopify_variant_tiny_missing | Shopify SKU `ALO-7326814-L` | Tiny `` id ``
+- `ALO-7326814-M` | shopify_variant_tiny_missing | Shopify SKU `ALO-7326814-M` | Tiny `` id ``
+- `ALO-7326814-S` | shopify_variant_tiny_missing | Shopify SKU `ALO-7326814-S` | Tiny `` id ``
+- `ALO-7326814-XS` | shopify_variant_tiny_missing | Shopify SKU `ALO-7326814-XS` | Tiny `` id ``
+- `ALO-8506462-L` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-8506462-L` | Tiny `ALO-8506462-L` id `1069542777` | saldo LK CONTROLE: 0.0
+- `ALO-8506462-M` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-8506462-M` | Tiny `ALO-8506462-M` id `1069542772` | saldo LK CONTROLE: 0.0
+- `ALO-8506462-S` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-8506462-S` | Tiny `ALO-8506462-S` id `1069542767` | saldo LK CONTROLE: -1.0
+- `ALO-8506462-XS` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-8506462-XS` | Tiny `ALO-8506462-XS` id `1069542762` | saldo LK CONTROLE: 0.0
+- `ALO-9029342-M` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-9029342-M` | Tiny `ALO-9029342-M` id `1069541858` | saldo LK CONTROLE: 0.0
+- `ALO-9260126-L` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-9260126-L` | Tiny `ALO-9260126-L` id `1069542805` | saldo LK CONTROLE: 0.0
+- `ALO-9260126-M` | shopify_variant_tiny_missing | Shopify SKU `ALO-9260126-M` | Tiny `` id ``
+- `ALO-9260126-S` | shopify_variant_tiny_missing | Shopify SKU `ALO-9260126-S` | Tiny `` id ``
+- `ALO-9260126-XS` | shopify_variant_tiny_missing | Shopify SKU `ALO-9260126-XS` | Tiny `` id ``
+- `ALO-9507806-L` | shopify_variant_tiny_missing | Shopify SKU `ALO-9507806-L` | Tiny `` id ``
+- `ALO-9507806-M` | shopify_variant_tiny_missing | Shopify SKU `ALO-9507806-M` | Tiny `` id ``
+- `ALO-9507806-S` | shopify_variant_tiny_missing | Shopify SKU `ALO-9507806-S` | Tiny `` id ``
+- `ALO-9507806-XS` | matched_exact_sku_stock_resolved | Shopify SKU `ALO-9507806-XS` | Tiny `ALO-9507806-XS` id `1069541789` | saldo LK CONTROLE: 0.0
+
+## Guardrails
+- Tiny write: `0`
+- Shopify write: `0`
+- Writes externos: `0`
+- Cron/webhook/runtime novo: `0`
+- Promessa de disponibilidade pública: `0`
+- Rollback: descartar artefatos locais; nada externo alterado.

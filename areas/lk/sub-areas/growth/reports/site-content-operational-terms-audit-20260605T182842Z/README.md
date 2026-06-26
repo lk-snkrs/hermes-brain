@@ -1,0 +1,85 @@
+# Auditoria — termos operacionais em collections/pages/articles
+
+- Timestamp UTC: 20260605T182842Z
+
+## collections
+- Itens com hits: 116
+- envio_2_dias: 114
+- produtos_em_estoque: 85
+- pronta_entrega: 18
+- roda_rodar_rodam: 86
+- `nike-dunk` — descriptionHtml:envio_2_dias
+- `air-jordan-1` — descriptionHtml:envio_2_dias
+- `ultimos-lancamentos-2` — descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `supreme` — descriptionHtml:envio_2_dias
+- `stussy` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `nike-dunk-sb` — descriptionHtml:envio_2_dias
+- `sufgang` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `adidas-originals-x-korn` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam, seo_description:pronta_entrega
+- `air-jordan-travis-scott` — descriptionHtml:envio_2_dias
+- `adidas-sambae` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `nike-cortez` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `crocs` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `pace` — descriptionHtml:envio_2_dias
+- `adidas-sl-72` — descriptionHtml:envio_2_dias
+- `aime-leon-dore` — descriptionHtml:roda_rodar_rodam
+- `puma-speedcat` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `dane-se` — descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `comme-des-garcons` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `ami-paris` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `uniqlo-x-kaws` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `saint-studio` — descriptionHtml:envio_2_dias
+- `jason-markk` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `havaianas` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `sneakers` — descriptionHtml:envio_2_dias
+- `havaianas-x-dolce-gabbana` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam, seo_description:pronta_entrega
+- `balenciaga` — descriptionHtml:envio_2_dias
+- `palm-angels` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `yeezy-foam-runner` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `yeezy-slide` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `bermuda-streetwear` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `camisa-streetwear` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `short-streetwear` — descriptionHtml:envio_2_dias
+- `lk-picks` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `adidas-taekwondo` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `adidas-gazelle-indoor` — descriptionHtml:envio_2_dias
+- `kith` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `onitsuka-tiger-x-astroboy` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `masp` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `masp-x-leonilson` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `dane-se-x-rubem-valentim` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam, seo_description:pronta_entrega
+- `rhode` — descriptionHtml:envio_2_dias
+- `onitsuka-tiger-mexico-66-metallic-series` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, seo_description:pronta_entrega
+- `adidas-campus` — descriptionHtml:envio_2_dias
+- `vans-skool` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `adidas-animal-pack` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam, seo_description:pronta_entrega
+- `lululemon` — descriptionHtml:envio_2_dias
+- `athleisure` — descriptionHtml:roda_rodar_rodam
+- `tops-alo-yoga` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `acessorios-alo-yoga` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam, seo_description:pronta_entrega
+- `slyce` — descriptionHtml:envio_2_dias
+- `nude-project` — descriptionHtml:envio_2_dias
+- `carhartt` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `egho-studios` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam, seo_description:pronta_entrega
+- `adidas-handball-spezial` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam, seo_description:pronta_entrega
+- `labubu` — descriptionHtml:envio_2_dias
+- `onitsuka-tiger-california-78-ex` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `onitsuka-tiger-mexico-mid` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `onitsuka-tiger-otiger-court` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `athos-bulcao` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias, descriptionHtml:roda_rodar_rodam
+- `lk-picks-streetwear` — descriptionHtml:produtos_em_estoque, descriptionHtml:envio_2_dias
+
+## pages
+- Itens com hits: 0
+
+## articles
+- Itens com hits: 5
+- envio_2_dias: 1
+- produtos_em_estoque: 1
+- pronta_entrega: 2
+- roda_rodar_rodam: 1
+- `jordan-1-retro-comprar-sao-paulo` — body_html:roda_rodar_rodam
+- `nike-air-force-1-original-guia-completo-brasil-2026` — body_html:pronta_entrega
+- `aime-leon-dore-lifestyle-brand-new-balance-guia` — body_html:produtos_em_estoque
+- `yeezy-em-2026-vale-a-pena-o-que-mudou-apos-adidas-x-kanye` — body_html:pronta_entrega
+- `nike-vomero-premium-o-running-que-virou-lifestyle` — body_html:envio_2_dias

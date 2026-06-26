@@ -1,0 +1,1528 @@
+{
+  "alert_dedupe": {
+    "active": [],
+    "active_count": 0,
+    "new_count": 0,
+    "recurring_count": 0,
+    "resolved_since_previous_count": 1,
+    "updated_at": "2026-06-23T05:05:28.766159+00:00",
+    "values_printed": false
+  },
+  "blocked_by_approval": [
+    {
+      "approval_needed": "Explicit scoped approval naming the target host/profile/service and rollback plan.",
+      "item": "Docker/VPS/gateway/Traefik/container/runtime mutation",
+      "risk": "A3/A4",
+      "why_blocked": "Production/runtime blast radius; needs current scoped approval, backup, rollback and verification."
+    },
+    {
+      "approval_needed": "Inline decision packet with exact payload, recipient/system, rollback and exclusions.",
+      "item": "Source-of-truth or external business writes",
+      "risk": "A4",
+      "why_blocked": "Could affect customers, money, catalog, campaigns, messages, data stores or suppliers."
+    },
+    {
+      "approval_needed": "Doppler secret-name-level plan; report only presence/status and values_printed=false.",
+      "item": "Secrets mutation or local secret persistence",
+      "risk": "A4",
+      "why_blocked": "Doppler-first policy forbids copying or printing secrets; runtime injection changes require scoped rollout."
+    },
+    {
+      "approval_needed": "Human-approved schedule change packet outside the autonomous cron run.",
+      "item": "Creating/removing/rescheduling recurring cron jobs from inside the 02h cron",
+      "risk": "A3",
+      "why_blocked": "Avoid recursive scheduler drift and hidden automation sprawl."
+    }
+  ],
+  "brain_health": {
+    "artifact": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/daily-preflight-brain-health-latest.json",
+    "available": true,
+    "ok": true,
+    "rc": 0,
+    "stdout_tail": "secrets: FAIL=0 WARN=0\nlinks: FAIL=0 WARN=0\nrequired_files: FAIL=0 WARN=0\nagent_files: FAIL=0 WARN=0\narea_maps: FAIL=0 WARN=0\ndecisions_index: FAIL=0 WARN=0\nroutines_index: FAIL=0 WARN=0\nskill_references: FAIL=0 WARN=0\n\nAll checks passed.\n\nJSON report: /opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/daily-preflight-brain-health-latest.json"
+  },
+  "cron_registry": {
+    "enabled_jobs": 82,
+    "non_ok_last_status": 0,
+    "notable": [],
+    "paused_jobs": 20,
+    "registries_seen": 11,
+    "total_jobs": 102
+  },
+  "doppler_presence": {
+    "helper_present": true,
+    "inventory_rc": 0,
+    "profiles": {
+      "brain-process": {
+        "expected": 3,
+        "missing": 0,
+        "missing_names": [],
+        "present": 3
+      },
+      "default": {
+        "expected": 8,
+        "missing": 0,
+        "missing_names": [],
+        "present": 8
+      },
+      "hermes-ops-readonly": {
+        "expected": 5,
+        "missing": 0,
+        "missing_names": [],
+        "present": 5
+      },
+      "lc-claude-cli": {
+        "expected": 2,
+        "missing": 0,
+        "missing_names": [],
+        "present": 2
+      },
+      "lk-analyst-readonly": {
+        "expected": 6,
+        "missing": 0,
+        "missing_names": [],
+        "present": 6
+      },
+      "lk-collection-optimizer": {
+        "expected": 5,
+        "missing": 0,
+        "missing_names": [],
+        "present": 5
+      },
+      "lk-content": {
+        "expected": 9,
+        "missing": 0,
+        "missing_names": [],
+        "present": 9
+      },
+      "lk-content-reviewer": {
+        "expected": 4,
+        "missing": 0,
+        "missing_names": [],
+        "present": 4
+      },
+      "lk-finance": {
+        "expected": 1,
+        "missing": 0,
+        "missing_names": [],
+        "present": 1
+      },
+      "lk-growth": {
+        "expected": 9,
+        "missing": 0,
+        "missing_names": [],
+        "present": 9
+      },
+      "lk-ops": {
+        "expected": 8,
+        "missing": 0,
+        "missing_names": [],
+        "present": 8
+      },
+      "lk-shopify": {
+        "expected": 9,
+        "missing": 0,
+        "missing_names": [],
+        "present": 9
+      },
+      "lk-stock": {
+        "expected": 6,
+        "missing": 0,
+        "missing_names": [],
+        "present": 6
+      },
+      "lk-trends": {
+        "expected": 6,
+        "missing": 0,
+        "missing_names": [],
+        "present": 6
+      },
+      "mordomo": {
+        "expected": 9,
+        "missing": 0,
+        "missing_names": [],
+        "present": 9
+      },
+      "spiti": {
+        "expected": 5,
+        "missing": 0,
+        "missing_names": [],
+        "present": 5
+      }
+    },
+    "source": "/opt/data/scripts/hermes_doppler.py",
+    "values_printed": false
+  },
+  "generated_at": "2026-06-23T05:04:25.130333+00:00",
+  "guardrails": {
+    "local_governance_receipts_only": true,
+    "no_docker_vps_traefik_mutation": true,
+    "no_external_writes": true,
+    "no_gateway_restart": true,
+    "read_only_diagnostics": true,
+    "values_printed": false
+  },
+  "host_docker_observability_snapshot": {
+    "alerts_count": 0,
+    "artifact": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/host-docker-observability-p2-fixed-2026-06-08.json",
+    "available": true,
+    "containers_count": 2,
+    "generated_at": "2026-06-09T00:33:22.276571+00:00",
+    "has_cron_status_sanitized": true,
+    "has_versions_sanitized": true,
+    "recommended_action": "use as host truth if fresh; if stale or alerts exist, rerun helper read-only before conclusions",
+    "status": "healthy_snapshot",
+    "values_printed": false
+  },
+  "lk_stock_runner": {
+    "profile_exists": true,
+    "pytest_available": true,
+    "pytest_version": "pytest 9.0.2",
+    "toolset_hint": {
+      "config_present": true,
+      "mentions_code_execution": true,
+      "mentions_terminal": true
+    },
+    "unittest_help_ok": true
+  },
+  "mistake_ledger": {
+    "operating_rule": "Do not repeat an alert unchanged; classify root cause, safe next action and approval boundary.",
+    "patterns": [
+      {
+        "next_safe_action": "split oversized instructions into references, repair missing refs, and prefer source lookup before acting.",
+        "object": "79 flagged skills",
+        "pattern": "skill_quality_drift",
+        "seen_count": 1,
+        "why_it_causes_errors": "Oversized/stale/broken-reference skills increase hallucinated or outdated operating instructions."
+      }
+    ],
+    "patterns_count": 1,
+    "updated_at": "2026-06-23T05:05:28.766562+00:00",
+    "values_printed": false
+  },
+  "nightly_self_improvement_regression": {
+    "checks": {
+      "gateway_watchdog": {
+        "available": true,
+        "ok": true,
+        "path": "/opt/data/scripts/hermes_all_gateway_watchdog.py",
+        "rc": 0,
+        "silent_ok": true,
+        "stderr_len": 0,
+        "stderr_tail": "",
+        "stdout_len": 0,
+        "stdout_tail": "",
+        "values_printed": false
+      },
+      "memory_daytime": {
+        "available": true,
+        "ok": true,
+        "path": "/opt/data/scripts/hermes_memory_os_daytime_alerting_watchdog.py",
+        "rc": 0,
+        "silent_ok": true,
+        "stderr_len": 0,
+        "stderr_tail": "",
+        "stdout_len": 0,
+        "stdout_tail": "",
+        "values_printed": false
+      },
+      "memory_daytime_latest": {
+        "available": true,
+        "json": {
+          "adoption_auto_heal": {
+            "attempted": 0,
+            "enabled": false,
+            "failed": 0,
+            "healed": 0,
+            "limit": 10,
+            "suppressed": false
+          },
+          "adoption_linter": {
+            "covered_count": 200,
+            "gap_count": 0,
+            "grace_minutes": 5,
+            "rc": 0,
+            "scanned_artifacts": 200,
+            "status": "ok"
+          },
+          "auto_heal_recurrence": {
+            "recurrent_count": 5,
+            "status": "attention",
+            "threshold": 3,
+            "window_days": 7
+          },
+          "context_auto_heal": {
+            "attempted": 0,
+            "enabled": true,
+            "failed": 0,
+            "healed": 0,
+            "ledger_entries": [],
+            "results": [
+              {
+                "changed": false,
+                "reason": "current",
+                "route": "hot_refresher",
+                "status": "ok"
+              },
+              {
+                "changed": false,
+                "reason": "current",
+                "route": "daily_curator",
+                "status": "ok"
+              }
+            ]
+          },
+          "daily_path": "memories/daily/2026-06-23.md",
+          "daily_skeleton": false,
+          "event_window_minutes": 240,
+          "generated_at_utc": "2026-06-23T05:05:26.156978+00:00",
+          "generator_auto_heal": {
+            "changed": false,
+            "path": "areas/operacoes/rotinas/hermes-memory-os-v1.md",
+            "reason": "contract_current",
+            "status": "ok"
+          },
+          "hot_date": "2026-06-23",
+          "job": "Hermes Memory OS v1 daytime checker/router",
+          "memory_latest_status": "ok",
+          "memory_summary": {
+            "active_mem0_doc_hits": 0,
+            "alert_count": 0,
+            "auto_compaction_count": 0,
+            "external_memory_provider_active": true,
+            "external_memory_provider_governed": true,
+            "external_memory_provider_policy": "generic_external_off_honcho_governed_allowed",
+            "files_checked": 32,
+            "honcho_governance": {
+              "config_exists": true,
+              "governed": true,
+              "peer_ok": true,
+              "provider": "honcho",
+              "recall_mode_ok": true,
+              "save_messages_ok": true,
+              "values_printed": false,
+              "watchdog_ok": true,
+              "watchdog_rc": 0,
+              "watchdog_stdout_empty": true,
+              "workspace_ok": true
+            },
+            "memory_provider": "honcho",
+            "near_saturation_count": 0,
+            "over_limit_count": 0,
+            "possible_secret_locator_count": 0,
+            "template_coverage_missing_count": 0
+          },
+          "mode": "auto-heal-local",
+          "non_actions": [
+            "no Docker/VPS/Traefik/gateway/container/restart",
+            "no external memory provider activation",
+            "no Shopify/Tiny/GMC/Klaviyo/Meta/WhatsApp/e-mail/database writes",
+            "no secrets printed"
+          ],
+          "recent_event_count": 0,
+          "recent_event_kinds": [],
+          "routes": [],
+          "silent_ok_contract": "empty stdout when ok; stdout only for actionable memory hygiene alerts",
+          "status": "ok",
+          "watchdog_rc": 0,
+          "watchdog_stdout_present": false
+        },
+        "parse_ok": true,
+        "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/memory-hygiene/daytime-latest.json",
+        "values_printed": false
+      },
+      "memory_latest": {
+        "available": true,
+        "json": {
+          "active_mem0_doc_hits_sanitized": [],
+          "alerts_sanitized": [],
+          "auto_compactions": [],
+          "auto_template_coverage": {
+            "coverage_missing_for_existing_memory": [],
+            "existing_memory_files": 32,
+            "template_paths_without_current_file": [],
+            "templated_files": 32
+          },
+          "generated_at_utc": "2026-06-23T05:05:26.668300+00:00",
+          "job": "Hermes memory hygiene watchdog 02h15 BRT",
+          "memory_files": [
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 68.7,
+              "used_chars": 1511
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 81.7,
+              "used_chars": 1123
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/brain-process/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 21.9,
+              "used_chars": 481
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/hermes-ops-readonly/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 19.8,
+              "used_chars": 435
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-analyst-readonly/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 72.6,
+              "used_chars": 1598
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-collection-optimizer/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 27.3,
+              "used_chars": 601
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-content/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 76.7,
+              "used_chars": 1687
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-content-reviewer/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 71.9,
+              "used_chars": 1581
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-finance/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 29.9,
+              "used_chars": 658
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-growth/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 48.6,
+              "used_chars": 1070
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-ops/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 71.0,
+              "used_chars": 1561
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-shopify/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 81.4,
+              "used_chars": 1791
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-stock/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 25.3,
+              "used_chars": 556
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-trends/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 81.3,
+              "used_chars": 1788
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/mordomo/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 48.2,
+              "used_chars": 1061
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/spiti/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 75.8,
+              "used_chars": 1668
+            },
+            {
+              "exists": true,
+              "limit_chars": 2200,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/spiti-atendimento/memories/MEMORY.md",
+              "possible_secret_locator": false,
+              "usage_pct": 43.0,
+              "used_chars": 947
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/brain-process/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 19.3,
+              "used_chars": 265
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/hermes-ops-readonly/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 16.4,
+              "used_chars": 225
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-analyst-readonly/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 14.9,
+              "used_chars": 205
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-collection-optimizer/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 18.4,
+              "used_chars": 253
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-content/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 34.3,
+              "used_chars": 471
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-content-reviewer/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 14.7,
+              "used_chars": 202
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-finance/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 35.7,
+              "used_chars": 491
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-growth/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 15.4,
+              "used_chars": 212
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-ops/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 56.6,
+              "used_chars": 778
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-shopify/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 52.6,
+              "used_chars": 723
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-stock/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 83.9,
+              "used_chars": 1153
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/lk-trends/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 14.8,
+              "used_chars": 204
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/mordomo/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 43.7,
+              "used_chars": 601
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/spiti/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 29.4,
+              "used_chars": 404
+            },
+            {
+              "exists": true,
+              "limit_chars": 1375,
+              "near_saturation": false,
+              "over_limit": false,
+              "path": "profiles/spiti-atendimento/memories/USER.md",
+              "possible_secret_locator": false,
+              "usage_pct": 75.9,
+              "used_chars": 1044
+            }
+          ],
+          "reporting_note_for_0230_digest": "Report status, usage percentages, secret/provider findings, and whether Lucas action is needed; do not dump raw file contents.",
+          "silent_ok_contract": "stdout stays empty when status is ok; stdout contains only concise actionable alerts otherwise",
+          "status": "ok",
+          "summary": {
+            "active_mem0_doc_hits": 0,
+            "alert_count": 0,
+            "auto_compaction_count": 0,
+            "external_memory_provider_active": true,
+            "external_memory_provider_governed": true,
+            "external_memory_provider_policy": "generic_external_off_honcho_governed_allowed",
+            "files_checked": 32,
+            "honcho_governance": {
+              "config_exists": true,
+              "governed": true,
+              "peer_ok": true,
+              "provider": "honcho",
+              "recall_mode_ok": true,
+              "save_messages_ok": true,
+              "values_printed": false,
+              "watchdog_ok": true,
+              "watchdog_rc": 0,
+              "watchdog_stdout_empty": true,
+              "workspace_ok": true
+            },
+            "memory_provider": "honcho",
+            "near_saturation_count": 0,
+            "over_limit_count": 0,
+            "possible_secret_locator_count": 0,
+            "template_coverage_missing_count": 0
+          }
+        },
+        "parse_ok": true,
+        "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/memory-hygiene/latest.json",
+        "values_printed": false
+      },
+      "memory_scorecard": {
+        "available": true,
+        "json": {
+          "checks": {
+            "adoption_linter_ok": true,
+            "daily_not_skeleton": true,
+            "event_context_captured": true,
+            "hot_current": true,
+            "memory_latest_ok": true,
+            "near_saturation_zero": true,
+            "over_limit_zero": true,
+            "provider_external_off_or_governed": true,
+            "secret_locator_zero": true,
+            "template_coverage_complete": true,
+            "watchdog_rc_ok": true,
+            "watchdog_stdout_empty": true
+          },
+          "contract": "scorecard is local/read-only evidence; not a Telegram digest",
+          "failed_checks": [],
+          "generated_at_utc": "2026-06-23T05:05:26.156978+00:00",
+          "job": "Hermes Memory OS v1.1 scorecard",
+          "recent_event_count": 0,
+          "recent_event_kinds": [],
+          "score": 100,
+          "status": "ok"
+        },
+        "parse_ok": true,
+        "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/memory-hygiene/scorecard-latest.json",
+        "values_printed": false
+      },
+      "reminder_health": {
+        "available": true,
+        "json": {
+          "agents": {
+            "brain_agents_checked": 19,
+            "brain_agents_gap_count": 0,
+            "brain_agents_gaps": [],
+            "profile_agents_checked": 11,
+            "profile_agents_gap_count": 0,
+            "profile_agents_gaps": [],
+            "profile_agents_root": "/opt/data/profiles"
+          },
+          "blocker_count": 0,
+          "blockers": [],
+          "brain": "/opt/data/hermes_bruno_ingest/hermes-brain",
+          "ingress": {
+            "closed_marker_count": 25,
+            "covered_needed_count": 12,
+            "files_scanned": 3417,
+            "markers_found": 45,
+            "open_needed_count": 0
+          },
+          "kanban": {
+            "available": true,
+            "by_status": {
+              "done": 8
+            },
+            "running_count": 0,
+            "unassigned_ready_count": 0
+          },
+          "ledger": {
+            "active_count": 18,
+            "central_due_count": 0,
+            "due_count": 14,
+            "schema_error_count": 0,
+            "specialist_due_count": 14,
+            "total_items": 40
+          },
+          "source": "reminder-os-health-gate-readonly",
+          "status": "PASS",
+          "templates": {
+            "coverage_ok_count": 4,
+            "gap_count": 0,
+            "templates_checked": 4
+          },
+          "warning_count": 1,
+          "warnings": [
+            "active_loops:18"
+          ]
+        },
+        "ok": true,
+        "path": "/opt/data/scripts/reminder_os_health_gate.py",
+        "rc": 0,
+        "values_printed": false
+      },
+      "reminder_ingress": {
+        "available": true,
+        "json": {
+          "brain": "/opt/data/hermes_bruno_ingest/hermes-brain",
+          "closed_examples": [
+            {
+              "covered_by_active_ledger": false,
+              "evidence": "areas/lk/sub-areas/atendimento/handoffs/klaviyo-wishlist-t97an8-fixed-reactivated-20260617.md",
+              "loop_needed": "no",
+              "next_action": "",
+              "owner": "",
+              "path": "areas/lk/sub-areas/atendimento/handoffs/klaviyo-wishlist-t97an8-fixed-reactivated-20260617.md",
+              "review_trigger": ""
+            },
+            {
+              "covered_by_active_ledger": false,
+              "evidence": "areas/lk/sub-areas/content/handoffs/wishlist-crm-favoritou-nao-comprou-lk-content-20260611.md",
+              "loop_needed": "no",
+              "next_action": "Produzir somente copy/brief/preview interno para wishlist CRM; não enviar nem ativar Klaviyo/SWYM sem aprovação explícita.",
+              "owner": "[LK] Content / profile lk-content",
+              "path": "areas/lk/sub-areas/content/handoffs/wishlist-crm-favoritou-nao-comprou-lk-content-20260611.md",
+              "review_trigger": "Revisar quando Lucas pedir pacote CRM ou antes de qualquer Klaviyo/SWYM/customer-facing write."
+            },
+            {
+              "covered_by_active_ledger": false,
+              "evidence": "areas/lk/sub-areas/growth/handoffs/lk-growth-impact-review-readonly-gate-20260612T115619Z.md",
+              "loop_needed": "no",
+              "next_action": "Executar apenas briefing/packet read-only quando houver novo ciclo Onitsuka/204L/Nike Mind ou quando Lucas pedir continuação; nenhum write externo sem approval packet.",
+              "owner": "`[LK] Growth OS` / profile `lk-growth`",
+              "path": "areas/lk/sub-areas/growth/handoffs/lk-growth-impact-review-readonly-gate-20260612T115619Z.md",
+              "review_trigger": "Revisar no próximo ciclo D+7/D+14 ou antes de qualquer Growth write relacionado."
+            },
+            {
+              "covered_by_active_ledger": false,
+              "evidence": "areas/lk/sub-areas/stock/handoffs/lk-content-checkout-concierge-model-priority-90d-handoff-20260611.md",
+              "loop_needed": "no",
+              "next_action": "Produzir somente copy/brief/preview interno para wishlist CRM; não enviar nem ativar Klaviyo/SWYM sem aprovação explícita.",
+              "owner": "[LK] Content / profile lk-content",
+              "path": "areas/lk/sub-areas/stock/handoffs/lk-content-checkout-concierge-model-priority-90d-handoff-20260611.md",
+              "review_trigger": "Revisar quando Lucas pedir pacote CRM ou antes de qualquer Klaviyo/SWYM/customer-facing write."
+            },
+            {
+              "covered_by_active_ledger": false,
+              "evidence": "areas/lk/sub-areas/stock/handoffs/lk-content-request-product-model-sales-groups-90d-20260610.md",
+              "loop_needed": "no",
+              "next_action": "Produzir somente copy/brief/preview interno para wishlist CRM; não enviar nem ativar Klaviyo/SWYM sem aprovação explícita.",
+              "owner": "[LK] Content / profile lk-content",
+              "path": "areas/lk/sub-areas/stock/handoffs/lk-content-request-product-model-sales-groups-90d-20260610.md",
+              "review_trigger": "Revisar quando Lucas pedir pacote CRM ou antes de qualquer Klaviyo/SWYM/customer-facing write."
+            },
+            {
+              "covered_by_active_ledger": false,
+              "evidence": "areas/lk/sub-areas/stock/handoffs/lk-shopify-active-products-all-sizes-unavailable-request-20260612T180326Z.md",
+              "loop_needed": "no",
+              "next_action": "Validar evidência read-only de estoque/disponibilidade usando Stock OS/Tiny conforme regra LK; devolver confirmado/não confirmado/divergente sem Shopify/Tiny writes.",
+              "owner": "[LK] Estoque / profile lk-stock",
+              "path": "areas/lk/sub-areas/stock/handoffs/lk-shopify-active-products-all-sizes-unavailable-request-20260612T180326Z.md",
+              "review_trigger": "Revisar no próximo ciclo LK Stock ou quando Lucas pedir status de estoque/disponibilidade."
+            },
+            {
+              "covered_by_active_ledger": false,
+              "evidence": "areas/lk/sub-areas/stock/handoffs/lk-stock-title-handle-tiny-fallback-official-20260612T102711Z.md",
+              "loop_needed": "no",
+              "next_action": "Validar evidência read-only de estoque/disponibilidade usando Stock OS/Tiny conforme regra LK; devolver confirmado/não confirmado/divergente sem Shopify/Tiny writes.",
+              "owner": "[LK] Estoque / profile lk-stock",
+              "path": "areas/lk/sub-areas/stock/handoffs/lk-stock-title-handle-tiny-fallback-official-20260612T102711Z.md",
+              "review_trigger": "Revisar no próximo ciclo LK Stock ou quando Lucas pedir status de estoque/disponibilidade."
+            },
+            {
+              "covered_by_active_ledger": false,
+              "evidence": "areas/lk/sub-areas/stock/handoffs/lk-stock-title-handle-tiny-fallback-specialists-20260612T144349Z.md",
+              "loop_needed": "no",
+              "next_action": "Validar evidência read-only de estoque/disponibilidade usando Stock OS/Tiny conforme regra LK; devolver confirmado/não confirmado/divergente sem Shopify/Tiny writes.",
+              "owner": "[LK] Estoque / profile lk-stock",
+              "path": "areas/lk/sub-areas/stock/handoffs/lk-stock-title-handle-tiny-fallback-specialists-20260612T144349Z.md",
+              "review_trigger": "Revisar no próximo ciclo LK Stock ou quando Lucas pedir status de estoque/disponibilidade."
+            },
+            {
+              "covered_by_active_ledger": false,
+              "evidence": "areas/lk/sub-areas/stock/handoffs/wishlist-stock-attention-20260611.md",
+              "loop_needed": "no",
+              "next_action": "Validar evidência read-only de estoque/disponibilidade usando Stock OS/Tiny conforme regra LK; devolver confirmado/não confirmado/divergente sem Shopify/Tiny writes.",
+              "owner": "[LK] Estoque / profile lk-stock",
+              "path": "areas/lk/sub-areas/stock/handoffs/wishlist-stock-attention-20260611.md",
+              "review_trigger": "Revisar no próximo ciclo LK Stock ou quando Lucas pedir status de estoque/disponibilidade."
+            },
+            {
+              "covered_by_active_ledger": false,
+              "evidence": "este relatório + DBs locais citados",
+              "loop_needed": "no",
+              "next_action": "",
+              "owner": "lk-content após recebimento deste relatório",
+              "path": "areas/lk/sub-areas/stock/reports/lk-content-apparel-bestsellers-in-stock-newsletter-20260621T234235Z.md",
+              "review_trigger": "se qualquer item de baixo estoque for hero ou se houver atraso até o envio amanhã"
+            }
+          ],
+          "closed_marker_count": 25,
+          "covered_needed": [
+            {
+              "covered_by_active_ledger": true,
+              "evidence": "areas/lk/sub-areas/atendimento/handoffs/klaviyo-wishlist-empty-email-t97an8-20260617.md",
+              "loop_needed": "yes",
+              "next_action": "aguardar aprovação de Lucas para patch do template `YwnNTz` ou pausa emergencial do `T97an8`.",
+              "owner": "`lk-content` / Klaviyo operator",
+              "path": "areas/lk/sub-areas/atendimento/handoffs/klaviyo-wishlist-empty-email-t97an8-20260617.md",
+              "review_trigger": "Lucas responder aprovando uma das opções; ou novo print/e-mail vazio do mesmo subject."
+            },
+            {
+              "covered_by_active_ledger": true,
+              "evidence": "areas/lk/sub-areas/growth/approval-packets/onitsuka-tiger-ranking-20260613/approval-packet.md",
+              "loop_needed": "yes",
+              "next_action": "aguardar aprovação explícita para executar mudanças ou preparar preview/dev se Lucas pedir antes.",
+              "owner": "LK Growth",
+              "path": "areas/lk/sub-areas/growth/approval-packets/onitsuka-tiger-ranking-20260613/approval-packet.md",
+              "review_trigger": "aprovação de Lucas ou terça 2026-06-16 após Google SEO Opportunity Factory."
+            },
+            {
+              "covered_by_active_ledger": true,
+              "evidence": "areas/lk/sub-areas/growth/approval-packets/seo-package-a-20260618/APPROVAL-PACKET.md",
+              "loop_needed": "yes",
+              "next_action": "se Lucas aprovar, executar somente o escopo aprovado, com backup/readback/rollback e receipt.",
+              "owner": "`lk-shopify`",
+              "path": "areas/lk/sub-areas/growth/approval-packets/seo-package-a-20260618/APPROVAL-PACKET.md",
+              "review_trigger": "resposta explícita de Lucas aprovando o lote e escopo."
+            },
+            {
+              "covered_by_active_ledger": true,
+              "evidence": "areas/lk/sub-areas/growth/handoffs/theme-faq-onitsuka-lote1-20260616.md",
+              "loop_needed": "yes",
+              "next_action": "preparar dev-preview/packet theme FAQ Onitsuka/global legado",
+              "owner": "lk-growth",
+              "path": "areas/lk/sub-areas/growth/handoffs/theme-faq-onitsuka-lote1-20260616.md",
+              "review_trigger": "após Lucas aprovar frente visual/theme ou se D0/D1 fetch continuar mostrando FAQ antigo"
+            },
+            {
+              "covered_by_active_ledger": true,
+              "evidence": "areas/lk/sub-areas/growth/reports/ahrefs-execute-1to4-20260619/AHREFS_1TO4_EXECUTION_RECEIPT.md",
+              "loop_needed": "yes",
+              "next_action": "após próximo crawl Ahrefs, comparar contadores de Page has links to broken page, title/meta warnings, missing alt, orphan e canonical no incoming; se persistirem, gerar lote 2 com URLs restantes reais.",
+              "owner": "lk-growth",
+              "path": "areas/lk/sub-areas/growth/reports/ahrefs-execute-1to4-20260619/AHREFS_1TO4_EXECUTION_RECEIPT.md",
+              "review_trigger": "novo email/crawl Ahrefs ou em 24h."
+            },
+            {
+              "covered_by_active_ledger": true,
+              "evidence": "areas/lk/sub-areas/growth/reports/impact-reviews/seo-gsc-p1-hotfix-samba-d7-20260613/d7-readonly-review.md",
+              "loop_needed": "yes",
+              "next_action": "rodar D+14 read-only em 2026-06-20 para o mesmo pacote, sem writes.",
+              "owner": "LK Growth",
+              "path": "areas/lk/sub-areas/growth/reports/impact-reviews/seo-gsc-p1-hotfix-samba-d7-20260613/d7-readonly-review.md",
+              "review_trigger": "2026-06-20 ou queda adicional material em GSC/GA4 antes disso."
+            },
+            {
+              "covered_by_active_ledger": true,
+              "evidence": "areas/lk/sub-areas/shopify/approval-packets/seo-pdp-seventh10-approval-packet-20260618.md",
+              "loop_needed": "yes",
+              "next_action": "aguardar Lucas aprovar/apontar ajustes para o lote 7; se aprovado, aplicar somente `seo.title`/`seo.description` com snapshot, readback Admin e QA público.",
+              "owner": "lk-shopify",
+              "path": "areas/lk/sub-areas/shopify/approval-packets/seo-pdp-seventh10-approval-packet-20260618.md",
+              "review_trigger": "resposta de Lucas neste chat com aprovação/ajuste do lote 7."
+            },
+            {
+              "covered_by_active_ledger": true,
+              "evidence": "areas/lk/sub-areas/shopify/handoffs/handoff-lkgoc-to-lk-shopify-upload-salomon-xt6-gtx-black-20260615T200118Z.md",
+              "loop_needed": "yes",
+              "next_action": "LK Shopify pedir/receber preço e tamanhos, então criar draft Shopify com campos abaixo, fazer readback e devolver link admin/preview.",
+              "owner": "LK Shopify (`lk-shopify`)",
+              "path": "areas/lk/sub-areas/shopify/handoffs/handoff-lkgoc-to-lk-shopify-upload-salomon-xt6-gtx-black-20260615T200118Z.md",
+              "review_trigger": "assim que Lucas informar preço e tamanhos/aprovar texto acima."
+            },
+            {
+              "covered_by_active_ledger": true,
+              "evidence": "areas/lk/sub-areas/stock/handoffs/2026-06-14-lk-content-nike-mind-001-002-newsletter-availability.md",
+              "loop_needed": "yes",
+              "next_action": "retornar validação operacional para Nike Mind 001/002 antes da copy final e antes de qualquer Draft Klaviyo.",
+              "owner": "lk-stock / [LK] Estoque Loja Física",
+              "path": "areas/lk/sub-areas/stock/handoffs/2026-06-14-lk-content-nike-mind-001-002-newsletter-availability.md",
+              "review_trigger": "antes de aprovar customer-facing copy com disponibilidade/estoque/preço ou antes de criar Draft Klaviyo."
+            },
+            {
+              "covered_by_active_ledger": true,
+              "evidence": "areas/lk/sub-areas/stock/handoffs/lk-content-request-apparel-bestsellers-in-stock-newsletter-20260621.md",
+              "loop_needed": "yes",
+              "next_action": "retornar ranking sanitizado de apparel best sellers por marca com disponibilidade/estoque confirmado",
+              "owner": "lk-stock / [LK] Estoque Loja Física",
+              "path": "areas/lk/sub-areas/stock/handoffs/lk-content-request-apparel-bestsellers-in-stock-newsletter-20260621.md",
+              "review_trigger": "antes de finalizar a seleção de produtos/copy/HTML da newsletter de amanhã"
+            },
+            {
+              "covered_by_active_ledger": true,
+              "evidence": "areas/lk/sub-areas/stock/handoffs/whatsapp-stock-responder-stockos-correction-20260615.md",
+              "loop_needed": "yes",
+              "next_action": "validar se o processo WhatsApp ativo carrega `/opt/data/scripts/lk_hermes_whatsapp_responder.py`; se Lucas aprovar, reiniciar o responder com backup/rollback e readback, depois fazer smoke no grupo/canal permitido.",
+              "owner": "`lk-stock` + operador do responder WhatsApp LK",
+              "path": "areas/lk/sub-areas/stock/handoffs/whatsapp-stock-responder-stockos-correction-20260615.md",
+              "review_trigger": "próxima pergunta de estoque no WhatsApp ou aprovação explícita de Lucas para restart do responder."
+            },
+            {
+              "covered_by_active_ledger": true,
+              "evidence": "areas/lk/sub-areas/trends/handoffs/lk-trends-global-top-models-to-site-handoff-20260614.md",
+              "loop_needed": "yes",
+              "next_action": "",
+              "owner": "LK Collection Optimizer + LK Trends; handoff posterior para LK Shopify se Lucas aprovar write.",
+              "path": "areas/lk/sub-areas/trends/handoffs/lk-trends-global-top-models-to-site-handoff-20260614.md",
+              "review_trigger": "aprovação explícita de Lucas para pacote Shopify/sourcing ou pedido de “filtrar só modelos inexistentes”."
+            }
+          ],
+          "covered_needed_count": 12,
+          "files_scanned": 3417,
+          "ledger": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/reminder-os/reminders.jsonl",
+          "markers_found": 45,
+          "open_needed": [],
+          "open_needed_count": 0,
+          "source": "reminder-os-ingress-audit-readonly"
+        },
+        "ok": true,
+        "path": "/opt/data/scripts/reminder_os_ingress_audit.py",
+        "rc": 0,
+        "values_printed": false
+      },
+      "reminder_watchdog": {
+        "available": true,
+        "ok": true,
+        "path": "/opt/data/scripts/reminder_os_watchdog.py",
+        "rc": 0,
+        "silent_ok": true,
+        "stderr_len": 0,
+        "stderr_tail": "",
+        "stdout_len": 0,
+        "stdout_tail": "",
+        "values_printed": false
+      },
+      "synthetic_cross_agent": {
+        "available": true,
+        "ok": true,
+        "path": "/opt/data/scripts/reminder_os_synthetic_cross_agent_test.py",
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "# Reminder OS — synthetic cross-agent handoff test\n\nStatus: PASS\nScenario: lk-growth_to_hermes-geral\nExternal writes: 0\nvalues_printed: false\n\n## Checks\n- handoff_fixture_exists: True\n- ingress_covered_needed_count_is_1: True\n- ingress_open_needed_count_is_0: True\n- health_pass: True\n- brain_agents_gap_count_is_0: True\n- profile_agents_gap_count_is_0: True\n- source_brain_not_mutated: True\n\n## Result\n- ingress open needed: 0\n- ingress covered needed: 1\n- health: PASS",
+        "values_printed": false
+      }
+    },
+    "guardrails": {
+      "no_external_writes": true,
+      "no_gateway_restart_requested_by_this_gate": true,
+      "no_new_cron_created": true,
+      "telegram_only_on_attention": true,
+      "values_printed": false
+    },
+    "issues": [],
+    "status": "ok",
+    "values_printed": false
+  },
+  "p2_release_adoption_planner": {
+    "action": "skip_repeated_release_review",
+    "guardrail": "release analysis may create local adoption matrix; runtime upgrade remains approval-gated",
+    "latest_known_tag": "v2026.6.19",
+    "new_tags": [],
+    "priority": "low",
+    "reason": "no_new_tags_since_last_preflight",
+    "values_printed": false
+  },
+  "profiles": {
+    "brain-process": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "present": false
+      },
+      "home": "/opt/data/profiles/brain-process"
+    },
+    "default": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "parse_ok": true,
+        "pid": 1,
+        "present": true,
+        "updated_at": "2026-06-22T22:31:14.308523+00:00"
+      },
+      "home": "/opt/data"
+    },
+    "hermes-ops-readonly": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "present": false
+      },
+      "home": "/opt/data/profiles/hermes-ops-readonly"
+    },
+    "lc-claude-cli": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "parse_ok": true,
+        "pid": null,
+        "present": true,
+        "updated_at": "2026-06-08T19:40:20.964853+00:00"
+      },
+      "home": "/opt/data/profiles/lc-claude-cli"
+    },
+    "lk-analyst-readonly": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "present": false
+      },
+      "home": "/opt/data/profiles/lk-analyst-readonly"
+    },
+    "lk-collection-optimizer": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "parse_ok": true,
+        "pid": 762,
+        "present": true,
+        "updated_at": "2026-06-22T22:31:36.842776+00:00"
+      },
+      "home": "/opt/data/profiles/lk-collection-optimizer"
+    },
+    "lk-content": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "parse_ok": true,
+        "pid": 1272,
+        "present": true,
+        "updated_at": "2026-06-22T22:31:43.507265+00:00"
+      },
+      "home": "/opt/data/profiles/lk-content"
+    },
+    "lk-content-reviewer": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "present": false
+      },
+      "home": "/opt/data/profiles/lk-content-reviewer"
+    },
+    "lk-finance": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "parse_ok": true,
+        "pid": 1115,
+        "present": true,
+        "updated_at": "2026-06-22T22:31:40.647516+00:00"
+      },
+      "home": "/opt/data/profiles/lk-finance"
+    },
+    "lk-growth": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "parse_ok": true,
+        "pid": 176,
+        "present": true,
+        "updated_at": "2026-06-22T22:32:23.723415+00:00"
+      },
+      "home": "/opt/data/profiles/lk-growth"
+    },
+    "lk-ops": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "parse_ok": true,
+        "pid": 303,
+        "present": true,
+        "updated_at": "2026-06-22T22:31:31.712244+00:00"
+      },
+      "home": "/opt/data/profiles/lk-ops"
+    },
+    "lk-shopify": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "parse_ok": true,
+        "pid": 544,
+        "present": true,
+        "updated_at": "2026-06-22T22:31:32.705807+00:00"
+      },
+      "home": "/opt/data/profiles/lk-shopify"
+    },
+    "lk-stock": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "parse_ok": true,
+        "pid": 963,
+        "present": true,
+        "updated_at": "2026-06-22T22:31:39.606313+00:00"
+      },
+      "home": "/opt/data/profiles/lk-stock"
+    },
+    "lk-trends": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "parse_ok": true,
+        "pid": 583,
+        "present": true,
+        "updated_at": "2026-06-22T22:31:33.828284+00:00"
+      },
+      "home": "/opt/data/profiles/lk-trends"
+    },
+    "mordomo": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "parse_ok": true,
+        "pid": 169,
+        "present": true,
+        "updated_at": "2026-06-22T22:31:25.243411+00:00"
+      },
+      "home": "/opt/data/profiles/mordomo"
+    },
+    "spiti": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "parse_ok": true,
+        "pid": 188,
+        "present": true,
+        "updated_at": "2026-06-22T22:31:28.198914+00:00"
+      },
+      "home": "/opt/data/profiles/spiti"
+    },
+    "spiti-atendimento": {
+      "config_check": {
+        "ok": true,
+        "rc": 0,
+        "stderr_tail": "",
+        "stdout_tail": "NE_ALLOW_ALL_USERS\n    ○ LINE_HOME_CHANNEL\n    ○ LINE_SLOW_RESPONSE_THRESHOLD\n    ○ IRC_PORT\n    ○ IRC_USE_TLS\n    ○ IRC_ALLOWED_USERS\n    ○ IRC_ALLOW_ALL_USERS\n    ○ IRC_HOME_CHANNEL\n    ○ TEAMS_CLIENT_ID\n    ○ TEAMS_CLIENT_SECRET\n    ○ TEAMS_TENANT_ID\n    ○ TEAMS_PORT\n    ○ TEAMS_ALLOWED_USERS\n    ○ TEAMS_ALLOW_ALL_USERS\n    ○ TEAMS_HOME_CHANNEL\n    ○ TEAMS_HOME_CHANNEL_NAME\n    ○ DISCORD_ALLOW_ALL_USERS\n    ○ DISCORD_HOME_CHANNEL\n    ○ DISCORD_HOME_CHANNEL_NAME\n    ○ HASS_TOKEN\n    ○ HASS_URL"
+      },
+      "gateway_state": {
+        "parse_ok": true,
+        "pid": 272,
+        "present": true,
+        "updated_at": "2026-06-22T22:31:29.827573+00:00"
+      },
+      "home": "/opt/data/profiles/spiti-atendimento"
+    }
+  },
+  "release_probe": {
+    "latest_tags": [
+      "v2026.6.19",
+      "v2026.6.5",
+      "v2026.5.29.2"
+    ],
+    "ok": true,
+    "source": "https://api.github.com/repos/NousResearch/hermes-agent/releases?per_page=3"
+  },
+  "release_watch": {
+    "latest_tags": [
+      "v2026.6.19",
+      "v2026.6.5",
+      "v2026.5.29.2"
+    ],
+    "new_tags_since_last_preflight": [],
+    "previous_latest_tags": [
+      "v2026.6.19",
+      "v2026.6.5",
+      "v2026.5.29.2"
+    ],
+    "updated_at": "2026-06-23T05:04:24.867316+00:00",
+    "values_printed": false
+  },
+  "runtime": {
+    "hermes_version": {
+      "rc": 0,
+      "stderr": "",
+      "stdout": "Hermes Agent v0.17.0 (2026.6.19) · upstream ba6ffd4f\nProject: /opt/data/hermes-0.15.1-venv/lib/python3.13/site-packages\nPython: 3.13.5\nOpenAI SDK: 2.24.0\nUp to date"
+    },
+    "python": "/opt/hermes/.venv/bin/python"
+  },
+  "schema": "lc_hermes_daily_intelligence_preflight.v4",
+  "scope": "sanitized_local_preflight_with_local_governance_receipts",
+  "score_trend_7d": {
+    "available": true,
+    "average_score": 99.86,
+    "delta_first_to_last": 0,
+    "points": [
+      {
+        "date": "2026-06-18",
+        "path": "reports/brain-improvement-score-2026-06-17-02h.json",
+        "score": 100
+      },
+      {
+        "date": "2026-06-19",
+        "path": "reports/brain-improvement-score-2026-06-18-02h.json",
+        "score": 99
+      },
+      {
+        "date": "2026-06-20",
+        "path": "reports/brain-improvement-score-2026-06-19-02h.json",
+        "score": 100
+      },
+      {
+        "date": "2026-06-21",
+        "path": "reports/brain-improvement-score-2026-06-20-02h.json",
+        "score": 100
+      },
+      {
+        "date": "2026-06-21",
+        "path": "reports/brain-improvement-score-2026-06-21-02h.json",
+        "score": 100
+      },
+      {
+        "date": "2026-06-22",
+        "path": "reports/brain-improvement-score-2026-06-22-02h.json",
+        "score": 100
+      },
+      {
+        "date": "2026-06-23-02h",
+        "path": "reports/brain-improvement-score-2026-06-23-02h.json",
+        "score": 100
+      }
+    ],
+    "trend": "stable",
+    "values_printed": false,
+    "weakest_dimensions": [
+      {
+        "delta": 0,
+        "key": "routines",
+        "latest": 99
+      },
+      {
+        "delta": 0,
+        "key": "agents",
+        "latest": 100
+      },
+      {
+        "delta": 0,
+        "key": "maps",
+        "latest": 100
+      },
+      {
+        "delta": 0,
+        "key": "skills",
+        "latest": 100
+      },
+      {
+        "delta": 0,
+        "key": "security",
+        "latest": 100
+      }
+    ],
+    "window_days": 7
+  },
+  "secret_scan": {
+    "files_scanned": 8,
+    "files_with_hits": [],
+    "high_confidence_token_hits": 0,
+    "sensitive_field_literal_hits": 0,
+    "values_printed": false
+  },
+  "skill_quality_audit": {
+    "available": true,
+    "flagged_count": 79,
+    "recommended_action": "prefer references/ split and source lookup for oversized or stale skills; patch broken references before relying on them",
+    "skills_scanned": 226,
+    "top_risks": [
+      {
+        "bytes": 100341,
+        "missing_reference_count": 0,
+        "missing_reference_examples": [],
+        "risk_flags": [
+          "oversized_skill_load",
+          "contains_staleness_marker"
+        ],
+        "skill": "productivity/bruno-openclaw-hermes-brain-adaptation"
+      },
+      {
+        "bytes": 94446,
+        "missing_reference_count": 0,
+        "missing_reference_examples": [],
+        "risk_flags": [
+          "contains_staleness_marker"
+        ],
+        "skill": "research/research-paper-writing"
+      },
+      {
+        "bytes": 92317,
+        "missing_reference_count": 0,
+        "missing_reference_examples": [],
+        "risk_flags": [
+          "contains_staleness_marker"
+        ],
+        "skill": "autonomous-ai-agents/hermes-agent"
+      },
+      {
+        "bytes": 85693,
+        "missing_reference_count": 0,
+        "missing_reference_examples": [],
+        "risk_flags": [
+          "contains_staleness_marker"
+        ],
+        "skill": "productivity/lk-operational-intelligence"
+      },
+      {
+        "bytes": 80863,
+        "missing_reference_count": 0,
+        "missing_reference_examples": [],
+        "risk_flags": [
+          "contains_staleness_marker"
+        ],
+        "skill": "devops/lucas-hermes-continuous-improvement"
+      },
+      {
+        "bytes": 70200,
+        "missing_reference_count": 0,
+        "missing_reference_examples": [],
+        "risk_flags": [
+          "contains_staleness_marker"
+        ],
+        "skill": "productivity/hermes-brain-governance"
+      },
+      {
+        "bytes": 58806,
+        "missing_reference_count": 0,
+        "missing_reference_examples": [],
+        "risk_flags": [
+          "contains_staleness_marker"
+        ],
+        "skill": "software-development/mission-control-development"
+      },
+      {
+        "bytes": 53553,
+        "missing_reference_count": 0,
+        "missing_reference_examples": [],
+        "risk_flags": [
+          "contains_staleness_marker"
+        ],
+        "skill": "productivity/lk-seo-weekly-improvement"
+      },
+      {
+        "bytes": 44892,
+        "missing_reference_count": 0,
+        "missing_reference_examples": [],
+        "risk_flags": [
+          "contains_staleness_marker"
+        ],
+        "skill": "autonomous-ai-agents/claude-code"
+      },
+      {
+        "bytes": 43958,
+        "missing_reference_count": 0,
+        "missing_reference_examples": [],
+        "risk_flags": [
+          "contains_staleness_marker"
+        ],
+        "skill": "productivity/lucas-chief-of-staff"
+      },
+      {
+        "bytes": 42536,
+        "missing_reference_count": 0,
+        "missing_reference_examples": [],
+        "risk_flags": [
+          "contains_staleness_marker"
+        ],
+        "skill": "productivity/lk-shopify-readonly"
+      },
+      {
+        "bytes": 41950,
+        "missing_reference_count": 0,
+        "missing_reference_examples": [],
+        "risk_flags": [
+          "contains_staleness_marker"
+        ],
+        "skill": "productivity/multiempresa-routing-lucas"
+      }
+    ],
+    "values_printed": false
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "operational_date": "2026-06-20",
+  "generated_at_utc": "2026-06-21T04:01:00Z",
+  "status": "attention_controlled",
+  "executive_summary": "Brain Health FAIL=0/WARN=0 and Brain Improvement Score=100/100. Main operational items: Honcho/Memory OS policy divergence converted into read-only approval packet; LK POS restock webhook hotfix executed by lk-ops with scoped approval and receipt; Zipper intakes remained draft/needs-attention; runtime cron snapshot had 42 jobs, 38 active, 4 paused, non-ok last_status 0.",
+  "material_changes": [
+    {
+      "domain": "Hermes/Memory OS",
+      "summary": "Daily Intelligence applied A1 idempotency patch to Memory OS generator contract checker and created receipt.",
+      "artifact": "areas/operacoes/receipts/2026-06-20-daily-intelligence-a1-memory-os-idempotency.md",
+      "external_writes": false
+    },
+    {
+      "domain": "Hermes/Memory OS",
+      "summary": "Lucas chose Fazer for a Mesa COO decision to prepare a read-only approval packet on Honcho provider divergence; packet recommends accepting Honcho as governed provider but awaits Lucas A/B approval.",
+      "artifact": "areas/operacoes/decision-inbox/memory-provider-honcho-policy-divergence-20260620.md",
+      "external_writes": false
+    },
+    {
+      "domain": "LK Ops",
+      "summary": "lk-ops executed scoped approved hotfix for lk-shopify-pos-restock webhook route precedence; technical validation passed; functional validation awaits next real POS order event.",
+      "artifact": "areas/lk/sub-areas/atendimento/receipts/lk-pos-restock-webhook-hotfix-20260620T221856Z.md",
+      "external_writes": true,
+      "external_write_scope": "approved gateway/config hotfix and restart by specialist profile; no Shopify/Tiny/stock/customer send writes"
+    },
+    {
+      "domain": "Zipper",
+      "summary": "Zipper email intake created needs-attention for Artsy lead asking material commercial details and safe draft for generic Tidio lead; no external send by Fechamento.",
+      "artifact": "areas/zipper/inbox/email-intake/20260620T195409Z_needs_attention_artsy_leslie_flavia_junqueira.md",
+      "external_writes": false
+    }
+  ],
+  "incidents": [
+    {
+      "severity": "attention",
+      "domain": "Memory OS",
+      "summary": "Memory provider guard continues to alert because runtime uses honcho while canonical policy still says external provider off.",
+      "next_action": "Lucas choose Aprovar A, Aprovar B, or Ajustar in the approval packet."
+    },
+    {
+      "severity": "attention",
+      "domain": "LK Recovery",
+      "summary": "Recovery monitor saw 0 Klaviyo/webhook conversations created in 24h and 1 WhatsApp failure; needs read-only investigation.",
+      "next_action": "Verify webhook/authentication path before mutation or sends."
+    }
+  ],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Fazer: prepare read-only approval packet for Memory provider Honcho divergence.",
+      "scope": "documentation/diagnosis only; no runtime/config mutation",
+      "artifact": "areas/operacoes/decision-inbox/memory-provider-honcho-policy-divergence-20260620.md"
+    },
+    {
+      "decision": "Approve scoped LK POS restock webhook hotfix.",
+      "scope": "limited production gateway/config route precedence hotfix by lk-ops with backup/readback; no commerce/customer/source-of-truth writes",
+      "artifact": "areas/lk/sub-areas/atendimento/receipts/lk-pos-restock-webhook-hotfix-20260620T221856Z.md"
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "kind": "approval",
+      "source": "Mesa COO decision reply",
+      "scope": "prepare approval packet only",
+      "exclusions": ["runtime mutation", "config.yaml change", "gateway restart", "cron/provider change", "secret movement"],
+      "pattern_to_learn": "Fazer on decision inbox can authorize safe read-only packet preparation, not final runtime/config mutation."
+    },
+    {
+      "kind": "approval",
+      "source": "LK Ops incident handling",
+      "scope": "specific hotfix for lk-shopify-pos-restock signature failure",
+      "exclusions": ["Shopify write", "Tiny write", "stock change", "customer send", "price/availability promise"],
+      "pattern_to_learn": "For approved webhook incident hotfixes, require backup, narrow config delta, scoped restart, signed local validation, receipt, and functional follow-up on real event."
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Honcho active runtime must be governed explicitly or rolled back; do not leave policy/watchdog in contradictory state.",
+      "destination_recommended": "memories/politica-memoria-hermes.md + Memory OS routines/watchdogs + honcho skill reference",
+      "action_applied_or_blocked": "approval packet created; implementation blocked pending Lucas A/B decision",
+      "verification_needed": "Memory OS health after policy/watchdog update or rollback"
+    },
+    {
+      "learning": "Static webhook routes can override dynamic subscriptions and cause invalid signature incidents.",
+      "destination_recommended": "webhook-subscriptions/Hermes gateway routine and LK Ops incident checklist",
+      "action_applied_or_blocked": "hotfix receipt exists; pattern not yet promoted to reusable checklist",
+      "verification_needed": "next real POS orders/paid event and sanitized logs"
+    },
+    {
+      "learning": "Zipper commercial international leads require human validation for price, availability, shipping, condition and provenance.",
+      "destination_recommended": "Zipper email-intake/Mordomo routine",
+      "action_applied_or_blocked": "needs-attention created; no material draft/send",
+      "verification_needed": "internal availability/pricing/logistics confirmation"
+    }
+  ],
+  "autonomy_pattern_candidates": {
+    "may_become_A0_A1_if_safe": [
+      "Prepare read-only approval packets from Mesa COO decisions when the next action is documentation only.",
+      "Patch idempotency/noise bugs in local checkers with py_compile, health check and receipt."
+    ],
+    "must_stay_A3_A4": [
+      "Changing memory provider/runtime/config or restarting gateway outside an approved scoped incident.",
+      "Webhook production hotfixes without explicit scoped approval, backup and rollback.",
+      "Zipper/LK customer messages involving price, availability, shipping, condition, provenance, stock or negotiation."
+    ]
+  },
+  "pending_decisions_for_lucas": [
+    {
+      "decision": "Choose A/B/Ajustar for Honcho provider governance.",
+      "artifact": "areas/operacoes/decision-inbox/memory-provider-honcho-policy-divergence-20260620.md"
+    }
+  ],
+  "safe_next_actions": [
+    "Monitor next real POS order event for lk-shopify-pos-restock functional confirmation.",
+    "Investigate LK Recovery/Klaviyo webhook read-only before mutation.",
+    "Validate Zipper Artsy lead facts before final response draft.",
+    "Reconcile Honcho deliver=origin jobs and Nightly Ops OS in Brain docs."
+  ],
+  "blocked_actions_requiring_approval": [
+    "Any provider/runtime/config/gateway/cron mutation for Honcho or Memory OS.",
+    "Docker/VPS/Traefik/network/volume changes outside existing scoped approval.",
+    "Shopify/Tiny/GMC/Klaviyo/Meta/Supabase writes.",
+    "WhatsApp/email/customer/collector/supplier sends.",
+    "Hermes runtime upgrade to v0.17.0."
+  ],
+  "cron_and_delivery_truth": {
+    "source": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all",
+    "generated_vs_delivered": "Fechamento generated local artifacts only; normal delivery local/silent, no Telegram send by this job.",
+    "total_jobs": 42,
+    "active_jobs": 38,
+    "paused_jobs": 4,
+    "non_ok_last_status": 0,
+    "active_without_first_run": 0,
+    "active_origin_jobs": ["Mesa COO diária Telegram", "Relatório Hermes diário 03h", "Reminder OS 2h open-loop watchdog", "Honcho Hermes memory watchdog", "Honcho memory quality auditor", "Honcho Intelligence Layer v1 weekly"],
+    "silent_ok_vs_actionable_stdout": "Nightly Ops watchlist and Memory OS provider divergence are attention-controlled; no critical scheduler failure observed."
+  },
+  "sources": [
+    "reports/daily-consolidation/2026-06-20.md",
+    "reports/hermes-daily-digest/2026-06-20.md",
+    "reports/hermes-continuous-improvement/2026-06-20.md",
+    "reports/hermes-learning-ledger/2026-06-20.md",
+    "reports/nightly-ops-audit/2026-06-20.md",
+    "reports/governance/runtime-truth-reconciler-2026-06-20.md",
+    "reports/memory-hygiene/2026-06-20.json",
+    "reports/brain-health-check-2026-06-20-02h.json",
+    "reports/brain-improvement-score-2026-06-20-02h.json",
+    "areas/operacoes/decision-inbox/memory-provider-honcho-policy-divergence-20260620.md",
+    "areas/operacoes/decision-inbox/whatsapp-17h-digest-20260620.md",
+    "areas/lk/sub-areas/atendimento/receipts/lk-pos-restock-webhook-hotfix-20260620T221856Z.md",
+    "areas/lk/sub-areas/atendimento/monitoring/recovery-7d/recovery-monitor-20260620T214308Z.md",
+    "areas/lk/sub-areas/stock/reports/lk-stock-os-tiny-full-sync-20260620T162049Z.md",
+    "areas/zipper/inbox/email-intake/20260620T195409Z_needs_attention_artsy_leslie_flavia_junqueira.md",
+    "areas/zipper/inbox/email-intake/20260620T221958Z-19ee714449fe34e3-draft.json",
+    "session_search: Honcho Memory Provider Divergence"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "raw_transcripts_included": false,
+    "values_printed": false,
+    "pii_minimized": true,
+    "secret_scan_required": true
+  }
+}

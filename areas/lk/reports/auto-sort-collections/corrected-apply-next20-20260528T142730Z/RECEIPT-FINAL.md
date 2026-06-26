@@ -1,0 +1,113 @@
+# Receipt — corrected collection order apply next20
+
+Data: 2026-05-28T14:29:34.293717+00:00
+
+## Summary
+- Camiseta (`camiseta-1`): moves=125; admin_top_ok=True; public_ok=True
+  - 1. Camiseta Lululemon Manga Longa Swiftly Tech Shirt 2.0 Hip Length Lotus Lavender Roxo
+  - 2. Camiseta Aimé Leon Dore Postcard Cream Bege
+  - 3. Camiseta Aimé Leon Dore Dove Breakfast White Branco
+  - 4. Camiseta Aimé Leon Dore Saint George Asphalt Preto
+- Air Jordan 1 (`air-jordan-1`): moves=178; admin_top_ok=True; public_ok=True
+  - 1. Tênis Jordan 11 Retro Low University Blue 2026 Azul
+  - 2. Tênis Jordan 1 Retro High OG SP Fragment x Union LA Sport Royal
+  - 3. Tênis Nike Air Jordan 1 Low SE Repaired Denim Swoosh Azul
+  - 4. Tênis Nike Air Jordan 1 High Virgil Abloh Archive x Alaska Branco
+- Nike Dunk (`nike-dunk`): moves=173; admin_top_ok=True; public_ok=True
+  - 1. Tênis Nike Dunk Low Stranger Things Phantom Branco
+  - 2. Tênis Nike Dunk Low Cacao Wow Marrom
+  - 3. Tênis Nike Sb Dunk Low Pro Triple White Branco
+  - 4. Tênis Nike Dunk Low Black OG Panda Preto
+- Athleisure (`athleisure`): moves=135; admin_top_ok=True; public_ok=True
+  - 1. Jaqueta Lululemon Define Nulu Black Plum/Gold Roxo
+  - 2. Jaqueta Lululemon Define Nulu Black/Gold Preto
+  - 3. Camiseta Lululemon Manga Longa Swiftly Tech Shirt 2.0 Hip Length Lotus Lavender Roxo
+  - 4. Jaqueta Lululemon Define Luon White Branco
+- Acessórios (`acessorios`): moves=52; admin_top_ok=True; public_ok=True
+  - 1. Calça Nude Project Jeans Old Baggy Black/Purple Preto/Roxo
+  - 2. Tênis New Balance 9060 Boné Sparrow Marrom
+  - 3. Boné 5 Panel Aimé Leon Dore Unisphere Branco
+  - 4. Moletom Alo Yoga Sweet EsBonée Zip Up Ivory Creme
+- Moletom (`moletom-1`): moves=51; admin_top_ok=True; public_ok=True
+  - 1. Moletom Nude Project Cult Hoodie Black/Beige Preto
+  - 2. Moletom Nude Project Kill Bill Zip-Up Ash Cinza
+  - 3. Moletom Alo Yoga Sweet EsBonée Zip Up Ivory Creme
+  - 4. Moletom Aimé Leon Dore Unisphere Botanical Green Verde
+- Adidas Samba (`samba`): moves=88; admin_top_ok=True; public_ok=True
+  - 1. Tênis Adidas Samba Jane Chalk White Wonder Quartz Branco
+  - 2. Tênis adidas Samba OG Crystal Linen Ivory Gum Branco
+  - 3. Tênis Adidas Samba OG Giraffe Print Grey Crystal White Gold Bege
+  - 4. Tênis Adidas Samba OG Crochet Pack Sand Strata Bege
+- Adidas Samba (`adidas-samba`): moves=88; admin_top_ok=True; public_ok=True
+  - 1. Tênis Adidas Samba Jane Chalk White Wonder Quartz Branco
+  - 2. Tênis adidas Samba OG Crystal Linen Ivory Gum Branco
+  - 3. Tênis Adidas Samba OG Giraffe Print Grey Crystal White Gold Bege
+  - 4. Tênis Adidas Samba OG Crochet Pack Sand Strata Bege
+- Boné | Apparels (`bone-streetwear`): moves=25; admin_top_ok=True; public_ok=True
+  - 1. Tênis New Balance 9060 Boné Sparrow Marrom
+  - 2. Boné 5 Panel Aimé Leon Dore Unisphere Branco
+  - 3. Moletom Alo Yoga Sweet EsBonée Zip Up Ivory Creme
+  - 4. Boné 5 Panel Aimé Leon Dore Unisphere Azul
+- Calça | Apparels (`calca-streetwear`): moves=0; admin_top_ok=True; public_ok=True
+  - 1. Calça Saint Studio Wide Alfaiataria Caqui
+  - 2. Calça Nude Project Jeans Old Baggy Black/Purple Preto/Roxo
+  - 3. Calça Pace Nomo Tailoring Trousers Preto
+  - 4. Calça Alo Yoga Suit Up Trouser (Regular) Preto
+- Nike Dunk SB (`nike-dunk-sb`): moves=64; admin_top_ok=True; public_ok=True
+  - 1. Tenis Nike SB Dunk Low Pro Bluetile Skateboards Azul
+  - 2. Tenis Nike SB Dunk Low Pro Muni Lightning Denim Turquoise Turquesa
+  - 3. Tênis Nike SB Air Jordan 4 x Retro SP Navy Branco
+  - 4. Tênis Nike Sb Dunk Low Pro Triple White Branco
+- Collectibles (`collectibles`): moves=45; admin_top_ok=True; public_ok=True
+  - 1. MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado)
+  - 2. Pop Mart Labubu The Monsters Big into Energy Series Luck Vinyl Plush Pingente
+  - 3. Pop Mart Labubu The Monsters - Zimomo Angel In Clouds Vinyl Face Doll Branco (59cm)
+  - 4. Pop Mart Labubu The Monsters Zimomo I Found You Vinyl Doll + Tote Bag Marrom (59cm)
+- Pop Mart (`pop-mart`): moves=29; admin_top_ok=True; public_ok=True
+  - 1. Pop Mart Labubu The Monsters Big into Energy Series Luck Vinyl Plush Pingente
+  - 2. Pop Mart Pluto - Mickey Family Cute Together Keychain Series Figures (Aberto)
+  - 3. Pop Mart Labubu The Monsters - Zimomo Angel In Clouds Vinyl Face Doll Branco (59cm)
+  - 4. Pop Mart Labubu The Monsters Zimomo I Found You Vinyl Doll + Tote Bag Marrom (59cm)
+- Supreme (`supreme`): moves=6; admin_top_ok=True; public_ok=False
+  - 1. Tênis Nike Air Force 1 Low x Supreme Wheat Marrom
+  - 2. Tênis Nike Air Force 1 Low x Supreme Black Preto
+  - 3. Tênis Nike SB Dunk Low Supreme 94 Black Preto
+  - 4. Tênis Nike SB Dunk Low Supreme 94 White Metallic Silver Branco
+- New Balance 9060 (`new-balance-9060`): moves=29; admin_top_ok=True; public_ok=True
+  - 1. Tênis New Balance 9060 Bisque Sea Salt Bege
+  - 2. Tênis New Balance 9060 Mushroom Arid Stone Bege
+  - 3. Tênis New Balance 9060 Sea Salt Moonbeam Branco
+  - 4. Tênis New Balance 9060 Triple White Branco
+- Labubu (`labubu`): moves=27; admin_top_ok=True; public_ok=True
+  - 1. Pop Mart Labubu The Monsters Big into Energy Series Luck Vinyl Plush Pingente
+  - 2. Pop Mart Labubu The Monsters - Zimomo Angel In Clouds Vinyl Face Doll Branco (59cm)
+  - 3. Pop Mart Labubu The Monsters Zimomo I Found You Vinyl Doll + Tote Bag Marrom (59cm)
+  - 4. Pop Mart Labubu The Monsters Let's Checkmate Series Vinyl Plush Hanging Card
+- Lululemon (`lululemon`): moves=36; admin_top_ok=True; public_ok=True
+  - 1. Jaqueta Lululemon Define Nulu Black Plum/Gold Roxo
+  - 2. Jaqueta Lululemon Define Nulu Black/Gold Preto
+  - 3. Camiseta Lululemon Manga Longa Swiftly Tech Shirt 2.0 Hip Length Lotus Lavender Roxo
+  - 4. Jaqueta Lululemon Define Luon White Branco
+- Yeezy (`yeezy`): moves=9; admin_top_ok=True; public_ok=True
+  - 1. Tênis Yeezy Boost 350 V2 Onyx Preto
+  - 2. Tênis adidas Yeezy Boost 350 V2 "Steel Grey" Cinza
+  - 3. Tênis Yeezy Boost 350 V2 Boné Branco
+  - 4. Tênis Yeezy 350 V2 Static Non-Reflective (2023) Branco
+- Aphase (`aphase`): moves=13; admin_top_ok=True; public_ok=True
+  - 1. Camisa Aphase Check - Light Blue Azul
+  - 2. Camisa Aphase Check - Dark Blue Azul
+  - 3. Shorts Aphase Relaxed - Stoned Black Preto
+  - 4. Calça Aphase Dusty - Stoned Beige Bege
+- Fear of God Essentials (`fear-of-god`): moves=4; admin_top_ok=True; public_ok=False
+  - 1. Camiseta Fear Of God Essentials Varsity 90s Short Sleeve Tee Cinza
+  - 2. Camiseta Fear of God Essentials Jersey Crewneck Light Heather Grey Cinza
+  - 3. Shorts Fear Of God Essentials Classic Sweatshort Vintage Black Preto
+  - 4. Camiseta Fear Of God Essentials Classic Short Sleeve Jet Black Preto
+
+## Artefatos
+- Snapshot/rollback: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/reports/auto-sort-collections/corrected-apply-next20-20260528T142730Z/rollback-snapshot-pre-write-immediate.json`
+- Receipt JSON: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/reports/auto-sort-collections/corrected-apply-next20-20260528T142730Z/receipt-final.json`
+
+## Não ações
+- Nenhum cron ativado.
+- Nenhum produto/preço/estoque/tema/tag/SEO/GMC/campanha/checkout alterado.

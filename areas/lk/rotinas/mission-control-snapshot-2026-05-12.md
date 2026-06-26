@@ -1,6 +1,6 @@
 # LK Mission Control Snapshot, 2026-05-12
 
-Generated at: `2026-05-12T02:28:18.652021+00:00`
+Generated at: `2026-05-12T10:53:23.304202+00:00`
 
 ## Veredito
 
@@ -16,7 +16,7 @@ Mission Control v1 consolida crons ativos, relatórios obrigatórios, aprovaçõ
 - Needs_data resolvidos: 2 para monitor/estoque OK, 1 para higiene interna de código
 - Klaviyo P1: Draft / sem envio
 - Sourcing: 4 famílias prontas só após aprovação manual
-- GMC: 977 itens P1/P2, 977 P1, 6 pacotes preview-only; P0: 32 linhas / 32 PDPs HTTP 200; atributos: 80 revisados / 80 aplicados / 80 verificados
+- GMC: 972 itens P1/P2, 972 P1, 6 pacotes preview-only; P0: 32 linhas / 32 PDPs HTTP 200; atributos: 80 revisados / 80 aplicados / 80 verificados
 - Writes/envios/contatos/compras/marketplace/n8n: 2/0/0/0/0
 
 ## Crons operacionais
@@ -79,7 +79,7 @@ Mission Control v1 consolida crons ativos, relatórios obrigatórios, aprovaçõ
 ## Gates especiais
 
 - CRM/Klaviyo: `ready_for_lucas_review_no_send`, campaign `01KRC1DPTY615GF5FNBPXMPKY6`, próximo seguro: Lucas review by verified list/template/campaign IDs; prepare send packet only if explicitly requested.
-- GMC/feed: 977 itens na fila, 977 P1, 6 pacotes preview-only, P0 aberto 32 linhas / 32 PDPs HTTP 200, atributos 80 revisados / 80 aplicados / 80 verificados, próximo seguro: 80 required-attribute rows applied and verified in Content API product resources; monitor Merchant item diagnostics until status issues clear after reprocessing.
+- GMC/feed: 972 itens na fila, 972 P1, 6 pacotes preview-only, P0 aberto 32 linhas / 32 PDPs HTTP 200, atributos 80 revisados / 80 aplicados / 80 verificados, próximo seguro: 80 required-attribute rows applied and verified in Content API product resources; monitor Merchant item diagnostics until status issues clear after reprocessing.
 
 ## Próximas ações seguras
 

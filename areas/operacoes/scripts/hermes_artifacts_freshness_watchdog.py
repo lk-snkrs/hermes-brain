@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only freshness watchdog for Hermes v0.13 operational artifacts.
+"""Read-only freshness watchdog for Hermes operational artifacts.
 
 Silent contract for no_agent cron:
 - exit 0 + empty stdout: OK, no Telegram noise;
@@ -95,14 +95,14 @@ def main() -> int:
 
     missing_docs = [str(p) for p in REQUIRED_DOCS if not p.exists()]
     if missing_docs:
-        alerts.append('Docs Hermes v0.13 ausentes: ' + ', '.join(missing_docs))
+        alerts.append('Docs Hermes operacionais ausentes: ' + ', '.join(missing_docs))
 
     missing_crons = sorted(REQUIRED_CRON_JOB_IDS - cron_job_ids())
     if missing_crons:
         alerts.append('Cron jobs esperados ausentes: ' + ', '.join(missing_crons))
 
     if alerts:
-        print('⚠️ Hermes v0.13 artifact freshness watchdog')
+        print('⚠️ Hermes artifact freshness watchdog')
         print(f'check_at: {iso_now()}')
         for item in alerts:
             print(f'- {item}')

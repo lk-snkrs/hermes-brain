@@ -1,0 +1,66 @@
+# Auditoria pós-limpeza — termos operacionais em product.descriptionHtml
+
+- Timestamp UTC: 20260605T174519Z
+- Total produtos auditados: 2331
+
+## Contagens
+- Produtos em estoque: 399
+- envio em até: 1334
+- envio em 2 dias: 1334
+- Pronta entrega: 1
+- Entrega SP: 0
+- Estoque limitado: 0
+- Sujeito a encomenda: 9
+- sob encomenda: 1003
+
+## Amostras com hits
+- `accolade-straight-leg-sweatpant-charcoal-green` — ['Produtos em estoque', 'envio em até', 'envio em 2 dias']
+- `adidas-taekwondo-mei-ballet-branco-e-preto` — ['envio em até', 'envio em 2 dias']
+- `adidas-taekwondo-mei-ballet-preto-e-branco` — ['envio em até', 'envio em 2 dias']
+- `adidas-wmns-tokyo-mj-core-black-cream-white-gold-metallic` — ['envio em até', 'envio em 2 dias']
+- `air-max-1-86-og-big-bubble-sport-red` — ['envio em até', 'envio em 2 dias']
+- `air-max-plus-black-and-yellow` — ['envio em até', 'envio em 2 dias']
+- `bandana-aime-leon-dore-x-porsche-silk` — ['envio em até', 'envio em 2 dias']
+- `basic-pack-5-8-sufgang-multicolor` — ['envio em até', 'envio em 2 dias']
+- `bermuda-chino-saint-studio-supima-caqui` — ['Produtos em estoque', 'envio em até', 'envio em 2 dias']
+- `bermuda-chino-saint-studio-supima-preto` — ['Produtos em estoque', 'envio em até', 'envio em 2 dias']
+- `calca-nude-project-capicci-capri-jeans` — ['Produtos em estoque', 'envio em até', 'envio em 2 dias']
+- `bermuda-saint-studio-alfaiataria-algodao-organico-risca-de-giz-preto` — ['envio em até', 'envio em 2 dias']
+- `blusa-alo-yoga-sherpa-edge-bomber-ivory-bege` — ['envio em até', 'envio em 2 dias']
+- `blusa-essentials-sporty-nylon-half-zip-jet-black-preto` — ['envio em até', 'envio em 2 dias']
+- `blusa-slyce-classics-piquet-quarter-zip-azul-marinho` — ['envio em até', 'envio em 2 dias']
+- `blusa-slyce-classics-piquet-quarter-zip-bege` — ['envio em até', 'envio em 2 dias']
+- `bolsa-adidas-originals-og-clover-armpit-preto` — ['envio em até', 'envio em 2 dias']
+- `bolsa-aime-leon-dore-porsche-canvas-tote-bag` — ['envio em até', 'envio em 2 dias']
+- `bolsa-aime-leon-dore-x-porsche-commuter-preto` — ['envio em até', 'envio em 2 dias']
+- `bolsa-aime-leon-dore-x-porsche-nylon-briefcase-preto` — ['envio em até', 'envio em 2 dias']
+- `bolsa-jacquemus-le-bambimou-puffed-flap-bag-black-preto` — ['envio em até', 'envio em 2 dias']
+- `bolsa-jacquemus-le-bambino-long-flap-bag-leopard-print` — ['envio em até', 'envio em 2 dias']
+- `bolsa-jacquemus-le-bambino-long-flap-bag-light-brown-marrom` — ['envio em até', 'envio em 2 dias']
+- `bolsa-jacquemus-le-bambino-long-shoulder-bag-black-preto` — ['envio em até', 'envio em 2 dias']
+- `bolsa-jacquemus-le-bambino-mini-flap-bag-ivory-bege` — ['envio em até', 'envio em 2 dias']
+- `bolsa-jacquemus-le-chiquito-homme-mini-bag-black-preto` — ['envio em até', 'envio em 2 dias']
+- `bolsa-jacquemus-le-chiquito-moyen-bag-light-pink-rosa` — ['envio em até', 'envio em 2 dias']
+- `bolsa-jacquemus-le-chiquito-noeud-bag-light-pink-rosa` — ['envio em até', 'envio em 2 dias']
+- `bolsa-jacquemus-le-chiquito-signature-bag-mini-ivory-bege` — ['envio em até', 'envio em 2 dias']
+- `bolsa-jacquemus-le-chiquito-top-handle-bag-black-preto-dourado` — ['envio em até', 'envio em 2 dias']
+- `bolsa-jacquemus-le-chiquito-top-handle-bag-mini-orange-laranja` — ['envio em até', 'envio em 2 dias']
+- `bolsa-jacquemus-le-grand-bambino-crossbody-flap-bag-croco-embossed-gradient-blue-azul` — ['envio em até', 'envio em 2 dias']
+- `bolsa-jacquemus-le-grand-chiquito-bag-black-preto` — ['envio em até', 'envio em 2 dias']
+- `bolsa-lululemon-city-essentials` — ['envio em até', 'envio em 2 dias']
+- `bolsa-lululemon-mini-tote-bag-two-tone-canvas-4-5l-bege` — ['envio em até', 'envio em 2 dias']
+- `bolsa-lululemon-slouchy-sling-6l` — ['envio em até', 'envio em 2 dias']
+- `bolsa-minimal-saint-studio-cacto-caramelo` — ['envio em até', 'envio em 2 dias']
+- `bolsa-minimal-saint-studio-cacto-off-white` — ['envio em até', 'envio em 2 dias']
+- `bolsa-minimal-saint-studio-cacto-preto` — ['envio em até', 'envio em 2 dias']
+- `bolsa-air-jordan-monogram-duffle-bag-rosa` — ['envio em até', 'envio em 2 dias']
+- `bolsa-nike-x-jacquemus-small-swoosh-bag-branco` — ['envio em até', 'envio em 2 dias']
+- `bolsa-nike-x-jacquemus-small-swoosh-bag-vermelho` — ['envio em até', 'envio em 2 dias']
+- `bolsa-nude-project-minimal-leather` — ['envio em até', 'envio em 2 dias']
+- `bolsa-pace-code-pro-leather-fold-bag-black` — ['envio em até', 'envio em 2 dias']
+- `bolsa-rhode-oversized-bubble-bag-black-preto` — ['envio em até', 'envio em 2 dias']
+- `bolsa-saint-studio-ella-preto` — ['envio em até', 'envio em 2 dias']
+- `bolsa-saint-studio-luci-cacto-preta` — ['envio em até', 'envio em 2 dias']
+- `bolsa-saint-studio-luci-cacto-suede-avela-marrom` — ['envio em até', 'envio em 2 dias']
+- `bolsa-saint-studio-luci-cacto-suede-cafe-marrom` — ['envio em até', 'envio em 2 dias']
+- `bolsa-saint-studio-orla-marrom` — ['envio em até', 'envio em 2 dias']

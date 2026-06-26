@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-05-15T19:33:49.038092+00:00",
+  "run_id": "tiny_stock_20260515T092206Z",
+  "status": "partial_api_rate_limited",
+  "mode": "controlled_batch_incremental",
+  "batch": {
+    "requested_stock_limit": 250,
+    "delay_seconds": 3,
+    "checked_before": 842,
+    "checked_after": 872,
+    "checked_this_batch": 30,
+    "batch_outcome": "paused_by_tiny_rate_limit_after_30_successful_reads"
+  },
+  "counts": {
+    "tiny_products_listed": 17605,
+    "tiny_products_with_codigo": 15372,
+    "stock_products_checked": 872,
+    "remaining_stock_checks": 14500,
+    "deposit_rows": 2674,
+    "official_deposit_rows": 872,
+    "official_positive_rows": 37,
+    "checked_ratio_pct": 5.67
+  },
+  "commercial_state_counts": {
+    "blocked_tiny_not_mapped": 10059,
+    "monitor_non_active_shopify_product": 1431,
+    "blocked_missing_shopify_sku": 1388,
+    "blocked_data_quality": 1032,
+    "ready_zero_stock_sourcing_candidate": 520,
+    "ready_available_tiny": 34,
+    "blocked_tiny_duplicate_code": 2
+  },
+  "tiny_status_counts": {
+    "not_mapped_in_tiny_snapshot": 12311,
+    "no_shopify_sku": 1388,
+    "zero_official_deposit": 729,
+    "available_official_deposit": 34,
+    "ambiguous_duplicate_tiny_code": 4
+  },
+  "not_promoted_to_final": true,
+  "reason_not_final": "Tiny API rate limit returned again before completing the 250-SKU controlled batch; coverage is still too low for full-catalog final truth.",
+  "not_performed": [
+    "tiny_write",
+    "shopify_write",
+    "merchant_write",
+    "inventory_change",
+    "price_change",
+    "supplier_contact",
+    "purchase",
+    "campaign_or_external_send",
+    "cron_creation"
+  ],
+  "approval_manager_v1": {
+    "generated_at": "2026-05-15T20:08:54.297788+00:00",
+    "status": "active_local_router_layer",
+    "summary": {
+      "rules_active": 6,
+      "ledger_rows": 3,
+      "ledger_status_counts": {
+        "active_rule_verified": 2,
+        "executed_verified": 1
+      },
+      "router_tests_total": 8,
+      "router_tests_passed": 8,
+      "router_route_counts": {
+        "draft_only_needs_current_explicit_approval_to_send": 2,
+        "preview_only_needs_current_explicit_approval_to_activate": 1,
+        "needs_preview_or_scoped_approval_before_write": 3,
+        "autonomous_readonly_local_allowed": 2
+      },
+      "mission_control_queues": {
+        "draft_only": 2,
+        "needs_approval": 6,
+        "autonomous": 2
+      },
+      "external_or_visible_writes_done": 0
+    },
+    "artifact": "areas/lk/rotinas/lk-os-approval-manager-v1-2026-05-15.md",
+    "router_regression": "reports/lk-os-approval-router-regression-2026-05-15.json"
+  }
+}

@@ -1,5 +1,8 @@
 # LK Sneakers — Memória
 
+> LEGACY / SUPERSEDED — este arquivo contém referências históricas migradas de fases anteriores. Não usar paths `/root`, Mem0, OpenClaw/cerebro-cimino ou scripts citados aqui como instrução operacional viva. Fonte atual: `/opt/data/hermes_bruno_ingest/hermes-brain` e rotinas governadas em `areas/operacoes/`.
+
+
 ## Contexto
 - **Dono:** Lucas Cimino
 - **Meta 2026:** R$ 1.000.000
@@ -9,7 +12,7 @@
 ## Equipe
 | Nome | Função | Contato |
 |------|--------|---------|
-| Renan | Comunicação | @fortinifilm (TG: 1305071627) |
+| Renan | Comunicação, conteúdo/newsletter, design e SEO | @fortinifilm (TG: 1305071627) |
 | Júlio | Financeiro e fiscal | TG: 5924913605 |
 | Danilo | Vendas e curadoria | — |
 
@@ -69,7 +72,7 @@
 ## Decisões Permanentes
 - **Cross-sell via Klaviyo + Evolution Clo** (não WhatsApp Business direto)
 - **Nunca usar travessão (—) em copy LK** — tom premium
-- **Preview no Telegram antes de qualquer envio de campanha** — aprovação obrigatória
+- **Preview antes de envio de campanha** — aprovação obrigatória; exceção aprovada: Renan pode aprovar e enviar conteúdos/newsletters via Klaviyo dentro do escopo de conteúdo LK, documentando no Brain
 - **Regra 90 dias: 1 cross-sell por cliente** — evitar spam
 - **Recomendação só de produtos em estoque**
 - **gender=unisex, age_group=adult** para todos produtos GMC

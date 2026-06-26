@@ -1,0 +1,523 @@
+{
+  "status": "ok",
+  "source": "shopify_sales_os_db_local_enrichment",
+  "generated_at": "2026-06-14T18:45:38.025858Z",
+  "db": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/shopify_sales_os.db",
+  "refresh": {
+    "dimension_rows_processed": 1895,
+    "dimension_table_rows": 1867,
+    "category_rows": {
+      "calcado": 1327,
+      "roupa": 466,
+      "acessorio": 99,
+      "outros": 3
+    },
+    "category_overrides": {
+      "status": "ok",
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/data/shopify_sales_category_overrides.json",
+      "overrides": 1,
+      "values_printed": false
+    }
+  },
+  "shopify_product_sync": {
+    "status": "ok",
+    "requested_products": 794,
+    "synced_products": 794,
+    "missing_products": 0,
+    "values_printed": false
+  },
+  "summary": {
+    "paid_totals": {
+      "orders": 1810,
+      "units": 2689.0,
+      "revenue": 6248609.21
+    },
+    "product_metadata": {
+      "products_in_sales": 794,
+      "products_with_shopify_metadata": 794,
+      "metadata_rows_with_product_type": 772,
+      "latest_product_metadata_sync": "2026-06-14T18:45:30.381475Z"
+    },
+    "category_source": [
+      {
+        "category_source": "shopify_product_type_tags_v1",
+        "dimension_rows": 1764
+      },
+      {
+        "category_source": "heuristic_title_sku_vendor_v1",
+        "dimension_rows": 100
+      },
+      {
+        "category_source": "service_non_product_v1",
+        "dimension_rows": 2
+      },
+      {
+        "category_source": "manual_review_no_product_metadata_v1",
+        "dimension_rows": 1
+      }
+    ],
+    "by_category": [
+      {
+        "category": "calcado",
+        "orders": 1472,
+        "units": 2006.0,
+        "revenue": 5734436.38
+      },
+      {
+        "category": "roupa",
+        "orders": 320,
+        "units": 504.0,
+        "revenue": 420203.65
+      },
+      {
+        "category": "acessorio",
+        "orders": 137,
+        "units": 176.0,
+        "revenue": 92769.18
+      },
+      {
+        "category": "outros",
+        "orders": 3,
+        "units": 3.0,
+        "revenue": 1200.0
+      }
+    ],
+    "by_channel_category": [
+      {
+        "channel_group": "app_numeric_source",
+        "category": "calcado",
+        "orders": 2,
+        "units": 3.0,
+        "revenue": 7799.97
+      },
+      {
+        "channel_group": "draft_order",
+        "category": "calcado",
+        "orders": 11,
+        "units": 16.0,
+        "revenue": 43399.84
+      },
+      {
+        "channel_group": "draft_order",
+        "category": "roupa",
+        "orders": 3,
+        "units": 5.0,
+        "revenue": 3629.95
+      },
+      {
+        "channel_group": "draft_order",
+        "category": "acessorio",
+        "orders": 3,
+        "units": 5.0,
+        "revenue": 2064.95
+      },
+      {
+        "channel_group": "loja_fisica",
+        "category": "calcado",
+        "orders": 568,
+        "units": 795.0,
+        "revenue": 2269711.0
+      },
+      {
+        "channel_group": "loja_fisica",
+        "category": "roupa",
+        "orders": 169,
+        "units": 278.0,
+        "revenue": 204199.31
+      },
+      {
+        "channel_group": "loja_fisica",
+        "category": "acessorio",
+        "orders": 66,
+        "units": 83.0,
+        "revenue": 52219.11
+      },
+      {
+        "channel_group": "loja_fisica",
+        "category": "outros",
+        "orders": 2,
+        "units": 2.0,
+        "revenue": 700.0
+      },
+      {
+        "channel_group": "site",
+        "category": "calcado",
+        "orders": 891,
+        "units": 1192.0,
+        "revenue": 3413525.57
+      },
+      {
+        "channel_group": "site",
+        "category": "roupa",
+        "orders": 148,
+        "units": 221.0,
+        "revenue": 212374.39
+      },
+      {
+        "channel_group": "site",
+        "category": "acessorio",
+        "orders": 68,
+        "units": 88.0,
+        "revenue": 38485.12
+      },
+      {
+        "channel_group": "site",
+        "category": "outros",
+        "orders": 1,
+        "units": 1.0,
+        "revenue": 500.0
+      }
+    ],
+    "top_brands": [
+      {
+        "brand_group": "Nike",
+        "orders": 439,
+        "units": 549.0,
+        "revenue": 2223588.25
+      },
+      {
+        "brand_group": "Onitsuka Tiger",
+        "orders": 527,
+        "units": 636.0,
+        "revenue": 1567973.71
+      },
+      {
+        "brand_group": "New Balance",
+        "orders": 400,
+        "units": 483.0,
+        "revenue": 1236609.25
+      },
+      {
+        "brand_group": "Adidas",
+        "orders": 146,
+        "units": 173.0,
+        "revenue": 351746.94
+      },
+      {
+        "brand_group": "Alo Yoga",
+        "orders": 80,
+        "units": 117.0,
+        "revenue": 190881.32
+      },
+      {
+        "brand_group": "On Running x Loewe",
+        "orders": 17,
+        "units": 20.0,
+        "revenue": 177999.8
+      },
+      {
+        "brand_group": "Aimé Leon Dore",
+        "orders": 35,
+        "units": 42.0,
+        "revenue": 58386.45
+      },
+      {
+        "brand_group": "Lululemon",
+        "orders": 34,
+        "units": 48.0,
+        "revenue": 49749.6
+      },
+      {
+        "brand_group": "Saint Studio",
+        "orders": 64,
+        "units": 96.0,
+        "revenue": 41668.13
+      },
+      {
+        "brand_group": "Nude Project",
+        "orders": 28,
+        "units": 34.0,
+        "revenue": 38399.68
+      },
+      {
+        "brand_group": "Yeezy",
+        "orders": 11,
+        "units": 11.0,
+        "revenue": 36799.89
+      },
+      {
+        "brand_group": "Rhode",
+        "orders": 37,
+        "units": 58.0,
+        "revenue": 30619.43
+      },
+      {
+        "brand_group": "Pace",
+        "orders": 54,
+        "units": 68.0,
+        "revenue": 26757.73
+      },
+      {
+        "brand_group": "Essentials",
+        "orders": 14,
+        "units": 17.0,
+        "revenue": 24929.92
+      },
+      {
+        "brand_group": "Unknown",
+        "orders": 25,
+        "units": 34.0,
+        "revenue": 23806.85
+      },
+      {
+        "brand_group": "Jason Markk",
+        "orders": 84,
+        "units": 118.0,
+        "revenue": 20758.83
+      },
+      {
+        "brand_group": "Represent Clo",
+        "orders": 16,
+        "units": 17.0,
+        "revenue": 19879.83
+      },
+      {
+        "brand_group": "Havaianas",
+        "orders": 8,
+        "units": 10.0,
+        "revenue": 16799.9
+      },
+      {
+        "brand_group": "Puma",
+        "orders": 5,
+        "units": 9.0,
+        "revenue": 16599.92
+      },
+      {
+        "brand_group": "Slyce",
+        "orders": 21,
+        "units": 25.0,
+        "revenue": 8798.14
+      }
+    ],
+    "nike_models": [
+      {
+        "model_family": "Nike Moon Shoe",
+        "orders": 183,
+        "units": 201.0,
+        "revenue": 1087198.01
+      },
+      {
+        "model_family": "Nike Mind",
+        "orders": 92,
+        "units": 129.0,
+        "revenue": 404628.74
+      },
+      {
+        "model_family": "Nike Vomero",
+        "orders": 72,
+        "units": 83.0,
+        "revenue": 349099.17
+      },
+      {
+        "model_family": "Jordan 1",
+        "orders": 46,
+        "units": 54.0,
+        "revenue": 158124.3
+      },
+      {
+        "model_family": "Nike Dunk",
+        "orders": 29,
+        "units": 37.0,
+        "revenue": 108489.55
+      },
+      {
+        "model_family": "Nike",
+        "orders": 32,
+        "units": 35.0,
+        "revenue": 85348.58
+      },
+      {
+        "model_family": "Nike Air Force",
+        "orders": 6,
+        "units": 6.0,
+        "revenue": 15199.94
+      },
+      {
+        "model_family": "Nike Air Max",
+        "orders": 3,
+        "units": 3.0,
+        "revenue": 12999.97
+      },
+      {
+        "model_family": "Jordan 1",
+        "orders": 3,
+        "units": 3.0,
+        "revenue": 5379.8
+      },
+      {
+        "model_family": "Jacquemus",
+        "orders": 2,
+        "units": 2.0,
+        "revenue": 3499.98
+      },
+      {
+        "model_family": "Nike Shox",
+        "orders": 1,
+        "units": 1.0,
+        "revenue": 2499.99
+      }
+    ]
+  },
+  "question_capabilities": [
+    {
+      "id": "units_model_period",
+      "question": "Quantas unidades de um modelo venderam em X dias/meses?",
+      "status": "yes"
+    },
+    {
+      "id": "orders_model_period",
+      "question": "Quantos pedidos continham um modelo?",
+      "status": "yes"
+    },
+    {
+      "id": "revenue_model_period",
+      "question": "Qual faturamento de um modelo?",
+      "status": "yes"
+    },
+    {
+      "id": "avg_ticket_model",
+      "question": "Qual ticket médio dos pedidos com um modelo?",
+      "status": "yes"
+    },
+    {
+      "id": "size_mix_model",
+      "question": "Qual tamanho mais vendeu de um modelo?",
+      "status": "yes"
+    },
+    {
+      "id": "sku_rank_model",
+      "question": "Qual SKU mais vendido de um modelo?",
+      "status": "yes"
+    },
+    {
+      "id": "brand_rank_revenue",
+      "question": "Qual marca mais vendeu por faturamento?",
+      "status": "yes"
+    },
+    {
+      "id": "brand_rank_units",
+      "question": "Qual marca mais vendeu por unidades?",
+      "status": "yes"
+    },
+    {
+      "id": "top_products_revenue",
+      "question": "Qual ranking de produtos por faturamento?",
+      "status": "yes"
+    },
+    {
+      "id": "top_products_units",
+      "question": "Qual ranking de produtos por unidades?",
+      "status": "yes"
+    },
+    {
+      "id": "top_site_product",
+      "question": "Qual produto mais vendido no site?",
+      "status": "yes"
+    },
+    {
+      "id": "top_store_product",
+      "question": "Qual produto mais vendido na loja física?",
+      "status": "yes"
+    },
+    {
+      "id": "brand_site_store_share",
+      "question": "Qual share site vs loja por marca?",
+      "status": "yes"
+    },
+    {
+      "id": "model_site_store_share",
+      "question": "Qual share site vs loja por modelo?",
+      "status": "yes"
+    },
+    {
+      "id": "category_share_channel",
+      "question": "Quanto % de um canal foi roupa/calçado/acessório?",
+      "status": "yes_with_shopify_product_type_tags_fallback_heuristic"
+    },
+    {
+      "id": "nike_share",
+      "question": "Qual share de Nike no faturamento?",
+      "status": "yes_with_brand_rule"
+    },
+    {
+      "id": "nike_family_rank",
+      "question": "Dentro de Nike, qual família mais vendeu?",
+      "status": "yes_with_family_rule"
+    },
+    {
+      "id": "refunds_by_product",
+      "question": "Qual produto teve mais refund?",
+      "status": "yes"
+    },
+    {
+      "id": "expired_demand",
+      "question": "Qual demanda expirou por produto/marca?",
+      "status": "yes"
+    },
+    {
+      "id": "paid_vs_refunded",
+      "question": "Qual mix pago/reembolsado/expirado?",
+      "status": "yes"
+    },
+    {
+      "id": "weekly_best_day",
+      "question": "Qual dia/semana/mês vendeu mais?",
+      "status": "yes"
+    },
+    {
+      "id": "growth_decline",
+      "question": "Qual produto acelerou/caiu contra período anterior?",
+      "status": "yes"
+    },
+    {
+      "id": "cross_sell",
+      "question": "Quais produtos vendem juntos?",
+      "status": "yes"
+    },
+    {
+      "id": "multi_item_orders",
+      "question": "Quais marcas geram pedidos multi-item?",
+      "status": "yes"
+    },
+    {
+      "id": "price_realized",
+      "question": "Qual preço médio realizado por produto/SKU?",
+      "status": "yes"
+    },
+    {
+      "id": "audience_kids",
+      "question": "Quanto kids/infantil vendeu?",
+      "status": "heuristic"
+    },
+    {
+      "id": "collab_share",
+      "question": "Quanto collab vendeu?",
+      "status": "heuristic"
+    },
+    {
+      "id": "color_share",
+      "question": "Qual cor mais vendeu?",
+      "status": "partial_title_heuristic"
+    },
+    {
+      "id": "official_product_type",
+      "question": "Categoria oficial Shopify product_type/tags",
+      "status": "yes_read_only_product_enrichment"
+    },
+    {
+      "id": "gross_margin",
+      "question": "Margem por produto",
+      "status": "missing_cost_data"
+    }
+  ],
+  "classification_note": "category uses Shopify product_type/tags when available, then deterministic local title/vendor/SKU heuristics as fallback; model/audience/collab remain deterministic local signals.",
+  "guardrails": {
+    "shopify_write": 0,
+    "tiny_write": 0,
+    "external_write": 0,
+    "public_availability_promise": 0,
+    "auto_purchase": 0
+  },
+  "values_printed": false
+}

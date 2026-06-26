@@ -1,0 +1,263 @@
+{
+  "status": "ok",
+  "mode": "local_readonly_audit",
+  "root": "/opt/data/hermes_bruno_ingest/hermes-brain",
+  "files_scanned": 626,
+  "file_candidates_count": 75,
+  "cron_candidates_count": 0,
+  "top_file_candidates": [
+    {
+      "path": "scripts/lk_gmc_weekly_readonly_review_20260528.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_gmc_p2a_bags_44_point_repair_20260514.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_os_tiny_stock_snapshot_full_readonly_20260515.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_moon_shoe_publish_prod_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_execute_approved_abc_20260514.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_dev_fix_204l_samba_jane_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_os_daily_sales_brief_20260511.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_gmc_p2a_review_mismatches_20260514.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_gmc_20260521_apply_approved_followup.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_gmc_20260521_apply_approved_followup_contentapi.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_seo_cro_apply_approved_seo_fields_20260518.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_dev_collection_gap_image_center_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_seo_cro_seo_fields_runner_gate_20260518.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_gmc_required_attrs_refresh_datafeed_url_20260512.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_gmc_required_attrs_apply_second_batch_20260512.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_os_weekly_ceo_review_20260511.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_phase5_send_p1_whatsapp_evolution_20260511.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_204l_mobile_reveal_publish_prod_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_moon_shoe_mobile_guide_faq_alignment_dev_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_moon_shoe_mobile_reveal_refine_dev_20260524.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_pdp_low_conversion_priority_router_20260511.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_moon_shoe_publish_after_grid_guide_prod_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_phase5_stockx_full_sync_scaffold_20260511.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_os_build_operational_spine_20260511.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_moon_shoe_move_editorial_guide_after_products_dev_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_next_wave_collections_reveal_dev_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_gmc_catalog_duplication_audit_20260512.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_collection_guide_standard_lote1_dev_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_seo_cro_decision_grade_refresh_20260518.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_moonshoe_apply_204l_typography_dev_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_gmc_required_attrs_apply_supplemental_feed_20260512.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_os_data_spine_snapshots_20260511.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_p0_remaining_tiny_code_execute_20260511.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_gmc_datafeed_source_inventory_20260512.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_gmc_p2a_finalize_remaining_online_20260513.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_os_tiny_freshness_report_20260511.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_monthly_pareto_reconciliation.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_gmc_google_youtube_channel_readonly_diagnostic_20260514.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_moon_shoe_source_buy_media_dev_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_weekly_influencer_sales_report.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_klaviyo_crm_draft_readiness_watcher_20260511.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_moon_shoe_remove_pregrid_selection_bridge_dev_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_dev_collection_edge_spacing_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_apply_approved_p1_seo_fields_20260511.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_gmc_required_attrs_verify_second_batch_20260512.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_search_console_readonly_router_20260511.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_moon_shoe_publish_page_collection_prod_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_phase5_generate_klaviyo_visual_preview_20260511.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_dev_phase1_collection_guides_onitsuka_samba_20260526.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    },
+    {
+      "path": "scripts/lk_collection_photo_lightbox_fix_20260525.py",
+      "candidate": "secret_like_pattern_seen_review_redaction",
+      "secret_like_pattern_seen": true
+    }
+  ],
+  "top_cron_candidates": [],
+  "values_printed": false,
+  "note": "Candidates are backlog for review, not proof of runtime failure."
+}

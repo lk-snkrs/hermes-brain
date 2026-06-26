@@ -1,0 +1,157 @@
+{
+  "status": "completed",
+  "summary": {
+    "selected_api_overlays": 15,
+    "execution": {
+      "deleted_api_overlay": 15
+    },
+    "verify": {
+      "absent_or_waiting": 14,
+      "present_after_delete": 1
+    }
+  },
+  "rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-api-overlay-delete-repair-rollback-20260514T164433Z.json",
+  "results": [
+    {
+      "product_id": "online:pt:BR:11157608326226995514",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:11942764414726006273",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:12273029318518873414",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:12666760103914768713",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:14382216781199547817",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:16327035847486546313",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:17233744321540595259",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:1736512501686486863",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:3104193228761997124",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:3332348645938802802",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:4917838518253211418",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:5830504980213147042",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:7158941586508696723",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:7793455940120203308",
+      "status": "deleted_api_overlay"
+    },
+    {
+      "product_id": "online:pt:BR:8630660614210721891",
+      "status": "deleted_api_overlay"
+    }
+  ],
+  "verify": [
+    {
+      "product_id": "online:pt:BR:11157608326226995514",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `11157608326226995514` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `11157608326226995514` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n "
+    },
+    {
+      "product_id": "online:pt:BR:11942764414726006273",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `11942764414726006273` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `11942764414726006273` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n "
+    },
+    {
+      "product_id": "online:pt:BR:12273029318518873414",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `12273029318518873414` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `12273029318518873414` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n "
+    },
+    {
+      "product_id": "online:pt:BR:12666760103914768713",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `12666760103914768713` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `12666760103914768713` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n "
+    },
+    {
+      "product_id": "online:pt:BR:14382216781199547817",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `14382216781199547817` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `14382216781199547817` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n "
+    },
+    {
+      "product_id": "online:pt:BR:16327035847486546313",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `16327035847486546313` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `16327035847486546313` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n "
+    },
+    {
+      "product_id": "online:pt:BR:17233744321540595259",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `17233744321540595259` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `17233744321540595259` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n "
+    },
+    {
+      "product_id": "online:pt:BR:1736512501686486863",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `1736512501686486863` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `1736512501686486863` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n  }"
+    },
+    {
+      "product_id": "online:pt:BR:3104193228761997124",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `3104193228761997124` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `3104193228761997124` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n  }"
+    },
+    {
+      "product_id": "online:pt:BR:3332348645938802802",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `3332348645938802802` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `3332348645938802802` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n  }"
+    },
+    {
+      "product_id": "online:pt:BR:4917838518253211418",
+      "verify": "present_after_delete",
+      "source": "api",
+      "ageGroup": null,
+      "gender": null,
+      "sizes": null,
+      "color": null
+    },
+    {
+      "product_id": "online:pt:BR:5830504980213147042",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `5830504980213147042` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `5830504980213147042` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n  }"
+    },
+    {
+      "product_id": "online:pt:BR:7158941586508696723",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `7158941586508696723` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `7158941586508696723` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n  }"
+    },
+    {
+      "product_id": "online:pt:BR:7793455940120203308",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `7793455940120203308` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `7793455940120203308` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n  }"
+    },
+    {
+      "product_id": "online:pt:BR:8630660614210721891",
+      "verify": "absent_or_waiting",
+      "detail": "http_404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The resource with name `8630660614210721891` was not found.\",\n    \"errors\": [\n      {\n        \"message\": \"The resource with name `8630660614210721891` was not found.\",\n        \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n    ]\n  }"
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+{
+  "generated_at": "2026-05-13T06:24:27.711446+00:00",
+  "status": "gmc_phase7_post_cleanup_monitor_readonly_ready",
+  "scope": "LK GMC Phase 7 post-cleanup read-only monitoring after approved A/B/local C-D work",
+  "source_labels": [
+    "fact_merchant_center",
+    "derived_reconciliation",
+    "manual_approval_lucas_2026_05_12"
+  ],
+  "summary": {
+    "merchant_products_current": 23194,
+    "merchant_productstatuses_current": 23194,
+    "products_by_channel": {
+      "local": 11577,
+      "online": 11617
+    },
+    "local_cd_old_total": 63,
+    "local_cd_old_absent": 63,
+    "local_cd_replacements_total": 14,
+    "local_cd_replacements_present": 14,
+    "rows_with_item_issues": 2563,
+    "item_issue_instances": 11791,
+    "rows_with_destination_problem": 17
+  },
+  "current_merchant_statuses": {
+    "total_statuses": 23194,
+    "by_channel": {
+      "local": 11577,
+      "online": 11617
+    },
+    "by_dimension_top": [
+      {
+        "dimension": "online:pt:BR",
+        "count": 11617
+      },
+      {
+        "dimension": "local:pt:BR",
+        "count": 11577
+      }
+    ],
+    "rows_with_item_issues": 2563,
+    "item_issue_instances": 11791,
+    "item_issue_counts_top": [
+      {
+        "issue_key": "missing_item_attribute_for_product_type",
+        "count": 10152
+      },
+      {
+        "issue_key": "price_updated",
+        "count": 1002
+      },
+      {
+        "issue_key": "strikethrough_price_updated",
+        "count": 486
+      },
+      {
+        "issue_key": "restricted_gtin",
+        "count": 103
+      },
+      {
+        "issue_key": "item_missing_required_attribute",
+        "count": 10
+      },
+      {
+        "issue_key": "image_single_color",
+        "count": 8
+      },
+      {
+        "issue_key": "reserved_gtin",
+        "count": 6
+      },
+      {
+        "issue_key": "landing_page_error",
+        "count": 5
+      },
+      {
+        "issue_key": "condition_updated_from_detected",
+        "count": 4
+      },
+      {
+        "issue_key": "restricted_nfs_policy_violation",
+        "count": 4
+      },
+      {
+        "issue_key": "image_link_broken",
+        "count": 4
+      },
+      {
+        "issue_key": "coupon_gtin",
+        "count": 3
+      },
+      {
+        "issue_key": "pause_expired",
+        "count": 2
+      },
+      {
+        "issue_key": "sexual_interests_policy_violation",
+        "count": 1
+      },
+      {
+        "issue_key": "image_too_small_for_high_resolution",
+        "count": 1
+      }
+    ],
+    "item_issue_counts_by_channel_top": {
+      "online": [
+        {
+          "issue_key": "missing_item_attribute_for_product_type",
+          "count": 10152
+        },
+        {
+          "issue_key": "price_updated",
+          "count": 1002
+        },
+        {
+          "issue_key": "strikethrough_price_updated",
+          "count": 486
+        },
+        {
+          "issue_key": "restricted_gtin",
+          "count": 68
+        },
+        {
+          "issue_key": "item_missing_required_attribute",
+          "count": 10
+        },
+        {
+          "issue_key": "image_single_color",
+          "count": 6
+        },
+        {
+          "issue_key": "landing_page_error",
+          "count": 5
+        },
+        {
+          "issue_key": "reserved_gtin",
+          "count": 4
+        },
+        {
+          "issue_key": "image_link_broken",
+          "count": 4
+        },
+        {
+          "issue_key": "restricted_nfs_policy_violation",
+          "count": 3
+        },
+        {
+          "issue_key": "pause_expired",
+          "count": 2
+        },
+        {
+          "issue_key": "coupon_gtin",
+          "count": 2
+        },
+        {
+          "issue_key": "sexual_interests_policy_violation",
+          "count": 1
+        },
+        {
+          "issue_key": "image_too_small_for_high_resolution",
+          "count": 1
+        }
+      ],
+      "local": [
+        {
+          "issue_key": "restricted_gtin",
+          "count": 35
+        },
+        {
+          "issue_key": "condition_updated_from_detected",
+          "count": 4
+        },
+        {
+          "issue_key": "reserved_gtin",
+          "count": 2
+        },
+        {
+          "issue_key": "image_single_color",
+          "count": 2
+        },
+        {
+          "issue_key": "restricted_nfs_policy_violation",
+          "count": 1
+        },
+        {
+          "issue_key": "coupon_gtin",
+          "count": 1
+        }
+      ]
+    },
+    "destination_status_counts_top": [
+      {
+        "destination_status": "SurfacesAcrossGoogle:approved",
+        "count": 11601
+      },
+      {
+        "destination_status": "LocalSurfacesAcrossGoogle:approved",
+        "count": 11577
+      },
+      {
+        "destination_status": "Shopping:approved",
+        "count": 11568
+      },
+      {
+        "destination_status": "DisplayAds:approved",
+        "count": 11567
+      },
+      {
+        "destination_status": "SurfacesAcrossGoogle:disapproved",
+        "count": 16
+      },
+      {
+        "destination_status": "DisplayAds:disapproved",
+        "count": 1
+      }
+    ],
+    "destination_status_counts_by_channel_top": {
+      "local": [
+        {
+          "destination_status": "LocalSurfacesAcrossGoogle:approved",
+          "count": 11577
+        }
+      ],
+      "online": [
+        {
+          "destination_status": "SurfacesAcrossGoogle:approved",
+          "count": 11601
+        },
+        {
+          "destination_status": "Shopping:approved",
+          "count": 11568
+        },
+        {
+          "destination_status": "DisplayAds:approved",
+          "count": 11567
+        },
+        {
+          "destination_status": "SurfacesAcrossGoogle:disapproved",
+          "count": 16
+        },
+        {
+          "destination_status": "DisplayAds:disapproved",
+          "count": 1
+        }
+      ]
+    },
+    "rows_with_destination_problem": 17,
+    "sample_issues": [
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+        "issue_key": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+        "issue_key": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "DisplayAds",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+        "issue_key": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+        "issue_key": "strikethrough_price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page"
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+        "issue_key": "strikethrough_price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "DisplayAds",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page"
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+        "issue_key": "strikethrough_price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Your product's price value was automatically updated to match the data on your landing page"
+      },
+      {
+        "product_id": "online:pt:BR:u1906lbn3",
+        "channel": "online",
+        "title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the color of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:u1906lbn3",
+        "channel": "online",
+        "title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the color of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the age group of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the age group of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the gender of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the gender of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the size of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "channel": "online",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the size of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:PERI049-1007",
+        "channel": "online",
+        "title": "Óculos de Sol Palm Angels PERI049-1007 Preto",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the size of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:PERI049-1007",
+        "channel": "online",
+        "title": "Óculos de Sol Palm Angels PERI049-1007 Preto",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the size of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:u1906lbn6",
+        "channel": "online",
+        "title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the color of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:u1906lbn6",
+        "channel": "online",
+        "title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the color of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:ONI-0995678-35",
+        "channel": "online",
+        "title": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the color of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:ONI-0995678-35",
+        "channel": "online",
+        "title": "Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the color of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:ALO-2441950-39",
+        "channel": "online",
+        "title": "Tênis Alo Yoga Alo Runner Pink Rosa",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the color of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:ALO-2441950-39",
+        "channel": "online",
+        "title": "Tênis Alo Yoga Alo Runner Pink Rosa",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the color of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:HV8547-002-36",
+        "channel": "online",
+        "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+        "issue_key": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:HV8547-002-36",
+        "channel": "online",
+        "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+        "issue_key": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "DisplayAds",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:HV8547-002-36",
+        "channel": "online",
+        "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+        "issue_key": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:1183A201-126-5",
+        "channel": "online",
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Add the color of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:1183A201-126-5",
+        "channel": "online",
+        "title": "Tênis Onitsuka Tiger Mexico 66 White Black Branco",
+        "issue_key": "missing_item_attribute_for_product_type",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Add the color of your product so customers can easily find a specific product"
+      },
+      {
+        "product_id": "online:pt:BR:U9060CCB-10",
+        "channel": "online",
+        "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+        "issue_key": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "Shopping",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:U9060CCB-10",
+        "channel": "online",
+        "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+        "issue_key": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "DisplayAds",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      },
+      {
+        "product_id": "online:pt:BR:U9060CCB-10",
+        "channel": "online",
+        "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+        "issue_key": "price_updated",
+        "severity": null,
+        "resolution": "merchant_action",
+        "destination": "SurfacesAcrossGoogle",
+        "detail": "Your product's price value was automatically updated to match the data on your online store"
+      }
+    ]
+  },
+  "executed_package_refs": {
+    "local_cd_cleanup": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-gmc-2026-05-12-local-cd-63-old-lia-cleanup-execution.json",
+    "package_a": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-gmc-2026-05-12-package-a-online-stale-triage.json",
+    "package_b": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-gmc-2026-05-12-package-b-identifier-fix.json",
+    "b3_rollback": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-gmc-2026-05-12-package-b3-emergency-rollback-restore.json"
+  },
+  "interpretation": {
+    "verdict": "- Pós-limpeza local C/D segue saudável: 63 old IDs continuam ausentes e 14 replacement rows continuam presentes. A limpeza está encerrada operacionalmente; o próximo ganho deve vir de diagnostics/delta, não de repetir deletes locais.",
+    "next_safe_blocks": [
+      "Read-only diagnostics delta after Merchant reprocessing window: compare issue codes/counts against this Phase 7 baseline.",
+      "If issues remain material, build a new approval packet only from exact current product IDs with rollback snapshot; no broad deletes.",
+      "Refresh Mission Control with this baseline once diagnostics stabilizes."
+    ]
+  },
+  "not_performed": [
+    "merchant_product_delete",
+    "merchant_product_insert",
+    "merchant_product_update",
+    "content_api_custombatch",
+    "datafeed_fetchNow",
+    "feed_update",
+    "shopify_write",
+    "tiny_write",
+    "database_write",
+    "pos_or_local_inventory_setting_change",
+    "campaign_or_external_send"
+  ]
+}

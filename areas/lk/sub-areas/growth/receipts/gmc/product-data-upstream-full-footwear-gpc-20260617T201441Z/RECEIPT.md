@@ -1,0 +1,99 @@
+# Receipt — Full footwear GPC upstream Shopify
+
+- Criado: 2026-06-17T20:22:31.045233+00:00
+- Aprovação: Lucas pediu corrigir TUDO e depois respondeu “seguir”.
+- Escopo executado: catálogo ativo de calçados com `google_product_category` ausente.
+- Campo: `mm-google-shopping.google_product_category`
+- Valor: `187`
+- Produtos ativos escaneados: 1838
+- Candidatos corrigidos: 614
+- Readback OK: 614
+- Erros: 0
+
+## Excluído
+- preço, estoque, disponibilidade, variantes, SKU, MPN, feed/GMC direto, campanhas, theme.
+
+## Rollback
+- Restaurar via `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/receipts/gmc/product-data-upstream-full-footwear-gpc-20260617T201441Z/backup-before.json`
+
+## Amostra corrigida
+- air-jordan-1-mid-wolf-grey: `187`
+- air-jordan-1-low-sunset-haze: `187`
+- air-jordan-1-high-next-chapter: `187`
+- air-jordan-1-low-panda-2023: `187`
+- air-jordan-1-low-dark-beetroot: `187`
+- air-jordan-1-elevate-low-se-silver-toe: `187`
+- air-jordan-1-high-lucky-green: `187`
+- yu-gi-oh-x-adidas-adi2000-dark-magician: `187`
+- yu-gi-oh-x-adi2000-yugis-world: `187`
+- yeezy-slide-glow-green: `187`
+- yeezy-foam-runner-sand-937693356: `187`
+- yeezy-foam-runner-onyx: `187`
+- yeezy-foam-runner-mx-sand-grey: `187`
+- yeezy-boost-350-v2-onyx: `187`
+- yeezy-boost-350-v2-mx-oat: `187`
+- yeezy-boost-350-v2-mono-ice: `187`
+- yeezy-boost-350-v2-citrin: `187`
+- yeezy-700-v1-wave-runner: `187`
+- yeezy-500-blush: `187`
+- wmns-air-jordan-1-mid-canyon-rust: `187`
+- the-grinch-x-adidas-forum-low-green: `187`
+- off-white-x-air-jordan-4-sail: `187`
+- nike-dunk-low-light-violet: `187`
+- nike-air-force-1-low-world-champ-lakers: `187`
+- nike-air-force-1-low-world-champ: `187`
+- new-balance-9060-mineral-red-truffle-rain-cloud: `187`
+- new-balance-550-white-pine-green: `187`
+- kasina-x-nike-air-max-1-won-ang-grey: `187`
+- grateful-dead-x-nike-sb-dunk-low-yellow-bear: `187`
+- bad-bunny-x-adidas-forum-buckle-low-white: `187`
+- ambush-x-nike-air-force-1-low-phantom: `187`
+- ambush-x-nike-air-force-1-low-game-royal-and-vivid-sulphur: `187`
+- ambush-x-nike-air-force-1-low-black: `187`
+- air-max-plus-black-university-blue: `187`
+- air-jordan-4-craft: `187`
+- air-jordan-1-mid-university-blue-unc: `187`
+- air-jordan-1-mid-se-light-iron-ore: `187`
+- air-jordan-1-mid-smoke-grey: `187`
+- air-jordan-1-mid-aqua-blue-tint: `187`
+- air-jordan-1-low-se-iced-lilac: `187`
+- air-jordan-1-low-guava-ice: `187`
+- air-jordan-1-low-crater-grey-university-blue: `187`
+- air-jordan-1-low-coconut-milk: `187`
+- air-jordan-1-low-cardinal: `187`
+- air-jordan-1-high-university-blue-unc: `187`
+- air-jordan-1-high-rebellionaire: `187`
+- air-jordan-1-high-85-college-navy: `187`
+- adidas-adi2000-chalk-white: `187`
+- adi2000-triple-black: `187`
+- nike-dunk-low-medium-curry: `187`
+- nike-sb-dunk-high-pro-black-and-metallic-gold: `187`
+- air-jordan-1-mid-se-craft-inside-out-black: `187`
+- air-jordan-1-low-taxi: `187`
+- tiffany-co-x-nike-air-force-1-low-1837: `187`
+- air-jordan-1-low-green-toe: `187`
+- air-jordan-1-high-og-stealth: `187`
+- yeezy-slide-ochre-925686464: `187`
+- nike-sb-dunk-low-pro-st-patricks-day: `187`
+- air-jordan-1-low-se-mocha: `187`
+- air-jordan-4-midnight-navy: `187`
+- nike-sb-dunk-low-pro-iso-white-gum: `187`
+- nike-sb-dunk-low-la-dodgers: `187`
+- nike-sb-dunk-low-pro-chicago: `187`
+- nike-dunk-low-se-lottery: `187`
+- air-jordan-1-low-se-diamond: `187`
+- air-jordan-1-low-se-tie-dye: `187`
+- huf-x-nike-sb-dunk-low-new-york: `187`
+- air-jordan-1-low-gym-red-black: `187`
+- air-jordan-1-high-dark-mocha: `187`
+- yeezy-slide-onyx: `187`
+- yeezy-foam-runner-stone-sage-924604518: `187`
+- concepts-x-nike-sb-dunk-low-orange-lobster: `187`
+- nike-sb-dunk-low-club-58-gulf: `187`
+- nike-dunk-low-grey-white: `187`
+- nike-dunk-low-court-purple: `187`
+- air-jordan-1-mid-carbon-fiber: `187`
+- air-jordan-1-high-atmosphere: `187`
+- air-jordan-1-elevate-low-se-lucky-green: `187`
+- huf-x-nike-sb-dunk-low-san-francisco: `187`
+- why-so-sad-x-nike-sb-dunk-low-the-predatory-bird: `187`

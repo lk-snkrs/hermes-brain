@@ -1,0 +1,60 @@
+{
+  "summary": [
+    {
+      "check": "secrets",
+      "FAIL": 2,
+      "WARN": 0
+    },
+    {
+      "check": "links",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "required_files",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "agent_files",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "area_maps",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "decisions_index",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "routines_index",
+      "FAIL": 0,
+      "WARN": 0
+    },
+    {
+      "check": "skill_references",
+      "FAIL": 0,
+      "WARN": 0
+    }
+  ],
+  "issues": [
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "reports/lk-os-daily-sales-brief-2026-05-10.json",
+      "detail": "openai"
+    },
+    {
+      "level": "FAIL",
+      "kind": "secret",
+      "path": "reports/lk-os-daily-sales-brief-2026-05-10.md",
+      "detail": "openai"
+    }
+  ],
+  "fail_count": 2,
+  "warn_count": 0
+}

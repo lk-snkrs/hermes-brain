@@ -1,0 +1,105 @@
+# Gate B2 P2 — correction packet — tenis-air-jordan-1-low-archaeo-brown-nike-casual
+
+- title: `Tênis Nike Air Jordan 1 Low Archaeo Brown White Marrom`
+- priority: `P2_saneamento`
+- lane: `SHOPIFY_DUPLICATE_PACKET`
+- proposed_action: Preparar diff Shopify por variante/SKU duplicado e rollback; NÃO executar write sem aprovação escopada.
+- row_count: `86`
+- prefixes: `dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774, dc0774`
+
+## Status counts
+- matched_exact_sku_stock_missing_deposit: `2`
+- matched_exact_sku_stock_resolved: `39`
+- shopify_duplicate_sku_blocked: `7`
+- shopify_variant_tiny_missing: `38`
+
+## Linhas principais
+- `dc0774` | shopify_variant_tiny_missing | Shopify SKU `dc0774` | Tiny `` id ``
+- `DC0774-006-1` | shopify_variant_tiny_missing | Shopify SKU `DC0774-006-1` | Tiny `` id ``
+- `DC0774-170-1` | shopify_variant_tiny_missing | Shopify SKU `DC0774-170-1` | Tiny `` id ``
+- `DC0774101-1` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774101-1` | Tiny `DC0774101-1` id `942921724` | saldo LK CONTROLE: 0.0
+- `DC0774141-1` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774141-1` | Tiny `DC0774141-1` id `921335350` | saldo LK CONTROLE: 0.0
+- `DC0774304-1` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774304-1` | Tiny `DC0774304-1` id `941688210` | saldo LK CONTROLE: 0.0
+- `DC0774801-1` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774801-1` | Tiny `DC0774801-1` id `944462447` | saldo LK CONTROLE: 0.0
+- `DC0774-006-2` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774-006-2` | Tiny `DC0774-006-2` id `942283093` | saldo LK CONTROLE: 0.0
+- `DC0774-170-2` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774-170-2` | Tiny `DC0774-170-2` id `1056731650` | saldo LK CONTROLE: 0.0
+- `DC0774101-2` | shopify_variant_tiny_missing | Shopify SKU `DC0774101-2` | Tiny `` id ``
+- `DC0774102` | shopify_duplicate_sku_blocked | Shopify SKU `DC0774102` | Tiny `` id ``
+- `DC0774105-1` | shopify_variant_tiny_missing | Shopify SKU `DC0774105-1` | Tiny `` id ``
+- `DC0774141-2` | shopify_variant_tiny_missing | Shopify SKU `DC0774141-2` | Tiny `` id ``
+- `DC0774200-9` | shopify_variant_tiny_missing | Shopify SKU `DC0774200-9` | Tiny `` id ``
+- `DC0774304-2` | shopify_duplicate_sku_blocked | Shopify SKU `DC0774304-2` | Tiny `` id ``
+- `DC0774502-1` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774502-1` | Tiny `DC0774502-1` id `1016067886` | saldo LK CONTROLE: 0.0
+- `DC0774801-2` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774801-2` | Tiny `DC0774801-2` id `944462455` | saldo LK CONTROLE: 0.0
+- `dc0774-800-1` | matched_exact_sku_stock_resolved | Shopify SKU `dc0774-800-1` | Tiny `dc0774-800-1` id `1055543136` | saldo LK CONTROLE: 0.0
+- `DC0774105-6` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774105-6` | Tiny `DC0774105-6` id `1004757421` | saldo LK CONTROLE: 0.0
+- `DC0774200-5` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774200-5` | Tiny `DC0774200-5` id `1029149186` | saldo LK CONTROLE: 0.0
+- `DC0774304-9` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774304-9` | Tiny `DC0774304-9` id `1002615646` | saldo LK CONTROLE: 0.0
+- `DC0774-006-3` | shopify_variant_tiny_missing | Shopify SKU `DC0774-006-3` | Tiny `` id ``
+- `DC0774-170-3` | shopify_variant_tiny_missing | Shopify SKU `DC0774-170-3` | Tiny `` id ``
+- `DC07740421` | shopify_variant_tiny_missing | Shopify SKU `DC07740421` | Tiny `` id ``
+- `DC0774101-3` | shopify_variant_tiny_missing | Shopify SKU `DC0774101-3` | Tiny `` id ``
+- `DC0774105-2` | shopify_variant_tiny_missing | Shopify SKU `DC0774105-2` | Tiny `` id ``
+- `DC0774113-1` | shopify_variant_tiny_missing | Shopify SKU `DC0774113-1` | Tiny `` id ``
+- `DC0774141-3` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774141-3` | Tiny `DC0774141-3` id `921335358` | saldo LK CONTROLE: 0.0
+- `DC0774200-6` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774200-6` | Tiny `DC0774200-6` id `1029149192` | saldo LK CONTROLE: 0.0
+- `DC0774304-3` | shopify_duplicate_sku_blocked | Shopify SKU `DC0774304-3` | Tiny `DC0774304-3` id `941688234` | saldo LK CONTROLE: 0.0
+- `DC0774502-2` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774502-2` | Tiny `DC0774502-2` id `1016067895` | saldo LK CONTROLE: 0.0
+- `DC0774801-3` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774801-3` | Tiny `DC0774801-3` id `944462459` | saldo LK CONTROLE: 0.0
+- `dc0774-800-2` | matched_exact_sku_stock_missing_deposit | Shopify SKU `dc0774-800-2` | Tiny `dc0774-800-2` id `1055543139`
+- `DC0774-006-4` | shopify_variant_tiny_missing | Shopify SKU `DC0774-006-4` | Tiny `` id ``
+- `DC0774-170-4` | shopify_variant_tiny_missing | Shopify SKU `DC0774-170-4` | Tiny `` id ``
+- `DC0774042` | shopify_variant_tiny_missing | Shopify SKU `DC0774042` | Tiny `` id ``
+- `DC0774101-4` | shopify_variant_tiny_missing | Shopify SKU `DC0774101-4` | Tiny `` id ``
+- `DC0774105-3` | shopify_variant_tiny_missing | Shopify SKU `DC0774105-3` | Tiny `` id ``
+- `DC0774113-2` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774113-2` | Tiny `DC0774113-2` id `1056083551` | saldo LK CONTROLE: 0.0
+- `DC0774141-37` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774141-37` | Tiny `DC0774141-37` id `921335365` | saldo LK CONTROLE: 0.0
+- `DC0774200-7` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774200-7` | Tiny `DC0774200-7` id `1029149199` | saldo LK CONTROLE: 0.0
+- `DC0774304-4` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774304-4` | Tiny `DC0774304-4` id `941688247` | saldo LK CONTROLE: 0.0
+- `DC0774502-3` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774502-3` | Tiny `DC0774502-3` id `1016067902` | saldo LK CONTROLE: 0.0
+- `DC0774801-4` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774801-4` | Tiny `DC0774801-4` id `944462464` | saldo LK CONTROLE: 0.0
+- `dc0774-800-3` | shopify_variant_tiny_missing | Shopify SKU `dc0774-800-3` | Tiny `` id ``
+- `DC0774304-10` | shopify_variant_tiny_missing | Shopify SKU `DC0774304-10` | Tiny `` id ``
+- `DC0774502-9` | shopify_variant_tiny_missing | Shopify SKU `DC0774502-9` | Tiny `` id ``
+- `DC0774-006-5` | shopify_variant_tiny_missing | Shopify SKU `DC0774-006-5` | Tiny `` id ``
+- `DC0774-170-5` | shopify_variant_tiny_missing | Shopify SKU `DC0774-170-5` | Tiny `` id ``
+- `DC0774101-5` | shopify_variant_tiny_missing | Shopify SKU `DC0774101-5` | Tiny `` id ``
+- `DC0774105-4` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774105-4` | Tiny `DC0774105-4` id `992677003` | saldo LK CONTROLE: 0.0
+- `DC0774113-3` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774113-3` | Tiny `DC0774113-3` id `1056083554` | saldo LK CONTROLE: 0.0
+- `DC0774141-5` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774141-5` | Tiny `DC0774141-5` id `921335369` | saldo LK CONTROLE: 0.0
+- `DC0774200-1` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774200-1` | Tiny `DC0774200-1` id `1018813827` | saldo LK CONTROLE: 0.0
+- `DC0774304-5` | shopify_duplicate_sku_blocked | Shopify SKU `DC0774304-5` | Tiny `` id ``
+- `DC0774502-4` | shopify_variant_tiny_missing | Shopify SKU `DC0774502-4` | Tiny `` id ``
+- `DC0774801-5` | shopify_variant_tiny_missing | Shopify SKU `DC0774801-5` | Tiny `` id ``
+- `dc0774-800` | shopify_variant_tiny_missing | Shopify SKU `dc0774-800` | Tiny `` id ``
+- `DC0774-006-6` | shopify_variant_tiny_missing | Shopify SKU `DC0774-006-6` | Tiny `` id ``
+- `DC0774-170-6` | shopify_variant_tiny_missing | Shopify SKU `DC0774-170-6` | Tiny `` id ``
+- `DC0774101-6` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774101-6` | Tiny `DC0774101-6` id `942921784` | saldo LK CONTROLE: 1.0
+- `DC0774105-5` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774105-5` | Tiny `DC0774105-5` id `992677007` | saldo LK CONTROLE: 0.0
+- `DC0774141-39` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774141-39` | Tiny `DC0774141-39` id `921335373` | saldo LK CONTROLE: 0.0
+- `DC0774200-2` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774200-2` | Tiny `DC0774200-2` id `1018813831` | saldo LK CONTROLE: 0.0
+- `DC0774304-6` | shopify_duplicate_sku_blocked | Shopify SKU `DC0774304-6` | Tiny `DC0774304-6` id `941688263` | saldo LK CONTROLE: 0.0
+- `DC0774502-5` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774502-5` | Tiny `DC0774502-5` id `1016067910` | saldo LK CONTROLE: 0.0
+- `DC0774801-6` | shopify_variant_tiny_missing | Shopify SKU `DC0774801-6` | Tiny `` id ``
+- `DC0774105` | shopify_duplicate_sku_blocked | Shopify SKU `DC0774105` | Tiny `` id ``
+- `DC0774-170-7` | shopify_variant_tiny_missing | Shopify SKU `DC0774-170-7` | Tiny `` id ``
+- `DC0774101-7` | shopify_variant_tiny_missing | Shopify SKU `DC0774101-7` | Tiny `` id ``
+- `DC0774141-7` | shopify_variant_tiny_missing | Shopify SKU `DC0774141-7` | Tiny `` id ``
+- `DC0774200-3` | shopify_variant_tiny_missing | Shopify SKU `DC0774200-3` | Tiny `` id ``
+- `DC0774502-6` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774502-6` | Tiny `DC0774502-6` id `1016067916` | saldo LK CONTROLE: 0.0
+- `DC0774801-7` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774801-7` | Tiny `DC0774801-7` id `944462482` | saldo LK CONTROLE: 0.0
+- `DC0774200-8` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774200-8` | Tiny `DC0774200-8` id `1030949742` | saldo LK CONTROLE: 0.0
+- `DC0774502-8` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774502-8` | Tiny `DC0774502-8` id `1016067924` | saldo LK CONTROLE: 0.0
+- `DC0774101-8` | matched_exact_sku_stock_resolved | Shopify SKU `DC0774101-8` | Tiny `DC0774101-8` id `942921805` | saldo LK CONTROLE: 0.0
+- `DC0774141-8` | matched_exact_sku_stock_missing_deposit | Shopify SKU `DC0774141-8` | Tiny `DC0774141-8` id `921335383`
+- `DC0774200-4` | shopify_variant_tiny_missing | Shopify SKU `DC0774200-4` | Tiny `` id ``
+- `DC0774304-8` | shopify_duplicate_sku_blocked | Shopify SKU `DC0774304-8` | Tiny `` id ``
+- ... +6 linhas no JSON/CSV agregado
+
+## Guardrails
+- Tiny write: `0`
+- Shopify write: `0`
+- Writes externos: `0`
+- Cron/webhook/runtime novo: `0`
+- Promessa de disponibilidade pública: `0`
+- Rollback: descartar artefatos locais; nada externo alterado.

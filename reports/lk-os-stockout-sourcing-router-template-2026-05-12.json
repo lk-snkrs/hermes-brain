@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-05-12T21:30:03.250897+00:00",
+  "status": "lk_os_stockout_sourcing_router_template_ready_no_write",
+  "purpose": "Corrected LK sourcing router for sold/requested products with confirmed stockout; Telegram approval surface must be inline.",
+  "trigger_required": [
+    "order_or_request_context_present",
+    "exact_product_sku_size_known",
+    "stockout_zero_availability_confirmed"
+  ],
+  "routing_order": [
+    "check_droper_first_for_availability_and_cost",
+    "if_droper_unavailable_compare_stockx_vs_goat_after_size_normalization",
+    "select_cheapest_viable_source_as_recommendation_only",
+    "prepare_notion_or_julio_task_with_link_cost_context"
+  ],
+  "never_authorized_for_hermes": [
+    "purchase",
+    "reservation",
+    "purchase_order",
+    "supplier_or_whatsapp_compras_contact_without_explicit_approval",
+    "delivery_address_choice",
+    "importer_or_bring_to_brazil_supplier_choice",
+    "shopify_write",
+    "tiny_write",
+    "merchant_write",
+    "notion_or_n8n_flow_activation_without_explicit_approval"
+  ],
+  "telegram_inline_template": {
+    "title": "Router de reposição por stockout — [produto]",
+    "body": [
+      "Pedido/necessidade: [pedido ou contexto]",
+      "Produto/SKU/tamanho: [produto] · [SKU] · [tamanho]",
+      "Status de estoque: [stockout confirmado por fonte]",
+      "Droper: [tem/não tem] · [preço/link se consultado]",
+      "StockX: [preço/link se Droper não tiver]",
+      "GOAT: [preço/link se Droper não tiver]",
+      "Recomendação para Júlio: [fonte mais barata viável]",
+      "Tarefa sugerida: Júlio comprar/avaliar pelo link [link], custo [valor], observações [lead time/tamanho/risco].",
+      "Não autorizado: Hermes comprar, reservar, escolher endereço/importador, acionar fornecedor/grupo ou alterar Shopify/Tiny/Merchant."
+    ]
+  },
+  "approval_wording_inline": "Aprovo criar tarefa para Júlio/Notion com este produto/SKU/tamanho e a fonte recomendada, apenas como orientação de compra humana; não autorizo Hermes a comprar, reservar, escolher endereço/importador, contatar fornecedor/grupo, nem alterar Shopify/Tiny/Merchant.",
+  "not_performed": [
+    "droper_lookup",
+    "stockx_lookup",
+    "goat_lookup",
+    "notion_or_n8n_creation",
+    "supplier_contact",
+    "purchase",
+    "reservation",
+    "shopify_write",
+    "tiny_write",
+    "merchant_write",
+    "database_write"
+  ]
+}

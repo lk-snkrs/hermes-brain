@@ -1,0 +1,190 @@
+{
+  "operational_date": "2026-06-05",
+  "generated_at_utc": "2026-06-06T04:01:07Z",
+  "status": "attention",
+  "executive_summary": "Brain saudável e consolidado; atenção operacional em LK/GMC/GCR, Zipper/Mordomo follow-ups/contexto, e governança sistêmica de subagentes. Brain Health FAIL=0/WARN=0 e Brain Improvement Score 94/100. Nenhum envio externo ou write de produção executado pelo fechamento.",
+  "material_changes": [
+    {
+      "domain": "Hermes Geral / Grande Mente",
+      "summary": "Daily Intelligence Loop aplicou auto-fix A1 no parser local de wacli e, na madrugada seguinte, promoveu governança sistêmica de contexto mínimo para LC Hermes central.",
+      "evidence": [
+        "reports/hermes-continuous-improvement/2026-06-05.md",
+        "reports/hermes-continuous-improvement/2026-06-06.md",
+        "reports/governance/handoff-lc-hermes-subagent-context-systemwide-2026-06-06.md"
+      ]
+    },
+    {
+      "domain": "LK / LK Growth / LK Shopify",
+      "summary": "Relatórios comerciais voltaram ok; GCR recebeu aprovação mas Hermes bloqueou write incorreto no tema; guardrail de tema Shopify live foi registrado; impact review LK rodou read-only.",
+      "evidence": [
+        "reports/lk-experiment-ledger-2026-06-05.md",
+        "reports/governance/lk-shopify-theme-production-write-guardrail-2026-06-05.md",
+        "areas/lk/sub-areas/shopify/receipts/2026-06-05-google-customer-reviews-opt-in-approved-add-blocked.md"
+      ]
+    },
+    {
+      "domain": "Zipper / Mordomo",
+      "summary": "Subagente Zipper lógico inventariado; CRM de interesse por artista e suppression budget_decline formalizados; follow-ups importantes passaram para fila de contexto, não Decision Inbox genérico.",
+      "evidence": [
+        "areas/operacoes/reports/lcmordomo-subagente-zipper-readonly-inventory-2026-06-05.md",
+        "areas/zipper/base-conhecimento/artist-interest-crm-negative-fit-2026-06-05.md",
+        "areas/operacoes/reports/lcmordomo-p16-zipper-followup-correction-context-queue-2026-06-05.md"
+      ]
+    }
+  ],
+  "incidents": [
+    {
+      "domain": "LK/GCR",
+      "status": "blocked_safe",
+      "summary": "Hermes não encontrou superfície correta via API/Simprosys para GCR e bloqueou write no tema comum; Lucas adicionou manualmente no Admin, pendente QA de pedido-teste."
+    },
+    {
+      "domain": "Zipper intake",
+      "status": "needs_attention",
+      "summary": "Tidio #92aa5, Gunga/Zip'Up, Katia Maciel e Zapier/MailerLite precisam verificação/decisão; nenhum envio externo foi feito."
+    }
+  ],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Aprovar escopo Google Customer Reviews para LK, sem autorizar writes fora do escopo.",
+      "scope": "Configurar GCR/Simprosys/checkout pós-compra; não alterar preço, estoque, feed, tema production, campanhas ou outros apps.",
+      "status": "manual_user_action_plus_QA_pending"
+    },
+    {
+      "decision": "Tema Shopify live/production não deve receber write direto; alterações de tema passam por dev theme/branch, PR/review, deploy/readback/QA/receipt.",
+      "scope": "Liquid, CSS, JS, sections, snippets, assets e app-embed surfaces de tema.",
+      "status": "documented"
+    },
+    {
+      "decision": "Follow-up puro no Zipper/Mordomo não deve virar Decision Inbox; follow-up seguro pode ser autônomo depois de contexto encadeado e idempotência.",
+      "scope": "Follow-ups sem preço, reserva, negociação, reclamação ou promessa material.",
+      "status": "classifier_queue_updated"
+    },
+    {
+      "decision": "Governança de subagentes com contexto mínimo + Brain sob demanda é sistêmica e pertence ao LC Hermes central.",
+      "scope": "Hermes central, Brain, crons de governança, skills, LK, Zipper, SPITI, Mordomo, Mission Control e handoffs.",
+      "status": "handoff_promoted"
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "type": "approval",
+      "pattern": "Aprovação explícita autoriza apenas o escopo previamente apresentado; quando a superfície correta não existe, bloquear write errado e registrar receipt.",
+      "learn": "GCR/Shopify apps exigem confirmação de superfície pós-compra/Simprosys; theme.liquid não é fallback seguro."
+    },
+    {
+      "type": "correction",
+      "pattern": "Production theme write direto é proibido mesmo se tecnicamente possível.",
+      "learn": "Diferenciar tema production de produto/coleção/catálogo e exigir PR/deploy/readback para tema."
+    },
+    {
+      "type": "correction",
+      "pattern": "Decision Inbox deve conter decisão real, não follow-up genérico.",
+      "learn": "Follow-up seguro entra em contexto/idempotência e só sobe para Lucas quando há decisão sensível."
+    },
+    {
+      "type": "correction",
+      "pattern": "Aprendizado sistêmico não fica preso ao Mordomo.",
+      "learn": "LC Hermes é owner de promoção para contexto, memória, subagentes, skills, crons e governança do ecossistema."
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Tema Shopify live não recebe write direto; usar dev/branch/PR/deploy/readback.",
+      "destination_recommended": "skills/shopify, skills/lk-shopify-readonly, profile-local LK Shopify/LK Growth refs",
+      "action_applied_or_blocked": "documented_applied; future smoke needed"
+    },
+    {
+      "learning": "Follow-up puro não é Decision Inbox; follow-up importante precisa contexto encadeado antes de autoexecução.",
+      "destination_recommended": "Mordomo/Zipper skills, Decision Inbox renderer tests, Zipper runbook",
+      "action_applied_or_blocked": "classifier updated; P1.7 pending"
+    },
+    {
+      "learning": "Interesse por artista deve registrar canal/evidência e suppression budget_decline antes de campanhas futuras.",
+      "destination_recommended": "Zipper CRM skill/runbook and future Supabase schema",
+      "action_applied_or_blocked": "local SQLite/Brain documented; campaign sends remain approval-gated"
+    },
+    {
+      "learning": "Subagentes usam contexto mínimo + lookup sob demanda + handoff compacto.",
+      "destination_recommended": "LC Hermes governance, Brain Health, subagent registry, routing skills",
+      "action_applied_or_blocked": "handoff and 2026-06-06 report created"
+    }
+  ],
+  "autonomy_pattern_candidates": [
+    {
+      "candidate": "A0/A1 safe",
+      "examples": [
+        "docs/skills/index/check updates",
+        "read-only reports",
+        "local parser/checker fixes",
+        "classification dry-runs without external sends"
+      ]
+    },
+    {
+      "candidate": "must_remain_A3_A4",
+      "examples": [
+        "Shopify/GMC/Tiny/Klaviyo/Meta/Supabase writes",
+        "theme production changes",
+        "customer/collector/supplier contact",
+        "Docker/VPS/gateway/delivery changes"
+      ]
+    }
+  ],
+  "pending_decisions_for_lucas": [
+    "Confirmar/QA Google Customer Reviews via pedido-teste controlado se quiser fechar o tema.",
+    "Decidir próximos passos Zipper: Tidio #92aa5, Gunga/Zip'Up, Katia Maciel e Zapier/MailerLite.",
+    "Aprovar ou não GMC micro-piloto link_template/missing color antes de qualquer write.",
+    "Aprovar ou não NB9060/LKGOC B2 antes de production write."
+  ],
+  "safe_next_actions": [
+    "02h auditar se subagentes/crons/prompts ainda carregam contexto excessivo e corrigir A0/A1 documental.",
+    "Preparar QA checklist GCR sem tocar tema live.",
+    "Preparar P1.7 Zipper context enricher dry-run sem envio externo.",
+    "Registrar/monitorar D+7 do cart drawer antes de novo ajuste."
+  ],
+  "blocked_actions_requiring_approval": [
+    "Qualquer Shopify theme/product/collection/app write",
+    "GMC/ProductInput/feed/fetchNow/reprocessamento",
+    "WhatsApp/e-mail/customer/collector/supplier contact",
+    "Docker/VPS/gateway/deploy/cron delivery mutation",
+    "SPITI bid/client/site/database claims or writes without official source"
+  ],
+  "cron_and_delivery_truth": {
+    "generated_vs_delivered": "Relatórios locais não implicam entrega externa; estados separados por canal.",
+    "current_live_summary": "29 jobs, 25 active, 4 paused; LK 09h/16h/19h30 and Zipper 09h last runs ok on 2026-06-05; 01h/02h/02h15 governance local jobs healthy.",
+    "silent_ok": [
+      "Fechamento 01h",
+      "LC Hermes 02h",
+      "Memory hygiene 02h15",
+      "runtime/compression/proxy watchdogs"
+    ],
+    "actionable_stdout": [
+      "None critical in current live list; previous LK 16h parser issue corrected and next run ok."
+    ]
+  },
+  "sources": [
+    "reports/daily-consolidation/2026-06-05.md",
+    "reports/hermes-continuous-improvement/2026-06-05.md",
+    "reports/hermes-learning-ledger/2026-06-05.md",
+    "reports/lk-experiment-ledger-2026-06-05.md",
+    "reports/governance/runtime-truth-reconciler-2026-06-05.md",
+    "reports/governance/lk-shopify-theme-production-write-guardrail-2026-06-05.md",
+    "reports/governance/handoff-lc-hermes-subagent-context-systemwide-2026-06-06.md",
+    "areas/zipper/base-conhecimento/artist-interest-crm-negative-fit-2026-06-05.md",
+    "cron live list via /opt/hermes/.venv/bin/hermes cron list --all",
+    "session_search recent discovery"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "raw_chat_transcripts_excluded": true,
+    "raw_html_excluded": true,
+    "live_facts_verified_where_claimed": true,
+    "pii_minimized": true
+  },
+  "verification_required": [
+    "JSON parse",
+    "targeted secret scan",
+    "Brain Health/Score artifacts",
+    "Brain Sync safe allowlist push"
+  ]
+}

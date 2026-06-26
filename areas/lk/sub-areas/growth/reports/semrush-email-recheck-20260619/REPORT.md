@@ -1,0 +1,93 @@
+# LK Growth — SEMrush email/current recheck — 2026-06-19
+
+- Read-only SEMrush API; values_printed=false; nenhum write executado.
+
+## Projeto `16150947`
+- Info: errors `0`, warnings `295`, notices `239`, healthy `7`, haveIssues `91`, redirected `1`, blocked `0`
+- Latest snapshot `6a354bfbf24f0f526da24e80`; previous `6a34b29b5b22e67733a8010e`
+
+- `unknown` id `216` — **Links with no anchor text**: count `180`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades/adidas-jellyfish-pharrell-williams-guia-completo; target=https://wa.me/5511949565000; info=429
+- `unknown` id `12` — **Broken external links**: count `95`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades/adidas-jellyfish-pharrell-williams-guia-completo; target=https://wa.me/5511949565000; info=429
+- `unknown` id `112` — **Low text to HTML ratio**: count `90`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades/adidas-jellyfish-pharrell-williams-guia-completo; target=https://wa.me/5511949565000; info=429
+- `unknown` id `130` — **Disallowed internal resources**: count `90`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades/adidas-jellyfish-pharrell-williams-guia-completo; target=https://wa.me/5511949565000; info=429
+- `unknown` id `213` — **Pages with only one internal link**: count `49`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades/adidas-jellyfish-pharrell-williams-guia-completo; target=https://wa.me/5511949565000; info=429
+- `unknown` id `102` — **Title element is too long**: count `16`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades/adidas-jellyfish-pharrell-williams-guia-completo; target=https://wa.me/5511949565000; info=429
+- `unknown` id `223` — **Content not optimized**: count `5`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades/adidas-jellyfish-pharrell-williams-guia-completo; target=https://wa.me/5511949565000; info=429
+- `unknown` id `104` — **Multiple h1 tags**: count `4`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades/adidas-jellyfish-pharrell-williams-guia-completo; target=https://wa.me/5511949565000; info=429
+- `unknown` id `105` — **Duplicate content in h1 and title**: count `4`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades/adidas-jellyfish-pharrell-williams-guia-completo; target=https://wa.me/5511949565000; info=429
+- `unknown` id `219` — **Llms.txt has formatting issues**: count `1`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades; target=https://wa.me/5511949565000; info=429
+  - sample: source=https://lksneakers.com.br/blogs/novidades/adidas-jellyfish-pharrell-williams-guia-completo; target=https://wa.me/5511949565000; info=429
+
+## Projeto `29110159`
+- Info: errors `0`, warnings `263`, notices `679`, healthy `7`, haveIssues `88`, redirected `2`, blocked `3`
+- Latest snapshot `6a354c10f24f0f526da270c4`; previous `6a2f469f5bd43da0e6026f2e`
+
+- `unknown` id `216` — **Links with no anchor text**: count `668`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-campus; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-japan; target=None; info=0.01
+- `unknown` id `112` — **Low text to HTML ratio**: count `87`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-campus; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-japan; target=None; info=0.01
+- `unknown` id `130` — **Disallowed internal resources**: count `87`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-campus; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-japan; target=None; info=0.01
+- `unknown` id `12` — **Broken external links**: count `87`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-campus; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-japan; target=None; info=0.01
+- `unknown` id `213` — **Pages with only one internal link**: count `5`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-campus; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-japan; target=None; info=0.01
+- `unknown` id `4` — **Blocked from crawling**: count `3`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-campus; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-japan; target=None; info=0.01
+- `unknown` id `223` — **Content not optimized**: count `2`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-campus; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-japan; target=None; info=0.01
+- `unknown` id `103` — **Missing h1**: count `1`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-campus; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-japan; target=None; info=0.01
+- `unknown` id `135` — **Unminified JavaScript and CSS files**: count `1`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-campus; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-japan; target=None; info=0.01
+- `unknown` id `219` — **Llms.txt has formatting issues**: count `1`, prev `None`, diff `None`, delta `None`, checks `None`
+  - sample: source=https://lksneakers.com.br/; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-campus; target=None; info=0.01
+  - sample: source=https://lksneakers.com.br/collections/adidas-japan; target=None; info=0.01

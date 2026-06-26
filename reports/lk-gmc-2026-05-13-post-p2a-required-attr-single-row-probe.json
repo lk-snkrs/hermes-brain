@@ -1,0 +1,40 @@
+{
+  "count": 1,
+  "rows": [
+    {
+      "product_id": "online:pt:BR:SLBCS",
+      "required_attrs": [
+        "color"
+      ],
+      "title": "Boné Slyce Championship Verde",
+      "issues": [
+        {
+          "code": "missing_item_attribute_for_product_type",
+          "servability": "demoted",
+          "resolution": "merchant_action",
+          "attributeName": "color",
+          "destination": "Shopping",
+          "description": "Missing color",
+          "detail": "Add the color of your product so customers can easily find a specific product",
+          "documentation": "https://support.google.com/merchants/answer/12469640",
+          "applicableCountries": [
+            "BR"
+          ]
+        },
+        {
+          "code": "missing_item_attribute_for_product_type",
+          "servability": "demoted",
+          "resolution": "merchant_action",
+          "attributeName": "color",
+          "destination": "SurfacesAcrossGoogle",
+          "description": "Missing color",
+          "detail": "Add the color of your product so customers can easily find a specific product",
+          "documentation": "https://support.google.com/merchants/answer/12469640",
+          "applicableCountries": [
+            "BR"
+          ]
+        }
+      ]
+    }
+  ]
+}

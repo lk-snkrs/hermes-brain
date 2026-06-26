@@ -1,0 +1,749 @@
+{
+  "generated_at": "2026-05-14T17:30:11.062484+00:00",
+  "approval": "Lucas approved relaxed GTIN rule by Telegram voice: for GMC, GTIN does not need to match exact size; use a GTIN from another size when the product/model is the same because Google maps/metas the variant later.",
+  "status": "completed",
+  "summary": {
+    "gtin_issue_rows_seen": 44,
+    "planned_online_patches": 6,
+    "execution": {
+      "patched": 6
+    },
+    "verify": {
+      "mismatch": 6
+    },
+    "skipped_by_reason": {
+      "local_lia_not_patched_in_this_wave": 30,
+      "no_safe_style_sku": 8
+    }
+  },
+  "rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-gtin-relaxed-same-product-repair-rollback-20260514T172829Z.json",
+  "progress_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-gtin-relaxed-same-product-repair-progress-20260514T172829Z.jsonl",
+  "actions": [
+    {
+      "product_id": "online:pt:BR:IE0875-5",
+      "attrs": {
+        "gtins": [
+          "4067886856523"
+        ]
+      },
+      "evidence": {
+        "sku": "IE0875",
+        "kicks_selected": {
+          "identifier": "4067886856523",
+          "size": "7W",
+          "name": "adidas Samba OG Off White Violet Tone (Women's)",
+          "brand": "adidas",
+          "sku": "IE0875",
+          "overlap": 6,
+          "source": "stockx"
+        },
+        "current_gtin": "2275637272504"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:IH5459-3",
+      "attrs": {
+        "gtins": [
+          "4067888905977"
+        ]
+      },
+      "evidence": {
+        "sku": "IH5459",
+        "kicks_selected": {
+          "identifier": "4067888905977",
+          "size": "8W",
+          "name": "adidas Hamburg Bliss Pink (Women's)",
+          "brand": "adidas",
+          "sku": "IH5459",
+          "overlap": 4,
+          "source": "stockx"
+        },
+        "current_gtin": "2274015062409"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U574LGIL-8",
+      "attrs": {
+        "gtins": [
+          "197966842949"
+        ]
+      },
+      "evidence": {
+        "sku": "U574LGIL",
+        "kicks_selected": {
+          "identifier": "197966842949",
+          "size": "4",
+          "name": "New Balance 574 Legacy Stone Island Dark Green",
+          "brand": "New Balance",
+          "sku": "U574LGIL",
+          "overlap": 7,
+          "source": "stockx"
+        },
+        "current_gtin": "2000275061162"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060NRI-7",
+      "attrs": {
+        "gtins": [
+          "197375727417"
+        ]
+      },
+      "evidence": {
+        "sku": "U9060NRI",
+        "kicks_selected": {
+          "identifier": "197375727417",
+          "size": "4",
+          "name": "New Balance 9060 Triple Black Leather",
+          "brand": "New Balance",
+          "sku": "U9060NRI",
+          "overlap": 4,
+          "source": "stockx"
+        },
+        "current_gtin": "2000271351106"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060ZGE-4",
+      "attrs": {
+        "gtins": [
+          "197967973048"
+        ]
+      },
+      "evidence": {
+        "sku": "U9060ZGE",
+        "kicks_selected": {
+          "identifier": "197967973048",
+          "size": "4",
+          "name": "New Balance 9060 Black Cement",
+          "brand": "New Balance",
+          "sku": "U9060ZGE",
+          "overlap": 4,
+          "source": "stockx"
+        },
+        "current_gtin": "2114560032505"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:U9060ZGE-9",
+      "attrs": {
+        "gtins": [
+          "197967973048"
+        ]
+      },
+      "evidence": {
+        "sku": "U9060ZGE",
+        "kicks_selected": {
+          "identifier": "197967973048",
+          "size": "4",
+          "name": "New Balance 9060 Black Cement",
+          "brand": "New Balance",
+          "sku": "U9060ZGE",
+          "overlap": 4,
+          "source": "stockx"
+        },
+        "current_gtin": "2119228443006"
+      }
+    }
+  ],
+  "execution_results": [
+    {
+      "product_id": "online:pt:BR:IE0875-5",
+      "status": "patched",
+      "attrs": {
+        "gtins": [
+          "4067886856523"
+        ]
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IE0875-5"
+    },
+    {
+      "product_id": "online:pt:BR:IH5459-3",
+      "status": "patched",
+      "attrs": {
+        "gtins": [
+          "4067888905977"
+        ]
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~IH5459-3"
+    },
+    {
+      "product_id": "online:pt:BR:U574LGIL-8",
+      "status": "patched",
+      "attrs": {
+        "gtins": [
+          "197966842949"
+        ]
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U574LGIL-8"
+    },
+    {
+      "product_id": "online:pt:BR:U9060NRI-7",
+      "status": "patched",
+      "attrs": {
+        "gtins": [
+          "197375727417"
+        ]
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060NRI-7"
+    },
+    {
+      "product_id": "online:pt:BR:U9060ZGE-4",
+      "status": "patched",
+      "attrs": {
+        "gtins": [
+          "197967973048"
+        ]
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060ZGE-4"
+    },
+    {
+      "product_id": "online:pt:BR:U9060ZGE-9",
+      "status": "patched",
+      "attrs": {
+        "gtins": [
+          "197967973048"
+        ]
+      },
+      "response_name": "accounts/5297679409/productInputs/pt~BR~U9060ZGE-9"
+    }
+  ],
+  "verify_results": [
+    {
+      "product_id": "online:pt:BR:IE0875-5",
+      "expected_gtin": "4067886856523",
+      "actual_gtin": "2275637272504",
+      "verify": "mismatch"
+    },
+    {
+      "product_id": "online:pt:BR:IH5459-3",
+      "expected_gtin": "4067888905977",
+      "actual_gtin": "2274015062409",
+      "verify": "mismatch"
+    },
+    {
+      "product_id": "online:pt:BR:U574LGIL-8",
+      "expected_gtin": "197966842949",
+      "actual_gtin": "2000275061162",
+      "verify": "mismatch"
+    },
+    {
+      "product_id": "online:pt:BR:U9060NRI-7",
+      "expected_gtin": "197375727417",
+      "actual_gtin": "2000271351106",
+      "verify": "mismatch"
+    },
+    {
+      "product_id": "online:pt:BR:U9060ZGE-4",
+      "expected_gtin": "197967973048",
+      "actual_gtin": "2114560032505",
+      "verify": "mismatch"
+    },
+    {
+      "product_id": "online:pt:BR:U9060ZGE-9",
+      "expected_gtin": "197967973048",
+      "actual_gtin": "2119228443006",
+      "verify": "mismatch"
+    }
+  ],
+  "skipped": [
+    {
+      "product_id": "local:pt:BR:LIA_1203A655-100-7",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "1203A655-100",
+      "selected_gtin": "197298534666",
+      "evidence": {
+        "identifier": "197298534666",
+        "size": "6.5",
+        "name": "ASICS GT-2160 Above the Clouds White Pure Silver",
+        "brand": "ASICS",
+        "sku": "1203A655-100",
+        "overlap": 8,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_43774078386380",
+      "reason": "no_safe_style_sku",
+      "sku": "43774078386380"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_553558612-6",
+      "reason": "no_safe_style_sku",
+      "sku": "553558612-6"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_553558612-7",
+      "reason": "no_safe_style_sku",
+      "sku": "553558612-7"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_555088108-5",
+      "reason": "no_safe_style_sku",
+      "sku": "555088108-5"
+    },
+    {
+      "product_id": "local:pt:BR:LIA_AQ3692-004-3",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "AQ3692-004",
+      "selected_gtin": "1000005263508",
+      "evidence": {
+        "identifier": "1000005263508",
+        "size": "12",
+        "name": "Nike Air Force 1 Low G-Dragon Peaceminusone Para-Noise 3.0",
+        "brand": "Nike",
+        "sku": "AQ3692-004",
+        "overlap": 7,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_AQ3692-004-5",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "AQ3692-004",
+      "selected_gtin": "1000005263508",
+      "evidence": {
+        "identifier": "1000005263508",
+        "size": "12",
+        "name": "Nike Air Force 1 Low G-Dragon Peaceminusone Para-Noise 3.0",
+        "brand": "Nike",
+        "sku": "AQ3692-004",
+        "overlap": 7,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_CU9225100-4",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "CU9225-100",
+      "selected_gtin": "0194274091199",
+      "evidence": {
+        "identifier": "0194274091199",
+        "size": "6",
+        "name": "Nike Air Force 1 Low Supreme White",
+        "brand": "Nike",
+        "sku": "CU9225-100",
+        "overlap": 5,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_CZ0790-102-4",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "CZ0790-102",
+      "selected_gtin": "0197597025834",
+      "evidence": {
+        "identifier": "0197597025834",
+        "size": "9.5",
+        "name": "Jordan 1 Retro Low OG Mocha",
+        "brand": "Jordan",
+        "sku": "CZ0790-102",
+        "overlap": 3,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DD1503601-39",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "DD1503-601",
+      "selected_gtin": "0196149208343",
+      "evidence": {
+        "identifier": "0196149208343",
+        "size": "6.5W",
+        "name": "Nike Dunk Low Pink Oxford (Women's)",
+        "brand": "Nike",
+        "sku": "DD1503-601",
+        "overlap": 5,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DM7866200-6",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "DM7866-200",
+      "selected_gtin": "0197599883388",
+      "evidence": {
+        "identifier": "0197599883388",
+        "size": "11",
+        "name": "Jordan 1 Retro Low OG SP Travis Scott Medium Olive",
+        "brand": "Jordan",
+        "sku": "DM7866-200",
+        "overlap": 6,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_DM7866200-7",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "DM7866-200",
+      "selected_gtin": "0197599883388",
+      "evidence": {
+        "identifier": "0197599883388",
+        "size": "11",
+        "name": "Jordan 1 Retro Low OG SP Travis Scott Medium Olive",
+        "brand": "Jordan",
+        "sku": "DM7866-200",
+        "overlap": 6,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FB9927200-5",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "FB9927-200",
+      "selected_gtin": "0196969273491",
+      "evidence": {
+        "identifier": "0196969273491",
+        "size": "8.5",
+        "name": "Jordan 4 Retro SE Craft Medium Olive",
+        "brand": "Jordan",
+        "sku": "FB9927-200",
+        "overlap": 5,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN0344-001-5",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "FN0344-001",
+      "selected_gtin": "197594654549",
+      "evidence": {
+        "identifier": "197594654549",
+        "size": "11.5",
+        "name": "Jordan 3 Retro J Balvin Rio",
+        "brand": "Jordan",
+        "sku": "FN0344-001",
+        "overlap": 5,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN4193100-2",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "FN4193-100",
+      "selected_gtin": "0196969797140",
+      "evidence": {
+        "identifier": "0196969797140",
+        "size": "6.5",
+        "name": "Nike SB Dunk Low Crenshaw Skate Club",
+        "brand": "Nike",
+        "sku": "FN4193-100",
+        "overlap": 6,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-1",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "FN5880-001",
+      "selected_gtin": "1804202401028",
+      "evidence": {
+        "identifier": "1804202401028",
+        "size": "9.5",
+        "name": "Nike SB Dunk Low Premium City of Style",
+        "brand": "Nike",
+        "sku": "FN5880-001",
+        "overlap": 5,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-3",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "FN5880-001",
+      "selected_gtin": "1804202401028",
+      "evidence": {
+        "identifier": "1804202401028",
+        "size": "9.5",
+        "name": "Nike SB Dunk Low Premium City of Style",
+        "brand": "Nike",
+        "sku": "FN5880-001",
+        "overlap": 5,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-4",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "FN5880-001",
+      "selected_gtin": "196977847226",
+      "evidence": {
+        "identifier": "196977847226",
+        "size": "7",
+        "name": "Nike SB Dunk Low Premium City of Style",
+        "brand": "Nike",
+        "sku": "FN5880-001",
+        "overlap": 5,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FN5880-001-6",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "FN5880-001",
+      "selected_gtin": "1804202401028",
+      "evidence": {
+        "identifier": "1804202401028",
+        "size": "9.5",
+        "name": "Nike SB Dunk Low Premium City of Style",
+        "brand": "Nike",
+        "sku": "FN5880-001",
+        "overlap": 5,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FQ8138-001-6",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "FQ8138-001",
+      "selected_gtin": "0197599875604",
+      "evidence": {
+        "identifier": "0197599875604",
+        "size": "11",
+        "name": "Jordan 4 Retro White Thunder",
+        "brand": "Jordan",
+        "sku": "FQ8138-001",
+        "overlap": 5,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FV5926-200-2",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "FV5926-200",
+      "selected_gtin": "0197597477664",
+      "evidence": {
+        "identifier": "0197597477664",
+        "size": "13",
+        "name": "Nike SB Dunk Low Trocadéro Gardens",
+        "brand": "Nike",
+        "sku": "FV5926-200",
+        "overlap": 5,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_FZ3129-200-6",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "FZ3129-200",
+      "selected_gtin": "197593804945",
+      "evidence": {
+        "identifier": "197593804945",
+        "size": "15",
+        "name": "Nike SB Dunk Low Big Money Savings",
+        "brand": "Nike",
+        "sku": "FZ3129-200",
+        "overlap": 6,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF4334004-5",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "HF4334-004",
+      "selected_gtin": "197601364713",
+      "evidence": {
+        "identifier": "197601364713",
+        "size": "8.5",
+        "name": "Jordan 4 RM SP Nigel Sylvester Driveway Grey",
+        "brand": "Jordan",
+        "sku": "HF4334-004",
+        "overlap": 6,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF4334004-6",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "HF4334-004",
+      "selected_gtin": "197601364713",
+      "evidence": {
+        "identifier": "197601364713",
+        "size": "8.5",
+        "name": "Jordan 4 RM SP Nigel Sylvester Driveway Grey",
+        "brand": "Jordan",
+        "sku": "HF4334-004",
+        "overlap": 6,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF7743-001-5",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "HF7743-001",
+      "selected_gtin": "197599967118",
+      "evidence": {
+        "identifier": "197599967118",
+        "size": "11.5",
+        "name": "Nike SB Dunk Low There Skateboards",
+        "brand": "Nike",
+        "sku": "HF7743-001",
+        "overlap": 4,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HF7743-001-6",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "HF7743-001",
+      "selected_gtin": "197599967118",
+      "evidence": {
+        "identifier": "197599967118",
+        "size": "11.5",
+        "name": "Nike SB Dunk Low There Skateboards",
+        "brand": "Nike",
+        "sku": "HF7743-001",
+        "overlap": 4,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_HJ3386-300-8",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "HJ3386-300",
+      "selected_gtin": "1608202402036",
+      "evidence": {
+        "identifier": "1608202402036",
+        "size": "8.5",
+        "name": "Nike SB Dunk Low Alexis Sablone Chameleon",
+        "brand": "Nike",
+        "sku": "HJ3386-300",
+        "overlap": 6,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_IE0875-5",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "IE0875",
+      "selected_gtin": "4067886856523",
+      "evidence": {
+        "identifier": "4067886856523",
+        "size": "7W",
+        "name": "adidas Samba OG Off White Violet Tone (Women's)",
+        "brand": "adidas",
+        "sku": "IE0875",
+        "overlap": 6,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_IH5459-3",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "IH5459",
+      "selected_gtin": "4067888905977",
+      "evidence": {
+        "identifier": "4067888905977",
+        "size": "8W",
+        "name": "adidas Hamburg Bliss Pink (Women's)",
+        "brand": "adidas",
+        "sku": "IH5459",
+        "overlap": 4,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U574LGIL-8",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "U574LGIL",
+      "selected_gtin": "197966842949",
+      "evidence": {
+        "identifier": "197966842949",
+        "size": "4",
+        "name": "New Balance 574 Legacy Stone Island Dark Green",
+        "brand": "New Balance",
+        "sku": "U574LGIL",
+        "overlap": 7,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060NRI-7",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "U9060NRI",
+      "selected_gtin": "197375727417",
+      "evidence": {
+        "identifier": "197375727417",
+        "size": "4",
+        "name": "New Balance 9060 Triple Black Leather",
+        "brand": "New Balance",
+        "sku": "U9060NRI",
+        "overlap": 4,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060ZGE-4",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "U9060ZGE",
+      "selected_gtin": "197967973048",
+      "evidence": {
+        "identifier": "197967973048",
+        "size": "4",
+        "name": "New Balance 9060 Black Cement",
+        "brand": "New Balance",
+        "sku": "U9060ZGE",
+        "overlap": 4,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_U9060ZGE-9",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "U9060ZGE",
+      "selected_gtin": "197967973048",
+      "evidence": {
+        "identifier": "197967973048",
+        "size": "4",
+        "name": "New Balance 9060 Black Cement",
+        "brand": "New Balance",
+        "sku": "U9060ZGE",
+        "overlap": 4,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "local:pt:BR:LIA_cz0790-101-6",
+      "reason": "local_lia_not_patched_in_this_wave",
+      "sku": "CZ0790-101",
+      "selected_gtin": "0196608220794",
+      "evidence": {
+        "identifier": "0196608220794",
+        "size": "4",
+        "name": "Jordan 1 Retro Low OG Atmosphere Grey",
+        "brand": "Jordan",
+        "sku": "CZ0790-101",
+        "overlap": 5,
+        "source": "stockx"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:43774078386380",
+      "reason": "no_safe_style_sku",
+      "sku": "43774078386380"
+    },
+    {
+      "product_id": "online:pt:BR:553558612-6",
+      "reason": "no_safe_style_sku",
+      "sku": "553558612-6"
+    },
+    {
+      "product_id": "online:pt:BR:553558612-7",
+      "reason": "no_safe_style_sku",
+      "sku": "553558612-7"
+    },
+    {
+      "product_id": "online:pt:BR:555088108-5",
+      "reason": "no_safe_style_sku",
+      "sku": "555088108-5"
+    }
+  ],
+  "not_performed": [
+    "local/LIA GTIN patch (avoided POS/local inventory data-source overlay)",
+    "Shopify write",
+    "Tiny write",
+    "feed fetch/upload",
+    "campaign/message/send",
+    "price/title/image/availability changes"
+  ]
+}

@@ -1,0 +1,2049 @@
+{
+  "generated_at": "2026-05-13T16:26:25.700904+00:00",
+  "status": "readonly_preview_no_writes",
+  "scope": "GMC P2 SEO/category preview after P1 required attributes reached zero",
+  "source_labels": [
+    "fact_merchant_center",
+    "derived_reconciliation"
+  ],
+  "summary": {
+    "products_online": 11668,
+    "productstatuses": 23245,
+    "item_level_issue_counts": {
+      "price_updated": 1011,
+      "strikethrough_price_updated": 489,
+      "restricted_gtin": 102,
+      "landing_page_error": 63,
+      "image_single_color": 8,
+      "image_link_broken": 8,
+      "reserved_gtin": 6,
+      "condition_updated_from_detected": 4,
+      "restricted_nfs_policy_violation": 4,
+      "coupon_gtin": 3,
+      "multiple_sizes": 2,
+      "pause_expired": 2,
+      "image_too_small_for_high_resolution": 2,
+      "sexual_interests_policy_violation": 1
+    },
+    "item_level_attribute_counts": {
+      "price": 1500,
+      "gtin": 111,
+      "link": 63,
+      "additional image link": 12,
+      "image link": 6,
+      "condition": 4,
+      "size": 2,
+      "pause": 2
+    },
+    "decision_state_counts": {
+      "candidate_p2c_title_enhancement_review": 11328,
+      "candidate_p2a_category_product_type": 2425,
+      "blocked_category_needs_review": 283,
+      "no_p2_action_detected": 185,
+      "candidate_p2b_critical_title_repair": 35
+    },
+    "category_candidates": 2425,
+    "critical_title_repair_candidates": 35,
+    "title_enhancement_review_candidates": 11328,
+    "no_p2_action_detected": 185,
+    "category_suggestion_counts": {
+      "('Apparel & Accessories > Shoes', 'Calçados')": 1517,
+      "('Apparel & Accessories > Clothing > Shirts & Tops', 'Vestuário > Tops/Camisetas')": 440,
+      "('Apparel & Accessories > Clothing > Shorts', 'Vestuário > Shorts')": 192,
+      "('Apparel & Accessories > Clothing > Outerwear', 'Vestuário > Moletons/Hoodies')": 126,
+      "('Apparel & Accessories > Clothing > Outerwear', 'Vestuário > Jaquetas/Casacos')": 53,
+      "('Apparel & Accessories > Clothing Accessories', 'Acessórios')": 52,
+      "('Apparel & Accessories > Clothing Accessories > Hats', 'Acessórios > Bonés')": 31,
+      "('Apparel & Accessories > Clothing > Pants', 'Vestuário > Calças')": 10,
+      "('Luggage & Bags > Handbags, Wallets & Cases', 'Acessórios > Bolsas')": 4
+    },
+    "title_reason_counts": {
+      "duplicate_title_group_11": 2211,
+      "duplicate_title_group_7": 1127,
+      "duplicate_title_group_6": 942,
+      "duplicate_title_group_10": 910,
+      "duplicate_title_group_9": 909,
+      "duplicate_title_group_8": 856,
+      "duplicate_title_group_5": 825,
+      "short_title_under_35_chars": 720,
+      "duplicate_title_group_12": 648,
+      "duplicate_title_group_13": 507,
+      "duplicate_title_group_4": 440,
+      "brand_missing_from_title": 267,
+      "duplicate_title_group_3": 246,
+      "duplicate_title_group_16": 224,
+      "duplicate_title_group_15": 195,
+      "duplicate_title_group_2": 194,
+      "duplicate_title_group_14": 168,
+      "duplicate_title_group_75": 150,
+      "duplicate_title_group_50": 100,
+      "duplicate_title_group_20": 80,
+      "duplicate_title_group_40": 80,
+      "duplicate_title_group_72": 72,
+      "duplicate_title_group_35": 70,
+      "duplicate_title_group_65": 65,
+      "duplicate_title_group_60": 60,
+      "duplicate_title_group_30": 60,
+      "duplicate_title_group_55": 55,
+      "duplicate_title_group_36": 36,
+      "critical_generic_or_size_only_title": 35,
+      "duplicate_title_group_25": 25,
+      "duplicate_title_group_24": 24,
+      "duplicate_title_group_22": 22,
+      "duplicate_title_group_19": 19
+    }
+  },
+  "sample_issue_rows": [
+    {
+      "product_id": "online:pt:BR:DV0426-012-2",
+      "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:DV0426-012-2",
+      "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:DV0426-012-2",
+      "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:DV0426-012-2",
+      "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+      "code": "strikethrough_price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:DV0426-012-2",
+      "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+      "code": "strikethrough_price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:DV0426-012-2",
+      "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+      "code": "strikethrough_price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-002-36",
+      "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-002-36",
+      "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:HV8547-002-36",
+      "title": "Tênis Nike Moon Shoe SP Jacquemus Off White",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-10",
+      "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-10",
+      "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:U9060CCB-10",
+      "title": "Tênis New Balance 9060 Bisque Sea Salt Bege",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:43774078387780",
+      "title": "Tênis Adidas Samba Jane Cream Black Gum Bege",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:43774078387780",
+      "title": "Tênis Adidas Samba Jane Cream Black Gum Bege",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:43774078387780",
+      "title": "Tênis Adidas Samba Jane Cream Black Gum Bege",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:43774078387780",
+      "title": "Tênis Adidas Samba Jane Cream Black Gum Bege",
+      "code": "strikethrough_price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:43774078387780",
+      "title": "Tênis Adidas Samba Jane Cream Black Gum Bege",
+      "code": "strikethrough_price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:43774078387780",
+      "title": "Tênis Adidas Samba Jane Cream Black Gum Bege",
+      "code": "strikethrough_price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:FN4193100-8",
+      "title": "Tênis Crenshaw Skate Club x Nike SB Dunk Low Multicolor",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:FN4193100-8",
+      "title": "Tênis Crenshaw Skate Club x Nike SB Dunk Low Multicolor",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:FN4193100-8",
+      "title": "Tênis Crenshaw Skate Club x Nike SB Dunk Low Multicolor",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:FN4193100-8",
+      "title": "Tênis Crenshaw Skate Club x Nike SB Dunk Low Multicolor",
+      "code": "strikethrough_price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:FN4193100-8",
+      "title": "Tênis Crenshaw Skate Club x Nike SB Dunk Low Multicolor",
+      "code": "strikethrough_price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:FN4193100-8",
+      "title": "Tênis Crenshaw Skate Club x Nike SB Dunk Low Multicolor",
+      "code": "strikethrough_price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    },
+    {
+      "product_id": "online:pt:BR:43774078387710",
+      "title": "Tênis Adidas Samba Jane White Blue Gum Branco",
+      "code": "price_updated",
+      "attribute": "price",
+      "servability": "unaffected"
+    }
+  ],
+  "samples": {
+    "category_candidates": [
+      {
+        "product_id": "online:pt:BR:JI3185-7",
+        "offer_id": "JI3185-7",
+        "title": "Tênis Adidas Samba OG Cream White Cardboard Creme",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-adidas-samba-og-cream-white-cardboard-creme?variant=46494929453278",
+        "price": {
+          "value": "2199.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_9"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:13632296688851150214",
+        "offer_id": "13632296688851150214",
+        "title": "Pop Mart Labubu The Monsters Have a Seat HEHE Vinyl Plush Pingente",
+        "brand": "Labubu",
+        "link": "https://lksneakers.com.br/products/pop-mart-labubu-the-monsters-have-a-seat-sisi-vinyl-plush-pingente-copia-1067681459",
+        "price": {
+          "value": "594.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing Accessories",
+        "suggested_productType": "Acessórios",
+        "category_evidence": "title accessory token",
+        "title_reasons": [],
+        "decision_states": [
+          "candidate_p2a_category_product_type"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:HV0823-100-5",
+        "offer_id": "HV0823-100-5",
+        "title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-air-jordan-4-retro-forget-me-not-azul?variant=46676035797214",
+        "price": {
+          "value": "2499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_9"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:BQ6472104-1",
+        "offer_id": "BQ6472104-1",
+        "title": "Tênis Nike Air Jordan 1 Mid Kentucky Blue Azul",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/air-jordan-1-mid-kentucky-blue?variant=47739925856478",
+        "price": {
+          "value": "1499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_5"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "offer_id": "FV5029-010-43",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-nike-air-jordan-4-retro-black-cat-preto?variant=47935086166238",
+        "price": {
+          "value": "3999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_8"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:43774078391040",
+        "offer_id": "43774078391040",
+        "title": "Camiseta Skims Manga Longa Cotton Jersey Light Heather Grey Cinza",
+        "brand": "Skims",
+        "link": "https://lksneakers.com.br/products/camiseta-skims-manga-longa-cotton-jersey-light-heather-grey-cinza?currency=BRL&country=BR&variant=47473369317598&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "799.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Roupas > Camisetas e tops",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+        "suggested_productType": "Vestuário > Tops/Camisetas",
+        "category_evidence": "title apparel top token",
+        "title_reasons": [
+          "duplicate_title_group_8"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:43774078391770",
+        "offer_id": "43774078391770",
+        "title": "Polo Skims Baby Tee Worn in Jersey Snow Branco",
+        "brand": "Skims",
+        "link": "https://lksneakers.com.br/products/polo-skims-baby-tee-worn-in-jersey-snow-branco?currency=BRL&country=BR&variant=47473570414814&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "799.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Roupas > Camisetas e tops",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+        "suggested_productType": "Vestuário > Tops/Camisetas",
+        "category_evidence": "title apparel top token",
+        "title_reasons": [
+          "duplicate_title_group_8"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:HV0823-100-6",
+        "offer_id": "HV0823-100-6",
+        "title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-air-jordan-4-retro-forget-me-not-azul?variant=46676035829982",
+        "price": {
+          "value": "2499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_9"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:LAB04",
+        "offer_id": "LAB04",
+        "title": "Pop Mart Labubu The Monsters Tasty Macarons Sea Salt Cocount Vinyl Plush Pingente",
+        "brand": "Labubu",
+        "link": "https://lksneakers.com.br/products/pop-mart-labubu-the-monsters-tasty-macarons-sea-salt-cocount-vinyl-plush-pingente?currency=BRL&country=BR&variant=46997412348126&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "849.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Brinquedos e jogos > Brinquedos > Bonecas, conjuntos e personagens > Bonecos de personagem",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing Accessories",
+        "suggested_productType": "Acessórios",
+        "category_evidence": "title accessory token",
+        "title_reasons": [],
+        "decision_states": [
+          "candidate_p2a_category_product_type"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:1183C428.200-10",
+        "offer_id": "1183C428.200-10",
+        "title": "Tênis Onitsuka Tiger California 78 EX Putty/Green Bege",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-onitsuka-tiger-california-78-ex-putty-green-bege?variant=46833866178782",
+        "price": {
+          "value": "2799.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_10"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:UGTR83J-42",
+        "offer_id": "UGTR83J-42",
+        "title": "Tênis New Balance Gator Run Star Burst Bege",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-new-balance-gator-run-star-burst-bege?variant=47948162138334",
+        "price": {
+          "value": "2399.00",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_11"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:KAWS005",
+        "offer_id": "KAWS005",
+        "title": "KAWS Small Lie Companion Vinyl Figure Brown Toy Art Marrom",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/kaws-small-lie-companion-vinyl-figure-brown-toy-art-marrom?variant=47163074347230",
+        "price": {
+          "value": "5599.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing Accessories",
+        "suggested_productType": "Acessórios",
+        "category_evidence": "title accessory token",
+        "title_reasons": [],
+        "decision_states": [
+          "candidate_p2a_category_product_type"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:11680498-21",
+        "offer_id": "11680498-21",
+        "title": "Moletom Lululemon Brushed Softstreme Half Zip",
+        "brand": "Lululemon",
+        "link": "https://lksneakers.com.br/products/moletom-lululemon-brushed-softstreme-half-zip?currency=BRL&country=BR&variant=46992322330846&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "1499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Roupas > Roupas esportivas",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+        "suggested_productType": "Vestuário > Moletons/Hoodies",
+        "category_evidence": "title hoodie/crewneck token",
+        "title_reasons": [
+          "duplicate_title_group_25"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:u9060aga-8",
+        "offer_id": "u9060aga-8",
+        "title": "Tênis New Balance 9060 Grey Day 2025 Cinza",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-new-balance-9060-grey-day-2025-esportivo-casual?variant=47046882918622",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_10"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:A15FW740-1",
+        "offer_id": "A15FW740-1",
+        "title": "Tênis Maison Mihara Yasuhiro \"Keith\" OG Sole Canvas Low-top Black Preto",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-maison-mihara-yasuhiro-keith-og-sole-canvas-low-top-black-preto?variant=47577459491038",
+        "price": {
+          "value": "3499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+        "suggested_productType": "Vestuário > Tops/Camisetas",
+        "category_evidence": "title apparel top token",
+        "title_reasons": [
+          "duplicate_title_group_11"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:1183C141-100-4",
+        "offer_id": "1183C141-100-4",
+        "title": "Tênis Onitsuka Tiger Mexico 66 Slip-On White Branco",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-slip-on-white-branco?variant=46478597292254",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_7"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:DZ4137116",
+        "offer_id": "DZ4137116",
+        "title": "Tênis Nike Travis Scott x Nike Air Jordan 1 Retro Low OG SP Olive Branco",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-travis-scott-x-nike-air-jordan-1-retro-low-og-sp-olive-suede?variant=47447158915294",
+        "price": {
+          "value": "14999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_12"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:U204L6A6-34",
+        "offer_id": "U204L6A6-34",
+        "title": "Tênis New Balance 204L Reflection Bege",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-new-balance-204l-reflection-bege?variant=47960773689566",
+        "price": {
+          "value": "2799.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_11"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:U204L2SZ-36",
+        "offer_id": "U204L2SZ-36",
+        "title": "Tênis New Balance 204L Sea Salt Linen Bege",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-new-balance-204l-sea-salt-linen-bege?variant=47960772903134",
+        "price": {
+          "value": "2799.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_11"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:JI0073-3",
+        "offer_id": "JI0073-3",
+        "title": "Tênis Adidas Gazelle R Disney Pixar Toy Story Laranja",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-adidas-gazelle-r-disney-pixar-toy-story-laranja?variant=46647060267230",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_6"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:8351150-52",
+        "offer_id": "8351150-52",
+        "title": "Short Lululemon Align High-Rise 6\"",
+        "brand": "Lululemon",
+        "link": "https://lksneakers.com.br/products/short-lululemon-align%E2%84%A2-high-rise-6?currency=BRL&country=BR&variant=46987678417118&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "899.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Roupas > Roupas esportivas",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shorts",
+        "suggested_productType": "Vestuário > Shorts",
+        "category_evidence": "title shorts token",
+        "title_reasons": [
+          "short_title_under_35_chars",
+          "duplicate_title_group_75"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:11750687-3",
+        "offer_id": "11750687-3",
+        "title": "Pullover Lululemon Heavyweight Fleece Tennis Club",
+        "brand": "Lululemon",
+        "link": "https://lksneakers.com.br/products/pullover-lululemon-heavyweight-fleece-tennis-club?currency=BRL&country=BR&variant=46992464576734&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "1799.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Roupas > Camisetas e tops",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+        "suggested_productType": "Vestuário > Moletons/Hoodies",
+        "category_evidence": "title hoodie/crewneck token",
+        "title_reasons": [
+          "duplicate_title_group_15"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:HM5973-603-11",
+        "offer_id": "HM5973-603-11",
+        "title": "Tênis Nike Vomero Premium Hyper Pink Rosa",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-nike-vomero-premium-hyper-pink-rosa?variant=47675511767262",
+        "price": {
+          "value": "4499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_11"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:JR5763",
+        "offer_id": "JR5763",
+        "title": "Tênis Adidas Taekwondo Mei Ballet Clear Sky Gum Azul",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-wmns-taekwondo-mei-ballet-adidas-camurca-slip-on-azul?variant=47116925534430",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_9"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:1183C480-001-10",
+        "offer_id": "1183C480-001-10",
+        "title": "Tênis Onitsuka Tiger Mexico 66 Glitter Pack Black Gunmetal Preto",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-glitter-pack-black-gunmetal-preto?variant=47755021746398",
+        "price": {
+          "value": "2499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_12"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      }
+    ],
+    "critical_title_repair": [
+      {
+        "product_id": "online:pt:BR:5706324928133224313",
+        "offer_id": "5706324928133224313",
+        "title": "39",
+        "brand": "New Balance",
+        "link": "https://lksneakers.com.br/products/tenis-new-balance-204l-x-atmos-cow-girl-brown-marrom",
+        "price": {
+          "value": "2799.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_2"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:6036386056472256840",
+        "offer_id": "6036386056472256840",
+        "title": "37",
+        "brand": "Nike",
+        "link": "https://lksneakers.com.br/products/tenis-nike-shox-tl-black-cave-stone-preto",
+        "price": {
+          "value": "2999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_4"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:3048242206072553507",
+        "offer_id": "3048242206072553507",
+        "title": "42",
+        "brand": "ASICS",
+        "link": "https://lksneakers.com.br/products/tenis-asics-gel-1130-white-black-silver-prata",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_3"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:6234067398750979457",
+        "offer_id": "6234067398750979457",
+        "title": "34",
+        "brand": "Nike",
+        "link": "https://lksneakers.com.br/products/tenis-nike-air-force-1-low-protro-kobe-bryant-siempre-hermanos-marrom",
+        "price": {
+          "value": "1799.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_6"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:11810372920072143991",
+        "offer_id": "11810372920072143991",
+        "title": "40",
+        "brand": "Saint Studio",
+        "link": "https://lksneakers.com.br/collections/roupas/products/calca-saint-studio-wide-alfaiataria-preto",
+        "price": {
+          "value": "499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [
+          "Vestuário e acessórios"
+        ],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_3"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:16599698222138562820",
+        "offer_id": "16599698222138562820",
+        "title": "34",
+        "brand": "Jordan",
+        "link": "https://lksneakers.com.br/products/tenis-jordan-4-retro-toro-bravo-2026-vermelho-1",
+        "price": {
+          "value": "3499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_6"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:1863698749035586532",
+        "offer_id": "1863698749035586532",
+        "title": "44",
+        "brand": "ASICS",
+        "link": "https://lksneakers.com.br/products/tenis-asics-gel-1130-black-pure-silver-prata",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:4531110532523186885",
+        "offer_id": "4531110532523186885",
+        "title": "39",
+        "brand": "Air Jordan",
+        "link": "https://lksneakers.com.br/products/tenis-nike-air-jordan-1-low-se-repaired-denim-swoosh-azul",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_2"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:2198938218729451562",
+        "offer_id": "2198938218729451562",
+        "title": "37",
+        "brand": "Nike",
+        "link": "https://lksneakers.com.br/products/tenis-nike-shox-tl-velvet-brown-denim-turquoise-marrom",
+        "price": {
+          "value": "2999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_4"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:14252480804615463970",
+        "offer_id": "14252480804615463970",
+        "title": "41",
+        "brand": "Timberland",
+        "link": "https://lksneakers.com.br/products/bota-timberland-6-premium-waterproof-boot-supreme-wheat-bege",
+        "price": {
+          "value": "5999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:15031239196158973196",
+        "offer_id": "15031239196158973196",
+        "title": "45",
+        "brand": "Nike",
+        "link": "https://lksneakers.com.br/products/nike-air-force-1-07-white",
+        "price": {
+          "value": "1399.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:4086849490768644696",
+        "offer_id": "4086849490768644696",
+        "title": "34",
+        "brand": "Nike",
+        "link": "https://lksneakers.com.br/products/tenis-nike-mind-002-grey-football-grey-cinza",
+        "price": {
+          "value": "3199.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_6"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:12475328072847087695",
+        "offer_id": "12475328072847087695",
+        "title": "42",
+        "brand": "Timberland",
+        "link": "https://lksneakers.com.br/products/bota-timberland-6-premium-waterproof-boot-supreme-black-preto",
+        "price": {
+          "value": "4999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_3"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:5627606835540697766",
+        "offer_id": "5627606835540697766",
+        "title": "M/m",
+        "brand": "Aimé Leon Dore",
+        "link": "https://lksneakers.com.br/products/camiseta-aime-leon-dore-ald-golf-swing-coconut-milk-off-white",
+        "price": {
+          "value": "1299.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_3"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:2669418431140851356",
+        "offer_id": "2669418431140851356",
+        "title": "Natural",
+        "brand": "Aimé Leon Dore",
+        "link": "https://lksneakers.com.br/products/bolsa-aime-leon-dore-porsche-canvas-tote-bag",
+        "price": {
+          "value": "2299.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "brand_missing_from_title",
+          "short_title_under_35_chars"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:4467332493483768941",
+        "offer_id": "4467332493483768941",
+        "title": "36",
+        "brand": "Nike",
+        "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-pro-bluetile-skateboards-azul",
+        "price": {
+          "value": "3299.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_2"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:16606924615096196772",
+        "offer_id": "16606924615096196772",
+        "title": "G/l",
+        "brand": "Aimé Leon Dore",
+        "link": "https://lksneakers.com.br/products/moletom-aime-leon-dore-market-hoodie-pine-groove-verde",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:15047612723779191692",
+        "offer_id": "15047612723779191692",
+        "title": "37",
+        "brand": "Jordan",
+        "link": "https://lksneakers.com.br/products/tenis-jordan-5-retro-white-metallic-2026-metalizado",
+        "price": {
+          "value": "2999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_4"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:8419194273885247483",
+        "offer_id": "8419194273885247483",
+        "title": "34",
+        "brand": "ASICS",
+        "link": "https://lksneakers.com.br/products/tenis-asics-gel-1130-white-black-silver-prata-1",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_6"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:15690098651674929383",
+        "offer_id": "15690098651674929383",
+        "title": "M/m",
+        "brand": "Nude Project",
+        "link": "https://lksneakers.com.br/products/camiseta-nude-project-berry-tee-white-branco",
+        "price": {
+          "value": "999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_3"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:16552051163064136080",
+        "offer_id": "16552051163064136080",
+        "title": "43",
+        "brand": "ASICS",
+        "link": "https://lksneakers.com.br/products/tenis-asics-gel-1130-white-pure-silver-prata",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_3"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:5390248129051651686",
+        "offer_id": "5390248129051651686",
+        "title": "34",
+        "brand": "ASICS",
+        "link": "https://lksneakers.com.br/products/tenis-asics-gel-1130-white-clay-canyon-branco",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_6"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:12053538457178343768",
+        "offer_id": "12053538457178343768",
+        "title": "40",
+        "brand": "ON",
+        "link": "https://lksneakers.com.br/products/tenis-on-running-x-kith-on-k-tech-2-spirulina-barley-verde",
+        "price": {
+          "value": "8499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_3"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:5328214585182033036",
+        "offer_id": "5328214585182033036",
+        "title": "35",
+        "brand": "Nike",
+        "link": "https://lksneakers.com.br/products/tenis-nike-kobe-5-protro-lower-merion-aces-away-prata",
+        "price": {
+          "value": "2599.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_2"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:15014470994320532817",
+        "offer_id": "15014470994320532817",
+        "title": "36",
+        "brand": "New Balance",
+        "link": "https://lksneakers.com.br/products/tenis-new-balance-204l-slate-grey-raincloud-cinza",
+        "price": {
+          "value": "2799.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "critical_generic_or_size_only_title",
+          "duplicate_title_group_2"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2b_critical_title_repair"
+        ]
+      }
+    ],
+    "title_enhancement_review": [
+      {
+        "product_id": "online:pt:BR:FD0860001-5",
+        "offer_id": "FD0860001-5",
+        "title": "Tênis Jarritos x Nike SB Dunk Low Branco/Verde",
+        "brand": "Nike",
+        "link": "https://lksneakers.com.br/products/jarritos-x-nike-sb-dunk-low?currency=BRL&country=BR&variant=44591804285150&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "4999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_8"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:JI3185-7",
+        "offer_id": "JI3185-7",
+        "title": "Tênis Adidas Samba OG Cream White Cardboard Creme",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-adidas-samba-og-cream-white-cardboard-creme?variant=46494929453278",
+        "price": {
+          "value": "2199.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_9"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:CLC-1470558-S",
+        "offer_id": "CLC-1470558-S",
+        "title": "Moletom Cold Culture Curved Pink Rosa",
+        "brand": "Cold Culture",
+        "link": "https://lksneakers.com.br/products/moletom-cold-culture-curved-pink-rosa?currency=BRL&country=BR&variant=47623949418718&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "1599.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Moletom"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+        "suggested_productType": "Vestuário > Moletons/Hoodies",
+        "category_evidence": "title hoodie/crewneck token",
+        "title_reasons": [
+          "duplicate_title_group_6"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:w5766r-1",
+        "offer_id": "w5766r-1",
+        "title": "Calça Legging Alo Yoga 7/8 High-Waist Airlift",
+        "brand": "Alo Yoga",
+        "link": "https://lksneakers.com.br/products/calca-legging-alo-yoga-7-8-high-waist-airlift?currency=BRL&country=BR&variant=46459775811806&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "1599.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Calça"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Pants",
+        "suggested_productType": "Vestuário > Calças",
+        "category_evidence": "title pants token",
+        "title_reasons": [
+          "duplicate_title_group_15"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:FOG19-1",
+        "offer_id": "FOG19-1",
+        "title": "Camiseta Fear Of God Essentials Classic Short Sleeve Bright White Branco",
+        "brand": "Essentials",
+        "link": "https://lksneakers.com.br/products/camiseta-fear-of-god-essentials-classic-short-sleeve-bright-white-branco?currency=BRL&country=BR&variant=47620548886750&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "1199.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Camiseta"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+        "suggested_productType": "Vestuário > Tops/Camisetas",
+        "category_evidence": "title apparel top token",
+        "title_reasons": [
+          "duplicate_title_group_5"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:JR8772-4",
+        "offer_id": "JR8772-4",
+        "title": "Tênis Adidas SL 72 RS Aurora Ivy Off White Verde",
+        "brand": "Adidas",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-sl-72-rs-aurora-ivy-off-white-verde?currency=BRL&country=BR&variant=47162097074398&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_11"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:BQ6817303-46",
+        "offer_id": "BQ6817303-46",
+        "title": "Tênis Nike SB Dunk Low Pro St. Patrick's Day Verde",
+        "brand": "Nike",
+        "link": "https://lksneakers.com.br/products/nike-sb-dunk-low-pro-st-patricks-day?currency=BRL&country=BR&variant=44265056567518&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "2999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_19"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:DV0426-012-2",
+        "offer_id": "DV0426-012-2",
+        "title": "Tênis Nike Air Jordan 1 Low SE 'Light Steel Grey' Cinza",
+        "brand": "Jordan",
+        "link": "https://lksneakers.com.br/products/wmns-air-jordan-1-low-se-light-steel-grey?currency=BRL&country=BR&variant=44703695798494&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "1899.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_13"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:JI2714-5",
+        "offer_id": "JI2714-5",
+        "title": "Tênis adidas Gazelle Indoor Dark Brown Glow Pink Court Green Marrom",
+        "brand": "Adidas",
+        "link": "https://lksneakers.com.br/products/tenis-adidas-gazelle-indoor-dark-brown-glow-pink-court-green-marrom?currency=BRL&country=BR&variant=46193616978142&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "1699.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_6"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:ALO-7326814-XS",
+        "offer_id": "ALO-7326814-XS",
+        "title": "Moletom Alo Yoga Cropped Serenity Coverup Athletic Heather Grey Cinza",
+        "brand": "Alo Yoga",
+        "link": "https://lksneakers.com.br/products/moletom-alo-yoga-cropped-serenity-coverup-athletic-heather-grey-cinza?currency=BRL&country=BR&variant=47706483228894&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "1799.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Moletom"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Outerwear",
+        "suggested_productType": "Vestuário > Moletons/Hoodies",
+        "category_evidence": "title hoodie/crewneck token",
+        "title_reasons": [
+          "duplicate_title_group_4"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:1183B566020-4",
+        "offer_id": "1183B566020-4",
+        "title": "Tênis Onitsuka Tiger Mexico 66 Pure Silver Black Cinza",
+        "brand": "Onitsuka Tiger",
+        "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-pure-silver-black-cinza?currency=BRL&country=BR&variant=45993790963934&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_9"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:MASP5-5",
+        "offer_id": "MASP5-5",
+        "title": "Camiseta MASP x Leonilson \"O Grande Rio\" Branco",
+        "brand": "MASP x Leonilson",
+        "link": "https://lksneakers.com.br/products/camiseta-masp-x-leonilson-o-grande-rio-branco?currency=BRL&country=BR&variant=46321576476894&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "219.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Camiseta"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Clothing > Shirts & Tops",
+        "suggested_productType": "Vestuário > Tops/Camisetas",
+        "category_evidence": "title apparel top token",
+        "title_reasons": [
+          "duplicate_title_group_5"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:FD9923111-4",
+        "offer_id": "FD9923111-4",
+        "title": "Tênis Nike Dunk Low Multi-Color Colorido",
+        "brand": "Nike",
+        "link": "https://lksneakers.com.br/products/nike-dunk-low-multi-color?currency=BRL&country=BR&variant=44265076359390&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "2199.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_9"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:u1906lbn3",
+        "offer_id": "u1906lbn3",
+        "title": "Tênis New Balance 1906L Preto Couro Mesh Preto",
+        "brand": "New Balance",
+        "link": "https://lksneakers.com.br/products/tenis-new-balance-1906l-preto-couro-mesh-casual?currency=BRL&country=BR&variant=47124611563742&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "2499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_10"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:HV0823-100-5",
+        "offer_id": "HV0823-100-5",
+        "title": "Tênis Nike Air Jordan 4 Retro Forget Me Not Azul",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-air-jordan-4-retro-forget-me-not-azul?variant=46676035797214",
+        "price": {
+          "value": "2499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_9"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:1183C468301-9",
+        "offer_id": "1183C468301-9",
+        "title": "Onitsuka Tiger Mexico 66 SD Metallic Series Jade Cream Verde",
+        "brand": "Onitsuka Tiger",
+        "link": "https://lksneakers.com.br/products/onitsuka-tiger-mexico-66-sd-metallic-series-jade-cream-verde?currency=BRL&country=BR&variant=46343969538270&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "2499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "duplicate_title_group_9"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:BQ6472104-1",
+        "offer_id": "BQ6472104-1",
+        "title": "Tênis Nike Air Jordan 1 Mid Kentucky Blue Azul",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/air-jordan-1-mid-kentucky-blue?variant=47739925856478",
+        "price": {
+          "value": "1499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_5"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:DH4401101-40",
+        "offer_id": "DH4401101-40",
+        "title": "Tênis Nike Dunk Low Blue Paisley Azul",
+        "brand": "Nike",
+        "link": "https://lksneakers.com.br/products/nike-dunk-low-blue-paisley?currency=BRL&country=BR&variant=45065961668830&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "1999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_6"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:DO9395400-10",
+        "offer_id": "DO9395400-10",
+        "title": "Tênis Nike SB Dunk Low LA Dodgers Azul",
+        "brand": "Nike",
+        "link": "https://lksneakers.com.br/products/nike-sb-dunk-low-la-dodgers?currency=BRL&country=BR&variant=44265059123422&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "3999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_13"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:FV5029-010-43",
+        "offer_id": "FV5029-010-43",
+        "title": "Tênis Nike Air Jordan 4 Retro 'Black Cat' Preto",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/tenis-nike-air-jordan-4-retro-black-cat-preto?variant=47935086166238",
+        "price": {
+          "value": "3999.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_8"
+        ],
+        "decision_states": [
+          "candidate_p2a_category_product_type",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:1182A678.750-7",
+        "offer_id": "1182A678.750-7",
+        "title": "Tênis Onitsuka Tiger Mexico 66 TGRS Yellow/Black Amarelo",
+        "brand": "Onitsuka Tiger",
+        "link": "https://lksneakers.com.br/products/tenis-onitsuka-tiger-mexico-66-tgrs-yellow-black-amarelo?currency=BRL&country=BR&variant=47783906148574&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "2599.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_11"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:HF6061-400-4",
+        "offer_id": "HF6061-400-4",
+        "title": "Tênis Nike Sb Dunk Low x Futura Skateboard Bleached Aqua Azul",
+        "brand": "Nike",
+        "link": "https://lksneakers.com.br/products/tenis-nike-sb-dunk-low-x-futura-skateboard-bleached-aqua-azul?currency=BRL&country=BR&variant=45389635944670&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "5999.90",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_12"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:w4535r-1",
+        "offer_id": "w4535r-1",
+        "title": "Blusa Alo Yoga Sherpa Edge Bomber Ivory Bege",
+        "brand": "Alo Yoga",
+        "link": "https://lksneakers.com.br/products/blusa-alo-yoga-sherpa-edge-bomber-ivory-bege?currency=BRL&country=BR&variant=47539863584990&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "2399.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "duplicate_title_group_5"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:1183C468200-2",
+        "offer_id": "1183C468200-2",
+        "title": "Onitsuka Tiger Mexico 66 SD Metallic Series Desert Camp Cream Dourado",
+        "brand": "",
+        "link": "https://www.lksneakers.com.br/products/onitsuka-tiger-mexico-66-sd-metallic-series-desert-camp-cream-dourado?variant=46343971274974",
+        "price": {
+          "value": "2499.99",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "",
+        "productTypes_current": [],
+        "suggested_googleProductCategory": null,
+        "suggested_productType": null,
+        "category_evidence": "no reliable title category token",
+        "title_reasons": [
+          "duplicate_title_group_9"
+        ],
+        "decision_states": [
+          "blocked_category_needs_review",
+          "candidate_p2c_title_enhancement_review"
+        ]
+      },
+      {
+        "product_id": "online:pt:BR:BB550VTC-40",
+        "offer_id": "BB550VTC-40",
+        "title": "Tênis New Balance 550 White Pine Green Branco/Verde",
+        "brand": "New Balance",
+        "link": "https://lksneakers.com.br/products/new-balance-550-white-pine-green?currency=BRL&country=BR&variant=44265039823070&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=789476af598e",
+        "price": {
+          "value": "1599.90",
+          "currency": "BRL"
+        },
+        "googleProductCategory_current": "Vestuário e acessórios > Sapatos",
+        "productTypes_current": [
+          "Tênis"
+        ],
+        "suggested_googleProductCategory": "Apparel & Accessories > Shoes",
+        "suggested_productType": "Calçados",
+        "category_evidence": "title sneaker-shoe/model token",
+        "title_reasons": [
+          "duplicate_title_group_7"
+        ],
+        "decision_states": [
+          "candidate_p2c_title_enhancement_review"
+        ]
+      }
+    ]
+  },
+  "not_performed": [
+    "merchant_write",
+    "shopify_write",
+    "feed_fetch_or_upload",
+    "database_write",
+    "campaign_or_message_send",
+    "external_marketplace_call"
+  ]
+}

@@ -1,0 +1,47 @@
+# Receipt — Packet B3 FAQ/body guardrail
+
+- Timestamp UTC: 20260605T125928Z
+- Aprovação: Lucas Cimino via Telegram: "Aprovo" com guardrail de não alterar campo/mensagem operacional de encomenda.
+- Escopo executado: somente `collection.descriptionHtml` em 35 collections.
+- Guardrail encomenda: nenhum produto, variante, metafield operacional, estoque, tag, availability ou checkout foi alterado. B3 também não continha `Sujeito a encomenda` no before/after de `descriptionHtml`.
+- Fora do escopo: SEO title/meta, produto, preço, estoque, theme, campanhas, GMC, Klaviyo, checkout.
+- Applied count: 35
+- Admin exact readback: 35/35
+- Admin clean terms: 35/35
+
+## Collections
+- `pop-mart`
+- `recomendacoes-masculinas-by-helena-lunardelli`
+- `supreme`
+- `labubu`
+- `lululemon`
+- `aphase`
+- `adidas-gazelle`
+- `eyewear`
+- `new-balance-204l`
+- `jaqueta-streetwear`
+- `skims`
+- `air-jordan-4`
+- `shorts`
+- `aime-leon-dore-x-porsche`
+- `dane-se`
+- `slyce`
+- `nike-air-max`
+- `air-jordan-travis-scott`
+- `new-balance-530`
+- `rhode`
+- `short-streetwear`
+- `adidas-gazelle-indoor`
+- `kids-1`
+- `represent-clo`
+- `yeezy-350`
+- `loewe-x-on-running`
+- `on-running-todos-os-modelos`
+- `adidas-campus`
+- `calcas-alo-yoga`
+- `nike-vomero-premium`
+- `balenciaga`
+- `moletom-alo-yoga`
+- `adidas-sl-72`
+- `be-rbrick`
+- `nike-mind-001`

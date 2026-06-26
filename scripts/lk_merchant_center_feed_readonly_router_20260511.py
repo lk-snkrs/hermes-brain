@@ -29,7 +29,9 @@ BRAIN_DOC = ROOT / 'areas/lk/rotinas/merchant-center-feed-readonly-router-2026-0
 GSC_REPORT = ROOT / 'reports/lk-search-console-readonly-router-2026-05-11.json'
 
 CONTENT_SCOPE = 'https://www.googleapis.com/auth/content'
-MAX_PRODUCTS = 5000
+# Full Merchant catalog currently sits around 25.6k products. Do not cap at 5k,
+# otherwise queue counts look artificially small/inconsistent with Merchant UI.
+MAX_PRODUCTS = 30000
 
 
 def b64url(raw: bytes) -> str:
@@ -265,6 +267,11 @@ def build_payload(statuses: list[dict[str, Any]], merchant_id_present: bool) -> 
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'scope': 'LK Merchant Center feed read-only router',
         'summary': summary,
+        'read_scope': {
+            'max_products_configured': MAX_PRODUCTS,
+            'full_catalog_expected': len(statuses) < MAX_PRODUCTS,
+            'note': 'Router now reads the full Merchant catalog up to 30k rows; do not compare new totals to old 5k capped snapshots without labeling the methodology change.',
+        },
         'issue_groups': grouped[:30],
         'queue': queue[:80],
         'top_issue_codes': [{'issue': k, 'count': v} for k, v in issue_counter.most_common(20)],
@@ -296,6 +303,7 @@ def markdown(payload: dict[str, Any]) -> str:
         '',
         '## Snapshot',
         '',
+        f"- Escopo de leitura: até {payload.get('read_scope', {}).get('max_products_configured', 'n/a')} produtos; full catalog esperado: {payload.get('read_scope', {}).get('full_catalog_expected', 'n/a')}",
         f"- Merchant Center ID presente no Doppler: {s['merchant_center_id_present']}",
         f"- Produtos/status lidos: {s['product_statuses_read']}",
         f"- Itens roteados na fila: {s['queue_items']}",

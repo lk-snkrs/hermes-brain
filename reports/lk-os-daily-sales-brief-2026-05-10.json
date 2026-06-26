@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-11T22:26:56.604904+00:00",
-  "business_date": "2026-05-10",
+  "generated_at": "2026-05-16T18:46:20.628762+00:00",
+  "business_date": "2026-05-15",
   "window_policy": "last_closed_day_brt",
   "date_range": {
-    "start": "2026-05-10T00:00:00-03:00",
-    "end": "2026-05-10T23:59:59-03:00"
+    "start": "2026-05-15T00:00:00-03:00",
+    "end": "2026-05-15T23:59:59-03:00"
   },
   "scope": "LK OS Daily Sales Brief read-only: Shopify sales + GA4 channels + Tiny stock checks for sold SKUs",
   "sources": {
@@ -14,61 +14,69 @@
       "ok": true,
       "api_status": 200,
       "date_range": {
-        "start": "2026-05-10T00:00:00-03:00",
-        "end": "2026-05-10T23:59:59-03:00"
+        "start": "2026-05-15T00:00:00-03:00",
+        "end": "2026-05-15T23:59:59-03:00"
       },
-      "orders_count": 9,
-      "revenue_total": 34809.92,
-      "average_order_value": 3867.77,
+      "orders_count": 14,
+      "revenue_total": 44564.85,
+      "average_order_value": 3183.2,
       "channels": {
         "online_or_unknown": {
+          "orders": 5,
+          "revenue": 22334.94
+        },
+        "loja_fisica_or_pos": {
           "orders": 9,
-          "revenue": 34809.92
+          "revenue": 22229.91
         }
       },
       "source_names": {
         "web": {
+          "orders": 5,
+          "revenue": 22334.94
+        },
+        "pos": {
           "orders": 9,
-          "revenue": 34809.92
+          "revenue": 22229.91
         }
       },
       "top_products": [
         {
-          "product_title": "Polo Comme des Garçons PLAY Red Emblem White Branco",
-          "sku": "CDGP2",
-          "size_or_variant": "G/L",
+          "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+          "sku": "1183C102 751-3",
+          "size_or_variant": "36",
           "quantity": 2,
-          "line_revenue_estimate": 3599.98,
+          "line_revenue_estimate": 4799.98,
           "source_label": "fact_shopify",
           "channels": {
-            "web": 2
+            "pos": 2
           }
         },
         {
-          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
-          "sku": "HV8547-001-7",
-          "size_or_variant": "40",
+          "product_title": "Tênis Nike Vomero Premium Black Volt Preto",
+          "sku": "HQ2050-001-5",
+          "size_or_variant": "38",
           "quantity": 1,
-          "line_revenue_estimate": 6999.99,
+          "line_revenue_estimate": 4499.99,
           "source_label": "fact_shopify",
           "channels": {
             "web": 1
           }
         },
         {
-          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa",
-          "sku": "HV8547-601-37",
-          "size_or_variant": "37",
+          "product_title": "Chinelo Slide Nike Mind 001 Black Chrome Preto",
+          "sku": "HQ4307-001-5",
+          "size_or_variant": "38",
           "quantity": 1,
-          "line_revenue_estimate": 5999.99,
+          "line_revenue_estimate": 3999.99,
           "source_label": "fact_shopify",
           "channels": {
             "web": 1
           }
         },
         {
-          "product_title": "Tênis Nike Vomero Premium Barely Volt Verde",
-          "sku": "HQ2050-300-6",
+          "product_title": "Chinelo Slide Nike Mind 001 Black Chrome Preto",
+          "sku": "HQ4307-001-6",
           "size_or_variant": "39",
           "quantity": 1,
           "line_revenue_estimate": 3999.99,
@@ -78,22 +86,22 @@
           }
         },
         {
-          "product_title": "Chinelo Slide Nike Mind 001 Light Smoke Grey Cinza",
-          "sku": "HQ4307-003-10",
-          "size_or_variant": "43",
+          "product_title": "Tênis New Balance 204L Arid Timberwolf Bege",
+          "sku": "U204LMMC-6",
+          "size_or_variant": "39",
           "quantity": 1,
-          "line_revenue_estimate": 3199.99,
+          "line_revenue_estimate": 2799.99,
           "source_label": "fact_shopify",
           "channels": {
-            "web": 1
+            "pos": 1
           }
         },
         {
-          "product_title": "Tênis New Balance 9060 Triple White Branco",
-          "sku": "U9060NRJ-38",
-          "size_or_variant": "38",
+          "product_title": "Tênis New Balance 9060 Bisque Frosted Glass Bege",
+          "sku": "43774078387850",
+          "size_or_variant": "35",
           "quantity": 1,
-          "line_revenue_estimate": 2799.99,
+          "line_revenue_estimate": 2699.99,
           "source_label": "fact_shopify",
           "channels": {
             "web": 1
@@ -101,30 +109,30 @@
         },
         {
           "product_title": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
-          "sku": "U9060WHT-4",
-          "size_or_variant": "37",
+          "sku": "U9060WHT-3",
+          "size_or_variant": "36",
           "quantity": 1,
           "line_revenue_estimate": 2599.99,
           "source_label": "fact_shopify",
           "channels": {
-            "web": 1
+            "pos": 1
           }
         },
         {
-          "product_title": "Tênis Onitsuka Tiger Tsunahiki Slip-On White/Black Branco",
-          "sku": "1183C529.101-8",
-          "size_or_variant": "41",
+          "product_title": "Tênis Nike Air Jordan 1 Low OG Olive Verde",
+          "sku": "HQ6998-208",
+          "size_or_variant": "42",
           "quantity": 1,
           "line_revenue_estimate": 2499.99,
           "source_label": "fact_shopify",
           "channels": {
-            "web": 1
+            "pos": 1
           }
         },
         {
-          "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
-          "sku": "1183C102751-4",
-          "size_or_variant": "37",
+          "product_title": "Tênis New Balance 9060 Rose Sugar Angora Rosa",
+          "sku": "U9060LBC-2",
+          "size_or_variant": "34",
           "quantity": 1,
           "line_revenue_estimate": 2399.99,
           "source_label": "fact_shopify",
@@ -133,11 +141,66 @@
           }
         },
         {
-          "product_title": "Tênis New Balance 9060 Cortado Marrom",
-          "sku": "U9060496",
-          "size_or_variant": "37",
+          "product_title": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+          "sku": "1183C102250-5",
+          "size_or_variant": "38",
           "quantity": 1,
           "line_revenue_estimate": 2399.99,
+          "source_label": "fact_shopify",
+          "channels": {
+            "pos": 1
+          }
+        },
+        {
+          "product_title": "Onitsuka Tiger California 78 EX Black/Oatmel Preto",
+          "sku": "1183A355.002-2",
+          "size_or_variant": "35",
+          "quantity": 1,
+          "line_revenue_estimate": 2299.99,
+          "source_label": "fact_shopify",
+          "channels": {
+            "web": 1
+          }
+        },
+        {
+          "product_title": "Moletom Represent Clo Storms in Heaven Black Preto",
+          "sku": "Rep09-2",
+          "size_or_variant": "M/M",
+          "quantity": 1,
+          "line_revenue_estimate": 1899.99,
+          "source_label": "fact_shopify",
+          "channels": {
+            "pos": 1
+          }
+        },
+        {
+          "product_title": "Tênis Air Jordan 1 Low SE \"Legend Coffee\" Marrom",
+          "sku": "FJ3453-200-7",
+          "size_or_variant": "40",
+          "quantity": 1,
+          "line_revenue_estimate": 1789.9,
+          "source_label": "fact_shopify",
+          "channels": {
+            "pos": 1
+          }
+        },
+        {
+          "product_title": "Tênis adidas Gazelle Indoor Collegiate Green Verde",
+          "sku": "JI2062-2",
+          "size_or_variant": "35",
+          "quantity": 1,
+          "line_revenue_estimate": 1499.99,
+          "source_label": "fact_shopify",
+          "channels": {
+            "web": 1
+          }
+        },
+        {
+          "product_title": "Tênis Nike Cortez White Black Branco",
+          "sku": "DM4044-105-4",
+          "size_or_variant": "35",
+          "quantity": 1,
+          "line_revenue_estimate": 1449.99,
           "source_label": "fact_shopify",
           "channels": {
             "web": 1
@@ -146,111 +209,114 @@
       ],
       "top_skus": [
         [
-          "CDGP2",
+          "1183C102 751-3",
           2
         ],
         [
-          "1183C529.101-8",
+          "1183A355.002-2",
           1
         ],
         [
-          "HQ4307-003-10",
+          "U9060LBC-2",
           1
         ],
         [
-          "HV8547-001-7",
+          "43774078387850",
           1
         ],
         [
-          "HV8547-601-37",
+          "Rep09-2",
           1
         ],
         [
-          "U9060WHT-4",
+          "HQ6998-208",
           1
         ],
         [
-          "U9060NRJ-38",
+          "FJ3453-200-7",
           1
         ],
         [
-          "1183C102751-4",
+          "1183C102250-5",
           1
         ],
         [
-          "HQ2050-300-6",
+          "HQ4307-001-5",
           1
         ],
         [
-          "U9060496",
+          "HQ2050-001-5",
+          1
+        ],
+        [
+          "HQ4307-001-6",
+          1
+        ],
+        [
+          "U204LMMC-6",
           1
         ]
       ],
-      "no_sku_line_items": 0,
+      "no_sku_line_items": 2,
       "landing_site_sample": [
         [
-          "/?utm_medium=paid&utm_id=120236212896630224_v2_s04_e450_i20260507&utm_content=120237637573400224&utm_term=12023621289663",
+          "/products/onitsuka-tiger-california-78-ex-black-oatmel-preto?currency=BRL&country=BR&variant=46835232145630&utm_source=g",
           1
         ],
         [
-          "/collections/nike-x-jacquemus-moon-shoe-sp?ad_id=120241352199470224&campaign_id=120241297336180224&fbclid=PAZXh0bgNhZW0B",
+          "/?gad_source=1&gad_campaignid=20840173127&gbraid=0AAAAAqcRqrxlgTzLKQbf_4u__9mrZZtWj&gclid=Cj0KCQjwiJvQBhCYARIsAMjts3JvOa",
           1
         ],
         [
-          "/",
+          "/products/tenis-nike-mind-002-light-smoke-grey-cinza?utm_content=Facebook_UA&utm_source=facebook&variant=48191013290206&",
           1
         ],
         [
-          "/products/tenis-new-balance-9060-angora-sea-salt-bege?currency=BRL&country=BR&variant=47583466193118&utm_source=google&u",
+          "/cart/47675544731870:1,47839129075934:1",
           1
         ],
         [
-          "/?utm_id=97760_v0_s00_e0_tv3",
+          "/products/tenis-onitsuka-tiger-mexico-66-kill-bill-amarelo?utm_content=[influencer Lala noleto] —Simples&utm_source=face",
           1
         ]
       ],
       "referring_site_sample": [
         [
-          "https://instagram.com/",
-          3
-        ],
-        [
           "https://www.google.com/",
-          3
+          2
         ],
         [
-          "https://l.instagram.com/",
+          "https://instagram.com/",
           1
         ],
         [
-          "https://lksneakers.com.br/cart",
+          "http://instagram.com/",
           1
         ]
       ],
-      "raw_order_count_private": 9
+      "raw_order_count_private": 14
     },
     "tiny_stock": {
       "source": "Tiny",
       "fact_label": "fact_tiny_stock",
       "ok": true,
       "deposit": "LK | CONTROLE ESTOQUE",
-      "checks_count": 10,
+      "checks_count": 15,
       "risk_counts": {
-        "ruptura": 4,
-        "ok_amostra": 1,
-        "baixo_estoque_vs_venda_do_dia": 2,
-        "unknown": 3
+        "ruptura": 8,
+        "baixo_estoque_vs_venda_do_dia": 3,
+        "unknown": 4
       },
       "critical_or_unknown": [
         {
           "source_label": "fact_tiny_stock",
-          "product_title": "Polo Comme des Garçons PLAY Red Emblem White Branco",
-          "sku": "CDGP2",
-          "size_or_variant": "G/L",
+          "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+          "sku": "1183C102 751-3",
+          "size_or_variant": "36",
           "sold_qty_fact_shopify": 2,
           "search_status": "OK",
           "candidate_count": 1,
-          "chosen_tiny_id": "1070118877",
+          "chosen_tiny_id": "1058668613",
           "chosen_match_quality": "exact_norm_sku",
           "official_deposit": {
             "deposit": "LK | CONTROLE ESTOQUE",
@@ -261,88 +327,88 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 277
+            "latency_ms": 333
           },
           "stock_risk": "ruptura"
         },
         {
           "source_label": "fact_tiny_stock",
-          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
-          "sku": "HV8547-001-7",
-          "size_or_variant": "40",
-          "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1066218771",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 0.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 306
-          },
-          "stock_risk": "ruptura"
-        },
-        {
-          "source_label": "fact_tiny_stock",
-          "product_title": "Tênis Nike Vomero Premium Barely Volt Verde",
-          "sku": "HQ2050-300-6",
-          "size_or_variant": "39",
-          "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1066344516",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 1.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 312
-          },
-          "stock_risk": "baixo_estoque_vs_venda_do_dia"
-        },
-        {
-          "source_label": "fact_tiny_stock",
-          "product_title": "Chinelo Slide Nike Mind 001 Light Smoke Grey Cinza",
-          "sku": "HQ4307-003-10",
-          "size_or_variant": "43",
-          "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1068220004",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 0.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 259
-          },
-          "stock_risk": "ruptura"
-        },
-        {
-          "source_label": "fact_tiny_stock",
-          "product_title": "Tênis New Balance 9060 Triple White Branco",
-          "sku": "U9060NRJ-38",
+          "product_title": "Tênis Nike Vomero Premium Black Volt Preto",
+          "sku": "HQ2050-001-5",
           "size_or_variant": "38",
           "sold_qty_fact_shopify": 1,
           "search_status": "OK",
           "candidate_count": 1,
-          "chosen_tiny_id": "1065411445",
+          "chosen_tiny_id": "1066878128",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 270
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Chinelo Slide Nike Mind 001 Black Chrome Preto",
+          "sku": "HQ4307-001-5",
+          "size_or_variant": "38",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1068220054",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 288
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Chinelo Slide Nike Mind 001 Black Chrome Preto",
+          "sku": "HQ4307-001-6",
+          "size_or_variant": "39",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1068220057",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 296
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis New Balance 204L Arid Timberwolf Bege",
+          "sku": "U204LMMC-6",
+          "size_or_variant": "39",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1065903221",
           "chosen_match_quality": "exact_norm_sku",
           "official_deposit": {
             "deposit": "LK | CONTROLE ESTOQUE",
@@ -353,56 +419,33 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 311
+            "latency_ms": 263
           },
           "stock_risk": "baixo_estoque_vs_venda_do_dia"
         },
         {
           "source_label": "fact_tiny_stock",
-          "product_title": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
-          "sku": "U9060WHT-4",
-          "size_or_variant": "37",
+          "product_title": "Tênis New Balance 9060 Bisque Frosted Glass Bege",
+          "sku": "43774078387850",
+          "size_or_variant": "35",
           "sold_qty_fact_shopify": 1,
           "search_status": "OK",
           "candidate_count": 1,
-          "chosen_tiny_id": "1059847080",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": -1.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 320
-          },
-          "stock_risk": "ruptura"
-        },
-        {
-          "source_label": "fact_tiny_stock",
-          "product_title": "Tênis Onitsuka Tiger Tsunahiki Slip-On White/Black Branco",
-          "sku": "1183C529.101-8",
-          "size_or_variant": "41",
-          "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1066538249",
+          "chosen_tiny_id": "1065232217",
           "chosen_match_quality": "exact_norm_sku",
           "official_deposit": null,
           "stock_call": {
             "http_status": 200,
             "tiny_status": "Erro",
-            "latency_ms": 201
+            "latency_ms": 198
           },
           "stock_risk": "unknown"
         },
         {
           "source_label": "fact_tiny_stock",
-          "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
-          "sku": "1183C102751-4",
-          "size_or_variant": "37",
+          "product_title": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+          "sku": "U9060WHT-3",
+          "size_or_variant": "36",
           "sold_qty_fact_shopify": 1,
           "search_status": "Erro",
           "candidate_count": 0,
@@ -414,9 +457,9 @@
         },
         {
           "source_label": "fact_tiny_stock",
-          "product_title": "Tênis New Balance 9060 Cortado Marrom",
-          "sku": "U9060496",
-          "size_or_variant": "37",
+          "product_title": "Tênis Nike Air Jordan 1 Low OG Olive Verde",
+          "sku": "HQ6998-208",
+          "size_or_variant": "42",
           "sold_qty_fact_shopify": 1,
           "search_status": "Erro",
           "candidate_count": 0,
@@ -425,18 +468,101 @@
           "official_deposit": null,
           "stock_call": null,
           "stock_risk": "unknown"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis New Balance 9060 Rose Sugar Angora Rosa",
+          "sku": "U9060LBC-2",
+          "size_or_variant": "34",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "Erro",
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_call": null,
+          "stock_risk": "unknown"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+          "sku": "1183C102250-5",
+          "size_or_variant": "38",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1060293683",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 1.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 290
+          },
+          "stock_risk": "baixo_estoque_vs_venda_do_dia"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Onitsuka Tiger California 78 EX Black/Oatmel Preto",
+          "sku": "1183A355.002-2",
+          "size_or_variant": "35",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1063593186",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 284
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Moletom Represent Clo Storms in Heaven Black Preto",
+          "sku": "Rep09-2",
+          "size_or_variant": "M/M",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1068937201",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 324
+          },
+          "stock_risk": "ruptura"
         }
       ],
       "checks": [
         {
           "source_label": "fact_tiny_stock",
-          "product_title": "Polo Comme des Garçons PLAY Red Emblem White Branco",
-          "sku": "CDGP2",
-          "size_or_variant": "G/L",
+          "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
+          "sku": "1183C102 751-3",
+          "size_or_variant": "36",
           "sold_qty_fact_shopify": 2,
           "search_status": "OK",
           "candidate_count": 1,
-          "chosen_tiny_id": "1070118877",
+          "chosen_tiny_id": "1058668613",
           "chosen_match_quality": "exact_norm_sku",
           "official_deposit": {
             "deposit": "LK | CONTROLE ESTOQUE",
@@ -447,111 +573,88 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 277
+            "latency_ms": 333
           },
           "stock_risk": "ruptura"
         },
         {
           "source_label": "fact_tiny_stock",
-          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Off Noir Preto",
-          "sku": "HV8547-001-7",
-          "size_or_variant": "40",
-          "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1066218771",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 0.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 306
-          },
-          "stock_risk": "ruptura"
-        },
-        {
-          "source_label": "fact_tiny_stock",
-          "product_title": "Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa",
-          "sku": "HV8547-601-37",
-          "size_or_variant": "37",
-          "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1069545977",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 2.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 300
-          },
-          "stock_risk": "ok_amostra"
-        },
-        {
-          "source_label": "fact_tiny_stock",
-          "product_title": "Tênis Nike Vomero Premium Barely Volt Verde",
-          "sku": "HQ2050-300-6",
-          "size_or_variant": "39",
-          "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1066344516",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 1.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 312
-          },
-          "stock_risk": "baixo_estoque_vs_venda_do_dia"
-        },
-        {
-          "source_label": "fact_tiny_stock",
-          "product_title": "Chinelo Slide Nike Mind 001 Light Smoke Grey Cinza",
-          "sku": "HQ4307-003-10",
-          "size_or_variant": "43",
-          "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1068220004",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": 0.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 259
-          },
-          "stock_risk": "ruptura"
-        },
-        {
-          "source_label": "fact_tiny_stock",
-          "product_title": "Tênis New Balance 9060 Triple White Branco",
-          "sku": "U9060NRJ-38",
+          "product_title": "Tênis Nike Vomero Premium Black Volt Preto",
+          "sku": "HQ2050-001-5",
           "size_or_variant": "38",
           "sold_qty_fact_shopify": 1,
           "search_status": "OK",
           "candidate_count": 1,
-          "chosen_tiny_id": "1065411445",
+          "chosen_tiny_id": "1066878128",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 270
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Chinelo Slide Nike Mind 001 Black Chrome Preto",
+          "sku": "HQ4307-001-5",
+          "size_or_variant": "38",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1068220054",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 288
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Chinelo Slide Nike Mind 001 Black Chrome Preto",
+          "sku": "HQ4307-001-6",
+          "size_or_variant": "39",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1068220057",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 296
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis New Balance 204L Arid Timberwolf Bege",
+          "sku": "U204LMMC-6",
+          "size_or_variant": "39",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1065903221",
           "chosen_match_quality": "exact_norm_sku",
           "official_deposit": {
             "deposit": "LK | CONTROLE ESTOQUE",
@@ -562,56 +665,33 @@
           "stock_call": {
             "http_status": 200,
             "tiny_status": "OK",
-            "latency_ms": 311
+            "latency_ms": 263
           },
           "stock_risk": "baixo_estoque_vs_venda_do_dia"
         },
         {
           "source_label": "fact_tiny_stock",
-          "product_title": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
-          "sku": "U9060WHT-4",
-          "size_or_variant": "37",
+          "product_title": "Tênis New Balance 9060 Bisque Frosted Glass Bege",
+          "sku": "43774078387850",
+          "size_or_variant": "35",
           "sold_qty_fact_shopify": 1,
           "search_status": "OK",
           "candidate_count": 1,
-          "chosen_tiny_id": "1059847080",
-          "chosen_match_quality": "exact_norm_sku",
-          "official_deposit": {
-            "deposit": "LK | CONTROLE ESTOQUE",
-            "saldo": -1.0,
-            "saldo_raw_present": true,
-            "desconsiderar": "N"
-          },
-          "stock_call": {
-            "http_status": 200,
-            "tiny_status": "OK",
-            "latency_ms": 320
-          },
-          "stock_risk": "ruptura"
-        },
-        {
-          "source_label": "fact_tiny_stock",
-          "product_title": "Tênis Onitsuka Tiger Tsunahiki Slip-On White/Black Branco",
-          "sku": "1183C529.101-8",
-          "size_or_variant": "41",
-          "sold_qty_fact_shopify": 1,
-          "search_status": "OK",
-          "candidate_count": 1,
-          "chosen_tiny_id": "1066538249",
+          "chosen_tiny_id": "1065232217",
           "chosen_match_quality": "exact_norm_sku",
           "official_deposit": null,
           "stock_call": {
             "http_status": 200,
             "tiny_status": "Erro",
-            "latency_ms": 201
+            "latency_ms": 198
           },
           "stock_risk": "unknown"
         },
         {
           "source_label": "fact_tiny_stock",
-          "product_title": "Tênis Onitsuka Tiger Mexico 66 Kill Bill Amarelo",
-          "sku": "1183C102751-4",
-          "size_or_variant": "37",
+          "product_title": "Tênis New Balance 9060 Sea Salt Moonbeam Branco",
+          "sku": "U9060WHT-3",
+          "size_or_variant": "36",
           "sold_qty_fact_shopify": 1,
           "search_status": "Erro",
           "candidate_count": 0,
@@ -623,9 +703,9 @@
         },
         {
           "source_label": "fact_tiny_stock",
-          "product_title": "Tênis New Balance 9060 Cortado Marrom",
-          "sku": "U9060496",
-          "size_or_variant": "37",
+          "product_title": "Tênis Nike Air Jordan 1 Low OG Olive Verde",
+          "sku": "HQ6998-208",
+          "size_or_variant": "42",
           "sold_qty_fact_shopify": 1,
           "search_status": "Erro",
           "candidate_count": 0,
@@ -634,6 +714,158 @@
           "official_deposit": null,
           "stock_call": null,
           "stock_risk": "unknown"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis New Balance 9060 Rose Sugar Angora Rosa",
+          "sku": "U9060LBC-2",
+          "size_or_variant": "34",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "Erro",
+          "candidate_count": 0,
+          "chosen_tiny_id": null,
+          "chosen_match_quality": "no_safe_candidate",
+          "official_deposit": null,
+          "stock_call": null,
+          "stock_risk": "unknown"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Onitsuka Tiger Mexico 66 Beige Grass Green Marrom",
+          "sku": "1183C102250-5",
+          "size_or_variant": "38",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1060293683",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 1.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 290
+          },
+          "stock_risk": "baixo_estoque_vs_venda_do_dia"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Onitsuka Tiger California 78 EX Black/Oatmel Preto",
+          "sku": "1183A355.002-2",
+          "size_or_variant": "35",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1063593186",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 284
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Moletom Represent Clo Storms in Heaven Black Preto",
+          "sku": "Rep09-2",
+          "size_or_variant": "M/M",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1068937201",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 324
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Air Jordan 1 Low SE \"Legend Coffee\" Marrom",
+          "sku": "FJ3453-200-7",
+          "size_or_variant": "40",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1056589154",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 487
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis adidas Gazelle Indoor Collegiate Green Verde",
+          "sku": "JI2062-2",
+          "size_or_variant": "35",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1061046078",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 0.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 301
+          },
+          "stock_risk": "ruptura"
+        },
+        {
+          "source_label": "fact_tiny_stock",
+          "product_title": "Tênis Nike Cortez White Black Branco",
+          "sku": "DM4044-105-4",
+          "size_or_variant": "35",
+          "sold_qty_fact_shopify": 1,
+          "search_status": "OK",
+          "candidate_count": 1,
+          "chosen_tiny_id": "1060963957",
+          "chosen_match_quality": "exact_norm_sku",
+          "official_deposit": {
+            "deposit": "LK | CONTROLE ESTOQUE",
+            "saldo": 1.0,
+            "saldo_raw_present": true,
+            "desconsiderar": "N"
+          },
+          "stock_call": {
+            "http_status": 200,
+            "tiny_status": "OK",
+            "latency_ms": 268
+          },
+          "stock_risk": "baixo_estoque_vs_venda_do_dia"
         }
       ],
       "scope_note": "Read-only. Estoque consultado só para SKUs vendidos no dia, não auditoria completa de catálogo."
@@ -644,94 +876,94 @@
       "ok": true,
       "api_status": 200,
       "date_range": {
-        "start": "2026-05-10",
-        "end": "2026-05-10"
+        "start": "2026-05-15",
+        "end": "2026-05-15"
       },
       "totals": {
-        "sessions": 4301.0,
-        "transactions": 8.0,
-        "totalRevenue": 33009.93
+        "sessions": 5845.0,
+        "transactions": 5.0,
+        "totalRevenue": 15914.97
       },
       "top_channels": [
         {
           "channel": "Paid Social",
-          "sessions": 2315.0,
-          "totalUsers": 2188.0,
-          "transactions": 3.0,
-          "totalRevenue": 19529.97,
-          "sessionConversionRate": 0.0064794816414686825
+          "sessions": 3393.0,
+          "totalUsers": 3261.0,
+          "transactions": 1.0,
+          "totalRevenue": 2479.999999,
+          "sessionConversionRate": 0.0058944886531093425
         },
         {
           "channel": "Cross-network",
-          "sessions": 549.0,
-          "totalUsers": 521.0,
-          "transactions": 2.0,
-          "totalRevenue": 5799.979996,
-          "sessionConversionRate": 0.014571948998178506
+          "sessions": 635.0,
+          "totalUsers": 599.0,
+          "transactions": 0.0,
+          "totalRevenue": 0.0,
+          "sessionConversionRate": 0.007874015748031496
         },
         {
           "channel": "Organic Search",
-          "sessions": 458.0,
-          "totalUsers": 431.0,
+          "sessions": 470.0,
+          "totalUsers": 437.0,
           "transactions": 0.0,
           "totalRevenue": 0.0,
-          "sessionConversionRate": 0.002183406113537118
-        },
-        {
-          "channel": "Paid Shopping",
-          "sessions": 296.0,
-          "totalUsers": 272.0,
-          "transactions": 1.0,
-          "totalRevenue": 2799.989998,
-          "sessionConversionRate": 0.02702702702702703
+          "sessionConversionRate": 0.019148936170212766
         },
         {
           "channel": "Direct",
-          "sessions": 264.0,
-          "totalUsers": 241.0,
-          "transactions": 1.0,
-          "totalRevenue": 2599.989999,
-          "sessionConversionRate": 0.01893939393939394
+          "sessions": 435.0,
+          "totalUsers": 413.0,
+          "transactions": 2.0,
+          "totalRevenue": 10799.97,
+          "sessionConversionRate": 0.02528735632183908
         },
         {
-          "channel": "Organic Social",
-          "sessions": 163.0,
-          "totalUsers": 154.0,
-          "transactions": 1.0,
-          "totalRevenue": 2280.000002,
-          "sessionConversionRate": 0.04294478527607362
-        },
-        {
-          "channel": "Paid Search",
-          "sessions": 109.0,
-          "totalUsers": 102.0,
-          "transactions": 0.0,
-          "totalRevenue": 0.0,
-          "sessionConversionRate": 0.027522935779816515
-        },
-        {
-          "channel": "Unassigned",
-          "sessions": 80.0,
-          "totalUsers": 70.0,
-          "transactions": 0.0,
-          "totalRevenue": 0.0,
-          "sessionConversionRate": 0.0875
-        },
-        {
-          "channel": "Organic Shopping",
-          "sessions": 54.0,
-          "totalUsers": 48.0,
-          "transactions": 0.0,
-          "totalRevenue": 0.0,
-          "sessionConversionRate": 0.018518518518518517
-        },
-        {
-          "channel": "Referral",
-          "sessions": 9.0,
-          "totalUsers": 8.0,
+          "channel": "Paid Shopping",
+          "sessions": 400.0,
+          "totalUsers": 371.0,
           "transactions": 0.0,
           "totalRevenue": 0.0,
           "sessionConversionRate": 0.0
+        },
+        {
+          "channel": "Organic Social",
+          "sessions": 188.0,
+          "totalUsers": 177.0,
+          "transactions": 0.0,
+          "totalRevenue": 0.0,
+          "sessionConversionRate": 0.03723404255319149
+        },
+        {
+          "channel": "Unassigned",
+          "sessions": 111.0,
+          "totalUsers": 100.0,
+          "transactions": 0.0,
+          "totalRevenue": 0.0,
+          "sessionConversionRate": 0.0
+        },
+        {
+          "channel": "Paid Search",
+          "sessions": 107.0,
+          "totalUsers": 89.0,
+          "transactions": 1.0,
+          "totalRevenue": 2399.990001,
+          "sessionConversionRate": 0.028037383177570093
+        },
+        {
+          "channel": "Referral",
+          "sessions": 57.0,
+          "totalUsers": 46.0,
+          "transactions": 1.0,
+          "totalRevenue": 235.009999,
+          "sessionConversionRate": 0.07017543859649122
+        },
+        {
+          "channel": "Organic Shopping",
+          "sessions": 47.0,
+          "totalUsers": 43.0,
+          "transactions": 0.0,
+          "totalRevenue": 0.0,
+          "sessionConversionRate": 0.02127659574468085
         }
       ],
       "note": "GA4 mede tráfego/canal/funil; Shopify permanece fonte oficial de pedido/receita."
@@ -742,7 +974,7 @@
       "priority": "P0",
       "source_label": "derived_reconciliation",
       "action": "Preparar preview de reposição/sourcing para SKUs vendidos com saldo zero no Tiny.",
-      "why": "4 SKU(s) vendidos aparecem em ruptura no depósito oficial.",
+      "why": "6 SKU(s) vendidos aparecem em ruptura no depósito oficial.",
       "approval_required": "Sim, antes de fornecedor/compra/Notion."
     },
     {
@@ -756,7 +988,7 @@
       "priority": "P1",
       "source_label": "derived_reconciliation",
       "action": "Resolver mapeamento Shopify SKU ↔ Tiny antes de campanha ou reposição automática.",
-      "why": "3 SKU(s) vendido(s) sem candidato Tiny seguro ou sem saldo legível.",
+      "why": "4 SKU(s) vendido(s) sem candidato Tiny seguro ou sem saldo legível.",
       "approval_required": "Sim, se exigir correção de cadastro."
     }
   ],

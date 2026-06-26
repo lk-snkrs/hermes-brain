@@ -1,0 +1,715 @@
+# Receipt — LK Sort Manual Regra B em coleções manuais
+
+Data: 2026-05-29T15:24:31.424681+00:00
+
+## Regra aplicada
+- Top 4: últimos 4 produtos criados, ativos e publicados na Online Store.
+- Corpo: score = 70% venda líquida/capturada Shopify + 30% visitas GA4 em página de produto.
+- Expurgo: cancelado/refunded/void/pending/authorized/fraude.
+- OOS/não vendável depois do corpo vendável.
+
+## Resumo
+- Coleções selecionadas: 141
+- Movimentos totais: 18
+- Admin full ok: 141/141
+- Público top12 ok: 141/141
+
+## Coleções
+- Todos os Produtos (`ultimos-lancamentos-2`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Air Jordan 1 Retro Low OG SP Travis Scott Shy Pink Bege — top4_recent_active_published
+  - 2. Tênis Nike Air Jordan 1 Retro Low OG SP Travis Scott Sail Tropical Pink Rosa — top4_recent_active_published
+  - 3. Camiseta Jacquemus The Gros Grain Grey Cinza — top4_recent_active_published
+  - 4. Camiseta Jacquemus The Gros Grain Dark Brown Marrom — top4_recent_active_published
+- Tênis e Sneakers Originais (`sneakers`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Air Jordan 1 Retro Low OG SP Travis Scott Shy Pink Bege — top4_recent_active_published
+  - 2. Tênis Nike Air Jordan 1 Retro Low OG SP Travis Scott Sail Tropical Pink Rosa — top4_recent_active_published
+  - 3. Tênis Nike Air Jordan 4 OG SP x Nigel Sylvester Brick After Brick Branco — top4_recent_active_published
+  - 4. Tênis Herit Era Ash Cinza — top4_recent_active_published
+- Apparels (`roupas`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta Jacquemus The Gros Grain Grey Cinza — top4_recent_active_published
+  - 2. Camiseta Jacquemus The Gros Grain Dark Brown Marrom — top4_recent_active_published
+  - 3. Camiseta Jacquemus The Gros Grain White Branco — top4_recent_active_published
+  - 4. Jaqueta Lululemon Define Nulu Black Plum/Gold Roxo — top4_recent_active_published
+- Nike (`nike-todos-os-modelos`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Air Jordan 1 Retro Low OG SP Travis Scott Shy Pink Bege — top4_recent_active_published
+  - 2. Tênis Nike Air Jordan 1 Retro Low OG SP Travis Scott Sail Tropical Pink Rosa — top4_recent_active_published
+  - 3. Tênis Nike Air Jordan 4 OG SP x Nigel Sylvester Brick After Brick Branco — top4_recent_active_published
+  - 4. Tenis Nike Craft General Purpose Shoe Tom Sachs Field Brown Marrom — top4_recent_active_published
+- Camiseta (`camiseta-1`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta Jacquemus The Gros Grain Grey Cinza — top4_recent_active_published
+  - 2. Camiseta Jacquemus The Gros Grain Dark Brown Marrom — top4_recent_active_published
+  - 3. Camiseta Jacquemus The Gros Grain White Branco — top4_recent_active_published
+  - 4. Camiseta Lululemon Manga Longa Swiftly Tech Shirt 2.0 Hip Length Lotus Lavender Roxo — top4_recent_active_published
+- Adidas (`adidas-todos-os-modelos`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas by Stella McCartney Sportswear X Trainers Bold Gold Amarelo — top4_recent_active_published
+  - 2. Tênis Adidas by Stella McCartney Sportswear X Trainers Core Black Preto — top4_recent_active_published
+  - 3. Tênis Adidas by Stella McCartney Sportswear X Trainers Brown Mauve Gum — top4_recent_active_published
+  - 4. Tênis Adidas by Stella McCartney Sportswear X Trainers Cloud White Ivory Branco — top4_recent_active_published
+- Air Jordan (`air-jordan`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Air Jordan 1 Low SE Repaired Denim Swoosh Azul — top4_recent_active_published
+  - 2. Tênis Nike Air Jordan 4 Retro Valentine's Day Sierra Red Vermelho — top4_recent_active_published
+  - 3. Tênis Nike Air Jordan 1 Low OG Olive Verde — top4_recent_active_published
+  - 4. Tênis Nike Air Jordan 1 Mid SE Electro Orange Laranja — top4_recent_active_published
+- Air Jordan 1 (`air-jordan-1`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Air Jordan 1 Retro Low OG SP Travis Scott Shy Pink Bege — top4_recent_active_published
+  - 2. Tênis Nike Air Jordan 1 Retro Low OG SP Travis Scott Sail Tropical Pink Rosa — top4_recent_active_published
+  - 3. Tênis Jordan 11 Retro Low University Blue 2026 Azul — top4_recent_active_published
+  - 4. Tênis Jordan 1 Retro High OG SP Fragment x Union LA Sport Royal — top4_recent_active_published
+- Nike Dunk (`nike-dunk`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Dunk Low Stranger Things Phantom Branco — top4_recent_active_published
+  - 2. Tênis Nike Dunk Low Baroque Brown Marrom — top4_recent_active_published
+  - 3. Livro Rizzoli Nike SB: The Dunk Book — top4_recent_active_published
+  - 4. Tênis Nike Dunk Low Cactus Plant Flea Market Swamp Sponge Photo Blue Colorido — top4_recent_active_published
+- Onitsuka Tiger (`onitsuka-tiger-todos-os-modelos`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 Fringe Yellow/Black Amarelo — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger Mexico 66 Fringe Black/Black Preto — top4_recent_active_published
+  - 4. Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown Blue Marrom — top4_recent_active_published
+- Athleisure (`athleisure`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Jaqueta Lululemon Define Nulu Black Plum/Gold Roxo — top4_recent_active_published
+  - 2. Jaqueta Lululemon Define Nulu Black/Gold Preto — top4_recent_active_published
+  - 3. Camiseta Lululemon Manga Longa Swiftly Tech Shirt 2.0 Hip Length Lotus Lavender Roxo — top4_recent_active_published
+  - 4. Jaqueta Lululemon Define Luon White Branco — top4_recent_active_published
+- Acessórios (`acessorios`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Boné Aimé Leon Dore Saint George Logo Hat Bege/Marrom — top4_recent_active_published
+  - 2. Boné Aimé Leon Dore Sun Faded Unisphere Agave Green Verde — top4_recent_active_published
+  - 3. Calça Saint Studio Jeans Baggy Risca de Giz Azul — top4_recent_active_published
+  - 4. Tênis ASICS Marvel vs. Bonécom x Kith x ASICS Gel Kayano 14 Ryu Branco — top4_recent_active_published
+- New Balance (`new-balance-todos-os-modelos`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis New Balance 204L Slate Grey Raincloud Cinza — top4_recent_active_published
+  - 2. Tênis New Balance 204L x Atmos Cow Girl Brown Marrom — top4_recent_active_published
+  - 3. Tênis New Balance 990v6 Made in USA Cinza Castlerock — top4_recent_active_published
+  - 4. Tênis New Balance 1906L Black Suede Preto — top4_recent_active_published
+- Alo Yoga (`alo-yoga-1`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Alo Yoga Alo Runner Pink Rosa — top4_recent_active_published
+  - 2. Meia Alo Yoga Throwback Barre Branca — top4_recent_active_published
+  - 3. Meia Alo Yoga Throwback Barre Preto — top4_recent_active_published
+  - 4. Camiseta Manga Longa Alo Yoga Ribbed Mesmerize Mock Neck Ivory Creme — top4_recent_active_published
+- Moletom (`moletom-1`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Suéter Saint Studio Moletom Quarter Zip Marrom — top4_recent_active_published
+  - 2. Moletom Nude Project Cult Hoodie Black/Beige Preto — top4_recent_active_published
+  - 3. Moletom Nude Project Side-Eye Zip-Up Black Preto — top4_recent_active_published
+  - 4. Moletom Represent Clo Masking Tape Initial Cedar Marrom — top4_recent_active_published
+- Onitsuka Tiger Mexico 66 (`onitsuka-tiger-mexico-66`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 Fringe Yellow/Black Amarelo — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger Mexico 66 Fringe Black/Black Preto — top4_recent_active_published
+  - 4. Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza — top4_recent_active_published
+- Adidas Samba (`samba`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Samba Jane Chalk White Wonder Quartz Branco — top4_recent_active_published
+  - 2. Tênis adidas Samba OG Crystal Linen Ivory Gum Branco — top4_recent_active_published
+  - 3. Tênis Adidas Samba OG Giraffe Print Grey Crystal White Gold Bege — top4_recent_active_published
+  - 4. Tênis Adidas Samba 62 'Wild Brown' Marrom — top4_recent_active_published
+- Adidas Samba (`adidas-samba`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Samba Jane Chalk White Wonder Quartz Branco — top4_recent_active_published
+  - 2. Tênis adidas Samba OG Crystal Linen Ivory Gum Branco — top4_recent_active_published
+  - 3. Tênis Adidas Samba OG Giraffe Print Grey Crystal White Gold Bege — top4_recent_active_published
+  - 4. Tênis Adidas Samba 62 'Wild Brown' Marrom — top4_recent_active_published
+- Nude Project (`nude-project`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Moletom Nude Project Cult Hoodie Black/Beige Preto — top4_recent_active_published
+  - 2. Moletom Nude Project Side-Eye Zip-Up Black Preto — top4_recent_active_published
+  - 3. Camiseta Nude Project Kora Black Preto — top4_recent_active_published
+  - 4. Camiseta Nude Project Honor Tee Marshmallow Off White — top4_recent_active_published
+- Boné | Apparels (`bone-streetwear`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Boné Aimé Leon Dore Saint George Logo Hat Bege/Marrom — top4_recent_active_published
+  - 2. Boné Aimé Leon Dore Sun Faded Unisphere Agave Green Verde — top4_recent_active_published
+  - 3. Tênis ASICS Marvel vs. Bonécom x Kith x ASICS Gel Kayano 14 Ryu Branco — top4_recent_active_published
+  - 4. Boné Represent Clo Micro Owners Club Jet Black Preto — top4_recent_active_published
+- Saint Studio (`saint-studio`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Meia Saint Studio Pima Branco — top4_recent_active_published
+  - 2. Meia Saint Studio Pima Marrom — top4_recent_active_published
+  - 3. Meia Saint Studio Pima Cooper Bege — top4_recent_active_published
+  - 4. Suéter Saint Studio Moletom Quarter Zip Marrom — top4_recent_active_published
+- Pace (`pace`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta Pace Óxido Cotton Code Grey Cinza — top4_recent_active_published
+  - 2. Camiseta Pace Tsuho Regular Stone Washed Black Preto — top4_recent_active_published
+  - 3. Suéter Pace Overlock Black Vintage Preto — top4_recent_active_published
+  - 4. Calça Pace Nomo Tailoring Trousers Preto — top4_recent_active_published
+- Calça | Apparels (`calca-streetwear`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Calça Saint Studio Jeans Baggy Risca de Giz Azul — top4_recent_active_published
+  - 2. Calça Pace Nomo Tailoring Trousers Preto — top4_recent_active_published
+  - 3. Calça Saint Studio Alfaiataria Risca de Giz Azul Marinho — top4_recent_active_published
+  - 4. Calça Saint Studio Alfaiataria Leve Prega Dupla Marrom — top4_recent_active_published
+- Nike Dunk SB (`nike-dunk-sb`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tenis Nike SB Dunk Low Pro Bluetile Skateboards Azul — top4_recent_active_published
+  - 2. Tenis Nike SB Dunk Low Pro Muni Lightning Denim Turquoise Turquesa — top4_recent_active_published
+  - 3. Tênis Nike SB Air Jordan 4 x Retro SP Navy Branco — top4_recent_active_published
+  - 4. Tênis Nike SB Zoom Air Paul Rodriguez 1 Habanero Red All-Star Vermelho — top4_recent_active_published
+- Collectibles (`collectibles`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado) — top4_recent_active_published
+  - 2. Pop Mart Labubu The Monsters Big into Energy Series ID  Vinyl Plush Pendant (Secret) — top4_recent_active_published
+  - 3. Pop Mart Labubu The Monsters Coca-Cola Series Snowy Mountain Figure — top4_recent_active_published
+  - 4. Pop Mart Labubu The Monsters Coca-Cola Series Little Snowman Figure — top4_recent_active_published
+- Pop Mart (`pop-mart`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Pop Mart Secret Huguinho, Zezinho, Luizinho - Mickey Family Cute Together Keychain Series Figures (Aberto) — top4_recent_active_published
+  - 2. Pop Mart Teco - Mickey Family Cute Together Keychain Series Figures (Aberto) — top4_recent_active_published
+  - 3. Pop Mart Tico - Mickey Family Cute Together Keychain Series Figures (Aberto) — top4_recent_active_published
+  - 4. Pop Mart Pateta - Mickey Family Cute Together Keychain Series Figures (Aberto) — top4_recent_active_published
+- Supreme (`supreme`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike SB Dunk Low Supreme 94 Black Preto — top4_recent_active_published
+  - 2. Tênis Nike SB Dunk Low Supreme 94 White Metallic Silver Branco — top4_recent_active_published
+  - 3. Boné Supreme Military Camp Boné (SS25) Tan Bege — top4_recent_active_published
+  - 4. Boné Supreme Military Camp Boné (SS25) Coral Laranja — top4_recent_active_published
+- New Balance 9060 (`new-balance-9060`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis New Balance 9060 Cortado Marrom — top4_recent_active_published
+  - 2. Tênis New Balance 9060 Fall Suedes Pack Arid Stone Marrom — top4_recent_active_published
+  - 3. Tênis New Balance 9060 Magnet Cinza — top4_recent_active_published
+  - 4. Tênis New Balance 9060 Quartz Grey Cinza — top4_recent_active_published
+- Labubu (`labubu`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Pop Mart Labubu The Monsters Big into Energy Series ID  Vinyl Plush Pendant (Secret) — top4_recent_active_published
+  - 2. Pop Mart Labubu The Monsters Coca-Cola Series Snowy Mountain Figure — top4_recent_active_published
+  - 3. Pop Mart Labubu The Monsters Coca-Cola Series Little Snowman Figure — top4_recent_active_published
+  - 4. Pop Mart Labubu The Monsters Coca-Cola Series Look What I Found Figure — top4_recent_active_published
+- Lululemon (`lululemon`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Jaqueta Lululemon Define Nulu Black Plum/Gold Roxo — top4_recent_active_published
+  - 2. Jaqueta Lululemon Define Nulu Black/Gold Preto — top4_recent_active_published
+  - 3. Camiseta Lululemon Manga Longa Swiftly Tech Shirt 2.0 Hip Length Lotus Lavender Roxo — top4_recent_active_published
+  - 4. Jaqueta Lululemon Define Luon White Branco — top4_recent_active_published
+- Yeezy (`yeezy`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Yeezy Boost 350 V2 Earth Marrom — top4_recent_active_published
+  - 2. Tênis Adidas Yeezy Boost 350 V2 Ash Stone Cinza — top4_recent_active_published
+  - 3. Tênis Adidas Yeezy Boost 350 Pirate Black 2023 — top4_recent_active_published
+  - 4. Tênis Adidas Yeezy Boost 350 V2 Semi Frozen Yellow — top4_recent_active_published
+- Aphase (`aphase`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Calça Aphase Relaxed SweatPants - Stoned Beige Bege — top4_recent_active_published
+  - 2. Shorts Aphase Relaxed - Stoned Beige Bege — top4_recent_active_published
+  - 3. Shorts Aphase Relaxed - Stoned Black Preto — top4_recent_active_published
+  - 4. Shorts Aphase Minimal Track - Light Grey Cinza — top4_recent_active_published
+- Fear of God Essentials (`fear-of-god`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta Fear Of God Essentials Varsity 90s Short Sleeve Tee Cinza — top4_recent_active_published
+  - 2. Camiseta Fear Of God Essentials Classic Short Sleeve Jet Black Preto — top4_recent_active_published
+  - 3. Camiseta Fear Of God Essentials Classic Short Sleeve Bright White Branco — top4_recent_active_published
+  - 4. Shorts Fear Of God Essentials Classic Sweatshort Vintage Black Preto — top4_recent_active_published
+- Adidas Gazelle (`adidas-gazelle`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Gazelle Indoor Maroon Almost Yellow Marrom — top4_recent_active_published
+  - 2. Tênis Adidas Gazelle Indoor Beige Better Scarlet Bege — top4_recent_active_published
+  - 3. Tênis Adidas Gazelle Indoor Cream White Preloved Teal Branco — top4_recent_active_published
+  - 4. Tênis Adidas Gazelle Stack Collegiate Green Cream White Verde — top4_recent_active_published
+- Eyewear (`eyewear`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Óculos Oakley Plantaris TI Raw Titanium Cinza — top4_recent_active_published
+  - 2. Óculos de Sol Jacquemus JAC4C1SUN Preto — top4_recent_active_published
+  - 3. Óculos de Sol Jacquemus JAC4C2SUN Animal Print — top4_recent_active_published
+  - 4. Óculos de Sol Jacquemus JAC5C2SUN Branco — top4_recent_active_published
+- New Balance 204L (`new-balance-204l`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis New Balance 204L Slate Grey Raincloud Cinza — top4_recent_active_published
+  - 2. Tênis New Balance 204L x Atmos Cow Girl Brown Marrom — top4_recent_active_published
+  - 3. Tênis New Balance 204L Raincloud Ash Wood Cinza — top4_recent_active_published
+  - 4. Tênis New Balance 204L Lone Star Grey Cinza — top4_recent_active_published
+- Jaqueta | Apparels (`jaqueta-streetwear`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Jaqueta Lululemon Define Nulu Black Plum/Gold Roxo — top4_recent_active_published
+  - 2. Jaqueta Lululemon Define Nulu Black/Gold Preto — top4_recent_active_published
+  - 3. Jaqueta Lululemon Define Luon White Branco — top4_recent_active_published
+  - 4. Jaqueta Lululemon Define Cropped Nulu Light Ivory/Gold/Gold Off White — top4_recent_active_published
+- Nike Air Force 1 (`nike-air-force-1`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Air Force 1 Low Protro Kobe Bryant Siempre Hermanos Marrom — top4_recent_active_published
+  - 2. Tênis Nike Air Force 1 Low x Nocta 'Certified Lover Boy' Branco — top4_recent_active_published
+  - 3. Tênis A Ma Maniére x Air Force 1 Low 'Triple White' Branco — top4_recent_active_published
+  - 4. Tênis Nike Air Force 1 Low Protro Kobe Bryant Mamba Mentality Amarelo — top4_recent_active_published
+- Skims (`skims`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike x Skims Rift Mesh Archaeo Brown Marrom — top4_recent_active_published
+  - 2. Tênis Nike x Skims Rift Mesh Black Preto — top4_recent_active_published
+  - 3. Tênis Nike x Skims Rift Mesh Velvet Brown Marrom — top4_recent_active_published
+  - 4. Top Skims Cotton Rib Light Heather Grey Cinza — top4_recent_active_published
+- Air Jordan 4 (`air-jordan-4`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Air Jordan 4 Retro Valentine's Day Sierra Red Vermelho — top4_recent_active_published
+  - 2. Tênis Nike Air Jordan 4 Cave Stone and Black Marrom — top4_recent_active_published
+  - 3. Tênis Nike Air Jordan 4 Retro TEX 'Worn Blue Denim' Azul — top4_recent_active_published
+  - 4. Tênis Nike Travis Scott Air Jordan 4 Retro Cactus Jack Azul — top4_recent_active_published
+- Shorts (`shorts`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Shorts Saint Studio Plissado Tech Preto — top4_recent_active_published
+  - 2. Shorts Saint Studio Everywear Preto — top4_recent_active_published
+  - 3. Shorts Saint Studio Everywear Caqui Bege — top4_recent_active_published
+  - 4. Bermuda Saint Studio Alfaiataria Algodão Orgânico Risca de Giz Preto — top4_recent_active_published
+- Aimé Leon Dore x Porsche (`aime-leon-dore-x-porsche`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Boné Aimé Leon Dore x Porsche Colorblock Logo Pristine Off White — top4_recent_active_published
+  - 2. Boné Aimé Leon Dore Porsche Nylon Logo Jet Black Preto — top4_recent_active_published
+  - 3. Jaqueta Aimé Leon Dore x Porsche GORE-TEX Cabrio — inactive_or_leftover
+  - 4. Pullover Aimé Leon Dore x Porsche Jacquard Collar Quarter Zip — inactive_or_leftover
+- Dane-se (`dane-se`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta Regular Dane-se x Athos Bulcão Azulejos Branco — top4_recent_active_published
+  - 2. Camiseta Painel Dane-se x Athos Bulcão Torre de TV Branco — top4_recent_active_published
+  - 3. Camiseta Regular Dane-se x Athos Bulcão Igrejinha Preto — top4_recent_active_published
+  - 4. Camiseta Painel Dane-se x Athos Bulcão 107 Norte Branco — top4_recent_active_published
+- Slyce (`slyce`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta Slyce Blooming Serve Marrom — top4_recent_active_published
+  - 2. Camiseta Slyce Best Serve Branco — top4_recent_active_published
+  - 3. Camiseta Slyce Racquet Club 2.0 Off White — top4_recent_active_published
+  - 4. Moletom Slyce Off Court Stadium Verde — top4_recent_active_published
+- Nike Air Max (`nike-air-max`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Air Max 90 x Patta SP Sapphire Azul — top4_recent_active_published
+  - 2. Tênis Nike Air Max 90 x Patta SP Cyber Branco — top4_recent_active_published
+  - 3. Tênis Nike Air Max 1 x Patta Monarch Laranja — top4_recent_active_published
+  - 4. Tênis Nike Air Max 1 x Patta Noise Aqua Azul — top4_recent_active_published
+- New Balance 530 (`new-balance-530`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis New Balance 530 Beige Angora Creme — top4_recent_active_published
+  - 2. Tênis New Balance 530 Brown Tan Marrom — top4_recent_active_published
+  - 3. Tênis New Balance 530 Steel Grey Cinza — top4_recent_active_published
+  - 4. Tênis New Balance 530 'Silver Metallic Black Cement' Prateado — top4_recent_active_published
+- Rhode (`rhode`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Rhode Peptide Eye Prep — top4_recent_active_published
+  - 2. Capa de Batom Rhode By Hailey Bieber Grey Cinza — top4_recent_active_published
+  - 3. Lip Case Rhode By Hailey Bieber Black Preto (Fechada) — top4_recent_active_published
+  - 4. Lip Tint Rhode Scented Peptide Ribbon — top4_recent_active_published
+- Short | Apparels (`short-streetwear`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Shorts Saint Studio Plissado Tech Preto — top4_recent_active_published
+  - 2. Shorts Saint Studio Everywear Preto — top4_recent_active_published
+  - 3. Shorts Saint Studio Everywear Caqui Bege — top4_recent_active_published
+  - 4. Shorts Represent Clo Owners Club Flat White Branco — top4_recent_active_published
+- Adidas Gazelle Indoor (`adidas-gazelle-indoor`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Gazelle Indoor Maroon Almost Yellow Marrom — top4_recent_active_published
+  - 2. Tênis Adidas Gazelle Indoor Beige Better Scarlet Bege — top4_recent_active_published
+  - 3. Tênis Adidas Gazelle Indoor Cream White Preloved Teal Branco — top4_recent_active_published
+  - 4. Tênis Adidas Gazelle Indoor Bad Bunny Cabo Rojo Rosa — top4_recent_active_published
+- Kids (`kids-1`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 Kids Beige/Green Bege — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger Mexico Mid Runner Kids Birch/India INK Bege — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger Mexico 66 Kids Birch/Rust Orange Bege — top4_recent_active_published
+  - 4. Tênis Onitsuka Tiger Mexico 66 First Kids White/Huddle Yellow Branco — top4_recent_active_published
+- Represent Clo. (`represent-clo`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Moletom Represent Clo Masking Tape Initial Cedar Marrom — top4_recent_active_published
+  - 2. Moletom Represent Clo Owners Club Zip Ash Grey Cinza — top4_recent_active_published
+  - 3. Moletom Represent Clo Owners Club Flat White Branco — top4_recent_active_published
+  - 4. Moletom Represent Clo Question Your Innocence Vintage Grey Cinza — top4_recent_active_published
+- Yeezy 350 (`yeezy-350`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Yeezy Boost 350 V2 Earth Marrom — top4_recent_active_published
+  - 2. Tênis Adidas Yeezy Boost 350 V2 Ash Stone Cinza — top4_recent_active_published
+  - 3. Tênis Adidas Yeezy Boost 350 Pirate Black 2023 — top4_recent_active_published
+  - 4. Tênis Adidas Yeezy Boost 350 V2 Semi Frozen Yellow — top4_recent_active_published
+- Loewe x On Running (`loewe-x-on-running`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis On Running Loewe LightSpray Cloudmonster Branco — top4_recent_active_published
+  - 2. Tênis On Running Cloudsolo Loewe Teal Eggshell Azul — top4_recent_active_published
+  - 3. Tênis On Running Cloudsolo Loewe Sand Burgundy Bege — top4_recent_active_published
+  - 4. Tênis On Running Cloudsolo Loewe Burgundy Eggshell Bordô — top4_recent_active_published
+- On Running (`on-running-todos-os-modelos`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis On Running Loewe LightSpray Cloudmonster Branco — top4_recent_active_published
+  - 2. Tênis On Running Cloudsolo Loewe Teal Eggshell Azul — top4_recent_active_published
+  - 3. Tênis On Running Cloudsolo Loewe Sand Burgundy Bege — top4_recent_active_published
+  - 4. Tênis On Running Cloudsolo Loewe Burgundy Eggshell Bordô — top4_recent_active_published
+- Adidas Campus (`adidas-campus`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis adidas Campus 00s Scarlet Red Vermelho — top4_recent_active_published
+  - 2. Tênis adidas Campus 00s Bliss Pink Rosa — top4_recent_active_published
+  - 3. Tênis Korn x adidas Campus 2.0 Carbon Cinza — top4_recent_active_published
+  - 4. Tênis Bad Bunny x adidas Campus 'The Last Campus' Marrom — top4_recent_active_published
+- Calça Alo Yoga (`calcas-alo-yoga`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Calça Alo Yoga Accolade Straight Leg Gravel Bege — top4_recent_active_published
+  - 2. Calça Alo Yoga Airlift High-Waist 7/8 Line Up Legging Gravel Bege — top4_recent_active_published
+  - 3. Calça Alo Yoga Airbrush High-Waist Heart Throb Preto — top4_recent_active_published
+  - 4. Calça Alo Yoga Airlift High-Waist 7/8 Line Up Legging Black Preto — top4_recent_active_published
+- Nike Vomero Premium (`nike-vomero-premium`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Vomero Premium Tangerine Tint Laranja — top4_recent_active_published
+  - 2. Tênis Nike Vomero Premium Pearl Pink Rosa — top4_recent_active_published
+  - 3. Tênis Nike Vomero Premium Barely Green Verde — top4_recent_active_published
+  - 4. Tênis Nike Vomero Premium x Renegade x Cinnamon Marrom — top4_recent_active_published
+- Balenciaga (`balenciaga`): moves=8; admin_full_ok=True; public_top12_ok=True
+  - 1. Óculos de Sol Balenciaga BB0074S-001 Preto — top4_recent_active_published
+  - 2. Óculos de Sol Balenciaga BB0056S-003 Branco — top4_recent_active_published
+  - 3. Óculos de Sol Balenciaga BB0049S-004 Azul — top4_recent_active_published
+  - 4. Óculos de Sol Balenciaga BB0041S-014 Azul — top4_recent_active_published
+- Moletom Alo Yoga (`moletom-alo-yoga`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Moletom Alo Yoga Cropped Serenity Coverup Bluestone Azul — top4_recent_active_published
+  - 2. Moletom Alo Yoga Cropped Serenity Coverup Light Cocoa Bege — top4_recent_active_published
+  - 3. Moletom Alo Yoga Cropped Serenity Coverup Winter Frost Azul — top4_recent_active_published
+  - 4. Moletom Alo Yoga Cropped Serenity Coverup Ivory Off White — top4_recent_active_published
+- Adidas SL 72 (`adidas-sl-72`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas SL 72 OG Off White Wonder Taupe Wonder White Branco — top4_recent_active_published
+  - 2. Tênis Adidas SL 72 OG Snakeskin Preloved Brown Marrom — top4_recent_active_published
+  - 3. Tênis Adidas SL 72 OG Collegiate Green Snakeskin Verde — top4_recent_active_published
+  - 4. Tênis Adidas SL 72 OG Clear Sky Sand Strata Cream White Azul — top4_recent_active_published
+- BE@RBRICK (`be-rbrick`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. MEDICOM TOY - Bearbrick Series 48 100% Toy Art Blind Box (Lacrado) — top4_recent_active_published
+  - 2. MEDICOM TOY - Bearbrick Pushead #6 400% Toy Art Multi-Color — top4_recent_active_published
+  - 3. MEDICOM TOY - Bearbrick Jean-Michel Basquiat "Special" 100% & 400% Set Toy Art Multi-Color — top4_recent_active_published
+  - 4. MEDICOM TOY - Bearbrick Jean-Michel Basquiat "Special" 1000% Toy Art Multi-Color — top4_recent_active_published
+- Nike Mind (`nike-mind-001`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Mind 002 Grey Football Grey Cinza — top4_recent_active_published
+  - 2. Chinelo Slide Nike Mind 001 Blackened Blue Azul — top4_recent_active_published
+  - 3. Chinelo Slide Nike Mind 001 Mineral Slate Verde — top4_recent_active_published
+  - 4. Chinelo Slide Nike Mind 001 Pearl Pink Rosa — top4_recent_active_published
+- Adidas x Bad Bunny (`adidas-x-bad-bunny`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis adidas Ballerina Bad Bunny Flamboyan Vermelho — top4_recent_active_published
+  - 2. Tênis Bad Bunny x Adidas BADBO 1.0 Rise Branco — top4_recent_active_published
+  - 3. Tênis Adidas Badbo 1.0 X Bad Bunny "Chalk White" Branco — top4_recent_active_published
+  - 4. Tênis Adidas Gazelle Indoor Bad Bunny Cabo Rojo Rosa — top4_recent_active_published
+- Asics (`asics-todos-os-modelos`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis ASICS Gel-NYC Graphite Grey Black Preto — top4_recent_active_published
+  - 2. Tênis ASICS Gel-1130 Black Pure Silver Prata — top4_recent_active_published
+  - 3. Tênis ASICS Gel-1130 Black Pure Silver Prata — top4_recent_active_published
+  - 4. Tênis ASICS Gel-1130 White Pure Silver Prata — top4_recent_active_published
+- Kith (`kith`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta Kith Brush Vintage Boxy Alex Silk Off White — top4_recent_active_published
+  - 2. Camiseta Kith Brush Vintage Boxy Alex Nocturnal Azul Marinho — top4_recent_active_published
+  - 3. Camiseta Kith Signature Rose Jones Black Preto — top4_recent_active_published
+  - 4. Tênis On Running x Kith ON K-Tech 2 Spirulina Barley Verde — top4_recent_active_published
+- Puma (`puma-todos-os-modelos`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Puma Speedcat Silk Chocotart Warm White Marrom — top4_recent_active_published
+  - 2. Tênis Puma Speedcat TTF 'Dark Chocolate Frosted Ivory' Marrom — top4_recent_active_published
+  - 3. Tênis Puma Speedcat Faded Cool Cucumber Alpine Snow Verde — top4_recent_active_published
+  - 4. Tênis Puma Speedcat Faded Cast Iron Alpine Snow Cinza — top4_recent_active_published
+- Adidas Taekwondo (`adidas-taekwondo`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Taekwondo Mei Ballet Cream White Branco — top4_recent_active_published
+  - 2. Tênis Adidas Taekwondo Caroline Hu x CLOT Black Preto — top4_recent_active_published
+  - 3. Tênis Adidas Taekwondo Caroline Hu x CLOT Pink Silver Rosa — top4_recent_active_published
+  - 4. Tênis Adidas Taekwondo Caroline Hu x CLOT White Royal Branco — top4_recent_active_published
+- Camisa | Apparels (`camisa-streetwear`): moves=5; admin_full_ok=True; public_top12_ok=True
+  - 1. Camisa Aimé Leon Dore Soccer Jersey Pristine Bege — top4_recent_active_published
+  - 2. Camisa Aimé Leon Dore Fassianos Half-Zip Cycling Off White — top4_recent_active_published
+  - 3. Camisa Saint Studio Pima Listrada Azul — top4_recent_active_published
+  - 4. Camisa Aphase Check - Light Blue Azul — top4_recent_active_published
+- Dia das Mães by Lala Noleto. (`dia-das-maes-by-lala-noleto`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Metallic Têniss Silver Gold Prateado — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Blue Azul — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Green — top4_recent_active_published
+  - 4. Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Brown Bege — top4_recent_active_published
+- On Running Cloudsolo (`on-running-cloudsolo`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis On Running Cloudsolo Loewe Teal Eggshell Azul — top4_recent_active_published
+  - 2. Tênis On Running Cloudsolo Loewe Sand Burgundy Bege — top4_recent_active_published
+  - 3. Tênis On Running Cloudsolo Loewe Burgundy Eggshell Bordô — top4_recent_active_published
+  - 4. Tênis On Running Cloudsolo Loewe Taupe Eggshell Marrom — top4_recent_active_published
+- Adidas Handball Spezial (`adidas-handball-spezial`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Handball Spezial LT Collegiate Green Cream White Verde — top4_recent_active_published
+  - 2. Tênis Adidas Handball Spezial LT Preloved Brown Cream White Marrom — top4_recent_active_published
+  - 3. Tênis Adidas Handball Spezial Cream White Blue Warm Sandstone Branco — top4_recent_active_published
+  - 4. Tênis Adidas Handball Spezial Clear Sky White Warm Sandstone Azul — top4_recent_active_published
+- Collab com Artistas (`collab-com-artistas`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta MASP x Leonilson "Sem Titulo" Bege — top4_recent_active_published
+  - 2. Camiseta MASP x Leonilson "O Porta Fortuna" Bege — top4_recent_active_published
+  - 3. Camiseta MASP x Leonilson "O Grande Rio" Branco — top4_recent_active_published
+  - 4. Camiseta MASP x Leonilson "34 com Cicatrizes" Branco — top4_recent_active_published
+- Comme des Garçons (`comme-des-garcons`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Polo Comme des Garçons PLAY Red Emblem Black Preto — top4_recent_active_published
+  - 2. Polo Comme des Garçons PLAY Black Emblem White Branco — top4_recent_active_published
+  - 3. Camiseta Comme des Garçons PLAY Red Half Heart Branco — top4_recent_active_published
+  - 4. Camiseta Comme des Garçons Emblem Rhinestone White/Black Branco — top4_recent_active_published
+- Adidas Taekwondo Mei Ballet (`adidas-taekwondo-mei-ballet`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Taekwondo Mei Ballet Cream White Branco — top4_recent_active_published
+  - 2. Tênis Adidas Taekwondo Mei Ballet Clear Sky Gum Azul — top4_recent_active_published
+  - 3. Tênis Adidas Taekwondo Mei Ballet White Scarlet Gum Vermelho — top4_recent_active_published
+  - 4. Tênis Adidas Taekwondo Mei Ballet Clear Pink Gum Rosa — top4_recent_active_published
+- Nike Cortez (`nike-cortez`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Cortez Baroque Brown Marrom — top4_recent_active_published
+  - 2. Tênis Nike Cortez SE Tiempo Pack Metallic Cool Grey Cinza — top4_recent_active_published
+  - 3. Tênis Nike Cortez Textile Beyond Pink Rosa — top4_recent_active_published
+  - 4. Tênis Nike Cortez Vintage Muslin Black Bege — top4_recent_active_published
+- Top Alo Yoga (`tops-alo-yoga`): moves=5; admin_full_ok=True; public_top12_ok=True
+  - 1. Top Alo Yoga Airlift Line Up Gravel Bege — top4_recent_active_published
+  - 2. Top Alo Yoga Splendor Lunar Grey/White Cinza — top4_recent_active_published
+  - 3. Top Alo Yoga Airlift Light Speed Hooded Lunar Grey Cinza — top4_recent_active_published
+  - 4. Top Alo Yoga Airlift Light Speed Hooded Black Preto — top4_recent_active_published
+- Onitsuka Tiger Mexico 66 Sabot (`onitsuka-tiger-mexico-66-sabot`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 Sabot Pure Silver Cream Cinza — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger Mexico 66 Sabot Black/Black Preto — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger Mexico 66 Sabot Dark Brown Marrom — top4_recent_active_published
+  - 4. Tênis Onitsuka Tiger Mexico 66 Sabot Natural Cream Bege — top4_recent_active_published
+- Onitsuka Tiger Mexico 66 TGRS (`onitsuka-tiger-mexico-66-tgrs`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 TGRS Gunmetal/Metropolis Preto — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger Mexico 66 TGRS Champagne/Cream Dourado — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger Mexico 66 TGRS Crystal Pink/Cream Rosa — top4_recent_active_published
+  - 4. Tênis Onitsuka Tiger Mexico 66 TGRS Classic Red/Cream Vermelho — top4_recent_active_published
+- Puma Speedcat (`puma-speedcat`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Puma Speedcat Silk Chocotart Warm White Marrom — top4_recent_active_published
+  - 2. Tênis Puma Speedcat TTF 'Dark Chocolate Frosted Ivory' Marrom — top4_recent_active_published
+  - 3. Tênis Puma Speedcat Faded Cool Cucumber Alpine Snow Verde — top4_recent_active_published
+  - 4. Tênis Puma Speedcat Faded Cast Iron Alpine Snow Cinza — top4_recent_active_published
+- Adidas Samba Jane (`adidas-samba-jane`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Tokyo Mary Jane Crystal Sky Cream White Azul — top4_recent_active_published
+  - 2. Tênis Adidas Tokyo Mary Jane Cream White Red Gold Metallic Creme — top4_recent_active_published
+  - 3. Tênis Adidas Tokyo Mary Jane Sandy Pink Earth Strata Rosa — top4_recent_active_published
+  - 4. Tênis Adidas Samba Jane Chalk White Wonder Quartz Branco — top4_recent_active_published
+- Adidas Sambae (`adidas-sambae`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis adidas Sambae Denim Azul — top4_recent_active_published
+  - 2. Tênis adidas Sambae Linen Gum Bege — top4_recent_active_published
+  - 3. Tênis Adidas Sambae White Green Gum Branco — top4_recent_active_published
+  - 4. Tênis adidas Sambae x Hello Kitty Cloud White Clear Pink Branco — top4_recent_active_published
+- Adidas Tokyo (`adidas-tokyo`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Tokyo Mary Jane Crystal Sky Cream White Azul — top4_recent_active_published
+  - 2. Tênis Adidas Tokyo Mary Jane Cream White Red Gold Metallic Creme — top4_recent_active_published
+  - 3. Tênis Adidas Tokyo MJ Core Black Cream White Gold Metallic Preto — top4_recent_active_published
+  - 4. Tênis Adidas Tokyo Mary Jane Sandy Pink Earth Strata Rosa — top4_recent_active_published
+- Jason Markk (`jason-markk`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Jason Markk Premium Shoe Cleaner (236ml) — top4_recent_active_published
+  - 2. Jason Markk Refresh Spray — top4_recent_active_published
+  - 3. Jason Markk Durables Cleaning Brush — top4_recent_active_published
+  - 4. Jason Markk Delicates Cleaning Brush — top4_recent_active_published
+- New Balance 1906R (`new-balance-1906r`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis New Balance 1906L Black Suede Preto — top4_recent_active_published
+  - 2. Tênis New Balance 1906L Silver Metallic Black Prateado — top4_recent_active_published
+  - 3. Tênis New Balance 1906L Magnet Cinza — top4_recent_active_published
+  - 4. Tênis New Balance 1906L Olive Khaki Verde — top4_recent_active_published
+- Sufgang (`sufgang`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Moletom Sufgang KML Preto — top4_recent_active_published
+  - 2. Camiseta Sufgang Stunt Master Azul — top4_recent_active_published
+  - 3. Camiseta Sufgang Stunt Master Cinza — top4_recent_active_published
+  - 4. Camiseta Sufgang Stunt Master Preto — top4_recent_active_published
+- Dane-se x Rubem Valentim (`dane-se-x-rubem-valentim`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta Oversized Dane-se x Rubem Valentim Relevo 79 Marrom — top4_recent_active_published
+  - 2. Camiseta Oversized Dane-se x Rubem Valentim 1981 Bordo — top4_recent_active_published
+  - 3. Camiseta Regular Dane-se x Rubem Valentim 1989 Marinho — top4_recent_active_published
+  - 4. Camiseta Dane-se x Rubem Valentim Pintura Verde — top4_recent_active_published
+- Havaianas (`havaianas`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Chinelo Havaianas Top Dolce & Gabbana Florals Rosa — top4_recent_active_published
+  - 2. Chinelo Havaianas Top Dolce & Gabbana Faux Fur Zebra Preto — top4_recent_active_published
+  - 3. Chinelo Havaianas Top Dolce & Gabbana Faux Fur Leopardo Marrom — top4_recent_active_published
+  - 4. Chinelo Havaianas Top Dolce & Gabbana Banano Verde — top4_recent_active_published
+- New Balance 1906L (`new-balance-1906l`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis New Balance 1906L Black Suede Preto — top4_recent_active_published
+  - 2. Tênis New Balance 1906L Silver Metallic Black Prateado — top4_recent_active_published
+  - 3. Tênis New Balance 1906L Magnet Cinza — top4_recent_active_published
+  - 4. Tênis New Balance 1906L Olive Khaki Verde — top4_recent_active_published
+- by Tamara Rudge (`by-tamara-rudge`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom — top4_recent_active_published
+  - 2. Tênis Nike Moon Shoe SP Jacquemus Off White — top4_recent_active_published
+  - 3. Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa — top4_recent_active_published
+  - 4. Tênis Nike Moon Shoe SP Jacquemus University Red Vermelho — top4_recent_active_published
+- Onitsuka Tiger Mexico Mid (`onitsuka-tiger-mexico-mid`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico Mid Runner Cream/Directoire Blue Bege — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger Mexico Mid Runner Silver/Cream Prateado — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger Mexico Mid Runner Kids Birch/India INK Bege — top4_recent_active_published
+  - 4. Tênis Onitsuka Tiger Mexico Mid Runner Kids White/Directoire Blue Branco — top4_recent_active_published
+- Onitsuka Tiger x Versace (`onitsuka-tiger-x-versace`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown Blue Marrom — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger x Versace Sakura Leather Loafers Brown White Marrom — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Metallic Têniss Silver Gold Prateado — top4_recent_active_published
+  - 4. Tênis Onitsuka Tiger x Versace TAI-CHI Sakura Suede Têniss Blue Azul — top4_recent_active_published
+- Adidas x Clot (`adidas-x-clot`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Taekwondo Caroline Hu x CLOT Black Preto — top4_recent_active_published
+  - 2. Tênis Adidas Taekwondo Caroline Hu x CLOT Pink Silver Rosa — top4_recent_active_published
+  - 3. Tênis Adidas Taekwondo Caroline Hu x CLOT White Royal Branco — top4_recent_active_published
+  - 4. Tênis Adidas Gazelle Clot by Edison Chen Bege — top4_recent_active_published
+- Carhartt (`carhartt`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Boné Carhartt Canvas Marrom — top4_recent_active_published
+  - 2. Boné Carhartt Canvas Preto — top4_recent_active_published
+  - 3. Boné Carhartt Canvas Script Graphic Preto — top4_recent_active_published
+  - 4. Boné Carhartt Canvas Mesh-Back Bege — top4_recent_active_published
+- LK Picks (`lk-picks`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Samba Jane 'Black White Gum' Preto — top4_recent_active_published
+  - 2. Tênis Adidas Handball Spezial Earth Strata Gum Marrom — top4_recent_active_published
+  - 3. Tênis Adidas Ballerina Bad Bunny Off White Black Gum Branco — top4_recent_active_published
+  - 4. Tênis New Balance 9060 Sea Salt Raincloud Cinza — top4_recent_active_published
+- Nike x Off White (`nike-x-off-white`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Dunk Low x Off-White Pine Green Verde — top4_recent_active_published
+  - 2. Tênis Nike Dunk Low x Off White "Lot 43" Cinza — top4_recent_active_published
+  - 3. Tênis Nike Dunk Low x Off White "Lot 23" Cinza — top4_recent_active_published
+  - 4. Camiseta Nike x Off-White "Short-Sleeve Top" Branco — top4_recent_active_published
+- Onitsuka Tiger Moage CO (`onitsuka-tiger-moage-co`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger Moage CO Birch Black Bege — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger Moage White/White Branco — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger Moage Mineral Beige/Vibrant Yellow Bege — top4_recent_active_published
+  - 4. Tênis Onitsuka Tiger Moage Glacier Grey/Off White Bege — top4_recent_active_published
+- Onitsuka Tiger Mexico 66 Slip-On (`onitsuka-tiger-mexico-66-slip-on`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 Slip-On Kids Birch/Midnight Bege — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger Mexico 66 Slip-On Kids Branco — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger Mexico 66 Slip-On White Branco — top4_recent_active_published
+  - 4. Tênis Onitsuka Tiger Mexico 66 Slip-On Black Preto — top4_recent_active_published
+- Palm Angels (`palm-angels`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Óculos de Sol Palm Angels PERI034-1007 Preto — top4_recent_active_published
+  - 2. Óculos de Sol Palm Angels PERI037-0107 Branco — top4_recent_active_published
+  - 3. Óculos de Sol Palm Angels PERI049-1007 Preto — top4_recent_active_published
+  - 4. Óculos de Sol Palm Angels PERI055-1007 Preto — top4_recent_active_published
+- Yeezy Slide (`yeezy-slide`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis adidas Yeezy Slide Slate Marine Azul Escuro — top4_recent_active_published
+  - 2. Tênis Yeezy Slide Azure Azul — top4_recent_active_published
+  - 3. Tênis Yeezy Slide Pure (2022) Bege — top4_recent_active_published
+  - 4. Tênis Yeezy Slide Onyx Preto — top4_recent_active_published
+- Acessórios Alo Yoga (`acessorios-alo-yoga`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Meia Alo Yoga Throwback Barre Branca — top4_recent_active_published
+  - 2. Meia Alo Yoga Throwback Barre Preto — top4_recent_active_published
+  - 3. Meia Alo Yoga Unisex Half-Crew Throwback — top4_recent_active_published
+  - 4. Boné Alo Yoga Off-Duty Branco — top4_recent_active_published
+- Alo Yoga Runner (`alo-yoga-runner`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Alo Yoga Alo Runner Pink Rosa — top4_recent_active_published
+  - 2. Tênis Alo Yoga ALO Runner Branco — top4_recent_active_published
+  - 3. Tênis Alo Yoga ALO Runner Preto — top4_recent_active_published
+  - 4. Tênis Alo Yoga ALO Runner Cinza — top4_recent_active_published
+- Asics GT-2160 (`asics-gt-2160`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Asics GT-2160 x JJJJound White Branco — top4_recent_active_published
+  - 2. Tênis Asics GT-2160 x PaperGirl Beams White Silver Branco — top4_recent_active_published
+  - 3. Tênis Asics GT-2160 x Gallery Dept. ComplexCon Cinza — top4_recent_active_published
+  - 4. Tênis Asics GT-2160 x Kith Marvel Villains Spider-Man/Venom Colorido — top4_recent_active_published
+- Egho Studios (`egho-studios`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta Egho Studios Boxy Faded 'O Culto' Cinza — inactive_or_leftover
+  - 2. Camiseta Egho Studios Boxy Faded Chumbo — inactive_or_leftover
+  - 3. Moletom Egho Studios Grind Vermelho — inactive_or_leftover
+  - 4. Camiseta Egho Studios Boxy Faded Vermelha — inactive_or_leftover
+- Nike x Jacquemus Moon Shoe SP (`nike-x-jacquemus-moon-shoe-sp`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Moon Shoe SP Jacquemus Medium Brown Marrom — top4_recent_active_published
+  - 2. Tênis Nike Moon Shoe SP Jacquemus Off White — top4_recent_active_published
+  - 3. Tênis Nike Moon Shoe SP Jacquemus Pale Pink Rosa — top4_recent_active_published
+  - 4. Tênis Nike Moon Shoe SP Jacquemus University Red Vermelho — top4_recent_active_published
+- On Running Cloudtilt (`on-running-cloudtilt`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis On Running Cloudtilt 'Black Ivory' Branco — top4_recent_active_published
+  - 2. Tênis On Running Cloudtilt Loewe Denim Blue Azul — top4_recent_active_published
+  - 3. Tênis On Running Cloudtilt Loewe Denim Grey Cinza — top4_recent_active_published
+  - 4. Tênis On Running Cloudtilt Loewe All Black Preto — inactive_or_leftover
+- Onitsuka Tiger California 78 EX (`onitsuka-tiger-california-78-ex`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Onitsuka Tiger California 78 EX Black/Oatmel Preto — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger California 78 EX Monument Cream/Directoire Blue Off White — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger California 78 EX Monument Blue Cream Azul — top4_recent_active_published
+  - 4. Onitsuka Tiger California 78 EX Birch/Peacoat Bege — inactive_or_leftover
+- Yeezy Foam Runner (`yeezy-foam-runner`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Yeezy Foam Runner Carbon Preto — top4_recent_active_published
+  - 2. Tênis Yeezy Foam Runner MX Cinder Marrom — top4_recent_active_published
+  - 3. Tênis Yeezy Foam Runner Stone Sage Bege — top4_recent_active_published
+  - 4. Tênis Yeezy Foam Runner MX Sand Grey Cinza — top4_recent_active_published
+- Adidas ADI2000 (`adidas-adi2000`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis ADI2000 Triple Black Preto — top4_recent_active_published
+  - 2. Tênis adidas ADI2000 Chalk White Branco — top4_recent_active_published
+  - 3. Tênis Yu-Gi-Oh! x ADI2000 Yugi's World Preto — top4_recent_active_published
+  - 4. Tênis Yu-Gi-Oh! x adidas ADI2000 Dark Magician Branco — top4_recent_active_published
+- Ami Paris (`ami-paris`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta Ami Paris de Coeur Preto — top4_recent_active_published
+  - 2. Camiseta Ami Paris de Coeur Branco — top4_recent_active_published
+  - 3. Camiseta Ami Paris de Coeur Azul — top4_recent_active_published
+  - 4. Camiseta Ami Paris de Coeur Rouge Azul — top4_recent_active_published
+- Nike x Travis Scott Jumpman Jack (`nike-jordan-jumpman-jack-travis-scott`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Air Jordan Chase B x Travis Scott x Jumpman Jack TR Black Night Silver Preto — top4_recent_active_published
+  - 2. Tênis Nike Travis Scott x Jordan Jumpman Jack TR 'University Red' — top4_recent_active_published
+  - 3. Tênis Nike Jordan Jumpman Jack TR Travis Scott Bright Cactus Amarelo — top4_recent_active_published
+  - 4. Tênis Nike Travis Scott x Jordan Jumpman Jack TR Dark Mocha Nobuck Lona — top4_recent_active_published
+- Onitsuka Tiger Mexico 66 Exposed (`onitsuka-tiger-mexico-66-exposed`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 SD Exposed Black/Black Preto — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger Mexico 66 SD Exposed Clay Canyon Marrom — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger Mexico 66 SD Exposed Foam Jade Verde — top4_recent_active_published
+  - 4. Tênis Onitsuka Tiger Mexico 66 SD Exposed Metropolis Cinza — top4_recent_active_published
+- Stussy (`stussy`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta Nike x Stussy "Increase The Peace" Branco — inactive_or_leftover
+  - 2. Moletom Nike x Stussy "NRG Hoodie Dark Grey Heather" Cinza — inactive_or_leftover
+  - 3. Moletom Nike x Stussy "U NRG RA Stone Washed PO HD Hoodie" Preto — inactive_or_leftover
+  - 4. Nike x Stussy Tee 'White' — inactive_or_leftover
+- Uniqlo x Kaws (`uniqlo-x-kaws`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta KAWS x Uniqlo Warhol UT Graphic 476352 Preto — top4_recent_active_published
+  - 2. Moletom KAWS x Uniqlo Warhol Graphic 472951 Cinza — top4_recent_active_published
+  - 3. Camiseta KAWS x Uniqlo Warhol UT Graphic 47635 Preto — top4_recent_active_published
+  - 4. Camiseta KAWS x Uniqlo Warhol UT Graphic 476350 Branco — top4_recent_active_published
+- Adidas & Liberty London (`adidas-liberty-london`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas SL 72 OG Liberty London Better Scarlet Rosa — top4_recent_active_published
+  - 2. Tênis Adidas Samba OG Liberty London Better Scarlet Branco — top4_recent_active_published
+  - 3. Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Stripes Multi-Color — top4_recent_active_published
+  - 4. Tênis Adidas Gazelle Indoor Liberty London Floral Embroidery Multi-Color — top4_recent_active_published
+- Adidas Japan (`adidas-japan`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Japan Brain Dead Brown Hazel Yellow Amarelo — top4_recent_active_published
+  - 2. Tênis Adidas Japan Brain Dead Black Warm Vanilla Preto — top4_recent_active_published
+  - 3. Tênis adidas Japan White Black Branco — top4_recent_active_published
+  - 4. Tênis adidas Japan Core Black White Preto — inactive_or_leftover
+- Adidas Superstar (`adidas-superstar`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis adidas Superstar x CLOT Chinese New Year Preto — top4_recent_active_published
+  - 2. Tênis Adidas Superstar x Wales Bonner Croc Wonder White Branco — top4_recent_active_published
+  - 3. Tênis adidas Superstar x Korn 30th Anniversary Preto — top4_recent_active_published
+  - 4. Tênis adidas Superstar XLG x Hello Kity Blue Brust Azul — inactive_or_leftover
+- Air Jordan 3 (`air-jordan-3`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Air Jordan 3 OG Rare Air Preto — top4_recent_active_published
+  - 2. Tênis Nike Air Jordan 3 Retro Black Cat Preto — top4_recent_active_published
+  - 3. Tênis Nike Air Jordan 3 Retro x WNBA Desert Camo Bege — top4_recent_active_published
+  - 4. Tênis Nike Air Jordan 3 Retro x J Balvin "Rio" Preto — top4_recent_active_published
+- Alo Yoga Slipper Recovery (`alo-yoga-slipper-recovery`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Slipper Alo Yoga Recovery Espresso Marrom — top4_recent_active_published
+  - 2. Slipper Alo Yoga Recovery Black Preto — top4_recent_active_published
+  - 3. Slipper Alo Yoga Recovery Ivory Off White — top4_recent_active_published
+  - 4. Slipper Alo Yoga Recovery Saddle/Ivory Bege — top4_recent_active_published
+- Bermuda | Apparels (`bermuda-streetwear`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Bermuda Saint Studio Alfaiataria Algodão Orgânico Risca de Giz Preto — top4_recent_active_published
+  - 2. Bermuda Chino Saint Studio Supima Caqui — top4_recent_active_published
+  - 3. Bermuda Nude Project Capicci Caperi Jeans — inactive_or_leftover
+  - 4. Bermuda Chino Saint Studio Supima Preto — inactive_or_leftover
+- Dane-se x Athos Bulcão (`athos-bulcao`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta Regular Dane-se x Athos Bulcão Azulejos Branco — top4_recent_active_published
+  - 2. Camiseta Painel Dane-se x Athos Bulcão Torre de TV Branco — top4_recent_active_published
+  - 3. Camiseta Regular Dane-se x Athos Bulcão Igrejinha Preto — top4_recent_active_published
+  - 4. Camiseta Painel Dane-se x Athos Bulcão 107 Norte Branco — top4_recent_active_published
+- Maison Mihara Yasuhiro Peterson (`maison-mihara-yasuhiro-peterson`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Maison Mihara Yasuhiro "PETERSON"OG Sole Leather Low-top Black Preto/Branco — top4_recent_active_published
+  - 2. Tênis Maison Mihara Yasuhiro "PETERSON23" OG Sole Vintage Suede Low-top Bege — top4_recent_active_published
+  - 3. Tênis Maison Mihara Yasuhiro "Peterson" OG Sole Canvas Low-top Black Preto — top4_recent_active_published
+  - 4. Tênis Maison Mihara Yasuhiro "Peterson" OG Sole Canvas Low-top White Branco — top4_recent_active_published
+- MASP (`masp`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta MASP x Leonilson "Sem Titulo" Bege — top4_recent_active_published
+  - 2. Camiseta MASP x Leonilson "O Porta Fortuna" Bege — top4_recent_active_published
+  - 3. Camiseta MASP x Leonilson "O Grande Rio" Branco — top4_recent_active_published
+  - 4. Camiseta MASP x Leonilson "34 com Cicatrizes" Branco — top4_recent_active_published
+- MASP x Leonilson (`masp-x-leonilson`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta MASP x Leonilson "Sem Titulo" Bege — top4_recent_active_published
+  - 2. Camiseta MASP x Leonilson "O Porta Fortuna" Bege — top4_recent_active_published
+  - 3. Camiseta MASP x Leonilson "O Grande Rio" Branco — top4_recent_active_published
+  - 4. Camiseta MASP x Leonilson "34 com Cicatrizes" Branco — top4_recent_active_published
+- New Balance 550 (`new-balance-550`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis New Balance 550 x Aimé Leon Dore Brown Marrom — top4_recent_active_published
+  - 2. Tênis New Balance 550 Sashiko Pack Pecan Marrom — top4_recent_active_published
+  - 3. Tênis New Balance 550 White Pine Green Branco/Verde — top4_recent_active_published
+  - 4. Tênis New Balance 550 Sashiko Pack Linen Bege — inactive_or_leftover
+- Nike Vomero 5 (`nike-vomero-5`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Air Zoom Vomero 5 Doernbecher 2023 Laranja — top4_recent_active_published
+  - 2. Tênis Nike Zoom Vomero 5 Metallic Silver & Blue Tint Prateado/Azul — top4_recent_active_published
+  - 3. Tênis Nike Zoom Vomero 5 Metallic Silver Platinum Violet Prateado/Violeta — top4_recent_active_published
+  - 4. Tênis Nike Zoom Vomero 5 Photon Dust Metallic Silver Cinza — top4_recent_active_published
+- Onitsuka Tiger Otiger Court (`onitsuka-tiger-otiger-court`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger Otiger Court White/Black Branco — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger Otiger Court Black/Black Preto — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger Otiger Court Tiger Orange Laranja — top4_recent_active_published
+  - 4. Tênis Onitsuka Tiger Otiger Court Cream Bege — top4_recent_active_published
+- Onitsuka Tiger Tsunahiki Slip-On (`onitsuka-tiger-tsunahiki-slip-on`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger Tsunahiki Slip-On Sunflower Yellow/Black Amarelo — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger Tsunahiki Slip-On Birch/Indigo Navy Bege — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger Tsunahiki Slip-On White/Black Branco — top4_recent_active_published
+  - 4. Tênis Onitsuka Tiger Tsunahiki Slip-On White/Directoire Blue Branco — top4_recent_active_published
+- Trending Apparel (`trending-apparel`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Moletom Alo Yoga Cropped Accolade Preto — top4_recent_active_published
+  - 2. Camiseta Nude Project Global Soon — top4_recent_active_published
+  - 3. Jaqueta Lululemon Define Nulu — top4_recent_active_published
+  - 4. Camiseta Aimé Leon Dore Cycling Off White — inactive_or_leftover
+- Vans (`vans-todos-os-modelos`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Vans Knu Skool MTE-1 LX Imran Potato Azul — top4_recent_active_published
+  - 2. Tênis Vans Old Skool Lx  x Bape Abc Camo Pink Blue Green Preto — top4_recent_active_published
+  - 3. Tênis Vans Knu Skool MTE x Imra Potato Black Preto — top4_recent_active_published
+  - 4. Tênis Vans "Knu Old Skool Black White" Preto — top4_recent_active_published
+- Vans Skool (`vans-skool`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Vans Knu Skool MTE-1 LX Imran Potato Azul — top4_recent_active_published
+  - 2. Tênis Vans Old Skool Lx  x Bape Abc Camo Pink Blue Green Preto — top4_recent_active_published
+  - 3. Tênis Vans Knu Skool MTE x Imra Potato Black Preto — top4_recent_active_published
+  - 4. Tênis Vans "Knu Old Skool Black White" Preto — top4_recent_active_published
+- Adidas Adistar Jellyfish Pharrell Williams (`adidas-adistar-jellyfish-pharrell-williams`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Adidas Adistar Jellyfish Pharrell Williams Solid Grey Black Cinza — top4_recent_active_published
+  - 2. Tênis Adidas Adistar Jellyfish Pharrell Williams Real Green Verde — top4_recent_active_published
+  - 3. Tênis Adidas Adistar Jellyfish Pharrell Williams Focus Olive Orange Branco — top4_recent_active_published
+- Asics Gel-Kayano 14 (`asics-gel-kayano-14`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis ASICS Marvel vs. Bonécom x Kith x ASICS Gel Kayano 14 Ryu Branco — top4_recent_active_published
+  - 2. Tênis Asics Gel-Kayano 14 x Senna Black Gold Preto — top4_recent_active_published
+  - 3. Tênis Asics Gel-Kayano 14 x Senna White Red Branco — top4_recent_active_published
+- Crocs (`crocs`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Crocs Classic Clog SpongeBob SquarePants Amarelo — top4_recent_active_published
+  - 2. Tênis Crocs Classic Clog Spongebob SquarePants Patrick Star Rosa — top4_recent_active_published
+  - 3. Crocs Classic Clog x The Cars Lightning McQueen Vermelho — top4_recent_active_published
+- Denim Tears (`denim-tears`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Camiseta Manga Longa Denim Tears Cotton Wreath Verde — top4_recent_active_published
+  - 2. Camiseta Manga Longa Denim Tears Cotton Wreath Cinza — inactive_or_leftover
+  - 3. Camiseta Manga Longa Denim Tears Cotton Wreath Azul Marinho — inactive_or_leftover
+- Nike Air Rift (`nike-air-rift`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Air Rift Sail Bege — top4_recent_active_published
+  - 2. Tênis Nike Air Rift 'Triple Black' Preto — top4_recent_active_published
+  - 3. Tênis Nike Air Rift Triple White Branco — top4_recent_active_published
+- Nommi Series (`nommi-series`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Nommi Loveliness Never Ends Series Plush Blind Box Lacrado — inactive_or_leftover
+  - 2. Nommi Interesting Fruits Series Plush Blind Box (Lacrado) — inactive_or_leftover
+  - 3. Nommi Baby Series Plush Blind Box (Lacrado) — inactive_or_leftover
+- Onitsuka Tiger Mexico 66 Fringe (`onitsuka-tiger-mexico-66-fringe`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Onitsuka Tiger Mexico 66 Fringe Yellow/Black Amarelo — top4_recent_active_published
+  - 2. Tênis Onitsuka Tiger Mexico 66 Fringe Mocha Brown/Dark Brown Marrom — top4_recent_active_published
+  - 3. Tênis Onitsuka Tiger Mexico 66 Fringe Black/Black Preto — top4_recent_active_published
+- Autry (`autry`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Autry Medalist Low LL15 Branco — top4_recent_active_published
+  - 2. Tênis Autry Medalist Low LS75 Branco — top4_recent_active_published
+- Converse (`converse-todos-os-modelos`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Converse Chuck 70 High x Comme des Garçons PLAY Preto — top4_recent_active_published
+  - 2. Tênis Converse Chuck 70 Low x Comme des Garçons PLAY Preto — top4_recent_active_published
+- Converse Chuck 70 High (`converse-chuck-70-high`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Converse Chuck 70 High x Comme des Garçons PLAY Preto — top4_recent_active_published
+  - 2. Tênis Converse Chuck 70 Low x Comme des Garçons PLAY Preto — top4_recent_active_published
+- Nike Dunk High (`nike-dunk-high`): moves=0; admin_full_ok=True; public_top12_ok=True
+  - 1. Tênis Nike Dunk High x Wu Tang Clan Black and Pollen Amarelo — top4_recent_active_published
+  - 2. Tênis Nike SB Dunk High Pro Black and Metallic Gold Preto — top4_recent_active_published
+
+## Rollback
+- Snapshot: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/reports/auto-sort-collections/all-manual-ruleB-net-sales-ga4-20260529T151605Z/rollback-snapshot-pre-write.json`
+- Receipt JSON: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/reports/auto-sort-collections/all-manual-ruleB-net-sales-ga4-20260529T151605Z/receipt-final.json`
+
+## Não ações
+- Nenhum cron ativado.
+- Nenhum produto/preço/estoque/tema/tag/SEO/GMC/campanha/checkout/cliente alterado.

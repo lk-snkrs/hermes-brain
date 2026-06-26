@@ -133,9 +133,11 @@ Decisões registradas:
 - Meta/Google/Metricool confirmam gasto e atribuição de plataforma, não receita operacional final.
 - Klaviyo confirma objetos de e-mail, listas, templates, campaigns e status de envio.
 - Notion LK é destino operacional aprovado para compras/encomendas, mas writes exigem aprovação.
-- Judge.me e Frenet entram como fontes auxiliares de CRO/confiança/frete, ainda sem rotina recorrente.
+- Rivo/LK Rewards deve confirmar membros, pontos/status, tiers, benefícios, referrals e eventos de fidelidade quando acesso existir.
+- Judge.me confirma reviews, rating, status de publicação/moderação e associação produto/review.
+- Frenet entra como fonte auxiliar de frete, ainda sem rotina recorrente.
 
-Todo número executivo do LK OS deve ser classificado como `fact_shopify`, `fact_tiny_stock`, `fact_ga4`, `platform_signal`, `derived_reconciliation`, `manual_approval` ou `unknown`.
+Todo número executivo do LK OS deve ser classificado como `fact_shopify`, `fact_tiny_stock`, `fact_ga4`, `fact_rivo_loyalty`, `fact_judgeme_review`, `platform_signal`, `derived_reconciliation`, `derived_loyalty_crm`, `derived_review_cro`, `manual_approval` ou `unknown`.
 
 Artefatos:
 
@@ -161,6 +163,7 @@ LK Operating System
 ├── Google Merchant Center
 ├── Paid Traffic & Influencer Intelligence
 ├── CRM & RFM
+├── Customer Trust & Loyalty / LK Rewards & Reviews
 ├── Physical Store Intelligence
 ├── Content & Campaign Production Engine
 ├── Data & Integration Layer
@@ -331,13 +334,36 @@ Regra Lucas 2026-05-11 para sourcing futuro/pending:
 - StockX/GOAT geralmente usam tamanho americano; identificar se é US Men ou US Women e converter corretamente para o tamanho LK/BR/EU antes de comparar.
 - Para StockX/GOAT, custo final estimado deve usar a fórmula LK de importação da seção Pricing Intelligence.
 
-Fluxo Brasil v0.1:
+Atualização operacional 2026-05-14 — fluxo real LK Compras/Júlio/Notion:
+
+```text
+demanda concreta / venda / pedido
+→ confirmar produto + SKU + tamanho
+→ confirmar stockout/zero no Tiny
+→ Droper primeiro
+→ se Droper não resolver: StockX/GOAT fallback com normalização de tamanho
+→ decisão humana: menor preço viável ou fonte mais perto de SP se delta pequeno
+→ compra/logística humanas
+→ Notion/Júlio como registro/log, não automação autônoma
+```
+
+Regras adicionais:
+
+- Ranking de recompra usa janela de 120 dias (~4 meses), aprovada por Lucas.
+- Vendas devem ser agregadas por SKU/modelo antes de cruzar com variants/Tiny, evitando duplicação de receita quando um SKU aparece em múltiplos tamanhos.
+- `Tiny exact size zero` é elegível para pacote de aprovação Droper read-only depois do GMC final; `Tiny ambiguous/mismatch` exige sanity antes de marketplace.
+- Shopify zero/negativo é sinal, mas Tiny continua sendo verdade operacional de estoque.
+- Hermes pode preparar ranking, sanity e preview Notion/Júlio; não compra, reserva, escolhe importador/entrega, escreve Notion, manda WhatsApp ou contata fornecedor sem aprovação atual.
+
+Fluxo Brasil v0.2:
 
 ```text
 produto/tamanho vendido ou em risco
-→ checar Droper e fontes Brasil relevantes
-→ se fizer sentido, preparar mensagem para o grupo de compras/revendedores
-→ humano aprova antes de postar, negociar ou comprar
+→ confirmar Tiny zero/baixo no tamanho certo
+→ preparar card no Mission Control
+→ após aprovação inline: checar Droper read-only
+→ se Droper não resolve e houver nova aprovação: comparar StockX/GOAT
+→ Júlio/humano decide compra/logística e registra no Notion
 ```
 
 ## 13. Pricing Intelligence
@@ -504,6 +530,60 @@ Evidência da primeira ação P1:
 - rotina documentada em `areas/lk/sub-areas/crm/rotinas/klaviyo-p1-draft-campaign-2026-05-11.md`.
 
 A Fase 5 só é considerada pronta para repetição quando cada campanha futura gerar: público, motivo, produto, copy, risco, estoque/eligibilidade, artefato visual, objeto Klaviyo/WhatsApp em modo seguro e aprovação final antes de envio.
+
+## 16B. Customer Trust & Loyalty — LK Rewards e Judge.me
+
+Objetivo: conectar fidelidade premium e prova social ao LK OS sem transformar relacionamento em desconto genérico.
+
+### LK Rewards / Rivo
+
+Modelo canônico aprovado por Lucas:
+
+```text
+gasto acumulado / status
+→ marco atingido
+→ benefício automático ou fila humana de cumprimento
+→ comunicação premium simples
+```
+
+Regras iniciais confirmadas:
+
+- nome: **LK Rewards**;
+- 1 ponto = R$1;
+- tiers/status por gasto acumulado;
+- benefícios por marco, não troca manual clássica de pontos por desconto;
+- objetivo duplo: recompra/margem e experiência premium/VIP;
+- aniversário é desejado, mas a LK ainda não capta data no checkout/customer profile.
+
+Pendências de regra antes de qualquer write:
+
+- tabela final de tiers/marcos/benefícios;
+- lifetime spend vs janela móvel;
+- tratamento de devoluções/cancelamentos;
+- expiração de pontos/status;
+- viabilidade Rivo para representar benefício automático;
+- fluxo de cumprimento: físico, cupom, humano, Notion ou combinação.
+
+### Judge.me / Reviews
+
+Regras iniciais confirmadas:
+
+- Judge.me auto-publica reviews;
+- Lucas deleta reviews ruins manualmente;
+- Lucas responde pessoalmente reviews negativas;
+- review request deveria sair por Klaviyo, mas precisa auditoria;
+- reviews devem alimentar PDP/CRO, CRM/Klaviyo, atendimento/reputação e ranking de produtos, por fase.
+
+### Guardrail
+
+Sem aprovação explícita, Hermes não cria cupom/tier/benefício, não responde/modera review, não dispara Klaviyo/WhatsApp/SMS, não altera tema/página Shopify e não escreve em Rivo/Judge.me/Shopify/Klaviyo/Notion/Supabase.
+
+Artefatos iniciais:
+
+- `empresa/integracoes/rivo.md`.
+- `empresa/integracoes/judgeme.md`.
+- `areas/lk/rotinas/lk-customer-trust-loyalty-spine-v0-2026-05-13.md`.
+- `areas/lk/rotinas/lk-rewards-automatic-spend-milestone-model-2026-05-13.md`.
 
 ## 17. Online vs loja física
 
@@ -770,6 +850,54 @@ Separar de SEO. GMC cuida de feed e Google Shopping:
 - preço;
 - divergência Shopify/Tiny;
 - performance Shopping/Google Ads.
+
+Atualização operacional 2026-05-14:
+
+- `availability` no GMC segue política comercial LK: manter visibilidade como `in stock` quando aplicável, mesmo que Tiny esteja zero; Tiny continua verdade de estoque para operação/sourcing.
+- P2A (`googleProductCategory` + `productTypes`) é frente separada de P2B/P2C títulos, preço, disponibilidade, imagem e Shopify.
+- Execuções Merchant aprovadas devem ser seriais, com rollback privado, progresso JSONL, readback exato e relatório final antes de novo pacote.
+- Enquanto um executor P2A estiver ativo, Mission Control pode preparar ranking/PRD, mas não iniciar write concorrente.
+
+## 22B. Mission Control operacional
+
+Mission Control é o cockpit curto do LK OS. Ele consolida crons, ledger de decisões, GMC, filas de sourcing, bloqueios e próximos passos sem exigir que Lucas leia múltiplos reports.
+
+Entradas mínimas:
+
+- `fact_shopify`: vendas, pedidos, SKU, tamanho, receita e última venda.
+- `fact_tiny_stock`: estoque operacional por SKU/tamanho no depósito `LK | CONTROLE ESTOQUE`.
+- `fact_ga4` e `platform_signal`: tráfego, mídia e campanha apenas como contexto, não como receita operacional final.
+- `manual_approval`: aprovações/correções de Lucas/Júlio.
+- `derived_reconciliation`: score, deduplicação, sanity e status de fila.
+- `gmc_state`: baseline/progresso Merchant quando houver frente aprovada em execução.
+
+Cards executivos obrigatórios:
+
+- prioridade e estado (`ready`, `needs_sanity`, `blocked`, `monitor`);
+- produto + SKU + tamanho;
+- demanda 120 dias: unidades, receita e última venda;
+- estoque Shopify como sinal; Tiny como verdade operacional;
+- próximo passo seguro;
+- bloqueios explícitos;
+- aprovação necessária inline para qualquer ação externa ou write.
+
+Estados padrão para recompra/sourcing:
+
+```text
+stockout_exact_ready
+→ Tiny zero no tamanho exato; elegível para pacote Droper read-only após GMC final.
+
+stockout_sanity_needed
+→ Tiny zero existe, mas tamanho/SKU está ambíguo; exige sanity antes de marketplace.
+
+shopify_zero_needs_tiny_confirmation
+→ Shopify sinaliza zero/negativo, mas Tiny ainda não confirmou; não vira sourcing.
+
+monitor_or_no_action
+→ demanda insuficiente, estoque não crítico ou dados conflitantes.
+```
+
+Artefato v0.2: `areas/lk/projetos/lk-os-prd-continuation-2026-05-14.md`.
 
 ## 23. Cadência operacional alvo
 

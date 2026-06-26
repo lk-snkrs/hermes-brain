@@ -1,0 +1,106 @@
+# Gate B2 P1 — correction packet — tenis-new-balance-9060-sea-salt-concrete-branco
+
+- title: `Tênis New Balance 9060 Sea Salt Concrete Branco`
+- priority: `P1_saneamento`
+- lane: `SHOPIFY_DUPLICATE_PACKET`
+- proposed_action: Preparar diff Shopify por variante/SKU duplicado e rollback; NÃO executar write sem aprovação escopada.
+- row_count: `105`
+- prefixes: `U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060, U9060ECA, U9060ECA, U9060ECA, U9060ECA, U9060ECA, U9060ECA, U9060ECA, U9060ECA, U9060ECA, U9060ECA, U9060ECA, U9060ECA, U9060ECA, U9060ECA, U9060ECA`
+
+## Status counts
+- matched_exact_sku_stock_missing_deposit: `5`
+- matched_exact_sku_stock_resolved: `78`
+- shopify_duplicate_sku_blocked: `4`
+- shopify_variant_tiny_missing: `17`
+- tiny_duplicate_exact_code_blocked: `1`
+
+## Linhas principais
+- `U9060` | shopify_variant_tiny_missing | Shopify SKU `U9060` | Tiny `` id ``
+- `U9060ECA-1` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ECA-1` | Tiny `U9060ECA-1` id `1058790945` | saldo LK CONTROLE: 4.0
+- `U9060EEB` | shopify_duplicate_sku_blocked | Shopify SKU `U9060EEB` | Tiny `U9060EEB` id `1056251311` | saldo LK CONTROLE: 0.0
+- `U9060NRI-1` | matched_exact_sku_stock_resolved | Shopify SKU `U9060NRI-1` | Tiny `U9060NRI-1` id `1058611482` | saldo LK CONTROLE: 0.0
+- `U9060VNG` | shopify_duplicate_sku_blocked | Shopify SKU `U9060VNG` | Tiny `U9060VNG` id `1057764823` | saldo LK CONTROLE: 0.0
+- `U9060WHT-1` | matched_exact_sku_stock_resolved | Shopify SKU `U9060WHT-1` | Tiny `U9060WHT-1` id `1059847071` | saldo LK CONTROLE: 2.0
+- `U9060ZGA-1` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGA-1` | Tiny `U9060ZGA-1` id `1060371073` | saldo LK CONTROLE: 0.0
+- `U9060ZGB-1` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGB-1` | Tiny `U9060ZGB-1` id `1060441294` | saldo LK CONTROLE: 0.0
+- `U9060ECA-2` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ECA-2` | Tiny `U9060ECA-2` id `1058790948` | saldo LK CONTROLE: 1.0
+- `U9060EEB-1` | matched_exact_sku_stock_resolved | Shopify SKU `U9060EEB-1` | Tiny `U9060EEB-1` id `1062072231` | saldo LK CONTROLE: 0.0
+- `U9060EED-1` | matched_exact_sku_stock_resolved | Shopify SKU `U9060EED-1` | Tiny `U9060EED-1` id `1058347329` | saldo LK CONTROLE: 1.0
+- `U9060GCB` | shopify_duplicate_sku_blocked | Shopify SKU `U9060GCB` | Tiny `U9060GCB` id `1056978997`
+- `U9060GRY-5` | matched_exact_sku_stock_resolved | Shopify SKU `U9060GRY-5` | Tiny `U9060GRY-5` id `1060964562` | saldo LK CONTROLE: 2.0
+- `U9060NRI-2` | matched_exact_sku_stock_resolved | Shopify SKU `U9060NRI-2` | Tiny `U9060NRI-2` id `1058611485` | saldo LK CONTROLE: 0.0
+- `U9060SFB-1` | matched_exact_sku_stock_resolved | Shopify SKU `U9060SFB-1` | Tiny `U9060SFB-1` id `1058347370` | saldo LK CONTROLE: 0.0
+- `U9060WHT-2` | matched_exact_sku_stock_resolved | Shopify SKU `U9060WHT-2` | Tiny `U9060WHT-2` id `1059847074` | saldo LK CONTROLE: 0.0
+- `U9060ZGA-2` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGA-2` | Tiny `U9060ZGA-2` id `1060371076` | saldo LK CONTROLE: 0.0
+- `U9060ZGB-2` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGB-2` | Tiny `U9060ZGB-2` id `1060441297` | saldo LK CONTROLE: 0.0
+- `U9060-1` | matched_exact_sku_stock_resolved | Shopify SKU `U9060-1` | Tiny `U9060-1` id `1060371505` | saldo LK CONTROLE: 0.0
+- `U9060ECA-3` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ECA-3` | Tiny `U9060ECA-3` id `1058790951` | saldo LK CONTROLE: 0.0
+- `U9060EEB-2` | matched_exact_sku_stock_missing_deposit | Shopify SKU `U9060EEB-2` | Tiny `U9060EEB-2` id `1062072234`
+- `U9060EED-2` | shopify_variant_tiny_missing | Shopify SKU `U9060EED-2` | Tiny `` id ``
+- `U9060GRY-3` | shopify_variant_tiny_missing | Shopify SKU `U9060GRY-3` | Tiny `` id ``
+- `U9060NRI-3` | shopify_variant_tiny_missing | Shopify SKU `U9060NRI-3` | Tiny `` id ``
+- `U9060SFB-2` | matched_exact_sku_stock_resolved | Shopify SKU `U9060SFB-2` | Tiny `U9060SFB-2` id `1058347373` | saldo LK CONTROLE: 0.0
+- `U9060VNG-7` | matched_exact_sku_stock_resolved | Shopify SKU `U9060VNG-7` | Tiny `U9060VNG-7` id `1068662253` | saldo LK CONTROLE: 0.0
+- `U9060WHT-3` | matched_exact_sku_stock_resolved | Shopify SKU `U9060WHT-3` | Tiny `U9060WHT-3` id `1059847077` | saldo LK CONTROLE: 0.0
+- `U9060ZGA-3` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGA-3` | Tiny `U9060ZGA-3` id `1060371079` | saldo LK CONTROLE: 0.0
+- `U9060ZGB-3` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGB-3` | Tiny `U9060ZGB-3` id `1060441300` | saldo LK CONTROLE: 0.0
+- `U9060-2` | matched_exact_sku_stock_resolved | Shopify SKU `U9060-2` | Tiny `U9060-2` id `1060371508` | saldo LK CONTROLE: 0.0
+- `U9060ECA-4` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ECA-4` | Tiny `U9060ECA-4` id `1058790954` | saldo LK CONTROLE: 0.0
+- `U9060EEB-3` | matched_exact_sku_stock_resolved | Shopify SKU `U9060EEB-3` | Tiny `U9060EEB-3` id `1062072237` | saldo LK CONTROLE: 0.0
+- `U9060EED-3` | matched_exact_sku_stock_resolved | Shopify SKU `U9060EED-3` | Tiny `U9060EED-3` id `1058347335` | saldo LK CONTROLE: 0.0
+- `U9060GRY-4` | matched_exact_sku_stock_resolved | Shopify SKU `U9060GRY-4` | Tiny `U9060GRY-4` id `1057022457` | saldo LK CONTROLE: 3.0
+- `U9060NRI-4` | matched_exact_sku_stock_missing_deposit | Shopify SKU `U9060NRI-4` | Tiny `U9060NRI-4` id `1058611491`
+- `U9060NV-1` | shopify_variant_tiny_missing | Shopify SKU `U9060NV-1` | Tiny `` id ``
+- `U9060SFB-3` | shopify_variant_tiny_missing | Shopify SKU `U9060SFB-3` | Tiny `` id ``
+- `U9060TRU-37` | matched_exact_sku_stock_resolved | Shopify SKU `U9060TRU-37` | Tiny `U9060TRU-37` id `937678486` | saldo LK CONTROLE: 0.0
+- `U9060VNG-1` | matched_exact_sku_stock_resolved | Shopify SKU `U9060VNG-1` | Tiny `U9060VNG-1` id `1057764830` | saldo LK CONTROLE: 0.0
+- `U9060WHT-4` | matched_exact_sku_stock_resolved | Shopify SKU `U9060WHT-4` | Tiny `U9060WHT-4` id `1059847080` | saldo LK CONTROLE: 0.0
+- `U9060ZGA-4` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGA-4` | Tiny `U9060ZGA-4` id `1060371082` | saldo LK CONTROLE: 0.0
+- `U9060ZGB-4` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGB-4` | Tiny `U9060ZGB-4` id `1060441303` | saldo LK CONTROLE: 0.0
+- `U9060EED-5` | matched_exact_sku_stock_resolved | Shopify SKU `U9060EED-5` | Tiny `U9060EED-5` id `1058347341` | saldo LK CONTROLE: 0.0
+- `U9060SFB-4` | matched_exact_sku_stock_resolved | Shopify SKU `U9060SFB-4` | Tiny `U9060SFB-4` id `1058347379` | saldo LK CONTROLE: 0.0
+- `U9060-3` | matched_exact_sku_stock_resolved | Shopify SKU `U9060-3` | Tiny `U9060-3` id `1060371511` | saldo LK CONTROLE: 0.0
+- `U9060ECA-5` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ECA-5` | Tiny `U9060ECA-5` id `1058790957` | saldo LK CONTROLE: 1.0
+- `U9060EEB-4` | matched_exact_sku_stock_resolved | Shopify SKU `U9060EEB-4` | Tiny `U9060EEB-4` id `1062072240` | saldo LK CONTROLE: 0.0
+- `U9060EED-4` | matched_exact_sku_stock_missing_deposit | Shopify SKU `U9060EED-4` | Tiny `U9060EED-4` id `1058347338`
+- `U9060NRI-5` | shopify_variant_tiny_missing | Shopify SKU `U9060NRI-5` | Tiny `` id ``
+- `U9060TRU-38` | shopify_variant_tiny_missing | Shopify SKU `U9060TRU-38` | Tiny `` id ``
+- `U9060VNG-2` | shopify_variant_tiny_missing | Shopify SKU `U9060VNG-2` | Tiny `` id ``
+- `U9060WHT-5` | matched_exact_sku_stock_resolved | Shopify SKU `U9060WHT-5` | Tiny `U9060WHT-5` id `1059847083` | saldo LK CONTROLE: 0.0
+- `U9060ZGA-5` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGA-5` | Tiny `U9060ZGA-5` id `1060371085` | saldo LK CONTROLE: 0.0
+- `U9060ZGB-5` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGB-5` | Tiny `U9060ZGB-5` id `1060441306` | saldo LK CONTROLE: 1.0
+- `U9060-4` | matched_exact_sku_stock_resolved | Shopify SKU `U9060-4` | Tiny `U9060-4` id `1060371514` | saldo LK CONTROLE: 0.0
+- `U9060EEB-5` | matched_exact_sku_stock_resolved | Shopify SKU `U9060EEB-5` | Tiny `U9060EEB-5` id `1062072243` | saldo LK CONTROLE: 1.0
+- `U9060NRI-6` | matched_exact_sku_stock_resolved | Shopify SKU `U9060NRI-6` | Tiny `U9060NRI-6` id `1058611497` | saldo LK CONTROLE: 0.0
+- `U9060TRU-39` | matched_exact_sku_stock_resolved | Shopify SKU `U9060TRU-39` | Tiny `U9060TRU-39` id `937678501` | saldo LK CONTROLE: 0.0
+- `U9060VNG-3` | matched_exact_sku_stock_resolved | Shopify SKU `U9060VNG-3` | Tiny `U9060VNG-3` id `1057764836` | saldo LK CONTROLE: 1.0
+- `U9060WHT-6` | matched_exact_sku_stock_resolved | Shopify SKU `U9060WHT-6` | Tiny `U9060WHT-6` id `1059847086` | saldo LK CONTROLE: 0.0
+- `U9060ZGA-6` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGA-6` | Tiny `U9060ZGA-6` id `1060371088` | saldo LK CONTROLE: 0.0
+- `U9060ZGB-6` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGB-6` | Tiny `U9060ZGB-6` id `1060441309` | saldo LK CONTROLE: 1.0
+- `U9060-5` | shopify_variant_tiny_missing | Shopify SKU `U9060-5` | Tiny `` id ``
+- `U9060EEB-6` | shopify_variant_tiny_missing | Shopify SKU `U9060EEB-6` | Tiny `` id ``
+- `U9060GRY` | shopify_duplicate_sku_blocked | Shopify SKU `U9060GRY` | Tiny `` id ``
+- `U9060NRI-7` | matched_exact_sku_stock_resolved | Shopify SKU `U9060NRI-7` | Tiny `U9060NRI-7` id `1058611500` | saldo LK CONTROLE: 0.0
+- `U9060TRU-40` | matched_exact_sku_stock_resolved | Shopify SKU `U9060TRU-40` | Tiny `U9060TRU-40` id `937678507` | saldo LK CONTROLE: 0.0
+- `U9060VNG-4` | matched_exact_sku_stock_resolved | Shopify SKU `U9060VNG-4` | Tiny `U9060VNG-4` id `1057764839` | saldo LK CONTROLE: 0.0
+- `U9060WHT-7` | matched_exact_sku_stock_resolved | Shopify SKU `U9060WHT-7` | Tiny `U9060WHT-7` id `1059847089` | saldo LK CONTROLE: 0.0
+- `U9060ZGA-7` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGA-7` | Tiny `U9060ZGA-7` id `1060371091` | saldo LK CONTROLE: 0.0
+- `U9060EEB-7` | matched_exact_sku_stock_resolved | Shopify SKU `U9060EEB-7` | Tiny `U9060EEB-7` id `1062072249` | saldo LK CONTROLE: 0.0
+- `U9060GRY-1` | matched_exact_sku_stock_resolved | Shopify SKU `U9060GRY-1` | Tiny `U9060GRY-1` id `1056813845` | saldo LK CONTROLE: 0.0
+- `U9060NRI-8` | matched_exact_sku_stock_resolved | Shopify SKU `U9060NRI-8` | Tiny `U9060NRI-8` id `1058611503` | saldo LK CONTROLE: 0.0
+- `U9060TRU-41` | matched_exact_sku_stock_resolved | Shopify SKU `U9060TRU-41` | Tiny `U9060TRU-41` id `937678513` | saldo LK CONTROLE: 0.0
+- `U9060WHT-8` | matched_exact_sku_stock_resolved | Shopify SKU `U9060WHT-8` | Tiny `U9060WHT-8` id `1059847092` | saldo LK CONTROLE: 0.0
+- `U9060ZGA-8` | matched_exact_sku_stock_resolved | Shopify SKU `U9060ZGA-8` | Tiny `U9060ZGA-8` id `1060371094` | saldo LK CONTROLE: 0.0
+- `U9060EEB-8` | matched_exact_sku_stock_resolved | Shopify SKU `U9060EEB-8` | Tiny `U9060EEB-8` id `1062072252` | saldo LK CONTROLE: 0.0
+- `U9060GRY-2` | matched_exact_sku_stock_missing_deposit | Shopify SKU `U9060GRY-2` | Tiny `U9060GRY-2` id `1056864387`
+- `U9060NRI-9` | shopify_variant_tiny_missing | Shopify SKU `U9060NRI-9` | Tiny `` id ``
+- `U9060TRU-42` | shopify_variant_tiny_missing | Shopify SKU `U9060TRU-42` | Tiny `` id ``
+- ... +25 linhas no JSON/CSV agregado
+
+## Guardrails
+- Tiny write: `0`
+- Shopify write: `0`
+- Writes externos: `0`
+- Cron/webhook/runtime novo: `0`
+- Promessa de disponibilidade pública: `0`
+- Rollback: descartar artefatos locais; nada externo alterado.

@@ -1,0 +1,190 @@
+{
+  "operational_date": "2026-06-25",
+  "generated_at_utc": "2026-06-25T04:08:00Z",
+  "status": "ok",
+  "executive_summary": "Fechamento 01h BRT Brain-first/local. Brain Health 0/0 e Brain Improvement Score 100/100. Materiais relevantes: rota Shopify POS restock de hermes-webhooks corrigida no escopo aprovado e validada com no-op 200/ignored; LK Growth executou writes aprovados e limitados a SEO title/meta com receipts/rollback/readback; Zipper registrou pendência comercial por e-mail não entregue, sem draft/envio automático.",
+  "material_changes": [
+    {
+      "area": "Hermes Brain",
+      "change": "Gerado relatório diário e pacote de handoff 01h.",
+      "artifacts": [
+        "reports/daily-consolidation/2026-06-25.md",
+        "reports/daily-consolidation/2026-06-25-handoff.json",
+        "reports/daily-consolidation/latest-handoff.json"
+      ],
+      "external_write": false
+    },
+    {
+      "area": "Operações / Webhooks",
+      "change": "Rota lk-shopify-pos-restock corrigida para HERMES_WEBHOOK_SECRET e verificada por health/probe no-op em fluxo aprovado por Lucas.",
+      "artifacts": [
+        "areas/operacoes/reports/hermes-webhooks-shopify-route-secret-alignment-20260624-final.md",
+        "areas/operacoes/receipts/hermes-webhooks-shopify-route-secret-alignment-applied-20260624.md"
+      ],
+      "external_write": false,
+      "runtime_sensitive_action_observed": true,
+      "approval_recorded": true
+    },
+    {
+      "area": "LK Growth / Shopify",
+      "change": "Writes aprovados e escopados em SEO title/meta de PDPs, com receipts e rollback/readback.",
+      "artifacts": [
+        "areas/lk/sub-areas/growth/receipts/shopify-production/nb530-pdp-seo-meta-lote-minimo-20260625T000657Z/",
+        "areas/lk/sub-areas/growth/receipts/shopify-production/asics-gelnyc-nb740-seo-meta-20260625T002148Z/"
+      ],
+      "external_write": true,
+      "approval_recorded": true
+    },
+    {
+      "area": "Zipper OS",
+      "change": "Inbox needs-attention criado para e-mail comercial não entregue por caixa cheia do destinatário.",
+      "artifacts": [
+        "areas/zipper/inbox/email-intake/20260625T013523Z_mellina_nina_pandolfo_delivery_delay.md"
+      ],
+      "external_write": false
+    }
+  ],
+  "incidents": [
+    {
+      "area": "Zipper OS",
+      "severity": "attention",
+      "summary": "Gmail informou entrega incompleta de e-mail comercial de obras Nina Pandolfo por caixa cheia do destinatário.",
+      "sanitized_cause": "recipient inbox out of storage space; nenhum endereço reproduzido neste JSON.",
+      "next_action": "Aguardar tentativa final automática ou Lucas aprovar canal alternativo validado.",
+      "external_write_performed_by_this_job": false
+    },
+    {
+      "area": "Operações / Webhooks",
+      "severity": "watch",
+      "summary": "Correção de rota exigiu patch local do runtime instalado além da config; precisa reconciliação com source/pacote para evitar drift em upgrade.",
+      "sanitized_cause": "runtime installed package lacked effective route secret_doppler/run_script behavior.",
+      "next_action": "Reconciliar source/pacote Hermes em ciclo seguro com backup/testes.",
+      "external_write_performed_by_this_job": false
+    }
+  ],
+  "decisions_made_by_lucas": [
+    {
+      "decision": "Aprovação para alinhar lk-shopify-pos-restock a HERMES_WEBHOOK_SECRET, reiniciar/verificar gateway default e repetir probe Shopify no-op.",
+      "scope": "Config/route/gateway default/probe no-op; sem Vercel/Shopify/Doppler writes.",
+      "evidence": "areas/operacoes/receipts/hermes-webhooks-shopify-route-secret-alignment-applied-20260624.md"
+    },
+    {
+      "decision": "Aprovo tudo para pacote LK Growth/Shopify nb530-asics-gelnyc-nb740-20260624.",
+      "scope": "Somente campos SEO title/meta escopados no pacote; exclusões preservadas.",
+      "evidence": "areas/lk/sub-areas/growth/approval-packets/nb530-asics-gelnyc-nb740-20260624/EXECUTION-SUMMARY-ASICS-NB740-WRITES.md"
+    }
+  ],
+  "approvals_and_corrections": [
+    {
+      "scope": "Hermes Webhooks Shopify POS restock route secret alignment.",
+      "correction_or_approval": "Lucas aprovou patch/restart/probe no escopo exato após diagnóstico read-only.",
+      "exclusions": "Sem deploy Vercel, Shopify Admin/webhook/provider write, Doppler/Vercel secret/env change, WhatsApp/e-mail/campanha.",
+      "pattern_to_learn": "Aprovação de infra sensível deve ser aplicada exatamente ao packet; depois verificar runtime vivo com health/probe, não só config file."
+    },
+    {
+      "scope": "LK Growth/Shopify SEO/meta packet.",
+      "correction_or_approval": "Aprovação ampla vale para o pacote em pauta, não para novas superfícies.",
+      "exclusions": "Sem coleção, descrição visível, handle/canonical, preço, estoque, pedido, campanha, GMC, Klaviyo ou checkout fora do pacote.",
+      "pattern_to_learn": "Aprovo tudo não é autorização genérica; sempre preservar escopo e exclusões do approval packet."
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Runtime instalado pode divergir do source/config; correções de webhook precisam de readback vivo por PID/health/probe.",
+      "recommended_destination": "Webhook runtime observability routine; skill webhook-subscriptions.",
+      "action_applied": "Relatório e receipt final registraram backup, patch local, health e probe no-op.",
+      "verification_needed": "Reconciliar patch local com pacote/source Hermes em ciclo seguro."
+    },
+    {
+      "learning": "Aprovo tudo aprova apenas o pacote apresentado e suas exclusões, não novos writes ou superfícies.",
+      "recommended_destination": "LK Approval Manager / LK Growth playbooks.",
+      "action_applied": "Receipts observados preservaram escopo de SEO/meta e exclusões.",
+      "verification_needed": "Auditar futuros packets para não inferirem preço/estoque/campanha."
+    },
+    {
+      "learning": "Bounce comercial por caixa cheia deve gerar needs-attention local, não reenvio ou draft automático.",
+      "recommended_destination": "Zipper inbox/Mordomo follow-up guardrail.",
+      "action_applied": "Artefato inbox criado sem envio/draft.",
+      "verification_needed": "Lucas aprovar canal alternativo se necessário."
+    }
+  ],
+  "autonomy_pattern_candidates": [
+    {
+      "candidate": "Readback runtime após patch local aprovado em webhook/gateway.",
+      "suggested_autonomy": "A1/A2 somente quando já existe aprovação escopada para aquela rota e restart/verificação.",
+      "must_stay_gated": "Restart/gateway/runtime patch sem aprovação, deploy, Docker/VPS, secrets/env mutation."
+    },
+    {
+      "candidate": "Registrar bounce de e-mail comercial como inbox needs-attention.",
+      "suggested_autonomy": "A1 local/documental sem contato externo.",
+      "must_stay_gated": "Reenviar e-mail, criar draft em caixa compartilhada, WhatsApp/cliente/contacto alternativo."
+    }
+  ],
+  "pending_decisions_for_lucas": [
+    {
+      "decision": "Zipper: usar canal alternativo para lead cujo e-mail não entregou?",
+      "why_needed": "Sem canal alternativo validado e contato externo exige aprovação/canal claro.",
+      "default_safe_state": "Aguardar tentativa final automática do Gmail."
+    }
+  ],
+  "safe_next_actions": [
+    "Reconciliar patch local do adaptador webhook com source/pacote Hermes em ciclo seguro.",
+    "Montar matriz no-op route-by-route das 14 rotas se Lucas quiser certificação 100% dos webhooks.",
+    "Fazer readback público pós-cache dos PDPs alterados pela LK Growth antes de novo write.",
+    "Manter Zipper bounce como needs-attention até Lucas decidir canal alternativo."
+  ],
+  "blocked_actions_requiring_approval": [
+    "WhatsApp/e-mail/cliente/colecionador/fornecedor send ou reenvio Zipper.",
+    "Shopify/Tiny/GMC/Klaviyo/Meta/Supabase write fora de approval packet específico.",
+    "Docker/VPS/gateway/restart/deploy ou patch runtime sem aprovação escopada.",
+    "Secret/env rotation, Doppler/Vercel env changes, destructive actions."
+  ],
+  "cron_and_delivery_truth": {
+    "source": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all",
+    "cronjob_cli_available": false,
+    "fechamento_01h_status": "active_local_ok_observed",
+    "health_fail": 0,
+    "health_warn": 0,
+    "score": 100,
+    "generated_vs_delivered": "Fechamento 01h é local/Brain-first; Telegram/origin só para falha crítica, risco, decisão urgente ou sync quebrado.",
+    "deliver_origin_jobs_observed": [
+      "Mesa COO diária Telegram",
+      "Relatório Hermes diário 03h",
+      "Reminder OS watchdog",
+      "Honcho utility go/no-go one-shot"
+    ]
+  },
+  "health_and_score": {
+    "health_json": "reports/brain-health-check-2026-06-25-02h.json",
+    "health_fail": 0,
+    "health_warn": 0,
+    "score_md": "reports/brain-improvement-score-2026-06-25-02h.md",
+    "score_json": "reports/brain-improvement-score-2026-06-25-02h.json",
+    "overall_score": 100
+  },
+  "sources": [
+    "areas/operacoes/inventarios/crons-agentes-profiles.md",
+    "areas/operacoes/brds/hermes-brain-fechamento-agil-23h-brd-2026-05-19.md",
+    "empresa/contexto/organograma-agentes-hermes.md",
+    "areas/operacoes/rotinas/protocolo-handoff-agentes-especialistas.md",
+    "areas/operacoes/rotinas/fechamento-agil-01h.md",
+    "areas/operacoes/rotinas/hermes-nightly-governance-cycle.md",
+    "reports/memory-hygiene/2026-06-25.json",
+    "memories/daily/2026-06-25.md",
+    "reports/brain-health-check-2026-06-25-02h.json",
+    "reports/brain-improvement-score-2026-06-25-02h.json",
+    "areas/operacoes/reports/hermes-webhooks-shopify-route-secret-alignment-20260624-final.md",
+    "areas/operacoes/receipts/hermes-webhooks-shopify-route-secret-alignment-applied-20260624.md",
+    "areas/lk/sub-areas/growth/approval-packets/nb530-asics-gelnyc-nb740-20260624/EXECUTION-SUMMARY-ASICS-NB740-WRITES.md",
+    "areas/lk/sub-areas/growth/receipts/shopify-production/asics-gelnyc-nb740-seo-meta-20260625T002148Z/receipt.json",
+    "areas/zipper/inbox/email-intake/20260625T013523Z_mellina_nina_pandolfo_delivery_delay.md",
+    "session_search:webhooks/LK/Zipper recent sanitized"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "pii_redacted": true,
+    "raw_chat_transcripts_included": false,
+    "raw_webhook_payloads_included": false,
+    "values_printed": false
+  }
+}

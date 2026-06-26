@@ -1,0 +1,205 @@
+{
+  "generated_at": "2026-05-14T15:10:58.492314+00:00",
+  "status": "applied_needs_review",
+  "source_labels": [
+    "fact_merchant_center",
+    "fact_shopify_readonly",
+    "manual_approval_lucas_option_2"
+  ],
+  "summary": {
+    "targets": 12,
+    "delete_ok": 12,
+    "verified_absent_products_list": 5,
+    "verified_absent_productstatuses_list": 12,
+    "verification_anomalies": 7
+  },
+  "private_rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-draft-404-merchant-delete-rollback-20260514T150641Z.json",
+  "rows": [
+    {
+      "product_id": "online:pt:BR:15031239196158973196",
+      "title": "Nike Air Force 1 07 White - Tamanho 45",
+      "link": "https://lksneakers.com.br/products/nike-air-force-1-07-white",
+      "execution_status": "deleted_exact_product_id",
+      "delete_status": "ok",
+      "verified_absent_products_list": true,
+      "verified_absent_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:9250025623243509812",
+      "title": "Calça Saint Studio Wide Alfaiataria Risca de Giz Preta",
+      "link": "https://lksneakers.com.br/products/calca-saint-studio-wide-alfaiataria-risca-de-giz-preta",
+      "execution_status": "deleted_exact_product_id",
+      "delete_status": "ok",
+      "verified_absent_products_list": true,
+      "verified_absent_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:13622509763707629816",
+      "title": "Calça Saint Studio Wide Alfaiataria Risca de Giz Cinza",
+      "link": "https://lksneakers.com.br/products/calca-saint-studio-wide-alfaiataria-risca-de-giz-cinza",
+      "execution_status": "deleted_exact_product_id",
+      "delete_status": "ok",
+      "verified_absent_products_list": true,
+      "verified_absent_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:10591784840915585992",
+      "title": "Boné Saint Studio Art Department Azul - LK",
+      "link": "https://lksneakers.com.br/products/bone-saint-studio-art-department-azul",
+      "execution_status": "deleted_exact_product_id",
+      "delete_status": "ok",
+      "verified_absent_products_list": false,
+      "verified_absent_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:3876299146406606317",
+      "title": "Calça Saint Studio Jeans Baggy Preta",
+      "link": "https://lksneakers.com.br/products/calca-saint-studio-jeans-baggy-preta",
+      "execution_status": "deleted_exact_product_id",
+      "delete_status": "ok",
+      "verified_absent_products_list": false,
+      "verified_absent_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:10002025469927148791",
+      "title": "Calça Nude Project Jeans Soft Velvet Azul Marinho",
+      "link": "https://lksneakers.com.br/products/calca-nude-project-jeans-soft-velvet-azul-marinho",
+      "execution_status": "deleted_exact_product_id",
+      "delete_status": "ok",
+      "verified_absent_products_list": false,
+      "verified_absent_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:1624428988081867066",
+      "title": "Boné Aimé Leon Dore Porsche Nylon Logo Aspen Gold Amarelo | LK Sneaker",
+      "link": "https://lksneakers.com.br/products/bone-aime-leon-dore-porsche-nylon-logo-aspen-gold-amarelo",
+      "execution_status": "deleted_exact_product_id",
+      "delete_status": "ok",
+      "verified_absent_products_list": true,
+      "verified_absent_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:6562590402534581177",
+      "title": "Calça Nude Project Illegal Jeans Ash Cinza - LK",
+      "link": "https://lksneakers.com.br/products/calca-nude-project-illegal-jeans-ash-cinza",
+      "execution_status": "deleted_exact_product_id",
+      "delete_status": "ok",
+      "verified_absent_products_list": false,
+      "verified_absent_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:2258634078163248862",
+      "title": "Calça Chino Saint Studio Supima Preto",
+      "link": "https://lksneakers.com.br/products/calca-chino-saint-studio-supima-preto",
+      "execution_status": "deleted_exact_product_id",
+      "delete_status": "ok",
+      "verified_absent_products_list": false,
+      "verified_absent_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:13498809788548851139",
+      "title": "Moletom Essentials Fear of God Jet black SS24 Preto | LK Sneakers",
+      "link": "https://lksneakers.com.br/products/moletom-essentials-fear-of-god-jet-black-ss24-preto",
+      "execution_status": "deleted_exact_product_id",
+      "delete_status": "ok",
+      "verified_absent_products_list": false,
+      "verified_absent_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:4041641007094962608",
+      "title": "Camisa Saint Studio Trico Palha | LK Sneakers",
+      "link": "https://lksneakers.com.br/products/camisa-saint-studio-trico-palha",
+      "execution_status": "deleted_exact_product_id",
+      "delete_status": "ok",
+      "verified_absent_products_list": false,
+      "verified_absent_productstatuses_list": true
+    },
+    {
+      "product_id": "online:pt:BR:11314792792398542744",
+      "title": "Moletom Oversized Nylon Fear of God Essentials Jet Black Preto",
+      "link": "https://lksneakers.com.br/products/moletom-oversized-nylon-fear-of-god-essentials-jet-black-preto",
+      "execution_status": "deleted_exact_product_id",
+      "delete_status": "ok",
+      "verified_absent_products_list": true,
+      "verified_absent_productstatuses_list": true
+    }
+  ],
+  "not_performed": [
+    "Shopify publish/write",
+    "Shopify redirect creation",
+    "feed upload/fetchNow",
+    "Tiny write",
+    "price/availability/title/category changes",
+    "campaign/message/WhatsApp/supplier contact"
+  ],
+  "delayed_direct_verify": {
+    "generated_at": "2026-05-14T15:15:44.081365+00:00",
+    "method": "direct products.get/productstatuses.get per exact ID",
+    "counts": {
+      "('absent_product', 'absent_status')": 12
+    },
+    "rows": [
+      {
+        "product_id": "online:pt:BR:15031239196158973196",
+        "present_product_get": false,
+        "present_status_get": false
+      },
+      {
+        "product_id": "online:pt:BR:9250025623243509812",
+        "present_product_get": false,
+        "present_status_get": false
+      },
+      {
+        "product_id": "online:pt:BR:13622509763707629816",
+        "present_product_get": false,
+        "present_status_get": false
+      },
+      {
+        "product_id": "online:pt:BR:10591784840915585992",
+        "present_product_get": false,
+        "present_status_get": false
+      },
+      {
+        "product_id": "online:pt:BR:3876299146406606317",
+        "present_product_get": false,
+        "present_status_get": false
+      },
+      {
+        "product_id": "online:pt:BR:10002025469927148791",
+        "present_product_get": false,
+        "present_status_get": false
+      },
+      {
+        "product_id": "online:pt:BR:1624428988081867066",
+        "present_product_get": false,
+        "present_status_get": false
+      },
+      {
+        "product_id": "online:pt:BR:6562590402534581177",
+        "present_product_get": false,
+        "present_status_get": false
+      },
+      {
+        "product_id": "online:pt:BR:2258634078163248862",
+        "present_product_get": false,
+        "present_status_get": false
+      },
+      {
+        "product_id": "online:pt:BR:13498809788548851139",
+        "present_product_get": false,
+        "present_status_get": false
+      },
+      {
+        "product_id": "online:pt:BR:4041641007094962608",
+        "present_product_get": false,
+        "present_status_get": false
+      },
+      {
+        "product_id": "online:pt:BR:11314792792398542744",
+        "present_product_get": false,
+        "present_status_get": false
+      }
+    ]
+  },
+  "final_status": "closed_verified_absent_by_direct_get"
+}

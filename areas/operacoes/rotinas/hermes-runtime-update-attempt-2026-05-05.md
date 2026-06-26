@@ -1,5 +1,7 @@
 # Registro — tentativa segura de update Hermes Runtime 2026-05-05
 
+> **LEGACY / HISTÓRICO — NÃO EXECUTAR COMO RUNBOOK ATUAL.** Este arquivo documenta uma execução aprovada no passado. Comandos Docker/SSH/root abaixo são recibo histórico, não autorização operacional viva.
+
 Status: executado com escopo limitado; imagem Hostinger `latest` não trouxe versão nova.
 
 ## Resumo executivo

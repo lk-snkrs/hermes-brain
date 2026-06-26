@@ -1,0 +1,112 @@
+{
+  "status": "completed_with_errors",
+  "summary": {
+    "planned": 5,
+    "execution": {
+      "error": 1,
+      "patched": 4
+    },
+    "verify_match": 0,
+    "verify_total": 5
+  },
+  "rollback_snapshot_path": "/opt/data/hermes_bruno_ingest/local_sql/lk_gmc_rollback_snapshots/lk-gmc-2026-05-14-residual-non-size-attr-repair-rollback-20260514T163122Z.json",
+  "execution_results": [
+    {
+      "product_id": "online:pt:BR:11157608326226995514",
+      "status": "error",
+      "attrs": {
+        "color": "Colorido"
+      },
+      "error": "http_400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"[item] validation/other: Validation failed: Item uploaded through multiple feeds\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"invalid\",\n        \"domain\": \"merchantapi.googleapis.com\",\n        \"metadata\": {\n          \"FIELD_LOCATION\": \"item\",\n          \"VALIDATION_CODE\": \"validation/other\",\n          \"DESTINATIONS\": \"\",\n          \"FORMATTED_ITEM_MESSAGE\": \"Item uploaded through multiple feeds\",\n          \"REASON\": \"VALIDATION_DYNAMIC_ISSUE\"\n        }\n      }\n    ]\n  }\n}\n"
+    },
+    {
+      "product_id": "online:pt:BR:11942764414726006273",
+      "status": "patched",
+      "attrs": {
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:12273029318518873414",
+      "status": "patched",
+      "attrs": {
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:16327035847486546313",
+      "status": "patched",
+      "attrs": {
+        "ageGroup": "adult",
+        "gender": "unisex"
+      }
+    },
+    {
+      "product_id": "online:pt:BR:4917838518253211418",
+      "status": "patched",
+      "attrs": {
+        "color": "Colorido"
+      }
+    }
+  ],
+  "verify_results": [
+    {
+      "product_id": "online:pt:BR:11157608326226995514",
+      "expected": {
+        "color": "Colorido"
+      },
+      "actual": {
+        "color": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:11942764414726006273",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:12273029318518873414",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:16327035847486546313",
+      "expected": {
+        "ageGroup": "adult",
+        "gender": "unisex"
+      },
+      "actual": {
+        "ageGroup": null,
+        "gender": null
+      },
+      "match": false
+    },
+    {
+      "product_id": "online:pt:BR:4917838518253211418",
+      "expected": {
+        "color": "Colorido"
+      },
+      "actual": {
+        "color": null
+      },
+      "match": false
+    }
+  ]
+}

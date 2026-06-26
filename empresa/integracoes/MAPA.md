@@ -25,6 +25,8 @@ Cada integração deve separar ações em quatro níveis:
 - [Analytics / GA4 / GSC](analytics.md)
 - [Klaviyo](klaviyo.md)
 - [Meta Ads / Instagram](meta-ads.md)
+- [Rivo / LK Rewards](rivo.md)
+- [Judge.me Reviews](judgeme.md)
 
 ## Por negócio
 
@@ -36,8 +38,10 @@ Cada integração deve separar ações em quatro níveis:
 - GA4/GSC — `analytics.md`
 - Meta Ads — `meta-ads.md`
 - Evolution Clo — `evolution.md`
+- Rivo / LK Rewards — `rivo.md`
+- Judge.me Reviews — `judgeme.md`
 - Telegram — `telegram.md`
-- Judge.me, Frenet, Tiny ERP — pendentes de subdoc próprio quando houver uso operacional recorrente.
+- Frenet, Tiny ERP — pendentes de subdoc próprio quando houver uso operacional recorrente.
 
 Detalhe: `../../areas/lk/contexto/ferramentas.md`.
 
@@ -75,5 +79,5 @@ Detalhe: `../../areas/spiti/MAPA.md`.
 
 ## Próxima rodada recomendada
 
-- Criar subdocs adicionais para Judge.me, Frenet, Tiny ERP, Email/Google Workspace, LeiloesBR, Railway, Vercel, Notion/NocoDB e Metricool quando virarem fluxos recorrentes.
+- Criar subdocs adicionais para Frenet, Tiny ERP, Email/Google Workspace, LeiloesBR, Railway, Vercel, Notion/NocoDB e Metricool quando virarem fluxos recorrentes.
 - Transformar integrações com uso frequente em skills executáveis com verificação e aprovação.

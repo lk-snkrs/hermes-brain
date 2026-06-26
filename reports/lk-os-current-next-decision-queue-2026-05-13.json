@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-05-13T21:02:19.320394+00:00",
+  "scope": "LK OS continuation packet — read-only/local, no WhatsApp message reads/sends",
+  "status": "continue_readonly_while_gmc_p2a_runs",
+  "source_labels": [
+    "manual_approval",
+    "fact_local_process",
+    "fact_wacli_auth_status",
+    "fact_brain_artifacts",
+    "fact_cron_registry"
+  ],
+  "current_state": {
+    "gmc_p2a_finalize_running": true,
+    "gmc_process_ps_redacted": "16334       33:22 Ss   do_pol python3 scripts/lk_gmc_p2a_finalize_remaining_online_20260513.py --apply --approval-text eu autorizo finalizar todos os produtos que faltam ok? seguir --batch-size 250 --verify-delay 180",
+    "wacli_accounts_status": {
+      "hermes": {
+        "authenticated": true,
+        "linked_tail": "5245"
+      },
+      "lk-compras": {
+        "authenticated": true,
+        "linked_tail": "9821"
+      },
+      "spiti": {
+        "authenticated": true,
+        "linked_tail": "0369"
+      },
+      "zipper": {
+        "authenticated": true,
+        "linked_tail": "4306"
+      }
+    },
+    "crons_active_observed_from_scheduler": 8,
+    "lk_mandatory_crons_active_observed": [
+      "Daily Sales Brief",
+      "Weekly CEO Review",
+      "SEO/CRO Weekly",
+      "GMC Review"
+    ],
+    "loyalty_rivo_judgeme_status": "pending_future_by_lucas_sequence_correction"
+  },
+  "recommended_next_block": {
+    "name": "LK OS Decision Queue v2 — sourcing/CRM/GMC watch without external actions",
+    "why": "GMC P2A is still running; the safe way to continue is to update the executive decision layer and prepare approval surfaces, not start another Merchant write or mine WhatsApp messages.",
+    "actions_now_readonly": [
+      "Monitorar processo GMC P2A até relatório final; não reexecutar patches em paralelo.",
+      "Atualizar fila de decisões de sourcing a partir de artifacts existentes, sem consultar marketplace/fornecedor.",
+      "Manter Klaviyo P1 em draft/no-send; se Lucas quiser, preparar pacote de revisão inline antes de qualquer envio.",
+      "Usar WhatsApp Hermes/lk-compras apenas como canal preparado; não ler conversas nem enviar mensagens sem novo escopo explícito."
+    ],
+    "blocked_without_new_approval": [
+      "supplier_contact",
+      "purchase",
+      "purchase_order",
+      "notion_write",
+      "whatsapp_message_reading_scope",
+      "whatsapp_send",
+      "klaviyo_send_or_schedule",
+      "shopify_write",
+      "tiny_write",
+      "new_merchant_write"
+    ]
+  },
+  "open_sourcing_decisions_from_last_router": [
+    {
+      "family": "Nike Moon Shoe SP Jacquemus",
+      "route": "awaiting_lucas_or_julio_approval",
+      "next": "prepare_supplier_send_preview_with_named_destination",
+      "blocked": "supplier_contact_purchase_notion_write_without_new_inline_approval",
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "revenue_signal_fact_shopify": 48999.92,
+      "reference_quote_qty_not_purchase_qty": 10,
+      "legacy_router_do_not_execute_directly": true,
+      "corrected_next_safe_action": "fresh_stockout_validation_by_exact_sku_size_then_Droper_first_then_StockX_GOAT_preview_Notion_Julio_no_contact"
+    },
+    {
+      "family": "New Balance 9060",
+      "route": "awaiting_lucas_or_julio_approval",
+      "next": "prepare_supplier_send_preview_with_named_destination",
+      "blocked": "supplier_contact_purchase_notion_write_without_new_inline_approval",
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "revenue_signal_fact_shopify": 18799.93,
+      "reference_quote_qty_not_purchase_qty": 8,
+      "legacy_router_do_not_execute_directly": true,
+      "corrected_next_safe_action": "fresh_stockout_validation_by_exact_sku_size_then_Droper_first_then_StockX_GOAT_preview_Notion_Julio_no_contact"
+    },
+    {
+      "family": "Nike Mind 002",
+      "route": "awaiting_lucas_or_julio_approval",
+      "next": "prepare_supplier_send_preview_with_named_destination",
+      "blocked": "supplier_contact_purchase_notion_write_without_new_inline_approval",
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "revenue_signal_fact_shopify": 6399.98,
+      "reference_quote_qty_not_purchase_qty": 3,
+      "legacy_router_do_not_execute_directly": true,
+      "corrected_next_safe_action": "fresh_stockout_validation_by_exact_sku_size_then_Droper_first_then_StockX_GOAT_preview_Notion_Julio_no_contact"
+    },
+    {
+      "family": "Comme des Garçons PLAY Polo",
+      "route": "awaiting_lucas_or_julio_approval",
+      "next": "prepare_supplier_send_preview_with_named_destination",
+      "blocked": "supplier_contact_purchase_notion_write_without_new_inline_approval",
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "revenue_signal_fact_shopify": 3599.98,
+      "reference_quote_qty_not_purchase_qty": 3,
+      "legacy_router_do_not_execute_directly": true,
+      "corrected_next_safe_action": "fresh_stockout_validation_by_exact_sku_size_then_Droper_first_then_StockX_GOAT_preview_Notion_Julio_no_contact"
+    },
+    {
+      "family": "New Balance 530",
+      "route": "hold_or_bundle_with_p0_decision",
+      "next": "bundle_in_existing_p0_quote_preview_only",
+      "blocked": "supplier_contact_purchase_notion_write_without_new_inline_approval",
+      "source_labels": [
+        "fact_shopify",
+        "fact_tiny_stock",
+        "derived_reconciliation",
+        "manual_approval_pending"
+      ],
+      "revenue_signal_fact_shopify": 5999.97,
+      "reference_quote_qty_not_purchase_qty": 2,
+      "legacy_router_do_not_execute_directly": true,
+      "corrected_next_safe_action": "fresh_stockout_validation_by_exact_sku_size_then_Droper_first_then_StockX_GOAT_preview_Notion_Julio_no_contact"
+    }
+  ],
+  "not_performed": [
+    "message_read",
+    "whatsapp_send",
+    "supplier_contact",
+    "purchase",
+    "notion_write",
+    "shopify_write",
+    "tiny_write",
+    "klaviyo_send_or_schedule",
+    "new_merchant_write",
+    "database_write"
+  ],
+  "guardrail_corrections": [
+    "Old supplier quote approval surfaces are legacy only; Lucas corrected LK Compras flow: validate sold/requested stockout first, Droper first, StockX/GOAT fallback, Notion/Júlio preview only."
+  ]
+}

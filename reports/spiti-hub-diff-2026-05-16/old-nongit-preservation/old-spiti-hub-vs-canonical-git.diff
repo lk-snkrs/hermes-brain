@@ -1,0 +1,800 @@
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/.hermes_source.json /opt/data/hermes_bruno_ingest/spiti-hub-git/.hermes_source.json
+--- /opt/data/hermes_bruno_ingest/spiti-hub/.hermes_source.json	2026-05-04 18:30:24.353688308 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/.hermes_source.json	1970-01-01 00:00:00.000000000 +0000
+@@ -1,8 +0,0 @@
+-{
+-  "source": "github_zipball",
+-  "full_name": "spiti-auction/spiti-hub",
+-  "default_branch": "main",
+-  "html_url": "https://github.com/spiti-auction/spiti-hub",
+-  "pushed_at": "2026-04-30T20:20:27Z",
+-  "updated_at": "2026-04-30T12:35:14Z"
+-}
+\ No newline at end of file
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/docs/briefing-2026-04-30.md /opt/data/hermes_bruno_ingest/spiti-hub-git/docs/briefing-2026-04-30.md
+--- /opt/data/hermes_bruno_ingest/spiti-hub/docs/briefing-2026-04-30.md	2026-05-04 18:30:24.269688783 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/docs/briefing-2026-04-30.md	1970-01-01 00:00:00.000000000 +0000
+@@ -1,145 +0,0 @@
+-# Briefing de manhã — 2026-04-30 → 2026-05-01
+-
+-> **TL;DR:** 17 PRs mergeadas durante a noite. Catálogo público, Marketing,
+-> CRM com interações, Pedidos refatorado, Obras com filtros/grid/bulk,
+-> relatórios, admin, perfil, alertas. Faltam só ações operacionais
+-> (aplicar migrations, configurar tokens, ajustar sequence).
+-
+-## ✅ O que foi entregue (PRs #38 → #64)
+-
+-### CRM
+-- `/crm/pessoas` — colunas Compras + LTV, drawer com 4 papéis (compras, consignadas, consignante em leilão, pedidos), quick actions WhatsApp/Email, dedup tool, import CSV, **interações/atividades** (timeline + tarefas).
+-- `/crm/obras` — toggle Tabela/Grid, filtros estruturados em chips (estado, artista, técnica, categoria, leilão, valor base, ano, com/sem foto, publicar_site, marcado, favorito), bulk operations (editar em massa, publicar, adicionar a leilão, excluir), upload de fotos via drag-drop e bulk-fotos, **autocomplete de artista** previne duplicatas.
+-- `/crm/artistas` — CRUD completo + ferramenta de merge.
+-- `/tarefas` — kanban-like de follow-ups pendentes com filtros.
+-
+-### Leilões
+-- Detalhe ganha aba **Matches** (Onda 7.3 sem IA: top-5 candidatos por obra → cria campanha em 1 clique).
+-- Drag-drop reorder de lotes (renumera 1..N ao salvar).
+-- Banner de capa, descrição, leiloeiro, edital, local — todos editáveis via "✎ Editar info".
+-- Trigger automático sincroniza `obras.estado` quando `obra_em_leilao.status` muda.
+-- Botão "↗ Compartilhar catálogo" (link copy + WhatsApp).
+-
+-### Vendas / Pedidos / Financeiro
+-- Pedidos refatorado: numeração automática `PED-YYYY-NNNNNN` (sequence), adicionar obras pelo **número de acervo** com autocomplete + bulk-paste.
+-- Vendas com cobranças + parcelas + modal de pagamento.
+-- Financeiro com 3 abas (a pagar / custos / DRE) + linhas em pagamentos com expansão de parcelas.
+-- `/relatorios` com 4 tipos (DRE, Lotes detalhado, Compradores, Pagamentos) + export CSV.
+-
+-### Marketing
+-- Segmentação completa de campanhas: 5 grupos de filtro, 18 variáveis de template, drip + A/B test, throttle/dia, LGPD compliance no backend.
+-- `/marketing/segmentos` (CRUD + export CSV de audiência).
+-- `/marketing/inativos` (reengajamento → campanha em 1 clique).
+-- `/marketing/top-compradores` (ranking + campanha VIP).
+-- `/marketing/campanhas/:id` (dashboard com KPIs, breakdown drip, A/B, mensagens individuais).
+-
+-### Catálogo público
+-- `/c/` landing pública com leilões em destaque + anteriores.
+-- `/c/:slug` catálogo do leilão com filtros (artista, ordenação) e banner.
+-- `/c/:slug/obra/:acervo` link único por obra (deep-link compartilhável).
+-- Open Graph tags dinâmicos (preview no WhatsApp/redes refletem a obra exata).
+-- Botão "💬 Falar sobre esta obra" abre WhatsApp da galeria com mensagem pré-preenchida.
+-
+-### Admin
+-- `/admin/usuarios` — papéis + view_costs + ativo (admin only).
+-- `/admin/audit` — viewer do audit_log com filtros (admin/gerente).
+-- `/admin/galeria` — config singleton (telefone, descrição OG, comissões padrão, redes).
+-- `/perfil` — usuário edita próprio nome/telefone + troca senha.
+-
+-### Dashboard
+-- 5 KPIs de volume + 3 cards financeiros + 2 fluxo de caixa + cards por leilão.
+-- **Alertas operacionais** no topo (crit/warn/info):
+-  - obras sem foto / públicas sem foto
+-  - obras sem ficha completa
+-  - lotes sem número
+-  - compradores/pessoas sem contato
+-  - pagamentos bloqueados
+-  - **tarefas atrasadas** (do CRM)
+-
+-### UX geral
+-- Cmd/Ctrl+K command palette com busca global + 20 atalhos navegacionais.
+-- Deep-link `?focus=<id>` em pessoas/obras + `?artista=<nome>` pré-aplica filtro.
+-- PWA instalável (manifest + apple-touch).
+-- Sidebar mobile-friendly com drawer.
+-
+-### Edge Functions (skeleton)
+-- `sync-meta-audience` (Meta Custom Audiences)
+-- `sync-google-audience` (Google Customer Match)
+-- `disparar-campanha` (WhatsApp Evolution + Email MailerLite + drip + A/B)
+-- `analise-obra` (Claude Sonnet 4.7 vision)
+-- `webhook-evolution` (callbacks de delivery + inbound)
+-
+-### Importer
+-- `scripts/import-tango.mjs` (CSV → obras + artistas + pessoas, idempotente)
+-
+-## 📋 O que VOCÊ precisa fazer agora
+-
+-### 1. Aplicar migrations pendentes
+-Em ordem (`migrations/008` até `016`). Ver `migrations/README.md` para
+-detalhes — todas idempotentes e seguras.
+-
+-```bash
+-# Via Supabase Dashboard → SQL Editor (mais rápido)
+-# Cole conteúdo de cada arquivo, em ordem, e execute.
+-```
+-
+-### 2. Ajustar sequence de pedidos
+-Após aplicar migration 012:
+-
+-```sql
+-alter sequence pedidos_numero_seq restart with <NEXT_FROM_TANGO>;
+-```
+-
+-(O `<NEXT_FROM_TANGO>` você ia me mandar — substituir.)
+-
+-### 3. Configurar `galeria_config`
+-Vá em `/admin/galeria` (logado como admin) e preencha:
+-- Nome, slogan, descricao_curta (Open Graph)
+-- Telefone WhatsApp da galeria (alimenta "Falar sobre obra")
+-- Endereço, redes sociais
+-- Comissões default
+-
+-### 4. Marcar obras com `publicar_site = true`
+-No `/crm/obras`, use o filtro "publicar_site" + bulk operations.
+-
+-### 5. Configurar capa do Spiti 10
+-Crie o leilão (se ainda não existe) e use "✎ Editar info" para subir
+-banner_url, descrição e edital.
+-
+-### 6. Tokens externos (quando quiser ativar)
+-Salve no Doppler ou `supabase secrets set`:
+-
+-| Secret | Função afetada |
+-|---|---|
+-| `META_ACCESS_TOKEN`, `META_AD_ACCOUNT_ID` | sync-meta-audience |
+-| `GOOGLE_ADS_DEVELOPER_TOKEN`, `GOOGLE_ADS_CLIENT_ID/SECRET/REFRESH_TOKEN/CUSTOMER_ID` | sync-google-audience |
+-| `EVOLUTION_API_URL`, `EVOLUTION_API_KEY`, `EVOLUTION_INSTANCE`, `EVOLUTION_WEBHOOK_SECRET` | disparar-campanha + webhook-evolution |
+-| `MAILERLITE_API_KEY`, `MAILERLITE_FROM_EMAIL`, `MAILERLITE_FROM_NAME` | disparar-campanha (email) |
+-| `ANTHROPIC_API_KEY` | analise-obra |
+-
+-Depois: `npx supabase functions deploy <nome>`.
+-
+-## 🐞 Coisas pra checar
+-
+-- **Fotos não apareciam**: corrigido o bug `obra_fotos.storage_path` → `url`. Antes do PR #44, qualquer chamada do código que pedia `storage_path` falhava silenciosamente. Agora o thumbnail aparece em `/crm/obras` e fotos são exibidas no catálogo público.
+-- **`captada` no estado da obra**: removido (só fica em `obra_em_leilao.status`). Backfill migrou para `consignada`.
+-- **Artistas duplicados**: `ArtistaSelect` no formulário de obra previne. Migration 013 cria um trigger `sync_artista_id` que cria/vincula automaticamente. Use `/crm/artistas` → "⚯ Merge mode" pra resolver duplicatas existentes.
+-
+-## 📊 Estatísticas do trabalho
+-
+-- **17 PRs mergeadas** durante a noite
+-- **9 migrations** novas (008–016)
+-- **+5500 linhas** de código adicionadas
+-- **0 erros de lint**, **0 erros de build** em todas as PRs
+-- **5 Edge Functions** com skeletons completos
+-- **3 PRDs** escritos (`prd-obras.md`, `prd-pedidos.md`, `prd-spiti-hub.md`)
+-
+-## 🚀 Próximos passos sugeridos (caso queira continuar)
+-
+-1. **Aplicar migrations + ajustar sequence + configurar galeria_config** — destrava tudo o que está pronto.
+-2. **Subir banners dos leilões** + marcar obras `publicar_site` — destrava o catálogo público.
+-3. **Token Anthropic + deploy `analise-obra`** — começa a alimentar `descricao_ai`/`atributos_ai` (ronda inicial: ~$60-100 em 2k obras).
+-4. **Token Evolution + deploy `disparar-campanha` + `webhook-evolution`** — destrava todo o fluxo WhatsApp.
+-5. **Importer Tango**: pedir o CSV ao dev, ajustar `COLMAP` em `scripts/import-tango.mjs`, rodar `--dry-run` → executar.
+-
+-Bom dia! ☀
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/App.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/App.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/App.jsx	2026-05-04 18:30:24.296688630 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/App.jsx	2026-05-05 00:11:40.260224468 +0000
+@@ -1,40 +1,50 @@
+-import { useEffect, useState } from 'react'
++import { lazy, Suspense, useEffect, useState } from 'react'
+ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+ import { supabase } from './lib/supabase'
+ import { loadProfile, canAccessModule } from './lib/auth'
+ import Layout from './components/Layout'
+ import { ToastProvider } from './components/Toast'
+ import { LeilaoProvider } from './lib/leilao-context'
+-import Login from './pages/Login'
+-import Placeholder from './pages/Placeholder'
+-import Pessoas from './pages/Pessoas'
+-import Obras from './pages/Obras'
+-import BulkFotos from './pages/BulkFotos'
+-import Artistas from './pages/Artistas'
+-import AdminUsuarios from './pages/AdminUsuarios'
+-import AdminAudit from './pages/AdminAudit'
+-import AdminGaleria from './pages/AdminGaleria'
+-import Reports from './pages/Reports'
+-import Resultado from './pages/Resultado'
+-import Tarefas from './pages/Tarefas'
+-import Captacoes from './pages/Captacoes'
+-import PosLeilao from './pages/PosLeilao'
+-import CobrancaPublica from './pages/CobrancaPublica'
+-import Comprovantes from './pages/Comprovantes'
+-import Perfil from './pages/Perfil'
+-import { LeiloesList, LeilaoDetalhe } from './pages/Leiloes'
+-import Pedidos from './pages/Pedidos'
+-import Documentos from './pages/Documentos'
+-import Dashboard from './pages/Dashboard'
+-import Vendas from './pages/Vendas'
+-import Financeiro from './pages/Financeiro'
+-import Marketing from './pages/Marketing'
+-import Segmentos from './pages/Segmentos'
+-import CampanhaDetalhe from './pages/CampanhaDetalhe'
+-import CatalogoPublico from './pages/CatalogoPublico'
+-import CatalogoLanding from './pages/CatalogoLanding'
+-import Inativos from './pages/Inativos'
+-import TopCompradores from './pages/TopCompradores'
++
++const Login = lazy(() => import('./pages/Login'))
++const Pessoas = lazy(() => import('./pages/Pessoas'))
++const Obras = lazy(() => import('./pages/Obras'))
++const BulkFotos = lazy(() => import('./pages/BulkFotos'))
++const Artistas = lazy(() => import('./pages/Artistas'))
++const AdminUsuarios = lazy(() => import('./pages/AdminUsuarios'))
++const AdminAudit = lazy(() => import('./pages/AdminAudit'))
++const AdminGaleria = lazy(() => import('./pages/AdminGaleria'))
++const Reports = lazy(() => import('./pages/Reports'))
++const Resultado = lazy(() => import('./pages/Resultado'))
++const Tarefas = lazy(() => import('./pages/Tarefas'))
++const Captacoes = lazy(() => import('./pages/Captacoes'))
++const PosLeilao = lazy(() => import('./pages/PosLeilao'))
++const CobrancaPublica = lazy(() => import('./pages/CobrancaPublica'))
++const Comprovantes = lazy(() => import('./pages/Comprovantes'))
++const Perfil = lazy(() => import('./pages/Perfil'))
++const LeiloesList = lazy(() => import('./pages/Leiloes').then(m => ({ default: m.LeiloesList })))
++const LeilaoDetalhe = lazy(() => import('./pages/Leiloes').then(m => ({ default: m.LeilaoDetalhe })))
++const Pedidos = lazy(() => import('./pages/Pedidos'))
++const Documentos = lazy(() => import('./pages/Documentos'))
++const Dashboard = lazy(() => import('./pages/Dashboard'))
++const Vendas = lazy(() => import('./pages/Vendas'))
++const Financeiro = lazy(() => import('./pages/Financeiro'))
++const Marketing = lazy(() => import('./pages/Marketing'))
++const Segmentos = lazy(() => import('./pages/Segmentos'))
++const CampanhaDetalhe = lazy(() => import('./pages/CampanhaDetalhe'))
++const CatalogoPublico = lazy(() => import('./pages/CatalogoPublico'))
++const CatalogoLanding = lazy(() => import('./pages/CatalogoLanding'))
++const Inativos = lazy(() => import('./pages/Inativos'))
++const TopCompradores = lazy(() => import('./pages/TopCompradores'))
++
++
++function PageFallback() {
++  return (
++    <div className="min-h-screen bg-dark flex items-center justify-center">
++      <div className="text-gray-400 text-sm">Carregando...</div>
++    </div>
++  )
++}
+ 
+ function ProtectedRoute({ children, profile }) {
+   if (!profile) return <Navigate to="/login" replace />
+@@ -79,6 +89,7 @@
+     <ToastProvider>
+     <LeilaoProvider>
+     <BrowserRouter>
++      <Suspense fallback={<PageFallback />}>
+       <Routes>
+         <Route path="/c" element={<CatalogoLanding />} />
+         <Route path="/c/:slug" element={<CatalogoPublico />} />
+@@ -123,6 +134,7 @@
+           </ProtectedRoute>
+         } />
+       </Routes>
++      </Suspense>
+     </BrowserRouter>
+     </LeilaoProvider>
+     </ToastProvider>
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/components/DrawerObra.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/components/DrawerObra.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/components/DrawerObra.jsx	2026-05-04 21:01:26.033556046 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/components/DrawerObra.jsx	2026-05-04 23:40:00.745521567 +0000
+@@ -2,7 +2,7 @@
+ import { supabase } from '../lib/supabase'
+ import { formatCurrency } from '../lib/format'
+ import ObraGaleria from './ObraGaleria'
+-import { emitirDocumento, getSignedDocUrl } from '../lib/documentos'
++import { emitirDocumento } from '../lib/documentos'
+ import { CertificadoAutenticidade } from '../lib/pdfTemplates'
+ import { useToast } from './Toast'
+ 
+@@ -107,7 +107,7 @@
+       setLoadingHist(false)
+     }
+     load()
+-  }, [obra.id])
++  }, [obra.id, obra.consignante_id])
+ 
+   const meta = ESTADOS[obra.estado] || ESTADOS.catalogo
+ 
+@@ -275,7 +275,9 @@
+     setResults(data?.results || [])
+   }
+ 
+-  useEffect(() => { carregar()   }, [])
++  // Match IA loads once when the modal opens. Avoid re-running while result state changes.
++  // eslint-disable-next-line react-hooks/exhaustive-deps
++  useEffect(() => { carregar() }, [])
+ 
+   return (
+     <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-[80] p-4" onClick={onClose}>
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/components/Layout.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/components/Layout.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/components/Layout.jsx	2026-05-04 18:30:24.303688591 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/components/Layout.jsx	2026-05-04 23:24:49.156730063 +0000
+@@ -50,7 +50,6 @@
+     if (it.managerOnly && profile?.role !== 'admin' && profile?.role !== 'gerente') return false
+     return it.module == null || canAccessModule(profile?.role, it.module)
+   })
+-  const currentItem = navItems.find(i => i.path === location.pathname) || navItems[0]
+ 
+   return (
+     <div className="flex h-screen bg-dark overflow-hidden">
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/components/ModalLeilao.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/components/ModalLeilao.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/components/ModalLeilao.jsx	2026-05-04 18:30:24.304688585 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/components/ModalLeilao.jsx	2026-05-04 23:24:49.156730063 +0000
+@@ -1,4 +1,4 @@
+-import { useEffect, useMemo, useState } from 'react'
++import { useEffect, useState } from 'react'
+ import { supabase } from '../lib/supabase'
+ import { useToast } from './Toast'
+ import { normalizeName } from '../lib/format'
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/components/Toast.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/components/Toast.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/components/Toast.jsx	2026-05-04 18:30:24.304688585 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/components/Toast.jsx	2026-05-04 23:40:00.745521567 +0000
+@@ -35,6 +35,8 @@
+   )
+ }
+ 
++// Hook export is intentionally colocated with the provider; this file is stable in production.
++// eslint-disable-next-line react-refresh/only-export-components
+ export function useToast() {
+   const ctx = useContext(ToastContext)
+   if (!ctx) throw new Error('useToast deve ser usado dentro de <ToastProvider>')
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/lib/documentos.js /opt/data/hermes_bruno_ingest/spiti-hub-git/src/lib/documentos.js
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/lib/documentos.js	2026-05-04 18:30:24.308688562 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/lib/documentos.js	2026-05-04 23:24:49.156730063 +0000
+@@ -54,7 +54,6 @@
+ }
+ 
+ export async function revogarDocumento(id, motivo) {
+-  const { data: { user } } = await supabase.auth.getUser()
+   const { data, error } = await supabase.from('documentos').update({
+     status: 'revogado',
+     revogado_em: new Date().toISOString(),
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/lib/leilao-context.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/lib/leilao-context.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/lib/leilao-context.jsx	2026-05-04 18:30:24.309688557 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/lib/leilao-context.jsx	2026-05-04 23:40:00.745521567 +0000
+@@ -55,6 +55,8 @@
+   )
+ }
+ 
++// Hook export is intentionally colocated with the provider; this file is stable in production.
++// eslint-disable-next-line react-refresh/only-export-components
+ export function useLeilao() {
+   return useContext(LeilaoContext)
+ }
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/lib/pdfTemplates.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/lib/pdfTemplates.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/lib/pdfTemplates.jsx	2026-05-04 18:30:24.311688545 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/lib/pdfTemplates.jsx	2026-05-04 23:24:49.156730063 +0000
+@@ -199,7 +199,7 @@
+ // ──────────────────────────────────────────────────────────────────────────
+ // RECIBO DE VENDA
+ // ──────────────────────────────────────────────────────────────────────────
+-export function ReciboVenda({ codigo, pedido, comprador, obras, leilao, dataEmissao, formaPagamento, totalGeral }) {
++export function ReciboVenda({ codigo, comprador, obras, leilao, dataEmissao, formaPagamento, totalGeral }) {
+   return (
+     <Document>
+       <Page size="A4" style={styles.page}>
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/lib/segmentos.js /opt/data/hermes_bruno_ingest/spiti-hub-git/src/lib/segmentos.js
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/lib/segmentos.js	2026-05-04 21:01:26.033556046 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/lib/segmentos.js	2026-05-04 22:40:31.070805790 +0000
+@@ -254,5 +254,5 @@
+   if (filtro.consentimento_email === true) partes.push('opt-in email')
+   return partes.length ? partes.join(' · ') : 'sem filtros (todas as pessoas)'
+ }
+- 
++
+ const _normalize = normalizeName
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/AdminAudit.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/AdminAudit.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/AdminAudit.jsx	2026-05-04 18:30:24.313688534 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/AdminAudit.jsx	2026-05-04 23:40:00.747521556 +0000
+@@ -19,6 +19,8 @@
+ 
+   const isAdmin = profile?.role === 'admin' || profile?.role === 'gerente'
+ 
++  // Initial/admin-gated audit load; load is reused by manual actions below.
++  // eslint-disable-next-line react-hooks/exhaustive-deps
+   useEffect(() => { if (isAdmin) load() }, [isAdmin])
+ 
+   async function load() {
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/AdminUsuarios.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/AdminUsuarios.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/AdminUsuarios.jsx	2026-05-04 18:30:24.314688529 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/AdminUsuarios.jsx	2026-05-04 23:40:00.747521556 +0000
+@@ -34,6 +34,8 @@
+     setUsuarios(data || [])
+     setLoading(false)
+   }
++  // Initial load only; mutations call load() explicitly after saving.
++  // eslint-disable-next-line react-hooks/exhaustive-deps
+   useEffect(() => { load() }, [])
+ 
+   const filtered = useMemo(() => {
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/BulkFotos.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/BulkFotos.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/BulkFotos.jsx	2026-05-04 18:30:24.315688523 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/BulkFotos.jsx	2026-05-04 23:24:49.156730063 +0000
+@@ -36,7 +36,6 @@
+ 
+ export default function BulkFotos() {
+   const [obras, setObras] = useState([])
+-  const [filtroSemFoto, setFiltroSemFoto] = useState(true)
+   const [arquivos, setArquivos] = useState([])
+   const [uploading, setUploading] = useState(false)
+   const [resultado, setResultado] = useState(null)
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/CampanhaDetalhe.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/CampanhaDetalhe.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/CampanhaDetalhe.jsx	2026-05-04 18:30:24.316688517 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/CampanhaDetalhe.jsx	2026-05-04 23:40:00.747521556 +0000
+@@ -47,6 +47,8 @@
+     }
+     setLoading(false)
+   }
++  // Reload when route id changes; load itself reads that id and sets local state.
++  // eslint-disable-next-line react-hooks/exhaustive-deps
+   useEffect(() => { load() }, [id])
+ 
+   const metricas = useMemo(() => {
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Captacoes.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Captacoes.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Captacoes.jsx	2026-05-04 18:30:24.317688512 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Captacoes.jsx	2026-05-04 23:24:49.157730058 +0000
+@@ -215,7 +215,7 @@
+   )
+ }
+ 
+-function DrawerCaptacao({ captacao, pessoas, leiloes, usuarios, onClose, onChanged }) {
++function DrawerCaptacao({ captacao, onClose, onChanged }) {
+   const [form, setForm] = useState({ ...captacao })
+   const [todasLeiloes, setTodasLeiloes] = useState([])
+   const [todosUsuarios, setTodosUsuarios] = useState([])
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/CatalogoPublico.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/CatalogoPublico.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/CatalogoPublico.jsx	2026-05-04 21:01:26.033556046 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/CatalogoPublico.jsx	2026-05-04 22:40:31.070805790 +0000
+@@ -128,7 +128,7 @@
+     } else if (!acervo) {
+       setObraDetalhe(null)
+     }
+-   
++
+   }, [acervo, participacoes, obras, fotosUrls])
+ 
+   function abrirObra(p, o, url) {
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/CobrancaPublica.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/CobrancaPublica.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/CobrancaPublica.jsx	2026-05-04 18:30:24.318688506 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/CobrancaPublica.jsx	2026-05-04 23:24:49.157730058 +0000
+@@ -61,7 +61,6 @@
+   const obra = oel?.obra
+   const leilao = oel?.leilao
+ 
+-  const valorBase = cobranca.valor_total || (oel?.valor_venda_final ?? oel?.valor_arremate ?? 0)
+   const venceEm = cobranca.vence_em ? new Date(cobranca.vence_em).toLocaleDateString('pt-BR') : null
+ 
+   return (
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Dashboard.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Dashboard.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Dashboard.jsx	2026-05-04 18:30:24.320688495 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Dashboard.jsx	2026-05-04 23:24:49.157730058 +0000
+@@ -109,7 +109,6 @@
+       const compradoresSemContato = (pessoasParaAlertas || []).filter(p => p.numero_compras > 0 && !p.email && !p.telefone)
+       const pagamentosBloqueados = (pagamentos || []).filter(p => p.status === 'bloqueado')
+       const tarefasAtrasadas = (tarefas || []).filter(t => t.proxima_acao_em && new Date(t.proxima_acao_em) < new Date())
+-      const tarefasPendentes = (tarefas || []).length
+ 
+       const alertas = [
+         tarefasAtrasadas.length > 0 && {
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Documentos.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Documentos.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Documentos.jsx	2026-05-04 21:01:26.033556046 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Documentos.jsx	2026-05-04 22:40:31.070805790 +0000
+@@ -47,7 +47,7 @@
+     setLoading(false)
+   }
+ 
+-   
++
+   useEffect(() => { load() }, [])
+ 
+   const filtered = useMemo(() => {
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Leiloes.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Leiloes.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Leiloes.jsx	2026-05-04 21:01:26.033556046 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Leiloes.jsx	2026-05-04 23:24:49.158730052 +0000
+@@ -61,7 +61,7 @@
+     setLoading(false)
+   }
+ 
+-  useEffect(() => { loadAll() }, [])  
++  useEffect(() => { loadAll() }, [])
+ 
+   const filtered = useMemo(() => {
+     if (!busca) return leiloes
+@@ -439,7 +439,7 @@
+   )
+ }
+ 
+-function LotesPanel({ leilao, lotesFiltrados, obras, pessoas, busca, setBusca, filtroStatus, setFiltroStatus, onReload }) {
++function LotesPanel({ lotesFiltrados, obras, pessoas, busca, setBusca, filtroStatus, setFiltroStatus, onReload }) {
+   const [reordenando, setReordenando] = useState(false)
+   const [ordem, setOrdem] = useState([])
+   const [salvando, setSalvando] = useState(false)
+@@ -598,7 +598,7 @@
+   )
+ }
+ 
+-function MatchesPanel({ leilao, participacoes, obras, pessoas }) {
++function MatchesPanel({ leilao, participacoes, obras }) {
+   const [matches, setMatches] = useState(null)
+   const [loading, setLoading] = useState(false)
+   const [selecionados, setSelecionados] = useState(new Set())
+@@ -885,7 +885,7 @@
+       await navigator.clipboard.writeText(url)
+       setCopiado(true)
+       setTimeout(() => setCopiado(false), 2000)
+-    } catch (e) { /* ignore */ }
++    } catch { /* ignore */ }
+   }
+ 
+   function whatsapp() {
+@@ -958,7 +958,7 @@
+ 
+ 
+ 
+-function ChecklistPanel({ leilao, onChanged }) {
++function ChecklistPanel({ leilao }) {
+   const [items, setItems] = useState([])
+   const [usuarios, setUsuarios] = useState([])
+   const [loading, setLoading] = useState(true)
+@@ -1087,8 +1087,6 @@
+   const [rsvps, setRsvps] = useState([])
+   const [loading, setLoading] = useState(true)
+   const [novo, setNovo] = useState(false)
+-  const toast = useToast()
+-
+   async function load() {
+     setLoading(true)
+     const { data } = await supabase.from('leilao_rsvp')
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Obras.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Obras.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Obras.jsx	2026-05-04 18:30:24.326688461 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Obras.jsx	2026-05-04 23:24:49.158730052 +0000
+@@ -948,8 +948,7 @@
+ }
+ 
+ // ── FiltroBar (busca + filtros estruturados em chips) ────────────────────
+-function FiltroBar({ busca, setBusca, filtros, setFiltros, facets, estados, viewMode, setViewMode, leiloesUnicos, participacoes, obras }) {
+-  const [aberto, setAberto] = useState(null)
++function FiltroBar({ busca, setBusca, filtros, setFiltros, facets, estados, viewMode, setViewMode }) {
+ 
+   function patch(p) { setFiltros(f => ({ ...f, ...p })) }
+   function chipsAtivos() {
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Pedidos.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Pedidos.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Pedidos.jsx	2026-05-04 21:01:26.033556046 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Pedidos.jsx	2026-05-04 23:24:49.159730047 +0000
+@@ -254,21 +254,18 @@
+   const [itens, setItens] = useState([])
+   const [obras, setObras] = useState({})
+   const [fotosUrls, setFotosUrls] = useState({})
+-  const [obrasDisponiveis, setObrasDisponiveis] = useState([])
+   const [loading, setLoading] = useState(true)
+-  const [adicionar, setAdicionar] = useState(false)
+-  const [obraId, setObraId] = useState('')
+-  const [valorVenda, setValorVenda] = useState('')
+   const toast = useToast()
+ 
+   async function load() {
+     setLoading(true)
+-    const [{ data: itensData }, { data: todasObras }] = await Promise.all([
+-      supabase.from('pedido_itens').select('*').eq('pedido_id', pedido.id).order('ordem').order('id'),
+-      supabase.from('obras').select('id, numero_acervo, artista, titulo'),
+-    ])
++    const { data: itensData } = await supabase
++      .from('pedido_itens')
++      .select('*')
++      .eq('pedido_id', pedido.id)
++      .order('ordem')
++      .order('id')
+     setItens(itensData || [])
+-    setObrasDisponiveis(todasObras || [])
+     const obraIds = [...new Set((itensData || []).map(i => i.obra_id))]
+     if (obraIds.length) {
+       const [{ data: obrasFull }, { data: fotos }] = await Promise.all([
+@@ -304,22 +301,6 @@
+   // eslint-disable-next-line react-hooks/exhaustive-deps
+   useEffect(() => { load() }, [pedido.id])
+ 
+-  async function handleAdd() {
+-    if (!obraId) return
+-    const v = valorVenda === '' ? null : Number(valorVenda)
+-    const { error } = await supabase.from('pedido_itens').insert({
+-      pedido_id: pedido.id,
+-      obra_id: obraId,
+-      valor_venda: v,
+-      ordem: itens.length + 1,
+-      status: 'ativo',
+-    })
+-    if (error) { toast.error(error.message); return }
+-    toast.success('Obra adicionada ao pedido')
+-    setObraId(''); setValorVenda(''); setAdicionar(false)
+-    onChange?.()
+-    load()
+-  }
+ 
+   async function handleRemove(item) {
+     if (!confirm('Remover essa obra do pedido?')) return
+@@ -578,7 +559,6 @@
+   const [modalNovo, setModalNovo] = useState(false)
+   const [editando, setEditando] = useState(null)
+   const [selecionado, setSelecionado] = useState(null)
+-  const toast = useToast()
+ 
+   async function load() {
+     setLoading(true)
+@@ -593,7 +573,7 @@
+     setLoading(false)
+   }
+ 
+-   
++
+   useEffect(() => { load() }, [])
+ 
+   const pessoasMap = useMemo(() => Object.fromEntries(pessoas.map(p => [p.id, p])), [pessoas])
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Pessoas.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Pessoas.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Pessoas.jsx	2026-05-04 18:30:24.330688438 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Pessoas.jsx	2026-05-04 23:24:49.159730047 +0000
+@@ -248,8 +248,6 @@
+             </div>
+           )}
+ 
+-          <ConsentimentoPessoa pessoa={pessoa} />
+-
+           <InteracoesPessoa pessoa={pessoa} />
+ 
+           <HistoricoPessoa pessoa={pessoa} />
+@@ -259,63 +257,6 @@
+   )
+ }
+ 
+-function ConsentimentoPessoa({ pessoa }) {
+-  const [consentimentos, setConsentimentos] = useState({
+-    whatsapp: pessoa.consentimento_whatsapp,
+-    email: pessoa.consentimento_email,
+-  })
+-  const [optout, setOptout] = useState(Boolean(pessoa.optout_em))
+-  const toast = useToast()
+-
+-  async function setConsent(canal, valor) {
+-    setConsentimentos(c => ({ ...c, [canal]: valor }))
+-    const patch = canal === 'whatsapp' ? { consentimento_whatsapp: valor } : { consentimento_email: valor }
+-    const { error } = await supabase.from('pessoas').update(patch).eq('id', pessoa.id)
+-    if (error) toast.error(error.message); else toast.success('Consentimento atualizado')
+-  }
+-
+-  async function toggleOptout() {
+-    const novo = !optout
+-    setOptout(novo)
+-    const { error } = await supabase.from('pessoas')
+-      .update({ optout_em: novo ? new Date().toISOString() : null })
+-      .eq('id', pessoa.id)
+-    if (error) toast.error(error.message); else toast.success(novo ? 'Marcado como opt-out' : 'Opt-out removido')
+-  }
+-
+-  return (
+-    <div className="bg-dark/40 border border-border/60 rounded-xl p-4">
+-      <div className="flex items-center justify-between mb-3">
+-        <div className="text-xs text-gray-300 font-medium">Consentimento (LGPD)</div>
+-        <label className="flex items-center gap-2 text-2xs text-gray-400 cursor-pointer">
+-          <input type="checkbox" checked={optout} onChange={toggleOptout} className="accent-red-400" />
+-          Opt-out total
+-        </label>
+-      </div>
+-      <div className="grid grid-cols-2 gap-3">
+-        <ConsentToggle label="WhatsApp" value={consentimentos.whatsapp} onChange={v => setConsent('whatsapp', v)} />
+-        <ConsentToggle label="Email" value={consentimentos.email} onChange={v => setConsent('email', v)} />
+-      </div>
+-    </div>
+-  )
+-}
+-
+-function ConsentToggle({ label, value, onChange }) {
+-  return (
+-    <div>
+-      <label className="block text-2xs text-gray-500 mb-1">{label}</label>
+-      <div className="flex gap-1 bg-dark border border-border rounded-lg p-1">
+-        {[{ v: null, l: '?' }, { v: true, l: 'sim' }, { v: false, l: 'não' }].map(o => (
+-          <button key={String(o.v)} onClick={() => onChange(o.v)}
+-            className={`flex-1 px-2 py-1 rounded text-2xs ${value === o.v ? (o.v === true ? 'bg-green-500/30 text-green-200' : o.v === false ? 'bg-red-500/30 text-red-200' : 'bg-gold/20 text-gold') : 'text-gray-500 hover:text-white'}`}>
+-            {o.l}
+-          </button>
+-        ))}
+-      </div>
+-    </div>
+-  )
+-}
+-
+ function HistoricoPessoa({ pessoa }) {
+   const [data, setData] = useState(null)
+   const [loadingMatch, setLoadingMatch] = useState(false)
+@@ -830,7 +771,6 @@
+ function ModalImportCSV({ onClose, onDone }) {
+   const [linhas, setLinhas] = useState([])
+   const [arquivo, setArquivo] = useState(null)
+-  const [mapa, setMapa] = useState({})
+   const [importando, setImportando] = useState(false)
+   const [resultado, setResultado] = useState(null)
+   const toast = useToast()
+@@ -844,7 +784,6 @@
+       const rows = parseCSV(String(ev.target.result || ''))
+       const mapped = mapearLinhas(rows, COL_ALIASES, TRANSFORMERS).filter(o => o.nome)
+       setLinhas(mapped)
+-      setMapa(rows[0] || {})
+     }
+     reader.readAsText(f, 'utf-8')
+   }
+@@ -862,7 +801,7 @@
+         })
+         if (error) { fail += chunk.length; toast.error(`Lote ${i / lote}: ${error.message}`) }
+         else ok += chunk.length
+-      } catch (e) {
++      } catch {
+         fail += chunk.length
+       }
+     }
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/PosLeilao.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/PosLeilao.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/PosLeilao.jsx	2026-05-04 18:30:24.331688433 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/PosLeilao.jsx	2026-05-04 23:40:00.747521556 +0000
+@@ -383,7 +383,7 @@
+       setLoading(false)
+     }
+     go()
+-  }, [d.id])
++  }, [d.id, d.obra.artista])
+ 
+   function abrirWhatsapp(p) {
+     const tel = (p.telefone || '').replace(/\D/g, '')
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Resultado.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Resultado.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Resultado.jsx	2026-05-04 18:30:24.332688427 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Resultado.jsx	2026-05-04 23:24:49.159730047 +0000
+@@ -1,4 +1,4 @@
+-import { useEffect, useMemo, useState } from 'react'
++import { useEffect, useState } from 'react'
+ import { supabase } from '../lib/supabase'
+ import { useLeilao } from '../lib/leilao-context'
+ import { LeilaoFiltroBanner } from '../components/LeilaoFilter'
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Segmentos.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Segmentos.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Segmentos.jsx	2026-05-04 18:30:24.333688421 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Segmentos.jsx	2026-05-04 23:24:49.159730047 +0000
+@@ -1,4 +1,4 @@
+-import { useEffect, useMemo, useState } from 'react'
++import { useEffect, useState } from 'react'
+ import { Link } from 'react-router-dom'
+ import { supabase } from '../lib/supabase'
+ import { useToast } from '../components/Toast'
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Vendas.jsx /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Vendas.jsx
+--- /opt/data/hermes_bruno_ingest/spiti-hub/src/pages/Vendas.jsx	2026-05-04 21:01:26.033556046 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/src/pages/Vendas.jsx	2026-05-04 23:24:49.160730041 +0000
+@@ -92,8 +92,6 @@
+   const [filtro, setFiltro] = useState('todos')
+   const [expandedId, setExpandedId] = useState(null)
+   const [modalParcela, setModalParcela] = useState(null) // { parcela, cobranca }
+-  const toast = useToast()
+-
+   async function load() {
+     setLoading(true)
+     const [{ data: cobr }, { data: parcs }, { data: pessoas }, { data: leiloes }] = await Promise.all([
+@@ -109,7 +107,7 @@
+     setLoading(false)
+   }
+ 
+-   
++
+   useEffect(() => { load() }, [])
+ 
+   const cobrancasEnriched = useMemo(() => cobrancas.map(c => ({
+diff -ruN '--exclude=.git' '--exclude=.next' '--exclude=build' '--exclude=dist' '--exclude=node_modules' /opt/data/hermes_bruno_ingest/spiti-hub/vite.config.js /opt/data/hermes_bruno_ingest/spiti-hub-git/vite.config.js
+--- /opt/data/hermes_bruno_ingest/spiti-hub/vite.config.js	2026-05-04 18:30:24.352688314 +0000
++++ /opt/data/hermes_bruno_ingest/spiti-hub-git/vite.config.js	2026-05-05 00:11:40.260224468 +0000
+@@ -3,4 +3,26 @@
+ 
+ export default defineConfig({
+   plugins: [react()],
++  build: {
++    rollupOptions: {
++      output: {
++        manualChunks(id) {
++          if (!id.includes('node_modules')) return undefined
++          if (id.includes('fontkit')) return 'pdf-fontkit'
++          if (id.includes('@react-pdf/pdfkit')) return 'pdfkit'
++          if (id.includes('@react-pdf/reconciler')) return 'react-pdf-reconciler'
++          if (id.includes('@react-pdf/layout')) return 'react-pdf-layout'
++          if (id.includes('@react-pdf/textkit')) return 'react-pdf-textkit'
++          if (id.includes('@react-pdf/render')) return 'react-pdf-render'
++          if (id.includes('@react-pdf/font')) return 'react-pdf-font'
++          if (id.includes('@react-pdf/image')) return 'react-pdf-image'
++          if (id.includes('@react-pdf/stylesheet')) return 'react-pdf-stylesheet'
++          if (id.includes('@react-pdf')) return 'react-pdf'
++          if (id.includes('yoga-layout')) return 'yoga-layout'
++          if (id.includes('recharts')) return 'recharts'
++          return undefined
++        },
++      },
++    },
++  },
+ })

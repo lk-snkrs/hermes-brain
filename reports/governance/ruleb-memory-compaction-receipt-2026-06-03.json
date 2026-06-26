@@ -1,0 +1,38 @@
+{
+  "generated_at_utc": "2026-06-03T12:15:51.156240+00:00",
+  "title": "Correção Rule B + compactação de memória especialista",
+  "scope": [
+    "LK Weekly Collection Sort Rule B local/read-only timeout containment",
+    "boot memory compaction for lk-ops and lk-shopify profiles"
+  ],
+  "changes": [
+    {
+      "path": "/opt/data/scripts/lk_weekly_collection_sort_ruleB.sh",
+      "change": "safe default is now dry-run/dispatch; Shopify apply requires LK_WEEKLY_COLLECTION_SORT_APPLY=1; bash -n passed; cron forced run now last_status=ok"
+    },
+    {
+      "path": "/opt/data/scripts/hermes_memory_hygiene_watchdog.py",
+      "change": "approved auto-compaction templates added for default + lk-ops + lk-shopify boot memories; py_compile passed; manual run silent OK"
+    },
+    {
+      "path": "/opt/data/profiles/lk-ops/memories/*",
+      "change": "backed up and compacted MEMORY 2046→883 chars, USER 1316→778 chars"
+    },
+    {
+      "path": "/opt/data/profiles/lk-shopify/memories/*",
+      "change": "backed up and compacted MEMORY 2027→972 chars, USER 1220→723 chars"
+    }
+  ],
+  "backups_dir": "/opt/data/memories/backups/specialist-compact-20260603",
+  "verification": {
+    "rule_b_cron_last_status": "ok at 2026-06-03T12:14:47Z after safe forced run",
+    "memory_hygiene_latest_status": "ok, alert_count=0, near_saturation_count=0",
+    "secret_scan_hits": []
+  },
+  "not_touched": [
+    "Docker/VPS/gateway/restarts",
+    "Shopify/Tiny/GMC/source-of-truth writes",
+    "WhatsApp/email external sends",
+    "provider/external memory activation"
+  ]
+}

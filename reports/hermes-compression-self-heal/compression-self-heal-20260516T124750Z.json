@@ -1,0 +1,42 @@
+{
+  "startedAt": "2026-05-16T12:47:50Z",
+  "trigger": {
+    "path": "/opt/data/logs/agent.log",
+    "line": "2026-05-16 12:44:46,962 WARNING [20260516_123254_1ab835] root: Failed to generate context summary: Codex auxiliary Responses stream interrupted. Further summary attempts paused for 60 seconds.",
+    "digest": "79312390966d1bb3db05d2b43c32098f8f72c6f7b832abd79fa782c9b4389be0",
+    "tail_index": 1120
+  },
+  "actions": [
+    "patched auxiliary_client.py; backup=auxiliary_client.py.bak-compression-self-heal-20260516124750; added=['bad file descriptor', 'errno 9']",
+    "patched test_auxiliary_client.py; backup=test_auxiliary_client.py.bak-compression-self-heal-20260516124750"
+  ],
+  "checks": [
+    {
+      "cmd": [
+        "/usr/bin/python3",
+        "-m",
+        "py_compile",
+        "/opt/hermes/agent/auxiliary_client.py"
+      ],
+      "rc": 0,
+      "output_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/python3",
+        "-m",
+        "pytest",
+        "tests/agent/test_auxiliary_client.py::TestIsConnectionError",
+        "tests/agent/test_context_compressor.py::TestStreamingClosedFallback",
+        "-q",
+        "-o",
+        "addopts="
+      ],
+      "rc": 1,
+      "output_tail": "/usr/bin/python3: No module named pytest\n"
+    }
+  ],
+  "restart": "not performed; gateway/container restart remains approval-gated unless Lucas explicitly approves that exact action",
+  "secretHandling": "log line sanitized/tail only; no env/config/secrets printed",
+  "status": "needs-human-review"
+}

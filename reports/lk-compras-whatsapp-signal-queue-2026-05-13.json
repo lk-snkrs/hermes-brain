@@ -1,0 +1,723 @@
+{
+  "generated_at": "2026-05-13T01:29:13.091188+00:00",
+  "status": "read_only_sanitized_queue_ready",
+  "source_label": "platform_signal_wacli_local",
+  "account": "lk-compras",
+  "store_stats": {
+    "chats": 50,
+    "groups": 34,
+    "left_groups": 0,
+    "messages": 4873
+  },
+  "messages_scanned": 1000,
+  "unique_chat_hashes": 15,
+  "signal_counts": {
+    "pedido_de_compra": 28,
+    "fechamento_compra": 15,
+    "produto_tamanho_estoque": 23,
+    "resposta_fornecedor": 17,
+    "proximidade_sp_logistica": 30,
+    "negociacao_preco": 17
+  },
+  "queue_count": 104,
+  "top_chat_hash_counts": [
+    [
+      "487148e1e3",
+      848
+    ],
+    [
+      "e102c1e25a",
+      15
+    ],
+    [
+      "c41fdf44bc",
+      15
+    ],
+    [
+      "411496fcc1",
+      15
+    ],
+    [
+      "80d12bb81b",
+      15
+    ],
+    [
+      "ee2b9da95c",
+      15
+    ],
+    [
+      "9d5ddee7d3",
+      15
+    ],
+    [
+      "cd85de94e7",
+      15
+    ],
+    [
+      "147b539713",
+      15
+    ],
+    [
+      "f44f949293",
+      11
+    ]
+  ],
+  "queue_sample": [
+    {
+      "signal_id": "543311b03978",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "e102c1e25a",
+      "timestamp_utc": "2026-05-13T00:56:57Z",
+      "from_me": true,
+      "signal_classes": [
+        "pedido_de_compra",
+        "fechamento_compra"
+      ],
+      "hints": [
+        "preço/número"
+      ],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "await_or_collect_supplier_responses",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "1e912aba1a8e",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "487148e1e3",
+      "timestamp_utc": "2026-05-13T00:28:22Z",
+      "from_me": false,
+      "signal_classes": [
+        "produto_tamanho_estoque"
+      ],
+      "hints": [],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "validate_product_size_stock_context",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "71d4592b049d",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "411496fcc1",
+      "timestamp_utc": "2026-05-13T00:05:42Z",
+      "from_me": false,
+      "signal_classes": [
+        "resposta_fornecedor"
+      ],
+      "hints": [
+        "preço/número",
+        "tamanho provável",
+        "mídia"
+      ],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "monitor_or_ignore",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "888ba6a52eb3",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "411496fcc1",
+      "timestamp_utc": "2026-05-13T00:05:04Z",
+      "from_me": false,
+      "signal_classes": [
+        "resposta_fornecedor"
+      ],
+      "hints": [],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "monitor_or_ignore",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "acddafada615",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "487148e1e3",
+      "timestamp_utc": "2026-05-12T23:48:28Z",
+      "from_me": false,
+      "signal_classes": [
+        "pedido_de_compra"
+      ],
+      "hints": [
+        "mídia"
+      ],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "await_or_collect_supplier_responses",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "b024a43fb9bf",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "487148e1e3",
+      "timestamp_utc": "2026-05-12T23:48:00Z",
+      "from_me": false,
+      "signal_classes": [
+        "pedido_de_compra"
+      ],
+      "hints": [],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "await_or_collect_supplier_responses",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "ced26e6309df",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "80d12bb81b",
+      "timestamp_utc": "2026-05-12T23:42:56Z",
+      "from_me": false,
+      "signal_classes": [
+        "proximidade_sp_logistica",
+        "fechamento_compra"
+      ],
+      "hints": [],
+      "decision_basis_candidates": [
+        "cheapest",
+        "closer_to_sp_small_price_delta"
+      ],
+      "recommended_next_step": "prepare_notion_logging_preview_after_human_purchase",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "214990c78c2d",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "487148e1e3",
+      "timestamp_utc": "2026-05-12T23:36:42Z",
+      "from_me": false,
+      "signal_classes": [
+        "proximidade_sp_logistica"
+      ],
+      "hints": [],
+      "decision_basis_candidates": [
+        "cheapest",
+        "closer_to_sp_small_price_delta"
+      ],
+      "recommended_next_step": "monitor_or_ignore",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "03ccf336b89a",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "487148e1e3",
+      "timestamp_utc": "2026-05-12T23:36:25Z",
+      "from_me": false,
+      "signal_classes": [
+        "proximidade_sp_logistica"
+      ],
+      "hints": [],
+      "decision_basis_candidates": [
+        "cheapest",
+        "closer_to_sp_small_price_delta"
+      ],
+      "recommended_next_step": "monitor_or_ignore",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "7132ad2c5d2c",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "487148e1e3",
+      "timestamp_utc": "2026-05-12T23:34:14Z",
+      "from_me": false,
+      "signal_classes": [
+        "proximidade_sp_logistica"
+      ],
+      "hints": [],
+      "decision_basis_candidates": [
+        "cheapest",
+        "closer_to_sp_small_price_delta"
+      ],
+      "recommended_next_step": "monitor_or_ignore",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "56da7fb62fd5",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "487148e1e3",
+      "timestamp_utc": "2026-05-12T22:57:36Z",
+      "from_me": false,
+      "signal_classes": [
+        "resposta_fornecedor"
+      ],
+      "hints": [],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "monitor_or_ignore",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "6a3c86f091ec",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "e102c1e25a",
+      "timestamp_utc": "2026-05-12T22:47:56Z",
+      "from_me": true,
+      "signal_classes": [
+        "pedido_de_compra",
+        "fechamento_compra"
+      ],
+      "hints": [
+        "preço/número",
+        "tamanho provável"
+      ],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "await_or_collect_supplier_responses",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "7a9995609107",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "c41fdf44bc",
+      "timestamp_utc": "2026-05-12T22:29:48Z",
+      "from_me": false,
+      "signal_classes": [
+        "proximidade_sp_logistica"
+      ],
+      "hints": [],
+      "decision_basis_candidates": [
+        "cheapest",
+        "closer_to_sp_small_price_delta"
+      ],
+      "recommended_next_step": "monitor_or_ignore",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "1e3b5aafc297",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "487148e1e3",
+      "timestamp_utc": "2026-05-12T22:16:54Z",
+      "from_me": false,
+      "signal_classes": [
+        "resposta_fornecedor"
+      ],
+      "hints": [
+        "tamanho provável"
+      ],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "monitor_or_ignore",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "13a784cb83dd",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "c41fdf44bc",
+      "timestamp_utc": "2026-05-12T22:13:58Z",
+      "from_me": false,
+      "signal_classes": [
+        "proximidade_sp_logistica"
+      ],
+      "hints": [
+        "tamanho provável"
+      ],
+      "decision_basis_candidates": [
+        "cheapest",
+        "closer_to_sp_small_price_delta"
+      ],
+      "recommended_next_step": "monitor_or_ignore",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "12483bf2ea4c",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "9d5ddee7d3",
+      "timestamp_utc": "2026-05-12T21:29:20Z",
+      "from_me": false,
+      "signal_classes": [
+        "negociacao_preco"
+      ],
+      "hints": [
+        "tamanho provável"
+      ],
+      "decision_basis_candidates": [
+        "cheapest",
+        "closer_to_sp_small_price_delta"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "7b096789e6e5",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "9d5ddee7d3",
+      "timestamp_utc": "2026-05-12T21:12:28Z",
+      "from_me": false,
+      "signal_classes": [
+        "negociacao_preco"
+      ],
+      "hints": [
+        "preço/número",
+        "tamanho provável",
+        "mídia"
+      ],
+      "decision_basis_candidates": [
+        "cheapest",
+        "closer_to_sp_small_price_delta"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "fc00c621629d",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "9d5ddee7d3",
+      "timestamp_utc": "2026-05-12T21:12:07Z",
+      "from_me": false,
+      "signal_classes": [
+        "negociacao_preco"
+      ],
+      "hints": [
+        "preço/número",
+        "tamanho provável",
+        "mídia"
+      ],
+      "decision_basis_candidates": [
+        "cheapest",
+        "closer_to_sp_small_price_delta"
+      ],
+      "recommended_next_step": "compare_price_options",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "11dffd13dc24",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "cd85de94e7",
+      "timestamp_utc": "2026-05-12T21:10:51Z",
+      "from_me": false,
+      "signal_classes": [
+        "fechamento_compra"
+      ],
+      "hints": [
+        "preço/número",
+        "mídia"
+      ],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "prepare_notion_logging_preview_after_human_purchase",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "240e9eae578b",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "e102c1e25a",
+      "timestamp_utc": "2026-05-12T20:49:48Z",
+      "from_me": true,
+      "signal_classes": [
+        "pedido_de_compra"
+      ],
+      "hints": [
+        "preço/número",
+        "tamanho provável"
+      ],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "await_or_collect_supplier_responses",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "22c40b214f78",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "c41fdf44bc",
+      "timestamp_utc": "2026-05-12T20:45:34Z",
+      "from_me": false,
+      "signal_classes": [
+        "pedido_de_compra"
+      ],
+      "hints": [
+        "mídia"
+      ],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "await_or_collect_supplier_responses",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "aa16796cb6ea",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "e102c1e25a",
+      "timestamp_utc": "2026-05-12T20:24:57Z",
+      "from_me": true,
+      "signal_classes": [
+        "pedido_de_compra",
+        "fechamento_compra"
+      ],
+      "hints": [
+        "preço/número"
+      ],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "await_or_collect_supplier_responses",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "c38b12547441",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "487148e1e3",
+      "timestamp_utc": "2026-05-12T20:24:48Z",
+      "from_me": false,
+      "signal_classes": [
+        "produto_tamanho_estoque"
+      ],
+      "hints": [
+        "mídia"
+      ],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "validate_product_size_stock_context",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "6f7d329333ab",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "487148e1e3",
+      "timestamp_utc": "2026-05-12T20:23:31Z",
+      "from_me": false,
+      "signal_classes": [
+        "produto_tamanho_estoque"
+      ],
+      "hints": [],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "validate_product_size_stock_context",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    },
+    {
+      "signal_id": "2abb87d214b7",
+      "account": "lk-compras",
+      "source_type": "group",
+      "chat_hash": "bc387896e0",
+      "timestamp_utc": "2026-05-12T20:22:14Z",
+      "from_me": false,
+      "signal_classes": [
+        "produto_tamanho_estoque"
+      ],
+      "hints": [
+        "link"
+      ],
+      "decision_basis_candidates": [],
+      "recommended_next_step": "validate_product_size_stock_context",
+      "approval_required_before": [
+        "send",
+        "contact",
+        "purchase",
+        "notion_write",
+        "external_task",
+        "business_system_write"
+      ],
+      "sanitized_summary": "Sinal classificado sem nome, telefone, JID ou texto literal."
+    }
+  ],
+  "private_raw_path": "/opt/data/hermes_bruno_ingest/local_sql/wacli_lk_compras/raw_signal_queue_source_20260513T012913.json",
+  "non_actions": [
+    "no_whatsapp_send",
+    "no_supplier_contact",
+    "no_customer_contact",
+    "no_purchase",
+    "no_reservation",
+    "no_notion_write",
+    "no_shopify_tiny_merchant_db_write",
+    "no_cron"
+  ]
+}

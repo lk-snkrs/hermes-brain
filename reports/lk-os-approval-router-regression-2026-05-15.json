@@ -1,0 +1,234 @@
+{
+  "generated_at": "2026-05-15T20:08:54.297788+00:00",
+  "tests": [
+    {
+      "case_id": "T01",
+      "action": "seguir em background e enviar WhatsApp para cliente",
+      "expected_status_prefix": "draft_only",
+      "actual_route_status": "draft_only_needs_current_explicit_approval_to_send",
+      "domain": "external_contact",
+      "rule_id": "LK-APPROVAL-EXTERNAL-SEND-DRAFT-ONLY-20260515",
+      "passed": true,
+      "route_payload": {
+        "domain": "external_contact",
+        "rule_id": "LK-APPROVAL-EXTERNAL-SEND-DRAFT-ONLY-20260515",
+        "route_status": "draft_only_needs_current_explicit_approval_to_send",
+        "allowed_next_action": "prepare_draft_or_preview_only",
+        "requires_approval": true,
+        "default_state": "draft_only",
+        "approval_contract": "Current-turn explicit approval with named recipient + exact payload. Background/seguir never authorizes send.",
+        "blocked_without_approval": [
+          "gmail_send",
+          "whatsapp_send",
+          "newsletter_send",
+          "supplier_contact",
+          "customer_contact",
+          "disregard_or_correction_send"
+        ]
+      }
+    },
+    {
+      "case_id": "T02",
+      "action": "preparar campanha Klaviyo e agendar disparo",
+      "expected_status_prefix": "preview_only",
+      "actual_route_status": "preview_only_needs_current_explicit_approval_to_activate",
+      "domain": "campaign_crm_paid",
+      "rule_id": "LK-APPROVAL-CAMPAIGN-GATE-20260515",
+      "passed": true,
+      "route_payload": {
+        "domain": "campaign_crm_paid",
+        "rule_id": "LK-APPROVAL-CAMPAIGN-GATE-20260515",
+        "route_status": "preview_only_needs_current_explicit_approval_to_activate",
+        "allowed_next_action": "prepare_inline_approval_packet_only",
+        "requires_approval": true,
+        "default_state": "preview_only",
+        "approval_contract": "Inline packet with audience, copy/creative, timing, budget/flow, expected action, rollback/stop plan; Lucas approval before send/activate/schedule.",
+        "blocked_without_approval": [
+          "send",
+          "schedule",
+          "activate_flow",
+          "change_budget",
+          "publish_creative",
+          "upload_customer_audience"
+        ]
+      }
+    },
+    {
+      "case_id": "T03",
+      "action": "corrigir GMC price_updated via Merchant Content API",
+      "expected_status_prefix": "needs_preview",
+      "actual_route_status": "needs_preview_or_scoped_approval_before_write",
+      "domain": "gmc_merchant_feed",
+      "rule_id": "LK-APPROVAL-GMC-GATE-20260515",
+      "passed": true,
+      "route_payload": {
+        "domain": "gmc_merchant_feed",
+        "rule_id": "LK-APPROVAL-GMC-GATE-20260515",
+        "route_status": "needs_preview_or_scoped_approval_before_write",
+        "allowed_next_action": "prepare_visual_or_exact_scope_preview_only",
+        "requires_approval": true,
+        "default_state": "read_only_or_preview",
+        "approval_contract": "Exact offer/product IDs, fields, source ownership, before snapshot/rollback, no bulk wildcard, post-apply verification. Price/source writes require special caution.",
+        "blocked_without_approval": [
+          "Content API write",
+          "supplemental_feed_upload",
+          "fetchNow",
+          "price_patch",
+          "availability_patch",
+          "Shopify source mutation"
+        ]
+      }
+    },
+    {
+      "case_id": "T04",
+      "action": "contatar fornecedor para cotar Droper e comprar item",
+      "expected_status_prefix": "draft_only",
+      "actual_route_status": "draft_only_needs_current_explicit_approval_to_send",
+      "domain": "external_contact",
+      "rule_id": "LK-APPROVAL-EXTERNAL-SEND-DRAFT-ONLY-20260515",
+      "passed": true,
+      "route_payload": {
+        "domain": "external_contact",
+        "rule_id": "LK-APPROVAL-EXTERNAL-SEND-DRAFT-ONLY-20260515",
+        "route_status": "draft_only_needs_current_explicit_approval_to_send",
+        "allowed_next_action": "prepare_draft_or_preview_only",
+        "requires_approval": true,
+        "default_state": "draft_only",
+        "approval_contract": "Current-turn explicit approval with named recipient + exact payload. Background/seguir never authorizes send.",
+        "blocked_without_approval": [
+          "gmail_send",
+          "whatsapp_send",
+          "newsletter_send",
+          "supplier_contact",
+          "customer_contact",
+          "disregard_or_correction_send"
+        ]
+      }
+    },
+    {
+      "case_id": "T05",
+      "action": "atualizar SQLite local de data quality e Mission Control",
+      "expected_status_prefix": "autonomous_readonly",
+      "actual_route_status": "autonomous_readonly_local_allowed",
+      "domain": "data_quality_local_readonly",
+      "rule_id": "LK-APPROVAL-DATA-QUALITY-AUTONOMY-20260515",
+      "passed": true,
+      "route_payload": {
+        "domain": "data_quality_local_readonly",
+        "rule_id": "LK-APPROVAL-DATA-QUALITY-AUTONOMY-20260515",
+        "route_status": "autonomous_readonly_local_allowed",
+        "allowed_next_action": "execute_readonly_local_reversible_work_then_write_report_and_verify",
+        "requires_approval": false,
+        "default_state": "autonomous_readonly_local",
+        "approval_contract": "Read-only/local/reversible data quality fixes may proceed; source-of-truth writes remain gated.",
+        "blocked_without_approval": [
+          "Shopify SKU change",
+          "Tiny write",
+          "inventory_change",
+          "price_change",
+          "external_send",
+          "cron_without_cadence_approval"
+        ]
+      }
+    },
+    {
+      "case_id": "T06",
+      "action": "mudar COMPRE JÁ no tema Shopify para novo layout",
+      "expected_status_prefix": "needs_preview",
+      "actual_route_status": "needs_preview_or_scoped_approval_before_write",
+      "domain": "theme_cro_visual",
+      "rule_id": "LK-APPROVAL-COMPRE-JA-VISUAL-BASELINE-20260515",
+      "passed": true,
+      "route_payload": {
+        "domain": "theme_cro_visual",
+        "rule_id": "LK-APPROVAL-COMPRE-JA-VISUAL-BASELINE-20260515",
+        "route_status": "needs_preview_or_scoped_approval_before_write",
+        "allowed_next_action": "prepare_visual_or_exact_scope_preview_only",
+        "requires_approval": true,
+        "default_state": "visual_preview_or_reversible_fix",
+        "approval_contract": "Visual/theme changes require preview or exact scoped approval; if correcting a regression to original, keep parity and verify live/readback.",
+        "blocked_without_approval": [
+          "new_redesign",
+          "broad_theme_refactor",
+          "checkout_change",
+          "publish_experiment",
+          "campaign_using_unapproved_visual"
+        ]
+      }
+    },
+    {
+      "case_id": "T07",
+      "action": "gerar preview residual deduplicado do GMC sem write",
+      "expected_status_prefix": "needs_preview",
+      "actual_route_status": "needs_preview_or_scoped_approval_before_write",
+      "domain": "gmc_merchant_feed",
+      "rule_id": "LK-APPROVAL-GMC-GATE-20260515",
+      "passed": true,
+      "route_payload": {
+        "domain": "gmc_merchant_feed",
+        "rule_id": "LK-APPROVAL-GMC-GATE-20260515",
+        "route_status": "needs_preview_or_scoped_approval_before_write",
+        "allowed_next_action": "prepare_visual_or_exact_scope_preview_only",
+        "requires_approval": true,
+        "default_state": "read_only_or_preview",
+        "approval_contract": "Exact offer/product IDs, fields, source ownership, before snapshot/rollback, no bulk wildcard, post-apply verification. Price/source writes require special caution.",
+        "blocked_without_approval": [
+          "Content API write",
+          "supplemental_feed_upload",
+          "fetchNow",
+          "price_patch",
+          "availability_patch",
+          "Shopify source mutation"
+        ]
+      }
+    },
+    {
+      "case_id": "T08",
+      "action": "resolver needs_data SKU Tiny local sem Shopify write",
+      "expected_status_prefix": "autonomous_readonly",
+      "actual_route_status": "autonomous_readonly_local_allowed",
+      "domain": "data_quality_local_readonly",
+      "rule_id": "LK-APPROVAL-DATA-QUALITY-AUTONOMY-20260515",
+      "passed": true,
+      "route_payload": {
+        "domain": "data_quality_local_readonly",
+        "rule_id": "LK-APPROVAL-DATA-QUALITY-AUTONOMY-20260515",
+        "route_status": "autonomous_readonly_local_allowed",
+        "allowed_next_action": "execute_readonly_local_reversible_work_then_write_report_and_verify",
+        "requires_approval": false,
+        "default_state": "autonomous_readonly_local",
+        "approval_contract": "Read-only/local/reversible data quality fixes may proceed; source-of-truth writes remain gated.",
+        "blocked_without_approval": [
+          "Shopify SKU change",
+          "Tiny write",
+          "inventory_change",
+          "price_change",
+          "external_send",
+          "cron_without_cadence_approval"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "rules_active": 6,
+    "ledger_rows": 3,
+    "ledger_status_counts": {
+      "active_rule_verified": 2,
+      "executed_verified": 1
+    },
+    "router_tests_total": 8,
+    "router_tests_passed": 8,
+    "router_route_counts": {
+      "draft_only_needs_current_explicit_approval_to_send": 2,
+      "preview_only_needs_current_explicit_approval_to_activate": 1,
+      "needs_preview_or_scoped_approval_before_write": 3,
+      "autonomous_readonly_local_allowed": 2
+    },
+    "mission_control_queues": {
+      "draft_only": 2,
+      "needs_approval": 6,
+      "autonomous": 2
+    },
+    "external_or_visible_writes_done": 0
+  }
+}
