@@ -89,17 +89,23 @@ Quando um relatório bruto for importante, criar uma síntese `.md` sob a área 
 
 Antes de commit/push, o script deve:
 
-1. listar mudanças do Git;
-2. filtrar por allowlist;
-3. bloquear arquivos grandes acima de 512 KB;
-4. rodar secret scan nos arquivos permitidos;
-5. stagear somente arquivos permitidos;
-6. rodar secret scan novamente no staged set;
-7. bloquear marcadores de conflito Git (`<<<<<<<`, `=======`, `>>>>>>>`);
-8. criar commit convencional `docs: sync Hermes Brain daily consolidation YYYY-MM-DD`;
-9. executar `git push origin HEAD:<branch-atual>` apenas se `--push` foi passado.
+1. verificar se o checkout operacional está no branch canônico esperado (`main` por padrão, ou `BRAIN_SYNC_TARGET_BRANCH` se definido);
+2. abortar com erro sanitizado se o checkout estiver em branch não-canônico, para evitar push silencioso para branch antigo/de consolidação;
+3. listar mudanças do Git;
+4. filtrar por allowlist;
+5. bloquear arquivos grandes acima de 512 KB;
+6. rodar secret scan nos arquivos permitidos;
+7. stagear somente arquivos permitidos;
+8. rodar secret scan novamente no staged set;
+9. bloquear marcadores de conflito Git (`<<<<<<<`, `=======`, `>>>>>>>`);
+10. criar commit convencional `docs: sync Hermes Brain daily consolidation YYYY-MM-DD`;
+11. executar `git push origin HEAD:<branch-atual>` apenas se `--push` foi passado e o branch atual passou no gate canônico.
 
 Se qualquer gate falhar, abortar antes do commit/push.
+
+### 5.1 Break-glass manual
+
+`--allow-noncanonical-branch` existe apenas para intervenção manual explicitamente escopada. Cron/rotina automática não deve usar esse flag. Se o checkout operacional estiver em branch diferente de `main`, primeiro reconciliar/switchar o Brain operacional ou criar PR de reconciliação protegido; não deixar o cron continuar alimentando branch antigo silenciosamente.
 
 ## 6. Baixo ruído
 
