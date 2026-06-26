@@ -1,0 +1,22 @@
+## 2026-06-26 09:05Z — LK Shopify — New Balance 740 publicabilidade/status/coleção
+
+- Pedido/evento: Mesa COO retornou **Fazer** para preparar handoff/approval packet read-only da frente `New Balance 740`.
+- Fonte viva consultada: Shopify Admin GraphQL read-only em 2026-06-26T09:05Z; Doppler `lc-keys/prd` injetou `SHOPIFY_STORE_URL` e `SHOPIFY_ACCESS_TOKEN` sem imprimir valores (`values_printed=false`).
+- Item/SKU/tamanho/cliente/pedido/fornecedor:
+  - Produto: `Tênis New Balance 740 x Concepts Saignée Verde`
+  - Product GID: `gid://shopify/Product/8780230492382`
+  - legacy ID: `8780230492382`
+  - Handle: `tenis-new-balance-740-x-concepts-saignee-verde`
+  - Status atual: `ARCHIVED`
+  - `publishedAt`: `null`
+  - `onlineStoreUrl`: `null`
+  - Coleção pretendida: `new-balance-740`; `collectionByHandle` retornou `null`.
+- Resultado verificado: não há base segura para criar `/collections/new-balance-740` agora; o único candidato está arquivado/não publicado.
+- Output/rascunho: packet completo em `areas/lk/sub-areas/collection-optimizer/approval-packets/20260626T0905Z-new-balance-740-unblock-readonly-packet.md`.
+- Writes externos: não.
+- Aprovação: Lucas aprovou apenas preparar packet/handoff read-only; não aprovou reativar produto, publicar canal, criar coleção, editar SEO/tags/metafields/theme/menu, nem Tiny/estoque.
+- Snapshot/readback/receipt: product/collection read-only descritos no packet.
+- Risco/bloqueio: reativar/publicar produto arquivado pode expor item sem validação de estoque/Tiny; criar coleção vazia prejudica SEO/Growth e viola escopo aprovado.
+- Próximo passo: LK Shopify fazer read-only snapshot mais completo do produto/canais/publicações e, se for tecnicamente destravável após OK do LK Stock, preparar novo approval packet com campos exatos, backup, rollback e readback.
+- Onde ficou documentado: este handoff + packet LKGOC.
+- Reminder OS loop needed: yes — depende de validação do `lk-shopify` e `lk-stock` antes de qualquer write.
