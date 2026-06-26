@@ -5,6 +5,9 @@ area: lk
 version: 1.0.0
 ---
 
+> **DEPRECATED / DO NOT RUN:** legacy skill retained only for historical/reference audit. Not part of current Hermes Brain runtime.
+
+
 # Skill: Cross-Sell Monitor LK
 
 ## Fontes

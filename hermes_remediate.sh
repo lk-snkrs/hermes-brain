@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# DEPRECATED / DO NOT RUN: legacy Hermes Brain script retained only for historical/reference audit. Not part of current runtime.
 # =============================================================================
 # hermes_remediate.sh - Auto-remediation script for Hermes Monitor Alerts
 # Called by alert_system.py before sending notifications when issues are detected.

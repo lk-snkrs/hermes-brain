@@ -35,7 +35,7 @@ SECRET_PATTERNS = {
     "supabase_pat": re.compile(r"sbp_[A-Za-z0-9_]+"),
     "github_classic": re.compile(r"ghp_[A-Za-z0-9_]+"),
     "github_fine_grained": re.compile(r"github_pat_[A-Za-z0-9_]{20,}"),
-    "openai": re.compile(r"sk-[A-Za-z0-9_-]{12,}"),
+    "openai": re.compile(r"(?<![A-Za-z0-9_])sk-[A-Za-z0-9_-]{12,}"),
     "mem0": re.compile(r"m0-[A-Za-z0-9_-]{12,}"),
     "telegram_bot": re.compile(r"\b\d{8,10}:[A-Za-z0-9_-]{25,}\b"),
     "fal_key_pair": re.compile(r"\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}:[A-Za-z0-9_-]{20,}\b", re.I),

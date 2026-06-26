@@ -4,6 +4,9 @@ description: Protocolo obrigatório de início de sessão - deve ser executado A
 tags: [protocol, session, mandatory]
 ---
 
+> **DEPRECATED / DO NOT RUN:** legacy skill retained only for historical/reference audit. Not part of current Hermes Brain runtime.
+
+
 # Session Start Protocol
 
 ## REGRA DE OURO

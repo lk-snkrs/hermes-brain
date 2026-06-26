@@ -1,5 +1,8 @@
 # LK POS restock webhook — approval packet de restart
 
+> **Documento histórico / DO NOT RUN:** comandos e caminhos citados são evidência/registro; não executar sem aprovação escopada, backup, rollback e readback.
+
+
 Data UTC: 2026-06-07T12:00:29Z
 
 ## Contexto

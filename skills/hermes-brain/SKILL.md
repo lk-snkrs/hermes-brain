@@ -8,7 +8,7 @@ version: 1.0.0
 # Hermes Brain — Memória Central
 
 ## O que é
-A memória central do Hermes Agent — todo o contexto dos negócios, decisões, equipe e lições aprendidas consolidadas do cerebro-cimino (OpenClaw).
+A memória central do Hermes Agent — todo o contexto dos negócios, decisões, equipe e lições aprendidas consolidadas do cerebro-cimino (OpenClaw) como fonte histórica; runtime atual usa /opt/data/hermes_bruno_ingest/hermes-brain.
 
 ## Arquivos de Memória
 ```
