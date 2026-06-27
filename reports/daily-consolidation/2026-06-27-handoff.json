@@ -1,0 +1,136 @@
+{
+  "operational_date": "2026-06-27",
+  "generated_at_utc": "2026-06-27T04:00:45Z",
+  "status": "attention",
+  "executive_summary": "Fechamento 01h BRT Brain-first/local gerado. Brain health PASS 0/0 e Brain Improvement Score 94/100. Há atenção operacional em Reminder OS health FAIL, cron LK 09h com last_status error stale/corrigido em dry-run, WACLI desconectado bloqueando WhatsApp Zipper pendente, e strict-runtime guard com dívida legada documentada.",
+  "material_changes": [
+    "LK Shopify/LKGOC executaram writes aprovados com receipts, snapshot/readback/rollback: Onitsuka Tiger Gymnarina SEO/FAQ/schema e PDP Production merges Curadoria LK/Product Suggestions v2.",
+    "LK Atendimento executou ELLE Brain v2 canary 100% safe-only e reenvio aprovado de dois templates WhatsApp para pedido 147940, com receipts e guardrails.",
+    "Zipper/Mordomo teve envios parciais: e-mails aprovados enviados; WhatsApp pendente por WACLI pessoal unauthenticated.",
+    "Operações registrou correções locais: LK report generator/config dry-run OK; Memory OS daytime timeout fix; Brain audit/strict-runtime guard pendências documentadas.",
+    "Brain Health 02h gerado em reports/brain-health-check-2026-06-27-02h.json; Brain Improvement Score gerado em reports/brain-improvement-score-2026-06-27-02h.md/json."
+  ],
+  "incidents": [
+    {
+      "domain": "LK OS",
+      "summary": "Cron LK 09h previous-day sales report ainda aparece last_status=error no scheduler, embora correção tenha sido validada em dry-run; aguardar próximo run natural, sem send manual sem aprovação."
+    },
+    {
+      "domain": "Reminder OS",
+      "summary": "Health gate atual FAIL: ledger_schema_errors=1, ingress_open_needed=8, active_loops=25. Requer correção local/dedupada."
+    },
+    {
+      "domain": "Zipper/Mordomo",
+      "summary": "WACLI hermes/pessoal unauthenticated; WhatsApp pendente para dois handoffs ZPR, e-mails já enviados não devem ser duplicados."
+    },
+    {
+      "domain": "Operações Hermes",
+      "summary": "Strict-runtime guard encontrou 119 achados legados/perigosos; saneamento/quarentena precisa frente separada."
+    }
+  ],
+  "decisions_made_by_lucas": [
+    "Aprovou reenvio customer-facing de dois templates Chatwoot/WhatsApp para pedido 147940, executado exatamente no escopo aprovado.",
+    "Aprovou ELLE Brain v2 em 100% dentro de guardrail safe-only; não removeu proteções de handoff/estoque/pós-venda.",
+    "Aprovou merges Production específicos do PDP LK Shopify via PR/GitHub/theme sync/readback.",
+    "Aprovou melhoria SEO/FAQ/schema da coleção Onitsuka Tiger Gymnarina em escopo limitado de collection object.",
+    "Aprovou envios Zipper específicos; resultado parcial por WACLI WhatsApp desconectado."
+  ],
+  "approvals_and_corrections": [
+    {
+      "approval": "ELLE Brain v2 100%",
+      "scope": "100% das conversas elegíveis safe-only, mantendo legacy_handoff_guard e bloqueios de estoque/pós-venda.",
+      "exclusions": "Sem remover guardrails; sem Shopify/Tiny/stock writes; kill switch se erro material.",
+      "pattern_to_learn": "Aprovação ampla de percentual deve ser interpretada dentro do escopo seguro previamente aprovado, não como bypass de guardrails."
+    },
+    {
+      "approval": "LK Shopify Production merges PDP",
+      "scope": "PRs/merges específicos, Shopify Production readback e QA público para PDP.",
+      "exclusions": "Sem produto/preço/estoque/Tiny/GMC/Klaviyo/ads/WhatsApp.",
+      "pattern_to_learn": "Production theme/PDP segue GitHub PR + readback + rollback; não write direto improvisado."
+    },
+    {
+      "approval": "Zipper sends",
+      "scope": "E-mail enviado e WhatsApp previsto para casos aprovados.",
+      "exclusions": "WhatsApp não executado por WACLI unauthenticated; não reenviar e-mail.",
+      "pattern_to_learn": "Handoff partial_sent precisa separar canais já executados de canais pendentes para evitar duplicidade."
+    }
+  ],
+  "learning_ledger_candidates": [
+    {
+      "learning": "Webhook Shopify truncado sem line_items/SKU/variant/quantity deve ser no-op seguro e roteado a lk-stock/stock sync, sem baixa de estoque.",
+      "recommended_destination": "handler/script lk-shopify-tiny-stock-sync + docs LK Stock/LK Shopify",
+      "action_applied_or_blocked": "Aplicado nas respostas e no fechamento; precisa hardening do handler em frente própria."
+    },
+    {
+      "learning": "Reminder OS FAIL por ledger_schema_errors/open_needed_count deve virar correção local dedupada, não alerta ruidoso nem criação de backlog fantasma.",
+      "recommended_destination": "Reminder OS health routine/check",
+      "action_applied_or_blocked": "Registrado como pendência A0/A1; não corrigido nesta execução."
+    },
+    {
+      "learning": "Production theme/PDP aprovado deve passar por PR/GitHub/readback/rollback.",
+      "recommended_destination": "LK Shopify skill/rotina/templates",
+      "action_applied_or_blocked": "Evidenciado em receipts; verificar se skill/templates já carregam a regra."
+    },
+    {
+      "learning": "Zipper partial_sent deve preservar idempotência por canal.",
+      "recommended_destination": "Mordomo/Zipper handoff template + Reminder OS",
+      "action_applied_or_blocked": "Handoffs já têm owner/next action/review trigger."
+    }
+  ],
+  "autonomy_pattern_candidates": {
+    "could_be_a0_a1_if_safe": [
+      "Registrar no-op seguro para webhooks truncados sem line_items e pedir payload completo/fetch read-only.",
+      "Corrigir Reminder OS ledger/ingress localmente quando health gate indicar schema/open_needed gaps e houver evidência suficiente.",
+      "Atualizar docs/skills/templates com padrões já aprovados e verificados."
+    ],
+    "must_stay_a3_a4": [
+      "Qualquer envio WhatsApp/e-mail/customer-facing fora de escopo exato aprovado.",
+      "Qualquer Shopify/Tiny/GMC/Klaviyo/Meta write sem aprovação escopada.",
+      "Docker/VPS/gateway/restart/deploy/infra e secret changes."
+    ]
+  },
+  "pending_decisions_for_lucas": [
+    "Zipper Freshworks: deixar organização expirar/deletar ou preservar/verificar dados antes do prazo.",
+    "Reconectar/autorizar WACLI pessoal para recuperar WhatsApp pendente nos handoffs ZPR, sem reenviar e-mails.",
+    "Aprovar, se desejado, handoff LK Shopify para validar/criar collection canônica New Balance 740 antes de guia/FAQ/schema público."
+  ],
+  "safe_next_actions": [
+    "Rodada local para Reminder OS health: corrigir schema error e ingress_open_needed com dedupe/health gate.",
+    "Aguardar próximo run natural do cron LK 09h para confirmar last_status OK; não disparar send manual sem aprovação.",
+    "Monitorar ELLE Brain v2 safe-only e revisar primeiros usos reais com kill switch pronto.",
+    "Verificar skills/templates LK Shopify e webhook stock sync para promover padrões aprendidos."
+  ],
+  "blocked_actions_requiring_approval": [
+    "Reenviar WhatsApp Zipper pendente após reconexão WACLI sem confirmação de idempotência/escopo.",
+    "Executar manualmente cron LK 09h com send externo.",
+    "Criar collection NB740/publicar guia/FAQ/schema em produção sem approval packet.",
+    "Alterar Docker/VPS/gateway/containers ou secrets.",
+    "Alterar Shopify/Tiny/estoque/preço/campanhas fora dos escopos já executados."
+  ],
+  "cron_and_delivery_truth": {
+    "generated": true,
+    "delivered_to_telegram": false,
+    "normal_delivery": "local",
+    "brain_health": {"fail": 0, "warn": 0, "artifact": "reports/brain-health-check-2026-06-27-02h.json"},
+    "brain_improvement_score": {"score": 94, "artifact_md": "reports/brain-improvement-score-2026-06-27-02h.md", "artifact_json": "reports/brain-improvement-score-2026-06-27-02h.json"},
+    "actionable_stdout": ["Reminder OS health FAIL", "LK 09h last_status error stale until next natural run", "WACLI unauthenticated blocks pending WhatsApp"],
+    "silent_ok": false
+  },
+  "sources": [
+    "reports/daily-consolidation/2026-06-27.md",
+    "reports/brain-health-check-2026-06-27-02h.json",
+    "reports/brain-improvement-score-2026-06-27-02h.md",
+    "reports/reminder-os-health-current.json",
+    "reports/governance/cron-audit-all-2026-06-26.md",
+    "reports/governance/task-os-audit-2026-06-26.md",
+    "reports/governance/lk-report-external-delivery-fix-2026-06-26.md",
+    "reports/wacli-health/2026-06-26.md"
+  ],
+  "sanitization": {
+    "secrets_redacted": true,
+    "pii_redacted": true,
+    "raw_transcripts_included": false,
+    "token_values_printed": false,
+    "values_printed": false
+  }
+}

@@ -1,6 +1,6 @@
 # LK OS — Status audit operacional
 
-Atualizado: 2026-06-26T13:01:40.882778+00:00
+Atualizado: 2026-06-26T13:03:53.727872+00:00
 
 Status: `ok`
 
@@ -21,7 +21,7 @@ Status: `ok`
 
 - Escopo: Fechamento do dia anterior com leitura estrutural, incluindo performance/interesse do site quando disponível.
 - Watchdog script existe: `True` — `/opt/data/scripts/lk_previous_day_09h_sales_report_watchdog.py`
-- Último receipt: status `dry_run_ok` em `2026-06-26T13:01:25.410515+00:00`
+- Último receipt: status `dry_run_ok` em `2026-06-26T13:03:36.203238+00:00`
 - Sent state conhecido: `True`
 - Secret hits nos últimos artefatos: `0`
 - Dry-run generation: exit `0`, status `dry_run_ok`
@@ -34,27 +34,27 @@ Status: `ok`
 
 - Escopo: Pulso financeiro do dia corrente até 16h, separando loja física vs e-commerce quando disponível.
 - Watchdog script existe: `True` — `/opt/data/scripts/lk_financial_pulse_16h_watchdog.py`
-- Último receipt: status `dry_run_ok` em `2026-06-26T12:59:07.356309+00:00`
+- Último receipt: status `dry_run_ok` em `2026-06-26T13:01:36.702448+00:00`
 - Sent state conhecido: `True`
 - Secret hits nos últimos artefatos: `0`
 - Dry-run generation: exit `0`, status `dry_run_ok`
-  - json: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-pulse-finance-16h-20260626T095903-0300.json`
-  - whatsapp: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-whatsapp-pulse-finance-16h-20260626T095903-0300.txt`
-  - html: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-email-designmd-pulse-finance-16h-20260626T095903-0300.html`
-  - email_meta: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-email-meta-pulse-finance-16h-20260626T095903-0300.json`
+  - json: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-pulse-finance-16h-20260626T100132-0300.json`
+  - whatsapp: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-whatsapp-pulse-finance-16h-20260626T100132-0300.txt`
+  - html: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-email-designmd-pulse-finance-16h-20260626T100132-0300.html`
+  - email_meta: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-email-meta-pulse-finance-16h-20260626T100132-0300.json`
 
 ### `store-close-1930`
 
 - Escopo: Fechamento POS/loja física only; sem online/e-commerce/GA4 no escopo do report.
 - Watchdog script existe: `True` — `/opt/data/scripts/lk_store_close_1930_watchdog.py`
-- Último receipt: status `dry_run_ok` em `2026-06-26T12:59:11.318888+00:00`
+- Último receipt: status `dry_run_ok` em `2026-06-26T13:01:40.863207+00:00`
 - Sent state conhecido: `True`
 - Secret hits nos últimos artefatos: `0`
 - Dry-run generation: exit `0`, status `dry_run_ok`
-  - json: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-store-close-1930-20260626T095907-0300.json`
-  - whatsapp: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-whatsapp-store-close-1930-20260626T095907-0300.txt`
-  - html: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-email-designmd-store-close-1930-20260626T095907-0300.html`
-  - email_meta: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-email-meta-store-close-1930-20260626T095907-0300.json`
+  - json: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-store-close-1930-20260626T100136-0300.json`
+  - whatsapp: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-whatsapp-store-close-1930-20260626T100136-0300.txt`
+  - html: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-email-designmd-store-close-1930-20260626T100136-0300.html`
+  - email_meta: `/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-sales-reports/lk-sales-reports-email-meta-store-close-1930-20260626T100136-0300.json`
 
 ## Atenção
 

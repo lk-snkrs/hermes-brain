@@ -1,7 +1,7 @@
-# Mordomo Decision Dashboard — 25/06/2026 17:00 BRT
+# Mordomo Decision Dashboard — 26/06/2026 17:00 BRT
 
 ## Saúde executiva
-- Decisões abertas: 44
+- Decisões abertas: 43
 - Follow-ups operacionais próximos: 65
 - Ações enviadas hoje: 0
 - Ruídos segurados na amostra: 8
@@ -16,10 +16,10 @@
 6. Unimed CNU — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
 7. Rafa Dal’Maso — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
 8. Sueli Pennone — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-9. Esther Safdie — LK — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-10. Itaú — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-11. RK — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
-12. Cello — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+9. Itaú — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+10. RK — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+11. Cello — Zipper — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
+12. Barbara Salles — LK — confiança baixa: só alertar; precisa decisão humana antes de qualquer resposta.
 
 ## Contrato de comunicação
 - Telegram: só decisão/alerta real, com botões funcionais quando envio direto estiver ativo.

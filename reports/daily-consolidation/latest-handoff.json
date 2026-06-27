@@ -1,150 +1,55 @@
 {
-  "operational_date": "2026-06-26",
-  "generated_at_utc": "2026-06-26T04:00:57Z",
-  "status": "ok",
-  "executive_summary": "Fechamento 01h BRT consolidou Task OS/Handoff, correção aprovada de webhook Shopify LK e melhorias Memory OS/Honcho. Brain Health 02h FAIL=0/WARN=0; Brain Improvement Score 100/100; crons vivos 44 totais, 40 ativos, 4 pausados, ativos non-ok 0.",
+  "operational_date": "2026-06-27",
+  "generated_at_utc": "2026-06-27T04:00:45Z",
+  "status": "attention",
+  "executive_summary": "Fechamento 01h BRT Brain-first/local gerado. Brain health PASS 0/0 e Brain Improvement Score 94/100. Há atenção operacional em Reminder OS health FAIL, cron LK 09h com last_status error stale/corrigido em dry-run, WACLI desconectado bloqueando WhatsApp Zipper pendente, e strict-runtime guard com dívida legada documentada.",
   "material_changes": [
-    {
-      "domain": "Hermes Geral / Task OS",
-      "summary": "Task OS universal documentado, propagado e carregado em runtime; Main/default reiniciado/validado; kanban-worker preflight OK em 17/17 profiles; guard anti-stale aplicado ao fallback de goal-mode.",
-      "evidence": [
-        "reports/governance/kanban-task-os-all-readiness-activation-2026-06-25.md",
-        "reports/governance/hermes-task-os-main-default-restart-activation-2026-06-25.md"
-      ]
-    },
-    {
-      "domain": "LK Shopify",
-      "summary": "Dois webhooks Shopify lk-shopify-tiny-stock-sync foram corrigidos para a URL canônica hermes-webhooks, com readback/probe/log monitor OK.",
-      "evidence": [
-        "reports/governance/shopify-webhook-canonical-url-fix-lk-shopify-tiny-stock-sync-2026-06-25.md"
-      ]
-    },
-    {
-      "domain": "LK Shopify",
-      "summary": "Coleção ASICS Gel NYC criada/ativada com 1 produto ACTIVE; NB740 bloqueada por ausência de produto ACTIVE correspondente.",
-      "evidence": [
-        "areas/lk/sub-areas/shopify/receipts/nb740-asics-gel-nyc-collections-20260626T010324Z.md"
-      ]
-    },
-    {
-      "domain": "Memory OS / Honcho",
-      "summary": "Memory OS verde; adoption ledger compactado/tail-only validado; boot memories >80% compactadas; Honcho filtro/higiene preventiva aplicado; semantic contamination histórica segue attention.",
-      "evidence": [
-        "reports/governance/memory-os-audit-2026-06-26.md",
-        "reports/governance/memory-os-phase123-followup-execution-2026-06-26.md",
-        "reports/governance/honcho-memory-os-full-improvement-2026-06-26.md",
-        "reports/governance/honcho-docs-usage-verification-2026-06-26.md"
-      ]
-    }
+    "LK Shopify/LKGOC executaram writes aprovados com receipts, snapshot/readback/rollback: Onitsuka Tiger Gymnarina SEO/FAQ/schema e PDP Production merges Curadoria LK/Product Suggestions v2.",
+    "LK Atendimento executou ELLE Brain v2 canary 100% safe-only e reenvio aprovado de dois templates WhatsApp para pedido 147940, com receipts e guardrails.",
+    "Zipper/Mordomo teve envios parciais: e-mails aprovados enviados; WhatsApp pendente por WACLI pessoal unauthenticated.",
+    "Operações registrou correções locais: LK report generator/config dry-run OK; Memory OS daytime timeout fix; Brain audit/strict-runtime guard pendências documentadas.",
+    "Brain Health 02h gerado em reports/brain-health-check-2026-06-27-02h.json; Brain Improvement Score gerado em reports/brain-improvement-score-2026-06-27-02h.md/json."
   ],
-  "incidents": [],
+  "incidents": [
+    {"domain": "LK OS", "summary": "Cron LK 09h previous-day sales report ainda aparece last_status=error no scheduler, embora correção tenha sido validada em dry-run; aguardar próximo run natural, sem send manual sem aprovação."},
+    {"domain": "Reminder OS", "summary": "Health gate atual FAIL: ledger_schema_errors=1, ingress_open_needed=8, active_loops=25. Requer correção local/dedupada."},
+    {"domain": "Zipper/Mordomo", "summary": "WACLI hermes/pessoal unauthenticated; WhatsApp pendente para dois handoffs ZPR, e-mails já enviados não devem ser duplicados."},
+    {"domain": "Operações Hermes", "summary": "Strict-runtime guard encontrou 119 achados legados/perigosos; saneamento/quarentena precisa frente separada."}
+  ],
   "decisions_made_by_lucas": [
-    {
-      "decision": "Aprovação escopada para corrigir 2 webhooks Shopify lk-shopify-tiny-stock-sync para a URL canônica hermes-webhooks.lucascimino.com.",
-      "scope": "Alterar apenas address dos webhooks orders/paid e orders/cancelled; sem produto, estoque, preço, Tiny, Klaviyo ou mensagem externa.",
-      "evidence": "reports/governance/shopify-webhook-canonical-url-fix-lk-shopify-tiny-stock-sync-2026-06-25.md"
-    },
-    {
-      "decision": "Task OS universal deve reger trabalho operacional não-trivial em todos os agentes Hermes.",
-      "scope": "Tarefas rastreáveis/handoff/receipt sem transformar perguntas simples em card obrigatório; Telegram só para decisão/bloqueio/falha/aprovação acionável.",
-      "evidence": "reports/governance/kanban-task-os-all-readiness-activation-2026-06-25.md"
-    }
+    "Aprovou reenvio customer-facing de dois templates Chatwoot/WhatsApp para pedido 147940, executado exatamente no escopo aprovado.",
+    "Aprovou ELLE Brain v2 em 100% dentro de guardrail safe-only; não removeu proteções de handoff/estoque/pós-venda.",
+    "Aprovou merges Production específicos do PDP LK Shopify via PR/GitHub/theme sync/readback.",
+    "Aprovou melhoria SEO/FAQ/schema da coleção Onitsuka Tiger Gymnarina em escopo limitado de collection object.",
+    "Aprovou envios Zipper específicos; resultado parcial por WACLI WhatsApp desconectado."
   ],
   "approvals_and_corrections": [
-    {
-      "type": "approval",
-      "summary": "Shopify webhook fix aprovado e executado no escopo exato.",
-      "exclusions": ["produto", "estoque", "Tiny", "preço", "Klaviyo", "mensagem externa", "tema"],
-      "learn_pattern": "Aprovação ampla não extrapola escopo; registrar exclusões/readback/rollback/receipt."
-    },
-    {
-      "type": "correction_pattern",
-      "summary": "Honcho não deve tratar eventos Shopify/pedidos/clientes como fatos pessoais do Lucas.",
-      "exclusions": ["delete heurístico sem IDs", "usar Honcho como fonte de verdade"],
-      "learn_pattern": "Brain/fonte viva é canônica; Honcho é auxiliar governado."
-    }
+    {"approval": "ELLE Brain v2 100%", "scope": "100% das conversas elegíveis safe-only, mantendo legacy_handoff_guard e bloqueios de estoque/pós-venda.", "exclusions": "Sem remover guardrails; sem Shopify/Tiny/stock writes; kill switch se erro material.", "pattern_to_learn": "Aprovação ampla de percentual deve ser interpretada dentro do escopo seguro previamente aprovado, não como bypass de guardrails."},
+    {"approval": "LK Shopify Production merges PDP", "scope": "PRs/merges específicos, Shopify Production readback e QA público para PDP.", "exclusions": "Sem produto/preço/estoque/Tiny/GMC/Klaviyo/ads/WhatsApp.", "pattern_to_learn": "Production theme/PDP segue GitHub PR + readback + rollback; não write direto improvisado."},
+    {"approval": "Zipper sends", "scope": "E-mail enviado e WhatsApp previsto para casos aprovados.", "exclusions": "WhatsApp não executado por WACLI unauthenticated; não reenviar e-mail.", "pattern_to_learn": "Handoff partial_sent precisa separar canais já executados de canais pendentes para evitar duplicidade."}
   ],
   "learning_ledger_candidates": [
-    {
-      "learning": "Task OS universal deve ser comportamento padrão para trabalho operacional não-trivial.",
-      "recommended_destination": "AGENTS/profile docs, Task OS routines, kanban skills",
-      "action_applied": "Documentado/propagado; runtime validado; continuar medindo uso real via receipts/handoffs."
-    },
-    {
-      "learning": "Honcho útil tecnicamente, mas precisa filtro contra payload operacional e governança semântica.",
-      "recommended_destination": "honcho-memory-operations skill, Memory OS routines, future provider config",
-      "action_applied": "Filtro/higiene/scorers/reports aplicados; cleanup histórico bloqueado até IDs/rollback."
-    },
-    {
-      "learning": "Webhook Shopify deve passar pelo proxy Vercel canônico quando precisar re-assinar para Hermes.",
-      "recommended_destination": "webhook-subscriptions references and future subscription checklist",
-      "action_applied": "Reference/receipt/report criados; URL corrigida."
-    }
+    {"learning": "Webhook Shopify truncado sem line_items/SKU/variant/quantity deve ser no-op seguro e roteado a lk-stock/stock sync, sem baixa de estoque.", "recommended_destination": "handler/script lk-shopify-tiny-stock-sync + docs LK Stock/LK Shopify", "action_applied_or_blocked": "Aplicado nas respostas e no fechamento; precisa hardening do handler em frente própria."},
+    {"learning": "Reminder OS FAIL por ledger_schema_errors/open_needed_count deve virar correção local dedupada, não alerta ruidoso nem criação de backlog fantasma.", "recommended_destination": "Reminder OS health routine/check", "action_applied_or_blocked": "Registrado como pendência A0/A1; não corrigido nesta execução."},
+    {"learning": "Production theme/PDP aprovado deve passar por PR/GitHub/readback/rollback.", "recommended_destination": "LK Shopify skill/rotina/templates", "action_applied_or_blocked": "Evidenciado em receipts; verificar se skill/templates já carregam a regra."},
+    {"learning": "Zipper partial_sent deve preservar idempotência por canal.", "recommended_destination": "Mordomo/Zipper handoff template + Reminder OS", "action_applied_or_blocked": "Handoffs já têm owner/next action/review trigger."}
   ],
-  "autonomy_pattern_candidates": [
-    {
-      "candidate": "A0/A1: registrar e indexar aprendizados/correções em Brain/skills/rotinas quando não há external write.",
-      "status": "safe_candidate"
-    },
-    {
-      "candidate": "A3/A4: Shopify/Admin, runtime/gateway/Docker/VPS, provider cleanup/delete, external sends continuam approval-gated.",
-      "status": "must_remain_approval_gated"
-    }
-  ],
-  "pending_decisions_for_lucas": [
-    {
-      "item": "NB740 collection/product path",
-      "why": "Coleção não foi criada porque só havia produto ARCHIVED; cadastro/reativação/listagem exige novo escopo."
-    },
-    {
-      "item": "Honcho historical cleanup by IDs",
-      "why": "Semantic contamination histórica segue attention, mas delete sem IDs/rollback é bloqueado."
-    }
-  ],
-  "safe_next_actions": [
-    "02h Daily Intelligence Loop promover aprendizados A0/A1 seguros do pacote.",
-    "Medir Honcho utility/semantic nos próximos ciclos antes de limpeza histórica.",
-    "Revisar LKGOC C1+C2 quando dados vivos GSC/GA4/Shopify estiverem disponíveis."
-  ],
-  "blocked_actions_requiring_approval": [
-    "Deletar/limpar memória Honcho histórica sem IDs e rollback.",
-    "Criar/reativar/listar produto ou coleção NB740 fora do escopo aprovado.",
-    "Qualquer envio externo Zipper/LK/SPITI não coberto por aprovação atual.",
-    "Qualquer Docker/VPS/gateway/deploy/secret/database mutation."
-  ],
-  "cron_and_delivery_truth": {
-    "source": "HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all",
-    "total_jobs": 44,
-    "active_jobs": 40,
-    "paused_jobs": 4,
-    "active_non_ok_last_status": 0,
-    "deliver_origin_active_observed": [
-      "Mesa COO diária Telegram",
-      "Relatório Hermes diário 01h+02h+02h15+02h25+02h50 + Score 0–100 — 03h Telegram",
-      "Reminder OS — 2h open-loop watchdog",
-      "Honcho utility go/no-go review one-shot"
-    ],
-    "silent_ok_contract": "Fechamento 01h entrega local; Telegram/origin só para exceção crítica/decisão urgente."
+  "autonomy_pattern_candidates": {
+    "could_be_a0_a1_if_safe": ["Registrar no-op seguro para webhooks truncados sem line_items e pedir payload completo/fetch read-only.", "Corrigir Reminder OS ledger/ingress localmente quando health gate indicar schema/open_needed gaps e houver evidência suficiente.", "Atualizar docs/skills/templates com padrões já aprovados e verificados."],
+    "must_stay_a3_a4": ["Qualquer envio WhatsApp/e-mail/customer-facing fora de escopo exato aprovado.", "Qualquer Shopify/Tiny/GMC/Klaviyo/Meta write sem aprovação escopada.", "Docker/VPS/gateway/restart/deploy/infra e secret changes."]
   },
-  "sources": [
-    "reports/daily-consolidation/2026-06-26.md",
-    "reports/brain-health-check-2026-06-26-02h.json",
-    "reports/brain-improvement-score-2026-06-26-02h.md",
-    "reports/brain-improvement-score-2026-06-26-02h.json",
-    "reports/governance/shopify-webhook-canonical-url-fix-lk-shopify-tiny-stock-sync-2026-06-25.md",
-    "reports/governance/kanban-task-os-all-readiness-activation-2026-06-25.md",
-    "reports/governance/hermes-task-os-main-default-restart-activation-2026-06-25.md",
-    "reports/governance/memory-os-audit-2026-06-26.md",
-    "reports/governance/memory-os-phase123-followup-execution-2026-06-26.md",
-    "reports/governance/honcho-memory-os-full-improvement-2026-06-26.md",
-    "areas/lk/sub-areas/shopify/receipts/nb740-asics-gel-nyc-collections-20260626T010324Z.md",
-    "areas/zipper/inbox/email-intake/20260626T024233Z_draft_19f01cbdbdb187c2_tidio_camila-chiarello.md"
-  ],
-  "sanitization": {
-    "secrets_redacted": true,
-    "raw_chat_transcripts_excluded": true,
-    "live_facts_verified": true,
-    "raw_customer_payloads_excluded": true,
-    "values_printed": false
-  }
+  "pending_decisions_for_lucas": ["Zipper Freshworks: deixar organização expirar/deletar ou preservar/verificar dados antes do prazo.", "Reconectar/autorizar WACLI pessoal para recuperar WhatsApp pendente nos handoffs ZPR, sem reenviar e-mails.", "Aprovar, se desejado, handoff LK Shopify para validar/criar collection canônica New Balance 740 antes de guia/FAQ/schema público."],
+  "safe_next_actions": ["Rodada local para Reminder OS health: corrigir schema error e ingress_open_needed com dedupe/health gate.", "Aguardar próximo run natural do cron LK 09h para confirmar last_status OK; não disparar send manual sem aprovação.", "Monitorar ELLE Brain v2 safe-only e revisar primeiros usos reais com kill switch pronto.", "Verificar skills/templates LK Shopify e webhook stock sync para promover padrões aprendidos."],
+  "blocked_actions_requiring_approval": ["Reenviar WhatsApp Zipper pendente após reconexão WACLI sem confirmação de idempotência/escopo.", "Executar manualmente cron LK 09h com send externo.", "Criar collection NB740/publicar guia/FAQ/schema em produção sem approval packet.", "Alterar Docker/VPS/gateway/containers ou secrets.", "Alterar Shopify/Tiny/estoque/preço/campanhas fora dos escopos já executados."],
+  "cron_and_delivery_truth": {
+    "generated": true,
+    "delivered_to_telegram": false,
+    "normal_delivery": "local",
+    "brain_health": {"fail": 0, "warn": 0, "artifact": "reports/brain-health-check-2026-06-27-02h.json"},
+    "brain_improvement_score": {"score": 94, "artifact_md": "reports/brain-improvement-score-2026-06-27-02h.md", "artifact_json": "reports/brain-improvement-score-2026-06-27-02h.json"},
+    "actionable_stdout": ["Reminder OS health FAIL", "LK 09h last_status error stale until next natural run", "WACLI unauthenticated blocks pending WhatsApp"],
+    "silent_ok": false
+  },
+  "sources": ["reports/daily-consolidation/2026-06-27.md", "reports/brain-health-check-2026-06-27-02h.json", "reports/brain-improvement-score-2026-06-27-02h.md", "reports/reminder-os-health-current.json", "reports/governance/cron-audit-all-2026-06-26.md", "reports/governance/task-os-audit-2026-06-26.md", "reports/governance/lk-report-external-delivery-fix-2026-06-26.md", "reports/wacli-health/2026-06-26.md"],
+  "sanitization": {"secrets_redacted": true, "pii_redacted": true, "raw_transcripts_included": false, "token_values_printed": false, "values_printed": false}
 }
