@@ -47,6 +47,7 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/hermes-release-watch.md` — monitoramento de releases Hermes Agent e avaliação de melhorias aplicáveis.
 - `rotinas/hermes-v017-adoption-sentinel.md` — sentinel read-only da adoção Hermes v0.17: delegated tests/Delegated Done, gaps de perfis, contratos Telegram em crons, scripts e Brain/skills; não ativa runtime nem canais.
 - `rotinas/hermes-runtime-observability.md` — observabilidade read-only do runtime Hermes.
+- `rotinas/cli-mcp-first-integration-policy.md` — política sistêmica para agentes Hermes: integrações devem usar CLI/wrapper governado primeiro, MCP segundo, antes de qualquer API direta/raw; API raw só como exceção justificada e writes sempre com aprovação escopada.
 - `rotinas/hermes-agent-cron-e-performance-diagnostico.md` — rotina Hermes Agent para auditar crons por fonte primária e diagnosticar lentidão/travamento por camadas antes de limpeza/restart.
 - `rotinas/company-decision-memory.md` — protocolo para salvar toda decisão empresarial na memória viva da empresa correspondente.
 - `rotinas/protocolo-registro-decisoes-aprovadas-contexto-compactado.md` — regra anti-perda para registrar aprovações de copy/tom/fluxo antes que contexto de chat seja compactado.

@@ -1,41 +1,11 @@
-# LKGOC — Workflow DEV → approval → production
+# Redirect — LKGOC-EXECUTION-WORKFLOW.md
 
-## Fluxo obrigatório
+Status: **migrado fisicamente em 20260627T165951Z**.
 
-1. Abrir `LKGOC-PADRAO-CANONICO.md` e `references/LKGOC-BEFORE-NEW-COLLECTION-CHECKLIST-20260605.md`.
-2. Definir nível: Full / Lite / Correção / Não-LKGOC.
-3. Preencher `LKGOC-INPUT-CONTRACT.md`.
-4. Preencher `LKGOC-EVIDENCE-PACKET.md`.
-5. Aplicar Claude SEO: `seo-content`, `seo-ecommerce`, `seo-page`, `seo-geo`, `seo-dataforseo` quando houver SERP/dados.
-6. Criar copy usando `templates/lkgoc-copy-template.md`.
-7. Criar/validar visual usando `templates/lkgoc-liquid-contract.md`.
-8. Preparar coleção + guia juntos.
-9. Materializar em Shopify DEV/preview quando houver visual.
-10. Fazer readback de asset/HTML/SEO relevante.
-11. Tirar screenshot desktop e mobile.
-12. Rodar `LKGOC-SCORECARD-100.md`; score mínimo recomendado para approval: 85/100.
-13. Enviar approval packet curto no Telegram com links diretos, score, evidências, limitações e decisão pedida.
-14. Só aplicar production com aprovação explícita atual.
-15. Production: backup/rollback, diff/readback, receipt, cache check.
-16. Agendar ou registrar impacto D+7/D+14/D+30 conforme `LKGOC-IMPACT-REVIEW.md`.
+O canônico LKGOC agora fica no diretório dono `collection-optimizer`:
 
-## Approval packet mínimo
+`/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/collection-optimizer/LKGOC-EXECUTION-WORKFLOW.md`
 
-- Nível LKGOC:
-- Link preview Shopify DEV (`preview_theme_id` quando aplicável):
-- Coleção:
-- Guia:
-- Score LKGOC:
-- Evidências usadas:
-- Limitações:
-- Riscos/rollback:
-- Decisão pedida:
+Este arquivo permanece apenas como ponte de compatibilidade para workers/links legados que ainda apontam para `growth/`.
 
-
-## Guardrail obrigatório — remover FAQ/descrição legado `coll-rich-content`
-
-Registrado em: 2026-06-05T17:42:57
-
-Para qualquer coleção otimizada com LKGOC, o bloco legado `.coll-rich-content` — especialmente a seção antiga de **Perguntas frequentes** — deve ser removido/ocultado no escopo da coleção otimizada. QA obrigatório: não pode haver `.coll-rich-content` visível nem FAQ antigo duplicado depois do LKGOC.
-
-Fonte: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/rules/REGRA-LKGOC-REMOVER-COLL-RICH-CONTENT-LEGADO.md`
+Ownership: `[LK] Otimização de Coleções` / `lk-collection-optimizer`. Growth fornece sinais e contexto amplo, não é dono operacional de LKGOC.

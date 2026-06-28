@@ -1,4 +1,5 @@
 # AGENTS — [LK] Estoque Loja Física
+Regra sistêmica corrigida por Lucas em 2026-06-27: **CLI oficial/wrapper Hermes primeiro; MCP segundo; API direta/raw somente como exceção justificada**. Para Supabase/LK Stock, usar MCP read-only apenas quando não houver CLI/wrapper governado mais adequado para o caso. Writes externos continuam bloqueados sem aprovação escopada + rollback/readback.
 
 ## Regra obrigatória — aprendizado do Lucas vira melhoria do ecossistema
 
@@ -30,6 +31,17 @@ Fluxo obrigatório:
 3. Manter IDs/classes estáveis para busca automática, DOM check, screenshot e browser validation.
 4. Testar abrindo a URL final diretamente, com HTTP smoke e marcador HTML da tela.
 5. Não reportar UI como pronta se ela não puder ser aberta e validada por link direto.
+
+## Regra obrigatória — integrações CLI-first/MCP-second para LK Stock
+
+Para qualquer tarefa do LK Stock que toque Supabase/Stock OS em Supabase — schema, tabelas, policies/RLS, logs, advisors, migrations, tipos, SQL read-only, segurança, crons/gates ou backend de dados — o caminho primário é **CLI oficial/wrapper Hermes-Doppler-first** quando houver caminho governado adequado (ex.: `hermes-cli-run supabase db query --linked`). MCP project-scoped (`supabase` / projeto `cnjimxglpktznenpbail`) vem em segundo lugar quando a CLI/wrapper não cobrir melhor o caso ou para auditoria/read-only estruturada. REST/HTTP/raw API só como exceção justificada.
+
+Fluxo obrigatório:
+1. Verificar/usar CLI oficial ou wrapper Hermes-Doppler-first antes de API direta.
+2. Usar MCP Supabase quando a CLI/wrapper não cobrir melhor o caso, especialmente read-only/auditoria estruturada.
+3. Se CLI e MCP estiverem indisponíveis/sem auth/sem capacidade, registrar o motivo e só então usar fallback `psql`/REST/script com Doppler e `values_printed=false`.
+4. Manter MCP e CLI em modo read-only por padrão; `execute_sql`/`apply_migration`/SQL write/migration em produção exige aprovação escopada, rollback e verificação.
+5. Para disponibilidade/pronta entrega, isso **não substitui** a hierarquia operacional: Stock OS DB/read model como caminho quente, Tiny como fonte viva de estoque, e fallback/reconciliação conforme guardrails.
 
 ## Regra obrigatória — LK Stock é o único dono de consulta de estoque
 
@@ -120,3 +132,16 @@ python3 /opt/data/scripts/hermes_memory_os_event_hook.py <caminho-do-handoff> --
 
 Se `loop needed: yes`, o item precisa estar coberto no ledger `areas/operacoes/reminder-os/reminders.jsonl` ou aparecer como blocker no health/ingress audit. Se `loop needed: no`, explicar por que o ciclo está fechado. Regra: se outro agente não consegue retomar sem contexto de chat, o handoff falhou.
 
+<!-- SHOPIFY_OFFICIAL_CLI_POLICY_START -->
+
+## Shopify Admin GraphQL — CLI oficial obrigatório
+
+Lucas autorizou OAuth oficial do Shopify CLI em 2026-06-27 para `lk-sneakerss.myshopify.com`. Para qualquer leitura Shopify Admin GraphQL em agentes, scripts e crons Hermes:
+
+1. Usar primeiro o CLI oficial: `/opt/data/home/.local/bin/hermes-cli-run shopify store execute --store lk-sneakerss.myshopify.com --json --query '<GraphQL>'`.
+2. Manter `--allow-mutations` ausente por padrão; qualquer mutação/write Shopify exige aprovação escopada, rollback e readback.
+3. Não usar wrapper legado nem Admin HTTP raw como caminho normal; se o OAuth oficial quebrar/expirar, bloquear a tarefa e renovar OAuth antes de seguir, salvo incidente explicitamente aprovado.
+4. Não voltar para `urllib`/`requests`/`curl`/Admin HTTP raw para Shopify, salvo exceção justificada e aprovada.
+5. Nunca imprimir tokens/cache OAuth; reportar só status, store, scopes e `values_printed=false`.
+
+<!-- SHOPIFY_OFFICIAL_CLI_POLICY_END -->

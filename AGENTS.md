@@ -61,7 +61,7 @@ Antes de agir em trabalho operacional:
 7. Carregar skill relevante quando existir.
 8. Usar `session_search` quando o pedido depender de histórico de conversa.
 9. Ler arquivos do Brain antes de afirmar estado documental.
-10. Consultar API/banco/fonte real antes de afirmar dado vivo.
+10. Consultar fonte viva antes de afirmar dado vivo, seguindo a ordem CLI/MCP-first: CLI oficial/wrapper Hermes/Doppler-first → MCP disponível → API direta/raw só como exceção justificada. `Fonte viva` não significa automaticamente API direta. Regra canônica: `areas/operacoes/rotinas/cli-mcp-first-integration-policy.md`.
 11. Usar fonte segura autorizada para credenciais sob demanda, sem imprimir valores.
 12. Para webhooks externos, preferir `hermes-webhooks` no Vercel como ingresso público canônico (`https://hermes-webhooks.lucascimino.com/webhooks/<route>`, alias técnico `https://hermes-webhooks.vercel.app/webhooks/<route>`) antes do Hermes Gateway; não inventar n8n/Railway/Zapier/túnel quando o Vercel proxy existente cobre ou pode cobrir o caso. Shopify exige validação `X-Shopify-Hmac-Sha256` no Vercel, preservação do raw body e reassinatura para a rota Hermes. Deploy Vercel, env/secrets, configuração upstream e writes externos seguem exigindo aprovação escopada.
 
@@ -262,3 +262,17 @@ Lucas definiu que todos os agentes Hermes devem seguir a lógica Task OS:
 Fonte canônica: `areas/operacoes/rotinas/hermes-task-os-universal-agent-policy-20260625.md`.
 
 <!-- HERMES_TASK_OS_UNIVERSAL_POLICY_END -->
+
+<!-- SHOPIFY_OFFICIAL_CLI_POLICY_START -->
+
+## Shopify Admin GraphQL — CLI oficial obrigatório
+
+Lucas autorizou OAuth oficial do Shopify CLI em 2026-06-27 para `lk-sneakerss.myshopify.com`. Para qualquer leitura Shopify Admin GraphQL em agentes, scripts e crons Hermes:
+
+1. Usar primeiro o CLI oficial: `/opt/data/home/.local/bin/hermes-cli-run shopify store execute --store lk-sneakerss.myshopify.com --json --query '<GraphQL>'`.
+2. Manter `--allow-mutations` ausente por padrão; qualquer mutação/write Shopify exige aprovação escopada, rollback e readback.
+3. Não usar wrapper legado nem Admin HTTP raw como caminho normal; se o OAuth oficial quebrar/expirar, bloquear a tarefa e renovar OAuth antes de seguir, salvo incidente explicitamente aprovado.
+4. Não voltar para `urllib`/`requests`/`curl`/Admin HTTP raw para Shopify, salvo exceção justificada e aprovada.
+5. Nunca imprimir tokens/cache OAuth; reportar só status, store, scopes e `values_printed=false`.
+
+<!-- SHOPIFY_OFFICIAL_CLI_POLICY_END -->

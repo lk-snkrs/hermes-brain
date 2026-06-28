@@ -16,8 +16,8 @@ Este agente é independente de LK Growth e LK Shopify.
 
 ## Fonte canônica
 
-- Padrão LKGOC histórico atual: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/LKGOC-PADRAO-CANONICO.md`
-- Este diretório é o OS dedicado e a fonte de ownership do agente. O arquivo canônico ainda estar fisicamente em `growth/` não significa hierarquia Growth → LKGOC; é legado de path até migração/curadoria completa.
+- Padrão LKGOC atual: `/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/collection-optimizer/LKGOC-PADRAO-CANONICO.md`
+- Este diretório é o OS dedicado, a fonte de ownership do agente e agora também o local físico dos `LKGOC-*`. Os arquivos remanescentes em `growth/` são redirects legados.
 
 ## Playbooks ativos
 
@@ -37,3 +37,32 @@ Nunca escrever direto em theme production. Fluxo padrão: DEV/unpublished ou bra
 - `projetos/collection-sort-automation/` — hub canônico Brain OS Onda 7 para automação de ordenação de coleções, Rule B, snapshots, receipts e rollback.
 - `projetos/editorial-collection-guides/` — hub canônico Brain OS Onda 7 para Guias LK editoriais, source pages, coleção+guia e QA LKGOC.
 - `projetos/lkgoc-evidence-workbench/` — hub canônico Brain OS Onda 11 para work packets, audits, receipts, evidence/media manifests e QA visual LKGOC.
+
+
+## Índice canônico LKGOC
+
+- Índice de precedência: `canon/INDEX.md`.
+- Regra consolidada DEV/Production/Admin API: `rules/LKGOC-DEV-PRODUCTION-PRECEDENCE.md`.
+- A suite histórica `collection-optimizer/LKGOC-*` continua fonte de conteúdo/contrato até migração física, mas o ownership operacional é deste diretório/profile.
+
+### Ordem mínima de leitura
+
+1. `MAPA.md`
+2. `canon/INDEX.md`
+3. `rules/LKGOC-DEV-PRODUCTION-PRECEDENCE.md`
+4. `collection-optimizer/LKGOC-PADRAO-CANONICO.md`
+5. `collection-optimizer/LKGOC-PRD.md`
+6. `collection-optimizer/LKGOC-INPUT-CONTRACT.md`
+7. `collection-optimizer/LKGOC-EVIDENCE-PACKET.md`
+8. `collection-optimizer/LKGOC-EXECUTION-WORKFLOW.md`
+9. `collection-optimizer/LKGOC-SCORECARD-100.md`
+10. `collection-optimizer/LKGOC-MAPA-JA-FEITO.md` e `collection-optimizer/LKGOC-LEDGER-COLECOES-OTIMIZADAS.md`
+
+## Precedência operacional normalizada
+
+- DEV/unpublished/branch pode receber preview/QA LKGOC, com target verificado, rollback/readback e status draft.
+- Contract Lock não bloqueia DEV, mas é obrigatório para approval final, lote e Production/main/customer-facing.
+- Shopify Admin GraphQL read-only usa CLI oficial; mutations/Admin write direto são bloqueados por padrão salvo exceção aprovada.
+- Production/main/customer-facing exige aprovação explícita Lucas, rollback, readback e receipt.
+- Estoque/disponibilidade/grade/tamanho sempre vai para `lk-stock`.
+- Novas classes estruturais usam namespace `lk-goc-*`; `lk-204l-*`/`lk-lkgoc-*`/`lk-collection-v2` ficam como gold source/compatibilidade.

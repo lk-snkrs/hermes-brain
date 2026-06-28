@@ -3,34 +3,41 @@
   "patterns": [
     {
       "next_safe_action": "inspect the exact profile cron output and create a scoped fix/approval packet; do not generalize to Docker failure.",
-      "object": "LK WhatsApp Hermes responder regression watchdog",
+      "object": "LK 09h previous-day sales report external delivery",
       "pattern": "new_cron_non_ok",
       "seen_count": 1,
       "why_it_causes_errors": "Agents may report governance healthy while a specialist cron is failing."
     },
     {
-      "next_safe_action": "inspect the exact failing local gate, fix locally if safe, and keep Telegram alert-only for actionable degradation.",
-      "object": "reminder_health_not_pass,reminder_ingress_open_needed",
-      "pattern": "nightly_self_improvement_regression_attention",
-      "seen_count": 3,
-      "why_it_causes_errors": "Self-heal, Reminder OS, Memory OS, or gateway regression can silently undo recent operating improvements."
+      "next_safe_action": "inspect the exact profile cron output and create a scoped fix/approval packet; do not generalize to Docker failure.",
+      "object": "LK Stock Gate B daily freshness reconcile read-only",
+      "pattern": "new_cron_non_ok",
+      "seen_count": 1,
+      "why_it_causes_errors": "Agents may report governance healthy while a specialist cron is failing."
+    },
+    {
+      "next_safe_action": "inspect the exact profile cron output and create a scoped fix/approval packet; do not generalize to Docker failure.",
+      "object": "LK Stock Tiny sharded full sync nightly read-only",
+      "pattern": "recurring_cron_non_ok",
+      "seen_count": 2,
+      "why_it_causes_errors": "Agents may report governance healthy while a specialist cron is failing."
     },
     {
       "next_safe_action": "compare helper inventory, expected profile map and runtime env injection; report presence/status only.",
       "object": "lk-shopify",
       "pattern": "expected_secret_missing_or_map_mismatch",
-      "seen_count": 1,
+      "seen_count": 2,
       "why_it_causes_errors": "Agents may claim an integration is absent when the issue is naming/runtime injection/map drift."
     },
     {
       "next_safe_action": "split oversized instructions into references, repair missing refs, and prefer source lookup before acting.",
-      "object": "82 flagged skills",
+      "object": "83 flagged skills",
       "pattern": "skill_quality_drift",
       "seen_count": 1,
       "why_it_causes_errors": "Oversized/stale/broken-reference skills increase hallucinated or outdated operating instructions."
     }
   ],
-  "patterns_count": 4,
-  "updated_at": "2026-06-26T05:02:12.326602+00:00",
+  "patterns_count": 5,
+  "updated_at": "2026-06-27T05:01:12.447167+00:00",
   "values_printed": false
 }

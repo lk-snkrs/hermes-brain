@@ -3,30 +3,46 @@
     {
       "alert": {
         "detail": {
-          "job": "LK WhatsApp Hermes responder regression watchdog",
-          "registry": "/opt/data/profiles/mordomo/cron/jobs.json",
+          "job": "LK 09h previous-day sales report external delivery",
+          "registry": "/opt/data/cron/jobs.json",
           "status": "error"
         },
         "type": "cron_non_ok"
       },
-      "fingerprint": "b321b9a0a9f8c665",
-      "first_seen": "2026-06-26T05:02:12.325062+00:00",
-      "last_seen": "2026-06-26T05:02:12.325062+00:00",
+      "fingerprint": "b8072f004621be3d",
+      "first_seen": "2026-06-27T05:01:12.446087+00:00",
+      "last_seen": "2026-06-27T05:01:12.446087+00:00",
       "seen_count": 1,
       "status": "new"
     },
     {
       "alert": {
-        "issues": [
-          "reminder_health_not_pass",
-          "reminder_ingress_open_needed"
-        ],
-        "type": "nightly_self_improvement_regression_attention"
+        "detail": {
+          "job": "LK Stock Gate B daily freshness reconcile read-only",
+          "registry": "/opt/data/profiles/lk-stock/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
       },
-      "fingerprint": "86135f8038ac821e",
-      "first_seen": "2026-06-15T05:01:51.362651+00:00",
-      "last_seen": "2026-06-26T05:02:12.325062+00:00",
-      "seen_count": 3,
+      "fingerprint": "469c5e93a665cc9c",
+      "first_seen": "2026-06-27T05:01:12.446087+00:00",
+      "last_seen": "2026-06-27T05:01:12.446087+00:00",
+      "seen_count": 1,
+      "status": "new"
+    },
+    {
+      "alert": {
+        "detail": {
+          "job": "LK Stock Tiny sharded full sync nightly read-only",
+          "registry": "/opt/data/profiles/lk-stock/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "556f1831d90173b2",
+      "first_seen": "2026-06-14T05:01:42.995784+00:00",
+      "last_seen": "2026-06-27T05:01:12.446087+00:00",
+      "seen_count": 2,
       "status": "recurring"
     },
     {
@@ -44,12 +60,12 @@
       },
       "fingerprint": "d40ff8a792003ed5",
       "first_seen": "2026-06-26T05:02:12.325062+00:00",
-      "last_seen": "2026-06-26T05:02:12.325062+00:00",
-      "seen_count": 1,
-      "status": "new"
+      "last_seen": "2026-06-27T05:01:12.446087+00:00",
+      "seen_count": 2,
+      "status": "recurring"
     }
   ],
-  "active_count": 3,
+  "active_count": 4,
   "alerts": {
     "271525f7aad957b2": {
       "alert": {
@@ -100,6 +116,21 @@
       "seen_count": 4,
       "status": "resolved"
     },
+    "469c5e93a665cc9c": {
+      "alert": {
+        "detail": {
+          "job": "LK Stock Gate B daily freshness reconcile read-only",
+          "registry": "/opt/data/profiles/lk-stock/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "469c5e93a665cc9c",
+      "first_seen": "2026-06-27T05:01:12.446087+00:00",
+      "last_seen": "2026-06-27T05:01:12.446087+00:00",
+      "seen_count": 1,
+      "status": "new"
+    },
     "4d07a40ae3ab760d": {
       "alert": {
         "files": [
@@ -127,10 +158,9 @@
       },
       "fingerprint": "556f1831d90173b2",
       "first_seen": "2026-06-14T05:01:42.995784+00:00",
-      "last_seen": "2026-06-14T05:01:42.995784+00:00",
-      "resolved_at": "2026-06-15T05:01:51.362651+00:00",
-      "seen_count": 1,
-      "status": "resolved"
+      "last_seen": "2026-06-27T05:01:12.446087+00:00",
+      "seen_count": 2,
+      "status": "recurring"
     },
     "7e8ff281b6c00b7e": {
       "alert": {
@@ -183,8 +213,9 @@
       "fingerprint": "86135f8038ac821e",
       "first_seen": "2026-06-15T05:01:51.362651+00:00",
       "last_seen": "2026-06-26T05:02:12.325062+00:00",
+      "resolved_at": "2026-06-27T05:01:12.446087+00:00",
       "seen_count": 3,
-      "status": "recurring"
+      "status": "resolved"
     },
     "877bf6b0ee5b379b": {
       "alert": {
@@ -260,6 +291,22 @@
       "fingerprint": "b321b9a0a9f8c665",
       "first_seen": "2026-06-26T05:02:12.325062+00:00",
       "last_seen": "2026-06-26T05:02:12.325062+00:00",
+      "resolved_at": "2026-06-27T05:01:12.446087+00:00",
+      "seen_count": 1,
+      "status": "resolved"
+    },
+    "b8072f004621be3d": {
+      "alert": {
+        "detail": {
+          "job": "LK 09h previous-day sales report external delivery",
+          "registry": "/opt/data/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "b8072f004621be3d",
+      "first_seen": "2026-06-27T05:01:12.446087+00:00",
+      "last_seen": "2026-06-27T05:01:12.446087+00:00",
       "seen_count": 1,
       "status": "new"
     },
@@ -278,9 +325,9 @@
       },
       "fingerprint": "d40ff8a792003ed5",
       "first_seen": "2026-06-26T05:02:12.325062+00:00",
-      "last_seen": "2026-06-26T05:02:12.325062+00:00",
-      "seen_count": 1,
-      "status": "new"
+      "last_seen": "2026-06-27T05:01:12.446087+00:00",
+      "seen_count": 2,
+      "status": "recurring"
     },
     "f9acad02865c915c": {
       "alert": {
@@ -300,8 +347,8 @@
     }
   },
   "new_count": 2,
-  "recurring_count": 1,
-  "resolved_since_previous_count": 0,
-  "updated_at": "2026-06-26T05:02:12.325062+00:00",
+  "recurring_count": 2,
+  "resolved_since_previous_count": 2,
+  "updated_at": "2026-06-27T05:01:12.446087+00:00",
   "values_printed": false
 }

@@ -1,31 +1,11 @@
-# LKGOC — Ledger de coleções otimizadas
+# Redirect — LKGOC-LEDGER-COLECOES-OTIMIZADAS.md
 
-Registro interno Growth das coleções LK publicadas/otimizadas no padrão LK Growth Optimized Collection.
+Status: **migrado fisicamente em 20260627T165951Z**.
 
-## Coleções Production
+O canônico LKGOC agora fica no diretório dono `collection-optimizer`:
 
-- `new-balance-204l`: Full LKGOC gold source visual/editorial. Hero + guia pós-grid + FAQ/schema. Production.
-- `new-balance-9060`: Full LKGOC publicado em Production. Paridade visual 204L, hero + guia pós-grid + FAQ/schema.
-- `new-balance-530`: Full LKGOC publicado em Production. Paridade visual 204L, hero + guia pós-grid + FAQ/schema; FAQ legado suprimido.
+`/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/collection-optimizer/LKGOC-LEDGER-COLECOES-OTIMIZADAS.md`
 
-## Próxima melhoria de marcação
+Este arquivo permanece apenas como ponte de compatibilidade para workers/links legados que ainda apontam para `growth/`.
 
-Atualizado em: 2026-06-05T16:53:44
-
-Marcação local/Brain: ativa.
-Marcação externa Shopify: pendente de aprovação explícita, pois envolve write em coleção/metafield/tag.
-
-Recomendação canônica:
-- Metafield collection: `custom.lkgoc_status = optimized`
-- Metafield collection: `custom.lkgoc_pattern = 204l_canonical`
-- Metafield collection: `custom.lkgoc_last_optimized_at = ISO datetime`
-- Opcional se Shopify permitir no objeto/fluxo: tag/identificador operacional `LK Growth Optimized Collection`
-
-
-## Marcação Shopify
-
-- 2026-06-05: 204L, 9060 e 530 marcadas com `custom.lkgoc_status`, `custom.lkgoc_pattern`, `custom.lkgoc_tag` e `custom.lkgoc_last_optimized_at`. Tag nativa em Collection não disponível na API; tag operacional registrada em metafield.
-
-## Mapa operacional obrigatório
-
-- Antes de sugerir próxima frente, consultar `LKGOC-MAPA-JA-FEITO.md`. Criado em 2026-06-06T12:53:24Z após correção de Lucas para evitar sugerir Onitsuka/9060 como novas frentes quando já tinham histórico LKGOC.
+Ownership: `[LK] Otimização de Coleções` / `lk-collection-optimizer`. Growth fornece sinais e contexto amplo, não é dono operacional de LKGOC.

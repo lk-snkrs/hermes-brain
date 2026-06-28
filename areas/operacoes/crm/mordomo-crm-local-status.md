@@ -1,10 +1,10 @@
 # Mordomo CRM local — status
 
-Atualizado: 2026-06-27T04:04:34.274611+00:00
+Atualizado: 2026-06-28T04:03:48.075827+00:00
 
-- contacts: 380
-- followups: 371
-- signals: 6165
+- contacts: 404
+- followups: 374
+- signals: 6345
 - actions: 0
 - conversation_intelligence: 11
 - conversation_brain_crm_updates: 12

@@ -1,5 +1,21 @@
 # AGENTS — LK Growth OS
 
+
+
+## Regra de segurança — Shopify CLI auth sem verbose e tratar vazamento de token
+
+Não executar `shopify store auth --verbose` nem comandos Shopify CLI em modo verbose quando houver risco de telemetria imprimir `env_shopify_variables`, tokens, webhook secrets ou qualquer secret. Para capturar URL OAuth, usar `BROWSER` wrapper simples sem `--verbose`. Se algum output expuser token/cache/secret, não repetir o valor, registrar incidente sanitizado e pedir rotação/revalidação do secret afetado.
+
+Motivo: em 2026-06-27 o CLI verbose expôs variáveis Shopify no output de processo durante OAuth; Lucas não quer esse risco nem fricção repetida de autorização.
+
+## Regra operacional — Shopify CLI OAuth deve ser escopado de forma suficiente, não pingar Lucas a cada write
+
+Quando Lucas já aprovou uma frente de writes Shopify/Admin/theme para a LK, o agente deve evitar pedir múltiplas autorizações OAuth incrementais para cada subtarefa. Antes de iniciar a execução, mapear todos os escopos Shopify CLI necessários para o pacote aprovado e autenticar uma única vez com o conjunto suficiente de scopes. A aprovação operacional continua sendo obrigatória para cada write externo, mas a autenticação OAuth não deve virar fricção repetida quando o store auth já pode ser persistido no CLI oficial.
+
+Escopo atual recomendado para correções Growth/Shopify SEO/theme aprovadas quando aplicável: `read_products,read_content,read_themes,read_metaobjects,write_content,write_online_store_pages,write_themes,write_products`. Não solicitar escopos de preço/estoque/inventory/customer/discount/fulfillment salvo necessidade explicitamente aprovada. Reportar apenas status/scopes e `values_printed=false`; nunca imprimir token/cache OAuth.
+
+Motivo: correção direta de Lucas em 2026-06-27 após o agente solicitar OAuth repetidas vezes durante uma mesma sequência de correções.
+
 ## Regra obrigatória — verificar histórico antes de sugerir melhoria
 
 Antes de recomendar, aprovar ou pedir aprovação para qualquer melhoria, correção ou execução em uma superfície que já possa ter sido trabalhada, o agente deve consultar o histórico recente e a fonte canônica aplicável. Para LK Growth/Shopify, isso inclui no mínimo Brain receipts, approval packets, workdirs, impact reviews e, quando necessário, readback público/Admin read-only.
@@ -233,3 +249,16 @@ Fluxo obrigatório:
 
 Motivo: em 2026-06-25, `t_ae530570` foi reportado como blocked por LK Growth após runs 16/17, mas já havia run 18 completed com collection ativa.
 
+<!-- SHOPIFY_OFFICIAL_CLI_POLICY_START -->
+
+## Shopify Admin GraphQL — CLI oficial obrigatório
+
+Lucas autorizou OAuth oficial do Shopify CLI em 2026-06-27 para `lk-sneakerss.myshopify.com`. Para qualquer leitura Shopify Admin GraphQL em agentes, scripts e crons Hermes:
+
+1. Usar primeiro o CLI oficial: `/opt/data/home/.local/bin/hermes-cli-run shopify store execute --store lk-sneakerss.myshopify.com --json --query '<GraphQL>'`.
+2. Manter `--allow-mutations` ausente por padrão; qualquer mutação/write Shopify exige aprovação escopada, rollback e readback.
+3. Não usar wrapper legado nem Admin HTTP raw como caminho normal; se o OAuth oficial quebrar/expirar, bloquear a tarefa e renovar OAuth antes de seguir, salvo incidente explicitamente aprovado.
+4. Não voltar para `urllib`/`requests`/`curl`/Admin HTTP raw para Shopify, salvo exceção justificada e aprovada.
+5. Nunca imprimir tokens/cache OAuth; reportar só status, store, scopes e `values_printed=false`.
+
+<!-- SHOPIFY_OFFICIAL_CLI_POLICY_END -->

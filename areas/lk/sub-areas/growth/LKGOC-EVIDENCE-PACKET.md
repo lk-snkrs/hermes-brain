@@ -1,53 +1,11 @@
-# LKGOC — Evidence packet obrigatório
+# Redirect — LKGOC-EVIDENCE-PACKET.md
 
-Toda entrega LKGOC deve registrar fatos antes de escrever. Não inventar dado.
+Status: **migrado fisicamente em 20260627T165951Z**.
 
-## 1. Fontes oficiais
+O canônico LKGOC agora fica no diretório dono `collection-optimizer`:
 
-- URL:
-- Fatos extraídos: modelo, marca, collab, lançamento, materiais, silhueta, colorway.
+`/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/collection-optimizer/LKGOC-EVIDENCE-PACKET.md`
 
-## 2. Fontes editoriais/reconhecíveis
+Este arquivo permanece apenas como ponte de compatibilidade para workers/links legados que ainda apontam para `growth/`.
 
-- URL:
-- Sinal extraído: tendência, styling, contexto fashion/sneaker, história.
-- Observação: fonte brasileira/fraca não pode ser autoridade principal sem justificativa.
-
-## 3. SERP / DataForSEO
-
-- Palavra-chave principal:
-- Intenção de busca:
-- Concorrentes ranqueando:
-- People Also Ask/perguntas:
-- Páginas citáveis:
-- AI visibility/LLM mentions quando disponível:
-- Limitação se DataForSEO indisponível:
-
-## 4. Google Search Console
-
-- Queries reais LK:
-- Impressões/clicks/CTR/posição:
-- Páginas similares:
-- Oportunidade:
-- Limitação se GSC indisponível:
-
-## 5. Ahrefs
-
-- Concorrentes fortes:
-- Backlinks/autoridade:
-- Gap de conteúdo/off-page:
-- Limitação se Ahrefs indisponível:
-
-## 6. Shopify/read-only
-
-- Coleção/produtos/handles:
-- SEO atual:
-- Produto âncora e ordem sugerida:
-- Riscos de produto/data readiness:
-
-## 7. Decisão editorial
-
-- Fatos confirmados:
-- Interpretações:
-- Recomendações:
-- O que NÃO afirmar:
+Ownership: `[LK] Otimização de Coleções` / `lk-collection-optimizer`. Growth fornece sinais e contexto amplo, não é dono operacional de LKGOC.

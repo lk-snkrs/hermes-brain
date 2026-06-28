@@ -136,3 +136,16 @@ python3 /opt/data/scripts/hermes_memory_os_event_hook.py <caminho-do-handoff> --
 
 Se `loop needed: yes`, o item precisa estar coberto no ledger `areas/operacoes/reminder-os/reminders.jsonl` ou aparecer como blocker no health/ingress audit. Se `loop needed: no`, explicar por que o ciclo está fechado. Regra: se outro agente não consegue retomar sem contexto de chat, o handoff falhou.
 
+<!-- SHOPIFY_OFFICIAL_CLI_POLICY_START -->
+
+## Shopify Admin GraphQL — CLI oficial obrigatório
+
+Lucas autorizou OAuth oficial do Shopify CLI em 2026-06-27 para `lk-sneakerss.myshopify.com`. Para qualquer leitura Shopify Admin GraphQL em agentes, scripts e crons Hermes:
+
+1. Usar primeiro o CLI oficial: `/opt/data/home/.local/bin/hermes-cli-run shopify store execute --store lk-sneakerss.myshopify.com --json --query '<GraphQL>'`.
+2. Manter `--allow-mutations` ausente por padrão; qualquer mutação/write Shopify exige aprovação escopada, rollback e readback.
+3. Não usar wrapper legado nem Admin HTTP raw como caminho normal; se o OAuth oficial quebrar/expirar, bloquear a tarefa e renovar OAuth antes de seguir, salvo incidente explicitamente aprovado.
+4. Não voltar para `urllib`/`requests`/`curl`/Admin HTTP raw para Shopify, salvo exceção justificada e aprovada.
+5. Nunca imprimir tokens/cache OAuth; reportar só status, store, scopes e `values_printed=false`.
+
+<!-- SHOPIFY_OFFICIAL_CLI_POLICY_END -->

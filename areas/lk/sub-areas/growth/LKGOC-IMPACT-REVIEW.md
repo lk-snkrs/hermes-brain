@@ -1,26 +1,11 @@
-# LKGOC — Impact review D+7/D+14/D+30
+# Redirect — LKGOC-IMPACT-REVIEW.md
 
-Após publicação, medir efeito. Se dados indisponíveis, registrar limitação.
+Status: **migrado fisicamente em 20260627T165951Z**.
 
-## Datas
+O canônico LKGOC agora fica no diretório dono `collection-optimizer`:
 
-- D+7: sinais iniciais e bugs.
-- D+14: tendência de GSC/GA4/Shopify.
-- D+30: decisão de manter, iterar ou reverter/ajustar.
+`/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/collection-optimizer/LKGOC-IMPACT-REVIEW.md`
 
-## Métricas
+Este arquivo permanece apenas como ponte de compatibilidade para workers/links legados que ainda apontam para `growth/`.
 
-- GSC: impressões, cliques, CTR, posição, queries novas.
-- GA4: sessions, engajamento, conversão quando disponível.
-- Shopify: orders/revenue/add-to-cart quando disponível.
-- DataForSEO: ranking/SERP/concorrentes.
-- AI visibility/LLM mentions quando disponível.
-- UX: cliques coleção → guia, guia → coleção, mobile issues.
-
-## Saída
-
-- Veredito: melhorou / neutro / piorou / dados insuficientes.
-- O que manter:
-- O que ajustar:
-- Próximo experimento:
-- Pendências de dados/conectores:
+Ownership: `[LK] Otimização de Coleções` / `lk-collection-optimizer`. Growth fornece sinais e contexto amplo, não é dono operacional de LKGOC.

@@ -1,5 +1,15 @@
 # Regra LKGOC — Contract Lock antes de qualquer write
 
+
+## Aviso de precedência — normalização 20260627
+
+Esta regra contém wording histórico (“antes de qualquer write”). A interpretação canônica atual é a regra consolidada `LKGOC-DEV-PRODUCTION-PRECEDENCE.md`:
+
+- DEV/unpublished/branch pode ser usado para construir preview e QA, com alvo verificado, status draft, rollback/readback e sem publicação customer-facing.
+- Contract Lock não bloqueia DEV; bloqueia approval final, lote, promoção/merge e Production/main/customer-facing.
+- Production/main/customer-facing continua proibido sem aprovação explícita Lucas + rollback + readback + receipt.
+- Shopify Admin API mutation/write direto continua bloqueado por padrão salvo exceção aprovada.
+
 Registrado em: 20260606T164407Z
 
 ## Problema que esta regra resolve

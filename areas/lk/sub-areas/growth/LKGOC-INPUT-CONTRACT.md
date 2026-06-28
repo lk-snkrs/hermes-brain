@@ -1,39 +1,11 @@
-# LKGOC — Input contract
+# Redirect — LKGOC-INPUT-CONTRACT.md
 
-Antes de iniciar qualquer LKGOC, preencher ou declarar lacuna.
+Status: **migrado fisicamente em 20260627T165951Z**.
 
-## Identidade
+O canônico LKGOC agora fica no diretório dono `collection-optimizer`:
 
-- Nome da coleção/modelo:
-- Handle desejado:
-- Nível: Full / Lite / Correção / Não-LKGOC:
-- É nova coleção ou refactor?:
-- Referência visual coleção: New Balance 204L ou exceção aprovada:
-- Referência guia: Nike x Jacquemus Moon Shoe ou exceção aprovada:
+`/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/collection-optimizer/LKGOC-INPUT-CONTRACT.md`
 
-## Produto/data readiness
+Este arquivo permanece apenas como ponte de compatibilidade para workers/links legados que ainda apontam para `growth/`.
 
-- Produtos incluídos:
-- Produto âncora:
-- Produtos relacionados/cross-sell:
-- Quantidade mínima visual para grid:
-- Variantes/colorways relevantes:
-- PDPs que precisam de link:
-- Coleção já existe no Shopify?:
-- URL atual/preview:
-
-## Demanda e prioridade
-
-- Prioridade comercial:
-- Evidência GSC disponível?:
-- Evidência DataForSEO disponível?:
-- Evidência Ahrefs disponível?:
-- Evidência Shopify/GA4 disponível?:
-- Se dados ausentes, limitação registrada?:
-
-## Assets e restrições
-
-- Imagem editorial/hero disponível?:
-- Restrições de linguagem:
-- Termos proibidos: pronta entrega, encomenda, estoque como taxonomia pública, promessa de prazo/envio.
-- Aprovação necessária no final:
+Ownership: `[LK] Otimização de Coleções` / `lk-collection-optimizer`. Growth fornece sinais e contexto amplo, não é dono operacional de LKGOC.
