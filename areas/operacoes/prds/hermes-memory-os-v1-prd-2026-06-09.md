@@ -279,5 +279,5 @@ Estado de ativação:
 
 - Rodada read-only/sanitizada após v1.17 para validar profiles, gateways vivos por `/proc`, config check, cron summaries e probes Memory OS.
 - Corrigido drift local de data: `hot.md` e daily `2026-06-10` atualizados antes de alertar Lucas.
-- `lc-claude-cli` não é esperado como gateway Telegram; o watchdog o marca explicitamente como excluído/intencional, então não deve virar HIGH de managed gateway.
+- `lc-claude-cli` era originalmente CLI/local-only, mas foi reativado como gateway Telegram em 2026-06-27 após aprovação escopada explícita de Lucas para `@hermesclaude_lcbot`; watchdogs devem tratar esse profile como gerenciado/esperado enquanto o receipt `areas/operacoes/receipts/lc-claude-cli-telegram-reactivation-20260627.md` estiver vigente.
 - Nenhum restart, kill, cron mutation, Docker/VPS/Traefik, sistema externo ou valor de secret.

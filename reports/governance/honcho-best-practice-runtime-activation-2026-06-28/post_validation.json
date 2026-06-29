@@ -1,0 +1,91 @@
+{
+  "health": {
+    "ok": true,
+    "status": 200,
+    "body": "{\"status\": \"ok\", \"platform\": \"hermes-agent\", \"version\": \"0.17.0\"}"
+  },
+  "roster": [
+    {
+      "pid": 1,
+      "home": "/opt/data",
+      "cmd": "/opt/data/hermes-0.15.1-venv/bin/python /opt/data/hermes-0.15.1-venv/bin/hermes gateway run "
+    },
+    {
+      "pid": 177556,
+      "home": "/opt/data/profiles/lc-claude-cli",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 177020,
+      "home": "/opt/data/profiles/lk-collection-optimizer",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 177512,
+      "home": "/opt/data/profiles/lk-content",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 177320,
+      "home": "/opt/data/profiles/lk-finance",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 176251,
+      "home": "/opt/data/profiles/lk-growth",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 176556,
+      "home": "/opt/data/profiles/lk-ops",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 176720,
+      "home": "/opt/data/profiles/lk-shopify",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 107277,
+      "home": "/opt/data/profiles/lk-stock",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 176885,
+      "home": "/opt/data/profiles/lk-trends",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 176222,
+      "home": "/opt/data/profiles/mordomo",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 176301,
+      "home": "/opt/data/profiles/spiti",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 176404,
+      "home": "/opt/data/profiles/spiti-atendimento",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    }
+  ],
+  "cron_status": {
+    "cmd": "/opt/data/hermes-0.15.1-venv/bin/hermes cron status",
+    "rc": 0,
+    "stdout_nonempty": true,
+    "stderr_nonempty": false,
+    "stdout_tail": "\n\u2713 Gateway is running \u2014 cron jobs will fire automatically\n  PID: 1, 107277, 176222, 176251, 176301, 176404, 176556, 176720, 176885, 177020, 177320, 177512, 177556\n\n  41 active job(s)\n  Next run: 2026-06-28T19:36:46.652727+00:00\n\n",
+    "stderr_tail": ""
+  },
+  "watchdog": {
+    "cmd": "python3 /opt/data/scripts/hermes_all_gateway_watchdog.py",
+    "rc": 0,
+    "stdout_nonempty": false,
+    "stderr_nonempty": false,
+    "stdout_tail": "",
+    "stderr_tail": ""
+  },
+  "values_printed": false
+}

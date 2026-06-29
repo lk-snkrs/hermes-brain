@@ -1,0 +1,70 @@
+{
+  "rows": [
+    {
+      "pid": 1,
+      "home": "/opt/data",
+      "cmd": "/opt/data/hermes-0.15.1-venv/bin/python /opt/data/hermes-0.15.1-venv/bin/hermes gateway run "
+    },
+    {
+      "pid": 105760,
+      "home": "/opt/data/profiles/lc-claude-cli",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 105069,
+      "home": "/opt/data/profiles/lk-collection-optimizer",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 105698,
+      "home": "/opt/data/profiles/lk-content",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 105441,
+      "home": "/opt/data/profiles/lk-finance",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 104055,
+      "home": "/opt/data/profiles/lk-growth",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 104420,
+      "home": "/opt/data/profiles/lk-ops",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 104664,
+      "home": "/opt/data/profiles/lk-shopify",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 107277,
+      "home": "/opt/data/profiles/lk-stock",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 104861,
+      "home": "/opt/data/profiles/lk-trends",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 104029,
+      "home": "/opt/data/profiles/mordomo",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 104082,
+      "home": "/opt/data/profiles/spiti",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    },
+    {
+      "pid": 104220,
+      "home": "/opt/data/profiles/spiti-atendimento",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise "
+    }
+  ],
+  "values_printed": false
+}

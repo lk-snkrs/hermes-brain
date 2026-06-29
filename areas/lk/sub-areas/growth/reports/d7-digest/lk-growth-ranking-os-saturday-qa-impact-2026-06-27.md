@@ -1,3 +1,6 @@
+
+> **Superseded status — 2026-06-28:** do not use this historical artifact as current Shopify auth truth. The Central Integration Auth Broker now forces central CLI `HOME=/opt/data/home` plus central XDG paths, and `hermes-cli-integrations smoke shopify_lk` uses `method=broker_shopify_store_execute`. Fresh control-plane and profile smoke returned `rc=0/status=ok` with `values_printed=false`. Reauth/OAuth is not currently pending unless a fresh broker smoke fails again after retry outside a reload window.
+
 # LK Growth — Ranking OS v2 — QA + Impact Review — 2026-06-27
 
 - Execução: `2026-06-27T11:31Z–11:45Z`.

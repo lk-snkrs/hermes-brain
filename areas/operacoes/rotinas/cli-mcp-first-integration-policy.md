@@ -42,6 +42,22 @@ Lucas corrigiu/definiu que os agentes Hermes devem usar **CLI oficial ou wrapper
 
 `Fonte viva` não significa automaticamente `API direta`. Em Hermes, fonte viva deve ser acessada pela camada mais governada disponível: CLI/wrapper → MCP → API direta excepcional.
 
+
+## Central Integration Auth Broker — complemento 2026-06-28
+
+Para integrações com auth compartilhada entre profiles/agentes, a política CLI/MCP-first deve passar pelo broker central quando disponível:
+
+```bash
+/opt/data/home/.local/bin/hermes-cli-run <cli> <args...>
+```
+
+Regras adicionais:
+
+- Agents, subagents e crons não devem executar login/OAuth interativo individual (`shopify login`, `shopify store auth`, `hermes mcp login`) sem approval de reauth/control plane.
+- O broker central bloqueia login/auth interativo e mutations Shopify por padrão; mutations exigem `--allow-mutations` + referência de aprovação (`--approval` ou `HERMES_INTEGRATION_APPROVAL`) + rollback/readback.
+- Secrets continuam Doppler-first e process-scoped; não copiar `.env`, `auth.json`, `mcp-tokens` ou cache OAuth entre profiles.
+- Fallback legado (`shopify-admin-graphql` ou raw HTTP) é incidente aprovado/documentado, não alternativa normal silenciosa.
+
 ## Verificação
 
 Em trabalhos materiais com integração, receipts devem mencionar `integration_access_path` ou equivalente: `mcp`, `cli`, `wrapper`, ou `raw_api_exception`.

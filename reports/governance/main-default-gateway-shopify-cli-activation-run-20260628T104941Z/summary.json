@@ -1,0 +1,31 @@
+{
+  "pre_count": 13,
+  "post_count": 13,
+  "missing_after": [],
+  "added_after": [],
+  "default_pid_pre": [
+    1
+  ],
+  "default_pid_post": [
+    1
+  ],
+  "checks": [
+    {
+      "name": "version",
+      "rc": 0
+    },
+    {
+      "name": "gateway-status",
+      "rc": 0
+    },
+    {
+      "name": "cron-status",
+      "rc": 0
+    },
+    {
+      "name": "health",
+      "rc": 0
+    }
+  ],
+  "values_printed": false
+}

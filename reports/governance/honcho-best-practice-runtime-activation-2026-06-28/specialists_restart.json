@@ -1,0 +1,26 @@
+{
+  "killed": [
+    1,
+    105760,
+    105069,
+    105698,
+    105441,
+    104055,
+    104420,
+    104664,
+    107277,
+    104861,
+    104029,
+    104082,
+    104220
+  ],
+  "watchdog": {
+    "cmd": "python3 /opt/data/scripts/hermes_all_gateway_watchdog.py",
+    "rc": 0,
+    "stdout_nonempty": false,
+    "stderr_nonempty": false,
+    "stdout_tail": "",
+    "stderr_tail": ""
+  },
+  "values_printed": false
+}

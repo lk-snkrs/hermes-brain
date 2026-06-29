@@ -1,0 +1,35 @@
+{
+  "timestamp_utc": "2026-06-28T17:10:08Z",
+  "expected_counts": {
+    "main": 1,
+    "mordomo": 1,
+    "lk-growth": 1,
+    "spiti": 1,
+    "spiti-atendimento": 1,
+    "lk-ops": 1,
+    "lk-shopify": 1,
+    "lk-trends": 1,
+    "lk-collection-optimizer": 1,
+    "lk-stock": 1,
+    "lk-finance": 1,
+    "lk-content": 1,
+    "lc-claude-cli": 1
+  },
+  "missing_or_duplicate": [],
+  "bad_specialist_surfaces": [],
+  "health": {
+    "ok": true,
+    "status": 200,
+    "body": {
+      "status": "ok",
+      "platform": "hermes-agent",
+      "version": "0.17.0"
+    }
+  },
+  "watchdog_rc": 0,
+  "watchdog_stdout_nonempty": false,
+  "watchdog_stderr_nonempty": false,
+  "smoke_rc": 0,
+  "smoke_stdout_contains_linear": false,
+  "values_printed": false
+}

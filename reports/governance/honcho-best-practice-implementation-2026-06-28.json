@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-06-28T19:43:25.071037+00:00",
+  "patched_files": [
+    "/opt/hermes/plugins/memory/honcho/client.py",
+    "/opt/data/hermes-0.15.1-venv/lib/python3.13/site-packages/plugins/memory/honcho/client.py",
+    "/opt/data/hermes-15-install/plugins/memory/honcho/client.py",
+    "/opt/hermes/tests/honcho_plugin/test_client.py",
+    "/opt/data/scripts/honcho_quality_watchdog.py",
+    "/opt/data/home/.hermes/scripts/honcho_quality_watchdog.py"
+  ],
+  "config_profiles_updated": 17,
+  "local_skill_profiles_updated": 16,
+  "cron_job": "fac3e13782c4",
+  "tests": {
+    "honcho_client_tests": "85 passed",
+    "py_compile": "ok"
+  },
+  "runtime": {
+    "strict_gateway_count": 13,
+    "memory_status_samples": "honcho available",
+    "cron_active_jobs": 41,
+    "honcho_watchdog": "silent-ok"
+  },
+  "broker_smoke": {
+    "shopify_lk": "ok",
+    "supabase": "ok",
+    "google_workspace": "ok",
+    "klaviyo": "ok"
+  },
+  "values_printed": false,
+  "external_writes": 0,
+  "docker_vps_traefik_changes": 0
+}

@@ -1,0 +1,1496 @@
+{
+  "created_at": "2026-06-28T14:56:47Z",
+  "backup": "/opt/data/backups/hermes-cli-run-pre-auth-broker-20260628T145647Z.py",
+  "backup_sha256": "be5479b1621d12bd8e87c0e84a772b2d0792108ddb4d5be3287c181f00bd7117",
+  "source_sha256": "be5479b1621d12bd8e87c0e84a772b2d0792108ddb4d5be3287c181f00bd7117",
+  "commands": [
+    {
+      "name": "inventory",
+      "cmd": "/opt/data/home/.local/bin/hermes-cli-integrations inventory",
+      "exit_code": 0,
+      "stdout": "{\n  \"items\": [\n    {\n      \"commands\": {\n        \"vercel\": true\n      },\n      \"name\": \"vercel\",\n      \"notes\": \"map VERCEL_API_TOKEN -> VERCEL_TOKEN for CLI\",\n      \"secret_names_present\": [\n        \"VERCEL_API_TOKEN\",\n        \"VERCEL_API_TOKEN_LUCASCIMINO\"\n      ],\n      \"values_printed\": false\n    },\n    {\n      \"commands\": {\n        \"gws\": true\n      },\n      \"name\": \"google_workspace\",\n      \"notes\": \"gws installed; Doppler OAuth fallback available\",\n      \"secret_names_present\": [\n        \"GMAIL_CLIENT_ID\",\n        \"GMAIL_CLIENT_SECRET\",\n        \"GMAIL_REFRESH_TOKEN\",\n        \"GMAIL_LUCAS_REFRESH_TOKEN\"\n      ],\n      \"values_printed\": false\n    },\n    {\n      \"commands\": {\n        \"ntn\": true\n      },\n      \"name\": \"notion\",\n      \"notes\": \"map NOTION_API_KEY -> NOTION_TOKEN if needed\",\n      \"secret_names_present\": [\n        \"NOTION_API_KEY\",\n        \"NOTION_TOKEN_LK\",\n        \"NOTION_TOKEN_ZPR\"\n      ],\n      \"values_printed\": false\n    },\n    {\n      \"commands\": {\n        \"lin\": true\n      },\n      \"name\": \"linear\",\n      \"notes\": \"missing secret blocks auth\",\n      \"secret_names_present\": [\n        \"LINEAR_API_KEY\"\n      ],\n      \"values_printed\": false\n    },\n    {\n      \"commands\": {\n        \"sentry-cli\": true\n      },\n      \"name\": \"sentry\",\n      \"notes\": \"missing secret blocks auth\",\n      \"secret_names_present\": [\n        \"SENTRY_AUTH_TOKEN\"\n      ],\n      \"values_printed\": false\n    },\n    {\n      \"commands\": {\n        \"supabase\": true\n      },\n      \"name\": \"supabase\",\n      \"notes\": \"management CLI uses SUPABASE_ACCESS_TOKEN\",\n      \"secret_names_present\": [\n        \"SUPABASE_ACCESS_TOKEN\",\n        \"SUPABASE_LK_URL\",\n        \"SUPABASE_LK_SERVICE_KEY\"\n      ],\n      \"values_printed\": false\n    },\n    {\n      \"commands\": {\n        \"wrangler\": true\n      },\n      \"name\": \"cloudflare_wrangler\",\n      \"notes\": \"verify scope before DNS/workers writes\",\n      \"secret_names_present\": [\n        \"CLOUDFLARE_API_TOKEN\",\n        \"CF_API_TOKEN\",\n        \"CF_R2_API_TOKEN\"\n      ],\n      \"values_printed\": false\n    },\n    {\n      \"commands\": {\n        \"gh\": true\n      },\n      \"name\": \"github\",\n      \"notes\": \"use env token for gh/api noninteractive\",\n      \"secret_names_present\": [\n        \"GITHUB_TOKEN\",\n        \"GITHUB_TOKEN_LUCASCIMINO\"\n      ],\n      \"values_printed\": false\n    },\n    {\n      \"commands\": {\n        \"shopify\": true\n      },\n      \"name\": \"shopify_lk\",\n      \"notes\": \"Admin API read-only smoke\",\n      \"secret_names_present\": [\n        \"SHOPIFY_STORE\",\n        \"SHOPIFY_STORE_URL\",\n        \"SHOPIFY_ACCESS_TOKEN\",\n        \"SHOPIFY_ADMIN_TOKEN\"\n      ],\n      \"values_printed\": false\n    },\n    {\n      \"commands\": {\n        \"klaviyo\": true\n      },\n      \"name\": \"klaviyo\",\n      \"notes\": \"API read-only smoke\",\n      \"secret_names_present\": [\n        \"KLAVIYO_API_KEY\"\n      ],\n      \"values_printed\": false\n    }\n  ],\n  \"values_printed\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "smoke_selected",
+      "cmd": "/opt/data/home/.local/bin/hermes-cli-integrations smoke shopify_lk github notion google_workspace klaviyo supabase",
+      "exit_code": 0,
+      "stdout": "{\n  \"results\": {\n    \"github\": {\n      \"method\": \"gh_api\",\n      \"rc\": 0,\n      \"status\": \"ok\"\n    },\n    \"google_workspace\": {\n      \"method\": \"gws_gmail_users_getProfile\",\n      \"rc\": 2,\n      \"status\": \"failed\"\n    },\n    \"klaviyo\": {\n      \"method\": \"klaviyo_get_flows_stdout\",\n      \"rc\": 124,\n      \"status\": \"failed\"\n    },\n    \"notion\": {\n      \"method\": \"ntn_whoami\",\n      \"rc\": 0,\n      \"status\": \"ok\"\n    },\n    \"shopify_lk\": {\n      \"method\": \"shopify_store_execute\",\n      \"rc\": 0,\n      \"status\": \"ok\"\n    },\n    \"supabase\": {\n      \"project_count\": null,\n      \"rc\": 0,\n      \"status\": \"ok\"\n    }\n  },\n  \"values_printed\": false\n}\n",
+      "stderr": ""
+    }
+  ],
+  "drift_summary": {
+    "legacy_fallback_or_drift_candidate": 36,
+    "needs_review": 83,
+    "historical_or_governance_evidence": 48,
+    "direct_login_auth_drift_candidate": 42
+  },
+  "matches_count": 209,
+  "matches": [
+    {
+      "path": "/opt/data/skills/software-development/runtime-profile-map/SKILL.md",
+      "line": 22,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "For all-agent CLI/MCP coverage audits, remember that “policy propagated” is not “runtime migrated”: after checking profile-local `AGENTS.md`/`SOUL.md`, also inventory CLIs through Hermes wrapper PATH, smoke MCPs/read-onl…"
+    },
+    {
+      "path": "/opt/data/skills/devops/webhook-subscriptions/scripts/shopify_hmac_candidate_probe.py",
+      "line": 28,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"SHOPIFY_ACCESS_TOKEN\","
+    },
+    {
+      "path": "/opt/data/skills/devops/lucas-runtime-operations/references/central-integration-auth-broker-prd-20260628.md",
+      "line": 24,
+      "pattern": "mcp_login",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- MCP OAuth HTTP tokens are cached under `~/.hermes/mcp-tokens/<server>.json`; direct MCP login per profile can duplicate auth state unless ownership is centralized."
+    },
+    {
+      "path": "/opt/data/skills/devops/lucas-runtime-operations/references/central-integration-auth-broker-prd-20260628.md",
+      "line": 38,
+      "pattern": "shopify_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "6. Acceptance criteria: agents never run `shopify login`/`shopify store auth`/`hermes mcp login` individually unless an approved exception; `values_printed=false`; mutations blocked without approval."
+    },
+    {
+      "path": "/opt/data/skills/devops/lucas-runtime-operations/references/central-integration-auth-broker-prd-20260628.md",
+      "line": 54,
+      "pattern": "shopify_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "shopify login"
+    },
+    {
+      "path": "/opt/data/skills/devops/lucas-runtime-operations/references/central-integration-auth-broker-prd-20260628.md",
+      "line": 55,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "shopify store auth"
+    },
+    {
+      "path": "/opt/data/skills/devops/lucas-runtime-operations/references/central-integration-auth-broker-prd-20260628.md",
+      "line": 56,
+      "pattern": "hermes_mcp_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "hermes mcp login"
+    },
+    {
+      "path": "/opt/data/skills/devops/lucas-runtime-operations/references/central-integration-auth-broker-prd-20260628.md",
+      "line": 57,
+      "pattern": "mcp_login",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "mcp login"
+    },
+    {
+      "path": "/opt/data/skills/devops/lucas-runtime-operations/references/central-integration-auth-broker-prd-20260628.md",
+      "line": 58,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "SHOPIFY_ACCESS_TOKEN"
+    },
+    {
+      "path": "/opt/data/skills/devops/lucas-runtime-operations/references/central-integration-auth-broker-prd-20260628.md",
+      "line": 59,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "shopify-admin-graphql"
+    },
+    {
+      "path": "/opt/data/skills/devops/doppler-secrets-operations/SKILL.md",
+      "line": 26,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "- `references/shopify-auth-doppler-cli-bridge-20260627.md` — Shopify cron/runtime auth bridge: distinguish Doppler secret presence, Hermes CLI env alias injection, and official Shopify CLI OAuth; use Doppler-first CLI br…"
+    },
+    {
+      "path": "/opt/data/skills/devops/doppler-secrets-operations/SKILL.md",
+      "line": 159,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- `OK SHOPIFY_ACCESS_TOKEN`"
+    },
+    {
+      "path": "/opt/data/skills/devops/doppler-secrets-operations/references/shopify-auth-doppler-cli-bridge-20260627.md",
+      "line": 5,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "1. **Secret exists in Doppler** — e.g. `SHOPIFY_ACCESS_TOKEN`, `SHOPIFY_ADMIN_TOKEN`, `SHOPIFY_API_TOKEN`, plus store names."
+    },
+    {
+      "path": "/opt/data/skills/devops/doppler-secrets-operations/references/shopify-auth-doppler-cli-bridge-20260627.md",
+      "line": 7,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "3. **Official CLI OAuth is stored** — `shopify store auth list --json` and `shopify store execute` succeed without the Hermes bridge."
+    },
+    {
+      "path": "/opt/data/skills/devops/doppler-secrets-operations/references/shopify-auth-doppler-cli-bridge-20260627.md",
+      "line": 15,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- target `SHOPIFY_ACCESS_TOKEN` from `SHOPIFY_ACCESS_TOKEN`, `SHOPIFY_ADMIN_TOKEN`, `SHOPIFY_API_TOKEN`;"
+    },
+    {
+      "path": "/opt/data/skills/devops/doppler-secrets-operations/references/shopify-auth-doppler-cli-bridge-20260627.md",
+      "line": 22,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "A headless `shopify store auth --store ... --scopes ...` can hang waiting for browser/callback. Do not persist a Doppler Shopify token manually into `~/.config/shopify-cli-store-nodejs/config.json` as a durable workaroun…"
+    },
+    {
+      "path": "/opt/data/skills/mcp/mcp-connections/SKILL.md",
+      "line": 36,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- Prefer official/approved CLI or Hermes wrapper first for integrations when a governed CLI path exists. For LK Sneakers Shopify Admin GraphQL specifically, official OAuth is configured and the primary path is `/opt/data…"
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-operational-intelligence/SKILL.md",
+      "line": 430,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "`shopify-admin-graphql` is fallback only if official OAuth is broken/expired. Do not use raw Admin HTTP (`urllib`/`requests`/`curl`) for Shopify. Keep `--allow-mutations` absent unless Lucas approves an exact write with …"
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-operational-intelligence/references/lk-shopify-pos-daily-store-sales-query-20260626.md",
+      "line": 45,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "secrets={k:os.environ.get(k,'') for k in ['SHOPIFY_STORE_URL','SHOPIFY_ACCESS_TOKEN']}"
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-operational-intelligence/references/lk-theme-production-publish-admin-api-20260515.md",
+      "line": 19,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- Secret names: `SHOPIFY_STORE_URL`, `SHOPIFY_ACCESS_TOKEN`."
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-operational-intelligence/references/lk-theme-mega-menu-all-models-link-20260515.md",
+      "line": 37,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- fetch `SHOPIFY_STORE_URL` and `SHOPIFY_ACCESS_TOKEN` from Doppler/local token without printing secrets"
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-operational-intelligence/references/absorbed-lk-content-operations/SKILL.md",
+      "line": 174,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "`shopify-admin-graphql` is fallback only if official OAuth is broken/expired. Do not use raw Admin HTTP (`urllib`/`requests`/`curl`) for Shopify. Keep `--allow-mutations` absent unless Lucas approves an exact write with …"
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-operational-intelligence/references/absorbed-lk-gmc-operations/SKILL.md",
+      "line": 107,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "`shopify-admin-graphql` is fallback only if official OAuth is broken/expired. Do not use raw Admin HTTP (`urllib`/`requests`/`curl`) for Shopify. Keep `--allow-mutations` absent unless Lucas approves an exact write with …"
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-operational-intelligence/references/absorbed-lk-report-delivery/SKILL.md",
+      "line": 182,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "`shopify-admin-graphql` is fallback only if official OAuth is broken/expired. Do not use raw Admin HTTP (`urllib`/`requests`/`curl`) for Shopify. Keep `--allow-mutations` absent unless Lucas approves an exact write with …"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/SKILL.md",
+      "line": 69,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "Use `--variables '{...}'` for variables and `--version <api-version>` when pinning API versions. Keep `--allow-mutations` absent by default; any mutation/write requires explicit scoped approval, rollback, and readback. `…"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/SKILL.md",
+      "line": 98,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "`shopify-admin-graphql` is fallback only if official OAuth is broken/expired. Do not use raw Admin HTTP (`urllib`/`requests`/`curl`) for Shopify. Keep `--allow-mutations` absent unless Lucas approves an exact write with …"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-official-cli-all-agents-propagation-20260627.md",
+      "line": 21,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- If `hermes_cli_run.py` contains a route that rewrites `shopify store execute` into a custom wrapper such as `shopify-admin-graphql`, remove/disable that route after official OAuth is validated."
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-official-cli-all-agents-propagation-20260627.md",
+      "line": 26,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- Replace custom wrapper calls like `shopify-admin-graphql` in active code paths with official CLI."
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-official-cli-all-agents-propagation-20260627.md",
+      "line": 37,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- Scan enabled crons and active scripts for `shopify-admin-graphql`, `X-Shopify-Access-Token`, and `/admin/api/.../graphql` in Shopify paths."
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-official-cli-all-agents-propagation-20260627.md",
+      "line": 47,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "After OAuth succeeds, a compatibility bridge that transparently routes `hermes-cli-run shopify store execute` to `shopify-admin-graphql` becomes counterproductive: agents appear to use the official CLI but are still on w…"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-cli-interactive-oauth-handoff-20260627.md",
+      "line": 3,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "Use this reference when Lucas explicitly asks to proceed with official `shopify store auth` instead of the Doppler-first wrapper bridge."
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-cli-interactive-oauth-handoff-20260627.md",
+      "line": 7,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "The official Shopify CLI `shopify store auth` flow starts a local callback server on `127.0.0.1:13387/auth/callback` and expects a browser on the same machine to complete OAuth. In Hermes/Telegram, the user opens the aut…"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-cli-interactive-oauth-handoff-20260627.md",
+      "line": 16,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "shopify store auth --store lk-sneakerss.myshopify.com \\"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-cli-interactive-oauth-handoff-20260627.md",
+      "line": 48,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "shopify store auth list --json --no-color"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-cli-interactive-oauth-handoff-20260627.md",
+      "line": 58,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- Do not persist Doppler admin tokens into Shopify CLI cache files as a substitute for OAuth. If a manual cache experiment was attempted, remove/redact it and keep the supported fallback as the Doppler-first `shopify-adm…"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-cli-interactive-oauth-handoff-20260627.md",
+      "line": 64,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "If interactive OAuth cannot be completed, use the existing Doppler-first CLI bridge: `hermes-cli-run shopify store execute ...` routed through `shopify-admin-graphql`, with mutations blocked by default."
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-official-cli-all-agents-force-20260627.md",
+      "line": 5,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "Use this reference when Lucas asks to make Hermes agents/scripts/crons use Shopify through CLI instead of raw Admin API, or when a Shopify Admin GraphQL helper still points at `shopify-admin-graphql`, `urllib`, `requests…"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-official-cli-all-agents-force-20260627.md",
+      "line": 24,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "3. Legacy Hermes `shopify-admin-graphql` wrapper only as an incident fallback if official OAuth breaks/expires and Lucas approves continuing instead of renewing OAuth."
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-official-cli-all-agents-force-20260627.md",
+      "line": 37,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- replace `shopify-admin-graphql` with `hermes-cli-run shopify store execute`;"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-official-cli-all-agents-force-20260627.md",
+      "line": 40,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "- `shopify store auth list --json` or official smoke query;"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-official-cli-all-agents-force-20260627.md",
+      "line": 50,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- Do not keep a hidden route in `hermes-cli-run` that silently rewrites `shopify store execute` to `shopify-admin-graphql`; after OAuth, the user-facing command must execute the official Shopify CLI path."
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-cli-auth-bridge-20260627.md",
+      "line": 19,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "shopify-admin-graphql --query '...'"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-cli-auth-bridge-20260627.md",
+      "line": 24,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- get `SHOPIFY_ACCESS_TOKEN` from Doppler-injected aliases (`SHOPIFY_ACCESS_TOKEN`, `SHOPIFY_ADMIN_TOKEN`, `SHOPIFY_API_TOKEN`);"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-cli-auth-bridge-20260627.md",
+      "line": 30,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "## Pitfall: official `shopify store auth`"
+    },
+    {
+      "path": "/opt/data/skills/productivity/shopify/references/shopify-cli-auth-bridge-20260627.md",
+      "line": 32,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "`shopify store auth --store ... --scopes ...` stores an online OAuth session, but it requires an interactive browser/callback. In a headless Hermes cron/runtime this may hang or fail to complete. Do not claim official st…"
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-seo-weekly-improvement/SKILL.md",
+      "line": 370,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "`shopify-admin-graphql` is fallback only if official OAuth is broken/expired. Do not use raw Admin HTTP (`urllib`/`requests`/`curl`) for Shopify. Keep `--allow-mutations` absent unless Lucas approves an exact write with …"
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-seo-weekly-improvement/references/shopify-seo-execution-20260511.md",
+      "line": 9,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- Use Doppler `lc-keys/prd` for `SHOPIFY_STORE_URL` and `SHOPIFY_ACCESS_TOKEN`; never print values."
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-seo-weekly-improvement/references/approved-p1-seo-fields-execution-20260511.md",
+      "line": 17,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- Use Doppler `lc-keys/prd` secrets in process only: `SHOPIFY_STORE_URL`, `SHOPIFY_ACCESS_TOKEN`."
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-shopify-readonly/SKILL.md",
+      "line": 38,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`"
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-shopify-readonly/SKILL.md",
+      "line": 40,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "Known historical detail: older docs mention `SHOPIFY_ACCESS_TOKEN` as the correct token name, not `SHOPIFY_API_TOKEN`. If both exist, prefer `SHOPIFY_ACCESS_TOKEN` unless Lucas/Brain says otherwise."
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-shopify-readonly/SKILL.md",
+      "line": 45,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "/opt/data/hermes_bruno_ingest/hermes_doppler.sh exists SHOPIFY_STORE_URL SHOPIFY_ACCESS_TOKEN"
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-shopify-readonly/SKILL.md",
+      "line": 75,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "TOKEN=[REDACTED] secrets get SHOPIFY_ACCESS_TOKEN -p lc-keys -c prd --plain)\""
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-shopify-readonly/SKILL.md",
+      "line": 315,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "1. **Wrong token name.** Use `SHOPIFY_ACCESS_TOKEN`, not the historical mistaken `SHOPIFY_API_TOKEN` unless confirmed."
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-shopify-readonly/SKILL.md",
+      "line": 355,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "`shopify-admin-graphql` is fallback only if official OAuth is broken/expired. Do not use raw Admin HTTP (`urllib`/`requests`/`curl`) for Shopify. Keep `--allow-mutations` absent unless Lucas approves an exact write with …"
+    },
+    {
+      "path": "/opt/data/skills/productivity/lk-shopify-product-upload/SKILL.md",
+      "line": 430,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "`shopify-admin-graphql` is fallback only if official OAuth is broken/expired. Do not use raw Admin HTTP (`urllib`/`requests`/`curl`) for Shopify. Keep `--allow-mutations` absent unless Lucas approves an exact write with …"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/TOOLS.md",
+      "line": 35,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "**API Key:** Doppler (`SHOPIFY_ACCESS_TOKEN`)"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/TOOLS.md",
+      "line": 46,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "-H \"X-Shopify-Access-Token: [REDACTED] secrets get SHOPIFY_ACCESS_TOKEN --plain)\""
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/lk-roas-influencer-correction-readonly-2026-05-10.json",
+      "line": 12,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "\"SHOPIFY_ACCESS_TOKEN\": true,"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/cwc-vs-hermes-analysis.md",
+      "line": 539,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "| Shopify LK | ✅ Ativo | E-commerce, produtos, pedidos | `SHOPIFY_ACCESS_TOKEN` |"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/cwc-vs-hermes-analysis.md",
+      "line": 799,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "**API Key:** Doppler (SHOPIFY_ACCESS_TOKEN)"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/daily-consolidation/2026-06-28.md",
+      "line": 162,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "| Shopify Admin GraphQL deve usar CLI oficial `hermes-cli-run shopify store execute`; wrapper só fallback/incidente | Skills Shopify/LK Shopify/LK Growth/LK Stock + AGENTS/profile prompts | Aplicado em docs/perfis/script…"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/daily-consolidation/2026-06-28-handoff.json",
+      "line": 66,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "\"verification_needed\": \"Search ativo por shopify-admin-graphql/raw Admin HTTP em jobs enabled.\""
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/daily-consolidation/latest-handoff.json",
+      "line": 66,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "\"verification_needed\": \"Search ativo por shopify-admin-graphql/raw Admin HTTP em jobs enabled.\""
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/shopify-official-cli-all-agents-force-2026-06-27.md",
+      "line": 40,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- removed the forced route from `shopify store execute` to `shopify-admin-graphql`;"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/shopify-cli-auth-bridge-2026-06-27.md",
+      "line": 17,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN` from `SHOPIFY_ACCESS_TOKEN`, `SHOPIFY_ADMIN_TOKEN`, or `SHOPIFY_API_TOKEN`."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/shopify-cli-auth-bridge-2026-06-27.md",
+      "line": 29,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "shopify-admin-graphql --query '...'"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/shopify-cli-auth-bridge-2026-06-27.md",
+      "line": 36,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "`shopify store auth` requires an interactive browser callback. In this runtime it did not produce a usable non-interactive OAuth completion. A short-lived manual cache attempt was removed, and backup copies were redacted…"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/hermes-central-integration-auth-broker-prd-2026-06-28.md",
+      "line": 68,
+      "pattern": "shopify_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "4. Impedir que agents façam `shopify login`, `hermes mcp login`, OAuth ou cópia de token por conta própria fora de exceção aprovada."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/hermes-central-integration-auth-broker-prd-2026-06-28.md",
+      "line": 174,
+      "pattern": "mcp_login",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "3. **MCP login por profile:** só por exceção documentada quando a integração é realmente profile-specific."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/hermes-central-integration-auth-broker-prd-2026-06-28.md",
+      "line": 178,
+      "pattern": "hermes_mcp_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "- Não fazer `hermes mcp login <server>` em cada agente como rotina normal."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/hermes-central-integration-auth-broker-prd-2026-06-28.md",
+      "line": 240,
+      "pattern": "shopify_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "shopify login"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/hermes-central-integration-auth-broker-prd-2026-06-28.md",
+      "line": 241,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "shopify store auth"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/hermes-central-integration-auth-broker-prd-2026-06-28.md",
+      "line": 242,
+      "pattern": "hermes_mcp_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "hermes mcp login <server>"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/hermes-central-integration-auth-broker-prd-2026-06-28.md",
+      "line": 325,
+      "pattern": "mcp_login",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- Procurar uso de login direto, raw Shopify Admin HTTP e `mcp login` em scripts/skills/crons/prompts."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/hermes-central-integration-auth-broker-prd-2026-06-28.md",
+      "line": 399,
+      "pattern": "shopify_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "2. Bloquear hard `shopify login/store auth` no wrapper ou apenas em policy/lint inicialmente?"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cli-mcp-active-cron-fix-2026-06-27.md",
+      "line": 56,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- symlink: `/opt/data/home/.local/bin/shopify-admin-graphql`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/cli-mcp-active-cron-fix-2026-06-27.md",
+      "line": 64,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- `hermes-cli-run shopify-admin-graphql` wrapper surface;"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/shopify-official-oauth-2026-06-27.md",
+      "line": 7,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "- method: official `shopify store auth`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/reports/governance/shopify-official-oauth-2026-06-27.md",
+      "line": 17,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "| `shopify store auth list --json` | 1 session |"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/empresa/gestao/licoes.md",
+      "line": 16,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- Shopify: `SHOPIFY_ACCESS_TOKEN` (não `SHOPIFY_API_TOKEN`)"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/empresa/integracoes/shopify.md",
+      "line": 10,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/empresa/decisoes/2026-03.md",
+      "line": 104,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- Token correto: `SHOPIFY_ACCESS_TOKEN` (não `SHOPIFY_API_TOKEN`)"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/empresa/decisoes/decisoes-permanentes.md",
+      "line": 25,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "| Token Doppler | `SHOPIFY_ACCESS_TOKEN` (não `SHOPIFY_API_TOKEN`) |"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/memories/lessons.md",
+      "line": 16,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- Shopify: `SHOPIFY_ACCESS_TOKEN` (não `SHOPIFY_API_TOKEN`)"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/memories/lk.md",
+      "line": 50,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "| Shopify | Ativo | `SHOPIFY_ACCESS_TOKEN` |"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/memories/decisions.md",
+      "line": 25,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "| Token Doppler | `SHOPIFY_ACCESS_TOKEN` (não `SHOPIFY_API_TOKEN`) |"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/receipts/shopify-official-oauth-20260627.md",
+      "line": 10,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "- Callback OAuth informado por Lucas; shopify store auth list; shopify store execute read-only query."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/receipts/shopify-official-oauth-20260627.md",
+      "line": 19,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "- Rollback/mitigação: Rodar shopify store auth logout/remover sessão local do Shopify CLI se necessário; sem estado Shopify externo alterado."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/receipts/cli-mcp-active-cron-fix-20260627.md",
+      "line": 12,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- LK Stock Supabase cron convertido para gate readback via hermes-cli-run supabase db query --linked; Shopify Sales OS e analytics convertidos para wrapper CLI shopify-admin-graphql; skill/AGENTS LK Stock corrigidos para…"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/receipts/cli-mcp-active-cron-fix-20260627.md",
+      "line": 19,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- Rollback/mitigação: Restaurar arquivos de /opt/data/backups/cli-mcp-active-cron-fix-20260627T132053Z e remover symlink /opt/data/home/.local/bin/shopify-admin-graphql se necessário."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/receipts/shopify-official-cli-all-agents-force-20260627.md",
+      "line": 12,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- Propagada regra Shopify official CLI first para 59 instruction files, 28 cron jobs e skills relevantes; removido route hermes-cli-run shopify store execute -> shopify-admin-graphql; scripts ativos Shopify migrados para…"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/receipts/shopify-cli-auth-bridge-20260627.md",
+      "line": 10,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "- Doppler lc-keys/prd via hermes_doppler.py; hermes-cli-run; shopify-admin-graphql wrapper; smoke read-only Shopify shop query."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/receipts/shopify-cli-auth-bridge-20260627.md",
+      "line": 18,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "- Riscos/bloqueios: Shopify store auth OAuth oficial continua exigindo browser/callback interativo; ponte atual usa Doppler-first process scoped auth."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/rotinas/shopify-readonly-sync.md",
+      "line": 8,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- Secrets: `SHOPIFY_STORE_URL`, `SHOPIFY_ACCESS_TOKEN`."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/rotinas/shopify-readonly-sync.md",
+      "line": 20,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "1. Confirmar secrets com `hermes_doppler.sh exists SHOPIFY_STORE_URL SHOPIFY_ACCESS_TOKEN`."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/approval-packets/hermes-webhooks-shopify-route-secret-alignment-20260624.md",
+      "line": 19,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "4. Probes assinados com candidatos errados (`SHOPIFY_ADMIN_TOKEN`, `SHOPIFY_API_TOKEN`, `SHOPIFY_ACCESS_TOKEN`) foram rejeitados pela Vercel com `invalid_shopify_signature`."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/reports/hermes-webhooks-shopify-signature-reconciliation-20260624.md",
+      "line": 55,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "| `SHOPIFY_ACCESS_TOKEN` | Vercel rejeita `invalid_shopify_signature` |"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/implementation-plans/hermes-central-integration-auth-broker-2026-06-28.md",
+      "line": 66,
+      "pattern": "shopify_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "shopify login"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/implementation-plans/hermes-central-integration-auth-broker-2026-06-28.md",
+      "line": 68,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "shopify store auth"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/implementation-plans/hermes-central-integration-auth-broker-2026-06-28.md",
+      "line": 69,
+      "pattern": "hermes_mcp_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "hermes mcp login"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/implementation-plans/hermes-central-integration-auth-broker-2026-06-28.md",
+      "line": 148,
+      "pattern": "shopify_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "shopify login"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/implementation-plans/hermes-central-integration-auth-broker-2026-06-28.md",
+      "line": 149,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "shopify store auth"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/implementation-plans/hermes-central-integration-auth-broker-2026-06-28.md",
+      "line": 150,
+      "pattern": "hermes_mcp_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "hermes mcp login"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/implementation-plans/hermes-central-integration-auth-broker-2026-06-28.md",
+      "line": 151,
+      "pattern": "mcp_login",
+      "classification": "needs_review",
+      "snippet": "mcp login"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/implementation-plans/hermes-central-integration-auth-broker-2026-06-28.md",
+      "line": 152,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "SHOPIFY_ACCESS_TOKEN"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/implementation-plans/hermes-central-integration-auth-broker-2026-06-28.md",
+      "line": 153,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "shopify-admin-graphql"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/contexto/ferramentas.md",
+      "line": 24,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/contexto/geral.md",
+      "line": 47,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "| Shopify | Ativo | `SHOPIFY_ACCESS_TOKEN` |"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/rotinas/morning-briefing.md",
+      "line": 18,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN` se consultar Shopify"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/rotinas/data-spine-readonly-2026-05-11.md",
+      "line": 99,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- OK `SHOPIFY_ACCESS_TOKEN`."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/AGENTS.md",
+      "line": 7,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "Não executar `shopify store auth --verbose` nem comandos Shopify CLI em modo verbose quando houver risco de telemetria imprimir `env_shopify_variables`, tokens, webhook secrets ou qualquer secret. Para capturar URL OAuth…"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/CONNECTORS-READONLY-INVENTORY.md",
+      "line": 20,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- Segredos usados sem exposição: `SHOPIFY_STORE_URL`/`SHOPIFY_STORE` e `SHOPIFY_ACCESS_TOKEN`/`SHOPIFY_ADMIN_TOKEN`."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/handoffs/handoff-runtime-tools-lk-growth-shopify-browser-2026-05-27.md",
+      "line": 54,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- Nunca imprimir `SHOPIFY_ACCESS_TOKEN` ou credenciais Doppler."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/handoffs/handoff-runtime-tools-lk-growth-shopify-browser-2026-05-27.md",
+      "line": 66,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/receipts/semrush-technical-fix-20260627T1715Z/RECEIPT.md",
+      "line": 70,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "Durante a sessão anterior, Shopify CLI verbose expôs variáveis sensíveis no output de background. Regra adicionada ao Brain para não usar `shopify store auth --verbose`; capturar OAuth URL via `BROWSER` wrapper sem verbo…"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/receipts/theme-production/block-b-schema-asics-nb740-20260627T1705Z/RECEIPT.md",
+      "line": 97,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "- regra adicionada ao `AGENTS.md`: não usar `shopify store auth --verbose`; capturar OAuth URL com wrapper `BROWSER` simples;"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/receipts/shopify-cli-oauth-readback-block-a-20260627T162047Z/RECEIPT.md",
+      "line": 15,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "/opt/data/home/.local/bin/hermes-cli-run shopify store auth --help"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/receipts/shopify-cli-oauth-readback-block-a-20260627T162047Z/RECEIPT.md",
+      "line": 23,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "/opt/data/home/.local/bin/hermes-cli-run shopify store auth   --store lk-sneakerss.myshopify.com   --scopes read_products,read_content,read_themes,read_metaobjects --json"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/receipts/shopify-cli-oauth-readback-block-a-20260627T162047Z/RECEIPT.md",
+      "line": 31,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "/opt/data/home/.local/bin/hermes-cli-run shopify store auth   --store lk-sneakerss.myshopify.com   --scopes read_products,read_content,read_themes,read_metaobjects"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/receipts/shopify-cli-oauth-readback-block-a-20260627T162047Z/RECEIPT.md",
+      "line": 39,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "/opt/data/home/.local/bin/hermes-cli-run shopify store auth   --store lk-sneakerss.myshopify.com   --scopes read_products,read_content,read_themes,read_metaobjects --verbose"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/receipts/shopify-cli-oauth-readback-block-a-20260627T162047Z/RECEIPT.md",
+      "line": 58,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "Resultado sanitizado: CLI `shopify=true`; secrets Shopify presentes por nome (`SHOPIFY_STORE`, `SHOPIFY_STORE_URL`, `SHOPIFY_ACCESS_TOKEN`, `SHOPIFY_ADMIN_TOKEN`); `values_printed=false`."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/growth/receipts/shopify-cli-oauth-readback-block-a-20260627T162047Z/RECEIPT.md",
+      "line": 87,
+      "pattern": "shopify_store_auth",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "1. **Preferida:** Lucas/Hermes interativo completar `shopify store auth` oficial para `lk-sneakerss.myshopify.com` com escopos read-only. Depois Growth retoma Admin/theme readback."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipt-judgeme-whatsapp-review-inspection-20260613.md",
+      "line": 25,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`: OK"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/lk-pos-postpurchase-shopify-hmac-correction-packet-2026-06-09.md",
+      "line": 17,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "\"SHOPIFY_ACCESS_TOKEN\": {\"exists\": true, \"len\": 38},"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/lk-pos-postpurchase-shopify-webhook-401-hmac-investigation-2026-06-09.md",
+      "line": 85,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`: presente"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/lk-recovery-os-audit-20260603-0024z.md",
+      "line": 103,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/lk-recovery-os-incident-not-working-20260603-1338z.md",
+      "line": 65,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/lk-recovery-os-incident-not-working-20260603-1338z.md",
+      "line": 71,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN` → `orders.json`: HTTP 404"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/lk-recovery-os-incident-not-working-20260603-1338z.md",
+      "line": 75,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "Conclusão provável: o Worker usa `SHOPIFY_ACCESS_TOKEN`, mas o token válido para recheck de orders no Doppler é `SHOPIFY_ADMIN_TOKEN`. Sem corrigir o secret usado pelo Worker, o T1 falha fechado."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/lk-recovery-os-incident-not-working-20260603-1338z.md",
+      "line": 93,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "1. Atualizar secret de produção do Worker `SHOPIFY_ACCESS_TOKEN` para o valor válido de `SHOPIFY_ADMIN_TOKEN` do Doppler, sem expor valor."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/lk-recovery-os-shopify-correct-recheck-fallback-local-20260603-1350z.md",
+      "line": 21,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "O achado anterior contra Doppler não deve ser comunicado como “Shopify errado”. A formulação correta é: **o Worker estava rígido demais em um único secret/env (`SHOPIFY_ACCESS_TOKEN`) e não tentava o token admin alternat…"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/lk-recovery-os-shopify-correct-recheck-fallback-local-20260603-1350z.md",
+      "line": 37,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "1. `SHOPIFY_ACCESS_TOKEN`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/lk-recovery-os-shopify-correct-recheck-fallback-local-20260603-1350z.md",
+      "line": 46,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `falls back to SHOPIFY_ADMIN_TOKEN when SHOPIFY_ACCESS_TOKEN cannot read orders`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/lk-recovery-os-shopify-recheck-fallback-deploy-20260603-1411z.md",
+      "line": 26,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "1. `SHOPIFY_ACCESS_TOKEN`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/lk-recovery-os-shopify-recheck-fallback-deploy-20260603-1411z.md",
+      "line": 40,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- teste de fallback quando `SHOPIFY_ACCESS_TOKEN` falha e `SHOPIFY_ADMIN_TOKEN` lê orders."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/shopify-pos-restock-webhook-verification-20260609.md",
+      "line": 13,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`: present"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/receipts/lk-recovery-os-superpowers-readonly-audit-20260603-0051z.md",
+      "line": 107,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/atendimento/reports/lk-pos-restock-exception-monitor-fix-20260627.md",
+      "line": 30,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `ensure_doppler()` exige `SHOPIFY_ACCESS_TOKEN` + `HERMES_WEBHOOK_SECRET` para o monitor local."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/stock/receipts/lk-shopify-sales-os-token-nameerror-autoheal-20260628.md",
+      "line": 12,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- Corrigido bug local NameError: removida chamada a token() inexistente no caminho migrado para Shopify CLI oficial; mantida checagem de presença de SHOPIFY_ACCESS_TOKEN sem imprimir valor; backup criado antes da edição."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/shopify/handoffs/2026-06-26-new-balance-740-publicability-shopify-readonly-result.md",
+      "line": 4,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- Fonte viva consultada: Shopify Admin GraphQL read-only em 2026-06-26T09:20Z; public readback HTTP em `lksneakers.com.br`; Doppler `lc-keys/prd` injetou `SHOPIFY_STORE_URL` e `SHOPIFY_ACCESS_TOKEN` sem imprimir valores …"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/shopify/handoffs/2026-06-26-new-balance-740-publicability-collection-request.md",
+      "line": 4,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- Fonte viva consultada: Shopify Admin GraphQL read-only em 2026-06-26T09:05Z; Doppler `lc-keys/prd` injetou `SHOPIFY_STORE_URL` e `SHOPIFY_ACCESS_TOKEN` sem imprimir valores (`values_printed=false`)."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/shopify/receipts/2026-06-05-google-customer-reviews-opt-in-approved-add-blocked.md",
+      "line": 48,
+      "pattern": "shopify_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "- redireciona para Shopify login com `errorHint=no_cookie_session`."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/shopify/receipts/2026-06-05-google-customer-reviews-opt-in-approval-attempt.md",
+      "line": 21,
+      "pattern": "shopify_login",
+      "classification": "direct_login_auth_drift_candidate",
+      "snippet": "- result: redirected to Shopify login with `errorHint=no_cookie_session`."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/shopify/approval-packets/2026-06-26-new-balance-740-publicability-write-preview-blocked-pending-stock.md",
+      "line": 7,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "Secrets: Doppler `lc-keys/prd` via helper; `SHOPIFY_STORE_URL` e `SHOPIFY_ACCESS_TOKEN` presentes; `values_printed=false`."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/shopify/approval-packets/checkout-gift-bag-20260610.md",
+      "line": 21,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- Secrets verificados por presença via Doppler: `SHOPIFY_STORE_URL`, `SHOPIFY_ACCESS_TOKEN` e GitHub token disponível; valores não foram impressos."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/shopify/reports/checkout-microfunnel-measurement-audit-20260610.md",
+      "line": 10,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`: presente no Doppler."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/shopify/prds/prd-pdp-google-reviews-popup-cron-20260626.md",
+      "line": 430,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`: presente."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/collection-optimizer/approval-packets/20260626T0905Z-new-balance-740-unblock-readonly-packet.md",
+      "line": 21,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- **Shopify Admin read-only consultado em:** 2026-06-26T09:05Z via GraphQL query; `values_printed=false`; secrets `SHOPIFY_STORE_URL` e `SHOPIFY_ACCESS_TOKEN` existem no Doppler e foram injetados sem imprimir valores."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/collection-optimizer/work/puma-speedcat-lkgoc-optimization-20260606T233058Z/RECEIPT-SUBIR-BLOCKED-NO-SHOPIFY-ENV.md",
+      "line": 16,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "ABORT missing Shopify env: SHOPIFY_STORE_URL/SHOPIFY_STORE and SHOPIFY_ACCESS_TOKEN/SHOPIFY_ADMIN_TOKEN/SHOPIFY_API_TOKEN"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/collection-optimizer/work/puma-speedcat-lkgoc-optimization-20260606T233058Z/RECEIPT-CANDIDATE-READY.md",
+      "line": 27,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN` / `SHOPIFY_ADMIN_TOKEN` / `SHOPIFY_API_TOKEN`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/content/receipts/lk-content-prd-config-continued-20260607.md",
+      "line": 41,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/content/receipts/lk-content-gate7-shopify-tiny-readonly-20260607.md",
+      "line": 27,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "- Required secrets present: `SHOPIFY_ACCESS_TOKEN`, `SHOPIFY_STORE`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/agentes/lk/TOOLS.md",
+      "line": 6,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- Shopify LK: `SHOPIFY_ACCESS_TOKEN`, `SHOPIFY_STORE`, `SHOPIFY_STORE_URL`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/agentes/lk/SOUL.md",
+      "line": 87,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "**Doppler keys:** `SUPABASE_LK_SERVICE_KEY`, `SUPABASE_LK_URL`, `SHOPIFY_ACCESS_TOKEN`, `KLAVIYO_API_KEY`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/agentes/lk/AGENTS.md",
+      "line": 75,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- Shopify LK (`SHOPIFY_ACCESS_TOKEN`) — leitura de produtos, pedidos, clientes"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/skills/lk-shopify-readonly/SKILL.md",
+      "line": 37,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "- `SHOPIFY_ACCESS_TOKEN`"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/skills/lk-shopify-readonly/SKILL.md",
+      "line": 39,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "Known historical detail: older docs mention `SHOPIFY_ACCESS_TOKEN` as the correct token name, not `SHOPIFY_API_TOKEN`. If both exist, prefer `SHOPIFY_ACCESS_TOKEN` unless Lucas/Brain says otherwise."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/skills/lk-shopify-readonly/SKILL.md",
+      "line": 44,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "/opt/data/hermes_bruno_ingest/hermes_doppler.sh exists SHOPIFY_STORE_URL SHOPIFY_ACCESS_TOKEN"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/skills/lk-shopify-readonly/SKILL.md",
+      "line": 74,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "TOKEN=[REDACTED] secrets get SHOPIFY_ACCESS_TOKEN -p lc-keys -c prd --plain)\""
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/skills/lk-shopify-readonly/SKILL.md",
+      "line": 264,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "1. **Wrong token name.** Use `SHOPIFY_ACCESS_TOKEN`, not the historical mistaken `SHOPIFY_API_TOKEN` unless confirmed."
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_execute_approved_abc_20260514.py",
+      "line": 178,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or secrets.get('SHOPIFY_ADMIN_TOKEN') or secrets.get('SHOPIFY_API_TOKEN')"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_os_daily_sales_brief_20260511.py",
+      "line": 111,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or ''"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_gmc_source_governance_investigation_20260514.py",
+      "line": 115,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "token = [REDACTED] or secrets.get('SHOPIFY_ADMIN_TOKEN') or secrets.get('SHOPIFY_API_TOKEN') or ''"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_gmc_source_governance_investigation_20260514.py",
+      "line": 126,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "token = [REDACTED] or secrets.get('SHOPIFY_ADMIN_TOKEN') or secrets.get('SHOPIFY_API_TOKEN') or ''"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_gmc_local_cd_pos_source_validation_20260512.py",
+      "line": 120,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "shopify_token = [REDACTED] or ''"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_gmc_local_cd_shopify_live_preview_20260512.py",
+      "line": 128,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "shopify_token = [REDACTED] or ''"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_sourcing_decision_fields_v8_20260515.py",
+      "line": 107,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "shop_token=[REDACTED]"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_os_weekly_ceo_review_20260511.py",
+      "line": 122,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or ''"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_gmc_required_attrs_preview_20260512.py",
+      "line": 59,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or secrets.get('SHOPIFY_ADMIN_ACCESS_TOKEN')"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_phase5_generate_klaviyo_ready_visual_preview_20260511.py",
+      "line": 91,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] '')"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_needs_data_autofix_readonly_20260512.py",
+      "line": 388,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "shop = Shopify(secrets['SHOPIFY_STORE_URL'], secrets['SHOPIFY_ACCESS_TOKEN'])"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_gmc_p0_url_checkout_review_20260512.py",
+      "line": 65,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or secrets.get('SHOPIFY_ADMIN_ACCESS_TOKEN')"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_os_data_spine_snapshots_20260511.py",
+      "line": 91,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or ''"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_p0_remaining_followup_readonly_20260511.py",
+      "line": 22,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "shop_token=[REDACTED]"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_gmc_b_remaining_shopify_live_probe_20260512.py",
+      "line": 81,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or ''"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_gmc_google_youtube_channel_readonly_diagnostic_20260514.py",
+      "line": 53,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token=[REDACTED] or secrets.get('SHOPIFY_ADMIN_TOKEN') or secrets.get('SHOPIFY_API_TOKEN') or ''"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_weekly_influencer_sales_report.py",
+      "line": 176,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "token = [REDACTED] or secrets.get('SHOPIFY_ADMIN_TOKEN') or secrets.get('SHOPIFY_API_TOKEN')"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_apply_approved_p1_seo_fields_20260511.py",
+      "line": 148,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "secrets = doppler_secrets(['SHOPIFY_STORE_URL', 'SHOPIFY_ACCESS_TOKEN'])"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_apply_approved_p1_seo_fields_20260511.py",
+      "line": 150,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED]"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_p0_blocked_six_live_recheck_20260511.py",
+      "line": 13,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "TINY=secrets['TINY_API_TOKEN']; SHOP=secrets['SHOPIFY_ACCESS_TOKEN']"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_phase5_generate_klaviyo_visual_preview_20260511.py",
+      "line": 59,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] \"\")"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_sourcing_current_lk_price_reference_v7_20260515.py",
+      "line": 107,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "shop_token=[REDACTED]"
+    },
+    {
+      "path": "/opt/data/hermes_bruno_ingest/hermes-brain/scripts/lk_os_sales_reports_whatsapp_email_designmd_20260516.py",
+      "line": 289,
+      "pattern": "shopify_access_token_ref",
+      "classification": "historical_or_governance_evidence",
+      "snippet": "token = [REDACTED] or ''"
+    },
+    {
+      "path": "/opt/data/scripts/hermes_doppler.py",
+      "line": 51,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_STORE\", \"GA4_LK_PROPERTY_ID\","
+    },
+    {
+      "path": "/opt/data/scripts/hermes_doppler.py",
+      "line": 57,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_STORE\", \"EVOLUTION_API_KEY\","
+    },
+    {
+      "path": "/opt/data/scripts/hermes_doppler.py",
+      "line": 61,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_ADMIN_TOKEN\", \"SHOPIFY_API_TOKEN\","
+    },
+    {
+      "path": "/opt/data/scripts/hermes_doppler.py",
+      "line": 77,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_STORE\","
+    },
+    {
+      "path": "/opt/data/scripts/hermes_doppler.py",
+      "line": 92,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_STORE\", \"SHOPIFY_STORE_URL\","
+    },
+    {
+      "path": "/opt/data/scripts/hermes_doppler.py",
+      "line": 97,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_STORE\","
+    },
+    {
+      "path": "/opt/data/scripts/hermes_doppler.py",
+      "line": 101,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"KLAVIYO_API_KEY\", \"OPENROUTER_API_KEY\", \"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_STORE\","
+    },
+    {
+      "path": "/opt/data/scripts/hermes_doppler.py",
+      "line": 104,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_STORE\", \"GSC_SITE_URL\","
+    },
+    {
+      "path": "/opt/data/scripts/hermes_doppler.py",
+      "line": 109,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"GA4_LK_SERVICE_ACCOUNT\", \"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_STORE\","
+    },
+    {
+      "path": "/opt/data/scripts/lk_store_sale_restock_alert.py.bak-daily-limit-20260609T181418Z",
+      "line": 78,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or ''"
+    },
+    {
+      "path": "/opt/data/scripts/lk_store_sale_restock_alert.py.bak-daily-limit-20260609T181418Z",
+      "line": 99,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or '')"
+    },
+    {
+      "path": "/opt/data/scripts/lk_hermes_whatsapp_responder.py.bak-20260615Twhatsapp-stockos-audit",
+      "line": 1659,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or secrets.get(\"SHOPIFY_ACCESS_TOKEN\") or secrets.get(\"SHOPIFY_API_TOKEN\")"
+    },
+    {
+      "path": "/opt/data/scripts/lk_hermes_whatsapp_responder.py",
+      "line": 1823,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or secrets.get(\"SHOPIFY_ACCESS_TOKEN\") or secrets.get(\"SHOPIFY_API_TOKEN\")"
+    },
+    {
+      "path": "/opt/data/scripts/shopify_admin_graphql_cli.py",
+      "line": 37,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "return os.environ.get(\"SHOPIFY_ACCESS_TOKEN\") or os.environ.get(\"SHOPIFY_ADMIN_TOKEN\") or os.environ.get(\"SHOPIFY_API_TOKEN\") or \"\""
+    },
+    {
+      "path": "/opt/data/scripts/lk_valentines_top_customers_preview.py",
+      "line": 215,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or os.environ.get(\"SHOPIFY_ADMIN_TOKEN\") or os.environ.get(\"SHOPIFY_API_TOKEN\")"
+    },
+    {
+      "path": "/opt/data/scripts/hermes_cli_integrations.py",
+      "line": 45,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "CliDef(\"shopify_lk\", [\"shopify\"], [\"SHOPIFY_STORE\", \"SHOPIFY_STORE_URL\", \"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_ADMIN_TOKEN\"], \"Admin API read-only smoke\"),"
+    },
+    {
+      "path": "/opt/data/scripts/lk_pos_postpurchase_shopify_reconciler.py",
+      "line": 50,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "os.environ.get('SHOPIFY_ACCESS_TOKEN')"
+    },
+    {
+      "path": "/opt/data/scripts/hermes_daily_intelligence_preflight.py",
+      "line": 47,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"lk-shopify\": [\"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_SHOP_DOMAIN\"],"
+    },
+    {
+      "path": "/opt/data/scripts/hermes_daily_intelligence_preflight.py",
+      "line": 51,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_STORE\","
+    },
+    {
+      "path": "/opt/data/scripts/lk_store_sale_restock_alert.py",
+      "line": 104,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or ''"
+    },
+    {
+      "path": "/opt/data/scripts/lk_store_sale_restock_alert.py",
+      "line": 125,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "token = [REDACTED] or '')"
+    },
+    {
+      "path": "/opt/data/scripts/hermes_cli_run.py",
+      "line": 27,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "(\"SHOPIFY_ACCESS_TOKEN\", [\"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_ADMIN_TOKEN\", \"SHOPIFY_API_TOKEN\"]),"
+    },
+    {
+      "path": "/opt/data/scripts/hermes_cli_run.py",
+      "line": 30,
+      "pattern": "shopify_admin_graphql",
+      "classification": "legacy_fallback_or_drift_candidate",
+      "snippet": "\"shopify-admin-graphql\": ["
+    },
+    {
+      "path": "/opt/data/scripts/hermes_cli_run.py",
+      "line": 31,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "(\"SHOPIFY_ACCESS_TOKEN\", [\"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_ADMIN_TOKEN\", \"SHOPIFY_API_TOKEN\"]),"
+    },
+    {
+      "path": "/opt/data/scripts/backups/hermes_daily_intelligence_preflight.py.20260623T0502Z.bak",
+      "line": 46,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"lk-shopify\": [\"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_SHOP_DOMAIN\"],"
+    },
+    {
+      "path": "/opt/data/scripts/backups/hermes_daily_intelligence_preflight.py.20260623T0502Z.bak",
+      "line": 50,
+      "pattern": "shopify_access_token_ref",
+      "classification": "needs_review",
+      "snippet": "\"SHOPIFY_ACCESS_TOKEN\", \"SHOPIFY_STORE\","
+    }
+  ],
+  "values_printed": false,
+  "external_writes": 0
+}

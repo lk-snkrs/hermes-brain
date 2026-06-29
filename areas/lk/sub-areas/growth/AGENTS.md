@@ -260,5 +260,8 @@ Lucas autorizou OAuth oficial do Shopify CLI em 2026-06-27 para `lk-sneakerss.my
 3. Não usar wrapper legado nem Admin HTTP raw como caminho normal; se o OAuth oficial quebrar/expirar, bloquear a tarefa e renovar OAuth antes de seguir, salvo incidente explicitamente aprovado.
 4. Não voltar para `urllib`/`requests`/`curl`/Admin HTTP raw para Shopify, salvo exceção justificada e aprovada.
 5. Nunca imprimir tokens/cache OAuth; reportar só status, store, scopes e `values_printed=false`.
+6. `hermes-cli-run` é o broker central de auth/execução: agentes não devem executar `shopify login`, `shopify auth` ou `shopify store auth` individualmente; reauth/OAuth é procedimento controlado com aprovação.
+7. Desde 2026-06-28, o broker bloqueia mutation Shopify sem `--allow-mutations` + referência de aprovação (`--approval` ou `HERMES_INTEGRATION_APPROVAL`) e bloqueia login/auth interativo por padrão.
+8. Não copiar `.env`, `auth.json`, `mcp-tokens` nem cache OAuth entre profiles; se auth quebrar, abrir reauth/incident packet em vez de espalhar credenciais.
 
 <!-- SHOPIFY_OFFICIAL_CLI_POLICY_END -->

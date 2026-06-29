@@ -1,0 +1,415 @@
+{
+  "timestamp_utc": "2026-06-28T18:22:53Z",
+  "pre_rows": [
+    {
+      "name": "main",
+      "home": "/opt/data",
+      "mode": "check_only",
+      "pid": "1",
+      "api_enabled": true,
+      "webhook_enabled": true,
+      "api_key_present": true,
+      "webhook_secret_present": true,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "mordomo",
+      "home": "/opt/data/profiles/mordomo",
+      "mode": "managed",
+      "pid": "83492",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-growth",
+      "home": "/opt/data/profiles/lk-growth",
+      "mode": "managed",
+      "pid": "83557",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "spiti",
+      "home": "/opt/data/profiles/spiti",
+      "mode": "managed",
+      "pid": "83603",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "spiti-atendimento",
+      "home": "/opt/data/profiles/spiti-atendimento",
+      "mode": "managed",
+      "pid": "83696",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-ops",
+      "home": "/opt/data/profiles/lk-ops",
+      "mode": "managed",
+      "pid": "83846",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-shopify",
+      "home": "/opt/data/profiles/lk-shopify",
+      "mode": "managed",
+      "pid": "84008",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-trends",
+      "home": "/opt/data/profiles/lk-trends",
+      "mode": "managed",
+      "pid": "84169",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-collection-optimizer",
+      "home": "/opt/data/profiles/lk-collection-optimizer",
+      "mode": "managed",
+      "pid": "84360",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-stock",
+      "home": "/opt/data/profiles/lk-stock",
+      "mode": "managed",
+      "pid": "84551",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-finance",
+      "home": "/opt/data/profiles/lk-finance",
+      "mode": "managed",
+      "pid": "84837",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-content",
+      "home": "/opt/data/profiles/lk-content",
+      "mode": "managed",
+      "pid": "84900",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lc-claude-cli",
+      "home": "/opt/data/profiles/lc-claude-cli",
+      "mode": "managed",
+      "pid": "84967",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    }
+  ],
+  "terminated_managed": [
+    {
+      "name": "mordomo",
+      "pid": "83492"
+    },
+    {
+      "name": "lk-growth",
+      "pid": "83557"
+    },
+    {
+      "name": "spiti",
+      "pid": "83603"
+    },
+    {
+      "name": "spiti-atendimento",
+      "pid": "83696"
+    },
+    {
+      "name": "lk-ops",
+      "pid": "83846"
+    },
+    {
+      "name": "lk-shopify",
+      "pid": "84008"
+    },
+    {
+      "name": "lk-trends",
+      "pid": "84169"
+    },
+    {
+      "name": "lk-collection-optimizer",
+      "pid": "84360"
+    },
+    {
+      "name": "lk-stock",
+      "pid": "84551"
+    },
+    {
+      "name": "lk-finance",
+      "pid": "84837"
+    },
+    {
+      "name": "lk-content",
+      "pid": "84900"
+    },
+    {
+      "name": "lc-claude-cli",
+      "pid": "84967"
+    }
+  ],
+  "watchdog_rc": 0,
+  "watchdog_stdout_nonempty": false,
+  "watchdog_stderr_nonempty": false,
+  "post_rows": [
+    {
+      "name": "main",
+      "home": "/opt/data",
+      "mode": "check_only",
+      "pid": "1",
+      "api_enabled": true,
+      "webhook_enabled": true,
+      "api_key_present": true,
+      "webhook_secret_present": true,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "mordomo",
+      "home": "/opt/data/profiles/mordomo",
+      "mode": "managed",
+      "pid": "97697",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-growth",
+      "home": "/opt/data/profiles/lk-growth",
+      "mode": "managed",
+      "pid": "97719",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "spiti",
+      "home": "/opt/data/profiles/spiti",
+      "mode": "managed",
+      "pid": "97793",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "spiti-atendimento",
+      "home": "/opt/data/profiles/spiti-atendimento",
+      "mode": "managed",
+      "pid": "97927",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-ops",
+      "home": "/opt/data/profiles/lk-ops",
+      "mode": "managed",
+      "pid": "98043",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-shopify",
+      "home": "/opt/data/profiles/lk-shopify",
+      "mode": "managed",
+      "pid": "98258",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-trends",
+      "home": "/opt/data/profiles/lk-trends",
+      "mode": "managed",
+      "pid": "98396",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-collection-optimizer",
+      "home": "/opt/data/profiles/lk-collection-optimizer",
+      "mode": "managed",
+      "pid": "98522",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-stock",
+      "home": "/opt/data/profiles/lk-stock",
+      "mode": "managed",
+      "pid": "84551",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-finance",
+      "home": "/opt/data/profiles/lk-finance",
+      "mode": "managed",
+      "pid": "98759",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lk-content",
+      "home": "/opt/data/profiles/lk-content",
+      "mode": "managed",
+      "pid": "98931",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    },
+    {
+      "name": "lc-claude-cli",
+      "home": "/opt/data/profiles/lc-claude-cli",
+      "mode": "managed",
+      "pid": "99071",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true,
+      "allowed_users_present": true,
+      "cmd_ok": true
+    }
+  ],
+  "managed_counts": {
+    "mordomo": 1,
+    "lk-growth": 1,
+    "spiti": 1,
+    "spiti-atendimento": 1,
+    "lk-ops": 1,
+    "lk-shopify": 1,
+    "lk-trends": 1,
+    "lk-collection-optimizer": 1,
+    "lk-stock": 1,
+    "lk-finance": 1,
+    "lk-content": 1,
+    "lc-claude-cli": 1
+  },
+  "managed_missing_or_duplicate": [],
+  "bad_surfaces": [],
+  "values_printed": false
+}

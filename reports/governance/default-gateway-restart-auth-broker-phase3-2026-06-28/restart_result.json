@@ -1,0 +1,7 @@
+{
+  "timestamp_utc": "2026-06-28T15:28:45Z",
+  "rc": 1,
+  "stdout_tail": "\u2713 Stopped gateway for this profile\n\u26a0 Gateway PID 1 did not exit gracefully; sent SIGKILL\n\u26a0 Gateway PID 1 still running after 10.0s \u2014 restart may fail\nStarting gateway...\n\u2717 Another gateway instance is already running (PID 1).\n  Use 'hermes gateway restart' to replace it,\n  or 'hermes gateway stop' first.\n  Or use 'hermes gateway run --replace' to auto-replace.\n",
+  "stderr_tail": "",
+  "values_printed": false
+}

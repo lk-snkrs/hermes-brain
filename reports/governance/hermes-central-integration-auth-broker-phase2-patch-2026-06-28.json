@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-06-28T15:07:56Z",
+  "source": "/opt/data/scripts/hermes_cli_run.py",
+  "test": "/opt/data/scripts/tests/test_hermes_cli_run.py",
+  "backup": "/opt/data/backups/hermes-cli-run-pre-auth-broker-20260628T145647Z.py",
+  "source_sha256": "64bee7bf63d3c47e98de7ecde89738560b83cd364fb5cb55190c66b6bf058bd4",
+  "backup_sha256": "be5479b1621d12bd8e87c0e84a772b2d0792108ddb4d5be3287c181f00bd7117",
+  "commands": [
+    {
+      "name": "py_compile",
+      "cmd": "python3 -m py_compile /opt/data/scripts/hermes_cli_run.py /opt/data/scripts/tests/test_hermes_cli_run.py",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "unit_tests",
+      "cmd": "python3 -m unittest /opt/data/scripts/tests/test_hermes_cli_run.py -v",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_allow_mutation_requires_approval_reference (scripts.tests.test_hermes_cli_run.HermesCliRunPolicyTests.test_allow_mutation_requires_approval_reference) ... ok\ntest_audit_json_emits_sanitized_audit_record_for_read_only_command (scripts.tests.test_hermes_cli_run.HermesCliRunPolicyTests.test_audit_json_emits_sanitized_audit_record_for_read_only_command) ... ok\ntest_blocks_shopify_mutation_without_allow_flag (scripts.tests.test_hermes_cli_run.HermesCliRunPolicyTests.test_blocks_shopify_mutation_without_allow_flag) ... ok\ntest_blocks_shopify_store_auth_without_executing_cli (scripts.tests.test_hermes_cli_run.HermesCliRunPolicyTests.test_blocks_shopify_store_auth_without_executing_cli) ... ok\ntest_read_only_shopify_command_still_executes (scripts.tests.test_hermes_cli_run.HermesCliRunPolicyTests.test_read_only_shopify_command_still_executes) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.011s\n\nOK\n"
+    },
+    {
+      "name": "deny_store_auth",
+      "cmd": "/opt/data/home/.local/bin/hermes-cli-run shopify store auth --store lk-sneakerss.myshopify.com",
+      "exit_code": 64,
+      "stdout": "",
+      "stderr": "policy_blocked: direct interactive/auth command is not allowed via agents: shopify store auth\n"
+    },
+    {
+      "name": "mutation_block",
+      "cmd": "/opt/data/home/.local/bin/hermes-cli-run shopify store execute --store lk-sneakerss.myshopify.com --json --query mutation { __typename }",
+      "exit_code": 64,
+      "stdout": "",
+      "stderr": "mutation_blocked: Shopify GraphQL mutation requires --allow-mutations and scoped approval reference\n"
+    },
+    {
+      "name": "audit_readonly",
+      "cmd": "/opt/data/home/.local/bin/hermes-cli-run --audit-json shopify store execute --store lk-sneakerss.myshopify.com --json --query { shop { name myshopifyDomain } }",
+      "exit_code": 0,
+      "stdout": "{\n  \"shop\": {\n    \"name\": \"LK\",\n    \"myshopifyDomain\": \"lk-sneakerss.myshopify.com\"\n  }\n}\n{\"command_family\": \"store execute\", \"deprecated\": false, \"exit_code\": 0, \"integration\": \"shopify\", \"mode\": \"read_only\", \"secret_values_printed\": false, \"status\": \"ok\", \"values_printed\": false}\n",
+      "stderr": "Loading stored store auth ...\n\u001b[2K\u001b[1A\u001b[2K\u001b[G\nExecuting GraphQL operation ...\n\u001b[2K\u001b[1A\u001b[2K\u001b[G\n"
+    },
+    {
+      "name": "smoke_shopify",
+      "cmd": "/opt/data/home/.local/bin/hermes-cli-integrations smoke shopify_lk",
+      "exit_code": 0,
+      "stdout": "{\n  \"results\": {\n    \"shopify_lk\": {\n      \"method\": \"shopify_store_execute\",\n      \"rc\": 0,\n      \"status\": \"ok\"\n    }\n  },\n  \"values_printed\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "smoke_selected",
+      "cmd": "/opt/data/home/.local/bin/hermes-cli-integrations smoke shopify_lk github notion google_workspace klaviyo supabase",
+      "exit_code": 0,
+      "stdout": "{\n  \"results\": {\n    \"github\": {\n      \"method\": \"gh_api\",\n      \"rc\": 0,\n      \"status\": \"ok\"\n    },\n    \"google_workspace\": {\n      \"method\": \"gws_gmail_users_getProfile\",\n      \"rc\": 2,\n      \"status\": \"failed\"\n    },\n    \"klaviyo\": {\n      \"method\": \"klaviyo_get_flows_stdout\",\n      \"rc\": 124,\n      \"status\": \"failed\"\n    },\n    \"notion\": {\n      \"method\": \"ntn_whoami\",\n      \"rc\": 0,\n      \"status\": \"ok\"\n    },\n    \"shopify_lk\": {\n      \"method\": \"shopify_store_execute\",\n      \"rc\": 0,\n      \"status\": \"ok\"\n    },\n    \"supabase\": {\n      \"project_count\": null,\n      \"rc\": 0,\n      \"status\": \"ok\"\n    }\n  },\n  \"values_printed\": false\n}\n",
+      "stderr": ""
+    }
+  ],
+  "secret_scan": {
+    "files_checked": 2,
+    "real_secret_findings": [],
+    "values_printed": false
+  },
+  "external_writes": 0,
+  "values_printed": false
+}

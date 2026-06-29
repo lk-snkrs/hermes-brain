@@ -1,0 +1,136 @@
+{
+  "timestamp_utc": "2026-06-28T17:05:22Z",
+  "rows": [
+    {
+      "pid": 1,
+      "home": "/opt/data",
+      "cmd": "/opt/data/hermes-0.15.1-venv/bin/python /opt/data/hermes-0.15.1-venv/bin/hermes gateway run ",
+      "api_enabled": true,
+      "webhook_enabled": true,
+      "api_key_present": true,
+      "webhook_secret_present": true,
+      "telegram_token_present": true
+    },
+    {
+      "pid": 136539,
+      "home": "/opt/data/profiles/lc-claude-cli",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise ",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true
+    },
+    {
+      "pid": 135633,
+      "home": "/opt/data/profiles/lk-collection-optimizer",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise ",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true
+    },
+    {
+      "pid": 136335,
+      "home": "/opt/data/profiles/lk-content",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise ",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true
+    },
+    {
+      "pid": 136126,
+      "home": "/opt/data/profiles/lk-finance",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise ",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true
+    },
+    {
+      "pid": 134603,
+      "home": "/opt/data/profiles/lk-growth",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise ",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true
+    },
+    {
+      "pid": 135009,
+      "home": "/opt/data/profiles/lk-ops",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise ",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true
+    },
+    {
+      "pid": 135224,
+      "home": "/opt/data/profiles/lk-shopify",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise ",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true
+    },
+    {
+      "pid": 135891,
+      "home": "/opt/data/profiles/lk-stock",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise ",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true
+    },
+    {
+      "pid": 135398,
+      "home": "/opt/data/profiles/lk-trends",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise ",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true
+    },
+    {
+      "pid": 134515,
+      "home": "/opt/data/profiles/mordomo",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise ",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true
+    },
+    {
+      "pid": 134669,
+      "home": "/opt/data/profiles/spiti",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise ",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true
+    },
+    {
+      "pid": 134815,
+      "home": "/opt/data/profiles/spiti-atendimento",
+      "cmd": "/opt/hermes/.venv/bin/python3 /opt/hermes/.venv/bin/hermes gateway run --no-supervise ",
+      "api_enabled": false,
+      "webhook_enabled": false,
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "telegram_token_present": true
+    }
+  ],
+  "values_printed": false
+}

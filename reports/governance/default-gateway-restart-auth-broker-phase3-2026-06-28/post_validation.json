@@ -1,0 +1,155 @@
+{
+  "timestamp_utc": "2026-06-28T15:28:57Z",
+  "gateways": [
+    {
+      "pid": "1",
+      "home": "/opt/data",
+      "api_enabled": "true",
+      "webhook_enabled": "true",
+      "api_key_present": true,
+      "webhook_secret_present": true,
+      "token_present": true
+    },
+    {
+      "pid": "206039",
+      "home": "/opt/data/profiles/mordomo",
+      "api_enabled": "false",
+      "webhook_enabled": "false",
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "token_present": true
+    },
+    {
+      "pid": "206064",
+      "home": "/opt/data/profiles/lk-growth",
+      "api_enabled": "false",
+      "webhook_enabled": "false",
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "token_present": true
+    },
+    {
+      "pid": "206087",
+      "home": "/opt/data/profiles/spiti",
+      "api_enabled": "false",
+      "webhook_enabled": "false",
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "token_present": true
+    },
+    {
+      "pid": "206179",
+      "home": "/opt/data/profiles/spiti-atendimento",
+      "api_enabled": "false",
+      "webhook_enabled": "false",
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "token_present": true
+    },
+    {
+      "pid": "206326",
+      "home": "/opt/data/profiles/lk-ops",
+      "api_enabled": "false",
+      "webhook_enabled": "false",
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "token_present": true
+    },
+    {
+      "pid": "206526",
+      "home": "/opt/data/profiles/lk-shopify",
+      "api_enabled": "false",
+      "webhook_enabled": "false",
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "token_present": true
+    },
+    {
+      "pid": "206685",
+      "home": "/opt/data/profiles/lk-trends",
+      "api_enabled": "false",
+      "webhook_enabled": "false",
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "token_present": true
+    },
+    {
+      "pid": "206833",
+      "home": "/opt/data/profiles/lk-collection-optimizer",
+      "api_enabled": "false",
+      "webhook_enabled": "false",
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "token_present": true
+    },
+    {
+      "pid": "206998",
+      "home": "/opt/data/profiles/lk-stock",
+      "api_enabled": "false",
+      "webhook_enabled": "false",
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "token_present": true
+    },
+    {
+      "pid": "207239",
+      "home": "/opt/data/profiles/lk-finance",
+      "api_enabled": "false",
+      "webhook_enabled": "false",
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "token_present": true
+    },
+    {
+      "pid": "207421",
+      "home": "/opt/data/profiles/lk-content",
+      "api_enabled": "false",
+      "webhook_enabled": "false",
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "token_present": true
+    },
+    {
+      "pid": "207462",
+      "home": "/opt/data/profiles/lc-claude-cli",
+      "api_enabled": "false",
+      "webhook_enabled": "false",
+      "api_key_present": false,
+      "webhook_secret_present": false,
+      "token_present": true
+    }
+  ],
+  "values_printed": false,
+  "checks": {
+    "health": {
+      "cmd": "bash -lc curl -fsS http://127.0.0.1:8642/health || true",
+      "rc": 0,
+      "stdout_tail": "{\"status\": \"ok\", \"platform\": \"hermes-agent\", \"version\": \"0.17.0\"}",
+      "stderr_tail": ""
+    },
+    "gateway_status": {
+      "cmd": "/opt/hermes/.venv/bin/hermes gateway status",
+      "rc": 0,
+      "stdout_tail": "\u2713 Gateway is running (PID: 1, 206039, 206064, 206087, 206179, 206326, 206526, 206685, 206833, 206998, 207239, 207421, 207462)\n  (Running manually, not as a system service)\n\nRecent gateway health:\n  \u23f3 Gateway draining for shutdown (1 active agent(s))\n\nTo install as a service:\n  hermes gateway install\n  sudo hermes gateway install --system\n\nOther profiles:\n  \u2713 lc-claude-cli    \u2014 PID 207462\n  \u2713 lk-collection-optimizer \u2014 PID 206833\n  \u2713 lk-content       \u2014 PID 207421\n  \u2713 lk-finance       \u2014 PID 207239\n  \u2713 lk-growth        \u2014 PID 206064\n  \u2713 lk-ops           \u2014 PID 206326\n  \u2713 lk-shopify       \u2014 PID 206526\n  \u2713 lk-stock         \u2014 PID 206998\n  \u2713 lk-trends        \u2014 PID 206685\n  \u2713 mordomo          \u2014 PID 206039\n  \u2713 spiti            \u2014 PID 206087\n  \u2713 spiti-atendimento \u2014 PID 206179\n",
+      "stderr_tail": ""
+    },
+    "cron_status": {
+      "cmd": "/opt/hermes/.venv/bin/hermes cron status",
+      "rc": 0,
+      "stdout_tail": "\n\u2713 Gateway is running \u2014 cron jobs will fire automatically\n  PID: 1, 206039, 206064, 206087, 206179, 206326, 206526, 206685, 206833, 206998, 207239, 207421, 207462\n\n  40 active job(s)\n  Next run: 2026-06-28T15:28:18.034447+00:00\n\n",
+      "stderr_tail": ""
+    },
+    "watchdog": {
+      "cmd": "python3 /opt/data/scripts/hermes_all_gateway_watchdog.py",
+      "rc": 0,
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    "shopify_smoke": {
+      "cmd": "/opt/data/home/.local/bin/hermes-cli-integrations smoke shopify_lk",
+      "rc": 0,
+      "stdout_tail": "{\n  \"results\": {\n    \"shopify_lk\": {\n      \"method\": \"shopify_store_execute\",\n      \"rc\": 0,\n      \"status\": \"ok\"\n    }\n  },\n  \"values_printed\": false\n}\n",
+      "stderr_tail": ""
+    }
+  }
+}
