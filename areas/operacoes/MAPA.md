@@ -91,6 +91,17 @@ Todo cron real deve ter rotina `.md` correspondente. Rotina documentada não pro
 - `rotinas/semantic-recovery-session-search.md` — recuperar sessões antigas e promover achados duráveis ao Brain.
 - `rotinas/runtime-profile-channel-inventory-2026-05-19.md` — inventário canônico de profiles, bots, canais, cadência, status documental, silent contract e kill criteria.
 
+
+## Power-user / Workcell / UX executivo
+
+- `rotinas/hermes-task-os-minimalista-20260629.md` — Onda 0 aprovada por Lucas: unidade mínima de trabalho com owner/status/risco/evidência/next action, sem cron/runtime mutation.
+- `rotinas/hermes-workcell-v1-20260629.md` — Workcell v1 para tarefas materiais: planner → executor → QA/reviewer → receipt, começando por piloto local/documental.
+- `rotinas/telegram-executive-ux-v2-20260629.md` — contrato de Telegram executivo v2: decisão/resultado primeiro, sem wrapper/log/JSON/job_id desnecessário.
+- `rotinas/hermes-ops-bridge-v1-readonly-spec-20260629.md` — especificação read-only/local do Ops Bridge v1; não implementa CLI/runtime/dashboard.
+- `../../reports/governance/skill-surface-diet-inventario-inicial-2026-06-29.md` — inventário inicial read-only de skills/toolsets por profile; nenhuma skill/toolset alterado.
+- `../../reports/governance/hermes-power-user-onda0-onda1-pilot-2026-06-29.md` — evidência do piloto real Workcell Onda 1 em escopo local/documental.
+- `../../reports/governance/hermes-power-user-onda0-onda1-independent-qa-2026-06-29.md` — QA independente do piloto, achados e correções.
+
 ## Templates operacionais
 
 - `templates/matriz-decisao-bruno-hermes.md` — aplicar/adaptar/deferir/rejeitar conceitos externos.

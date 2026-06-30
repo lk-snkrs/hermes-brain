@@ -1,0 +1,55 @@
+{
+  "command": "qa",
+  "read_only": true,
+  "generated_at_utc": "2026-06-29T21:24:25.675472+00:00",
+  "qa_type": "all",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "profiles_config_v30",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "gateway_count_nonzero",
+      "ok": true,
+      "detail": 13
+    },
+    {
+      "name": "enabled_crons_ok",
+      "ok": true,
+      "detail": {
+        "jobs": 108,
+        "enabled": 90,
+        "paused": 18,
+        "non_ok_enabled": 0
+      }
+    },
+    {
+      "name": "brain_health_ok",
+      "ok": true,
+      "detail": "secrets: FAIL=0 WARN=0\nlinks: FAIL=0 WARN=0\nrequired_files: FAIL=0 WARN=0\nagent_files: FAIL=0 WARN=0\narea_maps: FAIL=0 WARN=0\nroutines_index: FAIL=0 WARN=0\nskill_references: FAIL=0 WARN=0\n\nAll checks passed.\n"
+    },
+    {
+      "name": "bridge_commands_readonly",
+      "ok": true,
+      "detail": [
+        "cron-inventory",
+        "daily-delta",
+        "health",
+        "host-audit",
+        "logs",
+        "maintenance-ledger",
+        "maintenance-score",
+        "packet",
+        "profile-map",
+        "qa",
+        "receipt",
+        "smoke",
+        "status",
+        "telegram-noise"
+      ]
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,19 @@
+{
+  "command": "health",
+  "read_only": true,
+  "generated_at_utc": "2026-06-29T21:24:17.538527+00:00",
+  "brain_health": {
+    "args": [
+      "python3",
+      "scripts/brain_health_check.py"
+    ],
+    "returncode": 0,
+    "stdout": "secrets: FAIL=0 WARN=0\nlinks: FAIL=0 WARN=0\nrequired_files: FAIL=0 WARN=0\nagent_files: FAIL=0 WARN=0\narea_maps: FAIL=0 WARN=0\nroutines_index: FAIL=0 WARN=0\nskill_references: FAIL=0 WARN=0\n\nAll checks passed.\n",
+    "stderr": ""
+  },
+  "skill_surface_diet_latest": {
+    "issues": 0,
+    "warnings": 8,
+    "generated_at_utc": "2026-06-29T19:10:41.238833+00:00"
+  }
+}

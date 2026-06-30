@@ -1,0 +1,351 @@
+{
+  "generated_at": "2026-06-29T10:33:04Z",
+  "profile": "lk-collection-optimizer",
+  "core_lkgoc_minimo": [
+    {
+      "skill": "lk-superpowers-collection-optimizer",
+      "usage_view": [
+        5,
+        4
+      ],
+      "why": "Identidade/rotina principal do profile LKGOC."
+    },
+    {
+      "skill": "lk-collection-patterns",
+      "usage_view": [
+        119,
+        119
+      ],
+      "why": "Padrões de collection page e Guia LK; alto uso histórico."
+    },
+    {
+      "skill": "lk-shopify-readonly",
+      "usage_view": [
+        214,
+        207
+      ],
+      "why": "Consulta segura/read-only Shopify quando necessária para coleção/catalog evidence."
+    },
+    {
+      "skill": "multiempresa-routing-lucas",
+      "usage_view": [
+        231,
+        127
+      ],
+      "why": "Evita contaminação Zipper/SPITI/Growth e preserva fronteiras multiempresa."
+    },
+    {
+      "skill": "verification-before-completion",
+      "usage_view": [
+        75,
+        71
+      ],
+      "why": "Gate antes de declarar LKGOC concluído/passando."
+    }
+  ],
+  "lkgoc_task_lenses": {
+    "SEO/GEO de collection, Guia LK, FAQ/schema, AI Visibility": [
+      {
+        "skill": "seo-page",
+        "usage_view": [
+          11,
+          7
+        ],
+        "when": "Aplicar quando a tarefa envolver title/meta/H1/canonical/schema/on-page de coleção."
+      },
+      {
+        "skill": "seo-content",
+        "usage_view": [
+          14,
+          10
+        ],
+        "when": "Aplicar para estrutura, E-E-A-T, helpfulness, entidade LK e legibilidade IA."
+      },
+      {
+        "skill": "seo-ecommerce",
+        "usage_view": [
+          18,
+          11
+        ],
+        "when": "Aplicar para collection/PDP/listing e Product/Collection/ItemList/FAQPage."
+      },
+      {
+        "skill": "seo-geo",
+        "usage_view": [
+          38,
+          35
+        ],
+        "when": "Aplicar para AI Overview/AEO/citabilidade e FAQ extractable."
+      },
+      {
+        "skill": "seo-schema",
+        "usage_view": [
+          6,
+          6
+        ],
+        "when": "Aplicar para JSON-LD/FAQPage/ItemList/schema validation."
+      },
+      {
+        "skill": "seo-dataforseo",
+        "usage_view": [
+          8,
+          8
+        ],
+        "when": "Usar somente quando SERP/PAA/concorrentes live forem necessários."
+      }
+    ],
+    "Conteúdo/Guia LK sob demanda": [
+      {
+        "skill": "blog-brief",
+        "usage_view": [
+          2,
+          2
+        ],
+        "when": "Brief/estrutura quando a tarefa virar Guia LK/source page."
+      },
+      {
+        "skill": "blog-write",
+        "usage_view": [
+          3,
+          3
+        ],
+        "when": "Redação longa somente quando pedido/escopo exigir."
+      },
+      {
+        "skill": "blog-rewrite",
+        "usage_view": [
+          1,
+          1
+        ],
+        "when": "Melhorar texto existente."
+      },
+      {
+        "skill": "blog",
+        "usage_view": [
+          4,
+          4
+        ],
+        "when": "Umbrella blog apenas para tarefa editorial ampla."
+      },
+      {
+        "skill": "blog-schema",
+        "usage_view": [
+          0,
+          0
+        ],
+        "when": "Schema de conteúdo quando não coberto por seo-schema."
+      },
+      {
+        "skill": "blog-factcheck",
+        "usage_view": [
+          0,
+          0
+        ],
+        "when": "Checagem de claims/citações."
+      },
+      {
+        "skill": "blog-image",
+        "usage_view": [
+          1,
+          1
+        ],
+        "when": "Brief de assets SEO/OG/hero quando a tarefa pedir; produção/uso real de imagem depende de fonte aprovada/approval."
+      }
+    ],
+    "Governança/execução local sob demanda": [
+      {
+        "skill": "brainstorming",
+        "usage_view": [
+          7,
+          7
+        ],
+        "when": "Antes de LKGOC não-trivial."
+      },
+      {
+        "skill": "executing-plans",
+        "usage_view": [
+          12,
+          12
+        ],
+        "when": "Quando houver plano de execução."
+      },
+      {
+        "skill": "hermes-brain-governance",
+        "usage_view": [
+          0,
+          0
+        ],
+        "when": "Quando mexer em Brain docs/receipts/governança."
+      },
+      {
+        "skill": "hermes-agent",
+        "usage_view": [
+          1,
+          1
+        ],
+        "when": "Somente para configurar/troubleshoot Hermes."
+      },
+      {
+        "skill": "honcho-memory-operations",
+        "usage_view": [
+          0,
+          0
+        ],
+        "when": "Somente ao investigar/configurar/avaliar Honcho."
+      },
+      {
+        "skill": "doppler-secrets-operations",
+        "usage_view": [
+          363,
+          272
+        ],
+        "when": "Somente se houver credencial/integração/secret hygiene."
+      },
+      {
+        "skill": "hermes-central-integration-auth-broker",
+        "usage_view": [
+          0,
+          0
+        ],
+        "when": "Somente quando integração CLI/MCP estiver no escopo."
+      }
+    ],
+    "Handoff obrigatório / não execução LKGOC": [
+      {
+        "skill": "lk-shopify-product-upload",
+        "usage_view": [
+          16,
+          16
+        ],
+        "when": "Quando surgir produto novo/listagem: handoff para lk-shopify, não executar no LKGOC."
+      },
+      {
+        "skill": "shopify",
+        "usage_view": [
+          0,
+          0
+        ],
+        "when": "Política/consulta Admin read-only via CLI oficial quando necessário; mutation segue bloqueada."
+      },
+      {
+        "skill": "lk-growth-operations",
+        "usage_view": [
+          132,
+          132
+        ],
+        "when": "Growth amplo/GA4/GSC/GMC/paid/influencer/PageSpeed fora de collection: handoff."
+      },
+      {
+        "skill": "lk-seo-weekly-improvement",
+        "usage_view": [
+          257,
+          246
+        ],
+        "when": "Consulta/handoff Growth para SEO/CRO/GEO amplo, não core LKGOC."
+      },
+      {
+        "skill": "lk-operational-intelligence",
+        "usage_view": [
+          292,
+          288
+        ],
+        "when": "Dados operacionais LK sob demanda; estoque/disponibilidade continua handoff para lk-stock."
+      }
+    ]
+  },
+  "out_scope": [
+    {
+      "skill": "pytorch-fsdp",
+      "why": "ML training; 160k bytes; sem relação direta com LKGOC.",
+      "usage_view": [
+        0,
+        0
+      ]
+    },
+    {
+      "skill": "research-paper-writing",
+      "why": "Paper acadêmico; gigante; sem relação direta com coleção LK.",
+      "usage_view": [
+        0,
+        0
+      ]
+    },
+    {
+      "skill": "bruno-openclaw-hermes-brain-adaptation",
+      "why": "Governança/Brain ampla; sob demanda, não superfície primária LKGOC.",
+      "usage_view": [
+        88,
+        91
+      ]
+    },
+    {
+      "skill": "mission-control-development",
+      "why": "Produto Mission Control; fora de collection optimizer.",
+      "usage_view": [
+        0,
+        0
+      ]
+    },
+    {
+      "skill": "claude-code",
+      "why": "Coding agent; só se houver tarefa de código aprovada.",
+      "usage_view": [
+        0,
+        0
+      ]
+    },
+    {
+      "skill": "airtable",
+      "why": "Produtividade externa; não LKGOC por padrão.",
+      "usage_view": [
+        0,
+        0
+      ]
+    },
+    {
+      "skill": "apple-notes",
+      "why": "Pessoal/Apple; fora de LKGOC.",
+      "usage_view": [
+        0,
+        0
+      ]
+    },
+    {
+      "skill": "ascii-art",
+      "why": "Criativo irrelevante para otimização de coleção.",
+      "usage_view": [
+        0,
+        0
+      ]
+    },
+    {
+      "skill": "audiocraft-audio-generation",
+      "why": "Áudio/ML; fora de LKGOC.",
+      "usage_view": [
+        0,
+        0
+      ]
+    },
+    {
+      "skill": "pokemon-player",
+      "why": "Gaming; fora de LKGOC.",
+      "usage_view": [
+        0,
+        0
+      ]
+    }
+  ],
+  "qa_patches_applied": [
+    "tiers not always-on",
+    "core reduced",
+    "SEO/blog conditional",
+    "guardrails moved to on-demand",
+    "Shopify/upload moved to handoff/on-demand"
+  ],
+  "non_actions": [
+    "no skill edits",
+    "no config/toolset/profile changes",
+    "no runtime/cron/gateway changes",
+    "no external writes"
+  ]
+}

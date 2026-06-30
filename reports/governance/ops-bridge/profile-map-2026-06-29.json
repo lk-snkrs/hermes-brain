@@ -1,0 +1,283 @@
+{
+  "command": "profile-map",
+  "read_only": true,
+  "generated_at_utc": "2026-06-29T21:24:10.577979+00:00",
+  "profiles": [
+    {
+      "profile": "brain-process",
+      "home": "/opt/data/profiles/brain-process",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 153,
+      "running_gateways": [],
+      "gateway_state": {}
+    },
+    {
+      "profile": "hermes-ops-readonly",
+      "home": "/opt/data/profiles/hermes-ops-readonly",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 150,
+      "running_gateways": [],
+      "gateway_state": {}
+    },
+    {
+      "profile": "lc-claude-cli",
+      "home": "/opt/data/profiles/lc-claude-cli",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 0,
+      "running_gateways": [
+        {
+          "pid": 77068,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "pid": 77068,
+        "telegram": "connected"
+      }
+    },
+    {
+      "profile": "lk-analyst-readonly",
+      "home": "/opt/data/profiles/lk-analyst-readonly",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 142,
+      "running_gateways": [],
+      "gateway_state": {}
+    },
+    {
+      "profile": "lk-collection-optimizer",
+      "home": "/opt/data/profiles/lk-collection-optimizer",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 208,
+      "running_gateways": [
+        {
+          "pid": 203750,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": false
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "pid": 203750,
+        "telegram": "connected"
+      }
+    },
+    {
+      "profile": "lk-content",
+      "home": "/opt/data/profiles/lk-content",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 1,
+      "running_gateways": [
+        {
+          "pid": 75427,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": false
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "pid": 75427,
+        "telegram": "connected"
+      }
+    },
+    {
+      "profile": "lk-content-reviewer",
+      "home": "/opt/data/profiles/lk-content-reviewer",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 146,
+      "running_gateways": [],
+      "gateway_state": {}
+    },
+    {
+      "profile": "lk-finance",
+      "home": "/opt/data/profiles/lk-finance",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 3,
+      "running_gateways": [
+        {
+          "pid": 75795,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "pid": 75795,
+        "telegram": "connected"
+      }
+    },
+    {
+      "profile": "lk-growth",
+      "home": "/opt/data/profiles/lk-growth",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 100,
+      "running_gateways": [
+        {
+          "pid": 48543,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": false
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "pid": 48543,
+        "telegram": "connected"
+      }
+    },
+    {
+      "profile": "lk-ops",
+      "home": "/opt/data/profiles/lk-ops",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 114,
+      "running_gateways": [
+        {
+          "pid": 46223,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": false
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "pid": 46223,
+        "telegram": "connected"
+      }
+    },
+    {
+      "profile": "lk-shopify",
+      "home": "/opt/data/profiles/lk-shopify",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 154,
+      "running_gateways": [
+        {
+          "pid": 535,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "pid": 535,
+        "telegram": "connected"
+      }
+    },
+    {
+      "profile": "lk-stock",
+      "home": "/opt/data/profiles/lk-stock",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 175,
+      "running_gateways": [
+        {
+          "pid": 1029,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "pid": 1029,
+        "telegram": "connected"
+      }
+    },
+    {
+      "profile": "lk-trends",
+      "home": "/opt/data/profiles/lk-trends",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 208,
+      "running_gateways": [
+        {
+          "pid": 602,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "pid": 602,
+        "telegram": "connected"
+      }
+    },
+    {
+      "profile": "mordomo",
+      "home": "/opt/data/profiles/mordomo",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 167,
+      "running_gateways": [
+        {
+          "pid": 201,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "pid": 201,
+        "telegram": "connected"
+      }
+    },
+    {
+      "profile": "spiti",
+      "home": "/opt/data/profiles/spiti",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 100,
+      "running_gateways": [
+        {
+          "pid": 249,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "pid": 249,
+        "telegram": "connected"
+      }
+    },
+    {
+      "profile": "spiti-atendimento",
+      "home": "/opt/data/profiles/spiti-atendimento",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 1,
+      "running_gateways": [
+        {
+          "pid": 76408,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "pid": 76408,
+        "telegram": "connected"
+      }
+    }
+  ]
+}

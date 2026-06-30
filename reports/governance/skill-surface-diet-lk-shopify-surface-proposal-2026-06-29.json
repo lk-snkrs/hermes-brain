@@ -1,0 +1,523 @@
+{
+  "generated_at": "2026-06-29T11:39:39Z",
+  "profile": "lk-shopify",
+  "mode": "proposal_read_only_no_config_runtime_change",
+  "total_skill_files": 234,
+  "unique_skills": 230,
+  "core_shopify_minimo": [
+    "lk-shopify-readonly",
+    "lk-shopify-product-upload",
+    "lk-shopify-theme-cro",
+    "lk-shopify-cart-drawer",
+    "lk-shopify-variant-thumbnails",
+    "multiempresa-routing-lucas",
+    "verification-before-completion",
+    "superpowers"
+  ],
+  "protected_on_demand": [
+    "honcho-memory-operations",
+    "doppler-secrets-operations",
+    "hermes-central-integration-auth-broker",
+    "hermes-agent",
+    "brainstorming",
+    "executing-plans",
+    "github-operations",
+    "doppler-github-pr-safe",
+    "codebase-inspection",
+    "dogfood",
+    "systematic-debugging",
+    "using-git-worktrees",
+    "finishing-a-development-branch",
+    "receiving-code-review",
+    "requesting-code-review",
+    "test-driven-development",
+    "lk-operational-intelligence",
+    "lk-growth-operations",
+    "seo-content",
+    "seo-ecommerce",
+    "seo-page",
+    "seo-google",
+    "google-workspace",
+    "blog-brief",
+    "blog-write",
+    "blog-rewrite",
+    "last30days",
+    "xurl",
+    "youtube-content",
+    "mcp-connections",
+    "native-mcp",
+    "webhook-subscriptions"
+  ],
+  "missing_requested": [],
+  "dry_run": {
+    "enabled_count": 40,
+    "disabled_count": 154,
+    "enabled": [
+      "lk-shopify-readonly",
+      "lk-shopify-product-upload",
+      "lk-shopify-theme-cro",
+      "lk-shopify-cart-drawer",
+      "lk-shopify-variant-thumbnails",
+      "multiempresa-routing-lucas",
+      "verification-before-completion",
+      "superpowers",
+      "honcho-memory-operations",
+      "doppler-secrets-operations",
+      "hermes-central-integration-auth-broker",
+      "hermes-agent",
+      "brainstorming",
+      "executing-plans",
+      "github-operations",
+      "doppler-github-pr-safe",
+      "codebase-inspection",
+      "dogfood",
+      "systematic-debugging",
+      "using-git-worktrees",
+      "finishing-a-development-branch",
+      "receiving-code-review",
+      "requesting-code-review",
+      "test-driven-development",
+      "lk-operational-intelligence",
+      "lk-growth-operations",
+      "seo-content",
+      "seo-ecommerce",
+      "seo-page",
+      "seo-google",
+      "google-workspace",
+      "blog-brief",
+      "blog-write",
+      "blog-rewrite",
+      "last30days",
+      "xurl",
+      "youtube-content",
+      "mcp-connections",
+      "native-mcp",
+      "webhook-subscriptions"
+    ],
+    "disabled": [
+      "ads",
+      "ads-amazon",
+      "ads-apple",
+      "ads-attribution",
+      "ads-audit",
+      "ads-budget",
+      "ads-competitor",
+      "ads-create",
+      "ads-creative",
+      "ads-dna",
+      "ads-generate",
+      "ads-google",
+      "ads-landing",
+      "ads-linkedin",
+      "ads-math",
+      "ads-meta",
+      "ads-microsoft",
+      "ads-photoshoot",
+      "ads-plan",
+      "ads-server-side-tracking",
+      "ads-test",
+      "ads-tiktok",
+      "ads-youtube",
+      "ai-audio-music-production",
+      "airtable",
+      "apple-ecosystem-automation",
+      "arxiv",
+      "ascii-media",
+      "axolotl",
+      "baoyu-visual-storytelling",
+      "blog",
+      "blog-analyze",
+      "blog-audio",
+      "blog-audit",
+      "blog-calendar",
+      "blog-cannibalization",
+      "blog-chart",
+      "blog-cluster",
+      "blog-factcheck",
+      "blog-flow",
+      "blog-geo",
+      "blog-google",
+      "blog-image",
+      "blog-locale-audit",
+      "blog-localize",
+      "blog-multilingual",
+      "blog-notebooklm",
+      "blog-outline",
+      "blog-persona",
+      "blog-repurpose",
+      "blog-schema",
+      "blog-seo-check",
+      "blog-strategy",
+      "blog-taxonomy",
+      "blog-translate",
+      "blogwatcher",
+      "browser-design-artifacts",
+      "bruno-openclaw-hermes-brain-adaptation",
+      "clip",
+      "coding-agent-delegation",
+      "comfyui",
+      "dispatching-parallel-agents",
+      "dspy",
+      "evaluating-llms-harness",
+      "excalidraw",
+      "find-nearby",
+      "fine-tuning-with-trl",
+      "gguf-quantization",
+      "gif-search",
+      "godmode",
+      "grpo-rl-training",
+      "guidance",
+      "hermes-council",
+      "himalaya",
+      "hostinger-vps-api-ssh-access",
+      "huggingface-hub",
+      "humanizer",
+      "ideation",
+      "impeccable",
+      "jupyter-live-kernel",
+      "kanban-worker",
+      "kanban-workflows",
+      "linear",
+      "lk-seo-weekly-improvement",
+      "llama-cpp",
+      "llm-wiki",
+      "lucas-chief-of-staff",
+      "lucas-hermes-continuous-improvement",
+      "manim-video",
+      "maps",
+      "mcporter",
+      "metricool-api-analytics",
+      "minecraft-modpack-server",
+      "mission-control-development",
+      "modal-serverless-gpu",
+      "n8n-workflow-automation",
+      "nano-pdf",
+      "notion",
+      "obliteratus",
+      "obsidian",
+      "ocr-and-documents",
+      "openhue",
+      "outlines",
+      "p5js",
+      "peft-fine-tuning",
+      "pixel-art",
+      "playwright-cli",
+      "playwright-trace",
+      "pokemon-player",
+      "polymarket",
+      "powerpoint",
+      "pytorch-fsdp",
+      "research-paper-writing",
+      "segment-anything-model",
+      "seo",
+      "seo-audit",
+      "seo-backlinks",
+      "seo-cluster",
+      "seo-competitor-pages",
+      "seo-content-brief",
+      "seo-dataforseo",
+      "seo-drift",
+      "seo-firecrawl",
+      "seo-flow",
+      "seo-geo",
+      "seo-hreflang",
+      "seo-image-gen",
+      "seo-images",
+      "seo-local",
+      "seo-maps",
+      "seo-plan",
+      "seo-programmatic",
+      "seo-schema",
+      "seo-sitemap",
+      "seo-sxo",
+      "seo-technical",
+      "serving-llms-vllm",
+      "spike",
+      "spiti-hub-pr-workflow",
+      "spotify",
+      "stable-diffusion-image-generation",
+      "subagent-driven-development",
+      "teams-meeting-pipeline",
+      "telegram-hermes-docker-troubleshooting",
+      "touchdesigner-mcp",
+      "unsloth",
+      "vercel-deployments",
+      "wacli-whatsapp-cli",
+      "weights-and-biases",
+      "whisper",
+      "writing-plans",
+      "writing-skills",
+      "xitter",
+      "yuanbao"
+    ]
+  },
+  "large_skills_top20": [
+    {
+      "name": "pytorch-fsdp",
+      "path": "/opt/data/profiles/lk-shopify/skills/mlops/training/pytorch-fsdp/SKILL.md",
+      "bytes": 160170,
+      "desc": "Expert guidance for Fully Sharded Data Parallel training with PyTorch FSDP - parameter sharding, mixed precision, CPU offloading, FSDP2"
+    },
+    {
+      "name": "research-paper-writing",
+      "path": "/opt/data/profiles/lk-shopify/skills/research/research-paper-writing/SKILL.md",
+      "bytes": 103375,
+      "desc": "Write ML papers for NeurIPS/ICML/ICLR: design→submit."
+    },
+    {
+      "name": "lk-operational-intelligence",
+      "path": "/opt/data/profiles/lk-shopify/skills/productivity/lk-operational-intelligence/SKILL.md",
+      "bytes": 101044,
+      "desc": "Use for LK Sneakers operational intelligence work: read-only Data Spine, CRM/RFM/recompra, stock/sourcing decision routers, market-trend intake, and approval-gated previews across Shopify, Tiny, Supabase, GA4, Meta, Metricool, Klaviyo, WhatsApp and external market signals."
+    },
+    {
+      "name": "lk-seo-weekly-improvement",
+      "path": "/opt/data/profiles/lk-shopify/skills/productivity/lk-seo-weekly-improvement/SKILL.md",
+      "bytes": 98764,
+      "desc": "Use for LK Sneakers weekly SEO/CRO/GEO improvement loops: Claude SEO audits, GSC/Merchant/PDP prioritization, AI Search/FAQ readiness, Shopify collection/source-page QA, schema/mobile post-publish validation, HTML payload/app-embed diagnostics, Shopify-template payload re-audits, dev-theme payload previews, LK Variante native app-replacement pilots, and read-only recommendations with approval before writes. Key refs include weekly-audit-report-validation-20260601.md, references/post-publish-schema-mobile-audit-20260601.md, references/html-payload-diagnostic-20260601.md, references/p1-payload-dev-preview-judge-footer-20260601.md, references/shopify-template-payload-collection-p1-20260601.md, references/lk-variante-dev-preview-mvp.md, and references/lk-variante-curation-preview-production.md, and references/seo-package-a-low-risk-batch-20260618.md, plus references/seo-package-b-swym-preview-performance-20260618.md for SWYM/Wishlist Plus performance preview and app-embed QA."
+    },
+    {
+      "name": "lk-shopify-readonly",
+      "path": "/opt/data/profiles/lk-shopify/skills/productivity/lk-shopify-readonly/SKILL.md",
+      "bytes": 97647,
+      "desc": "Use when Lucas asks for LK Sneakers Shopify data, order/customer/product/catalog checks, or safe read-only Shopify analysis. Do not use for LKGOC/collection optimization ownership; route those to `[LK] Otimização de Coleções` unless it hands back a scoped Shopify execution packet."
+    },
+    {
+      "name": "bruno-openclaw-hermes-brain-adaptation",
+      "path": "/opt/data/profiles/lk-shopify/skills/productivity/bruno-openclaw-hermes-brain-adaptation/SKILL.md",
+      "bytes": 88938,
+      "desc": "Adapt Bruno/OpenClaw “Cérebro empresarial” course structure into Lucas Cimino's Hermes Brain without disrupting the existing production brain."
+    },
+    {
+      "name": "lk-growth-operations",
+      "path": "/opt/data/profiles/lk-shopify/skills/productivity/lk-growth-operations/SKILL.md",
+      "bytes": 71338,
+      "desc": "Use when operating LK Sneakers Growth work across Shopify theme/CRO, Klaviyo/newsletters, WhatsApp CRM automations, and operational report delivery with preview-first evidence and approval-gated external writes."
+    },
+    {
+      "name": "lk-shopify-variant-thumbnails",
+      "path": "/opt/data/profiles/lk-shopify/skills/productivity/lk-shopify-variant-thumbnails/SKILL.md",
+      "bytes": 61582,
+      "desc": "Safely expand or fix LK Sneakers PDP variant/related-product thumbnail groups in Shopify themes using preview, approval, production merge, readback, rollback, and multi-round public QA."
+    },
+    {
+      "name": "mission-control-development",
+      "path": "/opt/data/profiles/lk-shopify/skills/software-development/mission-control-development/SKILL.md",
+      "bytes": 55544,
+      "desc": "Build and evolve Lucas Cimino's Mission Control app with Hermes-native guardrails, preview-first backend APIs, TDD, safe deploys, and production marker verification."
+    },
+    {
+      "name": "hermes-agent",
+      "path": "/opt/data/profiles/lk-shopify/skills/autonomous-ai-agents/hermes-agent/SKILL.md",
+      "bytes": 53532,
+      "desc": "Configure, extend, or contribute to Hermes Agent."
+    },
+    {
+      "name": "claude-code",
+      "path": "/opt/data/profiles/lk-shopify/skills/.archive/autonomous-ai-agents/claude-code/SKILL.md",
+      "bytes": 36852,
+      "desc": "Delegate coding to Claude Code CLI (features, PRs)."
+    },
+    {
+      "name": "lk-shopify-theme-cro",
+      "path": "/opt/data/profiles/lk-shopify/skills/productivity/lk-shopify-theme-cro/SKILL.md",
+      "bytes": 36478,
+      "desc": "Use when changing LK Sneakers Shopify theme UI/CRO surfaces such as PDP trust bars, PDP conversion modules, cart/minicart layout, reassurance grids, sticky CTAs, spacing, mobile viewport fixes, and low-risk Liquid/CSS/JS theme adjustments."
+    },
+    {
+      "name": "lk-shopify-cart-drawer",
+      "path": "/opt/data/profiles/lk-shopify/skills/productivity/lk-shopify-cart-drawer/SKILL.md",
+      "bytes": 35221,
+      "desc": "Safely design, implement, QA, refine, publish, and rollback LK Sneakers Shopify cart drawer improvements with CRO/SXO guardrails, Dev preview first, Production only after explicit approval. Do not use for LKGOC/collection optimization ownership; route LKGOC to `[LK] Otimização de Coleções`."
+    },
+    {
+      "name": "lucas-hermes-continuous-improvement",
+      "path": "/opt/data/profiles/lk-shopify/skills/devops/lucas-hermes-continuous-improvement/SKILL.md",
+      "bytes": 31737,
+      "desc": "Daily 02:00 BRT protocol for safely tracking Hermes releases and implementing low-risk LK/Hermes Brain improvements."
+    },
+    {
+      "name": "humanizer",
+      "path": "/opt/data/profiles/lk-shopify/skills/creative/humanizer/SKILL.md",
+      "bytes": 30025,
+      "desc": "Humanize text: strip AI-isms and add real voice."
+    },
+    {
+      "name": "p5js",
+      "path": "/opt/data/profiles/lk-shopify/skills/creative/p5js/SKILL.md",
+      "bytes": 27494,
+      "desc": "p5.js sketches: gen art, shaders, interactive, 3D."
+    },
+    {
+      "name": "lucas-chief-of-staff",
+      "path": "/opt/data/profiles/lk-shopify/skills/productivity/lucas-chief-of-staff/SKILL.md",
+      "bytes": 26073,
+      "desc": "Hermes-native Chief of Staff workflow for Lucas Cimino across LK Sneakers, Zipper Galeria, and SPITI Auction."
+    },
+    {
+      "name": "lk-shopify-product-upload",
+      "path": "/opt/data/profiles/lk-shopify/skills/productivity/lk-shopify-product-upload/SKILL.md",
+      "bytes": 26043,
+      "desc": "Use when Lucas asks to subir/cadastrar produto da LK Sneakers no Shopify, especially from GOAT/market trend intake. Creates a safe product upload workflow: GOAT photo/order reference, SKU creation, product data assembly, Google/model history research, SEO/Claude-style description, preview, approval, and Shopify write guardrails."
+    },
+    {
+      "name": "impeccable",
+      "path": "/opt/data/profiles/lk-shopify/skills/creative/impeccable/SKILL.md",
+      "bytes": 25319,
+      "desc": "Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or otherwise improve a frontend interface. Covers websites, landing pages, dashboards, product UI, app shells, components, forms, settings, onboarding, and empty states. Handles UX review, visual hierarchy, information architecture, cognitive load, accessibility, performance, responsive behavior, theming, anti-patterns, typography, fonts, spacing, layout, alignment, color, motion, micro-interactions, UX copy, error states, edge cases, i18n, and reusable design systems or tokens. Also use for bland designs that need to become bolder or more delightful, loud designs that should become quieter, live browser iteration on UI elements, or ambitious visual effects that should feel technically extraordinary. Not for backend-only or non-UI tasks."
+    },
+    {
+      "name": "comfyui",
+      "path": "/opt/data/profiles/lk-shopify/skills/creative/comfyui/SKILL.md",
+      "bytes": 24287,
+      "desc": "Generate images, video, and audio with ComfyUI — install, launch, manage nodes/models, run workflows with parameter injection. Uses the official comfy-cli for lifecycle and direct REST/WebSocket API for execution."
+    }
+  ],
+  "usage_top25": [
+    [
+      "lk-shopify-readonly",
+      576,
+      "2026-06-27T19:03:02.940220+00:00"
+    ],
+    [
+      "doppler-secrets-operations",
+      412,
+      "2026-06-26T09:11:27.346222+00:00"
+    ],
+    [
+      "lk-operational-intelligence",
+      301,
+      "2026-06-12T19:38:22.149977+00:00"
+    ],
+    [
+      "lk-seo-weekly-improvement",
+      287,
+      "2026-06-18T23:02:32.755751+00:00"
+    ],
+    [
+      "lk-growth-operations",
+      251,
+      "2026-06-26T01:00:13.952081+00:00"
+    ],
+    [
+      "multiempresa-routing-lucas",
+      231,
+      "2026-05-19T15:19:58.886610+00:00"
+    ],
+    [
+      "verification-before-completion",
+      163,
+      "2026-06-28T16:24:27.022833+00:00"
+    ],
+    [
+      "lucas-chief-of-staff",
+      163,
+      "2026-06-16T10:51:16.954519+00:00"
+    ],
+    [
+      "lk-shopify-variant-thumbnails",
+      123,
+      "2026-06-26T09:32:22.997152+00:00"
+    ],
+    [
+      "doppler-github-pr-safe",
+      120,
+      "2026-06-17T15:32:26.972436+00:00"
+    ],
+    [
+      "vercel-deployments",
+      109,
+      "2026-06-15T19:02:06.547388+00:00"
+    ],
+    [
+      "lucas-hermes-continuous-improvement",
+      90,
+      "2026-05-18T05:00:56.276941+00:00"
+    ],
+    [
+      "bruno-openclaw-hermes-brain-adaptation",
+      88,
+      "2026-05-19T10:49:30.025999+00:00"
+    ],
+    [
+      "mission-control-development",
+      76,
+      "2026-06-02T13:24:30.411720+00:00"
+    ],
+    [
+      "wacli-whatsapp-cli",
+      72,
+      "2026-06-02T13:24:30.394529+00:00"
+    ],
+    [
+      "lk-shopify-cart-drawer",
+      36,
+      "2026-06-26T01:07:19.319678+00:00"
+    ],
+    [
+      "seo-geo",
+      32,
+      "2026-06-16T19:27:55.550250+00:00"
+    ],
+    [
+      "lk-shopify-theme-cro",
+      29,
+      "2026-06-28T16:24:25.878976+00:00"
+    ],
+    [
+      "n8n-workflow-automation",
+      28,
+      "2026-05-21T20:59:49.074455+00:00"
+    ],
+    [
+      "superpowers",
+      27,
+      "2026-06-27T10:12:09.126036+00:00"
+    ],
+    [
+      "lk-shopify-product-upload",
+      23,
+      "2026-06-27T19:03:09.690709+00:00"
+    ],
+    [
+      "telegram-hermes-docker-troubleshooting",
+      22,
+      "2026-05-18T21:29:05.437029+00:00"
+    ],
+    [
+      "seo-google",
+      20,
+      "2026-06-17T12:59:02.673989+00:00"
+    ],
+    [
+      "seo-ecommerce",
+      18,
+      "2026-06-16T17:48:12.497140+00:00"
+    ],
+    [
+      "kanban-worker",
+      15,
+      "2026-06-26T09:10:46.170069+00:00"
+    ]
+  ],
+  "non_actions": [
+    "no AGENTS patch",
+    "no skill patch",
+    "no config.yaml patch",
+    "no gateway restart",
+    "no Shopify/Tiny/GitHub/Klaviyo writes",
+    "no credential access values printed"
+  ],
+  "qa_status": "corrected_after_independent_qa",
+  "active_unique_skills": 194,
+  "archived_unique_skills": 37,
+  "archived_only_requested": [
+    "github-pr-workflow"
+  ],
+  "qa_corrections_applied": [
+    "removed non-existent playwright skills from protected enabled list; stated QA visual via dogfood/browser/tooling",
+    "replaced archived github-pr-workflow with active doppler-github-pr-safe plus github-operations",
+    "added rollback/dev workflow lens: systematic-debugging, using-git-worktrees, finishing-a-development-branch, receiving/requesting-code-review, test-driven-development",
+    "added runtime/webhook/MCP support lens as on-demand, not core"
+  ]
+}

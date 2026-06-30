@@ -1,0 +1,342 @@
+{
+  "generated_at": "2026-06-29T16:26:35Z",
+  "recommendation": "Próxima rodada: fazer primeiro LK Ops + LK Growth em modo proposta/dry-run, depois aplicar com aprovação scoped; em paralelo curar heavy skills locais específicas sem deletar conteúdo.",
+  "why": "São os dois profiles restantes com maior superfície e estão vivos em runtime; ambos sem platform_disabled.telegram e config antiga. Profiles menores têm ROI menor e maior chance de precisar regras específicas.",
+  "proposed_batch": [
+    {
+      "profile": "lk-ops",
+      "action": "Skill Surface Diet + config v30 + restart scoped"
+    },
+    {
+      "profile": "lk-growth",
+      "action": "Skill Surface Diet + config v30 + restart scoped"
+    },
+    {
+      "profile": "lk-content",
+      "action": "curadoria local da skill lk-content-klaviyo-campaign-operations como follow-up read-only/local"
+    }
+  ],
+  "blocked_without_approval": [
+    "patch config/AGENTS/SKILL dos profiles",
+    "restart lk-ops/lk-growth",
+    "compactar skills profile-local pesadas se usadas por runtime"
+  ],
+  "safe_now_completed": "read-only audit/proposal only",
+  "profiles": [
+    {
+      "profile": "lk-ops",
+      "priority": "P1",
+      "config_version": 23,
+      "telegram_disabled": 0,
+      "skill_count": 154,
+      "largest": [
+        {
+          "name": "pytorch-fsdp",
+          "bytes": 160170,
+          "path": "mlops/training/pytorch-fsdp/SKILL.md"
+        },
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 101980,
+          "path": "productivity/lk-operational-intelligence/SKILL.md"
+        },
+        {
+          "name": "bruno-openclaw-hermes-brain-adaptation",
+          "bytes": 101515,
+          "path": "productivity/bruno-openclaw-hermes-brain-adaptation/SKILL.md"
+        },
+        {
+          "name": "customer-chat-operations",
+          "bytes": 93626,
+          "path": "productivity/customer-chat-operations/SKILL.md"
+        },
+        {
+          "name": "hermes-agent",
+          "bytes": 69265,
+          "path": "autonomous-ai-agents/hermes-agent/SKILL.md"
+        },
+        {
+          "name": "mission-control-development",
+          "bytes": 59392,
+          "path": "software-development/mission-control-development/SKILL.md"
+        },
+        {
+          "name": "lk-shopify-readonly",
+          "bytes": 50295,
+          "path": "productivity/lk-shopify-readonly/SKILL.md"
+        },
+        {
+          "name": "lk-seo-weekly-improvement",
+          "bytes": 46372,
+          "path": "productivity/lk-seo-weekly-improvement/SKILL.md"
+        },
+        {
+          "name": "lucas-hermes-continuous-improvement",
+          "bytes": 41492,
+          "path": "devops/lucas-hermes-continuous-improvement/SKILL.md"
+        },
+        {
+          "name": "lucas-chief-of-staff",
+          "bytes": 34838,
+          "path": "productivity/lucas-chief-of-staff/SKILL.md"
+        }
+      ],
+      "reason": "alto volume, atendimento/operações LK e skill customer-chat pesada; perfil ainda v23 sem dieta"
+    },
+    {
+      "profile": "lk-growth",
+      "priority": "P1",
+      "config_version": 24,
+      "telegram_disabled": 0,
+      "skill_count": 148,
+      "largest": [
+        {
+          "name": "pytorch-fsdp",
+          "bytes": 160170,
+          "path": "mlops/training/pytorch-fsdp/SKILL.md"
+        },
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 101044,
+          "path": "productivity/lk-operational-intelligence/SKILL.md"
+        },
+        {
+          "name": "lk-seo-weekly-improvement",
+          "bytes": 98865,
+          "path": "productivity/lk-seo-weekly-improvement/SKILL.md"
+        },
+        {
+          "name": "bruno-openclaw-hermes-brain-adaptation",
+          "bytes": 88938,
+          "path": "productivity/bruno-openclaw-hermes-brain-adaptation/SKILL.md"
+        },
+        {
+          "name": "hermes-agent",
+          "bytes": 50827,
+          "path": "autonomous-ai-agents/hermes-agent/SKILL.md"
+        },
+        {
+          "name": "lk-growth-operations",
+          "bytes": 47753,
+          "path": "productivity/lk-growth-operations/SKILL.md"
+        },
+        {
+          "name": "lk-collection-patterns",
+          "bytes": 44304,
+          "path": "productivity/lk-collection-patterns/SKILL.md"
+        },
+        {
+          "name": "lk-shopify-readonly",
+          "bytes": 38941,
+          "path": "productivity/lk-shopify-readonly/SKILL.md"
+        },
+        {
+          "name": "lucas-hermes-continuous-improvement",
+          "bytes": 31737,
+          "path": "devops/lucas-hermes-continuous-improvement/SKILL.md"
+        },
+        {
+          "name": "lucas-chief-of-staff",
+          "bytes": 26073,
+          "path": "productivity/lucas-chief-of-staff/SKILL.md"
+        }
+      ],
+      "reason": "alto volume, Growth/SEO/GEO/CRO e skill lk-seo-weekly pesada; perfil ainda sem dieta"
+    },
+    {
+      "profile": "lk-content",
+      "priority": "P2",
+      "config_version": 27,
+      "telegram_disabled": 0,
+      "skill_count": 10,
+      "largest": [
+        {
+          "name": "lk-content-klaviyo-campaign-operations",
+          "bytes": 88827,
+          "path": "operations/lk-content-klaviyo-campaign-operations/SKILL.md"
+        },
+        {
+          "name": "doppler-secrets-operations",
+          "bytes": 19228,
+          "path": "devops/doppler-secrets-operations/SKILL.md"
+        },
+        {
+          "name": "honcho-memory-operations",
+          "bytes": 18726,
+          "path": "autonomous-ai-agents/honcho-memory-operations/SKILL.md"
+        },
+        {
+          "name": "lk-content-dashboard-product-ui",
+          "bytes": 18179,
+          "path": "operations/lk-content-dashboard-product-ui/SKILL.md"
+        },
+        {
+          "name": "specialist-profile-activation",
+          "bytes": 16047,
+          "path": "devops/specialist-profile-activation/SKILL.md"
+        },
+        {
+          "name": "doppler-secrets-operations",
+          "bytes": 14114,
+          "path": "devops/doppler-secrets-operations.bak-sync-20260607T165901Z/SKILL.md"
+        },
+        {
+          "name": "lk-content-editorial-calendar",
+          "bytes": 12662,
+          "path": "operations/lk-content-editorial-calendar/SKILL.md"
+        },
+        {
+          "name": "ui-ux-pro-max",
+          "bytes": 8629,
+          "path": "design/ui-ux-pro-max/SKILL.md"
+        },
+        {
+          "name": "hermes-central-integration-auth-broker",
+          "bytes": 6877,
+          "path": "devops/hermes-central-integration-auth-broker/SKILL.md"
+        },
+        {
+          "name": "vercel-next-security-deploy-fix",
+          "bytes": 4803,
+          "path": "devops/vercel-next-security-deploy-fix/SKILL.md"
+        }
+      ],
+      "reason": "baixo volume mas 1 skill Klaviyo muito pesada; candidato a curadoria local, não dieta ampla"
+    },
+    {
+      "profile": "spiti-atendimento",
+      "priority": "P2",
+      "config_version": 23,
+      "telegram_disabled": 0,
+      "skill_count": 8,
+      "largest": [
+        {
+          "name": "spiti-captacao-obras-intake",
+          "bytes": 36823,
+          "path": "productivity/spiti-captacao-obras-intake/SKILL.md"
+        },
+        {
+          "name": "spiti-chatwoot-intelligence",
+          "bytes": 28160,
+          "path": "productivity/spiti-chatwoot-intelligence/SKILL.md"
+        },
+        {
+          "name": "doppler-secrets-operations",
+          "bytes": 18887,
+          "path": "devops/doppler-secrets-operations/SKILL.md"
+        },
+        {
+          "name": "honcho-memory-operations",
+          "bytes": 18726,
+          "path": "autonomous-ai-agents/honcho-memory-operations/SKILL.md"
+        },
+        {
+          "name": "spiti-os-readonly-status",
+          "bytes": 13024,
+          "path": "productivity/spiti-os-readonly-status/SKILL.md"
+        },
+        {
+          "name": "hostinger-vps-api-ssh-access",
+          "bytes": 9663,
+          "path": "devops/hostinger-vps-api-ssh-access/SKILL.md"
+        },
+        {
+          "name": "hermes-central-integration-auth-broker",
+          "bytes": 6877,
+          "path": "devops/hermes-central-integration-auth-broker/SKILL.md"
+        },
+        {
+          "name": "verification-before-completion",
+          "bytes": 4334,
+          "path": "software-development/verification-before-completion/SKILL.md"
+        }
+      ],
+      "reason": "baixo volume; migrar config e talvez dieta mínima, mas menor ROI"
+    },
+    {
+      "profile": "lk-finance",
+      "priority": "P2",
+      "config_version": 27,
+      "telegram_disabled": 0,
+      "skill_count": 9,
+      "largest": [
+        {
+          "name": "lk-stock-ops-automation",
+          "bytes": 23701,
+          "path": "productivity/lk-stock-ops-automation/SKILL.md"
+        },
+        {
+          "name": "doppler-secrets-operations",
+          "bytes": 20612,
+          "path": "devops/doppler-secrets-operations/SKILL.md"
+        },
+        {
+          "name": "honcho-memory-operations",
+          "bytes": 18726,
+          "path": "autonomous-ai-agents/honcho-memory-operations/SKILL.md"
+        },
+        {
+          "name": "lk-finance",
+          "bytes": 15406,
+          "path": "productivity/lk-finance/SKILL.md"
+        },
+        {
+          "name": "lk-ops-whatsapp-automation",
+          "bytes": 7394,
+          "path": "productivity/lk-ops-whatsapp-automation/SKILL.md"
+        },
+        {
+          "name": "lk-ops-automation",
+          "bytes": 6895,
+          "path": "productivity/lk-ops-automation/SKILL.md"
+        },
+        {
+          "name": "hermes-central-integration-auth-broker",
+          "bytes": 6877,
+          "path": "devops/hermes-central-integration-auth-broker/SKILL.md"
+        },
+        {
+          "name": "lk-tiny",
+          "bytes": 5616,
+          "path": "productivity/lk-tiny/SKILL.md"
+        },
+        {
+          "name": "lk-operational-automations",
+          "bytes": 4798,
+          "path": "productivity/lk-operational-automations/SKILL.md"
+        }
+      ],
+      "reason": "baixo volume; migrar config depois, risco financeiro pede cautela"
+    },
+    {
+      "profile": "lc-claude-cli",
+      "priority": "P2",
+      "config_version": 23,
+      "telegram_disabled": 0,
+      "skill_count": 4,
+      "largest": [
+        {
+          "name": "doppler-secrets-operations",
+          "bytes": 18887,
+          "path": "devops/doppler-secrets-operations/SKILL.md"
+        },
+        {
+          "name": "honcho-memory-operations",
+          "bytes": 18726,
+          "path": "autonomous-ai-agents/honcho-memory-operations/SKILL.md"
+        },
+        {
+          "name": "doppler-secrets-operations",
+          "bytes": 14114,
+          "path": "devops/doppler-secrets-operations.bak-sync-20260607T165901Z/SKILL.md"
+        },
+        {
+          "name": "hermes-central-integration-auth-broker",
+          "bytes": 6877,
+          "path": "devops/hermes-central-integration-auth-broker/SKILL.md"
+        }
+      ],
+      "reason": "baixo volume; auth/CLI profile, não priorizar dieta ampla"
+    }
+  ]
+}

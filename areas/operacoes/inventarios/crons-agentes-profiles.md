@@ -1,7 +1,39 @@
 # Inventário vivo — crons, agentes, profiles e projetos
 
-Data-base: 2026-06-28 11:20 UTC
-Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-06-28**
+Data-base: 2026-06-29 11:20 UTC
+Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-06-29**
+
+---
+
+### Atualização 2026-06-29 11:20 UTC
+
+**Fonte:** `cronjob list` solicitado; `cronjob` não disponível no PATH deste runtime. Fallback canônico usado: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all`. Fonte estruturada sanitizada para contagem: `/opt/data/cron/jobs.json`.
+
+**Contagem:** 46 jobs totais — 42 ativos, 4 pausados.
+
+**`last_status` não-ok:** 0. Todos os jobs com execução registrada constam `ok` na evidência viva desta execução.
+
+**Erros explícitos de delivery do scheduler:** 0. **Falhas em stdout de job:** não avaliadas por stdout bruto; somente campos estruturados seguros foram usados.
+
+**Jobs ativos sem primeira execução registrada:** 0.
+
+**Jobs pausados na evidência viva:**
+- `663e3e6a148c` SPITI Telegram gateway watchdog — paused, `deliver=local`, ok / 2026-05-30T15:52:55.201503+00:00.
+- `876d54c62ccd` LK Growth Telegram gateway watchdog — paused, `deliver=local`, ok / 2026-05-30T15:52:55.226608+00:00.
+- `955dc769b5a6` LK specialist Telegram gateway watchdog — paused, `deliver=origin`, ok / 2026-05-30T15:52:55.190857+00:00.
+- `ac0b440e2643` Mordomo Telegram gateway watchdog — paused, `deliver=local`, ok / 2026-05-30T15:52:55.213145+00:00.
+
+**Drift/notable reconciliation:**
+- Contagem mudou vs 2026-06-28: 44 → 46 totais; 40 → 42 ativos; 4 pausados estável.
+- Novos/observados vs snapshot anterior: `e3af978c6af6` Honcho Nightly Intelligence Enforcement Audit — 02h35 BRT, active/local/ok; `ba8ca37bfebd` Honcho semantic contamination audit — daily local, active/local/ok; `fac3e13782c4` Honcho quality watchdog — silent OK, active/`deliver=origin`/ok.
+- Job futuro anterior ausente na evidência atual: `00a9f839879f` Honcho utility go/no-go review one-shot não aparece mais em `/opt/data/cron/jobs.json`; tratar como histórico/removido ou executado/limpo fora deste snapshot, sem manter como ativo sem evidência viva.
+- `fac3e13782c4` usa `deliver=origin` apesar de declarar silent-OK; precisa reconciliação documental do contrato de alerta/ruído antes de qualquer mudança operacional.
+- `2e5bc91d27d6` Hermes Nightly Operations Audit OS — 02h50 BRT segue ativo/local/ok e ainda merece reconciliação documental de owner/finalidade/critério de sucesso em rodada própria.
+- Documentação que descreve Mordomo/LK Growth/SPITI gateway watchdogs como ativos deve permanecer marcada como histórica até nova evidência viva mostrar reativação.
+
+**Jobs deliver=origin (saídas intencionais/condicionais):** Ativos: Mesa COO diária Telegram (`749ee30b51eb`), Relatório Hermes diário 01h+02h+02h15+02h25+02h50 + Score 0–100 — 03h Telegram (`98478b820720`), Reminder OS — 2h open-loop watchdog (`518634d5ea60`), Honcho quality watchdog — silent OK (`fac3e13782c4`). Pausados: LK specialist Telegram gateway watchdog (`955dc769b5a6`).
+
+**Relatório completo:** `reports/governance/runtime-truth-reconciler-2026-06-29.md`
 
 ---
 

@@ -1,0 +1,90 @@
+{
+  "timestamp": "20260629T165448Z",
+  "profiles": [
+    {
+      "profile": "lk-content",
+      "timestamp": "20260629T165448Z",
+      "total_active_skills": 9,
+      "telegram_enabled_count": 8,
+      "telegram_disabled_count": 1,
+      "protected_disabled": [],
+      "enabled": [
+        "doppler-secrets-operations",
+        "hermes-central-integration-auth-broker",
+        "honcho-memory-operations",
+        "lk-content-dashboard-product-ui",
+        "lk-content-editorial-calendar",
+        "lk-content-klaviyo-campaign-operations",
+        "specialist-profile-activation",
+        "ui-ux-pro-max"
+      ],
+      "disabled": [
+        "vercel-next-security-deploy-fix"
+      ],
+      "backup_dir": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/content/backups/skill-surface-diet-lk-content-20260629T165448Z",
+      "heavy_curated": true
+    },
+    {
+      "profile": "spiti-atendimento",
+      "timestamp": "20260629T165448Z",
+      "total_active_skills": 8,
+      "telegram_enabled_count": 7,
+      "telegram_disabled_count": 1,
+      "protected_disabled": [],
+      "enabled": [
+        "doppler-secrets-operations",
+        "hermes-central-integration-auth-broker",
+        "honcho-memory-operations",
+        "spiti-captacao-obras-intake",
+        "spiti-chatwoot-intelligence",
+        "spiti-os-readonly-status",
+        "verification-before-completion"
+      ],
+      "disabled": [
+        "hostinger-vps-api-ssh-access"
+      ],
+      "backup_dir": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/spiti/atendimento/backups/skill-surface-diet-spiti-atendimento-20260629T165448Z",
+      "heavy_curated": false
+    },
+    {
+      "profile": "lk-finance",
+      "timestamp": "20260629T165448Z",
+      "total_active_skills": 9,
+      "telegram_enabled_count": 6,
+      "telegram_disabled_count": 3,
+      "protected_disabled": [],
+      "enabled": [
+        "doppler-secrets-operations",
+        "hermes-central-integration-auth-broker",
+        "honcho-memory-operations",
+        "lk-finance",
+        "lk-operational-automations",
+        "lk-tiny"
+      ],
+      "disabled": [
+        "lk-ops-automation",
+        "lk-ops-whatsapp-automation",
+        "lk-stock-ops-automation"
+      ],
+      "backup_dir": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/lk/sub-areas/finance/backups/skill-surface-diet-lk-finance-20260629T165448Z",
+      "heavy_curated": false
+    },
+    {
+      "profile": "lc-claude-cli",
+      "timestamp": "20260629T165448Z",
+      "total_active_skills": 3,
+      "telegram_enabled_count": 3,
+      "telegram_disabled_count": 0,
+      "protected_disabled": [],
+      "enabled": [
+        "doppler-secrets-operations",
+        "hermes-central-integration-auth-broker",
+        "honcho-memory-operations"
+      ],
+      "disabled": [],
+      "backup_dir": "/opt/data/hermes_bruno_ingest/hermes-brain/areas/operacoes/lc-claude-cli/backups/skill-surface-diet-lc-claude-cli-20260629T165448Z",
+      "heavy_curated": false
+    }
+  ],
+  "approval": "Lucas: Fazer do 1 ao 4 (lk-content, spiti-atendimento, lk-finance, lc-claude-cli)"
+}

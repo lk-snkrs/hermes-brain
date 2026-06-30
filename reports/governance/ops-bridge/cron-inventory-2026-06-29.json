@@ -1,0 +1,90 @@
+{
+  "command": "cron-inventory",
+  "read_only": true,
+  "generated_at_utc": "2026-06-29T21:24:10.664399+00:00",
+  "totals": {
+    "jobs": 108,
+    "enabled": 90,
+    "paused": 18,
+    "non_ok_enabled": 0
+  },
+  "registries": [
+    {
+      "path": "/opt/data/cron/jobs.json",
+      "jobs": 49,
+      "enabled": 45,
+      "paused": 4,
+      "non_ok_enabled": 0
+    },
+    {
+      "path": "/opt/data/profiles/lk-content/cron/jobs.json",
+      "jobs": 5,
+      "enabled": 4,
+      "paused": 1,
+      "non_ok_enabled": 0
+    },
+    {
+      "path": "/opt/data/profiles/lk-finance/cron/jobs.json",
+      "jobs": 1,
+      "enabled": 1,
+      "paused": 0,
+      "non_ok_enabled": 0
+    },
+    {
+      "path": "/opt/data/profiles/lk-growth/cron/jobs.json",
+      "jobs": 11,
+      "enabled": 7,
+      "paused": 4,
+      "non_ok_enabled": 0
+    },
+    {
+      "path": "/opt/data/profiles/lk-ops/cron/jobs.json",
+      "jobs": 7,
+      "enabled": 7,
+      "paused": 0,
+      "non_ok_enabled": 0
+    },
+    {
+      "path": "/opt/data/profiles/lk-shopify/cron/jobs.json",
+      "jobs": 2,
+      "enabled": 2,
+      "paused": 0,
+      "non_ok_enabled": 0
+    },
+    {
+      "path": "/opt/data/profiles/lk-stock/cron/jobs.json",
+      "jobs": 4,
+      "enabled": 4,
+      "paused": 0,
+      "non_ok_enabled": 0
+    },
+    {
+      "path": "/opt/data/profiles/lk-trends/cron/jobs.json",
+      "jobs": 2,
+      "enabled": 1,
+      "paused": 1,
+      "non_ok_enabled": 0
+    },
+    {
+      "path": "/opt/data/profiles/mordomo/cron/jobs.json",
+      "jobs": 26,
+      "enabled": 18,
+      "paused": 8,
+      "non_ok_enabled": 0
+    },
+    {
+      "path": "/opt/data/profiles/spiti/cron/jobs.json",
+      "jobs": 0,
+      "enabled": 0,
+      "paused": 0,
+      "non_ok_enabled": 0
+    },
+    {
+      "path": "/opt/data/profiles/spiti-atendimento/cron/jobs.json",
+      "jobs": 1,
+      "enabled": 1,
+      "paused": 0,
+      "non_ok_enabled": 0
+    }
+  ]
+}

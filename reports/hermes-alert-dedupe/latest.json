@@ -2,6 +2,21 @@
   "active": [
     {
       "alert": {
+        "detail": {
+          "job": "LK Shopify Sales OS nightly full reconcile read-only",
+          "registry": "/opt/data/profiles/lk-stock/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "86567245ca83a228",
+      "first_seen": "2026-06-29T05:01:32.059614+00:00",
+      "last_seen": "2026-06-29T05:01:32.059614+00:00",
+      "seen_count": 1,
+      "status": "new"
+    },
+    {
+      "alert": {
         "profiles": [
           {
             "missing": 1,
@@ -15,12 +30,12 @@
       },
       "fingerprint": "d40ff8a792003ed5",
       "first_seen": "2026-06-26T05:02:12.325062+00:00",
-      "last_seen": "2026-06-28T05:00:48.574135+00:00",
-      "seen_count": 3,
+      "last_seen": "2026-06-29T05:01:32.059614+00:00",
+      "seen_count": 4,
       "status": "recurring"
     }
   ],
-  "active_count": 1,
+  "active_count": 2,
   "alerts": {
     "271525f7aad957b2": {
       "alert": {
@@ -174,6 +189,21 @@
       "seen_count": 3,
       "status": "resolved"
     },
+    "86567245ca83a228": {
+      "alert": {
+        "detail": {
+          "job": "LK Shopify Sales OS nightly full reconcile read-only",
+          "registry": "/opt/data/profiles/lk-stock/cron/jobs.json",
+          "status": "error"
+        },
+        "type": "cron_non_ok"
+      },
+      "fingerprint": "86567245ca83a228",
+      "first_seen": "2026-06-29T05:01:32.059614+00:00",
+      "last_seen": "2026-06-29T05:01:32.059614+00:00",
+      "seen_count": 1,
+      "status": "new"
+    },
     "877bf6b0ee5b379b": {
       "alert": {
         "detail": {
@@ -283,8 +313,8 @@
       },
       "fingerprint": "d40ff8a792003ed5",
       "first_seen": "2026-06-26T05:02:12.325062+00:00",
-      "last_seen": "2026-06-28T05:00:48.574135+00:00",
-      "seen_count": 3,
+      "last_seen": "2026-06-29T05:01:32.059614+00:00",
+      "seen_count": 4,
       "status": "recurring"
     },
     "f9acad02865c915c": {
@@ -304,9 +334,9 @@
       "status": "resolved"
     }
   },
-  "new_count": 0,
+  "new_count": 1,
   "recurring_count": 1,
-  "resolved_since_previous_count": 3,
-  "updated_at": "2026-06-28T05:00:48.574135+00:00",
+  "resolved_since_previous_count": 0,
+  "updated_at": "2026-06-29T05:01:32.059614+00:00",
   "values_printed": false
 }

@@ -1,0 +1,146 @@
+{
+  "command": "host-audit",
+  "read_only": true,
+  "generated_at_utc": "2026-06-29T21:25:39.354775+00:00",
+  "results": [
+    {
+      "command": [
+        "uname",
+        "-a"
+      ],
+      "result": {
+        "args": [
+          "uname",
+          "-a"
+        ],
+        "returncode": 0,
+        "stdout": "Linux a921c308b1df 6.8.0-111-generic #111-Ubuntu SMP PREEMPT_DYNAMIC Sat Apr 11 23:16:02 UTC 2026 x86_64 GNU/Linux\n",
+        "stderr": ""
+      }
+    },
+    {
+      "command": [
+        "df",
+        "-h",
+        "/opt/data"
+      ],
+      "result": {
+        "args": [
+          "df",
+          "-h"
+        ],
+        "returncode": 0,
+        "stdout": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/sda1       387G  214G  173G  56% /opt/data\n",
+        "stderr": ""
+      }
+    },
+    {
+      "command": [
+        "free",
+        "-m"
+      ],
+      "result": {
+        "args": [
+          "free",
+          "-m"
+        ],
+        "returncode": 0,
+        "stdout": "               total        used        free      shared  buff/cache   available\nMem:           32094       13702         891         460       18407       18391\nSwap:              0           0           0\n",
+        "stderr": ""
+      }
+    },
+    {
+      "command": [
+        "ss",
+        "-ltnp"
+      ],
+      "result": {
+        "args": [
+          "ss",
+          "-ltnp"
+        ],
+        "error": "[Errno 2] No such file or directory: 'ss'"
+      }
+    },
+    {
+      "command": [
+        "docker",
+        "ps",
+        "--format"
+      ],
+      "result": {
+        "args": [
+          "docker",
+          "ps"
+        ],
+        "returncode": 0,
+        "stdout": "elle-chatwoot Up 34 hours 8080/tcp\nlk-estoque-web Up 3 days 3000/tcp\nspiti-intelligence Up 7 days 127.0.0.1:8091->8080/tcp\nhoncho-deriver-1 Up 10 days 8000/tcp\nhoncho-api-1 Up 10 days (healthy) 127.0.0.1:18000->8000/tcp\nhoncho-redis-1 Up 10 days (healthy) 6379/tcp\nhoncho-database-1 Up 10 days (healthy) 5432/tcp\nchatwoot-rails-1 Up 2 days 127.0.0.1:3000->3000/tcp\nchatwoot-sidekiq-1 Up 2 days 3000/tcp\nlk-estoque-stock-api Up 6 days (healthy) \nchatwoot-redis-1 Up 2 weeks 127.0.0.1:6379->6379/tcp\nspiti-chatwoot-sidekiq-1 Up 2 weeks 3000/tcp\nspiti-chatwoot-rails-1 Up 2 weeks 127.0.0.1:3100->3000/tcp\nspiti-chatwoot-redis-1 Up 2 weeks 127.0.0.1:6380->6379/tcp\nspiti-chatwoot-postgres-1 Up 2 weeks (healthy) 0.0.0.0:5433->5432/tcp\ntraefik-traefik-1 Up 2 weeks \nmordomo-data-api Up 3 weeks 8787/tcp\nlk-browser-cdp-proxy Up 3 weeks \nlk-browser-web Up 3 weeks 3000-3001/tcp\nlk-recovery-db-rest-proxy Up 3 weeks 80/tcp, 127.0.0.1:3030->8080/tcp\nlk-recovery-db-postgrest Up 3 weeks 3000/tcp\nlk-recovery-db-postgres Up 3 weeks (healthy) 5432/tcp\nchatwoot-postgres-1 Up 3 weeks 127.0.0.1:5432->5432/tcp\nhermes-watchdog Up 4 weeks \nhermes-agent-5ajw-hermes-telegram-1 Up 6 hours 127.0.0.1:8642->8642/tcp\nhermes-agent-5ajw-hermes-agent-1 Up 4 weeks 0.0.0.0:33855->4860/tcp, :::33855->4860/tcp\nbruno-atual-download-n8npath Up 4 weeks 5678/tcp\nbruno-atual-download Up 4 weeks 5678/tcp\nn8n-vdgm-n8n-1 Up 7 weeks 0.0.0.0:32769->5678/tcp, :::32769->5678/tcp\n",
+        "stderr": ""
+      }
+    },
+    {
+      "command": [
+        "docker",
+        "compose",
+        "ls"
+      ],
+      "result": {
+        "args": [
+          "docker",
+          "compose"
+        ],
+        "returncode": 0,
+        "stdout": "[{\"Name\":\"chatwoot\",\"Status\":\"running(2)\",\"ConfigFiles\":\"/opt/chatwoot/docker-compose.yaml\"},{\"Name\":\"elle-chatwoot\",\"Status\":\"running(1)\",\"ConfigFiles\":\"/opt/elle-chatwoot/docker-compose.yml\"},{\"Name\":\"hermes-agent-5ajw\",\"Status\":\"running(2)\",\"ConfigFiles\":\"/docker/hermes-agent-5ajw/docker-compose.yml\"},{\"Name\":\"honcho\",\"Status\":\"running(4)\",\"ConfigFiles\":\"/opt/honcho/src/docker-compose.yml\"},{\"Name\":\"lk-estoque-web\",\"Status\":\"running(2)\",\"ConfigFiles\":\"/opt/lk-estoque-web/docker-compose.yml\"},{\"Name\":\"lk-recovery-db\",\"Status\":\"running(3)\",\"ConfigFiles\":\"/opt/lk-recovery-db/docker-compose.yml\"},{\"Name\":\"n8n-vdgm\",\"Status\":\"running(1)\",\"ConfigFiles\":\"/docker/n8n-vdgm/docker-compose.yml\"},{\"Name\":\"spiti-chatwoot\",\"Status\":\"running(4)\",\"ConfigFiles\":\"/opt/spiti-chatwoot/docker-compose.yaml\"},{\"Name\":\"spiti-intelligence\",\"Status\":\"running(1)\",\"ConfigFiles\":\"/opt/spiti-intelligence/docker-compose.yaml\"},{\"Name\":\"traefik\",\"Status\":\"running(1)\",\"ConfigFiles\":\"/docker/traefik/docker-compose.yml\"}]\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "traefik_or_compose_candidates": [
+    "/opt/chatwoot/docker-compose.yaml",
+    "/opt/data/backups/elle-agentbot-hmac-canonical/20260626T205157Z/docker-compose.yml",
+    "/opt/data/backups/elle-p1-p2-all/20260626T201347Z/elle/docker-compose.yml",
+    "/opt/data/backups/elle-quality-p0-p1-fix/20260627T124748Z/docker-compose.yml",
+    "/opt/data/backups/elle-quality-p0-p1-fix/20260627T124756Z/root/docker-compose.yml",
+    "/opt/data/backups/elle-recreate-auto/20260626T202730Z/docker-compose.yml",
+    "/opt/data/backups/elle-v2-canonical-learning-gates/20260626T194417Z/host/docker-compose.yml",
+    "/opt/data/chatwoot-v4.14.1-build/.devcontainer/docker-compose.base.yml",
+    "/opt/data/chatwoot-v4.14.1-build/.devcontainer/docker-compose.yml",
+    "/opt/data/chatwoot-v4.14.1-build/docker-compose.production.yaml",
+    "/opt/data/chatwoot-v4.14.1-build/docker-compose.test.yaml",
+    "/opt/data/chatwoot-v4.14.1-build/docker-compose.yaml",
+    "/opt/data/hermes-v016-candidate-20260606/src/docker-compose.yml",
+    "/opt/data/hermes-v016-candidate-20260606/src/tests/e2e/matrix_xsign_bootstrap/docker-compose.yml",
+    "/opt/data/hermes_bruno_ingest/backups/lc-vps-hermes-20260505T011529Z/docker-compose.yml.redacted",
+    "/opt/data/hermes_bruno_ingest/hermes-agent-upstream/docker-compose.yml",
+    "/opt/data/hermes_bruno_ingest/hermes-agent-upstream/tests/e2e/matrix_xsign_bootstrap/docker-compose.yml",
+    "/opt/data/hermes_bruno_ingest/hermes-agent-v0.13.0/docker-compose.yml",
+    "/opt/data/hermes_bruno_ingest/hermes-agent-v0.13.0/tests/e2e/matrix_xsign_bootstrap/docker-compose.yml",
+    "/opt/data/hermes_dashboard_bridge_run_20260606_144357/backup-before-write/traefik-traefik-1.inspect.json",
+    "/opt/data/hermes_dashboard_bridge_run_20260606_144357/backup-before-write/traefik-traefik-1.labels.json",
+    "/opt/data/hermes_dashboard_bridge_run_20260606_144357/docker-traefik-inspect.txt",
+    "/opt/data/home/.cache/uv/git-v0/checkouts/d9298bd508be397d/70e1571d8/docker-compose.yml",
+    "/opt/data/home/.cache/uv/git-v0/checkouts/d9298bd508be397d/70e1571d8/tests/e2e/matrix_xsign_bootstrap/docker-compose.yml",
+    "/opt/data/home/.cache/uv/git-v0/checkouts/d9298bd508be397d/ba6ffd4ff/docker-compose.yml",
+    "/opt/data/lk-chatwoot-custom/.devcontainer/docker-compose.base.yml",
+    "/opt/data/lk-chatwoot-custom/.devcontainer/docker-compose.yml",
+    "/opt/data/lk-chatwoot-custom/docker-compose.production.yaml",
+    "/opt/data/lk-chatwoot-custom/docker-compose.test.yaml",
+    "/opt/data/lk-chatwoot-custom/docker-compose.yaml",
+    "/opt/data/lk-chatwoot-prod-source/.devcontainer/docker-compose.yml",
+    "/opt/data/mordomo-data-api/docker-compose.yml",
+    "/opt/data/profiles/lk-collection-optimizer/skills/autonomous-ai-agents/hermes-agent/references/hermes-workspace-production-traefik.md",
+    "/opt/data/profiles/lk-growth/skills/autonomous-ai-agents/hermes-agent/references/hermes-workspace-production-traefik.md",
+    "/opt/data/profiles/lk-ops/skills/autonomous-ai-agents/hermes-agent/references/hermes-workspace-production-traefik.md",
+    "/opt/data/profiles/lk-shopify/skills/autonomous-ai-agents/hermes-agent/references/hermes-workspace-production-traefik.md",
+    "/opt/data/profiles/lk-shopify/skills/devops/hostinger-vps-api-ssh-access/references/docker-traefik-container-label-loss-404-20260615.md",
+    "/opt/data/profiles/lk-stock/skills/autonomous-ai-agents/hermes-agent/references/hermes-workspace-production-traefik.md",
+    "/opt/data/profiles/lk-trends/skills/autonomous-ai-agents/hermes-agent/references/hermes-workspace-production-traefik.md",
+    "/opt/data/profiles/mordomo/skills/autonomous-ai-agents/hermes-agent/references/hermes-workspace-production-traefik.md",
+    "/opt/data/profiles/spiti/skills/autonomous-ai-agents/hermes-agent/references/hermes-workspace-production-traefik.md",
+    "/opt/data/research/hermes-workspace/docker-compose.yml",
+    "/opt/data/skills/autonomous-ai-agents/hermes-agent/references/hermes-workspace-production-traefik.md",
+    "/opt/data/tmp/chatwoot_avisar_enc/docker-compose.yaml",
+    "/opt/data/tmp/spiti-intelligence-edit/docker-compose.yaml",
+    "/opt/data/tmp/spiti-intelligence/docker-compose.yaml"
+  ]
+}

@@ -1,0 +1,484 @@
+{
+  "generated_at_utc": "2026-06-29T19:06:54.106141+00:00",
+  "profiles": [
+    {
+      "profile": "default",
+      "home": "/opt/data",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 150,
+      "skills_count": 201,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [],
+      "running_gateways": [
+        {
+          "pid": 1,
+          "api_enabled": true,
+          "webhook_enabled": true,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "state_pid": 1,
+        "telegram_state": "connected"
+      }
+    },
+    {
+      "profile": "brain-process",
+      "home": "/opt/data/profiles/brain-process",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 153,
+      "skills_count": 168,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [],
+      "running_gateways": [],
+      "gateway_state": {}
+    },
+    {
+      "profile": "hermes-ops-readonly",
+      "home": "/opt/data/profiles/hermes-ops-readonly",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 150,
+      "skills_count": 168,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [],
+      "running_gateways": [],
+      "gateway_state": {}
+    },
+    {
+      "profile": "lc-claude-cli",
+      "home": "/opt/data/profiles/lc-claude-cli",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 0,
+      "skills_count": 3,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [],
+      "running_gateways": [
+        {
+          "pid": 77068,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "state_pid": 77068,
+        "telegram_state": "connected"
+      }
+    },
+    {
+      "profile": "lk-analyst-readonly",
+      "home": "/opt/data/profiles/lk-analyst-readonly",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 142,
+      "skills_count": 166,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [],
+      "running_gateways": [],
+      "gateway_state": {}
+    },
+    {
+      "profile": "lk-collection-optimizer",
+      "home": "/opt/data/profiles/lk-collection-optimizer",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 209,
+      "skills_count": 150,
+      "protected_disabled": [
+        "superpowers"
+      ],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 100458,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
+      "running_gateways": [
+        {
+          "pid": 130730,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": false
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "state_pid": 130730,
+        "telegram_state": "connected"
+      }
+    },
+    {
+      "profile": "lk-content",
+      "home": "/opt/data/profiles/lk-content",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 1,
+      "skills_count": 9,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [],
+      "running_gateways": [
+        {
+          "pid": 75427,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": false
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "state_pid": 75427,
+        "telegram_state": "connected"
+      }
+    },
+    {
+      "profile": "lk-content-reviewer",
+      "home": "/opt/data/profiles/lk-content-reviewer",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 146,
+      "skills_count": 167,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [],
+      "running_gateways": [],
+      "gateway_state": {}
+    },
+    {
+      "profile": "lk-finance",
+      "home": "/opt/data/profiles/lk-finance",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 3,
+      "skills_count": 9,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [],
+      "running_gateways": [
+        {
+          "pid": 75795,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "state_pid": 75795,
+        "telegram_state": "connected"
+      }
+    },
+    {
+      "profile": "lk-growth",
+      "home": "/opt/data/profiles/lk-growth",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 100,
+      "skills_count": 147,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 101044,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
+      "running_gateways": [
+        {
+          "pid": 48543,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": false
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "state_pid": 48543,
+        "telegram_state": "connected"
+      }
+    },
+    {
+      "profile": "lk-ops",
+      "home": "/opt/data/profiles/lk-ops",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 114,
+      "skills_count": 153,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 101980,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
+      "running_gateways": [
+        {
+          "pid": 46223,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": false
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "state_pid": 46223,
+        "telegram_state": "connected"
+      }
+    },
+    {
+      "profile": "lk-shopify",
+      "home": "/opt/data/profiles/lk-shopify",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 154,
+      "skills_count": 194,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 101044,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
+      "running_gateways": [
+        {
+          "pid": 535,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "state_pid": 535,
+        "telegram_state": "connected"
+      }
+    },
+    {
+      "profile": "lk-stock",
+      "home": "/opt/data/profiles/lk-stock",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 175,
+      "skills_count": 226,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-stock",
+          "bytes": 105586,
+          "path": "productivity/lk-stock/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        },
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 104229,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
+      "running_gateways": [
+        {
+          "pid": 1029,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "state_pid": 1029,
+        "telegram_state": "connected"
+      }
+    },
+    {
+      "profile": "lk-trends",
+      "home": "/opt/data/profiles/lk-trends",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 208,
+      "skills_count": 158,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 100458,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
+      "running_gateways": [
+        {
+          "pid": 602,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "state_pid": 602,
+        "telegram_state": "connected"
+      }
+    },
+    {
+      "profile": "mordomo",
+      "home": "/opt/data/profiles/mordomo",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 167,
+      "skills_count": 195,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 102461,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
+      "running_gateways": [
+        {
+          "pid": 201,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "state_pid": 201,
+        "telegram_state": "connected"
+      }
+    },
+    {
+      "profile": "spiti",
+      "home": "/opt/data/profiles/spiti",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 100,
+      "skills_count": 121,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [],
+      "running_gateways": [
+        {
+          "pid": 249,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "state_pid": 249,
+        "telegram_state": "connected"
+      }
+    },
+    {
+      "profile": "spiti-atendimento",
+      "home": "/opt/data/profiles/spiti-atendimento",
+      "config_version": 30,
+      "has_skill_surface_diet_policy": true,
+      "disabled_count": 1,
+      "skills_count": 8,
+      "protected_disabled": [],
+      "enabled_heavy_skills": [],
+      "running_gateways": [
+        {
+          "pid": 76408,
+          "api_enabled": false,
+          "webhook_enabled": false,
+          "has_telegram_token": true
+        }
+      ],
+      "gateway_state": {
+        "gateway_state": "running",
+        "state_pid": 76408,
+        "telegram_state": "connected"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "profile": "lk-collection-optimizer",
+      "kind": "protected_disabled",
+      "skills": [
+        "superpowers"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "profile": "lk-collection-optimizer",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 100458,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    },
+    {
+      "profile": "lk-growth",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 101044,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    },
+    {
+      "profile": "lk-ops",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 101980,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    },
+    {
+      "profile": "lk-shopify",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 101044,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    },
+    {
+      "profile": "lk-stock",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-stock",
+      "bytes": 105586,
+      "path": "productivity/lk-stock/SKILL.md"
+    },
+    {
+      "profile": "lk-stock",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 104229,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    },
+    {
+      "profile": "lk-trends",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 100458,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    },
+    {
+      "profile": "mordomo",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 102461,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    }
+  ]
+}

@@ -2,21 +2,28 @@
   "operating_rule": "Do not repeat an alert unchanged; classify root cause, safe next action and approval boundary.",
   "patterns": [
     {
+      "next_safe_action": "inspect the exact profile cron output and create a scoped fix/approval packet; do not generalize to Docker failure.",
+      "object": "LK Shopify Sales OS nightly full reconcile read-only",
+      "pattern": "new_cron_non_ok",
+      "seen_count": 1,
+      "why_it_causes_errors": "Agents may report governance healthy while a specialist cron is failing."
+    },
+    {
       "next_safe_action": "compare helper inventory, expected profile map and runtime env injection; report presence/status only.",
       "object": "lk-shopify",
       "pattern": "expected_secret_missing_or_map_mismatch",
-      "seen_count": 3,
+      "seen_count": 4,
       "why_it_causes_errors": "Agents may claim an integration is absent when the issue is naming/runtime injection/map drift."
     },
     {
       "next_safe_action": "split oversized instructions into references, repair missing refs, and prefer source lookup before acting.",
-      "object": "88 flagged skills",
+      "object": "89 flagged skills",
       "pattern": "skill_quality_drift",
       "seen_count": 1,
       "why_it_causes_errors": "Oversized/stale/broken-reference skills increase hallucinated or outdated operating instructions."
     }
   ],
-  "patterns_count": 2,
-  "updated_at": "2026-06-28T05:00:48.574843+00:00",
+  "patterns_count": 3,
+  "updated_at": "2026-06-29T05:01:32.060354+00:00",
   "values_printed": false
 }

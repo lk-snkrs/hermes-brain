@@ -1,3 +1,9 @@
+## 2026-06-29 — Weekly Lucas Brain Learning Loop W27
+
+- Criado relatório semanal `reports/hermes-learning-weekly/2026-W27-2026-06-23_2026-06-29.md`, sintetizando os loops diários 02h de 2026-06-23 a 2026-06-29.
+- Status semanal: atenção controlada, com ação necessária recém-detectada pelo Nightly Ops para o audit local Honcho; sem decisão pendente de Lucas neste relatório.
+- Preservados limites: relatório/governança local apenas; sem Docker/VPS/gateway/cron mutation, sem writes Shopify/Tiny/GMC/Klaviyo/Meta/WhatsApp/e-mail/database e sem secrets impressos (`values_printed=false`).
+
 ## 2026-05-30 — Data boundaries e resumos autorizados multiempresa
 
 - Adicionada rotina `areas/operacoes/rotinas/data-boundaries-authorized-summaries.md` para aplicar aprendizados Pixel AI Hub/Brainzinho: Brain/Git guarda conhecimento estável; APIs/bancos/sistemas seguem como fontes vivas para dados operacionais.

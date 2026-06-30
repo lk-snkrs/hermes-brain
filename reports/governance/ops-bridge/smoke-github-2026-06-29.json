@@ -1,0 +1,14 @@
+{
+  "command": "smoke",
+  "read_only": true,
+  "generated_at_utc": "2026-06-29T19:36:36.753649+00:00",
+  "result": {
+    "args": [
+      "/opt/data/home/.local/bin/hermes-cli-integrations",
+      "smoke"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"results\": {\n    \"github\": {\n      \"method\": \"gh_api\",\n      \"rc\": 0,\n      \"status\": \"ok\"\n    }\n  },\n  \"values_printed\": false\n}\n",
+    "stderr": ""
+  }
+}

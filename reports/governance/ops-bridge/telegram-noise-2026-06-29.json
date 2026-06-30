@@ -1,0 +1,48 @@
+{
+  "command": "telegram-noise",
+  "read_only": true,
+  "generated_at_utc": "2026-06-29T21:24:34.880750+00:00",
+  "findings": [
+    {
+      "registry": "/opt/data/cron/jobs.json",
+      "job": "Relatório Hermes diário 01h+02h+02h15+02h25+02h50 + Score 0–100 — 03h Telegram",
+      "deliver": "origin"
+    },
+    {
+      "registry": "/opt/data/cron/jobs.json",
+      "job": "Skill Surface Diet daily drift audit read-only",
+      "deliver": "origin"
+    },
+    {
+      "registry": "/opt/data/cron/jobs.json",
+      "job": "Skill Surface Diet weekly supervised review prompt",
+      "deliver": "origin"
+    },
+    {
+      "registry": "/opt/data/cron/jobs.json",
+      "job": "Skill Surface Diet monthly heavy-skill curation audit",
+      "deliver": "origin"
+    },
+    {
+      "registry": "/opt/data/profiles/lk-stock/cron/jobs.json",
+      "job": "LK Stock Gate B daily freshness reconcile read-only",
+      "deliver": "origin"
+    },
+    {
+      "registry": "/opt/data/profiles/lk-stock/cron/jobs.json",
+      "job": "LK Supabase public exposure security gate daily",
+      "deliver": "origin"
+    },
+    {
+      "registry": "/opt/data/profiles/mordomo/cron/jobs.json",
+      "job": "LC Mordomo OS WhatsApp daily digest 17h",
+      "deliver": "origin"
+    },
+    {
+      "registry": "/opt/data/profiles/mordomo/cron/jobs.json",
+      "job": "LC Mordomo OS daily 06h self-review",
+      "deliver": "origin"
+    }
+  ],
+  "finding_count": 8
+}
