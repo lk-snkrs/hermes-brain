@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-30T12:43:39.985297+00:00",
+  "generated_at_utc": "2026-06-30T12:42:40.828823+00:00",
   "profiles": [
     {
       "profile": "default",
@@ -91,7 +91,15 @@
       "disabled_count": 208,
       "skills_count": 150,
       "protected_disabled": [],
-      "enabled_heavy_skills": [],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 100458,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
       "running_gateways": [
         {
           "pid": 203750,
@@ -172,7 +180,15 @@
       "disabled_count": 100,
       "skills_count": 147,
       "protected_disabled": [],
-      "enabled_heavy_skills": [],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 101044,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
       "running_gateways": [
         {
           "pid": 48543,
@@ -195,7 +211,15 @@
       "disabled_count": 114,
       "skills_count": 153,
       "protected_disabled": [],
-      "enabled_heavy_skills": [],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 101980,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
       "running_gateways": [
         {
           "pid": 46223,
@@ -218,7 +242,15 @@
       "disabled_count": 154,
       "skills_count": 194,
       "protected_disabled": [],
-      "enabled_heavy_skills": [],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 101044,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
       "running_gateways": [
         {
           "pid": 535,
@@ -241,7 +273,15 @@
       "disabled_count": 175,
       "skills_count": 226,
       "protected_disabled": [],
-      "enabled_heavy_skills": [],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 104229,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
       "running_gateways": [
         {
           "pid": 1029,
@@ -264,7 +304,15 @@
       "disabled_count": 208,
       "skills_count": 158,
       "protected_disabled": [],
-      "enabled_heavy_skills": [],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 100458,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
       "running_gateways": [
         {
           "pid": 602,
@@ -287,7 +335,15 @@
       "disabled_count": 167,
       "skills_count": 195,
       "protected_disabled": [],
-      "enabled_heavy_skills": [],
+      "enabled_heavy_skills": [
+        {
+          "name": "lk-operational-intelligence",
+          "bytes": 102461,
+          "path": "productivity/lk-operational-intelligence/SKILL.md",
+          "disabled": false,
+          "has_full_reference": false
+        }
+      ],
       "running_gateways": [
         {
           "pid": 201,
@@ -350,5 +406,55 @@
     }
   ],
   "issues": [],
-  "warnings": []
+  "warnings": [
+    {
+      "profile": "lk-collection-optimizer",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 100458,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    },
+    {
+      "profile": "lk-growth",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 101044,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    },
+    {
+      "profile": "lk-ops",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 101980,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    },
+    {
+      "profile": "lk-shopify",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 101044,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    },
+    {
+      "profile": "lk-stock",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 104229,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    },
+    {
+      "profile": "lk-trends",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 100458,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    },
+    {
+      "profile": "mordomo",
+      "kind": "enabled_heavy_skill",
+      "skill": "lk-operational-intelligence",
+      "bytes": 102461,
+      "path": "productivity/lk-operational-intelligence/SKILL.md"
+    }
+  ]
 }
