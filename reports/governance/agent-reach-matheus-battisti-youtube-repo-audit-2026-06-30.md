@@ -66,6 +66,19 @@ Não instalar wholesale agora em todos os profiles. Recomendo piloto controlado 
 4. Integrar com Hermes como skill/procedimento, não como substituto do broker central.
 5. Usar como fonte de inspiração para um "internet capability doctor" do próprio Hermes: doctor por canal, active_backend, fallback e recipe de correção.
 
+## Decisão de Lucas — 2026-06-30T16:41:56Z
+
+Lucas decidiu: **não instalar o Agent Reach agora**.
+
+Status operacional:
+- Instalação: **não autorizada / não executar**.
+- Piloto: **não abrir agora**; fica apenas como opção futura se Lucas pedir explicitamente.
+- Runtime/cron/profile: **nenhuma alteração**.
+- Credenciais/cookies/browser login: **não configurar**.
+- Uso recomendado por enquanto: aproveitar somente os padrões conceituais úteis para Hermes — registry de canais, doctor por canal, fallback ordenado e silent-OK.
+
+Próxima ação permitida sem nova aprovação: apenas reaproveitar ideias no desenho documental do Ops Bridge/central auth broker, sem instalar pacote, sem capturar cookies e sem alterar runtimes.
+
 ## Valor para o Hermes de Lucas
 
 O mais valioso não é instalar todas as ferramentas. É copiar o padrão operacional:
