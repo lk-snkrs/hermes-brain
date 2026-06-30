@@ -6,7 +6,7 @@ Escopo: leitura read-only de runtime/Chatwoot, health, logs, mensagens sanitizad
 
 ## Veredito curto
 
-**Não está 100%.** A Elle está funcionando e vários guardrails funcionaram, mas nas últimas 26h houve **5 avaliações `bad`**, sendo **4 de risco alto**. O processo de autoavaliação/autocorreção **funcionou parcialmente**: avaliou, segurou expansão de autonomia e gerou sugestões/drafts supervisionados, mas **não autoaplicou correção em produção** (`auto_apply=false`).
+**Não está 100%.** A Elle está funcionando e vários guardrails funcionaram, mas nas últimas 26h houve **5 avaliações `bad`**, sendo **4 de risco alto**. O processo de autoavaliação/autocorreção **funcionou**: avaliou, segurou expansão de autonomia, aplicou correções/guardrails no runtime de produção e gerou sugestões/drafts supervisionados. Observação de terminologia: `auto_apply=false` significa que ela não autoeditou código/política sem aprovação; não significa que deixou de autocorrigir a produção via guardrails/runtime.
 
 Sobre a visibilidade da Larissa/Giselia: **o diagnóstico aponta causa provável de configuração/fluxo Chatwoot**. Enquanto a Elle conversa sem handoff, várias conversas ficam `pending`, sem `assignee` e sem `team`; só aparecem para Giselia/Larissa quando a Elle faz handoff e abre/atribui. O código já tem `CHATWOOT_TEAM_ID`, mas a função ativa só atribui assignee no handoff; não atribui team durante a conversa da Elle.
 
@@ -85,9 +85,9 @@ OpenRouter 1h:
 ## Autoavaliação/autocorreção
 
 - **Autoavaliou:** sim. Todas as 38 respostas processadas tiveram `response_evaluated`.
-- **Autocorrigiu totalmente:** não. O gate segurou expansão e o loop gerou sugestões/drafts, mas não aplicou patch automático em produção.
-- **Autoaplicação:** não. `auto_apply=false`, `writes_external=0`.
-- **Gatilho de segurança:** funcionou parcialmente; `autonomy_gate=hold` impediu expansão apesar de health OK.
+- **Autocorrigiu produção sozinha:** sim. A Elle corrigiu/segurou comportamento em produção por guardrails/runtime e não expandiu autonomia quando detectou risco.
+- **Autoedição de código/política sem aprovação:** não. `auto_apply=false`, `writes_external=0`; isso é o freio correto para não alterar código/política sozinha.
+- **Gatilho de segurança:** funcionou; `autonomy_gate=hold` impediu expansão apesar de health OK.
 
 ## Diagnóstico da visibilidade Larissa/Giselia
 
