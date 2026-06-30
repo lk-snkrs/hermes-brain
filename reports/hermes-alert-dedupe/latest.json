@@ -2,16 +2,14 @@
   "active": [
     {
       "alert": {
-        "detail": {
-          "job": "LK Shopify Sales OS nightly full reconcile read-only",
-          "registry": "/opt/data/profiles/lk-stock/cron/jobs.json",
-          "status": "error"
-        },
-        "type": "cron_non_ok"
+        "issues": [
+          "gateway_watchdog_not_silent_ok"
+        ],
+        "type": "nightly_self_improvement_regression_attention"
       },
-      "fingerprint": "86567245ca83a228",
-      "first_seen": "2026-06-29T05:01:32.059614+00:00",
-      "last_seen": "2026-06-29T05:01:32.059614+00:00",
+      "fingerprint": "cafc37a2c6f36ff9",
+      "first_seen": "2026-06-30T05:01:33.430610+00:00",
+      "last_seen": "2026-06-30T05:01:33.430610+00:00",
       "seen_count": 1,
       "status": "new"
     },
@@ -30,8 +28,8 @@
       },
       "fingerprint": "d40ff8a792003ed5",
       "first_seen": "2026-06-26T05:02:12.325062+00:00",
-      "last_seen": "2026-06-29T05:01:32.059614+00:00",
-      "seen_count": 4,
+      "last_seen": "2026-06-30T05:01:33.430610+00:00",
+      "seen_count": 5,
       "status": "recurring"
     }
   ],
@@ -201,8 +199,9 @@
       "fingerprint": "86567245ca83a228",
       "first_seen": "2026-06-29T05:01:32.059614+00:00",
       "last_seen": "2026-06-29T05:01:32.059614+00:00",
+      "resolved_at": "2026-06-30T05:01:33.430610+00:00",
       "seen_count": 1,
-      "status": "new"
+      "status": "resolved"
     },
     "877bf6b0ee5b379b": {
       "alert": {
@@ -298,6 +297,19 @@
       "seen_count": 1,
       "status": "resolved"
     },
+    "cafc37a2c6f36ff9": {
+      "alert": {
+        "issues": [
+          "gateway_watchdog_not_silent_ok"
+        ],
+        "type": "nightly_self_improvement_regression_attention"
+      },
+      "fingerprint": "cafc37a2c6f36ff9",
+      "first_seen": "2026-06-30T05:01:33.430610+00:00",
+      "last_seen": "2026-06-30T05:01:33.430610+00:00",
+      "seen_count": 1,
+      "status": "new"
+    },
     "d40ff8a792003ed5": {
       "alert": {
         "profiles": [
@@ -313,8 +325,8 @@
       },
       "fingerprint": "d40ff8a792003ed5",
       "first_seen": "2026-06-26T05:02:12.325062+00:00",
-      "last_seen": "2026-06-29T05:01:32.059614+00:00",
-      "seen_count": 4,
+      "last_seen": "2026-06-30T05:01:33.430610+00:00",
+      "seen_count": 5,
       "status": "recurring"
     },
     "f9acad02865c915c": {
@@ -336,7 +348,7 @@
   },
   "new_count": 1,
   "recurring_count": 1,
-  "resolved_since_previous_count": 0,
-  "updated_at": "2026-06-29T05:01:32.059614+00:00",
+  "resolved_since_previous_count": 1,
+  "updated_at": "2026-06-30T05:01:33.430610+00:00",
   "values_printed": false
 }
