@@ -105,13 +105,16 @@ Qualquer approval packet deve declarar qual padrão canônico foi aplicado e o q
 
 Para tema/Liquid/CSS/JS/snippet/section em Production, o caminho correto é **GitHub como fonte de verdade**:
 
-1. validar em DEV/unpublished quando aplicável;
-2. aplicar o diff no repositório do tema;
-3. abrir PR/merge para `production`;
-4. deixar o pipeline/deploy/sync atualizar Shopify;
-5. fazer readback Shopify + QA + receipt.
+1. **validar sempre em DEV/unpublished primeiro** para qualquer alteração de tema/section/snippet/Liquid/CSS/JS que vá para Production; isso inclui fixes urgentes e pedidos aparentemente simples como footer;
+2. fazer readback/QA do DEV e guardar evidência antes de tocar Production;
+3. aplicar o diff no repositório do tema;
+4. abrir PR/merge para `production`;
+5. deixar o pipeline/deploy/sync atualizar Shopify ou promover apenas o asset exato já aprovado após o merge, quando o sync não ocorrer;
+6. fazer readback Shopify + QA público + receipt.
 
-É proibido fazer write direto no tema Shopify Production via Asset API por padrão. Uma aprovação genérica como `Aprovo Production` não autoriza esse caminho direto. Direct Asset API em Production só pode ocorrer se Lucas aprovar explicitamente um hotfix emergencial direto, nomeando esse caminho e o escopo.
+É proibido pular o gate DEV. Lucas classificou isso como erro crítico em 2026-06-30 após o caso do footer LK Flagship. Uma aprovação genérica como `Aprovo Production`, `seguir` ou urgência operacional **não** dispensa DEV/readback/QA antes de Production.
+
+É proibido fazer write direto no tema Shopify Production via Asset API por padrão. Direct Asset API/GraphQL upsert em Production só pode ocorrer depois do DEV gate + PR/merge, ou se Lucas aprovar explicitamente um hotfix emergencial direto, nomeando esse caminho e o escopo.
 
 ## Handoff obrigatório
 

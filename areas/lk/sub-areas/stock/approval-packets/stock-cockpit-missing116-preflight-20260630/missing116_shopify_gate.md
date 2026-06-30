@@ -1,15 +1,16 @@
 # Missing116 Shopify gate — 2026-06-30
 
-- generated_at_utc: `2026-06-30T13:34:44.616992+00:00`
+- generated_at_utc: `2026-06-30T15:46:16.415516+00:00`
 - values_printed: false
 - writes_executed: 0
 
 ## Summary
-- `shopify_exact_sku_unique_preflight_needed`: 98
-- `shopify_exact_sku_duplicate`: 18
+- `shopify_exact_sku_unique_preflight_needed`: 106
+- `shopify_exact_sku_duplicate`: 10
 
 ## Rows needing Tiny preflight
 - PAC-8676062-40 · Shorts Pace Midmasa Tailored Charcoal · 40 · shorts-pace-midmasa-tailored-charcoal
+- CV1659001 · Tênis Nike SB Dunk Low VX 1000 Camcorder Cinza · 35 · nike-sb-dunk-low-vx-1000-camcorder
 - 1203A655-100-7 · Tênis Asics GT-2160 x Above the Clouds White Pure Silver Branco · 41 · tenis-asics-gt-2160-x-above-the-clouds-white-pure-silver-branco
 - JH392-3 · Tênis adidas SL 72 Og Solar Red Lavander Vermelho · 36 · tenis-adidas-sl72-og-solar-red-lavander-vermelho
 - CD2563006-9 · Tênis Nike SB Dunk Low Pro ISO Black Gum Preto · 44 · nike-sb-dunk-low-pro-iso-black-gum
@@ -40,6 +41,7 @@
 - 5552-2 · Camiseta Regular Dane-se Ipê do Cerrado Branco · G/L · camiseta-regular-dane-se-ipe-do-cerrado-branco
 - 2183B513100-3 · Camiseta Oversized Onitsuka Tiger x Astroboy Graphic Branco · M · camiseta-oversized-onitsuka-tiger-x-astroboy-graphic-branco
 - IH3144-2 · Tênis adidas Gazelle x Clot By Edison Chen Halo Ivory Bege · 39 · tenis-adidas-gazelle-x-clot-by-edison-chen-halo-ivory-bege
+- DJ9955800 · Tênis Nike Dunk Low Patent Halloween Laranja · 36 · nike-dunk-low-patent-halloween
 - 9960807-16 · Moletom Lululemon Scuba Oversized Half-Zip · True Navy/Gold / XS/PP · moletom-lululemon-scuba-oversized-half-zip
 - DN1431103-34 -6 · Tênis Nike Dunk Low Next Nature Lilac Roxo · 39 · nike-dunk-low-next-nature-lilac
 - 8351150-13 · Short Lululemon Align™ High-Rise 6" · White / M/M · short-lululemon-align™-high-rise-6
@@ -48,6 +50,7 @@
 - CZ0790-002-1 · Tênis Nike Air Jordan 1 Low Og Metallic Silver Cinza · 38 · tenis-air-jordan-1-low-og-metallic-silver-cinza
 - 553560412-2 · Tênis Nike Air Jordan 1 Low True Blue Azul · 35 · air-jordan-1-low-true-blue
 - PAC-8544990-38 · Calça Pace Milli Cargo Azul Marinho · 38 · calca-pace-milli-cargo-azul-marinho
+- MR530EMA · Tênis New Balance 530 Silver White Branco · 34 · tenis-new-balance-530-silver-white-branco
 - 553560612-37 · Tênis Nike Air Jordan 1 Low Bred Toe Vermelho · 37 · air-jordan-1-low-bred-toe-1
 - JR9446-1 · Tênis Adidas Samba OG Crochet Pack Sand Strata Bege · 34 · tenis-adidas-samba-og-crochet-pack-sand-strata-bege
 - 3MF30664615 · Tênis On Running Cloudsolo Loewe Dark Sand Cream Bege · 36 · tenis-on-running-cloudsolo-loewe-dark-sand-cream-bege
@@ -70,6 +73,7 @@
 - BQ6817401-2 · Tênis Nike SB Dunk Low Club 58 Gulf Azul · 36 · nike-sb-dunk-low-club-58-gulf
 - 555088105-39 · Tênis Nike Air Jordan 1 High Dark Mocha Marrom · 39 · air-jordan-1-high-dark-mocha
 - ML860AL2-5 · Tênis New Balance 860v2 x Aimé Leon Dore Green Verde · 39.5 · tenis-new-balance-860v2-x-aime-leon-dore-green-verde
+- GY0042 · Tênis Adidas Campus 00s Crystal White Branco · 34 · tenis-adidas-campus-00s-crystal-white-branco
 - 471321-4 · Camiseta KAWS x Uniqlo Warhol UT Graphic 471321 Branco · GG/XL · camiseta-kaws-x-uniqlo-warhol-ut-graphic-branco
 - 9820425-11 · Calça Lululemon Groove Nulu Super-High-Rise Flared Regular · True Navy / XS/PP · calca-lululemon-groove-nulu-super-high-rise-flared-regular
 - ST76 · Shorts Saint Studio Everywear Caqui Bege · 42 · shorts-saint-studio-everywear-caqui-bege
@@ -81,6 +85,7 @@
 - DC0774101-14 · Tênis Nike Air Jordan 1 Low Panda (2023) Preto · 42 · air-jordan-1-low-panda-2023
 - 43774078388040 · Tênis New Balance 9060 Garter Snake Pearl Grey Verde · 42 · tenis-new-balance-9060-garter-snake-pearl-grey-verde
 - 39884602-6 · Tênis Puma Speedcat Og Red White Vermelho · 39 · tenis-puma-speedcat-og-red-white-vermelho
+- 183A872 · Tênis Onitsuka Tiger Mexico 66 SD Kill Bill Amarelo · 40 · tenis-onitsuka-tiger-mexico-66-sd-kill-bill-amarelo
 - IH7756 · Tênis adidas Samba x Wales Bonner Wonder Clay Royal Bege · 35 · tenis-adidas-samba-x-wales-bonner-wonder-clay-royal-bege
 - CZ4776101-1 · Tênis Nike Air Jordan 1 Low Multi-Color Royal Toe Colorido · 37.5 · air-jordan-1-low-multi-color-royal-toe
 - CW1590-601-3 · Tênis Nike Dunk Low Pink Red White Rosa · 36 · nike-dunk-low-pink-red-white
@@ -90,8 +95,11 @@
 - U9060LBC-7 · Tênis New Balance 9060 Rose Sugar Angora Rosa · 39 · tenis-new-balance-9060-rose-sugar-ice-wine-rosa
 - JS3931-7 · Tênis Adidas Samba LT Cow Print Brown White Marrom · 40 · tenis-adidas-samba-lt-cow-print-brown-white-marrom
 - 553558030 · Tênis Nike Air Jordan 1 Low Light Smoke Grey Cinza · 44 · air-jordan-1-low-light-smoke-grey
+- FJ3453-200 · Tênis Air Jordan 1 Low SE "Legend Coffee" Marrom · 41 · tenis-air-jordan-1-low-se-legend-coffee-marrom
+- FQ0997-389 · Jersey Off White x Nike "Allover Print Kelly Green" Verde · G · jersey-off-white-x-nike-allover-print-kelly-green-verde
 - CDGP1-5 · Polo Comme des Garçons PLAY Black Emblem Black Preto · PP/XS · polo-comme-des-garcons-play-preto
 - GW1931-43 · Tênis Yeezy Slide Ochre Marrom · 43 · yeezy-slide-ochre-925686464
+- U1906LNU · Tênis New Balance 1906L Khaki Bege · 37.5 · tenis-new-balance-1906l-khaki-bege
 - W3660R_00-5 · Cropped Alo Yoga 1/4 Zip Alumni Pullover Preto · L/G · cropped-alo-yoga-1-4-zip-alumni-pullover-preto
 - CU9225100-9 · Tênis Nike Air Force 1 Low x Supreme White Branco · 39.5 · supreme-x-nike-air-force-1-low-box-logo-white
 - HQ2004-400-1 · Tênis Nike Air Jordan 1 Low SE Glacier Blue Azul · 36 · tenis-air-jordan-1-low-se-glacier-blue-azul
