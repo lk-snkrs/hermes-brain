@@ -265,3 +265,12 @@ Lucas autorizou OAuth oficial do Shopify CLI em 2026-06-27 para `lk-sneakerss.my
 8. Não copiar `.env`, `auth.json`, `mcp-tokens` nem cache OAuth entre profiles; se auth quebrar, abrir reauth/incident packet em vez de espalhar credenciais.
 
 <!-- SHOPIFY_OFFICIAL_CLI_POLICY_END -->
+
+## REGRA CRÍTICA — EVITAR EMPILHAMENTO DE BLOCOS (ANTI-FRANKENSTEIN)
+
+Registrada em: 2026-07-01T15:45:00Z | Feedback Lucas: "estamos com um PROBLEMA... cada vez criando um novo bloco"
+
+1. **PROIBIDO EMPILHAR:** Nunca adicione um novo bloco editorial, de FAQ ou Guia a uma coleção ou PDP sem antes mapear todos os blocos já presentes.
+2. **PRIORIZAR REFINO:** Se a página já possui um guia ou texto editorial, a otimização deve obrigatoriamente ser um REFINO (edit/patch) do bloco existente, mantendo a página limpa e premium.
+3. **MÁXIMO DE 1 GUIA:** Cada coleção/pdp deve ter no máximo UM bloco editorial mestre após o grid de produtos. Se houver blocos legados (v4, v5, v6), eles devem ser unificados ou deletados antes da injeção do novo.
+4. **VERIFICAÇÃO OBRIGATÓRIA:** Auditoria visual (readback público) e técnica (Admin API) prévia é requisito para qualquer aprovação de write.
