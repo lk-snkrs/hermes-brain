@@ -1,6 +1,6 @@
 # Mordomo CRM local — status
 
-Atualizado: 2026-07-01T04:26:45.157800+00:00
+Atualizado: 2026-07-01T04:59:58.193822+00:00
 
 - contacts: 424
 - followups: 394
