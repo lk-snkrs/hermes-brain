@@ -2,17 +2,10 @@
   "operating_rule": "Do not repeat an alert unchanged; classify root cause, safe next action and approval boundary.",
   "patterns": [
     {
-      "next_safe_action": "inspect the exact failing local gate, fix locally if safe, and keep Telegram alert-only for actionable degradation.",
-      "object": "gateway_watchdog_not_silent_ok",
-      "pattern": "nightly_self_improvement_regression_attention",
-      "seen_count": 1,
-      "why_it_causes_errors": "Self-heal, Reminder OS, Memory OS, or gateway regression can silently undo recent operating improvements."
-    },
-    {
       "next_safe_action": "compare helper inventory, expected profile map and runtime env injection; report presence/status only.",
       "object": "lk-shopify",
       "pattern": "expected_secret_missing_or_map_mismatch",
-      "seen_count": 5,
+      "seen_count": 6,
       "why_it_causes_errors": "Agents may claim an integration is absent when the issue is naming/runtime injection/map drift."
     },
     {
@@ -23,7 +16,7 @@
       "why_it_causes_errors": "Oversized/stale/broken-reference skills increase hallucinated or outdated operating instructions."
     }
   ],
-  "patterns_count": 3,
-  "updated_at": "2026-06-30T05:01:33.432502+00:00",
+  "patterns_count": 2,
+  "updated_at": "2026-07-01T05:01:22.502470+00:00",
   "values_printed": false
 }

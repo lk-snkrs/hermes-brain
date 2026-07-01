@@ -2,19 +2,6 @@
   "active": [
     {
       "alert": {
-        "issues": [
-          "gateway_watchdog_not_silent_ok"
-        ],
-        "type": "nightly_self_improvement_regression_attention"
-      },
-      "fingerprint": "cafc37a2c6f36ff9",
-      "first_seen": "2026-06-30T05:01:33.430610+00:00",
-      "last_seen": "2026-06-30T05:01:33.430610+00:00",
-      "seen_count": 1,
-      "status": "new"
-    },
-    {
-      "alert": {
         "profiles": [
           {
             "missing": 1,
@@ -28,12 +15,12 @@
       },
       "fingerprint": "d40ff8a792003ed5",
       "first_seen": "2026-06-26T05:02:12.325062+00:00",
-      "last_seen": "2026-06-30T05:01:33.430610+00:00",
-      "seen_count": 5,
+      "last_seen": "2026-07-01T05:01:22.501600+00:00",
+      "seen_count": 6,
       "status": "recurring"
     }
   ],
-  "active_count": 2,
+  "active_count": 1,
   "alerts": {
     "271525f7aad957b2": {
       "alert": {
@@ -307,8 +294,9 @@
       "fingerprint": "cafc37a2c6f36ff9",
       "first_seen": "2026-06-30T05:01:33.430610+00:00",
       "last_seen": "2026-06-30T05:01:33.430610+00:00",
+      "resolved_at": "2026-07-01T05:01:22.501600+00:00",
       "seen_count": 1,
-      "status": "new"
+      "status": "resolved"
     },
     "d40ff8a792003ed5": {
       "alert": {
@@ -325,8 +313,8 @@
       },
       "fingerprint": "d40ff8a792003ed5",
       "first_seen": "2026-06-26T05:02:12.325062+00:00",
-      "last_seen": "2026-06-30T05:01:33.430610+00:00",
-      "seen_count": 5,
+      "last_seen": "2026-07-01T05:01:22.501600+00:00",
+      "seen_count": 6,
       "status": "recurring"
     },
     "f9acad02865c915c": {
@@ -346,9 +334,9 @@
       "status": "resolved"
     }
   },
-  "new_count": 1,
+  "new_count": 0,
   "recurring_count": 1,
   "resolved_since_previous_count": 1,
-  "updated_at": "2026-06-30T05:01:33.430610+00:00",
+  "updated_at": "2026-07-01T05:01:22.501600+00:00",
   "values_printed": false
 }
