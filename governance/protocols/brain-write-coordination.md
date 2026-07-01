@@ -79,7 +79,18 @@ scripts/brain-safe-push.sh -m "brain sync $(date '+%F %H:%M')" memories/ receipt
 
 Ela faz: staging escopado (nunca `git add -A`) → `git pull --rebase --autostash` → push com retry → para e pede resolução manual em conflito real (nunca `--force`).
 
-## Pendências fora deste repo
+## Decisão: coordenação manual (2026-07-01)
 
-- **Runtime HERMES no VPS** (`/opt/data`, commits "Hermes Brain Sync"): trocar o `git push origin main` cru pelo `scripts/brain-safe-push.sh` (ou pelo mesmo padrão pull-before-push). Aplicação exige acesso ao VPS com backup/rollback e aprovação escopada de Lucas. Enquanto não aplicado, esse lado ainda pode empurrar cego.
-- `sync_hermes.sh` (legado, `/root/cerebro-cimino`) já está fail-safe: guard de deprecação + padrão git seguro; não faz parte do runtime atual.
+Investigação read-only (VPS + Mac) concluiu que o escritor automático "Hermes Brain Sync" **não roda no VPS nem no Mac de Lucas** — não há clone `hermes-brain` em nenhum dos dois. É um scheduler externo (provável "Cron MiniMax", citado no `sync_hermes.sh` legado) que clona, consolida e empurra pro `main`. Commits são unsigned local-git (não API/Action). **Não é alcançável a partir dos ambientes que operamos.**
+
+Como não dá para corrigir o código do escritor externo daqui, a coordenação passa a ser **manual, do lado que controlamos (CLAUDE)**, apoiada na rede de segurança nativa do GitHub:
+
+1. **CLAUDE sempre `git pull` antes de escrever** e **`branch → PR → merge`** — o GitHub **rejeita o merge se houver conflito**, então CLAUDE nunca sobrescreve o trabalho do escritor externo.
+2. **Re-sincronizar imediatamente antes do merge** (o externo pode ter empurrado durante o trabalho): garantir a branch em cima do `main` mais novo.
+3. **Nunca `--force` no `main`.**
+4. **Conflito → parar e mostrar a Lucas** o diff; nunca resolver com force. Inspecionar antes de sobrescrever.
+5. **Não** há branch protection server-side nem patch no VPS por ora (decisão de simplicidade). Reabrir só se aparecer perda de dado real.
+
+Risco aceito: se o escritor externo fizer `git push --force` (fora do nosso alcance), pode reescrever histórico. Até hoje não há evidência disso; se surgir, escalar para habilitar branch protection no `main`.
+
+`sync_hermes.sh` (legado, `/root/cerebro-cimino`) já está fail-safe (guard + git seguro) e não faz parte do runtime atual.
