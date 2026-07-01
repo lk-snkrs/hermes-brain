@@ -1,7 +1,7 @@
 # Approval packet — limpar variável webhook herdada em gateways secundários
 
 Data: 2026-06-30
-Status: aguardando aprovação escopada
+Status: superseded/resolvido por execução 2026-06-30T10:17Z e revalidação viva 2026-07-01T09:38:47Z
 Risco: A3 runtime local de gateways secundários
 values_printed=false
 
@@ -14,7 +14,7 @@ O watchdog global de gateways Telegram encontrou dois perfis secundários vivos 
 Não há evidência de valores impressos. O problema é de superfície runtime herdada, não de secret ausente.
 
 ## Por que não auto-corrigi neste cron
-A correção real exige parar/reiniciar processos de gateway secundários ou matar processos inseguros após substituição por processo limpo. Isso é mutação de runtime/gateway e está bloqueado dentro do Daily Intelligence sem aprovação atual.
+Este relatório era o preflight inicial. A correção escopada foi posteriormente aprovada/executada em 2026-06-30T10:17Z e revalidada em 2026-07-01T09:38:47Z. Não tratar este arquivo como bloqueio ativo sem novo readback vivo.
 
 ## Escopo de aprovação recomendado
 Aprovar somente:
@@ -31,3 +31,8 @@ Se o novo processo não conectar ou herdar superfície indevida, parar somente o
 - Preflight 2026-06-30 02h BRT: `nightly_self_improvement_regression.status=attention`, issue `gateway_watchdog_not_silent_ok`.
 - Watchdog all Telegram gateways 05:01 UTC: alerta para `spiti-atendimento` e `lk-finance` com `WEBHOOK_SECRET`.
 - Probe local read-only deste run confirmou os dois PIDs vivos, `HERMES_HOME` correto e `bad_keys=['WEBHOOK_SECRET']`.
+
+
+## Revalidação 2026-07-01
+
+Readback vivo atual confirmou `WEBHOOK_SECRET` ausente, `API_SERVER_KEY` ausente, `DOPPLER_TOKEN` ausente, API/webhook desligados e Telegram OK para `spiti-atendimento` e `lk-finance`. Ver `reports/governance/webhook-secret-secondary-gateways-revalidation-2026-07-01.md`.

@@ -265,3 +265,18 @@ Critérios de sucesso atingidos:
 ## Status
 
 Execução escopada concluída e validada.
+
+## Revalidação Mesa COO — 2026-07-01
+
+Lucas escolheu **Fazer** na Mesa COO 2026-07-01 para revalidar a divergência entre o fechamento 01h e o Daily Intelligence 02h.
+
+Readback local/sanitizado em `2026-07-01T09:38:47Z`:
+
+| Profile | PID vivo | Telegram | `WEBHOOK_SECRET` | `API_SERVER_KEY` | `DOPPLER_TOKEN` | `HERMES_MAX_ITERATIONS` |
+|---|---:|---|---|---|---|---:|
+| `spiti-atendimento` | `1726876` | `spitiatendimento_hermesbot` OK | ausente | ausente | ausente | `55` |
+| `lk-finance` | `870870` | `lkfinance_hermesbot` OK | ausente | ausente | ausente | `50` |
+
+Conclusão: a pendência remanescente no Daily Consolidation 2026-07-01 é **stale**; a fonte viva atual está limpa. Nenhum restart/kill/Docker/VPS/Traefik/secret/cron foi executado nesta revalidação.
+
+Artefato de reconciliação: `reports/governance/webhook-secret-secondary-gateways-revalidation-2026-07-01.md`.

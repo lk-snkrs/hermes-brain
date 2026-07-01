@@ -1,7 +1,43 @@
 # Inventário vivo — crons, agentes, profiles e projetos
 
-Data-base: 2026-06-30 11:20 UTC
-Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-06-30**
+Data-base: 2026-07-01 11:21 UTC
+Status: **Fase 1A aprovada por Lucas — inventário inicial + Fechamento recorrente ativo; última evidência runtime via fallback Hermes CLI em 2026-07-01**
+
+---
+
+### Atualização 2026-07-01 11:21 UTC
+
+**Fonte:** `cronjob list` solicitado; `cronjob` não disponível no PATH deste runtime. Fallback canônico usado: `HERMES_HOME=/opt/data /opt/hermes/.venv/bin/hermes cron list --all`. Fonte estruturada sanitizada para contagem: `/opt/data/cron/jobs.json`.
+
+**Contagem:** 50 jobs totais — 46 ativos, 4 pausados.
+
+**`last_status` não-ok:** 1.
+- `ec0473a3a010` Hermes Brain safe GitHub checkpoint 30min — active, `deliver=local`, `error` em 2026-07-01T11:00:55.547030+00:00; stdout sanitizado do scheduler indica bloqueio por `git diff --check failed`.
+
+**Erros explícitos de delivery do scheduler:** 0. **Falhas em stdout de job:** 1 job com `last_status=error`; stdout bruto não versionado.
+
+**Jobs ativos sem primeira execução registrada:** 1.
+- `dbafe9b8bfca` Skill Surface Diet weekly supervised review prompt — active, `deliver=origin`, sem Last run; próxima execução: 2026-07-06T05:45:00+00:00.
+
+**Jobs pausados na evidência viva:**
+- `663e3e6a148c` SPITI Telegram gateway watchdog — paused, `deliver=local`, ok / 2026-05-30T15:52:55.201503+00:00.
+- `876d54c62ccd` LK Growth Telegram gateway watchdog — paused, `deliver=local`, ok / 2026-05-30T15:52:55.226608+00:00.
+- `955dc769b5a6` LK specialist Telegram gateway watchdog — paused, `deliver=origin`, ok / 2026-05-30T15:52:55.190857+00:00.
+- `ac0b440e2643` Mordomo Telegram gateway watchdog — paused, `deliver=local`, ok / 2026-05-30T15:52:55.213145+00:00.
+
+**Drift/notable reconciliation:**
+- Contagem estável vs 2026-06-30: 50 totais / 46 ativos / 4 pausados.
+- Drift negativo: `ec0473a3a010` passou de `ok` para `error` por `git diff --check failed`; duas linhas em branco finais em docs locais foram corrigidas como auto-remediation A1, sem mutação de cron/runtime/externos.
+- Drift positivo: `27916e815136` Skill Surface Diet monthly heavy-skill curation audit agora tem primeira execução registrada e `ok` em 2026-07-01T06:15:50.528302+00:00.
+- `dbafe9b8bfca` segue active/`deliver=origin`/sem primeira execução; acompanhar até 2026-07-06T05:45 UTC e documentar owner/finalidade/critério de sucesso/contrato de alerta.
+- Jobs Skill Surface Diet com `deliver=origin` continuam precisando de reconciliação documental do owner/finalidade/critério de sucesso/contrato de alerta para evitar ruído em Telegram.
+- `fac3e13782c4` segue `deliver=origin` apesar de declarar silent-OK; permanece gap documental de contrato de alerta/ruído.
+- `2e5bc91d27d6` Hermes Nightly Operations Audit OS — 02h50 BRT segue ativo/local/ok e ainda merece reconciliação documental de owner/finalidade/critério de sucesso em rodada própria.
+- Documentação que descreve Mordomo/LK Growth/SPITI gateway watchdogs como ativos deve permanecer marcada como histórica até nova evidência viva mostrar reativação.
+
+**Jobs deliver=origin (saídas intencionais/condicionais):** Ativos: Skill Surface Diet monthly heavy-skill curation audit (`27916e815136`), Reminder OS — 2h open-loop watchdog (`518634d5ea60`), Mesa COO diária Telegram (`749ee30b51eb`), Relatório Hermes diário 01h+02h+02h15+02h25+02h50 + Score 0–100 — 03h Telegram (`98478b820720`), Skill Surface Diet daily drift audit read-only (`ce165b7246d3`), Skill Surface Diet weekly supervised review prompt (`dbafe9b8bfca`), Honcho quality watchdog — silent OK (`fac3e13782c4`). Pausados: LK specialist Telegram gateway watchdog (`955dc769b5a6`).
+
+**Relatório completo:** `reports/governance/runtime-truth-reconciler-2026-07-01.md`
 
 ---
 
