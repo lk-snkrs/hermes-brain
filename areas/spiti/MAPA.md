@@ -20,6 +20,7 @@ Silêncio é melhor que dado errado.
 ## Sistemas e projetos GitHub
 
 - `contexto/spiti-hub-github.md` — inventário inicial do repo privado `spiti-auction/spiti-hub`, sistema operacional unificado da Spiti.
+- `contexto/spiti-hub-deploy-acessos.md` — onde vive a produção (contas SPITI separadas p/ Vercel e Supabase), tokens de deploy no Doppler, e como deployar front + edge function sem CLI.
 
 ## Rotinas
 
