@@ -31,7 +31,7 @@ O problema nunca é *armazenamento* (já é um só). É **coordenação de escri
 | | HERMES (automático) | CLAUDE (interativo) |
 |---|---|---|
 | Como escreve | direto no `main` | branch → PR → **merge** |
-| Proteção obrigatória | `git pull --rebase --autostash` **antes** de todo push + retry na rejeição | GitHub bloqueia o merge se houver conflito (rede de segurança) |
+| Proteção obrigatória | usar **`scripts/brain-safe-push.sh`** (pull --rebase --autostash antes de todo push + retry) em vez de `git push` cru | GitHub bloqueia o merge se houver conflito (rede de segurança) |
 | Nunca | `git add -A` cego em clone compartilhado; `--force` no main | commitar direto no main; `--force` no main |
 
 ## Território (reduz superfície de colisão)
@@ -69,7 +69,17 @@ Quando um push/merge conflita:
 6. `gh pr create` → `gh pr merge --merge --delete-branch`
 7. `git checkout main && git pull` → reportar PR + commit de merge
 
+## Primitiva canônica de push
+
+Todo escritor automático que empurra direto no `main` deve usar **`scripts/brain-safe-push.sh`** em vez de `git push origin main` cru:
+
+```bash
+scripts/brain-safe-push.sh -m "brain sync $(date '+%F %H:%M')" memories/ receipts/
+```
+
+Ela faz: staging escopado (nunca `git add -A`) → `git pull --rebase --autostash` → push com retry → para e pede resolução manual em conflito real (nunca `--force`).
+
 ## Pendências fora deste repo
 
-- Confirmar que o runtime do HERMES **no VPS** (`/opt/data`, commits "Hermes Brain Sync") faz `git pull --rebase` antes de `git push origin main`. Se empurrar cego, é o mesmo bug do outro lado e precisa de correção lá.
-- `sync_hermes.sh` (legado, `/root/cerebro-cimino`) foi marcado como fail-safe: guard de deprecação + padrão git seguro; não faz parte do runtime atual.
+- **Runtime HERMES no VPS** (`/opt/data`, commits "Hermes Brain Sync"): trocar o `git push origin main` cru pelo `scripts/brain-safe-push.sh` (ou pelo mesmo padrão pull-before-push). Aplicação exige acesso ao VPS com backup/rollback e aprovação escopada de Lucas. Enquanto não aplicado, esse lado ainda pode empurrar cego.
+- `sync_hermes.sh` (legado, `/root/cerebro-cimino`) já está fail-safe: guard de deprecação + padrão git seguro; não faz parte do runtime atual.
