@@ -48,6 +48,16 @@ Referências:
 - `empresa/contexto/task-router-hermes.md` — algoritmo operacional de roteamento e bloqueio.
 - `empresa/contexto/politica-autonomia-aprovacao-hermes.md` — fonte canônica para autonomia local, aprovação escopada, anti-loop e bloqueios obrigatórios.
 
+## Coordenação de escrita (múltiplos escritores)
+
+O Brain tem mais de um escritor simultâneo: o runtime HERMES (VPS `/opt/data`, commits diretos no `main`) e o CLAUDE (clone local, `branch → PR → merge`). Para não haver sobreposição, perda de update ou clone desatualizado, seguir `governance/protocols/brain-write-coordination.md`. Regras mínimas:
+
+1. **`main` no GitHub é a única fonte de verdade.** Ninguém afirma estado nem escreve sem `git pull` antes.
+2. **Pull-before-push sempre.** HERMES faz `git pull --rebase --autostash` antes de todo push e retry na rejeição; nunca `git add -A` cego em clone compartilhado; nunca `--force` no `main`.
+3. **CLAUDE escreve por `branch → PR → merge`** (GitHub bloqueia merge em conflito), com secret scan e commit escopado.
+4. **Território:** HERMES é dono de daily/hot/current/receipts/reports/CHANGELOG/consolidação; CLAUDE de `.claude/agents/`, skills, governance, docs. Preferir **arquivo novo por registro** a editar arquivão compartilhado.
+5. **Conflito:** rebase e **inspecionar antes de sobrescrever** — nunca dar clobber no trabalho do outro escritor; escalar para Lucas se não resolver, jamais `--force` para "resolver".
+
 ## Boot mínimo
 
 Antes de agir em trabalho operacional:

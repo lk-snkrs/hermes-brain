@@ -12,6 +12,19 @@
 
 set -e
 
+# ── Hard deprecation guard ────────────────────────────────────────────────
+# This legacy script references the old /root/cerebro-cimino path and is NOT
+# part of the current runtime. The canonical brain is lk-snkrs/hermes-brain
+# (branch main). Refuse to run unless explicitly opted in for audit, so it can
+# never silently clobber the canonical brain.
+# See governance/protocols/brain-write-coordination.md.
+if [ "${HERMES_ALLOW_DEPRECATED_SYNC:-0}" != "1" ]; then
+    echo "[Brain Sync] DEPRECATED: sync_hermes.sh is retained for reference only and must not run."
+    echo "[Brain Sync] Canonical brain = lk-snkrs/hermes-brain (main). See governance/protocols/brain-write-coordination.md."
+    echo "[Brain Sync] To force-run for audit only, set HERMES_ALLOW_DEPRECATED_SYNC=1 (concurrency-safe git pattern applies)."
+    exit 0
+fi
+
 SSH_HOST="root@72.60.150.124"
 SSH_PORT="22"
 # Senha via Doppler (lc-keys/prd) ou env var HERMES_VPS_SSH_PASS.
@@ -74,14 +87,30 @@ for pair in "${LOCAL_FILES[@]}"; do
     fi
 done
 
-# ── Auto-commit local changes ─────────────────────────────────────────────
+# ── Auto-commit local changes (concurrency-safe) ──────────────────────────
+# Two rules that prevent clobbering a brain that another writer (HERMES VPS
+# runtime or CLAUDE via PR) may have advanced:
+#   1. Scope `git add` to the intended files. Never `git add -A` in a shared
+#      clone — it sweeps unrelated work-in-progress and junk (e.g. .DS_Store).
+#   2. Pull-before-push: rebase onto the latest main before pushing, and retry
+#      once if the remote advanced mid-flight. Never force-push main.
 if [ -d "$GIT_DIR" ]; then
     cd "$GIT_DIR"
-    git add -A
+    git add memories/pending.md memories/lessons.md 2>/dev/null || true
     if ! git diff --cached --quiet; then
         TIMESTAMP=$(date '+%Y-%m-%d %H:%M')
-        git commit -m "brain sync $TIMESTAMP" && git push origin main || echo "[Brain Sync] Push failed"
-        echo "  ✓ Committed: $TIMESTAMP"
+        git commit -m "brain sync $TIMESTAMP"
+        for attempt in 1 2; do
+            if ! git pull --rebase --autostash origin main; then
+                echo "[Brain Sync] Rebase conflict — manual resolution needed; not pushing."
+                break
+            fi
+            if git push origin main; then
+                echo "  ✓ Committed & pushed: $TIMESTAMP"
+                break
+            fi
+            echo "[Brain Sync] Push rejected (attempt $attempt) — remote advanced; rebasing and retrying."
+        done
     else
         echo "  — No changes"
     fi
