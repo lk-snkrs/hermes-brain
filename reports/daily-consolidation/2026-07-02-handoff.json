@@ -1,8 +1,8 @@
 {
   "operational_date": "2026-07-02",
   "generated_at_utc": "2026-07-02T04:03:09Z",
-  "status": "attention",
-  "executive_summary": "Fechamento 01h local consolidou correções operacionais de 2026-07-01: WEBHOOK_SECRET secundário revalidado como pendência stale/resolvida, lk-ops report-publisher corrigido via PR seguro, Memory OS OK, Honcho governado com atenção controlada, Brain Health 0/0 e Brain Improvement Score 94/100. Atenção principal: Brain safe GitHub checkpoint 30min ainda apareceu com last_status=error às 04:00 UTC e precisa ser validado pelo Brain Sync seguro deste fechamento.",
+  "status": "ok_with_attention",
+  "executive_summary": "Fechamento 01h local consolidou correções operacionais de 2026-07-01: WEBHOOK_SECRET secundário revalidado como pendência stale/resolvida, lk-ops report-publisher corrigido via PR seguro, Memory OS OK, Honcho governado com atenção controlada, Brain Health 0/0 e Brain Improvement Score 94/100. Brain Sync seguro teve push inicial rejeitado por remote ahead/fetch-first, mas foi recuperado com worktree temporária em origin/main, staging exato dos 6 artefatos e push via Doppler/GIT_ASKPASS; readback final HEAD=origin/main=fc43454.",
   "material_changes": [
     {
       "area": "operacoes/runtime-governance",
